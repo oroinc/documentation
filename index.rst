@@ -1,12 +1,12 @@
 The Oro Platform Documentation
 ==============================
 
-Tutorial
+The Book
 --------
 Platform architecture and design in details:
 
 .. toctree::
-    tutorial/index
+    book/index
 
 The Cookbook
 ------------
