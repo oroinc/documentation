@@ -2,12 +2,12 @@
 
 Oro Platform documentation explains how to develop business application in easy and extendable way.
 
-## Tutorial (the same as Symfony Book)
+## The Oro Book
 
 Overview of Platform architecture, design and key features.
 This section will help to understand better platform design and technical details.
 
-## Cookbook
+## The Oro Cookbook
 
 Developer guidance to specific features and implementations, collection of "How to" articles that allow
 to achieve result in quick and right way without going deep into technical details.
