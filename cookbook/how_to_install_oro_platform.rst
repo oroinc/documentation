@@ -25,8 +25,7 @@ To install OroPlatform you first you need to download application source.
     wget -c http://www.orocrm.com/downloads/platform-application.tar.gz
     tar -xzvf platform-application.tar.gz
 
-
-    For Windows you should download archive source code and extract it to appropriate folder.
+For Windows you should download archive source code and extract it to appropriate folder.
 
 2. You can clone the git repository from Github public repository:
 
@@ -35,8 +34,7 @@ To install OroPlatform you first you need to download application source.
     cd /var/www/vhosts
     git clone https://github.com/orocrm/platform-application
 
-
-    In this case we are cloning it to platform-application directory.
+In this case we are cloning it to platform-application directory.
 
 After downloading you should have a directory "platform-application" that contains application source code that contains the following:
 
