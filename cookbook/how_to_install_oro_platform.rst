@@ -218,4 +218,72 @@ Entering of configured virtual host name http://bap.tutorial/ to browser should 
 Click "Begin installation" and you will be directed to Step 1 - you have to ensure that all requirements
 are matched (you can use `Symfony2 installation manual`_ as a guide).
 
-.. _Symfony2 installation manual: http://symfony.com/doc/current/book/installation.html
+.. _Symfony2 installation manual: http://symfony.com/doc/2.3/book/installation.html
+
+Then click "Next" and go to Step 2 - here you have to specify system credentials: DB connection, mailer settings,
+system settings and web-socket connection. This step uses values that you entered before as a default values.
+
+.. image:: ./img/installation/bap_step_2.png
+
+Click "Next" and you will go to the third step that performs database initialization -
+here you can see list of operations that were processed.
+
+.. image:: ./img/installation/bap_step_3.png
+
+Step 4 allows you to specify administration credentials - company name (full and short),
+administrator login, password, email and full name.
+Optionally you can load sample data that contains basic examples of all entities.
+
+.. image:: ./img/installation/bap_step_4.png
+
+You will then see the platform installation process table that shows the actions being performed and all process steps.
+
+.. image:: ./img/installation/bap_step_5.png
+
+And, finally, on the 5th step you will see a message that all operation performed successfully and
+you can click the button "Launch application" to start working with the platform.
+
+.. image:: ./img/installation/bap_step_final.png
+
+
+Installation from console
+-------------------------
+
+Another alternative to install platform is to use the console command oro:install. You can see this command options below.
+
+::
+
+    user@host:/var/www/vhosts/platform-application$ php app/console oro:install --help
+    Usage:
+     oro:install [--company-short-name[="..."]] [--company-name[="..."]] [--user-name[="..."]] [--user-email[="..."]] [--user-firstname[="..."]] [--user-lastname[="..."]] [--user-password[="..."]] [--force] [--sample-data[="..."]]
+
+    Options:
+     --company-short-name  Company short name
+     --company-name        Company name
+     --user-name           User name
+     --user-email          User email
+     --user-firstname      User first name
+     --user-lastname       User last name
+     --user-password       User password
+     --force               Force installation
+     --sample-data         Determines whether sample data need to be loaded or not
+
+Installation can be performed in the several ways:
+
+1. Application can be installed in the interactive console mode: you can run
+
+::
+
+    php app/console oro:install
+
+and you'll have to enter all parameters in the interactive console.
+
+2. You can specify all required parameters as a command parameters so you don't have to enter any additional data
+during installation - in this case you have to run
+
+::
+
+    php app/console oro:install --company-short-name=Oro --company-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=y
+
+Additional option that you can use is a "–force" - this option allows you to install or reinstall application
+no matter what happened before - the only thing you have to remember is that all data in the database will be lost.
