@@ -144,3 +144,78 @@ Then in the "vendor" directory you should see something like this:
     drwxrwxr-x  4 user user 4096 Янв  9 17:06 twig
     drwxrwxr-x  4 user user 4096 Янв  9 17:05 willdurand
     drwxrwxr-x  6 user user 4096 Янв  9 17:05 zendframework
+
+
+Set up database
+---------------
+
+Now you need to create a new database for the OroPlatform application.
+You can do that using CLI or any UI manager you like. By default application will use DB connection credentials
+that you have specified during installation after downloading of vendor libraries.
+These parameters are stored in app/config/parameters.yml and can be changed.
+
+Let's create a new database using mysql CLI:
+
+::
+
+    user@host:/var/www/vhosts/platform-application$ mysql -u root -p
+    Enter password:
+    Welcome to the MySQL monitor.  Commands end with ; or \g.
+
+    mysql> create database bap_standard;
+    Query OK, 1 row affected (0.00 sec)
+
+    mysql> use bap_standard;
+    Database changed
+    mysql> show tables;
+    Empty set (0.00 sec)
+
+    mysql> exit
+    Bye
+
+
+Set up virtual host
+-------------------
+
+Now you need to set up a virtual host for the application. Basic host configuration for Apache2 can look like this:
+
+::
+
+    <VirtualHost *:80>
+            DocumentRoot "/var/www/vhosts/platform-application/web"
+            ServerAdmin webmaster@localhost
+            ServerName bap.tutorial
+            ServerAlias www.bap.tutorial
+            DirectoryIndex index.php index.html index.htm index.shtml app.php
+            <Directory "/var/www/vhosts/platform-application/web">
+            Options FollowSymLinks
+                    Options all
+                    AllowOverride All
+            </Directory>
+        ErrorLog /var/log/apache2/bap-tutorial-error.log
+        CustomLog /var/log/apache2/bap-tutorial-access.log combined
+    </VirtualHost>
+
+And you have to add your new virtual host domain to your DNS or /etc/hosts:
+
+::
+
+    127.0.0.1       bap.tutorial
+
+Don't forget to enable your virtual host and reload or restart your web server to enable new configuration.
+
+
+Installation from browser
+-------------------------
+
+Finally, you can go to your browser and start working from there. In the case that you run into some issues
+you can find full installation log in /app/logs/oro_install.log.
+
+Entering of configured virtual host name http://bap.tutorial/ to browser should show you this:
+
+.. image:: ./img/installation/bap_step_1.png
+
+Click "Begin installation" and you will be directed to Step 1 - you have to ensure that all requirements
+are matched (you can use `Symfony2 installation manual`_ as a guide).
+
+.. _Symfony2 installation manual: http://symfony.com/doc/current/book/installation.html
