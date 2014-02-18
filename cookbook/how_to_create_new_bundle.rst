@@ -85,6 +85,7 @@ with the following content:
 
 This file provides list of bundles to register - all such files will be automatically parsed to load required bundles.
 
+
 2. regenerate application cache using console command cache:clear:
 
 ::
