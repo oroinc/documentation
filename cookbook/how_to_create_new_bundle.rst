@@ -66,6 +66,57 @@ Also new bundle can be generated using `Symfony command generate:bundle`_:
     Importing the bundle routing resource: FAILED
 
 Important thing is that you shouldn't update Kernel and routing - OroPlatform provides it's own way to do that -
-it will be described in the chapter Enable bundle and in future articles.
+it will be described in the chapter `Enable bundle`_ and in future articles.
+
+
+Enable bundle
+-------------
+
+Now you have all required files to enable your new bundle. To do that you have to:
+
+1) create file with name Resources/config/oro/bundles.yml
+(full path is /var/www/vhosts/platform-application/src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml)
+with the following content:
+
+::
+
+    bundles:
+        - Acme\Bundle\NewBundle\AcmeNewBundle
+
+This file provides list of bundles to register - all such files will be automatically parsed to load required bundles.
+
+2) regenerate application cache using console command cache:clear:
+
+::
+
+    user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
+    Clearing the cache for the dev environment with debug true
+
+**Note:** If you are working in production environment you have to add parameter --env=prod.
+
+Now you can go to frontend in development mode (http://bap.tutorial/app_dev.php/) and click on
+`Symfony profiler`_ config icon:
+
+.. _Symfony profiler: http://symfony.com/doc/current/book/internals.html#profiler
+
+.. image:: ./img/bundle_creation/dashboard.png
+
+Here you can find your new bundle in the list of active bundles:
+
+.. image:: ./img/bundle_creation/profiler.png
+
+That's all - your bundle is registered and active!
+
+
+References
+----------
+
+* `Symfony Best Practices for Structuring Bundles`_
+* `Generating a New Bundle Skeleton`_
+* `Symfony Internals`_
+
+.. _Symfony Best Practices for Structuring Bundles: http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html
+.. _Generating a New Bundle Skeleton: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/commands/generate_bundle.html
+.. _Symfony Internals: http://symfony.com/doc/2.3/book/internals.html
 
 
