@@ -4,12 +4,12 @@ How to install OroPlatform
 *Used application: OroPlatform RC1*
 
 * `Download source code`_
-* Update vendors libraries
-* Set up database
-* Set up virtual host
-* Installation from browser
-* Installation from console
-* References
+* `Update vendors libraries`_
+* `Set up database`_
+* `Set up virtual host`_
+* `Installation from browser`_
+* `Installation from console`_
+* `References`_
 
 Download source code
 --------------------
@@ -50,3 +50,97 @@ After downloading you should have a directory "platform-application" that contai
     -rw-rw-r-- 1 user user  207 Янв  9 16:46 UPGRADE.md
     drwxrwxr-x 3 user user 4096 Янв  9 16:46 web
 
+
+Update vendors libraries
+------------------------
+
+Now you need to update the vendors libraries source code. OroPlatform is based on Symfony2 framework and uses
+Composer_  to work with external libraries - if you don't have Composer installed you should `download and install it`_.
+After that you can update vendor libraries:
+
+.. _Composer: http://getcomposer.org/
+.. _download and install it: http://getcomposer.org/download/
+
+::
+
+    cd /var/www/vhosts/platform-application
+    php composer.phar install
+
+After downloading all the libraries source code you have to enter the default system parameters:
+
+::
+
+    Some parameters are missing. Please provide them.
+    database_host (127.0.0.1):
+    database_port (null):
+    database_name (bap_standard):
+    database_user (root):
+    database_password (null):
+    mailer_transport (mail):
+    mailer_host (127.0.0.1):
+    mailer_port (null):
+    mailer_encryption (null):
+    mailer_user (null):
+    mailer_password (null):
+    websocket_host (127.0.0.1):
+    websocket_port (8080):
+    session_handler (session.handler.native_file):
+    locale (en):
+    secret (ThisTokenIsNotSoSecretChangeIt):
+    installed (null):
+
+If you already have the vendor libraries source code, you should update it by running the following:
+
+::
+
+    cd /var/www/vhosts/platform-application
+    php composer.phar update
+
+Then in the "vendor" directory you should see something like this:
+
+::
+
+    user@host:/var/www/vhosts/platform-application/vendor$ ls -l
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 a2lix
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 ass
+    -rw-rw-r--  1 user user  183 Янв 13 15:39 autoload.php
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 besimple
+    drwxrwxr-x  2 user user 4096 Янв 13 15:36 bin
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 cboden
+    drwxrwxr-x  3 user user 4096 Янв  9 17:06 composer
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 dflydev
+    drwxrwxr-x 13 user user 4096 Янв  9 17:06 doctrine
+    drwxrwxr-x  3 user user 4096 Янв  9 17:04 escapestudios
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 evenement
+    drwxrwxr-x  5 user user 4096 Янв  9 17:05 friendsofsymfony
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 gedmo
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 genemu
+    drwxrwxr-x  6 user user 4096 Янв  9 17:05 guzzle
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 imagine
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 incenteev
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 jdare
+    drwxrwxr-x  3 user user 4096 Янв  9 17:06 jdorn
+    drwxrwxr-x 10 user user 4096 Янв  9 17:05 jms
+    drwxrwxr-x  3 user user 4096 Янв  9 17:04 justinrainbow
+    drwxrwxr-x  6 user user 4096 Янв  9 17:05 knplabs
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 kriswallsmith
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 leafo
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 lexik
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 liip
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 monolog
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 mtdowling
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 nelmio
+    drwxrwxr-x  3 user user 4096 Янв  9 17:06 oro
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 phpcollection
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 phpoption
+    drwxrwxr-x  3 user user 4096 Янв  9 17:04 psr
+    drwxrwxr-x  5 user user 4096 Янв  9 17:05 react
+    drwxrwxr-x  3 user user 4096 Янв  9 17:04 seld
+    drwxrwxr-x  5 user user 4096 Янв  9 17:05 sensio
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 stof
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 swiftmailer
+    drwxrwxr-x  3 user user 4096 Янв  9 17:05 sylius
+    drwxrwxr-x  7 user user 4096 Янв  9 17:05 symfony
+    drwxrwxr-x  4 user user 4096 Янв  9 17:06 twig
+    drwxrwxr-x  4 user user 4096 Янв  9 17:05 willdurand
+    drwxrwxr-x  6 user user 4096 Янв  9 17:05 zendframework
