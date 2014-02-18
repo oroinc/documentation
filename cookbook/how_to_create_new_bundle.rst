@@ -20,7 +20,7 @@ First you need to specify name and namespace of your bundle. Symfony framework a
 
 .. _best practices for bundle structure and bundle name: http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html#bundle-name
 
-Let's assume that we want to create AcmeNewBundle and put it under namespace Acme\Bundle\NewBundle
+Let's assume that we want to create AcmeNewBundle and put it under namespace Acme\\Bundle\\NewBundle
 in the /src directory. We need to create corresponding directory structure and bundle file
 /src/Acme/Bundle/NewBundle/AcmeNewBundle.php with the following content:
 
