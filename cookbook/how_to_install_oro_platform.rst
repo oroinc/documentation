@@ -287,3 +287,13 @@ during installation - in this case you have to run
 
 Additional option that you can use is a "–force" - this option allows you to install or reinstall application
 no matter what happened before - the only thing you have to remember is that all data in the database will be lost.
+
+
+References
+----------
+
+* `Download and Install Composer`_
+* `Installing and Configuring Symfony`_
+
+.. _Download and Install Composer: https://getcomposer.org/download/
+.. _Installing and Configuring Symfony: http://symfony.com/doc/2.3/book/installation.html
