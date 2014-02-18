@@ -4,7 +4,7 @@ The Oro Cookbook
 This book contains list of most regular used solutions in Oro Platform.
 
 * `How to install OroPlatform`_
-* How to create new bundle
+* `How to create new bundle`_
 * How to extend existing bundle
 * How to override part of the bundle (controller, template etc.)
 * How to set up ACL
@@ -20,4 +20,5 @@ This book contains list of most regular used solutions in Oro Platform.
 * How to work with JavaScript widgets
 * How to work with notifications and web sockets
 
-.. _`How to install OroPlatform`: ./how_to_install_oro_platform.rst
+.. _How to install OroPlatform: ./how_to_install_oro_platform.rst
+.. _How to create new bundle: ./how_to_create_new_bundle.rst
