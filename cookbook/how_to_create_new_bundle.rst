@@ -25,6 +25,7 @@ in the /src directory. We need to create corresponding directory structure and b
 /src/Acme/Bundle/NewBundle/AcmeNewBundle.php with the following content:
 
 .. code-block:: php
+    :linenos:
 
     <?php
 
