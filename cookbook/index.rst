@@ -1,7 +1,7 @@
 The Oro Cookbook
 ================
 
-This book contains list of most regular used solutions in Oro Platform.
+This book contains list of most regulary used solutions in Oro Platform.
 
 * `How to install OroPlatform`_
 * `How to create new bundle`_
