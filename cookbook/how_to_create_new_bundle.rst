@@ -74,7 +74,7 @@ Enable bundle
 
 Now you have all required files to enable your new bundle. To do that you have to:
 
-1. create file with name Resources/config/oro/bundles.yml
+#. create file with name Resources/config/oro/bundles.yml
 (full path is /var/www/vhosts/platform-application/src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml)
 with the following content:
 
@@ -86,7 +86,7 @@ with the following content:
 This file provides list of bundles to register - all such files will be automatically parsed to load required bundles.
 
 
-2. regenerate application cache using console command cache:clear:
+#. regenerate application cache using console command cache:clear:
 
 ::
 
