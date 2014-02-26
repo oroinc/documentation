@@ -51,7 +51,7 @@ So, we need to create file /src/Acme/Bundle/NewBundle/Resources/views/User/widge
     </div>
 
 And now we can go to the user view page (f.e. http://bap.tutorial/app_dev.php/#url=/app_dev.php/user/view/1) and find
-that user view widget was changed:
+that user info widget has changed:
 
 .. image:: ./img/how_to_extend_existing_bundle/user_info_widget.png
 
