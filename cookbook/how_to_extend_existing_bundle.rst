@@ -11,7 +11,7 @@ How to extend existing bundle
 Bundle Extension
 ----------------
 
-Oro Platform application uses `default Symfony functionality to extend bundle`_ (in terms of Symfony in calls
+Oro Platform application uses `default Symfony functionality to extend bundle`_ (in terms of Symfony it calls
 inheritance). To do that you have to override method getParent in your bundle class.
 Let's assume that we are using demo bundle from `How to create new bundle`_
 article and we want to extend OroUserBundle - in this case file AcmeNewBundle.php should look like this:
