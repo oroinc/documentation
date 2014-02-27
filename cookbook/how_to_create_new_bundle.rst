@@ -100,11 +100,11 @@ Now you can go to frontend in development mode (http://bap.tutorial/app_dev.php/
 
 .. _Symfony profiler: http://symfony.com/doc/current/book/internals.html#profiler
 
-.. image:: ./img/bundle_creation/dashboard.png
+.. image:: ./img/how_to_create_new_bundle/dashboard.png
 
 Here you can find your new bundle in the list of active bundles:
 
-.. image:: ./img/bundle_creation/profiler.png
+.. image:: ./img/how_to_create_new_bundle/profiler.png
 
 That's all - your bundle is registered and active!
 

@@ -5,7 +5,7 @@ This book contains list of most regulary used solutions in Oro Platform.
 
 * `How to install OroPlatform`_
 * `How to create new bundle`_
-* How to extend existing bundle
+* `How to extend existing bundle`_
 * How to override part of the bundle (controller, template etc.)
 * How to set up ACL
 * How to create and customize application menu
@@ -22,3 +22,4 @@ This book contains list of most regulary used solutions in Oro Platform.
 
 .. _How to install OroPlatform: ./how_to_install_oro_platform.rst
 .. _How to create new bundle: ./how_to_create_new_bundle.rst
+.. _How to extend existing bundle: ./how_to_extend_existing_bundle.rst

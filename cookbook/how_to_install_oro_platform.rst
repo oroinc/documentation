@@ -213,7 +213,7 @@ you can find full installation log in /app/logs/oro_install.log.
 
 Entering of configured virtual host name http://bap.tutorial/ to browser should show you this:
 
-.. image:: ./img/installation/bap_step_1.png
+.. image:: ./img/how_to_install_oro_platform/bap_step_1.png
 
 Click "Begin installation" and you will be directed to Step 1 - you have to ensure that all requirements
 are matched (you can use `Symfony2 installation manual`_ as a guide).
@@ -223,27 +223,27 @@ are matched (you can use `Symfony2 installation manual`_ as a guide).
 Then click "Next" and go to Step 2 - here you have to specify system credentials: DB connection, mailer settings,
 system settings and web-socket connection. This step uses values that you entered before as a default values.
 
-.. image:: ./img/installation/bap_step_2.png
+.. image:: ./img/how_to_install_oro_platform/bap_step_2.png
 
 Click "Next" and you will go to the third step that performs database initialization -
 here you can see list of operations that were processed.
 
-.. image:: ./img/installation/bap_step_3.png
+.. image:: ./img/how_to_install_oro_platform/bap_step_3.png
 
 Step 4 allows you to specify administration credentials - company name (full and short),
 administrator login, password, email and full name.
 Optionally you can load sample data that contains basic examples of all entities.
 
-.. image:: ./img/installation/bap_step_4.png
+.. image:: ./img/how_to_install_oro_platform/bap_step_4.png
 
 You will then see the platform installation process table that shows the actions being performed and all process steps.
 
-.. image:: ./img/installation/bap_step_5.png
+.. image:: ./img/how_to_install_oro_platform/bap_step_5.png
 
 And, finally, on the 5th step you will see a message that all operation performed successfully and
 you can click the button "Launch application" to start working with the platform.
 
-.. image:: ./img/installation/bap_step_final.png
+.. image:: ./img/how_to_install_oro_platform/bap_step_final.png
 
 
 Installation from console
