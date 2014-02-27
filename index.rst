@@ -21,3 +21,12 @@ Platform administration and configuration
 
 .. toctree::
     user_guide/index
+
+Community Guide
+---------------
+Learn about our development process and how you can contribute to the Oro Platform.
+
+.. toctree::
+    :maxdepth: 1
+
+    community/index
