@@ -12,7 +12,7 @@ stronger open-source project.
 Documentation Format
 --------------------
 
-The Oro Platform documentation uses `reStructuredText`_ markup language and `Sphinx`_ generator for web publishing.
+The Oro documentation uses `reStructuredText`_ markup language and `Sphinx`_ generator for web publishing.
 You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_.
 
 Documentation Source
