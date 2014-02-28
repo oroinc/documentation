@@ -3,24 +3,32 @@ The Oro Platform Documentation
 
 The Book
 --------
-Platform architecture and design in details:
+
+Overview of Platform architecture, design and key features.
+This section will help to understand better platform design and technical details.
 
 .. toctree::
     book/index
 
+
 The Cookbook
 ------------
-"Hot to" guides and easy solutions for complex requests:
+
+Developer guidance to specific features and implementations, collection of "How to" articles that allow
+to achieve result in quick and right way without going deep into technical details.
 
 .. toctree::
     cookbook/index
 
+
 User Guide
 ----------
-Platform administration and configuration
+
+End user oriented documentation that explains how to administer and configure platform features.
 
 .. toctree::
     user_guide/index
+
 
 Community Guide
 ---------------

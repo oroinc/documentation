@@ -8,11 +8,17 @@ This book contains list of most regulary used solutions in Oro Platform.
     how_to_create_new_bundle
     how_to_extend_existing_bundle
 
+
 Work in Progress
 ----------------
 
 * How to override part of the bundle (controller, template etc.)
 * How to set up ACL
+
+
+Will be done
+------------
+
 * How to create and customize application menu
 * How to create simple datagrid
 * How to create complex datagrid

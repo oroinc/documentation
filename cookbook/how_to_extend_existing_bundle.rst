@@ -61,15 +61,19 @@ That's all - now our demo bundle extends OroUserBundle and can override its part
 Features and Recommendations
 ----------------------------
 
-Bundle extension allows developer to override some bundle parts (controllers, templates etc), but not any files.
-Developer have to remember that extension works only for resources that addressed using short Symfony syntax
-(like OroUserBundle:User:update.html.twig) that includes combined bundle name (OroUserBundle) - other resources
-should we overridden in another way.
-
 Oro Platform provides several ways to extend bundle resources, and each of it should be used in specific cases.
 Extension is the most simple and useful way to do that for basic bundle resources and can we used widely all over
 the system. Other ways to extend specific resources (f.e. configuration files) will be described in further
 articles.
+
+Here is the basic parts that can be extended and the way to do that:
+* **controller** - using bundle extension (inheritance);
+* **templates** - using bundle extension (inheritance);
+* **bundles** - using file /Resources/config/oro/bundles.yml;
+* **routing** - using file /Resources/config/oro/routing.yml;
+* **twig themes** - using file /Resources/config/oro/twig.yml;
+* **localization** - using files /Resources/config/oro/locale_data.yml, /Resources/config/oro/name_format.yml,
+ /Resources/config/oro/address_format.yml, /Resources/config/oro/currency_data.yml.
 
 
 References
