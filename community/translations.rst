@@ -15,7 +15,7 @@ You will need to:
  #. Start working on translations.
 
 More information about how to help with the translation effort can be 
-found on the 'Oro Community Site'_.
+found on the `Oro Community Site`_.
 
 .. _`CrowdIn`:      http://translate.platform.orocrm.com/
-.. _'Oro Community Site':  http://www.orocrm.com/translate
+.. _`Oro Community Site`:  http://www.orocrm.com/translate
