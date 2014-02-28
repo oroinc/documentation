@@ -14,7 +14,7 @@ The Oro Platform project is using `GitHub`_ as the bug tracker.
 Before reporting a bug:
 
  * Check if someone has already reported the same bug by searching on `GitHub`_.
- * Double-check the documentation to see if the platform feature is used in correctly.
+ * Double-check the documentation to see if the platform feature is used correctly.
 
 Please follow these recommended steps to submit a bug:
 
