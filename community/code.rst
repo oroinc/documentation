@@ -1,8 +1,7 @@
 Contributing Code
 =================
 
-The Oro Platform development team is open to code contributions from the community and would very appreciate any input
-in the form of bug or feature requests.
+The Oro Platform development team is accepting community code contributions in the from of bug fixing and feature requests
 
 Reporting Bugs
 --------------
@@ -10,14 +9,14 @@ Reporting Bugs
 The Oro Platform project is using `GitHub`_ as the bug tracker.
 
 .. caution::
-    Please report security issues **only** to **security (at) orocrm.com**, don't publish it publicly.
+    Please do not publish security issues publicly and please report them **only** to **security (at) orocrm.com**.
 
 Before reporting a bug:
 
- * Check if someone hasn't already reported the bug by searching on `GitHub`_.
- * Double check the documentation to see if platform feature is used in right way.
+ * Check if someone has already reported the same bug by searching on `GitHub`_.
+ * Double-check the documentation to see if the platform feature is used in correctly.
 
-To submit a bug please follow these recommendations:
+Please follow these recommended steps to submit a bug:
 
  * Clearly describe the issue in the title.
  * Describe the steps to reproduce.
