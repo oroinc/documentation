@@ -1,7 +1,7 @@
 Contributing Code
 =================
 
-The Oro Platform development team is accepting community code contributions in the from of bug fixes and feature requests
+The Oro Platform development team is accepting community code contributions in the form of bug fixes and feature requests
 
 Reporting Bugs
 --------------
