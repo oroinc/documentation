@@ -6,7 +6,7 @@ The Oro Platform development team is accepting community code contributions in t
 Reporting Bugs
 --------------
 
-The Oro Platform project is using `GitHub`_ as the bug tracker.
+The Oro project is using `GitHub`_ as the bug tracker.
 
 .. caution::
     Please do not publish security issues publicly and please report them **only** to **security (at) orocrm.com**.
