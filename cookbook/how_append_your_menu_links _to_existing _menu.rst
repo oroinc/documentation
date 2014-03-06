@@ -4,7 +4,7 @@ How append your menu links to existing menu
 *Used application: OroCRM RC2*
 
 * `Add your custom items section to default oro menu`_
-* `Create create and fill navigation.yml`_
+* `Create and fill navigation.yml`_
 * `Create your route with annotation`_
 * `Override existing section`_
 * `References`_
@@ -22,8 +22,8 @@ new bundle can be generated using `Symfony command generate:bundle`_:
 
 .. _Symfony command generate:bundle: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 
-Create create and fill navigation.yml
--------------------------------------
+Create and fill navigation.yml
+------------------------------
 We need to create the navigation.yml file in /src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the flowing content :
 
 .. code-block:: yaml
