@@ -22,8 +22,8 @@ new bundle can be generated using `Symfony command generate:bundle`_:
 
 .. _Symfony command generate:bundle: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 
-Create create and fill navigation.yml
--------------------------------------
+Create and fill navigation.yml
+-------------------------------
 We need to create the navigation.yml file in /src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the flowing content :
 
 .. code-block:: yaml
