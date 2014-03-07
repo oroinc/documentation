@@ -105,8 +105,7 @@ And here the page result after click:
 
 Override existing section 
 -------------------------
-Example you want add a link with name "Acme link1 label" in sales section.
-We need to create the navigation.yml file in /src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the flowing content:
+Example you want add a link with name "Acme link1 label" in sales section. we need to create the navigation.yml file in /src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the flowing content:
 
 .. code-block:: yaml
 
