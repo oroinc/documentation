@@ -14,12 +14,12 @@ Work in Progress
 
 * How to override part of the bundle (controller, template etc.)
 * How to set up ACL
+* How to create and customize application menu
 
 
 Will be done
 ------------
 
-* How to create and customize application menu
 * How to create simple datagrid
 * How to create complex datagrid
 * How to add entity to search index
