@@ -1,7 +1,7 @@
 The Oro Platform Community Guide
 ================================
 
-**We very appreciate your help and interest in contributing to the OroPlatform!**
+**We appreciate your help and interest in contributing to the OroPlatform!**
 
 Find out more about how to contribute to the Oro Platform.
 
