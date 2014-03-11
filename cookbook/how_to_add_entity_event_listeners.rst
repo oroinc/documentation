@@ -55,12 +55,12 @@ This class must have a onFlush method, which will be called when the event is di
 
             foreach ($entities as $entity) {
                 // every time we update or insert a new ContactEmail entity we do the work
-                if (!($entity instanceof ContactEmail)) {
+                if (!$entity instanceof ContactEmail) {
                     continue;
                 }
 
                 // check if email is primary
-                if($entity->isPrimary()) {
+                if ($entity->isPrimary()) {
                     $owner = $entity->getOwner();
                     
                     // ... update social infos of the owner with its primary email
