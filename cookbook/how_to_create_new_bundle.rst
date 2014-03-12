@@ -21,13 +21,11 @@ First you need to specify name and namespace of your bundle. Symfony framework a
 .. _best practices for bundle structure and bundle name: http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html#bundle-name
 
 Let's assume that we want to create AcmeNewBundle and put it under namespace Acme\\Bundle\\NewBundle
-in the /src directory. We need to create corresponding directory structure and bundle file
-/src/Acme/Bundle/NewBundle/AcmeNewBundle.php with the following content:
+in the /src directory. We need to create corresponding directory structure and bundle file with the following content:
 
 .. code-block:: php
 
-    <?php
-
+    // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -74,12 +72,11 @@ Enable bundle
 
 Now you have all required files to enable your new bundle. To do that you have to:
 
-1. create file with name Resources/config/oro/bundles.yml
-   (full path is /var/www/vhosts/platform-application/src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml)
-   with the following content:
+1. create file with name Resources/config/oro/bundles.yml with the following content:
 
-::
+.. code-block:: yml
 
+    # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
     bundles:
         - Acme\Bundle\NewBundle\AcmeNewBundle
 
