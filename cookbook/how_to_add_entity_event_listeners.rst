@@ -5,14 +5,17 @@ How to add entity event listeners
 
 * `Configuring the Listener`_
 * `Creating the Listener Class`_
+* `References`_
 
-In some cases, you need to update a field before save or before update an entity. Doctrine Listerner is the perfect way to do that.
+In some cases, you need to update a field before save or before update an entity.
+Doctrine Listener is the perfect way to do that.
 
 Configuring the Listener
 ------------------------
 
-Suppose that you have already extended an Oro bundle like OroCRMContactBundle (you can find more informations on this page: `How to extend existing bundle`_)
-You would like to fulfill social informations about your contact with some external API infos.
+Suppose that you have already extended an Oro bundle like OroCRMContactBundle (you can find more information
+on this page: `How to extend existing bundle`_)
+You would like to fulfill social information about your contact with some external API data.
 
 First, you have to add your listener to the bundle by the services.yml file.
 
@@ -24,11 +27,14 @@ First, you have to add your listener to the bundle by the services.yml file.
             tags:
                 - { name: doctrine.event_listener, event: onFlush }
 
+.. _How to extend existing bundle: ./how_to_extend_existing_bundle.rst
+
 Creating the Listener Class
 ---------------------------
 
 In the previous part, we created a contact.listener who is triggered during flush of the entity. 
-In fact, the event will be triggered during every flush of bundle's entities so you need to check the current entity's class type.
+In fact, the event will be triggered during every flush of bundle's entities so you need to check the current
+entity's class type.
 
 This class must have a onFlush method, which will be called when the event is dispatched:
 
@@ -74,9 +80,9 @@ This class must have a onFlush method, which will be called when the event is di
         }
     }
 
-**WARNING:** In case of update, we need to persist the related entities and force update with "computeChangeSet" function.
-Every related entities to the current one must be updated like this if you change any properties value. 
-If you do not, the new value of your related entity's property will not be update.
+**WARNING:** In case of update, we need to persist the related entities and force update with "computeChangeSet"
+function. Every related entities to the current one must be updated like this if you change any properties value.
+If you do not, the new value of your related entity's property will not be updated.
 
 References
 ----------
@@ -86,5 +92,3 @@ References
 
 .. _Symfony Cookbook How to Register Event Listeners and Subscribers: http://symfony.com/doc/current/cookbook/doctrine/event_listeners_subscribers.html
 .. _Doctrine Events: http://doctrine-orm.readthedocs.org/en/latest/reference/events.html
-
-.. _How to extend existing bundle: ./how_to_extend_existing_bundle.rst
