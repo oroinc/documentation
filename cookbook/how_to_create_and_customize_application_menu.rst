@@ -113,11 +113,11 @@ Then you have to reload navigation data and clear cache:
 
 Here item and child related to default Oro Platform menu:
 
-.. image:: ./img/how_append_your_menu_links_to_existing_menu/add_item_to_default_nav.png
+.. image:: ./img/how_to_create_and_customize_application_menu/add_item_to_default_nav.png
 
 And here the page result after click:
 
-.. image:: ./img/how_append_your_menu_links_to_existing_menu/add_item_page_result_click.png
+.. image:: ./img/how_to_create_and_customize_application_menu/add_item_page_result_click.png
 
 
 
@@ -168,7 +168,7 @@ And reload navigation data and clear cache:
 
 Here you can find the new item Acme link1 label in  Sales section:
 
-.. image:: ./img/how_append_your_menu_links_to_existing_menu/ov_item_in_default_nav.png
+.. image:: ./img/how_to_create_and_customize_application_menu/ov_item_in_default_nav.png
 
 
 References
