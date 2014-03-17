@@ -16,7 +16,6 @@ Work in Progress
 
 * How to override part of the bundle (controller, template etc.)
 * How to set up ACL
-* How to create and customize application menu
 
 
 Will be done
