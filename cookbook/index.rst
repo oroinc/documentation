@@ -8,6 +8,7 @@ This book contains list of most regulary used solutions in Oro Platform.
     how_to_create_new_bundle
     how_to_extend_existing_bundle
     how_to_add_entity_event_listeners
+    how_to_create_and_customize_application_menu
 
 
 Work in Progress
