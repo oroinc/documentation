@@ -12,8 +12,8 @@ How to create and customize application menu
 In Oro Platform you can create your totally personalized menu or use a simple technique to add or override section in default menu.
 This tutorial describes how to override section in default menu.
 
-Let's assume that you already have a bundle with namespace "Acme\\Bundle\\NewBundle" in the /src directory with annotation configuration format
-`generated or created manually`.
+Let's assume that you already have a bundle with namespace "Acme\\Bundle\\NewBundle" in the /src directory
+with annotation configuration format `generated or created manually`_.
 
 .. _generated or created manually: ./how_to_create_new_bundle.rst
 
@@ -106,6 +106,7 @@ Then you have to reload navigation data and clear cache:
     user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
     Load "Title Templates" from annotations and config files to db
     Completed
+
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
 
@@ -162,6 +163,7 @@ And reload navigation data and clear cache:
     user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
     Load "Title Templates" from annotations and config files to db
     Completed
+
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
 
