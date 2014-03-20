@@ -211,7 +211,7 @@ Installation from browser
 Finally, you can go to your browser and start working from there. In the case that you run into some issues
 you can find full installation log in /app/logs/oro_install.log.
 
-Entering of configured virtual host name http://bap.tutorial/ to browser should show you this:
+Entering of configured virtual host name http://bap.tutorial/install.php to browser should show you this:
 
 .. image:: ./img/how_to_install_oro_platform/bap_step_1.png
 
