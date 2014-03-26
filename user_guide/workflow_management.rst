@@ -42,17 +42,17 @@ it has no starting step. Workflow must have either default step or starting tran
 Preconditions are checked every time the step view is accessed, and if they are not met, transition button
 shall not appear on the step view. Preconditions are also checked when the transition form is committed,
 and if they are not met, the transaction is not conducted.
-_Preconditions temporary not available in the interface._
+*Preconditions are temporary not available from the interface.*
 
 **Conditions** are additional conditions that are checked only when the transition form is committed,
 and they determine whether the transaction will be conducted further, or not.
-_Conditions temporary not available in the interface._
+*Conditions are temporary not available from the interface.*
 
 **Post actions** are actions that are committed after the transaction is conducted
 (i.e. the workflow is moved to the step that is determined in the transition). Those actions may include,
 but not limited to, creation of another entity, manipulation of the existing entity data, email notifications, etc.
 If new created entity has another workflow with default step it will be started automatically.
-_Post actions temporary not available in the interface._
+*Post actions are temporary not available from the interface.*
 
 .. _directed graph: http://en.wikipedia.org/wiki/Directed_graph
 
