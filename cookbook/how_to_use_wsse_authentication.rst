@@ -1,5 +1,5 @@
 How to use WSSE authentication
-====================
+==============================
 
 *Used application: OroPlatform RC3*
 

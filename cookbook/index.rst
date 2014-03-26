@@ -1,7 +1,7 @@
 The Oro Cookbook
 ================
 
-This book contains list of most regulary used solutions in Oro Platform.
+This book contains list of most regularly used solutions in Oro Platform.
 
 .. toctree::
     how_to_install_oro_platform
