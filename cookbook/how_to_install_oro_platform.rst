@@ -182,19 +182,22 @@ Now you need to set up a virtual host for the application. Basic host configurat
 ::
 
     <VirtualHost *:80>
-            DocumentRoot "/var/www/vhosts/platform-application/web"
-            ServerAdmin webmaster@localhost
-            ServerName bap.tutorial
-            ServerAlias www.bap.tutorial
-            DirectoryIndex index.php index.html index.htm index.shtml app.php
-            <Directory "/var/www/vhosts/platform-application/web">
+        DocumentRoot "/var/www/vhosts/platform-application/web"
+        ServerAdmin webmaster@localhost
+        ServerName bap.tutorial
+        ServerAlias www.bap.tutorial
+        DirectoryIndex index.php index.html index.htm index.shtml app.php
+        AllowEncodedSlashes On
+        <Directory "/var/www/vhosts/platform-application/web">
             Options FollowSymLinks
-                    Options all
-                    AllowOverride All
-            </Directory>
+            AllowOverride All
+        </Directory>
         ErrorLog /var/log/apache2/bap-tutorial-error.log
         CustomLog /var/log/apache2/bap-tutorial-access.log combined
     </VirtualHost>
+
+**Note:** Directives *ServerAdmin*, *ServerAlias*, *ErrorLog* and *CustomLog* are optional.
+Directive *AllowEncodedSlashes On* is required for Windows installation.
 
 And you have to add your new virtual host domain to your DNS or /etc/hosts:
 
