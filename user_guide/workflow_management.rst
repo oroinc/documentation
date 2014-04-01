@@ -38,7 +38,7 @@ so called `directed graph`_ where steps are nodes and transitions are arcs.
 Starting transition is a special case of transition. Main difference from regular transition is that
 it has no starting step. Workflow must have either default step or starting transition.
 
-**Preconditions** is the set of conditions that define whether the transition is available.
+**Preconditions** are the set of conditions that define whether the transition is available.
 Preconditions are checked every time the step view is accessed, and if they are not met, transition button
 shall not appear on the step view. Preconditions are also checked when the transition form is committed,
 and if they are not met, the transaction is not conducted.
