@@ -9,6 +9,9 @@ This book contains list of most regulary used solutions in Oro Platform.
     how_to_extend_existing_bundle
     how_to_add_entity_event_listeners
     how_to_create_and_customize_application_menu
+    how_to_enable_https
+    how_to_use_wsse_authentication
+    how_to_add_an_extension_to_oro_marketplace
 
 
 Work in Progress
