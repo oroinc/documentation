@@ -26,7 +26,7 @@ It could be generated for each user in *"user view"* page by user that have gran
 
 .. image:: ./img/how_to_use_wsse_authentication/user_api_key_generation.png
 
-This key should be used for ''PasswordDigest'' generation on a client side.
+This key should be used for ``PasswordDigest`` generation on a client side.
 
 Header generation
 -----------------
