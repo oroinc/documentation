@@ -6,6 +6,12 @@ How to Add an Extension to Oro Marketplace
 There are two types of extensions in Oro Marketplace: free and paid. Free extensions are distributed directly
 from the Marketplace, whereas paid extensions must be purchased from the publisher’s website.
 
+* `Package Preparation`_
+* `Adding an Extension`_
+* `Paid Extensions`_
+* `Free Extensions`_
+* `References`_
+
 
 Package Preparation
 -------------------
@@ -102,6 +108,10 @@ After you have published the application it will appear on the My Marketplace pa
 The status will be changed shortly after our administrator reviews the extension and allows it to the Marketplace.
 Note that admin review is necessary only for the initial publication; all subsequent changes
 will not require admin approvement and will be published immediately.
+
+
+References
+----------
 
 * `Oro Marketplace`_
 * `Oro Packagist`_
