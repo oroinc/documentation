@@ -66,13 +66,14 @@ the system. Other ways to extend specific resources (f.e. configuration files) w
 articles.
 
 Here is the basic parts that can be extended and the way to do that:
+
 * **controller** - using bundle extension (inheritance);
 * **templates** - using bundle extension (inheritance);
 * **bundles** - using file /Resources/config/oro/bundles.yml;
 * **routing** - using file /Resources/config/oro/routing.yml;
 * **twig themes** - using file /Resources/config/oro/twig.yml;
 * **localization** - using files /Resources/config/oro/locale_data.yml, /Resources/config/oro/name_format.yml,
- /Resources/config/oro/address_format.yml, /Resources/config/oro/currency_data.yml.
+  /Resources/config/oro/address_format.yml, /Resources/config/oro/currency_data.yml.
 
 
 References
