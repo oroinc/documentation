@@ -74,7 +74,7 @@ Now you have all required files to enable your new bundle. To do that you have t
 
 1. create file with name Resources/config/oro/bundles.yml with the following content:
 
-.. code-block:: yml
+.. code-block:: yaml
 
     # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
     bundles:
