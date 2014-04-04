@@ -1,5 +1,5 @@
 How to use WSSE authentication
-====================
+==============================
 
 *Used application: OroPlatform RC3*
 
@@ -55,7 +55,7 @@ Here is example of request using curl:
        Cache-Control: no-cache
        Date: Sat, 22 Mar 2014 15:27:10 GMT
        X-Debug-Token: b1e4b9
-       
+
        [{"id":1,"username":"admin","email":"admin@example.com","namePrefix":null,"firstName":"John","middleName":null,"lastName":"Doe","nameSuffix":null,"birthday":null,"enabled":true,"lastLogin":"2014-03-22T14:15:19+00:00","loginCount":1,"createdAt":"2014-03-22T13:55:14+00:00","updatedAt":"2014-03-22T14:15:19+00:00","owner":{"id":1,"name":"Main"},"roles":[{"id":3,"role":"ROLE_ADMINISTRATOR","label":"Administrator"}]}]
 
 
