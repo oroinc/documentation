@@ -25,6 +25,7 @@ in the /src directory. We need to create corresponding directory structure and b
 
 .. code-block:: php
 
+    <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 

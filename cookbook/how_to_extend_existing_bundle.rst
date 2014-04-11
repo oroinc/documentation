@@ -21,6 +21,7 @@ article and we want to extend OroUserBundle - in this case file AcmeNewBundle.ph
 
 .. code-block:: php
 
+    <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 

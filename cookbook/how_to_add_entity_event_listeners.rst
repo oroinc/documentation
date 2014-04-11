@@ -41,6 +41,7 @@ This class must have a onFlush method, which will be called when the event is di
 
 .. code-block:: php
 
+    <?php
     // src/Acme/Bundle/ContactBundle/Listener/SocialFields.php
     namespace Acme\Bundle\ContactBundle\Listener;
 
