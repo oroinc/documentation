@@ -39,7 +39,7 @@ Now let's check that our extension works - to do that let's create custom templa
 So, we need to create file /src/Acme/Bundle/NewBundle/Resources/views/User/widget/info.html.twig
 (this file structure duplicates file structure of extendable bundle) with our custom content:
 
-::
+.. code-block:: html+jinja
 
     <div class="widget-content">
         <div class="row-fluid form-horizontal">

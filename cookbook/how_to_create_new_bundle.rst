@@ -46,7 +46,7 @@ Also new bundle can be generated using `Symfony command generate:bundle`_:
 
 .. _Symfony command generate:bundle: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 
-::
+.. code-block:: bash
 
     user@host:/var/www/vhosts/platform-application$ php app/console generate:bundle
     Bundle namespace: Acme/Bundle/NewBundle
@@ -86,7 +86,7 @@ This file provides list of bundles to register - all such files will be automati
 
 2. regenerate application cache using console command cache:clear:
 
-::
+.. code-block:: bash
 
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
