@@ -34,8 +34,7 @@ information about the application, its author and distribution license, as shown
         "name": "oro/crm-application",
         "description": "The OroCRM distribution",
         "homepage": "https://github.com/orocrm/crm-application.git",
-        "license": "OSL-3.0",
-        ...
+        "license": "OSL-3.0"
     }
 
 We only accept extensions under OSL-3 or MIT licenses.
