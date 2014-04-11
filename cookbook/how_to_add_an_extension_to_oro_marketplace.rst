@@ -65,8 +65,11 @@ in the Marketplace. Usually this is an extension page on publisher’s website.
 **Price** – the price of the extension in US dollars. Note that we do not process any payments
 in the Marketplace and the publisher is fully responsible for keeping the price up to date.
 
-*Note:* If you want to charge your customers in currency other than USD, please write about it in the Pricing Info
-(see below) and care to update the price along with exchange rate fluctuations to avoid customer confusion.
+.. note::
+
+    If you want to charge your customers in currency other than USD, please
+    write about it in the Pricing Info (see below) and care to update the
+    price along with exchange rate fluctuations to avoid customer confusion.
 
 **Pricing Info** – any additional information about pricing of the extension you want to provide.
 This field is optional.

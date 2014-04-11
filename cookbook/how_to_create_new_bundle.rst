@@ -90,7 +90,9 @@ This file provides list of bundles to register - all such files will be automati
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
 
-**Note:** If you are working in production environment you have to add parameter --env=prod.
+.. note::
+
+    If you are working in production environment you have to add parameter --env=prod.
 
 Now you can go to frontend in development mode (http://bap.tutorial/app_dev.php/) and click on
 `Symfony profiler`_ config icon:

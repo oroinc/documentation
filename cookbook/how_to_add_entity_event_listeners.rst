@@ -82,9 +82,12 @@ This class must have a onFlush method, which will be called when the event is di
         }
     }
 
-**WARNING:** In case of update, we need to persist the related entities and force update with "computeChangeSet"
-function. Every related entities to the current one must be updated like this if you change any properties value.
-If you do not, the new value of your related entity's property will not be updated.
+.. caution::
+
+    In case of update, we need to persist the related entities and force update
+    with "computeChangeSet" function. Every related entities to the current
+    one must be updated like this if you change any properties value. If you
+    do not, the new value of your related entity's property will not be updated.
 
 References
 ----------

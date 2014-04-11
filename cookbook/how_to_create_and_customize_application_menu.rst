@@ -110,7 +110,9 @@ Then you have to reload navigation data and clear cache:
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
 
-**Note:** you can use php app/console cache:clear with parameters --env=prod or --env=dev.
+.. note::
+
+    You can use php app/console cache:clear with parameters --env=prod or --env=dev.
 
 Here item and child related to default Oro Platform menu:
 
