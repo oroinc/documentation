@@ -3,12 +3,6 @@ How to create and customize application menu
 
 *Used application: OroCRM RC2*
 
-* `Create your route with annotation`_
-* `Create and fill navigation.yml`_
-* `Override existing section`_
-* `References`_
-
-
 In Oro Platform you can create your totally personalized menu or use a simple technique to add or override section in default menu.
 This tutorial describes how to override section in default menu.
 
@@ -27,7 +21,7 @@ First you have to go to your default controller, create your action and specify 
 .. code-block:: php
 
     <?php
-    
+
     namespace Acme\Bundle\NewBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -45,9 +39,9 @@ First you have to go to your default controller, create your action and specify 
             return array('name' => "hello link");
         }
     }
-    
 
-Next you should specify action template (file path is src/Acme/Bundle/NewBundle/Resources/views/Default/index.html.twig) 
+
+Next you should specify action template (file path is src/Acme/Bundle/NewBundle/Resources/views/Default/index.html.twig)
 with the following content:
 
 .. code-block:: html+jinja
@@ -94,7 +88,7 @@ Now we need to create navigation.yml file in src/Acme/Bundle/NewBundle/Resources
                     acme_tab:
                         children:
                             acme_tab_link: ~
-    
+
     oro_titles:
         acme_link: My link page title
 
@@ -124,10 +118,10 @@ And here the page result after click:
 
 
 
-Override existing section 
+Override existing section
 -------------------------
 
-To override some section in menu you have to create the navigation.yml file in 
+To override some section in menu you have to create the navigation.yml file in
 /src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the following content
 (it will add a link with name "Acme link1 label" in sales section):
 
@@ -156,8 +150,8 @@ To override some section in menu you have to create the navigation.yml file in
 
     oro_titles:
         acme_link: oro dev
-        
-        
+
+
 And reload navigation data and clear cache:
 
 .. code-block:: bash

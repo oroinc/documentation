@@ -3,12 +3,6 @@ How to create new bundle
 
 *Used application: OroPlatform RC2*
 
-* `Create bundle manually`_
-* `Create bundle automatically`_
-* `Enable bundle`_
-* `References`_
-
-
 New bundle can be created either manually, or automatically using standard Symfony console command.
 
 

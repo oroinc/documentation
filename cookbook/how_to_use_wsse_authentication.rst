@@ -3,12 +3,6 @@ How to use WSSE authentication
 
 *Used application: OroPlatform RC3*
 
-* `Overview`_
-* `API key`_
-* `Header generation`_
-* `Header and nonce lifetime`_
-
-
 Overview
 --------
 
