@@ -107,7 +107,7 @@ and specify *marketplaces and categories*.
 After you have published the application it will appear on the My Marketplace page in Pending status.
 The status will be changed shortly after our administrator reviews the extension and allows it to the Marketplace.
 Note that admin review is necessary only for the initial publication; all subsequent changes
-will not require admin approvement and will be published immediately.
+will not require admin approbation and will be published immediately.
 
 
 References
