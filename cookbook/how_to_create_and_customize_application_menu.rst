@@ -22,7 +22,7 @@ Create your route with annotation
 ---------------------------------
 
 First you have to go to your default controller, create your action and specify annotation route
-(realtive file path is src/Acme/Bundle/NewBundle/Controller/DefaultController.php):
+(relative file path is src/Acme/Bundle/NewBundle/Controller/DefaultController.php):
 
 .. code-block:: php
 
@@ -57,7 +57,7 @@ with the following content:
     {{ name }}!
     {% endblock content %}
     
-And the latest thing - you shoud register your bundle routes. To do that you have to create file routing.yml
+And the latest thing - you should register your bundle routes. To do that you have to create file routing.yml
 in src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml with the following content:
 
 .. code-block:: yaml

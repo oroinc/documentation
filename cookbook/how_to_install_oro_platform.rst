@@ -27,7 +27,7 @@ To install OroPlatform you first you need to download application source.
 
 For Windows you should download archive source code and extract it to appropriate folder.
 
-2. You can clone the git repository from Github public repository:
+2. You can clone the git repository from GitHub public repository:
 
 ::
 
