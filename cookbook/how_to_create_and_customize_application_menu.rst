@@ -101,7 +101,7 @@ Now we need to create navigation.yml file in src/Acme/Bundle/NewBundle/Resources
 
 Then you have to reload navigation data and clear cache:
 
-::
+.. code-block:: bash
 
     user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
     Load "Title Templates" from annotations and config files to db
@@ -110,7 +110,9 @@ Then you have to reload navigation data and clear cache:
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
 
-**Note:** you can use php app/console cache:clear with parameters --env=prod or --env=dev.
+.. note::
+
+    You can use php app/console cache:clear with parameters --env=prod or --env=dev.
 
 Here item and child related to default Oro Platform menu:
 
@@ -158,7 +160,7 @@ To override some section in menu you have to create the navigation.yml file in
         
 And reload navigation data and clear cache:
 
-::
+.. code-block:: bash
 
     user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
     Load "Title Templates" from annotations and config files to db

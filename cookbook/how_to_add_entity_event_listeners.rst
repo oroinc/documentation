@@ -19,7 +19,7 @@ You would like to fulfill social information about your contact with some extern
 
 First, you have to add your listener to the bundle by the services.yml file.
 
-.. code-block:: yml
+.. code-block:: yaml
 
     # src/Acme/Bundle/ContactBundle/Resources/config/services.yml
     services:
@@ -33,7 +33,7 @@ First, you have to add your listener to the bundle by the services.yml file.
 Creating the Listener Class
 ---------------------------
 
-In the previous part, we created a contact.listener who is triggered during flush of the entity. 
+In the previous part, we created a contact.listener who is triggered during flush of the entity.
 In fact, the event will be triggered during every flush of bundle's entities so you need to check the current
 entity's class type.
 
@@ -41,6 +41,7 @@ This class must have a onFlush method, which will be called when the event is di
 
 .. code-block:: php
 
+    <?php
     // src/Acme/Bundle/ContactBundle/Listener/SocialFields.php
     namespace Acme\Bundle\ContactBundle\Listener;
 
@@ -70,7 +71,7 @@ This class must have a onFlush method, which will be called when the event is di
                 // check if email is primary
                 if ($entity->isPrimary()) {
                     $owner = $entity->getOwner();
-                    
+
                     // ... update social infos of the owner with its primary email
 
                     // force persist
@@ -82,9 +83,12 @@ This class must have a onFlush method, which will be called when the event is di
         }
     }
 
-**WARNING:** In case of update, we need to persist the related entities and force update with "computeChangeSet"
-function. Every related entities to the current one must be updated like this if you change any properties value.
-If you do not, the new value of your related entity's property will not be updated.
+.. caution::
+
+    In case of update, we need to persist the related entities and force update
+    with "computeChangeSet" function. Every related entities to the current
+    one must be updated like this if you change any properties value. If you
+    do not, the new value of your related entity's property will not be updated.
 
 References
 ----------
