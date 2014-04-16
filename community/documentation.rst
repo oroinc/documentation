@@ -19,21 +19,26 @@ Documentation Source
 --------------------
 
 In order to start contributing to the Oro documentation please `fork`_ platform-docs repository:
+
 .. code-block:: text
 
     https://github.com/orocrm/platform-docs
 
 Clone the repository:
+
 .. code-block:: bash
 
     $ git clone git://github.com/YOURUSERNAME/platform-docs.git
 
 And create a branch:
+
 .. code-block:: bash
 
     $ git checkout -b my_improvement_or_feature
 
-Do all your changes directly in this branch and push changes to GitHub. After this you can simply submit a `pull request`_  to us and your changes will be reviewed and included into the next documentation release.
+Do all your changes directly in this branch and push changes to GitHub. After 
+this you can simply submit a `pull request`_  to us and your changes will 
+be reviewed and included into the next documentation release.
 
 Testing Changes
 ---------------
