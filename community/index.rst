@@ -8,4 +8,3 @@ Find out more about how you can contribute to the Oro Platform.
 .. toctree::
     code
     documentation
-    translations
