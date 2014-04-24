@@ -1,5 +1,5 @@
-The Oro Platform Community Guide
-================================
+Community Guide
+===============
 
 **We appreciate your help and interest in contributing to the OroPlatform!**
 
