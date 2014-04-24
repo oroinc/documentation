@@ -1,5 +1,5 @@
-The Oro Platform Developer's Tutorial
-=====================================
+The Oro Book
+============
 
 .. toctree::
     getting_started
