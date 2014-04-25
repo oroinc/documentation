@@ -14,16 +14,11 @@ This book contains list of most regularly used solutions in Oro Platform.
     how_to_add_an_extension_to_oro_marketplace
 
 
-Work in Progress
-----------------
+TODO List
+---------
 
 * How to override part of the bundle (controller, template etc.)
 * How to set up ACL
-
-
-Will be done
-------------
-
 * How to create simple datagrid
 * How to create complex datagrid
 * How to add entity to search index
