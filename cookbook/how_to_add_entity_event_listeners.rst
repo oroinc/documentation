@@ -3,10 +3,6 @@ How to add entity event listeners
 
 *Used application: OroPlatform RC3*
 
-* `Configuring the Listener`_
-* `Creating the Listener Class`_
-* `References`_
-
 In some cases, you need to update a field before save or before update an entity.
 Doctrine Listener is the perfect way to do that.
 

@@ -3,11 +3,6 @@ How to extend existing bundle
 
 *Used application: OroPlatform RC3*
 
-* `Bundle Extension`_
-* `Features and Recommendations`_
-* `References`_
-
-
 Bundle Extension
 ----------------
 

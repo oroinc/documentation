@@ -3,14 +3,6 @@ How to install OroPlatform
 
 *Used application: OroPlatform RC1*
 
-* `Download source code`_
-* `Update vendors libraries`_
-* `Set up database`_
-* `Set up virtual host`_
-* `Installation from browser`_
-* `Installation from console`_
-* `References`_
-
 Download source code
 --------------------
 
