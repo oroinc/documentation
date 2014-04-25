@@ -36,8 +36,8 @@ And create a branch:
 
     $ git checkout -b my_improvement_or_feature
 
-Do all your changes directly in this branch and push changes to GitHub. After 
-this you can simply submit a `pull request`_  to us and your changes will 
+Do all your changes directly in this branch and push changes to GitHub. After
+this you can simply submit a `pull request`_  to us and your changes will
 be reviewed and included into the next documentation release.
 
 Testing Changes
@@ -47,6 +47,7 @@ To test your changes before you commit them, you have to set up a Sphinx
 environment:
 
 * Install `Sphinx`_;
+* Install the Sphinx extensions: ``git submodule update --init``;
 * Run ``make html`` and view the generated documentation in the ``_build``
   directory.
 

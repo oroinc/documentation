@@ -18,6 +18,12 @@ import sys, os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+sys.path.append(os.path.abspath('_exts'))
+
+# adding PhpLexer
+from sphinx.highlighting import lexers
+from pygments.lexers.web import PhpLexer
+
 # -- General configuration -----------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -25,7 +31,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['sensio.sphinx.phpcode']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -83,9 +89,16 @@ exclude_patterns = ['_build']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# Use PHP syntax highlighting in code examples by default
+highlight_language='php'
+
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
 
+# -- Settings for symfony doc extension ---------------------------------------------------
+
+# enable highlighting for PHP code not between ``<?php ... ?>`` by default
+lexers['php'] = PhpLexer(startinline=True)
 
 # -- Options for HTML output ---------------------------------------------------
 
