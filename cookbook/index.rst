@@ -4,7 +4,7 @@ The Oro Cookbook
 This book contains list of most regularly used solutions in Oro Platform.
 
 .. toctree::
-    how_to_install_oro_platform
+
     how_to_create_new_bundle
     how_to_extend_existing_bundle
     how_to_add_entity_event_listeners
