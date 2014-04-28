@@ -315,7 +315,7 @@ Execute custom Migrations
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create your own migrations that can be executed during the installation.
-A migration is a class implementing the ``Migration`` interface::
+A migration is a class implementing the ``Migration`` interface:
 
 .. code-block:: php
 
@@ -341,7 +341,7 @@ The ``MigrationsLoader`` loader dispatches two events when migrations are
 being executed, ``oro_migration.pre_up`` and ``oro_migration.post_up``. You
 can listen to either event and register your own migrations in your event
 listener. Use the ``addMigration()`` method of the passed event instance
-to register your custom migrations::
+to register your custom migrations:
 
 .. code-block:: php
 
@@ -378,10 +378,10 @@ event are executed after the *main* migrations have been processed.
 Load custom Data Fixtures
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To load your own data fixtures, you have to implement the ``FixtureInterface``::
+To load your own data fixtures, you have to implement the ``FixtureInterface``:
 
 .. code-block:: php
-
+    
     // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 
