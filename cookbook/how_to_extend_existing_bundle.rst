@@ -1,3 +1,7 @@
+.. index::
+    single: Bundle; Extend a Bundle
+    single: Customization; Extend a Bundle
+
 How to extend existing bundle
 =============================
 

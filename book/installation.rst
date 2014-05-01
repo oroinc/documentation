@@ -1,5 +1,6 @@
 .. index::
     single: Installation
+    single: Platform Application; Installation
 
 Install and Configure the Oro Platform Application
 ==================================================
@@ -381,7 +382,7 @@ Load custom Data Fixtures
 To load your own data fixtures, you have to implement the ``FixtureInterface``:
 
 .. code-block:: php
-    
+
     // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
     namespace Acme\DemoBundle\Migrations\Data\ORM;
 

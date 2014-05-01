@@ -1,3 +1,8 @@
+.. index::
+    single: Security; Enable HTTPS
+    single: HTTPS
+    single: HTTPS; Enable HTTPS
+
 How to enable https
 ===================
 

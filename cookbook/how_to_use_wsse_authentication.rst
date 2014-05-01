@@ -1,3 +1,7 @@
+.. index::
+    single: Security; WSSE Authentication
+    single: WSSE Authentication
+
 How to use WSSE authentication
 ==============================
 

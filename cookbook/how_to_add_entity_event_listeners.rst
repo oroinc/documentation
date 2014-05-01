@@ -1,3 +1,7 @@
+.. index::
+    single: Customization; Entity Event Listeners
+    single: Events; Entity Event Listeners
+
 How to add entity event listeners
 =================================
 
