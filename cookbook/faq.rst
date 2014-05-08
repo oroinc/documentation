@@ -11,6 +11,6 @@ error "Parameters are not valid!", but in fact parameters are valid and SOAP API
 
 * *WSDL content is cached* - you have to remove outdated cached WSDL files from temporary directory
   (f.e. ``rm /tmp/wsdl-*``); alternatively you can disable WSDL cache on PHP level in php.ini:
-  ``soap.wsdl_cache_enabled=1``.
+  ``soap.wsdl_cache_enabled=0``.
 
 ------------
