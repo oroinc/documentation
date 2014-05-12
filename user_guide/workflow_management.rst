@@ -129,7 +129,8 @@ Second information block "Configuration" shows table with list of steps and tran
 This table has following columns:
 
 * **Step** - name of the step in current row. Step name is a text identifier used in interface to show user current
-  step.
+  step. Some steps can be marked as final - it means that in these steps workflow will be counted as finished for
+  the specific entity it assign to.
 
 * **Transitions** - list of available transitions. Text to the left of arrow is transition name, text to the right of
   arrow - step where this transition is leads to.
@@ -144,6 +145,69 @@ anywhere except view and edit page of workflow.
 
 Edit Page
 ---------
+
+Workflow edit page used to modify existing workflows. Also this page used to create and clone workflows. Example
+of edit page is shown below.
+
+.. image:: ./img/workflow_management/workflow_edit_overview.png
+
+As you can see, edit page is very similar to view page - it has action buttons and two same block that shows
+workflow parameters, steps and transitions.
+
+Block with general information shows workflow name, related entity selector, default step selector and
+display steps ordered checkbox.
+
+Related entity selector shows only that entities, that can contain workflow data - these are all entities that has
+such ability out of the box, and all custom and extended entities.
+
+Right above the table there are two buttons that allows to add steps and transitions. Let's look at them closer.
+
+#### Step window
+
+After clicking on button "Add step" appropriate window will appear (the same window is used to edit steps).
+This window has two tabs - "Info" and "Transitions".
+
+.. image:: ./img/workflow_management/workflow_edit_step_info.png
+
+"Info" tab contain small form that allows user to set step name, it's position (order) and final flag.
+
+.. image:: ./img/workflow_management/workflow_edit_step_transitions.png
+
+"Transitions" tab shows table with list of all transitions available from this step - it contains transition name,
+step where it leads to and "Delete" button can remove selected transition.
+
+#### Transition window
+
+Button "Add transition" will open appropriate window (the same window is used to edit transitions). It also has
+two tabs - "Info" and "Attributes".
+
+.. image:: ./img/workflow_management/workflow_edit_transition_info.png
+
+"Info" tab shows and allows to modify transition name, steps where is comes from and where it lead to, view form type,
+warning message, and alto transition button icon and style.
+
+Transition name is simply text identifier for user interface.
+
+Step from and step to allows user to specify on which step this transition will be available (step from)
+and where it will lead user after transition will be performed (step to).
+
+View from type has two options - "Popup window" and "Separate page". First tells that transition attributes must be
+rendered as regular popup window over the entity view page, second - transition will be shown as a separate page.
+
+Warning message is optional and used to warn user about something before performing of transitions. It can be extremely
+useful of transition performs some changes that can't be undone.
+
+Button icon and style allows user to customise look of transition button - icon and background color.
+
+.. image:: ./img/workflow_management/workflow_edit_transition_attributes.png
+
+TODO: To be continued...
+
+
+Steps and transitions table is really similar to such table at view page (same columns, same information), but also
+it has additional functionality.
+
+
 
 
 Example of Workflow
