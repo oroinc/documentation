@@ -82,6 +82,26 @@ Workflow grid has following columns:
 
 * **Created** - date when current workflow was created.
 
+Each workflow can have following actions:
+
+* **View** (eye icon) - shows compact representation of workflow - basic information, list of steps and transitions.
+
+* **Activate** (tick icon) - allows to activate current workflow. It's important to know that during activation all
+  workflow data from other workflows for current entity will be reset.
+
+* **Deactivate** (cross icon) - deactivates current worfklow without any additional actions.
+
+* **Clone** (two sheets of paper icon) - allows user to create copy of existing workflow and customize it according to
+  some requirements.
+
+* **Edit** (pen and paper icon) - allows user to edit existing workflow. This action can be applied only to
+  non system workflows.
+
+* **Delete** (trash bin icon) - allows user to delete existing workflow. All related data wiil be removed automatically.
+  This action can be applied only to non system workflows.
+
+Also this page has button "Create workflow" that redirects user to create workflow page.
+
 
 View Page
 ---------
