@@ -162,7 +162,7 @@ such ability out of the box, and all custom and extended entities.
 
 Right above the table there are two buttons that allows to add steps and transitions. Let's look at them closer.
 
-#### Step window
+**Step window**
 
 After clicking on button "Add step" appropriate window will appear (the same window is used to edit steps).
 This window has two tabs - "Info" and "Transitions".
@@ -176,7 +176,7 @@ This window has two tabs - "Info" and "Transitions".
 "Transitions" tab shows table with list of all transitions available from this step - it contains transition name,
 step where it leads to and "Delete" button can remove selected transition.
 
-#### Transition window
+**Transition window**
 
 Button "Add transition" will open appropriate window (the same window is used to edit transitions). It also has
 two tabs - "Info" and "Attributes".
