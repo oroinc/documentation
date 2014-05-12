@@ -65,7 +65,9 @@ under "System" > "Workflow" path. Image below shows how this grid can look like.
 
 .. image:: ./img/workflow_management/workflow_grid.png
 
-Workflow grid has following columns:
+This page has button "Create workflow" that redirects user to create workflow page.
+
+Workflow grid drawn below has following columns:
 
 * **Name** - represents name of the workflow used all over the system. Basically used only to provide readable
   identifier of the current workflow.
@@ -87,9 +89,11 @@ Each workflow can have following actions:
 * **View** (eye icon) - shows compact representation of workflow - basic information, list of steps and transitions.
 
 * **Activate** (tick icon) - allows to activate current workflow. It's important to know that during activation all
-  workflow data from other workflows for current entity will be reset.
+  workflow data from other workflows for current entity will be reset. This action can be applied only to
+  deactivated workflows.
 
-* **Deactivate** (cross icon) - deactivates current worfklow without any additional actions.
+* **Deactivate** (cross icon) - deactivates current worfklow without any additional actions. This action can be applied
+  only to activated workflows.
 
 * **Clone** (two sheets of paper icon) - allows user to create copy of existing workflow and customize it according to
   some requirements.
@@ -100,11 +104,42 @@ Each workflow can have following actions:
 * **Delete** (trash bin icon) - allows user to delete existing workflow. All related data wiil be removed automatically.
   This action can be applied only to non system workflows.
 
-Also this page has button "Create workflow" that redirects user to create workflow page.
-
 
 View Page
 ---------
+
+Workflow view page shows basic view representation of workflow (see image below).
+
+.. image:: ./img/workflow_management/workflow_view.png
+
+View page can contain several action buttons - "Activate", "Deactivate", "Clone", "Edit" and "Delete". All these
+actions are the same to grid actions and they do exactly the same things.
+
+Below the buttons there is first information block "General information" that shows name, related entity,
+default step and display steps ordered flag.
+
+Default step is the step that will be automatically assigned to an entity after it's creation. For entities that
+already exists there will be starting transition that leads to this step. Default step is optional, so if there is
+no default step then user have to manually start workflow using one of starting transitions.
+
+Display steps ordered flags defines whether need to show all steps (including not passed) at the entity view page.
+Usually this flag sets only if workflow is linear, i.e. entity must be passed through all workflow steps.
+
+Second information block "Configuration" shows table with list of steps and transitions.
+This table has following columns:
+
+* **Step** - name of the step in current row. Step name is a text identifier used in interface to show user current
+  step.
+
+* **Transitions** - list of available transitions. Text to the left of arrow is transition name, text to the right of
+  arrow - step where this transition is leads to.
+
+* **Position** - number that defines order of steps at the entity view page. The higher number is the later this step
+  will be in steps widget.
+
+Steps and transitions table contains one service step called "(Start)" - this step used to define starting transitions,
+i.e. all starting transitions must lead from this step. In fact this step is virtual, so it will not be shown
+anywhere except view and edit page of workflow.
 
 
 Edit Page
