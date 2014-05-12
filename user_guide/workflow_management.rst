@@ -188,14 +188,14 @@ warning message, and alto transition button icon and style.
 
 Transition name is simply text identifier for user interface.
 
-Step from and step to allows user to specify on which step this transition will be available (step from)
-and where it will lead user after transition will be performed (step to).
+"From step" and "To step" allows user to specify on which step this transition will be available (From step)
+and where it will lead user after transition will be performed (To step).
 
 View from type has two options - "Popup window" and "Separate page". First tells that transition attributes must be
 rendered as regular popup window over the entity view page, second - transition will be shown as a separate page.
 
 Warning message is optional and used to warn user about something before performing of transitions. It can be extremely
-useful of transition performs some changes that can't be undone.
+useful if transition does some changes that can't be undone.
 
 Button icon and style allows user to customise look of transition button - icon and background color.
 
