@@ -3,12 +3,6 @@ How to use WSSE authentication
 
 *Used application: OroPlatform RC3*
 
-* `Overview`_
-* `API key`_
-* `Header generation`_
-* `Header and nonce lifetime`_
-
-
 Overview
 --------
 
@@ -26,13 +20,14 @@ It could be generated for each user in *"user view"* page by user that have gran
 
 .. image:: ./img/how_to_use_wsse_authentication/user_api_key_generation.png
 
+This key should be used for ``PasswordDigest`` generation on a client side.
 
 Header generation
 -----------------
 
 To generate authentication header console command could be used.
 
-::
+.. code-block:: bash
 
     user@host: php app/console oro:wsse:generate-header username
     Authorization: WSSE profile="UsernameToken"
@@ -41,7 +36,7 @@ To generate authentication header console command could be used.
 It have *username* required argument and outputs generated headers. It's ready to use.
 Here is example of request using curl:
 
-::
+.. code-block:: bash
 
        curl -i -H "Accept: application/json" -H 'Authorization: WSSE profile="UsernameToken"' -H 'X-WSSE: UsernameToken Username="admin", PasswordDigest="buctlzbeVflrVCoEfTKB1mkltCI=", Nonce="ZmMzZDg4YzMzYzRmYjMxNQ==", Created="2014-03-22T15:24:49+00:00"' http://crmdev.lxc/app_dev.php/api/rest/latest/users
        HTTP/1.1 200 OK
@@ -54,7 +49,7 @@ Here is example of request using curl:
        Cache-Control: no-cache
        Date: Sat, 22 Mar 2014 15:27:10 GMT
        X-Debug-Token: b1e4b9
-       
+
        [{"id":1,"username":"admin","email":"admin@example.com","namePrefix":null,"firstName":"John","middleName":null,"lastName":"Doe","nameSuffix":null,"birthday":null,"enabled":true,"lastLogin":"2014-03-22T14:15:19+00:00","loginCount":1,"createdAt":"2014-03-22T13:55:14+00:00","updatedAt":"2014-03-22T14:15:19+00:00","owner":{"id":1,"name":"Main"},"roles":[{"id":3,"role":"ROLE_ADMINISTRATOR","label":"Administrator"}]}]
 
 

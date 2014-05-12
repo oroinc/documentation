@@ -8,6 +8,8 @@ Overview of Platform architecture, design and key features.
 This section will help to understand better platform design and technical details.
 
 .. toctree::
+    :maxdepth: 2
+
     book/index
 
 
@@ -18,6 +20,8 @@ Developer guidance to specific features and implementations, collection of "How 
 to achieve result in quick and right way without going deep into technical details.
 
 .. toctree::
+    :maxdepth: 2
+
     cookbook/index
 
 
@@ -27,6 +31,8 @@ User Guide
 End user oriented documentation that explains how to administer and configure platform features.
 
 .. toctree::
+    :maxdepth: 2
+
     user_guide/index
 
 

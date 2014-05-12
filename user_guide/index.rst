@@ -1,7 +1,18 @@
 User Guide
 ==========
 
-User guide contains list of articles useful for regular Platform user.
+End user oriented documentation that explains how to administer and configure application features.
 
 .. toctree::
-    workflow_management
+workflow_management
+
+TODO List
+---------
+
+* Users Management
+* Access Control Configuration
+* Navigation
+* Configuration
+* Package Manager
+* Reports and Segments
+* Entity Management

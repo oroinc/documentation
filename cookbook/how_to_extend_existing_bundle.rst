@@ -3,11 +3,6 @@ How to extend existing bundle
 
 *Used application: OroPlatform RC3*
 
-* `Bundle Extension`_
-* `Features and Recommendations`_
-* `References`_
-
-
 Bundle Extension
 ----------------
 
@@ -21,6 +16,7 @@ article and we want to extend OroUserBundle - in this case file AcmeNewBundle.ph
 
 .. code-block:: php
 
+    <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 
@@ -38,7 +34,7 @@ Now let's check that our extension works - to do that let's create custom templa
 So, we need to create file /src/Acme/Bundle/NewBundle/Resources/views/User/widget/info.html.twig
 (this file structure duplicates file structure of extendable bundle) with our custom content:
 
-::
+.. code-block:: html+jinja
 
     <div class="widget-content">
         <div class="row-fluid form-horizontal">
@@ -66,13 +62,14 @@ the system. Other ways to extend specific resources (f.e. configuration files) w
 articles.
 
 Here is the basic parts that can be extended and the way to do that:
+
 * **controller** - using bundle extension (inheritance);
 * **templates** - using bundle extension (inheritance);
 * **bundles** - using file /Resources/config/oro/bundles.yml;
 * **routing** - using file /Resources/config/oro/routing.yml;
 * **twig themes** - using file /Resources/config/oro/twig.yml;
 * **localization** - using files /Resources/config/oro/locale_data.yml, /Resources/config/oro/name_format.yml,
- /Resources/config/oro/address_format.yml, /Resources/config/oro/currency_data.yml.
+  /Resources/config/oro/address_format.yml, /Resources/config/oro/currency_data.yml.
 
 
 References

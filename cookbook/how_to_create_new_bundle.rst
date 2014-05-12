@@ -3,12 +3,6 @@ How to create new bundle
 
 *Used application: OroPlatform RC2*
 
-* `Create bundle manually`_
-* `Create bundle automatically`_
-* `Enable bundle`_
-* `References`_
-
-
 New bundle can be created either manually, or automatically using standard Symfony console command.
 
 
@@ -25,6 +19,7 @@ in the /src directory. We need to create corresponding directory structure and b
 
 .. code-block:: php
 
+    <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
     namespace Acme\Bundle\NewBundle;
 
@@ -45,7 +40,7 @@ Also new bundle can be generated using `Symfony command generate:bundle`_:
 
 .. _Symfony command generate:bundle: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 
-::
+.. code-block:: bash
 
     user@host:/var/www/vhosts/platform-application$ php app/console generate:bundle
     Bundle namespace: Acme/Bundle/NewBundle
@@ -72,25 +67,29 @@ Enable bundle
 
 Now you have all required files to enable your new bundle. To do that you have to:
 
-1. create file with name Resources/config/oro/bundles.yml with the following content:
+#. create file with name Resources/config/oro/bundles.yml with the following
+   content:
 
-.. code-block:: yml
+   .. code-block:: yaml
 
-    # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
-    bundles:
-        - Acme\Bundle\NewBundle\AcmeNewBundle
+       # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
+       bundles:
+           - Acme\Bundle\NewBundle\AcmeNewBundle
 
-This file provides list of bundles to register - all such files will be automatically parsed to load required bundles.
+   This file provides list of bundles to register - all such files will be
+   automatically parsed to load required bundles.
 
+#. regenerate application cache using console command cache:clear:
 
-2. regenerate application cache using console command cache:clear:
+   .. code-block:: bash
 
-::
+       user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
+       Clearing the cache for the dev environment with debug true
 
-    user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
-    Clearing the cache for the dev environment with debug true
+   .. note::
 
-**Note:** If you are working in production environment you have to add parameter --env=prod.
+       If you are working in production environment you have to add parameter
+       --env=prod.
 
 Now you can go to frontend in development mode (http://bap.tutorial/app_dev.php/) and click on
 `Symfony profiler`_ config icon:
