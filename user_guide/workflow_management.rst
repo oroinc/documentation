@@ -60,16 +60,36 @@ If new created entity has another workflow with default step it will be started 
 Grid Description
 ----------------
 
+Workflow grid represents list of all existing workflows in the system. Thi grid is available in main menu
+under "System" > "Workflow" path. Image below shows how this grid can look like.
 
-Form Overview
--------------
+.. image:: ./img/workflow_management/workflow_grid.png
+
+Workflow grid has following columns:
+
+* **Name** - represents name of the workflow used all over the system. Basically used only to provide readable
+  identifier of the current workflow.
+
+* **Related entity** - name of the entity which workflow is assigned to. It means that current workflow will be
+  shown and used on view page of this entity.
+
+* **Active** - this columns shows whether current workflow active or not. Only one workflow for each entity can
+  be active at the same time. To change this state user can use actions "Activate" and "Deactivate".
+
+* **System** - this flag defines whether current workflow can be modified or removed (system workflows can't be
+  modified or removed). Usually system workflows are workflow that are coming out of the box of form additional
+  extensions, and non system workflows are workflows created from user interface.
+
+* **Created** - date when current workflow was created.
+
+
+View Page
+---------
+
+
+Edit Page
+---------
 
 
 Example of Workflow
 -------------------
-
-FAQ
----
-
-
-
