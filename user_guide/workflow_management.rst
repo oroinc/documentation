@@ -174,7 +174,7 @@ This window has two tabs - "Info" and "Transitions".
 .. image:: ./img/workflow_management/workflow_edit_step_transitions.png
 
 "Transitions" tab shows table with list of all transitions available from this step - it contains transition name,
-step where it leads to and "Delete" button can remove selected transition.
+step where it leads to and "Delete" icon that can remove selected transition.
 
 **Transition window**
 
