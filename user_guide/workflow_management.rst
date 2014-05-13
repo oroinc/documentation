@@ -86,23 +86,30 @@ Workflow grid drawn above has following columns:
 
 Each workflow can have following actions:
 
-* **View** .. image:: ./img/workflow_management/icon_view.png - shows compact representation of workflow - basic information, list of steps and transitions.
+* **View** |icon_view| - shows compact representation of workflow - basic information, list of steps and transitions.
 
-* **Activate** .. image:: ./img/workflow_management/icon_activate.png - allows to activate current workflow. It's important to know that during activation all
+* **Activate** |icon_activate| - allows to activate current workflow. It's important to know that during activation all
   workflow data from other workflows for current entity will be reset. This action can be applied only to
   deactivated workflows.
 
-* **Deactivate** .. image:: ./img/workflow_management/icon_deactivate.png - deactivates current worfklow without any additional actions. This action can be applied
+* **Deactivate** |icon_deactivate| - deactivates current worfklow without any additional actions. This action can be applied
   only to activated workflows.
 
-* **Clone** .. image:: ./img/workflow_management/icon_clone.png - allows user to create copy of existing workflow and customize it according to
+* **Clone** |icon_clone| - allows user to create copy of existing workflow and customize it according to
   some requirements.
 
-* **Edit** .. image:: ./img/workflow_management/icon_edit.png - allows user to edit existing workflow. This action can be applied only to
+* **Edit** |icon_edit|- allows user to edit existing workflow. This action can be applied only to
   non system workflows.
 
-* **Delete** .. image:: ./img/workflow_management/icon_delete.png - allows user to delete existing workflow. All related data will be removed automatically.
+* **Delete** |icon_delete| - allows user to delete existing workflow. All related data will be removed automatically.
   This action can be applied only to non system workflows.
+
+.. |icon_view| image:: ./img/workflow_management/icon_view.png
+.. |icon_activate| image:: ./img/workflow_management/icon_activate.png
+.. |icon_deactivate| image:: ./img/workflow_management/icon_deactivate.png
+.. |icon_clone| image:: ./img/workflow_management/icon_clone.png
+.. |icon_edit| image:: ./img/workflow_management/icon_edit.png
+.. |icon_delete| image:: ./img/workflow_management/icon_delete.png
 
 
 View Page
@@ -193,7 +200,7 @@ two tabs - "Info" and "Attributes".
 .. image:: ./img/workflow_management/workflow_edit_transition_info.png
 
 "Info" tab shows and allows to modify transition name, steps where is comes from and where it lead to, view form type,
-warning message, and alto transition button icon and style.
+warning message, and also transition button icon and style.
 
 Transition name is simply text identifier for user interface.
 
