@@ -243,14 +243,12 @@ Unlike table from view page, this table has additional actions column. It provid
 to this step, and modify, clone or delete current step.
 
 
-Example of Workflow
--------------------
+Workflow example step by step
+-----------------------------
 
 Now lets create simple flow to show how workflow functionality works in action. Here is schema of this flow.
 
 .. image:: ./img/workflow_management/workflow_example_schema.png
-
-Description:
 
 * rectangles are steps;
 * arrows are transitions;
@@ -268,10 +266,34 @@ Now lets create steps. There are three steps - "Started", "Processed" and "Finis
 should be created with "Add step" button. Also we need to set appropriate step order (10, 20, 30) and mark step
 "Finished" as final step.
 
+Step "Started":
+
 .. image:: ./img/workflow_management/workflow_example_step_1.png
+
+Step "Processed":
+
 .. image:: ./img/workflow_management/workflow_example_step_2.png
+
+Step "Finished":
+
 .. image:: ./img/workflow_management/workflow_example_step_3.png
 
 Now we can select step "Started" as default step, and whole page should look like image below.
 
 .. image:: ./img/workflow_management/workflow_example_all_steps.png
+
+Next four transitions must be created - "Process", "Finish", "Restart" and "Reset". They can created either using
+"Add transition" button or with appropriate action with plus icon from steps and transitions table.
+Transition attributes and parameters:
+
+* Process - First Name (required), Middle Name, Last Name (required);
+* Finish - Assign To, Reports To;
+* Restart - no attributes, must have confirmation;
+* Reset - no attributes, must have confirmation.
+
+Transition "Process":
+
+.. image:: ./img/workflow_management/workflow_example_transition_1_1.png
+.. image:: ./img/workflow_management/workflow_example_transition_1_2.png
+
+
