@@ -259,7 +259,7 @@ Now lets create simple flow to show how workflow functionality works in action. 
 
 **General Information**
 
-First we have to set basic parameters -  workflow name, related entity and displayed steps ordered flag. Default step
+First user have to set basic parameters -  workflow name, related entity and displayed steps ordered flag. Default step
 should be empty because there are no steps for now.
 
 .. image:: ./img/workflow_management/workflow_example_general_information.png
@@ -267,7 +267,7 @@ should be empty because there are no steps for now.
 **Steps**
 
 Now lets create steps. There are three steps - "Started", "Processed" and "Finished", and each of them
-should be created with "Add step" button. Also we need to set appropriate step order (10, 20, 30) and mark step
+should be created with "Add step" button. Also user need to set appropriate step order (10, 20, 30) and mark step
 "Finished" as final step.
 
 Step "Started":
@@ -282,7 +282,7 @@ Step "Finished":
 
 .. image:: ./img/workflow_management/workflow_example_step_3.png
 
-Now we can select step "Started" as default step, and whole page should look like image below.
+Now user can select step "Started" as default step, and whole page should look like image below.
 
 .. image:: ./img/workflow_management/workflow_example_all_steps.png
 
@@ -329,8 +329,53 @@ Here is how view page should look like.
 
 .. image:: ./img/workflow_management/workflow_example_view.png
 
-And now we can return to the workflow grid and ensure that new flow is there and it marked as active.
+And now user can return to the workflow grid and ensure that new flow is there and it marked as active.
 
 .. image:: ./img/workflow_management/workflow_example_grid.png
 
 **Testing**
+
+Finally, user need to test that this flow is actually works. Here is it's schema:
+
+.. image:: ./img/workflow_management/workflow_example_schema.png
+
+For current flow there are two cases - when new entity is created, and when existing entity is used. For new entity
+workflow will be automatically started with default step, and for existing entity user have to start it manually
+using start workflow button on entity view page. For this flow it will look like this:
+
+.. image:: ./img/workflow_management/workflow_testing_no_workflow.png
+
+After clicking on it workflow will be started. Now it in step "Started" and transition "Process" is available.
+Also view page shows steps widget with the list of all workflow steps - black are passed steps, greed is current step,
+grey are not passed steps.
+
+.. image:: ./img/workflow_management/workflow_testing_step_started.png
+
+After clicking on Process transition button transition window appears. It shows three defined attributes with required
+marks, and it allows to change values.
+
+.. image:: ./img/workflow_management/workflow_testing_transition_process.png
+
+Let's set Middle name to "Unknown" and click "Submit" - after that transition is performed, and now entity is in
+step "Processed". Steps widget is changed, and there are two new transition buttons - "Finish" and "Restart".
+
+.. image:: ./img/workflow_management/workflow_testing_step_processed.png
+
+After clicking on Finish transition button transition window will appear - it looks the same to previous one,
+but contains other fields.
+
+.. image:: ./img/workflow_management/workflow_testing_transition_finish.png
+
+Let's set some user and contact in appropriate fields, click "Submit" and ensure that appropriate fields in
+contact were changed. Now entity in step "Finished" and it still has one transition "Reset".
+
+.. image:: ./img/workflow_management/workflow_testing_step_finished.png
+
+Clocking of Reset transition button will show the confirmation that was configured in transition. The same confirmation
+will appear for Restart transition from step "Processed".
+
+.. image:: ./img/workflow_management/workflow_testing_confirmation_reset.png
+
+And after clicking on OK button entity will be in step "Started" again with Process transition available.
+
+.. image:: ./img/workflow_management/workflow_testing_step_started_again.png
