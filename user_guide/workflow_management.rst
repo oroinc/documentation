@@ -347,7 +347,7 @@ using start workflow button on entity view page. For this flow it will look like
 .. image:: ./img/workflow_management/workflow_testing_no_workflow.png
 
 After clicking on it workflow will be started. View page shows steps widget with the list of all workflow steps
-(black are passed steps, greed is current step, grey are not passed steps) and transition buttons.
+(black are passed steps, green is current step, grey are not passed steps) and transition buttons.
 Now entity is in step "Started" and transition "Process" is available.
 
 .. image:: ./img/workflow_management/workflow_testing_step_started.png
