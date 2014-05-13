@@ -1,7 +1,7 @@
 Workflow Management
 ===================
 
-*Used application: OroPlatform 1.0.0*
+*Used application: OroCRM 1.2.0*
 
 This article provides description of Workflow Management feature from the point of a user.
 
@@ -101,7 +101,7 @@ Each workflow can have following actions:
 * **Edit** (pen and paper icon) - allows user to edit existing workflow. This action can be applied only to
   non system workflows.
 
-* **Delete** (trash bin icon) - allows user to delete existing workflow. All related data wiil be removed automatically.
+* **Delete** (trash bin icon) - allows user to delete existing workflow. All related data will be removed automatically.
   This action can be applied only to non system workflows.
 
 
@@ -115,6 +115,8 @@ Workflow view page shows basic view representation of workflow (see image below)
 View page can contain several action buttons - "Activate", "Deactivate", "Clone", "Edit" and "Delete". All these
 actions are the same to grid actions and they do exactly the same things.
 
+**General information**
+
 Below the buttons there is first information block "General information" that shows name, related entity,
 default step and display steps ordered flag.
 
@@ -124,6 +126,9 @@ no default step then user have to manually start workflow using one of starting 
 
 Display steps ordered flags defines whether need to show all steps (including not passed) at the entity view page.
 Usually this flag sets only if workflow is linear, i.e. entity must be passed through all workflow steps.
+
+
+**Steps and transitions**
 
 Second information block "Configuration" shows table with list of steps and transitions.
 This table has following columns:
@@ -154,6 +159,8 @@ of edit page is shown below.
 As you can see, edit page is very similar to view page - it has action buttons and two same block that shows
 workflow parameters, steps and transitions.
 
+**General information**
+
 Block with general information shows workflow name, related entity selector, default step selector and
 display steps ordered checkbox.
 
@@ -161,6 +168,7 @@ Related entity selector shows only that entities, that can contain workflow data
 such ability out of the box, and all custom and extended entities.
 
 Right above the table there are two buttons that allows to add steps and transitions. Let's look at them closer.
+
 
 **Step window**
 
@@ -175,6 +183,7 @@ This window has two tabs - "Info" and "Transitions".
 
 "Transitions" tab shows table with list of all transitions available from this step - it contains transition name,
 step where it leads to and "Delete" icon that can remove selected transition.
+
 
 **Transition window**
 
@@ -194,20 +203,44 @@ and where it will lead user after transition will be performed (To step).
 View from type has two options - "Popup window" and "Separate page". First tells that transition attributes must be
 rendered as regular popup window over the entity view page, second - transition will be shown as a separate page.
 
-Warning message is optional and used to warn user about something before performing of transitions. It can be extremely
+Warning message is optional and used to warn user about something before performing of transition. It can be extremely
 useful if transition does some changes that can't be undone.
 
 Button icon and style allows user to customise look of transition button - icon and background color.
 
 .. image:: ./img/workflow_management/workflow_edit_transition_attributes.png
 
-TODO: To be continued...
+"Attributes" tab shows list of existing attributes for this step and has small form to add new ones.
+Transition attributes are optional, so if there will be no attributes, then there will be no transition window -
+transition will be performed immediately.
+
+Add/edit from has only three fields - entity field, label and required flag.
+
+Entity field selector allows user
+to select required field from main entity or form it's relations. The way how this field will be rendered in
+transition window is defined automatically based on field type.
+
+Value at label field overrides default system field label. If label is not defined, default system field label
+will be used.
+
+Required flag specifies whether this field must be filled before transition execution.
+
+Attributes field table has exactly the same columns, and each columns shows appropriate value. Also this table has
+additional actions column - it allows to edit and remove attribute fields.
 
 
-Steps and transitions table is really similar to such table at view page (same columns, same information), but also
+**Steps and transitions**
+
+Steps and transitions table is really similar to such table on a view page (same columns, same information), but also
 it has additional functionality.
 
+Step names in column "Step" are links that open step window that allows user to modify step information.
+Transition names in column "Transitions" are also links that open transition window to modify transition parameters.
+To the right of transition name there are two additional icons that provide functionality to clone and delete
+current transition.
 
+Unlike table from view page, this table has additional actions column. It provides ability to add new transition
+to this step, and modify, clone or delete current step.
 
 
 Example of Workflow
