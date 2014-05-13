@@ -257,10 +257,14 @@ Now lets create simple flow to show how workflow functionality works in action. 
 * "Finished" is final step;
 * steps must be displayed ordered at view page.
 
+**General Information**
+
 First we have to set basic parameters -  workflow name, related entity and displayed steps ordered flag. Default step
 should be empty because there are no steps for now.
 
 .. image:: ./img/workflow_management/workflow_example_general_information.png
+
+**Steps**
 
 Now lets create steps. There are three steps - "Started", "Processed" and "Finished", and each of them
 should be created with "Add step" button. Also we need to set appropriate step order (10, 20, 30) and mark step
@@ -286,6 +290,8 @@ Next four transitions must be created - "Process", "Finish", "Restart" and "Rese
 "Add transition" button or with appropriate action with plus icon from steps and transitions table.
 Transition attributes and parameters:
 
+**Transitions**
+
 * Process - First Name (required), Middle Name, Last Name (required);
 * Finish - Assign To, Reports To;
 * Restart - no attributes, must have confirmation;
@@ -308,4 +314,6 @@ Transition "Restart":
 Transition "Reset":
 
 .. image:: ./img/workflow_management/workflow_example_transition_4.png
+
+**Saving**
 
