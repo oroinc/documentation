@@ -296,4 +296,16 @@ Transition "Process":
 .. image:: ./img/workflow_management/workflow_example_transition_1_1.png
 .. image:: ./img/workflow_management/workflow_example_transition_1_2.png
 
+Transition "Finish":
+
+.. image:: ./img/workflow_management/workflow_example_transition_2_1.png
+.. image:: ./img/workflow_management/workflow_example_transition_2_2.png
+
+Transition "Restart":
+
+.. image:: ./img/workflow_management/workflow_example_transition_3.png
+
+Transition "Reset":
+
+.. image:: ./img/workflow_management/workflow_example_transition_4.png
 
