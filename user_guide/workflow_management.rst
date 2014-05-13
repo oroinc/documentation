@@ -57,19 +57,19 @@ If new created entity has another workflow with default step it will be started 
 .. _directed graph: http://en.wikipedia.org/wiki/Directed_graph
 
 
-Grid Description
-----------------
+Workflow Grid
+-------------
 
-Workflow grid represents list of all existing workflows in the system. Thi grid is available in main menu
+Workflow grid represents list of all existing workflows in the system. This grid is available in main menu
 under "System" > "Workflow" path. Image below shows how this grid can look like.
 
 .. image:: ./img/workflow_management/workflow_grid.png
 
 This page has button "Create workflow" that redirects user to create workflow page.
 
-Workflow grid drawn below has following columns:
+Workflow grid drawn above has following columns:
 
-* **Name** - represents name of the workflow used all over the system. Basically used only to provide readable
+* **Name** - represents name of the workflow used all over the system. It basically used only to provide readable
   identifier of the current workflow.
 
 * **Related entity** - name of the entity which workflow is assigned to. It means that current workflow will be
@@ -286,11 +286,12 @@ Now user can select step "Started" as default step, and whole page should look l
 
 .. image:: ./img/workflow_management/workflow_example_all_steps.png
 
-Next four transitions must be created - "Process", "Finish", "Restart" and "Reset". They can created either using
-"Add transition" button or with appropriate action with plus icon from steps and transitions table.
-Transition attributes and parameters:
-
 **Transitions**
+
+Next four transitions must be created - "Process", "Finish", "Restart" and "Reset". They can be created either using
+"Add transition" button or with appropriate action with plus icon from steps and transitions table.
+
+Transition attributes and parameters:
 
 * Process - First Name (required), Middle Name, Last Name (required);
 * Finish - Assign To, Reports To;
@@ -323,7 +324,7 @@ workflow will be saved. If this is a first workflow for custom or extended entit
 
 After saving user will be redirected to workflow view page - here there is short description of created flow. But now
 this workflow is inactive, so to it must be activated first. To do that user must click button "Activate" at the top
-of view page and confirm activation.
+of view page and confirm activation (also activate action can be executed from workflow grid).
 
 Here is how view page should look like.
 
@@ -345,9 +346,9 @@ using start workflow button on entity view page. For this flow it will look like
 
 .. image:: ./img/workflow_management/workflow_testing_no_workflow.png
 
-After clicking on it workflow will be started. Now it in step "Started" and transition "Process" is available.
-Also view page shows steps widget with the list of all workflow steps - black are passed steps, greed is current step,
-grey are not passed steps.
+After clicking on it workflow will be started. View page shows steps widget with the list of all workflow steps
+(black are passed steps, greed is current step, grey are not passed steps) and transition buttons.
+Now entity is in step "Started" and transition "Process" is available.
 
 .. image:: ./img/workflow_management/workflow_testing_step_started.png
 
@@ -371,7 +372,7 @@ contact were changed. Now entity in step "Finished" and it still has one transit
 
 .. image:: ./img/workflow_management/workflow_testing_step_finished.png
 
-Clicking of Reset transition button will show the confirmation that was configured in transition. The same confirmation
+Clicking on Reset transition button will show the confirmation that was configured in transition. The same confirmation
 will appear for Restart transition from step "Processed".
 
 .. image:: ./img/workflow_management/workflow_testing_confirmation_reset.png
@@ -379,3 +380,6 @@ will appear for Restart transition from step "Processed".
 And after clicking on OK button entity will be in step "Started" again with Process transition available.
 
 .. image:: ./img/workflow_management/workflow_testing_step_started_again.png
+
+Transition can be executed any amount of times with the same entity, and all entered data will be stored at entity
+fields.
