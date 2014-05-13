@@ -245,3 +245,32 @@ to this step, and modify, clone or delete current step.
 
 Example of Workflow
 -------------------
+
+Now lets create simple flow to show how workflow functionality works in action. Here is schema of this flow.
+
+.. image:: ./img/workflow_management/workflow_example_schema.png
+
+Description:
+* rectangles are steps;
+* arrows are transitions;
+* related entity is Contact;
+* "Started" is default step;
+* "Finished" is final step;
+* steps must be displayed ordered at view page.
+
+First we have to set basic parameters -  workflow name, related entity and displayed steps ordered flag. Default step
+should be empty because there are no steps for now.
+
+.. image:: ./img/workflow_management/workflow_example_general_information.png
+
+Now lets create steps. There are three steps - "Started", "Processed" and "Finished", and each of them
+should be created with "Add step" button. Also we need to set appropriate step order (10, 20, 30) and mark step
+"Finished" as final step.
+
+.. image:: ./img/workflow_management/workflow_example_step_1.png
+.. image:: ./img/workflow_management/workflow_example_step_2.png
+.. image:: ./img/workflow_management/workflow_example_step_3.png
+
+Now we can select step "Started" as default step, and whole page should look like image below.
+
+.. image:: ./img/workflow_management/workflow_example_all_steps.png
