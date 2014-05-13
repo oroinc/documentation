@@ -368,7 +368,7 @@ but contains other fields.
 .. image:: ./img/workflow_management/workflow_testing_transition_finish.png
 
 Let's set some user and contact in appropriate fields, click "Submit" and ensure that appropriate fields in
-contact were changed. Now entity in step "Finished" and it still has one transition "Reset".
+contact were changed. Now entity is in step "Finished" and one transition "Reset" is available.
 
 .. image:: ./img/workflow_management/workflow_testing_step_finished.png
 
@@ -381,5 +381,5 @@ And after clicking on OK button entity will be in step "Started" again with Proc
 
 .. image:: ./img/workflow_management/workflow_testing_step_started_again.png
 
-Transition can be executed any amount of times with the same entity, and all entered data will be stored at entity
+Transitions can be executed any amount of times for the same entity, and all entered data will be stored at entity
 fields.
