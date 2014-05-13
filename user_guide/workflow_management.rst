@@ -246,7 +246,7 @@ to this step, and modify, clone or delete current step.
 Workflow example step by step
 -----------------------------
 
-Now lets create simple flow to show how workflow functionality works in action. Here is schema of this flow.
+Now lets create simple flow to show how workflow functionality works in action. Here is schema of this flow:
 
 .. image:: ./img/workflow_management/workflow_example_schema.png
 
@@ -371,7 +371,7 @@ contact were changed. Now entity in step "Finished" and it still has one transit
 
 .. image:: ./img/workflow_management/workflow_testing_step_finished.png
 
-Clocking of Reset transition button will show the confirmation that was configured in transition. The same confirmation
+Clicking of Reset transition button will show the confirmation that was configured in transition. The same confirmation
 will appear for Restart transition from step "Processed".
 
 .. image:: ./img/workflow_management/workflow_testing_confirmation_reset.png
