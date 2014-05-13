@@ -329,8 +329,8 @@ Now when all steps and transitions are created workflow finally can be saved. Le
 workflow will be saved. If this is a first workflow for custom or extended entity then saving might take some time
 (up to 1 minute).
 
-After saving user will be redirected to workflow view page - here there is short description of created flow. But now
-this workflow is inactive, so to it must be activated first. To do that user must click button "Activate" at the top
+After saving user will be redirected to workflow view page with a short description of created flow. But now
+this workflow is inactive, so it must be activated first. To do that user must click button "Activate" at the top
 of view page and confirm activation (also activate action can be executed from workflow grid).
 
 Here is how view page should look like.
