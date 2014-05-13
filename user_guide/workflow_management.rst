@@ -251,6 +251,7 @@ Now lets create simple flow to show how workflow functionality works in action. 
 .. image:: ./img/workflow_management/workflow_example_schema.png
 
 Description:
+
 * rectangles are steps;
 * arrows are transitions;
 * related entity is Contact;
