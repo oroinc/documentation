@@ -105,6 +105,7 @@ Each workflow can have following actions:
   This action can be applied only to non system workflows.
 
 .. |icon_view| image:: ./img/workflow_management/icon_view.png
+               :align: bottom
 .. |icon_activate| image:: ./img/workflow_management/icon_activate.png
 .. |icon_deactivate| image:: ./img/workflow_management/icon_deactivate.png
 .. |icon_clone| image:: ./img/workflow_management/icon_clone.png
