@@ -315,5 +315,22 @@ Transition "Reset":
 
 .. image:: ./img/workflow_management/workflow_example_transition_4.png
 
-**Saving**
+**Saving and activation**
 
+Now when all steps and transitions are created workflow finally can be saved. Lets click "Save and close" button - and
+workflow will be saved. If this is a first workflow for custom or extended entity then saving might take some time
+(up to 1 minute).
+
+After saving user will be redirected to workflow view page - here there is short description of created flow. But now
+this workflow is inactive, so to it must be activated first. To do that user must click button "Activate" at the top
+of view page and confirm activation.
+
+Here is how view page should look like.
+
+.. image:: ./img/workflow_management/workflow_example_view.png
+
+And now we can return to the workflow grid and ensure that new flow is there and it marked as active.
+
+.. image:: ./img/workflow_management/workflow_example_grid.png
+
+**Testing**
