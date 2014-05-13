@@ -20,33 +20,33 @@ entity and switch between them according to requirements. When workflow is delet
 with it.
 
 **Step** is a "static" element of workflow. At any given moment of time, the workflow entity must be in some step -
-as a consequence, at least one step is mandatory for the workflow. In some cases step can de considered
+as a consequence, at least one step is mandatory for the workflow. In some cases step can be considered
 as a synonym to entity status, but some entities may have both step and status - in this cases it is important to
 explain user what purposes they have and what is the difference between them. Each entity passed through workflow
 has workflow step.
 
-Workflow can have default step - it means that new entities (which workflow in assigned to) will be created with
+Workflow can have default step - it means that new entities of related entity type will be created with
 started workflow in default step. Also steps can be used to collect statistics and build reports for entities.
 
 **Transition** is a "dynamic" element of workflow. Transitions are used to move from one workflow step to another,
 to manipulate workflow data, and to commit some additional actions. The transition can point to the same step
 it is initiated from (so called "self-transition"). Each step has transitions attached to it,
-and each such transition correspond to button shown on the entity view page. Transition may have ACL resource
+and each such transition can be corresponded to button shown on the entity view page. Transition may have ACL resource
 that specifies whether with transition should be available for current user. Together steps and transitions form
 so called `directed graph`_ where steps are nodes and transitions are arcs.
 
 Starting transition is a special case of transition. Main difference from regular transition is that
 it has no starting step. Workflow must have either default step or starting transition.
 
-**Preconditions** are the set of conditions that define whether the transition is available.
+**Conditions** are conditions that are checked when the transition form is committed,
+and they determine whether the transaction will be conducted further, or not.
+*Conditions are temporary not available from the interface.*
+
+**Preconditions** are the additional set of conditions that define whether the transition is available.
 Preconditions are checked every time the step view is accessed, and if they are not met, transition button
 shall not appear on the step view. Preconditions are also checked when the transition form is committed,
 and if they are not met, the transaction is not conducted.
 *Preconditions are temporary not available from the interface.*
-
-**Conditions** are additional conditions that are checked only when the transition form is committed,
-and they determine whether the transaction will be conducted further, or not.
-*Conditions are temporary not available from the interface.*
 
 **Post actions** are actions that are committed after the transaction is conducted
 (i.e. the workflow is moved to the step that is determined in the transition). Those actions may include,
@@ -86,22 +86,22 @@ Workflow grid drawn above has following columns:
 
 Each workflow can have following actions:
 
-* **View** (eye icon) - shows compact representation of workflow - basic information, list of steps and transitions.
+* **View** .. image:: ./img/workflow_management/icon_view.png - shows compact representation of workflow - basic information, list of steps and transitions.
 
-* **Activate** (tick icon) - allows to activate current workflow. It's important to know that during activation all
+* **Activate** .. image:: ./img/workflow_management/icon_activate.png - allows to activate current workflow. It's important to know that during activation all
   workflow data from other workflows for current entity will be reset. This action can be applied only to
   deactivated workflows.
 
-* **Deactivate** (cross icon) - deactivates current worfklow without any additional actions. This action can be applied
+* **Deactivate** .. image:: ./img/workflow_management/icon_deactivate.png - deactivates current worfklow without any additional actions. This action can be applied
   only to activated workflows.
 
-* **Clone** (two sheets of paper icon) - allows user to create copy of existing workflow and customize it according to
+* **Clone** .. image:: ./img/workflow_management/icon_clone.png - allows user to create copy of existing workflow and customize it according to
   some requirements.
 
-* **Edit** (pen and paper icon) - allows user to edit existing workflow. This action can be applied only to
+* **Edit** .. image:: ./img/workflow_management/icon_edit.png - allows user to edit existing workflow. This action can be applied only to
   non system workflows.
 
-* **Delete** (trash bin icon) - allows user to delete existing workflow. All related data will be removed automatically.
+* **Delete** .. image:: ./img/workflow_management/icon_delete.png - allows user to delete existing workflow. All related data will be removed automatically.
   This action can be applied only to non system workflows.
 
 
