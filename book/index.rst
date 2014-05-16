@@ -9,6 +9,11 @@ and technical details.
 
     installation
 
+.. toctree::
+    :hidden:
+
+    getting_started
+
 TODO List
 ---------
 
