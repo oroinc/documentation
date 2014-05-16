@@ -1,3 +1,6 @@
+.. index::
+    single: Marketplace; Add an Extension
+
 How to Add an Extension to Oro Marketplace
 ==========================================
 

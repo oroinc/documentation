@@ -1,3 +1,7 @@
+.. index::
+    single: Bundle; Create a Bundle
+    single: Customization; Create a custom Bundle
+
 How to create new bundle
 ========================
 

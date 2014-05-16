@@ -1,3 +1,9 @@
+.. index::
+    single: Customization; Create an Application Menu
+    single: Customization; Extend an Application Menu
+    single: Menu; Create an Application Menu
+    single: Menu; Extend an Application Menu
+
 How to create and customize application menu
 ============================================
 
@@ -50,7 +56,7 @@ with the following content:
     {% block content %}
     {{ name }}!
     {% endblock content %}
-    
+
 And the latest thing - you should register your bundle routes. To do that you have to create file routing.yml
 in src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml with the following content:
 
