@@ -95,9 +95,7 @@ Resources/config/oro/address_format.yml
         format: '%postal_code% %COUNTRY% %CITY%\n%STREET%\n%organization%\n%name%'
 
 File specifies name format by addresses and, optionally, some additional address information. Each placeholder can be
-lowercase (data will be rendered as is) or uppercase (data will be rendered in upper case).
-
-Allowed placeholders are:
+lowercase (data will be rendered as is) or uppercase (data will be rendered in upper case). Allowed placeholders are:
 
 - %name%
 - %street%
@@ -114,6 +112,64 @@ Allowed placeholders are:
 
 Date and Numeric Formatting
 ---------------------------
+
+Both dates and numbers (decimal, percent, currency) are formatted using `INTL library`_ functions, so this library
+is required and dates and number are formatted according to installed version.
+
+.. _INTL library: http://www.php.net/manual/en/intro.intl.php
+
+Application provides formatter services that can be used to format dates and numbers on backend - in fact, they are
+simple wrappers for INTL library. Here are formatter classes and their methods:
+
+- **Oro/Bundle/LocaleBundle/Formatter/DateTimeFormatter.php**
+    * formatDate(\DateTime)
+    * formatTime(\DateTime)
+    * format(\DateTime)
+- **Oro/Bundle/LocaleBundle/Formatter/NumberFormatter.php**
+    * formatDecimal(value)
+    * formatPercent(value)
+    * formatCurrency(value)
+    * formatSpellout(value)
+    * formatDuration(value)
+    * formatOrdinal(value)
+
+These formatter methods can be used in twig templates as filters:
+
+- oro_format_date
+- oro_format_time
+- oro_format_datetime
+- oro_format_number
+- oro_format_currency
+- oro_format_decimal
+- oro_format_percent
+- oro_format_spellout
+- oro_format_duration
+- oro_format_ordinal
+
+.. code-block::
+
+    {{ entity.createdAt|oro_format_datetime }}
+    {{ item.value|oro_format_currency }}
+
+For example, for en locale and USD currency such template will return values:
+
+.. code-block::
+
+    May 28, 2014 1:40 PM
+    $5,103.00
+
+In addition to backend formatters application also provides similar formatters on frontend side from JavaScript.
+They can be accessed by requirejs aliases. Here are JavaScript formatters and their functions:
+
+- **orolocale/js/formatter/datetime** (Resources/public/js/formatter/datetime.js)
+    * formatDate(value)
+    * formatTime(value)
+    * formatDateTime(value)
+- **orolocale/js/formatter/number** (Resources/public/js/formatter/number.js)
+    * formatDecimal(value)
+    * formatInteger(value)
+    * formatPercent(value)
+    * formatCurrency(value)
 
 
 Name Formatting
