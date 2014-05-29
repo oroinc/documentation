@@ -1,5 +1,5 @@
-System Localization
-===================
+Localization
+============
 
 Localization is a general approach used to translate and adapt a product for a specific country or region.
 OroPlatform localization allows to customize date/time/datetime formats, numeric and percent values, money,
@@ -161,11 +161,11 @@ For example, for en locale and USD currency such template will return values:
 In addition to backend formatters application also provides similar formatters on frontend side from JavaScript.
 They can be accessed by requirejs aliases. Here are JavaScript formatters and their functions:
 
-- **orolocale/js/formatter/datetime** (Resources/public/js/formatter/datetime.js)
+- **orolocale/js/formatter/datetime** (Oro/Bundle/LocaleBundle/Resources/public/js/formatter/datetime.js)
     * formatDate(value)
     * formatTime(value)
     * formatDateTime(value)
-- **orolocale/js/formatter/number** (Resources/public/js/formatter/number.js)
+- **orolocale/js/formatter/number** (Oro/Bundle/LocaleBundle/Resources/public/js/formatter/number.js)
     * formatDecimal(value)
     * formatInteger(value)
     * formatPercent(value)
@@ -175,6 +175,63 @@ They can be accessed by requirejs aliases. Here are JavaScript formatters and th
 Name Formatting
 ---------------
 
+Some entities in application might have names that requires localization before rendering. Localization includes
+formatting of name parts according to specified format (see `Resources/config/oro/name_format.yml`_).
+
+On backend side such entity must implement name interface **Oro/Bundle/LocaleBundle/Model/FullNameInterface.php** -
+it contain methods to extract all name parts - name prefix, first name, middle name, last name and name suffix.
+Also there are separate interfaces for each name part that can be used in case if entity might have only
+some specific parts.
+
+On backend side formatting is applied by **Oro/Bundle/LocaleBundle/Formatter/NameFormatter.php** - it has method
+*format(person)* that receives entity and returns string with formatted name.
+
+The same formatting can be used in twig templates with oro_format_name filter. Here is example:
+
+.. code-block::
+
+    {{ entity|oro_format_name }}
+
+For en locale such template will return following value:
+
+.. code-block::
+
+    Mr. John S Doe Jr.
+
+On frontend side the same formatting can be performed with requirejs module **orolocale/js/formatter/name**
+(Oro/Bundle/LocaleBundle/Resources/public/js/formatter/name.js) that has similar method *format(person)*
+to format input person object.
+
 
 Address Formatting
 ------------------
+
+Another entities might represent addresses that should be appropriately formatted before rendering. Application
+provides list of default address formats for lots of countries (see `Resources/config/oro/address_format.yml`_).
+Also address entity may have person fields and implement FullNameInterface interface - in this case name will be
+rendered according to default country locale and placed instead of appropriate placeholder.
+
+To support formatting address entity should implement address interface
+**Oro/Bundle/LocaleBundle/Model/AddressInterface.php**, it has methods to get all required address parts -
+street, city, region name/code, postal code, country name/ISO2/ISO3 and organization.
+
+Backend formatter **Oro/Bundle/LocaleBundle/Formatter/AddressFormatter.php** provide method *format($address)* that
+returns string representation of address, that might include default new line separators (\n).
+
+To use this formatter in template developer should use oro_format_address filter, for example:
+
+.. code-block::
+
+    {{ address|oro_format_address }}
+
+For USA country such address will be rendered like that:
+
+.. code-block::
+
+    Mr. Roy K Greenwell
+    Products Inc.
+    2413 Capitol Avenue
+    ROMNEY IN US 47981
+
+The same as for other entities frontend provides appropriate JavaScript formatter registered as requirejs module
+**orolocale/js/formatter/address** (Oro/Bundle/LocaleBundle/Resources/public/js/formatter/address.js)
