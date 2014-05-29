@@ -215,7 +215,7 @@ To support formatting address entity should implement address interface
 **Oro/Bundle/LocaleBundle/Model/AddressInterface.php**, it has methods to get all required address parts -
 street, city, region name/code, postal code, country name/ISO2/ISO3 and organization.
 
-Backend formatter **Oro/Bundle/LocaleBundle/Formatter/AddressFormatter.php** provide method *format($address)* that
+Backend formatter **Oro/Bundle/LocaleBundle/Formatter/AddressFormatter.php** provide method *format(address)* that
 returns string representation of address, that might include default new line separators (\n).
 
 To use this formatter in template developer should use oro_format_address filter, for example:
@@ -234,4 +234,5 @@ For USA country such address will be rendered like that:
     ROMNEY IN US 47981
 
 The same as for other entities frontend provides appropriate JavaScript formatter registered as requirejs module
-**orolocale/js/formatter/address** (Oro/Bundle/LocaleBundle/Resources/public/js/formatter/address.js)
+**orolocale/js/formatter/address** (Oro/Bundle/LocaleBundle/Resources/public/js/formatter/address.js) with method
+*format(address)* that behaves exactly as backend formatter.
