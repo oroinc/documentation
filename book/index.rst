@@ -23,7 +23,6 @@ TODO List
 * Jobs Processing
     * Cron Job
     * Job Queue
-* Localization
 * Entity Structure and Data Management
     * Additional Annotations Review
     * Metadata and Entity Config
