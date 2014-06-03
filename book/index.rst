@@ -8,6 +8,7 @@ and technical details.
     :maxdepth: 2
 
     installation
+    localization
 
 .. toctree::
     :hidden:
