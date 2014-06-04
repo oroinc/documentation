@@ -141,14 +141,14 @@ These formatter methods can be used in twig templates as filters:
 - oro_format_duration
 - oro_format_ordinal
 
-.. code-block::
+.. code-block:: text
 
     {{ entity.createdAt|oro_format_datetime }}
     {{ item.value|oro_format_currency }}
 
 For example, for en locale and USD currency such template will return the following values:
 
-.. code-block::
+.. code-block:: text
 
     May 28, 2014 1:40 PM
     $5,103.00
@@ -186,13 +186,13 @@ This formatter has a method, ``format(person)``, that receives an entity and ret
 
 The same formatting can be used in twig templates with the ``oro_format_name`` filter. Here is an example:
 
-.. code-block::
+.. code-block:: text
 
     {{ entity|oro_format_name }}
 
 For the en locale, such a template will return following value:
 
-.. code-block::
+.. code-block:: text
 
     Mr. John S Doe Jr.
 
@@ -220,13 +220,13 @@ method which returns a string representation of an address that can include defa
 
 To use this formatter in a template, use the ``oro_format_address`` filter, e.g.:
 
-.. code-block::
+.. code-block:: text
 
     {{ address|oro_format_address }}
 
 When used with the USA, such an address will be rendered like so:
 
-.. code-block::
+.. code-block:: text
 
     Mr. Roy K Greenwell
     Products Inc.
