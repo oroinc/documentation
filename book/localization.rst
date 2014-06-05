@@ -190,7 +190,7 @@ The same formatting can be used in twig templates with the ``oro_format_name`` f
 
     {{ entity|oro_format_name }}
 
-For the en locale, such a template will return following value:
+For the en locale, such a template will return the following value:
 
 .. code-block:: text
 
