@@ -1,7 +1,7 @@
 Localization
 ============
 
-Localization is process of translating and adapting a product for a specific country or region. 
+Localization is the process of translating and adapting a product for a specific country or region. 
 OroPlatform localization allows a user to customize date/time/datetime formats, numeric and percent values, 
 monetary values as well as name and address formats.
 
@@ -21,7 +21,7 @@ section that defines localization parameters. Let's take a look at them:
 - **First Quarter Starts on** defines the first day of the first quarter.  This value can be used in reports.
 - **Timezone** defines which timezone should be used to render time and datetime values.
 - **Currency** specifies the currency in monetary fields throughout the system.
-- **Temperature Unit** and **Wind Speed Unit** are used to render additional information on location maps.
+- The **Temperature Unit** and **Wind Speed Unit** are used to render additional information on location maps.
 
 
 Configuration files
