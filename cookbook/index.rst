@@ -12,8 +12,8 @@ This book contains list of most regularly used solutions in Oro Platform.
     how_to_enable_https
     how_to_use_wsse_authentication
     how_to_add_an_extension_to_oro_marketplace
+    user_custom_validation_constraints
     faq
-
 
 TODO List
 ---------

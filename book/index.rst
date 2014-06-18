@@ -9,6 +9,7 @@ and technical details.
 
     installation
     localization
+    customization
 
 .. toctree::
     :hidden:
