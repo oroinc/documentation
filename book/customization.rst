@@ -16,7 +16,7 @@ Extending a Bundle
 
 Some of the techniques described below require to extend an existing bundle.
 Basically, extending a bundle is nothing more than implementing the ``getParent()``
-method in the bundle's class. Te ``getParent()`` method returns the name of
+method in the bundle's class. The ``getParent()`` method returns the name of
 the extended bundle::
 
     // src/Acme/DemoBundle/AcmeDemoBundle.php
@@ -133,7 +133,8 @@ Translations are grouped by message domains. Thus, you can overwrite any
 translation as long as it is in the same message domain. When there are more
 than one translation, the order in which they are loaded is crucial. Therefore,
 you have to make sure, that your bundle containing the overriding translation
-files is loaded after the Oro Platform bundles in ``AppKernel``.
+files is loaded after the Oro Platform bundles in ``AppKernel``. To change
+order of bundles loading you can use priority option in bundle configuration.
 
 .. tip::
     Translation files located in the ``app/Resources/translations`` directory
@@ -229,7 +230,8 @@ as in the parent bundle::
 
     You should extend the controller class from the parent bundle, so that
     you have to implement the customized action instead of reimplementing
-    all other actions.
+    all other actions. Don't forget to register your controller action
+    either with annotation or using configuration from routing.yml file.
 
 Customizing the Database Schema
 -------------------------------
@@ -492,6 +494,12 @@ file should look like this::
 
 From now on, you can simply create the ``RegularEntity`` table by running
 the ``oro:migration:load`` command.
+
+.. tip::
+
+    Remember, that command doctrine:schema:update can be executed only for
+    development or testing purposes. All real application database updates must be
+    applied using migrations.
 
 .. seealso::
 
