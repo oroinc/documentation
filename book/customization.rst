@@ -495,7 +495,7 @@ file should look like this::
 From now on, you can simply create the ``RegularEntity`` table by running
 the ``oro:migration:load`` command.
 
-.. tip::
+.. caution::
 
     Remember, that command doctrine:schema:update can be executed only for
     development or testing purposes. All real application database updates must be
