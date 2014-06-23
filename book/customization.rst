@@ -506,6 +506,90 @@ the ``oro:migration:load`` command.
     Read more about Doctrine mappings `in the Symfony Book`_ and in the
     `official Doctrine documentation`_.
 
+
+Business Logic
+--------------
+
+Since Oro Platform entites are only created inside the application's cache
+directory, you cannot add your business logic to these entity classes. To
+overcome this drawback, you can create a service that does all the necessary
+stuff required by your business.
+
+For example, imagine that the users of your application are accounted based
+on the number of months they used your service during the last year. The longer
+your user uses the service the lower is the fee they are charged with per month:
+
+====================== =====================
+Service used in months Service fee per month
+====================== =====================
+1 - 4                  20 $
+---------------------- ---------------------
+5 - 8                  15 $
+---------------------- ---------------------
+9 - 12                 10 $
+====================== =====================
+
+The entity class for such a user may look like this::
+
+    // src/Acme/DemoBundle/Entity/Account.php
+    namespace Acme\DemoBundle\Entity;
+
+    class Account
+    {
+        private $monthsUsed;
+
+        private $totalFee;
+
+        public function setMonthsUsed($monthsUsed)
+        {
+            $this->monthUsed = $monthsUsed;
+        }
+
+        public function getMonthsUsed()
+        {
+            return $this->monthsUsed;
+        }
+
+        public function setTotalFee($totalFee)
+        {
+            $this->totalFee = $totalFee;
+        }
+
+        public function getTotalFee()
+        {
+            return $this->totalFee;
+        }
+    }
+
+You can then create a class doing all the calculations based on the rules
+described above which should be `registered as a service`_ in your Symfony
+application::
+
+    // src/Acme/DemoBundle/Accounting/TotalFeeCalculator.php
+    namespace Acme\DemoBundle\Accounting;
+
+    use Acme\DemoBundle\Entity\Account;
+
+    class TotalFeeCalculator
+    {
+        public function calculateTotalFee(Account $account)
+        {
+            if ($account->getMonthsUsed() === 0) {
+                $account->setTotalFee(0);
+            } elseif ($account->getMonthsUsed() >= 1 && $account->getMonthsUsed() < 5) {
+                $account->setTotalFee(20);
+            } elseif ($account->getMonthsUsed() >= 5 && $account->getMonthsUsed() < 10) {
+                $account->setTotalFee(15);
+            } elseif ($account->getMonthsUsed() >= 10) {
+                $account->setTotalFee(10);
+            }
+        }
+    }
+
+This way, you can access your business logic rules simply by requesting the
+calculator service from the service container or inject it into your custom
+services like any other service.
+
 Learn more
 ----------
 
@@ -523,3 +607,4 @@ the Symfony documentation as well as customizing the Oro Platform Application:
 .. _`How to Use Bundle Inheritance to Override Parts of a Bundle`: http://symfony.com/doc/current/cookbook/bundles/inheritance.html
 .. _`in the Symfony Book`: http://symfony.com/doc/current/book/doctrine.html
 .. _`official Doctrine documentation`: http://docs.doctrine-project.org/en/latest/
+.. _`registered as a service`: http://symfony.com/doc/current/book/service_container.html
