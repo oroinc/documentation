@@ -65,7 +65,6 @@ directory. Such a file would then look something like this:
 
     Acme\DemoBundle\Entity\Product:
         alias: demo_product
-        flexible_manager: demo_product_manager
         label: Demo products
         route:
             name: acme_demo_search_product
@@ -117,11 +116,11 @@ mapping:
 ``route``
     The route used to display the detailed search result:
 
-    ``name``
-        The route's name.
+``name``
+    The route's name.
 
-    ``parameters``
-        Optional route parameters.
+``parameters``
+    Optional route parameters.
 
 ``alias``
     Alias which can be used to reference the current entity in an
@@ -130,28 +129,23 @@ mapping:
 ``fields``
     Fields to include in the search index:
 
-    ``name``
-        The field's (property's) name.
+``name``
+    The field's (property's) name.
 
-    ``target_type``
-        The virtual form type (supported values are ``text``, ``integer``,
+``target_type``
+    The virtual form type (supported values are ``text``, ``integer``,
         ``double`` and ``datetime``).
 
-    ``target_fields``
-        List of virtual fields.
+``target_fields``
+    List of virtual fields.
 
-    ``relation_type``
-        Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
+``relation_type``
+    Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
         ``one-to-many``, ``many-to-one``).
 
-    ``relation_fields``
-        List of fields of the related entity that should be included in the
+``relation_fields``
+    List of fields of the related entity that should be included in the
         search index.
-
-``flexible_manager``
-    The name of a service that manages flexible attributes of the entity.
-    The flexible attributes will be stored in the virtual ``all_text`` field
-    of the search index.
 
 Searching
 ---------
@@ -195,7 +189,7 @@ The query builder offers several methods to modify the generated search:
     * The field type.
 
 ``setOrderBy``
-    Field and direction to order the search result by.
+    Field and direction to order the search result by. By default, search results sorted by search priority.
 
 ``setFirstResult``
     Changes the search result offset (useful for pagination).
@@ -203,6 +197,7 @@ The query builder offers several methods to modify the generated search:
 ``setMaxResults``
     The maximum number of search results returned.
 
+As a result of this search query will be `Result object`_ with original search request, search results and number of records.
 
 The Search API
 ~~~~~~~~~~~~~~
@@ -224,14 +219,14 @@ Both APIs return a data object with three attributes:
     An array of search results. Each result is an object containing the following
     data:
 
-    ``entity_name``
-        The result's entity class name.
+``entity_name``
+    The result's entity class name.
 
-    ``record_id``
-        The record's id.
+``record_id``
+    The record's id.
 
-    ``record_string``
-        The record's title.
+``record_string``
+    The record's title.
 
 The simple Search API
 .....................
@@ -340,6 +335,12 @@ as the ``query`` parameter. It is of the form
 
       from (demo_products, demo_categories) where description ~ test order_by name offset 5 max_results 10
 
+The endpoint of the advanced REST search API is described by the ``oro_api_get_search_advanced``
+route. Its path defaults to ``/api/rest/{version}/search/advanced.{_format}``. Valid
+formats are ``json``and ``html``. ``json`` being the default format and ``latest``
+being the default version. The SOAP function name is ``advancedSearch``.
+
 .. _`SearchBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/SearchBundle
 .. _`ft_min_word_len`: http://dev.mysql.com/doc/refman/5.6/en/server-system-variables.html#sysvar_ft_min_word_len
 .. _`MySQL fulltext search documentation`: http://dev.mysql.com/doc/refman/5.6/en/fulltext-fine-tuning.html
+.. _`Result object`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SearchBundle/Query/Result.php
