@@ -116,11 +116,11 @@ mapping:
 ``route``
     The route used to display the detailed search result:
 
-``name``
-    The route's name.
+    ``name``
+        The route's name.
 
-``parameters``
-    Optional route parameters.
+    ``parameters``
+        Optional route parameters.
 
 ``alias``
     Alias which can be used to reference the current entity in an
@@ -129,23 +129,23 @@ mapping:
 ``fields``
     Fields to include in the search index:
 
-``name``
-    The field's (property's) name.
+    ``name``
+        The field's (property's) name.
 
-``target_type``
-    The virtual form type (supported values are ``text``, ``integer``,
-        ``double`` and ``datetime``).
+    ``target_type``
+        The virtual form type (supported values are ``text``, ``integer``,
+            ``double`` and ``datetime``).
 
-``target_fields``
-    List of virtual fields.
+    ``target_fields``
+        List of virtual fields.
 
-``relation_type``
-    Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
-        ``one-to-many``, ``many-to-one``).
+    ``relation_type``
+        Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
+            ``one-to-many``, ``many-to-one``).
 
-``relation_fields``
-    List of fields of the related entity that should be included in the
-        search index.
+    ``relation_fields``
+        List of fields of the related entity that should be included in the
+            search index.
 
 Searching
 ---------
