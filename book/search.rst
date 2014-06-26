@@ -221,14 +221,14 @@ Both APIs return a data object with three attributes:
     An array of search results. Each result is an object containing the following
     data:
 
-``entity_name``
-    The result's entity class name.
+    ``entity_name``
+        The result's entity class name.
 
-``record_id``
-    The record's id.
+    ``record_id``
+        The record's id.
 
-``record_string``
-    The record's title.
+    ``record_string``
+        The record's title.
 
 The simple Search API
 .....................
