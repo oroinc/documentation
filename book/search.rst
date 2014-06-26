@@ -134,18 +134,18 @@ mapping:
 
     ``target_type``
         The virtual form type (supported values are ``text``, ``integer``,
-            ``double`` and ``datetime``).
+        ``double`` and ``datetime``).
 
     ``target_fields``
         List of virtual fields.
 
     ``relation_type``
         Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
-            ``one-to-many``, ``many-to-one``).
+        ``one-to-many``, ``many-to-one``).
 
     ``relation_fields``
         List of fields of the related entity that should be included in the
-            search index.
+        search index.
 
 Searching
 ---------
