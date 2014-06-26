@@ -30,7 +30,6 @@ TODO List
     * Metadata and Entity Config
     * Custom Entities and Fields
     * Data Audit
-    * Search Index
 * Web Services API
 * User Interface
     * Themes
