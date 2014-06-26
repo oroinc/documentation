@@ -116,11 +116,11 @@ mapping:
 ``route``
     The route used to display the detailed search result:
 
-``name``
-    The route's name.
+    ``name``
+        The route's name.
 
-``parameters``
-    Optional route parameters.
+    ``parameters``
+        Optional route parameters.
 
 ``alias``
     Alias which can be used to reference the current entity in an
@@ -129,23 +129,23 @@ mapping:
 ``fields``
     Fields to include in the search index:
 
-``name``
-    The field's (property's) name.
+    ``name``
+        The field's (property's) name.
 
-``target_type``
-    The virtual form type (supported values are ``text``, ``integer``,
-        ``double`` and ``datetime``).
+    ``target_type``
+        The virtual form type (supported values are ``text``, ``integer``,
+            ``double`` and ``datetime``).
 
-``target_fields``
-    List of virtual fields.
+    ``target_fields``
+        List of virtual fields.
 
-``relation_type``
-    Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
-        ``one-to-many``, ``many-to-one``).
+    ``relation_type``
+        Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
+            ``one-to-many``, ``many-to-one``).
 
-``relation_fields``
-    List of fields of the related entity that should be included in the
-        search index.
+    ``relation_fields``
+        List of fields of the related entity that should be included in the
+            search index.
 
 Searching
 ---------
@@ -189,7 +189,7 @@ The query builder offers several methods to modify the generated search:
     * The field type.
 
 ``setOrderBy``
-    Field and direction to order the search result by. By default, search results sorted by search priority.
+    Field and direction to order the search result by. By default, search results are sorted by relevance.
 
 ``setFirstResult``
     Changes the search result offset (useful for pagination).
@@ -197,7 +197,8 @@ The query builder offers several methods to modify the generated search:
 ``setMaxResults``
     The maximum number of search results returned.
 
-As a result of this search query will be `Result object`_ with original search request, search results and number of records.
+The result of such a query is a `Result object`_. It contains the original search request,
+the search results and the number of records returned.
 
 The Search API
 ~~~~~~~~~~~~~~
