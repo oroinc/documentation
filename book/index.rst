@@ -10,6 +10,7 @@ and technical details.
     installation
     localization
     customization
+    search
 
 .. toctree::
     :hidden:
