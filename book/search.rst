@@ -134,18 +134,18 @@ mapping:
 
     ``target_type``
         The virtual form type (supported values are ``text``, ``integer``,
-        ``double`` and ``datetime``).
+            ``double`` and ``datetime``).
 
     ``target_fields``
         List of virtual fields.
 
     ``relation_type``
         Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
-        ``one-to-many``, ``many-to-one``).
+            ``one-to-many``, ``many-to-one``).
 
     ``relation_fields``
         List of fields of the related entity that should be included in the
-        search index.
+            search index.
 
 Searching
 ---------
@@ -189,7 +189,8 @@ The query builder offers several methods to modify the generated search:
     * The field type.
 
 ``setOrderBy``
-    Field and direction to order the search result by. By default, search results are sorted by relevance.
+    Field and direction to order the search result by. By default, search
+    results are sorted by relevance.
 
 ``setFirstResult``
     Changes the search result offset (useful for pagination).
@@ -197,8 +198,8 @@ The query builder offers several methods to modify the generated search:
 ``setMaxResults``
     The maximum number of search results returned.
 
-The result of such a query is a `Result object`_. It contains the original search request,
-the search results and the number of records returned.
+The result of such a query is a `Result object`_. It contains the original
+search request, the search results and the number of records returned.
 
 The Search API
 ~~~~~~~~~~~~~~
@@ -220,14 +221,14 @@ Both APIs return a data object with three attributes:
     An array of search results. Each result is an object containing the following
     data:
 
-``entity_name``
-    The result's entity class name.
+    ``entity_name``
+        The result's entity class name.
 
-``record_id``
-    The record's id.
+    ``record_id``
+        The record's id.
 
-``record_string``
-    The record's title.
+    ``record_string``
+        The record's title.
 
 The simple Search API
 .....................
