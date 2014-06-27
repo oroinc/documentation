@@ -321,7 +321,7 @@ Apply these changes by running the ``oro:migration:load`` command:
 
 This command updates the ``oro_entity_config`` and ``oro_user`` tables. Additionally,
 each time the cache is generated, corresponding entity and mapping files are
-created in the ``app/cache:
+created in the ``app/cache``:
 
 .. code-block:: bash
 
