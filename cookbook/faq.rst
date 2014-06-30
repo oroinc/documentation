@@ -13,4 +13,3 @@ error "Parameters are not valid!", but in fact parameters are valid and SOAP API
   (f.e. ``rm /tmp/wsdl-*``); alternatively you can disable WSDL cache on PHP level in php.ini:
   ``soap.wsdl_cache_enabled=0``.
 
-------------
