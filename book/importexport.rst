@@ -24,20 +24,7 @@ configuration file  Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.ym
 Import
 ------
 
-Import contacts can be done in three user steps (each of them is job).
-
-At the first step user fill out the form with source file that he want to import and submit it. See controller action
-OroImportExportBundle:ImportExport:importForm (route "oro_importexport_import_form"), this action require parameter
-"entity" which is a class name of entity that will be imported.
-
-At the second step import validation is triggered. See controller action OroImportExportBundle:ImportExport:importValidate
-(route "oro_importexport_import_validate"). As a result a user will see all actions that will be performed by import and
-errors that were occurred. Records with errors can't be imported but errors not blocks valid records.
-
-At the last step import is processed. See controller action OroImportExportBundle:ImportExport:importProcess
-(route "oro_importexport_import_process"). Please see how it works below.
-
-Import operation consists one step, please look configuration batch job for import:
+Import is basic operation for any entities. Import operation consists one step, please look configuration batch job for import:
 
 .. code-block:: yaml
 
@@ -71,6 +58,19 @@ and collections of objects from Serializer ``Oro\Bundle\ImportExportBundle\Seria
 Than processor change object with Strategy ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy`` class. 
 Than processor return object to Writer ``Oro\Bundle\ImportExportBundle\Writer\EntityWriter`` class. Writer stores array of objects 
 using method write(array $items).
+
+For example, Import contacts can be done in three user steps (each of them is job).
+
+At the first step user fill out the form with source file that he want to import and submit it. See controller action
+OroImportExportBundle:ImportExport:importForm (route "oro_importexport_import_form"), this action require parameter
+"entity" which is a class name of entity that will be imported.
+
+At the second step import validation is triggered. See controller action OroImportExportBundle:ImportExport:importValidate
+(route "oro_importexport_import_validate"). As a result a user will see all actions that will be performed by import and
+errors that were occurred. Records with errors can't be imported but errors not blocks valid records.
+
+At the last step import is processed. See controller action OroImportExportBundle:ImportExport:importProcess
+(route "oro_importexport_import_process").
 
 Export
 ------
