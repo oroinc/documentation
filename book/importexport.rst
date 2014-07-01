@@ -45,6 +45,17 @@ Import is basic operation for any entities. Import operation consists one step, 
                             writer:    oro_importexport.writer.entity
                         parameters: ~
 
+Import algorithm:
+
+* Process job:
+    * Process step #i:
+        * loop
+            * read item from source
+            * if source is empty exit from loop
+            * process item and save to array of items
+        * end loop
+        * save array of prepared entities to DB
+
 **OroBatchBunlde** has ``Oro\Bundle\BatchBundle\Step\ItemStep`` class that execute step in the job. It is method doExecute() 
 that uses ``Oro\Bundle\BatchBundle\Step\StepExecutor`` class and method execute(). Important! Method processes(read and process) by 
 one item in the loop. If source is empty loop breaks and write all items, after step is done.
