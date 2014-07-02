@@ -103,7 +103,7 @@ Import algorithm:
             * read entity from DB
             * if source is empty exit from loop
             * process entity
-            * ave plain array to array of items for save
+            * save plain array to array of items for save
         * end loop
         * save array of prepared items to DB
 
