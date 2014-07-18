@@ -8,25 +8,58 @@ Logging Entity Modifications
 Introduction
 ------------
 
-The `OroDataAuditBundle`_ leverages the Loggable `Doctrine extension`_ to
+The `OroDataAuditBundle` leverages the Loggable `Doctrine extension` (`StofDoctrineExtension`) to
 provide changelogs for your entities.
 
 Entity Configuration
 --------------------
 
+DataAudit can be enabled only for Configurable entities.
 To make a property of an entity being added to the changelog, you simple have
-to enable the Loggable extension on that entity and tag the relevant properties
-with the ``Versioned`` annotation::
+to enable audit for entity itself and some fields you want to be logged.
+To achive this, you should use @Config and @ConfigField annotation for entity.
+
+.. caution::
+
+    Note that this annotation will be read only on install.
+    On platform update this annotation will be read and saved in config, only  for new entities
+    or for entities which were not Configurable before or have not be changed via configuration UI.
+
+.. note::
+
+    Audit can be enabled/disabled per whole entity or separate field in UI System->Entities->EntityManagement (attribute "Auditable").
+
+Example of annotation configuration::
 
     // src/Acme/DemoBundle/Entity/Product.php
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
-    use Oro\DataAuditBundle\Metadata\Annotation as Oro;
+    
+    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
     /**
      * @ORM\Entity
-     * @Oro\Loggable
+     * @Config( # entity default configuration
+     *      routeName="acme_product_index", # optional, used to represent entity instances count as link 
+     *                                      # in EntityManagement UI
+     *      routeView="acme_product_view",  # optional
+     *      defaultValues={
+     *          "entity"={ # entity configuration scope 'entity'
+     *              "icon"="icon-product" # default icon class which will be used
+     *                                    # can be changed via UI
+     *          },
+     *          "dataaudit"={ # entity configuration scope 'dataaudit'
+     *              "auditable"=true # will enable dataaudit for this entity
+     *                               # if not specified will be false
+     *                               # but you will be able to enable audit via UI
+     *          },
+     *          # ...
+     *          # any other entity scope default configuration
+     *          # ...
+     *      }
+     * )
      */
     class Product
     {
@@ -37,15 +70,19 @@ with the ``Versioned`` annotation::
 
         /**
          * @ORM\Column(type="string")
-         * @Oro\Versioned
+         * @ConfigField( # field default configuration
+         *      defaultValues={
+         *          "dataaudit"={
+         *              "auditable"=true
+         *          },
+         *          # ...
+         *          # any other entity scope default configuration
+         *          # ...
+         *      }
+         * )
          */
         private $price;
     }
-
-.. caution::
-
-    Note that you use the ``Loggable`` annotation from the DataAuditBundle
-    instead of the one from the Doctrine extensions.
 
 Now, everytime a product's price is modified, the changes are logged in the
 database. The loggable manager not only stores the data being modified but
@@ -127,10 +164,11 @@ To access the SOAP API you use one of the two functions provided by the API:
 ============= ==============================
 Function      Use case
 ============= ==============================
-``getAudit``  Retrieve all audit log entries
+``getAudits``  Retrieve all audit log entries
 ------------- ------------------------------
-``getAudits`` Retrieve an audit log entry
+``getAudit``   Retrieve an audit log entry
 ============= ==============================
 
 .. _`OroDataAuditBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/DataAuditBundle
 .. _`Doctrine extension`: https://github.com/Atlantic18/DoctrineExtensions
+.. _ StofDoctrineExtension : https://github.com/stof/StofDoctrineExtensionsBundle
