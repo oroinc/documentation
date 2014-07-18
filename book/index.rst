@@ -11,6 +11,7 @@ and technical details.
     localization
     customization
     search
+    data_audits
 
 .. toctree::
     :hidden:
