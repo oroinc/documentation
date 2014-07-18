@@ -14,10 +14,10 @@ The `OroDataAuditBundle`_ leverages the Loggable `Doctrine extension`_
 Entity Configuration
 --------------------
 
-DataAudit can be enabled only for Configurable entities.
-To make a property of an entity being added to the changelog, you simple have
-to enable audit for entity itself and some fields you want to be logged.
-To achive this, you should use @Config and @ConfigField annotation for entity.
+DataAudit can be enabled only for Configurable entities. To make a property
+of an entity being added to the changelog, you simple have to enable the audit
+for the entity itself and some fields you want to be logged. To achieve this,
+you should use the ``@Config`` and ``@ConfigField`` annotations for entity.
 
 .. caution::
 
@@ -164,9 +164,9 @@ To access the SOAP API you use one of the two functions provided by the API:
 ============= ==============================
 Function      Use case
 ============= ==============================
-``getAudits``  Retrieve all audit log entries
+``getAudits`` Retrieve all audit log entries
 ------------- ------------------------------
-``getAudit``   Retrieve an audit log entry
+``getAudit``  Retrieve an audit log entry
 ============= ==============================
 
 .. _`OroDataAuditBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/DataAuditBundle
