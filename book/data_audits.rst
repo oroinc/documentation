@@ -8,8 +8,8 @@ Logging Entity Modifications
 Introduction
 ------------
 
-The `OroDataAuditBundle` leverages the Loggable `Doctrine extension` (`StofDoctrineExtension`) to
-provide changelogs for your entities.
+The `OroDataAuditBundle`_ leverages the Loggable `Doctrine extension`_
+(`StofDoctrineExtension`_) to provide changelogs for your entities.
 
 Entity Configuration
 --------------------
@@ -35,14 +35,14 @@ Example of annotation configuration::
     namespace Acme\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
-    
+
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
 
     /**
      * @ORM\Entity
      * @Config( # entity default configuration
-     *      routeName="acme_product_index", # optional, used to represent entity instances count as link 
+     *      routeName="acme_product_index", # optional, used to represent entity instances count as link
      *                                      # in EntityManagement UI
      *      routeView="acme_product_view",  # optional
      *      defaultValues={
@@ -171,4 +171,4 @@ Function      Use case
 
 .. _`OroDataAuditBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/DataAuditBundle
 .. _`Doctrine extension`: https://github.com/Atlantic18/DoctrineExtensions
-.. _ StofDoctrineExtension : https://github.com/stof/StofDoctrineExtensionsBundle
+.. _`StofDoctrineExtension`: https://github.com/stof/StofDoctrineExtensionsBundle
