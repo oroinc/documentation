@@ -209,7 +209,7 @@ If you use **Nginx** as webserver your virtual host configuration should looks l
 
 .. note::
 
-    Depending on your PHP-FPM config, the fastcgi_pass can also be ``fastcgi_pass 127.0.0.1:9000``.
+    Depending on your PHP-FPM config, the ``fastcgi_pass`` can also be ``fastcgi_pass 127.0.0.1:9000``.
 
 .. caution::
 
@@ -228,7 +228,7 @@ permissions.
 .. hint::
 
     Read the article "`Configuring a Web Server`_" in the `Symfony Cookbook`_
-    for advanced configuration.
+    for advanced configuration reference.
 
 The Installation
 ----------------
