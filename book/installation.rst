@@ -184,7 +184,7 @@ The basic virtual host configuration for **Apache2** looks like this:
 
 If you are using **Nginx** as webserver your virtual host configuration should look like this:
 
-.. code-block:: nginx
+.. code-block:: apache
 
     server {
         server_name bap.tutorial;
