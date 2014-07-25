@@ -162,7 +162,7 @@ in the previous step:
 Configure the Webserver
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The basic virtual host configuration for Apache2 looks like this:
+The basic virtual host configuration for **Apache2** looks like this:
 
 .. code-block:: apache
 
@@ -182,6 +182,35 @@ The basic virtual host configuration for Apache2 looks like this:
         CustomLog /var/log/apache2/platform_application_access.log combined
     </VirtualHost>
 
+If you use **Nginx** as webserver your virtual host configuration should looks like:
+
+.. code-block:: nginx
+
+    server {
+        server_name bap.tutorial;
+        root        /var/www/vhosts/platform-application/web;
+
+        location / {
+            # try to serve file directly, fallback to app.php
+            try_files $uri /app.php$is_args$args;
+        }
+
+        location ~ ^/(app|app_dev|config)\.php(/|$) {
+            fastcgi_pass unix:/var/run/php5-fpm.sock;
+            fastcgi_split_path_info ^(.+\.php)(/.*)$;
+            include fastcgi_params;
+            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+            fastcgi_param HTTPS off;
+        }
+
+        error_log  /var/log/nginx/platform_application_error.log
+        access_log /var/log/nginx/platform_application_access.log
+    }
+
+.. note::
+
+    Depending on your PHP-FPM config, the ``fastcgi_pass`` can also be ``fastcgi_pass 127.0.0.1:9000``.
+
 .. caution::
 
     Make sure to add the ``bap.tutorial`` hostname to your DNS or ``hosts``
@@ -199,7 +228,7 @@ permissions.
 .. hint::
 
     Read the article "`Configuring a Web Server`_" in the `Symfony Cookbook`_
-    to learn how to set up different web servers for a Symfony project.
+    for advanced configuration reference.
 
 The Installation
 ----------------
