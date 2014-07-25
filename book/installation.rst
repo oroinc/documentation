@@ -182,7 +182,7 @@ The basic virtual host configuration for **Apache2** looks like this:
         CustomLog /var/log/apache2/platform_application_access.log combined
     </VirtualHost>
 
-If you use **Nginx** as webserver your virtual host configuration should looks like:
+If you are using **Nginx** as webserver your virtual host configuration should look like this:
 
 .. code-block:: nginx
 
