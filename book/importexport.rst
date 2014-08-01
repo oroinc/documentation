@@ -134,14 +134,14 @@ doesn't use a strategy:
    serializes and converts the object into an associative array with property
    names as keys and the property values as values of the array;
 
-#. Finally, all array entries are written to a CSV file by the
-   ``Oro\Bundle\ImportExportBundle\Writer\CsvFileWriter`` class;
-
 #. Serializer:  ``Oro\Bundle\ImportExportBundle\Serializer\Serializer`` class
    normalizes each field and converts object to complex array;
 
 #. A data converter (``Oro\Bundle\ImportExportBundle\Converter\ConfigurableTableDataConverter``)
    converts the associative array into a dimensional array.
+
+#. Finally, all array entries are written to a CSV file by the
+   ``Oro\Bundle\ImportExportBundle\Writer\CsvFileWriter`` class;
 
 The export algorithm being performed is (in pseudocode):
 
@@ -298,37 +298,6 @@ For example:
 
 Extension of Import/Export Contacts
 -----------------------------------
-
-Changing the Example Import Template File
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To change the import template file, you can do this in the
-``OroCRM\Bundle\ContactBundle\ImportExport\TemplateFixture\ContactFixture``
-class.
-
-Extending Import/Export Operations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To change the format of the exported CSV file, you need to make the
-``OroCRM\Bundle\ContactBundle\ImportExport\Reader\CsvFileReader`` class extending
-the ``Oro\Bundle\ImportExportBundle\Reader\CsvFileReader`` class.
-
-You can override the settings:
-
-.. code-block:: php
-
-    protected $delimiter = ',';
-    protected $enclosure = '"';
-    protected $escape = '\\';
-    protected $firstLineIsHeader = true;
-
-For example, you can change the delimiter from ',' to ';':
-
-.. code-block:: php
-
-    protected $delimiter = ';';
-
-Similarly, you can extend the ``CsvFileWriter`` class.
 
 Adding a new Provider to Support different Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
