@@ -1,5 +1,5 @@
-Import/Export Contacts in OroCRM
-================================
+Import/Export Entity Data
+=========================
 
 OroImportExportBundle is intended to import/export entities into or out of
 the Oro Platform. OroImportExportBundle uses OroBatchBundle to organize the
