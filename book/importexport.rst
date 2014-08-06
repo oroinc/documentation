@@ -363,6 +363,7 @@ Created class must declare as a service in the file ``OroCRM/Bundle/ContactBundl
             calls:
                 - [SetRegistry, [@doctrine]]
 
+
 For more information about OroImportExportBundle you can view
 `documentation <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/index.md>`_.
 
