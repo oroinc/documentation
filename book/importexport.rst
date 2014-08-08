@@ -358,10 +358,10 @@ Created class must declare as a service in the file ``OroCRM/Bundle/ContactBundl
     services:
 
         orocrm_contact.importexport.strategy.contact.add_or_replace:
-            class: %orocrm_contact.importexport.strategy.contact.class%
+            class: "%orocrm_contact.importexport.strategy.contact.class%"
             parent: oro_importexport.strategy.configurable_add_or_replace
             calls:
-                - [SetRegistry, [@doctrine]]
+                - [SetRegistry, ["@doctrine"]]
 
 
 For more information about OroImportExportBundle you can view
