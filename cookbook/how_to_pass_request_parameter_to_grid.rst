@@ -30,13 +30,13 @@ For example:
             # ...
         # ...
 
-Our goal is to set :contactId parameter with the value from a request
+Our goal is to set :contactId parameter with the value from a request.
 
 Solution 1. Create custom event listener
 ----------------------------------------
 
 We need to create a listener for the event "oro_datagrid.datagrid.build.after"
-and set parameter to source query in this listener. The we need to pass parameter to the grid.
+and set parameter to source query in this listener. Also we need to pass parameter to the grid.
 
 Listener class code:
 
