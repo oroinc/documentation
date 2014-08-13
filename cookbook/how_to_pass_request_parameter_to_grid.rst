@@ -152,9 +152,8 @@ via parameter "oro_datagrid.event_listener.base_orm_relation.class":
             tags:
                 - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-tasks-grid, method: onBuildAfter }
 
-In this way the is reused and you don't need to write yours but you still need to pass parameter "contactId" to the grid
-(see example with passing parameters in the grid from Twig template).
-
+This way the listener is reused and you don't need to write yours, but you still need to pass parameter "contactId"
+to the grid (see example with passing parameters in the grid from Twig template).
 
 References
 ----------
