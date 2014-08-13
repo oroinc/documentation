@@ -41,6 +41,7 @@ and set parameter to source query in this listener. Also we need to pass paramet
 Listener class code:
 
 .. code-block:: php
+
     <?php
     // src/Acme/Bundle/TaskBundle/EventListener/ParameterListener.php
     namespace Acme\Bundle\TaskBundle\EventListener;
@@ -80,6 +81,7 @@ Listener class code:
 Register this listener in container:
 
 .. code-block:: yaml
+
     # src/Acme/Bundle/TaskBundle/Resources/config/services.yml
     services:
         acme_task.event_listener.acme_tasks_grid_parameter_listener:
@@ -93,6 +95,7 @@ Now we need to pass parameter with name "contactId" to our grid.
 The controller receives a contact entity and pass it to the view:
 
 .. code-block:: php
+
     <?php
         // src/Acme/Bundle/TaskBundle/Controller/TaskController.php
         namespace Acme\Bundle\TaskBundle\EventListener;
@@ -126,6 +129,7 @@ The controller receives a contact entity and pass it to the view:
 The view passes parameter "contactId" to the grid, it will be used in the listener:
 
 .. code-block:: html+jinja
+
     {# src/Acme/Bundle/TaskBundle/Resources/views/Task/contactsTask.html.twig #}
     {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
 
@@ -142,6 +146,7 @@ Instead of writing your custom listener you can use existing class
 via parameter "oro_datagrid.event_listener.base_orm_relation.class":
 
 .. code-block:: yaml
+
     # src/Acme/Bundle/TaskBundle/Resources/config/services.yml
     services:
         acme_task.event_listener.acme_tasks_grid_parameter_listener:
