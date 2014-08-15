@@ -14,6 +14,7 @@ and technical details.
     data_audits
     importexport
     functional_tests
+    configuration
 
 .. toctree::
     :hidden:
