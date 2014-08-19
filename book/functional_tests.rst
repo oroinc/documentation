@@ -264,11 +264,13 @@ Fixture must be an instance of of Doctrine\Common\DataFixtures\FixtureInterface.
     use Doctrine\Common\Persistence\ObjectManager;
     use Doctrine\Common\DataFixtures\AbstractFixture;
 
+    use Oro\Bundle\FooBarBundle\Entity\FooEntity;
+
     class LoadFooData extends AbstractFixture
     {
         public function load(ObjectManager $manager)
         {
-            // $entity = new FooEntity();
+            $entity = new FooEntity();
             $manager->persist($entity);
             $manager->flush();
         }
@@ -330,7 +332,7 @@ Also you can use references specific entity from fixtures, for example:
         }
     }
 
-Now you can use this reference in you test:
+Now you can use this reference in your test:
 
 .. code-block:: php
 
@@ -471,44 +473,128 @@ In this example a user without sufficient permissions is trying to access contro
 
     <?php
 
-    namespace Oro\Bundle\UserBundle\Tests\Functional\API;
+    namespace Oro\Bundle\UserBundle\Tests\Functional;
 
-    use Oro\Bundle\UserBundle\Tests\Functional\API\DataFixtures\LoadUserData;
+    use Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadUserData;
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
 
     /**
      * @outputBuffering enabled
      * @dbIsolation
      */
-    class RestUsersACLTest extends WebTestCase
+    class UsersTest extends WebTestCase
     {
-        const DEFAULT_USER_ID = '1';
-
         protected function setUp()
         {
             $this->initClient();
             $this->loadFixtures(array('Oro\Bundle\UserBundle\Tests\Functional\API\DataFixtures\LoadUserData'));
         }
 
-        public function testGetUsers()
+        public function testUsersIndex()
         {
-            //get user id
+            $this->client->request(
+                'GET',
+                $this->getUrl('oro_user_index'),
+                array(),
+                array(),
+                $this->generateBasicAuthHeader(LoadUserData::USER_NAME, LoadUserData::USER_PASSWORD)
+            );
+            $result = $this->client->getResponse();
+            $this->assertHtmlResponseStatusCodeEquals($result, 403);
+        }
+
+        public function testGetUsersAPI()
+        {
             $this->client->request(
                 'GET',
                 $this->getUrl('oro_api_get_users'),
                 array('limit' => 100),
                 array(),
-                $this->generateWsseAuthHeader(LoadUserData::USER_NAME, LoadUserData::USER_PASSWORD)
+                $this->generateWsseAuthHeader(LoadUserData::USER_NAME, LoadUserData::USER_API_KEY)
             );
             $result = $this->client->getResponse();
             $this->assertJsonResponseStatusCodeEquals($result, 403);
         }
     }
 
+Fixture that adds a user without permissions:
+
+.. code-block:: php
+
+    <?php
+
+    namespace Oro\Bundle\UserBundle\Tests\Functional\DataFixtures;
+
+    use Doctrine\Common\DataFixtures\AbstractFixture;
+    use Doctrine\Common\Persistence\ObjectManager;
+
+    use Symfony\Component\DependencyInjection\ContainerAwareInterface;
+    use Symfony\Component\DependencyInjection\ContainerInterface;
+
+    use Oro\Bundle\UserBundle\Entity\UserApi;
+
+    class LoadUserData extends AbstractFixture implements ContainerAwareInterface
+    {
+        const USER_NAME     = 'user_wo_permissions';
+        const USER_API_KEY  = 'user_api_key';
+        const USER_PASSWORD = 'user_password';
+
+        private $container;
+
+        public function setContainer(ContainerInterface $container = null)
+        {
+            $this->container = $container;
+        }
+
+        public function load(ObjectManager $manager)
+        {
+            /** @var \Oro\Bundle\UserBundle\Entity\UserManager $userManager */
+            $userManager = $this->container->get('oro_user.manager');
+
+            // Find role for user to able to authenticate in test.
+            // You can use any available role that you want dependently on test logic.
+            $role = $userManager->getStorageManager()
+                ->getRepository('OroUserBundle:Role')
+                ->findOneBy(array('role' => 'IS_AUTHENTICATED_ANONYMOUSLY'));
+
+            // Creating new user
+            $user = $userManager->createUser();
+
+            // Creating API entity for user, we will reference it in testGetUsersAPI method,
+            // if you are not going to test API you can skip it
+            $api = new UserApi();
+            $api->setApiKey(self::USER_API_KEY)
+                ->setUser($user);
+
+            // Creating user
+            $user
+                ->setUsername(self::USER_NAME)
+                ->setPlainPassword(self::USER_PASSWORD) // This value is referenced in testUsersIndex method
+                ->setFirstName('Simple')
+                ->setLastName('User')
+                ->addRole($role)
+                ->setEmail('test@example.com')
+                ->setApi($api)
+                ->setSalt('');
+
+            // Handle password encoding
+            $userManager->updatePassword($user);
+
+            $manager->persist($user);
+            $manager->flush();
+        }
+    }
+
+
 Testing Commands
 ----------------
 
-Example of command command output:
+You can read about Symfony 2 approach of testing commands in this article http://symfony.com/doc/master/components/console/introduction.html#testing-commands.
+
+When Oro is installed you can also test commands by using Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::runCommand method.
+This method will execute command with parameters and return a string with it's output.
+
+Example of testing commands output:
 
 .. code-block:: php
 

@@ -13,6 +13,7 @@ and technical details.
     search
     data_audits
     importexport
+    functional_tests
 
 .. toctree::
     :hidden:
