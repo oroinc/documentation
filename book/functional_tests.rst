@@ -1,8 +1,8 @@
 .. index::
     single: Testing; Functional Testing
 
-How To Write Functional Tests
-=============================
+Functional Tests
+================
 
 Overview
 --------
