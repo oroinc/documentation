@@ -85,7 +85,7 @@ Register this listener in container:
     # src/Acme/Bundle/TaskBundle/Resources/config/services.yml
     services:
         acme_task.event_listener.acme_tasks_grid_parameter_listener:
-            class: Acme\Bundle\TaskBundle\EventListener
+            class: Acme\Bundle\TaskBundle\EventListener\ParameterListener
             arguments:
                 - contactId
             tags:
@@ -107,9 +107,6 @@ The controller receives a contact entity and pass it to the view:
 
         use OroCRM\Bundle\ContactBundle\Entity\Contact;
 
-        /**
-         * @Route("/task")
-         */
         class TaskController extends Controller
         {
             // ...
