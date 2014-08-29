@@ -3,25 +3,23 @@ Import/Export Entity Data
 
 OroImportExportBundle is intended to import/export entities into or out of
 the Oro Platform. OroImportExportBundle uses OroBatchBundle to organize the
-execution of import/export operations. Any import/export operation is a job.
-A job itself is abstract. It doesn't know any specific details of what is
-going on during its execution. A job consists of steps. They can be configured
+execution of import/export operations. Any import/export operation is a job, and a job itself is abstract. 
+It doesn't know any specific details of what is happening during its execution. A job consists of steps which can be configured
 to run in an execution context and are executed by the client.
 
-Each step aggregates three crucial components:
+Each step aggregates three crucial components which are not aware of each other:
 
 * Reader
 * Processor
 * Writer
 
-These components don't know each other. A step uses the reader to read data
-from the source. After the reader has run, the data is passed to the processor
+A step uses the reader to read data from the source. After the reader has run, the data is passed to the processor
 which can modify the data before it is forwarded to the writer. Finally, the
 writer saves data to its final destination.
 
 .. seealso::
 
-    You can have a look at the code in the OroCRM `ContactBundle`_ for a real
+    You can take a look at the code in the OroCRM `ContactBundle`_ for a real
     world example. It extends base classes from the ImportExportBundle (see
     the classes in the `ImportExport namespace`_) to implement contact specific
     behavior. The configuration is located in the `Resources/config/importexport.yml`_
@@ -68,14 +66,14 @@ The import algorithm being performed is (in pseudocode):
 
 The OroBatchBundle provides the ``Oro\Bundle\BatchBundle\Step\ItemStep`` class
 that executes each step of a job. In its ``execute()`` method it creates an
-``Oro\Bundle\BatchBundle\Step\StepExecutor`` instance, passes reader, processor
-and writer to it and runs it ``execute()`` method. After the step is done,
+``Oro\Bundle\BatchBundle\Step\StepExecutor`` instance, passes a reader, processor
+and writer to it and runs it with the ``execute()`` method. After this step is done,
 all imported items are written to the destination.
 
 The Import Process in Detail
 ----------------------------
 
-For example, here is what is going on in detail when you are going to import
+For example, here is what happens in detail when you import
 contact data from a CSV file:
 
 #. The ``Oro\Bundle\ImportExportBundle\Reader\CsvFileReader`` reader reads
@@ -95,7 +93,7 @@ contact data from a CSV file:
    ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy``
    class.
 
-#. At last, the processed entity is returned by the processor and then passed
+#. Finally, the processed entity is returned by the processor and then passed
    to the ``Oro\Bundle\ImportExportBundle\Writer\EntityWriter`` class. This
    writer stores the data when its ``write()`` method is executed.
 
@@ -104,44 +102,44 @@ contact data from a CSV file:
     The user interface separates the import process for the ContactBundle
     in three steps:
 
-    * At the first step, the user selects the source file that he want to
-      import in a form and submits it (have a look at the ``importForm()``
-      controller action, it is configured by the ``oro_importexport_import_form``
+    * In the first step, the user selects the source file that he wants to
+      import in a form and submits it (see the ``importForm()``
+      controller action which is configured by the ``oro_importexport_import_form``
       route). This action requires an "entity" parameter which is the class
       name of the entity that will be imported.
 
-    * At the second step, import validation is triggered (see the ``importValidate()``
-      controller action, configured by the ``oro_importexport_import_validate``
-      route). As a result, the user will be presented all actions that will
-      be performed by the import and errors that have been occurred in the
-      previous step. Records with errors can't be imported, but errors do
+    * In the second step, import validation is triggered (see the ``importValidate()``
+      controller action configured by the ``oro_importexport_import_validate``
+      route). As a result, the user will be presented with all actions that will
+      be performed by the import as well as any errors that have occurred in the
+      previous step. Records with errors can't be imported; however, errors do
       not block valid records.
 
-    * At the last step, the import is processed (see the ``importProcess``
-      controller action, it is configured by the ``oro_importexport_import_process``
+    * In the final step, the import is processed (see the ``importProcess``
+      controller action which is configured by the ``oro_importexport_import_process``
       route).
 
 The Export Process in Detail
 ----------------------------
 
-The export process is basically the reversed import process except that it
+The export process is essentially the import process in reverse, except that it
 doesn't use a strategy:
 
 #. First, the ``Oro\Bundle\ImportExportBundle\Reader\EntityReader`` class reads
-   an object;
+   an object
 
 #. Then, the ``Oro\Bundle\ImportExportBundle\Processor\ExportProcessor`` class
    serializes and converts the object into an associative array with property
-   names as keys and the property values as values of the array;
+   names as keys and the property values as values of the array
 
 #. Serializer:  ``Oro\Bundle\ImportExportBundle\Serializer\Serializer`` class
-   normalizes each field and converts object to complex array;
+   normalizes each field and converts object to complex array
 
 #. A data converter (``Oro\Bundle\ImportExportBundle\Converter\ConfigurableTableDataConverter``)
-   converts the associative array into a dimensional array.
+   converts the associative array into a dimensional array
 
 #. Finally, all array entries are written to a CSV file by the
-   ``Oro\Bundle\ImportExportBundle\Writer\CsvFileWriter`` class;
+   ``Oro\Bundle\ImportExportBundle\Writer\CsvFileWriter`` class
 
 The export algorithm being performed is (in pseudocode):
 
@@ -160,21 +158,21 @@ The export algorithm being performed is (in pseudocode):
 Serializer & Normalizer
 -----------------------
 
-Very important part how we normalize/denormalize relations between entities
+One very important concept to know is how we normalize/denormalize relations between entities
 and other complex data.
 
 The ``Oro\Bundle\ImportExportBundle\Serializer\Serializer`` class extends
 the standard serializer of the `Symfony Serializer component`_ and has its
 own normalizers and denormalizers. Each entity that you want to export/import
-should be supported by the serializer. That means that you should add normalizers
+should be supported by the serializer. This means that you should add normalizers
 and denormalizers that will take care of converting your entity to the array/scalar
-representation (normalization during serialization) and vice versa converting
+representation (normalization during serialization) and vice versa, converting
 arrays to the entity object representation (denormalization during deserialization).
 
 .. sidebar:: The ``ConfigurableEntityNormalizer``
 
-    That system can convert complex array to object system should use class
-    ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\ConfigurableEntityNormalizer`` and method denormalize:
+    The system can convert a complex array to object by using the
+    ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\ConfigurableEntityNormalizer`` calss and the denormalize method:
 
     .. code-block:: php
 
@@ -192,7 +190,7 @@ arrays to the entity object representation (denormalization during deserializati
             $value = $this->serializer->denormalize($value, $entityClass, $format, $context);
         }
 
-    If a value is not a scalar value, the recursively denormalizes its value.
+    If a value is not a scalar value, the system recursively denormalizes its value.
     The data converter checks for circular dependencies to avoid endless recursions
     here.
 
@@ -212,13 +210,13 @@ from the ``Oro\Bundle\ImportExportBundle\Serializer\Normalizer\ConfigurableEntit
 class. This method uses the field helper to process the fields:
 
 * If the field is excluded by the configuration, then it is skipped during
-  the normalization;
+  the normalization
 
 * If the field is an object, another entity or a collection, the ``normalize()``
-  method for this type of object is called;
+  method for this type of object is called
 
 * If the field is a scalar value, the field is added with this value to the
-  array of normalized values.
+  array of normalized values
 
 You can configure your fields in the UI under *System*/*Entities*/*Entity Management*.
 Alternatively, you can describe the field configuration in your entity directly
@@ -299,14 +297,14 @@ For example:
 Extension of Import/Export Contacts
 -----------------------------------
 
-Adding a new Provider to Support different Forms
+Adding a new Provider to Support Different Forms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To write your own provider for import operations you should create a class
+To write your own provider for import operations, you should create a class
 that extends the ``Oro\Bundle\ImportExportBundle\Reader\AbstractReader`` class.
 To support custom export formats, you just need to create a new class that
 implements the ``Akeneo\Bundle\BatchBundle\Item\ItemWriterInterface``. The
-new classes must declared as services:
+new classes must be declared as services:
 
 .. code-block:: yaml
 
@@ -342,13 +340,13 @@ the following methods:
 Adding a Strategy
 ~~~~~~~~~~~~~~~~~
 
-You can add a new strategy you should create a new class, for example
+To add a new strategy, you should create a new class, for example:
 ``OroCRM\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpdateOrDeleteStrategy``, which uses interfaces:
 ``Oro\Bundle\ImportExportBundle\Strategy\StrategyInterface``, ``Oro\Bundle\ImportExportBundle\Context\ContextInterface``
 and ``Oro\Bundle\ImportExportBundle\Processor\EntityNameAwareInterface``.
 
-Strategy class is also responsible for data validation in the method ``validateAndUpdateContext($entity)`` when you import contacts.
-Created class must declare as a service in the file ``OroCRM/Bundle/ContactBundle/Resources/config/importexport.yml``:
+A Strategy class is also responsible for data validation in the method ``validateAndUpdateContext($entity)`` when you import 
+contacts. The created class must be declared as a service in the file ``OroCRM/Bundle/ContactBundle/Resources/config/importexport.yml``:
 
 .. code-block:: yaml
 
