@@ -4,18 +4,18 @@
 Customizing the Platform Application
 ====================================
 
-Symfony offers easy to use possibilities to override parts of third party
+Symfony offers easy-to-use options for overriding parts of third party
 bundles in an application. Since the Oro Platform Application consists of
-several well structured bundles, you can customize almost every part of it
-as easy as you can do that in every other Symfony application.
+several well-structured bundles, you can customize almost every part of it
+as easily as you could in any other Symfony application.
 
 .. _extending-bundles:
 
 Extending a Bundle
 ------------------
 
-Some of the techniques described below require to extend an existing bundle.
-Basically, extending a bundle is nothing more than implementing the ``getParent()``
+Some of the techniques described below require extending an existing bundle.
+Essentially, extending a bundle is nothing more than implementing the ``getParent()``
 method in the bundle's class. The ``getParent()`` method returns the name of
 the extended bundle::
 
@@ -44,10 +44,10 @@ the extended bundle::
 Overriding Templates
 --------------------
 
-There are two possibilities to override the Oro Platform templates:
+There are two options for overriding the Oro Platform templates:
 
 #) Overriding one of the platform templates is as easy as adding a template
-   at the same path under ``app/Resources/`` than the template being overriden.
+   at the same path under ``app/Resources/`` as the template being overriden.
    For example, to override the ``Grid/widget/widget.html.twig`` template
    from the DataGridBundle, create a new template file located at
    ``app/Resources/OroDataGridBundle/views/Grid/widget/widget.html.twig``.
@@ -58,22 +58,22 @@ There are two possibilities to override the Oro Platform templates:
    a template with the same name in the ``Resources/views/Grid/widget`` directory
    of the AcmeDemoBundle.
 
-Both methods have their advantages. Putting templates under the ``app/Resources``
+Both methods of overriding the templates have their advantages. Putting templates under the ``app/Resources``
 directory ensures that they can't be overriden by any bundle. For example,
 you usually store templates that are specific to a particular application
 under this path. Extending one of the Platform bundles is useful if you want
-to be able to reuse the overriden templates in several applications.
+to be able to re-use the overriden templates in several applications.
 
 .. seealso::
 
-    The mechanism to override bundle templates is described in detail in the
+    The mechanism for overriding bundle templates is described in detail in the
     `templating chapter`_ in the Symfony documentation.
 
 Twig Placeholders
 ~~~~~~~~~~~~~~~~~
 
-The `OroUIBundle`_ extends Twig templates by allowing them to use so called
-placeholders. Placeholders are defined in any bundle in the `placeholders.yml`
+The `OroUIBundle`_ extends Twig templates by allowing them to use so-called
+"placeholders". Placeholders are defined in any bundle in the `placeholders.yml`
 file which is stored in the bundle's ``Resources/config`` directory. For
 example, the placeholders file of the OroDataGridBundle looks like this:
 
@@ -126,19 +126,19 @@ You can pass additional options to the placeholder using ``with``:
     single: Translations; Custom Translations
     single: Customization; Translations
 
-Create custom Translations
+Create Custom Translations
 --------------------------
 
 Translations are grouped by message domains. Thus, you can overwrite any
 translation as long as it is in the same message domain. When there are more
 than one translation, the order in which they are loaded is crucial. Therefore,
-you have to make sure, that your bundle containing the overriding translation
+make sure that your bundle containing the overriding translation
 files is loaded after the Oro Platform bundles in ``AppKernel``. To change
-order of bundles loading you can use priority option in bundle configuration.
+order in which bundles are loaded, you can use the priority option in the bundle configuration.
 
 .. tip::
     Translation files located in the ``app/Resources/translations`` directory
-    always win as they are loaded at last.
+    always win over others as they are loaded last.
 
 
 Crowdin Translations
@@ -162,9 +162,9 @@ Replacing a Service
 -------------------
 
 You can replace any service defined by one of the Oro Platform bundles with
-your own implementation. All you have to do, is to fill the class parameter
+your own implementation. All you have to do is fill the class parameter
 name for the service you want to replace with the name of your new service
-class. All parameters used to set the services' class names are of the form
+class. All parameters used to set the services' class names are in the form of
 ``bundle_alias.service_name.class_name`` (for example, ``oro_datagrid.configuration.provider.class``
 is the parameter holding the class name for the ``oro_datagrid.configuration.provider``
 service):
@@ -195,12 +195,11 @@ they can be replaced :ref:`like any other service <replace-services>`.
 Adding custom Validation Constraints
 ------------------------------------
 
-Symfony doesn't allow to override validation constraints. Instead, all rules
-configured for a particular subject being validated, are merged into one large
+Symfony doesn't allow you to override validation constraints. Instead, all rules
+configured for a particular subject being validated are merged into one large
 validation metadata tree.
 
-You can learn more from the cookbook on where and how you are able to use
-custom validation constraints:
+You can learn more about where and how you are able to use custom validation constraints from the cookbook:
 
 * :doc:`/cookbook/user_custom_validation_constraints`
 
@@ -208,9 +207,9 @@ Overriding a Controller
 -----------------------
 
 To override a controller of the Oro Platform bundle with your own implementation,
-you first have to extend that bundle (read :doc:`/cookbook/how_to_extend_existing_bundle`
+you must first extend that bundle (read :doc:`/cookbook/how_to_extend_existing_bundle`
 for more information). Then, create a controller class with the same name
-as in the parent bundle::
+as the parent bundle::
 
     // src/Acme/DataGridBundle/Controller/GridController;
     namespace Acme\DataGridBundle\Controller;
@@ -228,10 +227,10 @@ as in the parent bundle::
 
 .. tip::
 
-    You should extend the controller class from the parent bundle, so that
-    you have to implement the customized action instead of reimplementing
+    You should extend the controller class from the parent bundle so that
+    you have to implement the customized action instead of re-implementing
     all other actions. Don't forget to register your controller action
-    either with annotation or using configuration from routing.yml file.
+    either with annotation or using configuration from the routing.yml file.
 
 Customizing the Database Schema
 -------------------------------
@@ -246,7 +245,7 @@ Oro Platform Entities
 
 The Oro Platform Application ships with a set of predefined entities. Their
 basic configuration is stored in the ``oro_entity_config`` table. Its structure
-looks basically like this:
+looks essentially like this:
 
 .. code-block:: text
 
@@ -261,7 +260,7 @@ looks basically like this:
     | data       | longtext     | YES  |     | NULL    |                |
     +------------+--------------+------+-----+---------+----------------+
 
-You can add new fields to already existing entities. Also, you can your own
+You can add new fields to already existing entities and also add your own
 custom entities. To do this, all you have to do is to create a Migration that
 performs the steps need to customize the entity schema.
 
@@ -331,13 +330,13 @@ created in the ``app/cache``:
     -rw-rw-r--+ 1 user user  347 Jun  6 20:40 ExtendUser.php
     -rw-rw-r--+ 1 user user   65 Jun  6 20:40 alias.yml
 
-Creating custom Entities
+Creating Custom Entities
 ........................
 
 Thanks to the EntityExtendBundle, you can create your own entities which are
 then available in the *Section*/*Entities* section of the Platform Application.
-To create your own entities, simply create migration class that implements
-the ``ExtendExtensionAwareInterface`` and the ``Migration`` interface::
+To create your own entities, simply create a migration class that implements
+the ``ExtendExtensionAwareInterface`` and the ``Migration`` interface:
 
     // src/Acme/DemoBundle/Migrations/Schema/v1_0/CreateCustomEntityMigration.php
     namespace Acme\DemoBundle\Migrations\Schema\v1_0;
@@ -371,7 +370,7 @@ the ``ExtendExtensionAwareInterface`` and the ``Migration`` interface::
         }
     }
 
-This migration creates a new entity ``Extend\Entity\CustomEntity``. Its PHP
+This migration creates a new entity, ``Extend\Entity\CustomEntity``. Its PHP
 class doesn't reside in any bundle but only in the application cache. Also,
 a new table ``oro_ext_customentity`` will be created in your database which
 should look something like this:
@@ -402,7 +401,7 @@ Furthermore, two new files are created in the entities cache directory:
 Regular Entities
 ~~~~~~~~~~~~~~~~
 
-You can create regular Doctrine entities just the way you are used to in
+You can create regular Doctrine entities as you would in
 other Symfony applications. For example, have a look at the following entity::
 
     // src/Acme/DemoBundle/Entity/RegularEntity.php
@@ -471,7 +470,7 @@ This created a ``RegularEntity`` table in your database. You can now use the
 
 Search for the parts that are related to the ``RegularEntity`` table (the
 lines between its related ``Generate table`` and ``End of generate table``
-comments) and copy them to a new migration file. After that, this new migration
+comments) and copy them to a new migration file. After that, the new migration
 file should look like this::
 
     // src/Acme/DemoBundle/Migrations/Schema/CreateRegularEntityMigration.php;
@@ -497,7 +496,7 @@ the ``oro:migration:load`` command.
 
 .. caution::
 
-    Remember, that command doctrine:schema:update can be executed only for
+    Remember that command doctrine:schema:update can only be executed for
     development or testing purposes. All real application database updates must be
     applied using migrations.
 
@@ -513,11 +512,11 @@ Business Logic
 Since Oro Platform entites are only created inside the application's cache
 directory, you cannot add your business logic to these entity classes. To
 overcome this drawback, you can create a service that does all the necessary
-stuff required by your business.
+actions required by your business.
 
 For example, imagine that the users of your application are accounted based
 on the number of months they used your service during the last year. The longer
-your user uses the service the lower is the fee they are charged with per month:
+your user uses the service, the lower the fee they are charged per month:
 
 ====================== =====================
 Service used in months Service fee per month
@@ -561,8 +560,8 @@ The entity class for such a user may look like this::
         }
     }
 
-You can then create a class doing all the calculations based on the rules
-described above which should be `registered as a service`_ in your Symfony
+You can then create a class which performs all of the calculations based on the rules
+above which should be `registered as a service`_ in your Symfony
 application::
 
     // src/Acme/DemoBundle/Accounting/TotalFeeCalculator.php
