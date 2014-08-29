@@ -4,7 +4,7 @@
 Search
 ======
 
-The `SearchBundle`_ as part of the Oro Platform allows to create an advanced
+As part of the Oro Platform, the `SearchBundle`_ allows you to create an advanced
 search index for mapped objects and to perform advanced queries on the indexed
 data.
 
@@ -55,7 +55,7 @@ The configuration of the SearchBundle is driven by three configuration options:
 Indexing Entities
 -----------------
 
-Each time an entity is updated, the changed data need to be persisted into
+Each time an entity is updated, the changed data needs to be persisted into
 the search index. The mapping of your entity fields to the search index can
 be configured either globally (under the ``oro_search`` key) or in a config
 file named ``search.yml`` which must be located in the bundle's ``Resources/config``
@@ -104,44 +104,43 @@ You can use the following options to configure the entity's search index
 mapping:
 
 ``search_template``
-    Template to use for the current entity when the search result page is
-    rendered. This is only necessary if the global template (see the
-    :ref:`available configuration options <item-container-template-config-option>`)
-    should not be used.
+    The template to use for the current entity when the search result page is
+    rendered. This is only necessary if the global template should not be used.
+    (see the :ref:`available configuration options <item-container-template-config-option>`).
 
 ``label``
     A label that is displayed with each search result for the current entity
-    type.
+    type
 
 ``route``
     The route used to display the detailed search result:
 
     ``name``
-        The route's name.
+        The route's name
 
     ``parameters``
-        Optional route parameters.
+        Optional route parameters
 
 ``alias``
     Alias which can be used to reference the current entity in an
-    :ref:`advanced search <advanced-search-api>`.
+    :ref:`advanced search <advanced-search-api>`
 
 ``fields``
     Fields to include in the search index:
 
     ``name``
-        The field's (property's) name.
+        The field's (property's) name
 
     ``target_type``
         The virtual form type (supported values are ``text``, ``integer``,
-            ``double`` and ``datetime``).
+            ``double`` and ``datetime``)
 
     ``target_fields``
-        List of virtual fields.
+       A list of virtual fields
 
     ``relation_type``
         Indicates a relation to another entity (one of ``one-to-one``, ``many-to-many``,
-            ``one-to-many``, ``many-to-one``).
+            ``one-to-many``, ``many-to-one``)
 
     ``relation_fields``
         List of fields of the related entity that should be included in the
@@ -180,13 +179,13 @@ The query builder offers several methods to modify the generated search:
     Add ``and`` or ``or`` where clauses to the search query. Expects four
     arguments:
 
-    * The field to check;
+    * The field to check
 
-    * The comparison operator (``<``, ``>``, ``=``, ``!=``, etc.);
+    * The comparison operator (``<``, ``>``, ``=``, ``!=``, etc.)
 
-    * The value to search for;
+    * The value to search for
 
-    * The field type.
+    * The field type
 
 ``setOrderBy``
     Field and direction to order the search result by. By default, search
@@ -205,30 +204,30 @@ The Search API
 ~~~~~~~~~~~~~~
 
 You can query the search index remotely in two different ways: send simple
-queries which query all fields of all entities or use a powerful query language
+queries which query all fields of all entities, or use a powerful query language
 to describe more precise search queries.
 
 Both APIs return a data object with three attributes:
 
 ``records_count``
     The total number of results (``max_results`` and ``offset`` are not being
-    taken into account).
+    taken into account)
 
 ``count``
-    Number of returned search results (less than or equal to ``max_results``).
+    Number of returned search results (less than or equal to ``max_results``)
 
 ``data``
     An array of search results. Each result is an object containing the following
     data:
 
     ``entity_name``
-        The result's entity class name.
+        The result's entity class name
 
     ``record_id``
-        The record's id.
+        The record's id
 
     ``record_string``
-        The record's title.
+        The record's title
 
 The simple Search API
 .....................
@@ -237,17 +236,17 @@ The simple search API can be used to remotely search in all text fields of
 all entities. It's driven by three parameters describing a query:
 
 ``search``
-    The string to search for.
+    The string to search for
 
 ``offset``
-    The result offset.
+    The result offset
 
 ``max_results``
-    The maximum number of search results being returned.
+    The maximum number of search results being returned
 
 The endpoint of the simple REST search API is described by the ``oro_api_get_search``
 route. Its path defaults to ``/api/rest/{version}/search.{_format}``. Valid
-formats are ``json``and ``html``. ``json`` being the default format and ``latest``
+formats are ``json``and ``html`` with ``json`` being the default format and ``latest``
 being the default version. The SOAP function name is ``search``.
 
 .. _advanced-search-api:
@@ -257,7 +256,7 @@ The advanced Search API
 
 Instead of searching in all fields of all entities, you can use the advanced
 search API to create your own remote search queries. Each query is passed
-as the ``query`` parameter. It is of the form
+as the ``query`` parameter. It takes the following form:
 ``[from <entity>] [conditions] [order_by field_type field_name direction] [offset <offset> max_results <max_results>]``:
 
 * You can query one ore more entities at the same time:
@@ -339,7 +338,7 @@ as the ``query`` parameter. It is of the form
 
 The endpoint of the advanced REST search API is described by the ``oro_api_get_search_advanced``
 route. Its path defaults to ``/api/rest/{version}/search/advanced.{_format}``. Valid
-formats are ``json``and ``html``. ``json`` being the default format and ``latest``
+formats are ``json``and ``html`` with ``json`` being the default format and ``latest``
 being the default version. The SOAP function name is ``advancedSearch``.
 
 .. _`SearchBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/SearchBundle
