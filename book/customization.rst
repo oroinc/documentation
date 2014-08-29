@@ -597,7 +597,7 @@ the Symfony documentation as well as customizing the Oro Platform Application:
 
 * `How to Override any Part of a Bundle`_
 * `How to Use Bundle Inheritance to Override Parts of a Bundle`_
-* `:doc:`/cookbook/how_to_create_and_customize_application_menu`
+* :doc:`/cookbook/how_to_create_and_customize_application_menu`
 
 .. _`templating chapter`: http://symfony.com/doc/current/book/templating.html#overriding-bundle-templates
 .. _`OroUIBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/UIBundle
