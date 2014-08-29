@@ -14,20 +14,20 @@ The `OroDataAuditBundle`_ leverages the Loggable `Doctrine extension`_
 Entity Configuration
 --------------------
 
-DataAudit can be enabled only for Configurable entities. To make a property
-of an entity being added to the changelog, you simple have to enable the audit
-for the entity itself and some fields you want to be logged. To achieve this,
-you should use the ``@Config`` and ``@ConfigField`` annotations for entity.
+DataAudit can only be enabled for Configurable entities. To add a property
+of an entity to the changelog, you simply have to enable the audit
+for the entity itself and specify some fields you want to be logged. To achieve this,
+you should use the ``@Config`` and ``@ConfigField`` annotations for the entity.
 
 .. caution::
 
-    Note that this annotation will be read only on install.
-    On platform update this annotation will be read and saved in config, only  for new entities
-    or for entities which were not Configurable before or have not be changed via configuration UI.
+    Note that this annotation will be read-only on installation.
+    On platform updates, this annotation will be read and only saved in the configuration for new entities,
+    or for entities which were not Configurable before or have not be changed via the configuration UI.
 
 .. note::
 
-    Audit can be enabled/disabled per whole entity or separate field in UI System->Entities->EntityManagement (attribute "Auditable").
+    Audit can be enabled/disabled per an entire entity or for separate fields in UI System->Entities->EntityManagement (attribute "Auditable").
 
 Example of annotation configuration::
 
@@ -84,26 +84,26 @@ Example of annotation configuration::
         private $price;
     }
 
-Now, everytime a product's price is modified, the changes are logged in the
-database. The loggable manager not only stores the data being modified but
+Now, every time a product's price is modified, the changes are logged in the
+database. The logging manager not only stores the data being modified but
 also logs a set of related information:
 
 * The action corresponding to the operation performed by the Doctrine ORM
   (one of *create*, *update* and *delete*);
 
-* The modified entity's class name;
+* The modified entity's class name
 
-* The current date and time;
+* The current date and time
 
-* The user performing the change;
+* The user performing the change
 
 * A string representation of the modified entity. If the entity class implements
   a ``__toString()`` method, the return value of this method is used. Otherwise,
   the class name is used.
 
 Each entity object gets its own history. Therefore, changesets get version
-numbers starting with 1. Each time a new changeset is created, the a new version
-number is created by increment the highest existing version number for a
+numbers starting with 1. Each time a new changeset is created, a new version
+number is created by incrementing the highest existing version number for a
 particular entity by one.
 
 Browsing the Change History
@@ -120,17 +120,17 @@ definition for a route with id ``oro_dataaudit_history``.
 API
 ---
 
-Besides browsing the audit history with your web browser, you can also access
-the data being stored via an API. It provides methods to receive your stored
+Along with browsing the audit history with your web browser, you can also access
+the data being stored via an API which provides methods to receive your stored
 results via either REST or SOAP.
 
 Both variants provide methods to retrieve:
 
-* A list of all audit log entries;
+* A list of all audit log entries
 
-* A single audit log entry.
+* A single audit log entry
 
-To retrieve a single entry, you need its id which you have to extract from
+To retrieve a single entry, you need its id which must be extracted from
 the list of log entries.
 
 .. note::
@@ -159,7 +159,7 @@ to ``v1`` which is the only available version.
 SOAP
 ~~~~
 
-To access the SOAP API you use one of the two functions provided by the API:
+To access the SOAP API, you use one of the two functions provided by the API:
 
 ============= ==============================
 Function      Use case
