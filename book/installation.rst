@@ -49,11 +49,11 @@ examples assume that you want the root directory of your installation to be
 
    .. note::
 
-       Besides of ``1.0.0``, you can use any other released version or even
+       Along with ``1.0.0``, you can use any other released version or even
        the master branch to run the latest development version of the Oro
        Platform Application.
 
-   Now, you have to install the dependencies:
+   Next, you'll need to install the dependencies:
 
    .. code-block:: bash
 
@@ -83,26 +83,26 @@ examples assume that you want the root directory of your installation to be
        secret (ThisTokenIsNotSoSecretChangeIt):
        installed (null):
 
-   These options have the following meaning:
+   These options have the following meanings:
 
    * ``database_host``, ``database_port``, ``database_name``, ``database_user``,
-     ``database_password``: Credentials used to connect to the database;
+     ``database_password``: Credentials used to connect to the database
 
    * ``mailer_transport``, ``mailer_host``, ``mailer_port``, ``mailer_encryption``,
      ``mailer_user``, ``mailer_password``: Options configuring how emails
-     sent by the Oro Platform Application are delivered;
+     sent by the Oro Platform Application are delivered
 
-   * ``websocket_host``, ``websocket_port``: Host and port the websocket listens
-     to;
+   * ``websocket_host``, ``websocket_port``: The host and port the websocket listens
+     to
 
-   * ``session_handler``: The PHP `session handler`_ to use;
+   * ``session_handler``: The PHP `session handler`_ to use
 
-   * ``locale``: The fallback locale used as a last resort for `translations`_;
+   * ``locale``: The fallback locale used as a last resort for `translations`_
 
-   * ``secret``: A secret value included in `CSRF tokens`_;
+   * ``secret``: A secret value included in `CSRF tokens`_
 
    * ``installed``: Flag indicating whether or not the Oro Platform Application
-     has been installed.
+     has been installed
 
 #. Download the Source Code Archive
 
@@ -228,26 +228,26 @@ permissions.
 .. hint::
 
     Read the article "`Configuring a Web Server`_" in the `Symfony Cookbook`_
-    for advanced configuration reference.
+    for advanced configuration references.
 
 The Installation
 ----------------
 
-To finish the installation, you have to run the Oro Platform Application
-installation script. It checks your system requirements, performs migrations
+To finish the installation, you'll need to run the Oro Platform Application
+installation script which checks your system requirements, performs migrations
 and sets up your database tables. You can run the install script in two
-different ways: visit the installation wizard using a web browser or run the
+ways: visit the installation wizard using a web browser, or run the
 ``install`` console command.
 
 #. Use a browser to access the Oro Platform Application installation wizard
-   at ``http://bap.tutorial/install.php`` and click on *Begin installation*.
+   at ``http://bap.tutorial/install.php`` and click *Begin installation*.
    The installation wizard now checks your system configuration:
 
    .. image:: /images/book/installation/wizard-1.png
 
-   Fix any issue and click refresh. When your system configuration meets the
-   Oro Platform Application requirements, click on the *Next* button. You
-   will be guided to step 2 where you have to specify your application configuration:
+   Fix any issues and click refresh. When your system configuration meets the
+   Oro Platform Application requirements, click *Next*. You
+   will be guided to Step 2 where you'll specify your application configuration:
 
    .. image:: /images/book/installation/wizard-2.png
 
@@ -256,7 +256,7 @@ different ways: visit the installation wizard using a web browser or run the
 
    .. image:: /images/book/installation/wizard-3.png
 
-   On the last step, you have to provide your administrative data like the
+   On the last step, you'll provide your administrative data such as the
    company name and administrative credentials:
 
    .. image:: /images/book/installation/wizard-4.png
@@ -267,14 +267,14 @@ different ways: visit the installation wizard using a web browser or run the
 
    Congratulations! You have now successfully set up the Oro Platform Application!
 
-#. The ``oro:install`` console command can be used to trigger the installation
+#. Use the ``oro:install`` console command can to trigger the installation
    from the command line:
 
    .. code-block:: bash
 
        $ php app/console oro:install
 
-   If the invoke the command without any argument, you will be asked to enter
+   If you invoke the command without any argument, you will be asked to enter
    values for certain configuration options. You can pass these values using
    the appropriate command options:
 
@@ -308,14 +308,14 @@ different ways: visit the installation wizard using a web browser or run the
 
    .. tip::
 
-       Normally, the installation process terminates if it detects an already
-       existing installation. Use the ``--force`` option to overwrite an
-       existing installation, for example during your development process.
+       Normally, the installation process terminates if it detects an already-existing 
+       installation. Use the ``--force`` option to overwrite an existing installation, 
+       e.g. during your development process.
 
 .. tip::
 
-    If you experience any problems finishing the Oro Platform Application,
-    have a look at the ``app/logs/oro_install.log`` file.
+    If you experience any problems finishing the Oro Platform Application installation,
+    be sure to take a look at the ``app/logs/oro_install.log`` file.
 
 The Installation Process
 ------------------------
@@ -323,29 +323,29 @@ The Installation Process
 Installation is a three step process:
 
 #. The system requirements are checked. The setup process terminates if any
-   of the requirements are not fulfilled;
+   of the requirements are not fulfilled
 
-#. The database and all caches are reset;
+#. The database and all caches are reset
 
 #. Initial data (i.e. migrations, workflow defintions and fixture data)
-   are loaded and executed;
+   are loaded and executed
 
-#. Assets are dumped, ``requirejs`` is initialized.
+#. Assets are dumped, ``requirejs`` is initialized
 
 Customizing the Installation Process
 ------------------------------------
 
 You can customize the installation process in several ways:
 
-#. `Execute custom migrations`_;
+#. `Execute custom migrations`_
 
-#. `Load custom data fixtures`_.
+#. `Load custom data fixtures`_
 
 Execute custom Migrations
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create your own migrations that can be executed during the installation.
-A migration is a class implementing the ``Migration`` interface:
+A migration is a class which implements the ``Migration`` interface:
 
 .. code-block:: php
 
@@ -402,13 +402,13 @@ to register your custom migrations:
     You can learn more about `custom event listeners`_ in the Symfony documentation.
 
 Migrations registered in the ``oro_migration.pre_up`` event are executed
-before the *main* migrations, migrations registered in the ``oro_migration.post_up``
+before the *main* migrations while migrations registered in the ``oro_migration.post_up``
 event are executed after the *main* migrations have been processed.
 
 Load custom Data Fixtures
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To load your own data fixtures, you have to implement the ``FixtureInterface``:
+To load your own data fixtures, you'll need to implement the ``FixtureInterface``:
 
 .. code-block:: php
 
@@ -428,7 +428,7 @@ To load your own data fixtures, you have to implement the ``FixtureInterface``:
 
 .. caution::
 
-    Your data fixtures classes must reside in the ``Migrations/Data/ORM`` subdirectory
+    Your data fixture classes must reside in the ``Migrations/Data/ORM`` sub-directory
     of your bundle to be loaded automatically during the installation.
 
 .. tip::
