@@ -9,67 +9,67 @@ Overview
 
 Functional tests check the integration of the different layers of an application.
 
-From this article you will learn how you can improve experience of writing functional tests with Oro Platform.
-Symfony 2 documentation about testing (http://symfony.com/doc/current/book/testing.html#functional-tests) is recommended
-to read before. Also you should be familiar with PHPUnit (http://phpunit.de).
+In this article you will learn how you can improve the experience of writing functional tests with the Oro Platform.
+It is recommended to read the Symfony 2 documentation concerning testing before you continue:
+(http://symfony.com/doc/current/book/testing.html#functional-tests) You should also be familiar with PHPUnit (http://phpunit.de).
 
 When To Write Functional Tests
 ------------------------------
 
 Functional tests are generally written for:
 
-* controllers;
-* commands;
-* repositories;
-* other services.
+* controllers
+* commands
+* repositories
+* other services
 
-Goal of function tests is not to test separate class (unit tests) but the integration of the different parts of
+The goal of functional tests is not to test separate classes (unit tests), but the integration of the different parts of an
 application.
 
-If you encounter problems when writing a unit test, for example you are created dozen of mocks for Doctrine ORM classes to
-check building of the query and retrieving data from persistence layer then stop think, probably a functional test will
+If you encounter problems when writing a unit test, (e.g. you are creating dozen of mocks for Doctrine ORM classes to
+check building a query and retrieving data from the persistence layer), it's likely that a functional test will
 be more appropriate.
 
-Such unit tests can be dangerous because they can deceptively pass, while in the real application functionality
-is not working.
+Such unit tests can be dangerous because they can pass deceptively while in the real application the functionality
+does not work as expected.
 
-Workflow of Functional Test for Controller
+Workflow of Functional Tests for Controllers
 ------------------------------------------
 
-* Make a request;
-* Test the response;
-* Click on a link or submit a form;
-* Test the response;
-* Rinse and repeat.
+* Make a request
+* Test the response
+* Click on a link or submit a form
+* Test the response
+* Rinse and repeat
 
 
-Steps to Create Functional Test
+Steps to Create a Functional Test
 -------------------------------
 
-* Extend Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-* Prepare test client (instance of Oro\Bundle\TestFrameworkBundle\Test\Client);
-* Prepare fixtures (optional);
-* Prepare container (optional);
-* Call test functionality;
-* Verify result.
+* Extend Oro\Bundle\TestFrameworkBundle\Test\WebTestCase
+* Prepare test client (instance of Oro\Bundle\TestFrameworkBundle\Test\Client)
+* Prepare fixtures (optional)
+* Prepare container (optional)
+* Call test functionality
+* Verify result
 
 Initialization Client and Loading Fixtures Caveats
 --------------------------------------------------
 
-For improving performance of tests execution initialization of client by default is done only once per test case.
+To improve the performance of test execution, the initialization of a client is only done once per test case by default.
 
-It means that kernel of Symfony 2 application will be booted once per test case.
+This means that the kernel of the Symfony 2 application will be booted once per test case.
 
-Fixtures are also loaded by default only once per test case.
+Fixtures are also loaded only once per test case by default.
 
-Initialization and loading fixtures once per test case increases performance of tests execution from one side but
-it also can be a cause of bugs in because the state of fixtures and kernel (and as a result service container)
-will be shared by default between test methods of separate test case, so take care for resetting this state if needed.
+On one hand, initializing and loading fixtures once per test case increases the performance of test execution but
+it can also cause bugs because the state of fixtures and the kernel (and as a result, the service container)
+will be shared by default between test methods of separate test cases.  Be sure to reset this state if necessary.
 
-Setup Test Environment
+Test Environment Setup
 ----------------------
 
-You will need to provide a parameters for testing environment in app/config/parameters_test.yml. For example:
+You will need to provide parameters for the testing environment in app/config/parameters_test.yml. For example:
 
 .. code-block:: yaml
 
@@ -92,7 +92,7 @@ You will need to provide a parameters for testing environment in app/config/para
         secret: ThisTokenIsNotSoSecretChangeIt
         installed: '2014-08-12T09:05:04-07:00'
 
-Now you need to install an application in test environment and also run some additional commands:
+Next, install an application in the test environment and run some additional commands:
 
 .. code-block:: bash
 
@@ -101,7 +101,7 @@ Now you need to install an application in test environment and also run some add
     user@host: app/console oro:test:schema:update --env test
 
 
-After this you will be able to run your tests in a command line or IDE, for example:
+After this, you'll be able to run your tests in a command line or IDE, e.g.:
 
 .. code-block:: bash
 
@@ -111,7 +111,7 @@ After this you will be able to run your tests in a command line or IDE, for exam
 Prepare client examples
 -----------------------
 
-Simple initialization, works for commands and services testing when authentication is not required.
+Simple initialization works for testing commands and services when authentication is not required.
 
 .. code-block:: php
 
@@ -196,8 +196,8 @@ Database Isolation
         // ...
     }
 
-This annotation adds transaction that will be when client is initialized first time and rollbacked when all test methods
-of class will be executed.
+This annotation adds a transaction that will be performed when a client is initialized for the first time and 
+rolled back when all test methods of the class have been executed.
 
 Database Reindex
 ----------------
@@ -219,14 +219,14 @@ Database Reindex
     }
 
 
-This annotation will trigger execution of command "oro:search:reindex" when first client will be initialized.
+This annotation will trigger the execution of the "oro:search:reindex" command when the client is first initialized.
 This is a workaround for MyISAM search tables that are not transactional.
 
 
 Loading Data Fixtures
 ---------------------
 
-Example of loading fixture in test:
+Example of loading a fixture in a test:
 
 .. code-block:: php
 
@@ -253,7 +253,7 @@ Example of loading fixture in test:
         // ...
     }
 
-Fixture must be an instance of of Doctrine\Common\DataFixtures\FixtureInterface. Example of fixture:
+A fixture must be an instance of the Doctrine\Common\DataFixtures\FixtureInterface. An example of a fixture is as follows:
 
 .. code-block:: php
 
@@ -276,7 +276,7 @@ Fixture must be an instance of of Doctrine\Common\DataFixtures\FixtureInterface.
         }
     }
 
-Also you can use Doctrine\Common\DataFixtures\DependentFixtureInterface:
+You can also use Doctrine\Common\DataFixtures\DependentFixtureInterface:
 
 .. code-block:: php
 
@@ -301,7 +301,7 @@ Also you can use Doctrine\Common\DataFixtures\DependentFixtureInterface:
         }
     }
 
-Also you can use references specific entity from fixtures, for example:
+Further, you can use reference-specific entities from fixtures, e.g.:
 
 .. code-block:: php
 
@@ -358,7 +358,7 @@ Now you can use this reference in your test:
 Testing Controllers
 -------------------
 
-Check this test as an example:
+See this test as an example:
 
 .. code-block:: php
 
@@ -467,7 +467,7 @@ Check this test as an example:
 Testing ACL in Controllers
 --------------------------
 
-In this example a user without sufficient permissions is trying to access controller action:
+In this example, a user without sufficient permissions is trying to access a controller action:
 
 .. code-block:: php
 
@@ -517,7 +517,7 @@ In this example a user without sufficient permissions is trying to access contro
         }
     }
 
-Fixture that adds a user without permissions:
+Here's an example of a fixture that adds a user without permissions:
 
 .. code-block:: php
 
@@ -589,12 +589,12 @@ Fixture that adds a user without permissions:
 Testing Commands
 ----------------
 
-You can read about Symfony 2 approach of testing commands in this article http://symfony.com/doc/master/components/console/introduction.html#testing-commands.
+You can read about Symfony 2's approach for testing commands in this article http://symfony.com/doc/master/components/console/introduction.html#testing-commands.
 
-When Oro is installed you can also test commands by using Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::runCommand method.
-This method will execute command with parameters and return a string with it's output.
+When Oro is installed, you can also test commands by using the Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::runCommand method.
+This method will execute a command with parameters and return a string with its output.
 
-Example of testing commands output:
+Here's an example of testing a command's output:
 
 .. code-block:: php
 
@@ -650,7 +650,7 @@ Example of testing commands output:
 Testing Services or Repositories
 --------------------------------
 
-Example of repository or service test:
+Here's an example of a repository or service test:
 
 .. code-block:: php
 
@@ -682,7 +682,7 @@ Example of repository or service test:
 Integration Test Example
 ------------------------
 
-This is an example of how you can write an integration test for class that is using Doctrine ORM
+This is an example of how you can write an integration test for a class that uses Doctrine ORM
 without mocking it's classes and using real Doctrine services:
 
 .. code-block:: php
@@ -752,9 +752,9 @@ without mocking it's classes and using real Doctrine services:
 
 .. caution::
 
-    If your class is responsible for retrieving data, it will be more good idea to load fixtures and get them using test
-    class and then assert that results are valid. Checking DQL in this case is enough because of specific responsibility
-    of this class to modify the query.
+    If your class is responsible for retrieving data, it's better to load fixtures and retrieve them using a test
+    class and then assert that the results are valid. Checking DQL is enough in this case because this it is the 
+    sole responsibility of this class to modify the query.
 
 References
 ----------
