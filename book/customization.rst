@@ -336,7 +336,7 @@ Creating Custom Entities
 Thanks to the EntityExtendBundle, you can create your own entities which are
 then available in the *Section*/*Entities* section of the Platform Application.
 To create your own entities, simply create a migration class that implements
-the ``ExtendExtensionAwareInterface`` and the ``Migration`` interface:
+the ``ExtendExtensionAwareInterface`` and the ``Migration`` interface::
 
     // src/Acme/DemoBundle/Migrations/Schema/v1_0/CreateCustomEntityMigration.php
     namespace Acme\DemoBundle\Migrations\Schema\v1_0;
