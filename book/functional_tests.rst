@@ -34,7 +34,7 @@ Such unit tests can be dangerous because they can pass deceptively while in the 
 does not work as expected.
 
 Workflow of Functional Tests for Controllers
-------------------------------------------
+--------------------------------------------
 
 * Make a request
 * Test the response
@@ -44,7 +44,7 @@ Workflow of Functional Tests for Controllers
 
 
 Steps to Create a Functional Test
--------------------------------
+---------------------------------
 
 * Extend Oro\Bundle\TestFrameworkBundle\Test\WebTestCase
 * Prepare test client (instance of Oro\Bundle\TestFrameworkBundle\Test\Client)
