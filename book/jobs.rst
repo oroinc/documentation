@@ -115,10 +115,6 @@ the appropriate value is ``5 0 * * *``. Your command will then look like this::
       the file system into the database when the ``ImportLogsCommand`` from
       the `TrackingBundle`_ is executed.
 
-.. _job-queues:
-
-Job Queues
-----------
 
 .. _`OroCronBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/CronBundle
 .. _`crontab compatible`: http://www.unix.com/man-page/linux/5/crontab/
