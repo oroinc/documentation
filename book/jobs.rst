@@ -50,7 +50,7 @@ same.
     commands from the ``oro:cron`` namespace that implement the ``CronCommandInterface``.
     For each found command, a new ``Schedule`` entry is created registered
     at the cron ``Daemon``. The ``Daemon`` is a background process that manages
-    a :ref:`queue <job-queues>` of all open jobs and ensures that each job
+    a queue of all open jobs and ensures that each job
     is executed at the appropriate times.
 
 .. _create-cron-command:
