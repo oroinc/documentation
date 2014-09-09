@@ -51,11 +51,13 @@ be started automatically by the ``oro:cron`` command, but you can also
     When executed, the ``oro:cron`` command is the entry point for all cron
     commands (:ref:`built-in commands <built-in-cron-commands>` as well as
     :ref:`self-created commands <create-cron-command>`). It scans for all
-    commands from the ``oro:cron`` namespace that implement the ``CronCommandInterface``.
-    For each found command, a new ``Schedule`` entry is created registered
-    at the cron ``Daemon``. The ``Daemon`` is a background process that manages
-    :ref:`a queue <job-queues>` of all open jobs and ensures that each job
-    is executed at the appropriate times.
+    commands from the ``oro:cron`` namespace that implement the
+    :class:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface`. For each
+    found command, a new :class:`Oro\\Bundle\\CronBundle\\Entity\\Schedule`
+    entry is created and registered at the cron
+    :class:`Oro\\Bundle\\CronBundle\\Job\\Daemon`. The ``Daemon`` is a background
+    process that manages :ref:`a queue <job-queues>` of all open jobs and
+    ensures that each job is executed at the appropriate times.
 
 .. _create-cron-command:
 
@@ -65,10 +67,12 @@ Creating the Command
 The ``oro:cron`` command will automatically execute all registered commands
 that implement the ``CronCommandInterface`` if they are registered in the
 ``oro:cron`` namespace. Implementing the ``CronCommandInterface`` requires
-you to implement one method - ``getDefaultDefinition()``. It returns the
-`crontab compatible`_ description of when the command should be executed.
-For example, if a command should be run every day five minutes after midnight,
-the appropriate value is ``5 0 * * *``. Your command will then look like this::
+you to implement one method -
+:method:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface::getDefaultDefinition`.
+It returns the `crontab compatible`_ description of when the command should
+be executed. For example, if a command should be run every day five minutes
+after midnight, the appropriate value is ``5 0 * * *``. Your command will
+then look like this::
 
     // src/Acme/DemoBundle/Command/DemoCommand.php
     namespace Acme\DemoBundle\Command;
@@ -103,20 +107,24 @@ the appropriate value is ``5 0 * * *``. Your command will then look like this::
 
     The Oro Platform has a bunch of commands that will be run through ``oro:cron``:
 
-    * To clean up the schedule queue, the OroCronBundle provides the ``CleanupCommand``
-      which deletes orphaned entries. It is executed every five minutes.
+    * To clean up the schedule queue, the OroCronBundle provides the
+      :class:`Oro\\Bundle\\CronBundle\\Command\\CleanupCommand` which deletes
+      orphaned entries. It is executed every five minutes.
 
-    * Every 30 minutes, the ``EmailSyncCommand``, which is part of the `ImapBundle`_,
-      loads new emails from an IMAP server and synchronizes them with the
-      local database (you can find more information about the synchronization
-      process in the `dedicated section`_ of the ImapBundle documentation).
+    * Every 30 minutes, the :class:`Oro\\Bundle\\ImapBundle\\Command\\Cron\\EmailSyncCommand`,
+      which is part of the `ImapBundle`_, loads new emails from an IMAP server
+      and synchronizes them with the local database (you can find more information
+      about the synchronization process in the `dedicated section`_ of the
+      ImapBundle documentation).
 
     * Reminder messages can be created by the `ReminderBundle`_ If they should
       be delivered as emails to the users, they'll be added to a mail queue
-      which is then flushed periodically (every minute) by the ``SendRemindersCommand``.
+      which is then flushed periodically (every minute) by the
+      :class:`Oro\\Bundle\\ReminderBundle\\Command\\SendRemindersCommand`.
 
     * Once per hour tracking log entries are synchronized from log files in
-      the file system into the database when the ``ImportLogsCommand`` from
+      the file system into the database when the
+      :class:`Oro\\Bundle\\TrackingBundle\\Command\\ImportLogsCommand` from
       the `TrackingBundle`_ is executed.
 
     * The ``oro:cron:integration:sync`` command runs integration jobs configured
@@ -168,7 +176,7 @@ of recipients::
 
 A sales manager should be able to create a newsletter in the backend and trigger
 the command to send it to all registered recipients. Of course, you could
-simply execute the ``SendNewsletterCommand``. But, as you may have guess,
+simply execute the ``SendNewsletterCommand``. But, as you may have guessed,
 this is not a very clever idea. One of the drawbacks of this solution is that
 sending the emails to hundreds, thousands or even more recipients likely takes
 a long time blocking the response to the browser. Luckily, you can solve this

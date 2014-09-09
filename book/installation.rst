@@ -345,7 +345,8 @@ Execute custom Migrations
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create your own migrations that can be executed during the installation.
-A migration is a class which implements the ``Migration`` interface:
+A migration is a class which implements the
+:class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
 
 .. code-block:: php
 
@@ -364,14 +365,16 @@ A migration is a class which implements the ``Migration`` interface:
         }
     }
 
-In the ``up()`` method, you can modify the database schema and/or add additional
-SQL queries that are executed before and after schema changes.
+In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up` method,
+you can modify the database schema and/or add additional SQL queries that
+are executed before and after schema changes.
 
-The ``MigrationsLoader`` loader dispatches two events when migrations are
-being executed, ``oro_migration.pre_up`` and ``oro_migration.post_up``. You
-can listen to either event and register your own migrations in your event
-listener. Use the ``addMigration()`` method of the passed event instance
-to register your custom migrations:
+The :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Loader\\MigrationsLoader`
+dispatches two events when migrations are being executed, ``oro_migration.pre_up``
+and ``oro_migration.post_up``. You can listen to either event and register
+your own migrations in your event listener. Use the
+:method:`Oro\\Bundle\\MigrationBundle\\Event\\MigrationEvent::addMigration` method
+of the passed event instance to register your custom migrations:
 
 .. code-block:: php
 
@@ -408,7 +411,7 @@ event are executed after the *main* migrations have been processed.
 Load custom Data Fixtures
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To load your own data fixtures, you'll need to implement the ``FixtureInterface``:
+To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInterface``:
 
 .. code-block:: php
 
