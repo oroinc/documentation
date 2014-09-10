@@ -15,6 +15,7 @@ and technical details.
     importexport
     jobs
     functional_tests
+    configuration
 
 .. toctree::
     :hidden:
