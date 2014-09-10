@@ -9,70 +9,56 @@ Overview
 
 Functional tests check the integration of the different layers of an application.
 
-In this article you will learn how you can improve the experience of writing functional tests with the Oro Platform.
-It is recommended to read the Symfony 2 documentation concerning testing before you continue:
-(http://symfony.com/doc/current/book/testing.html#functional-tests) You should also be familiar with PHPUnit (http://phpunit.de).
+In this article you will learn how you can improve the experience of writing
+functional tests with the Oro Platform. It is recommended to read the Symfony
+`documentation concerning testing`_ before you continue. You should also be
+familiar with `PHPUnit`_.
 
-When To Write Functional Tests
+When to Write Functional Tests
 ------------------------------
 
 Functional tests are generally written for:
 
-* controllers
-* commands
-* repositories
-* other services
+* Controllers;
+* Commands;
+* Repositories;
+* Other services.
 
-The goal of functional tests is not to test separate classes (unit tests), but the integration of the different parts of an
-application.
+The goal of functional tests is not to test separate classes (unit tests),
+but to test the integration of the different parts of an application.
 
-If you encounter problems when writing a unit test, (e.g. you are creating dozen of mocks for Doctrine ORM classes to
-check building a query and retrieving data from the persistence layer), it's likely that a functional test will
-be more appropriate.
+Sometimes, writing unit tests to test certain functions can be come quite
+difficult. For example, you might be creating dozen of mock objects to test
+Doctrine ORM queries. Besides being rather complicated, these unit tests'
+behavior can also be misleading. They might pass, while when working together
+with the other layers of your real application they still may produce unexpected
+results. In these situtations, functional tests can be the more approriate
+choice.
 
-Such unit tests can be dangerous because they can pass deceptively while in the real application the functionality
-does not work as expected.
-
-Workflow of Functional Tests for Controllers
---------------------------------------------
-
-* Make a request
-* Test the response
-* Click on a link or submit a form
-* Test the response
-* Rinse and repeat
-
-
-Steps to Create a Functional Test
----------------------------------
-
-* Extend Oro\Bundle\TestFrameworkBundle\Test\WebTestCase
-* Prepare test client (instance of Oro\Bundle\TestFrameworkBundle\Test\Client)
-* Prepare fixtures (optional)
-* Prepare container (optional)
-* Call test functionality
-* Verify result
+The Test Environment
+--------------------
 
 Initialization Client and Loading Fixtures Caveats
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To improve the performance of test execution, the initialization of a client is only done once per test case by default.
-
-This means that the kernel of the Symfony 2 application will be booted once per test case.
-
-Fixtures are also loaded only once per test case by default.
-
-On one hand, initializing and loading fixtures once per test case increases the performance of test execution but
-it can also cause bugs because the state of fixtures and the kernel (and as a result, the service container)
-will be shared by default between test methods of separate test cases.  Be sure to reset this state if necessary.
+To improve the performance of test execution, the initialization of a client
+is only done once per test case by default. This means that the kernel of
+the Symfony application will be booted once per test case. Fixtures are also
+loaded only once per test case by default. On one hand, initializing and loading
+fixtures once per test case increases the performance of test execution but
+it can also cause bugs because the state of fixtures and the kernel (and as
+a result, the service container) will be shared by default between test methods
+of separate test cases. Be sure to reset this state if necessary.
 
 Test Environment Setup
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
-You will need to provide parameters for the testing environment in app/config/parameters_test.yml. For example:
+You will need to configure a set of parameters for the testing environment.
+For example:
 
 .. code-block:: yaml
 
+    # app/config/parameters_test.yml
     parameters:
         database_host: 127.0.0.1
         database_port: null
@@ -92,26 +78,220 @@ You will need to provide parameters for the testing environment in app/config/pa
         secret: ThisTokenIsNotSoSecretChangeIt
         installed: '2014-08-12T09:05:04-07:00'
 
-Next, install an application in the test environment and run some additional commands:
+Next, install an application in the test environment and run some additional
+commands:
 
 .. code-block:: bash
 
-    user@host: app/console oro:install --env test --company-short-name Oro --company-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost --force
-    user@host: app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures src/Oro/src/Oro/Bundle/TestFrameworkBundle/Fixtures
-    user@host: app/console oro:test:schema:update --env test
-
+    $ app/console oro:install --env test --company-short-name Oro --company-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost --force
+    $ app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures src/Oro/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+    $ app/console oro:test:schema:update --env test
 
 After this, you'll be able to run your tests in a command line or IDE, e.g.:
 
 .. code-block:: bash
 
-    user@host: phpunit -c app/ %path_to_your_functional_test_folder_or_file%
+    $ phpunit -c app/ %path_to_your_functional_test_folder_or_file%
 
+Database Isolation
+~~~~~~~~~~~~~~~~~~
 
-Prepare client examples
+The ``@dbIsolation`` annotation adds a transaction that will be performed
+when a client is initialized for the first time and is rolled back when all
+test methods of the class have been executed.
+
+.. code-block:: php
+
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+    namespace Oro\Bundle\FooBundle\Tests\Functional;
+
+    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+
+    /**
+     * @dbIsolation
+     */
+    class FooBarTest extends WebTestCase
+    {
+        // ...
+    }
+
+Database Reindex
+~~~~~~~~~~~~~~~~
+
+The ``@dbReindex`` annotation triggers the execution of the ``oro:search:reindex``
+command when the client is first initialized. This is a workaround for MyISAM
+search tables that are not transactional.
+
+.. code-block:: php
+
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+    namespace Oro\Bundle\FooBundle\Tests\Functional;
+
+    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+
+    /**
+     * @dbReindex
+     */
+    class FooBarTest extends WebTestCase
+    {
+        // ...
+    }
+
+Loading Data Fixtures
+~~~~~~~~~~~~~~~~~~~~~
+
+Use the ``loadFixtures()`` method to load a fixture in a test::
+
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+    namespace Oro\Bundle\FooBundle\Tests\Functional;
+
+    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+
+    class FooBarTest extends WebTestCase
+    {
+        protected function setUp()
+        {
+            $this->initClient(); // must be called before!
+
+            // loading fixtures will be executed once, use the second parameter
+            // $force = true to force the loading
+            $this->loadFixtures(array(
+                'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData',
+                'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBazData',
+            ));
+        }
+
+        // ...
+    }
+
+A fixture class must be a ``Doctrine\Common\DataFixtures\FixtureInterface``
+instance. An example fixture will look like this::
+
+    // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
+    namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
+
+    use Doctrine\Common\DataFixtures\AbstractFixture;
+    use Doctrine\Common\Persistence\ObjectManager;
+    use Oro\Bundle\FooBarBundle\Entity\FooEntity;
+
+    class LoadFooData extends AbstractFixture
+    {
+        public function load(ObjectManager $manager)
+        {
+            $entity = new FooEntity();
+            $manager->persist($entity);
+            $manager->flush();
+        }
+    }
+
+You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterface``
+which allows to load fixtures depending on other fixtures being already loaded::
+
+    // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
+    namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
+
+    use Doctrine\Common\DataFixtures\DependentFixtureInterface;
+    use Doctrine\Common\DataFixtures\AbstractFixture;
+    use Doctrine\Common\Persistence\ObjectManager;
+
+    class LoadFooData extends AbstractFixture implements DependentFixtureInterface
+    {
+        public function load(ObjectManager $manager)
+        {
+            // load fixtures
+        }
+
+        public function getDependencies()
+        {
+            return array('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData');
+        }
+    }
+
+Further, you can use reference-specific entities from fixtures, e.g.::
+
+    namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
+
+    use Doctrine\Common\Persistence\ObjectManager;
+    use Doctrine\Common\DataFixtures\DependentFixtureInterface;
+    use Doctrine\Common\DataFixtures\AbstractFixture;
+
+    use Oro\Bundle\FooBarBundle\Entity\FooEntity;
+
+    class LoadFooData extends AbstractFixture implements DependentFixtureInterface
+    {
+        public function load(ObjectManager $manager)
+        {
+            $entity = new FooEntity();
+            $manager->persist($entity);
+            $manager->flush();
+
+            $this->addReference('my_entity', $entity);
+        }
+
+        public function getDependencies()
+        {
+            return array('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData');
+        }
+    }
+
+Now, you can reference the fixture by the configured name in your test::
+
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+    namespace Oro\Bundle\FooBundle\Tests\Functional;
+
+    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+
+    class FooBarTest extends WebTestCase
+    {
+        protected $entity;
+
+        protected function setUp()
+        {
+            $this->initClient();
+            $this->loadFixtures('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData');
+            $this->entity = $this->getReference('my_entity');
+        }
+
+        // ...
+    }
+
+Writing Functional Tests
+------------------------
+
+To create a functional test case, you'll always have to do a couple of things:
+
+* Extend the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class;
+
+* Prepare the test client (an instance of the ``Oro\Bundle\TestFrameworkBundle\Test\Client``
+  class);
+
+* Prepare fixtures (optional);
+
+* Prepare container (optional);
+
+* Call test functionality;
+
+* Verify result.
+
+Functional Tests for Controllers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Control Flow
+................
+
+A functional test for a controller consists of a couple of steps:
+
+* Make a request;
+* Test the response;
+* Click on a link or submit a form;
+* Test the response;
+* Rinse and repeat.
+
+Prepare Client Examples
 -----------------------
 
-Simple initialization works for testing commands and services when authentication is not required.
+Simple initialization works for testing commands and services when authentication
+is not required.
 
 .. code-block:: php
 
@@ -177,193 +357,15 @@ Initialization with authentication:
         // ...
     }
 
-Database Isolation
-------------------
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBundle\Tests\Functional;
-
-    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-
-    /**
-     * @dbIsolation
-     */
-    class FooBarTest extends WebTestCase
-    {
-        // ...
-    }
-
-This annotation adds a transaction that will be performed when a client is initialized for the first time and 
-rolled back when all test methods of the class have been executed.
-
-Database Reindex
-----------------
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBundle\Tests\Functional;
-
-    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-
-    /**
-     * @dbReindex
-     */
-    class FooBarTest extends WebTestCase
-    {
-        // ...
-    }
-
-
-This annotation will trigger the execution of the "oro:search:reindex" command when the client is first initialized.
-This is a workaround for MyISAM search tables that are not transactional.
-
-
-Loading Data Fixtures
----------------------
-
-Example of loading a fixture in a test:
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBundle\Tests\Functional;
-
-    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-
-    class FooBarTest extends WebTestCase
-    {
-        protected function setUp()
-        {
-            $this->initClient(); // must be called before!
-
-            // loading fixtures will be executed once, use second parameter $force = true to force loading.
-            $this->loadFixtures(
-                array(
-                    'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData',
-                    'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBazData',
-                )
-            );
-        }
-        // ...
-    }
-
-A fixture must be an instance of the Doctrine\Common\DataFixtures\FixtureInterface. An example of a fixture is as follows:
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
-
-    use Doctrine\Common\Persistence\ObjectManager;
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-
-    use Oro\Bundle\FooBarBundle\Entity\FooEntity;
-
-    class LoadFooData extends AbstractFixture
-    {
-        public function load(ObjectManager $manager)
-        {
-            $entity = new FooEntity();
-            $manager->persist($entity);
-            $manager->flush();
-        }
-    }
-
-You can also use Doctrine\Common\DataFixtures\DependentFixtureInterface:
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
-
-    use Doctrine\Common\Persistence\ObjectManager;
-    use Doctrine\Common\DataFixtures\DependentFixtureInterface;
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-
-    class LoadFooData extends AbstractFixture implements DependentFixtureInterface
-    {
-        public function load(ObjectManager $manager)
-        {
-            // load fixtures
-        }
-
-        public function getDependencies()
-        {
-            return array('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData');
-        }
-    }
-
-Further, you can use reference-specific entities from fixtures, e.g.:
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
-
-    use Doctrine\Common\Persistence\ObjectManager;
-    use Doctrine\Common\DataFixtures\DependentFixtureInterface;
-    use Doctrine\Common\DataFixtures\AbstractFixture;
-
-    use Oro\Bundle\FooBarBundle\Entity\FooEntity;
-
-    class LoadFooData extends AbstractFixture implements DependentFixtureInterface
-    {
-        public function load(ObjectManager $manager)
-        {
-            $entity = new FooEntity();
-            $manager->persist($entity);
-            $manager->flush();
-
-            $this->addReference('my_entity', $entity);
-        }
-
-        public function getDependencies()
-        {
-            return array('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBarData');
-        }
-    }
-
-Now you can use this reference in your test:
-
-.. code-block:: php
-
-    <?php
-
-    namespace Oro\Bundle\FooBundle\Tests\Functional;
-
-    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
-
-    class FooBarTest extends WebTestCase
-    {
-        protected $entity;
-
-        protected function setUp()
-        {
-            $this->initClient();
-            $this->loadFixtures('Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData');
-            $this->entity = $this->getReference('my_entity');
-        }
-        // ...
-    }
+Types of Functional Tests
+-------------------------
 
 Testing Controllers
--------------------
+~~~~~~~~~~~~~~~~~~~
 
-See this test as an example:
+Have a look at an example of a controller test from the OroCRM::
 
-.. code-block:: php
-
-    <?php
-
+    // src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
     namespace OroCRM\Bundle\TaskBundle\Tests\Functional\Controller;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -463,16 +465,14 @@ See this test as an example:
         }
     }
 
+Testing ACLs in a Controller
+............................
 
-Testing ACL in Controllers
---------------------------
+In this example, a user without sufficient permissions is trying to access
+a controller action. The ``assertHtmlResponseStatusCodeEquals()`` method is
+used to ensure that the actually is forbidden to access the requested resource::
 
-In this example, a user without sufficient permissions is trying to access a controller action:
-
-.. code-block:: php
-
-    <?php
-
+    // src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
     namespace Oro\Bundle\UserBundle\Tests\Functional;
 
     use Oro\Bundle\UserBundle\Tests\Functional\DataFixtures\LoadUserData;
@@ -517,12 +517,9 @@ In this example, a user without sufficient permissions is trying to access a con
         }
     }
 
-Here's an example of a fixture that adds a user without permissions:
+Here's an example of a fixture that adds a user without permissions::
 
-.. code-block:: php
-
-    <?php
-
+    // src/Oro/Bundle/UserBundle/Tests/Functional/DataFixtures/LoadUserData.php
     namespace Oro\Bundle\UserBundle\Tests\Functional\DataFixtures;
 
     use Doctrine\Common\DataFixtures\AbstractFixture;
@@ -587,19 +584,15 @@ Here's an example of a fixture that adds a user without permissions:
 
 
 Testing Commands
-----------------
+~~~~~~~~~~~~~~~~
 
-You can read about Symfony 2's approach for testing commands in this article http://symfony.com/doc/master/components/console/introduction.html#testing-commands.
+When the Oro Platform is installed, you can test commands by using the ``runCommand()``
+method from the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class.
+This method executes a command with given parameters and returns its output
+as a string. For example, see what the test for the ``UpdateSchemaListener``
+class from the SearchBundle looks like::
 
-When Oro is installed, you can also test commands by using the Oro\Bundle\TestFrameworkBundle\Test\WebTestCase::runCommand method.
-This method will execute a command with parameters and return a string with its output.
-
-Here's an example of testing a command's output:
-
-.. code-block:: php
-
-    <?php
-
+    // src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
     namespace Oro\Bundle\SearchBundle\Tests\Functional\EventListener;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -647,15 +640,18 @@ Here's an example of testing a command's output:
         }
     }
 
+.. seealso::
+
+    Read `Testing Commands`_ in the official documentation for more information
+    on how to test commands in a Symfony application.
+
 Testing Services or Repositories
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Here's an example of a repository or service test:
+To test services or repositories, you can access the service container through
+the ``getContainer()`` method::
 
-.. code-block:: php
-
-    <?php
-
+    // src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -753,14 +749,9 @@ without mocking it's classes and using real Doctrine services:
 .. caution::
 
     If your class is responsible for retrieving data, it's better to load fixtures and retrieve them using a test
-    class and then assert that the results are valid. Checking DQL is enough in this case because this it is the 
+    class and then assert that the results are valid. Checking DQL is enough in this case because this it is the
     sole responsibility of this class to modify the query.
 
-References
-----------
-
-* `Symfony 2 Functional Testing`_
-* `PHPUnit`_
-
-.. _Symfony 2 Functional Testing: http://symfony.com/doc/current/book/testing.html#functional-tests
-.. _PHPUnit: http://phpunit.de
+.. _`documentation concerning testing`: http://symfony.com/doc/current/book/testing.html#functional-tests
+.. _`PHPUnit`: http://phpunit.de
+.. _`Testing Commands`: http://symfony.com/doc/master/components/console/introduction.html#testing-commands
