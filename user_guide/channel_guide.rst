@@ -25,4 +25,21 @@ Enter the system as a User authorized to view/create/edit Channels. Go to *"Syst
 
 *System / Channels* page will appear. Initially the page is empty.
 
-Click **Create Channel** button in the top right corner. *Create Channel* page will appear. The page 
+Click **Create Channel** button in the top right corner. *Create Channel* page will appear.
+
+.. image:: https://cloud.githubusercontent.com/assets/9048914/4545897/cbee6720-4e3e-11e4-8986-c40f0ae2c9a7.png
+
+The page contains *General* and *Entities* tabs. 
+In the *General* tab you must define three obilgatory field for your Channel:
+
+- *Status* (1): is a dropdown with two available values:
+  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for the future use or is out of date (while no new data is uploaded to the system, all the data the appeared while the channel was active will be used by the Sales Processes functionality.
+
+  * *Active*: data will be loaded from the Channel. 
+  
+- *Name* (2): is the name of the channel that will be displayed on the screen (and thus used to manage the Channel).
+
+- *Channel Type* (3): is a dropdown with three available values:
+  * *Custom*: (default); provides for ability to create Channels with specific customized settings and is subject to seperate customization and integration
+  
+  * *B2B*: choose the option if there is need to process B2B enterprise data. Initially, the data shall be input manually; though the system support integration with third-party enterprise systems 
