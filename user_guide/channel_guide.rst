@@ -21,7 +21,7 @@ Getting Started
 -------------
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
-.. image:: file:///C:/Screenshots/2014-10-07%2016_31_07-Dashboard.png
+.. image:: C:/Screenshots/2014-10-07%2016_31_07-Dashboard.png
 
 *System / Channels* page will appear. Initially the page is empty.
 
