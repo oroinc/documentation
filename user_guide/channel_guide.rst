@@ -21,7 +21,7 @@ Getting Started
 -------------
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
-.. image:: C:/Screenshots/2014-10-07%2016_31_07-Dashboard.png
+.. image:: https://cloud.githubusercontent.com/assets/9048914/4545619/4bd99cc8-4e3c-11e4-9a86-1d3c3fe8255c.png
 
 *System / Channels* page will appear. Initially the page is empty.
 
