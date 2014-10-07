@@ -2,8 +2,7 @@ Introduction
 -------------
 
 Document Scope and Target Audience
----------------------------------------
----------------------------------------
+----
 
 The Guide is aimed at OroCRM users and provides description of the Channel functionality and its configuration instructions. It is deemed that readers are aquainted with OroCRM and its basic Sales Process management and monitoring capabilities.
 
