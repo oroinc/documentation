@@ -23,7 +23,7 @@ Obviously, even the most powerful analysis tools cannot work without initial dat
 
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
-![alt text](file:///C:/Screenshots/2014-10-07%2016_31_07-Dashboard.png)
+.. image:: /Screenshots/2014-10-07%2016_31_07-Dashboard.png)
 
 *System / Channels* page will appear. Initially the page is empty.
 
