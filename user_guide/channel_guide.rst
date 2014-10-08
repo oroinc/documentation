@@ -56,7 +56,7 @@ In the *General* tab you must define three obilgatory fields for your Channel:
 .. raw:: html
 
    <style>
-      .gbg {background-color:#00ff00;} 
+      .gbg {background-color:##ffb6c1;} 
    </style>
 
 +-------+----------------+-------+---------+-------+---------+
