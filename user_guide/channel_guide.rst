@@ -42,4 +42,10 @@ In the *General* tab you must define three obilgatory field for your Channel:
 - *Channel Type* (3): is a dropdown with three available values:
   * *Custom*: (default); provides for ability to create Channels with specific customized settings and is subject to seperate customization and integration
   
-  * *B2B*: choose the option if there is need to process B2B enterprise data. Initially, the data shall be input manually; though the system support integration with third-party enterprise systems 
+  * *B2B*: choose the option if there is need to process B2B enterprise data. Initially, the data shall be input manually; though the system support integration with third-party enterprise systems
+  
+  * *Magento: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
+  
+  -------------
+  *Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.*
+  -------------
