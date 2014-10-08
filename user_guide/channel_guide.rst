@@ -3,9 +3,11 @@
    
 .. |B03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png
    :width: 100mm
+   :align: right
    
 .. |B04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_2.png
    :width: 100mm
+   :alignL right
 
 Introduction
 -------------
