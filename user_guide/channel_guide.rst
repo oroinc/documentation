@@ -8,7 +8,7 @@
    :align: middle
 
 .. |S01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S01.png
-   :width: 50mm
+   :width: 25mm
    
 .. |S02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S02.png
    :width: 100mm
