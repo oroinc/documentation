@@ -7,6 +7,18 @@
 .. |BCan| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BCan.png
    :align: middle
 
+.. |BDeactivate| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BDeactivate.png
+   :align: middle   
+
+.. |BAactivate| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BActivate.png
+   :align: middle  
+
+.. |BEdit| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BEdit.png
+   :align: middle  
+   
+.. |BDelete| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BDelete.png
+   :align: middle
+   
 .. |S01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S01.png
    :width: 25mm
    
@@ -18,6 +30,31 @@
    
 .. |S04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S04.png
    :width: 100mm
+   
+.. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
+   :width: 25mm
+   
+.. |M02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M02.png
+   :width: 25mm
+
+.. |M03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M03.png
+   :width: 25mm
+   
+.. |M04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M04.png
+   :width: 25mm
+   
+.. |M05| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M05.png
+   :width: 25mm
+   
+.. |M06| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M06.png
+   :width: 25mm
+   
+.. |M07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M07.png
+   :width: 25mm
+   
+.. |M08| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M08.png
+   :width: 25mm
+
 
 Introduction
 -------------
@@ -42,7 +79,7 @@ Channels Configuration
 ----------------------
 
 --------------------------
-Getting Started
+Creating a Channel
 --------------------------
 
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
@@ -88,7 +125,27 @@ At this point you can:
   - Fill Channel with Entities.
   - Click |BS&C| button to Save the empty Channel in the System
   - Click |BCan| button to Cancel the Channel creation
+
   
+--------------------------
+Editing a Channel
+--------------------------
+
+Once a Channel has been created it will appear in the Channel list. (Go to *"System" --> "Channels"* as described in *Creating a Channel* section.
+
+All the previously created Channels will be displayed in the list. In order to Edit the Channel. Click the Channel name. Channel details list will appear. In the top right corner you will see possible action buttons, as follows:
+
+* |BDeactivate| button (for Active channels) or |BAactivate| button (for Inactive channels).
+  * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes functionality.
+  * You can actovate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
+  
+* |BDelete| button will delete the Channel. **Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED.** 
+
+* |BEdit| button will open Edit page that is vey similar to the page you used to Create a Channel (See *Create a Channel* section), but:
+  * details you have already defined will displayed and
+  * **you cannot change Channel Type if data from the Channel has been uploaded into the system at least once**
+
+
 Entities
 ----------------------
 
@@ -103,8 +160,26 @@ For more details on the ways to create/edit Entities and their Fields, please ki
 --------------------------
 Adding Channel Entity
 --------------------------
-In order to add and Entity, you can go the *Entities* section when Creating a Channel
+In order to add and Entity, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when Creating or Editing a Channel (See *Creating a Channel* and/or *Editing a Channel* section).
 
++-------------------------------------------------------------------------------------------------------------------------+
+|Entities section and tab duplicate each other. This provides for convinience of Entity management for both short and long|
+|entity list.                                                                                                             |
++-------------------------------------------------------------------------------------------------------------------------+
+
+Entities section/tab contains a drop-down menu, filled with all the entities available for Channels in the system, regardless of their type.
+|S05|
+
+The table below describes all the default (**System**) Entities in the drop-down menu. 
+
++------------------+
+|
+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+|If any Custom Entities have been added to the System, they will appear at the bottom of the drop-down menu in the Custom | |section                                                                                                                  |
++-------------------------------------------------------------------------------------------------------------------------+
 
 
 
