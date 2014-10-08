@@ -26,8 +26,8 @@ Enter the system as a User authorized to view/create/edit Channels. Go to *"Syst
 
 Click |B01| button in the top right corner. *Create Channel* page will appear.
 
-.. |B01| .. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
-   :height: 09
+.. |B01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
+
 
 
 
