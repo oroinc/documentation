@@ -23,14 +23,16 @@ Enter the system as a User authorized to view/create/edit Channels. Go to *"Syst
 
 01
 *System / Channels* page will appear. Initially the page is empty.
- 
-Click |b01| button in the top right corner. *Create Channel* page will appear.
 
-.. |b01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
-   :height: 11
-   :width: 11
+Click |B01| button in the top right corner. *Create Channel* page will appear.
+
+.. |B01| .. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
+   :height: 09
+
+
 
 02
+alternate spelling for ``literal``
 
 The page contains *General* and *Entities* tabs. 
 In the *General* tab you must define three obilgatory field for your Channel:
