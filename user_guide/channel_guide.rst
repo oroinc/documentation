@@ -51,18 +51,18 @@ In the *General* tab you must define three obilgatory fields for your Channel:
   
   * *Magento: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
   
-   
- .. role:: bg
+.. role:: red
+.. raw:: html
 
-.. raw:: python
+    <style> red {color:red} </style>
 
-   <style>
-      .bg {background-color: rgb(230,230,230);} 
-   </style>
+.. red:: 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-|Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.   |
-+----------------------------------------------------------------------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------------------------------------+
+|Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account. |
+|                                                                                                   |
++-------------------------------------------------------------------------------------------------------------------------+
 
   At this point you can:
   - Click BS&C button to Save the empty channel in the System.
