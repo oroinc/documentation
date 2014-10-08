@@ -26,7 +26,7 @@ Getting Started
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
 .. figure:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01.png
-   :scale: 25 %
+   :width: 100mm
    :align: center
    
 *System / Channels* page will appear. Initially the page is empty.
@@ -44,16 +44,16 @@ In the *General* tab you must define three obilgatory fields for your Channel:
 +------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 | - *Status* (1): is a dropdown with two available values:   |                                                                                                                                | 
 +--------------+---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|* *Inactive*: |(default); no data will be loaded from the   |.. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png |
-|              |Channel; the option is useful if a Channel   |   :scale: 50 %                                                                                                                 |
-|              |is being configured for the future use or is |                                                                                                                                |
-|              |out of date (while no new data is uploaded to|                                                                                                                                |
+|* *Inactive*: |(default); no data will be loaded from the   |                                                                                                                                |
+|              |Channel; the option is useful if a Channel   |                                                                                                                                |
+|              |is being configured for the future use or is |.. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png|
+|              |out of date (while no new data is uploaded to|   :width :10cm                                                                                                              |
 |              |the system, all the data the appeared while  |                                                                                                                                |
 |              |the channel was active will be used by the   |                                                                                                                                |
 |              |Sales Processes functionality.               |                                                                                                                                |
 +--------------+---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
 
-.. |B03| .. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png
+.. |B03| 
    
 
 
