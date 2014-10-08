@@ -24,7 +24,9 @@ Enter the system as a User authorized to view/create/edit Channels. Go to *"Syst
 01
 *System / Channels* page will appear. Initially the page is empty.
 
-Click | | .. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
+Click |B01| 
+
+.. |B01| .. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
 
 button in the top right corner. *Create Channel* page will appear.
 
