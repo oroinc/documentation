@@ -51,29 +51,23 @@ In the *General* tab you must define three obilgatory fields for your Channel:
   
   * *Magento: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
   
- .. role:: gbg
+   
+ .. role:: bg
 
-.. raw:: html
+.. raw:: python
 
    <style>
-      .gbg {background-color:##ffb6c1;} 
+      .bg {background-color: rgb(230,230,230);} 
    </style>
 
-+-------+----------------+-------+---------+-------+---------+
-| UTC+1 | (d-s)          | UTC-6 | (zo)    | UTC-7 | (za)    |
-+=======+================+=======+=========+=======+=========+
-| 15:00 | :gbg:`avail`   |  8:00 |         |  7:00 |         |
-+-------+                +-------+---------+-------+         +
-| 15:30 |                |  8:30 |         |  7:30 |         |
-+-------+----------------+-------+---------+-------+---------+
-
-  
-  .. role:: red
 +----------------------------------------------------------------------------------------------------------------------------+
-| :red: Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.   |
+|Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.   |
 +----------------------------------------------------------------------------------------------------------------------------+
 
   At this point you can:
   - Click BS&C button to Save the empty channel in the System.
   - Click BCancel
+  
+
+   
 
