@@ -21,13 +21,12 @@ Getting Started
 -------------
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
-.. image:: https://cloud.githubusercontent.com/assets/9048914/4545619/4bd99cc8-4e3c-11e4-9a86-1d3c3fe8255c.png
-
+01
 *System / Channels* page will appear. Initially the page is empty.
 
-Click **Create Channel** button in the top right corner. *Create Channel* page will appear.
+Click B01 button in the top right corner. *Create Channel* page will appear.
 
-.. image:: https://cloud.githubusercontent.com/assets/9048914/4545897/cbee6720-4e3e-11e4-8986-c40f0ae2c9a7.png
+02
 
 The page contains *General* and *Entities* tabs. 
 In the *General* tab you must define three obilgatory field for your Channel:
@@ -46,6 +45,9 @@ In the *General* tab you must define three obilgatory field for your Channel:
   
   * *Magento: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
   
-  -------------
-  *Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.*
-  -------------
+  **Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.**
+  
+  At this point you can:
+  - Click BS&C button to Save the empty channel in the System.
+  - Click BCancel
+
