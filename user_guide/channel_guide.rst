@@ -1,6 +1,11 @@
-.. raw:: html
-
-    <style> .red {color:red} </style>
+.. |B01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
+   :align: middle
+   
+.. |B03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png
+   :width: 100mm
+   
+.. |B04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_2.png
+   :width: 100mm
 
 Introduction
 -------------
@@ -31,43 +36,25 @@ Enter the system as a User authorized to view/create/edit Channels. Go to *"Syst
    
 *System / Channels* page will appear. Initially the page is empty.
 
-
-
 Click |B01| button in the top right corner. *Create Channel* page will appear.
-
-.. |B01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
-   :align: middle
    
 The page contains *General* and *Entities* tabs. 
 In the *General* tab you must define three obilgatory fields for your Channel:
 
-+------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-| - *Status* (1): is a dropdown with two available values:   |                                                                                                                                | 
-+--------------+---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
-|* *Inactive*: |(default); no data will be loaded from the   |                                                                                                                                |
-|              |Channel; the option is useful if a Channel   |                                                                                                                                |
-|              |is being configured for the future use or is |.. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png|
-|              |out of date (while no new data is uploaded to|   :width :10cm                                                                                                              |
-|              |the system, all the data the appeared while  |                                                                                                                                |
-|              |the channel was active will be used by the   |                                                                                                                                |
-|              |Sales Processes functionality.               |                                                                                                                                |
-+--------------+---------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------+
+- *Status* (1): is a dropdown with two available values: |B03|
 
-.. |B03| 
-   
-
-
-- *Status* (1): is a dropdown with two available values:
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for the future use or is out of date (while no new data is uploaded to the system, all the data the appeared while the channel was active will be used by the Sales Processes functionality.
+  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. 
+  (For inactove channels no new data is uploaded to the system, but all the data loaded while the chanel was active is concidered by the Sales Processes functionality.
 
   * *Active*: data will be loaded from the Channel. 
   
 - *Name* (2): is the name of the channel that will be displayed on the screen (and thus used to manage the Channel).
 
-- *Channel Type* (3): is a dropdown with three available values:
+- *Channel Type* (3): is a dropdown with three available values: |B04|
+
   * *Custom*: (default); provides for ability to create Channels with specific customized settings and is subject to seperate customization and integration
   
-  * *B2B*: choose the option if there is need to process B2B enterprise data. Initially, the data shall be input manually; though the system support integration with third-party enterprise systems
+  * *B2B*: choose the option if there is need to process B2B enterprise data. Initially, the data shall be input manually though the system supports integration with third-party enterprise systems
   
   * *Magento: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
 
