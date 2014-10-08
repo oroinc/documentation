@@ -25,12 +25,13 @@ Enter the system as a User authorized to view/create/edit Channels. Go to *"Syst
    :allign: middle
    
 *System / Channels* page will appear. Initially the page is empty.
+.. image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01.png
+   :scale: 50 %
 
 Click |B01| button in the top right corner. *Create Channel* page will appear.
 
 .. |B01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
    :scale: 50 %
-   
    
 The page contains *General* and *Entities* tabs. 
 In the *General* tab you must define three obilgatory fields for your Channel:
@@ -49,7 +50,7 @@ In the *General* tab you must define three obilgatory fields for your Channel:
   
   * *Magento: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
   
-  .. importat:: Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.
+  .. important:: Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account.
   
   At this point you can:
   - Click BS&C button to Save the empty channel in the System.
