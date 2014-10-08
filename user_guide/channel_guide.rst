@@ -1,10 +1,22 @@
 .. |B01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
    :align: middle
    
-.. |B03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_1.png
+.. |BS&C| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BS&C.png
+   :align: middle
+
+.. |BCan| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BCan.png
+   :align: middle
+
+.. |S01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S01.png
    :width: 100mm
    
-.. |B04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01_2.png
+.. |S02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S02.png
+   :width: 100mm
+   
+.. |S03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S03.png
+   :width: 100mm
+   
+.. |S04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S04.png
    :width: 100mm
 
 Introduction
@@ -24,25 +36,21 @@ Obviously, even the most powerful analysis tools cannot work without initial dat
 
 
 Channels Configuration
--------------
--------------
+----------------------
 Getting Started
 -------------
 Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
-.. figure:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/01.png
-   :width: 100mm
-   :align: center
-   
 *System / Channels* page will appear. Initially the page is empty.
 
 Click |B01| button in the top right corner. *Create Channel* page will appear.
+|S01|
    
 The page contains *General* and *Entities* tabs. 
 In the *General* tab you must define three obilgatory fields for your Channel:
 
 - *Status* (1): is a dropdown with two available values:
-|B03|
+|S02|
 
   * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. 
   (For inactove channels no new data is uploaded to the system, but all the data loaded while the chanel was active is concidered by the Sales Processes functionality.
@@ -66,8 +74,16 @@ In the *General* tab you must define three obilgatory fields for your Channel:
 +-------------------------------------------------------------------------------------------------------------------------+
 
 At this point you can:
-  - Click BS&C button to Save the empty channel in the System.
-  - Click BCancel
+  - Fill Channel with Entities.
+  - Click |BS&C| button to Save the empty Channel in the System
+  - Click |BCan| button to Cancel the Channel creation
+  
+  
+Filling Channel with Entities
+-------------
+-------------
+
+  
   
 
    
