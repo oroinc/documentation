@@ -35,28 +35,28 @@
    :width: 100mm
    
 .. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
-   :width: 150mm
+   :width: 40mm
    
 .. |M02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M02.png
-   :width: 150mm
+   :width: 40mm
 
 .. |M03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M03.png
-   :width: 150mm
+   :width: 40mm
    
 .. |M04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M04.png
-   :width: 150mm
+   :width: 40mm
    
 .. |M05| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M05.png
-   :width: 150mm
+   :width: 40mm
    
 .. |M06| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M06.png
-   :width: 150mm
+   :width: 40mm
    
 .. |M07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M07.png
-   :width: 150mm
+   :width: 40mm
    
 .. |M08| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M08.png
-   :width: 150mm
+   :width: 40mm
 
 .. |WT01| replace:: Contact request form
 .. _WT01: http://www.magentocommerce.com/magento-connect/contact-request-form.html
@@ -145,11 +145,11 @@ All the previously created Channels will be displayed in the list. In order to E
 
 * |BDeactivate| button (for Active channels) or |BAactivate| button (for Inactive channels).
   * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes functionality.
-  * You can actovate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
+  * You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
   
 * |BDelete| button will delete the Channel. **Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED.** 
 
-* |BEdit| button will open Edit page that is vey similar to the page you used to Create a Channel (See *Create a Channel* section), but:
+* |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel (See *Create a Channel* section), but:
   * details you have already defined will displayed and
   * **you cannot change Channel Type if data from the Channel has been uploaded into the system at least once**
 
@@ -188,7 +188,7 @@ The table below describes all the default (**System**) Entities in the drop-down
 * *Different System Entities are meaningful either for B2B or for Magento Channel, as specified in the "Ch_Type" column.*
 
 .. list-table:: **System Channel Entities**
-   :widths: 20 10 30
+   :widths: 15 10 30
    :header-rows: 2
 
    * - 
@@ -223,13 +223,13 @@ The table below describes all the default (**System**) Entities in the drop-down
    * - |M06|
      - Magento     
      - Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   
-       Contains the Customer's personal data and payment details, reference to related Opportunities, sales values and related communications.
+       Contains g Cart the Customer's personal data and payment details, reference to related Opportunities, sales values and related communications.
    * - |M07|
      - Magento     
      - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, billing details, related opportunities, shipping details, rating, etc.
    * - |M08|
      - Magento     
-     - Keeps details of actual sales made by the customer within the Channel, includiing store details, Customer's details, one-time and total credited, payed and taxed amounts, feed-backs, etc.
+     - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's details, one-time and total credited, payed and taxed amounts, feed-backs, etc.
 
 
 
