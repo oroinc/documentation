@@ -35,31 +35,34 @@
    :width: 100mm
    
 .. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
-   :width: 25mm
+   :width: 40mm
    
 .. |M02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M02.png
-   :width: 25mm
+   :width: 40mm
 
 .. |M03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M03.png
-   :width: 25mm
+   :width: 40mm
    
 .. |M04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M04.png
-   :width: 25mm
+   :width: 40mm
    
 .. |M05| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M05.png
-   :width: 25mm
+   :width: 40mm
    
 .. |M06| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M06.png
-   :width: 25mm
+   :width: 40mm
    
 .. |M07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M07.png
-   :width: 25mm
+   :width: 40mm
    
 .. |M08| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M08.png
-   :width: 25mm
+   :width: 40mm
 
+.. |WT01| replace:: Contact request form
+.. _WT01: http://www.magentocommerce.com/magento-connect/contact-request-form.html
 
-Introduction
+.. |WT02| replace:: Shopping Cart
+.. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
 -------------
 
 ---------------------------------------
@@ -67,6 +70,8 @@ Document Scope and Target Audience
 ---------------------------------------
 
 The Guide is aimed at OroCRM users and provides description of the Channel functionality and its configuration instructions. It is deemed that readers are acquainted with OroCRM and its basic Sales Process management and monitoring capabilities.
+
+Contact request form
 
 ---------------------------------------
 Brief System and Functionality Overview
@@ -166,46 +171,60 @@ Adding Channel Entity
 In order to add and Entity, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when Creating or Editing a Channel (See *Creating a Channel* and/or *Editing a Channel* section).
 
 +-------------------------------------------------------------------------------------------------------------------------+
-|Entities section and tab duplicate each other. This provides for convinience of Entity management for both short and long|
+|Entities section and tab duplicate each other. This provides for convenience of Entity management for both short and long|
 |entity list.                                                                                                             |
 +-------------------------------------------------------------------------------------------------------------------------+
 
 Entities section/tab contains a drop-down menu, filled with all the entities available for Channels in the system, regardless of their type.
 |S05|
 
-The table below describes all the default (**System**) Entities in the drop-down menu. Different System Entities are meaningful either for B2B or for Magento Channel, as specified in the *Ch Type* column.
+The table below describes all the default (**System**) Entities in the drop-down menu. 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-|Entities can be customized. Their names and fields included may be edited. Only default settings are described.          |
-+-------------------------------------------------------------------------------------------------------------------------+
+*Please keep in mind that:*
 
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Menu Item**    | **Ch Type**  |**Description**                                                                                                                                                                                                                                                |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M01|           |B2B           |Keeps data on a potential customer contact most likely to become a success. Contains such fields as Opportunity openning and closure date, closure reasons, probability of the Opportunity gain, customer needs and described solution descriptions, etc.      |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M02|           |B2B           |Keeps data on a potential customet that might become an Oppotunity. Contains such fields as Lead's personal and business details and reference Opportunity (if any).                                                                                           |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M03|           |B2B           |Keeps data on successful Opportunities, which have turned in Sales. Contains such fields as date of the Sales Process start and reference to the relevan customer in the system, as well as on the preсeding Lead and Opportunity.                             |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M04|           |B2B           |                                                                                                                                                                                                                                                               |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M05|           |Magento       |                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                             |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M06|           |Magento       |                                                                                                                                                                                                                                                               |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M07|           |Magento       |                                                                                                                                                                                                                                                               |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|  |M08|           |Magento       |                                                                                                                                                                                                                                                               |
-+------------------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* *Entities can be customized. Their names and fields included may be edited.*
+* *If any Custom Entities have been added to the System, they will appear at the bottom of the drop-down menu in the Custom section.*
+* *The table provides only a general description for the System (not Custom) Entities.*
+* *Different System Entities are meaningful either for B2B or for Magento Channel, as specified in the "Ch_Type" column.*
 
-+-------------------------------------------------------------------------------------------------------------------------+
-|If any Custom Entities have been added to the System, they will appear at the bottom of the drop-down menu in the Custom | |section                                                                                                                  |
-+-------------------------------------------------------------------------------------------------------------------------+
++------------------+--------------+------------------------------------------------------------------------------+
+| **Menu_Item**    | **Ch_Type**  |**Description**                                                               |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M01|            |  B2B         |Keeps data on potential Sales most likely to become a success.                |
+|                  |              |Contains such fields as Opportunity opening and closure dates, closure reasons|
+|                  |              |probability of the Opportunity gain, customer needs and described solution    |
+|                  |              |descriptions, etc.                                                            |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M02|            |  B2B         |Keeps data on what might become an Opportunity.                               |
+|                  |              |such fields as Lead's personal and business details and reference Opportunity |
+|                  |              |(if any).                                                                     |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M03|            |  B2B         |Keeps data on successful Opportunities, which have turned in Sales.           |
+|                  |              |Contains such fields as date of the Sales Process start and reference to the  |
+|                  |              |relevant customer in the system, as well as on the preceding Lead and         |
+|                  |              |Opportunity.                                                                  |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M04|            |  B2B         |Aggregates all the data on a specific Customer.                               |
+|                  |              |Contains such fields as the list of Channels active for the Customer, the Cust|
+|                  |              |omer's Leads and Opportunities, billing and shipping details, and lifetime sal|
+|                  |              |es values.                                                                    |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M05|            |  Magento     |Keeps details from form Magento's |WT01|_, including the contact details and i|
+|                  |              |nformation on the contact attempts success and target.                        |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M06|            |  Magento     |Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   |
+|                  |              |Contains g Cart the Customer's personal data and payment details, reference to|
+|                  |              |related Opportunities, sales values and related communications.               |
++------------------+--------------+------------------------------------------------------------------------------+
+| |M07|            |  Magento     |Aggregates all the data on a specific Magento Customer, including the list of |
+|                  |              |Channels active for the Customer, billing details, related opportunities, ship|
+|                  |              |ping details, rating, etc.                                                    | 
++------------------+--------------+------------------------------------------------------------------------------+
+| |M08|            |  Magento     |Keeps details of actual sales made by the customer within the Channel, includi|
+|                  |              |ing store details, Customer's details, one-time and total credited, payed and |
+|                  |              |taxed amounts, feedbacks, etc.                                                | 
++------------------+--------------+------------------------------------------------------------------------------+
 
 
-
-  
-  
 
    
