@@ -82,41 +82,65 @@
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
 
---------------------------
+---------------------------------------------------
 Introduction
---------------------------
-Document Scope and Target Audience
---------------------------------------------
+---------------------------------------------------
+Document Scope, Target Audience and Conventions
+---------------------------------------------------
 
 The Guide is aimed at OroCRM users and provides description of the Channel functionality and its configuration instructions. It is deemed that readers are acquainted with OroCRM and its basic Sales Process management and monitoring capabilities.
 
+Terms that can be found in the `System Glossary <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/Glossary.rst>`_ are Capitalized.
+Names of fields and tabs are written in italics.
+
 Brief System and Functionality Overview
 ------------------------------------------------
-OroCRM is an easy-to-use, open source CRM with built in marketing automation tools. One of its major privileges is extensive Sales Process management and monitoring capabilities. With OroCRM's E-commerce reports and dashboard, our users can carefully watch and effectively plan their business development. (For more details on the Sales Process management and monitoring capabilities, please reffer to the relevant document (TBD).
-Obviously, even the most powerful analysis tools cannot work without initial data. The Channels functionality described herein enables population of the OroCRM with customer-related information. In OroCRM v.1.4 there are two types of channels supported:
+OroCRM is an easy-to-use, open source CRM with built in marketing automation tools. 
+
+One of its major privileges is extensive Sales Process management and monitoring capabilities. With OroCRM's reports and dashboard, users can truly understand and effectively plan their business development. (For more details on the Sales Process capabilities, please refer to the relevant document (TBD).
+
+Obviously, even the most powerful analysis tools cannot work without initial data. The Channels functionality described herein enables population of the OroCRM with customer-related information. Basically Channels are sources of data.
+
++---------------------------------------------------------------------------------+
+|Please note that on Customer may be assigned several Channels of different data. |
+|OroCRM provides for drill-down review of all the customer-related information fro|
+|m different Channels.                                                            |
++---------------------------------------------------------------------------------+
+
+In OroCRM v.1.4 there are two system types of channels supported:
 
 - *Web Channels* are sharpened for Magento and provide for easy automated population of the system with customer-related details from multiple shops on Magento
 - *B2B Channels* are dedicated for manual population of the system with customer-related details for B2B businesses
+-  The third type *Custom Channels* that can be created and tailored subject to specific customer needs and requirement. 
 
 --------------------------
 Channels Configuration
 --------------------------
 Creating a Channel
 --------------------------
+If there are no Channels in the System, or if you need to create a new Channel, it can be done in several simple steps.
 
-Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
+1. Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
 
 |S01|
 
-*System / Channels* page will appear. Initially the page is empty.
+*System / Channels* page will appear.
 
-Click |B01| button in the top right corner. *Create Channel* page will appear.
+2. Click |B01| button in the top right corner. *Create Channel* page will appear.
 
 |S02|
    
 The page contains *General* and *Entities* tabs. 
-In the *General* tab you must define three obligatory fields for your Channel:
 
+3. Define basic Channel information in the *General* tab. 
+4. Define Entities used for the Channel in the *Entities* tab or section. (The tab duplicates the section for the sake of convenience when working with both small and excessive data amounts).
+
+Basic Information in the *General* Tab
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can define basic Channel details in the *General* tab. 
+
+You must define three obligatory fields for your Channel in the *General* tab.
 
 - *Status* (1): is a drop-down with two available values:
 
