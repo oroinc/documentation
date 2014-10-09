@@ -132,7 +132,7 @@ If there are no Channels in the System, or if you need to create a new Channel, 
    
 The page contains *General* and *Entities* tabs. 
 
-3. Define basic Channel information in the *General* tab. 
+3. `Define basic Channel information <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#basic-information-in-the-general-tab>`_ in the *General* tab. 
 4. Define Entities used for the Channel in the *Entities* tab or section. (The tab duplicates the section for the sake of convenience when working with both small and excessive data amounts).
 
 Basic Information in the *General* Tab
@@ -140,9 +140,9 @@ Basic Information in the *General* Tab
 
 You can define basic Channel details in the *General* tab. 
 
-You must define three obligatory fields for your Channel in the *General* tab.
+You must define three obligatory fields for the Channel:
 
-- *Status* (1): is a drop-down with two available values:
+- Status 
 
 |S03|
 
@@ -172,22 +172,6 @@ At this point you can:
   - Click |BS&C| button to Save the empty Channel in the System
   - Click |BCan| button to Cancel the Channel creation
 
-Editing a Channel
---------------------------
-
-Once a Channel has been created it will appear in the Channel list. (Go to *"System" --> "Channels"* as described in *Creating a Channel* section.
-
-All the previously created Channels will be displayed in the list. In order to Edit the Channel. Click the Channel name. Channel details list will appear. In the top right corner you will see possible action buttons, as follows:
-
-* |BDeactivate| button (for Active channels) or |BAactivate| button (for Inactive channels).
-  * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes functionality.
-  * You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
-  
-* |BDelete| button will delete the Channel. **Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED.** 
-
-* |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel (See *Create a Channel* section), but:
-  * details you have already defined will displayed and
-  * **you cannot change Channel Type if data from the Channel has been uploaded into the system at least once**
 
 ----------------------
 Entities
@@ -195,8 +179,8 @@ Entities
 Entity Overview
 --------------------------
 
-Channel Entities are sets of Customer-related data uploaded into the system. Each entity can contain numerous fields of different types (e.g. text fields, true or false fields, date and time etc.).  When you assign a specific Entity to the Channel, it means that information contained in the Fields of this Entities data will be collected and processed for the Channel.
-The System can contain both Default and Custom Entities.
+Channel Entities are sets of Customer-related data uploaded into the system. Each entity can contain numerous fields of different types (e.g. text fields, true or false fields, date and time etc.).  When you assign a specific Entity to the Channel, it means that information contained in the Fields of this Entity will be collected and processed for the Channel.
+The System can process System and Custom Entities.
 
 System Channel Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -210,7 +194,7 @@ In order to Manage Entities, you need to get the the *Channel/Entities* section 
 There is a number of default Channel Entities meaningful for a specific Channel type. Once you have chosen a *B2B* or *Magento* Channel Type, the System Entities will be added in the ENTITY list automatically. The following table describes all the currently available System Channel Entities and provide brief description of their content.
 
 .. list-table:: **System Channel Entities**
-   :widths: 15 10 30
+   :widths: 10 10 30
    :header-rows: 2
 
    * - 
@@ -245,7 +229,7 @@ There is a number of default Channel Entities meaningful for a specific Channel 
    * - |M06|
      - Magento     
      - Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   
-       Contains g Cart the Customer's personal data and payment details, reference to related Opportunities, sales values and related communications.
+       Contains Customer's personal data and payment details, reference to related Opportunities, sales values and related communications.
    * - |M07|
      - Magento     
      - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, billing details, related opportunities, shipping details, rating, etc.
@@ -262,7 +246,7 @@ Once a Custom entity has been created in the System, it will automatically appea
 
 Adding an Entity
 --------------------------
-If you have chosen a Custom Channel type, there will be no initially add Entities. For B2B and Magento Channel their specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that are not yet in the list. 
+If you have chosen a Custom Channel type, there will be no initially added Entities. For B2B and Magento Channel their specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that are not yet in the list. 
 (For the sake of the following example there had been created a Custom Entity named "CEntity".
 
 |S05|
@@ -282,6 +266,23 @@ For example, we have created a B2B Channel, named "Test" and assigned it all the
 --------------------------------
 Further Actions
 --------------------------------
+
+Editing a Channel
+--------------------------
+
+Once a Channel has been created it will appear in the Channel list. (Go to *"System" --> "Channels"* as described in *Creating a Channel* section.
+
+All the previously created Channels will be displayed in the list. In order to Edit the Channel. Click the Channel name. Channel details list will appear. In the top right corner you will see possible action buttons, as follows:
+
+* |BDeactivate| button (for Active channels) or |BAactivate| button (for Inactive channels).
+  * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes functionality.
+  * You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
+  
+* |BDelete| button will delete the Channel. **Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED.** 
+
+* |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel (See *Create a Channel* section), but:
+  * details you have already defined will displayed and
+  * **you cannot change Channel Type if data from the Channel has been uploaded into the system at least once**
 
 Editing Entities from a Channel
 --------------------------------
