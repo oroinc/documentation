@@ -19,6 +19,18 @@
 .. |BDelete| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BDelete.png
    :align: middle
    
+.. |BAdd| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BAdd.png
+   :align: middle
+
+.. |IcDelete| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/IcView.png
+   :align: middle
+
 .. |S01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S01.png
    :width: 25mm
    
@@ -32,6 +44,12 @@
    :width: 100mm
 
 .. |S05| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S05.png
+   :width: 100mm
+
+.. |S06| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S06.png
+   :width: 100mm
+
+.. |S07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S07.png
    :width: 100mm
    
 .. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
@@ -211,8 +229,6 @@ There is a number of default Channel Entities meaningful for a specific Channel 
      - Magento     
      - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's details, one-time and total credited, payed and taxed amounts, feed-backs, etc.
 
-Entities section/tab contains a drop-down menu, filled with all the entities available for Channels in the system, regardless of their type.
-|S05|
 
 Custom Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -224,6 +240,41 @@ Adding an Entity
 --------------------------
 If you have chosen a Custom Channel type, there will be no initially add Entities. For B2B and Magento Channel their specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that are not yet in the list. 
 (For the sake of the following example there had been created a Custom Entity named "CEntity".
+
+|S05|
+
+Choose an Entity and click |BAdd| button. The entity will be Added to the list. You can also delete entities from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
+
+-----------------
+
+Once you have finished adding the entities, click |BS&C| button in the top right corner. Your Channel will be saved in the system:
+
+|S07|.
+
+For example, we have created a B2B Channel, named "Test" and assigned it all the default B2B Entities and additional Custom Entity "CEntity".
+
+|S06|
+
+--------------------------------
+Further Actions
+--------------------------------
+
+Editing Entities from a Channel
+--------------------------------
+There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly authorized Users.
+
+Entities may be edited from *System --> Entities --> Entity Management*. Entities, assigned to a Channel, may be viewed and/or edited by duly authorized users from the Channel page.
+
+When you open a specific Channel type, there will be two icons in the Action tab. Click |IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
+
++----------------------------------------------------------------------------------------------------+
+| If you don't have necessary permissions, you will see a browser-specific message on access denial. |
++----------------------------------------------------------------------------------------------------+
+
+Channels usage
+--------------------------------
+Once the Channels have been created, data for their Entity properties can be loaded into the System and processed therein. Subject to the Integration setting they may be changed manually or automatically synchronized on a preset schedule. Now you can efficiently manage you Leads, Opportunities and Sales, monitor Magento sales in different shops (multiple Channels) and view Customer profiles based on all the Channels assigned to this Customer.
+
 
 
    
