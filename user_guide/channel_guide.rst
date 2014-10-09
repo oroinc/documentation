@@ -102,7 +102,7 @@ One of its major privileges is extensive Sales Process management and monitoring
 Obviously, even the most powerful analysis tools cannot work without initial data. The Channels functionality described herein enables population of the OroCRM with customer-related information. Basically Channels are sources of data.
 
 +---------------------------------------------------------------------------------+
-|Please note that on Customer may be assigned several Channels of different data. |
+|Please note that on Customer may be assigned several Channels.                   |
 |OroCRM provides for drill-down review of all the customer-related information fro|
 |m different Channels.                                                            |
 +---------------------------------------------------------------------------------+
@@ -120,7 +120,7 @@ Creating a Channel
 --------------------------
 If there are no Channels in the System, or if you need to create a new Channel, it can be done in several simple steps.
 
-1. Enter the system as a User authorized to view/create/edit Channels. Go to *"System" --> "Channels"*
+1. Enter the system as a User authorized to view/create/edit Channels. Go to *System --> Channels*
 
 |S01|
 
@@ -133,7 +133,7 @@ If there are no Channels in the System, or if you need to create a new Channel, 
 The page contains *General* and *Entities* tabs. 
 
 3. `Define basic Channel information <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#basic-information-in-the-general-tab>`_ in the *General* tab. 
-4. Define Entities used for the Channel in the *Entities* tab or section. (The tab duplicates the section for the sake of convenience when working with both small and excessive data amounts).
+4. `Define Entities used for the Channel <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#adding-an-entity>`_ in the *Entities* tab or section. (The tab duplicates the section for the sake of convenience when working with both small and excessive data amounts).
 
 Basic Information in the *General* Tab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -163,12 +163,12 @@ You must define three obligatory fields for the Channel:
   * *Magento*: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-|Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single Account. |
+|Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single customer.|
 |                                                                                                                         |
 +-------------------------------------------------------------------------------------------------------------------------+
 
 At this point you can:
-  - Fill Channel with Entities.
+  - `Fill Channel with Entities <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#adding-an-entity>`_.
   - Click |BS&C| button to Save the empty Channel in the System
   - Click |BCan| button to Cancel the Channel creation
 
@@ -184,14 +184,14 @@ The System can process System and Custom Entities.
 
 System Channel Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-In order to Manage Entities, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when Creating or Editing a Channel (See *Creating a Channel* and/or *Editing a Channel* section).
+In order to Manage Entities, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when `Creating <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ or `Editing  <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#editing-a-channel>`_ a Channel.
 
 +-------------------------------------------------------------------------------------------------------------------------+
 |Entities section and tab duplicate each other. This provides for convenience of Entity management for both short and long|
 |entity list.                                                                                                             |
 +-------------------------------------------------------------------------------------------------------------------------+
 
-There is a number of default Channel Entities meaningful for a specific Channel type. Once you have chosen a *B2B* or *Magento* Channel Type, the System Entities will be added in the ENTITY list automatically. The following table describes all the currently available System Channel Entities and provide brief description of their content.
+There is a number of default Channel Entities meaningful for a specific Channel type. Once you have chosen a *B2B* or *Magento* Channel Type, the System Entities will be added in the *ENTITY* list automatically. The following table describes all the currently available System Channel Entities and provide brief description of their content.
 
 .. list-table:: **System Channel Entities**
    :widths: 10 10 30
@@ -253,15 +253,12 @@ If you have chosen a Custom Channel type, there will be no initially added Entit
 
 Choose an Entity and click |BAdd| button. The entity will be Added to the list. You can also delete entities from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
 
------------------
+Saving the Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you have finished adding the entities, click |BS&C| button in the top right corner. Your Channel will be saved in the system:
 
 |S07|.
-
-For example, we have created a B2B Channel, named "Test" and assigned it all the default B2B Entities and additional Custom Entity "CEntity".
-
-|S06|
 
 --------------------------------
 Further Actions
@@ -270,7 +267,7 @@ Further Actions
 Editing a Channel
 --------------------------
 
-Once a Channel has been created it will appear in the Channel list. (Go to *"System" --> "Channels"* as described in *Creating a Channel* section.
+Once a Channel has been created it will appear in the Channel list. (Go to *"System" --> "Channels"* as described in `Creating a Channel <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ section.
 
 All the previously created Channels will be displayed in the list. In order to Edit the Channel. Click the Channel name. Channel details list will appear. In the top right corner you will see possible action buttons, as follows:
 
