@@ -35,28 +35,28 @@
    :width: 100mm
    
 .. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
-   :width: 40mm
+   :width: 150mm
    
 .. |M02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M02.png
-   :width: 40mm
+   :width: 150mm
 
 .. |M03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M03.png
-   :width: 40mm
+   :width: 150mm
    
 .. |M04| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M04.png
-   :width: 40mm
+   :width: 150mm
    
 .. |M05| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M05.png
-   :width: 40mm
+   :width: 150mm
    
 .. |M06| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M06.png
-   :width: 40mm
+   :width: 150mm
    
 .. |M07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M07.png
-   :width: 40mm
+   :width: 150mm
    
 .. |M08| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M08.png
-   :width: 40mm
+   :width: 150mm
 
 .. |WT01| replace:: Contact request form
 .. _WT01: http://www.magentocommerce.com/magento-connect/contact-request-form.html
