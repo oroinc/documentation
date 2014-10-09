@@ -19,6 +19,18 @@
 .. |BDelete| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BDelete.png
    :align: middle
    
+.. |BAdd| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BAdd.png
+   :align: middle
+
+.. |IcDelete| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/IcView.png
+   :align: middle
+
 .. |S01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S01.png
    :width: 25mm
    
@@ -32,6 +44,12 @@
    :width: 100mm
 
 .. |S05| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S05.png
+   :width: 100mm
+
+.. |S06| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S06.png
+   :width: 100mm
+
+.. |S07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S07.png
    :width: 100mm
    
 .. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
@@ -63,29 +81,25 @@
 
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
--------------
 
----------------------------------------
+--------------------------
+Introduction
+--------------------------
 Document Scope and Target Audience
----------------------------------------
+--------------------------------------------
 
 The Guide is aimed at OroCRM users and provides description of the Channel functionality and its configuration instructions. It is deemed that readers are acquainted with OroCRM and its basic Sales Process management and monitoring capabilities.
 
-Contact request form
-
----------------------------------------
 Brief System and Functionality Overview
----------------------------------------
+------------------------------------------------
 OroCRM is an easy-to-use, open source CRM with built in marketing automation tools. One of its major privileges is extensive Sales Process management and monitoring capabilities. With OroCRM's E-commerce reports and dashboard, our users can carefully watch and effectively plan their business development. (For more details on the Sales Process management and monitoring capabilities, please reffer to the relevant document (TBD).
 Obviously, even the most powerful analysis tools cannot work without initial data. The Channels functionality described herein enables population of the OroCRM with customer-related information. In OroCRM v.1.4 there are two types of channels supported:
 
 - *Web Channels* are sharpened for Magento and provide for easy automated population of the system with customer-related details from multiple shops on Magento
 - *B2B Channels* are dedicated for manual population of the system with customer-related details for B2B businesses
 
-
+--------------------------
 Channels Configuration
-----------------------
-
 --------------------------
 Creating a Channel
 --------------------------
@@ -134,8 +148,6 @@ At this point you can:
   - Click |BS&C| button to Save the empty Channel in the System
   - Click |BCan| button to Cancel the Channel creation
 
-  
---------------------------
 Editing a Channel
 --------------------------
 
@@ -145,86 +157,91 @@ All the previously created Channels will be displayed in the list. In order to E
 
 * |BDeactivate| button (for Active channels) or |BAactivate| button (for Inactive channels).
   * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes functionality.
-  * You can actovate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
+  * You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
   
 * |BDelete| button will delete the Channel. **Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED.** 
 
-* |BEdit| button will open Edit page that is vey similar to the page you used to Create a Channel (See *Create a Channel* section), but:
+* |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel (See *Create a Channel* section), but:
   * details you have already defined will displayed and
   * **you cannot change Channel Type if data from the Channel has been uploaded into the system at least once**
 
-
+----------------------
 Entities
 ----------------------
-
---------------------------
 Entity Overview
 --------------------------
 
 Channel Entities are sets of Customer-related data uploaded into the system. Each entity can contain numerous fields of different types (e.g. text fields, true or false fields, date and time etc.).  When you assign a specific Entity to the Channel, it means that information contained in the Fields of this Entities data will be collected and processed for the Channel.
 The System can contain both Default and Custom Entities.
-For more details on the ways to create/edit Entities and their Fields, please kindly see Entity Management Guide (TBD).
 
---------------------------
-Adding Channel Entity
---------------------------
-In order to add and Entity, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when Creating or Editing a Channel (See *Creating a Channel* and/or *Editing a Channel* section).
+System Channel Entities
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+In order to Manage Entities, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when Creating or Editing a Channel (See *Creating a Channel* and/or *Editing a Channel* section).
 
 +-------------------------------------------------------------------------------------------------------------------------+
 |Entities section and tab duplicate each other. This provides for convenience of Entity management for both short and long|
 |entity list.                                                                                                             |
 +-------------------------------------------------------------------------------------------------------------------------+
 
-Entities section/tab contains a drop-down menu, filled with all the entities available for Channels in the system, regardless of their type.
+There is a number of default Channel Entities meaningful for a specific Channel type. Once you have chosen a *B2B* or *Magento* Channel Type, the System Entities will be added in the ENTITY list automatically. The following table describes all the currently available System Channel Entities and provide brief description of their content.
+
+.. list-table:: **System Channel Entities**
+   :widths: 15 10 30
+   :header-rows: 2
+
+   * - 
+     - 
+     - 
+   * - Entity
+     - Channel Type
+     - Description
+   * - |M01|
+     - B2B
+     - Keeps data on potential Sales most likely to become a success.
+       
+       Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity gain, customer needs and described solution descriptions, etc.
+   * - |M02|
+     - B2B
+     - Keeps data on what might become an Opportunity.           
+       
+       Contains such fields as Lead's personal and business details and reference Opportunity (if any).
+   * - |M03|
+     - B2B
+     - Keeps data on successful Opportunities, which have turned in Sales.           
+       
+       Contains such fields as date of the Sales Process start and reference to the relevant customer in the system, as well as on the preceding Lead and Opportunity.
+   * - |M04|
+     - B2B
+     - KAggregates all the data on a specific Customer.           
+       
+       Contains such fields as the list of Channels active for the Customer, the Customer's Leads and Opportunities, billing and shipping details, and lifetime sales values. 
+   * - |M05|
+     - Magento     
+     - Keeps details from form Magento's |WT01|_, including the contact details and information on the contact attempts success and target.    
+   * - |M06|
+     - Magento     
+     - Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   
+       Contains g Cart the Customer's personal data and payment details, reference to related Opportunities, sales values and related communications.
+   * - |M07|
+     - Magento     
+     - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, billing details, related opportunities, shipping details, rating, etc.
+   * - |M08|
+     - Magento     
+     - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's details, one-time and total credited, payed and taxed amounts, feed-backs, etc.
+
+
+Custom Entities
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Custom Entities are created for specific Customer needs and can contain any required fields to be filled and processed by the System. For more details on Customer entities please kindly see Entity Management Guide (TBD). 
+Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities tab/section below the System Entities. use the scroll bar to get to them.
+
+
+Adding an Entity
+--------------------------
+If you have chosen a Custom Channel type, there will be no initially add Entities. For B2B and Magento Channel their specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that are not yet in the list. 
+(For the sake of the following example there had been created a Custom Entity named "CEntity".
+
 |S05|
-
-The table below describes all the default (**System**) Entities in the drop-down menu. 
-
-*Please keep in mind that:*
-
-* *Entities can be customized. Their names and fields included may be edited.*
-* *If any Custom Entities have been added to the System, they will appear at the bottom of the drop-down menu in the Custom section.*
-* *The table provides only a general description for the System (not Custom) Entities.*
-* *Different System Entities are meaningful either for B2B or for Magento Channel, as specified in the "Ch Type" column.*
-
-+------------------+--------------+------------------------------------------------------------------------------+
-| **Menu Item**    | **Ch Type**  |**Description**                                                               |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M01|            |  B2B         |Keeps data on potential Sales most likely to become a success.                |
-|                  |              |Contains such fields as Opportunity opening and closure dates, closure reasons|
-|                  |              |probability of the Opportunity gain, customer needs and described solution    |
-|                  |              |descriptions, etc.                                                            |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M02|            |  B2B         |Keeps data on what might become an Opportunity.                               |
-|                  |              |such fields as Lead's personal and business details and reference Opportunity |
-|                  |              |(if any).                                                                     |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M03|            |  B2B         |Keeps data on successful Opportunities, which have turned in Sales.           |
-|                  |              |Contains such fields as date of the Sales Process start and reference to the  |
-|                  |              |relevant customer in the system, as well as on the preceding Lead and         |
-|                  |              |Opportunity.                                                                  |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M04|            |  B2B         |Aggregates all the data on a specific Customer.                               |
-|                  |              |Contains such fields as the list of Channels active for the Customer, the Cust|
-|                  |              |omer's Leads and Opportunities, billing and shipping details, and lifetime sal|
-|                  |              |es values.                                                                    |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M05|            |  Magento     |Keeps details from form Magento's |WT01|_, including the contact details and i|
-|                  |              |nformation on the contact attempts success and target.                        |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M06|            |  Magento     |Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   |
-|                  |              |Contains g Cart the Customer's personal data and payment details, reference to|
-|                  |              |related Opportunities, sales values and related communications.               |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M07|            |  Magento     |Aggregates all the data on a specific Magento Customer, including the list of |
-|                  |              |Channels active for the Customer, billing details, related opportunities, ship|
-|                  |              |ping details, rating, etc.                                                    | 
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M08|            |  Magento     |Keeps details of actual sales made by the customer within the Channel, includi|
-|                  |              |ing store details, Customer's details, one-time and total credited, payed and |
-|                  |              |taxed amounts, feedbacks, etc.                                                | 
-+------------------+--------------+------------------------------------------------------------------------------+
-
 
 
    
