@@ -243,5 +243,38 @@ If you have chosen a Custom Channel type, there will be no initially add Entitie
 
 |S05|
 
+Choose an Entity and click |BAdd| button. The entity will be Added to the list. You can also delete entities from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
+
+-----------------
+
+Once you have finished adding the entities, click |BS&C| button in the top right corner. Your Channel will be saved in the system:
+
+|S07|.
+
+For example, we have created a B2B Channel, named "Test" and assigned it all the default B2B Entities and additional Custom Entity "CEntity".
+
+|S06|
+
+--------------------------------
+Further Actions
+--------------------------------
+
+Editing Entities from a Channel
+--------------------------------
+There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly authorized Users.
+
+Entities may be edited from *System --> Entities --> Entity Management*. Entities, assigned to a Channel, may be viewed and/or edited by duly authorized users from the Channel page.
+
+When you open a specific Channel type, there will be two icons in the Action tab. Click |IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
+
++----------------------------------------------------------------------------------------------------+
+| If you don't have necessary permissions, you will see a browser-specific message on access denial. |
++----------------------------------------------------------------------------------------------------+
+
+Channels usage
+--------------------------------
+Once the Channels have been created, data for their Entity properties can be loaded into the System and processed therein. Subject to the Integration setting they may be changed manually or automatically synchronized on a preset schedule. Now you can efficiently manage you Leads, Opportunities and Sales, monitor Magento sales in different shops (multiple Channels) and view Customer profiles based on all the Channels assigned to this Customer.
+
+
 
    
