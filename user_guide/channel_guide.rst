@@ -187,43 +187,49 @@ The table below describes all the default (**System**) Entities in the drop-down
 * *The table provides only a general description for the System (not Custom) Entities.*
 * *Different System Entities are meaningful either for B2B or for Magento Channel, as specified in the "Ch_Type" column.*
 
-+------------------+--------------+------------------------------------------------------------------------------+
-| **Menu_Item**    | **Ch_Type**  |**Description**                                                               |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M01|            |  B2B         |Keeps data on potential Sales most likely to become a success.                |
-|                  |              |Contains such fields as Opportunity opening and closure dates, closure reasons|
-|                  |              |probability of the Opportunity gain, customer needs and described solution    |
-|                  |              |descriptions, etc.                                                            |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M02|            |  B2B         |Keeps data on what might become an Opportunity.                               |
-|                  |              |such fields as Lead's personal and business details and reference Opportunity |
-|                  |              |(if any).                                                                     |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M03|            |  B2B         |Keeps data on successful Opportunities, which have turned in Sales.           |
-|                  |              |Contains such fields as date of the Sales Process start and reference to the  |
-|                  |              |relevant customer in the system, as well as on the preceding Lead and         |
-|                  |              |Opportunity.                                                                  |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M04|            |  B2B         |Aggregates all the data on a specific Customer.                               |
-|                  |              |Contains such fields as the list of Channels active for the Customer, the Cust|
-|                  |              |omer's Leads and Opportunities, billing and shipping details, and lifetime sal|
-|                  |              |es values.                                                                    |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M05|            |  Magento     |Keeps details from form Magento's |WT01|_, including the contact details and i|
-|                  |              |nformation on the contact attempts success and target.                        |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M06|            |  Magento     |Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   |
-|                  |              |Contains g Cart the Customer's personal data and payment details, reference to|
-|                  |              |related Opportunities, sales values and related communications.               |
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M07|            |  Magento     |Aggregates all the data on a specific Magento Customer, including the list of |
-|                  |              |Channels active for the Customer, billing details, related opportunities, ship|
-|                  |              |ping details, rating, etc.                                                    | 
-+------------------+--------------+------------------------------------------------------------------------------+
-| |M08|            |  Magento     |Keeps details of actual sales made by the customer within the Channel, includi|
-|                  |              |ing store details, Customer's details, one-time and total credited, payed and |
-|                  |              |taxed amounts, feedbacks, etc.                                                | 
-+------------------+--------------+------------------------------------------------------------------------------+
+.. list-table:: **System Channel Entities**
+   :widths: 20 10 30
+   :header-rows: 2
+
+   * - 
+     - 
+     - 
+   * - Entity
+     - Channel Type
+     - Description
+   * - |M01|
+     - B2B
+     - Keeps data on potential Sales most likely to become a success.
+       
+       Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity gain, customer needs and described solution descriptions, etc.
+   * - |M02|
+     - B2B
+     - Keeps data on what might become an Opportunity.           
+       
+       Contains such fields as Lead's personal and business details and reference Opportunity (if any).
+   * - |M03|
+     - B2B
+     - Keeps data on successful Opportunities, which have turned in Sales.           
+       
+       Contains such fields as date of the Sales Process start and reference to the relevant customer in the system, as well as on the preceding Lead and Opportunity.
+   * - |M04|
+     - B2B
+     - KAggregates all the data on a specific Customer.           
+       
+       Contains such fields as the list of Channels active for the Customer, the Customer's Leads and Opportunities, billing and shipping details, and lifetime sales values. 
+   * - |M05|
+     - Magento     
+     - Keeps details from form Magento's |WT01|_, including the contact details and information on the contact attempts success and target.    
+   * - |M06|
+     - Magento     
+     - Keeps details on the Magento Customer's pre-sales activity with the |WT02|_   
+       Contains the Customer's personal data and payment details, reference to related Opportunities, sales values and related communications.
+   * - |M07|
+     - Magento     
+     - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, billing details, related opportunities, shipping details, rating, etc.
+   * - |M08|
+     - Magento     
+     - Keeps details of actual sales made by the customer within the Channel, includiing store details, Customer's details, one-time and total credited, payed and taxed amounts, feed-backs, etc.
 
 
 
