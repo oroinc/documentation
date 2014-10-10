@@ -82,6 +82,9 @@
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
 
+Why We Need Channels
+--------------------------
+
 Whether you run a multi-million international business or own a small toy shop in the middle of nowhere, the two vital success components are *knowing your customer* and *keeping a careful track of your business processes*. However, the era of E-commerce with all of its awesome opportunities has brought a number of challenges on the way to the marketing Olympus, including rapidly growing customer-bases, customer's demand for faster and more client-oriented service and, the last but far not least, a need to manage several on-line and off-line shops.
 
 That is when OroCRM steps onstage. Its analysis and reporting tools provide for extensive customer profiling and drill-down marketing capabilities. Its natural flexibility and scalability help to meet the aim of your specific business. And yes, OroCRM has got an answer to the multiple on&off-line shops challenge. This is what we call a *Multiple Channels Functionality*
