@@ -135,7 +135,7 @@ Click |B01| button in the top right corner to get to the *Create Channel* page.
 
 |S02|
 
-2. Define basic Channel details
+2. Define Basic Channel Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In the *General* tab define basic Channel information.
 The tree obligatory fields (marked with "*" sign) **must** be defined:
