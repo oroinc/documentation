@@ -35,7 +35,7 @@
    :width: 25mm
    
 .. |S02| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S02.png
-   :width: 100mm
+   :width: 75 %
    
 .. |S03| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S03.png
    :width: 100mm
@@ -50,7 +50,7 @@
    :width: 100mm
 
 .. |S07| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Screenshots/S07.png
-   :width: 100mm
+   :width: 100 %
    
 .. |M01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/MenuItems/M01.png
    :width: 40mm
@@ -82,115 +82,79 @@
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
 
----------------------------------------------------
-Introduction
----------------------------------------------------
-Document Scope, Target Audience and Conventions
----------------------------------------------------
+Whether you run a multi-million international business or own a small toy shop in the middle of nowhere, the two vital success components are *knowing your customer* and *keeping a careful track of your business processes*. However, the era of E-commerce with all of its awesome opportunities has brought a number of challenges on the way to the marketing Olympus, including rapidly growing customer-bases, customer's demand for faster and more client-oriented service and, the last but far not least, a need to manage several on-line and off-line shops.
 
-The Guide is aimed at OroCRM users and provides description of the Channel functionality and its configuration instructions. It is deemed that readers are acquainted with OroCRM and its basic Sales Process management and monitoring capabilities.
+That is when OroCRM steps onstage. Its analysis and reporting tools provide for extensive customer profiling and drill-down marketing capabilities. Its natural flexibility and scalability help to meet the aim of your specific business. And yes, OroCRM has got an answer to the multiple on&off-line shops challenge. This is what we call a *Multiple Channels Functionality*
 
-Terms that can be found in the `System Glossary <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/Glossary.rst>`_ are Capitalized.
-Names of fields and tabs are written in italics.
+**With OroCRM you can create any number of Channels to collect your business-specific data from both online and offline retail outlets for their further processing in the system.**
 
-Brief System and Functionality Overview
-------------------------------------------------
-OroCRM is an easy-to-use, open source CRM with built in marketing automation tools. 
+You can `Create <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>` a specific Channel for each of the outlets. Fill it with forms to collect outlet-specific data, and than create Customer profiles and reports, based on all the information collected from all the stores. This section describes how this can be done in a default OroCRM 4.1.
 
-One of its major privileges is extensive Sales Process management and monitoring capabilities. With OroCRM's reports and dashboard, users can truly understand and effectively plan their business development. (For more details on the Sales Process capabilities, please refer to the relevant document (TBD).
+Channel Types
+-----------------
 
-Obviously, even the most powerful analysis tools cannot work without initial data. The Channels functionality described herein enables population of the OroCRM with customer-related information. Basically Channels are sources of data.
+While OroCRM customization capabilities provide for creation of any number of Channel types, we shall consider the three basic ones, i.e. Web, B2B and Custom Channels:
 
-+---------------------------------------------------------------------------------+
-|Please note that on Customer may be assigned several Channels.                   |
-|OroCRM provides for drill-down review of all the customer-related information fro|
-|m different Channels.                                                            |
-+---------------------------------------------------------------------------------+
+- *Web Channels* are initially sharpened for Magento and provide for easy automated population of the system with customer-related details from multiple shops on Magento.
+- *B2B Channels* are dedicated for manual population of the system with off-line business details.
+-  *Custom Channels* can be created and tailored subject to specific customer needs and requirement. 
 
 In OroCRM v.1.4 there are two system types of channels supported:
 
-- *Web Channels* are sharpened for Magento and provide for easy automated population of the system with customer-related details from multiple shops on Magento
+- *Magento Channels* are sharpened for Magento and provide for easy automated population of the system with customer-related details from multiple shops on Magento
 - *B2B Channels* are dedicated for manual population of the system with customer-related details for B2B businesses
 -  The third type *Custom Channels* that can be created and tailored subject to specific customer needs and requirement. 
 
---------------------------
-Channels Configuration
---------------------------
 Creating a Channel
 --------------------------
-If there are no Channels in the System, or if you need to create a new Channel, it can be done in several simple steps.
 
-1. Enter the system as a User authorized to view/create/edit Channels. Go to *System --> Channels*
+A Channel can be created with several simple steps:
+1. Go to Channels
+2. Define basic Channel details
+3. Fill the Channel with Entities
+4. Save the Channel in the System
+
+(Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill with Entities, though a simpler straightforward flow is described hereunder).
+   
+are several simple steps that will help toIn order to create a new Channel If there are no Channels in the System, or if you need to create a new Channel, it can be done in several simple steps.
+
+1. Go to Channels
+^^^^^^^^^^^^^^^^^
+Enter the system and go to *System --> Channels*
 
 |S01|
 
+If you cannot see the *System* and\or *Channels* menu, check your role permissions or address your system administrator.
+
 *System / Channels* page will appear.
 
-2. Click |B01| button in the top right corner. *Create Channel* page will appear.
+Click |B01| button in the top right corner to get to the *Create Channel* page.
 
 |S02|
-   
-The page contains *General* and *Entities* tabs. 
 
-3. `Define basic Channel information <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#basic-information-in-the-general-tab>`_ in the *General* tab. 
-4. `Define Entities used for the Channel <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#adding-an-entity>`_ in the *Entities* tab or section. (The tab duplicates the section for the sake of convenience when working with both small and excessive data amounts).
+2. Define basic Channel details
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the *General* tab define basic Channel information.
+The tree obligatory fields (marked with "*" sign) **must** be defined:
 
-Basic Information in the *General* Tab
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- **Status** (1). The following two values are possible:
 
-You can define basic Channel details in the *General* tab. 
+  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all the data loaded while the Channel was active is considered by the reports.
 
-You must define three obligatory fields for the Channel:
+  * *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
-- Status 
+- **Name** (2): a name of the channel that will be displayed on the screen (and thus used to manage the Channel).
 
-|S03|
+- **Channel Type**: a drop-down, where you can choose a channel type that is more suitable for the Channel created.
 
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all the data loaded while the Channel was active is considered by the Sales Processes functionality.
+3. Fill the Channel with Entities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Channel Entities are sets of Customer-related data uploaded into the system. Each entity can contain numerous fields of different types (e.g. text fields, true or false fields, date and time etc.).  When you assign a specific Entity to the Channel, it means that information contained in the Fields of this Entity will be collected and processed for the Channel. There are System and Custom Entities.
 
-  * *Active*: data will be loaded from the Channel. 
-
-- *Name* (2): is the name of the channel that will be displayed on the screen (and thus used to manage the Channel).
-
-- *Channel Type* (3): is a drop-down with three available values:
-
-|S04|
-
-  * *Custom*: (default); provides for ability to create Channels with specific customized settings and is subject to separate customization and integration
-  
-  * *B2B*: choose the option if there is need to process B2B enterprise data. Initially, the data shall be input manually though the system supports integration with third-party enterprise systems
-  
-  * *Magento*: choose the option if you want to upload data for further analysis and monitoring from your Magento stores. 
-
-+-------------------------------------------------------------------------------------------------------------------------+
-|Please note that you can create several B2B or Magento Channels and process all the data therefrom for a single customer.|
-|                                                                                                                         |
-+-------------------------------------------------------------------------------------------------------------------------+
-
-At this point you can:
-  - `Fill Channel with Entities <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#adding-an-entity>`_.
-  - Click |BS&C| button to Save the empty Channel in the System
-  - Click |BCan| button to Cancel the Channel creation
-
-
-----------------------
-Entities
-----------------------
-Entity Overview
---------------------------
-
-Channel Entities are sets of Customer-related data uploaded into the system. Each entity can contain numerous fields of different types (e.g. text fields, true or false fields, date and time etc.).  When you assign a specific Entity to the Channel, it means that information contained in the Fields of this Entity will be collected and processed for the Channel.
-The System can process System and Custom Entities.
+Entities are managed in the "Entities" section or tab that you will see when `Creating <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ or `Editing  <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#editing-a-channel>`_ a Channel. (*Entities section and tab duplicate each other. This provides for convenience of Entity management for both small and excessive number of entities*)
 
 System Channel Entities
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-In order to Manage Entities, you need to get the the *Channel/Entities* section or tab. To do so go to the *Entities* section when `Creating <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ or `Editing  <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#editing-a-channel>`_ a Channel.
-
-+-------------------------------------------------------------------------------------------------------------------------+
-|Entities section and tab duplicate each other. This provides for convenience of Entity management for both short and long|
-|entity list.                                                                                                             |
-+-------------------------------------------------------------------------------------------------------------------------+
-
+"""""""""""""""""""""""
 There is a number of default Channel Entities meaningful for a specific Channel type. Once you have chosen a *B2B* or *Magento* Channel Type, the System Entities will be added in the *ENTITY* list automatically. The following table describes all the currently available System Channel Entities and provide brief description of their content.
 
 .. list-table:: **System Channel Entities**
@@ -239,37 +203,32 @@ There is a number of default Channel Entities meaningful for a specific Channel 
 
 
 Custom Entities
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""
 Custom Entities are created for specific Customer needs and can contain any required fields to be filled and processed by the System. For more details on Customer entities please kindly see Entity Management Guide (TBD). 
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities tab/section below the System Entities. use the scroll bar to get to them.
 
+Finalize Entity Choice
+"""""""""""""""""""""""
+If you have chosen a Custom Channel type, there will be no initially added Entities. For B2B and Magento Channel their specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that are not yet in the list. Both System and Custom Entities can be added to the same list.
 
-Adding an Entity
---------------------------
-If you have chosen a Custom Channel type, there will be no initially added Entities. For B2B and Magento Channel their specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that are not yet in the list. 
 (For the sake of the following example there had been created a Custom Entity named "CEntity".
 
 |S05|
 
 Choose an Entity and click |BAdd| button. The entity will be Added to the list. You can also delete entities from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
 
-Saving the Channel
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+4. Save the Channel in the System
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you have finished adding the entities, click |BS&C| button in the top right corner. Your Channel will be saved in the system:
 
 |S07|.
 
---------------------------------
+
 Further Actions
---------------------------------
-
-Editing a Channel
---------------------------
-
-Once a Channel has been created it will appear in the Channel list. (Go to *"System" --> "Channels"* as described in `Creating a Channel <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ section.
-
-All the previously created Channels will be displayed in the list. In order to Edit the Channel. Click the Channel name. Channel details list will appear. In the top right corner you will see possible action buttons, as follows:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Once a Channel has been created it will appear in the Channel list. Now you can Edit your Channel details. 
+Click the Channel name in the list. The Channel details list will appear. In the top right corner you will see possible action buttons:
 
 * |BDeactivate| button (for Active channels) or |BAactivate| button (for Inactive channels).
   * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes functionality.
@@ -282,20 +241,18 @@ All the previously created Channels will be displayed in the list. In order to E
   * **you cannot change Channel Type if data from the Channel has been uploaded into the system at least once**
 
 Editing Entities from a Channel
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly authorized Users.
 
 Entities may be edited from *System --> Entities --> Entity Management*. Entities, assigned to a Channel, may be viewed and/or edited by duly authorized users from the Channel page.
 
 When you open a specific Channel type, there will be two icons in the Action tab. Click |IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
 
-+----------------------------------------------------------------------------------------------------+
-| If you don't have necessary permissions, you will see a browser-specific message on access denial. |
-+----------------------------------------------------------------------------------------------------+
+ **If you don't have necessary permissions, you will see a browser-specific message on access denial.** 
 
 Channels usage
 --------------------------------
-Once the Channels have been created, data for their Entity properties can be loaded into the System and processed therein. Subject to the Integration setting they may be changed manually or automatically synchronized on a preset schedule. Now you can efficiently manage you Leads, Opportunities and Sales, monitor Magento sales in different shops (multiple Channels) and view Customer profiles based on all the Channels assigned to this Customer.
+Once the Channels have been created, data for their Entity properties can be loaded into the System and processed therein. Speaking less IT-language it means that now you can add info from any kind of your retail spots to the OroCRM and gain unified one-point access to analyze and monitor this data (which of course, will no way limit the drill-down capabilities if you want to focus on one specific Channel.
 
 
 
