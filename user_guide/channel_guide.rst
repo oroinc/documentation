@@ -3,9 +3,9 @@ Channel Guide
 
 .. |B01| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/B01.png
    :align: middle
-
+   
 .. |BS&C| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BS&C.png
-    :align: middle
+   :align: middle
 
 .. |BCan| image:: https://raw.githubusercontent.com/nnenasheva/documentation/patch-2/user_guide/img/channel_guide/Buttons/BCan.png
    :align: middle
@@ -235,7 +235,10 @@ Once you have finished adding the entities, click |BS&C| button in the top right
 
 
 Further Actions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
+
+Editing/Deleting a Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Once a Channel has been created it will appear in the Channel list. Now you can Edit your Channel details. 
 Click the Channel name in the list. The Channel details list will appear. In the top right corner you will see possible action buttons:
 
@@ -259,8 +262,8 @@ When you open a specific Channel type, there will be two icons in the Action tab
 
  **If you don't have necessary permissions, you will see a browser-specific message on access denial.** 
 
-Channels usage
---------------------------------
+Channels Usage
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Once the Channels have been created, data for their Entity properties can be loaded into the System and processed therein. Speaking less IT-language it means that now you can add info from any kind of your retail spots to the OroCRM and gain unified one-point access to analyze and monitor this data (which of course, will no way limit the drill-down capabilities if you want to focus on one specific Channel.
 
    
