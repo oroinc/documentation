@@ -87,11 +87,11 @@ Why We Need Channels
 
 Whether you run a multi-million international business or own a small toy shop in the middle of nowhere, the two vital success components are *knowing your customer* and *keeping a careful track of your business processes*. However, the era of E-commerce with all of its awesome opportunities has brought a number of challenges on the way to the marketing Olympus, including rapidly growing customer-bases, customer's demand for faster and more client-oriented service and, the last but far not least, a need to manage several on-line and off-line shops.
 
-That is when OroCRM steps onstage. Its analysis and reporting tools provide for extensive customer profiling and drill-down marketing capabilities. Its natural flexibility and scalability help to meet the aim of your specific business. And yes, OroCRM has got an answer to the multiple on&off-line shops challenge. This is what we call a *Multiple Channels Functionality*
+That is when OroCRM steps onstage. Its analysis and reporting tools provide for extensive customer profiling and drill-down marketing capabilities. Its natural flexibility and scalability help to meet the aim of your specific business. And yes, OroCRM has got an answer to the multiple on&off-line shops challenge. This is what we call a *Multiple Channels Functionality*.
 
 **With OroCRM you can create any number of Channels to collect your business-specific data from both online and offline retail outlets for their further processing in the system.**
 
-You can `Create <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>` a specific Channel for each of the outlets. Fill it with forms to collect outlet-specific data, and than create Customer profiles and reports, based on all the information collected from all the stores. This section describes how this can be done in a default OroCRM 4.1.
+You can `create <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ a specific Channel for each of the outlets and `fill it <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_ with forms to collect outlet-specific data, and than create Customer profiles and reports, based on all the information collected from all the stores. 
 
 Channel Types
 -----------------
@@ -112,14 +112,17 @@ Creating a Channel
 --------------------------
 
 A Channel can be created with several simple steps:
-1. Go to Channels
-2. Define basic Channel details
-3. Fill the Channel with Entities
-4. Save the Channel in the System
 
-(Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill with Entities, though a simpler straightforward flow is described hereunder).
+1. Go to Channels
+
+2. `Define basic Channel details <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#2-define-basic-channel-details>`_
+
+3. `Fill the Channel with Entities <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_
+
+4. `Save the Channel in the System <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#4-save-the-channel-in-the-system>`_
+
+.. hint:: Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill with Entities, though a simpler straightforward flow is described hereunder).
    
-are several simple steps that will help toIn order to create a new Channel If there are no Channels in the System, or if you need to create a new Channel, it can be done in several simple steps.
 
 1. Go to Channels
 ^^^^^^^^^^^^^^^^^
