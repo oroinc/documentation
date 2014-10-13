@@ -169,7 +169,7 @@ operations and request that useless in some specific case.
 To solve this issue developer can implement custom strategy that will do only required actions and nothing more.
 Following example shows services that should be created to add new strategy to import:
 
-.. code-block:: yml
+.. code-block:: yaml
 
     # Custom strategy
     orocrm_contact.importexport.strategy.contact.add:
