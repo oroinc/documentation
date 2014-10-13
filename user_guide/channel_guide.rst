@@ -4,7 +4,7 @@ Channel Guide
 .. |B01| image:: ./img/channel_guide/Buttons/B01.png
    :align: middle
    
-.. |BSC| image:: ./img/channel_guide/Buttons/BSC.png
+.. |Bsc| image:: ./img/channel_guide/Buttons/Bsc.png
    :align: middle
 
 .. |BCan| image:: ./img/channel_guide/Buttons/BCan.png
@@ -229,7 +229,7 @@ Choose an Entity and click |BAdd| button. The entity will be Added to the list. 
 4. Save the Channel in the System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have finished adding the entities, click |BSC| button in the top right corner. Your Channel will be saved in the system:
+Once you have finished adding the entities, click |Bsc| button in the top right corner. Your Channel will be saved in the system:
 
 |S07|.
 
