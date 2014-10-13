@@ -260,7 +260,4 @@ Channels usage
 --------------------------------
 Once the Channels have been created, data for their Entity properties can be loaded into the System and processed therein. Speaking less IT-language it means that now you can add info from any kind of your retail spots to the OroCRM and gain unified one-point access to analyze and monitor this data (which of course, will no way limit the drill-down capabilities if you want to focus on one specific Channel.
 
-
---------------------------------
-Test
    
