@@ -1,82 +1,82 @@
 Channel Guide
 =============
 
-.. |B01| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/B01.png
+.. |B01| image:: ./img/channel_guide/Buttons/B01.png
    :align: middle
    
-.. |BS&C| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BS&C.png
+.. |BSC| image:: ./img/channel_guide/Buttons/BSC.png
    :align: middle
 
-.. |BCan| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BCan.png
+.. |BCan| image:: ./img/channel_guide/Buttons/BCan.png
    :align: middle
 
-.. |BDeactivate| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BDeactivate.png
+.. |BDeactivate| image:: ./img/channel_guide/Buttons/BDeactivate.png
    :align: middle   
 
-.. |BAactivate| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BActivate.png
+.. |BAactivate| image:: ./img/channel_guide/Buttons/BActivate.png
    :align: middle  
 
-.. |BEdit| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BEdit.png
+.. |BEdit| image:: ./img/channel_guide/Buttons/BEdit.png
    :align: middle  
    
-.. |BDelete| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BDelete.png
+.. |BDelete| image:: ./img/channel_guide/Buttons/BDelete.png
    :align: middle
    
-.. |BAdd| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/BAdd.png
+.. |BAdd| image:: ./img/channel_guide/Buttons/BAdd.png
    :align: middle
 
-.. |IcDelete| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/IcDelete.png
+.. |IcDelete| image:: ./img/channel_guide/Buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/IcEdit.png
+.. |IcEdit| image:: ./img/channel_guide/Buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Buttons/.png
+.. |IcView| image:: ./img/channel_guide/Buttons/.png
    :align: middle
 
-.. |S01| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S01.png
+.. |S01| image:: ./img/channel_guide/Screenshots/S01.png
    :width: 25mm
    
-.. |S02| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S02.png
+.. |S02| image:: ./img/channel_guide/Screenshots/S02.png
    :width: 75 %
    
-.. |S03| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S03.png
+.. |S03| image:: ./img/channel_guide/Screenshots/S03.png
    :width: 100mm
    
-.. |S04| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S04.png
+.. |S04| image:: ./img/channel_guide/Screenshots/S04.png
    :width: 100mm
 
-.. |S05| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S05.png
+.. |S05| image:: ./img/channel_guide/Screenshots/S05.png
    :width: 100mm
 
-.. |S06| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S06.png
+.. |S06| image:: ./img/channel_guide/Screenshots/S06.png
    :width: 100mm
 
-.. |S07| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/Screenshots/S07.png
+.. |S07| image:: ./img/channel_guide/Screenshots/S07.png
    :width: 100 %
    
-.. |M01| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M01.png
+.. |M01| image:: ./img/channel_guide/MenuItems/M01.png
    :width: 40mm
    
-.. |M02| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M02.png
+.. |M02| image:: ./img/channel_guide/MenuItems/M02.png
    :width: 40mm
 
-.. |M03| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M03.png
+.. |M03| image:: ./img/channel_guide/MenuItems/M03.png
    :width: 40mm
    
-.. |M04| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M04.png
+.. |M04| image:: ./img/channel_guide/MenuItems/M04.png
    :width: 40mm
    
-.. |M05| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M05.png
+.. |M05| image:: ./img/channel_guide/MenuItems/M05.png
    :width: 40mm
    
-.. |M06| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M06.png
+.. |M06| image:: ./img/channel_guide/MenuItems/M06.png
    :width: 40mm
    
-.. |M07| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M07.png
+.. |M07| image:: ./img/channel_guide/MenuItems/M07.png
    :width: 40mm
    
-.. |M08| image:: https://raw.githubusercontent.com/oro_crm/documentation/master/user_guide/img/channel_guide/MenuItems/M08.png
+.. |M08| image:: ./img/channel_guide/MenuItems/M08.png
    :width: 40mm
 
 .. |WT01| replace:: Contact request form
@@ -229,7 +229,7 @@ Choose an Entity and click |BAdd| button. The entity will be Added to the list. 
 4. Save the Channel in the System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have finished adding the entities, click |BS&C| button in the top right corner. Your Channel will be saved in the system:
+Once you have finished adding the entities, click |BSC| button in the top right corner. Your Channel will be saved in the system:
 
 |S07|.
 
