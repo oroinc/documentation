@@ -9,7 +9,7 @@ This article contains several recommendations about speeding up of import proces
 
 
 Ensure that xdebug is disabled
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 xDebug is a very useful debug toot for PHP, but in the same time it adds lots of overhead especially for heavy and long
 operations. xDebug status can be checked using ``php -m`` command:
@@ -27,7 +27,7 @@ To disable it developer have to remove or comment including of xDebug library (u
 
 
 Do import operation from command line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 Import from UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
 or millions of entities then command line is your choice. OroPlatform provider CLI command "oro:import:csv" that allows
@@ -50,7 +50,7 @@ Here is small example of it's usage.
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv ~/Contact_2000.csv
+    $ php app/console oro:import:csv -/Contact_2000.csv
     Choose Processor:
       [0] orocrm_contact.add_or_replace
       [1] orocrm_contact.add
@@ -87,18 +87,18 @@ Here is small example of it's usage.
 
 
 Perform import in prod environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 Default environment for CLI is dev, so application stores lots of data that usually unnecessary for real usage - so,
 it will be better and faster to perform import in prod environment by adding ``--env=prod`` option.
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv ~/Contact_2000.csv --env=prod
+    $ php app/console oro:import:csv -/Contact_2000.csv --env=prod
 
 
 Skip import file validation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 During regular import operation validation process performs two times - first during validation itself, and second
 before saving of imported entities (invalid entities will not be save to DB). Initial validation can be skipped and
@@ -107,7 +107,7 @@ option ``--no-interaction``:
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
+    $ php app/console oro:import:csv -/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
     +---------------+-------+
     | Results       | Count |
     +---------------+-------+
@@ -128,7 +128,7 @@ option ``--no-interaction``:
 
 
 Disable optional listeners
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 OroPlatform provides ability to disable some event listeners during command execution. Command
 ``oro:platform:optional-listeners`` shows list of all such listeners:
@@ -148,7 +148,7 @@ it will disable all optional listeners. Here is example:
 
 .. code-block:: bash
 
-    $ app/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
+    $ app/console oro:import:csv -/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
 
 .. caution::
 
@@ -159,7 +159,7 @@ it will disable all optional listeners. Here is example:
 
 
 Write custom import strategy
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 OroPlatform provider default configurable strategy
 ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy`` that automatically handles
