@@ -103,6 +103,7 @@ I. **Populating the System with Leads from the Leads section**
 Click |BCrL| button to manually input the Lead's details. 
 The form specified for the Channel's Leads will appear. The form contains mandatory system fields, optional system fields.
 
+
 Mandatory System Fields
 ***********************
 
