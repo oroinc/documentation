@@ -31,7 +31,7 @@ Channel Guide
 .. |IcEdit| image:: ./img/channel_guide/Buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ./img/channel_guide/Buttons/.png
+.. |IcView| image:: ./img/channel_guide/Buttons/IcView.png
    :align: middle
 
 .. |S01| image:: ./img/channel_guide/Screenshots/S01.png
