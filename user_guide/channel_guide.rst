@@ -94,7 +94,7 @@ That is when OroCRM steps onstage. Its analysis and reporting tools provide for 
 
 **With OroCRM you can create any number of Channels to collect your business-specific data from both online and offline retail outlets for their further processing in the system.**
 
-You can `create <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ a specific Channel for each of the outlets and `fill it <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_ with forms to collect outlet-specific data, and than create Customer profiles and reports, based on all the information collected from all the stores. 
+You can `create </user_guide/channel_guide.rst#creating-a-channel>`_ a specific Channel for each of the outlets and `fill it </user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_ with forms to collect outlet-specific data, and than create Customer profiles and reports, based on all the information collected from all the stores. 
 
 Channel Types
 -----------------
@@ -118,11 +118,11 @@ A Channel can be created with several simple steps:
 
 1. Go to Channels
 
-2. `Define basic Channel details <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#2-define-basic-channel-details>`_
+2. `Define basic Channel details </user_guide/channel_guide.rst#2-define-basic-channel-details>`_
 
-3. `Fill the Channel with Entities <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_
+3. `Fill the Channel with Entities </user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_
 
-4. `Save the Channel in the System <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#4-save-the-channel-in-the-system>`_
+4. `Save the Channel in the System </user_guide/channel_guide.rst#4-save-the-channel-in-the-system>`_
 
 .. hint:: Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill with Entities, though a simpler straightforward flow is described hereunder).
    
@@ -160,7 +160,7 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Channel Entities are sets of Customer-related data uploaded into the system. Each entity can contain numerous fields of different types (e.g. text fields, true or false fields, date and time etc.).  When you assign a specific Entity to the Channel, it means that information contained in the Fields of this Entity will be collected and processed for the Channel. There are System and Custom Entities.
 
-Entities are managed in the "Entities" section or tab that you will see when `Creating <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#creating-a-channel>`_ or `Editing  <https://github.com/nnenasheva/documentation/blob/patch-2/user_guide/channel_guide.rst#editing-a-channel>`_ a Channel. (*Entities section and tab duplicate each other. This provides for convenience of Entity management for both small and excessive number of entities*)
+Entities are managed in the "Entities" section or tab that you will see when `Creating </user_guide/channel_guide.rst#creating-a-channel>`_ or `Editing  </user_guide/channel_guide.rst#editing-a-channel>`_ a Channel. (*Entities section and tab duplicate each other. This provides for convenience of Entity management for both small and excessive number of entities*)
 
 System Channel Entities
 """""""""""""""""""""""
