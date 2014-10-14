@@ -124,7 +124,7 @@ A Channel can be created with several simple steps:
 
 4. `Save the Channel in the System </user_guide/channel_guide.rst#4-save-the-channel-in-the-system>`_
 
-.. hint:: Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill with Entities, though a simpler straightforward flow is described hereunder).
+:hint: Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill with Entities, though a simpler straightforward flow is described hereunder).
    
 
 1. Go to Channels
