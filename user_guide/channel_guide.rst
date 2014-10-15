@@ -152,11 +152,11 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 
 - **Status** (1). The following two values are possible:
 
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
+  - *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
      configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
      the data loaded while the Channel was active is considered by the reports.
 
-  * *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
+  - *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
 - **Name** (2): a name of the channel that will be displayed on the screen (and thus used to manage the Channel).
 
