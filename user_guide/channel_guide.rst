@@ -374,3 +374,5 @@ about our shop.
 
 Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily 
 collect, process and monitor it.
+
+update_check
