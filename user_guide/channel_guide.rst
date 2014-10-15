@@ -84,7 +84,7 @@ Channel Guide
 Why We Need Channels
 --------------------------
 
-Whether you run a multi-million international business or own a small toy shop in the middle of nowhere, the two vital 
+Whether you run a multi-million global business or own a small toy shop in the middle of nowhere, the two vital 
 success components are *knowing your customer* and *keeping a careful track of your business processes*. However, the 
 era of E-commerce with all of its awesome opportunities has brought a number of challenges on the way to the marketing 
 Olympus, including rapidly growing customer-bases, customer's demand for faster and more client-oriented service and, 
