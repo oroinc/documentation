@@ -1,18 +1,19 @@
 .. index::
     single: Import/Export; Performance
+    single: Import/Export; Acceleration
 
 
-How to make import faster
-=========================
+How to accelerate import
+========================
 
-This article contains several recommendations about speeding up of import process.
+This article contains several recommendation about import process acceleration.
 
 
-Ensure that xdebug is disabled
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Make sure xDebug is disabled
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-xDebug is a very useful debug toot for PHP, but in the same time it adds lots of overhead especially for heavy and long
-operations. xDebug status can be checked using ``php -m`` command:
+xDebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
+operations. xDebug status can be checked with ``php -m`` command:
 
 .. code-block:: bash
 
@@ -23,15 +24,16 @@ operations. xDebug status can be checked using ``php -m`` command:
     # xdebug is disabled (no result)
     $ php -m | grep xdebug
 
-To disable it developer have to remove or comment including of xDebug library (usually it should be done in php.ini).
+To disable it, a developer has to remove or comment inclusion of xDebug library (usually this should be done in
+php.ini).
 
 
-Do import operation from command line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Run import operation from command line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Import from UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities then command line is your choice. OroPlatform provider CLI command "oro:import:csv" that allows
-to perform import from specified CSV file.
+or millions of entities, a command line is your best choice. OroPlatform provides a CLI command "oro:import:csv"
+that allows import from specified CSV file.
 
 .. code-block:: bash
 
