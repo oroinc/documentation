@@ -152,7 +152,9 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 
 - **Status** (1). The following two values are possible:
 
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all the data loaded while the Channel was active is considered by the reports.
+  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
+     configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
+     the data loaded while the Channel was active is considered by the reports.
 
   * *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
@@ -203,7 +205,8 @@ brief description of their content.
      - B2B
      - Keeps data on potential Sales most likely to become a success.
        
-       Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity gain, customer needs and described solution descriptions, etc.
+       Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity 
+       gain, customer needs and described solution descriptions, etc.
    
    
    * - |M02|
@@ -217,36 +220,42 @@ brief description of their content.
      - B2B
      - Keeps data on successful Opportunities, which have turned in Sales.           
        
-       Contains such fields as date of the Sales Process start and reference to the relevant customer in the system, as well as on the preceding Lead and Opportunity.
+       Contains such fields as date of the Sales Process start and reference to the relevant customer in the system, as 
+       well as on the preceding Lead and Opportunity.
 
    
    * - |M04|
      - B2B
      - Aggregates all the data on a specific Customer.           
        
-       Contains such fields as the list of Channels active for the Customer, the Customer's Leads and Opportunities, billing and shipping details, and lifetime sales values. 
+       Contains such fields as the list of Channels active for the Customer, the Customer's Leads and Opportunities, 
+       billing and shipping details, and lifetime sales values. 
 
 
    * - |M05|
      - Magento
-     - Keeps details from form Magento's |WT01|_, including the contact details and information on the contact attempts success and target.          
+     - Keeps details from form Magento's |WT01|_, including the contact details and information on the contact attempts 
+       success and target.          
 
 
    * - |M06|
      - Magento
      - Keeps details on the Magento Customer's pre-sales activity with the |WT02|_            
        
-       Contains Customer's personal data and payment details, reference to related Opportunities, sales values and related communications. 
+       Contains Customer's personal data and payment details, reference to related Opportunities, sales values and 
+       related communications. 
 
 
    * - |M07|
      - Magento
-     - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, billing details, related opportunities, shipping details, rating, etc.            
+     - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, 
+       billing details, related opportunities, shipping details, rating, etc.            
 
 
    * - |M08|
      - Magento
-     - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's details, one-time and total credited, paid and taxed amounts, feed-backs, etc.   
+     - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's 
+       details, one-time and total credited, paid and taxed amounts, feed-backs, etc.   
 
 Custom Entities
 """""""""""""""""""""""
@@ -296,7 +305,8 @@ action buttons:
 .. important:: Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED. 
 
 * |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel 
-  (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but details you have already defined will displayed
+  (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but details you have already 
+   defined will displayed
 
 .. important:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
 
@@ -348,7 +358,10 @@ additional services.
 
 - Populate the System with Channels of the Type.
 
-- For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list Partner's information, including address, shipping details, names of contact persons, etc., Service Provided   (details on the Services) and Customers Attracted (basic Customer information including contract prolongation, additional services, total money paid, etc.). 
+- For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
+  Partner's information, including address, shipping details, names of contact persons, etc., Service Provided(details 
+  on the Services) and Customers Attracted (basic Customer information including contract prolongation, additional 
+  services, total money paid, etc.). 
 
 Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
 appropriate work-flows and reports.
@@ -364,7 +377,8 @@ about our shop.
 
 - Assign this Channel Entity "Leads"
       
-- Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you here?" question.
+- Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you 
+  here?" question.
 
 Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily collect,
 process and monitor it.
