@@ -152,9 +152,7 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 
 - **Status** (1). The following two values are possible:
 
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
-              configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, 
-			  but all the data loaded while the Channel was active is considered by the reports.
+  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all the data loaded while the Channel was active is considered by the reports.
 
   * *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
@@ -331,7 +329,7 @@ Example 1
 We sell flowers, toys and souvenirs at several Magento stores. We want to keep track of our customers (especially the 
 ones who buy things from different shops) and to review how sales vary between different shops of a kind.
 
- - Create Magento channels that correspond to our shop 
+- Create Magento channels that correspond to our shop 
 
 - Fill it with Entities that correspond to Customers, Shopping Carts and Sales
 
@@ -352,10 +350,7 @@ additional services.
 
 - Populate the System with Channels of the Type.
 
-- For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
-   Partner's information, including address, shipping details, names of contact persons, etc., Service Provided 
-   (details on the Services) and Customers Attracted (basic Customer information including contract prolongation, 
-   additional services, total money paid, etc.). 
+- For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list Partner's information, including address, shipping details, names of contact persons, etc., Service Provided   (details on the Services) and Customers Attracted (basic Customer information including contract prolongation, additional services, total money paid, etc.). 
 
 Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
 appropriate work-flows and reports.
@@ -371,8 +366,7 @@ about our shop.
 
 - Assign this Channel Entity "Leads"
       
-- Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you 
-   here?" question.
+- Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you here?" question.
 
-Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily 
-collect, process and monitor it.
+Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily collect,
+process and monitor it.
