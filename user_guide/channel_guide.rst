@@ -96,7 +96,7 @@ drill-down marketing capabilities. Its natural flexibility and scalability help 
 business. And yes, OroCRM has got an answer to the multiple sales&customer source challenge. 
 This is what we call a *Multiple Channels Functionality*.
 
-.. important:: With OroCRM you can create any number of Channels to collect your business-specific data for further 
+.. caution:: With OroCRM you can create any number of Channels to collect your business-specific data for further 
    processing in the system.
 
 You can `create </user_guide/channel_guide.rst#creating-a-channel>`_ a specific Channel for each of the outlets and 
@@ -152,11 +152,11 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 
 - **Status** (1). The following two values are possible:
 
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
-     configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
-     the data loaded while the Channel was active is considered by the reports.
+  - *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
+    configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
+    the data loaded while the Channel was active is considered by the reports.
 
-  * *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
+  - *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
 - **Name** (2): a name of the channel that will be displayed on the screen (and thus used to manage the Channel).
 
@@ -302,14 +302,13 @@ action buttons:
   
 * |BDelete| button will delete the Channel. 
 
-.. important:: Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED. 
+.. caution:: Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED. 
 
 * |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel 
-  (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but:
+  (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but details you have already 
+   defined will displayed
 
-  * details you have already defined will displayed and
-
-.. important:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
+.. caution:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
 
 Editing Entities from a Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -360,9 +359,9 @@ additional services.
 - Populate the System with Channels of the Type.
 
 - For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
-  Partner's information, including address, shipping details, names of contact persons, etc., Service Provided
-  (details on the Services) and Customers Attracted (basic Customer information including contract prolongation, 
-  additional services, total money paid, etc.). 
+  including address, shipping details, names of contact persons, etc., Service Provided (details 
+  on the Services) and Customers Attracted (basic Customer information including contract prolongation, additional 
+  services, total money paid, etc.). 
 
 Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
 appropriate work-flows and reports.
