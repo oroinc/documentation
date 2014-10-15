@@ -152,13 +152,7 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 
 - **Status** (1). The following two values are possible:
 
-<<<<<<< HEAD
-  * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
-              configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, 
-			  but all the data loaded while the Channel was active is considered by the reports.
-=======
   * *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all the data loaded while the Channel was active is considered by the reports.
->>>>>>> patch-2
 
   * *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
@@ -302,9 +296,7 @@ action buttons:
 .. important:: Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED. 
 
 * |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel 
-  (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but:
-
-  * details you have already defined will displayed and
+  (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but details you have already defined will displayed
 
 .. important:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
 
@@ -335,19 +327,11 @@ Example 1
 We sell flowers, toys and souvenirs at several Magento stores. We want to keep track of our customers (especially the 
 ones who buy things from different shops) and to review how sales vary between different shops of a kind.
 
-<<<<<<< HEAD
- - Create Magento channels that correspond to our shop 
-
- - Fill it with Entities that correspond to Customers, Shopping Carts and Sales
-
- - Define specific details we want to know for each Entity type
-=======
 - Create Magento channels that correspond to our shop 
 
 - Fill it with Entities that correspond to Customers, Shopping Carts and Sales
 
 - Define specific details we want to know for each Entity type
->>>>>>> patch-2
 
 Now for each instance of the entity theses details can be loaded into the system and processed there. This means we 
 can monitor customers, regardless  of the shop, can make reports on on the activity and even assess how many things 
@@ -360,17 +344,6 @@ We sell after-sales support services to customers of our partners and want to ke
 are worth working on with, what are our gains and if the customers attracted from the partners address us for 
 additional services.
 
-<<<<<<< HEAD
- - Create a Custom Channel Type "Partnership Programs"
- - Populate the System with Channels of the Type.
- - For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
-   Partner's information, including address, shipping details, names of contact persons, etc., Service Provided 
-   (details on the Services) and Customers Attracted (basic Customer information including contract prolongation, 
-   additional services, total money paid, etc.).* 
-
-Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
-appropriate work-flows and reports.*
-=======
 - Create a Custom Channel Type "Partnership Programs"
 
 - Populate the System with Channels of the Type.
@@ -379,7 +352,6 @@ appropriate work-flows and reports.*
 
 Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
 appropriate work-flows and reports.
->>>>>>> patch-2
 
 Example 3
 """""""""""""""""""""""
@@ -388,17 +360,6 @@ We own a furniture retail outlet. From time to time, people come in and out wond
 We have decided to run a research and find out how many of those will become our customers and how they have learned 
 about our shop. 
 
-<<<<<<< HEAD
- - Create a B2B type Channel for our shop (by the way, these may be several shops)
-
- - Assign this Channel Entity "Leads"
-      
- - Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you 
-   here?" question.
-
-Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily 
-collect, process and monitor it.
-=======
 - Create a B2B type Channel for our shop (by the way, these may be several shops)
 
 - Assign this Channel Entity "Leads"
@@ -407,4 +368,3 @@ collect, process and monitor it.
 
 Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily collect,
 process and monitor it.
->>>>>>> patch-2
