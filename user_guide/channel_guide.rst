@@ -96,7 +96,7 @@ drill-down marketing capabilities. Its natural flexibility and scalability help 
 business. And yes, OroCRM has got an answer to the multiple sales&customer source challenge. 
 This is what we call a *Multiple Channels Functionality*.
 
-.. important:: With OroCRM you can create any number of Channels to collect your business-specific data for further 
+.. caution:: With OroCRM you can create any number of Channels to collect your business-specific data for further 
    processing in the system.
 
 You can `create </user_guide/channel_guide.rst#creating-a-channel>`_ a specific Channel for each of the outlets and 
@@ -302,13 +302,13 @@ action buttons:
   
 * |BDelete| button will delete the Channel. 
 
-.. important:: Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED. 
+.. caution:: Once a Channel has been deleted ALL THE RELEVANT DATA WILL BE DELETED. 
 
 * |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel 
   (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but details you have already 
    defined will displayed
 
-.. important:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
+.. caution:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
 
 Editing Entities from a Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
