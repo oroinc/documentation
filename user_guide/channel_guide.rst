@@ -349,7 +349,9 @@ are worth working on with, what are our gains and if the customers attracted fro
 additional services.
 
 - Create a Custom Channel Type "Partnership Programs"
+
 - Populate the System with Channels of the Type.
+
 - For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
    Partner's information, including address, shipping details, names of contact persons, etc., Service Provided 
    (details on the Services) and Customers Attracted (basic Customer information including contract prolongation, 
@@ -374,5 +376,3 @@ about our shop.
 
 Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily 
 collect, process and monitor it.
-
-patch-check
