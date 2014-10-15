@@ -331,7 +331,7 @@ Example 1
 We sell flowers, toys and souvenirs at several Magento stores. We want to keep track of our customers (especially the 
 ones who buy things from different shops) and to review how sales vary between different shops of a kind.
 
-- Create Magento channels that correspond to our shop 
+ - Create Magento channels that correspond to our shop 
 
 - Fill it with Entities that correspond to Customers, Shopping Carts and Sales
 
@@ -374,3 +374,5 @@ about our shop.
 
 Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily 
 collect, process and monitor it.
+
+patch-check
