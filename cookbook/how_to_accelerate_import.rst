@@ -104,7 +104,7 @@ Skip Import File Validation
 
 During regular import operation, validation process is performed twice: first, during the validation itself and then
 before saving imported entities (invalid entities will not be saved to the DB). Initial validation can be skipped and
-import can be performed without it. To do so, start import command in no interaction mode with tion
+import can be performed without it. To do so, start import command in no interaction mode with option
 ``--no-interaction``:
 
 .. code-block:: bash
