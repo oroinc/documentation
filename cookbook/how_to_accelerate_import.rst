@@ -3,13 +3,13 @@
     single: Import/Export; Acceleration
 
 
-How to accelerate import
+How to Accelerate Import
 ========================
 
 This article contains several recommendation about import process acceleration.
 
 
-Make sure xDebug is disabled
+Make Sure xdebug is Disabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 xDebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
@@ -28,8 +28,8 @@ To disable it, a developer has to remove or comment inclusion of xDebug library 
 php.ini).
 
 
-Run import operation from command line
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Run import Operation from the Command Line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Import from UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
 or millions of entities, a command line is your best choice. OroPlatform provides a CLI command "oro:import:csv"
@@ -42,13 +42,13 @@ that allows import from specified CSV file.
      oro:import:csv [--validation-processor="..."] [--processor="..."] file
 
     Arguments:
-     file                    File name from which to import the CSV data
+     file                    File name, to import CSV data from
 
     Options:
      --validation-processor  Name of the processor for the entity data validation contained in the CSV
      --processor             Name of the processor for the entity data contained in the CSV
 
-Here is small example of it's usage.
+Here is a small example of its usage:
 
 .. code-block:: bash
 
@@ -88,24 +88,24 @@ Here is small example of it's usage.
     File was successfully imported.
 
 
-Perform import in prod environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Perform Import in the prod Environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default environment for CLI is dev, so application stores lots of data that usually unnecessary for real usage - so,
-it will be better and faster to perform import in prod environment by adding ``--env=prod`` option.
+Default environment for CLI is dev, so application stores lots of data generally not required for real-life usage. Thus,
+import in prod environment can be performed better and faster with ``--env=prod`` option added.
 
 .. code-block:: bash
 
     $ php app/console oro:import:csv ~/Contact_2000.csv --env=prod
 
 
-Skip import file validation
+Skip Import File Validation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During regular import operation validation process performs two times - first during validation itself, and second
-before saving of imported entities (invalid entities will not be save to DB). Initial validation can be skipped and
-import will be performed without it. To do that import command should be started in no interaction mode using
-option ``--no-interaction``:
+During regular import operation, validation process is performed twice: first, during the validation itself and then
+before saving imported entities (invalid entities will not be saved to the DB). Initial validation can be skipped and
+import can be performed without it. To do so, start import command in no interaction mode with tion
+``--no-interaction``:
 
 .. code-block:: bash
 
@@ -126,14 +126,14 @@ option ``--no-interaction``:
 
 .. hint::
 
-    This trick can be very useful if you need to perform import on regular basis (f.e. by cron using external source).
+    This trick can be very useful if you need to perform import on regular basis (e.g. by cron using external source).
 
 
-Disable optional listeners
+Disable Optional Listeners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OroPlatform provides ability to disable some event listeners during command execution. Command
-``oro:platform:optional-listeners`` shows list of all such listeners:
+With OroPlatform you can disable some event listeners for the command execution. Command
+``oro:platform:optional-listeners`` shows the list of all such listeners:
 
 .. code-block:: bash
 
@@ -145,8 +145,8 @@ OroPlatform provides ability to disable some event listeners during command exec
       > oro_workflow.listener.process_collector
       > orocrm_magento.listener.customer_listener
 
-To disable these listeners multiple option ``--disabled-listeners`` can be used. Also option can receive value "all" -
-it will disable all optional listeners. Here is example:
+To disable these listeners, multiple option ``--disabled-listeners`` can be used. Also option can receive value "all" -
+it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
 
@@ -154,22 +154,22 @@ it will disable all optional listeners. Here is example:
 
 .. caution::
 
-    Remember that disabling of listeners in fact disables some part of backend functionality, so before using
-    ensure that it will not break anything. F.e. if listener ``oro_search.index_listener`` will be disabled then
-    imported entities will not be found through search (but it can be fixed with manual search reindexation using
-    ``oro:search:reindex`` command).
+    Remember that disabling listeners actually disables a part of backend functionality, so before using it
+    make sure the part is not required. E.g. if listener ``oro_search.index_listener`` is disabled then
+    imported entities will not be found by search (however, this may be worked around with manual search reindexation
+    using ``oro:search:reindex`` command).
 
 
-Write custom import strategy
+Write Custom Import Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OroPlatform provider default configurable strategy
+OroPlatform provides a default configurable strategy
 ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy`` that automatically handles
 field types, relations etc. However, all this functionality really slows down import process and might perform
-operations and request that useless in some specific case.
+operations and requests meaningless for some specific cases.
 
-To solve this issue developer can implement custom strategy that will do only required actions and nothing more.
-Following example shows services that should be created to add new strategy to import:
+To solve this issue, a developer can implement a custom strategy to perform required actions only.
+The following example shows services that should be created to add a new import strategy:
 
 .. code-block:: yaml
 
