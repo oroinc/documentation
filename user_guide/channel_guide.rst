@@ -172,7 +172,7 @@ have been assigned to.
 
   
 Entities are managed in the "Entities" section or tab that you will see when 
-`Creating </user_guide/channel_guide.rst#creating-a-channel>`_  
+`Creating </user_guide/channel_guide.rst#creating-a-channel>`_
 or `Editing  </user_guide/channel_guide.rst#editing-a-channel>`_ a Channel. 
 
 .. note:: *Entities section and tab duplicate each other. This provides for convenience of Entity management for both 
@@ -361,7 +361,7 @@ additional services.
 - For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
   including address, shipping details, names of contact persons, etc., Service Provided (details 
   on the Services) and Customers Attracted (basic Customer information including contract prolongation, additional 
-  services, total money paid, etc.). 
+  services, total money paid, etc.).
 
 Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
 appropriate work-flows and reports.
