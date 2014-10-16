@@ -306,7 +306,7 @@ action buttons:
 
 * |BEdit| button will open Edit page that is very similar to the page you used to Create a Channel 
   (See `Create a Channel </user_guide/channel_guide.rst#creating-a-channel>`_ section), but details you have already 
-  defined will displayed
+  defined will be displayed
 
 .. caution:: You cannot change Channel Type if data from the Channel has been uploaded into the system at least once
 
