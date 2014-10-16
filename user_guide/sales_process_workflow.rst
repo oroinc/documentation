@@ -47,10 +47,10 @@ Sales Process Workflow
 .. |BSendEm| image:: ./img/buttons/BSendEm.png
    :align: middle
 
-.. |LeadCrMF| image:: .\img\sales_process_workflow\Screenshots\LeadCrMF.png
+.. |LeadCrMF| image:: ./img/sales_process_workflow/Screenshots/LeadCrMF.png
    :width: 50 %
 
-.. |OppCrMF| image:: .\img\sales_process_workflow\Screenshots\OppCrMF.png
+.. |OppCrMF| image:: ./img/sales_process_workflow/Screenshots/OppCrMF.png
    :width: 50 %
 
 What Sales Processes are About
