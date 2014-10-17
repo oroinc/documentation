@@ -85,7 +85,7 @@ Sales Process Workflow
 .. |OppCrMF| image:: ./img/sales_process_workflow/Screenshots/OppCrMF.png
    :width: 50 %
 
-.. |SW_diag| image:: ./img/sales_process_workflow/Screenshots/SWdiag.png
+.. |SWdiag| image:: ./img/sales_process_workflow/Screenshots/SWdiag.png
    :width: 100 %
 
 .. |QualifyTab| image:: ./img/sales_process_workflow/Screenshots/QualifyTab.png
