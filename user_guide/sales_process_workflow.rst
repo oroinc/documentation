@@ -85,7 +85,7 @@ Sales Process Workflow
 .. |OppCrMF| image:: ./img/sales_process_workflow/Screenshots/OppCrMF.png
    :width: 50 %
 
-.. |SW_diag| image:: ./img/sales_process_workflow/Screenshots/SW_diag.png
+.. |SW_diag| image:: ./img/sales_process_workflow/Screenshots/SWdiag.png
    :width: 100 %
 
 .. |QualifyTab| image:: ./img/sales_process_workflow/Screenshots/QualifyTab.png
@@ -578,7 +578,7 @@ Sales Process Workflow Diagram
 The workflow entities are Leads and Opportunities. It is rather a see-through workflow that provides for consistent and
 structured pre-sales and Sales Process.
 
-|SW_diag|
+|SWdiag|
 
 1. You can **Start** a workflow from a New Lead.
 
