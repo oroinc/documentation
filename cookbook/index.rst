@@ -14,6 +14,7 @@ This book contains list of most regularly used solutions in Oro Platform.
     how_to_add_an_extension_to_oro_marketplace
     how_to_pass_request_parameter_to_grid
     user_custom_validation_constraints
+    how_to_accelerate_import
     faq
 
 TODO List
