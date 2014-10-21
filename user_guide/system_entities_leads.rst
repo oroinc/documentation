@@ -31,8 +31,6 @@ System Entities. Leads
 .. |BSendEm| image:: ./img/buttons/BSendEm.png
    :align: middle
 
-.. |LeadCrMF| image:: ./img/system_entities_leads/Screenshots/LeadCrMF.png
-   :width: 50 %
 
 
 What is a Lead Entity
