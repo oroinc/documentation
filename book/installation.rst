@@ -184,7 +184,7 @@ The basic virtual host configuration for **Apache2** looks like this:
 
 If you are using **Nginx** as webserver your virtual host configuration should look like this:
 
-.. code-block:: apache
+.. code-block:: nginx
 
     server {
         server_name bap.tutorial;
@@ -203,8 +203,8 @@ If you are using **Nginx** as webserver your virtual host configuration should l
             fastcgi_param HTTPS off;
         }
 
-        error_log  /var/log/nginx/platform_application_error.log
-        access_log /var/log/nginx/platform_application_access.log
+        error_log  /var/log/nginx/platform_application_error.log;
+        access_log /var/log/nginx/platform_application_access.log;
     }
 
 .. note::
@@ -308,8 +308,8 @@ ways: visit the installation wizard using a web browser, or run the
 
    .. tip::
 
-       Normally, the installation process terminates if it detects an already-existing 
-       installation. Use the ``--force`` option to overwrite an existing installation, 
+       Normally, the installation process terminates if it detects an already-existing
+       installation. Use the ``--force`` option to overwrite an existing installation,
        e.g. during your development process.
 
 .. tip::
