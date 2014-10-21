@@ -56,12 +56,12 @@ Channels.
 
 As Lead is an embedded Entity, OroCRM provides for some ready-to-use capabilities related to its instances.
 
-Once there is at least one Channel assigned a *Lead* entity (B2B or custom channel):
+Once there is at least one Channel assigned a *Lead* entity (a B2B or custom channel):
 
 - You can manage Lead instances from the devoted 
-  `Sales/Lead tab </user_guide/system_entities_leads.rst#manage-leads-from-sales/leads-tab>`_ in the OroCRM UI
+  `Sales/Leads tab </user_guide/system_entities_leads.rst#manage-leads-from-salesleads-tab>`_ in the OroCRM UI
 
-- You can use Lead instances' details to perform 
+- You can use details of the Lead instances to perform 
   `Actions </user_guide/system_entities_leads.rst#actions-with-leads>`_, such as an embedded *Send E-mail* 
   and *Add note*
 
@@ -69,18 +69,21 @@ Once there is at least one Channel assigned a *Lead* entity (B2B or custom chann
   `Reports </user_guide/system_entities_leads.rst#reports-with-leads>`_
 
 - You can refer to the Lead instances within a devoted B2B 
-  `Sales Process Workflow </user_guide/sales_process_workflow.rst>`_
+  `Sales Processes Workflow </user_guide/sales_processes_workflow.rst#sales-processes-workflow>`_ and customized 
+  `Workflows </user_guide/workflow_management.rst#workflow-management>`_
 
  
 Manage Leads from Sales/Leads Tab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Once there is at least one Channel assigned a *Lead* entity (B2B or custom channel) *Leads* section will appear in the
+Once there is at least one Channel assigned a *Lead* entity (B2B or custom channel), *Leads* section will appear in the
 *Sales* menu. 
 
 .. hint:: If you cannot see the section, there may be still no Channels with a *Lead* Entity assigned to them in the
-          System. Please see the `Channel Guide </user_guide/channel_guide.rst>`_ and add necessary channels.
+          System. Please see the `Channel Guide </user_guide/channel_guide.rst#channel-guide>`_ and add necessary 
+          channels.
 
           If the problem persists, you may not have User-rights to View\Edit the functionality.
+
           Please address you system administrator.
 
 From here you can:
@@ -96,7 +99,7 @@ From here you can:
 Create Leads
 """"""""""""
 
-Click |BCrL| button to manually input the Lead instance's details.
+Click |BCrL| button to manually input the details of the Lead instance.
 The form specified for the Channel's Lead instances will appear.
 
 .. hint:: You can also create a Lead from the *System -->Sales Processes* page.
@@ -251,7 +254,7 @@ For individual changes, the most convenient way is to go the Leads page and edit
 
 .. hint:: You can use *Filters* functionality to simplify the search for the necessary Lead instance. 
 
-- The Lead instance's page will emerge.
+- The page of the Lead instance will emerge.
 
 - Click |BDelete| button to delete this Lead instance from the System.
 
@@ -295,13 +298,13 @@ To simplify your work with the Leads, there is an Add Note action.
 
 .. hint:: You can use *Filters* functionality to simplify the search for the necessary Lead instance. 
 
-- The Lead instance's page will emerge. 
+- The page of the Lead instance will emerge. 
 
 - Click |BAddNote| button in the top right corner of the page 
 
 - Fill the emerged free text form.
 
-The text that will appear in the Lead instance's *Additional Information* section.
+The text that will appear in the *Additional Information* section for the Lead instance.
 
 *Send Email*
 """"""""""""
@@ -311,11 +314,11 @@ In order to send an Email pre-filled with the details of specific Lead instance:
 
 .. hint:: You can use *Filters* functionality to simplify the search for the necessary Lead instance. 
 
-- The Lead instance's page will emerge. 
+- The page of the Lead instance will emerge. 
 
 - Click |BSendEm| button in the top right corner of the page
 
-- E-mail template already filled with the Lead instance's details will appear. 
+- E-mail template already filled with the details of the Lead instance will appear. 
 
 - You only need to fill the Subject and Body and click *Send*
 
@@ -324,14 +327,15 @@ Reports with Leads
 OroCRM supports a very flexible functionality for creation of drill-down reports for any entities populated into the 
 OroCRM.
 
-OroCRM 4.1 comes with two ready to use reports related to Lead instances.
+OroCRM 4.1 comes with two ready-to-use reports related to Lead instances.
 - 
-
 
 *Leads by Date*
 """""""""""""""
 This is a simple but useful report with which you can see how many Lead instances were created at a specific date for 
 all of your Channels.
+
+To see the report go to *Reports and Segments --> Reports --> Leads --> Leads By Date*
 
 It shows:
 - the date Lead instances were created 
@@ -372,4 +376,4 @@ customers. Currently they are your Leads.*
 participant.*
 
 *Now you can access and process their information, use it for notes and E-mails, view it in the reports and use it for
-the Sales Process workflow.* 
+the Sales Processes workflow.* 
