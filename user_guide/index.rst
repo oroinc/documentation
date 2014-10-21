@@ -5,6 +5,7 @@ End user oriented documentation that explains how to administer and configure ap
 
 .. toctree::
     workflow_management
+    system_entities_leads
 
 TODO List
 ---------
