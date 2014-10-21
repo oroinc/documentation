@@ -109,7 +109,7 @@ The form contains mandatory system fields, optional system fields and custom fie
 
 
 *Mandatory System Fields for Leads*
-**********************************
+***********************************
 
 Regardless the Lead entity settings, the following fields are mandatory and **must** be defined.
 
