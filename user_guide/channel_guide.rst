@@ -178,7 +178,7 @@ integration* link to get to the form.
 The following fields should be specified:
 
 .. list-table:: **System Channel Entities**
-   :widths: 10 30
+   :widths: 12 30
    :header-rows: 1
 
    * - Field
@@ -192,7 +192,9 @@ The following fields should be specified:
      - Mandatory field. An http URL string to the WSDL of the SOAP-based service
      
    * - **SOAP WSDL URL***
+   
        **SOAP API User***
+       
      - Mandatory fields. SOAP API credentials
      
    * - **WS-I Compliance**
@@ -207,7 +209,7 @@ At this point you can click |BCheckCon| button, to check is the settings you hav
 Once the connection details have been verified the next fields will be filled with default settings.
 
 .. list-table:: **System Channel Entities (continued)**
-   :widths: 10 30
+   :widths: 12 30
    :header-rows: 1
 
    * - Field
