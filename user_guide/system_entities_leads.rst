@@ -190,7 +190,7 @@ details, data on opportunities and purchases from all Channels, etc.).
             (namely *Country*, *City* and *Zip\postal code* **must** be defined)
 
 *Custom Fields for Leads*
-************************
+*************************
 
 All the Custom fields populated into the System and available for the User will be displayed in the *Additional*
 section (to create a custom field go to *System --> Entities --> Entity Management --> Create Field*).
