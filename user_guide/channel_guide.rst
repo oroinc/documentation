@@ -22,7 +22,12 @@ Channel Guide
 .. |BDelete| image:: ./img/channel_guide/Buttons/BDelete.png
    :align: middle
    
+.. |BCheckCon| image:: ./img/channel_guide/Buttons/BCheckCon.png
+
 .. |BAdd| image:: ./img/channel_guide/Buttons/BAdd.png
+   :align: middle
+
+.. |BSSyn| image:: ./img/channel_guide/Buttons/BSSyn.png
    :align: middle
 
 .. |IcDelete| image:: ./img/channel_guide/Buttons/IcDelete.png
@@ -81,7 +86,7 @@ Channel Guide
 
 
 
-Why We Need Channels
+Why You Need Channels
 --------------------------
 
 Whether you run a multi-million global business or own a small toy shop in the middle of nowhere, the two vital 
@@ -123,6 +128,9 @@ A Channel can be created with several simple steps:
 1. Go to Channels
 
 2. `Define Basic Channel Details </user_guide/channel_guide.rst#2-define-basic-channel-details>`_
+  
+  2a.  `Define </user_guide/channel_guide.rst#2a-define-integration-details-for-a-magento-channel>`_  Integration 
+  details for a *Magento* Channel
 
 3. `Fill the Channel with Entities </user_guide/channel_guide.rst#3-fill-the-channel-with-entities>`_
 
@@ -161,6 +169,61 @@ The tree obligatory fields (marked with "*" sign) **must** be defined:
 - **Name** (2): a name of the channel that will be displayed on the screen (and thus used to manage the Channel).
 
 - **Channel Type**: a drop-down, where you can choose a channel type that is more suitable for the Channel created.
+
+2a. Define Integration Details for a Magento Channel
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+One you have chose a Channel Type = *Magento*, a new mandatory field **Integration*** will appear. Click *Configure
+integration* link to get to the form.
+
+The following fields should be specified:
+
+.. list-table:: **System Channel Entities**
+   :widths: 10 30
+   :header-rows: 1
+
+   * - Field
+     - Description
+     
+   * - **Name***
+     - Configuration name. Mandatory field. Will be used to reffer to the configuration within the system (edit, assign,
+       etc.)
+ 
+   * - **SOAP WSDL URL***
+     - Mandatory field. An http URL string to the WSDL of the SOAP-based service
+     
+   * - **SOAP WSDL URL***
+       **SOAP API User***
+     - Mandatory fields. SOAP API credentials
+     
+   * - **WS-I Compliance**
+     - Optional flag. Defines whether the configuration meets the requirements of Web Services Interoperability 
+       Organization guidelines 
+   
+   * - Sync start date
+     - Mandatory field The date to start the synchronization with; data uploaded into the Magento account since the 
+       date, will be added to OroCRM and can be processed therein.
+
+At this point you can click |BCheckCon| button, to check is the settings you have defined above are correct.
+Once the connection details have been verified the next fields will be filled with default settings.
+
+.. list-table:: **System Channel Entities (continued)**
+   :widths: 10 30
+   :header-rows: 1
+
+   * - Field
+     - Description
+     
+   * - **Website***
+     - Mandatory field. The list of all the Websites available for the shop. *All Websites* option is chosen by default.
+       You can edit the field value and choose one of the Websites available.
+       Click "Sync website list" link if the list of Websites is outdated.
+       
+   * - **Admin url**
+     - Optional field. An http link to the Administrator panel of the specified Magento store.
+     
+   * - **Default owner***
+     - Mandatory field. Specifies Users that can manage the configuration.
+       
 
 3. Fill the Channel with Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -258,7 +321,7 @@ brief description of their content.
        details, one-time and total credited, paid and taxed amounts, feed-backs, etc.   
 
 Custom Entities
-"""""""""""""""""""""""
+"""""""""""""""
 Custom Entities are created for specific Customer needs and can contain any required fields to be filled and processed 
 by the System. For more details on Customer entities please kindly see Entity Management Guide (TBD). 
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
@@ -286,10 +349,10 @@ your Channel will be saved in the system.
 
 
 Further Actions
---------------------------
+---------------
 
 Editing/Deleting a Channel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Once a Channel has been created it will appear in the Channel list. Now you can Edit your Channel details. 
 Click the Channel name in the list. The Channel details list will appear. In the top right corner you will see possible 
 action buttons:
@@ -324,33 +387,76 @@ details. Click |IcEdit| icon to change the Entity.
 
 .. note:: If you don't have necessary permissions, you will see a browser-specific message on access denial. 
 
-Channels Usage
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Synchronizing a Magento Channel Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+As a matter of case, Oro Platform provides for integration of OroCRM with different third-party systems and integration 
+can be done for different Channels in the course of customization.
+However, OroCRM provide embedded integration capabilities for Magento Channels.
+
+Once you have created a Magento type channel and 
+`defined </user_guide/channel_guide.rst#2a-define-integration-details-for-a-magento-channel>`_  its integration details
+information from Magento will be uploaded into OroCRM automatically subject to a predefined schedule (once an hour by 
+default). 
+You can enable two-way synchronization settings and manually start synchronization.
+
+Two Way Synchronization
+"""""""""""""""""""""""
+In order to enable two-way synchronization:
+
+- Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
+
+- Click on its Integration link
+
+- Go to *Synchronization Settings* tab of the emerged page
+
+- Check *Enable Two Way Sync* box
+
+- Define the priority in case of conflicts between the data (e.g. the same customer was edited from OroCRM and from 
+  Magento:
+   
+  - Remote wins: Magento settings will be saved in Magento and loaded to OroCRM
+  
+  - Local wins: OroCRM settings will be saved in OroCRM and loaded to Magento  
+
+Start Synchronization Manually
+******************************
+In order to start the synchronization manually:
+
+- Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
+
+- Click on its Integration link
+
+- Click |BSSyn| button. *A sync job has been added to the queue. Check progress.* note will appear. 
+
+The data is being synchronized. You can click *Check progress* link to see the synchronization status.
+
+Channels Usage Examples
+^^^^^^^^^^^^^^^^^^^^^^^
 Once the Channels have been created, data for their Entity properties can be loaded into the System and processed 
 therein. Speaking less IT-language it means that now you can add info from any kind of your retail spots to the OroCRM 
 and gain unified one-point access to analyse and monitor this data (which of course, will no way limit the drill-down 
 capabilities if you want to focus on one specific Channel.
 
 Example 1
-"""""""""""""""""""""""
+"""""""""
     
-We sell flowers, toys and souvenirs at several Magento stores. We want to keep track of our customers (especially the 
-ones who buy things from different shops) and to review how sales vary between different shops of a kind.
+You sell flowers, toys and souvenirs at several Magento stores. You want to keep track of our customers (especially the 
+ones who buy things from different shops) and to review how sales go.
 
 - Create Magento channels that correspond to our shop 
 
 - Fill it with Entities that correspond to Customers, Shopping Carts and Sales
 
-- Define specific details we want to know for each Entity type
+- Define specific details you want to know for each Entity type
 
-Now for each instance of the entity theses details can be loaded into the system and processed there. This means we 
-can monitor customers, regardless  of the shop, can make reports on on the activity and even assess how many things 
-from the cart were actually bought.
+Now for each instance of the entity theses details can be loaded into the system and processed there. This means you 
+can monitor customers, regardless  of the shop, can make reports on on the activity and assess how many things 
+from the cart were actually bought and push the sales with timely customer-focused communications.
  
 Example 2
-"""""""""""""""""""""""
+"""""""""
     
-We sell after-sales support services to customers of our partners and want to keep track of them, to know what partner 
+You sell after-sales support services to customers of our partners and want to keep track of them, to know what partner 
 are worth working on with, what are our gains and if the customers attracted from the partners address us for 
 additional services.
 
@@ -368,17 +474,17 @@ appropriate work-flows and reports.
 
 Example 3
 """""""""""""""""""""""
-   
-We own a furniture retail outlet. From time to time, people come in and out wondering about the things we can make. 
-We have decided to run a research and find out how many of those will become our customers and how they have learned 
+
+You own a furniture retail outlet. From time to time, people come in and out wondering about the things you can make. 
+You have decided to run a research and find out how many of those will become our customers and how they have learned 
 about our shop. 
 
 - Create a B2B type Channel for our shop (by the way, these may be several shops)
 
-- Assign this Channel Entity "Leads"
+- Assign this Channel Entity "Leads" (embedded entity sharpened for analyses of potential customers)
       
 - Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you 
   here?" question.
 
-Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, we can easily collect,
-process and monitor it.
+Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, you can easily 
+collect, process and monitor it.
