@@ -1,3 +1,5 @@
+.. _user-guide-system-channel-entities-opportunities
+
 System Channel Entities. Opportunities
 =======================================
 
