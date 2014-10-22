@@ -1,3 +1,5 @@
+.. _user-guide-system-channel-entities-leads:
+
 System Channel Entities. Leads
 ==============================
 
