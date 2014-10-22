@@ -1,5 +1,5 @@
 Sales Processes Workflow
-======================
+========================
 
 .. |B01| image:: ./img/buttons/B01.png
    :align: middle
