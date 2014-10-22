@@ -26,15 +26,10 @@ TODO List
 ---------
 
 * Security
-* Configuration
-* Jobs Processing
-    * Cron Job
-    * Job Queue
 * Entity Structure and Data Management
     * Additional Annotations Review
     * Metadata and Entity Config
     * Custom Entities and Fields
-    * Data Audit
 * Web Services API
 * User Interface
     * Themes
