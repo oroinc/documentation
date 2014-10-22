@@ -6,6 +6,7 @@ End user oriented documentation that explains how to administer and configure ap
 .. toctree::
     workflow_management
     channel_guide
+    glossary
 
 TODO List
 ---------
