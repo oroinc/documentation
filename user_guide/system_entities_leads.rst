@@ -1,3 +1,4 @@
+
 .. _user-guide-system-channel-entities-leads:
 
 System Channel Entities. Leads
@@ -22,8 +23,8 @@ any arrangements. Once a probability of making a deal with a lead becomes high, 
 
 What You Can Do with Lead Instances
 ------------------------------------
-Lead is one of `System Channel Entities </user_guide/channel_guide.rst#system-channel-entities>`_ for B2B 
-Channels.
+Lead is one of \:ref:`System Channel Entities <user-guide-channel-guide-system-channel-entities>`\ for :term:`B2B 
+Channels <B2B Channel>`.
 
 As Lead is an embedded Entity, OroCRM provides for some ready-to-use capabilities related to its instances.
 
@@ -40,8 +41,8 @@ Once there is at least one Channel assigned a *Lead* entity (a :term:`B2B <B2B C
   :ref:`Reports <user-guide-system-entities-reports-with-leads>`
 
 - You can refer to the Lead instances within a devoted B2B 
-  `Sales Processes Workflow </user_guide/sales_processes_workflow.rst#sales-processes-workflow>`_ and customized 
-  `Workflows </user_guide/workflow_management.rst#workflow-management>`_
+  \:ref:`Sales Processes Workflow <-user-guide-sales-processes-workflow>` and customized 
+  \:ref:`Workflows <user-guide-workflow-management>`\
 
   
 .. _user-guide-system-entities-leads-salesleads-tab:
@@ -54,7 +55,7 @@ Once there is at least one Channel assigned a *Lead* entity (B2B or custom chann
 .. hint:: 
 
       If you cannot see the section, there may be still no Channels with a *Lead* Entity assigned to them in the
-      System. Please see the `Channel Guide </user_guide/channel_guide.rst#channel-guide>`_ and add necessary 
+      System. Please see the \:ref:`Channel Guide <user-guide-channel-guide>`\ and add necessary 
       channels.
 
       If the problem persists, you may not have User-rights to View\Edit the functionality.
@@ -77,13 +78,13 @@ From here you can:
 Create Leads
 """"""""""""
 
-Click |BCrL| button to manually input the details of the Lead instance.
+Click :kbd:`Create Lead` button to manually input the details of the Lead instance.
 The form specified for the Channel's Lead instances will appear.
 
 .. hint:: 
 
       You can also create a Lead from the *System -->Sales Processes* page.
-      See `Sales Processes </user_guide/sales_process_workflow.rst#start-a-sales-process-from-lead>`_ for details.
+      See \:ref:`Sales Processes <user-guide-sales-process-workflow-start-from-lead>`\ for details.
 
 The form contains mandatory system fields, optional system fields and custom fields (if any).
 
@@ -182,7 +183,7 @@ All the Custom fields populated into the System and available for the User will 
 section (to create a custom field go to *System --> Entities --> Entity Management --> Create Field*).
 
 
-Once you have filled all the mandatory and desired fields, click |Bsc| button and you will get to the page of the Lead
+Once you have filled all the mandatory and desired fields, click :kbd:`Save and Close` button and you will get to the page of the Lead
 instance created. The Lead will also appear in the grid.
 
 
@@ -251,14 +252,14 @@ For individual changes, the most convenient way is to go the Leads page and edit
 
 - The page of the Lead instance will emerge.
 
-- Click |BDelete| button to delete this Lead instance from the System.
+- Click :kbd:`Delete` button to delete this Lead instance from the System.
 
-- Click |BEdit| button to edit the details.
+- Click :kbd:`Edit` button to edit the details.
 
 - *Create* form with previously defined values will appear. Re-define the values you need to change.
   This is similar to :ref:`creating a Lead <user-guide-system-entities-leads-salesleads-tab-create-leads>`
 
-- Once you have done all the necessary changes, click |Bsc| button and you will get back to the Leads grid.
+- Once you have done all the necessary changes, click :kbd:`Save and Close` button and you will get back to the Leads grid.
 
 Details of the Lead instance will be updated.
 
@@ -299,7 +300,7 @@ To simplify your work with the Leads, there is an Add Note action.
 
 - The page of the Lead instance will emerge. 
 
-- Click |BAddNote| button in the top right corner of the page 
+- Click :kbd:`Add Note` button in the top right corner of the page 
 
 - Fill the emerged free text form. The text will appear in the *Additional Information* section for the Lead instance.
 
@@ -316,7 +317,7 @@ In order to send an Email pre-filled with the details of specific Lead instance:
 
 - The page of the Lead instance will emerge. 
 
-- Click |BSendEm| button in the top right corner of the page
+- Click :kbd:`Send Email` button in the top right corner of the page
 
 - E-mail template already filled with the details of the Lead instance will appear. 
 
@@ -382,8 +383,8 @@ The workflow defines that each instance of a Lead entity may be:
 
 - Disqualified (and Reopened later if applicable).
 
-The full workflow is described in a `separate 
-article </user_guide/sales_process_workflow.rst#sales-processes-workflow>`_
+The full workflow is described in a \:ref:`separate 
+article <user-guide-sales-processes-workflow>`\
 
 *Leads Example*
 ---------------
@@ -398,18 +399,6 @@ participant.*
 the Sales Processes workflow.* 
 
 
-.. |Bsc| image:: ./img/buttons/Bsc.png
-   :align: middle
-
-.. |BDelete| image:: ./img/buttons/BDelete.png
-   :align: middle
-
-.. |BEdit| image:: ./img/buttons/BEdit.png
-   :align: middle
-
-.. |BCrL| image:: ./img/buttons/BCrL.png
-   :align: middle
-
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
 
@@ -422,8 +411,3 @@ the Sales Processes workflow.*
 .. |Bplus| image:: ./img/buttons/Bplus.png
    :align: middle
 
-.. |BAddNote| image:: ./img/buttons/BAddNote.png
-   :align: middle
-
-.. |BSendEm| image:: ./img/buttons/BSendEm.png
-   :align: middle
