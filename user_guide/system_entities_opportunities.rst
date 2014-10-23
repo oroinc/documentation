@@ -1,7 +1,8 @@
-.. _user-guide-system-channel-entities-opportunities
 
-System Channel Entities. Opportunities
-=======================================
+.. _user-guide-system-channel-entities-opportunities:
+
+Opportunities Management Guide
+==============================
 
 
 What is an Opportunity Entity
@@ -18,14 +19,14 @@ One of such entities is an :term:`Opportunity`.
 Instances of an Opportunity entity are people or businesses that have significant interest, authority and 
 budget to purchase a product or service from you, for which a probability of making a deal is rather high.
 In other words, if you feel that a potential customer is rather likely to become your actual client, this is an 
-Opportunity. (If the probability of the future deal is low or undefined this is rather a
-`Lead </user_guide/system_entities_leads.rst#system-channel-entities-leads>`_ than an Opportunity
+Opportunity. (If the probability of the future deal is low or undefined this is rather a 
+\:ref:`Lead <user-guide-system-entities-leads>` than an Opportunity
 
 
 What You Can Do with Opportunity Instances
 ------------------------------------------
 
-Opportunity is one of `System Channel Entities </user_guide/channel_guide.rst#system-channel-entities>`_ for 
+Opportunity is one of \:ref:`System Channel Entities <user-guide-channel-guide-system-channel-entities>` for 
 :term:`B2B Channels <B2B Channel>`.
 
 As Opportunity is a pre-implemented entity, OroCRM provides for some ready-to-use capabilities related to its instances.
@@ -44,8 +45,8 @@ channel):
   :ref:`Reports <user-guide-system-entities-opportunities-reports-opportunities>`
 
 - You can refer to the Opportunity instances within a devoted B2B 
-  `Sales Processes Workflow </user_guide/sales_processes_workflow.rst#sales-processes-workflow>`_ and customized 
-  `Workflows </user_guide/workflow_management.rst#workflow-management>`_ 
+  \:ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>`\ and customized 
+  \:ref:`Workflows <user-guide-workflow-management>`\ 
 
   
 .. _user-guide-system-entities-opportunities-salestab:
@@ -59,8 +60,7 @@ appear in the *Sales* menu.
 .. hint:: 
       
       If you cannot see the section, there may be still no Channels with an *Opportunity* Entity assigned to them 
-      in the System. Please see the `Channel Guide </user_guide/channel_guide.rst#channel-guide>`_ and add necessary
-      channels.
+      in the System. Please see the \:ref:`Channel Guide <user-guide-channel-guide>` and add necessary channels.
 
       If the problem persists, you may not have User-rights to View\Edit the functionality.
 
@@ -83,13 +83,13 @@ From here you can:
 Create Opportunities
 """"""""""""""""""""
 
-Click |BCrO| button to manually input the details of the Opportunity instance.
+Click :kbd:`Create Opportunity` button to manually input the details of the Opportunity instance.
 The form specified for the Channel's Opportunity instances will appear.
 
 .. hint:: 
       
       You can also create a Opportunity from the *System -->Sales Processes* page.
-      See `Sales Processes </user_guide/sales_process_workflow.rst#start-a-sales-process-from-opportunity>`_ for 
+      See \:ref:`Sales Processes <user-guide-sales-process-workflow-start-from-opportunity>`\ for 
       details.
 
 The form contains mandatory system fields, optional system fields and custom fields (if any).
@@ -179,7 +179,7 @@ Custom Fields for Opportunities
 All the Custom fields populated into the System and available for the User will be displayed in the *Additional*
 section (to create a custom field go to *System --> Entities --> Entity Management --> Create Field*) .
 
-Once you have filled all the mandatory and desired fields, click |Bsc| button and you will get to the page of the
+Once you have filled all the mandatory and desired fields, click :kbd:`Save and Close` button and you will get to the page of the
 Opportunity created. The Opportunity will also appear in the Opportunities grid.
 
 
@@ -191,9 +191,9 @@ Import Opportunities
 If you want to upload multiple Opportunity instances manually or from a third-party enterprise application, it is worth 
 considering our *Import* option. OroCRM can process .scv files that correspond to the Data template.
 
-Click |Bdropdown| on the **Import** button in the top right corner of the *Sales\Opportunities* page. Choose *Download 
-Data Template*. Prepare a .csv file that corresponds the template and click *Import* button, choose the .csv file for
-import, carefully read through the submission form and confirm the import.
+Click |Bdropdown| on the :kbd:`Import` button in the top right corner of the *Sales\Opportunities* page. Choose 
+:kbd:`Download Data Template`. Prepare a .csv file that corresponds the template and click *Import* button, choose the 
+.csv file for import, carefully read through the submission form and confirm the import.
 
 .. caution:: 
       
@@ -210,6 +210,7 @@ Once import is over the new Opportunity instances will appear in the grid.
       match (e.g. one from a third-party application and one already in the system), the system will treat the 
       Opportunity instance creation, as update of an existing Opportunity instance.
 
+      
 .. _user-guide-system-entities-opportunities-salestab-export-opportunities:
 
 Export Opportunities
@@ -219,7 +220,7 @@ A functionality is provided to easily export a .csv file from the Opportunities 
 
 In order to export the .csv file:
 
-- Go to *Sales --> Opportunities* and click **Export** button. 
+- Go to *Sales --> Opportunities* and click :kbd:`Export` button. 
 
 - *"Export started. Please wait"* message will appear at the top of the screen.
 
@@ -258,13 +259,13 @@ Opportunity instance:
 
 As Opportunity makes a significant components of the Sales Process workflow, you cannot delete an Opportunity.
 
-- Click |BEdit| button to edit the details.
+- Click :kbd:`Edit` button to edit the details.
 
 - Re-define the values you need to change in the emerged *Create*-like form
   This is similar to 
   :ref:`creating a Opportunity <user-guide-system-entities-opportunities-salestab-create-opportunities>`
 
-- Once you have done all the necessary changes, click |Bsc| button and you will get back to the Opportunities grid.
+- Once you have done all the necessary changes, click :kbd:`Save and Close` button and you will get back to the Opportunities grid.
 
 - Details of the Opportunity instance will be updated.
 
@@ -303,7 +304,7 @@ To simplify your work with the Opportunities, there is an Add Note action.
 
 - The page of the Opportunity instance will emerge. 
 
-- Click |BAddNote| button in the top right corner of the page 
+- Click :kbd:`Add Note` button in the top right corner of the page 
 
 - Fill the emerged free text form. The text will appear in the *Additional Information* section of the 
   Opportunity instance.
@@ -322,7 +323,7 @@ Another useful action is *Add Attachment*.
 
 - The page of the Opportunity instance will emerge. 
 
-- Click |BAddAtt| button in the top right corner of the page.
+- Click :kbd:`Add Attachment` button in the top right corner of the page.
 
 - In the emerged form:
   
@@ -330,7 +331,7 @@ Another useful action is *Add Attachment*.
   
   - Leave a Comment (if needed)
   
-  - Define the Owner (efines what Users can view and manage this attachment)
+  - Define the Owner (defines what Users can view and manage this attachment)
     By default the Attachment Owner is set to the User that has created the Attachment.
   
 The attachment will be available from the *Additional Information/Attachments* section of the Opportunity instance.
@@ -350,7 +351,7 @@ In order to send an Email pre-filled with the details of specific Opportunity in
 
 - The page of the Opportunity instance will emerge. 
 
-- Click |BSendEm| button in the top right corner of the page
+- Click :kbd:`Send Email` button in the top right corner of the page
 
 - E-mail template already filled with the details of the Opportunity instance will appear. 
 
@@ -436,34 +437,37 @@ The workflow defines that each instance of a Opportunity entity may be:
 
 - Closed as Lost
 
-The full workflow is described in a `separate 
-article </user_guide/sales_process_workflow.rst#sales-processes-workflow>`_
+The full workflow is described in the \:ref:`Sales Processes Workflow 
+article <user-guide-sales-process-workflow>`\
 
-*Opportunities Example 1*
---------------------------
-*You went to a conference and met a manager of a store chain interested in your goods. You have exchanged contact 
+Opportunities Examples 
+
+
+1
+^
+
+You went to a conference and met a manager of a store chain interested in your goods. You have exchanged contact 
 details and the manager promised to provide a request for proposal in the nearest time. As a successful deal seems 
 rather likely, you have created an Opportunity instance for the company and tied it to the Contact instance that 
 contains contact details of the manager. You have also created a new Customer instance for this store chain and assigned
-the Opportunity instance to this Customer instance.* 
+the Opportunity instance to this Customer instance. 
+
 *Now you can easily access and process details of the Opportunity instance and related Contact and Customer instances, 
 use them for notes and E-mails, view in the reports, use for the further Sales Process workflow, etc.* 
 
-*Opportunities Example 2*
---------------------------
-*You have run an "Send SMS and Get a Discount" advertisement campaign, and created a number of 
-`Leads </user_guide/system_entities_leads.rst#leads-example>`_ . Initially one of the campaign participants addressed 
-you with a request for proposal. You have qualified the Lead and thus turned it into an opportunity.* 
-*You have also added the request proposal as an attachment.* 
+
+2
+^
+
+You have run an "Send SMS and Get a Discount" advertisement campaign, and created a number of Leads. Initially one of 
+the campaign participants addressed you with a request for proposal. You have qualified the Lead and thus turned it into
+an opportunity. 
+
+You have also added the request proposal as an attachment. 
+
 *Now you can access and process your potential customer's information, use it for notes and E-mails, view it in the 
 reports and use it for the further Sales Process workflow.* 
 
-
-.. |Bsc| image:: ./img/buttons/Bsc.png
-   :align: middle
-
-.. |BEdit| image:: ./img/buttons/BEdit.png
-   :align: middle
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
@@ -474,20 +478,5 @@ reports and use it for the further Sales Process workflow.*
 .. |BGotoPage| image:: ./img/buttons/BGotoPage.png
    :align: middle
 
-.. |BStartfO| image:: ./img/buttons/BStartfO.png
-   :align: middle
-
 .. |Bplus| image:: ./img/buttons/Bplus.png
-   :align: middle
-
-.. |BCrO| image:: ./img/buttons/BCrO.png
-   :align: middle
-
-.. |BAddNote| image:: ./img/buttons/BAddNote.png
-   :align: middle
-
-.. |BSendEm| image:: ./img/buttons/BSendEm.png
-   :align: middle
-   
-.. |BAddAtt| image:: ./img/buttons/BAddAtt.png
    :align: middle
