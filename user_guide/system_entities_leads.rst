@@ -1,8 +1,8 @@
 
 .. _user-guide-system-channel-entities-leads:
 
-System Channel Entities. Leads
-==============================
+Leads Management Guide
+======================
 
 
 What is a Lead Entity
@@ -386,14 +386,14 @@ The workflow defines that each instance of a Lead entity may be:
 The full workflow is described in a \:ref:`separate 
 article <user-guide-sales-processes-workflow>`\
 
-*Leads Example*
+Leads Example
 ---------------
-*You have run an "Send SMS and Get a Discount" advertisement campaign, and now you have personal and contact details of 
+You have run an "Send SMS and Get a Discount" advertisement campaign, and now you have personal and contact details of 
 the campaign participants. Supposedly, all of this people are interested in purchasing from you and may become your 
-customers. Currently they are your Leads.*
+customers. Currently they are your Leads.
 
-*You have created a B2B Channel and filled the system with Lead entities, each of which corresponds to one campaign 
-participant.*
+You have created a B2B Channel and filled the system with Lead entities, each of which corresponds to one campaign 
+participant.
 
 *Now you can access and process their information, use it for notes and E-mails, view it in the reports and use it for
 the Sales Processes workflow.* 
