@@ -1,8 +1,8 @@
 
 .. _user-guide-channel-guide:
 
-Channel Guide
-=============
+Channels Management Guide
+=========================
 
 
 What Channels Are and Why You Need Them
@@ -189,6 +189,9 @@ Entities are managed in the "Entities" section or tab that you will see when
 :ref:`Creating <user-guide-channel-guide-creating-a-channel>`
 or :ref:`Editing <user-guide-channel-guide-editingdeleting-a-channel>` a Channel. 
 
+
+
+.. _user-guide-channel-guide-system-channel-entities
 
 System Channel Entities
 """""""""""""""""""""""
