@@ -191,7 +191,7 @@ or :ref:`Editing <user-guide-channel-guide-editingdeleting-a-channel>` a Channel
 
 
 
-.. _user-guide-channel-guide-system-channel-entities
+.. _user-guide-channel-guide-system-channel-entities:
 
 System Channel Entities
 """""""""""""""""""""""
