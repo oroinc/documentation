@@ -58,7 +58,8 @@ These are just some examples:
 
 Channel instances correspond to different sources of potential and actual sales:
 
-- B2B Channels : off-line shops, retails outlets, marketing campaigns, etc.
+- B2B Channels : sources of business tp business or business to customer transactions, e.g. off-line shops, retails 
+  outlets, marketing campaigns, etc.
 
   Any B2B Channel instance can be assigned:
 
@@ -80,13 +81,12 @@ Channel instances correspond to different sources of potential and actual sales:
 
 - Custom Channels : create a type of Channel that corresponds to your needs and assign it dedicated instances.
 
-  For example, to keep track of your partnership programs, you can define a Channel Type "Partnership Program", the 
-  instances whereof will correspond to different partnership programs, and define that for each of them there should be
-  specified a list of Potential Customers and Items Sold, Discounts and Partners.
+  For example, to keep track of your partnership programs, you can define a Channel "Partnership Program" of Custom 
+  Channel type for each of the partners. For each such channel you can define the need to specify a list of Potential 
+  Customers and Items Sold, Discounts and Partners.
   It is reasonable to make Potential Customer a special entity with its own properties.
   As for the items sold, discounts and partners, subject to the amount of data to be processed and its detalization you 
   can allocate them into separate entities, or just provide as drop-downs in the form for a Potential Customer instance.
-
   
 *Workflow Capabilities*
 -----------------------
@@ -146,9 +146,12 @@ This one may sound difficult, but in fact this means an awesome capability.
 
 So, for each Lead and Opportunity instance, you define a specific B2B Customer and can than view and process information
 on all the Leads and Opportunities of this customer. All the Cart and Order instances are bound to one of Web Customer 
-instances and thus you can view an process all the information of one Web Customer.
+instances and thus you can view an process all the information of one Web Customer. All the Custom Channel entity
+instances are bound to a pre-implemented Customer Identity entity.  
 
-Moreover, *!!!* a specific Account entity instance must be defined for each B2B Customer or Web Customer instance.
+
+Moreover, *!!!* a specific Account entity instance must be defined for each B2B Customer, Web Customer or Customer 
+Identity instance. 
 One Account may contain any amount of Customer instances, while each instance is assigned to only one Account.
-This way, **with OroCRM you can get a 360 degrees profile of customer activities and interaction 
+This way, using an Account **at OroCRM you can get a 360 degrees profile of customer activities and interaction 
 of a specific business, person or group of people**.
