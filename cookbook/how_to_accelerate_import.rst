@@ -184,5 +184,11 @@ The following example shows services that should be created to add a new import 
         calls:
             - [setStrategy, ["@orocrm_contact.importexport.strategy.contact.add"]]
         tags:
-            - { name: oro_importexport.processor, type: import, entity: "%orocrm_contact.entity.class%", alias: orocrm_contact.add }
-            - { name: oro_importexport.processor, type: import_validation, entity: "%orocrm_contact.entity.class%", alias: orocrm_contact.add }
+            - name: oro_importexport.processor
+              type: import
+              entity: "%orocrm_contact.entity.class%"
+              alias: orocrm_contact.add
+            - name: oro_importexport.processor
+              type: import_validation
+              entity: "%orocrm_contact.entity.class%"
+              alias: orocrm_contact.add
