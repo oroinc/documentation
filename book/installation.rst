@@ -45,11 +45,11 @@ examples assume that you want the root directory of your installation to be
        $ cd /var/www/vhosts
        $ git clone https://github.com/orocrm/platform-application.git
        $ cd platform-application
-       $ git checkout -b 1.0.0 1.0.0
+       $ git checkout 1.4.0
 
    .. note::
 
-       Along with ``1.0.0``, you can use any other released version or even
+       Along with ``1.4.0``, you can use any other released version or even
        the master branch to run the latest development version of the Oro
        Platform Application.
 
