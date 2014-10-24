@@ -13,7 +13,7 @@ Oro Platform and Oro CRM
 
 
 *Multilevel User Permissions*
-----------------------------
+-----------------------------
 
 **Oro Platform Capability**
 
@@ -50,8 +50,8 @@ specific groups of customers, specific sources of potential and actual sales (st
 campaigns, and so on), items ordered and sold or any other business specific essences, as well as use such rules 
 pre-implemented in the OroCRM.
 
-Using Pre-Implemented Instances
--------------------------------
+*Using Pre-Implemented Instances*
+---------------------------------
 
 There is a number of instances pre-implemented in the OroCRM and sharpened to support specific customer relationships.
 These are just some examples:
@@ -88,8 +88,8 @@ Channel instances correspond to different sources of potential and actual sales:
   can allocate them into separate entities, or just provide as drop-downs in the form for a Potential Customer instance.
 
   
-Workflow Capabilities
----------------------
+*Workflow Capabilities*
+-----------------------
 
 **Oro Platform Capability**
 
@@ -112,8 +112,8 @@ This way you provide your employees with a convenient tool to manage the instanc
 a pre-defined consistent order.
 
 
-Reports, Widgets and Actions
-----------------------------
+*Reports, Widgets and Actions*
+------------------------------
 
 **Oro Platform Capability**
 
@@ -133,8 +133,8 @@ automatically dialled in a a telecommunications application. Basically, actions 
 the entity instance, though they make a very convenient tool even on their own.
 
   
-Aggregation Capabilities
-------------------------
+*Aggregation Capabilities*
+--------------------------
 
 **Oro Platform Capability**
 
