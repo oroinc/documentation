@@ -260,7 +260,7 @@ For individual changes, the most convenient way is to go the Leads page and edit
   This is similar to :ref:`creating a Lead <user-guide-system-entities-leads-salesleads-tab-create-leads>`
 
 - Once you have done all the necessary changes, click :guilabel:`Save and Close` button and you will get back to the 
-Leads grid.
+  Leads grid.
 
 Details of the Lead instance will be updated.
 
