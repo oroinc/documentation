@@ -73,7 +73,8 @@ From here you can:
 - :ref:`Import <user-guide-system-entities-opportunities-salestab-import-opportunities>` Opportunity instances from a 
   .csv file
 
-- :ref:`Export <user-guide-system-entities-opportunities-salestab-export-opportunities>` Opportunity instances  in a .csv file
+- :ref:`Export <user-guide-system-entities-opportunities-salestab-export-opportunities>` Opportunity instances  in a 
+  .csv file
 
 - :ref:`Edit <user-guide-system-entities-opportunities-salestab-edit-opportunities>` existing Opportunity instances 
 
@@ -83,7 +84,7 @@ From here you can:
 Create Opportunities
 """"""""""""""""""""
 
-Click :kbd:`Create Opportunity` button to manually input the details of the Opportunity instance.
+Click :guilabel:`Create Opportunity` button to manually input the details of the Opportunity instance.
 The form specified for the Channel's Opportunity instances will appear.
 
 .. hint:: 
@@ -179,8 +180,8 @@ Custom Fields for Opportunities
 All the Custom fields populated into the System and available for the User will be displayed in the *Additional*
 section (to create a custom field go to *System --> Entities --> Entity Management --> Create Field*) .
 
-Once you have filled all the mandatory and desired fields, click :kbd:`Save and Close` button and you will get to the page of the
-Opportunity created. The Opportunity will also appear in the Opportunities grid.
+Once you have filled all the mandatory and desired fields, click :guilabel:`Save and Close` button and you will get to 
+the page of the Opportunity created. The Opportunity will also appear in the Opportunities grid.
 
 
 .. _user-guide-system-entities-opportunities-salestab-import-opportunities:
@@ -191,9 +192,9 @@ Import Opportunities
 If you want to upload multiple Opportunity instances manually or from a third-party enterprise application, it is worth 
 considering our *Import* option. OroCRM can process .scv files that correspond to the Data template.
 
-Click |Bdropdown| on the :kbd:`Import` button in the top right corner of the *Sales\Opportunities* page. Choose 
-:kbd:`Download Data Template`. Prepare a .csv file that corresponds the template and click *Import* button, choose the 
-.csv file for import, carefully read through the submission form and confirm the import.
+Click |Bdropdown| on the :guilabel:`Import` button in the top right corner of the *Sales\Opportunities* page. Choose 
+:guilabel:`Download Data Template`. Prepare a .csv file that corresponds the template and click *Import* button, choose 
+the .csv file for import, carefully read through the submission form and confirm the import.
 
 .. caution:: 
       
@@ -220,7 +221,7 @@ A functionality is provided to easily export a .csv file from the Opportunities 
 
 In order to export the .csv file:
 
-- Go to *Sales --> Opportunities* and click :kbd:`Export` button. 
+- Go to *Sales --> Opportunities* and click :guilabel:`Export` button. 
 
 - *"Export started. Please wait"* message will appear at the top of the screen.
 
@@ -259,13 +260,14 @@ Opportunity instance:
 
 As Opportunity makes a significant components of the Sales Process workflow, you cannot delete an Opportunity.
 
-- Click :kbd:`Edit` button to edit the details.
+- Click :guilabel:`Edit` button to edit the details.
 
 - Re-define the values you need to change in the emerged *Create*-like form
   This is similar to 
   :ref:`creating a Opportunity <user-guide-system-entities-opportunities-salestab-create-opportunities>`
 
-- Once you have done all the necessary changes, click :kbd:`Save and Close` button and you will get back to the Opportunities grid.
+- Once you have done all the necessary changes, click :guilabel:`Save and Close` button and you will get back to the 
+  Opportunities grid.
 
 - Details of the Opportunity instance will be updated.
 
@@ -304,7 +306,7 @@ To simplify your work with the Opportunities, there is an Add Note action.
 
 - The page of the Opportunity instance will emerge. 
 
-- Click :kbd:`Add Note` button in the top right corner of the page 
+- Click :guilabel:`Add Note` button in the top right corner of the page 
 
 - Fill the emerged free text form. The text will appear in the *Additional Information* section of the 
   Opportunity instance.
@@ -323,7 +325,7 @@ Another useful action is *Add Attachment*.
 
 - The page of the Opportunity instance will emerge. 
 
-- Click :kbd:`Add Attachment` button in the top right corner of the page.
+- Click :guilabel:`Add Attachment` button in the top right corner of the page.
 
 - In the emerged form:
   
@@ -351,7 +353,7 @@ In order to send an Email pre-filled with the details of specific Opportunity in
 
 - The page of the Opportunity instance will emerge. 
 
-- Click :kbd:`Send Email` button in the top right corner of the page
+- Click :guilabel:`Send Email` button in the top right corner of the page
 
 - E-mail template already filled with the details of the Opportunity instance will appear. 
 
