@@ -241,8 +241,8 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
 .. hint:: 
      
-      If your Sales Process requires any additional information to be added, the Qualify form can be customized
-      respectively.
+    If your Sales Process requires any additional information to be added, the Qualify form can be customized
+    respectively.
 
  
 .. _user-guide-sales-processes-workflow-disqualify-leads:
@@ -258,8 +258,8 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
 .. hint:: 
 
-      You can use Filters functionality to simplify the search for the necessary Lead. The Filters are rather
-      see-through and easy to use, but if you feel a lack of assistance, please refer to the Filters Guide (TBD).
+    You can use Filters functionality to simplify the search for the necessary Lead. The Filters are rather
+    see-through and easy to use, but if you feel a lack of assistance, please refer to the Filters Guide (TBD).
 
 If there is a need to define reasons for the decision, click :kbd:`FollowUp` button and write a free text message. The
 message will be added to the Lead's additional information section.
@@ -471,5 +471,3 @@ You won the bid and the contract was executed. You can take a deep breath and **
 
 .. |Bplus| image:: ./img/buttons/Bplus.png
    :align: middle
-
-
