@@ -288,7 +288,7 @@ Actions with Leads
 
 Subject to your business needs and specific customization, Oro Platform provides tools for creation of other Actions 
 using Lead instances, as well as instances of any other Entity populated into the OroCRM. However, there are two
-actions embedded in the OroCRM 4.1
+actions embedded in the OroCRM 1.4
 
 
 *Add Note*
@@ -336,7 +336,7 @@ Reports with Leads
 OroCRM supports a very flexible functionality for creation of drill-down reports for any entities populated into the 
 OroCRM.
 
-OroCRM 4.1 comes with two ready-to-use reports related to Lead instances.
+OroCRM 1.4 comes with two ready-to-use reports related to Lead instances.
 
 
 *Leads by Date*
@@ -374,7 +374,7 @@ For each Entity in the OroCRM you can specify one or several workflows that will
 possible actions/updates related to all the instances of the Entity. This way you can ensure consistency and proper
 succession of each step of the process using the instances.
 
-OroCRM 4.1 comes with a ready-to-use B2B-sharpened workflow *Sales Processes*, part whereof Leads are. 
+OroCRM 1.4 comes with a ready-to-use B2B-sharpened workflow *Sales Processes*, part whereof Leads are. 
 The workflow defines that each instance of a Lead entity may be:
 
 - Used to start a new Sales Process
