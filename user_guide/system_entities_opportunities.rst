@@ -293,7 +293,7 @@ Actions with Opportunities
 
 Subject to your business needs and specific customization, Oro Platform provides tools for creation of other Actions 
 using Opportunity instances, as well as instances of any other Entity populated into the OroCRM. However, there are 
-three actions embedded in the OroCRM 4.1
+three actions embedded in the OroCRM 1.4
 
 *Add Note*
 """"""""""
@@ -369,7 +369,7 @@ Reports with Opportunities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OroCRM supports a very flexible functionality for creation of drill-down reports for any entities populated into the 
-System. OroCRM 4.1 comes with several ready-to-use reports related to Opportunity instances.
+System. OroCRM 1.4 comes with several ready-to-use reports related to Opportunity instances.
 
 
 *Opportunities by Status*
@@ -426,7 +426,7 @@ For each Entity in the OroCRM you can specify one or several workflows that will
 possible actions/updates related to all the instances of the Entity. This way you can ensure consistency and proper
 succession of each step of the process using the instances.
 
-OroCRM 4.1 comes with a ready-to-use B2B-sharpened workflow *Sales Processes*, part whereof Opportunities are. 
+OroCRM 1.4 comes with a ready-to-use B2B-sharpened workflow *Sales Processes*, part whereof Opportunities are. 
 The workflow defines that each instance of a Opportunity entity may be:
 
 - Used to start a new Sales Process

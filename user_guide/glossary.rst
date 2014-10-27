@@ -10,7 +10,7 @@ Glossary
         :term:`Channels <Channel>` implemented in the OroCRM and dedicated for Business-to-Business sales
     
    Channel
-        A system entity, the instances of which represents different sources of :term:`Leads <Lead>`, 
+        A system entity, the instances of which represent different sources of :term:`Leads <Lead>`, 
         :term:`Opportunities <Opportunity>` and :term:`Customers <Customer>`, e.g. retail outlets, on-line shops, 
         advertising campaigns, etc. and an instance of the Channel entity        
   
@@ -45,7 +45,7 @@ Glossary
          
    Lead
         An entity of :term:`OroCRM` the instances of which represent people or businesses that have authority, budget
-        and interest to purchase goods and/or services from you, such that probability of the actual sales in not yet 
+        and interest to purchase goods and/or services from you, such that probability of the actual sales is not yet 
         high or impossible to define, and an instance of the Lead entity
         
    Opportunity
