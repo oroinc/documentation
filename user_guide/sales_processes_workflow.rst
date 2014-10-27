@@ -159,7 +159,7 @@ Steps to Perform
 
 - Go to the *Sales --> Sales Processes* page
 
-- Click :kbd:`Start From Lead` button
+- Click :guilabel:`Start From Lead` button
 
 - Fill in the General information. 
   All the four fields are mandatory and **must** be defined:
@@ -202,9 +202,9 @@ Steps to Perform
        Click |Bplus| to add a new Lead to the System.
        Follow the process described to \:ref:`create a Lead <user-guide-system-entities-leads-create-leads>`\
 
-Click :kbd:`Submit` button to save the started workflow in the System.
+Click :guilabel:`Submit` button to save the started workflow in the System.
 
-Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the System.
+Click :guilabel:`Cancel` to cancel the flow start. No changes will be saved in the System.
  
 
 .. _user-guide-sales-processes-workflow-qualify-leads:
@@ -218,7 +218,7 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
 - You will get to the page of the Lead instance
 
-- Click :kbd:`Qualify` button in the top right corner
+- Click :guilabel:`Qualify` button in the top right corner
 
 - Qualify tab will appear
 
@@ -231,8 +231,8 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
   - **B2B Customer**: enables binding the Opportunity to a specific Customer instance in the System. 
                       This may be a representative of the company associated with an Opportunity or the company itself. 
-                      If you bind a Customer and an Opportunity, it will be considered when analysing information of this 
-                      term:`Customer`.
+                      If you bind a Customer and an Opportunity, it will be considered when analysing information of 
+                      this term:`Customer`.
                    
                       If a new Customer instance is created for an Opportunity, keep in mind that it can be assigned a 
                       Contact instance and must be assigned an Account instance.
@@ -254,15 +254,15 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
 - Find the process started with the Lead in the grid and click in the corresponding row
 
-- You will get to the page of the Lead instance. Click :kbd:`Disqualify` button in the top right corner
+- You will get to the page of the Lead instance. Click :guilabel:`Disqualify` button in the top right corner
 
 .. hint:: 
 
     You can use Filters functionality to simplify the search for the necessary Lead. The Filters are rather
     see-through and easy to use, but if you feel a lack of assistance, please refer to the Filters Guide (TBD).
 
-If there is a need to define reasons for the decision, click :kbd:`FollowUp` button and write a free text message. The
-message will be added to the Lead's additional information section.
+If there is a need to define reasons for the decision, click :guilabel:`FollowUp` button and write a free text message. 
+The message will be added to the Lead's additional information section.
 
 
 .. _user-guide-sales-processes-workflow-reactivate-leads:
@@ -274,7 +274,7 @@ message will be added to the Lead's additional information section.
 
 - Find the process with the Lead in the grid and click  in the corresponding row
 
-- You will get to the page of the Lead instance. Click :kbd:`Reactivate` button in the top right corner
+- You will get to the page of the Lead instance. Click :guilabel:`Reactivate` button in the top right corner
 
 
 .. _user-guide-sales-processes-workflow-start-from-opportunity:
@@ -282,7 +282,7 @@ message will be added to the Lead's additional information section.
 **In order to start a Sales Process from an Opportunity instance:**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Go to the *Sales --> Sales Processes* page and click :kbd:`Start From Opportunity` button
+- Go to the *Sales --> Sales Processes* page and click :guilabel:`Start From Opportunity` button
 
 - In the emerged form, fill in the General information. 
   All the four fields are mandatory and **must** be defined.
@@ -327,9 +327,9 @@ message will be added to the Lead's additional information section.
        Opportunity <user-guide-system-channel-entities-opportunities-create-opportunities>`
 
 
-Click :kbd:`Submit` button to save the started workflow in the System.
+Click :guilabel:`Submit` button to save the started workflow in the System.
 
-Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the System.
+Click :guilabel:`Cancel` to cancel the flow start. No changes will be saved in the System.
 
 
 .. _user-guide-sales-processes-workflow-develop-opportunities:
@@ -341,7 +341,7 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
 - Find the process with the Opportunity in the grid and click in the corresponding row.
 
-- You will get to the page of the Opportunity instance. Click :kbd:`Develop` button in the top right corner.
+- You will get to the page of the Opportunity instance. Click :guilabel:`Develop` button in the top right corner.
 
 - *Develop* tab will appear. Fill the tab with new Opportunity details.
 
@@ -355,8 +355,8 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
 
 - Find the process with the Opportunity instance in the grid and click in the corresponding row
 
-- You will get to the page of the Opportunity instance. Click :kbd:`Close as Lost` or :kbd:`Close as Won` button in the 
-  top right corner
+- You will get to the page of the Opportunity instance. Click :guilabel:`Close as Lost` or :guilabel:`Close as Won` 
+  button in the top right corner
 
 *Close as Lost* or *Close as Won* tab will appear. There only two mandatory system fields:
 
@@ -378,9 +378,9 @@ Click :kbd:`Cancel` to cancel the flow start. No changes will be saved in the Sy
    * - **Close Date**
      - Chose the date when the Opportunity was Closed from the calendar.
 
-Click :kbd:`Submit` button to Close the Opportunity.
+Click :guilabel:`Submit` button to Close the Opportunity.
 
-Click :kbd:`Cancel` to cancel the operation. No changes will be saved in the System.
+Click :guilabel:`Cancel` to cancel the operation. No changes will be saved in the System.
 
 
 .. _user-guide-sales-processes-workflow-reopen-opportunities:
@@ -392,8 +392,8 @@ Click :kbd:`Cancel` to cancel the operation. No changes will be saved in the Sys
 
 - Find the process with the Opportunity instance in the grid and click in the corresponding row
 
-- You will get to the page of the Opportunity instance. Click :kbd:`Reopen` button in the top right corner. You will see
-  a warning. Click :kbd:`OK` to confirm the action.
+- You will get to the page of the Opportunity instance. Click :guilabel:`Reopen` button in the top right corner. You 
+  will see a warning. Click :guilabel:`OK` to confirm the action.
 
   
 Sales Processes Flow Examples
