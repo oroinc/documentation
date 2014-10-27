@@ -78,7 +78,7 @@ From here you can:
 Create Leads
 """"""""""""
 
-Click :kbd:`Create Lead` button to manually input the details of the Lead instance.
+Click :guilabel:`Create Lead` button to manually input the details of the Lead instance.
 The form specified for the Channel's Lead instances will appear.
 
 .. hint:: 
@@ -183,8 +183,8 @@ All the Custom fields populated into the System and available for the User will 
 section (to create a custom field go to *System --> Entities --> Entity Management --> Create Field*).
 
 
-Once you have filled all the mandatory and desired fields, click :kbd:`Save and Close` button and you will get to the page of the Lead
-instance created. The Lead will also appear in the grid.
+Once you have filled all the mandatory and desired fields, click :guilabel:`Save and Close` button and you will get to 
+the page of the Lead instance created. The Lead will also appear in the grid.
 
 
 .. _user-guide-system-entities-leads-salesleads-tab-import-leads:
@@ -252,14 +252,15 @@ For individual changes, the most convenient way is to go the Leads page and edit
 
 - The page of the Lead instance will emerge.
 
-- Click :kbd:`Delete` button to delete this Lead instance from the System.
+- Click :guilabel:`Delete` button to delete this Lead instance from the System.
 
-- Click :kbd:`Edit` button to edit the details.
+- Click :guilabel:`Edit` button to edit the details.
 
 - *Create* form with previously defined values will appear. Re-define the values you need to change.
   This is similar to :ref:`creating a Lead <user-guide-system-entities-leads-salesleads-tab-create-leads>`
 
-- Once you have done all the necessary changes, click :kbd:`Save and Close` button and you will get back to the Leads grid.
+- Once you have done all the necessary changes, click :guilabel:`Save and Close` button and you will get back to the 
+Leads grid.
 
 Details of the Lead instance will be updated.
 
@@ -300,7 +301,7 @@ To simplify your work with the Leads, there is an Add Note action.
 
 - The page of the Lead instance will emerge. 
 
-- Click :kbd:`Add Note` button in the top right corner of the page 
+- Click :guilabel:`Add Note` button in the top right corner of the page 
 
 - Fill the emerged free text form. The text will appear in the *Additional Information* section for the Lead instance.
 
@@ -317,7 +318,7 @@ In order to send an Email pre-filled with the details of specific Lead instance:
 
 - The page of the Lead instance will emerge. 
 
-- Click :kbd:`Send Email` button in the top right corner of the page
+- Click :guilabel:`Send Email` button in the top right corner of the page
 
 - E-mail template already filled with the details of the Lead instance will appear. 
 
