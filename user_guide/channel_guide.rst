@@ -85,7 +85,7 @@ If you cannot see the *System* and\or *Channels* menu, check your role permissio
 
 *System / Channels* page will appear.
 
-Click :kbd:`Create Channel` button in the top right corner to get to the *Create Channel* page.
+Click :guilabel:`Create Channel` button in the top right corner to get to the *Create Channel* page.
 
 
 .. _user-guide-channel-guide-define-basic-channel-details:
@@ -150,7 +150,8 @@ The following fields should be specified:
 
 .. hint::  Please address you Magento administrator for the information on SOAP settings details. 
 
-At this point you can click :kbd:`Check Connection` button, to check if the settings you have defined above are correct.
+At this point you can click :guilabel:`Check Connection` button, to check if the settings you have defined above are 
+correct.
 Once the connection details have been verified, the next fields will be filled with default settings.
 
 .. list-table:: **System Channel Entities (continued)**
@@ -288,8 +289,8 @@ are not yet in the list. Both System and Custom Entities can be added to the sam
 
 |S05|
 
-Choose an Entity and click :kbd:`Add` button. The entity will be Added to the list. You can also delete entities from the 
-list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
+Choose an Entity and click :guilabel:`Add` button. The entity will be Added to the list. You can also delete entities 
+from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
 
 
 .. _user-guide-channel-guide-save-the-channel-in-the-system:
@@ -298,8 +299,8 @@ list. Click |IcDelete| to do so. This will remove the Entity from this Channel's
 4. Save the Channel in the System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have finished adding the entities, click :kbd:`Save and Close` button in the top right corner. Success message will appear and 
-your Channel will be saved in the system.
+Once you have finished adding the entities, click :guilabel:`Save and Close` button in the top right corner. Success 
+message will appear and your Channel will be saved in the system.
 
 
 
@@ -316,7 +317,7 @@ Once a Channel has been created it will appear in the Channel list. Now you can 
 Click the Channel name in the list. The Channel details list will appear. In the top right corner you will see possible 
 action buttons:
 
-* :kbd:`Deactivate` button (for Active channels) or :kbd:`Activate` button (for Inactive channels).
+* :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels).
 
   * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be 
     uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes 
@@ -324,11 +325,11 @@ action buttons:
   
   * You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
   
-* :kbd:`Edit` button will open Edit page that is very similar to the page you used to Create a Channel (See :ref:`Create
-  a Channel <user-guide-channel-guide-creating-a-channel>` section), but details you have already  defined will be 
-  displayed
+* :guilabel:`Edit` button will open Edit page that is very similar to the page you used to Create a Channel (See 
+  :ref:`Create a Channel <user-guide-channel-guide-creating-a-channel>` section), but details you have already  defined 
+  will be displayed
   
-* :kbd:`Delete` button will delete the Channel. 
+* :guilabel:`Delete` button will delete the Channel. 
 
 .. caution:: 
 
@@ -399,7 +400,7 @@ In order to start the synchronization manually:
 
 - Click on its Integration link
 
-- Click :kbd:`Schedule Sync` button. *A sync job has been added to the queue. Check progress.* note will appear. 
+- Click :guilabel:`Schedule Sync` button. *A sync job has been added to the queue. Check progress.* note will appear. 
 
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status.
 
