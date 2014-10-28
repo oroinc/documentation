@@ -513,8 +513,5 @@ collect, process and monitor it.*
 .. |M08| image:: ./img/channel_guide/MenuItems/M08.png
    :width: 40mm
 
-.. |WT01| replace:: Contact request form
-.. _WT01: http://www.magentocommerce.com/magento-connect/contact-request-form.html
-
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
