@@ -241,12 +241,7 @@ brief description of their content.
      - Aggregates all the data for a specific Customer.           
        
        Contains such fields as the list of Channels active for the Customer, the Customer's Leads and Opportunities, 
-       billing and shipping details, and lifetime sales values. 
-
-   * - |M05|
-     - Magento
-     - Keeps details from Magento's |WT01|_, including the contact details and information on the contact attempts 
-       success and target.          
+       billing and shipping details, and lifetime sales values.        
 
    * - |M06|
      - Magento
@@ -266,6 +261,11 @@ brief description of their content.
      - Magento
      - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's 
        details, one-time and total credited, paid and taxed amounts, feed-backs, etc.   
+       
+   * - |M05|
+     - Magento and B2B
+     - Can be assigned any Channel and used to save the information on the contact attempts success and target.
+       To reach the Contact Request form go the the *Activities --> Contact Request* page.     
 
        
 Custom Entities
