@@ -72,7 +72,7 @@ The entities are:
   .. _user-guide-magento-entities-order:
     
   **Order**","Keeps details of actual sales made by the customer within the channel, including store details, Customer's 
-   details, one-time and total credited, paid and taxed amounts, feed-backs, etc."
+  details, one-time and total credited, paid and taxed amounts, feed-backs, etc."
 
 Details of all of these entities may be uploaded into OroCRM in the course of integration, processed from OroCRM UI and 
 used to create reports, actions and workflows. 
