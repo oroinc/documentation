@@ -153,7 +153,7 @@ converted into an order, the manager can:
 It is possible to convert the cart into an order without contacting the customer, but it is impossible to abandon it 
 without getting in touch with the customer.
 
-.. image:: ./img/magento_entities/cart_workflow_diagram
+.. image:: ./img/magento_entities/cart_workflow_diagram.png
 
 The workflow provides for increase of customer-oriented communications and provide for higher level of actual orders, 
 at the same time providing the managers with a convenient tool for organization of customer communications, as they can 
@@ -181,7 +181,7 @@ The workflow is aimed to keep track of the customer feedback on the purchase. Fo
    
    - No Reply : you can make a note (e.g. "an answer-machine", "no parents at home, call-back after six"). 
 
-.. image:: ./img/magento_entities/order_followup_workflow_diagram
+.. image:: ./img/magento_entities/order_followup_workflow_diagram.png
 
 The workflow provides for consistency of the feedback collection and eliminates excessive calls, as each manager can see
 the log of previous E-mails and call-attempts, if any.
