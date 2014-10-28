@@ -59,4 +59,10 @@ Glossary
    
    Segment
         A set of instances from OroCRM that correspond to pre-specified conditions
+   
+   Workflow
+        A set of ordered actions that can be performed with the specific entity. Workflow allows the user to manage 
+        entity instances, update existing ones and create new. 
+        From the user's POV workflow appears as a set of buttons which may open forms that allow to manipulate entity 
+        instance data.
         

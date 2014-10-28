@@ -15,7 +15,7 @@ task.
 It is also possible to set up integration with different data management systems (whether CRM, ERP, 
 time&task management, etc.) to upload details of the defined entity-instances. 
 
-Each and every of such instances can then be used to set-up required :term:`workflows`, reports, and actions.
+Each and every of such instances can then be used to set-up required :term:`workflows <Workflow>`, reports, and actions.
 
 On the other hand, OroCRM comes pre-integrated and sharpened for work with `Magento <http://magento.com/>`_ .
 This article is devoted to the description of Magento-specific settings and ways of their processing available with
