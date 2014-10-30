@@ -10,17 +10,20 @@ What We are Talking About
 Entity is a group of rules and setting such used to create and process all the records of the system the belong to this 
 group (such records are called *the Entity instances*).
 
-Entity Management is performed in the same manner both for the OroCRM System and for the Oro Platform, whereas the only
-difference is that OroCRM is pre-filled with CRM-oriented Entities.
+In most of the cases the system is populated with necessary entities in the course of customization with dedicated code.
+Such entities are called, System entities. 
+However, sometimes there appears a need to create additional entities, referred to as Custom entities.
 
-The ways of processing entities in the course of customization are described in the 
-`Customizing the Database 
-Schema <http://www.orocrm.com/documentation/index/current/book/customization#customizing-the-database-schema>`_ section
-of the Oro Customization guide.
+This specific article is devoted to creation of Entities in the Oro Platform from the Web UI.
 
-This specific document is devoted to creation and modification of Entities in the Oro Platform from the Web UI.
+..note::
+   
+    Entity Management is performed in the same manner both for the OroCRM System and for the Oro Platform, whereas the 
+    only difference is that OroCRM is pre-filled with CRM-oriented Entities.
 
-
+    
+.. _platform-entity-management-create-from-ui-steps:
+    
 Steps to Perform
 ----------------
 
@@ -152,7 +155,10 @@ The following three fields must be specified for every entity created:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Ownership Type***","Defines the level at which permissions will be set for instances of the entity. Available 
+  "
+  .. _platform-entity-management-create-other-ownership-type:
+  
+  **Ownership Type***","Defines the level at which permissions will be set for instances of the entity. Available 
   values:
   
   - None : no authority required to see and process the entity.
