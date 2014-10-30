@@ -1,6 +1,6 @@
-.. _platform-entity-management-create-from-UI:
+.. _platform-entity-management-from-UI:
 
-Entity Management. Creating Entities from UI
+Entity Management from UI
 ============================================
 
 
@@ -16,7 +16,7 @@ However, sometimes there appears a need to create additional entities, referred 
 
 This specific article is devoted to creation of Entities in the Oro Platform from the Web UI.
 
-..note::
+.. note::
    
     Entity Management is performed in the same manner both for the OroCRM System and for the Oro Platform, whereas the 
     only difference is that OroCRM is pre-filled with CRM-oriented Entities.
@@ -24,8 +24,8 @@ This specific article is devoted to creation of Entities in the Oro Platform fro
     
 .. _platform-entity-management-create-from-ui-steps:
     
-Steps to Perform
-----------------
+Creating an Entity from UI
+--------------------------
 
 In order to create an Entity: 
 
@@ -45,7 +45,7 @@ In order to create an Entity:
     type, auditabilty and visibility in the grid 
   
 - Create at least one :ref:`field <platform-entity-management-create-fields>` for the entity instances and/or 
-    :ref:`define a relation <platform-entity-management-create-relation>` 
+  :ref:`define a relation <platform-entity-management-create-relation>` 
 
 - :ref:`Update the Schema <platform-entity-management-create-update>` 
 
@@ -275,7 +275,7 @@ There are also optional fields in the section that can be defined for some of th
 Export and Import Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management_create/new_entity_field_exportimport.png
+.. image:: ./img/entity_management_create/new_entity_exportimport.png
 
 Oro Platform provides for export and import of its entity details from and into .csv tables. In the section you can
 define the rules applied to the specific field in the course of import and export.
@@ -314,7 +314,7 @@ The following Yes/No options can be defined for each field
 
   "**Show on Form**","Field can be edited on the edit form of the entity instances
   
-  ..caution:: 
+  .. caution:: 
   
       If *No* is chosen for *Show on Form* of the field, it cannot be edited"
       
@@ -322,7 +322,7 @@ The following Yes/No options can be defined for each field
   
   "**Available in Email Templates**","The field can be used to create E-mail templates"
   
-  "Auditable","Data on the field processing details is logged"
+  "**Auditable**","Data on the field processing details is logged"
   
   
 .. _platform-entity-management-create-relation:
@@ -334,9 +334,9 @@ entity.
 
 To define a relation, you should:
 
-- :ref: `Create a field <platform-entity-management-create-fields>`
+- :ref:`Create a field <platform-entity-management-create-fields>`
 
-- define the field type in the **Relations** section
+- Define the field type in the **Relations** section
 
 .. image:: ./img/entity_management_create/new_entity_relation.png
 
@@ -419,3 +419,93 @@ As the Schema Update influences the overall system performance, it is recommende
 if possible.
 
 
+
+.. _platform-entity-management-edit-from-UI:
+
+Editing Entities from UI
+-------------------------
+
+Sometimes there appears a need to edit or extend (add new fields to) existing entities of the Oro Platform from the 
+Web UI.
+
+*Entities Grid or What We Can Edit*
+-----------------------------------
+
+Let's go to the System --> Entities page and take a thorough look at the Entities grid, to make sure we understand each
+and every column present there by default (the list of columns is a specific Oro instance may differ subject to the 
+configuration settings, however, we shall consider a standard configuration of the Entities grid):
+
+.. csv-table:: Mandatory Entity Fields
+  :header: "Column","What's in it","Effect ability to edit?"
+  :widths: 10, 30, 30
+
+  "**LABEL***","This is a name used to refer to the entity in the system UI","No"
+  
+  "**SCHEMA STATUS**","Defines the state of current schema for the entity.","No, but unless its value is *Active* your 
+  changes to entities an/or their fields will not have affect for the system, until you 
+  :ref:`Update the Schema <platform-entity-management-create-update>`"
+  
+  "**IS EXTEND**","Defines if new fields can be added to the entity","Yes. If the entity is no extend, you cannot add any 
+  new fields to it (if you feel that it is crucial for you business needs, you can address the developers to change the
+  configuration of the entity at the back-end or create a duplicate custom entity)"
+  
+  "**TYPE**","Defines whether the entity was loaded from the back-end (System) or created in the UI (Custom)","Custom 
+  entities are always extend, while for System entities this may differ subject to the configuration. System entities 
+  cannot be deleted"
+  
+  "**AUDITABLE**","Defines if the actions performed on the instances of the entity shall be logged","No"
+  
+  "**OWNERSHIP TYPE**","Defines the level  the level at which permissions will be set for instances of the entity as
+  described in the Create Entities guide :ref:section`platform-entity-management-create-other-ownership-type`","Not 
+  directly, however, you need to have permissions to edit the entity (See System --> User Management --> Roles)"
+  
+  "**NAME** and **MODULE**","Define the name used to refer to the entity at the back-end. Comes handy if there is a need to 
+  change configuration or otherways find the entity in the code","No"
+  
+  "**UPDATED AT**","The date and time of the last schema update for the entity","No"
+  
+  "...","Action icons","Hover your mouse over the ... to access the action icons.
+
+  - Click |icDelete| button to remove an entity, It will appear only for Custom entities.
+  - Click |IcView| to get to the details of a specific entity (you can also click on the row of the entity in 
+    the grid.
+  - Click |IcEdit| to get directly to the edit form
+  - Once any entity has been deleted |IcRest| will appear. Click the icon to restore the removed entity. It will be
+    available until the schema is updated."
+
+This way:
+
+- edit form is available for any entity in the system. List of editable properties for each of the System type 
+  entities depends on configuration and is created in a way reasonable and safe for the system performance and 
+  operation. 
+  (Some properties may be disabled for editing, this means that this is restricted at the system level).
+  The list of fields on the Edit form is the same as when you :ref:`Create an 
+  entity <platform-entity-management-create-from-ui-steps>`
+  
+- only for the entities for which "IS EXTEND" = "Yes" you can `create <platform-entity-management-create-fields>` new
+  fields.
+
+  
+*Editing Fields*
+----------------
+When you go to the entity view page, there is a grid of fields below. Just as entities, the fields may be of System and 
+Custom TYPE and have different SHEMA STATUS.
+
+All the properties of Custom fields but their name and type may be edited. The property meanings are the same as when 
+you `create fields <platform-entity-management-create-fields>` 
+
+The list of properties editable for System fields depends on configuration and is created in a way reasonable and safe 
+for the system performance and operation
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
+   
+.. |IcRest| image:: ./img/buttons/IcRest.png
+   :align: middle
+   
