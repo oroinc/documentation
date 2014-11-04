@@ -4,7 +4,7 @@ Entity Management from UI
 ============================================
 
 
-What We are Talking About
+What We Are Talking About
 -------------------------
 
 Entity is a group of rules and setting such used to create and process all the records of the system the belong to this 
