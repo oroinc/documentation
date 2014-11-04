@@ -16,6 +16,7 @@ and technical details.
     jobs
     functional_tests
     configuration
+    reports
 
 .. toctree::
     :hidden:
