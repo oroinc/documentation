@@ -72,8 +72,6 @@ Enter the system and go to *System --> Channels*
 
 Click :guilabel:`Create Channel` button in the top right corner to get to the *Create Channel* page.
 
-.. image:: ./img/channel_guide/channels_create_empty.png
-
 .. hint::
    
    If you cannot see or manage any of the menus, pages, forms and/or tabs described hereunder, please check your role 
@@ -137,7 +135,7 @@ System for the channel.
 You can assigned an Entity to a Channel instance from the "Entities" tab that you will see when 
 :ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
 
-.. image:: ./img/channel_guide/channels_entity_select.png
+.. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
 
 Channel instances are by default assigned the Entities specially created in OroCRM and meeting the type targets. At the
 same time any channel can be assigned other entities, including :ref:`Custom entities <entity-management-create>` 
@@ -290,7 +288,7 @@ the same sales process, we have kept all the entities added to the list by defau
 We have also created and added a custom entity *Subcontract*
 
 
-.. image:: ./img/channel_guide/channels_entity_select_custom.png
+.. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
 
 The entity instances represent a case when the factory is subcontracting and along with other details, contain 
 End Customer and Principle Contractor field that are many to one relations for a B2B customer entity instance. 
@@ -299,7 +297,7 @@ The entity was created as an example in the :ref:`Entity Management Guide <user-
 
 This is how the page of the channel looks when we are creating it:
 
-.. image:: ./img/channel_guide/channels_created_b2b.png
+.. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
 
 
 2. 
@@ -309,7 +307,7 @@ Factory sales details will be saved in the Channel of a dedicated Web Type named
 Along with the Shopping Cart and Order entities added to the list by default, we also want to keep track of the contacts
 with the customer, so we have added the Contact Request entity.
 
-.. image:: ./img/channel_guide/channels_entity_select_custom.png
+.. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
 
 The entity instances represent a case when the factory is subcontracting and along with other details, contain 
 End Customer and Principle Contractor field that are many to one relations for a B2B customer entity instance. 
@@ -318,7 +316,7 @@ The entity was created as an example in the :ref:`Entity Management Guide <user-
 
 This is how the page of the channel looks when we are creating it:
 
-.. image:: ./img/channel_guide/channels_created_web.png
+.. image:: ./img/channel_guide/Screenshots/channels_created_web.png
 
 3.
 
@@ -342,7 +340,7 @@ The entities were created as an example in the :ref:`Entity Management Guide <us
 
 This is how the page of the channel looks when we are creating it:
 
-.. image:: ./img/channel_guide/channels_created_custome.png
+.. image:: ./img/channel_guide/Screenshots/channels_created_custome.png
 
 ..note:: 
 
@@ -369,7 +367,7 @@ Once a channel has been saved created it will appear in the Channels grid. A num
 Channel instance in the grid. Hover the mouse to *...* column to see them:
 
 
-.. image:: ./img/channel_guide/channels_edit.png
+.. image:: ./img/channel_guide/Screenshots/channels_edit.png
 
 
 - Click |IcDelete| to delete the Channel instance from the system. 
@@ -388,7 +386,7 @@ Once a Channel has been deleted all the relevant data will be deleted as well.
 
 - Click |IcView| to get to the page of the Channel instance. For example, out *Factory* channel page looks as follows:
 
-.. image:: ./img/channel_guide/channels_created_b2b_view.png
+.. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view.png
 
 There is a number of actions available from the page.
 
@@ -415,7 +413,7 @@ authorized Users. When you open a specific Channel instance page, there will be 
 |IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
 We can use the functionality, if, for example, there appeared a need to add a new field to the Item Ordered entity.
 
-.. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png
+.. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view_edit_entity.png
 
 Please refer to the `Entity Management Guide <user-guide-entity-management-guide>` for more details. 
 
@@ -455,7 +453,6 @@ This way, the John&Sons managers can open the account an enjoy a 360 degree dril
 related to the account.
 
    
-
 .. |IcDelete| .. image:: ./img/channel_guide/Buttons/IcDelete.png
    :align: middle
 
