@@ -518,7 +518,7 @@ to show appreciation for the participation. Moreover, now when the brothers will
 the Fun4Kids offices, that can create a Lead and either assign it to a customer instance already present in the system
 or create a new customer instance and assign it to the Fun4Kids account.
 
-In other words, they get a 360 degrees dynamically updated aggregated profile of activities and interactions with a 
+In other words, they now have a 360 degrees dynamically updated aggregated profile of activities and interactions with a 
 specific business, person or group of people that can be drilled down and used to generate reports.
  
 

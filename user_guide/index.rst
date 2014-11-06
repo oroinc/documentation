@@ -5,8 +5,8 @@ End user oriented documentation that explains how to administer and configure ap
 
 .. toctree::
     workflow_management
-    channel_guide
     channel_guide1
+    magento_channel_integration
 
 TODO List
 ---------

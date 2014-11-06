@@ -1,3 +1,4 @@
+:orphan:
 
 .. _user-guide-channel-guide:
 
