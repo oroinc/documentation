@@ -110,7 +110,7 @@ The three fields are mandatory and **must** be defined:
     customized with new Channel Types, such that certain settings are predefined for all the Channel instances of the 
     Type."
  
-..caution::
+.. caution::
 
     No Magento Channel can be saved without integration settings defined. Once you have chosen a Channel Type = 
     *Magento*,  here will appear a new mandatory field **Integration***. Please, see  :ref:`Magento Channel 
