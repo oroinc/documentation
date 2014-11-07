@@ -1,32 +1,28 @@
+.. _user-guide-system-channel-entities-leads:
+
+B2B Channel Entities. Leads.
+=============================
 
 .. _user-guide-system-channel-entities-leads:
 
-Leads Management Guide
-======================
 
-
-What is a Lead Entity
-----------------------
+Overview
+--------
 
 *Entity* is a grouping of things with common rules and/or data. Rules and/or setting defined for an Entity are applied 
 to all of its instances. Flexible and customizable Oro Platform-based :term:`OroCRM` solution can be filled with any 
 kind of Entities subject to your specific customer needs.
 
-However, we have used our experience in sales and retail business and provided a number of embedded entities, that you
+However, Oro team has used our experience in sales and retail business and provided a number of embedded entities, that you
 can use right away or after mere customization.
+
 One of such entities is a *Lead*.
 
-Instances of a Lead entity are people or businesses the have initial interest, authority and 
+Instances of a Lead entity represent people or businesses the have initial interest, authority and 
 budget to purchase a product or service from you. Intentions thereof may be yet unclear and often not backed up with 
-any arrangements. Once a probability of making a deal with a lead becomes high, the Lead becomes an :term:`Opportunity`.
+any arrangements. Once a probability of making a deal with a lead becomes high, the Lead instance becomes an 
+:term:`Opportunity`.
 
-
-What You Can Do with Lead Instances
-------------------------------------
-Lead is one of \:ref:`System Channel Entities <user-guide-channel-guide-system-channel-entities>`\ for :term:`B2B 
-Channels <B2B Channel>`.
-
-As Lead is an embedded Entity, OroCRM provides for some ready-to-use capabilities related to its instances.
 
 Once there is at least one Channel assigned a *Lead* entity (a :term:`B2B <B2B Channel>` or a 
 :term:`custom <Custom Component>` Channels):
@@ -118,7 +114,7 @@ Detailed description of each field is provided below:
             Click |BGotoPage| button to choose from the *Select Owner* page.
 
    * - **Lead Name***
-     - This is the name that will be used to save and display the Lead instance in the System.
+     - This is the name that will be used to refer to the Lead instance in the System.
 
        It is recommended to define a meaningful name.
 
@@ -130,13 +126,8 @@ Detailed description of each field is provided below:
    * - **First Name***
      - Name of the potential customer or contact person.
 
-       It is recommended to define a meaningful name.
-
    * - **Last Name***
-     - Last name of the potential customer or contact person.
-
-       It is recommended to define a meaningful name.
-       
+     - Last name of the potential customer or contact person.       
        
 .. _user-guide-system-entities-leads-salesleads-tab-optional-system-fields-for-leads:
        
@@ -358,7 +349,7 @@ It shows:
 
 
 *Lead by Geography*
-""""""""""""""""""""""""""
+""""""""""""""""""""
 
 This report is placed in the *Manage custom reports* section and can be edited. 
 "As is" the report shows:
@@ -384,21 +375,33 @@ The workflow defines that each instance of a Lead entity may be:
 
 - Disqualified (and Reopened later if applicable).
 
-The full workflow is described in a \:ref:`separate 
+The full workflow is described in a \:ref:separate 
 article <user-guide-sales-processes-workflow>`\
+
 
 Leads Example
 ---------------
-You have run an "Send SMS and Get a Discount" advertisement campaign, and now you have personal and contact details of 
-the campaign participants. Supposedly, all of this people are interested in purchasing from you and may become your 
-customers. Currently they are your Leads.
 
-You have created a B2B Channel and filled the system with Lead entities, each of which corresponds to one campaign 
-participant.
+John&Sons Company is providing building materials to different scale businesses. During an industry fair the company account 
+managers ran preliminary negotiations with Home2Go company on subontracting in a bid for public school construction. 
+However the bid conditions have not yet been approved.
 
-*Now you can access and process their information, use it for notes and E-mails, view it in the reports and use it for
-the Sales Processes workflow.* 
+To record the details of the potential opportunity, there was created a Lead instance with the following propeties:
 
+- Owner: Jack Johnson (the user creating the instance)
+- Lead name: Public School Bid 
+- Channel: Factory (Channel instance of B2B Type created for the John&Sons Factory sales activities as an example in the
+ \:ref: Channel Management Guide <user-guide-channels-example`\ If there is no Channel instance that correspond to the 
+ Lead inb the system, a new one can be created.
+- First Name
+- Last Name
+- Contact: James Custolini
+- Job Title: sales manager
+- Phone number: 1676568976
+- E-mail:
+- B2BCustomer: Home2Go (B2B customer instance  created for the Home2Go company as an example in the
+ \:ref: Channel Management Guide <user-guide-channels-example`\ If there is no B2B Customer nor a Customer Identity
+ instance that correspond to the Lead inb the system, a new one can be created.)
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
@@ -411,4 +414,3 @@ the Sales Processes workflow.*
 
 .. |Bplus| image:: ./img/buttons/Bplus.png
    :align: middle
-
