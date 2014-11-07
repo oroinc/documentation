@@ -329,9 +329,9 @@ The entities were created as an example in the :ref:`Entity Management Guide <us
 
 This is how the page of the channel looks when we are creating it:
 
-.. image:: ./img/channel_guide/Screenshots/channels_created_custome.png
+.. image:: ./img/channel_guide/Screenshots/channels_created_custom.png
 
-..note:: 
+.. note:: 
 
     Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
     Channel entity could be created to represent it, where Customer Identities, would be the fund participants and 
