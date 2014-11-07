@@ -1,301 +1,263 @@
-:orphan:
 
-.. _user-guide-channel-guide:
+.. _user-guide-channel-guide
 
 Channels Management Guide
 =========================
 
+Functionality Overview
+----------------------
 
-What Channels Are and Why You Need Them
-----------------------------------------
+Multichannel functionality provides for diversified approach to different sources of customers with ability of their
+further aggregation into one record.
 
-Whether you run a multi-million global business or own a small toy shop in the middle of nowhere, the two vital 
-success components are *knowing your customer* and *keeping a careful track of your business processes*. However, the 
-era of E-commerce with all of its awesome opportunities has brought a number of challenges on the way to the marketing 
-Olympus, including rapidly growing customer-bases, customer's demand for faster and more client-oriented service and, 
-the last but far not least, a need to manage several on-line and off-line shops with numerous partner-programs, 
-campaigns, additional license and service sales, and so on and so forth.
+**Channel** is an entity, instances whereof represent one source of customers. For each Channel instance created in the
+system, along with other :ref:`general details <user-guide-channel-guide-general>` name, type and set of entities 
+assigned are specified:
 
-That is when :term:`OroCRM` steps on-stage. Its analysis and reporting tools provide for extensive customer profiling 
-and drill-down marketing capabilities. Its natural flexibility and scalability help to meet the aim of your specific 
-business. And yes, OroCRM has got an answer to the multiple sales&customer source challenge. 
-This is what we call a :term:`Multiple Channels Functionality`.
+- Name of a Channel instance uniquely identifies it in the system
 
-Channel is a system :term:`entity <Entity>`, the instances of which represents different sources of 
-:term:`Leads <Lead>`, :term:`Opportunities <Opportunity>` and :term:`Customers <Customer>`, e.g. retail outlets, on-line 
-shops, advertising campaigns, etc.
+- Type of a Channel instance defines mandatory and optional settings used for the channel
 
-You can :ref:`create <user-guide-channel-guide-creating-a-channel>` a specific Channel instance for each of the outlets 
-and :ref:`fill it <user-guide-channel-guide-fill-the-channel-with-entities>` with properties to collect details on a 
-specific outlet, campaign, sales type whatsoever, and use these Channels to manage your Sales Process workflow and 
-create Customer profiles and reports, based on all the information collected from all the Channels. 
+- Instances assigned to a channel, define the types of information that can be collected and processed for it. 
+  In other   words, *if you have created Channel A, Channel B and Channel C and assigned the an Entity E, every 
+  time someone creates an instance of the Entity E in the system, one of the Channel A, B, C has to be chosen 
+  for the instance.* 
 
-.. caution:: 
+For each Channel instance there must be specified a Customer entity instance (there are different entities that 
+represent customers for each Channel type.
 
-    With OroCRM you can create any number of :term:`Channels <Channel>` to collect your business-specific data 
-    for further processing in :term:`the System <System>`.
+Each of the Customer entity instances can be assigned to an instance of the Contact entity, aimed to keep contact details, 
+including full name, billing and shipping address and any other meaningful details such as hierarchy in the company etc.
+  
+Each of the Customer entity instances must be assigned to an instance of the Account entity. Several Customer entity 
+instances (regardless of the Channel type) may be assigned to the same Account instance that performs the role of 
+aggregator for their details.
 
-    
-.. _user-guide-channel-guide-channel_types:
+In the article you can find step by step descriptions of the channel creation and management process, illustrated with 
+the solution of the *Problem*. 
 
-Channel Types
--------------
-
-While OroCRM customization capabilities provide for creation of any number of Channel types, we shall consider the 
-three basic ones, i.e. Web, B2B and Custom Channels:
-
-- *Web Channels* are initially sharpened for :term:`Magento` and provide for easy automated population of the system 
-  with customer-related details from multiple shops on Magento.
-
-- *B2B Channels* are dedicated for manual population of the system with details of Business-to-Business sales.
-
-- *Custom Channels* can be created and tailored subject to specific customer needs and requirement. 
+.. _user-guide-channels
 
 
-.. _user-guide-channel-guide-creating-a-channel:
+.. _user-guide-channel-guide-create:
 
 Creating a Channel
 ------------------
 
 A Channel can be created with several simple steps:
 
-1. :ref:`Go <user-guide-channel-guide-go-to-channels>` to *Channels* tab
+1. Go to :ref:`*Create Channel*<user-guide-channel-guide-go-to-channels>` page
 
-2. :ref:`Define <user-guide-channel-guide-define-basic-channel-details>` Basic Channel Details, including 
-   :ref:`Integration Details <user-guide-channel-guide-define-integration-details-for-a-magento-channel>` for *Magento* 
-   Channels
+2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel instance
 
-3. :ref:`Fill <user-guide-channel-guide-fill-the-channel-with-entities>` the Channel with Entities
+3. :ref:`Fill <user-guide-channel-guide-entities>` the Channel with Entities    
 
-4. :ref:`Save <user-guide-channel-guide-save-the-channel-in-the-system>` the Channel in the System 
+4. :ref:`Save <user-guide-channel-guide-save>` the Channel in the system
 
-.. note:: 
-
-    Steps three and four are interchangeable, as you can first Save and empty Channel and then Edit it and Fill
-    with Entities, though a more straightforward flow is described hereunder).
-
-
-.. _user-guide-channel-guide-go-to-channels:
-
-1. Go to Channels
-^^^^^^^^^^^^^^^^^
+1. Go to Create Channel
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Enter the system and go to *System --> Channels*
-
-If you cannot see the *System* and\or *Channels* menu, check your role permissions or address your system administrator.
 
 *System / Channels* page will appear.
 
 Click :guilabel:`Create Channel` button in the top right corner to get to the *Create Channel* page.
 
+.. hint::
+   
+   If you cannot see or manage any of the menus, pages, forms and/or tabs described hereunder, please check your role 
+   permissions or address your system administrator.
 
-.. _user-guide-channel-guide-define-basic-channel-details:
 
-2. Define Basic Channel Details
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _user-guide-channel-guide-general:
+
+2. Define General Details
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the *General* tab define basic Channel information.
-The three obligatory fields **must** be defined:
 
-- **Status*** (1): current status of the Channel. The following two values are possible:
+The three fields are mandatory and **must** be defined:
 
+.. csv-table:: **Mandatory Channel Properties**
+  :header: "**Name**", "**Description**"
+  :widths: 10, 30
+
+  "**Status**","Current status of the Channel instance. The following two values are possible:
   - *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
-    configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
-    the data loaded while the Channel was active is considered by the reports.
+  configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
+  the data loaded while the Channel was active is considered by the reports.
 
   - *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
 
-- **Name*** (2): a name of the channel that will be displayed on the screen (and thus used to manage the Channel).
-
-- **Channel Type***: a drop-down, where you can choose a :ref:`Channel Type <user-guide-channel-guide-channel_types>` 
-   that is more suitable for the Channel created.
+  By default the filed value is set to *Inactive*"
    
-                     
-.. _user-guide-channel-guide-define-integration-details-for-a-magento-channel:
-
-2a. Define Integration Details for a Magento Channel
-""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-Once you have chosen a Channel Type = *Magento*, a new mandatory field **Integration*** will appear. Click 
-*Configure integration* link to get to the form.
-
-The following fields should be specified:
-
-.. list-table:: **System Channel Entities**
-   :widths: 10 30
-   :header-rows: 1
-
-   * - Field
-     - Description
-     
-   * - **Name***
-     - Configuration name. Mandatory field. Will be used to refer to the configuration within the system (edit, assign,
-       etc.)
+  "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
+  meaningful." 
+   
+  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the Channel instance 
+  created. The following types are available:
+   
+  - *B2B*: the type dedicated for managing mostly off-line B2B customer relations
+   
+  - *Web*: the type sharpened for :term:`Magento` shops
+   
+  - *Custom*: any other channels, subject to specific business needs and goals
+   
+.. hint::
  
-   * - **SOAP WSDL URL***
-     - Mandatory field. An http URL string to the WSDL of the SOAP-based service.
-     
-   * - **SOAP API Key***
+    If there is a need to create numerous channels with the same set of rules and settings (e.g. several on-line shops 
+    at a platform other then Magento, or retail outlets or whatever else is appropriate for your business, OroCRM may be
+    customized with new Channel Types, such that certain settings are predefined for all the Channel instances of the 
+    Type."
+ 
+..caution::
+
+    No Magento Channel can be saved without integration settings defined. Once you have chosen a Channel Type = 
+    *Magento*,  here will appear a new mandatory field **Integration***. Please, see  :ref:`Magento Channel 
+    Integration <user-guide-magento-channel-integration>` article for the details.
+
    
-       **SOAP API User***
-       
-     - Mandatory fields. SOAP API credentials. 
-     
-   * - **WS-I Compliance**
-     - Optional flag. Defines whether the configuration meets the requirements of Web Services Interoperability 
-       Organization guidelines.
-   
-   * - **Sync start date**
-     - Mandatory field The date to start the synchronization with; data uploaded into the Magento account since the 
-       date, will be added to OroCRM and can be processed therein.
-
-.. hint::  Please address you Magento administrator for the information on SOAP settings details. 
-
-At this point you can click :guilabel:`Check Connection` button, to check if the settings you have defined above are 
-correct.
-Once the connection details have been verified, the next fields will be filled with default settings.
-
-.. list-table:: **System Channel Entities (continued)**
-   :widths: 12 30
-   :header-rows: 1
-
-   * - Field
-     - Description
-     
-   * - **Website***
-     - Mandatory field. The list of all the Websites available for the shop. *All Websites* option is chosen by default.
-       You can edit the field value and choose one of the Websites available.
-       Click "Sync website list" link if the list of Websites is outdated.
-       
-   * - **Admin url**
-     - Optional field. An http link to the Administrator panel of the specified Magento store.
-     
-   * - **Default owner***
-     - Mandatory field. Specifies Users that can manage the configuration.
-       
-       
-.. _user-guide-channel-guide-fill-the-channel-with-entities:
-
-       
 3. Fill the Channel with Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Basically, *Entity* is a grouping of things with common rules and/or data. Rules and/or settings defined for an
-Entity will be applied to all of its instances.
+As mentioned above, *Channel Entities* define types of instances that can be collected and processed in the 
+system for the channel. 
 
-*Channel Entities* define types of instances that can be collected and processed in the System for each Channel they 
-have been assigned to.
+You can assigned an Entity to a Channel instance from the "Entities" tab that you will see when 
+:ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
 
+.. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
+
+Channel instances are by default assigned the Entities specially created in OroCRM and meeting the type targets. At the
+same time, any channel can be assigned other entities, including :ref:`Custom entities <entity-management-create>` 
+created by the user or added in the course of customization subject to specific customer's needs.
+
+These way, we can divide all the entities as follows:
+
+- Mandatory and Optional System entities meaningful for a specific Channel Type
+
+- Mandatory and Optional System entities that can be assigned to any Channel Type
+
+- Custom Entities
+
+Let's consider each of them:
+
+.. csv-table:: **System entities meaningful for B2B Channels**
+  :header: "**Name**", "**Description**"
+  :widths: 10, 30
+
+  "**B2B Customer**","Represents a person, a group of persons or business you are in a sales process with. 
   
-Entities are managed in the "Entities" section or tab that you will see when 
-:ref:`Creating <user-guide-channel-guide-creating-a-channel>`
-or :ref:`Editing <user-guide-channel-guide-editingdeleting-a-channel>` a Channel. 
+  - Mandatory entity (Every Channel instance of B2B Type must contain it)
+  
+  - Contains information on the sales-related activities, lifetime sales values of the specific customer, etc.
+    
+  - Each B2B Customer instance must be assigned to an only instance of a Channel of a B2B Type
+  
+  - Each B2B Customer instance must be assigned to an only Account instance
+  
+  - Each B2B Customer instance can be assigned to an only Contact instance"
+  
+  "**Opportunity**","Represents potential sales most likely to become a success.
 
-
-
-.. _user-guide-channel-guide-system-channel-entities:
-
-System Channel Entities
-"""""""""""""""""""""""
-
-There is a number of Channel Entities pre-implemented in OroCRM 4.1, meaningful for a specific Channel type.
-
-Once you have chosen a *B2B* or *Magento* Channel Type, the System Entities will be added in the *ENTITY* list 
-automatically. The following table describes all the currently available System Channel Entities and provide 
-brief description of their content.
-
-.. list-table:: **System Channel Entities**
-   :widths: 7 5 30
-   :header-rows: 1
- 
-   * - Entity
-     - Channel Type
-     - Instance Description
- 
-   * - |M01|
-     - B2B
-     - Keeps data on potential Sales most likely to become a success.
-       
-       Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity 
-       gain, customer needs and described solution descriptions, etc. More information about Opportunities and their 
-       usage pre-implemented in the System is provided in the \:ref:`"Opportunities Management 
-       Guide" <user-guide-system-entities-opportunities>`\.
+  - Is added to the entities of a B2B Type channel by default but may be removed 
+  
+  - Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity 
+    gain, customer needs and described solution descriptions, etc. 
+  
+  - Each Opportunity instance must be assigned to an only instance of a Channel of a B2B Type
+  
+  - Each Opportunity instance must be assigned to an only instance of a B2B Customer
+  
+  - Each Opportunity instance can be assigned to an only Contact instance
+  
+  - More information about Opportunities and their pre-implemented usage in the system is provided in the 
+    :ref:`*Opportunities Management Guide* <user-guide-system-entities-opportunities>`."
    
-   * - |M02|
-     - B2B
-     - Keeps data on what might become an Opportunity.           
- 
-       Contains such fields as Lead's personal and business details and reference Opportunity (if any). More information
-       about Leads and their usage pre-implemented in the System is provided in the \:ref:`"Leads Management 
-       Guide" <user-guide-system-entities-leads>`.
+  "**Lead**","Represents potential Opportunity.
+  
+  - Is added to the entities of a B2B Type channel by default but may be removed 
+  
+  - Contains related personal and business details and reference Opportunity (if any)
+  
+  - Each Lead instance must be assigned to an only instance of a Channel of a B2B Type
+  
+  - Each Lead instance can be assigned to an only instance of a B2B Customer
+  
+  - Each Opportunity instance can be assigned to an only Contact instance
+  
+  - More information about Leads and their usage pre-implemented in the System is provided in the :ref:`*Leads 
+    Management Guide" <user-guide-system-entities-leads>`."
 
-   * - |M03|
-     - B2B
-     - Used to keep and process data on the Sales Process flow from a Lead to a Closed Opportunity, subject to a 
-       workflow predefined in the System.           
-       
-       Contains such fields as date of the Sales Process start and reference to the relevant Customer instance in the 
-       System, as well as on the preceding Lead and Opportunity.
+  "**Sales Process**","Represents a sales workflow instance. 
    
-   * - |M04|
-     - B2B
-     - Aggregates all the data for a specific Customer.           
-       
-       Contains such fields as the list of Channels active for the Customer, the Customer's Leads and Opportunities, 
-       billing and shipping details, and lifetime sales values.        
+  - Is added to the entities of a B2B Type channel by default but may be removed 
+  
+  - Used to keep and process data on the Sales Process flow from a Lead to a Closed Opportunity, subject to a 
+    workflow predefined in the System.           
+  
+  - Each Sales Process instance must be assigned to an only instance of a Channel of a B2B Type
+  
+  - Each Sales Process instance must be assigned to an only instance of Lead or Opportunity 
 
-   * - |M06|
-     - Magento
-     - Keeps details on the Magento Customer's pre-sales activity with the |WT02|_            
-       
-       Contains Customer's personal data and payment details, reference to related Opportunities, sales values and 
-       related communications. 
+  - More information about Sales Process Workflow and its usage pre-implemented in the System is provided in the 
+    :ref:`*Workflow Management Guide* <user-guide-workflow-management>`."
+    
+    
+.. csv-table::**System entities meaningful for Magento Channels**
+  :header: "**Name**", "**Description**"
+  :widths: 10, 30
+  
+  "**Web Customer**","Represents on Magento user who has performed the sales. 
+  
+  - Mandatory entity (Every Channel instance of Web Type must contain it)
+  
+  - Contains relevant personal data and payment details, sales values and communications
+  
+  "**Cart"","Represent one |WT02|_ in Magento. 
+  
+  Is added to the entities of a Web Type channel by default but may be removed"
+
+  "**Order**","Keeps details of actual sales made by the customer within the Channel, including store details, 
+  Customer's details, one-time and total credited, paid and taxed amounts, feed-backs, etc. 
+  
+  Is added to the entities of a Web Type channel by default but may be removed"
+
+ 
+Information about System entities meaningful for Magento Channels is uploaded into the OroCRM during synchronization as 
+described in the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article.
+
+For more details on Magento Entities in OroCRM please refer to the :ref:`Magento Entities Management 
+Guide <user-guide-magento-entities>`."
+
+Currently there is one **System entity meaningful for any Channels** prior to any customization, it is:
+
+.. csv-table::
+  :header: "**Name**", "**Description**"
+  :widths: 10, 30
+  
+  "**Contact Request**","Keeps information on each case of a contact attempt, its success or failure and target."
 
 
-   * - |M07|
-     - Magento
-     - Aggregates all the data on a specific Magento Customer, including the list of Channels active for the Customer, 
-       billing details, related opportunities, shipping details, rating, etc.            
+Currently there is one **System entity default and mandatory for Custom Channels**, it is:
 
-
-   * - |M08|
-     - Magento
-     - Keeps details of actual sales made by the customer within the Channel, including store details, Customer's 
-       details, one-time and total credited, paid and taxed amounts, feed-backs, etc.   
-       
-   * - |M05|
-     - Magento and B2B
-     - Can be assigned any Channel and used to save the information on the contact attempts success and target.
-       To reach the Contact Request form go the the *Activities --> Contact Request* page.     
-
-       
-Custom Entities
-"""""""""""""""
-
-:term:`Custom <Custom Component>` Entities are created for specific Customer needs and their instances can contain any 
-required details to be filled and processed by the System. For more details on Customer entities please kindly see 
-Entity Management Guide(TBD). 
+.. csv-table::
+  :header: "**Name**", "**Description**"
+  :widths: 10, 30
+  
+  "**Customer Identity**","Represent one customer within the Channel. Each Customer Identity instance shall be assigned 
+  to an only Custom Type Channel and an only Account instance."
+  
+As it has been mentioned before,**Custom Entities** are created for specific Customer needs and their instances can 
+contain any required details to be filled and processed by the System. For more details on Customer entities please 
+kindly see the :ref:`Entity Management Guide <user-guide-entity-management-guide`>. 
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
 tab/section below the System Entities. Use the scroll bar to get to them.
 
-
-Finalize Entity Choice
-""""""""""""""""""""""
-
-If you have chosen a Custom Channel type, there will be no initially added Entities. For B2B and Magento Channel their 
-specific values will be already in the list. You can use the drop down menu to add any System or Custom Entities that 
-are not yet in the list. Both System and Custom Entities can be added to the same list.
-
-(For the sake of the following example there had been created a Custom Entity named "CEntity".
-
-|S05|
-
-Choose an Entity and click :guilabel:`Add` button. The entity will be Added to the list. You can also delete entities 
+For B2B and Magento Channel their specific values will be already in the list. Both System and Custom Entities can be 
+added to the same list.
+Choose an entity and click :guilabel:`Add` button. The entity will be Added to the list. You can also delete entities 
 from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
-
-
-.. _user-guide-channel-guide-save-the-channel-in-the-system:
-
 
 4. Save the Channel in the System
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -303,216 +265,194 @@ from the list. Click |IcDelete| to do so. This will remove the Entity from this 
 Once you have finished adding the entities, click :guilabel:`Save and Close` button in the top right corner. Success 
 message will appear and your Channel will be saved in the system.
 
+Channels Examples
+-----------------
+John&Sons factory sells building and finishing materials to different scale construction businesses. They have also got 
+an outlet for retail and small wholesale in Dallas. Recently they have launched a Magento store, where the users can 
+order any amount of goods.
+Along with numerous benefits, this diversified approach has brought some challenges such as the need to control 
+customer relations at many end-points, keeping in mind that some of the customers or representative thereof may reach 
+the company at different grounds. 
+
+John&Sons need three Channels.
+
+1.
+
+Factory sales are of business-to-business nature, so we have created a B2B Type Channel named *Factory*.
+
+As we want to keep track of potential and actual opportunities and sales and keep the customer communications within 
+the same sales process, we have kept all the entities added to the list by default.
+We have also created and added a custom entity *Subcontract*
 
 
-Using Channels
---------------
+.. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
+
+The entity instances represent a case when the factory is subcontracting and along with other details, contain 
+End Customer and Principle Contractor field that are many to one relations for a B2B customer entity instance. 
+
+The entity was created as an example in the :ref:`Entity Management Guide <user-guide-entity-management-guide`>. 
+
+This is how the page of the channel looks when we are creating it:
+
+.. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
 
 
-.. _user-guide-channel-guide-editingdeleting-a-channel:
+2. 
 
-Editing/Deleting a Channel
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Factory sales details will be saved in the Channel of a dedicated Web Type named *Magento Store*.
 
-Once a Channel has been created it will appear in the Channel list. Now you can Edit your Channel details. 
-Click the Channel name in the list. The Channel details list will appear. In the top right corner you will see possible 
-action buttons:
+Along with the Shopping Cart and Order entities added to the list by default, we also want to keep track of the contacts
+with the customer, so we have added the Contact Request entity.
 
-* :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels).
 
-  * You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be 
-    uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes 
-    functionality.
-  
-  * You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the system.
-  
-* :guilabel:`Edit` button will open Edit page that is very similar to the page you used to Create a Channel (See 
-  :ref:`Create a Channel <user-guide-channel-guide-creating-a-channel>` section), but details you have already  defined 
-  will be displayed
-  
-* :guilabel:`Delete` button will delete the Channel. 
+.. image:: ./img/channel_guide/Screenshots/channels_created_web.png
+
+3.
+
+Retail outlet in Texas needs a separate Channel of a Custom Type named *Dallas Store*.
+
+Here we also want to monitor the contacts, so we ha added the Contact Request entity. Along with that, there are two
+Custom entities:
+
+Item Ordered instances whereof represent the things ordered by the customer but not yet delivered to them. This
+could be as the customer has ordered the goods by phone, or if the store was currently out of stock. Each Goods Ordered 
+instance keeps details of the product to be delivered, delivery date, order status, details of how the order was made 
+and will be paid for.
+
+and 
+
+Item Purchased, instances whereof represent different things the customer has bought in the store. Goods Purchased 
+instances keep such details as name of a specific product, purchase volume, the goods price and total cost and date of 
+the purchase.
+
+The entities were created as an example in the :ref:`Entity Management Guide <user-guide-entity-management-guide`>. 
+
+This is how the page of the channel looks when we are creating it:
+
+.. image:: ./img/channel_guide/Screenshots/channels_created_custome.png
+
+..note:: 
+
+    Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
+    Channel entity could be created to represent it, where Customer Identities, would be the fund participants and 
+    other entities could represent charity events and type of help provided.
+    
+    Moreover, if there were many different funds to manage, a special type could be created, such that these entities 
+    we added to it by default.    
+ 
+
+
+.. _user-guide-channel-guide-edit:
+
+Managing Channels from the Grid
+--------------------------------
+
+Once a channel has been saved, it will appear in the Channels grid. A number of options is available for each
+Channel instance in the grid. Hover the mouse to *...* column to see them:
+
+
+.. image:: ./img/channel_guide/Screenshots/channels_edit.png
+
+
+- Click |IcDelete| to delete the Channel instance from the system. 
 
 .. caution:: 
 
-    You cannot change Channel Type if data from the Channel has been uploaded into the system at least once. 
-    
-    Please also keep in mind that **once a Channel has been deleted all the relevant data will be deleted.**
+    Once a Channel has been deleted all the relevant data will be deleted as well.
 
-    
+- Click |IcEdit| to get edit the Channel instance details. Edit page that is very similar to the page you used to 
+  :ref:`Create a Channel <user-guide-channel-guide-create>` section), but details you have already defined will be 
+  displayed
+
+.. caution:: 
+
+    You cannot change Channel Type if data from the Channel has been uploaded into the system at least once.
+
+- Click |IcView| to get to the page of the Channel instance. For example, out *Factory* channel page looks as follows:
+
+.. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view.png
+
+There is a number of actions available from the page.
+
+- Click :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels):
+
+  - You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be 
+    uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes 
+    functionality.
+  
+  - You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the 
+    system.
+  
+- Click :guilabel:`Edit` button edit the Channel instance
+  
+- Click :guilabel:`Delete` button to delete the Channel instance 
+
+  
 Editing Entities from a Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may 
 be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly 
-authorized Users.
+authorized Users. When you open a specific Channel instance page, there will be two icons in the Action tab. Click 
+|IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
+We can use the functionality, if, for example, there appeared a need to add a new field to the Item Ordered entity.
 
-Entities may be edited from *System --> Entities --> Entity Management*. Entities, assigned to a Channel, may be viewed 
-and/or edited by duly authorized users from the Channel page.
+.. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view_edit_entity.png
 
-When you open a specific Channel type, there will be two icons in the Action tab. Click |IcView| to see the Entity 
-details. Click |IcEdit| icon to change the Entity. 
+Please refer to the `Entity Management Guide <user-guide-entity-management-guide>` for more details. 
 
 .. note:: 
 
     If you don't have necessary permissions, you will see a browser-specific message on access denial. 
 
-    
-Synchronizing a Magento Channel Data
-------------------------------------
 
-As a matter of case, Oro Platform provides for integration of OroCRM with different third-party systems and integration 
-can be done for different Channels in the course of customization.
-However, OroCRM provide embedded integration capabilities for Magento Channels.
+Multichannel Customer Profile     
+------------------------------
 
-Once you have created a Magento type channel and 
-:ref:`defined <user-guide-channel-guide-define-integration-details-for-a-magento-channel>`, its integration details
-information from Magento will be uploaded into OroCRM automatically subject to a predefined schedule (once an hour by 
-default). 
-You can enable two-way synchronization settings and manually start synchronization.
+This way, channels provide for population of the system with customer entities. Details of multiple customer records are
+then assigned to the same Account instance. From the Account page and with the :ref:`reports 
+functionality<report-management-guide>` OroCRM provides a 360 degree profile of customer activities and interaction of 
+a specific business, person or group of people.
 
 
-Two Way Synchronization
-^^^^^^^^^^^^^^^^^^^^^^^
+Multichannel Customer Profile Example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In order to enable two-way synchronization:
+This way, John&Sons have now got a separate channel for each of the customer sources. Sales and communication details
+are recorded for a specific instance of a customer entity assigned to each of the channels. All the customer entities 
+are assigned to one account, from which the managers can see all of those activities regardless the specific ground used
+for them.
 
-- Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
+For example, there is a *Home2Go* construction company. 
 
-- Click on its Integration link
+John&Sons factory has already implemented several successful projects with them. Leads and then Opportunities that 
+corresponded to the projects were assigned to the same B2B Customer instance named *Home2Go*, but were assigned to 
+different Contact instances, subject to the manager running the project.
+One more project is being negotiated now and represented in the system as an Opportunity assigned to the *Home2Go* B2B
+Customer.
+The B2B Customer was assigned to the *Home2Go* Account.
 
-- Go to *Synchronization Settings* tab of the emerged page
+For smaller purchases that do not require long negotiations and many-page agreements, Home2Go's managers have
+purchased materials from the John&Sons Magento store. A specific Web Customer was created for each of the managers'
+account (Magento users). However, all of these Web Customers were assigned to the *Home2Go* Account (the same as 
+for the B2B Customer).
 
-- Check *Enable Two Way Sync* box
+During a current project in Texas, construction engineers were missing some necessary equipment and addressed the retail
+outlet to purchase it. They have bought most of what they needed and ordered the rest. Customer Identities were created
+for each of the engineers and details on the goods purchased and ordered were saved. All these Customer Identities were
+assigned to the *Home2Go* Account, as well.
 
-- Define the priority in case of conflicts between the data (e.g. the same customer was edited from OroCRM and from 
-  Magento:
+Home2Go Account page keeps information on all of these activities.
+
    
-  - Remote wins: Magento settings will be saved in Magento and loaded to OroCRM
-  
-  - Local wins: OroCRM settings will be saved in OroCRM and loaded to Magento  
-
-  
-Start Synchronization Manually
-""""""""""""""""""""""""""""""
-
-In order to start the synchronization manually:
-
-- Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
-
-- Click on its Integration link
-
-- Click :guilabel:`Schedule Sync` button. *A sync job has been added to the queue. Check progress.* note will appear. 
-
-- The data is being synchronized. You can click *Check progress* link to see the synchronization status.
-
-
-Channels Usage Examples
------------------------
-
-Once the Channels have been created, data for their Entity properties can be loaded into the System and processed 
-therein. Speaking less IT-language it means that now you can add info from any kind of your retail spots to the OroCRM 
-and gain unified one-point access to analyse and monitor this data (which of course, will no way limit the drill-down 
-capabilities if you want to focus on one specific Channel.
-
-
-1
-^^
-
-You sell flowers, toys and souvenirs at several Magento stores. You want to keep track of our customers (especially the 
-ones who buy things from different shops) and to review how sales go.*
-
-- Create Magento channels that correspond to our shop
-
-- Fill it with Entities that correspond to Customers, Shopping Carts and Sales
-
-- Define specific details you want to know for each Entity type
-
-*Now for each instance of the entity theses details can be loaded into the system and processed there. This means you 
-can monitor customers, regardless  of the shop, can make reports on on the activity and assess how many things 
-from the cart were actually bought and push the sales with timely customer-focused communications.*
- 
-
-2
-^^
-
-You sell after-sales support services to customers of our partners and want to keep track of them, to know what partner 
-are worth working on with, what are our gains and if the customers attracted from the partners address us for 
-additional services.
-
-- Create a Custom Channel Type "Partnership Programs"
-
-- Populate the System with Channels of the Type.
-
-- For each of the Channels define a set of Entities, including Partner Details (this may be a mere name, or a list 
-  including address, shipping details, names of contact persons, etc., Service Provided (details 
-  on the Services) and Customers Attracted (basic Customer information including contract prolongation, additional 
-  services, total money paid, etc.).
-
-*Now, details of the Customers Attracted, Partners and Services may be processed in the System and used to build 
-appropriate work-flows and reports.*
-
-
-3
-^^
-
-You own a furniture retail outlet. From time to time, people come in and out wondering about the things you can make. 
-You have decided to run a research and find out how many of those will become our customers and how they have learned 
-about our shop.
-
-- Create a B2B type Channel for our shop (by the way, these may be several shops)
-
-- Assign this Channel Entity "Leads" (embedded entity sharpened for analyses of potential customers)
-      
-- Specify the set of details to be collected, e.g. personal details of the people and a set of answers to "Why are you 
-  here?" question.
-
-*Now, the "Leads" information can be used as a part of your Sales Process work-flow in the system, you can easily 
-collect, process and monitor it.*
-
-.. |IcDelete| image:: ./img/channel_guide/Buttons/IcDelete.png
+.. |IcDelete| .. image:: ./img/channel_guide/Buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ./img/channel_guide/Buttons/IcEdit.png
+.. |IcEdit| .. image:: ./img/channel_guide/Buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ./img/channel_guide/Buttons/IcView.png
+.. |IcView| .. image:: ./img/channel_guide/Buttons/IcView.png
    :align: middle
-   
-.. |S03| image:: ./img/channel_guide/Screenshots/S03.png
-   :width: 100mm
-   
-.. |S04| image:: ./img/channel_guide/Screenshots/S04.png
-   :width: 100mm
-
-.. |S05| image:: ./img/channel_guide/Screenshots/S05.png
-   :width: 75%
-
-.. |S06| image:: ./img/channel_guide/Screenshots/S06.png
-   :width: 100mm
-   
-.. |M01| image:: ./img/channel_guide/MenuItems/M01.png
-   :width: 40mm
-   
-.. |M02| image:: ./img/channel_guide/MenuItems/M02.png
-   :width: 40mm
-
-.. |M03| image:: ./img/channel_guide/MenuItems/M03.png
-   :width: 40mm
-   
-.. |M04| image:: ./img/channel_guide/MenuItems/M04.png
-   :width: 40mm
-   
-.. |M05| image:: ./img/channel_guide/MenuItems/M05.png
-   :width: 40mm
-   
-.. |M06| image:: ./img/channel_guide/MenuItems/M06.png
-   :width: 40mm
-   
-.. |M07| image:: ./img/channel_guide/MenuItems/M07.png
-   :width: 40mm
-   
-.. |M08| image:: ./img/channel_guide/MenuItems/M08.png
-   :width: 40mm
 
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
