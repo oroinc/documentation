@@ -1,13 +1,13 @@
 
 .. _user-guide-channel-guide
 
-The Problem
-------------
+The Problem to Solve
+--------------------
 
 John&Sons factory sells building and finishing materials to different scale construction businesses. They have also got 
 an outlet for retail and small wholesale in Dallas. Recently they have launched a Magento store, where the users can 
 order any amount of goods.
-Along with numerous benefits, this diversified approach has brought some challenges, such as the need to control 
+Along with numerous benefits, this diversified approach has brought some challenges such as the need to control 
 customer relations at many end-points, keeping in mind that some of the customers or representative thereof may reach 
 the company at different grounds.
 
@@ -27,18 +27,18 @@ assigned are specified:
 
 - Type of a Channel instance defines mandatory and optional settings used for the channel
 
-- Instances assigned to a channel, define the types of information that can be collected and processed for it.
+- Instances assigned to a channel, define the types of information that can be collected and processed for it. 
+  In other   words, *if you have created Channel A, Channel B and Channel C and assigned the an Entity E, every 
+  time someone creates an instance of the Entity E in the system, one of the Channel A, B, C has to be chosen 
+  for the instance.* 
 
-In other words, *if you have created Channel A, Channel B and Channel C and assigned the an Entity E, every time someone
-creates an instance of the Entity E in the system, one of the Channel A, B, C has to be chosen for the instance.* 
-
-For each Channel instance there must be specified a Customer entity instances (there are different entities that 
+For each Channel instance there must be specified a Customer entity instance (there are different entities that 
 represent customers for each Channel type.
 
-Each of the Customer entity instances can be assigned an instance of the Contact entity, aimed to keep contact details, 
+Each of the Customer entity instances can be assigned to an instance of the Contact entity, aimed to keep contact details, 
 including full name, billing and shipping address and any other meaningful details such as hierarchy in the company etc.
   
-Each of the Customer entity instances must be assigned an instance of the Account entity. Several Customer entity 
+Each of the Customer entity instances must be assigned to an instance of the Account entity. Several Customer entity 
 instances (regardless of the Channel type) may be assigned to the same Account instance that performs the role of 
 aggregator for their details.
 
@@ -129,8 +129,8 @@ The three fields are mandatory and **must** be defined:
 3. Fill the Channel with Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As it was mentioned above, *Channel Entities* define types of instances that can be collected and processed in the 
-System for the channel. 
+As mentioned above, *Channel Entities* define types of instances that can be collected and processed in the 
+system for the channel. 
 
 You can assigned an Entity to a Channel instance from the "Entities" tab that you will see when 
 :ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
@@ -138,7 +138,7 @@ You can assigned an Entity to a Channel instance from the "Entities" tab that yo
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
 
 Channel instances are by default assigned the Entities specially created in OroCRM and meeting the type targets. At the
-same time any channel can be assigned other entities, including :ref:`Custom entities <entity-management-create>` 
+same time, any channel can be assigned other entities, including :ref:`Custom entities <entity-management-create>` 
 created by the user or added in the course of customization subject to specific customer's needs.
 
 These way, we can divide all the entities as follows:
@@ -265,7 +265,7 @@ tab/section below the System Entities. Use the scroll bar to get to them.
 
 For B2B and Magento Channel their specific values will be already in the list. Both System and Custom Entities can be 
 added to the same list.
-Choose an Entity and click :guilabel:`Add` button. The entity will be Added to the list. You can also delete entities 
+Choose an entity and click :guilabel:`Add` button. The entity will be Added to the list. You can also delete entities 
 from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
 
 4. Save the Channel in the System
@@ -307,14 +307,6 @@ Factory sales details will be saved in the Channel of a dedicated Web Type named
 Along with the Shopping Cart and Order entities added to the list by default, we also want to keep track of the contacts
 with the customer, so we have added the Contact Request entity.
 
-.. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
-
-The entity instances represent a case when the factory is subcontracting and along with other details, contain 
-End Customer and Principle Contractor field that are many to one relations for a B2B customer entity instance. 
-
-The entity was created as an example in the :ref:`Entity Management Guide <user-guide-entity-management-guide`>. 
-
-This is how the page of the channel looks when we are creating it:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_web.png
 
@@ -351,11 +343,6 @@ This is how the page of the channel looks when we are creating it:
     Moreover, if there were many different funds to manage, a special type could be created, such that these entities 
     we added to it by default.    
  
-  - Charity Event : its instances represent a specific event the person or company represented with a Customer Identity 
-    instance assigned to the Channel has taken part in
-
-  - Help : its instances represent the types of help provided by the person or company. Each instance of the Help entity
-    is assigned to a specific instance of the Charity Event entity  
 
 
 .. _user-guide-channel-guide-edit:
@@ -363,7 +350,7 @@ This is how the page of the channel looks when we are creating it:
 Managing Channels from the Grid
 --------------------------------
 
-Once a channel has been saved created it will appear in the Channels grid. A number of options is available for each
+Once a channel has been saved, it will appear in the Channels grid. A number of options is available for each
 Channel instance in the grid. Hover the mouse to *...* column to see them:
 
 
@@ -374,7 +361,7 @@ Channel instance in the grid. Hover the mouse to *...* column to see them:
 
 .. caution:: 
 
-Once a Channel has been deleted all the relevant data will be deleted as well.
+    Once a Channel has been deleted all the relevant data will be deleted as well.
 
 - Click |IcEdit| to get edit the Channel instance details. Edit page that is very similar to the page you used to 
   :ref:`Create a Channel <user-guide-channel-guide-create>` section), but details you have already defined will be 
@@ -439,7 +426,7 @@ One more project is being negotiated now and represented in the system as an Opp
 Customer.
 The B2B Customer was assigned to the *Home2Go* Account.
 
-For smaller purchases that do not require long negotiations run and massive agreements executed, Home2Go's managers have
+For smaller purchases that do not require long negotiations and many-page agreements, Home2Go's managers have
 purchased materials from the John&Sons Magento store. A specific Web Customer was created for each of the managers'
 account (Magento users). However, all of these Web Customers were assigned to the *Home2Go* Account (the same as 
 for the B2B Customer).
