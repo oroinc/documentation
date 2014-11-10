@@ -33,13 +33,14 @@ may be assigned to the same Account that performs the role of aggregator for the
 Creating a Channel
 ------------------
 
-1. Go to :ref:`*Create Channel*<user-guide-channel-guide-go-to-channels>` page
+1. Go to :ref:`Create Channel <user-guide-channel-guide-go-to-channels>` page
 
 2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel instance
 
 3. :ref:`Fill <user-guide-channel-guide-entities>` the Channel with Entities    
 
 4. :ref:`Save <user-guide-channel-guide-save>` the Channel in the system
+
 
 .. _user-guide-channel-guide-go-to-channels:
 
