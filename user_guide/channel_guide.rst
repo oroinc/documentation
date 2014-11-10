@@ -26,8 +26,9 @@ assigned are specified:
 For each Channel instance there must be specified a Customer entity instance (there are different entities that 
 represent customers for each Channel type.
 
-Each of the Customer entity instances can be assigned to an instance of the Contact entity, aimed to keep contact details, 
-including full name, billing and shipping address and any other meaningful details such as hierarchy in the company etc.
+Each of the Customer entity instances can be assigned to an instance of the Contact entity, aimed to keep contact 
+details, including full name, billing and shipping address and any other meaningful details such as hierarchy in the 
+company etc.
   
 Each of the Customer entity instances must be assigned to an instance of the Account entity. Several Customer entity 
 instances (regardless of the Channel type) may be assigned to the same Account instance that performs the role of 
