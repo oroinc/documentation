@@ -27,18 +27,11 @@ For each Channel instance there must be specified an entity that represent custo
 Each Customer record must be assigned to an Account record. Several Customer records (regardless of the Channel type) 
 may be assigned to the same Account that performs the role of aggregator for their details.
 
-In the article you can find step by step descriptions of the channel creation and management process, illustrated with 
-the  example. 
-
-.. _user-guide-channels:
-
 
 .. _user-guide-channel-guide-create:
 
 Creating a Channel
 ------------------
-
-A Channel can be created with several simple steps:
 
 1. Go to :ref:`*Create Channel*<user-guide-channel-guide-go-to-channels>` page
 
