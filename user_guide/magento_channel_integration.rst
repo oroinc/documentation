@@ -17,7 +17,7 @@ Define Integration Details for a Magento Channel
 ------------------------------------------------
 
 Once you have chosen a Channel Type = *Magento*, along with other 
-:ref:`General details <user-guide-channel-guide-general> to define, there will appear a new mandatory field 
+:ref:`General details <user-guide-channel-guide-general>` to define, there will appear a new mandatory field 
 **Integration***. Click *Configure integration* link to get to the form.
 
 The following fields should be specified:
@@ -107,7 +107,6 @@ In order to enable two-way synchronization:
 
   
 Start Synchronization Manually
-
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In order to start the synchronization manually:
 
