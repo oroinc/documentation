@@ -23,16 +23,9 @@ assigned are specified:
   time someone creates an instance of the Entity E in the system, one of the Channel A, B, C has to be chosen 
   for the instance.* 
 
-For each Channel instance there must be specified a Customer entity instance (there are different entities that 
-represent customers for each Channel type.
-
-Each of the Customer entity instances can be assigned to an instance of the Contact entity, aimed to keep contact 
-details, including full name, billing and shipping address and any other meaningful details such as hierarchy in the 
-company etc.
-  
-Each of the Customer entity instances must be assigned to an instance of the Account entity. Several Customer entity 
-instances (regardless of the Channel type) may be assigned to the same Account instance that performs the role of 
-aggregator for their details.
+For each Channel instance there must be specified an entity that represent customers for each Channel type.
+Each Customer record must be assigned to an Account record. Several Customer records (regardless of the Channel type) 
+may be assigned to the same Account that performs the role of aggregator for their details.
 
 In the article you can find step by step descriptions of the channel creation and management process, illustrated with 
 the solution of the *Problem*. 
