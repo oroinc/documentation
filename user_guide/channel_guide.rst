@@ -1,28 +1,25 @@
 
 .. _user-guide-channel-guide:
 
-Channels Management Guide
-=========================
+Channels Management
+===================
 
 Functionality Overview
 ----------------------
 
-Multichannel functionality provides for diversified approach to different sources of customers with ability of their
-further aggregation into one record.
+Multichannel functionality provides for diversified approach to different sources of customers with ability 
+agregate their details.
 
-**Channel** is an entity, records whereof represent one source of customers. For each Channel recored 
-(hereinafter referred as "channel")  created in the system, along with other 
-:ref:`general details <user-guide-channel-guide-general>` name, type and set of entities assigned are specified:
+**Channel** entities represent one source of customers. For each Channel record ("channel") created in the 
+system, along with other :ref:`general details <user-guide-channel-guide-general>` name, type and set of 
+entities assigned are specified:
 
 - Name of a channel uniquely identifies it in the system
 
 - Type of a channel defines mandatory and optional settings used for the channel
 
-- Entities assigned to a channel, define the types of information that can be collected and processed for it. 
-  In other words, *if you have created Channel A, Channel B and Channel C and assigned them an Entity E, every 
-  time someone creates an instance of the Entity E in the system, one of the Channel A, B, C has to be chosen 
-  for it.* 
-
+- Entities assigned to a channel define the types of information that can be collected from it. 
+ 
 Each channel is assigned a specific Customer entity. Records of the Customer entities ("customers") can be 
 created within the channel.
 
