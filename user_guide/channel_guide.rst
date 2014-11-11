@@ -9,13 +9,13 @@ Functionality Overview
 
 Multichannel functionality enables source-specific collection of customer information and its aggregation.
 
-**Channel** entities represent one source of customers. For each Channel record ("channel") created in the 
-system, along with other :ref:`general details <user-guide-channel-guide-general>` name, type and set of 
-entities assigned are specified:
+A **Channel** entity represent one source of customers and customers' data. For each Channel record 
+("channel") created in the system, along with other :ref:`general details <user-guide-channel-guide-general>` 
+name, type and set of entities are specified:
 
 - Name of a channel uniquely identifies it in the system
 
-- Type of a channel defines mandatory and optional settings used for the channel
+- Type of a channel defines the customer and customer data source-specific settings
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
