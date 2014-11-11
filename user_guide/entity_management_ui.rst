@@ -37,8 +37,8 @@ In order to create an Entity:
    type, auditabilty and visibility in the grid 
   
 6. Create at least one :ref:`field <platform-entity-management-create-fields>` for the entity instances and/or 
-  :ref:`define a relation <platform-entity-management-create-relation>` and :ref:`Update the 
-  Schema <platform-entity-management-create-update>` 
+   :ref:`define a relation <platform-entity-management-create-relation>` and :ref:`Update the 
+   Schema <platform-entity-management-create-update>` 
 
 
 .. _platform-entity-management-create-general-information:
@@ -70,7 +70,7 @@ The following two fields are mandatory and **must** be defined:
   
   .. note::
   
-    Labels may duplicate, though keep in mind that from the average user respective it will be impossible to distinguish
+    Labels may duplicate, though keep in mind that from the UI perspective it will be impossible to distinguish
     them, so it is better to keep them unique, unless there is some specific need for duplication."
     
 The following general entity details may be specified:
@@ -104,18 +104,13 @@ In the section you will see the list of check-boxes for all the activities avail
 
 - Choose *Yes* in the drop-down and it will be possible to add free text *Notes* for each instance of the Entity.
 
-.. hint::
 
-   If there is more than one activity possible for the entity (e.g. if you can add both Emails and notes), instead of
-   separate buttons, the user will see a 
-
-   
 .. _platform-entity-management-create-attachments:
 
 *Attachment Settings*
 ---------------------
 
-You can enable attachments being added to instances of the entity and define limitation therefore.
+You can enable addinf attachments to instances of the entity and define respective limitations.
 
 .. image:: ./img/entity_management_create/new_entity_attachment.png
 
@@ -143,14 +138,15 @@ You can enable attachments being added to instances of the entity and define lim
 The following three fields must be specified for every entity created:
 
 .. csv-table:: Mandatory Entity Fields
-  :header: "Field", "Description"
+  :header: "Name", "Description"
   :widths: 10, 30
 
   "
   .. _platform-entity-management-create-other-ownership-type:
   
-  **Ownership Type***","Defines the level at which permissions will be set for instances of the entity. Available 
-  values:
+  **Ownership Type***","Defines the level at which permissions will be set for instances of the entity. 
+  
+  Available values:
   
   - None : no authority required to see and process the entity.
   
@@ -306,9 +302,9 @@ The following Yes/No options can be defined for each field
   "**Show on Form**","Field can be edited on the edit form of the entity instances
   
   .. caution:: 
-  
-      If *No* is chosen for *Show on Form* of the field, it cannot be edited"
-      
+    
+    If *No* is chosen for *Show on Form* of the field, it cannot be edited"
+     
   "**Show on View**","Field can be seen in the details of the entity instances"
   
   "**Available in Email Templates**","The field can be used to create E-mail templates"
