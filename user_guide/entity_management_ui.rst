@@ -1,27 +1,20 @@
 .. _platform-entity-management-from-UI:
 
-Entity Management from UI
-============================================
+Entity Management
+=================
 
 
-What We Are Talking About
--------------------------
+Functionality Overview
+----------------------
 
-Entity is a group of rules and setting such used to create and process all the records of the system the belong to this 
-group (such records are called *the Entity instances*).
+Entity is a group of rules and setting used to create and process all the records of the system the belong to this 
+group.
 
-In most of the cases the system is populated with necessary entities in the course of customization with dedicated code.
-Such entities are called, System entities. 
-However, sometimes there appears a need to create additional entities, referred to as Custom entities.
+The system can be populated with necessary entities in the course of customization. Such entities are called, 
+System entities. 
+However, sometimes there appears a need to create additional entities from the UI. They are called Custom entities.
 
-This specific article is devoted to creation of Entities in the Oro Platform from the Web UI.
 
-.. note::
-   
-    Entity Management is performed in the same manner both for the OroCRM System and for the Oro Platform, whereas the 
-    only difference is that OroCRM is pre-filled with CRM-oriented Entities.
-
-    
 .. _platform-entity-management-create-from-ui-steps:
     
 Creating an Entity from UI
@@ -29,25 +22,23 @@ Creating an Entity from UI
 
 In order to create an Entity: 
 
-- Go the the *System --> Entities --> Entity Management* page and click the :guilabel:`Create Entity` button
+1. Go the the *System --> Entities --> Entity Management* page and click the :guilabel:`Create Entity` button
+   *Entities/New entity* form will appear 
 
-- *Entities/New entity* form will appear 
+2. Fill the :ref:`general Information <platform-entity-management-create-general-information>` : define basic details 
+   of the Entity created
 
-  - Fill the :ref:`general Information <platform-entity-management-create-general-information>` : define basic details 
-    of the Entity created
+3. Define the :ref:`communication and collaboration settings <platform-entity-management-create-commun-collab>` : 
+   enable activities for the Entity and define if notes are allowed
 
-  - Define the :ref:`communication and collaboration settings <platform-entity-management-create-commun-collab>` : 
-    enable activities for the Entity and define if notes are allowed
+4. Specify the :ref:`attachments settings <platform-entity-management-create-attachments>`
 
-  - Specify the :ref:`attachments settings <platform-entity-management-create-attachments>`
-
-  - Define some :ref:`other processing settings <platform-entity-management-create-other>`, i.e. the ownership 
-    type, auditabilty and visibility in the grid 
+5. Define :ref:`other processing settings <platform-entity-management-create-other>`, i.e. the ownership 
+   type, auditabilty and visibility in the grid 
   
-- Create at least one :ref:`field <platform-entity-management-create-fields>` for the entity instances and/or 
-  :ref:`define a relation <platform-entity-management-create-relation>` 
-
-- :ref:`Update the Schema <platform-entity-management-create-update>` 
+6. Create at least one :ref:`field <platform-entity-management-create-fields>` for the entity instances and/or 
+  :ref:`define a relation <platform-entity-management-create-relation>` and :ref:`Update the 
+  Schema <platform-entity-management-create-update>` 
 
 
 .. _platform-entity-management-create-general-information:
