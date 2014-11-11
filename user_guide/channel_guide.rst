@@ -15,15 +15,15 @@ name, type and set of entities are specified:
 
 - Name of a channel uniquely identifies it in the system
 
-- Type of a channel defines defines nature of the customer and customerdata source and corresponding system settings
+- Type of a channel defines defines nature of the customer data 
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
-Each channel is assigned a specific Customer entity. Records of the Customer entities ("customers") can be 
-created within the channel.
+Each channel is assigned a Customer entity that corresponds tp the channel type. 
+Records of the Customer entities ("customers") can be created within the channel.
 
-Special entity Account is implemented to aggregate details of customers from different channels: each customer
-must be assigned an Account record ("account") and several customers (regardless of their channel type) 
+Customer data from different channels is areaggregated under an Account record ("account"): each customer
+must be assigned an account, and several customers (regardless of their channel type) 
 may be assigned to the same account.
 
 
