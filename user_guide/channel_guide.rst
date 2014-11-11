@@ -35,7 +35,7 @@ Creating a Channel
 1. Go to *System --> Channels* page and click :guilabel:`Create Channel` button in the top right corner to get 
    to the *Create Channel* page.
 
-2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel instance
+2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel
 
 3. :ref:`Fill <user-guide-channel-guide-entities>` the Channel with Entities    
 
