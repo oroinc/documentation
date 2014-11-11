@@ -128,75 +128,38 @@ automatically, subject to the chosen channel type:
 - Custom Channel - Custome Identity
 
 Some other entities are pre-implemented in the system and sharpened for a specific channel type, they will appear
-in the list of entitieЫ by default once a channel type has been chosen. These entities are optional and may be removed.
+in the list of entitieЫ by default once a channel type has been chosen. These entities are optional and may be 
+removed:
 
-
-Some other entities sharpened for specific type of customer relations will be added to the list by default
-Once you have chosen a channeChannel instances are by default assigned the Entities specially created in OroCRM and meeting the type targets. At the
-same time, any channel can be assigned other entities, including \:ref:`Custom entities <entity-management-create>`\ 
-created by the user or added in the course of customization subject to specific customer's needs.
-
-These way, we can divide all the entities as follows:
-
-- Mandatory and Optional System entities meaningful for a specific Channel Type
-
-- Mandatory and Optional System entities that can be assigned to any Channel Type
-
-- Custom Entities
-
-Let's consider each of them:
-
-.. csv-table:: **System entities meaningful for B2B Channels**
+.. csv-table:: **Optional default entities for B2B channels**
   :header: "**Name**","**Description**"
   :widths: 10, 30
   
   "**Opportunity**","Represents potential sales most likely to become a success. 
   
-  - Is added to the entities of a B2B Type channel by default but may be removed
-  
-  - Contains such fields as Opportunity opening and closure dates, closure reasons probability of the Opportunity 
-    gain, customer needs and described solution descriptions, etc.
+  - Contains details like the opportunity opening and closure dates, success probability, closure reasons, customer
+    needs and solution descriptions, etc.
     
-  - Each Opportunity instance must be assigned to an only instance of a Channel of a B2B Type
-  
-  - Each Opportunity instance must be assigned to an only instance of a B2B Customer
-  
-  - Each Opportunity instance can be assigned to an only Contact instance
-  
   - More information about Opportunities and their pre-implemented usage in the system is provided in 
     the /ref:`*Opportunities Management Guide* <user-guide-system-entities-opportunities>`/."
 
   "**Lead**","Represents potential Opportunity.
   
-  - Is added to the entities of a B2B Type channel by default but may be removed 
-  
   - Contains related personal and business details and reference Opportunity (if any)
-  
-  - Each Lead instance must be assigned to an only instance of a Channel of a B2B Type
-  
-  - Each Lead instance can be assigned to an only instance of a B2B Customer
-  
-  - Each Opportunity instance can be assigned to an only Contact instance
   
   - More information about Leads and their usage pre-implemented in the System is provided in the \:ref:`*Leads 
     Management Guide* <user-guide-system-entities-leads>`\."
 
   "**Sales Process**","Represents a sales workflow instance. 
    
-  - Is added to the entities of a B2B Type channel by default but may be removed 
-  
   - Used to keep and process data on the Sales Process flow from a Lead to a Closed Opportunity, subject to a 
     workflow predefined in the System.           
   
-  - Each Sales Process instance must be assigned to an only instance of a Channel of a B2B Type
-  
-  - Each Sales Process instance must be assigned to an only instance of Lead or Opportunity 
-
   - More information about Sales Process Workflow and its usage pre-implemented in the System is provided in 
     the \:ref:`*Workflow Management Guide* <user-guide-workflow-management>`.\"  
 
     
-.. csv-table:: **System entities meaningful for Magento Channels**
+.. csv-table:: **Optional default entities for Magento Channels**
   :header: "**Name**", "**Description**"
   :widths: 10, 30
   
@@ -207,35 +170,24 @@ Let's consider each of them:
   "**Order**","Keeps details of actual sales made by the customer within the Channel, including store details, 
   Customer's details, one-time and total credited, paid and taxed amounts, feed-backs, etc. 
   
-  Is added to the entities of a Web Type channel by default but may be removed"
-
-
- 
 Information about System entities meaningful for Magento Channels is uploaded into the OroCRM during synchronization as 
 described in the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article.
 
 For more details on Magento Entities in OroCRM please refer to the \:ref:`Magento Entities Management 
 Guide <user-guide-magento-entities>`\."
 
-Currently there is one **System entity meaningful for any Channels** prior to any customization, it is:
-
-.. csv-table::
-  :header: "**Name**", "**Description**"
-  :widths: 10, 30
+Another pre-implemented entity is **Contact Request**ю Its records keeps information on each case of a contact 
+attempt, its success or failure and target.
   
-  "**Contact Request**","Keeps information on each case of a contact attempt, its success or failure and target."
-
-  
-As it has been mentioned before,**Custom Entities** are created for specific Customer needs and their instances can 
-contain any required details to be filled and processed by the System. For more details on Customer entities please 
+**Custom Entities** are created for specific Customer needs and their instances can contain any required 
+details to be filled and processed by the System. For more details on Customer entities please 
 kindly see the \:ref:`Entity Management Guide <user-guide-entity-management-guide`>\. 
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
 tab/section below the System Entities. Use the scroll bar to get to them.
 
-For B2B and Magento Channel their specific values will be already in the list. Both System and Custom Entities can be 
-added to the same list.
-Choose an entity and click :guilabel:`Add` button. The entity will be Added to the list. You can also delete entities 
-from the list. Click |IcDelete| to do so. This will remove the Entity from this Channel's list (not from the System).
+To add an entity to the channel list, choose the entity and click :guilabel:`Add` button. The entity will be added 
+to the list. 
+To delete an entity, click |IcDelete| icon. This will remove the entity from this channel's list (not from the System).
 
 
 .. _user-guide-channel-guide-save:
@@ -252,24 +204,22 @@ John&Sons factory sells building and finishing materials to different scale cons
 an outlet for retail and small wholesale in Dallas. Recently they have launched a Magento store, where the users can 
 order any amount of goods.
 Along with numerous benefits, this diversified approach has brought some challenges such as the need to control 
-customer relations at many end-points, keeping in mind that some of the customers or representative thereof may reach 
+customer relations at many end-points, keeping in mind that some of the customers may reach 
 the company at different grounds. 
 
 John&Sons need three Channels.
 
 1.
 
-Factory sales are of business-to-business nature, so we have created a B2B Type Channel named *Factory*.
+Factory sales are of business-to-business nature, so we have created a Channel of B2B Type named *Factory*.
 
 As we want to keep track of potential and actual opportunities and sales and keep the customer communications within 
 the same sales process, we have kept all the entities added to the list by default.
-We have also created and added a custom entity *Subcontract*
+We have also created and added a custom entity *Subcontract*, that keep details of final customer and general 
+contractor in cases when the factory is subcontracting.
 
 
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
-
-The entity instances represent a case when the factory is subcontracting and along with other details, contain 
-End Customer and Principle Contractor field that are many to one relations for a B2B customer entity instance. 
 
 The entity was created as an example in the \:ref:`Entity Management Guide <user-guide-entity-management-guide`>\. 
 
@@ -280,7 +230,7 @@ This is how the page of the channel looks when we are creating it:
 
 2. 
 
-Factory sales details will be saved in the Channel of a dedicated Web Type named *Magento Store*.
+Factory sales details will be saved in the channel of a dedicated Web Type named *Magento Store*.
 
 Along with the Shopping Cart and Order entities added to the list by default, we also want to keep track of the contacts
 with the customer, so we have added the Contact Request entity.
@@ -290,20 +240,20 @@ with the customer, so we have added the Contact Request entity.
 
 3.
 
-Retail outlet in Texas needs a separate Channel of a Custom Type named *Dallas Store*.
+Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
 
 Here we also want to monitor the contacts, so we ha added the Contact Request entity. Along with that, there are two
 Custom entities:
 
-Item Ordered instances whereof represent the things ordered by the customer but not yet delivered to them. This
+Item Ordered entity: its records represent the things ordered by a customer but not yet delivered to them. This
 could be as the customer has ordered the goods by phone, or if the store was currently out of stock. Each Goods Ordered 
-instance keeps details of the product to be delivered, delivery date, order status, details of how the order was made 
+record keeps details of the product to be delivered, delivery date, order status, details of how the order was made 
 and will be paid for.
 
 and 
 
-Item Purchased, instances whereof represent different things the customer has bought in the store. Goods Purchased 
-instances keep such details as name of a specific product, purchase volume, the goods price and total cost and date of 
+Item Purchased: its records represent different things the customer has bought in the store. Goods Purchased 
+records keep such details as name of a specific product, purchase volume, the goods price and total cost and date of 
 the purchase.
 
 The entities were created as an example in the \:ref:`Entity Management Guide <user-guide-entity-management-guide`>\. 
@@ -316,10 +266,10 @@ This is how the page of the channel looks when we are creating it:
 
     Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
     Channel entity could be created to represent it, where Customer Identities, would be the fund participants and 
-    other entities could represent charity events and type of help provided.
+    other entities could represent charity events and types of help provided.
     
     Moreover, if there were many different funds to manage, a special type could be created, such that these entities 
-    we added to it by default.    
+    were added to it by default.    
  
 
 
@@ -328,7 +278,7 @@ This is how the page of the channel looks when we are creating it:
 Managing Channels from the Grid
 --------------------------------
 
-Once a channel has been saved, it will appear in the Channels grid. A number of options is available for each
+Once a channel has been saved, it will appear in the *Channels* grid. A number of options is available for each
 Channel instance in the grid. Hover the mouse to *...* column to see them:
 
 
@@ -339,17 +289,17 @@ Channel instance in the grid. Hover the mouse to *...* column to see them:
 
 .. caution:: 
 
-    Once a Channel has been deleted all the relevant data will be deleted as well.
+    Once a channel has been deleted all the relevant data will be deleted as well.
 
-- Click |IcEdit| to get edit the Channel instance details. Edit page that is very similar to the page you used to 
-  :ref:`Create a Channel <user-guide-channel-guide-create>` section), but details you have already defined will be 
+- Click |IcEdit| to edit the channel details. Edit page very similar to the page you used to 
+  :ref:`create a channel <user-guide-channel-guide-create>`), but details you have already defined will be 
   displayed
 
 .. caution:: 
 
-    You cannot change Channel Type if data from the Channel has been uploaded into the system at least once.
+    You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
-- Click |IcView| to get to the page of the Channel instance. For example, out *Factory* channel page looks as follows:
+- Click |IcView| to get to the page of the channel. For example, out *Factory* channel page looks as follows:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view.png
 
@@ -357,16 +307,15 @@ There is a number of actions available from the page.
 
 - Click :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels):
 
-  - You can deactivate an Active channel. Once the channel has been deactivated, no new data from the Channel will be 
-    uploaded to the system. All the data loaded while the Channel was active is considered by the Sales Processes 
-    functionality.
+  - You can deactivate an active channel. Once the channel has been deactivated, no new data from the channel will be 
+    uploaded to the system.
   
-  - You can activate an Inactive channel. It will become Active and data from the Channel will be uploaded to the 
+  - You can activate an inactive channel. It will become active and data from the channel will be uploaded to the 
     system.
   
-- Click :guilabel:`Edit` button edit the Channel instance
+- Click :guilabel:`Edit` button edit the channel
   
-- Click :guilabel:`Delete` button to delete the Channel instance 
+- Click :guilabel:`Delete` button to delete the channel 
 
   
 Editing Entities from a Channel
@@ -374,8 +323,9 @@ Editing Entities from a Channel
 
 There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may 
 be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly 
-authorized Users. When you open a specific Channel instance page, there will be two icons in the Action tab. Click 
+authorized Users. When you open a specific channel page, there will be two icons in the action tab. Click 
 |IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
+
 We can use the functionality, if, for example, there appeared a need to add a new field to the Item Ordered entity.
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view_edit_entity.png
@@ -390,40 +340,35 @@ Please refer to the `Entity Management Guide <user-guide-entity-management-guide
 Multichannel Customer Profile     
 ------------------------------
 
-This way, channels provide for population of the system with customer entities. Details of multiple customer records are
-then assigned to the same Account instance. From the Account page and with the \:ref:`reports 
-functionality <report-management-guide>`\ OroCRM provides a 360 degree profile of customer activities and interaction of 
-a specific business, person or group of people.
+Channels provide for population of the system with customer records and their details. Details of multiple customer 
+records are then assigned to the same account. Account page and \:ref:`provides a 360 degree profile of customer
+activities and interaction of a specific business, person or group of people.
 
 
 Multichannel Customer Profile Example
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This way, John&Sons have now got a separate channel for each of the customer sources. Sales and communication details
-are recorded for a specific instance of a customer entity assigned to each of the channels. All the customer entities 
-are assigned to one account, from which the managers can see all of those activities regardless the specific ground used
-for them.
+John&Sons have now got a separate channel for each of the customer sources. Sales and communication details
+are saved for each customer in different channels. All the customer are assigned to one account, from which 
+the managers can see all of those activities regardless the specific ground used for them.
 
 For example, there is a *Home2Go* construction company. 
 
-John&Sons factory has already implemented several successful projects with them. Leads and then Opportunities that 
-corresponded to the projects were assigned to the same B2B Customer instance named *Home2Go*, but were assigned to 
-different Contact instances, subject to the manager running the project.
-One more project is being negotiated now and represented in the system as an Opportunity assigned to the *Home2Go* B2B
-Customer.
-The B2B Customer was assigned to the *Home2Go* Account.
+John&Sons factory has already implemented several successful projects with them. Leads and Opportunities were
+created for each of these projects and assigned to a B2B Customer named *Home2Go*.
+The B2B Customer is assigned to the *Home2Go* Account.
 
 For smaller purchases that do not require long negotiations and many-page agreements, Home2Go's managers have
 purchased materials from the John&Sons Magento store. A specific Web Customer was created for each of the managers'
-account (Magento users). However, all of these Web Customers were assigned to the *Home2Go* Account (the same as 
+account (Magento users). However, all of these Web Customers were assigned to the *Home2Go* account (the same as 
 for the B2B Customer).
 
 During a current project in Texas, construction engineers were missing some necessary equipment and addressed the retail
 outlet to purchase it. They have bought most of what they needed and ordered the rest. Customer Identities were created
 for each of the engineers and details on the goods purchased and ordered were saved. All these Customer Identities were
-assigned to the *Home2Go* Account, as well.
+assigned to the *Home2Go* account, as well.
 
-Home2Go Account page keeps information on all of these activities.
+Home2Go account page keeps information on all of these activities.
 
    
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
