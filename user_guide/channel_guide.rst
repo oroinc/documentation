@@ -36,36 +36,20 @@ may be assigned to the same account.
 Creating a Channel
 ------------------
 
-1. Go to :ref:`Create Channel <user-guide-channel-guide-go-to-channels>` page
+1. Go to *System --> Channels* page and click :guilabel:`Create Channel` button in the top right corner to get 
+   to the *Create Channel* page.
 
 2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel instance
 
 3. :ref:`Fill <user-guide-channel-guide-entities>` the Channel with Entities    
 
-4. :ref:`Save <user-guide-channel-guide-save>` the Channel in the system
-
-
-.. _user-guide-channel-guide-go-to-channels:
-
-1. Go to Create Channel
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Enter the system and go to *System --> Channels*
-
-*System / Channels* page will appear.
-
-Click :guilabel:`Create Channel` button in the top right corner to get to the *Create Channel* page.
-
-.. hint::
-   
-   If you cannot see or manage any of the menus, pages, forms and/or tabs described hereinunder, please check your role 
-   permissions or address your system administrator.
-
+4. Once you have finished adding the entities, click :guilabel:`Save and Close` button in the top right corner. Success 
+   message will appear and your Channel will be saved in the system.
 
 .. _user-guide-channel-guide-general:
 
-2. Define General Details
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Define General Details
+^^^^^^^^^^^^^^^^^^^^^^
 
 In the *General* tab define basic Channel information.
 
@@ -110,8 +94,8 @@ The three fields are mandatory and **must** be defined:
     
 .. _user-guide-channel-guide-entities:
 
-3. Fill the Channel with Entities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Fill the Channel with Entities
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Entities assigned to a channel define what records OroCRM can collect from it. 
 
@@ -189,14 +173,6 @@ To add an entity to the channel list, choose the entity and click :guilabel:`Add
 to the list. 
 To delete an entity, click |IcDelete| icon. This will remove the entity from this channel's list (not from the System).
 
-
-.. _user-guide-channel-guide-save:
-
-4. Save the Channel in the System
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Once you have finished adding the entities, click :guilabel:`Save and Close` button in the top right corner. Success 
-message will appear and your Channel will be saved in the system.
 
 Channels Examples
 -----------------
