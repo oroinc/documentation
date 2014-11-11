@@ -15,7 +15,7 @@ name, type and set of entities are specified:
 
 - Name of a channel uniquely identifies it in the system
 
-- Type of a channel defines the customer and customer data source-specific settings
+- Type of a channel defines defines nature of the customer and customerdata source and corresponding system settings
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
