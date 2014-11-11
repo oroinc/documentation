@@ -93,7 +93,7 @@ The three fields are mandatory and **must** be defined:
 Fill the Channel with Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Entities assigned to a channel define what records OroCRM can collect from it. 
+Entities assigned to a channel define what data OroCRM can collect from it. 
 
 To add an entity to a channel, use the "Entities" tab when 
 :ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
@@ -108,7 +108,7 @@ automatically, subject to the chosen channel type:
 - Custom Channel - Custome Identity
 
 Some other entities are pre-implemented in the system and sharpened for a specific channel type, they will appear
-in the list of entitieЫ by default once a channel type has been chosen. These entities are optional and may be 
+in the list of entities by default once a channel type has been chosen. These entities are optional and may be 
 removed:
 
 .. csv-table:: **Optional default entities for B2B channels**
@@ -156,8 +156,8 @@ described in the :ref:`Magento Channel Integration <user-guide-magento-channel-i
 For more details on Magento Entities in OroCRM please refer to the \:ref:`Magento Entities Management 
 Guide <user-guide-magento-entities>`\."
 
-Another pre-implemented entity is **Contact Request**ю Its records keeps information on each case of a contact 
-attempt, its success or failure and target.
+Another pre-implemented entity is **Contact Request**. Its records keeps information on each case of a contact 
+attempt.
   
 **Custom Entities** are created for specific Customer needs and their instances can contain any required 
 details to be filled and processed by the System. For more details on Customer entities please 
@@ -181,7 +181,8 @@ the company at different grounds.
 
 John&Sons need three Channels.
 
-1.
+*Factory* Channel
+"""""""""""""""""
 
 Factory sales are of business-to-business nature, so we have created a Channel of B2B Type named *Factory*.
 
@@ -200,7 +201,8 @@ This is how the page of the channel looks when we are creating it:
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
 
 
-2. 
+Magento Store
+"""""""""""""
 
 Factory sales details will be saved in the channel of a dedicated Web Type named *Magento Store*.
 
@@ -210,11 +212,12 @@ with the customer, so we have added the Contact Request entity.
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_web.png
 
-3.
+Dallas Retail Outlet
+"""""""""""""""""""""
 
 Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
 
-Here we also want to monitor the contacts, so we ha added the Contact Request entity. Along with that, there are two
+Here we also want to monitor the contacts, so we have added the Contact Request entity. Along with that, there are two
 Custom entities:
 
 Item Ordered entity: its records represent the things ordered by a customer but not yet delivered to them. This
@@ -309,16 +312,8 @@ Please refer to the `Entity Management Guide <user-guide-entity-management-guide
     If you don't have necessary permissions, you will see a browser-specific message on access denial. 
 
 
-Multichannel Customer Profile     
-------------------------------
-
-Channels provide for population of the system with customer records and their details. Details of multiple customer 
-records are then assigned to the same account. Account page and \:ref:`provides a 360 degree profile of customer
-activities and interaction of a specific business, person or group of people.
-
-
 Multichannel Customer Profile Example
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------
 
 John&Sons have now got a separate channel for each of the customer sources. Sales and communication details
 are saved for each customer in different channels. All the customer are assigned to one account, from which 
