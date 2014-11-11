@@ -7,8 +7,7 @@ Channels Management
 Functionality Overview
 ----------------------
 
-Multichannel functionality provides for diversified approach to different sources of customers with ability 
-agregate their details.
+Multichannel functionality enables source-specific collection of customer information and its aggregation.
 
 **Channel** entities represent one source of customers. For each Channel record ("channel") created in the 
 system, along with other :ref:`general details <user-guide-channel-guide-general>` name, type and set of 
