@@ -10,22 +10,25 @@ Functionality Overview
 Multichannel functionality provides for diversified approach to different sources of customers with ability of their
 further aggregation into one record.
 
-**Channel** is an entity, instances whereof represent one source of customers. For each Channel instance created in the
-system, along with other :ref:`general details <user-guide-channel-guide-general>` name, type and set of entities 
-assigned are specified:
+**Channel** is an entity, records whereof represent one source of customers. For each Channel recored 
+(hereinafter referred as "channel")  created in the system, along with other 
+:ref:`general details <user-guide-channel-guide-general>` name, type and set of entities assigned are specified:
 
-- Name of a Channel instance uniquely identifies it in the system
+- Name of a channel uniquely identifies it in the system
 
-- Type of a Channel instance defines mandatory and optional settings used for the channel
+- Type of a channel defines mandatory and optional settings used for the channel
 
-- Instances assigned to a channel, define the types of information that can be collected and processed for it. 
-  In other   words, *if you have created Channel A, Channel B and Channel C and assigned the an Entity E, every 
+- Entities assigned to a channel, define the types of information that can be collected and processed for it. 
+  In other words, *if you have created Channel A, Channel B and Channel C and assigned them an Entity E, every 
   time someone creates an instance of the Entity E in the system, one of the Channel A, B, C has to be chosen 
-  for the instance.* 
+  for it.* 
 
-For each Channel instance there must be specified an entity that represent customers for the Channel type.
-Each Customer record must be assigned to an Account record. Several Customer records (regardless of the Channel type) 
-may be assigned to the same Account that performs the role of aggregator for their details.
+Each channel is assigned a specific Customer entity. Records of the Customer entities ("customers") can be 
+created within the channel.
+
+Special entity Account is implemented to aggregate details of customers from different channels: each customer
+must be assigned an Account record ("account") and several customers (regardless of their channel type) 
+may be assigned to the same account.
 
 
 .. _user-guide-channel-guide-create:
@@ -55,7 +58,7 @@ Click :guilabel:`Create Channel` button in the top right corner to get to the *C
 
 .. hint::
    
-   If you cannot see or manage any of the menus, pages, forms and/or tabs described hereunder, please check your role 
+   If you cannot see or manage any of the menus, pages, forms and/or tabs described hereinunder, please check your role 
    permissions or address your system administrator.
 
 
@@ -72,25 +75,21 @@ The three fields are mandatory and **must** be defined:
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Status**","Current status of the Channel instance. The following two values are possible:
+  "**Status**","Current status of the сhannel.
+  
+  *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
+  if a сhannel is being configured for future use or is out of date.
 
-  - *Inactive*: (default); no data will be loaded from the Channel; the option is useful if a Channel is being 
-    configured for future use or is out of date. (For inactive channels no new data is uploaded to the system, but all 
-    the data loaded while the Channel was active is considered by the reports.
-
-  - *Active*: data will be loaded from the Channel, can be viewed in the system and is considered by the reports.
-
-  By default the filed value is set to *Inactive*"
-   
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
   meaningful." 
    
-  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the Channel instance 
-  created. The following types are available:
+  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
+  
+  The following types are initially available:
    
-  - *B2B*: the type dedicated for managing mostly off-line B2B customer relations
+  - *B2B*: dedicated for managing B2B customer relations
    
-  - *Web*: the type sharpened for :term:`Magento` shops
+  - *Web*: sharpened for :term:`Magento` stores
    
   - *Custom*: any other channels, subject to specific business needs and goals"
 
@@ -98,14 +97,14 @@ The three fields are mandatory and **must** be defined:
 .. hint::
 
     If there is a need to create numerous channels with the same set of rules and settings (e.g. several on-line shops 
-    at a platform other then Magento, or retail outlets or whatever else is appropriate for your business, OroCRM may be
-    customized with new Channel Types, such that certain settings are predefined for all the Channel instances of the 
-    Type.
+    at a platform other then Magento, or retail outlets, etc. OroCRM may be customized with new Channel Types. 
+    Corresponding settings will be applied for all the channels of the Type.
  
 .. caution::
 
-    No Magento Channel can be saved without integration settings defined. Once you have chosen a Channel Type = 
-    *Magento*,  here will appear a new mandatory field **Integration***. Please, see 
+    No Magento Channel can be saved without integration settings defined. 
+    
+    Once you have chosen a Channel Type = *Magento*, there will appear a new mandatory field **Integration***. Please, see 
     :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for the details.
 
     
@@ -114,15 +113,26 @@ The three fields are mandatory and **must** be defined:
 3. Fill the Channel with Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As mentioned above, *Channel Entities* define types of instances that can be collected and processed in the 
-system for the channel. 
+Entities assigned to a channel define what records OroCRM can collect from it. 
 
-You can assigned an Entity to a Channel instance from the "Entities" tab that you will see when 
+To add an entity to a channel, use the "Entities" tab when 
 :ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
 
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
 
-Channel instances are by default assigned the Entities specially created in OroCRM and meeting the type targets. At the
+One of the entities defined for a channel must represent a customer and will be added to the entity list
+automatically, subject to the chosen channel type:
+
+- B2B Channel - B2B Customer
+- Magento Channel - Web Customer
+- Custom Channel - Custome Identity
+
+Some other entities are pre-implemented in the system and sharpened for a specific channel type, they will appear
+in the list of entitieЫ by default once a channel type has been chosen. These entities are optional and may be removed.
+
+
+Some other entities sharpened for specific type of customer relations will be added to the list by default
+Once you have chosen a channeChannel instances are by default assigned the Entities specially created in OroCRM and meeting the type targets. At the
 same time, any channel can be assigned other entities, including \:ref:`Custom entities <entity-management-create>`\ 
 created by the user or added in the course of customization subject to specific customer's needs.
 
@@ -139,18 +149,6 @@ Let's consider each of them:
 .. csv-table:: **System entities meaningful for B2B Channels**
   :header: "**Name**","**Description**"
   :widths: 10, 30
-  
-  "**B2B Customer**","Represents a person, a group of persons or business you are in a sales process with. 
-  
-  - Mandatory entity (Every Channel instance of B2B Type must contain it)
-  
-  - Contains information on the sales-related activities, lifetime sales values of the specific customer, etc.
-    
-  - Each B2B Customer instance must be assigned to an only instance of a Channel of a B2B Type
-  
-  - Each B2B Customer instance must be assigned to an only Account instance
-  
-  - Each B2B Customer instance can be assigned to an only Contact instance"
   
   "**Opportunity**","Represents potential sales most likely to become a success. 
   
@@ -202,12 +200,6 @@ Let's consider each of them:
   :header: "**Name**", "**Description**"
   :widths: 10, 30
   
-  "**Web Customer**","Represents on Magento user who has performed the sales. 
-  
-  - Mandatory entity (Every Channel instance of Web Type must contain it)
-  
-  - Contains relevant personal data and payment details, sales values and communications"
-  
   "**Cart**","Represent one |WT02|_ in Magento. 
   
   Is added to the entities of a Web Type channel by default but may be removed"
@@ -233,15 +225,6 @@ Currently there is one **System entity meaningful for any Channels** prior to an
   
   "**Contact Request**","Keeps information on each case of a contact attempt, its success or failure and target."
 
-
-Currently there is one **System entity default and mandatory for Custom Channels**, it is:
-
-.. csv-table::
-  :header: "**Name**", "**Description**"
-  :widths: 10, 30
-  
-  "**Customer Identity**","Represent one customer within the Channel. Each Customer Identity instance shall be assigned 
-  to an only Custom Type Channel and an only Account instance."
   
 As it has been mentioned before,**Custom Entities** are created for specific Customer needs and their instances can 
 contain any required details to be filled and processed by the System. For more details on Customer entities please 
