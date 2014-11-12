@@ -4,12 +4,14 @@
 Magento Channel Integration
 ============================
 
-As a matter of case, OroCRM can be integrated with different third-party systems and integration can be defined for 
-different Channel Types in the course of customization. However, OroCRM provides embedded integration capabilities for 
-Magento. 
 Channels of the *Web* Type in OroCRM are sharpened to support Magento stores. Creation and usage of a Magento Channel is
-described in more details in the :ref:`Channel Management Guide <user-guide-channel-guide>`. However, no such Channel 
-instance can be created and/or used, if integration settings have not been defined.
+described in more details in the :ref:`Channel Management <user-guide-channel-guide>` guide. However, no such channel 
+can be created nor used, if integration settings have not been defined.
+
+.. hint::
+    
+    OroCRM can be integrated with different third-party systems and integration can be defined for different Channel 
+    Types in the course of customization. Integration capabilities for Magento are pre-implemented. 
 
 .. _user-guide-magento-channel-integration-details:
 
@@ -50,7 +52,9 @@ The following fields should be specified:
      - Mandatory field The date to start the synchronization with; data uploaded into the Magento account since the 
        date, will be added to OroCRM and can be processed therein.
 
-.. hint::  Please address you Magento administrator for the information on SOAP settings details. 
+.. hint::  
+
+    Please address you Magento administrator for the information on SOAP settings details. 
 
 At this point you can click :guilabel:`Check Connection` button, to check if the settings you have defined above are 
 correct.
@@ -80,8 +84,8 @@ Once the connection details have been verified, the next fields will be filled w
 Synchronizing a Magento Channel Data
 ------------------------------------
 
-Once you have created a Magento type channel and defined its integration details information from Magento will be 
-uploaded into OroCRM automatically subject to a predefined schedule. 
+Once you have created a Magento type channel and defined its integration details information from the Magento store will 
+be uploaded into OroCRM automatically subject to a predefined schedule. 
 You can enable two-way synchronization settings and manually start synchronization.
 
 
@@ -119,4 +123,4 @@ In order to start the synchronization manually:
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status. 
 
 After successful synchronization, you can use OroCRM to manage customer relations at your Magento store, as described 
-in the ref:`Magento Entities Management Guide <user-guide-magento-entities-guide>`.
+in the ref: *Magento Entities Management* guide.
