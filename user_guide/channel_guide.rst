@@ -19,10 +19,10 @@ name, type and set of entities are specified:
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
-Each channel is assigned a Customer entity that corresponds tp the channel type. 
+Each channel is assigned a Customer entity that corresponds to the channel type. 
 Records of the Customer entities ("customers") can be created within the channel.
 
-Customer data from different channels is areaggregated under an Account record ("account"): each customer
+Customer data from different channels is aggregated under an Account record ("account"): each customer
 must be assigned an account, and several customers (regardless of their channel type) 
 may be assigned to the same account.
 
@@ -55,10 +55,10 @@ The three fields are mandatory and **must** be defined:
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Status**","Current status of the сhannel.
+  "**Status**","Current status of the channel.
   
   *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
-  if a сhannel is being configured for future use or is out of date.
+  if a channel is being configured for future use or is out of date."
 
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
   meaningful." 
@@ -84,8 +84,8 @@ The three fields are mandatory and **must** be defined:
 
     No Magento Channel can be saved without integration settings defined. 
     
-    Once you have chosen a Channel Type = *Magento*, there will appear a new mandatory field **Integration***. Please, see 
-    :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for the details.
+    Once you have chosen a Channel Type = *Magento*, there will appear a new mandatory field **Integration***. Please, 
+    see :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for the details.
 
     
 .. _user-guide-channel-guide-entities:
@@ -105,63 +105,54 @@ automatically, subject to the chosen channel type:
 
 - B2B Channel - B2B Customer
 - Magento Channel - Web Customer
-- Custom Channel - Custome Identity
+- Custom Channel - Custom Identity
 
 Some other entities are pre-implemented in the system and sharpened for a specific channel type, they will appear
 in the list of entities by default once a channel type has been chosen. These entities are optional and may be 
 removed:
 
 .. csv-table:: **Optional default entities for B2B channels**
-  :header: "**Name**","**Description**"
-  :widths: 10, 30
+ :header: "**Name**","**Description**"
+ :widths: 10, 30
   
-  "**Opportunity**","Represents potential sales most likely to become a success. 
+ "**Opportunity**","Represents potential sales most likely to become a success. 
   
-  - Contains details like the opportunity opening and closure dates, success probability, closure reasons, customer
-    needs and solution descriptions, etc.
-    
-  - More information about Opportunities and their pre-implemented usage in the system is provided in 
-    the /ref:`*Opportunities Management Guide* <user-guide-system-entities-opportunities>`/."
+ Contains details like the opportunity opening and closure dates, success probability, closure reasons, customer
+ needs and solution descriptions, etc."
 
   "**Lead**","Represents potential Opportunity.
   
-  - Contains related personal and business details and reference Opportunity (if any)
-  
-  - More information about Leads and their usage pre-implemented in the System is provided in the \:ref:`*Leads 
-    Management Guide* <user-guide-system-entities-leads>`\."
-
+ Contains related personal and business details and reference Opportunity (if any)"
+ 
   "**Sales Process**","Represents a sales workflow instance. 
    
-  - Used to keep and process data on the Sales Process flow from a Lead to a Closed Opportunity, subject to a 
-    workflow predefined in the System.           
-  
-  - More information about Sales Process Workflow and its usage pre-implemented in the System is provided in 
-    the \:ref:`*Workflow Management Guide* <user-guide-workflow-management>`.\"  
+ Used to keep and process data on the Sales Process flow from a Lead to a Closed Opportunity, subject to a 
+ workflow predefined in the System."           
+ 
+More information about B2B entities and their usage pre-implemented in the System is provided in the *B2B Channels
+and Their Entities* guide
 
-    
 .. csv-table:: **Optional default entities for Magento Channels**
-  :header: "**Name**", "**Description**"
-  :widths: 10, 30
+ :header: "**Name**", "**Description**"
+ :widths: 10, 30
   
-  "**Cart**","Represent one |WT02|_ in Magento. 
+ "**Cart**","Represent one |WT02|_ in Magento. 
   
-  Is added to the entities of a Web Type channel by default but may be removed"
+ Is added to the entities of a Web Type channel by default but may be removed"
 
-  "**Order**","Keeps details of actual sales made by the customer within the Channel, including store details, 
-  Customer's details, one-time and total credited, paid and taxed amounts, feed-backs, etc. 
+ "**Order**","Keeps details of actual sales made by the customer within the Channel, including store details, 
+ Customer's details, one-time and total credited, paid and taxed amounts, feed-backs, etc." 
   
 Information about System entities meaningful for Magento Channels is uploaded into the OroCRM during synchronization as 
-described in the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article.
+described in the *Magento Channel Integration* guide.
 
-For more details on Magento Entities in OroCRM please refer to the \:ref:`Magento Entities Management 
-Guide <user-guide-magento-entities>`\."
-
-Another pre-implemented entity is **Contact Request**. Its records keeps information on each case of a contact 
-attempt.
+Another pre-implemented entity is **Contact Request**. It refers to records uploaded to the system from a 
+pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
+details in the *Actions* guide.
   
 **Custom Entities** are created for specific Customer needs and their instances can contain any required 
 details to be filled and processed by the System. For more details on Customer entities please 
-kindly see the \:ref:`Entity Management Guide <user-guide-entity-management-guide`>\. 
+kindly see the *Entity Management* guide. 
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
 tab/section below the System Entities. Use the scroll bar to get to them.
 
@@ -169,6 +160,7 @@ To add an entity to the channel list, choose the entity and click :guilabel:`Add
 to the list. 
 To delete an entity, click |IcDelete| icon. This will remove the entity from this channel's list (not from the System).
 
+.. _user-guide-channel-guide_example:
 
 Channels Examples
 -----------------
@@ -182,7 +174,7 @@ the company at different grounds.
 John&Sons need three Channels.
 
 *Factory* Channel
-"""""""""""""""""
+^^^^^^^^^^^^^^^^^
 
 Factory sales are of business-to-business nature, so we have created a Channel of B2B Type named *Factory*.
 
@@ -194,26 +186,25 @@ contractor in cases when the factory is subcontracting.
 
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
 
-The entity was created as an example in the \:ref:`Entity Management Guide <user-guide-entity-management-guide`>\. 
+The entity was created as an example in the *Entity Management* guide
 
 This is how the page of the channel looks when we are creating it:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
 
 
-Magento Store
-"""""""""""""
+*Magento Store Channel*
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Factory sales details will be saved in the channel of a dedicated Web Type named *Magento Store*.
 
-Along with the Shopping Cart and Order entities added to the list by default, we also want to keep track of the contacts
-with the customer, so we have added the Contact Request entity.
+Contact Request form was embedded on the Website, so we have added the Contact Request entity.
 
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_web.png
 
-Dallas Retail Outlet
-"""""""""""""""""""""
+*Dallas Retail Outlet Channel*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
 
@@ -231,7 +222,7 @@ Item Purchased: its records represent different things the customer has bought i
 records keep such details as name of a specific product, purchase volume, the goods price and total cost and date of 
 the purchase.
 
-The entities were created as an example in the \:ref:`Entity Management Guide <user-guide-entity-management-guide`>\. 
+The entities were created as an example in the *Entity Management* guide
 
 This is how the page of the channel looks when we are creating it:
 
@@ -335,8 +326,9 @@ outlet to purchase it. They have bought most of what they needed and ordered the
 for each of the engineers and details on the goods purchased and ordered were saved. All these Customer Identities were
 assigned to the *Home2Go* account, as well.
 
-Home2Go account page keeps information on all of these activities.
+Account record is rather many-fold, and the screenshot show only a part of it:
 
+.. image:: ./img/channel_guide/Screenshots/channels_multi_ex.png
    
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
