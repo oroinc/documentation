@@ -1,7 +1,7 @@
 .. _user-guide-system-channel-entities-leads:
 
-B2B Channel Entities. Leads.
-=============================
+Channel Entities. Leads.
+========================
 
 .. _user-guide-system-channel-entities-leads:
 
@@ -10,329 +10,189 @@ Overview
 --------
 
 *Entity* is a grouping of things with common rules and/or data. Rules and/or setting defined for an Entity are applied 
-to all of its instances. Flexible and customizable Oro Platform-based :term:`OroCRM` solution can be filled with any 
-kind of Entities subject to your specific customer needs.
+to all of its instances. 
 
-However, Oro team has used our experience in sales and retail business and provided a number of embedded entities, that you
-can use right away or after mere customization.
+OroCRM provides a number of pre-implemented entities that may be assigned to a 
+:ref:`channel <user-guide-channel-guide`>.
 
 One of such entities is a *Lead*.
 
 Instances of a Lead entity represent people or businesses the have initial interest, authority and 
 budget to purchase a product or service from you. Intentions thereof may be yet unclear and often not backed up with 
 any arrangements. Once a probability of making a deal with a lead becomes high, the Lead instance becomes an 
-:term:`Opportunity`.
+:ref:`opportunity <user-guide-system-channel-entities-opportunities`.
 
+As soon as there is at least one Channel assigned a *Lead* entity, Lead records ("leads") may be added and processed in 
+the system.
 
-Once there is at least one Channel assigned a *Lead* entity (a :term:`B2B <B2B Channel>` or a 
-:term:`custom <Custom Component>` Channels):
+Now you can:
 
-- You can manage Lead instances from the devoted 
-  :ref:`Sales/Leads tab <user-guide-system-entities-leads-salesleads-tab>` in the OroCRM UI
+- :ref:`Create <user-guide-system-entities-leads-create>` new and :ref:`edit <user-guide-system-entities-leads-edit>`
+  existing Lead records from the UI. 
 
-- You can use details of the Lead instances to perform 
-  :ref:`Actions <user-guide-system-entities-actions-with-leads>`, such as an embedded *Send E-mail* and *Add note*
+- Perform different :ref:`actions <user-guide-system-entities-actions-with-leads>
 
-- You can analyse details of the Lead instances with ready-to-use and easy-to-customize 
-  :ref:`Reports <user-guide-system-entities-reports-with-leads>`
+- Analyse details of the Lead instances with :ref:`out of box reports <user-guide-system-entities-reports-with-leads>` 
+  or customized reports, created as provided by the *Reports* guide
 
-- You can refer to the Lead instances within a devoted B2B 
-  \:ref:`Sales Processes Workflow <-user-guide-sales-processes-workflow>` and customized 
-  \:ref:`Workflows <user-guide-workflow-management>`\
+- Refer to the Lead instances within a pre-implemented B2B-oriented workflow described in the 
+  :ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>` guide and customized workflows (see
+  :ref:`Workflows <user-guide-workflow-management>`)
 
+- Import and export lead records from/to .csv files (see 
+  :ref:`Import and Export Functionality <user_guide_export_import>` guide)
   
-.. _user-guide-system-entities-leads-salesleads-tab:
   
-Manage Leads from Sales/Leads Tab
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Once there is at least one Channel assigned a *Lead* entity (B2B or custom channel), *Leads* section will appear in the
-*Sales* menu. 
+.. _user-guide-system-entities-leads-create:
 
-.. hint:: 
+Create Leads from the UI
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-      If you cannot see the section, there may be still no Channels with a *Lead* Entity assigned to them in the
-      System. Please see the \:ref:`Channel Guide <user-guide-channel-guide>`\ and add necessary 
-      channels.
-
-      If the problem persists, you may not have User-rights to View\Edit the functionality.
-
-      Please address you system administrator.
-
-From here you can:
-
-- :ref:`Create <user-guide-system-entities-leads-salesleads-tab-create-leads>` Lead instances
- 
-- :ref:`Import <user-guide-system-entities-leads-salesleads-tab-import-leads>` Lead instances  from a .csv file
-
-- :ref:`Export <user-guide-system-entities-leads-salesleads-tab-export-leads>` Lead instances  in a .csv file
-
-- :ref:`Edit <user-guide-system-entities-leads-salesleads-tab-edit-leads>` existing Lead instances 
-
-
-.. _user-guide-system-entities-leads-salesleads-tab-create-leads:
-
-Create Leads
-""""""""""""
-
-Click :guilabel:`Create Lead` button to manually input the details of the Lead instance.
-The form specified for the Channel's Lead instances will appear.
-
-.. hint:: 
-
-      You can also create a Lead from the *System -->Sales Processes* page.
-      See \:ref:`Sales Processes <user-guide-sales-process-workflow-start-from-lead>`\ for details.
-
-The form contains mandatory system fields, optional system fields and custom fields (if any).
+Click :guilabel:`Create Lead` button to manually input the details of a lead. *Create Lead* form will appear.
 
 .. _user-guide-system-entities-leads-salesleads-tab-mandatory-fields-for-leads:
 
-*Mandatory System Fields for Leads*
-***********************************
+The following fields are mandatory and **must** be defined.
 
-Regardless the Lead entity settings, the following fields are mandatory and **must** be defined.
+.. csv-table:: **Mandatory Lead Properties**
+  :header: "**Name**","**Description**"
+  :widths: 10, 30
 
-Detailed description of each field is provided below:
+  "**Owner***","The field limits the list of Users authorized to manage the lead created to the selected User and Users 
+  whose roles allow managing leads owned by the User(e.g. a head of the User's Business Units, System administrator, 
+  etc.).
+  
+  By default, the User creating the Lead is chosen.
 
-.. list-table:: **Mandatory Lead Fields**
-   :widths: 10 30
-   :header-rows: 1
+  - Click |BCrLOwnerClear| button to clear the field
+  
+  - Click |Bdropdown| button to choose one of available Users from the list
 
-   * - Field
-     - Description
+  - Click |BGotoPage| button to choose from the *Select Owner* page."
 
-   * - **Owner***
-     - This field limits the list of Users authorized to manage the Lead created. Once a User is chosen only this User
-       and Users whose predefined Role provides for management of Lead instances that belong to this User(e.g. a head 
-       of the User's Business Units, System administrator) can do so.
+  "**Lead Name***","This is the name that will be used to refer to the Lead instance in the System.
+  
+  It is recommended to define a meaningful name."
 
-       By default, the User creating the Lead is chosen.
+  "**Channel***", "Any of active channels assigned the *Lead* entity.
+  
+  - Click |Bdropdown| button to choose one of available Channels from the list."
 
-            To clear the field click |BCrLOwnerClear| button.
-
-            Click |Bdropdown| button to choose one of available Users from the list.
-
-            Click |BGotoPage| button to choose from the *Select Owner* page.
-
-   * - **Lead Name***
-     - This is the name that will be used to refer to the Lead instance in the System.
-
-       It is recommended to define a meaningful name.
-
-   * - **Channel***
-     - Any of active Channels in the System that is assigned *Lead* Entity.
-
-            Click |Bdropdown| button to choose one of available Channels from the list.
-
-   * - **First Name***
-     - Name of the potential customer or contact person.
-
-   * - **Last Name***
-     - Last name of the potential customer or contact person.       
+   "**First Name and Last Name***","Personal details of the potential customer or contact person. The fields will be 
+   optional since 1.4.5"
        
-.. _user-guide-system-entities-leads-salesleads-tab-optional-system-fields-for-leads:
-       
-*Optional System Fields for Leads*
-**********************************
+Optional system fields keep additional information and may be left empty.
 
-Optional System Fields may be left empty. They are added based on Oro's experience as the fields that you may find
-handy and convenient to use.
+- If a field refers to a number (e.g. Number of employees) an integer value shall be filled (if any).
 
-Many of optional system fields are free text fields with transparent names, e.g.*Name Prefix*, *Job Title*,
-*Company Name*, *Website*, etc.
+- Optional system field **Source** is a drop-down that contains adjustable predefined list of possible lead sources, 
+  such as Website, Direct Mail, Partner, etc.
 
-If a field refers to a number (e.g. Number of employees) an integer value shall be filled (if any).
+- Optional system fields *Contact* and *B2B Customer* enable binding the lead created to records of corresponding 
+  Entities in the System.
+  
+  - Click |Bdropdown| button to choose one of available Contacts\Customers from the list
 
-Optional system field *Source* is a drop-down that contains adjustable predefined list of possible sources of the Lead 
-instances, such as Website, Direct Mail, Partner, etc.
+  - Click |BGotoPage| button to choose from the *Select Contact*\*Select B2B Customer* page
 
-Optional system fields *Contact* and *B2B Customer* enable binding the Lead instance created to the instances of
-corresponding Entities in the System.
+  - Click |Bplus| button to create a new Contact\new Customer in the System
 
-*Contact* instance represents one contact person and helps keeping all the contact details and process them for further
-usage (mailings, notification delivery, feedback requests etc.)
+  - Click |BCrLOwnerClear| button to clear the field
+  
+All the available custom fields of the Lead entity will be displayed in the *Additional* section (to create a custom 
+field go to *System --> Entities --> Entity Management --> Lead* and click :guilable: `Create Field` button).
 
-*B2B Customer* instance contains all the details of one customer available in the System (e.g. shipping and banking
-details, data on opportunities and purchases from all Channels, etc.).
+Click the button the right top corner of the page to save the lead in the system.
 
-- Click |Bdropdown| button to choose one of available Contacts\Customers from the list.
+*Create Leads. Example.*
+""""""""""""""""""""""""
 
-- Click |BGotoPage| button to choose from the *Select Contact*\*Select B2B Customer* page.
+John&Sons Company is providing building materials to different scale construction businesses. Company account managers 
+have run  preliminary negotiations with a construction company Build&Live on subcontracting in a bid for public school 
+construction. However the bid conditions have not yet been approved.
+To record details of the potential opportunity, a Lead instance with the following properties was created:
 
-- Click |Bplus| button to create a new Contact\new Customer in the System.
+- Owner: Jack Johnson (the user creating the instance)
 
-- To clear the field click |BCrLOwnerClear| button.
+- Lead name: Public School Bid 
 
-.. caution:: 
+- Channel: Factory (Channel instance of B2B Type created for the John&Sons Factory sales activities as an example in the
+ \:ref: Channel Management Guide <user-guide-channel-guide_example>`\ 
 
-      If at least one address field (e.g. *Street*) has been field, the rest of the address-related system fields
-      (namely *Country*, *City* and *Zip\postal code* **must** be defined)
+- First Name: James
 
-*Custom Fields for Leads*
-*************************
+- Last Name: Custolini
 
-All the Custom fields populated into the System and available for the User will be displayed in the *Additional*
-section (to create a custom field go to *System --> Entities --> Entity Management --> Create Field*).
+- Contact: James Custolini
 
+- Job Title: Sales Manager
 
-Once you have filled all the mandatory and desired fields, click :guilabel:`Save and Close` button and you will get to 
-the page of the Lead instance created. The Lead will also appear in the grid.
+- Phone number: 1626568976
 
+- E-mail: JCust@gmail.com
 
-.. _user-guide-system-entities-leads-salesleads-tab-import-leads:
+- B2BCustomer: left empty. This is the first contact with Build&Live, so there still have not been a B2B Customer 
+  created for the company. As probability of the deal completion is unclear, there is no essential sense in creating 
+  the record.
 
-Import Leads
-"""""""""""""
-
-If you want to upload multiple Lead instances manually or from a third-party enterprise application, it is worth 
-considering our *Import* option. OroCRM can process .scv files that correspond to the Data template.
-
-Click |Bdropdown| on the **Import** button in the top right corner of the *Sales\Leads* page. Choose *Download Data
-Template*. Prepare a .csv file that corresponds the template and click *Import* button, choose the .csv file for
-import, carefully read through the submission form and confirm the import.
-
-.. caution:: 
-
-      :ref:`Mandatory fields <user-guide-system-entities-leads-salesleads-tab-mandatory-fields-for-leads>` of
-      Lead instances **must** be specified
-
-Once import is over the new Lead instances will appear in the grid.
-
-.. hint:: 
-
-      You can leave "id" field empty, and the system will generate unique ids itself. Be careful, if there are
-      already some Lead instances in the system and you upload new ones with ids specified. If the two ids match (e.g. 
-      one from a third-party application and one already in the system), the system will treat the Lead instance 
-      creation, as update of an existing Lead instance.
-
-.. _user-guide-system-entities-leads-salesleads-tab-export-leads:
-
-Export Leads
-""""""""""""
-
-A functionality is provided to easily export a .csv file from the Leads grid:
-
-In order to export the .csv file:
-
-- Go to *Sales --> Leads* and click **Export** button. 
-
-- *"Export started. Please wait"* message will appear at the top of the screen.
-
-- As soon as the export has finished the message will change to: *"Export performed successfully, [number] 
-  downloads exported. Download result file"*.
-
-- Click the *"Download result file*" at the end of the message and the download will be performed subject to your 
-  browser settings.
-
-    
-.. _user-guide-system-entities-leads-salesleads-tab-edit-leads:
-    
-Edit Leads
-""""""""""
-There are several ways to edit Lead instances that are already present in the system:
-
-- Editing leads details from the WEB
-
-- Processing .csv files
-
-*Edit Leads from the Web*
-*************************
-
-For individual changes, the most convenient way is to go the Leads page and edit details of a specific Lead instance:
-
-- Go to the Sales --> Leads and click on the row of a required Lead instance in the grid.
-
-- The page of the Lead instance will emerge.
-
-- Click :guilabel:`Delete` button to delete this Lead instance from the System.
-
-- Click :guilabel:`Edit` button to edit the details.
-
-- *Create* form with previously defined values will appear. Re-define the values you need to change.
-  This is similar to :ref:`creating a Lead <user-guide-system-entities-leads-salesleads-tab-create-leads>`
-
-- Once you have done all the necessary changes, click :guilabel:`Save and Close` button and you will get back to the 
-  Leads grid.
-
-Details of the Lead instance will be updated.
+.. image:: ./img/leads/leads_example.png
+   align: right
 
 
-.. hint:: 
+.. _user-guide-system-entities-leads-edit:
 
-      You can use *Filters* functionality to simplify the search for a necessary Lead instance. 
+Edit Existing Leads 
+^^^^^^^^^^^^^^^^^^^
 
+Once a lead has been saved, it will appear in the *Leads* grid. A number of options is available for each lead. Hover 
+the mouse to *...* column to see them:
 
-*Edit Leads Using .csv Export/Import*
-*************************************
+- Click |IcDelete| to delete the lead from the system. 
 
-Another way to edit Lead instances, that is especially useful for bulk changes or in case of integration with a
-third-party applications is over .csv export and import. To do so, you need to
+- Click |IcEdit| to edit the channel details. Edit page very similar to the page you used to 
+  :ref:`create a lead <user-guide-system-entities-leads-create>`), but details you have already defined will be 
+  displayed
 
-- :ref:`Export <user-guide-system-entities-leads-salesleads-tab-export-leads>` a .csv file from the Leads grid
+- Click |IcView| to get to the lead's view page. For example, our *Public School Bid* lead view page looks as follows:
 
-- Edit the file
+.. image:: ./img/leads/leads_view_example.png
 
-- :ref:`Import <user-guide-system-entities-leads-salesleads-tab-import-leads>` the edited file.
+In the top right corner there are :ref:`action <user-guide-system-entities-actions-with-leads:>` , :guilabel:`Edit` 
+and :guilabel:`Delete` buttons.
+
+Another way to edit Lead instances, especially useful for bulk changes or in case of integration with a
+third-party applications, is over .csv export and import. It is described in the 
+:ref:Import and Export Functionality <user_guide_export_import>` guide.
+
 
 .. _user-guide-system-entities-actions-with-leads:
 
 Actions with Leads
-^^^^^^^^^^^^^^^^^^^
+------------------
 
-Subject to your business needs and specific customization, Oro Platform provides tools for creation of other Actions 
-using Lead instances, as well as instances of any other Entity populated into the OroCRM. However, there are two
-actions embedded in the OroCRM 1.4
+All the actions enabled for the Lead entity can be performed using the lead's details. Action buttons are available 
+in the top right corner of the view page. If there are over two different actions, the buttons are collected under the
+:guilabel:`Lead Actions` drop-down.
 
+**For example**, Jack&Sons managers have called to James Custolini from the Build&Live. To log the call, it is enough
+to choose the :guilabel:`Log Call` action button. The log call form filled with the lead's details will appear:
 
-*Add Note*
-""""""""""
+.. image:: ./img/leads/leads_actions_example.png
 
-To simplify your work with the Leads, there is an Add Note action.
-
-- Go to the Sales --> Leads and click on the row of a required Lead instance in the grid.
-
-- The page of the Lead instance will emerge. 
-
-- Click :guilabel:`Add Note` button in the top right corner of the page 
-
-- Fill the emerged free text form. The text will appear in the *Additional Information* section for the Lead instance.
-
-.. hint:: 
-
-      You can use *Filters* functionality to simplify the search for the necessary Lead instance. 
-
-*Send Email*
-""""""""""""
-
-In order to send an Email pre-filled with the details of specific Lead instance:
-
-- Go to the Sales --> Leads and click on the row of a required Lead instance in the grid.
-
-- The page of the Lead instance will emerge. 
-
-- Click :guilabel:`Send Email` button in the top right corner of the page
-
-- E-mail template already filled with the details of the Lead instance will appear. 
-
-- You only need to fill the Subject and Body and click *Send*
-
-.. hint:: 
-
-      You can use *Filters* functionality to simplify the search for the necessary Lead instance. 
-      
       
 .. _user-guide-system-entities-reports-with-leads:
 
 Reports with Leads
-^^^^^^^^^^^^^^^^^^^
+------------------
 
 OroCRM supports a very flexible functionality for creation of drill-down reports for any entities populated into the 
-OroCRM.
+OroCRM described in a separate guide.
 
 OroCRM 1.4 comes with two ready-to-use reports related to Lead instances.
 
 
 *Leads by Date*
-"""""""""""""""
+^^^^^^^^^^^^^^^
 
 This is a simple but useful report with which you can see how many Lead instances were created at a specific date for 
 all of your Channels.
@@ -349,7 +209,7 @@ It shows:
 
 
 *Lead by Geography*
-""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^
 
 This report is placed in the *Manage custom reports* section and can be edited. 
 "As is" the report shows:
@@ -358,10 +218,11 @@ This report is placed in the *Manage custom reports* section and can be edited.
 
 - number of Leads in this State
 
-For more details on the ways to customize the reports, please see the Report Guide (TBD)
+For more details on the ways to customize the reports, please see the Report Guide.
+
 
 Using Leads in the Workflows
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 For each Entity in the OroCRM you can specify one or several workflows that will provide for rules and guidelines on 
 possible actions/updates related to all the instances of the Entity. This way you can ensure consistency and proper
 succession of each step of the process using the instances.
