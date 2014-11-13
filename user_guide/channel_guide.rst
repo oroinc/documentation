@@ -7,9 +7,14 @@ Channels Management
 Functionality Overview
 ----------------------
 
-Multichannel functionality enables source-specific collection of customer information and its aggregation.
+Multichannel functionality enables source-specific collection and aggregation of customer information.
 
-A **Channel** entity represent one source of customers and customers' data. For each Channel record 
+..note::
+
+   For the purpose of the document the word "customer" refers to any recipient of a good, service, product or idea, 
+   including clients, buyers and purchasers, as well as community members and project participants  of any type.
+
+A **Channel** entity represent one source of customers and customer data. For each Channel record 
 ("channel") created in the system, along with other :ref:`general details <user-guide-channel-guide-general>` 
 name, type and set of entities are specified:
 
@@ -23,7 +28,7 @@ Each channel is assigned a \term:`Customer identity entity`\ that corresponds to
 Records of the Customer entities ("customers") can be created within the channel.
 
 Customer data from different channels is aggregated under an Account record ("account"): each customer
-must be assigned an account, and one aacount can have multiple customer identities from different channels
+must be assigned an account, and one account can have multiple customer identities from different channels
 associated with it (regardless of their channel types).
 
 
@@ -48,7 +53,7 @@ Creating a Channel
 Define General Details
 ^^^^^^^^^^^^^^^^^^^^^^
 
-In the *General* tab define basic Channel information.
+In the *General* section define basic Channel information.
 
 The three fields are mandatory and **must** be defined:
 
@@ -59,7 +64,7 @@ The three fields are mandatory and **must** be defined:
   "**Status**","Current status of the channel.
  
     *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
-  if a channel is being configured for future use or is out of date."
+    if a channel is being configured for future use or is out of date.)"
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
   meaningful." 
    "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
@@ -117,8 +122,8 @@ entities by default, once you have selected the channel type, they are optional 
 - **Custom Entities** are created for specific Customer needs and their instances can contain any required 
   details to be filled and processed by the System. For more details on Customer entities please 
   see the *Entity Management* guide. 
-  Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
-  tab/section below the System Entities. Use the scroll bar to get to them.
+  Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the 
+  Entities section. Use the scroll bar to get to them.
 
 To add an entity to the channel list, choose the entity and click :guilabel:`Add` button. The entity will be added 
 to the list. 
@@ -171,9 +176,6 @@ Contact Request form was embedded on the Website, so we have added the Contact R
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
-
-Here we also want to monitor the contacts, so we have added the Contact Request entity. Along with that, there are two
-Custom entities:
 
 Item Ordered entity: its records represent the things ordered by a customer but not yet delivered to them. This
 could be as the customer has ordered the goods by phone, or if the store was currently out of stock. Each Goods Ordered 
@@ -253,7 +255,7 @@ Editing Entities from a Channel
 
 There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may 
 be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly 
-authorized Users. When you open a specific channel page, there will be two icons in the action tab. Click 
+authorized Users. When you open a specific channel page, there will be two icons in the ACTIONS section. Click 
 |IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
 
 We can use the functionality, if, for example, there appeared a need to add a new field to the Item Ordered entity.
