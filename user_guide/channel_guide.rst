@@ -9,7 +9,7 @@ Functionality Overview
 
 Multichannel functionality enables source-specific collection and aggregation of customer information.
 
-..note::
+.. note::
 
    For the purpose of the document the word "customer" refers to any recipient of a good, service, product or idea, 
    including clients, buyers and purchasers, as well as community members and project participants  of any type.
