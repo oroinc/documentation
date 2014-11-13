@@ -119,7 +119,7 @@ entities by default, once you have selected the channel type, they are optional 
   pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
   details in the *Actions* guide.
   
-- **Custom Entities** are created for specific Customer needs and their instances can contain any required 
+- **Custom Entities** are created for specific Customer needs and their records can contain any required 
   details to be filled and processed by the System. For more details on Customer entities please 
   see the *Entity Management* guide. 
   Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the 
@@ -211,13 +211,13 @@ Managing Channels from the Grid
 --------------------------------
 
 Once a channel has been saved, it will appear in the *Channels* grid. A number of options is available for each
-Channel instance in the grid. Hover the mouse to *...* column to see them:
+channel in the grid. Hover the mouse to *...* column to see them:
 
 
 .. image:: ./img/channel_guide/Screenshots/channels_edit.png
 
 
-- Click |IcDelete| to delete the Channel instance from the system. 
+- Click |IcDelete| to delete the channel from the system. 
 
 .. caution:: 
 
