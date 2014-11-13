@@ -19,12 +19,12 @@ name, type and set of entities are specified:
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
-Each channel is assigned a Customer entity that corresponds to the channel type. 
+Each channel is assigned a \term:`Customer identity entity`\ that corresponds to the channel type. 
 Records of the Customer entities ("customers") can be created within the channel.
 
 Customer data from different channels is aggregated under an Account record ("account"): each customer
-must be assigned an account, and several customers (regardless of their channel type) 
-may be assigned to the same account.
+must be assigned an account, and one aacount can have multiple customer identities from different channels
+associated with it (regardless of their channel types).
 
 
 .. _user-guide-channel-guide-create:
@@ -39,8 +39,9 @@ Creating a Channel
 
 3. :ref:`Fill <user-guide-channel-guide-entities>` the Channel with Entities    
 
-4. Once you have finished adding the entities, click :guilabel:`Save and Close` button in the top right corner. Success 
-   message will appear and your Channel will be saved in the system.
+4. Once you have finished adding the entities, use the *Save* function (click :guilabel:`Save and Close`
+   or :guilabel:`Save` button in the top right corner). Success message will appear and your Channel 
+   will be saved in the system.
 
 .. _user-guide-channel-guide-general:
 
@@ -56,16 +57,14 @@ The three fields are mandatory and **must** be defined:
   :widths: 10, 30
 
   "**Status**","Current status of the channel.
-  
-  *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
+ 
+    *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
   if a channel is being configured for future use or is out of date."
-
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
   meaningful." 
-   
-  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
+   "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
   
-  The following types are initially available:
+  The following types are available in OroCRM 1.4 out of the box:
    
   - *B2B*: dedicated for managing B2B customer relations
    
@@ -73,19 +72,13 @@ The three fields are mandatory and **must** be defined:
    
   - *Custom*: any other channels, subject to specific business needs and goals"
 
-   
-.. hint::
-
-    If there is a need to create numerous channels with the same set of rules and settings (e.g. several on-line shops 
-    at a platform other then Magento, or retail outlets, etc. OroCRM may be customized with new Channel Types. 
-    Corresponding settings will be applied for all the channels of the Type.
- 
 .. caution::
 
-    No Magento Channel can be saved without integration settings defined. 
+    A Magento Channel cannot be saved without integration settings defined. 
     
-    Once you have chosen a Channel Type = *Magento*, there will appear a new mandatory field **Integration***. Please, 
-    see :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for the details.
+    Once you have selected *Magento* as a Channel Type, new mandatory field **Integration*** will appear. 
+    Please, see :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for 
+    the details.
 
     
 .. _user-guide-channel-guide-entities:
@@ -95,66 +88,37 @@ Fill the Channel with Entities
 
 Entities assigned to a channel define what data OroCRM can collect from it. 
 
-To add an entity to a channel, use the "Entities" tab when 
+To add an entity to a channel, use the "Entities" section when 
 :ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
 
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
 
-One of the entities defined for a channel must represent a customer and will be added to the entity list
+One of the entities defined for a channel must represent a customer identity and will be added to the entity list
 automatically, subject to the chosen channel type:
 
 - B2B Channel - B2B Customer
 - Magento Channel - Web Customer
-- Custom Channel - Custom Identity
+- Custom Channel - Customer Identity
 
-Some other entities are pre-implemented in the system and sharpened for a specific channel type, they will appear
-in the list of entities by default once a channel type has been chosen. These entities are optional and may be 
-removed:
+Some other entities are pre-implemented in the system and sharpened for a specific channel type, e.g. Opportunity
+and Lead for a B2B Channel or Cart and Order for a Magento Channel. The entities will be added to the list of 
+entities by default, once you have selected the channel type, they are optional and may be removed.
 
-.. csv-table:: **Optional default entities for B2B channels**
- :header: "**Name**","**Description**"
- :widths: 10, 30
-  
- "**Opportunity**","Represents potential sales most likely to become a success. 
-  
- Contains details like the opportunity opening and closure dates, success probability, closure reasons, customer
- needs and solution descriptions, etc."
+- More information about  System entities meaningful for B2B channels and their usage pre-implemented in the System 
+  is provided in the *B2B Channels and Their Entities* guide
 
-  "**Lead**","Represents potential Opportunity.
-  
- Contains related personal and business details and reference Opportunity (if any)"
- 
-  "**Sales Process**","Represents a sales workflow instance. 
-   
- Used to keep and process data on the Sales Process flow from a Lead to a Closed Opportunity, subject to a 
- workflow predefined in the System."           
- 
-More information about B2B entities and their usage pre-implemented in the System is provided in the *B2B Channels
-and Their Entities* guide
+- Information about System entities meaningful for Magento Channels is uploaded into the OroCRM during synchronization as 
+  described in the *Magento Channel Integration* guide.
 
-.. csv-table:: **Optional default entities for Magento Channels**
- :header: "**Name**", "**Description**"
- :widths: 10, 30
+- Another pre-implemented entity is **Contact Request**. It refers to records uploaded to the system from a 
+  pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
+  details in the *Actions* guide.
   
- "**Cart**","Represent one |WT02|_ in Magento. 
-  
- Is added to the entities of a Web Type channel by default but may be removed"
-
- "**Order**","Keeps details of actual sales made by the customer within the Channel, including store details, 
- Customer's details, one-time and total credited, paid and taxed amounts, feed-backs, etc." 
-  
-Information about System entities meaningful for Magento Channels is uploaded into the OroCRM during synchronization as 
-described in the *Magento Channel Integration* guide.
-
-Another pre-implemented entity is **Contact Request**. It refers to records uploaded to the system from a 
-pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
-details in the *Actions* guide.
-  
-**Custom Entities** are created for specific Customer needs and their instances can contain any required 
-details to be filled and processed by the System. For more details on Customer entities please 
-kindly see the *Entity Management* guide. 
-Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
-tab/section below the System Entities. Use the scroll bar to get to them.
+- **Custom Entities** are created for specific Customer needs and their instances can contain any required 
+  details to be filled and processed by the System. For more details on Customer entities please 
+  see the *Entity Management* guide. 
+  Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the Entities 
+  tab/section below the System Entities. Use the scroll bar to get to them.
 
 To add an entity to the channel list, choose the entity and click :guilabel:`Add` button. The entity will be added 
 to the list. 
