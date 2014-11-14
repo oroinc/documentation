@@ -131,37 +131,34 @@ To delete an entity, click |IcDelete| icon. This will remove the entity from thi
 
 Channels Examples
 -----------------
-John&Sons factory sells building and finishing materials to different scale construction businesses. They have also got 
-an outlet for retail and small wholesale in Dallas. Recently they have launched a Magento store, where the users can 
-order any amount of goods.
+John&Sons factory sells building materials to different scale construction businesses. They have also got 
+an outlet store for retail and small wholesale customers in Dallas. Recently they have launched an E-commerce site
+(based on Magento), where the users can order any amount of goods.
 Along with numerous benefits, this diversified approach has brought some challenges such as the need to control 
-customer relations at many end-points, keeping in mind that some of the customers may reach 
-the company at different grounds. 
+customer relations across multiple interaction points. 
 
-John&Sons need three Channels.
+Let's review how we would configure OroCRM for the John&Sons' multiple channel needs.
 
 *Factory* Channel
 ^^^^^^^^^^^^^^^^^
 
 Factory sales are of business-to-business nature, so we have created a Channel of B2B Type named *Factory*.
 
-As we want to keep track of potential and actual opportunities and sales and keep the customer communications within 
-the same sales process, we have kept all the entities added to the list by default.
-We have also created and added a custom entity *Subcontract*, that keep details of final customer and general 
-contractor in cases when the factory is subcontracting.
+We have left all the default entities. We have also created and added a custom entity *Subcontract*, that 
+keep details of final customer and general contractor in cases when the factory is subcontracting.
 
 
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
 
 The entity was created as an example in the *Entity Management* guide
 
-This is how the page of the channel looks when we are creating it:
+This is how the page of the Factory channel looks:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
 
 
-*Magento Store Channel*
-^^^^^^^^^^^^^^^^^^^^^^^
+*John&Sone E-commerce*
+^^^^^^^^^^^^^^^^^^^^^^
 
 Factory sales details will be saved in the channel of a dedicated Web Type named *Magento Store*.
 
@@ -170,24 +167,25 @@ Contact Request form was embedded on the Website, so we have added the Contact R
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_web.png
 
-*Dallas Retail Outlet Channel*
+*Dallas Retail Outlet Store*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
 
-Items Purchased and Item Ordered were created for to keep information about the goods purchased and ordered by a 
-customer but not yet delivered to them (e.g. ordered by phone or currently out of stock).
+Items Purchased keeps details of the goods purchased.
+Item Ordered keeps details to keep information  on the items ordered by a customer 
+but not yet delivered to them (e.g. ordered by phone or currently out of stock).
 
 
-This is how the page of the channel looks when we are creating it:
+This is how the page of the channel looks:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_custom.png
 
 .. note:: 
 
     Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
-    Channel entity could be created to represent it, where Customer Identity records, would be the fund participants and 
-    other entities could represent charity events and types of help provided.
+    Channel entity could be created to represent it, where Customer Identity records, would be the donors and 
+    other entities could represent specific charity events and money raised.
     
     Moreover, if there were many different funds to manage, a special type could be created at the back-end, such that 
     these entities were added to it by default.    
