@@ -15,7 +15,7 @@ Multichannel functionality enables source-specific collection and aggregation of
    including clients, buyers and purchasers, as well as community members and project participants  of any type.
 
 A **Channel** entity represent one source of customers and customer data. For each Channel record 
-("channel") created in the system, along with other :ref:`general details <user-guide-channel-guide-general>` 
+("channel") created in the system, along with other :ref:`general details <user-guide-channel-guide-general>`, 
 name, type and set of entities are specified:
 
 - Name of a channel uniquely identifies it in the system
@@ -24,11 +24,11 @@ name, type and set of entities are specified:
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
-Each channel is assigned a \term:`Customer identity entity`\ that corresponds to the channel type. 
-Records of the Customer entities ("customers") can be created within the channel.
+Each channel is assigned an entity that represents a customer (*Customer Identity entity*). Records of the can be 
+created within the channel.
 
-Customer data from different channels is aggregated under an Account record ("account"): each customer
-must be assigned an account, and one account can have multiple customer identities from different channels
+Customer data from different channels is aggregated under an Account record ("account"): each customer identity
+must be assigned to an account, and one account can have multiple customer identities from different channels
 associated with it (regardless of their channel types).
 
 
@@ -53,7 +53,7 @@ Creating a Channel
 Define General Details
 ^^^^^^^^^^^^^^^^^^^^^^
 
-In the *General* section define basic Channel information.
+Define basic Channel information in the *General* section. 
 
 The three fields are mandatory and **must** be defined:
 
@@ -79,8 +79,6 @@ The three fields are mandatory and **must** be defined:
 
 .. caution::
 
-    A Magento Channel cannot be saved without integration settings defined. 
-    
     Once you have selected *Magento* as a Channel Type, new mandatory field **Integration*** will appear. 
     Please, see :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for 
     the details.
@@ -94,7 +92,7 @@ Fill the Channel with Entities
 Entities assigned to a channel define what data OroCRM can collect from it. 
 
 To add an entity to a channel, use the "Entities" section when 
-:ref:`Creating <user-guide-channel-guide-create>` or :ref:`Editing <user-guide-channel-guide-edit>` a Channel.
+:ref:`creating <user-guide-channel-guide-create>` or :ref:`editing <user-guide-channel-guide-edit>` a Channel.
 
 .. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
 
@@ -109,10 +107,10 @@ Some other entities are pre-implemented in the system and sharpened for a specif
 and Lead for a B2B Channel or Cart and Order for a Magento Channel. The entities will be added to the list of 
 entities by default, once you have selected the channel type, they are optional and may be removed.
 
-- More information about  System entities meaningful for B2B channels and their usage pre-implemented in the System 
+- More information about  System entities default for B2B channels and their usage pre-implemented in the System 
   is provided in the *B2B Channels and Their Entities* guide
 
-- Information about System entities meaningful for Magento Channels is uploaded into the OroCRM during synchronization as 
+- Information about System entities default for Magento Channels is uploaded into the OroCRM during synchronization as 
   described in the *Magento Channel Integration* guide.
 
 - Another pre-implemented entity is **Contact Request**. It refers to records uploaded to the system from a 
@@ -123,7 +121,7 @@ entities by default, once you have selected the channel type, they are optional 
   details to be filled and processed by the System. For more details on Customer entities please 
   see the *Entity Management* guide. 
   Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the 
-  Entities section. Use the scroll bar to get to them.
+  Entities section.
 
 To add an entity to the channel list, choose the entity and click :guilabel:`Add` button. The entity will be added 
 to the list. 
@@ -177,18 +175,9 @@ Contact Request form was embedded on the Website, so we have added the Contact R
 
 Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
 
-Item Ordered entity: its records represent the things ordered by a customer but not yet delivered to them. This
-could be as the customer has ordered the goods by phone, or if the store was currently out of stock. Each Goods Ordered 
-record keeps details of the product to be delivered, delivery date, order status, details of how the order was made 
-and will be paid for.
+Items Purchased and Item Ordered were created for to keep information about the goods purchased and ordered by a 
+customer but not yet delivered to them (e.g. ordered by phone or currently out of stock).
 
-and 
-
-Item Purchased: its records represent different things the customer has bought in the store. Goods Purchased 
-records keep such details as name of a specific product, purchase volume, the goods price and total cost and date of 
-the purchase.
-
-The entities were created as an example in the *Entity Management* guide
 
 This is how the page of the channel looks when we are creating it:
 
@@ -197,11 +186,11 @@ This is how the page of the channel looks when we are creating it:
 .. note:: 
 
     Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
-    Channel entity could be created to represent it, where Customer Identities, would be the fund participants and 
+    Channel entity could be created to represent it, where Customer Identity records, would be the fund participants and 
     other entities could represent charity events and types of help provided.
     
-    Moreover, if there were many different funds to manage, a special type could be created, such that these entities 
-    were added to it by default.    
+    Moreover, if there were many different funds to manage, a special type could be created at the back-end, such that 
+    these entities were added to it by default.    
  
 
 
