@@ -33,6 +33,10 @@ from pygments.lexers.web import PhpLexer
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode']
 
+# set url for API links
+api_url_pattern = 'http://phpdoc.orocrm.com/platform/{namespace}namespaces{/namespace}{class}classes{/class}{method}classes{/method}/%(namespace)s{class}.%(class)s{/class}{method}.%(class)s{/method}.html{method}#method_%(method)s{/method}'
+namespace_separator = '.'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -99,6 +103,9 @@ highlight_language='php'
 
 # enable highlighting for PHP code not between ``<?php ... ?>`` by default
 lexers['php'] = PhpLexer(startinline=True)
+
+# use PHP as the primary domain
+primary_domain = 'php'
 
 # -- Options for HTML output ---------------------------------------------------
 
