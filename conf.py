@@ -34,6 +34,7 @@ from pygments.lexers.web import PhpLexer
 extensions = ['sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode']
 
 # set url for API links
+api_url = 'http://api.symfony.com/master/%s'
 api_url_pattern = 'http://phpdoc.orocrm.com/platform/{namespace}namespaces{/namespace}{class}classes{/class}{method}classes{/method}/%(namespace)s{class}.%(class)s{/class}{method}.%(class)s{/method}.html{method}#method_%(method)s{/method}'
 namespace_separator = '.'
 
