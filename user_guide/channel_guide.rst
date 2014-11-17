@@ -157,7 +157,7 @@ This is how the page of the Factory channel looks:
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
 
 
-*John&Sone E-commerce*
+*John&Sons E-commerce*
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Factory sales details will be saved in the channel of a dedicated Web Type named *Magento Store*.
@@ -173,8 +173,8 @@ Contact Request form was embedded on the Website, so we have added the Contact R
 Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
 
 Items Purchased keeps details of the goods purchased.
-Item Ordered keeps details to keep information  on the items ordered by a customer 
-but not yet delivered to them (e.g. ordered by phone or currently out of stock).
+Item Ordered keeps details on the items ordered by a customer but not yet delivered to them (e.g. ordered by phone or 
+currently out of stock).
 
 
 This is how the page of the channel looks:
@@ -184,8 +184,8 @@ This is how the page of the channel looks:
 .. note:: 
 
     Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
-    Channel entity could be created to represent it, where Customer Identity records, would be the donors and 
-    other entities could represent specific charity events and money raised.
+    Channel entity could be created to represent it. Customer Identity records there would represent the donors and 
+    other entities corresponded to specific charity events and money raised.
     
     Moreover, if there were many different funds to manage, a special type could be created at the back-end, such that 
     these entities were added to it by default.    
@@ -194,37 +194,36 @@ This is how the page of the channel looks:
 
 .. _user-guide-channel-guide-edit:
 
-Managing Channels from the Grid
---------------------------------
+Managing Channels
+-----------------
 
-Once a channel has been saved, it will appear in the *Channels* grid. A number of options is available for each
-channel in the grid. Hover the mouse to *...* column to see them:
+Once a channel has been saved, it will appear in the *Channels* grid. You can manage the channel records as described in
+the :ref:`Grids <user-guide-ui-components-grids>` section of the UI Components guide.
 
+The following action icons are available:
 
-.. image:: ./img/channel_guide/Screenshots/channels_edit.png
-
-
-- Click |IcDelete| to delete the channel from the system. 
+- |IcDelete|: used to delete the channel from the system. 
 
 .. caution:: 
 
     Once a channel has been deleted all the relevant data will be deleted as well.
 
-- Click |IcEdit| to edit the channel details. Edit page very similar to the page you used to 
-  :ref:`create a channel <user-guide-channel-guide-create>`), but details you have already defined will be 
-  displayed
+- |IcEdit|: used to edit the channel details. 
 
 .. caution:: 
 
     You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
-- Click |IcView| to get to the page of the channel. For example, out *Factory* channel page looks as follows:
+- |IcView| : used to get to the View page of the channel. For example, out *Factory* channel page looks as follows:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view.png
 
-There is a number of actions available from the page.
+There is a number of actions available from the page as described in the 
+:ref:`View Pages <user-guide-ui-components-view_pages>` section of the UI Components guide.
 
-- Click :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels):
+The following actions are buttons:
+
+- :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels):
 
   - You can deactivate an active channel. Once the channel has been deactivated, no new data from the channel will be 
     uploaded to the system.
@@ -232,9 +231,9 @@ There is a number of actions available from the page.
   - You can activate an inactive channel. It will become active and data from the channel will be uploaded to the 
     system.
   
-- Click :guilabel:`Edit` button edit the channel
+- :guilabel:`Edit`: get to the Edit form of the channel
   
-- Click :guilabel:`Delete` button to delete the channel 
+- :guilabel:`Delete` button: used to delete the channel 
 
   
 Editing Entities from a Channel
@@ -259,9 +258,10 @@ Please refer to the `Entity Management Guide <user-guide-entity-management-guide
 Multichannel Customer Profile Example
 --------------------------------------
 
-John&Sons have now got a separate channel for each of the customer sources. Sales and communication details
-are saved for each customer in different channels. All the customer are assigned to one account, from which 
-the managers can see all of those activities regardless the specific ground used for them.
+John&Sons have a separate channel for each of the customer sources. 
+Sales and communication details are saved for each customer identity. 
+All the customer are assigned to one account.
+With the account, managers can see all of the customer details regardless the channel.
 
 For example, there is a *Home2Go* construction company. 
 
@@ -269,17 +269,17 @@ John&Sons factory has already implemented several successful projects with them.
 created for each of these projects and assigned to a B2B Customer named *Home2Go*.
 The B2B Customer is assigned to the *Home2Go* Account.
 
-For smaller purchases that do not require long negotiations and many-page agreements, Home2Go's managers have
-purchased materials from the John&Sons Magento store. A specific Web Customer was created for each of the managers'
-account (Magento users). However, all of these Web Customers were assigned to the *Home2Go* account (the same as 
-for the B2B Customer).
+Home2Go's managers have also purchased materials from the John&Sons Magento-based store. A specific Web Customer was 
+created for each of the managers' accounts (Magento users). All of these Web Customers were assigned to the 
+*Home2Go* account (the same as for the B2B Customer).
 
-During a current project in Texas, construction engineers were missing some necessary equipment and addressed the retail
-outlet to purchase it. They have bought most of what they needed and ordered the rest. Customer Identities were created
-for each of the engineers and details on the goods purchased and ordered were saved. All these Customer Identities were
-assigned to the *Home2Go* account, as well.
+During a project in Texas, construction engineers were missing some necessary equipment and addressed the retail
+outlet shop to purchase it. They have bought most of what they needed and ordered the rest. Customer Identity records 
+were created for each of the engineers and details on the goods purchased and ordered were saved. All the Customer 
+Identities were assigned to the *Home2Go* account, as well.
 
-Account record is rather many-fold, and the screenshot show only a part of it:
+Account record is rather many-fold, and the screenshot shows only a part of it to give you the filling of a 360% 
+customer data view John&Sons' managers have received:
 
 .. image:: ./img/channel_guide/Screenshots/channels_multi_ex.png
    
