@@ -119,7 +119,7 @@ In order to start the synchronization manually:
 
 - Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
 
-- Click on its Integration link
+- Click on the *Integration* link
 
 - Click :guilabel:`Schedule Sync` button. *A sync job has been added to the queue. Check progress.* note will appear. 
 
