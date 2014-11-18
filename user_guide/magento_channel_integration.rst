@@ -68,7 +68,9 @@ Once the connection details have been verified, the next fields will be filled w
      
    * - **Website***
      - The list of all the Websites available for the shop. *All Websites* option is chosen by default.
+       
        You can edit the field value and choose one of the Websites available.
+       
        Click "Sync website list" link if the list of Websites is outdated.
        
    * - **Admin url**
