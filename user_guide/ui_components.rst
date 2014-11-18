@@ -55,12 +55,13 @@ For example, if you go to *"Customers"* and click *"Contacts"*, you will see the
 .. image:: ./img/ui_components/grid.png
 
 Rows of the grid represent records of the entity chosen.
-Columns if the grid are value of the entity fields.
+Columns of the grid are values of the record fields.
 
 .. note::
 
-    What fields will be displayed in the grid depends on the entity fields *"Show on Grid"* settings. Please see the 
-    *Entity Management* guide for more details. 
+    What fields will be displayed in the grid, depends on the *"Show on Grid"* settings defined for the entity fields. 
+    
+    Please see the *Entity Management* guide for more details. 
     
     
 *Grid Actions*
@@ -74,21 +75,22 @@ Action Buttons
 
 Action buttons can trigger actions related to the entity in general, or specifically to the grid.
 
-Action buttons related to the grid only are displayed right above the grid. For example, you can scroll pages, refresh 
-the grid details and reset the grid (clear all the filters). You can also export the details shown in the grid as a .csv
-file.
+Action buttons related to the grid are displayed right above the grid. 
+
+In the example, you can scroll pages, refresh the grid details and reset the grid (clear all the filters), 
+as well as export the details shown in the grid as a .csv file.
 
 .. image:: ./img/ui_components/grid_action_buttons.png
 
-Action buttons that trigger actions related to the entity in general are displayed at the top right corner of the grid 
+Action buttons that trigger actions related to the entity in general are displayed in the top right corner of the grid 
 page.
 
-For example, you can export and import account records, as well as to create a new account.
+In the example, you can export and import account records, as well as to create a new account.
 
 .. image:: ./img/ui_components/entity_action_buttons.png
 
-If there is an arrow on the button, some sub-actions are available. For example, from the Import button you can start
-the import and download the data template.
+If there is an arrow on the button, some sub-actions are available. For example, you can start
+the import and download the data template from the Import button.
 
 .. image:: ./img/ui_components/grid_action_subbuttons.png
 
