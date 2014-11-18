@@ -162,10 +162,10 @@ Contact Request form was embedded on the Website, so we have added the Contact R
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_web.png
 
-*Dallas Retail Outlet Store*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*Dallas Retail Outlet*
+^^^^^^^^^^^^^^^^^^^^^^
 
-Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Store*.
+Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Retail Outlet*.
 
 Items Purchased keeps details of the goods purchased.
 Item Ordered keeps details on the items ordered by a customer but not yet delivered to them (e.g. ordered by phone or 
