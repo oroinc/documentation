@@ -153,15 +153,22 @@ start with 123 are chosen:
 "Create" Form
 --------------
 
-If new entity records can be added to the system, guilabel:`Create {Entity Name}` will be present in the top right 
+If new entity records can be added to the system, :guilabel:`Create {Entity Name}`is shown in the top right 
 corner of the grid.
+
 Click the button to get to the *"Create ..."* page.
 
-All the fields of the entity will be displayed in the grid. 
+- All the editable fields of the entity will be displayed in the grid. 
 
-Mandatory fields will be identified with a red asterisk.
+.. note::
 
-If there are several sections, they will be displayed one after another and allocated separately in different tabs.
+    What fields will be available depends on the  *"Show on Form"* settings defined for the entity fields. 
+    
+    Please see the *Entity Management* guide for more details.
+
+- Mandatory fields will be identified with a red asterisk.
+
+- If there are several sections, they will be displayed one after another and allocated separately in different tabs.
 
 For example, this is a Create Email Campaign page:
 
@@ -172,17 +179,11 @@ You can click the *"Email Settings"* tab, and only this section will be displaye
 .. image:: ./img/ui_components/create_page_tab.png
 
 
-.. note::
-
-    What fields will be displayed in the "Create" form depends on the entity fields *"Show on Form"* settings. 
-    Please see the *Entity Management* guide for more details. 
-    
-
 *"Create" Page Action Buttons*
 ------------------------------
 
-In the top page of every "Create" page you can see two Action Buttons:  :guilabel:`Cancel` and  :guilabel:`Save` or 
-:guilabel:`Save and Close`.
+In the top page of every "Create" page you can always see two Action Buttons:  :guilabel:`Cancel` and  
+:guilabel:`Save` or  :guilabel:`Save and Close`.
 
 - Click :guilabel:`Cancel`, if you don't want to save the changes in the system. 
 
@@ -206,7 +207,7 @@ To get to the View page:
 
 - Use :guilabel:`Save and Close` button after you have created/edited a record
 
-For example, this is a View page of a Channel:
+For example, this is a View page of a channel:
 
 .. image:: ./img/ui_components/view_page.png
 
@@ -222,15 +223,17 @@ tasks, etc.), additional details and each of the channels such that its customer
 .. note::
 
     What fields will be displayed in the "Create" form depends on the entity fields *"Show on View"* settings. 
+    
     Please see the *Entity Management* guide for more details. 
 
 
 *"View" Page Action Buttons*
 ----------------------------
 
-Action Buttons that trigger actions for a specific entity record. They are displayed in the top right corner of the 
+Action Buttons  trigger actions for a specific entity record. They are displayed in the top right corner of the 
 View page.
-If there are four or less actions available for the entity, a separate button is created for each of them.
+
+If there are four or less actions available for the entity records, a separate button is created for each of them.
 
 In the example, you can send Email, add note, edit and delete the Sales Process records from the View page:
 
