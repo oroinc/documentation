@@ -6,28 +6,29 @@ The following OroCRM UI components are described in the article:
 
 - Menu items
 
-- Grids:
+- Grids
 
-  - Filters
-  - Grid action icons
-  - Grid action buttons
+- Create forms
   
 - View pages
   
-- Create and edit forms
+- Edit forms
 
+- Filters
+
+- Action icons and buttons
 
 .. _user-guide-ui-components-menu-items:
 
 Menu Items
 ----------
 
-.. csv-table:: **OroCRM 1.4 menu is divided into seven basic menu sections:**
+.. csv-table:: **Menu of the current OroCRM version 1.4 menu is divided into seven basic menu sections:**
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Dashboard**","Contains widgets pre-implemented in the system, such as Quick Launchpad panel, the lists of recent 
-  Emails and calls, of recently accessed accounts and contacts, calendar and basic report charts."
+  "**Dashboard**","Contains pre-implemented widgets such as Quick Launchpad panel, lists of recent 
+  Emails and calls, recently accessed accounts and contacts, calendar and basic report charts."
 
   "**Customers**","Contains links to the accounts, contacts and customer identity records created in the system."
 
@@ -36,16 +37,16 @@ Menu Items
   "**Activities**","Contains links to the calls, Emails, Contact request and other activities on different entities 
   defined in the system."
   
-  "**Marketing**","Contains links to the Marketing  Lists and Campaign related functionalities."
+  "**Marketing**","Contains links to the Marketing Lists and Campaign related functionalities."
 
   "**Reports&Segments**","Contains links to the reports and their settings."
 
-  "**System**","Contains Links to the System settings."
+  "**System**","Contains links to the System settings."
 
   
 .. note::
   
-    Availability of each menu section and its subsections depends on the permission settings defined for the specific 
+    Availability of each menu section and its subsections depends on the permission settings defined for the 
     user and functionality.
 
     
@@ -54,10 +55,9 @@ Menu Items
 Grids
 -----
 
-Once you have clicked on a specific link in the menu, the grid will appear. The grid contains all the entities already 
-defined in the system. 
-For example, if you go to *"Customers"* and click *"Contacts"*, you will see the grid of all the contact records present
-in the system.
+Once you have clicked on a  link in the menu, the grid will appear. The grid contains all the entity records present 
+in the system. 
+For example, if you go to *"Customers"* and click *"Contacts"*, you will see the grid of all the contacts available.
 
 .. image:: ./img/ui_components/grid.png
 
