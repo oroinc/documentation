@@ -15,11 +15,11 @@ No such channel can be created nor used, if integration settings have not been d
 
 .. _user-guide-magento-channel-integration-details:
 
-Define Integration Details for a Magento Channel
-------------------------------------------------
+Integration Details
+-------------------
 
-Once you have chosen a Channel Type = *Magento*,  a new mandatory field **Integration*** will appear
-in the :ref:`General details <user-guide-channel-guide-general>` section. 
+For channels of *Magento* type,  a new mandatory field **Integration*** will appear in the 
+:ref:`General details <user-guide-channel-guide-general>` section. 
 
 Click *Configure integration* link.
 
@@ -56,8 +56,7 @@ Define the following fields in the emerged form:
 
     Please address you Magento administrator for the information on SOAP settings details. 
 
-At this point you can click :guilabel:`Check Connection` button, to check if the settings you have defined above are 
-correct.
+At this pointб click :guilabel:`Check Connection` button, to check if the settings defined are correct.
 Once the connection details have been verified, the next fields will be filled with default settings.
 
 .. list-table:: **System Channel Entities (continued)**
@@ -68,7 +67,7 @@ Once the connection details have been verified, the next fields will be filled w
      - Description
      
    * - **Website***
-     - Mandatory field. The list of all the Websites available for the shop. *All Websites* option is chosen by default.
+     - The list of all the Websites available for the shop. *All Websites* option is chosen by default.
        You can edit the field value and choose one of the Websites available.
        Click "Sync website list" link if the list of Websites is outdated.
        
@@ -76,7 +75,8 @@ Once the connection details have been verified, the next fields will be filled w
      - Optional field. An http link to the Administrator panel of the specified Magento store.
      
    * - **Default owner***
-     - Mandatory field. Specifies Users that can manage the configuration.
+     - Specifies what Users that can manage the configuration. By default is filled with the User
+       creating the integration.
 
      
 .. _user-guide-magento-channel-integration-synchronization:
@@ -84,8 +84,9 @@ Once the connection details have been verified, the next fields will be filled w
 Synchronizing a Magento Channel Data
 ------------------------------------
 
-Once you have created a Magento type channel and defined its integration details information from the Magento store will 
-be uploaded into OroCRM automatically subject to a predefined schedule. 
+Once you have created a channel of *Magento* type and defined its integration details, information from the 
+Magento-based store will be uploaded into OroCRM automatically subject to a predefined schedule. 
+
 You can enable two-way synchronization settings and manually start synchronization.
 
 
@@ -94,7 +95,7 @@ Two Way Synchronization
 
 In order to enable two-way synchronization:
 
-- Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
+- Go to the channel's view page
 
 - Click on its Integration link
 
