@@ -9,26 +9,19 @@ Functionality Overview
 
 Multichannel functionality enables source-specific collection and aggregation of customer information.
 
-.. note::
-
-   For the purpose of the document the word "customer" refers to any recipient of a good, service, product or idea, 
-   including clients, buyers and purchasers, as well as community members and project participants  of any type.
-
 A **Channel** entity represent one source of customers and customer data. For each Channel record 
 ("channel") created in the system, along with other :ref:`general details <user-guide-channel-guide-general>`, 
 name, type and set of entities are specified:
 
 - Name of a channel uniquely identifies it in the system
 
-- Type of a channel defines defines nature of the customer data 
+- Type of a channel defines nature of the customer data 
 
 - Entities assigned to a channel define the types of information that can be collected from it. 
  
-Each channel is assigned an entity that represents a customer (*Customer Identity entity*). Records of the can be 
-created within the channel.
-
-Customer data from different channels is aggregated under an Account record ("account"): each customer identity
-must be assigned to an account, and one account can have multiple customer identities from different channels
+Each channel is assigned an entity that represents a customer (*Customer Identity entity*).
+Customer data from different channels is aggregated under an Account record ("account"): each customer record
+must be assigned to an account, and one account can have multiple customer records from different channels
 associated with it (regardless of their channel types).
 
 
@@ -69,11 +62,13 @@ The three fields are mandatory and **must** be defined:
   meaningful." 
    "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
   
-  The following types are available in OroCRM 1.4 out of the box:
+  Channel types define the set of rules and setting applied to the channel. There is a proven practice of extending the 
+  OroCRM with new channel types to meet specific business needs. 
+  The following types are available in the current version out of the box:
    
   - *B2B*: dedicated for managing B2B customer relations
    
-  - *Web*: sharpened for :term:`Magento` stores
+  - *Magento*: sharpened for :term:`Magento` stores
    
   - *Custom*: any other channels, subject to specific business needs and goals"
 
@@ -129,8 +124,8 @@ To delete an entity, click |IcDelete| icon. This will remove the entity from thi
 
 .. _user-guide-channel-guide_example:
 
-Channels Examples
------------------
+Create Channel Examples
+-----------------------
 John&Sons factory sells building materials to different scale construction businesses. They have also got 
 an outlet store for retail and small wholesale customers in Dallas. Recently they have launched an E-commerce site
 (based on Magento), where the users can order any amount of goods.
@@ -282,6 +277,8 @@ Account record is rather many-fold, and the screenshot shows only a part of it t
 customer data view John&Sons' managers have received:
 
 .. image:: ./img/channel_guide/Screenshots/channels_multi_ex.png
+   
+   
    
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
