@@ -56,11 +56,11 @@ The three fields are mandatory and **must** be defined:
 
   "**Status**","Current status of the channel.
  
-    *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
-    if a channel is being configured for future use or is out of date.)"
+  *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
+  if a channel is being configured for future use or is out of date.)"
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
   meaningful." 
-   "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
+  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
   
   Channel types define the set of rules and setting applied to the channel. There is a proven practice of extending the 
   OroCRM with new channel types to meet specific business needs. 
@@ -108,7 +108,7 @@ entities by default, once you have selected the channel type, they are optional 
 - Information about System entities default for Magento Channels is uploaded into the OroCRM during synchronization as 
   described in the *Magento Channel Integration* guide.
 
-- Another pre-implemented entity is **Contact Request**. It refers to records uploaded to the system from a 
+- Another pre-implemented entity is a **Contact Request**. It refers to records uploaded to the system from a 
   pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
   details in the *Actions* guide.
   
