@@ -48,9 +48,9 @@ In order to import the Leads into the system, we have downloaded the data templa
 
 .. image:: ./img/export_import/download_data_template.png
 
-- If a column is missing, the value will be filled with the default value or left empty.
-- All the mandatory properties must be filled.
-- If there as a column in the initial table that you want to add to the system and it is not in the template, custom 
+- All the mandatory properties **must** be filled
+- If a column is missing, the value will be filled with the default value or left empty
+- If there is a column in the initial table that must be added to the system and is not in the template, custom 
   property must be created for it.
 
 In our example:
