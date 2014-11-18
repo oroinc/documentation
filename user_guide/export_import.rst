@@ -19,7 +19,7 @@ Import functionality is particularly useful, if you want to upload multiple inst
 
 - Click |Bdropdown| on the **Import** button in the top right corner of the grid page
 - Choose :guilabel:`Download Data Template`
-- Prepare a .csv file that corresponds the template 
+- Prepare a .csv file following the template 
 - Click  :guilabel:`Import` button, choose the .csv file for import
 - Carefully read through the submission form and confirm the import
 
@@ -33,10 +33,11 @@ Once import is over the new entity instances will appear in the grid.
 *Import Example*
 ^^^^^^^^^^^^^^^^
 
-Prior to using OroCRM, John&Sons construction material factory used to keep track of their Leads in a Calc table. 
-Now they want to upload their details to the OroCRM Leads. 
+Prior to using OroCRM, John&Sons construction material factory used to keep track of their potential opportunities
+in a Calc table. 
+Now they want to upload their details to OroCRM as Leads. 
 
-These are the first 10 instances of the table
+These are the first 10 instances of the table:
 
 .. image:: ./img/export_import/in_lead_table_ex.png
 
