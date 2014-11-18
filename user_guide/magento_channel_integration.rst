@@ -4,9 +4,9 @@
 Magento Channel Integration
 ============================
 
-Channels of the *Web* Type in OroCRM are sharpened to support Magento stores. Creation and usage of a Magento Channel is
-described in more details in the :ref:`Channel Management <user-guide-channel-guide>` guide. However, no such channel 
-can be created nor used, if integration settings have not been defined.
+Channels of the *Magento* Type in OroCRM are sharpened to support Magento stores as described in the 
+:ref:`Channel Management <user-guide-channel-guide>` guide. 
+No such channel can be created nor used, if integration settings have not been defined.
 
 .. hint::
     
