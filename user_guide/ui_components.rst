@@ -29,21 +29,14 @@ Menu Items
 
   "**Dashboard**","Contains pre-implemented widgets such as Quick Launchpad panel, lists of recent 
   Emails and calls, recently accessed accounts and contacts, calendar and basic report charts."
-
   "**Customers**","Contains links to the accounts, contacts and customer identity records created in the system."
-
   "**Sales**","Contains links to the entities assigned to channels created in the system."  
-  
   "**Activities**","Contains links to the calls, Emails, Contact request and other activities on different entities 
   defined in the system."
-  
   "**Marketing**","Contains links to the Marketing Lists and Campaign related functionalities."
-
   "**Reports&Segments**","Contains links to the reports and their settings."
-
   "**System**","Contains links to the System settings."
 
-  
 .. note::
   
     Availability of each menu section and its subsections depends on the permission settings defined for the 
