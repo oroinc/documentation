@@ -243,7 +243,7 @@ If there are more than four actions available for the entity records, they will 
 *"{Entity Name} Actions*" drop-down, as in the example:
 
 
-.. image:: ./img/ui_components/view_action_buttons_1.png
+.. image:: ./img/ui_components/view_action_buttons_2.png
     
 Edit Form
 ----------
