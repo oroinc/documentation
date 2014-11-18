@@ -230,14 +230,15 @@ tasks, etc.), additional details and each of the channels such that its customer
 
 Action Buttons that trigger actions for a specific entity record. They are displayed in the top right corner of the 
 View page.
-If any *Activities* have been enable for the entity, you will see them among the buttons.
+If there are four or less actions available for the entity, a separate button is created for each of them.
 
-For example, Email and Note have been enable for the Sales Process entity and available from the View page:
+In the example, you can send Email, add note, edit and delete the Sales Process records from the View page:
 
 .. image:: ./img/ui_components/view_action_buttons_1.png
 
-If there are over than two Activities defined for the entity, they will be collected under the *"{Entity Name} Actions*"
-drop-down, as in the example:
+If there are more than four actions available for the entity records, they will be collected under the 
+*"{Entity Name} Actions*" drop-down, as in the example:
+
 
 .. image:: ./img/ui_components/view_action_buttons_1.png
     
