@@ -121,9 +121,9 @@ Entities imported will appear in the grid.
 Export
 -------
 
-A functionality enables export of the entity details into  a .csv file. 
+The functionality enables export of the entity records details into  a .csv file. 
 
-In order to export the .csv file:
+In order to export a .csv file:
 
 - Go to the grid and 
   - Click :guilable:`Export` button to export all the fields assigned for export for all the entity records or  
