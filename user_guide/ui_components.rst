@@ -2,11 +2,12 @@
 OroCRM UI Elements
 ==================
 
-OroCRM UI contains a number of components, namely
+The following OroCRM UI components are described in the article:
 
 - Menu items
 
 - Grids:
+
   - Filters
   - Grid action icons
   - Grid action buttons
