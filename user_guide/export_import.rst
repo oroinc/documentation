@@ -91,7 +91,7 @@ In our example:
 
 This is what we have got for the first ten instances.
 
-.. image:: ./img/export_import/leads_table_ex_1.png    
+.. image:: ./img/export_import/lead_table_ex_1.png    
 
 You can find the whole document at the *System --> Entities --> Documentation --> Leads Table for import--> 
 Attachments --> leads_template_for_import.xls*.
