@@ -102,7 +102,7 @@ the import and download the data template from the Import button:
 Action Icons
 ^^^^^^^^^^^^
 
-Last column of any grid in the system, contains icons of actions available for the grid item. For example, any Contact 
+Last column of any grid in the system contains icons of actions available for the grid item. For example, any Contact 
 record can be view, removed or deleted:
 
 .. image:: ./img/ui_components/action_icons.png
@@ -137,7 +137,7 @@ You can apply filters to run bulk actions or to simplify the search.
 Click the arrow of the filter to choose required values. The value setting depend on the field type. If more than one
 filter is active, only the records that meet requirements of all the filters will be shown.
   
-In the example, only the contacts reated after the third of November, with "gmail.com" emails and phones that 
+In the example, only the contacts created after the third of November, with "gmail.com" Emails and phones that 
 start with 123 are chosen:
 
 .. image:: ./img/ui_components/filters.png
