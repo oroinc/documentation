@@ -1,54 +1,56 @@
 
-Export and Import Functionality
+.. _user-guide-export-import 
+
+Import and Export Functionality
 ===============================
 
-In OroCRM properties of some entities (e.g. Users, Leads, Opportunities, etc.) can be exported and/or imported in/from
-.csv files. :guilabel:`Export` and :guilabel:`Import` buttons will appear in the top right corner of such entity grids.
+Details of some OroCRM entities (e.g. Users, Leads, Opportunities, etc.) can be exported and/or imported in/from
+.csv files. 
+For such entities, :guilabel:`Export` and :guilabel:`Import` buttons will appear in the top right corner of the grid.
 
 
-.. _user_guide_import:
+.. _user-guide-import:
 
 Import
 -------
 
-Import functionality comes handy, if you want to upload multiple instances manually or from a third-party enterprise 
-application.
+Import functionality is particularly useful, if you want to upload multiple instances.
 
-Click |Bdropdown| on the **Import** button in the top right corner of the grid page. Choose  :guilabel:`Download Data
-Template`. Prepare a .csv file that corresponds the template and click  :guilabel:`Import` button, choose the .csv 
-file for import, carefully read through the submission form and confirm the import.
+- Click |Bdropdown| on the **Import** button in the top right corner of the grid page
+- Choose :guilabel:`Download Data Template`
+- Prepare a .csv file that corresponds the template 
+- Click  :guilabel:`Import` button, choose the .csv file for import
+- Carefully read through the submission form and confirm the import
 
 .. caution:: 
 
     Mandatory fields of the entity **must** be specified
 
-Once import is over the new  entity instances will appear in the grid.
+Once import is over the new entity instances will appear in the grid.
 
       
 *Import Example*
 ^^^^^^^^^^^^^^^^
-Prior to using OroCRM, John&Sons construction material factory used to keep track of their Leads in an Calc table. Now 
-they want to upload all their details to the OroCRM Leads. 
+
+Prior to using OroCRM, John&Sons construction material factory used to keep track of their Leads in a Calc table. 
+Now they want to upload their details to the OroCRM Leads. 
 
 These are the first 10 instances of the table
 
 .. image:: ./img/export_import/in_lead_table_ex.png
 
 You can find the whole document at the *System --> Entities --> Documentation --> Initial Leads Table --> 
-Attachments -->John&SonsLeads.xls*.
+Attachments --> John&SonsLeads.xls*.
 
 In order to import the Leads into the system, we have downloaded the data template.
 
 .. image:: ./img/export_import/download_data_template.png
    align: right
 
-The template is available at the *System --> Entities --> Documentation --> Leads Data Template --> Attachments -->
-leads_data_template.xls*.
-
-
-If a column is missing, the value will be filled with the default value or left empty.
-All the mandatory properties must be filled.
-If there as a column in the initial table that is not in the template, custom property must be created for it.
+- If a column is missing, the value will be filled with the default value or left empty.
+- All the mandatory properties must be filled.
+- If there as a column in the initial table that you want to add to the system and it is not in the template, custom 
+  property must be created for it.
 
 In our example:
 
@@ -58,7 +60,7 @@ In our example:
 
   - Channel Name: must be defined. We have created a new column *Channel name*. As we are uploading data for the Channel 
     instance *Factory* (Channel instance of B2B Type created for the John&Sons Factory sales activities as an example in 
-    the \:ref: Channel Management Guide <user-guide-channels-example`\, we have filled all the column rows with 
+    the :ref: Channel Management Guide <user-guide-channels-example`, we have filled all the column rows with 
     *Factory*
   
   - Owner: will be filled with default value specified in the system, so we don't need to create a column
@@ -103,7 +105,10 @@ Import validation results have appeared:
 
 .. image:: ./img/export_import/leads_import_validation_results.png
    
-Click :guilable:`Import` button. *"Validation started. Please wait"* message will appear. When import 
+Click :guilable:`Import` button. *"Validation started. Please wait"* message will appear. *File is successfully 
+imported* message will appear when the import has finished.
+
+Entities imported will appear in the grid.
 
 
 
@@ -112,12 +117,15 @@ Click :guilable:`Import` button. *"Validation started. Please wait"* message wil
 Export
 -------
 
-A functionality is provided to easily export a .csv file from the grid:
+A functionality enables export of the entity details into  a .csv file. 
 
 In order to export the .csv file:
 
-- Go to the grid and click **Export** button. 
+- Go to the grid and 
+  - Click :guilable:`Export` button to export all the fields assigned for export for all the entity records or  
+  - Click :guilable:`Export Grid`button to export the table that correspond to the grid
 
+  
 - *"Export started. Please wait"* message will appear at the top of the screen.
 
 - As soon as the export has finished the message will change to: *"Export performed successfully, [number] 
