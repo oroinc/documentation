@@ -18,11 +18,12 @@ No such channel can be created nor used, if integration settings have not been d
 Define Integration Details for a Magento Channel
 ------------------------------------------------
 
-Once you have chosen a Channel Type = *Magento*, along with other 
-:ref:`General details <user-guide-channel-guide-general>` to define, there will appear a new mandatory field 
-**Integration***. Click *Configure integration* link to get to the form.
+Once you have chosen a Channel Type = *Magento*,  a new mandatory field **Integration*** will appear
+in the :ref:`General details <user-guide-channel-guide-general>` section. 
 
-The following fields should be specified:
+Click *Configure integration* link.
+
+Define the following fields in the emerged form:
 
 .. list-table:: **System Channel Entities**
    :widths: 10 30
