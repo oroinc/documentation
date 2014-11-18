@@ -87,7 +87,7 @@ Synchronizing a Magento Channel Data
 ------------------------------------
 
 Once you have created a channel of *Magento* type and defined its integration details, information from the 
-Magento-based store will be uploaded into OroCRM automatically subject to a predefined schedule. 
+Magento-based store will be uploaded into OroCRM automatically. 
 
 You can enable two-way synchronization settings and manually start synchronization.
 
