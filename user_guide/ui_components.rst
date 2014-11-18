@@ -248,9 +248,10 @@ If there are more than four actions available for the entity records, they will 
 Edit Form
 ----------
 
-Edit form is used to edit the entity records created in the system. The only difference between the *"Edit"* form and 
-the *"Create"* form is that previously defined field values are already filled in. (Subject to the system needs, some of
-them cannot be changed). 
+Edit form is used to edit the entity records. The only difference between the *"Edit"* and 
+*"Create"* forms is that previously defined field values are already filled in. 
+
+(Subject to the system needs, some of them cannot be changed). 
 
 
 
