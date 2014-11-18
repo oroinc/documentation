@@ -50,8 +50,7 @@ Define the following fields in the emerged form:
        Organization guidelines.
    
    * - **Sync start date**
-     - Mandatory field The date to start the synchronization with; data uploaded into the Magento account since the 
-       date, will be added to OroCRM and can be processed therein.
+     - Mandatory field. Data uploaded into the Magento account since the date, will be added to OroCRM.
 
 .. hint::  
 
