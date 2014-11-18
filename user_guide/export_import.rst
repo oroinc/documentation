@@ -7,7 +7,7 @@ Import and Export Functionality
 Details of some OroCRM entities (e.g. Users, Leads, Opportunities, etc.) can be exported and/or imported in/from
 .csv files. 
 For such entities, :guilabel:`Export` and :guilabel:`Import` buttons are displayed in the top right corner of the grid
-and :guilabel:`Export Grid` button is available above the grid.
+and :guilabel:`Export Grid` button is available right above the grid.
 
 
 .. _user-guide-import:
@@ -17,7 +17,7 @@ Import
 
 Import functionality is particularly useful, if you want to upload multiple instances.
 
-- Click |Bdropdown| on the **Import** button in the top right corner of the grid page
+- Click |Bdropdown| on the  :guilabel:`Import` in the top right corner of the grid page
 - Choose :guilabel:`Download Data Template`
 - Prepare a .csv file following the template 
 - Click  :guilabel:`Import` button, choose the .csv file for import
