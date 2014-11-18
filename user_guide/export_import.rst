@@ -47,7 +47,6 @@ Attachments --> John&SonsLeads.xls*.
 In order to import the Leads into the system, we have downloaded the data template.
 
 .. image:: ./img/export_import/download_data_template.png
-   align: right
 
 - If a column is missing, the value will be filled with the default value or left empty.
 - All the mandatory properties must be filled.
