@@ -197,19 +197,19 @@ the :ref:`Grids <user-guide-ui-components-grids>` section of the UI Components g
 
 The following action icons are available:
 
-- |IcDelete|: used to delete the channel from the system. 
+|IcDelete|: used to delete the channel from the system. 
 
 .. caution:: 
 
     Once a channel has been deleted all the relevant data will be deleted as well.
 
-- |IcEdit|: used to edit the channel details. 
+|IcEdit|: used to edit the channel details. 
 
 .. caution:: 
 
     You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
-- |IcView| : used to get to the View page of the channel. For example, out *Factory* channel page looks as follows:
+|IcView| : used to get to the View page of the channel. For example, out *Factory* channel page looks as follows:
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view.png
 
@@ -218,17 +218,17 @@ There is a number of actions available from the page as described in the
 
 The following actions are buttons:
 
-- :guilabel:`Deactivate` button (for Active channels) or :guilabel:`Activate` button (for Inactive channels):
+:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons:
 
-  - You can deactivate an active channel. Once the channel has been deactivated, no new data from the channel will be 
-    uploaded to the system.
+- You can deactivate an active channel. Once the channel has been deactivated, no new data from the channel will be 
+  uploaded to the system.
   
-  - You can activate an inactive channel. It will become active and data from the channel will be uploaded to the 
-    system.
+- You can activate an inactive channel. It will become active and data from the channel will be uploaded to the 
+  system.
   
 - :guilabel:`Edit`: get to the Edit form of the channel
   
-- :guilabel:`Delete` button: used to delete the channel 
+:guilabel:`Delete` button: used to delete the channel 
 
   
 Editing Entities from a Channel
@@ -236,10 +236,8 @@ Editing Entities from a Channel
 
 There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may 
 be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly 
-authorized Users. When you open a specific channel page, there will be two icons in the ACTIONS section. Click 
-|IcView| to see the Entity details. Click |IcEdit| icon to change the Entity. 
-
-We can use the functionality, if, for example, there appeared a need to add a new field to the Item Ordered entity.
+authorized Users. Go to the *"Entities"* section of the channel view page.
+In the *"Actions"* column, click |IcView| to see the Entity details aor |IcEdit| to change the Entity settings. 
 
 .. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view_edit_entity.png
 
@@ -256,28 +254,27 @@ Multichannel Customer Profile Example
 John&Sons have a separate channel for each of the customer sources. 
 Sales and communication details are saved for each customer identity. 
 All the customer are assigned to one account.
-With the account, managers can see all of the customer details regardless the channel.
+Managers can open the account record and see all of the customer details for all the channelsregardless of the channl.
 
 For example, there is a *Home2Go* construction company. 
 
 John&Sons factory has already implemented several successful projects with them. Leads and Opportunities were
-created for each of these projects and assigned to a B2B Customer named *Home2Go*.
-The B2B Customer is assigned to the *Home2Go* Account.
+created for each of these projects and assigned to a B2B Customer record named *Home2Go*.
+The B2B Customer is assigned to the *Home2Go* account.
 
-Home2Go's managers have also purchased materials from the John&Sons Magento-based store. A specific Web Customer was 
-created for each of the managers' accounts (Magento users). All of these Web Customers were assigned to the 
-*Home2Go* account (the same as for the B2B Customer).
+Home2Go's managers have also purchased materials from the John&Sons Magento-based E-commerce store. A
+Web Customer was created for each of the managers' accounts (Magento users). All of these Web Customer
+recorcd were assigned to the *Home2Go* account (the same as for the B2B Customer record).
 
 During a project in Texas, construction engineers were missing some necessary equipment and addressed the retail
 outlet shop to purchase it. They have bought most of what they needed and ordered the rest. Customer Identity records 
-were created for each of the engineers and details on the goods purchased and ordered were saved. All the Customer 
+were created for each of the engineers. Details on the purchased and ordered goods were saved. All the Customer 
 Identities were assigned to the *Home2Go* account, as well.
 
-Account record is rather many-fold, and the screenshot shows only a part of it to give you the filling of a 360% 
+Account record view  is rather many-fold, and the screenshot shows only a part of it to give you the filling of a 360% 
 customer data view John&Sons' managers have received:
 
 .. image:: ./img/channel_guide/Screenshots/channels_multi_ex.png
-   
    
    
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
