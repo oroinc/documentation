@@ -106,8 +106,11 @@ Import validation results have appeared:
 
 .. image:: ./img/export_import/leads_import_validation_results.png
    
-Click :guilable:`Import` button. *"Validation started. Please wait"* message will appear. *File is successfully 
-imported* message will appear when the import has finished.
+Click :guilable:`Import` button. 
+
+*"Validation started. Please wait"* message will appear. 
+
+*"File is successfully imported"* message will appear when the import has finished.
 
 Entities imported will appear in the grid.
 
