@@ -50,12 +50,13 @@ Grids
 
 Once you have clicked on a  link in the menu, the grid will appear. The grid contains all the entity records present 
 in the system. 
-For example, if you go to *"Customers"* and click *"Contacts"*, you will see the grid of all the contacts available.
+For example, if you go to *"Customers"* and click *"Contacts"*, you will see the grid of all the contacts available:
 
 .. image:: ./img/ui_components/grid.png
 
-Rows of the grid represent records of the entity chosen.
-Columns of the grid are values of the record fields.
+- Rows of the grid represent records of the entity chosen.
+
+- Columns of the grid are values of the record fields.
 
 .. note::
 
@@ -73,24 +74,24 @@ Columns of the grid are values of the record fields.
 Action Buttons
 ^^^^^^^^^^^^^^
 
-Action buttons can trigger actions related to the entity in general, or specifically to the grid.
+Action buttons can trigger actions related only to the grid or to the entity in general.
 
-Action buttons related to the grid are displayed right above the grid. 
+- Action buttons related to the grid are displayed right above the grid. 
 
-In the example, you can scroll pages, refresh the grid details and reset the grid (clear all the filters), 
-as well as export the details shown in the grid as a .csv file.
+  In the example, you can scroll pages, refresh the grid details and reset the grid (clear all the filters), 
+  as well as export the details shown in the grid as a .csv file:
 
 .. image:: ./img/ui_components/grid_action_buttons.png
 
-Action buttons that trigger actions related to the entity in general are displayed in the top right corner of the grid 
-page.
+- Action buttons that trigger actions related to the entity in general are displayed in the top right corner of the grid 
+  page.
 
-In the example, you can export and import account records, as well as to create a new account.
+  In the example, you can export and import account records, as well as to create a new account:
 
 .. image:: ./img/ui_components/entity_action_buttons.png
 
 If there is an arrow on the button, some sub-actions are available. For example, you can start
-the import and download the data template from the Import button.
+the import and download the data template from the Import button:
 
 .. image:: ./img/ui_components/grid_action_subbuttons.png
 
@@ -101,8 +102,8 @@ the import and download the data template from the Import button.
 Action Icons
 ^^^^^^^^^^^^
 
-Last column of any grid in the system, contains icons of actions available for the grid item. For example, any contact 
-record can be view, removed or deleted.
+Last column of any grid in the system, contains icons of actions available for the grid item. For example, any Contact 
+record can be view, removed or deleted:
 
 .. image:: ./img/ui_components/action_icons.png
 
@@ -121,7 +122,7 @@ Bulk Actions
 
 Check the entity records, click the arrow and choose the action to perform.
 
-For example, if you want to delete the first three contacts from the grid:
+In the example, the three contacts will be deleted from the grid:
 
 .. image:: ./img/ui_components/grid_bulk_actions.png
 
@@ -131,22 +132,21 @@ For example, if you want to delete the first three contacts from the grid:
 *Filters*    
 ---------
 
-You can apply filters to the grid for the bulk actions or to simplify the search.
+You can apply filters to run bulk actions or to simplify the search. 
 
-.. note::
-
-    What fields will be available for filters depends on the entity fields *"Show Grid Filter"* settings. Please see the 
-    *Entity Management* guide for more details. 
-
-    
 Click the arrow of the filter to choose required values. The value setting depend on the field type. If more than one
 filter is active, only the records that meet requirements of all the filters will be shown.
-
-For example, we have chosen only the contact with "gmail.com" emails and phones that start with 123. All the chosen 
-contacts were created after the third of November.
+  
+In the example, only the contacts reated after the third of November, with "gmail.com" emails and phones that 
+start with 123 are chosen:
 
 .. image:: ./img/ui_components/filters.png
 
+.. note::
+
+    What fields will be available for filters depends on the  *"Show Grid Filter"* settings defined for the entity fields. 
+    
+    Please see the *Entity Management* guide for more details.
 
 .. _user-guide-ui-components-create-pages:
     
