@@ -233,7 +233,7 @@ View page.
 
 If there are four or less actions available for the entity records, a separate button is created for each of them.
 
-In the example, you can send Email, add note, edit and delete the Sales Process records from the View page:
+In the example, you can send Email, log call and synchronize data of the oder from its View page:
 
 .. image:: ./img/ui_components/view_action_buttons_1.png
 
