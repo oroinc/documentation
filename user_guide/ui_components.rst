@@ -4,7 +4,7 @@ OroCRM UI Elements
 
 OroCRM is featured by user-friendly and consistent GUI. This article describes the system 
 :ref:`menu items <user-guide-ui-components-menu-items>`, :ref:`grids <user-guide-ui-components-grids>`,
-:ref:`create <user-guide-ui-components-create-pages>` and :ref:`edit <.. _user-guide-ui-components-edit-forms>` forms, 
+:ref:`create <user-guide-ui-components-create-pages>` and :ref:`edit <user-guide-ui-components-edit-forms>` forms, 
 and :ref:`view <user-guide-ui-components-view-pages>` pages.
 
 
