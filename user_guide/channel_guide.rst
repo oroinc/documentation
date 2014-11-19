@@ -67,7 +67,7 @@ The three fields are mandatory and **must** be defined:
 .. caution::
 
     Once you have selected *Magento* as a Channel Type, new mandatory field **Integration*** will appear. 
-    Please, see :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` article for 
+    Please, see :ref:`*Magento Channel Integration* <user-guide-magento-channel-integration>` guide  for 
     the details.
 
     
@@ -93,21 +93,24 @@ Some other entities are pre-implemented in the system and sharpened for a specif
 and Lead for a B2B Channel or Cart and Order for a Magento Channel. The entities will be added to the list of 
 entities by default, once you have selected the channel type, they are optional and may be removed.
 
-- More information about  System entities default for B2B channels and their usage pre-implemented in the System 
-  is provided in the *B2B Channels and Their Entities* article
+- More information about the entities default for channels of B2B type and their usage pre-implemented in the System 
+  is provided in the *B2B Channels and Their Entities* guide.
+  
+- More information about the entities default for channels of Magento type and their usage pre-implemented in the 
+  System is provided in the *Magento Entities* guide.
 
 - Information about System entities default for Magento Channels is uploaded into the OroCRM during synchronization as 
-  described in the *Magento Channel Integration* guide.
+  described in the :ref:`*Magento Channel Integration* <user-guide-magento-channel-integration>` guide.
 
 - Another pre-implemented entity is a **Contact Request**. It refers to records uploaded to the system from a 
   pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
   details in the *Actions* guide.
   
-- **Custom Entities** are created for specific Customer needs and their records can contain any required 
-  details to be filled and processed by the System. For more details on Customer entities please 
-  see the *Entity Management* guide. 
-  Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the 
-  Entities section.
+**Custom Entities** are created for specific Customer needs and their records can contain any required 
+details to be filled and processed by the System. For more details on Customer entities please 
+see the *Entity Management* guide. 
+Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the 
+Entities section.
 
 To add an entity to the channel list, choose the entity and click :guilabel:`Add` button. The entity will be added 
 to the list. 
