@@ -150,14 +150,15 @@ The following action icons are available:
 
     You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
-|IcView| : used to get to the View page of the channel. For example, out *Factory* channel page looks as follows:
+|IcView| : used to get to the View page of the channel. 
+For example, this is a View page of a *Factory* channel of B2B type:
 
-.. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view.png
+.. image:: ./img/channel_guide/channels_created_b2b_view.png
 
 There is a number of actions available from the page as described in the 
 :ref:`View Pages <user-guide-ui-components-view_pages>` section of the UI Components guide.
 
-The following actions are buttons:
+The following actions buttons are available:
 
 :guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons:
 
@@ -167,9 +168,9 @@ The following actions are buttons:
 - You can activate an inactive channel. It will become active and data from the channel will be uploaded to the 
   system.
   
-- :guilabel:`Edit`: get to the Edit form of the channel
+:guilabel:`Edit`: opens Edit form of the channel
   
-:guilabel:`Delete` button: used to delete the channel 
+:guilabel:`Delete` button: deleted the channel from the system
 
   
 Editing Entities from a Channel
@@ -178,15 +179,17 @@ Editing Entities from a Channel
 There are sometimes situations when default Entity fields are not enough or excessive. If this is so, Entities may 
 be edited (list of fields, their type and specific properties may be redefined). This can be done only by duly 
 authorized Users. Go to the *"Entities"* section of the channel view page.
-In the *"Actions"* column, click |IcView| to see the Entity details aor |IcEdit| to change the Entity settings. 
+In the *"Actions"* column, click |IcView| to see the Entity details or |IcEdit| to change the Entity settings. 
 
 .. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png
-
-Please refer to the `Entity Management Guide <user-guide-entity-management-guide>` for more details. 
 
 .. note:: 
 
     If you don't have necessary permissions, you will see a browser-specific message on access denial. 
+
+Please refer to the *Entity Management Guide* for more details. 
+
+
 
    
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
