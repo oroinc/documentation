@@ -6,8 +6,8 @@ Channels Management
 
 A **Channel** entity represent one source of customers and customer data. 
 
-The guide describes how to :ref:`create <user-guide-channel-guide-create>`, :ref:`view <user-guide-channel-guide-view>` 
-and :ref:`edit <user-guide-channel-guide-edit>` channels  
+The guide describes how to :ref:`create <user-guide-channel-guide-create>` channels and 
+:ref:`manage <user-guide-channel-guide-edit>` their records from the UI 
 
 .. _user-guide-channel-guide-create:
 
