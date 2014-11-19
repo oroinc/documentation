@@ -158,17 +158,13 @@ There is a number of actions available from the page as described in the
 
 The following actions buttons are available:
 
-:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons:
-
-- You can deactivate an active channel. Once the channel has been deactivated, no new data from the channel will be 
-  uploaded to the system.
+:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
+once the channel has been deactivated, no new data from the channel will be uploaded to the system.
   
-- You can activate an inactive channel. It will become active and data from the channel will be uploaded to the 
-  system.
   
-:guilabel:`Edit`: opens Edit form of the channel
+:guilabel:`Edit`button: used to get to the Edit form of the channel
   
-:guilabel:`Delete` button: deleted the channel from the system
+:guilabel:`Delete` button: used to delete the channel from the system
 
   
 Editing Entities from a Channel
