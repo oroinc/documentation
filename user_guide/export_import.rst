@@ -7,8 +7,8 @@ Import and Export Functionality
 OroCRM's import and export functionality enables upload/download of multiple records, particularly in the course of 
 integration with third-party systems.
 
-For such entities, :guilabel:`Export` and :guilabel:`Import` buttons are displayed in the top right corner of the grid
-and :guilabel:`Export Grid` button is available right above the grid.
+If the functionality is enabled, :guilabel:`Export` and :guilabel:`Import` buttons are displayed in the top right
+corner of the grid.
 
 
 .. _user-guide-import:
