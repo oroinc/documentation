@@ -44,13 +44,16 @@ The three fields are mandatory and **must** be defined:
 
   "**Status**","Current status of the channel.
  
-  *Inactive* or *Active*. For inactive channels no new data is uploaded to the system (the option is useful
+  *Inactive* or *Active*. 
+  
+  For inactive channels no new data is uploaded to the system (the option is useful
   if a channel is being configured for future use or is out of date.)"
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name 
   meaningful." 
   "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
   
-  Channel types define the set of rules and setting applied to the channel. 
+  Channel types define the set of rules and settings applied to the channel. 
+  
   There is a proven practice of extending the OroCRM with new channel types to meet specific business needs. 
   
   The following types are available in the current version out of the box:
