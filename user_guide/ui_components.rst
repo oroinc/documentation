@@ -66,19 +66,18 @@ Action Buttons
 
 Action buttons can trigger actions related only to the grid or to the entity in general.
 
-- Action buttons related to the grid are displayed right above the grid. 
+.. image:: ./img/ui_components/grid_action_buttons.png
+
+- (1) Action buttons related to the grid are displayed right above the grid. 
 
   In the example, you can scroll pages, refresh the grid details and reset the grid (clear all the filters), 
   as well as export the details shown in the grid as a .csv file:
-
-.. image:: ./img/ui_components/grid_action_buttons.png
-
-- Action buttons that trigger actions related to the entity in general are displayed in the top right corner of the grid 
+  
+- (2) Action buttons that trigger actions related to the entity in general are displayed in the top right corner of the grid 
   page.
 
   In the example, you can export and import account records, as well as to create a new account:
 
-.. image:: ./img/ui_components/entity_action_buttons.png
 
 If there is an arrow on the button, some sub-actions are available. For example, you can start
 the import and download the data template from the Import button:
