@@ -38,7 +38,7 @@ Import
 
 .. image:: ./img/export_import/leads_import.png
 
-- Carefully read through the submission form and confirm the import
+- Carefully read through the submission form
 
 .. image:: ./img/export_import/leads_import_validation_results.png
    
