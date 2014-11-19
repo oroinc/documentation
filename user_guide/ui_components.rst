@@ -2,21 +2,11 @@
 OroCRM UI Elements
 ==================
 
-The following OroCRM UI components are described in the article:
+OroCRM is featured by user-friendly and consistent GUI. This article describes the system 
+:ref:`menu items <user-guide-ui-components-menu-items>`, :ref:`grids <user-guide-ui-components-grids>`,
+:ref:`create <user-guide-ui-components-create-pages>` and :ref:`edit <.. _user-guide-ui-components-edit-forms>` forms, 
+and :ref:`view <user-guide-ui-components-view-pages>` pages.
 
-- Menu items
-
-- Grids
-
-- Create forms
-  
-- View pages
-  
-- Edit forms
-
-- Filters
-
-- Action icons and buttons
 
 .. _user-guide-ui-components-menu-items:
 
@@ -96,6 +86,15 @@ the import and download the data template from the Import button:
 .. image:: ./img/ui_components/grid_action_subbuttons.png
 
 
+*Export Grid*
+^^^^^^^^^^^^^
+
+All the data displayed in a grid can be exported as a .csv table. Click :guilabel:`Export Grid` button and choose CSV.
+
+.. image:: ./img/ui_components/export_grid.png
+
+The file will be saved subject to your browser settings.
+
 
 .. _user-guide-ui-components-grid-action-icons:
 
@@ -144,7 +143,8 @@ start with 123 are chosen:
 
 .. note::
 
-    What fields will be available for filters depends on the  *"Show Grid Filter"* settings defined for the entity fields. 
+    What fields will be available for filters depends on the  *"Show Grid Filter"* settings defined for the entity 
+    fields. 
     
     Please see the *Entity Management* guide for more details.
 
@@ -192,7 +192,7 @@ In the top page of every "Create" page you can always see two Action Buttons:  :
 - Click :guilabel:`Save and Close` to get to the *"View"* page of the entity record.
 
 
-.. _user-guide-ui-components-view_pages:
+.. _user-guide-ui-components-view-pages:
 
 "View" Pages
 ------------
@@ -244,6 +244,9 @@ If there are more than four actions available for the entity records, they will 
 
 
 .. image:: ./img/ui_components/view_action_buttons_2.png
+
+
+.. _user-guide-ui-edit-forms:
     
 Edit Form
 ----------
