@@ -1,31 +1,46 @@
 
 .. _user-guide-magento-channel-integration:
 
-Magento Channel Integration
-============================
+Integration with Magento
+========================
 
-Channels of the *Magento* Type in OroCRM are sharpened to support Magento stores as described in the 
-:ref:`Channel Management <user-guide-channel-guide>` guide. 
-No such channel can be created nor used, if integration settings have not been defined.
+OroCRM comes with out of the box integration with Magento. 
+Following the integration data can be loaded from and to a Magento-based E-commerce store and processed in the OroCRM. 
+The article describes how to :ref:`define <user-guide-magento-channel-integration-details>` and 
+:ref:`manage <user-guide-magento-channel-integration-details-edit>`, including the way to define data synchronization
+:ref:`settings <user-guide-magento-channel-integration-synchronization>` and 
+:ref:`run <user-guide-magento-channel-integration-synchronization>` the synchronization. 
 
 .. hint::
     
-    OroCRM can be integrated with different third-party systems and integration can be defined for different Channel 
-    Types in the course of customization. Integration capabilities for Magento are pre-implemented. 
+    OroCRM can be integrated with different third-party systems but Magento integration capabilities are 
+    pre-implemented. 
+    
 
 .. _user-guide-magento-channel-integration-details:
 
-Integration Details
--------------------
+Create Integration
+------------------
 
-For channels of *Magento* type,  a new mandatory field **Integration*** will appear in the 
-:ref:`General details <user-guide-channel-guide-general>` section. 
+To create integration with a Magento-based E-commerce store, create a channel of Magento type as described in the 
+*Channels Management* Guide. 
 
-Click *Configure integration* link.
+As soon as the channel type is set to *Magento*, a mandatory **Integration*** field  will appear in the General details 
+section.
 
-Define the following fields in the emerged form:
+.. image:: ./img/integration/configure_integration.png 
 
-.. list-table:: **System Channel Entities**
+Click *Configure integration* link. The form will emerge.
+
+General Settings
+^^^^^^^^^^^^^^^^
+
+Define the following details in the *General* section:
+
+.. image:: ./img/integration/configure_integration_form.png 
+
+
+.. list-table::
    :widths: 10 30
    :header-rows: 1
 
@@ -33,30 +48,29 @@ Define the following fields in the emerged form:
      - Description
      
    * - **Name***
-     - Configuration name. Mandatory field. Will be used to refer to the configuration within the system (edit, assign,
-       etc.)
+     - Configuration name. Used to refer to the configuration within the system (edit, assign, etc.)
  
    * - **SOAP WSDL URL***
-     - Mandatory field. An http URL string to the WSDL of the SOAP-based service.
+     - An http URL string to the WSDL of the SOAP-based service.
      
    * - **SOAP API Key***
    
        **SOAP API User***
        
-     - Mandatory fields. SOAP API credentials. 
+     - SOAP API credentials. 
      
    * - **WS-I Compliance**
      - Optional flag. Defines whether the configuration meets the requirements of Web Services Interoperability 
        Organization guidelines.
    
    * - **Sync start date**
-     - Mandatory field. Data uploaded into the Magento account since the date, will be added to OroCRM.
+     - Data will be synchronized as of the date defined.
 
 .. hint::  
 
     Please address you Magento administrator for the information on SOAP settings details. 
 
-At this pointб click :guilabel:`Check Connection` button, to check if the settings defined are correct.
+At this point, click :guilabel:`Check Connection` button, to check if the settings defined are correct.
 Once the connection details have been verified, the next fields will be filled with default settings.
 
 .. list-table:: **System Channel Entities (continued)**
@@ -77,53 +91,79 @@ Once the connection details have been verified, the next fields will be filled w
      - Optional field. An http link to the Administrator panel of the specified Magento store.
      
    * - **Default owner***
-     - Specifies what Users that can manage the configuration. By default is filled with the User
+     - Specifies what Users can manage the configuration. By default is filled with the User
        creating the integration.
 
-     
-.. _user-guide-magento-channel-integration-synchronization:
+       
+user-guide-magento-channel-integration-synchronization
 
-Synchronizing a Magento Channel Data
-------------------------------------
+Synchronization Settings
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you have created a channel of *Magento* type and defined its integration details, information from the 
-Magento-based store will be uploaded into OroCRM automatically. 
+Use the *Synchronization Settings* section to enable/disable two way synchronization.
 
-You can enable two-way synchronization settings and manually start synchronization.
+Check *Enable Two Way Sync* box, if you want to download data from the Magento-based E-commerce store to OroCRM and
+back.
 
+If the box is unchecked, data from Magento will be loaded to OroCRM, but changes performed in OroCRM will no be loaded
+to Magento.
 
-Two Way Synchronization
-^^^^^^^^^^^^^^^^^^^^^^^
-
-In order to enable two-way synchronization:
-
-- Go to the channel's view page
-
-- Click on its Integration link
-
-- Go to *Synchronization Settings* tab of the emerged page
-
-- Check *Enable Two Way Sync* box
-
-- Define the priority in case of conflicts between the data (e.g. the same customer was edited from OroCRM and from 
-  Magento:
+If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same customer was 
+edited from both OroCRM and Magento:
    
-  - Remote wins: Magento settings will be saved in Magento and loaded to OroCRM
+- Remote wins: Magento settings will be saved in Magento and loaded to OroCRM
   
-  - Local wins: OroCRM settings will be saved in OroCRM and loaded to Magento  
+- Local wins: OroCRM settings will be saved in OroCRM and loaded to Magento  
+       
 
-  
+.. _user-guide-magento-channel-integration-details_edit:
+
+Edit Integration
+----------------
+
+To edit integration details:
+
+- Go to the Edit form of the channel and click *"Edit"* link by the integration name
+
+.. image:: ./img/integration/edit_from_form.png
+
+
+The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been 
+performed, it is impossible to change the Sync start date.
+
+.. image:: ./img/integration/ediit_form.png 
+
+- Click :guilabel:`Done` button to save the changes
+
+.. hint::  
+
+    To remove an integration from the system, go to the Edit from of the channel and click |IcCross| by the 
+    integration name
+
+
+.. _user-guide-magento-channel-start-synchronization:
+
 Start Synchronization Manually
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In order to start the synchronization manually:
+-------------------------------
 
-- Go to *System --> Channels* and click in the row of the grid that contains your Magento Channel
+Once integration has been created, the data will be automatically synchronized. However, you can also start the 
+synchronization manually:
 
-- Click on the *Integration* link
+- Go to the View page of the channel and click the integration name link
+
+.. image:: ./img/integration/edit_from_view.png
+
+Integration View page will appear.
+
+.. image:: ./img/integration/integration_view.png
 
 - Click :guilabel:`Schedule Sync` button. *A sync job has been added to the queue. Check progress.* note will appear. 
 
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status. 
 
-After successful synchronization, you can use OroCRM to manage customer relations at your Magento store, as described 
-in the ref: *Magento Entities Management* guide.
+After successful synchronization, you can use OroCRM to manage customer relations for the Magento based E-commerce 
+store, as described in the *Magento Entities Management* guide.
+
+
+.. |IcCross| image:: ./img/integration/IcCross.png
+   :align: middle
