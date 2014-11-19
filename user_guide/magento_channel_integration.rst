@@ -133,7 +133,7 @@ To edit integration details:
 The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been 
 performed, it is impossible to change the Sync start date.
 
-.. image:: ./img/integration/ediit_form.png 
+.. image:: ./img/integration/edit_form.png 
 
 - Click :guilabel:`Done` button to save the changes
 
