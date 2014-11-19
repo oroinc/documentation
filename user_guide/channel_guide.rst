@@ -162,7 +162,7 @@ The following actions buttons are available:
 once the channel has been deactivated, no new data from the channel will be uploaded to the system.
   
   
-:guilabel:`Edit`button: used to get to the Edit form of the channel
+:guilabel:`Edit` button: used to get to the Edit form of the channel
   
 :guilabel:`Delete` button: used to delete the channel from the system
 
