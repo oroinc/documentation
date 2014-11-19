@@ -95,7 +95,7 @@ Once the connection details have been verified, the next fields will be filled w
        creating the integration.
 
        
-user-guide-magento-channel-integration-synchronization
+.. _user-guide-magento-channel-integration-synchronization:
 
 Synchronization Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
