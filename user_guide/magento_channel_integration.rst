@@ -102,6 +102,8 @@ Synchronization Settings
 
 Use the *Synchronization Settings* section to enable/disable two way synchronization.
 
+.. image:: ./img/integration/synch_settings.png
+
 Check *Enable Two Way Sync* box, if you want to download data from the Magento-based E-commerce store to OroCRM and
 back.
 
