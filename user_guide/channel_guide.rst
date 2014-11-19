@@ -119,6 +119,8 @@ to the list.
 
 To delete an entity, click |IcDelete| icon. This will remove the entity from this channel's list (not from the System).
 
+.. image:: ./img/channel_guide/channels_entity_delete.png
+
 
 .. _user-guide-channel-guide-edit:
 
