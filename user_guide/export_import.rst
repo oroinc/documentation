@@ -16,7 +16,7 @@ corner of the grid.
 Import
 -------
 
-- Click |Bdropdown| on the  :guilabel:`Import` in the top right corner of the grid page
+- Click |Bdropdown| on the  :guilabel:`Import` button
 
 - Choose :guilabel:`Download Data Template`
 
