@@ -129,8 +129,6 @@ Managing Channels
 
 Once a channel has been saved, it will appear in the *Channels* grid.
 
-.. image:: ./img/channel_guide/channels_grid.png
-
 Hover the mouse to *...* to manage the channel records as described in
 the :ref:`Grids <user-guide-ui-components-grids>` section of the UI Components guide.
 
