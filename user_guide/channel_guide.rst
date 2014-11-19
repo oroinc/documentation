@@ -4,26 +4,10 @@
 Channels Management
 ===================
 
-Functionality Overview
-----------------------
+A **Channel** entity represent one source of customers and customer data. 
 
-Multichannel functionality enables source-specific collection and aggregation of customer information.
-
-A **Channel** entity represent one source of customers and customer data. For each Channel record 
-("channel") created in the system, along with other :ref:`general details <user-guide-channel-guide-general>`, 
-name, type and set of entities are specified:
-
-- Name of a channel uniquely identifies it in the system
-
-- Type of a channel defines nature of the customer data 
-
-- Entities assigned to a channel define the types of information that can be collected from it. 
- 
-Each channel is assigned an entity that represents a customer (*Customer Identity entity*).
-Customer data from different channels is aggregated under an Account record ("account"): each customer record
-must be assigned to an account, and one account can have multiple customer records from different channels
-associated with it (regardless of their channel types).
-
+The guide describes how to :ref:`create <user-guide-channel-guide-create>`, :ref:`view <user-guide-channel-guide-view>` 
+and :ref:`edit <user-guide-channel-guide-edit>` channels  
 
 .. _user-guide-channel-guide-create:
 
@@ -35,22 +19,26 @@ Creating a Channel
 
 2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel
 
-3. :ref:`Fill <user-guide-channel-guide-entities>` the Channel with Entities    
+3. Define :ref:`Entities <user-guide-channel-guide-entities>`, details of which will be received from the channel's 
+   source
 
 4. Once you have finished adding the entities, use the *Save* function (click :guilabel:`Save and Close`
    or :guilabel:`Save` button in the top right corner). Success message will appear and your Channel 
    will be saved in the system.
 
+   
 .. _user-guide-channel-guide-general:
 
-Define General Details
-^^^^^^^^^^^^^^^^^^^^^^
+General Details
+^^^^^^^^^^^^^^^
 
 Define basic Channel information in the *General* section. 
 
+.. image:: ./img/channel_guide/channels_general.png
+
 The three fields are mandatory and **must** be defined:
 
-.. csv-table:: **Mandatory Channel Properties**
+.. csv-table::
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
@@ -62,8 +50,9 @@ The three fields are mandatory and **must** be defined:
   meaningful." 
   "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created. 
   
-  Channel types define the set of rules and setting applied to the channel. There is a proven practice of extending the 
-  OroCRM with new channel types to meet specific business needs. 
+  Channel types define the set of rules and setting applied to the channel. 
+  There is a proven practice of extending the OroCRM with new channel types to meet specific business needs. 
+  
   The following types are available in the current version out of the box:
    
   - *B2B*: dedicated for managing B2B customer relations
@@ -81,15 +70,14 @@ The three fields are mandatory and **must** be defined:
     
 .. _user-guide-channel-guide-entities:
 
-Fill the Channel with Entities
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Entities
+^^^^^^^^
 
 Entities assigned to a channel define what data OroCRM can collect from it. 
 
-To add an entity to a channel, use the "Entities" section when 
-:ref:`creating <user-guide-channel-guide-create>` or :ref:`editing <user-guide-channel-guide-edit>` a Channel.
+To add an entity to a channel, use the "Entities" section.
 
-.. image:: ./img/channel_guide/Screenshots/channels_entity_select.png
+.. image:: ./img/channel_guide/channels_entities.png
 
 One of the entities defined for a channel must represent a customer identity and will be added to the entity list
 automatically, subject to the chosen channel type:
@@ -103,7 +91,7 @@ and Lead for a B2B Channel or Cart and Order for a Magento Channel. The entities
 entities by default, once you have selected the channel type, they are optional and may be removed.
 
 - More information about  System entities default for B2B channels and their usage pre-implemented in the System 
-  is provided in the *B2B Channels and Their Entities* guide
+  is provided in the *B2B Channels and Their Entities* article
 
 - Information about System entities default for Magento Channels is uploaded into the OroCRM during synchronization as 
   described in the *Magento Channel Integration* guide.
@@ -120,71 +108,10 @@ entities by default, once you have selected the channel type, they are optional 
 
 To add an entity to the channel list, choose the entity and click :guilabel:`Add` button. The entity will be added 
 to the list. 
+
+.. image:: ./img/channel_guide/channels_entity_select.png
+
 To delete an entity, click |IcDelete| icon. This will remove the entity from this channel's list (not from the System).
-
-.. _user-guide-channel-guide_example:
-
-Create Channel Examples
------------------------
-John&Sons factory sells building materials to different scale construction businesses. They have also got 
-an outlet store for retail and small wholesale customers in Dallas. Recently they have launched an E-commerce site
-(based on Magento), where the users can order any amount of goods.
-Along with numerous benefits, this diversified approach has brought some challenges such as the need to control 
-customer relations across multiple interaction points. 
-
-Let's review how we would configure OroCRM for the John&Sons' multiple channel needs.
-
-*Factory* Channel
-^^^^^^^^^^^^^^^^^
-
-Factory sales are of business-to-business nature, so we have created a Channel of B2B Type named *Factory*.
-
-We have left all the default entities. We have also created and added a custom entity *Subcontract*, that 
-keep details of final customer and general contractor in cases when the factory is subcontracting.
-
-
-.. image:: ./img/channel_guide/Screenshots/channels_entity_select_custom.png
-
-The entity was created as an example in the *Entity Management* guide
-
-This is how the page of the Factory channel looks:
-
-.. image:: ./img/channel_guide/Screenshots/channels_created_b2b.png
-
-
-*John&Sons E-commerce*
-^^^^^^^^^^^^^^^^^^^^^^
-
-Factory sales details will be saved in the channel of a dedicated Web Type named *Magento Store*.
-
-Contact Request form was embedded on the Website, so we have added the Contact Request entity.
-
-
-.. image:: ./img/channel_guide/Screenshots/channels_created_web.png
-
-*Dallas Retail Outlet*
-^^^^^^^^^^^^^^^^^^^^^^
-
-Retail outlet in Texas needs a separate channel of a Custom Type named *Dallas Retail Outlet*.
-
-Items Purchased keeps details of the goods purchased.
-Item Ordered keeps details on the items ordered by a customer but not yet delivered to them (e.g. ordered by phone or 
-currently out of stock).
-
-
-This is how the page of the channel looks:
-
-.. image:: ./img/channel_guide/Screenshots/channels_created_custom.png
-
-.. note:: 
-
-    Custom Channel may not be limited to sales activities. So, if John&Sons decided to start a Charity Fund, a special 
-    Channel entity could be created to represent it. Customer Identity records there would represent the donors and 
-    other entities corresponded to specific charity events and money raised.
-    
-    Moreover, if there were many different funds to manage, a special type could be created at the back-end, such that 
-    these entities were added to it by default.    
- 
 
 
 .. _user-guide-channel-guide-edit:
@@ -192,8 +119,14 @@ This is how the page of the channel looks:
 Managing Channels
 -----------------
 
-Once a channel has been saved, it will appear in the *Channels* grid. You can manage the channel records as described in
+Once a channel has been saved, it will appear in the *Channels* grid.
+
+.. image:: ./img/channel_guide/channels_created.png
+
+Hover the mouse to *...* to manage the channel records as described in
 the :ref:`Grids <user-guide-ui-components-grids>` section of the UI Components guide.
+
+.. image:: ./img/channel_guide/channels_edit.png
 
 The following action icons are available:
 
@@ -239,7 +172,7 @@ be edited (list of fields, their type and specific properties may be redefined).
 authorized Users. Go to the *"Entities"* section of the channel view page.
 In the *"Actions"* column, click |IcView| to see the Entity details aor |IcEdit| to change the Entity settings. 
 
-.. image:: ./img/channel_guide/Screenshots/channels_created_b2b_view_edit_entity.png
+.. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png
 
 Please refer to the `Entity Management Guide <user-guide-entity-management-guide>` for more details. 
 
@@ -247,35 +180,6 @@ Please refer to the `Entity Management Guide <user-guide-entity-management-guide
 
     If you don't have necessary permissions, you will see a browser-specific message on access denial. 
 
-
-Multichannel Customer Profile Example
---------------------------------------
-
-John&Sons have a separate channel for each of the customer sources. 
-Sales and communication details are saved for each customer identity. 
-All the customer are assigned to one account.
-Managers can open the account record and see all of the customer details for all the channelsregardless of the channl.
-
-For example, there is a *Home2Go* construction company. 
-
-John&Sons factory has already implemented several successful projects with them. Leads and Opportunities were
-created for each of these projects and assigned to a B2B Customer record named *Home2Go*.
-The B2B Customer is assigned to the *Home2Go* account.
-
-Home2Go's managers have also purchased materials from the John&Sons Magento-based E-commerce store. A
-Web Customer was created for each of the managers' accounts (Magento users). All of these Web Customer
-recorcd were assigned to the *Home2Go* account (the same as for the B2B Customer record).
-
-During a project in Texas, construction engineers were missing some necessary equipment and addressed the retail
-outlet shop to purchase it. They have bought most of what they needed and ordered the rest. Customer Identity records 
-were created for each of the engineers. Details on the purchased and ordered goods were saved. All the Customer 
-Identities were assigned to the *Home2Go* account, as well.
-
-Account record view  is rather many-fold, and the screenshot shows only a part of it to give you the filling of a 360% 
-customer data view John&Sons' managers have received:
-
-.. image:: ./img/channel_guide/Screenshots/channels_multi_ex.png
-   
    
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
