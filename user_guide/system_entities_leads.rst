@@ -74,10 +74,10 @@ Create Leads from the UI
 
   - Click |BCrLOwnerClear| button to clear the field
   
-**Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section 
+**Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
 
-(To create a custom field go to *System --> Entities --> Entity Management --> Lead* and click :guilable: `Create Field`
- button).
+To create a custom field go to *System --> Entities --> Entity Management --> Lead* and click :guilable:`Create Field`
+button.
 
 **Once all the necessary fields have been defined, click the button the right top corner of the page to save the lead in 
 the system.**
