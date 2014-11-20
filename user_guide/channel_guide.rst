@@ -7,7 +7,7 @@ Channels Management
 A **Channel** entity represent one source of customers and customer data. 
 
 The guide describes how to :ref:`create <user-guide-channel-guide-create>` channels and 
-:ref:`manage <user-guide-channel-guide-edit>` their records from the UI 
+:ref:`manage <user-guide-channel-guide-actions>` their records from the UI 
 
 .. _user-guide-channel-guide-create:
 
@@ -122,51 +122,46 @@ To delete an entity, click |IcDelete| icon. This will remove the entity from thi
 .. image:: ./img/channel_guide/channels_entities_delete.png
 
 
-.. _user-guide-channel-guide-edit:
+.. _user-guide-channel-guide-actions:
 
-Managing Channels
------------------
+Channel Actions
+----------------
 
-Once a channel has been saved, it will appear in the *Channels* grid.
+The following actions are available for the channels:
 
-Hover the mouse to *...* to manage the channel records as described in
-the :ref:`Grids <user-guide-ui-components-grids>` section of the UI Components guide.
+- From the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/channel_guide/channels_edit.png
 
-The following action icons are available:
-
-|IcDelete|: used to delete the channel from the system. 
+  |IcDelete|: delete the channel from the system. 
 
 .. caution:: 
 
     Once a channel has been deleted all the relevant data will be deleted as well.
 
-|IcEdit|: used to edit the channel details. 
+  |IcEdit|: edit the channel details. 
 
 .. caution:: 
 
     You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
-|IcView| : used to get to the View page of the channel. 
-For example, this is a View page of a *Factory* channel of B2B type:
+  |IcView| : get to the View page of the channel. 
+
+
+- From the :ref:`view page <user-guide-ui-components-view-pages>`
 
 .. image:: ./img/channel_guide/channels_created_b2b_view.png
 
-There is a number of actions available from the page as described in the 
-:ref:`View Pages <user-guide-ui-components-view_pages>` section of the UI Components guide.
+  :guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
 
-The following actions buttons are available:
+  Once the channel has been deactivated, no new data from the channel will be uploaded to the system.
+  
+  
+  :guilabel:`Edit` button: get to the Edit form of the channel
+  
+  :guilabel:`Delete` button: delete the channel from the system
 
-:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
-once the channel has been deactivated, no new data from the channel will be uploaded to the system.
-  
-  
-:guilabel:`Edit` button: used to get to the Edit form of the channel
-  
-:guilabel:`Delete` button: used to delete the channel from the system
 
-  
 Editing Entities from a Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
