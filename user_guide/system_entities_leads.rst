@@ -181,6 +181,10 @@ The workflow defines that each instance of a Lead entity may be:
 
 The full workflow is described in the :ref:`*"Sales Processes Workflow"* <user-guide-sales-processes-workflow>` guide.
 
+Use  Lead instances within a pre-implemented B2B-oriented workflow described in the 
+  :ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>` guide and customized workflows (see
+  :ref:`Workflows <user-guide-workflow-management>`)
+
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
