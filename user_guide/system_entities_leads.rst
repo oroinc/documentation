@@ -10,14 +10,11 @@ any arrangements.
 
 As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assigned a *Lead* entity, you can:
 
-- :ref:`Create <user-guide-leads-create>` new and :ref:`edit <user-guide-leads-edit>`
-  existing leads from the UI.
+- :ref:`Create <user-guide-leads-create>` new leads
 
-- Manage leads using different :ref:`actions <user-guide-leads-activities> to the leads.
-
-- :ref:`Import and export <user-guide-leads-importexport>
-  
-
+- :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, assign different 
+  :ref:`activities <user-guide-leads-activities> to the leads and run lead records :ref:`import and 
+  export <user-guide-leads-importexport>
 
 - Analyse Lead record details with :ref:`reports <user-guide-leads-reports>`.
 
@@ -87,10 +84,48 @@ Create Leads from the UI
 the system.**
 
 
-.. _user-guide-leads-edit:
+.. _user-guide-leads-actions:
 
-Edit Existing Leads 
-^^^^^^^^^^^^^^^^^^^
+Lead Actions 
+^^^^^^^^^^^^^
+
+The following actions are available for the leads:
+
+- From the :ref:`grid <user-guide-ui-components-grids>`:
+
+
+
+.. image:: ./img/channel_guide/channels_edit.png
+
+|IcDelete|: delete the channel from the system. 
+
+.. caution:: 
+
+    Once a channel has been deleted all the relevant data will be deleted as well.
+
+|IcEdit|: edit the channel details. 
+
+.. caution:: 
+
+ You cannot change the channel type if data from the channel has been uploaded into the system at least once.
+
+|IcView| : get to the View page of the channel. 
+
+
+- From the :ref:`view page <user-guide-ui-components-view-pages>`
+
+.. image:: ./img/channel_guide/channels_created_b2b_view.png
+
+:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
+
+Once the channel has been deactivated, no new data from the channel will be uploaded to the system.
+  
+  
+:guilabel:`Edit` button: get to the Edit form of the channel
+  
+:guilabel:`Delete` button: delete the channel from the system
+
+
 
 Once a lead has been saved, it will appear in the *Leads* grid. A number of options is available for each lead. Hover 
 the mouse to *...* column to see them:
