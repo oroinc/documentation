@@ -3,92 +3,71 @@
 Channel Entities. Leads.
 ========================
 
-.. _user-guide-system-channel-entities-leads:
+Leads Entity defines common rules and setting applied to Lead records ("leads"). 
+Lead records represent people or businesses the have initial interest, authority and budget to take part in your 
+commercial or social activity. Intentions thereof may be yet unclear and often not backed up with 
+any arrangements. 
 
+As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assigned a *Lead* entity, you can:
 
-Overview
---------
+- :ref:`Create <user-guide-leads-create>` new and :ref:`edit <user-guide-leads-edit>`
+  existing leads from the UI.
 
-*Entity* is a grouping of things with common rules and/or data. Rules and/or setting defined for an Entity are applied 
-to all of its instances. 
+- Manage leads using different :ref:`actions <user-guide-leads-activities> to the leads.
 
-OroCRM provides a number of pre-implemented entities that may be assigned to a 
-:ref:`channel <user-guide-channel-guide`>.
-
-One of such entities is a *Lead*.
-
-Instances of a Lead entity represent people or businesses the have initial interest, authority and 
-budget to purchase a product or service from you. Intentions thereof may be yet unclear and often not backed up with 
-any arrangements. Once a probability of making a deal with a lead becomes high, the Lead instance becomes an 
-:ref:`opportunity <user-guide-system-channel-entities-opportunities`.
-
-As soon as there is at least one Channel assigned a *Lead* entity, Lead records ("leads") may be added and processed in 
-the system.
-
-Now you can:
-
-- :ref:`Create <user-guide-system-entities-leads-create>` new and :ref:`edit <user-guide-system-entities-leads-edit>`
-  existing Lead records from the UI. 
-
-- Perform different :ref:`actions <user-guide-system-entities-actions-with-leads>
-
-- Analyse details of the Lead instances with :ref:`out of box reports <user-guide-system-entities-reports-with-leads>` 
-  or customized reports, created as provided by the *Reports* guide
-
-- Refer to the Lead instances within a pre-implemented B2B-oriented workflow described in the 
-  :ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>` guide and customized workflows (see
-  :ref:`Workflows <user-guide-workflow-management>`)
-
-- Import and export lead records from/to .csv files (see 
-  :ref:`Import and Export Functionality <user_guide_export_import>` guide)
+- :ref:`Import and export <user-guide-leads-importexport>
   
-  
+
+
+- Analyse Lead record details with :ref:`reports <user-guide-leads-reports>`.
+
+- Use leads in :ref:`workflows <user-guide-sales-processes-workflow>`
+
+
 .. _user-guide-system-entities-leads-create:
 
 Create Leads from the UI
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Click :guilabel:`Create Lead` button to manually input the details of a lead. *Create Lead* form will appear.
+- Click :guilabel:`Create Lead` button. 
 
-.. _user-guide-system-entities-leads-salesleads-tab-mandatory-fields-for-leads:
+- *Create Lead* form will appear:
 
-The following fields are mandatory and **must** be defined.
+.. image:: ./img/leads/leads_create.png
 
-.. csv-table:: **Mandatory Lead Properties**
-  :header: "**Name**","**Description**"
-  :widths: 10, 30
+**Mandatory fields** must be defined:
 
-  "**Owner***","The field limits the list of Users authorized to manage the lead created to the selected User and Users 
-  whose roles allow managing leads owned by the User(e.g. a head of the User's Business Units, System administrator, 
-  etc.).
+- **Owner***: limits the list of Users that can manage to its owner and Users, whose roles allow managing leads 
+  owned by the owner(e.g. head of the business units, system administrator, etc.).
   
-  By default, the User creating the Lead is chosen.
+  By default, the User creating the lead is chosen.
 
   - Click |BCrLOwnerClear| button to clear the field
   
   - Click |Bdropdown| button to choose one of available Users from the list
 
-  - Click |BGotoPage| button to choose from the *Select Owner* page."
-
-  "**Lead Name***","This is the name that will be used to refer to the Lead instance in the System.
+  - Click |BGotoPage| button to choose from the *Select Owner* page.
   
-  It is recommended to define a meaningful name."
+- **Lead Name***: name used to refer to the lead in the system.
 
-  "**Channel***", "Any of active channels assigned the *Lead* entity.
+- **Channel***: any of active channels assigned the *Lead* entity. 
+
+  Details of the lead will be uploaded from the source of the Channel.
   
-  - Click |Bdropdown| button to choose one of available Channels from the list."
-
-   "**First Name and Last Name***","Personal details of the potential customer or contact person. The fields will be 
-   optional since 1.4.5"
+  - Click |Bdropdown| button to choose one of available Channels from the list.
+  
+- **First Name*** and **Last Name***: personal details of the potential customer or contact person. The fields will be 
+  optional since 1.4.5"
        
-Optional system fields keep additional information and may be left empty.
+
+**Optional fields** keep additional information and may be left empty:
 
 - If a field refers to a number (e.g. Number of employees) an integer value shall be filled (if any).
 
-- Optional system field **Source** is a drop-down that contains adjustable predefined list of possible lead sources, 
-  such as Website, Direct Mail, Partner, etc.
+- **Source** drop-down contains tunable predefined list of possible lead sources, such as Website, Direct Mail, Partner,
+  etc.
 
-- Optional system fields *Contact* and *B2B Customer* enable binding the lead created to records of corresponding 
+- **Contact* and *B2B Customer* enable binding the lead created to records of corresponding 
   Entities in the System.
   
   - Click |Bdropdown| button to choose one of available Contacts\Customers from the list
@@ -99,47 +78,16 @@ Optional system fields keep additional information and may be left empty.
 
   - Click |BCrLOwnerClear| button to clear the field
   
-All the available custom fields of the Lead entity will be displayed in the *Additional* section (to create a custom 
-field go to *System --> Entities --> Entity Management --> Lead* and click :guilable: `Create Field` button).
+**Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section 
 
-Click the button the right top corner of the page to save the lead in the system.
+(To create a custom field go to *System --> Entities --> Entity Management --> Lead* and click :guilable: `Create Field`
+ button).
 
-*Create Leads. Example.*
-""""""""""""""""""""""""
-
-John&Sons Company is providing building materials to different scale construction businesses. Company account managers 
-have run  preliminary negotiations with a construction company Build&Live on subcontracting in a bid for public school 
-construction. However the bid conditions have not yet been approved.
-To record details of the potential opportunity, a Lead instance with the following properties was created:
-
-- Owner: Jack Johnson (the user creating the instance)
-
-- Lead name: Public School Bid 
-
-- Channel: Factory (Channel instance of B2B Type created for the John&Sons Factory sales activities as an example in the
- \:ref: Channel Management Guide <user-guide-channel-guide_example>`\ 
-
-- First Name: James
-
-- Last Name: Custolini
-
-- Contact: James Custolini
-
-- Job Title: Sales Manager
-
-- Phone number: 1626568976
-
-- E-mail: JCust@gmail.com
-
-- B2BCustomer: left empty. This is the first contact with Build&Live, so there still have not been a B2B Customer 
-  created for the company. As probability of the deal completion is unclear, there is no essential sense in creating 
-  the record.
-
-.. image:: ./img/leads/leads_example.png
-   align: right
+**Once all the necessary fields have been defined, click the button the right top corner of the page to save the lead in 
+the system.**
 
 
-.. _user-guide-system-entities-leads-edit:
+.. _user-guide-leads-edit:
 
 Edit Existing Leads 
 ^^^^^^^^^^^^^^^^^^^
