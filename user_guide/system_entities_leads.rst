@@ -12,11 +12,10 @@ As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assig
 
 - :ref:`Create <user-guide-leads-create>` new leads
 
-- :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, assign different 
-  :ref:`activities <user-guide-leads-activities> to the leads and run lead records :ref:`import and 
-  export <user-guide-leads-importexport>
+- :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, import and export leads and assign different 
+  :ref:`activities <user-guide-leads-activities> to the leads
 
-- Analyse Lead record details with :ref:`reports <user-guide-leads-reports>`.
+- Analyse Lead record details with :ref:`reports <user-guide-leads-reports>`
 
 - Use leads in :ref:`workflows <user-guide-sales-processes-workflow>`
 
@@ -91,39 +90,32 @@ Lead Actions
 
 The following actions are available for the leads:
 
-- From the :ref:`grid <user-guide-ui-components-grids>`:
+- From the :ref:`Grid <user-guide-ui-components-grids>`:
 
+.. image:: ./img/leads/leads_grid.png
 
-
-.. image:: ./img/channel_guide/channels_edit.png
-
-|IcDelete|: delete the channel from the system. 
-
-.. caution:: 
-
-    Once a channel has been deleted all the relevant data will be deleted as well.
-
-|IcEdit|: edit the channel details. 
-
-.. caution:: 
-
- You cannot change the channel type if data from the channel has been uploaded into the system at least once.
-
-|IcView| : get to the View page of the channel. 
-
-
-- From the :ref:`view page <user-guide-ui-components-view-pages>`
-
-.. image:: ./img/channel_guide/channels_created_b2b_view.png
-
-:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
-
-Once the channel has been deactivated, no new data from the channel will be uploaded to the system.
+  - Delete a lead from the system - |IcDelete|
   
+  - Get to the Edit form  of the lead - |IcEdit|
   
-:guilabel:`Edit` button: get to the Edit form of the channel
+  - 
+
+|IcView| : get to the View page of the lead. 
+
+Export and import lead record details as described in the  
+:ref:`*Export and Import Functionality* <user-guide-export-import >` guide. 
+
+- From the :ref:`View page <user-guide-ui-components-view-pages>`
+
+.. image:: ./img/lead/lead_view.png
+  
+:guilabel:`Edit`: get to the Edit form of the lead
   
 :guilabel:`Delete` button: delete the channel from the system
+
+
+
+
 
 
 
