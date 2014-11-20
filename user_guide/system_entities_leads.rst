@@ -17,7 +17,7 @@ As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assig
 
 - Analyse Lead record details with :ref:`reports <user-guide-leads-reports>`
 
-- Use leads in :ref:`workflows <user-guide-sales-processes-workflow>`
+- Use leads in :ref:`workflows <user-guide-leads-workflows>`
 
 
 .. _user-guide-system-entities-leads-create:
@@ -63,7 +63,7 @@ Create Leads from the UI
 - **Source** drop-down contains tunable predefined list of possible lead sources, such as Website, Direct Mail, Partner,
   etc.
 
-- **Contact* and *B2B Customer* enable binding the lead created to records of corresponding 
+- **Contact** and *B2B Customer* enable binding the lead created to records of corresponding 
   Entities in the System.
   
   - Click |Bdropdown| button to choose one of available Contacts\Customers from the list
@@ -163,27 +163,17 @@ Out of the box, the report shows:
 This report may be customized, new custom reports can be added. For more details on the ways to customize the reports, 
 please see the Reports Guide.
 
+.. _user-guide-leads-workflows:
 
 Using Leads in the Workflows
 ----------------------------
-For each Entity in the OroCRM you can specify one or several workflows that will provide for rules and guidelines on 
-possible actions/updates related to all the instances of the Entity. This way you can ensure consistency and proper
-succession of each step of the process using the instances.
+Workflows defines rules and guidelines on possible actions/updates related to the entity records. 
 
-OroCRM 1.4 comes with a ready-to-use B2B-sharpened workflow *Sales Processes*, part whereof Leads are. 
-The workflow defines that each instance of a Lead entity may be:
+OroCRM 1.4 comes with a pre-implemented B2B-oriented workflow described in the 
+:ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>` guide. 
 
-- Used to start a new Sales Process
-
-- Qualified into an Opportunity
-
-- Disqualified (and Reopened later if applicable).
-
-The full workflow is described in the :ref:`*"Sales Processes Workflow"* <user-guide-sales-processes-workflow>` guide.
-
-Use  Lead instances within a pre-implemented B2B-oriented workflow described in the 
-  :ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>` guide and customized workflows (see
-  :ref:`Workflows <user-guide-workflow-management>`)
+New customer-specific workflows can also be created, as described in the :ref:`Workflows 
+guide <user-guide-workflow-management>`
 
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
