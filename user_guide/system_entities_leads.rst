@@ -105,7 +105,7 @@ From the :ref:`Grid <user-guide-ui-components-grids>`:
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`
 
-.. image:: ./img/lead/lead_view.png
+.. image:: ./img/leads/lead_view.png
   
 - Get to the Edit form of the lead
 
