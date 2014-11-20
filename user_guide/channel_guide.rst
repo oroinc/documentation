@@ -133,17 +133,17 @@ The following actions are available for the channels:
 
 .. image:: ./img/channel_guide/channels_edit.png
 
-  |IcDelete|: delete the channel from the system. 
+|IcDelete|: delete the channel from the system. 
 
 .. caution:: 
 
     Once a channel has been deleted all the relevant data will be deleted as well.
 
-  |IcEdit|: edit the channel details. 
+|IcEdit|: edit the channel details. 
 
 .. caution:: 
 
-    You cannot change the channel type if data from the channel has been uploaded into the system at least once.
+ You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
   |IcView| : get to the View page of the channel. 
 
@@ -152,14 +152,14 @@ The following actions are available for the channels:
 
 .. image:: ./img/channel_guide/channels_created_b2b_view.png
 
-  :guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
+:guilabel:`Deactivate` (for Active channels) or :guilabel:`Activate` (for Inactive channels) buttons: 
 
-  Once the channel has been deactivated, no new data from the channel will be uploaded to the system.
+Once the channel has been deactivated, no new data from the channel will be uploaded to the system.
   
   
-  :guilabel:`Edit` button: get to the Edit form of the channel
+:guilabel:`Edit` button: get to the Edit form of the channel
   
-  :guilabel:`Delete` button: delete the channel from the system
+:guilabel:`Delete` button: delete the channel from the system
 
 
 Editing Entities from a Channel
