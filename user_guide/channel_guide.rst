@@ -146,6 +146,7 @@ The following actions are available for the channels:
  You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
   - Get to the View page of the channel :  |IcView| 
+  
 
 - From the :ref:`View page <user-guide-ui-components-view-pages>`
 
@@ -153,7 +154,7 @@ The following actions are available for the channels:
 
   - Deactivate or activate channels : guilabel:`Deactivate` or :guilabel:`Activate` buttons. 
   
-    No new data from the channel will be uploaded to the system from inactive channels.
+  No new data from the channel will be uploaded to the system from inactive channels.
   
   - Get to the Edit form of the channel : :guilabel:`Edit` button
   
