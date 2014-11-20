@@ -13,7 +13,7 @@ As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assig
 - :ref:`Create <user-guide-leads-create>` new leads
 
 - :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, import and export leads and assign different 
-  :ref:`activities <user-guide-leads-activities> to the leads
+  activities to the leads
 
 - Analyse Lead record details with :ref:`reports <user-guide-leads-reports>`
 
@@ -90,81 +90,44 @@ Lead Actions
 
 The following actions are available for the leads:
 
-- From the :ref:`Grid <user-guide-ui-components-grids>`:
+From the :ref:`Grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/leads/leads_grid.png
 
-  - Delete a lead from the system - |IcDelete|
+- Delete a lead from the system : |IcDelete|
   
-  - Get to the Edit form  of the lead - |IcEdit|
+- Get to the Edit form  of the lead : |IcEdit|
   
-  - 
+- Get to the View page of the lead : |IcView| 
 
-|IcView| : get to the View page of the lead. 
+- Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
+  :ref:`*Export and Import Functionality* <user-guide-export-import >` guide. 
 
-Export and import lead record details as described in the  
-:ref:`*Export and Import Functionality* <user-guide-export-import >` guide. 
-
-- From the :ref:`View page <user-guide-ui-components-view-pages>`
+From the :ref:`View page <user-guide-ui-components-view-pages>`
 
 .. image:: ./img/lead/lead_view.png
   
-:guilabel:`Edit`: get to the Edit form of the lead
-  
-:guilabel:`Delete` button: delete the channel from the system
+- Get to the Edit form of the lead
 
+- Delete the lead from the system 
 
+- Add a note to the lead record : the note added will be saved and displayed when the record is approached
 
+- Send Email : Email template pre-filled with lead's details will emerge
 
+- Log Call : the for to log call details will emerge pre-filled with the lead's details
 
+- Add Task : a task related to the lead can be assigned to the user
 
-
-Once a lead has been saved, it will appear in the *Leads* grid. A number of options is available for each lead. Hover 
-the mouse to *...* column to see them:
-
-- Click |IcDelete| to delete the lead from the system. 
-
-- Click |IcEdit| to edit the channel details. Edit page very similar to the page you used to 
-  :ref:`create a lead <user-guide-system-entities-leads-create>`), but details you have already defined will be 
-  displayed
-
-- Click |IcView| to get to the lead's view page. For example, our *Public School Bid* lead view page looks as follows:
-
-.. image:: ./img/leads/leads_view_example.png
-
-In the top right corner there are :ref:`action <user-guide-system-entities-actions-with-leads:>` , :guilabel:`Edit` 
-and :guilabel:`Delete` buttons.
-
-Another way to edit Lead instances, especially useful for bulk changes or in case of integration with a
-third-party applications, is over .csv export and import. It is described in the 
-:ref:Import and Export Functionality <user_guide_export_import>` guide.
-
-
-.. _user-guide-system-entities-actions-with-leads:
-
-Actions with Leads
-------------------
-
-All the actions enabled for the Lead entity can be performed using the lead's details. Action buttons are available 
-in the top right corner of the view page. If there are over two different actions, the buttons are collected under the
-:guilabel:`Lead Actions` drop-down.
-
-**For example**, Jack&Sons managers have called to James Custolini from the Build&Live. To log the call, it is enough
-to choose the :guilabel:`Log Call` action button. The log call form filled with the lead's details will appear:
-
-.. image:: ./img/leads/leads_actions_example.png
+- Add Event : an event can be added for the lead
 
       
-.. _user-guide-system-entities-reports-with-leads:
+.. _user-guide-leads-reports:
 
 Reports with Leads
 ------------------
 
-OroCRM supports a very flexible functionality for creation of drill-down reports for any entities populated into the 
-OroCRM described in a separate guide.
-
 OroCRM 1.4 comes with two ready-to-use reports related to Lead instances.
-
 
 *Leads by Date*
 ^^^^^^^^^^^^^^^
@@ -182,18 +145,23 @@ It shows:
 
 - total amount of Lead instances created
 
+.. image:: ./img/lead/lead_report_by_date.png
 
 *Lead by Geography*
 ^^^^^^^^^^^^^^^^^^^
 
 This report is placed in the *Manage custom reports* section and can be edited. 
-"As is" the report shows:
+
+Out of the box, the report shows:
 
 - name of the US state (in alphabetic order)
 
 - number of Leads in this State
 
-For more details on the ways to customize the reports, please see the Report Guide.
+.. image:: ./img/lead/lead_report_by_state.png
+
+This report may be customized, new custom reports can be added. For more details on the ways to customize the reports, 
+please see the Reports Guide.
 
 
 Using Leads in the Workflows
@@ -211,33 +179,8 @@ The workflow defines that each instance of a Lead entity may be:
 
 - Disqualified (and Reopened later if applicable).
 
-The full workflow is described in a \:ref:separate 
-article <user-guide-sales-processes-workflow>`\
+The full workflow is described in the :ref:`*"Sales Processes Workflow"* <user-guide-sales-processes-workflow>` guide.
 
-
-Leads Example
----------------
-
-John&Sons Company is providing building materials to different scale businesses. During an industry fair the company account 
-managers ran preliminary negotiations with Home2Go company on subontracting in a bid for public school construction. 
-However the bid conditions have not yet been approved.
-
-To record the details of the potential opportunity, there was created a Lead instance with the following propeties:
-
-- Owner: Jack Johnson (the user creating the instance)
-- Lead name: Public School Bid 
-- Channel: Factory (Channel instance of B2B Type created for the John&Sons Factory sales activities as an example in the
- \:ref: Channel Management Guide <user-guide-channels-example`\ If there is no Channel instance that correspond to the 
- Lead inb the system, a new one can be created.
-- First Name
-- Last Name
-- Contact: James Custolini
-- Job Title: sales manager
-- Phone number: 1676568976
-- E-mail:
-- B2BCustomer: Home2Go (B2B customer instance  created for the Home2Go company as an example in the
- \:ref: Channel Management Guide <user-guide-channels-example`\ If there is no B2B Customer nor a Customer Identity
- instance that correspond to the Lead inb the system, a new one can be created.)
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
