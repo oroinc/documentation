@@ -145,7 +145,7 @@ The following actions are available for the channels:
 
  You cannot change the channel type if data from the channel has been uploaded into the system at least once.
 
-  |IcView| : get to the View page of the channel. 
+|IcView| : get to the View page of the channel. 
 
 
 - From the :ref:`view page <user-guide-ui-components-view-pages>`
