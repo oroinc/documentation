@@ -154,7 +154,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`
 
 - Deactivate or activate channels : guilabel:`Deactivate` or :guilabel:`Activate` buttons. 
   
-No new data from the channel will be uploaded to the system from inactive channels.
+  No new data from the channel will be uploaded to the system from inactive channels.
   
 - Get to the Edit form of the channel : :guilabel:`Edit` button
   
