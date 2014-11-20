@@ -145,7 +145,7 @@ It shows:
 
 - total amount of Lead instances created
 
-.. image:: ./img/leads/lead_report_by_date.png
+.. image:: ./img/leads/leads_report_by_date.png
 
 *Lead by Geography*
 ^^^^^^^^^^^^^^^^^^^
@@ -158,7 +158,7 @@ Out of the box, the report shows:
 
 - number of Leads in this State
 
-.. image:: ./img/lead/leads_report_by_state.png
+.. image:: ./img/leads/leads_report_by_state.png
 
 This report may be customized, new custom reports can be added. For more details on the ways to customize the reports, 
 please see the Reports Guide.
