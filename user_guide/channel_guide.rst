@@ -60,7 +60,7 @@ The three fields are mandatory and **must** be defined:
    
   - *B2B*: dedicated for managing B2B customer relations
    
-  - *Magento*: sharpened for :term:`Magento` stores
+  - *Magento*: sharpened for Magento stores
    
   - *Custom*: any other channels, subject to specific business needs and goals"
 
