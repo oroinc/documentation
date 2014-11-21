@@ -2,10 +2,10 @@
 Import and Export Functionality
 ===============================
 
-OroCRM's import and export functionality enables simple way of working with multiple records in CSV format.
+OroCRM's import and export functionality enables a simple way of working with multiple records in CSV format.
 
-If the functionality is enabled for entity, :guilabel:`Export` and :guilabel:`Import` buttons are displayed
-in the top right corner of the grid.
+If the functionality is enabled for an entity, :guilabel:`Export` and :guilabel:`Import` buttons are displayed
+at the top right corner of the grid.
 
 
 .. _user-guide-import:
@@ -58,7 +58,7 @@ Export
 
 - *"Export started. Please wait"* message will appear at the top of the screen.
 
-- As soon as the export has finished the message will change to: *"Export performed successfully, [number]
+- As soon as the export finishes the message will change to: *"Export performed successfully, [number]
   downloads exported. Download result file"*.
 
 - Click the *"Download result file*" at the end of the message and the download will be performed subject to your
