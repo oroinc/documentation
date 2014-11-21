@@ -12,12 +12,12 @@ The guide describes how to :ref:`create <user-guide-channel-guide-create>` chann
 Creating a Channel
 ------------------
 
-1. Go to *System --> Channels* page and click :guilabel:`Create Channel` button in the top right corner to get
+1. Go to *System --> Channels* page and click :guilabel:`Create Channel` button at the top right corner to get
    to the *Create Channel* page.
 
 2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel
 
-3. Define :ref:`Entities <user-guide-channel-guide-entities>`, details of which will be received from the channel's
+3. Define :ref:`Entities <user-guide-channel-guide-entities>`, details that will be received from the channel's
    source.
 
 4. Once you have finished adding the entities, use the *Save* function (click :guilabel:`Save and Close`
@@ -48,17 +48,17 @@ The three fields are mandatory and **must** be defined:
   if a channel is being configured for future use or is out of date.)"
   "**Name**", "Name that will be used to refer to the Channel in the system. It is recommended to keep the name
   meaningful."
-  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel  created.
+  "**Channel Type**", "A drop-down, where you can choose a Channel Type more suitable for the channel created.
 
   Channel types define the set of rules and settings applied to the channel.
 
-  There is a proven practice of extending the OroCRM with new channel types to meet specific business needs.
+  There is a proven practice of extending OroCRM with new channel types to meet specific business needs.
 
   The following types are available in the current version out of the box:
 
   - *B2B*: dedicated for managing B2B customer relations
 
-  - *Magento*: sharpened for Magento stores
+  - *Magento*: Designed for Magento stores
 
   - *Custom*: any other channels, subject to specific business needs and goals"
 
@@ -87,11 +87,11 @@ automatically, subject to the chosen channel type:
 - Magento Channel - Web Customer
 - Custom Channel - Customer Identity
 
-Some other entities are pre-implemented in the system and sharpened for a specific channel type, e.g. Opportunity
+Some other entities are pre-implemented in the system and designed for a specific channel type, e.g. Opportunity
 and Lead for a B2B Channel or Cart and Order for a Magento Channel. The entities will be added to the list of
 entities by default, once you have selected the channel type, they are optional and may be removed.
 
-**Custom Entities** are created for specific Customer needs and their records can contain any required
+**Custom Entities** are created for specific Customer needs and their records may contain any required
 details to be filled and processed by the System. For more details on Customer entities please
 see the *Entity Management* guide.
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the
@@ -112,7 +112,7 @@ To delete an entity, click |IcDelete| icon. This will remove the entity from thi
 Channel Actions
 ----------------
 
-The following actions are available for the channels:
+The following actions can be performed on channels:
 
 .. From the :ref:`grid <user-guide-ui-components-grids>`
 
@@ -124,13 +124,13 @@ From the grid:
 
 .. caution::
 
-    Once a channel has been deleted all the relevant data will be deleted as well.
+    Once a channel has been deleted all the related data will be deleted as well.
 
 - Get to the Edit form of the channel : |IcEdit|
 
 .. caution::
 
-    You cannot change the channel type if data from the channel has been uploaded into the system at least once.
+    You cannot change the channel type if data from the channel has been uploaded into the system before.
 
 - Get to the View page of the channel :  |IcView|
 
@@ -143,7 +143,7 @@ From the View page:
 
 - Deactivate or activate channels : guilabel:`Deactivate` or :guilabel:`Activate` buttons.
 
-  No new data from the channel will be uploaded to the system from inactive channels.
+  No new data from the channel will be uploaded to the system for inactive channels.
 
 - Get to the Edit form of the channel : :guilabel:`Edit` button
 
@@ -162,7 +162,7 @@ In the *"Actions"* column, click |IcView| to see the Entity details or |IcEdit| 
 
 .. note::
 
-    If you don't have necessary permissions, you will see a browser-specific message on access denial.
+    If you don't have necessary permissions, you will receive an error message letting you know you do not have the required permissions.
 
 Please refer to the *Entity Management Guide* for more details.
 
