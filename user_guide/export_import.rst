@@ -19,10 +19,10 @@ Import
 
 .. image:: ./img/export_import/download_data_template.png
 
-- Prepare a .csv file following the template 
+- Prepare a .csv file following the template
 
 
-.. caution:: 
+.. caution::
 
     Mandatory fields of the entity **must** be specified
 
@@ -38,10 +38,10 @@ Import
 - Carefully read through the submission form
 
 .. image:: ./img/export_import/leads_import_validation_results.png
-   
-- Click :guilable:`Back` to choose another file or :guilable:`Import` button to go on with the import
 
-  *"Validation started. Please wait"* message will appear. 
+- Click :guilabel:`Back` to choose another file or :guilabel:`Import` button to go on with the import
+
+  *"Validation started. Please wait"* message will appear.
 
   *"File is successfully imported"* message will appear when the import has finished.
 
@@ -53,23 +53,23 @@ Once import is over the new entity instances will appear in the grid.
 Export
 -------
 
-- Go to the grid and 
-  - Click :guilable:`Export` button
-  
+- Go to the grid and
+  - Click :guilabel:`Export` button
+
 - *"Export started. Please wait"* message will appear at the top of the screen.
 
-- As soon as the export has finished the message will change to: *"Export performed successfully, [number] 
+- As soon as the export has finished the message will change to: *"Export performed successfully, [number]
   downloads exported. Download result file"*.
 
-- Click the *"Download result file*" at the end of the message and the download will be performed subject to your 
+- Click the *"Download result file*" at the end of the message and the download will be performed subject to your
   browser settings.
 
-.. note:: 
+.. note::
 
     The scope of record details exported, their name and position in the .csv file depend on the Import&Export settings
-    of the entity fields. 
+    of the entity fields.
 
-    
+
 
 .. |Bdropdown| image:: ./img/buttons/Bdropdown.png
    :align: middle
