@@ -7,6 +7,7 @@ End user oriented documentation that explains how to administer and configure ap
     workflow_management
     reports
     channel_guide
+    export_import
 
 TODO List
 ---------
