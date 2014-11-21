@@ -2,7 +2,7 @@
 Channels Management
 ===================
 
-A **Channel** entity represents one source of customers and customer data.
+A **Channel** entity represents a source of customers and customer data.
 
 The guide describes how to :ref:`create <user-guide-channel-guide-create>` channels and
 :ref:`manage <user-guide-channel-guide-actions>` their records from the UI.
