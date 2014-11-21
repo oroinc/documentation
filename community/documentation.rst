@@ -2,7 +2,7 @@ Writing Documentation
 =====================
 
 Although an Open Source Project allows developers to gain insight into all execution flows, and actual implementation
-can be analyzed and profiled by looking at the source code, it might not be enough to explain the implementation high-level
+can be analyzed and profiled by looking at the source code, it may not be enough to explain the implementation's high-level
 vision, all use cases and the thought behind the architecture. We strongly believe that proper documentation along side
 with the source-code can help with adoption and raise the quality of implementations as well as save time for developers
 learning the platform. We are asking our community to help in the effort of documenting the Oro Platform and making it a
