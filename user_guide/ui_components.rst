@@ -151,7 +151,7 @@ start with 123 are chosen:
 "Create" Form
 --------------
 
-If new entity records can be added to the system, :guilabel:`Create {Entity Name}`is shown in the top right 
+If new entity records can be added to the system, :guilabel:`Create {Entity Name}` is shown in the top right 
 corner of the grid.
 
 Click the button to get to the *"Create ..."* page.
@@ -244,7 +244,7 @@ If there are more than four actions available for the entity records, they will 
 .. image:: ./img/ui_components/view_action_buttons_2.png
 
 
-.. _user-guide-ui-edit-forms:
+.. _user-guide-ui-components-edit-forms:
     
 Edit Form
 ----------
