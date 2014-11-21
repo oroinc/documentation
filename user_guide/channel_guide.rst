@@ -1,6 +1,4 @@
 
-.. _user-guide-channel-guide:
-
 Channels Management
 ===================
 
