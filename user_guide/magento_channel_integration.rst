@@ -7,9 +7,9 @@ Integration with Magento
 OroCRM comes with out of the box integration with Magento. 
 Following the integration data can be loaded from and to a Magento-based E-commerce store and processed in the OroCRM. 
 The article describes how to :ref:`define <user-guide-magento-channel-integration-details>` and 
-:ref:`manage <user-guide-magento-channel-integration-details-edit>`, including the way to define data synchronization
-:ref:`settings <user-guide-magento-channel-integration-synchronization>` and 
-:ref:`run <user-guide-magento-channel-integration-synchronization>` the synchronization. 
+:ref:`manage <user-guide-magento-channel-integration-details_edit>`, including the way to define data
+:ref:`synchronization settings <user-guide-magento-channel-integration-synchronization>` and 
+:ref:`manually start <user-guide-magento-channel-integration-synchronization>` the synchronization. 
 
 .. hint::
     
