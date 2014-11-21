@@ -4,10 +4,10 @@
 Channels Management
 ===================
 
-A **Channel** entity represent one source of customers and customer data. 
+A **Channel** entity represents one source of customers and customer data.
 
 The guide describes how to :ref:`create <user-guide-channel-guide-create>` channels and 
-:ref:`manage <user-guide-channel-guide-actions>` their records from the UI 
+:ref:`manage <user-guide-channel-guide-actions>` their records from the UI.
 
 .. _user-guide-channel-guide-create:
 
@@ -20,7 +20,7 @@ Creating a Channel
 2. Define :ref:`General Details <user-guide-channel-guide-general>` of the Channel
 
 3. Define :ref:`Entities <user-guide-channel-guide-entities>`, details of which will be received from the channel's 
-   source
+   source.
 
 4. Once you have finished adding the entities, use the *Save* function (click :guilabel:`Save and Close`
    or :guilabel:`Save` button in the top right corner). Success message will appear and your Channel 
@@ -93,20 +93,7 @@ Some other entities are pre-implemented in the system and sharpened for a specif
 and Lead for a B2B Channel or Cart and Order for a Magento Channel. The entities will be added to the list of 
 entities by default, once you have selected the channel type, they are optional and may be removed.
 
-- More information about the entities default for channels of B2B type and their usage pre-implemented in the System 
-  is provided in the *B2B Channels and Their Entities* guide.
-  
-- More information about the entities default for channels of Magento type and their usage pre-implemented in the 
-  System is provided in the *Magento Entities* guide.
-
-- Information about System entities default for Magento Channels is uploaded into the OroCRM during synchronization as 
-  described in the :ref:`*Magento Channel Integration* <user-guide-magento-channel-integration>` guide.
-
-- Another pre-implemented entity is a **Contact Request**. It refers to records uploaded to the system from a 
-  pre-implemented embedded form *Contact request* that can be added to any Website. The Entity is described in more 
-  details in the *Actions* guide.
-  
-**Custom Entities** are created for specific Customer needs and their records can contain any required 
+**Custom Entities** are created for specific Customer needs and their records can contain any required
 details to be filled and processed by the System. For more details on Customer entities please 
 see the *Entity Management* guide. 
 Once a Custom entity has been created in the System, it will automatically appear in the drop-down menu in the 
