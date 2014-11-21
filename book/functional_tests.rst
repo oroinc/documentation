@@ -140,7 +140,8 @@ search tables that are not transactional.
 Loading Data Fixtures
 ~~~~~~~~~~~~~~~~~~~~~
 
-Use the ``loadFixtures()`` method to load a fixture in a test::
+Use the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::loadFixtures`
+method to load a fixture in a test::
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -260,9 +261,10 @@ Writing Functional Tests
 
 To create a functional test case, you'll always have to do a couple of things:
 
-* Extend the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class;
+* Extend the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase`
+  class;
 
-* Prepare the test client (an instance of the ``Oro\Bundle\TestFrameworkBundle\Test\Client``
+* Prepare the test client (an instance of the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\Client`
   class);
 
 * Prepare fixtures (optional);
@@ -295,8 +297,7 @@ is not required.
 
 .. code-block:: php
 
-    <?php
-
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -315,8 +316,7 @@ Initialization with custom AppKernel options:
 
 .. code-block:: php
 
-    <?php
-
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -335,8 +335,7 @@ Initialization with authentication:
 
 .. code-block:: php
 
-    <?php
-
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
@@ -469,8 +468,10 @@ Testing ACLs in a Controller
 ............................
 
 In this example, a user without sufficient permissions is trying to access
-a controller action. The ``assertHtmlResponseStatusCodeEquals()`` method is
-used to ensure that the actually is forbidden to access the requested resource::
+a controller action. The
+:method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::assertHtmlResponseStatusCodeEquals`
+method is used to ensure that access to the requested resource actually is
+denied for the user::
 
     // src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
     namespace Oro\Bundle\UserBundle\Tests\Functional;
@@ -586,10 +587,11 @@ Here's an example of a fixture that adds a user without permissions::
 Testing Commands
 ~~~~~~~~~~~~~~~~
 
-When the Oro Platform is installed, you can test commands by using the ``runCommand()``
-method from the ``Oro\Bundle\TestFrameworkBundle\Test\WebTestCase`` class.
-This method executes a command with given parameters and returns its output
-as a string. For example, see what the test for the ``UpdateSchemaListener``
+When the Oro Platform is installed, you can test commands by using the
+:method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::runCommand`
+method from the ``WebTestCase`` class. This method executes a command with
+given parameters and returns its output as a string. For example, see
+what the test for the :class:`Oro\\Bundle\\SearchBundle\\EventListener\\UpdateSchemaDoctrineListener`
 class from the SearchBundle looks like::
 
     // src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
@@ -649,7 +651,8 @@ Testing Services or Repositories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To test services or repositories, you can access the service container through
-the ``getContainer()`` method::
+the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::getContainer`
+method::
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional;
@@ -678,12 +681,10 @@ the ``getContainer()`` method::
 Integration Test Example
 ------------------------
 
-This is an example of how you can write an integration test for a class that uses Doctrine ORM
-without mocking it's classes and using real Doctrine services:
+This is an example of how you can write an integration test for a class that
+uses Doctrine ORM without mocking it's classes and using real Doctrine services:
 
 .. code-block:: php
-
-    <?php
 
     namespace Oro\Bundle\BatchBundle\Tests\Functional\ORM\QueryBuilder;
 
@@ -748,9 +749,10 @@ without mocking it's classes and using real Doctrine services:
 
 .. caution::
 
-    If your class is responsible for retrieving data, it's better to load fixtures and retrieve them using a test
-    class and then assert that the results are valid. Checking DQL is enough in this case because this it is the
-    sole responsibility of this class to modify the query.
+    If your class is responsible for retrieving data, it's better to load
+    fixtures and retrieve them using a test class and then assert that the
+    results are valid. Checking DQL is enough in this case because this it
+    is the sole responsibility of this class to modify the query.
 
 .. _`documentation concerning testing`: http://symfony.com/doc/current/book/testing.html#functional-tests
 .. _`PHPUnit`: http://phpunit.de

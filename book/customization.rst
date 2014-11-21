@@ -275,8 +275,8 @@ performs the steps need to customize the entity schema.
 
     You can skip any version number (for example you can have a ``v1_1`` and
     a ``v1_3`` directory). It is just important that new migrations are placed
-    in directory with higher version numbers (as determined by PHP's ``version_compare()``
-    function.
+    in directory with higher version numbers (as determined by PHP's
+    :phpfunction:`version_compare` function.
 
 Adding Fields to an Existing Entity
 ...................................
@@ -336,14 +336,15 @@ Creating Custom Entities
 Thanks to the EntityExtendBundle, you can create your own entities which are
 then available in the *Section*/*Entities* section of the Platform Application.
 To create your own entities, simply create a migration class that implements
-the ``ExtendExtensionAwareInterface`` and the ``Migration`` interface::
+the :class:`Oro\\Bundle\\EntityExtendBundle\\Migration\\Extension\\ExtendExtensionAwareInterface`
+and the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interfaces::
 
     // src/Acme/DemoBundle/Migrations/Schema/v1_0/CreateCustomEntityMigration.php
     namespace Acme\DemoBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\EntityExtendBundle\Migration\ExtendExtension;
-    use Oro\Bundle\EntityExtendBundle\Migration\ExtendExtensionAwareInterface;
+    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtension;
+    use Oro\Bundle\EntityExtendBundle\Migration\Extension\ExtendExtensionAwareInterface;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 

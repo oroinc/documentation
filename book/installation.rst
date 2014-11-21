@@ -45,11 +45,11 @@ examples assume that you want the root directory of your installation to be
        $ cd /var/www/vhosts
        $ git clone https://github.com/orocrm/platform-application.git
        $ cd platform-application
-       $ git checkout -b 1.0.0 1.0.0
+       $ git checkout 1.4.0
 
    .. note::
 
-       Along with ``1.0.0``, you can use any other released version or even
+       Along with ``1.4.0``, you can use any other released version or even
        the master branch to run the latest development version of the Oro
        Platform Application.
 
@@ -184,7 +184,7 @@ The basic virtual host configuration for **Apache2** looks like this:
 
 If you are using **Nginx** as webserver your virtual host configuration should look like this:
 
-.. code-block:: apache
+.. code-block:: nginx
 
     server {
         server_name bap.tutorial;
@@ -203,8 +203,8 @@ If you are using **Nginx** as webserver your virtual host configuration should l
             fastcgi_param HTTPS off;
         }
 
-        error_log  /var/log/nginx/platform_application_error.log
-        access_log /var/log/nginx/platform_application_access.log
+        error_log  /var/log/nginx/platform_application_error.log;
+        access_log /var/log/nginx/platform_application_access.log;
     }
 
 .. note::
@@ -308,8 +308,8 @@ ways: visit the installation wizard using a web browser, or run the
 
    .. tip::
 
-       Normally, the installation process terminates if it detects an already-existing 
-       installation. Use the ``--force`` option to overwrite an existing installation, 
+       Normally, the installation process terminates if it detects an already-existing
+       installation. Use the ``--force`` option to overwrite an existing installation,
        e.g. during your development process.
 
 .. tip::
@@ -345,7 +345,8 @@ Execute custom Migrations
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create your own migrations that can be executed during the installation.
-A migration is a class which implements the ``Migration`` interface:
+A migration is a class which implements the
+:class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
 
 .. code-block:: php
 
@@ -364,14 +365,16 @@ A migration is a class which implements the ``Migration`` interface:
         }
     }
 
-In the ``up()`` method, you can modify the database schema and/or add additional
-SQL queries that are executed before and after schema changes.
+In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up` method,
+you can modify the database schema and/or add additional SQL queries that
+are executed before and after schema changes.
 
-The ``MigrationsLoader`` loader dispatches two events when migrations are
-being executed, ``oro_migration.pre_up`` and ``oro_migration.post_up``. You
-can listen to either event and register your own migrations in your event
-listener. Use the ``addMigration()`` method of the passed event instance
-to register your custom migrations:
+The :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Loader\\MigrationsLoader`
+dispatches two events when migrations are being executed, ``oro_migration.pre_up``
+and ``oro_migration.post_up``. You can listen to either event and register
+your own migrations in your event listener. Use the
+:method:`Oro\\Bundle\\MigrationBundle\\Event\\MigrationEvent::addMigration` method
+of the passed event instance to register your custom migrations:
 
 .. code-block:: php
 
@@ -408,7 +411,7 @@ event are executed after the *main* migrations have been processed.
 Load custom Data Fixtures
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To load your own data fixtures, you'll need to implement the ``FixtureInterface``:
+To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInterface``:
 
 .. code-block:: php
 
