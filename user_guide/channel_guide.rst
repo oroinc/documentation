@@ -162,7 +162,7 @@ In the *"Actions"* column, click |IcView| to see the Entity details or |IcEdit| 
 
 .. note::
 
-    If you don't have necessary permissions, you will receive an error message letting you know you do not have the required permissions.
+    If you don't have the necessary permissions, you will receive an error message letting you know you do not have the required permissions.
 
 Please refer to the *Entity Management Guide* for more details.
 
