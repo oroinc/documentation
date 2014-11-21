@@ -16,7 +16,7 @@ Let's assume that we are using demo bundle from `How to create new bundle`_
 article and we want to extend OroUserBundle - in this case file AcmeNewBundle.php should look like this:
 
 .. _default Symfony functionality to extend bundle: http://symfony.com/doc/2.3/cookbook/bundles/inheritance.html
-.. _How to create new bundle: ./how_to_create_new_bundle.rst
+.. _How to create new bundle: ./how-to-create-new-bundle
 
 .. code-block:: php
 

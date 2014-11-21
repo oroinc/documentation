@@ -6,6 +6,9 @@ End user oriented documentation that explains how to administer and configure ap
 .. toctree::
     workflow_management
     ui_components
+    reports
+    channel_guide
+    export_import
 
 TODO List
 ---------
