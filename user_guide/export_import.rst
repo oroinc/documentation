@@ -1,6 +1,4 @@
 
-.. _user-guide-export-import 
-
 Import and Export Functionality
 ===============================
 
