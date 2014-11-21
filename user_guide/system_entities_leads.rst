@@ -8,7 +8,7 @@ Lead records represent people or businesses the have initial interest, authority
 commercial or social activity. Intentions thereof may be yet unclear and often not backed up with 
 any arrangements. 
 
-As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assigned a *Lead* entity, you can:
+As soon as there is at least one :ref:`Channel <user-guide-channel-guide-create>` assigned a *Lead* entity, you can:
 
 - :ref:`Create <user-guide-leads-create>` new leads
 
@@ -20,7 +20,7 @@ As soon as there is at least one :ref:`Channel <user-guide-channel-guide>` assig
 - Use leads in :ref:`workflows <user-guide-leads-workflows>`
 
 
-.. _user-guide-system-entities-leads-create:
+.. _user-guide-leads-create:
 
 Create Leads from the UI
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,7 +76,7 @@ Create Leads from the UI
   
 **Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
 
-To create a custom field go to *System --> Entities --> Entity Management --> Lead* and click :guilable:`Create Field`
+To create a custom field go to *System --> Entities --> Entity Management --> Lead* and click :guilabel:`Create Field`
 button.
 
 **Once all the necessary fields have been defined, click the button the right top corner of the page to save the lead in 
@@ -90,7 +90,7 @@ Lead Actions
 
 The following actions are available for the leads:
 
-From the :ref:`Grid <user-guide-ui-components-grids>`:
+From the \:ref:`Grid <user-guide-ui-components-grids>`\:
 
 .. image:: ./img/leads/leads_grid.png
 
@@ -101,9 +101,9 @@ From the :ref:`Grid <user-guide-ui-components-grids>`:
 - Get to the View page of the lead : |IcView| 
 
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
-  :ref:`*Export and Import Functionality* <user-guide-export-import >` guide. 
+  \:ref:`*Export and Import Functionality* <user-guide-export-import>`\ guide. 
 
-From the :ref:`View page <user-guide-ui-components-view-pages>`
+From the \:ref:`View page <user-guide-ui-components-view-pages>`\
 
 .. image:: ./img/leads/lead_view.png
   
@@ -170,7 +170,7 @@ Using Leads in the Workflows
 Workflows defines rules and guidelines on possible actions/updates related to the entity records. 
 
 OroCRM 1.4 comes with a pre-implemented B2B-oriented workflow described in the 
-:ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>` guide. 
+\:ref:`Sales Processes Workflow <user-guide-sales-processes-workflow>`\ guide. 
 
 New customer-specific workflows can also be created, as described in the :ref:`Workflows 
 guide <user-guide-workflow-management>`
@@ -187,3 +187,13 @@ guide <user-guide-workflow-management>`
 
 .. |Bplus| image:: ./img/buttons/Bplus.png
    :align: middle
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
+
