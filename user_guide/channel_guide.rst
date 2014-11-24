@@ -15,7 +15,7 @@ Creating a Channel
 1. Go to the *System --> Channels* page and click the :guilabel:`Create Channel` button in the top right corner to go
    to the *Create Channel* page.
 
-2. Define the :ref:`General Details <user-guide-channel-guide-general>` of the channel.
+2. Define the :ref:`general details <user-guide-channel-guide-general>` of the channel.
 
 3. Define the :ref:`entity <user-guide-channel-guide-entities>` details that will be received from the channel's
    source.
@@ -30,7 +30,7 @@ Creating a Channel
 General Details
 ^^^^^^^^^^^^^^^
 
-Define basic Channel information in the *General* section.
+Define basic channel information in the *General* section.
 
 .. image:: ./img/channel_guide/channels_general.png
 
@@ -42,11 +42,11 @@ The following three fields are mandatory and **must** be defined:
 
   "**Status**","Current status of the channel.
 
-  *Inactive* or *Active*.
+  *Inactive* or *Active*
 
   Be aware that when working with inactive channels, no new data is uploaded to the system. This option is useful
   if a channel is being configured for future use or if it is out of date."
-  "**Name**", "The name that will be used to refer to the Channel in the system. It is recommended to keep the name
+  "**Name**", "The name that will be used to refer to the channel in the system. It is recommended to keep the name
   meaningful."
   "**Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the channel created.
 
@@ -55,11 +55,11 @@ The following three fields are mandatory and **must** be defined:
   Extending OroCRM with new channel types for specific needs is a proven practice and the following channel types are 
   available out of the box in the current version of the platform:
 
-  - *B2B*: dedicated for managing B2B customer relations
+  - *B2B*: Dedicated for managing B2B customer relations
 
   - *Magento*: Designed for Magento stores
 
-  - *Custom*: any other channels which are subject to specific business needs"
+  - *Custom*: Any other channels which are subject to specific business needs"
 
 .. caution::
 
@@ -87,12 +87,12 @@ automatically. It is subject to the chosen channel type:
 - Custom Channel - Customer Identity
 
 Some other entities are pre-defined in the system and are designed for a specific channel type, e.g. an opportunity
-and lead for a B2B channel, or cart and order for a Magento channel. These entities will be added to the entity list by 
+and lead for a B2B channel or a cart and order for a Magento channel. These entities will be added to the entity list by 
 default once you have selected the channel type; however, they are optional and may be removed.
 
-**Custom Entities** are created for specific customer needs, and their records may contain certain
+**Custom Entities** are created for specific customer needs and their records may contain certain
 information which is required by the system. For more information on custom entities, please
-see the *Entity Management* guide. Once a custom entity has been created in the system, it will automatically appear in the 
+see the *Entity Management* guide. Once a custom entity has been created, it will automatically appear in the 
 Entities section drop-down menu.
 
 To add an entity to the channel list, choose the entity and click the :guilabel:`Add` button.
@@ -139,7 +139,7 @@ From the View page:
 
 .. image:: ./img/channel_guide/channels_created_b2b_view.png
 
-- Deactivate or activate channels : guilabel:`Deactivate` or :guilabel:`Activate` buttons.
+- Deactivate or activate channels :guilabel:`Deactivate` or :guilabel:`Activate` buttons.
 
   No new data from the channel will be uploaded for inactive channels.
 
@@ -160,7 +160,7 @@ In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| 
 
 .. note::
 
-   Note that you will receive an error message if you don't have the necessary permissions to edit entities.
+   Note that you will receive an error message if you do not have the necessary permissions to edit entities.
 
 Please refer to the *Entity Management Guide* for more information.
 
