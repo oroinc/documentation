@@ -100,7 +100,7 @@ From the \:ref:`Grid <user-guide-ui-components-grids>`\:
 - Get to the "*View*" page of the lead : |IcView| 
 
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
-  :ref:`*Export and Import Functionality* <user-guide-export-import>` guide. 
+  :ref:`*Export and Import Functionality* <user-guide-import>` guide. 
 
 From the \:ref:`View page <user-guide-ui-components-view-pages>`\
 
@@ -160,7 +160,7 @@ Out of the box, the report shows:
 .. image:: ./img/leads/leads_report_by_state.png
 
 This report may be customized, and other new custom reports can be added. For more details on the ways to create and 
-customize the reports,  please see the :ref:`*Reports*` <user-guide-reports> guide.
+customize the reports,  please see the :ref:`*Reports* <user-guide-reports>` guide.
 
 .. _user-guide-leads-workflows:
 
