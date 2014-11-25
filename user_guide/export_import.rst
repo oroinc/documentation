@@ -5,7 +5,7 @@ Import and Export Functionality
 OroCRM's import and export functionality enables a simple way of working with multiple records in CSV format.
 
 If the functionality is enabled for an entity, :guilabel:`Export` and :guilabel:`Import` buttons are displayed
-at the top right corner of the grid.
+in the top right corner of the grid.
 
 
 .. _user-guide-import:
@@ -45,7 +45,7 @@ Import
 
   *"File is successfully imported"* message will appear when the import has finished.
 
-Once import is over the new entity instances will appear in the grid.
+Once import is over, the new entity records will appear in the grid.
 
 
 .. _user-guide-export:
@@ -61,13 +61,13 @@ Export
 - As soon as the export finishes the message will change to: *"Export performed successfully, [number]
   downloads exported. Download result file"*.
 
-- Click the *"Download result file*" at the end of the message and the download will be performed subject to your
+- Click the *"Download result file*" at the end of the message, and the download will be performed subject to your
   browser settings.
 
 .. note::
 
-    The scope of record details exported, their name and position in the .csv file depend on the Import&Export settings
-    of the entity fields.
+    Please note that scope of record details exported, their names and position in the .csv file depend on the 
+    Import&Export settings of the entity fields.
 
 
 
