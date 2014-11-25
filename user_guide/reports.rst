@@ -1,3 +1,5 @@
+.. _user-guide-reports:
+
 Reports
 =======
 
