@@ -50,8 +50,8 @@ Once import is over, the new entity records will appear in the grid.
 
 .. _user-guide-export:
 
-Export1
--------
+Export
+------
 
 - Go to the grid and
   - Click :guilabel:`Export` button
