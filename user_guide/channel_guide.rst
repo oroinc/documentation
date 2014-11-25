@@ -162,7 +162,7 @@ In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| 
 
    Note that you will receive an error message if you do not have the necessary permissions to edit entities.
 
-Please refer to the *Entity Management Guide* for more information.
+Please refer to the *"Entity Management"* guide for more information.
 
 
 
