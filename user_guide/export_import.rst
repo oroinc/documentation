@@ -41,7 +41,7 @@ Import
 
 - Click :guilabel:`Back` to choose another file or :guilabel:`Import` button to go on with the import
 
-  *"Validation started. Please wait"* message will appear.
+  *"Validation started. Please wait."* message will appear.
 
   *"File is successfully imported"* message will appear when the import has finished.
 
