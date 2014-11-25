@@ -56,10 +56,10 @@ Export
 - Go to the grid and
   - Click :guilabel:`Export` button
 
-- *"Export started. Please wait"* message will appear at the top of the screen.
+- *"Export started. Please wait."* message will appear at the top of the screen.
 
 - As soon as the export finishes the message will change to: *"Export performed successfully, [number]
-  downloads exported. Download result file"*.
+  downloads exported. Download result file."*
 
 - Click the *"Download result file*" at the end of the message, and the download will be performed subject to your
   browser settings.
