@@ -24,25 +24,26 @@ Creating a Campaign
 
 2. Define the campaign settings.
 
-  There are four mandatory fields that **must** be defined:
+There are four mandatory fields that **must** be defined:
   
 .. csv-table::
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Name**","Name used in to refer to the campaign in the UI. The value should not exceed 100 characters"
-  "**Code**"Unique code of the campaign, used to generate its tracking settings"
-  "**Report Scale**"Defines default time-scale of the events graph. The next larger scale is chosen if there are over" 
-  "**Owner***: limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
+  "**Name***","Name used to refer to the campaign in the system. The value should not exceed 100 characters"
+  "**Code***","Unique code of the campaign, used to generate its tracking settings"
+  "**Report Scale***","Defines default time-scale of the events graph. The next larger scale is chosen if there are 
+  over" 
+  "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
   campaigns owned by the owner (e.g. head of the business units, system administrator, etc.)
   
-  By default, the User creating the lead is chosen.
+  By default, the user creating the campaign is chosen.
 
   - Click |BCrLOwnerClear| button to clear the field
   
-  - Click |Bdropdown| button to choose one of available Users from the list
+  - Click |Bdropdown| button to choose one of available users from the list
 
-  - Click |BGotoPage| button to choose from the *Select Owner* page."
+  - Click |BGotoPage| button to choose from the *"Select Owner"* page."
  
 Optional fields define such details as campaign start and end dates, its description and budget. 
 
