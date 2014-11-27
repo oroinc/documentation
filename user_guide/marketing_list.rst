@@ -171,9 +171,11 @@ The following actions are available for a marketing list from the grid
 
 - Get to the *"Edit"* form of the list : |IcEdit| 
 
+  You can change the list details or delete the list from the :ref:`Edit form <user-guide-ui-edit-forms>`.
+  
 - Get to the *"View"* page of the list :  |IcView| 
 
-You can change the list details or delete the list from the :ref:`Edit form <user-guide-ui-edit-forms>`.
+
 
 
 .. _user-guide-marketing-campaigns-view-page:
