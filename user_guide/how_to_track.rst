@@ -15,8 +15,8 @@ In order to track campaign-related activities of a Website user, you need to:
 Use Tracking Code
 -----------------
 
-Tracking code that shall be added to every page of the website before the </body> tag can be found on the View page of 
-the corresponding *Tracking Website*` <user-guide-tracking-websites>` record.
+Tracking code that shall be added before the </body> tag  on every page of the website 
+can be found on the View page of the corresponding *Tracking Website*` <user-guide-tracking-websites>` record.
 
 .. image:: ./img/marketing/how_to_tracking_code.png
 
@@ -38,7 +38,7 @@ If you want to allocate user activities on a specific page of the Website, uncom
 "[name]" and "[value]".
 
 - [name] is used in the system to refer to events on the page
-- [value] is any numeric value (for example if the page tracked is a cart it can be an item code or cost)
+- [value] is any numeric value (e.g. for a cart, it can be an item code or cost)
 
 ..note::
   
@@ -47,10 +47,10 @@ If you want to allocate user activities on a specific page of the Website, uncom
 
 There are two ways to implement tracking for a website: 
 
--  add a piece of code from the *"View"* page of a campaign to the tracking script from the *"View"* page 
+-  Add a piece of code from the *"View"* page of a campaign to the tracking script from the *"View"* page 
    of a Website Tracking record after setUserId call.
    
-- add a piece of code from the *"View"* page of a campaign to the page url 
+- Add a piece of code from the *"View"* page of a campaign to the page url 
 
 Tracked Website Example
 ------------------------
@@ -75,8 +75,8 @@ This is the code preimplemented for Magento-based stores:
       })();
    </script>
 
-Users are identified as guests until they sign in. As soon as user signs in, its identification is a value of
-the "visitor-id| field on the the website. A special php block has been implemented to enable transfer of the 
+Users are identified as guests until they sign in. As soon as a user signs in, their identification is a value of
+the "visitor-id" field. A special php block has been implemented to enable transfer of the 
 id data to Oro. Every time a user follows the link of a campaing, they get to a page with a url piece from the campaign page.
 From now on, all the actions perfomed by the user at the website within this session will be assigned to the
 campaign.
