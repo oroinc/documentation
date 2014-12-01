@@ -28,10 +28,10 @@ There are four mandatory fields that **must** be defined:
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Name***","Name used to refer to the record in the system."
+  "**Name***","Name used to refer to the record in the system"
   "**Identifier***","Unique code of the website used to generate its tracking"
   "**Url***","Url of the website to be tracked" 
-  "**Owner***","Limits the list of Users that can manage the tracking website record to its owner and Users, whose roles
+  "**Owner***","Limits the list of Users that can manage the tracking website record to its owner and users, whose roles
   allow managing tracking-websites of the owner (e.g. members of the same business unit, system administrator, etc.)
   
   By default, the user creating the tracking websites is chosen.
@@ -54,7 +54,7 @@ There are four mandatory fields that **must** be defined:
 Tracking Websites Actions
 ----------------
 
-The following actions are available for a tracking websites from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a tracking websites record from the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/tracking_grid_actions.png
 
@@ -62,8 +62,7 @@ The following actions are available for a tracking websites from the :ref:`grid 
 
 - Get to the *"Edit"* form of the record : |IcEdit| 
   
-  You can change the tracking websites details or delete the tracking websites from the 
-  :ref:`Edit form <user-guide-ui-edit-forms>`.
+  You can change the record details or delete it using the :ref:`Edit form <user-guide-ui-edit-forms>`.
 
 
 - Get to the *"View"* page of the record :  |IcView| 
@@ -81,8 +80,8 @@ View page of a tracking websites contains the following three sections:
 
 - General Information : general details specified for the tracking websites during creation
 
-- Tracking Code : pieced of code to be added to the website to :ref:`track` <user-guide-how-to-track>` campaign-related
-  user activities. The code and its usage is described in more details in :ref:`*How to Track Campaign Related 
+- Tracking Code : a piece of code to be added to the website to :ref:`track` <user-guide-how-to-track>` campaign-related
+  user activities. The code and its usage are described in more details in :ref:`*How to Track Campaign Related 
   Activities on the Website <user-guide-how-to-track>*` guide.
 
 - Events : tracking events recorded for the Website
