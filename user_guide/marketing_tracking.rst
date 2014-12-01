@@ -16,7 +16,7 @@ Creating a Tracking Websites
 --------------------
 
 1. Go to *Marketing --> Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
-  corner to get yo the *"Create Tracking Website"* form.
+  corner to get to the *"Create Tracking Website"* form.
    
 .. image:: ./img/marketing/tracking_general.png
 
