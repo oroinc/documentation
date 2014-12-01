@@ -4,7 +4,7 @@
 Tracking Websites Record
 ========================
 
-*Tracking Website* records ecords define details of a website, for which tracking shall be performed. 
+*Tracking Website* records define details of a website, for which tracking shall be performed. 
 This article describes how to :ref:`create <user-guide-marketing-tracking-websites-create>` and 
 :ref:`manage <user-guide-marketing-tracking-websites-actions>` tracking website records, as well as provides detailed 
 description of their *"View"* pages <user-guide-marketing-tracking-websites-view-page>`. 
