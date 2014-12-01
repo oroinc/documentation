@@ -6,11 +6,11 @@ How to Track Campaign Related Activities on the Website
 
 In order to track campaign-related activities of a Website user, you need to:
 
-- Create a :ref:`*campaign <user-guide-marketing-campaigns>*`
+- Create a :ref:`Сampaign <user-guide-marketing-campaigns>` record
 
-- Create a :ref:`*Tracking Website*` <user-guide-tracking-websites>` records for this Website
+- Create a :ref:`Tracking Website <user-guide-tracking-websites>` record for this Website
 
-- Use the "Tracking code" on their View pages to modify the code of the website.
+- Use the "Tracking code" on their View pages to modify the code of the website
 
 Use Tracking Code
 -----------------
@@ -40,35 +40,76 @@ If you want to allocate user activities on a specific page of the Website, uncom
 - [name] is used in the system to refer to events on the page
 - [value] is any numeric value (for example if the page tracked is a cart it can be an item code or cost)
 
-One of the ways to implement tracking from the site is to 
-
 ..note::
   
     The code may be filled with both static and dynamic values, however the use of dynamic values requires complex 
     back-end development. 
 
+There are two ways to implement tracking for a website: 
 
+-  add a piece of code from the *"View"* page of a campaign to the tracking script from the *"View"* page 
+   of a Website Tracking record after setUserId call.
+   
+- add a piece of code from the *"View"* page of a campaign to the page url 
+
+Tracked Website Example
+------------------------
+
+This is the code preimplemented for Magento-based stores:
 
 .. code-block:: html
-    :linenos:
 
     <script type="text/javascript">
-        var _paq = _paq || [];
-        
-        /define the user_i
-        _paq.push(['setUserId', [user_identifier] ]);
-        _paq.push(['setConversionAttributionFirstReferrer', false]);
-        _paq.push(['trackPageView']);
-        // Uncomment following line to track custom events
-        // _paq.push(['trackEvent', 'OroCRM', 'Tracking', [name], [value] ]);
-        (function() {
-            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://demo.orocrm.com/";
-            _paq.push(['setTrackerUrl', u+'tracking.php']);
-            _paq.push(['setSiteId', 'jjec']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-            g.defer=true; g.async=true; g.src=u+'bundles/orotracking/js/piwik.min.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
+       var _paq = _paq || [];
+       _paq.push(['setUserId', "id=guest; visitor-id=51"]);
+       _paq.push(['setConversionAttributionFirstReferrer', false]);
+      _paq.push(['trackPageView']);
 
-    
- _paq.push(['setUserId', [user_identifier] ])
+                
+      (function() {
+           var u="http://crm.dev/";
+         _paq.push(['setTrackerUrl', u+'tracking.php']);
+         _paq.push(['setSiteId', 'MAGORO']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+         g.defer=true; g.async=true; g.src=u+'bundles/orotracking/js/piwik.min.js'; s.parentNode.insertBefore(g,s);
+      })();
+   </script>
+
+Users are identified as guests until they sign in. As soon as user signs in, its identification is a value of
+the "visitor-id| field on the the website. A special php block has been implemented to enable transfer of the 
+id data to Oro. Every time a user follows the link of a campaing, they get to a page with a url piece from the campaign page.
+From now on, all the actions perfomed by the user at the website within this session will be assigned to the
+campaign.
+
+On some of the pages actions are activated. For example, this is a piece of code on the cart page:
+
+.. code-block:: html
+
+   <script type="text/javascript">
+       var _paq = _paq || [];
+      _paq.push(['setUserId', "id=guest; visitor-id=51"]);
+      _paq.push(['setConversionAttributionFirstReferrer', false]);
+      _paq.push(['trackPageView']);
+      _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'cart item added', '27' ]);    
+      (function() {
+           var u="http://crm.dev/";
+         _paq.push(['setTrackerUrl', u+'tracking.php']);
+         _paq.push(['setSiteId', 'MAGORO']);
+         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+         g.defer=true; g.async=true; g.src=u+'bundles/orotracking/js/piwik.min.js'; s.parentNode.insertBefore(g,s);
+      })();
+   </script>
+
+This way, every time the user get to the page where the code is implemented, on the campaign page "Car item added" 
+event will appear and dynamic value that corresponds to the id of the item will be saved.
+
+A similar piece of code is implemented on each of the Website pages. Order placement page has the following action
+enabled:
+
+.. code-block:: html
+
+    _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'order successfully placed', '2699.990000' ]);            
+
+Order successfully placed event is saved for the campaign with a dynamic value that corresponds to a total
+cost of the order.
+
