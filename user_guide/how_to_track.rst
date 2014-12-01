@@ -24,32 +24,30 @@ The code defines a number of piwik specific settings that should not be changed.
 
 The following variables can/must be defined by the user:
 
-setUserID
--------
-
 .. code-block:: html
 
    _paq.push(['setUserId', [user_identifier] ])
 
-Define user identifier in compliance with the Website settings.
+[user_identifier] defines the user id used in compliance with the Website settings.
 
-
-
-For example, on our php Website the users are identified by their E-mail, and the value is 
-
-.. code-block:: php
-
-    <?php echo $_POST["email"]; ?>
- 
 .. code-block:: html
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', [name], [value] ]
 
+If you want to allocate user activities on a specific page of the Website, uncomment this line and replace the 
+"[name]" and "[value]".
+
+- [name] is used in the system to refer to events on the page
+- [value] is any numeric value (for example if the page tracked is a cart it can be an item code or cost)
+
+One of the ways to implement tracking from the site is to 
 
 ..note::
   
     The code may be filled with both static and dynamic values, however the use of dynamic values requires complex 
     back-end development. 
+
+
 
 .. code-block:: html
     :linenos:
