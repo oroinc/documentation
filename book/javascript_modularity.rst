@@ -3,19 +3,19 @@ JavaScript Modularity
 
 Overview
 --------
-The Oro Platform uses Asynchronous Module Definition for JavaScript modularity.
+The Oro Platform uses Asynchronous Module Definition in order to provide JavaScript modularity.
 
-AMD (Asynchronous Module Definition) – is approach of code-development which
-allows to create modular javascript-code with defined set of dependencies,
-manages the order of resources loading and execution, keeps global scope
+AMD (Asynchronous Module Definition) – is an approach of code development that
+enables creation of modular javascript-code with defined set of dependencies,
+manages the order of resource loading and execution, keeps the global scope
 clean. `RequireJS`_ lib allows to adopt this approach.
 
 
-Module definition
+Module Definition
 -----------------
-There's two main methods in `RequireJS`_ which implements AMD approach:
- * ``define`` - method for facilitating module definition;
- * ``require`` - method for handling dependency loading.
+There are two main methods used to implement the AMD approach in the `RequireJS`_:
+ * ``define`` -- facilitates a module definition;
+ * ``require`` -- handles dependency loading.
 
 ``define`` is used to define named or unnamed modules based on the proposal using
 the following signature:
@@ -30,10 +30,10 @@ the following signature:
 
 .. note::
 
-    Since in general ``module_id`` is equivalent to folder paths in simple packages,
-    yon have no need to define it.
+    The ``module_id`` is typically equivalent to a folder path of simple packages,
+    so there is no need to define it.
 
-In common cases module definition looks:
+In the general case, the module definition looks as follows:
 
 .. code-block:: javascript
 
@@ -60,16 +60,17 @@ file or within a module should you wish to dynamically fetch dependencies.
         foo.doSomething();
     });
 
-More information how to write modular JavaScript using AMD approach you can find:
+You can find more information on how to write modular JavaScript using AMD in:
  * `RequireJS API`_
  * `Writing Modular JavaScript`_
 
 RequireJS Configuration
 -----------------------
 
-To help with RequireJS configurations and building process was developed
-`RequireJSBundle`_. It collects partial RequireJS configuration by bundles
-``Resources/config/requirejs.yml`` and merges them in to single config file.
+`RequireJSBundle`_ was developed to simplify RequireJS configuration and
+building process. It collects parts of RequireJS configuration
+``Resources/config/requirejs.yml`` from the bundles and merges them
+into a single config file.
 
 .. code-block:: yaml
 
@@ -91,7 +92,7 @@ To help with RequireJS configurations and building process was developed
                 exports: 'Backbone'
         map:
             # maps for the given module prefix, instead of loading the module with
-            # the given ID, substitute a different module_id;
+            # the given ID, substitutes a different module_id;
             '*':
                 'jquery': 'oroui/js/jquery-extend'
             'oroui/js/jquery-extend':
@@ -107,19 +108,19 @@ To help with RequireJS configurations and building process was developed
 
     build:
         paths:
-            # says not to include bootstrap module into build file
+            # says not to include bootstrap module into the build file
             'bootstrap': 'empty:'
 
-There's two root sections:
+There are two root sections:
  * ``config`` -- defines RequireJS configuration
- * ``build`` -- allows to override defined RequireJS configuration for building process
+ * ``build`` -- allows to override defined RequireJS configuration for the building process
 
 .. note::
-    For some reason you may not want to add some module into build, just add ``module_id``
-    into ``build.paths`` configuration with path value ``'empty:'``. This module will be
-    excluded from build file, and will be loaded directly from it's path during runtime.
+    If there is a need to exclude a module from the build, add its ``module_id`` into the
+    ``build.paths`` configuration with the path value ``'empty:'``. This module will be
+    excluded from the build file, and will be loaded directly from its path in the runtime.
 
-For more details see `RequireJSBundle`_.
+For more details, `RequireJSBundle`_.
 
 .. _`RequireJS`: http://requirejs.org/
 .. _`RequireJS API`: http://requirejs.org/docs/api.html

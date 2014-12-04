@@ -4,7 +4,7 @@ Frontend Architecture
 Intro
 -----
 Client Side Architecture of the Oro Platform is built over `Chaplin`_
-(an architecture for JavaScript web applications based on the `Backbone.js`_
+(an architecture for JavaScript Web applications based on the `Backbone.js`_
 library).
 
 Backbone provides little structure above simple routing, individual models,
@@ -12,31 +12,32 @@ views and their binding. Chaplin addresses these limitations by providing
 a light-weight but flexible structure which leverages well-proven design
 patterns and best practises.
 
-But, due to we have pages with distributed by bundles functionality
-(several bundles can extend a page with own functionality). We had to extend
+However, as we distribute functionality of some pages over multiple bundles
+(several bundles can extend a page with own functionality), we had to extend
 a bit `Chaplin`_'s approach for our needs.
 
-Technology stack
+Technology Stack
 ----------------
-The libraries that the Oro Platform use on a client side:
+Libraries used by Oro Platform on the client side:
  * RequireJS
  * jQuery + jQuery-UI
  * Bootstrap
  * Backbone + underscore
  * Chaplin
 
-This is not whole list, it's just items which makes a skeleton of client
-architecture.
+This is not the whole list, but only the main items that make the skeleton
+of the client.
 
-Most of this libraries are placed in OroUIBundle (as the bundle which is
-responsible for user interface). And each of them defined as module in RequireJS
-config with short module_id. So, there's not need to use whole path each time
-(e.g. module_id is ``jquery`` instead of ``oroui/lib/jquery``).
+Most of these libraries are placed in OroUIBundle (as the bundle which is
+responsible for the user interface). Each of these libraries is defined
+a module in RequireJS config with short module_id, so there is no need
+to use the full path every time (e.g. the module_id is ``jquery`` instead
+of ``oroui/lib/jquery``).
 
-Naming convention
------------------
-For files structure and naming convention was taken practise from Backbone's
-world and adopted with a bit extend.
+Naming Conventions
+------------------
+File structures and naming conventions use best practices of Backbone
+development adopted for Oro needs.
 
 .. code-block:: text
 
@@ -50,11 +51,11 @@ world and adopted with a bit extend.
     │       ├── user-item.html
     │       └── users-list.html
     ├── js
-    │   ├── app // code which fully supports Chaplin architecture
+    │   ├── app // code that fully supports Chaplin architecture
     │   │   ├── components
     │   │   │   ├── view-component.js
     │   │   │   └── widget-component.js
-    │   │   ├── controllers // Chaplin's controllers
+    │   │   ├── controllers // Chaplin controllers
     │   │   │   └── page-controller.js
     │   │   ├── models
     │   │   │   ├── projects
@@ -77,7 +78,7 @@ world and adopted with a bit extend.
     │   ├── app.js
     │   ├── tools.js
     │   └── ...
-    └── libs // place for third party libraries
+    └── lib // for the third party libraries
         ├── jquery
         │   └── jquery.min.js
         ├── backbone
@@ -87,17 +88,17 @@ world and adopted with a bit extend.
 
 .. note::
 
-  Summery:
-   * in ``app`` folder placed RequireJS modules which fully supports Chaplin architecture;
-   * inside ``app`` folder code is grouped on five types:
-       * ``components`` -- Page Components, purpose for this type see below;
-       * ``controllers`` -- Chaplin's controllers, for now there's only one ``PageController`` in application;
-       * ``models`` -- common folder for Chaplin's (Backbone's) models and collections, inside may be grouped by functionality;
-       * ``modules`` -- App Modules, purpose for this type see below;
-       * ``views`` -- common folder for Chaplin's views and collection-views, inside this folder files are grouped by functionality;
-   * each file name has its prefix which corresponds to its type (e.g. ``-view.js``, ``-model.js``, ``-component.js``);
-   * all files and folders are named in lowercase with minus (``-``) symbol as word separator;
-   * outside ``app`` folder lays utility code or other kind of architectural solutions (e.g. jQuery-UI widgets).
+  Summary:
+   * Modules that fully support Chaplin architecture are placed in ``app`` folder.
+   * There are five folders inside the "app" directory, one for each of the modules with a specific roles:
+       * ``components`` -- page components, descried in the :ref:`Page Component<frontend-architecture-page-component>` section
+       * ``controllers`` -- Chaplin controllers. Currently the only controller in application is ``PageController``
+       * ``models`` -- folder for Chaplin (Backbone) models and collections; modules inside the folder may be grouped by their functionality
+       * ``modules`` -- app modules, descried in the :ref:`App Modules<frontend-architecture-app-module>` section
+       * ``views`` -- common folder for Chaplin views and collection views; files inside the folder are grouped by their functionality
+   * each file name ends with a suffix that corresponds to its type (e.g. ``-view.js``, ``-model.js``, ``-component.js``)
+   * names of all the files and folders can contains only lowercase alphabetic symbols with minus (``-``) symbol as a word separator
+   * outside the ``app`` folder there is a utility code or other kind of architectural solutions (e.g. jQuery-UI widgets)
 
 Application Workflow
 --------------------
@@ -109,25 +110,25 @@ and providing solid lifecycle for application's components:
    :target: http://docs.chaplinjs.org/
    :width: 800
 
-As result a controller and all its models and views live only between
-navigation actions. Ones route is changed, active controller gets disposed
-and all its nested views and related models as well. New controller is created
-for current route, in active controller its own views and models are created.
-This approach, where lifecycle is defined for application components, solves
-problems with memory leaks. Rest components, such as ``application`` itself,
+As a results, a controller and all of its models and views exist only between
+navigation actions. Once the route is changed, the active controller gets disposed
+as well as all of its nested views and related models. A new controller is created
+for the current route, and new views and models are created in the new
+active controller. This approach of limited application component lifecycle
+solves memory leak issues. The rest of components, such as ``application`` itself,
 ``router``, ``dispatcher``, ``layout`` and ``composer`` (see picture above)
-lives across navigation.
+exist all through the navigation.
 
 To cover our needs we had to extend this solution. In the Oro Platform a page
-content is defined with an one bundle and might be extended with many others
-bundles. So there's no single place where client side controller can be defined.
-As a solutions, we have only one ``PageController`` which corresponds to every
-url.
+content is define with one bundle and might be extended with many other
+bundles. This way, there isn't a single place where a client side controller
+can be defined. As a solutions, we have an only ``PageController`` constructor
+used to create controllers for every url.
 
 .. code-block:: javascript
 
-    // in the routes module only one route mask
-    // which leads to PageController::index action point
+    // the routes module contains an only route mask
+    // that always leads to PageController::index action point
     define(function () {
         'use strict';
         return [
@@ -135,14 +136,14 @@ url.
         ];
     });
 
-Thus, on each navigation action, the disposed and created controllers are
-instances of same constructor, which exist in different lifecycles of the application.
-This ``PageController`` loads page content over ``PageModel`` and notifies
-environment with series of system events that the page content is changed.
+This way, the disposed and a created controllers for each navigation action are
+instances of the same constructor, which exist in different lifecycles of the application.
+This ``PageController`` loads page content over ``PageModel`` and sends
+series of system events to notify the environment that the page content has changed.
 
 .. note::
 
-    Chain of system events of page update flow:
+    The page update flow contain the following system events:
      * page:beforeChange
      * page:request
      * page:update
@@ -151,35 +152,39 @@ environment with series of system events that the page content is changed.
 .. image:: /book/img/frontend_architecture/page-controller.png
   :width: 800
 
-These events are handled by global views (which lives across navigation actions).
-``PageContentView`` one of them, this view listens ``page:update`` and updates
+These events are handled by global views (view components that exist throughout
+the navigation and are not deleted by a page change).
+One of them is ``PageContentView`` that listens to ``page:update`` and updates
 page content area with HTML from ``PageModel``.
 
-After that (between ``page:update`` and ``page:afterChange`` events), the active
-controller executes handler ``'layout:init'``. Which does number of things and
-one of them is initialization declared in HTML PageComponents.
+After the ``page:update``, the active controller executes ``layout:init`` handler
+that, among other things, runs initialization declared in the HTML PageComponents.
+As soon as ``layout:init`` handler has finished the jobs, ``page:afterChange``
+event is triggered.
+
+.. _frontend-architecture-page-component:
 
 Page Component
 --------------
-Due to page functionality depends on its content, which is generated by number
-of bundles, we don't have single controller responsible for this page. We had to
-introduce approach which allows us to have number of controllers responsible for
-certain functionality and related to certain part of HTML. Since the role of
-Controller already exists in Chaplin, controller which is related to part of a page
-is named Page Component.
+As functionality of a page depends on its content, which is generated by multiple
+bundles, we cannot use a single controller responsible for it. We have introduced
+an alternative approach that allows the use of multiple controllers, each of which
+is responsible for certain functionality and related to a certain part of the HTML.
 
-Page Component is an invisible component that takes responsibility of
-the controller for certain functionality. It accepts options object,
-performs initialization actions, and, at appropriate time, destroys initialized
-elements (views, models, collections, or even sub-components).
+Such controllers are named Page Component. Functionally, a "Page Component"
+is similar to a "Controller" component in Chaplin, however it implements a different
+flow : "Controller" represent one screen of the application and is created
+when the page url is changed, while "Page Component" represents a part of
+the page with certain functionality and is created in the course of the page
+processing, subject to the settings declared in HTML.
 
-Definition
-~~~~~~~~~~
-To define ``PageComponent`` for a block you need to define two data-attributes for
-the HTML node:
+Defining a Page Component
+~~~~~~~~~~~~~~~~~~~~~~~~~
+The following two data-attributes must be define for an HTML node, to define a
+``PageComponent`` for a block:
 
- * ``data-page-component-module`` with the name of the module
- * ``data-page-component-options`` and with safe JSON-string
+ * ``data-page-component-module`` -- name of the module
+ * ``data-page-component-options`` -- safe JSON-string
 
 .. code-block:: html+jinja
 
@@ -190,43 +195,45 @@ the HTML node:
     <div data-page-component-module="mybundle/js/app/components/grid-component"
          data-page-component-options="{{ options|json_encode }}"></div>
 
-How it works
+How It Works
 ~~~~~~~~~~~~
+``PageController`` loads a page and therewith triggers the ``page:update`` event.
+Once content of all the global views has been updated, ``PageController`` executes
+``layout:init`` handler. This handler performs series of actions on the container
+received (in our case it is ``document.body``). One of the actions is
+``initPageComponents``. This method performs the following:
 
-``PageController`` loads a page, triggering ``'page:update'`` event. Once all
-global views have updated their content, ``PageController`` executes
-``'layout:init'`` handler. This handler performs series of actions for the container
-it has received (``document.body`` in this case), one of such actions is
-``initPageComponents``. This method:
-
- * collects all elements with proper data-attributes.
+ * collect all the elements with proper data-attributes
  * loads defined modules of PageComponents.
- * initializes PageComponents, executing init method with passed-in options.
- * once all components are initialized, resolves initialization promise with passed array of components.
+ * executes init method with the options received to initialize the PageComponents.
+ * after initialization of all the components, it resolves the initialization promise with the array of components.
 
-``PageController`` handles this promise and attaches all received components to itself in order to dispose them once controller got disposed.
+``PageController`` handles this promise and attaches all the components received to
+itself, in order to dispose them once the controller is disposed.
 
 .. seealso::
 
     For more details see `Page Component`_ documentation.
 
+.. _frontend-architecture-app-module:
+
 App Module
 ----------
-App Modules are atomic parts of general application, responsible for:
+App Modules are atomic parts of the general application, responsible for the following:
 
-* defining global view (which live beside active controller);
-* register handlers in ``mediator`` (see `Chaplin.mediator`_);
-* and do all actions which precede creating an instance of application.
+ * define the global view (that exist throughout the navigation)
+ * register handlers in the ``mediator`` (see `Chaplin.mediator`_), and
+ * perform all the preliminary actions before an instance of the application is created
 
-App Modules are not actually modules in terms of RequireJS, they export
-nothing. It's ``requirejs()`` call, which is executed right before the
-application is started. It's called App Module because it makes whole
-application modular. These modules are loaded right before Application
-instantiated and guarantee that whole functionality spread by bundles
-are ready to work.
+App Modules are not actually modules in the terms of RequireJS, as they export
+nothing. It's ``requirejs()`` call, executed right before the
+application is started. It's called App Module because it makes the whole
+application modular. These modules are loaded right before instantiation
+of the Application and makes the whole functionality distributed among the bundles
+ready to work.
 
-App Modules are declared in ``requirejs.yml`` configuration file,
-in custom section ``appmodules``:
+App Modules are declared in ``requirejs.yml`` the configuration file,
+in the custom section ``appmodules``:
 
 .. code-block:: yaml
 
@@ -235,16 +242,15 @@ in custom section ``appmodules``:
             - oroui/js/app/modules/views-module
             - oroui/js/app/modules/messenger-module
 
-This approach allows to define in each bundle code which should
-be executed on the application start.
+This way you can define the code to be executed at the application start for every bundle.
 
-Let's go through couple examples.
+Let's turn to some examples:
 
 Example 1
 ~~~~~~~~~
 
-``oroui/js/app/modules/views-module`` -- declares global views which
-will be instantiated right before an action point of controller gains control.
+``oroui/js/app/modules/views-module`` -- declares the global views that
+will be instantiated right before the "action point" method of the control is invoked.
 
 .. code-block:: javascript
 
@@ -267,16 +273,16 @@ will be instantiated right before an action point of controller gains control.
         /* ... */
     });
 
-``BaseController`` has two static methods which allow to define what should
-be done before application starts:
+``BaseController`` has two static methods used to define what should
+be done before the application starts:
 
- * ``BaseController.loadBeforeAction`` -- loads required modules before next action (or before first action, in case it's in ``appmodule``)
- * ``BaseController.addToReuse`` -- it's wrapper over `Chaplin.Composer`_'s method ``reuse``. This static methods fills in internal array with arguments and applies them to ``reuse`` method, once  ``beforeAction`` method of active controller gets invoked.
+ * ``BaseController.loadBeforeAction`` -- loads required modules before the next action (or before the first action if it is in ``appmodule``)
+ * ``BaseController.addToReuse`` -- a wrapper over the ``reuse`` method of `Chaplin.Composer`_. This static method fills the internal array with arguments and applies them to ``reuse`` method, when the ``beforeAction`` method of active controller is invoked.
 
 Example 2
 ~~~~~~~~~
 
-``oroui/js/app/modules/messenger-module`` -- declares ``messenger``'s handlers in mediator
+``oroui/js/app/modules/messenger-module`` -- declares handlers of the messenger in the ``mediator``
 
 .. code-block:: javascript
 
@@ -287,7 +293,7 @@ Example 2
         'use strict';
 
         /**
-         * Init messenger's handlers
+         * Init handlers for the messenger
          */
         BaseController.loadBeforeAction([
             'oroui/js/messenger'
@@ -299,9 +305,9 @@ Example 2
         });
     });
 
-This way we guarantee that handlers are declared before their use. Any
-component or view which lives inside of Chaplin's lifecycle can execute these
-handlers.
+This way we guarantee that all the necessary handlers are declared before
+they are used. The handlers can be executed by any component or view
+in the Chaplin lifecycle.
 
 .. code-block:: javascript
 
