@@ -1,22 +1,22 @@
 How to create global js component
 =================================
 
-Global component or global view is an instance that lives aside of content
-area and is not re-created during navigation between pages. Good example of
-global component is Pin Bar.
+Global component or global view is an instance that exists beyond the content
+area and is not re-created in the course of navigation between the pages. Good example of
+a global component is the Pin Bar.
 
 .. image:: /cookbook/img/how_to_create_global_js_component/global-component-of-pin-bar.png
   :width: 800
 
 .. note::
 
-    What is the global component or global view in details, and what is App
-    Module you can find here: :doc:`/book/frontend_architecture` and `Page Component`_.
+    You can find more information about global component and global view. and learn about the App
+    Module here: :doc:`/book/frontend_architecture` and `Page Component`_.
 
 
-Create Page Component module
+Create Page Component Module
 ----------------------------
-First that you need to do is to define Page Component module in your Bundle
+First of all, you need to define the Page Component module in your Bundle
 
 .. code-block:: javascript
 
@@ -37,17 +37,17 @@ First that you need to do is to define Page Component module in your Bundle
         return MyComponent;
     });
 
-Inside the component implement all desired functionality.
+You can implement all the desired functionality inside the component.
 
-The component takes role of controller, it is responsible for:
- * creates needed views, collections, models or even sub-components
- * handles environment events
- * disposes obsolete internal instances
+The component plays a role of the controller. It is responsible for the following:
+ * create necessary views, collections, models and even sub-components
+ * handle environment events
+ * dispose obsolete internal instances
 
 Create App Module
 -----------------
 
-To instantiate your component at the moment of application start you need to create App Module.
+To instantiate your component at the moment of application start, you need to create the App Module.
 
 .. code-block:: javascript
 
@@ -69,22 +69,22 @@ To instantiate your component at the moment of application start you need to cre
         });
     });
 
-Here we have defined that before an action controller have to load module of
-our component and reuse its composition between actions. To define a composition
-we have passed three arguments:
+In the example above, we have defined that the controller shall load the module of 
+our component before any/the first action, and shall re-use its composition between 
+the actions. The following three arguments define the composition:
 
- - name of composition
- - constructor
- - and its options
+ - name of the composition
+ - the constructor
+ - settings of the constructor
 
 .. note::
 
-    See about compositions in documentation of `Chaplin.Composer`_.
+    You can find more information about  compositions in the `Chaplin.Composer`_ documentation.
 
 Declare App Module
 ------------------
 
-And last thing is to add your App Module to the list of ``appmodules`` in requirejs config.
+The final stepp is adding your App Module to the list of ``appmodules`` in the requirejs config.
 
 .. code-block:: yaml
 
@@ -97,16 +97,16 @@ And last thing is to add your App Module to the list of ``appmodules`` in requir
             - acmeui/js/app/modules/my-module
 
 
-First, we've added the module name to ``config.paths`` section. To make the
-module get into js-build (oro.min.js), otherwise building script won't be able
-to trace this dependency. And after we've added the module to ``config.appmodules``
-list. And now the application will invoke this module on its start.
+First, we've added the module name to the ``config.paths`` section. Without it, the building
+script couldn't trace the dependency and the model wouldn't be added to the (oro.min.js) js-build.
+After that, we've added the module to the ``config.appmodules``list. 
+Now the application will invoke this module aat the start.
 
 To see your component in action, you need to do few more things:
 
- - clear Symfony application cache ``php app/console cache:clear``. To update the cache and requirejs config in it.
- - reinstall assets ``php app/console assets:install``, if your assets are not installed as symlink's.
- - rebuild js ``php app/console oro:requirejs:build``, if you are in production mode.
+ - Clear the Symfony application cache ``php app/console cache:clear`` to update the cache and requirejs config in it.
+ - Reinstall assets ``php app/console assets:install`` if your assets are not installed as symlink's.
+ - Rebuild js ``php app/console oro:requirejs:build`` if you are in production mode.
 
 .. _`Page Component`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md
 .. _`Chaplin.Composer`: http://docs.chaplinjs.org/chaplin.composer.html
