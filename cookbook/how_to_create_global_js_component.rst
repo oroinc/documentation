@@ -10,7 +10,7 @@ a global component is the Pin Bar.
 
 .. note::
 
-    You can find more information about global component and global view. and learn about the App
+    You can find more information about global component and global view and learn about the App
     Module here: :doc:`/book/frontend_architecture` and `Page Component`_.
 
 
@@ -39,7 +39,7 @@ First of all, you need to define the Page Component module in your Bundle
 
 You can implement all the desired functionality inside the component.
 
-The component plays a role of the controller. It is responsible for the following:
+The component performs a role of the controller. It is responsible for the following:
  * create necessary views, collections, models and even sub-components
  * handle environment events
  * dispose obsolete internal instances
@@ -75,16 +75,16 @@ the actions. The following three arguments define the composition:
 
  - name of the composition
  - the constructor
- - settings of the constructor
+ - options of the constructor
 
 .. note::
 
-    You can find more information about  compositions in the `Chaplin.Composer`_ documentation.
+    You can find more information about compositions in the `Chaplin.Composer`_ documentation.
 
 Declare App Module
 ------------------
 
-The final stepp is adding your App Module to the list of ``appmodules`` in the requirejs config.
+The final step is adding your App Module to the list of ``appmodules`` in the RequireJS config.
 
 .. code-block:: yaml
 
@@ -98,13 +98,13 @@ The final stepp is adding your App Module to the list of ``appmodules`` in the r
 
 
 First, we've added the module name to the ``config.paths`` section. Without it, the building
-script couldn't trace the dependency and the model wouldn't be added to the (oro.min.js) js-build.
-After that, we've added the module to the ``config.appmodules``list. 
-Now the application will invoke this module aat the start.
+script couldn't trace the dependency and the module wouldn't be added to the build-file (oro.min.js).
+After that, we've added the module to the ``config.appmodules`` list.
+Now the application will invoke this module at the start.
 
 To see your component in action, you need to do few more things:
 
- - Clear the Symfony application cache ``php app/console cache:clear`` to update the cache and requirejs config in it.
+ - Clear the Symfony application cache ``php app/console cache:clear`` to update the cache and RequireJS config in it.
  - Reinstall assets ``php app/console assets:install`` if your assets are not installed as symlink's.
  - Rebuild js ``php app/console oro:requirejs:build`` if you are in production mode.
 
