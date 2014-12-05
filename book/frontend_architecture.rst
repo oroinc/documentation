@@ -7,14 +7,14 @@ Client Side Architecture of the Oro Platform is built over `Chaplin`_
 (an architecture for JavaScript Web applications based on the `Backbone.js`_
 library).
 
-Backbone provides little structure above simple routing, individual models,
+The Backbone provides little structure above simple routing, individual models,
 views and their binding. Chaplin addresses these limitations by providing
 a light-weight but flexible structure which leverages well-proven design
 patterns and best practises.
 
 However, as we distribute functionality of some pages over multiple bundles
-(several bundles can extend a page with own functionality), we had to extend
-a bit `Chaplin`_'s approach for our needs.
+(several bundles can extend a page with own functionalities), we had to extend
+`Chaplin`_ approach for our needs.
 
 Technology Stack
 ----------------
@@ -30,7 +30,7 @@ of the client.
 
 Most of these libraries are placed in OroUIBundle (as the bundle which is
 responsible for the user interface). Each of these libraries is defined
-a module in RequireJS config with short module_id, so there is no need
+as a module in RequireJS config with short module_id, so there is no need
 to use the full path every time (e.g. the module_id is ``jquery`` instead
 of ``oroui/lib/jquery``).
 
@@ -90,11 +90,11 @@ development adopted for Oro needs.
 
   Summary:
    * Modules that fully support Chaplin architecture are placed in ``app`` folder.
-   * There are five folders inside the "app" directory, one for each of the modules with a specific roles:
-       * ``components`` -- page components, descried in the :ref:`Page Component<frontend-architecture-page-component>` section
+   * There are five folders inside the "app" directory, one for each of the modules with the following roles:
+       * ``components`` -- page components, descried in the :ref:`Page Component <frontend-architecture-page-component>` section
        * ``controllers`` -- Chaplin controllers. Currently the only controller in application is ``PageController``
        * ``models`` -- folder for Chaplin (Backbone) models and collections; modules inside the folder may be grouped by their functionality
-       * ``modules`` -- app modules, descried in the :ref:`App Modules<frontend-architecture-app-module>` section
+       * ``modules`` -- app modules, descried in the :ref:`App Modules <frontend-architecture-app-module>` section
        * ``views`` -- common folder for Chaplin views and collection views; files inside the folder are grouped by their functionality
    * each file name ends with a suffix that corresponds to its type (e.g. ``-view.js``, ``-model.js``, ``-component.js``)
    * names of all the files and folders can contains only lowercase alphabetic symbols with minus (``-``) symbol as a word separator
@@ -103,7 +103,7 @@ development adopted for Oro needs.
 Application Workflow
 --------------------
 
-Chaplin extends Backbone concept introducing missing parts (such as controller)
+Chaplin extends Backbone concept introducing missing parts (such as a controller)
 and providing solid lifecycle for application's components:
 
 .. image:: /book/img/frontend_architecture/chaplin-lifecycle.png
@@ -114,7 +114,7 @@ As a results, a controller and all of its models and views exist only between
 navigation actions. Once the route is changed, the active controller gets disposed
 as well as all of its nested views and related models. A new controller is created
 for the current route, and new views and models are created in the new
-active controller. This approach of limited application component lifecycle
+active controller. This approach of limited lifecycle of application components
 solves memory leak issues. The rest of components, such as ``application`` itself,
 ``router``, ``dispatcher``, ``layout`` and ``composer`` (see picture above)
 exist all through the navigation.
@@ -136,14 +136,14 @@ used to create controllers for every url.
         ];
     });
 
-This way, the disposed and a created controllers for each navigation action are
+This way, the disposed and created controllers for each navigation action are
 instances of the same constructor, which exist in different lifecycles of the application.
 This ``PageController`` loads page content over ``PageModel`` and sends
 series of system events to notify the environment that the page content has changed.
 
 .. note::
 
-    The page update flow contain the following system events:
+    The page update flow contains the following system events:
      * page:beforeChange
      * page:request
      * page:update
@@ -159,11 +159,10 @@ page content area with HTML from ``PageModel``.
 
 After the ``page:update``, the active controller executes ``layout:init`` handler
 that, among other things, runs initialization declared in the HTML PageComponents.
-As soon as ``layout:init`` handler has finished the jobs, ``page:afterChange``
+As soon as ``layout:init`` handler has finished all of its jobs, ``page:afterChange``
 event is triggered.
 
 .. _frontend-architecture-page-component:
-
 Page Component
 --------------
 As functionality of a page depends on its content, which is generated by multiple
@@ -180,8 +179,7 @@ processing, subject to the settings declared in HTML.
 
 Defining a Page Component
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-The following two data-attributes must be define for an HTML node, to define a
-``PageComponent`` for a block:
+ To define a ``PageComponent`` for a block, you need to define the following two data-attributes the HTML node:
 
  * ``data-page-component-module`` -- name of the module
  * ``data-page-component-options`` -- safe JSON-string
@@ -199,14 +197,14 @@ How It Works
 ~~~~~~~~~~~~
 ``PageController`` loads a page and therewith triggers the ``page:update`` event.
 Once content of all the global views has been updated, ``PageController`` executes
-``layout:init`` handler. This handler performs series of actions on the container
+the ``layout:init`` handler. This handler performs series of actions on the container
 received (in our case it is ``document.body``). One of the actions is
 ``initPageComponents``. This method performs the following:
 
  * collect all the elements with proper data-attributes
- * loads defined modules of PageComponents.
- * executes init method with the options received to initialize the PageComponents.
- * after initialization of all the components, it resolves the initialization promise with the array of components.
+ * loads defined modules of PageComponents
+ * executes init method with the options received to initialize the PageComponents
+ * after initialization of all the components,  resolves the initialization promise with the array of components
 
 ``PageController`` handles this promise and attaches all the components received to
 itself, in order to dispose them once the controller is disposed.
@@ -216,7 +214,6 @@ itself, in order to dispose them once the controller is disposed.
     For more details see `Page Component`_ documentation.
 
 .. _frontend-architecture-app-module:
-
 App Module
 ----------
 App Modules are atomic parts of the general application, responsible for the following:
@@ -276,8 +273,11 @@ will be instantiated right before the "action point" method of the control is in
 ``BaseController`` has two static methods used to define what should
 be done before the application starts:
 
- * ``BaseController.loadBeforeAction`` -- loads required modules before the next action (or before the first action if it is in ``appmodule``)
- * ``BaseController.addToReuse`` -- a wrapper over the ``reuse`` method of `Chaplin.Composer`_. This static method fills the internal array with arguments and applies them to ``reuse`` method, when the ``beforeAction`` method of active controller is invoked.
+ * ``BaseController.loadBeforeAction`` -- loads required modules before the next action (or before the first action if it 
+   is in ``appmodule``)
+ * ``BaseController.addToReuse`` -- a wrapper over the ``reuse`` method of `Chaplin.Composer`_. 
+   This static method fills the internal array with arguments and applies them to ``reuse`` method, when the 
+   ``beforeAction`` method of active controller is invoked.
 
 Example 2
 ~~~~~~~~~
