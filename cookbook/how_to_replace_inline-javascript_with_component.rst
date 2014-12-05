@@ -4,7 +4,7 @@ How to Replace Inline-Javascript with a Component
 Page Component is a controller used not for a whole page of an application,
 but for its part with a certain functionality. A Page Component is responsible for the following:
 
- * creating related views, collections, models or even sub-components
+ * creating related views, collections, models and even sub-components
  * handling environment events
  * disposing obsolete instances
 
@@ -49,14 +49,7 @@ Web Applications.
 
 Create Page Component Module
 ----------------------------
-As a solution, we can create a component. The component overtakes the role of a controller
-and is responsible for the following:
-
- * create necessary views, collections, models or even sub-components
- * handle environment events
- * dispose obsolete internal instances
-
-Select2 initialization is implemented in the component.
+As a solution, we can create a component that defines lifecycle for Select2 instance.
 
 .. code-block:: javascript
 
@@ -76,7 +69,8 @@ Select2 initialization is implemented in the component.
              * @param {Object} options
              */
             initialize: function (options) {
-                // _sourceElement refers to the HTMLElement that contains the component declaration
+                // _sourceElement refers to the HTMLElement
+                // that contains the component declaration
                 this.$elem = options._sourceElement;
                 delete options._sourceElement;
                 this.$elem.select2(options);
@@ -101,14 +95,14 @@ Select2 initialization is implemented in the component.
     });
 
 
-Now we have the code that can be tested, extended and reused.  What is even 
+Now we have the code that can be tested, extended and reused. What is even
 more important, the component has ``initialize`` and ``dispose`` methods that 
-restrict  existence of the select2 instance, and thus define its lifesycle and 
+restrict existence of the select2 instance, and thus define its lifesycle and
 minimize the risk of a memory leak.
 
 Declare Page Component in HTML
 ------------------------------
- 
+
 At the next step, we have to declare the component related to the HTMLElement:
 
 .. code-block:: html+jinja
@@ -185,7 +179,7 @@ It's pretty similar to the component that we've created before but the view is
 a much more suitable place for it.
 
 However, we still need the component to instantiate our ``Select2View``. For this
-purpose already have the ``ViewComponent``that we have created to instantiate a view for the 
+purpose already have the ``ViewComponent`` that we have created to instantiate a view for the
 HTMLElement.
 
 To specify what view we want to instantiate for the HTMLElement, add the module name of view 
@@ -224,7 +218,7 @@ Here is how the ``ViewComponent`` is implemented:
 
         /**
          * Creates a view instance from the module defined with the 'view' 
-           option and binds it with the _sourceElement
+         * option and binds it with the _sourceElement
          */
         ViewComponent = BaseComponent.extend({
             /**
@@ -285,7 +279,7 @@ can trace this module and include it into the build file.
 
      - Clear Symfony application cache ``php app/console cache:clear`` to update the cache and the RequireJS config in it.
      - Reinstall assets ``php app/console assets:install`` if your assets are not installed as symlink's.
-     - Rebuild js ``php app/console oro:requirejs:build``if you are in the production mode.
+     - Rebuild js ``php app/console oro:requirejs:build`` if you are in the production mode.
 
 .. _`Page Component`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md
 .. _`Chaplin.Composer`: http://docs.chaplinjs.org/chaplin.composer.html
