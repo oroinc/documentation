@@ -6,7 +6,7 @@ Marketing Functionality
 
 Marketing functionality is sharpened to organize and monitor marketing campaigns and mailings.
 
-The four entities are implemented in the OroCRM for the functionality-purposes:
+The following entities are implemented in the OroCRM for the functionality-purposes:
 
 .. image:: ./img/marketing/marketing_all.png
 

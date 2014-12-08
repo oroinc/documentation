@@ -30,21 +30,19 @@ There are four mandatory fields that **must** be defined:
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Name***","Name used to refer to the campaign in the system. The value should not exceed 100 characters"
+  "**Name***","Name used to refer to the campaign in the system."
   "**Code***","Unique code of the campaign, used to generate its tracking settings"
   "**Report Scale***","Defines default time-scale of the events graph. The next larger scale is chosen if there are 
   over" 
   "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
-  campaigns of the owner (e.g. members of the same business unit, system administrator, etc.)
+  campaigns of the owner (e.g. members of the same business unit, system administrator, etc.). 
   
-  By default, the user creating the campaign is chosen.
+  You can  choose one of available users from the list (|Bdropdown|) or from the *"Select Owner"* page (|BGotoPage|).
 
-  - Click |BCrLOwnerClear| button to clear the field
+  Click |BCrLOwnerClear| button to clear the field
   
-  - Click |Bdropdown| button to choose one of available users from the list
+  By default, the user creating the campaign is chosen."
 
-  - Click |BGotoPage| button to choose from the *"Select Owner"* page."
- 
 Optional fields define such details as campaign start and end dates, its description and budget. 
 
 Custom fields may be added subject to specific business-needs. 

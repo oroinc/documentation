@@ -7,7 +7,7 @@ Tracking Websites Record
 *Tracking Website* records define details of a website, for which tracking shall be performed. 
 This article describes how to :ref:`create <user-guide-marketing-tracking-websites-create>` and 
 :ref:`manage <user-guide-marketing-tracking-websites-actions>` tracking website records, as well as provides detailed 
-description of their *"View"* pages <user-guide-marketing-tracking-websites-view-page>`. 
+description of their :ref:`*"View"* pages <user-guide-marketing-tracking-websites-view-page>`. 
 
 
 .. _user-guide-marketing-tracking-websites-create:
@@ -15,12 +15,12 @@ description of their *"View"* pages <user-guide-marketing-tracking-websites-view
 Creating a Tracking Websites
 --------------------
 
-1. Go to *Marketing --> Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
+# Go to *Marketing --> Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
   corner to get to the *"Create Tracking Website"* form.
    
 .. image:: ./img/marketing/tracking_general.png
 
-2. Define the settings of the tracking record:
+# Define the settings of the tracking record:
 
 There are four mandatory fields that **must** be defined:
   
@@ -32,19 +32,17 @@ There are four mandatory fields that **must** be defined:
   "**Identifier***","Unique code of the website used to generate its tracking"
   "**Url***","Url of the website to be tracked" 
   "**Owner***","Limits the list of Users that can manage the tracking website record to its owner and users, whose roles
-  allow managing tracking-websites of the owner (e.g. members of the same business unit, system administrator, etc.)
+  allow managing tracking-websites of the owner (e.g. members of the same business unit, system administrator, etc.). 
   
-  By default, the user creating the tracking websites is chosen.
+   You can  choose one of available users from the list (|Bdropdown|) or from the *"Select Owner"* page (|BGotoPage|).
 
-  - Click |BCrLOwnerClear| button to clear the field
+  Click |BCrLOwnerClear| button to clear the field
   
-  - Click |Bdropdown| button to choose one of available users from the list
-
-  - Click |BGotoPage| button to choose from the *"Select Owner"* page." 
+  By default, the user creating the tracking websites is chosen."
 
 .. image:: ./img/marketing/marketing_tracking_general.png
 
-3. Save the record in the system with the button in the top right corner of the page.
+# Save the record in the system with the button in the top right corner of the page.
 
 
 
