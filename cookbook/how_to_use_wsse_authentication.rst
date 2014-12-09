@@ -5,7 +5,7 @@
 How to use WSSE authentication
 ==============================
 
-*Used application: OroPlatform RC3*
+*Used application: OroPlatform 1.4*
 
 Overview
 --------
@@ -33,11 +33,11 @@ To generate authentication header console command could be used.
 
 .. code-block:: bash
 
-    user@host: php app/console oro:wsse:generate-header username
+    user@host: php app/console oro:wsse:generate-header yourApiKey
     Authorization: WSSE profile="UsernameToken"
-    X-WSSE: UsernameToken Username="admin", PasswordDigest="buctlzbeVflrVCoEfTKB1mkltCI=", Nonce="ZmMzZDg4YzMzYzRmYjMxNQ==", Created="2014-03-22T15:24:49+00:00"
+    X-WSSE: UsernameToken Username="admin", PasswordDigest="mTe5J+wM7tcBsI2Qx7bnajQ+0lQ=", Nonce="OWRmNWEwZWZiMTcyMTRkNQ==", Created="2014-12-09T21:29:18+02:00"
 
-It have *username* required argument and outputs generated headers. It's ready to use.
+It has *apiKey* required argument and outputs generated headers. It's ready to use.
 Here is example of request using curl:
 
 .. code-block:: bash
