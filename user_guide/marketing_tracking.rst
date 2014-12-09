@@ -34,7 +34,7 @@ There are four mandatory fields that **must** be defined:
   "**Owner***","Limits the list of Users that can manage the tracking website record to its owner and users, whose roles
   allow managing tracking-websites of the owner (e.g. members of the same business unit, system administrator, etc.). 
   
-   You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
+  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
 
   Click |BCrLOwnerClear| button to clear the field
   
