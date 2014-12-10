@@ -22,7 +22,7 @@ Creating a Marketing List
 1. Go to the *Marketing --> Marketing Lists* and click :guilabel:`Create Marketing List` button 
    in the top right corner of the grid.
 
-2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list
+2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list.
 
 3.  Define conditions in the *Filters* section. Only the records that meet the conditions will be added to the marketing
     list.
@@ -38,7 +38,7 @@ Creating a Marketing List
 General Details  
 ^^^^^^^^^^^^^^^
 
-.. image:: .img/marketing/list_general_details.png
+.. image:: ./img/marketing/list_general_details.png
 
 The following fields are mandatory and *must* be specified:
 
@@ -64,14 +64,14 @@ peculiarities of the list in future.
 
 Custom fields may be added subject to specific business-needs. 
   
-.. image:: .img/marketing/list_general_details_ex.png
+.. image:: ./img/marketing/list_general_details_ex.png
 
 
 .. _user-guide-marketing-marketing-list-create-filters:
   
 Filters
 ^^^^^^^
-.. image:: .img/marketing/list_filters.png
+.. image:: ./img/marketing/list_filters.png
 
 To define the marketing list settings, you can use the following settings:
 
@@ -91,13 +91,13 @@ To define a field condition (for example, that all the Leads in the list have be
 
 - Drag *"Field condition"* to the box on the right
 
-.. image:: .img/marketing/list_filters_field_condition.png
+.. image:: ./img/marketing/list_filters_field_condition.png
 
 - Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
 
 -  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
 
-.. image:: .img/marketing/list_filters_field_condition_value
+.. image:: ./img/marketing/list_filters_field_condition_value
 
 
 Condition Group
@@ -108,15 +108,15 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 
 - Drag *"Conditions Group"* to the box on the right
 
-.. image:: .img/marketing/list_filters_condition_group_01.png
+.. image:: ./img/marketing/list_filters_condition_group_01.png
 
 - Add several field conditions to the group
 
-.. image:: .img/marketing/list_filters_condition_group_02.png
+.. image:: ./img/marketing/list_filters_condition_group_02.png
 
 - Define the field conditions and choose AND or OR conjunction for the conditions
 
-.. image:: .img/marketing/list_filters_condition_group_03.png
+.. image:: ./img/marketing/list_filters_condition_group_03.png
 
 
 .. user-guide-marketing-marketing-list-create-columns:
@@ -124,7 +124,7 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 Columns
 ^^^^^^^
 
-.. image:: .img/marketing/list_columns
+.. image:: ./img/marketing/list_columns
 
 In the "*Columns*" section, define the set of fields displayed in the grid of the marketing list *"View"* page.
 It serves the following purposes:
@@ -136,7 +136,7 @@ It serves the following purposes:
   selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary Email 
   and Primary Phone fields).
 
-.. image:: .img/marketing/list_columns_01.png
+.. image:: ./img/marketing/list_columns_01.png
   
 - Choose the fields from the drop-down in the *"Column*" section.
 
@@ -147,7 +147,7 @@ It serves the following purposes:
 
 - Click :guilabel:`Add` button
 
-image:: .img/marketing/list_columns_ex.png
+image:: ./img/marketing/list_columns_ex.png
 
 Use action icons in the last column to edit the grid:
 
