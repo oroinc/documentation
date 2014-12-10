@@ -81,7 +81,7 @@ View page of a campaign contains the following three sections:
 
 .. image:: ./img/marketing/marketing_campaign_view_general.png
 
-- Events : events represent the amount of time a user has accessed a pre-defined part of the Website following the 
+- Events : events represents one time a user has accessed a pre-defined part of the Website following the 
   campaign.
   
   The section contains the "Detailed Events Report" and the grid.
