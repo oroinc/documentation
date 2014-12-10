@@ -91,12 +91,12 @@ View page of a campaign contains the following three sections:
 In the example above users have accessed the site  36 times, out of them 22 times they've made an order and 8 times 
 viewed some item details.
 
-The way to define the events for tracking is described in more details in :ref:`*How to Track Campaign Related 
-Activities on the Website <user-guide-how-to-track>*` guide.
+The way to define the events for tracking is described in more details in :ref:`How to Track Campaign Related 
+Activities on the Website <user-guide-how-to-track>` guide.
 
 - Tracking Code : piece of code to be added to the website to enable website tracking. The code and its usage is 
-  described in more details in :ref:`*How to Track Campaign Related Activities on the 
-  Website <user-guide-how-to-track>*` guide.
+  described in more details in :ref:`How to Track Campaign Related Activities on the 
+  Website <user-guide-how-to-track>` guide.
 
 .. image:: ./img/marketing/marketing_campaign_view_code.png
   
