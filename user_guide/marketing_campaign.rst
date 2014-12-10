@@ -105,5 +105,5 @@ You can also get to the Edit form from the :ref:`View page <user-guide-ui-compon
 .. |Bdropdown| image:: ./img/buttons/Bdropdown.png
    :align: middle
 
-.. |IcView| image:: ./img/buttons/IcView.png
+.. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
