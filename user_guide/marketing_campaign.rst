@@ -37,7 +37,7 @@ There are four mandatory fields that **must** be defined:
   "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
   campaigns of the owner (e.g. members of the same business unit, system administrator, etc.). 
   
-  You can  choose one of available users from the list (|Bdropdown|) or from the *"Select Owner"* page (|BGotoPage|).
+  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
 
   Click |BCrLOwnerClear| button to clear the field
   
