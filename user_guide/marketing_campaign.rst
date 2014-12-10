@@ -70,8 +70,6 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 - Get to the *"View"* page of the campaign :  |IcView| 
 
 
-
-
 .. _user-guide-marketing-campaigns-view-page:
 
 *Campaign View Page*
@@ -79,15 +77,29 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 View page of a campaign contains the following three sections:
 
-- General Information : general details specified for the campaign during creation
+- General Information : general details specified for the campaign during the creation/editing
 
-- Events :
+.. image:: ./img/marketing/marketing_campaign_view_general.png
 
-- Tracking Code : pieced of code to be added to the website to enable website tracking. The code and its usage is 
+- Events : events represent the amount of time a user has accessed a pre-defined part of the Website following the 
+  campaign.
+  
+  The section contains the "Detailed Events Report" and the grid.
+  
+.. image:: ./img/marketing/marketing_campaign_view_events.png
+
+In the example above users have accessed the site  36 times, out of them 22 times they've made an order and 8 times 
+viewed some item details.
+
+The way to define the events for tracking is described in more details in :ref:`*How to Track Campaign Related 
+Activities on the Website <user-guide-how-to-track>*` guide.
+
+- Tracking Code : piece of code to be added to the website to enable website tracking. The code and its usage is 
   described in more details in :ref:`*How to Track Campaign Related Activities on the 
   Website <user-guide-how-to-track>*` guide.
-  :ref:`Tracking Websites` <user-guide-tracking-websites>` functionality. 
 
+.. image:: ./img/marketing/marketing_campaign_view_code.png
+  
 You can also get to the Edit form from the :ref:`View page <user-guide-ui-components-view-pages>`.
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
