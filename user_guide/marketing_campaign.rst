@@ -89,3 +89,21 @@ View page of a campaign contains the following three sections:
   :ref:`Tracking Websites` <user-guide-tracking-websites>` functionality. 
 
 You can also get to the Edit form from the :ref:`View page <user-guide-ui-components-view-pages>`.
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
+   
+.. |BGotoPage| image:: ./img/buttons/BGotoPage.png
+   :align: middle
+   
+.. |Bdropdown| image:: ./img/buttons/Bdropdown.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
