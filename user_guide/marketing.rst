@@ -1,5 +1,5 @@
 
-..user-guide-marketing
+.. _user-guide-marketing:
 
 Marketing Functionality
 =======================
