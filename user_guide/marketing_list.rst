@@ -40,14 +40,14 @@ General Details
 
 .. image:: ./img/marketing/list_general_details.png
 
-The following fields are mandatory and *must* be specified:
+The following fields are mandatory and **must** be specified:
 
 .. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Name**","Name used to refer to the marketing list in the system."
-  "**Entity**","Define what entity records will be used to make the list. 
+  "**Name**","Name used to refer to the marketing list in the system"
+  "**Entity**","Records of the chosen entity and entities related to it will be used to create rules for the list.
   
   Choose an entity from the drop-down. Only entities that have contact details (E-mail or phone 
   number) are available."
@@ -57,7 +57,13 @@ The following fields are mandatory and *must* be specified:
   
   - **On demand** lists will be updated only following the user request"
   "**Owner**","Limits the list of users that can manage the marketing list to its owner and users, whose roles allow 
-  managing marketing lists of the owner (e.g. members of the same business unit, system administrator, etc.)"
+  managing marketing lists of the owner (e.g. members of the same business unit, system administrator, etc.).
+  
+  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
+
+  Click |BCrLOwnerClear| button to clear the field
+  
+  By default, the user creating the campaign is chosen."
 
 Optional field **Description** can be filled with free text to help you and other users to understand the purpose or 
 peculiarities of the list in future.
@@ -71,11 +77,10 @@ Custom fields may be added subject to specific business-needs.
   
 Filters
 ^^^^^^^
-.. image:: ./img/marketing/list_filters.png
 
 To define the marketing list settings, you can use the following settings:
 
-- **Field Condition** : only records that meet the condition are added to the list
+- **Field Condition**: only records that meet the condition are added to the list
 
 - **Conditions Group**: a set of field conditions
 
@@ -97,7 +102,7 @@ To define a field condition (for example, that all the Leads in the list have be
 
 -  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
 
-.. image:: ./img/marketing/list_filters_field_condition_value
+.. image:: ./img/marketing/list_filters_field_condition_value.png
 
 
 Condition Group
@@ -124,7 +129,7 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 Columns
 ^^^^^^^
 
-.. image:: ./img/marketing/list_columns
+.. image:: ./img/marketing/list_columns.png
 
 In the "*Columns*" section, define the set of fields displayed in the grid of the marketing list *"View"* page.
 It serves the following purposes:
@@ -147,7 +152,7 @@ It serves the following purposes:
 
 - Click :guilabel:`Add` button
 
-image:: ./img/marketing/list_columns_ex.png
+.. image:: ./img/marketing/list_columns_ex.png
 
 Use action icons in the last column to edit the grid:
 
@@ -191,7 +196,8 @@ View page of a marketing list contains:
 
 - General details of the list
 
-- The grid of the list.
+- Grid of the list
+
 
 Grid of the Marketing List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -200,10 +206,10 @@ The grid contains:
 
 - Columns defined in the :ref:`Create form <user-guide-marketing-marketing-list-create-columns>` 
 
-- TOTAL CONTACTED : contains the number of times a record of this marketing list was contacted within 
+- "TOTAL CONTACTED" column: contains the number of times a record of this marketing list was contacted within 
   different :ref:`Email campaigns <user-guide-marketing-email-campaigns>` 
    
-- LAST CONTACTED : contains the date when a  record of this marketing list was last contacted within 
+- "LAST CONTACTED" column: contains the date when a  record of this marketing list was last contacted within 
   different :ref:`Email campaigns <user-guide-marketing-email-campaigns>` 
   
   
@@ -212,9 +218,9 @@ The grid contains:
    Please note that if the same record is a part of different marketing lists, its data from other marketing lists will
    not effect the TOTAL CONTACTED and LAST CONTACTED values.
    
-- SUBSCRIBED : Initially all the users in the list are subscribed (the column value is "Yes"). If following one of the 
-  :ref:`Email campaigns <user-guide-marketing-email-campaigns>` using the marketing list, a user has unsubscribed, the
-  value is changed to "No" and the user is excluded from the next mailings.
+- "SUBSCRIBED" column: Initially all the users in the list are subscribed (the column value is "Yes"). If following one 
+  of the :ref:`Email campaigns <user-guide-marketing-email-campaigns>` using the marketing list, a user has 
+  unsubscribed, the value is changed to "No" and the user is excluded from the next mailings.
   
 In the example below, the marketing list has been used for three Email campaigns. Leads Leo's Stereo and Magne Gases 
 have unsubscribed after the second mailing.
@@ -233,7 +239,7 @@ Action icons in the last column of the grid enable the following actions:
 
   As soon as at least one item has been removed, *"Removed Items"* grid will appear
   
-.. image:: ./img/marketing/list_view_page_removed.png
+.. image:: ./img/marketing/list_view_page_grid_removed.png
 
 Action icons in the last column of the *"Removed Items"* grid enable the following actions:
 
