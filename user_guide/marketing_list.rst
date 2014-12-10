@@ -38,7 +38,7 @@ Creating a Marketing List
 General Details  
 ^^^^^^^^^^^^^^^
 
-.. image:: .img./marketing/list_general_details.png
+.. image:: .img/marketing/list_general_details.png
 
 The following fields are mandatory and *must* be specified:
 
@@ -51,27 +51,27 @@ The following fields are mandatory and *must* be specified:
   
   Choose an entity from the drop-down. Only entities that have contact details (E-mail or phone 
   number) are available."
-  "**Type**","Chose the list type from the drop-down.
+  "**Type**","Chose the list type from the drop-down:
  
   - **Dynamic** lists are updated as soon as any changes have taken place in the system 
   
-  - **On demand** lists will be updated only following the user request."
-  "Owner","Limits the list of users that can manage the marketing list to its owner and users, whose roles allow 
+  - **On demand** lists will be updated only following the user request"
+  "**Owner**","Limits the list of users that can manage the marketing list to its owner and users, whose roles allow 
   managing marketing lists of the owner (e.g. members of the same business unit, system administrator, etc.)"
 
-Optional filed **Description** can be filled with free text to help you and other users to understand the purpose or 
+Optional field **Description** can be filled with free text to help you and other users to understand the purpose or 
 peculiarities of the list in future.
 
 Custom fields may be added subject to specific business-needs. 
   
-.. image:: .img./marketing/list_general_details_ex.png
+.. image:: .img/marketing/list_general_details_ex.png
 
 
 .. _user-guide-marketing-marketing-list-create-filters:
   
 Filters
 ^^^^^^^
-.. image:: .img./marketing/list_filters.png
+.. image:: .img/marketing/list_filters.png
 
 To define the marketing list settings, you can use the following settings:
 
@@ -79,8 +79,8 @@ To define the marketing list settings, you can use the following settings:
 
 - **Conditions Group**: a set of field conditions
 
-- **Apply Segment**: only records from a specific :term:`segment` are added to the list. (Segments are subject to a 
-  separate document)
+- **Apply Segment**: only records that meet a specific set of predefined conditions (belong to a segment) are added to 
+  the list. (Segments are subject to a separate document)
 
 Field conditions, condition groups and segment settings can be combined or ORed to define the final set of conditions. 
 
@@ -91,13 +91,13 @@ To define a field condition (for example, that all the Leads in the list have be
 
 - Drag *"Field condition"* to the box on the right
 
-.. image:: .img./marketing/list_filters_field_condition.png
+.. image:: .img/marketing/list_filters_field_condition.png
 
 - Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
 
 -  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
 
-.. image:: .img./marketing/list_filters_field_condition_value
+.. image:: .img/marketing/list_filters_field_condition_value
 
 
 Condition Group
@@ -108,15 +108,15 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 
 - Drag *"Conditions Group"* to the box on the right
 
-.. image:: .img./marketing/list_filters_condition_group_01.png
+.. image:: .img/marketing/list_filters_condition_group_01.png
 
 - Add several field conditions to the group
 
-.. image:: .img./marketing/list_filters_condition_group_02.png
+.. image:: .img/marketing/list_filters_condition_group_02.png
 
 - Define the field conditions and choose AND or OR conjunction for the conditions
 
-.. image:: .img./marketing/list_filters_condition_group_03.png
+.. image:: .img/marketing/list_filters_condition_group_03.png
 
 
 .. user-guide-marketing-marketing-list-create-columns:
@@ -124,7 +124,7 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 Columns
 ^^^^^^^
 
-.. image:: .img./marketing/list_columns
+.. image:: .img/marketing/list_columns
 
 In the "*Columns*" section, define the set of fields displayed in the grid of the marketing list *"View"* page.
 It serves the following purposes:
@@ -136,7 +136,7 @@ It serves the following purposes:
   selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary Email 
   and Primary Phone fields).
 
-.. image:: .img./marketing/list_columns_01.png
+.. image:: .img/marketing/list_columns_01.png
   
 - Choose the fields from the drop-down in the *"Column*" section.
 
@@ -147,7 +147,7 @@ It serves the following purposes:
 
 - Click :guilabel:`Add` button
 
-image:: .img./marketing/list_columns_ex.png
+image:: .img/marketing/list_columns_ex.png
 
 Use action icons in the last column to edit the grid:
 
