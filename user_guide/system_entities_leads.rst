@@ -35,14 +35,12 @@ The following fields are mandatory and **must** be defined:
 - **Owner***: limits the list of users that can manage the lead to its owner and users, whose roles allow managing leads 
   assigned to the owner(e.g. members of the same business unit, system administrator, etc.).
   
-  By default, the user creating the lead is chosen.
-
-  - Click |BCrLOwnerClear| button to clear the field
+  You can choose the owner from the list (|Bdropdown|) or from the grid (|BGotoPage|)
   
-  - Click |Bdropdown| button to choose one of available users from the list
-
-  - Click |BGotoPage| button to choose from the *"Select Owner"* page.
+  Click |BCrLOwnerClear| button to clear the field
   
+  By default, the user creating the lead is chosen."
+
 - **Lead Name***: name used to refer to the lead in the system.
 
 - **Channel***: any of active channels assigned the *"Lead"* entity. 
@@ -51,10 +49,8 @@ The following fields are mandatory and **must** be defined:
   
   - Click |Bdropdown| button to choose one of available channels from the list.
   
-- **First Name*** and **Last Name***: personal details of the potential customer or contact person. The fields will be 
-  optional since 1.4.5"
+- **First Name*** and **Last Name***: personal details of the potential customer or contact person. 
        
-
 **Optional fields** keep additional information and may be left empty:
 
 - If a field refers to a number (e.g. *"Number of Employees"*), an integer value shall be filled (if any).
@@ -65,13 +61,11 @@ The following fields are mandatory and **must** be defined:
 - **Contact** and *B2B Customer* enable binding the lead created to records of corresponding 
   entities in the system.
   
-  - Click |Bdropdown| button to choose one of available Contacts\Customers from the list
+  You can choose the record from the list (|Bdropdown|) or from the grid (|BGotoPage|), as well as create a new record
+  (|Bplus|).
+  
+  Click |BCrLOwnerClear| button to clear the field
 
-  - Click |BGotoPage| button to choose from the *"Select Contact"*\*"Select B2B Customer"* page
-
-  - Click |Bplus| button to create a new contact\customer record in the system
-
-  - Click |BCrLOwnerClear| button to clear the field
   
 **Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
 
@@ -87,7 +81,7 @@ in the system.
 Lead Actions 
 ^^^^^^^^^^^^^
 
-The following actions are available for the leads:
+The following actions can be enabled for the leads:
 
 From the \:ref:`Grid <user-guide-ui-components-grids>`\:
 
@@ -120,6 +114,10 @@ From the \:ref:`View page <user-guide-ui-components-view-pages>`\
 
 - Add Event : an event can be added for the lead
 
+.. note::
+
+    Please note that the list of actions available depends on the system settings defined in the "Communication & 
+    Collaboration" section of the "Lead" entity.
       
 .. _user-guide-leads-reports:
 
