@@ -11,7 +11,7 @@ addresses in California.
 
 The article describes how to :ref:`create <user-guide-marketing-lists-create>` and 
 :ref:`manage <user-guide-marketing-lists-actions>` marketing lists, as well as provides detailed description of the 
-:ref:`marketing list *"View"* page <user-guide-marketing-lists-view-page>`. 
+:ref:`marketing list "View" page <user-guide-marketing-lists-view-page>`. 
 
 
 .. _user-guide-marketing-lists-create:
