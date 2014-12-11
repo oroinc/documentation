@@ -247,13 +247,6 @@ Action icons in the last column of the *"Removed Items"* grid enable the followi
 
 - Restore the item in the marketing list : |UndoRem|
 
-  
-  
-  
-  
-
-
-
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
