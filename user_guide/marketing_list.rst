@@ -11,7 +11,7 @@ addresses in California.
 
 The article describes how to :ref:`create <user-guide-marketing-lists-create>` and 
 :ref:`manage <user-guide-marketing-lists-actions>` marketing lists, as well as provides detailed description of the 
-:ref:`marketing list "View" page <user-guide-marketing-lists-view-page>`. 
+:ref:`marketing list "View" page <user-guide-marketing-list-view-page>`. 
 
 
 .. _user-guide-marketing-lists-create:
@@ -24,11 +24,11 @@ Creating a Marketing List
 
 2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list.
 
-3.  Define conditions in the *Filters* section. Only the records that meet the conditions will be added to the marketing
-    list.
+3. Define conditions in the *Filters* section. Only the records that meet the conditions will be added to the marketing
+   list.
   
-4.  Choose the :ref:`columns <user-guide-marketing-marketing-list-create-columns>` that will be visible on the *"View*" 
-    page of the list and available to third-party systems following integration
+4. Choose the :ref:`columns <user-guide-marketing-marketing-list-create-columns>` that will be visible on the *"View*" 
+   page of the list and available to third-party systems following integration
     
 5. Save the campaign in the system with the button in the top right corner of the page.
   
@@ -124,7 +124,7 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 .. image:: ./img/marketing/list_filters_condition_group_03.png
 
 
-.. user-guide-marketing-marketing-list-create-columns:
+.. _user-guide-marketing-marketing-list-create-columns:
 
 Columns
 ^^^^^^^
@@ -176,23 +176,23 @@ The following actions are available for a marketing list from the grid
 
 - Get to the *"Edit"* form of the list : |IcEdit| 
 
-  You can change the list details or delete the list from the :ref:`Edit form <user-guide-ui-edit-forms>`.
+  You can change the list details or delete the list from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
   
 - Get to the *"View"* page of the list :  |IcView| 
 
 
 
 
-.. _user-guide-marketing-campaigns-view-page:
+.. _user-guide-marketing-list-view-page:
 
-Campaign View Page
-------------------
+Marketing Lists View Page
+-------------------------
 
 .. image:: ./img/marketing/list_view_page.png
 
 View page of a marketing list contains:
 
-- :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`
+- \:ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`\
 
 - General details of the list
 
@@ -204,13 +204,13 @@ Grid of the Marketing List
 
 The grid contains:
 
-- Columns defined in the :ref:`Create form <user-guide-marketing-marketing-list-create-columns>` 
+- Columns defined in the \:ref:`Create form <user-guide-marketing-marketing-list-create-columns>`\
 
 - "TOTAL CONTACTED" column: contains the number of times a record of this marketing list was contacted within 
-  different :ref:`Email campaigns <user-guide-marketing-email-campaigns>` 
+  different :ref:`Email campaigns <user-guide-email-campaigns>` 
    
 - "LAST CONTACTED" column: contains the date when a  record of this marketing list was last contacted within 
-  different :ref:`Email campaigns <user-guide-marketing-email-campaigns>` 
+  different :ref:`Email campaigns <user-guide-email-campaigns>`
   
   
 .. note::
@@ -219,7 +219,7 @@ The grid contains:
    not effect the TOTAL CONTACTED and LAST CONTACTED values.
    
 - "SUBSCRIBED" column: Initially all the users in the list are subscribed (the column value is "Yes"). If following one 
-  of the :ref:`Email campaigns <user-guide-marketing-email-campaigns>` using the marketing list, a user has 
+  of the :ref:`Email campaigns <user-guide-email-campaigns>` using the marketing list, a user has 
   unsubscribed, the value is changed to "No" and the user is excluded from the next mailings.
   
 In the example below, the marketing list has been used for three Email campaigns. Leads Leo's Stereo and Magne Gases 
@@ -270,4 +270,13 @@ Action icons in the last column of the *"Removed Items"* grid enable the followi
    :align: middle
 
 .. |UndoRem| image:: ./img/buttons/IcRemove.png
+   :align: middle
+      
+.. |BGotoPage| image:: ./img/buttons/BGotoPage.png
+   :align: middle
+   
+.. |Bdropdown| image:: ./img/buttons/Bdropdown.png
+   :align: middle
+
+.. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle

@@ -1,4 +1,3 @@
-
 .. _user-guide-how-to-track:
 
 How to Track Campaign Related Activities on the Website
@@ -8,7 +7,7 @@ In order to track campaign-related activities of a Website user, you need to:
 
 - Create a :ref:`Сampaign <user-guide-marketing-campaigns>` record
 
-- Create a :ref:`Tracking Website <user-guide-tracking-websites>` record for this Website
+- Create a :ref:`Tracking Website <user-guide-marketing-tracking>` record for this Website
 
 - Use the "Tracking code" on their View pages to modify the code of the website
 
@@ -16,7 +15,7 @@ Use Tracking Code
 -----------------
 
 Tracking code that shall be added before the </body> tag  on every page of the website 
-can be found on the View page of the corresponding *Tracking Website*` <user-guide-tracking-websites>` record.
+can be found on the View page of the corresponding :ref:`Tracking Website <user-guide-marketing-tracking>` record.
 
 .. image:: ./img/marketing/how_to_tracking_code.png
 
@@ -113,3 +112,21 @@ enabled:
 Order successfully placed event is saved for the campaign with a dynamic value that corresponds to a total
 cost of the order.
 
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
+   
+.. |BGotoPage| image:: ./img/buttons/BGotoPage.png
+   :align: middle
+   
+.. |Bdropdown| image:: ./img/buttons/Bdropdown.png
+   :align: middle
+
+.. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
+   :align: middle

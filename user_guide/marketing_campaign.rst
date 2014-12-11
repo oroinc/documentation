@@ -9,7 +9,7 @@ events and website tracking settings.
 
 The articles describes the ways to :ref:`create <user-guide-marketing-campaigns-create>` and 
 :ref:`manage <user-guide-marketing-campaigns-actions>` a campaign, as well as provides detailed description of the 
-:ref:`*"View"* page of a campaign <user-guide-marketing-campaigns-view-page>`. 
+:ref:`View page of a campaign <user-guide-marketing-campaigns-view-page>`. 
 
 
 .. _user-guide-marketing-campaigns-create:
@@ -57,7 +57,7 @@ Custom fields may be added subject to specific business-needs.
 Campaign Actions
 ----------------
 
-The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a campaign from the \:ref:`grid <user-guide-ui-components-grids>`\:
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 
@@ -65,7 +65,7 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 - Get to the *"Edit"* form of the campaign : |IcEdit| 
   
-  You can change the campaign details or delete the campaign from the :ref:`Edit form <user-guide-ui-edit-forms>`.
+  You can change the campaign details or delete the campaign from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
 
 - Get to the *"View"* page of the campaign :  |IcView| 
 
@@ -100,7 +100,7 @@ Activities on the Website <user-guide-how-to-track>` guide.
 
 .. image:: ./img/marketing/marketing_campaign_view_code.png
   
-You can also get to the Edit form from the :ref:`View page <user-guide-ui-components-view-pages>`.
+You can also get to the Edit form from the \:ref:`View page <user-guide-ui-components-view-pages>`\.
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle

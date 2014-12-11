@@ -1,4 +1,3 @@
-
 .. _user-guide-email-campaigns:
 
 Email Campaigns
@@ -18,12 +17,10 @@ Creating a Campaign
 
 1. Go to *Email --> Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
    to the *"Create Campaign"* form.
-   
-.. image:: ./img/marketing/marketing_campaign_create.png
 
 2. Define general settings of the campaign:
 
-There are four mandatory fields that **must** be defined:
+  There are four mandatory fields that **must** be defined:
   
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -42,10 +39,9 @@ There are four mandatory fields that **must** be defined:
   date (*Deferred*).
 
   If *Deferred* value is chosen, **Scheduled For** field will appear. Choose the date and time of the mailing in the 
-  calendar.
-
-.. image:: ./img/marketing/email_campaign_schedule
-  "
+  calendar. 
+  
+  |email_campaign_schedule|"
   "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
   Email campaigns of the owner (e.g. members of the same business unit, system administrator, etc.). 
   
@@ -85,7 +81,7 @@ There are two mandatory fields that **must** be defined:
 Campaign Actions
 ----------------
 
-The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a campaign from the \:ref:`grid <user-guide-ui-components-grids>`\:
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 
@@ -93,7 +89,7 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 - Get to the *"Edit"* form of the campaign : |IcEdit| 
   
-  You can change the campaign details or delete the campaign from the :ref:`Edit form <user-guide-ui-edit-forms>`.
+  You can change the campaign details or delete the campaign from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
 
 - Get to the *"View"* page of the campaign :  |IcView| 
 
@@ -113,6 +109,13 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
    
 .. |Bdropdown| image:: ./img/buttons/Bdropdown.png
    :align: middle
+   
+.. |BPlus| image:: ./img/buttons/Bdropdown.png
+   :align: middle
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
+   
+.. |email_campaign_schedule| image:: ./img/marketing/email_campaign_schedule.png
+   :height: 30%
+

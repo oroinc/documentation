@@ -7,13 +7,13 @@ Tracking Websites Record
 *Tracking Website* records define details of a website, for which tracking shall be performed. 
 This article describes how to :ref:`create <user-guide-marketing-tracking-websites-create>` and 
 :ref:`manage <user-guide-marketing-tracking-websites-actions>` tracking website records, as well as provides detailed 
-description of their :ref:`*"View"* pages <user-guide-marketing-tracking-websites-view-page>`. 
+description of their :ref:`View pages <user-guide-marketing-tracking-websites-view-page>`. 
 
 
 .. _user-guide-marketing-tracking-websites-create:
 
 Creating a Tracking Websites
---------------------
+----------------------------
 
 1. Go to *Marketing --> Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
    corner to get to the *"Create Tracking Website"* form.
@@ -46,10 +46,10 @@ There are four mandatory fields that **must** be defined:
 .. _user-guide-marketing-tracking-websites-actions:
 
 Tracking Websites Actions
-----------------
+-------------------------
 
 The following actions are available for a tracking websites record from the 
-:ref:`grid <user-guide-ui-components-grids>`:
+\:ref:`grid <user-guide-ui-components-grids>`\:
 
 .. image:: ./img/marketing/tracking_grid_actions.png
 
@@ -57,7 +57,7 @@ The following actions are available for a tracking websites record from the
 
 - Get to the *"Edit"* form of the record : |IcEdit| 
   
-  You can change the record details or delete it using the :ref:`Edit form <user-guide-ui-edit-forms>`.
+  You can change the record details or delete it using the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
 
 - Get to the *"View"* page of the record :  |IcView| 
 
@@ -75,7 +75,7 @@ View page of a tracking websites contains the following three sections:
 
 .. image:: ./img/marketing/tracking_view_general.png
 
-- Tracking Code: a piece of code to be added to the website in order to :ref:`track` <user-guide-how-to-track>` the 
+- Tracking Code: a piece of code to be added to the website in order to :ref:`track <user-guide-how-to-track>` the 
   campaign-related user activities. 
   The code and its usage are described in more details in :ref:`How to Track Campaign Related 
   Activities on the Website <user-guide-how-to-track>` guide.
@@ -99,7 +99,7 @@ the item id.*
 The way to define the events for tracking is described in more details in :ref:`How to Track Campaign Related 
 Activities on the Website <user-guide-how-to-track>` guide.
 
-You can also get to the Edit form from the :ref:`View page <user-guide-ui-components-view-pages>`.
+You can also get to the Edit form from the \:ref:`View page <user-guide-ui-components-view-pages>`\.
 
 
 

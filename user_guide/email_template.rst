@@ -19,13 +19,13 @@ Creating an Email Template
 ---------------------------
 
 1. Go to *System --> Emails --> Templates* page and click :guilabel:`Create Template` button in the top right corner to 
-  get to the *"Create Template"* form.
+   get to the *"Create Template"* form.
    
-.. image:: ./img/email_template_create
+  |email_template_create|
 
 2. Define general settings of the template:
 
-The following fields are mandatory and **must** be defined:
+   The following fields are mandatory and **must** be defined:
   
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -48,18 +48,18 @@ If no entity name is defined, only system variables will be available.
 
 2. Define the Email template. Drag the variables to where you need them.
 
-.. image:: ./img/email_template_ex
+.. image:: ./img/marketing/email_template_ex.png
 
 *In the example below, the template contains a link to the website page composed with a piece of tracking code from the
 "Tracking Websitse" record. Every time a user follows the link, visit event will be tracked for the campaign, as 
-described in the :ref:`How to Track Campaign Related Activities on the Website <user-guide-how-to-track>` guide.   
+described in the :ref:`How to Track Campaign Related Activities on the Website <user-guide-how-to-track>` guide.*   
 
 3. You can click :guilabel:`Preview` button to check your template
 
-.. image:: ./img/email_template_preview
+.. image:: ./img/marketing/email_template_preview.png
 
 4. If the you are satisfied with the preview, save the template in the system with the button in the top right corner of
-  the page.
+   the page.
 
 
 .. _user-guide-email-templates-actions:
@@ -67,15 +67,15 @@ described in the :ref:`How to Track Campaign Related Activities on the Website <
 Campaign Actions
 ----------------
 
-The following actions are available for an Email template from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for an Email template from the \:ref:`grid <user-guide-ui-components-grids>`\:
 
-.. image:: ./img/marketing/marketing_email_template_actions.png
+.. image:: ./img/marketing/email_template_actions.png
 
 - Delete the template from the system : |IcDelete| 
 
 - Get to the *"Edit"* form of the template : |IcEdit| 
   
-  You can change the template details or delete the template from the :ref:`Edit form <user-guide-ui-edit-forms>`.
+  You can change the template details or delete the template from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
 
 - Clone the  template :  |IcClone|
   
@@ -99,3 +99,5 @@ The following actions are available for an Email template from the :ref:`grid <u
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
+   
+.. |email_template_create| image:: ./img/marketing/email_template_create.png
