@@ -81,7 +81,7 @@ id data to Oro. Every time a user follows the link of a campaing, they get to a 
 From now on, all the actions perfomed by the user at the website within this session will be assigned to the
 campaign.
 
-On some of the pages actions are activated. For example, this is a piece of code on the cart page:
+On some of the pages, actions are activated. For example, this is a piece of code on the cart page:
 
 .. code-block:: html
 
