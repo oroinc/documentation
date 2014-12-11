@@ -40,7 +40,7 @@ If you want to allocate user activities on a specific page of the Website, uncom
 - [name] is used in the system to refer to events on the page
 - [value] is any numeric value (e.g. for a cart, it can be an item code or cost)
 
-..note::
+.. note::
   
     The code may be filled with both static and dynamic values, however the use of dynamic values requires complex 
     back-end development. 
