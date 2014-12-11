@@ -33,7 +33,7 @@ There are four mandatory fields that **must** be defined:
   "**Name***","Name used to refer to the campaign in the system."
   "**Code***","Unique code of the campaign, used to generate its tracking settings"
   "**Report Scale***","Defines default time-scale of the events graph. The next larger scale is chosen if there are 
-  over" 
+  over 40 records" 
   "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
   campaigns of the owner (e.g. members of the same business unit, system administrator, etc.). 
   
