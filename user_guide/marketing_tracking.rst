@@ -15,10 +15,10 @@ description of their :ref:`*"View"* pages <user-guide-marketing-tracking-website
 Creating a Tracking Websites
 --------------------
 
-#. Go to *Marketing --> Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
+1. Go to *Marketing --> Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
    corner to get to the *"Create Tracking Website"* form.
 
-#. Define the settings of the tracking record:
+2. Define the settings of the tracking record:
 
 There are four mandatory fields that **must** be defined:
   
@@ -40,7 +40,7 @@ There are four mandatory fields that **must** be defined:
 
 .. image:: ./img/marketing/tracking_general.png
 
-#. Save the record in the system with the button in the top right corner of the page.
+3. Save the record in the system with the button in the top right corner of the page.
 
 
 .. _user-guide-marketing-tracking-websites-actions:
