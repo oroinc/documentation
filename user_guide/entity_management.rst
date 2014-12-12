@@ -268,7 +268,7 @@ Other Field Settings
 The following Yes/No options can be defined for each field
 
 .. csv-table:: Import and Export Settings
-  :header: "Field","Description"
+  :header: "Option","Description"
   :widths: 10,30
 
   "**Show on Grid**","Field will be displayed in the grid of the entity records"
@@ -330,7 +330,7 @@ The following settings shall be defined for *One to Many* and *Many to Many* Rel
 .. image:: ./img/entity_management/new_entity_relation_to_many.png
 
 .. csv-table:: 
-  :header: "Field","Description"
+  :header: "Option","Description"
   :widths: 15,30
 
   "**Related Entity Data Fields**","Defines a set of the related entity fields displayed in the grid that appears
