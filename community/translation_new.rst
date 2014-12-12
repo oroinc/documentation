@@ -22,12 +22,12 @@ Join the Translation Team
 
 1. Sign up and create your profile at the Crowdin (or sign in, if you already have the profile):
 
-1.1. Click the `Crowdin < https://crowdin.com/join>`_ link at the 'Community --> Localization' page
+1.1. Click the `Crowdin <https://crowdin.com/join>`_ link at the 'Community --> Localization' page
 
 1.2. Follow the link in the confirmation Email to activate you account
 
 2. Click `OroCRM < http://translate.orocrm.com>`_ link to offer translation for OroCRM or 
-   `Oro Platrom < http://translate.platform.orocrm.com/>`_ to offer translation for Oro Platform. 
+   `Oro Platrom < http://translate.platform.orocrm.com>`_ to offer translation for Oro Platform. 
   
    The project page will appear.
   
