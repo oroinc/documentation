@@ -31,25 +31,26 @@ Create Leads from the UI
 
 The following fields are mandatory and **must** be defined:
 
-- **Owner***: limits the list of users that can manage the lead to its owner and users, whose roles allow managing leads 
+.. csv-table:: Mandatory Entity Fields
+  :header: "Field", "Description"
+  :widths: 10, 30
+
+  "**Owner***","Limits the list of users that can manage the lead to its owner and users, whose roles allow managing leads 
   assigned to the owner (e.g. members of the same business unit, system administrator, etc.).
   
-  You can choose the owner from the list (|Bdropdown|) or from the grid (|BGotoPage|).
+  You can choose an owner from the list (|Bdropdown|) or from the grid (|BGotoPage|).
   
   Click |BCrLOwnerClear| button to clear the field.
   
   By default, the user creating the lead is chosen."
-
-- **Lead Name***: name used to refer to the lead in the system.
-
-- **Channel***: any of active channels assigned the *"Lead"* entity. 
+  "**Lead Name***","The name used to refer to the lead in the system."
+  "**Channel***","Any of active channels assigned the *"Lead"* entity. 
 
   Details of the lead will be uploaded from the source of the channel.
   
-  - Click |Bdropdown| button to choose one of available channels from the list.
-  
-- **First Name*** and **Last Name***: personal details of the potential customer or contact person. 
-       
+  - Click |Bdropdown| button to choose one of available channels from the list."
+  "**First Name*** and **Last Name***","Personal details of the potential customer or contact person." 
+
 **Optional fields** keep additional information and may be left empty:
 
 - If a field refers to a number (e.g. *"Number of Employees"*), an integer value shall be used.
