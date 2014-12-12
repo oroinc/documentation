@@ -48,7 +48,7 @@ The following fields are mandatory and **must** be defined:
 
   Details of the lead will be uploaded from the source of the channel.
   
-  - Click |Bdropdown| button to choose one of available channels from the list."
+  Click |Bdropdown| button to choose one of available channels from the list."
   "**First Name*** and **Last Name***","Personal details of the potential customer or contact person." 
 
 **Optional fields** keep additional information and may be left empty:
