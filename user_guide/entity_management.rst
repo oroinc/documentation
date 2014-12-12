@@ -85,7 +85,7 @@ Communication & Collaboration
 
 The section contains check-boxes for all the activities available and *Enable Notes* drop-down.
 
-.. image:: ./img/entity_management_create/new_entity_communication_collaboration.png
+.. image:: ./img/entity_management/new_entity_communication_collaboration.png
 
 - Check the activities that you want to enable for the entity.
   
@@ -102,7 +102,7 @@ Attachment Settings
 
 You can enable attachments for the entity records and define respective limitations.
 
-.. image:: ./img/entity_management_create/new_entity_attachment.png
+.. image:: ./img/entity_management/new_entity_attachment.png
 
 - Choose *Yes* in the drop-down to enable attachments.
 
@@ -115,7 +115,7 @@ You can enable attachments for the entity records and define respective limitati
   
   For example:
   
-  ..image :: ./img/entity_management_create/new_entity_general_mime_types
+  ..image :: ./img/entity_management/new_entity_general_mime_types
 
 
 .. _user-guide-entity-management-create-other:
@@ -123,7 +123,7 @@ You can enable attachments for the entity records and define respective limitati
 Other Settings
 ^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management_create/new_entity_other.png
+.. image:: ./img/entity_management/new_entity_other.png
 
 The following three fields must be specified for every entity created:
 
@@ -174,7 +174,7 @@ get to the *View* page of the new entity. In order to define a new field you nee
 
 - Define General Information in the emerged page.
 
-.. image:: ./img/entity_management_create/new_entity_field.png
+.. image:: ./img/entity_management/new_entity_field.png
 
 The following values **must** be specified:
 
@@ -209,7 +209,7 @@ A bigger form will appear where you can:
 *Field General Information*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management_create/new_entity_field_general.png
+.. image:: ./img/entity_management/new_entity_field_general.png
 
 The following fields are mandatory and **must** be defined
 
@@ -241,7 +241,7 @@ There are also optional fields in the section that can be defined for some of th
 *Export and Import Settings*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management_create/new_entity_exportimport.png
+.. image:: ./img/entity_management/new_entity_exportimport.png
 
 Oro Platform provides for export and import of its entity details from and into .csv tables. In the section you can
 define the rules applied to the specific field in the course of import and export.
@@ -263,7 +263,7 @@ define the rules applied to the specific field in the course of import and expor
 Other Field Settings
 ^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management_create/new_entity_field_other.png
+.. image:: ./img/entity_management/new_entity_field_other.png
 
 The following Yes/No options can be defined for each field
 
@@ -296,7 +296,7 @@ To define a relation, you should:
 
 - Define the field type in the **Relations** section
 
-.. image:: ./img/entity_management_create/new_entity_relation.png
+.. image:: ./img/entity_management/new_entity_relation.png
 
 The following three options are available:
 
@@ -327,7 +327,7 @@ Relation Specific Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 The following settings shall be defined for *One to Many* and *Many to Many* Relation Settings:
 
-.. image:: ./img/entity_management_create/new_entity_relation_to_many.png
+.. image:: ./img/entity_management/new_entity_relation_to_many.png
 
 .. csv-table:: 
   :header: "Field","Description"
@@ -344,7 +344,7 @@ The following settings shall be defined for *One to Many* and *Many to Many* Rel
 
 The following settings shall be defined for *Many to One* Relation Settings:
 
-.. image:: ./img/entity_management_create/new_entity_relation_to_one.png
+.. image:: ./img/entity_management/new_entity_relation_to_one.png
 
 .. csv-table::
   :header: "Field","Description"
