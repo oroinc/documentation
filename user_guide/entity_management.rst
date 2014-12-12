@@ -151,7 +151,6 @@ The following three fields must be specified for every entity created:
   - Organization: an organisation must be defined as an *Owner* for each entity record. Subject to the Roles settings, 
     only users assigned to this organization or to the system the organization belongs to will be able to view and 
     process the entity records."
-    
   "**Auditable**","If enabled, the actions performed with the entity records will be recorded and can be 
   viewed with System → Audit functionality.
     
@@ -218,7 +217,6 @@ The following fields are mandatory and **must** be defined
   :widths: 10, 30
 
   "**Name*** and **Type***","The values were specified at the previous step and cannot be re-defined."
-  
   "**Label***","The way the field will be referred to in the UI
   
   By default filled with the *Name* value."
@@ -336,9 +334,7 @@ The following settings shall be defined for *One to Many* and *Many to Many* Rel
   "**Related Entity Data Fields**","Defines a set of the related entity fields displayed in the grid that appears
   one a user has clicked the :guilabel:`+Add` button on the Create/Edit form for new related entity records and in the 
   Edit form for existing related entity records. 
-
   "**Related Entity Info Title**","Defines a set of the related entity fields displayed on the *View* page."
-    
   "**Related Entity Detailed**","Defines the list of the related entity fields displayed in the form that emerges once a
   user has clicked the link of a related entity record pn the *Edit* form."
 
