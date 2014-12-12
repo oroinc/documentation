@@ -115,7 +115,7 @@ You can enable attachments for the entity records and define respective limitati
   
   For example:
   
-  .. image:: ./img/entity_management/new_entity_general_mime_types
+  .. image:: ./img/entity_management/new_entity_general_mime_types.png
 
 
 .. _user-guide-entity-management-create-other:
