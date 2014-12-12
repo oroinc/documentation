@@ -27,14 +27,14 @@ Join the Translation Team
 1.2. Follow the link in the confirmation Email to activate you account
 
 2. Click `OroCRM < http://translate.orocrm.com>`_ link to offer translation for OroCRM or 
-  `Oro Platrom < http://translate.platform.orocrm.com/>`_ to offer translation for Oro Platform. 
+   `Oro Platrom < http://translate.platform.orocrm.com/>`_ to offer translation for Oro Platform. 
   
-  The project page will appear.
+   The project page will appear.
   
 3. Choose the language to which you want to translate.
 
 4. ‘“You must join the translators team to be able to participate in this project.”’ note will appear above the language 
-  list. Click the :guilabel:`Join`.
+   list. Click the :guilabel:`Join`.
 
 5. Request form will appear. Define why you want to join the translation team and click :guilabel:`Join` button. 
 
@@ -58,7 +58,7 @@ Propose Your Translations
 4. Choose the Oro bundle and file for which you want to translate. 
 
 5. Translate as described in the Crowdin tutorial at 
-  https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/
+   https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/
 
 
 .. _translations-added:
@@ -67,8 +67,8 @@ What Happens Next?
 ------------------
 
 1. After you have propose the translation, it will be queued for 
-  `proofreading < https://support.crowdin.com/for-translators/onlineworkbench/proofreading>`_
-  and can also be `voted <https://support.crowdin.com/for-translators/onlineworkbench/voting>`_ by other translator.
+   `proofreading < https://support.crowdin.com/for-translators/onlineworkbench/proofreading>`_
+   and can also be `voted <https://support.crowdin.com/for-translators/onlineworkbench/voting>`_ by other translator.
 
 2. If the translation was approved:
 
@@ -77,7 +77,7 @@ What Happens Next?
  - it will be moved to the end of the list on the translation page
  
 3. Approved translations are merged once a day. One the translation was approved, it will become available from the 
-  *System --> Configuration --> Language Settings* page.
+   *System --> Configuration --> Language Settings* page.
 
 
   .. _translations-language-settings:
