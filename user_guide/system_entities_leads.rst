@@ -44,7 +44,7 @@ The following fields are mandatory and **must** be defined:
   
   By default, the user creating the lead is chosen."
   "**Lead Name***","The name used to refer to the lead in the system."
-  "**Channel***","Any of active channels assigned the *"Lead"* entity. 
+  "**Channel***","Any of active channels assigned the *Lead* entity. 
 
   Details of the lead will be uploaded from the source of the channel.
   
