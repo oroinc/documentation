@@ -13,7 +13,7 @@ As soon as there is at least one :ref:`Channel <user-guide-channel-guide-create>
 - :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, import and export lead records and assign
   them different activities
 
-- Analyse details of the records with OroCRM :ref:`reports <user-guide-leads-reports>`
+- Analyse details of the lead records with OroCRM :ref:`reports <user-guide-leads-reports>`
 
 - Use leads in :ref:`workflows <user-guide-leads-workflows>`
 
