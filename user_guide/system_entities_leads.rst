@@ -94,7 +94,7 @@ From the \:ref:`Grid <user-guide-ui-components-grids>`\:
 - Get to the "*View*" page of the lead : |IcView| 
 
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
-  :ref:`*Export and Import Functionality* <user-guide-import>` guide. 
+  :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
 From the \:ref:`View page <user-guide-ui-components-view-pages>`\
 
@@ -129,7 +129,7 @@ OroCRM 1.4 comes with two ready-to-use reports related to the leads.
 *Leads by Date*
 ^^^^^^^^^^^^^^^
 
-This is a simple but useful report with which you can see how many leads were created at a specific date for 
+This is a simple but useful report with which you can see how many leads were created on a specific date for 
 all of your channels.
 
 To see the report go to *Reports and Segments --> Reports --> Leads --> Leads By Date*
@@ -138,9 +138,9 @@ It shows:
 
 - the date leads were created on 
 
-- the number of leads created on the date, and 
+- the number of the leads created on the date, and 
 
-- total amount of leads created
+- total amount of the leads created
 
 .. image:: ./img/leads/leads_report_by_date.png
 
@@ -158,7 +158,7 @@ Out of the box, the report shows:
 .. image:: ./img/leads/leads_report_by_state.png
 
 This report may be customized, and other new custom reports can be added. For more details on the ways to create and 
-customize the reports,  please see the :ref:`*Reports* <user-guide-reports>` guide.
+customize the reports,  please see the \:ref:`*Reports* <user-guide-reports>` guide\.
 
 .. _user-guide-leads-workflows:
 
