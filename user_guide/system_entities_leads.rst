@@ -58,7 +58,7 @@ The following fields are mandatory and **must** be defined:
 - **Source** drop-down contains tunable predefined list of possible lead sources, such as the website, direct mail, 
   partner, etc.
 
-- **Contact** and *B2B Customer* enable binding the lead created to records of corresponding 
+- **Contact** and **B2B Customer** enable binding the lead created to records of corresponding 
   entities in the system.
   
   You can choose the record from the list (|Bdropdown|) or from the grid (|BGotoPage|), as well as create a new record
