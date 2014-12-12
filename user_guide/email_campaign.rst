@@ -117,5 +117,5 @@ The following actions are available for a campaign from the \:ref:`grid <user-gu
    :align: middle
    
 .. |email_campaign_schedule| image:: ./img/marketing/email_campaign_schedule.png
-   :height: 30%
+   :scale: 40%
 
