@@ -26,8 +26,8 @@ Join the Translation Team
 
 1.2. Follow the link in the confirmation Email to activate you account
 
-2. Click `OroCRM < http://translate.orocrm.com>`_ link to offer translation for OroCRM or 
-   `Oro Platrom < http://translate.platform.orocrm.com>`_ to offer translation for Oro Platform. 
+2. Click `OroCRM <http://translate.orocrm.com>`_ link to offer translation for OroCRM or 
+   `Oro Platrom <http://translate.platform.orocrm.com>`_ to offer translation for Oro Platform. 
   
    The project page will appear.
   
@@ -67,7 +67,7 @@ What Happens Next?
 ------------------
 
 1. After you have propose the translation, it will be queued for 
-   `proofreading < https://support.crowdin.com/for-translators/onlineworkbench/proofreading>`_
+   `proofreading <https://support.crowdin.com/for-translators/onlineworkbench/proofreading>`_
    and can also be `voted <https://support.crowdin.com/for-translators/onlineworkbench/voting>`_ by other translator.
 
 2. If the translation was approved:
