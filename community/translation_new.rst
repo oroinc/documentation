@@ -10,10 +10,10 @@ To take part in the localization, you need to:
 
 1. :ref:`Join <translations-joint-the-team>` the translation team.
 
-2. :ref:`Propose <translations-propose-translation> your translations.
+2. :ref:`Propose <translations-propose-translation>` your translations.
 
 3. Wait and :ref:`see your translations added<translations-added>` to the system and 
-:ref:`apply <translations-language-settings>` it or :ref:`contact <translations-contact> the Oro team.
+:ref:`apply <translations-language-settings>` it or :ref:`contact <translations-contact>` the Oro team.
 
 .. _translations-joint-the-team:
 
