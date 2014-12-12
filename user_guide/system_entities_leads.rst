@@ -3,18 +3,17 @@
 Channel Entities. Leads.
 ========================
 
-Leads entity defines common rules and setting applied to the Lead records ("leads") in OroCRM. 
-The Lead records represent people or businesses the have initial interest, authority and budget to take part in your 
-commercial or social activity. Intentions thereof may be yet unclear and often not backed up with any arrangements. 
+The Lead records ("leads") represent people or businesses the have initial interest, authority and budget to take part in your 
+commercial or social activity but whose intentions are not yet backed up with any arrangements. 
 
-As soon as there is at least one :ref:`Channel <user-guide-channel-guide-create>` assigned a *Lead* entity, you can:
+As soon as there is at least one :ref:`Channel <user-guide-channel-guide-create>` assigned the *Lead* entity, you can:
 
 - :ref:`Create <user-guide-leads-create>` new leads
 
-- :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, import and export leads and assign different 
-  activities to them
+- :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, import and export lead records and assign
+  them different activities
 
-- Analyse lead details with :ref:`reports <user-guide-leads-reports>`
+- Analyse details of the records with OroCRM :ref:`reports <user-guide-leads-reports>`
 
 - Use leads in :ref:`workflows <user-guide-leads-workflows>`
 
@@ -24,7 +23,7 @@ As soon as there is at least one :ref:`Channel <user-guide-channel-guide-create>
 Create Leads from the UI
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Click :guilabel:`Create Lead` button. 
+- Click :guilabel:`Create Lead` button
 
 - The *"Create Lead"* form will appear:
 
@@ -33,11 +32,11 @@ Create Leads from the UI
 The following fields are mandatory and **must** be defined:
 
 - **Owner***: limits the list of users that can manage the lead to its owner and users, whose roles allow managing leads 
-  assigned to the owner(e.g. members of the same business unit, system administrator, etc.).
+  assigned to the owner (e.g. members of the same business unit, system administrator, etc.).
   
-  You can choose the owner from the list (|Bdropdown|) or from the grid (|BGotoPage|)
+  You can choose the owner from the list (|Bdropdown|) or from the grid (|BGotoPage|).
   
-  Click |BCrLOwnerClear| button to clear the field
+  Click |BCrLOwnerClear| button to clear the field.
   
   By default, the user creating the lead is chosen."
 
@@ -53,7 +52,7 @@ The following fields are mandatory and **must** be defined:
        
 **Optional fields** keep additional information and may be left empty:
 
-- If a field refers to a number (e.g. *"Number of Employees"*), an integer value shall be filled (if any).
+- If a field refers to a number (e.g. *"Number of Employees"*), an integer value shall be used.
 
 - **Source** drop-down contains tunable predefined list of possible lead sources, such as the website, direct mail, 
   partner, etc.
@@ -69,7 +68,7 @@ The following fields are mandatory and **must** be defined:
   
 **Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
 
-To create a custom field go to *System --> Entities --> Entity Management --> Lead* and click :guilabel:`Create Field`
+To create a custom field, go to *System --> Entities --> Entity Management --> Lead* and click :guilabel:`Create Field`
 button.
 
 Once all the necessary fields have been defined, click the button in the right top corner of the page to save the lead
