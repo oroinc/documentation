@@ -18,7 +18,7 @@ The articles describes the ways to :ref:`create <user-guide-email-templates-crea
 Creating an Email Template
 ---------------------------
 
-1. Go to *System --> Emails --> Templates* page and click :guilabel:`Create Template` button in the top right corner to 
+1. Go to *System → Emails → Templates* page and click :guilabel:`Create Template` button in the top right corner to 
    get to the *"Create Template"* form.
    
   |email_template_create|

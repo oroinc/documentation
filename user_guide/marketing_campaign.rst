@@ -17,7 +17,7 @@ The articles describes the ways to :ref:`create <user-guide-marketing-campaigns-
 Creating a Campaign
 --------------------
 
-1. Go to *Marketing --> Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
+1. Go to *Marketing → Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
    to the *"Create Campaign"* form.
    
 .. image:: ./img/marketing/marketing_campaign_create.png
