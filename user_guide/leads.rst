@@ -69,7 +69,7 @@ The following fields are mandatory and **must** be defined:
   
 **Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
 
-To create a custom field, go to *System --> Entities --> Entity Management --> Lead* and click :guilabel:`Create Field`
+To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
 button.
 
 Once all the necessary fields have been defined, click the button in the right top corner of the page to save the lead
@@ -121,7 +121,7 @@ OroCRM 1.4 comes with two ready-to-use reports related to the leads.
 This is a simple but useful report, with which you can see how many leads were created on a specific date for 
 all of your channels.
 
-To see the report go to *Reports and Segments --> Reports --> Leads --> Leads By Date*
+To see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
 
 It shows:
 
