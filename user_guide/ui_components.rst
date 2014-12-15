@@ -229,6 +229,7 @@ For example, the *"View"* page of an account record contains its general details
     
     Please see the *Entity Management* guide for more details. 
 
+.. _user-guide-ui-components-view-page-actions:
 
 *"View" Page Action Buttons*
 ----------------------------
@@ -247,6 +248,18 @@ If there are more than four actions available for record, they will be collected
 
 
 .. image:: ./img/ui_components/view_action_buttons_2.png
+
+The following actions can be enabled in the current OroCRm version:
+
+- Add a note to the lead record: the note added will be saved and displayed when the record is approached
+
+- Send Email: Email template pre-filled with lead's details will appear
+
+- Log Call: the call log form pre-filled with the lead's details will emerge
+
+- Add Task: a task related to the lead can be assigned to the user
+
+- Add Event: an event can be added for the lead
 
 
 .. _user-guide-ui-components-edit-forms:
