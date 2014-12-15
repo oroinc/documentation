@@ -10,6 +10,7 @@ End user oriented documentation that explains how to administer and configure ap
     reports
     channel_guide
     export_import
+    entity_management
 
 TODO List
 ---------
