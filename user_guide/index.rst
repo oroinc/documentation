@@ -7,6 +7,7 @@ End user oriented documentation that explains how to administer and configure ap
     :maxdepth: 2
 
     workflow_management
+    magento_channel_integration
     reports
     channel_guide
     export_import
