@@ -1,60 +1,66 @@
 How to Replace Inline-Javascript with a Component
 =================================================
 
-Page Component is a controller used not for a whole page of an application,
-but for its part with a certain functionality. A Page Component is responsible for the following:
+Embedding Functionality in a Page
+---------------------------------
+
+Commonly, inline-JavaScript is used to bind some interactive functionality into a particular markup
+fragment:
+
+.. code-block:: html
+
+    <select id="my-select">
+        <option value="foo">Foo</option>
+        <option value="bar">Bar</option>
+    </select>
+    <script type="text/javascript">
+        require(['jquery', 'jquery.select2'], function ($) {
+            $('#my-select').select2({
+                placeholder: 'Select one ...',
+                allowClear: true
+            });
+        });
+    </script>
+
+The inline-script is often larger than in the example above and may also make use of inlined Twig
+code. It is impossible to reuse those code, to extend it or to test it. Additionally, it's hard to
+maintain it.
+
+Furthermore, the lifecycle of its instances is not defined and it is not specified how the function
+will be disabled when the control is not used anymore. Instead, one has to rely on jQuery to
+properly clean the memory. Most of the time, jQuery does this fine. However, there's no absolute
+guarantee that jQuery always handles this task successfully without the developer's help.
+
+The solution for the problems explained above is a Page Component.
+
+The Page Component
+------------------
+
+A Page Component is a controller that is not used for a whole page of an application, but will be
+used to implement certain parts of its functionality. A Page Component is responsible for the
+following things:
 
  * creating related views, collections, models and even sub-components
  * handling environment events
  * disposing obsolete instances
 
-.. note::
+.. seealso::
 
-    You can find more information on the Page Component in: :doc:`/book/frontend_architecture` and
-    `Page Component`_.
+    You can find more information about the Page Component in the
+    :doc:`"Frontend Architecture chapter" </book/frontend_architecture>` and in the
+    `Page Component documentation`_.
 
+Creating a Page Component Module
+--------------------------------
 
-Common Problems
----------------
-
-Commonly, inline-javascript is used to bind some interactive functionalities
-into a particular markup fragment.
-
-.. code-block:: html
-
- <select id="my-select">
-    <option value="foo">Foo</option>
-    <option value="bar">Bar</option>
- </select>
- <script type="text/javascript">
-     require(['jquery', 'jquery.select2'], function ($) {
-        $('#my-select').select2({
-            placeholder: 'Select one ...',
-            allowClear: true
-        });
-     });
- </script>
-
-The inline-script is often much bigger than in the example above and may have 
-some twig-code inside. This kind of code is impossible to reuse, to extend or to test,
-and hard to maintain.
-
-Beside the problems listed above, there is a much bigger 
-issue:
-Lifecycle of its instances is not defined and it is not specified how they will be disposed, when 
-the control is not in used anymore. We have to rely on jQuery to clean the memory. And most 
-of the time, jQuery does it fine. However, there's no 100% guarantee that jQuery can always 
-handle this successfully without our help. Memory leak issue is critical for
-Web Applications.
-
-Create Page Component Module
-----------------------------
-As a solution, we can create a component that defines lifecycle for Select2 instance.
+A Page Component is a JavaScript object based on the ``BaseComponent``. The inline-JavaScript from
+the introduction will be replaced by a new ``Select2Component``. Start with creating a
+``select2-component.js`` file that lives in the ``Resources/public/js/app/components`` directory of
+your bundle.
 
 .. code-block:: javascript
 
-    // src/Acme/UIBundle/Resources/public/js/app/components/select2-component.js
-
+    // src/Acme/DemoBundle/Resources/public/js/app/components/select2-component.js
     define(function (require) {
         'use strict';
 
@@ -94,53 +100,54 @@ As a solution, we can create a component that defines lifecycle for Select2 inst
         return Select2Component;
     });
 
+This code can be tested, extended and reused. What is even more important is that the component
+provides two methods ``initialize()`` and ``dispose()`` which restrict the existence of the
+``select2`` instance. Thus, it defines its own lifesycle and therefore minimizes the risk of a
+memory leak.
 
-Now we have the code that can be tested, extended and reused. What is even
-more important, the component has ``initialize`` and ``dispose`` methods that 
-restrict existence of the select2 instance, and thus define its lifesycle and
-minimize the risk of a memory leak.
+Declaring a Page Component in HTML
+----------------------------------
 
-Declare Page Component in HTML
-------------------------------
-
-At the next step, we have to declare the component related to the HTMLElement:
+Next, the HTML code of the related template has to be modified to tell the ``Layout`` which
+HTML elements are related to the ``Select2Component``:
 
 .. code-block:: html+jinja
 
- {% set options = {
-    placeholder: 'Select one ...',
-    allowClear: true
- } %}
+    {% set options = {
+        placeholder: 'Select one ...',
+        allowClear: true
+    } %}
 
- {# assign the component module name and initialization options to HTML #}
- <select
-    data-page-component-module="acmeui/js/app/components/select2-component"
-    data-page-component-options="{{ options|json_encode }}">
-    <option value="foo">Foo</option>
-    <option value="bar">Bar</option>
- </select>
+    {# assign the component module name and initialization options to HTML #}
+    <select
+        data-page-component-module="acmedemo/js/app/components/select2-component"
+        data-page-component-options="{{ options|json_encode }}">
+        <option value="foo">Foo</option>
+        <option value="bar">Bar</option>
+    </select>
 
-To do so, we have defined the two attributes:
+The ``Layout`` uses two attributes to resolve the Component module associated with an HTML element
+when ``layout:init`` is executed by the `PageController`_:
 
- * ``data-page-component-module`` -- name of the module
- * ``data-page-component-options`` -- safe JSON-string with configuration options
+``data-page-component-module``
+    The name of the module
+``data-page-component-options``
+    A JSON encoded string containing module configuration options
 
-Once this HTML gets into the document, PageController will execute ``layout:init``
-handler and the component will be initialized.
+Once this HTML code is injected into the document, the ``PageController`` will execute the
+``layout:init`` handler and the component will be initialized.
 
-Use View Component
-------------------
+Using the View Component
+------------------------
 
-The problem looks solved. But there's still one thing that we can improve.
-In our component (that performs the role of a controller) we work with a DOM-element
-(jQuery objects) directly. It's better to move such activities to a View instance.
-
-Let's create a Select2View.
+The code is now reusable. Though it can be improved by separating business logic from the view
+layer. Therefore, replace the ``Select2Component`` with a ``Select2View`` class in a file named
+``select2-view.js`` that lives in the ``Resources/public/js/app/views`` directory of your bundle
+and that extends the ``BaseView`` class:
 
 .. code-block:: javascript
 
-    // src/Acme/UIBundle/Resources/public/js/app/views/select2-view.js
-
+    // src/Acme/DemoBundle/Resources/public/js/app/views/select2-view.js
     define(function (require) {
         'use strict';
 
@@ -175,76 +182,36 @@ Let's create a Select2View.
         return Select2View;
     });
 
-It's pretty similar to the component that we've created before but the view is
-a much more suitable place for it.
+This looks pretty much like the initially created ``Select2Component`` except that you don't have
+to deal with retrieving the associated HTML element and that you don't have to parse the options.
+This is done for you by the ``ViewComponent``.
 
-However, we still need the component to instantiate our ``Select2View``. For this
-purpose already have the ``ViewComponent`` that we have created to instantiate a view for the
-HTMLElement.
-
-To specify what view we want to instantiate for the HTMLElement, add the module name of view 
-to the init-options of the controller ``'acmeui/js/app/views/select2-view'`` and declare
-``'oroui/js/app/components/view-component'`` as a page-component-module for the HTMLElement.
+However, you still need to tell the component to instantiate your ``Select2View``. For this purpose
+the Oro Platform ships with a ``ViewComponent`` that instantiates views for HTML elements. To make
+use of the ``ViewComponent``, replace the value of ``data-page-component-module`` attribute with
+the ``oroui/js/app/components/view-component`` and use the ``view`` option to point to your new
+``Select2View``:
 
 .. code-block:: html+jinja
 
- {% set options = {
-    view: 'acmeui/js/app/views/select2-view',
-    placeholder: 'Select one ...',
-    allowClear: true
- } %}
+    {% set options = {
+        view: 'acmedemo/js/app/views/select2-view',
+        placeholder: 'Select one ...',
+        allowClear: true
+    } %}
 
- {# assign the component module name and initialization options to the HTML #}
- <select
-    data-page-component-module="oroui/js/app/components/view-component"
-    data-page-component-options="{{ options|json_encode }}">
-    <option value="foo">Foo</option>
-    <option value="bar">Bar</option>
- </select>
+    {# assign the component module name and initialization options to the HTML #}
+    <select
+        data-page-component-module="oroui/js/app/components/view-component"
+        data-page-component-options="{{ options|json_encode }}">
+        <option value="foo">Foo</option>
+        <option value="bar">Bar</option>
+    </select>
 
-Here is how the ``ViewComponent`` is implemented:
-
-.. code-block:: javascript
-
-    // 'oroui/js/app/components/view-component' module
-
-    define(function (require) {
-        'use strict';
-
-        var ViewComponent,
-            _ = require('underscore'),
-            tools = require('oroui/js/tools'),
-            BaseComponent = require('oroui/js/app/components/base/component');
-
-        /**
-         * Creates a view instance from the module defined with the 'view' 
-         * option and binds it with the _sourceElement
-         */
-        ViewComponent = BaseComponent.extend({
-            /**
-             * @constructor
-             * @param {Object} options
-             */
-            initialize: function (options) {
-                this._deferredInit();
-                tools.loadModules(options.view, function (View) {
-                    var viewOptions = _.extend(
-                            _.omit(options, ['_sourceElement', 'view']),
-                            { el: options._sourceElement }
-                        );
-                    this.view = new View(viewOptions);
-                    this._resolveDeferredInit();
-                }, this);
-            }
-        });
-
-        return ViewComponent;
-    });
-
-The ``ViewComponent`` loads required module, fetches ``view`` and ``_sourceElement``
-from options and instantiates the View instance. This View instance is attached to the
-component instance. Once the component gets disposed, it automatically invokes
-dispose methods of all the attached instances (if such a method is defined for them).
+The ``ViewComponent`` loads the required module, fetches the ``view`` and the ``_sourceElement``
+from the options and instantiates the View instance. This View instance is attached to the
+component instance. Once the component gets disposed, it automatically invokes the ``dispose()``
+methods of all attached instances (if the ``dispose()`` method was defined for the instance).
 
 Please note that as we instantiate the view in the module load callback,
 we deal with asynchronous process. Therefore, the component is not ready for use right after
@@ -257,29 +224,44 @@ super controller gets informed that the component is initialized.
 Configure RequireJS
 -------------------
 
-And at the end we need to update the RequireJS configuration.
+Finally, you need to make your new classes known to RequireJS:
 
 .. code-block:: yaml
 
-    # src/Acme/UIBundle/Resources/config/requirejs.yml
-
+    # src/Acme/DemoBundle/Resources/config/requirejs.yml
     config:
         paths:
-            'acmeui/js/app/views/select2-view': 'bundles/acmeui/js/app/views/select2-view.js'
-            # or
-            'acmeui/js/app/components/select2-component': 'bundles/acmeui/js/app/components/select2-component.js'
+            # for the Select2View class
+            'acmedemo/js/app/views/select2-view': 'bundles/acmeui/js/app/views/select2-view.js'
+            # for the Select2Component class
+            'acmedemo/js/app/components/select2-component': 'bundles/acmeui/js/app/components/select2-component.js'
 
-Whether you have created your own component or a view (that is instantiated by the
-ViewComponent), you have to add the module name into RequireJS configuration, so it 
-can trace this module and include it into the build file.
+Whether you have created your own component or a view (that is instantiated by the ViewComponent),
+you'll have to add the module name into RequireJS configuration, so that it can trace this module
+and include it into the build file.
 
 .. note::
 
     To see your component in action, you need to do several more things:
 
-     - Clear Symfony application cache ``php app/console cache:clear`` to update the cache and the RequireJS config in it.
-     - Reinstall assets ``php app/console assets:install`` if your assets are not installed as symlink's.
-     - Rebuild js ``php app/console oro:requirejs:build`` if you are in the production mode.
+    - Clear the Symfony application cache to update the cache and the included RequireJS config:
 
-.. _`Page Component`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md
+      .. code-block:: bash
+
+        $ php app/console cache:clear
+
+    - Reinstall your assets if you don't deploy them via symlinks:
+
+      .. code-block:: bash
+
+          $ php app/console assets:install
+
+    - In production mode, you also have to rebuild the JavaScript code:
+
+      .. code-block:: bash
+
+          $ php app/console oro:requirejs:build
+
+.. _`Page Component documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md
+.. _`PageController`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/controllers/page-controller.js
 .. _`Chaplin.Composer`: http://docs.chaplinjs.org/chaplin.composer.html
