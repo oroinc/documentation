@@ -118,7 +118,7 @@ Please don't hesitate to contact us from the Crowdin if:
 
 - your translation has been marked as approved for over one day and has not appeared at the site
 
-- your translation is still in "not approved" status (there is a green dot near it in the list) for two long
+- your translation is still in "not approved" status (there is a green dot near it in the list) for too long
 
 - you want to become a proofreader for a certain language
 
