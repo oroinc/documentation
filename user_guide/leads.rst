@@ -104,7 +104,7 @@ From the \:ref:`View page <user-guide-ui-components-view-pages>`\
 
 - Delete the lead from the system 
 
-The rest of \ref:`actions <user-guide-ui-components-view-page-actions>`\ available depends on the system settings 
+The rest of the \ref:`actions <user-guide-ui-components-view-page-actions>`\ available depend on the system settings 
 defined in the \ref:`Communication &  Collaboration <user-guide-entity-management-create-commun-collab>` section of the 
 "Lead" entity
       
