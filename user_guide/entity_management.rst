@@ -6,10 +6,9 @@ Entity Management
 Entity is a group of rules and setting used to create and process all the records of the system that belong thereto.
 
 The OroCRM comes with a number of out of the box entities and can be populated with necessary entities from the 
-back-end. Such entities are called, System entities. 
+back-end.
 However, sometimes there appears a need to create additional entities from the UI. They are called Custom entities.
-In this article you can learn how to :ref:`create <user-guide-entity-management-create>` custom entities and 
-:ref:`edit <user-guide-entity-management-edit>` entities from the UI.
+In this article you can learn how to create custom entities and manage entities from the UI.
 
 
 .. _user-guide-entity-management-create:
@@ -34,7 +33,7 @@ In order to create an Entity:
   
 6. Create at least one :ref:`field <user-guide-entity-management-create-fields>` for the entity.
 
-7. :ref:`Update the Schema <user-guide-entity-management-create-update>`.
+7. :ref:`Update <user-guide-entity-management-create-update>` the schema.
 
 
 .. _user-guide-entity-management-create-general-information:
@@ -42,19 +41,13 @@ In order to create an Entity:
 General Information
 ^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management/new_entity_general_information.png
-
 The following two fields are mandatory and **must** be defined:
 
-.. csv-table:: Mandatory Entity Fields
+.. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
 
   "**Name***","Name used to refer to the entity in the system.
-
-  The field cannot be empty, shall consist of Latin alphabet letters, may also contain numbers and symbols and shall
-  not be shorter than 5 symbols. 
-  
   Name field cannot be a `reserved sql word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_
   
   .. caution::
@@ -70,7 +63,7 @@ The following two fields are mandatory and **must** be defined:
     
 The following general entity details are optional and may be specified:
 
-.. csv-table:: Optional Entity Fields
+.. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
 
@@ -90,9 +83,6 @@ The section contains check-boxes for all the activities available and *Enable No
 .. image:: ./img/entity_management/new_entity_communication_collaboration.png
 
 - Check the activities that you want to enable for the entity.
-  
-  For example, if you check the *Emails* box, it will be possible to create an Email pre-filled with the relevant record
-  details from the page of the entity record.
 
 - Choose *Yes* in the drop-down and it will be possible to add free text *Notes* to the entity records.
 
@@ -108,28 +98,25 @@ You can enable attachments for the entity records and define relevant limitation
 
 - Choose *Yes* in the drop-down to enable attachments.
 
-- Define the upper limit of an attachment size, if necessary. No attachments bigger than specified will be added to
-  instances of the entity.
+- Define the upper limit of an attachment size, if necessary. No larger attachments will be added.
 
-- Limit the list of supported mime types if necessary. Define the list of mime types supported in the field, add each 
-  new type on a new line. If no mime type is defined, the list defined in the *System → Configuration → Upload Settings* 
-  will be used.
+- Limit the list of supported mime types if necessary. If no mime type is defined, the list defined in 
+  the *System → Configuration → Upload Settings* will be used. 
   
-  For example:
+  Define the list of mime types supported in the field, add each new type on a new line. For example:
   
-  .. image:: ./img/entity_management/new_entity_general_mime_types.png
+.. image:: ./img/entity_management/new_entity_general_mime_types.png
 
+   
 
 .. _user-guide-entity-management-create-other:
 
 Other Settings
 ^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management/new_entity_other.png
-
 The following three fields must be specified for every entity created:
 
-.. csv-table:: Mandatory Entity Fields
+.. csv-table::
   :header: "Name","Description"
   :widths: 10, 30
 
@@ -137,36 +124,25 @@ The following three fields must be specified for every entity created:
   
   - None: no authorization is required to see and process the entity.
   
-  - User: a user must be defined as an *Owner* for each entity record. Subject to the Roles 
-    settings (*System → User Management → Roles/Entity*), only this user or all the users of a business 
-    unit/division/organization/system the user belongs to will be able to view and process the entity records.
-    
-  - Business Unit: a business unit must be defined as an *Owner* for each entity record. Subject to the Roles settings, 
-    only Users assigned to this business unit or to the division/organization/system this business unit belongs to will 
-    be able to view and process the entity records.
-    
-  - Organization: an organisation must be defined as an *Owner* for each entity record. Subject to the Roles settings, 
-    only users assigned to this organization or to the system the organization belongs to will be able to view and 
-    process the entity records.
+  - User/Business Unit/Organization: defines the level at which an Owner can be defined.
     
   "
   "**Auditable**","If enabled, the actions performed with the entity records will be recorded and can be 
   viewed with System → Audit functionality.
-    
-  Choose *Yes* in the drop-down menu to enable the functionality." 
+  
+  " 
   "**Workflow Step in Grid**","
 
-  - Show: if enabled and there is a workflow defined for the entity, the workflow *Step* will be displayed on the entity
+  - Show: if there is a workflow defined for the entity, the workflow *Step* will be displayed on the entity records
     *View* page
 
-  
   - Hide: no steps will be shown, even if there is a workflow defined for the entity."
   
 
 .. _user-guide-entity-management-create-fields:
   
-*Adding Fields to an Entity*
------------------------------
+Add Fields to an Entity
+-----------------------
 
 Entity with no fields is meaningless and will not be processed by the system. Once an entity has been created, you will
 get to the *View* page of the new entity. In order to define a new field you need to:
@@ -174,8 +150,6 @@ get to the *View* page of the new entity. In order to define a new field you nee
 - Click :guilabel:`Create Field` button. 
 
 - Define the general information in the emerged page.
-
-.. image:: ./img/entity_management/new_entity_field.png
 
 The following values **must** be specified:
 
@@ -187,8 +161,7 @@ The following values **must** be specified:
   
   The *Field Name* values shall be unique within one entity. 
   
-  The *Field Name* cannot be empty, its value should contain only lower case alphabetic symbols and may also contain 
-  underscore and numbers and cannot be shorter than two symbols. It cannot be a `reserved sql 
+  The *Field Name* cannot be a `reserved sql 
   word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_ ,nor a
   `reserved php word <http://php.net/manual/en/reserved.keywords.php>`_"
   "**Type***","Choose the field type from a drop-down."
@@ -209,11 +182,9 @@ A bigger form will appear where you can:
 *Field General Information*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management/new_entity_field_general.png
-
 The following fields are mandatory and **must** be defined
 
-.. csv-table:: Mandatory Fields Defined for a Field Created
+.. csv-table::
   :header: "Field Defined","Description"
   :widths: 10, 30
 
@@ -222,16 +193,16 @@ The following fields are mandatory and **must** be defined
   
   By default filled with the *Name* value."
 
-There are also optional fields in the section that can be defined for some of the fields subject to their type:
+There are also optional fields in the section that can be defined for some of the fields:
 
 .. csv-table::
   :header: "Field","Type","Description"
   :widths: 20,10,30
 
-  "Description","Any","Information to help you or other users understand the purpose and specifics of the created field in 
-  future."  
+  "Description","Any","Information to help you or other users understand the purpose and specifics of the created field 
+  in the future."  
   "Length","String","Any number from 1 to 255 can be used to limit the length of string properties"
-  "Precision","Decimal","Maximum number of digits that are present in the number"
+  "Precision","Decimal","Maximum number of digits"
   "Scale","Decimal","Maximum number of decimal places"
 
   
@@ -240,10 +211,8 @@ There are also optional fields in the section that can be defined for some of th
 *Export and Import Settings*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ./img/entity_management/new_entity_exportimport.png
-
-Oro Platform provides for export and import of its entity details from and into .csv tables. In the section you can
-define the rules applied to the specific field in the course of import and export.
+Oro Platform provides for export and import of its entity record details from and into .csv tables. In the section you 
+can define the rules applied to the specific field in the course of import and export.
 
 .. csv-table:: Import and Export Settings
   :header: "Field","Description"
@@ -251,18 +220,20 @@ define the rules applied to the specific field in the course of import and expor
 
   "**Column Name**","Name of the .csv table column that corresponds to the field (if left blank, the field label will be
   used for export"
-  "**Column Position**","position of the .csv table column that corresponds to the field"
+  "**Column Position**","Position of the column that corresponds to the field in the .csv table"
   "**Use as Identity Field**","If *Yes* is chosen, the field will be used in the course of import to define if:
+ 
   - a new item is created (if there are no items with the ID field value equal to the imported) or
-  - an existing item is updated (the item with ID field value equal to the imported one's)"
+
+  - an existing item is updated (the item with ID field value equal to the imported one's)
+ 
+  "
   "**Exclude Column**", "If chosen, the field will will be omitted when creating a .csv file"
   
 .. _user-guide-entity-management-create-fields-other:
 
 Other Field Settings
 ^^^^^^^^^^^^^^^^^^^^
-
-.. image:: ./img/entity_management/new_entity_field_other.png
 
 The following Yes/No options can be defined for each field
 
@@ -326,8 +297,6 @@ Relation Specific Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 The following settings shall be defined for *One to Many* and *Many to Many* Relation Settings:
 
-.. image:: ./img/entity_management/new_entity_relation_to_many.png
-
 .. csv-table:: 
   :header: "Option","Description"
   :widths: 15,30
@@ -340,8 +309,6 @@ The following settings shall be defined for *One to Many* and *Many to Many* Rel
   user has clicked the link of a related entity record pn the *Edit* form."
 
 The following settings shall be defined for *Many to One* Relation Settings:
-
-.. image:: ./img/entity_management/new_entity_relation_to_one.png
 
 .. csv-table::
   :header: "Field","Description"
@@ -378,7 +345,7 @@ Web UI.
 Entities Grid or What We Can Edit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Let's go to the System → Entities page and take a thorough look at the Entities grid:
+The following table describes columns of the Entities grid and how they effect ability to edit the entity:
 
 .. csv-table:: Mandatory Entity Fields
   :header: "Column","What's in it","Effect ability to edit?"
@@ -397,7 +364,7 @@ Let's go to the System → Entities page and take a thorough look at the Entitie
   "**AUDITABLE**","Defines if the actions performed on the entity records shall be logged","No"
   "**OWNERSHIP TYPE**","Defines the level at which permissions will be set for instances of the entity as
   described in the Create Entities guide :ref:section`user-guide-entity-management-create-other-ownership-type`","Not 
-  directly, however, you need to have permissions to edit the entity (See System --> User Management --> Roles)"
+  directly, however, you need to have permissions to edit the entity (See System → User Management → Roles)"
   "**NAME** and **MODULE**","Define the name used to refer to the entity at the back-end. Comes handy if there is a 
   need to change configuration or otherways find the entity in the code","No"
   "**UPDATED AT**","The date and time of the last schema update for the entity","No"
@@ -418,7 +385,7 @@ This way:
   The list of fields on the Edit form is the same as when you :ref:`Create an 
   entity <user-guide-entity-management-create>`
   
-- Only for the entities with "IS EXTEND" = "Yes" you can `create <user-guide-entity-management-create-fields>` new
+- Only for the entities with "IS EXTEND" = "Yes" you can :ref:`create <user-guide-entity-management-create-fields>` new
   fields.
 
   
@@ -429,7 +396,7 @@ When you go to the entity view page, there is a grid of fields below. Just as en
 Custom TYPE and have different SHEMA STATUS.
 
 All the properties of Custom fields but their name and type may be edited. The property meanings are the same as when 
-you `create fields <user-guide-entity-management-create-fields>`.
+you :ref:`create a field <user-guide-entity-management-create-fields>`.
 
 The list of properties editable for System fields depends on configuration and is created in a way reasonable and safe 
 for the system performance and operation.
