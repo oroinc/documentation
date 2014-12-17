@@ -2,32 +2,19 @@
 OroCRM UI Elements
 ==================
 
-OroCRM is featured by a user-friendly and consistent GUI. This article describes the system 
-:ref:`menu items <user-guide-ui-components-menu-items>`, :ref:`grids <user-guide-ui-components-grids>`,
-:ref:`create <user-guide-ui-components-create-pages>` and :ref:`edit <user-guide-ui-components-edit-forms>` forms, 
-and :ref:`view <user-guide-ui-components-view-pages>` pages.
+OroCRM is featured by a user-friendly and consistent GUI. This article describes basic UI elements and controls used 
+throughout the system.
 
 
 .. _user-guide-ui-components-menu-items:
 
 Menu Items
 ----------
-Menu in OroCRM 
-Entity Records Grid
-Entity Record Create/Edit Form
-Entity Record View Page
-.. csv-table:: **The top menu of the current OroCRM is divided into seven basic sections:**
-  :header: "**Name**","**Description**"
-  :widths: 10, 30
 
-  "**Dashboard**","Contains pre-implemented widgets such as Quick Launchpad panel, lists of recent 
-  Emails and calls, recently accessed accounts and contacts, calendar and basic report charts."
-  "**Customers**","Contains links to accounts, contacts and customer records."
-  "**Sales**","Contains links to the entities assigned to channels."  
-  "**Activities**","Contains links to call logs, Emails, contact request details and other activities."
-  "**Marketing**","Contains links to marketing-related entities."
-  "**Reports&Segments**","Contains links to reports and their settings."
-  "**System**","Contains links to the system settings."
+OroCRM has a multi-level menu. 
+The first level defines a set of menu items included (e.g. Marketing, Sales, System etc.). 
+The next level may contain some sub-menus or is clickable and will refer you to the relevant page in the system.
+(For example, if you go to Sales → Leads and click "Leads", the Leads grid will emerge.)
 
 .. note::
   
@@ -37,11 +24,10 @@ Entity Record View Page
     
 .. _user-guide-ui-components-grids:
     
-Grids
------
+Entity Records Grids
+--------------------
 
-Once you have clicked a link in the menu, a correspondent grid will appear. The grid contains all the records of the 
-chosen entity. 
+Initially, a grid contains all the records of the chosen entity. 
 For example, if you go to *"Customers"* and click *"Contacts"*, you will see the grid of all the Contact records 
 available:
 
@@ -57,82 +43,13 @@ available:
     
     Please see the *Entity Management* guide for more details. 
     
+
+.. _user-guide-ui-components-grid-filters:
     
-*Grid Actions*
---------------
-
-
-.. _user-guide-ui-components-grid-action-buttons:
-
-Action Buttons
-^^^^^^^^^^^^^^
-
-Action buttons can trigger actions related to the grid only or to the entity in general.
-
-.. image:: ./img/ui_components/grid_action_buttons.png
-
-- Action buttons related to the grid are displayed right above the grid. 
-
-  In the example (1), you can scroll pages, refresh the grid details and reset the grid (clear all the filters), 
-  as well as export the details shown in the grid as a .csv file.
-  
-- Action buttons that trigger actions related to the entity in general are displayed in the top right corner of the grid 
-  page.
-
-  In the example (2), you can export and import account records, as well as create a new account.
-
-An arrow on the button means that some sub-actions are available. For example, you can start the import and download the
-data template from the :guilabel:`Import` button:
-
-.. image:: ./img/ui_components/grid_action_subbuttons.png
-
-
-*Export Grid*
-^^^^^^^^^^^^^
-
-All the data displayed in a grid can be exported as a .csv table. Click :guilabel:`Export Grid` button and choose "CSV".
-
-.. image:: ./img/ui_components/export_grid.png
-
-The file will be saved subject to your browser settings.
-
-
-.. _user-guide-ui-components-grid-action-icons:
-
-Action Icons
+Grid Filters
 ^^^^^^^^^^^^
 
-Last column of any grid in the system contains icons of actions available for the grid item. For example, any contact 
-record can be viewed, removed or deleted:
-
-.. image:: ./img/ui_components/action_icons.png
-
-.. note::
-
-    Please note that different action icons may be shown for different items of the same grid, subject to the system 
-    settings. Specific items of every grid are described in the correspondent guides.
-
-
-.. _user-guide-ui-components-grid-bulk-action:
-
-Bulk Actions
-^^^^^^^^^^^^
-
-|IcBulk| icon in the top right corner of the grid aggregates bulk actions available for the entity records. 
-
-Check the entity records, click the arrow and choose the action to perform.
-
-In the example, the first three contacts will be deleted from the grid:
-
-.. image:: ./img/ui_components/grid_bulk_actions.png
-
-
-.. _user-guide-ui-components-filters:
-
-*Filters*    
----------
-
-You can apply filters to run bulk actions or to simplify the search. 
+You can apply filters to choose specific items to be shown in the grid. 
 
 Click the arrow on a filter to choose required values. Available value setting depend on the field type. If more than 
 one filter is active, only the records that meet requirements of all the filters are displayed.
@@ -148,11 +65,66 @@ start with 123 are displayed:
     fields of the the entity. 
     
     Please see the *Entity Management* guide for more details.
+    
+    
+    
+.. _user-guide-ui-components-grid-action-buttons:
+
+Grid Controls
+^^^^^^^^^^^^^^
+
+Grid controls are displayed right above the grid.
+
+.. image:: ./img/ui_components/grid_action_buttons.png
+
+In the example, you can scroll pages, refresh the grid details and reset the grid (clear all the filters), 
+as well as export the details shown in the grid as a .csv file.
+
+
+*Export Grid*
+"""""""""""""
+
+All the data displayed in a grid can be exported as a .csv table. Click :guilabel:`Export Grid` button and choose "CSV".
+
+.. image:: ./img/ui_components/export_grid.png
+
+The file will be saved subject to your browser settings.
+
+
+.. _user-guide-ui-components-grid-action-icons:
+
+Grid Action Icons
+^^^^^^^^^^^^^^^^^
+
+Last column of any grid in the system contains icons of actions available for the grid item. For example, any contact 
+record can be viewed, removed or deleted:
+
+.. image:: ./img/ui_components/action_icons.png
+
+.. note::
+
+    Please note that different action icons may be shown for different items of the same grid, subject to the system 
+    settings. Specific items of every grid are described in the correspondent guides.
+
+
+.. _user-guide-ui-components-grid-bulk-action:
+
+Grid Bulk Actions
+^^^^^^^^^^^^^^^^^
+
+|IcBulk| icon in the top right corner of the grid aggregates bulk actions available for the entity records. 
+
+Check the entity records, click the arrow and choose the action to perform.
+
+In the example, the first three contacts will be deleted from the grid:
+
+.. image:: ./img/ui_components/grid_bulk_actions.png
+
 
 .. _user-guide-ui-components-create-pages:
     
-"Create" Form
---------------
+Entity Record "Create/Edit" Forms
+---------------------------------
 
 If new entity records can be added to the system, :guilabel:`Create {Entity Name}` is shown in the top right 
 corner of the grid.
@@ -182,8 +154,16 @@ displayed:
 .. image:: ./img/ui_components/create_page_tab.png
 
 
-*"Create" Form Action Buttons*
-------------------------------
+Edit form is used to edit the entity records. The only difference between the *"Edit"* and 
+*"Create"* forms is that previously defined field values are already filled in. 
+
+.. note::
+
+    Please note that some of the values cannot be re-defined, subject to the system requirements. 
+
+
+Form Action Buttons
+^^^^^^^^^^^^^^^^^^^
 
 In the top right corner of every *"Create"* form, you can always see two Action Buttons:  :guilabel:`Cancel` and  
 :guilabel:`Save` or  :guilabel:`Save and Close`.
@@ -199,8 +179,8 @@ In the top right corner of every *"Create"* form, you can always see two Action 
 
 .. _user-guide-ui-components-view-pages:
 
-"View" Pages
-------------
+Entity Record "View" Pages
+--------------------------
 
 A *"View"* page contains details of a specific entity record.
 
@@ -225,17 +205,10 @@ For example, the *"View"* page of an account record contains its general details
 .. image:: ./img/ui_components/view_page_tabs.png
 
 
-.. note::
-
-    The list of fields displayed in the *"Create"* form depends on the *"Show on View"* settings defined for the fields
-    of the entity.    
-    
-    Please see the *Entity Management* guide for more details. 
-
 .. _user-guide-ui-components-view-page-actions:
 
-*"View" Page Action Buttons*
-----------------------------
+"View" Page Action Buttons
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Action Buttons  trigger actions for a specific entity record. They are displayed in the top right corner of the 
 View page.
@@ -263,19 +236,6 @@ The following actions can be enabled in the current OroCRm version:
 - Add Task: a task related to the lead can be assigned to the user
 
 - Add Event: an event can be added for the lead
-
-
-.. _user-guide-ui-components-edit-forms:
-    
-*"Edit"* Form
--------------
-
-Edit form is used to edit the entity records. The only difference between the *"Edit"* and 
-*"Create"* forms is that previously defined field values are already filled in. 
-
-.. note::
-
-    Please note that some of the values cannot be re-defined, subject to the system requirements. 
 
 
 
