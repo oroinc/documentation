@@ -102,7 +102,7 @@ OroCRM currently comes with a ready-to-use *Leads by Date* report.
 This is a simple but useful report, with which you can see how many leads were created on a specific date for 
 all of your channels.
 
-To see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
+In order to see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
 
 It shows:
 
