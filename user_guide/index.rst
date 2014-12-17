@@ -11,6 +11,7 @@ End user oriented documentation that explains how to administer and configure ap
     channel_guide
     export_import
     ui_components
+    leads
 
 TODO List
 ---------
