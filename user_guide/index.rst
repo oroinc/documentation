@@ -11,6 +11,7 @@ End user oriented documentation that explains how to administer and configure ap
     channel_guide
     export_import
     magento_channel_integration
+    leads
 
 TODO List
 ---------
