@@ -6,7 +6,7 @@ Reports
 The Oro Platform gives you the opportunity to create customized reports about
 the entities in your application.
 
-To manage your custom reports, go to *Reports & Segments*/*Manage Custom Reports*.
+To manage your custom reports, go to *Reports & Segments* → *Manage Custom Reports*.
 You'll see a list of all created reports:
 
 .. image:: /user_guide/img/reports/reports.png
@@ -33,7 +33,7 @@ General Setting
 
 .. image:: ./img/reports/general.png
 
-The following fields are mandatory and **must** be defined for a report.
+The following fields are mandatory and **must** be defined for a report:
 
 .. csv-table::
   :header: "Field","Description"
@@ -51,8 +51,7 @@ The following fields are mandatory and **must** be defined for a report.
   "**Owner***","Limits the list of users that can manage the report to its owner and users, whose roles allow managing 
   reports assigned to the owner (e.g. members of the same business unit, system administrator, etc.)."
 
-The only optional system field, **Description**, can be used to save information about the report aim and peculiarities
-for you and other users in the future. 
+The only optional system field, **Description**, can be used to save additional information about the report. 
 
 
 .. _user-guide-reports-designer:
@@ -64,7 +63,7 @@ In the section you can define the structure of your report.
 
 .. image:: ./img/reports/designer.png
 
-There are two main parts:
+There are three main parts:
 
 - **Columns**: defines the columns of your report and information displayed therein and
 
@@ -125,13 +124,13 @@ Actions for Columns
 Once you have specified the settings for a column element click :guilabel:`Add` button, and the field you have defined 
 will appear in the "COLUMN" grid.
 
-Now you can edit (|IcEdit|), delete (|IcDelete|) or move (|IcMove|) the column in the report. 
+Now you can edit (|IcEdit|), delete (|IcDelete|) or move (|IcMove|) the column. 
 
 
 Examples of Columns and Actions 
 """""""""""""""""""""""""""""""
 
-For the sake of example, we have created a very simple report of one field. It will contain only budget amount details. 
+For the sake of example, we have created a very simple report of one field. It contains only budget amount details. 
 
 .. image:: ./img/reports/RepEx1.png
 
@@ -143,7 +142,6 @@ You would see something of the kind:
 
 .. image:: ./img/reports/RepEx1a.png
 
-
 There are 75 opportunities, an the values defined in the *Budget Amount* field of each and every of them will be
 displayed in the report.
 
@@ -154,23 +152,21 @@ Click |IcEdit| icon and change the column settings.
 
 **Function = Count**
 
-.. image:: ./img/reports/RepEx1.png
-
+.. image:: ./img/reports/RepEx1b.png
 
 There are 43 different values of the *Budget Amount* field for all the Entity instances in the System.
 
 **Function = Sum**
 
-.. image:: ./img/reports/RepEx1b.png
+.. image:: ./img/reports/RepEx1c.png
 
    
 The sum of all the values of the *Budget Amount* fields for all the Entity instances in the System makes 
-$202,565.00.
+$202.565.00.
 
 **Function = Max**
 
 .. image:: ./img/reports/RepEx1e.png
-
 
 The biggest Budget amount value available in the system is 9.902.00 USD
  
@@ -178,7 +174,7 @@ The biggest Budget amount value available in the system is 9.902.00 USD
 Grouping
 ^^^^^^^^
  
-Grouping section provides for more complex and informative reports. Once you have added a field in the *Grouping* 
+The *Grouping* section provides for more complex and informative reports. Once you have added a field in the *Grouping* 
 section you will see all the columns values or their functions for a set of all the entity instances with the same 
 *Grouping* field value.
 
@@ -195,14 +191,6 @@ Grouping Example
 .. image:: ./img/reports/RepEx2.png
 
 
-- Usually, it is rather convenient to have the column sorting is made by first
-
-- We used the Sum function to see the total budget for all the Opportunities in the group)
-   
-- We will see the smallest budget of all the opportunities with the status
-   
- 
-
 Here is what we have got:
 
 .. image:: ./img/reports/RepEx2a.png
@@ -218,7 +206,7 @@ report.
 .. image:: ./img/reports/RepEx3.png
 
 Now you can see the budget function values for all the opportunities with the same status the belong to specific 
-customer. Fata for all the "In Progress" opportunities of one customer, then of another customer, etc. Only 
+customer. Data for all the "In Progress" opportunities of one customer, then of another customer, etc. Only 
 then you will see data for all the "Won" opportunities of each customer, etc.
 
 .. image:: ./img/reports/RepEx3a.png
@@ -289,7 +277,7 @@ Now no Lost opportunities are displayed in the report:
 Chart
 ^^^^^
 
-OroCRM 1.4 support line charts. To create a line chart for the report, go to the **Chart** and define the following 
+OroCRM supports line charts. To create a line chart for the report, go to the **Chart** and define the following 
 fields (all the fields are mandatory and **must** be defined)
 
 .. csv-table:: **ChartSettings**
