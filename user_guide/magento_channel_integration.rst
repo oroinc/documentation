@@ -1,5 +1,4 @@
 
-
 .. _user-guide-magento-channel-integration:
 
 Integration with Magento
@@ -7,10 +6,7 @@ Integration with Magento
 
 OroCRM supports out of the box integration with Magento. 
 The integration data can be loaded from and to a Magento-based E-commerce store and processed in the OroCRM. 
-This article describes how to :ref:`define <user-guide-magento-channel-integration-details>` and 
-:ref:`manage <user-guide-magento-channel-integration-details_edit>` the integration details, including the way to define 
-the :ref:`synchronization settings <user-guide-magento-channel-integration-synchronization>` and 
-:ref:`manually start <user-guide-magento-channel-integration-synchronization>` the synchronization. 
+This article describes how to define and edit the integration and synchronization settings. 
 
 .. hint::
     
@@ -24,7 +20,7 @@ Create Magento Integration
 ---------------------------
 
 To create integration with a Magento-based E-commerce store, create a channel of Magento type as described in the 
-:ref:`*Channels Management* <user-guide-channel-guide-create>` guide . 
+:ref:`Channels Management <user-guide-channel-guide-create>` guide . 
 
 As soon as the channel type is set to *Magento*, a mandatory **Integration*** field  will appear in the General details 
 section.
@@ -126,9 +122,6 @@ To edit integration details:
 
 - Go to the *"Edit"* form of the channel and click *"Edit"* link by the integration name
 
-.. image:: ./img/magento_integration/edit_from_form.png
-
-
 The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been 
 performed, it is impossible to change the Sync start date.
 
@@ -158,7 +151,7 @@ The *"View"* page of the integration will appear.
 
 .. image:: ./img/magento_integration/integration_view.png
 
-- Click :guilabel:`Schedule Sync` button. *A sync job has been added to the queue. Check progress.* note will appear. 
+- Click :guilabel:`Schedule Sync` button. *"A sync job has been added to the queue. Check progress."* note will appear. 
 
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status. 
 
