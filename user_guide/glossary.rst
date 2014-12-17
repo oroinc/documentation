@@ -27,9 +27,8 @@ Glossary
       high or impossible to define, and an instance of the Lead entity
         
    Opportunity
-      An entity of :term:`OroCRM` the instances of which represent people or businesses that have authority, budget
-      and interest to purchase goods and/or services from you and such that probability of the actual sales is rather
-      high, and an instance of the Opportunity entity
+      An entity of :term:`OroCRM` the instances of which represent potential or actual sales to a new or 
+      established customer
    
    Customer
       An entity of :term:`OroCRM` the instances of which represent people or businesses you have sold or are selling 
