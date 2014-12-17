@@ -6,6 +6,8 @@ Community Guide
 Find out more about how you can contribute to the Oro Platform.
 
 .. toctree::
+    :maxdepth: 2
+    
     code
     documentation
     translations
