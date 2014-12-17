@@ -12,7 +12,10 @@ and :ref:`view <user-guide-ui-components-view-pages>` pages.
 
 Menu Items
 ----------
-
+Menu in OroCRM 
+Entity Records Grid
+Entity Record Create/Edit Form
+Entity Record View Page
 .. csv-table:: **The top menu of the current OroCRM is divided into seven basic sections:**
   :header: "**Name**","**Description**"
   :widths: 10, 30
