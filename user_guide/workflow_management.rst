@@ -1,4 +1,3 @@
-.. _user-guide-workflow-management:
 
 Workflow Management
 ===================
@@ -6,6 +5,9 @@ Workflow Management
 *Used application: OroCRM 1.2.0*
 
 This article provides description of Workflow Management feature from the the user's point of view.
+
+
+.. _user-guide-workflow-management-basics:
 
 Basics
 ------

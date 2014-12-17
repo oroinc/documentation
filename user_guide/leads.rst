@@ -1,7 +1,7 @@
 .. _user-guide-system-channel-entities-leads:
 
-Channel Entities. Leads.
-========================
+Leads
+=====
 
 The Lead records ("leads") represent people or businesses the have initial interest, authority and budget to take part 
 in your commercial or social activity but whose intentions are not yet backed up with any arrangements. 
@@ -115,7 +115,7 @@ It shows:
 .. image:: ./img/leads/leads_report_by_date.png
 
 New custom reports can be added. For more details on the ways to create and 
-customize the reports,  please see the Reports guide.
+customize the reports,  please see the :ref:`Reports guide <user-guide-reports>`.
 
 .. _user-guide-leads-workflows:
 
@@ -127,8 +127,8 @@ Workflows define rules and guidelines on possible actions/updates related to the
 Currently, OroCRM comes with a pre-implemented B2B-oriented workflow described in the 
 Sales Processes Workflow guide. 
 
-New customer-specific workflows can also be created, as described in the :ref:`Workflows 
-guide <user-guide-workflow-management>`
+New customer-specific workflows can also be created, as described in the 
+:ref:`Workflows guide <user-guide-workflow-management-basics>`.
 
 
 
