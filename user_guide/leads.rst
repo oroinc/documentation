@@ -6,7 +6,8 @@ Channel Entities. Leads.
 The Lead records ("leads") represent people or businesses the have initial interest, authority and budget to take part 
 in your commercial or social activity but whose intentions are not yet backed up with any arrangements. 
 
-As soon as there is at least one :ref:`Channel <user-guide-channel-guide-create>` assigned the *Lead* entity, you can:
+In order to use Lead records you need to have at least one :ref:`Channel <user-guide-channel-guide-create>`, for which
+Lead is defined as its entity:
 
 - :ref:`Create <user-guide-leads-create>` new leads
 
@@ -38,34 +39,14 @@ The following fields are mandatory and **must** be defined:
   "**Owner***","Limits the list of users that can manage the lead to its owner and users, whose roles allow managing 
   leads assigned to the owner (e.g. members of the same business unit, system administrator, etc.).
   
-  You can choose an owner from the list (|Bdropdown|) or from the grid (|BGotoPage|).
-  
-  Click |BCrLOwnerClear| button to clear the field.
-  
   By default, the user creating the lead is chosen."
   "**Lead Name***","The name used to refer to the lead in the system."
-  "**Channel***","Any of active channels assigned the *Lead* entity. 
+  "**Channel***","Choose one of active channels assigned the *Lead* entity. 
 
-  Details of the lead will be uploaded from the source of the channel.
-  
-  Click |Bdropdown| button to choose one of available channels from the list."
+  Details of the lead will be uploaded from the source of the channel."
   "**First Name*** and **Last Name***","Personal details of the potential customer or contact person." 
 
-**Optional fields** keep additional information and may be left empty:
-
-- If a field refers to a number (e.g. *"Number of Employees"*), an integer value shall be used.
-
-- **Source** drop-down contains tunable predefined list of possible lead sources, such as the website, direct mail, 
-  partner, etc.
-
-- **Contact** and **B2B Customer** enable binding the lead created to records of corresponding 
-  entities in the system.
-  
-  You can choose the record from the list (|Bdropdown|) or from the grid (|BGotoPage|), as well as create a new record
-  (|Bplus|).
-  
-  Click |BCrLOwnerClear| button to clear the field
-
+**Optional fields** keep additional information and may be left empty.
   
 **Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
 
@@ -81,7 +62,7 @@ in the system.
 Lead Actions 
 ^^^^^^^^^^^^^
 
-The following actions can be enabled for the leads:
+The following actions can be performed for the leads:
 
 From the \:ref:`Grid <user-guide-ui-components-grids>`\:
 
@@ -113,7 +94,7 @@ defined in the \ref:`Communication &  Collaboration <user-guide-entity-managemen
 Reports with Leads
 ------------------
 
-OroCRM 1.4 comes with two ready-to-use reports related to the leads.
+OroCRM currently comes with a ready-to-use *Leads by Date* report.
 
 *Leads by Date*
 ^^^^^^^^^^^^^^^
@@ -133,20 +114,7 @@ It shows:
 
 .. image:: ./img/leads/leads_report_by_date.png
 
-*Lead by Geography*
-^^^^^^^^^^^^^^^^^^^
-
-This report is placed in the *Manage custom reports* section and can be edited. 
-
-Out of the box, the report shows:
-
-- name of the US state (in alphabetic order)
-
-- number of Leads in this State
-
-.. image:: ./img/leads/leads_report_by_state.png
-
-This report may be customized, and other new custom reports can be added. For more details on the ways to create and 
+New custom reports can be added. For more details on the ways to create and 
 customize the reports,  please see the \:ref:`*Reports* <user-guide-reports>` guide\.
 
 .. _user-guide-leads-workflows:
