@@ -64,7 +64,7 @@ Lead Actions
 
 The following actions can be performed for the leads:
 
-From the \:ref:`Grid <user-guide-ui-components-grids>`\:
+From the Grid:
 
 .. image:: ./img/leads/leads_grid.png
 
@@ -77,7 +77,7 @@ From the \:ref:`Grid <user-guide-ui-components-grids>`\:
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
   :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
-From the \:ref:`View page <user-guide-ui-components-view-pages>`\
+From the View page:
 
 .. image:: ./img/leads/lead_view.png
   
@@ -85,8 +85,8 @@ From the \:ref:`View page <user-guide-ui-components-view-pages>`\
 
 - Delete the lead from the system 
 
-The rest of the \ref:`actions <user-guide-ui-components-view-page-actions>`\ available depend on the system settings 
-defined in the \ref:`Communication &  Collaboration <user-guide-entity-management-create-commun-collab>` section of the 
+The rest of the actions available depend on the system settings 
+defined in the Communication &  Collaboration section of the 
 "Lead" entity
       
 .. _user-guide-leads-reports:
@@ -115,7 +115,7 @@ It shows:
 .. image:: ./img/leads/leads_report_by_date.png
 
 New custom reports can be added. For more details on the ways to create and 
-customize the reports,  please see the \:ref:`*Reports* <user-guide-reports>` guide\.
+customize the reports,  please see the Reports guide.
 
 .. _user-guide-leads-workflows:
 
@@ -125,7 +125,7 @@ Using Leads in the Workflows
 Workflows define rules and guidelines on possible actions/updates related to the entity records. 
 
 Currently, OroCRM comes with a pre-implemented B2B-oriented workflow described in the 
-\:ref:`*Sales Processes Workflow* <user-guide-sales-processes-workflow>`\ guide. 
+Sales Processes Workflow guide. 
 
 New customer-specific workflows can also be created, as described in the :ref:`Workflows 
 guide <user-guide-workflow-management>`
