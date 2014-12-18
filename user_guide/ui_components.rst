@@ -34,7 +34,7 @@ For example, if you go to the *System → Channels*, you will see the grid of al
 
 - Rows of the grid represent records of the entity chosen.
 
-- Columns of the grid are values of the record fields.
+- Columns of the grid represent fields of the records.
 
 .. note::
 
@@ -60,9 +60,7 @@ start with 123 are displayed:
 .. note::
 
     Please note that the list of fields available for filters depends on the  *"Show Grid Filter"* settings defined for 
-    fields of the the entity. 
-    
-    Please see the *Entity Management* guide for more details.
+    fields of the the entity. Please see the *Entity Management* guide for more details.
     
     
     
@@ -132,9 +130,7 @@ corner of the grid to get to the *"Create ..."* form.
 .. note::
 
     Please note that the list of fields available from the form depends on the *"Show on Form"* settings defined for 
-    fields of the entity. 
-    
-    Please see the *"Entity Management"* guide for more details.
+    fields of the entity. Please see the *"Entity Management"* guide for more details.
 
 - Mandatory fields are identified with a red asterisk.
 
