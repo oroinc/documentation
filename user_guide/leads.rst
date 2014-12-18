@@ -64,7 +64,7 @@ Lead Actions
 
 The following actions can be performed for the leads:
 
-From the Grid:
+From the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/leads/leads_grid.png
 
@@ -77,7 +77,7 @@ From the Grid:
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
   :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
-From the View page:
+From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/leads/lead_view.png
   
@@ -102,7 +102,7 @@ OroCRM currently comes with a ready-to-use *Leads by Date* report.
 This is a simple but useful report, with which you can see how many leads were created on a specific date for 
 all of your channels.
 
-To see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
+In order to see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
 
 It shows:
 
