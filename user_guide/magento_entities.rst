@@ -5,7 +5,7 @@ Magento Entities
 ================
 
 OroCRM supports out of the box integration with Magento. 
-Data can be loaded from a Magento-based E-commerce store and back and processed in the OroCRM. 
+Data can be loaded from Magento and back and processed in the OroCRM. 
 This article describes a set of pre-implemented OroCRM entities aimed at Magento customer-relations management.
 
 .. hint::
@@ -52,7 +52,7 @@ The default entities are:
   :header: "Entity", "Instance Description"
   :widths: 10, 30
 
-  "**Web Customer**","Represent one customer identity, for which data is collected within the channel. Must be defined 
+  "**Web Customer**","Represents a Magento customer, for which data is collected within the channel. Must be defined 
   for channels of the Magento type."
   "**Shopping Cart**","Keeps details on the Magento Customer's pre-sales activity with the |WT02|_"
   "**Order**","Keeps details of actual sales made by the customer within the channel, including store details, personal 
@@ -68,16 +68,7 @@ Details of the entity records are uploaded into OroCRM in the course of synchron
 Managing Magento Entities 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following actions can be performed for every Shopping Cart and Order from their grids (in the *Sales → Shopping 
-Carts* and *Sales → Orders* respectively):
-
-.. image:: ./img/magento_entities/grid_actions.png
-
-- Refresh the grid (get the newest data)
-
-- Reset the grid (clear all the filters)
-
-- Export the grid as a .csv file
+You can manage Magento entities from the grid as described  in the :ref:
 
 From the *View* page of every shopping cart with *Open* status (items of the cart have not yet been purchased) you can
 place an order. Click the button to get to the Magento *Place an Order* form.
