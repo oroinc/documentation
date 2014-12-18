@@ -3,11 +3,10 @@
 Email Campaigns
 ===============
 
-Records of the Email Campaign entity ("Email campaigns") represent mailing and keep their general information and 
-mailing settings.
+Records of the Email Campaign entity ("Email campaigns") represent mailings and keep their general information and 
+settings.
 
-The articles describes the ways to :ref:`create <user-guide-email-campaigns-create>` and 
-:ref:`manage <user-guide-email-campaigns-actions>` Email campaigns. 
+The articles describes the ways to create and manage Email campaigns. 
 
 
 .. _user-guide-email-campaigns-create:
@@ -27,12 +26,8 @@ Creating a Campaign
   :widths: 10, 30
 
   "**Name***","Name used to refer to the campaign in the system."
-  "**Marketing List***","A marketing list used for the mailing. The letter will be sent to Email addresses defined in 
-  the list. You can choose one of available marketing lists from the list (|Bdropdown|) or from the grid (|BGotoPage|), 
-  as well as create you own marketing list (|BPlus|)
-
-  Click |BCrLOwnerClear| button to clear the field
-  
+  "**Marketing List***","Choose one of available marketing lists. The letter will be sent to Email addresses defined by 
+  the list.   
   More details about the marketing lists are available in the :ref:`Marketing Lists <user-guide-marketing-lists>` 
   guide."
   "**Schedule***","Defines if the mailing shall be activated manually (*Manual*) or scheduled for a specific 
@@ -42,14 +37,8 @@ Creating a Campaign
   calendar. 
   
   |email_campaign_schedule|"
-  "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
-  Email campaigns of the owner (e.g. members of the same business unit, system administrator, etc.). 
-  
-  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
-
-  Click |BCrLOwnerClear| button to clear the field
-  
-  By default, the user creating the campaign is chosen."
+  "**Owner***","Limits the list of Users that can manage the campaign to the Users, whose roles allow managing 
+  Email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 Optional fields can be used to define such details as the Sender Email and Name, Campaign within which the mailing is 
 done and free text description. 
@@ -81,7 +70,7 @@ There are two mandatory fields that **must** be defined:
 Campaign Actions
 ----------------
 
-The following actions are available for a campaign from the \:ref:`grid <user-guide-ui-components-grids>`\:
+The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 
@@ -89,7 +78,7 @@ The following actions are available for a campaign from the \:ref:`grid <user-gu
 
 - Get to the *"Edit"* form of the campaign : |IcEdit| 
   
-  You can change the campaign details or delete the campaign from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
+  You can change the campaign details or delete the campaign from the :ref:`Edit form <user-guide-ui-edit-forms>`.
 
 - Get to the *"View"* page of the campaign :  |IcView| 
 

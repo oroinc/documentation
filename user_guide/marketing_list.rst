@@ -9,11 +9,6 @@ Marketing lists define rules used to select sets of contact details for marketin
 For example, you can create a list that will contain only details of leads added to the system after October 1 with 
 addresses in California. 
 
-The article describes how to :ref:`create <user-guide-marketing-lists-create>` and 
-:ref:`manage <user-guide-marketing-lists-actions>` marketing lists, as well as provides detailed description of the 
-:ref:`marketing list "View" page <user-guide-marketing-list-view-page>`. 
-
-
 .. _user-guide-marketing-lists-create:
 
 Creating a Marketing List
@@ -38,8 +33,6 @@ Creating a Marketing List
 General Details  
 ^^^^^^^^^^^^^^^
 
-.. image:: ./img/marketing/list_general_details.png
-
 The following fields are mandatory and **must** be specified:
 
 .. csv-table::
@@ -47,26 +40,20 @@ The following fields are mandatory and **must** be specified:
   :widths: 10, 30
 
   "**Name**","Name used to refer to the marketing list in the system"
-  "**Entity**","Records of the chosen entity and entities related to it will be used to create rules for the list.
-  
-  Choose an entity from the drop-down. Only entities that have contact details (E-mail or phone 
-  number) are available."
+  "**Entity**","Choose an entity from the drop-down. Only entities that have contact details (E-mail or phone 
+  number) are available.
+  Records of the chosen entity and entities related to it will be used to create rules for the list."
   "**Type**","Chose the list type from the drop-down:
  
   - **Dynamic** lists are updated as soon as any changes have taken place in the system 
   
   - **On demand** lists will be updated only following the user request"
-  "**Owner**","Limits the list of users that can manage the marketing list to its owner and users, whose roles allow 
-  managing marketing lists of the owner (e.g. members of the same business unit, system administrator, etc.).
-  
-  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
-
-  Click |BCrLOwnerClear| button to clear the field
-  
-  By default, the user creating the campaign is chosen."
+  "**Owner**","Limits the list of users that can manage the marketing list to the users, whose roles allow 
+  managing marketing lists of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)
+  ."
 
 Optional field **Description** can be filled with free text to help you and other users to understand the purpose or 
-peculiarities of the list in future.
+peculiarities of the list in the future.
 
 Custom fields may be added subject to specific business-needs. 
   
@@ -78,7 +65,7 @@ Custom fields may be added subject to specific business-needs.
 Filters
 ^^^^^^^
 
-To define the marketing list settings, you can use the following settings:
+You can choose the entity records used to generate the marketing list with filters. 
 
 - **Field Condition**: only records that meet the condition are added to the list
 
@@ -135,9 +122,9 @@ In the "*Columns*" section, define the set of fields displayed in the grid of th
 It serves the following purposes:
 
 - Inside the system, it helps to visualise the list and see the instances included
-- In case of integration with external marketing services to run the mailings (such as MailChimp) values of these fields
+- In case of integration with external mailing services (such as MailChimp), values of these fields
   will be available for the external system.
-- Marketing activities require some contact information, so at least one column the contains it must be 
+- Marketing activities require some contact information, so at least one column that contains it must be 
   selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary Email 
   and Primary Phone fields).
 
