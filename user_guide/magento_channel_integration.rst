@@ -19,7 +19,7 @@ This article describes how to define and edit the integration and synchronizatio
 Create Magento Integration
 ---------------------------
 
-To create integration with a Magento-based E-commerce store, create a channel of Magento type as described in the 
+To create integration with Magento, create a channel of Magento type as described in the 
 :ref:`Channels Management <user-guide-channel-guide-create>` guide . 
 
 As soon as the channel type is set to *Magento*, a mandatory **Integration*** field  will appear in the General details 
@@ -48,7 +48,7 @@ Define the following details in the *"General"* section:
      - Configuration name. Used to refer to the configuration within the system (edit, assign, etc.)
  
    * - **SOAP WSDL URL***
-     - An http URL string to the WSDL of the SOAP-based service.
+     - A URL of the SOAP v.2 WSDL source.
      
    * - **SOAP API Key***
    
@@ -85,7 +85,7 @@ Once the connection details have been verified, the following fields will be fil
        Click "Sync website list" link if the list of Websites is outdated.
        
    * - **Admin url**
-     - Optional field. An http link to the administrator panel of the specified Magento store.
+     - Optional field. A url to the administrator panel of the specified Magento store.
      
    * - **Default owner***
      - Specifies what users can manage the configuration. By default is filled with the user
@@ -101,9 +101,9 @@ Use the *Synchronization Settings* section to enable/disable two way synchroniza
 
 .. image:: ./img/magento_integration/synch_settings.png
 
-Check *Enable Two Way Sync* box, if you want to download data both from the Magento-based E-commerce store to OroCRM and
+Check *Enable Two Way Sync* box, if you want to download data both from Magento to OroCRM and
 back. If the box is unchecked, data from Magento will be loaded to OroCRM, but changes performed in OroCRM will not be 
-loaded to the Magento-based store.
+loaded to Magento.
 
 If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
 customer details were edited from the both OroCRM and Magento:
@@ -155,8 +155,8 @@ The *"View"* page of the integration will appear.
 
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status. 
 
-After the successful synchronization, you can use OroCRM to manage customer relations for the Magento based E-commerce 
-store, as described in the *Magento Entities Management* guide.
+After the successful synchronization, you can use OroCRM to manage Magento customer relations, as described 
+in the *Magento Entities Management* guide.
 
 
 .. |IcCross| image:: ./img/magento_integration/IcCross.png
