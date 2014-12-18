@@ -108,9 +108,9 @@ loaded to Magento.
 If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
 customer details were edited from the both OroCRM and Magento:
    
-- *Remote wins*: Magento settings will be applied to the both Magento and OroCRM
+- *Remote wins*: Magento data will be applied to the both Magento and OroCRM
   
-- *Local wins*: OroCRM settings will be applied to the both Magento and OroCRM
+- *Local wins*: OroCRM data will be applied to the both Magento and OroCRM
        
 
 .. _user-guide-magento-channel-integration-details_edit:
