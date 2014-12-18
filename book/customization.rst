@@ -152,6 +152,11 @@ download and apply a translation pack:
 
     $ php app/console oro:translation:pack -i <project-id> -k <api-key> --download <project>
 
+.. seealso::
+
+    You can learn more about the Crowdin translation process
+    :doc:`in the community section </community/translations>`.
+
 .. index::
     single: Customization; Services
     single: Services; Overriding Services
