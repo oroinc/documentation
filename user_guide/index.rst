@@ -17,6 +17,7 @@ End user oriented documentation that explains how to administer and configure ap
     marketing_campaign
     marketing_list
     marketing_tracking
+    ui_components
     leads
 
 TODO List

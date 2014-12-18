@@ -45,7 +45,7 @@ Import
 
   *"File is successfully imported."* message will appear when the import has finished.
 
-Once import is over, the new entity records will appear in the grid.
+Once import is over, the new entity records will appear in the :ref:`grid <user-guide-ui-components-grids>`.
 
 
 .. _user-guide-export:
