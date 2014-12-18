@@ -44,17 +44,20 @@ If you want to allocate user activities on a specific page of the Website, uncom
     The code may be filled with both static and dynamic values, however the use of dynamic values requires complex 
     back-end development. 
 
-There are two ways to implement tracking for a website: 
+There are two ways to implement tracking for a Website: 
 
--  Add a piece of code from the *"View"* page of a campaign to the tracking script from the *"View"* page 
-   of a Website Tracking record after setUserId call.
+- Add a piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` to the 
+  tracking script from 
+  the :ref:`View page of the Website Tracking record <user-guide-marketing-tracking-websites-view-page>` after 
+  setUserId call.
    
-- Add a piece of code from the *"View"* page of a campaign to the page url 
+- Add a piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` 
+  to the page url 
 
 Tracked Website Example
 ------------------------
 
-This is the code preimplemented for Magento-based stores:
+This is the code pre-implemented for Magento stores:
 
 .. code-block:: html
 
@@ -74,11 +77,13 @@ This is the code preimplemented for Magento-based stores:
       })();
    </script>
 
-Users are identified as guests until they sign in. As soon as a user signs in, their identification is a value of
-the "visitor-id" field. A special php block has been implemented to enable transfer of the 
-id data to Oro. Every time a user follows the link of a campaing, they get to a page with a url piece from the campaign page.
-From now on, all the actions perfomed by the user at the website within this session will be assigned to the
-campaign.
+*Users are identified as guests until they sign in. As soon as a user signs in, their identification is a value of
+the "visitor-id" field. A special block has been implemented to enable transfer of the 
+id data to Oro.*
+
+*Every time a user follows the link of a campaign, they get to a page with the url piece from the campaign page.
+From now on, all the actions performed by the user at the Website within this session will be assigned to the
+campaign.*
 
 On some of the pages, actions are activated. For example, this is a piece of code on the cart page:
 
@@ -99,8 +104,8 @@ On some of the pages, actions are activated. For example, this is a piece of cod
       })();
    </script>
 
-This way, every time the user get to the page where the code is implemented, on the campaign page "Car item added" 
-event will appear and dynamic value that corresponds to the id of the item will be saved.
+*Every time the user get to the page where the code is implemented, "Car item added" 
+event will appear on the campaign page and a dynamic value that corresponds to the item id will be saved.*
 
 A similar piece of code is implemented on each of the Website pages. Order placement page has the following action
 enabled:
@@ -109,8 +114,8 @@ enabled:
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'order successfully placed', '2699.990000' ]);            
 
-Order successfully placed event is saved for the campaign with a dynamic value that corresponds to a total
-cost of the order.
+*"Order successfully placed" event is saved for the campaign with a dynamic value that corresponds to a total
+cost of the order.*
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png

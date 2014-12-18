@@ -15,7 +15,7 @@ Creating a Campaign
 --------------------
 
 1. Go to *Email → Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
-   to the *"Create Campaign"* form.
+   to the *"Create Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
 
 2. Define general settings of the campaign:
 
@@ -70,7 +70,7 @@ There are two mandatory fields that **must** be defined:
 Campaign Actions
 ----------------
 
-The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grid-action-icons>`:
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 

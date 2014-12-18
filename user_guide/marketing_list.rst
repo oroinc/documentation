@@ -16,6 +16,8 @@ Creating a Marketing List
 
 1. Go to the *Marketing → Marketing Lists* and click :guilabel:`Create Marketing List` button 
    in the top right corner of the grid.
+   
+   Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge
 
 2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list.
 

@@ -5,12 +5,9 @@ Email Templates
 ===============
 
 Records of the Email Template entity ("Email template") represent html or plain text templates used for
-mailing and filled with text and system variable of a specific entity. 
-(As a simplest example, instead of writing numerous letters with "Dear and name of the addressee", you 
-can create a template for a "Contact" entity using the entity and system variables).
+mailing and filled with text and system variables of a specific entity. 
 
-The articles describes the ways to :ref:`create <user-guide-email-templates-create>` and 
-:ref:`manage <user-guide-email-templates-actions>` an Email templates. 
+The articles describes the ways to create and manage Email templates. 
 
 
 .. _user-guide-email-templates-create:
@@ -19,7 +16,7 @@ Creating an Email Template
 ---------------------------
 
 1. Go to *System → Emails → Templates* page and click :guilabel:`Create Template` button in the top right corner to 
-   get to the *"Create Template"* form.
+   get to the *"Create Template"* :ref:`form <user-guide-ui-components-create-pages>`.
    
   |email_template_create|
 
@@ -33,20 +30,14 @@ Creating an Email Template
 
   "**Template Name***","Name used to refer to the template in the system"
   "**Type***","Choose if your template is html or plain text"
-  "**Owner***","Limits the list of users that can manage the template to its owner and users, whose roles allow managing 
-  Email templates of the owner (e.g. members of the same business unit, system administrator, etc.)
-  
-  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
-
-  Click |BCrLOwnerClear| button to clear the field
-  
-  By default, the user creating the template is chosen."
+  "**Owner***","Limits the list of users that can manage the template to the users, whose roles allow managing 
+  Email templates of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)"
  
 Optional field *"Entity Name"* shall be assigned if you want to use the entity-specific variables in the template.
 
 If no entity name is defined, only system variables will be available.
 
-2. Define the Email template. Drag the variables to where you need them.
+2. Define the Email template. Drag the variables to wherever you need them.
 
 .. image:: ./img/marketing/email_template_ex.png
 
@@ -67,19 +58,18 @@ described in the :ref:`How to Track Campaign Related Activities on the Website <
 Campaign Actions
 ----------------
 
-The following actions are available for an Email template from the \:ref:`grid <user-guide-ui-components-grids>`\:
+The following :ref:`actions <user-guide-ui-components-grid-action-icons>` are available for an Email template from 
+the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/email_template_actions.png
 
-- Delete the template from the system : |IcDelete| 
+- Delete the template from the system: |IcDelete| 
 
-- Get to the *"Edit"* form of the template : |IcEdit| 
-  
-  You can change the template details or delete the template from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
+- Get to the `Edit form <user-guide-ui-edit-forms>` form of the template: |IcEdit| 
 
-- Clone the  template :  |IcClone|
+- Clone the  template:  |IcClone|
   
-  You can edit the template details and save a new template for them.  
+  You can edit the template details and save a new (cloned and edited) template.  
 
   
 .. |IcDelete| image:: ./img/buttons/IcDelete.png

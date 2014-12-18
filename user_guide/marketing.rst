@@ -11,7 +11,7 @@ The following entities are implemented in the OroCRM for the functionality-purpo
 .. image:: ./img/marketing/marketing_all.png
 
 - :ref:`Marketing List <user-guide-marketing-lists>` records define the rules used to select sets of contact 
-  details for marketing needs
+  details for marketing needs.
 
 - :ref:`Campaign <user-guide-marketing-campaigns>` records represent marketing campaigns and 
   keep their general information, related events and tracking settings.
@@ -23,6 +23,6 @@ The following entities are implemented in the OroCRM for the functionality-purpo
   campaign-related activity of the Website users, as described in the :ref:`How to Track Campaign Related Activities on the Website <user-guide-how-to-track>` guide
   
 - :ref:`Email Campaign <user-guide-email-campaigns>` records define the rules used to generate a
-  mailing. A marketing list must be chosen, campaign can be assigned and website tracking can be used for every Email 
+  mailing. A marketing list must be chosen, campaign can be assigned, and website tracking can be used for every Email 
   campaign.
  
