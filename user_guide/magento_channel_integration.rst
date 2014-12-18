@@ -120,7 +120,8 @@ Edit Integration
 
 To edit integration details:
 
-- Go to the *"Edit"* form of the channel and click *"Edit"* link by the integration name
+- Go to the *"Edit"* form :ref: `<user-guide-ui-components-create-pages>` of the channel and click *"Edit"* link by the 
+  integration name
 
 The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been 
 performed, it is impossible to change the Sync start date.
@@ -143,7 +144,7 @@ Start Synchronization Manually
 Once integration has been created, the data will be automatically synchronized. However, you can also start the 
 synchronization manually:
 
-- Go to the *View* page of the channel and click the integration name link:
+- Go to the :ref: `<View page <user-guide-ui-components-view-pages>` of the channel and click the integration name link:
 
 .. image:: ./img/magento_integration/edit_from_view.png
 
