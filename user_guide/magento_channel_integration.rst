@@ -151,7 +151,8 @@ The *"View"* page of the integration will appear.
 
 .. image:: ./img/magento_integration/integration_view.png
 
-- Click :guilabel:`Schedule Sync` button. *"A sync job has been added to the queue. Check progress."* note will appear. 
+- Click :guilabel:`Schedule Sync` button. *A sync :ref:`job<book-job-execution>` has been added to the queue. 
+  Check progress.* note will appear. 
 
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status. 
 
