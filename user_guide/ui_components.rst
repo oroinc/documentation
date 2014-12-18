@@ -14,7 +14,7 @@ Menu Items
 OroCRM has a multi-level menu. 
 The first level defines a set of menu items included (e.g. Marketing, Sales, System etc.). 
 The next level may contain some sub-menus or is clickable and will refer you to the relevant page in the system.
-(For example, if you go to Sales → Leads and click "Leads", the Leads grid will emerge.)
+(For example, if you go to System → Configuration, the Configuration page will emerge.)
 
 .. note::
   
@@ -39,7 +39,7 @@ available:
 
 .. note::
 
-    The list of fields displayed in the grid depends on the *"Show on Grid"* settings defined fields of the entity. 
+    The list of fields displayed in the grid depends on the *"Show on Grid"* settings defined for fields of the entity. 
     
     Please see the *Entity Management* guide for more details. 
     
@@ -126,10 +126,8 @@ In the example, the first three contacts will be deleted from the grid:
 Entity Record "Create/Edit" Forms
 ---------------------------------
 
-If new entity records can be added to the system, :guilabel:`Create {Entity Name}` is shown in the top right 
-corner of the grid.
-
-Click the button to get to the *"Create ..."* form.
+Click the  :guilabel:`Create {Entity Name}` button in the top right 
+corner of the grid to get to the *"Create ..."* form.
 
 - All the editable fields of the entity will be displayed in the grid. 
 
