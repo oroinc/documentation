@@ -64,7 +64,7 @@ Lead Actions
 
 The following actions can be performed for the leads:
 
-From the Grid:
+From the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/leads/leads_grid.png
 
@@ -77,7 +77,7 @@ From the Grid:
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
   :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
-From the View page:
+From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/leads/lead_view.png
   

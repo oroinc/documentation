@@ -28,8 +28,7 @@ Entity Records Grids
 --------------------
 
 Initially, a grid contains all the records of the chosen entity. 
-For example, if you go to *"Customers"* and click *"Contacts"*, you will see the grid of all the Contact records 
-available:
+For example, if you go to the *System → Channels*, you will see the grid of all the channels available:
 
 .. image:: ./img/ui_components/grid.png
 
@@ -40,7 +39,6 @@ available:
 .. note::
 
     The list of fields displayed in the grid depends on the *"Show on Grid"* settings defined for fields of the entity. 
-    
     Please see the *Entity Management* guide for more details. 
     
 
@@ -163,7 +161,7 @@ Edit form is used to edit the entity records. The only difference between the *"
 Form Action Buttons
 ^^^^^^^^^^^^^^^^^^^
 
-In the top right corner of every *"Create"* form, you can always see two Action Buttons:  :guilabel:`Cancel` and  
+In the top right corner of every *"Create"* form, you can usually see two Action Buttons:  :guilabel:`Cancel` and  
 :guilabel:`Save` or  :guilabel:`Save and Close`.
 
 .. image:: ./img/ui_components/create_action_buttons.png
@@ -190,15 +188,15 @@ To get to the page:
 
 - Click anywhere on the row of a record in the grid 
 
-For example, this is a View page of a channel:
+For example, this is a View page of an opportunity:
 
 .. image:: ./img/ui_components/view_page.png
 
-If there are several sections, they will be displayed one after another and allocated separately in different tabs.
 
-*"View"* pages may contain a lot of sections, subsections and even grids. 
-For example, the *"View"* page of an account record contains its general details, information about related activities 
-(emails, calls, tasks, etc.) and additional details for all the customers assigned to the account in different channels.
+If there are several sections, they will be displayed one after another and allocated separately in different tabs.
+(In the example above, these are "General Information", "Activities" and "Additional Information". 
+
+Click the section name on the relevant tab and this section will be displayed on the top:
 
 .. image:: ./img/ui_components/view_page_tabs.png
 
@@ -212,8 +210,6 @@ Action Buttons  trigger actions for a specific entity record. They are displayed
 View page.
 
 If there are four or less actions available for the entity records, a separate button is created for each of them.
-
-In the example, you can send Email, log call and synchronize data of the order from its *"View"* page:
 
 .. image:: ./img/ui_components/view_action_buttons_1.png
 
