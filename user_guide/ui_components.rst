@@ -39,7 +39,7 @@ available:
 
 .. note::
 
-    The list of fields displayed in the grid depends on the *"Show on Grid"* settings defined fields of the entity. 
+    The list of fields displayed in the grid depends on the *"Show on Grid"* settings defined for fields of the entity. 
     
     Please see the *Entity Management* guide for more details. 
     
