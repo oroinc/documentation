@@ -65,7 +65,7 @@ the :ref:`grid <user-guide-ui-components-grids>`:
 
 - Delete the template from the system: |IcDelete| 
 
-- Get to the `Edit form <user-guide-ui-edit-forms>` form of the template: |IcEdit| 
+- Get to the :ref:`Edit form <user-guide-ui-edit-forms>` form of the template: |IcEdit| 
 
 - Clone the  template:  |IcClone|
   
