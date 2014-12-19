@@ -7,7 +7,7 @@ Campaigns
 Records of the Campaign entity ("campaigns") represent marketing campaigns and keep their general information, related 
 events and website tracking settings.
 
-The articles describes the ways to create, manage and view campaign details. 
+The article describes the ways to create, manage and view campaign details. 
 
 
 .. _user-guide-marketing-campaigns-create:
