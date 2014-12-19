@@ -5,9 +5,7 @@ Tracking Websites Record
 ========================
 
 *Tracking Website* records define details of a website, for which tracking shall be performed. 
-This article describes how to :ref:`create <user-guide-marketing-tracking-websites-create>` and 
-:ref:`manage <user-guide-marketing-tracking-websites-actions>` tracking website records, as well as provides detailed 
-description of their :ref:`View pages <user-guide-marketing-tracking-websites-view-page>`. 
+This article describes how to create, manage and view the tracking details. 
 
 
 .. _user-guide-marketing-tracking-websites-create:
@@ -16,27 +14,21 @@ Creating a Tracking Websites
 ----------------------------
 
 1. Go to *Marketing → Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
-   corner to get to the *"Create Tracking Website"* form.
+   corner to get to the *Create Tracking Website* :ref:`form <user-guide-ui-components-create-pages>`.
 
 2. Define the settings of the tracking record:
 
 There are four mandatory fields that **must** be defined:
   
 .. csv-table::
-  :header: "**Name**","**Description**"
+  :header: "**Field**","**Description**"
   :widths: 10, 30
 
   "**Name***","Name used to refer to the record in the system"
   "**Identifier***","Unique code of the website used to generate its tracking"
   "**Url***","Url of the website to be tracked" 
-  "**Owner***","Limits the list of Users that can manage the tracking website record to its owner and users, whose roles
-  allow managing tracking-websites of the owner (e.g. members of the same business unit, system administrator, etc.). 
-  
-  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
-
-  Click |BCrLOwnerClear| button to clear the field
-  
-  By default, the user creating the tracking websites is chosen."
+  "**Owner***","Limits the list of Users that can manage the tracking website record to the users, whose roles
+  allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 .. image:: ./img/marketing/tracking_general.png
 
@@ -48,18 +40,15 @@ There are four mandatory fields that **must** be defined:
 Tracking Websites Actions
 -------------------------
 
-The following actions are available for a tracking websites record from the 
-\:ref:`grid <user-guide-ui-components-grids>`\:
+The following actions are available for a tracking websites record from the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/tracking_grid_actions.png
 
 - Delete the record from the system : |IcDelete| 
 
-- Get to the *"Edit"* form of the record : |IcEdit| 
-  
-  You can change the record details or delete it using the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
-
-- Get to the *"View"* page of the record :  |IcView| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the record : |IcEdit| 
+ 
+- Get to the `View page <user-guide-ui-components-view-pages>` of the record :  |IcView| 
 
 
 
@@ -68,7 +57,7 @@ The following actions are available for a tracking websites record from the
 *Tracking Websites View Page*
 -----------------------------
 
-View page of a tracking websites contains the following three sections:
+`View page <user-guide-ui-components-view-pages>` of a tracking websites contains the following three sections:
 
 - General Information: general details specified for the tracking websites during creation and/or editing.
 
@@ -98,8 +87,6 @@ the item id.*
 
 The way to define the events for tracking is described in more details in :ref:`How to Track Campaign Related 
 Activities on the Website <user-guide-how-to-track>` guide.
-
-You can also get to the Edit form from the \:ref:`View page <user-guide-ui-components-view-pages>`\.
 
 
 
