@@ -57,7 +57,7 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaig: |IcEdit| 
   
-- Get to the `View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
 
 
 .. _user-guide-marketing-campaigns-view-page:
@@ -65,7 +65,7 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 *Campaign View Page*
 --------------------
 
-`View page <user-guide-ui-components-view-pages>` of a campaign contains the following three sections:
+:ref:`View page <user-guide-ui-components-view-pages>` of a campaign contains the following three sections:
 
 - General Information : general details specified for the campaign during the creation/editing
 
