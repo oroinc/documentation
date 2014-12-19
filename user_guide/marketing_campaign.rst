@@ -7,9 +7,7 @@ Campaigns
 Records of the Campaign entity ("campaigns") represent marketing campaigns and keep their general information, related 
 events and website tracking settings.
 
-The articles describes the ways to :ref:`create <user-guide-marketing-campaigns-create>` and 
-:ref:`manage <user-guide-marketing-campaigns-actions>` a campaign, as well as provides detailed description of the 
-:ref:`View page of a campaign <user-guide-marketing-campaigns-view-page>`. 
+The articles describes the ways to create, manage and view campaign details. 
 
 
 .. _user-guide-marketing-campaigns-create:
@@ -18,7 +16,7 @@ Creating a Campaign
 --------------------
 
 1. Go to *Marketing → Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
-   to the *"Create Campaign"* form.
+   to the *Create Campaign* :ref:`form <user-guide-ui-components-create-pages>`.
    
 .. image:: ./img/marketing/marketing_campaign_create.png
 
@@ -27,21 +25,15 @@ Creating a Campaign
 There are four mandatory fields that **must** be defined:
   
 .. csv-table::
-  :header: "**Name**","**Description**"
+  :header: "**Field**","**Description**"
   :widths: 10, 30
 
   "**Name***","Name used to refer to the campaign in the system."
   "**Code***","Unique code of the campaign, used to generate its tracking settings"
   "**Report Scale***","Defines default time-scale of the events graph. The next larger scale is chosen if there are 
   over 40 records" 
-  "**Owner***","Limits the list of Users that can manage the campaign to its owner and Users, whose roles allow managing 
-  campaigns of the owner (e.g. members of the same business unit, system administrator, etc.). 
-  
-  You can  choose one of available users from the list (|Bdropdown|) or from the *Select Owner* page (|BGotoPage|).
-
-  Click |BCrLOwnerClear| button to clear the field
-  
-  By default, the user creating the campaign is chosen."
+  "**Owner***","Limits the list of Users that can manage the campaign to users, whose roles allow managing 
+  campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 Optional fields define such details as campaign start and end dates, its description and budget. 
 
@@ -57,17 +49,15 @@ Custom fields may be added subject to specific business-needs.
 Campaign Actions
 ----------------
 
-The following actions are available for a campaign from the \:ref:`grid <user-guide-ui-components-grids>`\:
+The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 
 - Delete the campaign from the system : |IcDelete| 
 
-- Get to the *"Edit"* form of the campaign : |IcEdit| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaig: |IcEdit| 
   
-  You can change the campaign details or delete the campaign from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
-
-- Get to the *"View"* page of the campaign :  |IcView| 
+- Get to the `View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
 
 
 .. _user-guide-marketing-campaigns-view-page:
@@ -75,7 +65,7 @@ The following actions are available for a campaign from the \:ref:`grid <user-gu
 *Campaign View Page*
 --------------------
 
-View page of a campaign contains the following three sections:
+`View page <user-guide-ui-components-view-pages>` of a campaign contains the following three sections:
 
 - General Information : general details specified for the campaign during the creation/editing
 
@@ -100,7 +90,6 @@ Activities on the Website <user-guide-how-to-track>` guide.
 
 .. image:: ./img/marketing/marketing_campaign_view_code.png
   
-You can also get to the Edit form from the \:ref:`View page <user-guide-ui-components-view-pages>`\.
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
