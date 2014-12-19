@@ -157,17 +157,15 @@ Use action icons in the last column to edit the grid:
 Marketing List Actions
 ----------------------
 
-The following actions are available for a marketing list from the grid
+The following actions are available for a marketing list from the :ref:`grid <user-guide-ui-components-grids>`
 
 .. image:: ./img/marketing/list_action_icons.png
 
 - Delete the list from the system : |IcDelete| 
 
-- Get to the *"Edit"* form of the list : |IcEdit| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the list : |IcEdit| 
 
-  You can change the list details or delete the list from the \:ref:`Edit form <user-guide-ui-edit-forms>`\.
-  
-- Get to the *"View"* page of the list :  |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the list :  |IcView| 
 
 
 
@@ -179,9 +177,9 @@ Marketing Lists View Page
 
 .. image:: ./img/marketing/list_view_page.png
 
-View page of a marketing list contains:
+:ref:`View page <user-guide-ui-components-view-pages>` of a marketing list contains:
 
-- \:ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`\
+- :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`
 
 - General details of the list
 
@@ -193,7 +191,7 @@ Grid of the Marketing List
 
 The grid contains:
 
-- Columns defined in the \:ref:`Create form <user-guide-marketing-marketing-list-create-columns>`\
+- Columns defined in the :ref:`Create form <user-guide-marketing-marketing-list-create-columns>`
 
 - "TOTAL CONTACTED" column: contains the number of times a record of this marketing list was contacted within 
   different :ref:`Email campaigns <user-guide-email-campaigns>` 
