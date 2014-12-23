@@ -26,7 +26,7 @@ Create Leads from the UI
 
 - Click :guilabel:`Create Lead` button
 
-- The *Create Lead* form will appear:
+- The *Create Lead* :ref:`form <user-guide-ui-components-create-pages>` will appear:
 
 .. image:: ./img/leads/leads_create.png
 
@@ -70,9 +70,9 @@ From the :ref:`grid <user-guide-ui-components-grids>`:
 
 - Delete a lead from the system : |IcDelete|
   
-- Get to the *"Edit"* form  of the lead : |IcEdit|
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the lead : |IcEdit|
   
-- Get to the "*View*" page of the lead : |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the lead : |IcView| 
 
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
   :ref:`Export and Import Functionality <user-guide-import>` guide. 
