@@ -5,7 +5,8 @@ Integration with Magento
 ========================
 
 OroCRM supports out of the box integration with Magento. 
-The integration data can be loaded from and to a Magento-based E-commerce store and processed in the OroCRM. 
+The integration enables loading  data from and to a Magento-based E-commerce store (Magento store) and processed in the 
+OroCRM. 
 This article describes how to define and edit the integration and synchronization settings. 
 
 .. hint::
@@ -57,17 +58,17 @@ Define the following details in the *"General"* section:
      - SOAP API credentials. 
      
    * - **WS-I Compliance**
-     - Optional flag. Defines whether the configuration meets requirements of the Web Services Interoperability 
-       Organization guidelines.
+     - Defines whether `WS-I compliance mode <http://www.magentocommerce.com/api/soap/wsi_compliance.html>`_ is enabled 
+	   for the Magento store.
    
    * - **Sync start date**
      - Data will be synchronized as of the date defined.
 
 .. hint::  
 
-    Please address you Magento administrator for the information on SOAP settings details. 
+    Please address your Magento administrator for the information on the SOAP settings details. 
 
-At this point, click :guilabel:`Check Connection` button, to check if the settings defined above are correct.
+At this point, click :guilabel:`Check Connection` button, to see if the settings defined above are correct.
 Once the connection details have been verified, the following fields will be filled with default settings.
 
 .. list-table:: **System Channel Entities(continued)**
@@ -80,7 +81,8 @@ Once the connection details have been verified, the following fields will be fil
    * - **Website***
      - The list of all the Websites available for the shop. *All Websites* option is chosen by default.
        
-       You can edit the field value and choose one of the Websites available.
+       You can edit the field value and choose one of the Websites available. Only entries of the selected Website
+	   are synchronized.
        
        Click "Sync website list" link if the list of Websites is outdated.
        
@@ -120,7 +122,7 @@ Edit Integration
 
 To edit integration details:
 
-- Go to the *"Edit"* form :ref: `<user-guide-ui-components-create-pages>` of the channel and click *"Edit"* link by the 
+- Go to the :ref:Edit form `<user-guide-ui-components-create-pages>` of the channel and click *"Edit"* link by the 
   integration name
 
 The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been 
@@ -144,13 +146,17 @@ Start Synchronization Manually
 Once integration has been created, the data will be automatically synchronized. However, you can also start the 
 synchronization manually:
 
+- Go to the System → Integrations → Manage Integrations and click the |BSchedule| 
+  :ref:`grid action icon <user-guide-ui-components-grid-action-icons>` or
+
 - Go to the :ref: `<View page <user-guide-ui-components-view-pages>` of the channel and click the integration name link:
 
-.. image:: ./img/magento_integration/edit_from_view.png
+.. image:: ./img/magento_integration/edit_from_view.png 
 
-The *"View"* page of the integration will appear.
+- The *"View"* page of the integration will appear.
 
 .. image:: ./img/magento_integration/integration_view.png
+
 
 - Click :guilabel:`Schedule Sync` button. *A sync :ref:`job<book-job-execution>` has been added to the queue. 
   Check progress.* note will appear. 
@@ -161,5 +167,9 @@ After the successful synchronization, you can use OroCRM to manage Magento custo
 in the *Magento Entities Management* guide.
 
 
-.. |IcCross| image:: ./img/magento_integration/IcCross.png
+.. |IcCross| image:: ./img/buttons/IcCross.png
    :align: middle
+   
+.. |BSchedule| image:: ./img/buttons/BSchedule.png
+   :align: middle
+
