@@ -4,8 +4,8 @@
 Email Templates
 ===============
 
-Records of the Email Template entity ("Email template") represent html or plain text templates used for
-mailing and filled with text and system variables of a specific entity. 
+Records of the Email Template entity ("Email templates") represent html or plain text templates used for
+mailings and filled with free text, as well as system variables and variables of a specific entity. 
 
 The articles describes the ways to create and manage Email templates. 
 
@@ -25,15 +25,15 @@ Creating an Email Template
    The following fields are mandatory and **must** be defined:
   
 .. csv-table::
-  :header: "**Name**","**Description**"
+  :header: "**Field**","**Description**"
   :widths: 10, 30
 
   "**Template Name***","Name used to refer to the template in the system"
-  "**Type***","Choose if your template is html or plain text"
-  "**Owner***","Limits the list of users that can manage the template to the users, whose roles allow managing 
+  "**Type***","Use html or plain text"
+  "**Owner***","Limits the list of users that can manage the template to those, whose roles allow managing 
   Email templates of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)"
  
-Optional field *"Entity Name"* shall be assigned if you want to use the entity-specific variables in the template.
+Optional field *"Entity Name"* shall be assigned if you want to use some entity-specific variables in the template.
 
 If no entity name is defined, only system variables will be available.
 
@@ -41,15 +41,15 @@ If no entity name is defined, only system variables will be available.
 
 .. image:: ./img/marketing/email_template_ex.png
 
-*In the example below, the template contains a link to the website page composed with a piece of tracking code from the
-"Tracking Websitse" record. Every time a user follows the link, visit event will be tracked for the campaign, as 
-described in the :ref:`How to Track Campaign Related Activities on the Website <user-guide-how-to-track>` guide.*   
+*In the example below, the template contains a link to the website page composed with a piece of
+:ref:`tracking code <user-guide-how-to-track>`. Every time a user follows the link, visit event 
+will be tracked for the campaign.*   
 
 3. You can click :guilabel:`Preview` button to check your template
 
 .. image:: ./img/marketing/email_template_preview.png
 
-4. If the you are satisfied with the preview, save the template in the system with the button in the top right corner of
+4. If you are satisfied with the preview, save the template in the system with the button in the top right corner of
    the page.
 
 
@@ -67,9 +67,7 @@ the :ref:`grid <user-guide-ui-components-grids>`:
 
 - Get to the :ref:`Edit form <user-guide-ui-edit-forms>` form of the template: |IcEdit| 
 
-- Clone the  template:  |IcClone|
-  
-  You can edit the template details and save a new (cloned and edited) template.  
+- Clone the  template:  |IcClone| - You can edit the template details and save a new (cloned and edited) template.  
 
   
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
