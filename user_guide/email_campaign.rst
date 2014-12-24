@@ -6,7 +6,7 @@ Email Campaigns
 Records of the Email Campaign entity ("Email campaigns") represent mailings and keep their general information and 
 settings.
 
-The articles describes the ways to create and manage Email campaigns. 
+The article describes ways to create and manage the Email campaigns. 
 
 
 .. _user-guide-email-campaigns-create:
@@ -74,13 +74,11 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 
-- Delete the campaign from the system : |IcDelete| 
+- Delete the campaign from the system: |IcDelete| 
 
-- Get to the *"Edit"* form of the campaign : |IcEdit| 
-  
-  You can change the campaign details or delete the campaign from the :ref:`Edit form <user-guide-ui-edit-forms>`.
-
-- Get to the *"View"* page of the campaign :  |IcView| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit| 
+ 
+- Get to the :ref:`View form <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
 
 
 
