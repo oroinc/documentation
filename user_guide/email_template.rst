@@ -1,4 +1,4 @@
-
+﻿
 .. _user-guide-email-templates:
 
 Email Templates
@@ -65,7 +65,7 @@ the :ref:`grid <user-guide-ui-components-grids>`:
 
 - Delete the template from the system: |IcDelete| 
 
-- Get to the :ref:`Edit form <user-guide-ui-edit-forms>` form of the template: |IcEdit| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` form of the template: |IcEdit| 
 
 - Clone the  template:  |IcClone| - You can edit the template details and save a new (cloned and edited) template.  
 
