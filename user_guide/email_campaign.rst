@@ -37,13 +37,13 @@ Creating a Campaign
   calendar. 
   
   |email_campaign_schedule|"
-  "**Owner***","Limits the list of Users that can manage the campaign to the Users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the campaign to those, whose roles allow managing 
   Email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 Optional fields can be used to define such details as the Sender Email and Name, Campaign within which the mailing is 
 done and free text description. 
 
-Custom fields may be added subject to specific business-needs. 
+Custom fields may be added, subject to specific business-needs. 
 
 3. Define the mailing settings. 
 
