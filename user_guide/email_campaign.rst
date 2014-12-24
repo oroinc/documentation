@@ -78,7 +78,7 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit| 
  
-- Get to the :ref:`View form <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
 
 
 
