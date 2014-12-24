@@ -41,9 +41,8 @@ If no entity name is defined, only system variables will be available.
 
 .. image:: ./img/marketing/email_template_ex.png
 
-*In the example below, the template contains a link to the website page composed with a piece of
-:ref:`tracking code <user-guide-how-to-track>`. Every time a user follows the link, visit event 
-will be tracked for the campaign.*   
+*In the example below, the template contains a link to the website page composed with a piece of :ref:`tracking code <user-guide-how-to-track>`. 
+Every time a user follows the link, visit event will be tracked for the campaign.*   
 
 3. You can click :guilabel:`Preview` button to check your template
 
