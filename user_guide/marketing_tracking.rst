@@ -46,9 +46,9 @@ The following actions are available for a tracking websites record from the :ref
 
 - Delete the record from the system : |IcDelete| 
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the record : |IcEdit| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the record: |IcEdit| 
  
-- Get to the `View page <user-guide-ui-components-view-pages>` of the record :  |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the record:  |IcView| 
 
 
 
