@@ -3,25 +3,25 @@
 How to Track Campaign Related Activities on the Website
 =======================================================
 
-In order to track campaign-related activities of a Website user, you need to:
+In order to track campaign-related activities of the Website users, you need to:
 
 - Create a :ref:`Сampaign <user-guide-marketing-campaigns>` record
 
 - Create a :ref:`Tracking Website <user-guide-marketing-tracking>` record for this Website
 
-- Use the "Tracking code" on their View pages to modify the code of the website
+- Use the "Tracking code" on their View pages to modify the code of the website, as described below:
 
 Use Tracking Code
 -----------------
 
 Tracking code that shall be added before the </body> tag  on every page of the website 
-can be found on the View page of the corresponding :ref:`Tracking Website <user-guide-marketing-tracking>` record.
+can be found on the :ref:`View page <user-guide-ui-components-view-pages>` of the corresponding 
+:ref:`Tracking Website <user-guide-marketing-tracking>` record.
 
 .. image:: ./img/marketing/how_to_tracking_code.png
 
-The code defines a number of piwik specific settings that should not be changed.
-
-The following variables can/must be defined by the user:
+The code defines some of piwik-specific settings that should not be changed and the following variables
+that can/must be defined by the user:
 
 .. code-block:: html
 
