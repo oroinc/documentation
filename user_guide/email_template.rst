@@ -33,11 +33,10 @@ Creating an Email Template
   "**Owner***","Limits the list of users that can manage the template to those, whose roles allow managing 
   Email templates of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)"
  
-Optional field *"Entity Name"* shall be assigned if you want to use some entity-specific variables in the template.
-
+Optional field *"Entity Name"* shall be used to define an entity, variables whereof can be used in the template. 
 If no entity name is defined, only system variables will be available.
 
-2. Define the Email template. Drag the variables to wherever you need them.
+2. Define the Email template. Click on the necessary variable to add drag it to the text box. 
 
 .. image:: ./img/marketing/email_template_ex.png
 
@@ -55,7 +54,7 @@ If no entity name is defined, only system variables will be available.
 
 .. _user-guide-email-templates-actions:
 
-Campaign Actions
+Template Actions
 ----------------
 
 The following :ref:`actions <user-guide-ui-components-grid-action-icons>` are available for an Email template from 

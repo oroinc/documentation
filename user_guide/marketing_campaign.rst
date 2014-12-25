@@ -29,7 +29,8 @@ There are four mandatory fields that **must** be defined:
   :widths: 10, 30
 
   "**Name***","Name used to refer to the campaign in the system."
-  "**Code***","Unique code of the campaign, used to generate its tracking settings"
+  "**Code***","Unique code of the campaign, used to generate its tracking settings. May contain only alphanumeric 
+  symbols, dashes, and underscores."
   "**Report Scale***","Defines default time-scale of the events graph. The next larger scale is chosen if there are 
   over 40 records" 
   "**Owner***","Limits the list of Users that can manage the campaign to users, whose roles allow managing 

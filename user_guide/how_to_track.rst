@@ -9,7 +9,12 @@ In order to track campaign-related activities of the Website users, you need to:
 
 - Create a :ref:`Tracking Website <user-guide-marketing-tracking>` record for this Website
 
-- Use the "Tracking code" on their View pages to modify the code of the website, as described below:
+- Use the "Tracking code" on their View pages to modify the code of the website, as described below.
+
+..note ::
+
+    Tracking of Magento stores is pre-implemented and available with the extension at 
+	http://www.magentocommerce.com/magento-connect/orocrm-tracking.html
 
 Use Tracking Code
 -----------------
@@ -46,13 +51,17 @@ If you want to allocate user activities on a specific page of the Website, uncom
 
 There are two ways to implement tracking for a Website: 
 
-- Add a piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` to the 
+- Add the piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` to the 
   tracking script from 
   the :ref:`View page of the Website Tracking record <user-guide-marketing-tracking-websites-view-page>` after 
-  setUserId call.
+  setUserId call, and provide the users with url of this page(s)
    
-- Add a piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` 
-  to the page url 
+- Add the piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` 
+  to the page url and use this modified url in the link used for the campaign, mailing, etc.
+
+ Either way, after the user has entered (clicked) the url, all the user activity recorded on the website within the 
+ session will be tied to the specific campaign.
+
 
 Tracked Website Example
 ------------------------
@@ -85,7 +94,7 @@ id data to Oro.*
 From now on, all the actions performed by the user at the Website within this session will be assigned to the
 campaign.*
 
-On some of the pages, actions are activated. For example, this is a piece of code on the cart page:
+On some of the pages, actions are activated. For example, this is a tracking script on the cart page:
 
 .. code-block:: html
 
@@ -104,10 +113,10 @@ On some of the pages, actions are activated. For example, this is a piece of cod
       })();
    </script>
 
-*Every time the user get to the page where the code is implemented, "Car item added" 
+*Every time the user get to the page where the code is implemented, "Cart item added" 
 event will appear on the campaign page and a dynamic value that corresponds to the item id will be saved.*
 
-A similar piece of code is implemented on each of the Website pages. Order placement page has the following action
+A similar tracking script is implemented on each of the Website pages. Order placement page has the following action
 enabled:
 
 .. code-block:: html

@@ -4,7 +4,7 @@
 Marketing Lists
 ===============
 
-Marketing lists define rules used to select sets of contact details for marketing purposes. 
+Marketing lists define a set of contact details to be used for marketing purposes (mass call or mailing). 
 
 For example, you can create a list that will contain only details of leads added to the system after October 1 with 
 addresses in California. 
@@ -42,9 +42,9 @@ The following fields are mandatory and **must** be specified:
   :widths: 10, 30
 
   "**Name**","Name used to refer to the marketing list in the system"
-  "**Entity**","Choose an entity from the drop-down. Only entities that have contact details (E-mail or phone 
-  number) are available.
-  Records of the chosen entity and entities related to it will be used to create rules for the list."
+  "**Entity**","Choose an entity from the drop-down.
+  Only entities that have contact details (E-mail or phone number) are available.
+  Records of the chosen entity and entities related to it will be used to create the list of contacts."
   "**Type**","Chose the list type from the drop-down:
  
   - **Dynamic** lists are updated as soon as any changes have taken place in the system 

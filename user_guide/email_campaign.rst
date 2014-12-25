@@ -3,7 +3,7 @@
 Email Campaigns
 ===============
 
-Records of the Email Campaign entity ("Email campaigns") represent mailings and keep their general information and 
+Records of the Email Campaign entity ("Email campaigns") represent mass mailings and keep their general information and 
 settings.
 
 The article describes ways to create and manage the Email campaigns. 
@@ -40,8 +40,8 @@ Creating a Campaign
   "**Owner***","Limits the list of users that can manage the campaign to those, whose roles allow managing 
   Email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
-Optional fields can be used to define such details as the Sender Email and Name, Campaign within which the mailing is 
-done and free text description. 
+Optional fields can be used to define such details as Campaign within which the mailing is done and the way to represent
+Sender Email and Name in the E-mails.  
 
 Custom fields may be added, subject to specific business-needs. 
 
@@ -57,7 +57,7 @@ There are two mandatory fields that **must** be defined:
   Other means can be added in the course of customization."
   "Template","Choose the Email template to be used from the drop-down. 
   
-  Please note that only the templates assigned on no entity or the same entity that the marketing list are available "
+  Please note that only the templates assigned to no entity or the same entity that the marketing list are available "
   
 4. Save the campaign in the system with the button in the top right corner of the page.
 
