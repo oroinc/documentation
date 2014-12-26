@@ -26,7 +26,7 @@ Create Leads from the UI
 
 - Click :guilabel:`Create Lead` button
 
-- The *Create Lead* form will appear:
+- The *Create Lead* :ref:`form <user-guide-ui-components-create-pages>` will appear:
 
 .. image:: ./img/leads/leads_create.png
 
@@ -64,20 +64,20 @@ Lead Actions
 
 The following actions can be performed for the leads:
 
-From the Grid:
+From the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/leads/leads_grid.png
 
 - Delete a lead from the system : |IcDelete|
   
-- Get to the *"Edit"* form  of the lead : |IcEdit|
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the lead : |IcEdit|
   
-- Get to the "*View*" page of the lead : |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the lead : |IcView| 
 
 - Export and import lead record details with :guilabel:`Export` and :guilabel:`Import` buttons as described in the 
   :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
-From the View page:
+From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/leads/lead_view.png
   
@@ -102,7 +102,7 @@ OroCRM currently comes with a ready-to-use *Leads by Date* report.
 This is a simple but useful report, with which you can see how many leads were created on a specific date for 
 all of your channels.
 
-To see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
+In order to see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
 
 It shows:
 

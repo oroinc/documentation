@@ -4,8 +4,7 @@ Channels Management
 
 A **Channel** entity represents a source of customers and customer data.
 
-This guide describes how to :ref:`create <user-guide-channel-guide-create>` channels and
-:ref:`manage <user-guide-channel-guide-actions>` their records from the UI.
+This guide describes how to create and manage channels from the UI.
 
 .. _user-guide-channel-guide-create:
 
@@ -20,9 +19,7 @@ Creating a Channel
 3. Define the :ref:`entity <user-guide-channel-guide-entities>` details that will be received from the channel's
    source.
 
-4. Once you have finished adding the entities, use the *Save* function (click :guilabel:`Save and Close`
-   or :guilabel:`Save` button in the top right corner). A success message will appear, and your channel
-   will be saved.
+4. Once you have finished adding the entities, click the button in the top right corner to save it.
 
 
 .. _user-guide-channel-guide-general:
@@ -48,24 +45,25 @@ The following three fields are mandatory and **must** be defined:
   if a channel is being configured for future use or if it is out of date."
   "**Name**", "The name that will be used to refer to the channel in the system. It is recommended to keep the name
   meaningful."
-  "**Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the channel created.
+  "**Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the 
+  channel created.
 
   Channel types define a specific set of rules and settings which apply to the channel.
 
-  Extending OroCRM with new channel types for specific needs is a proven practice and the following channel types are 
+  Extending OroCRM with new channel types for specific needs is a proven practice, and the following channel types are 
   available out of the box in the current version of the platform:
 
-  - *B2B*: Dedicated for managing B2B customer relations
+  - *B2B*: dedicated for managing B2B customer relations
 
-  - *Magento*: Designed for Magento stores
+  - *Magento*: designed for Magento stores
 
-  - *Custom*: Any other channels which are subject to specific business needs"
+  - *Custom*: any other channels, subject to specific business needs"
 
 .. caution::
 
     Once you have selected *Magento* as a channel type, a new mandatory **Integration*** field will appear.
-..    Please see the :ref:`*Magento Channel Integration* <user-guide-magento-channel-integration>` guide  for
-..    more information.
+	Please see the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` guide  for
+	more information.
 
 
 .. _user-guide-channel-guide-entities:
@@ -99,7 +97,7 @@ To add an entity to the channel list, choose the entity and click the :guilabel:
 
 .. image:: ./img/channel_guide/channels_entity_select.png
 
-To delete an entity, click the |IcDelete| icon. This will remove the entity from the channel's list, but will not remove it
+To delete an entity, click the |IcDelete| icon. This will remove the entity from the channel's list, but not from
 from the system.
 
 .. image:: ./img/channel_guide/channels_entities_delete.png
@@ -114,47 +112,43 @@ The following actions can be performed on channels:
 
 .. From the :ref:`grid <user-guide-ui-components-grids>`
 
-From the grid:
-
 .. image:: ./img/channel_guide/channels_edit.png
 
-- Delete the channel : |IcDelete|
+- Delete the channel: |IcDelete|
 
 .. caution::
 
     Once a channel has been deleted, all of the data related to it will be deleted as well.
 
-- Edit the channel : |IcEdit|
+- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel: |IcEdit|
 
 .. caution::
 
-    You cannot change the channel type if data from the channel has been already been uploaded into the system.
+    You cannot edit the channel type if data from the channel has been already been uploaded into the system.
 
-- View channel details :  |IcView|
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel:  |IcView|
 
 
-.. From the :ref:`View page <user-guide-ui-components-view-pages>`
-
-From the View page:
+From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/channel_guide/channels_created_b2b_view.png
 
-- Deactivate or activate channels :guilabel:`Deactivate` or :guilabel:`Activate` buttons.
+- Deactivate or activate channels.  No new data from the channel will be uploaded for 
+  an inactive channel.
 
-  No new data from the channel will be uploaded for inactive channels.
+- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel
 
-- Edit the channel : :guilabel:`Edit` button
-
-- Delete the channel : :guilabel:`Delete` button
+- Delete the channel
 
 
 Editing Entities from a Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There may be some situations when there are either not enough default entity fields or too many of them. If this is the case, 
-entities maybe edited (i.e. the list of fields as well as their type and specific properties may be re-defined). This can be 
-only be done by properly authorized users. Go to the *"Entities"* section of the channel view page.
+There may be some situations when there are either not enough default entity fields or too many of them. If this is the 
+case, entities maybe edited (i.e. the list of fields as well as their type and specific properties may be re-defined). 
+This can be only be done by properly authorized users. Go to the *"Entities"* section of the channel view page.
 In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| to change the entity settings.
+Please refer to the *"Entity Management"* guide for more information.
 
 .. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png
 
@@ -162,7 +156,7 @@ In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| 
 
    Note that you will receive an error message if you do not have the necessary permissions to edit entities.
 
-Please refer to the *"Entity Management"* guide for more information.
+
 
 
 
