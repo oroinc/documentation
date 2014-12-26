@@ -68,10 +68,43 @@ Details of the entity records are uploaded into OroCRM in the course of synchron
 Managing Magento Entities 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can manage Magento entities from the grid as described  in the :ref:
+You can  you can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the 
+`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>
 
-From the *View* page of every shopping cart with *Open* status (items of the cart have not yet been purchased) you can
-place an order. Click the button to get to the Magento *Place an Order* form.
+The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Web Customers 
+(*Customers → Web Customers*), Shopping Carts (*Sales → Shopping Carts*) and Orders (*Sales → Orders*), is calling
+the :ref:`View page <user-guide-ui-components-view-pages>` of their records:  |IcView|
+
+
+*Managing Web-Customers*
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+From the :ref:`View page <user-guide-ui-components-view-pages>` of a Web Customer record, you can perform the actions  
+specified in the Communication &  Collaboration section of the entity (*System → Entities → Entity Management/Web 
+Customer*):
+
+.. image:: ./img/magento_entities/view_web_customer.png
+
+*Managing Shopping Carts*
+^^^^^^^^^^^^^^^^^^^^^^^^^
+From the *View* page of any shopping cart you can
+
+- Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities → 
+  Entity Management/Shopping Cart*):
+
+- Synchronize Data : uploads the latest information for the cart/order from Magento and back (if so is specified by the 
+  synchronization settings).
+
+.. image:: ./img/magento_entities/view_carts.png
+
+.. important:: 
+
+    As a matter of fact, information for all the carts is updated once in a predefined period (5 minutes by default), 
+    however it is strongly recommended to update a specific Cart record before you perform any actions with it.
+
+
+You can also place an order from the :ref:*View* page of every shopping cart with *Open* status (items of the cart have 
+not yet been purchased). Click the button to get to the Magento *Place an Order* form.
 
 .. image:: ./img/magento_entities/view_place_order.png
 
@@ -79,22 +112,20 @@ place an order. Click the button to get to the Magento *Place an Order* form.
   
     You need to enter your credentials when referred to the Magento for the first time in the session.
 
-From the *View* page of any shopping cart or record you can:
+	
+*Managing Shopping Carts*
+^^^^^^^^^^^^^^^^^^^^^^^^^
+From the *View* page of any order you can
+
+- Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities → 
+  Entity Management/Shopping Cart*):
 
 - Synchronize Data : uploads the latest information for the cart/order from Magento and back (if so is specified by the 
   synchronization settings).
 
-.. image:: ./img/magento_entities/view_actions.png
-
-.. important:: 
-
-    As a matter of fact, information for all the carts is updated once in a predefined period (5 minutes by default), 
-    however it is strongly recommended to update a specific Cart record before you perform any actions with it.
-
-The rest of actions available depend on the system settings 
-defined in the Communication &  Collaboration section of the 
-entity
-
+.. image:: ./img/magento_entities/view_orders.png
+	
+	
 
 .. _user-guide-magento-entities-workflows:
 
