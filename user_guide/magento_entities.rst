@@ -69,7 +69,7 @@ Managing Magento Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can  you can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the 
-`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>
+:ref:`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>`
 
 The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Web Customers 
 (*Customers → Web Customers*), Shopping Carts (*Sales → Shopping Carts*) and Orders (*Sales → Orders*), is calling
@@ -184,3 +184,6 @@ the log of previous E-mails and call-attempts, if any.
 
 .. |WT02| replace:: Shopping Cart
 .. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
