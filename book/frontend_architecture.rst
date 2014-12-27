@@ -41,6 +41,7 @@ development adopted for Oro needs.
 
 .. code-block:: text
 
+    AcmeBundle/Resources/public
     ├── css
     │   └── style.css
     ├── templates // frontend templates
@@ -100,8 +101,8 @@ development adopted for Oro needs.
    * names of all the files and folders can contains only lowercase alphabetic symbols with minus (``-``) symbol as a word separator
    * outside the ``app`` folder there is a utility code or other kind of architectural solutions (e.g. jQuery-UI widgets)
 
-Application Workflow
---------------------
+Application Lifecycle
+---------------------
 
 Chaplin extends Backbone concept introducing missing parts (such as a controller)
 and providing solid lifecycle for application's components:

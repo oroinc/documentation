@@ -77,7 +77,7 @@ into a single config file.
     # Resources/config/requirejs.yml
     config:
         shim:
-            # shim configure the dependencies, exports for older, traditional
+            # shim configures the exports and dependencies for older, traditional
             # "browser globals" scripts that do not use define() to declare
             # the dependencies and set a module value;
             'jquery-ui':
