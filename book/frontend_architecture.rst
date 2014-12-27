@@ -87,9 +87,8 @@ development adopted for Oro needs.
         └── underscore
             └── underscore.min.js
 
-.. note::
+.. topic:: Summary
 
-  Summary:
    * Modules that fully support Chaplin architecture are placed in ``app`` folder.
    * There are five folders inside the "app" directory, one for each of the modules with the following roles:
        * ``components`` -- page components, descried in the :ref:`Page Component <frontend-architecture-page-component>` section
