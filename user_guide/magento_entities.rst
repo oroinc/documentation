@@ -55,8 +55,8 @@ The default entities are:
   "**Web Customer**","Represents a Magento customer, for which data is collected within the channel. Must be defined 
   for channels of the Magento type."
   "**Shopping Cart**","Keeps details on the Magento Customer's pre-sales activity with the |WT02|_"
-  "**Order**","Keeps details of actual sales made by the customer within the channel, including store details, personal 
-  and banking data, one-time and total credited, paid and taxed amounts, feed-backs, etc."
+  "**Order**","Keeps details of items purchased and ordered by the customer within the channel, including store details, 
+  personal and banking data, one-time and total credited, paid and taxed amounts, feed-backs, etc."
 
 Details of the entity records are uploaded into OroCRM in the course of synchronization, can be 
 :ref:`processed <user-guide-magento-entities-actions>` from OroCRM UI, used to create 
@@ -68,7 +68,7 @@ Details of the entity records are uploaded into OroCRM in the course of synchron
 Managing Magento Entities 
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can  you can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the 
+You can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the 
 :ref:`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>`
 
 The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Web Customers 
@@ -109,7 +109,12 @@ not yet been purchased). Click the button to get to the Magento *Place an Order*
 .. image:: ./img/magento_entities/view_place_order.png
 
 .. caution::
-  
+
+    Be careful not to confuse the cart status and step of the related workflow. For example, a cart at the step 
+	"Contacted" can still have the "Open" status (items in the carts have not yet been bought).
+
+.. caution::
+	
     You need to enter your credentials when referred to the Magento for the first time in the session.
 
 	
@@ -129,8 +134,8 @@ From the *View* page of any order you can
 
 .. _user-guide-magento-entities-workflows:
 
-Workflows with Magento Entities 
--------------------------------
+Default Workflows with Magento Entities 
+---------------------------------------
 
 To provide consistent and customer oriented approach, you can define a specific workflow within which the actions can be
 performed for each instance of a Shopping Cart or Order. The following two workflows are pre-implemented in the OroCRM
