@@ -3,11 +3,11 @@
 Entity Management
 =================
 
-Entity is a group of rules and setting used to create and process all the records of the system that belong thereto.
+Entity is a grouping of records with common rules and/or data applied to all of them.
 
 The OroCRM comes with a number of out of the box entities and can be populated with necessary entities from the 
 back-end.
-However, sometimes there appears a need to create additional entities from the UI. They are called Custom entities.
+However, sometimes there appears a need to create additional entities from the UI. They are called "custom entities".
 In this article you can learn how to create custom entities and manage entities from the UI.
 
 
