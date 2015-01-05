@@ -67,7 +67,7 @@ Custom fields may be added subject to specific business-needs.
 Filters
 ^^^^^^^
 
-You can choose the entity records used to generate the marketing list with filters. 
+You can define conditions used to select the entity records for the marketing list, using the following tools: 
 
 - **Field Condition**: only records that meet the condition are added to the list
 
