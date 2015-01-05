@@ -257,7 +257,7 @@ created within the last month):
 
 -  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
 
-.. image:: ./img/reports/list_filters_field_condition_value.png
+.. image:: ./img/reports/filters_field_condition_value.png
 
 
 Condition Group
@@ -268,7 +268,7 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 
 - Drag *"Conditions Group"* to the box on the right
 
-.. image:: ./img/report/filters_condition_group_01.png
+.. image:: ./img/reports/filters_condition_group_01.png
 
 - Add several field conditions to the group
 
@@ -276,7 +276,7 @@ To add a condition group (e.g. state in the address of the lead or of the lead's
 
 - Define the field conditions and choose AND or OR conjunction for the conditions
 
-.. image:: ./img/marketing/filters_condition_group_03.png
+.. image:: ./img/reports/filters_condition_group_03.png
 
 
 
