@@ -228,48 +228,56 @@ that were lost. You can view the budget details for the both groups.
     If the customer's name is the most important part of the grouping, it might be reasonable to edit the report and 
     move the column to make it first.
 
-    
-*Filters*
-^^^^^^^^^
+Filters
+^^^^^^^
 
-You can filter the data processed. Use:
 
-- Field Condition: a specific condition laid over a values of the specific field such only the records that meet the 
-  condition are included in the report
+You can define conditions used to select the entity records for the report, using the following tools: 
 
-- Conditions Group: a specific set of condition laid over a values of the specific field such only the records that meet 
-  the condition are included in the report
+- **Field Condition**: only records that meet the condition are added to the list
 
-- Apply segment: settings of a specific segment are applied to the instances (Segments are subject to a separate
-  document)
+- **Conditions Group**: a set of field conditions
 
- 
-Filter Examples
+- **Apply Segment**: only records that meet a specific set of predefined conditions (belong to a segment) are added to 
+  the list. (Segments are subject to a separate document)
+
+Field conditions, condition groups and segment settings can be combined or ORed to define the final set of conditions. 
+
+Field Condition
 """""""""""""""
 
-For example, we don't want the report to process Lost opportunities.  
+To define a field condition (for example, that all the Leads details whereof shall be used in the report have been 
+created within the last month):
 
-- Drag the **Field Condition** to the Filter list to specify the settings of instances that shall or shouldn't be 
-  included to the report.
+- Drag *"Field condition"* to the box on the right
 
-.. image:: ./img/reports/RepExFilter1.png
+.. image:: ./img/reports/filters_field_condition.png
 
+- Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
 
-- Click *Choose a field* link and choose the field from a drop-down. (For our example we need the Status field)
+-  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
 
-.. image:: ./img/reports/RepExFilter2.png
-
-
-- Click the *contains* link in the *field value contains* if you need to change the condition.
-   
-.. image:: ./img/reports/RepExFilter3.png
+.. image:: ./img/reports/list_filters_field_condition_value.png
 
 
-- For our example we have chosen "does not contain" condition and *Lost*.
+Condition Group
+"""""""""""""""
 
-Now no Lost opportunities are displayed in the report:
+To add a condition group (e.g. state in the address of the lead or of the lead's B2B customer's contact shall be 
+"California" or "CA"):
 
-.. image:: ./img/reports/RepExFilter4.png
+- Drag *"Conditions Group"* to the box on the right
+
+.. image:: ./img/report/filters_condition_group_01.png
+
+- Add several field conditions to the group
+
+.. image:: ./img/reports/filters_condition_group_02.png
+
+- Define the field conditions and choose AND or OR conjunction for the conditions
+
+.. image:: ./img/marketing/filters_condition_group_03.png
+
 
 
 .. _user-guide-reports-chart:
