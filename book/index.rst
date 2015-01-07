@@ -17,6 +17,8 @@ and technical details.
     functional_tests
     configuration
     reports_configuration
+    javascript_modularity
+    frontend_architecture
 
 .. toctree::
     :hidden:
@@ -36,7 +38,6 @@ TODO List
     * Themes
     * Layout Structure and Placeholders
     * LESS and CSS
-    * JavaScript Modularity
     * Data Grids
     * Forms
     * Navigation
