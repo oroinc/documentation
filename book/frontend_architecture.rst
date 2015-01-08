@@ -109,6 +109,7 @@ and providing solid lifecycle for application's components:
 .. image:: ./img/frontend_architecture/chaplin-lifecycle.png
    :target: http://docs.chaplinjs.org/
 
+
 As a results, a controller and all of its models and views exist only between
 navigation actions. Once the route is changed, the active controller gets disposed
 as well as all of its nested views and related models. A new controller is created
