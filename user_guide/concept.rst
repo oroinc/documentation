@@ -25,7 +25,7 @@ the fields of a B2B Customer include the name, total revenue and billing details
 Some fields may represent relation between several bound entities,for example, records of entities that represent 
 address, opportunities, marketing campaigns, etc. may belong to a record of an entity that represents a customer. 
 
-..note::
+.. note::
 		
 	OroCRM is initially filled with some entities and their fields typical for CRM needs, however additional *"custom"* 
 	entities may be created, and new fields can be defined for all the custom and some of out-of-box entities.
