@@ -6,7 +6,6 @@ re-created in the course of navigation between different pages. A good example o
 component is the Pin Bar:
 
 .. image:: ./img/how_to_create_global_js_component/global-component-of-pin-bar.png
-  :width: 800
 
 .. seealso::
 
