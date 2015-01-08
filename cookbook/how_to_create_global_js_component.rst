@@ -5,7 +5,7 @@ A global component or global view is an instance that exists beyond the content 
 re-created in the course of navigation between different pages. A good example of a global
 component is the Pin Bar:
 
-.. image:: /cookbook/img/how_to_create_global_js_component/global-component-of-pin-bar.png
+.. image:: ./img/how_to_create_global_js_component/global-component-of-pin-bar.png
   :width: 800
 
 .. seealso::
