@@ -42,7 +42,7 @@ The following fields are mandatory and **must** be defined for a report:
   "**Name***","The name is used to refer to the report in the future.
   
   It is recommended to keep the name meaningful for you."
-  "**Entity***","The Entity, details of which are processed by the report. This can be any system or custom entity.
+  "**Entity***","Target entity of the report.
 
   Click |Bdropdown| button to choose one of available Entities. 
   (Both system and custom entities will be displayed in the alphabetic order). 
@@ -109,11 +109,16 @@ The following settings shall be defined for each column of the report:
   - *Max*: only the largest of all the field values for all the records will be displayed.
   
   "
-  "**Sorting***","Defines the way values of the field or their functions to be displayed in the report.
+  "**Sorting***","Defines the order values of the field or their functions shall be displayed in the report. 
    
   - *None*: no sorting applied 
   - *Asc*: ascending
   - *Desc*: descending
+  
+  The whole report is sorted by the column, for which the sorting is applied. If sorting settings are defined for 
+  several columns, settings of the column that comes the earliest are used.
+
+  After the report has been generated, it can be sorted by any of it columns.
   
   "
 
