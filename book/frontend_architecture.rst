@@ -108,7 +108,6 @@ and providing solid lifecycle for application's components:
 
 .. image:: ./img/frontend_architecture/chaplin-lifecycle.png
    :target: http://docs.chaplinjs.org/
-   :width: 800px
 
 
 As a results, a controller and all of its models and views exist only between
@@ -151,7 +150,6 @@ series of system events to notify the environment that the page content has chan
      * page:afterChange
 
 .. image:: ./img/frontend_architecture/page-controller.png
-   :width: 800px
 
 These events are handled by global views (view components that exist throughout
 the navigation and are not deleted by a page change).
