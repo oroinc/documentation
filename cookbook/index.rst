@@ -15,6 +15,8 @@ This book contains list of most regularly used solutions in Oro Platform.
     how_to_pass_request_parameter_to_grid
     user_custom_validation_constraints
     how_to_accelerate_import
+    how_to_create_global_js_component
+    how_to_replace_inline-javascript_with_component
     faq
 
 TODO List
