@@ -46,7 +46,7 @@ Initially, default settings are applied. Uncheck "Use Default" box to change the
 
 .. csv-table::
   :header: "**Setting**","**Description**","**Possible Values**","**Default Value**" 
-  :widths: 20, 30, 25, 20
+  :widths: 20, 30, 20, 20
 
   "**Sync Direction**","The data synchronization direction","
   
@@ -117,7 +117,8 @@ The following fields of an OroCRM Contact record are mapped to the following fie
   :header: "**OroCRM Field**","**Outlook Field**","Note"
   :widths: 20, 20, 20
   
-  "First Name","First Name",""
+  "First Name","First Name","If no *First Name* is defined in the Outlook record, the *Last Name* value will be used for 
+  the both first name and last name in OroCRM."
   "Middle Name","Middle Name",""
   "Last Name","Last Name","If no *Last Name* is defined in the Outlook record, the *First Name* value will be used for 
   the both first name and last name in OroCRM."
@@ -143,7 +144,7 @@ The following fields of an OroCRM Task record are mapped to the following fields
   :widths: 20, 20
   
   "Subject","Subject"
-  "Priority","Importance"
+  "Priority","Priority"
   "Due Date","Due Date"
   
 OroCRM statuses are mapped to Outlook as is:
@@ -164,7 +165,7 @@ Outlook status not available in OroCRM are mapped as follows:
   
   "Not Started","Open"
   "Completed","Closed"
-  "Waiting","In progress"
+  "Waiting on someone else","In progress"
   "Deferred","In Progress"
 
 Calendar Mapping  
@@ -201,7 +202,7 @@ The following keys are used by default:
   
   "Contact","First Name, Last Name, Gender and Birthday"
   "Calendar Event","Title(Subject), Start Time, End Time and whether it is an All-day event"
-  "Task","Subject and Task Priority (Importance)"
+  "Task","Subject and Task Priority"
   
 
 Every contact, task and calendar event present in OroCRM has a unique id. When the record is saved in the Outlook, the
