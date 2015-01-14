@@ -25,7 +25,7 @@ Plug-in Setup
 In order to enable data synchronization from OroCRM go to *System  Configuration  --> SYSTEM CONFIGURATION --> MS 
 Outlook settings* 
 
-.. img:: ./user_guide/img/outlook/settings.png
+.. image:: ./img/outlook/settings.png
 
 Click the file link in the "Download" field to download MS Outlook OroCRM Plugin to integrate with your Outlook client. 
 Wait for download to finish and run the installation process. .
@@ -70,7 +70,7 @@ Settings on the Outlook Side
 
 Once you have installed the .msi file, *"OroCRM for Outlook*" menu will appear in your Oultlook menu bar. 
 
-.. img:: ./user_guide/img/outlook/outlook_menu_bar.png
+.. image:: ./img/outlook/outlook_menu_bar.png
 
 Choose "Settings". *"OroCRM for Outlook Settings"* window will emerge.  The following fields are available
 
@@ -118,16 +118,16 @@ The following fields of an OroCRM Contact record are mapped to the following fie
   "Last Name","Last Name","If no Last Name is defined in the Outlook record, the First Name value will be used for the 
   both first name and last name valued in OroCRM"
   "Name Suffix","Name Suffix",""
-  "Description**","Notes","Outlook *""
-  "Email""Email","Any number of Emails may be mapped"
+  "Description","Notes",""
+  "Email","Email","Any number of Emails may be mapped"
   "Phone","Primary Phone","Only the first OroCRM phone number is mapped"
   "Job Title","Job Title",""
   "Birthday","Birthday",""
-  "Gender","Gender"
-  "Fax","Fax"
-  "Address of a *Billing* Type","Business Address"
-  "Address of a *Shipping* Type","Home Address"
-  "Address with no type defined","Other Address"
+  "Gender","Gender",""
+  "Fax","Fax",""
+  "Address of a *Billing* Type","Business Address",""
+  "Address of a *Shipping* Type","Home Address",""
+  "Address with no type defined","Other Address",""
   
 Task Mapping  
 ^^^^^^^^^^^^
@@ -158,7 +158,7 @@ Outlook status not available in OroCRM are mapped as follows:
   :header: "**Outlook Task Status**","**OroCRM Task Status**"
   :widths: 20, 20
   
-  "Not Started",""Open""
+  "Not Started","Open"
   "Completed","Closed"
   "Waiting","In progress"
   "Deferred","In Progress"
@@ -209,19 +209,19 @@ Synchronization from OroCRM to Outlook
 
 Synchronization is run in the same way for records of activities, tasks and calendar events: 
 
-.. img:: ./user_guide/img/outlook/outlook_from_oro_diag.png
+.. image:: ./img/outlook/outlook_from_oro_diag.png
 
 All the records processed in the OroCRM since the latest synchronization date and available to the user are 
 checked:
 
 - If id of an OroCRM record matches an OroCRM_id value of an Outlook record, the Outlook record is updated. 
- (Values of all the mapped fields in Outlook are overwritten with corresponding values from OroCRM)
+  (Values of all the mapped fields in Outlook are overwritten with corresponding values from OroCRM)
  
 - If id of an OroCRM record does not match OroCRM_id of any Outlook records, their keys are checked against Outlook
   records with empty OroCRM_id field.
   
   -  As soon as an Outlook record with empty OroCRM_id and matching key is found, it is updated from OroCRM. 
-    OroCRM_id field is filled. 
+     OroCRM_id field is filled. 
 
   - If no Outlook record with empty OroCRM_id and matching key is found, a new record is created in Outlook.
 
@@ -250,16 +250,21 @@ checked:
 Synchronization from OroCRM to Outlook
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. img:: ./user_guide/img/outlook/oro_from_outlook_diag.png
+.. image:: ./img/outlook/oro_from_outlook_diag.png
 
 All the records processed in the Outlook since the latest synchronization date and available to the user are 
 loaded:
 
 - If OroCRM_id field of a record is empty, a new record is created in OroCRM
+
 - If OroCRM_id field is defined and 
+
   - if this is the first synchronization or resynchronization, the record is deleted
+  
   - otherwise, the OroCRM_id is checked against id values of the records in OroCRM:
+
     - if a records with the matching id is found in OroCRM, it is updated with data from Outlook
+	
 	- if a record with a matching if is absent in OroCRM, it is deleted from the Outlook
 
 
@@ -305,4 +310,4 @@ synchronization from Oultlook to OroCRM.
 
   
   
-.. |alert| img:: ./user_guide/img/outlook/alert.png
+.. |alert| image:: ./img/outlook/alert.png
