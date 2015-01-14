@@ -97,7 +97,85 @@ Choose "Settings". *"OroCRM for Outlook Settings"* window will emerge.  The foll
     For example, |alert|
 
   - If the box is not checked, alert will not appear on the bottom panel."
+
+
   
+Mapped Fields
+-------------
+Values of fields of an OroCRM and Outlook records are mapped, as described above. The following fields are mapped:
+
+Contact Mapping
+^^^^^^^^^^^^^^^
+
+The following fields of an OroCRM Contact record are mapped to the following fields of the Outlook Contact Record. 
+
+.. csv-table::
+  :header: "**OroCRM Field**","**Outlook Field**","Note"
+  :widths: 20, 20, 20
+  
+  "First Name","First Name",""
+  "Middle Name","Middle Name",""
+  "Last Name","Last Name","If no Last Name is defined in the Outlook record, the First Name value will be used for the 
+  both first name and last name valued in OroCRM"
+  "Name Suffix","Name Suffix",""
+  "Description**","Notes","Outlook *""
+  "Email""Email","Any number of Emails may be mapped"
+  "Phone","Primary Phone","Only the first OroCRM phone number is mapped"
+  "Job Title","Job Title",""
+  "Birthday","Birthday",""
+  "Gender","Gender"
+  "Fax","Fax"
+  "Address of a *Billing* Type","Business Address"
+  "Address of a *Shipping* Type","Home Address"
+  "Address with no type defined","Other Address"
+  
+Task Mapping  
+^^^^^^^^^^^^
+
+The following fields of an OroCRM Task record are mapped to the following fields of the Outlook Task Record. 
+
+.. csv-table::
+  :header: "**OroCRM Field**","**Outlook Field**"
+  :widths: 20, 20
+  
+  "Subject","Subject"
+  "Priority","Importance"
+  "Due Date","Due Date"
+  
+OroCRM statuses are mapped to Outlook as is:
+ 
+.. csv-table::
+  :header: "**OroCRM Task Status**","**Outlook Task Status**"
+  :widths: 20, 20
+  
+  "In progress","In progress"
+  "Closed","Closed"
+  "Open","Open"
+
+Outlook status not available in OroCRM are mapped as follows:
+  
+.. csv-table::
+  :header: "**Outlook Task Status**","**OroCRM Task Status**"
+  :widths: 20, 20
+  
+  "Not Started",""Open""
+  "Completed","Closed"
+  "Waiting","In progress"
+  "Deferred","In Progress"
+
+Calendar Mapping  
+^^^^^^^^^^^^^^^^
+
+The following fields of an OroCRM Calendar Event record are mapped to the following fields of the Outlook Appointments. 
+
+.. csv-table::
+  :header: "**OroCRM Field**","**Outlook Field**"
+  :widths: 20, 20
+  
+  "Title","Subject"
+  "Start","Start time"
+  "End","End time"
+  "All-Day Event ","All day event"
   
 Synchronization Workflow
 ------------------------
@@ -109,12 +187,9 @@ button on the side panel, subject to the settings defined as described above.
 
 Identifying a Record
 ^^^^^^^^^^^^^^^^^^^^
-
-Every contact, task and calendar event present in OroCRM has a unique id.
-
 For every entity synchronized there is also a key defined. The key is a set of field values used to identify an entity
 record. Fields of a key can be chosen, subject to the specific company needs.
-The following keys are used by default:
+The following keys are used by default: 
 
 .. csv-table::
   :header: "**Entity**","**Key Fields**" 
@@ -122,91 +197,112 @@ The following keys are used by default:
   
   "Contact","First Name, Last Name, Gender and Birthday"
   "Calendar Event","Title(Subject), Start Time, End Time and whether it is an All-day event"
-  "Task""????????"
+  "Task","Subject and Task Priority (Importance)"
   
-Synchronization is run in the similar manner for records of activities: 
 
-Synch from OroCRM to Outlook
-----------------------------
+Every contact, task and calendar event present in OroCRM has a unique id. When the record is saved in the Outlook, the
+id value is save in the OroCRM_id field.
+
+ 
+Synchronization from OroCRM to Outlook
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Synchronization is run in the same way for records of activities, tasks and calendar events: 
+
+.. img:: ./user_guide/img/outlook/outlook_from_oro_diag.png
+
+All the records processed in the OroCRM since the latest synchronization date and available to the user are 
+checked:
+
+- If id of an OroCRM record matches an OroCRM_id value of an Outlook record, the Outlook record is updated. 
+ (Values of all the mapped fields in Outlook are overwritten with corresponding values from OroCRM)
+ 
+- If id of an OroCRM record does not match OroCRM_id of any Outlook records, their keys are checked against Outlook
+  records with empty OroCRM_id field.
+  
+  -  As soon as an Outlook record with empty OroCRM_id and matching key is found, it is updated from OroCRM. 
+    OroCRM_id field is filled. 
+
+  - If no Outlook record with empty OroCRM_id and matching key is found, a new record is created in Outlook.
+
+
+.. note:: 
+    
+    During the first synchronization or resynchronization, all the Outlook records with non-empty OroCRM_id field are
+    deleted first, and then OroCRM record keys are checked against all of them.
+
 
 .. csv-table::
-  :header: "**Entity**","**Key Fields**" 
+  :header: "**If**","**Then**" 
   :widths: 10, 30
-
-
-First Synchronization from OroCRM to Outlook
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Keys of all the records processed in the system since the synchronization date and available to the user are 
-checked:
-
-- If the key of an OroCRM record matches a key of one or several records in Outlook, all these records in Outlook are updated. 
- (Values of all the mapped fields in Outlook are overwritten with their values from OroCRM)
-
-- If the key of an OroCRM record does not match a key of any Outlook records, a new record is created in Outlook.
-
-OroCRM_id field (ID) is added to each of the records in Outlook.
- 
- 
-Next Synchronizations from OroCRM to Outlook
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-IDs of all the records processed in the system since the latest synchronization date and available to the user are 
-checked:
-
-- If the ID of an OroCRM record matches an ID of one or several records in the Outlook record(s) is updated. 
- (Values of all the mapped fields in Outlook are overwritten with their values from OroCRM)
-
-- If the ID of an OroCRM record does not match an ID of any Outlook records, the keys are checked:
-
-  - If the key of an OroCRM record matches a key of an Outlook record (or records), all these records in Outlook are updated.  
-   (Values of all the mapped fields in Outlook are overwritten with their values from OroCRM)
-
-  - If the key of an OroCRM record does not match a key of any Outlook records, a new record is created in Outlook.
-  
-Resynch from OroCRM to Outlook
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-All the records with not empty ID field are deleted from the Outlook and First Synch from OroCRM to Outlook is
-performed.
-
-
-
-
-Synch from Outlook to OroCRM
-----------------------------
-
-First Synch from Outlook to OroCRM
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Keys of all the records processed in the Outlook since the synchronization date are checked:
-
-- If the key of an Outlook record matches a key of one or several records in OroCRM, all these records in OroCRM are updated. 
- (Values of all the mapped fields in OroCRM are overwritten with their values from Outlook)
-
-- If the key of an Outlook record does not match a key of any OroCRM records, a new record is created in OroCRM.
-
-OroCRM_id field (ID) is created for each new record added from the Outlook.
- 
-Next Synch from Outlook to OroCRM
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-IDs of all the records processed in the Outlook since the latest synchronization date are checked:
-
-- If the ID of an Outlook record matches the ID an OroCRM record, the OroCRM records is updated. 
- (Values of all the mapped fields in Outlook are overwritten with their values from OroCRM)
-
-- If the ID of an Outlook record does not match ID of any OroCRM records, the record is deleted from Outlook (???? or just the record is ignored)
-
-- If an Outlook record has no OroCRM id value, the keys are checked:
-
- - If the key of an Outlook record matches a key of one or several records in OroCRM, all these records in OroCRM are updated. 
-  (Values of all the mapped fields in OroCRM are overwritten with their values from Outlook)
-
-  - If the key of an Outlook record does not match a key of any OroCRM records, a new record is created in OroCRM.
+	
+  "Such record already exists in Outlook","Values of the mapped fields of the OroCRM record replace corresponding values 
+  for the Outlook record."
+  "A record doesn’t yet exist in Outlook","OroCRM creates the record in Outlook."
+  "Multiple matching records exist in Outlook","OroCRM will update one of them"
+  "You've updated a record in OroCRM","Values of the mapped fields of the OroCRM record replace corresponding values 
+  for the Outlook record."
+  "You've updated a record in Outlook","The updates remain in the Outlook record, but won’t sync to the OroCRM."
+  "You've deleted a record in Outlook","OroCRM will create the record again."
+  "You've deleted a record in OroCRM","The recodr will stay in the Outlook with no changes."
   
 
+Synchronization from OroCRM to Outlook
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. img:: ./user_guide/img/outlook/oro_from_outlook_diag.png
+
+All the records processed in the Outlook since the latest synchronization date and available to the user are 
+loaded:
+
+- If OroCRM_id field of a record is empty, a new record is created in OroCRM
+- If OroCRM_id field is defined and 
+  - if this is the first synchronization or resynchronization, the record is deleted
+  - otherwise, the OroCRM_id is checked against id values of the records in OroCRM:
+    - if a records with the matching id is found in OroCRM, it is updated with data from Outlook
+	- if a record with a matching if is absent in OroCRM, it is deleted from the Outlook
+
+
+.. csv-table::
+  :header: "**If**","**Then**" 
+  :widths: 10, 30
+	
+  "Such record (record with such id) already exists in OroCRM","Values of the mapped fields of the Outlook record 
+  replace corresponding values for the OroCRM record."
+  "A record doesn’t yet exist in OroCRM","A new record is created in OroCRM."
+  "You've updated a record in OroCRM","Values of the mapped fields of the Outlook record replace corresponding values 
+  of the OroCRM record."
+  "You've updated a record in Outlook","Values of the mapped fields of the Outlook record replace corresponding values 
+  of the OroCRM record."
+  "You've deleted a record in Outlook","The record will stay in OroCRM."
+  "You've deleted a record in OroCRM","The record will be deleted from Outlook."
   
-Bidirectional Synchronization  
+ 
+Bidirectional Synchronization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Synchronization from OroCRM to Oultlook is performed.
-Synchronization from Outlook to OroCRM is performed.
-If the ID of an Outlook record does not match ID of any OroCRM records, the record is deleted from Outlook.
+For Bidirectional synchronization, synchronization from OroCRM to Outlook is performed first and followed by 
+synchronization from Oultlook to OroCRM.
+
+.. csv-table::
+  :header: "**If**","**Then**" 
+  :widths: 10, 30
+	
+  "A record exists in both OroCRM and Outlook","Values of the mapped fields of the OroCRM record 
+  replace corresponding values for the Outlook record."
+  "A record doesn’t yet exist in OroCRM","A new record is created in OroCRM."
+  "A record doesn’t yet exist in Outlook","A new record is created in Outlook."
+  "You've updated a record in OroCRM","Values of the mapped fields of the OroCRM record replace corresponding values 
+  of the Outlook record."
+  "You've updated a record in Outlook","Values of the mapped fields of the Outlook record replace corresponding values 
+  of the OroCRM record."
+  "You've updated a record in the both OroCRM and Outlook","Subject to your conflict resolution settings"
+  "You've deleted a record in Outlook","The record will stay in OroCRM and will be added to Outlook."
+  "You've deleted a record in OroCRM","The record will be deleted from Outlook as well."
 
 
+  
+
+  
+  
 .. |alert| img:: ./user_guide/img/outlook/alert.png
