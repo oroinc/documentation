@@ -129,8 +129,13 @@ Synchronization is run in the similar manner for records of activities:
 Synch from OroCRM to Outlook
 ----------------------------
 
+.. csv-table::
+  :header: "**Entity**","**Key Fields**" 
+  :widths: 10, 30
+
+
 First Synchronization from OroCRM to Outlook
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Keys of all the records processed in the system since the synchronization date and available to the user are 
 checked:
 
