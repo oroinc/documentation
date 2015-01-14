@@ -225,8 +225,8 @@ checked:
 - If id of an OroCRM record does not match OroCRM_id of any Outlook records, their keys are checked against fields of 
   Outlook records with empty OroCRM_id field.
   
-  -  As soon as an Outlook record with empty OroCRM_id and matching key is found, it is updated from OroCRM. 
-     OroCRM_id field is filled. 
+  -  As soon as an Outlook record with empty OroCRM_id and matching key is found, it is updated from OroCRM and 
+     the id value is saved from OroCRM into the OroCRM_id field of the Outlook record. 
 
   - If no Outlook record with empty OroCRM_id and matching key is found, a new record is created in Outlook.
 
