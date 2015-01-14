@@ -41,12 +41,12 @@ Initially, default settings are applied. Uncheck "Use Default" box to change the
 
 .. caution::
 
-    If "Use Default" box has been checked, the default values will be applied regardless of the values entered for the 
+    If "Use Default" box has been checked, the default values will be applied regardless the values entered for the 
     field.
 
 .. csv-table::
   :header: "**Setting**","**Description**","**Possible Values**","**Default Value**" 
-  :widths: 20, 20, 30, 15
+  :widths: 20, 30, 25, 20
 
   "**Sync Direction**","The data synchronization direction","
   
@@ -120,11 +120,11 @@ The following fields of an OroCRM Contact record are mapped to the following fie
   "First Name","First Name",""
   "Middle Name","Middle Name",""
   "Last Name","Last Name","If no *Last Name* is defined in the Outlook record, the *First Name* value will be used for 
-  the both first name and last name in OroCRM"
+  the both first name and last name in OroCRM."
   "Name Suffix","Name Suffix",""
   "Description","Notes",""
-  "Email","Email","Any number of Emails may be mapped"
-  "Phone","Primary Phone","Only the first OroCRM phone number is mapped"
+  "Email","Email","Any number of Emails may be mapped."
+  "Phone","Primary Phone","Only the first OroCRM phone number is mapped."
   "Job Title","Job Title",""
   "Birthday","Birthday",""
   "Gender","Gender",""
@@ -191,7 +191,7 @@ button on the side panel, subject to the settings defined.
 
 Identifying a Record
 ^^^^^^^^^^^^^^^^^^^^
-For every entity synchronized there is also a key defined. The key is a set of field values used to identify an entity
+For every entity synchronized, there is also a key defined. The key is a set of field values used to identify an entity
 record. Fields of a key can be chosen subject to the specific company needs and defined at the back-end.
 The following keys are used by default: 
 
