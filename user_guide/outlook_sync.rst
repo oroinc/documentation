@@ -2,7 +2,7 @@
 Synchronization with Outlook
 ============================
 
-OroCRM enterprise version supports data synchronization in the OroCRM and Outlook accounts.
+OroCRM enterprise version supports data synchronization in the OroCRM and Outlook.
 Now, all the contacts, tasks and calendar events available for the user can be synchronized with the specified
 Outlook account and backwards. 
 
@@ -80,7 +80,7 @@ Choose "Settings". *"OroCRM for Outlook Settings"* window will emerge.  The foll
   :header: "**Name**","**Description**" 
   :widths: 10, 30
 
-  "**OroCRM URL**","The URL address of your OroCRM instance. Mandatory field."
+  "**OroCRM URL**","The Web address of your OroCRM instance. Mandatory field."
   "**Ignore self-signed certificate**","The box must be checked. Mandatory field."
   "**User**","Your Username as defined on *My user* page of the OroCRM. Mandatory field."
   "**Api Key**","API Key as generated on *My user* page of the OroCRM. Mandatory field."
@@ -252,7 +252,7 @@ checked:
   "You've deleted a record in OroCRM.","The recodr will stay in the Outlook with no changes."
   
 
-Synchronization from OroCRM to Outlook
+Synchronization from Outlook to OroCRM
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ./img/outlook/oro_from_outlook_diag.png
