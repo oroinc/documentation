@@ -182,7 +182,7 @@ The following fields of an OroCRM Calendar Event record are mapped to the follow
   "End","End time"
   "All-Day Event ","All day event"
   
-..note ::
+.. note::
  
      Only calendar assigned to the specified user is mapped, regadless of access settings. 
      
