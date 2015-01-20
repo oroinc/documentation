@@ -1,59 +1,324 @@
 
+.. _user-guide-workflow-management-basics:
+
 Workflow Management
 ===================
 
-*Used application: OroCRM 1.2.0*
-
-This article provides description of Workflow Management feature from the the user's point of view.
-
-
-.. _user-guide-workflow-management-basics:
-
-Basics
-------
-
-Let's start with description of the primary concept and definition of terms.
-
-**Workflow** is a set of ordered actions that can be performed with the specific entity. Workflow allows the user to manage entities, update existing ones and create new. From the user's POV workflow appears as a set of buttons which may open forms that allow to manipulate entity data.
-
-Each entity may have unlimited number of workflows related to it, bun only one of them can be active. Each entity record at any given moment in time can be subject to only one workflow. It is possible however to have several flows for one entity and switch between them if you need to do so. When a workflow is deleted, all its existing relations to entities and entity records are lost.
-
-**Step** is a "static" element of a workflow. At any given moment in time, the entity record that is subject to the workflow ("the workflow entity" hereinafter) must be in some step – as a consequence, every workflow must consist of at least one step. One of the workflow steps can be designated as the **default step.** Designating some step as the default means that newly created records of workflow entity will have a workflow started in the default step.
-
-Workflow steps are shown in the small widget on the workflow entity view page in a particular step ("step view" hereinafter). This widget shows all past steps of the workflow in black, the current step in green, and, optionally, future steps in grey. The latter option is determined by the "display steps ordered" flag (see below).
-
-Please note that workflow step should not be confused with entity status. It is especially important when they have similar names, e.g. "New Lead" step of a Sales Process and "New" status for the related Lead. The difference between the two should be clearly explained to users to avoid confusion.
-
-Workflow steps can be used in filtering queries and conditions in reports.
-
-**Transition** is a "dynamic" element of a workflow. Transitions are used to move the workflow from one step to another, and to manipulate entity data (not restricted to the workflow entity data). Transitions appear as buttons on the step view. Each transition may have ACL resource that specifies whether the particular transition is available for the current user.
-
-Each workflow step must have at least one transition, either incoming, or outgoing. A transition can point to the same step it is initiated from – in this case it is called "self-transition". Steps and transitions together form a so-called `directed graph`_, where steps are nodes and transitions are arcs.
-
-**Starting transition** is a special case of transition. The main difference from a regular transition is that it has no starting step (this special point is referred to as the "Start" in the workflow management UI). Every workflow must have either a default step, or a starting transition.
-
-**Transition form** is a form that (if defined) is shown to the user after he clicks the transition button. It allows the user to manipulate entity data during the transition, and the data is not restricted to just workflow entity data – e.g., in the Sales Process workflow the form for qualifying the Lead includes attributes for the Opportunity that will be created as a result of the transition.
-
-Forms are optional, and transition may have no form attached to it (e.g. Disqualify Lead in the Sales Process workflow). Most transition forms appear in the popup windows, but in some elaborate cases like starting transitions for the Sales Process workflow they require a full page view.
-
-**Preconditions** is a set of conditions that determine whether the transition is available to the user. Preconditions are checked every time the step view is accessed, and if they are not met, the transition button will not appear on the step view. Preconditions are also checked when the transition form (see above) is committed, and if they are not met, the transaction is not conducted.
-
-*Preconditions are not yet available on the UI and can be accessed only via configuration files.*
-
-**Conditions,** unlike preconditions, are checked only when the transition form is committed, and they determine whether the transaction will be conducted. If a transition has both, preconditions are checked first, and then are conditions.
-
-*Conditions are not yet available on the UI and can be accessed only via configuration files.*
-
-**Post actions** are committed after the transaction is conducted (i.e. the transition form is submitted, preconditions and conditions are met, and the workflow is moved to the destination step). Those actions may include, but not limited to, creation of another entity, manipulation of the existing entity data, email notifications, etc.
-
-Note that if a post action creates a new record of an entity that has an active workflow with default step, it will be started automatically.
-
-*Post actions are not yet available on the UI and can be accessed only via configuration files.*
-
-.. _directed graph: http://en.wikipedia.org/wiki/Directed_graph
+Basically, a workflow is a sequence of industrial, administrative of other processes applied to a 
+piece of work from initiation to completion. Workflow records in OroCRM represent such sequences of processes for work 
+applied to instances of an OroCRM :term:`entity <Entity>`. From this article you will learn to understand, create and 
+manage workflows.
 
 
-Workflow Grid
+Steps, Transitions and Attributes
+---------------------------------
+
+Each of the processes or actions applied to the entity is a *workflow transition* and the state of the entity before or
+after a transition is a *workflow step*.
+
+In the example below you can see a workflow of a document creation.
+
+.. image:: ./img/workflows/wf_example.png
+
+The workflow transitions are the arrows, that show what action can be applied to the document at a certain step.
+
+The workflow steps are in squares (In progress, Under review, Finished) and correspond to the state of the document.
+
+Attributes (also referred as "fields")are characteristics of an entity. For example, zip-code and street name are 
+attributes of an address.
+
+At the end of each transition you can change some attributes of the record processed. 
+
+In our example we are working with documents. Our "document" entity has the following attributes:
+  
+  - "Name" that must be defined after transition "Start Writing" and can be changed after transitions "Submit for 
+    review" and "Return for rework" 
+	
+ -  "Number of Pages" - that must be defined after "Submit for review" and can be changed after "Approved"
+
+
+UI Limitation
+-------------
+ 
+OroCRM workflows can be created from the both back-end and the UI. The following functions can be enabled for a workflow
+only from the back-end and require some coding skills:
+ 
+ 
+- Define Init and Post Actions such as creation of another entity, processing of of the existing entity data, 
+  email notifications, and other similar actions performed right before of after the transition.
+
+ 
+- Define precondition and conditions to check if the transition can be performed.
+  Preconditions are checked every time a View page is accessed or a transition is submitted. If preconditions are not 
+  met, the transition button is not available, and the transition cannot be submitted. 
+  Conditions are checked only when submitting the transition. 
+ 
+- Define validation for the data input in the course of transition.
+
+- Create attributes for records not related to the entity.
+
+ 
+Creating a Workflow in the UI
+-----------------------------
+
+This way, *Workflows created from the UI are comparatively simple and aimed at processing of the records already present
+in the system.*
+
+In order to create a workflow for an entity:
+
+1. Go to the *System → Workflows* page and click the :guilabel:`Create Workflow` button in the top right corner to get
+   to the *Create Workflow* page.
+   
+   |create_wf_page|
+
+2. Define :ref:`general workflow details <user-guide-workflow-general>`, possible states of the entity records 
+   (:ref:`steps <user-guide-workflow-designer-steps>`), actions that can be applied to the records at each of the steps
+   (:ref:`transitions <user-guide-workflow-designer-transitions>`) and related setting, including the 
+   :ref:`attributes <user-guide-workflow-designer-attributes>` that can/must be changed after each transition
+
+3. Choose a :ref:``default step <user-guide-workflow-designer-default>` if any.
+
+4. Click the button in the top right corner to save the workflow.
+
+  
+.. note::
+
+    Each entity may have unlimited number of workflows related to it, bun only one of them can be active. 
+    Each record at any given moment in time can be subject to an only  workflow.
+  
+  
+.. _user-guide-workflow-general:
+
+General Details
+^^^^^^^^^^^^^^^
+
+Define basic information in the *General* section.
+
+.. image:: ./img/channel_guide/wf_general.png
+
+The following two fields are mandatory and **must** be defined:
+
+.. csv-table::
+  :header: "**Field**","**Description**"
+  :widths: 10, 30
+
+  "**Name**","Name used to refer to the workflow in the system (e.g. activate it, display it in the grid, etc.) It is 
+  recommended to keep the name meaningful."
+  "**Related Entity**", "A drop-down which allows you to choose an entity, for which the workflow is created. When the 
+  workflow is active, it can be used for records of this entity."
+  
+**Display Steps Ordered** box is not checked by default and specifies, the way workflow steps are displayed on the 
+widget. 
+
+- When the box is not checked, only the step that have actually been performed are shown and the current step is 
+  highlighted.
+
+.. image:: ./img/workflows/wf_display_widget.png
+  
+- When this box is checked, all the possible workflow steps are shown and the current step is highlighted
+
+.. image:: ./img/workflows/wf_display_widget_ordered.png
+
+..note::
+
+   The functionality can be a bit confusing for branching workflows (so, in the example, you can see both Disqualified 
+   and Opportunity steps), but is rather useful for linear workflows, as the user can see possible future steps.
+
+
+.. _user-guide-workflow-designer-steps:
+
+Workflow Steps
+^^^^^^^^^^^^^^
+
+Define possible workflow steps in the *Designer* section.
+
+1. The first "Start" step is already defined. You need it a start point for the first transition.
+
+2. To add a step, click the :guilabel:`+ Add Step` button
+
+  |wf_designer_step|
+
+3. Define necessary step details in the "Add New Step" form.
+
+.. image:: ./img/workflows/wf_designer_step_form.png
+
+.. csv-table::
+  :header: "**Field**","**Description**"
+  :widths: 10, 30
+
+  "**Name**","Name used to refer to the step in the system (e.g. activate it, display it in the grid, etc.) It is 
+  recommended to keep the name meaningful.
+  
+  Name is the only mandatory field of a step"
+  "**Position**", "A number that defines a place where the step will be displayed on the  
+  :ref:`workflow widget <user-guide-worfklow-widget>`.
+  
+  .. note::
+  
+      Position may be specified with any non-negative integer.
+	  
+	  The step position on the widget depends on the order only (e.g. 0,2,70). 
+
+	  Steps with the same position are displayed in the order they have been performed. If a step with a smaller 
+	  position value has been performed later, steps with higher position values are not displayed in the the widget."
+  "**Final**","The flag shall be checked for final steps of the flow"
+
+  
+.. _user-guide-workflow-designer-transitions:
+
+Workflow Transitions
+^^^^^^^^^^^^^^^^^^^^
+
+Define possible transitions in the *Designer* section.
+
+1. The first "Start" step is already defined. You need it a start point for the first transition.
+
+2. To add a step, click the :guilabel:`+ Add Transition` button
+
+  |wf_designer_transition|
+
+3. Define necessary step details in the "Add New Transition" form.
+
+.. image:: ./img/workflows/wf_designer_transition_form.png
+
+The following fields are mandatory:
+
+.. csv-table::
+  :header: "**Field**","**Description**"
+  :widths: 10, 30
+
+  "**Name**","Name used to refer to the transition in the system. It is recommended to keep the name meaningful."
+  "**From step and To step**", "A dropdown contains the list of steps defined for the workflow. You can choose any two 
+  steps between which the transition is made."
+  "View form","When a transition is performed, a form with the entity 
+  :ref:`attributes <user-guide-workflow-designer-attributes>` appears that shall be submitted to change the step.
+  Use the field, to define if this form shall be displayed in a popup window or a separate page."
+  
+There is also a number of optional fields that can be used to modify the transition in the UI:
+
+.. csv-table::
+  :header: "**Field**","**Description**"
+  :widths: 10, 30
+
+  "**Warning Message**","A piece of text that will be displayed every time a user is about to perform a transition."
+  "**Button icon**","Icon used when displaying the transition button"
+  "**Button Style**","Choose the transition button style from the dropdown."
+
+In the *"Button preview"* you can see how the button will look in the UI.
+
+
+.. _user-guide-workflow-designer-attributes:
+
+*Transitions Attributes*
+^^^^^^^^^^^^^^^^^^^^^^^^
+	
+In order to define the attribute settings:
+
+- Go to the *Add Transition → Attributes* 
+
+  |wf_designer_transition_attributes|
+  
+.. csv-table::
+  :header: "**Field**","**Description**"
+  :widths: 10, 30
+
+  "**Entity Field**","Choose field of the entity or its related entities that can/must be defined in the course of the 
+  transition.
+  	  
+  This is an only mandatory field of the attributes section"
+  "**Label**","Use the field if you want to change the way it is displayed in the UI. The system *label* value of the 
+  entity is used by default."
+  "**Required**","The flag shall be checked if defining the attribute must be mandatory for the transition."
+ 
+- Click :guilabel:`+ Add` button to add one more field (if necessary)
+
+- Click :guilabel:`+ Apply` to apply the attribute settings.
+
+
+.. _user-guide-workflow-designer-default:
+
+Default Step
+^^^^^^^^^^^^
+
+You can also define a default step for the records of the entity, processed by the workflow. 
+If a default step is specified, once you create a record of the entity, a workflow will be created for it and set to the
+default step. 
+If no default step is specified, one of the transitions from "Start" step must be performed to create a workflow for the
+record. 
+
+
+Workflow Usage in the UI
+------------------------
+
+All the workflows, whether they were created from the back-end or in the UI, can be applied to the records of a related
+entity.
+
+If an initial action that creates a new record of the entity has been defined (from the back-end) for the workflow,
+the transition buttons are available in the top right corner of the entity :ref:`grid <user-guide-ui-components-grids>`,
+such as :guilabel:`Start From Lead` and :guilabel:`Start From Opportunity` that create a new Lead or Opportunity record
+at the start of a Sales Process.
+
+.. image:: ./img/workflows/wf_display_grid.png
+
+Button of all the transitions, for which pre-conditions are met (if any), are displayed at
+:ref:`View pages <user-guide-ui-components-view-pages>` of the entity records, such as :guilabel:`Develop`, 
+:guilabel:`Close As Won` and :guilabel:`Close As Lost` buttons on a View page of a Sales Process record qualified to an 
+opportunity.
+
+.. image:: ./img/workflows/wf_display_form.png
+
+All the performed steps of the workflow are displayed at the widget on the top of the View pages of the entity records, 
+subject to the *Workflows → General → Show Ordered* and *Workflows → Designer → POSITION* settings.
+
+.. image:: ./img/workflows/wf_display_widget.png
+
+Current step, or all the steps performed can be displayed on the entity grid, subject to the *Entity Management → 
+Workflow Step on Grid* settings.
+
+.. image:: ./img/workflows/wf_display_step.png
+
+
+Managing Workflows
+------------------
+
+The following actions can be performed on workflows:
+
+.. From the :ref:`grid <user-guide-ui-components-grids>`
+
+From the grid:
+
+.. image:: ./img/channel_guide/channels_edit.png
+
+- Delete the channel: |IcDelete|
+
+.. caution::
+
+    Once a channel has been deleted, all of the data related to it will be deleted as well.
+
+- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel: |IcEdit|
+
+.. caution::
+
+    You cannot edit the channel type if data from the channel has been already been uploaded into the system.
+
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel:  |IcView|
+
+
+From the :ref:`View page <user-guide-ui-components-view-pages>`:
+
+.. image:: ./img/channel_guide/channels_created_b2b_view.png
+
+- Deactivate or activate channels.  No new data from the channel will be uploaded for 
+  an inactive channel.
+
+- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel
+
+- Delete the channel
+
+
+ 
+ 
+  Workflow Grid
 -------------
 
 Workflow grid displays a list of all existing workflows in the system. This grid is available in the main menu under "System" > "Workflow". The image below shows an example of such grid.
@@ -123,6 +388,11 @@ The "Configuration" block contains a table with the list of steps and transition
 * **Transitions** is a list of all transitions available for the particular step. To the left of an arrow is the transition name, to the right of an arrow is the destination step of the transition.
 
 * **Position** is the number that determines order of steps in the step widget. The higher is the number, the further to the right this step will appear in the step widget.
+
+
+
+
+
 
 
 Edit Page
@@ -353,3 +623,22 @@ And after clicking on OK button entity will be in step "Started" again with Proc
 
 Transitions can be executed any amount of times for the same entity, and all entered data will be stored at entity
 fields.
+
+
+.. |create_wf_page| image:: ./img/channel_guide/create_wf_page.png
+
+.. |wf_designer_step| image:: ./img/workflows/wf_designer_step.png
+
+.. |wf_designer_transition| image:: ./img/workflows/wf_designer_transition.png
+
+.. |wf_designer_transition_attributes image:: ./img/workflows/c.png
+
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle

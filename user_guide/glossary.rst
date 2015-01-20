@@ -33,4 +33,13 @@ Glossary
    Customer
       An entity of :term:`OroCRM` the instances of which represent people or businesses you have sold or are selling 
       goods and/or services to, and an instance of the Customer entity
-   
+	  
+   Workflow
+     A sequence of industrial, administrative of other processes applied to a piece of work from initiation to 
+	 completion and a record in OroCRM that represents such a sequence
+	 
+   Attribute
+     A characteristic of an entity. For example and  street,are attributes of an address.
+
+   Field
+     Another name of an :term:`attribute <Attribute>`   
