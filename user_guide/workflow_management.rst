@@ -76,7 +76,7 @@ In order to create a workflow for an entity:
    (:ref:`transitions <user-guide-workflow-designer-transitions>`) and related setting, including the 
    :ref:`attributes <user-guide-workflow-designer-attributes>` that can/must be changed after each transition
 
-3. Choose a :ref:``default step <user-guide-workflow-designer-default>` if any.
+3. Choose a :ref:`default step <user-guide-workflow-designer-default>` if any.
 
 4. Click the button in the top right corner to save the workflow.
 
@@ -88,7 +88,7 @@ General Details
 
 Define basic information in the *General* section.
 
-.. image:: ./img/channel_guide/wf_general.png
+.. image:: ./img/workfows/wf_general.png
 
 The following two fields are mandatory and **must** be defined:
 
@@ -241,8 +241,8 @@ If no default step is specified, one of the transitions from "Start" step must b
 record. 
 
 
-Workflow Usage in the UI
-------------------------
+Workflows in the UI
+-------------------
 
 All the workflows, whether they were created from the back-end or in the UI, can be applied to the records of a related
 entity.
@@ -259,7 +259,9 @@ Button of all the transitions, for which pre-conditions are met (if any), are di
 :guilabel:`Close As Won` and :guilabel:`Close As Lost` buttons on a View page of a Sales Process record qualified to an 
 opportunity.
 
-.. image:: ./img/workflows/wf_display_form.png
+.. image:: ./img/workflows/wf_display_view.png
+
+.. _user-guide-worfklow-widget:
 
 All the performed steps of the workflow are displayed at the widget on the top of the View pages of the entity records, 
 subject to the *Workflows → General → Show Ordered* and *Workflows → Designer → POSITION* settings.
@@ -325,7 +327,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 .. note::
 
-Edit form is similar to Create form, but all the previously defined values are already filled and can be changed.
+    Edit form is similar to Create form, but all the previously defined values are already filled and can be changed.
  
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
@@ -336,13 +338,13 @@ You can deactivate or activate and clone, as well as delete the workflow and get
 action buttons in the top right of the page. 
  
 
-.. |create_wf_page| image:: ./img/channel_guide/create_wf_page.png
+.. |create_wf_page| image:: ./img/workflows/create_wf_page.png
 
 .. |wf_designer_step| image:: ./img/workflows/wf_designer_step.png
 
 .. |wf_designer_transition| image:: ./img/workflows/wf_designer_transition.png
 
-.. |wf_designer_transition_attributes image:: ./img/workflows/c.png
+.. |wf_designer_transition_attributes| image:: ./img/workflows/c.png
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
