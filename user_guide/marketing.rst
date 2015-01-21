@@ -4,25 +4,14 @@
 Marketing Functionality
 =======================
 
-Marketing functionality is sharpened to organize and monitor marketing campaigns and mailings.
+OroCRM's Marketing functionality helps you efficiently organize and monitor marketing campaigns and mailings.
 
-The following entities are implemented in the OroCRM for the functionality-purposes:
-
-.. image:: ./img/marketing/marketing_all.png
-
-- :ref:`Marketing List <user-guide-marketing-lists>` records define a set of contact 
-  details for marketing needs (mass call or mailing).
-
-- :ref:`Campaign <user-guide-marketing-campaigns>` records represent marketing campaigns and 
-  keep their general information, related events and tracking settings.
-    
-- :ref:`Tracking Website <user-guide-marketing-tracking>` records define details of a website, for which tracking 
-  shall be performed. 
-
-  As soon as a campaign and tracking website record have been defined, you can modify the website code to  monitor 
-  campaign-related activity of the Website users, as described in the :ref:`How to Track Campaign Related Activities on the Website <user-guide-how-to-track>` guide
+With convenient and easy to use :ref:`Email templates <user-guide-email-template>` and automatically generated 
+:ref:`marketing list <user-guide-marketing-lists>` you can create a :ref:`mailing <user-guide-email-campaigns>` among 
+the eligible contacts that best suit the purpose of a specific marketing activity. 
+Along with that, OroCRM provides tools to monitor your addressees 
+:ref:`subscription state <user-guide-marketing-list-view-page>` and :ref:`track <user-guide-how-to-track>` how many 
+users have visited your website following a link in the mailing or from another 
+:ref:`campaign <user-guide-marketing-campaigns>` and their activity at the site. 
   
-- :ref:`Email Campaign <user-guide-email-campaigns>` records define the rules used to generate a
-  mailing. A marketing list must be chosen, campaign can be assigned, and website tracking can be used for every Email 
-  campaign.
- 
+
