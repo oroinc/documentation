@@ -55,7 +55,7 @@ There are two mandatory fields that **must** be defined:
   
   "Transport","The field defines the service to be used for the mailing. Out of the box, the only option is OroCRM. 
   Other means can be added in the course of customization."
-  "Template","Choose the Email template to be used from the drop-down. 
+  "Template","Choose the :ref:`Email template <user-guide-email-template>` to be used from the drop-down. 
   
   Please note that only the templates assigned to no entity or the same entity that the marketing list are available "
   
