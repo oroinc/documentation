@@ -24,8 +24,9 @@ Creating a Marketing List
 3. Define conditions in the *Filters* section. Only the records that meet the conditions will be added to the marketing
    list.
   
-4. Choose the :ref:`columns <user-guide-marketing-marketing-list-create-columns>` that will be visible on the *"View*" 
-   page of the list and available to third-party systems following integration
+4. Choose the :ref:`columns <user-guide-marketing-marketing-list-create-columns>` that will be visible on the 
+   :ref:`View page <user-guide-marketing-list-view-page>` of the list and available to third-party systems following 
+   integration
     
 5. Save the campaign in the system with the button in the top right corner of the page.
   
