@@ -27,7 +27,7 @@ The workflow steps are in squares (In progress, Under review, Finished) and corr
 Attributes (also referred as "fields") are characteristics of the record. For example, zip-code and street name are 
 attributes of an address.
 
-At the end of each transition you can change some attributes of the record processed. For example, document attributes 
+In the course of each transition you can change some attributes of the record processed. For example, document attributes 
 may be:
 
   - "Name" that must be defined after transition "Start Writing" and can be changed after transitions "Submit for 
@@ -43,7 +43,7 @@ OroCRM workflows can be created from the both back-end and UI. The following fun
 only from the back-end and require some coding skills:
  
  
-- Define Init and Post Actions such as creation of another entity, processing of of the existing entity data, 
+- Define Init and Post Actions such as creation of another entity, processing of the existing entity data, 
   email notifications, and other similar actions performed right before of after the transition.
 
  
