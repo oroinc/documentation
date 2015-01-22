@@ -4,10 +4,11 @@
 Marketing Lists
 ===============
 
-Marketing lists define a set of contact details to be used for marketing purposes (mass call or mailing). 
+Marketing lists define the rules for automatic generation of contact lists used for marketing purposes (mass call or 
+mailing). 
 
-For example, you can create a list that will contain only details of leads added to the system after October 1 with 
-addresses in California. 
+For example, you can create a list that will contain personal and contact details of leads added to the system after 
+October 1 with addresses in California. 
 
 .. _user-guide-marketing-lists-create:
 
@@ -17,16 +18,15 @@ Creating a Marketing List
 1. Go to the *Marketing → Marketing Lists* and click :guilabel:`Create Marketing List` button 
    in the top right corner of the grid.
    
-   Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge
+   Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
 
 2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list.
 
-3. Define conditions in the *Filters* section. Only the records that meet the conditions will be added to the marketing
-   list.
+3. Define a set of *Filters* used to generate the list.
   
 4. Choose the :ref:`columns <user-guide-marketing-marketing-list-create-columns>` that will be visible on the 
-   :ref:`View page <user-guide-marketing-list-view-page>` of the list and available to third-party systems following 
-   integration
+   :ref:`View page <user-guide-marketing-list-view-page>` of the list and available to third-party systems after 
+   integration.
     
 5. Save the campaign in the system with the button in the top right corner of the page.
   
@@ -68,68 +68,39 @@ Custom fields may be added subject to specific business-needs.
 Filters
 ^^^^^^^
 
-You can define conditions used to select the entity records for the marketing list, using the following tools: 
+Filters are necessary to choose only those records of the entity that you need for the marketing purposes.
+For example, you have chosen "Web Customer" as the "Entity". This includes all the customers of your Magento stores.
+However, you want to run a campaign only for active Customers from LA, who have an abandoned cart.  
 
-- **Field Condition**: only records that meet the condition are added to the list
+To do so, you simple define the rules for filters, to choose only those Web Customer records, for which:
 
-- **Conditions Group**: a set of field conditions
+- the field "Is Active"  equals to "Yes"
 
-- **Apply Segment**: only records that meet a specific set of predefined conditions (belong to a segment) are added to 
-  the list. (Segments are subject to a separate document)
+- the field "City" of their "Addresses" is any of "LA" or "Los Angeles", and
 
-Field conditions, condition groups and segment settings can be combined or ORed to define the final set of conditions. 
+- the "Status" field of the ""Cart" is Open.
 
-Field Condition
-"""""""""""""""
+.. image:: ./img/marketing/filters_example.png
 
-To define a field condition (for example, that all the Leads in the list have been created within the last month):
+More information about the ways to define filters is provided in the 
+:ref:`Filters Management <user-guide-filters-management>` guide.
 
-- Drag *"Field condition"* to the box on the right
-
-.. image:: ./img/marketing/list_filters_field_condition.png
-
-- Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
-
--  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
-
-.. image:: ./img/marketing/list_filters_field_condition_value.png
-
-
-Condition Group
-"""""""""""""""
-
-To add a condition group (e.g. state in the address of the lead or of the lead's B2B customer's contact shall be 
-"California" or "CA"):
-
-- Drag *"Conditions Group"* to the box on the right
-
-.. image:: ./img/marketing/list_filters_condition_group_01.png
-
-- Add several field conditions to the group
-
-.. image:: ./img/marketing/list_filters_condition_group_02.png
-
-- Define the field conditions and choose AND or OR conjunction for the conditions
-
-.. image:: ./img/marketing/list_filters_condition_group_03.png
-
-
-.. _user-guide-marketing-marketing-list-create-columns:
 
 Columns
 ^^^^^^^
 
 .. image:: ./img/marketing/list_columns.png
 
-In the "*Columns*" section, define the set of fields displayed in the grid of the marketing list *"View"* page.
-It serves the following purposes:
+In the "*Columns*" section, define the set of fields.
+The only goal of this set of fields is to visualise records that meet the filter requirements.
+Value of the chosen fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the 
+Marketing List.
+  
+.. note ::
 
-- Inside the system, it helps to visualise the list and see the instances included
-- In case of integration with external mailing services (such as MailChimp), values of these fields
-  will be available for the external system.
-- Marketing activities require some contact information, so at least one column that contains it must be 
-  selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary Email 
-  and Primary Phone fields).
+    Marketing activities require some contact information, so at least one column that contains it must be 
+    selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary 
+	Email and Primary Phone fields).
 
 .. image:: ./img/marketing/list_columns_01.png
   
