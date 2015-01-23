@@ -5,14 +5,17 @@ Workflow Management
 ===================
 
 Basically, a workflow is a sequence of industrial, administrative or other processes applied to a 
-piece of work from the initiation to completion. Workflow records in OroCRM represent such sequences of processes for work 
-applied to records of an OroCRM :term:`entity <Entity>`. From this article you will learn to understand, create and 
-manage workflows.
+piece of work from the initiation to completion. Workflow records ("workflows") in OroCRM represent such sequences of 
+processes for work applied to records (items) of OroCRM :term:`entities <Entity>`. 
+
+From this article you will learn to understand, create and manage workflows.
 
 
-Steps, Transitions and Attributes
----------------------------------
+Workflow Components 
+-------------------
 
+Steps and Transitions
+^^^^^^^^^^^^^^^^^^^^^
 Each of the processes or actions applied to a record is a *workflow transition* and the state of this record before or
 after a transition is a *workflow step*.
 
@@ -20,11 +23,16 @@ In the example below you can see a simple workflow of a document creation.
 
 .. image:: ./img/workflows/wf_example.png
 
-The workflow transitions are the arrows, that show what action can be applied to the document at a certain step.
+The **workflow steps** are "Start" and squares (In progress, Under review, Finished) and correspond to the state of the 
+document. Start step is needed only to specify the first condition (basically it is fake, and no workflow is ever in the
+Start step at any time but while the first transaction is performed)
 
-The workflow steps are in squares (In progress, Under review, Finished) and correspond to the state of the document.
+The **workflow transitions** are the arrows, that show what action can be applied to the document at a certain step.
 
-Attributes (also referred as "fields") are characteristics of the record. For example, zip-code and street name are 
+
+Attributes
+^^^^^^^^^^ 
+**Attributes** (also referred as "fields") are characteristics of the record. For example, zip-code and street name are 
 attributes of an address.
 
 In the course of each transition you can change some attributes of the record processed. For example, document attributes 
@@ -35,32 +43,13 @@ may be:
 	
  -  "Number of Pages" that must be defined after "Submit for review" and can be changed after "Approved"
 
-
-UI Limitation
--------------
- 
-OroCRM workflows can be created from the both back-end and UI. The following functions can be enabled for a workflow
-only from the back-end and require some coding skills:
- 
- 
-- Define Init and Post Actions such as creation of another entity, processing of the existing entity data, 
-  email notifications, and other similar actions performed right before of after the transition.
-
- 
-- Define precondition and conditions to check if the transition can be performed.
-  If preconditions are not met, the transition button is not available, and the transition cannot be submitted. 
-  Conditions play a similar role but influence only the ability to submit a transition. 
- 
-- Define validation for the data entered during the transition.
-
-- Create attributes for records not related to the entity.
-
  
 Creating a Workflow in the UI
 -----------------------------
 
-This way, *Workflows created from the UI are comparatively simple and aimed at processing of the records already present
-in the system.*
+.. hint:: 
+
+    Prior to creating a workflow in the system, it is a good idea to draw the sequence of steps and transitions.
 
 In order to create a workflow for an entity:
 
@@ -69,14 +58,22 @@ In order to create a workflow for an entity:
    
    |create_wf_page|
 
-2. Define :ref:`general workflow details <user-guide-workflow-general>`, possible states of the entity records 
-   (:ref:`steps <user-guide-workflow-designer-steps>`), actions that can be applied to the records at each of the steps
-   (:ref:`transitions <user-guide-workflow-designer-transitions>`) and related setting, including the 
-   :ref:`attributes <user-guide-workflow-designer-attributes>` that can/must be changed after each transition
+2. Define :ref:`general workflow details <user-guide-workflow-general>`
 
-3. Choose a :ref:`default step <user-guide-workflow-designer-default>` if any.
+3. Define possible :ref:`steps <user-guide-workflow-designer-steps>`
 
-4. Click the button in the top right corner to save the workflow.
+4. Define :ref:`transitions <user-guide-workflow-designer-transitions>` that can be applied to the records at each of 
+   the steps and related setting, including the :ref:`attributes <user-guide-workflow-designer-attributes>` that 
+   can/must be changed after each transition 
+   
+5. Choose a :ref:`default step <user-guide-workflow-designer-default>` if any.
+
+6. Click the button in the top right corner to save the workflow.
+
+.. note::
+   
+    A transition can be defined as soon as there is at least one step but the "Start", however it is often simpler to
+	define all the steps and then all the transitions between them.
 
   
 .. _user-guide-workflow-general:
@@ -239,9 +236,31 @@ default step.
 If no default step is specified, one of the transitions from "Start" step must be performed to create a workflow for the
 record. 
 
+UI Limitations for Workflows Created
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+OroCRM workflows can be created from the both back-end and UI, however there is a number if functions that can be 
+defined for a workflow only from the back-end and require some coding skills:
+ 
+ 
+- Define Init and Post Actions such as creation of another entity, processing of the existing entity data, 
+  email notifications, and other similar actions performed right before of after the transition.
 
-Workflows in the UI
--------------------
+ 
+- Define precondition and conditions to check if the transition can be performed.
+  If preconditions are not met, the transition button is not available, and the transition cannot be submitted. 
+  Conditions play a similar role but influence only the ability to submit a transition. 
+ 
+- Define validation for the data entered during the transition.
+
+- Create attributes for records not related to the entity.
+	
+This way, Workflows created from the UI are comparatively simple and aimed at processing of the records already present
+in the system.
+
+
+Workflows Visualization
+-----------------------
 
 All the workflows, whether they were created from the back-end or in the UI, can be applied to the records of a related
 entity.
