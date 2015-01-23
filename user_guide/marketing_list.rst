@@ -85,6 +85,7 @@ To do so, you simple define the rules for filters, to choose only those Web Cust
 More information about the ways to define filters is provided in the 
 :ref:`Filters Management <user-guide-filters-management>` guide.
 
+.. _user-guide-marketing-marketing-list-create-columns:
 
 Columns
 ^^^^^^^
@@ -96,7 +97,7 @@ The only goal of this set of fields is to visualise records that meet the filter
 Value of the chosen fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the 
 Marketing List.
   
-.. note ::
+..note ::
 
     Marketing activities require some contact information, so at least one column that contains it must be 
     selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary 

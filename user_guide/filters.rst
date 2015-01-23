@@ -21,10 +21,10 @@ requirements of field conditions.
 :ref:`Segments <user-guide-filters-segments>` are sets of conditions and condition groups.
 
  
-.. _user-guide-filters-field-condition:
+.. _user-guide-filters-field-conditions:
 
-Field Condition
----------------
+Field Conditions
+----------------
 
 Field conditions specify what attributes the record should have to meet the filter conditions.
 
@@ -52,11 +52,12 @@ To define a field condition
 
   
 - (for example, that all the Leads in the list have been created within the last month):
- Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
+  
+- Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
 
 - Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
 
-.. image:: ./img/marketing/list_filters_field_condition_value.png
+.. image:: ./img/filters/field_condition_value.png
 
  
 
@@ -72,30 +73,15 @@ You can define conditions used to select the entity records for the marketing li
 
 Field conditions, condition groups and segment settings can be combined or ORed to define the final set of conditions. 
 
-Field Condition
-"""""""""""""""
+
+.. _user-guide-filters-condition-groups:
+
+Condition Groups
+----------------
 
 
 
+.. _user-guide-filters-segments:
 
-
-Condition Group
-"""""""""""""""
-
-To add a condition group (e.g. state in the address of the lead or of the lead's B2B customer's contact shall be 
-"California" or "CA"):
-
-- Drag *"Conditions Group"* to the box on the right
-
-.. image:: ./img/marketing/list_filters_condition_group_01.png
-
-- Add several field conditions to the group
-
-.. image:: ./img/marketing/list_filters_condition_group_02.png
-
-- Define the field conditions and choose AND or OR conjunction for the conditions
-
-.. image:: ./img/marketing/list_filters_condition_group_03.png
-
-
-.. _user-guide-marketing-marketing-list-create-columns:
+Segments
+--------

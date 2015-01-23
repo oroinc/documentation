@@ -1,5 +1,5 @@
 
-.. _user-guide-email-templates:
+.. _user-guide-email-template:
 
 Email Templates
 ===============

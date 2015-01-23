@@ -13,11 +13,11 @@ End user oriented documentation that explains how to administer and configure ap
     email_campaign
     email_template
     how_to_track
+    filters
     marketing
     marketing_campaign
     marketing_list
     marketing_tracking
-    export_import
     magento_channel_integration
     ui_components
     leads
