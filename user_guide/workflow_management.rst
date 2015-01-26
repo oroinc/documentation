@@ -366,7 +366,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 .. image:: ./img/workflows/wf_view_system.png
 
 You can deactivate or activate and clone, as well as delete the workflow and get to its Edit form with the corresponding 
-action buttons in the top right of the page. 
+action buttons in the top right corner of the page. 
  
 
 .. |create_wf_page| image:: ./img/workflows/create_wf_page.png
