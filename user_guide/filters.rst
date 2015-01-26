@@ -37,44 +37,46 @@ To define a field condition
 - A drop-down will appear. At the top of the drop-down, you can see the name of the entity, for which the records are 
   filtered. (In the example below it is a Web Customer) |field_condition_fields|
 
-  - You can choose a field (attribute) of this entity and define rule for it. For example, you can choose only those
-    Web customer that were created within the last month and use a specific currency (e.g. US dollars), 
-    etc. |field_condition_defined|
+ - You can choose a field (attribute) of this entity and define rule for it. For example, you can choose only those
+   Web customer that were created within the last month and use a specific currency (e.g. US dollars), 
+   etc. |field_condition_defined|
     
-  - You can also choose a field (attribute) of another entity, related to the one selected in the general settings. 
-    For example, if you want the list to contain only Web Customers who have an abandoned cart (in OroCRM this is a Cart
-	with "Status" = "Open").
-
- 	To do so, scroll the drop-down and choose this entity under the "Related Entities" header. |field_condition_rel_ent|
+ - You can also choose a field (attribute) of another entity, related to the one selected in the general settings. 
+   For example, if you want the list to contain only Web Customers who have an abandoned cart (in OroCRM this is a Cart
+   with "Status" = "Open").
 	
-	Name of the entity (In our example it is  "Carts") will appear at the top of the drop-down. 
-	|field_condition_rel_ent_carts|
+  To do so, scroll the drop-down and choose this entity under the "Related Entities" header. 
+	
+  |field_condition_rel_ent|
+	
+  Name of the entity (In our example it is  "Carts") will appear at the top of the drop-down. 
+  |field_condition_rel_ent_carts|
 	
 .. caution::
 
     Attributes in the "Fields" section belong to the entity chosen (in the example below, these are Carts).
 
-   - You can also choose a field (attribute) of another entity, related to the entity chosen in the "Related entities"
-     section. For example, if you want the list to contain only Web Customers who have a Cart, for which a Billing 
-	 address the "City" field of which is "Dallas"
+ - You can also choose a field (attribute) of another entity, related to the entity chosen in the "Related entities"
+   section. For example, if you want the list to contain only Web Customers who have a Cart, for which a Billing 
+   address the "City" field of which is "Dallas"
 	
-	 |field_condition_rel_rel_ent|
+	|field_condition_rel_rel_ent|
   
 - You can choose the conjunction for the the conditions: "AND" or "OR". 
 
   For example: 
     
-    - if you choose only Web customers,for whose carts the city of the billing address is Dallas and who were 
-      registered from Dec 10 to Jan 10 and use AND conjunction, the list will contain only those for whom the both 
-	  conditions are true.
+  - if you choose only Web customers,for whose carts the city of the billing address is Dallas and who were 
+    registered from Dec 10 to Jan 10 and use AND conjunction, the list will contain only those for whom the both 
+    conditions are true.
   
-      |field_condition_and|
+    |field_condition_and|
+  
+  - if you choose the same Field conditions but join them with OR, the list will contain all those from Dallas 
+    (regardless of their registration date) and all registered within the specified month (regardless of the billing 
+    address defined for their carts)
+
 	
-	- if you choose the same Field conditions but join them with OR, the list will contain all those from Dallas 
-      (regardless of their registration date) and all registered within the specified month (regardless of the
-	  billing address defined for their carts)
-
-
 .. hint::
    
     Once you have chosen the field to specify the conditions for, a default condition will appear. Some components of it
@@ -90,8 +92,10 @@ A Conditions Group is a set of Condition Fields treated as a single condition. T
 conditions. 
 
 For example, you want to see in the list: 
+
 - all the Web customers created in December 2014, who have an abandoned Cart (Cart with status Open) with a billing 
   address in Dallas, as well as
+  
 - all the Web customers created in January 2015, who have an abandoned Cart (Cart with status Open) with a billing 
   address in San Francisco
   
