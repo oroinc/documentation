@@ -5,7 +5,7 @@ Workflow Management
 ===================
 
 Basically, a workflow is a sequence of industrial, administrative or other processes applied to a 
-piece of work from the initiation to completion. Workflow records ("workflows") in OroCRM represent such sequences of 
+piece of work from the initiation to completion. Workflow records ("workflows") in OroCRM represent such sequenceф of 
 processes for work applied to records (items) of OroCRM :term:`entities <Entity>`. 
 
 From this article you will learn to understand, create and manage workflows.
@@ -73,7 +73,7 @@ In order to create a workflow for an entity:
 .. note::
    
     A transition can be defined as soon as there is at least one step but the "Start", however it is often simpler to
-	define all the steps and then all the transitions between them.
+    define all the steps and then all the transitions between them.
 
   
 .. _user-guide-workflow-general:
