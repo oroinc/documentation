@@ -5,8 +5,8 @@ Workflow Management
 ===================
 
 Basically, a workflow is a sequence of industrial, administrative or other processes applied to a 
-piece of work from the initiation to completion. Workflow records ("workflows") in OroCRM represent such sequenceф of 
-processes for work applied to records (items) of OroCRM :term:`entities <Entity>`. 
+piece of work from the initiation to completion. Workflow records ("workflows") in OroCRM represent such sequence for 
+work with :term:`records <Record>` of OroCRM :term:`entities <Entity>`. 
 
 From this article you will learn to understand, create and manage workflows.
 
@@ -19,29 +19,32 @@ Steps and Transitions
 Each of the processes or actions applied to a record is a *workflow transition* and the state of this record before or
 after a transition is a *workflow step*.
 
+Each transition connect to steps.
+
 In the example below you can see a simple workflow of a document creation.
 
 .. image:: ./img/workflows/wf_example.png
 
 The **workflow steps** are "Start" and squares (In progress, Under review, Finished) and correspond to the state of the 
-document. Start step is needed only to specify the first condition (basically it is fake, and no workflow is ever in the
-Start step at any time but while the first transaction is performed)
+document. 
 
-The **workflow transitions** are the arrows, that show what action can be applied to the document at a certain step.
+.. _user-guide-worfklow-start-step:
+
+**Start step** is used only to specify the first condition (basically the record is in the "Start" step before its \
+processing has started.
+
+The **workflow transitions** are the arrows that show what action can be applied to the document at a certain step.
 
 
 Attributes
 ^^^^^^^^^^ 
-**Attributes** (also referred as "fields") are characteristics of the record. For example, zip-code and street name are 
-attributes of an address.
+:term:`Attributes <Attribute>`,(also referred as "fields") are characteristics of the record. For example, zip-code and 
+street name are attributes of an address.
 
-In the course of each transition you can change some attributes of the record processed. For example, document attributes 
-may be:
-
-  - "Name" that must be defined after transition "Start Writing" and can be changed after transitions "Submit for 
-    review" and "Return for rework" 
-	
- -  "Number of Pages" that must be defined after "Submit for review" and can be changed after "Approved"
+In the course of each transition you can change some attributes of the record processed. For example, document 
+attributes may be "Name" that must be defined after transition "Start Writing" and can be changed after transitions 
+"Submit for review" and "Return for rework" and "Number of Pages" that must be defined after "Submit for review" and can
+be changed after "Approved"
 
  
 Creating a Workflow in the UI
@@ -64,7 +67,7 @@ In order to create a workflow for an entity:
 
 4. Define :ref:`transitions <user-guide-workflow-designer-transitions>` that can be applied to the records at each of 
    the steps and related setting, including the :ref:`attributes <user-guide-workflow-designer-attributes>` that 
-   can/must be changed after each transition 
+   can/must be changed after the transition 
    
 5. Choose a :ref:`default step <user-guide-workflow-designer-default>` if any.
 
@@ -91,8 +94,7 @@ The following two fields are mandatory and **must** be defined:
   :header: "**Field**","**Description**"
   :widths: 10, 30
 
-  "**Name**","Name used to refer to the workflow in the system (e.g. activate it, display it in the grid, etc.) It is 
-  recommended to keep the name meaningful."
+  "**Name**","Name used to refer to the workflow in the system."
   "**Related Entity**", "A drop-down which to choose an entity, for which the workflow is created."
   
 **Display Steps Ordered** box is not checked by default and specifies the way workflow steps are displayed on the 
@@ -120,7 +122,8 @@ Workflow Steps
 
 Define possible workflow steps in the *Designer* section.
 
-1. The first "Start" step is already defined. You need it a start point for the first transition.
+1. The first :ref:`Start step <user-guide-worfklow-start-step>` is already defined. You need it as a start point for the 
+   first transition.
 
 2. To add a step, click the :guilabel:`+ Add Step` button
 
@@ -134,8 +137,7 @@ Define possible workflow steps in the *Designer* section.
   :header: "**Field**","**Description**"
   :widths: 10, 30
 
-  "**Name**","Name used to refer to the step in the system (e.g. activate it, display it in the grid, etc.) It is 
-  recommended to keep the name meaningful.
+  "**Name**","Name used to refer to the step in the system.
   
   Name is the only mandatory field of a step"
   "**Position**", "A number that defines a place where the step will be displayed on the  
@@ -175,9 +177,9 @@ The following fields are mandatory:
   :header: "**Field**","**Description**"
   :widths: 10, 30
 
-  "**Name**","Name used to refer to the transition in the system. It is recommended to keep the name meaningful."
+  "**Name**","Name used to refer to the transition in the system."
   "**From step** and **To step**", "A dropdown contains the list of steps defined for the workflow. You can choose any 
-  two steps and define a transition between them."
+  two steps and define the transition between them."
   "**View form**","When a transition is performed, a form with the entity 
   :ref:`attributes <user-guide-workflow-designer-attributes>` appears that shall be submitted to change the step.
   Use the field, to define if this form shall be displayed in a popup window or a separate page."
@@ -188,7 +190,7 @@ There is also a number of optional fields that can be used to modify the transit
   :header: "**Field**","**Description**"
   :widths: 10, 30
 
-  "**Warning Message**","A piece of text that will be displayed every time a user is about to perform a transition."
+  "**Warning Message**","A piece of text that will be displayed every time a user is about to perform the transition."
   "**Button icon**","Icon used when displaying the transition button"
   "**Button Style**","Choose the transition button style from the dropdown."
 
@@ -210,8 +212,8 @@ In order to define the attribute settings:
   :header: "**Field**","**Description**"
   :widths: 10, 30
 
-  "**Entity Field**","Choose fields of the entity or its related entities that can/must be defined in the course of the 
-  transition.
+  "**Entity Field**","Choose attributes of the entity or of its related entities that can/must be defined in the course 
+  of the transition.
   	  
   This is an only mandatory field of the attributes section"
   "**Label**","Use the field if you want to change the way it is displayed in the UI. The system *label* value of the 
@@ -236,11 +238,11 @@ default step.
 If no default step is specified, one of the transitions from "Start" step must be performed to create a workflow for the
 record. 
 
-UI Limitations for Workflows Created
+UI Limitations for Workflow Creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  
 OroCRM workflows can be created from the both back-end and UI, however there is a number if functions that can be 
-defined for a workflow only from the back-end and require some coding skills:
+defined for a workflow only from the back-end in the course of intergration:
  
  
 - Define Init and Post Actions such as creation of another entity, processing of the existing entity data, 
@@ -258,6 +260,10 @@ defined for a workflow only from the back-end and require some coding skills:
 This way, Workflows created from the UI are comparatively simple and aimed at processing of the records already present
 in the system.
 
+.. note::
+
+    This only means that more complex workflows that require the the features shall be defined in the course of 
+	integration. This in way effect your ability to use them in the UI.
 
 Workflows Visualization
 -----------------------
@@ -286,15 +292,17 @@ Process record qualified to an opportunity.
 
 .. _user-guide-worfklow-widget:
 
-All the performed steps of the workflow are displayed at the widget on the top of the View pages of the entity records, 
-subject to the *Workflows → General → Show Ordered* and *Workflows → Designer → POSITION* settings.
-
-.. image:: ./img/workflows/wf_display_widget.png
 
 Current step, or all the steps performed can be displayed on the entity grid, subject to the *Entity Management → 
 Workflow Step on Grid* settings.
 
 .. image:: ./img/workflows/wf_display_step.png
+
+
+All the performed steps of the workflow are displayed at the **widget** on the top of the View pages of the entity records, 
+subject to the *Workflows → General → Show Ordered* and *Workflows → Designer → POSITION* settings.
+
+.. image:: ./img/workflows/wf_display_widget.png
 
 
 Managing Workflows
