@@ -38,13 +38,13 @@ To define a field condition
 
 .. image:: ./img/filters/field_condition_click.png
 
-- A drop-down will appear. At the top of the drop-down, you can see the name of the entity, records whereof will be 
+- A drop-down will appear. At the top of the drop-down, you can see the name of the entity, for which the records are 
   filtered. (In the example below it is a Web Customer)
 
 .. image:: ./img/filters/field_condition_fields.png
 
 - You can choose a field (attribute) of this entity and define rule for it. For example, you can choose only those
-  Web customer, who were born after a specific year (e.g. over eighteen) and use specific currency (e.g. US dollars), 
+  Web customer that were created within the last month and use a specific currency (e.g. US dollars), 
   etc.
 
   
