@@ -14,6 +14,9 @@ You can customize the Oro Platform layout in different ways:
 Custom CSS Files
 ----------------
 
+Creating and Embedding Custom Stylesheets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Using your own CSS files is pretty simple. Just save them in the, for example,
 ``Resources/public/css/`` directory of your bundle and list them in the ``assets.yml``
 configuration file:
@@ -29,6 +32,14 @@ configuration file:
             - 'bundles/acmedemo/css/backend/first.css'
             - 'bundles/acmedemo/css/backend/second.css'
 
+Then, embed your styles in the main layout template using the ``oro_css`` Twig tag:
+
+.. code-block:: html+jinja
+
+    {% oro_css filter='filters,separated,by,comma' output='css/style.css' %}
+        <link rel="stylesheet" media="all" href="{{ asset_url }}" />
+    {% endoro_css %}
+
 Now, you need to clear the cache and install the new stylesheets by running the ``assets:install``
 command:
 
@@ -37,10 +48,23 @@ command:
     $ php app/console cache:clear
     $ php app/console assets:install
 
-As you can see, you can group your CSS files. This is extremely useful when you have to debug your
-stylesheets. By default, all CSS files will be merged and minimized in a single file. If you need
-to debug certain CSS files, you can exclude groups from the build process which means that all
-files belonging to an excluded group won't be merged and compiled.
+In this example, all four CSS files from your bundle as well as all the other files from the Oro
+Platform and from third party bundles will be merged and dumped in the ``web/css/style.css`` file.
+Optionally, you can apply different filters to each CSS file (separate them by comma if you want to
+apply multiple filters.
+
+.. seealso::
+
+    Refer to the `Assetic documentation`_ for a list of available filters and read the `cookbook`_
+    in the Symfony documentation to learn more about Assetic.
+
+Debugging Your Stylesheets
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As you can see in the example above, you can group your CSS files. This is extremely useful when
+you have to debug your stylesheets. By default, all CSS files will be merged and minimized in a
+single file. If you need to debug certain CSS files, you can exclude groups from the build process
+which means that all files belonging to an excluded group won't be merged and compiled.
 
 For instance, the following configuration excludes all files from the ``frontend`` group:
 
@@ -238,3 +262,6 @@ of your bundle and define the values you want to change:
 
             // ...
         }
+
+.. _`Assetic documentation`: https://github.com/kriswallsmith/assetic#filters
+.. _`cookbook`: http://symfony.com/doc/current/cookbook/assetic/index.html
