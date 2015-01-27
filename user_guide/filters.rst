@@ -1,15 +1,14 @@
 
 .. _user-guide-filters-management:
 
-Filters Management Guide
--------------------------
+Filters
+=======
 
-Filers functionality helps you to automatically generate a list of entity records that meet certain requirements.
-
-Basically, you say "I want to see only the records that meet my requirements", specify the requirements and get the 
+Filers functionality automatically generates a list, all the records of which meet certain requirements.
+Basically, you say "I want to see only the records that meet these conditions", specify the conditions and get the 
 list of records.
 
-Filter is always created for records of a specific :term:`entity <Entity>` specified in the general details of the 
+Filters are always created for records of a specific :term:`entity <Entity>` specified in the general details of the 
 relevant segment, report of marketing list.
 
 Main element of a filter is a :ref:`Field Condition <user-guide-filters-field-conditions>`. Field conditions specify
@@ -32,14 +31,20 @@ To define a field condition
 
 - Drag *"Field condition"* to the box on the right |field_condition|
 
-- Click the* "Choose a field..." link |field_condition_click|
+- Click the* "Choose a field..." link 
+
+  |field_condition_click|
   
 - A drop-down will appear. At the top of the drop-down, you can see the name of the entity, for which the records are 
-  filtered. (In the example below it is a Web Customer) |field_condition_fields|
+  filtered. (In the example below it is a Web Customer) 
+  
+  |field_condition_fields|
 
  - You can choose a field (attribute) of this entity and define rule for it. For example, you can choose only those
    Web customer that were created within the last month and use a specific currency (e.g. US dollars), 
-   etc. |field_condition_defined|
+   etc. 
+   
+   |field_condition_defined|
     
  - You can also choose a field (attribute) of another entity, related to the one selected in the general settings. 
    For example, if you want the list to contain only Web Customers who have an abandoned cart (in OroCRM this is a Cart
@@ -50,6 +55,7 @@ To define a field condition
   |field_condition_rel_ent|
 	
   Name of the entity (In our example it is  "Carts") will appear at the top of the drop-down. 
+  
   |field_condition_rel_ent_carts|
 	
 .. caution::
@@ -60,7 +66,7 @@ To define a field condition
    section. For example, if you want the list to contain only Web Customers who have a Cart, for which a Billing 
    address the "City" field of which is "Dallas"
 	
-	|field_condition_rel_rel_ent|
+   |field_condition_rel_rel_ent|
   
 - You can choose the conjunction for the the conditions: "AND" or "OR". 
 
@@ -70,11 +76,11 @@ To define a field condition
     registered from Dec 10 to Jan 10 and use AND conjunction, the list will contain only those for whom the both 
     conditions are true.
   
-    |field_condition_and|
-  
   - if you choose the same Field conditions but join them with OR, the list will contain all those from Dallas 
     (regardless of their registration date) and all registered within the specified month (regardless of the billing 
     address defined for their carts)
+	
+    |field_condition_and|
 
 	
 .. hint::
@@ -84,7 +90,8 @@ To define a field condition
 	
     |field_condition_value|, |field_condition_value_1|
 	
-
+.. _user-guide-filters-condition-groups:
+	
 Conditions Groups
 -----------------
 
@@ -102,9 +109,13 @@ For example, you want to see in the list:
 You need to create to Conditions Groups for each of the cases, and join them with OR (as you want to see the both cases
 in the list):
 
-- Drag the *"Conditions Group"* to the box on the right. |conditions_group|
+- Drag the *"Conditions Group"* to the box on the right. 
 
-- Add conditions to the section that has appeared. |conditions_group_1|
+  |conditions_group|
+
+- Add conditions to the section that has appeared. 
+  
+  |conditions_group_1|
 
 - Define the conditions and conjunctions between them.
 
@@ -142,7 +153,8 @@ To add a Segment to the Conditions:
 - Drag "Apply segment" to the box on the right, |segments|
 
 - Click "Choose segment" link and choose one of the Segment predefined in the system. 
-  |segments_choose|
+ 
+   |segments_choose|
 
 Subject to the conjunction with the rest of conditions the list will now contain:
 
@@ -187,6 +199,8 @@ Subject to the conjunction with the rest of conditions the list will now contain
 .. |conditions_group_1| image:: ./img/filters/conditions_group_1.png
 
 .. |conditions_group_2| image:: ./img/filters/conditions_group_2.png
+
+.. |conditions_group_3| image:: ./img/filters/conditions_group_3.png
 
 .. |segments| image:: ./img/filters/segments.png
 

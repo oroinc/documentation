@@ -4,8 +4,8 @@
 Email Templates
 ===============
 
-Records of the Email Template entity ("Email templates") represent html or plain text templates used for
-mailings and filled with free text, as well as system variables and variables of a specific entity. 
+Email templates are automatically personalized Email patterns. For example, you can make a single template that welcomes
+{username} and each of your subscribers will get a mail send specifically to them. 
 
 The articles describes the ways to create and manage Email templates. 
 

@@ -4,7 +4,8 @@
 Tracking Websites Record
 ========================
 
-*Tracking Website* records define details of a website, for which tracking shall be performed. 
+*Tracking Website* records are necessary for the OroCRM :ref:`tracking functionality <user-guide-how-to-track>` and
+specify the details of a website, at which you want to control user activity related to a marketing campaign. 
 This article describes how to create, manage and view the tracking details. 
 
 
@@ -28,7 +29,8 @@ There are four mandatory fields that **must** be defined:
   "**Identifier***","Unique code of the website used to generate its tracking"
   "**Url***","Url of the website to be tracked" 
   "**Owner***","Limits the list of Users that can manage the tracking website record to the users, whose roles
-  allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
+  allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system 
+  administrator, etc.)."
 
 .. image:: ./img/marketing/tracking_general.png
 
@@ -40,7 +42,8 @@ There are four mandatory fields that **must** be defined:
 Tracking Websites Actions
 -------------------------
 
-The following actions are available for a tracking websites record from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a tracking websites record from the 
+:ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/tracking_grid_actions.png
 
@@ -57,7 +60,7 @@ The following actions are available for a tracking websites record from the :ref
 *Tracking Websites View Page*
 -----------------------------
 
-`View page <user-guide-ui-components-view-pages>` of a tracking websites contains the following three sections:
+:ref:`View page <user-guide-ui-components-view-pages>` of a tracking websites contains the following three sections:
 
 - General Information: general details specified for the tracking websites during creation and/or editing.
 
@@ -85,8 +88,7 @@ item id.*
 *As soon as a user gets to the "Item Details" page of the Website, an "View item" is logged. Value of a "View item" is 
 the item id.*
 
-The way to define the events for tracking is described in more details in :ref:`How to Track Campaign Related 
-Activities on the Website <user-guide-how-to-track>` guide.
+The way to define the events for tracking is described in more details :ref:`here <user-guide-how-to-track>`
 
 
 

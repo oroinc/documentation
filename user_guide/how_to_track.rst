@@ -3,7 +3,8 @@
 How to Track Campaign Related Activities on the Website
 =======================================================
 
-In order to track campaign-related activities of the Website users, you need to:
+OroCRM provides a tracking functionality with which you can learn how many users have visited your Web-site from links 
+within a specific marketing campaign and what were these usesrs' actions at the site. 
 
 - Create a :ref:`Сampaign <user-guide-marketing-campaigns>` record
 
@@ -11,7 +12,7 @@ In order to track campaign-related activities of the Website users, you need to:
 
 - Use the "Tracking code" on their View pages to modify the code of the website, as described below.
 
-..note ::
+.. note::
 
     Tracking of Magento stores is pre-implemented and available with the extension at 
 	http://www.magentocommerce.com/magento-connect/orocrm-tracking.html

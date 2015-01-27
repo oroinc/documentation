@@ -4,7 +4,7 @@
 Campaigns
 =========
 
-Records of the Campaign entity ("campaigns") represent marketing campaigns and keep their general information, related 
+Campaigns in OroCRM are used to define general details of the marketing activity and monitor its ") represent marketing campaigns and keep their general information, related 
 events and website tracking settings.
 
 The article describes the ways to create, manage and view the campaign details. 
