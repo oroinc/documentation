@@ -2,7 +2,7 @@
 Synchronization with Outlook
 ============================
 
-OroCRM enterprise version supports data synchronization in the OroCRM and Outlook.
+OroCRM enterprise edition supports data synchronization in the OroCRM and Outlook.
 Now, all the contacts, tasks and calendar events available for the user can be synchronized with the specified
 Outlook account and backwards. 
 
@@ -12,8 +12,8 @@ From this article you will learn how to configure and run synchronization, and s
 Getting Started
 ---------------
 
-Preconditions
-^^^^^^^^^^^^^
+Requirements
+^^^^^^^^^^^^
 
 - OroCRM enterprise version 1.6+
 - Outlook 2010+
@@ -22,7 +22,7 @@ Preconditions
 Plug-in Setup
 ^^^^^^^^^^^^^
 
-In order to enable data synchronization from OroCRM go to *System  Configuration  --> SYSTEM CONFIGURATION --> MS 
+In order to enable data synchronization from OroCRM go to *System → Configuration → Integrations → MS 
 Outlook settings* 
 
 .. image:: ./img/outlook/settings.png
@@ -34,14 +34,13 @@ Wait for download to finish and run the installation process.
 Integration and Synchronization Settings on the OroCRM Side
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can choose sync direction and intervals, as well as priority of the conflict resolution and set of entities
-synchronized.
-
-Initially, default settings are applied. Uncheck "Use Default" box to change the settings. 
+You can configure set of entities to be synchronized, synchronization direction synchronization intervals and 
+priority of the conflict resolution.
+Initially, default settings are applied. To change the default settings, uncheck "Use Default" box first. 
 
 .. caution::
 
-    If "Use Default" box has been checked, the default values will be applied regardless the values entered for the 
+    If "Use Default" box has been checked, the default values are applied regardless of the values entered for the 
     field.
 
 .. csv-table::
@@ -53,7 +52,7 @@ Initially, default settings are applied. Uncheck "Use Default" box to change the
   - OroCRM to Outlook
   - Outlook to OroCRM
   - Biderectional","Biderectional"
-  "**Conflict Resolution**","Conflict resolution strategy to be used if the same data has been changed in the both 
+  "**Conflict Resolution**","Conflict resolution strategy to be used if the same data has been changed in both 
   Outlook and CRM","
   
   - OroCRM always wins
@@ -86,7 +85,7 @@ Choose "Settings". *"OroCRM for Outlook Settings"* window will emerge.  The foll
   "**Api Key**","API Key as generated on *My user* page of the OroCRM. Mandatory field."
   "**Enable Sync**","
 
-  - If the box is checked, synchronization will be run automatically in the intervals defined in the 
+  - If the box is checked, synchronization is run automatically in the intervals defined in the 
     OroCRM.
   
   - If the box is not checked, synchronization will start only after the user has clicked :guilabel:`StartSyncNow` 
@@ -95,7 +94,7 @@ Choose "Settings". *"OroCRM for Outlook Settings"* window will emerge.  The foll
   "
   "**Show Alerts**","
 	
-  - If the box is checked, synchronization-related alerts (if any) will pop-up in the bottom panel. 
+  - If the box is checked, synchronization-related alerts (if any) will pop up in the bottom panel. 
     For example, 
 	
 	|alert|
@@ -117,14 +116,14 @@ The following fields of an OroCRM Contact record are mapped to the following fie
   :header: "**OroCRM Field**","**Outlook Field**","Note"
   :widths: 20, 20, 20
   
-  "First Name","First Name","If no *First Name* is defined in the Outlook record, the *Last Name* value will be used for 
+  "First Name","First Name","If no *First Name* is defined in the Outlook record, the *Last Name* value is used for 
   the both first name and last name in OroCRM."
   "Middle Name","Middle Name",""
-  "Last Name","Last Name","If no *Last Name* is defined in the Outlook record, the *First Name* value will be used for 
+  "Last Name","Last Name","If no *Last Name* is defined in the Outlook record, the *First Name* value is used for 
   the both first name and last name in OroCRM."
   "Name Suffix","Name Suffix",""
   "Description","Notes",""
-  "Email","Email","Any number of Emails may be mapped."
+  "Email","Email","All the existing Emails are mapped."
   "Phone","Primary Phone","Only the first OroCRM phone number is mapped."
   "Job Title","Job Title",""
   "Birthday","Birthday",""
@@ -184,7 +183,7 @@ The following fields of an OroCRM Calendar Event record are mapped to the follow
   
 .. note::
  
-     Only calendar assigned to the specified user is mapped, regadless of access settings. 
+     Only a calendar assigned to the specified user is mapped, regardless of access settings. 
      
      Invitations, recieved by the user are sent to Outlook as regular calendar event.  
   
@@ -250,12 +249,12 @@ checked:
   "Such record already exists in Outlook.","Values of the mapped fields of the OroCRM record replace corresponding values 
   for the Outlook record."
   "A record doesn’t yet exist in Outlook.","OroCRM creates the record in Outlook."
-  "Multiple matching records exist in Outlook.","OroCRM will update one of them"
+  "Multiple matching records exist in Outlook.","OroCRM updates one of them"
   "You've updated a record in OroCRM.","Values of the mapped fields of the OroCRM record replace corresponding values 
   for the Outlook record."
   "You've updated a record in Outlook.","The updates remain in the Outlook record, but won’t sync to the OroCRM."
-  "You've deleted a record in Outlook.","OroCRM will create the record again."
-  "You've deleted a record in OroCRM.","The recodr will stay in the Outlook with no changes."
+  "You've deleted a record in Outlook.","OroCRM creates the record again."
+  "You've deleted a record in OroCRM.","The record stays in the Outlook with no changes."
   
 
 Synchronization from Outlook to OroCRM
@@ -290,8 +289,8 @@ loaded:
   of the OroCRM record."
   "You've updated a record in Outlook.","Values of the mapped fields of the Outlook record replace corresponding values 
   of the OroCRM record."
-  "You've deleted a record in Outlook.","The record will stay in OroCRM."
-  "You've deleted a record in OroCRM.","The record will be deleted from Outlook."
+  "You've deleted a record in Outlook.","The record stay in OroCRM."
+  "You've deleted a record in OroCRM.","The record  are deleted from Outlook."
   
  
 Bidirectional Synchronization
@@ -313,8 +312,8 @@ synchronization from Oultlook to OroCRM.
   "You've updated a record in Outlook.","Values of the mapped fields of the Outlook record replace corresponding values 
   of the OroCRM record."
   "You've updated a record in the both OroCRM and Outlook.","Subject to your conflict resolution settings."
-  "You've deleted a record in Outlook.","The record will stay in OroCRM and will be added to Outlook."
-  "You've deleted a record in OroCRM.","The record will be deleted from Outlook as well."
+  "You've deleted a record in Outlook.","The record stay in OroCRM and are be added to Outlook."
+  "You've deleted a record in OroCRM.","The record are be deleted from Outlook as well."
 
 
   
