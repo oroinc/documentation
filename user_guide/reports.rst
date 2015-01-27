@@ -3,11 +3,10 @@
 Reports
 =======
 
-The Oro Platform gives you the opportunity to create customized reports about
-the entities in your application.
+The Oro Platform gives you the opportunity to create customized reports using data from the application.
 
 To manage your custom reports, go to *Reports & Segments* → *Manage Custom Reports*.
-You'll see a list of all created reports:
+You'll see a list of all the created reports:
 
 .. image:: /user_guide/img/reports/reports.png
 
@@ -21,8 +20,10 @@ Go to *Reports and Segments → Manage Custom Reports* and click :guilabel:`Crea
 *Create Report* page will appear.
 
 1. Define :ref:`general setting <user-guide-reports-general-settings>` of the report
+
 2. Specify the data to be processed, the way of analysis and filters in the :ref:`Designer 
    <user-guide-reports-designer>` section.
+   
 3. Define the report chart settings in the :ref:`Chart Designer <user-guide-reports-chart>` section. 
 
 
@@ -42,9 +43,8 @@ The following fields are mandatory and **must** be defined for a report:
   "**Name***","The name is used to refer to the report in the future.
   
   It is recommended to keep the name meaningful for you."
-  "**Entity***","Target entity of the report.
-
-  Click |Bdropdown| button to choose one of available Entities. 
+  "**Entity***","Target :term:`entity <Entity>` of the report. Choose one of the entities from the drop-down. Data
+  related to it will be used to generate the report. 
   (Both system and custom entities will be displayed in the alphabetic order). 
   You can also start typing the entity name in the text field to find it faster."
   "**Report Type***","Only table reports are available."
@@ -236,53 +236,11 @@ that were lost. You can view the budget details for the both groups.
 Filters
 ^^^^^^^
 
+You can define conditions used to select specific records. Only data of the records that meet all the conditions defined
+in the "Filters" section will be used for the report. 
+For example, you can create a report only for those customers, who appeared within the last month and live in Texas.
 
-You can define conditions used to select the entity records for the report, using the following tools: 
-
-- **Field Condition**: only records that meet the condition are added to the list
-
-- **Conditions Group**: a set of field conditions
-
-- **Apply Segment**: only records that meet a specific set of predefined conditions (belong to a segment) are added to 
-  the list. (Segments are subject to a separate document)
-
-Field conditions, condition groups and segment settings can be combined or ORed to define the final set of conditions. 
-
-Field Condition
-"""""""""""""""
-
-To define a field condition (for example, that all the Leads details whereof shall be used in the report have been 
-created within the last month):
-
-- Drag *"Field condition"* to the box on the right
-
-.. image:: ./img/reports/filters_field_condition.png
-
-- Click *Choose a field* link and select the necessary field (e.g *"Created at"*) 
-
--  Click links and choose a drop-down value. (e.g. "day" "more than" Oct 1, 2014, 12:00 AM)
-
-.. image:: ./img/reports/filters_field_condition_value.png
-
-
-Condition Group
-"""""""""""""""
-
-To add a condition group (e.g. state in the address of the lead or of the lead's B2B customer's contact shall be 
-"California" or "CA"):
-
-- Drag *"Conditions Group"* to the box on the right
-
-.. image:: ./img/reports/filters_condition_group_01.png
-
-- Add several field conditions to the group
-
-.. image:: ./img/reports/filters_condition_group_02.png
-
-- Define the field conditions and choose AND or OR conjunction for the conditions
-
-.. image:: ./img/reports/filters_condition_group_03.png
-
+Please see the /:ref:`Filters guide <user-guide-filters-management>`/
 
 
 .. _user-guide-reports-chart:
