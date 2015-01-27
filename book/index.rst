@@ -19,6 +19,7 @@ and technical details.
     reports_configuration
     javascript_modularity
     frontend_architecture
+    layout
 
 .. toctree::
     :hidden:
