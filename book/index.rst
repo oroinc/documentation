@@ -21,6 +21,7 @@ and technical details.
     javascript_modularity
     frontend_architecture
     layout
+    entities
 
 .. toctree::
     :hidden:
