@@ -17,6 +17,7 @@ This book contains list of most regularly used solutions in Oro Platform.
     how_to_accelerate_import
     how_to_create_global_js_component
     how_to_replace_inline-javascript_with_component
+    how_to_install_extension_from_command_line.rst
     faq
 
 TODO List
