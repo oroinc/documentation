@@ -14,6 +14,11 @@ Getting Started
 
 Hardware Requirements
 ^^^^^^^^^^^^^^^^^^^^^
+
+.. role:: red
+
+.. role:: green
+
 **RAM**
 
 :red:`Minimum` : 
