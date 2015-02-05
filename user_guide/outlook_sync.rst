@@ -12,14 +12,71 @@ From this article you will learn how to configure and run synchronization, and s
 Getting Started
 ---------------
 
-Requirements
-^^^^^^^^^^^^
+Hardware Requirements
+^^^^^^^^^^^^^^^^^^^^^
+**RAM**
 
-- OroCRM enterprise version 1.6+
-- Outlook 2010+
+:red:`Minimum` : 
 
+MS Outlook x86, x64 – 4GB
 
-Plug-in Setup
+:green:`Recommended` :
+
+MS Outlook x86 – 4GB
+
+MS Outlook x64 – 8GB
+ 
+**CPU**
+
+:red:`Minimum` : 
+
+MS Outlook x86 - 1 GHz IA-32 processor
+
+MS Outlook x64 - 1 GHz x86-64 processor
+
+:green:`Recommended` :
+
+MS Outlook x86 – 2-3 GHz IA-32 processor (Dual Core)
+
+MS Outlook x64 – 2-3 GHz x86-64 processor (Dual Core)
+
+**HDD**
+
+Available disk space – fully depends on the size of PST file you operate and other programs installed on your computer 
+but we recommend *at least 40GB* of available disk space.
+
+**Disk average rotational latency**
+
+:red:`Minimum` : 
+
+20 milliseconds
+
+:green:`Recommended` :
+
+5 milliseconds
+
+Software Requirements
+^^^^^^^^^^^^^^^^^^^^^
+
+OroCRM enterprise version 1.6+
+
+Outlook 2010+
+
+.. note::
+
+    Please note that the following factors can influence the ORO CRM Outlook add-in performance
+        
+    - E-mail archiving
+    
+    - Antivirus
+    
+    - Mobile devices connected to the computer
+   
+    - Voice mail
+    
+    - Other programs or Outlook add-ins that create additional views or search folders
+
+Add-in Setup
 ^^^^^^^^^^^^^
 
 In order to enable data synchronization from OroCRM go to *System → Configuration → Integrations → MS 
