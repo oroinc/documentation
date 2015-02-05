@@ -38,7 +38,7 @@ Package Manager command-line
     # remove caches before install extension
     $ rm app/cache/*
     # download and install extension
-    $ app/console oro:package:install <extension name>:<extension-version> --env=prod
+    $ app/console oro:package:install <extension name> <extension-version> --env=prod
     # remove caches to prevent permissions for www-data user
     $ rm app/cache/*
 
