@@ -15,17 +15,13 @@ Getting Started
 Hardware Requirements
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. role:: red
-
-.. role:: green
-
 **RAM**
 
-:red:`Minimum` : 
+*Minimum*: 
 
 MS Outlook x86, x64 – 4GB
 
-:green:`Recommended` :
+*Recommended*:
 
 MS Outlook x86 – 4GB
 
@@ -33,13 +29,13 @@ MS Outlook x64 – 8GB
  
 **CPU**
 
-:red:`Minimum` : 
+*Minimum*: 
 
 MS Outlook x86 - 1 GHz IA-32 processor
 
 MS Outlook x64 - 1 GHz x86-64 processor
 
-:green:`Recommended` :
+*Recommended*:
 
 MS Outlook x86 – 2-3 GHz IA-32 processor (Dual Core)
 
@@ -52,11 +48,11 @@ but we recommend *at least 40GB* of available disk space.
 
 **Disk average rotational latency**
 
-:red:`Minimum` : 
+*Minimum*: 
 
 20 milliseconds
 
-:green:`Recommended` :
+*Recommended*:
 
 5 milliseconds
 
