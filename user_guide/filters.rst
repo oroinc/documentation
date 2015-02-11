@@ -4,7 +4,7 @@
 Filters
 =======
 
-Filers functionality automatically generates a list, all the records of which meet certain requirements.
+Filters functionality automatically generates a list, all the records of which meet certain requirements.
 Basically, you say "I want to see only the records that meet these conditions", specify the conditions and get the 
 list of records.
 
@@ -50,11 +50,11 @@ To define a field condition
    For example, if you want the list to contain only Web Customers who have an abandoned cart (in OroCRM this is a Cart
    with "Status" = "Open").
 	
-  To do so, scroll the drop-down and choose this entity under the "Related Entities" header. 
+  To do so, scroll down the drop-down and choose this entity under the "Related Entities" header. 
 	
   |field_condition_rel_ent|
 	
-  Name of the entity (In our example it is  "Carts") will appear at the top of the drop-down. 
+  The name of the entity (In our example it is  "Carts") will appear at the top of the drop-down. 
   
   |field_condition_rel_ent_carts|
 	
@@ -63,8 +63,8 @@ To define a field condition
     Attributes in the "Fields" section belong to the entity chosen (in the example below, these are Carts).
 
  - You can also choose a field (attribute) of another entity, related to the entity chosen in the "Related entities"
-   section. For example, if you want the list to contain only Web Customers who have a Cart, for which a Billing 
-   address the "City" field of which is "Dallas"
+   section. For example, if you want the list to contain only Web Customers who have a Cart, for which  
+   the "City" field of the Billing address is "Dallas"
 	
    |field_condition_rel_rel_ent|
   
@@ -86,7 +86,7 @@ To define a field condition
 .. hint::
    
     Once you have chosen the field to specify the conditions for, a default condition will appear. Some components of it
-	are links. Each of these links contains a drop-down of possible values suitable for the specified field. 
+    are links. Each of these links contains a drop-down of possible values suitable for the specified field. 
 	
     |field_condition_value|, |field_condition_value_1|
 	
@@ -100,10 +100,10 @@ conditions.
 
 For example, you want to see in the list: 
 
-- all the Web customers created in December 2014, who have an abandoned Cart (Cart with status Open) with a billing 
+- all the Web customers created in December 2014 who have an abandoned Cart (Cart with status Open) with a billing 
   address in Dallas, as well as
   
-- all the Web customers created in January 2015, who have an abandoned Cart (Cart with status Open) with a billing 
+- all the Web customers created in January 2015 who have an abandoned Cart (Cart with status Open) with a billing 
   address in San Francisco
   
 You need to create to Conditions Groups for each of the cases, and join them with OR (as you want to see the both cases
@@ -146,15 +146,17 @@ Segment is a set of :ref:`field conditions <user-guide-filters-field-conditions>
 conditions.
 
 In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a 
-segment and use of instead of redefining the same conditions time and again.
+segment and use it instead of redefining the same conditions time and again.
 
 To add a Segment to the Conditions:
 
-- Drag "Apply segment" to the box on the right, |segments|
+- Drag "Apply segment" to the box on the right, 
+  
+  |segments|
 
 - Click "Choose segment" link and choose one of the Segment predefined in the system. 
  
-   |segments_choose|
+  |segments_choose|
 
 Subject to the conjunction with the rest of conditions the list will now contain:
 
@@ -167,8 +169,8 @@ Subject to the conjunction with the rest of conditions the list will now contain
    To create a segment, go to the *System → Reports and Segments → Manage Segments* and click 
    :guilabel:`Create Segment`.
    
-   Creating and managing Segment is vere similar to creating and managing a 
-   :ref:`marketing list <user-guide-marketing-lists-create>`. The only difference is that there are no limitations as 
+   Creating and managing Segment is very similar to creating and managing a 
+   :ref:`marketing list <user-guide-marketing-lists-create>`. The only difference is that there are no limitations 
    for the columns (i.e. at least one column must be specified but it can use any field of the entity) 
 
    
