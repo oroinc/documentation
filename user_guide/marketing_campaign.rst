@@ -4,10 +4,9 @@
 Campaigns
 =========
 
-Campaigns in OroCRM are used to define general details of the marketing activity and monitor its ") represent marketing campaigns and keep their general information, related 
-events and website tracking settings.
+Campaigns in OroCRM are used to define general details of the marketing activity and monitor its flow and results.
 
-The article describes the ways to create, manage and view the campaign details. 
+This article describes the ways to create, manage and view the campaign details. 
 
 
 .. _user-guide-marketing-campaigns-create:
@@ -36,7 +35,7 @@ There are four mandatory fields that **must** be defined:
   "**Owner***","Limits the list of Users that can manage the campaign to users, whose roles allow managing 
   campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
-Optional fields can be used to define such details as start and end dates of the campaig, its description and budget. 
+Optional fields can be used to define such details as start and end dates of the campaign, its description and its budget. 
 
 Custom fields may be added, subject to specific business-needs. 
 
@@ -54,11 +53,11 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 
-- Delete the campaign from the system : |IcDelete| 
+- Delete the campaign from the system: |IcDelete| 
 
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaig: |IcEdit| 
   
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign: |IcView| 
 
 
 .. _user-guide-marketing-campaigns-view-page:
@@ -66,7 +65,7 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 *Campaign View Page*
 --------------------
 
-:ref:`View page <user-guide-ui-components-view-pages>` of a campaign contains the following three sections:
+The :ref:`View page <user-guide-ui-components-view-pages>` of a campaign contains the following three sections:
 
 - General Information: details specified for the campaign during its creation/editing
 
@@ -79,10 +78,10 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
   
 .. image:: ./img/marketing/marketing_campaign_view_events.png
 
-In the example above users have accessed the site 36 times, out of which 22 times they've made an order and 8 times 
-viewed some item details.
+In the example above users have accessed the site 36 times, twenty-two out of these times, they've made an order and 8 times 
+they've viewed some item details.
 
-The way to define the events for tracking is described in more details in :ref:`How to Track Campaign Related 
+The way to define the events for tracking is described in more details in the :ref:`How to Track Campaign Related 
 Activities on the Website <user-guide-how-to-track>` guide.
 
 - Tracking Code : piece of code to be added to the website to enable website tracking. The code and its usage is 
