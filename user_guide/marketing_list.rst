@@ -7,7 +7,7 @@ Marketing Lists
 Marketing lists define the rules for automatic generation of contact lists used for marketing purposes (mass call or 
 mailing). 
 
-For example, you can create a list that will contain personal and contact details of leads added to the system after 
+For example, you can create a list of personal and contact details of leads added to the system after 
 October 1 with addresses in California. 
 
 .. _user-guide-marketing-lists-create:
@@ -18,7 +18,7 @@ Creating a Marketing List
 1. Go to the *Marketing → Marketing Lists* and click :guilabel:`Create Marketing List` button 
    in the top right corner of the grid.
    
-   Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
+   The Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
 
 2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list.
 
@@ -70,7 +70,7 @@ Filters
 
 Filters are necessary to choose only those records of the entity that you need for the marketing purposes.
 For example, you have chosen "Web Customer" as the "Entity". This includes all the customers of your Magento stores.
-However, you want to run a campaign only for active Customers from LA, who have an abandoned cart.  
+However, you want to run a campaign only for active customers from LA who have an abandoned cart.  
 
 To do so, you simple define the rules for filters, to choose only those Web Customer records, for which:
 
@@ -78,7 +78,7 @@ To do so, you simple define the rules for filters, to choose only those Web Cust
 
 - the field "City" of their "Addresses" is any of "LA" or "Los Angeles", and
 
-- the "Status" field of the ""Cart" is Open.
+- the "Status" field of the "Cart" is Open.
 
 .. image:: ./img/marketing/filters_example.png
 
@@ -100,7 +100,7 @@ Marketing List.
 .. note::
 
     Marketing activities require some contact information, so at least one column that contains it must be 
-    selected. The list of such fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary 
+    selected. The list of these fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary 
     Email and Primary Phone fields).
 
 	
@@ -123,7 +123,7 @@ Use action icons in the last column to edit the grid:
 
 - Edit the column settings with |IcEdit|
 
-- Change the column position, dragging the column by |IcMove| icon
+- Change the column position, dragging the column by the |IcMove| icon
 
 
 .. _user-guide-marketing-lists-actions:
@@ -151,7 +151,7 @@ Marketing Lists View Page
 
 .. image:: ./img/marketing/list_view_page.png
 
-:ref:`View page <user-guide-ui-components-view-pages>` of a marketing list contains:
+The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list contains:
 
 - :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`
 
@@ -168,7 +168,7 @@ The grid contains:
 - Columns defined in the :ref:`Create form <user-guide-marketing-marketing-list-create-columns>`
 
 - "TOTAL CONTACTED" column: contains the number of times a record of this marketing list was contacted within 
-  different :ref:`Email campaigns <user-guide-email-campaigns>` 
+  different :ref:`E-mail campaigns <user-guide-email-campaigns>` 
    
 - "LAST CONTACTED" column: contains the date when a  record of this marketing list was last contacted within 
   different :ref:`Email campaigns <user-guide-email-campaigns>`
@@ -177,7 +177,7 @@ The grid contains:
 .. note::
 
    Please note that if the same record is a part of different marketing lists, its data from other marketing lists will
-   not effect the TOTAL CONTACTED and LAST CONTACTED values.
+   not affect the TOTAL CONTACTED and LAST CONTACTED values.
    
 - "SUBSCRIBED" column: Initially all the users in the list are subscribed (the column value is "Yes"). If following one 
   of the :ref:`Email campaigns <user-guide-email-campaigns>` using the marketing list, a user has 
@@ -190,23 +190,23 @@ have unsubscribed after the second mailing.
 
 Action icons in the last column of the grid enable the following actions:
 
-- Get to the *"View"* page of the grid item : |IcView|
+- Get to the *"View"* page of the grid item: |IcView|
 
-- Unsubscribe the item from the list manually : |IcUns|
+- Unsubscribe the item from the list manually: |IcUns|
   
-  For unsubscribed items, there is a |IcSub| icon to get the record back to the list
+  For unsubscribed items, there is a |IcSub| icon to get the record back on the list
   
-- Remove the item from the list : |IcRemove|
+- Remove the item from the list: |IcRemove|
 
-  As soon as at least one item has been removed, *"Removed Items"* grid will appear
+  As soon as at least one item has been removed, the *"Removed Items"* grid will appear
   
 .. image:: ./img/marketing/list_view_page_grid_removed.png
 
 Action icons in the last column of the *"Removed Items"* grid enable the following actions:
 
-- Get to the *"View"* page of the grid item : |IcView|
+- Get to the *"View"* page of the grid item: |IcView|
 
-- Restore the item in the marketing list : |UndoRem|
+- Restore the item in the marketing list: |UndoRem|
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
