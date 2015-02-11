@@ -7,8 +7,8 @@ Workflow Management
 Basically, a workflow is a sequence of industrial, administrative or other processes applied to a 
 piece of work from the initiation to completion.
 
-In OroCRM you can define what processes and in what order can be performed with regard to objects represented by  
-:term:`records <Record>` of OroCRM :term:`entities <Entity>`. 
+In OroCRM you can define what processes can be performed and  and in what order with regard to objects represented by  
+:term:`records <Record>` of an OroCRM :term:`entity <Entity>`. 
 
 From this article you will learn to understand, create and manage workflows.
 
@@ -40,7 +40,7 @@ The **workflow transitions** are the arrows that show what action can be applied
 
 Attributes
 ^^^^^^^^^^ 
-:term:`Attributes <Attribute>`,(also referred as "fields") are characteristics of the record. For example, zip-code and 
+:term:`Attributes <Attribute>`,(also referred as "fields") are characteristics of the record. For example, ZIP code and 
 street name are attributes of an address.
 
 In the course of each transition you can change some attributes of the record processed. For example, document 
@@ -77,8 +77,8 @@ In order to create a workflow for an entity:
 
 .. note::
    
-    A transition can be defined as soon as there is at least one step but the "Start", however it is often simpler to
-    define all the steps and then all the transitions between them.
+    A transition can be defined as soon as there is at least one step except the "Start". However, it is often 
+    simpler to define all the steps and then all the transitions between them.
 
   
 .. _user-guide-workflow-general:
@@ -97,7 +97,7 @@ The following two fields are mandatory and **must** be defined:
   :widths: 10, 30
 
   "**Name**","Name used to refer to the workflow in the system."
-  "**Related Entity**", "A drop-down which to choose an entity, for which the workflow is created."
+  "**Related Entity**", "A drop-down to choose an entity, for which the workflow is created."
   
 **Display Steps Ordered** box is not checked by default and specifies the way workflow steps are displayed on the 
 :ref:`workflow widget <user-guide-worfklow-widget>`. 
@@ -180,11 +180,11 @@ The following fields are mandatory:
   :widths: 10, 30
 
   "**Name**","Name used to refer to the transition in the system."
-  "**From step** and **To step**", "A dropdown contains the list of steps defined for the workflow. You can choose any 
+  "**From step** and **To step**", "A dropdown that contains the list of steps defined for the workflow. You can choose any 
   two steps and define the transition between them."
   "**View form**","When a transition is performed, a form with the entity 
-  :ref:`attributes <user-guide-workflow-designer-attributes>` appears that shall be submitted to change the step.
-  Use the field, to define if this form shall be displayed in a popup window or a separate page."
+  :ref:`attributes <user-guide-workflow-designer-attributes>` appears that will be submitted to change the step.
+  Use the field, to define if this form will be displayed in a popup window or a separate page."
   
 There is also a number of optional fields that can be used to modify the transition in the UI:
 
@@ -237,14 +237,14 @@ You can also define a default step for the records of the entity, processed by t
 If a default step is specified, once you create a record of the entity, a workflow will be created for it and set to the
 default step. 
 
-If no default step is specified, one of the transitions from "Start" step must be performed to create a workflow for the
+If no default step is specified, one of the transitions from the "Start" step must be performed to create a workflow for the
 record. 
 
 UI Limitations for Workflow Creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  
-OroCRM workflows can be created from the both back-end and UI, however there is a number if functions that can be 
-defined for a workflow only from the back-end in the course of intergration:
+OroCRM workflows can be created from both the back-end and the UI. However, there is a number of functions that can be 
+defined for a workflow only from the back-end in the course of integration:
  
  
 - Define Init and Post Actions such as creation of another entity, processing of the existing entity data, 
@@ -264,8 +264,8 @@ in the system.
 
 .. note::
 
-    This only means that more complex workflows that require the the features shall be defined in the course of 
-	integration. This in way effect your ability to use them in the UI.
+    This only means that more complex workflows that require the features shall be defined in the course of 
+    integration. This effects your ability to use them in the UI.
 
 Workflows Visualization
 -----------------------
@@ -283,7 +283,7 @@ at the start of a Sales Process.
 .. image:: ./img/workflows/wf_display_grid.png
 
 
-Button of all the transitions, for which pre-conditions are met (if any), are displayed at
+Button of all the transitions, for which pre-conditions (if any) are met, are displayed at
 :ref:`View pages <user-guide-ui-components-view-pages>` of the entity records.
 
 E.g. :guilabel:`Develop`, :guilabel:`Close As Won` and :guilabel:`Close As Lost` buttons on a View page of a Sales 
@@ -295,7 +295,7 @@ Process record qualified to an opportunity.
 .. _user-guide-worfklow-widget:
 
 
-Current step, or all the steps performed can be displayed on the entity grid, subject to the *Entity Management → 
+The current step, or all the steps performed can be displayed on the entity grid, subject to the *Entity Management → 
 Workflow Step on Grid* settings.
 
 .. image:: ./img/workflows/wf_display_step.png
@@ -326,11 +326,11 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 .. caution::
     
-    Each entity may have unlimited number of workflows related to it, but only one of them can be active. 
+    Each entity may have an unlimited number of workflows related to it, but only one of them can be active. 
 	
 	When a new workflow is activated for an entity, all the workflow data for the entity is reset.
 	
-- Clone the workflow: |IcClone|. Copy of the workflow is created and can be customized.
+- Clone the workflow: |IcClone|. A copy of the workflow is created and can be customized.
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel:  |IcView|
 
@@ -338,7 +338,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/workflows/wf_view_system.png
 
-You can deactivate or activate and clone the workflow with corresponding action buttons in the top right of the page. 
+You can deactivate, activate and clone the workflow with corresponding action buttons in the top right of the page. 
 
 
 Managing Custom Workflows
@@ -348,7 +348,7 @@ Copies of the system workflows and workflows created in the UI from the scratch 
 
 All the actions available for the system workflows are available for the custom ones.
 
-The following additional action are available for the custome workflows:
+The following additional action are available for the custom workflows:
 
 From the :ref:`grid <user-guide-ui-components-grids>`
 
@@ -360,14 +360,14 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 .. note::
 
-    Edit form is similar to Create form, but all the previously defined values are already filled and can be changed.
+    The edit form is similar to Create form, but all the previously defined values are already filled and can be changed.
  
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/workflows/wf_view_system.png
 
-You can deactivate or activate and clone, as well as delete the workflow and get to its Edit form with the corresponding 
+You can deactivate, activate and clone, as well as delete the workflow and get to its Edit form with the corresponding 
 action buttons in the top right corner of the page. 
  
 
