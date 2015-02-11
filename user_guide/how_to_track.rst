@@ -3,8 +3,8 @@
 How to Track Campaign Related Activities on the Website
 =======================================================
 
-OroCRM provides a tracking functionality with which you can learn how many users have visited your Web-site from links 
-within a specific marketing campaign and what were these usesrs' actions at the site. 
+OroCRM provides a tracking functionality, you can use to learn how many users have visited your Web-site from links 
+within a specific marketing campaign and what these users' actions at the site were. 
 
 - Create a :ref:`Сampaign <user-guide-marketing-campaigns>` record
 
@@ -26,7 +26,7 @@ can be found on the :ref:`View page <user-guide-ui-components-view-pages>` of th
 
 .. image:: ./img/marketing/how_to_tracking_code.png
 
-The code defines some of piwik-specific settings that should not be changed and the following variables
+The code defines some of `piwik <http://piwik.org>`_-specific settings that should not be changed and the following variables
 that can/must be defined by the user:
 
 .. code-block:: html
@@ -55,12 +55,12 @@ There are two ways to implement tracking for a Website:
 - Add the piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` to the 
   tracking script from 
   the :ref:`View page of the Website Tracking record <user-guide-marketing-tracking-websites-view-page>` after 
-  setUserId call, and provide the users with url of this page(s)
+  setUserId call, and provide the users with the URL of the page(s)
    
 - Add the piece of code from the :ref:`View page of the campaign <user-guide-marketing-campaigns-view-page>` 
-  to the page url and use this modified url in the link used for the campaign, mailing, etc.
+  to the page url and use this modified URL in the link used for the campaign, mailing, etc.
 
- Either way, after the user has entered (clicked) the url, all the user activity recorded on the website within the 
+ Either way, after the user has entered (clicked) the URL, all the user activity recorded on the website within the 
  session will be tied to the specific campaign.
 
 
@@ -89,9 +89,9 @@ This is the code pre-implemented for Magento stores:
 
 *Users are identified as guests until they sign in. As soon as a user signs in, their identification is a value of
 the "visitor-id" field. A special block has been implemented to enable transfer of the 
-id data to Oro.*
+ID data to Oro.*
 
-*Every time a user follows the link of a campaign, they get to a page with the url piece from the campaign page.
+*Every time a user follows the link of a campaign, they get to a page with the URL piece from the campaign page.
 From now on, all the actions performed by the user at the Website within this session will be assigned to the
 campaign.*
 
@@ -114,17 +114,17 @@ On some of the pages, actions are activated. For example, this is a tracking scr
       })();
    </script>
 
-*Every time the user get to the page where the code is implemented, "Cart item added" 
-event will appear on the campaign page and a dynamic value that corresponds to the item id will be saved.*
+*Every time the user get to the page where the code is implemented, a "Cart item added" 
+event will appear on the campaign page and a dynamic value that corresponds to the item ID will be saved.*
 
-A similar tracking script is implemented on each of the Website pages. Order placement page has the following action
+A similar tracking script is implemented on each of the Website pages. The order placement page has the following action
 enabled:
 
 .. code-block:: html
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'order successfully placed', '2699.990000' ]);            
 
-*"Order successfully placed" event is saved for the campaign with a dynamic value that corresponds to a total
+An *"Order successfully placed" event is saved for the campaign with a dynamic value that corresponds to a total
 cost of the order.*
 
 
