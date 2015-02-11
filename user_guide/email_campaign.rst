@@ -6,7 +6,7 @@ Email Campaigns
 Records of the Email Campaign entity ("Email campaigns") represent mass mailings and keep their general information and 
 settings.
 
-The article describes ways to create and manage the Email campaigns. 
+The article describes ways to create and manage E-mail campaigns. 
 
 
 .. _user-guide-email-campaigns-create:
@@ -14,8 +14,8 @@ The article describes ways to create and manage the Email campaigns.
 Creating a Campaign
 --------------------
 
-1. Go to *Email → Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
-   to the *"Create Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
+1. Go to the *Email Campaigns* page and click the :guilabel:`Create Email Campaign` button in the top right corner to get 
+   to the *"Create Email Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
 
 2. Define general settings of the campaign:
 
@@ -30,20 +30,20 @@ Creating a Campaign
   the list.   
   More details about the marketing lists are available in the :ref:`Marketing Lists <user-guide-marketing-lists>` 
   guide."
-  "**Schedule***","Defines if the mailing shall be activated manually (*Manual*) or scheduled for a specific 
+  "**Schedule***","Defines whether the mailing shall be activated manually (*Manual*) or scheduled for a specific 
   date (*Deferred*).
 
-  If *Deferred* value is chosen, **Scheduled For** field will appear. Choose the date and time of the mailing in the 
+  If *Deferred* is chosen, the **Scheduled For** field will appear. Choose the date and time of the mailing in the 
   calendar. 
   
   |email_campaign_schedule|"
   "**Owner***","Limits the list of users that can manage the campaign to those, whose roles allow managing 
-  Email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
+  E-mail campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
-Optional fields can be used to define such details as Campaign within which the mailing is done and the way to represent
+Optional fields can be used to define such details as the campaign within which the mailing is done and the way to represent
 Sender Email and Name in the E-mails.  
 
-Custom fields may be added, subject to specific business-needs. 
+Custom fields may be added, subject to specific business needs. 
 
 3. Define the mailing settings. 
 
@@ -54,10 +54,10 @@ There are two mandatory fields that **must** be defined:
   :widths: 10, 30
   
   "Transport","The field defines the service to be used for the mailing. Out of the box, the only option is OroCRM. 
-  Other means can be added in the course of customization."
+  Other services can be added in the course of customization."
   "Template","Choose the :ref:`Email template <user-guide-email-template>` to be used from the drop-down. 
   
-  Please note that only the templates assigned to no entity or the same entity that the marketing list are available "
+  Please note that you can only see the templates assigned to no entity or to the same entity as the marketing list"
   
 4. Save the campaign in the system with the button in the top right corner of the page.
 
