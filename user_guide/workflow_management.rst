@@ -8,7 +8,7 @@ Basically, a workflow is a sequence of industrial, administrative or other proce
 piece of work from the initiation to completion.
 
 In OroCRM you can define what processes can be performed and  and in what order with regard to objects represented by  
-:term:`records <Record>` of an OroCRM :term:`entity <Entity>`. 
+records of an OroCRM entity. 
 
 From this article you will learn to understand, create and manage workflows.
 
@@ -40,7 +40,7 @@ The **workflow transitions** are the arrows that show what action can be applied
 
 Attributes
 ^^^^^^^^^^ 
-:term:`Attributes <Attribute>`, (also referred as "fields") are characteristics of the record. For example, ZIP code and 
+Attributes, (also referred as "fields") are characteristics of the record. For example, ZIP code and 
 street name are attributes of an address.
 
 In the course of each transition you can change some attributes of the record processed. For example, document 
