@@ -40,7 +40,7 @@ The **workflow transitions** are the arrows that show what action can be applied
 
 Attributes
 ^^^^^^^^^^ 
-:term:`Attributes <Attribute>`,(also referred as "fields") are characteristics of the record. For example, ZIP code and 
+:term:`Attributes <Attribute>`, (also referred as "fields") are characteristics of the record. For example, ZIP code and 
 street name are attributes of an address.
 
 In the course of each transition you can change some attributes of the record processed. For example, document 
