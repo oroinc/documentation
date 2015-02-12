@@ -112,8 +112,6 @@ The following actions can be performed on channels:
 
 .. From the :ref:`grid <user-guide-ui-components-grids>`
 
-From the grid:
-
 .. image:: ./img/channel_guide/channels_edit.png
 
 - Delete the channel: |IcDelete|
