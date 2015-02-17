@@ -2,7 +2,7 @@
 Channels Management
 ===================
 
-A **Channel** entity represents a source of customers and customer data.
+:term:`Channels <Channel>` in :term:`OroCRM` represent sources of customers and customer data.
 
 This guide describes how to create and manage channels from the UI.
 
@@ -48,22 +48,22 @@ The following three fields are mandatory and **must** be defined:
   "**Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the 
   channel created.
 
-  Channel types define a specific set of rules and settings which apply to the channel.
+  Channel types define a specific set of rules and settings that apply to the channel.
 
   Extending OroCRM with new channel types for specific needs is a proven practice, and the following channel types are 
   available out of the box in the current version of the platform:
 
   - *B2B*: dedicated for managing B2B customer relations
 
-  - *Magento*: designed for Magento stores
+  - *Magento*: designed for :term:`Magento` stores
 
   - *Custom*: any other channels, subject to specific business needs"
 
 .. caution::
 
     Once you have selected *Magento* as a channel type, a new mandatory **Integration*** field will appear.
-	Please see the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` guide  for
-	more information.
+    Please see the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` guide  for
+    more information.
 
 
 .. _user-guide-channel-guide-entities:
@@ -71,14 +71,14 @@ The following three fields are mandatory and **must** be defined:
 Entities
 ^^^^^^^^
 
-Entities assigned to a channel define what data OroCRM can collect from it.
+:term:`Entities <Entity>` assigned to a channel define what data OroCRM can collect from the relevant source.
 
-To add an entity to a channel, use the "Entities" section.
+To make a certain type of records available from the channel, use the "Entities" section.
 
 .. image:: ./img/channel_guide/channels_entities.png
 
-One of the entities defined for a channel must represent a customer identity and will be added to the entity list
-automatically. It is subject to the chosen channel type:
+One of the entities defined for a channel must represent a :ref:`customer <Customer>` identity and will be added to 
+the entity list automatically. It is subject to the chosen channel type:
 
 - B2B Channel - B2B Customer
 - Magento Channel - Web Customer
@@ -110,7 +110,7 @@ Channel Actions
 
 The following actions can be performed on channels:
 
-.. From the :ref:`grid <user-guide-ui-components-grids>`
+From the :ref:`grid <user-guide-ui-components-grids>`
 
 .. image:: ./img/channel_guide/channels_edit.png
 
