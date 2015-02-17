@@ -1,4 +1,3 @@
-e
 .. _user-guide-email-template:
 
 Email Templates
