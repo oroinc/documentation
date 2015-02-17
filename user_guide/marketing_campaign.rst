@@ -84,7 +84,7 @@ they've viewed some item details.
 The way to define the events for tracking is described in more details in the :ref:`How to Track Campaign Related 
 Activities on the Website <user-guide-how-to-track>` guide.
 
-- Tracking Code : piece of code to be added to the website to enable website tracking. The code and its usage is 
+- Tracking Code: piece of code to be added to the website to enable website tracking. The code and its usage is 
   described in more details in :ref:`How to Track Campaign Related Activities on the 
   Website <user-guide-how-to-track>` guide.
 
