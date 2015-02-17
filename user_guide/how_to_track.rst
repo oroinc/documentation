@@ -15,7 +15,7 @@ within a specific marketing campaign and what these users' actions at the site w
 .. note::
 
     Tracking of Magento stores is pre-implemented and available with the extension at 
-	http://www.magentocommerce.com/magento-connect/orocrm-tracking.html
+    http://www.magentocommerce.com/magento-connect/orocrm-tracking.html
 
 Use Tracking Code
 -----------------
