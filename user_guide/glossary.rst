@@ -1,5 +1,8 @@
 :orphan:
 
+
+.. _glossary:
+
 Glossary
 ========
 
