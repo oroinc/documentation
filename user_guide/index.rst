@@ -22,14 +22,18 @@ End user oriented documentation that explains how to administer and configure ap
     magento_channel_integration
     ui_components
     leads
+    
+.. toctree::
+    :hidden:
+
+    glossary
+
 
 TODO List
 ---------
 
 * Users Management
 * Access Control Configuration
-* Navigation
 * Configuration
 * Package Manager
-* Reports and Segments
 * Entity Management
