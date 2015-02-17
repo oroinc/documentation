@@ -74,7 +74,7 @@ The following actions are available for a tracking websites record from the
 
 .. image:: ./img/marketing/tracking_view_code.png
   
-- Events : each event represents one time a user has accessed a pre-defined part of the Website following the 
+- Events: each event represents one time a user has accessed a pre-defined part of the Website following the 
   campaign.
   Events grid contains name of the event, value of the event, user identification value, page url, campaign code and 
   time the event was logged at.
