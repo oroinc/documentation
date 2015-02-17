@@ -43,7 +43,7 @@ The following fields are mandatory and **must** be defined for a report:
   "**Name***","The name is used to refer to the report in the future.
   
   It is recommended to use a name that is meaningful for you."
-  "**Entity***","Target entity of the report. Choose one of the entities from the drop-down. Data
+  "**Entity***","Target :term:`entity <Entity>` of the report. Choose one of the entities from the drop-down. Data
   related to it will be used to generate the report. 
   (Both system and custom entities will be displayed in the alphabetic order). 
   You can also start typing the entity name in the text field to find it faster."
