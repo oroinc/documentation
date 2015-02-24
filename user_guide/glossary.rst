@@ -11,7 +11,7 @@ Glossary
 
    Channel
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a source of customers and customer data,
-      for example a specific shop, outlet, web-store, fund, etc.	  
+      for example a specific shop, outlet, web-store, fund, etc.  
     
    Entity
       A grouping of things with common rules that represent objects of similar nature. For example, orders, customers,
@@ -32,22 +32,44 @@ Glossary
    Lead
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent people or businesses that have 
       authority, budget and interest to purchase goods and/or services from you, such that probability of the actual 
-      sales is not yet high or impossible to define, and an instance of the Lead entity
+      sales is not yet high or impossible to define.
         
    Opportunity
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent potential or actual sales to a new or 
-      established customer
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent highly probable potential or actual sales
+      to a new or established customer.
    
-   Customer
+   Customer 
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent people or businesses you have sold or 
-      are selling goods and/or services to, and an instance of the Customer entity
-	  
+      are selling goods and/or services to. Also addressed as "Customer Identity".
+      
    Workflow
       A sequence of industrial, administrative of other processes applied to a piece of work from initiation to 
       completion and a system :term:`entity <Entity>` with :term:`records <Record>` that represent such a sequence.
-	 
+      
    Attribute
       A characteristic of an entity. For example, a zip-code and and a street name are attributes of an address.
 
    Field
-      Another name of an :term:`attribute <Attribute>`   
+      Another name of an :term:`attribute <Attribute>` .
+   
+   Customer Identity
+      See :term:`Customer`
+ 
+   Web Customer
+      A :term:`Customer Identity` used within :term:`Magento channels <Magento Channel>`.
+
+   Magento Channel
+      A :term:`Channel` used to collect data from :term:`Magento`-based store.
+
+   B2B Customer
+      A :term:`Customer Identity` used within :term:`B2B channels <B2B Channel>`.
+
+   B2B Channel
+      A :term:`Channel` used to collect data related to business-to-business activities.
+
+   Contact
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent actual people contacted in the course of 
+      sales activities. 
+
+   Lifetime Sales Value
+      Total amount of money recieved from the :term:`Customer` and registered in OroCRM. 
