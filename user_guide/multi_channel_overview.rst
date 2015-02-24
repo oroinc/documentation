@@ -48,7 +48,7 @@ How it Works
   
   This way, all the information that belongs to a specific customer identity record is bound to it.
 
-- Each customer identity record must be assigned to a specific record of the :ref:`Account <multi-channel-account>` 
+- Each customer identity record must be assigned to a specific record of the :ref:`Account <user-guide-accounts>` 
   entity. One account may contain information of several customer identity records, regardless of their channels. 
   
   This way, account can be used to create a 360-degree view of customer data for a person, group of people, 

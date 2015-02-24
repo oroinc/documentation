@@ -30,9 +30,9 @@ Glossary
       An easy-to-use, open source CRM with built in marketing automation tools for a commerce business.
   
    Lead
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent people or businesses that have 
-      authority, budget and interest to purchase goods and/or services from you, such that probability of the actual 
-      sales is not yet high or impossible to define.
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent represent commercial activity with  
+      people or businesses that have authority, budget and interest to purchase goods and/or services from you, such 
+      that probability of the actual sales is not yet high or impossible to define.
         
    Opportunity
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent highly probable potential or actual sales
@@ -72,4 +72,13 @@ Glossary
       sales activities. 
 
    Lifetime Sales Value
-      Total amount of money recieved from the :term:`Customer` and registered in OroCRM. 
+      Total amount of money received from the :term:`Customer` and registered in OroCRM. 
+
+   Account
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person, company or group of people you
+      run business activities with. Account aggregates details of all the :term:`customer identities <Customer Identity`
+      assigned to it, providing for a 360-degree view of the customer activity.  
+
+   Tag
+       A non-hierarchical keyword assigned to a record. Can be used for filtering.   
+
