@@ -1,39 +1,26 @@
 
-.. _user-guide-magento-entities-guide:
+.. _user-guide-magento-channel:
 
-Magento Entities
+Magento Channels
 ================
 
-OroCRM supports out of the box integration with Magento. 
-Data can be loaded from Magento and back and processed in OroCRM. 
-This article describes a set of pre-implemented OroCRM entities aimed at Magento customer-relations management.
+OroCRM supports out of the box integration with Magento. Data can be loaded from Magento and back and processed in 
+OroCRM. :ref:`Channels <user-guide-channels>` of Magento type ("Magento Channels") represent sources of customer-related
+data collected from Magento-based E-commerce stores.
 
 .. hint::
     
     While Magento integration capabilities are pre-implemented, OroCRM can also be integrated with different third-party 
     systems.
 
-.. _user-guide-magento-entities-channel:
-
-Magento Channel Type
---------------------
-
-A Channel entity represents a source of customers and customer data, which for Magento means specific Magento-based 
-E-commerce outlets. A special *Magento* channel type is designed to process data from Magento Stores.
-
 For each Magento Channel, you can:
 
-- Define types of records (entities) that can be loaded to OroCRM from Magento, processed and (subject to the synchronization
-  settings) updated in Magento. 
+- Define integration settings and rules, including synchronization priorities, as described in the 
+  :ref:`Magento Integration guide <user-guide-magento-channel-integration>`.
+
+- Define :term:`entities <Entity>, records of which can be loaded to OroCRM from Magento, processed and 
+  (subject to the synchronization settings) updated in Magento. 
  
- You can find more details about Magento Channels in the :ref:`Channels Management <user-guide-channel-guide-create>` 
- guide.
-
-- Define integration settings and rules, including synchronization priorities. 
-
-  You can find more information in the :ref:`Magento Integration guide <user-guide-magento-channel-integration>`.
-  
-
 .. _user-guide-magento-entities-entities:
   
 Default Entities of Magento Channel
@@ -110,13 +97,13 @@ not yet been purchased). Click the button to get to the Magento *Place an Order*
 .. caution::
 
     Be careful not to confuse the cart status and step of the related workflow. For example, a cart at the step 
-	"Contacted" can still have the "Open" status (items in the carts have not yet been bought).
+    "Contacted" can still have the "Open" status (items in the carts have not yet been bought).
 
 .. caution::
-	
+    
     You need to enter your credentials when referred to the Magento for the first time in the session.
 
-	
+    
 *Managing Shopping Carts*
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 From the *View* page of any order you can
@@ -128,8 +115,8 @@ From the *View* page of any order you can
   synchronization settings).
 
 .. image:: ./img/magento_entities/view_orders.png
-	
-	
+    
+    
 
 .. _user-guide-magento-entities-workflows:
 
@@ -137,7 +124,7 @@ Default Workflows with Magento Entities
 ---------------------------------------
 
 To provide consistent and customer oriented approach, you can define a specific workflow within which the actions can be
-performed for each instance of a Shopping Cart or Order. The following two workflows are pre-implemented in OroCRM
+performed for each shopping cart or order. The following two workflows are pre-implemented in OroCRM
 for Magento-based shops:
 
 

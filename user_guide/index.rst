@@ -6,23 +6,36 @@ End user oriented documentation that explains how to administer and configure ap
 .. toctree::
     :maxdepth: 2
 
-    workflow_management
-    reports
-    channel_guide
-    export_import
-    magento_entities
-    email_campaign
-    email_template
-    how_to_track
+    ui_components
     filters
     marketing
     marketing_campaign
+    how_to_track
     marketing_list
     marketing_tracking
-    magento_channel_integration
-    ui_components
+    email_campaign
+    email_template
+    reports
+    workflow_management
+    multi_channel_overview
+    b2b_channels
     leads
     outlook_sync
+    opportunities
+    web_customer
+    sales_processes_workflow
+    magento_channels
+    channel_guide
+    export_import
+    magento_entities
+    magento_channel_integration
+
+
+    
+    
+.. toctree::
+    :hidden:
+
     glossary
 
 
