@@ -76,9 +76,19 @@ Glossary
 
    Account
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person, company or group of people you
-      run business activities with. Account aggregates details of all the :term:`customer identities <Customer Identity`
+      do business activities with. Account aggregates details of all the :term:`customer identities <Customer Identity`
       assigned to it, providing for a 360-degree view of the customer activity.  
 
    Tag
-       A non-hierarchical keyword assigned to a record. Can be used for filtering.   
+       A non-hierarchical keyword assigned to a record. Can be used for filtering.  
+    
+   Custom Entity
+      An :term:`entity <Entity>` added to the system by a user from the UI.
+
+   System Entity
+      An :term:`entity <Entity>` available in the system out of the box.
+
+   Custom Field
+      An :term:`field <Field>` added to an entity by a user from the UI.
+      
 

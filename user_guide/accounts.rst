@@ -1,0 +1,284 @@
+.. _user-guide-accounts:
+
+Accounts
+========
+
+Account records ("accounts") represent  represent a person, company or group of people you do business activities with. 
+An account can aggregate details of all the :term:`account identities <Account Identity` assigned to it, providing for 
+a 360-degree view of the account activity. 
+
+From this article you will learn how to create new account, understand 
+their :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyse their  
+details with OroCRM reports.
+
+
+.. _user-guide-accounts-create:
+
+Accounts and Customers
+----------------------
+
+If a :ref:`Magento channel <user-guide-magento-channel>` has been created in the system, a new account is created for
+each customer record uploaded to OroCRM in the course of synchronization.
+
+For :ref:`B2B channels <user-guide-magento-channel>`, it's vice versa as you have to specify an account for every 
+customer records added to the system.
+
+If any other channel type is added to the system, it's customer identity settings and the ways to assign them to an
+account are specified in the course of customization, subject to the specific client's needs.
+
+.. important::
+
+    Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
+    view of customer activities, regardless of the :term:`channels <Channel>`. (For example, if you have a B2B customer
+    that represents some client of yours, and then this client is buying something from your Magento store)
+
+
+Create Account from the UI
+--------------------------
+
+- Go to the *Sales → Accounts*
+
+- Click :guilabel:`Create Account` button
+
+- The *Create Account* :ref:`form <user-guide-ui-components-create-pages>` will appear:
+
+.. image:: ./img/accounts/accounts_create.png
+
+The following fields are mandatory and **must** be defined:
+
+.. csv-table:: Mandatory Entity Fields
+  :header: "Field", "Description"
+  :widths: 10, 30
+
+  "**Owner***","Limits the list of users that can manage the account to users, whose roles allow managing 
+  accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
+  
+  By default, the user creating the account is chosen."
+  "**Account Name***","The name used to refer to the account in the system."
+
+The rest of the fields are **optional**. They keep additional details about the account (such as its term:`tags <Tag>`
+and related term:`contacts <Contact>`) and may be left empty.
+
+If you need to record and process any other details of accounts, **custom fields** can be created. Their values will 
+be displayed in the *Additional* section.
+
+.. hint::
+
+    To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
+    button.
+  
+Once all the necessary fields have been defined, click the button in the right top corner of the page to save the 
+account in the system.
+
+.. hint::
+
+    You can also export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
+    the :ref:`Export and Import Functionality <user-guide-import>` guide. 
+
+Accounts View Page
+------------------
+
+:ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
+
+- **General**: general details of the account, such as its name, tags, description and all the contacts assigned for the
+  account. 
+
+.. image:: ./img/accounts/accounts_view_general.png
+
+.. note::
+
+    Once a :term:`customer identity <Customer Identity>` is assigned to an Account, all of its 
+    :term:`contacts <Contact>` are added for the account, however they can be removed and/other contacts can be added
+    from the :ref:`Edit form <user-guide-ui-components-create-pages>` of the account.
+
+- **Record Activities**: activities (calls, e-mails and tasks assigned to the account)
+
+.. image:: ./img/accounts/accounts_view_activities.png
+
+.. note::
+    
+    If an activity-related action was done for a customer or a contact, assigned to the account they will not be 
+    displayed. Only the activities performed directly for the account are available in the section.
+
+- **Additional Information**: details of any :term:`custom field <Custom Field>` defined for the account.
+
+- **Sections with channel names**: each the section contain details of all the customers that are assigned to this 
+  account and belong to the specified channel. Records of other entities assigned to this channel with regard to a
+  specific customer are represented as subsections.
+  
+  In the example below you can see a section of a channel named "B2B Channel" (This is a name of a demo B2B 
+  type channel):
+  
+ - There are three B2B Customers: "Jewel Mart", "A. L. Price", and "PriceRite Warehouse Club"
+
+ - One one of the customers is chosen, you can see it general details and information on related Leads/Opportunities
+ 
+.. image:: ./img/accounts/accounts_view_channels.png
+
+.. note::
+
+    Number and names of such sections depends only on the number and names of channel in OroCRM, customer records of 
+    which have been assigned to the account.
+
+.. _user-guide-accounts-actions:
+
+Account Actions from the View Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The following actions can be performed for the accounts from the :ref:`View page <user-guide-ui-components-view-pages>`:
+  
+- Get to the *"Edit"* form of the account
+
+- Delete the account from the system 
+
+- Export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
+  the :ref:`Export and Import Functionality <user-guide-import>` guide. 
+
+The rest of the actions available from the View page depend on the system settings defined in the Communication & 
+Collaboration section of the "Account" entity
+
+.. image:: ./img/accounts/account_view_actions.png
+
+
+Account Actions from the Grid. 
+------------------------------
+
+From the :ref:`grid <user-guide-ui-components-grids>`:
+
+.. image:: ./img/accounts/accounts_grid.png
+
+- Delete a account from the system : |IcDelete|
+  
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the account : |IcEdit|
+  
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the account : |IcView| 
+
+- Merge Accounts
+
+
+.. _user-guide-accounts-merge:
+
+Merging Accounts
+^^^^^^^^^^^^^^^^
+
+Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
+view of customer activities, regardless of the :term:`channels <Channel>`. For example, if it has appeared that several
+accounts have been created for the different representatives of the same client, or that your business-to-business 
+partner has started another channel (e.g. buying from you Magento store).
+
+In order to merge accounts:
+
+- Go to the accounts grid
+
+- Check the accounts that you want to merge
+
+- Choose :ref:`bulk action <user-guide-ui-components-grid-bulk-action>` *Merge Accounts*.
+
+*For the sake of example, we are merging tree accounts "Acuserv", "Big Bear Stores" and "Case Bonita"*
+
+.. image:: ./img/accounts/accounts_merge_01.png
+
+Once you've clicked the :guilabel:`Merge Accounts` button, a table with the merge-settings will appear.
+
+.. image:: ./img/accounts/accounts_merge_02.png
+
+- Choose the name of one of the accounts being merged, that will be given to your new account ("Master Record")
+
+- Choose if the contacts shall be replaced with the contacts of one account (and which), or if all the contacts shall be
+  appended.
+
+- Choose the default contact of the accounts being merged, that will be given to the Master Records
+
+- Choose the description of the accounts being merged, that will be given to the Master Records
+
+- Choose the owner of the accounts being merged, that will be given to the Master Records 
+
+- Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be 
+  appended.
+
+ - Click the :guilabel:`Merge` button
+  
+Master Record with merged data of several accounts will be created. The rest of the account details, including details 
+of the customer identities will be appended.
+
+
+      
+.. _user-guide-accounts-reports:
+
+Reports with Accounts
+---------------------
+
+OroCRM currently comes with two ready-to-use reports on accounts:
+
+- Accounts Life Time Value 
+
+- Accounts by Opportunities
+
+ 
+Accounts Life Time Value 
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+This is a simple but useful report, with which you can see total amount of money received from all the customers 
+assigned to the account. 
+
+It shows:
+
+- the account name 
+
+- total lifetime sales value registered in OroCRM
+
+.. image:: ./img/opportunities/accounts_report_by_lifetime.png
+
+
+Accounts by Opportunities
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+With this report you can see number of won, lost and pending opportunities for all the customers assigned to the 
+account. 
+
+It shows:
+
+- the account name 
+
+- the number of won opportunities for all the customers assigned to the account
+
+- the number of lost opportunities for all the customers assigned to the account
+
+- the number of pending opportunities for all the customers assigned to the account
+
+- total number of opportunities for all the customers assigned to the account
+
+- - total number of opportunities of a kind, regardless of their account.
+
+.. image:: ./img/opportunities/accounts_report_by_opportunity.png 
+
+
+New custom reports can be added, that can use details of the accounts as well as of any records related to the accounts. 
+For more details on the ways to create and customize the reports,  please see the 
+:ref:`Reports guide <user-guide-reports>`.
+
+
+
+
+
+.. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
+   :align: middle
+
+.. |Bdropdown| image:: ./img/buttons/Bdropdown.png
+   :align: middle
+
+.. |BGotoPage| image:: ./img/buttons/BGotoPage.png
+   :align: middle
+
+.. |Bplus| image:: ./img/buttons/Bplus.png
+   :align: middle
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
+
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
+
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
+
