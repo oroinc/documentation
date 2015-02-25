@@ -18,7 +18,7 @@ For each Magento Channel, you can:
 - Define integration settings and rules, including synchronization priorities, as described in the 
   :ref:`Magento Integration guide <user-guide-magento-channel-integration>`.
 
-- Define :term:`entities <Entity>, records of which can be loaded to OroCRM from Magento, processed and 
+- Define :term:`entities <Entity>`, records of which can be loaded to OroCRM from Magento, processed and 
   (subject to the synchronization settings) updated in Magento. 
  
 .. _user-guide-magento-entities-entities:
@@ -160,13 +160,13 @@ The workflow is aimed to keep track of the customer feedback on the purchase. Fo
    
 3. Once a call has been logged, there are two options:
 
-   - Record Feedback: the *Record Feedback* form will appear. Fill it out, and click :guilabel:`Submit` to save 
-     it in the system.
+  - Record Feedback: the *Record Feedback* form will appear. Fill it out, and click :guilabel:`Submit` to save it in the 
+    system.
      
-     There will be no more calls or E-mails to the customer related to this cart.
+    There will be no more calls or E-mails to the customer related to this cart.
    
-   - No Reply: if it has not been possible to get in touch with the customer, it is possible to make a note on the case
-     (e.g. "an answer-machine", "no parents at home, call-back after six"). 
+  - No Reply: if it has not been possible to get in touch with the customer, it is possible to make a note on the case
+    (e.g. "an answer-machine", "no parents at home, call-back after six"). 
 
 .. image:: ./img/magento_entities/order_followup_workflow_diagram.png
 

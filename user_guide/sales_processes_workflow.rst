@@ -15,9 +15,9 @@ B2B Sales Process Workflow
 The workflow is aimed at creation of a unified approach towards processing and development of sales processes from their
 initiation to completion. According to the workflow, the following actions are available for the manager:
 
-1. Create a :term:`lead <Lead>` as soon as a potential :term:`opportunity <Opportunity> has appeared. As the probability
-   of the deal is getting clear, the lead may be disqualified (if it is most likely that no deal will be made) or, on 
-   the opposite, qualified into an opportunity (if the deal probability is high enough).
+1. Create a :term:`lead <Lead>` as soon as a potential :term:`opportunity <Opportunity>` has appeared. As the 
+   probability of the deal is getting clear, the lead may be disqualified (if it is most likely that no deal will be 
+   made) or, on the opposite, qualified into an opportunity (if the deal probability gets high enough).
 
    If potential success level is high from the very start, it is also possible to skip the step and start creating an 
    opportunity.

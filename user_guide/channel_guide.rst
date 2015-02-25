@@ -46,7 +46,11 @@ The following three fields are mandatory and **must** be defined:
   if a channel is being configured for future use or if it is out of date."
   "**Name**", "The name that will be used to refer to the channel in the system. It is recommended to keep the name
   meaningful."
-  "**Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the 
+  
+  "
+  .. _user-guide-channel-guide-type:
+  
+  **Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the 
   channel created.
 
   Channel types define a specific set of rules and settings that apply to the channel.
@@ -176,5 +180,4 @@ Please refer to the *"Entity Management"* guide for more information.
 .. |IcView| image:: ./img/buttons/IcView.png
    :align: middle
 
-.. |WT02| replace:: Shopping Cart
-.. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html
+

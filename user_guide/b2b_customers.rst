@@ -39,8 +39,8 @@ The following fields are mandatory and **must** be defined:
   this customer."
   "**Account***","An :term:`account <Account>`, to which the customer is assigned. Details of this B2B customer will 
   then be a part of this account's details. 
-  Choose from the drop-down or list, or create a new B2B customer, as described in the  
-  :ref:`Accounts guide <multi-channel-account>`.
+  Choose from the drop-down or list, or create a new accounts, as described in the  
+  :ref:`Accounts guide <user-guide-accounts-create>`."
 
 The rest of the fields are **optional**. They keep additional details about the customer (such as its term:tags <Tag>`
 and address details) and may be left empty.
@@ -71,7 +71,7 @@ The following actions can be performed for the B2B customers:
 
 From the :ref:`grid <user-guide-ui-components-grids>`:
 
-.. image:: ./img/customers/customers_grid.png
+.. image:: ./img/b2b_customers/customers_grid.png
 
 - Delete a customer from the system : |IcDelete|
   
@@ -81,7 +81,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`:
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
-.. image:: ./img/customers/customer_view.png
+.. image:: ./img/b2b_customers/customer_view.png
   
 - Get to the *"Edit"* form of the customer
 
@@ -90,7 +90,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 The rest of the actions available depend on the system settings defined in the Communication &  Collaboration section 
 of the "B2B Customer" entity
 
-.. image:: ./img/customers/customer_view_actions.png
+.. image:: ./img/b2b_customers/customer_view_actions.png
 
       
 .. _user-guide-customers-reports:

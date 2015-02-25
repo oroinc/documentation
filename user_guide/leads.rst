@@ -40,11 +40,11 @@ The following fields are mandatory and **must** be defined:
   
   By default, the user creating the lead is chosen."
   "**Lead Name***","The name used to refer to the lead in the system."
-  "**Channel***","Choose one of active :term:`channels`, from which OroCRM will get information on this lead."
+  "**Channel***","Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this lead."
   "**First Name*** and **Last Name***","Personal details of the potential customer or contact person." 
 
 The rest of the fields are **optional**. They keep additional details about the lead (such as the Website, name of 
-related :ref:`B2B customer <user-guide-system-channel-entities-leads-b2b-customer>`, industry, address details, etc.) 
+related :term:`B2B customer <B2B Customer>`, industry, address details, etc.) 
 and may be left empty.
 
 .. note::

@@ -4,15 +4,12 @@ Accounts
 ========
 
 Account records ("accounts") represent  represent a person, company or group of people you do business activities with. 
-An account can aggregate details of all the :term:`account identities <Account Identity` assigned to it, providing for 
+An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing for 
 a 360-degree view of the account activity. 
 
 From this article you will learn how to create new account, understand 
 their :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyse their  
 details with OroCRM reports.
-
-
-.. _user-guide-accounts-create:
 
 Accounts and Customers
 ----------------------
@@ -32,6 +29,8 @@ account are specified in the course of customization, subject to the specific cl
     view of customer activities, regardless of the :term:`channels <Channel>`. (For example, if you have a B2B customer
     that represents some client of yours, and then this client is buying something from your Magento store)
 
+
+.. _user-guide-accounts-create:
 
 Create Account from the UI
 --------------------------
@@ -56,8 +55,8 @@ The following fields are mandatory and **must** be defined:
   By default, the user creating the account is chosen."
   "**Account Name***","The name used to refer to the account in the system."
 
-The rest of the fields are **optional**. They keep additional details about the account (such as its term:`tags <Tag>`
-and related term:`contacts <Contact>`) and may be left empty.
+The rest of the fields are **optional**. They keep additional details about the account (such as its :term:`tags <Tag>`
+and related :term:`contacts <Contact>`) and may be left empty.
 
 If you need to record and process any other details of accounts, **custom fields** can be created. Their values will 
 be displayed in the *Additional* section.
@@ -100,7 +99,7 @@ Accounts View Page
     If an activity-related action was done for a customer or a contact, assigned to the account they will not be 
     displayed. Only the activities performed directly for the account are available in the section.
 
-- **Additional Information**: details of any :term:`custom field <Custom Field>` defined for the account.
+- **Additional Information**: details of any :term:`custom fields <Custom Field>` defined for the account.
 
 - **Sections with channel names**: each the section contain details of all the customers that are assigned to this 
   account and belong to the specified channel. Records of other entities assigned to this channel with regard to a
@@ -137,7 +136,7 @@ The following actions can be performed for the accounts from the :ref:`View page
 The rest of the actions available from the View page depend on the system settings defined in the Communication & 
 Collaboration section of the "Account" entity
 
-.. image:: ./img/accounts/account_view_actions.png
+.. image:: ./img/accounts/accounts_view_actions.png
 
 
 Account Actions from the Grid. 
@@ -196,7 +195,7 @@ Once you've clicked the :guilabel:`Merge Accounts` button, a table with the merg
 - Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be 
   appended.
 
- - Click the :guilabel:`Merge` button
+- Click the :guilabel:`Merge` button
   
 Master Record with merged data of several accounts will be created. The rest of the account details, including details 
 of the customer identities will be appended.
@@ -221,13 +220,15 @@ Accounts Life Time Value
 This is a simple but useful report, with which you can see total amount of money received from all the customers 
 assigned to the account. 
 
+In order to see the report go to *Reports and Segments → Reports → Accounts → Life Time*
+
 It shows:
 
 - the account name 
 
 - total lifetime sales value registered in OroCRM
 
-.. image:: ./img/opportunities/accounts_report_by_lifetime.png
+.. image:: ./img/accounts/accounts_report_by_lifetime.png
 
 
 Accounts by Opportunities
@@ -235,6 +236,8 @@ Accounts by Opportunities
 
 With this report you can see number of won, lost and pending opportunities for all the customers assigned to the 
 account. 
+
+In order to see the report go to *Reports and Segments → Reports → Accounts → By Opportunities*
 
 It shows:
 
@@ -248,9 +251,9 @@ It shows:
 
 - total number of opportunities for all the customers assigned to the account
 
-- - total number of opportunities of a kind, regardless of their account.
+- total number of opportunities of a kind, regardless of their account.
 
-.. image:: ./img/opportunities/accounts_report_by_opportunity.png 
+.. image:: ./img/accounts/accounts_report_by_opportunity.png 
 
 
 New custom reports can be added, that can use details of the accounts as well as of any records related to the accounts. 

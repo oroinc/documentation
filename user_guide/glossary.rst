@@ -76,7 +76,7 @@ Glossary
 
    Account
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person, company or group of people you
-      do business activities with. Account aggregates details of all the :term:`customer identities <Customer Identity`
+      do business activities with. Account aggregates details of all the :term:`customer identities <Customer Identity>`
       assigned to it, providing for a 360-degree view of the customer activity.  
 
    Tag
@@ -90,5 +90,16 @@ Glossary
 
    Custom Field
       An :term:`field <Field>` added to an entity by a user from the UI.
-      
 
+   Cart
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent actual Magento |WT02|
+
+   Order
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent actual Magento order
+
+      
+	 
+
+
+.. |WT02| replace:: Shopping Carts
+.. _WT02: http://www.magentocommerce.com/magento-connect/customer-experience/shopping-cart.html

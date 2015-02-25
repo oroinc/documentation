@@ -18,17 +18,17 @@ End user oriented documentation that explains how to administer and configure ap
     reports
     workflow_management
     multi_channel_overview
+    accounts
     b2b_channels
+    b2b_customers
     leads
-    outlook_sync
     opportunities
-    web_customer
     sales_processes_workflow
     magento_channels
     channel_guide
     export_import
-    magento_entities
     magento_channel_integration
+    outlook_sync
 
 
     

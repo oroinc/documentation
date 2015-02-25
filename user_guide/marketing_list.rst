@@ -103,7 +103,7 @@ Marketing List.
     selected. The list of these fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary 
     Email and Primary Phone fields).
 
-	
+
 .. image:: ./img/marketing/list_columns_01.png
   
 - Choose the fields from the drop-down in the *"Column*" section.
