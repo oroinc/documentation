@@ -30,12 +30,14 @@ The code defines some of `piwik <http://piwik.org>`_-specific settings that shou
 that can/must be defined by the user:
 
 .. code-block:: html
+    :linenos:
 
-   _paq.push(['setUserId', [user_identifier] ])
+    _paq.push(['setUserId', [user_identifier] ])
 
 [user_identifier] defines the user id used in compliance with the Website settings.
 
 .. code-block:: html
+    :linenos:
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', [name], [value] ]
 
@@ -73,20 +75,19 @@ This is the code pre-implemented for Magento stores:
     :linenos:
 
     <script type="text/javascript">
-       var _paq = _paq || [];
-       _paq.push(['setUserId', "id=guest; visitor-id=51"]);
-       _paq.push(['setConversionAttributionFirstReferrer', false]);
-      _paq.push(['trackPageView']);
+        var _paq = _paq || [];
+        _paq.push(['setUserId', "id=guest; visitor-id=51"]);
+        _paq.push(['setConversionAttributionFirstReferrer', false]);
+        _paq.push(['trackPageView']);
 
-                
-      (function() {
-           var u="http://crm.dev/";
-         _paq.push(['setTrackerUrl', u+'tracking.php']);
-         _paq.push(['setSiteId', 'MAGORO']);
-         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-         g.defer=true; g.async=true; g.src=u+'bundles/orotracking/js/piwik.min.js'; s.parentNode.insertBefore(g,s);
-      })();
-   </script>
+        (function() {
+            var u="http://crm.dev/";
+            _paq.push(['setTrackerUrl', u+'tracking.php']);
+            _paq.push(['setSiteId', 'MAGORO']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+            g.defer=true; g.async=true; g.src=u+'bundles/orotracking/js/piwik.min.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
 
 *Users are identified as guests until they sign in. As soon as a user signs in, their identification is a value of
 the "visitor-id" field. A special block has been implemented to enable transfer of the 
@@ -101,20 +102,20 @@ On some of the pages, actions are activated. For example, this is a tracking scr
 .. code-block:: html
     :linenos:
 
-   <script type="text/javascript">
-       var _paq = _paq || [];
-      _paq.push(['setUserId', "id=guest; visitor-id=51"]);
-      _paq.push(['setConversionAttributionFirstReferrer', false]);
-      _paq.push(['trackPageView']);
-      _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'cart item added', '27' ]);    
-      (function() {
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['setUserId', "id=guest; visitor-id=51"]);
+        _paq.push(['setConversionAttributionFirstReferrer', false]);
+        _paq.push(['trackPageView']);
+        _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'cart item added', '27' ]);
+        (function() {
            var u="http://crm.dev/";
          _paq.push(['setTrackerUrl', u+'tracking.php']);
          _paq.push(['setSiteId', 'MAGORO']);
          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
          g.defer=true; g.async=true; g.src=u+'bundles/orotracking/js/piwik.min.js'; s.parentNode.insertBefore(g,s);
-      })();
-   </script>
+        })();
+    </script>
 
 *Every time the user get to the page where the code is implemented, a "Cart item added" 
 event will appear on the campaign page and a dynamic value that corresponds to the item ID will be saved.*
