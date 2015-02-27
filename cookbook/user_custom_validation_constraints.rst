@@ -26,6 +26,7 @@ predefined rules when a ``User`` is being validated:
 
     .. code-block:: xml
         :linenos:
+
         <!-- src/Acme/UserBundle/Resources/config/validation.xml -->
         <?xml version="1.0" encoding="UTF-8" ?>
         <constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
