@@ -495,7 +495,10 @@ This created a ``RegularEntity`` table in your database. You can now use the
 Search for the parts that are related to the ``RegularEntity`` table (the
 lines between its related ``Generate table`` and ``End of generate table``
 comments) and copy them to a new migration file. After that, the new migration
-file should look like this::
+file should look like this:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Migrations/Schema/CreateRegularEntityMigration.php;
     namespace Acme\DemoBundle\Migrations\Schema\v1_0;

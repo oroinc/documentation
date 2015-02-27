@@ -236,7 +236,10 @@ field helper to process the fields:
 
 You can configure your fields in the UI under *System* / *Entities* / *Entity Management*.
 Alternatively, you can describe the field configuration in your entity directly
-using :class:`annotations <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`::
+using :class:`annotations <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`:
+
+.. code-block:: php
+    :linenos:
 
      /**
       * @ConfigField(
