@@ -30,14 +30,12 @@ The code defines some of `piwik <http://piwik.org>`_-specific settings that shou
 that can/must be defined by the user:
 
 .. code-block:: html
-    :linenos:
 
    _paq.push(['setUserId', [user_identifier] ])
 
 [user_identifier] defines the user id used in compliance with the Website settings.
 
 .. code-block:: html
-    :linenos:
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', [name], [value] ]
 
