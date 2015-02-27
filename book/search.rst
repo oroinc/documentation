@@ -62,6 +62,7 @@ file named ``search.yml`` which must be located in the bundle's ``Resources/conf
 directory. Such a file would then look something like this:
 
 .. code-block:: yaml
+    :linenos:
 
     Acme\DemoBundle\Entity\Product:
         alias: demo_product

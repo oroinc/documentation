@@ -24,6 +24,7 @@ First of all, you need to define the Page Component module in your bundle which 
 ``Resources/public/js/app/components`` directory of your bundle:
 
 .. code-block:: javascript
+    :linenos:
 
     // src/Acme/DemoBundle/Resources/public/js/app/components/my-component.js
     define(function (require) {
@@ -55,6 +56,7 @@ Creating an App Module
 To boot your component together with the application, you need to create an App Module:
 
 .. code-block:: javascript
+    :linenos:
 
     // src/Acme/DemoBundle/Resources/public/js/app/modules/my-module.js
     require([
@@ -90,6 +92,7 @@ Declaring the App Module
 The final step is to register your App Module in the RequireJS config:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requirejs.yml
     config:

@@ -22,6 +22,7 @@ Using your own CSS files is pretty simple. Just save them in the, for example,
 configuration file:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/assets.yml
     css:
@@ -35,6 +36,7 @@ configuration file:
 Then, embed your styles in the main layout template using the ``oro_css`` Twig tag:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% oro_css filter='filters,separated,by,comma' output='css/style.css' %}
         <link rel="stylesheet" media="all" href="{{ asset_url }}" />
@@ -69,6 +71,7 @@ which means that all files belonging to an excluded group won't be merged and co
 For instance, the following configuration excludes all files from the ``frontend`` group:
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config.yml
     oro_assetic:
@@ -118,6 +121,7 @@ Customizing the layout of your Platform application is as easy as defining your 
 your application's configuration using the ``oro_theme`` option:
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config.yml
     oro_theme:
@@ -147,6 +151,7 @@ in a file named ``settings.yml`` that is located in the ``Resources/public/theme
 directory of your bundle:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/public/themes/acme-theme/settings.yml
     styles:
@@ -160,6 +165,7 @@ directory of your bundle:
 To use the theme in any application, enable it in the application configuration:
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config.yml
     oro_theme:
@@ -222,6 +228,7 @@ a custom label and favicon for it. The definition of the *Oro* theme as defined 
 like this:
 
 .. code-block:: yaml
+    :linenos:
 
     label: Oro Theme
     icon: bundles/oroui/themes/oro/images/favicon.ico
@@ -232,6 +239,7 @@ All you have to is placing a ``settings.yml`` file in the ``Resources/public/the
 of your bundle and define the values you want to change:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/public/oro/
     label: Custom Oro Theme

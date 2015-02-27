@@ -78,6 +78,7 @@ file which is stored in the bundle's ``Resources/config`` directory. For
 example, the placeholders file of the OroDataGridBundle looks like this:
 
 .. code-block:: yaml
+    :linenos:
 
     # platform/src/Oro/Bundle/DataGridBundle/Resources/config/placeholders.yml
     placeholders:
@@ -113,12 +114,14 @@ example, the placeholders file of the OroDataGridBundle looks like this:
 A placeholder is rendered in a twig template using the ``placeholder`` tag:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% placeholder scripts_before %}
 
 You can pass additional options to the placeholder using ``with``:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% placeholder right_panel with {placement: 'right'} %}
 
@@ -175,6 +178,7 @@ is the parameter holding the class name for the ``oro_datagrid.configuration.pro
 service):
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config/parameters.yml
     parameters:
@@ -291,6 +295,7 @@ important that you pass the special ``oro_options`` key to the options argument
 which ensures that the column is recognized properly.
 
 .. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/MigrationBundle/Schema/v1_0/AddCustomFieldMigration.php
     namespace Acme\DemoBundle\Migrations\Schema;
@@ -444,6 +449,7 @@ This created a ``RegularEntity`` table in your database. You can now use the
 ``oro:migration:dump`` to dump the complete database schema:
 
 .. code-block:: php
+    :linenos:
 
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;

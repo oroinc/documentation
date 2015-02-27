@@ -172,6 +172,7 @@ To solve this issue, a developer can implement a custom strategy to perform requ
 The following example shows services that should be created to add a new import strategy:
 
 .. code-block:: yaml
+    :linenos:
 
     # Custom strategy
     orocrm_contact.importexport.strategy.contact.add:

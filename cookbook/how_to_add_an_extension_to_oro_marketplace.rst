@@ -25,6 +25,7 @@ Every package must contain a composer.json file in the root catalogue. This file
 information about the application, its author and distribution license, as shown in the example below:
 
 .. code-block:: json
+    :linenos:
 
     {
         "name": "oro/crm-application",

@@ -82,6 +82,7 @@ Fields
 For each option, define a field under ``fields`` key:
 
 .. code-block:: yaml
+    :linenos:
 
     # Acme/DemoBundle/Resources/config/system_configuration.yml
     oro_system_configuration:
@@ -151,6 +152,7 @@ In a Twig template, use the ``oro_config_value()`` helper to retrieve the
 value of a configuration option:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {# setting becomes the value the user configured or true if they didn't #}
     {% set setting = oro_config_value('acme_demo.foo') %}

@@ -8,6 +8,7 @@ Commonly, inline-JavaScript is used to bind some interactive functionality into 
 fragment:
 
 .. code-block:: html
+    :linenos:
 
     <select id="my-select">
         <option value="foo">Foo</option>
@@ -59,6 +60,7 @@ the introduction will be replaced by a new ``Select2Component``. Start with crea
 your bundle.
 
 .. code-block:: javascript
+    :linenos:
 
     // src/Acme/DemoBundle/Resources/public/js/app/components/select2-component.js
     define(function (require) {
@@ -112,6 +114,7 @@ Next, the HTML code of the related template has to be modified to tell the ``Lay
 HTML elements are related to the ``Select2Component``:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% set options = {
         placeholder: 'Select one ...',
@@ -146,6 +149,7 @@ layer. Therefore, replace the ``Select2Component`` with a ``Select2View`` class 
 and that extends the ``BaseView`` class:
 
 .. code-block:: javascript
+    :linenos:
 
     // src/Acme/DemoBundle/Resources/public/js/app/views/select2-view.js
     define(function (require) {
@@ -193,6 +197,7 @@ the ``oroui/js/app/components/view-component`` and use the ``view`` option to po
 ``Select2View``:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% set options = {
         view: 'acmedemo/js/app/views/select2-view',
@@ -227,6 +232,7 @@ Configure RequireJS
 Finally, you need to make your new classes known to RequireJS:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requirejs.yml
     config:

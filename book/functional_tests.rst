@@ -57,6 +57,7 @@ You will need to configure a set of parameters for the testing environment.
 For example:
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config/parameters_test.yml
     parameters:
@@ -101,6 +102,7 @@ when a client is initialized for the first time and is rolled back when all
 test methods of the class have been executed.
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -123,6 +125,7 @@ command when the client is first initialized. This is a workaround for MyISAM
 search tables that are not transactional.
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -296,6 +299,7 @@ Simple initialization works for testing commands and services when authenticatio
 is not required.
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -315,6 +319,7 @@ is not required.
 Initialization with custom AppKernel options:
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -334,6 +339,7 @@ Initialization with custom AppKernel options:
 Initialization with authentication:
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -685,6 +691,7 @@ This is an example of how you can write an integration test for a class that
 uses Doctrine ORM without mocking it's classes and using real Doctrine services:
 
 .. code-block:: php
+    :linenos:
 
     namespace Oro\Bundle\BatchBundle\Tests\Functional\ORM\QueryBuilder;
 

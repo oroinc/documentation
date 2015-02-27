@@ -47,6 +47,7 @@ Defining a Module
 Each module is defined in its own file using ``define()`` which has the following signature:
 
 .. code-block:: javascript
+    :linenos:
 
     define(
         module_id /*optional*/,
@@ -57,6 +58,7 @@ Each module is defined in its own file using ``define()`` which has the followin
 In its simplest form, a RequireJS module is just an object defining pair-value pairs:
 
 .. code-block:: javascript
+    :linenos:
 
     // foo.js
 
@@ -73,6 +75,7 @@ In its simplest form, a RequireJS module is just an object defining pair-value p
 You can even use a function if you need to do some initialization stuff:
 
 .. code-block:: javascript
+    :linenos:
 
     // foo.js
 
@@ -99,6 +102,7 @@ Usually, your modules will need to work with some code from other modules. For e
 module depends on the previously created ``foo`` module:
 
 .. code-block:: javascript
+    :linenos:
 
     // bar.js
     define(['foo'], function (foo) {
@@ -123,6 +127,7 @@ them immediately. For example, your application may require both the ``foo`` and
 to boot:
 
 .. code-block:: javascript
+    :linenos:
 
     require(['app', 'foo', 'bar'], function (app, foo, bar) {
         app.start(foo.baz(bar));
@@ -175,6 +180,7 @@ configuration defines modules named ``underscore`` (for the Underscore.js librar
 for the Backbone.js library:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requires.yml
     config:
@@ -204,6 +210,7 @@ required. For example, the `OroUIBundle`_ ships with an extended version of the 
 Use the `map`_ option to substitute a module ID for a given prefix:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requires.yml
     config:
@@ -226,6 +233,7 @@ that there is the more specific ``oroui/js/jquery-extend`` entry that will take 
 The `paths`_ option tells the optimization tool under which locations certain modules can be found:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requires.yml
     config:
@@ -244,6 +252,7 @@ You can use the ``build`` option to exclude a module from being included in the 
 optimization tool:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requirejs.yml
     build:
@@ -258,6 +267,7 @@ Full Configuration Example
 A full working example of a RequireJS configuration in a bundle can look like this:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/requirejs.yml
     config:

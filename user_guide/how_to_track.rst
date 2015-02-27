@@ -30,12 +30,14 @@ The code defines some of `piwik <http://piwik.org>`_-specific settings that shou
 that can/must be defined by the user:
 
 .. code-block:: html
+    :linenos:
 
    _paq.push(['setUserId', [user_identifier] ])
 
 [user_identifier] defines the user id used in compliance with the Website settings.
 
 .. code-block:: html
+    :linenos:
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', [name], [value] ]
 
@@ -70,6 +72,7 @@ Tracked Website Example
 This is the code pre-implemented for Magento stores:
 
 .. code-block:: html
+    :linenos:
 
     <script type="text/javascript">
        var _paq = _paq || [];
@@ -98,6 +101,7 @@ campaign.*
 On some of the pages, actions are activated. For example, this is a tracking script on the cart page:
 
 .. code-block:: html
+    :linenos:
 
    <script type="text/javascript">
        var _paq = _paq || [];
@@ -121,6 +125,7 @@ A similar tracking script is implemented on each of the Website pages. The order
 enabled:
 
 .. code-block:: html
+    :linenos:
 
     _paq.push(['trackEvent', 'OroCRM', 'Tracking', 'order successfully placed', '2699.990000' ]);            
 

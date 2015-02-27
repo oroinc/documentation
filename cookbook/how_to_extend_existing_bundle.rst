@@ -19,6 +19,7 @@ article and we want to extend OroUserBundle - in this case file AcmeNewBundle.ph
 .. _How to create new bundle: ./how-to-create-new-bundle
 
 .. code-block:: php
+    :linenos:
 
     <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
@@ -39,6 +40,7 @@ So, we need to create file /src/Acme/Bundle/NewBundle/Resources/views/User/widge
 (this file structure duplicates file structure of extendable bundle) with our custom content:
 
 .. code-block:: html+jinja
+    :linenos:
 
     <div class="widget-content">
         <div class="row-fluid form-horizontal">

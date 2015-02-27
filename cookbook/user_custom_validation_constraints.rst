@@ -15,6 +15,7 @@ predefined rules when a ``User`` is being validated:
 .. configuration-block::
 
     .. code-block:: yaml
+        :linenos:
 
         # src/Acme/UserBundle/Resources/config/validation.yml
         Oro\Bundle\UserBundle\Entity\User:
@@ -24,7 +25,7 @@ predefined rules when a ``User`` is being validated:
                         groups: [Registration]
 
     .. code-block:: xml
-
+        :linenos:
         <!-- src/Acme/UserBundle/Resources/config/validation.xml -->
         <?xml version="1.0" encoding="UTF-8" ?>
         <constraint-mapping xmlns="http://symfony.com/schema/dic/constraint-mapping"
