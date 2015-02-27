@@ -17,7 +17,10 @@ Extending a Bundle
 Some of the techniques described below require extending an existing bundle.
 Essentially, extending a bundle is nothing more than implementing the ``getParent()``
 method in the bundle's class. The ``getParent()`` method returns the name of
-the extended bundle::
+the extended bundle:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/AcmeDemoBundle.php
     use Symfony\Component\HttpKernel\Bundle\Bundle;
@@ -78,6 +81,7 @@ file which is stored in the bundle's ``Resources/config`` directory. For
 example, the placeholders file of the OroDataGridBundle looks like this:
 
 .. code-block:: yaml
+    :linenos:
 
     # platform/src/Oro/Bundle/DataGridBundle/Resources/config/placeholders.yml
     placeholders:
@@ -113,12 +117,14 @@ example, the placeholders file of the OroDataGridBundle looks like this:
 A placeholder is rendered in a twig template using the ``placeholder`` tag:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% placeholder scripts_before %}
 
 You can pass additional options to the placeholder using ``with``:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% placeholder right_panel with {placement: 'right'} %}
 
@@ -175,6 +181,7 @@ is the parameter holding the class name for the ``oro_datagrid.configuration.pro
 service):
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config/parameters.yml
     parameters:
@@ -214,7 +221,10 @@ Overriding a Controller
 To override a controller of the Oro Platform bundle with your own implementation,
 you must first extend that bundle (read :doc:`/cookbook/how_to_extend_existing_bundle`
 for more information). Then, create a controller class with the same name
-as the parent bundle::
+as the parent bundle:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DataGridBundle/Controller/GridController;
     namespace Acme\DataGridBundle\Controller;
@@ -291,6 +301,7 @@ important that you pass the special ``oro_options`` key to the options argument
 which ensures that the column is recognized properly.
 
 .. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/MigrationBundle/Schema/v1_0/AddCustomFieldMigration.php
     namespace Acme\DemoBundle\Migrations\Schema;
@@ -342,7 +353,10 @@ Thanks to the EntityExtendBundle, you can create your own entities which are
 then available in the *Section*/*Entities* section of the Platform Application.
 To create your own entities, simply create a migration class that implements
 the :class:`Oro\\Bundle\\EntityExtendBundle\\Migration\\Extension\\ExtendExtensionAwareInterface`
-and the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interfaces::
+and the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interfaces:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Migrations/Schema/v1_0/CreateCustomEntityMigration.php
     namespace Acme\DemoBundle\Migrations\Schema\v1_0;
@@ -408,7 +422,10 @@ Regular Entities
 ~~~~~~~~~~~~~~~~
 
 You can create regular Doctrine entities as you would in
-other Symfony applications. For example, have a look at the following entity::
+other Symfony applications. For example, have a look at the following entity:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/RegularEntity.php
     namespace Acme\DemoBundle\Entity;
@@ -444,6 +461,7 @@ This created a ``RegularEntity`` table in your database. You can now use the
 ``oro:migration:dump`` to dump the complete database schema:
 
 .. code-block:: php
+    :linenos:
 
     use Oro\Bundle\MigrationBundle\Migration\Migration;
     use Oro\Bundle\MigrationBundle\Migration\QueryBag;
@@ -477,7 +495,10 @@ This created a ``RegularEntity`` table in your database. You can now use the
 Search for the parts that are related to the ``RegularEntity`` table (the
 lines between its related ``Generate table`` and ``End of generate table``
 comments) and copy them to a new migration file. After that, the new migration
-file should look like this::
+file should look like this:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Migrations/Schema/CreateRegularEntityMigration.php;
     namespace Acme\DemoBundle\Migrations\Schema\v1_0;
@@ -534,7 +555,10 @@ Service used in months Service fee per month
 9 - 12                 10 $
 ====================== =====================
 
-The entity class for such a user may look like this::
+The entity class for such a user may look like this:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Account.php
     namespace Acme\DemoBundle\Entity;
@@ -568,7 +592,10 @@ The entity class for such a user may look like this::
 
 You can then create a class which performs all of the calculations based on the rules
 above which should be `registered as a service`_ in your Symfony
-application::
+application:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Accounting/TotalFeeCalculator.php
     namespace Acme\DemoBundle\Accounting;

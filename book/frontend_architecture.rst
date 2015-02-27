@@ -126,6 +126,7 @@ can be defined. As a solutions, we have an only ``PageController`` constructor
 used to create controllers for every url.
 
 .. code-block:: javascript
+    :linenos:
 
     // the routes module contains an only route mask
     // that always leads to PageController::index action point
@@ -186,6 +187,7 @@ data-attributes the HTML node:
  * ``data-page-component-options`` -- safe JSON-string
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% set options  = {
         metadata: metaData,
@@ -235,6 +237,7 @@ App Modules are declared in ``requirejs.yml`` the configuration file,
 in the custom section ``appmodules``:
 
 .. code-block:: yaml
+    :linenos:
 
     config:
         appmodules:
@@ -252,6 +255,7 @@ Example 1
 will be instantiated right before the "action point" method of the control is invoked.
 
 .. code-block:: javascript
+    :linenos:
 
     require([
         'oroui/js/app/controllers/base/controller'
@@ -287,6 +291,7 @@ Example 2
 ``oroui/js/app/modules/messenger-module`` -- declares handlers of the messenger in the ``mediator``
 
 .. code-block:: javascript
+    :linenos:
 
     require([
         'oroui/js/mediator',
@@ -312,6 +317,7 @@ they are used. The handlers can be executed by any component or view
 in the Chaplin lifecycle.
 
 .. code-block:: javascript
+    :linenos:
 
     mediator.execute('showMessage', 'success', 'Record is saved');
 

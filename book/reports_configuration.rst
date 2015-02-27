@@ -21,6 +21,7 @@ file called ``datagrid.yml`` in the ``Resources/config`` directory of your bundl
 following example:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/datagrid.yml
     datagrid:
@@ -162,6 +163,7 @@ The definition of a data grid consists of the following sections:
     user doesn't make a choice to the ``default`` option:
 
     .. code-block:: yaml
+        :linenos:
 
         default:
             period: { value: monthPeriod }
@@ -191,6 +193,7 @@ a configuration file named ``navigation.yml`` that is located in the ``Resources
 of your bundle:
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/DemoBundle/Resources/config/navigation.yml
     oro_menu_config:

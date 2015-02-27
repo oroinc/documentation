@@ -22,6 +22,7 @@ Let's assume that we want to create AcmeNewBundle and put it under namespace Acm
 in the /src directory. We need to create corresponding directory structure and bundle file with the following content:
 
 .. code-block:: php
+    :linenos:
 
     <?php
     // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
@@ -75,6 +76,7 @@ Now you have all required files to enable your new bundle. To do that you have t
    content:
 
    .. code-block:: yaml
+       :linenos:
 
        # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
        bundles:

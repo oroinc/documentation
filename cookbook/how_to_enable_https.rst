@@ -16,6 +16,7 @@ Configuring routes
 You have to add schema parameter to routing.yml file.
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config/routing.yml
     oro_default:
@@ -36,6 +37,7 @@ Configuring security config
 You have to add requires_channel option
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config/security.yml
     # ...

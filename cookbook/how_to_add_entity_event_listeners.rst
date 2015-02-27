@@ -20,6 +20,7 @@ You would like to fulfill social information about your contact with some extern
 First, you have to add your listener to the bundle by the services.yml file.
 
 .. code-block:: yaml
+    :linenos:
 
     # src/Acme/Bundle/ContactBundle/Resources/config/services.yml
     services:
@@ -40,6 +41,7 @@ entity's class type.
 This class must have a onFlush method, which will be called when the event is dispatched:
 
 .. code-block:: php
+    :linenos:
 
     <?php
     // src/Acme/Bundle/ContactBundle/Listener/SocialFields.php

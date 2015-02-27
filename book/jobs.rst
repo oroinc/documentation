@@ -74,7 +74,10 @@ you to implement one method -
 It returns the `crontab compatible`_ description of when the command should
 be executed. For example, if a command should be run every day five minutes
 after midnight, the appropriate value is ``5 0 * * *``. Your command will
-then look like this::
+then look like this:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Command/DemoCommand.php
     namespace Acme\DemoBundle\Command;
@@ -153,7 +156,10 @@ job itself is being run. The scheduled jobs will be executed by the daemon
 process.
 
 For example, assume that you have command that sends a newsletter to a list
-of recipients::
+of recipients:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/NewsletterBundle/Command/SendNewsletterCommand.php
     namespace Acme\NewsletterBundle\Command;
@@ -183,7 +189,10 @@ this is not a very clever idea. One of the drawbacks of this solution is that
 sending the emails to hundreds, thousands or even more recipients likely takes
 a long time blocking the response to the browser. Luckily, you can solve this
 issue by only queuing the command execution. Its actual execution will be
-done by a separate process::
+done by a separate process:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/NewsletterBundle/Controller/NewsletterController.php
     namespace Acme\NewsletterBundle\Controller;

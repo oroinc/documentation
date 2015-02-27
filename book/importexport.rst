@@ -36,6 +36,7 @@ Import is a basic operation for any entity. The import operation is one step.
 See the following example configuration:
 
 .. code-block:: yaml
+    :linenos:
 
     # Oro/Bundle/ImportExportBundle/Resources/config/batch_jobs.yml
     connector:
@@ -188,6 +189,7 @@ during deserialization).
     method:
 
     .. code-block:: php
+        :linenos:
 
         if ($data[$fieldName] !== null
             && ($this->fieldHelper->isRelation($field) || $this->fieldHelper->isDateTimeField($field))
@@ -234,7 +236,10 @@ field helper to process the fields:
 
 You can configure your fields in the UI under *System* / *Entities* / *Entity Management*.
 Alternatively, you can describe the field configuration in your entity directly
-using :class:`annotations <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`::
+using :class:`annotations <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`:
+
+.. code-block:: php
+    :linenos:
 
      /**
       * @ConfigField(
@@ -321,6 +326,7 @@ that implements the `ItemWriterInterface`_ from the `Akeneo BatchBundle`_.
 The new classes must be declared as services:
 
 .. code-block:: yaml
+    :linenos:
 
     parameters:
         oro_importexport.reader.csv.class: Acme\DemoBundle\ImportExport\Reader\ExcelFileReader
@@ -366,6 +372,7 @@ the following methods:
     as a service in the ``Resources/config/importexport.yml`` file:
 
     .. code-block:: yaml
+        :linenos:
 
         # src/OroCRM/Bundle/ContactBundle/Resources/config/importexport.yml
         parameters:

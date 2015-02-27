@@ -25,6 +25,7 @@ First you have to go to your default controller, create your action and specify 
 (relative file path is src/Acme/Bundle/NewBundle/Controller/DefaultController.php):
 
 .. code-block:: php
+    :linenos:
 
     <?php
 
@@ -51,6 +52,7 @@ Next you should specify action template (file path is src/Acme/Bundle/NewBundle/
 with the following content:
 
 .. code-block:: html+jinja
+    :linenos:
 
     {% extends "OroUIBundle:Default:index.html.twig" %}
     {% block content %}
@@ -61,6 +63,7 @@ And the latest thing - you should register your bundle routes. To do that you ha
 in src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml with the following content:
 
 .. code-block:: yaml
+    :linenos:
 
     acme_new_bundle:
         resource:     "@AcmeNewBundle/Controller"
@@ -74,6 +77,7 @@ Create and fill navigation.yml
 Now we need to create navigation.yml file in src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the following content:
 
 .. code-block:: yaml
+    :linenos:
 
     oro_menu_config:
         items:
@@ -132,6 +136,7 @@ To override some section in menu you have to create the navigation.yml file in
 (it will add a link with name "Acme link1 label" in sales section):
 
 .. code-block:: yaml
+    :linenos:
 
     oro_menu_config:
         items:

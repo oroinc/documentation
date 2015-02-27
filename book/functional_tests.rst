@@ -57,6 +57,7 @@ You will need to configure a set of parameters for the testing environment.
 For example:
 
 .. code-block:: yaml
+    :linenos:
 
     # app/config/parameters_test.yml
     parameters:
@@ -101,6 +102,7 @@ when a client is initialized for the first time and is rolled back when all
 test methods of the class have been executed.
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -123,6 +125,7 @@ command when the client is first initialized. This is a workaround for MyISAM
 search tables that are not transactional.
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -141,7 +144,10 @@ Loading Data Fixtures
 ~~~~~~~~~~~~~~~~~~~~~
 
 Use the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::loadFixtures`
-method to load a fixture in a test::
+method to load a fixture in a test:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -166,7 +172,10 @@ method to load a fixture in a test::
     }
 
 A fixture class must be a ``Doctrine\Common\DataFixtures\FixtureInterface``
-instance. An example fixture will look like this::
+instance. An example fixture will look like this:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
@@ -186,7 +195,10 @@ instance. An example fixture will look like this::
     }
 
 You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterface``
-which allows to load fixtures depending on other fixtures being already loaded::
+which allows to load fixtures depending on other fixtures being already loaded:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/LoadFooData.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
@@ -208,7 +220,10 @@ which allows to load fixtures depending on other fixtures being already loaded::
         }
     }
 
-Further, you can use reference-specific entities from fixtures, e.g.::
+Further, you can use reference-specific entities from fixtures, e.g.:
+
+.. code-block:: php
+    :linenos:
 
     namespace Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures;
 
@@ -235,7 +250,10 @@ Further, you can use reference-specific entities from fixtures, e.g.::
         }
     }
 
-Now, you can reference the fixture by the configured name in your test::
+Now, you can reference the fixture by the configured name in your test:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -296,6 +314,7 @@ Simple initialization works for testing commands and services when authenticatio
 is not required.
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -315,6 +334,7 @@ is not required.
 Initialization with custom AppKernel options:
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -334,6 +354,7 @@ Initialization with custom AppKernel options:
 Initialization with authentication:
 
 .. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBundle\Tests\Functional;
@@ -362,7 +383,10 @@ Types of Functional Tests
 Testing Controllers
 ~~~~~~~~~~~~~~~~~~~
 
-Have a look at an example of a controller test from the OroCRM::
+Have a look at an example of a controller test from the OroCRM:
+
+.. code-block:: php
+    :linenos:
 
     // src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
     namespace OroCRM\Bundle\TaskBundle\Tests\Functional\Controller;
@@ -471,7 +495,10 @@ In this example, a user without sufficient permissions is trying to access
 a controller action. The
 :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::assertHtmlResponseStatusCodeEquals`
 method is used to ensure that access to the requested resource actually is
-denied for the user::
+denied for the user:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/UserBundle/Tests/Functional/UsersTest
     namespace Oro\Bundle\UserBundle\Tests\Functional;
@@ -518,7 +545,10 @@ denied for the user::
         }
     }
 
-Here's an example of a fixture that adds a user without permissions::
+Here's an example of a fixture that adds a user without permissions:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/UserBundle/Tests/Functional/DataFixtures/LoadUserData.php
     namespace Oro\Bundle\UserBundle\Tests\Functional\DataFixtures;
@@ -592,7 +622,10 @@ When the Oro Platform is installed, you can test commands by using the
 method from the ``WebTestCase`` class. This method executes a command with
 given parameters and returns its output as a string. For example, see
 what the test for the :class:`Oro\\Bundle\\SearchBundle\\EventListener\\UpdateSchemaDoctrineListener`
-class from the SearchBundle looks like::
+class from the SearchBundle looks like:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/SearchBundle/Tests/Functional/EventListener/UpdateSchemaListenerTest.php
     namespace Oro\Bundle\SearchBundle\Tests\Functional\EventListener;
@@ -652,7 +685,10 @@ Testing Services or Repositories
 
 To test services or repositories, you can access the service container through
 the :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::getContainer`
-method::
+method:
+
+.. code-block:: php
+    :linenos:
 
     // src/Oro/Bundle/FooBarBundle/Tests/Functional/FooBarTest.php
     namespace Oro\Bundle\FooBarBundle\Tests\Functional;
@@ -685,6 +721,7 @@ This is an example of how you can write an integration test for a class that
 uses Doctrine ORM without mocking it's classes and using real Doctrine services:
 
 .. code-block:: php
+    :linenos:
 
     namespace Oro\Bundle\BatchBundle\Tests\Functional\ORM\QueryBuilder;
 

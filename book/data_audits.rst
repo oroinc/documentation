@@ -34,7 +34,10 @@ annotations for the entity.
     in the UI under *System* / *Entities* / *EntityManagement* (attribute
     *Auditable*).
 
-Example of annotation configuration::
+Example of annotation configuration:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Product.php
     namespace Acme\DemoBundle\Entity;

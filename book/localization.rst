@@ -41,6 +41,7 @@ be stored in the bundle's ``Resources/config/oro`` directory):
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+    :linenos:
 
     # Resources/config/oro/locale_data.yml
     US:
@@ -63,6 +64,7 @@ address).
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+    :linenos:
 
     # Resources/config/oro/currency_data.yml
     USD:
@@ -79,6 +81,7 @@ used to render currency symbols when viewing or editing monetary fields.
 ~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+    :linenos:
 
     # Resources/config/oro/name_format.yml
     en: "%prefix% %first_name% %middle_name% %last_name% %suffix%"
@@ -99,6 +102,7 @@ This file specifies a name format per locale. Allowed placeholders are:
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: yaml
+    :linenos:
 
     # Resources/config/oro/address_format.yml
     US:
