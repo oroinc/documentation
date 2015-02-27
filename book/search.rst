@@ -160,7 +160,10 @@ The Query Builder
 ~~~~~~~~~~~~~~~~~
 
 The syntax of the search query builder is very similar to the Doctrine query
-builder::
+builder:
+
+.. code-block:: php
+    :linenos:
 
     $container = ...; // the Symfony service container
     $indexer = $container->get('oro_search.index');

@@ -18,7 +18,10 @@ Managing Configuration Settings
 -------------------------------
 
 To define your own configuration settings in a bundle, you use the ``SettingsBuilder``
-in the well-known ``Configuration`` class::
+in the well-known ``Configuration`` class:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/DependencyInjection/Configuration.php
     namespace Acme\DemoBundle\DependencyInjection;
@@ -122,7 +125,10 @@ In Controllers
 
 To retrieve configuration values inside a controller, you have to use the
 ``oro_config.user`` service which is an instance of ``Oro\ConfigBundle\Config\UserConfigManager``.
-Use its ``get()`` method to retrieve the value of a setting::
+Use its ``get()`` method to retrieve the value of a setting:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;

@@ -248,7 +248,10 @@ of your bundle and define the values you want to change:
 .. caution::
 
     If you override themes from third-party bundles, you have to make sure that your bundle is
-    registered after the bundle it is overriding themes from::
+    registered after the bundle it is overriding themes from:
+
+    .. code-block:: php
+        :linenos:
 
         // app/AppKernel.php
         // ...
