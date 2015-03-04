@@ -43,25 +43,13 @@
         </classpath>
     </taskdef>
 
-    <property name="sphinxbuild" value="sphinx-build"/>
-    <property name="sphinxopts" value="-nW"/>
-    <property name="builddir" value="${basedir}/_build"/>
-
-    <property name="paper" value="letter"/>
-    <condition property="paperopt" value="-D latex_paper_size=a4">
-        <equals arg1="${paper}" arg2="a4"/>
-    </condition>
-    <condition property="paperopt" value="-D latex_paper_size=letter">
-        <equals arg1="${paper}" arg2="letter"/>
-    </condition>
-
     <macrodef name="sphinx">
         <attribute name="format" default="html"/>
         <attribute name="options" default="${sphinxopts}"/>
         <attribute name="destination" default="${builddir}/html"/>
         <sequential>
-            <echo level="verbose">sphinx-build -b @{format} @{options} . @{destination}</echo>
-            <exec dir="${basedir}" executable="sphinx-build" failonerror="true">
+            <echo level="verbose">${sphinxbuild} -b @{format} @{options} . @{destination}</echo>
+            <exec dir="${basedir}" executable="${sphinxbuild}" failonerror="true">
                 <arg line="-b @{format}"/>
                 <arg line="-d ${builddir}/doctrees"/>
                 <arg line="${paperopt}"/>
@@ -72,49 +60,79 @@
         </sequential>
     </macrodef>
 
-    <target name="install-dependencies" description="Install required dependencies."/>
+    <target name="init" description="Initialize the environment.">
+
+        <!-- Guess the best sphinx-build executable -->
+
+        <!-- Alternate installation with the user scheme -->
+        <condition property="sphinxbuild" value="${user.home}/.local/bin/sphinx-build">
+            <available file="${user.home}/.local/bin/sphinx-build" type="file"/>
+        </condition>
+        <!-- Fedora, Amazon Linux AMI -->
+        <condition property="sphinxbuild" value="/usr/bin/sphinx-build">
+            <available file="/usr/bin/sphinx-build" type="file"/>
+        </condition>
+        <!-- Debian -->
+        <condition property="sphinxbuild" value="/usr/share/sphinx/scripts/python2/sphinx-build">
+            <available file="/usr/share/sphinx/scripts/python2/sphinx-build" type="file"/>
+        </condition>
+        <!-- Default -->
+        <property name="sphinxbuild" value="sphinx-build"/>
+
+        <property name="sphinxopts" value="-nW"/>
+        <property name="builddir" value="${basedir}/_build"/>
+
+        <property name="paper" value="letter"/>
+        <condition property="paperopt" value="-D latex_paper_size=a4">
+            <equals arg1="${paper}" arg2="a4"/>
+        </condition>
+        <condition property="paperopt" value="-D latex_paper_size=letter">
+            <equals arg1="${paper}" arg2="letter"/>
+        </condition>
+
+    </target>
 
     <target name="clean" description=".">
         <delete dir="${builddir}" quiet="true"/>
     </target>
 
-    <target name="html" depends="install-dependencies" description="Builds standalone HTML files.">
+    <target name="html" depends="init" description="Builds standalone HTML files.">
         <sphinx format="html" destination="${builddir}/html"/>
         <echo level="info"/>
         <echo level="info">Build finished. The HTML pages are in ${builddir}/html.</echo>
     </target>
 
-    <target name="dirhtml" depends="install-dependencies" description="Builds HTML files named index.html in directories.">
+    <target name="dirhtml" depends="init" description="Builds HTML files named index.html in directories.">
         <sphinx format="dirhtml" destination="${builddir}/dirhtml"/>
         <echo level="info"/>
         <echo level="info">Build finished. The HTML pages are in ${builddir}/dirhtml.</echo>
     </target>
 
-    <target name="singlehtml" depends="install-dependencies" description="Builds a single large HTML file.">
+    <target name="singlehtml" depends="init" description="Builds a single large HTML file.">
         <sphinx format="singlehtml" destination="${builddir}/singlehtml"/>
         <echo level="info"/>
         <echo level="info">Build finished. The HTML page is in ${builddir}/singlehtml.</echo>
     </target>
 
-    <target name="pickle" depends="install-dependencies" description="Builds pickle files.">
+    <target name="pickle" depends="init" description="Builds pickle files.">
         <sphinx format="pickle" destination="${builddir}/pickle"/>
         <echo level="info"/>
         <echo level="info">Build finished; now you can process the pickle files.</echo>
     </target>
 
-    <target name="json" depends="install-dependencies" description="Builds JSON files.">
+    <target name="json" depends="init" description="Builds JSON files.">
         <sphinx format="json" destination="${builddir}/json"/>
         <echo level="info"/>
         <echo level="info">Build finished; now you can process the JSON files.</echo>
     </target>
 
-    <target name="htmlhelp" depends="install-dependencies" description="Builds HTML files and a HTML help project.">
+    <target name="htmlhelp" depends="init" description="Builds HTML files and a HTML help project.">
         <sphinx format="htmlhelp" destination="${builddir}/htmlhelp"/>
         <echo level="info"/>
         <echo level="info">Build finished; now you can run HTML Help Workshop with the .hhp project file in ${builddir}/htmlhelp.</echo>
     </target>
 
-    <target name="qthelp" depends="install-dependencies" description="Builds HTML files and a qthelp project.">
+    <target name="qthelp" depends="init" description="Builds HTML files and a qthelp project.">
         <sphinx format="qthelp" destination="${builddir}/qthelp"/>
         <echo level="info"/>
         <echo level="info">Build finished; now you can run "qcollectiongenerator" with the .qhcp project file in ${builddir}/qthelp, like this:</echo>
@@ -123,7 +141,7 @@
         <echo level="info"># assistant -collectionFile ${builddir}/qthelp/TheOroPlatform.qhc</echo>
     </target>
 
-    <target name="devhelp" depends="install-dependencies" description="Builds HTML files and a Devhelp project.">
+    <target name="devhelp" depends="init" description="Builds HTML files and a Devhelp project.">
         <sphinx format="devhelp" destination="${builddir}/devhelp"/>
         <echo level="info"/>
         <echo level="info">Build finished.</echo>
@@ -133,20 +151,20 @@
         <echo level="info"># devhelp</echo>
     </target>
 
-    <target name="epub" depends="install-dependencies" description="Builds an epub.">
+    <target name="epub" depends="init" description="Builds an epub.">
         <sphinx format="epub" destination="${builddir}/epub"/>
         <echo level="info"/>
         <echo level="info">Build finished. The epub file is in ${builddir}/epub.</echo>
     </target>
 
-    <target name="latex" depends="install-dependencies" description="Builds LaTeX files, you can set paper=a4 or paper=letter.">
+    <target name="latex" depends="init" description="Builds LaTeX files, you can set paper=a4 or paper=letter.">
         <sphinx format="latex" destination="${builddir}/latex"/>
         <echo level="info"/>
         <echo level="info">Build finished; the LaTeX files are in ${builddir}/latex.</echo>
         <echo level="info">Run make in that directory to run these through (pdf)latex (use make latexpdf here to do that automatically).</echo>
     </target>
 
-    <target name="latexpdf" depends="install-dependencies" description="Builds LaTeX files and run them through pdflatex.">
+    <target name="latexpdf" depends="init" description="Builds LaTeX files and run them through pdflatex.">
         <sphinx format="latex" destination="${builddir}/latex"/>
         <echo level="info">Running LaTeX files through pdflatex...</echo>
         <exec dir="${basedir}" executable="make" failonerror="true">
@@ -156,26 +174,26 @@
         <echo level="info">pdflatex finished; the PDF files are in ${builddir}/latex.</echo>
     </target>
 
-    <target name="text" depends="install-dependencies" description="Builds text files.">
+    <target name="text" depends="init" description="Builds text files.">
         <sphinx format="text" destination="${builddir}/text"/>
         <echo level="info"/>
         <echo level="info">Build finished. The text files are in ${builddir}/text.</echo>
     </target>
 
-    <target name="man" depends="install-dependencies" description="Builds manual pages.">
+    <target name="man" depends="init" description="Builds manual pages.">
         <sphinx format="man" destination="${builddir}/man"/>
         <echo level="info"/>
         <echo level="info">Build finished. The manual pages are in ${builddir}/man.</echo>
     </target>
 
-    <target name="texinfo" depends="install-dependencies" description="Builds Texinfo files.">
+    <target name="texinfo" depends="init" description="Builds Texinfo files.">
         <sphinx format="texinfo" destination="${builddir}/texinfo"/>
         <echo level="info"/>
         <echo level="info">Build finished. The Texinfo files are in ${builddir}/texinfo.</echo>
         <echo level="info">Run make in that directory to run these through makeinfo (use make info here to do that automatically).</echo>
     </target>
 
-    <target name="info" depends="install-dependencies" description="Builds Texinfo files and run them through makeinfo.">
+    <target name="info" depends="init" description="Builds Texinfo files and run them through makeinfo.">
         <sphinx format="texinfo" destination="${builddir}/texinfo"/>
         <echo level="info">Running Texinfo files through makeinfo...</echo>
         <exec dir="${basedir}" executable="make" failonerror="true">
@@ -185,26 +203,26 @@
         <echo level="info">makeinfo finished; the Info files are in ${builddir}/texinfo.</echo>
     </target>
 
-    <target name="gettext" depends="install-dependencies" description="Builds PO message catalogs.">
+    <target name="gettext" depends="init" description="Builds PO message catalogs.">
         <!-- the i18n builder cannot share the environment and doctrees with the others -->
         <sphinx format="gettext" options="$(PAPEROPT_${paper}) ${sphinxopts}" destination="${builddir}/locale"/>
         <echo level="info"/>
         <echo level="info">Build finished. The message catalogs are in ${builddir}/locale.</echo>
     </target>
 
-    <target name="changes" depends="install-dependencies" description="Builds an overview of all changed/added/deprecated items.">
+    <target name="changes" depends="init" description="Builds an overview of all changed/added/deprecated items.">
         <sphinx format="changes" destination="${builddir}/changes"/>
         <echo level="info"/>
         <echo level="info">The overview file is in ${builddir}/changes.</echo>
     </target>
 
-    <target name="linkcheck" depends="install-dependencies" description="Checks all external links for integrity.">
+    <target name="linkcheck" depends="init" description="Checks all external links for integrity.">
         <sphinx format="linkcheck" destination="${builddir}/linkcheck"/>
         <echo level="info"/>
         <echo level="info">Link check complete; look for any errors in the above output or in ${builddir}/linkcheck/output.txt.</echo>
     </target>
 
-    <target name="doctest" depends="install-dependencies" description="Runs all doctests embedded in the documentation (if enabled).">
+    <target name="doctest" depends="init" description="Runs all doctests embedded in the documentation (if enabled).">
         <sphinx format="doctest" destination="${builddir}/doctest"/>
         <echo level="info">Testing of doctests in the sources finished, look at the results in ${builddir}/doctest/output.txt.</echo>
     </target>
