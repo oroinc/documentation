@@ -3,17 +3,36 @@
 Entity Management
 =================
 
-Entity is a group of records that represent instances of similar nature processed in a similar way.
-In this article you can learn how to create and edit entities from the UI.
+OroCRM provides users with ability to record, store, process and analyse various customer-related information. 
+This information information may cover different things, such as customer profiles, address and billing details, 
+customer activity, possible sales and arrangements, and so on and so forth. As a matter of fact, this can be any type of 
+information necessary to monitor, manage and understand specific customer-related activities.
+For each of these things it is important to record specifically the details that matter for your business. For example,
+name and last name of a customer is a generally needed information, while their gender may be needed for clothes shops 
+and their hobbies may interest book stores.
+
+The group of things of a similar nature is represented in OroCRM with an *entity*. And *records* of an entity are 
+specific instances. So, *B2B Customer* entity represents all your clients involved in the business-to-business
+relations, and each such client is a record of the entity.
+
+In this article you can learn how to create and edit entities from the UI, i.e. for what things data shall be collected 
+and what details a applicable to all the things of a similar nature, e.g. for all the :term:`customers <Customer>`, 
+:term:`opportunities <Opportunity>`, addresses, etc
 
 
 .. _user-guide-entity-management-create:
     
 Creating an Entity from the UI
 ------------------------------
-The OroCRM comes with a number of out of the box entities and can be populated with necessary entities from the 
-back-end. However, sometimes there appears a need to create additional entities from the UI. They are called 
-"custom entities".
+The OroCRM comes with a number of out-of-the-box entities that represents general stakeholders and components of 
+customer relation management. These are so called *system entities*
+ 
+However, sometimes there appears a need to create additional entities from the UI. They are called *custom entities*.
+
+.. note::
+
+    Entities may be added in the course of customization subject to the user's needs. In these case they may be defined
+    either as system or as custom entities (as arranged with the user)
 
 In order to create an entity: 
 
@@ -54,8 +73,8 @@ The following two fields are mandatory and **must** be defined:
   
   .. caution::
 
-    **The Name value must be unique for every Custom entity created.** Fault to do so may cause partial update of 
-    the existing entity and failure of the schema update"
+  **The Name value must be unique for every Custom entity created.** Fault to do so may cause partial update of 
+  the existing entity and failure of the schema update"
   "**Label***","The label will be used to refer to the entity in the UI. Label shall be at least 2 symbols long.
   
   .. note::
@@ -109,7 +128,10 @@ You can enable attachments for the entity records and define relevant limitation
   
 .. image:: ./img/entity_management/new_entity_general_MIME_types.png
 
-   
+.. important::
+
+    If the MIME types field is empty, the settings defined in the *System → Configuration → Upload Settings*
+
 
 .. _user-guide-entity-management-create-other:
 
@@ -146,6 +168,9 @@ The following three fields must be specified for every entity created:
 Add Fields to an Entity
 -----------------------
 
+Entity with no fields is meaningless and will not be processed by the system. Once an entity has been created, you will
+get to the *View* page of the new entity, where you can define its new fields.
+
 Please refer to the :ref:`Field Management <user-guide-field management>` Guide to find out, how to add fields to the 
 entity.
 
@@ -173,14 +198,14 @@ Editing Entities from UI
 Sometimes there appears a need to edit existing entities of the Oro Platform from the 
 Web UI.
 
-:ref:`Edit from <user-guide-ui-components-create-pages>` is available for any entity in the system. List of editable 
-properties for each of the System type 
-entities depends on configuration and is created in a way reasonable and safe for the system performance and 
-operation. 
+:ref:`Edit form <user-guide-ui-components-create-pages>` is available for any entity in the system. List of editable 
+properties for each of the System type entities depends on configuration and is created in a way reasonable and safe 
+for the system performance and operation. 
 
-(Some properties may be disabled for editing, this means that this is restricted at the system level).
-The list of fields on the Edit form is the same as when you :ref:`Create an 
-entity <user-guide-entity-management-create>`)
+.. note::
+
+    The list of fields on the Edit form is the same as when you 
+    :ref:`Create an entity <user-guide-entity-management-create>`)
  
 
 
