@@ -3,31 +3,13 @@
 Accounts
 ========
 
-Account records ("accounts") represent  represent a person, company or group of people you do business activities with. 
+Account records ("accounts") represent a person, company or group of people you do business activities with. 
 An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing for 
 a 360-degree view of the account activity. 
 
 From this article you will learn how to create new account, understand 
 their :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyse their  
 details with OroCRM reports.
-
-Accounts and Customers
-----------------------
-
-If a :ref:`Magento channel <user-guide-magento-channel>` has been created in the system, a new account is created for
-each customer record uploaded to OroCRM in the course of synchronization.
-
-For :ref:`B2B channels <user-guide-magento-channel>`, it's vice versa as you have to specify an account for every 
-customer records added to the system.
-
-If any other channel type is added to the system, it's customer identity settings and the ways to assign them to an
-account are specified in the course of customization, subject to the specific client's needs.
-
-.. important::
-
-    Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
-    view of customer activities, regardless of the :term:`channels <Channel>`. (For example, if you have a B2B customer
-    that represents some client of yours, and then this client is buying something from your Magento store)
 
 
 .. _user-guide-accounts-create:
@@ -58,6 +40,10 @@ The following fields are mandatory and **must** be defined:
 The rest of the fields are **optional**. They keep additional details about the account (such as its :term:`tags <Tag>`
 and related :term:`contacts <Contact>`) and may be left empty.
 
+.. hint::
+
+    In order to add a contact, click the :guilabel:`+Add` button in the *Contacts* section. 
+
 If you need to record and process any other details of accounts, **custom fields** can be created. Their values will 
 be displayed in the *Additional* section.
 
@@ -66,7 +52,7 @@ be displayed in the *Additional* section.
     To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
     button.
   
-Once all the necessary fields have been defined, click the button in the right top corner of the page to save the 
+Once all the necessary information has been defined, click the button in the right top corner of the page to save the 
 account in the system.
 
 .. hint::
@@ -74,21 +60,38 @@ account in the system.
     You can also export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
     the :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
+
+Accounts, Channels and Customers
+--------------------------------
+
+For each :term:`channel <Channel>` :ref:`created <user-guide-channel-guide-create>`, there is a set of 
+:term:`entities <Entity>` defined that correspond to types of information collected from the corresponding data source.
+One of them must represent a term:`customer <Customer>`
+
+Once a customer :term:`record <Record>` is created, it is assigned to an account. Several accounts may 
+be :ref:`merge <user-guide-accounts-merge>` into one, regardless of the channels.( For example, if you have a B2B 
+customer that represents some client of yours, and then this client is buying something from your Magento store)
+
+.. note ::
+
+    Customer record settings and the ways to assign them to an account are specified in the course of customization, 
+    subject to the specific client needs. For example, for :ref:`Magento channels <user-guide-magento-channel>`, a 
+    new account is created for each customer record uploaded to OroCRM in the course of synchronization, whereas for 
+    :ref:`B2B channels <user-guide-magento-channel>` account is a mandatory detail that must be specified when creating 
+    a customer.
+
 Accounts View Page
 ------------------
 
 :ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
 
+- **Page Header**: date of the account creation and it latest update, as well as its 
+  :term:`lifetime sales value <Lifetime Sales Value>
+
 - **General**: general details of the account, such as its name, tags, description and all the contacts assigned for the
   account. 
 
 .. image:: ./img/accounts/accounts_view_general.png
-
-.. note::
-
-    Once a :term:`customer identity <Customer Identity>` is assigned to an Account, all of its 
-    :term:`contacts <Contact>` are added for the account, however they can be removed and/other contacts can be added
-    from the :ref:`Edit form <user-guide-ui-components-create-pages>` of the account.
 
 - **Record Activities**: activities (calls, e-mails and tasks assigned to the account)
 
@@ -102,8 +105,9 @@ Accounts View Page
 - **Additional Information**: details of any :term:`custom fields <Custom Field>` defined for the account.
 
 - **Sections with channel names**: each the section contain details of all the customers that are assigned to this 
-  account and belong to the specified channel. Records of other entities assigned to this channel with regard to a
-  specific customer are represented as subsections.
+  account and belong to the specified channel, as described in the 
+  :ref:`multichannel functionality description <user-guide-multi-channel-overview>`. 
+  Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
   
   In the example below you can see a section of a channel named "B2B Channel" (This is a name of a demo B2B 
   type channel):
