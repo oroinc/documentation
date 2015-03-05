@@ -179,7 +179,7 @@ entity.
 
 Update Schema
 -------------
-Once you have defined necessary entities and their fields, at the top right corner of the page of any new or extended 
+Once you have defined necessary entities and their fields, at the top right corner of the page of any new or updated 
 entity there will appear an :guilabel:`Update Schema` button. Click the button. The Schema update can take some time, 
 so please be patient.
 
