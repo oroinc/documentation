@@ -86,7 +86,7 @@ Accounts View Page
 :ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
 
 - **Page Header**: date of the account creation and it latest update, as well as its 
-  :term:`lifetime sales value <Lifetime Sales Value>`
+  :term:`lifetime sales value <Lifetime Sales Value>`.
 
 - **General**: general details of the account, such as its name, tags, description and all the contacts assigned for the
   account. 
