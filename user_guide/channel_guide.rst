@@ -116,15 +116,15 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 - Delete the channel: |IcDelete|
 
-.. caution::
+  .. caution::
 
-    Once a channel has been deleted, all of the data related to it will be deleted as well.
+      Once a channel has been deleted, all of the data related to it will be deleted as well.
 
 - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel: |IcEdit|
 
-.. caution::
+  .. caution::
 
-    You cannot edit the channel type if data from the channel has been already been uploaded into the system.
+      You cannot edit the channel type if data from the channel has been already been uploaded into the system.
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel:  |IcView|
 
@@ -145,8 +145,8 @@ Editing Entities from a Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There may be some situations when there are either not enough default entity fields or too many of them. If this is the
-case, entities maybe edited (i.e. the list of fields as well as their type and specific properties may be re-defined).
-This can be only be done by properly authorized users. Go to the *"Entities"* section of the channel view page.
+case, entities may be edited (i.e. the list of fields as well as their type and specific properties may be re-defined).
+This can only be done by properly authorized users. Go to the *"Entities"* section of the channel view page.
 In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| to change the entity settings.
 Please refer to the *"Entity Management"* guide for more information.
 
