@@ -19,7 +19,9 @@ it using ``curl``:
 
     $ curl -sS http://getcomposer.org/installer | php
 
-You can learn more about Composer in `its documentation`_.
+.. seealso::
+
+    You can learn more about Composer in `its documentation`_.
 
 node.js
 ~~~~~~~
@@ -31,104 +33,119 @@ for detailed instructions.
 Getting the Source Code
 -----------------------
 
-You can get the Oro Platform Application source code in different ways (all
-examples assume that you want the root directory of your installation to be
-``/var/www/vhosts/platform-application``):
+First, you need to prepare the installation process by obtaining the application's source code and
+installing all necessary dependencies. You can get the Oro Platform Application source code in two
+different ways (both examples assume that you want to install the application into the
+``/var/www/vhosts/platform-application`` directory):
 
-#. Clone the GitHub Repository
+#. :ref:`Clone the GitHub repository <book-installation-github-clone>`.
+#. :ref:`Download the source code archive <book-installation-download-archive>`.
 
-   You can clone the official `GitHub repository`_ to obtain the source code
-   and checkout the release you want to use:
+.. _book-installation-github-clone:
 
-   .. code-block:: bash
+1. Clone the GitHub Repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-       $ cd /var/www/vhosts
-       $ git clone https://github.com/orocrm/platform-application.git
-       $ cd platform-application
-       $ git checkout 1.4.0
+You can clone the official `GitHub repository`_ to obtain the source code
+and checkout the release you want to use:
 
-   .. note::
+.. code-block:: bash
 
-       Along with ``1.4.0``, you can use any other released version or even
-       the master branch to run the latest development version of the Oro
-       Platform Application.
+    $ cd /var/www/vhosts
+    $ git clone https://github.com/orocrm/platform-application.git
+    $ cd platform-application
+    $ git checkout 1.4.0
 
-   Next, you'll need to install the dependencies:
+.. note::
 
-   .. code-block:: bash
+    Along with ``1.4.0``, you can use any other released version or even
+    the master branch to run the latest development version of the Oro
+    Platform Application.
 
-       $ php ../composer.phar install
+Next, you'll need to install the dependencies:
 
-   You will then be asked to enter the default system parameters:
+.. code-block:: bash
 
-   .. code-block:: text
+    $ php ../composer.phar install
 
-       Creating the "app/config/parameters.yml" file
-       Some parameters are missing. Please provide them.
-       database_host (127.0.0.1):
-       database_port (null):
-       database_name (bap_standard):
-       database_user (root):
-       database_password (null):
-       mailer_transport (mail):
-       mailer_host (127.0.0.1):
-       mailer_port (null):
-       mailer_encryption (null):
-       mailer_user (null):
-       mailer_password (null):
-       websocket_host (127.0.0.1):
-       websocket_port (8080):
-       session_handler (session.handler.native_file):
-       locale (en):
-       secret (ThisTokenIsNotSoSecretChangeIt):
-       installed (null):
+You will then be asked to enter the default system parameters:
 
-   These options have the following meanings:
+.. code-block:: text
 
-   * ``database_host``, ``database_port``, ``database_name``, ``database_user``,
-     ``database_password``: Credentials used to connect to the database
+    Creating the "app/config/parameters.yml" file
+    Some parameters are missing. Please provide them.
+    database_host (127.0.0.1):
+    database_port (null):
+    database_name (bap_standard):
+    database_user (root):
+    database_password (null):
+    mailer_transport (mail):
+    mailer_host (127.0.0.1):
+    mailer_port (null):
+    mailer_encryption (null):
+    mailer_user (null):
+    mailer_password (null):
+    websocket_host (127.0.0.1):
+    websocket_port (8080):
+    session_handler (session.handler.native_file):
+    locale (en):
+    secret (ThisTokenIsNotSoSecretChangeIt):
+    installed (null):
 
-   * ``mailer_transport``, ``mailer_host``, ``mailer_port``, ``mailer_encryption``,
-     ``mailer_user``, ``mailer_password``: Options configuring how emails
-     sent by the Oro Platform Application are delivered
+These options have the following meanings:
 
-   * ``websocket_host``, ``websocket_port``: The host and port the websocket listens
-     to
+``database_host``, ``database_port``, ``database_name``, ``database_user``, ``database_password``
+    Credentials used to connect to the database
 
-   * ``session_handler``: The PHP `session handler`_ to use
+``mailer_transport``, ``mailer_host``, ``mailer_port``, ``mailer_encryption``, ``mailer_user``, ``mailer_password``
+    Options configuring how emails sent by the Oro Platform Application are delivered
 
-   * ``locale``: The fallback locale used as a last resort for `translations`_
+``websocket_host``, ``websocket_port``
+    The host and port the websocket listens to
 
-   * ``secret``: A secret value included in `CSRF tokens`_
+``session_handler``
+    The PHP `session handler`_ to use
 
-   * ``installed``: Flag indicating whether or not the Oro Platform Application
-     has been installed
+``locale``
+    The fallback locale used as a last resort for `translations`_
 
-#. Download the Source Code Archive
+``secret``
+    A secret value used to generate `CSRF tokens`_
 
-   You can download the latest version of Oro Platform from the `download section`_
-   on the `official site`_. For example, on a Linux based OS this may look
-   like this:
+``installed``
+    Flag indicating whether or not the Oro Platform Application has been installed
 
-   .. code-block:: bash
+.. _book-installation-download-archive:
 
-       $ cd /var/www/vhosts
-       $ wget -c http://www.orocrm.com/downloads/platform-application.tar.gz
-       $ tar -xzvf platform-application.tar.gz
+2. Download the Source Code Archive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   The source code archive already ships with the libraries installed in
-   its ``vendor`` directory. You should now run Composer to update them:
+You can download the latest version of Oro Platform from the `download section`_
+on the `official site`_. For example, on a Linux based OS this may look
+like this:
 
-   .. code-block:: bash
+.. code-block:: bash
 
-       $ cd platform-application
-       $ php ../composer.phar update
+    $ cd /var/www/vhosts
+    $ wget -c http://www.orocrm.com/downloads/platform-application.tar.gz
+    $ tar -xzvf platform-application.tar.gz
 
-   .. caution::
+The source code archive already ships with the libraries installed in
+its ``vendor`` directory. You should now run Composer to update them:
 
-       You won't be asked to enter the default system parameters, but you
-       can change them in the ``app/config/parameters.yml`` configuration
-       file.
+.. code-block:: bash
+
+    $ cd platform-application
+    $ php ../composer.phar update
+
+.. caution::
+
+    You won't be asked to enter the default system parameters, but you
+    can change them in the ``app/config/parameters.yml`` configuration
+    file.
+
+Configuration
+-------------
 
 After having set up the source code, your ``/var/www/vhosts/platform-application``
 directory should now look like this:
@@ -146,11 +163,12 @@ directory should now look like this:
     drwxrwxr-x 2 user user 4096 Apr  4 10:08 src
     drwxrwxr-x 3 user user 4096 Apr  4 10:08 web
 
-Configuration
--------------
+You can now continue the installation by configuring the server environment.
 
-Configure the Database
-~~~~~~~~~~~~~~~~~~~~~~
+.. _configure-the-database:
+
+Create the Database
+~~~~~~~~~~~~~~~~~~~
 
 Use the Symfony ``console`` tool to set up your database as it was configured
 in the previous step:
@@ -221,128 +239,163 @@ If you are using **Nginx** as webserver your virtual host configuration should l
 
         127.0.0.1 bap.tutorial
 
-``log`` directories of the Oro Platform Application. Read "`Setting up Permissions`_"
-in the official Symfony documentation for several ways to configure the file
-permissions.
+Make sure that the web server user has write permissions for the ``log`` directories of the Oro
+Platform Application. Read "`Setting up Permissions`_" in the official Symfony documentation for
+several ways to configure the file permissions properly.
 
 .. hint::
 
     Read the article "`Configuring a Web Server`_" in the `Symfony Cookbook`_
     for advanced configuration references.
 
+.. sidebar:: Multiple PHP Versions
+
+    When you have multiple PHP versions installed, you should configure which of these binaries the
+    Oro Platform will use when executing CLI commands:
+
+    **Apache**
+
+    When using Apache, use the ``SetEnv`` directive to set the value for the ``ORO_PHP_PATH``
+    environment variable:
+
+    .. code-block:: apache
+
+        SetEnv ORO_PHP_PATH /usr/local/bin/php
+
+    **Nginx**
+
+    With Nginx, you have to use the ``fastcgi_param`` option to achieve the same:
+
+    .. code-block:: nginx
+
+        fastcgi_param ORO_PHP_PATH /usr/local/bin/php
+
 The Installation
 ----------------
 
 To finish the installation, you'll need to run the Oro Platform Application
 installation script which checks your system requirements, performs migrations
-and sets up your database tables. You can run the install script in two
-ways: visit the installation wizard using a web browser, or run the
-``install`` console command.
+and sets up your database tables.
 
-#. Use a browser to access the Oro Platform Application installation wizard
-   at ``http://bap.tutorial/install.php`` and click *Begin installation*.
-   The installation wizard now checks your system configuration:
+You can run the install script in two ways:
 
-   .. image:: /images/book/installation/wizard-1.png
-
-   Fix any issues and click refresh. When your system configuration meets the
-   Oro Platform Application requirements, click *Next*. You
-   will be guided to Step 2 where you'll specify your application configuration:
-
-   .. image:: /images/book/installation/wizard-2.png
-
-   Click *Next* and the installer will initialize your database. The list
-   of tasks being performed will be shown:
-
-   .. image:: /images/book/installation/wizard-3.png
-
-   On the last step, you'll provide your administrative data such as the
-   company name and administrative credentials:
-
-   .. image:: /images/book/installation/wizard-4.png
-
-   After clicking on *Install*, the installer finishes your setup:
-
-   .. image:: /images/book/installation/wizard-5.png
-
-   Congratulations! You have now successfully set up the Oro Platform Application!
-
-#. Use the ``oro:install`` console command can to trigger the installation
-   from the command line:
-
-   .. code-block:: bash
-
-       $ php app/console oro:install
-
-   If you invoke the command without any argument, you will be asked to enter
-   values for certain configuration options. You can pass these values using
-   the appropriate command options:
-
-   ======================== =======================================================
-   Option                   Description
-   ======================== =======================================================
-   ``--company-short-name`` Company short name
-   ------------------------ -------------------------------------------------------
-   ``--company-name``       Company name
-   ------------------------ -------------------------------------------------------
-   ``--user-name``          User name
-   ------------------------ -------------------------------------------------------
-   ``--user-email``         User email
-   ------------------------ -------------------------------------------------------
-   ``--user-firstname``     User first name
-   ------------------------ -------------------------------------------------------
-   ``--user-lastname``      User last name
-   ------------------------ -------------------------------------------------------
-   ``--user-password``      User password
-   ------------------------ -------------------------------------------------------
-   ``--force``              Force installation
-   ------------------------ -------------------------------------------------------
-   ``--sample-data``        Determines whether sample data need to be loaded or not
-   ======================== =======================================================
-
-   .. note::
-
-       The ``install`` command will report if you system configuration does
-       not meet the Oro Platform Application requirements. You'll then need
-       to fix them and run the command again.
-
-   .. tip::
-
-       Normally, the installation process terminates if it detects an already-existing
-       installation. Use the ``--force`` option to overwrite an existing installation,
-       e.g. during your development process.
+#. :ref:`Visit the installation wizard using a web browser <book-installation-wizard>`.
+#. :ref:`Run the console installation command <book-installation-command>`.
 
 .. tip::
 
-    If you experience any problems finishing the Oro Platform Application installation,
-    be sure to take a look at the ``app/logs/oro_install.log`` file.
+    If you experience any problems finishing the Oro Platform Application installation, be sure to
+    take a look at the ``app/logs/oro_install.log`` file.
 
-The Installation Process
-------------------------
+.. _book-installation-wizard:
 
-Installation is a three step process:
+1. Using the Web Installation Wizard
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. The system requirements are checked. The setup process terminates if any
-   of the requirements are not fulfilled
+Use a browser to access the Oro Platform Application installation wizard
+at ``http://bap.tutorial/install.php`` and click *Begin installation*.
+The installation wizard now checks your system configuration:
 
-#. The database and all caches are reset
+.. image:: /images/book/installation/wizard-1.png
 
-#. Initial data (i.e. migrations, workflow defintions and fixture data)
-   are loaded and executed
+Fix any issues and click refresh. When your system configuration meets the
+Oro Platform Application requirements, click *Next*. You
+will be guided to Step 2 where you'll specify your application configuration:
 
-#. Assets are dumped, ``requirejs`` is initialized
+.. image:: /images/book/installation/wizard-2.png
+
+Click *Next* and the installer will initialize your database. The list
+of tasks being performed will be shown:
+
+.. image:: /images/book/installation/wizard-3.png
+
+On the last step, you'll provide your administrative data such as the
+company name and administrative credentials:
+
+.. image:: /images/book/installation/wizard-4.png
+
+After clicking on *Install*, the installer finishes your setup:
+
+.. image:: /images/book/installation/wizard-5.png
+
+Congratulations! You have now successfully set up the Oro Platform Application!
+
+.. _book-installation-command:
+
+2. Using the Installation Command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Use the ``oro:install`` console command can to trigger the installation
+from the command line:
+
+.. code-block:: bash
+
+    $ php app/console oro:install
+
+If you invoke the command without any argument, you will be asked to enter
+values for certain configuration options. You can pass these values using
+the appropriate command options:
+
+======================== =======================================================
+Option                   Description
+======================== =======================================================
+``--company-short-name`` Company short name
+------------------------ -------------------------------------------------------
+``--company-name``       Company name
+------------------------ -------------------------------------------------------
+``--user-name``          User name
+------------------------ -------------------------------------------------------
+``--user-email``         User email
+------------------------ -------------------------------------------------------
+``--user-firstname``     User first name
+------------------------ -------------------------------------------------------
+``--user-lastname``      User last name
+------------------------ -------------------------------------------------------
+``--user-password``      User password
+------------------------ -------------------------------------------------------
+``--force``              Force installation
+------------------------ -------------------------------------------------------
+``--sample-data``        Determines whether sample data need to be loaded or not
+======================== =======================================================
+
+.. note::
+
+    The ``install`` command will report if you system configuration does
+    not meet the Oro Platform Application requirements. You'll then need
+    to fix them and run the command again.
+
+.. tip::
+
+    Normally, the installation process terminates if it detects an already-existing
+    installation. Use the ``--force`` option to overwrite an existing installation,
+    e.g. during your development process.
+
+.. _the-installation-process:
+
+.. sidebar:: The Installation Process
+
+    Installation is a four step process:
+
+    #. The system requirements are checked. The setup process terminates if any of the requirements
+       are not fulfilled.
+    #. The database and all caches are reset.
+    #. Initial data (i.e. migrations, workflow defintions and fixture data) are loaded and
+       executed.
+    #. Assets are dumped, RequireJS is initialized.
 
 Customizing the Installation Process
 ------------------------------------
 
 You can customize the installation process in several ways:
 
-#. `Execute custom migrations`_
+#. :ref:`Execute custom migrations <execute-custom-migrations>`.
 
-#. `Load custom data fixtures`_
+#. :ref:`Load custom data fixtures <load-custom-data-fixtures>`.
 
-Execute custom Migrations
-~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _execute-custom-migrations:
+
+1. Execute Custom Migrations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can create your own migrations that can be executed during the installation.
 A migration is a class which implements the
@@ -410,8 +463,10 @@ Migrations registered in the ``oro_migration.pre_up`` event are executed
 before the *main* migrations while migrations registered in the ``oro_migration.post_up``
 event are executed after the *main* migrations have been processed.
 
-Load custom Data Fixtures
-~~~~~~~~~~~~~~~~~~~~~~~~~
+.. _load-custom-data-fixtures:
+
+2. Load Custom Data Fixtures
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInterface``:
 
