@@ -33,50 +33,47 @@ Adding Fields to an Entity
   word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_ ,nor a
   `reserved php word <http://php.net/manual/en/reserved.keywords.php>`_"
   
-  "**Storage Type***",""
+  "**Storage Type***","There are two options:
+
+- *Serialized field*: allows creation of custom fields without a schema update (the field will appear in the system as 
+  soon as it has been added. This is particularly useful for simple custom fields that keep information necessary for 
+  an only entity). 
   
-  "**Type***","Choose the field type from a drop-down."
+  Serialized fields cannot be used for grid filters, segment, report and char generation, data audit and creation of 
+  relations.   
+  
+  Serialized fields cannot be files, multi-selects or option sets.
+  
+- *Table column*: store to a database table. If the option is chosen, the field can be used without the limitations 
+  applicable to a serialized field. If field stored in the table column has been created, a 
+  :ref:schema update `<user-guide-entity-management-create-update>` is required.
+
+  "
+"**Type***","Choose the field type from a drop-down."
 
 - Click :guilabel:`Continue` button. 
 
-- Define more field details, subject to the chosen field type.
-
-A bigger form will appear where you can:
-
-- Define more :ref:`general information <user-guide-entity-management-create-fields-general-info>` details
-
-- Define :ref:`export and import settings <user-guide-entity-management-create-fields-exportimport>`
-
-- Specify :ref:`ability to view and use the field <user-guide-entity-management-create-fields-other>`
+A bigger form will appear where you can define more field details, subject to the chosen field type.
 
 
-.. _user-guide-entity-management-create-fields-general-info:
+.. _user-guide-entity-management-create-fields-general:
 
-*Field General Information*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create an Integer Field
+^^^^^^^^^^^^^^^^^^^^^^^
 
-The following fields are mandatory and **must** be defined
+If you are creating an integer (BigInt, SmallInt, Integer) field. The following field properties shall be specified.
 
-.. csv-table::
-  :header: "Field Defined","Description"
-  :widths: 10, 30
 
-  "**Name*** and **Type***","The values were specified at the previous step and cannot be re-defined."
-  "**Label***","The way the field will be referred to in the UI
-  
-  By default filled with the *Name* value."
+Integer Field. General Section
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are also optional fields in the section that can be defined for some of the fields:
+**Name***, "**Storage Type***" and **Type***","The values were specified at the previous step and cannot be 
+re-defined.
 
-.. csv-table::
-  :header: "Field","Type","Description"
-  :widths: 20,10,30
+**Label*** is the only mandatory field at the step. The label defines the way the field will be referred to in the UI.
 
-  "Description","Any","Information to help you or other users understand the purpose and specifics of the created field 
-  in the future."  
-  "Length","String","Any number from 1 to 255 can be used to limit the length of string properties"
-  "Precision","Decimal","Maximum number of digits"
-  "Scale","Decimal","Maximum number of decimal places"
+The only optional field in the section is **Description**. It contains information to help you or other users understand
+the purpose and specifics of the created field.
 
   
 .. _user-guide-entity-management-create-fields-exportimport:
@@ -114,13 +111,22 @@ The following Yes/No options can be defined for each field
   :header: "Option","Description"
   :widths: 10,30
 
-  "**Show on Grid**","Field will be displayed in the grid of the entity records"
-  "**Show Grid Filter**","Filter for the field will be available on the grid"
+  "**Available in Email Templates**","If set to *Yes*, values of the field can be used to create email patterns."
+  "**Contact Information**","If set to *Yes*, the field value shall be treated by the system as contact details. (E.g.
+  can be used to create marketing lists)"
+  "**Show on Grid**","If set to *Yes*, the field will be displayed in a separate column of the respective grid."
+ "**Show Grid Filter**","If set to *Yes*, a corresponding filter will be added to the grid filters by default. 
+ 
+ Filter for the field will be available on the grid"
+  "**Show on Form**","Field can be edited from the edit form
+
+
+ 
   "**Show on Form**","Field can be edited from the edit form
   
   .. caution:: 
     
-    If *No* is chosen for *Show on Form* of the field, it cannot be edited"
+
   "**Show on View**","Field can be seen on the *View* page"
   "**Available in Email Templates**","The field can be used to create E-mail templates"
   "**Auditable**","Data on the field processing details is logged"
