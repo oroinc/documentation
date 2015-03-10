@@ -171,7 +171,7 @@ Add Fields to an Entity
 Entity with no fields is meaningless and will not be processed by the system. Once an entity has been created, you will
 get to the *View* page of the new entity, where you can define its new fields.
 
-Please refer to the :ref:`Field Management <user-guide-field management>` Guide to find out, how to add fields to the 
+Please refer to the :ref:`Field Management <user-guide-entity-management-create-fields>` Guide to find out, how to add fields to the 
 entity.
 
  
@@ -190,24 +190,56 @@ so please be patient.
 
 
 
+
 .. _user-guide-entity-management-edit:
 
-Editing Entities from UI
--------------------------
-
+Editing Entities and Entities Grid 
+----------------------------------
 Sometimes there appears a need to edit existing entities of the Oro Platform from the 
 Web UI.
+ 
+The following table describes columns of the Entities grid and how they effect ability to edit the entity:
 
-:ref:`Edit form <user-guide-ui-components-create-pages>` is available for any entity in the system. List of editable 
-properties for each of the System type entities depends on configuration and is created in a way reasonable and safe 
-for the system performance and operation. 
+.. csv-table:: Entity Grid Columns
+  :header: "Column","What's in it","Effect ability to edit?"
+  :widths: 10, 30, 30
+
+  "**LABEL***","Name used to refer to the entity in the system UI","No"
+  "**SCHEMA STATUS**","Defines the state of current schema for the entity.","No, but unless its value is *Active* your 
+  changes to entities an/or their fields will not have affect for the system, until you 
+  :ref:`Update the Schema <user-guide-entity-management-create-update>`" 
+  "
+  
+.. _user-guide-entity-management_is_extend:
+  
+  **IS EXTEND**","Defines if new fields can be added to the entity","Yes. If the entity is no extend, you cannot add 
+  any new fields to it (if you feel that it is crucial for you business needs, you can address the developers to change 
+  the configuration of the entity at the back-end or create a duplicate custom entity)"
+  "**TYPE**","Defines whether the entity was loaded from the back-end (System) or created in the UI (Custom)","Custom 
+  entities are always extend, while for System entities this may differ subject to the configuration. System entities 
+  cannot be deleted"
+  "**AUDITABLE**","Defines if the actions performed on the entity records shall be logged","No"
+  "**OWNERSHIP TYPE**","Defines the level at which permissions will be set for instances of the entity as
+  described in the Create Entities guide :ref:section`user-guide-entity-management-create-other-ownership-type`","Not 
+  directly, however, you need to have permissions to edit the entity (See System → User Management → Roles)"
+  "**NAME** and **MODULE**","Define the name used to refer to the entity at the back-end. Comes handy if there is a 
+  need to change configuration or otherwise find the entity in the code","No"
+  "**UPDATED AT**","The date and time of the last schema update for the entity","No"
+  "...","Action icons","Hover your mouse over the *...* to access the action icons.
+  - Delete the entity: |IcDelete| (available only for custom entities)
+  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the entity:  |IcView|
+  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the entity: |IcEdit|"
+  
+
+This way, ability to add :ref:`new fields <user-guide-entity-management-create-fields>` depends on the entity, 
+:ref:`Edit form <user-guide-ui-components-create-pages>` is available for any entity in the system. 
+List of editable properties for each of the System type entities depends on 
+configuration and is created in a way reasonable and safe for the system performance and operation. 
 
 .. note::
 
     The list of fields on the Edit form is the same as when you 
-    :ref:`Create an entity <user-guide-entity-management-create>`)
- 
-
+    :ref:`Create an entity <user-guide-entity-management-create>`)  
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
@@ -221,4 +253,5 @@ for the system performance and operation.
    
 .. |IcRest| image:: ./img/buttons/IcRest.png
    :align: middle
-   
+
+  
