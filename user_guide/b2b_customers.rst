@@ -16,7 +16,7 @@ customer records with OroCRM reports and use in workflows.
 Create B2B Customers from the UI
 --------------------------------
 
-- Go to the *Sales → B2B Customers*
+- Go to the *Customers → B2B Customers*
 
 - Click :guilabel:`Create B2B Customer` button
 
@@ -42,7 +42,7 @@ The following fields are mandatory and **must** be defined:
   Choose from the drop-down or list, or create a new accounts, as described in the  
   :ref:`Accounts guide <user-guide-accounts-create>`."
 
-The rest of the fields are **optional**. They keep additional details about the customer (such as its term:tags <Tag>`
+The rest of the fields are **optional**. They keep additional details about the customer (such as its term:`tags <Tag>`
 and address details) and may be left empty.
 
 .. note::
@@ -67,7 +67,7 @@ customer in the system.
 B2B Customer Actions 
 --------------------
 
-The following actions can be performed for the B2B customers:
+The following actions can be performed for B2B customers:
 
 From the :ref:`grid <user-guide-ui-components-grids>`:
 

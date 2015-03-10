@@ -11,16 +11,16 @@ The :term:`customer identity <Customer Identity>` of such channels is a B2B Cust
 
 By default, B2B Channels are assigned the following entities:
 
-- B2B Customer: :term:`customer identity <Customer Identity>` that represents customers involved in the 
-  business-to-business activities. These are usually other businesses, companies and organizationa.
+- B2B Customer: :term:`customer identity <Customer Identity>` that represents customers involved in 
+  business-to-business activities. These are usually other businesses, companies and organizations.
   Described in more details in the :ref:`B2B Customers guide <user-guide-system-channel-entities-b2b-customer>`.
    
-- Opportunity: :term:`entity <Entity>`, :term:`records <Record>` whereof represent highly probable potential or actual 
-  sales to a new or established customer.  Described in more details in the 
+- Opportunity: :term:`entity <Entity>` :term:`records <Record>` whereof represent highly probable potential or actual 
+  sales to a new or established customer.  Described in more detail in the 
   :ref:`Opportunities guide <user-guide-system-channel-entities-opportunities>`.
   
-- Lead: :term:`entity <Entity>`, :term:`records <Record>` whereof represent people or businesses that have 
-  authority, budget and interest to purchase goods and/or services from you, such that probability of the actual 
+- Lead: :term:`entity <Entity>` :term:`records <Record>` whereof represent people or businesses that have 
+  authority, budget and interest to purchase goods and/or services from you, where probability of the actual 
   sales is not yet high or impossible to define. Described in more details in the 
   :ref:`Leads guide <user-guide-system-channel-entities-leads>`.
   

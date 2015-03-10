@@ -8,10 +8,10 @@ established customer. For example, request for proposal, invitation for a biddin
 a delivery are opportunities. 
 
 In order to add and process details of opportunities in OroCRM use Opportunity records you need to have at least one 
-one :term:`Channel`, for which the Opportunity entity is assigned, as described in the 
+:term:`Channel` to which the Opportunity entity is assigned, as described in the 
 ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
 
-From this article you will learn how to create new opportunities, manage existing opportunities, analyse details of the 
+From this article you will learn how to create new opportunities, manage existing opportunities, analyze details of the 
 opportunity records with OroCRM reports and use opportunities in workflows.
 
 
@@ -41,12 +41,12 @@ The following fields are mandatory and **must** be defined:
   "**Opportunity Name***","The name used to refer to the opportunity in the system."
   "**Channel***","Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this 
   opportunity."
-  "**B2B Customer***","A :term:`B2B customer <B2B Customer>`, for whom the opportunity is created.
+  "**B2B Customer***","A :term:`B2B customer <B2B Customer>` the opportunity is created for.
   
   Choose from the drop-down or list, or create a new B2B customer, as described in the  
   :ref:`B2B Customers guide <user-guide-system-channel-entities-b2b-customer>`."
 
-The rest of the fields are **optional**. They keep additional details about the opportunity (such as the its 
+The rest of the fields are optional. They keep additional details about the opportunity (such as the its 
 probability, customer need and proposed solution description, close reason and revenue) and may be left empty.
 
 .. note::
@@ -59,7 +59,7 @@ Their values will be displayed in the *Additional* section.
 
 .. hint::
 
-    To create a custom field, go to *System → Entities → Entity Management → Opportunity* and click 
+    To create a custom field, go to *System → Entities → Entity Management → Opportunity* and click the 
     :guilabel:`Create Field` button.
   
 Once all the necessary fields have been defined, click the button in the right top corner of the page to save the 
@@ -115,13 +115,13 @@ Opportunities by Status
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is a simple but useful report, with which you can see how many opportunities with a specific status are available 
-in the system, what is there total close revenue and budget amount.
+in the system, what is their total close revenue and budget amount.
 
 In order to see the report go to *Reports and Segments → Reports → Opportunities → Opportunities By Status*
 
 It shows:
 
-- the opportunity status 
+- status of the opportunities
 
 - the number of the opportunities with this status 
 
@@ -137,7 +137,7 @@ It shows:
 Won Opportunities by Period
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This report helps to analyse process of opportunity closer per period. 
+This report helps to analyze a process of opportunity closer per period. 
 
 In order to see the report go to *Reports and Segments → Reports → Opportunities → Won Opportunities By Period*
 

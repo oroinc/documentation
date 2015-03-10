@@ -50,17 +50,17 @@ The following three fields are mandatory and **must** be defined:
   "
   .. _user-guide-channel-guide-type:
   
-  **Channel Type**", "A drop-down which allows you to choose the channel type which is the most suitable for the 
+  **Channel Type**", "A drop-down which allows you to choose the channel type most suitable for the 
   channel created.
 
-  Channel types define a specific set of rules and settings that apply to the channel.
+  A channel type defines a specific set of rules and settings that apply to the channel.
 
-  The following channel types are available out of the box in the current version of the platform:
+  The following channel types are currently available out-of-the-box:
   
-  - *B2B*: dedicated for managing B2B customer relations. Described in more details in the 
+  - *B2B*: dedicated for managing B2B customer relations. Described in more detail in the 
     :ref:`B2B Channel guide <user-guide-b2b-channel>`
 
-  - *Magento*: designed for :term:`Magento` stores. Described in more details in the 
+  - *Magento*: designed for :term:`Magento` stores. Described in more detail in the 
     :ref:`Magento Channel guide <user-guide-b2b-channel>`
 
   - *Custom*: any other channels, subject to specific business needs"

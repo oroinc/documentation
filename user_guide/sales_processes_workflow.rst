@@ -16,8 +16,8 @@ The workflow is aimed at creation of a unified approach towards processing and d
 initiation to completion. According to the workflow, the following actions are available for the manager:
 
 1. Create a :term:`lead <Lead>` as soon as a potential :term:`opportunity <Opportunity>` has appeared. As the 
-   probability of the deal is getting clear, the lead may be disqualified (if it is most likely that no deal will be 
-   made) or, on the opposite, qualified into an opportunity (if the deal probability gets high enough).
+   probability of the deal gets clear, the lead may be disqualified (if it is most likely that no deal will be 
+   made) or qualified into an opportunity (if the deal probability gets high enough).
 
    If potential success level is high from the very start, it is also possible to skip the step and start creating an 
    opportunity.
@@ -25,7 +25,7 @@ initiation to completion. According to the workflow, the following actions are a
 2. Develop an opportunity as new information appears (e.g. new agreements are reached or plans are approved), if 
    applicable.
 
-3. Any opportunity (whether it was developed or not) may be closed, either as won or as lost, subject to the deal 
+3. Any opportunity (whether it was developed or not) may be closed, either as won or lost, subject to the deal 
    outcomes.
 
 4. Any disqualified lead may be reactivated, which means a new lead will be created. A follow-up note can also be 
@@ -36,7 +36,7 @@ initiation to completion. According to the workflow, the following actions are a
 
 .. image:: ./img/sales_process/sales_process_wf.png
 
-This way, the workflow leads a manager step-by-step through  a sales process life-cycle from its start and to the 
+This way, the workflow leads a manager step-by-step through  a sales process life-cycle from its start to the 
 completion.
 
 You can clone and customize the workflow to correspond to your business-processes or create a new workflow using the 

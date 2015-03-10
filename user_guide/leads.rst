@@ -4,15 +4,15 @@ Leads
 =====
 
 The Lead records ("leads") represent commercial activity with  people or businesses that have  authority, budget and 
-interest to purchase goods  and/or services from you, such that probability of the actual sales is not yet high or 
-impossible to define. Initial agreement discussion, preliminary price request or bidding proposal may be examples of a 
-lead. 
+interest to purchase goods  and/or services from you, for whom the probability of actual sales is not yet high or 
+is impossible to define. Initial agreement discussions, preliminary price requests or invitations for a bid may be 
+examples of a lead. 
 
-In order to save and processes details of different leads in OroCRM, you need to have at least one 
+In order to save and process details of different leads in OroCRM, you need to have at least one 
 :term:`Channel`, for which the Lead entity is assigned, as described in the 
 ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
 
-From this article you will learn how to create new leads, manage existing leads, analyse details of the lead records 
+From this article you will learn how to create new leads, manage existing leads, analyze details of the lead records 
 with OroCRM reports and use leads in workflows.
 
 
@@ -43,7 +43,7 @@ The following fields are mandatory and **must** be defined:
   "**Channel***","Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this lead."
   "**First Name*** and **Last Name***","Personal details of the potential customer or contact person." 
 
-The rest of the fields are **optional**. They keep additional details about the lead (such as the Website, name of 
+The rest of the fields are optional. They keep additional details about the lead (such as the website, name of 
 related :term:`B2B customer <B2B Customer>`, industry, address details, etc.) 
 and may be left empty.
 
@@ -106,10 +106,10 @@ OroCRM currently comes with a ready-to-use *Leads by Date* report.
 Leads by Date
 ^^^^^^^^^^^^^
 
-This is a simple but useful report, with which you can see how many leads were created on a specific date for 
+This is a simple but useful report, where you can see how many leads were created on a specific date for 
 all of your channels.
 
-In order to see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
+In order to see the report, go to *Reports and Segments → Reports → Leads → Leads By Date*
 
 It shows:
 

@@ -4,11 +4,11 @@ Accounts
 ========
 
 Account records ("accounts") represent a person, company or group of people you do business activities with. 
-An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing for 
-a 360-degree view of the account activity. 
+An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing 
+a 360-degree view of the customer. 
 
 From this article you will learn how to create new account, understand 
-their :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyse their  
+its :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyze its  
 details with OroCRM reports.
 
 
@@ -17,7 +17,7 @@ details with OroCRM reports.
 Create Account from the UI
 --------------------------
 
-- Go to the *Sales → Accounts*
+- Go to the *Customers → Accounts*
 
 - Click :guilabel:`Create Account` button
 
@@ -27,7 +27,7 @@ Create Account from the UI
 
 The following fields are mandatory and **must** be defined:
 
-.. csv-table:: Mandatory Entity Fields
+.. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
 
@@ -37,7 +37,7 @@ The following fields are mandatory and **must** be defined:
   By default, the user creating the account is chosen."
   "**Account Name***","The name used to refer to the account in the system."
 
-The rest of the fields are **optional**. They keep additional details about the account (such as its :term:`tags <Tag>`
+The rest of the fields are optional. They keep additional details about the account (such as its :term:`tags <Tag>`
 and related :term:`contacts <Contact>`) and may be left empty.
 
 .. hint::
@@ -83,7 +83,7 @@ customer that represents some client of yours, and then this client is buying so
 Accounts View Page
 ------------------
 
-:ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
+The :ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
 
 - **Page Header**: date of the account creation and it latest update, as well as its 
   :term:`lifetime sales value <Lifetime Sales Value>`.
@@ -99,12 +99,12 @@ Accounts View Page
 
 .. note::
     
-    If an activity-related action was done for a customer or a contact, assigned to the account they will not be 
+    If an activity-related action was performed for a customer or a contact assigned to the account, they will not be 
     displayed. Only the activities performed directly for the account are available in the section.
 
 - **Additional Information**: details of any :term:`custom fields <Custom Field>` defined for the account.
 
-- **Sections with channel names**: each the section contain details of all the customers that are assigned to this 
+- **Sections with channel names**: each section contains details of all the customers that are assigned to this 
   account and belong to the specified channel, as described in the 
   :ref:`multichannel functionality description <user-guide-multi-channel-overview>`. 
   Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
@@ -114,7 +114,7 @@ Accounts View Page
   
  - There are three B2B Customers: "Jewel Mart", "A. L. Price", and "PriceRite Warehouse Club"
 
- - One one of the customers is chosen, you can see it general details and information on related Leads/Opportunities
+ - Once one of the customers is chosen, you can see it general details and information on related Leads/Opportunities
  
 .. image:: ./img/accounts/accounts_view_channels.png
 
@@ -165,9 +165,9 @@ Merging Accounts
 ^^^^^^^^^^^^^^^^
 
 Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
-view of customer activities, regardless of the :term:`channels <Channel>`. For example, if it has appeared that several
-accounts have been created for the different representatives of the same client, or that your business-to-business 
-partner has started another channel (e.g. buying from you Magento store).
+view of customer activities, regardless of the :term:`channels <Channel>`. This can be useful if, for example, it has 
+appeared that several accounts have been created for the different representatives of the same client, or that your 
+business-to-business partner has started another channel (e.g. buying from you Magento store).
 
 In order to merge accounts:
 
@@ -177,7 +177,7 @@ In order to merge accounts:
 
 - Choose :ref:`bulk action <user-guide-ui-components-grid-bulk-action>` *Merge Accounts*.
 
-*For the sake of example, we are merging tree accounts "Acuserv", "Big Bear Stores" and "Case Bonita"*
+*For the sake of example, we are merging three accounts "Acuserv", "Big Bear Stores" and "Casa Bonita"*
 
 .. image:: ./img/accounts/accounts_merge_01.png
 
@@ -201,7 +201,7 @@ Once you've clicked the :guilabel:`Merge Accounts` button, a table with the merg
 
 - Click the :guilabel:`Merge` button
   
-Master Record with merged data of several accounts will be created. The rest of the account details, including details 
+A Master Record with merged data of several accounts will be created. The rest of the account details, including details 
 of the customer identities will be appended.
 
 
@@ -221,7 +221,7 @@ OroCRM currently comes with two ready-to-use reports on accounts:
 Accounts Life Time Value 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a simple but useful report, with which you can see total amount of money received from all the customers 
+This is a simple but useful report, with which you can see the total amount of money received from all the customers 
 assigned to the account. 
 
 In order to see the report go to *Reports and Segments → Reports → Accounts → Life Time*
