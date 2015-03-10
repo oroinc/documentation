@@ -12,14 +12,16 @@ an :ref:`extendible <user-guide-entity-management_is_extend>` :term:`system enti
 This guide describes the way to create and modify fields.
 
   
-Adding Fields to an Entity
---------------------------
+Start Field Creation
+--------------------
 
 - Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the entity.  
 
-- Click :guilabel:`Create Field` button. 
+- Click the :guilabel:`Create Field` button. 
 
 - Specify the basic entity details:
+
+.. image:: ./img/entity_management/new_entity_field.png
 
 .. csv-table::
   :header: "Field", "Description"
@@ -39,8 +41,9 @@ Adding Fields to an Entity
   soon as it has been added. This is particularly useful for simple custom fields that keep information necessary for 
   an only entity). 
   
-  Serialized fields cannot be used for grid filters, segment, report and char generation, data audit and creation of 
-  relations.   
+  Serialized fields cannot be used for :ref:`grid filters <user-guide-ui-components-grid-filters>`, for
+  :ref:`report <user-guide-reports>` and :ref:`chart <user-guide-reports-chart>`generation, for data audit and creation 
+  of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <>`
   
   Serialized fields cannot be files, multi-selects or option sets.
   
@@ -56,16 +59,35 @@ Adding Fields to an Entity
 A bigger form will appear where you can define more field details, subject to the chosen field type.
 
 
-.. _user-guide-entity-management-create-fields-general:
+.. _user-guide-entity-management-create-fields-common:
 
-Create an Integer Field
-^^^^^^^^^^^^^^^^^^^^^^^
+Add a Common Field
+------------------
 
-If you are creating an integer (BigInt, SmallInt, Integer) field. The following field properties shall be specified.
+The section describes how to add a fields of the following types:
+
+- BigInt
+- Boolean
+- Currency
+- Date
+- DataTime
+- Decimal :ref:`* <additional_general_fields>`
+- Float
+- Integer
+- SmallInt
+- Integer
+- Percent
+- String :ref:`* <additional_general_fields>`
+- Text :ref:`** <missing_other_fields>`
 
 
-Integer Field. General Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _user-guide-entity-management-general-common
+
+Common General Section
+^^^^^^^^^^^^^^^^^^^^^^
+You can see and define general field properties in the section.
+
+.. image:: ./img/entity_management/new_entity_field_general.png
 
 **Name***, "**Storage Type***" and **Type***","The values were specified at the previous step and cannot be 
 re-defined.
@@ -75,11 +97,197 @@ re-defined.
 The only optional field in the section is **Description**. It contains information to help you or other users understand
 the purpose and specifics of the created field.
 
+.. _additional_general_fields:
   
+Decimal fields have two additional optional properties that can be defined in the *General* section:
+
+- **Precision**: maximum number of digits
+- **Scale**: Maximum number of decimal places
+
+String fields have an additional optional property **Length**. It is a number from 1 to 255. The property can be used to
+limit the length of string properties
+
+
+.. _user-guide-entity-management-export-import-common
+
+Common Export and Import Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Oro Platform provides for export and import of its entity record details from and into .csv tables. In the section you 
+can define the rules applied to the specific field in the course of import and export.
+
+.. image:: ./img/entity_management/new_entity_field_exportimport.png
+
+.. csv-table:: Import and Export Settings
+  :header: "Field","Description"
+  :widths: 10,30
+
+  "**Column Name**","Name of the .csv table column that corresponds to the field (if left blank, the field label will be
+  used for export"
+  "**Column Position**","Position of the column that corresponds to the field in the .csv table"
+  "**Use as Identity Field**","If *Yes* is chosen, the field will be used in the course of import to define if:
+ 
+  - a new item is created (if there are no items with the ID field value equal to the imported) or
+
+  - an existing item is updated (the item with ID field value equal to the imported one's)
+ 
+  "
+  "**Exclude Column**", "If chosen, the field will will be omitted when creating a .csv file"
+  
+  
+.. _user-guide-entity-management-other-common
+
+Common Other Field Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The *Other* section is used to define additional field settings.
+
+.. image:: ./img/entity_management/new_entity_field_other.png
+
+The following Yes/No options can be defined for each field
+
+.. csv-table:: Import and Export Settings
+  :header: "Option","Description"
+  :widths: 10,30
+
+  "**Available in Email Templates**","If set to *Yes*, values of the field can be used to create email patterns."
+  "**Contact Information**","If set to *Yes*, the field value shall be treated by the system as contact details. (E.g.
+  can be used to create marketing lists)"
+  "**Show on Grid**","If set to *Yes*, the field will be displayed in a separate column of the respective grid."
+  "**Show Grid Filter**","Not available for serialized fields. If set to *Yes*, a corresponding filter will be added to 
+  the :ref:`grid filters <user-guide-ui-components-grid-filters>` by default." 
+  "**Show on Form**","If set to *Yes*, the field value can be edited from the edit form of the record.
+
+.. caution:: 
+
+    If the *Show on Form* value has been set to *No*, there will be no way to create/update the field values from 
+    OroCRM. This is only reasonable for the fields values whereof are uploaded to the system during a synchronization.    
+
+  "**Show on View**","If set to *Yes*, the field is displayed on the *View* page"
+  "Priority","Priority defines the order of custom fields on a corresponding view page, edit and create forms and grid. 
+  Custom field are always displayed one after another, usually below the system fields. If no priority is defined or the 
+  defined priority is "0", the fields will be displayed in the order they have been added to the system (the later - the
+  lower). The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority."
+  "**Auditable**","Not available for serialized fields. If set to *Yes*, data on the field processing details is 
+  logged."
+  "**Applicable Organizations**","Defines for what :term:`organizations <Organization>` the custom field will be added 
+  to the :term:`entity <Entity>`.
+  
+  *All* is chosen by default. Uncheck it to choose specific organizations from the list."
+  
+.. _missing_other_fields:
+
+Fields of the text type aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be 
+defined for them.
+  
+  
+.. _user-guide-entity-management-create-file:
+
+Adding a File Field
+-------------------
+
+Value of a field may be a file, e.g. a document, an agreement, a proposal, etc.
+
+.. image:: ./img/entity_management/new_entity_field_file.png
+   :align: right
+
+- The file fields can be only of the *column table* storage type.
+
+- The:ref:`general section <user-guide-entity-management-general-common>` of a file field has an only additional 
+  mandatory field **File Size***. The field defines a maximum file size allowed for an upload (in MB).
+
+- The file fields cannot be defined as an identity field for 
+  :ref:`export/import <user-guide-entity-management-export-import-common>`
+
+- The file fields aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be defined for 
+  them. Auditing is not available for actions with the file fields.
+
+  
+.. _user-guide-entity-management-create-image:
+  
+Adding an Image Field
+---------------------
+
+Value of a field may be a an image, e.g. the customer's picture or image of a product.
+
+
+
+- Image fields can be only of the *column table* storage type.
+
+- The :ref:`general section <user-guide-entity-management-general-common>` of an image field has three additional 
+  mandatory fields:
+  
+- **File Size***: defines a maximum file size allowed for an upload (in MB)
+
+- **Thumbnail Width***: defines the thumbnail width in pixels
+
+- **Thumbnail Height***: defines the thumbnail height in pixels
+
+.. image:: ./img/entity_management/new_entity_field_image.png
+
+- The image fields cannot be defined as an identity field for 
+  :ref:`export/import <user-guide-entity-management-export-import-common>`
+
+- The image fields aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be defined for 
+  them. Auditing is not available for actions with the image fields.
+
+  
+  
+.. _user-guide-entity-management-create-select:
+  
+Adding a Select/Multi-Select Field
+----------------------------------
+
+Value of a field may be a an image, e.g. the customer's picture or image of a product.
+
+
+
+- Image fields can be only of the *column table* storage type.
+
+- The :ref:`general section <user-guide-entity-management-general-common>` of an image field has three additional 
+  mandatory fields:
+  
+- **File Size***: defines a maximum file size allowed for an upload (in MB)
+
+- **Thumbnail Width***: defines the thumbnail width in pixels
+
+- **Thumbnail Height***: defines the thumbnail height in pixels
+
+.. image:: ./img/entity_management/new_entity_field_image.png
+
+- The image fields cannot be defined as an identity field for 
+  :ref:`export/import <user-guide-entity-management-export-import-common>`
+
+- The image fields aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be defined for 
+  them. Auditing is not available for actions with the image fields.
+
+
+File General Section
+^^^^^^^^^^^^^^^^^^^^
+
+**Name***, "**Storage Type***" and **Type***","The values were specified at the previous step and cannot be 
+re-defined.
+
+**Label*** is the only mandatory field at the step. The label defines the way the field will be referred to in the UI.
+
+The only optional field in the section is **Description**. It contains information to help you or other users understand
+the purpose and specifics of the created field.
+
+.. _additional_general_fields:
+  
+Decimal fields have two additional optional properties that can be defined in the *General* section:
+
+- **Precision**: maximum number of digits
+- **Scale**: Maximum number of decimal places
+
+String fields have an additional optional property **Length**. It is a number from 1 to 255. The property can be used to
+limit the length of string properties
+
+
 .. _user-guide-entity-management-create-fields-exportimport:
 
-*Export and Import Settings*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Common Export and Import Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Oro Platform provides for export and import of its entity record details from and into .csv tables. In the section you 
 can define the rules applied to the specific field in the course of import and export.
@@ -102,8 +310,8 @@ can define the rules applied to the specific field in the course of import and e
   
 .. _user-guide-entity-management-create-fields-other:
 
-Other Field Settings
-^^^^^^^^^^^^^^^^^^^^
+Common Other Field Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following Yes/No options can be defined for each field
 
@@ -115,24 +323,37 @@ The following Yes/No options can be defined for each field
   "**Contact Information**","If set to *Yes*, the field value shall be treated by the system as contact details. (E.g.
   can be used to create marketing lists)"
   "**Show on Grid**","If set to *Yes*, the field will be displayed in a separate column of the respective grid."
- "**Show Grid Filter**","If set to *Yes*, a corresponding filter will be added to the grid filters by default. 
- 
- Filter for the field will be available on the grid"
-  "**Show on Form**","Field can be edited from the edit form
+  "**Show Grid Filter**","Not available for serialized fields. If set to *Yes*, a corresponding filter will be added to 
+  the :ref:`grid filters <user-guide-ui-components-grid-filters>` by default." 
+  "**Show on Form**","If set to *Yes*, the field value can be edited from the edit form of the record.
 
+.. caution:: 
 
- 
-  "**Show on Form**","Field can be edited from the edit form
+    If the *Show on Form* value has been set to *No*, there will be no way to create/update the field values from 
+    OroCRM. This is only reasonable for the fields values whereof are uploaded to the system during a synchronization.    
+
+  "**Show on View**","If set to *Yes*, the field is displayed on the *View* page"
+  "Priority","Priority defines the order of custom fields on a corresponding view page, edit and create forms and grid. 
+  Custom field are always displayed one after another, usually below the system fields. If no priority is defined or the 
+  defined priority is "0", the fields will be displayed in the order they have been added to the system (the later - the
+  lower). The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority."
+  "**Auditable**","Not available for serialized fields. If set to *Yes*, data on the field processing details is 
+  logged."
+  "**Applicable Organizations**","Defines for what :term:`organizations <Organization>` the custom field will be added 
+  to the :term:`entity <Entity>`.
   
-  .. caution:: 
-    
-
-  "**Show on View**","Field can be seen on the *View* page"
-  "**Available in Email Templates**","The field can be used to create E-mail templates"
-  "**Auditable**","Data on the field processing details is logged"
+  *All* is chosen by default. Uncheck it to choose specific organizations from the list."
   
+.. _missing_other_fields:
+
+Fields of the text type aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be 
+defined for them.
   
 .. _user-guide-entity-management-create-relation:
+
+
+
+
 
 Add Relation for the Entity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
