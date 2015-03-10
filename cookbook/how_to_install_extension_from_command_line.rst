@@ -23,7 +23,7 @@ There are two ways to install extensions from the command-line:
 #. Alternatively, :ref:`you can use Composer <cookbook-extensions-composer>` to download an
    extension.
 
-.. _cookbook-extensions-composer:
+.. _cookbook-extensions-package-manager:
 
 Using the Package Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,7 +46,7 @@ Finish the installation by clearing the cache again:
 
     $ php app/console clear:cache
 
-.. _cookbook-extensions-package-manager:
+.. _cookbook-extensions-composer:
 
 Using Composer
 ~~~~~~~~~~~~~~
