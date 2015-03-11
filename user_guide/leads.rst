@@ -3,26 +3,25 @@
 Leads
 =====
 
-The Lead records ("leads") represent people or businesses the have initial interest, authority and budget to take part 
-in your commercial or social activity but whose intentions are not yet backed up with any arrangements. 
+The Lead records ("leads") represent commercial activity with  people or businesses that have  authority, budget and 
+interest to purchase goods  and/or services from you, for whom the probability of actual sales is not yet high or 
+is impossible to define. Initial agreement discussions, preliminary price requests or invitations for a bid may be 
+examples of a lead. 
 
-In order to use Lead records you need to have at least one :ref:`Channel <user-guide-channel-guide-create>`, for which
-Lead is defined as its entity:
+In order to save and process details of different leads in OroCRM, you need to have at least one 
+:term:`Channel`, for which the Lead entity is assigned, as described in the 
+ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
 
-- :ref:`Create <user-guide-leads-create>` new leads
-
-- :ref:`Manage <user-guide-leads-actions>` existing leads, particularly, import and export lead records and assign
-  them different activities
-
-- Analyse details of the lead records with OroCRM :ref:`reports <user-guide-leads-reports>`
-
-- Use leads in :ref:`workflows <user-guide-leads-workflows>`
+From this article you will learn how to create new leads, manage existing leads, analyze details of the lead records 
+with OroCRM reports and use leads in workflows.
 
 
 .. _user-guide-leads-create:
 
 Create Leads from the UI
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
+
+- Go to the *Sales → Leads*
 
 - Click :guilabel:`Create Lead` button
 
@@ -41,17 +40,25 @@ The following fields are mandatory and **must** be defined:
   
   By default, the user creating the lead is chosen."
   "**Lead Name***","The name used to refer to the lead in the system."
-  "**Channel***","Choose one of active channels, the *Lead* entity is assigned to. 
-
-  Details of the lead will be uploaded from the source of the channel."
+  "**Channel***","Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this lead."
   "**First Name*** and **Last Name***","Personal details of the potential customer or contact person." 
 
-**Optional fields** keep additional information and may be left empty.
-  
-**Custom fields** can be created to meet specific customer needs and will be displayed in the *Additional* section.
+The rest of the fields are optional. They keep additional details about the lead (such as the website, name of 
+related :term:`B2B customer <B2B Customer>`, industry, address details, etc.) 
+and may be left empty.
 
-To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
-button.
+.. note::
+
+    Optional fields are implemented based on general B2B practices and may be used as required by your 
+    business aims and processes.
+  
+If you need to record and process any other details of your leads, **custom fields** can be created. Their values will 
+be displayed in the *Additional* section.
+
+.. hint::
+
+    To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
+    button.
 
 Once all the necessary fields have been defined, click the button in the right top corner of the page to save the lead
 in the system.
@@ -60,7 +67,7 @@ in the system.
 .. _user-guide-leads-actions:
 
 Lead Actions 
-^^^^^^^^^^^^^
+------------
 
 The following actions can be performed for the leads:
 
@@ -85,10 +92,10 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 - Delete the lead from the system 
 
-The rest of the actions available depend on the system settings 
-defined in the Communication &  Collaboration section of the 
-"Lead" entity
+The rest of the actions available depend on the system settings defined in the Communication &  Collaboration section 
+of the "Lead" entity
       
+
 .. _user-guide-leads-reports:
 
 Reports with Leads
@@ -96,13 +103,13 @@ Reports with Leads
 
 OroCRM currently comes with a ready-to-use *Leads by Date* report.
 
-*Leads by Date*
-^^^^^^^^^^^^^^^
+Leads by Date
+^^^^^^^^^^^^^
 
-This is a simple but useful report, with which you can see how many leads were created on a specific date for 
+This is a simple but useful report, where you can see how many leads were created on a specific date for 
 all of your channels.
 
-In order to see the report go to *Reports and Segments → Reports → Leads → Leads By Date*
+In order to see the report, go to *Reports and Segments → Reports → Leads → Leads By Date*
 
 It shows:
 
@@ -117,15 +124,17 @@ It shows:
 New custom reports can be added. For more details on the ways to create and 
 customize the reports,  please see the :ref:`Reports guide <user-guide-reports>`.
 
+
 .. _user-guide-leads-workflows:
 
 Using Leads in the Workflows
 ----------------------------
 
-Workflows define rules and guidelines on possible actions/updates related to the entity records. 
+You can use OroCRM's :term:`workflows <Workflow>` to define rules and guidelines on possible actions/updates of Leads 
+in the system. 
 
 Currently, OroCRM comes with a pre-implemented B2B-oriented workflow described in the 
-Sales Processes Workflow guide. 
+:ref:`B2B Sales Process Workflow guide <user-guide-sales-processes>`. 
 
 New customer-specific workflows can also be created, as described in the 
 :ref:`Workflows guide <user-guide-workflow-management-basics>`.

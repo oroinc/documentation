@@ -147,12 +147,12 @@ Define possible workflow steps in the *Designer* section.
   
   .. note::
   
-      Position may be specified with any non-negative integer.
-	  
-	  The step position on the widget depends on the order only (e.g. 0,2,70). 
+    Position may be specified with any non-negative integer.
 
-	  Steps with the same position are displayed in the order they have been performed. If a step with a smaller 
-	  position value has been performed later, steps with higher position values are not displayed in the widget."
+    The step position on the widget depends on the order only (e.g. 0,2,70). 
+
+    Steps with the same position are displayed in the order they have been performed. If a step with a smaller 
+    position value has been performed later, steps with higher position values are not displayed in the widget."
   "**Final**","The flag shall be checked for final steps of the flow"
 
   
@@ -203,7 +203,7 @@ In the **Button preview** you can see how the button will look in the UI.
 
 *Transitions Attributes*
 ^^^^^^^^^^^^^^^^^^^^^^^^
-	
+
 In order to define the attribute settings:
 
 - Go to the *Add Transition → Attributes* 
@@ -216,7 +216,7 @@ In order to define the attribute settings:
 
   "**Entity Field**","Choose attributes of the entity or of its related entities that can/must be defined in the course 
   of the transition.
-  	  
+  
   This is an only mandatory field of the attributes section"
   "**Label**","Use the field if you want to change the way it is displayed in the UI. The system *label* value of the 
   entity is used by default."
@@ -258,7 +258,7 @@ defined for a workflow only from the back-end in the course of integration:
 - Define validation for the data entered during the transition.
 
 - Create attributes for records not related to the entity.
-	
+
 This way, Workflows created from the UI are comparatively simple and aimed at processing of the records already present
 in the system.
 
@@ -327,9 +327,9 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 .. caution::
     
     Each entity may have an unlimited number of workflows related to it, but only one of them can be active. 
-	
-	When a new workflow is activated for an entity, all the workflow data for the entity is reset.
-	
+
+    When a new workflow is activated for an entity, all the workflow data for the entity is reset.
+
 - Clone the workflow: |IcClone|. A copy of the workflow is created and can be customized.
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel:  |IcView|
