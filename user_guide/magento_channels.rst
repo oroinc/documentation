@@ -9,8 +9,8 @@ OroCRM. :ref:`Channels <user-guide-channels>` of Magento type ("Magento Channels
 data collected from Magento-based eCommerce stores.
 
 .. hint::
-    
-    While Magento integration capabilities are pre-implemented, OroCRM can also be integrated with different third-party 
+
+    While Magento integration capabilities are pre-implemented, OroCRM can also be integrated with different third-party
     systems.
 
 For each Magento Channel, you can:
@@ -22,42 +22,42 @@ For each Magento Channel, you can:
   (subject to the synchronization settings) updated in Magento. 
  
 .. _user-guide-magento-entities-entities:
-  
+
 Default Entities of Magento Channel
 -----------------------------------
-There are three basic entities pre-implemented in OroCRM and by default assigned to Magento channels. 
+There are three basic entities pre-implemented in OroCRM and by default assigned to Magento channels.
 
 .. hint::
-    
-    It is possible to add other system and custom entities to the channel, as well as delete most of the default 
-    entities from it, subject to you needs. 
-    
+
+    It is possible to add other system and custom entities to the channel, as well as delete most of the default
+    entities from it, subject to you needs.
+
 The default entities are:
 
-.. csv-table:: 
+.. csv-table::
   :header: "Entity", "Instance Description"
   :widths: 10, 30
 
   "**Web Customer**","Represents a Magento customer data is collected for within the channel. Must be defined 
   for Magento channels."
   "**Shopping Cart**","Keeps details on the Magento Customer's actions with the |WT02|_"
-  "**Order**","Keeps details of items purchased and ordered by the customer within the channel, including store details, 
+  "**Order**","Keeps details of items purchased and ordered by the customer within the channel, including store details,
   personal and banking data, one-time and total credited, paid and taxed amounts, feed-backs, etc."
 
-Details of the entity records are uploaded into OroCRM in the course of synchronization, can be 
-:ref:`processed <user-guide-magento-entities-actions>` from the OroCRM UI and used to create 
+Details of the entity records are uploaded into OroCRM in the course of synchronization, can be
+:ref:`processed <user-guide-magento-entities-actions>` from the OroCRM UI and used to create
 :ref:`reports <user-guide-reports>` and set up :ref:`related workflows <user-guide-magento-entities-workflows>`.
 
 
 .. _user-guide-magento-entities-actions:
 
-Managing Magento Entities 
+Managing Magento Entities
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the 
-:ref:`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>`
+You can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the
+:ref:`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>`.
 
-The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Web Customers 
+The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Web Customers
 (*Customers → Web Customers*), Shopping Carts (*Sales → Shopping Carts*) and Orders (*Sales → Orders*), is calling
 the :ref:`View page <user-guide-ui-components-view-pages>` of their records:  |IcView|
 
@@ -65,8 +65,8 @@ the :ref:`View page <user-guide-ui-components-view-pages>` of their records:  |I
 *Managing Web-Customers*
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-From the :ref:`View page <user-guide-ui-components-view-pages>` of a Web Customer record, you can perform the actions  
-specified in the Communication &  Collaboration section of the entity (*System → Entities → Entity Management/Web 
+From the :ref:`View page <user-guide-ui-components-view-pages>` of a Web Customer record, you can perform the actions
+specified in the Communication &  Collaboration section of the entity (*System → Entities → Entity Management/Web
 Customer*):
 
 .. image:: ./img/magento_entities/view_web_customer.png
@@ -75,15 +75,15 @@ Customer*):
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 From the *View* page of any shopping cart you can
 
-- Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities → 
+- Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities →
   Entity Management/Shopping Cart*):
 
-- Synchronize Data, i.e. upload the latest information for the cart/order from Magento and back (as defined by the 
+- Synchronize Data, i.e. upload the latest information for the cart/order from Magento and back (as defined by the
   synchronization settings).
 
-.. image:: ./img/magento_entities/view_carts.png
+  .. image:: ./img/magento_entities/view_carts.png
 
-.. important:: 
+.. important::
 
     Information for all the carts is updated once in a predefined period (default value is 5 minutes).
     However, it is strongly recommended to update a specific Cart record before you perform any actions with it.
@@ -101,18 +101,18 @@ form.
     "Contacted" can still have the "Open" status (items in the carts have not yet been bought).
 
 .. caution::
-    
+
     You need to enter your credentials when referred to the Magento for the first time in the session.
 
-    
+
 *Managing Shopping Carts*
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 From the :ref:`View page <user-guide-ui-components-view-pages>` of any order you can
 
-- Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities → 
-  Entity Management/Shopping Cart*):
+- Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities →
+  Entity Management/Shopping Cart*).
 
-- Synchronize Data : uploads the latest information for the cart/order from Magento and back (if so is specified by the 
+- Synchronize Data: uploads the latest information for the cart/order from Magento and back (if so is specified by the
   synchronization settings).
 
 .. image:: ./img/magento_entities/view_orders.png
@@ -121,7 +121,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>` of any order you
 
 .. _user-guide-magento-entities-workflows:
 
-Default Workflows with Magento Entities 
+Default Workflows with Magento Entities
 ---------------------------------------
 
 To provide a consistent and customer-oriented approach, you can define a specific workflow within which the actions can be
@@ -132,7 +132,7 @@ for Magento-based shops:
 *Abandoned Shopping Cart* Workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The workflow is aimed at boosting sales from carts. Basically, once the managers sees a cart that has not been 
+The workflow is aimed at boosting sales from carts. Basically, once the managers sees a cart that has not been
 converted into an order, the manager can:
 
 1. Contact the customer. Multiple calls an/or emails can be made/sent.
