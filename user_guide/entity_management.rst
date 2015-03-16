@@ -124,7 +124,7 @@ You can enable attachments for the entity records and define relevant limitation
   
   Define the list of MIME types supported in the field, add each new type on a new line. For example:
   
-.. image:: ./img/entity_management/new_entity_general_MIME_types.png
+.. image:: ./img/entity_management/new_entity_general_mime_types.png
 
 .. important::
 
