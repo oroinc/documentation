@@ -1,17 +1,19 @@
 
 .. _user-guide-field-management:
 
-Entity Fields
-=============
+Create Entity Fields
+====================
 
 Fields are used to collect details of :ref:`entity <user-guide-entity-management-from-UI>` :term:`records <Record>`. 
 For example, a "street name", "zip code" and "building number" may be fields of an "address". 
 
 Subject to your needs, you can add new fields to any :term:`custom entity <Custom Entity>` or 
-an :ref:`extendible <user-guide-entity-management_is_extend>` :term:`system entity <System Entity>`.
-This guide describes the way to create and modify fields.
+an :ref:`extendible <user-guide-entity-management-edit>` :term:`system entity <System Entity>`.
+This guide describes how to create and modify fields.
 
-  
+
+.. _user-guide-field-management-create:
+
 Start Field Creation
 --------------------
 
@@ -166,7 +168,7 @@ The following Yes/No options can be defined for each field
   "**Applicable Organizations**","Defines for what :term:`organizations <Organization>` the custom field will be added 
   to the :term:`entity <Entity>`.
   
-  *All* is chosen by default. Uncheck it to choose specific organizations from the list."
+  *All* is chosen by default. Uncheck to choose specific organizations from the list."
 
 
 .. caution:: 
@@ -185,7 +187,7 @@ defined for them.
 Adding a File Field
 -------------------
 
-Value of a field may be a file, e.g. a document, an agreement, a proposal, etc.
+The value of a field may be a file, e.g. a document, an agreement, a proposal, etc.
 
 .. image:: ./img/entity_management/new_entity_field_file.png
    :scale: 50%
@@ -199,7 +201,7 @@ Value of a field may be a file, e.g. a document, an agreement, a proposal, etc.
   :ref:`export/import <user-guide-entity-management-export-import-common>`.
 
 - The file fields aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be defined for 
-  them. Auditing is not available for actions with the file fields.
+  them. Auditing is not available for actions within the file fields.
 
   
 .. _user-guide-entity-management-create-image:
@@ -207,7 +209,7 @@ Value of a field may be a file, e.g. a document, an agreement, a proposal, etc.
 Adding an Image Field
 ---------------------
 
-Value of a field may be a an image, e.g. the customer's picture or image of a product.
+The value of a field may be an image, e.g. the customer's picture or image of a product.
 
 - Image fields can be only of the *column table* storage type.
 
@@ -235,7 +237,7 @@ Value of a field may be a an image, e.g. the customer's picture or image of a pr
 Adding a Select/Multi-Select Field
 ----------------------------------
 
-Value of a field may be enable users to choose one or several values from the list (select and multi-select type 
+The value of a field may enable users to choose one or several values from the list (select and multi-select type 
 correspondingly). For example, "grade the level of service from 1 to 5" or "choose the time window convenient for you"
 
 - The select and multi-select fields can be only of the *column table* storage type.
@@ -258,7 +260,7 @@ correspondingly). For example, "grade the level of service from 1 to 5" or "choo
   
   - Move it up and down around the list: drag the option by the |IcMove| icon next to the option value.
 
-  - Delete it: click the cross next to the option value. Please note that if you delete an option when editing a field,
+  - Delete it: click the :guilabel:`X` next to the option value. Please note that if you delete an option when editing a field,
     the option will be removed from all the records in the system (where applicable).
 
 - The select and multi-select fields cannot be defined as an identity field for 
@@ -306,11 +308,12 @@ The following is true for all the relations fields:
 One to Many and Many to Many Relations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If "One to many" or "Many to many" type has been chosen for a field, its *General Information* section will contain 
-**Target Entity** property. It specifies to records of which entity record(s) of the chosen entity can be tied.
+If the "One to many" or "Many to many" type has been chosen for a field, its *General Information* section will contain 
+the **Target Entity** property. It specifies to records of which entity record(s) of the chosen entity can be tied.
 
 (For example, we have created a field "Friends" that relates to users, who have become our clients following the 
-recommendations of a specific B2B customer. This is a One to Many relation, as one B2B customer advise many friends). 
+recommendations of a specific B2B customer. This is a One to Many relation, as one B2B customer may advise many 
+friends). 
 
 .. image:: ./img/entity_management/new_entity_field_to_many.png
 
@@ -373,7 +376,7 @@ section").
 Many to One Relations
 ^^^^^^^^^^^^^^^^^^^^^
 
-If "Many to one" type has been chosen for a field, its *General Information* section will contain 
+If the "Many to one" type has been chosen for a field, its *General Information* section will contain the
 **Target Entity** property. It specifies to a record of which entity records of the chosen entity can be tied.
 (For example, many users can belong to the same business unit).
 
@@ -382,7 +385,7 @@ records in the drop-down.
 
 .. image:: ./img/entity_management/new_entity_field_to_one_01.png
 
-For the sake of example, we have created a relation "Business Unit" with
+As an example, we have created a relation "Business Unit" with
 
 - **Target Entity**: Business Unit
 
@@ -391,25 +394,10 @@ For the sake of example, we have created a relation "Business Unit" with
 Now, when creating/editing a User record, you can choose a related business unit from the list. Business Unit records in
 the list are represented with their "Name" values.
 
- 
-Managing Fields
----------------
 
-The following actions are available from the "Action icons" column:
-  
-  - Click |icDelete| button to remove an entity, It will appear only for Custom entities
-  - Click |IcView| to get to the details of a specific entity
-  - Click |IcEdit| to get directly to the edit form
-  - Once any entity has been deleted |IcRest| will appear. Click the icon to restore the removed entity. It will be
-    available until the schema is updated.
 
-This way:
 
-All the properties of Custom fields but their name and type may be edited. The property meanings are the same as when 
-you :ref:`create a field <user-guide-entity-management-create-fields>`.
 
-The list of properties editable for System fields depends on configuration and is created in a way reasonable and safe 
-for the system performance and operation.  
 
 
 .. |IcMove| image:: ./img/buttons/IcMove.png
