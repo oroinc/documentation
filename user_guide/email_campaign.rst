@@ -3,19 +3,19 @@
 Email Campaigns
 ===============
 
-Records of the Email Campaign entity ("Email campaigns") represent mass mailings and keep their general information and 
+Records of the email Campaign entity ("email campaigns") represent mass mailings and keep their general information and 
 settings.
 
-The article describes ways to create and manage E-mail campaigns. 
+The article describes ways to create and manage email campaigns. 
 
 
 .. _user-guide-email-campaigns-create:
 
-Creating a Campaign
---------------------
+Create Email Campaigns
+----------------------
 
-1. Go to the *Email Campaigns* page and click the :guilabel:`Create Email Campaign` button in the top right corner to get 
-   to the *"Create Email Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
+1. Go to the *Email Campaigns* page and click the :guilabel:`Create Email Campaign` button in the top right corner to 
+   get to the *"Create Email Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
 
 2. Define general settings of the campaign:
 
@@ -26,7 +26,7 @@ Creating a Campaign
   :widths: 10, 30
 
   "**Name***","Name used to refer to the campaign in the system."
-  "**Marketing List***","Choose one of available marketing lists. The letter will be sent to Email addresses defined by 
+  "**Marketing List***","Choose one of available marketing lists. The letter will be sent to email addresses defined by 
   the list.   
   More details about the marketing lists are available in the :ref:`Marketing Lists <user-guide-marketing-lists>` 
   guide."
@@ -38,10 +38,10 @@ Creating a Campaign
   
   |email_campaign_schedule|"
   "**Owner***","Limits the list of users that can manage the campaign to those, whose roles allow managing 
-  E-mail campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
+  email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
-Optional fields can be used to define such details as the campaign within which the mailing is done and the way to represent
-Sender Email and Name in the E-mails.  
+Optional fields can be used to define such details as the campaign within which the mailing is done and the way to 
+represent the sender's email address and name in the emails.  
 
 Custom fields may be added, subject to specific business needs. 
 
@@ -55,7 +55,7 @@ There are two mandatory fields that **must** be defined:
   
   "Transport","The field defines the service to be used for the mailing. Out of the box, the only option is OroCRM. 
   Other services can be added in the course of customization."
-  "Template","Choose the :ref:`Email template <user-guide-email-template>` to be used from the drop-down. 
+  "Template","Choose the :ref:`email template <user-guide-email-template>` to be used from the drop-down. 
   
   Please note that you can only see the templates assigned to no entity or to the same entity as the marketing list"
   
@@ -67,10 +67,11 @@ There are two mandatory fields that **must** be defined:
 
 .. _user-guide-email-campaigns-actions:
 
-Campaign Actions
-----------------
+Manage Email Campaigns
+----------------------
 
-The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grid-action-icons>`:
+The following actions are available for an email campaign from the 
+:ref:`grid <user-guide-ui-components-grid-action-icons>`:
 
 .. image:: ./img/marketing/marketing_campaign_action_icons.png
 

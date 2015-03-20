@@ -1,7 +1,7 @@
 .. _user-guide-channels:
 
-Channel Management
-==================
+Channels
+========
 
 :term:`Channels <Channel>` in :term:`OroCRM` represent sources of customers and customer data.
 
@@ -9,18 +9,11 @@ This guide describes how to create and manage channels from the UI.
 
 .. _user-guide-channel-guide-create:
 
-Creating a Channel
-------------------
+Create Channels
+---------------
 
-1. Go to the *System --> Channels* page and click the :guilabel:`Create Channel` button in the top right corner to go
-   to the *Create Channel* page.
-
-2. Define the :ref:`general details <user-guide-channel-guide-general>` of the channel.
-
-3. Define the :ref:`entity <user-guide-channel-guide-entities>` details that will be received from the channel's
-   source.
-
-4. Once you have finished adding the entities, click the button in the top right corner to save it.
+Go to the *System --> Channels* page and click the :guilabel:`Create Channel` button in the top right corner to go
+to the *Create Channel* page and specify its details as described in the sections below: 
 
 
 .. _user-guide-channel-guide-general:
@@ -113,10 +106,15 @@ from the system.
 .. image:: ./img/channel_guide/channels_entities_delete.png
 
 
+.. note::
+
+    Once you have finished adding the entities, click the button in the top right corner to save it.
+
+
 .. _user-guide-channel-guide-actions:
 
-Channel Actions
-----------------
+Manage Channels
+---------------
 
 The following actions can be performed on channels:
 
@@ -152,13 +150,13 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 
 Editing Entities from a Channel
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 
 There may be some situations when there are either not enough default entity fields or too many of them. If this is the
 case, entities may be edited (i.e. the list of fields as well as their type and specific properties may be re-defined).
 This can only be done by properly authorized users. Go to the *"Entities"* section of the channel view page.
 In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| to change the entity settings.
-Please refer to the *"Entity Management"* guide for more information.
+Please refer to the :ref:`Entities <user-guide-entity-management-from-UI>` guide for more information.
 
 .. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png
 

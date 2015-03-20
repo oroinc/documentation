@@ -10,21 +10,15 @@ You'll see a list of all the created reports:
 
 .. image:: /user_guide/img/reports/reports.png
 
-.. _book-reports-create-report:
 
-Creating Reports
-----------------
+Create Reports
+--------------
 
 Go to *Reports and Segments → Manage Custom Reports* and click the :guilabel:`Create Report` button.
 
 The *Create Report* page will appear.
 
-1. Define :ref:`general setting <user-guide-reports-general-settings>` of the report
-
-2. Specify the data to be processed, the method of analysis and filters in the :ref:`Designer 
-   <user-guide-reports-designer>` section.
-   
-3. Define the report chart settings in the :ref:`Chart Designer <user-guide-reports-chart>` section. 
+Define properties of the report, as described in the sections below:
 
 
 .. _user-guide-reports-general-settings:
@@ -276,8 +270,8 @@ That's what we have:
 
 .. _book-reports-view-report:
 
-Viewing a Report
-----------------
+View Reports
+------------
 
 You can access a report in two ways:
 
@@ -308,8 +302,8 @@ button. The data shown above will then look like this:
     "Sales Europe",,0
     "Sales North America",,0
 
-Modifying and Deleting Records
-------------------------------
+Modify and Delete Reports
+-------------------------
 
 When you :ref:`view <book-reports-view-report>`, you can modify or delete
 a report clicking on the appropriate button in the upper right corner. To
@@ -318,8 +312,8 @@ a report when you click the *Delete* button:
 
 .. image:: /user_guide/img/reports/delete-confirm.png
 
-When you click on the *Edit* button, you'll see the form that you already
-saw when :ref:`creating <book-reports-create-report>` the report.
+When you click on the *Edit* button, you'll see the form similar to one used to create the report. You can change and 
+edit the values, as when creating the report.
 
 
 

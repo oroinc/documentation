@@ -23,8 +23,8 @@ For each Magento Channel, you can:
  
 .. _user-guide-magento-entities-entities:
 
-Default Entities of Magento Channel
------------------------------------
+Default Entities of a Magento Channel
+-------------------------------------
 There are three basic entities pre-implemented in OroCRM and by default assigned to Magento channels.
 
 .. hint::
@@ -51,19 +51,19 @@ Details of the entity records are uploaded into OroCRM in the course of synchron
 
 .. _user-guide-magento-entities-actions:
 
-Managing Magento Entities
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Manage Magento Entities
+^^^^^^^^^^^^^^^^^^^^^^^
 
 You can scroll pages, refresh the grid details and reset the grid of Magento entities as described in the
 :ref:`OroCRM UI Elements <user-guide-ui-components-grid-action-buttons>`.
 
 The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Web Customers
 (*Customers → Web Customers*), Shopping Carts (*Sales → Shopping Carts*) and Orders (*Sales → Orders*), is calling
-the :ref:`View page <user-guide-ui-components-view-pages>` of their records:  |IcView|
+the :ref:`View page <user-guide-ui-components-view-pages>` of their records by clicking the |IcView| icon.
 
 
-*Managing Web-Customers*
-^^^^^^^^^^^^^^^^^^^^^^^^
+*Manage Web-Customers*
+^^^^^^^^^^^^^^^^^^^^^^
 
 From the :ref:`View page <user-guide-ui-components-view-pages>` of a Web Customer record, you can perform the actions
 specified in the Communication &  Collaboration section of the entity (*System → Entities → Entity Management/Web
@@ -71,8 +71,8 @@ Customer*):
 
 .. image:: ./img/magento_entities/view_web_customer.png
 
-*Managing Shopping Carts*
-^^^^^^^^^^^^^^^^^^^^^^^^^
+*Manage Shopping Carts*
+^^^^^^^^^^^^^^^^^^^^^^^
 From the *View* page of any shopping cart you can
 
 - Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities →
@@ -105,8 +105,9 @@ form.
     You need to enter your credentials when referred to the Magento for the first time in the session.
 
 
-*Managing Shopping Carts*
-^^^^^^^^^^^^^^^^^^^^^^^^^
+*Managing Orders*
+^^^^^^^^^^^^^^^^^
+
 From the :ref:`View page <user-guide-ui-components-view-pages>` of any order you can
 
 - Perform the actions specified in the Communication &  Collaboration section of the entity (*System → Entities →
