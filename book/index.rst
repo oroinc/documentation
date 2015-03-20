@@ -13,6 +13,7 @@ and technical details.
     search
     data_audits
     importexport
+    security
     jobs
     functional_tests
     configuration

@@ -6,20 +6,20 @@ Email Templates
 Email templates are automatically personalized E-mail patterns. For example, you can make a single template that welcomes
 {username} and each of your subscribers will get a mail send specifically to them. 
 
-The articles describes the ways to create and manage Email templates. 
+The articles describes the ways to create and manage email templates. 
 
 
 .. _user-guide-email-templates-create:
 
-Creating an Email Template
----------------------------
+Creat Email Templates
+---------------------
 
 1. Go to *System → Emails → Templates* page and click :guilabel:`Create Template` button in the top right corner to 
    get to the *"Create Template"* :ref:`form <user-guide-ui-components-create-pages>`.
    
   |email_template_create|
 
-2. Define general settings of the template:
+2. Define the general settings of the template:
 
    The following fields are mandatory and **must** be defined:
   
@@ -35,7 +35,7 @@ Creating an Email Template
 Optional field *"Entity Name"* shall be used to define an :term:`entity <Entity>`, variables whereof can be used 
 in the template. If no entity name is defined, only system variables will be available.
 
-2. Define the Email template. Click on the necessary variable to add drag it to the text box. 
+3. Define the email template. Click on the necessary variable to add drag it to the text box. 
 
 .. image:: ./img/marketing/email_template_ex.png
 
@@ -43,20 +43,20 @@ in the template. If no entity name is defined, only system variables will be ava
 :ref:`tracking code <user-guide-how-to-track>`. 
 *Every time a user follows the link, visit event will be tracked for the campaign.*   
 
-3. You can click :guilabel:`Preview` button to check your template
+4. You can click :guilabel:`Preview` button to check your template
 
 .. image:: ./img/marketing/email_template_preview.png
 
-4. If you are satisfied with the preview, save the template in the system with the button in the top right corner of
+5. If you are satisfied with the preview, save the template in the system with the button in the top right corner of
    the page.
 
 
 .. _user-guide-email-templates-actions:
 
-Template Actions
-----------------
+Manage Email Templates
+----------------------
 
-The following :ref:`actions <user-guide-ui-components-grid-action-icons>` are available for an Email template from 
+The following :ref:`actions <user-guide-ui-components-grid-action-icons>` are available for an email template from 
 the :ref:`grid <user-guide-ui-components-grids>`:
 
 .. image:: ./img/marketing/email_template_actions.png

@@ -7,6 +7,8 @@ End user oriented documentation that explains how to administer and configure ap
     :maxdepth: 2
 
     ui_components
+    entities
+    entity_fields
     export_import
     outlook_sync
     multi_channel_overview
