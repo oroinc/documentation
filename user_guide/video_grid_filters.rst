@@ -4,7 +4,7 @@ Grid Filter Video Guide
 =======================
 
 OroCRM grid filters are conditions that define what records shall be displayed on a grid. Detailed documentation on the
-subject is available in the corresponding :ref:section `<user-guide-ui-components-grids>` of the OroCRM UI Elements 
+subject is available in the corresponding :ref:`section <user-guide-ui-components-grids>` of the OroCRM UI Elements 
 guide.
   
 This video guide will walk you through main cases of the grid filter usage. 
