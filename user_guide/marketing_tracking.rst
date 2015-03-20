@@ -11,8 +11,8 @@ This article describes how to create, manage and view the tracking details.
 
 .. _user-guide-marketing-tracking-websites-create:
 
-Creating a Tracking Websites
-----------------------------
+Create Tracking Websites Records
+--------------------------------
 
 1. Go to *Marketing → Tracking Websites* page and click :guilabel:`Create Tracking Website` button in the top right 
    corner to get to the *Create Tracking Website* :ref:`form <user-guide-ui-components-create-pages>`.
@@ -39,8 +39,8 @@ There are four mandatory fields that **must** be defined:
 
 .. _user-guide-marketing-tracking-websites-actions:
 
-Tracking Websites Actions
--------------------------
+Manage Tracking Websites Records
+--------------------------------
 
 The following actions are available for a tracking websites record from the 
 :ref:`grid <user-guide-ui-components-grids>`:
@@ -57,8 +57,8 @@ The following actions are available for a tracking websites record from the
 
 .. _user-guide-marketing-tracking-websites-view-page:
 
-*Tracking Websites View Page*
------------------------------
+Tracking Websites View Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :ref:`View page <user-guide-ui-components-view-pages>` of a tracking websites contains the following three sections:
 
@@ -88,7 +88,7 @@ item id.*
 *As soon as a user gets to the "Item Details" page of the Website, an "View item" is logged. Value of a "View item" is 
 the item id.*
 
-The way to define the events for tracking is described in more details :ref:`here <user-guide-how-to-track>`
+The way to define the events for tracking is described in more details :ref:`here <user-guide-how-to-track>`.
 
 
 

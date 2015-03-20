@@ -11,8 +11,8 @@ This article describes the ways to create, manage and view the campaign details.
 
 .. _user-guide-marketing-campaigns-create:
 
-Creating a Campaign
---------------------
+Create Campaigns
+----------------
 
 1. Go to *Marketing → Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
    to the *Create Campaign* :ref:`form <user-guide-ui-components-create-pages>`.
@@ -46,7 +46,7 @@ Custom fields may be added, subject to specific business-needs.
 
 .. _user-guide-marketing-campaigns-actions:
 
-Campaign Actions
+Manage Campaigns
 ----------------
 
 The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
@@ -62,8 +62,8 @@ The following actions are available for a campaign from the :ref:`grid <user-gui
 
 .. _user-guide-marketing-campaigns-view-page:
 
-*Campaign View Page*
---------------------
+Campaign View Page
+^^^^^^^^^^^^^^^^^^^
 
 The :ref:`View page <user-guide-ui-components-view-pages>` of a campaign contains the following three sections:
 

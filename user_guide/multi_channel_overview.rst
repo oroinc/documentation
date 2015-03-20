@@ -19,7 +19,7 @@ How It Works
 
 - OroCRM users can create a separate :ref:`Channel <user-guide-channel-guide-create>` for every source of 
   customer-related data. :ref:`Type <user-guide-channel-guide-type>` of this channel indicates to the system what rules 
-  to use for data recieved from the channel. 
+  to use for data received from the channel. 
 
 .. note::
 

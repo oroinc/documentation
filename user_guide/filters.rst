@@ -4,10 +4,15 @@
 Filters
 =======
 
-Filters functionality automatically generates a list, all the records of which meet certain requirements.
+Filters automatically generate a list, all the records of which meet certain requirements.
+
 Basically, you say "I want to see only the records that meet these conditions", specify the conditions and get the 
 list of records.
 
+Along with the :ref:`grid filters <user-guide-ui-components-grid-filters>` that define a set of records displayed,
+you can also define filters for reports and marketing lists, telling the system what records to process. These filters
+are described in the article.
+ 
 Filters are always created for records of a specific :term:`entity <Entity>` specified in the general details of the 
 relevant segment, report of marketing list.
 
@@ -17,7 +22,7 @@ what attributes the record should have to meet the filter conditions.
 :ref:`Conditions Groups <user-guide-filters-condition-groups>` are sets of field conditions that combine
 requirements of field conditions.
 
-:ref:`Segments <user-guide-filters-segments>` are sets of conditions and Conditions Groups.
+:ref:`Segments <user-guide-filters-segments>` are sets of conditions and conditions groups.
 
  
 .. _user-guide-filters-field-conditions:
@@ -27,9 +32,11 @@ Field Conditions
 
 Field conditions specify what attributes the record should have to meet the filter conditions.
 
-To define a field condition 
+To define a field condition:
 
-- Drag *"Field condition"* to the box on the right |field_condition|
+- Drag *"Field condition"* to the box on the right 
+
+  |field_condition|
 
 - Click the* "Choose a field..." link 
 
@@ -172,8 +179,7 @@ Subject to the conjunction with the rest of conditions the list will now contain
    
    Creating and managing Segment is very similar to creating and managing a 
    :ref:`marketing list <user-guide-marketing-lists-create>`. The only difference is that there are no limitations 
-   for the columns (i.e. at least one column must be specified but it can use any field of the entity) 
-
+   for the columns (any field can be used for the column).
    
 
 

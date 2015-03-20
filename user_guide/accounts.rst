@@ -8,14 +8,35 @@ An account can aggregate details of all the :term:`customer identities <Customer
 a 360-degree view of the customer. 
 
 From this article you will learn how to create new account, understand 
-its :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyze its  
+its :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyze their  
 details with OroCRM reports.
+
+Accounts, Channels and Customers
+--------------------------------
+
+For each :term:`channel <Channel>` :ref:`created <user-guide-channel-guide-create>`, there is a set of 
+:term:`entities <Entity>` defined. These entities correspond to types of information collected from the corresponding 
+data source.
+
+One of the entities must represent a term:`customer <Customer>`
+
+Once a customer :term:`record <Record>` is created, it is assigned to an account. Several accounts may 
+be :ref:`merge <user-guide-accounts-merge>` into one, regardless of the channels.( For example, if you have a B2B 
+customer that represents some client of yours, and then this client is buying something from your Magento store)
+
+.. note ::
+
+    Customer record settings and the ways to assign them to an account are specified in the course of customization, 
+    subject to the specific client needs. For example, for :ref:`Magento channels <user-guide-magento-channel>`, a 
+    new account is created for each customer record uploaded to OroCRM in the course of synchronization, whereas for 
+    :ref:`B2B channels <user-guide-magento-channel>` account is a mandatory detail that must be specified when creating 
+    a customer.
 
 
 .. _user-guide-accounts-create:
 
-Create Account from the UI
---------------------------
+Create Accounts
+---------------
 
 - Go to the *Customers → Accounts*
 
@@ -61,27 +82,11 @@ account in the system.
     the :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
 
-Accounts, Channels and Customers
---------------------------------
-
-For each :term:`channel <Channel>` :ref:`created <user-guide-channel-guide-create>`, there is a set of 
-:term:`entities <Entity>` defined that correspond to types of information collected from the corresponding data source.
-One of them must represent a term:`customer <Customer>`
-
-Once a customer :term:`record <Record>` is created, it is assigned to an account. Several accounts may 
-be :ref:`merge <user-guide-accounts-merge>` into one, regardless of the channels.( For example, if you have a B2B 
-customer that represents some client of yours, and then this client is buying something from your Magento store)
-
-.. note ::
-
-    Customer record settings and the ways to assign them to an account are specified in the course of customization, 
-    subject to the specific client needs. For example, for :ref:`Magento channels <user-guide-magento-channel>`, a 
-    new account is created for each customer record uploaded to OroCRM in the course of synchronization, whereas for 
-    :ref:`B2B channels <user-guide-magento-channel>` account is a mandatory detail that must be specified when creating 
-    a customer.
+Manage Accounts
+---------------
 
 Accounts View Page
-------------------
+^^^^^^^^^^^^^^^^^^
 
 The :ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
 
@@ -93,7 +98,7 @@ The :ref:`View page <user-guide-ui-components-view-pages>` consists of several s
 
 .. image:: ./img/accounts/accounts_view_general.png
 
-- **Record Activities**: activities (calls, e-mails and tasks assigned to the account)
+- **Record Activities**: activities (calls, emails and tasks assigned to the account)
 
 .. image:: ./img/accounts/accounts_view_activities.png
 
@@ -107,14 +112,15 @@ The :ref:`View page <user-guide-ui-components-view-pages>` consists of several s
 - **Sections with channel names**: each section contains details of all the customers that are assigned to this 
   account and belong to the specified channel, as described in the 
   :ref:`multichannel functionality description <user-guide-multi-channel-overview>`. 
+  
   Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
   
   In the example below you can see a section of a channel named "B2B Channel" (This is a name of a demo B2B 
   type channel):
   
- - There are three B2B Customers: "Jewel Mart", "A. L. Price", and "PriceRite Warehouse Club"
+  - There are three B2B Customers: "Jewel Mart", "A. L. Price", and "PriceRite Warehouse Club"
 
- - Once one of the customers is chosen, you can see it general details and information on related Leads/Opportunities
+  - Once one of the customers is chosen, you can see it general details and information on related Leads/Opportunities
  
 .. image:: ./img/accounts/accounts_view_channels.png
 
@@ -122,6 +128,7 @@ The :ref:`View page <user-guide-ui-components-view-pages>` consists of several s
 
     Number and names of such sections depends only on the number and names of channel in OroCRM, customer records of 
     which have been assigned to the account.
+
 
 .. _user-guide-accounts-actions:
 
@@ -143,8 +150,8 @@ Collaboration section of the "Account" entity
 .. image:: ./img/accounts/accounts_view_actions.png
 
 
-Account Actions from the Grid. 
-------------------------------
+Account Actions from the Grid 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the :ref:`grid <user-guide-ui-components-grids>`:
 
@@ -162,7 +169,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`:
 .. _user-guide-accounts-merge:
 
 Merging Accounts
-^^^^^^^^^^^^^^^^
+""""""""""""""""
 
 Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
 view of customer activities, regardless of the :term:`channels <Channel>`. This can be useful if, for example, it has 

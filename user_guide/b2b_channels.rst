@@ -15,16 +15,16 @@ By default, B2B Channels are assigned the following entities:
   business-to-business activities. These are usually other businesses, companies and organizations.
   Described in more details in the :ref:`B2B Customers guide <user-guide-system-channel-entities-b2b-customer>`.
    
-- Opportunity: :term:`entity <Entity>` :term:`records <Record>` whereof represent highly probable potential or actual 
+- Opportunity: its :term:`records <Record>` represent highly probable potential or actual 
   sales to a new or established customer.  Described in more detail in the 
   :ref:`Opportunities guide <user-guide-system-channel-entities-opportunities>`.
   
-- Lead: :term:`entity <Entity>` :term:`records <Record>` whereof represent people or businesses that have 
+- Lead: its :term:`records <Record>` represent people or businesses that have 
   authority, budget and interest to purchase goods and/or services from you, where probability of the actual 
   sales is not yet high or impossible to define. Described in more details in the 
   :ref:`Leads guide <user-guide-system-channel-entities-leads>`.
   
-These entities will be added to the entity list by  default once you have selected the channel type; however, they are 
+These entities will be added to the entity list by default once you have selected the channel type; however, they are 
 optional and may be removed.
 
 Custom Entities can also be created for specific customer needs and added to the channel, if there is a need to collect 
