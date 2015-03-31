@@ -19,8 +19,8 @@ End user oriented documentation that explains how to administer and configure ap
     sales_processes_workflow
     email_template
     filters
-    magento_channel_integration
     magento_channels
+    magento_channel_integration
     workflow_management
     marketing
     marketing_campaign
@@ -29,6 +29,13 @@ End user oriented documentation that explains how to administer and configure ap
     marketing_tracking
     email_campaign
     reports
+    activities
+    activities_send_email
+    activities_log_call
+    activities_add_note
+    activities_tasks
+    activities_events
+    activities_cases
 
 
     
