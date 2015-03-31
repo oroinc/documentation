@@ -4,28 +4,43 @@ The Oro Book
 Overview of Platform architecture, design and key features. This section will help to understand better platform design
 and technical details.
 
-.. toctree::
-    :maxdepth: 2
+* :doc:`/book/getting_started`
 
-    installation
-    localization
-    customization
-    search
-    data_audits
-    importexport
-    security
-    jobs
-    functional_tests
-    configuration
-    reports_configuration
-    javascript_modularity
-    frontend_architecture
-    layout
+  * :doc:`/book/installation`
+  * :doc:`/book/configuration`
+  * :doc:`/book/localization`
+  * :doc:`/book/security`
+
+* :doc:`/book/customization`
+
+* :doc:`/book/ui`
+
+  * :doc:`/book/frontend_architecture`
+  * :doc:`/book/javascript_modularity`
+  * :doc:`/book/layout`
+
+* :doc:`/book/data`
+
+  * :doc:`/book/data_audits`
+  * :doc:`/book/reports_configuration`
+
+* :doc:`/book/background_tasks`
+
+  * :doc:`/book/importexport`
+  * :doc:`/book/jobs`
+  * :doc:`/book/search`
+
+* :doc:`/book/functional_tests`
 
 .. toctree::
     :hidden:
 
     getting_started
+    customization
+    ui
+    data
+    background_tasks
+    functional_tests
 
 TODO List
 ---------

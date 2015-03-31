@@ -1,8 +1,8 @@
 .. index::
     single: Search
 
-Search
-======
+Dealing with the Search Index
+=============================
 
 As part of the Oro Platform, the `SearchBundle`_ allows you to create an advanced
 search index for mapped objects and to perform advanced queries on the indexed
