@@ -1,4 +1,4 @@
-Help to Translate The Oro Project
+How to Translate the Oro Project
 ==================================
 
 The Oro Platform supports many internationalization functions including multiple languages and translations.

@@ -12,24 +12,15 @@ October 1 with addresses in California.
 
 .. _user-guide-marketing-lists-create:
 
-Creating a Marketing List
--------------------------
+Create Marketing Lists
+----------------------
 
-1. Go to the *Marketing → Marketing Lists* and click :guilabel:`Create Marketing List` button 
-   in the top right corner of the grid.
+Go to the *Marketing → Marketing Lists* and click :guilabel:`Create Marketing List` button 
+in the top right corner of the grid.
    
-   The Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
+The Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
 
-2. Define :ref:`general details <user-guide-marketing-marketing-list-create-general>` of the marketing list.
-
-3. Define a set of *Filters* used to generate the list.
-  
-4. Choose the :ref:`columns <user-guide-marketing-marketing-list-create-columns>` that will be visible on the 
-   :ref:`View page <user-guide-marketing-list-view-page>` of the list and available to third-party systems after 
-   integration.
-    
-5. Save the campaign in the system with the button in the top right corner of the page.
-  
+Define the list settings, as described in the sections below:
 
 .. _user-guide-marketing-marketing-list-create-general:
   
@@ -126,9 +117,14 @@ Use action icons in the last column to edit the grid:
 - Change the column position, dragging the column by the |IcMove| icon
 
 
+.. hint::
+
+    Save the list in the system with the button in the top right corner of the page.
+
+
 .. _user-guide-marketing-lists-actions:
 
-Marketing List Actions
+Manage Marketing Lists
 ----------------------
 
 The following actions are available for a marketing list from the :ref:`grid <user-guide-ui-components-grids>`
@@ -142,12 +138,10 @@ The following actions are available for a marketing list from the :ref:`grid <us
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the list :  |IcView| 
 
 
-
-
 .. _user-guide-marketing-list-view-page:
 
 Marketing Lists View Page
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ./img/marketing/list_view_page.png
 
@@ -160,8 +154,8 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 - Grid of the list
 
 
-Grid of the Marketing List
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Marketing List Grid
+^^^^^^^^^^^^^^^^^^^
 
 The grid contains:
 

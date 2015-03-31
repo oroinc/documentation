@@ -9,7 +9,7 @@ a delivery are opportunities.
 
 In order to add and process details of opportunities in OroCRM use Opportunity records you need to have at least one 
 :term:`Channel` to which the Opportunity entity is assigned, as described in the 
-ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
+:ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
 
 From this article you will learn how to create new opportunities, manage existing opportunities, analyze details of the 
 opportunity records with OroCRM reports and use opportunities in workflows.
@@ -17,8 +17,8 @@ opportunity records with OroCRM reports and use opportunities in workflows.
 
 .. _user-guide-opportunities-create:
 
-Create Opportunities from the UI
---------------------------------
+Create Opportunities
+--------------------
 
 - Go to the *Sales → Opportunities*
 
@@ -68,8 +68,8 @@ opportunity in the system.
 
 .. _user-guide-opportunities-actions:
 
-Opportunity Actions 
--------------------
+Manage Opportunities 
+--------------------
 
 The following actions can be performed for the opportunities:
 
@@ -88,15 +88,13 @@ From the :ref:`grid <user-guide-ui-components-grids>`:
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
-.. image:: ./img/opportunities/opportunity_view.png
+.. image:: ./img/opportunities/opportunity_view_actions.png
   
 - Get to the *"Edit"* form of the opportunity
-
 
 The rest of the actions available depend on the system settings defined in the Communication &  Collaboration section 
 of the "Opportunity" entity
 
-.. image:: ./img/opportunities/opportunity_view_actions.png
 
       
 .. _user-guide-opportunities-reports:
@@ -156,10 +154,12 @@ It shows:
 Use the *period* filter to choose the period length:
 
 .. image:: ./img/opportunities/opportunities_report_by_period_filter.png
+   :scale: 30%
 
+.. hint::
 
-New custom reports can be added. For more details on the ways to create and 
-customize the reports,  please see the :ref:`Reports guide <user-guide-reports>`.
+    New custom reports can be added. For more details on the ways to create and 
+    customize the reports,  please see the :ref:`Reports guide <user-guide-reports>`.
 
 
 .. _user-guide-opportunities-workflows:

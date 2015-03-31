@@ -1,3 +1,4 @@
+.. _user-guide-export-import:
 
 Import and Export Functionality
 ===============================
@@ -11,7 +12,7 @@ in the top right corner of the grid.
 .. _user-guide-import:
 
 Import
--------
+------
 
 - Click |Bdropdown| on the  :guilabel:`Import` button
 

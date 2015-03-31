@@ -5,12 +5,8 @@ Sales Processes Workflow
 ========================
 
 To provide consistent and unified approach, you can define a specific workflow within which the actions can be
-performed for each lead and/opportunity on OroCRM. The following workflow is pre-implemented in OroCRM
-for B2B Channels:
-
-
-B2B Sales Process Workflow
---------------------------
+performed for each lead and/opportunity on OroCRM. The *Sales Processes* workflow is pre-implemented in OroCRM
+for B2B Channels.
 
 The workflow is aimed at creation of a unified approach towards processing and development of sales processes from their
 initiation to completion. According to the workflow, the following actions are available for the manager:

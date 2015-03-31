@@ -97,8 +97,11 @@ Glossary
    Order
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent actual Magento order
 
+   Organization
+      The highest level of the system permissions grouping. Different roles and permission settings 
+      can be defined for different organization records.
       
-	 
+ 
 
 
 .. |WT02| replace:: Shopping Carts

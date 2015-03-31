@@ -42,7 +42,7 @@ The following fields are mandatory and **must** be defined:
   Choose from the drop-down or list, or create a new accounts, as described in the  
   :ref:`Accounts guide <user-guide-accounts-create>`."
 
-The rest of the fields are **optional**. They keep additional details about the customer (such as its term:`tags <Tag>`
+The rest of the fields are **optional**. They keep additional details about the customer (such as its :term:`tags <Tag>`
 and address details) and may be left empty.
 
 .. note::
@@ -64,7 +64,7 @@ customer in the system.
 
 .. _user-guide-customers-actions:
 
-B2B Customer Actions 
+Manage B2B Customers 
 --------------------
 
 The following actions can be performed for B2B customers:
@@ -81,7 +81,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`:
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
-.. image:: ./img/b2b_customers/customer_view.png
+.. image:: ./img/b2b_customers/customer_view_actions.png
   
 - Get to the *"Edit"* form of the customer
 
@@ -90,7 +90,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 The rest of the actions available depend on the system settings defined in the Communication &  Collaboration section 
 of the "B2B Customer" entity
 
-.. image:: ./img/b2b_customers/customer_view_actions.png
+
 
       
 .. _user-guide-customers-reports:

@@ -49,8 +49,8 @@ attributes may be "Name" that must be defined after transition "Start Writing" a
 be changed after "Approved"
 
  
-Creating a Workflow in the UI
------------------------------
+Create Workflows in the UI
+--------------------------
 
 .. hint:: 
 
@@ -307,11 +307,11 @@ subject to the *Workflows → General → Show Ordered* and *Workflows → Desig
 .. image:: ./img/workflows/wf_display_widget.png
 
 
-Managing Workflows
-------------------
+Manage Workflows
+----------------
 
-Managing System Workflows
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Manage System Workflows
+^^^^^^^^^^^^^^^^^^^^^^^
 
 System workflows are pre-implemented in the system and are of high importance for proper system functioning, thus their
 management from the UI is limited. 
@@ -341,8 +341,8 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 You can deactivate, activate and clone the workflow with corresponding action buttons in the top right of the page. 
 
 
-Managing Custom Workflows
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Manage Custom Workflows
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Copies of the system workflows and workflows created in the UI from the scratch are custom workflows. 
 

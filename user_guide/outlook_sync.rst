@@ -68,7 +68,7 @@ Outlook 2010+
 
     Please note that the following factors can influence the ORO CRM Outlook add-in performance
         
-    - E-mail archiving
+    - Email archiving
     
     - Antivirus
     
@@ -185,7 +185,7 @@ The following fields of an OroCRM Contact record are mapped to the following fie
   the both first name and last name in OroCRM."
   "Name Suffix","Name Suffix",""
   "Description","Notes",""
-  "Email","Email","All the existing Emails are mapped."
+  "Email","Email","All the existing email addresses are mapped."
   "Phone","Primary Phone","Only the first OroCRM phone number is mapped."
   "Job Title","Job Title",""
   "Birthday","Birthday",""

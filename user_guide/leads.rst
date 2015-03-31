@@ -10,7 +10,7 @@ examples of a lead.
 
 In order to save and process details of different leads in OroCRM, you need to have at least one 
 :term:`Channel`, for which the Lead entity is assigned, as described in the 
-ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
+:ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
 
 From this article you will learn how to create new leads, manage existing leads, analyze details of the lead records 
 with OroCRM reports and use leads in workflows.
@@ -18,8 +18,8 @@ with OroCRM reports and use leads in workflows.
 
 .. _user-guide-leads-create:
 
-Create Leads from the UI
-------------------------
+Create Leads
+------------
 
 - Go to the *Sales → Leads*
 
@@ -51,14 +51,13 @@ and may be left empty.
 
     Optional fields are implemented based on general B2B practices and may be used as required by your 
     business aims and processes.
-  
-If you need to record and process any other details of your leads, **custom fields** can be created. Their values will 
-be displayed in the *Additional* section.
 
 .. hint::
 
-    To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
-    button.
+    If you need to record and process any other details of your leads, custom :term:`fields <Field>` can be created, as 
+    described in the :ref:`Entity Fields guide <user-guide-field-management-create>`. 
+    Custom fields are displayed in the *Additional* section.
+
 
 Once all the necessary fields have been defined, click the button in the right top corner of the page to save the lead
 in the system.
@@ -66,7 +65,7 @@ in the system.
 
 .. _user-guide-leads-actions:
 
-Lead Actions 
+Manage Leads 
 ------------
 
 The following actions can be performed for the leads:
