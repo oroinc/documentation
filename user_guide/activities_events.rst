@@ -32,13 +32,13 @@ The *Add Event* action will be available for records of entities with "Calendar 
   :widths: 10, 30
 
   "**Title***","The event name. Must be defined."
-  "Start","The time of the event start." 
-  "End","The time of the event end."
-  "All day event","The check-box to define if the event is of all-day nature."
-  "Color","Defines the color to be used in the user's calendar."
-  "Guest","Defines users, for whom the event is created. Choose the user records from the drop-down. Any amount of users
+  "**Start***","The time of the event start. Must be specified." 
+  "**End***","The time of the event end. Must be specified."
+  "**All day event**","The check-box to define if the event is of all-day nature."
+  "**Color**","Defines the color to be used in the user's calendar."
+  "**Guests"**,"Defines users, for whom the event is created. Choose the user records from the drop-down. Any amount of users
   can be chosen."
-  "Reminders","Defines if a message must be sent to the users defined in the *Guests* field before the event.
+  "**Reminders**","Defines if a message must be sent to the users defined in the *Guests* field before the event.
   Click the :guilabel:`Add` button to add a reminder.
 
   - Define if the message shall be an email or a flash message and how long before the time defined in the *Start* it
@@ -121,7 +121,7 @@ View and Manage Events
 
 .. image:: ./img/activities/assign_events_cal_add.png  
 
-- From any of the girds above, you can manage the events using the action icons:
+- From any of the grids above, you can manage the events using the action icons:
 
   - Delete the task: |IcDelete|
 

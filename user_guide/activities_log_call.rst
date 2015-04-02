@@ -25,7 +25,7 @@ The *Log Call* action will be available for records of entities with "Calls" act
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "Owner","Limits the list of users that can manage the log (view, edit) to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the log (view, edit) to users, whose roles allow managing 
   calls assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
 
   By default is set to the user logging the call.  
@@ -33,16 +33,16 @@ The *Log Call* action will be available for records of entities with "Calls" act
   To clear the field, click the :guilabel:`x` button. 
   
   You can choose another owner from the list."
-  "Subject","Topic of the call."
-  "Additional comments","Record any call details meaningful."
-  "Call date & time","Time when the call was made. Be default is set to the time when the call is logged."
-  "Phone number","Number the call was made to. 
+  "**Subject***","Topic of the call."
+  "**Additional comments**","Record any call details meaningful."
+  "**Call date & time***","Time when the call was made. Be default is set to the time when the call is logged."
+  "**Phone number***","Number the call was made to. 
  
   The field is by default filled with the phone number of one of the contacts assigned to the record (if any).
 
   To clear the field, click the :guilabel:`x` button." 
-  "Direction","Choose if the call was outgoing or ingoing. The field is by default set to *Outgoing*."
-  "Duration","Define how long the call was."
+  "**Direction***","Choose if the call was outgoing or ingoing. The field is by default set to *Outgoing*."
+  "**Duration**","Define how long the call was."
 
 
 For example, the email we created at the previous step was not sent due to an error in the address. We have called 
@@ -83,7 +83,7 @@ View and Manage Calls
    The ability to view and edit the calls depends on specific roles and permissions defined for them in 
    the system. 
    
-- All the calls can be viewed for the Calls grid
+- All the calls can be viewed from the Calls grid.
 
 - All the calls logged for a record are displayed and can be reached from the *Record Activities* section on the 
   View page:
@@ -95,7 +95,7 @@ View and Manage Calls
 .. image:: ./img/activities/log_call_view_detailed.png
 
 
-- From any of the girds above, you can manage the tasks using the action icons:
+- From any of the grids above, you can manage the tasks using the action icons:
 
   - Delete the call: |IcDelete|
 

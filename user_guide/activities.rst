@@ -23,14 +23,15 @@ business needs. Follow the links to learn more about the following activities av
 - :ref:`Add Event and Assign Event <user-guide-activities-events>`: create a calendar event related to the record and 
   assign it to a user.
 
-- :ref:`Create Case <user-guide-activities-cases>`: specify a customer-related problem, assigne it to a user 
+- :ref:`Create Case <user-guide-activities-cases>`: specify a customer-related problem, assign it to a user 
   (if applicable) and monitor its status.
 
-- Create Contact Request: keep track of request to OroCRM from users of third-party applications.
+- :ref:`Create Contact Request <user-guide-activities-requests>`: keep track of request to OroCRM from users of 
+  third-party applications.
 
-- Add Comment: add free text comments to the activity records.
+- :ref:`Add Comment <user-guide-activities-comments>`: add free text comments to the activity records.
 
-Each of the activities and their logics are described in more details in the relevant sections.
+Click the links to see more detailed description of every activity and the ways to manage it. 
 
 
 .. _user-guide-activities-enable:
@@ -55,9 +56,11 @@ Once such an activity has been enabled, it will appear in the
 
 .. image:: ./img/ui_components/view_action_buttons_2.png
 
-- Cases are always available and can be can be added from the *Create Case*
-  form under *Activities → Cases* as described in the relevant :ref:`guide <user-guide-activities-cases>`.
- 
+- Cases are always available and can be added to the system as described in the relevant 
+  :ref:`guide <user-guide-activities-cases>`.
+
+- Contact requests are always available and can be added to the system as described in the relevant 
+  :ref:`guide <user-guide-activities-requests>`.  
 
 .. note::
 

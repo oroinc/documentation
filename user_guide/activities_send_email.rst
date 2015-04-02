@@ -26,8 +26,8 @@ The *Send Email* action will be available for records of entities with "Emails" 
   To clear the field, click the :guilabel:`x` button. 
   
   If the field is clear, you can enter another email address. The cannot be empty and only one address can be defined."
-  "To","Recipients of the email.  The field is by default filled with the primary email address of one of the contacts 
-  assigned to the record (if any).
+  "**To, Cc and Bc**","Recipients of the email.  The field is by default filled with the primary email address of one of 
+  the contacts assigned to the record (if any).
 
    To clear the field, click the :guilabel:`x` button. 
    
@@ -35,10 +35,10 @@ The *Send Email* action will be available for records of entities with "Emails" 
    email.
    
    At least one of the fields (*To*, *Cc* or *Bcc* must be filled)"
-   "Subject","Topic of the email. The field must be filled."
-   "Apply template","You can choose an :ref:`email template <user-guide-email-template>` to use from the drop-down."
-   "Type","Define if you want to use an html or a plain text for the email. The type is be default set to html."
-   "Body","Define the email body"
+   "**Subject***","Topic of the email. The field must be filled."
+   "**Apply template**","You can choose an :ref:`email template <user-guide-email-template>` to use from the drop-down."
+   "**Type***","Define if you want to use an html or a plain text for the email. The type is be default set to html."
+   "**Body**","Define the email body"
    
 For example, we have created an Email for the contact Jeffrey Maynard:
 - The "From" field was automatically filled with email address of the user John Doe

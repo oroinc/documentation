@@ -34,23 +34,23 @@ The *Add Task* action will be available for records of entities with "Tasks" act
   :widths: 10, 30
 
   "**Subject***","The task title. Must be defined."
-  "Description","A free text tab. Contains the task description. The field may be left empty."
-  "Due date","Defines the date the task is due from the calendar (if any)."
-  "Priority","Defines if the task priority. The possible values are: 
+  "**Description**","A free text tab. Contains the task description. The field may be left empty."
+  "**Due date**","Defines the date the task is due from the calendar (if any)."
+  "**Priority***","Defines if the task priority. The possible values are: 
   
   - *Low*
   - *Normal*
   - *High*
   
   The field is by default set to *Normal*."
-  "Assigned To","Choose the user, to whom the task is assigned. The field is by default filled with he user, creating 
-  the task."
+  "**Assigned To***","Choose the user, to whom the task is assigned. The field is by default filled with he user, 
+  creating the task."
   "Reminders","Defines if a message must be sent to the user defined in the *Assigned to* field with regard to the task.
   
   Click the :guilabel:`Add` button to add a reminder.
 
-   - Define if the message shall be an email or a flash message and how long before the time defined in the *Due date* it
-     shall be sent. 
+   - Define if the message shall be an email or a flash message and how long before the time defined in the *Due date* 
+     it shall be sent. 
 
   Reminders cannot be defined if the due date hasn't been defined."
    
@@ -130,7 +130,7 @@ View and Manage Tasks
 
 .. image:: ./img/activities/assign_task_manage.png
 
-- From any of the girds above, you can manage the tasks using the action icons:
+- From any of the grids above, you can manage the tasks using the action icons:
 
   - Delete the task: |IcDelete|
 
