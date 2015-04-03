@@ -94,7 +94,7 @@ View and Manage Cases
 
 - From any of the grids above, you can manage the cases using the action icons:
 
-  - Delete the task: |IcDelete|
+  - Delete the case: |IcDelete|
 
   - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the case: |IcEdit|
 

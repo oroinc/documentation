@@ -6,8 +6,8 @@ Contact Requests
 Contact requests correspond to user requests for OroCRM support, including partnership proposals, complaints, additional 
 information or assistance requests, etc.   
 
-The contact requests may be created directly in the OroCRM or come from an embedded form within a third-party 
-application.
+The contact requests may be created directly in the OroCRM or come from an :ref:`embedded form <admin-embedded-forms>`
+within a third-party application.
 
 Create a Contact Request from OroCRM
 ------------------------------------
@@ -44,7 +44,7 @@ Contact Request can be created from the Contact Requests grid:
   set to *Other*"
   "**Comment***","Actual text of the request. Must be filled."
 
-4. Click the button in the top right corner to save the case.
+4. Click the button in the top right corner to save the request.
   
 For example, there was a request from Mr. Jack Johnson, representative of the General Ltd. company who was interested in
 the OroCRM multichannel functionality. 
@@ -55,7 +55,7 @@ the OroCRM multichannel functionality.
 Create a Contact Request from a Third-Party Application
 -------------------------------------------------------
 
-Add the CSS defined in the *System → Integrations → Embedded Forms* to your site. 
+Add the code defined for the form to your site, as described in the :ref:`Embedded Forms guide <admin-embedded-forms>`. 
 Use the forms of the "Magento Contact Us Request" type for the Magento-based businesses and of the "Contact Request"
 type for the other websites. Every time a user has filled the form it will be added to the Contact Requests grid in the
 Oro CRM.
@@ -63,8 +63,6 @@ Oro CRM.
 .. note::
 
     Other contact request types can be developed in the course of integration, subject to your specific business needs.
-
-Please see the :ref:`Embedded Forms guide <admin-embedded-forms>` for more details.
 
 
 View and Manage Contact Requests
@@ -80,11 +78,11 @@ View and Manage Contact Requests
 
 - From the gird, you can manage the Contact Request using the action icons:
 
-  - Delete the task: |IcDelete|
+  - Delete the request: |IcDelete|
 
-  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the case: |IcEdit|
+  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the request: |IcEdit|
 
-  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the case:  |IcView|
+  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the request:  |IcView|
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png

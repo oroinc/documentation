@@ -17,7 +17,13 @@ Add and View Comments
 Once an activity has been created, comment can be added to it from its Edit page or from the View page of a record the
 activity is related to.
 
-For example, if an activity has been related to a user, you can:
+.. caution::
+
+   The ability to view and write comments depends on the permissions and role settings defined in the system for the 
+   Comment entity.
+
+
+So, if an activity has been related to a user, you can:
 
 - View the activity details, i.e.:
 
@@ -34,6 +40,9 @@ For example, if an activity has been related to a user, you can:
 
 - Click the :guilabel`Add Comment` button to save the comment.
 
+.. hint::
+
+    You can :ref:`edit <user-guide-entity-management-edit>` the *Comment* entity and add new fields, if required.
 
 For example, there was a task "Email change needed" assigned to Ellen Rowel to change the Email address of 
 Mr. Jeffrey Maynard.
@@ -59,14 +68,13 @@ Mr. Jeffrey Maynard.
 
   .. image:: ./img/activities/comments_05.png 
 
-  
-.. caution::
-
-   The ability to view and write comments depends on the permissions and role settings defined in the system for the 
-   Comment entity.
-
    
-Add and View Case Comments
---------------------------
+Case Comments
+-------------
 
-Case comments work in a similar manner, however 
+Case comments work in a similar manner, however additional check-box "Make Public" is available to define if the comment
+shall be public on :ref:`Zendesk <user-guide-zendesk-integration>`. 
+
+  .. image:: ./img/activities/comments_case.png 
+
+Settings of the roles and fields shall be defined for the "Case Comment" entity.
