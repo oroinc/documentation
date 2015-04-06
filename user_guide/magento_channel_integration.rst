@@ -17,7 +17,7 @@ This article describes how to define and edit the integration and synchronizatio
 
 On the Magento Side
 -------------------
-
+u
 The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through 
 the MagentoConnect.
 
@@ -138,7 +138,7 @@ Define the following details in the *"General"* section:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Name***","The configuration name ued to refer to the configuration within the system."
+  "**Name***","The configuration name used to refer to the configuration within the system."
   "**SOAP WSDL URL***","A URL of the SOAP v.2 WSDL source (this is the URL of your Magento installation plus
   **api/v2_soap/?wsdl=1**). For example, if your installation were available at
   *http://example.com/magento/index.php/*, the SOAP WSDL URL would be
