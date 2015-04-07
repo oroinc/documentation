@@ -44,3 +44,12 @@ Learn about our development process and how you can contribute to the Oro Platfo
     :maxdepth: 1
 
     community/index
+
+The Oro Bundles
+---------------
+
+Learn more about all the bundles that are available from the bundles section:
+
+.. toctree::
+
+    /bundles
