@@ -11,6 +11,8 @@ End user oriented documentation that explains how to administer and configure ap
     entity_fields
     export_import
     outlook_sync
+    zendesk
+    magento_channel_integration
     multi_channel_overview
     channel_guide
     accounts
@@ -22,7 +24,6 @@ End user oriented documentation that explains how to administer and configure ap
     email_template
     filters
     magento_channels
-    magento_channel_integration
     workflow_management
     marketing
     marketing_campaign
@@ -38,6 +39,9 @@ End user oriented documentation that explains how to administer and configure ap
     activities_tasks
     activities_events
     activities_cases
+    activities_cont_requests.rst
+    activities_comments
+    emb_forms
 
 
     

@@ -51,7 +51,7 @@ Mr. Jeffrey Maynard.
 
 .. image:: ./img/activities/comments_01.png  
 
-  - Then she went to the View page of the task and left a comment.
+- Then she went to the :ref:`View page <user-guide-ui-components-view-pages>` page of the task and left a comment.
 
 .. image:: ./img/activities/comments_02.png  
 
@@ -59,7 +59,7 @@ Mr. Jeffrey Maynard.
 
 .. image:: ./img/activities/comments_03.png 
 
-  - Then he left a comment and attached Maynard's profile to it.
+- Then he left a comment and attached Maynard's profile to it.
   
 .. image:: ./img/activities/comments_04.png 
 

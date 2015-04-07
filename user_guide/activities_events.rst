@@ -36,14 +36,14 @@ The *Add Event* action will be available for records of entities with "Calendar 
   "**End***","The time of the event end. Must be specified."
   "**All day event**","The check-box to define if the event is of all-day nature."
   "**Color**","Defines the color to be used in the user's calendar."
-  "**Guests"**,"Defines users, for whom the event is created. Choose the user records from the drop-down. Any amount of users
-  can be chosen."
+  "**Guests**","Defines users, for whom the event is created. Choose the user records from the drop-down. Any amount 
+  of users can be chosen."
   "**Reminders**","Defines if a message must be sent to the users defined in the *Guests* field before the event.
   Click the :guilabel:`Add` button to add a reminder.
 
   - Define if the message shall be an email or a flash message and how long before the time defined in the *Start* it
     shall be sent."
-   
+
 For example, we want Ellen Rowell from the sales and Michael Buckley from the marketing to be present at the meeting 
 with a new contact from the Cal Stereo company. We have chose red color to display the event in the users' calendars.
 

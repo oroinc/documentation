@@ -100,7 +100,10 @@ Glossary
    Organization
       The highest level of the system permissions grouping. Different roles and permission settings 
       can be defined for different organization records.
-      
+
+   User
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person or group of people using the 
+      OroCRM using the same credentials. 
  
 
 

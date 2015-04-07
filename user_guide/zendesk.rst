@@ -1,5 +1,5 @@
 
-.. _user-guide-zendesk-channel-integration:
+.. _user-guide-zendesk-integration:
 
 Integration with Zendesk
 ========================
@@ -61,7 +61,8 @@ Define the following mandatory details in the *"General"* section:
   "**URL***","A URL of your Zendesk account (e.g. https://username.zendesk.com)."
   "**API Email***","The email used to register your Zendesk account."
   "**API Token***","The API token generated and/or copied on the Zendesk side as described above."
-  "**Default Zendesk User Email**","The email used for the :ref:`default Zendesk user in OroCRM`."
+  "**Default Zendesk User Email**","The email used to assigned tickets created from OroCRM cases, if there is no Zendesk
+  user with an email that matches the primary email of the user the case is assigned to."
   "**Owner**","Limits the list of users that can manage the integration to users, whose roles allow 
   managing integration assigned to the owner (e.g. the owner, members of the same business unit, system administrator, 
   etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
@@ -96,7 +97,7 @@ has been changed from the both Zendesk and OroCRM, the Zendesk changes will take
 Activate the Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Initially the integration is inactive. In order to activate it, click the Activate button in the  
+Initially the integration is inactive. In order to activate it, click the :guilabel:`Activate` button in the  
 :ref:`View page <user-guide-ui-components-view-pages>`.
 
 Edit the Integration
@@ -143,7 +144,13 @@ First Synchronization from Zendesk to OroCRM
 
   "Subject","Subject", "Can be used to find the ticket/case in the grid"
   "Description","Description","Is also added as the first public comment for the both OroCRM case and Zendesk ticket"
-  "Assignee","Assigned to",""
+  "Assignee","Assigned to","The email address of the assignee is checked against primary emails of OroCRM :term:`User` 
+  records:
+
+      - If there is a matching email, the User is mapped to the Assignee field value.
+      - If there is no matching email, the integration Owner is mapped to the Assignee field value.
+  
+  "
   "Description","Description", "Is also added as the first public comment for the both OroCRM case and Zendesk ticket"
   "Priority","Priority","The values are mapped as follows:
   
@@ -171,9 +178,6 @@ First Synchronization from Zendesk to OroCRM
   .. list-table::
    :widths: 10 30
    :header-rows: 1
- 
-   * - Zendesk
-     - OroCRM
  
    * - Zendesk
      - OroCRM
@@ -248,11 +252,79 @@ First Synchronization from Zendesk to OroCRM
   "Priority","Zendesk priority defined for the ticket copied (no mapping to the OroCRM priorities)."
   "Problem","Zendesk value of the Problem field copied, if any."
   "Collaborators","Zendesk value of the Collaborators field copied, if any."
+
+Synchronization from OroCRM to Zendesk
+""""""""""""""""""""""""""""""""""""""
+
+If two-way synchronization is enabled, :guilabel:`Piblish to Zendesk` will be available in the Case 
+:ref:`View page <user-guide-ui-components-view-pages>`. Click the button and the case will be submitted to Zendesk.
+
+The case fields are mapped at the Zendesk ticket fields as follows:
+
+.. csv-table::
+  :header: "OroCRM case field", "Zendesk field", "Comments"
+  :widths: 20, 20, 40
+
+  "Subject","Subject", "Can be used to find the ticket/case in the grid"
+  "Description","Description","Is also added as the first public comment for the both OroCRM case and Zendesk ticket"
+  "Assigned to","Assignee","The email address of the *Assigned to* user records is checked against emails of Zendesk 
+  users:
+
+      - If there is a matching email, the ticket is assigned to the related user.
+      - If there is no matching email, the ticket is assigned to the user with Default Zendesk User Email.
+  
+  "
+  "Description","Description", "Is also added as the first public comment for the both OroCRM case and Zendesk ticket"
+  "Priority","Priority","The values are mapped as follows:
+  
+  .. list-table::
+   :widths: 10 30
+   :header-rows: 1
+ 
+   * - OroCRM
+     - Zendesk
+    
+   * - Low
+     - Low
+
+   * - Normal
+     - Normal
+
+   * - High
+     - High
+
+  "
+  "Status","Status","The values are mapped as follows:
+  
+  .. list-table::
+   :widths: 10 30
+   :header-rows: 1
+ 
+   * - OroCRM
+     - Zendesk
+    
+   * - Open
+     - Open
+
+   * - In progress
+     - Pending
+
+   * - Resolved
+     - Solved
+
+   * - Closed
+     - Solved
+  "
+
+- After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in OroCRM.
+  
+Further Synchronization
+"""""""""""""""""""""""
   
 - If some ticket details of a Zendesk ticket have been changed after the initial synchronization, the corresponding 
-  OroCRM case details will also be updated.
+  OroCRM case details will also be updated in the course of the nearest synchronization.
 - If some ticket details of an OroCRM case have been changed after the initial synchronization, the corresponding 
-  Zendesk ticket details will also be updated (if the two-way synchronization is enabled).
+  Zendesk ticket details will also be updated automatically (if the two-way synchronization is enabled).
 - If the same details have been updated in a related Zendesk ticket and OroCRM case and the two-way synchronization is 
   enabled, the synchronization priority settings will be applied.
 
