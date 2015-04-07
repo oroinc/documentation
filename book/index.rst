@@ -7,6 +7,7 @@ and technical details.
 .. toctree::
     :maxdepth: 2
 
+    introduction
     installation
     localization
     customization
