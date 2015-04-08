@@ -10,6 +10,12 @@ related articles is provided below the description.
 `AccountBundle`_ (OroCRM)
     Management of customer account entities.
 
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Book: :doc:`/book/emails`
+
 `ActivityBundle`_ (Oro Platform)
     Assign activities (such as calls, emails and tasks) to other entities.
 
@@ -19,6 +25,12 @@ related articles is provided below the description.
 `AddressBundle`_ (Oro Platform)
     Base definition and implementation of interfaces for addresses and address related data like
     country, region, phone and email.
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Book: :doc:`/book/emails`
 
 `AnalyticsBundle`_ (OroCRM)
     Provides tools to analyze data and to visualize the analysis results.
@@ -99,6 +111,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/emails`
         * User guide: :doc:`/user_guide/outlook_sync`
 
 `ContactUsBundle`_ (OroCRM)
@@ -149,6 +162,12 @@ related articles is provided below the description.
 
 `EmailBundle`_ (Oro Platform)
     Manages email templates, supports attachments and offers a direct mailer implementation.
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Book: :doc:`/book/emails`
 
 `EmbeddedFormBundle`_ (Oro Platform)
     Makes it possible to embed Symfony forms on third-party sites and view their submitted data.

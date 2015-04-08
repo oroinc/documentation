@@ -7,6 +7,8 @@ Getting Started
     introduction
     installation
     differences
+    entities
     configuration
     localization
     security
+    emails
