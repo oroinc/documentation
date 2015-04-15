@@ -56,7 +56,7 @@ Cases can be created from the Cases grid:
   empty."
   "**Related Account**","Defines an :term:`account record <Account>` related to the case, if any. The field may be left 
   empty."
-  "**Tags**","Defines an :term:`tags <Tag>` for the case. Click the :guilabel:`Select and existing tag or create new`
+  "**Tags**","Defines :term:`tags <Tag>` for the case. Click the :guilabel:`Select and existing tag or create new`
   button and either choose a tag from the drop-down or type-in a new tag. Any number of tags may be added."
 
 4. Click the button in the top right corner to save the case.

@@ -45,8 +45,7 @@ The *Log Call* action will be available for records of entities with "Calls" act
   "**Duration**","Define how long the call was."
 
 
-For example, the email we created at the previous step was not sent due to an error in the address. We have called 
-Mr. Maynard to check the email address correctness.
+For example, we have called Mr. Maynard to check the email address correctness.
 
 - The "Owner" field was automatically filled with the user John Doe
 - We've defined the call subject and briefly described the call results in the "Additional comments" section

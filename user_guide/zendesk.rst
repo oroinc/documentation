@@ -34,8 +34,8 @@ The only thing you will need on the Zendesk side, is to get your API token:
 
 
 
-On the Oro Side
----------------
+On the OroCRM Side
+------------------
 
 Create Zendesk Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -61,8 +61,8 @@ Define the following mandatory details in the *"General"* section:
   "**URL***","A URL of your Zendesk account (e.g. https://username.zendesk.com)."
   "**API Email***","The email used to register your Zendesk account."
   "**API Token***","The API token generated and/or copied on the Zendesk side as described above."
-  "**Default Zendesk User Email**","The email used to assigned tickets created from OroCRM cases, if there is no Zendesk
-  user with an email that matches the primary email of the user the case is assigned to."
+  "**Default Zendesk User Email**","User with this email will be assigned tickets that come from OroCRM and for which
+  there are no Zendesk users with a matching email address."
   "**Owner**","Limits the list of users that can manage the integration to users, whose roles allow 
   managing integration assigned to the owner (e.g. the owner, members of the same business unit, system administrator, 
   etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
@@ -151,7 +151,6 @@ First Synchronization from Zendesk to OroCRM
       - If there is no matching email, the integration Owner is mapped to the Assignee field value.
   
   "
-  "Description","Description", "Is also added as the first public comment for the both OroCRM case and Zendesk ticket"
   "Priority","Priority","The values are mapped as follows:
   
   .. list-table::
@@ -202,7 +201,7 @@ First Synchronization from Zendesk to OroCRM
   
 .. csv-table::
   :header: "OroCRM Ticket Field", "Description"
-  :widths: 20, 40
+  :widths: 15, 40
 
   "Ticket Number","Zendesk ticket number. During the following synchronization settings the field value is used to 
   define if an existing case/ticket shall be updated or a new one must be created."
@@ -318,8 +317,8 @@ The case fields are mapped at the Zendesk ticket fields as follows:
 
 - After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in OroCRM.
   
-Further Synchronization
-"""""""""""""""""""""""
+Further Synchronizations
+""""""""""""""""""""""""
   
 - If some ticket details of a Zendesk ticket have been changed after the initial synchronization, the corresponding 
   OroCRM case details will also be updated in the course of the nearest synchronization.

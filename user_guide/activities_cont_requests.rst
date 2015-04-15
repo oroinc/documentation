@@ -27,7 +27,7 @@ Contact Request can be created from the Contact Requests grid:
   "**First Name***","The first name of the person, who has requested support."
   "**Last Name***","The last name of the person, who has requested support."
   "**Channel***","The :term:`channel <Channel>` from which the request was received. The drop-down contains all the 
-  channels :ref:`assigned <user-guide-channel-guide-entities>` the Contact Request :term:`channel <entity>` in the 
+  channels :ref:`assigned <user-guide-channel-guide-entities>` the Contact Request :term:`entity <Entity>` in the 
   alphabetical order. By default is filled with the first channel in the list (alphabetically)."
   "**Organization Name**","The name of an organization, on behalf of which the request has been filed, if any. The field
   is for information and search purposes only."
@@ -37,11 +37,11 @@ Contact Request can be created from the Contact Requests grid:
   - Phone
   - Email  
   
-  The field is be default filled with the *Email* option."
+  The field is by default filled with the *Email* option."
   "**Phone** and **Email**","Contact details related to the request. The values required by the *Preferred Contact 
   Method* must be defined."
   "**Contact Reason**","Choose a contact reason from the drop-down to simplify the request analysis. The field is by default
-  set to *Other*"
+  set to *Other*."
   "**Comment***","Actual text of the request. Must be filled."
 
 4. Click the button in the top right corner to save the request.
@@ -55,7 +55,7 @@ the OroCRM multichannel functionality.
 Create a Contact Request from a Third-Party Application
 -------------------------------------------------------
 
-Add the code defined for the form to your site, as described in the :ref:`Embedded Forms guide <admin-embedded-forms>`. 
+Add the code for the form on your site, as described in the :ref:`Embedded Forms guide <admin-embedded-forms>`. 
 Use the forms of the "Magento Contact Us Request" type for the Magento-based businesses and of the "Contact Request"
 type for the other websites. Every time a user has filled the form it will be added to the Contact Requests grid in the
 Oro CRM.

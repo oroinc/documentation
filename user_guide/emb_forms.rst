@@ -52,15 +52,11 @@ In order to create a new embedded form:
   :widths: 10, 30
 
   "**Channel***","The :term:`channel <Channel>` from which the form information will be received. The drop-down contains
-  all the channels defined in the system. 
-  
-  The field may be left empty while creating the form, however no actual information can be submitted via a form, for 
-  which no channel has been defined. You can use the form without a channel while experimenting and editing the form,
-  to make sure no message is actually sent. Don't forget to define the channel before you add the code to your website."
-  "**Title***","The title used to refer to the form in the system. The field must be defined"
+  all the channels defined in the system. The field must be defined."
+  "**Title***","The title used to refer to the form in the system. The field must be defined."
   "**Form Type***","Choose one of the form types described above. 
   
-  Please note, that while the *Magento Contact Us Request* type os sharpened to suit the Magento design, you can choose 
+  Please note, that while the *Magento Contact Us Request* type is sharpened to suite the Magento design, you can choose 
   the type regardless of the Channel chosen."
   "**CSS***","Editable CSS. The default CSS corresponds to the initial form design, subject to its type. You can edit 
   the CSS to change such settings as the border width, color, fonts etc."
@@ -70,12 +66,12 @@ In order to create a new embedded form:
 4. Click the button in the top right corner to save the form.
 
 
-For example, we have created a form for the custom channel. We've change the text color to green and the background to 
-yellow. We've also changed the Success Message to "Thank you for the question"
+For example, we have created a form for the custom channel. We've changed the text color to green and the background to 
+yellow. We've also changed the Success Message to "Thank you for the question!".
 
 .. image:: ./img/emb_form/emb_form_create_ex.png
 
-After we've save it, the form has appeared in the Embedded Forms grid. 
+After we've saved it, the form has appeared in the Embedded Forms grid. 
 
 .. image:: ./img/emb_form/emb_form_create_ex_01.png
 
@@ -99,7 +95,7 @@ Manage Embedded Forms
  
 Add the Form to Your Site
 -------------------------  
-Open the form View page and got to the "Get Code" section. The code to add your form to the site is available there.
+Open the form View page and go to the "Get Code" section. The code to add your form to the site is available there.
 
 .. image:: ./img/emb_form/emb_form_code.png
 

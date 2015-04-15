@@ -11,7 +11,7 @@ The articles describes the ways to create and manage email templates.
 
 .. _user-guide-email-templates-create:
 
-Creat Email Templates
+Create Email Templates
 ---------------------
 
 1. Go to *System → Emails → Templates* page and click :guilabel:`Create Template` button in the top right corner to 
@@ -50,6 +50,14 @@ in the template. If no entity name is defined, only system variables will be ava
 5. If you are satisfied with the preview, save the template in the system with the button in the top right corner of
    the page.
 
+   
+Email Template Languages
+------------------------
+
+If several languages have been :ref:`enabled <admin-configuration-language>` for the email templates, move from tab to 
+tab, to define the template in different languages.
+
+.. image:: ./img/marketing/email_template_language.png
 
 .. _user-guide-email-templates-actions:
 

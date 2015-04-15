@@ -25,7 +25,8 @@ The *Send Email* action will be available for records of entities with "Emails" 
   
   To clear the field, click the :guilabel:`x` button. 
   
-  If the field is clear, you can enter another email address. The cannot be empty and only one address can be defined."
+  If the field is clear, you can enter another email address. The field cannot be empty and only one address can be 
+  defined."
   "**To, Cc and Bc**","Recipients of the email.  The field is by default filled with the primary email address of one of 
   the contacts assigned to the record (if any).
 
@@ -37,10 +38,11 @@ The *Send Email* action will be available for records of entities with "Emails" 
    At least one of the fields (*To*, *Cc* or *Bcc* must be filled)"
    "**Subject***","Topic of the email. The field must be filled."
    "**Apply template**","You can choose an :ref:`email template <user-guide-email-template>` to use from the drop-down."
-   "**Type***","Define if you want to use an html or a plain text for the email. The type is be default set to html."
-   "**Body**","Define the email body"
+   "**Type***","Define if you want to use an html or a plain text for the email. The type is by default set to html."
+   "**Body**","Define the email body."
    
-For example, we have created an Email for the contact Jeffrey Maynard:
+For example, we have created an email for the contact Jeffrey Maynard:
+
 - The "From" field was automatically filled with email address of the user John Doe
 - The "To" field was  filled with the email of the contact
 - We've chosen the template Happy Birthday and subject and body were defined as in the template. 
@@ -53,10 +55,48 @@ For example, we have created an Email for the contact Jeffrey Maynard:
    
 4. Click the  :guilabel:`Send` button and the Email will be sent.
 
+
+
+.. note::
+
+    Some default email settings also depend on the :ref`related configuration settings <admin-configuration-emails>`.
+
+View and Process Emails
+-----------------------
 All the emails sent for a record are displayed and can be reached from the *Record Activities* section on the View page:
 
 .. image:: ./img/activities/send_email_view.png
 
+You the action icons to
+
+- Reply the email: |email_reply|. The form similar to the initial *Send Email* form will appear.
+
+- Forward the email: |email_forward|.  The form similar to the initial *Send Email* form will appear.
+
+- Define a record in the OroCRM related to the email: |email_context|. 
+  
+  - The *Add Context Entity* form will appear. 
+
+   |email_context_form|
+  
+  - Choose the entity (account, B2B customer, etc.) from the drop-down and choose a specific record from the grid.
+
 To see the details, click on the email title or the :guilabel:`+` to the left from it.
 
 .. image:: ./img/activities/send_email_view_detailed.png
+
+You can reply or forward the email.
+
+.. image:: ./img/activities/send_email_view_buttons.png
+
+.. |email_context| image:: ./img/activities/email_context.png
+   :align: middle
+   
+.. |email_context_form| image:: ./img/activities/email_context_form.png
+   :align: middle
+   
+.. |email_reply| image:: ./img/activities/email_reply.png
+   :align: middle
+   
+.. |email_forward| image:: ./img/activities/email_forward.png
+   :align: middle

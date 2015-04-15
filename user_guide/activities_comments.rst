@@ -4,7 +4,7 @@ Add Comment
 ===========
 
 Main peculiarity of the comments is that they can be added to the records of different activities (i.e. to a task, call
-log, calendar event or any other :ref:activity `<user_guide-activities>` but a contact request).
+log, calendar event or any other :ref:`activity <user_guide-activities>` but a contact request).
 
 .. note::
 
@@ -32,13 +32,13 @@ So, if an activity has been related to a user, you can:
 
   - Go to the activities grid and click the icon to get to the activity View page.
   
-- Click the :guilabel`Add Comment`.
+- Click the :guilabel:`Add Comment`.
 
 - Fill the text-box with the text of the comment.
 
-- Click the :guilabel`Choose File` to add a file to the comments.
+- Click the :guilabel:`Choose File` to add a file to the comments.
 
-- Click the :guilabel`Add Comment` button to save the comment.
+- Click the :guilabel:`Add Comment` button to save the comment.
 
 .. hint::
 

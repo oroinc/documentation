@@ -43,7 +43,7 @@ The *Add Task* action will be available for records of entities with "Tasks" act
   - *High*
   
   The field is by default set to *Normal*."
-  "**Assigned To***","Choose the user, to whom the task is assigned. The field is by default filled with he user, 
+  "**Assigned To***","Choose the user, to whom the task is assigned. The field is by default filled with the user, 
   creating the task."
   "Reminders","Defines if a message must be sent to the user defined in the *Assigned to* field with regard to the task.
   

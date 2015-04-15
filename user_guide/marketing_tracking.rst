@@ -54,6 +54,10 @@ The following actions are available for a tracking websites record from the
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the record:  |IcView| 
 
 
+.. note::
+
+    The tracking process also depends on the :ref:`Tracking settings <admin-configuration-tracking>` defined for the 
+    OroCRM instance.
 
 .. _user-guide-marketing-tracking-websites-view-page:
 
