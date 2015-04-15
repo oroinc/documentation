@@ -17,7 +17,7 @@ This article describes how to define and edit the integration and synchronizatio
 
 On the Magento Side
 -------------------
-u
+
 The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through 
 the MagentoConnect.
 
