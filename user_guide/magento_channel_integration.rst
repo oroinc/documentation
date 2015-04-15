@@ -22,7 +22,6 @@ The integration is made possible with the OroCRM Bridge Magento Extenstion. The 
 the MagentoConnect.
 
 .. image:: ./img/magento_integration/oro_bridge.png
-   :scale: 25 %
    
 Once the extension has been successfully installed, you need to login to your Magento account and to set up a SOAP API 
 user within Magento, as described below:
