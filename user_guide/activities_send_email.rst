@@ -87,12 +87,12 @@ To see the details, click on the email title or the :guilabel:`+` to the left fr
 
 You can reply or forward the email.
 
-.. image:: ./img/activities/send_email_view_buttons.png
+.. image:: ./img/activities/send_email_buttons.png
 
-.. |email_context| image:: ./img/activities/email_context.png
+.. |email_context| image:: ./img/activities/email_add_context.png
    :align: middle
    
-.. |email_context_form| image:: ./img/activities/email_context_form.png
+.. |email_context_form| image:: ./img/activities/email_add_context_form.png
    :align: middle
    
 .. |email_reply| image:: ./img/activities/email_reply.png

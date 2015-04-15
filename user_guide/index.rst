@@ -6,6 +6,7 @@ End user oriented documentation that explains how to administer and configure ap
 .. toctree::
     :maxdepth: 2
 
+    config
     ui_components
     entities
     entity_fields
@@ -39,7 +40,7 @@ End user oriented documentation that explains how to administer and configure ap
     activities_tasks
     activities_events
     activities_cases
-    activities_cont_requests.rst
+    activities_cont_requests
     activities_comments
     emb_forms
 

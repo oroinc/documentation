@@ -12,7 +12,7 @@ The articles describes the ways to create and manage email templates.
 .. _user-guide-email-templates-create:
 
 Create Email Templates
----------------------
+----------------------
 
 1. Go to *System → Emails → Templates* page and click :guilabel:`Create Template` button in the top right corner to 
    get to the *"Create Template"* :ref:`form <user-guide-ui-components-create-pages>`.
