@@ -80,7 +80,7 @@ Define a New User
 
   "**User Name***","The name used for login into the account."
   "**First Name***","The first part of the name displayed in the system to refer to the user."
-  "**Last Name***","The lastWebs part of the name displayed in the system to refer to the user."
+  "**Last Name***","The last part of the name displayed in the system to refer to the user."
   "**Email***","The email address of the user."
   "**API Key***","Define a password for the account. The key shall be at least 6 symbols long."
   "**API Key Confirmation***","Confirm the password."
