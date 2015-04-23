@@ -4,9 +4,9 @@ Contact Requests
 ================
 
 Contact requests correspond to user requests for OroCRM support, including partnership proposals, complaints, additional 
-information or assistance requests, etc.   
+information, assistance requests, etc.   
 
-The contact requests may be created directly in the OroCRM or come from an :ref:`embedded form <admin-embedded-forms>`
+Contact requests may be created directly in OroCRM or come from an :ref:`embedded form <admin-embedded-forms>`
 within a third-party application.
 
 Create a Contact Request from OroCRM
@@ -14,7 +14,7 @@ Create a Contact Request from OroCRM
 
 Contact Request can be created from the Contact Requests grid:
 
-1. Go to the *Activities → Contact Requests*.
+1. Go to *Activities → Contact Requests*.
 
 2. Click the :guilabel:`Create Contact Request` button.
 
@@ -26,28 +26,29 @@ Contact Request can be created from the Contact Requests grid:
 
   "**First Name***","The first name of the person, who has requested support."
   "**Last Name***","The last name of the person, who has requested support."
-  "**Channel***","The :term:`channel <Channel>` from which the request was received. The drop-down contains all the 
-  channels :ref:`assigned <user-guide-channel-guide-entities>` the Contact Request :term:`entity <Entity>` in the 
-  alphabetical order. By default is filled with the first channel in the list (alphabetically)."
-  "**Organization Name**","The name of an organization, on behalf of which the request has been filed, if any. The field
-  is for information and search purposes only."
+  "**Channel***","The :term:`channel <Channel>` from which the request was received. The drop-down menu contains all the 
+  channels to which the Contact Request :term:`entity <Entity>` has been 
+  :ref:`assigned <user-guide-channel-guide-entities>`  in the 
+  alphabetical order. By default, it is filled with the first channel in the list."
+  "**Organization Name**","The name of an organization, on behalf of which the request has been filed, if any. This 
+  field is for information and search purposes only."
   "**Preferred Contact Method***","Choose the contact method to be used of the list. The possible values are:
   
   - Both phone and email
   - Phone
   - Email  
   
-  The field is by default filled with the *Email* option."
-  "**Phone** and **Email**","Contact details related to the request. The values required by the *Preferred Contact 
-  Method* must be defined."
-  "**Contact Reason**","Choose a contact reason from the drop-down to simplify the request analysis. The field is by default
-  set to *Other*."
-  "**Comment***","Actual text of the request. Must be filled."
+  The field is set to the *Email* option by default."
+  "**Phone** and **Email**","Contact details related to the request. The values are determined by the *Preferred Contact 
+  Method* and must be defined."
+  "**Contact Reason**","Choose a contact reason from the drop-down menu to simplify the request analysis. The field is 
+  by default set to *Other*."
+  "**Comment***","Actual text of the request. This must be filled."
 
 4. Click the button in the top right corner to save the request.
   
-For example, there was a request from Mr. Jack Johnson, representative of the General Ltd. company who was interested in
-the OroCRM multichannel functionality. 
+For example, there was a request from Mr. Jack Johnson, representative of the General Ltd. interested in OroCRM's 
+multichannel functionality. 
 
 .. image:: ./img/activities/request_create.png
 
@@ -57,12 +58,12 @@ Create a Contact Request from a Third-Party Application
 
 Add the code for the form on your site, as described in the :ref:`Embedded Forms guide <admin-embedded-forms>`. 
 Use the forms of the "Magento Contact Us Request" type for the Magento-based businesses and of the "Contact Request"
-type for the other websites. Every time a user has filled the form it will be added to the Contact Requests grid in the
+type for the other websites. Every time a user has filled the form it will be added to the Contact Requests grid in
 Oro CRM.
 
 .. note::
 
-    Other contact request types can be developed in the course of integration, subject to your specific business needs.
+    Other contact request types can be developed in the course of integration, according to your specific business needs.
 
 
 View and Manage Contact Requests
@@ -72,15 +73,15 @@ View and Manage Contact Requests
 
     The ability to view and edit contact request depends on the specific roles and permissions defined in the system. 
    
-- All the Contact Request can be viewed from the Contact Requests grid.
+- All the Contact Requests can be viewed from the Contact Requests grid.
 
 .. image:: ./img/activities/request_grid.png
 
-- From the gird, you can manage the Contact Request using the action icons:
+- From the grid, you can manage the Contact Request using the action icons:
 
   - Delete the request: |IcDelete|
 
-  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the request: |IcEdit|
+  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the request: |IcEdit|
 
   - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the request:  |IcView|
 

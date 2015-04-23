@@ -5,13 +5,13 @@ OroCRM Activities
 
 An important part of a successful customer relations process is clear and timely communications between all the 
 stakeholders. OroCRM's activities enable creation, tracking and ongoing update of customer-related activities such as 
-phone calls, emails, tasks, calendar events, etc. Each activity can be processed in the system, subject to the 
+phone calls, emails, tasks, calendar events, and more. Each activity can be processed in the system, according to the 
 predefined logic. 
 
 In the course of customization, new activities can be created and their logic can be defined, subject to your specific 
 business needs. Follow the links to learn more about the following activities available in OroCRM out-of-the-box:
 
-- :ref:`Send Email <user-guide-activities-emails>`: generate an Email with predefined properties related to the record.  
+- :ref:`Send Email <user-guide-activities-emails>`: generate an email with predefined properties related to the record.  
 
 - :ref:`Log Call <user-guide-activities-calls>`: keep track of all the calls related to the record.
 
@@ -44,9 +44,9 @@ Most of the activities can be enabled for the entity records in the *Communicati
 
 - Check the activities that you want to enable for the entity.
                                    
-- Choose *Yes* in the drop-down and it will be possible to add free text *Notes* to the entity records.
+- Choose *Yes* in the drop-down menu and it will be possible to add free text *Notes* to the entity records.
 
-- *Add Comment* drop-down is meaningful for activities only. You can change the comment setting for the activities
+- The *Add Comment* drop-down menu is meaningful for activities only. You can change the comment setting for the activities
   available in the system.
 
 Once such an activity has been enabled, it will appear in the 
