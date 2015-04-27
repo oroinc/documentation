@@ -61,40 +61,21 @@ To generate authentication header with PHP:
 
 .. code-block:: php
 
-    /**
-     * Generate WSSE authorization header
-     *
-     * @param string      $userName
-     * @param string      $userPassword
-     * @param string|null $nonce
-     *
-     * @return array
-     */
-    public static function generateWsseAuthHeader(
-        $userName = self::USER_NAME,
-        $userPassword = self::USER_PASSWORD,
-        $nonce = null
-    ) {
-        if (null === $nonce) {
-            $nonce = uniqid();
-        }
+    $userName = 'your username';
+    $userPassword = 'your password';
+    $nonce = uniqid();
+    $created  = date('c');
+    $digest   = base64_encode(sha1(base64_decode($nonce) . $created . $userPassword, true));
+
+    $wsseHeader = "Authorization: WSSE profile=\"UsernameToken\"\n";
+    $wsseHeader.= sprintf(
+        'X-WSSE: UsernameToken Username="%s", PasswordDigest="%s", Nonce="%s", Created="%s"',
+        $userName,
+        $digest,
+        $nonce,
+        $created
+    );
     
-        $created  = date('c');
-        $digest   = base64_encode(sha1(base64_decode($nonce) . $created . $userPassword, true));
-        $wsseHeader = array(
-            'CONTENT_TYPE' => 'application/json',
-            'HTTP_Authorization' => 'WSSE profile="UsernameToken"',
-            'HTTP_X-WSSE' => sprintf(
-                'UsernameToken Username="%s", PasswordDigest="%s", Nonce="%s", Created="%s"',
-                $userName,
-                $digest,
-                $nonce,
-                $created
-            )
-        );
-    
-        return $wsseHeader;
-    }
 
 Header and nonce lifetime
 -------------------------
