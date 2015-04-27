@@ -50,7 +50,7 @@ The *Add Task* action will be available for records of entities with "Tasks" act
   Click the :guilabel:`Add` button to add a reminder.
 
    - Define if the message will be an email or a flash message, as well as how long before the time defined in the 
-   *Due date* it will be sent. 
+     *Due date* it will be sent. 
 
   Reminders cannot be defined if the due date hasn't been defined."
    

@@ -42,7 +42,7 @@ The *Add Event* action will be available for records of entities with "Calendar 
   Click the :guilabel:`Add` button to add a reminder.
 
   - Define if the message must be an email or a flash message, as well as and how long before the time defined in the 
-  *Start* it must be sent."
+    *Start* it must be sent."
 
 For example, we want Ellen Rowell from the sales team and Michael Buckley from the marketing team to be present at a 
 meeting with a new contact from the Cal Stereo company. We have chosen a red color to display the event in the users' 

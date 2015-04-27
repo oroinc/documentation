@@ -89,7 +89,7 @@ View and Manage Cases
 .. image:: ./img/activities/case_view_contact.png
 
 - All the cases assigned to a specific account (cases, for which the "Related Account" field is not empty) are displayed
- and can be reached from the "Cases" grid in the "Additional Information" section on the View page of the account record.
+  and can be reached from the "Cases" grid in the "Additional Information" section on the View page of the account record.
   
 .. image:: ./img/activities/case_view_account.png
 

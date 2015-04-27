@@ -6,7 +6,6 @@ End user oriented documentation that explains how to administer and configure ap
 .. toctree::
     :maxdepth: 2
 
-    config
     ui_components
     entities
     entity_fields
