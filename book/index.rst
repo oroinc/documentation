@@ -8,6 +8,7 @@ and technical details.
     :maxdepth: 2
 
   * :doc:`/book/installation`
+  * :doc:`/book/entities`
   * :doc:`/book/configuration`
   * :doc:`/book/localization`
   * :doc:`/book/security`
@@ -46,11 +47,6 @@ and technical details.
 TODO List
 ---------
 
-* Security
-* Entity Structure and Data Management
-    * Additional Annotations Review
-    * Metadata and Entity Config
-    * Custom Entities and Fields
 * Web Services API
 * User Interface
     * Themes
@@ -62,9 +58,6 @@ TODO List
     * Notifications
     * Sidebars
     * Windows
-* Business Features
-    * Organization Structure
-    * Multiple Channels
 * Productivity Features
     * Emails
     * Calendar
