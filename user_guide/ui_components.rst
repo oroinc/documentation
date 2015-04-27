@@ -62,7 +62,18 @@ start with 123 are displayed:
     Please note that the list of fields available for filters depends on the  *"Show Grid Filter"* settings defined for 
     fields of the the entity. Please see the *Entity Management* guide for more details.
     
-    
+.. hint::
+
+    Records can be filtered in any grid, including reports.
+
+Click :guilabel:`Reset` button to remove all the filter settings. The :guilabel:`Refresh` button will update data in the
+grid not affecting the filter settings.
+
+
+.. note::
+
+    You can also watch :ref:`video guide on the grid filters usage <grid-filters-video-guide>`.
+
     
 .. _user-guide-ui-components-grid-action-buttons:
 

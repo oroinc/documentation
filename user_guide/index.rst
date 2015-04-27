@@ -31,6 +31,7 @@ End user oriented documentation that explains how to administer and configure ap
     marketing_tracking
     email_campaign
     reports
+    video_grid_filters
 
 
     
