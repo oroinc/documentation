@@ -7,7 +7,7 @@ Cases correspond to certain issues, problems or failures reported by customers.
 
 Cases can be created from the Cases grid:
 
-1. Go to the *Activities → Cases*.
+1. Go to *Activities → Cases*.
 
 2. Click the :guilabel:`Create Case` button.
 
@@ -57,14 +57,14 @@ Cases can be created from the Cases grid:
   "**Related Account**","Defines an :term:`account record <Account>` related to the case, if any. The field may be left 
   empty."
   "**Tags**","Defines :term:`tags <Tag>` for the case. Click the :guilabel:`Select and existing tag or create new`
-  button and either choose a tag from the drop-down or type-in a new tag. Any number of tags may be added."
+  button and either choose a tag from the drop-down menu or enter a new tag. Any number of tags may be added."
 
 4. Click the button in the top right corner to save the case.
 
-For example, the company has got a phone call from a manager of the Acuserv company saying that a part of details in the
-previous supply were faulty. The head of the purchasing department in Acuserv (related contact) is Jennifer Paxton. 
-We've assigned the issue to Michael Buckley from the Marketing department and defined its priority as high. We've 
-added the tags "Business" and "Gold Partner".
+For example, the company has received a phone call from a manager of the Acuserv company saying that some of the details 
+in the previous supply were faulty. The head of the purchasing department in Acuserv is Jennifer Paxton (a related 
+contact). We've assigned the issue to Michael Buckley from the Marketing department and defined its priority as high. 
+We've added the "Business" and "Gold Partner" tags for this case.
 
 .. image:: ./img/activities/create_case_ex.png
 
@@ -77,18 +77,19 @@ View and Manage Cases
    
 - All the cases can be viewed from the Cases grid.
 
-- All the cases assigned to a specific user (The "Assigned to" field is not empty) are displayed and can be reached from
-  the "Cases" grid in the "Additional Information" section on the View page of the user record.
+- All the cases assigned to a specific user (cases, for which the "Assigned to" field is not empty) are displayed in and 
+  can be reached from the "Cases" grid in the "Additional Information" section on the View page of the user record.
  
 .. image:: ./img/activities/case_view_user.png
 
-- All the cases assigned to a specific contact (The "Related Contact" field is not empty) are displayed and can be 
-  reached from the "Cases" grid in the "Additional Information" section on the View page of the contact record.
+- All the cases assigned to a specific contact (cases, for which the  "Related Contact" field is not empty) are 
+  displayed in and can be reached from the "Cases" grid in the "Additional Information" section on the View page of the 
+  contact record.
   
 .. image:: ./img/activities/case_view_contact.png
 
-- All the cases assigned to a specific account (The "Related Account" field is not empty) are displayed and can be 
-  reached from the "Cases" grid in the "Additional Information" section on the View page of the account record.
+- All the cases assigned to a specific account (cases, for which the "Related Account" field is not empty) are displayed
+ and can be reached from the "Cases" grid in the "Additional Information" section on the View page of the account record.
   
 .. image:: ./img/activities/case_view_account.png
 
@@ -96,7 +97,7 @@ View and Manage Cases
 
   - Delete the case: |IcDelete|
 
-  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the case: |IcEdit|
+  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the case: |IcEdit|
 
   - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the case:  |IcView|
 

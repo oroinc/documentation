@@ -5,7 +5,7 @@ Add Note
 
 Notes keep additional information about the record.
 
-The *Add Note* action will be available for records of entities with "Enable Notes" has been 
+The *Add Note* action will be available for records of entities, for which "Enable Notes" has been 
 :ref:`set to yes <user-guide-activities-enable>`.
 
 1. Click :guilabel:`Add Note` in the :ref:`actions <user-guide-ui-components-view-page-actions>` tab of the record.
@@ -14,7 +14,7 @@ The *Add Note* action will be available for records of entities with "Enable Not
 
 3. This is a text box that you can fill with any text. Formatting tools are available at the top menu.
 
-For example, we want to add a note to the contact Jeffrey Maynard, saying that he has changed the company and is eager 
+For example, we want to add a note to the contact Jeffrey Maynard to say that he has changed the company and is eager 
 to keep working with us at his new company.
 
 .. image:: ./img/activities/add_note_ex.png  

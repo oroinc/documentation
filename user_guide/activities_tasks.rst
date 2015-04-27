@@ -43,22 +43,22 @@ The *Add Task* action will be available for records of entities with "Tasks" act
   - *High*
   
   The field is by default set to *Normal*."
-  "**Assigned To***","Choose the user, to whom the task is assigned. The field is by default filled with the user, 
-  creating the task."
+  "**Assigned To***","Choose the user, to whom the task is assigned. By default, the field is by default filled in with 
+  name of the user, creating the task."
   "Reminders","Defines if a message must be sent to the user defined in the *Assigned to* field with regard to the task.
   
   Click the :guilabel:`Add` button to add a reminder.
 
-   - Define if the message shall be an email or a flash message and how long before the time defined in the *Due date* 
-     it shall be sent. 
+   - Define if the message will be an email or a flash message, as well as how long before the time defined in the 
+   *Due date* it will be sent. 
 
   Reminders cannot be defined if the due date hasn't been defined."
    
-For example, we want Ellen Rowell from the sales to change the email address of Jeffrey Maynard, who has recently 
+For example, we want Ellen Rowell from the sales to replace the email address of Jeffrey Maynard, who has recently 
 changed his work. 
 
-We have created a relevant task on the View page of the Jeffrey Maynard's contact record.  The task shall be done within
-a week (till April the fifth). An email will be sent to Ellen Rowell one day before the due date.
+We have created a relevant task on the View page of Jeffrey Maynard's contact record.  The task must be done within
+a week (till April 5th). An email will be sent to Ellen Rowell one day before the due date.
 
 .. image:: ./img/activities/add_task_ex.png
    
@@ -77,7 +77,7 @@ Assign a Task to a User
    The form has the same fields as the "Add Task" form. The "Assigned to" field value is the user you have chosen, and 
    it cannot be edited.
 
-For example, we also need Ellen Rowell to find a new contact at the Cal Stereo, where Mr. Jeffrey Maynard used to work.
+For example, we also need Ellen Rowell to find a new contact at Cal Stereo, where Mr. Jeffrey Maynard used to work.
 The task has no specific due date, but its priority is high.
 
 .. image:: ./img/activities/assign_task.png
@@ -88,7 +88,7 @@ The task has no specific due date, but its priority is high.
 Create a Task from the Tasks Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Go to the *Activities → Tasks*.
+1. Go to *Activities → Tasks*.
 
 .. hint:
 
@@ -100,10 +100,10 @@ Create a Task from the Tasks Grid
 
 .. image:: ./img/activities/create_task.png
 
-The form has the same fields as the "Add Task" form. The "Assigned to" field value is by default filled with the user
-creating the task but can be edited.
+The form has the same fields as the "Add Task" form. By default, the "Assigned to" field is filled with the user
+creating the task but it can be edited.
 
-This is particularly a convenient way to create a task for yourself, as well as for other users.
+This is a particularly convenient way to create a task for yourself, as well as for other users.
 
 
 View and Manage Tasks
@@ -148,7 +148,7 @@ Once you have logged into the system, you can see the Task grid in "My Tasks" pa
 .. image:: ./img/activities/my_tasks.png
 
 
-The tasks with due date will also appear in "My Calendar" page:
+Tasks, for which a due date has been defined will also appear in the "My Calendar" page:
 
 .. image:: ./img/activities/my_tasks_cal.png
 

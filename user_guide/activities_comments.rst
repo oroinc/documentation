@@ -29,9 +29,9 @@ So, if an activity has been related to a user, you can:
 - View the activity details:
 
   - Go to the View page of the record and open to the Record Activities section (or the User Tasks if you want to 
-    comment on a task assigned to a user and click on the activity title, or
+    comment on a task assigned to a user and click on the activity title.
 
-  - Go to the activities grid and click the icon to get to the activity View page.
+  - Alternatively, go to the activities grid and click the icon to get to the activity View page.
   
 - Click the :guilabel:`Add Comment` button.
 

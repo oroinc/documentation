@@ -32,20 +32,21 @@ The *Add Event* action will be available for records of entities with "Calendar 
   :widths: 10, 30
 
   "**Title***","The event name. Must be defined."
-  "**Start***","The time of the event start. Must be specified." 
-  "**End***","The time of the event end. Must be specified."
-  "**All day event**","The check-box to define if the event is of all-day nature."
+  "**Start***","Time the event starts. Must be specified." 
+  "**End***","Time the event ends. Must be specified."
+  "**All day event**","Defines whether the event will take place for a whole day."
   "**Color**","Defines the color to be used in the user's calendar."
-  "**Guests**","Defines users, for whom the event is created. Choose the user records from the drop-down. Any amount 
-  of users can be chosen."
+  "**Guests**","Defines users, for whom the event is created. Choose the user records from the drop-down menu. Any 
+  amount of users can be chosen."
   "**Reminders**","Defines if a message must be sent to the users defined in the *Guests* field before the event.
   Click the :guilabel:`Add` button to add a reminder.
 
-  - Define if the message shall be an email or a flash message and how long before the time defined in the *Start* it
-    shall be sent."
+  - Define if the message must be an email or a flash message, as well as and how long before the time defined in the 
+  *Start* it must be sent."
 
-For example, we want Ellen Rowell from the sales and Michael Buckley from the marketing to be present at the meeting 
-with a new contact from the Cal Stereo company. We have chose red color to display the event in the users' calendars.
+For example, we want Ellen Rowell from the sales team and Michael Buckley from the marketing team to be present at a 
+meeting with a new contact from the Cal Stereo company. We have chosen a red color to display the event in the users' 
+calendars.
 
 .. image:: ./img/activities/add_event_ex.png
    
@@ -61,10 +62,10 @@ Assign an Event to a User
 
 3. The "Assign Event to {user name}" form will appear.
 
-   The form has the same fields as the "Add Event" form. The "Guest" field in this case relates to the guests other than
-   the user and may be left empty. 
+   The form has the same fields as the "Add Event" form. The "Guest" field in this case relates to attendees other 
+   than the user and may be left empty. 
 
-For example, we also need Ellen Rowell to visit a sales conference on the eights of April.
+For example, we also need Ellen Rowell to visit a sales conference on April 8th.
 
 .. image:: ./img/activities/assign_event_ex.png
 
@@ -74,7 +75,7 @@ For example, we also need Ellen Rowell to visit a sales conference on the eights
 Create an Event from the Events Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Go to the *Activities → Calendar Events*.
+1. Go to *Activities → Calendar Events*.
 
 .. hint:
 
@@ -87,7 +88,7 @@ Create an Event from the Events Grid
 .. image:: ./img/activities/create_event.png
 
 
-The form has the same fields as the "Add Event" form. The "Guest" field relates to the guests other than
+The form has the same fields as the "Add Event" form. The "Guest" field relates to attendees other than
 the user and may be left empty.
 
 
@@ -125,7 +126,7 @@ View and Manage Events
 
   - Delete the task: |IcDelete|
 
-  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the event: |IcEdit|
+  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the event: |IcEdit|
 
   - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the event:  |IcView|
 

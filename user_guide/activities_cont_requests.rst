@@ -38,7 +38,7 @@ Contact Request can be created from the Contact Requests grid:
   - Phone
   - Email  
   
-  The field is set to the *Email* option by default."
+  By default, the field is set to *Email*."
   "**Phone** and **Email**","Contact details related to the request. The values are determined by the *Preferred Contact 
   Method* and must be defined."
   "**Contact Reason**","Choose a contact reason from the drop-down menu to simplify the request analysis. The field is 
@@ -71,7 +71,7 @@ View and Manage Contact Requests
 
 .. note:
 
-    The ability to view and edit contact request depends on the specific roles and permissions defined in the system. 
+    The ability to view and edit contact requests depends on the specific roles and permissions defined in the system. 
    
 - All the Contact Requests can be viewed from the Contact Requests grid.
 
