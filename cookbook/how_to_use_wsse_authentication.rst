@@ -57,6 +57,26 @@ Here is example of request using curl:
        [{"id":1,"username":"admin","email":"admin@example.com","namePrefix":null,"firstName":"John","middleName":null,"lastName":"Doe","nameSuffix":null,"birthday":null,"enabled":true,"lastLogin":"2014-03-22T14:15:19+00:00","loginCount":1,"createdAt":"2014-03-22T13:55:14+00:00","updatedAt":"2014-03-22T14:15:19+00:00","owner":{"id":1,"name":"Main"},"roles":[{"id":3,"role":"ROLE_ADMINISTRATOR","label":"Administrator"}]}]
 
 
+To generate authentication header with PHP:
+
+.. code-block:: php
+
+    $userName = 'your username';
+    $userPassword = 'your password';
+    $nonce = uniqid();
+    $created  = date('c');
+    $digest   = base64_encode(sha1(base64_decode($nonce) . $created . $userPassword, true));
+
+    $wsseHeader = "Authorization: WSSE profile=\"UsernameToken\"\n";
+    $wsseHeader.= sprintf(
+        'X-WSSE: UsernameToken Username="%s", PasswordDigest="%s", Nonce="%s", Created="%s"',
+        $userName,
+        $digest,
+        $nonce,
+        $created
+    );
+    
+
 Header and nonce lifetime
 -------------------------
 
