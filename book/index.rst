@@ -4,9 +4,6 @@ The Oro Book
 Overview of Platform architecture, design and key features. This section will help to understand better platform design
 and technical details.
 
-.. toctree::
-    :maxdepth: 2
-
 * :doc:`/book/getting_started`
 
   * :doc:`/book/installation`
