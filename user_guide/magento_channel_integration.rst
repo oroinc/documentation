@@ -17,12 +17,11 @@ This article describes how to define and edit the integration and synchronizatio
 
 On the Magento Side
 -------------------
-u
+
 The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through 
 the MagentoConnect.
 
 .. image:: ./img/magento_integration/oro_bridge.png
-   :scale: 25 %
    
 Once the extension has been successfully installed, you need to login to your Magento account and to set up a SOAP API 
 user within Magento, as described below:
@@ -81,7 +80,7 @@ Define a New User
 
   "**User Name***","The name used for login into the account."
   "**First Name***","The first part of the name displayed in the system to refer to the user."
-  "**Last Name***","The lastWebs part of the name displayed in the system to refer to the user."
+  "**Last Name***","The last part of the name displayed in the system to refer to the user."
   "**Email***","The email address of the user."
   "**API Key***","Define a password for the account. The key shall be at least 6 symbols long."
   "**API Key Confirmation***","Confirm the password."

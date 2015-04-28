@@ -10,6 +10,7 @@ The articles describes the ways to create and manage email templates.
 
 
 .. _user-guide-email-templates-create:
+.. _creat-email-templates:
 
 Create Email Templates
 ----------------------

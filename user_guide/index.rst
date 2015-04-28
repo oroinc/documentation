@@ -3,9 +3,11 @@ User Guide
 
 End user oriented documentation that explains how to administer and configure application features.
 
-* :doc:`/user_guide/getting_started_admin`
+* :doc:`/user_guide/getting_started`
 
-  * :doc:`/user_guide/config`
+  * :doc:`/user_guide/admin`
+    
+    * :doc:`/user_guide/config`
 
 * :doc:`/user_guide/ui`
 
@@ -57,14 +59,19 @@ End user oriented documentation that explains how to administer and configure ap
   * (Magento) :doc:`/user_guide/magento_channels`
   * (Magento) :doc:`/user_guide/magento_channel_integration`
 
-* :doc:`/user_guide/magento`
+* :doc:`/user_guide/integrations`
+  
+  * :doc:`/user_guide/magento`
 
-  * :doc:`/user_guide/magento_channels`
-  * :doc:`/user_guide/magento_channel_integration`
+    * :doc:`/user_guide/magento_channels`
+    * :doc:`/user_guide/magento_channel_integration`
 
+  * :doc:`/user_guide/zendesk`
+  
 .. toctree::
     :hidden:
 
+    getting_started_admin`
     ui
     entity_management
     activities
@@ -81,4 +88,3 @@ TODO List
 * Access Control Configuration
 * Configuration
 * Package Manager
-* Entity Management
