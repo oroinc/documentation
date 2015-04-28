@@ -6,6 +6,7 @@ and technical details.
 
 .. toctree::
     :maxdepth: 2
+
 * :doc:`/book/getting_started`
 
   * :doc:`/book/installation`
