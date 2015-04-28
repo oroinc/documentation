@@ -3,51 +3,74 @@ User Guide
 
 End user oriented documentation that explains how to administer and configure application features.
 
-.. toctree::
-    :maxdepth: 2
+* :doc:`/user_guide/getting_started_admin`
 
-    ui_components
-    entities
-    entity_fields
-    export_import
-    outlook_sync
-    zendesk
-    magento_channel_integration
-    multi_channel_overview
-    channel_guide
-    accounts
-    b2b_channels
-    b2b_customers
-    leads
-    opportunities
-    sales_processes_workflow
-    email_template
-    filters
-    magento_channels
-    workflow_management
-    marketing
-    marketing_campaign
-    how_to_track
-    marketing_list
-    marketing_tracking
-    email_campaign
-    reports
-    activities
-    activities_send_email
-    activities_log_call
-    activities_add_note
-    activities_tasks
-    activities_events
-    activities_cases
-    activities_cont_requests
-    activities_comments
-    emb_forms
+  * :doc:`/user_guide/config`
 
+* :doc:`/user_guide/ui`
 
-    
+  * :doc:`/user_guide/ui_components`
+
+* :doc:`/user_guide/entity_management`
+
+  * :doc:`/user_guide/entities`
+  * :doc:`/user_guide/entity_fields`
+  * :doc:`/user_guide/workflow_management`
+  * :doc:`/user_guide/filters`
+  * :doc:`/user_guide/reports`
+  * :doc:`/user_guide/export_import`
+  * :doc:`/user_guide/outlook_sync`
+
+* :doc:`/user_guide/activities`
+
+  * :doc:`/user_guide/activities`
+  * :doc:`/user_guide/activities_send_email`
+  * :doc:`/user_guide/activities_log_call`
+  * :doc:`/user_guide/activities_tasks`
+  * :doc:`/user_guide/activities_events`
+  * :doc:`/user_guide/activities_cases`
+  * :doc:`/user_guide/activities_add_note`
+  * :doc:`/user_guide/activities_events`
+  * :doc:`/user_guide/activities_cont_requests`
+  * :doc:`/user_guide/activities_comments ` 
+  
+* :doc:`/user_guide/marketing_index`
+
+  * :doc:`/user_guide/marketing`
+  * :doc:`/user_guide/email_template`
+  * :doc:`/user_guide/marketing_list`
+  * :doc:`/user_guide/marketing_campaign`
+  * :doc:`/user_guide/email_campaign`
+  * :doc:`/user_guide/how_to_track`
+  * :doc:`/user_guide/marketing_tracking`
+
+* :doc:`/user_guide/channels`
+
+  * :doc:`/user_guide/multi_channel_overview`
+  * :doc:`/user_guide/channel_guide`
+  * :doc:`/user_guide/accounts`
+  * :doc:`/user_guide/b2b_channels`
+  * :doc:`/user_guide/b2b_customers`
+  * :doc:`/user_guide/leads`
+  * :doc:`/user_guide/opportunities`
+  * :doc:`/user_guide/sales_processes_workflow`
+  * (Magento) :doc:`/user_guide/magento_channels`
+  * (Magento) :doc:`/user_guide/magento_channel_integration`
+
+* :doc:`/user_guide/magento`
+
+  * :doc:`/user_guide/magento_channels`
+  * :doc:`/user_guide/magento_channel_integration`
+
 .. toctree::
     :hidden:
 
+    ui
+    entity_management
+    activities
+    marketing_index
+    channels
+    magento
     glossary
 
 
