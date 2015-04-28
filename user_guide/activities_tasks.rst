@@ -45,7 +45,8 @@ The *Add Task* action will be available for records of entities with "Tasks" act
   The field is by default set to *Normal*."
   "**Assigned To***","Choose the user, to whom the task is assigned. By default, the field is by default filled in with 
   name of the user, creating the task."
-  "Reminders","Defines if a message must be sent to the user defined in the *Assigned to* field with regard to the task.
+  "**Reminders**","Defines if a message must be sent to the user defined in the *Assigned to* field with regard to the 
+  task.
   
   Click the :guilabel:`Add` button to add a reminder.
 

@@ -5,9 +5,9 @@ End user oriented documentation that explains how to administer and configure ap
 
 * :doc:`/user_guide/getting_started`
 
-  * :doc:`/user_guide/admin`
+  * :doc:`/user_guide/getting_started_admin`
     
-    * :doc:`/user_guide/config`
+    * :doc:`/user_guide/system_config`
 
 * :doc:`/user_guide/ui`
 
@@ -15,17 +15,17 @@ End user oriented documentation that explains how to administer and configure ap
 
 * :doc:`/user_guide/entity_management`
 
-  * :doc:`/user_guide/entities`
+  * :doc:`/user_guide/entities_ui`
   * :doc:`/user_guide/entity_fields`
   * :doc:`/user_guide/workflow_management`
   * :doc:`/user_guide/filters`
   * :doc:`/user_guide/reports`
   * :doc:`/user_guide/export_import`
-  * :doc:`/user_guide/outlook_sync`
+  * :doc:`/user_guide/emb_forms`
 
 * :doc:`/user_guide/activities`
 
-  * :doc:`/user_guide/activities`
+  * :doc:`/user_guide/activities_intro`
   * :doc:`/user_guide/activities_send_email`
   * :doc:`/user_guide/activities_log_call`
   * :doc:`/user_guide/activities_tasks`
@@ -34,7 +34,7 @@ End user oriented documentation that explains how to administer and configure ap
   * :doc:`/user_guide/activities_add_note`
   * :doc:`/user_guide/activities_events`
   * :doc:`/user_guide/activities_cont_requests`
-  * :doc:`/user_guide/activities_comments ` 
+  * :doc:`/user_guide/activities_comments` 
   
 * :doc:`/user_guide/marketing_index`
 
@@ -68,15 +68,19 @@ End user oriented documentation that explains how to administer and configure ap
 
   * :doc:`/user_guide/zendesk`
   
+  * :doc:`/user_guide/outlook_sync`
+  
 .. toctree::
     :hidden:
 
-    getting_started_admin`
+    getting_started
+    getting_started_admin
     ui
     entity_management
     activities
     marketing_index
     channels
+    integrations
     magento
     glossary
 
