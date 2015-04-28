@@ -60,6 +60,7 @@ Here is example of request using curl:
 To generate authentication header with PHP:
 
 .. code-block:: php
+    :linenos:
 
     $userName = 'your username';
     $userPassword = 'your password';
