@@ -32,7 +32,7 @@ End user oriented documentation that explains how to administer and configure ap
   * :doc:`/user_guide/system_config`
   
   * :doc:`/user_guide/entity_management`
-  * (Marketing):doc:`/user_guide/workflow_management`
+  * (Marketing) :doc:`/user_guide/workflow_management`
   * (Integrations) :doc:`/user_guide/emb_forms`
   
 
