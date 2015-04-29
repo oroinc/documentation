@@ -1,4 +1,4 @@
-.. _user_guide-activities:
+.. _user-guide-activities:
 
 OroCRM Activities
 =================

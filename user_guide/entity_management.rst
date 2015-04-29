@@ -6,10 +6,4 @@ Entity Management
 
     entities_ui
     entity_fields
-    emb_forms
-    workflow_management
-    filters
-    reports
-    export_import
-
 

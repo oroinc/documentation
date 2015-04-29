@@ -4,7 +4,7 @@ Add Comment
 ===========
 
 The main peculiarity of the comments is that they can be added to the records of different activities (e.g. to a task,
-call log, calendar event or any other :ref:`activity <user_guide-activities>` besides a contact request).
+call log, calendar event or any other :ref:`activity <user-guide-activities>` besides a contact request).
 
 .. note::
 

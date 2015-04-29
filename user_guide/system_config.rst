@@ -154,7 +154,7 @@ The value is enabled by default.
 Activity lists
 ^^^^^^^^^^^^^^
 
-The activity list setting define different options to be applied to display :ref:`activities <user_guide-activities>` 
+The activity list setting define different options to be applied to display :ref:`activities <user-guide-activities>` 
 in the UI.
 
 The following options are available:

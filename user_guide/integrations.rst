@@ -7,3 +7,4 @@ Integration and Synchronization Capabilities
     magento
     zendesk
     outlook_sync
+    emb_forms
