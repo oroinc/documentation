@@ -9,12 +9,16 @@ and technical details.
   * :doc:`/book/introduction`
   * :doc:`/book/installation`
   * :doc:`/book/differences`
-  * :doc:`/book/entities`
   * :doc:`/book/configuration`
   * :doc:`/book/localization`
   * :doc:`/book/security`
 
 * :doc:`/book/customization`
+
+* :doc:`/book/entity_handling`
+
+  * :doc:`/book/crud`
+  * :doc:`/book/entities`
 
 * :doc:`/book/ui`
 
@@ -40,6 +44,7 @@ and technical details.
 
     getting_started
     customization
+    entity_handling
     ui
     data
     background_tasks

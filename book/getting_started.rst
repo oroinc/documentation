@@ -10,4 +10,3 @@ Getting Started
     configuration
     localization
     security
-    entities
