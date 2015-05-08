@@ -1,3 +1,5 @@
+.. _user-guide-synch-outlook:
+
 Synchronization with Outlook
 ============================
 
@@ -165,6 +167,8 @@ Mapped Fields
 -------------
 Values of the fields of an OroCRM and Outlook records are mapped as described below:
 
+.. _outlook-contact-mapping:
+
 Contact Mapping
 ^^^^^^^^^^^^^^^
 
@@ -190,6 +194,8 @@ The following fields of an OroCRM Contact record are mapped to the following fie
   "Address of a *Billing* Type","Business Address",""
   "Address of a *Shipping* Type","Home Address",""
   "Address with no type defined","Other Address",""
+
+.. _outlook-task-mapping:
   
 Task Mapping  
 ^^^^^^^^^^^^
@@ -225,6 +231,8 @@ Outlook status not available in OroCRM are mapped as follows:
   "Waiting on someone else","In progress"
   "Deferred","In Progress"
 
+.. _outlook-calendar-mapping:
+  
 Calendar Mapping  
 ^^^^^^^^^^^^^^^^
 
