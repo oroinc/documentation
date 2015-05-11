@@ -18,50 +18,50 @@ This article describes how to define and edit the integration and synchronizatio
 On the Magento Side
 -------------------
 
-The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through 
+The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through
 the MagentoConnect.
 
 .. image:: ./img/magento_integration/oro_bridge.png
-   
-Once the extension has been successfully installed, you need to login to your Magento account and to set up a SOAP API 
+
+Once the extension has been successfully installed, you need to login to your Magento account and to set up a SOAP API
 user within Magento, as described below:
 
 
 .. note::
 
     The integration can also be created without installation of the OroCRM Bridge Magento Extenstion, however the
-    synchronization will then take longer, and some options, such as two-way synchronization, and synchronization of 
+    synchronization will then take longer, and some options, such as two-way synchronization, and synchronization of
     the custom records data will not be available.
 
 
 Define a New Role
 ^^^^^^^^^^^^^^^^^
- 
+
 - Once logged in, go to the System → Web Services → SOAP/XML - RPC - Roles
 
-.. image:: ./img/magento_integration/magento_01.png
+  .. image:: ./img/magento_integration/magento_01.png
 
 - You will get to the Roles grid. Click the :guilabel:`Add New Role`
 
-.. image:: ./img/magento_integration/magento_02.png
+  .. image:: ./img/magento_integration/magento_02.png
 
 - Define the Role Name that corresponds to your eCommerce store.
 
-.. image:: ./img/magento_integration/magento_03.png
+  .. image:: ./img/magento_integration/magento_03.png
 
 - Click the :guilabel:`Save Role` button. The role will be saved and you will get to page of the role.
 
-.. hint::
+  .. hint::
 
-    You can also click the role name in the grid at any time to get to the page of the role. 
+      You can also click the role name in the grid at any time to get to the page of the role.
 
 - Click  the :guilabel:`Role Resources` on the left.
 
-.. image:: ./img/magento_integration/magento_04.png
+  .. image:: ./img/magento_integration/magento_04.png
 
 - In the Roles Resources section, set the "Resource Access" field value to "All" and save the role.
 
-.. image:: ./img/magento_integration/magento_05.png
+  .. image:: ./img/magento_integration/magento_05.png
 
 
 Define a New User
@@ -74,35 +74,35 @@ Define a New User
 - Define the following fields:
 
 
-.. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
+  .. csv-table::
+    :header: "Field", "Description"
+    :widths: 10, 30
 
-  "**User Name***","The name used for login into the account."
-  "**First Name***","The first part of the name displayed in the system to refer to the user."
-  "**Last Name***","The last part of the name displayed in the system to refer to the user."
-  "**Email***","The email address of the user."
-  "**API Key***","Define a password for the account. The key shall be at least 6 symbols long."
-  "**API Key Confirmation***","Confirm the password."
-  "**The account is**","Set the value to *Active* in order to use the user account created."
-  
+    "**User Name***","The name used for login into the account."
+    "**First Name***","The first part of the name displayed in the system to refer to the user."
+    "**Last Name***","The last part of the name displayed in the system to refer to the user."
+    "**Email***","The email address of the user."
+    "**API Key***","Define a password for the account. The key shall be at least 6 symbols long."
+    "**API Key Confirmation***","Confirm the password."
+    "**The account is**","Set the value to *Active* in order to use the user account created."
+
 - Save the user created.
 
-.. image:: ./img/magento_integration/magento_06.png  
+  .. image:: ./img/magento_integration/magento_06.png
 
-- The user account will be saved and you will get to page of the user. 
+- The user account will be saved and you will get to page of the user.
 
-.. hint::
+  .. hint::
 
-    You can also click the user name in the grid at any time to get to the page of the Role. 
+      You can also click the user name in the grid at any time to get to the page of the Role.
 
 - Click  the :guilabel:`User Role` on the left
 
-.. image:: ./img/magento_integration/magento_07.png  
+  .. image:: ./img/magento_integration/magento_07.png
 
 - Select the role that you've created for your store above.
 
-.. image:: ./img/magento_integration/magento_08.png  
+  .. image:: ./img/magento_integration/magento_08.png
 
 - Click  the :guilabel:`Save User` button in the top right corner.
 
@@ -144,7 +144,7 @@ Define the following details in the *"General"* section:
   *http://example.com/magento/index.php/api/v2_soap/?wsdl=1*."
   "**SOAP API Key***","The API Key defined for the Magento user above."
   "**SOAP API User***","The username defined for the Magento user above."
-  "**WS-I Compliance**","Defines whether `WS-I compliance 
+  "**WS-I Compliance**","Defines whether `WS-I compliance
   mode <http://www.magentocommerce.com/api/soap/wsi_compliance.html>`_ is enabled for the Magento store."
   "**Sync start date**","Data will be synchronized as of the date defined."
 
@@ -156,13 +156,13 @@ Once the connection details have been verified, the following fields will be fil
   :widths: 10, 30
 
   "**Website***","The list of all the Websites available for the shop. *All Websites* option is chosen by default.
-  
+
   You can edit the field value and choose one of the Websites available. Only entries of the selected Website are
   synchronized.
 
   Click the *Sync website list* link if the list of Websites is outdated."
   "**Admin url**","Optional field. A url to the administrator panel of the specified Magento store."
-  "**Default owner***","Specifies what users can manage the configuration. By default is filled with the user creating 
+  "**Default owner***","Specifies what users can manage the configuration. By default is filled with the user creating
   the integration."
 
 
@@ -200,14 +200,14 @@ To edit the integration details:
   The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been
   performed, it is impossible to change the Sync start date.
 
-.. image:: ./img/magento_integration/edit_form.png
+  .. image:: ./img/magento_integration/edit_form.png
 
 - Click :guilabel:`Done` button to save the changes
 
-.. hint::
+  .. hint::
 
-    To remove an integration from the system, go to the :ref:`Edit form <user-guide-ui-components-create-pages>`
-    of the channel and click |IcCross| located next to the integration name
+      To remove an integration from the system, go to the :ref:`Edit form <user-guide-ui-components-create-pages>`
+      of the channel and click |IcCross| located next to the integration name
 
 
 .. _user-guide-magento-channel-start-synchronization:

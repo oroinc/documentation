@@ -4,7 +4,7 @@
 Magento Channels
 ================
 
-OroCRM supports out-of-the-box integration with Magento. Data can be loaded from Magento and back and processed in 
+OroCRM supports out-of-the-box integration with Magento. Data can be loaded from Magento and back and processed in
 OroCRM. :ref:`Channels <user-guide-channels>` of Magento type ("Magento Channels") represent sources of customer-related
 data collected from Magento-based eCommerce stores.
 
@@ -15,12 +15,12 @@ data collected from Magento-based eCommerce stores.
 
 For each Magento Channel, you can:
 
-- Define integration settings and rules, including synchronization priorities, as described in the 
+- Define integration settings and rules, including synchronization priorities, as described in the
   :ref:`Magento Integration guide <user-guide-magento-channel-integration>`.
 
-- Define :term:`entities <Entity>`, records of which can be loaded to OroCRM from Magento, processed and 
-  (subject to the synchronization settings) updated in Magento. 
- 
+- Define :term:`entities <Entity>`, records of which can be loaded to OroCRM from Magento, processed and
+  (subject to the synchronization settings) updated in Magento.
+
 .. _user-guide-magento-entities-entities:
 
 Default Entities of a Magento Channel
@@ -38,7 +38,7 @@ The default entities are:
   :header: "Entity", "Instance Description"
   :widths: 10, 30
 
-  "**Web Customer**","Represents a Magento customer data is collected for within the channel. Must be defined 
+  "**Web Customer**","Represents a Magento customer data is collected for within the channel. Must be defined
   for Magento channels."
   "**Shopping Cart**","Keeps details on the Magento Customer's actions with the |WT02|_"
   "**Order**","Keeps details of items purchased and ordered by the customer within the channel, including store details,
@@ -89,15 +89,15 @@ From the *View* page of any shopping cart you can
     However, it is strongly recommended to update a specific Cart record before you perform any actions with it.
 
 
-You can also place an order from the :ref:`View page <user-guide-ui-components-view-pages>` of every shopping cart with 
-*Open* status (items in the cart have not yet been purchased). Click the button to get to the Magento *Place an Order* 
+You can also place an order from the :ref:`View page <user-guide-ui-components-view-pages>` of every shopping cart with
+*Open* status (items in the cart have not yet been purchased). Click the button to get to the Magento *Place an Order*
 form.
 
 .. image:: ./img/magento_entities/view_place_order.png
 
 .. caution::
 
-    Be careful not to confuse the cart status and step of the related workflow. For example, a cart at the step 
+    Be careful not to confuse the cart status and step of the related workflow. For example, a cart at the step
     "Contacted" can still have the "Open" status (items in the carts have not yet been bought).
 
 .. caution::
@@ -116,9 +116,8 @@ From the :ref:`View page <user-guide-ui-components-view-pages>` of any order you
 - Synchronize Data: uploads the latest information for the cart/order from Magento and back (if so is specified by the
   synchronization settings).
 
-.. image:: ./img/magento_entities/view_orders.png
-    
-    
+  .. image:: ./img/magento_entities/view_orders.png
+
 
 .. _user-guide-magento-entities-workflows:
 
@@ -145,8 +144,8 @@ it is impossible to abandon the cart without getting in touch with the customer.
 
 .. image:: ./img/magento_entities/cart_workflow_diagram.png
 
-The workflow helps to improve customer-oriented communications and to increase the amount of actual orders. At the 
-same time, the managers can see all the information on the relevant items (no long search during the call), switch to 
+The workflow helps to improve customer-oriented communications and to increase the amount of actual orders. At the
+same time, the managers can see all the information on the relevant items (no long search during the call), switch to
 the customer and account info and even check if the customer has already been contacted.
 
 
@@ -155,20 +154,20 @@ the customer and account info and even check if the customer has already been co
 
 The workflow aims to keep track of the customer feedback on the purchase. For each order, the manager can:
 
-1. Contact the customer by email. You can contact the customer by email only once. 
+1. Contact the customer by email. You can contact the customer by email only once.
 
-2. If there is no response to the email, it is possible to contact the customer by phone. 
+2. If there is no response to the email, it is possible to contact the customer by phone.
    It is also possible to skip sending an email and start with a call.
-   
+
 3. Once a call has been logged, there are two options:
 
-  - Record Feedback: the *Record Feedback* form will appear. Fill it out, and click :guilabel:`Submit` to save it in the 
+  - Record Feedback: the *Record Feedback* form will appear. Fill it out, and click :guilabel:`Submit` to save it in the
     system.
-     
+
     There can be no more calls or emails to the customer related to this cart.
-   
+
   - No Reply: if it has not been possible to get in touch with the customer, it is possible to make a note on the case
-    (e.g. "an answering machine", "no parents at home, call back after six"). 
+    (e.g. "an answering machine", "no parents at home, call back after six").
 
 .. image:: ./img/magento_entities/order_followup_workflow_diagram.png
 
