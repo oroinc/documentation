@@ -13,8 +13,6 @@ End user oriented documentation that explains how to administer and configure ap
   
   * :doc:`/user_guide/activities`
   
-  * :doc:`/user_guide/email_management`
-  
   * :doc:`/user_guide/integrations`
   
   * :doc:`/user_guide/reports_segments`
