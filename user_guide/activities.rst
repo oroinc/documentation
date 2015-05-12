@@ -11,6 +11,5 @@ Activities
     activities_events
     activities_cases
     activities_add_note
-    activities_events
     activities_cont_requests
     activities_comments
