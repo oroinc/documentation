@@ -10,6 +10,7 @@ and technical details.
 * :doc:`/book/getting_started`
 
   * :doc:`/book/installation`
+  * :doc:`/book/differences`
   * :doc:`/book/entities`
   * :doc:`/book/configuration`
   * :doc:`/book/localization`
