@@ -6,10 +6,11 @@ Integration with MailChimp
 
 OroCRM supports out of the box integration with MailChimp, allowing you the following:
 
-- map and synchronize OroCRM Marketing Lists to MailChimp Subscribers Lists and keep them in synchronized
-- use the lists to create email campaigns in MailChimp and import them to OroCRM
-- use MailChimp campaign statistics and OroCRM reporting and segmentation tools to analyze campaign efficiency 
-- load data from OroCRM to your MailChimp account and back. 
+- map OroCRM Marketing Lists and Abandoned Cart Campaign to segments of MailChimp Subscriber's Lists and keep them 
+  synchronized
+- use the segments of MailChimp Subscribers Lists to create email campaigns in MailChimp and import them to OroCRM
+- use the segments based on the Abandoned Cart Campaigns to automate the mailings
+- use MailChimp campaign statistics and OroCRM reporting tools to analyze the campaign efficiency  
 
 This article describes how to define and edit the integration and synchronization settings.
 

@@ -40,7 +40,6 @@ End user oriented documentation that explains how to administer and configure ap
     getting_started
     essentials
     activities
-    email_management
     integrations
     reports_segments
     sales_and_marketing_tools

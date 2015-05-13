@@ -5,6 +5,7 @@ Integration and Synchronization Capabilities
     :maxdepth: 2
 
     magento
+    mailchimp
     zendesk
     outlook_sync
     emb_forms

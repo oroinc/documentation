@@ -5,7 +5,7 @@ Abandoned Cart Campaign
 =======================
 
 Once your OroCRM account has been integrated with :ref:`Magento <user-guide-magento-channel-integration>` and 
-:ref:MailChimp, OroCRM Abandoned Cart functionality allows you 
+:ref:`MailChimp <user-guide-mc-integration>`, OroCRM Abandoned Cart functionality allows you 
 to increase conversion and sales. With this functionality, you can easily create a list of contact details related to
 customers that abandoned your Magento store cart during the checkout process, an segments of this list based on multiple 
 criteria such as date created, cart value, item type, customer actions etc.
@@ -25,18 +25,18 @@ To use the functionality, you need to set up the Abandoned Cart extension:
 
 - Go to System --> Package Manager.
 
-.. image:: ./img/mailchimp/ex_01.png
+.. image:: ./img/mailchimp/ext_01.png
  
 - Enter the login credentials (same as for your OroCRM account). The *Oro Installer* page will emerge.
 
 - Enter the package name ***oro/crm-abandoned-cart*** and click :guilabel:`Install`
 
-.. image:: ./img/mailchimp/ex_02.png
+.. image:: ./img/mailchimp/ext_02.png
 
 
 - The extension does not require any demo data, so disable the *Load demo data* check-box.
 
-.. image:: ./img/mailchimp/ex_03.png
+.. image:: ./img/mailchimp/ext_03.png
 
 - Click :guilabel:`Continue`. Once the installation is over, a success message will be displayed. 
 
@@ -239,9 +239,10 @@ the Abandoned Cart Campaign data, to edit the connection settings or to disconne
 
 .. image:: ./img/mailchimp/acc_com_form_manage.png
 
-Once you have clicked the :guilabel:`Synchronize`, the following message will appear:
+Synchronization will be performed once in a predefined time period, specified in the course of integration, but you can
+also click the :guilabel:`Synchronize` to make sure the latest data has been considered by the synchronization.
 *"This list is linked to "{Name of the Segment in MailChimp}" segment of "{Name of the Subscribers List in MailChimp}" 
-Mailchimp List. Last synchronization date: {date}. Synchronization status: {status}*. For example:
+Mailchimp List. Last synchronization date: {date}. Synchronization status: {status}* message will appear. For example:
 
 .. image:: ./img/mailchimp/status_mes.png
 
@@ -275,7 +276,7 @@ Now you can use this segment to create a campaign or an automated campaign in Ma
 .. |IcRemove| image:: ./img/buttons/IcRemove.png
    :align: middle
 
-.. |UndoRem| image:: ./img/buttons/UndoRemove.png
+.. |UndoRem| image:: ./img/buttons/UndoRem.png
    :align: middle
       
 .. |BGotoPage| image:: ./img/buttons/BGotoPage.png

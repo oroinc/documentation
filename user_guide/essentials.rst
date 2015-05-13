@@ -6,6 +6,5 @@ Essentials
 
     export_import
     activities
-    email_management
     integrations
     reports_segments
