@@ -23,7 +23,7 @@ This article describes how to define and edit the integration and synchronizatio
 On the MailChimp Side
 ----------------------
 
-The only thing you will need from Zendesk is your API Key value:
+The only thing you will need on the MailChimp part is your API Key value:
 
 - Open your account and go to the *Account* page.
 
@@ -33,7 +33,7 @@ The only thing you will need from Zendesk is your API Key value:
 
 .. image:: ./img/mailchimp/mc_account_2.png
 
-- Click the :guilabel:`Create A Key` below the list of your API keys.
+- Click the :guilabel:`Create A Key` button below the list of your API keys.
 
 .. image:: ./img/mailchimp/mc_account_3.png
 
