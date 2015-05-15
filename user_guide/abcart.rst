@@ -1,22 +1,23 @@
 
 .. _user-guide-acc:
 
-Abandoned Cart Campaign
-=======================
+Magento Abandoned Cart Campaign
+===============================
 
 Once your OroCRM account has been integrated with :ref:`Magento <user-guide-magento-channel-integration>` and 
 :ref:`MailChimp <user-guide-mc-integration>`, OroCRM Abandoned Cart functionality allows you 
-to increase conversion and sales. With this functionality, you can easily create a list of contact details related to
+to increase conversion and sales. 
+
+With this functionality, you can easily create a list of contact details related to
 customers that abandoned your Magento store cart during the checkout process, an segments of this list based on multiple 
 criteria such as date created, cart value, item type, customer actions etc.
 
-Once the list or segment was created it can be uploaded to MailCimp to launch an usual or automated email campaign. The
+Once the list or segment was created it can be uploaded to MailCimp to launch a usual or automated email campaign. The
 contact list and campaign details can be then synchronized in the MailChimp and OroCRM accounts. The OroCRM Website 
 tracking and MailChimp campaign tracking tools can be used. 
 
 
 .. _user-guide-acc-ext:
-
 
 Set up Abandoned Cart Extension
 -------------------------------
