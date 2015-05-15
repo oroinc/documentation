@@ -12,9 +12,9 @@ With this functionality, you can use multiple criteria such as the date created,
 and more to create dynamically updated lists of contact details related to customers that abandoned your Magento store 
 cart during the checkout process.
 
-Once a list has been created, it can be uploaded to MailChimp and used to launch a usual or automated email campaign. The
-contact list and campaign details can be then synchronized in the MailChimp and OroCRM accounts. MailChimp's campaign 
-tracking and OroCRM's  Website tracking and reporting tools can be used to analyze the campaign efficiency. 
+Once a list has been created, it can be uploaded to MailChimp and used to launch a usual or automated email campaign. 
+The contact list and campaign details can be then synchronized in the MailChimp and OroCRM accounts. MailChimp's 
+campaign tracking and OroCRM's  Website tracking and reporting tools can be used to analyze the campaign efficiency. 
 
 
 .. _user-guide-acc-ext:
