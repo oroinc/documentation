@@ -4,7 +4,7 @@
 Integration with MailChimp
 ==========================
 
-OroCRM supports out of the box integration with MailChimp, allowing you the following:
+OroCRM supports out of the box integration with MailChimp, allowing you to do the following:
 
 - map OroCRM Marketing Lists and Abandoned Cart Campaign to segments of MailChimp Subscriber's Lists and keep them 
   synchronized
@@ -68,7 +68,7 @@ Define the following mandatory details in the *"General"* section:
   "**Name***","The integration name used to refer to the integration within the system."
   "**API Key***","The API key generated and/or copied in the MailChimp account (as described above)."
   "**Default Owner**","Limits the list of users that can manage the integration and all the entities imported within 
-  the integration to the users, whose roles allow managing integration and corresponding entities assigned to the owner 
+  the integration to only those, whose roles allow managing integration and corresponding entities assigned to the owner 
   (e.g. the owner, members of the same business unit, system administrator, etc.)
   
   By default, the field is filled in with the user creating the integration."
@@ -89,15 +89,15 @@ Check *Enable Two Way Sync* box, if you want to download data both from MailChim
 back. If the box is left unchecked, data from MailChimp will be loaded into OroCRM, but changes performed in OroCRM will 
 not be loaded into MailChimp.
 
-If two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
+If two-way synchronization is enabled, define the priority used for the conflict resolution (e.g., if the same
 customer details were edited from the both OroCRM and MailChimp):
 
 - *Remote wins*: MailChimp data will be applied to both MailChimp and OroCRM
 
 - *Local wins*: OroCRM data will be applied to both MailChimp and OroCRM
 
-For example we have created a Demo MailChimp Integration with two-way synchronization enabled, where if the same data
-is changed from both MailChimp and OroCRM, the MailChimp changes will take precedence.
+For example, we have created a Demo MailChimp Integration with two-way synchronization enabled, where if the same data
+is changed in both MailChimp and OroCRM, the MailChimp changes will take precedence.
 
 .. image:: ./img/mailchimp/mc_create.png
 
