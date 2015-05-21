@@ -73,9 +73,7 @@ and checkout the release you want to use:
 .. code-block:: bash
 
     $ cd /var/www
-    $ git clone https://github.com/orocrm/crm-application.git orocrm
-    $ cd orocrm
-    $ git reset --hard 1.7.0
+    $ git clone -b 1.7.0 https://github.com/orocrm/crm-application.git orocrm
 
 .. note::
 
@@ -90,9 +88,7 @@ and checkout the release you want to use:
     .. code-block:: bash
 
         $ cd /var/www
-        $ git clone https://github.com/orocrm/platform-application.git orocrm
-        $ cd orocrm
-        $ git reset --hard 1.7.0
+        $ git clone -b 1.7.0 https://github.com/orocrm/platform-application.git orocrm
 
 Next, you'll need to install the necessary dependencies which may take some time:
 
