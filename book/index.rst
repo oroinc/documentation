@@ -9,6 +9,7 @@ and technical details.
 
 * :doc:`/book/getting_started`
 
+  * :doc:`/book/introduction`
   * :doc:`/book/installation`
   * :doc:`/book/entities`
   * :doc:`/book/configuration`
