@@ -96,6 +96,7 @@ can be granted for a user to them. Use the ``security`` scope in the ``defaultVa
 the ``@Config`` annotation:
 
 .. code-block:: php-annotations
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Product.php
     namespace Acme\DemoBundle\Entity;
@@ -124,6 +125,7 @@ entity. If you want to restrict the available permissions for an entity, you can
 separated explicitly. For example, you limit it to the ``VIEW`` and ``EDIT`` permissions:
 
 .. code-block:: php-annotations
+    :linenos:
 
     /**
      * ...
@@ -154,6 +156,7 @@ a controller method. Restricting access can be done in two different ways:
    permission to check for:
 
    .. code-block:: php-annotations
+       :linenos:
 
        // src/Acme/DemoBundle/Controller/ProductController.php
        namespace Acme\DemoBundle\Controller;
@@ -185,6 +188,7 @@ a controller method. Restricting access can be done in two different ways:
    The ACL configuration from the example above looks like this:
 
    .. code-block:: yaml
+       :linenos:
 
        # src/Acme/DemoBundle/Resources/config/acl.yml
        product_edit:
@@ -195,6 +199,7 @@ a controller method. Restricting access can be done in two different ways:
    The annotation of your controller method becomes a lot smaller then:
 
    .. code-block:: php-annotations
+      :linenos:
 
        // src/Acme/DemoBundle/Controller/ProductController.php
        namespace Acme\DemoBundle\Controller;
@@ -218,6 +223,7 @@ a controller method. Restricting access can be done in two different ways:
    YAML configuration of your ACL to define which method(s) should be protected:
 
    .. code-block:: yaml
+       :linenos:
 
        # src/Acme/DemoBundle/Resources/config/acl.yml
        product_edit:
@@ -321,6 +327,7 @@ If you need to manually check the access of the current user to a certain object
     .. configuration-block::
 
         .. code-block:: php-annotations
+            :linenos:
 
             // ...
 
@@ -336,6 +343,7 @@ If you need to manually check the access of the current user to a certain object
             }
 
         .. code-block:: yaml
+            :linenos:
 
             # src/Acme/DemoBundle/Resources/config/acl.yml
             protected_action:
