@@ -4,7 +4,7 @@ Using Entities
 The Oro Platform makes it easy to manage your entities:
 
 #. :ref:`Use Doctrine to create your own entities. <book-entities-doctrine>`
-#. :ref:`Configure how your entities will be presented and control access <book-entities-entity-configuration>`
+#. :ref:`Configure how your entities will be presented and control access. <book-entities-entity-configuration>`
 
 .. _book-entities-doctrine:
 
@@ -16,7 +16,10 @@ Defining Entities
 
 You can define entities in the same way that you are used to from common Symfony applications. For
 example, you can use the annotations provided by Doctrine (of course, you can use the YAML or XML
-configuration format as well)::
+configuration format as well):
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -63,16 +66,16 @@ information to tell Doctrine how the data will be mapped to your database.
 
 .. seealso::
 
-    Read the `Doctrine ORM documentation`_ to get a deeper understand of how you can map the model
+    Read the `Doctrine ORM documentation`_ to get a deeper understanding of how you can map the model
     to a database.
 
 Updating the Database Schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once the models have been created, you need to update the database to reflect the changes you have
-done. Usually, you need a mechanism to iteratively extend your model. For this purpose, you usually
-use migrations. Migraions allow you to version your database schema. Everytime you modify your
-model, you'll create a new migration that reflects the changes of this particular schema version.
+done. So you need a mechanism to iteratively extend your model. For this purpose, you usually
+use migrations. Migrations allow you to version your database schema. Everytime you modify your
+model, you'll create a new migration that reflects the changes for this particular schema version.
 
 However, Doctrine's migration mechanism only works well on the application level. It is not capable
 to handle different schema versions per bundle. This means that you cannot use them in a modular
@@ -97,7 +100,10 @@ corresponding directory are evaluated and the contents of their ``up()`` method 
 class is treated as a migration class when it implements the
 :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface.
 
-For example, the migration class for the ``Hotel`` entity, has to look like this::
+For example, the migration class for the ``Hotel`` entity will look like this:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Migraions/Schema/v1_0/Hotel.php
     namespace Acme\DemoBundle\Migraions\Schema\v1_0;
@@ -123,7 +129,7 @@ and you can also execute queries directly using the ``QueryBag`` if needed.
 
 Queries that are executed using the ``QueryBag`` are divided into two groups: use the
 :method:`Oro\\Bundle\\MigrationBundle\\Migration\\QueryBag::addPreQuery` method to add a query
-that is executed before schema changes from a migration class are performed. Queries scheduled with
+that is executed before the schema changes from the migration class are performed. Queries scheduled with
 the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\QueryBag::addPostQuery` method are executed
 after the schema has been modified.
 
@@ -132,7 +138,7 @@ To actually load and apply the migrations to the existing database schema, you h
 
 .. code-block:: bash
 
-    $ php app/console oro:migration:load
+    $ php app/console oro:migration:load --force
 
 This command checks for present migration versions that are currently not reflected in the existing
 database schema and executes all missing migrations sequentially in ascending order.
@@ -213,7 +219,7 @@ options, you create a ``entity_config.yml`` file in your bundle which can look l
 
 The key used in the first level of the entity configuration is a custom identifier used to create
 a kind of namespace for the additional options. For each scope, a different service is created (its
-name follows the schema ``oro_entity_config.provider.<scope>``, for example, the service name for
+name follows the schema ``oro_entity_config.provider.<scope>``). For example, the service name for
 the options configured in the example above is ``oro_entity_config.provider.acme_demo``. It is an
 instance of the :class:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider` class.
 
@@ -225,8 +231,8 @@ be audited.
 
 The configured values are stored in different tables:
 
-* Values for options on the entity level, are stored in the ``oro_entity_config`` table.
-* The ``oro_entity_config_field`` table is used to stored configured values for the field level.
+* Values for options on the entity level are stored in the ``oro_entity_config`` table.
+* The ``oro_entity_config_field`` table is used to store configured values for the field level.
 
 Below the configuration level, each option's configuration is divided into three sections:
 
@@ -253,7 +259,7 @@ Below the configuration level, each option's configuration is divided into three
     +-------------------+-------------------------------------------------------------------------+
 
 ``grid``
-    Configures the way the field is presented in a list view:
+    Configures the way the field is presented in a datagrid:
 
     +-------------------+-------------------------------------------------------------------------+
     | Option            | Description                                                             |
@@ -313,9 +319,9 @@ Indexed Attributes
 
 .. _book-entities-entity-extension:
 
-By default, the values the users enters when editing additional entity attributes are stored as
+By default, the values the user enters when editing additional entity attributes are stored as
 serialized arrays in the database. However, when the application needs to use attributes in an SQL
-query, it needs to get the *raw* data. To achieve this, you to enable the index using the
+query, it needs to get the *raw* data. To achieve this, you have to enable the index using the
 :ref:`indexed key <book-entities-configuration-options>` in the ``options`` section. When this
 option is enabled, the system will store a copy of the attributes value and keep it in sync when it
 gets updated (the indexed value is stored in the ``oro_entity_config_index_value`` table).
@@ -336,7 +342,7 @@ the system apply entity config options to them:
     The bundles from the Oro Platform offer a large set of predefined options that you can use in
     your entities to configure them and control their behavior. Take a look at the
     ``entity_config.yml`` files that can be found in many bundles and read their dedicated
-    documentations.
+    documentation.
 
 .. _book-entities-config-annotation:
 
@@ -345,7 +351,10 @@ The ``@Config`` Annotation
 
 To make the ``Hotel`` entity from the first part of the chapter configurable, simply import the
 :class:`@Config <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\Config>` annotation and
-use it in the class docblock::
+use it in the class docblock:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -364,7 +373,10 @@ use it in the class docblock::
     }
 
 You can also change the default value of each configurable option using the ``defaultValues``
-argument::
+argument:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -393,9 +405,12 @@ argument::
 The ``@ConfigField`` Annotation
 ...............................
 
-Similarly the ``@Config`` annotation for entities, you can use the
+Similar to the ``@Config`` annotation for entities, you can use the
 :class:`@ConfigField <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation\\ConfigField>`
-annotation to make properties of an entity configurable::
+annotation to make properties of an entity configurable:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -420,7 +435,10 @@ annotation to make properties of an entity configurable::
         // ...
     }
 
-Default values can be changed in the same way as it can be done on the entity level::
+Default values can be changed in the same way as it can be done on the entity level:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Hotel.php
     namespace Acme\DemoBundle\Entity;
@@ -459,7 +477,10 @@ entities, you will usually want to access the configured values. The main entry 
 configuration is the provider service for the particular scope which has to be retrieved from the
 service container. For example, if you want to work with your newly created ``auditable`` option,
 you will have to use the ``oro_entity_config.provider.acme_demo`` service (the ``auditable`` option
-was defined in the ``acme_demo`` scope)::
+was defined in the ``acme_demo`` scope):
+
+.. code-block:: php
+    :linenos:
 
     // $container is an instance of Symfony\Component\DependencyInjection\ContainerInterface
     $container = ...;
@@ -496,7 +517,10 @@ of the :class:`Oro\\Bundle\\EntityConfigBundle\\Config\\ConfigInterface`:
 
 Please note that it is not enough to modify configuration values in the provider. You also need to
 persist your changes by calling the :method:`Oro\\Bundle\\EntityConfigBundle\\Provider\\ConfigProvider::flush`
-method afterwards::
+method afterwards:
+
+.. code-block:: php
+    :linenos:
 
     // ...
     $acmeDemoProvider = $container->get('oro_entity_config.provider.acme_demo');
@@ -526,7 +550,7 @@ you, the developer, to add them instead.
 The second approach is :ref:`to use the EntityExtendBundle <book-entities-extended-entities>` to
 configure so-called associations. Once you have done that in your application, and you can also to
 do that for configurable entities from third-party modules, the bundle will create matching
-Doctrine relations and gett/setter methods for you automatically. The downside of this approach is
+Doctrine relations and getter/setter methods for you automatically. The downside of this approach is
 that the owning side of a relationship always has to be an extended entity and that associations do
 not work for bidirectional relations.
 
@@ -539,7 +563,10 @@ If you know in advance which entities will be associated with your ``Email`` ent
 common Doctrine relations. For example, an ``Email`` can either belong to a ``Contact`` or to a
 ``User``. All you have to do is to add both a ``$user`` and a ``$contact`` property to your
 ``Email`` class and dynamically choose the property to use in the ``setOwner()`` and ``getOwner()``
-methods::
+methods:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Email.php
     namespace Acme\DemoBundle\Entity;
@@ -612,7 +639,7 @@ If you are in the need of those features, you have to use
 Extending Entities
 ~~~~~~~~~~~~~~~~~~
 
-Common Doctrine entities have a fixed structure This means that you cannot add additional
+Common Doctrine entities have a fixed structure. This means that you cannot add additional
 attributes to existing entities. Of course, one can extend an entity class and add additional
 properties in the subclass. However, this approach does not work anymore when an entity should be
 extended by different modules.
@@ -633,7 +660,10 @@ To solve this, you can use the `EntityExtendBundle`_ which offers the following 
 Creating Extended Entities
 ..........................
 
-#. Create the *extend entity* class::
+#. Create the *extend entity* class:
+
+   .. code-block:: php
+       :linenos:
 
        // src/Acme/DemoBundle/Model/ExtendHotel.php
        namespace Acme\DemoBundle\Model;
@@ -658,7 +688,10 @@ Creating Extended Entities
    The class itself is an empty skeleton. Its actual content will be generated dynamically in the
    application cache.
 
-#. Let the *entity class* extend the *extend entity* class::
+#. Let the *entity class* extend the *extend entity* class:
+
+   .. code-block:: php
+       :linenos:
 
        // src/Acme/DemoBundle/Entity/Hotel.php
        namespace Acme\DemoBundle\Entity;
@@ -700,7 +733,10 @@ Creating Extended Entities
            }
        }
 
-#. Add new properties using Oro migrations::
+#. Add new properties using Oro migrations:
+
+   .. code-block:: php
+       :linenos:
 
        // src/Acme/DemoBundle/Migraions/Schema/v2_0;
        namespace Acme\DemoBundle\Migrations\Schema\v2_0;
@@ -734,10 +770,8 @@ Creating Extended Entities
        }
 
    The example above adds a new column ``hotel_ranking``. The third parameter configures the column
-   as an extended field. Using the ``ExtendScope::OWNER_CUSTOM`` owner in the ``oro_options`` key,
-   makes the column visible and configurable in the UI. You can use ``ExtendScope::OWNER_SYSTEM``
-   instead. In that case, it cannot be removed by an administrator. You need to be aware that those
-   fields are not included in forms, grids and view pages, but must be added manually.
+   as an extended field. The ``ExtendScope::OWNER_CUSTOM`` owner in the ``oro_options`` key
+   indicates that the column was added dynamically. It will be visible and configurable in the UI.
 
    Note that this property is neither present in the ``Hotel`` entity class nor in the
    ``ExtendHotel`` class in your bundle, but it will only be part of the ``ExtendHotel`` class that
@@ -747,7 +781,7 @@ Creating Extended Entities
 
    .. code-block:: bash
 
-       $ php app/console oro:migration:load
+       $ php app/console oro:migration:load --force
 
    This command updates the database schema and generates the real implementation of the
    ``ExtendHotel`` class in the application cache as well.
@@ -761,11 +795,14 @@ Creating Extended Entities
 Many-to-one Associations
 ........................
 
-To explain how to create many-to-one associations, the following explains some parts of the
+To explain how to create many-to-one associations, the following section explains some parts of the
 `OroNoteBundle`_ to show how an entity can be created to which you can then attach a collection of
 ``Note`` objects. First, you need to create the owning side of the associations. As explained
 above, the owning side has to be an extended entity. Please note that the real implementations of
-the methods shown below will be generated in the cache::
+the methods shown below will be generated in the cache:
+
+.. code-block:: php
+    :linenos:
 
     namespace Oro\Bundle\NoteBundle\Model;
 
@@ -791,7 +828,10 @@ the methods shown below will be generated in the cache::
         }
     }
 
-The actual ``Note`` entity needs to inerit the ``ExtendNote`` then::
+The actual ``Note`` entity then needs to extend the ``ExtendNote``:
+
+.. code-block:: php
+    :linenos:
 
     namespace Oro\Bundle\NoteBundle\Entity;
 
@@ -838,7 +878,10 @@ which entities notes can be added:
 Finally, you have to create extensions for the entity config dumper, the entity generator and the
 migrations to make the association available through all stages of the entity generation process:
 
-#. Hook into the entity config dumper::
+#. Hook into the entity config dumper:
+
+   .. code-block:: php
+       :linenos:
 
        namespace Oro\Bundle\NoteBundle\Tools;
 
@@ -864,7 +907,10 @@ migrations to make the association available through all stages of the entity ge
            }
        }
 
-#. Extend the entity generator::
+#. Extend the entity generator:
+
+   .. code-block:: php
+       :linenos:
 
        namespace Oro\Bundle\NoteBundle\Tools;
 
@@ -882,7 +928,10 @@ migrations to make the association available through all stages of the entity ge
            }
        }
 
-#. Extend the migration behavior to add the association to target entities::
+#. Extend the migration behavior to add the association to target entities:
+
+   .. code-block:: php
+       :linenos:
 
        namespace Oro\Bundle\NoteBundle\Migration\Extension;
 
@@ -957,14 +1006,17 @@ entity needs to provide five methods (``Group`` has to be replaced with the actu
 association):
 
 * ``supportGroupTarget``
-* ``getActivityTargets``
-* ``hasActivityTarget``
-* ``addActivityTarget``
-* ``removeActivityTarget``
+* ``getGroupTargets``
+* ``hasGroupTarget``
+* ``addGroupTarget``
+* ``removeGroupTarget``
 
 To make this more clear, the `ActivityBundle`_ will be taken as an example. It provides the ability
 to assign activities (like calls, emails, tasks) to other entities. The association name is
-``Activity``. Therefore, the ``ExtendActivity`` class looks like this::
+``Activity``. Therefore, the ``ExtendActivity`` class looks like this:
+
+.. code-block:: php
+    :linenos:
 
     namespace Oro\Bundle\ActivityBundle\Model;
 
@@ -1038,7 +1090,10 @@ to assign activities (like calls, emails, tasks) to other entities. The associat
     }
 
 To create a new entity that can be assigned in an ``Activity`` association, let the entity class
-extend the ``ExtendActivity`` class::
+extend the ``ExtendActivity`` class:
+
+.. code-block:: php
+    :linenos:
 
     // src/Acme/DemoBundle/Entity/Email.php
     namespace Acme\DemoBundle\Entity;
@@ -1089,7 +1144,10 @@ You then have to use the entity configuration
 Finally, you have to create extensions for the entity config dumper, the entity generator and the
 migrations to make the association available through all stages of the entity generation process:
 
-#. Hook into the entity config dumper::
+#. Hook into the entity config dumper:
+
+   .. code-block:: php
+       :linenos:
 
        namespace Oro\Bundle\ActivityBundle\Tools;
 
@@ -1123,7 +1181,10 @@ migrations to make the association available through all stages of the entity ge
            }
        }
 
-#. Extend the entity generator::
+#. Extend the entity generator:
+
+   .. code-block:: php
+       :linenos:
 
        namespace Oro\Bundle\ActivityBundle\Tools;
 
@@ -1189,7 +1250,10 @@ migrations to make the association available through all stages of the entity ge
            }
        }
 
-#. Extend the migration behavior to add the association to target entities::
+#. Extend the migration behavior to add the association to target entities:
+
+   .. code-block:: php
+       :linenos:
 
        namespace Oro\Bundle\ActivityBundle\Migration\Extension;
 

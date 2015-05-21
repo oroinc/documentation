@@ -29,6 +29,8 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/layout`
 
 `AttachmentBundle`_ (Oro Platform)
@@ -46,7 +48,9 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/outlook_sync`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/outlook_sync`
 
 `CallBundle`_ (OroCRM)
     Basic implementation to log calls to and of contacts and accounts.
@@ -55,6 +59,8 @@ related articles is provided below the description.
     Offers the ability to create and manage campaigns and to connect them to other entities.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * User guide: :doc:`/user_guide/marketing_campaign`
         * User guide: :doc:`/user_guide/email_campaign`
@@ -68,11 +74,13 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/multi_channel_overview`
-        * User guide: :`/user_guide/channel_guide`
-        * User guide: :`/user_guide/accounts`
-        * User guide: :`/user_guide/b2b_channels`
-        * User guide: :`/user_guide/magento_channels`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/multi_channel_overview`
+        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/accounts`
+        * User guide: :doc:`/user_guide/b2b_channels`
+        * User guide: :doc:`/user_guide/magento_channels`
 
 `ChartBundle`_ (Oro Platform)
     Display different types of charts (like line charts, pie charts, flow charts).
@@ -89,7 +97,9 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/outlook_sync`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/outlook_sync`
 
 `ContactUsBundle`_ (OroCRM)
     Embedded form and workflow for *contact us* requests.
@@ -98,6 +108,8 @@ related articles is provided below the description.
     An interface and scheduler for time-based command execution.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/jobs`
 
@@ -109,6 +121,8 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/data_audits`
 
 `DataGridBundle`_ (Oro Platform)
@@ -116,12 +130,16 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/channel_guide`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/channel_guide`
 
 `DemoDataBundle`_ (OroCRM)
     Contains necessary fixtures for CRM features demonstration.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/installation`
 
@@ -141,20 +159,24 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/entities`
-        * User guide: :`/user_guide/entity_fields`
-        * User guide: :`/user_guide/channel_guide`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entity_fields`
+        * User guide: :doc:`/user_guide/channel_guide`
 
 `EntityConfigBundle`_ (Oro Platform)
     Allows to attach metadata to entity classes and offers a UI to manage them.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/data_audits`
         * Book: :doc:`/book/configuration`
-        * User guide: :`/user_guide/entities`
-        * User guide: :`/user_guide/entity_fields`
+        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entity_fields`
 
 `EntityExtendBundle`_ (Oro Platform)
     Offers a way to create new entities in the UI, to add new relations between existing entities
@@ -162,9 +184,11 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/customization`
-        * User guide: :`/user_guide/entities`
-        * User guide: :`/user_guide/entity_fields`
+        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entity_fields`
 
 `EntityMergeBundle`_ (Oro Platform)
     Merges different entity definitions into one entity.
@@ -177,6 +201,8 @@ related articles is provided below the description.
     data in the backend.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * User guide: :doc:`/user_guide/filters`
 
@@ -195,13 +221,17 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/importexport`
-        * User guide: :`/user_guide/export_import`
+        * User guide: :doc:`/user_guide/export_import`
 
 `InstallerBundle`_ (Oro Platform)
     The web installer for the OroCRM.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/installation`
 
@@ -211,13 +241,17 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/channel_guide`
-        * User guide: :`/user_guide/magento_channel_integration`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/magento_channel_integration`
 
 `LocaleBundle`_ (Oro Platform)
     Formatting of numbers, dates, names and addresses based on the user's locale.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/localization`
 
@@ -226,30 +260,38 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/multi_channel_overview`
-        * User guide: :`/user_guide/channel_guide`
-        * User guide: :`/user_guide/magento_channel_integration`
-        * User guide: :`/user_guide/magento_channels`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/multi_channel_overview`
+        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/magento_channel_integration`
+        * User guide: :doc:`/user_guide/magento_channels`
 
 `MarketingListBundle`_ (OroCRM)
     Supports generating contact lists automatically for marketing purposes.
 
     .. seealso::
 
-        * User guide: :`/user_guide/marketing_list`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/marketing_list`
 
 `MigrationBundle`_ (Oro Platform)
     Allows to version the application's database.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/customization`
-        * User guide: :`/user_guide/entities`
+        * User guide: :doc:`/user_guide/entities_ui`
 
 `NavigationBundle`_ (Oro Platform)
     Define menus in different bundles in YAMl files based on the `KnpMenuBundle`_.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/reports_configuration`
 
@@ -276,17 +318,21 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/reports_configuration`
-        * User guide: :`/user_guide/accounts`
-        * User guide: :`/user_guide/b2b_customers`
-        * User guide: :`/user_guide/leads`
-        * User guide: :`/user_guide/opportunities`
-        * User guide: :`/user_guide/reports`
+        * User guide: :doc:`/user_guide/accounts`
+        * User guide: :doc:`/user_guide/b2b_customers`
+        * User guide: :doc:`/user_guide/leads`
+        * User guide: :doc:`/user_guide/opportunities`
+        * User guide: :doc:`/user_guide/reports`
 
 `RequireJSBundle`_ (Oro Platform)
     Integrates the `RequireJS JavaScript library`_.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
@@ -297,6 +343,8 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * User guide: :doc:`/user_guide/sales_processes_workflow`
 
 `SearchBundle`_ (Oro Platform)
@@ -304,12 +352,16 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/search`
 
 `SecurityBundle`_ (Oro Platform)
     A flexible security model which allows to protect data integrity and privacy.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/security`
 
@@ -333,12 +385,16 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/outlook_sync`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/outlook_sync`
 
 `TestFrameworkBundle`_ (Oro Platform and OroCRM)
     Test framework functionality and main entry point for the JS UnitTest runner.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/functional_tests`
 
@@ -346,6 +402,8 @@ related articles is provided below the description.
     Basic theme support.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/layout`
 
@@ -355,6 +413,8 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * User guide: :doc:`/user_guide/how_to_track`
         * User guide: :doc:`/user_guide/marketing_tracking`
 
@@ -363,6 +423,8 @@ related articles is provided below the description.
 
     .. seealso::
 
+        Read more about it in the following articles:
+
         * Book: :doc:`/book/localization`
         * Book: :doc:`/book/customization`
 
@@ -370,6 +432,8 @@ related articles is provided below the description.
     Layouts and control elements for the user interface.
 
     .. seealso::
+
+        Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
@@ -385,9 +449,11 @@ related articles is provided below the description.
 
     .. seealso::
 
-        * User guide: :`/user_guide/b2b_customers`
-        * User guide: :`/user_guide/leads`
-        * User guide: :`/user_guide/opportunities`
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/b2b_customers`
+        * User guide: :doc:`/user_guide/leads`
+        * User guide: :doc:`/user_guide/opportunities`
         * User guide: :doc:`/user_guide/sales_processes_workflow`
         * User guide: :doc:`/user_guide/workflow_management`
 
