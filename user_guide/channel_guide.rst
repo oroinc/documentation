@@ -1,7 +1,7 @@
 .. _user-guide-channels:
 
-Channels
-========
+Channels Overview
+=================
 
 :term:`Channels <Channel>` in :term:`OroCRM` represent sources of customers and customer data.
 

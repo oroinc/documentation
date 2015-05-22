@@ -2,7 +2,7 @@ Activities
 ==========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     activities_intro
     activities_send_email
