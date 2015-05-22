@@ -6,4 +6,3 @@ Entity Management
 
     entities_ui
     entity_fields
-

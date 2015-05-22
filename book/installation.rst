@@ -1,9 +1,33 @@
 .. index::
     single: Installation
+    single: OroCRM Application; Installation
     single: Platform Application; Installation
 
-Install and Configure the Oro Platform Application
-==================================================
+Installation and Configuration
+==============================
+
+This chapter describes how to install the Oro Platform application or the OroCRM application. Both
+applications are similar, but the platform contains only a subset of all bundles available in the
+full CRM.
+
+The next steps assume that you plan to install the complete OroCRM application, but it will explain
+what needs to be done differently when installing the Platform application.
+
+.. seealso::
+
+    If you are not sure if you want to install the full OroCRM application or just the Oro Platform
+    application, please check the :doc:`the full list of all the bundles </bundles>` being
+    available in the packages.
+
+.. tip::
+
+    In case you are not sure whether or not you need the full OroCRM application, you can start
+    with the Oro Platform application and upgrade it by installing the ``oro/crm`` package using
+    Composer:
+
+    .. code-block:: bash
+
+        $ composer require oro/crm
 
 Prerequisites
 -------------
@@ -11,32 +35,29 @@ Prerequisites
 Composer
 ~~~~~~~~
 
-You need `Composer`_, a dependency manager for PHP, to install the Oro Platform
-dependencies. If you don't have Composer installed yet, you can simply install
-it using ``curl``:
+You need `Composer`_, a dependency manager for PHP, to install all the required PHP packages. In
+the following steps, it is assumed that you installed Composer global (i.e. you can execute it by
+typing ``composer`` in a console.
 
-.. code-block:: bash
-
-    $ curl -sS http://getcomposer.org/installer | php
+Please read the `instructions for installing Composer globally`_ from the Symfony documentation if
+you don't have Composer installed yet.
 
 .. seealso::
 
-    You can learn more about Composer in `its documentation`_.
+    If you want to learn more about Composer, please refer to `its documentation`_.
 
 node.js
 ~~~~~~~
 
-To use the assets shipped with the Oro Platform Application efficiently, it
-is recommended to install node.js. Please refer to the `node.js installation document`_
-for detailed instructions.
+To efficiently use the assets shipped with the OroCRM, it is recommended to install node.js. Please
+refer to the `node.js installation document`_ for detailed instructions.
 
 Getting the Source Code
 -----------------------
 
 First, you need to prepare the installation process by obtaining the application's source code and
-installing all necessary dependencies. You can get the Oro Platform Application source code in two
-different ways (both examples assume that you want to install the application into the
-``/var/www/vhosts/platform-application`` directory):
+installing all necessary dependencies. You can get the source code in two different ways (both
+examples assume that you want to install the application into the ``/var/www/orocrm`` directory):
 
 #. :ref:`Clone the GitHub repository <book-installation-github-clone>`.
 #. :ref:`Download the source code archive <book-installation-download-archive>`.
@@ -51,24 +72,32 @@ and checkout the release you want to use:
 
 .. code-block:: bash
 
-    $ cd /var/www/vhosts
-    $ git clone https://github.com/orocrm/platform-application.git
-    $ cd platform-application
-    $ git checkout 1.4.0
+    $ cd /var/www
+    $ git clone -b 1.7.0 https://github.com/orocrm/crm-application.git orocrm
 
 .. note::
 
-    Along with ``1.4.0``, you can use any other released version or even
-    the master branch to run the latest development version of the Oro
-    Platform Application.
+    Along with ``1.7.0``, you can use any other released version or even the master branch to run
+    the latest development version of the OroCRM.
 
-Next, you'll need to install the dependencies:
+.. sidebar:: Installing the Oro Platform Application
+
+    Use the `Platform application repository URL`_ instead if you do not want to install the full
+    CRM:
+
+    .. code-block:: bash
+
+        $ cd /var/www
+        $ git clone -b 1.7.0 https://github.com/orocrm/platform-application.git orocrm
+
+Next, you'll need to install the necessary dependencies which may take some time:
 
 .. code-block:: bash
 
-    $ php ../composer.phar install
+    $ composer install
 
-You will then be asked to enter the default system parameters:
+When Composer finished the installation of the dependencies, you will be asked to enter some
+system parameters needed to bootstrap the application:
 
 .. code-block:: text
 
@@ -90,7 +119,6 @@ You will then be asked to enter the default system parameters:
     session_handler (session.handler.native_file):
     locale (en):
     secret (ThisTokenIsNotSoSecretChangeIt):
-    installed (null):
 
 These options have the following meanings:
 
@@ -98,7 +126,7 @@ These options have the following meanings:
     Credentials used to connect to the database
 
 ``mailer_transport``, ``mailer_host``, ``mailer_port``, ``mailer_encryption``, ``mailer_user``, ``mailer_password``
-    Options configuring how emails sent by the Oro Platform Application are delivered
+    Options configuring how emails sent by the application are delivered
 
 ``websocket_host``, ``websocket_port``
     The host and port the websocket listens to
@@ -112,31 +140,27 @@ These options have the following meanings:
 ``secret``
     A secret value used to generate `CSRF tokens`_
 
-``installed``
-    Flag indicating whether or not the Oro Platform Application has been installed
-
 .. _book-installation-download-archive:
 
 2. Download the Source Code Archive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can download the latest version of Oro Platform from the `download section`_
-on the `official site`_. For example, on a Linux based OS this may look
-like this:
+You can download the latest OroCRM version from the `download section`_ on the `official site`_.
+For example, on a Linux based OS this may look like this:
 
 .. code-block:: bash
 
     $ cd /var/www/vhosts
-    $ wget -c http://www.orocrm.com/downloads/platform-application.tar.gz
-    $ tar -xzvf platform-application.tar.gz
+    $ wget -c http://www.orocrm.com/downloads/crm-application.tar.gz
+    $ tar -xzvf crm-application.tar.gz
 
-The source code archive already ships with the libraries installed in
-its ``vendor`` directory. You should now run Composer to update them:
+The source code archive already ships with the libraries installed in its ``vendor`` directory. You
+should now run Composer to update them to their latest supported versions:
 
 .. code-block:: bash
 
-    $ cd platform-application
-    $ php ../composer.phar update
+    $ cd orocrm
+    $ composer update
 
 .. caution::
 
@@ -144,15 +168,20 @@ its ``vendor`` directory. You should now run Composer to update them:
     can change them in the ``app/config/parameters.yml`` configuration
     file.
 
+.. sidebar:: Installing the Oro Platform Application
+
+    The latest source code archive of the Oro Platform application is available at
+    http://www.orocrm.com/downloads/platform-application.tar.gz.
+
 Configuration
 -------------
 
-After having set up the source code, your ``/var/www/vhosts/platform-application``
-directory should now look like this:
+After having set up the source code successfully, your ``/var/www/orm`` directory should now look
+like this:
 
 .. code-block:: bash
 
-    user@host:/var/www/vhosts/platform-application$ ls -l
+    user@host:/var/www/orocrm$ ls -l
     total 36
     -rw-rw-r-- 1 user user 5202 Apr  4 10:08 CHANGELOG.md
     -rw-rw-r-- 1 user user 1103 Apr  4 10:08 LICENSE
@@ -185,28 +214,28 @@ The basic virtual host configuration for **Apache2** looks like this:
 .. code-block:: apache
 
     <VirtualHost *:80>
-        ServerName bap.tutorial
+        ServerName orocrm.example.com
 
         DirectoryIndex app.php
-        DocumentRoot /var/www/vhosts/platform-application/web
-        <Directory /var/www/vhosts/platform-application/web>
+        DocumentRoot /var/www/orocrm/web
+        <Directory /var/www/orocrm/web>
             # enable the .htaccess rewrites
             AllowOverride All
             Order allow,deny
             Allow from All
         </Directory>
 
-        ErrorLog /var/log/apache2/platform_application_error.log
-        CustomLog /var/log/apache2/platform_application_access.log combined
+        ErrorLog /var/log/apache2/orocrm_error.log
+        CustomLog /var/log/apache2/orocrm_access.log combined
     </VirtualHost>
 
-If you are using **Nginx** as webserver your virtual host configuration should look like this:
+If you are using **Nginx** as web server your virtual host configuration should look like this:
 
 .. code-block:: nginx
 
     server {
-        server_name bap.tutorial;
-        root        /var/www/vhosts/platform-application/web;
+        server_name orocrm.example.com;
+        root /var/www/orocrm/web;
 
         location / {
             # try to serve file directly, fallback to app.php
@@ -221,8 +250,8 @@ If you are using **Nginx** as webserver your virtual host configuration should l
             fastcgi_param HTTPS off;
         }
 
-        error_log  /var/log/nginx/platform_application_error.log;
-        access_log /var/log/nginx/platform_application_access.log;
+        error_log /var/log/nginx/orocrm_error.log;
+        access_log /var/log/nginx/orocrm_access.log;
     }
 
 .. note::
@@ -231,17 +260,16 @@ If you are using **Nginx** as webserver your virtual host configuration should l
 
 .. caution::
 
-    Make sure to add the ``bap.tutorial`` hostname to your DNS or ``hosts``
-    file. For example, your ``/etc/hosts`` file on a Linux system may look
-    like this:
+    Make sure to add the ``orocrm.example.com`` hostname to your DNS or ``hosts`` file. For
+    example, your ``/etc/hosts`` file on a Linux system may look like this:
 
     .. code-block:: text
 
-        127.0.0.1 bap.tutorial
+        127.0.0.1 orocrm.example.com
 
-Make sure that the web server user has write permissions for the ``log`` directories of the Oro
-Platform Application. Read "`Setting up Permissions`_" in the official Symfony documentation for
-several ways to configure the file permissions properly.
+Make sure that the web server user has write permissions for the ``log`` directories of the
+application. Read "`Setting up Permissions`_" in the official Symfony documentation for several
+ways to configure the file permissions properly.
 
 .. hint::
 
@@ -251,7 +279,7 @@ several ways to configure the file permissions properly.
 .. sidebar:: Multiple PHP Versions
 
     When you have multiple PHP versions installed, you should configure which of these binaries the
-    Oro Platform will use when executing CLI commands:
+    application will use when executing CLI commands:
 
     **Apache**
 
@@ -273,34 +301,27 @@ several ways to configure the file permissions properly.
 The Installation
 ----------------
 
-To finish the installation, you'll need to run the Oro Platform Application
-installation script which checks your system requirements, performs migrations
-and sets up your database tables.
+To finish the installation, you'll need to run the installation script which checks your system
+requirements, performs migrations and sets up your database tables.
 
 You can run the install script in two ways:
 
 #. :ref:`Visit the installation wizard using a web browser <book-installation-wizard>`.
 #. :ref:`Run the console installation command <book-installation-command>`.
 
-.. tip::
-
-    If you experience any problems finishing the Oro Platform Application installation, be sure to
-    take a look at the ``app/logs/oro_install.log`` file.
-
 .. _book-installation-wizard:
 
 1. Using the Web Installation Wizard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use a browser to access the Oro Platform Application installation wizard
-at ``http://bap.tutorial/install.php`` and click *Begin installation*.
-The installation wizard now checks your system configuration:
+Use a browser to access the OroCRM Application installation wizard at
+``http://orocrm.example.com/install.php`` and click *Begin installation*. The installation wizard
+now checks your system configuration:
 
 .. image:: /images/book/installation/wizard-1.png
 
-Fix any issues and click refresh. When your system configuration meets the
-Oro Platform Application requirements, click *Next*. You
-will be guided to Step 2 where you'll specify your application configuration:
+Fix any issues and click refresh. When your system configuration meets the OroCRM requirements,
+click *Next*. You will be guided to Step 2 where you'll specify your application configuration:
 
 .. image:: /images/book/installation/wizard-2.png
 
@@ -318,7 +339,7 @@ After clicking on *Install*, the installer finishes your setup:
 
 .. image:: /images/book/installation/wizard-5.png
 
-Congratulations! You have now successfully set up the Oro Platform Application!
+Congratulations! You have now successfully set up the OroCRM!
 
 .. _book-installation-command:
 
@@ -360,9 +381,13 @@ Option                   Description
 
 .. note::
 
-    The ``install`` command will report if you system configuration does
-    not meet the Oro Platform Application requirements. You'll then need
-    to fix them and run the command again.
+    The ``install`` command will report if you system configuration does not meet the requirements.
+    You'll then need to fix them and run the command again.
+
+.. tip::
+
+    If you experience any problems finishing the installation, be sure to take a look at the
+    ``app/logs/oro_install.log`` file.
 
 .. tip::
 
@@ -498,9 +523,11 @@ To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInt
     extension.
 
 .. _`Composer`: http://getcomposer.org/
+.. _`instructions for installing Composer globally`: http://symfony.com/doc/current/cookbook/composer.html
 .. _`its documentation`: https://getcomposer.org/doc/
 .. _`node.js installation document`: http://nodejs.org/download/
-.. _`GitHub repository`: https://github.com/orocrm/platform
+.. _`GitHub repository`: https://github.com/orocrm/crm-application
+.. _`Platform application repository URL`: https://github.com/orocrm/platform-application
 .. _`download section`: http://www.orocrm.com/download
 .. _`official site`: http://www.orocrm.com/
 .. _`session handler`: http://symfony.com/doc/current/components/http_foundation/session_configuration.html#save-handlers

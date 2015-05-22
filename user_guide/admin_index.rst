@@ -4,6 +4,5 @@ System Management and Administration
 .. toctree::
     :maxdepth: 2
 
-    system_config 
+    system_config
     entity_management
-

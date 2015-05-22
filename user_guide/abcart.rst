@@ -89,7 +89,10 @@ Custom fields may be added according to specific business needs.
 Filters
 ^^^^^^^
 
-Filters are necessary to choose only those abandoned cart records that you need for marketing purposes.
+By default, an only filter *"Status"* *equals to* *"Open"* is used. If you don't apply any other conditions, all the
+carts abandoned during the checkout will be covered by the mailing.  
+
+You can use other filters to choose only those abandoned cart records that you need for marketing purposes.
 For example, this could be only carts the belong to customers from a specific state and/or with a birthday 
 within a specific month, carts created after a specific date, or specified with other combinations of filter conditions. 
 
