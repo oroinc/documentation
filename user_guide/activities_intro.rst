@@ -1,7 +1,7 @@
 .. _user-guide-activities:
 
-OroCRM Activities
-=================
+OroCRM Activities Overview
+==========================
 
 An important part of a successful customer relations process is clear and timely communications between all the 
 stakeholders. OroCRM's activities enable creation, tracking and ongoing update of customer-related activities such as 

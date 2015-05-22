@@ -2,7 +2,7 @@ Channels
 ========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     channel_guide
     b2b_channels

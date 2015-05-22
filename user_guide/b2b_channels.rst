@@ -1,8 +1,8 @@
 
 .. _user-guide-b2b-channel:
 
-B2B Channels
-============
+B2B Channels Overview
+=====================
 
 :ref:`Channels <user-guide-channels>` of B2B type ("B2B channels") represent sources of customer-related data collected 
 in the course of business-to-business activities.
