@@ -6,6 +6,7 @@ Getting Started
 
     introduction
     installation
+    differences
     configuration
     localization
     security
