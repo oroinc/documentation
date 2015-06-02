@@ -161,6 +161,11 @@ Such a configuration file can define two sections:
 ``build``
     :ref:`Customize the build process. <book-requirejs-build-process-customization>`
 
+.. seealso::
+
+    You can find detailed information about the RequireJS configuration
+    :doc:`in the reference section </reference/format/requirejs>`.
+
 `RequireJSBundle`_ was developed to simplify RequireJS configuration and
 building process. It collects parts of RequireJS configuration
 ``Resources/config/requirejs.yml`` from the bundles and merges them
