@@ -43,6 +43,8 @@ The default entities are:
   "**Shopping Cart**","Keeps details on the Magento Customer's actions with the |WT02|_"
   "**Order**","Keeps details of items purchased and ordered by the customer within the channel, including store details,
   personal and banking data, one-time and total credited, paid and taxed amounts, feed-backs, etc."
+  "**Magento Newsletter Subscribers**","Keeps details of items purchased and ordered by the customer within the channel, including store details,
+  personal and banking data, one-time and total credited, paid and taxed amounts, feed-backs, etc."
 
 Details of the entity records are uploaded into OroCRM in the course of synchronization, can be
 :ref:`processed <user-guide-magento-entities-actions>` from the OroCRM UI and used to create
