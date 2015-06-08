@@ -95,6 +95,8 @@ To see the details, click on the email title or on the :guilabel:`+` to the left
 .. image:: ./img/activities/send_email_view_detailed.png
 
 
+.. _user-guide-activities-emails-add-attachment:
+
 Add Attachments
 ^^^^^^^^^^^^^^^
 

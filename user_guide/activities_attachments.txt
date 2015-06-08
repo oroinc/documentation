@@ -47,13 +47,21 @@ Once a record has been created, an attachment can be added from its View page.
 View and Manage Attachments
 ---------------------------
 
-The attachment is now available from the record View page in the *Attachments* section:
+The attachment is now available from the record View page in the grid in the *Attachments* section:
+
+.. image:: ./img/activities/add_attachment_view.png
+
+From the :ref:`grid <user-guide-ui-components-grids>`, you can
+
+- Delete the attachment: |IcDelete|
+- Get to the edit form of the attachment: |IcEdit|
+
+You can also :ref:`add the attachment <user-guide-activities-emails-add-attachment>` to emails related to the record.
 
 
 
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+   :align: middle
 
-
-Case comments work in a similar manner, except there is an additional check-box - "Make Public". You can use it to 
-define if the comment shall be public on :ref:`Zendesk <user-guide-zendesk-integration>`. 
-
-  .. image:: ./img/activities/comments_case.png 
+.. |IcEdit| image:: ./img/buttons/IcEdit.png
+   :align: middle
