@@ -38,7 +38,7 @@ The following entity records can be loaded to OroCRM from a Magento channel by d
     entities from it, subject to you needs.
 	
 Details of the entity records are uploaded into OroCRM in the course of synchronization, can be
-:ref:`processed <user-guide-magento-entities-actions>` from the OroCRM UI and used to create
+processed from the OroCRM UI and used to create
 :ref:`reports <user-guide-reports>` and set up :ref:`related workflows <user-guide-magento-entities-workflows>`.
 
 Detailed description of the entities is provided in the sections below.
@@ -46,7 +46,7 @@ Detailed description of the entities is provided in the sections below.
 .. _user-guide-magento-entities-customers:
 
 *Web Customers*
---------------
+---------------
 
 The Web Customer records represent Magento customers the data is collected for within the channel. The entity must be 
 assigned to a Magento channels
@@ -54,7 +54,7 @@ assigned to a Magento channels
 To see theMagento Customer :ref:`grid <user-guide-ui-components-grids>` go to the *Customer* → 
 *Magento Customers*.
 
-.. image:: ./img/magento_entities/mag_customers_grid
+.. image:: ./img/magento_entities/mag_customers_grid.png
 
 From the :ref:`grid <user-guide-ui-components-grids>` of Magento Customers you can:
 
@@ -145,7 +145,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>` of any order you
 .. _user-guide-magento-entities-newsletters:
   
 *Magento Newsletter Subscribers*
--------------------------------
+--------------------------------
 
 The Magento Newsletter Subscriber keep details of subscription to the Magento Newsletter for the Web Customers. 
 
@@ -241,9 +241,6 @@ the log of emails and call-attempts.
    :align: middle
 
 .. |IcMove| image:: ./img/buttons/IcMove.png
-   :align: middle
-
-.. |IcView| image:: ./img/buttons/IcView.png
    :align: middle
 
 .. |IcSub| image:: ./img/buttons/IcSub.png

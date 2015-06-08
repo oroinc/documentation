@@ -75,7 +75,9 @@ You can use the action icons to
 
 - Forward the email: |email_forward|.  A form similar to the initial *Send Email* form will appear.
 
-- Define a record in OroCRM related to the email: |email_context|. 
+- Define a record in OroCRM related to the email: 
+  
+  |email_context|. 
   
   - The *Add Context Entity* form will appear. 
 
@@ -88,7 +90,7 @@ You can use the action icons to
     If an email has been created from an entity record view page (e.g. from the Lead's page), this record will be added
     as a context automatically.
     
-    |email_context|
+    |email_context_view|
 
 To see the details, click on the email title or on the :guilabel:`+` to the left of it.
 
@@ -105,8 +107,7 @@ To add an attachment to the email, use the *From Record* and *Upload* at the ema
 - Click *Upload* and choose the file to be attached from your computer.
 
 - Click *From Record* to re-use an attachment from another email in the thread or to choose 
-  an :ref:`attachment <user-guide-activities-attachments> assigned to the records.
-
+  an :ref:`attachment <user-guide-activities-attachments>` assigned to the records.
 
 .. image:: ./img/activities/send_email_buttons.png
 
@@ -122,6 +123,6 @@ To add an attachment to the email, use the *From Record* and *Upload* at the ema
 .. |email_forward| image:: ./img/activities/email_forward.png
    :align: middle
 
-.. |email_context| image:: ./img/activities/email_context.png
+.. |email_context_view| image:: ./img/activities/email_context.png
    :align: middle
    :scale: 50%
