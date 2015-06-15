@@ -35,7 +35,7 @@ another organization, two which the users belongs.
 User Groups
 -----------
 
-You can also assign a user to a User Groups. User groups may be created in consideration of administrative structure or 
+You can also assign a user to a User Group. User groups may be created in consideration of administrative structure or 
 by any other factor of grouping (e.g. all the users with birthday in February). A user group may be used in the system
 as a single aggregating entity.
 
