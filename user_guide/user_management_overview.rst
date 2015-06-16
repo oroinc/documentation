@@ -39,7 +39,8 @@ You can also assign a user to a User Group. User groups may be created in consid
 by any other factor of grouping (e.g. all the users with birthday in February). A user group may be used in the system
 as a single aggregating entity.
 
-By default user groups are used in the :ref:`notification rules <user_guide_notification_rules>`.
+By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
+:ref:`filters <user-guide-filters-management>`.
 
 The ways to create and manage the groups is described in the 
 :ref:`User Group Management guide <user-management-groups>`.

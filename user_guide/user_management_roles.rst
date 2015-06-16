@@ -3,6 +3,8 @@
 Access and Permissions Management
 =================================
 
+.. _user-guide-user-management-permissions-ownership-type:
+
 Ownership Types
 ---------------
 
@@ -48,10 +50,10 @@ To create a new role:
   
 The sections are described in more details below:
 
-Creating a Role. The "Entity" Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The "Entity" Section
+^^^^^^^^^^^^^^^^^^^^
 
-If the ownership type of an entity is None, it will appear in the *Entity* section of the  *Create Role* form.
+If the ownership type of an entity is set to "None", it will appear in the *Entity* section of the *"Create Role"* form.
 
 .. image:: ./img/user_management/role_entity.png
 
@@ -125,8 +127,8 @@ If a new entity is created, it will be by default assigned the permission settin
 .. image:: ./img/user_management/role_entity_default.png
 
 
-Creating a Role. The "Capabilities" Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The "Capabilities" Section
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The "Capabilities" section contains a list of system functionalities, that can be enabled/disabled for all the users
 with a specific role.
@@ -140,8 +142,8 @@ You can set the capability to:
 Current list of the functionalities covered by the section is provided in a separate
 :ref:`document <user-management-capabilities>`.
   
-Creating a Role. The "Users" Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The "Users" Section
+^^^^^^^^^^^^^^^^^^^
 
 In the "Users" section, you can choose users to be assigned the role created.
 
@@ -149,8 +151,7 @@ Check/uncheck the **HAS ROLE** box, to assign/unassign a user to the role:
 
 .. note::
 
-    Please note that "HAS ROLE" check-box defines if the user is assign the specific role at create/edit form whereof
-    you are.
+    Please note that "HAS ROLE" check-box defines if the user is assign the specific role that you are editing/creating.
 
 
 *Manage Roles*
@@ -175,8 +176,7 @@ From the grid you can:
 .. |IcEdit| image:: ./img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ./img/buttons/IcView.png
-   :align: middle
+
 
 
 	

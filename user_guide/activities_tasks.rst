@@ -66,6 +66,8 @@ a week (till April 5th). An email will be sent to Ellen Rowell one day before th
 4. Click the :guilabel:`Create Task` button and the Task will be added.
 
 
+.. _user-guide-activities-tasks-assign:
+
 Assign a Task to a User
 ^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -1,0 +1,20 @@
+.. _user-ee-multi-org:
+
+Multi-Organization Support
+==========================
+
+OroCRM Enterprise Edition supports :ref:`creation <user-management-organization-create>` of multiple organization within 
+one OroCRM instance.
+One user may belong to several organization.
+
+Choosing an Organization
+------------------------
+
+If there are several organizations available to the user, this user can switch between the organizations. To switch to 
+another organization, click the selector in the top left corner and choose the organization.
+
+.. hint::
+
+    Organizations are listed in the alphabetic order and current organization is in bold.
+	
+	

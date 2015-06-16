@@ -62,6 +62,9 @@ For example, we have created an email for the contact Jeffrey Maynard:
 
     Some default email settings also depend on the :ref`related configuration settings <admin-configuration-emails>`.
 
+	
+.. _user-guide-activities-emails-view:
+
 View and Process Emails
 -----------------------
 All the emails sent for a record are displayed in and can be reached from the *Record Activities* section on the 
