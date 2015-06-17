@@ -3,8 +3,10 @@
 Organization Records Management
 ===============================
 
-.. _user-management-organization-create:
+An Organization record represents a real enterprise, business, firm, company or another organization, two which the 
+:term:`users` belongs. 
 
+.. _user-management-organization-create:
 
 Create an Organization Record
 -----------------------------
@@ -13,11 +15,12 @@ Create an Organization Record
 
     Creation of new organizations is only available in the Enterprise Edition. 
 
-In order to create an :term:`Organization` record:
+In order to create an Organization record:
 
-- Go to the *System → User Management → Organizations*
-- Click the :guilabel:`Create Organization` button
-- Define the general details and the list of users for the organization created:
+1. Go to the *System → User Management → Organizations*
+2. Click the :guilabel:`Create Organization` button
+3. Define the general details and the list of users for the organization created, and specify if it is a :ref:`system 
+   organization <user-ee-multi-org-system>`:
 
 The following fields **must** be defined 
 

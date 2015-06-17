@@ -4,7 +4,7 @@ User Management. Administrative Structure.
 ==========================================
 
 OroCRM provides a flexible user management functionality that can be tailored to reflect any specific administrative 
-structure, access levels and simple grouping.
+structure, as well as to group users in any other manner and to define the access and permission settings.
 
 .. user-guide-user-management-admin-structure
 
@@ -19,25 +19,26 @@ Any amount of users can be created within one OroCRM system.
 Users can be united into ***business units***. Any amount of users can be assigned to a business unit. One user can 
 belong to several business units.
 
-Each business unit can also have child sub-units. Such business unit is called "a parent" business unit. One parent
-business unit and its subunits are jointly addressed as a ***division***.
+Each business unit can also have child sub-units. A business unity that has child sub-units is their *parent* 
+business unit. One parent business unit and its sub-units are jointly addressed as a ***division***.
 
 
 The highest element of the structure is ***organization***. It represents a real enterprise, business, firm, company or
 another organization, two which the users belongs. 
 
-.. important::
+.. note::
 
     In the community edition there is an only organization. 
 
-    In the enterprise edition, several organizations can be created within one system.
+    In the enterprise edition, several organizations can be created within one system, as described in the 
+    :ref:`Multiple Organizations Support guide <user-ee-multi-org>`.
 
 User Groups
 -----------
 
 You can also assign a user to a User Group. User groups may be created in consideration of administrative structure or 
-by any other factor of grouping (e.g. all the users with birthday in February). A user group may be used in the system
-as a single aggregating entity.
+regardless it (e.g. all the users with birthday in February or all the users to be invited to a specific meeting). A 
+user group may be used in the system as a single aggregating entity.
 
 By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
 :ref:`filters <user-guide-filters-management>`.

@@ -1,11 +1,31 @@
 .. _user-ee-multi-org:
 
-Multi-Organization Support
-==========================
+Multiple Organizations Support
+==============================
 
 OroCRM Enterprise Edition supports :ref:`creation <user-management-organization-create>` of multiple organization within 
 one OroCRM instance.
 One user may belong to several organization.
+
+
+System and Non-System Organizations
+-----------------------------------
+
+When an organization is created, you can define if it is a ***system organization***. 
+
+- Non-system organization represent separate organization and access and permissions to them are defined as described in
+  the :ref:`Access and Permissions Management guide <user-guide-user-management-permissions>`.
+  
+- System organization provide ability to manage entities in any organization within the system. Please note that the
+  action (ability to view, create, edit, delete and assign the entity) will only be permitted to a user assigned a role, 
+  for which the action is access is set to *"System"*.
+
+.. image:: ./img/multi_org/multi_org_permission.png
+  
+.. caution::
+
+    Any other permission setting but system for a role in a system organization will be treated as "None".
+
 
 Choosing an Organization
 ------------------------
@@ -15,6 +35,24 @@ another organization, click the selector in the top left corner and choose the o
 
 .. hint::
 
-    Organizations are listed in the alphabetic order and current organization is in bold.
+    The :term:system organization (if any) is moved left related to the other organizations. The current organization 
+    is displayed in bold. |multi_org_choice|
+
+Once a user has chosen a non-system organization, all the entity records created will be created within this 
+organization.
+
+Within a system organization, the user can choose to what organization a new entity record will belong:
+ 
+
+by default 
+
 	
 	
+	
+	user-ee-multi-org-system
+	
+	
+	
+	
+		
+.. |multi_org_choice| image:: ./img/multi_org/multi_org_choice.png

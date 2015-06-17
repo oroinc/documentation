@@ -76,6 +76,10 @@ For each of this entities, you can define permissions to perform the following a
 For each entity and action you can define one of the permission settings, depending on the entity ownership type, as 
 described below:
 
+.. caution::
+
+    The description is different for :term:`system organizations <System Organization>`. Please the 
+    :ref:`Multiple Organizations Support guide <user-ee-multi-org>` for more details.
 
 Permissions for Entities with Ownership Type "Organization"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
