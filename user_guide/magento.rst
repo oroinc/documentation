@@ -1,5 +1,5 @@
-Magento
-=======
+Synchronization with Magento
+============================
 
 .. toctree::
     :maxdepth: 2
