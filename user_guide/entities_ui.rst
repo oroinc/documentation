@@ -223,7 +223,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 - Delete the entity: |IcDelete| (available only for custom entities)
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the entity:  |IcView|
-- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the entity: |IcEdit|"
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the entity: |IcEdit|"
 
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:

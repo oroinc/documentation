@@ -62,6 +62,25 @@ start with 123 are displayed:
     Please note that the list of fields available for filters depends on the  *"Show Grid Filter"* settings defined for 
     fields of the the entity. Please see the *Entity Management* guide for more details.
     
+
+Customized Grid Views
+"""""""""""""""""""""
+It is now possible to save a set of filters and sorting applied to the grid in a named view.
+To save a view:
+
+- Apply the filters you want, as described above
+
+- Click the :guilabel:`Options` link next to grid view name, choose :guilabel:`Save As` 
+
+.. image:: ./img/ui_components/custom_view_1.png
+
+- Define the view name and click the :guilabel:`Save` button
+
+.. image:: ./img/ui_components/custom_view_2.png
+
+The view will now be available in the drop-down next to the grid title
+
+.. image:: ./img/ui_components/custom_view_2.png
     
     
 .. _user-guide-ui-components-grid-action-buttons:

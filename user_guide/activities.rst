@@ -13,3 +13,4 @@ Activities
     activities_add_note
     activities_cont_requests
     activities_comments
+    activities_attachments

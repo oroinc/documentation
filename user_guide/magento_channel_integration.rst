@@ -236,9 +236,9 @@ synchronization manually from OroCRM:
 
 - The data is being synchronized. You can click *Check progress* link to see the synchronization status.
 
-After the successful synchronization, you can use OroCRM to manage Magento customer relations, as described
-in the *Magento Entities Management* guide.
-
+After the successful synchronization, details of the Magento entity records defined for the channel will be loaded to 
+OroCRM and can be processed therein, for example cart can be converted, customer details can be edited and new customers
+can be added to the system.
 
 
 

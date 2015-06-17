@@ -132,6 +132,12 @@ An *"Order successfully placed" event is saved for the campaign with a dynamic v
 cost of the order.*
 
 
+.. note::
+
+    If user performed some actions anonymously, and then has been identified within the same session (e.g. has logged in
+    or registered a profile within the same session, the system will retroactively connect the anonymous activity to the 
+    customer profile.
+
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
 

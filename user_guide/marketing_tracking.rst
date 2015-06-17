@@ -34,6 +34,11 @@ There are four mandatory fields that **must** be defined:
 
 .. image:: ./img/marketing/tracking_general.png
 
+Additionally, you can connect the tracking record with a channel in the system. If this is done, you will be able to 
+bind events registered by the tracking engine and other CRM data like orders, shopping carts, customer profiles, etc. 
+This connection can be further utilized in reports and segments.
+
+
 3. Save the record in the system with the button in the top right corner of the page.
 
 
