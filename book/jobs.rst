@@ -207,7 +207,9 @@ done by a separate process:
             $newsletter = ...;
 
             $job = new Job('acme:newsletter:send');
-            $job->persist();
+            $entityManager = $this->getDoctrine()->getManagerForClass('JMS\JobQueueBundle\Entity\Job')
+            $entityManager->persist($job);
+            $entityManager->flush();
         }
     }
 
