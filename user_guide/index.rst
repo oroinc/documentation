@@ -47,7 +47,6 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/leads`
     * :doc:`/user_guide/opportunities`
     * :doc:`/user_guide/sales_processes_workflow`
-    * (Magento) :doc:`/user_guide/sales_processes_workflow`
   
   * :doc:`/user_guide/marketing_index`
   
