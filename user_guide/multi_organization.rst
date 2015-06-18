@@ -42,17 +42,9 @@ Once a user has chosen a non-system organization, all the entity records created
 organization.
 
 Within a system organization, the user can choose to what organization a new entity record will belong:
- 
 
-by default 
+.. image:: ./img/multi_org/multi_org_new_entity.png
 
-	
-	
-	
-	user-ee-multi-org-system
-	
-	
-	
-	
-		
+
+
 .. |multi_org_choice| image:: ./img/multi_org/multi_org_choice.png
