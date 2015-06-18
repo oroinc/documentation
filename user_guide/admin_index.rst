@@ -6,3 +6,4 @@ System Management and Administration
 
     system_config
     entity_management_index
+    user_management_index
