@@ -1,7 +1,7 @@
 .. _user-guide-user-management:
 
-User Management. Administrative Structure.
-==========================================
+User Management Overview
+========================
 
 OroCRM provides a flexible user management functionality that can be tailored to reflect any specific administrative 
 structure, as well as to group users in any other manner and to define the access and permission settings.
@@ -65,7 +65,7 @@ When creating/editing the records, you can define their basic details and the fo
 - users that belong to the organization (in the Enterprise edition only)
 
 The ways to create and manage the organization records is described in the 
-:ref:`Organization Records Management guide <user-management-organization>`
+:ref:`Organization Records Management guide <user-management-organizations>`
 
 
 ***For each business unit***:

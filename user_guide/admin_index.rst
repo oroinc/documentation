@@ -5,4 +5,4 @@ System Management and Administration
     :maxdepth: 2
 
     system_config
-    entity_management
+    entity_management_index

@@ -39,7 +39,7 @@ End user oriented documentation that explains how to administer and configure ap
 
   * :doc:`/user_guide/accounts`
   * :doc:`/user_guide/multi_channel_overview`
-  * :doc:`/user_guide/channels_index``
+  * :doc:`/user_guide/channels_index`
   
     * :doc:`/user_guide/channel_guide`
     * :doc:`/user_guide/b2b_channels`
@@ -65,19 +65,19 @@ End user oriented documentation that explains how to administer and configure ap
 
   * :doc:`/user_guide/system_config`
   * :doc:`/user_guide/user_management_index`
-     
-    :doc:`user_management_overview`
-    :doc:`user_management_users`
-    :doc:`user_management_roles`
-    :doc:`user_management_bu`
-    :doc:`user_management_organization`
-    :doc:`multi_organization`
-    :doc:`user_management_groups`
+
+    * :doc:`/user_guide/user_management_overview`
+    * :doc:`/user_guide/user_management_users`
+    * :doc:`/user_guide/user_management_roles`
+    * :doc:`/user_guide/user_management_bu`
+    * :doc:`/user_guide/user_management_organization`
+    * :doc:`/user_guide/multi_organization`
+    * :doc:`/user_guide/user_management_groups`
 
   * :doc:`/user_guide/entity_management_index`
 
     * :doc:`/user_guide/entities_ui`
-    * :doc:`/user_guide/entity_fields`
+    * :doc:`/user_guide/entity_fields`  
 
   * (Marketing) :doc:`/user_guide/workflow_management`
   * (Marketing) :doc:`/user_guide/email_template`
@@ -93,7 +93,7 @@ End user oriented documentation that explains how to administer and configure ap
     activities_index
     integrations_index
     reports_segments_index
-    sales_and_marketing_tools_index
+    sales_and_marketing_index
     channels_index
     marketing_index
     workflow_management

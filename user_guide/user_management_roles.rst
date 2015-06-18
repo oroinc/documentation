@@ -142,9 +142,6 @@ You can set the capability to:
 - ***None***: users with the role won't be able to use the functionality
 - ***System***: users with the role will be able to use the functionality for all the records created within their
   OroCRM instance they've logged in into.
-
-Current list of the functionalities covered by the section is provided in a separate
-:ref:`document <user-management-capabilities>`.
   
 The "Users" Section
 ^^^^^^^^^^^^^^^^^^^

@@ -1,4 +1,4 @@
- .. _user-management-users:
+.. _user-management-users:
 
 User Records Management
 =======================
@@ -33,7 +33,7 @@ defined in the section.
 Along with the mandatory fields, there is a number of optional fields provided be default, that can be used to define 
 additional details of the customer, such as the name prefix and suffix, the middle name, birthday, additional emails,
 and phone number. You can also add the avatar (upload a picture to be used for the user in the UI) and/or 
-:term:`tags <Tag>`related to the user.
+:term:`tags <Tag>` related to the user.
 
 The "*Send An Email Invitation*" check-box defines if an invitation email shall be sent to the user. The email content
 is defined in the course of the system integration and cannot be edited from the UI.
@@ -63,7 +63,7 @@ Access Settings
 ^^^^^^^^^^^^^^^
 
 The "Access Settings" section contains all the :ref:`organizations <user-management-organizations>` and 
-:ref:`business units <user-guide-user-management-bu>` available in the system. Check the boxes to assign the user
+:ref:`business units <user-management-bu>` available in the system. Check the boxes to assign the user
 to an organization/business unit.
 
 .. image:: ./img/user_management/user_access.png

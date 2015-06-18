@@ -6,6 +6,7 @@ Marketing
 
     marketing
     email_template
+    notification_rules
     marketing_list
     marketing_campaign
     email_campaign

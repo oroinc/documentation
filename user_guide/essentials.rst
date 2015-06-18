@@ -5,6 +5,6 @@ Essentials
     :maxdepth: 2
 
     export_import
-    activities
-    integrations
-    reports_segments
+    activities_index
+    integrations_index
+    reports_segments_index

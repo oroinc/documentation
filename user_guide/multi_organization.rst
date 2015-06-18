@@ -8,8 +8,10 @@ one OroCRM instance.
 One user may belong to several organization.
 
 
-System and Non-System Organizations
------------------------------------
+.. _user-ee-multi-org-system:
+
+System Organization
+-------------------
 
 When an organization is created, you can define if it is a ***system organization***. 
 

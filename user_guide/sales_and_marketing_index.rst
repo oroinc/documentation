@@ -6,6 +6,6 @@ Sales and Marketing Tools
 
     accounts
     multi_channel_overview
-    channels
+    channels_index
     marketing_index
     workflow_management

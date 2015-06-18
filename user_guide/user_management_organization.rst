@@ -1,10 +1,10 @@
-.. _user-management-organization:
+.. _user-management-organizations:
 
 Organization Records Management
 ===============================
 
 An Organization record represents a real enterprise, business, firm, company or another organization, two which the 
-:term:`users` belongs. 
+:term:`users <User>` belongs. 
 
 .. _user-management-organization-create:
 
@@ -48,7 +48,7 @@ Users
 Additional
 ^^^^^^^^^^
 In the *"Additional"* section you can define if the organization is a 
-:ref:`system organization <user-management-system-organization>`
+:ref:`system organization <user-ee-multi-org-system>`
 
 
 View and Manage an Organization Record
