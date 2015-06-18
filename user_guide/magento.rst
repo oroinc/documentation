@@ -1,5 +1,5 @@
-Magento
-=======
+Integration with Magento
+========================
 
 .. toctree::
     :maxdepth: 2
