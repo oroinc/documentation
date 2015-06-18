@@ -53,3 +53,4 @@ Learn more about all the bundles that are available from the bundles section:
 .. toctree::
 
     /bundles
+    /system_requirements
