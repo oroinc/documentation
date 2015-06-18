@@ -1,7 +1,9 @@
 .. _system-notification-rules:
 
-Notification Rules
-==================
+Automatic Notification
+======================
+
+In OroCRM you can specifics
 
 Create a Notification Rule
 --------------------------
