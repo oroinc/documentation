@@ -3,13 +3,14 @@
 Automatic Notification
 ======================
 
-In OroCRM you can specifics
+In OroCRM you can specify conditions at which a mailing will be generated based on a pre-defined 
+:ref:`email template <user-guide-email-template>`.
 
 Create a Notification Rule
 --------------------------
 
 Notification rules define a situation to trig a mailing. 
-A notification rule can only be created for a specific :ref:`email template <user-guide-email-template>` available in 
+A notification rule can only be created for a specific email template available in 
 the system.
 
 To create a notification rule:
@@ -33,7 +34,7 @@ The following details **must** be defined in the *"General"* section.
   
 Recipient list
 ^^^^^^^^^^^^^^
-In the *"Recipient list"*, choose to what users the email will be sent when the rule is trigged.
+The *"Recipient list"* section defines a list of, to which the email will be sent when the rule is met.
 You can use one specific :term:`user` and/or :ref:`user groups <user-management-groups>` and/or a specific 
 address, to which the email will be sent.  If the *Owner* box is checked, the email will be sent to the user who is 
 assigned as the entity owner.
@@ -42,14 +43,14 @@ assigned as the entity owner.
 
 .. hint::
 
-    The box is only available for the entities with 
+    The *"Owner"* box is only available for the entities with 
     :ref:`ownership type <user-guide-user-management-permissions-ownership-type>` set to "User"
 
 
 View and Manage Notification Rules
 ----------------------------------
 
-All the notification rules available are displayed in the All Notification Rules
+All the rules available are displayed in the *"All Notification Rules"*
 :ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → Emails → Notification Rules*).
 
 From the grid you can:

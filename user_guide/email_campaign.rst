@@ -40,8 +40,8 @@ Create Email Campaigns
   "**Owner***","Limits the list of users that can manage the campaign to those, whose roles allow managing 
   email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
-Optional fields can be used to define such details as the campaign within which the mailing is done and the way to 
-represent the sender's email address and name in the emails.  
+Optional fields can be used to define such details as the way to represent the sender's email address and name in the 
+emails and to connect the email campaign to a :ref:campaign.
 
 Custom fields may be added, subject to specific business needs. 
 

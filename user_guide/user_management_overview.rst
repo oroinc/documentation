@@ -11,19 +11,19 @@ structure, as well as to group users in any other manner and to define the acces
 Administrative Structure
 ------------------------
 
-The lowest element of the administrative structure is a ***user***. This is a a person, group of people or a third 
+The lowest element of the administrative structure is a **user**. This is a person, group of people or a third 
 party system with a specific set of credentials (login and password). 
 
 Any amount of users can be created within one OroCRM system. 
 
-Users can be united into ***business units***. Any amount of users can be assigned to a business unit. One user can 
+Users can be united into **business units**. Any amount of users can be assigned to a business unit. One user can 
 belong to several business units.
 
-Each business unit can also have child sub-units. A business unity that has child sub-units is their *parent* 
-business unit. One parent business unit and its sub-units are jointly addressed as a ***division***.
+Each business unit can also have child sub-units. A business unit that has child sub-units is their *parent* 
+business unit. One parent business unit and its sub-units are jointly addressed as a **division**.
 
 
-The highest element of the structure is ***organization***. It represents a real enterprise, business, firm, company or
+The highest element of the structure is **organization**. It represents a real enterprise, business, firm, company or
 another organization, two which the users belongs. 
 
 .. note::
@@ -55,29 +55,29 @@ User Roles define access rights of a specific user, as described in the
 Getting Started
 ---------------
 
-Upon the start, you always have one Organization and one user who can create other users and may be authorized to create
-business units and (in the enterprise editions) new organizations. 
+Upon the start, you always have at least one organization and one user who can create other users and may be authorized 
+to create business units and (in the enterprise editions) new organizations. 
 
 When creating/editing the records, you can define their basic details and the following relations.
 
-***For each organization***:
-
+For each organization:
+""""""""""""""""""""""
 - users that belong to the organization (in the Enterprise edition only)
 
 The ways to create and manage the organization records is described in the 
 :ref:`Organization Records Management guide <user-management-organizations>`
 
 
-***For each business unit***:
-
+For each business unit:
+"""""""""""""""""""""""
 - users that belong to the business unit
 - parent unit of the business unit
 
 The ways to create and manage the business unit records is described in the 
 :ref:`Business Unit Records Management guide <user-management-bu>`.
 
-***For each user***:
-
+For each user:
+""""""""""""""
 - organizations the user belongs to
 - business units the user belongs to
 - groups the user belongs to

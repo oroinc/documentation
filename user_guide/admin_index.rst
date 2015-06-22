@@ -2,8 +2,8 @@ System Management and Administration
 ====================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
+    user_management_index
     system_config
     entity_management_index
-    user_management_index

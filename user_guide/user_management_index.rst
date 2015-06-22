@@ -2,7 +2,7 @@ User Management
 ===============
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     user_management_overview
     user_management_users

@@ -4,7 +4,7 @@ Organization Records Management
 ===============================
 
 An Organization record represents a real enterprise, business, firm, company or another organization, two which the 
-:term:`users <User>` belongs. 
+:term:`users <User>` belong. 
 
 .. _user-management-organization-create:
 
@@ -28,10 +28,13 @@ The following fields **must** be defined
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Status**","Chose the organization status. Possible values are *Inactive* or *Active*"
+  "**Status**","Current status of the organization.
+
+  *Inactive* or *Active*
+  "
   "**Name**","The name used to refer to the organization in the UI. This an only mandatory field"
  
- You can also add a text description of the organization.
+You can also add a text description of the organization.
  
 .. image:: ./img/user_management/organization_general.png
  
@@ -48,7 +51,7 @@ Users
 Additional
 ^^^^^^^^^^
 In the *"Additional"* section you can define if the organization is a 
-:ref:`system organization <user-ee-multi-org-system>`
+:ref:`system organization <user-ee-multi-org-system>`.
 
 
 View and Manage an Organization Record
@@ -70,7 +73,7 @@ From the grid you can:
 - Get to the :ref:`configuration settings <admin-configuration>` of the organization: |IcConfig|
 
 In the community edition, you can only edit the organization name and description of the only organization. To get to 
-the edit page, go to the *System → User Management → Organizations*
+the edit page, go to the *System → User Management → Organizations*.
 
 
 .. |IcConfig| image:: ./img/buttons/IcConfig.png

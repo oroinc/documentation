@@ -5,7 +5,8 @@ Multiple Organizations Support
 
 OroCRM Enterprise Edition supports :ref:`creation <user-management-organization-create>` of multiple organization within 
 one OroCRM instance.
-One user may belong to several organization.
+There may be any amount of organization within one OroCRM instance (the system) and one user may belong to several 
+organizations.
 
 
 .. _user-ee-multi-org-system:
@@ -13,20 +14,20 @@ One user may belong to several organization.
 System Organization
 -------------------
 
-When an organization is created, you can define if it is a ***system organization***. 
+When an organization is created, you can define if it is a **system organization**. 
 
-- Non-system organization represent separate organization and access and permissions to them are defined as described in
-  the :ref:`Access and Permissions Management guide <user-guide-user-management-permissions>`.
-  
-- System organization provide ability to manage entities in any organization within the system. Please note that the
-  action (ability to view, create, edit, delete and assign the entity) will only be permitted to a user assigned a role, 
-  for which the action is access is set to *"System"*.
+While non-system organization represent separate organization and access and permissions to them are defined as 
+described in the :ref:`Access and Permissions Management guide <user-guide-user-management-permissions>`, system 
+organizations provide ability to manage (view, create, edit, delete and assign) entity records in different 
+organizations within one OroCRM instance. 
+
+Such permissions are granted to users assigned a role, for which the action is access is set to *"System"*.
 
 .. image:: ./img/multi_org/multi_org_permission.png
   
 .. caution::
 
-    Any other permission setting but system for a role in a system organization will be treated as "None".
+    Any other permission setting but *"System"* for a role in a system organization will be treated as *"None"*.
 
 
 Choosing an Organization
@@ -37,10 +38,12 @@ another organization, click the selector in the top left corner and choose the o
 
 .. hint::
 
-    The :term:system organization (if any) is moved left related to the other organizations. The current organization 
-    is displayed in bold. |multi_org_choice|
+    The system organization (if any) is moved left related to the other organizations. The current organization 
+    is displayed in bold. 
 
-Once a user has chosen a non-system organization, all the entity records created will be created within this 
+    |multi_org_choice|
+
+Once a user has chosen a non-system organization, all the records created will be created within this 
 organization.
 
 Within a system organization, the user can choose to what organization a new entity record will belong:

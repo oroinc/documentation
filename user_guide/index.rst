@@ -63,7 +63,6 @@ End user oriented documentation that explains how to administer and configure ap
 
 * :doc:`/user_guide/admin_index`
 
-  * :doc:`/user_guide/system_config`
   * :doc:`/user_guide/user_management_index`
 
     * :doc:`/user_guide/user_management_overview`
@@ -74,10 +73,13 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/multi_organization`
     * :doc:`/user_guide/user_management_groups`
 
+
+  * :doc:`/user_guide/system_config`
+  
   * :doc:`/user_guide/entity_management_index`
 
     * :doc:`/user_guide/entities_ui`
-    * :doc:`/user_guide/entity_fields`  
+    * :doc:`/user_guide/entity_fields`
 
   * (Marketing) :doc:`/user_guide/workflow_management`
   * (Marketing) :doc:`/user_guide/email_template`
