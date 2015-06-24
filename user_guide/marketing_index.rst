@@ -2,7 +2,7 @@ Marketing
 =========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     how_to_track
     marketing_functionality_overview

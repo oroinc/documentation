@@ -1,7 +1,7 @@
 .. _user-guide-b2b-channel:
 
-B2B Channels
-============
+B2B Channels Overview
+=====================
 
 In order to collect and process information from a specific source of customer-related data related to your 
 business-to-business activities, create a :ref:`channel <user-guide-channels>` of B2B type (*"B2B channel"*). 

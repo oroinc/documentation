@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     ui_components
     import_export_functionality

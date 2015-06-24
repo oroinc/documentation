@@ -1,7 +1,7 @@
 .. _user-guide-channels:
 
-Channels
-========
+Channels Overview
+=================
 
 In OroCRM you can create a :term:`Channel <Channel>` record ("channel") for each source of customers and customer data.
 For example, any store, on-line site, social activity, etc. may be represented with its own *"Channel"* record.  

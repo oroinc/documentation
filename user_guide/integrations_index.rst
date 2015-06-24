@@ -2,7 +2,7 @@ Integration and Synchronization Capabilities
 ============================================
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     mailchimp_integration
     magento_integration_index
