@@ -3,13 +3,10 @@ User Guide
 
 End user oriented documentation that explains how to administer and configure application features.
 
-* :doc:`/user_guide/getting_started`
+* :doc:`/user_guide/getting_started_index`
 
   * :doc:`/user_guide/ui_components`
-
-* :doc:`/user_guide/essentials`
-
-  * :doc:`/user_guide/export_import`
+  * :doc:`/user_guide/import_export_functionality`
   * :doc:`/user_guide/activities_index`
 
     * :doc:`/user_guide/activities_overview`
@@ -23,16 +20,18 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/activities_add_comment`
     * :doc:`/user_guide/activities_add_attachment`
 
-  * :doc:`/user_guide/integrations_index`
+* :doc:`/user_guide/integrations_index`
   
-    * :doc:`/user_guide/mailchimp`
-    * :doc:`/user_guide/magento`
-      
-      * (Marketing) :doc:`/magento_abandoned_cart_campaigns`
+    * :doc:`/user_guide/mailchimp_integration`
+    * :doc:`/user_guide/magento_integration_index`
+    
+      * :doc:`/user_guide/magento_channels
+      * :doc:`/user_guide/magento_channel_integration
+      * (Marketing) :doc:`/user_guide/magento_abandoned_cart_campaigns`
   
     * :doc:`/user_guide/zendesk`
     * :doc:`/user_guide/outlook_sync`
-    * :doc:`/user_guide/emb_forms`
+    * :doc:`/user_guide/embedded_forms`
   
   * :doc:`/user_guide/reports_segments_index`
   
@@ -56,11 +55,11 @@ End user oriented documentation that explains how to administer and configure ap
   
   * :doc:`/user_guide/marketing_index`
   
-    * :doc:`/user_guide/marketing`
-    * :doc:`/user_guide/email_campaigns`
-    * :doc:`/user_guide/marketing_campaign`
+    * :doc:`/user_guide/marketing_functionality_overview`
     * :doc:`/user_guide/how_to_track`
-    * :doc:`/user_guide/email_template`
+    * :doc:`/user_guide/marketing_campaigns`
+    * :doc:`/user_guide/email_campaigns`
+    * :doc:`/user_guide/email_templates`
     * :doc:`/user_guide/notification_rules`
     * :doc:`/user_guide/marketing_list`
     * :doc:`/user_guide/marketing_tracking`
@@ -86,20 +85,19 @@ End user oriented documentation that explains how to administer and configure ap
   
   * :doc:`/user_guide/entity_management_index`
 
-    * :doc:`/user_guide/entities_ui`
+    * :doc:`/user_guide/entities`
     * :doc:`/user_guide/entity_fields`
 
   * (Marketing) :doc:`/user_guide/workflow_management`
   * (Marketing) :doc:`/user_guide/email_template`
   * (Marketing) :doc:`/user_guide/notification_rules`
-  * (Integrations) :doc:`/user_guide/emb_forms`
+  * (Integrations) :doc:`/user_guide/embedded_forms`
 
 
 .. toctree::
     :hidden:
 
-    getting_started
-    essentials
+    getting_started_index
     activities_index
     integrations_index
     reports_segments_index

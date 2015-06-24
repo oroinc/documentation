@@ -3,8 +3,8 @@
 Email Templates
 ===============
 
-Email templates are automatically personalized E-mail patterns. For example, you can make a single template that welcomes
-{username} and each of your subscribers will get a mail send specifically to them. 
+With OroCRM you can easily sent numerous personalized emails using one template. For example, you can make a single 
+template that welcomes {username} and each of your subscribers will get a mail send specifically to them. 
 
 The articles describes the ways to create and manage email templates. 
 

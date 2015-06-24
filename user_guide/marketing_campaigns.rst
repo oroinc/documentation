@@ -1,5 +1,3 @@
-
-
 .. _user-guide-marketing-campaigns:
 
 Campaigns
