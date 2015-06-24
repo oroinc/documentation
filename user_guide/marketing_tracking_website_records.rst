@@ -1,7 +1,7 @@
 
 .. _user-guide-marketing-tracking:
 
-Tracking Websites Record
+Tracking Website Records
 ========================
 
 *Tracking Website* records are necessary for the OroCRM :ref:`tracking functionality <user-guide-how-to-track>` and

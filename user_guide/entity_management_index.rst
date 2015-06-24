@@ -4,5 +4,5 @@ Entity Management
 .. toctree::
     :maxdepth: 2
 
-    entities_ui
+    entities
     entity_fields

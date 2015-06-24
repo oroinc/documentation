@@ -10,6 +10,6 @@ Marketing
     email_campaigns
     email_templates
     notification_rules
-    marketing_list
-    marketing_tracking
+    marketing_lists
+    marketing_tracking_website_records
     magento_abandoned_cart_campaigns

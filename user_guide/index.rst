@@ -25,8 +25,8 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/mailchimp_integration`
     * :doc:`/user_guide/magento_integration_index`
     
-      * :doc:`/user_guide/magento_channels
-      * :doc:`/user_guide/magento_channel_integration
+      * :doc:`/user_guide/magento_channels`
+      * :doc:`/user_guide/magento_channel_integration`
       * (Marketing) :doc:`/user_guide/magento_abandoned_cart_campaigns`
   
     * :doc:`/user_guide/zendesk`
@@ -40,8 +40,8 @@ End user oriented documentation that explains how to administer and configure ap
 
 * :doc:`/user_guide/sales_and_marketing_index`
 
+  * :doc:`/user_guide/multi_channel_functionality`
   * :doc:`/user_guide/accounts`
-  * :doc:`/user_guide/multi_channel_overview`
   * :doc:`/user_guide/channels_index`
   
     * :doc:`/user_guide/channels`
@@ -61,8 +61,8 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/email_campaigns`
     * :doc:`/user_guide/email_templates`
     * :doc:`/user_guide/notification_rules`
-    * :doc:`/user_guide/marketing_list`
-    * :doc:`/user_guide/marketing_tracking`
+    * :doc:`/user_guide/marketing_lists`
+    * :doc:`/user_guide/marketing_tracking_website_records`
     * :doc:`/user_guide/magento_abandoned_cart_campaigns`
 
   
@@ -77,7 +77,7 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/user_management_roles`
     * :doc:`/user_guide/user_management_bu`
     * :doc:`/user_guide/user_management_organization`
-    * :doc:`/user_guide/multi_organization`
+    * :doc:`/user_guide/multiple_organizations_support`
     * :doc:`/user_guide/user_management_groups`
 
 
@@ -89,7 +89,7 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/entity_fields`
 
   * (Marketing) :doc:`/user_guide/workflow_management`
-  * (Marketing) :doc:`/user_guide/email_template`
+  * (Marketing) :doc:`/user_guide/email_templates`
   * (Marketing) :doc:`/user_guide/notification_rules`
   * (Integrations) :doc:`/user_guide/embedded_forms`
 

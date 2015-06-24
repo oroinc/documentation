@@ -9,6 +9,6 @@ User Management
     user_management_roles
     user_management_bu
     user_management_organization
-    multi_organization
+    multiple_organizations_support
     user_management_groups
 

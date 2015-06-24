@@ -4,8 +4,8 @@ Integration and Synchronization Capabilities
 .. toctree::
     :maxdepth: 2
 
-    mailchimp
-    magento
+    mailchimp_integration
+    magento_integration_index
     zendesk
     outlook_sync
-    emb_forms
+    embedded_forms

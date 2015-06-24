@@ -4,11 +4,9 @@
 Marketing Lists
 ===============
 
-Marketing lists define the rules for automatic generation of contact lists used for marketing purposes (mass call or 
-mailing). 
-
-For example, you can create a list of personal and contact details of leads added to the system after 
-October 1 with addresses in California. 
+With OroCRM you can automatically generate a list of contacts used for marketing purposes (mass call or 
+mailing) subject to predefined conditions. For example, you can create a list of personal and contact details of leads 
+added to the system after October 1 with addresses in California. Such lists are called "*Marketing Lists"*.
 
 .. _user-guide-marketing-lists-create:
 
@@ -43,9 +41,8 @@ The following fields are mandatory and **must** be specified:
   
   - **On demand** lists will be updated only following the user request"
   "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose 
-  :ref:`roles <user-guide-user-management-permissions>` allow
-  managing marketing lists of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)
-  ."
+  :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g. the owner, 
+  members of the same business unit, system administrator, etc.)."
 
 Optional field **Description** can be filled with free text to help you and other users to understand the purpose or 
 peculiarities of the list in the future.
