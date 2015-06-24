@@ -2,7 +2,7 @@
 
 User Groups 
 ===========
-User group is one system entity that represents a group of users. 
+User group is a system entity that represents a group of users. 
 By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
 :ref:`filters <user-guide-filters-management>`.
 
@@ -12,7 +12,7 @@ Create a User Group
 
 In order to create a user group:
 
-- Go to the *System → User Management → Groups*
+- Go to *System → User Management → Groups*
 - Click the :guilabel:`Create Group` button
 - Define the general details and the list of users for the group created:
 
@@ -23,7 +23,7 @@ General
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Owner**","Define a business unit, members whereof may be able to manage the user group subject to the 
+  "**Owner**","Define a business unit, members of which may be able to manage the user group, subject to the 
   :ref:`access and permission settings <user-guide-user-management-permissions>`"
   "**Name**","The name used to refer to the user group in the UI."
   
@@ -33,7 +33,7 @@ Users
 
 .. note::
 
-    Please note that "HAS GROUP" check-box defines if the user is assign the specific user group that you are
+    The "HAS GROUP" check-box defines if the user is assign the specific user group that you are
     creating/editing
 
 View and Manage a User Group Record

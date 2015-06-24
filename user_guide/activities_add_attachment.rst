@@ -37,8 +37,9 @@ Once a record has been created, an attachment can be added from its View page.
 
   - Leave a comment, if necessary
 
-  - Define the attachment owner. Only the owner and users with roles that enable management/viewing of the owner's 
-    attachments will be able to manage/view the attachment.
+  - Define the attachment owner. Only the owner and users with whose 
+    :ref:`roles <user-guide-user-management-permissions>` that enable management/viewing of the owner's attachments will 
+    be able to manage/view the attachment.
 
 .. image:: ./img/activities/add_attachment_form.png
 

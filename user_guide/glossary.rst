@@ -116,6 +116,11 @@ Glossary
    System Organization
       An :term:`organization <Organization>`, from which a user can (subject to the permissions and access settings) 
       see and process details of records in each and any organization within the OroCRM instance. 
+
+   Owner
+      An :term:`organization <Organization>` or :term:`business unit <Business Unit>`, members whereof can view/process
+      the entity records, or a :term:`user <User>`, who can view/process the entity records, subject to the  
+      :ref:`access and permission settings <user-guide-user-management-permissions>`.
   
  
 

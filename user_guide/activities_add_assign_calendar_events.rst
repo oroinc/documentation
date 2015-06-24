@@ -3,7 +3,8 @@
 Add and Assign Calendar Events
 ==============================
 
-Calendar events represent different meetings, conferences and other arrangements.  
+In order to fix some meeting, conference or another arrangement in your OroCRM account, create a "*Calendar Event"*
+record ("calendar event" or "event").  
 
 Create an Event
 ---------------

@@ -3,8 +3,8 @@
 Add Comment
 ===========
 
-The main peculiarity of the comments is that they can be added to the records of different activities (e.g. to a task,
-call log, calendar event or any other :ref:`activity <user-guide-activities>` besides a contact request).
+If you want to comment details of an :ref:`activity <user-guide-activities>`, other than a contact request (e.g. leave 
+some additional details of task, comment on an email sent or a call made, etc.) use the "*Add Comment"* action.
 
 .. note::
 
@@ -12,8 +12,8 @@ call log, calendar event or any other :ref:`activity <user-guide-activities>` be
     :ref:`enabled <user-guide-activities-enable>`.
 
 
-Add and View Comments
----------------------
+Create and View Comments
+------------------------
 
 Once an activity has been created, a comment can be added to it from either its Edit page or from the View page of a 
 record the activity is related to.

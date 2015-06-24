@@ -3,7 +3,7 @@
 Add Note
 ========
 
-Notes keep additional information about the record.
+To save additional information about the record in OroCRM, use the "*Add Note"* action.
 
 The *Add Note* action will be available for records of entities, for which "Enable Notes" has been 
 :ref:`set to yes <user-guide-activities-enable>`.

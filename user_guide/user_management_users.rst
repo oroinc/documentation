@@ -8,7 +8,7 @@ Create a User Record
 
 In order to create a :term:`User` record:
 
-- Go to the *System → User Management → Users*
+- Go to *System → User Management → Users*
 - Click the :guilabel:`Create User` button
 - Define the user settings in the sections described below.
 
@@ -30,13 +30,13 @@ defined in the section.
   "**First Name** and **Last Name**","Name used to refer to the user in the UI"
   "Primary Email","Email associated with the user in the system"
   
-Along with the mandatory fields, there is a number of optional fields provided be default, that can be used to define 
+Along with the mandatory fields, there are a number of optional fields provided by default, that can be used to define 
 additional details of the customer, such as the name prefix and suffix, the middle name, birthday, additional emails,
 and phone number. You can also add the avatar (upload a picture to be used for the user in the UI) and/or 
 :term:`tags <Tag>` related to the user.
 
-The "*Send An Email Invitation*" check-box defines if an invitation email shall be sent to the user. The email content
-is defined in the course of the system integration and cannot be edited from the UI.
+The "*Send An Email Invitation*" check-box defines whether an invitation email must be sent to the user. The email 
+content is defined in the course of the system integration and cannot be edited from the UI.
 
 .. image:: ./img/user_management/user_general.png
 
@@ -75,10 +75,10 @@ to an organization/business unit.
 
 Email synchronization settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-With the "Email synchronization settings" you can enable uploading sales-related emails from the defined mailbox to your 
-OroCRM account.
-One you've defined the mailbox details, any letter in the mailbox sent to or received from an email address assigned to 
-any contact in the user's OroCRM instance will be loaded to the OroCRM account.
+With the "Email synchronization settings" you can enable the uploading of sales-related emails from the defined mailbox 
+to your OroCRM account.
+Once you've defined the mailbox details, any letter in the mailbox sent to or received from an email address that has 
+been assigned to any contact in the user's OroCRM instance will be loaded to the OroCRM account.
 You can then :ref:`see this emails <user-guide-activities-emails-view>` in the activities of the contact, activities of
 the user and in My Emails.
 
@@ -105,7 +105,7 @@ View page of a user record contains the following three sections:
 
 General Information
 """""""""""""""""""
-The section contains basic details of the user, i.e.:
+The section contains basic details of the user, namely:
 
 - Username
 - Birthday

@@ -42,7 +42,8 @@ The following fields are mandatory and **must** be specified:
   - **Dynamic** lists are updated as soon as any changes have taken place in the system 
   
   - **On demand** lists will be updated only following the user request"
-  "**Owner**","Limits the list of users that can manage the marketing list to the users, whose roles allow 
+  "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow
   managing marketing lists of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)
   ."
 

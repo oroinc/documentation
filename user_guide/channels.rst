@@ -1,16 +1,17 @@
 .. _user-guide-channels:
 
-Channels Overview
-=================
+Channels
+========
 
-:term:`Channels <Channel>` in :term:`OroCRM` represent sources of customers and customer data.
+In OroCRM you can create a :term:`Channel <Channel>` record ("channel") for each source of customers and customer data.
+For example, any store, on-line site, social activity, etc. may be represented with its own *"Channel"* record.  
 
 This guide describes how to create and manage channels from the UI.
 
 .. _user-guide-channel-guide-create:
 
-Create Channels
----------------
+Create a Channel Record
+-----------------------
 
 Go to the *System --> Channels* page and click the :guilabel:`Create Channel` button in the top right corner to go
 to the *Create Channel* page and specify its details as described in the sections below: 

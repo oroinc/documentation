@@ -33,7 +33,8 @@ There are four mandatory fields that **must** be defined:
   symbols, dashes, and underscores."
   "**Report Scale***","Defines default time-scale of the events graph. The next larger scale is chosen if there are 
   over 40 records" 
-  "**Owner***","Limits the list of Users that can manage the campaign to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the campaign to users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 Optional fields can be used to define such details as start and end dates of the campaign, its description and its budget. 

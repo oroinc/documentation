@@ -3,21 +3,21 @@
 Automatic Notification
 ======================
 
-In OroCRM you can specify conditions at which a mailing will be generated based on a pre-defined 
+In OroCRM, you can specify conditions at which emails will be sent based on a pre-defined 
 :ref:`email template <user-guide-email-template>`.
 
 Create a Notification Rule
 --------------------------
 
-Notification rules define a situation to trig a mailing. 
+Notification rules define a situation to generate and send the emails. 
 A notification rule can only be created for a specific email template available in 
 the system.
 
 To create a notification rule:
 
-- Go to the *System → Emails → Notification Rules* 
+- Go to *System → Emails → Notification Rules* 
 - Click the :guilabel:`Create Notification Rules` button
-- Define the general mailing details and the list of recipients
+- Define the general details of the emails to be sent and the list of recipients
 
 General
 ^^^^^^^
@@ -28,16 +28,24 @@ The following details **must** be defined in the *"General"* section.
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Entity Name**","Choose an entity, template for which will be used in the rule"
-  "**Event Name**","Choose the event that will trig the mailing. (Entity create, Entity remove, Entity update)"
+  "**Entity Name**","Choose an entity. The email template used by the notification rule must be related to this entity."
+  "**Event Name**","Choose the event that will trigger the mailing. 
+  
+  The following values are possible 
+  
+  - Entity create: a new record of the entity has been created
+  - Entity remove: a record of the entity has been removed
+  - Entity update: a recod of the entity has been editied
+  
+  "
   "**Template**","Choose the template for which the rule will be created"
   
 Recipient list
 ^^^^^^^^^^^^^^
-The *"Recipient list"* section defines a list of, to which the email will be sent when the rule is met.
-You can use one specific :term:`user` and/or :ref:`user groups <user-management-groups>` and/or a specific 
-address, to which the email will be sent.  If the *Owner* box is checked, the email will be sent to the user who is 
-assigned as the entity owner.
+The *"Recipient list"* section defines a list of user to which the email will be sent when the rule is met.
+You can define one specific :term:`user` and/or :ref:`user groups <user-management-groups>` and/or a specific 
+email address. If the *Owner* box is checked, the email will be sent to the user who is 
+assigned as an owner of the entity record, for which the event has taken place.
 
 .. image:: ./img/notification/notification_form.png
 

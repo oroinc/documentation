@@ -62,8 +62,8 @@ Define the following mandatory details in the *"General"* section:
   "**API Token***","The API token generated and/or copied in the Zendesk (as described above)."
   "**Default Zendesk User Email**","User with this email will be assigned tickets that come from OroCRM and for which
   there are no Zendesk users with a matching email address."
-  "**Owner**","Limits the list of users that can manage the integration to users, whose roles allow 
-  managing integration assigned to the owner (e.g. the owner, members of the same business unit, system administrator, 
+  "**Owner**","Limits the list of users that can manage the integration, subject to the 
+  :ref:`access and permission settings <user-guide-user-management-permissions>`" 
   etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
   
 

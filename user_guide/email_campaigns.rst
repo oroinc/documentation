@@ -3,16 +3,18 @@
 Email Campaigns
 ===============
 
-Records of the email Campaign entity ("email campaigns") represent mass mailings and keep their general information and 
-settings.
+OroCRM enable creation of email campaigns - mass-mailings generated based on a specific 
+:ref:`template <user-guide-email-template>` and sent to a predefined set of users 
+(:ref:`marketing list <user-guide-marketing-lists>`).
 
-The article describes ways to create and manage email campaigns. 
+Each Email Campaign record ("email campaign") represents such a mass-mailings and keeps its general information and 
+settings, as described below:
 
 
 .. _user-guide-email-campaigns-create:
 
-Create Email Campaigns
-----------------------
+Create Email Campaign Records
+-----------------------------
 
 1. Go to the *Email Campaigns* page and click the :guilabel:`Create Email Campaign` button in the top right corner to 
    get to the *"Create Email Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
@@ -37,7 +39,8 @@ Create Email Campaigns
   calendar. 
   
   |email_campaign_schedule|"
-  "**Owner***","Limits the list of users that can manage the campaign to those, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the campaign to those,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 Optional fields can be used to define such details as the way to represent the sender's email address and name in the 
@@ -67,8 +70,8 @@ There are two mandatory fields that **must** be defined:
 
 .. _user-guide-email-campaigns-actions:
 
-Manage Email Campaigns
-----------------------
+Manage Email Campaign Records
+-----------------------------
 
 The following actions are available for an email campaign from the 
 :ref:`grid <user-guide-ui-components-grid-action-icons>`:

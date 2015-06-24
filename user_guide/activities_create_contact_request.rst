@@ -1,18 +1,17 @@
 .. _user-guide-activities-requests:
 
-Contact Requests
-================
+Create Contact Request
+======================
 
-Contact requests correspond to user requests for OroCRM support, including partnership proposals, complaints, additional 
-information, assistance requests, etc.   
+Requests for OroCRM support, including partnership proposals, complaints, additional 
+information and assistance requests that come from a :ref:`third-party application <admin-embedded-forms>` or have been 
+registered directly in OroCRM are collected with the *"Create Contact Request"* actions.   
 
-Contact requests may be created directly in OroCRM or come from an :ref:`embedded form <admin-embedded-forms>`
-within a third-party application.
 
 Create a Contact Request from OroCRM
 ------------------------------------
 
-Contact Request can be created from the Contact Requests grid:
+In order to create a contact request from OroCRM:
 
 1. Go to *Activities → Contact Requests*.
 

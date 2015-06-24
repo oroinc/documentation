@@ -10,7 +10,6 @@ The articles describes the ways to create and manage email templates.
 
 
 .. _user-guide-email-templates-create:
-.. _creat-email-templates:
 
 Create Email Templates
 ----------------------
@@ -28,10 +27,10 @@ Create Email Templates
   :header: "**Field**","**Description**"
   :widths: 10, 30
 
-  "**Template Name***","Name used to refer to the template in the system"
-  "**Type***","Use html or plain text"
-  "**Owner***","Limits the list of users that can manage the template to those, whose roles allow managing 
-  Email templates of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)"
+  "**Template Name***","Name used to refer to the template in the system."
+  "**Type***","Use html or plain text."
+  "**Owner***","Limits the list of users that can manage the template, subject to the 
+  :ref:`access and permission settings <user-guide-user-management-permissions>`."
  
 Optional field *"Entity Name"* shall be used to define an :term:`entity <Entity>`, variables whereof can be used 
 in the template. If no entity name is defined, only system variables will be available.

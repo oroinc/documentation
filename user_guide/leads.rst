@@ -35,7 +35,8 @@ The following fields are mandatory and **must** be defined:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Owner***","Limits the list of users that can manage the lead to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the lead to users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   leads assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
   
   By default, the user creating the lead is chosen."

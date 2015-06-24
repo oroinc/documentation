@@ -1,15 +1,14 @@
-
 .. _user-guide-b2b-channel:
 
-B2B Channels Overview
-=====================
+B2B Channels
+============
 
-:ref:`Channels <user-guide-channels>` of B2B type ("B2B channels") represent sources of customer-related data collected 
-in the course of business-to-business activities.
+In order to collect and process information from a specific source of customer-related data related to your 
+business-to-business activities, create a :ref:`channel <user-guide-channels>` of B2B type (*"B2B channel"*). 
 
-The :term:`customer identity <Customer Identity>` of such channels is a B2B Customer. 
+The :term:`customer identity <Customer Identity>` of such channels is a *"B2B Customer"*. 
 
-By default, B2B Channels are assigned the following entities:
+By default, B2B channels are assigned the following entities:
 
 - B2B Customer: :term:`customer identity <Customer Identity>` that represents customers involved in 
   business-to-business activities. These are usually other businesses, companies and organizations.

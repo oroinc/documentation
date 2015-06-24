@@ -19,43 +19,49 @@ depend on the specific Role settings, as described below.
 
 Roles
 -----
-Each OroCRM user must be assigned a role. The role defines a set of permissions and access rights that 
-will be applied to all the users with this role.
-One user may have several roles. All the permissions granted to at least one of the roles, are granted to the user. 
+Each OroCRM :term:`user <User>` must be assigned a role. The role defines a set of permissions and access rights that 
+will be applied to all the users who have been assigned this role.
+One user may have several roles. All the permissions granted to at least one of the roles assigned to a user, 
+are granted to the user. 
 
-If the ownership type of an entity is set to a *"User"*, *"Business Unit"* or *"Organization"*, ability to see and 
+If the ownership type of an entity is set to a *"User"*, *"Business Unit"* or *"Organization"*, the ability to see and 
 process the entity records is defined by the role(s) assigned to the user.
 
 Roles and Permissions
 ^^^^^^^^^^^^^^^^^^^^^
 For each entity with an ownership type other than *"None"*, you can define permissions to perform the following actions: 
 
-- View: if the action is not available to a user, the user won't see the entity records 
-  :ref:`grid <user-guide-ui-components-grids>`, and cannot see :ref:`View pages <user-guide-ui-components-view-pages>` 
-  of its records.
+- View: If, for a specific entity, the action is not available to a user, the user won't see the records 
+  :ref:`grid <user-guide-ui-components-grids>` nor the :ref:`View pages <user-guide-ui-components-view-pages>` 
+  of this entity records.
   
-- Create: if the action is not available to a user, the user won't be able to create new entity records.
+- Create: If, for a specific entity, the action is not available to a user, the user won't be able to create new entity 
+  records.
 
-- Edit: if the action is not available to a user, the user won't be able to edit the entity records.
+- Edit: If, for a specific entity, the action is not available to a user, the user won't be able to edit the entity 
+  records.
 
-- Delete: if the action is not available to a user, the user won't be able to delete the entity records.
+- Delete: If, for a specific entity, the action is not available to a user, the user won't be able to delete the
+  entity records.
   
-- Assign: if the action is not available to a user, the user won't be able to change owner of the entity records.
+- Assign: If, for a specific entity, the action is not available to a user, the user won't be able to change the owner 
+  of the entity records.
 
 .. image:: ./img/user_management/role_entity_dropdown.png
 
-For each entity and action you can define one of the permission settings, depending on the entity ownership type, as 
-described below:
+For each entity and action you can define one of the permission settings, depending on the entity ownership type and
+whether it is a :ref:`system organization <user-ee-multi-org-system>`, as described below:
 
 
 *Permissions for System Organizations*
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In a :ref:`system organization <user-ee-multi-org-system>`, the user will able to perform an action for any organization
-in the system, is the access is set to *"System"*.
+
+In a :ref:`system organization <user-ee-multi-org-system>`, the user will able to perform an action for the
+entity records in any organization within the system, as long as the permission is set to *"System"*.
 
 .. image:: ./img/multi_org/multi_org_permission.png
   
-Any other permission setting but *"System"* for a role in a system organization will be treated as *"None"*.
+Any other permission setting but *"System"*, in a system organization, will be treated as *"None"*.
 
 
 *Permissions for Non-System Organizations*
@@ -65,42 +71,46 @@ Permissions in non-system organizations depend on the ownership type of the enti
 
 Ownership Type "Organization"
 """""""""""""""""""""""""""""
-If the entity type is set to *"Organization"*, when an entity record is created, an Organization is chosen as its Owner. 
+If the entity type is set to *"Organization"*, when an entity record is created, an :term:`organization <Organization>` 
+is chosen as its :term:`owner <Owner>`. 
+
 You can choose one of the following options for each action: 
 
-- ***None***: no users will be able to perform the action.
-- ***Organization***: all the users from the Organization set up as the Owner will be able to perform the action.
-- ***System***: all the users will be able to perform the action.
+- ***None***: No users will be able to perform the action.
+- ***Organization***: All the users from the owner-organization will be able to perform the action.
+- ***System***: All the users will be able to perform the action.
 
 
 Ownership Type "Business Unit"
 """"""""""""""""""""""""""""""
 
-If the entity type is set to "Organization", when an entity record is created, an Business Unit is chosen as its Owner. 
+If the entity type is set to "Business Unit", when an entity record is created, a :term:`business unit <Business Unit>` 
+is chosen as its Owner. 
+
 You can choose one of the following options for each action: 
 
-- ***None***: no users will be able to perform the action.
-- ***Business Unit***: all the users from the Business Unit set up as the Owner will be able to perform the action.
-- ***Division***: all the users from the Business Unit set up as the Owner and from its child business units will be 
-  able to perform the action.
-- ***Organization***: all the users from the Organization, to which the Business Units set up as the Owner belongs, will 
-  be able to perform the action.
-- ***System***: all the users will be able to perform the action.
+- ***None***:  No users will be able to perform the action.
+- ***Business Unit***: All the users from the owner-business-unit will be able to perform the action.
+- ***Division***: All the users from the owner-business-unit and from its child business units will be able to perform 
+  the action.
+- ***Organization***: All the users from the organization to which the owner-business-unit belongs, will be able to 
+  perform the action.
+- ***System***: All the users will be able to perform the action.
 
 
 Ownership Type "User"
 """""""""""""""""""""
 
-If the entity type is set to "User", when an entity record is created, a User is chosen as its Owner. 
+If the entity type is set to "User", when an entity record is created, a :term:`user <User>` is chosen as its owner. 
 You can choose one of the following options for each action: 
 
-- ***None***: no users will be able to perform the action.
-- ***User***: only the users set up as the Owner will be able to perform the action.
-- ***Business Unit***: all the users from the Business Unit to which the Owner belongs, will be able to perform the 
+- ***None***: No users will be able to perform the action.
+- ***User***: Only the owner-user will be able to perform the action.
+- ***Business Unit***: All the users from the business unit to which the owner-user belongs will be able to perform the 
   action.
-- ***Division***: all the users from the Business Unit to which the Owner belongs, and from its child business units 
+- ***Division***: all the users from the business unit to which the owner-user belongs and from its child business units 
   will be able to perform the action.
-- ***Organization***: all the users from the Organization, to which the Owner belongs, will be able to perform the 
+- ***Organization***: all the users from the organization, to which the owner-user belongs, will be able to perform the 
   action.
 - ***System***: all the users will be able to perform the action.
 
@@ -109,7 +119,7 @@ Roles and Access Rights
 Access right assigned to a role, define if the users will be able to access a specific functionality.
 There are only two options:
 
-- ***None***: users with the role won't be able to use the functionality
+- ***None***: users with the role won't be able to use the functionality.
 - ***System***: users with the role will be able to use the functionality for all the records created within their
   OroCRM instance they've logged in into.
 
@@ -123,32 +133,34 @@ To create a new role:
   
   |role_create|
 
-- In the form emerged, define the role name that will be used to assign the role to a user and other settings as 
-  described in the following sections:
+- In the form that has emerged, define the role name that will be used to assign it to a user.
+
+  Define other settings in the sections described below:
   
-  - ***Entity***: define what permissions the users assigned this role will have for the entity records with ownership
-    type other than "None"
-  - ***Capabilities***: define if the user assigned this role will have access to certain parts of the system
-  - ***Users***: select Users to be assigned this role
+  - ***Entity***: Define what permissions the users assigned this role will have for the entity records that have 
+    an ownership type other than "None".
+  - ***Capabilities***: Define if the user that has been assigned this role will have access to certain parts of the 
+    system.
+  - ***Users***: Select users to be assigned this role.
 
 The "Entity" Section
 ^^^^^^^^^^^^^^^^^^^^
 
 If the ownership type of an entity is set to "None", it will appear in the *Entity* section of the *"Create Role"* form.
-Choose the permissions for each section from the drop-down:
+Choose the permissions for each section from the drop-down menu:
 
 .. image:: ./img/user_management/role_entity.png
 
 .. hint::
     
-    The *"Default"* field specifies the permission settings by default assigned to a new entity created.
+    The *"Default"* field specifies the permission settings that are by default assigned to a new entity.
 
 
 The "Capabilities" Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The "Capabilities" section contains a list of system functionalities, that can be enabled/disabled for all the users
-with a specific role.
+The "Capabilities" section contains a list of system functionalities that can be either enabled or disabled for all the 
+users that have been assigned a specific role.
 
 .. image:: ./img/user_management/role_capabilities.png
   
@@ -157,14 +169,15 @@ The "Users" Section
 
 In the "Users" section, you can choose users to be assigned the role created.
 
-Check/uncheck the **HAS ROLE** box, to assign/unassign a user to the role:
+Check/uncheck the **HAS ROLE** box to assign/unassign a user to the role:
 
 
 .. image:: ./img/user_management/role_users.png
 
 .. note::
 
-    Please note that "HAS ROLE" check-box defines if the user is assign the specific role that you are editing/creating.
+    Please note that the "HAS ROLE" check-box defines if the user is assigned the specific role that you are 
+    editing/creating.
 
 
 *Manage Roles*
@@ -176,7 +189,7 @@ Once a role has been created, it will be added to the "All Roles"
 From the grid you can:
 
 
-- Delete the role from the system: |IcDelete|. If there is at least one user assigned this role, the role cannot be 
+- Delete the role from the system: |IcDelete|. If there is at least one user that has this role, the role cannot be 
   deleted.
 
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit|. 

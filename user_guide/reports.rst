@@ -42,8 +42,8 @@ The following fields are mandatory and **must** be defined for a report:
   (Both system and custom entities will be displayed in the alphabetic order). 
   You can also start typing the entity name in the text field to find it faster."
   "**Report Type***","Only table reports are available."
-  "**Owner***","Limits the list of users that can manage the report to its owner and users, whose roles allow managing 
-  reports assigned to the owner (e.g. members of the same business unit, system administrator, etc.)."
+  "**Owner***","Limits the list of users that can manage the report, subject to the 
+  :ref:`access and permission settings <user-guide-user-management-permissions>`."
 
 The only optional system field, **Description**, can be used to save additional information about the report. 
 

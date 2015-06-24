@@ -3,18 +3,18 @@
 Add Task and Assign Task
 ========================
 
-Tasks represent certain actions and issues assigned to a specific OroCRM user. 
-
+In order to save information on certain actions to be performed or issues to be resolved by an OroCRM user, you can 
+create a task in one of the ways described below.
 
 Create a Task
 -------------
 There are several ways to create a task:
 
-- Add a task for another entity record and define the user responsible
+- Use the *"Add Task"* action to create a task in the context of some entity record and define the user responsible
 
-- Assign a task directly to the user
+- Use the *"Assign Task"* action on the page of the user responsible
 
-- Create a task in the Tasks grid
+- Create a *"Task"* records in the Tasks grid
 
 
 Add a Task for Another Record

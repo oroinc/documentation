@@ -3,7 +3,8 @@
 Create Case
 ===========
 
-Cases correspond to certain issues, problems or failures reported by customers. 
+In order to keep the details of a certain issue, problem or failures reported by the customers, define their priority 
+and the person responsible for handling them, use the "*Create Case*" action.
 
 Cases can be created from the Cases grid:
 
@@ -20,7 +21,8 @@ Cases can be created from the Cases grid:
   "**Subject***","The case title. Must be defined."
   "**Description**","A free text tab. Contains the problem description. May be left empty."
   "**Resolution**","A free text tab. Contains the problem resolution details. May be left empty."
-  "**Owner***","Limits the list of users that can manage the case (view, edit) to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the case (view, edit) to users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   cases assigned to the owner (e.g. the owner, owner's managers, colleagues, etc.).
 
   By default is set to the user filing the case.  

@@ -1,8 +1,8 @@
 
 .. _user-guide-acc:
 
-Magento Abandoned Cart Campaign
-===============================
+Magento Abandoned Cart Campaigns
+================================
 
 Once your OroCRM account has been integrated with :ref:`Magento <user-guide-magento-channel-integration>` and 
 :ref:`MailChimp <user-guide-mc-integration>`, you can use OroCRM Abandoned Cart functionality to increase conversion and 
@@ -74,9 +74,9 @@ The following fields are mandatory and **must** be specified:
   :widths: 10, 30
 
   "**Name**","Name used to refer to the list of abandoned cart contacts in the system"
-  "**Owner**","Limits the list of users that can manage the marketing list to only those, whose roles allow 
-  managing marketing lists of the owner (e.g., the owner, members of the same business unit, system administrator, 
-  etc.)."
+  "**Owner**","Limits the list of users that can manage the marketing list to only those,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g., the owner, 
+  members of the same business unit, system administrator, etc.)."
 
 Optional field **Description** can be filled with free text to help you and other users understand the purpose or 
 peculiarities of the list in the future.

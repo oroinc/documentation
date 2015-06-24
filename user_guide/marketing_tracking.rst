@@ -28,9 +28,9 @@ There are four mandatory fields that **must** be defined:
   "**Name***","Name used to refer to the record in the system"
   "**Identifier***","Unique code of the website used to generate its tracking"
   "**Url***","Url of the website to be tracked" 
-  "**Owner***","Limits the list of Users that can manage the tracking website record to the users, whose roles
-  allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system 
-  administrator, etc.)."
+  "**Owner***","Limits the list of Users that can manage the tracking website record to the users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing tracking-websites of the owner (e.g. the owner, 
+  members of the same business unit, system administrator, etc.)."
 
 .. image:: ./img/marketing/tracking_general.png
 
