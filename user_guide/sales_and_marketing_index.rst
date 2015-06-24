@@ -5,7 +5,7 @@ Sales and Marketing Tools
     :maxdepth: 2
 
     accounts
-    multi_channel_overview
+    multi_channel_functionality
     channels_index
     marketing_index
     workflow_management

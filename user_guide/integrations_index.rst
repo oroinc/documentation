@@ -6,6 +6,6 @@ Integration and Synchronization Capabilities
 
     mailchimp_integration
     magento_integration_index
-    zendesk
+    zendesk_integration
     outlook_sync
     embedded_forms

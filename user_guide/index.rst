@@ -29,7 +29,7 @@ End user oriented documentation that explains how to administer and configure ap
       * :doc:`/user_guide/magento_channel_integration`
       * (Marketing) :doc:`/user_guide/magento_abandoned_cart_campaigns`
   
-    * :doc:`/user_guide/zendesk`
+    * :doc:`/user_guide/zendesk_integration`
     * :doc:`/user_guide/outlook_sync`
     * :doc:`/user_guide/embedded_forms`
   
