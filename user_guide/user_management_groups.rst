@@ -2,7 +2,7 @@
 
 User Groups 
 ===========
-User group is a system entity that represents a group of users. 
+A *"User group"* is a system entity that represents a group of users. 
 By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
 :ref:`filters <user-guide-filters-management>`.
 
