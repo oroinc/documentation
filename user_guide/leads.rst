@@ -3,23 +3,20 @@
 Leads
 =====
 
-The Lead records ("leads") represent commercial activity with  people or businesses that have  authority, budget and 
-interest to purchase goods  and/or services from you, for whom the probability of actual sales is not yet high or 
-is impossible to define. Initial agreement discussions, preliminary price requests or invitations for a bid may be 
-examples of a lead. 
+In order to save and process the details of commercial activity with  people or businesses that have  authority, budget 
+and interest to purchase goods  and/or services from you, for whom the probability of actual sales is not yet high or 
+is impossible to define, use the The *"Lead"* records in OroCRM ("leads").
+Initial agreement discussions, preliminary price requests or invitations for a bid may be examples of a lead. 
 
 In order to save and process details of different leads in OroCRM, you need to have at least one 
-:term:`Channel`, for which the Lead entity is assigned, as described in the 
-:ref:`Entities section <user-guide-channel-guide-entities>` of the :ref:`Channel guide <user-guide-channels>`.
-
-From this article you will learn how to create new leads, manage existing leads, analyze details of the lead records 
-with OroCRM reports and use leads in workflows.
+:term:`Channel`, for which the *"Lead"* entity is assigned, as described in the 
+:ref:`Channel guide <user-guide-channel-guide-entities>`.
 
 
 .. _user-guide-leads-create:
 
-Create Leads
-------------
+Create Lead Records
+-------------------
 
 - Go to the *Sales → Leads*
 
@@ -35,7 +32,8 @@ The following fields are mandatory and **must** be defined:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Owner***","Limits the list of users that can manage the lead to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the lead to users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   leads assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
   
   By default, the user creating the lead is chosen."
@@ -65,8 +63,8 @@ in the system.
 
 .. _user-guide-leads-actions:
 
-Manage Leads 
-------------
+Manage Lead Records 
+-------------------
 
 The following actions can be performed for the leads:
 
@@ -97,8 +95,8 @@ of the "Lead" entity
 
 .. _user-guide-leads-reports:
 
-Reports with Leads
-------------------
+Reports with Lead Records
+-------------------------
 
 OroCRM currently comes with a ready-to-use *Leads by Date* report.
 

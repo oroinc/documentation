@@ -102,8 +102,26 @@ Glossary
       can be defined for different organization records.
 
    User
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person or group of people using the 
-      OroCRM using the same credentials. 
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person, group of people or a third part
+      system using the same credentials to access OroCRM.
+
+   Business Unit
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent group of :term:`users <User>` with 
+      similar business or administrative tasks/roles.
+
+   Organization
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a group of :term:`users <User>` that 
+      belong to the same enterprise, business, commerce or another organization.
+       
+   System Organization
+      An :term:`organization <Organization>`, from which a user can (subject to the permissions and access settings) 
+      see and process details of records in each and any organization within the OroCRM instance. 
+
+   Owner
+      An :term:`organization <Organization>` or :term:`business unit <Business Unit>`, members whereof can view/process
+      the entity records, or a :term:`user <User>`, who can view/process the entity records, subject to the  
+      :ref:`access and permission settings <user-guide-user-management-permissions>`.
+  
  
 
 

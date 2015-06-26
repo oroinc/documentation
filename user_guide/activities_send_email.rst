@@ -3,18 +3,20 @@
 Send Email
 ==========
 
-The *Send Email* action will be available for records of entities with "Emails" activity 
+Use the "*Send Email*" action to send an email from OroCRM
+
+The  action will be available for records of entities with the *"Emails"* activity 
 :ref:`enabled <user-guide-activities-enable>`.
 
 .. note::
 
-    The "Emails" activity is by default enabled and cannot be disabled for the User entity in OroCRM.
+    The *"Emails"* activity is by default enabled and cannot be disabled for the :term:`User` entity in OroCRM.
 
-1. Go to the View page of the record. 
+1. Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the record. 
 
 2. Click :guilabel:`Send Email` in the :ref:`actions <user-guide-ui-components-view-page-actions>` tab of the record.
 
-3. The "Send Email" form will appear. The form has the following fields:
+3. The *"Send Email"* form will appear. The form has the following fields:
 
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -62,10 +64,13 @@ For example, we have created an email for the contact Jeffrey Maynard:
 
     Some default email settings also depend on the :ref`related configuration settings <admin-configuration-emails>`.
 
+	
+.. _user-guide-activities-emails-view:
+
 View and Process Emails
 -----------------------
 All the emails sent for a record are displayed in and can be reached from the *Record Activities* section on the 
-View page:
+:ref:`View page <user-guide-ui-components-view-pages>`:
 
 .. image:: ./img/activities/send_email_view.png
 
@@ -102,11 +107,11 @@ To see the details, click on the email title or on the :guilabel:`+` to the left
 Add Attachments
 ^^^^^^^^^^^^^^^
 
-To add an attachment to the email, use the *From Record* and *Upload* at the email form.
+To add an attachment to the email, use the *"From Record"* and *"Upload"* links at the email form.
 
-- Click *Upload* and choose the file to be attached from your computer.
+- Click *"Upload"* and choose the file to be attached from your computer.
 
-- Click *From Record* to re-use an attachment from another email in the thread or to choose 
+- Click *"From Record"* to re-use an attachment from another email in the thread or to choose 
   an :ref:`attachment <user-guide-activities-attachments>` assigned to the records.
 
 .. image:: ./img/activities/send_email_buttons.png

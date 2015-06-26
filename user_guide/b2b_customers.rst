@@ -3,24 +3,22 @@
 B2B Customers
 =============
 
-The B2B Customer records ("B2B customers") represent customers involved in the business-to-business activities. Every 
-:term:`B2B channel <B2B Channel>` is assigned a B2B customer entity - this means that details of different B2B customers
-can be collected from this channel.
-
-From this article you will learn how to create new B2B customers, manage existing B2B customers, analyse details of the 
-customer records with OroCRM reports and use in workflows.
+For each customer involved in the business-to-business activity you can create a *"B2B Customer"* record 
+("B2B customer""). 
 
 
 .. _user-guide-customers-create:
 
-Create B2B Customers from the UI
---------------------------------
+Create B2B Customer Records
+---------------------------
+
+In order to create a new B2B customer in the system:
 
 - Go to the *Customers → B2B Customers*
 
 - Click :guilabel:`Create B2B Customer` button
 
-- The *Create B2B Customer* :ref:`form <user-guide-ui-components-create-pages>` will appear:
+- The *"Create B2B Customer"* :ref:`form <user-guide-ui-components-create-pages>` will appear:
 
 .. image:: ./img/b2b_customers/b2b_customers_create.png
 
@@ -64,8 +62,8 @@ customer in the system.
 
 .. _user-guide-customers-actions:
 
-Manage B2B Customers 
---------------------
+Manage B2B Customer Records 
+---------------------------
 
 The following actions can be performed for B2B customers:
 
@@ -90,13 +88,11 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 The rest of the actions available depend on the system settings defined in the Communication &  Collaboration section 
 of the "B2B Customer" entity
 
-
-
       
 .. _user-guide-customers-reports:
 
-Reports with B2B customers
---------------------------
+Reports with B2B Customer Records
+---------------------------------
 
 Custom reports can be added to analyze details of B2B customers in OroCRM. For more details on the ways to create and 
 customize the reports,  please see the :ref:`Reports guide <user-guide-reports>`.
@@ -104,8 +100,8 @@ customize the reports,  please see the :ref:`Reports guide <user-guide-reports>`
 
 .. _user-guide-customers-workflows:
 
-Using B2B customers in the Workflows
-------------------------------------
+Using B2B Customer Records in the Workflows
+-------------------------------------------
 
 You can use OroCRM's :term:`workflows <Workflow>` to define rules and guidelines on possible actions/updates of 
 B2B customers in the system, as described in the :ref:`Workflows guide <user-guide-workflow-management-basics>`.

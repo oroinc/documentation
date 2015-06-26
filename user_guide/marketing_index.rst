@@ -2,12 +2,14 @@ Marketing
 =========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
-    marketing
-    email_template
-    marketing_list
-    marketing_campaign
-    email_campaign
     how_to_track
-    marketing_tracking
+    marketing_functionality_overview
+    marketing_campaigns
+    email_campaigns
+    email_templates
+    notification_rules
+    marketing_lists
+    marketing_tracking_website_records
+    magento_abandoned_cart_campaigns

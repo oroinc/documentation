@@ -162,8 +162,9 @@ Once the connection details have been verified, the following fields will be fil
 
   Click the *Sync website list* link if the list of Websites is outdated."
   "**Admin url**","Optional field. A url to the administrator panel of the specified Magento store."
-  "**Default owner***","Specifies what users can manage the configuration. By default is filled with the user creating
-  the integration."
+  "**Default owner***","Specifies what users can manage the configuration, subject to the
+  :ref:`access and permission settings <user-guide-user-management-permissions>`. By default is filled with the user 
+  creating the integration."
 
 
 .. _user-guide-magento-channel-integration-synchronization:

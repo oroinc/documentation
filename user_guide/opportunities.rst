@@ -3,9 +3,9 @@
 Opportunities
 =============
 
-The Opportunity records ("opportunities") represent highly probable potential or actual sales to a new or 
-established customer. For example, request for proposal, invitation for a bidding, agreement of intentions or order for
-a delivery are opportunities. 
+With OroCRM's *"Opportunity records"* ("opportunities") you can save and process the details of highly probable 
+potential or actual sales to a new or established customer. For example, request for proposal, invitation for a bidding, 
+agreement of intentions or order for a delivery can be saved as opportunities. 
 
 In order to add and process details of opportunities in OroCRM use Opportunity records you need to have at least one 
 :term:`Channel` to which the Opportunity entity is assigned, as described in the 
@@ -34,7 +34,8 @@ The following fields are mandatory and **must** be defined:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Owner***","Limits the list of users that can manage the opportunity to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the opportunity to users, whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   opportunities assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
   
   By default, the user creating the opportunity is chosen."

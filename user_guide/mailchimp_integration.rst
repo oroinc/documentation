@@ -68,7 +68,9 @@ Define the following mandatory details in the *"General"* section:
   "**Name***","The integration name used to refer to the integration within the system."
   "**API Key***","The API key generated and/or copied in the MailChimp account (as described above)."
   "**Default Owner**","Limits the list of users that can manage the integration and all the entities imported within 
-  the integration to only those, whose roles allow managing integration and corresponding entities assigned to the owner 
+  the integration to only those,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing integration and corresponding entities assigned 
+  to the owner 
   (e.g. the owner, members of the same business unit, system administrator, etc.)
   
   By default, the field is filled in with the user creating the integration."

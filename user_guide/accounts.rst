@@ -3,16 +3,13 @@
 Accounts
 ========
 
-Account records ("accounts") represent a person, company or group of people you do business activities with. 
+To collect and process information on the customer activity of a person, group of people or business cooperating with 
+you, you can create an *"Account"* record ("account") that will represent them in OroCRM.
 An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing 
 a 360-degree view of the customer. 
 
-From this article you will learn how to create new account, understand 
-its :ref:`View page <user-guide-ui-components-view-pages>`, manage and merge existing accounts and analyze their  
-details with OroCRM reports.
-
-Accounts, Channels and Customers
---------------------------------
+Unerstanding Accounts, Channels and Customers
+----------------------------------------------
 
 For each :term:`channel <Channel>` :ref:`created <user-guide-channel-guide-create>`, there is a set of 
 :term:`entities <Entity>` defined. These entities correspond to types of information collected from the corresponding 
@@ -35,8 +32,8 @@ customer that represents some client of yours, and then this client is buying so
 
 .. _user-guide-accounts-create:
 
-Create Accounts
----------------
+Create Account Records
+----------------------
 
 - Go to the *Customers → Accounts*
 
@@ -52,7 +49,8 @@ The following fields are mandatory and **must** be defined:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Owner***","Limits the list of users that can manage the account to users, whose roles allow managing 
+  "**Owner***","Limits the list of users that can manage the account to users,  whose 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing 
   accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
   
   By default, the user creating the account is chosen."
@@ -82,8 +80,8 @@ account in the system.
     the :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
 
-Manage Accounts
----------------
+Manage Account Records
+----------------------
 
 Accounts View Page
 ^^^^^^^^^^^^^^^^^^
@@ -215,8 +213,8 @@ of the customer identities will be appended.
       
 .. _user-guide-accounts-reports:
 
-Reports with Accounts
----------------------
+Reports with Account Records
+----------------------------
 
 OroCRM currently comes with two ready-to-use reports on accounts:
 

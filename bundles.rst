@@ -62,8 +62,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/marketing_campaign`
-        * User guide: :doc:`/user_guide/email_campaign`
+        * User guide: :doc:`/user_guide/marketing_campaigns`
+        * User guide: :doc:`/user_guide/email_campaigns`
         * User guide: :doc:`/user_guide/how_to_track`
 
 `CaseBundle`_ (OroCRM)
@@ -76,8 +76,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/multi_channel_overview`
-        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/multi_channel_functionality`
+        * User guide: :doc:`/user_guide/channels`
         * User guide: :doc:`/user_guide/accounts`
         * User guide: :doc:`/user_guide/b2b_channels`
         * User guide: :doc:`/user_guide/magento_channels`
@@ -132,7 +132,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/channels`
 
 `DemoDataBundle`_ (OroCRM)
     Contains necessary fixtures for CRM features demonstration.
@@ -161,9 +161,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
-        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/channels`
 
 `EntityConfigBundle`_ (Oro Platform)
     Allows to attach metadata to entity classes and offers a UI to manage them.
@@ -175,7 +175,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/data_audits`
         * Book: :doc:`/book/configuration`
-        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
 `EntityExtendBundle`_ (Oro Platform)
@@ -187,7 +187,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
-        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
 `EntityMergeBundle`_ (Oro Platform)
@@ -224,7 +224,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/importexport`
-        * User guide: :doc:`/user_guide/export_import`
+        * User guide: :doc:`/user_guide/import_export_functionality`
 
 `InstallerBundle`_ (Oro Platform)
     The web installer for the OroCRM.
@@ -243,7 +243,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/channels`
         * User guide: :doc:`/user_guide/magento_channel_integration`
 
 `LocaleBundle`_ (Oro Platform)
@@ -262,8 +262,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/multi_channel_overview`
-        * User guide: :doc:`/user_guide/channel_guide`
+        * User guide: :doc:`/user_guide/multi_channel_functionality`
+        * User guide: :doc:`/user_guide/channels`
         * User guide: :doc:`/user_guide/magento_channel_integration`
         * User guide: :doc:`/user_guide/magento_channels`
 
@@ -274,7 +274,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/marketing_list`
+        * User guide: :doc:`/user_guide/marketing_lists`
 
 `MigrationBundle`_ (Oro Platform)
     Allows to version the application's database.
@@ -284,7 +284,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
-        * User guide: :doc:`/user_guide/entities_ui`
+        * User guide: :doc:`/user_guide/entities`
 
 `NavigationBundle`_ (Oro Platform)
     Define menus in different bundles in YAMl files based on the `KnpMenuBundle`_.
@@ -416,7 +416,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * User guide: :doc:`/user_guide/how_to_track`
-        * User guide: :doc:`/user_guide/marketing_tracking`
+        * User guide: :doc:`/user_guide/marketing_tracking_website_records`
 
 `TranslationBundle`_ (Oro Platform)
     Integration for translatable entities.
