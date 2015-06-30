@@ -64,13 +64,13 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/marketing_lists`
     * :doc:`/user_guide/marketing_tracking_website_records`
     * :doc:`/user_guide/magento_abandoned_cart_campaigns`
-
   
   * :doc:`/user_guide/workflow_management`
 
 * :doc:`/user_guide/admin_index`
 
   * :doc:`/user_guide/system_config`
+  * :doc:`/user_guide/contact_groups`
   * :doc:`/user_guide/user_management_index`
 
     * :doc:`/user_guide/user_management_overview`
@@ -107,6 +107,7 @@ End user oriented documentation that explains how to administer and configure ap
     admin_index
     user_management_index
     entity_management_index
+    contact_groups
     glossary
 
 
