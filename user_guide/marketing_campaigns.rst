@@ -41,8 +41,8 @@ Custom fields may be added, subject to specific business-needs.
 
 .. note::
 
-    The Sender Email and Name values are defined for all the emails generated in the system within different marketing 
-    campaigns by the corresponding :ref:`configuration settings <admin-configuration-email-campaign>`.
+    The default Sender Email and Name values are defined for all the emails generated in the system within different 
+    marketing campaigns by the corresponding :ref:`configuration settings <admin-configuration-email-campaign>`.
 
 
 3. Save the campaign in the system with the button in the top right corner of the page.

@@ -1,4 +1,3 @@
-
 .. _user-guide-marketing-lists:
 
 Marketing Lists

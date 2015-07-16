@@ -3,6 +3,30 @@ User Guide
 
 End user oriented documentation that explains how to administer and configure application features.
 
+* :doc:`/user_guide/admin_index`
+
+  * :doc:`/user_guide/system_config`
+  * :doc:`/user_guide/user_management_index`
+
+    * :doc:`/user_guide/user_management_overview`
+    * :doc:`/user_guide/user_management_users`
+    * :doc:`/user_guide/user_management_roles`
+    * :doc:`/user_guide/user_management_bu`
+    * :doc:`/user_guide/user_management_organization`
+    * :doc:`/user_guide/multiple_organizations_support`
+    * :doc:`/user_guide/user_management_groups`
+
+  * :doc:`/user_guide/contact_groups`
+  * :doc:`/user_guide/entity_management_index`
+
+    * :doc:`/user_guide/entities`
+    * :doc:`/user_guide/entity_fields`
+
+  * (Marketing) :doc:`/user_guide/workflow_management`
+  * (Marketing) :doc:`/user_guide/email_templates`
+  * (Marketing) :doc:`/user_guide/notification_rules`
+  * (Integrations) :doc:`/user_guide/embedded_forms`
+
 * :doc:`/user_guide/getting_started_index`
 
   * :doc:`/user_guide/ui_components`
@@ -22,7 +46,8 @@ End user oriented documentation that explains how to administer and configure ap
 
 * :doc:`/user_guide/integrations_index`
   
-    * :doc:`/user_guide/mailchimp_integration`
+    * :doc:`/user_guide/integrations_overview`
+    * :doc:`/user_guide/google_single_sign_on`
     * :doc:`/user_guide/magento_integration_index`
     
       * :doc:`/user_guide/magento_channels`
@@ -30,6 +55,9 @@ End user oriented documentation that explains how to administer and configure ap
       * (Marketing) :doc:`/user_guide/magento_abandoned_cart_campaigns`
   
     * :doc:`/user_guide/zendesk_integration`
+    * :doc:`/user_guide/mailchimp_integration`
+    * :doc:`/user_guide/dotmailer_integration`
+    * :doc:`/user_guide/ms_exchange_integration`
     * :doc:`/user_guide/outlook_sync`
     * :doc:`/user_guide/embedded_forms`
   
@@ -64,32 +92,10 @@ End user oriented documentation that explains how to administer and configure ap
     * :doc:`/user_guide/marketing_lists`
     * :doc:`/user_guide/marketing_tracking_website_records`
     * :doc:`/user_guide/magento_abandoned_cart_campaigns`
+
   
   * :doc:`/user_guide/workflow_management`
 
-* :doc:`/user_guide/admin_index`
-
-  * :doc:`/user_guide/user_management_index`
-
-    * :doc:`/user_guide/user_management_overview`
-    * :doc:`/user_guide/user_management_users`
-    * :doc:`/user_guide/user_management_roles`
-    * :doc:`/user_guide/user_management_bu`
-    * :doc:`/user_guide/user_management_organization`
-    * :doc:`/user_guide/multiple_organizations_support`
-    * :doc:`/user_guide/user_management_groups`
-
-  * :doc:`/user_guide/system_config`
-  * :doc:`/user_guide/contact_groups`
-  * :doc:`/user_guide/entity_management_index`
-
-    * :doc:`/user_guide/entities`
-    * :doc:`/user_guide/entity_fields`
-
-  * (Marketing) :doc:`/user_guide/workflow_management`
-  * (Marketing) :doc:`/user_guide/email_templates`
-  * (Marketing) :doc:`/user_guide/notification_rules`
-  * (Integrations) :doc:`/user_guide/embedded_forms`
 
 
 .. toctree::
@@ -107,7 +113,6 @@ End user oriented documentation that explains how to administer and configure ap
     admin_index
     user_management_index
     entity_management_index
-    contact_groups
     glossary
 
 

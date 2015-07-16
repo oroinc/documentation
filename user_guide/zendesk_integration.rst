@@ -1,4 +1,3 @@
-
 .. _user-guide-zendesk-integration:
 
 Integration with Zendesk
