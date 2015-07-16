@@ -1,4 +1,3 @@
-
 .. _user-guide-acc:
 
 Magento Abandoned Cart Campaigns
@@ -47,7 +46,7 @@ Now you can use the functionality.
 .. _user-guide-acc-create:
  
 Create an Abandoned Cart Campaign
-------------------------------------
+---------------------------------
 
 Go to the *Marketing --> Abandoned Cart Campaigns* and click the :guilabel:`Create Abandoned Cart Campaign` button 
 in the top right corner of the grid.
@@ -135,7 +134,6 @@ Use action icons in the last column to edit the grid:
 
     Save the campaign in the system with the button in the top right corner of the page.
 
-	
 For example, we have created a *Demo ACC* abandoned cart campaign, within which a list will be created in the MailChimp
 account. The List will contain abandoned Magento Shopping Carts available in the OroCRM account that were created 
 after April 1st, 2015. The cart id, customer's last name, and email will be transferred to the MailChimp account for 
@@ -230,7 +228,7 @@ sections:
   MailChimp Subscriber's Lists of the account specified for the integration will be loaded and any of them can be chosen 
   from the drop-down menu."
   
-For example, we have created a *DemoACC* integration.
+For example, we have :ref:`created <user-guide-mc-integration>` a *DemoACC* integration.
 We have also created a separate *DemoACCList* in our MailChimp account, however, you can also define the segment within 
 any available Subscribers List.
 We are now creating a *Demo Abandoned Cart Campaign* segment within the list.
@@ -256,8 +254,40 @@ contains data for the abandoned Magento shopping carts from the campaign:
 
 .. image:: ./img/mailchimp/acc_mc_ex.png
 
-Now you can use this segment to create a campaign or an automated campaign in MailChimp. 
+Now you can use this segment to create a campaign or an automated campaign in MailChimp.
 
+Synchronization Flow
+--------------------
+
+Start the Synchronization
+^^^^^^^^^^^^^^^^^^^^^^^^^
+After the connection has been saved, contacts from the  marketing list will be automatically exported from OroCRM to 
+the chosen segment of MailChimp. Since then, data synchronization between OroCRM and MailChimp will 
+be performed automatically. 
+
+You can also start the synchronization manually. To do so:
+
+- Click the :guilabel:`Synchronize` button in the MailChimp menu on the 
+  :ref:`View page <user-guide-ui-components-view-pages>` of the Markting List   
+  
+.. image:: ./img/mailchimp/acc_com_form_manage.png 
+
+- You can also start the data synchronization from the :ref:`View page <user-guide-ui-components-view-pages>` of the
+  integration, with the :guilabel:`Schedule Sync` button. 
+
+- You can also start the data synchronization with the |BSchedule| button in the *System → Integrations → Manage 
+  Integrations* section.
+
+
+Synchronization Process
+^^^^^^^^^^^^^^^^^^^^^^^
+During the synchronization the following details are updated:
+
+- The list of Subscribers lists available in MailChimp is updated in OroCRM
+- The list of contacts on a specific OroCRM marketing list and related segment of a MailChimp marketing list are checked
+  against each other and updated, subject to the priority defined in the synchronization settings of the integration.
+- Email campaigns created in MailChimp are imported as Email Campaign records in OroCRM. Along with it, a Campaign 
+  record is created in OroCRM for automated MailChimp campaigns.
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
@@ -291,4 +321,7 @@ Now you can use this segment to create a campaign or an automated campaign in Ma
    :align: middle
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
+   :align: middle
+
+.. |BSchedule| image:: ./img/buttons/BSchedule.png
    :align: middle

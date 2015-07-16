@@ -293,11 +293,37 @@ Campaign Configuration
 The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in 
 OroCRM. You can define the **Sender Email** and **Sender Name** to be used.
 
+
+.. _admin-configuration-integrations:
+
 Integrations
 ------------
 
-The "Integrations" section of the system settings is available for the enterprise edition only, and is described in more 
-detail in a separate document. 
+In this section you can define rules applied to pre-implemented integrations.
+
+Google Settings
+^^^^^^^^^^^^^^^
+
+The only integration by default available in the community editions is integration with Google. In the *"System →  
+Integrations  →  Google Settings"* you can define the details used for google single sing-on,  which enables user with 
+the same Google account email address and OroCRM primary email address to log-in only once in the session, as described
+in the relevant :ref:`guide <admin-configuration-google-settings>` 
+
+Email Settings
+^^^^^^^^^^^^^^
+Integration with Microsoft Exchange server is available for the OroCRM 
+Enterprise Edition only. The integration allows automatic uploading of emails from mailboxes on the server to OroCRM.
+OroCRM will collect any letter on the server such that one of its from/to fields is an email address assigned to any 
+contact and the other one is an email address assigned to any user in the OroCRM instance.
+The integration set-up is described in the relevant :ref:`guide <admin-configuration-ms-exchange>` 
+
+MS Outlook Settings
+^^^^^^^^^^^^^^^^^^^
+Integration with Microsoft Outlook is available for the OroCRM Enterprise Edition only. The integration allows automatic 
+synchronization of all the contacts, tasks and calendar events available for the user can be synchronized with the specified
+Outlook account and vice versa. 
+The integration set-up is described in the relevant :ref:`guide <user-guide-synch-outlook>` 
+
 
 
 .. |UseDef| image:: ./img/configuration/language_settings_use_def.png

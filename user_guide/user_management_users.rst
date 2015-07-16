@@ -72,13 +72,16 @@ to an organization/business unit.
 
     In the community enterprise there can only be one organization, so organizations are not shown in the structure.
 
+.. _user-management-users-email-sync:
 
 Email synchronization settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 With the "Email synchronization settings" you can enable the uploading of sales-related emails from the defined mailbox 
 to your OroCRM account.
-Once you've defined the mailbox details, any letter in the mailbox sent to or received from an email address that has 
-been assigned to any contact in the user's OroCRM instance will be loaded to the OroCRM account.
+Once you've defined the mailbox details, OroCRm will collect any letter on the server such that one of 
+its from/to fields is an email address assigned to any contact and the other one is an email address assigned to any 
+user in the OroCRM instance.
+
 You can then :ref:`see this emails <user-guide-activities-emails-view>` in the activities of the contact, activities of
 the user and in My Emails.
 

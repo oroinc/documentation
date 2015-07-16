@@ -6,7 +6,8 @@ Integration with MailChimp
 
 OroCRM supports out of the box integration with MailChimp, allowing you to do the following:
 
-- map OroCRM Marketing Lists and Abandoned Cart Campaign to segments of MailChimp Subscriber's Lists and keep them 
+- map OroCRM :ref:`Marketing Lists <user-guide-marketing-lists>` and 
+  :ref:`Magento Abandoned Cart Campaigns <user-guide-acc>` to segments of MailChimp Subscriber's Lists and keep them 
   synchronized
 - use the segments of MailChimp Subscribers Lists to create email campaigns in MailChimp and import them to OroCRM
 - use the segments based on the Abandoned Cart Campaigns to automate the mailings
@@ -29,7 +30,7 @@ The only thing you will need on the MailChimp part is your API Key value:
 
 .. image:: ./img/mailchimp/mc_account_1.png
 
-- Go to the *Extras --> Api Keys*
+- Go to the *Extras → Api Keys*
 
 .. image:: ./img/mailchimp/mc_account_2.png
 
@@ -45,10 +46,14 @@ The only thing you will need on the MailChimp part is your API Key value:
 On the OroCRM Side
 ------------------
 
+Install the *"OroCRM MailChimp Integration"* extension (oro/crm-dotmailer)
+
+.. image:: ./img/mailchimp/extension.png
+
 Create MailChimp Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Go to the *"System --> Integrations --> Manage Integrations"* and click the :guilabel:`Create Integration` button.
+- Go to the *"System → Integrations → Manage Integrations"* and click the :guilabel:`Create Integration` button.
 
 - The "Create Integration" form will appear. 
 
@@ -79,7 +84,6 @@ After the API Key has been entered, you can click the :guilabel:`Check Connectio
 entered correctly.
 
 
-
 .. _user-guide-mc-channel-integration-synchronization:
 
 Synchronization Settings
@@ -103,14 +107,79 @@ is changed in both MailChimp and OroCRM, the MailChimp changes will take precede
 
 .. image:: ./img/mailchimp/mc_create.png
 
+**After the integration has been created and its status has been set to Active, the list of Subscribers Lists will be 
+automatically imported from MailChimp to OroCRM for further integration management.**
 
-.. _user-guide-mc-channel-integration-details_edit:
+Map OroCRM Marketing Lists to MailChimp Subscribers List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Now you can map contacts of an OroCRM marketing list to a segment of a subscribers list in MailChimp.
+
+- Go to *Marketing → Marketing Lists* and open the Marketing list that you want to use. 
+- If a Marketing list is suitable for the connection, the :guilabel:`Connect to MailChimp` button will appear on the 
+  :ref:`View page <user-guide-ui-components-view-pages>` of the marketing list.
+   
+  |connect_to_mc|
+  
+- Click the button. The *"Connect To MailChimp"* form will emerge.
+
+   |connect_to_mc_form|
+
+ Define the following fields:
+
+.. csv-table::
+  :header: "Field", "Description"
+  :widths: 10, 30
+
+  "**MailChimp Segment Name***","Name used to refer to the segment created in MailChimp, where the contacts will be
+  mapped"
+  "**MailChimp Integration***","Contains all the MailChimp integrations that are available in the OroCRM instance. 
+  Select the integration, for which the mapping must be performed." 
+  "**MailChimp Subscribers List***","Contains all the MailChimp Subscribers List records available 
+  for connection."
+
+* **Now you can use the Subscribers List record to create Email Campaigns in MailChimp.** *  
+
+Synchronization Flow
+--------------------
+
+Start the Synchronization
+^^^^^^^^^^^^^^^^^^^^^^^^^
+After the connection has been saved, contacts from the  marketing list will be automatically exported from OroCRM to 
+the chosen segment of MailChimp. After this, data synchronization between OroCRM and MailChimp will 
+be performed automatically. 
+
+You can also start the synchronization manually. To do so:
+
+- Click the :guilabel:`Synchronize` button in the MailChimp menu on the 
+  :ref:`View page <user-guide-ui-components-view-pages>` of the Marketing List   
+  
+.. image:: ./img/mailchimp/acc_com_form_manage.png 
+
+- You can also start the data synchronization from the :ref:`View page <user-guide-ui-components-view-pages>` of the
+  integration, with the :guilabel:`Schedule Sync` button. 
+  
+- You can also start the data synchronization with the |BSchedule| button in the "*System → Integrations → Manage 
+  Integrations*" section.
+
+Synchronization Process
+^^^^^^^^^^^^^^^^^^^^^^^
+During the synchronization, the following details are updated:
+
+- The list of Subscribers lists available in MailChimp is updated in OroCRM
+- The list of contacts on a specific OroCRM marketing list and related segment of a MailChimp marketing list are checked
+  against each other and updated, subject to the priority defined in the synchronization settings of the integration.
+- Email campaigns created in MailChimp are imported as Email Campaign records in OroCRM.
+- Statistics collected in MailChimp are imported to OroCRM as Campaign Results of the Email Campaign.  
+  
+
+
+.. _user-guide-mc-integration-details_edit:
 
 Manage the Integration
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
-All the integrations created will be available in the Integrations grid under *"System --> Integrations --> Manage 
+All the integrations created will be available in the Integrations grid under *"System → Integrations → Manage 
 Integrations"*. You can use the :ref:`grid action icon <user-guide-ui-components-grid-action-icons>` for the following:
 
 - Delete the integration - |IcDelete| 
@@ -121,21 +190,13 @@ Integrations"*. You can use the :ref:`grid action icon <user-guide-ui-components
 
 .. image:: ./img/mailchimp/mc_edit.png
 
+On the View page of a specific marketing list you can Click the :guilabel:`MailChimp` drop-down menu for the following:
 
-.. _user-guide-mc-channel-start-synchronization:
-
-
-.. note::
-
-    You can also start the data synchronization from the :ref:`View page <user-guide-ui-components-view-pages>` of the
-    integration, with the :guilabel:`Schedule Sync` button. 
-
-
-.. hint::
-
-    Once a synchronization has been scheduled, *A sync* :ref:`job <book-job-execution>` *has been added to the queue. 
-    Check progress.* note will appear. The data is now being synchronized. You can click the *Check progress* link to 
-    see the synchronization status.
+- Start synchronization manually
+- Change the connection settings for the list
+- Disconnect the list from the segment
+  
+.. image:: ./img/mailchimp/acc_com_form_manage.png 
 
 
 
@@ -154,3 +215,9 @@ Integrations"*. You can use the :ref:`grid action icon <user-guide-ui-components
 
 .. |IcView| image:: ./img/buttons/IcView.png
    :align: middle
+   
+.. |connect_to_mc| image:: ./img/mailchimp/connect_to_mc.png
+   :align: middle 
+   
+.. |connect_to_mc_form| image:: ./img/mailchimp/connect_to_mc_form.png
+   :align: middle  
