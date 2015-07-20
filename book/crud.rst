@@ -511,7 +511,7 @@ Both actions just need to return the ``Vehicle`` to be shown in the form as well
         {% if resource_granted('inventory.vehicle_update') %}
             {% set html = html ~ UI.saveAndStayButton() %}
         {% endif %}
-        {{ UI.dropdownSaveButton({ 'html': html })
+        {{ UI.dropdownSaveButton({ 'html': html }) }}
     {% endblock navButtons %}
 
     {% block pageHeader %}
