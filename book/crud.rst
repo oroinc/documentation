@@ -399,7 +399,7 @@ and register it as a service:
 .. code-block:: yaml
     :linenos:
 
-    # src/InventoryBundle/Resources/config/form.yml
+    # src/InventoryBundle/Resources/config/services.yml
     services:
         inventory.form.type.vehicle:
             class: InventoryBundle\Form\Type\VehicleType
@@ -754,12 +754,13 @@ just create a service which is an instance of the
     :linenos:
 
     # app/config/services.yml
-    inventory.vehicle_manager.api:
-        class: Oro\Bundle\SoapBundle\Entity\Manager\ApiEntityManager
-        parent: oro_soap.manager.entity_manager.abstract
-        arguments:
-            - InventoryBundle\Entity\Vehicle
-            - "@doctrine.orm.entity_manager"
+    services:
+        inventory.vehicle_manager.api:
+            class: Oro\Bundle\SoapBundle\Entity\Manager\ApiEntityManager
+            parent: oro_soap.manager.entity_manager.abstract
+            arguments:
+                - InventoryBundle\Entity\Vehicle
+                - "@doctrine.orm.entity_manager"
 
 Finally, make sure to load the controllers route:
 
