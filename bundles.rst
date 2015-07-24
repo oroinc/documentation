@@ -132,6 +132,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/crud`
         * User guide: :doc:`/user_guide/channels`
 
 `DemoDataBundle`_ (OroCRM)
@@ -175,6 +176,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/data_audits`
         * Book: :doc:`/book/configuration`
+        * Book: :doc:`/book/entities`
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
@@ -187,6 +189,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
+        * Book: :doc:`/book/entities`
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
@@ -293,6 +296,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
 
 `NoteBundle`_ (Oro Platform)
@@ -435,6 +439,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/crud`
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
 
