@@ -18,7 +18,7 @@ Import
 
 - Choose :guilabel:`Download Data Template`.
 
-.. image:: ./img/export_import/download_data_template.png.
+.. image:: ./img/export_import/download_data_template.png
 
 - Make a .csv file in compliance with the template.
 
