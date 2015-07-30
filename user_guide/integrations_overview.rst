@@ -1,7 +1,7 @@
 .. _user-guide-integrations:
 
-OroCRM Integration and Synchronization Capabilities Overview
-============================================================
+OroCRM Integrations Overview
+============================
 
 OroCRM supports two types of integrations: 
 
@@ -13,7 +13,7 @@ OroCRM supports two types of integrations:
     Google account email address and OroCRM primary email address to log-in only once during a session.
 
   - :ref:`Integration with Microsoft Exchange server <admin-configuration-ms-exchange>`: Allows automatic uploading 
-    of emails from mailboxes on the server to OroCRM. (Available for enterprise edition only.)
+    of emails from mailboxes on the server to OroCRM. (Available for enterprise edition only).
 
   - :ref:`Integration with Microsoft Outlook <user-guide-synch-outlook>`: Allows automatic synchronization of all 
     the contacts, tasks and calendar events available for the user with the specified Outlook account 

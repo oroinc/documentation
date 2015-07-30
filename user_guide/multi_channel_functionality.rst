@@ -1,8 +1,8 @@
 
 .. _user-guide-multi-channel-overview:
 
-Multi-Channel Functionality
-===========================
+Aggregating Data from Multiple Sources
+======================================
 
 The new technology era brings new ways to reach your customers, which go along with overwhelming amount of information 
 to keep a track of.
@@ -12,7 +12,7 @@ eCommerce stores. Each of them deals with customer-related information of differ
 there are additional sources of customer-related data, such as promotion campaigns, research and community activities.
 
 Thus, there appears a need to process customer-related data from each of these sources separately and all-together. 
-This is exactly what you can do with OroCRM multi-channel functionality.
+This is exactly what you can do with OroCRM Multi-channel Functionality.
 
 How It Works
 ------------
@@ -21,11 +21,9 @@ How It Works
   customer-related data. :ref:`Type <user-guide-channel-guide-type>` of this channel indicates to the system what rules 
   to use for data received from the channel. 
 
-.. note::
-
-    Currently there are two out-of-the-box channel types described in more details in the 
-    :ref:`B2B Channel guide <user-guide-b2b-channel>` and :ref:`Magento Channel guide <user-guide-magento-channel>`, 
-    however new channel types can be added in the course of customization, subject to the specific client-needs.
+  Currently there are two out-of-the-box channel types described in more details in the 
+  :ref:`B2B Channel guide <user-guide-b2b-channel>` and :ref:`Magento Channel guide <user-guide-magento-channel>`, 
+  however new channel types can be added in the course of customization, subject to the specific client-needs.
 
 - Each channel is assigned a set of :term:`Entities <Entity>`. Records of these entities and their details can be 
   collected to OroCRM from the channel.

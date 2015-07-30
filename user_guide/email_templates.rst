@@ -4,9 +4,10 @@ Email Templates
 ===============
 
 With OroCRM you can easily sent numerous personalized emails using one template. For example, you can make a single 
-template that welcomes {username} and each of your subscribers will get a mail send specifically to them. 
+template that welcomes {username}, assign it to an :ref:`Email Campaign <user-guide-email-campaigns>` and each of your 
+subscribers will get a mail send specifically to them. 
 
-The articles describes the ways to create and manage email templates. 
+The articles describes the ways to create and manage Email Template records. 
 
 
 .. _user-guide-email-templates-create:
@@ -43,7 +44,7 @@ in the template. If no entity name is defined, only system variables will be ava
 :ref:`tracking code <user-guide-how-to-track>`. 
 *Every time a user follows the link, visit event will be tracked for the campaign.*   
 
-4. You can click :guilabel:`Preview` button to check your template
+4. You can click :guilabel:`Preview` button to check your template.
 
 .. image:: ./img/marketing/email_template_preview.png
 
@@ -54,7 +55,7 @@ in the template. If no entity name is defined, only system variables will be ava
 Email Template Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-If several languages have been :ref:`enabled <admin-configuration-language>` for the email templates, move from tab to 
+If :ref:`several languages have been enabled <admin-configuration-language>` for the email templates, move from tab to 
 tab, to define the template in different languages.
 
 .. image:: ./img/marketing/email_template_language.png
@@ -73,8 +74,20 @@ the :ref:`grid <user-guide-ui-components-grids>`:
 
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` form of the template: |IcEdit| 
 
-- Clone the  template:  |IcClone| - You can edit the template details and save a new (cloned and edited) template.  
+- Clone the  template:  |IcClone| 
 
+  You can edit the template details and save a new (cloned and edited) template.  
+
+
+*Now you can create an* :ref:`Email Campaign <user-guide-email-campaigns>`, *and send personalized emails based on your 
+template to the pre-defined list of subscribers.*  
+  
+.. hint::
+
+    If you want to track the user-activity related to the emails sent within the Email Campaign, add a piece of 
+    :ref:`Tracking Website <user-guide-marketing-tracking>` code to the email template. 
+  
+  
   
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle

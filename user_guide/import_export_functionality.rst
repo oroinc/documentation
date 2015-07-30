@@ -3,7 +3,7 @@
 Import and Export Functionality
 ===============================
 
-OroCRM's import and export functionality enables a simple way of working with multiple records in CSV format.
+OroCRM's import and export functionality is a simple way of working with multiple records in CSV format.
 
 If the functionality is enabled for an entity, :guilabel:`Export` and :guilabel:`Import` buttons are displayed
 in the top right corner of the grid.
@@ -14,13 +14,13 @@ in the top right corner of the grid.
 Import
 ------
 
-- Click |Bdropdown| on the  :guilabel:`Import` button
+- Click |Bdropdown| on the  :guilabel:`Import` button.
 
-- Choose :guilabel:`Download Data Template`
+- Choose :guilabel:`Download Data Template`.
 
-.. image:: ./img/export_import/download_data_template.png
+.. image:: ./img/export_import/download_data_template.png.
 
-- Prepare a .csv file following the template
+- Make a .csv file in compliance with the template.
 
 
 .. caution::
@@ -28,23 +28,25 @@ Import
     Mandatory fields of the entity **must** be specified
 
 
-- Click  :guilabel:`Import` button
+- Click the  :guilabel:`Import` button.
 
-- Click :guilabel:`Choose File` and choose a .csv file to import
+- Click :guilabel:`Choose File` and choose a .csv file to import.
 
-- Click :guilabel:`Submit`
+- Click :guilabel:`Submit`.
 
 .. image:: ./img/export_import/leads_import.png
 
-- Carefully read through the submission form
+|
+
+- Carefully read through the submission form.
 
 .. image:: ./img/export_import/leads_import_validation_results.png
 
-- Click :guilabel:`Back` to choose another file or :guilabel:`Import` button to go on with the import
+- Click the :guilabel:`Back` button to choose another file or :guilabel:`Import` button to go on with the import
 
-  *"Validation started. Please wait."* message will appear.
+  - First, the *"Validation started. Please wait."* message will appear.
 
-  *"File is successfully imported."* message will appear when the import has finished.
+  - When the import has finished, the *"File is successfully imported."* message will appear.
 
 Once import is over, the new entity records will appear in the :ref:`grid <user-guide-ui-components-grids>`.
 
@@ -55,20 +57,21 @@ Export
 ------
 
 - Go to the grid and
-  - Click :guilabel:`Export` button
 
-- *"Export started. Please wait."* message will appear at the top of the screen.
+  - Click the :guilabel:`Export` button.
 
-- As soon as the export finishes the message will change to: *"Export performed successfully, [number]
-  downloads exported. Download result file."*
+  - The *"Export started. Please wait."* message will appear at the top of the screen.
 
-- Click the *"Download result file*" at the end of the message, and the download will be performed subject to your
+  - As soon as the export is over, the message will change to: *"Export performed successfully, [number]
+    downloads exported. Download result file."*
+
+- Click the *"Download result file*" link at the end of the message, and the download will be performed subject to your
   browser settings.
 
 .. note::
 
     Please note that scope of record details exported, their names and position in the .csv file depend on the 
-    Import&Export settings of the entity fields.
+    :ref:`Import&Export settings <user-guide-entity-management-create-fields-common>` of the entity fields.
 
 
 

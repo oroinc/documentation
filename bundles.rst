@@ -64,7 +64,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/marketing_campaigns`
         * User guide: :doc:`/user_guide/email_campaigns`
-        * User guide: :doc:`/user_guide/how_to_track`
+        * User guide: :doc:`/user_guide/marketing_tracking_website_records`
 
 `CaseBundle`_ (OroCRM)
     Case entitiy management.
@@ -415,7 +415,6 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/how_to_track`
         * User guide: :doc:`/user_guide/marketing_tracking_website_records`
 
 `TranslationBundle`_ (Oro Platform)
