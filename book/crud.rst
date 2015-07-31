@@ -399,12 +399,32 @@ and register it as a service:
 .. code-block:: yaml
     :linenos:
 
-    # src/InventoryBundle/Resources/config/services.yml
+    # src/InventoryBundle/Resources/config/form.yml
     services:
         inventory.form.type.vehicle:
             class: InventoryBundle\Form\Type\VehicleType
             tags:
                 - { name: form.type, alias: inventory_vehicle }
+
+Note that most often it is a good idea (especially when you have many services in your bundle) to define form related services in a separate configuration file. By convention ``form.yml`` is used but since it's not autoloaded we need to loaded maually in the bundle extension class:
+
+.. code-block:: php
+    :linenos:
+    
+    // src/InventoryBundle/DependencyInjection/InventoryExtension.php;
+    namespace InventoryBundle\DependencyInjection;
+
+    // ...
+    
+    class InventoryExtension extends Extension
+    {
+        public function load(array $configs, ContainerBuilder $container)
+        {
+            ...
+            
+            $loader->load('form.yml');
+        }
+    }
 
 Then, you will need to create the needed controller actions. You can simplify the actions if you
 create a dedicated method that is handling the form submission:
