@@ -51,8 +51,8 @@ Finish the installation by clearing the cache again:
 Using Composer
 ~~~~~~~~~~~~~~
 
-Start with upgrading Composer to the latest version. This may be needed in case the extension to be
-installed uses some bleedy edge feature in its ``composer.json`` file:
+Start with upgrading Composer to the latest version. This may be needed in case if the extension to be
+installed uses some bleeding edge feature in its ``composer.json`` file:
 
 .. code-block:: bash
 
@@ -82,7 +82,7 @@ Finally, make sure to properly clean the cache:
 Querying Extension Information
 ------------------------------
 
-There are two commands that help you to get an overview about the extension.
+There are two commands that help you get an overview about the extension.
 
 The ``oro:package:available`` command can be used to retrieve a list of all available extensions:
 

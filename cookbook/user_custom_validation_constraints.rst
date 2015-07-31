@@ -46,8 +46,8 @@ predefined rules when a ``User`` is being validated:
         </constraint-mapping>
 
 The example ensures that a user is not activated after being registered.
-The validation group associated to a constraint determines when a constraint
-is applied to a ``User`` entity:
+The validation group associated to a constraint determines when the constraint
+is applied to the ``User`` entity:
 
 ================= =============================== ===============================
 Validation Group   Applied when a user is created Applied when a user is modified

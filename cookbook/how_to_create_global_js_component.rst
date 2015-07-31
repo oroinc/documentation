@@ -9,16 +9,15 @@ component is the Pin Bar:
 
 .. seealso::
 
-    You can find more information about the global component and the global view and learn about
-    the App Module from the :doc:`"Frontend Architecture chapter" </book/frontend_architecture>`
+    You can find more information about global components and global views and learn about
+    the App Module from the :doc:`Frontend Architecture chapter </book/frontend_architecture>`
     and from the `Page Component documentation`_.
 
-.. TODO needs to be replaced with a reference to the frontend architecture chapter
 
 Creating the Page Component Module
 ----------------------------------
 
-First of all, you need to define the Page Component module in your bundle which has to extend the
+First of all, you need to define the Page Component module in your bundle, which has to extend the
 ``BaseComponent`` class from the OroUIBundle. If the Page Component module is named
 ``MyComponent``, its code has to be placed in a file named ``my-component.js`` that lives in the
 ``Resources/public/js/app/components`` directory of your bundle:
@@ -104,12 +103,12 @@ The final step is to register your App Module in the RequireJS config:
 First, the ``my-module`` module name is added to the ``config.paths`` section to let the building
 script know about its location. This way, the building script can trace the dependency and add it
 to the build-file (``oro.min.js``). Once the source file was added to the configuration,
-``my-module`` is added to the list of module that are invoked at the application start using the
+``my-module`` is added to the list of modules that are invoked at the application start using the
 ``appmodules`` key.
 
 .. note::
 
-    To see your component in action, you need to do a few more things:
+    To see your component in action you need to do a few more things:
 
     - Clear the Symfony application cache to update the cache and the included RequireJS config:
 
@@ -121,7 +120,7 @@ to the build-file (``oro.min.js``). Once the source file was added to the config
 
       .. code-block:: bash
 
-          $ php app/console assets:install
+          $ php app/console oro:assets:install
 
     - In production mode, you also have to rebuild the JavaScript code:
 

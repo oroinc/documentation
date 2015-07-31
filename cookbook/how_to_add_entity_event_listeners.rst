@@ -15,9 +15,9 @@ Configuring the Listener
 
 Suppose that you have already extended an Oro bundle like ``OroCRMContactBundle`` (you can find more information
 on this page: `How to extend existing bundle`_).
-You would like to compliment the social information about your contact with some external API data.
+And you would like to compliment your contact's social information with some external API data.
 
-First, you have to add your listener to the bundle in the ``services.yml`` file.
+For this you need to register your listener in the ``services.yml`` file.
 
 .. code-block:: yaml
     :linenos:
@@ -35,10 +35,10 @@ Creating the Listener Class
 ---------------------------
 
 In the previous part, we created the contact.listener that is triggered during the flush of en entity.
-In fact, the event will be triggered during every flush of bundle's entities so you need to check the current
+In fact, the event will be triggered when all managed entities are being flushed, so you need to check the current
 entity class type.
 
-This class must have an onFlush method, which will be called when the event is dispatched:
+This class must have the ``onFlush`` method, which will be called when the event is dispatched:
 
 .. code-block:: php
     :linenos:

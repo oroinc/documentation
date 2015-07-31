@@ -4,7 +4,7 @@ How to Replace Inline-Javascript with a Component
 Embedding Functionality in a Page
 ---------------------------------
 
-Commonly, inline-JavaScript is used to bind some interactive functionality into a particular markup
+Commonly, inline JavaScript is used to bind some interactive functionality into the particular markup
 fragment:
 
 .. code-block:: html
@@ -23,23 +23,21 @@ fragment:
         });
     </script>
 
-The inline-script is often larger than in the example above and may also make use of inlined Twig
-code. It is impossible to reuse those code, to extend it or to test it. Additionally, it's hard to
-maintain it.
+Inline scripts are often larger than in the example above and may also make use of inline Twig code.
+It is impossible to reuse this code, extend it or test it. Additionally, it's hard to maintain it.
 
 Furthermore, the lifecycle of its instances is not defined and it is not specified how the function
 will be disabled when the control is not used anymore. Instead, one has to rely on jQuery to
-properly clean the memory. Most of the time, jQuery does this fine. However, there's no absolute
-guarantee that jQuery always handles this task successfully without the developer's help.
+properly clean the memory. Most of the time, jQuery does this fine. However, there's no
+guarantee that jQuery would always handle this task successfully without developer's help.
 
 The solution for the problems explained above is a Page Component.
 
-The Page Component
-------------------
+A Page Component
+----------------
 
-A Page Component is a controller that is not used for a whole page of an application, but will be
-used to implement certain parts of its functionality. A Page Component is responsible for the
-following things:
+A Page Component is a controller that is used to implement certain parts of the page functionality.
+It is responsible for the following things:
 
  * creating related views, collections, models and even sub-components
  * handling environment events
@@ -47,17 +45,16 @@ following things:
 
 .. seealso::
 
-    You can find more information about the Page Component in the
-    :doc:`"Frontend Architecture chapter" </book/frontend_architecture>` and in the
+    You can find more information about Page Components in the
+    :doc:`Frontend Architecture chapter </book/frontend_architecture>` and in the
     `Page Component documentation`_.
 
-Creating a Page Component Module
---------------------------------
+Creating a Page Component
+-------------------------
 
-A Page Component is a JavaScript object based on the ``BaseComponent``. The inline-JavaScript from
-the introduction will be replaced by a new ``Select2Component``. Start with creating a
-``select2-component.js`` file that lives in the ``Resources/public/js/app/components`` directory of
-your bundle.
+A Page Component is a JavaScript object based on the ``BaseComponent``. The inline JavaScript from
+the introduction will be replaced by the new ``Select2Component``. Start with creating the ``select2-component.js``
+file that lives in the ``Resources/public/js/app/components`` directory of your bundle.
 
 .. code-block:: javascript
     :linenos:
@@ -102,16 +99,16 @@ your bundle.
         return Select2Component;
     });
 
-This code can be tested, extended and reused. What is even more important is that the component
+This code can be tested, extended and reused. What's even more important is that the component
 provides two methods ``initialize()`` and ``dispose()`` which restrict the existence of the
-``select2`` instance. Thus, it defines its own lifesycle and therefore minimizes the risk of a
-memory leak.
+``select2`` instance. Thus, it defines its own lifesycle and therefore minimizes the risk of
+memory leaks.
 
 Declaring a Page Component in HTML
 ----------------------------------
 
 Next, the HTML code of the related template has to be modified to tell the ``Layout`` which
-HTML elements are related to the ``Select2Component``:
+HTML elements are related to the ``Select2Component`` component:
 
 .. code-block:: html+jinja
     :linenos:
@@ -144,7 +141,7 @@ Using the View Component
 ------------------------
 
 The code is now reusable. Though it can be improved by separating business logic from the view
-layer. Therefore, replace the ``Select2Component`` with a ``Select2View`` class in a file named
+layer. Therefore, replace the ``Select2Component`` with the ``Select2View`` class in the file named
 ``select2-view.js`` that lives in the ``Resources/public/js/app/views`` directory of your bundle
 and that extends the ``BaseView`` class:
 
@@ -191,9 +188,9 @@ to deal with retrieving the associated HTML element and that you don't have to p
 This is done for you by the ``ViewComponent``.
 
 However, you still need to tell the component to instantiate your ``Select2View``. For this purpose
-the Oro Platform ships with a ``ViewComponent`` that instantiates views for HTML elements. To make
-use of the ``ViewComponent``, replace the value of ``data-page-component-module`` attribute with
-the ``oroui/js/app/components/view-component`` and use the ``view`` option to point to your new
+the Oro Platform is shipped with the ``ViewComponent`` that instantiates views for HTML elements.
+To make use of the ``ViewComponent``, replace the value of ``data-page-component-module`` attribute
+with the ``oroui/js/app/components/view-component`` and use the ``view`` option to point to your new
 ``Select2View``:
 
 .. code-block:: html+jinja
@@ -222,7 +219,7 @@ Please note that as we instantiate the view in the module load callback,
 we deal with asynchronous process. Therefore, the component is not ready for use right after
 the initialization method has finished its work. We need to inform the super controller that
 this is async initialization. To do so, we first call ``this._deferredInit()``
-that creates promise object, and once the initialization is over, we invoke
+that creates a promise object, and once the initialization is over, we invoke
 ``this._resolveDeferredInit()`` that resolves this promise. This way the
 super controller gets informed that the component is initialized.
 
@@ -260,7 +257,7 @@ and include it into the build file.
 
       .. code-block:: bash
 
-          $ php app/console assets:install
+          $ php app/console oro:assets:install
 
     - In production mode, you also have to rebuild the JavaScript code:
 

@@ -1,12 +1,12 @@
 .. index::
     single: Marketplace; Add an Extension
 
-How to Add an Extension to Oro Marketplace
-==========================================
+How to Add an Extension to the OroCRM Marketplace
+=================================================
 
-`Oro Marketplace`_ is the place where developers can publish their extensions and customers can obtain them.
+The `OroCRM Marketplace`_ is the place where developers can publish their extensions and customers can obtain them.
 
-There are two types of extensions in Oro Marketplace: free and paid. Free extensions are distributed directly
+There are two types of extensions in the OroCRM Marketplace: free and paid. Free extensions are distributed directly
 from the Marketplace, whereas paid extensions must be purchased from the publisher’s website.
 
 Package Preparation
@@ -14,12 +14,12 @@ Package Preparation
 
 Before you add an extension to the Marketplace you have to prepare the package and upload it to some repository.
 
-Paid extensions can be published anywhere. Their publishers are fully responsible for the proper packaging,
-distribution, and payment processing.
+Paid extensions can be published anywhere. Their publishers are fully responsible for proper packaging, distribution
+and payment processing.
 
 All free extensions can be published on any publicly available git repository (GitHub, BitBucket, etc.).
 We strongly recommend to publish all releases with tags – this will allow `our packagist application`_
-to pick up release notes, version history and contents of ``readme.md`` file.
+to pick up release notes, version history and contents of the ``readme.md`` file.
 
 Every package must contain a ``composer.json`` file in the root catalogue. This file in turn must contain
 information about the application, its author and distribution license, as shown in the example below:
@@ -42,8 +42,8 @@ We only accept extensions under OSL-3 or MIT licenses.
 Adding an Extension
 -------------------
 
-To be able to add an extension, you have to be logged in to Oro Marketplace website. The Add Extension page
-can be reached via the OroCRM menu in the top right corner of the page, or via link on the My Marketplace page.
+To be able to add an extension you have to be logged in to tho OroCRM Marketplace website. The Add Extension page
+can be reached via the user menu in the top right corner of the page or via link on the My Marketplace page.
 
 First thing you have to do is to choose an extension type: paid or free.
 Free extensions also require the repository URL. Then click Next to proceed to the second step of adding an extension.
@@ -54,7 +54,7 @@ Paid Extensions
 
 For paid extensions the following information must be specified.
 
-**Extension Name** – Name of the extension as it will appear in Oro Marketplace.
+**Extension Name** – Name of the extension as it will appear in the Marketplace.
 
 **Web URL** – the user will be navigated to this URL when he clicks Get Extension button on the application view
 in the Marketplace. Usually this is an extension page on publisher’s website.
@@ -112,9 +112,9 @@ will not require admin approbation and will be published immediately.
 References
 ----------
 
-* `Oro Marketplace`_
+* `OroCRM Marketplace`_
 * `Oro Packagist`_
 
-.. _Oro Marketplace: http://www.orocrm.com/marketplace/oro-crm
+.. _OroCRM Marketplace: http://www.orocrm.com/marketplace/oro-crm
 .. _Oro Packagist: http://packagist.orocrm.com/
 
