@@ -61,7 +61,7 @@ domain will be used).
 Organize the Navigation Trees
 -----------------------------
 
-The next step is to compose a tree off of the menu items that you created before. Theses trees are
+The next step is to compose a tree of the menu items that you created before. These trees are
 build under the ``tree`` key:
 
 .. code-block:: yaml
