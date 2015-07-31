@@ -7,12 +7,12 @@ How to pass request parameter to the grid
 =========================================
 
 In some cases, you need to pass parameters from the request to the grid.
-This task could be solved using grid event listener. An existing listener implementation also could be used.
+This task may be solved using grid event listeners. An existing listener implementation also could be used.
 
 Grid Configuration
 ------------------
 
-Suppose that you have a grid configuration and a named parameter inside where clause of it's source query.
+Suppose that you have a grid configuration and a named parameter inside where clause of its source query.
 For example:
 
 .. code-block:: yaml
@@ -31,13 +31,13 @@ For example:
             # ...
         # ...
 
-Our goal is to set :contactId parameter with the value from a request.
+Our goal is to set :contactId parameter with the value from the request.
 
 Solution 1. Create custom event listener
 ----------------------------------------
 
-We need to create a listener for the event "oro_datagrid.datagrid.build.after"
-and set parameter to source query in this listener. Also we need to pass parameter to the grid.
+We need to create a listener for the "oro_datagrid.datagrid.build.after" event
+and set the parameter for the source query in this listener. Also we need to pass the parameter to the grid.
 
 Listener class code:
 
@@ -50,7 +50,6 @@ Listener class code:
 
     use Doctrine\ORM\QueryBuilder;
 
-    use Oro\Bundle\DataGridBundle\Datagrid\ParameterBag;
     use Oro\Bundle\DataGridBundle\Datasource\Orm\OrmDatasource;
     use Oro\Bundle\DataGridBundle\Event\BuildAfter;
 
@@ -72,7 +71,7 @@ Listener class code:
             $parameters = $datagrid->getParameters();
 
             if ($datasource instanceof OrmDatasource) {
-                /** @var QueryBuilder $query */
+                /** @var QueryBuilder $queryBuilder */
                 $queryBuilder = $datasource->getQueryBuilder();
 
                 $queryBuilder->setParameter($this->parameterName, $parameters->get($this->requestParameterName));
@@ -80,7 +79,7 @@ Listener class code:
         }
     }
 
-Register this listener in container:
+Register this listener in the container:
 
 .. code-block:: yaml
     :linenos:
@@ -94,8 +93,8 @@ Register this listener in container:
             tags:
                 - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-tasks-grid, method: onBuildAfter }
 
-Now we need to pass parameter with name "contactId" to our grid.
-The controller receives a contact entity and pass it to the view:
+Now we need to pass the parameter with name "contactId" to our grid.
+The controller receives a contact entity and passes it to the view:
 
 .. code-block:: php
     :linenos:
@@ -127,7 +126,7 @@ The controller receives a contact entity and pass it to the view:
             // ...
         }
 
-The view passes parameter "contactId" to the grid, it will be used in the listener:
+The view passes "contactId" parameter to the grid, it will be used in the listener:
 
 .. code-block:: html+jinja
     :linenos:
@@ -143,9 +142,9 @@ The view passes parameter "contactId" to the grid, it will be used in the listen
 Solution 2. Use existing listener
 ---------------------------------
 
-Instead of writing your custom listener you can use existing class
-(Oro\Bundle\DataGridBundle\EventListener\BaseOrmRelationDatagridListener) that can be referenced in services configuration
-via parameter "oro_datagrid.event_listener.base_orm_relation.class":
+Instead of writing your custom listener you can use the existing class
+(``Oro\Bundle\DataGridBundle\EventListener\BaseOrmRelationDatagridListener``) that can be referenced in the service configuration
+via ``oro_datagrid.event_listener.base_orm_relation.class`` parameter:
 
 .. code-block:: yaml
     :linenos:
@@ -160,8 +159,8 @@ via parameter "oro_datagrid.event_listener.base_orm_relation.class":
             tags:
                 - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-tasks-grid, method: onBuildAfter }
 
-This way the listener is reused and you don't need to write yours, but you still need to pass parameter "contactId"
-to the grid (see example with passing parameters in the grid from Twig template).
+This way the listener is reused and you don't need to write one of your own, but you still need to pass the "contactId" parameter
+to the grid (see example with passing parameters to the grid from a Twig template).
 
 References
 ----------

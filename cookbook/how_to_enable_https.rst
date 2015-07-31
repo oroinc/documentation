@@ -6,26 +6,21 @@
 How to enable https
 ===================
 
-*Used application: OroPlatform 1.0.0*
+*Used application: OroPlatform 1.7*
 
-There are two ways to enable https:
+There are two ways to enable HTTPS:
 
 Configuring routes
 ------------------
 
-You have to add schema parameter to routing.yml file.
+If you want secure some routes and make sure that they are always accessed via HTTPS protocol,
+you can add ``schemes`` parameter to the ``app/config/routing.yml`` file.
 
 .. code-block:: yaml
     :linenos:
 
     # app/config/routing.yml
-    oro_default:
-        pattern:  /
-        defaults:
-            _controller: OroDashboardBundle:Dashboard:index
-        schemes:  [https]
-
-    oro_auto_routing:
+    acme_secure:
         resource: .
         type:     oro_auto
         schemes:  [https]
@@ -34,7 +29,7 @@ You have to add schema parameter to routing.yml file.
 Configuring security config
 ---------------------------
 
-You have to add requires_channel option
+As an alternative, you have to add the ``requires_channel`` option to the ``app/config/security.yml`` file:
 
 .. code-block:: yaml
     :linenos:
@@ -44,9 +39,12 @@ You have to add requires_channel option
 
     access_control:
         # ...
-        - { path: ^/, role: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/acme, roles: ROLE_ADMIN, requires_channel: https}
         # ...
 
+
+This method is better suited for cases when you need to secure certain URLs
+or sections of your website (URLs starting with some prefix, etc.)
 
 References
 ----------

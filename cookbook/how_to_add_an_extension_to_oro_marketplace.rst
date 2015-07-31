@@ -4,7 +4,7 @@
 How to Add an Extension to Oro Marketplace
 ==========================================
 
-`Oro Marketplace`_ is the place where developers can publish their extensions, and customers can obtain them.
+`Oro Marketplace`_ is the place where developers can publish their extensions and customers can obtain them.
 
 There are two types of extensions in Oro Marketplace: free and paid. Free extensions are distributed directly
 from the Marketplace, whereas paid extensions must be purchased from the publisher’s website.
@@ -19,9 +19,9 @@ distribution, and payment processing.
 
 All free extensions can be published on any publicly available git repository (GitHub, BitBucket, etc.).
 We strongly recommend to publish all releases with tags – this will allow `our packagist application`_
-to pick up release notes, version history and contents of readme.md file.
+to pick up release notes, version history and contents of ``readme.md`` file.
 
-Every package must contain a composer.json file in the root catalogue. This file in turn must contain
+Every package must contain a ``composer.json`` file in the root catalogue. This file in turn must contain
 information about the application, its author and distribution license, as shown in the example below:
 
 .. code-block:: json

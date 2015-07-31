@@ -5,19 +5,19 @@
 How to add entity event listeners
 =================================
 
-*Used application: OroPlatform RC3*
+*Used application: OroPlatform 1.7*
 
-In some cases, you need to update a field before save or before update an entity.
-Doctrine Listener is the perfect way to do that.
+In some cases, you need to update a field before saving or before updating an entity.
+A Doctrine Listener is a perfect way to do that.
 
 Configuring the Listener
 ------------------------
 
-Suppose that you have already extended an Oro bundle like OroCRMContactBundle (you can find more information
-on this page: `How to extend existing bundle`_)
-You would like to fulfill social information about your contact with some external API data.
+Suppose that you have already extended an Oro bundle like ``OroCRMContactBundle`` (you can find more information
+on this page: `How to extend existing bundle`_).
+You would like to compliment the social information about your contact with some external API data.
 
-First, you have to add your listener to the bundle by the services.yml file.
+First, you have to add your listener to the bundle in the ``services.yml`` file.
 
 .. code-block:: yaml
     :linenos:
@@ -34,11 +34,11 @@ First, you have to add your listener to the bundle by the services.yml file.
 Creating the Listener Class
 ---------------------------
 
-In the previous part, we created a contact.listener who is triggered during flush of the entity.
+In the previous part, we created the contact.listener that is triggered during the flush of en entity.
 In fact, the event will be triggered during every flush of bundle's entities so you need to check the current
-entity's class type.
+entity class type.
 
-This class must have a onFlush method, which will be called when the event is dispatched:
+This class must have an onFlush method, which will be called when the event is dispatched:
 
 .. code-block:: php
     :linenos:
@@ -48,7 +48,6 @@ This class must have a onFlush method, which will be called when the event is di
     namespace Acme\Bundle\ContactBundle\Listener;
 
     use Doctrine\ORM\Event\OnFlushEventArgs;
-    use OroCRM\Bundle\ContactBundle\Entity\Contact;
     use OroCRM\Bundle\ContactBundle\Entity\ContactEmail;
 
     class SocialFields
@@ -74,7 +73,7 @@ This class must have a onFlush method, which will be called when the event is di
                 if ($entity->isPrimary()) {
                     $owner = $entity->getOwner();
 
-                    // ... update social infos of the owner with its primary email
+                    // ... update social info of the owner with its primary email
 
                     // force persist
                     $em->persist($owner);
@@ -88,8 +87,8 @@ This class must have a onFlush method, which will be called when the event is di
 .. caution::
 
     In case of update, we need to persist the related entities and force update
-    with "computeChangeSet" function. Every related entities to the current
-    one must be updated like this if you change any properties value. If you
+    them with ``computeChangeSet()`` function. Every entity related to the current
+    one must be updated like this if you change any property values. If you
     do not, the new value of your related entity's property will not be updated.
 
 References
