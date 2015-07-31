@@ -10,11 +10,11 @@ Create a Task
 -------------
 There are several ways to create a task:
 
-- Use the *"Add Task"* action to create a task in the context of some entity record and define the user responsible
+- Use the *"Add Task"* action to create a task in the context of some entity record and define the user responsible.
 
-- Use the *"Assign Task"* action on the page of the user responsible
+- Use the *"Assign Task"* action on the page of the user responsible.
 
-- Create a *"Task"* records in the Tasks grid
+- Create a *"Task"* records in the Tasks grid.
 
 
 Add a Task for Another Record
@@ -61,6 +61,8 @@ changed his work.
 We have created a relevant task on the View page of Jeffrey Maynard's contact record.  The task must be done within
 a week (till April 5th). An email will be sent to Ellen Rowell one day before the due date.
 
+      |
+  
 .. image:: ./img/activities/add_task_ex.png
    
 4. Click the :guilabel:`Create Task` button and the Task will be added.
@@ -83,6 +85,8 @@ Assign a Task to a User
 For example, we also need Ellen Rowell to find a new contact at Cal Stereo, where Mr. Jeffrey Maynard used to work.
 The task has no specific due date, but its priority is high.
 
+      |
+  
 .. image:: ./img/activities/assign_task.png
 
 4. Click the :guilabel:`Create Task` button and the task will be added.
@@ -91,15 +95,13 @@ The task has no specific due date, but its priority is high.
 Create a Task from the Tasks Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Go to *Activities → Tasks*.
-
-.. hint:
-
-    Another way to get to the grid is to click the :guilable`Tasks` button above your calendar.
+1. Go to *Activities → Tasks* or click the :guilable`Tasks` button above your calendar.
 
 2. Click the :guilabel:`Create Task` button.
 
 3. The "Create Task" form will appear.
+
+      |
 
 .. image:: ./img/activities/create_task.png
 
@@ -112,34 +114,40 @@ This is a particularly convenient way to create a task for yourself, as well as 
 View and Manage Tasks
 ^^^^^^^^^^^^^^^^^^^^^
 
-.. note:
+.. note::
 
    The ability to view and edit the tasks depends on specific roles and permissions defined for them in 
    the system. 
    
-- All the tasks can be viewed for the Tasks grid
+- All the tasks can be viewed for the Tasks grid.
 
 - All the events added for a record are displayed and can be reached from the *Record Activities* section on the 
   View page of this record:
 
+  |
+  
 .. image:: ./img/activities/add_task_view.png
 
-- To see the details, click on the task title or the :guilabel:`+` to the left from it.  
+|
 
-.. image:: ./img/activities/add_task_view_detailed.png
+- To see the details, click on the task title or the :guilabel:`+` to the left from it.  
 
 - All the tasks assigned to a user will appear in the "User Tasks" grid in the "Additional Information" section of the 
   user's View page. 
 
 .. image:: ./img/activities/assign_task_manage.png
 
-- From any of the grids above, you can manage the tasks using the action icons:
+|
 
-  - Delete the task: |IcDelete|
+From any of the grids above, you can manage the tasks using the action icons:
 
-  - Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the task: |IcEdit|
+- Delete the task: |IcDelete|
 
-  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the task:  |IcView|
+- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the task: |IcEdit|
+
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the task:  |IcView|
+
+      |
 
 Tasks Assigned to You
 """""""""""""""""""""
@@ -150,22 +158,29 @@ Once you have logged into the system, you can see the Task grid in "My Tasks" pa
 
 .. image:: ./img/activities/my_tasks.png
 
+|
 
 Tasks, for which a due date has been defined will also appear in the "My Calendar" page:
 
+      |
+  
 .. image:: ./img/activities/my_tasks_cal.png
+
+|
 
 Click on the task in the calendar to get to its information tab. Use the buttons at the bottom to manage the task.
 
+      |
+  
 .. image:: ./img/activities/my_tasks_info.png
 
 
 
-.. note:
+.. note::
   
-    The tasks can also be mapped to the Oulook account as described in the corresponding 
-    :ref:`section <ooutlook-calendar-mapping>` of the 
-    :ref:`Synchronization with Outlook guide `<user-guide-synch-outlook>.
+    The tasks can also be mapped to the Outlook account as described in the corresponding 
+    :ref:`section <outlook-calendar-mapping>` of the 
+    :ref:`Synchronization with Outlook guide <user-guide-synch-outlook>`.
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png

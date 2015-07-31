@@ -1,17 +1,21 @@
 .. _user-guide-marketing-campaigns:
 
-Campaigns
-=========
+Marketing Campaigns
+===================
 
-Campaigns in OroCRM are used to define general details of the marketing activity and monitor its flow and results.
+Campaign records in OroCRM are used to define general details of the marketing activity and monitor its flow and results.
 
-This article describes the ways to create, manage and view the campaign details. 
+You can include any amount of :ref:`Email Campaigns <user-guide-email-campaigns-plus-marketing>` and 
+:ref:`Tracking Website records <user-guide-marketing-tracking>` into one Campaign and get the full picture to evaluate 
+the campaign efficiency.
+
+This article describes the ways to create, manage and view the Campaign records. 
 
 
 .. _user-guide-marketing-campaigns-create:
 
-Create Campaigns
-----------------
+Create Campaign Records
+-----------------------
 
 1. Go to *Marketing → Campaigns* page and click :guilabel:`Create Campaign` button in the top right corner to get 
    to the *Create Campaign* :ref:`form <user-guide-ui-components-create-pages>`.
@@ -82,20 +86,21 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a campaign contain
   
   The section contains the "Detailed Events Report" and the grid.
   
-.. image:: ./img/marketing/marketing_campaign_view_events.png
+  |ViewEvents|
 
-In the example above users have accessed the site 36 times, twenty-two out of these times, they've made an order and 8 times 
-they've viewed some item details.
-
-The way to define the events for tracking is described in more details in the :ref:`How to Track Campaign Related 
-Activities on the Website <user-guide-how-to-track>` guide.
-
-- Tracking Code: piece of code to be added to the website to enable website tracking. The code and its usage is 
-  described in more details in :ref:`How to Track Campaign Related Activities on the 
-  Website <user-guide-how-to-track>` guide.
-
-.. image:: ./img/marketing/marketing_campaign_view_code.png
+  In the example above users have accessed the site 36 times, twenty-two out of these times, they've made an order and 
+  8 times they've viewed some item details.
   
+  Campaign events include the events logged for related 
+  :ref:`Email Campaigns <user-guide-email-campaigns-plus-marketing>` and 
+  :ref:`Tracking Website records <user-guide-marketing-tracking>`
+
+- Campaign tracking code. A piece of code, that you can use, to include details of Tracking Website records to the 
+  Campaign. 
+
+  |CampaignCode|
+
+
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
@@ -114,3 +119,9 @@ Activities on the Website <user-guide-how-to-track>` guide.
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
+
+.. |ViewEvents| image:: ./img/marketing/marketing_campaign_view_events.png
+
+
+.. |CampaignCode| image:: ./img/marketing/marketing_campaign_view_code.png
+  

@@ -49,6 +49,8 @@ In order to create a contact request from OroCRM:
 For example, there was a request from Mr. Jack Johnson, representative of the General Ltd. interested in OroCRM's 
 multichannel functionality. 
 
+      |
+	  
 .. image:: ./img/activities/request_create.png
 
   

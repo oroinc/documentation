@@ -36,7 +36,7 @@ The form initially looks as follows:
 .. image:: ./img/emb_form/cont_req_magento.png
 
 
-Create an Preview an Embedded Form
+Create and Preview an Embedded Form
 -----------------------------------
 
 In order to create a new embedded form:
@@ -69,14 +69,24 @@ In order to create a new embedded form:
 For example, we have created a form for the custom channel. We've changed the text color to green and the background to 
 yellow. We've also changed the Success Message to "Thank you for the question!".
 
+      |
+  
 .. image:: ./img/emb_form/emb_form_create_ex.png
+
+|
 
 After we've saved it, the form has appeared in the Embedded Forms grid. 
 
+       |
+  
 .. image:: ./img/emb_form/emb_form_create_ex_01.png
 
-You can preview the form on its `View page <user-guide-ui-components-view-pages>` page:
+|
 
+You can preview the form on its :ref:`View page <user-guide-ui-components-view-pages>` page:
+
+      |
+  
 .. image:: ./img/emb_form/emb_form_create_ex_02.png
 
 

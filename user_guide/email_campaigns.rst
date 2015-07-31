@@ -3,24 +3,33 @@
 Email Campaigns
 ===============
 
-OroCRM enable creation of email campaigns - mass-mailings generated based on a specific 
-:ref:`template <user-guide-email-template>` and sent to a predefined set of users 
-(:ref:`marketing list <user-guide-marketing-lists>`).
+Want to send a congratulation letter to all of your loyal customers born in June? 
 
-Each Email Campaign record ("email campaign") represents such a mass-mailings and keeps its general information and 
-settings, as described below:
+Want to make a special offer to every customer who has purchased from you since April? 
 
+OroCRM enables creation of email campaigns.  This means that once you have defined the rules for generation of a 
+:ref:`Marketing List <user-guide-marketing-lists>` 
+or a :ref:`Magento Abandoned Cart Campaigns <user-guide-acc>`, and have created an :ref:`Email Template 
+<user-guide-email-template>`, you can easily set-up an Email Campaign, within which all the contacts on the list will
+receive personalized emails in compliance with the campaign.
+
+This article describes how to set up an Email Campaign in OroCRM and manage it. 
 
 .. _user-guide-email-campaigns-create:
 
 Create Email Campaign Records
 -----------------------------
 
-1. Go to the *Email Campaigns* page and click the :guilabel:`Create Email Campaign` button in the top right corner to 
-   get to the *"Create Email Campaign"* :ref:`form <user-guide-ui-components-create-pages>`.
+- Go to the *Email Campaigns* page.
 
-2. Define general settings of the campaign:
+- Click the :guilabel:`Create Email Campaign` button.
 
+- The *"Create Email Campaign"* :ref:`form <user-guide-ui-components-create-pages>` will appear.
+
+- Fill in the settings in the following sections, as described below:
+
+General Settings
+^^^^^^^^^^^^^^^^
   There are four mandatory fields that **must** be defined:
   
 .. csv-table::
@@ -44,11 +53,24 @@ Create Email Campaign Records
   email campaigns of the owner (e.g. the owner, members of the same business unit, system administrator, etc.)."
 
 Optional fields can be used to define such details as the way to represent the sender's email address and name in the 
-emails and to connect the email campaign to a :ref:campaign.
+emails.
 
 Custom fields may be added, subject to specific business needs. 
 
-3. Define the mailing settings. 
+.. _user-guide-email-campaigns-plus-marketing:
+
+Assign an Email Campaign to a Marketing Campaign
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+If you want to include one or several email campaign(s) to an 
+:ref:`OroCRM Marketing Campaign <user-guide-marketing-campaigns>`, choose the Marketing Campaign name in the drop-down 
+of the optional field *"Campaign"*.
+
+Any amount of email campaigns can be assigned to one marketing campaign.
+
+
+Mailing Settings 
+^^^^^^^^^^^^^^^^
 
 There are two mandatory fields that **must** be defined:
   
@@ -67,7 +89,6 @@ There are two mandatory fields that **must** be defined:
 .. image:: ./img/marketing/email_campaign_example.png
 
 
-
 .. _user-guide-email-campaigns-actions:
 
 Manage Email Campaign Records
@@ -83,6 +104,25 @@ The following actions are available for an email campaign from the
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit| 
  
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
+
+
+.. _user-guide-email-campaigns-send:
+
+Send an Email Campaign
+----------------------
+
+In order to start and email campaign, go to the View page of the Email Campaign record, and click the 
+:guilabel:`Send` in the top left corner of the page.
+
+.. image:: ./img/marketing/email_campaign_send.png
+ 
+*Now all the contact on the list will get their emails in full compliance with your business needs.*
+
+.. note::
+
+    If an Email Campaign has been created as a result of integration in :ref:`MailChimp <user-guide-mc-integration>` or
+    :ref:`Dotmailer <user-guide-dm-integration>`, its record will be automatically created in OroCRM and related 
+    statistics will be uploaded and synchronized.
 
 
 

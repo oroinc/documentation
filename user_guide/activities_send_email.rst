@@ -3,9 +3,9 @@
 Send Email
 ==========
 
-Use the "*Send Email*" action to send an email from OroCRM
+Use the "*Send Email*" action to send an email from OroCRM.
 
-The  action will be available for records of entities with the *"Emails"* activity 
+The  action will be available for records of entities with the *"Emails"* activity
 :ref:`enabled <user-guide-activities-enable>`.
 
 .. note::
@@ -32,17 +32,17 @@ The  action will be available for records of entities with the *"Emails"* activi
   "**To, Cc and Bc**","Recipients of the email. By default, the field is filled in with the primary email address of one 
   of the contacts assigned to the record (if any).
 
-   To clear the field, click the :guilabel:`x` button. 
+  To clear the field, click the :guilabel:`x` button. 
    
-   Click the :guilabel:`Cc` or :guilabel:`Bcc` button to define emails for a carbon copy or a blind carbon copy of the 
-   email.
+  Click the :guilabel:`Cc` or :guilabel:`Bcc` button to define emails for a carbon copy or a blind carbon copy of the 
+  email.
    
-   At least one of the fields (*To*, *Cc* or *Bcc*) must be filled in."
-   "**Subject***","A topic of the email. The field must be filled in."
-   "**Apply template**","You can choose an :ref:`email template <user-guide-email-template>` to use from the drop-down
-   menu."
-   "**Type***","Choose whether you want to use html or plain text for the email. The type is by default set to html."
-   "**Body**","Define the email body."
+  At least one of the fields (*To*, *Cc* or *Bcc*) must be filled in."
+  "**Subject***","A topic of the email. The field must be filled in."
+  "**Apply template**","You can choose an :ref:`email template <user-guide-email-template>` to use from the drop-down
+  menu."
+  "**Type***","Choose whether you want to use html or plain text for the email. The type is by default set to html."
+  "**Body**","Define the email body."
    
 For example, we have created an email for the contact Jeffrey Maynard:
 
@@ -62,7 +62,7 @@ For example, we have created an email for the contact Jeffrey Maynard:
 
 .. note::
 
-    Some default email settings also depend on the :ref`related configuration settings <admin-configuration-emails>`.
+    Some default email settings also depend on the :ref:`related configuration settings <admin-configuration-emails>`.
 
 	
 .. _user-guide-activities-emails-view:
@@ -72,6 +72,8 @@ View and Process Emails
 All the emails sent for a record are displayed in and can be reached from the *Record Activities* section on the 
 :ref:`View page <user-guide-ui-components-view-pages>`:
 
+      |
+	  
 .. image:: ./img/activities/send_email_view.png
 
 You can use the action icons to
@@ -80,14 +82,16 @@ You can use the action icons to
 
 - Forward the email: |email_forward|.  A form similar to the initial *Send Email* form will appear.
 
-- Define a record in OroCRM related to the email: 
-  
-  |email_context|. 
+- Define a record in OroCRM related to the email: |email_context| 
   
   - The *Add Context Entity* form will appear. 
 
+   |
+   
    |email_context_form|
   
+   |
+   
   - Choose the entity (account, B2B customer, etc.) from the drop-down menu and choose a specific record from the grid.
 
 .. hint::
@@ -95,8 +99,10 @@ You can use the action icons to
     If an email has been created from an entity record view page (e.g. from the Lead's page), this record will be added
     as a context automatically.
     
+    | 
+    
     |email_context_view|
-
+    
 To see the details, click on the email title or on the :guilabel:`+` to the left of it.
 
 .. image:: ./img/activities/send_email_view_detailed.png

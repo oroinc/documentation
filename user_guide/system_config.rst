@@ -7,14 +7,18 @@ Use the Configuration settings to define options to be applied to the OroCRM ins
 
 Open the OroCRM instance and go to *"System → Configuration"*.
 
+      |
+  
 .. image:: ./img/configuration/menu.png
+
+|
 
 The available options are described and explained in the order they appear in the menu by default.
 
 .. sidebar:: Use Default
 
     Beside each of the settings there is a *"Use Default"* check-box. If the check-box is active, the default value will 
-    be used. Default values for each if the settings is described in corresponding sections.  
+    be used. Default values for each of the settings are described in corresponding sections below.  
 
 Application Settings
 --------------------
@@ -22,7 +26,11 @@ Application Settings
 In the *"System → Configuration → General setup → Application Settings"* you can define the URL to be used as a value 
 for the {{system.appURL}} in the :ref:`email templates <user-guide-email-template>`. 
 
+      |
+  
 .. image:: ./img/configuration/application_settings.png
+
+|
 
 The default value is http://localhost/oro/.
 
@@ -35,6 +43,8 @@ Localization Options
 In *"System → Configuration → General setup → Localization → Localization Options"* you can define a number of 
 localization options to be applied to the OroCRM instance, as follows:
 
+      |
+  
 .. image:: ./img/configuration/localization.png
 
 .. csv-table::
@@ -71,6 +81,8 @@ In *"System → Configuration → General setup → Localization → Map Options
 **Temperature Unit** and **Wind Speed Unit** used for the map displayed by the address.
 
 The default values are Fahrenheit and miles per hour (MPH).
+
+      |
 
 .. image:: ./img/configuration/localization_map.png
 
@@ -127,12 +139,14 @@ Display Settings
 In *"System → Configuration → General setup → Display settings"* you can define a number of display -related options
 to be applied to the OroCRM instance, as follows:
 
+      |
+  
 .. image:: ./img/configuration/display_settings.png
 
 Navigation bar
 ^^^^^^^^^^^^^^
 
-Go to **Navigation bar → Position*** field to define the *Navigation bar* position. Choose a value from the drop-down
+In the **Navigation bar → Position*** field, define the *Navigation bar* position. Choose a value from the drop-down
 menu.
 
 The default value is "Top".
@@ -140,7 +154,7 @@ The default value is "Top".
 WYSIWYG settings
 ^^^^^^^^^^^^^^^^
 
-Go to **WYSIWYG settings → Enable WYSIWYG Editor*** to define whether text formatting tools must be available for 
+In the  **WYSIWYG settings → Enable WYSIWYG Editor*** field, define whether text formatting tools must be available for 
 :ref:`emails <user-guide-activities-emails>`, :ref:`notes <user-guide-add-note>` and 
 :ref:`comments <user-guide-activities-comments>`. 
 
@@ -148,7 +162,7 @@ The value is enabled by default.
 
 .. note::
 
-    The formatting tools can also be enabled for other text fields in the course of integration","Enabled"
+    The formatting tools can also be enabled for other text fields in the course of integration.
 
 
 Activity lists
@@ -217,8 +231,8 @@ By default only the left sidebar is enabled.
 Tracking
 --------
 
-The Tracking section specifies the settings to be applied for all the :ref:`Tracking 
-records <user-guide-marketing-tracking>` created in the system instance.
+The Tracking section specifies the settings to be applied for all the 
+:ref:`Tracking records <user-guide-marketing-tracking>` created in the system instance.
 
 The following options are available:
 

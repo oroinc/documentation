@@ -7,7 +7,7 @@ Calls logging helps to keep a record of the outgoing and incoming calls.
 
 There are two ways to log a call in OroCRM:
 
-- Log a call related to a record of an entity
+- Log a call related to a record of an entity.
 - Log a call from the *"Calls"* grid.
 
 
@@ -48,11 +48,11 @@ The *"Log Call"* action will be available for records of entities with the *"Cal
   "**Duration**","Define how long the call was."
 
 
-For example, we have called Mr. Maynard to verify the email address.
+For example, we have called Mr. Maynard to verify the email address:
 
-- The "Owner" field was automatically filled with the user John Doe
-- We've defined the call subject and briefly described the call results in the "Additional comments" section
-- We've specified the call duration (5 minutes)
+- The "Owner" field was automatically filled with the user John Doe.
+- We've defined the call subject and briefly described the call results in the "Additional comments" section.
+- We've specified the call duration (5 minutes).
 
 .. image:: ./img/activities/log_call_ex.png  
 
@@ -74,8 +74,11 @@ Log Call from the Calls Grid
 
 .. image:: ./img/activities/log_call_form.png
 
+|
+
 The form has the same fields. By default, no phone number is defined.
 
+|
 
 View and Manage Calls
 ^^^^^^^^^^^^^^^^^^^^^
@@ -94,16 +97,15 @@ View and Manage Calls
 
 - To see the details, click on the call title or the :guilabel:`+` to the left of it.
 
-.. image:: ./img/activities/log_call_view_detailed.png
+      |
 
+From any of the grids above, you can manage the tasks using the action icons:
 
-- From any of the grids above, you can manage the tasks using the action icons:
+- Delete the call: |IcDelete|
 
-  - Delete the call: |IcDelete|
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the call: |IcEdit|
 
-  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the call: |IcEdit|
-
-  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the call:  |IcView|
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the call:  |IcView|
   
   
 .. |IcDelete| image:: ./img/buttons/IcDelete.png

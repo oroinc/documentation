@@ -64,7 +64,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/marketing_campaigns`
         * User guide: :doc:`/user_guide/email_campaigns`
-        * User guide: :doc:`/user_guide/how_to_track`
+        * User guide: :doc:`/user_guide/marketing_tracking_website_records`
 
 `CaseBundle`_ (OroCRM)
     Case entitiy management.
@@ -132,6 +132,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/crud`
         * User guide: :doc:`/user_guide/channels`
 
 `DemoDataBundle`_ (OroCRM)
@@ -175,6 +176,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/data_audits`
         * Book: :doc:`/book/configuration`
+        * Book: :doc:`/book/entities`
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
@@ -187,6 +189,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
+        * Book: :doc:`/book/entities`
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
@@ -294,6 +297,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/navigation`
+        * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
 
 `NoteBundle`_ (Oro Platform)
@@ -416,7 +420,6 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/how_to_track`
         * User guide: :doc:`/user_guide/marketing_tracking_website_records`
 
 `TranslationBundle`_ (Oro Platform)
@@ -436,6 +439,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/crud`
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
 

@@ -51,13 +51,15 @@ The following two fields are mandatory and **must** be defined:
   The name shall be at least 5 characters long, may contain numbers and alphabetic symbols. The first symbol must be a 
   letter.
 
-  The name field cannot be a `reserved sql word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_"
+  The name field cannot be a `reserved sql word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_."
   "**Label***","The label will be used to refer to the entity in the UI. Label shall be at least 2 symbols long."
 
 .. caution::
 
   **The Name value must be unique for every Custom entity created.** Failure to do so may cause partial update of 
   the existing entity and failure of the schema update.
+  
+  |
   
   Labels may be duplicated. However, keep in mind that from the UI perspective it will be impossible to distinguish
   them, so it is better to keep them unique.
@@ -79,7 +81,7 @@ The following general entity details are optional and may be specified:
 Communication & Collaboration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The section contains check-boxes for all the activities available and *Enable Notes* drop-down.
+The section contains check-boxes for all the activities available and *"Enable Notes"* drop-down.
 
 .. image:: ./img/entity_management/new_entity_communication_collaboration.png
 
@@ -148,8 +150,9 @@ The following three fields must be specified for every entity created:
 Add Fields to an Entity
 -----------------------
 
-An entity with no fields is meaningless and will not be processed by the system. Once an entity has been created, you can
-get to the *View* page of the new entity, where you can define its new fields.
+An entity with no fields is meaningless and will not be processed by the system. Once an entity has been created, you 
+can get to the :ref:`View page <user-guide-ui-components-view-pages>` of the new entity, where you can define its new 
+fields.
 
 Please refer to the :ref:`Field Management <user-guide-field-management>` Guide to find out, how to add fields to the 
 entity.
@@ -186,22 +189,22 @@ The following table describes columns of the Entities grid and how they affect a
   :header: "Column","What's in it","Effect ability to edit?"
   :widths: 20, 30, 30
 
-  "**LABEL***","Name used to refer to the entity in the system UI","No"
+  "**LABEL***","Name used to refer to the entity in the system UI.","No"
   "**SCHEMA STATUS**","Defines the state of current schema for the entity.","No, but unless its value is *Active* your 
   changes to entities an/or their fields will not have effect for the system, until you 
   :ref:`Update the Schema <user-guide-entity-management-create-update>`."
-  "**IS EXTEND**","Defines if :ref:`new fields can be added <user-guide-field-management-create>` to the entity","If the
-  value is *No*, you cannot add any new fields to the entity."
-  "**TYPE**","Defines whether the entity was loaded from the back-end (System) or created in the UI (Custom)","New 
+  "**IS EXTEND**","Defines if :ref:`new fields can be added <user-guide-field-management-create>` to the entity.","If 
+  the value is *No*, you cannot add any new fields to the entity."
+  "**TYPE**","Defines whether the entity was loaded from the back-end (System) or created in the UI (Custom).","New 
   fields can always be added to custom entities. For the system entities ability to add new fields may differ subject to
   the *IS EXTEND* value. System entities cannot be deleted."
-  "**AUDITABLE**","Defines if the actions performed on the entity records shall be logged","No"
+  "**AUDITABLE**","Defines if the actions performed on the entity records shall be logged.","No"
   "**OWNERSHIP TYPE**","Defines the level at which permissions will be set for instances of the entity as
-  described in the Create Entities guide :ref:`section <user-guide-entity-management-create-other>`","Not 
-  directly, however, you need to have permissions to edit the entity (See System → User Management → Roles)"
+  described in the Create Entities guide :ref:`section <user-guide-entity-management-create-other>`.","Not 
+  directly, however, you need to have permissions to edit the entity (See System → User Management → Roles)."
   "**NAME** and **MODULE**","Define the name used to refer to the entity at the back-end. Comes handy if there is a 
-  need to change configuration or otherwise find the entity in the code","No"
-  "**UPDATED AT**","The date and time of the last schema update for the entity","No"
+  need to change configuration or otherwise find the entity in the code.","No"
+  "**UPDATED AT**","The date and time of the last schema update for the entity.","No"
   "...","Hover your mouse over the *...* to access the action icons.","Use the icons to manage the entity."  
 
 This way, ability to add :ref:`new fields <user-guide-entity-management-create-fields>` depends on the entity, 

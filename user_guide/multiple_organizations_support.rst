@@ -24,6 +24,8 @@ organizations within one OroCRM instance.
 
 Such permissions are granted to users that have been assigned a role, for which the action access is set to *"System"*.
 
+      |
+  
 .. image:: ./img/multi_org/multi_org_permission.png
   
 .. caution::
@@ -48,6 +50,8 @@ Once a user has chosen a non-system organization, all the new records will be cr
 organization.
 
 Within a system organization, the user can choose to which organization a new record will belong:
+
+      |
 
 .. image:: ./img/multi_org/multi_org_new_entity.png
 
