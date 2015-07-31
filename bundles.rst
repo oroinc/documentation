@@ -296,6 +296,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/navigation`
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
 
