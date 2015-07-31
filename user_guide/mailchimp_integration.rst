@@ -1,4 +1,3 @@
-
 .. _user-guide-mc-integration:
 
 Integration with MailChimp
@@ -6,12 +5,12 @@ Integration with MailChimp
 
 OroCRM supports out of the box integration with MailChimp, allowing you to do the following:
 
-- map OroCRM :ref:`Marketing Lists <user-guide-marketing-lists>` and 
+- Map OroCRM :ref:`Marketing Lists <user-guide-marketing-lists>` and 
   :ref:`Magento Abandoned Cart Campaigns <user-guide-acc>` to segments of MailChimp Subscriber's Lists and keep them 
-  synchronized
-- use the segments of MailChimp Subscribers Lists to create email campaigns in MailChimp and import them to OroCRM
-- use the segments based on the Abandoned Cart Campaigns to automate the mailings
-- use MailChimp campaign statistics and OroCRM reporting tools to analyze the campaign efficiency  
+  synchronized.
+- Use the segments of MailChimp Subscribers Lists to create email campaigns in MailChimp and import them to OroCRM.
+- Use the segments based on the Abandoned Cart Campaigns to automate the mailings.
+- Use MailChimp campaign statistics and OroCRM reporting tools to analyze the campaign efficiency.  
 
 This article describes how to define and edit the integration and synchronization settings.
 
@@ -28,18 +27,32 @@ The only thing you will need on the MailChimp part is your API Key value:
 
 - Open your account and go to the *Account* page.
 
+  |
+  
 .. image:: ./img/mailchimp/mc_account_1.png
+
+|
 
 - Go to the *Extras → Api Keys*
 
+  |
+  
 .. image:: ./img/mailchimp/mc_account_2.png
+
+|
 
 - Click the :guilabel:`Create A Key` button below the list of your API keys.
 
+  |
+  
 .. image:: ./img/mailchimp/mc_account_3.png
+
+|
 
 - Find the new key in the list and copy the API key value.
 
+  |
+  
 .. image:: ./img/mailchimp/mc_account_4.png
  
 
@@ -98,33 +111,48 @@ not be loaded into MailChimp.
 If two-way synchronization is enabled, define the priority used for the conflict resolution (e.g., if the same
 customer details were edited from the both OroCRM and MailChimp):
 
-- *Remote wins*: MailChimp data will be applied to both MailChimp and OroCRM
+- *Remote wins*: MailChimp data will be applied to both MailChimp and OroCRM.
 
-- *Local wins*: OroCRM data will be applied to both MailChimp and OroCRM
+- *Local wins*: OroCRM data will be applied to both MailChimp and OroCRM.
 
 For example, we have created a Demo MailChimp Integration with two-way synchronization enabled, where if the same data
 is changed in both MailChimp and OroCRM, the MailChimp changes will take precedence.
 
+      |
+  
 .. image:: ./img/mailchimp/mc_create.png
 
-**After the integration has been created and its status has been set to Active, the list of Subscribers Lists will be 
-automatically imported from MailChimp to OroCRM for further integration management.**
+|
+
+*After the integration has been created and its status has been set to Active, the list of Subscribers Lists will be 
+automatically imported from MailChimp to OroCRM for further integration management.*
 
 Map OroCRM Marketing Lists to MailChimp Subscribers List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now you can map contacts of an OroCRM marketing list to a segment of a subscribers list in MailChimp.
+      |
+  
+Now you can map contacts of an OroCRM :ref:`Marketing List <user-guide-marketing-lists>` or 
+:ref:`Magento Abandoned Cart Campaigns <user-guide-acc>` to a segment of a subscribers list in MailChimp.
 
-- Go to *Marketing → Marketing Lists* and open the Marketing list that you want to use. 
-- If a Marketing list is suitable for the connection, the :guilabel:`Connect to MailChimp` button will appear on the 
-  :ref:`View page <user-guide-ui-components-view-pages>` of the marketing list.
+- Go to *Marketing → Marketing Lists* or *Marketing → Abandoned Cart Campaigns* and open the list that you want to use. 
+
+
+.. note::
+
+    If a marketing list is suitable for the connection, the :guilabel:`Connect to MailChimp` button will appear on the 
+    :ref:`View page <user-guide-ui-components-view-pages>` of the marketing list.
    
   |connect_to_mc|
   
 - Click the button. The *"Connect To MailChimp"* form will emerge.
 
-   |connect_to_mc_form|
+  |
+  
+  |connect_to_mc_form|
 
+  |
+  
  Define the following fields:
 
 .. csv-table::
@@ -132,13 +160,14 @@ Now you can map contacts of an OroCRM marketing list to a segment of a subscribe
   :widths: 10, 30
 
   "**MailChimp Segment Name***","Name used to refer to the segment created in MailChimp, where the contacts will be
-  mapped"
+  mapped."
   "**MailChimp Integration***","Contains all the MailChimp integrations that are available in the OroCRM instance. 
   Select the integration, for which the mapping must be performed." 
   "**MailChimp Subscribers List***","Contains all the MailChimp Subscribers List records available 
   for connection."
 
-* **Now you can use the Subscribers List record to create Email Campaigns in MailChimp.** *  
+*Now you can use the segment in the Subscribers List record to create Email Campaigns in MailChimp.* 
+*If the segment is based on an Abandoned Cart Campaign, you can also use it for Automation in MailChimp*.
 
 Synchronization Flow
 --------------------

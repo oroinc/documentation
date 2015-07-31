@@ -2,9 +2,11 @@
 
 Automatic Notification
 ======================
-
+Want an administrator to get a letter when there is a request from a user? Need to notify users each time a new activity
+has been assigned to them? Prefer to drop a line to a manager, each time some customer details have been edited? 
 In OroCRM, you can specify conditions at which emails will be sent based on a pre-defined 
 :ref:`email template <user-guide-email-template>`.
+
 
 Create a Notification Rule
 --------------------------
@@ -15,9 +17,9 @@ the system.
 
 To create a notification rule:
 
-- Go to *System → Emails → Notification Rules* 
-- Click the :guilabel:`Create Notification Rules` button
-- Define the general details of the emails to be sent and the list of recipients
+- Go to *System → Emails → Notification Rules*.
+- Click the :guilabel:`Create Notification Rules` button.
+- Define the general details of the emails to be sent and the list of recipients.
 
 General
 ^^^^^^^
@@ -33,9 +35,9 @@ The following details **must** be defined in the *"General"* section.
   
   The following values are possible 
   
-  - Entity create: a new record of the entity has been created
-  - Entity remove: a record of the entity has been removed
-  - Entity update: a recod of the entity has been editied
+  - Entity create: a new record of the entity has been created.
+  - Entity remove: a record of the entity has been removed.
+  - Entity update: a recod of the entity has been edited.
   
   "
   "**Template**","Choose the template for which the rule will be created"
@@ -47,6 +49,8 @@ You can define one specific :term:`user` and/or :ref:`user groups <user-manageme
 email address. If the *Owner* box is checked, the email will be sent to the user who is 
 assigned as an owner of the entity record, for which the event has taken place.
 
+      |
+  
 .. image:: ./img/notification/notification_form.png
 
 .. hint::

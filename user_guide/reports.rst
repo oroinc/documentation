@@ -3,22 +3,30 @@
 Reports
 =======
 
-The Oro Platform gives you the opportunity to create customized reports using data from the application.
+In OroCRM, you can create reports based on the details of any entity available in the system. 
 
-To manage your custom reports, go to *Reports & Segments* → *Manage Custom Reports*.
-You'll see a list of all the created reports:
+With the functionality, you can get easy-to-understand adjustable reports on the amount and activity of different 
+:ref:`customers <user-guide-basic-entities-customer-id>`, on statuses of 
+:ref:`carts or opportunities <user-guide-basic-sre>`, on performance of your 
+:ref:`marketing activity <user-guide-marketing>`, specifics of recent :ref:`activities <user-guide-activities-index>`, 
+and many others.
 
-.. image:: /user_guide/img/reports/reports.png
+There is a number of out-of-the-box reports, such as :ref:`Leads by Date <user-guide-leads-reports>` and 
+:ref:`Opportunities by Status <user-guide-opportunities-reports>` , but you can also create your own ("custom") reports.
+
+The article describes how to create and manage custom reports.
 
 
-Create Reports
---------------
+.. _user-guide-manage-custom-reports:
 
-Go to *Reports and Segments → Manage Custom Reports* and click the :guilabel:`Create Report` button.
+Create Custom Reports
+---------------------
 
-The *Create Report* page will appear.
+- Go to *Reports and Segments → Manage Custom Reports* and click the :guilabel:`Create Report` button.
 
-Define properties of the report, as described in the sections below:
+- The *"Create Report""* page will appear.
+
+- Define properties of the report, as described in the sections below:
 
 
 .. _user-guide-reports-general-settings:
@@ -26,8 +34,8 @@ Define properties of the report, as described in the sections below:
 General Setting
 ^^^^^^^^^^^^^^^
 
-.. image:: ./img/reports/general.png
-
+      |
+ 
 The following fields are mandatory and **must** be defined for a report:
 
 .. csv-table::
@@ -45,7 +53,7 @@ The following fields are mandatory and **must** be defined for a report:
   "**Owner***","Limits the list of users that can manage the report, subject to the 
   :ref:`access and permission settings <user-guide-user-management-permissions>`."
 
-The only optional system field, **Description**, can be used to save additional information about the report. 
+The only optional system field, *"*Description**, can be used to save additional information about the report. 
 
 
 .. _user-guide-reports-designer:
@@ -53,17 +61,23 @@ The only optional system field, **Description**, can be used to save additional 
 Designer
 ^^^^^^^^
 
+      |
+  
 In the section you can define the structure of your report.
 
+      |
+ 
 .. image:: ./img/reports/designer.png
+
+|
 
 There are three main parts:
 
-- **Columns**: defines the columns of your report and information displayed therein
+- **Columns**: defines the columns of your report and information displayed therein.
 
-- **Grouping**: defines how details of the report will be grouped in the rows
+- **Grouping**: defines how details of the report will be grouped in the rows.
 
-- **Filters**: filter the records to be processed by the report
+- **Filters**: filter the records to be processed by the report.
 
 *Columns*
 ^^^^^^^^^
@@ -80,13 +94,13 @@ The following settings shall be defined for each column of the report:
   "**Label***","A free text field that defines how the field chosen at the previous step will be referred to in the 
   report.  
   
-  The field is automatically filled by the label chosen for the field in the system settings, but may be edited subject 
-  to the specific report needs."                 
+  The field is automatically filled by the :ref:`field label <user-guide-field-management-create>`, but may be edited 
+  for each report."                 
   "**Function***","A function to perform with the field values. You will only see the functions available for the field
   chosen.
   
   There are some field-specific functions (e.g. *Won Count* that shows the number of *Won* Opportunities for the 
-  *Opportunities → Status* field. Description of some of the most common function and relevant examples are
+  *Opportunities → Status* field. Description of of the most common function and relevant examples is
   provided below:
 
   - *None*: no function applied. The data will be displayed for all the available entity records.
@@ -103,7 +117,7 @@ The following settings shall be defined for each column of the report:
   - *Max*: only the largest of all the field values for all the records will be displayed.
   
   "
-  "**Sorting***","Defines the order values of the field or their functions shall be displayed in the report. 
+  "**Sorting***","Defines the order values, in which the field or their functions shall be displayed in the report. 
    
   - *None*: no sorting applied 
   - *Asc*: ascending
@@ -112,7 +126,7 @@ The following settings shall be defined for each column of the report:
   The whole report is sorted by the column, to which the sorting is applied. If sorting settings are defined for 
   several columns, settings of the column that comes the earliest are used.
 
-  After the report has been generated, it can be sorted by any of it columns.
+  After the report has been generated, it can be sorted by any of its columns.
   
   "
 
@@ -120,7 +134,7 @@ The following settings shall be defined for each column of the report:
 Actions for Columns
 """""""""""""""""""
     
-Once you have specified the settings for a column element click the :guilabel:`Add` button, and the field you have defined 
+Once you have specified the settings for a column element, click the :guilabel:`Add` button, and the field you have defined 
 will appear in the "COLUMN" grid.
 
 Now you can edit (|IcEdit|), delete (|IcDelete|) or move (|IcMove|) the column. 
@@ -129,40 +143,54 @@ Now you can edit (|IcEdit|), delete (|IcDelete|) or move (|IcMove|) the column.
 Examples of Columns and Actions 
 """""""""""""""""""""""""""""""
 
-For the sake of example, we have created a very simple report of one field. It contains only budget amount details. 
+For the sake of example, we have created a very simple report of one field. It contains only the budget amount details. 
+
+      |
 
 .. image:: ./img/reports/RepEx1.png
 
+|
  
-Click the :guilabel:`Add` button to add the settings into the *Columns* grid. Save the report with a button in the top right
-corner of the page and view it.
+Click the :guilabel:`Add` button to add the settings into the *"Columns"* grid. Click the :guilabel:`Save`.
 
-You would see something like this:
+On the View page of the report, you would see something like this:
+
+      |
 
 .. image:: ./img/reports/RepEx1a.png
 
-There are 75 opportunities with the values defined in the *Budget Amount* field of each and all of them will be
+|
+
+There are 75 opportunities with the values defined in the *"Budget Amount"* field of each and all of them will be
 displayed in the report.
 
 Click :guilabel:`Edit` to return to the report settings. Let's see, how the report changes, if we apply different 
-functions to the *Opportunity Budget* field. 
+functions to the *"Opportunity Budget"* field. 
 
 Click the |IcEdit| icon and change the column settings. 
 
+      |
+  
 **Function = Count**
 
 .. image:: ./img/reports/RepEx1b.png
 
-There are 43 different values of the *Budget Amount* field for all the Entity instances in the System.
+|
+  
+There are 43 different values of the *""Budget Amount"* field for all the Entity instances in the System.
 
+      |
+  
 **Function = Sum**
 
 .. image:: ./img/reports/RepEx1c.png
 
    
-The sum of all the values of the *Budget Amount* fields for all the Entity instances in the System makes 
+The sum of all the values of the *"Budget Amount"* fields for all the Entity instances in the System makes 
 $202,565.00.
 
+      |
+  
 **Function = Max**
 
 .. image:: ./img/reports/RepEx1e.png
@@ -173,24 +201,32 @@ The biggest Budget amount value available in the system is $9,902.00 USD
 Grouping
 ^^^^^^^^
  
-The *Grouping* section provides for more complex and informative reports. Once you have added a field in the *Grouping* 
-section you will see all the columns values or their functions for a set of all the entity instances with the same 
-*Grouping* field value.
+The *"Grouping"* section can be used for more complex and informative reports. 
+
+Once you have added a field in this section, you will see information based on the values of all the column 
+with the same grouping field.
 
 For example, you can see a total, average maximum and minimum budget amount for each the opportunities with the same 
 status.
 
 .. caution:: 
 
-    You have to add the field(s) grouping made by to the *COLUMN* section.
+    Fields used for grouping must be added to the "*COLUMN"* section as well.
 
+      |
+  
 Grouping Example 
 """"""""""""""""
 
+      |
+  
 .. image:: ./img/reports/RepEx2.png
 
+|
 
-Here is what we have:
+The report will look as follows:
+
+      |
 
 .. image:: ./img/reports/RepEx2a.png
 
@@ -202,11 +238,17 @@ Several Level Grouping Example
 You can also group records inside a group. For example, we can add one more grouping field (e.g. Customer name) to our 
 report.
 
+      |
+  
 .. image:: ./img/reports/RepEx3.png
 
+| 
+
 Now you can see the budget function values for all the opportunities with the same status that belong to a specific 
-customer. Data for all the "In Progress" opportunities of one customer, then of another customer, etc. Only 
-then you will see data for all the "Won" opportunities of each customer, etc.
+customer. 
+
+First comes data for all the *"In Progress"* opportunities of one customer, then of another customer, etc., and only 
+then you will see data for all the *"Won"* opportunities of each customer, etc.
 
 .. image:: ./img/reports/RepEx3a.png
 
@@ -214,10 +256,11 @@ then you will see data for all the "Won" opportunities of each customer, etc.
 .. hint::
 
     Once a report has been generated, you can click on the name of a column, to sort all the data in the report by the
-    specified fields' value (ascending or descending). You can see the report ordered by the "Name" value below.
+    specified fields' value (ascending or descending). You can see the report ordered by the *"Name"* value below.
 
 .. image:: ./img/reports/RepEx3b.png
 
+|
 
 As you can see in the circled area, there are opportunities  for Albers Super Markets that are in progress and 
 that were lost. You can view the budget details for the both groups.
@@ -231,10 +274,11 @@ Filters
 ^^^^^^^
 
 You can define conditions used to select specific records. Only data of the records that meet all the conditions defined
-in the "Filters" section will be used for the report. 
+in the *"Filters"* section will be used for the report. 
+
 For example, you can create a report only for those customers, who appeared within the last month and live in Texas.
 
-Please see the :ref:`Filters guide <user-guide-filters-management>`.
+Please see the :ref:`Filters guide <user-guide-filters-management>` for more details.
 
 
 .. _user-guide-reports-chart:
@@ -243,9 +287,9 @@ Chart
 ^^^^^
 
 OroCRM supports line charts. To create a line chart for the report, go to the **Chart** and define the following 
-fields (all the fields are mandatory and **must** be defined)
+fields (all the fields are mandatory and **must** be defined).
 
-.. csv-table:: **ChartSettings**
+.. csv-table::
   :header: "Field","Description"
   :widths: 10, 30
 
@@ -262,59 +306,44 @@ Let's make a chart for the Budget per opportunity status report (not grouped by 
 .. image:: ./img/reports/RepExChart1.png
 
 
-That's what we have:
-
 .. image:: ./img/reports/RepExChart2.png
 
 
+Manage Reports
+--------------
 
-.. _book-reports-view-report:
+The following actions can be performed for a report:
 
-View Reports
-------------
+- From the *"All Reports"* :ref:`grid <user-guide-ui-components-grids>` (*Report & Segments → Manage Custom Reports*):
 
-You can access a report in two ways:
+  |ReportActionIcon|
 
-#. From any place in the web UI, you can enter a certain report by choosing it from
-   the quick menu:
+  |
+  
+  - Delete a report from the system: |IcDelete|
+  
+  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the report: |IcEdit|
+  
+  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the report: |IcView| 
 
-   .. image:: /user_guide/img/reports/quick-menu.png
+.. hint::
 
-#. When you're viewing the list of all available reports, you can simply click
-   on its row.
+    You can also get to the View page of a report directly from the Report & Segments menu (click the report name).
+  
+- From the :ref:`View page <user-guide-ui-components-view-pages>`:
+  
+- Get to the *"Edit"* form of the report
 
-When you have selected the report to view, you'll see the data you selected
-when creating it presented as a nice table:
+- Delete the report from the system 
 
-.. image:: /user_guide/img/reports/report-details.png
+- Export the report data into a CSV format: click the *Export Grid* button. 
+ 
 
-You can export the presented data in CSV format clicking on the *Export Grid*
-button. The data shown above will then look like this:
+.. note::
 
-.. code-block:: text
-
-    Name,"Parent BU","# Users"
-    Main,,1
-    Sales,"Sales Asia",0
-    Sales,"Sales Europe",0
-    Sales,"Sales North America",0
-    "Sales Asia",,0
-    "Sales Europe",,0
-    "Sales North America",,0
-
-Modify and Delete Reports
--------------------------
-
-When you :ref:`view <book-reports-view-report>`, you can modify or delete
-a report clicking on the appropriate button in the upper right corner. To
-avoid accidentally losing reports, you will have to confirm the removal of
-a report when you click the *Delete* button:
-
-.. image:: /user_guide/img/reports/delete-confirm.png
-
-When you click on the *Edit* button, you'll see the form similar to one used to create the report. You can change and 
-edit the values, as when creating the report.
-
+    To avoid accidental data loss, there is an additional confirmation required to delete a report.
+    
+    |ConfirmDelete|
 
 
 .. |Bdropdown| image:: ./img/buttons/Bdropdown.png
@@ -323,8 +352,17 @@ edit the values, as when creating the report.
 .. |IcEdit| image:: ./img/buttons/IcEdit.png
    :align: middle
    
+.. |IcView| image:: ./img/buttons/IcView.png
+   :align: middle
+   
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
    
 .. |IcMove| image:: ./img/buttons/IcMove.png
+   :align: middle
+   
+.. |ConfirmDelete| image:: ./img/reports/delete-confirm.png
+   :align: middle
+   
+.. |ReportActionIcon| image:: ./img/reports/report_action_icons.png
    :align: middle

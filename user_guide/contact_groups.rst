@@ -3,7 +3,7 @@
 Contact Groups 
 ==============
 A *"Contact group"* is a system entity that represents a group of :term:`contacts <Contact>`. 
-By default, user groups are used in the :ref:`filters and segments <user-guide-filters-management>`.
+By default, contact groups are used in the :ref:`filters and segments <user-guide-filters-management>`.
 
 
 Create a Contact Group
@@ -11,8 +11,8 @@ Create a Contact Group
 
 In order to create a contact group:
 
-- Go to *System → Contact Groups*
-- Click the :guilabel:`Create Contact Group` button
+- Go to *System → Contact Groups*.
+- Click the :guilabel:`Create Contact Group` button.
 - Define the general details and the list of contacts for the group created:
 
 General
@@ -30,12 +30,14 @@ General
 Contacts
 ^^^^^^^^
 
+      |
+
   Check/uncheck the **HAS GROUP** box, to assign/unassign a contact to the contact group:
 
 .. note::
 
     The "HAS GROUP" check-box defines if the contact is assign the specific contact group that you are
-    creating/editing
+    creating/editing.
 
 View and Manage a Contact Group Record
 --------------------------------------
@@ -46,9 +48,9 @@ All the contact groups available are displayed in the *"All Contact Groups"*
 From the grid you can:
 
 
-- Delete a contact group from the system: |IcDelete|.
+- Delete a contact group from the system: |IcDelete|
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the contact group: |IcEdit|.
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the contact group: |IcEdit|
 
 
 .. image:: ./img/contact_groups/cont_groups_grid.png

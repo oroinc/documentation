@@ -21,7 +21,11 @@ On the Magento Side
 The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through
 the MagentoConnect.
 
+      |
+	  
 .. image:: ./img/magento_integration/oro_bridge.png
+
+|
 
 Once the extension has been successfully installed, you need to login to your Magento account and to set up a SOAP API
 user within Magento, as described below:
@@ -39,15 +43,27 @@ Define a New Role
 
 - Once logged in, go to the System → Web Services → SOAP/XML - RPC - Roles
 
-  .. image:: ./img/magento_integration/magento_01.png
+  |
+  
+.. image:: ./img/magento_integration/magento_01.png
 
+|
+  
 - You will get to the Roles grid. Click the :guilabel:`Add New Role`
 
-  .. image:: ./img/magento_integration/magento_02.png
+  |
+  
+.. image:: ./img/magento_integration/magento_02.png
 
+|
+  
 - Define the Role Name that corresponds to your eCommerce store.
 
-  .. image:: ./img/magento_integration/magento_03.png
+  |  
+
+.. image:: ./img/magento_integration/magento_03.png
+
+|
 
 - Click the :guilabel:`Save Role` button. The role will be saved and you will get to page of the role.
 
@@ -57,11 +73,17 @@ Define a New Role
 
 - Click  the :guilabel:`Role Resources` on the left.
 
-  .. image:: ./img/magento_integration/magento_04.png
+  |
+  
+.. image:: ./img/magento_integration/magento_04.png
+
+|
 
 - In the Roles Resources section, set the "Resource Access" field value to "All" and save the role.
 
-  .. image:: ./img/magento_integration/magento_05.png
+  |
+  
+.. image:: ./img/magento_integration/magento_05.png
 
 
 Define a New User
@@ -69,7 +91,7 @@ Define a New User
 
 - Go to the System → Web Services → SOAP/XML - RPC - Users
 
-- You will get to the Users grid. Click the :guilabel:`Add New User`
+- You will get to the Users grid. Click the :guilabel:`Add New User` button.
 
 - Define the following fields:
 
@@ -88,21 +110,33 @@ Define a New User
 
 - Save the user created.
 
-  .. image:: ./img/magento_integration/magento_06.png
+  |
+  
+.. image:: ./img/magento_integration/magento_06.png
+
+|
 
 - The user account will be saved and you will get to page of the user.
 
-  .. hint::
+.. hint::
 
-      You can also click the user name in the grid at any time to get to the page of the Role.
+    You can also click the user name in the grid at any time to get to the page of the Role.
 
 - Click  the :guilabel:`User Role` on the left
 
-  .. image:: ./img/magento_integration/magento_07.png
+  |
+  
+.. image:: ./img/magento_integration/magento_07.png
+
+|
 
 - Select the role that you've created for your store above.
 
-  .. image:: ./img/magento_integration/magento_08.png
+  |
+  
+.. image:: ./img/magento_integration/magento_08.png
+
+|
 
 - Click  the :guilabel:`Save User` button in the top right corner.
 
@@ -121,12 +155,19 @@ To create integration with Magento, create a channel of Magento type as describe
 As soon as the channel type is set to *Magento*, a mandatory **Integration*** field  will appear in the "General"
 section.
 
+      |
+	  
 .. image:: ./img/magento_integration/configure_integration.png
+
+|
 
 Click the *Configure integration* link. The form will emerge.
 
+     |
 
 .. image:: ./img/magento_integration/configure_integration_form.png
+
+|
 
 General Settings
 """"""""""""""""
@@ -183,9 +224,9 @@ loaded to Magento.
 If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
 customer details were edited from the both OroCRM and Magento):
 
-- *Remote wins*: Magento data will be applied to the both Magento and OroCRM
+- *Remote wins*: Magento data will be applied to the both Magento and OroCRM.
 
-- *Local wins*: OroCRM data will be applied to the both Magento and OroCRM
+- *Local wins*: OroCRM data will be applied to the both Magento and OroCRM.
 
 
 .. _user-guide-magento-channel-integration-details_edit:
@@ -196,7 +237,7 @@ Edit the Integration
 To edit the integration details:
 
 - Go to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel and click *"Edit"* link by the
-  integration name
+  integration name.
 
   The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been
   performed, it is impossible to change the Sync start date.

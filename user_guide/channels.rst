@@ -1,10 +1,13 @@
 .. _user-guide-channels:
 
-Channels Overview
-=================
+Channels
+========
 
-In OroCRM you can create a :term:`Channel <Channel>` record ("channel") for each source of customers and customer data.
-For example, any store, on-line site, social activity, etc. may be represented with its own *"Channel"* record.  
+Collection of comprehensive customer-related data is a corners-tone of customer relations management.
+
+To represent different sources of customer-related data, OroCRM uses a records of the Channel entity ("channels").
+
+For example, any store, on-line site, social activity, etc. may be represented with its own channel.  
 
 This guide describes how to create and manage channels from the UI.
 
@@ -13,8 +16,15 @@ This guide describes how to create and manage channels from the UI.
 Create a Channel Record
 -----------------------
 
-Go to the *System --> Channels* page and click the :guilabel:`Create Channel` button in the top right corner to go
-to the *Create Channel* page and specify its details as described in the sections below: 
+To create a channel:
+
+- Go to the *System --> Channels* page.
+ 
+- Click the :guilabel:`Create Channel` button in the top right corner.
+
+- The *"Create Channel"* form will appear. 
+
+- Specify the channel details as described in the sections below: 
 
 
 .. _user-guide-channel-guide-general:
@@ -23,8 +33,6 @@ General Details
 ^^^^^^^^^^^^^^^
 
 Define basic channel information in the *General* section.
-
-.. image:: ./img/channel_guide/channels_general.png
 
 The following three fields are mandatory and **must** be defined:
 
@@ -37,27 +45,23 @@ The following three fields are mandatory and **must** be defined:
   *Inactive* or *Active*
 
   Be aware that when working with inactive channels, no new data is uploaded to the system. This option is useful
-  if a channel is being configured for future use or if it is out of date."
-  "**Name**", "The name that will be used to refer to the channel in the system. It is recommended to keep the name
+  if a channel is being configured for future or is out of date."
+  "**Name**", "The name used to refer to the channel in the system. It is recommended to keep the name
   meaningful."
-  
   "
   .. _user-guide-channel-guide-type:
   
-  **Channel Type**", "A drop-down which allows you to choose the channel type most suitable for the 
-  channel created.
+  **Channel Type**", "Channel type defines a set of default rules and settings used for the channel.
 
-  A channel type defines a specific set of rules and settings that apply to the channel.
-
-  The following channel types are currently available out-of-the-box:
+  The following types are available out-of-the-box:
   
-  - *B2B*: dedicated for managing B2B customer relations. Described in more detail in the 
-    :ref:`B2B Channel guide <user-guide-b2b-channel>`
+  - *B2B*: dedicated to B2B customer relations. Described in more detail in the 
+    :ref:`B2B Channel guide <user-guide-b2b-channel>`.
 
-  - *Magento*: designed for :term:`Magento` stores. Described in more detail in the 
-    :ref:`Magento Channel guide <user-guide-b2b-channel>`
+  - *Magento*: designed for Magento-based stores. Described in more detail in the 
+    :ref:`Magento Channel guide <user-guide-b2b-channel>`.
 
-  - *Custom*: any other channels, subject to specific business needs"
+  - *Custom*: any other channels."
 
 .. caution::
 
@@ -77,33 +81,47 @@ Entities
 
 :term:`Entities <Entity>` assigned to a channel define what data OroCRM can collect from the relevant source.
 
-To make a certain type of records available from the channel, use the "Entities" section.
-
+      |
+  
 .. image:: ./img/channel_guide/channels_entities.png
 
-One of the entities defined for a channel must represent a :term:`customer <Customer>` identity and will be added to
-the entity list automatically. It is subject to the chosen channel type:
+|
+
+One of the entities defined for any channel must be a :term:`customer identity <Customer Identity>`. It is added to
+the entity list automatically, subject to the chosen channel type:
 
 - B2B Channel - B2B Customer
-- Magento Channel - Web Customer
+- Magento Channel - Magento Customer
 - Custom Channel - Customer Identity
 
-Some other entities are pre-defined in the system and are designed for a specific channel type, e.g. an opportunity
-and lead for a B2B channel or a cart and order for a Magento channel. These entities will be added to the entity list by
-default once you have selected the channel type; however, they are optional and may be removed.
+Some other entities are by default added to channels of a specific type. 
 
-**Custom Entities** are created for specific customer needs and their records may contain certain
-information which is required by the system. For more information on custom entities, please
-see the *Entity Management* guide. Once a custom entity has been created, it will automatically appear in the
-Entities section drop-down menu.
+For example, once you have selected the channel type, the :term:`Opportunity` and 
+:term:`Lead` entities will be added to B2B channels, and the :term:`Cart` and :term:`Order <Order>` entities - to 
+Magento channels. 
 
-To add an entity to the channel list, choose the entity and click the :guilabel:`Add` button.
+These entities will be added to the entity list by default, however, they are optional and may be removed.
 
+**Custom Entities** are created for specific customer needs and may contain any relevant data, including additional 
+customer details, information about the sales, etc. All the custom entities are available in the drop-down menu of the 
+*"Entities"* section for a channel.
+
+The ways to create and mange custom entities, are described in the 
+:ref:`Entities guide <user-guide-entity-management-from-UI>`.
+
+To add an entity to the channel, choose the entity and click the :guilabel:`Add` button.
+
+      |
+  
 .. image:: ./img/channel_guide/channels_entity_select.png
+
+|
 
 To delete an entity, click the |IcDelete| icon. This will remove the entity from the channel's list, but not from
 from the system.
 
+      |
+  
 .. image:: ./img/channel_guide/channels_entities_delete.png
 
 
@@ -121,6 +139,8 @@ The following actions can be performed on channels:
 
 From the :ref:`grid <user-guide-ui-components-grids>`
 
+     |
+
 .. image:: ./img/channel_guide/channels_edit.png
 
 - Delete the channel: |IcDelete|
@@ -137,10 +157,15 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel:  |IcView|
 
-
+      |
+  
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
+      |
+  
 .. image:: ./img/channel_guide/channels_created_b2b_view.png
+
+|
 
 - Deactivate or activate channels.  No new data from the channel will be uploaded for
   an inactive channel.
@@ -149,17 +174,18 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 - Delete the channel
 
+- Edit entities: 
 
-Editing Entities from a Channel
--------------------------------
+  - Go to the *"Entities"* section of the channel view page.
+  
+  - In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| to change the entity settings.
 
-There may be some situations when there are either not enough default entity fields or too many of them. If this is the
-case, entities may be edited (i.e. the list of fields as well as their type and specific properties may be re-defined).
-This can only be done by properly authorized users. Go to the *"Entities"* section of the channel view page.
-In the *"Actions"* column, click |IcView| to see the entity details or |IcEdit| to change the entity settings.
-Please refer to the :ref:`Entities <user-guide-entity-management-from-UI>` guide for more information.
+.. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png  
 
-.. image:: ./img/channel_guide/channels_created_b2b_view_edit_entity.png
+|
+  
+Please refer to the :ref:`Entities <user-guide-entity-management-from-UI>` guide for more details.
+
 
 .. note::
 

@@ -16,25 +16,43 @@ You need to create a project for OroCRM in the
 
 - Go to the Google Developers Console.
 - Create a project in the *"Select a project"* drop-down menu.
+  |
   
   |CreateProject|
 
-- Define the Project name 
-- Go to the *"APIs & auth"* menu
+  |
+  
+- Define the Project name.
+- Go to the *"APIs & auth"* menu.
 
+  |
+  
   |APImenu|
   
+  |
+  
 - Go to the *"Consent screen"* section and define the project details that will be shown to users whenever you request 
-  access to their private data using your client ID, then click the :guilabel:`Save` button. (The image below is 
-  provided for the sake of example only.)
+  access to their private data using your client ID.
+
+- Click the :guilabel:`Save` button.
+
+  |
 
   |ConsentScreen|
    
-- Go to the *"Credentials"* section and click the :guilabel:`Create new Client ID` button.
+  |
+  
+- Go to the *"Credentials"* section.
 
+- Click the :guilabel:`Create new Client ID` button.
+
+  |
+  
   |CreateClientID|
 
-  - Define the following settings:
+  |
+  
+- Define the following settings:
 
 .. csv-table::
   :header: "**Field**","**Value**"
@@ -50,12 +68,18 @@ You need to create a project for OroCRM in the
   
   "
 
-  -  Click the :guilabel:`Create Client ID` button.
+-  Click the :guilabel:`Create Client ID` button.
 
-    |CreateClientIDForm|
+  |
+  
+  |CreateClientIDForm|
 
-- Client ID has been generated
+  |
+  
+- The Client ID has been generated
 
+  |
+  
 .. image:: ./img/google_integration/created_client_id.png
 
 
@@ -65,10 +89,6 @@ On the OroCRM Side
 - Go to *"System → Configuration → Integrations → Google Settings"*.
 
 - Check the *"Enable"* box and define the following details:
-
-- Define the Client Id and Client Secret, .
-
-- Define some domains if you want to 
 
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -86,9 +106,6 @@ On the OroCRM Side
 Using Single Sign-On
 --------------------
 
-For the First Time
-^^^^^^^^^^^^^^^^^^
-
 When a user gets to the login page of an instance for which single sign-on capability has been enabled, there is a 
 *"login using Google"* link. 
 
@@ -96,10 +113,14 @@ When a user gets to the login page of an instance for which single sign-on capab
   appear.
   
 - After the user has logged in to the Google account, a request to use the account in order to log-in to OroCRM will 
-  appear.(Details defined for the consent screen will be used.)
+  appear. (Details defined for the consent screen will be used).
 
+  |
+  
   |PermissionAccept|
 
+  |
+  
   By clicking Accept, you allow this app and Google to use your information in accordance with their respective terms of 
   service and privacy policies. You can change this and other Account Permissions at any time.
 
