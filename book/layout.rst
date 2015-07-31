@@ -48,7 +48,8 @@ command:
 .. code-block:: bash
 
     $ php app/console cache:clear
-    $ php app/console assets:install
+    $ php app/console oro:assets:install
+    $ php app/console assetic:dump
 
 In this example, all four CSS files from your bundle as well as all the other files from the Oro
 Platform and from third party bundles will be merged and dumped in the ``web/css/style.css`` file.
