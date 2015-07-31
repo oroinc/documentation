@@ -753,7 +753,7 @@ just create a service which is an instance of the
 .. code-block:: yaml
     :linenos:
 
-    # app/config/services.yml
+    # src/InventoryBundle/Resources/config/services.yml
     services:
         inventory.vehicle_manager.api:
             class: Oro\Bundle\SoapBundle\Entity\Manager\ApiEntityManager
