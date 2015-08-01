@@ -60,7 +60,7 @@ metadata to the template:
 | Parameter       | Mandatory | Description                                                            |
 +=================+===========+========================================================================+
 | ``@entityName`` | yes       | The fully-qualified class name of the e-mail owner entity (for example |
-|                 |           | ``Acme\Bundle\DemoBundle\Entity\Applicant``).                                 |
+|                 |           | ``Acme\Bundle\DemoBundle\Entity\Applicant``).                          |
 +-----------------+-----------+------------------------------------------------------------------------+
 | ``@subject``    | yes       | The e-mail subject.                                                    |
 +-----------------+-----------+------------------------------------------------------------------------+
