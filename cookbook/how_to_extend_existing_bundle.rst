@@ -47,7 +47,7 @@ In our case will need to add the ``routing.yml`` file with the following content
 .. code-block:: yaml
     :linenos:
 
-   # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
+    # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
     acme_parent_bundle:
         resource:     "@!OroUserBundle/Controller"
         type:         annotation
