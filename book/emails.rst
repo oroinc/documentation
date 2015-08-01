@@ -24,10 +24,10 @@ contains your templates:
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/DataFixtures/ORM/EmailTemplatesFixture.php
-    namespace Acme\DemoBundle\DataFixtures\ORM;
+    // src/Acme/Bundle/DemoBundle/DataFixtures/ORM/EmailTemplatesFixture.php
+    namespace Acme\Bundle\DemoBundle\DataFixtures\ORM;
 
-    use Oro\Bundle\EmailBundle\DataFixtures\ORM\AbstractEmailFixture;
+    use Oro\Bundle\EmailBundle\Migrations\Data\ORM\AbstractEmailFixture;
 
     class EmailTemplatesFixture extends AbstractEmailFixture
     {
@@ -60,7 +60,7 @@ metadata to the template:
 | Parameter       | Mandatory | Description                                                            |
 +=================+===========+========================================================================+
 | ``@entityName`` | yes       | The fully-qualified class name of the e-mail owner entity (for example |
-|                 |           | ``Acme\DemoBundle\Entity\Applicant``).                                 |
+|                 |           | ``Acme\Bundle\DemoBundle\Entity\Applicant``).                                 |
 +-----------------+-----------+------------------------------------------------------------------------+
 | ``@subject``    | yes       | The e-mail subject.                                                    |
 +-----------------+-----------+------------------------------------------------------------------------+
@@ -116,8 +116,8 @@ The ``Email`` entity then looks something like this:
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/Entity/ApplicantEmail.php
-    namespace Acme\DemoBundle\Entity;
+    // src/Acme/Bundle/DemoBundle/Entity/ApplicantEmail.php
+    namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EmailBundle\Entity\EmailInterface;
@@ -196,8 +196,8 @@ For your ``Applicant`` entity, the implementation should now look something like
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/Entity/Applicant.php
-    namespace Acme\DemoBundle\Entity;
+    // src/Acme/Bundle/DemoBundle/Entity/Applicant.php
+    namespace Acme\Bundle\DemoBundle\Entity;
 
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EmailBundle\Entity\EmailOwnerInterface;
@@ -215,7 +215,7 @@ For your ``Applicant`` entity, the implementation should now look something like
         private $id;
 
         /**
-         * @ORM\OneToMany(targetEntity="Applicant", mappedBy="applicant", orphanRemoval=true, cascade={"persist"})
+         * @ORM\OneToMany(targetEntity="ApplicantEmail", mappedBy="applicant", orphanRemoval=true, cascade={"persist"})
          */
         private $emails;
 
@@ -231,7 +231,7 @@ For your ``Applicant`` entity, the implementation should now look something like
 
         public function getClass()
         {
-            return 'Acme\DemoBundle\Entity\Applicant';
+            return 'Acme\Bundle\DemoBundle\Entity\Applicant';
         }
 
         public function getEmailFields()
@@ -283,11 +283,10 @@ The provider class should then look like this:
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/Entity/Provider/EmailOwnerProvider.php
-    namespace Acme\DemoBundle\Entity\Provider;
+    // src/Acme/Bundle/DemoBundle/Entity/Provider/EmailOwnerProvider.php
+    namespace Acme\Bundle\DemoBundle\Entity\Provider;
 
-    use Acme\DemoBundle\Entity\Applicant;
-    use Acme\DemoBundle\Entity\ApplicantEmail;
+    use Acme\Bundle\DemoBundle\Entity\ApplicantEmail;
     use Doctrine\ORM\EntityManager;
     use Oro\Bundle\EmailBundle\Entity\Provider\EmailOwnerProviderInterface;
 
@@ -295,12 +294,13 @@ The provider class should then look like this:
     {
         public function getEmailOwnerClass()
         {
-            return 'Acme\DemoBundle\Entity\Applicant';
+            return 'Acme\Bundle\DemoBundle\Entity\Applicant';
         }
 
         public function findEmailOwner(EntityManager $em, $email)
         {
             $applicantEmailRepo = $em->getRepository('AcmeDemoBundle:ApplicantEmail');
+            /** @var ApplicantEmail $applicantEmail */
             $applicantEmail = $applicantEmailRepo->findOneBy(array('email' => $email));
 
             if (null !== $applicantEmail) {
@@ -317,10 +317,10 @@ You then need to create a service for the new ``EmailOwnerProvider`` class and t
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/services.yml
+    # src/Acme/Bundle/DemoBundle/Resources/config/services.yml
     services:
         acme_demo.provider.email_owner_provider:
-            class: Acme\DemoBundle\Entity\Provider\EmailOwnerProvider
+            class: Acme\Bundle\DemoBundle\Entity\Provider\EmailOwnerProvider
             tags:
                 - { name: oro_email.owner.provider, order: 3 }
 
