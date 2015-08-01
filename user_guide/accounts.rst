@@ -8,18 +8,18 @@ you, you can create an *"Account"* record ("account") that will represent them i
 An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing 
 a 360-degree view of the customer. 
 
-Unerstanding Accounts, Channels and Customers
+Understanding Accounts, Channels and Customers
 ----------------------------------------------
 
-For each :term:`channel <Channel>` :ref:`created <user-guide-channel-guide-create>`, there is a set of 
+For each :ref:`channel created <user-guide-channel-guide-create>`, there is a set of 
 :term:`entities <Entity>` defined. These entities correspond to types of information collected from the corresponding 
 data source.
 
-One of the entities must represent a term:`customer <Customer>`
+One of the entities must represent a :term:`customer <Customer>`.
 
-Once a customer :term:`record <Record>` is created, it is assigned to an account. Several accounts may 
-be :ref:`merge <user-guide-accounts-merge>` into one, regardless of the channels.( For example, if you have a B2B 
-customer that represents some client of yours, and then this client is buying something from your Magento store)
+Once a customer record is created, it is assigned to an account. Several accounts may 
+be :ref:`merged <user-guide-accounts-merge>` into one, regardless of the channels.(For example, if you have a B2B 
+customer that represents some client of yours, and then this client is also buying something from your Magento store).
 
 .. note ::
 
@@ -59,17 +59,11 @@ The following fields are mandatory and **must** be defined:
 The rest of the fields are optional. They keep additional details about the account (such as its :term:`tags <Tag>`
 and related :term:`contacts <Contact>`) and may be left empty.
 
-.. hint::
+- In order to add a contact, click the :guilabel:`+Add` button in the *Contacts* section. 
 
-    In order to add a contact, click the :guilabel:`+Add` button in the *Contacts* section. 
-
-If you need to record and process any other details of accounts, **custom fields** can be created. Their values will 
+If you need to record and process any other details of accounts, 
+:ref:`custom fields can be created <user-guide-field-management-create>` can be created. Their values will 
 be displayed in the *Additional* section.
-
-.. hint::
-
-    To create a custom field, go to *System → Entities → Entity Management → Lead* and click :guilabel:`Create Field`
-    button.
   
 Once all the necessary information has been defined, click the button in the right top corner of the page to save the 
 account in the system.
@@ -88,16 +82,22 @@ Accounts View Page
 
 The :ref:`View page <user-guide-ui-components-view-pages>` consists of several sections, namely:
 
-- **Page Header**: date of the account creation and it latest update, as well as its 
+- **Page Header**: date of the account creation and its latest update, as well as its 
   :term:`lifetime sales value <Lifetime Sales Value>`.
 
-- **General**: general details of the account, such as its name, tags, description and all the contacts assigned for the
+- **General**: general details of the account, such as its name, tags, description and all the contacts assigned to the
   account. 
 
+  |
+  
 .. image:: ./img/accounts/accounts_view_general.png
+
+|
 
 - **Record Activities**: activities (calls, emails and tasks assigned to the account)
 
+  |
+  
 .. image:: ./img/accounts/accounts_view_activities.png
 
 .. note::
@@ -113,25 +113,26 @@ The :ref:`View page <user-guide-ui-components-view-pages>` consists of several s
   
   Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
   
-  In the example below you can see a section of a channel named "B2B Channel" (This is a name of a demo B2B 
-  type channel):
+  In the example below you can see a section of a channel named "B2B Channel":
   
-  - There are three B2B Customers: "Jewel Mart", "A. L. Price", and "PriceRite Warehouse Club"
+  - There are three B2B Customers: Jewel Mart, A. L. Price, and PriceRite Warehouse Club.
 
-  - Once one of the customers is chosen, you can see it general details and information on related Leads/Opportunities
+  - Once one of the customers is chosen, you can see its general details and information on related Leads/Opportunities:
  
 .. image:: ./img/accounts/accounts_view_channels.png
 
 .. note::
 
-    Number and names of such sections depends only on the number and names of channel in OroCRM, customer records of 
-    which have been assigned to the account.
+    Number and names of such sections depends only on the number and names of OroCRM channels and customer records 
+    assigned to the account.
 
 
 .. _user-guide-accounts-actions:
 
 Account Actions from the View Page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""
+
+      |
 
 The following actions can be performed for the accounts from the :ref:`View page <user-guide-ui-components-view-pages>`:
   
@@ -142,8 +143,9 @@ The following actions can be performed for the accounts from the :ref:`View page
 - Export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
   the :ref:`Export and Import Functionality <user-guide-import>` guide. 
 
-The rest of the actions available from the View page depend on the system settings defined in the Communication & 
-Collaboration section of the "Account" entity
+- The rest of the actions available depend on the system settings defined in the
+  :ref:`Communication & Collaboration settings <user-guide-entity-management-create-commun-collab>` of the 
+  *"Accounts"* entity.
 
 .. image:: ./img/accounts/accounts_view_actions.png
 
@@ -151,11 +153,15 @@ Collaboration section of the "Account" entity
 Account Actions from the Grid 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-From the :ref:`grid <user-guide-ui-components-grids>`:
+From the :ref:`grid <user-guide-ui-components-grids>` you can:
+
+      |
 
 .. image:: ./img/accounts/accounts_grid.png
 
-- Delete a account from the system : |IcDelete|
+|
+
+- Delete the account from the system : |IcDelete|
   
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the account : |IcEdit|
   
@@ -172,7 +178,7 @@ Merging Accounts
 Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
 view of customer activities, regardless of the :term:`channels <Channel>`. This can be useful if, for example, it has 
 appeared that several accounts have been created for the different representatives of the same client, or that your 
-business-to-business partner has started another channel (e.g. buying from you Magento store).
+business-to-business partner is co-operating with you from a new channel (e.g. started buying from your Magento store).
 
 In order to merge accounts:
 
@@ -186,25 +192,29 @@ In order to merge accounts:
 
 .. image:: ./img/accounts/accounts_merge_01.png
 
+|
+
 Once you've clicked the :guilabel:`Merge Accounts` button, a table with the merge-settings will appear.
+
+      |
 
 .. image:: ./img/accounts/accounts_merge_02.png
 
-- Choose the name of one of the accounts being merged, that will be given to your new account ("Master Record")
+- Choose the name of one of the accounts being merged, that will be given to your new account ("Master Record").
 
 - Choose if the contacts shall be replaced with the contacts of one account (and which), or if all the contacts shall be
   appended.
 
-- Choose the default contact of the accounts being merged, that will be given to the Master Records
+- Choose the default contact of the accounts being merged, that will be given to the Master Record.
 
-- Choose the description of the accounts being merged, that will be given to the Master Records
+- Choose the description of the accounts being merged, that will be given to the Master Record.
 
-- Choose the owner of the accounts being merged, that will be given to the Master Records 
+- Choose the owner of the accounts being merged, that will be given to the Master Record.
 
 - Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be 
   appended.
 
-- Click the :guilabel:`Merge` button
+- Click the :guilabel:`Merge` button.
   
 A Master Record with merged data of several accounts will be created. The rest of the account details, including details 
 of the customer identities will be appended.
@@ -229,7 +239,7 @@ Accounts Life Time Value
 This is a simple but useful report, with which you can see the total amount of money received from all the customers 
 assigned to the account. 
 
-In order to see the report go to *Reports and Segments → Reports → Accounts → Life Time*
+In order to see the report go to *Reports and Segments → Reports → Accounts → Life Time*.
 
 It shows:
 
@@ -246,7 +256,7 @@ Accounts by Opportunities
 With this report you can see number of won, lost and pending opportunities for all the customers assigned to the 
 account. 
 
-In order to see the report go to *Reports and Segments → Reports → Accounts → By Opportunities*
+In order to see the report go to *Reports and Segments → Reports → Accounts → By Opportunities*.
 
 It shows:
 
@@ -262,12 +272,15 @@ It shows:
 
 - total number of opportunities of a kind, regardless of their account.
 
+  |
+  
 .. image:: ./img/accounts/accounts_report_by_opportunity.png 
 
+.. hint::
 
-New custom reports can be added, that can use details of the accounts as well as of any records related to the accounts. 
-For more details on the ways to create and customize the reports,  please see the 
-:ref:`Reports guide <user-guide-reports>`.
+    New custom reports can be added, that can use details of the accounts as well as of any records related to the 
+    accounts. For more details on the ways to create and customize the reports,  please see the 
+    :ref:`Reports guide <user-guide-reports>`.
 
 
 

@@ -51,11 +51,11 @@ All the business units available are displayed in the Business Units
 From the grid you can:
 
 
-- Delete a business unit from the system: |IcDelete|.
+- Delete a business unit from the system: |IcDelete|
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the business unit: |IcEdit|.
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the business unit: |IcEdit|
 
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the business unit: |IcView|.
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the business unit: |IcView|
 
 
 

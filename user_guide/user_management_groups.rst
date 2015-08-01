@@ -29,7 +29,7 @@ General
   
 Users
 ^^^^^
-  Check/uncheck the **HAS GROUP** box, to assign/unassign a user to the user group:
+  Check/uncheck the **HAS GROUP** box, to assign/unassign a user to/from the user group.
 
 .. note::
 
@@ -45,9 +45,9 @@ All the user groups available are displayed in the User Groups
 From the grid you can:
 
 
-- Delete a user group from the system: |IcDelete|.
+- Delete a user group from the system: |IcDelete|
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the user group: |IcEdit|.
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the user group: |IcEdit|
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png

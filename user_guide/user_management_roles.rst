@@ -59,7 +59,11 @@ whether it is a :ref:`system organization <user-ee-multi-org-system>`, as descri
 In a :ref:`system organization <user-ee-multi-org-system>`, the user will able to perform an action for the
 entity records in any organization within the system, as long as the permission is set to *"System"*.
 
+      |
+  
 .. image:: ./img/multi_org/multi_org_permission.png
+
+|
   
 Any other permission setting but *"System"*, in a system organization, will be treated as *"None"*.
 
@@ -68,6 +72,7 @@ Any other permission setting but *"System"*, in a system organization, will be t
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Permissions in non-system organizations depend on the ownership type of the entity.
 
+      |
 
 Ownership Type "Organization"
 """""""""""""""""""""""""""""
@@ -76,10 +81,11 @@ is chosen as its :term:`owner <Owner>`.
 
 You can choose one of the following options for each action: 
 
-- ***None***: No users will be able to perform the action.
-- ***Organization***: All the users from the owner-organization will be able to perform the action.
-- ***System***: All the users will be able to perform the action.
+- **None**: No users will be able to perform the action.
+- **Organization**: All the users from the owner-organization will be able to perform the action.
+- **System**: All the users will be able to perform the action.
 
+  |
 
 Ownership Type "Business Unit"
 """"""""""""""""""""""""""""""
@@ -89,14 +95,15 @@ is chosen as its Owner.
 
 You can choose one of the following options for each action: 
 
-- ***None***:  No users will be able to perform the action.
-- ***Business Unit***: All the users from the owner-business-unit will be able to perform the action.
-- ***Division***: All the users from the owner-business-unit and from its child business units will be able to perform 
+- **None**:  No users will be able to perform the action.
+- **Business Unit**: All the users from the owner-business-unit will be able to perform the action.
+- **Division**: All the users from the owner-business-unit and from its child business units will be able to perform 
   the action.
-- ***Organization***: All the users from the organization to which the owner-business-unit belongs, will be able to 
+- **Organization**: All the users from the organization to which the owner-business-unit belongs, will be able to 
   perform the action.
-- ***System***: All the users will be able to perform the action.
+- **System**: All the users will be able to perform the action.
 
+  |
 
 Ownership Type "User"
 """""""""""""""""""""
@@ -104,22 +111,22 @@ Ownership Type "User"
 If the entity type is set to "User", when an entity record is created, a :term:`user <User>` is chosen as its owner. 
 You can choose one of the following options for each action: 
 
-- ***None***: No users will be able to perform the action.
-- ***User***: Only the owner-user will be able to perform the action.
-- ***Business Unit***: All the users from the business unit to which the owner-user belongs will be able to perform the 
+- **None**: No users will be able to perform the action.
+- **User**: Only the owner-user will be able to perform the action.
+- **Business Unit**: All the users from the business unit to which the owner-user belongs will be able to perform the 
   action.
-- ***Division***: all the users from the business unit to which the owner-user belongs and from its child business units 
+- **Division**: all the users from the business unit to which the owner-user belongs and from its child business units 
   will be able to perform the action.
-- ***Organization***: all the users from the organization, to which the owner-user belongs, will be able to perform the 
+- **Organization**: all the users from the organization, to which the owner-user belongs, will be able to perform the 
   action.
-- ***System***: all the users will be able to perform the action.
+- **System**: all the users will be able to perform the action.
 
 Roles and Access Rights
 ^^^^^^^^^^^^^^^^^^^^^^^
 Access right assigned to a role, define if the users will be able to access a specific functionality.
 There are only two options:
 
-- ***None***: users with the role won't be able to use the functionality.
+- **None**: users with the role won't be able to use the functionality.
 - ***System***: users with the role will be able to use the functionality for all the records created within their
   OroCRM instance they've logged in into.
 
@@ -128,20 +135,24 @@ There are only two options:
 
 To create a new role:
 
-- Go to *System → User Management → Roles*
-- Click the :guilabel:`Create Role` button
+- Go to *System → User Management → Roles*.
+- Click the :guilabel:`Create Role` button.
+
+  |
   
   |role_create|
 
+  |
+  
 - In the form that has emerged, define the role name that will be used to assign it to a user.
 
   Define other settings in the sections described below:
   
-  - ***Entity***: Define what permissions the users assigned this role will have for the entity records that have 
+  - **Entity**: Define what permissions the users assigned this role will have for the entity records that have 
     an ownership type other than "None".
-  - ***Capabilities***: Define if the user that has been assigned this role will have access to certain parts of the 
+  - **Capabilities**: Define if the user that has been assigned this role will have access to certain parts of the 
     system.
-  - ***Users***: Select users to be assigned this role.
+  - **Users**: Select users to be assigned this role.
 
 The "Entity" Section
 ^^^^^^^^^^^^^^^^^^^^
@@ -149,6 +160,8 @@ The "Entity" Section
 If the ownership type of an entity is set to "None", it will appear in the *Entity* section of the *"Create Role"* form.
 Choose the permissions for each section from the drop-down menu:
 
+      |
+  
 .. image:: ./img/user_management/role_entity.png
 
 .. hint::
@@ -162,6 +175,8 @@ The "Capabilities" Section
 The "Capabilities" section contains a list of system functionalities that can be either enabled or disabled for all the 
 users that have been assigned a specific role.
 
+      |
+  
 .. image:: ./img/user_management/role_capabilities.png
   
 The "Users" Section
@@ -171,7 +186,8 @@ In the "Users" section, you can choose users to be assigned the role created.
 
 Check/uncheck the **HAS ROLE** box to assign/unassign a user to the role:
 
-
+      |
+	  
 .. image:: ./img/user_management/role_users.png
 
 .. note::

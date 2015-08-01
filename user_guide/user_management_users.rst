@@ -23,12 +23,12 @@ defined in the section.
   :widths: 10, 30
 
   "**Owner**","Define a :term:`business unit <Business Unit>`, users of which can manage the user, subject to the 
-  :ref:`role settings <user-guide-user-management-permissions>`"
-  "**Status**","Chose the record status. Possible values are *Inactive* or *Active*"
-  "**Username**","The name used to log into the system (login)"
-  "**Password**","The password used to log into the system"
-  "**First Name** and **Last Name**","Name used to refer to the user in the UI"
-  "Primary Email","Email associated with the user in the system"
+  :ref:`role settings <user-guide-user-management-permissions>`."
+  "**Status**","Chose the record status. Possible values are *Inactive* or *Active*."
+  "**Username**","The name used to log into the system (login)."
+  "**Password**","The password used to log into the system."
+  "**First Name** and **Last Name**","Name used to refer to the user in the UI."
+  "Primary Email","Email associated with the user in the system."
   
 Along with the mandatory fields, there are a number of optional fields provided by default, that can be used to define 
 additional details of the customer, such as the name prefix and suffix, the middle name, birthday, additional emails,
@@ -38,13 +38,15 @@ and phone number. You can also add the avatar (upload a picture to be used for t
 The "*Send An Email Invitation*" check-box defines whether an invitation email must be sent to the user. The email 
 content is defined in the course of the system integration and cannot be edited from the UI.
 
+      |
+  
 .. image:: ./img/user_management/user_general.png
 
 
 Additional
 ^^^^^^^^^^
   
-Any custom fields :ref:`added <user-guide-field-management-create>` to the "User" entity can be defined in the 
+Any :ref:`custom fields added <user-guide-field-management-create>` to the "User" entity can be defined in the 
 *"Additional"* section.
 
 Groups and Roles
@@ -56,6 +58,8 @@ created to a group/role.
 
 One user may have several roles. All the permissions granted to at least one of the roles, are granted to the user. 
 
+      |
+ 
 .. image:: ./img/user_management/user_groups.png
 
 
@@ -106,6 +110,8 @@ User View Page
 
 View page of a user record contains the following three sections:
 
+      |
+  
 General Information
 """""""""""""""""""
 The section contains basic details of the user, namely:
@@ -119,7 +125,7 @@ The section contains basic details of the user, namely:
 - Business unit the user belongs to
 - Any custom fields :ref:`added <user-guide-field-management-create>` to the "User" entity will appear in the order 
   defined by their :ref:`priority <user-guide-entity-management-other-common>`.
-
+  
 Record Activities
 """""""""""""""""
 

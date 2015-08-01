@@ -6,6 +6,8 @@ Add and Assign Calendar Events
 In order to fix some meeting, conference or another arrangement in your OroCRM account, create a "*Calendar Event"*
 record ("calendar event" or "event").  
 
+.. _user-guide-activities-create-events:
+
 Create an Event
 ---------------
 There are several ways to create an event:
@@ -76,11 +78,7 @@ For example, we also need Ellen Rowell to visit a sales conference on April 8th.
 Create an Event from the Events Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Go to *Activities → Calendar Events*.
-
-.. hint:
-
-    Another way to get to the grid is to click the :guilable`Events` button above your calendar.
+1. Go to *Activities → Calendar Events* or click the :guilable`Events` button above your calendar.
 
 2. Click the :guilabel:`Create Calendar Event` button.
 
@@ -104,10 +102,16 @@ View and Manage Events
 - All the events  added  for a record are displayed and can be reached from the *Record Activities* section on the 
   View page:
 
+  |
+  
 .. image:: ./img/activities/add_event_view.png
 
+|
+  
 - To see the details, click on the event title or the :guilabel:`+` to the left from it.  
 
+  |
+  
 .. image:: ./img/activities/add_event_view_detailed.png
 
 
@@ -118,6 +122,8 @@ View and Manage Events
   - Go to "My Calendar".
 
 .. image:: ./img/activities/assign_events_cal.png  
+
+|
 
 - Choose the user in the drop-down on the left.
 

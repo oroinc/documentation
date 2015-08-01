@@ -3,18 +3,16 @@
 Magento Abandoned Cart Campaigns
 ================================
 
-Once your OroCRM account has been integrated with :ref:`Magento <user-guide-magento-channel-integration>` and 
-:ref:`MailChimp <user-guide-mc-integration>`, you can use OroCRM Abandoned Cart functionality to increase conversion and 
-sales. 
+OroCRM's Magento Abandoned Cart Campaign functionality for automatic generation of contact lists of 
+customers  that abandoned your Magento store cart during the checkout process. Contacts in the list may be selected 
+dynamically by a number of parameters, such as date when they added items to the cart, cart value, type of the items 
+chosen, customer actions and more.
 
-With this functionality, you can use multiple criteria such as the date created, cart value, item type, customer actions
-and more to create dynamically updated lists of contact details related to customers that abandoned your Magento store 
-cart during the checkout process.
+Once you have created a Magento Abandoned Cart Campaign, you can use its contact list to run 
+:ref:`Email Campaigns <user-guide-email-campaigns>` in OroCRM. You can also synchronize it with Subscribers 
+Lists in :ref:`MailChimp <user-guide-mc-integration>` and use it to create Email Campaigns and Automation in MailChimp.
 
-Once a list has been created, it can be uploaded to MailChimp and used to launch a usual or automated email campaign. 
-The contact list and campaign details can be then synchronized in the MailChimp and OroCRM accounts. MailChimp's 
-campaign tracking and OroCRM's  Website tracking and reporting tools can be used to analyze the campaign efficiency. 
-
+The article describes how to create and manage Magento Abandoned Cart Campaigns.
 
 .. _user-guide-acc-ext:
 
@@ -105,7 +103,7 @@ Columns
 
 In the "*Columns*" section, define the set of fields.
 The only goal of this set of fields is to visualize records that meet the filter requirements. (Values of the chosen 
-fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign)
+fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign).
 
 .. note::
 
@@ -119,7 +117,7 @@ fields will be displayed at the :ref:`View page <user-guide-ui-components-view-p
   
 - Define the sorting order if you want the grid to be sorted by the field value.
 
-- Click :guilabel:`Add` button
+- Click the :guilabel:`Add` button.
 
 Use action icons in the last column to edit the grid:
 
@@ -139,6 +137,8 @@ account. The List will contain abandoned Magento Shopping Carts available in the
 after April 1st, 2015. The cart id, customer's last name, and email will be transferred to the MailChimp account for 
 every such cart and can be used as variables for email campaigns.
 
+      |
+	  
 .. image:: ./img/mailchimp/acc_create_ex.png
 
 
@@ -150,6 +150,8 @@ Manage Abandoned Cart Campaigns
 The following actions are available for an abandoned cart campaign from the 
 :ref:`grid <user-guide-ui-components-grids>`:
 
+      |
+	  
 .. image:: ./img/mailchimp/acc_edit.png
 
 - Delete the campaign from the system : |IcDelete| 
@@ -163,15 +165,18 @@ The following actions are available for an abandoned cart campaign from the
 
 Abandoned Cart Campaign View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+      |
+  
 .. image:: ./img/mailchimp/acc_view.png
+
+|
 
 The :ref:`View page <user-guide-ui-components-view-pages>` of an abandoned cart campaign contains the following 
 sections:
 
-- :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>` 
+- :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`.
 
-- ***General Information***: general details of the campaign
+- ***General Information***: general details of the campaign.
 
 - ***Magento Shopping Carts*** grid: the grid of Magento shopping carts included in the campaign.
   
@@ -182,114 +187,29 @@ sections:
 - ***Removed Items****: the grid contains carts that have been removed from the list (a cart may be removed from OroCRM 
   and\or from MailChimp (requires synchronization).
 
-.. hint::
+  Action icons in the last column of the grid enable the following actions:
 
-    Action icons in the last column of the grid enable the following actions:
+  - Get to the *"View"* page of the grid item: |IcView|
 
-    - Get to the *"View"* page of the grid item: |IcView|
+  - Unsubscribe/subscire the item from/to the list manually: |IcUns| and  |IcSub| icons
+ 
+  - Remove the item from the list: |IcRemove|
 
-    - Unsubscribe the item from the list manually: |IcUns|
-  
-    For unsubscribed items, there is a |IcSub| icon to get the record back on the list
-  
-    - Remove the item from the list: |IcRemove|
+  Action icons in the last column of the *"Removed Items"* grid enable the following actions:
 
-    Action icons in the last column of the *"Removed Items"* grid enable the following actions:
+  - Get to the *"View"* page of the grid item: |IcView|
 
-   - Get to the *"View"* page of the grid item: |IcView|
-
-   - Restore the item in the marketing list: |UndoRem|  
+  - Restore the item in the marketing list: |UndoRem|  
    
 - ***Conversion***: Items that were initially added to the campaign and then were turned into orders.
 
 
-.. _user-guide-acc-connect:
-
-
-2. Connecting to MailChimp
---------------------------
-
-- Go to the View Page of an abandoned cart campaign
-
-- Click the :guilabel:`Connect To MailChimp` button to use the list of contacts for the abandoned shopping 
-  carts (defined at step 1) in the MailChimp account. The *Connect to MailChimp* form will appear. 
+*Now you can go ahead and use the contact list generated by the Abandoned Cart Campaign to create*
+:ref:`Email Campaigns <user-guide-email-campaigns>` *in OroCRM. You can also synchronize it with Subscribers 
+Lists in* :ref:`MailChimp <user-guide-mc-integration>` *and use it to create Email Campaigns and Automation in 
+MailChimp.*
   
-- The following fields must be specified:
-
-.. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
-
-  "**MailChimp Segment Name***","Name used to refer to the segment in MailChimp that will contain the list of contacts 
-  defined by this specific abandoned cart campaign."
-  "**MailChimp Integration***","The :ref:`integration with MailChimp <user-guide-mc-integration>` to be used for the 
-  connection. Defines which MailChimp account the data will be transferred to and provides the connection details."
-  "**MailChimp Subscribers List***","The Subscribers List in MailChimp, the segment will be created within. All of the
-  MailChimp Subscriber's Lists of the account specified for the integration will be loaded and any of them can be chosen 
-  from the drop-down menu."
   
-For example, we have :ref:`created <user-guide-mc-integration>` a *DemoACC* integration.
-We have also created a separate *DemoACCList* in our MailChimp account, however, you can also define the segment within 
-any available Subscribers List.
-We are now creating a *Demo Abandoned Cart Campaign* segment within the list.
-
-.. image:: ./img/mailchimp/acc_con_form.png
-
-Once all the fields are filled in, click the :guilabel:`Connect` button.
-
-Now the :guilabel:`MailChimp` action button  will appear. You can use the drop-down menu to synchronize the Subscribers 
-List and the Abandoned Cart Campaign data, to edit the connection settings or to disconnect the campaign from the list.
-
-.. image:: ./img/mailchimp/acc_com_form_manage.png
-
-Synchronization will be performed once in a predefined time period specified in the course of integration, but you can
-also click the :guilabel:`Synchronize` button to make sure the latest data has been considered by the synchronization.
-*"This list is linked to "{Name of the Segment in MailChimp}" segment of "{Name of the Subscribers List in MailChimp}" 
-Mailchimp List. Last synchronization date: {date}. Synchronization status: {status}* message will appear. For example:
-
-.. image:: ./img/mailchimp/status_mes.png
-
-When we open the *DemoACC* list in our MailChimp account, there is the Demo Abandoned Cart Campaign segment that 
-contains data for the abandoned Magento shopping carts from the campaign:
-
-.. image:: ./img/mailchimp/acc_mc_ex.png
-
-Now you can use this segment to create a campaign or an automated campaign in MailChimp.
-
-Synchronization Flow
---------------------
-
-Start the Synchronization
-^^^^^^^^^^^^^^^^^^^^^^^^^
-After the connection has been saved, contacts from the  marketing list will be automatically exported from OroCRM to 
-the chosen segment of MailChimp. Since then, data synchronization between OroCRM and MailChimp will 
-be performed automatically. 
-
-You can also start the synchronization manually. To do so:
-
-- Click the :guilabel:`Synchronize` button in the MailChimp menu on the 
-  :ref:`View page <user-guide-ui-components-view-pages>` of the Markting List   
-  
-.. image:: ./img/mailchimp/acc_com_form_manage.png 
-
-- You can also start the data synchronization from the :ref:`View page <user-guide-ui-components-view-pages>` of the
-  integration, with the :guilabel:`Schedule Sync` button. 
-
-- You can also start the data synchronization with the |BSchedule| button in the *System → Integrations → Manage 
-  Integrations* section.
-
-
-Synchronization Process
-^^^^^^^^^^^^^^^^^^^^^^^
-During the synchronization the following details are updated:
-
-- The list of Subscribers lists available in MailChimp is updated in OroCRM
-- The list of contacts on a specific OroCRM marketing list and related segment of a MailChimp marketing list are checked
-  against each other and updated, subject to the priority defined in the synchronization settings of the integration.
-- Email campaigns created in MailChimp are imported as Email Campaign records in OroCRM. Along with it, a Campaign 
-  record is created in OroCRM for automated MailChimp campaigns.
-
-
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
 

@@ -17,10 +17,10 @@ Create an Organization Record
 
 In order to create an Organization record:
 
-1. Go to *System → User Management → Organizations*
-2. Click the :guilabel:`Create Organization` button
-3. Define the general details and the list of users for the organization created, and specify if it is a :ref:`system 
-   organization <user-ee-multi-org-system>`:
+1. Go to *System → User Management → Organizations*.
+2. Click the :guilabel:`Create Organization` button.
+3. Define the general details and the list of users for the organization created, and specify if it is a 
+   :ref:`system organization <user-ee-multi-org-system>`:
 
 The following fields **must** be defined 
 
@@ -30,17 +30,19 @@ The following fields **must** be defined
 
   "**Status**","Current status of the organization.
 
-  *Inactive* or *Active*
+  *Inactive* or *Active.*
   "
-  "**Name**","The name used to refer to the organization in the UI. This is  the only mandatory field"
+  "**Name**","The name used to refer to the organization in the UI. This is  the only mandatory field."
  
 You can also add a text description of the organization.
  
+      |
+  
 .. image:: ./img/user_management/organization_general.png
  
 Users
 ^^^^^
-  Check/uncheck the **HAS ORGANIZATION** box, to assign/unassign a user to the organization:
+  Check/uncheck the **HAS ORGANIZATION** box, to assign/unassign a user to the organization.
 
 .. note::
 
@@ -60,8 +62,11 @@ View and Manage an Organization Record
 In the enterprise edition, all the organizations available are displayed in the Organizations 
 :ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → User Management → Organizations*).
 
+      |
 
 .. image:: ./img/user_management/organization_action.png
+
+|
 
 From the grid you can:
 

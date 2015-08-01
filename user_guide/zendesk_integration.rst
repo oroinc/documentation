@@ -25,8 +25,8 @@ The only thing you will need from Zendesk is your API token:
 
 .. image:: ./img/zendesk/zendesk_api.png
 
-- Make sure the *Token Access* is enabled
-- Copy an active API token
+- Make sure the *Token Access* is enabled.
+- Copy an active API token.
 
 .. image:: ./img/zendesk/zendesk_api_token.png
 
@@ -62,7 +62,7 @@ Define the following mandatory details in the *"General"* section:
   "**Default Zendesk User Email**","User with this email will be assigned tickets that come from OroCRM and for which
   there are no Zendesk users with a matching email address."
   "**Owner**","Limits the list of users that can manage the integration, subject to the 
-  :ref:`access and permission settings <user-guide-user-management-permissions>`" 
+  :ref:`access and permission settings <user-guide-user-management-permissions>` 
   etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
   
 
@@ -80,13 +80,15 @@ not be loaded into Zendesk.
 If two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
 customer details were edited from the both OroCRM and Zendesk):
 
-- *Remote wins*: Zendesk data will be applied to both Zendesk and OroCRM
+- *Remote wins*: Zendesk data will be applied to both Zendesk and OroCRM.
 
-- *Local wins*: OroCRM data will be applied to both Zendesk and OroCRM
+- *Local wins*: OroCRM data will be applied to both Zendesk and OroCRM.
 
 For example we have created a Demo Zendesk Integration with two-way synchronization enabled, where if the same data
 is changed from both Zendesk and OroCRM, the Zendesk changes will take precedence.
 
+      |
+	  
 .. image:: ./img/zendesk/zendesk_create.png
 
 
@@ -104,6 +106,8 @@ Edit the Integration
 All the integrations created will be available in the Integrations grid under *"System → Integrations → Manage 
 Integrations"*. Use the :ref:`grid action icon <user-guide-ui-components-grid-action-icons>` to delete (|IcDelete|) or 
 edit (|IcEdit|) the integration details.
+
+      |
 
 .. image:: ./img/zendesk/zendesk_edit.png
 
@@ -133,8 +137,8 @@ Synchronization Process
 First Synchronization from Zendesk to OroCRM
 """"""""""""""""""""""""""""""""""""""""""""
 
-- A new OroCRM case is created for every Zendesk ticket. The ticket fields are mapped at the OroCRM case fields as 
-  follows:
+A new OroCRM case is created for every Zendesk ticket. The ticket fields are mapped at the OroCRM case fields as 
+follows:
 
 .. csv-table::
   :header: "Zendesk Field", "OroCRM case field", "Comments"
@@ -194,8 +198,8 @@ First Synchronization from Zendesk to OroCRM
 
 .. image:: ./img/zendesk/example_ticket.png
   
-- For each case created as a result of synchronization with Zendesk, a ticket is created in OroCRM. The following
-  field values are defined as follows:
+For each case created as a result of synchronization with Zendesk, a ticket is created in OroCRM. The following
+field values are defined as follows:
   
 .. csv-table::
   :header: "OroCRM Ticket Field", "Description"
