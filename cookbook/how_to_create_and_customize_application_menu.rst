@@ -50,10 +50,13 @@ First, you have to go to your default controller, create your action and specify
     You can read more about both the ``@Route`` and the ``@Template`` annotation in the
     `SensioFrameworkExtraBundle documentation`_.
 
+    .. _`SensioFrameworkExtraBundle documentation`: http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
+
 Next, you should create a template for your action with the following content:
 
 .. code-block:: html+jinja
     :linenos:
+
     {# src/Acme/Bundle/NewBundle/Resources/views/Default/index.html.twig #}
     {% extends "OroUIBundle:Default:index.html.twig" %}
     {% block content %}
@@ -65,6 +68,7 @@ with the following content:
 
 .. code-block:: yaml
     :linenos:
+
     # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
     acme_new_bundle:
         resource:     "@AcmeNewBundle/Controller"
