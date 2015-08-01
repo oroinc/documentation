@@ -116,7 +116,7 @@ To do so,
 
 - Click the search icon (3)
 
-- Type the search key the text field, to perform the search.
+- Type in the search key the text field, to perform the search.
 
 - Click :guilabel:`Go`
 

@@ -13,6 +13,7 @@ and technical details.
   * :doc:`/book/localization`
   * :doc:`/book/security`
   * :doc:`/book/emails`
+  * :doc:`/book/navigation`
 
 * :doc:`/book/customization`
 
@@ -61,7 +62,6 @@ TODO List
     * LESS and CSS
     * Data Grids
     * Forms
-    * Navigation
     * Notifications
     * Sidebars
     * Windows

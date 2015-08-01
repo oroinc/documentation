@@ -12,3 +12,4 @@ Getting Started
     localization
     security
     emails
+    navigation
