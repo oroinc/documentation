@@ -45,7 +45,7 @@ article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php``
 In our case will need to add the ``routing.yml`` file with the following content:
 
 .. code-block:: yaml
-:linenos:
+    :linenos:
 
    # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
     acme_parent_bundle:
