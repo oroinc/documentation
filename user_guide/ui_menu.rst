@@ -105,7 +105,7 @@ see corresponding pages or grids, as described below:
   
   - The grid of all the :ref:`Segments <user-guide-filters-segments>` available in the system
 
-|reports_menu|
+  |reports_menu|
   
 |
 
