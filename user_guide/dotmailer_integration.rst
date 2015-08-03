@@ -97,6 +97,8 @@ if the credentials are valid.
 After the integration has been created and its status has been set to Active, the list of Address Books will be 
 automatically imported from Dotmailer to OroCRM for further integration management. 
 
+.. _user-guide-dm-integration-map:
+
 Map OroCRM Marketing Lists to Dotmailer Address Books
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

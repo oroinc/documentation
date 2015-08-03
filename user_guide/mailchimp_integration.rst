@@ -127,6 +127,9 @@ is changed in both MailChimp and OroCRM, the MailChimp changes will take precede
 *After the integration has been created and its status has been set to Active, the list of Subscribers Lists will be 
 automatically imported from MailChimp to OroCRM for further integration management.*
 
+
+.. _user-guide-mc-integration-map-contacts:
+
 Map OroCRM Marketing Lists to MailChimp Subscribers List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
