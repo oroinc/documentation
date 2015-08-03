@@ -84,8 +84,10 @@ You can use the action icons to
 
 - Define a record in OroCRM related to the email: |email_context| 
   
+  
   - The *Add Context Entity* form will appear. 
 
+  
    |
    
    |email_context_form|
@@ -94,6 +96,7 @@ You can use the action icons to
    
   - Choose the entity (account, B2B customer, etc.) from the drop-down menu and choose a specific record from the grid.
 
+  
 .. hint::
 
     If an email has been created from an entity record view page (e.g. from the Lead's page), this record will be added

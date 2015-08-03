@@ -133,8 +133,8 @@ The following actions are available for a marketing list from the :ref:`grid <us
 
 .. _user-guide-marketing-list-view-page:
 
-Marketing Lists View Page
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Marketing List View Page
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ./img/marketing/list_view_page.png
 
@@ -142,9 +142,20 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 
 - :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`.
 
-- General details of the list.
+- Mapping buttons: As soon as OroCRM has been integrated with a third party system, to which a marketing list may be 
+  mapped, you will see :guilabel:`Connect to ...` buttons, with which you
+  can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration-map-contacts>` or
+  :ref:`Address Books of Dotmailer <user-guide-dm-integration-map>`.
+  
+  |
+  
+  |MapML|
+  
+  |
 
-- Grid of the list.
+- See general details of the list.
+
+- See the grid of all the records on the Marketing Lists.
 
 
 Marketing List Grid
@@ -226,3 +237,8 @@ suit your purposes.
 
 .. |BCrLOwnerClear| image:: ./img/buttons/BCrLOwnerClear.png
    :align: middle
+
+.. |MapML| image:: ./img/marketing/map_ml.png
+   :align: middle
+
+   
