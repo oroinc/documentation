@@ -1,5 +1,5 @@
-Sales Tools
-===========
+Sales
+=====
 
 The section describes OroCRM tools used to collect and aggregate customer-detailed 
 information from different sources ("channels"), including sharpened out-of-the-box tools for Magento-based stores and 
