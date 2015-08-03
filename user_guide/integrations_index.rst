@@ -1,5 +1,5 @@
-Integration and Synchronization Capabilities
-============================================
+Integrations
+============
 
 OroCRM is pre-implemented with several third-party systems and may be implemented with many more. The section provides
 detailed description of the integrations implemented out-of-the-box in the both OroCRM Community and OroCRM Enterprise

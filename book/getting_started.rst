@@ -11,4 +11,5 @@ Getting Started
     configuration
     localization
     security
+    emails
     navigation

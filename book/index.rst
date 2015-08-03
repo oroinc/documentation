@@ -12,6 +12,7 @@ and technical details.
   * :doc:`/book/configuration`
   * :doc:`/book/localization`
   * :doc:`/book/security`
+  * :doc:`/book/emails`
   * :doc:`/book/navigation`
 
 * :doc:`/book/customization`

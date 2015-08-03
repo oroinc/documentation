@@ -180,14 +180,14 @@ sections:
 
 - Magento Shopping Carts grid: the grid of Magento shopping carts included in the campaign.
   
-  - "SUBSCRIBED" column of the grid : Initially all the users in the list are subscribed (the column value is "Yes"). 
+  - *"SUBSCRIBED"* column of the grid : Initially all the users in the list are subscribed (the column value is "Yes"). 
     If during one of the mailing campaigns a user has unsubscribed, the value is changed to "No" and 
     the user is excluded from the next campaigns.
 
 - Removed Items: the grid contains carts that have been removed from the list (a cart may be removed from OroCRM 
   and\or from MailChimp (requires synchronization).
 
-  Action icons in the last column of the grid enable the following actions:
+- Action icons in the last column of the grid enable the following actions:
 
   - Get to the *"View"* page of the grid item: |IcView|
 
@@ -195,7 +195,7 @@ sections:
  
   - Remove the item from the list: |IcRemove|
 
-  Action icons in the last column of the *"Removed Items"* grid enable the following actions:
+- Action icons in the last column of the *"Removed Items"* grid enable the following actions:
 
   - Get to the *"View"* page of the grid item: |IcView|
 
