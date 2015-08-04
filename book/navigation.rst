@@ -47,12 +47,12 @@ The example above defines three menu items:
 * The ``blog`` item consists of a label and the URI ``#``. This means that the item will not react
   on mouse clicks, but can be used as a placeholder for nested menus.
 
-* Both the ``blog_categories`` and the ``blog_index`` items each reference a an existing route.
-  Thus, when the user later clicks on of these items, they will enter a page that is rendered by
-  the controller that is responsible for the configured route.
+* Both the ``blog_categories`` and the ``blog_index`` items reference an existing route. Thus, when
+  the user later clicks one of these items, they will get to a page that is rendered by the
+  controller that is responsible for the configured route.
 
 As you can see, the menu item labels will be translated by default. Hence you can use arbitrary
-labels here as long as they can be translated by configured ``translator`` service. You can change
+labels here, as long as they can be translated by configured ``translator`` service. You can change
 the translation domain using the ``translateDomain`` option (by default, the translator's default
 domain will be used).
 
