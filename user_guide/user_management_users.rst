@@ -108,10 +108,27 @@ From the grid you can:
 User View Page
 ^^^^^^^^^^^^^^
 
-View page of a user record contains the following three sections:
+View page of a user record contains the following sections:
 
       |
+
+Action Buttons
+""""""""""""""
+
+With the :ref:`action buttons <user-guide-ui-components-view-page-actions>` on the View page you can:
   
+- Perform the actions available enable for the user entity in the 
+  :ref:`Communication &  Collaboration settings <user-guide-entity-management-create-commun-collab>` (e.g. Assign Tasks,
+  Send Emails etc.)
+  
+- Reset Password: New password will be automatically generated for the user. The user will be notified on the change by 
+  email.
+
+- Change Password: Create new password (administrator will know this new password). The user will be notified on the 
+  change by email.
+
+.. image:: ./img/user_management/reset_password.png
+
 General Information
 """""""""""""""""""
 The section contains basic details of the user, namely:
