@@ -47,10 +47,7 @@ First, you have to go to your default controller, create your action and specify
 
 .. seealso::
 
-    You can read more about both the ``@Route`` and the ``@Template`` annotation in the
-    `SensioFrameworkExtraBundle documentation`_.
-
-    .. _`SensioFrameworkExtraBundle documentation`: http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
+    You can read more about both the ``@Route`` and the ``@Template`` annotation in the `SensioFrameworkExtraBundle documentation`_.
 
 Next, you should create a template for your action with the following content:
 
@@ -183,3 +180,4 @@ References
 
 .. _Symfony Best Practices for Structuring Bundles: http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html
 .. _OroPlatform NavigationBundle README.md: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/NavigationBundle/README.md
+.. _`SensioFrameworkExtraBundle documentation`: http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
