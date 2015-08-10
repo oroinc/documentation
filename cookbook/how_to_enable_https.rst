@@ -13,8 +13,8 @@ There are two ways to enable HTTPS:
 Configuring routes
 ------------------
 
-If you want secure some routes and make sure that they are always accessed via HTTPS protocol,
-you can add ``schemes`` parameter to the ``app/config/routing.yml`` file.
+If you want to secure some routes and make sure that they are always accessed via the HTTPS protocol,
+you can add the ``schemes`` parameter to the ``app/config/routing.yml`` file.
 
 .. code-block:: yaml
     :linenos:

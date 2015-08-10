@@ -36,7 +36,7 @@ Our goal is to set :contactId parameter with the value from the request.
 Solution 1: Grid Parameter binding
 ----------------------------------
 
-The easiest way that should be sufficient for most situations is to use parameter binding option in of the datasource
+The easiest way that should be sufficient for most situations is to use the parameter binding option of the datasource
 to configure mapping between datagrid and query parameters.
 
 You can do this by adding the ``bind_parameters`` option to your ``datagrid.yml`` using the following syntax:
@@ -44,22 +44,22 @@ You can do this by adding the ``bind_parameters`` option to your ``datagrid.yml`
 .. code-block:: yaml
     :linenos:
 
-        # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
-        datagrid:
+    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
+    datagrid:
+        # ...
+        acme-tasks-grid:
             # ...
-            acme-tasks-grid:
-                # ...
-                source:
-                    query:
-                        where:
-                            and:
-                            - task.relatedContact = :contactId
-                    bind_parameters:
-                        # Get the "contactId" parameter from the datagrid
-                        # and set its value to the "contactId" parameter in the datasource query
-                        - contactId
-                # ...
+            source:
+                query:
+                    where:
+                        and:
+                        - task.relatedContact = :contactId
+                bind_parameters:
+                    # Get the "contactId" parameter from the datagrid
+                    # and set its value to the "contactId" parameter in the datasource query
+                    - contactId
             # ...
+        # ...
 
 In case if names of the parameter in the grid and the query do not match you can pass associative array of parameters,
 where the key will be the name of the query parameter, and the value will match the name of the parameter in the grid:
@@ -67,22 +67,22 @@ where the key will be the name of the query parameter, and the value will match 
 .. code-block:: yaml
     :linenos:
 
-        # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
-        datagrid:
+    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
+    datagrid:
+        # ...
+        acme-tasks-grid:
             # ...
-            acme-tasks-grid:
-                # ...
-                source:
-                    query:
-                        where:
-                            and:
-                            - task.relatedContact = :contactId
-                    bind_parameters:
-                        # Get the "relatedContactId" parameter from the datagrid
-                        # and set its value to the "contactId" parameter in the datasource query
-                        contactId: relatedContactId
-                # ...
+            source:
+                query:
+                    where:
+                        and:
+                        - task.relatedContact = :contactId
+                bind_parameters:
+                    # Get the "relatedContactId" parameter from the datagrid
+                    # and set its value to the "contactId" parameter in the datasource query
+                    contactId: relatedContactId
             # ...
+        # ...
 
 
 .. caution::
@@ -96,44 +96,44 @@ The controller receives a contact entity and passes it to the view:
 .. code-block:: php
     :linenos:
 
-        <?php
-            // src/Acme/Bundle/TaskBundle/Controller/TaskController.php
-            namespace Acme\Bundle\TaskBundle\Controller;
+    <?php
+        // src/Acme/Bundle/TaskBundle/Controller/TaskController.php
+        namespace Acme\Bundle\TaskBundle\Controller;
 
-            use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-            use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+        use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-            use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+        use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-            use OroCRM\Bundle\ContactBundle\Entity\Contact;
+        use OroCRM\Bundle\ContactBundle\Entity\Contact;
 
-            class TaskController extends Controller
+        class TaskController extends Controller
+        {
+            // ...
+
+            /**
+             * @Route("/contact/{id}/tasks", name="acme_task_contact_tasks", requirements={"id"="\d+"})
+             * @Template
+             */
+            public function contactTasksAction(Contact $contact)
             {
-                // ...
-
-                /**
-                 * @Route("/contact/{id}/tasks", name="acme_task_contact_tasks", requirements={"id"="\d+"})
-                 * @Template
-                 */
-                public function contactTasksAction(Contact $contact)
-                {
-                    return array('contact' => $contact);
-                }
-
-                // ...
+                return array('contact' => $contact);
             }
+
+            // ...
+        }
 
     The view passes the "relatedContactId" parameter to the grid:
 
 .. code-block:: html+jinja
     :linenos:
 
-        {# src/Acme/Bundle/TaskBundle/Resources/views/Task/contactTasks.html.twig #}
-        {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
+    {# src/Acme/Bundle/TaskBundle/Resources/views/Task/contactTasks.html.twig #}
+    {% import 'OroDataGridBundle::macros.html.twig' as dataGrid %}
 
-        <div class="widget-content">
-            {{ dataGrid.renderGrid('acme-tasks-grid', {relatedContactId: contact.id}) }}
-        </div>
+    <div class="widget-content">
+        {{ dataGrid.renderGrid('acme-tasks-grid', {relatedContactId: contact.id}) }}
+    </div>
 
 Solution 2. Create custom event listener
 ----------------------------------------
@@ -194,7 +194,8 @@ Register this listener in the container:
             tags:
                 - { name: kernel.event_listener, event: oro_datagrid.datagrid.build.after.acme-tasks-grid, method: onBuildAfter }
 
-Remember that you still need to pass the "relatedContactId" parameter to the grid to the grid from a Twig template
+Remember that you still need to pass the ``relatedContactId`` parameter to the grid to the grid from a Twig template
+Remember that you still need to pass the ``relatedContactId`` parameter to the grid to the grid from a Twig template
 (see example in the previous solution).
 
 References

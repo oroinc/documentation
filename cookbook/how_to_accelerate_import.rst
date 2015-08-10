@@ -99,7 +99,7 @@ Here is a small example of its usage:
 Perform Import in the prod Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The default environment for CLI is dev, In dev environment the application stores lots of data generally not required for real-life usage.
+The default environment for CLI is dev. In dev environment the application stores lots of data generally not required for real-life usage.
 Therefore, it is recommended to run import in prod environment so it would finish much faster. To do so you should add
 the ``--env=prod`` option to your import command:
 
@@ -113,7 +113,7 @@ Skip Import File Validation
 
 During regular import operation, the validation process is performed twice: first, during the validation itself and then
 before saving imported entities (invalid entities will not be saved to the DB). Initial validation can be skipped and
-import can be performed without it. To do so, start import command in no interaction mode with the ``--no-interaction`` option:
+import can be performed without it. To do so, start the import command in no interaction mode with the ``--no-interaction`` option:
 
 .. code-block:: bash
 
@@ -170,7 +170,7 @@ it will disable all optional listeners. Here is an example:
 Write Custom Import Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The OroPlatform provides ``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy``
+The OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
 to be used as the default one. This strategy automatically handles field types, relations etc.
 However, all this functionality significantly slows down the import process and might perform
 operations and requests that are not required for some specific cases.
