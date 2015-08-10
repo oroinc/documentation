@@ -15,7 +15,7 @@ To create a dashboard:
 - Go to the Dashboards section (in the Desktop UI it is signed with the icon |IcDashboard|) and select *"Manage 
   Dashboards"*.
   
-- Click the :guilabel:`Create Segment` button in the top right corner of the grid.
+- Click the :guilabel:`Create Dashboard` button in the top right corner of the grid.
 
 - The *"Create Dashboard"* form will emerge.
 
