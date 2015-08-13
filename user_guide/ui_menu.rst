@@ -74,7 +74,7 @@ see corresponding pages or grids, as described below:
   - All the :ref:`Cases <user-guide-activities-cases>` created in the system 
   
   - All the :ref:`Calendar Events <user-guide-activities-events>`, assigned to the user or to other calendars 
-    defined as :ref:`visible in the in the user's calendar <user-guide-calendar-add-another-user>`
+    defined as :ref:`visible in the user's calendar <user-guide-calendar-add-another-user>`
 
        |
 
