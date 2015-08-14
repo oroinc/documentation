@@ -3,9 +3,9 @@
 Channels
 ========
 
-Collection of comprehensive customer-related data is a corners-tone of customer relations management.
+Collection of comprehensive customer-related data is a cornerstone of customer relations management.
 
-To represent different sources of customer-related data, OroCRM uses a records of the Channel entity ("channels").
+To represent different sources of customer-related data, OroCRM uses records of the Channel entity ("channels").
 
 For example, any store, on-line site, social activity, etc. may be represented with its own channel.  
 

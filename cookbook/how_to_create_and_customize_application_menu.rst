@@ -72,6 +72,7 @@ with the following content:
         type:         annotation
         prefix:       /acme
 
+.. _create-and-fill-navigation-yml:
 
 Create navigation configuration
 -------------------------------
