@@ -1,5 +1,5 @@
 .. index::
-    :single: E-Mails
+    single: E-Mails
 
 Working with E-Mails
 ====================
