@@ -1,5 +1,5 @@
 .. index::
-    :single: Configuration
+    single: Configuration
 
 Configuration
 =============
