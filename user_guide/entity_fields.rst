@@ -240,7 +240,7 @@ File
 ****  
 
 .. image:: ./img/entity_management/new_entity_field_file.png
-   :scale: 50%
+   :align: middle
 
 - The file fields can be only of the *column table* storage type.
 
