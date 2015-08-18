@@ -139,4 +139,3 @@ To add an attachment to the email, use the *"From Record"* and *"Upload"* links 
 
 .. |email_context_view| image:: ./img/activities/email_context.png
    :align: middle
-   :scale: 50%
