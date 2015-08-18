@@ -148,4 +148,4 @@ In order to start and email campaign, go to the View page of the Email Campaign 
    :align: middle
    
 .. |email_campaign_schedule| image:: ./img/marketing/email_campaign_schedule.png
-   :scale: 40%
+   :align: middle
