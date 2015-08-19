@@ -9,6 +9,7 @@ and technical details.
   * :doc:`/book/introduction`
   * :doc:`/book/installation`
   * :doc:`/book/differences`
+  * :doc:`/book/entities`
   * :doc:`/book/configuration`
   * :doc:`/book/localization`
   * :doc:`/book/security`
