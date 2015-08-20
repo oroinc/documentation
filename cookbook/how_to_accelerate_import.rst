@@ -9,11 +9,11 @@ How to Accelerate Import
 This article contains several recommendation about import process acceleration.
 
 
-Make Sure xdebug is Disabled
+Make Sure Xdebug is Disabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-xDebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
-operations. xDebug status can be checked with ``php -m`` command:
+Xdebug is a very useful debug tool for PHP, but at the same time it adds lots of overhead, especially for heavy and long
+operations. Xdebug status can be checked with ``php -m`` command:
 
 .. code-block:: bash
 
@@ -24,16 +24,16 @@ operations. xDebug status can be checked with ``php -m`` command:
     # xdebug is disabled (no result)
     $ php -m | grep xdebug
 
-To disable it, a developer has to remove or comment inclusion of xDebug library (usually this should be done in
+To disable it, a developer has to remove or comment inclusion of Xdebug library (usually this should be done in
 php.ini).
 
 
 Run import Operation from the Command Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Import from UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities, a command line is your best choice. OroPlatform provides a CLI command "oro:import:csv"
-that allows import from specified CSV file.
+Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
+or millions of entities the command line is your best choice. The OroPlatform provides the CLI command ``oro:import:csv``
+that allows to import records from the specified CSV file.
 
 .. code-block:: bash
 
@@ -54,16 +54,23 @@ Here is a small example of its usage:
 
     $ php app/console oro:import:csv ~/Contact_2000.csv
     Choose Processor:
-      [0] orocrm_contact.add_or_replace
-      [1] orocrm_contact.add
-      [2] orocrm_account.add_or_replace
-      [3] oro_tracking.processor.data
-      [4] orocrm_sales_lead.add_or_replace
-      [5] orocrm_sales_opportunity.add_or_replace
-      [6] orocrm_magento.add_or_update_customer
-      [7] orocrm_magento.add_or_update_region
-      [8] orocrm_magento.add_or_update_cart
-      [9] orocrm_magento.add_or_update_order
+      [0 ] orocrm_contact.add_or_replace
+      [1 ] orocrm_contact.add
+      [2 ] orocrm_account.add_or_replace
+      [3 ] oro_tracking.processor.data
+      [4 ] orocrm_sales_lead.add_or_replace
+      [5 ] orocrm_sales_opportunity.add_or_replace
+      [6 ] orocrm_sales_b2bcustomer
+      [7 ] orocrm_magento.add_or_update_newsletter_subscriber
+      [8 ] orocrm_magento.add_or_update_customer
+      [9 ] orocrm_magento.import_guest_customer
+      [10] orocrm_magento.add_or_update_customer_address
+      [11] orocrm_magento.add_or_update_region
+      [12] orocrm_magento.add_or_update_cart
+      [13] orocrm_magento.add_or_update_order
+      [14] orocrm_magento.store
+      [15] orocrm_magento.website
+      [16] orocrm_magento.customer_group
     > 1
     Choose Validation Processor:
       [0] orocrm_contact.add_or_replace
@@ -71,6 +78,7 @@ Here is a small example of its usage:
       [2] orocrm_account.add_or_replace
       [3] orocrm_sales_lead.add_or_replace
       [4] orocrm_sales_opportunity.add_or_replace
+      [5] orocrm_sales_b2bcustomer
     > 1
     +---------------+-------+
     | Results       | Count |
@@ -91,8 +99,9 @@ Here is a small example of its usage:
 Perform Import in the prod Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Default environment for CLI is dev, so application stores lots of data generally not required for real-life usage. Thus,
-import in prod environment can be performed better and faster with ``--env=prod`` option added.
+The default environment for CLI is dev. In dev environment the application stores lots of data generally not required for real-life usage.
+Therefore, it is recommended to run import in prod environment so it would finish much faster. To do so you should add
+the ``--env=prod`` option to your import command:
 
 .. code-block:: bash
 
@@ -102,10 +111,9 @@ import in prod environment can be performed better and faster with ``--env=prod`
 Skip Import File Validation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-During regular import operation, validation process is performed twice: first, during the validation itself and then
+During regular import operation, the validation process is performed twice: first, during the validation itself and then
 before saving imported entities (invalid entities will not be saved to the DB). Initial validation can be skipped and
-import can be performed without it. To do so, start import command in no interaction mode with option
-``--no-interaction``:
+import can be performed without it. To do so, start the import command in no interaction mode with the ``--no-interaction`` option:
 
 .. code-block:: bash
 
@@ -132,8 +140,8 @@ import can be performed without it. To do so, start import command in no interac
 Disable Optional Listeners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-With OroPlatform you can disable some event listeners for the command execution. Command
-``oro:platform:optional-listeners`` shows the list of all such listeners:
+With the OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
+command shows the list of all such listeners:
 
 .. code-block:: bash
 
@@ -143,9 +151,8 @@ With OroPlatform you can disable some event listeners for the command execution.
       > oro_notification.docrine.event.listener
       > oro_search.index_listener
       > oro_workflow.listener.process_collector
-      > orocrm_magento.listener.customer_listener
 
-To disable these listeners, multiple option ``--disabled-listeners`` can be used. Also option can receive value "all" -
+To disable these listeners the ``--disabled-listeners`` option can be used. Also this option can receive value "all" -
 it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
@@ -155,18 +162,18 @@ it will disable all optional listeners. Here is an example:
 .. caution::
 
     Remember that disabling listeners actually disables a part of backend functionality, so before using it
-    make sure the part is not required. E.g. if listener ``oro_search.index_listener`` is disabled then
-    imported entities will not be found by search (however, this may be worked around with manual search reindexation
-    using ``oro:search:reindex`` command).
+    make sure this part is not required. E.g. if the ``oro_search.index_listener`` listener is disabled then
+    imported entities will not be found by the search engine (however, this may be fixed by manual search reindex
+    using the ``oro:search:reindex`` command).
 
 
 Write Custom Import Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-OroPlatform provides a default configurable strategy
-``Oro\Bundle\ImportExportBundle\Strategy\Import\ConfigurableAddOrReplaceStrategy`` that automatically handles
-field types, relations etc. However, all this functionality really slows down import process and might perform
-operations and requests meaningless for some specific cases.
+The OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
+to be used as the default one. This strategy automatically handles field types, relations etc.
+However, all this functionality significantly slows down the import process and might perform
+operations and requests that are not required for some specific cases.
 
 To solve this issue, a developer can implement a custom strategy to perform required actions only.
 The following example shows services that should be created to add a new import strategy:
@@ -183,13 +190,8 @@ The following example shows services that should be created to add a new import 
     orocrm_contact.importexport.processor.import.add:
         parent: oro_importexport.processor.import_abstract
         calls:
-            - [setStrategy, ["@orocrm_contact.importexport.strategy.contact.add"]]
+            - [setStrategy, [@orocrm_contact.importexport.strategy.contact.add]]
         tags:
-            - name: oro_importexport.processor
-              type: import
-              entity: "%orocrm_contact.entity.class%"
-              alias: orocrm_contact.add
-            - name: oro_importexport.processor
-              type: import_validation
-              entity: "%orocrm_contact.entity.class%"
-              alias: orocrm_contact.add
+            - { name: oro_importexport.processor, type: import, entity: "%orocrm_contact.entity.class%", alias: orocrm_contact.add }
+            - { name: oro_importexport.processor, type: import_validation, entity: "%orocrm_contact.entity.class%", alias: orocrm_contact.add }
+

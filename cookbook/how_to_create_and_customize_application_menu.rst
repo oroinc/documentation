@@ -7,12 +7,12 @@
 How to create and customize application menu
 ============================================
 
-*Used application: OroCRM RC2*
+*Used application: OroCRM 1.7*
 
-In Oro Platform you can create your totally personalized menu or use a simple technique to add or override section in default menu.
-This tutorial describes how to override section in default menu.
+In Oro Platform you can create your fully personalized menu or use a simple technique to add or override a section in the default menu.
+This tutorial describes how to override a section in the default menu.
 
-Let's assume that you already have a bundle with namespace "Acme\\Bundle\\NewBundle" in the /src directory
+Let's assume that you already have a bundle with the namespace ``Acme\Bundle\NewBundle`` in the ``/src`` directory
 with annotation configuration format `generated or created manually`_.
 
 .. _generated or created manually: ./how_to_create_new_bundle.rst
@@ -21,14 +21,12 @@ with annotation configuration format `generated or created manually`_.
 Create your route with annotation
 ---------------------------------
 
-First you have to go to your default controller, create your action and specify annotation route
-(relative file path is src/Acme/Bundle/NewBundle/Controller/DefaultController.php):
+First, you have to go to your default controller, create your action and specify the ``@Route`` and ``@Template`` annotations:
 
 .. code-block:: php
     :linenos:
 
-    <?php
-
+    // src/Acme/Bundle/NewBundle/Controller/DefaultController.php
     namespace Acme\Bundle\NewBundle\Controller;
 
     use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -43,42 +41,48 @@ First you have to go to your default controller, create your action and specify 
          */
         public function indexAction()
         {
-            return array('name' => "hello link");
+            return array('name' => "John Doe");
         }
     }
 
+.. seealso::
 
-Next you should specify action template (file path is src/Acme/Bundle/NewBundle/Resources/views/Default/index.html.twig)
-with the following content:
+    You can read more about both the ``@Route`` and the ``@Template`` annotation in the `SensioFrameworkExtraBundle documentation`_.
+
+Next, you should create a template for your action with the following content:
 
 .. code-block:: html+jinja
     :linenos:
 
+    {# src/Acme/Bundle/NewBundle/Resources/views/Default/index.html.twig #}
     {% extends "OroUIBundle:Default:index.html.twig" %}
     {% block content %}
-    {{ name }}!
+         <h1>Hello, {{ name }}!</h1>
     {% endblock content %}
 
-And the latest thing - you should register your bundle routes. To do that you have to create file routing.yml
-in src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml with the following content:
+And finally, you should register your bundle routes. To do that you have to create a ``routing.yml`` file
+with the following content:
 
 .. code-block:: yaml
     :linenos:
 
+    # src/Acme/Bundle/NewBundle/Resources/config/oro/routing.yml
     acme_new_bundle:
         resource:     "@AcmeNewBundle/Controller"
         type:         annotation
-        prefix:       /user
+        prefix:       /acme
 
+.. _create-and-fill-navigation-yml:
 
-Create and fill navigation.yml
+Create navigation configuration
 -------------------------------
 
-Now we need to create navigation.yml file in src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the following content:
+Now we need to create a ``navigation.yml`` file with the following content:
 
 .. code-block:: yaml
     :linenos:
 
+    # src/Acme/Bundle/NewBundle/Resources/config/navigation.yml
     oro_menu_config:
         items:
             acme_tab:
@@ -89,9 +93,6 @@ Now we need to create navigation.yml file in src/Acme/Bundle/NewBundle/Resources
             acme_tab_link:
                 label: Acme link label
                 route: acme_link
-                extras:
-                    routes: ['/^acme_link/']
-                    description: My description
         tree:
             application_menu:
                 children:
@@ -116,13 +117,13 @@ Then you have to reload navigation data and clear cache:
 
 .. note::
 
-    You can use php app/console cache:clear with parameters --env=prod or --env=dev.
+    You can use ``php app/console cache:clear`` command with parameters ``--env=prod`` or ``--env=dev``.
 
-Here item and child related to default Oro Platform menu:
+Here you can see your new menu items in the default Oro Platform menu:
 
 .. image:: ./img/how_to_create_and_customize_application_menu/add_item_to_default_nav.png
 
-And here the page result after click:
+And here is the page you'll see after a click on the menu item:
 
 .. image:: ./img/how_to_create_and_customize_application_menu/add_item_page_result_click.png
 
@@ -131,26 +132,18 @@ And here the page result after click:
 Override existing section
 -------------------------
 
-To override some section in menu you have to create the navigation.yml file in
-/src/Acme/Bundle/NewBundle/Resources/config/navigation.yml with the following content
-(it will add a link with name "Acme link1 label" in sales section):
+To override some section in the main menu you have to create the ``navigation.yml`` file with the following content
+(it will add an "Acme link label" link to the sales section):
 
 .. code-block:: yaml
     :linenos:
 
+    # src/Acme/Bundle/NewBundle/Resources/config/navigation.yml
     oro_menu_config:
         items:
-            sales_tab:
-                label: Sales
-                uri:   '#'
-                extras:
-                    position: 100
-            acme_tab_link1:
+            acme_tab_link:
                 label: Acme link label
                 route: acme_link
-                extras:
-                    routes: ['/^acme_link/']
-                    description: My description
         tree:
             application_menu:
                 children:
@@ -160,7 +153,7 @@ To override some section in menu you have to create the navigation.yml file in
                             acme_tab_link: ~
 
     oro_titles:
-        acme_link: oro dev
+        acme_link: My link page title
 
 
 And reload navigation data and clear cache:
@@ -175,7 +168,7 @@ And reload navigation data and clear cache:
     Clearing the cache for the dev environment with debug true
 
 
-Here you can find the new item Acme link1 label in  Sales section:
+Here you can see the new menu item "Acme link label" in the Sales section:
 
 .. image:: ./img/how_to_create_and_customize_application_menu/ov_item_in_default_nav.png
 
@@ -188,3 +181,4 @@ References
 
 .. _Symfony Best Practices for Structuring Bundles: http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html
 .. _OroPlatform NavigationBundle README.md: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/NavigationBundle/README.md
+.. _`SensioFrameworkExtraBundle documentation`: http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
