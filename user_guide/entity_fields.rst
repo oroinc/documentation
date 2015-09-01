@@ -240,7 +240,7 @@ File
 ****  
 
 .. image:: ./img/entity_management/new_entity_field_file.png
-   :align: middle
+
 
 - The file fields can be only of the *column table* storage type.
 
@@ -271,7 +271,6 @@ Image
   - **Thumbnail Height***: defines the thumbnail height in pixels.
 
 .. image:: ./img/entity_management/new_entity_field_image.png
-   :align: middle
 
 - The image fields cannot be defined as an identity field for 
   :ref:`export/import <user-guide-entity-management-export-import-common>`.
@@ -293,7 +292,6 @@ correspondingly). For example, "grade the level of service from 1 to 5" or "choo
 - If you have chosen a "select" or "multi-select" option in the "Type" field, additional property "Options".
 
 .. image:: ./img/entity_management/new_entity_field_select.png
-   :align: middle
 
 - Click the :guilabel:`+Add` button to add an option. (For example, numbers from 1 to 5 for the service level assessment
   or different time-periods, etc.).
@@ -390,7 +388,6 @@ For the sake of example, our "Friends" field has the following values:
 - **Related Entity Detailed**: all the fields available.
 
 .. image:: ./img/entity_management/new_entity_field_to_many_def.png
-   :align: middle
 
 Let's create a B2B Customer:
 
@@ -411,7 +408,6 @@ for the *Related Entity Info Title* and *Related Entity Data Fields* are display
       |
   
 .. image:: ./img/entity_management/new_entity_field_to_many_02.png
-   :align: middle
 
 |
    
@@ -421,7 +417,6 @@ Detailed* appears.
       |
 
 .. image:: ./img/entity_management/new_entity_field_to_many_03.png
-   :align: middle
 
 |
    
@@ -429,7 +424,6 @@ The *Related Entity Info Title* properties are also used to represent the  relat
 section").
 
 .. image:: ./img/entity_management/new_entity_field_to_many_04.png
-   :align: middle
 
    
 Many to One Relations
