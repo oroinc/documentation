@@ -79,7 +79,7 @@ that will appear along to its name in the Marketplace and on the extension page.
 in JPEG, PNG, or GIF formats, up to 1MB in size.
 
 **Marketplace and Category selection** – each extension must belong to at least one marketplace
-(e.g. OroCRM or Oro Platform), and belong to at least one category. If you do not see a proper category
+(e.g. OroCRM or OroPlatform), and belong to at least one category. If you do not see a proper category
 to put your extension in, you can request for creation of a new one in the form on the right.
 
 **Description, Release Notes, and Previous Versions** – These fields are optional and are supposed

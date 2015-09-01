@@ -1,7 +1,7 @@
 Using Entities
 ==============
 
-The Oro Platform makes it easy to manage your entities:
+OroPlatform makes it easy to manage your entities:
 
 #. :ref:`Use Doctrine to create your own entities. <book-entities-doctrine>`
 #. :ref:`Configure how your entities will be presented and control access. <book-entities-entity-configuration>`
@@ -157,7 +157,7 @@ Entity Configuration
 
 So far, Doctrine offers a wide range of functionality to map your entities to the database, to
 save your data and to retrieve them from the database. However, in an application based on the Oro
-Platform, you usually want to control how entities are presented to the user. The Oro Platform
+Platform, you usually want to control how entities are presented to the user. OroPlatform
 includes the `EntityConfigBundle`_ that makes it easy to configure additional metadata of your
 entities as well as the fields of your entities. For example, you can now configure icons and
 labels used when showing an entity in the UI or you can set up access levels to control how
@@ -339,7 +339,7 @@ the system apply entity config options to them:
 
 .. tip::
 
-    The bundles from the Oro Platform offer a large set of predefined options that you can use in
+    The bundles from OroPlatform offer a large set of predefined options that you can use in
     your entities to configure them and control their behavior. Take a look at the
     ``entity_config.yml`` files that can be found in many bundles and read their dedicated
     documentation.
@@ -537,7 +537,7 @@ Managing Entity Relations
 -------------------------
 
 Adding relations between entities is a common task. For example, imagine that the owner of an
-``Email`` entity can either be a user or a contact. Using the Oro Platform, you have two
+``Email`` entity can either be a user or a contact. Using OroPlatform, you have two
 opportunities to manage relations between the email and its owner:
 
 :ref:`Use Doctrine's built-in functions <book-entities-doctrine-relations>` to add two relations

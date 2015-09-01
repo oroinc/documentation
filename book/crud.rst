@@ -148,7 +148,7 @@ global application routing configuration.
 The Datagrid
 ------------
 
-Relying on the features provided by the Oro Platform, the controller for listing the stored objects
+Relying on the features provided by OroPlatform, the controller for listing the stored objects
 becomes really slim. It basically just needs to return the type of object being displayed in the
 grid:
 
@@ -217,7 +217,7 @@ Now you have to create the template for this action:
     {% endblock %}
 
 As you can see, the template extends the `OroUIBundle:actions:index.html.twig`_ template from the
-Oro Platform and uses a `macro from the UI bundle`_ to add a button for creating new vehicles.
+OroPlatform and uses a `macro from the UI bundle`_ to add a button for creating new vehicles.
 
 But how does the UI bundle know which properties should be displayed in which order? The answer to
 this is the ``gridName`` variable (set to ``vehicles-grid`` above). This variable refers to the

@@ -5,7 +5,7 @@ Customizing the Platform Application
 ====================================
 
 Symfony offers easy-to-use options for overriding parts of third party
-bundles in an application. Since the Oro Platform Application consists of
+bundles in an application. Since the OroPlatform Application consists of
 several well-structured bundles, you can customize almost every part of it
 as easily as you could in any other Symfony application.
 
@@ -47,7 +47,7 @@ the extended bundle:
 Overriding Templates
 --------------------
 
-There are two options for overriding the Oro Platform templates:
+There are two options for overriding the OroPlatform templates:
 
 #) Overriding one of the platform templates is as easy as adding a template
    at the same path under ``app/Resources/`` as the template being overriden.
@@ -139,7 +139,7 @@ Translations are grouped by message domains. Thus, you can overwrite any
 translation as long as it is in the same message domain. When there are more
 than one translation, the order in which they are loaded is crucial. Therefore,
 make sure that your bundle containing the overriding translation
-files is loaded after the Oro Platform bundles in ``AppKernel``. To change
+files is loaded after the OroPlatform bundles in ``AppKernel``. To change
 order in which bundles are loaded, you can use the priority option in the bundle configuration.
 
 .. tip::
@@ -150,7 +150,7 @@ order in which bundles are loaded, you can use the priority option in the bundle
 Crowdin Translations
 ~~~~~~~~~~~~~~~~~~~~
 
-The Oro Platform supports using translations from `Crowdin`_. You can then
+OroPlatform supports using translations from `Crowdin`_. You can then
 use the ``oro:translation:pack`` command with your authentication data to
 download and apply a translation pack:
 
@@ -172,7 +172,7 @@ download and apply a translation pack:
 Replacing a Service
 -------------------
 
-You can replace any service defined by one of the Oro Platform bundles with
+You can replace any service defined by one of the OroPlatform bundles with
 your own implementation. All you have to do is fill the class parameter
 name for the service you want to replace with the name of your new service
 class. All parameters used to set the services' class names are in the form of
@@ -197,7 +197,7 @@ service):
 Replacing Forms
 ---------------
 
-Most forms from the Oro Platform bundles are registered as services. Hence,
+Most forms from the OroPlatform bundles are registered as services. Hence,
 they can be replaced :ref:`like any other service <replace-services>`.
 
 .. index::
@@ -218,7 +218,7 @@ You can learn more about where and how you are able to use custom validation con
 Overriding a Controller
 -----------------------
 
-To override a controller of the Oro Platform bundle with your own implementation,
+To override a controller of the OroPlatform bundle with your own implementation,
 you must first extend that bundle (read :doc:`/cookbook/how_to_extend_existing_bundle`
 for more information). Then, create a controller class with the same name
 as the parent bundle:
@@ -250,15 +250,15 @@ as the parent bundle:
 Customizing the Database Schema
 -------------------------------
 
-The Oro Platform supports two types of entities: regular entities that are
-mapped via Doctrine metadata and Oro Platform specific entities that exist
+OroPlatform supports two types of entities: regular entities that are
+mapped via Doctrine metadata and OroPlatform specific entities that exist
 in the database and which are then generated into the application's cache
 directory.
 
-Oro Platform Entities
+OroPlatform Entities
 ~~~~~~~~~~~~~~~~~~~~~
 
-The Oro Platform Application ships with a set of predefined entities. Their
+The OroPlatform Application ships with a set of predefined entities. Their
 basic configuration is stored in the ``oro_entity_config`` table. Its structure
 looks essentially like this:
 
@@ -536,7 +536,7 @@ the ``oro:migration:load`` command.
 Business Logic
 --------------
 
-Since Oro Platform entites are only created inside the application's cache
+Since OroPlatform entities are only created inside the application's cache
 directory, you cannot add your business logic to these entity classes. To
 overcome this drawback, you can create a service that does all the necessary
 actions required by your business.
@@ -626,7 +626,7 @@ Learn more
 ----------
 
 You can learn more about customizing a Symfony application in general from
-the Symfony documentation as well as customizing the Oro Platform Application:
+the Symfony documentation as well as customizing the OroPlatform Application:
 
 * `How to Override any Part of a Bundle`_
 * `How to Use Bundle Inheritance to Override Parts of a Bundle`_

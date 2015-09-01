@@ -10,7 +10,7 @@ Overview
 Functional tests check the integration of the different layers of an application.
 
 In this article you will learn how you can improve the experience of writing
-functional tests with the Oro Platform. It is recommended to read the Symfony
+functional tests with OroPlatform. It is recommended to read the Symfony
 `documentation concerning testing`_ before you continue. You should also be
 familiar with `PHPUnit`_.
 
@@ -617,7 +617,7 @@ Here's an example of a fixture that adds a user without permissions:
 Testing Commands
 ~~~~~~~~~~~~~~~~
 
-When the Oro Platform is installed, you can test commands by using the
+When OroPlatform is installed, you can test commands by using the
 :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::runCommand`
 method from the ``WebTestCase`` class. This method executes a command with
 given parameters and returns its output as a string. For example, see

@@ -9,7 +9,7 @@ How to create and customize application menu
 
 *Used application: OroCRM 1.7*
 
-In Oro Platform you can create your fully personalized menu or use a simple technique to add or override a section in the default menu.
+In OroPlatform you can create your fully personalized menu or use a simple technique to add or override a section in the default menu.
 This tutorial describes how to override a section in the default menu.
 
 Let's assume that you already have a bundle with the namespace ``Acme\Bundle\NewBundle`` in the ``/src`` directory
@@ -119,7 +119,7 @@ Then you have to reload navigation data and clear cache:
 
     You can use ``php app/console cache:clear`` command with parameters ``--env=prod`` or ``--env=dev``.
 
-Here you can see your new menu items in the default Oro Platform menu:
+Here you can see your new menu items in the default OroPlatform menu:
 
 .. image:: ./img/how_to_create_and_customize_application_menu/add_item_to_default_nav.png
 

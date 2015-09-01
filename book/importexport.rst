@@ -2,7 +2,7 @@ Import/Export Entity Data
 =========================
 
 The `OroImportExportBundle`_ is intended to import entities into or export
-them out of the Oro Platform. The bundle uses the `OroBatchBundle`_ to organize
+them out of OroPlatform. The bundle uses the `OroBatchBundle`_ to organize
 the execution of import/export operations. Any import/export operation is
 a job.
 
@@ -209,9 +209,9 @@ during deserialization).
     The data converter checks for circular dependencies to avoid endless recursions
     here.
 
-.. sidebar:: Normalizers in the Oro Platform
+.. sidebar:: Normalizers in OroPlatform
 
-    The Oro Platform provides two normalizers for :phpclass:`DateTime` objects
+    OroPlatform provides two normalizers for :phpclass:`DateTime` objects
     and collections:
 
     * The :class:`Oro\\Bundle\\ImportExportBundle\\Serializer\\Normalizer\\DateTimeNormalizer`;
@@ -342,7 +342,7 @@ The new classes must be declared as services:
 Changing the Strategy
 ~~~~~~~~~~~~~~~~~~~~~
 
-The Oro Platform provides a basic "add or substitute" import strategy. The
+OroPlatform provides a basic "add or substitute" import strategy. The
 basic process is implemented in the ``ConfigurableAddOrReplaceStrategy`` class.
 To create your own import strategy you can extend this class and override
 the following methods:

@@ -188,7 +188,7 @@ to deal with retrieving the associated HTML element and that you don't have to p
 This is done for you by the ``ViewComponent``.
 
 However, you still need to tell the component to instantiate your ``Select2View``. For this purpose
-the Oro Platform is shipped with the ``ViewComponent`` that instantiates views for HTML elements.
+OroPlatform is shipped with the ``ViewComponent`` that instantiates views for HTML elements.
 To make use of the ``ViewComponent``, replace the value of ``data-page-component-module`` attribute
 with the ``oroui/js/app/components/view-component`` and use the ``view`` option to point to your new
 ``Select2View``:

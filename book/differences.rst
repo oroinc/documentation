@@ -2,11 +2,11 @@ Differences to Common Symfony Applications
 ==========================================
 
 When you are familiar with building Symfony applications from scratch, you will recognize many well
-known building blocks when you start your first project using the Oro Platform or OroCRM. However,
+known building blocks when you start your first project using OroPlatform or OroCRM. However,
 there are some not so subtle differences you need to understand to efficiently develop your
 application.
 
-This article will give you a short overview about the most important things the Oro Platform
+This article will give you a short overview about the most important things OroPlatform
 differs from usual Symfony applications. Each section will link to other resources where you can
 learn more about a particular feature.
 
@@ -15,7 +15,7 @@ The Application Kernel
 
 In Symfony applications, you usually register your own bundles as well as all the third-party
 bundles from the ``vendor`` directory in the famous ``AppKernel`` class. This is not needed when
-using the Oro Platform. It ships with it own kernel that discovers bundles under the ``src`` and
+using OroPlatform. It ships with it own kernel that discovers bundles under the ``src`` and
 the ``vendor`` directories automatically if the contain a ``bundles.yml`` configuration file in
 their ``Resources/config/oro`` directory.
 
@@ -47,7 +47,7 @@ be loaded. If you omit the priority, its value will implicitly be 0:
 
 .. tip::
 
-    The default priority for all Oro Platform bundles is 0. The OroCRM bundles have a priority of
+    The default priority for all OroPlatform bundles is 0. The OroCRM bundles have a priority of
     20.
 
 Routing Configuration
@@ -69,7 +69,7 @@ However, usually you would manually an import for your routing configuration in 
         resource: "@AcmeDemoBundle/Resources/config/routing.yml"
         prefix: /demo
 
-With the Oro Platform, you can still configure your routes the way you like. Though as long as you
+With OroPlatform, you can still configure your routes the way you like. Though as long as you
 create a main ``routing.yml`` file located in the bundle's ``Resources/config/oro`` directory, you
 do not have to register your routing config in the application config, but it will be discovered
 automatically.
@@ -78,7 +78,7 @@ Access Control Lists
 --------------------
 
 When it comes to `Access Control Lists`_ (ACLs), things are getting complicated. You need to deal
-with the ACL provider, object identities, ACEs, the mask builder, etc. The Oro Platform makes
+with the ACL provider, object identities, ACEs, the mask builder, etc. OroPlatform makes
 things easier by providing an `@Acl`_ annotation that you can use to define an ACL and to protect
 a controller in a single step:
 
@@ -133,7 +133,7 @@ Extension Management
 --------------------
 
 Using `Composer`_, you can easily pull in third-party libraries and bundles that you need in your
-application. This does not change when using the Oro Platform. But additionally to the common
+application. This does not change when using OroPlatform. But additionally to the common
 dependency management with Composer, you can also install a special type of package - an Oro
 Extension. An extension is a package that adds new features to the Platform. To achieve this, the
 `OroDistributionBundle`_ leverages Composer and `Packagist`_. All extensions are feature on the
