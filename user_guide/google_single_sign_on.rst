@@ -12,38 +12,36 @@ On the Google Side
 ------------------
 
 You need to create a project for OroCRM in the 
-`Google Developers Console <http://https://console.developers.google.com/start>`_:
+`Google Developers Console <https://console.developers.google.com/start>`_:
 
 - Go to the Google Developers Console.
-- Create a project in the *"Select a project"* drop-down menu.
+
   |
+
+- Create a project in the *"Select a project"* drop-down menu.
+ 
+ |
   
   |CreateProject|
 
   |
   
 - Define the Project name.
+
+  |
+  
 - Go to the *"APIs & auth"* menu.
 
   |
   
   |APImenu|
-  
-  |
-  
-- Go to the *"Consent screen"* section and define the project details that will be shown to users whenever you request 
-  access to their private data using your client ID.
 
-- Click the :guilabel:`Save` button.
-
-  |
-
-  |ConsentScreen|
-   
-  |
+  |  
   
 - Go to the *"Credentials"* section.
 
+  |
+  
 - Click the :guilabel:`Create new Client ID` button.
 
   |
@@ -79,8 +77,22 @@ You need to create a project for OroCRM in the
 - The Client ID has been generated
 
   |
+  |
   
 .. image:: ./img/google_integration/created_client_id.png
+  
+- Go to the *"OAuth Consent screen"* tab to define the project details that will be shown to users whenever 
+  access to their private data is requested with the defined client ID.*
+
+  |
+  
+- Click the :guilabel:`Save` button.
+
+  |
+
+  |ConsentScreen|
+   
+  |
 
 
 On the OroCRM Side
@@ -88,6 +100,8 @@ On the OroCRM Side
 
 - Go to *"System → Configuration → Integrations → Google Settings"*.
 
+  |
+  
 - Check the *"Enable"* box and define the following details:
 
 .. csv-table::
@@ -111,7 +125,9 @@ When a user gets to the login page of an instance for which single sign-on capab
 
 - If the user is not logged in to any Google accounts, after the link has been clicked, a usual Google log-in page will 
   appear.
-  
+
+  |
+    
 - After the user has logged in to the Google account, a request to use the account in order to log-in to OroCRM will 
   appear. (Details defined for the consent screen will be used).
 
