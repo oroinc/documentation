@@ -1,9 +1,9 @@
 Community Guide
 ===============
 
-**We appreciate your help and interest in contributing to the OroPlatform!**
+**We appreciate your help and interest in contributing to OroPlatform!**
 
-Find out more about how you can contribute to the Oro Platform.
+Find out more about how you can contribute to OroPlatform.
 
 .. toctree::
     :maxdepth: 2

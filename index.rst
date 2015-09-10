@@ -1,4 +1,4 @@
-The Oro Platform Documentation
+The OroPlatform Documentation
 ==============================
 
 The Book
@@ -38,7 +38,7 @@ End user oriented documentation that explains how to administer and configure pl
 
 Community Guide
 ---------------
-Learn about our development process and how you can contribute to the Oro Platform.
+Learn about our development process and how you can contribute to OroPlatform.
 
 .. toctree::
     :maxdepth: 1

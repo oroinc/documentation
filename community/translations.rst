@@ -1,7 +1,7 @@
 How to Translate the Oro Project
 ==================================
 
-The Oro Platform supports many internationalization functions including multiple languages and translations.
+OroPlatform supports many internationalization functions including multiple languages and translations.
 All translatable strings are defined in each bundle translation domain files and are available via the translation
 management service `CrowdIn`_. This service allows to easily collaborate on the translation process and to enable
 more supported languages.
@@ -27,7 +27,7 @@ Join the Translation Team
    2. Follow the link in the confirmation Email to activate you account.
 
 2. Click `OroCRM <http://translate.orocrm.com>`_ link to offer translations for OroCRM or
-   `Oro Platrom <http://translate.platform.orocrm.com>`_ to offer translations for Oro Platform.
+   `Oro Platrom <http://translate.platform.orocrm.com>`_ to offer translations for OroPlatform.
 
    The project page will appear.
 

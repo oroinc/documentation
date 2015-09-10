@@ -10,7 +10,7 @@ How to extend existing bundle
 Bundle Extension
 ----------------
 
-Oro Platform application uses `default Symfony functionality to extend bundle`_ (in terms of Symfony it is called
+The OroPlatform application uses `default Symfony functionality to extend bundle`_ (in terms of Symfony it is called
 inheritance). To do that you have to override method getParent in your bundle class.
 Let's assume that we are using demo bundle from `How to create new bundle`_
 article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php`` file should look like this:
@@ -37,7 +37,8 @@ article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php``
 
 .. caution::
     Due to the Symfony default behaviour the routing from the parent bundle will not be imported automatically.
-    So in case if you have any controllers defined in your child bundle you should copy routing definitions from the parent bundle.
+    So in case if you have any controllers defined in your child bundle you should copy routing definitions from the 
+    parent bundle.
     You can check the `Routing` section of Symfony's `How to Override any Part of a Bundle`_ manual for more information.
 
 .. _How to Override any Part of a Bundle: http://symfony.com/doc/current/cookbook/bundles/override.html#routing
@@ -83,7 +84,7 @@ That's all - now our demo bundle extends OroUserBundle and can override its part
 Features and Recommendations
 ----------------------------
 
-Oro Platform provides several ways of extending bundle resources, and each of them should be used in specific cases.
+OroPlatform provides several ways of extending bundle resources, and each of them should be used in specific cases.
 Extension is the most simple and useful way to do that for basic bundle resources and it can be used widely all over
 the system. Other ways to extend specific resources (e.g. configuration files) will be described in further
 articles.

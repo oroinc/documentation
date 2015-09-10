@@ -1,7 +1,7 @@
 Reports
 =======
 
-The Oro Platform gives you the opportunity to create customized reports about the entities in your
+OroPlatform gives you the opportunity to create customized reports about the entities in your
 application. For example, you may want to create a report that displays the achieved accounts by opportunity
 like this:
 
@@ -180,7 +180,7 @@ The definition of a data grid consists of the following sections:
 
 .. seealso::
 
-    This example is taken from `ReportBundle`_ which is part of the Oro Platform. Refer to it for more
+    This example is taken from `ReportBundle`_ which is part of OroPlatform. Refer to it for more
     examples.
 
     You can also find more information on data grids in the `DataGridBundle documentation`_.

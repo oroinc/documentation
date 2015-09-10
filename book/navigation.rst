@@ -1,11 +1,11 @@
 Managing the Application Menu
 =============================
 
-Both the Oro Platform application and the OroCRM application come with a rich user interface. Each
+Both the OroPlatform application and the OroCRM application come with a rich user interface. Each
 part of the application can be accessed by browsing the application using the provided navigation
 items.
 
-The Oro Platform leverages the famous `KnpMenuBundle`_ to provide highly customizable menus. You
+OroPlatform leverages the famous `KnpMenuBundle`_ to provide highly customizable menus. You
 can add your own menu items to access your project specific interfaces or even replace existing
 items.
 

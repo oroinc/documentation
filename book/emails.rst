@@ -4,7 +4,7 @@
 Working with E-Mails
 ====================
 
-Communicating with customers is an important part of every business. In the Oro Platform, an e-mail
+Communicating with customers is an important part of every business. In OroPlatform, an e-mail
 address is represented by the :class:`Oro\\Bundle\\EmailBundle\\Entity\\EmailAddress` class.
 
 E-Mail Templates
@@ -79,7 +79,7 @@ Template Variables
 E-Mail Address Owners
 ---------------------
 
-Each e-mail address is owned by exactly one entity. In the Oro Platform, ``User`` entities and
+Each e-mail address is owned by exactly one entity. In OroPlatform, ``User`` entities and
 ``Contact`` entities can be owners of an e-mail address. Supposed you want to use the CRM to keep
 track of all people that apply to your company. You will then probably create an ``Applicant``
 entity and want to associate an e-mail address to each of them. To let your own entities own an

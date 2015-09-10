@@ -4,7 +4,7 @@ JavaScript Modularity
 Overview
 --------
 
-The Oro Platform uses *Asynchronous Module Definition* in order to provide JavaScript modularity.
+OroPlatform uses *Asynchronous Module Definition* in order to provide JavaScript modularity.
 
     AMD (**A**\ synchronous **M**\ odule **D**\ efinition) – is a concept of creating modular
     JavaScript code with a defined set of dependencies. It defines the order in which resources
@@ -13,7 +13,7 @@ The Oro Platform uses *Asynchronous Module Definition* in order to provide JavaS
 RequireJS
 ---------
 
-The Oro Platform leverages the `RequireJS`_ library to follow the AMD approach. RequireJS is a
+OroPlatform leverages the `RequireJS`_ library to follow the AMD approach. RequireJS is a
 JavaScript library that provides functions to define modules and to declare dependencies on other
 modules in a module. A module is like a common JavaScript except that it defines a well-scoped
 object and hence does not pollute the global namespace. To use functions from other modules, the
@@ -146,7 +146,7 @@ difference to note:
 
 .. _requirejs-configuration:
 
-Using RequireJS with the Oro Platform
+Using RequireJS with OroPlatform
 -------------------------------------
 
 The `RequireJSBundle`_ eases the RequireJS integration into an application based on the Oro
