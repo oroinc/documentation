@@ -3,7 +3,7 @@ Frontend Architecture
 
 Intro
 -----
-Client Side Architecture of the Oro Platform is built over `Chaplin`_
+Client Side Architecture of OroPlatform is built over `Chaplin`_
 (an architecture for JavaScript Web applications based on the `Backbone.js`_
 library).
 
@@ -18,7 +18,7 @@ However, as we distribute functionality of some pages over multiple bundles
 
 Technology Stack
 ----------------
-Libraries used by Oro Platform on the client side:
+Libraries used by OroPlatform on the client side:
  * RequireJS
  * jQuery + jQuery-UI
  * Bootstrap
@@ -119,7 +119,7 @@ solves memory leak issues. The rest of components, such as ``application`` itsel
 ``router``, ``dispatcher``, ``layout`` and ``composer`` (see picture above)
 exist all through the navigation.
 
-To cover our needs we had to extend this solution. In the Oro Platform a page
+To cover our needs we had to extend this solution. In OroPlatform a page
 content is define with one bundle and might be extended with many other
 bundles. This way, there isn't a single place where a client side controller
 can be defined. As a solutions, we have an only ``PageController`` constructor

@@ -1,7 +1,7 @@
 The Oro Bundles
 ===============
 
-The Oro Platform together with the OroCRM offer wide range of bundles. This article gives you an
+OroPlatform together with OroCRM offer wide range of bundles. This article gives you an
 overview of all these bundles. For each bundle, it is shortly described which features it offers.
 You can click on the bundle name to read the documentation that is distributed with the code on
 GitHub. When there are more detailed articles related to a bundle in this documentation, a list of
@@ -16,13 +16,13 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/emails`
 
-`ActivityBundle`_ (Oro Platform)
+`ActivityBundle`_ (OroPlatform)
     Assign activities (such as calls, emails and tasks) to other entities.
 
-`ActivityListBundle`_ (Oro Platform)
+`ActivityListBundle`_ (OroPlatform)
     The bundle provides methods to show all activities in one widget.
 
-`AddressBundle`_ (Oro Platform)
+`AddressBundle`_ (OroPlatform)
     Base definition and implementation of interfaces for addresses and address related data like
     country, region, phone and email.
 
@@ -35,7 +35,7 @@ related articles is provided below the description.
 `AnalyticsBundle`_ (OroCRM)
     Provides tools to analyze data and to visualize the analysis results.
 
-`AsseticBundle`_ (Oro Platform)
+`AsseticBundle`_ (OroPlatform)
     Extension of the well-known `core AsseticBundle`_ to easily manage CSS assets that are
     distributed across several bundles.
 
@@ -45,17 +45,17 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/layout`
 
-`AttachmentBundle`_ (Oro Platform)
+`AttachmentBundle`_ (OroPlatform)
     Allows to add file and image field types to extended entities.
 
-`BusinessEntitiesBundle`_ (Oro Platform)
+`BusinessEntitiesBundle`_ (OroPlatform)
     Basic business entities that should be used across multiple platform based applications.
 
-`CacheBundle`_ (Oro Platform)
+`CacheBundle`_ (OroPlatform)
     Adds abstract services as starting points for custom cache services.
 
-`CalendarBundle`_ (Oro Platform)
-    Integrates the `jQuery FullCalendar plugin`_ into the Oro Platform and provides additional
+`CalendarBundle`_ (OroPlatform)
+    Integrates the `jQuery FullCalendar plugin`_ into OroPlatform and provides additional
     calendar related functionality.
 
     .. seealso::
@@ -94,13 +94,13 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide/b2b_channels`
         * User guide: :doc:`/user_guide/magento_channels`
 
-`ChartBundle`_ (Oro Platform)
+`ChartBundle`_ (OroPlatform)
     Display different types of charts (like line charts, pie charts, flow charts).
 
-`CommentBundle`_ (Oro Platform)
+`CommentBundle`_ (OroPlatform)
     Add comments to activities.
 
-`ConfigBundle`_ (Oro Platform)
+`ConfigBundle`_ (OroPlatform)
     Introduce and maintain configuration setting in different scopes. Organize and visualize
     multiple configuration trees.
 
@@ -117,7 +117,7 @@ related articles is provided below the description.
 `ContactUsBundle`_ (OroCRM)
     Embedded form and workflow for *contact us* requests.
 
-`CronBundle`_ (Oro Platform)
+`CronBundle`_ (OroPlatform)
     An interface and scheduler for time-based command execution.
 
     .. seealso::
@@ -126,10 +126,10 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/jobs`
 
-`DashboardBundle`_ (Oro Platform)
+`DashboardBundle`_ (OroPlatform)
     Organize widgets that contain useful information on the user's homepage.
 
-`DataAuditBundle`_ (Oro Platform)
+`DataAuditBundle`_ (OroPlatform)
     Provides changelogs of configured properties for entities.
 
     .. seealso::
@@ -138,7 +138,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/data_audits`
 
-`DataGridBundle`_ (Oro Platform)
+`DataGridBundle`_ (OroPlatform)
     UI control implementation for data grid views.
 
     .. seealso::
@@ -157,11 +157,11 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/installation`
 
-`DistributionBundle`_ (Oro Platform)
+`DistributionBundle`_ (OroPlatform)
     Makes it possible to automatically register bundles in the application without requiring the
     user to do that manually in the application kernel.
 
-`EmailBundle`_ (Oro Platform)
+`EmailBundle`_ (OroPlatform)
     Manages email templates, supports attachments and offers a direct mailer implementation.
 
     .. seealso::
@@ -170,10 +170,10 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/emails`
 
-`EmbeddedFormBundle`_ (Oro Platform)
+`EmbeddedFormBundle`_ (OroPlatform)
     Makes it possible to embed Symfony forms on third-party sites and view their submitted data.
 
-`EntityBundle`_ (Oro Platform)
+`EntityBundle`_ (OroPlatform)
     Extends the functionality of the Doctrine entity manager. Adds support for entity and field
     selectors.
 
@@ -185,7 +185,7 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide/entity_fields`
         * User guide: :doc:`/user_guide/channels`
 
-`EntityConfigBundle`_ (Oro Platform)
+`EntityConfigBundle`_ (OroPlatform)
     Allows to attach metadata to entity classes and offers a UI to manage them.
 
     .. seealso::
@@ -199,7 +199,7 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
-`EntityExtendBundle`_ (Oro Platform)
+`EntityExtendBundle`_ (OroPlatform)
     Offers a way to create new entities in the UI, to add new relations between existing entities
     and to add additional field to existing entities.
 
@@ -212,13 +212,13 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
-`EntityMergeBundle`_ (Oro Platform)
+`EntityMergeBundle`_ (OroPlatform)
     Merges different entity definitions into one entity.
 
-`EntityPaginationBundle`_ (Oro Platform)
+`EntityPaginationBundle`_ (OroPlatform)
     Provides the ability to paginate data grids and entity edit pages.
 
-`FilterBundle`_ (Oro Platform)
+`FilterBundle`_ (OroPlatform)
     A reusable set of components of interactive JavaScript widgets that make it possible to filter
     data in the backend.
 
@@ -228,16 +228,16 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/filters`
 
-`FormBundle`_ (Oro Platform)
+`FormBundle`_ (OroPlatform)
     Adds additional form types and form extensions.
 
-`HelpBundle`_ (Oro Platform)
+`HelpBundle`_ (OroPlatform)
     Associate help sections from external web sites to application pages.
 
-`ImapBundle`_ (Oro Platform)
+`ImapBundle`_ (OroPlatform)
     Work with email server through the IMAP protocol.
 
-`ImportExportBundle`_ (Oro Platform)
+`ImportExportBundle`_ (OroPlatform)
     Makes it possible to import and export data in an automated way into and from different
     formats.
 
@@ -248,8 +248,8 @@ related articles is provided below the description.
         * Book: :doc:`/book/importexport`
         * User guide: :doc:`/user_guide/import_export_functionality`
 
-`InstallerBundle`_ (Oro Platform)
-    The web installer for the OroCRM.
+`InstallerBundle`_ (OroPlatform)
+    The web installer for OroCRM.
 
     .. seealso::
 
@@ -257,8 +257,8 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/installation`
 
-`IntegrationBundle`_ (Oro Platform)
-    Contains the abstracted logic to connect the Oro Platform and OroCRM with third-party services
+`IntegrationBundle`_ (OroPlatform)
+    Contains the abstracted logic to connect OroPlatform and OroCRM with third-party services
     and applications.
 
     .. seealso::
@@ -268,7 +268,7 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide/channels`
         * User guide: :doc:`/user_guide/magento_channel_integration`
 
-`LocaleBundle`_ (Oro Platform)
+`LocaleBundle`_ (OroPlatform)
     Formatting of numbers, dates, names and addresses based on the user's locale.
 
     .. seealso::
@@ -298,7 +298,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/marketing_lists`
 
-`MigrationBundle`_ (Oro Platform)
+`MigrationBundle`_ (OroPlatform)
     Allows to version the application's database.
 
     .. seealso::
@@ -308,7 +308,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * User guide: :doc:`/user_guide/entities`
 
-`NavigationBundle`_ (Oro Platform)
+`NavigationBundle`_ (OroPlatform)
     Define menus in different bundles in YAMl files based on the `KnpMenuBundle`_.
 
     .. seealso::
@@ -319,25 +319,25 @@ related articles is provided below the description.
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
 
-`NoteBundle`_ (Oro Platform)
+`NoteBundle`_ (OroPlatform)
     Attach notes to different entities.
 
-`NotificationBundle`_ (Oro Platform)
+`NotificationBundle`_ (OroPlatform)
     Send email notifications triggered by system entities.
 
-`OrganizationBundle`_ (Oro Platform)
+`OrganizationBundle`_ (OroPlatform)
     Models the company's organization hierarchy and its business units.
 
-`PlatformBundle`_ (Oro Platform)
-    The Oro Platform core.
+`PlatformBundle`_ (OroPlatform)
+    The OroPlatform core.
 
-`QueryDesignerBundle`_ (Oro Platform)
+`QueryDesignerBundle`_ (OroPlatform)
     Rich UI to design queries based on an entity's properties.
 
-`ReminderBundle`_ (Oro Platform)
+`ReminderBundle`_ (OroPlatform)
     Triggers reminders for entities via emails or as a flash message in the application.
 
-`ReportBundle`_ (Oro Platform and OroCRM)
+`ReportBundle`_ (OroPlatform and OroCRM)
     Build custom reports for entities.
 
     .. seealso::
@@ -351,7 +351,7 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide/opportunities`
         * User guide: :doc:`/user_guide/reports`
 
-`RequireJSBundle`_ (Oro Platform)
+`RequireJSBundle`_ (OroPlatform)
     Integrates the `RequireJS JavaScript library`_.
 
     .. seealso::
@@ -371,7 +371,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/sales_processes_workflow`
 
-`SearchBundle`_ (Oro Platform)
+`SearchBundle`_ (OroPlatform)
     Manages the application's search index and allows to search this index.
 
     .. seealso::
@@ -380,7 +380,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/search`
 
-`SecurityBundle`_ (Oro Platform)
+`SecurityBundle`_ (OroPlatform)
     A flexible security model which allows to protect data integrity and privacy.
 
     .. seealso::
@@ -389,19 +389,19 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/security`
 
-`SegmentBundle`_ (Oro Platform)
+`SegmentBundle`_ (OroPlatform)
     Provides entity segmentation that can be used for further processing.
 
-`SidebarBundle`_ (Oro Platform)
+`SidebarBundle`_ (OroPlatform)
     Provides the sidebar layout and sidebar widget containers.
 
-`SoapBundle`_ (Oro Platform)
+`SoapBundle`_ (OroPlatform)
     Adds support to create SOAP controller classes and generates a single WSDL file for a SOAP API.
 
-`SyncBundle`_ (Oro Platform)
+`SyncBundle`_ (OroPlatform)
     Supports websocket communications based on the `JDareClankBundle`_.
 
-`TagBundle`_ (Oro Platform)
+`TagBundle`_ (OroPlatform)
     Categorize entities with user-defined tags.
 
 `TaskBundle`_ (OroCRM)
@@ -413,7 +413,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/outlook_sync`
 
-`TestFrameworkBundle`_ (Oro Platform and OroCRM)
+`TestFrameworkBundle`_ (OroPlatform and OroCRM)
     Test framework functionality and main entry point for the JS UnitTest runner.
 
     .. seealso::
@@ -422,7 +422,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/functional_tests`
 
-`ThemeBundle`_ (Oro Platform)
+`ThemeBundle`_ (OroPlatform)
     Basic theme support.
 
     .. seealso::
@@ -431,7 +431,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/layout`
 
-`TrackingBundle`_ (Oro Platform)
+`TrackingBundle`_ (OroPlatform)
     Provides the main data structure for web trackings and proxies tracking data to Piwik (if
     enabled).
 
@@ -441,7 +441,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/user_guide/marketing_tracking_website_records`
 
-`TranslationBundle`_ (Oro Platform)
+`TranslationBundle`_ (OroPlatform)
     Integration for translatable entities.
 
     .. seealso::
@@ -451,7 +451,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/localization`
         * Book: :doc:`/book/customization`
 
-`UIBundle`_ (Oro Platform)
+`UIBundle`_ (OroPlatform)
     Layouts and control elements for the user interface.
 
     .. seealso::
@@ -462,13 +462,13 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
 
-`UserBundle`_ (Oro Platform)
+`UserBundle`_ (OroPlatform)
     Provides user management functionality (authentication, authorization, etc).
 
-`WindowsBundle`_ (Oro Platform)
+`WindowsBundle`_ (OroPlatform)
     Consists of a set of tools for manipulating dialog windows and their states.
 
-`WorkflowBundle`_ (Oro Platform)
+`WorkflowBundle`_ (OroPlatform)
     Perform a set of actions when some predefined conditions are fulfilled.
 
     .. seealso::

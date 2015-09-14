@@ -2,14 +2,14 @@ Localization
 ============
 
 Localization is the process of translating and adapting a product for a specific
-country or region. The Oro Platform allows a user to customize the format of
+country or region. OroPlatform allows a user to customize the format of
 date/time/datetime, numeric and percent values, monetary values as well as
 the format of names and addresses.
 
 System Configuration
 --------------------
 
-The Oro Platform system configuration which is available the *System* / *Configuration*
+The OroPlatform system configuration which is available the *System* / *Configuration*
 menu has a special *Localization* section that defines localization parameters.
 The user interface looks like this:
 

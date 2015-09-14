@@ -5,7 +5,7 @@ Although an Open Source Project allows developers to gain insight into all execu
 can be analyzed and profiled by looking at the source code, it may not be enough to explain the implementation's high-level
 vision, all use cases and the thought behind the architecture. We strongly believe that proper documentation along side
 with the source-code can help with adoption and raise the quality of implementations as well as save time for developers
-learning the platform. We are asking our community to help in the effort of documenting the Oro Platform and making it a
+learning the platform. We are asking our community to help in the effort of documenting OroPlatform and making it a
 stronger open-source project.
 
 

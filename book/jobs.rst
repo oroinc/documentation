@@ -16,7 +16,7 @@ wouldn't be performed by visiting a particular URL using your browser. Instead,
 you'll configure your operating system to execute some script which performs
 the desired tasks.
 
-With the Oro Platform, you can use the `OroCronBundle`_ which makes it easy
+With OroPlatform, you can use the `OroCronBundle`_ which makes it easy
 to run Symfony Console commands through cronjobs (on UNIX-based operating
 systems) or through the Windows task scheduler.
 
@@ -108,9 +108,9 @@ then look like this:
 
 .. _built-in-cron-commands:
 
-.. sidebar:: Cron Commands in the Oro Platform
+.. sidebar:: Cron Commands in OroPlatform
 
-    The Oro Platform has a bunch of commands that will be run through ``oro:cron``:
+    OroPlatform has a bunch of commands that will be run through ``oro:cron``:
 
     * To clean up the schedule queue, the OroCronBundle provides the
       :class:`Oro\\Bundle\\CronBundle\\Command\\CleanupCommand` which deletes
@@ -140,7 +140,7 @@ then look like this:
 Job Queues
 ----------
 
-The Oro Platform is capable of creating job queues which will be processed
+OroPlatform is capable of creating job queues which will be processed
 sequentially by a daemon process.
 
 .. seealso::

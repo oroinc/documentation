@@ -4,7 +4,7 @@
 Customizing the Application Layout
 ==================================
 
-You can customize the Oro Platform layout in different ways:
+You can customize the OroPlatform layout in different ways:
 
 * :ref:`A simple solution is to load your own CSS files. <book-layout-css-files>`
 * :ref:`You can also provide entire themes to change the look and feel <book-layout-themes>`
@@ -91,7 +91,7 @@ For instance, the following configuration excludes all files from the ``frontend
 Application Themes
 ------------------
 
-A theme is a set of CSS and/or LESS files that customize the look and feel of the Oro Platform. A
+A theme is a set of CSS and/or LESS files that customize the look and feel of OroPlatform. A
 theme has the following properties:
 
 ==============  ========  ===========================================================

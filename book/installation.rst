@@ -6,7 +6,7 @@
 Installation and Configuration
 ==============================
 
-This chapter describes how to install the Oro Platform application or the OroCRM application. Both
+This chapter describes how to install the OroPlatform application or the OroCRM application. Both
 applications are similar, but the platform contains only a subset of all bundles available in the
 full CRM.
 
@@ -15,14 +15,14 @@ what needs to be done differently when installing the Platform application.
 
 .. seealso::
 
-    If you are not sure if you want to install the full OroCRM application or just the Oro Platform
+    If you are not sure if you want to install the full OroCRM application or just the OroPlatform
     application, please check the :doc:`the full list of all the bundles </bundles>` being
     available in the packages.
 
 .. tip::
 
     In case you are not sure whether or not you need the full OroCRM application, you can start
-    with the Oro Platform application and upgrade it by installing the ``oro/crm`` package using
+    with the OroPlatform application and upgrade it by installing the ``oro/crm`` package using
     Composer:
 
     .. code-block:: bash
@@ -80,7 +80,7 @@ and checkout the release you want to use:
     Along with ``1.7.0``, you can use any other released version or even the master branch to run
     the latest development version of the OroCRM.
 
-.. sidebar:: Installing the Oro Platform Application
+.. sidebar:: Installing the OroPlatform Application
 
     Use the `Platform application repository URL`_ instead if you do not want to install the full
     CRM:
@@ -168,9 +168,9 @@ should now run Composer to update them to their latest supported versions:
     can change them in the ``app/config/parameters.yml`` configuration
     file.
 
-.. sidebar:: Installing the Oro Platform Application
+.. sidebar:: Installing the OroPlatform Application
 
-    The latest source code archive of the Oro Platform application is available at
+    The latest source code archive of the OroPlatform application is available at
     http://www.orocrm.com/downloads/platform-application.tar.gz.
 
 Configuration

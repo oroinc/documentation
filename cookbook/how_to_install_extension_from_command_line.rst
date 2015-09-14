@@ -3,7 +3,7 @@
     single: Extension; Install extension from command line
     single: Extension
 
-How to Manage Oro Platform Extensions
+How to Manage OroPlatform Extensions
 =====================================
 
 *Used application: OroPlatform 1.**
