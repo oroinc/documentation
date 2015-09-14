@@ -399,7 +399,7 @@ the Edit/Create form:
   
 .. image:: ./img/entity_management/new_entity_field_to_many_01.png
 
-      |
+|
 
 It contains all the fields defined for the *Related Entity Data Fields*.
 
@@ -419,7 +419,7 @@ Detailed* appears.
 
 .. image:: ./img/entity_management/new_entity_field_to_many_03.png
 
-      |
+|
    
 The *Related Entity Info Title* properties are also used to represent the  related users on the View page ("Friends 
 section").
