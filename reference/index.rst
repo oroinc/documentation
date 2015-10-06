@@ -12,7 +12,7 @@ Reference
   * :doc:`/reference/format/navigation`
   * :doc:`/reference/format/placeholders`
   * :doc:`/reference/format/requirejs`
-
+  * :doc:`/reference/format/workflow`
 
 .. toctree::
     :hidden:

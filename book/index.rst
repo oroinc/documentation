@@ -32,6 +32,7 @@ and technical details.
 
   * :doc:`/book/data_audits`
   * :doc:`/book/reports_configuration`
+  * :doc:`/book/workflow`
 
 * :doc:`/book/background_tasks`
 
@@ -74,4 +75,3 @@ TODO List
     * Reminders
     * Tags
 * Reports and Segments
-* Workflow
