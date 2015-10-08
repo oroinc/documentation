@@ -703,7 +703,7 @@ Creating Extended Entities
         * @ORM\Entity
         * @ORM\Table(name="acme_hotel")
         */
-       class Hotel extend ExtendHotel
+       class Hotel extends ExtendHotel
        {
            /**
             * @ORM\Id
