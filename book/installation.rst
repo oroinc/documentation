@@ -242,7 +242,7 @@ If you are using **Nginx** as web server your virtual host configuration should 
             try_files $uri /app.php$is_args$args;
         }
 
-        location ~ ^/(app|app_dev|config)\.php(/|$) {
+        location ~ ^/(app|app_dev|config|install)\.php(/|$) {
             fastcgi_pass unix:/var/run/php5-fpm.sock;
             fastcgi_split_path_info ^(.+\.php)(/.*)$;
             include fastcgi_params;
