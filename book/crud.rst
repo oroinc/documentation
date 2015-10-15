@@ -632,7 +632,7 @@ controller that fetches the object from the database and passes it to a template
          */
         public function viewAction(Vehicle $vehicle)
         {
-            return array('vehicle' => $vehicle);
+            return array('entity' => $vehicle);
         }
     }
 
