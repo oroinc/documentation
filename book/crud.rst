@@ -646,20 +646,20 @@ And of course you also have to create the matching template:
     {% import 'OroUIBundle::macros.html.twig' as UI %}
 
     {% block navButtons %}
-        {% if resource_granted('EDIT', vehicle) %}
+        {% if resource_granted('EDIT', entity) %}
             {{ UI.editButton({
-                'path' : path('inventory.vehicle_update', { id: vehicle.id }),
+                'path' : path('inventory.vehicle_update', { id: entity.id }),
                 'entity_label': 'Vehicle'|trans
             }) }}
         {% endif %}
 
-        {% if resource_granted('DELETE', vehicle) %}
+        {% if resource_granted('DELETE', entity) %}
             {{ UI.deleteButton({
-                'dataUrl': path('inventory_api_delete_vehicle', {'id': vehicle.id}),
+                'dataUrl': path('inventory_api_delete_vehicle', {'id': entity.id}),
                 'dataRedirect': path('inventory.vehicle_index'),
                 'aCss': 'no-hash remove-button',
                 'id': 'btn-remove-vehicle',
-                'dataId': vehicle.id,
+                'dataId': entity.id,
                 'entity_label': 'Vehicle'|trans,
             }) }}
         {% endif %}
@@ -667,7 +667,7 @@ And of course you also have to create the matching template:
 
     {% block pageHeader %}
         {% set breadcrumbs = {
-            'entity':      vehicle,
+            'entity':      entity,
             'indexPath':   path('inventory.vehicle_index'),
             'indexLabel': 'Vehicles'|trans,
             'entityTitle': vehicle.model
@@ -680,8 +680,8 @@ And of course you also have to create the matching template:
             <div class="widget-content">
                 <div class="row-fluid form-horizontal">
                     <div class="responsive-block">
-                        {{ UI.renderProperty('Model'|trans, vehicle.model) }}
-                        {{ UI.renderProperty('Seats'|trans, vehicle.seats) }}
+                        {{ UI.renderProperty('Model'|trans, entity.model) }}
+                        {{ UI.renderProperty('Seats'|trans, entity.seats) }}
                         {{ UI.renderProperty('Bought at'|trans, vehicle.boughtAt|date) }}
                         {{ UI.renderProperty('Leased until'|trans, vehicle.leasedUntil|date) }}
                     </div>
