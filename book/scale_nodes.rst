@@ -112,8 +112,9 @@ bundles:
 4. **Configure** SncRedisBundle - see 
    `the documentation <https://github.com/snc/SncRedisBundle/blob/master/Resources/doc/index.md>`_
 
+**app/config/config.yaml:**
+   
 .. code-block:: yaml
-   :caption: app/config/config.yaml:
 
    snc_redis:
        clients:  # configure phpredis client
@@ -144,8 +145,9 @@ bundles:
 
    You can also store them in Redis:
 
+**app/config/config.yaml:**
+   
 .. code-block:: yaml
-   :caption: app/config/config.yaml:
 
    snc_redis:
        clients:
@@ -165,8 +167,9 @@ bundles:
    
    In our case the oro.cache.abstract* is applicable.
 
+**app/config/config.yaml:**   
+
 .. code-block:: yaml
-   :caption: app/config/config.yaml
    
    services:
        oro.cache.abstract:
@@ -177,9 +180,9 @@ bundles:
 
 7. **Annotations** cache configuration:
 
+**app/config/config.yaml:**
 
 .. code-block:: yaml
-   :caption: app/config/config.yaml:
 
    frameworks:
        annotations:
@@ -187,8 +190,9 @@ bundles:
 
 8. **Doctrine** cache configuration:
 
+**app/config/config.yaml:**
+
 .. code-block:: yaml
-   :caption: app/config/config.yaml:
 
    doctrine:
        orm:
@@ -208,8 +212,9 @@ bundles:
 
 9. **JMS Serializer** cache configuration:
 
+**app/config/config.yaml:**
+
 .. code-block:: yaml
-   :caption: app/config/config.yaml:
    
    jms_serializer:
        metadata:
@@ -218,8 +223,9 @@ bundles:
 10. **Security nonces**. Since each nonce should be used only once, they cannot be stored on every server, as we need
     access to all the nonces when the next API request comes in.
 
+**app/config/security.yaml:**
+
 .. code-block:: yaml
-   :caption: app/config/security.yaml:
 
    security:
        firewalls:
@@ -232,8 +238,9 @@ bundles:
     directory in the [Application root] directory - see the 
     config (Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yaml)
 
+**app/config/security.yaml:**
+
 .. code-block:: yaml
-   :caption: app/config/security.yaml:
    
    knp_gaufrette:
        adapters:
@@ -261,8 +268,10 @@ adapters.
 
 configuration examples:
 
+**FTP with APC:**
+
 .. code-block:: yaml
-   :caption: FTP with APC:
+
 
    knp_gaufrette:
        adapters:
@@ -289,8 +298,9 @@ configuration examples:
                alias:   attachments_filesystem
 
 
+**Local with APC:**
+ 
 .. code-block:: yaml
-   :caption: Local with APC:
    
    knp_gaufrette:
        adapters:
