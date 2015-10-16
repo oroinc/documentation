@@ -41,6 +41,8 @@ and technical details.
 
 * :doc:`/book/functional_tests`
 
+* :doc:`/book/scale_nodes`
+
 .. toctree::
     :hidden:
 
@@ -51,6 +53,7 @@ and technical details.
     data
     background_tasks
     functional_tests
+    scale_nodes
 
 TODO List
 ---------
