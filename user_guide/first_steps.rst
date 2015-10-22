@@ -9,8 +9,8 @@ Major set-up is performed at the back-end during the system integration and desc
 refinements can be done from the UI. 
 
 This article provides an overview of basic settings that can be done from the UI and describes how they are related to 
-actual enterprise activities and how they will effect further system usage. Along with overviews, there are links to 
-details step-by-step guides on the specific settings and/or functionality.
+actual enterprise activities and how they will effect further system usage. Along with the overviews, there are links to 
+detailed step-by-step guides.
 
 
 System Configuration
@@ -20,10 +20,12 @@ System Configuration
 Understanding
 ^^^^^^^^^^^^^
 
-OroCRM is used globally and we aim to make the user experience as convenient as possible. No doubt it is more convenient 
-even to set up (and, of course, to use) the system with the language that you know well, using address formats that you
-are used to, etc. There is a number of other things that are also common for the all the organizations, branches and 
-sub-units of one enterprise. These are such general things like the enterprise primary location, time-zone,types of 
+OroCRM is used globally and we aim to make the user experience as convenient as possible. No doubt, it is more 
+convenient to set up and use the system with the language that you know well, address formats that you
+are used to, etc. 
+
+There is a number of other things like these that are common for the all the organizations, branches 
+and sub-units of one enterprise, e.g the enterprise primary location, time-zone, types of 
 files that company policies allow to upload, configuration of mailboxes that the company uses, etc.
 
 
@@ -31,10 +33,11 @@ Set Up and Further Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^  
 
 Such system-wide settings should be defined at the start as described in the 
-:ref:`Configuration Settings guide <admin-configuration>.  
+:ref:`Configuration Settings guide <admin-configuration>`.  
 
-The settings will be applied to the whole system and to the UI of all the users of this system. Any of these settings
-can be changed later but it is important to understand that whenever any of such settings has been changed on one 
+The settings will be applied to the whole system and to the UI of all the users of this system. 
+
+Any of these settings can be changed later, but it is important to understand that whenever it has been changed on one 
 OroCRM instance (e.g. by the system administrator), it will be changed for all the system users. 
 
 
@@ -45,8 +48,8 @@ Understanding
 ^^^^^^^^^^^^^
 
 To use the system efficiently, you need to understand who will use it, and what their purposes and benefits will be.
-
-Some of the basic CRM process stakeholders (with no limitation) and the benefits the OroCRM can bring them are:
+Some of the basic CRM process stakeholders (with no limitation) and the benefits the OroCRM can bring them are, as 
+follows:
 
 - **Sales Representatives**: responsible for direct communication with the customers and conversion of opportunities 
   into actual orders. 
@@ -56,32 +59,45 @@ Some of the basic CRM process stakeholders (with no limitation) and the benefits
   sales and conversion trends for each specific customer or for a pre-defined group of customers, as well as for the 
   enterprise overall.
   
-  (The system functionality targeted at the sales-related activities is described in the 
-  :ref:`Sales section <user-guide-sales>` of the User Guide).
+  |
+  
+  The system functionality targeted at the sales-related activities is described in the 
+  :ref:`Sales Tools section <sales-index>` of the User Guide.
 
+  |
+  
 - **Marketologists**: responsible for ongoing growth of the customer-base with marketing campaigns and mass mailing. 
   
   With OroCRM, Marketologists can process customer-related information to create targeted marketing campaigns and both 
   manually and automatically delivered mailings, as well as to track their results.
   
-  (The system functionality targeted at the marketing-related activities is described in the 
-  :ref:`Marketing section <user-guide-marketing>` of the User Guide).
+  |
+  
+  The system functionality targeted at the marketing-related activities is described in the 
+  :ref:`Marketing Tools section <user-guide-marketing>` of the User Guide.
+  
+  |
   
 - **Managers**: responsible for coordination of the employees efforts. 
 
   With OroCRM, Managers can create events, tasks and other activities and assign them to any of the system users, define 
   specific workflows to be followed by the company staff.
   
-  (The system functionality targeted at the enhancement of productivity is described in the 
-  :ref:`Productivity Tools section <productivity-tools>` of the User Guide).
+  | 
+  
+  The system functionality targeted at the enhancement of productivity is described in the 
+  :ref:`Productivity Tools section <productivity-tools>` of the User Guide.
 
+  |
+  
 Along with that every stakeholder may benefit from the usage of convenient UI with adjustable grid views and 
-filters, described in more details in :ref:`understanding the UI part <user-guide-ui-understanding-index>` of the 
+filters, described in more details in :ref:`Understanding the UI part <user-guide-ui-understanding-index>` of the 
 Getting Started section, as well as from adjustable dashboards with target-oriented widgets, comprehensive tailored 
 reports to collect and visualize historical data and trends related to almost any 
-object in the system, segments to consider only a specific piece of information or group customers, opportunities, 
-users, etc.) and other tools described in more details in the :ref:`Other Tools section <user-guide-other-tools>` of 
-the user guide. 
+object in the system, segments to consider only a specific piece of information and other tools described in more 
+details in the :ref:`Other Tools section <user-guide-other-tools>` of the User Guide. 
+
+|
 
 Administrator 
 """""""""""""
@@ -94,6 +110,11 @@ While many settings are defined at the back-end, a user-friendly UI provides for
 set-up, creation and editing of new users and system entities, definition of permissions and access rights, 
 set-up and management of integrations and extensions, monitoring of the system usage by other users, etc.
 
+  | 
+  
+The system functionality to be used by the Administrators is described in the 
+:ref:`System Management and Administration section <system-management-index>` of the User Guide.
+
 .. hint::
 
     It is very important to make sure the administrator is not only good at computers but understands the principles, 
@@ -103,13 +124,15 @@ set-up and management of integrations and extensions, monitoring of the system u
 Set Up and Further Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^  
 
-Each group of stakeholders can be represented in OroCRM with a specific Roles. The ways to create roles is described in 
+Each group of stakeholders can be represented in OroCRM with a specific Role. The ways to create roles is described in 
 the :ref:`Roles Management guide <user-guide-user-management-permissions-roles>`. 
 
 Roles assigned to each :term:`user <User>` define what system modules and functionalities will be available to them, as 
-well as what records this user will be able to view, create and process. This way you can make sure that salesmen see 
-information important to promote you goods (e.g. the history of orders, abandoned carts, etc.) but cannot manage user 
-passwords in the system. This provides for the both security(as you can then limit access to information to users with 
+well as what records this user will be able to view, create and process. This way, you can make sure, for example, that 
+the salesmen see information important to communicate with customers(e.g. the history of orders, abandoned carts, etc.) 
+but cannot manage user passwords in the system. 
+
+This provides for the both security (as you can then limit access to information to users with 
 specific roles only) and convenience of the system usage and optimal usage of the work-time (as your employees will not 
 be overwhelmed with excessive information that is not required for their job). 
 
@@ -130,7 +153,7 @@ Almost every company has a structure. There may be different offices, directions
 provides representation thereof in the system.  
 
 In some large-scale companies different branches may work with significantly different items, goods or customers. In 
-this case it may be reasonable to create several organizations and build the organization structure inside it.
+this case it may be reasonable to create several organizations and build the organization structure inside each of them.
     
 
 
@@ -148,16 +171,17 @@ visible, editable, available for creation, etc. as described in the :ref:`Access
 <user-guide-user-management-role-permissions>`. This way, you can, for example define that specific type of 
 records should be visible only to the user that has created them, others - to all the users of the same business unit, 
 or to all the users of the same division, or to any user within the organization. 
-For example, you can set up the system in such a way that all users with role "Manager" see personal data of all the 
-customers within the system, but users with the role "Sale Representative" see only the data of customers added to the 
-system by users of their unit (e.g. when a Sales Representative from your office in Ohio has accessed the system, they 
-will only see details of the customers added to the system from the Ohio office, and a freelance Sales Representative 
-will only see the customers they have registered in the system themselves).
+
+For example, you can set up the system in such a way that all the managers (users with role "Manager") can see personal 
+data of all the customers within the system, but sales representative can only see the details of customers added to the 
+system by users of their unit (so when salesmen from your office in Ohio has accessed the system, they 
+will only see details of the customers added to the system from the Ohio office), and freelance sales representative 
+will only see the customers they have registered in the system themselves.
 
 When multiple organizations are used, the situation is similar within each separate organization. However there is one 
-more organization which is referred to as the "system organization", users of which, subject to their 
-:ref:`permissions <user-guide-user-management-role-permissions-system>` can reach records of any other organization 
-within the system. 
+more organization which is referred to as the :ref:`system organization <user-ee-multi-org-system>`, users of which, 
+subject to their :ref:`permissions <user-guide-user-management-role-permissions-system>`, can reach records of any other 
+organization within the system. 
 
 
 .. hint::
@@ -173,7 +197,7 @@ Sources of the Customer-Related Information
 Understanding
 ^^^^^^^^^^^^^
 
-Today successful businesses usually have more than one sales-site. These may be different on-line stores, 
+Today, successful businesses usually have more than one sales-site. These may be different on-line stores, 
 business-to-business enterprises and business-to-customer outlets. Moreover, different customer and sales-related 
 information may be received from various survey-campaigns or through membership in clubs, funds, charity events, etc.
 Gaining full understanding of all the information received from each of the sources along with all the information 
@@ -186,9 +210,12 @@ Set Up and Further Usage
 Each source of customer-related data used by an enterprise, is represented by a channel in OroCRM. 
 Out-of-the box, OroCRM provides functionality sharpened for Web-stores (particularly, Magento-based stores) and for 
 business-to-business enterprises. The way to set up a channel is described in the 
-:ref: `Channels guide <user-guide-channels>`. 
+:ref:`Channels guide <user-guide-channels>`. 
 
 Once the channels have been set up, information from the respective sources can be collected and processed in OroCRM.
+
+The way to see information from different channels related to the same customer is described in the 
+:ref:`Aggregating Data from Multiple Sources guide <user-guide-multi-channel-overview>`.
 
 .. hint::
 
@@ -203,33 +230,32 @@ Objects, Details of Which Will be Collected and Processed
 Understanding
 ^^^^^^^^^^^^^
 
-Usually, there are several object types, records of which you will collect from the sources.
+Usually, there are specific object types, records of which are collected from each of the channels. 
 
-For example, from each source you always collect different records, each of which represent a specific customer.  
-Other such objects may depend on the channel type - for example business-to-business channels, by default, support 
-collection of the :term:`Lead` and  :term:`Opportunity` records and and Web-channels provide for collection of the 
-:term:`Cart` and :term:`Order` records.
+One of them always represents customers. Others depend on the channel type. For example business-to-business channels, 
+by default, support collection of the :term:`Lead` and  :term:`Opportunity` records and and Web-channels provide for 
+collection of the :term:`Cart` and :term:`Order` records.
+
+.. note::
+
+    In OroCRM a group of records of similar nature is called an "entity".
 
 Set Up and Further Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^ 
 
-.. hint::
-
-    In OroCRM a group of records of similar nature is called an "entity".
-
 Once you have defined the type of your source (the "Channel Type"), some entities will be assigned to it by default. 
-You can delete these default entities, except for the ones that represent customers, from the channel. You can also add 
-your own ("custom") entities to the channel (*Custom Entities* are created for specific customer needs and may contain 
-any relevant data, including additional customer details, information about the sales, etc. All the custom entities can 
-be assigned to a channel. The ways to create and mange custom entities, are described in the 
-:ref:`Entities guide <user-guide-entity-management-from-UI>`.
+You can delete these default entities, except for the ones that represent customers, from the channel.  
+You can find more details about the basic entities in the :ref:`Basic Entities guide <user-guide-basic-entities>`
 
-Now records of the entities assigned to the source can be collected from the source.
+You can also add your own ("custom") entities to the channel (*Custom Entities* are created for specific customer needs 
+and may contain any relevant data, including additional customer details, information about the sales, etc., as 
+described in the :ref:`Entities guide <user-guide-entity-management-from-UI>`.)  All the custom entities can 
+be assigned to a channel.
 
 
 .. hint:: 
 
-    New channels may be added to the system at any moment.
+    Now records of the entities assigned to the source can be collected from the source. 
 
 
 .. _user-guide-get-ready-fields-relations:
@@ -242,42 +268,38 @@ Understanding
 ^^^^^^^^^^^^^
 
 Now, that you have defined the main objects, for which data is collected, you need to understand what details you want 
-to collect for each of them. What do you want to know about each customer? What details of a Cart do you need? What 
-should your employees know to turn more leads into won opportunities?
+to collect for each of them. What do you want to know about each customer? What details of a shopping cart do you need? 
+What should your employees know to turn more leads into won opportunities?
 
 In OroCRM, details of entity records are called *fields*. So customer's first name, customer's last name, 
-customer's birthday are represented in OroCRM by the fields of the customer record.
+customer's birthday are represented in OroCRM by the fields of the Customer record.
 
-Now, for example, we want to know where to ship the goods for the customer. Then we need the fields to represent
-the country of the customer's address address, the city of the customer's shipping address, the street of the customer's 
-shipping address, the apartment of the customer's shipping address, the zip code of the customer's shipping address, 
-etc. 
-And the same for the customer's billing address. These are quite a lot of fields. To optimize the system usage we will 
-create a new entity - address, records of which will have all the necessary fields ()country, city, apartment, zip code, 
-etc.) and 
-the fields "type" that can be "billing" or "shipping". 
+Now, for example, we want to know where the customer lives. Then we need the fields to represent the country of the 
+customer's address, the city of the customer's address, the street, the apartment, zip code, etc. - these are quite a 
+lot of fields. To optimize the system usage we have created a new entity - address, records of which will have all the 
+necessary fields(country, city, apartment, zip code, an so on)
 
-This "address" entity is *related* to the customer's entity. This means that for every customer record there is a field 
-"billing address" and field "shipping address" that is displayed as a link (that contains a predefined adjustable set of 
-fields. Once you click the link you see the full address record).  
+This "address" entity is **related** to the customer's entity. This means that for every customer record there is a 
+field "address" that is displayed as a link. Once you click the link you see the full address record.  
 
 There may be several levels of relations. 
+
 For example, if you are working business-to-business, your customers are 
-other companies. You have found a new potential project and create a "Lead" record in the system. 
+other companies. You have found a new potential project and created a "Lead" record in the system. 
 The Lead records have fields to represent the name of the project, related industry, number of employees, etc. 
 Some of the Lead fields are relations, including the fields that represent the customer, for which the project may be 
 performed and the contact person responsible for this negotiations at the customer's side. The customer and contact 
 records, also have some fields that are relations (e.g. "address"). 
 
 Moreover, once you start top-level negotiations on the project, you can add an "Opportunity" records, to which this 
-"Lead" records will be related. 
+"Lead" records will be *related*. 
 
 
 Set Up and Further Usage
 ^^^^^^^^^^^^^^^^^^^^^^^^ 
 
 OroCRM provides some out of the box entities and fields for each of the basic objects. Along with that you can add your 
-entities, as both main objects (assigned to the channels) and related entities. You can also add new fields to 
+entities, for the both main objects (assigned to the channels) and related entities. You can also add new fields to 
 out-of-the-box entities. 
 
 New entities and their fields can be added from the UI, as described in the 
@@ -302,29 +324,13 @@ Integration With Other Systems
 Understanding
 ^^^^^^^^^^^^^
 
-Sometimes collection and/or processing of CRM-related information requires integration of OroCRM an third party systems.
+Sometimes, collection and/or processing of CRM-related information requires integration of OroCRM an third party systems.
 For example, you can have the system integrated with Microsoft Exchange server and automatically upload emails from 
 the user's mailboxes on the server to OroCRM. Integration with Magento-based eCommerce store (“Magento store”) allows 
 loading data from the Magento store, processing it in OroCRM and loading back to Magento. After integration with 
 MailChimp your marketologists will be able to use the lists of contacts created for marketing needs in OroCRM for 
 emails campaigns in MailChimp and use related campaign statistics again in OroCRM.
 
-.. hint::
-
-    There are quite a lot of out-of-the-box integration, but if your company requires integrations with a third party 
-    system not available out of the box, an extension to enable the integration may be ordered and created specially for 
-    your company.
-
-
-OroCRM can be integrated to collect and transfer data to and from different third party systems. Overview of the 
-integrations available out-of-the-box is available :ref:`in the relevant article <user-guide-integrations>`. 
-Additional integrations can be added, if required.
-
-.. hint::
-
-    Make a list of integrations that you need, including out-of-the-box integrations and additional integration required 
-    specifically for your business. Consider what data shall be collected from the third-party systems, and what the 
-    synchronization flow should be. 
 
 
 Set-Up and Further Usage
@@ -337,7 +343,8 @@ The list of all the integrations, their brief description and links to details s
 
 .. hint:: 
 
-    New integration may be implemented in the system at any moment.
+    New integration may be implemented in the system at any moment.  if your company requires integrations with a third 
+    party system not available out of the box, an extension to enable the integration may be ordered and created.
 
 
 .. _user-guide-get-ready-workflows:
@@ -349,7 +356,7 @@ Workflows
 Understanding
 ^^^^^^^^^^^^^
 
-Company scalability and efficiency depends a lot on common procedures followed by all of its employees. How many times
+Company scalability and efficiency depend a lot on common procedures followed by all of its employees. How many times
 can you call a customer? Can you close an opportunity as lost without an explanation? What should you do if a customer 
 has added some goods to the cart but hasn't ordered them?
 
@@ -365,7 +372,7 @@ Set-Up and Further Usage
 
 There is a number of workflows available out of the box, that can be modified to meet your specific company purposes. 
 New workflows can also be implemented in the system. The way to set-up workflows from the UI is described in the 
-:ref:`Workflow Management guide <_user-guide-workflow-management-basics>`. Some complex workflows can be implemented 
+:ref:`Workflow Management guide <user-guide-workflow-management-basics>`. Some complex workflows can be implemented 
 from the back-end at your request.
 
 After the workflow has been implemented in OroCRM, the users will have to follow the defined process to manage records

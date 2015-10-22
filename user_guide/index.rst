@@ -8,7 +8,7 @@ business needs.
 * :doc:`/user_guide/getting_started_index`
 
     * :doc:`/user_guide/first_steps`
-    * :doc:`/user_guide/basic entities`
+    * :doc:`/user_guide/basic_entities`
     * :doc:`/user_guide/log_in`
 
   * :doc:`/user_guide/ui_understanding_index`
@@ -123,8 +123,8 @@ business needs.
 
     * :doc:`/user_guide/user_management_overview`
     * :doc:`/user_guide/access_permissions`
-    * :doc:`/user_guide/user_management_users`
     * :doc:`/user_guide/user_management_roles`
+    * :doc:`/user_guide/user_management_users`
     * :doc:`/user_guide/user_management_bu`
     * :doc:`/user_guide/user_management_organization`
     * :doc:`/user_guide/multiple_organizations_support`
@@ -141,5 +141,6 @@ business needs.
     process_coordination_index
     integrations_index
     admin_index
+    other_tools_index
     glossary
 

@@ -1,6 +1,6 @@
 .. _user-guide-getting-started-favorite_viewed_pinned:
 
-Favourite, Pinned and Viewed Pages
+Favorite, Pinned and Viewed Pages
 ==================================
 
 It is always convinient to have the pages you often View at hand. There are several UI controlles to help you do that in 

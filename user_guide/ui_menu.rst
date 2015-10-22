@@ -11,7 +11,9 @@ Below the organization name of the screen, you can see the first level menu item
     
     |header_mobile|
  
-The first level menu items define basic OroCRM sections. Click the icon or name to get to the relevant subsections and access corresponding pages or grids. (For better understanding of the grid structure in OroCRM read the :ref:`Grids guide <user-guide-ui-components-grids>).
+The first level menu items define basic OroCRM sections. Click the icon or name to get to the relevant subsections and 
+access corresponding pages or grids. (For better understanding of the grid structure in OroCRM read the 
+:ref:`Grids guide <user-guide-ui-components-grids>`).
 
 From each grid you can get to :ref:`Create/Edit forms <user-guide-ui-components-create-pages>` and 
 :ref:`View pages <user-guide-ui-components-view-pages>` of specific records.

@@ -4,8 +4,7 @@ Understanding the UI
 ====================
 
 The set of documents explaining all the UI components and controls, including the *"OroCRM Menu Items"* document that 
-provides links to documents with detailed description of each menu item, along with that, the “OroCRM Menu Items” 
-document provides links to documents with detailed description of each menu item.
+provides links to documents with detailed description of each menu item.
 
 * :doc:`/user_guide/navigation`
 * :doc:`/user_guide/select_organization`
