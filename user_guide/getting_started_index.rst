@@ -1,44 +1,45 @@
 Getting Started
 ===============
 
-The section describes all the controls and UI components, provides overview of main OroCRM entities and gives details 
-of some major functionalities. 
+Customer-relations have long been a cornerstone to successful business development. Regardless of the business scale,
+you need to keep the track of continuously growing amounts of information and find ways to use it for the best of your 
+company. With OroCRM, you can record, store, process and analyze all kinds of customer-related including the details of 
+customer profiles, shipping information, customer activity, perspective sales and arrangements, and 
+many others. 
 
-* :doc:`/user_guide/ui_understanding`
-  
+The system provides tools and functionalities with which you can easily monitor, manage and understand 
+specific customer-related activities.
+
+Here you can find some introductory documents that will help to understand the system basics and description of the main
+navigation components and controls to make you comfortable with the system UI.
+
+
+* :doc:`/user_guide/first_steps`
+* :doc:`/user_guide/basic entities`
+* :doc:`/user_guide/log_in`
+* :doc:`/user_guide/ui_understanding_index`
+ 
+  * :doc:`/user_guide/navigation`
+  * :doc:`/user_guide/select_organization`
   * :doc:`/user_guide/ui_menu`
   * :doc:`/user_guide/ui_grids`
   * :doc:`/user_guide/ui_form`
   * :doc:`/user_guide/ui_view`
-  * :doc:`/user_guide/dashboards`
-  
-* :doc:`/user_guide/basic_entities`
-* :doc:`/user_guide/import_export_functionality`
-* :doc:`/user_guide/reports`
-* :doc:`/user_guide/filters`
+  * :doc:`/user_guide/user_menu`
+  * :doc:`/user_guide/search`
+  * :doc:`/user_guide/viewed_pages`
 
-  * :doc:`/user_guide/segments`
-* :doc:`/user_guide/tags`
-
-.. hint::
-
-    The *"OroCRM Menu Items"* document provides links to documents with detailed description of each menu item.
+    
 
 .. toctree::
     :hidden:
     :maxdepth: 2
 
-    ui_understanding
-    ui_menu
-    ui_grids
-    ui_form
-    ui_view
-    dashboards
-    tags
-    basic_entities
-    import_export_functionality
-    reports
-    filters
-    segments
+    first_steps
+    basic entities
+    log_in
+    ui_understanding_index
+ 
+
 
 

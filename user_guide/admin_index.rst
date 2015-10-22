@@ -1,3 +1,5 @@
+.. _system-management-index:
+
 System Management and Administration
 ====================================
 The section describes tools for system management and administration, aimed to be used primarily by the system 
@@ -13,6 +15,7 @@ Please note that in may cases the tools may be not available to usual users, sub
 * :doc:`/user_guide/user_management_index`
 
   * :doc:`/user_guide/user_management_overview`
+  * :doc:`/user_guide/access_permissions`
   * :doc:`/user_guide/user_management_users`
   * :doc:`/user_guide/user_management_roles`
   * :doc:`/user_guide/user_management_bu`

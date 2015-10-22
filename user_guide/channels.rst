@@ -59,7 +59,7 @@ The following three fields are mandatory and **must** be defined:
     :ref:`B2B Channel guide <user-guide-b2b-channel>`.
 
   - *Magento*: designed for Magento-based stores. Described in more detail in the 
-    :ref:`Magento Channel guide <user-guide-b2b-channel>`.
+    :ref:`Magento Channel guide <user-guide-magento-channel>`.
 
   - *Custom*: any other channels."
 

@@ -3,7 +3,7 @@
 Configuration Settings
 ======================
 
-Use the Configuration settings to define options to be applied to the OroCRM instance.
+Use the Configuration settings to define options to be applied to the whole OroCRM instance.
 
 Open the OroCRM instance and go to *"System → Configuration"*.
 

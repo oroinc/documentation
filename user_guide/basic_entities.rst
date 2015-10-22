@@ -19,9 +19,9 @@ with the system.
 User
 ----
 
-A **User** record is a set of credentials (login and password) that defines what part of the system,
-which functionalities and actions are available to the person, group of people, or third-party person who have 
-entered the system using this credentials.
+**User** records represent actual users of the system. Following the :ref:`log-in <user-guide-getting-started-log-in>`
+they get access to the functionalities and actions pre-defined for them by the :ref:`access and permission settings 
+<user-guide-user-management-permissions>`.
 
 Any amount of User records may be defined for one OroCRM instance.
 
@@ -34,8 +34,9 @@ Channel
 -------
 
 A **Channel** record represents a source of customer-related data, such as a Web-based store, a shop, a specific 
-business activity and so on. Upon creation, each channel is assigned some other entities. Records of 
-these entities and their details may be collected from this channel.
+business activity and so on. Upon creation, you can choose what kind of customer-related information will be collected
+from each source (assigned some entities to the channel). Records of these entities and their details may then be 
+collected from this channel.
 
 Any amount of Channel records may be defined for one OroCRM instance.
 
@@ -61,13 +62,14 @@ You can find more information about B2B Customer entities in the
 You can find more information about Magento Customer entities in the 
 :ref:`Magento Customers guide <user-guide-magento-entities-customers>`.
 
+
 .. _user-guide-basic-contact:
 
 Contacts
 --------
 
 While a Customer Identity record may refer to a company, an enterprise or a person, records of the **Contact** 
-entity represent actual people you are dealing with and contain their personal informations, details of their position
+entity represent actual people you are dealing with and contain their personal information, details of their position
 in the customer-company, address information, etc.
 
 Any amount of Contact records may be defined for one OroCRM instance.
@@ -84,13 +86,13 @@ Basic Sales-Related Entities
 
 OroCRM provides a number of out-of-the-box entities that represent different sales-related items and activities. 
 
-- For B2B channels the main ones are 
+- For B2B channels the main ones are, as follows:
 
 - The **Lead** records that represent potential sales with undefined or low level of success.
 - The **Opportunity** records that represent potential sales with high level of possibility or confirmed with initial 
   arrangements.
 
-- For Magento channels the main ones are 
+- For Magento channels the main ones are, as follows:
 
   - The **Cart** records that represent carts of a Magento-based store.
   - The  **Order** records that represent actual records made in a Magento-based store.
@@ -104,7 +106,6 @@ Each such record may be assigned to an only customer, while each customer may be
 
 - You can find more information about the entities of B2B Channels in the 
   :ref:`B2B Channel Overview <user-guide-b2b-channel>`.
-
 
 
 You can find more information about the ways to add new entities in the 

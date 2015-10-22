@@ -1,9 +1,16 @@
-Sales
-=====
+.. _sales-index:
 
-The section describes OroCRM tools used to collect and aggregate customer-detailed 
-information from different sources ("channels"), including sharpened out-of-the-box tools for Magento-based stores and 
-B2B enterprises.
+Tools for Sales
+===============
+
+The corner stone of customer-relations management, their essence and target is to sell your goods to the customers and 
+have them buy from you again. The tools described in this section will provide your salesmen with clear 360-degrees 
+view of all the customer activities, and ability to see the overall picture for any customer or group of customers and 
+drill-down to a specific purchase and contact.   
+
+The section mainly describes sharpened out-of-the box tools for sales in business-to-business and Web-based enterprises,
+however OroCRM can be tailored and adjusted to meet the needs of any company.
+
 
 * :doc:`/user_guide/channels`
 
@@ -44,3 +51,9 @@ B2B enterprises.
     contact_groups
     accounts
     multi_channel_functionality
+
+
+.. hint::
+
+    Sales-team will also find useful OroCRM's reports, filters, dashboards and other tools described in the 
+    :ref:`Other Tools section <user-guide-other-tools>` of the User Guide. 

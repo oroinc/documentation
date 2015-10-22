@@ -33,8 +33,8 @@ The article describes how to create and manage the entities.
 Create Entities
 ---------------
 
-In order to create a custom entity, you have to specify its details as described in the sections below: 
-
+In order to create a custom entity, you have to got to the *System → Entities*, choose the entity in the list and 
+specify its details as described in the sections below: 
 
 .. _user-guide-entity-management-create-general-information:
 

@@ -6,21 +6,22 @@ functionalities of OroCRM, learn how to configure the system and successfully im
 business needs.
 
 * :doc:`/user_guide/getting_started_index`
-  
-  * :doc:`/user_guide/ui_understanding`
-  
+
+    * :doc:`/user_guide/first_steps`
+    * :doc:`/user_guide/basic entities`
+    * :doc:`/user_guide/log_in`
+
+  * :doc:`/user_guide/ui_understanding_index`
+ 
+    * :doc:`/user_guide/navigation`
+    * :doc:`/user_guide/select_organization`
     * :doc:`/user_guide/ui_menu`
     * :doc:`/user_guide/ui_grids`
     * :doc:`/user_guide/ui_form`
     * :doc:`/user_guide/ui_view`
-    * :doc:`/user_guide/dashboards`
-  
-  * :doc:`/user_guide/tags`
-  * :doc:`/user_guide/basic_entities`
-  * :doc:`/user_guide/import_export_functionality`
-  * :doc:`/user_guide/reports`
-  * :doc:`/user_guide/filters`
-  * :doc:`/user_guide/segments` 
+    * :doc:`/user_guide/user_menu`
+    * :doc:`/user_guide/search`
+    * :doc:`/user_guide/viewed_pages`
 
       |
 
@@ -64,9 +65,7 @@ business needs.
     * :doc:`/user_guide/marketing_tracking_website_records`
     * :doc:`/user_guide/marketing_campaigns`  
 
-
       |
-  
  
 * :doc:`/user_guide/process_coordination_index`
 
@@ -88,6 +87,16 @@ business needs.
   * :doc:`/user_guide/workflow_management`
 
       |
+ 
+* :doc:`/user_guide/other_tools_index`
+
+  * :doc:`/user_guide/import_export_functionality`
+  * :doc:`/user_guide/reports`
+  * :doc:`/user_guide/filters`
+  * :doc:`/user_guide/segments` 
+  * :doc:`/user_guide/tags`
+
+      |  
 
 * :doc:`/user_guide/integrations_index`
   
@@ -101,7 +110,6 @@ business needs.
     * :doc:`/user_guide/outlook_sync`
     * :doc:`/user_guide/embedded_forms`
 
-      |
 
 * :doc:`/user_guide/admin_index`
 
@@ -114,6 +122,7 @@ business needs.
   * :doc:`/user_guide/user_management_index`
 
     * :doc:`/user_guide/user_management_overview`
+    * :doc:`/user_guide/access_permissions`
     * :doc:`/user_guide/user_management_users`
     * :doc:`/user_guide/user_management_roles`
     * :doc:`/user_guide/user_management_bu`

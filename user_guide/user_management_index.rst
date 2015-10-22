@@ -1,8 +1,11 @@
+.. _user-management-index:
+
 User Management
 ===============
 The section describes tools related to user and organization set-up and permissions management.
 
 * :doc:`/user_guide/user_management_overview`
+* :doc:`/user_guide/access_permissions`
 * :doc:`/user_guide/user_management_users`
 * :doc:`/user_guide/user_management_roles`
 * :doc:`/user_guide/user_management_bu`

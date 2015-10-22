@@ -3,6 +3,9 @@
 Business Unit Records Management
 ================================
 
+Business Units can represent directions, departments, units, work-groups and teams of the same organization. 
+Top-level units can be created first and lower-level ones will be their sub-units.
+
 Create a Business Unit Record
 -----------------------------
 
@@ -21,7 +24,8 @@ General
 
   "**Name**","The name used to refer to the business unit in the UI. This is the only mandatory field."
   "**Parent Business Unit**","Define the business unit to which this business unit belongs (a level higher in the 
-  administrative hierarchy), if applicable."
+  administrative hierarchy), if applicable. This way you can represent the whole structure, creating sub-units many 
+  levels down."
   "**Phone**
   
   **Website**

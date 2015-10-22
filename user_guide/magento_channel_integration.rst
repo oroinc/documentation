@@ -143,34 +143,6 @@ Define a New User
 
 .. _user-guide-magento-channel-integration-details:
 
-Enable WSDL Cache
-^^^^^^^^^^^^^^^^^
-
-In order to accelerate performance of initial sync, please make sure WSDL cache is enabled in Magento configuration. 
-
-To enable the cache:
-
-- Go to the *System → Configuration*
-
-- Go to the *"Services"* section in the tab on the left.
-
-- Click on the *"Magento Core API"* link
-
-  |
-  
-  |Services|
-
-- Choose *"Yes"* in the *"Enable WSDL Cache"* field of the General Settings.
-
-  |EnableWSDL|
-
-.. hint::
-
-    The CSV support is not supported for the initial import of Magento data to OroCRM, but if you have concern as for 
-    the impact the import might have on the production environment, you can set-up a staging instance with the latest 
-    production data, run initial synchronization on the environment and update the integration url to production once it 
-    has been done.
-
 On the Oro Side
 -------------------
 
@@ -316,10 +288,4 @@ can be added to the system.
    :align: middle
 
 .. |BSchedule| image:: ./img/buttons/BSchedule.png
-   :align: middle
-
-.. |Services| image:: ./img/magento_integration/services.png
-   :align: middle
-   
-.. |EnableWSDL| image:: ./img/magento_integration/enable_wsdl.png
    :align: middle
