@@ -21,7 +21,7 @@ Preliminary Recommendations:
 
 - Use REDIS (http://redis.io/) as a data cache for Annotations, Metadata, ACL, etc.
 
-- Share *[Application root]/app/attachment*  among all the web nodes 
+- Share *[Application root]/app/attachment* folder among all the web nodes 
 
 .. hint::
 
