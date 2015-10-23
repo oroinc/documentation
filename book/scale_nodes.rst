@@ -21,10 +21,11 @@ Preliminary Recommendations:
 
 - Use REDIS (http://redis.io/) as a data cache for Annotations, Metadata, ACL, etc.
 
-- Use an attachment storage such as AmazonS3/FTP/SFTP/MongoGridFS/Dropbox or any other supported storage from the 
-  `list <https://github.com/KnpLabs/KnpGaufretteBundle>`_.
+- Share *[Application root]/app/attachment*  among all the web nodes 
 
-  - Use APC as an attachment cache.
+.. hint::
+
+    The ways to share *[Application root]/app/attachment* are described in the Attachments section hereinafter. 
 
 Additional Requirements to the Bundles. Known Issues and Solutions:
 -------------------------------------------------------------------
@@ -233,7 +234,9 @@ bundles:
                wsse:
                    nonce_cache_service_id: oro.cache.abstract
 
-11. **Attachments**. Our attachments functionality is based on 
+11. **Attachments**. 
+
+Our attachments functionality is based on 
     `**KnpGaufretteBundle** <https://github.com/KnpLabs/KnpGaufretteBundle>`_. Default storage is the "attachments" 
     directory in the [Application root] directory - see the 
     config (Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yaml)
@@ -256,8 +259,7 @@ But in case of a web farm configuration we have to share all the attachments amo
 
 There are several ways to achieve this:
 
-- the simplest solution is to share the attachments folder, the same way as with cache folder. However this way is not 
-  the fastest one if there is a lot of work with attachments.
+- the simplest solution is to share the attachments folder, for example, using NFS, however this way is not the fastest one    if there is a lot of work with attachments.
 
 - another way is to configure KnpGaufretteBundle to use the external storage, such as 
   Azure Blob Storage/AwsS3/AmazonS3/FTP/SFTP/MogileFS/MongoGridFS/Open Cloud/Dropbox, see full 
@@ -335,16 +337,16 @@ The default configuration is pretty simple:
    http {
        server {
            listen 80;
-               location / {
-                   proxy_pass http://application; 
-               }
+           location / {
+               proxy_pass http://application; 
            }
+       }
 
-           upstream application {
-               server node1.local.com; 
-               server node2.local.com; 
-               server node3.local.com; 
-           }  
+       upstream application {
+           server node1.local.com; 
+           server node2.local.com; 
+           server node3.local.com; 
+       }  
    }
     
 
