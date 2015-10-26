@@ -104,15 +104,11 @@ You can enable attachments for the entity records and define relevant limitation
 - Define the upper limit of an attachment size, if necessary. No larger attachments will be added.
 
 - Limit the list of supported MIME types if necessary. If no MIME type is defined, the list defined in 
-  the *System → Configuration → Upload Settings* will be used. 
+  the :ref:`Configuration → Upload Settings <admin-configuration-uploads>` will be used. 
   
   Define the list of MIME types supported in the field, add each new type on a new line. For example:
   
 .. image:: ./img/entity_management/new_entity_general_mime_types.png
-
-.. important::
-
-    If the MIME types field is empty, the settings defined in the *System → Configuration → Upload Settings* are used.
 
 
 .. _user-guide-entity-management-create-other:
