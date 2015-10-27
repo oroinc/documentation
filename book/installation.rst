@@ -522,6 +522,23 @@ To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInt
     Read the `documentation`_ to learn more about the Doctrine Data Fixtures
     extension.
 
+Activating Background Tasks
+---------------------------
+
+Time consuming or blocking tasks should usually be performed in the background to not influence the
+user experience in a bad way. For example, the OroPlatform uses the `JMSJobQueueBundle`_ to
+asynchronously run maintenance tasks. You simply have to make sure that its entry point is called
+regularly, for example, by executing it every minute through the system's cron system:
+
+.. code-block:: text
+
+    */1 * * * * /path/to/php /var/www/orocrm/app/console oro:cron --env=prod > /dev/null
+
+.. seealso::
+
+    You can also create your own commands that are executed in the background at certain times.
+    Read more about it in the :doc:`chapter about executing jobs </book/jobs>`.
+
 .. _`Composer`: http://getcomposer.org/
 .. _`instructions for installing Composer globally`: http://symfony.com/doc/current/cookbook/composer.html
 .. _`its documentation`: https://getcomposer.org/doc/
@@ -538,3 +555,4 @@ To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInt
 .. _`Symfony Cookbook`: http://symfony.com/doc/current/cookbook/index.html
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 .. _`documentation`: https://github.com/doctrine/data-fixtures/blob/master/README.md
+.. _`JMSJobQueueBundle`: http://jmsyst.com/bundles/JMSJobQueueBundle
