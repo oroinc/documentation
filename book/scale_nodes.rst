@@ -36,11 +36,7 @@ Additional Requirements to the Bundles. Known Issues and Solutions:
   If you want to store the lock file in another location, see the `documentation on the 
   LexicMaintenanceBundle <https://github.com/lexik/LexikMaintenanceBundle/blob/master/Resources/doc/index.md>`_.
 
-- **CRON** jobs: there shouldn't be any problems, as the queue is stored in the Database, so all the web-nodes will 
-  know the actual state of each job. 
-  By default the job daemon is configured to run 5 concurrent (simultaneous) jobs. So, for example, if we have 5 web 
-  farm nodes we can decrease this value to 1. In this case, each node will run only 1 CRON job. In some cases it can 
-  also be more efficient to have an independent node just for CRON jobs.
+- **CRON** jobs: it is recommended to set up an independent node dedicated only to the CRON jobs (or use one of the web-nodes for all the CRON jobs).
 
 - **REDIS**: use `SncRedisBundle <https://github.com/snc/SncRedisBundle>`_
   
@@ -51,7 +47,8 @@ Additional Requirements to the Bundles. Known Issues and Solutions:
 
     - The PhpRedis extension file (.so) can be installed via the package manager
 
-      - for Linux: yum/dnf/apt-get install php-pecl-redis
+      - for Linux: yum/dnf/apt-get install php-pecl-redis or php5-redis, or other (subject to your Linux
+        distribution)
       
       - for MacOs via homebrew: brew install php55-redis
 
@@ -102,8 +99,7 @@ own bundle in the app.yml file.**
        );
    ...
 
-  - or in the bundles.yml (see the example) 
-   [Application root]/src/Oro/src/Oro/Bundle/PlatformBundle/Resources/config/oro/bundles.yml
+  - or in your own bundles.yml (Acme/Bundle/AcmeBundle/Resources/config/oro/bundles.yml) 
 
 bundles:
   ...
