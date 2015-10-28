@@ -16,7 +16,7 @@ Create System Mailbox
 .. image:: ./img/system_mailbox/new_mb.png
 
 - Go to *System → SYSTEM CONFIGURATION → General Setup → Email Configuration*
-- Click the :guilabel:`Add Mailbox` in the System Mailboxes sections
+- Click the :guilabel:`Add Mailbox` button in the System Mailboxes sections
 - Define the mailbox settings, as described in the sections below
 
 General
@@ -35,8 +35,8 @@ The "General" section defines the basic settings of the mailbox created. The fol
 Synchronization
 ^^^^^^^^^^^^^^^
 
-- Let OroCRM know the details of IMAP or SMTP connection to the mailbox, such as host, port, and encryption, and 
-  specify the login (user) and password used to access the mailbox.
+- Let OroCRM know the details of IMAP (incoming mail) and/or SMTP (outgoing mail) connection for the mailbox, 
+  such as host, port, and encryption, and specify the login (user) and password used to access the mailbox.
   
 - Click the :guilabel:`Check Connection/Retrieve Folders` 
 
@@ -61,6 +61,7 @@ Email Processing
 ^^^^^^^^^^^^^^^^
 
 You can choose what actions will be performed with all the emails received in the mailbox.
+
 Available options are:
 
 .. csv-table::
