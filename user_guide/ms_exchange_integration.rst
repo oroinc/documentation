@@ -40,7 +40,7 @@ On the OroCRM Side
   :widths: 10, 30
 
   "**Server**","Enter the name of your Microsoft Exchange Server instance"
-  "Version","choose the server version from the drop-down menu"
+  "Version","Choose the server version from the drop-down menu"
   "Login and Password","Enter the credentials of a user that has the permission to impersonate necessary accounts on the 
   related Exchange Server."
   "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."

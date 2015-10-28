@@ -81,26 +81,37 @@ Outlook 2010+
 Add-in Setup
 ^^^^^^^^^^^^^
 
-In order to enable data synchronization from OroCRM go to *System → Configuration → Integrations → MS 
-Outlook settings* 
+In order to enable data synchronization from OroCRM go to *"My User"* and click the link to download the add-in to 
+integrate with your Outlook client. 
 
-.. image:: ./img/outlook/settings.png
-
-Click the file link in the "Download" field to download MS Outlook OroCRM Plugin to integrate with your Outlook client. 
 Wait for download to finish and run the installation process.
 
+.. image:: ./img/outlook/settings_1_8.png
 
-Integration and Synchronization Settings on the OroCRM Side
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+System administrators can modify the add-in look:
 
-You can configure set of entities to be synchronized, synchronization direction, synchronization intervals and 
-priority of the conflict resolution.
-Initially, default settings are applied. To change the default settings, uncheck "Use Default" box first. 
+- Go to System → SYSTEM CONFIGURATION → Integrations → MS Outlook settings → MS Outlook Add-in
+- Modify the code to alter the add-in look.
 
-.. caution::
+In the example below, you can see the add-in default look:
 
-    If the "Use Default" box has been checked, the default values are applied regardless of the values entered for the 
-    field.
+.. image:: ./img/outlook/addin_view.png
+
+
+.. sidebar:: Use Default
+
+    Beside each of the settings there is a *"Use Default"* check-box. If the check-box is active, the default value will 
+    be used. Default values for each of the settings are described in corresponding sections below.  
+
+
+Integration Settings on the OroCRM Side
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can configure the set of entities to be synchronized, synchronization direction, synchronization 
+intervals and priority of the conflict resolution.
+
+Go to System → SYSTEM CONFIGURATION → Integrations → MS Outlook settings → Integration Settings.
+
 
 .. csv-table::
   :header: "**Setting**","**Description**","**Possible Values**","**Default Value**" 
@@ -121,8 +132,13 @@ Initially, default settings are applied. To change the default settings, uncheck
   86399","120"
   "**Outlook Sync Interval (In Seconds)**","How often changes on Outlook side will be checked","Any numeric value from 1 
   to 86399","30" 
-  "**Contacts, Tasks and Calendar Events**","Records of the entity are synchronized if the box is checked","Yes or No","
-  Yes"
+  
+
+Synchronization Settings on the OroCRM Side
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  
+"**Contacts, Tasks and Calendar Events**","Records of the entity are synchronized if the box is checked","Yes or No","
+Yes"
   
 
 Settings on the Outlook Side
