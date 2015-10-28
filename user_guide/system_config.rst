@@ -65,13 +65,12 @@ localization options to be applied to the OroCRM instance, as follows:
   *Street*
   *First and Last name*
   
-  whereas, for the US it will:
+  whereas, for the US it will be:
   
   *First and Last name*
   *Street name*
-  *CITY NAME, STATE CODE, US, ZIP code*","US"
-  
-  Otherwise, the *Primary Location* formatting will be applied. 
+  *CITY NAME, STATE CODE, US, ZIP code*  
+  Otherwise, the *Primary Location* formatting will be applied.","US" 
   "**First Quarter Starts On***","Defines the quarter start date.","January 1"
   "**Timezone***","Defines the timezone to be applied for all the time settings defined in the instance. If the 
   time-zone is changed all the time settings (e.g. due dates of :ref:`tasks <user-guide-activities-tasks>`), time of
@@ -116,9 +115,9 @@ language-related options to be applied to the OroCRM instance, as follows:
   "**Default Language***","Defines the language used for the instance UI. Choose a language from the drop-down menu:
   
   |UseDef|","English"
-  "**Supported Languages***","Defines a set of languages that can be used for translation of the :ref:`email 
-  templates <user-guide-email-template>`. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the languages
-  from the list.
+  "**Supported Languages***","Defines a set of languages that can be used for translation of the 
+  :ref:`email template <user-guide-email-template>`. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the 
+  languages from the list.
 
   |Supported|","English"
   "**Available Translations** grid","
@@ -304,7 +303,7 @@ are available:
   :widths: 10, 30, 10
   
   "**Signature Content**","Specify the text and formatting of the signature","Empty"
-  "**Append Signature To Email Body***","Defines whether a signature must be added automatically or manually.","Auto"
+  "**Append Signature To Email Body**","Defines whether a signature must be added automatically or manually.","Auto"
 
   
 Email Threads
@@ -348,6 +347,18 @@ Campaign Configuration
 The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in 
 OroCRM. You can define the **Sender Email** and **Sender Name** to be used.
 
+
+System Mailboxes
+^^^^^^^^^^^^^^^^
+
+System mailbox allows people who don't have access to the company mailbox addresses write to the company. 
+
+You can create several system mailboxes. This may be, 
+for example, a mailbox for support request, for business proposals, for order requests, etc. You can define and modify 
+the list of OroCRM users who have access to each of these mailboxes, automatically turn letters into cases or leads, 
+and set-up auto-responses. 
+The way to set up a system mailbox is described in the 
+:ref:`System Mailboxes guide <admin-configuration-system-mailboxes>`
 
 .. _admin-configuration-integrations:
 
