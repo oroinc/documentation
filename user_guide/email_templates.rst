@@ -36,6 +36,11 @@ Create Email Templates
 Optional field *"Entity Name"* shall be used to define an :term:`entity <Entity>`, variables whereof can be used 
 in the template. If no entity name is defined, only system variables will be available.
 
+.. important::
+
+    If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the
+    *"Entity Name"* value should be *"Email"*.
+
 3. Define the email template. Click on the necessary variable to add drag it to the text box. 
 
 .. image:: ./img/marketing/email_template_ex.png
