@@ -80,14 +80,29 @@ to an organization/business unit.
 
 Email synchronization settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-With the "Email synchronization settings" you can enable the uploading of sales-related emails from the defined mailbox 
-to your OroCRM account.
-Once you've defined the mailbox details, OroCRm will collect any letter on the server such that one of 
-its from/to fields is an email address assigned to any contact and the other one is an email address assigned to any 
-user in the OroCRM instance.
 
-You can then :ref:`see this emails <user-guide-activities-emails-view>` in the activities of the contact, activities of
-the user and in My Emails.
+Use the section to synchronize emails between mailbox of the user and OroCRM. 
+
+- Let OroCRM know the details (such as host, port, and encryption) of IMAP to upload the incoming mail to OroCRM 
+- Define the SMTP details (such as host, port, and encryption) to synchronize the outgoing mail from OroCRM to the 
+  mailbox
+- Specify the login (user) and password used to access the mailbox
+- Click the :guilabel:`Check Connection/Retrieve Folders` 
+- After successful connection, the list of available folders will be loaded. Check the Folders to be synchronized.
+
+In the example below, synchronization has been done for a .gmail mailbox. The INBOX folder will be synchronized.
+
+
+.. hint::
+
+    Detailed instructions on the way to set-up IMAP and SMTP connection in gmail, are provided 
+    `here <https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144>`_
+
+    To enable connection, check the box next to
+    `Allow access for less secure apps box <https://support.google.com/accounts/answer/6010255?hl=en>`_
+
+
+.. image:: ./img/system_mailbox/synchronize_mb.png 
 
 
 View and Manage a User Record
