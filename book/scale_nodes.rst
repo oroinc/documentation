@@ -181,7 +181,7 @@ bundles:
 
 .. code-block:: yaml
 
-   frameworks:
+   framework:
        annotations:
            cache: oro.cache.abstract
 
