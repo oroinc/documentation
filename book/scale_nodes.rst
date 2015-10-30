@@ -109,7 +109,7 @@ bundles:
 4. **Configure** SncRedisBundle - see 
    `the documentation <https://github.com/snc/SncRedisBundle/blob/master/Resources/doc/index.md>`_
 
-**app/config/config.yaml:**
+**app/config/config.yml:**
    
 .. code-block:: yaml
 
@@ -136,13 +136,13 @@ bundles:
                client: doctrine
                entity_manager: default
 
-5. **Sessions storage**. By default the the parameters.yaml is configured to store the session in files 
+5. **Sessions storage**. By default the parameters.yml is configured to store the session in files 
    (*session_handler: *session.handler.native_file*). The simplest way to deal with the sessions in a web farm 
    configuration is to store them in the DB - just change the value to "*session.handler.pdo*". 
 
    You can also store them in Redis:
 
-**app/config/config.yaml:**
+**app/config/config.yml:**
    
 .. code-block:: yaml
 
@@ -164,7 +164,7 @@ bundles:
    
    In our case the oro.cache.abstract* is applicable.
 
-**app/config/config.yaml:**   
+**app/config/config.yml:**   
 
 .. code-block:: yaml
    
@@ -177,7 +177,7 @@ bundles:
 
 7. **Annotations** cache configuration:
 
-**app/config/config.yaml:**
+**app/config/config.yml:**
 
 .. code-block:: yaml
 
@@ -187,7 +187,7 @@ bundles:
 
 8. **Doctrine** cache configuration:
 
-**app/config/config.yaml:**
+**app/config/config.yml:**
 
 .. code-block:: yaml
 
@@ -200,16 +200,15 @@ bundles:
            #            type: service
            #            id: doctrine.metadata.cache
            #
-           #src/Oro/Bundle/PlatformBundle/Resources/config/doctrine.yaml
            #doctrine.metadata.cache: 
            #        parent: oro.cache.abstract
            #        calls:
-           #           - [ setNamespace, [ 'doctrine_metadata' ] ]
+           #           - [ setNamespace, [ 'doctrine.metadata.cache' ] ]
 
 
 9. **JMS Serializer** cache configuration:
 
-**app/config/config.yaml:**
+**app/config/config.yml:**
 
 .. code-block:: yaml
    
@@ -220,7 +219,7 @@ bundles:
 10. **Security nonces**. Since each nonce should be used only once, they cannot be stored on every server, as we need
     access to all the nonces when the next API request comes in.
 
-**app/config/security.yaml:**
+**app/config/security.yml:**
 
 .. code-block:: yaml
 
@@ -235,9 +234,9 @@ bundles:
 Our attachments functionality is based on 
     `**KnpGaufretteBundle** <https://github.com/KnpLabs/KnpGaufretteBundle>`_. Default storage is the "attachments" 
     directory in the [Application root] directory - see the 
-    config (Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yaml)
+    config (Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yml)
 
-**app/config/security.yaml:**
+**app/config/security.yml:**
 
 .. code-block:: yaml
    
