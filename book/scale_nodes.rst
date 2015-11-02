@@ -160,7 +160,7 @@ bundles:
 
 6. There are two abstract services used in the Oro Platform that are responsible for the cache saving.
    *oro.file_cache.abstract*: should be used to cache the data private for each node in a web farm
-   *oro.cache.abstract*: should be used to cache data the data to be shared between the nodes.
+   *oro.cache.abstract*: should be used to cache the data to be shared between the nodes.
    
    In our case the oro.cache.abstract* is applicable.
 
