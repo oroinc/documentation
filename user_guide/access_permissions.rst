@@ -4,7 +4,7 @@ Access and Permissions Management
 =================================
 
 OroCRM provides a very flexible structure of access and permissions management that can be defined from the 
-:ref:`security bundle <ubook-security-bundle>` and/or from the UI. 
+:ref:`security bundle <book-security-bundle>` and/or from the UI. 
 
 From the UI you can define ability of a specific user or group of users to view, create, edit or delete 
 records of a specific :term:`entity <Entity>` and change its :term:`owner <Owner>`. To do so, you can usie the 
