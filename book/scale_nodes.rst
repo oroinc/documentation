@@ -170,6 +170,7 @@ bundles:
    
    services:
        oro.cache.abstract:
+           abstract: true
            class: Snc\RedisBundle\Doctrine\Cache\RedisCache
            calls:
                - [setRedis, [@snc_redis.default]]
@@ -181,9 +182,19 @@ bundles:
 
 .. code-block:: yaml
 
+   services:
+       …
+       oro.cache.annotations:
+           public: false
+           parent: oro.cache.abstract
+           calls:
+               - [ setNamespace, [ "oro_annotations_cache" ] ]
+    
+   …
+   
    framework:
        annotations:
-           cache: oro.cache.abstract
+           cache: oro.cache.annotations
 
 8. **Doctrine** cache configuration:
 
@@ -223,11 +234,21 @@ bundles:
 
 .. code-block:: yaml
 
+   services:
+       …
+       oro.cache.wsse_nonces:
+           public: false
+           parent: oro.cache.abstract
+           calls:
+               - [ setNamespace, [ "oro_nonces_cache" ] ]
+    
+   …
+   
    security:
        firewalls:
            wsse_secured:
                wsse:
-                   nonce_cache_service_id: oro.cache.abstract
+                   nonce_cache_service_id: oro.cache.wsse_nonces
 
 11. **Attachments**. 
 
