@@ -3,10 +3,12 @@
 Access and Permissions Management
 =================================
 
-OroCRM provides a very flexible structure of access and permissions management. 
+OroCRM provides a very flexible structure of access and permissions management that can be defined from the 
+:ref:`security bundle <book-security-bundle>` and/or from the UI. 
 
-Whether a user will be able to view, create, edit or delete records of a specific entity and change its :term:`Owner` 
-depends on a combination of several factors, namely:
+From the UI you can define ability of a specific user or group of users to view, create, edit or delete 
+records of a specific :term:`entity <Entity>` and change its :term:`owner <Owner>`. To do so, you can usie the 
+following settings:
 
 - Ownership Type defined of the entity
 
@@ -18,10 +20,10 @@ depends on a combination of several factors, namely:
 Ownership Types
 ---------------
 
-Each entity in OroCRM has an :ref:`ownership type <user-guide-entity-management-create-other>` type, which defines the 
+Each entity in OroCRM has an :ref:`ownership type <user-guide-entity-management-create-other>`, which defines the 
 level at which permissions will be set for records of the entity.
 
-If the ownership type is set to *"None"*, no authorization is required to see and process the entity and all the users
+If the ownership type is set to *"None"*, all the users
 within the OroCRM instance will be able to view, create, edit, delete and assign records of the entity for organizations
 other than a :ref:`system organization <user-ee-multi-org-system>`. Otherwise, they depend on the specific Role 
 settings, as described below. 
