@@ -37,7 +37,7 @@ process the entity records is defined by the role(s) assigned to the user.
 Roles-specific Permissions
 --------------------------
 
-Each user is assigned a :ref:`Role <user-guide-user-management-permissions-roles>` or set of roles. Within the role you
+Each user is assigned a :ref:`Role <user-guide-user-management-roles>` or set of roles. Within the role you
 can define permissions to perform specific actions with records of each entity:
 
 Actions to Permit

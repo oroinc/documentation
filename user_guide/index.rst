@@ -1,3 +1,5 @@
+.. _user-guide-main:
+
 User Guide
 ==========
 
@@ -7,10 +9,9 @@ business needs.
 
 * :doc:`/user_guide/getting_started_index`
 
-    * :doc:`/user_guide/first_steps`
-    * :doc:`/user_guide/basic_entities`
-    * :doc:`/user_guide/log_in`
-
+  * :doc:`/user_guide/first_steps`
+  * :doc:`/user_guide/basic_entities`
+  * :doc:`/user_guide/log_in`
   * :doc:`/user_guide/ui_understanding_index`
  
     * :doc:`/user_guide/navigation`
@@ -109,6 +110,9 @@ business needs.
     * :doc:`/user_guide/ms_exchange_integration`
     * :doc:`/user_guide/outlook_sync`
     * :doc:`/user_guide/embedded_forms`
+
+
+      |  
 
 
 * :doc:`/user_guide/admin_index`

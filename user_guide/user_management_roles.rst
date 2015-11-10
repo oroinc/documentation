@@ -1,4 +1,4 @@
-.. _user-guide-user-management-permissions-roles:
+.. _user-guide-user-management-roles:
 
 Roles Management
 ================

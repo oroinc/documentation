@@ -53,7 +53,7 @@ Groups and Roles
 ^^^^^^^^^^^^^^^^
 
 The "Groups and Roles" section contains all the :ref:`user groups <user-management-groups>` and 
-:ref:`roles <user-guide-user-management-permissions-roles>` available in the system. Check the boxes to assign the user
+:ref:`roles <user-guide-user-management-roles>` available in the system. Check the boxes to assign the user
 created to a group/role.
 
 One user may have several roles. All the permissions granted to at least one of the roles, are granted to the user. 

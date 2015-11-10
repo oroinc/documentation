@@ -131,7 +131,7 @@ see corresponding pages or grids, as described below:
   
     - The grid of :ref:`User records <user-management-users>`
 
-    - The grid of :ref:`Roles <user-guide-user-management-permissions-roles>`
+    - The grid of :ref:`Roles <user-guide-user-management-roles>`
 
     - The grid of :ref:`User Groups <user-management-groups>`
 

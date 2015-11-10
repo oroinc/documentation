@@ -1,19 +1,18 @@
 Getting Started
 ===============
 
-Customer-relations have long been a cornerstone to successful business development. Regardless of the business scale,
-you need to keep the track of continuously growing amounts of information and find ways to use it for the best of your 
-company. 
+Customer relationships have long been a cornerstone of successful business development. Regardless of your business 
+scale, you need to keep track of the growing amount of customer information and find the best ways to utilize it for 
+your company. 
 
-With OroCRM, you can record, store, process and analyze all kinds of customer-related data including the details of 
-customer profiles, shipping information, customer activity, perspective sales and arrangements, and 
-many others. 
+With OroCRM, you can capture, store, and analyze all kinds of customer-related data, including the details of 
+customer profiles, shipping information, customer activity, prospective sales, and much more. 
 
-The system provides tools and functionalities, with which you can easily monitor, manage and understand 
-specific customer-related activities.
+OroCRM provides the tools and functionality to easily monitor and manage specific customer-related activities and 
+leverage this data to personalize content and communications
 
-Here you can find some introductory documents that will help to understand the system basics and description of the main
-navigation components and controls to make you comfortable with the system UI.
+Here you can find some introductory documentation that will describe the main navigation components and controls of 
+OroCRM and help you understand the basics of the system so that you are comfortable with the system UI.
 
 
 * :doc:`/user_guide/first_steps`
