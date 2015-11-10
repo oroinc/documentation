@@ -7,6 +7,9 @@ administrators.
 Please note that in may cases the tools may be not available to usual users, subject to the permissions defined. 
 
 * :doc:`/user_guide/system_config`
+
+  * :doc:`/user_guide/system_mailboxes`
+
 * :doc:`/user_guide/entities`
 * :doc:`/user_guide/entity_fields` 
 * :doc:`/user_guide/processes`
@@ -28,6 +31,7 @@ Please note that in may cases the tools may be not available to usual users, sub
     :maxdepth: 2
 
     system_config
+    system_mailboxes
     entities
     entity_fields
     processes

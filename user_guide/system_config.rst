@@ -19,6 +19,10 @@ The available options are described and explained in the order they appear in th
 
     Beside each of the settings there is a *"Use Default"* check-box. If the check-box is active, the default value will 
     be used. Default values for each of the settings are described in corresponding sections below.  
+	
+.. hint ::
+
+    The :guilabel:`Reset` button will restore the latest saved values.
 
 Application Settings
 --------------------
@@ -54,19 +58,19 @@ localization options to be applied to the OroCRM instance, as follows:
   "**Locale***","Affects formatting of numbers, addresses, names, and dates.","English"
   "**Primary Location*** and **Format Address Per Country***","Define the address formatting to be applied. If *Format 
   Address Per Country* is enabled and the country-specific formatting is enabled for the instance, the address will be 
-  displayed in compliance with the rules specified for the country. Otherwise, the *Primary Location* formatting will be
-  applied. 
+  displayed in compliance with the rules specified for the country.
   For example, if the chosen country is Ukraine, the address will be displayed as follows:
   
   *ZIP code Ukraine City*
   *Street*
   *First and Last name*
   
-  whereas, for the US it will:
+  whereas, for the US it will be:
   
   *First and Last name*
   *Street name*
-  *CITY NAME, STATE CODE, US, ZIP code*","US"
+  *CITY NAME, STATE CODE, US, ZIP code*  
+  Otherwise, the *Primary Location* formatting will be applied.","US" 
   "**First Quarter Starts On***","Defines the quarter start date.","January 1"
   "**Timezone***","Defines the timezone to be applied for all the time settings defined in the instance. If the 
   time-zone is changed all the time settings (e.g. due dates of :ref:`tasks <user-guide-activities-tasks>`), time of
@@ -111,9 +115,9 @@ language-related options to be applied to the OroCRM instance, as follows:
   "**Default Language***","Defines the language used for the instance UI. Choose a language from the drop-down menu:
   
   |UseDef|","English"
-  "**Supported Languages***","Defines a set of languages that can be used for translation of the :ref:`email 
-  templates <user-guide-email-template>`. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the languages
-  from the list.
+  "**Supported Languages***","Defines a set of languages that can be used for translation of the 
+  :ref:`email template <user-guide-email-template>`. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the 
+  languages from the list.
 
   |Supported|","English"
   "**Available Translations** grid","
@@ -136,7 +140,7 @@ language-related options to be applied to the OroCRM instance, as follows:
 Display Settings
 ----------------
 
-In *"System → Configuration → General setup → Display settings"* you can define a number of display -related options
+In *"System → Configuration → General setup → Display settings"* you can define a number of display-related options
 to be applied to the OroCRM instance, as follows:
 
       |
@@ -196,11 +200,13 @@ The following options are available:
   :header: "Option", "Description", "Default"
   :widths: 10, 30, 10
 
-  "**Items Per Page By Default***","Defines the number of activities displayed on one page of the grid by 
+  "**Items Per Page By Default***","Defines the number of items displayed on one page of the grid by 
   default (every time you open the grid.) You can change the number each time.","25"
+  "**Lock Headers In Grids***","Defines whether grid headers will be locked on a page during scrolling.","Enabled"
   "**Record Pagination***","If enabled, you can navigate to previous or next grid record from a 
   :ref:`View page <user-guide-ui-components-view-pages>`","Enabled"
-  "**Record Pagination Limit***","Defines a maximum number of records available for the *Record Pagination*","1000"
+  "**Record Pagination Limit***","Defines a maximum number of records available for the *Record Pagination*. (If there 
+  are more records, the pagination will be disable for the grid to avoid performance deterioration) ","1000"
 
 Calendar settings
 ^^^^^^^^^^^^^^^^^^  
@@ -223,7 +229,7 @@ Sidebar settings
 ^^^^^^^^^^^^^^^^
 
 With the Sidebar settings you can enable or disable the left and/or right sidebar to keep your Sticky notes and Task lists. 
-By default only the left sidebar is enabled.
+By default only the right sidebar is enabled.
 
 
 .. _admin-configuration-tracking:
@@ -254,18 +260,36 @@ The following options are available:
     In order to enable the data transfer to a Piwik account, the "identifier" field of the Tracking Website record shall
     be the same as the `Website ID <http://piwik.org/faq/general/faq_19212/>`_ used by Piwik.
 
+At the bottom of the form there is a link to the grid of all the Tracking Website records.
+
+.. _admin-configuration-uploads:
+
+Upload Settings
+---------------
+
+In the section you can define a set of mime types that will be supported for image and file entities and will be by 
+default supported for attachments in the system. 
+
+.. hint::
+
+    If :ref:`attachments are enabled for an entity <user-guide-entity-management-create-attachments>`, the settings will 
+    be applied only if that mime type list is empty.
+    
 
 .. _admin-configuration-emails:
 
 Email Configuration
 -------------------
 
-
-.. image:: ./img/configuration/email_settings.png
+.. image:: ./img/configuration/email_settings_1_8.png
 
 In the Email Configuration section you can define options, applied to all the emails generated within the instance.
 
 The following settings are available:
+
+Autocomplete
+^^^^^^^^^^^^
+Choose how many characters shall be entered manually to enable auto-complete for emails.
 
 Signature
 ^^^^^^^^^
@@ -279,7 +303,7 @@ are available:
   :widths: 10, 30, 10
   
   "**Signature Content**","Specify the text and formatting of the signature","Empty"
-  "**Append Signature To Email Body***","Defines whether a signature must be added automatically or manually.","Auto"
+  "**Append Signature To Email Body**","Defines whether a signature must be added automatically or manually.","Auto"
 
   
 Email Threads
@@ -291,6 +315,21 @@ or in a thread.
 .. image:: ./img/configuration/email_threaded.png
 
 
+Reply
+^^^^^
+
+Reply button with the *Forward* and *Reply all* options below it is available by default. The settings can be changed to 
+have "Reply all" shown at the top. 
+
+.. image:: ./img/configuration/reply_selector.png
+
+.. _admin-configuration-campaign-configuration:
+
+Campaign Configuration
+^^^^^^^^^^^^^^^^^^^^^^
+
+These *Sender Email* and *Sender Name* fields are used for Email Campaigns if no other values are defined for them.
+
 .. _admin-configuration-email-notification:
 
 Notification Configuration
@@ -298,6 +337,7 @@ Notification Configuration
 
 The section defines the rules that will be applied by default to a notification generated in the OroCRM. You can define 
 the **Sender Email** and **Sender Name** to be used.
+
 
 .. _admin-configuration-email-campaign:
 
@@ -307,6 +347,18 @@ Campaign Configuration
 The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in 
 OroCRM. You can define the **Sender Email** and **Sender Name** to be used.
 
+
+System Mailboxes
+^^^^^^^^^^^^^^^^
+
+System mailbox allows people who don't have access to the company mailbox addresses write to the company. 
+
+You can create several system mailboxes. This may be, 
+for example, a mailbox for support request, for business proposals, for order requests, etc. You can define and modify 
+the list of OroCRM users who have access to each of these mailboxes, automatically turn letters into cases or leads, 
+and set-up auto-responses. 
+The way to set up a system mailbox is described in the 
+:ref:`System Mailboxes guide <admin-configuration-system-mailboxes>`
 
 .. _admin-configuration-integrations:
 

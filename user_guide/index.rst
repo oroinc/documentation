@@ -114,6 +114,9 @@ business needs.
 * :doc:`/user_guide/admin_index`
 
   * :doc:`/user_guide/system_config`
+  
+      * :doc:`/user_guide/system_mailboxes`
+  
   * :doc:`/user_guide/entities`
   * :doc:`/user_guide/entity_fields` 
   * :doc:`/user_guide/processes`
