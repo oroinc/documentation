@@ -103,7 +103,8 @@ Administrator
 By default, there is always an “Administrator” role assigned to one user that initially gives you access to all the 
 records and functionalities available in the system. This is also known as your system administrator. 
 
-While many settings are defined during the system integration, a user-friendly UI provides for operations such as basic configuration set-up, creation and editing of new users and system entities, defining of permissions and access rights, 
+While many settings are defined during the system integration, a user-friendly UI provides for operations such as basic 
+configuration set-up, creation and editing of new users and system entities, defining of permissions and access rights, 
 set-up and management of integrations and extensions, monitoring of system usage by other users, and so on.
 
   | 
@@ -374,9 +375,9 @@ of the related entity.
 Conclusion
 -----------
 
-This way, your company can adjust OroCRM to meet its purposes and correspond to its needs, and use OroCRM
-to strengthen the marketing and sales potential, ensure efficient management, get an insight of the company trends and 
-processes and boos the productivity. 
+This way, your company can adjust OroCRM to meet its purposes and correspond to its needs. Using OroCRM will help your 
+business strengthen its marketing and sales potential, ensure efficient management, gain valuable insight of your 
+company's trends and processes, and boost overall productivity. 
 
-You can find more information about available functions and capabilities in the :ref:`User Guide <user-guide-main>`.
+You can find more information about the available functions and capabilities in the :ref:`User Guide <user-guide-main>`.
 
