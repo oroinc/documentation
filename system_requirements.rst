@@ -25,7 +25,8 @@ System Requirements
 * PHP Command Line Interface
 * PHP extensions
     * ctype
-    *  GD 2.0 and above
+    * fileinfo
+    * GD 2.0 and above
     * intl
     * JSON
     * Mcrypt
