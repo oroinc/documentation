@@ -87,35 +87,22 @@ Start Creating an Entity Field
 A bigger form will appear where you can define more field details, subject to the chosen field type.
 
 
-.. _user-guide-entity-management-create-fields-common:
-
-Create and Entity of a Specific Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The bigger form for creation of an entity field has the following three sections:
-
-- **General Information**: see and define general field properties in the section.
-
-- **Import & Export**: define the rules applied to the specific field in the course of 
-  :ref:`export/import <user-guide-export-import>` of the entity.
-
-- **Other**: define additional properties of the field.
-
-Properties that can be defined may vary subject to the chosen field type. 
-The following sections provide description of common properties defined for all or most of the types and peculiarities 
-of specific types.
-
-
 .. _user-guide-entity-management-common:
 
-Common Settings
-"""""""""""""""
+Common Settings of a Created Entity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Properties that can be defined may vary subject to the chosen field type. 
+
+The following sections provide description of common properties defined for all or most of the types and peculiarities 
+of specific types.
 
 .. _user-guide-entity-management-general-common:
 
 General Information
-*******************
+"""""""""""""""""""
 
-The following details are available in the section:
+The following details are available in the section for entities of all types:
 
 **Name***, **Storage Type*** and **Type***: the values that were specified at the previous step and cannot be 
 re-defined.
@@ -128,7 +115,7 @@ the purpose and specifics of the created field.
 
 .. _user-guide-entity-management-export-import-common:
 
-Export and Import
+Import and Export
 *****************
 
 The following details are available in the section:
@@ -162,8 +149,13 @@ The following Yes/No options can be defined:
   :widths: 10,30
 
   "**Available in Email Templates**","If set to *Yes*, values of the field can be used to create email patterns."
-  "**Contact Information**","If set to *Yes*, the field value shall be treated by the system as contact details. (E.g.
-  can be used to create marketing lists)."
+  "**Contact Information**","Possible values are:
+    
+    - empty: the field will not be treated as a contact information
+    - *Email*: values of the field will be treated by the system as an email address
+    - *Phone*: values of the field will be treated by the system as a phone number
+
+  "
   "**Show on Grid**","If set to *Yes*, the field will be displayed in a separate column of the respective grid."
   "**Show Grid Filter**","Not available for serialized fields. If set to *Yes*, a corresponding filter will be added to 
   the :ref:`grid filters <user-guide-ui-components-grid-filters>` by default." 
@@ -175,6 +167,9 @@ The following Yes/No options can be defined:
   Custom fields are always displayed one after another, usually below the system fields. If no priority is defined or the 
   defined priority is 0, the fields will be displayed in the order they have been added to the system (the later - the
   lower). The fields with a higher priority (a bigger value) will be displayed before the fields with a lower priority."
+  "**Searchable**","If set to *Yes*, the entities can be found with OroCRM's 
+  :ref:`search functionality <user-guide-getting-started-search>` by values of this field."
+  "**The Search Result Title**","If set to *Yes*, the field value will be included into the search result title."
   "**Auditable**","Not available for serialized fields. If set to *Yes*, data on the field processing details is 
   logged."
   "**Applicable Organizations**","Defines for what :term:`organizations <Organization>` the custom field will be added 
@@ -464,7 +459,7 @@ The following actions are available from the *Fields* section of a View page of 
 
 
   All the properties of custom fields but their name and type may be edited. The properties are the same as when 
-  you :ref:`create a field <user-guide-entity-management-create-fields>`.
+  you create a field.
 
   The list of properties editable for System fields depends on configuration and is created in a way reasonable and safe 
   for the system performance and operation.  

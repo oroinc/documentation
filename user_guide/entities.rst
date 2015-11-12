@@ -41,6 +41,8 @@ In order to create a custom entity, you have to specify its details as described
 General Information
 ^^^^^^^^^^^^^^^^^^^
 
+.. image:: ./img/entity_management/new_entity_general_information.png
+
 The following two fields are mandatory and **must** be defined:
 
 .. csv-table::
@@ -52,7 +54,8 @@ The following two fields are mandatory and **must** be defined:
   letter.
 
   The name field cannot be a `reserved sql word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_."
-  "**Label***","The label will be used to refer to the entity in the UI. Label shall be at least 2 symbols long."
+  "**Label***","The label will be used to refer to the entity in the UI. The value shall be at least 2 symbols long."
+  "**Plural Label**","The label defined will be used to name the menu items and grids related to the entity."
 
 .. caution::
 
@@ -71,7 +74,6 @@ The following general entity details are optional and may be specified:
   :widths: 10, 30
 
   "**Icon**","All the entity records will be displayed with the icon chosen."
-  "**Plural Label**","The label defined will be used to name the menu items and grids related to the entity."
   "**Description**","Free text info to help you or other users understand the purpose and specifics of the created 
   entity in future."  
 
@@ -85,9 +87,13 @@ The section contains check-boxes for all the activities available and *"Enable N
 
 .. image:: ./img/entity_management/new_entity_communication_collaboration.png
 
-- Check the activities that you want to enable for the entity.
+- Check the :ref:`activities <user-guide-activities-index>` that you want to enable for the entity.
 
-- Choose *Yes* in the drop-down and it will be possible to add free text *Notes* to the entity records.
+- Choose *Yes* in the *"Enable Notes"* drop-down and it will be possible to add :ref:`notes <user-guide-add-note>` to 
+  the entity records.
+
+- Choose *Yes* in the  *"Enable Comments"* drop-down and it will be possible to add 
+  :ref:`comments <user-guide-activities-comments>` to the entity and/or activity records.
 
 
 .. _user-guide-entity-management-create-attachments:
@@ -110,39 +116,32 @@ You can enable attachments for the entity records and define relevant limitation
   
 .. image:: ./img/entity_management/new_entity_general_mime_types.png
 
+- Select if attachments of the records should be linked to automatically or manually. 
+
 
 .. _user-guide-entity-management-create-other:
 
 Other Settings
 ^^^^^^^^^^^^^^
 
-The following three fields must be specified for every entity created:
 
-.. csv-table::
-  :header: "Name","Description"
-  :widths: 10, 30
+.. image:: ./img/entity_management/new_entity_other.png
 
-  "**Ownership Type***","Defines the level at which permissions will be set for instances of the entity:
+- Define the level at which permissions will be set for records of the entity. (More detailed description of Ownership
+  types is available :ref:`here <user-guide-user-management-permissions-ownership-type>`).
   
-  - None: no authorization is required to see and process the entity.
-  
-  - User/Business Unit/Organization: defines the level at which an Owner can be defined.
-    
-  "
-  "**Auditable**","If enabled, the actions performed with the entity records will be recorded and can be 
+  By default the value is set to None, which means that any user in the system can access and process the records.
+
+- Define if records of the entity will be *Searchable*, i.e. if they can be found with OroCRM's 
+  :ref:`search functionality <user-guide-getting-started-search>`.
+
+- Define if the actions performed with the entity records will be recorded and can be 
   viewed with System → Audit functionality.
-  
-  " 
-  "**Workflow Step in Grid**","
 
-  - Show: if there is a workflow defined for the entity, the workflow *Step* will be displayed on the entity records 
-    :ref:`grid <user-guide-ui-components-grids>`.
-
-  - Hide: no steps will be shown in the grid, even if there is a workflow defined for the entity."
+- Define if the steps of a related :ref:`workflow <user-guide-workflow-management-basics>` will be displayed on the 
+  entity records :ref:`grid <user-guide-ui-components-grids>`. 
   
 
-.. _user-guide-entity-management-create-fields:
-  
 Add Fields to an Entity
 -----------------------
 
@@ -173,8 +172,7 @@ so please be patient.
 Manage Entities
 ---------------
 
-Sometimes there is a need to edit existing entities of OroCRM from the 
-Web UI.
+Sometimes there is a need to edit existing entities of OroCRM from the Web UI.
 
 Entities Grid 
 ^^^^^^^^^^^^^
@@ -200,10 +198,14 @@ The following table describes columns of the Entities grid and how they affect a
   directly, however, you need to have permissions to edit the entity (See System → User Management → Roles)."
   "**NAME** and **MODULE**","Define the name used to refer to the entity at the back-end. Comes handy if there is a 
   need to change configuration or otherwise find the entity in the code.","No"
+  "**DELETED**","Defines if the entity has been deleted since the latest schema updated.","Entities that have been 
+  deleted can be viewed, edited and restored until the next schema update."
+  "**ORGANIZATION**","For systems with :ref:`multiple organizations <user-ee-multi-org>` shows, to which organizations 
+  the entity belongs.","No"
   "**UPDATED AT**","The date and time of the last schema update for the entity.","No"
   "...","Hover your mouse over the *...* to access the action icons.","Use the icons to manage the entity."  
 
-This way, ability to add :ref:`new fields <user-guide-entity-management-create-fields>` depends on the entity, 
+This way, ability to add :ref:`new fields <user-guide-field-management>` depends on the entity, 
 :ref:`Edit form <user-guide-ui-components-create-pages>` is available for any entity in the system. 
 List of editable properties for each of the System type entities depends on 
 configuration and is created in a way reasonable and safe for the system performance and operation. 

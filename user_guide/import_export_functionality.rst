@@ -71,7 +71,7 @@ Export
 .. note::
 
     Please note that scope of record details exported, their names and position in the .csv file depend on the 
-    :ref:`Import&Export settings <user-guide-entity-management-create-fields-common>` of the entity fields.
+    :ref:`Import&Export settings <user-guide-entity-management-export-import-common>` of the entity fields.
 
 
 
