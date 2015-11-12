@@ -101,7 +101,8 @@ Along with that, the following values can be defined, if they are required by th
   "**Password**","The default password of the LDAP server used with the username above."
   "**Account Domain Name**","The fully qualified domain name (FQDN) of the domain, for which the target LDAP server is 
   an authority."
-  "**Short Account Domain Name**","The short name of the domain, for which the target LDAP server is an authority. This is 
+  "**Short Account Domain Name**","The short name of the domain, for which the target LDAP server is an authority. This 
+  is 
   usually used to specify the NetBIOS domain name for Windows networks but may also be used by non-AD servers."
   
 Once all the necessary settings have been defined, click the :guilabel:`Check Connection` button. If everything is 
@@ -160,13 +161,15 @@ The following values must be defined:
   user to a role (e.g. roleOccupant)."
   "**Export User Object Class***","The class of the LDAP server objects that correspond to OroCRM's user profiles
   (e.g. inetOrgPerson)."
-  "**Export User Base Distinguished Name***","Distinuguished name of the directory that contains LDAP server objects that 
+  "**Export User Base Distinguished Name***","Distinuguished name of the directory that contains LDAP server objects 
+  that 
   correspond to OroCRM's user profiles (e.g. dc=orocrm,dc=com)."
 
 Click the :guilabel:`+Add` under the *Role Mapping* section to map roles of OroCRM and of the target LDAP server.
 
 Define the role name in the target LDAP server and choose the role in OroCRM to map.
-|
+
+  |
 
 .. image:: ./img/ldap/ldap_role_mapping_add_role.png
   
