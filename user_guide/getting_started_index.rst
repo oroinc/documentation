@@ -1,18 +1,18 @@
 Getting Started
 ===============
 
-Customer relationships have long been a cornerstone of successful business development. Regardless of your business 
-scale, you need to keep track of the growing amount of customer information and find the best ways to utilize it for 
+Good customer relationships are essential for successful business development. Regardless of your business 
+scale, you need to keep track of all your customer information and find the best ways to utilize it to benefit
 your company. 
 
 With OroCRM, you can capture, store, and analyze all kinds of customer-related data, including the details of 
 customer profiles, shipping information, customer activity, prospective sales, and much more. 
 
-OroCRM provides the tools and functionality to easily monitor and manage specific customer-related activities and 
+In addition, OroCRM provides the tools and functionality to easily monitor and manage specific customer-related activities and 
 leverage this data to personalize content and communications
 
-Here you can find some introductory documentation that will describe the main navigation components and controls of 
-OroCRM and help you understand the basics of the system so that you are comfortable with the system UI.
+In this guide, you will find some introductory documentation to help you understand the basics of OroCRM, as well as 
+description of its main navigation components and controls so that you are comfortable using the system UI.
 
 
 * :doc:`/user_guide/first_steps`
