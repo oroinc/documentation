@@ -127,7 +127,7 @@ Glossary
        reported by the customers.   
  
    Context
-       A set of :term:`records <Record>` related to a certain email, task or event.   
+       A set of :term:`records <Record>` related to a certain email.   
 
 
 .. |WT02| replace:: Shopping Carts
