@@ -29,7 +29,7 @@ business needs. Follow the links to learn more about the following activities av
 - :ref:`Create Contact Request <user-guide-activities-requests>`: keep track of requests to OroCRM from users of 
   third-party applications.
 
-- :ref:`Add Comment <user-guide-activities-comments>`: add free text comments to the activity records.
+- :ref:`Add Comment <user-guide-activities-comments>`: add free text comments to the activity and entity records.
 
 - :ref:`Add Attachment <user-guide-activities-attachments>`: upload a file and assign it to a record in OroCRM.
 
@@ -39,17 +39,14 @@ business needs. Follow the links to learn more about the following activities av
 How to Enable Activities for an Entity
 --------------------------------------
 
-Most of the activities can be enabled for the entity records in the *Communication & Collaboration* section of the
+Activities can be enabled for the entity records in the *Communication & Collaboration* section of the
 :ref:`entity edit/create form <user-guide-entity-management-create>`.
 
-.. image:: ./img/activities/comments.png
+.. image:: ./img/entity_management/new_entity_communication_collaboration.png
 
 - Check the activities that you want to enable for the entity.
                                    
-- Choose *Yes* in the drop-down menu and it will be possible to add free text *Notes* to the entity records.
-
-- The *Add Comment* drop-down menu is meaningful for activities only. You can change the comment setting for the activities
-  available in the system.
+- Choose *Yes* in the drop-down in the corresponding menu to enable free text notes and comments.
 
 Once such an activity has been enabled, it will appear in the 
 :ref:`actions <user-guide-ui-components-view-page-actions>` tab of the record View pages.
