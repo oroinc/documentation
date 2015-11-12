@@ -19,9 +19,9 @@ with the system.
 User
 ----
 
-A **User** record is a set of credentials (login and password) that defines what part of the system,
-which functionalities and actions are available to the person, group of people, or third-party person who have 
-entered the system using this credentials.
+A **User** record represent a person, group of people or third-party system using OroCRM. 
+User's credentials (login and password) identify a unique user an define what part of the system, which 
+functionalities and actions will available for them in the system.
 
 Any amount of User records may be defined for one OroCRM instance.
 

@@ -7,11 +7,14 @@ editions (described in more detail in the OroCRM Integrations Overview), as well
 can be added to any website to collect requests to the OroCRM team.
 
 * :doc:`/user_guide/integrations_overview`
+
 * :doc:`/user_guide/google_single_sign_on`
   
 * :doc:`/user_guide/magento_channel_integration`
 
 * :doc:`/user_guide/zendesk_integration`
+
+* :doc:`/user_guide/ldap_integration`
 
 * :doc:`/user_guide/mailchimp_integration`
 
@@ -30,6 +33,7 @@ can be added to any website to collect requests to the OroCRM team.
     integrations_overview
     google_single_sign_on
     zendesk_integration
+    ldap_integration
     magento_channel_integration
     mailchimp_integration
     dotmailer_integration
