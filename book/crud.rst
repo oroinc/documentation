@@ -149,8 +149,7 @@ The Datagrid
 ------------
 
 Relying on the features provided by OroPlatform, the controller for listing the stored objects
-becomes really slim. It basically just needs to return the type of object being displayed in the
-grid:
+becomes really slim. It basically just needs to return the name of the grid:
 
 .. code-block:: php
     :linenos:
@@ -176,7 +175,7 @@ grid:
          */
         public function indexAction()
         {
-            return array('entity_class' => 'InventoryBundle\Entity\Vehicle');
+            return array('gridName' => 'vehicles-grid');
         }
     }
 
@@ -195,6 +194,13 @@ will be ``InventoryBundle:Vehicle:index.html.twig``).
     You can read more about both the ``@Route`` and the ``@Template`` annotation in the
     `SensioFrameworkExtraBundle documentation`_.
 
+``@Acl`` and ``@AclAncestor`` annotations will help you to configure security limitations for your action
+
+.. seealso::
+
+    Take a look at the `OroSecurityBundle`_ documentation to find out details about security configuration
+
+
 Now you have to create the template for this action:
 
 .. code-block:: html+jinja
@@ -202,7 +208,6 @@ Now you have to create the template for this action:
 
     {% extends 'OroUIBundle:actions:index.html.twig' %}
     {% import 'OroUIBundle::macros.html.twig' as UI %}
-    {% set gridName = 'vehicles-grid' %}
     {% set pageTitle = 'Vehicles'|trans %}
 
     {% block navButtons %}
@@ -353,6 +358,9 @@ is identified by a name (``vehicles-grid`` here) and consists of the following s
     configured ``type`` is ``navigate``, clicking the icon will be the same as clicking on an HTML
     link while using ``delete`` performs an HTTP DELETE request in the background.
 
+.. seealso::
+    Take a look on `OroDatagridBundle`_ to find more details about datagrid configuration
+
 .. _book-crud-create-update:
 
 Creating and Updating Entities
@@ -383,7 +391,7 @@ and register it as a service:
             ;
         }
 
-        public function setDefaultOptions(OptionsResolverInterface $resolver)
+        public function configureOptions(OptionsResolver $resolver)
         {
             $resolver->setDefaults(array(
                 'data_class' => 'InventoryBundle\Entity\Vehicle',
@@ -497,6 +505,10 @@ create a dedicated method that is handling the form submission:
             );
         }
     }
+
+.. seealso::
+
+    You can also use unified `OroFormUpdateHandler`_ to handle entity create/update requests
 
 Both actions just need to return the ``Vehicle`` to be shown in the form as well as the
 ``FormView`` itself. Then, the template can look like this:
@@ -803,3 +815,6 @@ Finally, make sure to load the controllers route:
 .. _`macro from the UI bundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/macros.html.twig
 .. _`update.html.twig`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/update.html.twig
 .. _`FOSRestBundle`: http://symfony.com/doc/master/bundles/FOSRestBundle/index.html
+.. _`OroSecurityBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SecurityBundle/readme.md
+.. _`OroDatagridBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/README.md
+.. _`OroFormUpdateHandler`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/FormBundle/Model/UpdateHandler.php
