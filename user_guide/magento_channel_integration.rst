@@ -241,7 +241,7 @@ Once the connection details have been verified, the following fields will be fil
 Synchronization Settings
 """"""""""""""""""""""""
 
-Use the *Synchronization Settings* section to enable/disable two way synchronization.
+Use the *Synchronization Settings* section to enable/disable two-way synchronization.
 
 .. image:: ./img/magento_integration/synch_settings.png
 
@@ -249,8 +249,8 @@ Check *Enable Two Way Sync* box, if you want to download data both from Magento 
 back. If the box is unchecked, data from Magento will be loaded to OroCRM, but changes performed in OroCRM will not be
 loaded to Magento.
 
-If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
-customer details were edited from the both OroCRM and Magento):
+If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same
+customer details were edited from both OroCRM and Magento):
 
 - *Remote wins*: Magento data will be applied to the both Magento and OroCRM.
 

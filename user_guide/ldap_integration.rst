@@ -3,25 +3,25 @@
 LDAP Integration
 ================
 
-Single-sign on capability (ability of the users to use the same login for all the corporate application) is particularly
-important for efficiency and performance of large-scale companies. The LDAP Integration feature available in OroCRM 
-Enterprise Edition supports this capability. 
+Single sign-on capability (the ability for users to use the same login credentials for all corporate applications) is 
+particularly important for efficiency and performance in large-scale companies. The LDAP Integration feature available 
+in OroCRM’s Enterprise Edition supports this capability.
 
 LDAP is a Lightweight Directory Access Protocol, an open-source and vendor-neutral protocol that is commonly used to 
 share user-related information in the network.
  
-The integration can also significantly simplify the initial setup of OroCRM, as it allows to upload existing 
+The integration can also significantly simplify the initial setup of OroCRM, as it allows businesses to upload existing 
 :ref:`user <user-management-users>` records into OroCRM and map LDAP user role identifiers to  
 :ref:`OroCRM's roles <user-guide-user-management-permissions-roles>`.
 
-In order to enable the functionality you need to perform the steps described in the following sections.
+In order to enable this functionality you need to perform the steps described in the following sections.
 
 Install Extension
 -----------------
 
-As the extension is only available for users of the Enterprise Edition, you cannot download it from the website.
+Since the extension is only available for Enterprise Edition users, you cannot download it directly from the website.
 
-- Go to the *System → Package Manager*
+- Go to *System → Package Manager*
   
   - Click the |ComposerSettingsIcon| icon in the top right corner. 
   
@@ -45,7 +45,7 @@ As the extension is only available for users of the Enterprise Edition, you cann
 
 - Click the :guilabel:`Back to the Installed Packages` link
   
-- Enter oro/crm_pro_ldap_bundle in the *Package Name* field in the top left part of the page, and click the 
+- Fill the  *Package Name* field in the top left part of the page with *"oro/crm_pro_ldap_bundle"*, and click the 
   :guilabel:`Install` button. 
 
 - Proceed with the installation as described in the :ref:`Extensions and Package Manager Guide <admin-package-manager>`
@@ -53,9 +53,9 @@ As the extension is only available for users of the Enterprise Edition, you cann
 Create Integration
 -------------------
 
-- Go to the *System → Integrations → Manage Integration*
-- Click the :guilabel:`Create Integration` button
-- In the emerged form choose the integration Type = *LDAP*. The form will be reсalculated. Define the integration 
+- Go to *System → Integrations → Manage Integration*
+- Click the :guilabel:`Create Integration` button. The *"Create Integration"* form will emerge.
+- In the form, choose the integration Type = *LDAP*. The form will be recalculated. Define the following integration 
   settings:
   
 General Settings
@@ -64,13 +64,13 @@ General Settings
 .. image:: ./img/ldap/ldap_general.png
 
 
-Define the following settings mandatory to enable the synchronization in OroCRM:
+These settings must be defined to enable the synchronization in OroCRM:
 
 .. csv-table::
   :header: "",""
   :widths: 10, 30
 
-  "**Name***","Name used to refer to the integration in OroCRM. It is better to keep the name reasonable." 
+  "**Name***","The name used to refer to the integration in OroCRM. It is better to keep the name reasonable." 
   "**Hostname***","The hostname of the target LDAP server."
   "**Port***","The port of the LDAP server."
   "**Encryption**","Select the encryption used by the LDAP server. The possible values are:
@@ -81,13 +81,14 @@ Define the following settings mandatory to enable the synchronization in OroCRM:
 
   "
   "**Base Distinguished Name***","The default base distinguished name used by the LDAP server for search (e.g. to 
-  search for LDAP accounts). The option is required for most account related operations and should indicates the 
+  search for LDAP accounts). This option is required for most account related operations and should indicate the 
   distinguished name under which accounts are located."
-  "**Default Business Unit Owner***","A :term:`business unit <Business Unit>`, that will by default own the newly 
+  "**Default Business Unit Owner***","A :term:`business unit <Business Unit>` that will by default own the newly 
   imported users in OroCRM (members of this unit can manage the user records subject to the 
-  :ref:`role settings <user-guide-user-management-permissions>`). If you want to assign users to multiple business units, 
-  this can be done after the synchronization - another option is to create separate integrations for every default 
-  business unit. "
+  :ref:`role settings <user-guide-user-management-permissions>`). 
+  
+  If you want to assign users to multiple business units, 
+  this can be done after the synchronization is complete - another option is to create separate integrations for every default business unit. "
 
 Along with that, the following values can be defined, if they are required by the target LDAP server:
 
@@ -95,7 +96,7 @@ Along with that, the following values can be defined, if they are required by th
   :header: "",""
   :widths: 10, 30
   
-  "**Username**","Default username of the LDAP server. 
+  "**Username**","The default username of the LDAP server. 
   Must be given in the Distinguished Name form, if the LDAP server requires a Distinguished Name to bind and binding 
   should be possible with simple usernames."
   "**Password**","The default password of the LDAP server used with the username above."
@@ -114,18 +115,18 @@ correct, the success message will appear.
 Synchronization Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use the *Synchronization Settings* section to enable/disable two way synchronization.
+Use the *Synchronization Settings* section to enable/disable two-way synchronization.
 
 |
 
 .. image:: ./img/ldap/ldap_synch.png
 
 Check the *Enable Two Way Sync* box, if you want to upload the user-related data both from the LDAP server to OroCRM and
-back. If the box is unchecked, data from LDAP server will be loaded to OroCRM, but changes performed in OroCRM will not 
+back. If the box is unchecked, data from the LDAP server will be loaded in to OroCRM, but changes performed in OroCRM will not 
 be synchronized with the target server.
 
-If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
-user details were edited from the both OroCRM and the target LDAP server):
+If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same
+user details were edited from both OroCRM and the target LDAP server):
 
 - *Remote wins*: the LDAP server data will be applied
 
@@ -135,7 +136,7 @@ user details were edited from the both OroCRM and the target LDAP server):
 Mapping Settings
 ^^^^^^^^^^^^^^^^  
 
-Use the *Mapping Settings* section to define how the user attributes and role names of OroCRM and of the target LDAP 
+Use the *Mapping Settings* section to define how the user attributes and role names of OroCRM and the target LDAP 
 server will be mapped to each other.
 
 |
@@ -165,7 +166,7 @@ The following values must be defined:
   that 
   correspond to OroCRM's user profiles (e.g. dc=orocrm,dc=com)."
 
-Click the :guilabel:`+Add` under the *Role Mapping* section to map roles of OroCRM and of the target LDAP server.
+Click the :guilabel:`+Add` button under the *Role Mapping* section to map roles of OroCRM and the target LDAP server.
 
 Define the role name in the target LDAP server and choose the role in OroCRM to map.
 
@@ -182,12 +183,9 @@ usual credentials to log-in to OroCRM.
 
 .. note::
 
-    Using LDAP integration does not prevent you from creating user profiles in OroCRM manually - they will work as 
-    usual, and won’t be imported back to your LDAP server. 
-
-    The system administrators will be able to tell if the user has been added via LDAP integration, as their profile 
-    will contain the LDAP Distinguished Names value - that will be visible only to users who have permission to manage 
-    LDAP integrations.  
+   Using LDAP integration does not prevent you from creating user profiles in OroCRM manually; they will work as usual, and won’t be imported back to your LDAP server.
+   
+   The system administrators will be able to tell if a user has been added via LDAP integration, as their profile will contain the LDAP Distinguished Names value,  which will only be visible to users who have permission to manage LDAP integrations. 
 
 The ability to quickly import users via LDAP integration allows organizations to become more efficient with their time 
 and spend more energy growing their business.

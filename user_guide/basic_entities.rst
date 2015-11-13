@@ -19,7 +19,7 @@ with the system.
 User
 ----
 
-A **User** record represent a person, group of people or third-party system using OroCRM. 
+A **User** record represents a person, group of people or third-party system using OroCRM. 
 User's credentials (login and password) identify a unique user an define what part of the system, which 
 functionalities and actions will available for them in the system.
 
