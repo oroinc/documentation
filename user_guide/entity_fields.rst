@@ -152,8 +152,9 @@ The following Yes/No options can be defined:
   "**Contact Information**","Possible values are:
     
     - empty: the field will not be treated as a contact information
-    - *Email*: values of the field will be treated by the system as an email address
-    - *Phone*: values of the field will be treated by the system as a phone number
+    - *Email*: values of the field will be treated by the :ref:`marketing lists<user-guide-marketing-lists>`
+      as an email address
+    - *Phone*: values of the field will be treated by the marketing lists as a phone number
 
   "
   "**Show on Grid**","If set to *Yes*, the field will be displayed in a separate column of the respective grid."
