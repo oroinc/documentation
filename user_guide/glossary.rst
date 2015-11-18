@@ -102,8 +102,9 @@ Glossary
       can be defined for different organization records.
 
    User
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person, group of people or a third part
-      system using the same credentials to access OroCRM.
+      User :term:`records <Record>` represent a person, group of people or third-party system using OroCRM. 
+      User's credentials (login and password) identify a unique user and define what part of the system, which 
+      functionalities and actions will available for them in the system.
 
    Business Unit
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent group of :term:`users <User>` with 
