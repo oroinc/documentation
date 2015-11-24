@@ -127,6 +127,8 @@ Glossary
        A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a certain issue, problem or failures 
        reported by the customers.   
  
+   Context
+       A set of :term:`records <Record>` related to a certain email.   
 
 
 .. |WT02| replace:: Shopping Carts

@@ -43,12 +43,15 @@ The  action will be available for records of entities with the *"Emails"* activi
   menu."
   "**Type***","Choose whether you want to use html or plain text for the email. The type is by default set to html."
   "**Body**","Define the email body."
+  "**Context**","Select the records in OroCRM related to this email."
+  
    
 For example, we have created an email for the contact Jeffrey Maynard:
 
 - The "From" field was automatically filled in with an email address of the user John Doe.
 - The "To" field was  filled in with the email address of the contact.
 - We've chosen the Happy Birthday template, which automatically defined the  subject and body. 
+- This email is related to the chosen contact.  
 
 .. image:: ./img/activities/send_email_ex.png  
 
