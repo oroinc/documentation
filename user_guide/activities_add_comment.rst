@@ -3,20 +3,24 @@
 Add Comment
 ===========
 
-If you want to comment details of an :ref:`activity <user-guide-activities>`, other than a contact request (e.g. leave 
-some additional details of task, comment on an email sent or a call made, etc.) use the "*Add Comment"* action.
+Interaction between users is an important part of successful work. In order to enable users to leave comments on records
+of an :term:`entity <Entity>` or on details of an :ref:`activity <user-guide-activities>`, other than a contact request 
+(e.g. leave some additional details of task, comment on an email sent or a call made, etc.) use the "*Add Comment"* 
+action.
 
 .. note::
 
-    Comments are available only for the actions that have the Comments activity 
+    Comments are available for any activity or entity that has the Comments activity 
     :ref:`enabled <user-guide-activities-enable>`.
 
 
 Create and View Comments
 ------------------------
 
-Once an activity has been created, a comment can be added to it from either its Edit page or from the View page of a 
-record the activity is related to.
+Once a record or an activity have been created, a comment can be added to it from:
+- :ref:`View page <user-guide-ui-components-view-pages>` of a record.
+- :ref:`Edit form <user-guide-ui-components-create-pages>` page of an activity
+- View page of a record the activity is related to.
 
 .. caution::
 
@@ -24,15 +28,8 @@ record the activity is related to.
    Comment entity.
 
 
-So, if an activity has been related to a user, you can:
+On these pages, the user should: 
 
-- View the activity details:
-
-  - Go to the View page of the record and open to the Record Activities section (or the User Tasks if you want to 
-    comment on a task assigned to a user and click on the activity title.
-
-  - Alternatively, go to the activities grid and click the icon to get to the activity View page.
-  
 - Click the :guilabel:`Add Comment` button.
 
 - Enter the comment into the the text-box.

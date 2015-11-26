@@ -16,6 +16,8 @@ can be added to any website to collect requests to the OroCRM team.
 
 * :doc:`/user_guide/zendesk_integration`
 
+* :doc:`/user_guide/ldap_integration`
+
 * :doc:`/user_guide/mailchimp_integration`
 
 * :doc:`/user_guide/dotmailer_integration`
@@ -33,6 +35,7 @@ can be added to any website to collect requests to the OroCRM team.
     integrations_overview
     google_single_sign_on
     zendesk_integration
+    ldap_integration
     magento_channel_integration
     mailchimp_integration
     dotmailer_integration

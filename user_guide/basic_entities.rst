@@ -19,9 +19,9 @@ with the system.
 User
 ----
 
-**User** records represent actual users of the system. Following the :ref:`log-in <user-guide-getting-started-log-in>`
-they get access to the functionalities and actions pre-defined for them by the :ref:`access and permission settings 
-<user-guide-user-management-permissions>`.
+A **User** record represents a person, group of people or third-party system using OroCRM. 
+User's credentials (login and password) identify a unique user and define what part of the system, which 
+functionalities and actions will available for them in the system.
 
 Any amount of User records may be defined for one OroCRM instance.
 

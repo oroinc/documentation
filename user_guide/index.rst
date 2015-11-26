@@ -105,6 +105,7 @@ business needs.
     * :doc:`/user_guide/google_single_sign_on`
     * :doc:`/user_guide/magento_channel_integration`
     * :doc:`/user_guide/zendesk_integration`
+    * :doc:`/user_guide/ldap_integration`
     * :doc:`/user_guide/mailchimp_integration`
     * :doc:`/user_guide/dotmailer_integration`
     * :doc:`/user_guide/ms_exchange_integration`
