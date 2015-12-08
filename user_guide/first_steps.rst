@@ -4,39 +4,13 @@ Ready, Set, Go
 ==============
 
 OroCRM is a highly flexible system that can be tailored to meet the specific needs of your business.
-While most of the set-up is performed in the course of the system integration and is described in more detail in the
-:ref:`Installation and Configuration Guide <book-installation-configuration>`, many settings can be refined directly 
+While most of the set-up is performed in the course of the system integration, many settings can be refined directly 
 from the UI. 
 
-This article provides an overview of the basic settings which can be altered that can be done from the UI. It also 
+This article provides an overview of the basic settings which can be altered from the UI. It also 
 describes how they are related to enterprise activities and will affect further system usage. Links to detailed 
-step-by-step guides are provided throughout.
+step-by-step guides are provided throughout the article.
 
-
-System Configuration
---------------------
-
-
-Understanding
-^^^^^^^^^^^^^
-
-We aim to make the OroCRM user experience as convenient as possible.
-In order to ensure this, you can define some settings common for all organizations, 
-branches, and units of an enterprise. These may include the language, primary location, time-zone,
-address formats, types of files that can be uploaded according to the company, the configuration of mailboxes that your 
-company uses, ans so on.
-
-
-Setup and Further Usage
-^^^^^^^^^^^^^^^^^^^^^^^^  
-
-Such system-wide settings should be defined at the start of your installation as described in the 
-:ref:`Configuration Settings Guide <admin-configuration>`.  
-
-The settings will be applied to the whole system, including the UI for all the users of this system. 
-
-Any of these settings can be changed at a later time, but it is important to understand that whenever a setting is 
-changed on one OroCRM instance (e.g. by the system administrator), it will be changed for all the system users. 
 
 .. _user-guide-started-stakeholders:
 
@@ -52,12 +26,18 @@ use it for and how they will benefit from it.
 Some of the basic CRM process stakeholders (with no limitation) and the benefits that OroCRM can bring them are as 
 follows:
 
-- **Sales Representatives**: Responsible for direct communication with the customers and conversion of opportunities 
-  into actual orders. 
-  
-  With OroCRM, Sales Representatives can collect and aggregate customer-related information from different sources, gain 
-  access to personal customer information, and get a clear understanding of the sales and conversion trends for each 
-  specific customer or a pre-defined group of customers, as well as for the overall enterprise.
+.. csv-table::
+  :header: "Role", "Description", "Benefits", "Related Documentation"
+  :widths: 10, 30, 30, 30
+
+  "**Sales Representatives**","Responsible for direct communication with the customers and conversion of opportunities 
+  into actual orders.","Collect and aggregate customer-related information from different sources",
+  ":ref:`Channels <user-guide-channels>`
+  "","","Easy access to the customer's contact details",":ref:`Contacts section <user-guide-contacts>`"
+  "","","Clear understanding of the sales and conversion trends for each 
+  specific customer, or group of customers",":ref:`Accounts <user-guide-accounts>`"
+  "","","360-degrees view of the customer activity within one or multiple sales-sites",
+  ":ref:`Multichannel Functionality <user-guide-multi-channel-overview>`"
   
   |
   
@@ -188,7 +168,31 @@ organization within the system.
 
     As the company grows, the company structure can be altered or extended at any time.
 
+System Configuration
+--------------------
 
+
+Understanding
+^^^^^^^^^^^^^
+
+We aim to make the OroCRM user experience as convenient as possible.
+In order to ensure this, you can define a number of settings that will be applied for all the users within an 
+organization.
+These include the language used, basic  time-zone, address formats, types of files that can be uploaded according 
+to the company policies, currency, temperature unites, its.
+
+
+Setup and Further Usage
+^^^^^^^^^^^^^^^^^^^^^^^^  
+
+Such system-wide settings should be defined at the start of your installation as described in the 
+:ref:`Configuration Settings Guide <admin-configuration>`.  
+
+The settings will be applied to the whole system, including the UI for all the users of this system. 
+
+Any of these settings can be changed at a later time, but it is important to understand that whenever a setting is 
+changed on one OroCRM instance (e.g. by the system administrator), it will be changed for all the system users. 
+	
 .. _user-guide-get-ready-channels:
 
 Sources of the Customer-Related Information
