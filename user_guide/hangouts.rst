@@ -2,14 +2,13 @@
 
 Call and Email Using Hangouts 
 =============================
-With the Hangouts feature you can call via Google Hangouts directly from OroCRM. 
-This means that sales team can make calls to your customers and prospects directly from OroCRM, making it faster than 
-ever to make and log your sales calls.
-The feature is also great for support teams, as they can contact the customer and utilize the screen sharing function 
-for necessary support cases.
-It can be used for internal communications (meetings and discussions), as it is possible to hold a session with up to 
-five OroCRM users. Moreover, integration with OroCRM Calendar, allows to pre-arrange a meeting and then quickly launch 
-a call from the event page.
+With the Hangouts integration feature, you can call via Google Hangouts directly from OroCRM. This means that sales team 
+can make calls to their customers and prospects directly from OroCRM, making it faster than ever to make and log your 
+sales calls. This feature is also great for support teams, as they can contact customers and utilize the screen sharing 
+function for necessary support cases. Additionally, it can be used for internal communications (meetings and 
+discussions), as it is possible to hold a session with up to five OroCRM users. Moreover, integration with OroCRM’s 
+Calendar allows users to pre-arrange a meeting and then quickly launch a call from the event page.
+
 
 
 Preliminary Conditions
@@ -17,10 +16,10 @@ Preliminary Conditions
 
 - Have an active Google account (if you try using the feature when not logged in, you will be prompted to log-in) 
 
-- Hangouts extension installed in OroCRM as described in the 
+- Have the Hangouts extension installed in OroCRM as described in the 
   :ref:`Extensions and Package Manager Guide <admin-package-manager>`
 
-- If you are using a browser other then Chrome, install a Google Hangout or Google Talk extension for 
+- If you are using a browser other than Chrome, install a Google Hangout or Google Talk extension for 
   the browser.
 
   
@@ -32,7 +31,7 @@ In order to start a hangout:
 - Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the record that you want to contact (account, 
   lead, contact, user, etc.) . 
 
-- Hover the mouse over a phone number or an email available on the View page.
+- Hover the mouse over a phone number or an email address available on the View page.
 
   |
 
@@ -78,7 +77,7 @@ Most calls within the USA and Canada are free, and you can pay your balance for 
 Start a Hangout Using Email
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you call via the email, the call will be initiated. You can invite other call participants (up to 5 total),
+If you call via email, the call will be initiated. You can invite other call participants (up to 5 total),
 remove them (click the :guilabel:`X` button by the name) or send them a link to the session.
 
   |
@@ -90,8 +89,8 @@ remove them (click the :guilabel:`X` button by the name) or send them a link to 
 Once the contact has joined the session, you can talk.
 
   
-Start a Hangout from the Log Call
----------------------------------
+Start a Hangout from the Log Call Form
+--------------------------------------
 
 The Hangouts feature is also available in the :ref:`Log Call <user-guide-activities-calls>` form.
 
@@ -107,7 +106,8 @@ The Hangouts feature is also available in the :ref:`Log Call <user-guide-activit
 Start a Hangout from the Calendar
 ---------------------------------
 
-The Hangout feature is integrated with OroCRM Calendar. In order to start a Hangout with the users invited to an event:
+The Hangout feature is also integrated with OroCRM's Calendar. In order to start a Hangout with the users invited to an 
+event:
 
 - Go to the Calendar (or the Calendar widget on the Dashboard) 
 
@@ -121,7 +121,7 @@ The Hangout feature is integrated with OroCRM Calendar. In order to start a Hang
 
 |
 	  
-- Click the :guilabel:`Start a Hangout` button to start a Hangout using the emails of the first five guest.
+- Click the :guilabel:`Start a Hangout` button to start a Hangout using the email addresses of the first five guests.
 
 
 
