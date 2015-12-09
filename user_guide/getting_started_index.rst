@@ -18,7 +18,12 @@ of some major functionalities.
 * :doc:`/user_guide/filters`
 
   * :doc:`/user_guide/segments`
+
 * :doc:`/user_guide/tags`
+* :doc:`/user_guide/hangouts`  
+
+
+
 
 .. hint::
 
@@ -34,11 +39,14 @@ of some major functionalities.
     ui_form
     ui_view
     dashboards
-    tags
     basic_entities
     import_export_functionality
     reports
     filters
     segments
+    tags
+    hangouts
+
+
 
 
