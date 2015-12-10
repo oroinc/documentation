@@ -1,7 +1,7 @@
 .. _user-guide-hangouts:
 
-Call and Email Using Hangouts 
-=============================
+Voice and Video Calls via Hangouts
+==================================
 With the Hangouts integration feature, you can call via Google Hangouts directly from OroCRM. This means that sales team 
 can make calls to their customers and prospects directly from OroCRM, making it faster than ever to make and log your 
 sales calls. This feature is also great for support teams, as they can contact customers and utilize the screen sharing 
@@ -22,9 +22,26 @@ Preliminary Conditions
 - If you are using a browser other than Chrome, install a Google Hangout or Google Talk extension for 
   the browser.
 
+- If you are going to call phone-numbers beyond USA and Canada, make sure there are some funds on you Google Wallet.
+
+
+System Settings
+---------------
+
+I order to enable the functionality in OroCRM, go to the *"System → Configuration → Integrations → Google Settings → 
+Google Hangouts"*
+
+  |
   
-Start a Hangout Using Contact Details
--------------------------------------
+.. image:: ./img/hangouts/enable.png  
+
+|
+  
+Start a Hangout
+---------------
+
+From a View Page
+^^^^^^^^^^^^^^^^
 
 In order to start a hangout:
 
@@ -57,8 +74,8 @@ In order to start a hangout:
 	
 .. _user-guide-hangouts-call:	
 
-Start a Hangout Using Phone Number
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*Start a Hangout Using Phone Number*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  
 If you call your contact via their phone number, and the telephone calling has been enabled for your Google Hangouts, 
 the call will start immediately. 
@@ -74,8 +91,8 @@ Otherwise, you will be prompted to enable it:
 Most calls within the USA and Canada are free, and you can pay your balance for other regions using Google Wallet. 
 	
 
-Start a Hangout Using Email
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*Start a Hangout Using Email*
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you call via email, the call will be initiated. You can invite other call participants (up to 5 total),
 remove them (click the :guilabel:`X` button by the name) or send them a link to the session.
@@ -90,7 +107,7 @@ Once the contact has joined the session, you can talk.
 
   
 Start a Hangout from the Log Call Form
---------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Hangouts feature is also available in the :ref:`Log Call <user-guide-activities-calls>` form.
 
@@ -104,7 +121,7 @@ The Hangouts feature is also available in the :ref:`Log Call <user-guide-activit
 
 
 Start a Hangout from the Calendar
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Hangout feature is also integrated with OroCRM's Calendar. In order to start a Hangout with the users invited to an 
 event:
