@@ -3,176 +3,95 @@
 Ready, Set, Go
 ==============
 
-OroCRM is a highly flexible system that can be tailored to meet the specific needs of your business.
-While most of the set-up is performed in the course of the system integration, many settings can be refined directly 
-from the UI. 
+OroCRM is a highly flexible system that can be tailored to meet the specific needs of your business, which also means 
+that there is a number of settings that you need to understand in order to gain the most of the system benefits.
 
-This article provides an overview of the basic settings which can be altered from the UI. It also 
-describes how they are related to enterprise activities and will affect further system usage. Links to detailed 
+In this guide we will walk through all the major settings that have to be done in order to start using a newly installed
+OroCRM Community Edition system without demo data.
+
+The guide will be also useful if you are using OroCRM Enterprise Edition. While most of the set-up for your system has 
+been performed in the course of the system integration, you can refine the settings from the UI, if such a need would 
+arise. 
+
+This guide provides an overview of the basic settings which can be altered from the UI and 
+describes how they are related to enterprise activities and how they will affect further system usage. Links to detailed 
 step-by-step guides are provided throughout the article.
-
-
-.. _user-guide-started-stakeholders:
-
-CRM Process Stakeholders and Their Benefits
--------------------------------------------
-
-Understanding
-^^^^^^^^^^^^^
-
-In order to use the system in the most efficient way, it is important to understand who will by using it, what they will
-use it for and how they will benefit from it.
-
-Some of the basic CRM process stakeholders (with no limitation) and the benefits that OroCRM can bring them are as 
-follows:
-
-.. csv-table::
-  :header: "Role", "Description", "Benefits", "Related Documentation"
-  :widths: 10, 30, 30, 30
-
-  "**Sales Representatives**","Responsible for direct communication with the customers and conversion of opportunities 
-  into actual orders.","Collect and aggregate customer-related information from different sources",
-  ":ref:`Channels <user-guide-channels>`
-  "","","Easy access to the customer's contact details",":ref:`Contacts section <user-guide-contacts>`"
-  "","","Clear understanding of the sales and conversion trends for each 
-  specific customer, or group of customers",":ref:`Accounts <user-guide-accounts>`"
-  "","","360-degrees view of the customer activity within one or multiple sales-sites",
-  ":ref:`Multichannel Functionality <user-guide-multi-channel-overview>`"
-  
-  |
-  
-  See the :ref:`Sales Tools section <sales-index>` of the User Guide to learn more about how OroCRM can help with 
-  sales-related activities.
-
-  |
-  
-- **Marketologists**: Responsible for ongoing growth of the customer-base with marketing campaigns and mass mailings
-  
-  With OroCRM, Marketologists can process customer-related information in order to create targeted marketing campaigns, 
-  both manually and automatically deliver mass mailings, and track campaign results.
-  
-  |
-  
-  See the :ref:`Marketing Tools section <user-guide-marketing>` of the User Guide to learn more about how OroCRM can 
-  help with marketing-related activities.
-  
-  |
-  
-- **Managers**: Responsible for coordination of employees efforts. 
-
-  With OroCRM, Managers can create events, tasks, and other activities, and then assign them to any of the system users, 
-  and define specific workflows to be followed by the company’s staff.
-  
-  | 
-  
-  See the :ref:`Productivity Tools section <productivity-tools>` of the User Guide to learn more about how OroCRM can 
-  help to improve the productivity.
-
-  |
-  
-All the stakeholder can also benefit from adjustable grid views and 
-filters in OroCRM's UI (described in more detail in the Understanding the UI part of the Getting Started section) and 
-other convenient tool including adjustable dashboards with target-oriented widgets, comprehensive tailored reports that 
-can collect and visualize historical data and trends related to almost any object in the system, and segmentation engine 
-that can focus on any specific piece of information. These and other tools are described in the :ref:`Other 
-Tools section <user-guide-other-tools>` of the User Guide. 
-
-|
-
-Administrator 
-"""""""""""""
-
-By default, there is always an “Administrator” role assigned to one user that initially gives you access to all the 
-records and functionalities available in the system. This is also known as your system administrator. 
-
-While many settings are defined during the system integration, OroCRM's user-friendly UI lets administrators make basic 
-changes to its configuration, such as creating and editing new users and system entities, defining permissions and 
-access rights, setting-up and managing integrations and extensions, monitoring the system usage of other users, and 
-more.
-
-  | 
-  
-See the system :ref:`System Management and Administration section <system-management-index>` to learn more about what 
-administrators can do.
-
-.. hint::
-
-    It is very important to make sure that the administrator is not only good with computers, but also understands the 
-    principles, goals and targets of your business. 
-  
-
-Setup and Further Usage
-^^^^^^^^^^^^^^^^^^^^^^^
-
-Each group of stakeholders can be represented in OroCRM with a specific Role. The way to create roles is described in 
-the :ref:`Roles Management guide <user-guide-user-management-roles>`. 
-
-Roles assigned to each :term:`user <User>` define what system modules and functionalities will be available to them, as 
-well as what records this user will be able to view, create and process. For example, this way, you can make sure that 
-salesmen can see the information important for communications with customers (such as the history of orders, abandoned 
-carts, etc.) but cannot manage user passwords in the system. 
-
-This way, roles make the system both more secure, since users with specific roles will only be able to access certain
-information), and easier to use, since your employees will not be overwhelmed with excessive information they don't need 
-for their job.
-
-.. hint::
-
-    As the company grows or new needs arise, new roles can be created at any time.
 
 
 .. _user-guide-get-started-structure:
 
-Company Structure
------------------
+Step 1. Set up the Company Structure
+------------------------------------
 
-Understanding
-^^^^^^^^^^^^^
+Each enterprise is unique and has its own structure. Within one big company there may be several branches/offices, each 
+of which may have some major departments, working in different directions, within which department there may be several
+teams.
 
-Regardless of how your company is structured and how many different offices, directions, departments, and units there 
-are, OroCRM can create its representation in its system. 
+In the OroCRM Enterprise Edition it is possible to create several Organizations. This feature is especially useful if 
+different offices or branches of the company are located in different countries and/or time-zones.
+In the Community edition there can be an only Organization that represent the company.
 
-In some large-scale companies different branches may work with significantly different items, goods, and/or customers. 
-In this case it may be reasonable to create several organizations organizations within OroCRM, and then and build the 
-organizational structure inside of each of them.
-    
+Within the Organization, you can create a hierarchy of Units. This means that each unit can have some child-units, 
+which, in their turn can be parent units for other units. Therefore, you can use the Unit records to represent 
+the organization elements of any level.
 
-Setup and Further Usage
-^^^^^^^^^^^^^^^^^^^^^^^
+For example, are a telecom service provider might have an organization that would represent its office in California.
+The organization might be divided into two sub-units - Western and Eastern. Each of these sub-units could be divided
+into other four sub-units by the work direction:
 
-In OroCRM, you can create a tree of business units to reflect your organization's hierarchy, as described 
-in the :ref:`Business Unit Records Management guide <user-management-bu>`.
+- *CaliforniaTelecom*
 
-Multiple organization support is available in the Enterprise Edition only, and is described in more detail in the 
-:ref:`Multiple Organizations Support Guide <user-ee-multi-org>`.
+ - *Western California*
+ 
+   - Western California Stationary Phones
+   - Western California Mobiles
+   - Western California TV
+   - Western California Internet
+   
+ - Eastern California
+ 
+   - Eastern California Stationary Phones
+   - Eastern California Mobiles
+   - Eastern California TV
+   - Eastern California Internet
 
-For each entity (group of records of similar nature) and each role. you can define the level at which its records will 
-be visible, editable, available for creation, etc. as described in the :ref:`Access and Permissions Management guide
-<user-guide-user-management-role-permissions>`. This way, you can define that a a specific type of 
-records should be visible only to the user that has created them, to all the users of the same business unit, 
-to all the users of the same division, or even to any user within the organization. 
+The structure could be more complex, e.g within each lower unit there could be more sub-units.
 
-For instance, you can set up the system in such a way that all the managers (users with role "Manager") can see the 
-personal data of all the customers within the system, but sales representatives can only see the details of customers 
-that have been added to the system by users in their unit (so when salesmen from your office in Ohio access the system, 
-they will only see details of the customers added to the system from the Ohio office), and freelance sales representative 
-will only see the customers they have registered in the system themselves.
-
-When multiple organizations are used, the situation is similar within each separate organization. However, there is one 
-more organization which is referred to as the :ref:`system organization <user-ee-multi-org-system>`, users of which, 
-subject to :ref:`their permissions <user-guide-user-management-role-permissions-system>`, can reach records of any other 
-organization within the system. 
-
-
-.. hint::
-
-    As the company grows, the company structure can be altered or extended at any time.
-
-System Configuration
---------------------
+Building the correct structure will help to distribute information correctly and to make sure that system users see all 
+the relevant information and only the information that is relevant for them.
 
 
-Understanding
+Relevant Documentation
+^^^^^^^^^^^^^^^^^^^^^^
+:ref:`Business Unit Records Management guide <user-management-bu>`
+:ref:`Multiple Organizations Support Guide <user-ee-multi-org>`
+
+
+Step 2. Configure the Organization(s)
+-------------------------------------
+
+Now you can specify such things as language, time zone, address format, types of allowed, currency, temperature units 
+and other for each of your company and each of your organizations.
+
+That's what you can do:
+
+- Download translations and specify what languages can be used for the system UI and mailings, and define a specific 
+  language used for the UI of each of you organizations.
+- Define location-specific settings, such as time zone, address format, temperature units, currency, etc. for each of 
+  your organizations.
+- Define the way data will be arranged on the screen, colours of the calendar, and type of the text editor used for each 
+  of your organizations.
+- 
+
+
+The following settings can be defined for the whole system 
+
+- Define the url of your applications to be used in mailings
+- 
+
+
+
+
 ^^^^^^^^^^^^^
 
 We aim to make the OroCRM user experience as convenient as possible.
@@ -192,6 +111,10 @@ The settings will be applied to the whole system, including the UI for all the u
 
 Any of these settings can be changed at a later time, but it is important to understand that whenever a setting is 
 changed on one OroCRM instance (e.g. by the system administrator), it will be changed for all the system users. 
+	
+	
+	
+	
 	
 .. _user-guide-get-ready-channels:
 
@@ -315,6 +238,50 @@ saved and processed in OroCRM to benefit all the CRM process stakeholders.
 
     New entities and fields may be added to the system at any time.
 
+
+.. _user-guide-started-stakeholders:
+
+Step 1. Create the Roles
+------------------------
+
+OroCRM provides a lot of functionality that can enhance your CRM process. These may be used by different members of the 
+team. However, it is important to understand the information and tools used by a marketologist are very different from 
+those required by support teams, or by the company management. To make sure that all the information is safe and 
+available right where it is required, and all the users gain access to the features and capabilities meeting their needs
+and competence, you need to create Roles.
+
+Roles represent a set of functions performed by the user in your Company and will be used to define to what data and
+functionality the user will have access.
+
+Initially, there are three roles available in OroCRM community edition: 
+
+- **Administrator**: responsible for the OroCRM instance set-up and maintenance, installs extensions, creates 
+  integrations, provides necessary system adjustment, would such a need arise. 
+  
+  By default, users who have this role, gain access to all the functionality and to any part of the system, however this 
+  could be changed (for example, in some companies security policies would not allow the system administrator to see 
+  personal details of the customers). 
+
+- **Sales Manager**: responsible for direct communication with the customers and conversion of opportunities 
+  into actual orders.  
+
+- **Marketing Associate**: responsible for ongoing growth of the customer-base with marketing campaigns and mass 
+  mailings
+  
+roles make the system both more secure, since users with specific roles will only be able to access certain
+information), and easier to use, since your employees will not be overwhelmed with excessive information they don't need 
+for their job. 
+
+You can add any amount of roles, for example, for managers or support groups. Moreover, roles can be 
+added at any moment if such a need arises, or deleted if the practice shows they are excessive.
+
+Related Documents
+^^^^^^^^^^^^^^^^^
+
+:ref:`Roles Management guide <user-guide-user-management-roles>`
+	
+	
+	
 
 .. _user-guide-get-ready-integration:
 

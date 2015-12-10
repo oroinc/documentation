@@ -3,7 +3,8 @@
 Configuration Settings
 ======================
 
-Use the Configuration settings to define options to be applied to the whole OroCRM instance.
+Use the Configuration settings to define options to be applied to the whole OroCRM instance or to a specific 
+organization (if there are :ref:`multiple organization <user-ee-multi-org>`).
 
 Open the OroCRM instance and go to *"System → Configuration"*.
 
@@ -28,7 +29,8 @@ Application Settings
 --------------------
 
 In the *"System → Configuration → General setup → Application Settings"* you can define the URL to be used as a value 
-for the {{system.appURL}} in the :ref:`email templates <user-guide-email-template>`. 
+for the {{system.appURL}} in the :ref:`email templates <user-guide-email-template>`. The setting can only be defined 
+for the whole system.
 
       |
   
@@ -44,8 +46,9 @@ Localization
 Localization Options
 ^^^^^^^^^^^^^^^^^^^^
 
-In *"System → Configuration → General setup → Localization → Localization Options"* you can define a number of 
-localization options to be applied to the OroCRM instance, as follows:
+To defined location-specific settings, such as language, currency, ect., go to the *"System → Configuration → General 
+setup → Localization → Localization Options"*  The settings can be defined for the whole system and for each 
+organization. The settings are as follows:
 
       |
   
@@ -81,8 +84,9 @@ localization options to be applied to the OroCRM instance, as follows:
  
 Map Options
 ^^^^^^^^^^^
-In *"System → Configuration → General setup → Localization → Map Options"* you can define the
-**Temperature Unit** and **Wind Speed Unit** used for the map displayed by the address.
+You can define the
+**Temperature Unit** and **Wind Speed Unit** used for the map displayed by the address, in *"System → Configuration → 
+General setup → Localization → Map Options"* 
 
 The default values are Fahrenheit and miles per hour (MPH).
 
@@ -102,9 +106,9 @@ The default values are Fahrenheit and miles per hour (MPH).
 Language Settings
 -----------------
 
+By default the system is English. In order to change the language go to the  
+*"System → Configuration → General setup → Language settings"*. The following settings are available: 
 
-In *"System → Configuration → General setup → Language settings"* you can define a number of 
-language-related options to be applied to the OroCRM instance, as follows:
 
 .. image:: ./img/configuration/language_settings.png
 
@@ -114,13 +118,19 @@ language-related options to be applied to the OroCRM instance, as follows:
 
   "**Default Language***","Defines the language used for the instance UI. Choose a language from the drop-down menu:
   
-  |UseDef|","English"
+  |UseDef|
+  
+  Default language may be defined for the whole system and for any of the organizations within it","English"
   "**Supported Languages***","Defines a set of languages that can be used for translation of the 
-  :ref:`email template <user-guide-email-template>`. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the 
+  :ref:`email template <user-guide-email-template>`. The settings is applied to the whole system.
+
+  Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the 
   languages from the list.
 
   |Supported|","English"
   "**Available Translations** grid","
+  
+  Defines what languages can be used in the selections above.
 
   - If the :guilabel:`Download` button is available and the *Translation status* column is empty, the
     translation has not been loaded by you. Click the :guilabel:`Download` button.
@@ -140,8 +150,10 @@ language-related options to be applied to the OroCRM instance, as follows:
 Display Settings
 ----------------
 
-In *"System → Configuration → General setup → Display settings"* you can define a number of display-related options
-to be applied to the OroCRM instance, as follows:
+Arrangement of the menu, colours of the calendar, type of the text editor used,  the arrangement of an activity list and 
+grid, and other display settings can be defined 
+for each organization in *"System → Configuration → General setup → Display settings"*. The following settings are 
+available:
 
       |
   
@@ -150,7 +162,7 @@ to be applied to the OroCRM instance, as follows:
 Navigation bar
 ^^^^^^^^^^^^^^
 
-In the **Navigation bar → Position*** field, define the *Navigation bar* position. Choose a value from the drop-down
+Define the *Navigation bar* position in the **Navigation bar → Position*** field. Choose a value from the drop-down
 menu.
 
 The default value is "Top".
