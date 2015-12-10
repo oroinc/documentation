@@ -21,7 +21,9 @@ business needs.
   * :doc:`/user_guide/reports`
   * :doc:`/user_guide/filters`
   * :doc:`/user_guide/segments` 
+  * :doc:`/user_guide/hangouts`
 
+  
       |
 
 * :doc:`/user_guide/sales_index`
