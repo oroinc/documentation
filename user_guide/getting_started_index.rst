@@ -29,7 +29,11 @@ description of its main navigation components and controls so that you are comfo
   * :doc:`/user_guide/user_menu`
   * :doc:`/user_guide/search`
   * :doc:`/user_guide/viewed_pages`
+  * :doc:`/user_guide/dashboards`
+  
+* :doc:`/user_guide/import_export_functionality`
 
+* :doc:`/user_guide/hangouts`  
     
 
 .. toctree::
@@ -40,7 +44,7 @@ description of its main navigation components and controls so that you are comfo
     basic_entities
     log_in
     ui_understanding_index
- 
+    hangouts
 
 
 

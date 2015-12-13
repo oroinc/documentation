@@ -23,7 +23,13 @@ business needs.
     * :doc:`/user_guide/user_menu`
     * :doc:`/user_guide/search`
     * :doc:`/user_guide/viewed_pages`
+    * :doc:`/user_guide/dashboards`
+	* :doc:`/user_guide/tags`
+  
+  * :doc:`/user_guide/import_export_functionality`
+  * :doc:`/user_guide/hangouts`
 
+  
       |
 
 * :doc:`/user_guide/sales_index`
