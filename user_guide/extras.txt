@@ -3,56 +3,43 @@
 Typical CRM Process Stakeholder and Benefits from OroCRM
 ========================================================
 
-In this table we have collected information on how some typical CRM process participants can benefit from using OroCRM
-and provided it with links to relevant guides. 
+To use the system efficiently, you first need to understand who will be using it and for what purposes and benefits. 
+Some of the basic CRM process stakeholders (with no limitation) and the benefits OroCRM can bring them are as follows:
 
-In order to use the system in the most efficient way, it is important to understand who will by using it, what they will
-use it for and how they will benefit from it.
+Sales Managers
+--------------
 
-Some of the basic CRM process stakeholders (with no limitation) and the benefits that OroCRM can bring them are as 
-follows:
+Responsible for direct communication with the customers and conversion of opportunities into 
+actual orders.
 
-.. csv-table::
-  :header: "Role", "Description", "Benefits", "Related Documentation"
-  :widths: 10, 30, 30, 30
+With OroCRM, Sales Representatives can collect and aggregate customer-related information from different sources, gain 
+access to personal customer information, and get a clear understanding of the sales and conversion trends for each 
+specific customer or a pre-defined group of customers, as well as for the enterprise overall.
 
-  "**Sales Representatives**","Responsible for direct communication with the customers and conversion of opportunities 
-  into actual orders.","Collect and aggregate customer-related information from different sources",
-  ":ref:`Channels <user-guide-channels>`
-  "","","Easy access to the customer's contact details",":ref:`Contacts section <user-guide-contacts>`"
-  "","","Clear understanding of the sales and conversion trends for each 
-  specific customer, or group of customers",":ref:`Accounts <user-guide-accounts>`"
-  "","","360-degrees view of the customer activity within one or multiple sales-sites",
-  ":ref:`Multichannel Functionality <user-guide-multi-channel-overview>`"
+The system functionality for sales-related activities is described in the :ref:`Sales Tools section <sales-index>` 
+section of the User Guide.
   
-  |
-  
-  See the :ref:`Sales Tools section <sales-index>` of the User Guide to learn more about how OroCRM can help with 
-  sales-related activities.
+Marketing Associates 
+--------------------
 
-  |
+Responsible for ongoing growth of the customer-base with marketing campaigns and mass mailings.
   
-- **Marketologists**: Responsible for ongoing growth of the customer-base with marketing campaigns and mass mailings
+With OroCRM, marketing associates can process customer-related information in order to create targeted marketing 
+campaigns, both manually and automatically deliver mass mailings, and track the campaign results.
   
-  With OroCRM, Marketologists can process customer-related information in order to create targeted marketing campaigns, 
-  both manually and automatically deliver mass mailings, and track campaign results.
-  
-  |
-  
-  See the :ref:`Marketing Tools section <user-guide-marketing>` of the User Guide to learn more about how OroCRM can 
-  help with marketing-related activities.
-  
-  |
-  
-- **Managers**: Responsible for coordination of employees efforts. 
+See the :ref:`Marketing Tools section <user-guide-marketing>` of the User Guide to learn more about how OroCRM can 
+help with marketing-related activities.
 
-  With OroCRM, Managers can create events, tasks, and other activities, and then assign them to any of the system users, 
-  and define specific workflows to be followed by the company’s staff.
+Company Managers
+----------------
+
+Responsible for coordination of employees efforts. 
+
+With OroCRM, Managers can create events, tasks, and other activities, and then assign them to any of the system users, 
+and define specific workflows to be followed by the company’s staff.  
   
-  | 
-  
-  See the :ref:`Productivity Tools section <productivity-tools>` of the User Guide to learn more about how OroCRM can 
-  help to improve the productivity.
+See the :ref:`Productivity Tools section <productivity-tools>` of the User Guide to learn more about how OroCRM can 
+help to improve the productivity.
 
   |
   

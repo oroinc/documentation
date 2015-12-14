@@ -8,8 +8,8 @@ your company.
 With OroCRM, you can capture, store, and analyze all kinds of customer-related data, including the details of 
 customer profiles, shipping information, customer activity, prospective sales, and much more. 
 
-In addition, OroCRM provides the tools and functionality to easily monitor and manage specific customer-related activities and 
-leverage this data to personalize content and communications
+In addition, OroCRM provides the tools and functionality to easily monitor and manage specific customer-related 
+activities and leverage this data to personalize content and communications.
 
 In this guide, you will find some introductory documentation to help you understand the basics of OroCRM, as well as 
 description of its main navigation components and controls so that you are comfortable using the system UI.
