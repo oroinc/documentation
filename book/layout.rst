@@ -61,6 +61,8 @@ apply multiple filters.
     Refer to the `Assetic documentation`_ for a list of available filters and read the `cookbook`_
     in the Symfony documentation to learn more about Assetic.
 
+.. _book-layout-debugging-css:
+
 Debugging Your Stylesheets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
