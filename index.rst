@@ -54,3 +54,18 @@ Learn more about all the bundles that are available from the bundles section:
 
     /bundles
     /system_requirements
+
+Reference
+---------
+
+.. toctree::
+    :maxdepth: 1
+
+    reference/annotation/index
+    reference/entity_config/index
+    reference/format/index
+
+.. toctree::
+    :hidden:
+
+    reference/index

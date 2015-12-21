@@ -137,6 +137,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/data_audits`
+        * Reference: :doc:`/reference/format/dashboard`
 
 `DataGridBundle`_ (OroPlatform)
     UI control implementation for data grid views.
@@ -318,6 +319,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/navigation`
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
+        * Reference: :doc:`/reference/format/navigation`
 
 `NoteBundle`_ (OroPlatform)
     Attach notes to different entities.
@@ -361,6 +363,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
         * Book: :doc:`/book/javascript_modularity`
+        * Reference: :doc:`/reference/format/requirejs`
 
 `SalesBundle`_ (OroCRM)
     Support for sales related workflows.
@@ -388,6 +391,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/security`
+        * Reference: :doc:`/reference/format/acl`
 
 `SegmentBundle`_ (OroPlatform)
     Provides entity segmentation that can be used for further processing.
