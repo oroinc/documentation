@@ -38,12 +38,23 @@ End user oriented documentation that explains how to administer and configure pl
 
 Community Guide
 ---------------
+
 Learn about our development process and how you can contribute to OroPlatform.
 
 .. toctree::
     :maxdepth: 1
 
     community/index
+
+
+Reference
+---------
+
+.. toctree::
+    :maxdepth: 3
+
+    reference/index
+
 
 The Oro Bundles
 ---------------
@@ -55,17 +66,4 @@ Learn more about all the bundles that are available from the bundles section:
     /bundles
     /system_requirements
 
-Reference
----------
 
-.. toctree::
-    :maxdepth: 1
-
-    reference/annotation/index
-    reference/entity_config/index
-    reference/format/index
-
-.. toctree::
-    :hidden:
-
-    reference/index
