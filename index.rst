@@ -25,6 +25,16 @@ to achieve result in quick and right way without going deep into technical detai
     cookbook/index
 
 
+The Oro Bundles
+---------------
+
+Learn more about all the bundles that are available from the bundles section:
+
+.. toctree::
+
+    /bundles
+
+
 User Guide
 ----------
 
@@ -51,19 +61,14 @@ Reference
 ---------
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
 
     reference/index
 
 
-The Oro Bundles
----------------
-
-Learn more about all the bundles that are available from the bundles section:
+System Requirements
+-------------------
 
 .. toctree::
 
-    /bundles
     /system_requirements
-
-
