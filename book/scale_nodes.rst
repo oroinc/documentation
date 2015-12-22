@@ -257,7 +257,7 @@ Our attachments functionality is based on
     directory in the [Application root] directory - see the 
     config (Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yml)
 
-**app/config/security.yml:**
+**app/config/config.yml:**
 
 .. code-block:: yaml
    
