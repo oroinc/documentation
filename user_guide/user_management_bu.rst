@@ -3,8 +3,38 @@
 Business Unit Records Management
 ================================
 
-Business Units can represent directions, departments, units, work-groups and teams of the same organization. 
-Top-level units can be created first and lower-level ones will be their sub-units.
+Each enterprise is unique and has its own structure. Within one big company there may be several branches/offices, each 
+of which may have some major departments, working in different directions, within which department there may be several
+teams, and so on.
+
+Within the Organization in OroCRM, you can create a hierarchy of Units. This means that each unit can have some 
+child-units, which, in their turn can be parent units for other units. Therefore, you can use the Unit records to 
+represent the organization elements of any level.
+
+For example, a telecommunication service provider might have an organization that would represent its office in 
+California. The organization might be divided into two sub-units - Western and Eastern. Each of these sub-units could be 
+divided into other four sub-units by the work direction:
+
+- *CaliforniaTelecom*
+
+ - *Western California*
+ 
+   - Western California Stationary Phones
+   - Western California Mobiles
+   - Western California TV
+   - Western California Internet
+   
+ - Eastern California
+ 
+   - Eastern California Stationary Phones
+   - Eastern California Mobiles
+   - Eastern California TV
+   - Eastern California Internet
+
+The tree of units can be more complex, subject to the actual structure of the organization.
+
+Building the correct structure will help to distribute information correctly and to make sure that system users see all 
+the relevant information and only the information that is relevant for them.
 
 Create a Business Unit Record
 -----------------------------

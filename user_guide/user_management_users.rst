@@ -8,9 +8,13 @@ User's credentials (login and password) identify a unique user an define what pa
 and actions will available for them in the system.
 
 
+.. hint::
+
+    existing user records can be added into OroCRM via LDAP integration, as described in the 
+    :ref:`LDAP Integration Guide <user-guide-ldap-integration>`
+
 Create a User Record
 --------------------
-
 In order to create a :term:`User` record:
 
 - Go to *System → User Management → Users*
@@ -54,6 +58,8 @@ Additional
 Any :ref:`custom fields added <user-guide-field-management-create>` to the "User" entity can be defined in the 
 *"Additional"* section.
 
+.. _user-management-users-groups-roles:
+
 Groups and Roles
 ^^^^^^^^^^^^^^^^
 
@@ -67,6 +73,8 @@ One user may have several roles. All the permissions granted to at least one of 
  
 .. image:: ./img/user_management/user_groups.png
 
+
+.. _user-management-users-access:
 
 Access Settings
 ^^^^^^^^^^^^^^^

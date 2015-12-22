@@ -2,16 +2,40 @@
 
 Roles Management
 ================
+OroCRM provides a lot of functionality that can enhance your CRM process. These may be used by different members of the 
+team. However, it is obvious that information and tools used by a marketing associate are different from 
+those required by support teams, or by the company management. To make sure that all the information is safe and 
+available right where it is required, and all the users gain access to the features and capabilities meeting their needs
+and competence, you need to create Roles.
 
-Each OroCRM :term:`user <User>` must be assigned a role. The role defines the user's role within the company structure 
-(for example, if this is a manager, a sales-representative, a marketologist, and so on) and specifies permissions 
-available for the users, who are assigned with this Role. 
+Roles represent a set of functions performed by the user in the Company and will be used to define to what data and
+functionality the user will have access.
 
-One user may have several roles. All the permissions granted to at least one of the roles assigned to a user, are 
+Initially, there are three roles available in OroCRM community edition: 
+
+- **Administrator**: responsible for the OroCRM instance set-up and maintenance, installs extensions, creates 
+  integrations, provides necessary system adjustment, would such a need arise. 
+  
+  By default, users who have this role, gain access to all the functionality and to any part of the system, however this 
+  could be changed (for example, in some companies security policies would not allow the system administrator to see 
+  personal details of the customers). 
+
+- **Sales Manager**: responsible for direct communication with the customers and conversion of opportunities 
+  into actual orders.  
+
+- **Marketing Associate**: responsible for ongoing growth of the customer-base with marketing campaigns and mass 
+  mailings
+  
+You can add any amount of roles, for example, for managers or support groups. Moreover, roles can be 
+added at any moment if such a need arises, or deleted if the practice shows they are excessive.
+
+
+Each OroCRM :term:`user <User>` must be assigned at least one role.
+One user may have any number of roles. All the permissions granted to at least one of the roles assigned to a user, are 
 granted to the user. 
 
-Creating a Role
----------------
+Create a Role
+-------------
 
 To create a new role:
 
@@ -82,8 +106,8 @@ Check/uncheck the **HAS ROLE** box to assign/unassign a user to the role:
     Please note that the "HAS ROLE" check-box defines if the user is assigned the specific role that you are 
     editing/creating.
 
-*Manage Roles*
---------------
+Manage Roles
+------------
 
 Once a role has been created, it will be added to the "All Roles" 
 :ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → User Management → Roles*).

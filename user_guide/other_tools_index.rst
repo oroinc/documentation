@@ -1,7 +1,7 @@
 .. _user-guide-other-tools:
 
-Other Tools
-===========
+Common Tools
+============
 
 There is a number of tools that all of the system-users, regardless of their roles, may find useful. 
 
@@ -12,12 +12,14 @@ and trends related to almost any object in the system; filters and segments to c
 information; tags to improve the filtering capabilities. 
 
 
-* :doc:`/user_guide/dashboards`  
 * :doc:`/user_guide/import_export_functionality`
+* :doc:`/user_guide/tags`
 * :doc:`/user_guide/reports`
 * :doc:`/user_guide/filters`
-* :doc:`/user_guide/segments`
-* :doc:`/user_guide/tags`
+* :doc:`/user_guide/segments` 
+* :doc:`/user_guide/integrations_overview`
+* :doc:`/user_guide/system_mailboxes`
+* :doc:`/user_guide/hangouts`
 
 
 
@@ -25,9 +27,11 @@ information; tags to improve the filtering capabilities.
     :hidden:
     :maxdepth: 2
 
-    dashboards
     import_export_functionality
+    tags
     reports
     filters
-    segments
-    tags
+    segments 
+    integrations_overview
+    system_mailboxes
+    hangouts

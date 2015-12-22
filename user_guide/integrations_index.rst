@@ -32,7 +32,6 @@ can be added to any website to collect requests to the OroCRM team.
     :hidden:
     :maxdepth: 1
 
-    integrations_overview
     google_single_sign_on
     zendesk_integration
     ldap_integration

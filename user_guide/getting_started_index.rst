@@ -14,9 +14,9 @@ activities and leverage this data to personalize content and communications.
 In this guide, you will find some introductory documentation to help you understand the basics of OroCRM, as well as 
 description of its main navigation components and controls so that you are comfortable using the system UI.
 
-
-* :doc:`/user_guide/first_steps`
 * :doc:`/user_guide/basic_entities`
+* :doc:`/user_guide/basic_stakeholders` 
+* :doc:`/user_guide/first_steps`
 * :doc:`/user_guide/log_in`
 * :doc:`/user_guide/ui_understanding_index`
  
@@ -30,21 +30,19 @@ description of its main navigation components and controls so that you are comfo
   * :doc:`/user_guide/search`
   * :doc:`/user_guide/viewed_pages`
   * :doc:`/user_guide/dashboards`
-  
-* :doc:`/user_guide/import_export_functionality`
 
-* :doc:`/user_guide/hangouts`  
+* :doc:`/user_guide/emails`    
     
 
 .. toctree::
     :hidden:
     :maxdepth: 2
 
-    first_steps
     basic_entities
+    basic_stakeholders 
+    first_steps
     log_in
     ui_understanding_index
-    hangouts
-
+    emails 
 
 

@@ -56,4 +56,4 @@ however OroCRM can be tailored and adjusted to meet the needs of any company.
 .. hint::
 
     Sales-team will also find useful OroCRM's reports, filters, dashboards and other tools described in the 
-    :ref:`Other Tools section <user-guide-other-tools>` of the User Guide. 
+    :ref:`Common Tools section <user-guide-other-tools>` of the User Guide. 

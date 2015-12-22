@@ -15,8 +15,9 @@ provides links to documents with detailed description of each menu item.
 * :doc:`/user_guide/user_menu`
 * :doc:`/user_guide/search`
 * :doc:`/user_guide/viewed_pages`
+* :doc:`/user_guide/dashboards`
 
-    
+
 
 .. toctree::
     :hidden:
@@ -31,5 +32,6 @@ provides links to documents with detailed description of each menu item.
     user_menu
     search
     viewed_pages
+    dashboards
 
 

@@ -3,7 +3,8 @@
 Marketing Tools
 ===============
 
-Marketologists are the ones who work at consistency and development of the client-base and make sure the sales-levels 
+Marketing associates are the ones who work at consistency and development of the client-base and make sure the 
+sales-levels 
 keep going up. OroCRM provides a number of sharpened tools to make running a marketing campaign and analysing its 
 results as convenient as it can possibly be. 
 
@@ -37,4 +38,4 @@ you can track the user activity on a website and analyze efficiency of a single 
 ..hint::
 
     The Marketing team will also find useful OroCRM's reports, filters, dashboards and other tools described in the 
-    :ref:`Other Tools section <user-guide-other-tools>` of the User Guide. 
+    :ref:`Common Tools section <user-guide-other-tools>` of the User Guide. 

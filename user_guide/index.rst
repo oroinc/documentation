@@ -9,8 +9,9 @@ business needs.
 
 * :doc:`/user_guide/getting_started_index`
 
-  * :doc:`/user_guide/first_steps`
   * :doc:`/user_guide/basic_entities`
+  * :doc:`/user_guide/basic_stakeholders` 
+  * :doc:`/user_guide/first_steps`
   * :doc:`/user_guide/log_in`
   * :doc:`/user_guide/ui_understanding_index`
  
@@ -24,12 +25,22 @@ business needs.
     * :doc:`/user_guide/search`
     * :doc:`/user_guide/viewed_pages`
     * :doc:`/user_guide/dashboards`
-	* :doc:`/user_guide/tags`
-  
+
+  * :doc:`/user_guide/emails`  
+
+      |
+ 
+* :doc:`/user_guide/other_tools_index`
+
   * :doc:`/user_guide/import_export_functionality`
+  * :doc:`/user_guide/tags`
+  * :doc:`/user_guide/reports`
+  * :doc:`/user_guide/filters`
+  * :doc:`/user_guide/segments` 
+  * :doc:`/user_guide/integrations_overview`
+  * :doc:`/user_guide/system_mailboxes`
   * :doc:`/user_guide/hangouts`
 
-  
       |
 
 * :doc:`/user_guide/sales_index`
@@ -93,31 +104,6 @@ business needs.
   * :doc:`/user_guide/notification_rules`
   * :doc:`/user_guide/workflow_management`
 
-      |
- 
-* :doc:`/user_guide/other_tools_index`
-
-  * :doc:`/user_guide/import_export_functionality`
-  * :doc:`/user_guide/reports`
-  * :doc:`/user_guide/filters`
-  * :doc:`/user_guide/segments` 
-  * :doc:`/user_guide/tags`
-
-      |  
-
-* :doc:`/user_guide/integrations_index`
-  
-    * :doc:`/user_guide/integrations_overview`
-    * :doc:`/user_guide/google_single_sign_on`
-    * :doc:`/user_guide/magento_channel_integration`
-    * :doc:`/user_guide/zendesk_integration`
-    * :doc:`/user_guide/ldap_integration`
-    * :doc:`/user_guide/mailchimp_integration`
-    * :doc:`/user_guide/dotmailer_integration`
-    * :doc:`/user_guide/ms_exchange_integration`
-    * :doc:`/user_guide/outlook_sync`
-    * :doc:`/user_guide/embedded_forms`
-
 
       |  
 
@@ -125,9 +111,6 @@ business needs.
 * :doc:`/user_guide/admin_index`
 
   * :doc:`/user_guide/system_config`
-  
-      * :doc:`/user_guide/system_mailboxes`
-  
   * :doc:`/user_guide/entities`
   * :doc:`/user_guide/entity_fields` 
   * :doc:`/user_guide/processes`
@@ -140,21 +123,30 @@ business needs.
     * :doc:`/user_guide/user_management_roles`
     * :doc:`/user_guide/user_management_users`
     * :doc:`/user_guide/user_management_bu`
-    * :doc:`/user_guide/user_management_organization`
     * :doc:`/user_guide/multiple_organizations_support`
     * :doc:`/user_guide/user_management_groups`
 
+  * :doc:`/user_guide/integrations_index`
+  
+    * :doc:`/user_guide/google_single_sign_on`
+    * :doc:`/user_guide/magento_channel_integration`
+    * :doc:`/user_guide/zendesk_integration`
+    * :doc:`/user_guide/ldap_integration`
+    * :doc:`/user_guide/mailchimp_integration`
+    * :doc:`/user_guide/dotmailer_integration`
+    * :doc:`/user_guide/ms_exchange_integration`
+    * :doc:`/user_guide/outlook_sync`
+    * :doc:`/user_guide/embedded_forms`
 
   
 .. toctree::
     :hidden:
 
     getting_started_index
+    other_tools_index
     sales_index
     marketing_index
     process_coordination_index
-    integrations_index
     admin_index
-    other_tools_index
     glossary
 
