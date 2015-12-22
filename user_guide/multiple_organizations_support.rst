@@ -1,7 +1,7 @@
 .. _user-ee-multi-org:
 
-Organizations
-=============
+Organization Records and Multiple Organization Support
+======================================================
 
 An Organization record represents a real enterprise, business, firm, company or another body using the OroCRM instance. 
 
@@ -150,7 +150,7 @@ From the grid you can:
   On the Edit form you can change the settings defined when creating the organization, such as its name, description,
   list of users, etc.
     
-- Get to the :ref:`Configuration settings <admin-configuration-organization>` of the organization: |IcConfig|
+- Get to the :ref:`Configuration settings <admin-configuration>` of the organization: |IcConfig|
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the organization: |IcView|
  

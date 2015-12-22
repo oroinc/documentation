@@ -6,7 +6,7 @@ Search and Shortcuts
 Search
 ------
 
-One of the ways to find a specific record is to use grid filters <user-guide-ui-components-grid-filters>. 
+One of the ways to find a specific record is to use :ref:`grid filters <user-guide-ui-components-grid-filters>`. 
 Apply the filter in the corresponding grid. 
 
 However, you can also find a specific record of any entity in the system by its name or by the name of a related entity.

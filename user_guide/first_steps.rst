@@ -1,7 +1,7 @@
 .. _user-guide-started:
 
-Ready, Set, Go
-==============
+System Set-Up
+=============
 
 OroCRM is a highly flexible system that can be tailored to meet the specific needs of your business, which also means 
 that there is a number of settings that you need to understand in order to gain the most of the system benefits.
@@ -38,7 +38,8 @@ information of all the company's organizations.
 Within the Organization, you can create a hierarchy of Units. This means that each unit can have some child-units, 
 which, in their turn can be parent units for other units. Therefore, you can use the Unit records to represent 
 the organization elements of any level.
-For example, a telecommunication service provider might have an organization that would represent its office in California.
+For example, a telecommunication service provider might have an organization that would represent its office in 
+California.
 The organization might be divided into two sub-units - Western and Eastern. Each of these sub-units could be divided
 into other four sub-units by the work direction:
 
@@ -380,8 +381,8 @@ Workflows can be related to any entity and any areas of the company life.
 
 Following the installation there are some workflows available by default, namely:
 
-- **Abandoned Shopping Cart** used to process cases, when a Magento user has added an item into the shopping cart but hasn't
-  purchased it (contact the customer and clear the cart or file a relevant order).  
+- **Abandoned Shopping Cart** used to process cases, when a Magento user has added an item into the shopping cart but 
+  hasn't purchased it (contact the customer and clear the cart or file a relevant order).  
   
 - **Order Follow Up** for customer contacts following a Magento the order 
   

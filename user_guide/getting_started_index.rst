@@ -29,8 +29,8 @@ description of its main navigation components and controls so that you are comfo
   * :doc:`/user_guide/user_menu`
   * :doc:`/user_guide/search`
   * :doc:`/user_guide/viewed_pages`
-  * :doc:`/user_guide/dashboards`
 
+* :doc:`/user_guide/dashboards`
 * :doc:`/user_guide/emails`    
     
 
@@ -44,5 +44,5 @@ description of its main navigation components and controls so that you are comfo
     log_in
     ui_understanding_index
     emails 
-
+    dashboards
 

@@ -32,6 +32,5 @@ provides links to documents with detailed description of each menu item.
     user_menu
     search
     viewed_pages
-    dashboards
 
 
