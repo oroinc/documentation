@@ -254,10 +254,9 @@ bundles:
 
 Our attachments functionality is based on 
     `**KnpGaufretteBundle** <https://github.com/KnpLabs/KnpGaufretteBundle>`_. Default storage is the "attachments" 
-    directory in the [Application root] directory - see the 
-    config (Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yml)
+    directory in the [Application root] directory - see the config:
 
-**app/config/config.yml:**
+**Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yml:**
 
 .. code-block:: yaml
    
