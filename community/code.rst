@@ -1,7 +1,7 @@
 Contributing Code
 =================
 
-The OroPlatform development team is accepting community code contributions in the form of bug fixes and feature requests.
+The OroPlatform development team is accepting community code contributions in the form of bug fixes and feature requests. 
 
 Reporting Bugs
 --------------
@@ -28,5 +28,11 @@ Submit a Patch
 
 The best way to contribute a bug fix is to provide a patch. In order to do so please submit a `pull request`_.
 
+.. note::
+
+    All contributors are required to submit a `Contributor License Agreement (CLA)`_ form. 
+
+
 .. _GitHub:         https://github.com/orocrm/platform/issues
 .. _`pull request`: https://help.github.com/articles/using-pull-requests
+.. _`Contributor License Agreement (CLA)`: http://www.orocrm.com/contributor-license-agreement
