@@ -31,7 +31,7 @@ On UNIX-based systems, you can simply set up a ``crontab`` entry for this:
 
     */1 * * * * /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
     
-Note: Some OS flavors will require the user name(usually root) in the crontab entry,
+Note: Some OS flavors will require the user name (usually root) in the crontab entry,
 like this:
 	
 .. code-block:: text
