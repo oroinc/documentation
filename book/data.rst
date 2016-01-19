@@ -6,3 +6,4 @@ Data Management
 
     data_audits
     reports_configuration
+    workflow

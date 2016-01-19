@@ -14,3 +14,4 @@ Configuration Format Reference
     placeholders
     requirejs
     search
+    workflow

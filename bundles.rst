@@ -479,6 +479,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/workflow`
+        * Reference: :doc:`/reference/format/workflow`
         * User guide: :doc:`/user_guide/b2b_customers`
         * User guide: :doc:`/user_guide/leads`
         * User guide: :doc:`/user_guide/opportunities`
