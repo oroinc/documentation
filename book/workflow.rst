@@ -120,11 +120,11 @@ with the ``attributes`` option:
 
 .. tip::
 
-    By default attributes data is stored inside WorkflowItem entity, i.e. this data can be accessible
-    only in scope of the specific workflow for some entity.
-    Instead you can use the :ref:`property_path option <reference-format-workflow-attributes-property-path>`
-    to automatically store and retrieve attributes data by property path, i.e. such attributes can be
-    considered as a links to an entity values:
+    By default attribute data is stored inside the ``WorkflowItem`` entity, i.e. this data can only
+    be accessed in the scope of the specific workflow for some entity. You can use the
+    :ref:`property_path option <reference-format-workflow-attributes-property-path>` instead to
+    automatically store and retrieve attributes data by property path (i.e. such attributes can be
+    considered as links to an entity's values):
 
     .. code-block:: yaml
         :linenos:
