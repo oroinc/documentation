@@ -120,9 +120,11 @@ with the ``attributes`` option:
 
 .. tip::
 
-    This example assumes that the keys used under the ``attributes`` option are the names of the
-    entity properties. You can use the :ref:`property_path option <reference-format-workflow-attributes-property-path>`
-    to configure attributes whose name differ from the underlying property name:
+    By default attributes data is stored inside WorkflowItem entity, i.e. this data can be accessible
+    only in scope of the specific workflow for some entity.
+    Instead you can use the :ref:`property_path option <reference-format-workflow-attributes-property-path>`
+    to automatically store and retrieve attributes data by property path, i.e. such attributes can be
+    considered as a links to an entity values:
 
     .. code-block:: yaml
         :linenos:
