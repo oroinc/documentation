@@ -5,8 +5,7 @@ OroCRM Integrations Overview
 
 OroCRM supports two types of integrations: 
 
-- Integrations applied to the whole system. There can only be one integration with a third-party system for an OroCRM 
-  instance. These integrations can be enabled/disabled and defined in the *"System → Configuration → Integration"*.
+- Integrations are applied system wide. An instance of an integration, such as with a third-party system, can only be applied once per OroCRM instance. These integrations can be enabled/disabled and defined in the *"System → Configuration → Integration"*.
   These are:
 
   - :ref:`Google single sign-on functionality <admin-configuration-google-settings>`: Allows users that have the same 
