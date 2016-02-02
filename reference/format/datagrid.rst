@@ -28,7 +28,7 @@ Datagrid
 |           |                                                         |
 |           | * `source`_                                             |
 |           |                                                         |
-|           |   * `aclResource`_                                      |
+|           |   * `acl_resource`_                                     |
 |           |   * `bind_parameters`_                                  |
 |           |   * `query`_                                            |
 |           |   * `type`_                                             |
@@ -300,8 +300,8 @@ of column names to their respective sort direction (either ``ASC`` or ``DESC``).
 The data source that fetches the data to be shown in the grid. Several options control how data are
 fetched:
 
-``aclResource``
-~~~~~~~~~~~~~~~
+``acl_resource``
+~~~~~~~~~~~~~~~~
 
 **type**: ``string``
 
