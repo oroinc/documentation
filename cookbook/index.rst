@@ -3,8 +3,32 @@ The Oro Cookbook
 
 This book contains list of most regularly used solutions in OroPlatform.
 
-.. toctree::
+* :doc:`/cookbook/entities/index`
 
+  * :doc:`/cookbook/entities/introduction`
+  * :doc:`/cookbook/entities/creating_entities`
+  * :doc:`/cookbook/entities/data_fixtures`
+  * :doc:`/cookbook/entities/datagrid`
+
+* :doc:`/cookbook/how_to_create_new_bundle`
+* :doc:`/cookbook/how_to_extend_existing_bundle`
+* :doc:`/cookbook/how_to_add_entity_event_listeners`
+* :doc:`/cookbook/how_to_create_and_customize_application_menu`
+* :doc:`/cookbook/how_to_enable_https`
+* :doc:`/cookbook/how_to_use_wsse_authentication`
+* :doc:`/cookbook/how_to_pass_request_parameter_to_grid`
+* :doc:`/cookbook/user_custom_validation_constraints`
+* :doc:`/cookbook/how_to_accelerate_import`
+* :doc:`/cookbook/how_to_create_global_js_component`
+* :doc:`/cookbook/how_to_replace_inline-javascript_with_component`
+* :doc:`/cookbook/how_to_install_extension_from_command_line`
+* :doc:`/cookbook/how_to_add_an_extension_to_oro_marketplace`
+* :doc:`/cookbook/faq`
+
+.. toctree::
+    :hidden:
+
+    entities/index
     how_to_create_new_bundle
     how_to_extend_existing_bundle
     how_to_add_entity_event_listeners
