@@ -47,8 +47,7 @@ be loaded. If you omit the priority, its value will implicitly be 0:
 
 .. tip::
 
-    The default priority for all OroPlatform bundles is 0. The OroCRM bundles have a priority of
-    20.
+    The default priority for all  bundles is 0.
 
 Routing Configuration
 ---------------------
