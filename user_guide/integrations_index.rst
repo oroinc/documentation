@@ -12,8 +12,6 @@ can be added to any website to collect requests to the OroCRM team.
   
 * :doc:`/user_guide/magento_channel_integration`
 
-* :doc:`/user_guide/zendesk_integration`
-
 * :doc:`/user_guide/ldap_integration`
 
 * :doc:`/user_guide/mailchimp_integration`
@@ -24,6 +22,7 @@ can be added to any website to collect requests to the OroCRM team.
 
 * :doc:`/user_guide/outlook_sync`
 * :doc:`/user_guide/embedded_forms`
+* :doc:`/user_guide/hangouts`
 
 
 .. toctree::
@@ -32,7 +31,6 @@ can be added to any website to collect requests to the OroCRM team.
 
     integrations_overview
     google_single_sign_on
-    zendesk_integration
     ldap_integration
     magento_channel_integration
     mailchimp_integration
@@ -40,3 +38,4 @@ can be added to any website to collect requests to the OroCRM team.
     ms_exchange_integration
     outlook_sync
     embedded_forms
+    hangouts

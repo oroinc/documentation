@@ -1,5 +1,5 @@
-More about Magento Channels
-===========================
+Magento-based Sales
+===================
 
 In the section, you can find more information about B2B channels and entities added to them by default.
 

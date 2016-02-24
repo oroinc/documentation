@@ -9,7 +9,7 @@ like this:
 
 .. seealso::
 
-    You can also :doc:`configure reports in the web UI </user_guide/reports>`.
+    You can also :doc:`configure reports in the web UI </user_guide/business_intelligence_reports>`.
 
 .. _book-reports-configuration:
 
