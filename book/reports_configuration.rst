@@ -200,7 +200,7 @@ of your bundle:
         items:
             account_opportunity:
                 label: Accounts by opportunity
-                route: oro_report_index
+                route: orocrm_report_index
                 routeParameters:
                     reportGroupName: opportunities
                     reportName:      won_by_period
