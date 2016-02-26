@@ -1,7 +1,7 @@
 How to Translate the Oro Project
 ==================================
 
-OroPlatform supports many internationalization functions including multiple languages and translations.
+Oro products support many internationalization functions including multiple languages and translations.
 All translatable strings are defined in each bundle translation domain files and are available via the translation
 management service `CrowdIn`_. This service allows to easily collaborate on the translation process and to enable
 more supported languages.
