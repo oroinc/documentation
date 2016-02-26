@@ -11,4 +11,4 @@ Find out more about how you can contribute to Oro products.
     code
     documentation
     translations
-    releases_process
+    release_process
