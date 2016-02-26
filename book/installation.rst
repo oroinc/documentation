@@ -73,11 +73,11 @@ and checkout the release you want to use:
 .. code-block:: bash
 
     $ cd /var/www
-    $ git clone -b 1.7.0 https://github.com/orocrm/crm-application.git orocrm
+    $ git clone -b 1.9.0 https://github.com/orocrm/crm-application.git orocrm
 
 .. note::
 
-    Along with ``1.7.0``, you can use any other released version or even the master branch to run
+    Along with ``1.9.0``, you can use any other released version or even the master branch to run
     the latest development version of the OroCRM.
 
 .. sidebar:: Installing the OroPlatform Application
@@ -88,7 +88,7 @@ and checkout the release you want to use:
     .. code-block:: bash
 
         $ cd /var/www
-        $ git clone -b 1.7.0 https://github.com/orocrm/platform-application.git orocrm
+        $ git clone -b 1.9.0 https://github.com/orocrm/platform-application.git orocrm
 
 Next, you'll need to install the necessary dependencies which may take some time:
 
