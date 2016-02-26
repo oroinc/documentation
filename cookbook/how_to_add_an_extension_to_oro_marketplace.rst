@@ -40,7 +40,7 @@ information about the application, its author and distribution license, as shown
             "target-dir": "Namespace/Bundle/ExampleBundle",
         }
 
-Also do not forget to include "autoload" and "target-dir" sections. Note, that "Namespace/Bundle/ExampleBundle"
+Also do not forget to include the "autoload" and "target-dir" sections. Note, that "Namespace/Bundle/ExampleBundle"
 value matches the namespace of your bundle.
 
 We only accept extensions under OSL-3 or MIT licenses.
