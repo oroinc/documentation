@@ -11,7 +11,7 @@ For example, you have two web-based stores, a retail outlet and a factory. There
 purchase from your web-based stores and with whom you have some business arrangements at the 
 factory. 
 
-Of course, there are much more details and peculiarities, but if we keep it simple, in he on-line store, somebody comes 
+Of course, there are much more details and peculiarities, but if we keep it simple, in an on-line store, somebody comes 
 to the store's website, looks through the items offered, and if interested in 
 buying them puts the items in the cart and orders them, leaving you the contact and shipping details. In many cases the 
 web-store customers can log-in and their profile details will be used. What kind of information do you need to make 
