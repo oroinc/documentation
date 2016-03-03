@@ -12,7 +12,7 @@ share user-related information in the network.
  
 The integration can also significantly simplify the initial setup of OroCRM, as it allows businesses to upload existing 
 :ref:`user <user-management-users>` records into OroCRM and map LDAP user role identifiers to  
-:ref:`OroCRM's roles <user-guide-user-management-permissions-roles>`.
+:ref:`OroCRM's roles <user-guide-user-management-roles>`.
 
 In order to enable this functionality you need to perform the steps described in the following sections.
 

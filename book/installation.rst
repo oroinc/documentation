@@ -3,6 +3,8 @@
     single: OroCRM Application; Installation
     single: Platform Application; Installation
 
+.. _book-installation-configuration:
+
 Installation and Configuration
 ==============================
 

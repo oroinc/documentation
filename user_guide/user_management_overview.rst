@@ -50,7 +50,7 @@ User Roles
 ----------
 
 User Roles define access rights of a specific user, as described in the 
-:ref:`Access and Permissions Management guide <user-guide-user-management-permissions-roles>`.
+:ref:`Access and Permissions Management guide <user-guide-user-management-roles>`.
 
 Getting Started
 ---------------

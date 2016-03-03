@@ -124,7 +124,7 @@ Glossary
       :ref:`access and permission settings <user-guide-user-management-permissions>`.
 
    Case
-       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a certain issue, problem or failures 
+       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a certain issue, problem or failure 
        reported by the customers.   
  
    Context

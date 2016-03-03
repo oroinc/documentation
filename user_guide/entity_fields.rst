@@ -237,8 +237,6 @@ File
 
 .. image:: ./img/entity_management/new_entity_field_file.png
 
-|
-
 - The file fields can be only of the *column table* storage type.
 
 - The :ref:`general information section <user-guide-entity-management-general-common>` of a file field has an only 

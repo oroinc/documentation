@@ -11,9 +11,11 @@ For each of these things it is important to record specifically the details that
 a customer's name is a universally needed piece of information, while the gender may be needed for 
 clothes shops and the hobbies may interest book stores.
 
-A collection of information of a similar nature is represented in OroCRM with an *entity*. And *records* of an entity 
-are specific instances. So, the *B2B Customer* entity represents all your clients involved in business-to-business
-relations, and each such client is a record of the entity.
+A collection of information of a similar nature is represented in OroCRM with an :term:`entity`. 
+And :term:`records <Record>` of an entity are specific instances of such a collection. Details of each record are its 
+properties. For example, User is an entity that represents everyone who uses the system. User Jhon Doe - is a record 
+of this entity. Name "John" and last name "Doe" along with a specific password, email address. etc., are properties of 
+this record. 
 
 OroCRM comes with a number of out-of-the-box entities that represent general stakeholders and components of 
 customer relation management. These are called **system entities**.
@@ -33,8 +35,8 @@ The article describes how to create and manage the entities.
 Create Entities
 ---------------
 
-In order to create a custom entity, you have to specify its details as described in the sections below: 
-
+In order to create a custom entity, you have to got to the *System → Entities*, choose the entity in the list and 
+specify its details as described in the sections below: 
 
 .. _user-guide-entity-management-create-general-information:
 

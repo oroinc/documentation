@@ -1,6 +1,8 @@
 .. index::
     single: Security
 
+.. _book-security-bundle:
+
 Security
 ========
 

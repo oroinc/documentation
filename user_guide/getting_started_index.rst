@@ -1,52 +1,48 @@
 Getting Started
 ===============
 
-The section describes all the controls and UI components, provides overview of main OroCRM entities and gives details 
-of some major functionalities. 
+Good customer relationships are essential for successful business development. Regardless of your business 
+scale, you need to keep track of all your customer information and find the best ways to utilize it to benefit
+your company. 
 
-* :doc:`/user_guide/ui_understanding`
-  
+With OroCRM, you can capture, store, and analyze all kinds of customer-related data, including the details of 
+customer profiles, shipping information, customer activity, prospective sales, and much more. 
+
+In addition, OroCRM provides the tools and functionality to easily monitor and manage specific customer-related 
+activities and leverage this data to personalize content and communications.
+
+In this guide, you will find some introductory documentation to help you understand the basics of OroCRM, as well as 
+description of its main navigation components and controls so that you are comfortable using the system UI.
+
+* :doc:`/user_guide/basic_entities`
+* :doc:`/user_guide/basic_stakeholders` 
+* :doc:`/user_guide/first_steps`
+* :doc:`/user_guide/log_in`
+* :doc:`/user_guide/ui_understanding_index`
+ 
+  * :doc:`/user_guide/navigation`
+  * :doc:`/user_guide/select_organization`
   * :doc:`/user_guide/ui_menu`
   * :doc:`/user_guide/ui_grids`
   * :doc:`/user_guide/ui_form`
   * :doc:`/user_guide/ui_view`
-  * :doc:`/user_guide/dashboards`
-  
-* :doc:`/user_guide/basic_entities`
-* :doc:`/user_guide/import_export_functionality`
-* :doc:`/user_guide/reports`
-* :doc:`/user_guide/filters`
+  * :doc:`/user_guide/user_menu`
+  * :doc:`/user_guide/search`
+  * :doc:`/user_guide/viewed_pages`
 
-  * :doc:`/user_guide/segments`
-
-* :doc:`/user_guide/tags`
-* :doc:`/user_guide/hangouts`  
-
-
-
-
-.. hint::
-
-    The *"OroCRM Menu Items"* document provides links to documents with detailed description of each menu item.
+* :doc:`/user_guide/dashboards`
+* :doc:`/user_guide/emails`    
+    
 
 .. toctree::
     :hidden:
     :maxdepth: 2
 
-    ui_understanding
-    ui_menu
-    ui_grids
-    ui_form
-    ui_view
-    dashboards
     basic_entities
-    import_export_functionality
-    reports
-    filters
-    segments
-    tags
-    hangouts
-
-
-
+    basic_stakeholders 
+    first_steps
+    log_in
+    ui_understanding_index
+    emails 
+    dashboards
 

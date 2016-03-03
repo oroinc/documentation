@@ -2,14 +2,20 @@
 
 Workflow Management
 ===================
+Company scalability and efficiency depend a lot on the common procedures all of its employees must follow. How many 
+times can you call a customer? Can you close an opportunity as lost without an explanation? What should you do if a customer 
+has added some goods to the cart but hasn't ordered them?
+
+OroCRM can create predefined workflows, that system users can follow in order to process entities. For example, a 
+predefined workflow for processing an abandoned cart (when a customer has added at least one item but has not purchased 
+anything) will allow a manager to convert the cart into an order at any moment, but will not let set a cart to the 
+“abandoned” status until the customer has been contacted successfully.
+
+Workflows can be related to any entity and any areas of the company life.
 
 Basically, a workflow is a sequence of industrial, administrative or other processes applied to a 
-piece of work from the initiation to completion.
-
-In OroCRM you can define what processes can be performed and in what order, with regard to objects represented by  
-:term:`records <Record>` of an OroCRM :term:`entity <Entity>`. 
-
-From this article you will learn to understand, create and manage workflows.
+piece of work from the initiation to completion. From this article you will learn to understand, create and manage 
+workflows.
 
 
 Workflow Components 

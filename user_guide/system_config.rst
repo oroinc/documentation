@@ -3,32 +3,45 @@
 Configuration Settings
 ======================
 
-Use the Configuration settings to define options to be applied to the OroCRM instance.
+Once you have your OroCRM installed it is configured by default to use English language, US postal format, Fahrenheit 
+degrees as temperature units and US dollars as a currency. Of course, these may be not the most convenient settings 
+if your company is located in France. Not everyone may like to have the navigation bar on the top 
+and sidebar panel on the right, as it is set by default. The list of allowed mime-types depends on the company 
+policies. Piwik tracking details, email settings and Google single sign-on details (if any) are different and have to be 
+defined for each company.
 
-Open the OroCRM instance and go to *"System → Configuration"*.
+These and some other details of a similar nature are the Configuration settings. 
 
-      |
-  
-.. image:: ./img/configuration/menu.png
+In OroCRM Community Edition you can change the configuration settings for the whole system only, while in the Enterprise
+edition some of the settings can be changed for each specific organization available.  
 
-|
-
-The available options are described and explained in the order they appear in the menu by default.
 
 .. sidebar:: Use Default
 
     Beside each of the settings there is a *"Use Default"* check-box. If the check-box is active, the default value will 
     be used. Default values for each of the settings are described in corresponding sections below.  
-	
-.. hint ::
+
+.. hint::
 
     The :guilabel:`Reset` button will restore the latest saved values.
 
+The available options are described and explained in the order they appear in the menu by default.
+
+     |
+  
+.. image:: ./img/configuration/menu.png
+
+|
+
+    
 Application Settings
 --------------------
 
-In the *"System → Configuration → General setup → Application Settings"* you can define the URL to be used as a value 
-for the {{system.appURL}} in the :ref:`email templates <user-guide-email-template>`. 
+Define the URL of you OroCRM instance. The value will be used to replace the {{system.appURL}} variable in 
+:ref:`email templates <user-guide-email-template>`. This way, if the URL is changed it is enough to replace it in the 
+settings (email templates won't require any change). 
+
+The setting can only be defined for the whole system.
 
       |
   
@@ -41,11 +54,13 @@ The default value is http://localhost/oro/.
 Localization
 ------------
 
+To adjust the settings related to the location of your company/office, use the *"Localization"* section of 
+*"Configuration"* settings for the whole system or any of its organizations in the following two subsections.
+
 Localization Options
 ^^^^^^^^^^^^^^^^^^^^
 
-In *"System → Configuration → General setup → Localization → Localization Options"* you can define a number of 
-localization options to be applied to the OroCRM instance, as follows:
+To defined location-specific settings, such as language, currency, go to the *"Localization Options"* subsection.
 
       |
   
@@ -55,7 +70,7 @@ localization options to be applied to the OroCRM instance, as follows:
   :header: "Option", "Description", "Default"
   :widths: 10, 30, 10
 
-  "**Locale***","Affects formatting of numbers, addresses, names, and dates.","English"
+  "**Locale***","Affects formatting of numbers, names, and dates.","English"
   "**Primary Location*** and **Format Address Per Country***","Define the address formatting to be applied. If *Format 
   Address Per Country* is enabled and the country-specific formatting is enabled for the instance, the address will be 
   displayed in compliance with the rules specified for the country.
@@ -81,8 +96,8 @@ localization options to be applied to the OroCRM instance, as follows:
  
 Map Options
 ^^^^^^^^^^^
-In *"System → Configuration → General setup → Localization → Map Options"* you can define the
-**Temperature Unit** and **Wind Speed Unit** used for the map displayed by the address.
+To define the **Temperature Unit** and **Wind Speed Unit** used for the map displayed by the address, use the 
+*"Map Options"* subsection. 
 
 The default values are Fahrenheit and miles per hour (MPH).
 
@@ -90,11 +105,6 @@ The default values are Fahrenheit and miles per hour (MPH).
 
 .. image:: ./img/configuration/localization_map.png
 
-.. csv-table::
-  :header: "Option", "Description", "Default"
-  :widths: 10, 30, 10
-
-  "**Locale***","Affects formatting of numbers, addresses, names, and dates.","English"
 
 
 .. _admin-configuration-language:
@@ -102,9 +112,9 @@ The default values are Fahrenheit and miles per hour (MPH).
 Language Settings
 -----------------
 
-
-In *"System → Configuration → General setup → Language settings"* you can define a number of 
-language-related options to be applied to the OroCRM instance, as follows:
+By default the system is English. You can download new translations and specify what languages can be used for the 
+system UI and mailings in the *"Language settings"* section. A default language can be set up for the whole system and 
+for each of its organizations. 
 
 .. image:: ./img/configuration/language_settings.png
 
@@ -112,15 +122,22 @@ language-related options to be applied to the OroCRM instance, as follows:
   :header: "Option", "Description", "Default"
   :widths: 15, 30, 10
 
-  "**Default Language***","Defines the language used for the instance UI. Choose a language from the drop-down menu:
+  "**Default Language***","Defines the language used for the UI of the whole system and of each of its organizations. 
+  Choose a language from the drop-down menu:
   
-  |UseDef|","English"
+  |UseDef|
+  
+  ","English"
   "**Supported Languages***","Defines a set of languages that can be used for translation of the 
-  :ref:`email template <user-guide-email-template>`. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the 
+  :ref:`email template <user-guide-email-template>`. The settings is applied to the whole system.
+
+  Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the 
   languages from the list.
 
   |Supported|","English"
   "**Available Translations** grid","
+  
+  Defines what languages can be used in the selections above.
 
   - If the :guilabel:`Download` button is available and the *Translation status* column is empty, the
     translation has not been loaded by you. Click the :guilabel:`Download` button.
@@ -140,17 +157,18 @@ language-related options to be applied to the OroCRM instance, as follows:
 Display Settings
 ----------------
 
-In *"System → Configuration → General setup → Display settings"* you can define a number of display-related options
-to be applied to the OroCRM instance, as follows:
+Arrangement of the menu, colours of the calendar, type of the text editor used,  the arrangement of an activity list and 
+grid, and other display settings can be defined for the whole system and each organization in the *"Display settings"*
+section. 
 
-      |
+|
   
 .. image:: ./img/configuration/display_settings.png
 
 Navigation bar
 ^^^^^^^^^^^^^^
 
-In the **Navigation bar → Position*** field, define the *Navigation bar* position. Choose a value from the drop-down
+Define the *Navigation bar* position in the **Navigation bar → Position*** field. Choose a value from the drop-down
 menu.
 
 The default value is "Top".
@@ -237,10 +255,11 @@ By default only the right sidebar is enabled.
 Tracking
 --------
 
-The Tracking section specifies the settings to be applied for all the 
-:ref:`Tracking records <user-guide-marketing-tracking>` created in the system instance.
+With OroCRM :ref:`Tracking Websites functionality <user-guide-marketing-tracking>` you can learn how many users have 
+visited your Web-site by the links within a specific marketing campaign and what these users' actions at the site were.
+This can be done with OroCRM's internal tools and using your Piwik account.
 
-The following options are available:
+Define the related system settings in the *"Tracking"* section. 
 
 .. csv-table::
   :header: "Option", "Description", "Default"
@@ -268,7 +287,7 @@ Upload Settings
 ---------------
 
 In the section you can define a set of mime types that will be supported for image and file entities and will be by 
-default supported for attachments in the system. 
+default supported for attachments in the whole system and each of its organizations. 
 
 .. hint::
 
@@ -281,11 +300,21 @@ default supported for attachments in the system.
 Email Configuration
 -------------------
 
+Today, emails have become a substantial part of communications, particularly, of communications with customers. 
+Therefore, OroCRM provides an extensive and flexible functionality with which you can send emails from OroCRM as well 
+as integrate with other existing mailboxes and servers. (An overview of the emails functionality is available in the 
+Email Management `<emails-overview>` guide).
+
+A number of email-related settings can be defined system-wide in the *"Email Configuration"* section.
+These settings, include such relatively small things as settings of address auto-complete, way to display email threads
+and reply/forward buttons, default sender's email and name for campaigns and notifications and adjustable signature, 
+with which you can set up the emails in the way most convenient for your users, as well as ability to create 
+:ref:`system mailboxes <admin-configuration-system-mailboxes>`. Moreover, signature text can be defined, and system 
+mailboxes can be created separately for each of the available organizations. 
+
+
 .. image:: ./img/configuration/email_settings_1_8.png
 
-In the Email Configuration section you can define options, applied to all the emails generated within the instance.
-
-The following settings are available:
 
 Autocomplete
 ^^^^^^^^^^^^
@@ -294,8 +323,8 @@ Choose how many characters shall be entered manually to enable auto-complete for
 Signature
 ^^^^^^^^^
 
-You can define a signature that will be added to all the email bodies created within the instance. The following fields
-are available:
+You can define a signature that will be added to all the email bodies created in the system or in each of its 
+organizations. The following fields are available:
 
 
 .. csv-table::
@@ -328,24 +357,16 @@ have "Reply all" shown at the top.
 Campaign Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
 
-These *Sender Email* and *Sender Name* fields are used for Email Campaigns if no other values are defined for them.
+These *Sender Email* and *Sender Name* fields are used for :ref:`Email Campaigns <user-guide-email-campaigns>` if no 
+other values are defined for them.
 
 .. _admin-configuration-email-notification:
 
 Notification Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The section defines the rules that will be applied by default to a notification generated in the OroCRM. You can define 
-the **Sender Email** and **Sender Name** to be used.
-
-
-.. _admin-configuration-email-campaign:
-
-Campaign Configuration
-^^^^^^^^^^^^^^^^^^^^^^
-
-The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in 
-OroCRM. You can define the **Sender Email** and **Sender Name** to be used.
+These *Sender Email* and *Sender Name* fields are used for :ref:`Notifications <system-notification-rules>` if no other 
+values are defined for them,
 
 
 System Mailboxes
@@ -371,9 +392,9 @@ Google Settings
 ^^^^^^^^^^^^^^^
 
 The only integration by default available in the community editions is integration with Google. In the *"System →  
-Integrations  →  Google Settings"* you can define the details used for google single sing-on,  which enables user with 
+Integrations  →  Google Settings"* you can define the details used for Google single sing-on,  which enables user with 
 the same Google account email address and OroCRM primary email address to log-in only once in the session, as described
-in the relevant :ref:`guide <admin-configuration-google-settings>` 
+in the relevant :ref:`guide <admin-configuration-google-settings>`. The setting is defined system-wide.
 
 Email Settings
 ^^^^^^^^^^^^^^
@@ -381,14 +402,14 @@ Integration with Microsoft Exchange server is available for the OroCRM
 Enterprise Edition only. The integration allows automatic uploading of emails from mailboxes on the server to OroCRM.
 OroCRM will collect any letter on the server such that one of its from/to fields is an email address assigned to any 
 contact and the other one is an email address assigned to any user in the OroCRM instance.
-The integration set-up is described in the relevant :ref:`guide <admin-configuration-ms-exchange>` 
+The integration set-up is described in the relevant :ref:`guide <admin-configuration-ms-exchange>`.
 
 MS Outlook Settings
 ^^^^^^^^^^^^^^^^^^^
 Integration with Microsoft Outlook is available for the OroCRM Enterprise Edition only. The integration allows automatic 
-synchronization of all the contacts, tasks and calendar events available for the user can be synchronized with the specified
-Outlook account and vice versa. 
-The integration set-up is described in the relevant :ref:`guide <user-guide-synch-outlook>` 
+synchronization of all the contacts, tasks and calendar events available for the user can be synchronized with the 
+specified Outlook account and vice versa. 
+The integration set-up is described in the relevant :ref:`guide <user-guide-synch-outlook>`.
 
 
 

@@ -2,7 +2,11 @@
 
 User Groups 
 ===========
-A *"User group"* is a system entity that represents a group of :term:`users <User>`. 
+
+Often a certain notification, report or mailing is dedicated to a specific set of users. This may be people doing the 
+same kind of job, working on the same project, processing a specific kind of issues. If such group is stable enough, it 
+is reasonable to create on entity, records of which will represent the whole group. These entity is a *"User group"*. 
+
 By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
 :ref:`filters <user-guide-filters-management>`.
 

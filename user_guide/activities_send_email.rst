@@ -85,7 +85,13 @@ You can use the action icons to
 
 - Forward the email: |email_forward|.  A form similar to the initial *Send Email* form will appear.
 
-- Define a record in OroCRM related to the email: |email_context| 
+- Define a record in OroCRM related to the email - :ref:`email contexts <emails-overview-contexts>`: 
+  
+  |
+  
+  |email_context| 
+  
+  |
   
   
   - The *Add Context Entity* form will appear. 

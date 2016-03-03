@@ -6,7 +6,8 @@ Tracking Websites
 With OroCRM Tracking Websites functionality you can learn how many users have visited your Web-site from links 
 within a specific marketing campaign and what these users' actions at the site were. 
 
-All you need to do, is to create a Tracking Website record and add the code generated to the web-pages that you want to 
+All you need to do, is to :ref:`enable tracking in the system configuration <admin-configuration-tracking>`, 
+create a Tracking Website record and add the code generated to the web-pages that you want to 
 monitor.
 
 .. note::

@@ -5,10 +5,25 @@ System Mailboxes
 
 System mailbox allows people who don't have access to the company mailbox addresses write to the company. 
 You can create several system mailboxes. This may be, for example, a mailbox for support requests, for business 
-proposals, for order requests, etc. 
+proposals, for order requests, for reclamations etc.
 
-You can define and modify the list of OroCRM users who have access to each of these mailboxes, automatically turn 
-letters into cases or leads, and set-up auto-responses.
+When someone sends a letter to this mailbox, all your subscribed employees will receive it. In addition, a new lead  or 
+case may be created in OroCRM based on this letter. All the available details will then be saved for it and it can be 
+processed in the system, following your company's workflow. 
+
+If SMTP is set-up, responses of any user will be sent to the system mailbox 
+and can then be received by the rest of the users. This way, all the participants will get  requests (letters) sent to 
+the system mailbox and will be able to take part in the issue resolution/opportunity development and see all the related 
+correspondence. 
+
+Important and useful feature of the system mailboxes is that the system can be set up to automatically turn 
+letters into :ref:`cases <user-guide-activities-cases>` or :ref:`leads <user-guide-system-channel-entities-leads>`, 
+which can then be processed in OroCRM. 
+
+Another great capability is ability to set-up auto-responses to the letters that meet certain criteria (or to all the 
+letters) in the system mailbox.
+
+Any number of system mailboxes can be set-up for one system and for each of its organizations.
 
 Create System Mailbox
 ---------------------
@@ -22,7 +37,7 @@ Create System Mailbox
 General
 ^^^^^^^
 
-The "General" section defines the basic settings of the mailbox created. The following fields must be defined:
+The "General" section defines the basic settings of the mailbox. The following fields must be defined:
 
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -40,18 +55,18 @@ Synchronization
   
 - Click the :guilabel:`Check Connection/Retrieve Folders` 
 
-- After successful connection, the list of available folders will be loaded. Check the Folders to be synchronized.
+- After a successful connection, the list of available folders will be loaded. Check the Folders to be synchronized.
 
 In the example below, synchronization has been done for a .gmail mailbox. The INBOX folder will be synchronized.
 
 
 .. hint::
 
-    Detailed instructions on the way to set-up IMAP and SMTP connection in gmail, are provided 
-    `here <https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144>`_
+    Detailed instructions on how to set-up IMAP and SMTP connection in gmail, are provided 
+    `here <https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144>`_.
 
-    To enable connection, check the box next to
-    `Allow access for less secure apps box <https://support.google.com/accounts/answer/6010255?hl=en>`_
+    To enable a connection, check the box next to
+    `Allow access for less secure apps box <https://support.google.com/accounts/answer/6010255?hl=en>`_.
 
 
 .. image:: ./img/system_mailbox/synchronize_mb.png 
@@ -60,7 +75,7 @@ In the example below, synchronization has been done for a .gmail mailbox. The IN
 Email Processing
 ^^^^^^^^^^^^^^^^
 
-You can choose what actions will be performed with all the emails received in the mailbox.
+You can choose what actions will be performed with all the emails the mailbox receives.
 
 Available options are:
 
@@ -79,17 +94,17 @@ Email Management
 ^^^^^^^^^^^^^^^^
 
 Define what OroCRM users will have access to the mailbox. You can select roles and\or specific users. All the users with 
-defined :ref:`roles <user-guide-user-management-permissions>` + all the specifically defined users will have access to 
+defined :ref:`roles <user-guide-user-management-permissions>` and all the specifically defined users will have access to 
 the mailbox.
 
 
 .. _admin-configuration-system-mailboxes-autoresponse:
 
-Autoresponse Rules
-^^^^^^^^^^^^^^^^^^
+Auto-response Rules
+^^^^^^^^^^^^^^^^^^^
 
-You can generate one or several auto-response rules upon which response emails will be generated and sent back to the 
-senders of all the letters in the mailbox that meet predefined criteria.
+You can generate one or several auto-response rules in order to determine which response emails will be generated and 
+sent back in response to any letter that meets some adjustable criteria.
 
 To create a rule, click the :guilabel:`Add Rule`
 
@@ -146,4 +161,12 @@ All the system mailboxes can be viewed and processed from the "System Mailboxes"
 
 
 .. image:: ./img/system_mailbox/system_mb_grid.png
+
+Conclusion
+----------
+
+Now the mailbox is set up and you can be sure that all the users you have assigned to it will get the required 
+information in timely manner. Additionally, automatic responses will be sent to make sure that everyone who sends an 
+email will receive an answer, and necessary leads or cases will be created in the system.
+
   

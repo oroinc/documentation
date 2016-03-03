@@ -1,137 +1,41 @@
-.. _user-guide-user-management-permissions:
+.. _user-guide-user-management-roles:
 
-Access and Permissions Management
-=================================
+Roles Management
+================
+OroCRM provides a lot of functionality that can enhance your CRM process. These may be used by different members of the 
+team. However, it is obvious that information and tools used by a marketing associate are different from 
+those required by support teams, or by the company management. To make sure that all the information is safe and 
+available right where it is required, and all the users gain access to the features and capabilities meeting their needs
+and competence, you need to create Roles.
 
-.. _user-guide-user-management-permissions-ownership-type:
+Roles represent a set of functions performed by the user in the Company and will be used to define to what data and
+functionality the user will have access.
 
-Ownership Types
----------------
+Initially, there are three roles available in OroCRM community edition: 
 
-Each entity in OroCRM has an :ref:`ownership type <user-guide-entity-management-create-other>` type, which defines the 
-level at which permissions will be set for records of the entity.
-
-If the ownership type is set to *"None"*, no authorization is required to see and process the entity and all the users
-within the OroCRM instance will be able to view, create, edit, delete and assign records of the entity. Otherwise, they
-depend on the specific Role settings, as described below. 
-
-.. _user-guide-user-management-permissions-roles:
-
-Roles
------
-Each OroCRM :term:`user <User>` must be assigned a role. The role defines a set of permissions and access rights that 
-will be applied to all the users who have been assigned this role.
-One user may have several roles. All the permissions granted to at least one of the roles assigned to a user, 
-are granted to the user. 
-
-If the ownership type of an entity is set to a *"User"*, *"Business Unit"* or *"Organization"*, the ability to see and 
-process the entity records is defined by the role(s) assigned to the user.
-
-Roles and Permissions
-^^^^^^^^^^^^^^^^^^^^^
-For each entity with an ownership type other than *"None"*, you can define permissions to perform the following actions: 
-
-- View: If, for a specific entity, the action is not available to a user, the user won't see the records 
-  :ref:`grid <user-guide-ui-components-grids>` nor the :ref:`View pages <user-guide-ui-components-view-pages>` 
-  of this entity records.
+- **Administrator**: responsible for the OroCRM instance set-up and maintenance, installs extensions, creates 
+  integrations, provides necessary system adjustment, would such a need arise. 
   
-- Create: If, for a specific entity, the action is not available to a user, the user won't be able to create new entity 
-  records.
+  By default, users who have this role, gain access to all the functionality and to any part of the system, however this 
+  could be changed (for example, in some companies security policies would not allow the system administrator to see 
+  personal details of the customers). 
 
-- Edit: If, for a specific entity, the action is not available to a user, the user won't be able to edit the entity 
-  records.
+- **Sales Manager**: responsible for direct communication with the customers and conversion of opportunities 
+  into actual orders.  
 
-- Delete: If, for a specific entity, the action is not available to a user, the user won't be able to delete the
-  entity records.
+- **Marketing Associate**: responsible for ongoing growth of the customer-base with marketing campaigns and mass 
+  mailings
   
-- Assign: If, for a specific entity, the action is not available to a user, the user won't be able to change the owner 
-  of the entity records.
-
-.. image:: ./img/user_management/role_entity_dropdown.png
-
-For each entity and action you can define one of the permission settings, depending on the entity ownership type and
-whether it is a :ref:`system organization <user-ee-multi-org-system>`, as described below:
+You can add any amount of roles, for example, for managers or support groups. Moreover, roles can be 
+added at any moment if such a need arises, or deleted if the practice shows they are excessive.
 
 
-*Permissions for System Organizations*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Each OroCRM :term:`user <User>` must be assigned at least one role.
+One user may have any number of roles. All the permissions granted to at least one of the roles assigned to a user, are 
+granted to the user. 
 
-In a :ref:`system organization <user-ee-multi-org-system>`, the user will able to perform an action for the
-entity records in any organization within the system, as long as the permission is set to *"System"*.
-
-      |
-  
-.. image:: ./img/multi_org/multi_org_permission.png
-
-|
-  
-Any other permission setting but *"System"*, in a system organization, will be treated as *"None"*.
-
-
-*Permissions for Non-System Organizations*
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Permissions in non-system organizations depend on the ownership type of the entity.
-
-      |
-
-Ownership Type "Organization"
-"""""""""""""""""""""""""""""
-If the entity type is set to *"Organization"*, when an entity record is created, an :term:`organization <Organization>` 
-is chosen as its :term:`owner <Owner>`. 
-
-You can choose one of the following options for each action: 
-
-- **None**: No users will be able to perform the action.
-- **Organization**: All the users from the owner-organization will be able to perform the action.
-- **System**: All the users will be able to perform the action.
-
-  |
-
-Ownership Type "Business Unit"
-""""""""""""""""""""""""""""""
-
-If the entity type is set to "Business Unit", when an entity record is created, a :term:`business unit <Business Unit>` 
-is chosen as its Owner. 
-
-You can choose one of the following options for each action: 
-
-- **None**:  No users will be able to perform the action.
-- **Business Unit**: All the users from the owner-business-unit will be able to perform the action.
-- **Division**: All the users from the owner-business-unit and from its child business units will be able to perform 
-  the action.
-- **Organization**: All the users from the organization to which the owner-business-unit belongs, will be able to 
-  perform the action.
-- **System**: All the users will be able to perform the action.
-
-  |
-
-Ownership Type "User"
-"""""""""""""""""""""
-
-If the entity type is set to "User", when an entity record is created, a :term:`user <User>` is chosen as its owner. 
-You can choose one of the following options for each action: 
-
-- **None**: No users will be able to perform the action.
-- **User**: Only the owner-user will be able to perform the action.
-- **Business Unit**: All the users from the business unit to which the owner-user belongs will be able to perform the 
-  action.
-- **Division**: all the users from the business unit to which the owner-user belongs and from its child business units 
-  will be able to perform the action.
-- **Organization**: all the users from the organization, to which the owner-user belongs, will be able to perform the 
-  action.
-- **System**: all the users will be able to perform the action.
-
-Roles and Access Rights
-^^^^^^^^^^^^^^^^^^^^^^^
-Access right assigned to a role, define if the users will be able to access a specific functionality.
-There are only two options:
-
-- **None**: users with the role won't be able to use the functionality.
-- ***System***: users with the role will be able to use the functionality for all the records created within their
-  OroCRM instance they've logged in into.
-
-*Creating a Role*
------------------
+Create a Role
+-------------
 
 To create a new role:
 
@@ -157,32 +61,39 @@ To create a new role:
 The "Entity" Section
 ^^^^^^^^^^^^^^^^^^^^
 
-If the ownership type of an entity is set to "None", it will appear in the *Entity* section of the *"Create Role"* form.
-Choose the permissions for each section from the drop-down menu:
+To specify if users with this role will be able to perform specific actions with the entity and at which level, choose 
+the permissions for each entity and each action from the drop-down menu:
 
       |
   
 .. image:: ./img/user_management/role_entity.png
 
-.. hint::
-    
-    The *"Default"* field specifies the permission settings that are by default assigned to a new entity.
+More detailed description of the available options is provided in the 
+:ref:`Access and Permissions Management <user-guide-user-management-role-permissions>` guide.
+
+The *"Default"* field specifies the permission settings that are by default assigned to a new entity.
 
 
 The "Capabilities" Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The "Capabilities" section contains a list of system functionalities that can be either enabled or disabled for all the 
-users that have been assigned a specific role.
+To enable or disable a specific system functionality for the role, use the "Capabilities" section.
 
       |
   
 .. image:: ./img/user_management/role_capabilities.png
+
+There are only two options:
+
+- **None**: users with the role won't be able to use the functionality.
+- ***System***: users with the role will be able to use the functionality for all the records created within their
+  OroCRM instance they've logged in into.
+
   
 The "Users" Section
 ^^^^^^^^^^^^^^^^^^^
 
-In the "Users" section, you can choose users to be assigned the role created.
+Choose users to be assigned the role created in the "Users" section
 
 Check/uncheck the **HAS ROLE** box to assign/unassign a user to the role:
 
@@ -195,9 +106,8 @@ Check/uncheck the **HAS ROLE** box to assign/unassign a user to the role:
     Please note that the "HAS ROLE" check-box defines if the user is assigned the specific role that you are 
     editing/creating.
 
-
-*Manage Roles*
---------------
+Manage Roles
+------------
 
 Once a role has been created, it will be added to the "All Roles" 
 :ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → User Management → Roles*).
