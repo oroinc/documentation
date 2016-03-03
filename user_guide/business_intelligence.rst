@@ -3,7 +3,7 @@
 Business Intelligence Tools
 ===========================
 
-OroCRM provides a set of users for data analysis and decision-making. With numerous dedicated widgets the users can 
+OroCRM provides a set of functionalities for data analysis and decision-making. With numerous dedicated widgets the users can 
 easily access, analyse all the necessary information and keep the track of the important changes and updates, reports 
 provide an understanding of historical data and related trends, and segmentation helps to focus on a specific part of data. 
 
