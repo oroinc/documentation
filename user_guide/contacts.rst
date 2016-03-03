@@ -30,7 +30,6 @@ The "General" section defines the basic settings of the contact created. The fol
 
   "**Owner**","Define users that can manage the contact, subject to the 
   :ref:`role settings <user-guide-user-management-permissions>`."
-  "**Username**","The name used to log into the system (login)."
   "**First Name** and **Last Name**","Name used to refer to the contact in the UI."
   
 The rest of the fields are optional. They can be used to define 

@@ -15,9 +15,17 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/emails`
+        * User guide: :doc:`/user_guide/accounts`
+        * User guide: :doc:`/user_guide/contacts`
 
 `ActivityBundle`_ (OroPlatform)
     Assign activities (such as calls, emails and tasks) to other entities.
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/user_management_users`
 
 `ActivityListBundle`_ (OroPlatform)
     The bundle provides methods to show all activities in one widget.
@@ -104,6 +112,12 @@ related articles is provided below the description.
     Introduce and maintain configuration setting in different scopes. Organize and visualize
     multiple configuration trees.
 
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Book: :doc:`/book/configuration`
+
 `ContactBundle`_ (OroCRM)
     Offers management functionality for customer contact data.
 
@@ -112,6 +126,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/emails`
+        * User guide: :doc:`/user_guide/contacts`
         * User guide: :doc:`/user_guide/outlook_sync`
 
 `ContactUsBundle`_ (OroCRM)
@@ -128,6 +143,12 @@ related articles is provided below the description.
 
 `DashboardBundle`_ (OroPlatform)
     Organize widgets that contain useful information on the user's homepage.
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Reference: :doc:`/reference/format/dashboard`
 
 `DataAuditBundle`_ (OroPlatform)
     Provides changelogs of configured properties for entities.
@@ -146,6 +167,9 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/crud`
+        * Book: :doc:`/book/reports_configuration`
+        * Cookbook: :doc:`/cookbook/how_to_pass_request_parameter_to_grid`
+        * Reference: :doc:`/reference/format/datagrid`
         * User guide: :doc:`/user_guide/channels`
 
 `DemoDataBundle`_ (OroCRM)
@@ -169,6 +193,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/emails`
+        * User guide: :doc:`/user_guide/user_management_users`
 
 `EmbeddedFormBundle`_ (OroPlatform)
     Makes it possible to embed Symfony forms on third-party sites and view their submitted data.
@@ -196,6 +221,9 @@ related articles is provided below the description.
         * Book: :doc:`/book/data_audits`
         * Book: :doc:`/book/configuration`
         * Book: :doc:`/book/entities`
+        * Reference: :doc:`/reference/annotation/config`
+        * Reference: :doc:`/reference/annotation/config_field`
+        * Reference: :doc:`/reference/format/entity_config`
         * User guide: :doc:`/user_guide/entities`
         * User guide: :doc:`/user_guide/entity_fields`
 
@@ -237,6 +265,12 @@ related articles is provided below the description.
 `ImapBundle`_ (OroPlatform)
     Work with email server through the IMAP protocol.
 
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/user_management_users`
+
 `ImportExportBundle`_ (OroPlatform)
     Makes it possible to import and export data in an automated way into and from different
     formats.
@@ -246,6 +280,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/importexport`
+        * Cookbook: :doc:`/cookbook/how_to_accelerate_import`
         * User guide: :doc:`/user_guide/import_export_functionality`
 
 `InstallerBundle`_ (OroPlatform)
@@ -284,6 +319,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Cookbook: :doc:`/cookbook/faq`
         * User guide: :doc:`/user_guide/multi_channel_functionality`
         * User guide: :doc:`/user_guide/channels`
         * User guide: :doc:`/user_guide/magento_channel_integration`
@@ -306,6 +342,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
+        * Book: :doc:`/book/entities`
         * User guide: :doc:`/user_guide/entities`
 
 `NavigationBundle`_ (OroPlatform)
@@ -318,6 +355,9 @@ related articles is provided below the description.
         * Book: :doc:`/book/navigation`
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
+        * Cookbook: :doc:`/cookbook/how_to_create_and_customize_application_menu`
+        * Reference: :doc:`/reference/annotation/title_template`
+        * Reference: :doc:`/reference/format/navigation`
 
 `NoteBundle`_ (OroPlatform)
     Attach notes to different entities.
@@ -327,6 +367,15 @@ related articles is provided below the description.
 
 `OrganizationBundle`_ (OroPlatform)
     Models the company's organization hierarchy and its business units.
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/user_management_overview`
+        * User guide: :doc:`/user_guide/user_management_users`
+        * User guide: :doc:`/user_guide/user_management_bu`
+        * User guide: :doc:`/user_guide/user_management_organization`
 
 `PlatformBundle`_ (OroPlatform)
     The OroPlatform core.
@@ -361,6 +410,9 @@ related articles is provided below the description.
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
         * Book: :doc:`/book/javascript_modularity`
+        * Cookbook: :doc:`/cookbook/how_to_create_global_js_component`
+        * Cookbook: :doc:`/cookbook/how_to_replace_inline-javascript_with_component`
+        * Reference: :doc:`/reference/format/requirejs`
 
 `SalesBundle`_ (OroCRM)
     Support for sales related workflows.
@@ -388,6 +440,12 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/security`
+        * Reference: :doc:`/reference/annotation/acl`
+        * Reference: :doc:`/reference/annotation/acl_ancestor`
+        * Reference: :doc:`/reference/format/acl`
+        * User guide: :doc:`/user_guide/user_management_overview`
+        * User guide: :doc:`/user_guide/user_management_users`
+        * User guide: :doc:`/user_guide/user_management_roles`
 
 `SegmentBundle`_ (OroPlatform)
     Provides entity segmentation that can be used for further processing.
@@ -397,6 +455,12 @@ related articles is provided below the description.
 
 `SoapBundle`_ (OroPlatform)
     Adds support to create SOAP controller classes and generates a single WSDL file for a SOAP API.
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Book: :doc:`/book/crud`
 
 `SyncBundle`_ (OroPlatform)
     Supports websocket communications based on the `JDareClankBundle`_.
@@ -461,9 +525,23 @@ related articles is provided below the description.
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/frontend_architecture`
+        * Cookbook: :doc:`/cookbook/how_to_create_global_js_component`
+        * Cookbook: :doc:`/cookbook/how_to_replace_inline-javascript_with_component`
+        * Reference: :doc:`/reference/format/placeholders`
 
 `UserBundle`_ (OroPlatform)
     Provides user management functionality (authentication, authorization, etc).
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * User guide: :doc:`/user_guide/user_management_overview`
+        * User guide: :doc:`/user_guide/user_management_users`
+        * User guide: :doc:`/user_guide/user_management_roles`
+        * User guide: :doc:`/user_guide/user_management_bu`
+        * User guide: :doc:`/user_guide/user_management_organization`
+        * User guide: :doc:`/user_guide/user_management_groups`
 
 `WindowsBundle`_ (OroPlatform)
     Consists of a set of tools for manipulating dialog windows and their states.
@@ -475,6 +553,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
+        * Book: :doc:`/book/workflow`
+        * Reference: :doc:`/reference/format/workflow`
         * User guide: :doc:`/user_guide/b2b_customers`
         * User guide: :doc:`/user_guide/leads`
         * User guide: :doc:`/user_guide/opportunities`

@@ -234,6 +234,11 @@ a controller method. Restricting access can be done in two different ways:
                - class: Acme\DemoBundle\Controller\ProductController
                  method: editAction
 
+.. seealso::
+
+    You can read detailed explanations for all available YAML configuration options
+    :doc:`in the reference section </reference/format/acl>`.
+
 Using Param Converters
 ~~~~~~~~~~~~~~~~~~~~~~
 

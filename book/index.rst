@@ -12,7 +12,6 @@ and technical details.
   * :doc:`/book/configuration`
   * :doc:`/book/localization`
   * :doc:`/book/security`
-  * :doc:`/book/emails`
   * :doc:`/book/navigation`
 
 * :doc:`/book/customization`
@@ -28,10 +27,16 @@ and technical details.
   * :doc:`/book/javascript_modularity`
   * :doc:`/book/layout`
 
+* :doc:`/book/emails_index`
+
+  * :doc:`/book/emails`
+  * :doc:`/book/sending_emails`
+
 * :doc:`/book/data`
 
   * :doc:`/book/data_audits`
   * :doc:`/book/reports_configuration`
+  * :doc:`/book/workflow`
 
 * :doc:`/book/background_tasks`
 
@@ -50,6 +55,7 @@ and technical details.
     customization
     entity_handling
     ui
+    emails_index
     data
     background_tasks
     functional_tests
@@ -74,4 +80,3 @@ TODO List
     * Reminders
     * Tags
 * Reports and Segments
-* Workflow

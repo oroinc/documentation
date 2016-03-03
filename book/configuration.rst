@@ -17,8 +17,9 @@ trees.
 Managing Configuration Settings
 -------------------------------
 
-To define your own configuration settings in a bundle, you use the ``SettingsBuilder``
-in the well-known ``Configuration`` class:
+To define your own configuration settings in a bundle, you use the
+:class:`Oro\\Bundle\\ConfigBundle\\DependencyInjection\\SettingsBuilder` in the well-known
+``Configuration`` class:
 
 .. code-block:: php
     :linenos:
@@ -26,6 +27,7 @@ in the well-known ``Configuration`` class:
     // src/Acme/DemoBundle/DependencyInjection/Configuration.php
     namespace Acme\DemoBundle\DependencyInjection;
 
+    use Oro\Bundle\ConfigBundle\DependencyInjection\SettingsBuilder;
     use Symfony\Component\Config\Definition\Builder\TreeBuilder;
     use Symfony\Component\Config\Definition\ConfigurationInterface;
 

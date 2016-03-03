@@ -25,6 +25,16 @@ to achieve result in quick and right way without going deep into technical detai
     cookbook/index
 
 
+The Oro Bundles
+---------------
+
+Learn more about all the bundles that are available from the bundles section:
+
+.. toctree::
+
+    /bundles
+
+
 User Guide
 ----------
 
@@ -38,6 +48,7 @@ End user oriented documentation that explains how to administer and configure pl
 
 Community Guide
 ---------------
+
 Learn about our development process and how you can contribute to OroPlatform.
 
 .. toctree::
@@ -45,12 +56,19 @@ Learn about our development process and how you can contribute to OroPlatform.
 
     community/index
 
-The Oro Bundles
----------------
 
-Learn more about all the bundles that are available from the bundles section:
+Reference
+---------
+
+.. toctree::
+    :maxdepth: 2
+
+    reference/index
+
+
+System Requirements
+-------------------
 
 .. toctree::
 
-    /bundles
     /system_requirements

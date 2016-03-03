@@ -25,11 +25,18 @@ Configuring the Entry Point Command
 
 All you have to do to regularly run a set of commands from your application
 is to configure your system to run the ``oro:cron`` command every minute.
-On UNIX-based systems, you can simply use the Crontab for this:
+On UNIX-based systems, you can simply set up a ``crontab`` entry for this:
 
 .. code-block:: text
 
     */1 * * * * /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
+    
+Note: Some OS flavors will require the user name (usually root) in the crontab entry,
+like this:
+	
+.. code-block:: text
+
+    */1 * * * * root /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
 
 On Windows, use the Control Panel to configure the Task Scheduler to do the
 same.

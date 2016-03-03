@@ -18,22 +18,7 @@ be done differently when installing the Platform application.
 Prerequisites
 -------------
 
-- PHP 5.4.9+ with command line interface
-
-- PHP Extensions:
-
-  - GD
-  - Mcrypt
-  - JSON
-  - ctype
-  - Tokenizer
-  - SimpleXML
-  - PCRE
-  - ICU
-  
-- DB Server (MySQL 5.1+ or PostgreSQL 9.1+) 
-- Web Server (Apache or Nginx)
-- Composer dependency manager 
+Please check that all the `system requirements`_ are met.
 
 Composer
 ~~~~~~~~
@@ -70,12 +55,15 @@ Clone the GitHub Repository
 
 **1a.2.** Use the *git clone* command. Specify the version to download. (In the example, it is "1.8.2").
  
-
 .. code-block:: bash
 
     $ cd [$folder_location]
-    $ git clone -b 1.8.2 https://github.com/orocrm/crm-application.git orocrm
+    $ git clone -b 1.9.0 https://github.com/orocrm/crm-application.git orocrm
 
+.. hint:
+
+    Along with ``1.9.0``, you can use any other released version or even the master branch to run
+    the latest development version of the OroCRM.
 
 .. sidebar:: Get Source Code for the OroPlatform Application
 
@@ -84,8 +72,7 @@ Clone the GitHub Repository
     .. code-block:: bash
 
         $ cd [$folder_location]
-        $ git clone -b 1.8.2 https://github.com/orocrm/platform-application.git orocrm
-
+        $ git clone -b 1.9.0 https://github.com/orocrm/platform-application.git orocrm
 
 **1a.3.** Go to the "orocrm" directory and run the *composer install* command, in order to install the dependencies. 
 
@@ -619,3 +606,4 @@ with the OroPlatform application and upgrade it by installing the "oro/crm" pack
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 .. _`documentation`: https://github.com/doctrine/data-fixtures/blob/master/README.md
 .. _`JMSJobQueueBundle`: http://jmsyst.com/bundles/JMSJobQueueBundle
+.. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements
