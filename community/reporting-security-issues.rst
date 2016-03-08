@@ -1,3 +1,5 @@
+.. _reporting-security-issues:
+
 *************************
 Reporting Security Issues
 *************************
