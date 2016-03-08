@@ -18,17 +18,17 @@ You can find more information about the syntax on the Sphinx website by reading 
 Documentation Source
 --------------------
 
-In order to start contributing to the Oro documentation please `fork`_ platform-docs repository:
+In order to start contributing to the Oro documentation please `fork`_ documentation repository:
 
 .. code-block:: text
 
-    https://github.com/orocrm/platform-docs
+    https://github.com/orocrm/documentation
 
 Clone the repository:
 
 .. code-block:: bash
 
-    $ git clone git://github.com/YOURUSERNAME/platform-docs.git
+    $ git clone git://github.com/YOURUSERNAME/documentation.git
 
 And create a branch:
 
