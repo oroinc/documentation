@@ -3,69 +3,74 @@
 Data Management Basics
 ======================
 
-With OroCRM, you can record, store, process and analyze various customer-related information. This information may cover 
-different areas including personal and contact details, records of the customer activity, possible sales and 
-arrangements, and many others. This can be any type of information necessary to monitor, manage and understand specific 
-customer-related activities. 
+With OroCRM, you can record, store, process, and analyze various customer-related data. This information may cover 
+different areas, including personal and contact details, records of the customer activity, possible sales and 
+arrangements, and many others. This can include any type of information necessary to monitor, manage, and understand 
+specific customer-related activities.
 
-In this article we will overview the ways data is represented and managed in OroCRM. For 
-each point that requires further explanation, you will find links to related documentation. 
+In this article, we will review the ways that data is represented and managed in OroCRM. For each point that requires 
+further explanation, you will find links to related documentation.
+
+.. _user-guide-data-management-basics-entities:
+
+How Data Is Organized
+---------------------
+
+The customer relationship management process requires us to collect and process huge amounts of information. OroCRM is
+designed to do this in the most efficient and convenient way possible.
+
+The system organizes information according to Entities, Records, and Properties. An **Entity** is a collection 
+of similar information. Each instance of this collection is called a **Record**. Details of each record are its 
+**Properties**.
+
+So, information about customers of an online store is collected as properties of the records of the Web Customer entity. 
+This means that one of the OroCRM entities is “Web Customer” and the system knows that records of this entity can have a 
+number of properties, such as the first name, last name, email, phone number, ID of the shipping address, ID of the 
+cart, and ID's of the orders. The system is also aware that some of these properties need to be defined while some are 
+optional. When a new customer is added to the system, their record is created and values of the properties are saved 
+for it. If something has changed (e.g., the phone number), the properties are updated.
 
 
-How the data is organized
--------------------------
 
-The customer relationship management process requires us to collect and process huge amount of information, and OroCRM 
-is sharpened to do it in the most efficient and convenient way.
+New records can be created and the existing record can be updated both manually and automatically 
+(as a result of integration with third-party systems). 
 
-Technically, a collection of information of a similar nature is represented in OroCRM with an **Entity**. Each instance 
-of this collection is called a **Record**. Details of each record are its **Properties**.
-
-For example, information about customers of a Web-store is collected as properties of the records of the Web Customer 
-entity. This means, that one of the OroCRM entities is “Web Customer” and the system knows that records of this 
-entity can have a number of properties, such as the first name, last name, email, phone number, id of the shipping 
-address, id of the cart and ids of the orders. Moreover, the system is aware that some of this properties must be 
-defined and some are optional. When a new Web customer is added to the system – its record is created and values of 
-the properties are save for it. If something has changed (e.g. the phone number), the properties are updated. 
-
-New records can be created and the existing one can be updated both manually and automatically (as a result of 
-integration with third-party systems). 
 With OroCRM's comprehensive :ref:`access settings <user-guide-user-management-permissions>` you can define what users 
 will be able to view, update, delete, and create records of specific entities.
 
-As soon as the property has been updated, all the system users who are allowed to 
-see the property, will see its new updated state. This ensures that all the stakeholders can obtain actual and 
-up-to-date information at any moment. 
+As soon as a property has been updated, all the system users who have access permission will see its new updated state.
+This ensures that all the stakeholders can obtain actual and up-to-date information at any moment. 
 
 
-How the Entities Can Be Related
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+How Entities Can Be Related
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Some pieces of information are complex enough to have their own entity. For example, for each cart in a Web store, we 
-need to know its unique id (number), how many items are in the cart, what their total value is, whether a purchase has 
-been made. Therefore, we have an entity “Cart”, records of which have all these properties: number of items, total 
-value, status. 
+Some pieces of information are complex enough to have their own entity. For example, for each cart in an online store, 
+we need to know its unique ID (number), how many items are in the cart, what their total value is, and whether a 
+purchase has been made. Therefore, we have an entity called “Cart”, which will contain records that will have all of 
+these properties: ID, number of items, total value, and status. 
 
-One customer may have several carts. For OroCRM this means that Web Customer records are related to Carts 
-records as one to many. To show this, we assign one of the Web Customer properties as a “relation” to carts. This 
-field will save identificators of the customer’s carts (such identificator is a field of the cart). By the 
-identificator the system can find the cart and bind its properties to the customer. 
+One customer may have several carts. In OroCRM, this means that Web Customer records can be related to many different 
+Carts records. To show this, we assign one of the Web Customer properties as a “relation” to carts. This field will 
+save an identifier of the customer’s carts (such as a field of the cart). Using this identifier, the system can find 
+the cart and bind its properties to the customer.
 
 Moreover, each cart may have several 
 items in it. This means that each Cart record is related to its Item records as one to many. 
 
-*User-wise, this means that you can get easily see the full picture and drill-down into details as much as required for 
-any specific task, as well as update the process the provided data.*  
+*User-wise, this means that you can easily get a full picture and drill-down into details as much as required for any 
+specific task, as well as update the process with the provided data.*  
 
 See All the Records of a Kind on Grids
 --------------------------------------
 
-Grid is an aggregated view of all the records of the same entity. Each row of the grid is one records, and each column 
-is one of the grid properties. 
+ A grid is an aggregated view of all the records of the same entity. Each row of a grid contains one record, and each 
+ column contains one of the grid properties.
 
 For example, you can open a grid of all the Contacts. (The Contact records represent actual people you are dealing with 
-and their properties are personal information, details of their position in the customer-company, contact details, etc.
-The contacts may be related to a customer, an opportunity, or any other record in the system, if reasonable.)
+and contains properties such as personal information, details of their position in the customer-company, contact 
+details, etc. The contacts may be related to a customer, an opportunity, or any other record in the system, if 
+applicable.)
 
 So, we have opened the *"All Contacts"* grid. 
 
@@ -89,20 +94,20 @@ For example, we have opened the View page of one of our Contacts.
 
 .. image:: ./img/data_management/view/view_01.png
 
-On the View page you can see all the details of the record and location of the address on the map. You can 
-click the phone number link to call it via Hangouts or log a call, start writing an email with a click on the address, 
-initiate Skype session directly from the View page. If there is a related entity, its identifier will be a link to the 
-View page of this entity
+On the View page, you can see all the details of a record and the location of its address on the map. You can click the 
+phone number link to call it via Hangouts or log a call, start writing an email by clicking on its address, or initiate 
+a Skype session directly from the View page. If there is a related entity, its identifier will be a link to the View 
+page of this entity.
 
 Action buttons at the top of each View page reflect the actions that you can do with the record. 
 
 The View Page details are described in the :ref:`View Pages <user-guide-ui-components-view-pages>` guide.
 
-Create New Records and Edit the Existing
-----------------------------------------
+Create New Records and Edit Existing Records
+--------------------------------------------
 
-To change details of and existing record or create a new record, you need to (re)define the record properties on its 
-Create/Edit form.
+To change the details of an existing record or to create a new record, you need to (re)define the record properties on 
+its Create/Edit form.
 
 The Create/Edit form details are described in the :ref:`Create/Edit Forms `<user-guide-ui-components-create-pages>` 
 guide.
@@ -110,27 +115,26 @@ guide.
 Tag the Records
 ---------------
 
-In order to give the system users additional information about the record, to systematize the records and mark them for 
-future usage (e.g. to select them for reports or create segments), you can tag them with existing or new tags. For 
-example, if you tag a customer as "VIP", this will let the other system users know about the customer's importance, you 
-can adjust report to show only the data for your VIPs, and make targeted mailings to them. Moreover, you can find a 
-record by its tag with the :ref:`search <user-guide-getting-started-search>` functionality.
-More information about tags is available in the :ref:`Tags <user-guide-ui-components-view-pages>` guide.
+In order to give system users additional information about a record, as well as to systematize records and mark them for 
+future usage (e.g., to select them for reports or create segments), you can assign them existing or new tags. For 
+example, if you tag a customer as "VIP," this will let the other system users know about the customer's importance. You 
+can then adjust the report to show only data for your VIPs and make targeted mailings to them. Moreover, you can find a 
+record by its tag with the :ref:search <user-guide-getting-started-search> functionality.
  
 
-Define the Process Within Which Record Details Can Be Changed And Follow It
----------------------------------------------------------------------------
+Use Workflows to Define Processes
+---------------------------------
 
-In the process of the work with the customers is ongoing: carts turn into orders, 
-what seemed to be a potential opportunity appears not to be worth effort or tuns into a successful deal, and so on. 
-These and other processes are reflected in OroCRM with a change of record properties and sometimes creation of new 
-relations. (For example - a new lead appeared, and then it turned successful and was bound to some contact, some 
-opportunity and some customer).
+The process of working with customers is ongoing: carts turn into orders, potential opportunities either fizzle or 
+turn into successful deals, and so on. OroCRM reflects these and other processes by changing record properties and 
+sometimes creating new relations. (For example, when a new lead appears and then turns successful, it gets bound to some 
+contact, some opportunity, and some customer).
 
-In many cases success of the business depends a lot on the unity of the procedures followed all through the company.
-For example, most companies won't allow their employees to close a cart without contacting the potential customer but
-no one wants to annoy the customers with duplicating calls. Customer complaints have to be researched and reacted to.
-Potential big contract requires some negotiations and only after that can turn into a successful deal or a lost chance.
+In many cases, the success of a business depends on the unity of its procedures and how closely its employees follow 
+them throughout the company. For example, most companies won't allow their employees to close a cart without contacting 
+the potential customer, but no one wants to annoy customers with duplicate calls. Likewise, each customer complaint has 
+to be researched and responded to, and potential big contracts require specific negotiations before they turn into 
+either a successful deal or a lost chance.
 
 In order to regulate this, workflows can be created in OroCRM. Workflow defines what transitions (changes of 
 properties) are available to the system users at each step.

@@ -1,10 +1,12 @@
 .. _user-guide-admin-tools:
 
-Tools for the System Management and Administration
-==================================================
+Tools for System Management and Administration
+==============================================
+
 The section describes tools for system management and administration, aimed to be used primarily by the system 
 administrators.
-Please note that in may cases the tools may be not available to usual users, subject to the permissions defined. 
+
+Please note that in many cases, the tools may be not available to the usual users, subject to the permissions defined.
 
 * :doc:`/user_guide/system_config`
 

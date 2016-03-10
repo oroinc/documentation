@@ -3,7 +3,6 @@
 Channels
 ========
 
-
 Today, successful businesses usually have more than one sales site. These may be different online stores, 
 business-to-business enterprises, or business-to-customer outlets. Moreover, different customer and sales-related 
 information can be received from various survey-campaigns or membership in clubs, funds, charity events, etc. Gaining a 
@@ -11,36 +10,16 @@ full understanding of all the information you receive from each of these sources
 information you collect from various other sources, becomes crucial. With OroCRM's Channels you can do both with minimum 
 effort. 
 
-In OroCRM, each Channel record represents one sources of customer-related data.
-Upon creation, you can choose what kind of customer-related information will be collected from each source (in technical 
-words "what entities will be assigned to this channel"). 
+In OroCRM, each Channel record represents one sources of customer-related data, as described in the :ref:`Common 
+Features guide <user-guide-common-features>`.
 
-For example, you have two channels of customer related data: your on-line store and your office.
-While they are both related to your customers, the information and customer relations process is quite different.
- 
-Of course, there are much more details and peculiarities, but if we keep it simple, in he on-line store, somebody comes 
-to the store's website, looks through the items offered, and if interested in 
-buying them puts the items in the cart and orders them, leaving you the contact and shipping details. In many cases the 
-web-store customers can log-in and their profile details will be used. What kind of information do you need to make 
-relations with such customers successful? The most basic things are - what pages have people viewed, what items they 
-have ordered, if there is anything that a customer has added to the cart but hasn't ordered and if there are some 
-complaints after the delivery.
-
-It is quite different when you are to execute an agreement in your office, there may be some complex arrangements, 
-details whereof you want to track, some preliminary agreements and executed deeds. You can have several ongoing and 
-perspective projects with one big company, but with different project managers, so you need their contact details, as 
-well as understanding of their position in the company and relation to the project. 
-
-As you add different entities for each channel, you will collect exactly the types of information relevant for this 
-source of customer-related data. Moreover, if you have several on-line stores ()or several offices working in different 
-directions) or have some other sources of customer-related data (e.g. a partner-program), channels will help to allocate
-data from a specific source. 
-
-OroCRM community edition has got two types of channels. Web (sharpened for on-line stores )and B2B (sharpened for 
-business-to-business activities). For the enterprise clients, additional types of channels can be added during the 
+OroCRM Community Edition has two types of channels: Web (built for online stores) and B2B 
+(built for business-to-business activities). For enterprise clients, additional types of channels can be added during 
 system integration.
 
-Any amount of Channel records may be defined for one OroCRM instance.
+There is no limit to the number of Channel records that may be defined for one OroCRM instance. Upon creation, you can 
+choose what kind of customer-related information will be collected from each channel, as described below:
+
 
 
 .. _user-guide-channel-guide-create:
@@ -61,8 +40,8 @@ To create a channel:
 
 .. _user-guide-channel-guide-general:
 
-General Details
-^^^^^^^^^^^^^^^
+Define General Details of the Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Define basic channel information in the *General* section.
 
@@ -108,10 +87,12 @@ The following three fields are mandatory and **must** be defined:
 
 .. _user-guide-channel-guide-entities:
 
-Entities
-^^^^^^^^
+Define What Details Are Collected From the Channel
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:term:`Entities <Entity>` assigned to a channel define what data OroCRM can collect from the relevant source.
+The information collecte from a channel is represented by the entitie assigned to the channel and their related 
+entities. Please, read the :ref:`Data Management Basics guide <user-guide-data-management-basics>` to learn more about 
+entities. In order to assign an entity to a channel and collect the data from the channel, go the *"Entities"* section. 
 
       |
   
