@@ -145,30 +145,31 @@ Log Actions in the System
 -------------------------
 
 Whether a workflow has been defined for entity records, or users can process it in any order, it is important to know 
-what actions have been performed with a record and by whom. Who has turned this cart into an order? Who has closed 
-an opportunity? Who has deleted a customer? Who has changed contact details? In order to know the answers, you 
-can use OroCRM's data audit functionality - with it you will see what actions have been performed in the system, when 
-and by whom.
+what actions have been performed with a record, as well as by whom. Who has turned this cart into an order? Who has 
+closed an opportunity? Who has deleted a customer? Who has changed contact details? In order to know the answers, you 
+can use OroCRM's data audit functionality
 
-Detailed description of the functionality is available in the :ref:`Data Audit <user-guide-data-audit>` guide.
+A detailed description of the data audit functionality is available in the :ref:`Data Audit <user-guide-data-audit>` 
+guide.
 
 Integrate with Third-Party Systems
 ----------------------------------
 
 OroCRM can be integrated with third-party systems, as a result of integration new records can be uploaded to OroCRM and 
 passed to the integrate system from OroCRM.
-For example, ldap integration enables loading user records, integration with Magento loads customer records from 
-a Magento store to OroCRM and integration with MailChimp will load OroCRM contact details to MailChimp and get results 
-of an email campaign back to OroCRM.
 
-Integrations are create by the system administrator. The list of integrations available by default is available in the 
+For example, integrating with ldap lets you load user records to OroCRM, integrating with Magento lets you load customer 
+records from a Magento store into OroCRM, and integrating with MailChimp lets you load OroCRM contact details into 
+MailChimp, as well as get the results of an email campaign within OroCRM.
+
+Integrations are created by the system administrator. A list of integrations available by default is available in the 
 :ref:`Integrations Overview <user-guide-integrations>`.
 
 Import and Export Data
 ----------------------
 
-Another way to add records to OroCRM is to export it from a .csv file - these can be customer details, information about
-your leads and opportunities, contact informations, and other. 
+Another way to add records to OroCRM is to export it from a .csv file. These can consist of customer details, 
+information about your leads and opportunities, contact information, and other data.
 
 You can also export data from OroCRM into a .csv file. You can export all the records of one entity, as well as all the 
 records available on a specific grid. 
@@ -180,12 +181,12 @@ Step-by-step instructions for the import and export actions are provided in the
 Conclusion
 ----------
 
-This way, changes of properties for records in OroCRM reflect the processes in customer relationships. Users can add new 
-records to OroCRM one by one, from .csv files or with integrations. The way in which the records can be processed can be 
-limited with the record types (entities) and workflows, and all the changes can be tracked with the data audit tools.
-Details of the record can be easily viewed and updated in OroCRM and as soon as there has been a change, other users 
-will see the updated information. Details of the records can be used and analyze by all the relevant stakeholders of 
-customer relationships process to make their work more efficient and benefit the company, as described in the 
+Changing record properties in OroCRM reflects the processes that make up customer relationships. Users can add new 
+records to OroCRM one by one, either with .csv files or with integrations. The way in which records are processed can 
+be limited using record types (entities) or with workflows, and all the changes can be tracked with the data audit 
+tools. Details of the record can be easily viewed and updated in OroCRM, and as soon as there has been a change, other 
+users will see the updated information. Throughout, stakeholders of customer relationships can access record 
+details in order to make their work more efficient. More information can be found in the 
 :ref:`OroCRM Users and Their Benefits <oro-benefits>` guide.
     
 Related Documents

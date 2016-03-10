@@ -3,51 +3,52 @@
 Access and Permissions Basics
 =============================
 
-OroCRM provides a lot of functionality that can enhance your CRM process. These may be used by different members of the 
-team. However, it is obvious that information and tools used by a marketing associate are different from 
-those required by support teams, or by the company management. Flexible structure of the access and permissions settings 
-helps to ensure that all the information is safe and available right where it is required, and all the users gain access 
-to the features and capabilities meeting their needs.
+The functionality built within OroCRM can enhance your CRM process. However, different members of the team will require 
+different information and tools. For instance, the needs of marketing associates are different from those of support 
+teams or company management. Because of this, OroCRM allows a good deal of flexibility when it comes to adjusting access 
+and permission settings. This helps to ensure that all information is safe but still easily available. All users will be 
+able to use the features and capabilities that they require. 
 
-This guide is aimed to explain the basic ideas of the access and permission settings. If you are the system 
+This guide will explain the basic ideas that make up the access and permission settings. If you are the system 
 administrator, please address the :ref:`Access and Permissions Management <user-guide-user-management-permissions>`
 guide.
 
-What Define the Permissions
----------------------------
+What Defines the Permissions
+----------------------------
 
 Access and permission rights of each user depend on the following: 
 
-- Organizations and units, to which the user belongs: so users with the same role, working in different offices or 
-  subdivisions may have different access to different information. The list of organizations and units to which a user 
+- Organizations and units to which the user belongs: So users with the same role, working in different offices or 
+  subdivisions, may have different access to different information. The list of organizations and units to which a user 
   belongs is defined by the system administrator in the *"Access Settings"*. 
   
-- Roles, assigned to the user: for example the sales representatives and system administrators need very different data 
-  and have different access to it. The roles of a user are defined by the system administrator for each user in the 
-  *"Groups and Role"*.
+- Roles assigned to the user: For example, sales representatives and system administrators need very different data and 
+  require different access to it. The roles of a user are defined by the system administrator for each user in the 
+  *"Groups and Role"*. 
 
-- Ownership type of the entity: when you create a record, you may define its *"Owner"*: these may be the user who can 
-  manage the records or a business unit/organization the members whereof can manage the record. Some record types have 
-  the ownership type *"None"*, which means that all the users can see them. Ownership type of each entity is defined by 
-  the system administrator. 
+- Ownership type of the entity: When you create a record, you may define its *"Owner"*. These may either be a single 
+  user who can manage the record or an entire business unit/organization. Some record types have the ownership type 
+  *"None"*, which means that all users can see them. The ownership type of each entity is defined by the system 
+  administrator. 
 
 
-What You Can Be Permitted
--------------------------
+
+Permissions
+-----------
 
 Access to Functionalities
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Users with specific roles may be allowed or not allowed to use specific functionality. For example, some users may not 
-have capability to assign tags, to share grids, or to create new users.
+Depending on their specific roles, users will have access to different functionalities. For example, some users may not 
+be able to assign tags, share grids, or create new users.
 
-These are defined by the system administrator in the *"Capabilities section"* of each role. Only users with a role, for 
-which a capability is enabled, will be able to use the functionality. 
+These are defined by the system administrator in the *"Capabilities section"* of each role. Users will only be able to 
+access a functionality when it has been enabled within their role. 
 
 .. note::
 
-    Capabilities of different roles are compounded, i.e. if one role has the right to merge entities, the user will 
-    have this right, regardless of the settings defined for other roles of this user.
+    Capabilities of different roles are compounded. For example, if one role has the right to merge entities, the user 
+    will have this right, regardless of the settings defined for other roles of this user.
     
 
 Actions with Entities    
@@ -60,33 +61,34 @@ from this business unit, and can only view (but not edit) similar records create
 (e.g. "Texas" or "Florida"). At the same time, for users with another role, for example "System Administrator", this 
 records may be even not seen.
 
-The following actions can be permitted for each role, organization/unit and entity:
+The following actions can be permitted for each role, organization/unit, and entity:
   
   
-- **View**: If, for a specific entity, the action is not available to a user, the user won't see the records 
+- **View**: If, for a specific entity, this action is not available to a user, the user will not see the 
   :ref:`Grids <user-guide-ui-components-grids>` nor the :ref:`View pages <user-guide-ui-components-view-pages>` 
   of this entity records.
   
-- **Create**: If, for a specific entity, the action is not available to a user, the user won't be able to create new 
+- **Create**: If, for a specific entity, this action is not available to a user, the user won't be able to create new 
   entity records.
 
-- **Edit**: If, for a specific entity, the action is not available to a user, the user won't be able to edit the entity 
+- **Edit**: If, for a specific entity, this action is not available to a user, the user won't be able to edit the entity 
   records.
 
-- **Delete**: If, for a specific entity, the action is not available to a user, the user won't be able to delete the
+- **Delete**: If, for a specific entity, this action is not available to a user, the user won't be able to delete the
   entity records.
   
-- **Assign**: If, for a specific entity, the action is not available to a user, the user won't be able to change the owner 
+- **Assign**: If, for a specific entity, this action is not available to a user, the user won't be able to change the owner 
   of the entity records.
 
 
 Working in System Organizations
 -------------------------------
 
-OroCRM Enterprise edition support the use of :ref:`multiple organizations <user-ee-multi-org>`. When this functionality
-is used, there can be any number of non-system and one system organization created. The users, assigned to the system 
-organization can perform an action for the entity records in any organization within the system, if they are assigned a 
-role, for which the relevant permission is set to *"System"*.
+OroCRM Enterprise edition supports the use of :ref:`multiple organizations <user-ee-multi-org>`. With this 
+functionality, there can be created any number of organizations. One of them may be defined as a *"System"* organization. 
+The users who are assigned to the system organization can perform an action for the entity records in any organization 
+within the system, as long as they are assigned a role for which the relevant permission is set to *"System"*. 
+
 
       |
   
@@ -94,19 +96,19 @@ role, for which the relevant permission is set to *"System"*.
 
 |
 
-For example, to enable your support desk to view details of all the customers), there should be:
+For example, before your support desk can view the details of each customer, there should be:
 
-- A system organization (e.g. "Main Office")
+- A system organization (e.g., "Main Office")
 
-- A role created(e.g. "Support")
+- A role created (e.g., "Support") and not assigned to any specific organization
 
-- Permission to view the customer entity defined within the "Main Office" set to "System"
+- Permission to view the customer entity defined for the role "Support" set to "System"
 
-- Users of the support desk must have the role "Support" and be assigned to the "Main Office" organization. 
+- Users of the support desk must have the "Support" role and be assigned to the "Main Office" organization. 
 
 
 Conclusion
 ----------
 
-Your screen may not always look as in the guides, as some capabilities may not be available to you. Please address your 
-system administrator, if you feel that some functionality or capability is required for your work. 
+Your screen may not always look like the images in this guide, as some capabilities may not be available to you. Please 
+contact your system administrator if you require a specific functionality or capability for your work.

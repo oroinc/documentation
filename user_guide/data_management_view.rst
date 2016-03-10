@@ -3,9 +3,10 @@
 View Pages
 ==========
 
-To see more details of a specific record, and to work directly with the record (create a task related to a customer, 
-appoint a calendar event for a user, turn a cart into an order, share a contact and so on), you need to get to its 
-View page.
+To see more details of a specific record, and to work directly with the record (i.e., create a task related to a 
+customer, appoint a calendar event for a user, turn a cart into an order, share a contact, and so on), you need to get 
+to its View page. 
+
 
 For example, this is a View page of a contact.
 
@@ -15,32 +16,33 @@ For example, this is a View page of a contact.
 
 |
 
-On this View page you can see all the details of the record and location of the address on the map, can use the links 
-and action buttons as described in this article. 
+On this View page, you can see all the details of the record and its location on the map. You can use the links and 
+action buttons as described in this article.
+
 
 Get To a View Page
 ------------------
 
 There are several ways to get to a View page:
 
-- Select the relevant record in a :ref:`grid <user-guide-ui-components-grids>` (click the |IcView| icon )
+- Select the relevant record in a :ref:`grid <user-guide-ui-components-grids>` (click the |IcView| icon)
 
 - Find the records in the :ref:`Search Panel <user-guide-getting-started-search>`
 
-- Click :guilabel:`Save and Close` button on a :ref:`Create/Edit form <user-guide-ui-components-create-pages>`
+- Click the :guilabel:`Save and Close` button on a :ref:`Create/Edit form <user-guide-ui-components-create-pages>`
 
 
 What You Can See on a View Page
 -------------------------------
 
 Details of the chosen record are displayed on a View page. (The list of properties shown is defined 
-by the system administrator with the  *Show On View* setting of the entity fields).
+by the system administrator with the *"Show On View"* setting of the entity fields).
 
-Information in a view page is allocated in sections, so that you can easily switch from one section to another. All the 
-sections are placed one after another, so you can also scroll down to the required information. 
+Information in a View page is allocated in sections that you can easily switch between. All the sections are placed one 
+after another, so you can also scroll down to find information.
 
-For example, this is a View page of an opportunity with sections "General Information", "Activities" and 
-"Additional Information":
+For example, this is a View page of an opportunity with *"General Information"*, *"Activities"* and 
+*"Additional Information"* sections:
 
 |
 
@@ -48,7 +50,7 @@ For example, this is a View page of an opportunity with sections "General Inform
 
 |
 
-Click the section name and this section will be displayed on the top of the page:
+ Click the section name in order to move it to the top of the page:
 
       |
 
@@ -62,16 +64,16 @@ Click the section name and this section will be displayed on the top of the page
 What You Can Do from a View Page
 --------------------------------
 
-Manage the Record from a View Page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Manage a Record from a View Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Action buttons at the top right of each View page reflect the actions that you can do with the 
 record. 
 
-These include ability to share the record with other users (if applicable), to get to the 
-:ref:`Create/Edit form <user-guide-ui-components-create-pages>`, to delete a record and to perform different 
-:ref:`activities <user-guide-activities>` related to the record (make a task, create a calendar event, log a call, 
-write an email, etc.)
+These include the ability to share a record with other users (if applicable), go to the 
+:ref:`Create/Edit form <user-guide-ui-components-create-pages>`, delete a record, and perform different
+:ref:`activities <user-guide-activities>` related to a record (such as make a task, create a calendar event, log a call, 
+and write an email).
 
   
 |
@@ -81,7 +83,7 @@ write an email, etc.)
 |
 
 
-If there are four or less actions available for the record, a separate button is created for each of them.
+If there are four or less actions available for a record, a separate button is created for each of them.
 
 |
 
@@ -89,7 +91,7 @@ If there are four or less actions available for the record, a separate button is
 
 |
 
-If there are more than four actions available for the record, they will be collected under the 
+If there are more than four actions available for a record, they will be collected under the 
 *"{Entity Name} Actions*" drop-down.
 
 |

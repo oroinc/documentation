@@ -14,20 +14,22 @@ For example, you can open a grid of all the Contacts.
 
 |
 
-In the example, you can immediately see some major details of our contacts, such as their first and last names, email, 
+In this example, you can immediately see some major details of our contacts, such as their first and last names, email, 
 phone number, etc.
 
-You can adjust and save grid views, updated and delete grid records, get to the Edit and View pages of any grid record, 
-and even export all the data in the grid as a .csv file.
+You can adjust and save grid views, update and delete grid records, get to the 
+:ref:`Edit forms <user-guide-ui-components-create-pages>` and :ref:`View pages <user-guide-ui-components-view-pages>` 
+of any record on the grid, and even export all the data in the grid as a .csv file.
 
-Get to a Grid
--------------
+Getting to a Grid
+-----------------
 
 There are several ways to get to a grid.
 
-- Select the relevant point in the :ref:`menu bar <user-guide-navigation-menu>`: to get to the *"All Contacts"* grid, 
-  select the *"Contacts"* menu item, to get to the *"All Reports"* grid, click the *"Manage Custom Reports"* menu item, 
-  etc. 
+- Choose the relevant option in the :ref:`menu bar <user-guide-navigation-menu>`. For instance, select the *"Contacts"* 
+  menu item to get to the "All Contacts" grid, click the *"Manage Custom Reports"* menu item to get to the 
+  *"All Reports"* grid, and so on.
+ 
   
 - Find it in the :ref:`Shortcuts <user-guide-getting-started-shortcuts>`.
 
@@ -42,8 +44,8 @@ There are several ways to get to a grid.
 
 .. hint::
 
-    If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, this 
-    grid will be look in the same as it did when you left it for the View page (the same filters and order applied).    
+    If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, it 
+    will look identical to when you left it (the same filters and order will still be applied)..    
 
     
 
@@ -55,14 +57,14 @@ Adjust a Grid
 Change the Table
 ^^^^^^^^^^^^^^^^
 
-Actually, you can change the set of details available in the grid (if permitted), and the order of columns.
-To do so, go to the right corner of the grid, and click the settings icon |IcSettings|.
+You can change the set of details available in the grid (if permitted) and its order of columns by going to the right 
+corner of the grid and clicking the settings icon |IcSettings|.
 
 To show/hide a column on the grid, check/uncheck it in the *"Table Settings"*.(The list of columns is defined 
-by the system administrator with the  *Show On Grid* setting of the entity fields).
+by the system administrator using the *Show On Grid* setting of the entity fields).
 
-To move columns of the grid, move them in the form: click on the "Sort" column and hold the mouse button - drag the 
-column to change their order:
+To move a column on the grid, move it in the form: click on the "Sort" icon opposite to the column name, hold the mouse 
+button, and drag the column to change the order:
 
 |
 
@@ -77,12 +79,12 @@ Apply Filters
 
 You can apply filters to choose specific items to be shown in the grid. 
 
-Of course, if there are a lot of contacts, they all won't fit to one page. In order to find the required contact in the 
+Of course, if there are a lot of contacts, they won't all fit on one page. In order to find the required contact in the 
 grid, you can use the grid filters. 
 
-Some filters are available by default, but the set of filters can be modified with check-boxes under the 
+Some filters are available by default, but the set of filters can be modified using check-boxes under the 
 *"Manage Filters"* menu on the left. (The list of filters is defined 
-by the system administrator with the *Show Grid Filter* setting of the entity fields).
+by the system administrator using the *Show Grid Filter* setting of the entity fields).
 
 |
 
@@ -90,11 +92,11 @@ by the system administrator with the *Show Grid Filter* setting of the entity fi
 
 |
 
-The list of properties that can be used as filters is defined by the system administrator with *"Show Grid Filter"* 
+The list of properties that can be used as filters is defined by the system administrator using the *"Show Grid Filter"* 
 setting of the entity fields. 
 
 
-Click the arrow on a filter to choose required values. Available value setting depend on the field type. 
+Click the arrow on a filter to choose the required values. Available value setting depend on the field type. 
 
 |
 
@@ -102,8 +104,8 @@ Click the arrow on a filter to choose required values. Available value setting d
 
 |
 
-If more than one filter is active, only the records that meet requirements of ALL the filters are displayed. For 
-example, we have filtered the *"All Contacts"* grid so that it would only show Jameses Browns from California.
+If more than one filter is active, only the the records that meet requirements of ALL the filters are displayed. For 
+example, we have filtered the *"All Contacts"* grid so that it only shows Jameses Browns from California.
 
 .. image:: ./img/data_management/grid/grid_02.png
 
@@ -111,9 +113,8 @@ example, we have filtered the *"All Contacts"* grid so that it would only show J
 Change Sorting
 ^^^^^^^^^^^^^^
 
-Be default the grids are sorted by the first column in the ascending order. You can change the sorting by any field and 
-in any order - it is enough to click the column header. An upward or downward looking arrow will appear by the column 
-name.
+Be default, grids are sorted in ascending order by the first column. You can sort them by any field and in any order - 
+it is enough to click the column header. An upward or downward looking arrow will appear by the column name.
 
 
 .. _user-guide-ui-components-grid-customized:
@@ -121,19 +122,17 @@ name.
 Save Your Customized Grid View and Share It with Other Users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If there is a frequent set of filters and/or ordering that you need to use, you can save your 
-customized grid view with all the filters and return to 
-it at any moment. You can have any number of such views. This is very convenient, for example, if 
-you are working with the customers from different stores, or contacts from different states, and so on.
+If there is a frequent set of filters and/or ordering that you need to use, you can save your customized grid view with 
+all the filters and return to it at any moment. You can have any number of such views. This is very convenient if you 
+are working with customers from different stores, contacts from different states, and so on. 
 
-
-You can save a set of filters and sorting applied to the grid in a named view.
+You can save a set of filters and  any custom sorting you've applied to the grid using the named view.
 
 To save a view:
 
 - Adjust the grid
 
-- Click the :guilabel:`Options` link next to grid view name, choose :guilabel:`Save As` 
+- Click the :guilabel:`Options` link next to the grid view name, then choose :guilabel:`Save As` 
 
 |
 
@@ -141,8 +140,8 @@ To save a view:
 
 |
 
-- Define the view name and click the :guilabel:`Save` button. Keep the name meaningful, so it is easy to find the grid 
-  that you need
+- Define the view name and click the :guilabel:`Save` button. . Name it something meaningful so you can easily find it 
+  later.
 
 |
 
@@ -150,7 +149,7 @@ To save a view:
 
 |
 
-The view will now be available in the drop-down next to the grid title
+The view will now be available in the drop-down next to the grid title.
 
 |
 
@@ -158,7 +157,7 @@ The view will now be available in the drop-down next to the grid title
 
 |    
 
-For each of the grid views, there is a number of options
+For each of the grid views, there is a number of options.
 
 .. image:: ./img/data_management/grid/grid_custom_view_04.png
 
@@ -166,14 +165,14 @@ For each of the grid views, there is a number of options
 - You can rename an existing grid view with *"Rename"*
 - You can share the grid view with other users with *"Share"*. This means that other users will see your customized 
   grid view in their grid view selector.
-- You can delete the grid view
+- You can delete the grid view.
 
 .. _user-guide-ui-components-grid-action-buttons:
 
 Other Grid Controls
 ^^^^^^^^^^^^^^^^^^^
 
-You can adjust any grid view with action buttons - displayed right above the grid.
+You can adjust any grid view using the action buttons displayed right above the grid.
 
 |
 
@@ -185,9 +184,9 @@ You can adjust any grid view with action buttons - displayed right above the gri
 
 - Scroll pages (if there is more than one page of records): |ScrollPage|
 
-- Refresh the grid, i.e. get the newest details on the displayed records: |BRefresh|
+- Refresh the grid (i.e., get the newest details on the displayed records): |BRefresh|
 
-- Reset the grid, i.e. clear all the filters applied to the grid: |BReset|
+- Reset the grid (i.e., clear all the filters applied to the grid): |BReset|
 
 
 
@@ -203,15 +202,15 @@ Create New Records from a Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If permitted, you can initiate the creation of a new record directly from the grid.
-Right above the grid, there is usually a :guilabel:`Create New ...` button - click it, to get to the Create form.
+Right above the grid, there is usually a :guilabel:`Create New ...` button. Click it, to get to the Create form.
 
 .. _user-guide-ui-components-grid-edit:
 
 Edit Records on a Grid
 ^^^^^^^^^^^^^^^^^^^^^^
 
-If permitted, you can edit the records directly from the grid. By each cell there is an edit icon. Click it twice till 
-you edit the value. 
+If permitted, you can edit the records directly from the grid. Beside each cell there is an edit icon. Click it twice, 
+in order to edit the value. 
 
 |
 
@@ -233,7 +232,7 @@ Delete and Merge Records on a Grid
 
 If permitted, you can delete records.
 
-- To delete one record, hover the mouse over the action buttons (the last column) and click |IcDelete|.
+- To delete a record, hover the cursor over the action buttons (the last column) and click |IcDelete|.
 
 |
 
@@ -251,7 +250,7 @@ If permitted, you can delete records.
 
 |
 
-In the same manner you can merge several records (if applicable). Currently, merge can only be done for several 
+In the same manner, you can merge several records (if applicable). Currently, merge can only be done for 
 :ref:`accounts <user-guide-accounts>`.
 
 
@@ -259,12 +258,12 @@ Get to View Page and Edit Forms from a Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If permitted, you can get to the :ref:`View Page <user-guide-ui-components-view-pages>` or 
-:ref:`Edit form <user-guide-ui-components-create-pages>` of any records in the grid.
+:ref:`Edit form <user-guide-ui-components-create-pages>` of any record in the grid.
  
 
-To get to the *"Edit"* page, hover the mouse over the action buttons (the last column) and click |IcEdit|.  
+To get to the *"Edit"* page, hover the cursor over the action buttons (the last column) and click |IcEdit|.  
 
-To get to the *"View"* page, hover the mouse over the action buttons and click |IcView|. 
+To get to the *"View"* page, hover the cursor over the action buttons and click |IcView|. 
 
  
 .. _user-guide-ui-components-grid-action-buttons-export:

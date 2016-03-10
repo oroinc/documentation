@@ -3,13 +3,12 @@
 Tags
 ====
 
-Tag is non-hierarchical keyword or phrase assigned to a record. First of all, tags provide additional information about 
-the records to all the system users. Tags can be assigned to any records of any entity and used for  
-:ref:`filtering <user-guide-filters-management>`, they can be used to create a report only for the records that 
-have/don't have a specific tag and generate targeted segments for mailings and marketing campaigns.
-Moreover, you can easily find all the records with a specific tag, even not knowing 
-their other details from anywhere in the system as described hereunder.  
-
+Tags are non-hierarchical keywords or phrases that are assigned to records. They provide additional information about 
+records and are visible to all the system users. Tags can be assigned to any records of any entity and used for 
+:ref:`filtering <user-guide-filters-management>`. They can also be used to create a report for only the records that 
+have/don't have a specific tag, and even generate targeted segments for mailings and marketing campaigns. Moreover, you 
+can easily find all records that have a specific tag from anywhere in the system, even if you don't know their other 
+details, as described below. 
 
 Add a Tag to a Record
 ---------------------
@@ -19,8 +18,8 @@ You can add a tag from the grid or from a View page of a specific record.
 Add a Tag from the Grid
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The tag column is by default available on the :ref:`grids <user-guide-ui-components-grids>`. If they are not, you can 
-:ref:`adjust the table settings <user-guide-ui-components-grids-change-table>` and add the column. Adding a tag is not 
+The tag column is available by default on the :ref:`grids <user-guide-ui-components-grids>`. If they are not, you can 
+:ref:`adjust the table settings <user-guide-ui-components-grids-change-table>` and add the column. Adding a tag is no 
 different from :ref:`editing other properties <user-guide-ui-components-grid-edit>` from a grid:
 
 - Double-click the tag cell of the record. 
@@ -65,14 +64,14 @@ In order to add a tag to a record from its :ref:`View page <user-guide-ui-compon
 Manage Tags
 -----------
 
-You can see all the tags available in the system and amount of times they were assigned to a record, in the Tags 
-:ref:`grid <user-guide-ui-components-grids>`.
+You can see all the tags available in the system, as well as the amount of times they were assigned to a record, in the 
+Tags :ref:`grid <user-guide-ui-components-grids>`.
 
 .. image:: ./img/data_management/tags/tags_from_grid.png
 
 |
 
-From the grid you can:
+From the grid, you can:
 
 - Get to the :ref:`Create form <user-guide-ui-components-create-pages>` of the tag:
   
@@ -101,7 +100,7 @@ In order to see all the records with a specific tag anywhere in the system.
 
 |
 
-You will see the page similar to the search results, that will contain all the records with this tag.
+You will see the page similar to the search results. It will contain all the records with this tag.
 
 |
 
@@ -114,9 +113,8 @@ You will see the page similar to the search results, that will contain all the r
 Conclusion
 ----------
 
-Tags are easy to add and manage property of any record that can be used to find records with the tag from anywhere in 
-the system, as well as to  filter records for reports and segments.
-
+Tags are easy to add and can help manage the content of any record. They can be used to find records from anywhere 
+within the system and can filter records for reports and segments.
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
    :align: middle
