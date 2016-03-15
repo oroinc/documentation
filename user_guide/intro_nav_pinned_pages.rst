@@ -4,7 +4,7 @@ Pinbar
 ======
 
 Pinning pages is a convenient tool that allows you to save a page and easily return to it. When you open a pinned page, 
-it will look exactly as it did when you have pinned it.
+it will look exactly as it did when you first pinned it.
 
 Pins are particularly useful to:
 

@@ -3,8 +3,8 @@
 Flash Notifications and Dialog Windows
 ======================================
 
-In the course of the system usage, there sometimes appears the need to inform the user about some events in the system,
-for example some operation has been executed or has failed, or you need to be reminded about a task or event.
+While using OroCRM, you may sometimes need to inform a user about some events in the system. For example, when an 
+operation has been executed or has failed, or they need to be reminded about a task or event.
 
 Success flash messages are displayed against a green background:
 
