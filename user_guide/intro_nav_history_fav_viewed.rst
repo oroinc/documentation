@@ -17,21 +17,21 @@ All the page names available in the lists are clickable links to the relevant pa
 History
 -------
 
-This section displays links to the latest 20 pages you’ve visited in the reverse chronological order. The list is 
-particularly useful to open a page that you have recently used without searching for it. 
+ This section displays links to the 20 latest pages you’ve visited in reverse chronological order. This list is 
+ particularly useful when you want to open a page that you have recently used without searching for it.
 
 
 Favorites
 ---------
 
-The section displays links to all the pages that you have marked as "favorite".
+The inks to all the pages that you have marked as "favorite" are displayed in this section.
 
 
 Add a page to the "Favorites" list
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Most of the pages can be marked as favourite. Marking a page as "favorite" is handy when you need to return to the same 
-page repeatedly. In order to do so, click the star-shaped *"Mark as favorite*" icon in the top right corner of the page.
+Most of the pages can be marked as a "favourite", which is handy when you need to return to the same page repeatedly. 
+In order to do so, click the star-shaped *"Mark as favorite*" icon in the top right corner of the page.
 
 |
 
@@ -39,7 +39,7 @@ page repeatedly. In order to do so, click the star-shaped *"Mark as favorite*" i
 
 |
 
-The icon will turn yellow and a link the page will appear in the *"Favorites*" menu. 
+The icon will turn yellow and a link to the page will appear in the *"Favorites*" menu. 
 
 |
 
@@ -58,7 +58,8 @@ The icon will turn grey and the page will be removed from the *"Favorites*" list
 Most Viewed
 -----------
 
-In the section you can see links to the pages most frequently visited by the uses with the period of the last ... 
+This section displays links to the most frequently used pages. Every time you visit a page, OroCRM recalculates the 
+statistics and updates the list.
 
 
 

@@ -431,11 +431,11 @@ doubt).
   
 .. note::
 
-    The option is only available only if your OroCRM instance is connected with the Google Apps account. Please check 
-    with your system administrator if you want to enable Gmail synchronization for your account.
+    This option is only available if your OroCRM instance is connected with a Google Apps account. Please check with 
+    your system administrator if you want to enable Gmail synchronization for your account.
 
-- If you haven’t used the Google account in the browser (or its cache has been cleared), the Sign-in form will appear. 
-  Log-in to the account.
+ - If you haven’t used a Google account in your browser (or if its cache has been cleared), the Sign-in form will appear. 
+   Use it to log in to your account.
 
    |
   
@@ -443,8 +443,8 @@ doubt).
 
    |
 
- - If you are using several Gmail accounts in the browser, you will see a list of them. Select the account for which you 
-   want to enable synchronization with OroCRM. Select the account and log-in (if necessary).  
+ - If you are using several Gmail accounts in your browser, you will see a list of them. Select the account for which 
+   you want to enable synchronization with OroCRM, then log in (if necessary).
    
    |
    
@@ -452,8 +452,8 @@ doubt).
    
    |
    
- - As soon as you have selected the account, or if you are already logged in into a single Gmail account, you need to 
-   allow OroCRM to view and manage your mail, and allow it offline access to your mailbox.
+ - As soon as you are logged into a single Gmail account, you need to let OroCRM view and manage your mail, and give it 
+   offline access to your mailbox.
    
    |
    
@@ -501,7 +501,7 @@ same external mailbox for your user in different organizations.
 Save the Changes
 ----------------
 Click the :guilabel:`Save and Close` button in the top right corner to save the changes to your profile and return to 
-*"My User"* page.
+the *"My User"* page.
 
 Logout
 ------

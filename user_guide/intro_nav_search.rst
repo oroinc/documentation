@@ -5,8 +5,8 @@ Search
 
 Search is the fastest way to find a specific record you need. To find a record in OroCRM:
 
-# Click the search icon in the top of the screen – |IcSearch|
-# Type in the search key the text field
+# Click the search icon at the top of the screen – |IcSearch|
+# Type the search key into the text field
 # Click Go or hit Enter on the keyboard
 
 
@@ -27,11 +27,11 @@ These are our search results:
 
 |
 
-The search returned 28 records, 2 of which are Accounts, 2 – Contacts, 6 are Magento Shopping Carts, etc. You can scroll 
-through the entire list of results or select a specific entity in order to find the desired record faster.
+The search returned 28 records, two of which are Accounts, two are Contacts, six are Magento Shopping Carts, etc. You 
+can scroll through the entire list of results or select a specific entity in order to find the desired record faster.
 
-If you wait for a few second before clicking Go, you will see a dropdown list of most relevant results. If the one you 
-are looking for is in the list, click it to open straight away. Here are the most relevant results for the example 
+If you wait a few seconds before clicking Go, you will see a drop-down list of the most relevant results. If the one you 
+are looking for is in the list, you can immediately click it to open. Here are the most relevant results for the example 
 above:
 
 |
@@ -43,8 +43,8 @@ above:
 Modify the Search
 -----------------
 
-To save time, you can limit the search by a certain entity straight away. For example, if you know you’re looking for 
-an account, you can look for "Ann" in Accounts only.
+To save time, you can limit a search by a certain entity. For example, if you know you’re looking for a certain account, 
+you can look for "Ann" in Accounts only.
 
 |
 
@@ -64,7 +64,7 @@ an account, you can look for "Ann" in Accounts only.
 Search by Tag
 -------------
 
-In order to see all the records with a specific tag anywhere in the system.
+In order to see all the records with a specific tag anywhere in the system, you can search by tag.
 
 |
 
@@ -76,7 +76,7 @@ In order to see all the records with a specific tag anywhere in the system.
 
 |
 
-You will see the page similar to the search results, that will contain all the records with this tag.
+You will see a page that looks similar to the search results and that contains all the records with this tag.
 
 |
 

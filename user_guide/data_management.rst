@@ -155,8 +155,10 @@ guide.
 Integrate with Third-Party Systems
 ----------------------------------
 
-OroCRM can be integrated with third-party systems, as a result of integration new records can be uploaded to OroCRM and 
-passed to the integrate system from OroCRM.
+OroCRM can easily integrate with third-party systems, letting users transfer their CRM data into another application, 
+and vice versa. For example, the users can upload OroCRM data into a third-party program, edit it, then transfer that 
+data back into OroCRM. Likewise, data can also be transferred into OroCRM from another application, processed, then 
+transferred back.
 
 For example, integrating with ldap lets you load user records to OroCRM, integrating with Magento lets you load customer 
 records from a Magento store into OroCRM, and integrating with MailChimp lets you load OroCRM contact details into 

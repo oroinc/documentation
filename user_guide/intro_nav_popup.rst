@@ -14,8 +14,8 @@ Success flash messages are displayed against a green background:
 
 |
 
-If something has gone wrong, the flash message is displayed against a red background, to attract  your attention and 
-make sure you have noticed it. 
+If something has gone wrong, the flash message will be displayed against a red background in order to attract your 
+attention.
 
 |
 
@@ -31,8 +31,8 @@ Other flash messages have a yellow background.
 
 |
 
-Sometimes, the flash messages can contain some links to other pages, such as the task reminder above, or this 
-synchronization message:
+Sometimes, a flash message can contain links to other pages, such as the task reminder above, or this synchronization 
+message:
 
 |
 
@@ -40,10 +40,10 @@ synchronization message:
 
 |
 
-Flash messages appear on the top of the screen for several seconds and disappear.
+Flash messages appear on the top of the screen for several seconds and then disappear.
 
-If user decision is obligatory, and the system cannot go on without it, there will appear a dialog window. The 
-dialog windows have buttons and will not disappear until the decision has been taken:
+If the user must make a decision before the system can go on, a dialog window will appear. The dialog windows have 
+buttons and will not disappear until a decision has been made:
 
 |
 

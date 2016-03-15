@@ -3,8 +3,8 @@
 Grids
 =====
 
-Initially, a grid is an aggregated view of all the records of the same entity. Each row of a grid is one records, each 
-column is one of the grid properties, and thus each cell displays a value of a property for a record. .
+A grid is an aggregated view of all the records within an entity. Each row of a grid is one record and each column is one 
+of the grid properties. Thus, each cell displays a value of a property for a record.
 
 For example, you can open a grid of all the Contacts. 
 

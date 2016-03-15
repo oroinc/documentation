@@ -54,12 +54,12 @@ access a functionality when it has been enabled within their role.
 Actions with Entities    
 ^^^^^^^^^^^^^^^^^^^^^
 
-There is a number of actions that can be permitted for each combination of the role, organization/unit and entity.
-For example, it can be defined that any user with the role "Sales Representative" who belongs to the business unit 
-"California" can create and edit records of Customers, if this records were created by this user or by any other user 
-from this business unit, and can only view (but not edit) similar records created by users from other business units 
-(e.g. "Texas" or "Florida"). At the same time, for users with another role, for example "System Administrator", this 
-records may be even not seen.
+The system administrators can permit a number of actions for each combination of role, organization/unit, and entity. 
+
+For example, it's possible to make it so any user with a "Sales Representative" role who belongs to the "California" 
+business unit can create and edit records of Customers created by that user or by other users from their business unit, 
+and can only view (but not edit) similar records created by users from other business units. At the same time, for users 
+with another role, those records may not even be visible.
 
 The following actions can be permitted for each role, organization/unit, and entity:
   

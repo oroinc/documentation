@@ -9,30 +9,30 @@ this user guide best match your work duties.
 Something for Everyone
 ----------------------
 
-Collect and Process information easily
+Collect and process information easily
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OroCRM handles critical CRM tasks such as:
 
-- Collect and aggregate information related to customers, sales, marketing campaigns, sales pipeline, and high level 
-  business performance. 
+- Collecting and aggregating information related to customers, sales, marketing campaigns, the sales pipeline, and 
+  high-level business performance. 
 
-- Organize the information in a way that is both meaningful and efficient
+- Organizing the information in a way that is both meaningful and efficient.
 
-- Ensure easy, convenient, and safe access to information for all the stakeholders with customizable access and 
+- Ensuring easy, convenient, and safe access to information for all the stakeholders with customizable access and 
   permission settings. 
 
-- Create workflows that mirror or improve upon existing business processes as well as provide an overhead view of that 
-  pipeline  
+- Creating workflows that mirror or improve upon existing business processes as well as providing an overhead view of 
+  that pipeline.  
 
 
 Please refer to the :ref:`Data Management <user-guide-data-management-basics>` section to understand how information is 
-represented and can be processed within OroCRM.
+represented and processed within OroCRM.
 
 
 
-Get a 360-Degree view of your customers activity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Get a 360-Degree view of your customers' activity
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Centralizing information about your customers and their activities is at the heart of OroCRM. In order to learn how 
 customer accounts and contacts are managed in OroCRM, please refer to the 
@@ -42,52 +42,52 @@ customer accounts and contacts are managed in OroCRM, please refer to the
 Organize information and make informed decisions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-OroCRM’s business intelligence tools will help to organize data and improve the decision making process:
+OroCRM’s business intelligence tools will help you organize data and improve your decision-making process:
 
-- Use predefined widgets to create informative dashboards to display metrics, pipelines, and gain quick access to 
+- Use predefined widgets to create informative dashboards to display metrics and pipelines, and to gain quick access to 
   regularly used activities
 
 - Analyze and visualize historical data and trends with reports
 
 - Narrow down the exact segment of data you’re looking for with segmentation 
 
-Please refer to the :ref:`Business Intelligence Tools section <business-intelligence>` of the User Guide of this 
+Please refer to the :ref:`Business Intelligence Tools section <business-intelligence>` of this 
 guide to learn more about how OroCRM can be used to analyze information.
 
 
 Communicate and Delegate
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Any CRM user can benefit from OroCRM’s productivity tools which allow any authorized user to:
+Anyone can benefit from OroCRM’s productivity tools, which allow authorized users to:
 
-- Create calendar events for yourself or other users
+- Create calendar events for themselves or other users
 
 - Create templates with merge fields or write custom emails in the fly
 
 - Log calls
 
-- Assign tasks to yourself or to others 
+- Assign tasks to themselves or to others 
 
 - Make notes and comments on different entities within OroCRM
 
-See the :ref:`Productivity Tools section <user-guide-productivity-tools>` of the User Guide to learn more about how OroCRM can help 
-to improve communication and task management within the company.
+See the :ref:`Productivity Tools section <user-guide-productivity-tools>` of the User Guide to learn more about how 
+OroCRM can help to improve communication and task management within your company.
 
 
 Tools for Sales Representatives
 -------------------------------
 
-Sales representatives have many responsibilities which range from lead generation to closing a sale with a prospective 
-client.  Throughout the process notes are taken and needs are captured.  OroCRM helps sales representatives by providing 
-methods to store this information and by adding structure where needed to simplifying their work with the following 
-capabilities:
+Sales representatives have many responsibilities, ranging from lead generation to closing a sale with a prospective 
+client. Throughout, they takes notes and capture various needs. OroCRM helps sales representatives by providing them 
+with methods they can use to store this information, as well as by adding structure where needed in order to simplify 
+their work. It does all this through the following capabilities:
 
 
-- 360 degree view of a customer that includes past communication and notes
+- Providing a 360 degree view of a customer that includes past communication and notes
 
 - Ability to get in touch with customers directly from OroCRM with Google Hangouts or email
 
-- Fully customizable workflows and processes to provide structure to the sales process 
+- Fully customizable workflows and processes that provide structure to the sales process
 
 - Tools to collect and process requests received via email or from a website form
 
@@ -100,14 +100,14 @@ Tools for Marketing Associates
 Marketing associates are responsible for growing a business's customer base.  This is sometimes done through email 
 marketing, customer segmentation, and campaign analysis.  OroCRM facilitates all of these actions and more by providing:
 
-- Segmentation on a specific set of customers by nearly any field  in OroCRM
+- Segmentation of a specific set of customers according to nearly any field in OroCRM
 
-- Ability to create dynamic targeted marketing lists specific to customer segments
+- Ability to create dynamic targeted marketing lists that are specific to customer segments
 
-- Ability to send personalized emails using customer data with customizable templates from within OroCRM 
+- Ability to send personalized emails using customer data and customizable templates from within OroCRM
 
-- Automatic synchronization of dynamic marketing lists with 3rd party email marketing platforms such as Mailchimp or 
-  Dotmailer to ensure your contact list is always up to date
+- Automatic synchronization of dynamic marketing lists with 3rd-party email marketing platforms, such as Mailchimp or 
+  Dotmailer, in order to ensure that your contact list is always up to date
   
 - Tracking of online and offline marketing campaign results in order to study their outcome and effectiveness
 
@@ -119,8 +119,8 @@ with marketing-related activities.
 Tools for Helpdesk and Support 
 ------------------------------
 
-Customer service is critical for customer retention in the retail industry.  In fact most consumers say they view 
-customer service as the true test of how much a company values them.  OroCRM can help you maximize customer satisfaction 
+In the retail industry, customer service is critical for customer retention. In fact, most consumers say they view 
+customer service as a true test of how much a company values them. OroCRM can help you maximize customer satisfaction 
 by:
 
 
@@ -139,8 +139,8 @@ with support-related activities.
 Tools for the System Configurator and Administrator
 ---------------------------------------------------
 
-OroCRM is infinitely configurable and provides tools that allow system configurators to tailor the system in accordance 
-with the business’s needs. OroCRM also provides tools for day to day administration of the system. These tools include:
+OroCRM is infinitely configurable and comes with tools that will allow you to tailor the system in accordance with your 
+business’s needs. OroCRM also has tools for the day-to-day administration of the system. These tools include:
 
 - Personalizing and localizing the system
 
@@ -154,10 +154,10 @@ with the business’s needs. OroCRM also provides tools for day to day administr
 
 - Configuration of workflows
 
-- Ability to set up and manage integrations and extensions (with support of the Oro team for SaaS environments)
+- Ability to set up and manage integrations and extensions (with support from the Oro team for SaaS environments)
 
   
 See the system :ref:`System Management and Administration section <user-guide-admin-tools>` to learn more about what 
-configurators and administrators can achieve with OroCRM.
+else administrators can achieve with OroCRM.
 
 

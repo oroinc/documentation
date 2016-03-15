@@ -1,7 +1,7 @@
 Business-to-business Sales
 ==========================
 
-In the section, you can find more information about B2B channels and entities added to them by default.
+In this section, you can find more information about B2B channels and the entities added to them by default.
 
 * :doc:`/user_guide/b2b_channels`  
 * :doc:`/user_guide/b2b_customers`

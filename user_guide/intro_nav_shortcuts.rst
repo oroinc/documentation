@@ -3,9 +3,9 @@
 Shortcuts
 =========
 
-Shortcuts are used to perform common actions quickly from anywhere. They can be, particularly, used to create new 
-records and navigate through the system quickly. Shortcuts are at hand, if you are not sure where in the menu the entity 
-you’re looking for is.
+Shortcuts are used to quickly perform common actions from anywhere. They can also be used to create new records and to 
+navigate through the system with ease. Shortcuts are particularly useful when you are not sure where an entity is in a 
+menu.
 
 Shortcuts are accessible via the icon in the navigation panel.
 
@@ -15,21 +15,21 @@ Shortcuts are accessible via the icon in the navigation panel.
 
 |
 
-From here you can:
+From here, you can:
 
-* Launch an action from the "most used" list
+- Launch an action from the "most used" list
 
 .. hint::
 
     This list is updated as you are using the system, and will initially contain the actions that you use the most.
 
-* Start typing the name of a related entity or an action to choose from a list of matching items:
+- Start typing the name of a related entity or an action to choose from a list of matching items:
 
   |shortcut|
   
 |
 
-- To see all the shortcut actions available, click *"See the full list"* link
+- To see all the available shortcut actions, click *"See the full list"* link
 
 |
 
