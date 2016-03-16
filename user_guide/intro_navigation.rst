@@ -91,7 +91,7 @@ At the very top of the page, there is a navigation panel that contains different
 This way, users can easily access, store, and organize any and all information required to manage customer relations in 
 the most efficient way.
 
-Flash notifications and Dialog windows
+Flash Notifications and Dialog Windows
 --------------------------------------
 
 Flash notifications and dialog windows are used by OroCRM to notify you about something important.
@@ -105,7 +105,3 @@ as deleting records.
 
 To see examples of flash messages and dialog windows, please read the 
 :ref:`Flash Notifications and Dialog Windows <user-guide-intro-popups>` guide.
-
-
-
-  

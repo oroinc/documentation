@@ -31,8 +31,7 @@ Access and permission rights of each user depend on the following:
   *"None"*, which means that all users can see them. The ownership type of each entity is defined by the system 
   administrator. 
 
-
-
+  
 Permissions
 -----------
 
@@ -85,10 +84,11 @@ Working in System Organizations
 -------------------------------
 
 OroCRM Enterprise edition supports the use of :ref:`multiple organizations <user-ee-multi-org>`. With this 
-functionality, there can be created any number of organizations. One of them may be defined as a *"System"* organization. 
-The users who are assigned to the system organization can perform an action for the entity records in any organization 
-within the system, as long as they are assigned a role for which the relevant permission is set to *"System"*. 
-
+functionality, users can create any number of organizations within one OroCRM instance. One of these organizations can 
+be defined as a *"System"* organization. From the system organization, users can perform actions with entity records of 
+any organization associated with their OroCRM instance. The system administrator determines which users have access to 
+the system organization, as well as which entities can be accessed from it according to the user's role. 
+(Permissions for the action should be set to "System").
 
       |
   
@@ -98,11 +98,11 @@ within the system, as long as they are assigned a role for which the relevant pe
 
 For example, before your support desk can view the details of each customer, there should be:
 
-- A system organization (e.g., "Main Office")
+- A system organization (e.g., "Main Office").
 
-- A role created (e.g., "Support") and not assigned to any specific organization
+- A role created (e.g., "Support") and not assigned to any specific organization.
 
-- Permission to view the customer entity defined for the role "Support" set to "System"
+- Permission to view the customer entity defined for the role "Support" set to "System".
 
 - Users of the support desk must have the "Support" role and be assigned to the "Main Office" organization. 
 

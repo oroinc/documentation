@@ -5,9 +5,9 @@ Search
 
 Search is the fastest way to find a specific record you need. To find a record in OroCRM:
 
-# Click the search icon at the top of the screen – |IcSearch|
-# Type the search key into the text field
-# Click Go or hit Enter on the keyboard
+1. Click the search icon at the top of the screen – |IcSearch|.
+2. Type the search key into the text field.
+3. Click :guilabel:`Go` or hit *Enter* on the keyboard.
 
 
 For example, we are searching for "Ann" all over the system:

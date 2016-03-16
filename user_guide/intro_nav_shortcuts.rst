@@ -17,7 +17,7 @@ Shortcuts are accessible via the icon in the navigation panel.
 
 From here, you can:
 
-- Launch an action from the "most used" list
+- Launch an action from the "most used" list.
 
 .. hint::
 
@@ -29,7 +29,7 @@ From here, you can:
   
 |
 
-- To see all the available shortcut actions, click *"See the full list"* link
+- To see all the available shortcut actions, click *"See the full list"* link.
 
 |
 

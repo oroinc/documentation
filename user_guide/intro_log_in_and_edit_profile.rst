@@ -1,6 +1,6 @@
 .. _user-guide-intro-log-in-edit-profile:
 
-Log In, View Your User Page, and Set Up Your Profile
+Log in, View Your User Page, and Set up Your Profile
 ====================================================
 
 To get to your OroCRM account, enter the OroCRM instance url.
@@ -14,7 +14,7 @@ To get to your OroCRM account, enter the OroCRM instance url.
     
 .. _user-guide-getting-started-log-in:
 
-Log-In
+Log in
 ------
 
 Your administrator will determine this but typically upon your user account creation you will receive an email with your 
@@ -25,12 +25,12 @@ in.
 .. caution::
 
     It is strictly recommended to change your password immediately after the first login. You can learn how to do it in 
-    the :ref:Changing Your Password section `<user-guide-getting-started-profile-password>` below.
+    the :ref:Changing Your Password section :ref:`<user-guide-getting-started-profile-password>` below.
 
 If you have forgotten the credentials, click the *"Forgot your password?"* link and follow the wizard to restore them.
 
 
-Log In Using Your Google Credentials
+Log in Using Your Google Credentials
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If the Google Single Sign-On capability has been enabled for your organization, you will see the *"login using google"* 
@@ -38,7 +38,7 @@ link at the login screen. This means you can log in using your corporate Gmail a
 capability is enabled for corporate email addresses only, so your personal mailbox credentials won’t do.
 
 
-Log In Using Other Corporate Credentials 
+Log in Using Other Corporate Credentials 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OroCRM can be set up to accept your existing corporate login and password. This is possible if your organization 
@@ -99,7 +99,7 @@ they will be displayed in corresponding grids of the "*Additional"* section.
 .. image:: ./img/intro/user_view_additional.png 
 
 
-Actions Available from the "My User" Page
+Actions Available From the "My User" Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use Action Buttons
@@ -160,9 +160,9 @@ page:
 
 |
 
-- Click the :guilabel:`Generate Key` button next to the API Key label 
+- Click the :guilabel:`Generate Key` button next to the API Key label.
 
-- Copy and use the key generated
+- Copy and use the key generated.
 
 .. caution::
 
@@ -203,7 +203,7 @@ in the section below.
 .. _user-guide-getting-started-profile:
     
 Edit Your User Profile
------------------------
+----------------------
 
 Once you have clicked the Edit, the Edit form of your user profile will be displayed. Here you can update your 
 credentials, change your password, and synchronize OroCRM with an existing IMAP mailbox.
@@ -348,9 +348,11 @@ To synchronize your existing mailbox with your mailbox in OroCRM, go the the *"E
 
 OroCRM can be synchronized with any IMAP/SMTP servers. A dedicated *"Gmail"* synchronization is available to simplify 
 synchronization with Gmail-based accounts. 
+
 If synchronization with an IMAP server has been defined, all the emails from synchronized folders of the external 
 mailbox will be available to you in *"My Emails"* in OroCRM. If If synchronization with an SMTP server has been defined, 
 all the emails sent from OroCRM will be available in the external mailbox.
+
 Please note, that if SMTP synchronization has been enabled, your addressee will always see the mailbox address as the 
 *"from"* field value.
 
@@ -374,17 +376,17 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
 
   |
   
-- In order to **receive emails** from the external mailbox in OroCRM:
+* In order to **receive emails** from the external mailbox in OroCRM:
 
- - Check the *"Enable IMAP"* box.
+  - Check the *"Enable IMAP"* box.
 
- - Provide your IMAP credentials: host, port, and encryption type (contact your administrator for assistance).
+  - Provide your IMAP credentials: host, port, and encryption type (contact your administrator for assistance).
 
-- In order to **synchronize emails sent** from OroCRM in to the external mailbox:
+* In order to **synchronize emails sent** from OroCRM in to the external mailbox:
 
- - Check the *"Enable SMTP"* box.
+  - Check the *"Enable SMTP"* box.
 
- - Provide your SMTP credentials: host, port, and encryption type (contact your administrator for assistance).
+  - Provide your SMTP credentials: host, port, and encryption type (contact your administrator for assistance).
 
 .. hint::
 
@@ -392,15 +394,15 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
     be synced with the email server and you will not see them in other email clients (such as Outlook or Gmail web 
     interface). We strongly recommend to enable SMTP at all times.
 
-- In order to **finish the synchronization**:
+* In order to **finish the synchronization**:
 
- - Provide your access credentials: your login/username (usually the email address itself) and password used to access 
+  - Provide your access credentials: your login/username (usually the email address itself) and password used to access 
    the mailbox.
    
- - Click the :guilabel:`Check Connection/Retrieve Folders` button. 
+  - Click the :guilabel:`Check Connection/Retrieve Folders` button. 
 
- - Once connection has been established , you will see the list of folders. Check the folders you want to synchronize 
-   with OroCRM.
+  - Once connection has been established , you will see the list of folders. Check the folders you want to synchronize 
+    with OroCRM.
 
  - Save the user profile.
   
@@ -506,7 +508,7 @@ the *"My User"* page.
 Logout
 ------
 
-Go to the User Menu in the top right corner of the page, and select the *"Logout""* item.
+Go to the User Menu in the top right corner of the page, and select the *"Logout"* item.
 
 |
 

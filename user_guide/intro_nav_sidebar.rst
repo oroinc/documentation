@@ -22,8 +22,8 @@ Out of the box, any sidebar can contain widgets of three types:
 .. image:: ./img/navigation/sidebar/sb_icons.png
 
 
-1 - The *"Recent Emails"* widget: Set up the widget to get access to your emails in one or several of the synchronized 
-    mailboxes, or to all the emails in your OroCRM mailbox.  Add a line note
+1 - The *"Recent Emails"* widget: Set up the widget to get access to your emails in one or several of the 
+  synchronized mailboxes, or to all the emails in your OroCRM mailbox.
 
 2 - *"Sticky Notes"*:  Place free text notes and reminders.
 
@@ -55,6 +55,7 @@ Expand/Collapse the Sidebar
 ---------------------------
 
 Initially, the sidebar panel is minimized. Hover over the icon to see the widget header.
+
 |
 
 .. image:: ./img/navigation/sidebar/sb_hover.png
@@ -85,9 +86,9 @@ Expand/Collapse a Widget
 
 In order to see the widget content:
 
-- Click the icon on a minimized bar
+- Click the icon on a minimized bar.
 
-- Click the triangular arrow next to the header on the expanded bar
+- Click the triangular arrow next to the header on the expanded bar.
     
 |
 
@@ -123,13 +124,13 @@ As shown below, each widget contains a header (1), content (2), and icons (3).
 
 You can:
 
-- Refresh the content (e.g., load the most actual emails or tasks) with |BRefresh|
+- Refresh the content (e.g., load the most actual emails or tasks) with |BRefresh|.
 
-- Get to the widget settings with |IcSettings|
+- Get to the widget settings with |IcSettings|.
 
-- Delete the widget from the sidebar with |IcDelete|
+- Delete the widget from the sidebar with |IcDelete|.
 
-- Close the widget with |BCrLOwnerClear|  (appears only when the panel is minimized)
+- Close the widget with |BCrLOwnerClear|  (appears only when the panel is minimized).
 
 
 .. hint::
@@ -170,7 +171,7 @@ From the widget, you can:
   available).
   
 - Get to the view page of the user from whose mailbox the emails have been sent (if available): Click the user name 
-  below the letter (e.g., 6)
+  below the letter (e.g., 6).
 
   
 Configure the "Recent Emails" Widget 

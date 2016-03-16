@@ -27,10 +27,10 @@ Favorites
 The inks to all the pages that you have marked as "favorite" are displayed in this section.
 
 
-Add a page to the "Favorites" list
+Add a Page to the "Favorites" List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Most of the pages can be marked as a "favourite", which is handy when you need to return to the same page repeatedly. 
+Most of the pages can be marked as a "favourite". This is handy when you need to return to the same page repeatedly. 
 In order to do so, click the star-shaped *"Mark as favorite*" icon in the top right corner of the page.
 
 |
@@ -47,7 +47,7 @@ The icon will turn yellow and a link to the page will appear in the *"Favorites*
 
 |
 
-Remove a page from the "Favorites" list
+Remove a Page From the "Favorites" List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to remove a page from the *"Favorites*" page, open the page and click the yellow star icon. 
@@ -60,6 +60,4 @@ Most Viewed
 
 This section displays links to the most frequently used pages. Every time you visit a page, OroCRM recalculates the 
 statistics and updates the list.
-
-
 

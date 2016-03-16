@@ -30,8 +30,6 @@ cart, and ID's of the orders. The system is also aware that some of these proper
 optional. When a new customer is added to the system, their record is created and values of the properties are saved 
 for it. If something has changed (e.g., the phone number), the properties are updated.
 
-
-
 New records can be created and the existing record can be updated both manually and automatically 
 (as a result of integration with third-party systems). 
 

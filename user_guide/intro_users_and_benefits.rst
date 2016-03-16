@@ -9,13 +9,13 @@ this user guide best match your work duties.
 Something for Everyone
 ----------------------
 
-Collect and process information easily
+Collect and Process Information Easily
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OroCRM handles critical CRM tasks such as:
 
-- Collecting and aggregating information related to customers, sales, marketing campaigns, the sales pipeline, and 
-  high-level business performance. 
+-  Collecting and aggregating information related to customers, sales, marketing campaigns, the sales pipeline, and the 
+   overall performance of the business or enterprise.
 
 - Organizing the information in a way that is both meaningful and efficient.
 
@@ -30,8 +30,7 @@ Please refer to the :ref:`Data Management <user-guide-data-management-basics>` s
 represented and processed within OroCRM.
 
 
-
-Get a 360-Degree view of your customers' activity
+Get a 360-Degree View of Your Customers' Activity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Centralizing information about your customers and their activities is at the heart of OroCRM. In order to learn how 
@@ -39,7 +38,7 @@ customer accounts and contacts are managed in OroCRM, please refer to the
 :ref:`Common Features <user-guide-common-features>` section.
 
 
-Organize information and make informed decisions
+Organize Information and Make Informed Decisions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 OroCRM’s business intelligence tools will help you organize data and improve your decision-making process:

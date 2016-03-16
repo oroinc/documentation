@@ -15,7 +15,7 @@ My User
 
 This link opens your user profile that is described in the 
 :ref:`corresponding section <user-guide-getting-started-my-user-overview>` of the 
-:ref:`Log In, View Your User Page, and Set Up Your Profile guide <user-guide-intro-log-in-edit-profile>`.
+*Log In, View Your User Page, and Set Up Your Profile* guide.
 
 My Emails
 ---------
@@ -26,8 +26,8 @@ contacts.
 
 The *"My Emails"* page contains all the emails:
 
-- Sent to you in OroCRM
-- Sent by you in OroCRM
+- Sent to you in OroCRM.
+- Sent by you in OroCRM.
 - Collected from the external mailboxes. This may be the mailbox for which an IMAP connection has been enabled (if any), 
   as described in the section above, or where other mailboxes are connected to your account. To collect all the newest 
   emails, click the :guilabel:`Sync Emails` button.

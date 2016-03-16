@@ -45,7 +45,7 @@ There are several ways to get to a grid.
 .. hint::
 
     If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, it 
-    will look identical to when you left it (the same filters and order will still be applied)..    
+    will look identical to when you left it (the same filters and order will still be applied).   
 
     
 

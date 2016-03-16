@@ -58,7 +58,7 @@ street name are attributes of an address.
 In the course of each transition you can change some attributes of the record processed. For example, document 
 attributes may be "Name" that must be defined after transition "Start Writing" and can be changed after transitions 
 "Submit for review" and "Return for rework" and "Number of Pages" that must be defined after "Submit for review" and can
-be changed after "Approved"
+be changed after it has recieved the "Approved" status.
 
 .. user-guide-workflow-go-through: 
 

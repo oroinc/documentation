@@ -25,11 +25,11 @@ Get To a View Page
 
 There are several ways to get to a View page:
 
-- Select the relevant record in a :ref:`grid <user-guide-ui-components-grids>` (click the |IcView| icon)
+- Select the relevant record in a :ref:`grid <user-guide-ui-components-grids>` (click the |IcView| icon).
 
-- Find the records in the :ref:`Search Panel <user-guide-getting-started-search>`
+- Find the records in the :ref:`Search Panel <user-guide-getting-started-search>`.
 
-- Click the :guilabel:`Save and Close` button on a :ref:`Create/Edit form <user-guide-ui-components-create-pages>`
+- Click the :guilabel:`Save and Close` button on a :ref:`Create/Edit form <user-guide-ui-components-create-pages>`.
 
 
 What You Can See on a View Page
@@ -61,10 +61,10 @@ For example, this is a View page of an opportunity with *"General Information"*,
 
 .. _user-guide-ui-components-view-page-actions:
 
-What You Can Do from a View Page
+What You Can Do From a View Page
 --------------------------------
 
-Manage a Record from a View Page
+Manage a Record From a View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Action buttons at the top right of each View page reflect the actions that you can do with the 

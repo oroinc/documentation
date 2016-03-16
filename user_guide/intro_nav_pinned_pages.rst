@@ -16,7 +16,7 @@ Pins are particularly useful to:
 
 - Pin the most important records to keep an eye on them. 
 
-Pin a page
+Pin a Page
 ----------
 
 You can pin a page to the header and come back to it at any time in one click. Some pages, such as 
@@ -54,7 +54,7 @@ If someone else has edited the record you’ve pinned, it will appear yellow in 
 changes were made.
 
 
-Unpin a page
+Unpin a Page
 ------------
 
 To unpin a page, click the cross next to its name in the pinbar or the pin icon of a pinned page—it will turn grey 

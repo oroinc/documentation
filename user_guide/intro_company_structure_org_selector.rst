@@ -51,7 +51,7 @@ business application, OroCRM provides tools to reflect the corporate structure n
 How Corporate Structure is Reflected in OroCRM
 ----------------------------------------------
 
-Business units
+Business Units
 ^^^^^^^^^^^^^^
 
 In OroCRM every business, division, or team of any kind may be represented by a business unit. The units can be 
@@ -155,7 +155,7 @@ dots to the left are the organization selector.
 |
 
 Click the selector, to see a list of organizations you have access to. Your current organization will be displayed in 
-bold. If a System organization exists, it will be shown at the top of the list and shifted left
+bold. If a System organization exists, it will be shown at the top of the list and shifted left.
 
 |
 
@@ -172,8 +172,8 @@ Work with a System Organization
 A System Organization provides users with simultaneous access to all the records of all the organizations they are 
 assigned to. There cannot be more than one system organization in OroCRM. 
 
-When working in a system organization all grids will have an additional ‘Organization"* column. The *"Organization"* field 
-will be shown for each record viewed. The organization field is not editable.
+When working in a system organization all grids will have an additional *"Organization"* column. The *"Organization"* 
+field will be shown for each record viewed. The organization field is not editable.
 
 When creating a record in a system organization, the user should select an organization to which the record will belong.
 
