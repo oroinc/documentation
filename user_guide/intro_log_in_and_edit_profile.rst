@@ -25,7 +25,7 @@ in.
 .. caution::
 
     It is strictly recommended to change your password immediately after the first login. You can learn how to do it in 
-    the :ref:Changing Your Password section :ref:`<user-guide-getting-started-profile-password>` below.
+    the :ref:`Changing Your Password sectio n<user-guide-getting-started-profile-password>` below.
 
 If you have forgotten the credentials, click the *"Forgot your password?"* link and follow the wizard to restore them.
 
@@ -382,7 +382,7 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
 
   - Provide your IMAP credentials: host, port, and encryption type (contact your administrator for assistance).
 
-* In order to **synchronize emails sent** from OroCRM in to the external mailbox:
+- In order to **synchronize emails sent** from OroCRM in to the external mailbox:
 
   - Check the *"Enable SMTP"* box.
 
@@ -397,20 +397,20 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
 * In order to **finish the synchronization**:
 
   - Provide your access credentials: your login/username (usually the email address itself) and password used to access 
-   the mailbox.
+    the mailbox.
    
   - Click the :guilabel:`Check Connection/Retrieve Folders` button. 
 
   - Once connection has been established , you will see the list of folders. Check the folders you want to synchronize 
     with OroCRM.
 
- - Save the user profile.
+  - Save the user profile.
   
-  |
+|
   
-  |EmailSyncYahoo|
+|EmailSyncYahoo|
   
-  |  
+|  
 
 Syncing with Gmail
 """"""""""""""""""
