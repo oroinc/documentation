@@ -8,7 +8,7 @@ Find out more about how you can contribute to Oro products.
 .. toctree::
     :maxdepth: 2
     
-    code
-    documentation
+    contributing
+    reporting-security-issues
     translations
     release_process
