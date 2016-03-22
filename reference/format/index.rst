@@ -9,9 +9,9 @@ Configuration Format Reference
     dashboard
     datagrid
     entity_config
-    importexport
     navigation
     placeholders
     requirejs
     search
+    system_configuration
     workflow
