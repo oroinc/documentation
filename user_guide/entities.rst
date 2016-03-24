@@ -87,7 +87,7 @@ The section contains check-boxes for all the activities available and *"Enable N
 
 .. image:: ./img/entity_management/new_entity_communication_collaboration.png
 
-- Check the :ref:`activities <user-guide-activities-index>` that you want to enable for the entity.
+- Check the :ref:`activities <user-guide-activities>` that you want to enable for the entity.
 
 - Choose *Yes* in the *"Enable Notes"* drop-down and it will be possible to add :ref:`notes <user-guide-add-note>` to 
   the entity records.

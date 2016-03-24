@@ -30,7 +30,7 @@ Glossary
       An easy-to-use, open source CRM with built in marketing automation tools for a commerce business.
   
    Lead
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent represent commercial activity with  
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent commercial activity with  
       people or businesses that have authority, budget and interest to purchase goods and/or services from you, such 
       that probability of the actual sales is not yet high or impossible to define.
         

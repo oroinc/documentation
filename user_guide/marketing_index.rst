@@ -1,7 +1,7 @@
 .. _user-guide-marketing:
 
-Marketing
-=========
+Tools for Marketing
+===================
 
 OroCRM's Marketing functionality helps you efficiently organize and monitor marketing campaigns and mailings.
 

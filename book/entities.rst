@@ -69,6 +69,8 @@ information to tell Doctrine how the data will be mapped to your database.
     Read the `Doctrine ORM documentation`_ to get a deeper understanding of how you can map the model
     to a database.
 
+.. _book-entities-database-schema-update:
+
 Updating the Database Schema
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

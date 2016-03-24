@@ -1,17 +1,14 @@
 Community Guide
 ===============
 
-**We appreciate your help and interest in contributing to OroPlatform!**
+**We appreciate your help and interest in contributing to Oro products!**
 
-Find out more about how you can contribute to OroPlatform.
+Find out more about how you can contribute to Oro products.
 
 .. toctree::
     :maxdepth: 2
     
-    code
-    documentation
+    contributing
+    reporting-security-issues
     translations
-
-Please subscribe to `Oro Developers Mailing List`_ if you need any help from the Oro Team.
-
-.. _`Oro Developers Mailing List`: https://groups.google.com/forum/#!forum/oro-dev
+    release_process

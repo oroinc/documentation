@@ -1,4 +1,4 @@
-.. _user-guide-workflow-management-basics:
+.. _user-guide-workflow-management:
 
 Workflow Management
 ===================
