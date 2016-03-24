@@ -74,12 +74,14 @@ Clone the GitHub Repository
         $ cd [$folder_location]
         $ git clone -b 1.9.0 https://github.com/orocrm/platform-application.git orocrm
 
-**1a.3.** Go to the "orocrm" directory and run the *composer install* command, in order to install the dependencies. 
+**1a.3.** Go to the "orocrm" directory and run the *composer install* command, in order to install the dependencies. You
+          need to define the "--prefer-dist --no-dev" parameter, as otherwise you can get an error or all the 
+          development environment will be installed.
 
 .. code-block:: bash
 
     $ cd orocrm
-    $ composer install
+    $ composer install --prefer-dist --no-dev
          
 .. _book-installation-github-clone-configuration-params:
 
@@ -118,19 +120,32 @@ Configuration Parameters
     secret (ThisTokenIsNotSoSecretChangeIt):
     installed (null):
     assets_version (null):
+    assets_version_strategy: time_hash
   
 
-The "database..." parameters are used to connect to the database
+- The "database..." parameters are used to connect to the database
 
-The "mailer..." parameters define settings used to deliver emails sent by the application
+- The "mailer..." parameters define settings used to deliver emails sent by the application
 
-The "websocket..." parameters define settings for the web UI
+- The "websocket..." parameters define settings for the web UI
 
-The "session_handler" value specifies the PHP `session handler`_ to be used
+- The "session_handler" value specifies the PHP `session handler`_ to be used
 
-The "locale" value is the fallback locale used as a last resort for `translations`_
+- The "locale" value is the fallback locale used as a last resort for `translations`_
 
-The "secret" value is used to generate `CSRF tokens`_
+- The "secret" value is used to generate `CSRF tokens`_
+
+- The "assets_version" parameter is used to bust the cache on assets by globally adding a query parameter to all rendered 
+  asset paths 
+
+- The "assets_version_strategy" value defines the strategy used to generate the global assets version. The available 
+  values are:
+  
+  - # null - the assets version stays unchanged
+  - # time_hash - a hash of the current time
+  - # incremental - the next assets version is the previous version incremented by one 
+    (e.g. 'ver1' -> 'ver2' or '1' -> '2')
+
 
 .. hint ::
 
@@ -155,14 +170,15 @@ For example, on a Linux based OS this can be done as follows:
     $ wget -c http://www.orocrm.com/downloads/crm-application.tar.gz
     $ tar -xzvf crm-application.tar.gz
 
-**1b.2.** Run the *composer update* command to update the downloaded libraries to the latest supported versions. 
-         (The source code archive contains all the required libraries. This will be installed to the "vendor" 
-         directory):
+**1b.2.** Run the *composer install* command with "--prefer-dist --no-dev" paremater to update the downloaded libraries 
+          to the latest supported versions. 
+          (The source code archive contains all the required libraries. This will be installed to the "vendor" 
+          directory):
 
 .. code-block:: bash
 
     $ cd orocrm
-    $ composer update
+    $ composer install --prefer-dist --no-dev
 
 **1b.3.** Update the :ref:`configuration parameters <book-installation-github-clone-configuration-params>` , if necessary. 
           Unlike when downloading from github repository, you won't be asked to define the parameters in the console, 
@@ -180,7 +196,8 @@ For example, on a Linux based OS this can be done as follows:
 Step 2. Create the Database
 ---------------------------
 
-Create an empty database, such that its values correspond to the :ref:`configuration parameters <book-installation-github-clone-configuration-params>` starting with "database".
+Create an empty database, such that its values correspond to the 
+:ref:`configuration parameters <book-installation-github-clone-configuration-params>` starting with "database".
 
 .. note::
 
@@ -399,11 +416,12 @@ provides some additional flexibility as described in the relevant section below.
 5b. Using the Installation Command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Another way to run the installation script is with the *oro:install* command in the console. 
+Another way to run the installation script is with the *oro:install* command in the console.  The "--env=prod" parameter
+must be defined, as otherwise the development environment will be installed.
 
 .. code-block:: bash
 
-    $ php app/console oro:install
+    $ php app/console oro:install --env=prod
     
 The Installation is a four step process:
 
