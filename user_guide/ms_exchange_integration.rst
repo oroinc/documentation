@@ -8,6 +8,11 @@ emails from mailboxes on the MS Exchange server can be automatically uploaded of
 
 This functionality enables using single system-wide setting to collect letters of multiple users within organization.
 
+Once the integration has been set-up, all the new letters that will appear in the mailboxes on this server, such that 
+its domain is permitted by the integration settings, one of its from/to values is a mailbox assigned to a 
+:term:`user <User>` or a :term:`contact <Contact>` in OroCRM, will be uploaded to OroCRM and save in My Emails section 
+of the user, and activities of both the user and the contact.
+
 The following settings have to be defined in order to set up the integration:
 
 
@@ -41,7 +46,3 @@ On the OroCRM Side
   "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."
 
 - Click the :guilabel:`Save Settings` button.
-
-*Now, if the mailbox is on this server, its domain is permitted by the integration settings, it belongs to OroCRM user 
-and can be accessed by the super-user of Exchange Server, OroCRM will collect emails from it and save it for the user 
-(in the User's activities/Emails and in "My Email" section of this user).*
