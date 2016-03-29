@@ -63,15 +63,15 @@ Also new bundle can be generated using `Symfony command generate:bundle`_:
     Confirm automatic update of the Routing [yes]? no
     Importing the bundle routing resource: FAILED
 
-Important thing is that you shouldn't update Kernel and routing - OroPlatform provides it's own way to do that -
-it will be described in the chapter `Enable bundle`_ and in future articles.
+It is important that you don't need to update Kernel and routing, as OroPlatform provides its own way to do that,
+which will be described in the `Enable bundle`_ chapter and in following articles.
 
 .. note::
 
-    Automatic bundle generation is provided by ``sensio/generator-bundle`` package that defined in ``require-dev``
-    section of ``composer.json`` file in Oro Platform repository - so, if you want to use automatic generation, please,
-    make sure that this package was installed (e.g. you can execute ``composer update`` at project root directory
-    to get all packages from ``require-dev`` section).
+    Automatic bundle generation is provided by the ``sensio/generator-bundle`` package, which is defined in the
+    ``require-dev`` section of the ``composer.json`` file in the OroPlatform repository. Therefore, in order to use
+    automatic generation, please, make sure that this package has been installed (one of the ways to do so is to execute
+    ``composer update`` at the project's root directory to get all packages from the ``require-dev`` section).
 
 
 Enable bundle
