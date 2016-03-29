@@ -9,4 +9,5 @@ Entities
     datagrid
     managing_tasks
     deleting_tasks
+    acl
     import_export
