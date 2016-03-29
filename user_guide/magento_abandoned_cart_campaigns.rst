@@ -3,7 +3,7 @@
 Magento Abandoned Cart Campaigns
 ================================
 
-OroCRM's Magento Abandoned Cart Campaign functionality for automatic generation of contact lists of 
+With OroCRM's Magento Abandoned Cart Campaign functionality users can automatically generate contact lists of 
 customers  that abandoned your Magento store cart during the checkout process. Contacts in the list may be selected 
 dynamically by a number of parameters, such as date when they added items to the cart, cart value, type of the items 
 chosen, customer actions and more.
@@ -21,7 +21,7 @@ Set up Abandoned Cart Extension
 
 To use this functionality, you need to set up the Abandoned Cart extension:
 
-- Go to System --> Package Manager.
+- Go to System → Package Manager.
 
 .. image:: ./img/mailchimp/ext_01.png
  
@@ -39,6 +39,20 @@ To use this functionality, you need to set up the Abandoned Cart extension:
 - Click :guilabel:`Continue`. Once the installation is over, a success message will be displayed. 
 
 Now you can use the functionality.
+
+
+.. _user-guide-acc-create-channel:
+ 
+Add Abandoned Cart to the Channel 
+---------------------------------
+
+If there is no channel created for the Magento store, for which the abandoned cart campaigns should be used, created the 
+channel, as described in the :ref:`corresponding section <user-guide-channel-guide-create>` of the channel's guide.
+
+Make sure that all the channels representing Magento stores, for which the abandoned cart campaigns should be used, 
+are :ref:`assigned <user-guide-channel-guide-entities>` the *"Abandoned Cart Campaign"* entity.
+
+.. image:: ./img/mailchimp/acc_channel.png
 
 
 .. _user-guide-acc-create:
