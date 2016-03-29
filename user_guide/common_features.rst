@@ -49,10 +49,32 @@ prior agreements.
 
 In OroCRM, all of this data is tracked using three types of records: channels, customers, and accounts.
 
+
+Understanding Accounts, Channels and Customers
+----------------------------------------------
+
+For each :ref:`channel created <user-guide-channel-guide-create>`, there is a set of 
+:term:`entities <Entity>` defined. These entities correspond to types of information collected from the corresponding 
+data source.
+
+One of the entities must represent a :term:`customer <Customer>`.
+
+Once a customer record is created, it is assigned to an account. Several accounts may 
+be :ref:`merged <user-guide-accounts-merge>` into one, regardless of the channels.(For example, if you have a B2B 
+customer that represents some client of yours, and then this client is also buying something from your Magento store).
+
+.. note ::
+
+    Customer record settings and the ways to assign them to an account are specified in the course of customization, 
+    subject to the specific client needs. For example, for :ref:`Magento channels <user-guide-magento-channel>`, a 
+    new account is created for each customer record uploaded to OroCRM in the course of synchronization, whereas for 
+    :ref:`B2B channels <user-guide-magento-channel>` account is a mandatory detail that must be specified when creating 
+    a customer.
+
 .. _user-guide-common-features-channels:
 
 Channels
---------
+^^^^^^^^
 
 **Channels** are the various sources of customer information. 
 
@@ -66,7 +88,7 @@ furniture, etc.
 .. _user-guide-common-features-customers:
 
 Customers
----------
+^^^^^^^^^
 
 Each profile within one channel is a **Customer**. 
 
@@ -84,7 +106,7 @@ related contacts, deals, purchases, addresses, etc.
 .. _user-guide-common-features-accounts:
 
 Accounts 
---------
+^^^^^^^^
 
 Using details of the *Customer* records, you can conviniently manage the details within one source, however efficient 
 and comprehensive customer relations management requires you to aggregate information of the customer-activities in 

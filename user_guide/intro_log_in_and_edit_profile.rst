@@ -68,7 +68,11 @@ This page provides you the full details of your user profile.
 
 Its *"General"* section contains the basic profile details.
 
+|
+
 .. image:: ./img/intro/user_view_general.png
+
+|
 
 The set of information available in the section depends on the 
 :ref:`permissions <user-guide-user-management-permissions-basic>` defined for your user. The information may include:
@@ -96,8 +100,11 @@ If there is an email saved or/and a call logged in OroCRM related to you, they w
 If there is a :ref:`task <user-guide-activities-tasks>` or a :ref:`case <user-guide-activities-cases>` assigned to you, 
 they will be displayed in corresponding grids of the "*Additional"* section.
 
+|
+
 .. image:: ./img/intro/user_view_additional.png 
 
+|
 
 Actions Available From the "My User" Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -109,8 +116,13 @@ Action buttons are available in the top left corner of *"My User"* page. The set
 settings and user permissions. These are the same actions that you can perform in the system with regard to other users.
 Most of the actions is described in the :ref:`Productivity Tools section <user-guide-productivity-tools>`.
 
+|
+
 .. image:: ./img/intro/user_view_actions.png 
 
+|
+
+.. _user-guide-getting-started-my-user-tags:
 
 Add and Edit Tags
 """""""""""""""""
@@ -169,6 +181,8 @@ page:
     Only one API key may exist for the user at the same time. If you choose to generate another API key over the 
     existing one, the old key is discarded and cannot be used to access OroCRM.
     
+
+.. _user-guide-getting-started-my-user-outlook:
     
 Download the Outlook Add-in
 """""""""""""""""""""""""""
@@ -210,6 +224,7 @@ credentials, change your password, and synchronize OroCRM with an existing IMAP 
 
 Manage Your User Details
 ^^^^^^^^^^^^^^^^^^^^^^^^
+
 |
 
 .. image:: ./img/intro/user_edit_general.png

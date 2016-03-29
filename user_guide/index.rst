@@ -140,6 +140,7 @@ guide are most relevant for your work duties.
 
 * :doc:`/user_guide/admin_index`
 
+  * :doc:`/user_guide/admin_capabilities`
   * :doc:`/user_guide/system_config`
   
       * :doc:`/user_guide/system_mailboxes`
