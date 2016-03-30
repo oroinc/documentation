@@ -141,7 +141,8 @@ Jobs management
 ---------------
 
 If this capability is set to *"System"*, users with the role can see jobs started in the system, view their currrent 
-status and their performance log from the *"Job Queue*" page. Link to the page is available in the *"System"* menu.
+status and their performance log from the *"Job Queue*" and *"Sheduled tasks"* pages. Links to these pages are 
+available in the *"System"* menu.
 
 This capability is usually used by the system administrators.
 
@@ -189,7 +190,8 @@ in more details in the :ref:`corresponding section <user-guide-calendars-system>
 This capability can be utilized by the organization-level managers and HRs or other employees authorized to manage the 
 organization-wide calendars
 
-Users can view organization-wide calendars, regardles of this capability.
+Users can view organization-wide calendars, add them to their own calendar views and copy related events to their own 
+calendars, regardless of this capability.
 
 
 .. _admin-capabilities-sys-calendar-events: 
@@ -203,7 +205,8 @@ in more details in the :ref:`corresponding section <user-guide-calendars-system>
 This capability can be utilized by the company managers and HRs or other employees authorized to manage calendars at the 
 system-wide level.
 
-Users can view system-wide calendars, regardles of this capability.
+Users can view organization-wide calendars, add them to their own calendar views and copy related events to their own 
+calendars, regardless of this capability.
 
 
 .. _admin-capabilities-sys-calendars: 
@@ -223,9 +226,10 @@ Manage users' passwords
 -----------------------
 
 The capability enables users to change passwords of other users. Usually, it is only granted to the system 
-administrators, and can be used when :ref:`creating or editing a user record <user-management-users>`. The functionality
-does not effect the ability of a user to :ref:`edit own password <user-guide-getting-started-profile-password>` from the 
-*"My User"* page.
+administrators, and can be used when :ref:`creating or editing a user record <user-management-users>`. 
+
+The capability does not influence the user's ability to 
+:ref:`edit own password <user-guide-getting-started-profile-password>` from the *"My User"* page.
 
 
 .. _admin-capabilities-merge:
@@ -234,7 +238,7 @@ Merge entities
 --------------
 
 The capability enables users to :ref:`merge <user-guide-ui-components-grids-delete-merge>` several records of the same 
-grid. This is mostly applicable to the merge of :ref:`accounts <user-guide-accounts>`.
+entity. This is mostly applicable to the merge of :ref:`accounts <user-guide-accounts>`.
 
 The capability is usually used by the sales representatives, marketing associates, and other employees working with 
 accounts.
@@ -245,13 +249,13 @@ accounts.
 Outlook integration
 -------------------
 
-The capability is topical for enterprise users only. If this capability is set to *"System"*, users with the roles will be able to 
-:ref:`download <user-guide-getting-started-my-user-outlook>` the latest version 
+The capability is available for enterprise users only. If this capability is set to *"System"*, users with the roles 
+will be able to :ref:`download <user-guide-getting-started-my-user-outlook>` the latest version 
 of OroCRM add-in for Outlook. 
 
-With this add-in you can synchronize contacts, tasks, and calendar events between OroCRM and your Outlook.  
-You can associate emails to accounts, contacts, opportunities, and cases and create leads, opportunities and cases 
-in OroCRM based on emails from the Outlook side bar.
+If :ref:`OroCRM is synchronized with Outlook <user-guide-synch-outlook>`, you can use the add-in to synchronize 
+contacts, tasks, and calendar events between OroCRM and your Outlook. You can associate emails to accounts, contacts, 
+opportunities, and cases and create leads, opportunities and cases in OroCRM based on emails from the Outlook side bar.
 
 This is a general capability that can improve the user experience for all enterprise users using both OroCRM and 
 Outlook. 
@@ -269,7 +273,7 @@ Outlook.
 Read address dictionaries
 -------------------------
 
-The capability enalbles access to countries, regions, and address types via API. It has to be set to *"System"*, if 
+The capability enables access to countries, regions, and address types via API. It has to be set to *"System"*, if 
 the Lead creation via Outlook should be supported. This capability should be available to system administrators or 
 integrators, authorized to access OroCRM via API.
 
@@ -285,7 +289,7 @@ functionality to find specific records quickly.
 
 This is a general capability that can improve the overall user-experience.
 
-The setting does not effect the user's ability to :ref:`search by tag <user-guide-getting-started-search-tag>`.
+The setting does not influence the user's ability to :ref:`search by tag <user-guide-getting-started-search-tag>`.
 
 
 .. _admin-capabilities-campaign-emails:
@@ -294,9 +298,9 @@ Send Campaign Emails
 --------------------
 
 The capability enables users to :ref:`send emails within OroCRM email campaigns <user-guide-email-campaigns-send>`.
-This way, marketin associates can sed a personalized template-based letter to multiple users.
+This way, marketing associates can sed a personalized template-based letter to multiple users.
 
-The setting does not effect the user's ability to create and edit :ref:`email campaings <user-guide-email-campaigns>` 
+The setting does not effect the user's ability to create and edit :ref:`email campaigns <user-guide-email-campaigns>` 
 and should only be allowed to employees authorized to send email campaigns. These may be emails to potential customers, 
 other system users, etc.  
 
@@ -364,7 +368,7 @@ Unassign all tags from entities
 
 The capability enables users to unassign tags added to the records by other users. The capability is only 
 meaningful if *"Tag assign/unassign"* has been enabled (set to *"System"*). If *"Tag assign/unassign"* has been enabled, 
-and *"Unassign all tags from entities"* is set to *"None"*, the users will only be able to unassigne tags added by 
+and *"Unassign all tags from entities"* is set to *"None"*, the users will only be able to unassign tags added by 
 themselves -  this way you can restrict users from deleting tags of other users. The capability is usually available to 
 team leads, heads of departments and managers..
 
