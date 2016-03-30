@@ -6,210 +6,223 @@
 Installation and Configuration
 ==============================
 
-This chapter describes how to install the OroPlatform application or the OroCRM application. Both
+This article describes how to install the OroPlatform application or the OroCRM application. Both
 applications are similar, but the platform contains only a subset of all bundles available in the
-full CRM.
+full CRM. Follow the :doc:`with the link </bundles>`, to see the full list of bundles available in the packages.
 
-The next steps assume that you plan to install the complete OroCRM application, but it will explain
-what needs to be done differently when installing the Platform application.
+The next steps assume that you are to install the complete OroCRM application and provide details of what has to 
+be done differently when installing the Platform application.
 
-.. seealso::
 
-    If you are not sure if you want to install the full OroCRM application or just the OroPlatform
-    application, please check the :doc:`the full list of all the bundles </bundles>` being
-    available in the packages.
-
-.. tip::
-
-    In case you are not sure whether or not you need the full OroCRM application, you can start
-    with the OroPlatform application and upgrade it by installing the ``oro/crm`` package using
-    Composer:
-
-    .. code-block:: bash
-
-        $ composer require oro/crm
 
 Prerequisites
 -------------
 
+Please check that all the `system requirements`_ are met.
+
 Composer
 ~~~~~~~~
 
-You need `Composer`_, a dependency manager for PHP, to install all the required PHP packages. In
-the following steps, it is assumed that you installed Composer global (i.e. you can execute it by
-typing ``composer`` in a console.
+OroCRM uses `Composer`_ to manage package dependencies. We recommend to install it globally. Symfony documentation 
+provides detailed `instructions on installing Composer globally`_.
 
-Please read the `instructions for installing Composer globally`_ from the Symfony documentation if
-you don't have Composer installed yet.
+.. hint::
 
-.. seealso::
+    If Composer has been installed globally, it is enough to type *composer* in the console, in order to execute it.
 
-    If you want to learn more about Composer, please refer to `its documentation`_.
+Recommended Prerequisites
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-node.js
-~~~~~~~
+To efficiently use the assets shipped with the OroCRM, it is recommended to install node.js. Detailed installation 
+instructions are available in the `node.js installation document`_.
 
-To efficiently use the assets shipped with the OroCRM, it is recommended to install node.js. Please
-refer to the `node.js installation document`_ for detailed instructions.
+Step 1. Get the Source Code and Define Dependencies
+---------------------------------------------------
 
-Getting the Source Code
------------------------
+First, you need to obtain the application's source code and define the dependencies. There are two ways to do so: 
 
-First, you need to prepare the installation process by obtaining the application's source code and
-installing all necessary dependencies. You can get the source code in two different ways (both
-examples assume that you want to install the application into the ``/var/www/orocrm`` directory):
+**1a.** :ref:`Clone the GitHub repository <book-installation-github-clone>` and run the *composer install* command.
 
-#. :ref:`Clone the GitHub repository <book-installation-github-clone>`.
-#. :ref:`Download the source code archive <book-installation-download-archive>`.
+**1b.** :ref:`Download the source code archive <book-installation-download-archive>` and run the *composer update* command.
+
 
 .. _book-installation-github-clone:
 
-1. Clone the GitHub Repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Clone the GitHub Repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can clone the official `GitHub repository`_ to obtain the source code
-and checkout the release you want to use:
+**1a.1.** Go to the directory, to which you want to save the OroCRM folder ([$folder_location]) 
 
+**1a.2.** Use the *git clone* command. Specify the version to download. (In the example, it is "1.8.2").
+ 
 .. code-block:: bash
 
-    $ cd /var/www
+    $ cd [$folder_location]
     $ git clone -b 1.9.0 https://github.com/orocrm/crm-application.git orocrm
 
-.. note::
+.. hint:
 
     Along with ``1.9.0``, you can use any other released version or even the master branch to run
     the latest development version of the OroCRM.
 
-.. sidebar:: Installing the OroPlatform Application
+.. sidebar:: Get Source Code for the OroPlatform Application
 
-    Use the `Platform application repository URL`_ instead if you do not want to install the full
-    CRM:
+    If you are installing the Platform application, use the `Platform application repository URL`_ :
 
     .. code-block:: bash
 
-        $ cd /var/www
+        $ cd [$folder_location]
         $ git clone -b 1.9.0 https://github.com/orocrm/platform-application.git orocrm
 
-Next, you'll need to install the necessary dependencies which may take some time:
+**1a.3.** Go to the "orocrm" directory and run the *composer install* command, in order to install the dependencies. You
+          need to define the "--prefer-dist --no-dev" parameter, as otherwise you can get an error or all the 
+          development environment will be installed.
 
 .. code-block:: bash
 
-    $ composer install
+    $ cd orocrm
+    $ composer install --prefer-dist --no-dev
+         
+.. _book-installation-github-clone-configuration-params:
 
-When Composer finished the installation of the dependencies, you will be asked to enter some
-system parameters needed to bootstrap the application:
+Configuration Parameters
+""""""""""""""""""""""""
+
+**1a.4.** At the end of the *composer install* command, you will be asked to enter some configuration parameters in 
+          the console. The parameters are required to bootstrap the application.  
+          
+          If you enter nothing, the default value (in brackets) will be used:
 
 .. code-block:: text
 
     Creating the "app/config/parameters.yml" file
     Some parameters are missing. Please provide them.
+    database_driver (pdo_mysql):
     database_host (127.0.0.1):
     database_port (null):
-    database_name (bap_standard):
+    database_name (oro_crm):
     database_user (root):
     database_password (null):
-    mailer_transport (mail):
+    mailer_transport (smtp):
     mailer_host (127.0.0.1):
     mailer_port (null):
     mailer_encryption (null):
     mailer_user (null):
     mailer_password (null):
-    websocket_host (127.0.0.1):
-    websocket_port (8080):
+    websocket_bind_address (0.0.0.0):
+    websocket_bind_port (8080):
+    websocket_frontend_host ('*'):
+    websocket_frontend_port (8080):
+    websocket_backend_host ('*'):
+    websocket_backend_port (8080):
     session_handler (session.handler.native_file):
     locale (en):
     secret (ThisTokenIsNotSoSecretChangeIt):
+    installed (null):
+    assets_version (null):
+    assets_version_strategy: time_hash
+  
 
-These options have the following meanings:
+- The "database..." parameters are used to connect to the database
 
-``database_host``, ``database_port``, ``database_name``, ``database_user``, ``database_password``
-    Credentials used to connect to the database
+- The "mailer..." parameters define settings used to deliver emails sent by the application
 
-``mailer_transport``, ``mailer_host``, ``mailer_port``, ``mailer_encryption``, ``mailer_user``, ``mailer_password``
-    Options configuring how emails sent by the application are delivered
+- The "websocket..." parameters define settings for the web UI
 
-``websocket_host``, ``websocket_port``
-    The host and port the websocket listens to
+- The "session_handler" value specifies the PHP `session handler`_ to be used
 
-``session_handler``
-    The PHP `session handler`_ to use
+- The "locale" value is the fallback locale used as a last resort for `translations`_
 
-``locale``
-    The fallback locale used as a last resort for `translations`_
+- The "secret" value is used to generate `CSRF tokens`_
 
-``secret``
-    A secret value used to generate `CSRF tokens`_
+- The "assets_version" parameter is used to bust the cache on assets by globally adding a query parameter to all rendered 
+  asset paths 
+
+- The "assets_version_strategy" value defines the strategy used to generate the global assets version. The available 
+  values are:
+  
+  - # null - the assets version stays unchanged
+  - # time_hash - a hash of the current time
+  - # incremental - the next assets version is the previous version incremented by one 
+    (e.g. 'ver1' -> 'ver2' or '1' -> '2')
+
+
+.. hint ::
+
+    You can change the parameters in the "app/config/parameters.yml" file.
+
+.. note::
+
+    The port used in Websocket must be open in firewall for outgoing/incoming connections
 
 .. _book-installation-download-archive:
 
-2. Download the Source Code Archive
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1b. Download the Source Code Archive
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can download the latest OroCRM version from the `download section`_ on the `official site`_.
-For example, on a Linux based OS this may look like this:
+**1b.1.** Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_
+
+For example, on a Linux based OS this can be done as follows:
 
 .. code-block:: bash
 
-    $ cd /var/www/vhosts
+    $ cd [$folder_location]
     $ wget -c http://www.orocrm.com/downloads/crm-application.tar.gz
     $ tar -xzvf crm-application.tar.gz
 
-The source code archive already ships with the libraries installed in its ``vendor`` directory. You
-should now run Composer to update them to their latest supported versions:
+**1b.2.** Run the *composer install* command with "--prefer-dist --no-dev" paremater to update the downloaded libraries 
+          to the latest supported versions. 
+          (The source code archive contains all the required libraries. This will be installed to the "vendor" 
+          directory):
 
 .. code-block:: bash
 
     $ cd orocrm
-    $ composer update
+    $ composer install --prefer-dist --no-dev
 
-.. caution::
+**1b.3.** Update the :ref:`configuration parameters <book-installation-github-clone-configuration-params>` , if necessary. 
+          Unlike when downloading from github repository, you won't be asked to define the parameters in the console, 
+          and default values will be used. If any of the parameters need to be changed, do this in 
+          the "app/config/parameters.yml" file.
+ 
 
-    You won't be asked to enter the default system parameters, but you
-    can change them in the ``app/config/parameters.yml`` configuration
-    file.
+.. sidebar::  Download the Source Code Archive the OroPlatform Application
 
-.. sidebar:: Installing the OroPlatform Application
+    Use the OroPlatform download files from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_
 
-    The latest source code archive of the OroPlatform application is available at
-    http://www.orocrm.com/downloads/platform-application.tar.gz.
-
-Configuration
--------------
-
-After having set up the source code successfully, your ``/var/www/orm`` directory should now look
-like this:
-
-.. code-block:: bash
-
-    user@host:/var/www/orocrm$ ls -l
-    total 36
-    -rw-rw-r-- 1 user user 5202 Apr  4 10:08 CHANGELOG.md
-    -rw-rw-r-- 1 user user 1103 Apr  4 10:08 LICENSE
-    -rw-rw-r-- 1 user user 2764 Apr  4 10:08 README.md
-    -rw-rw-r-- 1 user user 1743 Apr  4 10:08 UPGRADE.md
-    drwxrwxr-x 6 user user 4096 Apr  4 10:08 app
-    -rw-rw-r-- 1 user user 1493 Apr  4 10:08 composer.json
-    drwxrwxr-x 2 user user 4096 Apr  4 10:08 src
-    drwxrwxr-x 3 user user 4096 Apr  4 10:08 web
-
-You can now continue the installation by configuring the server environment.
 
 .. _configure-the-database:
 
-Create the Database
-~~~~~~~~~~~~~~~~~~~
+Step 2. Create the Database
+---------------------------
 
-Use the Symfony ``console`` tool to set up your database as it was configured
-in the previous step:
+Create an empty database, such that its values correspond to the 
+:ref:`configuration parameters <book-installation-github-clone-configuration-params>` starting with "database".
 
-.. code-block:: bash
+.. note::
 
-    $ php app/console doctrine:database:create
+    Using MySQL 5.X on HDD is potentially risky because of performance issues. Recommended configuration for this case
+    is:
 
-Configure the Webserver
-~~~~~~~~~~~~~~~~~~~~~~~
+    innodb_file_per_table = 0
+    
+    wait_timeout = 28800
+    
+    See `optimizing InnoDB Disk I/O <http://dev.mysql.com/doc/refman/5.6/en/optimizing-innodb-diskio.html>`_ for more.
 
-The basic virtual host configuration for **Apache2** looks like this:
+.. note::
+
+    Using PostgreSQL, you need to load `uuid-ossp` extension to ensure proper doctrine's `guid` type handling.
+    Log into database and run sql query:
+    
+.. code-block:: sql
+
+    CREATE EXTENSION "uuid-ossp";
+
+Step 3. Configure the Webserver
+-------------------------------
+
+**For Apache2**, configure the server as follows:
 
 .. code-block:: apache
 
@@ -217,8 +230,8 @@ The basic virtual host configuration for **Apache2** looks like this:
         ServerName orocrm.example.com
 
         DirectoryIndex app.php
-        DocumentRoot /var/www/orocrm/web
-        <Directory /var/www/orocrm/web>
+        DocumentRoot [$folder_location]}/orocrm/web
+        <Directory  [$folder_location]}/orocrm/web>
             # enable the .htaccess rewrites
             AllowOverride All
             Order allow,deny
@@ -229,13 +242,13 @@ The basic virtual host configuration for **Apache2** looks like this:
         CustomLog /var/log/apache2/orocrm_access.log combined
     </VirtualHost>
 
-If you are using **Nginx** as web server your virtual host configuration should look like this:
+**For Nginx**, the virtual host configuration should look as follows:
 
 .. code-block:: nginx
 
     server {
         server_name orocrm.example.com;
-        root /var/www/orocrm/web;
+        root  [$folder_location]}/orocrm/web;
 
         location / {
             # try to serve file directly, fallback to app.php
@@ -256,175 +269,220 @@ If you are using **Nginx** as web server your virtual host configuration should 
 
 .. note::
 
-    Depending on your PHP-FPM config, the ``fastcgi_pass`` can also be ``fastcgi_pass 127.0.0.1:9000``.
+    Subject to you PHP-FPM config, the "fastcgi_pass" can also be "fastcgi_pass 127.0.0.1:9000".
 
 .. caution::
 
-    Make sure to add the ``orocrm.example.com`` hostname to your DNS or ``hosts`` file. For
-    example, your ``/etc/hosts`` file on a Linux system may look like this:
+    Make sure that the web server user has permissions for the "log" directories of the application. 
+    
+    More details on the file permissions configuration are available in the official Symfony 
+    documentation of *"`Setting up Permissions`_"* 
 
-    .. code-block:: text
+    
+Multiple PHP Versions
+~~~~~~~~~~~~~~~~~~~~~
 
-        127.0.0.1 orocrm.example.com
+If you have multiple PHP versions installed, you should configure which of these binaries the application will use when 
+executing CLI commands:
 
-Make sure that the web server user has write permissions for the ``log`` directories of the
-application. Read "`Setting up Permissions`_" in the official Symfony documentation for several
-ways to configure the file permissions properly.
+**For Apache**
 
-.. hint::
-
-    Read the article "`Configuring a Web Server`_" in the `Symfony Cookbook`_
-    for advanced configuration references.
-
-.. sidebar:: Multiple PHP Versions
-
-    When you have multiple PHP versions installed, you should configure which of these binaries the
-    application will use when executing CLI commands:
-
-    **Apache**
-
-    When using Apache, use the ``SetEnv`` directive to set the value for the ``ORO_PHP_PATH``
-    environment variable:
+When using Apache, use the *SetEnv* directive to set the value for the "ORO_PHP_PATH"
+environment variable:
 
     .. code-block:: apache
 
-        SetEnv ORO_PHP_PATH /usr/local/bin/php
+        SetEnv ORO_PHP_PATH c:\OpenServer\modules\php\PHP-5.4\
 
-    **Nginx**
+**For Nginx**
 
-    With Nginx, you have to use the ``fastcgi_param`` option to achieve the same:
+With Nginx, you have to use the *fastcgi_param* option to achieve the same:
 
     .. code-block:: nginx
 
         fastcgi_param ORO_PHP_PATH /usr/local/bin/php
 
-The Installation
-----------------
+    
+Step 4. Add "orocrm.example.com" to the "hosts" or "DNS" file
+-------------------------------------------------------------
 
-To finish the installation, you'll need to run the installation script which checks your system
-requirements, performs migrations and sets up your database tables.
+Add the "orocrm.example.com" hostname to your DNS or hosts file. 
 
+For example, your "/etc/hosts" file on a Linux system may look like this:
+
+    .. code-block:: text
+
+        127.0.0.1 orocrm.example.com
+
+        
+Step 5. Run the Installation Script and Launch the Application
+--------------------------------------------------------------
+
+Now, you can run the installation script which checks your system requirements, performs migrations and sets up the 
+database tables.
+-
 You can run the install script in two ways:
 
-#. :ref:`Visit the installation wizard using a web browser <book-installation-wizard>`.
-#. :ref:`Run the console installation command <book-installation-command>`.
+5a. :ref:`Use the installation wizard in a web browser <book-installation-wizard>`.
+
+5b. :ref:`Run the console installation command <book-installation-command>`.
+
+While the use of the installation wizard is easier and more straightforward, running installation from the console 
+provides some additional flexibility as described in the relevant section below.
 
 .. _book-installation-wizard:
 
-1. Using the Web Installation Wizard
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5a. Start the Wizard
+~~~~~~~~~~~~~~~~~~~~
 
-Use a browser to access the OroCRM Application installation wizard at
-``http://orocrm.example.com/install.php`` and click *Begin installation*. The installation wizard
-now checks your system configuration:
+- Open a browser. 
+
+- Enter "http://orocrm.example.com/install.php" in the address bar 
+          
+5a.1. Check System Requirements
+"""""""""""""""""""""""""""""""
+
+- Click the :guilabel:`Begin installation` button. 
+
+- The installation wizard will check the system configuration:
 
 .. image:: /images/book/installation/wizard-1.png
 
-Fix any issues and click refresh. When your system configuration meets the OroCRM requirements,
-click *Next*. You will be guided to Step 2 where you'll specify your application configuration:
+- Fix any issues that have been discovered and refresh the page. 
+
+- When your system configuration meets the OroCRM requirements, click :guilabel:`Next`. 
+
+
+5a.2. Configuration
+"""""""""""""""""""
+ 
+- In the emerged page, specify the application configuration. The values defined in the :ref:`configuration parameters <book-installation-github-clone-configuration-params>` will 
+  be filled in automatically, but they can be changed.
 
 .. image:: /images/book/installation/wizard-2.png
 
-Click *Next* and the installer will initialize your database. The list
-of tasks being performed will be shown:
+- When all the settings are correct, click :guilabel:`Next`. 
+
+5a.3. Database Initialization
+"""""""""""""""""""""""""""""
+
+- The database initialization wills start automatically, as soon as you have clicked :guilabel:`Next` at the end of the
+  previous phase.
+
+.. hint::
+
+    If something goes wrong and a failure occurs, you can check error logs in the orocrm/app/logs/oro_install. Fix the 
+    errors, click :guilabel:`Back` button and repeat.
 
 .. image:: /images/book/installation/wizard-3.png
 
-On the last step, you'll provide your administrative data such as the
-company name and administrative credentials:
+5a.4. Administration Setup
+""""""""""""""""""""""""""
+
+- Define the administrative data such as the company name and administrator's credentials:
 
 .. image:: /images/book/installation/wizard-4.png
 
-After clicking on *Install*, the installer finishes your setup:
+- Check the *"Load Sample Data"* box if you need the Sample Data.
 
+- Click the :guilabel:`Install` button. 
+
+5a.5. Finalization
+""""""""""""""""""
+
+- The installation will head for completion, as soon as you have clicked :guilabel:`Install` at the end of the
+  previous phase.
+  
 .. image:: /images/book/installation/wizard-5.png
 
-Congratulations! You have now successfully set up the OroCRM!
+.. hint::
+
+    If something goes wrong and a failure occurs, you can check error logs in the orocrm/app/logs/oro_install. Fix the 
+    errors, click :guilabel:`Back` button and repeat.
+
+5a.6. Launch the Application
+""""""""""""""""""""""""""""
+
+- The *"Finish"* page will appear
+
+.. image:: /images/book/installation/wizard-6.png
+
+
+- Click :guilabel:`Launch Application` and enjoy OroCRM capabilities for your business.
+
 
 .. _book-installation-command:
 
-2. Using the Installation Command
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5b. Using the Installation Command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Use the ``oro:install`` console command can to trigger the installation
-from the command line:
+Another way to run the installation script is with the *oro:install* command in the console.  The "--env=prod" parameter
+must be defined, as otherwise the development environment will be installed.
 
 .. code-block:: bash
 
-    $ php app/console oro:install
+    $ php app/console oro:install --env=prod
+    
+The Installation is a four step process:
 
-If you invoke the command without any argument, you will be asked to enter
-values for certain configuration options. You can pass these values using
-the appropriate command options:
+- The system requirements are checked. The setup process terminates if any of the requirements are not fulfilled.
+- The database and all caches are reset.
+- The initial data (i.e. migrations, workflow definitions and fixture data) are loaded and executed.
+- The assets are dumped, RequireJS is initialized.
+
+If you invoke the command without any arguments, you will be asked to enter some values for certain configuration 
+options:
 
 ======================== =======================================================
 Option                   Description
 ======================== =======================================================
-``--company-short-name`` Company short name
+"--company-short-name"   Company short name
 ------------------------ -------------------------------------------------------
-``--company-name``       Company name
+"--company-name"         Company name
 ------------------------ -------------------------------------------------------
-``--user-name``          User name
+"--user-name"            User name
 ------------------------ -------------------------------------------------------
-``--user-email``         User email
+"--user-email"           User email
 ------------------------ -------------------------------------------------------
-``--user-firstname``     User first name
+"--user-firstname"       User first name
 ------------------------ -------------------------------------------------------
-``--user-lastname``      User last name
+"--user-lastname"        User last name
 ------------------------ -------------------------------------------------------
-``--user-password``      User password
+"--user-password"        User password
 ------------------------ -------------------------------------------------------
-``--force``              Force installation
+"--force"                Force installation
 ------------------------ -------------------------------------------------------
-``--sample-data``        Determines whether sample data need to be loaded or not
+"--sample-data"          Determines whether sample data need to be loaded or not
 ======================== =======================================================
 
-.. note::
+If the system configuration doesn't meet the requirements, the *install* command will notify you about it. Fix the 
+issues and run the command once again. 
 
-    The ``install`` command will report if you system configuration does not meet the requirements.
-    You'll then need to fix them and run the command again.
+If other problems occur, you can see the details in orocrm/app/logs/oro_install.log file.
 
-.. tip::
+.. hint::
 
-    If you experience any problems finishing the installation, be sure to take a look at the
-    ``app/logs/oro_install.log`` file.
-
-.. tip::
-
-    Normally, the installation process terminates if it detects an already-existing
-    installation. Use the ``--force`` option to overwrite an existing installation,
+    Normally, the installation process is terminated if it detects an already-existing
+    installation. Use the "--force" option to overwrite an existing installation,
     e.g. during your development process.
 
-.. _the-installation-process:
-
-.. sidebar:: The Installation Process
-
-    Installation is a four step process:
-
-    #. The system requirements are checked. The setup process terminates if any of the requirements
-       are not fulfilled.
-    #. The database and all caches are reset.
-    #. Initial data (i.e. migrations, workflow defintions and fixture data) are loaded and
-       executed.
-    #. Assets are dumped, RequireJS is initialized.
 
 Customizing the Installation Process
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can customize the installation process in several ways:
 
-#. :ref:`Execute custom migrations <execute-custom-migrations>`.
+- :ref:`Execute custom migrations <execute-custom-migrations>`.
 
-#. :ref:`Load custom data fixtures <load-custom-data-fixtures>`.
+- :ref:`Load custom data fixtures <load-custom-data-fixtures>`.
 
 .. _execute-custom-migrations:
 
-1. Execute Custom Migrations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Execute Custom Migrations
+"""""""""""""""""""""""""
 
 You can create your own migrations that can be executed during the installation.
-A migration is a class which implements the
-:class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
+A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interface:
 
 .. code-block:: php
     :linenos:
@@ -444,13 +502,13 @@ A migration is a class which implements the
         }
     }
 
-In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up` method,
+In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up`,
 you can modify the database schema and/or add additional SQL queries that
-are executed before and after schema changes.
+are executed before and after the schema changes.
 
 The :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Loader\\MigrationsLoader`
-dispatches two events when migrations are being executed, ``oro_migration.pre_up``
-and ``oro_migration.post_up``. You can listen to either event and register
+dispatches two events when migrations are being executed, *oro_migration.pre_up*
+and *oro_migration.post_up*. You can listen to either event and register
 your own migrations in your event listener. Use the
 :method:`Oro\\Bundle\\MigrationBundle\\Event\\MigrationEvent::addMigration` method
 of the passed event instance to register your custom migrations:
@@ -484,16 +542,16 @@ of the passed event instance to register your custom migrations:
 
     You can learn more about `custom event listeners`_ in the Symfony documentation.
 
-Migrations registered in the ``oro_migration.pre_up`` event are executed
-before the *main* migrations while migrations registered in the ``oro_migration.post_up``
+Migrations registered in the *oro_migration.pre_up* event are executed
+before the *main* migrations while migrations registered in the *oro_migration.post_up*
 event are executed after the *main* migrations have been processed.
 
 .. _load-custom-data-fixtures:
 
-2. Load Custom Data Fixtures
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Load Custom Data Fixtures
+*************************
 
-To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInterface``:
+To load your own data fixtures, you'll need to implement Doctrine's *"FixtureInterface"*:
 
 .. code-block:: php
     :linenos:
@@ -514,7 +572,7 @@ To load your own data fixtures, you'll need to implement Doctrine's ``FixtureInt
 
 .. caution::
 
-    Your data fixture classes must reside in the ``Migrations/Data/ORM`` sub-directory
+    Your data fixture classes must reside in the *"Migrations/Data/ORM"* sub-directory
     of your bundle to be loaded automatically during the installation.
 
 .. tip::
@@ -532,21 +590,31 @@ regularly, for example, by executing it every minute through the system's cron s
 
 .. code-block:: text
 
-    */1 * * * * /path/to/php /var/www/orocrm/app/console oro:cron --env=prod > /dev/null
+    */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:cron --env=prod > /dev/null
 
 .. seealso::
 
     You can also create your own commands that are executed in the background at certain times.
     Read more about it in the :doc:`chapter about executing jobs </book/jobs>`.
 
+Updating OroPlatform to OroCRM
+------------------------------
+    
+If are not sure whether or not you need the full OroCRM application, you can start
+with the OroPlatform application and upgrade it by installing the "oro/crm" package using Composer:
+
+    .. code-block:: bash
+
+        $ composer require oro/crm    
+    
+    
 .. _`Composer`: http://getcomposer.org/
-.. _`instructions for installing Composer globally`: http://symfony.com/doc/current/cookbook/composer.html
+.. _`instructions on installing Composer globally`: http://symfony.com/doc/current/cookbook/composer.html
 .. _`its documentation`: https://getcomposer.org/doc/
-.. _`node.js installation document`: http://nodejs.org/download/
+.. _`node.js installation document`: https://nodejs.org/en/download/
 .. _`GitHub repository`: https://github.com/orocrm/crm-application
 .. _`Platform application repository URL`: https://github.com/orocrm/platform-application
 .. _`download section`: http://www.orocrm.com/download
-.. _`official site`: http://www.orocrm.com/
 .. _`session handler`: http://symfony.com/doc/current/components/http_foundation/session_configuration.html#save-handlers
 .. _`translations`: http://symfony.com/doc/current/components/translation/introduction.html
 .. _`CSRF tokens`: http://symfony.com/doc/current/cookbook/security/csrf_in_login_form.html
@@ -556,3 +624,4 @@ regularly, for example, by executing it every minute through the system's cron s
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 .. _`documentation`: https://github.com/doctrine/data-fixtures/blob/master/README.md
 .. _`JMSJobQueueBundle`: http://jmsyst.com/bundles/JMSJobQueueBundle
+.. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements
