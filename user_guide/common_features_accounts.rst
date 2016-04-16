@@ -62,7 +62,7 @@ and related :term:`contacts <Contact>`) and may be left empty.
 - In order to add a contact, click the :guilabel:`+Add` button in the *Contacts* section. 
 
 If you need to record and process any other details of accounts, 
-:ref:`custom fields can be created <user-guide-field-management-create>` can be created. Their values will 
+:ref:`custom fields <user-guide-field-management-create>` can be created. Their values will 
 be displayed in the *Additional* section.
   
 Once all the necessary information has been defined, click the button in the right top corner of the page to save the 
