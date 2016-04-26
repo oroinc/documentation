@@ -2,7 +2,7 @@
     single: Upgrade
 
 How to Upgrade to a New Version
-==============================
+===============================
 
 1. Checkout from the GitHub Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,7 +40,7 @@ $ rm -rf web/css/*
 php app/console oro:platform:update --env=prod --force
 
 2. Download the Source Code Archive
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To retrieve a new version and upgrade your ORO CRM instance, please execute the following steps:
 
