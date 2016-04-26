@@ -25,7 +25,7 @@ $ git checkout <VERSION TO UPGRADE>
 
 $ php composer.phar install --prefer-dist --no-dev
 
-**4** Remove old caches and assets
+**4** Remove old caches and assets.
 
 .. code-block:: bash
 
