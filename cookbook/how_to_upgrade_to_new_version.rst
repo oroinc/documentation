@@ -49,27 +49,29 @@ To retrieve new version and upgrade your ORO CRM instance, please execute the ne
 **2** Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
       archive and overwrite existing system files.
 
-**3** Clear the "vendor" folder
+**3** "Cd" to crm root folder and Clear the "vendor" folder
 
 .. code-block:: bash
 
-rm -rf vendor/*
+$ cd cd /path/to/crm_folder
+$ rm -rf vendor/*
 
 **4** Upgrade composer dependency
 
 .. code-block:: bash
 
-php composer.phar install --prefer-dist --no-dev
+$ php composer.phar install --prefer-dist --no-dev
 
 **5** Remove old caches and assets
 
 .. code-block:: bash
 
-rm -rf app/cache/*
-rm -rf web/js/*
-rm -rf web/css/*
+$ rm -rf app/cache/*
+$ rm -rf web/js/*
+$ rm -rf web/css/*
 
 **6** Upgrade platform
 
 .. code-block:: bash
-php app/console oro:platform:update --env=prod --force
+
+$ php app/console oro:platform:update --env=prod --force
