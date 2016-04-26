@@ -23,6 +23,8 @@ This book contains list of most regularly used solutions in OroPlatform.
 * :doc:`/cookbook/how_to_replace_inline-javascript_with_component`
 * :doc:`/cookbook/how_to_install_extension_from_command_line`
 * :doc:`/cookbook/how_to_add_an_extension_to_oro_marketplace`
+* :doc:`/cookbook/how_to_upgrade_to_new_version`
+* :doc:`/cookbook/how_to_apply_patch`
 * :doc:`/cookbook/faq`
 
 .. toctree::
@@ -42,6 +44,8 @@ This book contains list of most regularly used solutions in OroPlatform.
     how_to_replace_inline-javascript_with_component
     how_to_install_extension_from_command_line
     how_to_add_an_extension_to_oro_marketplace
+    how_to_upgrade_to_new_version
+    how_to_apply_patch
     faq
 
 TODO List
