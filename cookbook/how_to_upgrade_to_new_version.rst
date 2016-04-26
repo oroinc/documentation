@@ -75,3 +75,5 @@ $ rm -rf web/css/*
 .. code-block:: bash
 
 $ php app/console oro:platform:update --env=prod --force
+
+.. _`download section`: http://www.orocrm.com/download
