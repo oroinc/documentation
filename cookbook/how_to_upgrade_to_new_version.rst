@@ -11,23 +11,24 @@ To retrieve new version and upgrade your ORO CRM instance, please execute the ne
 
 **1** Create backups of your Database and Code.
 
-**2** Pull changes from repository
+**2** "Cd" to crm root folder and Pull changes from repository
 
 .. code-block:: bash
-git pull
-git checkout <VERSION TO UPGRADE>
+$ cd cd /path/to/crm_folder
+$ git pull
+$ git checkout <VERSION TO UPGRADE>
 
 **3** Upgrade composer dependency
 
 .. code-block:: bash
-php composer.phar install --prefer-dist --no-dev
+$ php composer.phar install --prefer-dist --no-dev
 
 **4** Remove old caches and assets
 
 .. code-block:: bash
-rm -rf app/cache/*
-rm -rf web/js/*
-rm -rf web/css/*
+$ rm -rf app/cache/*
+$ rm -rf web/js/*
+$ rm -rf web/css/*
 
 **5** Upgrade platform
 

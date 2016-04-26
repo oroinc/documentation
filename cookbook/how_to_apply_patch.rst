@@ -1,5 +1,5 @@
 .. index::
-single: Patch
+    single: Patch
 
 How to apply patch
 ==================
@@ -21,3 +21,14 @@ $ cd /path/to/crm_folder/vendor/oro/{package}
 $ patch -p1 < platform-1.9.2.patch
 
 
+**3** "Cd" to crm root folder and clear "app/cache" folder.
+
+.. code-block:: bash
+$ cd /path/to/crm_folder
+$ rm -rf app/cache/*
+
+**3** Execute  command "oro:platform:update" and clear "app/cache" folder.
+
+.. code-block:: bash
+$ php app/console oro:platform:update --env=prod --force
+$ rm -rf app/cache/*
