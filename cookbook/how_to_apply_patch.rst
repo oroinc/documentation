@@ -7,7 +7,7 @@ How to apply patch
 The patch file name supports the following naming convention: {package}-{version_to_apply}.patch.
 For example, platform-1.9.2.patch.
 
-**1** "Cd" to the crm root folder and switch the application to the maintenance mode.
+**1** ``cd`` to the crm root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
 
@@ -50,11 +50,11 @@ Kill the related job daemon process.
 
 .. code-block:: text
 
-/path/to/application/vendor/oro/{package}
+    /path/to/application/vendor/oro/{package}
 
-So, the "platform-1.9.2.patch" file should be copied to "/path/to/crm_folder/vendor/oro/platform".
+So, the "platform-1.9.2.patch" file should be copied to ``/path/to/crm_folder/vendor/oro/platform``.
 
-**5** To apply the patch, "cd" to the package folder and execute "patch" command.
+**5** To apply the patch, ``cd`` to the package folder and execute ``patch`` command.
 
 .. code-block:: bash
 
@@ -62,7 +62,7 @@ So, the "platform-1.9.2.patch" file should be copied to "/path/to/crm_folder/ven
     $ patch -p1 < platform-1.9.2.patch
 
 
-**6** "Cd" to crm root folder and clear caches.
+**6** ``cd`` to crm root folder and clear caches.
 
 .. code-block:: bash
 
@@ -80,7 +80,7 @@ or, as an alternative:
 
     $ sudo rm -rf app/cache/*
 
-**7** Execute the "oro:platform:update" command  and clear caches.
+**7** Execute the ``oro:platform:update`` command and clear caches.
 
 .. code-block:: bash
 
