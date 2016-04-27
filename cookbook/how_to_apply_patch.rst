@@ -7,9 +7,7 @@ How to apply patch
 The patch file name supports the following naming convention: {package}-{version_to_apply}.patch.
 For example, platform-1.9.2.patch.
 
-**1** Create backups of your Database and Code.
-
-**2** "Cd" to the crm root folder and switch the application to the maintenance mode.
+**1** "Cd" to the crm root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
 
@@ -17,7 +15,7 @@ For example, platform-1.9.2.patch.
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
 
-**3** Stop the cron tasks.
+**2** Stop the cron tasks.
 
 .. code-block:: bash
 
@@ -44,6 +42,8 @@ Kill the related job daemon process.
 .. code-block:: text
 
     /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
+
+**3** Create backups of your Database and Code.
 
 **4** Copy the patch file to the package directory
 
