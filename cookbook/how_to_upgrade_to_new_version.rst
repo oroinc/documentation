@@ -48,6 +48,13 @@ Kill the related job daemon process.
 
 **4** Pull changes from the repository.
 
+.. note::
+
+    If you have any customization or third party extensions installed, make sure that:
+        - your changes to "app/AppKernel.php" file are merged to the new file.
+        - your changes to "src/" folder are merged and it contains the custom files.
+        - your changes to "composer.json" file are merged to new file.
+
 .. code-block:: bash
 
     $ sudo -uwww-data git pull
@@ -159,6 +166,13 @@ Kill the related job daemon process.
 
 **4** Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
       archive and overwrite existing system files.
+
+      .. note::
+
+    If you have any customization or third party extensions installed, make sure that:
+        - your changes to "app/AppKernel.php" file are merged to the new file.
+        - your changes to "src/" folder are merged and it contains the custom files.
+        - your changes to "composer.json" file are merged to new file.
 
 **5** Upgrade the composer dependency and set up right owner to the retrieved files.
 
