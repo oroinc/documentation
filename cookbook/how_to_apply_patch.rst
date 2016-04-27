@@ -60,7 +60,7 @@ So, "platform-1.9.2.patch" file should be copied to "/path/to/crm_folder/vendor/
     $ patch -p1 < platform-1.9.2.patch
 
 
-**7** "Cd" to crm root folder and clear "app/cache" folder.
+**7** "Cd" to crm root folder and clear caches.
 
 .. code-block:: bash
 
