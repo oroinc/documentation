@@ -122,7 +122,14 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 
 **1** Create backups of your Database and Code.
 
-**2** Stop the cron tasks
+**2** "Cd" to the crm root folder and switch the application to the maintenance mode.
+
+.. code-block:: bash
+
+    $ cd /path/to/application
+    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
+
+**3** Stop the cron tasks
 
 .. code-block:: bash
 
@@ -149,13 +156,6 @@ Kill the related job daemon process.
 .. code-block:: text
 
     /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
-
-**3** "Cd" to the crm root folder and switch the application to the maintenance mode.
-
-.. code-block:: bash
-
-    $ cd /path/to/application
-    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
 **4** Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
       archive and overwrite existing system files.
