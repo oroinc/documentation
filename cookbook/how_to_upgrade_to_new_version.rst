@@ -168,15 +168,14 @@ Kill the related job daemon process.
         - your changes to "src/" folder are merged and it contains the custom files.
         - your changes to "composer.json" file are merged to the new file.
         - your changes to configuration files in "app/config/" folder are merged to the new files.
+        - upgrade the composer dependency and set up right owner to the retrieved files.
 
-**5** Upgrade the composer dependency and set up right owner to the retrieved files.
+        .. code-block:: bash
 
-.. code-block:: bash
+            $ sudo php composer.phar install --prefer-dist --no-dev
+            $ sudo chown www-data:www-data -R ./*
 
-    $ sudo php composer.phar install --prefer-dist --no-dev
-    $ sudo chown www-data:www-data -R ./*
-
-**6** Remove old caches.
+**5** Remove old caches.
 
 .. code-block:: bash
 
@@ -188,7 +187,7 @@ or, as alternative:
 
     $ sudo rm -rf app/cache/*
 
-**7** Upgrade the platform.
+**6** Upgrade the platform.
 
 .. code-block:: bash
 
@@ -207,7 +206,7 @@ or, as alternative:
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**9** Enable cron.
+**7** Enable cron.
 
 .. code-block:: bash
 
