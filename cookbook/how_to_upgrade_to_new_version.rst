@@ -96,14 +96,9 @@ or, as alternative:
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
-
-**9** Warm up the cahes
-
-.. code-block:: bash
-
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**10** Enable cron.
+**9** Enable cron.
 
 .. code-block:: bash
 
@@ -115,7 +110,7 @@ Uncomment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**11** Switch your application back to normal mode from the maintenance mode.
+**10** Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
@@ -210,14 +205,9 @@ or, as alternative:
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
-
-**9** Warm up the cahes.
-
-.. code-block:: bash
-
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**10** Enable cron.
+**9** Enable cron.
 
 .. code-block:: bash
 
@@ -229,7 +219,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**11** Switch your application back to normal mode from the maintenance mode.
+**10** Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
