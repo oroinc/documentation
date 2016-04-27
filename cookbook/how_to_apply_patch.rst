@@ -17,7 +17,7 @@ For example, platform-1.9.2.patch.
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
 
-**3** Stop the cron tasks
+**3** Stop the cron tasks.
 
 .. code-block:: bash
 
@@ -91,7 +91,7 @@ Remove the caches.
 
     $ sudo -u www-data app/console cache:clear --env prod
 
-or, as alternative
+or, as alternative:
 
 .. code-block:: bash
 
