@@ -51,9 +51,9 @@ Kill the related job daemon process.
 
 /path/to/application/vendor/oro/{package}
 
-So, "platform-1.9.2.patch" file should be copied to "/path/to/crm_folder/vendor/oro/platform".
+So, the "platform-1.9.2.patch" file should be copied to "/path/to/crm_folder/vendor/oro/platform".
 
-**5** "cd" to the package folder and execute "patch" command to apply the patch.
+**5** To apply the patch, "cd" to the package folder and execute "patch" command.
 
 .. code-block:: bash
 
@@ -73,13 +73,13 @@ Remove the caches.
 
     $ sudo -u www-data app/console cache:clear --env prod
 
-or, as alternative
+or, as an alternative:
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
 
-**7** Execute  command "oro:platform:update" and clear caches.
+**7** Execute the "oro:platform:update" command  and clear caches.
 
 .. code-block:: bash
 
@@ -115,7 +115,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**10** Switch back your application to normal mode from the maintenance mode.
+**10** Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 

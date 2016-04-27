@@ -18,7 +18,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
     $ cd /path/to/application
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
-**3** Stop the cron tasks
+**3** Stop the cron tasks.
 
 .. code-block:: bash
 
@@ -53,7 +53,7 @@ Kill the related job daemon process.
     $ sudo -uwww-data git pull
     $ sudo -uwww-data git checkout <VERSION TO UPGRADE>
 
-**5** Upgrade the composer dependency and set correct owner to the retrieved files.
+**5** Upgrade the composer dependency and set up the right owner to the retrieved files.
 
 .. code-block:: bash
 
@@ -66,7 +66,7 @@ Kill the related job daemon process.
 
     $ sudo -u www-data app/console cache:clear --env prod
 
-or, as alternative
+or, as an alternative:
 
 .. code-block:: bash
 
@@ -84,7 +84,7 @@ or, as alternative
 
     $ sudo -u www-data app/console cache:clear --env prod
 
-or, as alternative
+or, as alternative:
 
 .. code-block:: bash
 
@@ -108,7 +108,7 @@ Uncomment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**11** Switch back your application to normal mode from the maintenance mode.
+**11** Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
@@ -129,7 +129,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
     $ cd /path/to/application
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
-**3** Stop the cron tasks
+**3** Stop the cron tasks.
 
 .. code-block:: bash
 
@@ -160,7 +160,7 @@ Kill the related job daemon process.
 **4** Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
       archive and overwrite existing system files.
 
-**5** Upgrade the composer dependency and set correct owner to the retrieved files.
+**5** Upgrade the composer dependency and set up right owner to the retrieved files.
 
 .. code-block:: bash
 
@@ -173,7 +173,7 @@ Kill the related job daemon process.
 
     $ sudo -u www-data app/console cache:clear --env prod
 
-or, as alternative
+or, as alternative:
 
 .. code-block:: bash
 
@@ -191,13 +191,13 @@ or, as alternative
 
     $ sudo -u www-data app/console cache:clear --env prod
 
-or, as alternative
+or, as alternative:
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
 
-**9** Warm up the cahes
+**9** Warm up the cahes.
 
 .. code-block:: bash
 
@@ -215,7 +215,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**11** Switch back your application to normal mode from the maintenance mode.
+**11** Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
