@@ -15,26 +15,29 @@ For example, platform-1.9.2.patch.
 
     $ crontab -e -uwww-data
 
+    .. note::
+        www-data can be changed to user under which your web server runs
+
 Comment this line.
 
 .. code-block:: text
 
      */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
 
-Kill the related processes.
+Kill the related job daemon process.
 
 .. code-block:: bash
 
     $ ps ax|grep php5
     $ kill <process_pid>
 
-<process_pid> - is a PID of currently executing application cron task. For example:
+<process_pid> - is a PID of currently executing application job daemon process. For example:
 
 .. code-block:: text
 
     /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
 
-**3** "Cd" to the crm root folder and lock the access to your application.
+**3** "Cd" to the crm root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
 
@@ -111,7 +114,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
 
-**11** Unlock the access to your application.
+**11** Switch back your application to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
