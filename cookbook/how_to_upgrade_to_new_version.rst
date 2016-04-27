@@ -49,7 +49,6 @@ Kill the related job daemon process.
 **4** Pull changes from the repository.
 
 .. note::
-
     If you have any customization or third party extensions installed, make sure that:
         - your changes to "app/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
@@ -169,7 +168,6 @@ Kill the related job daemon process.
       archive and overwrite existing system files.
 
     .. note::
-
     If you have any customization or third party extensions installed, make sure that:
         - your changes to "app/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
