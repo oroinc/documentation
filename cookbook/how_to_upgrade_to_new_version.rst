@@ -7,11 +7,18 @@ How to Upgrade to a New Version
 1. Checkout from the GitHub Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To retrieve a new version and upgrade your ORO CRM instance, please execute the following steps:
+To retrieve a new version and upgrade your OroCRM instance, please execute the following steps:
 
 **1** Create backups of your Database and Code.
 
-**2** Stop the cron tasks
+**2** "Cd" to the crm root folder and switch the application to the maintenance mode.
+
+.. code-block:: bash
+
+    $ cd /path/to/application
+    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
+
+**3** Stop the cron tasks
 
 .. code-block:: bash
 
@@ -24,7 +31,7 @@ Comment this line.
 
 .. code-block:: text
 
-     */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
+     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 Kill the related job daemon process.
 
@@ -38,13 +45,6 @@ Kill the related job daemon process.
 .. code-block:: text
 
     /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
-
-**3** "Cd" to the crm root folder and switch the application to the maintenance mode.
-
-.. code-block:: bash
-
-    $ cd /path/to/crm_folder
-    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
 **4** Pull changes from the repository.
 
@@ -106,7 +106,7 @@ Uncomment this line.
 
 .. code-block:: text
 
-     */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
+     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 **11** Switch back your application to normal mode from the maintenance mode.
 
@@ -118,7 +118,7 @@ Uncomment this line.
 2. Download the Source Code Archive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To retrieve a new version and upgrade your ORO CRM instance, please execute the following steps:
+To retrieve a new version and upgrade your OroCRM instance, please execute the following steps:
 
 **1** Create backups of your Database and Code.
 
@@ -135,7 +135,7 @@ Comment this line.
 
 .. code-block:: text
 
-    */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
+    */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 Kill the related job daemon process.
 
@@ -154,7 +154,7 @@ Kill the related job daemon process.
 
 .. code-block:: bash
 
-    $ cd /path/to/crm_folder
+    $ cd /path/to/application
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
 
 **4** Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
@@ -213,7 +213,7 @@ Uncomment this line.
 
 .. code-block:: text
 
-    */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
+    */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 **11** Switch back your application to normal mode from the maintenance mode.
 

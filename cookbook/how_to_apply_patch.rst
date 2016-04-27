@@ -9,7 +9,15 @@ For example, platform-1.9.2.patch.
 
 **1** Create backups of your Database and Code.
 
-**2** Stop the cron tasks
+**2** "Cd" to the crm root folder and switch the application to the maintenance mode.
+
+.. code-block:: bash
+
+    $ cd /path/to/application
+    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
+
+
+**3** Stop the cron tasks
 
 .. code-block:: bash
 
@@ -22,7 +30,7 @@ Comment this line.
 
 .. code-block:: text
 
-     */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
+     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 Kill the related job daemon process.
 
@@ -37,34 +45,27 @@ Kill the related job daemon process.
 
     /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
 
-**3** "Cd" to the crm root folder and switch the application to the maintenance mode.
-
-.. code-block:: bash
-
-    $ cd /path/to/crm_folder
-    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
-
-**5** Copy the patch file to the package directory
+**4** Copy the patch file to the package directory
 
 .. code-block:: text
 
-/path/to/crm_folder/vendor/oro/{package}
+/path/to/application/vendor/oro/{package}
 
 So, "platform-1.9.2.patch" file should be copied to "/path/to/crm_folder/vendor/oro/platform".
 
-**6** "cd" to the package folder and execute "patch" command to apply the patch.
+**5** "cd" to the package folder and execute "patch" command to apply the patch.
 
 .. code-block:: bash
 
-    $ cd /path/to/crm_folder/vendor/oro/{package}
+    $ cd /path/to/application/vendor/oro/{package}
     $ patch -p1 < platform-1.9.2.patch
 
 
-**7** "Cd" to crm root folder and clear caches.
+**6** "Cd" to crm root folder and clear caches.
 
 .. code-block:: bash
 
-    $ cd /path/to/crm_folder
+    $ cd /path/to/application
 
 Remove the caches.
 
@@ -78,7 +79,7 @@ or, as alternative
 
     $ sudo rm -rf app/cache/*
 
-**8** Execute  command "oro:platform:update" and clear caches.
+**7** Execute  command "oro:platform:update" and clear caches.
 
 .. code-block:: bash
 
@@ -96,13 +97,13 @@ or, as alternative
 
     $ sudo rm -rf app/cache/*
 
-**9** Warm up the cahes
+**8** Warm up the cahes
 
 .. code-block:: bash
 
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**10** Enable cron.
+**9** Enable cron.
 
 .. code-block:: bash
 
@@ -112,9 +113,9 @@ Uncomment this line.
 
 .. code-block:: text
 
-    */1 * * * * /usr/bin/php /srv/prod/crm-application/app/console --env=prod oro:cron >> /dev/null
+    */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**11** Switch back your application to normal mode from the maintenance mode.
+**10** Switch back your application to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
