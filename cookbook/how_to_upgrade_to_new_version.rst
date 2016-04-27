@@ -193,7 +193,7 @@ or, as alternative:
 
     $ sudo -u www-data php app/console oro:platform:update --env prod --force
 
-**8** Remove the caches.
+**7** Remove the caches.
 
 .. code-block:: bash
 
@@ -206,7 +206,7 @@ or, as alternative:
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**7** Enable cron.
+**8** Enable cron.
 
 .. code-block:: bash
 
@@ -218,7 +218,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**10** Switch your application back to normal mode from the maintenance mode.
+**9** Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
