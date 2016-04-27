@@ -53,7 +53,7 @@ Kill the related job daemon process.
     If you have any customization or third party extensions installed, make sure that:
         - your changes to "app/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
-        - your changes to "composer.json" file are merged to new file.
+        - your changes to "composer.json" file are merged to the new file.
 
 .. code-block:: bash
 
@@ -172,7 +172,7 @@ Kill the related job daemon process.
     If you have any customization or third party extensions installed, make sure that:
         - your changes to "app/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
-        - your changes to "composer.json" file are merged to new file.
+        - your changes to "composer.json" file are merged to the new file.
 
 **5** Upgrade the composer dependency and set up right owner to the retrieved files.
 
