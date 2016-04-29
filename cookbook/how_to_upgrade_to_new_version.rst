@@ -36,7 +36,7 @@ Kill the related job daemon process.
 .. code-block:: bash
 
     $ ps ax|grep php5
-    $ kill <process_pid>
+    $ kill -9 <process_pid>
 
 <process_pid> - is a PID of currently executing application job daemon process. For example:
 
@@ -116,6 +116,10 @@ Uncomment this line.
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
+    .. note::
+        If There are PHP opcache tools are in use, PHP-FPM (or Apache web server) should be restarted after uprgade
+        to flush cached bytecode from previous installation.
+
 
 2. Download the Source Code Archive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,7 +153,7 @@ Kill the related job daemon process.
 .. code-block:: bash
 
     $ ps ax|grep php5
-    $ kill <process_pid>
+    $ kill -9 <process_pid>
 
 <process_pid> - is a PID of currently executing application job daemon process. For example:
 
@@ -223,5 +227,9 @@ Uncomment this line.
 .. code-block:: bash
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
+
+    .. note::
+        If There are PHP opcache tools are in use, PHP-FPM (or Apache web server) should be restarted after uprgade
+        to flush cached bytecode from previous installation.
 
 .. _`download section`: http://www.orocrm.com/download
