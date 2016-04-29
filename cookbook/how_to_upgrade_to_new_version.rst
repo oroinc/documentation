@@ -117,8 +117,8 @@ Uncomment this line.
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
     .. note::
-        If There are PHP bytecode cache (e.g. opcache) tools are in use, PHP-FPM (or Apache web server) should be restarted after uprgade
-        to flush cached bytecode from previous installation.
+        If There are PHP bytecode cache (e.g. opcache) tools are in use, PHP-FPM (or Apache web server) should be
+        restarted after uprgade to flush cached bytecode from previous installation.
 
 
 2. Download the Source Code Archive
@@ -229,7 +229,7 @@ Uncomment this line.
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
     .. note::
-        If There are PHP bytecode cache (e.g. opcache) tools are in use, PHP-FPM (or Apache web server) should be restarted after uprgade
-        to flush cached bytecode from previous installation.
+        If There are PHP bytecode cache (e.g. opcache) tools are in use, PHP-FPM (or Apache web server) should be
+        restarted after uprgade to flush cached bytecode from previous installation.
 
 .. _`download section`: http://www.orocrm.com/download
