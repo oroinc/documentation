@@ -23,6 +23,7 @@ For example, platform-1.9.2.patch.
 
 
 .. note::
+
     www-data can be changed to user under which your web server runs
 
 Comment this line.
@@ -36,7 +37,7 @@ Kill the related job daemon process.
 .. code-block:: bash
 
     $ ps ax|grep php5
-    $ kill <process_pid>
+    $ kill -9 <process_pid>
 
 <process_pid> - is a PID of currently executing application job daemon process. For example:
 
@@ -116,4 +117,9 @@ Uncomment this line.
 .. code-block:: bash
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
+
+.. note::
+
+    If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
+    after the uprgade to flush cached bytecode from the previous installation.
 
