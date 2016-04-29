@@ -24,6 +24,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 
 
 .. note::
+
     www-data can be changed to user under which your web server runs
 
 Comment this line.
@@ -144,6 +145,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 
 
 .. note::
+
     www-data can be changed to user under which your web server runs
 
 Comment this line.
@@ -181,7 +183,7 @@ Kill the related job daemon process.
 
         .. code-block:: bash
 
-            $ sudo php composer.phar install --prefer-dist --no-dev
+            $ sudo php composer.phar update --prefer-dist --no-dev
             $ sudo chown www-data:www-data -R ./*
 
 **5**. Remove old caches.

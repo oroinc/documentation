@@ -21,10 +21,9 @@ For example, platform-1.9.2.patch.
 
     $ crontab -e -uwww-data
 
-    .. note::
-        www-data can be changed to user under which your web server runs
 
 .. note::
+
     www-data can be changed to user under which your web server runs
 
 Comment this line.
