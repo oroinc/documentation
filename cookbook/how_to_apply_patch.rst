@@ -21,8 +21,9 @@ For example, platform-1.9.2.patch.
 
     $ crontab -e -uwww-data
 
-    .. note::
-        www-data can be changed to user under which your web server runs
+.. note::
+
+    www-data can be changed to user under which your web server runs
 
 Comment this line.
 
@@ -116,7 +117,8 @@ Uncomment this line.
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
-    .. note::
-        If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-        after the uprgade to flush cached bytecode from the previous installation.
+.. note::
+
+    If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
+    after the uprgade to flush cached bytecode from the previous installation.
 

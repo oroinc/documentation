@@ -22,8 +22,9 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 
     $ crontab -e -uwww-data
 
-    .. note::
-        www-data can be changed to user under which your web server runs
+.. note::
+
+    www-data can be changed to user under which your web server runs
 
 Comment this line.
 
@@ -49,6 +50,7 @@ Kill the related job daemon process.
 **4** Pull changes from the repository.
 
 .. note::
+
     If you have any customization or third party extensions installed, make sure that:
         - your changes to "app/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
@@ -116,9 +118,10 @@ Uncomment this line.
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
-    .. note::
-        If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-        after the uprgade to flush cached bytecode from the previous installation.
+.. note::
+
+    If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
+    after the uprgade to flush cached bytecode from the previous installation.
 
 
 2. Download the Source Code Archive
@@ -139,8 +142,9 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 
     $ crontab -e -uwww-data
 
-    .. note::
-        www-data can be changed to user under which your web server runs
+.. note::
+
+    www-data can be changed to user under which your web server runs
 
 Comment this line.
 
@@ -167,6 +171,7 @@ Kill the related job daemon process.
       archive and overwrite existing system files.
 
 .. note::
+
     If you have any customization or third party extensions installed, make sure that:
         - your changes to "app/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
@@ -228,8 +233,9 @@ Uncomment this line.
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
-    .. note::
-        If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-        after the uprgade to flush cached bytecode from the previous installation.
+.. note::
+
+    If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
+    after the uprgade to flush cached bytecode from the previous installation.
 
 .. _`download section`: http://www.orocrm.com/download
