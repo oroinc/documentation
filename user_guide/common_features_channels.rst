@@ -10,8 +10,8 @@ understanding of all the information you receive from each of these sources, alo
 information you collect from various other sources, becomes crucial. With OroCRM's Channels, you can do both with 
 minimum effort.
 
-In OroCRM, each Channel record represents one sources of customer-related data, as described in the :ref:`Common 
-Features guide <user-guide-common-features>`.
+In OroCRM, each Channel record represents one sources of customer-related data, as described in the Common 
+Features guide.
 
 OroCRM Community Edition has two types of channels: Web (built for online stores) and B2B 
 (built for business-to-business activities). For enterprise clients, additional types of channels can be added during 
