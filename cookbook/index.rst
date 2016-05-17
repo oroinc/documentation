@@ -11,6 +11,7 @@ This book contains list of most regularly used solutions in OroPlatform.
   * :doc:`/cookbook/entities/datagrid`
   * :doc:`/cookbook/entities/managing_tasks`
   * :doc:`/cookbook/entities/deleting_tasks`
+  * :doc:`/cookbook/entities/import_export`
 
 * :doc:`/cookbook/how_to_create_new_bundle`
 * :doc:`/cookbook/how_to_extend_existing_bundle`
