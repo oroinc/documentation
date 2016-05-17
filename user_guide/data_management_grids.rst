@@ -250,8 +250,8 @@ If permitted, you can delete records.
 
 |
 
-In the same manner, you can merge several records (if corresponding :ref:`capabiltiy <admin-capabilities-merge>` has 
-been enabled). Currently, merge can only be done for :ref:`accounts <user-guide-accounts>`.
+In the same manner, you can merge several records (if the corresponding :ref:`capabiltiy <admin-capabilities-merge>` has 
+been enabled). Currently, merge can only be done for  :ref:`accounts <user-guide-accounts>`.
 
 
 Get to View Page and Edit Forms from a Grid

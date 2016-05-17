@@ -49,7 +49,7 @@ access a functionality when it has been enabled within their role.
     Capabilities of different roles are compounded. For example, if one role has the right to merge entities, the user 
     will have this right, regardless of the settings defined for other roles of this user.
     
-Detailed description of all the available capabilities and default settings for some basic roles are available in the
+Detailed descriptions of all the available capabilities and default settings for some basic roles are available in the
 :ref:`Capabilities List guide <admin-capabilities>`.
     
 Actions with Entities    

@@ -3,13 +3,13 @@
 Data Audit
 ==========
 
-With the functionality, the user can see full history of changes made to any record of an 
-:ref:`auditable entity <user-guide-entity-management-create-other>` and the out-of-the-box 
-report of all such actions.
+With this functionality, users can see the full history of changes made to any record of an 
+:ref:`auditable entity <user-guide-entity-management-create-other>`, as well as the out-of-the-box report of all such 
+actions.
 
 .. hint::
 
-    The set of entities, for which data audit is defined by the system administrator. Any entity can be 
+    System administrator defines what entities will be available for audit. Any entity can be 
     :ref:`set as auditable <user-guide-entity-management-create-other>`.
     
     
@@ -39,10 +39,10 @@ The report grid contains the following columns:
 History of Changes
 ------------------
 
-The link to the history of changes of a specific record is available in the top right corner of the record's 
-:ref:`View page <user-guide-ui-components-view-pages>`, if this is permitted to the user (the 
-:ref:`Data Audit capabilty <admin-capabilities-data-audit>` has been enabled for 
-at least one of the user's :ref:`roles <user-guide-user-management-permissions-basic>`)
+A link to a specific record's history of changes is available in the top right corner of the record's
+:ref:`View page <user-guide-ui-components-view-pages>`,  if Data Audit has been enabled for the user. (The
+:ref:`Data Audit capabilty <admin-capabilities-data-audit>` has been enabled for at least one of the user's 
+:ref:`roles <user-guide-user-management-permissions-basic>`)
 
 |
 

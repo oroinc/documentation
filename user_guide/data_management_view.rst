@@ -104,9 +104,9 @@ If there are more than four actions available for a record, they will be collect
 Review the Record History
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If this is permitted to the user (the :ref:`Data Audit capabilty <admin-capabilities-data-audit>` has been enabled for 
-at least one of the user's :ref:`roles <user-guide-user-management-permissions-basic>`, in the top right corner of the 
-View page, there will be a link to the history of operations performed with the record.
+If the user is allowed to do this (i.e., the :ref :ref:`Data Audit capabilty <admin-capabilities-data-audit>` has been 
+enabled for at least one of the user's :ref:`roles <user-guide-user-management-permissions-basic>`, , there will be a 
+link to the history of operations performed with the record in the top right corner of the View page.
 
 |
 

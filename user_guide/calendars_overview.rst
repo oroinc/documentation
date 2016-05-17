@@ -26,7 +26,8 @@ System and Organization Calendars
 ---------------------------------
 
 Events in the System and Organization calendars can be viewed by all the users within the system/organization. 
-The ability to create, edit, delete the events depends on their :ref:`roles <user-guide-user-management-permissions>`
+The ability to create, edit, and delete events depends on the user's 
+:ref:`roles <user-guide-user-management-permissions>`
 and :ref:`capabilities <admin-capabilities-org-calendar-events>`.
 
 
