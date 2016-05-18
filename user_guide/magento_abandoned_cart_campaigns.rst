@@ -27,7 +27,7 @@ To use this functionality, you need to set up the Abandoned Cart extension:
  
 - Enter your login credentials (same as for your OroCRM account). The *Oro Installer* page will emerge.
 
-- Enter the package name ***oro/crm-abandoned-cart*** and click :guilabel:`Install`
+- Enter the package name *oro/crm-abandoned-cart* and click :guilabel:`Install`
 
 .. image:: ./img/mailchimp/ext_02.png
 

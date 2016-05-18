@@ -3,8 +3,8 @@
 Grids
 =====
 
-A grid is an aggregated view of all the records within an entity. Each row of a grid is one record and each column is one 
-of the grid properties. Thus, each cell displays a value of a property for a record.
+A grid is an aggregated view of all the records within an entity. Each row of a grid is one record and each column is 
+one of the grid properties. Thus, each cell displays a value of a property for a record.
 
 For example, you can open a grid of all the Contacts. 
 
@@ -47,7 +47,7 @@ There are several ways to get to a grid.
     If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, it 
     will look identical to when you left it (the same filters and order will still be applied).   
 
-    
+.. _user-guide-ui-components-grids-adjust:    
 
 Adjust a Grid
 -------------
@@ -250,8 +250,8 @@ If permitted, you can delete records.
 
 |
 
-In the same manner, you can merge several records (if applicable). Currently, merge can only be done for 
-:ref:`accounts <user-guide-accounts>`.
+In the same manner, you can merge several records (if the corresponding :ref:`capabiltiy <admin-capabilities-merge>` has 
+been enabled). Currently, merge can only be done for  :ref:`accounts <user-guide-accounts>`.
 
 
 Get to View Page and Edit Forms from a Grid

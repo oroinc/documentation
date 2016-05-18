@@ -49,7 +49,9 @@ access a functionality when it has been enabled within their role.
     Capabilities of different roles are compounded. For example, if one role has the right to merge entities, the user 
     will have this right, regardless of the settings defined for other roles of this user.
     
-
+Detailed descriptions of all the available capabilities and default settings for some basic roles are available in the
+:ref:`Capabilities List guide <admin-capabilities>`.
+    
 Actions with Entities    
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -76,8 +78,8 @@ The following actions can be permitted for each role, organization/unit, and ent
 - **Delete**: If, for a specific entity, this action is not available to a user, the user won't be able to delete the
   entity records.
   
-- **Assign**: If, for a specific entity, this action is not available to a user, the user won't be able to change the owner 
-  of the entity records.
+- **Assign**: If, for a specific entity, this action is not available to a user, the user won't be able to change the 
+  owner of the entity records.
 
 
 Working in System Organizations

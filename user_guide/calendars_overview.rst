@@ -25,9 +25,10 @@ and the user, to whom the task/event has been assigned.
 System and Organization Calendars
 ---------------------------------
 
-Events in the System and Organization calendars can be viewed and processed by all the users within the 
-system/organization, unless these is restricted by their 
-:ref:`roles <user-guide-user-management-permissions>`.
+Events in the System and Organization calendars can be viewed by all the users within the system/organization. 
+The ability to create, edit, and delete events depends on the user's 
+:ref:`roles <user-guide-user-management-permissions>`
+and :ref:`capabilities <admin-capabilities-org-calendar-events>`.
 
 
 Create System and Organization Calendars
@@ -59,7 +60,10 @@ For example, we have created a System Calendar "Sales update meeting" that will 
 
 Click the button in the top right corner to save the calendar. 
 
-To add an event to the calendar:
+Add an Event to a Calendar
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In order to add an event to a calendar:
 
 - Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the calendar.
 
@@ -85,6 +89,9 @@ The event will be highlighted as defined for the calendar by default.
      |
  
 .. image:: ./img/calendars/create_system_cal_event.png
+
+
+.. _user-guide-calendars-manage:
 
 Manage System and Organization Calendars
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -8,6 +8,7 @@ administrators.
 
 Please note that in many cases, the tools may be not available to the usual users, subject to the permissions defined.
 
+* :doc:`/user_guide/admin_capabilities`
 * :doc:`/user_guide/system_config`
 
   * :doc:`/user_guide/system_mailboxes`
@@ -43,6 +44,7 @@ Please note that in many cases, the tools may be not available to the usual user
     :hidden:
     :maxdepth: 2
 
+    admin_capabilities
     system_config
     system_mailboxes
     entities

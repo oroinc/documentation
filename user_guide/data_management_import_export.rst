@@ -7,7 +7,7 @@ OroCRM's import and export functionality is a simple way of working with multipl
 
 If the functionality is enabled for an entity, :guilabel:`Export` and :guilabel:`Import` buttons are displayed
 in the top right corner of the page. 
-If a grid can be exported the :guilabel:`Export` button will appear on the left right above the grid. What records 
+If a grid can be exported the :guilabel:`Export` button will appear on the left, just above the grid. What records
 can be exported/imported and what field will be used as a record identifier during update, is defined by the system 
 administrator.
 

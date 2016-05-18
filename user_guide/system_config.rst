@@ -231,7 +231,25 @@ Sidebar settings
 With the Sidebar settings you can enable or disable the left and/or right sidebar to keep your Sticky notes and Task lists. 
 By default only the right sidebar is enabled.
 
+Reports Settings
+^^^^^^^^^^^^^^^^
 
+If this function is enabled, users can see the SQL request sent to the system for a report.
+
+|
+
+.. image:: ./img/roles/sql_show.png
+
+|
+
+This way, users can check if a report has been developed correctly.
+
+.. hint::
+
+    This link will only be available if the :ref:`View SQL query of a report/segment <admin-capabilities-view-sql>` 
+    capability has been enabled for the role.
+
+    
 .. _admin-configuration-tracking:
 
 Tracking

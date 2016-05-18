@@ -172,7 +172,7 @@ so please be patient.
 Manage Entities
 ---------------
 
-Sometimes there is a need to edit existing entities of OroCRM from the Web UI.
+ Sometimes, you may need to edit existing entities of OroCRM from the Web UI.
 
 Entities Grid 
 ^^^^^^^^^^^^^
