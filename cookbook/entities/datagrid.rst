@@ -157,11 +157,11 @@ The final data grid configuration now looks like this:
                 type: orm
                 query:
                     select:
-                        task.id
-                        task.subject
-                        task.description
-                        task.dueDate
-                        priority.label AS taskPriority
+                        - task.id
+                        - task.subject
+                        - task.description
+                        - task.dueDate
+                        - priority.label AS taskPriority
                     from:
                         - { table: AppBundle:Task, alias: task }
                     join:
