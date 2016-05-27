@@ -219,7 +219,7 @@ Create an empty database, such that its values correspond to the
 
     CREATE EXTENSION "uuid-ossp";
 
-Step 3. Configure the Webserver
+Step 3. Web-Server Configuration
 -------------------------------
 
 **For Apache2**, configure the server as follows:
@@ -256,7 +256,9 @@ Step 3. Configure the Webserver
         }
 
         location ~ ^/(app|app_dev|config|install)\.php(/|$) {
-            fastcgi_pass unix:/var/run/php5-fpm.sock;
+	    fastcgi_pass 127.0.0.1:9000;
+	    # or
+            # fastcgi_pass unix:/var/run/php5-fpm.sock;
             fastcgi_split_path_info ^(.+\.php)(/.*)$;
             include fastcgi_params;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -267,10 +269,6 @@ Step 3. Configure the Webserver
         access_log /var/log/nginx/orocrm_access.log;
     }
 
-.. note::
-
-    Subject to you PHP-FPM config, the "fastcgi_pass" can also be "fastcgi_pass 127.0.0.1:9000".
-
 .. caution::
 
     Make sure that the web server user has permissions for the "log" directories of the application. 
@@ -278,6 +276,28 @@ Step 3. Configure the Webserver
     More details on the file permissions configuration are available in the official Symfony 
     documentation of *"`Setting up Permissions`_"* 
 
+
+**Configuration PHP-FPM**,
+
+.. code-block:: PHP-FPM
+
+   [www]
+   listen = 127.0.0.1:9000
+   ; or
+   ; listen = /var/run/php5-fpm.sock
+
+   listen.allowed_clients = 127.0.0.1
+
+   pm = dynamic
+   pm.max_children = 128
+   pm.start_servers = 8
+   pm.min_spare_servers = 4
+   pm.max_spare_servers = 8
+   pm.max_requests = 512
+
+   catch_workers_output = yes
+
+.. note:: Make sure that options fastcgi_pass for nginx and listen for php-fpm are configured accordingly
     
 Multiple PHP Versions
 ~~~~~~~~~~~~~~~~~~~~~
