@@ -12,3 +12,6 @@ Find out more about how you can contribute to Oro products.
     reporting-security-issues
     translations
     release_process
+
+If you would like to join our community team chat channel on `Slack <https://orocommunity.slack.com/>`_, 
+please request an invitation: **slack [at] oroinc.com**
