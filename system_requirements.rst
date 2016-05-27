@@ -21,7 +21,7 @@ System Requirements
 * Database Management Systems
     * MySQL 5.1 and above
     * PostgreSQL/EnterpriseDB 9.1 and above
-* PHP 5.4.9 and above (5.4.11+ is recommended)
+* PHP 5.5.9 and above
 * PHP Command Line Interface
 * PHP extensions
     * ctype
