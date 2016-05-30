@@ -220,7 +220,7 @@ Create an empty database, such that its values correspond to the
     CREATE EXTENSION "uuid-ossp";
 
 Step 3. Web-Server Configuration
--------------------------------
+--------------------------------
 
 **For Apache2**, configure the server as follows:
 
@@ -277,7 +277,7 @@ Step 3. Web-Server Configuration
     documentation of *"`Setting up Permissions`_"* 
 
 
-**Configuration PHP-FPM**,
+**PHP-FPM Configuration**
 
 .. code-block:: PHP-FPM
 
@@ -297,7 +297,7 @@ Step 3. Web-Server Configuration
 
    catch_workers_output = yes
 
-.. note:: Make sure that options fastcgi_pass for nginx and listen for php-fpm are configured accordingly
+.. note:: Make sure that options 'fastcgi_pass' for nginx and 'listen' for php-fpm are configured accordingly
     
 Multiple PHP Versions
 ~~~~~~~~~~~~~~~~~~~~~
