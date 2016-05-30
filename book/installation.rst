@@ -277,7 +277,7 @@ Step 3. Web-Server Configuration
     documentation of *"`Setting up Permissions`_"* 
 
 
-**PHP-FPM Configuration**
+**PHP-FPM Configuration**, the example of php-fpm configuration is the following: 
 
 .. code-block:: PHP-FPM
 
