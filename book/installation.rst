@@ -298,6 +298,17 @@ Step 3. Web-Server Configuration
    catch_workers_output = yes
 
 .. note:: Make sure that options 'fastcgi_pass' for nginx and 'listen' for php-fpm are configured accordingly
+
+**PHP Optimization**, please install OPcache php-extention. Here is the example of config:
+
+.. code-block:: text
+
+  zend_extension=opcache.so
+  opcache.enable=1
+  opcache.memory_consumption=256
+  opcache.interned_strings_buffer=8
+  opcache.max_accelerated_files=11000
+  opcache.fast_shutdown=1
     
 Multiple PHP Versions
 ~~~~~~~~~~~~~~~~~~~~~
