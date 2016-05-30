@@ -279,7 +279,7 @@ Step 3. Web-Server Configuration
 
 **PHP-FPM Configuration**, the example of php-fpm configuration is the following: 
 
-.. code-block:: PHP-FPM
+.. code-block:: text
 
    [www]
    listen = 127.0.0.1:9000
