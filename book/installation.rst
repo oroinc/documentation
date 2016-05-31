@@ -219,7 +219,7 @@ Create an empty database, such that its values correspond to the
 
     CREATE EXTENSION "uuid-ossp";
 
-Step 3. Web-Server Configuration
+Step 3. Web Server Configuration
 --------------------------------
 
 **For Apache2**, configure the server as follows:
