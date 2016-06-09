@@ -215,7 +215,7 @@ entity in this workflow:
         private $workflowItem;
 
         /**
-         * @ORM\OneToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowStep")
+         * @ORM\ManyToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowStep")
          */
         private $workflowStep;
 
