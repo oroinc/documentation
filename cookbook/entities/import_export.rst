@@ -141,7 +141,7 @@ do so:
 
     {% block navButtons %}
         {% include 'OroImportExportBundle:ImportExport:buttons.html.twig' with {
-            entity_class: 'AppBundle\Entity\Task',
+            entity_class: 'AppBundle\\Entity\\Task',
             exportProcessor: 'app_task',
             exportTitle: 'Export',
             importProcessor: 'app_task',
