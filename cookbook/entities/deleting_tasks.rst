@@ -8,6 +8,8 @@ reload the entire page. To achieve this you have to follow these three steps:
 
 #. :ref:`Create a controller that deletes a task <cookbook-entity-delete-controller>`.
 
+#. :ref:`Register a route for the created controller <cookbook-entity-delete-routing>`.
+
 #. :ref:`Link to the controller from the data grid <cookbook-entity-delete-grid-config>`.
 
 .. _cookbook-entity-api-manager-service:
@@ -64,12 +66,18 @@ OroSoapBundle which comes with basic features:
 
         public function getForm()
         {
-            // this method is not needed to delete entities
+            // This method is not needed to delete entities.
+            //
+            // Note: You will need to provide a proper implementation here
+            // when you start working with more features of REST APIs.
         }
 
         public function getFormHandler()
         {
-            // this method is not needed to delete entities
+            // This method is not needed to delete entities.
+            //
+            // Note: You will need to provide a proper implementation here
+            // when you start working with more features of REST APIs.
         }
 
         public function getManager()
@@ -78,17 +86,42 @@ OroSoapBundle which comes with basic features:
         }
     }
 
+.. note::
+
+    The name of action method is important. The FOSRestBundle will use it to ensure that the route
+    will only be matched when ``DELETE`` requests are issued (which are dispatched by the OroPlatform
+    when a row is to be deleted).
+
+.. _cookbook-entity-delete-routing:
+
+Register the Routes
+-------------------
+
+You now need to make sure that your controller is processed by the route loader of the FOSRestBundle
+which automatically creates and registers routes based on the method names of your API controller:
+
+.. code-block:: yaml
+    :linenos:
+
+    # src/AppBundle/Resources/config/oro/routing.yml
+    app.api.task:
+        resource: '@AppBundle/Controller/Api/TaskController.php'
+        type: rest
+        prefix: api/rest/{version}/
+        requirements:
+            version: latest|v1
+            _format:  json
+        defaults:
+            version: latest
+
 .. _cookbook-entity-delete-grid-config:
 
 Update the Data Grid Configuration
 ----------------------------------
 
-In your data grid configuration you need to modify two keys:
-
-* Use the ``properties`` key to define the URL that a ``DELETE`` request should be sent to when a
-  task should be removed.
-
-* Add an icon to each row which triggers the actual request when the user clicks on that icon.
+To make it possible to remove tasks you need to define a property that describes how the URL of
+you REST API controller action is built and then add this URL to the list of available actions in
+your data grid configuration:
 
 .. code-block:: yaml
     :linenos:
@@ -111,3 +144,9 @@ In your data grid configuration you need to modify two keys:
                     label: Delete
                     link: delete_link
                     icon: trash
+
+.. note::
+
+    It is important to use the ``delete`` value for the ``type`` option so that the OroPlatform
+    issues an HTTP ``DELETE`` request when the trash bin icon is clicked (instead of a regular
+    ``GET`` request).
