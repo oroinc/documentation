@@ -246,7 +246,5 @@ entity in this workflow:
 
     You do not need to create those methods for extended entities or for entities created in the
     user interface. The needed properties and methods will be automatically generated when the first
-    workflow is applied to them. 
-    
-    In 1.10 release there is no need to explicitly create any of these properties or methods but use  
-    trait WorkflowAwareTrait instead.
+    workflow is applied to them. If you use Configurable Entity (and added workflow in config annotations) 
+    there is no need to explicitly create any of these properties or methods.
