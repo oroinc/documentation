@@ -79,13 +79,21 @@ For example:
         secret: ThisTokenIsNotSoSecretChangeIt
         installed: '2014-08-12T09:05:04-07:00'
 
-Next, install an application in the test environment and run some additional
-commands:
+Next, install an application in the test environment:
 
 .. code-block:: bash
 
     $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost --force
-    $ app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures ./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+
+.. versionadded:: 1.10
+
+For platform versions prior to 1.10 need to run user fixtures upload command:
+
+.. code-block:: bash
+
+     $ app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures ./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+
+.. versionadded:: 1.9
 
 For platform versions prior to 1.9 run command to update schema for test entities:
 
