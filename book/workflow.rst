@@ -168,80 +168,77 @@ and which attributes can be modified when applying a transition:
                     step_to: end_call
                     transition_definition: end_conversation_definition
 
-Transition Pre-Conditions and Post Actions
-..........................................
+Transition Definition Configuration
+...................................
+
+Transition Definition is used by Transition to check Conditions and to perform Init Action and Post Actions.
+
+Transition definition configuration has next options.
+
+conditions
+~~~~~~~~~~
+    Configuration of Conditions that must satisfy to allow transition
+
+post_actions
+~~~~~~~~~~~~
+    Configuration of Post Actions that must be performed after transit to next step will be performed.
+
+init_actions
+~~~~~~~~~~~~
+    Configuration of Init Actions that may be performed on workflow item before conditions and post actions.
+
+Example:
+
+
+.. code-block:: yaml
+    :linenos:
+    workflows:
+        phone_call:
+            # ...
+            transition_definitions:
+                connected_definition: # Try to make call connected
+                    # Check that timeout is set
+                    conditions:
+                        @not_blank: [$call_timeout]
+                    # Set call_successfull = true
+                    post_actions:
+                        - @assign_value: [$call_successfull, true]
+                    init_actions:
+                        - @increment_value: [$call_attempt]
+                not_answered_definition: # Callee did not answer
+                    # Make sure that caller waited at least 60 seconds
+                    conditions: # call_timeout not empty and >= 60
+                        @and:
+                            - @not_blank: [$call_timeout]
+                            - @ge: [$call_timeout, 60]
+                    # Set call_successfull = false
+                    post_actions:
+                        - @assign_value: [$call_successfull, false]
+                end_conversation_definition:
+                    conditions:
+                        # Check required properties are set
+                        @and:
+                            - @not_blank: [$conversation_result]
+                            - @not_blank: [$conversation_comment]
+                            - @not_blank: [$conversation_successful]
+                    # Create PhoneConversation and set it's properties
+                    # Pass data from workflow to conversation
+                    post_actions:
+                        - @create_entity: # create PhoneConversation
+                            class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
+                            attribute: $conversation
+                            data:
+                                result: $conversation_result
+                                comment: $conversation_comment
+                                successful: $conversation_successful
+                                call: $phone_call
+
 
 .. note::
 
-    You can configure as many workflows as you like, but you can only enable one workflow per
-    entity type at the same time. Beware that any existing information associated with a workflow
-    will get lost when you switch the active workflow of an entity.
+    You can configure as many workflows as you like, even for one entity can be more than one active workflows.
 
 .. seealso::
 
     Read more about all the available options in
     :doc:`the workflow reference </reference/format/workflow>`.
-
-Applying Workflows to an Entity
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-In order to be able to apply a workflow to an entity, the entity must have associations to the
-:class:`Oro\\Bundle\\WorkflowBundle\\Entity\\WorkflowItem` and
-:class:`Oro\\Bundle\\WorkflowBundle\\Entity\\WorkflowStep` classes. The property holding a
-reference to a ``WorkflowItem`` instance keeps the information which workflow is currently being
-applied to the entity. The ``WorkflowStep`` instance is used to store the current state of the
-entity in this workflow:
-
-.. code-block:: php
-    :linenos:
-
-    // src/Acme/DemoBundle/Entity/BlogPost.php
-    namespace Acme\DemoBundle\Entity;
-
-    use Doctrine\ORM\Mapping as ORM;
-    use Oro\Bundle\WorkflowBundle\Entity\WorkflowItem;
-    use Oro\Bundle\WorkflowBundle\Entity\WorkflowStep;
-
-    /**
-     * @ORM\Entity()
-     */
-    class BlogPost
-    {
-        // ...
-
-        /**
-         * @ORM\OneToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowItem")
-         */
-        private $workflowItem;
-
-        /**
-         * @ORM\OneToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowStep")
-         */
-        private $workflowStep;
-
-        public function getWorkflowItem()
-        {
-            return $this->workflowItem;
-        }
-
-        public function setWorkflowItem(WorkflowItem $workflowItem)
-        {
-            $this->workflowItem = $workflowItem;
-        }
-
-        public function getWorkflowStep()
-        {
-            return $this->workflowStep;
-        }
-
-        public function setWorkflowStep(WorkflowStep $workflowStep)
-        {
-            $this->workflowStep = $workflowStep;
-        }
-    }
-
-.. tip::
-
-    You do not need to create those methods for extended entities or for entities created in the
-    user interface. The needed properties and methods will be automatically generated when the first
-    workflow is applied to them.
