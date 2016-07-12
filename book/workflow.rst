@@ -189,9 +189,9 @@ init_actions
 
 Example:
 
-
 .. code-block:: yaml
     :linenos:
+
     workflows:
         phone_call:
             # ...
@@ -232,7 +232,6 @@ Example:
                                 comment: $conversation_comment
                                 successful: $conversation_successful
                                 call: $phone_call
-
 
 .. note::
 
