@@ -110,6 +110,25 @@ After this, you'll be able to run your tests in a command line or IDE, e.g.:
 Database Isolation
 ~~~~~~~~~~~~~~~~~~
 
+The ``@dbIsolationPerTest`` annotation adds a transaction that will be performed
+before a test starts and is rolled back when a test ends.
+
+.. code-block:: php
+    :linenos:
+
+    // src/Oro/Bundle/FooBundle/Tests/Functional/FooBarTest.php
+    namespace Oro\Bundle\FooBundle\Tests\Functional;
+
+    use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
+
+    /**
+     * @dbIsolationPerTest
+     */
+    class FooBarTest extends WebTestCase
+    {
+        // ...
+    }
+
 The ``@dbIsolation`` annotation adds a transaction that will be performed
 when a client is initialized for the first time and is rolled back when all
 test methods of the class have been executed.
