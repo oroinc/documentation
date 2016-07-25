@@ -211,11 +211,13 @@ entity in this workflow:
 
         /**
          * @ORM\OneToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowItem")
+         * @ORM\JoinColumn(name="workflow_item_id", referencedColumnName="id", onDelete="SET NULL")
          */
         private $workflowItem;
 
         /**
-         * @ORM\OneToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowStep")
+         * @ORM\ManyToOne(targetEntity="Oro\Bundle\WorkflowBundle\Entity\WorkflowStep")
+         * @ORM\JoinColumn(name="workflow_step_id", referencedColumnName="id", onDelete="SET NULL")
          */
         private $workflowStep;
 
@@ -244,4 +246,5 @@ entity in this workflow:
 
     You do not need to create those methods for extended entities or for entities created in the
     user interface. The needed properties and methods will be automatically generated when the first
-    workflow is applied to them.
+    workflow is applied to them. If you use Configurable Entity (and added workflow in config annotations) 
+    there is no need to explicitly create any of these properties or methods.
