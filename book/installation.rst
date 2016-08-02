@@ -541,7 +541,7 @@ If other problems occur, you can see the details in ``app/logs/oro_install.log``
 .. hint::
 
     After the installation finished do not forget to run ``php app/console oro:api:doc:cache:clear``
-    to warm-up the API documentation cache. This process can take several minutes.
+    to warm-up the API documentation cache. This process may take several minutes.
 
 Customizing the Installation Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
