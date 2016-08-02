@@ -518,6 +518,10 @@ If other problems occur, you can see the details in ``app/logs/oro_install.log``
     installation. Use the "--force" option to overwrite an existing installation,
     e.g. during your development process.
 
+.. hint::
+
+    After the installation finished do not forget to run ``php app/console oro:api:doc:cache:clear``
+    to warm-up the API documentation cache. This process can take several minutes.
 
 Customizing the Installation Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
