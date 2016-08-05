@@ -49,6 +49,10 @@ needed to describe a task:
         }
     }
 
+.. seealso::
+
+    Learn more about form types `in the Symfony documentation`_.
+
 .. _cookbook-entity-controller:
 
 The Controllers
@@ -103,6 +107,17 @@ its data:
             );
         }
     }
+
+Then, make sure that the controller is loaded in your routing configuration so that Symfony knows
+which controller needs to be called for particular routes:
+
+.. code-block:: yaml
+    :linenos:
+
+    # src/AppBundle/Resources/config/routing.yml
+    app_task:
+        resource: '@AppBundle/Controller/TaskController.php'
+        type: annotation
 
 .. _cookbook-entity-template:
 
@@ -252,3 +267,5 @@ configuration:
                     label: Edit
                     link: update_link
                     icon: edit
+
+.. _`in the Symfony documentation`: http://symfony.com/doc/current/book/forms.html
