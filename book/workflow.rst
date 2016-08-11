@@ -38,8 +38,10 @@ calling a customer:
         phone_call:
             label: 'Call Customer'
             entity: Acme\Bundle\DemoBundle\Entity\PhoneCall
-            enabled: true
             start_step: start_call
+            defaults:
+                active: true
+            priority: 10
 
 The basic configuration contains a name that is displayed in the UI, the entity the workflow will
 be applied to and the initial step that is applied when initializing the workflow for an entity.
