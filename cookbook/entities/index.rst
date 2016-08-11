@@ -10,3 +10,4 @@ Entities
     managing_tasks
     deleting_tasks
     import_export
+    report
