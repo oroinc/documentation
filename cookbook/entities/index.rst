@@ -11,3 +11,4 @@ Entities
     deleting_tasks
     import_export
     report
+    dashboard
