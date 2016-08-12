@@ -435,7 +435,7 @@ provides some additional flexibility as described in the relevant section below.
 
 #. **Database Initialization**
 
-   The database initialization wills start automatically, as soon as you have clicked :guilabel:`Next`
+   The database initialization will start automatically, as soon as you have clicked :guilabel:`Next`
    at the end of the previous step:
 
    .. image:: /images/book/installation/wizard-3.png
