@@ -42,7 +42,7 @@ users you have to enable ACLs for these entities using the ``@Config`` annotatio
     }
 
 After you have done this and have cleared the cache you can toggle all kinds of permission checks
-(``CREATE``, ``EDIT``, ``DELETE``, ``VIEW``, and ``ASSIGN`` in the user role management interface.
+(``CREATE``, ``EDIT``, ``DELETE``, ``VIEW``, and ``ASSIGN``) in the user role management interface.
 
 .. tip::
 
@@ -214,8 +214,36 @@ PHP code you can use the ``isGranted()`` method of the ``oro_security.security_f
         // do something when the user is granted permissions for the app_static_pages ACL
     }
 
-However, there are ways to configure these access checks in your YAML config files or via
-annotations in several places which make their usage a lot easier:
+You can set the second parameter to check access on Object level (with Access Level check):
+
+.. code-block:: php
+    :linenos:
+
+    $taskEntity = $this->getTask();
+
+    $securityFacade = $this->container->get('oro_security.security_facade');
+
+    if ($securityFacade->isGranted('app_task_update', $taskEntity)) {
+        // do something when the user is granted permissions for the app_static_pages ACL
+    }
+
+In case if you does not have proper ACL annotation, you can set the first parameter as the
+permission name you want to check:
+
+.. code-block:: php
+    :linenos:
+
+    $taskEntity = $this->getTask();
+
+    $securityFacade = $this->container->get('oro_security.security_facade');
+
+    if ($securityFacade->isGranted('EDIT', $taskEntity)) {
+        // do something when the user is granted permissions for the app_static_pages ACL
+    }
+
+This example will work the same as before. It will check an EDIT permission for the Task instance object.
+
+However, there are ways to make this checks in different parts of your application:
 
 Hiding Menu Items
 ~~~~~~~~~~~~~~~~~
@@ -273,22 +301,45 @@ permissions to hide parts of your views for users who do not have the required p
 .. code-block:: html+jinja
     :linenos:
 
-    {# src/AppBundle/Resources/views/Task/index.html.twig #}
-    {% extends 'OroUIBundle:actions:index.html.twig' %}
-
-    {% set gridName = 'app-tasks-grid' %}
-    {% set pageTitle = 'Task' %}
-
-    {% block navButtons %}
-        {% if resource_granted('app_task_create') %}
-            <div class="btn-group">
-                {{ UI.addButton({
-                    'path': path('app_task_create'),
-                    'entity_label': 'Create a task',
-                }) }}
-            </div>
+    {# src/AppBundle/Resources/views/Task/update.html.twig #}
+    {% block someBlock %}
+        {% if resource_granted('app_task_edit') %}
+            Some info if access is granted
         {% endif %}
     {% endblock %}
+
+In this example we check access by ACL annotation info without Object to test. So, resource_granted will return
+true as result if user have any access level to EDIT permission to Task entity.
+
+In case if you want to check access more deeply, you can set the entity instance as the second parameter of
+``resource_granted()`` function:
+
+.. code-block:: html+jinja
+    :linenos:
+
+    {# src/AppBundle/Resources/views/Task/update.html.twig #}
+    {% block someBlock %}
+        {# an `entity` variable contains an Test entity instance #}
+        {% if resource_granted('app_task_edit', entity) %}
+            Some info if access is granted
+        {% endif %}
+    {% endblock %}
+
+At this example, will be checked access level for the given object instance.
+
+In case if you have no an ACL annotation, you can set the permission name directly as the first parameter:
+
+.. code-block:: html+jinja
+    :linenos:
+
+    {# src/AppBundle/Resources/views/Task/update.html.twig #}
+    {% block someBlock %}
+        {# an `entity` variable contains an Test entity instance #}
+        {% if resource_granted('EDIT', entity) %}
+            Some info if access is granted
+        {% endif %}
+    {% endblock %}
+
 
 Restrict Access to Data Grid Results
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -334,3 +385,39 @@ to:
                     link: delete_link
                     icon: trash
                     acl_resource: app_task_delete
+
+Check Access on ORM Queries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You can protect your Doctrine ORM query with ``apply`` method of ``oro_security.acl_helper`` service.
+
+.. code-block:: php
+    :linenos:
+
+    use Doctrine\ORM\Query;
+    use Doctrine\ORM\QueryBuilder;
+
+    use Oro\Bundle\SecurityBundle\ORM\Walker\AclHelper;
+
+    class TaskController extends Controller
+    {
+        public function viewAction(Task $task)
+        {
+            /** @var QueryBuilder $qb */
+            $qb = $this->getSomeQuery();
+
+            /** @var Query $query */
+            $query = $this->getContainer()->get('oro_security.acl_helper')->apply($qb);
+
+            $result = $query->getResult();
+
+            // ...
+        }
+
+        // ...
+    }
+
+As result, the query will be modified and the result data set will contain only the records user can see.
+
+By default, VIEW permission used as the second parameter. If you want to check another permission, you can
+set it as the second parameter of ``apply`` method.
