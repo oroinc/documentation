@@ -5,7 +5,7 @@ OroCRM and OroPlatform come with a lot of entities that you may have to customiz
 application's needs. For example, imagine that you want to store the date your contacts became
 member of your company's partner network.
 
-To achieve this you may want to add a new property ``$partnerSince`` which will hold a ``DateTime``
+To achieve this you may want to add a new property ``partnerSince`` which will hold a ``DateTime``
 instance that reflects the date the contact joined your network. This property is added by writing
 a migration:
 
@@ -30,6 +30,59 @@ a migration:
                     'extend' => ['owner' => ExtendScope::OWNER_CUSTOM],
                 ],
             ]);
+        }
+    }
+
+Please note that the Entity that you add new property should have ``@Config`` annotation
+and should be extended from empty Extend class:
+
+.. code-block:: php
+    :linenos:
+
+    // src/AppBundle/Entity/Contact.php
+    namespace AppBundle\Entity;
+
+    use Doctrine\ORM\Mapping as ORM;
+
+    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+
+    use AppBundle\Entity\Model\ExtendContact;
+
+    /**
+     * @ORM\Entity()
+     * @Config()
+     */
+    class Contact extends ExtendContact
+    {
+    }
+
+
+.. code-block:: php
+    :linenos:
+
+    // src/AppBundle/Model/ExtendContact.php
+    namespace AppBundle\Model;
+
+    class Contact extends ExtendContact
+    {
+        /**
+         * A skeleton method for the getter. You can add it to use autocomplete hints from the IDE.
+         * The real implementation of this method is auto generated.
+         *
+         * @return \DateTime
+         */
+        public function getPartnerSince()
+        {
+        }
+
+        /**
+         * A skeleton method for the setter. You can add it to use autocomplete hints from the IDE.
+         * The real implementation of this method is auto generated.
+         *
+         * @param \DateTime $partnerSince
+         */
+        public function getPartnerSince(\DateTime $partnerSince)
+        {
         }
     }
 
