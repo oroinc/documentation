@@ -168,8 +168,8 @@ builder:
     $container = ...; // the Symfony service container
     $indexer = $container->get('oro_search.index');
     $query = $indexer
-        ->select(['text.name', 'test.description', 'integer.sku'])
-        ->from('Acme/DemoBundle/Entity:Product')
+        ->select(['text.name', 'text.description', 'integer.sku'])
+        ->from('oro_search_product')
         ->andWhere('all_data', '=', 'Functions', 'text')
         ->orWhere('price', '>', 85, 'decimal');
 
@@ -181,7 +181,7 @@ The query builder offers several methods to modify the generated search:
     default type of ``text`` will be used.
 
 ``from``
-    One entity or an array of entities to search in (the special ``*`` can
+    One entity or an array of entity aliases to search in (the special ``*`` can
     be used to search in all entities).
 
 ``andWhere``, ``orWhere``
