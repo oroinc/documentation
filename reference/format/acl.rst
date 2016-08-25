@@ -19,7 +19,7 @@ is the unique name of an ACL while the values for each ACL is a map of options:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/acl.rst
+    # src/Acme/DemoBundle/Resources/config/oro/acl.yml
 
     # an ACL used to protect an action
     password_management:

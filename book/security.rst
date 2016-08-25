@@ -190,7 +190,7 @@ a controller method. Restricting access can be done in two different ways:
    .. code-block:: yaml
        :linenos:
 
-       # src/Acme/DemoBundle/Resources/config/acl.yml
+       # src/Acme/DemoBundle/Resources/config/oro/acl.yml
        product_edit:
            type: entity
            class: AcmeDemoBundle:Product
@@ -225,7 +225,7 @@ a controller method. Restricting access can be done in two different ways:
    .. code-block:: yaml
        :linenos:
 
-       # src/Acme/DemoBundle/Resources/config/acl.yml
+       # src/Acme/DemoBundle/Resources/config/oro/acl.yml
        product_edit:
            type: entity
            class: AcmeDemoBundle:Product
@@ -350,7 +350,7 @@ If you need to manually check the access of the current user to a certain object
         .. code-block:: yaml
             :linenos:
 
-            # src/Acme/DemoBundle/Resources/config/acl.yml
+            # src/Acme/DemoBundle/Resources/config/oro/acl.yml
             protected_action:
                 type: action
 

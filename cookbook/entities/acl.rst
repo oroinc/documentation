@@ -125,7 +125,7 @@ You have two options to define your custom access control lists:
    .. code-block:: yaml
        :linenos:
 
-       # src/AppBunde/Resources/config/acl.yml
+       # src/AppBunde/Resources/config/oro/acl.yml
        app_task_create:
            type: entity
            class: AppBunde\Entity\Task
@@ -183,7 +183,7 @@ You have two options to define your custom access control lists:
     .. code-block:: yaml
         :linenos:
 
-        # src/AppBunde/Resources/config/acl.yml
+        # src/AppBunde/Resources/config/oro/acl.yml
         app_static_pages:
             type: action
             bindings:
