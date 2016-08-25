@@ -18,7 +18,7 @@ For example:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
+    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrid:
         # ...
         acme-tasks-grid:
@@ -44,7 +44,7 @@ You can do this by adding the ``bind_parameters`` option to your ``datagrid.yml`
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
+    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrid:
         # ...
         acme-tasks-grid:
@@ -67,7 +67,7 @@ where the key will be the name of the query parameter, and the value will match 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
+    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
     datagrid:
         # ...
         acme-tasks-grid:

@@ -26,7 +26,7 @@ to be displayed in the grid:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             source:
@@ -52,7 +52,7 @@ Then, the ``columns`` option needs to be used to configure how which data will b
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             # ...
@@ -82,7 +82,7 @@ data:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             # ...
@@ -120,7 +120,7 @@ data grid's query builder.
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             # ...
@@ -150,7 +150,7 @@ The final data grid configuration now looks like this:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             source:

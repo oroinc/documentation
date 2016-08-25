@@ -350,7 +350,7 @@ granted access and the action embedding the grid accidentally was not protected)
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             source:
@@ -367,7 +367,7 @@ to:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             # ...

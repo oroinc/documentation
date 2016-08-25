@@ -25,7 +25,7 @@ ids):
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         # ...
         app-recent-tasks-grid:

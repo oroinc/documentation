@@ -82,7 +82,7 @@ decides whether or not an action is visible for an entry:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/datagrid.yml
+    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrid:
         grid-name:
             # ...

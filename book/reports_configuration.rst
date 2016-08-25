@@ -23,7 +23,7 @@ following example:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/datagrid.yml
+    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
     datagrid:
         orocrm_report-opportunities-won_by_period:
             pageTitle: orocrm.report.opportunities_won_by_period
@@ -223,5 +223,5 @@ Then, under the ``tree`` key you add the newly created item to the *Reports & Se
 application menu.
 
 .. _`datasources documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md
-.. _`ReportBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ReportBundle/Resources/config/datagrid.yml
+.. _`ReportBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ReportBundle/Resources/config/oro/datagrids.yml
 .. _`DataGridBundle documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/README.md

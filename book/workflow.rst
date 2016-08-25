@@ -20,7 +20,7 @@ Configuring a Workflow
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Custom workflows can be configured using a YAML configuration format that will be explained below.
-This configuration needs to be placed in a file named ``workflow.yml`` in the ``Resources/config``
+This configuration needs to be placed in a file named ``workflows.yml`` in the ``Resources/config/oro``
 directory of your bundle.
 
 General information
@@ -33,7 +33,7 @@ calling a customer:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/workflow.yml
+    # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
     workflows:
         phone_call:
             label: 'Call Customer'

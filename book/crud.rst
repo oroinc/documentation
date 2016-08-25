@@ -232,7 +232,7 @@ name of a datagrid that will be looked up from a file called ``datagrid.yml`` in
 .. code-block:: yaml
     :linenos:
 
-    # src/InventoryBundle/Resources/config/datagrid.yml
+    # src/InventoryBundle/Resources/config/oro/datagrids.yml
     datagrid:
         vehicles-grid:
             source:

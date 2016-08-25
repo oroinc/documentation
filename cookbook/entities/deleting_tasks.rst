@@ -126,7 +126,7 @@ your data grid configuration:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         app-tasks-grid:
             properties:

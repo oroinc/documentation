@@ -24,7 +24,7 @@ Defining the report basically is the same as configuring any other data grid:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
+    # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrid:
         orocrm_report-tasks-by_priority:
             source:
