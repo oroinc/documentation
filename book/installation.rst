@@ -435,7 +435,7 @@ provides some additional flexibility as described in the relevant section below.
 
 #. **Database Initialization**
 
-   The database initialization wills start automatically, as soon as you have clicked :guilabel:`Next`
+   The database initialization will start automatically, as soon as you have clicked :guilabel:`Next`
    at the end of the previous step:
 
    .. image:: /images/book/installation/wizard-3.png
@@ -538,6 +538,10 @@ If other problems occur, you can see the details in ``app/logs/oro_install.log``
     installation. Use the "--force" option to overwrite an existing installation,
     e.g. during your development process.
 
+.. hint::
+
+    After the installation finished do not forget to run ``php app/console oro:api:doc:cache:clear``
+    to warm-up the API documentation cache. This process may take several minutes.
 
 Customizing the Installation Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

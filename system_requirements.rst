@@ -54,3 +54,4 @@ Optional recommendations
 * iconv() available ◦mb_strlen() available
 * posix_isatty() available
 * utf8_decode() available
+* Tidy PHP extension should be installed to make sure that any HTML is correctly converted into a text representation

@@ -49,6 +49,10 @@ needed to describe a task:
         }
     }
 
+.. seealso::
+
+    Learn more about form types `in the Symfony documentation`_.
+
 .. _cookbook-entity-controller:
 
 The Controllers
@@ -104,13 +108,24 @@ its data:
         }
     }
 
+Then, make sure that the controller is loaded in your routing configuration so that Symfony knows
+which controller needs to be called for particular routes:
+
+.. code-block:: yaml
+    :linenos:
+
+    # src/AppBundle/Resources/config/routing.yml
+    app_task:
+        resource: '@AppBundle/Controller/TaskController.php'
+        type: annotation
+
 .. _cookbook-entity-template:
 
 The Template
 ------------
 
 The template that is responsible to display the form fields should extend the base template
-``OroUIBundle:actions:html.twig`` from the OroUIBundle. This templates defines some basic blocks
+``OroUIBundle:actions:update.html.twig`` from the OroUIBundle. This templates defines some basic blocks
 that you can use. This way your own forms will provide the same look and feel as the ones coming
 with the OroPlatform:
 
@@ -202,9 +217,10 @@ Finally, you need to link both actions on the page that displays the list of tas
 
 **1. Add a link to create new tasks**
 
-The base ``index.html.twig`` template from the OroUIBundle that you already used to embed the data
-grid comes with a pre-defined ``navButtons`` block which you can use to add a button that links to
-the *create task action*:
+The base ``OroUIBundle:actions:index.html.twig`` template from the OroUIBundle that you
+:ref:`already used <cookbook-entities-grid-controller>` to embed the data grid comes with a
+pre-defined ``navButtons`` block which you can use to add a button that links to the *create task
+action*:
 
 .. code-block:: html+jinja
     :linenos:
@@ -252,3 +268,5 @@ configuration:
                     label: Edit
                     link: update_link
                     icon: edit
+
+.. _`in the Symfony documentation`: http://symfony.com/doc/current/book/forms.html

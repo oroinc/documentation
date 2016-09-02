@@ -74,12 +74,6 @@ Kill the related job daemon process.
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console cache:clear --env prod
-
-or, as an alternative:
-
-.. code-block:: bash
-
     $ sudo rm -rf app/cache/*
 
 **7**. Upgrade the platform.
@@ -187,12 +181,6 @@ Kill the related job daemon process.
             $ sudo chown www-data:www-data -R ./*
 
 **5**. Remove old caches.
-
-.. code-block:: bash
-
-    $ sudo -u www-data app/console cache:clear --env prod
-
-or, as alternative:
 
 .. code-block:: bash
 
