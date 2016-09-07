@@ -5,17 +5,17 @@ Reference
 
 * :doc:`/reference/format/index`
 
-  * :doc:`/reference/format/acl`
+  * :doc:`/reference/format/acls`
   * :doc:`/reference/format/assets`
-  * :doc:`/reference/format/dashboard`
-  * :doc:`/reference/format/datagrid`
+  * :doc:`/reference/format/dashboards`
+  * :doc:`/reference/format/datagrids`
   * :doc:`/reference/format/entity_config`
   * :doc:`/reference/format/navigation`
   * :doc:`/reference/format/placeholders`
   * :doc:`/reference/format/requirejs`
   * :doc:`/reference/format/search`
   * :doc:`/reference/format/system_configuration`
-  * :doc:`/reference/format/workflow`
+  * :doc:`/reference/format/workflows`
 
 .. toctree::
     :hidden:

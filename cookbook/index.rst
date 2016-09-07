@@ -8,14 +8,14 @@ This book contains list of most regularly used solutions in OroPlatform.
   * :doc:`/cookbook/entities/introduction`
   * :doc:`/cookbook/entities/creating_entities`
   * :doc:`/cookbook/entities/data_fixtures`
-  * :doc:`/cookbook/entities/datagrid`
+  * :doc:`/cookbook/entities/datagrids`
   * :doc:`/cookbook/entities/managing_tasks`
   * :doc:`/cookbook/entities/deleting_tasks`
   * :doc:`/cookbook/entities/adding_properties`
-  * :doc:`/cookbook/entities/acl`
+  * :doc:`/cookbook/entities/acls`
   * :doc:`/cookbook/entities/import_export`
   * :doc:`/cookbook/entities/report`
-  * :doc:`/cookbook/entities/dashboard`
+  * :doc:`/cookbook/entities/dashboards`
 
 * :doc:`/cookbook/how_to_create_new_bundle`
 * :doc:`/cookbook/how_to_extend_existing_bundle`

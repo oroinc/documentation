@@ -4,7 +4,7 @@ Navigation
 +-----------+----------------------------+
 | Filename  | ``navigation.yml``         |
 +-----------+----------------------------+
-| Root Node | ``oro_menu_config``        |
+| Root Node | ``menu_config``            |
 +-----------+----------------------------+
 | Sections  | * `items`_                 |
 |           |                            |

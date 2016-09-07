@@ -17,14 +17,14 @@ Configuring a Report
 --------------------
 
 Building a new report is as easy as defining a data grid. A data grid is a YAML configuration living in a
-file called ``datagrid.yml`` in the ``Resources/config`` directory of your bundle. Take a look at the
+file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your bundle. Take a look at the
 following example:
 
 .. code-block:: yaml
     :linenos:
 
     # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
-    datagrid:
+    datagrids:
         orocrm_report-opportunities-won_by_period:
             pageTitle: orocrm.report.opportunities_won_by_period
             source:
@@ -195,8 +195,8 @@ of your bundle:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             account_opportunity:
                 label: Accounts by opportunity

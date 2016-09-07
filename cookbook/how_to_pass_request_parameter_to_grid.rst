@@ -19,7 +19,7 @@ For example:
     :linenos:
 
     # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
-    datagrid:
+    datagrids:
         # ...
         acme-tasks-grid:
             # ...
@@ -39,13 +39,13 @@ Solution 1: Grid Parameter binding
 The easiest way that should be sufficient for most situations is to use the parameter binding option of the datasource
 to configure mapping between datagrid and query parameters.
 
-You can do this by adding the ``bind_parameters`` option to your ``datagrid.yml`` using the following syntax:
+You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml`` using the following syntax:
 
 .. code-block:: yaml
     :linenos:
 
     # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
-    datagrid:
+    datagrids:
         # ...
         acme-tasks-grid:
             # ...
@@ -68,7 +68,7 @@ where the key will be the name of the query parameter, and the value will match 
     :linenos:
 
     # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
-    datagrid:
+    datagrids:
         # ...
         acme-tasks-grid:
             # ...

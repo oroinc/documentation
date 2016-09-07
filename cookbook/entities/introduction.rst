@@ -10,7 +10,7 @@ job.
 
 * :doc:`/cookbook/entities/creating_entities`
 * :doc:`/cookbook/entities/data_fixtures`
-* :doc:`/cookbook/entities/datagrid`
+* :doc:`/cookbook/entities/datagrids`
 
 .. seealso::
 

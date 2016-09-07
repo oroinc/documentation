@@ -4,7 +4,7 @@ Entity Configuration
 +-----------+---------------------------------------------------------+
 | Filename  | ``entity_config.yml``                                   |
 +-----------+---------------------------------------------------------+
-| Root Node | ``oro_entity_config``                                   |
+| Root Node | ``entity_config``                                   |
 +-----------+---------------------------------------------------------+
 | Sections  | * `entity`_                                             |
 |           |                                                         |
@@ -19,12 +19,12 @@ Entity Configuration
 .. caution::
 
     Both the `entity`_ and `field`_ options must **not** be used directly under the
-    ``oro_entity_config`` key, but a scope key must be used as an intermediate mapping key:
+    ``entity_config`` key, but a scope key must be used as an intermediate mapping key:
 
     .. code-block:: yaml
 
-        # src/Acme/DemoBundle/Resources/config/entity_config.yml
-        oro_entity_config:
+        # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
+        entity_config:
             demo_scope:
                 # ...
 

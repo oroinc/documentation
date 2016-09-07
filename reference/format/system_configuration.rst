@@ -4,7 +4,7 @@ System Configuration
 +-----------+------------------------------+
 | Filename  | ``system_configuration.yml`` |
 +-----------+------------------------------+
-| Root Node | ``oro_system_configuration`` |
+| Root Node | ``system_configuration`` |
 +-----------+------------------------------+
 | Options   | * `api_tree`_                |
 |           | * `fields`_                  |
@@ -33,8 +33,8 @@ The following example shows a complete working configuration taken from the
 .. code-block:: yaml
     :linenos:
 
-    # src/Oro/Bundle/ActivityListBundle/Resources/config/system_configuration.yml
-    oro_system_configuration:
+    # src/Oro/Bundle/ActivityListBundle/Resources/config/oro/system_configuration.yml
+    system_configuration:
         groups:
             activity_list_settings:
                 title:  oro.activitylist.system_configuration.activity_list.label
@@ -119,7 +119,7 @@ the API. Nested maps can be used to create logical groups of options:
 .. code-block:: yaml
     :linenos:
 
-    oro_system_configuration:
+    system_configuration:
         api_tree:
             activity_list:
                 oro_activity_list.sorting_field: ~

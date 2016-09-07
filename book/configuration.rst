@@ -89,8 +89,8 @@ For each option, define a field under ``fields`` key:
 .. code-block:: yaml
     :linenos:
 
-    # Acme/DemoBundle/Resources/config/system_configuration.yml
-    oro_system_configuration:
+    # Acme/DemoBundle/Resources/config/oro/system_configuration.yml
+    system_configuration:
         fields:
             foo:
                 type: checkbox

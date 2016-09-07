@@ -58,48 +58,48 @@ Indexing Entities
 Each time an entity is updated, the changed data needs to be persisted into
 the search index. The mapping of your entity fields to the search index can
 be configured either globally (under the ``oro_search`` key) or in a config
-file named ``search.yml`` which must be located in the bundle's ``Resources/config``
+file named ``search.yml`` which must be located in the bundle's ``Resources/config/oro``
 directory. Such a file would then look something like this:
 
 .. code-block:: yaml
     :linenos:
-
-    Acme\DemoBundle\Entity\Product:
-        alias: demo_product
-        label: Demo products
-        route:
-            name: acme_demo_search_product
-            parameters:
-                id: id
-        title_fields: [name]
-        fields:
-            -
-                name: name
-                target_type: text
-            -
-                name: description
-                target_type: text
-                target_fields: [description, another_index_name]
-            -
-                name: manufacturer
-                relation_type: many-to-one
-                relation_fields:
-                    -
-                        name: name
-                        target_type: text
-                        target_fields: [manufacturer, all_data]
-                    -
-                        name: id
-                        target_type: integer
-                        target_fields: [manufacturer]
-            -
-                name: categories
-                relation_type: many-to-many
-                relation_fields:
-                    -
-                        name: name
-                        target_type: text
-                        target_fields: [all_data]
+    search:
+        Acme\DemoBundle\Entity\Product:
+            alias: demo_product
+            label: Demo products
+            route:
+                name: acme_demo_search_product
+                parameters:
+                    id: id
+            title_fields: [name]
+            fields:
+                -
+                    name: name
+                    target_type: text
+                -
+                    name: description
+                    target_type: text
+                    target_fields: [description, another_index_name]
+                -
+                    name: manufacturer
+                    relation_type: many-to-one
+                    relation_fields:
+                        -
+                            name: name
+                            target_type: text
+                            target_fields: [manufacturer, all_data]
+                        -
+                            name: id
+                            target_type: integer
+                            target_fields: [manufacturer]
+                -
+                    name: categories
+                    relation_type: many-to-many
+                    relation_fields:
+                        -
+                            name: name
+                            target_type: text
+                            target_fields: [all_data]
 
 You can use the following options to configure the entity's search index
 mapping:

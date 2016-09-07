@@ -2,9 +2,9 @@ Dashboard
 =========
 
 +-----------+----------------------------+
-| Filename  | ``dashboard.yml``          |
+| Filename  | ``dashboards.yml``          |
 +-----------+----------------------------+
-| Root Node | ``oro_dashboard_config``   |
+| Root Node | ``dashboards``   |
 +-----------+----------------------------+
 | Sections  | * `dashboards`_            |
 |           |                            |
@@ -24,14 +24,14 @@ Dashboard
 |           | * `widgets_configuration`_ |
 +-----------+----------------------------+
 
-The ``dashboard.yml`` file is used to configure dashboards and widgets that are rendered on a
+The ``dashboards.yml`` file is used to configure dashboards and widgets that are rendered on a
 dashboard:
 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/dashboard.yml
-    oro_dashboard_config:
+    # src/Acme/DemoBundle/Resources/config/dashboards.yml
+    dashboards:
         widgets:
             # a "my_calendar" widget displaying the user's calendar on the dashboard
             my_calendar:

@@ -82,8 +82,8 @@ Now we need to create a ``navigation.yml`` file with the following content:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/NewBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/Bundle/NewBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             acme_tab:
                 label: Acme label
@@ -100,7 +100,7 @@ Now we need to create a ``navigation.yml`` file with the following content:
                         children:
                             acme_tab_link: ~
 
-    oro_titles:
+    titles:
         acme_link: My link page title
 
 
@@ -138,8 +138,8 @@ To override some section in the main menu you have to create the ``navigation.ym
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/NewBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/Bundle/NewBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             acme_tab_link:
                 label: Acme link label
@@ -152,7 +152,7 @@ To override some section in the main menu you have to create the ``navigation.ym
                         children:
                             acme_tab_link: ~
 
-    oro_titles:
+    titles:
         acme_link: My link page title
 
 

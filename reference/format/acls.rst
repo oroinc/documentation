@@ -2,9 +2,9 @@ Access Control Lists
 ====================
 
 +-----------+-----------------+
-| Filename  | ``acl.yml``     |
+| Filename  | ``acls.yml``     |
 +-----------+-----------------+
-| Root Node | none            |
+| Root Node | acls            |
 +-----------+-----------------+
 | Options   | * `bindings`_   |
 |           | * `class`_      |
@@ -13,13 +13,13 @@ Access Control Lists
 |           | * `type`_       |
 +-----------+-----------------+
 
-The ``acl.yml`` file of a bundle can contain a map with access control lists. Each key of the map
+The ``acls.yml`` file of a bundle can contain a map with access control lists. Each key of the map
 is the unique name of an ACL while the values for each ACL is a map of options:
 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/oro/acl.yml
+    # src/Acme/DemoBundle/Resources/config/oro/acls.yml
 
     # an ACL used to protect an action
     password_management:

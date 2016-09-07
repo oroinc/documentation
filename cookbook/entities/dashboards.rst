@@ -26,7 +26,7 @@ ids):
     :linenos:
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
-    datagrid:
+    datagrids:
         # ...
         app-recent-tasks-grid:
             extends: app-tasks-grid
@@ -74,8 +74,8 @@ Adding the Widget Configuration
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/dashboard.yml
-    oro_dashboard_config:
+    # src/AppBundle/Resources/config/oro/dashboards.yml
+    dashboards:
         widgets:
             recent_tasks:
                 label: Recent Tasks

@@ -25,7 +25,7 @@ Defining the report basically is the same as configuring any other data grid:
     :linenos:
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
-    datagrid:
+    datagrids:
         orocrm_report-tasks-by_priority:
             source:
                 type: orm
@@ -75,8 +75,8 @@ to render any static report:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/AppBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             app_tasks_reports_tab:
                 label: Tasks
