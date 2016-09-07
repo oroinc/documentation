@@ -63,6 +63,7 @@ directory. Such a file would then look something like this:
 
 .. code-block:: yaml
     :linenos:
+
     search:
         Acme\DemoBundle\Entity\Product:
             alias: demo_product
