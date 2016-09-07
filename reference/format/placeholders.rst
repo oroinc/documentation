@@ -4,7 +4,7 @@ Placeholders
 +----------+---------------------------------------------------------------------+
 | Filename | ``placeholders.yml``                                                |
 +----------+---------------------------------------------------------------------+
-| Root Node| ``placeholders``                                                     |
+| Root Node| ``placeholders``                                                    |
 +----------+---------------------------------------------------------------------+
 | Sections | * :ref:`items <reference-placeholders-section-items>`               |
 |          | * :ref:`placeholders <reference-placeholders-section-placeholders>` |

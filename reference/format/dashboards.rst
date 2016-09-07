@@ -2,9 +2,9 @@ Dashboard
 =========
 
 +-----------+----------------------------+
-| Filename  | ``dashboards.yml``          |
+| Filename  | ``dashboards.yml``         |
 +-----------+----------------------------+
-| Root Node | ``dashboards``   |
+| Root Node | ``dashboards``             |
 +-----------+----------------------------+
 | Sections  | * `dashboards`_            |
 |           |                            |

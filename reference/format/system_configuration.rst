@@ -4,7 +4,7 @@ System Configuration
 +-----------+------------------------------+
 | Filename  | ``system_configuration.yml`` |
 +-----------+------------------------------+
-| Root Node | ``system_configuration`` |
+| Root Node | ``system_configuration``     |
 +-----------+------------------------------+
 | Options   | * `api_tree`_                |
 |           | * `fields`_                  |
