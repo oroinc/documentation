@@ -4,14 +4,14 @@ Configuration Format Reference
 .. toctree::
     :maxdepth: 1
 
-    acl
+    acls
     assets
-    dashboard
-    datagrid
+    dashboards
+    datagrids
     entity_config
     navigation
     placeholders
     requirejs
     search
     system_configuration
-    workflow
+    workflows
