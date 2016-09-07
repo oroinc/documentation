@@ -242,4 +242,4 @@ Example:
 .. seealso::
 
     Read more about all the available options in
-    :doc:`the workflow reference </reference/format/workflow>`.
+    :doc:`the workflow reference </reference/format/workflows>`.
