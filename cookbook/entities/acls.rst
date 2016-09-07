@@ -195,7 +195,7 @@ You have two options to define your custom access control lists:
     .. seealso::
 
         All configuration options are explained in full details in the :doc:`/reference/annotation/acl`,
-        :doc:`/reference/annotation/acl_ancestor`, and :doc:`ACL YAML format </reference/format/acl>`
+        :doc:`/reference/annotation/acl_ancestor`, and :doc:`ACL YAML format </reference/format/acls>`
         reference.
 
 .. _coobook-entities-acl-check:

@@ -239,7 +239,7 @@ a controller method. Restricting access can be done in two different ways:
 .. seealso::
 
     You can read detailed explanations for all available YAML configuration options
-    :doc:`in the reference section </reference/format/acl>`.
+    :doc:`in the reference section </reference/format/acls>`.
 
 Using Param Converters
 ~~~~~~~~~~~~~~~~~~~~~~

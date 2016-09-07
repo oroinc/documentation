@@ -148,7 +148,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Reference: :doc:`/reference/format/dashboard`
+        * Reference: :doc:`/reference/format/dashboards`
 
 `DataAuditBundle`_ (OroPlatform)
     Provides changelogs of configured properties for entities.
@@ -169,7 +169,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
         * Cookbook: :doc:`/cookbook/how_to_pass_request_parameter_to_grid`
-        * Reference: :doc:`/reference/format/datagrid`
+        * Reference: :doc:`/reference/format/datagrids`
         * User guide: :doc:`/user_guide/common_features_channels`
 
 `DemoDataBundle`_ (OroCRM)
@@ -442,7 +442,7 @@ related articles is provided below the description.
         * Book: :doc:`/book/security`
         * Reference: :doc:`/reference/annotation/acl`
         * Reference: :doc:`/reference/annotation/acl_ancestor`
-        * Reference: :doc:`/reference/format/acl`
+        * Reference: :doc:`/reference/format/acls`
         * User guide: :doc:`/user_guide/user_management_overview`
         * User guide: :doc:`/user_guide/user_management_users`
         * User guide: :doc:`/user_guide/user_management_roles`
