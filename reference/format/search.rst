@@ -6,7 +6,7 @@ Search Index
 +-----------+------------------------------------------------------------+
 | Root Node |  search                                                    |
 +-----------+------------------------------------------------------------+
-| Options   | * `The fully qualified class name the indexed entity`_     |
+| Options   | * The fully qualified class name the indexed entity        |
 |           |   * `alias`_                                               |
 |           |   * `fields`_                                              |
 |           |                                                            |
