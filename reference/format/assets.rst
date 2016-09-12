@@ -4,7 +4,7 @@ Assets
 +-----------+----------------+
 | Filename  | ``assets.yml`` |
 +-----------+----------------+
-| Root Node | ``assets``        |
+| Root Node | ``assets``     |
 +-----------+----------------+
 
 The ``assets.yml`` file can be used to define CSS file groups. The listed files will be
