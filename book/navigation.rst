@@ -29,8 +29,8 @@ name which acts as a key in the menu configuration:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             blog:
                 label: acme_demo.menu.blog
@@ -67,8 +67,8 @@ build under the ``tree`` key:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         tree:
             application_menu:
                 children:
@@ -104,8 +104,8 @@ as child items of the ``application_menu`` entry like this:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         tree:
             application_menu:
                 children:

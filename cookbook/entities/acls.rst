@@ -120,31 +120,32 @@ You have two options to define your custom access control lists:
 
 #. If you do not want to protect any controller methods or if you prefer to keep the definition of
    your ACLs separated from the application code, you can define them using some YAML config in a
-   file named ``acl.yml``:
+   file named ``acls.yml``:
 
    .. code-block:: yaml
        :linenos:
 
-       # src/AppBunde/Resources/config/acl.yml
-       app_task_create:
-           type: entity
-           class: AppBunde\Entity\Task
-           permission: CREATE
+       # src/AppBunde/Resources/config/oro/acls.yml
+       acls:
+           app_task_create:
+               type: entity
+               class: AppBunde\Entity\Task
+               permission: CREATE
 
-       app_task_delete:
-           type: entity
-           class: AppBunde\Entity\Task
-           permission: DELETE
+           app_task_delete:
+               type: entity
+               class: AppBunde\Entity\Task
+               permission: DELETE
 
-       app_task_edit:
-           type: entity
-           class: AppBunde\Entity\Task
-           permission: EDIT
+           app_task_edit:
+               type: entity
+               class: AppBunde\Entity\Task
+               permission: EDIT
 
-       app_task_view:
-           type: entity
-           class: AppBunde\Entity\Task
-           permission: VIEW
+           app_task_view:
+               type: entity
+               class: AppBunde\Entity\Task
+               permission: VIEW
 
 .. sidebar:: Security Actions that Are not Related to an Entity
 
@@ -183,17 +184,18 @@ You have two options to define your custom access control lists:
     .. code-block:: yaml
         :linenos:
 
-        # src/AppBunde/Resources/config/acl.yml
-        app_static_pages:
-            type: action
-            bindings:
-                class: AppBunde\Controller\PageController
-                method: showAction
+        # src/AppBunde/Resources/config/oro/acls.yml
+        acls:
+            app_static_pages:
+                type: action
+                bindings:
+                    class: AppBunde\Controller\PageController
+                    method: showAction
 
     .. seealso::
 
         All configuration options are explained in full details in the :doc:`/reference/annotation/acl`,
-        :doc:`/reference/annotation/acl_ancestor`, and :doc:`ACL YAML format </reference/format/acl>`
+        :doc:`/reference/annotation/acl_ancestor`, and :doc:`ACL YAML format </reference/format/acls>`
         reference.
 
 .. _coobook-entities-acl-check:
@@ -254,8 +256,8 @@ the action being linked. The value of this option is the name of the ACL to chec
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBunde/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/AppBunde/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             task_list:
                 label: Tasks
@@ -350,8 +352,8 @@ granted access and the action embedding the grid accidentally was not protected)
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             source:
                 acl_resource: app_task_view
@@ -367,8 +369,8 @@ to:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             # ...
             actions:

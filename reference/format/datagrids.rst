@@ -2,9 +2,9 @@ Datagrid
 ========
 
 +-----------+---------------------------------------------------------+
-| Filename  | ``datagrid.yml``                                        |
+| Filename  | ``datagrids.yml``                                       |
 +-----------+---------------------------------------------------------+
-| Root Node | ``datagrid``                                            |
+| Root Node | ``datagrids``                                           |
 +-----------+---------------------------------------------------------+
 | Options   | * `actions`_                                            |
 |           | * `action_configuration`_                               |
@@ -82,8 +82,8 @@ decides whether or not an action is visible for an entry:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         grid-name:
             # ...
             action_configuration: ['@acme_demo.datagrid_action_config', getActionPermissions]

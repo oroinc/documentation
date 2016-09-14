@@ -190,11 +190,12 @@ a controller method. Restricting access can be done in two different ways:
    .. code-block:: yaml
        :linenos:
 
-       # src/Acme/DemoBundle/Resources/config/acl.yml
-       product_edit:
-           type: entity
-           class: AcmeDemoBundle:Product
-           permission: EDIT
+       # src/Acme/DemoBundle/Resources/config/oro/acls.yml
+       acls:
+           product_edit:
+               type: entity
+               class: AcmeDemoBundle:Product
+               permission: EDIT
 
    The annotation of your controller method becomes a lot smaller then:
 
@@ -225,19 +226,20 @@ a controller method. Restricting access can be done in two different ways:
    .. code-block:: yaml
        :linenos:
 
-       # src/Acme/DemoBundle/Resources/config/acl.yml
-       product_edit:
-           type: entity
-           class: AcmeDemoBundle:Product
-           permission: EDIT
-           bindings:
-               - class: Acme\DemoBundle\Controller\ProductController
-                 method: editAction
+       # src/Acme/DemoBundle/Resources/config/oro/acls.yml
+       acls:
+           product_edit:
+               type: entity
+               class: AcmeDemoBundle:Product
+               permission: EDIT
+               bindings:
+                   - class: Acme\DemoBundle\Controller\ProductController
+                     method: editAction
 
 .. seealso::
 
     You can read detailed explanations for all available YAML configuration options
-    :doc:`in the reference section </reference/format/acl>`.
+    :doc:`in the reference section </reference/format/acls>`.
 
 Using Param Converters
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -350,9 +352,10 @@ If you need to manually check the access of the current user to a certain object
         .. code-block:: yaml
             :linenos:
 
-            # src/Acme/DemoBundle/Resources/config/acl.yml
-            protected_action:
-                type: action
+            # src/Acme/DemoBundle/Resources/config/oro/acls.yml
+            acls:
+                protected_action:
+                    type: action
 
 Examples
 --------

@@ -14,7 +14,7 @@ Creating a basic datagrid to display the data of all tasks requires three steps:
 Configure the Grid
 ------------------
 
-The datagrid configuration happens in the ``datagrid.yml`` file in the configuration directory of
+The datagrid configuration happens in the ``datagrids.yml`` file in the configuration directory of
 your bundle and is divided into several sections:
 
 Data Source
@@ -26,8 +26,8 @@ to be displayed in the grid:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             source:
                 type: orm
@@ -52,8 +52,8 @@ Then, the ``columns`` option needs to be used to configure how which data will b
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             # ...
             columns:
@@ -82,8 +82,8 @@ data:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             # ...
             sorters:
@@ -120,8 +120,8 @@ data grid's query builder.
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             # ...
             filters:
@@ -150,8 +150,8 @@ The final data grid configuration now looks like this:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/AppBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         app-tasks-grid:
             source:
                 type: orm
@@ -269,8 +269,8 @@ At last, you need to make the action accessible by creating a menu item:
 .. code-block:: yaml
     :linenos:
 
-    # src/AppBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/AppBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             task_list:
                 label: Tasks
