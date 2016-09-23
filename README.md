@@ -1,25 +1,39 @@
-# Oro Platform Documentation
+# Oro Documentation
 
-Oro Platform documentation explains how to develop business application in easy and extendable way.
+Oro documentation explains how to develop business application in easy and extendable way.
 The use of the documentation is subject to the [CC-BY-NC-SA 4.0](./LICENSE) license.
 
-## [The Oro Book](./book/index.rst)
+Documentation is published at https://www.orocrm.com/documentation
+
+## Documentation Structure
+
+### [The Oro Book](./book/index.rst)
 
 Overview of Platform architecture, design and key features.
 This section will help to understand better platform design and technical details.
 
-
-## [The Oro Cookbook](./cookbook/index.rst)
+### [The Oro Cookbook](./cookbook/index.rst)
 
 Developer guidance to specific features and implementations, collection of "How to" articles that allow
 to achieve result in quick and right way without going deep into technical details.
 
-
-## [User Guide](./user_guide/index.rst)
+### [User Guide](./user_guide/index.rst)
 
 End user oriented documentation that explains how to administer and configure platform features.
 
-
-## [Community Guide](./community/index.rst)
+### [Community Guide](./community/index.rst)
 
 Learn about our development process and how you can contribute to the Oro Platform.
+
+## Build Documentation in Local Environment
+
+Oro documentation using [reStructuredText](http://docutils.sourceforge.net/rst.html) format and
+could be built with [Sphinx](http://sphinx-doc.org/):
+
+1. [Install](https://pip.pypa.io/en/stable/installing/) pip
+2. Install Install `Sphinx`_ and `Sphinx Extensions for PHP and Symfony`_ and
+Sphinx [Extensions for PHP and Symfony](https://github.com/fabpot/sphinx-php)
+`pip install sphinx~=1.3.0 git+https://github.com/fabpot/sphinx-php.git`
+3. Run `make html` from documentation folder
+
+Documentation will be available in `_build/html` folder.

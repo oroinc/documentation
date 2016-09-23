@@ -275,6 +275,10 @@ Step 3. Web Server Configuration
         CustomLog /var/log/apache2/orocrm_access.log combined
     </VirtualHost>
 
+.. note::
+    Please make sure mod_rewrite and mod_headers are enabled.
+
+
 **For Nginx**, the virtual host configuration should look as follows:
 
 .. code-block:: nginx
