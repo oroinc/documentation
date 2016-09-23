@@ -4,10 +4,10 @@
 Create Custom Oro Application
 =============================
 
-No two businesses are alike - this is part of Oro products philosophy and this is why flexibility is one of
-the key principles that drives architecture of Oro products. Depends what you are planning to build, you can
-create your custom application with minimum functions and start with `OroPlatform`_, or use `OroCRM`_
-or `OroCommerce`_ applications as a base line. No matter what is your starting point, there are no difference
+No two businesses are alike. This motto is a part of Oro products philosophy and this is why flexibility is one of
+the key principles that drive architecture in Oro. Depending on what you are planning to build, you can
+create your custom application with minimum functions. Start either with `OroPlatform`_, or `OroCRM`_, or 
+`OroCommerce`_ application as a baseline. No matter what is your starting point, there is no difference
 in the customization process.
 
 Application Repository and Installation
@@ -20,38 +20,35 @@ Once code repository is ready, please follow :doc:`installation </book/installat
 
 .. note::
 
-    Newly created application repository should be used instead https://github.com/orocrm/crm-application.git
+    Newly created application repository should be used instead of the https://github.com/orocrm/crm-application.git
 
-When you application is up and running, you can use development mode to work on customizations. In order to warmup
+When your application is up and running, you can use development mode to work on customizations. In order to warm up the 
 application cache in development mode please run:
 
 .. code-block:: bash
 
         $php app/console cache:clear --env=dev
 
-In order to access application in development mode add `app_dev.php` to base URL
-(example: http://orocrm.example.com/app_dev.php)
+To access application in development mode, add `app_dev.php` to the base URL
+(example: http://orocrm.example.com/app_dev.php).
 
 .. _application-custom-code:
 
 Application Custom Code
 -----------------------
 
-Oro application structure is based on `Symfony Standard Edition`_ and when you are working on a custom application
-we highly recommend to follow `Symfony Best Practices`_.
+Oro application structure is based on `Symfony Standard Edition`_ and we highly recommend to follow `Symfony Best Practices`_ for any custom application that you build on top of OroPlatform, OroCRM, or OroCommerce.
 
-In the root folder of your application there is a folder `src`. This folder should be used as a working directory
-for your custom project and all custom code should be located there. In Oro (as well as in Symfony) application all
-custom code is organized in bundles. `Symfony Bundle System`_ allows to organize application functionality in modules
-as well as provide best practice for module structure and design.
+In the root folder of your application, there is an `src` folder. Use it as a working directory
+for your custom project and put your custom code there. Like in Symfony applications, all custom code in Oro application  is organized in bundles - modules that group application functionality (see `Symfony Bundle System`_ for best practice of module structure and design).
 
 .. note::
-    Please pay attention, Oro application has few :doc:`differences </book/differences>` to Symfony Standard Edition
+    Please note that Oro application has several :doc:`differences </book/differences>` compared to Symfony Standard Edition.
 
-Typical custom application is created in a few common steps:
+Typically, to create a custom application you may follow the common steps:
 
 #) :doc:`Create a bundle </cookbook/how_to_create_new_bundle>`
-#) Introduce :doc:`new entity <entities>` types that will represent your business data structure and add
+#) Introduce :doc:`new entity <entities>` types that represent your business data structure and add
    :doc:`related features </cookbook/entities/index>`
 #) :doc:`Customize </cookbook/how_to_extend_existing_bundle>` existing functionality
    (:doc:`menu </cookbook/how_to_create_and_customize_application_menu>`, :doc:`workflow <workflow>`,
@@ -62,20 +59,20 @@ Typical custom application is created in a few common steps:
 Application Deployment
 ----------------------
 
-Oro applications are Open Source and could be deployed to on premise environments. Deployment method could be
-different and depends on organization requirements and infrastructure. When you designing your deployment process
-take into account recommendations about `Symfony Application Deploy`_ and pay attantion to the following items:
+Oro applications are Open Source and may be deployed to the on-premise environments. Deployment method could be
+different and Depending on organization requirements and infrastructure, you can design your custom deployment process, noting the following recommendations:
 
-#) Lock all dependencies with `composer.lock`_ before taking code to production
-#) Warmup application cache in production mode
-#) Disable access too `app_dev.php`
+#) Take into account recommendations in `Symfony Application Deployment`_ documentation.
+#) Lock all dependencies with `composer.lock`_ before taking the code to production
+#) Warm up the application cache in production mode
+#) Disable access to `app_dev.php`
 #) Configure crontab and run web socket server
 
 Oro applications are :doc:`scalable <scale_nodes>`.
 
 .. note::
-    As alternative to on premise deployment you can deploy your application to OroCloud, please `contact us`_ to
-    get more details and create your application following recommendations :ref:`above <application-custom-code>`.
+    As an alternative to the on-premise deployment, when you created your application following recommendations :ref:`above <application-custom-code>`, you can put your application into OroCloud. Please `contact us`_ to
+    get more information.
 
 
 Learn more
@@ -96,6 +93,6 @@ Learn more
 .. _`Symfony Standard Edition` : https://github.com/symfony/symfony-standard/tree/2.8
 .. _`Symfony Best Practices` : http://symfony.com/doc/2.8/best_practices/index.html
 .. _`Symfony Bundle System` : http://symfony.com/doc/2.8/bundles.html
-.. _`Symfony Application Deploy` : http://symfony.com/doc/2.8/deployment.html
+.. _`Symfony Application Deployment` : http://symfony.com/doc/2.8/deployment.html
 .. _`composer.lock` : https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
 .. _`contact us` : https://www.orocrm.com/contact-us
