@@ -27,13 +27,12 @@ Learn about our development process and how you can contribute to the Oro Platfo
 
 ## Build Documentation in Local Environment
 
-Oro documentation using [reStructuredText](http://docutils.sourceforge.net/rst.html) format and
-could be built with [Sphinx](http://sphinx-doc.org/):
+In Oro solutions, documentation uses [reStructuredText](http://docutils.sourceforge.net/rst.html) format and
+could be built with [Sphinx](http://sphinx-doc.org/). :
 
-1. [Install](https://pip.pypa.io/en/stable/installing/) pip
-2. Install Install `Sphinx`_ and `Sphinx Extensions for PHP and Symfony`_ and
-Sphinx [Extensions for PHP and Symfony](https://github.com/fabpot/sphinx-php)
-`pip install sphinx~=1.3.0 git+https://github.com/fabpot/sphinx-php.git`
-3. Run `make html` from documentation folder
+1. [Install pip](https://pip.pypa.io/en/stable/installing/).
+2. Install [Sphinx with Extensions for PHP and Symfony](https://github.com/fabpot/sphinx-php) using the following command:
+`pip install sphinx~=1.3.0 git+https://github.com/fabpot/sphinx-php.git`.
+3. Run `make html` in documentation folder. Ensure that `conf.py` (documentation build configuration file) is there.
 
 Documentation will be available in `_build/html` folder.
