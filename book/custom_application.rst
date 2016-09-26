@@ -37,13 +37,17 @@ To access application in development mode, add `app_dev.php` to the base URL
 Application Custom Code
 -----------------------
 
-Oro application structure is based on `Symfony Standard Edition`_ and we highly recommend to follow `Symfony Best Practices`_ for any custom application that you build on top of OroPlatform, OroCRM, or OroCommerce.
+Oro application structure is based on `Symfony Standard Edition`_ and we highly recommend to follow
+`Symfony Best Practices`_ for any custom application that you build on top of OroPlatform, OroCRM, or OroCommerce.
 
 In the root folder of your application, there is an `src` folder. Use it as a working directory
-for your custom project and put your custom code there. Like in Symfony applications, all custom code in Oro application  is organized in bundles - modules that group application functionality (see `Symfony Bundle System`_ for best practice of module structure and design).
+for your custom project and put your custom code there. Like in Symfony applications, all custom code in Oro application
+is organized in bundles - modules that group application functionality (see `Symfony Bundle System`_ for best practice
+of module structure and design).
 
 .. note::
-    Please note that Oro application has several :doc:`differences </book/differences>` compared to Symfony Standard Edition.
+    Please note that Oro application has several :doc:`differences </book/differences>` compared to
+    Symfony Standard Edition.
 
 Typically, to create a custom application you may follow the common steps:
 
@@ -59,8 +63,9 @@ Typically, to create a custom application you may follow the common steps:
 Application Deployment
 ----------------------
 
-Oro applications are Open Source and may be deployed to the on-premise environments. Deployment method could be
-different and Depending on organization requirements and infrastructure, you can design your custom deployment process, noting the following recommendations:
+Oro applications are open source and may be deployed to the on-premise environments. Deployment method could be
+different depending on organization requirements and infrastructure. You can design your custom deployment process,
+noting the following recommendations:
 
 #) Take into account recommendations in `Symfony Application Deployment`_ documentation.
 #) Lock all dependencies with `composer.lock`_ before taking the code to production
@@ -71,7 +76,8 @@ different and Depending on organization requirements and infrastructure, you can
 Oro applications are :doc:`scalable <scale_nodes>`.
 
 .. note::
-    As an alternative to the on-premise deployment, when you created your application following recommendations :ref:`above <application-custom-code>`, you can put your application into OroCloud. Please `contact us`_ to
+    As an alternative to the on-premise deployment, when you created your application following recommendations
+    :ref:`above <application-custom-code>`, you can put your application into OroCloud. Please `contact us`_ to
     get more information.
 
 
