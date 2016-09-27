@@ -67,7 +67,7 @@ Oro applications are open source and may be deployed to the on-premise environme
 different depending on organization requirements and infrastructure. You can design your custom deployment process,
 noting the following recommendations:
 
-#) Take into account recommendations in `Symfony Application Deployment`_ documentation.
+#) Take into account recommendations in `Symfony Application Deployment`_ documentation
 #) Lock all dependencies with `composer.lock`_ before taking the code to production
 #) Warm up the application cache in production mode
 #) Disable access to `app_dev.php`
