@@ -134,7 +134,7 @@ Here's an example of request header with WSSE authentication, please pay attenti
     GET /api/users HTTP/1.1
     Host: localhost.com
     Connection: keep-alive
-    User-Agent: Mozilla/5.0 ...
+    User-Agent: Mozilla/5.0 ....
     Connection: keep-alive
     Accept: */*
 
@@ -148,7 +148,7 @@ authentication <https://www.orocrm.com/documentation/index/current/cookbook/how-
 Design API Recommendations
 ==========================
 
-todo... ??
+todo.... ??
 
 HTTP Verbs
 ==========
@@ -227,7 +227,7 @@ e.g.
 
     Content-Type: application/vnd.api+json
     Authorization: WSSE profile="UsernameToken"
-    X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
+    X-WSSE: UsernameToken Username="....",PasswordDigest="....", Created="...", Nonce="...."
 
 Also, by providing additional requests header parameters it is possible to retrieve additional information like total number of records per
 certain resource while ``GET_LIST`` request or total number of affected records while ``DELETE_LIST`` request. For such purposes the
@@ -255,8 +255,8 @@ Header examples:
 
     Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    Authorization: ...
-    ...
+    Authorization: ....
+    ....
     X-Include: totalCount
 
 **Response**:
@@ -282,8 +282,8 @@ Header examples:
 
     Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    Authorization: ...
-    ...
+    Authorization: ....
+    ....
     X-Include: deletedCount
 
 Request body contains e.g. filter that specify conditions for deletion
@@ -435,18 +435,18 @@ Please note, to simplify request examples representation in document, the short 
         "id": "1",
         "attributes": {
             "title": null,
-            ...
+            ....
             "email": "admin@local.com",
             "firstName": "John",
             "enabled": true,
             "lastLogin": "2016-09-19T11:01:31Z",
-            ...
+            ....
         },
         "relationships": {
-            ...
+            ....
             "owner": { "data": { "type": "businessunits", "id": "1"} },
             "businessUnits": { "data": [ { "type": "businessunits", "id": "1" } ] },
-            ...
+            ....
         }
     }}
 
@@ -468,25 +468,37 @@ Most common resource(s) fields
 +------------------------+------------+-----------------------------------------------------------------------------------+
 | updatedAt              | datetime   | The date and time of the last update of the resource record.                      |
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| ---                    | ---        | ---                                                                               |
+| owner                  | user / businessUnit / organization |  ---                                              |
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| owner                  | ---        | ---                                                                               |
+| organization           | organization | ---                                                                               |
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| organization           | ---        | ---                                                                               |
+
+
+Typical contacting activities fields
+------------------------------------
+
+The terminology "contacting activity" describes regular activity, but such activity can represent some sort of communication
+process and can have direction (incoming or outgoing).
+For example: "Call" and "Email", each of them can act from client or from manager, so if client send email or call to
+manager - it will be incoming activity, and if manager send email or call to client - it will be outgoing activity.
+This data may help to build forecast reports based on contacting activities.
+
+So, the table below describes fields that will be available for resources that supports such activities like "Call", "Email", etc.
+
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| ---                    | ---        | ---                                                                               |
-+------------------------+------------+-----------------------------------------------------------------------------------+
+| name                   | type       | description                                                                       |
++========================+============+===================================================================================+
 | lastContactedDate      | datetime   | The data and time of the last contact activity for the resource record            |
 +------------------------+------------+-----------------------------------------------------------------------------------+
 | lastContactedDateIn    | datetime   | The data and time of the last incoming contact activity for the resource record   |
 +------------------------+------------+-----------------------------------------------------------------------------------+
 | lastContactedDateOut   | datetime   | The data and time of the last outgoing contact activity for the resource record   |
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| timesContacted         | integer    | Total number of contact activities per resource record                            |
+| timesContacted         | integer    | Total number of contact activities for resource record                            |
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| timesContactedIn       | integer    | Total number of incoming contact activities per resource record                   |
+| timesContactedIn       | integer    | Total number of incoming contact activities for resource record                   |
 +------------------------+------------+-----------------------------------------------------------------------------------+
-| timesContactedOut      | integer    | Total number of outgoing contact activities per resource record                   |
+| timesContactedOut      | integer    | Total number of outgoing contact activities for resource record                   |
 +------------------------+------------+-----------------------------------------------------------------------------------+
 
 FILTERS
@@ -625,7 +637,7 @@ Here's an example:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Content-Type: application/vnd.api+json
-    ...
+    ....
 
     {"data": [
       {
@@ -633,10 +645,10 @@ Here's an example:
         "id": "1",
         "attributes": {
           "name": "Life Plan Counselling",
-          ...
+          ....
         },
         "relationships": {
-          ...
+          ....
         }
       }
     ]}
@@ -651,17 +663,17 @@ Here's an example:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Content-Type: application/json
-    ...
+    ....
 
     [
       {
         "id": 1,
         "name": "Life Plan Counselling",
-        ...
+        ....
         "contacts": [
           1
         ]
       },
-      ...
+      ....
     ]
 
