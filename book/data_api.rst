@@ -30,9 +30,9 @@ To start using API user should do a few preparation steps:
 
 -  Be sure that application installed correctly;
 -  Generate API Token for user. To do that, go to ``Profile page`` of your user, the link ``My User`` is available in
-   dropdown menu at top right or by direct link (http://localhost.com/user/profile/view) or for instance, if you want
-   to generate ``API Key`` for any other user in the system - open ``Users grid`` (System->User Management->Users), find
-   the user who need an API key and open its view page by clicking on grid row or ``View`` action from dots menu.
+   dropdown menu at top right or by direct link (e.g. http://localhost.com/user/profile/view) or for instance, if you
+   want to generate ``API Key`` for any other user in the system - open ``Users grid`` (System->User Management->Users),
+   find the user who need an API key and open its view page by clicking on grid row or ``View`` action from dots menu.
    At last, just click the ``Generate Key`` button, after that you'll see the generated key near the button and it will
    looks like ``f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2``.
 
@@ -157,7 +157,7 @@ parameters:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Connection: keep-alive
-    User-Agent: Mozilla/5.0 ....
+    User-Agent: Mozilla/5.0 ...
     Connection: keep-alive
     Accept: */*
 
@@ -258,7 +258,7 @@ and ``Authentication``, e.g.
 
     Content-Type: application/vnd.api+json
     Authorization: WSSE profile="UsernameToken"
-    X-WSSE: UsernameToken Username="....",PasswordDigest="....", Created="...", Nonce="...."
+    X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
 
 Also, by providing additional requests header parameters it is possible to retrieve additional information like total
 number of records per certain resource while ``GET_LIST`` request or total number of affected records while
@@ -286,8 +286,8 @@ Header examples:
 
     Content-Type: application/vnd.api+json
     Accept: application/vnd.api+json
-    Authorization: ....
-    ....
+    Authorization: ...
+    ...
     X-Include: totalCount
 
 **Response**:
@@ -463,18 +463,18 @@ Please note, to simplify request examples representation in document, the short 
         "id": "1",
         "attributes": {
             "title": null,
-            ....
+            ...
             "email": "admin@local.com",
             "firstName": "John",
             "enabled": true,
             "lastLogin": "2016-09-19T11:01:31Z",
-            ....
+            ...
         },
         "relationships": {
             ....
             "owner": { "data": { "type": "businessunits", "id": "1"} },
             "businessUnits": { "data": [ { "type": "businessunits", "id": "1" } ] },
-            ....
+            ...
         }
     }}
 
@@ -487,26 +487,26 @@ All timestamps are returned in ISO 8601 format: ``YYYY-MM-DDTHH:MM:SSZ``
 Most common resource(s) fields
 ------------------------------
 
-+---------------+------------------+-------------------------------------------------------------------------------------------+
-| Name          | Type             | Description                                                                               |
-+===============+==================+===========================================================================================+
-| id            | 'integer'        | The unique identifier of an resource. In most cases it's integer, but in                  |
-|               |                  | depending on resource data model it can be string or contain multiple columns             |
-+---------------+------------------+-------------------------------------------------------------------------------------------+
-| createdAt     | 'datetime'       | The date and time of resource record creation.                                            |
-+---------------+------------------+-------------------------------------------------------------------------------------------+
-| updatedAt     | 'datetime'       | The date and time of the last update of the resource record.                              |
-+---------------+------------------+-------------------------------------------------------------------------------------------+
-| owner         | 'user' or        | An Owner record represents the ownership capabilities of the record. In other words,      |
-|               |                  | in dependant on owner type the different permissions may be applied then accessing        |
-|               | 'businessUnit'   | the data. For more details see                                                            |
-|               | or 'organization'| `Access and Permissions Management </user-guide/user-management-roles>`__.                |
-+---------------+------------------+-------------------------------------------------------------------------------------------+
-| organization  | organization     | An Organization record represents a real enterprise, business, firm, company or another   |
-|               |                  | organization, to which the users belong. For more details about ``organization`` field    |
-|               |                  | purposes see                                                                              |
-|               |                  | `Company Structure and Organization </user-guide/intro-company-structure-org-selector>`__ |
-+---------------+------------------+-------------------------------------------------------------------------------------------+
++--------------+----------------+-------------------------------------------------------------------------------------------+
+| Name         | Type           | Description                                                                               |
++==============+================+===========================================================================================+
+| id           | 'integer'      | The unique identifier of an resource. In most cases it's integer, but in                  |
+|              |                | depending on resource data model it can be string or contain multiple columns             |
++--------------+----------------+-------------------------------------------------------------------------------------------+
+| createdAt    | 'datetime'     | The date and time of resource record creation.                                            |
++--------------+----------------+-------------------------------------------------------------------------------------------+
+| updatedAt    | 'datetime'     | The date and time of the last update of the resource record.                              |
++--------------+----------------+-------------------------------------------------------------------------------------------+
+| owner        | 'user' or      | An Owner record represents the ownership capabilities of the record. In other words,      |
+|              | 'businessUnit' | in dependant on owner type the different permissions may be applied then accessing        |
+|              | or             | the data. For more details see                                                            |
+|              | 'organization' | `Access and Permissions Management </user-guide/user-management-roles>`__.                |
++--------------+----------------+-------------------------------------------------------------------------------------------+
+| organization | organization   | An Organization record represents a real enterprise, business, firm, company or another   |
+|              |                | organization, to which the users belong. For more details about ``organization`` field    |
+|              |                | purposes see                                                                              |
+|              |                | `Company Structure and Organization </user-guide/intro-company-structure-org-selector>`__ |
++--------------+----------------+-------------------------------------------------------------------------------------------+
 
 
 Typical contacting activities fields
@@ -590,10 +590,10 @@ The API allows to use several types of filters. The filter types is briefly desc
 |             |                              | Depends on ``include`` filter in case if filter is applied to relation. |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | filter      | filter[id]=1                 | Used for filtering the response data by specific values of specific     |
-|             | filter[id]=5,7               | field. Can accept additional operators like ``/<``, ``/>``, etc.        |
-|             | filter[id]>8&filter[name]=a  | Also filter may accept several values, in such case they will be        |
+|             |                              | field. Can accept additional operators like ``/<``, ``/>``, etc.        |
+|             | filter[id]=5,7               | Also filter may accept several values, in such case they will be        |
 |             |                              | perceived as ``OR``, e.g. id == 5 OR id == 7 (2nd example). And in case |
-|             |                              | of several filters in request, all of them will be perceived as ``AND``,|
+|             | filter[id]>8&filter[name]=a  | of several filters in request, all of them will be perceived as ``AND``,|
 |             |                              | e.g. id > 8 AND name == 'a' (3rd example).                              |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | include     | include=[owner,organization] | Used for inclusion into response the related resources data.            |
@@ -601,6 +601,7 @@ The API allows to use several types of filters. The filter types is briefly desc
 | page        | page[size]=10&page[number]=1 | Used for pagination purposes.                                           |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | sort        | sort=id                      | Used for data sorting. By default ``ASC`` sorting. To perform ``DESC``  |
+|             |                              |                                                                         |
 |             | sort=id,-name                | sorting specify ``/-`` before field name as shown in example.           |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 
@@ -907,7 +908,7 @@ Here's an example:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Content-Type: application/vnd.api+json
-    ....
+    ...
 
     {"data": [
       {
@@ -915,10 +916,10 @@ Here's an example:
         "id": "1",
         "attributes": {
           "name": "Life Plan Counselling",
-          ....
+          ...
         },
         "relationships": {
-          ....
+          ...
         }
       }
     ]}
@@ -939,11 +940,11 @@ Here's an example:
       {
         "id": 1,
         "name": "Life Plan Counselling",
-        ....
+        ...
         "contacts": [
           1
         ]
       },
-      ....
+      ...
     ]
 
