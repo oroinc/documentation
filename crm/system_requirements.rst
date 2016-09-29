@@ -24,14 +24,17 @@ System Requirements
 * PHP 5.5.9 and above
 * PHP Command Line Interface
 * PHP extensions
-    * ctype
-    * fileinfo
+    * Ctype
+    * cURL
+    * Fileinfo
     * GD 2.0 and above
     * intl
     * JSON
+    * mbstring
     * Mcrypt
     * PCRE 8.0 and above
     * SimpleXML
+    * SOAP
     * Tokenizer
 * PHP settings
     * date.timezone must be set
