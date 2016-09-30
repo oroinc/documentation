@@ -14,6 +14,7 @@ and technical details.
   * :doc:`/book/security`
   * :doc:`/book/navigation`
 
+* :doc:`/book/custom_application`
 * :doc:`/book/customization`
 
 * :doc:`/book/entity_handling`
@@ -52,6 +53,7 @@ and technical details.
     :hidden:
 
     getting_started
+    custom_application
     customization
     entity_handling
     ui
