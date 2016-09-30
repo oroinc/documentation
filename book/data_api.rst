@@ -589,20 +589,20 @@ The API allows to use several types of filters. The filter types is briefly desc
 | fields      | fields[owner]=id,name        | Used for limiting the response data to only specified fields.           |
 |             |                              | Depends on ``include`` filter in case if filter is applied to relation. |
 +-------------+------------------------------+-------------------------------------------------------------------------+
-| filter      | filter[id]=1                 | Used for filtering the response data by specific values of specific     |
-|             |                              | field. Can accept additional operators like ``/<``, ``/>``, etc.        |
-|             | filter[id]=5,7               | Also filter may accept several values, in such case they will be        |
-|             |                              | perceived as ``OR``, e.g. id == 5 OR id == 7 (2nd example). And in case |
-|             | filter[id]>8&filter[name]=a  | of several filters in request, all of them will be perceived as ``AND``,|
+| filter      | 'filter[id]=1'               | Used for filtering the response data by specific values of specific     |
+|             | or                           | field. Can accept additional operators like ``/<``, ``/>``, etc.        |
+|             | 'filter[id]=5,7'             | Also filter may accept several values, in such case they will be        |
+|             | or                           | perceived as ``OR``, e.g. id == 5 OR id == 7 (2nd example). And in case |
+|             | 'filter[id]>8&filter[name]=a'| of several filters in request, all of them will be perceived as ``AND``,|
 |             |                              | e.g. id > 8 AND name == 'a' (3rd example).                              |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | include     | include=[owner,organization] | Used for inclusion into response the related resources data.            |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | page        | page[size]=10&page[number]=1 | Used for pagination purposes.                                           |
 +-------------+------------------------------+-------------------------------------------------------------------------+
-| sort        | sort=id                      | Used for data sorting. By default ``ASC`` sorting. To perform ``DESC``  |
-|             |                              |                                                                         |
-|             | sort=id,-name                | sorting specify ``/-`` before field name as shown in example.           |
+| sort        | 'sort=id'                    | Used for data sorting. By default ``ASC`` sorting. To perform ``DESC``  |
+|             | or                           |                                                                         |
+|             | 'sort=id,-name'              | sorting specify ``/-`` before field name as shown in example.           |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 
 
@@ -676,6 +676,7 @@ is allowed to use six types - **=**, **!=**, **<**, **<=**, **>**, **>=**, for `
 Request example:
 
 ::
+
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email HTTP/1.1
 
     Content-Type: application/vnd.api+json
