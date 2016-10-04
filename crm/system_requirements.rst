@@ -54,7 +54,7 @@ Optional recommendations
 * Node.js (for JS minification)
 * PHP-XML module installed
 * xdebug.max_nesting_level above 100 in php.ini
-* iconv() available 
+* iconv() available
 * mb_strlen() available
 * posix_isatty() available
 * utf8_decode() available
