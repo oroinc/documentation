@@ -207,7 +207,7 @@ Event trigger configuration has next options.
     Property path to `mainEntity` relative to `entity` if they are different.
 
 Example
-~~~~~~~
+"""""""
 
 .. code-block:: yaml
     :linenos:
@@ -244,7 +244,7 @@ Cron trigger configuration has next options.
     * `ws` - Current Workflow Step.
 
 Example
-~~~~~~~
+"""""""
 
 .. code-block:: yaml
     :linenos:
