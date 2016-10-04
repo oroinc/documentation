@@ -173,7 +173,7 @@ and which attributes can be modified when applying a transition:
                         -
                             cron: '* * * * *'
                             filter: "e.someStatus = 'OPEN'"
-```
+
 
 Transition Triggers Configuration
 .................................
@@ -226,7 +226,7 @@ Example
                             queued: false                                       # handle trigger not in queue
                             relation: call                                      # relation to Workflow entity
                             require: "entity.status = 'pending'"                # expression language condition
-```
+
 
 Cron trigger:
 -------------
@@ -260,7 +260,7 @@ Example
                         -
                             cron: '* * * * *'                                   # cron definition
                             filter: "e.someStatus = 'OPEN'"                     # dql-filter
-```
+
 
 Transition Definition Configuration
 ...................................
