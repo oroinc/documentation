@@ -227,7 +227,6 @@ Example
                             relation: call                                      # relation to Workflow entity
                             require: "entity.status = 'pending'"                # expression language condition
 
-
 Cron trigger:
 -------------
 
