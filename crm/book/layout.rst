@@ -24,14 +24,15 @@ configuration file:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/assets.yml
-    css:
-        frontend:
-            - 'bundles/acmedemo/css/frontend/first.css'
-            - 'bundles/acmedemo/css/frontend/second.css'
-        backend:
-            - 'bundles/acmedemo/css/backend/first.css'
-            - 'bundles/acmedemo/css/backend/second.css'
+    # src/Acme/DemoBundle/Resources/config/oro/assets.yml
+    assets:
+        css:
+            frontend:
+                - 'bundles/acmedemo/css/frontend/first.css'
+                - 'bundles/acmedemo/css/frontend/second.css'
+            backend:
+                - 'bundles/acmedemo/css/backend/first.css'
+                - 'bundles/acmedemo/css/backend/second.css'
 
 Then, embed your styles in the main layout template using the ``oro_css`` Twig tag:
 

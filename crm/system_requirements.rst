@@ -24,14 +24,17 @@ System Requirements
 * PHP 5.5.9 and above
 * PHP Command Line Interface
 * PHP extensions
-    * ctype
-    * fileinfo
+    * Ctype
+    * cURL
+    * Fileinfo
     * GD 2.0 and above
     * intl
     * JSON
+    * mbstring
     * Mcrypt
     * PCRE 8.0 and above
     * SimpleXML
+    * SOAP
     * Tokenizer
 * PHP settings
     * date.timezone must be set
@@ -51,7 +54,8 @@ Optional recommendations
 * Node.js (for JS minification)
 * PHP-XML module installed
 * xdebug.max_nesting_level above 100 in php.ini
-* iconv() available ◦mb_strlen() available
+* iconv() available
+* mb_strlen() available
 * posix_isatty() available
 * utf8_decode() available
 * Tidy PHP extension should be installed to make sure that any HTML is correctly converted into a text representation
