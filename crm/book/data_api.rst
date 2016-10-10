@@ -15,10 +15,10 @@ interpretation of significant data elements. It encompasses the fundamental cons
 and data that define the basis of the Web architecture, and thus the essence of its behavior as a network-based
 application.
 
-**JSON API** is a specification for how a client should request that resources be fetched or modified, and how a server
-should respond to those requests. It is designed to minimize both the number of requests and the amount of data
-transmitted between clients and servers. This efficiency is achieved without compromising readability, flexibility or
-discoverability.
+**JSON API** is a `specification <http://jsonapi.org/format/>`__ for how a client should request that resources be
+fetched or modified, and how a server should respond to those requests. It is designed to minimize both the number of
+requests and the amount of data transmitted between clients and servers. This efficiency is achieved without
+compromising readability, flexibility or discoverability.
 
 So, here and below under the ``API`` terminology we will mean the ``REST JSON API`` that provides programmatic access
 to read and write data. Request and response body should use JSON format.
@@ -90,7 +90,7 @@ The ``Request URL`` block will contain request URL that was sent to server.
 
 The ``Response Headers`` block will contain the status code of servers response. In case if request was successful,
 it should contain **200 OK** string.
-To see tht list of headers that server sent during the responce, click on ``Expand`` link of this link.
+To see the list of headers that server sent during the responce, click on ``Expand`` link of this link.
 
 If request was successful, at the ``Response Body`` block you should see the output data of the request. At the given
 case, it will be the entity data in JSON format. More info about this format you can
@@ -181,38 +181,69 @@ number of other verbs, too, but are utilized less frequently.
 
 Below is a table summarizing return values of the primary HTTP methods in combination with the resource URIs:
 
-+-------------+----------------+-----------------------------------------+---------------------------------------------+
-| HTTP Verb   | CRUD           | Entire Collection (e.g. /users)         |         Specific Item (e.g. /users/{id})    |
-+=============+================+=========================================+=============================================+
-| GET         | Read           | 200 (OK), list of entities.             | 200 (OK), single entity.                    |
-|             |                | Use pagination, sorting and filtering   | 404 (Not Found), if ID not found or invalid.|
-|             |                | to navigate big lists.                  |                                             |
-+-------------+----------------+-----------------------------------------+---------------------------------------------+
-| POST        | Create         | 201 (Created), Response contains        | **not applicable**                          |
-|             |                | response similar to **GET** /user/{id}  |                                             |
-|             |                | containing new ID.                      |                                             |
-+-------------+----------------+-----------------------------------------+---------------------------------------------+
-| PATCH       | Update         | **not applicable**                      | 200 (OK) or 204 (No Content).               |
-|             |                |                                         | 404 (Not Found), if ID not found or invalid.|
-+-------------+----------------+-----------------------------------------+---------------------------------------------+
-| DELETE      | Delete         | 200(OK) or 403(Forbidden) or            | 200 (OK). 404 (Not Found),                  |
-|             |                | 400(Bad Request) if no filter           | if ID not found or invalid.                 |
-|             |                | is specified                            |                                             |
-+-------------+----------------+-----------------------------------------+---------------------------------------------+
-| PUT         | Update/Replace | **not implemented**                     | **not implemented**                         |
-+-------------+----------------+-----------------------------------------+---------------------------------------------+
++-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
+| HTTP Verb   | CRUD operation | API action             | Entire Collection (e.g. /users)        |         Specific Item (e.g. /users/{id})    |
++=============+================+========================+========================================+=============================================+
+| GET         | Read           | 'get', 'get_list',     | 200 (OK), list of entities.            | 200 (OK), single entity.                    |
+|             |                | 'get_subresource',     | Use pagination, sorting and filtering  | 404 (Not Found), if ID not found or invalid.|
+|             |                | 'get_relationship'     | to navigate big lists.                 |                                             |
++-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
+| POST        | Create         | 'create'               | 201 (Created), Response contains       | **not applicable**                          |
+|             |                |                        | response similar to **GET** /user/{id} |                                             |
+|             |                |                        | containing new ID.                     |                                             |
++-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
+| PATCH       | Update         | 'update',              | **not applicable**                     | 200 (OK) or 204 (No Content).               |
+|             |                | 'update_relationship', |                                        | 404 (Not Found), if ID not found or invalid.|
+|             |                | 'add_relationship'     |                                        |                                             |
++-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
+| DELETE      | Delete         | 'delete',              | 200(OK) or 403(Forbidden) or           | 200 (OK). 404 (Not Found),                  |
+|             |                | 'delete_list',         | 400(Bad Request) if no filter          | if ID not found or invalid.                 |
+|             |                | 'delete_relationship'  | is specified                           |                                             |
++-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
+| PUT         | Update/Replace | **not implemented**    | **not implemented**                    | **not implemented**                         |
++-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 
-GET / GET\_LIST
----------------
+Also the HTTP methods may be classified by **idempotent** and **safe** property.
+**Safe** methods are HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL,
+should NEVER change the resource.
+An **idempotent** HTTP method is a HTTP method that can be called many times without different outcomes. It would not
+matter if the method is called only once, or ten times over. The result should be the same.
+For more details, please refer to `RFC 7231: Common Method Properties <https://tools.ietf.org/html/rfc7231#section-4.2>`__.
+
+Below is a table summarizing HTTP methods by its **idempotency** and **safety**:
+
++-------------+------------+------+
+| HTTP Method | Idempotent | Safe |
++=============+============+======+
+| OPTIONS     | yes        | yes  |
++-------------+------------+------+
+| GET         | yes        | yes  |
++-------------+------------+------+
+| HEAD        | yes        | yes  |
++-------------+------------+------+
+| PUT         | yes        | no   |
++-------------+------------+------+
+| POST        | no         | no   |
++-------------+------------+------+
+| DELETE      | yes        | no   |
++-------------+------------+------+
+| PATCH       | no         | no   |
++-------------+------------+------+
+
+GET
+---
 
 The HTTP GET method is used to **read** (or retrieve) a representation of a resource. In the “success” (or non-error)
 path, GET returns a representation in JSON and an HTTP response code of 200 (OK). In an error case, it most often
-returns a 404 (NOT FOUND) or 400 (BAD REQUEST). According to the design of the HTTP specification, GET requests are
-used only to read data and not change it. So, they are considered safe. That is, they can be called without risk of
-data modification or corruption—calling it once has the same effect as calling it 10 times, or none at all.
+returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
 
-POST (CREATE)
--------------
+.. hint::
+    According to the design of the HTTP specification, GET requests are used only to read data and not change it.
+    So, they are considered safe. That is, they can be called without risk of data modification or corruption —
+    calling it once has the same effect as calling it 10 times.
+
+POST
+----
 
 The POST verb is most-often utilized to **create** new resources. In particular, it's used to create subordinate
 resources. That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource,
@@ -221,11 +252,13 @@ ID (new resource URI), etc.
 
 On successful creation, return HTTP status 201.
 
-POST is not safe. Making two identical POST requests will most-likely result in two resources containing the same
-information.
+.. hint::
 
-PATCH (UPDATE)
---------------
+    POST is not safe operation. Making two identical POST requests will most-likely result in two resources containing
+    the same information but with different identifiers.
+
+PATCH
+-----
 
 PATCH is used for **modify** capabilities. The PATCH request only needs to contain the changes to the resource,
 not the complete resource.
@@ -233,20 +266,24 @@ not the complete resource.
 In other words, the body should contain a set of instructions describing how a resource currently residing on the
 server should be modified to produce a new version.
 
-PATCH is not safe. Collisions from multiple PATCH requests may be dangerous because some patch formats need to operate
-from a known base-point or else they will corrupt the resource. Clients using this kind of patch application should use
-a conditional request such that the request will fail if the resource has been updated since the client last accessed
-the resource.
+.. hint::
 
-DELETE / DELETE\_LIST
----------------------
+    PATCH is not safe operation. Collisions from multiple PATCH requests may be dangerous because some patch formats
+    need to operate from a known base-point or else they will corrupt the resource. Clients using this kind of patch
+    application should use a conditional request (e.g. GET resource, ensure it was not modified and apply PATCH) such
+    that the request will fail if the resource has been updated since the client last accessed the resource.
+
+DELETE
+------
 
 DELETE is pretty easy to understand. It is used to **delete** a resource identified by a filters or *Id*.
 
 On successful deletion, returns HTTP status 204 (No Content) with no response body.
 
-If you DELETE a resource, it's removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND)
-since it was already removed and therefore is no longer findable.
+.. hint::
+
+    If you DELETE a resource, it's removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND)
+    since it was already removed and therefore is no longer findable.
 
 HTTP Headers
 ============
