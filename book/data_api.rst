@@ -4,121 +4,120 @@ Web Services API
 Overview
 ========
 
-An application programming interface (**API**) is a software interface which is designed for use by other software.
-Whereas a normal software program is used by a (human) computer-user, an API is a software program which is used by
+An application programming interface (**API**) is a software interface which is designed to be used by other software.
+Whilst an ordinary software program is used by a (human) computer user, an API is a software program used by
 another software program.
 
 The Representational State Transfer (**REST**) architectural style is an abstraction of the architectural elements
 within a distributed hypermedia system. REST ignores the details of component implementation and protocol syntax in
-order to focus on the roles of components, the constraints upon their interaction with other components, and their
-interpretation of significant data elements. It encompasses the fundamental constraints upon components, connectors,
+order to focus on the roles of the components, the constraints on their interaction with other components, and their
+interpretation of significant data elements. It encompasses the fundamental constraints on components, connectors,
 and data that define the basis of the Web architecture, and thus the essence of its behavior as a network-based
 application.
 
-**JSON API** is a `specification <http://jsonapi.org/format/>`__ for how a client should request that resources be
-fetched or modified, and how a server should respond to those requests. It is designed to minimize both the number of
-requests and the amount of data transmitted between clients and servers. This efficiency is achieved without
-compromising readability, flexibility or discoverability.
+**JSON API** is a `specification <http://jsonapi.org/format/>`__  for how a client should request those resources to
+be fetched or modified, and how a server should respond to them. It is designed to minimize both the number of requests
+and the amount of data transmitted between the clients and the servers. This efficiency is achieved without compromising
+on readability, flexibility or discoverability.
 
-So, here and below under the ``API`` terminology we will mean the ``REST JSON API`` that provides programmatic access
+Therefore, here and below the term ``API`` will refer to the ``REST JSON API`` that gives programmatic access
 to read and write data. Request and response body should use JSON format.
 
 Quick Start
 ===========
 
-To start using API user should do a few preparation steps:
+To start using the API, a user should take a few preliminary steps:
 
--  Be sure that application installed correctly;
--  Generate API Token for user. To do that, go to ``Profile page`` of your user, the link ``My User`` is available in
-   dropdown menu at top right or by direct link (e.g. http://localhost.com/user/profile/view) or for instance, if you
-   want to generate ``API Key`` for any other user in the system - open ``Users grid`` (System->User Management->Users),
-   find the user who need an API key and open its view page by clicking on grid row or ``View`` action from dots menu.
-   At last, just click the ``Generate Key`` button, after that you'll see the generated key near the button and it will
-   looks like ``f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2``.
+-  Ensure that the application is installed correctly;
+-  Generate API Token for the user. To do that, navigate to the ``Profile page`` of your user. ``My User`` link is available in the
+   dropdown menu in the top right corner or via a direct link (e.g. http://localhost.com/user/profile/view). In case you
+   want to generate ``API Key`` for any other user in the system, open ``Users grid`` (System->User Management->Users),
+   find the user who needs an API key and open its view page by clicking on the grid row or ``View`` from the ellipsis menu.
+   Finally, simply click on the ``Generate Key`` button. You'll see the generated key near the button looking like:    ``f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2``.
 
 .. hint::
 
-    Please note, the ``API key`` will be generated in scope of current ``Organization`` and will allows access data
-    is scope of that organization only. For more information about ``Organization`` purposes see `Company Structure and
+    Please note, the ``API key`` will be generated in the scope of the current ``Organization`` and will allow to access data
+    in the scope of that particular organization only. For more information about ``Organization`` purposes, see `Company Structure and
     Organization </user-guide/intro-company-structure-org-selector>`__.
-    Also to understand the permissions and security model refer to `Security </book/security>`__.
+    Also, to understand the permissions and security model, refer to `Security </book/security>`__.
 
-After that, it will be possible to execute the API requests with sandbox, Curl command, any other REST client or use
-API with own application.
+Afterwards, it will be possible to execute API requests with sandbox, Curl command, any other REST client or use
+API with your own application.
 
 API sandbox
 -----------
 
-API sandbox page allow to perform API requests directly from the Oro application instance.
+API sandbox page allows to perform API requests directly from the Oro application instance.
 
 How to use the sandbox.
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The sandbox page available by http://localhost.com/api/doc/ url.
+The sandbox page is available here: http://localhost.com/api/doc/
 
-By default, this page represent the list of plain API resources. The plain means the old API implementation that is
+By default, this page represents a list of plain API resources. Plain API resources are old API implementations
 based on `FOSRestBundle <http://symfony.com/doc/current/bundles/FOSRestBundle/index.html>`__.
 
-To switch to JSON API sandbox go to the http://localhost.com/api/doc/rest\_json\_api page, or click on ``JSON.API``
-link at the top of page.
+To switch to JSON API sandbox, go to the http://localhost.com/api/doc/rest\_json\_api page, or click on ``JSON.API``
+link at the top of the page.
 
-By default, the collapsed list of available resources will be listed.
+By default, a collapsible list of available resources will be listed.
 
 Each resource block contains a set of available actions for that resource grouped by request link.
 
-By clicking on certain action, the documentation and ``Sandbox`` tabs will be shown.
+By clicking on certain action, documentation and ``Sandbox`` tabs will be displayed.
 
-The sandbox tab contains form for this action which can be used to perform API queries.
+The sandbox tab contains a form for this action and can be used to perform API queries.
 
-Retrieving a single record for particular resource with JSON API.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Retrieving a single record for a particular resource with JSON API.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To perform the GET action for any entity(resource), find this API resource at
+To perform the GET action for any entity(resource), find this API resource on
 http://localhost.com/api/doc/rest\_json\_api page and open the actions block.
 
-After that, click on ``GET`` action for the ``/api/your_resource/{id}`` route.
+Next, click on ``GET`` for the ``/api/your_resource/{id}`` route.
 
-By clicking on ``Sanbox`` link, the request form will be opened.
-As you want to get one record, you should specify the record id at the ``id`` field.
+Clicking the ``Sanbox`` link will prompt a request form to open.
+If you want to get one record, you should specify the record id in the ``id`` field.
 
-After that, click on ``Try!`` button to send the request to server.
+Click on ``Try!`` button to send the request to theserver.
 
 After the response, you should see the ``Request URL``, ``Response Headers``, ``Response Body``
 and ``Curl Command Line`` blocks.
 
-The ``Request URL`` block will contain request URL that was sent to server.
+The ``Request URL`` block will contain the request URL sent to server.
 
-The ``Response Headers`` block will contain the status code of servers response. In case if request was successful,
+The ``Response Headers`` block will contain the status code of the server's response. In case of successful request,
 it should contain **200 OK** string.
-To see the list of headers that server sent during the responce, click on ``Expand`` link of this link.
+To see the list of headers which the server sent during the response, click ``Expand`` .
 
-If request was successful, at the ``Response Body`` block you should see the output data of the request. At the given
-case, it will be the entity data in JSON format. More info about this format you can
-find `here <http://jsonapi.org/format/>`__.
+If request was successful, you should see the output data of the request in the ``Response Body`` block. In the given
+case, entity data will be in JSON format. More information about this format can
+be found `here <http://jsonapi.org/format/>`__.
 
-The ``Curl Command Line`` block will contain example of the CLI command to perform request
+The ``Curl Command Line`` block will contain an example of the CLI command to perform the request
 with `Curl <https://curl.haxx.se/>`__.
-This command may help  to emulate the real request to the API.
+This command may help to emulate the real request to the API.
 
 .. hint::
 
-    During the Curl request, please make sure your ``X-WSSE`` headers is up to date for every request.
+    During Curl request, please make sure your ``X-WSSE`` header is up to date for every request.
 
-Performing update for particular resource with JSON API.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Performing an update for a particular resource with JSON API.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To test update process for particular resource, find this API resource at http://localhost.com/api/doc/rest\_json\_api
-page and open the actions block for this resource.
+To test the update process for a particular resource, go to this API resource at http://localhost.com/api/doc/rest\_json\_api
+page and open its actions block.
 
-After that, click on ``PATCH`` action for the ``/api/your_resource/{id}`` route. And after that to the sanbox link.
+Afterwards, click ``PATCH`` for the ``/api/your_resource/{id}`` route. And after that to the sanbox link.
 
-At ``id`` field ofo sandbox you should specify the entity id you want to edit.
+In ``id`` field of sandbox you should specify the entity id you want to edit.
 
-The ``Content`` text area contain a set of instructions describing how a resource currently residing on the server
+The ``Content`` text area contains a set of instructions describing how a resource currently residing on the server
 should be modified to produce a new version.
 
-For example, if you want to change the ``firstName`` field to 'John' value for User entity with id 1, the request
-content will looks like:
+For example, if you want to change the ``firstName`` field to 'John' value for a User entity with id 1, the request
+content will look the following way:
 
 .. code-block:: json
 
@@ -132,16 +131,16 @@ content will looks like:
       }
     }
 
-After pushing the ``Try!`` button, if you have ``EDIT`` permission to the record, you will see the updated data at
-``Response Body`` block.
+Provided you have ``EDIT`` permission to the record, you will see the updated data in the
+``Response Body`` block after pushing the ``Try!`` button.
 
 Authentication
 ==============
 
 A RESTful API should be stateless. This means that request authentication should not depend on cookies or sessions.
-Instead, each request should come with some sort authentication credentials.
+Instead, each request should come with some authentication credentials.
 
-For authentication purposes the **WSSE** mechanism is used - a family of open security specifications for web services,
+For authentication purposes, **WSSE** mechanism is used - a family of open security specifications for web services,
 specifically SOAP web services. The basic premise of WSSE is that a request header is checked for encrypted credentials,
 verified using a timestamp and nonce, and authenticated for the requested user using a password digest.
 
@@ -149,7 +148,7 @@ It’s based on the `EscapeWSSEAuthenticationBundle <https://github.com/escapest
 that covers most cases from the
 WSSE `specification <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>`__.
 
-Here's an example of request header with WSSE authentication, please pay attention on ``Authentication`` and ``X-WSSE``
+Here's an example of a request header with WSSE authentication, please pay attention to ``Authentication`` and ``X-WSSE``
 parameters:
 
 ::
@@ -168,8 +167,8 @@ parameters:
             Created="2016-09-20T10:00:00+03:00",
             Nonce="elRZL0lVOTl2T3lXeVBmUHRCL2ZrUnJoWUNZPQ=="
 
-For more details about how to generate ``API Key``, ``header``, etc. please, take a look into `"The Oro Cookbook" -
-How to use WSSE authentication </cookbook/how-to-use-wsse-authentication>`__
+For more details about generating ``API Key``, ``header``, etc. please, take a look in
+`"The Oro Cookbook" - How to use WSSE authentication </cookbook/how-to-use-wsse-authentication>`__
 
 HTTP Verbs
 ==========
@@ -177,7 +176,7 @@ HTTP Verbs
 The HTTP verbs comprise a major portion of “uniform interface” and provide the action counterpart to the noun-based
 resource. The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) are POST, GET, PUT,
 PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a
-number of other verbs, too, but are utilized less frequently.
+number of other verbs, too, but they are utilized less frequently.
 
 Below is a table summarizing return values of the primary HTTP methods in combination with the resource URIs:
 
@@ -276,9 +275,9 @@ server should be modified to produce a new version.
 DELETE
 ------
 
-DELETE is pretty easy to understand. It is used to **delete** a resource identified by a filters or *Id*.
+DELETE is quite easy to understand. It is used to **delete** a resource identified by filters or *Id*.
 
-On successful deletion, returns HTTP status 204 (No Content) with no response body.
+On successful deletion,  HTTP status 204 (No Content) returns with no response body.
 
 .. hint::
 
@@ -288,7 +287,7 @@ On successful deletion, returns HTTP status 204 (No Content) with no response bo
 HTTP Headers
 ============
 
-As already mentioned above, to successfully perform API request it is important to provide correct ``Content-Type``
+As already mentioned above, to successfully perform API request, it is important to provide correct ``Content-Type``
 and ``Authentication``, e.g.
 
 ::
@@ -297,9 +296,9 @@ and ``Authentication``, e.g.
     Authorization: WSSE profile="UsernameToken"
     X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
 
-Also, by providing additional requests header parameters it is possible to retrieve additional information like total
-number of records per certain resource while ``GET_LIST`` request or total number of affected records while
-``DELETE_LIST`` request. For such purposes the ``X-Include``\ request header can be used.
+Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as the total
+number of records per certain resource with ``GET_LIST`` request or total number of affected records with
+``DELETE_LIST`` request. The ``X-Include``\ request header can be used for such purposes.
 
 The following table describes all existing keys for X-Include header.
 
@@ -354,7 +353,7 @@ Header examples:
     ....
     X-Include: deletedCount
 
-**Request query string contains e.g. filter that specify conditions for deletion operation (will be described below)**:
+**Request query string contains e.g. filter that specifies conditions for deletion operation (will be described below)**:
 
 ::
 
@@ -382,7 +381,7 @@ Header examples:
 Response status codes and errors
 ================================
 
-In case of success request the response Status Code could be:
+In case of success request, the response Status Code could be the following:
 
 -  ``200 OK`` - Response to a successful GET, PATCH or DELETE.
 -  ``201 Created`` - Response to a POST that results in a creation. Will
@@ -406,8 +405,8 @@ For example:
        Status Code: 200 OK
        Remote Address: 127.0.0.1:80
 
-In case of error the Status Code in response will indicate the type of
-an error that occurred, the most frequent of them:
+In case of an error, the Status Code  will in response indicate the type of
+the error occurred, the most frequent of them are the following:
 
 -  ``400 Bad Request`` - The request is malformed, such as if the body of the request contains misformatted JSON.
 -  ``401 Unauthorized`` - When no or invalid authentication details are provided. Also can be useful to trigger an
@@ -434,8 +433,8 @@ For example:
        Status Code: 404 Not Found
        Remote Address: 127.0.0.1:80
 
-Just like an HTML error page shows a useful error message to a visitor, an API will provide a useful error message in
-a known consumable format. The representation of an error looks the same as the representation of any resource, just
+Similar to an HTML error page showing a useful error message to a visitor, an API displayes a useful error message in
+a known consumable format. Representation of an error looks the same as the representation of any resource, only
 with its own set of fields.
 
 .. code-block:: json
@@ -453,8 +452,7 @@ with its own set of fields.
 Schema
 ======
 
-All API access is over HTTP(S), it depends on server configuration.
-And accessed from the **http(s)://localhost.com/api/[resource\_name]** All data is sent and received as JSON.
+All API access is over HTTP(S), it depends on server configuration and is accessed from the **http(s)://localhost.com/api/[resource\_name]** All data is sent and received as JSON.
 
 **Typical request** can be performed via ``curl`` or via UI (sandbox):
 
@@ -468,7 +466,7 @@ And accessed from the **http(s)://localhost.com/api/[resource\_name]** All data 
              Nonce='N2hlMDc3TGcrVU53bGprNlQ0YXliLy9PSEFNPQ=='"
     http://localhost.com/api/users/1
 
-Please note, to simplify request examples representation in document, the short format will be used, e.g.:
+Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
 
 ::
 
@@ -517,7 +515,7 @@ Please note, to simplify request examples representation in document, the short 
 
 Blank fields are included as ``null`` instead of being omitted.
 
-Attributes or subresources that is restricted are included as ``null`` as well.
+Attributes or subresources that are restricted are included as ``null`` as well.
 
 All timestamps are returned in ISO 8601 format: ``YYYY-MM-DDTHH:MM:SSZ``
 
@@ -549,14 +547,14 @@ Most common resource(s) fields
 Typical contacting activities fields
 ------------------------------------
 
-The terminology "contacting activity" describes regular activity, but such activity can represent some sort of
-communication process and can have direction (incoming or outgoing).
-For example: "Call" and "Email", each of them can act from client or from manager, so if client send email or call to
-manager - it will be incoming activity, and if manager send email or call to client - it will be outgoing activity.
+The term "contacting activity" describes regular activity, but such activity can represent some sort of
+communication process and can have a direction (incoming or outgoing).
+For example: "Call" and "Email", each of them can act from client or manager. Therefore, if a client calls or sends an email to his
+manager, it will be incoming activity. In case a manager calls the client or sends an email, it will be outgoing activity.
 This data may help to build forecast reports based on contacting activities.
 
-And the table below describes fields that will be available for resources that supports such contacting activities
-like "Call", "Email", etc.
+The table below describes fields that will be available for resources that support such contacting activities
+as "Call", "Email", etc.
 
 +------------------------+------------+--------------------------------------------------------------------------------+
 | Name                   | Type       | Description                                                                    |
@@ -567,29 +565,29 @@ like "Call", "Email", etc.
 +------------------------+------------+--------------------------------------------------------------------------------+
 | lastContactedDateOut   | datetime   | The data and time of the last outgoing contact activity for the resource record|
 +------------------------+------------+--------------------------------------------------------------------------------+
-| timesContacted         | integer    | Total number of contact activities for resource record                         |
+| timesContacted         | integer    | Total number of contact activities for the resource record                     |
 +------------------------+------------+--------------------------------------------------------------------------------+
-| timesContactedIn       | integer    | Total number of incoming contact activities for resource record                |
+| timesContactedIn       | integer    | Total number of incoming contact activities for the resource record            |
 +------------------------+------------+--------------------------------------------------------------------------------+
-| timesContactedOut      | integer    | Total number of outgoing contact activities for resource record                |
+| timesContactedOut      | integer    | Total number of outgoing contact activities for the resource record            |
 +------------------------+------------+--------------------------------------------------------------------------------+
 
 FILTERS
 =======
 
-When searching for a list of API resource, some fields can be used for filtering. Those filters are listed in the API
+When searching for a list of an API resource, some fields can be used for filtering. Those filters are listed in the API
 reference, under the filters section of every resource. To filter, perform a GET request and put your filters as
 parameters of the ``Query String``.
 
-For instance, the following request will list all ``users`` resource for the organization ``1``.
+For instance, the following request will list all ``users`` resource for organization ``1``.
 
 ::
 
     GET /api/users?filter[organization]=1 HTTP/1.1
 
-Just like a field, a filter declares a data type and only takes specific values in input.
+Similar to a field, a filter declares a data type and only takes specific values in input.
 
-In case of ``string`` value will be passed as value for ``integer`` type filter, the error will occur, e.g.:
+In case ``string`` value passes as value for ``integer`` type filter, an error will occur, e.g.:
 
 ::
 
@@ -618,12 +616,12 @@ In case of unknown, mistyped or unsupported filter, e.g.:
 
 
 
-The API allows to use several types of filters. The filter types is briefly described in the table below.
+The API allows to use several types of filters. Filter types are briefly described in the table below.
 
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | Filter Type | Usage Example                | Description                                                             |
 +=============+==============================+=========================================================================+
-| fields      | fields[owner]=id,name        | Used for limiting the response data to only specified fields.           |
+| fields      | fields[owner]=id,name        | Used for limiting the response data only to specified fields.           |
 |             |                              | Depends on ``include`` filter in case if filter is applied to relation. |
 +-------------+------------------------------+-------------------------------------------------------------------------+
 | filter      | 'filter[id]=1'               | Used for filtering the response data by specific values of specific     |
@@ -646,12 +644,12 @@ The API allows to use several types of filters. The filter types is briefly desc
 ``Fields`` filters
 ------------------
 
-All objects are composed of fields. They all have an identifier id (unique in the given class of objects) plus some
+All objects are composed of fields. They all have an identifier id (unique in the given class of objects), plus some
 other fields defined in the Data API Reference. Some fields are publicly readable, some other are not and need the user
 to have extended permissions to be granted.
 
 To request more specific fields, use the ``fields`` filter parameter with the list of fields you need in the response.
-We are urging you to always use fields to only request the fields you will use in your application.
+We are urging you always to  use fields to  request only the fields you will use in your application.
 
 For instance, to select the ``username`` and the ``email`` fields of the ``users`` resource, perform a GET request:
 
@@ -689,10 +687,10 @@ For instance, to select the ``username`` and the ``email`` fields of the ``users
 Data filters (``filter``)
 -------------------------
 
-Depending on the type of the ``filter`` certain operators will be allowed. For example, for ``integer`` filter types it
+Depending on the type of the ``filter``, certain operators will be allowed. For example, for ``integer`` filter types it
 is allowed to use six types - **=**, **!=**, **<**, **<=**, **>**, **>=**, for ``string`` filter type - only **=**,
-**!=**. The more details about certain resource and its available filters can be retrieved from ``API sandbox`` page in
-``Documentation`` section for certain action.
+**!=**. More details about certain resource and its available filters can be retrieved from ``API sandbox`` page in
+``Documentation`` section for a certain action.
 
 +----------+-----------------------+-------------+---------------------------------------------------------------------+
 | Operator | Description           | URL Encoded | Request Example                                                     |
@@ -749,14 +747,14 @@ Response data example:
 ------------------
 
 As mentioned above, the ``include`` filter allows to extend the response data with the information of related resource.
-It is usually used to reduce the number of requests to the server or in other words to retrieve all necessary data
-in single request.
+It is usually used to reduce the number of requests to the server or, in other words, to retrieve all necessary data
+in a single request.
 All included resources will be represented in ``included`` section of the response.
 
 .. hint::
 
-    Please note, in case of using ``fields`` filter for main resource (``users`` in our case), it must contain
-    the field(s) used in ``include`` filter.
+    Please note, in case of using ``fields`` filter for the main resource (``users`` in our case), it must contain
+    the field(s) used in the ``include`` filter.
 
 **Request example (inclusion of ``roles`` relation with ``fields`` filter)**:
 
@@ -811,7 +809,7 @@ All included resources will be represented in ``included`` section of the respon
       ]
     }
 
-Also, it is possible to limit fields that will be returned from relation. For such purposes the ``fields`` filter
+Also, it is possible to limit fields that will be returned from the relation. For such purposes, the ``fields`` filter
 should be used.
 
 ::
@@ -859,8 +857,8 @@ should be used.
 ``Page`` filters (pagination)
 -----------------------------
 
-By default the page size is limited to 10 records and the page number is 1. But it is possible to easily ask server to
-change the page size or page number to get the certain number of results which will fit your needs. The pagination
+By default, the page size is limited to 10 records and the page number is 1. However, it is possible to ask the server to
+change the page size or page number to get the certain number of results which will fit your needs. Pagination
 parameters should be passed as ``Query String Parameters``.
 
 +------------------+-----------+-----------------+--------------------------------------------------------------------+
@@ -874,7 +872,7 @@ parameters should be passed as ``Query String Parameters``.
 +------------------+-----------+-----------------+--------------------------------------------------------------------+
 
 
-For instance, to get 2nd page of ``users`` resource with 20 records per page, perform the request:
+For instance, to get 2nd page of ``users`` resource with 20 records per page, perform the following request:
 
 ::
 
@@ -889,7 +887,7 @@ For instance, to get 2nd page of ``users`` resource with 20 records per page, pe
 ----------------
 
 When the response to your call is a list of objects, you can also sort the list by using the sort filter with any of
-the available values listed in the API reference.
+available values listed in the API reference.
 
 Request example (sorting by ``username`` in descending order):
 
@@ -930,14 +928,14 @@ Response data example:
 Data API Client Requirements
 ============================
 
-The only requirement for client that will send API requests to server is it **must** contain valid ``Content-Type``
+The only requirement for the client that will send API requests to the server is that it **must** contain valid ``Content-Type``
 in header without any media type parameters.
 
 ::
 
     Content-Type: application/vnd.api+json
 
-In the same time it **must** ignore any media type received in the ``Content-Type`` header of response.
+At the same time, it **must** ignore any media type received in the ``Content-Type`` header in response.
 
 Here's an example:
 
@@ -962,7 +960,7 @@ Here's an example:
       }
     ]}
 
-Requests with not valid ``Content-Type`` value in header will be perceived as ``plain`` request, so the response data
+Requests with invalid ``Content-Type`` value in header will be perceived as ``plain`` request, so the response data
 will have different (plain) format.
 
 Here's an example:
