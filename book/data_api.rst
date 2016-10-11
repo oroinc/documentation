@@ -405,6 +405,7 @@ For example:
    .. code-block:: http
 
        HTTP/1.1 200 OK
+
        Request URL: http://localhost.com/api/users/1
        Request Method: GET
        Status Code: 200 OK
@@ -434,6 +435,7 @@ For example:
    .. code-block:: http
 
        HTTP/1.1 404 Not Found
+
        Request URL: http://localhost.com/api/users/1
        Request Method: GET
        Status Code: 404 Not Found
@@ -579,7 +581,7 @@ as "Call", "Email", etc.
 +------------------------+------------+--------------------------------------------------------------------------------+
 
 
-FILTERS
+Filters
 =======
 
 When searching for a list of an API resource, some fields can be used for filtering. Those filters are listed in the API
@@ -647,8 +649,8 @@ The API allows to use several types of filters. Filter types are briefly describ
 +-------------+------------------------------+-------------------------------------------------------------------------+
 
 
-``Fields`` filters
-------------------
+Fields filters (``fields``)
+---------------------------
 
 All objects are composed of fields. They all have an identifier id (unique in the given class of objects), plus some
 other fields defined in the Data API Reference. Some fields are publicly readable, some other are not and need the user
@@ -752,8 +754,8 @@ Response data example:
     }
 
 
-``Include`` filter
-------------------
+Include filter (``include``)
+----------------------------
 
 As mentioned above, the ``include`` filter allows to extend the response data with the information of related resource.
 It is usually used to reduce the number of requests to the server or, in other words, to retrieve all necessary data
@@ -864,7 +866,7 @@ should be used.
     }
 
 
-``Page`` filters (pagination)
+Pagination filters (``page``)
 -----------------------------
 
 By default, the page size is limited to 10 records and the page number is 1. However, it is possible to ask the server to
@@ -893,8 +895,8 @@ For instance, to get 2nd page of ``users`` resource with 20 records per page, pe
     ...
 
 
-``Sort`` filters
-----------------
+Sorting filters (``sort``)
+--------------------------
 
 When the response to your call is a list of objects, you can also sort the list by using the sort filter with any of
 available values listed in the API reference.
@@ -955,7 +957,7 @@ Here's an example:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Content-Type: application/vnd.api+json
-    ...
+
 
 .. code-block:: json
 
@@ -965,10 +967,8 @@ Here's an example:
         "id": "1",
         "attributes": {
           "name": "Life Plan Counselling",
-          ...
         },
         "relationships": {
-          ...
         }
       }
     ]}
@@ -983,7 +983,7 @@ Here's an example:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Content-Type: application/json
-    ...
+
 
 .. code-block:: json
 
@@ -991,11 +991,9 @@ Here's an example:
       {
         "id": 1,
         "name": "Life Plan Counselling",
-        ...
         "contacts": [
           1
         ]
       },
-      ...
     ]
 
