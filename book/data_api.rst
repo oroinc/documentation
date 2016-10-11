@@ -167,8 +167,8 @@ parameters:
             Created="2016-09-20T10:00:00+03:00",
             Nonce="elRZL0lVOTl2T3lXeVBmUHRCL2ZrUnJoWUNZPQ=="
 
-For more details about generating ``API Key``, ``header``, etc. please, take a look in `"The Oro Cookbook" -
-How to use WSSE authentica
+For more details about generating ``API Key``, ``header``, etc. please, take a look in
+`"The Oro Cookbook" - How to use WSSE authentication </cookbook/how-to-use-wsse-authentication>`__
 
 HTTP Verbs
 ==========
