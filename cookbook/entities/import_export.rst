@@ -146,7 +146,7 @@ do so:
             exportTitle: 'Export',
             importProcessor: 'app_task',
             importTitle: 'Import',
-            dataGridName: gridName
+            datagridName: gridName
         } %}
 
         {# ... #}
