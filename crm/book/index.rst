@@ -69,7 +69,6 @@ and technical details.
 TODO List
 ---------
 
-* Web Services API
 * User Interface
     * Themes
     * Layout Structure and Placeholders
