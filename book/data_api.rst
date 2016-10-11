@@ -151,7 +151,7 @@ WSSE `specification <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soa
 Here's an example of a request header with WSSE authentication, please pay attention to ``Authentication`` and ``X-WSSE``
 parameters:
 
-::
+.. code-block:: http
 
     GET /api/users HTTP/1.1
     Host: localhost.com
@@ -202,6 +202,7 @@ Below is a table summarizing return values of the primary HTTP methods in combin
 | PUT         | Update/Replace | **not implemented**    | **not implemented**                    | **not implemented**                         |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 
+
 Also the HTTP methods may be classified by **idempotent** and **safe** property.
 **Safe** methods are HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL,
 should NEVER change the resource.
@@ -228,6 +229,7 @@ Below is a table summarizing HTTP methods by its **idempotency** and **safety**:
 +-------------+------------+------+
 | PATCH       | no         | no   |
 +-------------+------------+------+
+
 
 GET
 ---
@@ -290,7 +292,7 @@ HTTP Headers
 As already mentioned above, to successfully perform API request, it is important to provide correct ``Content-Type``
 and ``Authentication``, e.g.
 
-::
+.. code-block:: http
 
     Content-Type: application/vnd.api+json
     Authorization: WSSE profile="UsernameToken"
@@ -316,7 +318,7 @@ Header examples:
 
 **Request total count of resource records**:
 
-::
+.. code-block:: http
 
     GET /api/users HTTP/1.1
 
@@ -328,7 +330,7 @@ Header examples:
 
 **Response**:
 
-::
+.. code-block:: http
 
     HTTP/1.1 200 OK
     Date: Fri, 23 Sep 2016 12:27:05 GMT
@@ -343,7 +345,7 @@ Header examples:
 
 **Request total number of deleted records of the resource**:
 
-::
+.. code-block:: http
 
     DELETE /api/users HTTP/1.1
 
@@ -355,7 +357,7 @@ Header examples:
 
 **Request query string contains e.g. filter that specifies conditions for deletion operation (will be described below)**:
 
-::
+.. code-block:: http
 
     DELETE /api/users?filter[id]=21,22 HTTP/1.1
 
@@ -365,7 +367,7 @@ Header examples:
 
 **Response**:
 
-::
+.. code-block:: http
 
     HTTP/1.1 204 No Content
     Date: Fri, 23 Sep 2016 12:38:47 GMT
@@ -377,6 +379,7 @@ Header examples:
     Keep-Alive: timeout=5, max=100
     Connection: Keep-Alive
     Content-Type: text/html
+
 
 Response status codes and errors
 ================================
@@ -392,13 +395,13 @@ For example:
 
 -  **request**
 
-   ::
+   .. code-block:: http
 
        GET /api/users/1 HTTP/1.1
 
 -  **response**
 
-   ::
+   .. code-block:: http
 
        Request URL: http://localhost.com/api/users/1
        Request Method: GET
@@ -420,13 +423,13 @@ For example:
 
 -  **request**
 
-   ::
+   .. code-block:: http
 
        GET /api/users/999 HTTP/1.1
 
 -  **response**
 
-   ::
+   .. code-block:: http
 
        Request URL: http://localhost.com/api/users/1
        Request Method: GET
@@ -449,6 +452,7 @@ with its own set of fields.
       ]
     }
 
+
 Schema
 ======
 
@@ -456,7 +460,7 @@ All API access is over HTTP(S), it depends on server configuration and is access
 
 **Typical request** can be performed via ``curl`` or via UI (sandbox):
 
-::
+.. code-block:: http
 
     curl -X "GET" -H "Content-Type: application/vnd.api+json"
          -H "Authorization: WSSE profile='UsernameToken'"
@@ -468,7 +472,7 @@ All API access is over HTTP(S), it depends on server configuration and is access
 
 Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
 
-::
+.. code-block:: http
 
     GET /api/users/1 HTTP/1.1
     Host: localhost.com
@@ -478,7 +482,7 @@ Please note that to simplify representation of request examples in the document,
 
 **Typical response header**:
 
-::
+.. code-block:: http
 
     HTTP/1.1 200 OK
     Server: Apache/2.4.18 (Unix) PHP/5.5.38
@@ -518,6 +522,7 @@ Blank fields are included as ``null`` instead of being omitted.
 Attributes or subresources that are restricted are included as ``null`` as well.
 
 All timestamps are returned in ISO 8601 format: ``YYYY-MM-DDTHH:MM:SSZ``
+
 
 Most common resource(s) fields
 ------------------------------
@@ -572,6 +577,7 @@ as "Call", "Email", etc.
 | timesContactedOut      | integer    | Total number of outgoing contact activities for the resource record            |
 +------------------------+------------+--------------------------------------------------------------------------------+
 
+
 FILTERS
 =======
 
@@ -581,7 +587,7 @@ parameters of the ``Query String``.
 
 For instance, the following request will list all ``users`` resource for organization ``1``.
 
-::
+.. code-block:: http
 
     GET /api/users?filter[organization]=1 HTTP/1.1
 
@@ -589,7 +595,7 @@ Similar to a field, a filter declares a data type and only takes specific values
 
 In case ``string`` value passes as value for ``integer`` type filter, an error will occur, e.g.:
 
-::
+.. code-block:: http
 
     GET /api/users?filter[id]=aaa HTTP/1.1
 
@@ -601,7 +607,7 @@ In case ``string`` value passes as value for ``integer`` type filter, an error w
 
 In case of unknown, mistyped or unsupported filter, e.g.:
 
-::
+.. code-block:: http
 
     GET /api/users?filter[unknown]=aaa HTTP/1.1
 
@@ -613,7 +619,6 @@ In case of unknown, mistyped or unsupported filter, e.g.:
         "parameter": "filter[unknown]"
       }
     }] }
-
 
 
 The API allows to use several types of filters. Filter types are briefly described in the table below.
@@ -653,7 +658,7 @@ We are urging you always to  use fields to  request only the fields you will use
 
 For instance, to select the ``username`` and the ``email`` fields of the ``users`` resource, perform a GET request:
 
-::
+.. code-block:: http
 
     GET api/users?fields[users]=username,email HTTP/1.1
 
@@ -684,6 +689,7 @@ For instance, to select the ``username`` and the ``email`` fields of the ``users
       ]
     }
 
+
 Data filters (``filter``)
 -------------------------
 
@@ -708,9 +714,10 @@ is allowed to use six types - **=**, **!=**, **<**, **<=**, **>**, **>=**, for `
 | **>=**   | Greater than or equal | %3E%3D      | GET /api/users?filter[id]>=6 HTTP/1.1                               |
 +----------+-----------------------+-------------+---------------------------------------------------------------------+
 
+
 Request example:
 
-::
+.. code-block:: http
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email HTTP/1.1
 
@@ -743,6 +750,7 @@ Response data example:
       ]
     }
 
+
 ``Include`` filter
 ------------------
 
@@ -758,7 +766,7 @@ All included resources will be represented in ``included`` section of the respon
 
 **Request example (inclusion of ``roles`` relation with ``fields`` filter)**:
 
-::
+.. code-block:: http
 
     GET api/users?fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
 
@@ -812,7 +820,7 @@ All included resources will be represented in ``included`` section of the respon
 Also, it is possible to limit fields that will be returned from the relation. For such purposes, the ``fields`` filter
 should be used.
 
-::
+.. code-block:: http
 
     GET api/users?fields[userroles]=label&fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
 
@@ -854,6 +862,7 @@ should be used.
       ]
     }
 
+
 ``Page`` filters (pagination)
 -----------------------------
 
@@ -874,7 +883,7 @@ parameters should be passed as ``Query String Parameters``.
 
 For instance, to get 2nd page of ``users`` resource with 20 records per page, perform the following request:
 
-::
+.. code-block:: http
 
     GET /api/users?page[number]=2&page[size]=20 HTTP/1.1
 
@@ -891,7 +900,7 @@ available values listed in the API reference.
 
 Request example (sorting by ``username`` in descending order):
 
-::
+.. code-block:: http
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email&sort=-username HTTP/1.1
 
@@ -931,7 +940,7 @@ Data API Client Requirements
 The only requirement for the client that will send API requests to the server is that it **must** contain valid ``Content-Type``
 in header without any media type parameters.
 
-::
+.. code-block:: http
 
     Content-Type: application/vnd.api+json
 
@@ -939,7 +948,7 @@ At the same time, it **must** ignore any media type received in the ``Content-Ty
 
 Here's an example:
 
-::
+.. code-block:: http
 
     GET /api/users HTTP/1.1
     Host: localhost.com
@@ -965,7 +974,7 @@ will have different (plain) format.
 
 Here's an example:
 
-::
+.. code-block:: http
 
     GET /api/users HTTP/1.1
     Host: localhost.com
