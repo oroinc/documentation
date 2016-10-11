@@ -70,7 +70,7 @@ By clicking on certain action, documentation and ``Sandbox`` tabs will be displa
 The sandbox tab contains a form for this action and can be used to perform API queries.
 
 Retrieving a single record for a particular resource with JSON API.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To perform the GET action for any entity(resource), find this API resource on
 http://localhost.com/api/doc/rest\_json\_api page and open the actions block.
