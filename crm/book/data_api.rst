@@ -104,7 +104,7 @@ This command may help to emulate the real request to the API.
     During Curl request, please make sure your ``X-WSSE`` header is up to date for every request.
 
 Performing an update for a particular resource with JSON API.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To test the update process for a particular resource, go to this API resource at http://localhost.com/api/doc/rest\_json\_api
 page and open its actions block.
