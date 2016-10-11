@@ -294,6 +294,7 @@ and ``Authentication``, e.g.
 
 .. code-block:: http
 
+    GET /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
     Authorization: WSSE profile="UsernameToken"
     X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
@@ -403,6 +404,7 @@ For example:
 
    .. code-block:: http
 
+       HTTP/1.1 200 OK
        Request URL: http://localhost.com/api/users/1
        Request Method: GET
        Status Code: 200 OK
@@ -431,6 +433,7 @@ For example:
 
    .. code-block:: http
 
+       HTTP/1.1 404 Not Found
        Request URL: http://localhost.com/api/users/1
        Request Method: GET
        Status Code: 404 Not Found
@@ -461,6 +464,8 @@ All API access is over HTTP(S), it depends on server configuration and is access
 **Typical request** can be performed via ``curl`` or via UI (sandbox):
 
 .. code-block:: http
+
+    GET /api/users/1 HTTP/1.1
 
     curl -X "GET" -H "Content-Type: application/vnd.api+json"
          -H "Authorization: WSSE profile='UsernameToken'"
@@ -502,18 +507,14 @@ Please note that to simplify representation of request examples in the document,
         "id": "1",
         "attributes": {
             "title": null,
-            ...
             "email": "admin@local.com",
             "firstName": "John",
             "enabled": true,
             "lastLogin": "2016-09-19T11:01:31Z",
-            ...
         },
         "relationships": {
-            ....
             "owner": { "data": { "type": "businessunits", "id": "1"} },
             "businessUnits": { "data": [ { "type": "businessunits", "id": "1" } ] },
-            ...
         }
     }}
 
@@ -942,6 +943,7 @@ in header without any media type parameters.
 
 .. code-block:: http
 
+    GET /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
 
 At the same time, it **must** ignore any media type received in the ``Content-Type`` header in response.
@@ -954,6 +956,8 @@ Here's an example:
     Host: localhost.com
     Content-Type: application/vnd.api+json
     ...
+
+.. code-block:: json
 
     {"data": [
       {
@@ -979,7 +983,9 @@ Here's an example:
     GET /api/users HTTP/1.1
     Host: localhost.com
     Content-Type: application/json
-    ....
+    ...
+
+.. code-block:: json
 
     [
       {
