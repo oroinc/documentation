@@ -49,6 +49,8 @@ and technical details.
 
 * :doc:`/book/scale_nodes`
 
+* :doc:`/book/data_api`
+
 .. toctree::
     :hidden:
 
@@ -62,11 +64,11 @@ and technical details.
     background_tasks
     functional_tests
     scale_nodes
+    data_api
 
 TODO List
 ---------
 
-* Web Services API
 * User Interface
     * Themes
     * Layout Structure and Placeholders
