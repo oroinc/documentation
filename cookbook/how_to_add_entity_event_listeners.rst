@@ -48,7 +48,7 @@ This class must have the ``onFlush`` method, which will be called when the event
     namespace Acme\Bundle\ContactBundle\Listener;
 
     use Doctrine\ORM\Event\OnFlushEventArgs;
-    use OroCRM\Bundle\ContactBundle\Entity\ContactEmail;
+    use Oro\Bundle\ContactBundle\Entity\ContactEmail;
 
     class SocialFields
     {
