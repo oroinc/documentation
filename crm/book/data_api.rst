@@ -39,7 +39,7 @@ To start using the API, a user should take a few preliminary steps:
 
     Please note, the ``API key`` will be generated in the scope of the current ``Organization`` and will allow to access data
     in the scope of that particular organization only. For more information about ``Organization`` purposes, see `Company Structure and
-    Organization </user-guide/intro-company-structure-org-selector>`__.
+    Organization <../user-guide/intro-company-structure-org-selector>`__.
     Also, to understand the permissions and security model, refer to `Security </book/security>`__.
 
 Afterwards, it will be possible to execute API requests with sandbox, Curl command, any other REST client or use
@@ -65,7 +65,7 @@ By default, a collapsible list of available resources will be listed.
 
 Each resource block contains a set of available actions for that resource grouped by request link.
 
-By clicking on certain action, documentation and ``Sandbox`` tabs will be displayed.
+By clicking on certain action, ``Documentation`` and ``Sandbox`` tabs will be displayed.
 
 The sandbox tab contains a form for this action and can be used to perform API queries.
 
@@ -187,13 +187,13 @@ Below is a table summarizing return values of the primary HTTP methods in combin
 |             |                | 'get_subresource',     | Use pagination, sorting and filtering  | 404 (Not Found), if ID not found or invalid.|
 |             |                | 'get_relationship'     | to navigate big lists.                 |                                             |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
-| POST        | Create         | 'create'               | 201 (Created), Response contains       | **not applicable**                          |
-|             |                |                        | response similar to **GET** /user/{id} |                                             |
+| POST        | Create         | 'create',              | 201 (Created), Response contains       | **not applicable**                          |
+|             |                | 'add_relationship'     | response similar to **GET** /user/{id} |                                             |
 |             |                |                        | containing new ID.                     |                                             |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 | PATCH       | Update         | 'update',              | **not applicable**                     | 200 (OK) or 204 (No Content).               |
-|             |                | 'update_relationship', |                                        | 404 (Not Found), if ID not found or invalid.|
-|             |                | 'add_relationship'     |                                        |                                             |
+|             |                | 'update_relationship'  |                                        | 404 (Not Found), if ID not found or invalid.|
+|             |                |                        |                                        |                                             |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 | DELETE      | Delete         | 'delete',              | 200(OK) or 403(Forbidden) or           | 200 (OK). 404 (Not Found),                  |
 |             |                | 'delete_list',         | 400(Bad Request) if no filter          | if ID not found or invalid.                 |
@@ -305,15 +305,15 @@ number of records per certain resource with ``GET_LIST`` request or total number
 
 The following table describes all existing keys for X-Include header.
 
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
-| Request Type   | X-Include key   | Response Header           | Description                                           |
-+================+=================+===========================+=======================================================+
-| GET\_LIST      | totalCount      | X-Include-Total-Count     | Returns the total number of entities.                 |
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
-| DELETE\_LIST   | totalCount      | X-Include-Total-Count     | Returns the total number of entities.                 |
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
-| DELETE\_LIST   | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities.               |
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
++----------------+-----------------+---------------------------+-----------------------------------------+
+| Request Type   | X-Include key   | Response Header           | Description                             |
++================+=================+===========================+=========================================+
+| GET\_LIST      | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
++----------------+-----------------+---------------------------+-----------------------------------------+
+| DELETE\_LIST   | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
++----------------+-----------------+---------------------------+-----------------------------------------+
+| DELETE\_LIST   | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities. |
++----------------+-----------------+---------------------------+-----------------------------------------+
 
 Header examples:
 
@@ -545,7 +545,7 @@ Most common resource(s) fields
 |              | or             | the data. For more details see                                                            |
 |              | 'organization' | `Access and Permissions Management </user-guide/user-management-roles>`__.                |
 +--------------+----------------+-------------------------------------------------------------------------------------------+
-| organization | organization   | An Organization record represents a real enterprise, business, firm, company or another   |
+| organization | 'organization' | An Organization record represents a real enterprise, business, firm, company or another   |
 |              |                | organization, to which the users belong. For more details about ``organization`` field    |
 |              |                | purposes see                                                                              |
 |              |                | `Company Structure and Organization </user-guide/intro-company-structure-org-selector>`__ |
