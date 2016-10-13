@@ -26,15 +26,15 @@ to read and write data. Request and response body should use JSON format.
 Quick Start
 ===========
 
-To start using the API, a user should take a few preliminary steps:
+To start using the API, you must take a few preliminary steps:
 
--  Ensure that the application is installed correctly.
--  Generate an API token for a user:
--  To do that, navigate to the ``Profile page`` of your user. ``My User`` link is available in the
-   dropdown menu in the top right corner or via a direct link (e.g. http://localhost.com/user/profile/view). In case you
-   want to generate ``API Key`` for any other user in the system, open ``Users grid`` (System->User Management->Users),
-   find the user who needs an API key and open its view page by clicking on the grid row or ``View`` from the ellipsis menu.
-   Finally, simply click on the ``Generate Key`` button. You'll see the generated key near the button looking like:    ``f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2``.
+    1. Ensure that the application is installed correctly.
+    2. Generate an ``API key`` for a user:
+        a. If you want to generate an ``API key`` for yourself, navigate to the ``Profile page`` of your user: 
+            - either click the ``My User`` link in the ``User Menu`` in the top right corner of the current page, or 
+            - follow the direct link, e.g. http://<hostname_of_your_oro_application>/user/profile/view. 
+        b. If you want to generate an ``API Key`` for another user, open their view page: open the ``Users grid`` (System->User Management->Users), find the user who needs an API key, and click the corresponding grid row or ``View`` from the ellipsis menu at the right-hand end of the row.
+    3.  Click on the ``Generate Key`` button. You'll see the generated key near the button, it will look like: ``f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2``.
 
 .. hint::
 
@@ -82,14 +82,13 @@ Retrieving a single record for a particular resource with JSON API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To retrieve a single record, perform the GET action with the id parameter specified:
-1.  Click the API resource row on the
-http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page to expand the actions block.
-2.  Find the ``/api/your_resource/{id}`` block.
-3.  Click the ``GET`` action row.
-4.  Click the ``d`` tab. You will see the request form.
-5.  If you want to retrieve a single record, in the ``Requirements`` section, specify the record id for the ``id`` field.
-6.  Click the ``Try!`` button to send the request to the server.
 
+    1.  Click the API resource row on the http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page to expand the actions block.
+    2.  Find the ``/api/your_resource/{id}`` block.
+    3.  Click the ``GET`` action row.
+    4.  Click the ``Sandbox`` tab. You will see the request form.
+    5.  If you want to retrieve a single record, in the ``Requirements`` section, specify the record id for the ``id`` field.
+    6.  Click the ``Try!`` button to send the request to the server.
 
 After the response from the server is reveived, the ``Request URL``, ``Response Headers``, ``Response Body``
 and ``Curl Command Line`` sections appear at the bottom of the tab.
@@ -116,35 +115,106 @@ Performing an update for a particular resource with JSON API
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To edit a record, perform the PATCH action with the id parameter specified:
-1.  Click the API resource row on the
-http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page to expand the actions block.
-2.  Find the ``/api/your_resource/{id}`` block.
-3.  Click the ``PATCH`` action row.
-4.  Click the ``Sandbox`` tab. You will see the request form.
-5.  If you want to edit a single record, in the ``Requirements`` section, in the ``id`` field, specify the record id.
-6.  In the ``Content`` section, specify how the resource how a resource currently residing on the server
-should be modified to produce a new version. 
 
-For example, if you want to change the ``firstName`` field to 'John' value for a User entity with id 1, the request
-content will look the following way:
+    1.  Click the API resource row on the http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page to expand the actions block.
+    2.  Find the ``/api/your_resource/{id}`` block.
+    3.  Click the ``PATCH`` action row.
+    4.  Click the ``Sandbox`` tab. You will see the request form.
+    5.  If you want to edit a single record, in the ``Requirements`` section, in the ``id`` field, specify the record id.
+    6.  In the ``Content`` section, specify how the resource how a resource currently residing on the server should be modified to produce a new version. 
 
-.. code-block:: json
+        For example, if you want to change the ``firstName`` field to 'John' value for a User entity with id 1, the request content will look the following way:
 
-    {
-      "data": {
-        "type": "users",
-        "id": "1",
-        "attributes": {
-          "firstName": "John",
-        }
-      }
-    }
+        .. code-block:: json
+
+            {
+              "data": {
+                "type": "users",
+                "id": "1",
+                "attributes": {
+                  "firstName": "John",
+                }
+              }
+            }
 
 
-7.  Click the ``Try!`` button to send the request to the server.
+    7.  Click the ``Try!`` button to send the request to the server.
 
 Provided you have the ``EDIT`` permission to the record, you will see the updated data in the
 ``Response Body`` section after the response from the server is reveived.
+
+Schema
+======
+
+All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the **http(s)://<hostname_of_your_oro_application>/api/<resource\_name>** 
+All data is sent and received as JSON.
+
+**Typical request** can be performed via ``curl`` or via the JSON sandbox.
+
+Curl example:
+^^^^^^^^^^^^^
+
+.. code-block:: http
+
+    GET /api/users/1 HTTP/1.1
+
+    curl -X "GET" -H "Content-Type: application/vnd.api+json"
+         -H "Authorization: WSSE profile='UsernameToken'"
+         -H "X-WSSE: UsernameToken Username='admin',
+             PasswordDigest='D5AjIiPf7edQX2EX8hLwtB3XhQY=',
+             Created='2016-09-19T20:00:00+03:00',
+             Nonce='N2hlMDc3TGcrVU53bGprNlQ0YXliLy9PSEFNPQ=='"
+    http://localhost.com/api/users/1
+
+Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
+
+.. code-block:: http
+
+    GET /api/users/1 HTTP/1.1
+    Host: localhost.com
+    Content-Type: application/vnd.api+json
+    Authorization: WSSE profile='UsernameToken'
+    X-WSSE: UsernameToken Username='...', PasswordDigest='...', Created='...', Nonce='...'
+
+**Typical response header**:
+
+.. code-block:: http
+
+    HTTP/1.1 200 OK
+    Server: Apache/2.4.18 (Unix) PHP/5.5.38
+    Date: Mon, 19 Sep 2016 17:52:34 GMT
+    Content-Type: application/vnd.api+json
+    Connection: keep-alive
+    Status: 200 OK
+    Content-Length: 5279
+    Cache-Control: max-age=0, no-store
+
+**Typical response body**:
+
+.. code-block:: json
+
+    { "data": {
+        "type": "users",
+        "id": "1",
+        "attributes": {
+            "title": null,
+            "email": "admin@local.com",
+            "firstName": "John",
+            "enabled": true,
+            "lastLogin": "2016-09-19T11:01:31Z",
+        },
+        "relationships": {
+            "owner": { "data": { "type": "businessunits", "id": "1"} },
+            "businessUnits": { "data": [ { "type": "businessunits", "id": "1" } ] },
+        }
+    }}
+
+Blank fields are included as ``null`` instead of being omitted.
+
+Attributes or subresources that are restricted are included as ``null`` as well.
+
+All timestamps are returned in ISO 8601 format: ``YYYY-MM-DDTHH:MM:SSZ``
+
 
 Authentication
 ==============
@@ -290,7 +360,7 @@ DELETE
 
 DELETE is quite easy to understand. It is used to **delete** a resource identified by filters or ID.
 
-On successful deletion, the HTTP response staus code 204 (No Content) returns with no response body.
+On successful deletion, the HTTP response status code 204 (No Content) returns with no response body.
 
 .. hint::
 
@@ -395,7 +465,7 @@ Header examples:
     Content-Type: text/html
 
 
-Response status codes and errors
+Response Status Codes and Errors
 ================================
 
 Response status codes
@@ -476,78 +546,9 @@ with its own set of fields.
     }
 
 
-Schema
+
+Fields
 ======
-
-All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the **http(s)://<hostname_of_your_oro_application>/api/<resource\_name>** 
-All data is sent and received as JSON.
-
-**Typical request** can be performed via ``curl`` or via the JSON sandbox.
-
-Curl example:
-^^^^^^^^^^^^^
-
-.. code-block:: http
-
-    GET /api/users/1 HTTP/1.1
-
-    curl -X "GET" -H "Content-Type: application/vnd.api+json"
-         -H "Authorization: WSSE profile='UsernameToken'"
-         -H "X-WSSE: UsernameToken Username='admin',
-             PasswordDigest='D5AjIiPf7edQX2EX8hLwtB3XhQY=',
-             Created='2016-09-19T20:00:00+03:00',
-             Nonce='N2hlMDc3TGcrVU53bGprNlQ0YXliLy9PSEFNPQ=='"
-    http://localhost.com/api/users/1
-
-Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
-
-.. code-block:: http
-
-    GET /api/users/1 HTTP/1.1
-    Host: localhost.com
-    Content-Type: application/vnd.api+json
-    Authorization: WSSE profile='UsernameToken'
-    X-WSSE: UsernameToken Username='...', PasswordDigest='...', Created='...', Nonce='...'
-
-**Typical response header**:
-
-.. code-block:: http
-
-    HTTP/1.1 200 OK
-    Server: Apache/2.4.18 (Unix) PHP/5.5.38
-    Date: Mon, 19 Sep 2016 17:52:34 GMT
-    Content-Type: application/vnd.api+json
-    Connection: keep-alive
-    Status: 200 OK
-    Content-Length: 5279
-    Cache-Control: max-age=0, no-store
-
-**Typical response body**:
-
-.. code-block:: json
-
-    { "data": {
-        "type": "users",
-        "id": "1",
-        "attributes": {
-            "title": null,
-            "email": "admin@local.com",
-            "firstName": "John",
-            "enabled": true,
-            "lastLogin": "2016-09-19T11:01:31Z",
-        },
-        "relationships": {
-            "owner": { "data": { "type": "businessunits", "id": "1"} },
-            "businessUnits": { "data": [ { "type": "businessunits", "id": "1" } ] },
-        }
-    }}
-
-Blank fields are included as ``null`` instead of being omitted.
-
-Attributes or subresources that are restricted are included as ``null`` as well.
-
-All timestamps are returned in ISO 8601 format: ``YYYY-MM-DDTHH:MM:SSZ``
-
 
 Most common resource fields
 ------------------------------
@@ -577,10 +578,10 @@ Most common resource fields
 Typical communication activities fields
 ---------------------------------------
 
-The term "communication activity" describes an activity that involves communications and can have a direction (incoming or outgoing).
+The term "communication activity" describes an activity that involves communications and can have a direction, that is, be incoming or outgoing.
 For example, "Call" and "Email" are communication activities. When a client calls or sends an email to their
-manager, it is an incoming activity. When a manager calls a client or sends an email, it is an outgoing activity.
-This data may help build forecast reports based on cmmunication activities.
+manager, it is an incoming communication activity. When a manager calls a client or sends an email, it is an outgoing communication activity.
+The data based on communication activities may be used to build forecast reports based on .
 
 The table below describes fields available for the resources that support such communication activities
 as "Call", "Email", etc.
@@ -685,9 +686,9 @@ to have extended permissions to use them.
 
 To request particular fields, use the ``fields`` filter and specify the fields you need in the response as its values.
 
-.. tip:: note
+.. hint::
 
-We recommend you to always use the fields filter and retreive only the fields you will use in your application.
+    We recommend you to always use the fields filter and retreive only the fields you will use in your application.
 
 
 Example
