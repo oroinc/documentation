@@ -38,8 +38,7 @@ To start using the API, a user should take a few preliminary steps:
 .. hint::
 
     Please note, the ``API key`` will be generated in the scope of the current ``Organization`` and will allow to access data
-    in the scope of that particular organization only. For more information about ``Organization`` purposes, see 
-    :doc:`Company Structure and Organization </user-guide/intro-company-structure-org-selector>`.
+    in the scope of that particular organization only. For more information about ``Organization`` purposes, see :doc:`Company Structure and Organization </user-guide/intro-company-structure-org-selector>`.
     Also, to understand the permissions and security model, refer to :doc:`Security </book/security>`.
 
 Afterwards, it will be possible to execute API requests with sandbox, Curl command, any other REST client or use
@@ -543,12 +542,12 @@ Most common resource(s) fields
 | owner        | 'user' or      | An Owner record represents the ownership capabilities of the record. In other words,         |
 |              | 'businessUnit' | in dependant on owner type the different permissions may be applied then accessing           |
 |              | or             | the data. For more details see                                                               |
-|              | 'organization' | :doc:`Access and Permissions Management </user-guide/user-management-roles>`.                |
+|              | 'organization' | :doc:`Access and Permissions Management </user_guide/user_management_roles>`.                |
 +--------------+----------------+----------------------------------------------------------------------------------------------+
 | organization | 'organization' | An Organization record represents a real enterprise, business, firm, company or another      |
 |              |                | organization, to which the users belong. For more details about ``organization`` field       |
 |              |                | purposes see                                                                                 |
-|              |                | :doc:`Company Structure and Organization </user-guide/intro-company-structure-org-selector>` |
+|              |                | :doc:`Company Structure and Organization </user_guide/intro_company_structure_org_selector>` |
 +--------------+----------------+----------------------------------------------------------------------------------------------+
 
 
