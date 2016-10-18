@@ -421,7 +421,7 @@ Have a look at an example of a controller test from the OroCRM:
     :linenos:
 
     // src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
-    namespace OroCRM\Bundle\TaskBundle\Tests\Functional\Controller;
+    namespace Oro\Bundle\TaskBundle\Tests\Functional\Controller;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
 
