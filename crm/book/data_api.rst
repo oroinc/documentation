@@ -1,14 +1,20 @@
 Web Services API
 ================
 
-Overview
-========
+ .. toctree::
+     :caption: TOC
+     :maxdepth: 2
+     data_api.rst
 
-An application programming interface (**API**) is a software interface which is designed to be used by other software.
+
+Overview
+--------
+
+An application programming interface (API) is a software interface which is designed to be used by other software.
 Whilst an ordinary software program is used by a (human) computer user, an API is a software program used by
 another software program.
 
-The Representational State Transfer (**REST**) architectural style is an abstraction of the architectural elements
+The Representational State Transfer (REST) architectural style is an abstraction of the architectural elements
 within a distributed hypermedia system. REST ignores the details of component implementation and protocol syntax in
 order to focus on the roles of the components, the constraints on their interaction with other components, and their
 interpretation of significant data elements. It encompasses the fundamental constraints on components, connectors,
@@ -20,110 +26,138 @@ be fetched or modified, and how a server should respond to them. It is designed 
 and the amount of data transmitted between the clients and the servers. This efficiency is achieved without compromising
 on readability, flexibility or discoverability.
 
-Therefore, here and below the term ``API`` will refer to the ``REST JSON API`` that gives programmatic access
+Therefore, here and below the term *API* will refer to the REST JSON API that gives programmatic access
 to read and write data. Request and response body should use JSON format.
 
+
+
 Quick Start
-===========
+-----------
+
+
+Create an API Key
+^^^^^^^^^^^^^^^^^
 
 To start using the API, you must take a few preliminary steps:
 
     1. Ensure that the application is installed correctly.
-    2. Generate an ``API key`` for a user:
-        a. If you want to generate an ``API key`` for yourself, navigate to the ``Profile page`` of your user: 
-            - either click the ``My User`` link in the ``User Menu`` in the top right corner of the current page, or 
-            - follow the direct link, e.g. http://<hostname_of_your_oro_application>/user/profile/view. 
-        b. If you want to generate an ``API Key`` for another user, open their view page: open the ``Users grid`` (System->User Management->Users), find the user who needs an API key, and click the corresponding grid row or ``View`` from the ellipsis menu at the right-hand end of the row.
-    3.  Click on the ``Generate Key`` button. You'll see the generated key near the button, it will look like: ``f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2``.
+    2. Generate an API key for a user:
+        3. If you want to generate an API key for yourself, navigate to the profile page of your user: 
+            - either click the :guilabel:`My User` link in the **User Menu** in the top right corner of the current page, or 
+            - follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``. 
+        4. If you want to generate an API key for another user, open their view page: 
+            - open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`), 
+            - find the user who needs an API key, and 
+            - click the corresponding grid row or :guilabel:`View` from the ellipsis menu at the right-hand end of the row.
+    5.  Click the :guilabel:`Generate Key` button. You'll see the generated key near the button, it will look like: 'f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2.'
 
-.. hint::
 
-    Please note, the ``API key`` will be generated in the scope of the current ``Organization`` and will allow to access data
-    in the scope of that particular organization only. For more information about ``Organization`` purposes, see `Company Structure and
-    Organization </user-guide/intro-company-structure-org-selector>`__.
-    Also, to understand the permissions and security model, refer to `Security </book/security>`__.
+For more details about how to generate an API Key and authentication header, please see the
+`How to use WSSE authentication </cookbook/how-to-use-wsse-authentication>`__ section of `The Oro Cookbook </cookbook>`__ guide and the `Log in, View Your User Page, and Set up Your Profile </user-guide/intro-log-in-and-edit-profile>`__ section of the `User Guide </cookbook>`__.
 
-Afterwards, it will be possible to execute API requests via sandbox, Curl command, any other REST client or use the
+.. important::
+
+    Please note that an API key will be generated in the scope of the current organization and will allow to access data
+    in the scope of that particular organization only. For more information about ``Organization`` purposes, see the `Company Structure and Organization </user-guide/intro-company-structure-org-selector>`__ guide.
+    To understand the permissions and security model, see the `Security </book/security>`__ guide.
+
+
+Afterwards, it will be possible to execute API requests via the sandbox, Curl command, any other REST client or use the
 API via your own application.
 
-API sandbox
------------
+
+
+API Sandbox
+^^^^^^^^^^^
 
 The API sandbox page allows you to perform API requests directly from the Oro application instance.
 
-How to use the sandbox.
-~~~~~~~~~~~~~~~~~~~~~~~
 
-The sandbox page is available at: http://<hostname_of_your_oro_application>/api/doc.
+How to use the sandbox
+""""""""""""""""""""""
+
+The sandbox page is available at: ``http://<hostname_of_your_oro_application>/api/doc``.
+
+.. image:: ./img/api/api_plain_generalview.png
 
 This page represents a list of plain API resources. Plain API resources are old API implementations
 based on `FOSRestBundle <http://symfony.com/doc/current/bundles/FOSRestBundle/index.html>`__.
 
-To switch to the JSON API sandbox, go to the http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page, or click the ``JSON.API``
+To switch to the JSON API sandbox, go to the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page, or click the :guilabel:`JSON.API`
 link at the upper left-hand corner of the sanbox page.
+
+.. image:: ./img/api/api_jsonlink.png
 
 On the JSON.API sandbox page you will see the list of available resources.
 
-To review available actions for the resource, click the resource row or the ``List Operations`` link at the right-hand end of the row. You will see the list of available actions grouped in blocks by the request link.
+.. image:: ./img/api/api_json_generalview.png
+
+To review available actions for the resource, click the resource row or the :guilabel:`List Operations` link at the right-hand end of the row. You will see the list of available actions grouped in blocks by the request link.
+
+.. image:: ./img/api/api_json_listmethods.png
 
 Each action is documented and has a sandbox that contains a form for this action. This sandbox can be used to perform API queries. 
 To review the action documentation and access the action sandbox, click the action row. You will see the corresponding tabs in the expanded area. 
 
-To expand infromation about all actions available for the resource, click the ``Expand Operations`` link at the right-hand end of resource row.
+.. image:: ./img/api/api_json_methodsb.png
 
-To switch between the collapsed list of available resources and the expanded state, click the ``Show /hide`` link at the right-hand end of the row.
+To expand infromation about all actions available for the resource, click the :guilabel:`Expand Operations` link at the right-hand end of resource row.
 
-
-
-
+To switch between the collapsed list of available resources and the expanded state, click the :guilabel:`Show / hide` link at the right-hand end of the row.
 
 
-Retrieving a single record for a particular resource with JSON API
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Examples
+^^^^^^^^
 
-To retrieve a single record, perform the GET action with the id parameter specified:
 
-    1.  Click the API resource row on the http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page to expand the actions block.
-    2.  Find the ``/api/your_resource/{id}`` block.
-    3.  Click the ``GET`` action row.
-    4.  Click the ``Sandbox`` tab. You will see the request form.
-    5.  If you want to retrieve a single record, in the ``Requirements`` section, specify the record id for the ``id`` field.
-    6.  Click the ``Try!`` button to send the request to the server.
+Retreive a single record
+""""""""""""""""""""""""
 
-After the response from the server is reveived, the ``Request URL``, ``Response Headers``, ``Response Body``
-and ``Curl Command Line`` sections appear at the bottom of the tab.
+To retrieve a single record for a particular resource record with JSON API, perform the GET action with the id parameter specified:
 
-The ``Request URL`` block contains the request URL sent to server.
+    1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page to expand the actions block.
+    2.  Find the :guilabel:`/api/your_resource/{id}` block.
+    3.  Click the :guilabel:`GET` action row.
+    4.  Click the :guilabel:`Sandbox` tab. You will see the request form.
+    5.  If you want to retrieve a single record, in the :guilabel:`Requirements` section, specify the record id for the :guilabel:`id` field.
+    6.  Click the :guilabel:`Try!` button to send the request to the server.
 
-The ``Response Headers`` block contains the status code of the server's response. In case of successful request,
-it contains the **200 OK** string.
-To see the list of headers which the server sent during the response, click the ``Expand`` link next to the section header .
+After the response from the server is reveived, the :guilabel:`Request URL`, :guilabel:`Response Headers`, :guilabel:`Response Body`
+and :guilabel:`Curl Command Line` sections appear at the bottom of the :guilabel:`Sandbox` tab.
 
-If request was successful, you should see the output data of the request in the ``Response Body`` section. In the given
+The :guilabel:`Request URL` block contains the request URL sent to server.
+
+The :guilabel:`Response Headers` block contains the status code of the server's response. In case of successful request,
+it contains the '200 OK' string.
+To see the list of headers which the server sent during the response, click the :guilabel:`Expand` link next to the section header .
+
+If request was successful, you should see the output data of the request in the :guilabel:`Response Body` section. In the given
 case, entity data will be in JSON format. More information about this format can
-be found `here <http://jsonapi.org/format/>`__.
+be found at the `JSON API <http://jsonapi.org/format/>`__ site.
 
-The ``Curl Command Line`` section contains an example of the CLI command to perform the request
+The :guilabel:`Curl Command Line` section contains an example of the CLI command to perform the request
 with `Curl <https://curl.haxx.se/>`__.
 This command may help emulate the real request to the API.
 
-.. hint::
+.. important::
 
-    When performing Curl requests, please make sure your ``X-WSSE`` header is up to date for each request.
+    When performing Curl requests, please make sure your **X-WSSE** header is up to date for each request.
 
-Performing an update for a particular resource with JSON API
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To edit a record, perform the PATCH action with the id parameter specified:
 
-    1.  Click the API resource row on the http://<hostname_of_your_oro_application>/api/doc/rest\_json\_api page to expand the actions block.
-    2.  Find the ``/api/your_resource/{id}`` block.
-    3.  Click the ``PATCH`` action row.
-    4.  Click the ``Sandbox`` tab. You will see the request form.
-    5.  If you want to edit a single record, in the ``Requirements`` section, in the ``id`` field, specify the record id.
-    6.  In the ``Content`` section, specify how the resource how a resource currently residing on the server should be modified to produce a new version. 
+Edit a record
+"""""""""""""
 
-        For example, if you want to change the ``firstName`` field to 'John' value for a User entity with id 1, the request content will look the following way:
+To edit a record for a particular resource record with JSON API, perform the PATCH action with the id parameter specified:
+
+    1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page to expand the actions block.
+    2.  Find the :guilabel:`/api/your_resource/{id}` block.
+    3.  Click the :guilabel:`PATCH` action row.
+    4.  Click the :guilabel:`Sandbox` tab. You will see the request form.
+    5.  If you want to edit a single record, in the :guilabel:`Requirements` section, in the :guilabel:`id` field, specify the record id.
+    6.  In the :guilabel:`Content` section, specify how the resource how a resource currently residing on the server should be modified to produce a new version. 
+
+        For example, if you want to change the **firstName** field to 'John' value for a User entity with id 1, the request content will look the following way:
 
         .. code-block:: json
 
@@ -138,21 +172,27 @@ To edit a record, perform the PATCH action with the id parameter specified:
             }
 
 
-    7.  Click the ``Try!`` button to send the request to the server.
+    7.  Click the :guilabel:`Try!` button to send the request to the server.
 
-Provided you have the ``EDIT`` permission to the record, you will see the updated data in the
-``Response Body`` section after the response from the server is reveived.
+Provided you have the edit permission to the record, you will see the updated data in the
+:guilabel:`Response Body` section after the response from the server is reveived.
+
+
+
+
+API in Details
+---------------
 
 Schema
-======
+^^^^^^
 
-All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the **http(s)://<hostname_of_your_oro_application>/api/<resource\_name>** 
+All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the http(s)://\<hostname_of_your_oro_application\>/api/<resource\_name>
 All data is sent and received as JSON.
 
-**Typical request** can be performed via ``curl`` or via the JSON sandbox.
+Typical request can be performed via curl or via the JSON sandbox.
 
-Curl example:
-^^^^^^^^^^^^^
+Curl Example
+""""""""""""
 
 .. code-block:: http
 
@@ -166,6 +206,7 @@ Curl example:
              Nonce='N2hlMDc3TGcrVU53bGprNlQ0YXliLy9PSEFNPQ=='"
     http://localhost.com/api/users/1
 
+
 Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
 
 .. code-block:: http
@@ -176,7 +217,8 @@ Please note that to simplify representation of request examples in the document,
     Authorization: WSSE profile='UsernameToken'
     X-WSSE: UsernameToken Username='...', PasswordDigest='...', Created='...', Nonce='...'
 
-**Typical response header**:
+
+**Typical response header**
 
 .. code-block:: http
 
@@ -189,7 +231,8 @@ Please note that to simplify representation of request examples in the document,
     Content-Length: 5279
     Cache-Control: max-age=0, no-store
 
-**Typical response body**:
+
+**Typical response body**
 
 .. code-block:: json
 
@@ -209,28 +252,28 @@ Please note that to simplify representation of request examples in the document,
         }
     }}
 
-Blank fields are included as ``null`` instead of being omitted.
+Blank fields are included as *null* instead of being omitted.
 
-Attributes or subresources that are restricted are included as ``null`` as well.
+Attributes or subresources that are restricted are included as *null* as well.
 
-All timestamps are returned in ISO 8601 format: ``YYYY-MM-DDTHH:MM:SSZ``
+All timestamps are returned in ISO 8601 format: *YYYY-MM-DDTHH:MM:SSZ*.
 
 
 Authentication
-==============
+^^^^^^^^^^^^^^
 
 A RESTful API should be stateless. This means that request authentication should not depend on cookies or sessions.
 Instead, each request should come with some authentication credentials.
 
-For authentication purposes, **WSSE** mechanism is used—a family of open security specifications for web services,
+For authentication purposes, the **WSSE** mechanism is used—a family of open security specifications for web services,
 specifically SOAP web services. The basic premise of WSSE is that a request header is checked for encrypted credentials,
 verified using a timestamp and nonce, and authenticated for the requested user using a password digest.
 
 It’s based on the `EscapeWSSEAuthenticationBundle <https://github.com/escapestudios/EscapeWSSEAuthenticationBundle>`__
 that covers most cases from the
-WSSE `specification <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>`__.
+`WSSE specification <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>`__ (PDF).
 
-Here's an example of a request header with the WSSE authentication. Please pay attention to the ``Authentication`` and ``X-WSSE`` parameters:
+Here's an example of a request header with the WSSE authentication. Please pay attention to the **Authentication** and **X-WSSE** parameters:
 
 .. code-block:: http
 
@@ -248,24 +291,27 @@ Here's an example of a request header with the WSSE authentication. Please pay a
             Created="2016-09-20T10:00:00+03:00",
             Nonce="elRZL0lVOTl2T3lXeVBmUHRCL2ZrUnJoWUNZPQ=="
 
-For more details about generating ``API Key``, ``header``, etc. please refer to the
-`"The Oro Cookbook"—How to use WSSE authentication </cookbook/how-to-use-wsse-authentication>`__
 
-HTTP Verbs
-==========
+For more details about WSSE authentication and particularly for how to generate an API Key and authentication header, please see the
+`How to use WSSE authentication </cookbook/how-to-use-wsse-authentication>`__ section of `The Oro Cookbook </cookbook>`__ guide.
 
-The HTTP verbs comprise a major portion of the uniform interface constraint and provide the action counterpart to the noun-based
+
+Available Actions
+^^^^^^^^^^^^^^^^^
+
+Available actions are interconnected with HTTP verbs. The HTTP verbs comprise a major portion of the uniform interface constraint and provide the action counterpart to the noun-based
 resource. The primary or most-commonly-used HTTP verbs (or methods, as they are properly called) are POST, GET, PUT,
 PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a
 number of other verbs, too, but they are utilized less frequently.
 
 Below is a table summarizing return values of the primary HTTP methods in combination with the resource URIs:
 
+
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 | HTTP Verb   | CRUD operation | API action             | Entire Collection (e.g. /users)        |         Specific Item (e.g. /users/{id})    |
 +=============+================+========================+========================================+=============================================+
 | GET         | Read           | 'get', 'get_list',     | 200 (OK), list of entities.            | 200 (OK), single entity.                    |
-|             |                | 'get_subresource',     | Use pagination, sorting and filtering  | 404 (Not Found), if ID not found or invalid.|
+|             |                | 'get_subresource',     | Use pagination, sorting and filtering  | 404 (Not Found), if ID not found or invalid. |
 |             |                | 'get_relationship'     | to navigate big lists.                 |                                             |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 | POST        | Create         | 'create'               | 201 (Created), Response contains       | **not applicable**                          |
@@ -273,7 +319,7 @@ Below is a table summarizing return values of the primary HTTP methods in combin
 |             |                |                        | containing new ID.                     |                                             |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 | PATCH       | Update         | 'update',              | **not applicable**                     | 200 (OK) or 204 (No Content).               |
-|             |                | 'update_relationship', |                                        | 404 (Not Found), if ID not found or invalid.|
+|             |                | 'update_relationship', |                                        | 404 (Not Found), if ID not found or invalid. |
 |             |                | 'add_relationship'     |                                        |                                             |
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 | DELETE      | Delete         | 'delete',              | 200(OK) or 403(Forbidden) or           | 200 (OK). 404 (Not Found),                  |
@@ -284,14 +330,14 @@ Below is a table summarizing return values of the primary HTTP methods in combin
 +-------------+----------------+------------------------+----------------------------------------+---------------------------------------------+
 
 
-Also the HTTP methods can be classified by the **idempotent** and **safe** properties.
-**Safe** methods are the HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL,
+Also the HTTP methods can be classified by the *idempotent* and *safe* properties.
+*Safe* methods are the HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL,
 should NEVER change the resource.
-An **idempotent** HTTP method is a HTTP method that can be called many times without different outcomes. It would not
+An *idempotent* HTTP method is a HTTP method that can be called many times without different outcomes. It would not
 matter if the method is called only once, or ten times over. The result should be the same.
-For more details, please refer to `RFC 7231: Common Method Properties <https://tools.ietf.org/html/rfc7231#section-4.2>`__.
+For more details, please see `RFC 7231: Common Method Properties <https://tools.ietf.org/html/rfc7231#section-4.2>`__.
 
-Below is a table summarizing HTTP methods by its **idempotency** and **safety**:
+Below is a table summarizing HTTP methods by its idempotency and safety:
 
 +-------------+------------+------+
 | HTTP Method | Idempotent | Safe |
@@ -313,65 +359,68 @@ Below is a table summarizing HTTP methods by its **idempotency** and **safety**:
 
 
 GET
----
+"""
 
-The HTTP GET method is used to **read** (or retrieve) a representation of a resource. In the “success” (or non-error)
-path, GET returns a representation in JSON and an HTTP response status code of 200 (OK). In an error case, it most often
-returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
+The HTTP GET method is used to *read* (or retrieve) a representation of a resource. In the case of success (or non-error), GET returns a representation in JSON and an HTTP response status code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
 
-.. hint::
+.. note::
     According to the design of the HTTP specification, GET requests are used only to read data and not change it.
     So, they are considered safe. That is, they can be called without risk of data modification or corruption —
     calling it once has the same effect as calling it 10 times.
 
-POST
-----
 
-The POST verb is most often utilized to **create** new resources. In particular, it's used to create subordinate
+POST
+""""
+
+The POST verb is most often utilized to *create* new resources. In particular, it's used to create subordinate
 resources. That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource,
 POST to the parent and the service takes care of associating the new resource with the parent, assigning an
 ID (new resource URI), etc.
 
 On successful creation, return the HTTP response code 201.
 
-.. hint::
+.. caution::
 
     POST is not safe operation. Making two identical POST requests will most-likely result in two resources containing
     the same information but with different identifiers.
 
-PATCH
------
 
-PATCH is used for **modify** capabilities. The PATCH request only needs to contain the changes to the resource,
+PATCH
+"""""
+
+PATCH is used to *modify* resources. The PATCH request only needs to contain the changes to the resource,
 not the complete resource.
 
 In other words, the body should contain a set of instructions describing how a resource currently residing on the
 server should be modified to produce a new version.
 
-.. hint::
+.. caution::
 
     PATCH is not safe operation. Collisions from multiple PATCH requests may be dangerous because some patch formats
     need to operate from a known base-point or else they will corrupt the resource. Clients using this kind of patch
     application should use a conditional request (e.g. GET resource, ensure it was not modified and apply PATCH) such
     that the request will fail if the resource has been updated since the client last accessed the resource.
 
-DELETE
-------
 
-DELETE is quite easy to understand. It is used to **delete** a resource identified by filters or ID.
+DELETE
+""""""
+
+DELETE is quite easy to understand. It is used to *delete* a resource identified by filters or ID.
 
 On successful deletion, the HTTP response status code 204 (No Content) returns with no response body.
 
-.. hint::
+.. important::
 
     If you DELETE a resource, it's removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND)
     since it was already removed and therefore is no longer findable.
 
-HTTP Headers
-============
 
-As already mentioned above, to successfully perform an API request, it is important to provide correct ``Content-Type``
-and ``Authentication``, e.g.
+
+HTTP Header Specifics
+^^^^^^^^^^^^^^^^^^^^^^
+
+As mentioned in the `Authentication`__ section, to successfully perform an API request, it is important to provide the correct **Content-Type**
+and **Authentication** parameters, e.g.:
 
 .. code-block:: http
 
@@ -381,8 +430,8 @@ and ``Authentication``, e.g.
     X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
 
 Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as the total
-number of records per certain resource with the ``GET_LIST`` request or total number of affected records with
-the ``DELETE_LIST`` request. The ``X-Include`` request header can be used for such purposes.
+number of records per certain resource with the GET_LIST request or total number of affected records with
+the DELETE_LIST request. The **X-Include** request header can be used for such purposes.
 
 The following table describes all existing keys for X-Include header.
 
@@ -396,9 +445,13 @@ The following table describes all existing keys for X-Include header.
 | DELETE\_LIST   | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities.               |
 +----------------+-----------------+---------------------------+-------------------------------------------------------+
 
-Header examples:
+Header Examples
+"""""""""""""""
+Example 1. Total number of existing records
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Retreive the total count of resource records.
 
-**Request total count of resource records**:
+**Request header**
 
 .. code-block:: http
 
@@ -410,7 +463,7 @@ Header examples:
     ...
     X-Include: totalCount
 
-**Response**:
+**Response**
 
 .. code-block:: http
 
@@ -426,7 +479,11 @@ Header examples:
     Content-Type: application/vnd.api+json
 
 
-**Request total number of deleted records of the resource**:
+Example 2. Total number of deleted records
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Retrieve the total number of deleted records of the resource
+
+**Request header**
 
 .. code-block:: http
 
@@ -439,7 +496,11 @@ Header examples:
     X-Include: deletedCount
 
 
-**Request query string contains e.g. filter that specifies conditions for deletion operation (will be described below)**:
+Example 3. Conditions for deletion operation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Request query string contains a filter that specifies conditions for deletion operation. Filters are described in more detail in the `Filters <Filter>`__ section.
+
+**Request header:**
 
 .. code-block:: http
 
@@ -449,7 +510,7 @@ Header examples:
     Accept: application/vnd.api+json
     Authorization: ....
 
-**Response**:
+**Response**
 
 .. code-block:: http
 
@@ -466,18 +527,19 @@ Header examples:
 
 
 Response Status Codes and Errors
-================================
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Response status codes
-^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""
+
 In case of successful request, a response status code will be one of the following:
 
--  ``200 OK``—In the response to a successful GET, PATCH or DELETE.
--  ``201 Created``—In the response to a POST that results in a creation. Will
+-  **200 OK**—In the response to a successful GET, PATCH or DELETE.
+-  **201 Created**—In the response to a POST that results in a creation. Will
    be combined with a JSON in body that contains newly created entity (similar to regular GET request).
--  ``204 No Content``—In the response to a successful request that won't be returning a body (like a DELETE request)
+-  **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
-For example:
+Example. Succesful request
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Rquest**
 
@@ -497,18 +559,20 @@ For example:
        Remote Address: 127.0.0.1:80
 
 
+
 In case of an error, a response status code indicates the type of
 the error occurred. The most common of such codes are the following:
 
--  ``400 Bad Request``—The request is malformed, such as if the body of the request contains misformatted JSON.
--  ``401 Unauthorized``—No or invalid authentication details are provided. This code can be use to trigger an
+-  **400 Bad Request**—The request is malformed, such as if the body of the request contains misformatted JSON.
+-  **401 Unauthorized**—No or invalid authentication details are provided. This code can be use to trigger an
    auth popup if the API is used from a browser.
--  ``403 Forbidden``—Authentication succeeded but authenticated user does not have access to the resource.
--  ``404 Not Found``—A non-existent resource is requested.
--  ``500 Internal Server Error``—The server encountered an unexpected
+-  **403 Forbidden**—Authentication succeeded but authenticated user does not have access to the resource.
+-  **404 Not Found**—A non-existent resource is requested.
+-  **500 Internal Server Error**—The server encountered an unexpected
    condition which prevented it from fulfilling the request.
 
-For example:
+Example. Reqest resulted in error
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Request**
 
@@ -527,11 +591,14 @@ For example:
        Status Code: 404 Not Found
        Remote Address: 127.0.0.1:80
 
+
 Error Messages
-^^^^^^^^^^^^^^
+""""""""""""""
+
 Similar to an HTML error page that shows a useful error message to a visitor, the API displays an error message in
 a consumable format. Representation of an error looks the same as the representation of any resource, only
 with its own set of fields.
+
 
 .. code-block:: json
 
@@ -547,82 +614,95 @@ with its own set of fields.
 
 
 
-Fields
-======
+Resource Fields
+^^^^^^^^^^^^^^^
 
 Most common resource fields
-------------------------------
-
-+--------------+----------------+----------------------------------------------------------------------------------------------------+
-| Name         | Type           | Description                                                                                        |
-+==============+================+====================================================================================================+
-| id           | integer        | The unique identifier of a resource. In most cases it is represented by an integer value, but      | 
-|              |                | depending on the resource data model, it can be represented by a string or contain multiple columns|
-+--------------+----------------+----------------------------------------------------------------------------------------------------+
-| createdAt    | datetime       | The date and time of resource record creation.                                                     |
-+--------------+----------------+----------------------------------------------------------------------------------------------------+
-| updatedAt    | datetime       | The date and time of the last update of the resource record.                                       |
-+--------------+----------------+----------------------------------------------------------------------------------------------------+
-| owner        | user           | An owner record represents the ownership capabilities of the record. In other words,               |
-|              | or             | depending on the owner type the different level of access applies.                                 |
-|              | businessUnit   | For more details, see `Access and Permissions Management </user-guide/user-management-roles>`__.   |
-|              | or             |                                                                                                    |
-|              | organization   |                                                                                                    |
-+--------------+----------------+----------------------------------------------------------------------------------------------------+
-| organization | organization   | An organization record represents a real enterprise, business, firm, company or another            |
-|              |                | organization to which the users belong. For more details about ``organization`` field purposes, see|           
-|              |                | `Company Structure and Organization </user-guide/intro-company-structure-org-selector>`__          |
-+--------------+----------------+----------------------------------------------------------------------------------------------------+
+""""""""""""""""""""""""""""
 
 
-Typical communication activities fields
----------------------------------------
++--------------+----------------+-----------------------------------------------------------------------------------------------------+
+| Name         | Type           | Description                                                                                         |
++==============+================+=====================================================================================================+
+| id           | integer        | The unique identifier of a resource. In most cases it is represented by an integer value, but       | 
+|              |                | depending on the resource data model, it can be represented by a string or contain multiple columns |
++--------------+----------------+-----------------------------------------------------------------------------------------------------+
+| createdAt    | datetime       | The date and time of resource record creation.                                                      |
++--------------+----------------+-----------------------------------------------------------------------------------------------------+
+| updatedAt    | datetime       | The date and time of the last update of the resource record.                                        |
++--------------+----------------+-----------------------------------------------------------------------------------------------------+
+| owner        | user           | An owner record represents the ownership capabilities of the record. In other words,                |
+|              | or             | depending on the owner type the different level of access applies.                                  |
+|              | businessUnit   | For more details, see `Access and Permissions Management </user-guide/user-management-roles>`__.    |
+|              | or             |                                                                                                     |
+|              | organization   |                                                                                                     |
++--------------+----------------+-----------------------------------------------------------------------------------------------------+
+| organization | organization   | An organization record represents a real enterprise, business, firm, company or another             |
+|              |                | organization to which the users belong. For more details about the **organization** field purposes, |           
+|              |                | see `Company Structure and Organization </user-guide/intro-company-structure-org-selector>`__       |
++--------------+----------------+-----------------------------------------------------------------------------------------------------+
 
-The term "communication activity" describes an activity that involves communications and can have a direction, that is, be incoming or outgoing.
-For example, "Call" and "Email" are communication activities. When a client calls or sends an email to their
+
+Typical Communication Activities Fields
+"""""""""""""""""""""""""""""""""""""""
+
+The term 'communication activity' describes an activity that involves communications and can have a direction, that is, be incoming or outgoing.
+For example, 'Call' and 'Email' are communication activities. When a client calls or sends an email to their
 manager, it is an incoming communication activity. When a manager calls a client or sends an email, it is an outgoing communication activity.
-The data based on communication activities may be used to build forecast reports based on .
+The data based on communication activities may be used to build useful forecast reports.
 
 The table below describes fields available for the resources that support such communication activities
-as "Call", "Email", etc.
+as 'Call,' 'Email,' etc.
 
-+------------------------+------------+---------------------------------------------------------------------------------------+
-| Name                   | Type       | Description                                                                           |
-+========================+============+=======================================================================================+
-| lastContactedDate      | datetime   | The data and time of the last communication activity for the resource record.         |
-+------------------------+------------+---------------------------------------------------------------------------------------+
-| lastContactedDateIn    | datetime   | The data and time of the last incoming communication activity for the resource record.|
-+------------------------+------------+---------------------------------------------------------------------------------------+
-| lastContactedDateOut   | datetime   | The data and time of the last outgoing communication activity for the resource record.|
-+------------------------+------------+---------------------------------------------------------------------------------------+
-| timesContacted         | integer    | Total number of communication activities for the resource record.                     |
-+------------------------+------------+---------------------------------------------------------------------------------------+
-| timesContactedIn       | integer    | Total number of incoming communication activities for the resource record.            |
-+------------------------+------------+---------------------------------------------------------------------------------------+
-| timesContactedOut      | integer    | Total number of outgoing communication activities for the resource record.            |
-+------------------------+------------+---------------------------------------------------------------------------------------+
++------------------------+------------+----------------------------------------------------------------------------------------+
+| Name                   | Type       | Description                                                                            |
++========================+============+========================================================================================+
+| lastContactedDate      | datetime   | The data and time of the last communication activity for the resource record.          |
++------------------------+------------+----------------------------------------------------------------------------------------+
+| lastContactedDateIn    | datetime   | The data and time of the last incoming communication activity for the resource record. |
++------------------------+------------+----------------------------------------------------------------------------------------+
+| lastContactedDateOut   | datetime   | The data and time of the last outgoing communication activity for the resource record. |
++------------------------+------------+----------------------------------------------------------------------------------------+
+| timesContacted         | integer    | Total number of communication activities for the resource record.                      |
++------------------------+------------+----------------------------------------------------------------------------------------+
+| timesContactedIn       | integer    | Total number of incoming communication activities for the resource record.             |
++------------------------+------------+----------------------------------------------------------------------------------------+
+| timesContactedOut      | integer    | Total number of outgoing communication activities for the resource record.             |
++------------------------+------------+----------------------------------------------------------------------------------------+
 
 
 Filters
-=======
+^^^^^^^^
 
-You can perform the ``GET`` and ``DELETE`` actions on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields. 
+You can perform the GET and DELETE actions on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields. 
 
-Available filters are listed on the *Documentation* tab of the action's expanded area, in the *Filters* section. 
+Available filters are listed on the :guilabel:`Documentation` tab of the action's expanded area, in the :guilabel:`Filters`*` section. 
 
-To filter, perform a GET request and put your filters parameters of the ``Query String``.
+To filter, perform a GET request and put your filters parameters in the query string.
 
-For instance, the following request will retreive all users of the organization ``1``.
+Example 1. Filter in the query string
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Retreive all users of the organization '1.'
+
+**Request**
 
 .. code-block:: http
 
     GET /api/users?filter[organization]=1 HTTP/1.1
 
+
+
+
 Similar to a field, a filter declares a data type and only takes specific values in input.
 
-Below are examples of requests and errors:
+Below are examples of requests and errors.
 
-In case ``string`` value passes as value for ``integer`` type filter:
+
+Example 2. Wrong input type
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A string value is passed as an input for a filter which can contain only integer values:
 
 .. code-block:: http
 
@@ -634,7 +714,11 @@ In case ``string`` value passes as value for ``integer`` type filter:
       "detail": "Expected integer value. Given \"aaa\"."
     }] }
 
-In case of unknown, mistyped or unsupported filter:
+
+Example 3. Unknown filter
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Unknown, mistyped or unsupported filter.
 
 .. code-block:: http
 
@@ -650,93 +734,94 @@ In case of unknown, mistyped or unsupported filter:
     }] }
 
 
+
 The API allows you to use several types of filters. Filter types are briefly described in the table below.
 
-+-------------+------------------------------+----------------------------------------------------------------------------+
-| Filter Type | Usage Example                | Description                                                                |
-+=============+==============================+============================================================================+
-| fields      | fields[owner]=id,name        | Used for limiting the response data only to specified fields.              |
-|             |                              | Depends on the ``include`` filter in case if filter is applied to relation.|
-+-------------+------------------------------+----------------------------------------------------------------------------+
-| filter      | filter[id]=1                 | Used for filtering the response data by specific values of a specific      |
-|             | or                           | field. Can accept additional operators like ``/<``, ``/>``, etc.           |
-|             | filter[id]=5,7               | May accept several values, in such case they will be perceived as          |
-|             | or                           | connected using a logical ``OR`` operator,                                 |
-|             | filter[id]>8&filter[name]=a  | e.g. id == 5 OR id == 7                                                    |
-|             |                              | And in case of several filters in request, all of them will be perceived as|
-|             |                              | connected using a logical``AND`` operator,                                 |
-|             |                              | e.g. id > 8 AND name == 'a'                                                |
-+-------------+------------------------------+----------------------------------------------------------------------------+
-| include     | include=[owner,organization] | Used for inclusion into response the related resources data.               |
-+-------------+------------------------------+----------------------------------------------------------------------------+
-| page        | page[size]=10&page[number]=1 | Used for pagination purposes.                                              |
-+-------------+------------------------------+----------------------------------------------------------------------------+
-| sort        | sort=id                      | Used for data sorting. By default the ``ASC`` sorting apllies.             |
-|             | or                           | To perform ``DESC`` sorting specify ``/-`` before field name.              |                                                               |
-|             | sort=id,-name                |                                                                            |
-+-------------+------------------------------+----------------------------------------------------------------------------+
++-------------+------------------------------+-----------------------------------------------------------------------------+
+| Filter      | Usage Example                | Description                                                                 |
++=============+==============================+=============================================================================+
+| fields      | fields[owner]=id,name        | Used for limiting the response data only to specified fields.               |
+|             |                              | Depends on the **include** filter in case if filter is applied to relation. |
++-------------+------------------------------+-----------------------------------------------------------------------------+
+| filter      | filter[id]=1                 | Used for filtering the response data by specific values of a specific       |
+|             | or                           | field. Can accept additional operators like ``<``, ``>``, etc.              |
+|             | filter[id]=5,7               | May accept several values, in such case they will be perceived as           |
+|             | or                           | connected using a logical OR operator,                                      |
+|             | filter[id]>8&filter[name]=a  | e.g. id == 5 OR id == 7                                                     |
+|             |                              | And in case of several filters in request, all of them will be perceived as |
+|             |                              | connected using a logical AND operator,                                     |
+|             |                              | e.g. id > 8 AND name == 'a'                                                 |
++-------------+------------------------------+-----------------------------------------------------------------------------+
+| include     | include=[owner,organization] | Used for inclusion into response the related resources data.                |
++-------------+------------------------------+-----------------------------------------------------------------------------+
+| page        | page[size]=10&page[number]=1 | Used for pagination purposes.                                               |
++-------------+------------------------------+-----------------------------------------------------------------------------+
+| sort        | sort=id                      | Used for data sorting. By default the ASC sorting apllies.                  |
+|             | or                           | To perform DESC sorting specify ``-`` before field name.                    |                                                               |
+|             | sort=id,-name                |                                                                             |
++-------------+------------------------------+-----------------------------------------------------------------------------+
 
 
-Fields filter (``fields``)
----------------------------
+Fields Filter (**fields**)
+""""""""""""""""""""""""""
 
 All objects are composed of fields. They all have a unique identifier in the given class of objects (ID), plus some
 other fields defined in the Data API Reference. Some fields are publicly readable, some other are not and need the user
 to have extended permissions to use them.
 
-To request particular fields, use the ``fields`` filter and specify the fields you need in the response as its values.
+To request particular fields, use the **fields** filter and specify the fields you need in the response as its values.
 
-.. hint::
+.. important::
 
     We recommend you to always use the fields filter and retreive only the fields you will use in your application.
 
 
-Example
-"""""""
-To select the ``username`` and the ``email`` fields of the ``users`` resource, perform the GET request:
+Example. Retreive only required fields
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Request**
+    Select the **username** and the **email** fields of the **users** resource.
 
-.. code-block:: http
+    **Request**
 
-    GET api/users?fields[users]=username,email HTTP/1.1
+    .. code-block:: http
 
-    Content-Type: application/vnd.api+json
-    Accept: application/vnd.api+json
-    ...
+        GET api/users?fields[users]=username,email HTTP/1.1
 
-**Response:**
+        Content-Type: application/vnd.api+json
+        Accept: application/vnd.api+json
+        ...
 
-.. code-block:: json
+    **Response**
 
-    {
-      "data": [
+    .. code-block:: json
+
         {
-          "type": "users",
-          "id": "1",
-          "attributes": {
-            "username": "admin",
-            "email": "admin@local.com"
-          }
-        },
-        {
-          "type": "users",
-          "id": "2",
-          "attributes": {
-            "username": "sale",
-            "email": "sale@example.com"
-          }
+          "data": [
+            {
+              "type": "users",
+              "id": "1",
+              "attributes": {
+                "username": "admin",
+                "email": "admin@local.com"
+              }
+            },
+            {
+              "type": "users",
+              "id": "2",
+              "attributes": {
+                "username": "sale",
+                "email": "sale@example.com"
+              }
+            }
+          ]
         }
-      ]
-    }
 
 
-Data filter (``filter``)
--------------------------
+Data Filter (**filter**)
+"""""""""""""""""""""""""
 
-Depending on the type of the ``filter``, certain operators are allowed. For example, for ``integer`` filter type it
-is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for ``string`` filter type - only two: **=**,
-**!=**. 
+Depending on the type of the filter, certain operators are allowed. For example, for integer filter type it
+is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for string filter type - only two: **=**, **!**. 
 
 +----------+-----------------------+-------------+---------------------------------------------------------------------+
 | Operator | Description           | URL Encoded | Request Example                                                     |
@@ -754,9 +839,11 @@ is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, fo
 | **>=**   | Greater than or equal | %3E%3D      | GET /api/users?filter[id]>=6 HTTP/1.1                               |
 +----------+-----------------------+-------------+---------------------------------------------------------------------+
 
-Example
-"""""""
-**Request:**
+
+Example. Use operators to filter data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Request**
 
 .. code-block:: http
 
@@ -766,7 +853,7 @@ Example
     Accept: application/vnd.api+json
     ...
 
-**Response:**
+**Response**
 
 .. code-block:: json
 
@@ -792,24 +879,28 @@ Example
     }
 
 
-Include filter (``include``)
-----------------------------
+Inclusion Filter (**include**)
+""""""""""""""""""""""""""""""
 
-As mentioned above, the ``include`` filter allows you to extend the response data with the related resources information.
+As mentioned above, the **include** filter allows you to extend the response data with the related resources information.
 It is usually used to reduce the number of requests to the server or, in other words, to retrieve all necessary data
 in a single request.
-All included resources will be represented in ``included`` section of the response.
 
-.. hint::
+All included resources will be represented in **included** section at the end of the response body.
 
-    Please note, in case of using ``fields`` filter for the main resource (e.g.``users``), it must contain
-    the field(s) used in the ``include`` filter.
+.. image:: ./img/api/api_filter_included.png
 
-Example
-"""""""
-Inclusion of the ``roles`` relation with the ``fields`` filter.
 
-**Request:**
+.. important::
+
+    Please note, in case of using **fields** filter for the main resource (e.g. users), it must contain
+    the field(s) used in the **include** filter.
+
+Example. Include a related resources information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Include the **roles** relation with the **fields** filter.
+
+**Request**
 
 .. code-block:: http
 
@@ -819,7 +910,7 @@ Inclusion of the ``roles`` relation with the ``fields`` filter.
     Accept: application/vnd.api+json
     ...
 
-**Response:**
+**Response**
 
 .. code-block:: json
 
@@ -862,10 +953,15 @@ Inclusion of the ``roles`` relation with the ``fields`` filter.
       ]
     }
 
-Also, it is possible to limit fields that will be retrieved from the relation. For such purposes, the ``fields`` filter
+
+
+Also, it is possible to limit fields that will be retrieved from the relation. For such purposes, the **fields** filter
 should be used.
 
-**Request:**
+Example. Retreive only required fields of the related resource
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Request**
 
 .. code-block:: http
 
@@ -876,7 +972,7 @@ should be used.
     ...
 
 
-**Response:**
+**Response**
 
 .. code-block:: json
 
@@ -913,29 +1009,30 @@ should be used.
     }
 
 
-Pagination filter (``page``)
------------------------------
+Pagination Filter (**page**)
+""""""""""""""""""""""""""""
 
 By default, the page size is limited to 10 records and the page number is 1. However, it is possible to ask the server to
 change the page size or page number to get the records that will fit your needs. Pagination
-parameters should be passed as ``Query String Parameters``.
+parameters should be passed as the parameters of the query string.
 
-+------------------+-----------+-----------------+--------------------------------------------------------------------+
-| Parameter name   | Type      | Default value   | Description                                                        |
-+==================+===========+=================+====================================================================+
-| page[size]       | integer   | 10              | Set a positive integer number.                                     |
-|                  |           |                 | To disable the pagination, set it as ``-1``. In this case          |
-|                  |           |                 | ``page[number]`` will not be taken into account and can be omitted.|
-+------------------+-----------+-----------------+--------------------------------------------------------------------+
-| page[number]     | integer   | 1               | The number of the page.                                            |
-+------------------+-----------+-----------------+--------------------------------------------------------------------+
++------------------+-----------+-----------------+---------------------------------------------------------------------+
+| Parameter name   | Type      | Default value   | Description                                                         |
++==================+===========+=================+=====================================================================+
+| page[size]       | integer   | 10              | Set a positive integer number.                                      |
+|                  |           |                 | To disable the pagination, set it as '-1.'' In this case            |
+|                  |           |                 | **page[number]** will not be taken into account and can be omitted. |
++------------------+-----------+-----------------+---------------------------------------------------------------------+
+| page[number]     | integer   | 1               | The number of the page.                                             |
++------------------+-----------+-----------------+---------------------------------------------------------------------+
 
 
-Example
-"""""""
-Get the 2nd page of the retreived records for the ``users`` resource with 20 records per page.
+Example. Retreive a particular page of the paged response
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Request:**
+Get the 2nd page of the retreived records for the **users** resource with 20 records per page.
+
+**Request**
 
 .. code-block:: http
 
@@ -946,18 +1043,19 @@ Get the 2nd page of the retreived records for the ``users`` resource with 20 rec
     ...
 
 
-Sorting filters (``sort``)
---------------------------
+Sorting Filter (**sort**)
+"""""""""""""""""""""""""
 
 When the response to your call is a list of objects, you can also sort this list by using the sort filter with any of the
 available values listed in the API reference.
 
 
-Example
-"""""""
-Sort by ``username`` in descending order.
+Example. Sort by a field value
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Request:**
+Sort by **username** in descending order.
+
+**Request**
 
 .. code-block:: http
 
@@ -967,7 +1065,7 @@ Sort by ``username`` in descending order.
     Accept: application/vnd.api+json
     ...
 
-**Response:**
+**Response**
 
 .. code-block:: json
 
@@ -994,19 +1092,27 @@ Sort by ``username`` in descending order.
 
 
 Data API Client Requirements
-============================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The only requirement for the client that will send API requests to the server is that it **must** contain valid ``Content-Type``
-in the header without any media type parameters.
+The only requirement for the client that will send API requests to the server is that it **must** have the **Content-Type** header that looks like: ``Content-Type: application/vnd.api+json``.
+**Content-Type** must not contain any media type parameters.
+
+Example. A valid **Content-Type**
+"""""""""""""""""""""""""""""""""
 
 .. code-block:: http
 
     GET /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
 
-At the same time, it **must** ignore any media type received in the ``Content-Type`` header in response.
 
-Here's an example:
+At the same time, it **must** ignore any media type parameters received in the **Content-Type** header in response.
+
+
+Example
+"""""""
+
+**Request**
 
 .. code-block:: http
 
@@ -1014,6 +1120,7 @@ Here's an example:
     Host: localhost.com
     Content-Type: application/vnd.api+json
 
+**Response**
 
 .. code-block:: json
 
@@ -1029,10 +1136,14 @@ Here's an example:
       }
     ]}
 
-Requests with invalid ``Content-Type`` value in the header will be perceived as `plain`` request, so the response data
-will have different (plain) format.
 
-Here's an example:
+Requests with the invalid **Content-Type** value in the header will be perceived as a plain request, so the response data
+will have not a JSON but plain format.
+
+
+Example. Invalid **Content-Type**
+"""""""""""""""""""""""""""""""""
+**Request**
 
 .. code-block:: http
 
@@ -1040,6 +1151,7 @@ Here's an example:
     Host: localhost.com
     Content-Type: application/json
 
+**Response**
 
 .. code-block:: json
 
