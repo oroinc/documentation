@@ -13,7 +13,7 @@ A Doctrine Listener is a perfect way to do that.
 Configuring the Listener
 ------------------------
 
-Suppose that you have already extended an Oro bundle like ``OroCRMContactBundle`` (you can find more information
+Suppose that you have already extended an Oro bundle like ``OroContactBundle`` (you can find more information
 on this page: `How to extend existing bundle`_).
 And you would like to compliment your contact's social information with some external API data.
 
@@ -48,7 +48,7 @@ This class must have the ``onFlush`` method, which will be called when the event
     namespace Acme\Bundle\ContactBundle\Listener;
 
     use Doctrine\ORM\Event\OnFlushEventArgs;
-    use OroCRM\Bundle\ContactBundle\Entity\ContactEmail;
+    use Oro\Bundle\ContactBundle\Entity\ContactEmail;
 
     class SocialFields
     {
