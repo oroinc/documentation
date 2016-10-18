@@ -374,9 +374,9 @@ the following methods:
     .. code-block:: yaml
         :linenos:
 
-        # src/OroCRM/Bundle/ContactBundle/Resources/config/importexport.yml
+        # src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
         parameters:
-            orocrm_contact.importexport.strategy.contact.class: OroCRM\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
+            orocrm_contact.importexport.strategy.contact.class: Oro\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
 
         services:
 
