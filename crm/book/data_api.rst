@@ -1,12 +1,6 @@
 Web Services API
 ================
 
- .. toctree::
-     :caption: TOC
-     :maxdepth: 2
-     data_api.rst
-
-
 Overview
 --------
 
@@ -676,7 +670,7 @@ Filters
 
 You can perform the GET and DELETE actions on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields. 
 
-Available filters are listed on the :guilabel:`Documentation` tab of the action's expanded area, in the :guilabel:`Filters`*` section. 
+Available filters are listed on the :guilabel:`Documentation` tab of the action's expanded area, in the :guilabel:`Filters` section. 
 
 To filter, perform a GET request and put your filters parameters in the query string.
 
