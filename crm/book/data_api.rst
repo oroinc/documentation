@@ -1,12 +1,15 @@
 Web Services API
 ================
 
- .. .. toctree::
- ..     :caption: TOC
- ..     :maxdepth: 2
- ..     data_api.rst
 
 
+
+
+
+
+
+
+ 
 Overview
 --------
 
@@ -42,14 +45,14 @@ To start using the API, you must take a few preliminary steps:
 
     1. Ensure that the application is installed correctly.
     2. Generate an API key for a user:
-        3. If you want to generate an API key for yourself, navigate to the profile page of your user: 
+        a. If you want to generate an API key for yourself, navigate to the profile page of your user: 
             - either click the :guilabel:`My User` link in the **User Menu** in the top right corner of the current page, or 
             - follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``. 
-        4. If you want to generate an API key for another user, open their view page: 
+        b. If you want to generate an API key for another user, open their view page: 
             - open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`), 
             - find the user who needs an API key, and 
             - click the corresponding grid row or :guilabel:`View` from the ellipsis menu at the right-hand end of the row.
-    5.  Click the :guilabel:`Generate Key` button. You'll see the generated key near the button, it will look like: 'f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2.'
+    3.  Click the :guilabel:`Generate Key` button. You'll see the generated key near the button, it will look like: 'f5c7cd6bf05654e6ce8e5c4c17fbe6535c6161d2.'
 
 
 For more details about how to generate an API Key and authentication header, please see the
@@ -757,8 +760,7 @@ The API allows you to use several types of filters. Filter types are briefly des
 | page        | page[size]=10&page[number]=1 | Used for pagination purposes.                                               |
 +-------------+------------------------------+-----------------------------------------------------------------------------+
 | sort        | sort=id                      | Used for data sorting. By default the ASC sorting apllies.                  |
-|             | or                           | To perform DESC sorting specify ``-`` before field name.                    |                                                               |
-|             | sort=id,-name                |                                                                             |
+|             | or                           | To perform DESC sorting specify ``-`` before field name.                    |                               |             | sort=id,-name                |                                                                             |
 +-------------+------------------------------+-----------------------------------------------------------------------------+
 
 
