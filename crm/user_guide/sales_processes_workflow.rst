@@ -4,10 +4,10 @@
 Sales Processes Workflow
 ========================
 
-To manage sales processes of the company, OroCRM provides the *"Sales Processes"* entity records.
+To manage sales processes of the company, OroCRM provides the **Sales Processes** entity records.
 
 To provide consistent and unified approach within the company, in OroCRM, management of the Sales Processes is
-straightened by the steps of the *"Sales Processes"* :ref:`workflow <user-guide-workflow-management-basics>` that 
+straightened by the steps of the **Sales Processes** :ref:`workflow <user-guide-workflow-management-basics>` that 
 involves the Lead and/or Opportunity records from a B2B Channel.
 
 According to the workflow, the following actions are available for a manager:
@@ -29,10 +29,14 @@ According to the workflow, the following actions are available for a manager:
 3. Any opportunity (whether it was developed or not) may be closed, either as won or lost, subject to the deal 
    outcomes.
 
-4. Any disqualified lead may be reactivated, which means a new lead will be created. A follow-up note can also be 
-   created for every disqualified lead. 
+4. Any disqualified lead may be renewed. To do this:
 
+  - Navigate to the Lead.
+  - Edit its properties.
+  - Change **Status** attribute to **New/Qualified**.
+   
 5. Any closed opportunity can be reopened, which will result in creation of a new opportunity.
+
  
 
 .. image:: ./img/sales_process/sales_process_wf.png
