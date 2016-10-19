@@ -29,7 +29,7 @@ According to the workflow, the following actions are available for a manager:
 3. Any opportunity (whether it was developed or not) may be closed, either as won or lost, subject to the deal 
    outcomes.
 
-4. Any disqualified lead may be renewed. To do this:
+4. Any disqualified lead may be renewed in the following way:
 
   - Navigate to the Lead.
   - Edit its properties.
