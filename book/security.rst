@@ -148,8 +148,8 @@ OroSecurityBundle or requires some additional configuration by you.
 Restricting Access to Controller Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Supposed that you have configured an entity to be protectable via ACLs and that you have granted to
-some of its objects to a set of users, you can now control who can enter certain resources through
+Let's assume that you have configured an entity to be protectable via ACLs. You have granted
+some of its objects to a set of users. Now you can now control who can enter certain resources through
 a controller method. Restricting access can be done in two different ways:
 
 #. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the

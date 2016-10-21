@@ -30,7 +30,7 @@ The inks to all the pages that you have marked as "favorite" are displayed in th
 Add a Page to the "Favorites" List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Most of the pages can be marked as a "favourite". This is handy when you need to return to the same page repeatedly. 
+Most of the pages can be marked as a "favorite". This is handy when you need to return to the same page repeatedly. 
 In order to do so, click the star-shaped *"Mark as favorite*" icon in the top right corner of the page.
 
 |
