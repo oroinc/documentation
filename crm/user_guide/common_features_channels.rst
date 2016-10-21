@@ -18,7 +18,7 @@ OroCRM Community Edition has two types of channels: Web (built for online stores
 system integration.
 
 There is no limit to the number of Channel records that may be defined for one OroCRM instance. Upon creation, you can 
-choose what kind of customer-related information will be collected from each channel, as described below:
+choose what kind of customer-related information will be collected from each channel, as described below.
 
 
 
@@ -29,13 +29,13 @@ Create a Channel Record
 
 To create a channel:
 
-- Go to the *System --> Channels* page.
+- Go to the **System** --> **Channels** page.
  
 - Click the :guilabel:`Create Channel` button in the top right corner.
 
-- The *"Create Channel"* form will appear. 
+- The **Create Channel** form will appear. 
 
-- Specify the channel details as described in the sections below: 
+- Specify the channel details as described in the sections below. 
 
 
 .. _user-guide-channel-guide-general:
@@ -43,9 +43,9 @@ To create a channel:
 Define General Details of the Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Define basic channel information in the *General* section.
+Define basic channel information in the **General** section.
 
-The following three fields are mandatory and **must** be defined:
+The following three fields are mandatory and *must* be defined:
 
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -66,17 +66,17 @@ The following three fields are mandatory and **must** be defined:
 
   The following types are available out-of-the-box:
   
-  - *B2B*: dedicated to B2B customer relations. Described in more detail in the 
+  - **B2B**: dedicated to B2B customer relations. Described in more detail in the 
     :ref:`B2B Channel guide <user-guide-b2b-channel>`.
 
-  - *Magento*: designed for Magento-based stores. Described in more detail in the 
+  - **Magento**: designed for Magento-based stores. Described in more detail in the 
     :ref:`Magento Channel guide <user-guide-magento-channel>`.
 
-  - *Custom*: any other channels."
+  - **Custom**: any other channels."
 
 .. caution::
 
-    Once you have selected *Magento* as a channel type, a new mandatory **Integration*** field will appear.
+    Once you have selected **Magento** as a channel type, a new mandatory **Integration*** field will appear.
     Please see the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` guide  for
     more information.
 
@@ -90,9 +90,9 @@ The following three fields are mandatory and **must** be defined:
 Define What Details Are Collected From the Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The information collecte from a channel is represented by the entitie assigned to the channel and their related 
+The information collected from a channel is represented by the entities assigned to the channel and their related 
 entities. Please, read the :ref:`Data Management Basics guide <user-guide-data-management-basics>` to learn more about 
-entities. In order to assign an entity to a channel and collect the data from the channel, go the *"Entities"* section. 
+entities. In order to assign an entity to a channel and collect the data from the channel, go to the **Entities* section. 
 
       |
   
@@ -103,23 +103,23 @@ entities. In order to assign an entity to a channel and collect the data from th
 One of the entities defined for any channel must be a :term:`customer identity <Customer Identity>`. It is added to
 the entity list automatically, subject to the chosen channel type:
 
-- B2B Channel - B2B Customer
-- Magento Channel - Magento Customer
-- Custom Channel - Customer Identity
+- B2B Channel—B2B Customer
+- Magento Channel—Magento Customer
+- Custom Channel—Customer Identity
 
 Some other entities are by default added to channels of a specific type. 
 
 For example, once you have selected the channel type, the :term:`Opportunity` and 
-:term:`Lead` entities will be added to B2B channels, and the :term:`Cart` and :term:`Order <Order>` entities - to 
+:term:`Lead` entities will be added to B2B channels, and the :term:`Cart` and :term:`Order <Order>` entities—to 
 Magento channels. 
 
 These entities will be added to the entity list by default, however, they are optional and may be removed.
 
-**Custom Entities** are created for specific customer needs and may contain any relevant data, including additional 
+*Custom Entities* are created for specific customer needs and may contain any relevant data, including additional 
 customer details, information about the sales, etc. All the custom entities are available in the drop-down menu of the 
-*"Entities"* section for a channel.
+**Entities* section for a channel.
 
-The ways to create and mange custom entities, are described in the 
+The ways to create and manage custom entities, are described in the 
 :ref:`Entities guide <user-guide-entity-management-from-UI>`.
 
 To add an entity to the channel, choose the entity and click the :guilabel:`Add` button.
@@ -130,7 +130,7 @@ To add an entity to the channel, choose the entity and click the :guilabel:`Add`
 
 |
 
-To delete an entity, click the |IcDelete| icon. This will remove the entity from the channel's list, but not from
+To delete an entity, click the |IcDelete| :guilabel:`Delete` icon. This will remove the entity from the channel's list, but not from
 from the system.
 
       |
@@ -183,9 +183,9 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 - Deactivate or activate channels.  No new data from the channel will be uploaded for
   an inactive channel.
 
-- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel
+- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel.
 
-- Delete the channel
+- Delete the channel.
 
 - Edit entities: 
 
