@@ -52,9 +52,8 @@ To start using the API, you must take a few preliminary steps:
             - click the corresponding grid row or the |icView| :guilabel:`View` icon from the ellipsis menu at the right-hand end of the row.
             
     3.  Click the :guilabel:`Generate Key` button. You'll see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa.'
-    
+|
 
-        |
 .. image:: ./img/api/api_generateapikey_myuser.png
 
 For more details about how to generate an API Key and authentication header, please see the
