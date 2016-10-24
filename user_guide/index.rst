@@ -63,14 +63,15 @@ guide are most relevant for your work duties.
     * :doc:`/user_guide/business_intelligence_filters`
   
   * :doc:`/user_guide/business_intelligence_reports`
-  
+  * :doc:`/user_guide/rfm_user`
       |
   
 * :doc:`/user_guide/common_features`
 
   * :doc:`/user_guide/common_features_accounts`
   * :doc:`/user_guide/common_features_channels`
-  * :doc:`/user_guide/common_features_multi_channel_functionality`  
+  * :doc:`/user_guide/common_features_multi_channel_functionality`
+  *   
   * :doc:`/user_guide/common_features_contacts`
 
     * :doc:`/user_guide/common_features_contact_groups`
@@ -159,6 +160,7 @@ guide are most relevant for your work duties.
     * :doc:`/user_guide/multiple_organizations_support`
     * :doc:`/user_guide/user_management_groups`
 
+  * :doc:`/user_guide/rfm_admin`
   * :doc:`/user_guide/integrations_index`
   
     * :doc:`/user_guide/integrations_overview`

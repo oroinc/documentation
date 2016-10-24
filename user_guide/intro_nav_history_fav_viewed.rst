@@ -24,7 +24,7 @@ History
 Favorites
 ---------
 
-The inks to all the pages that you have marked as "favorite" are displayed in this section.
+The links to all the pages that you have marked as "favorite" are displayed in this section.
 
 
 Add a Page to the "Favorites" List
