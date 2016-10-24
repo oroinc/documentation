@@ -563,12 +563,10 @@ Example. Successful request
 
 
 
-In case of an error, a response status code indicates the type of
-the error occurred. The most common of such codes are the following:
+In case of an error, a response status code indicates the type of the error occurred. The most common of such codes are the following:
 
     -   **400 Bad Request**—The request is malformed, such as if the body of the request contains misformatted JSON.
-    -   **401 Unauthorized**—No or invalid authentication details are provided. This code can be used to trigger an
-       authentication pop-up if the API is used from a browser.
+    -   **401 Unauthorized**—No or invalid authentication details are provided. This code can be used to trigger an authentication pop-up if the API is used from a browser.
     -   **403 Forbidden**—Authentication succeeded but authenticated user does not have access to the resource.
     -   **404 Not Found**—A non-existent resource is requested.
     -   **500 Internal Server Error**—The server encountered an unexpected condition which prevented it from fulfilling the request.
