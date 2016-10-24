@@ -622,7 +622,7 @@ Most common resource fields
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | Name         | Type         | Description                                                                                         |
 +==============+==============+=====================================================================================================+
-| id           | integer      | The unique identifier of a resource. In most cases, it is represented by an integer value, but       |
+| id           | integer      | The unique identifier of a resource. In most cases, it is represented by an integer value, but      |
 |              |              | depending on the resource data model, it can be represented by a string or contain multiple columns |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | createdAt    | datetime     | The date and time of resource record creation.                                                      |
@@ -641,7 +641,6 @@ Most common resource fields
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 
 
-|
 Typical Communication Activities Fields
 """""""""""""""""""""""""""""""""""""""
 
@@ -697,7 +696,6 @@ Similar to a field, a filter declares a data type and only takes specific values
 
 Below are examples of requests and errors.
 
-|
 Example 2. Wrong input type
 """""""""""""""""""""""""""
 
@@ -762,7 +760,6 @@ The API allows you to use several types of filters. Filter types are briefly des
 |         | sort=id,-name                | To perform DESC sorting specify ``-`` before field name.                    |
 +---------+------------------------------+-----------------------------------------------------------------------------+
 
-|
 Fields Filter (**fields**)
 """"""""""""""""""""""""""
 
@@ -841,8 +838,6 @@ is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, fo
 | **>=**   | Greater than or equal | %3E%3D      | GET /api/users?filter[id]>=6 HTTP/1.1 |
 +----------+-----------------------+-------------+---------------------------------------+
 
-|
-
 Example. Use operators to filter data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -901,6 +896,7 @@ All included resources will be represented in **included** section at the end of
 
 Example. Include a related resources information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Include the **roles** relation with the **fields** filter.
 
 **Request**
@@ -1011,7 +1007,6 @@ Example. Retrieve only required fields of the related resource
       ]
     }
 
-|
 Pagination Filter (**page**)
 """"""""""""""""""""""""""""
 
@@ -1031,9 +1026,8 @@ parameters should be passed as the parameters of the query string.
 +----------------+---------+---------------+---------------------------------------------------------------------+
 
 
-|
 Example. Retrieve a particular page of the paged response
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Get the 2nd page of the retrieved records for the **users** resource with 20 records per page.
 
@@ -1095,7 +1089,6 @@ Sort by **username** in descending order.
       ]
     }
 
-|
 Data API Client Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1113,7 +1106,6 @@ Example. A valid **Content-Type**
 
 At the same time, it **must** ignore any media type parameters received in the **Content-Type** header of the response.
 
-|
 Example. Ignore media type in response 
 """"""""""""""""""""""""""""""""""""""
 **Request**
@@ -1144,7 +1136,6 @@ Example. Ignore media type in response
 Requests with the invalid **Content-Type** value in the header will be perceived as a plain request, so the response data
 will have not a JSON but a plain format.
 
-|
 Example. Invalid **Content-Type**
 """""""""""""""""""""""""""""""""
 **Request**
