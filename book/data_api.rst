@@ -57,7 +57,6 @@ To start using the API, you must take a few preliminary steps:
         |
         .. image:: ./img/api/api_generateapikey_myuser.png
 
-
 For more details about how to generate an API Key and authentication header, please see the
 `How to use WSSE authentication <../cookbook/how-to-use-wsse-authentication>`__ section of `The Oro Cookbook <../cookbook>`__ guide and the `Log in, View Your User Page, and Set up Your Profile <../user-guide/intro-log-in-and-edit-profile>`__ section of the `User Guide <../user-guide>`__.
 
