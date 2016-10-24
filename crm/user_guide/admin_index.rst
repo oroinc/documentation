@@ -26,7 +26,7 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/user_guide/multiple_organizations_support`
   * :doc:`/user_guide/user_management_groups`
   
-
+* :doc:`/user_guide/rfm_admin`
 * :doc:`/user_guide/integrations_index`
   
   * :doc:`/user_guide/integrations_overview`
