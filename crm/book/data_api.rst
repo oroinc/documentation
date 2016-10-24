@@ -542,7 +542,7 @@ In case of a successful request, a response status code will be one of the follo
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
 Example. Successful request
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Request**
 
