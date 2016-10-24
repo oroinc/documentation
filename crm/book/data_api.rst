@@ -267,7 +267,6 @@ Attributes or sub resources that are restricted are included as *null* as well.
 
 All timestamps are returned in ISO 8601 format: *YYYY-MM-DDTHH:MM:SSZ*.
 
-|
 Authentication
 ^^^^^^^^^^^^^^
 
