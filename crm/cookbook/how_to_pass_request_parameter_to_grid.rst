@@ -105,7 +105,7 @@ The controller receives a contact entity and passes it to the view:
 
         use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-        use OroCRM\Bundle\ContactBundle\Entity\Contact;
+        use Oro\Bundle\ContactBundle\Entity\Contact;
 
         class TaskController extends Controller
         {
