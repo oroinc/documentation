@@ -54,7 +54,7 @@ To start using the API, you must take a few preliminary steps:
     3.  Click the :guilabel:`Generate Key` button. You'll see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa.'
     
 
-        |   
+        |
         .. image:: ./img/api/api_generateapikey_myuser.png
 
 
@@ -318,27 +318,28 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 
 
 
-+------------------+----------------+----------------------------------------+----------------------------------------------+
-| HTTP Method      | CRUD operation | Entire Collection (e.g. /users)        | Specific Item (e.g. /users/{id})             |
-+==================+================+========================================+==============================================+
-| GET              | Read           | 200 (OK), a list of entities.          | 200 (OK), a single entity.                   |
-|                  |                | Use pagination, sorting and filtering  |                                              |
-|                  |                | to navigate big lists.                 | 404 (Not Found), if ID not found or invalid. |
-+------------------+----------------+----------------------------------------+----------------------------------------------+
-| POST             | Create         | 201 (Created), Response contains       | **not applicable**                           |
-|                  |                | response similar to **GET** /user/{id} |                                              |
-|                  |                | containing new ID.                     |                                              |
-+------------------+----------------+----------------------------------------+----------------------------------------------+
-| PATCH            | Update         | **not applicable**                     | 200 (OK) or 204 (No Content).                |
-|                  |                |                                        |                                              |
-|                  |                |                                        | 404 (Not Found), if ID not found or invalid. |
-+------------------+----------------+----------------------------------------+----------------------------------------------+
-| DELETE           | Delete         | 200(OK) or 403(Forbidden) or           | 200 (OK).                                    |
-| 404 (Not Found), |                | 400(Bad Request) if no filter          |                                              |
-|                  |                | is specified                           | if ID not found or invalid.                  |
-+------------------+----------------+----------------------------------------+----------------------------------------------+
-| PUT              | Update/Replace | **not implemented**                    | **not implemented**                          |
-+------------------+----------------+----------------------------------------+----------------------------------------------+
++-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
+| HTTP Verb   | CRUD operation | API actions         | Entire Collection (e.g. /users)        |         Specific Item (e.g. /users/{id})    |
++=============+================+=====================+========================================+=============================================+
+| GET         | Read           | get                 | 200 (OK), list of entities.            | 200 (OK), single entity.                    |
+|             |                | get_list            | Use pagination, sorting and filtering  | 404 (Not Found), if ID not found or invalid.|
+|             |                | get_subresource     | to navigate big lists.                 |                                             |
+|             |                | get_relationship    |                                        |                                             |
++-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
+| POST        | Create         | create              | 201 (Created), Response contains       | **not applicable**                          |
+|             |                | add_relationship    | response similar to **GET** /user/{id} |                                             |
+|             |                |                     | containing new ID.                     |                                             |
++-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
+| PATCH       | Update         | update              | **not applicable**                     | 200 (OK) or 204 (No Content).               |
+|             |                | update_relationship |                                        | 404 (Not Found), if ID not found or invalid.|
+|             |                |                     |                                        |                                             |
++-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
+| DELETE      | Delete         | delete              | 200(OK) or 403(Forbidden) or           | 200 (OK). 404 (Not Found),                  |
+|             |                | delete_list         | 400(Bad Request) if no filter          | if ID not found or invalid.                 |
+|             |                | delete_relationship | is specified                           |                                             |
++-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
+| PUT         | Update/Replace | **not implemented** | **not implemented**                    | **not implemented**                         |
++-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
 
 |
 Also, the HTTP methods can be classified by the *idempotent* and *safe* properties.
@@ -444,21 +445,21 @@ and **Authentication** parameters, e.g.:
     X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
 
 Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as a total
-number of records per certain resource with the GET method or a total number of affected records with
-the DELETE method. The **X-Include** request header can be used for such purposes.
+number of records per certain resource for **get_list** and **delete_list** API actions or a total number of affected records
+for the **delete_list** API action. The **X-Include** request header can be used for such purposes.
 
 The following table describes all existing keys for the X-Include header.
 
 
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
-| Method         | X-Include key   | Response Header           | Description                                           |
-+================+=================+===========================+=======================================================+
-| GET            | totalCount      | X-Include-Total-Count     | Returns the total number of entities.                 |
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
-| DELETE         | totalCount      | X-Include-Total-Count     | Returns the total number of entities.                 |
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
-| DELETE         | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities.               |
-+----------------+-----------------+---------------------------+-------------------------------------------------------+
++----------------+-----------------+---------------------------+-----------------------------------------+
+| API action     | X-Include key   | Response Header           | Description                             |
++================+=================+===========================+=========================================+
+| get\_list      | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
++----------------+-----------------+---------------------------+-----------------------------------------+
+| delete\_list   | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
++----------------+-----------------+---------------------------+-----------------------------------------+
+| delete\_list   | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities. |
++----------------+-----------------+---------------------------+-----------------------------------------+
 
 |
 Header Examples
