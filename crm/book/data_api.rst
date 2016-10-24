@@ -303,7 +303,6 @@ Here's an example of a request header with the WSSE authentication. Please pay a
 For more details about WSSE authentication and particularly for how to generate an API Key and authentication header, please see the
 `How to use WSSE authentication <../cookbook/how-to-use-wsse-authentication>`__ section of `The Oro Cookbook <../cookbook>`__ guide.
 
-|
 HTTP Methods Available in Oro API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -337,7 +336,6 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 | PUT         | Update/Replace | **not implemented** | **not implemented**                    | **not implemented**                         |
 +-------------+----------------+---------------------+----------------------------------------+---------------------------------------------+
 
-|
 Also, the HTTP methods can be classified by the *idempotent* and *safe* properties.
 
 The *safe* methods are the HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL,
@@ -368,7 +366,6 @@ Below is a table summarizing HTTP methods by its idempotency and safety:
 | PATCH       | no         | no   |
 +-------------+------------+------+
 
-|
 GET
 """
 
@@ -425,8 +422,6 @@ On successful deletion, the HTTP response status code 204 (No Content) returns w
     If you DELETE a resource, it's removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND)
     since it was already removed and therefore is no longer findable.
 
-
-|
 HTTP Header Specifics
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -457,7 +452,6 @@ The following table describes all existing keys for the X-Include header.
 | delete\_list   | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities. |
 +----------------+-----------------+---------------------------+-----------------------------------------+
 
-|
 Header Examples
 """""""""""""""
 Example 1. Total number of existing records
@@ -491,7 +485,6 @@ Retrieve the total count of resource records.
     Connection: Keep-Alive
     Content-Type: application/vnd.api+json
 
-|
 Example 2. Total number of deleted records
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Retrieve the total number of deleted records of the resource
@@ -508,7 +501,6 @@ Retrieve the total number of deleted records of the resource
     ....
     X-Include: deletedCount
 
-|
 Example 3. Conditions for deletion operation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Request query string contains a filter that specifies conditions for deletion operation. Filters are described in more detail in the `Filters <data-api#filters>`__ section.
@@ -538,7 +530,6 @@ Request query string contains a filter that specifies conditions for deletion op
     Connection: Keep-Alive
     Content-Type: text/html
 
-|
 Response Status Codes and Errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Response status codes
@@ -550,7 +541,6 @@ In case of a successful request, a response status code will be one of the follo
     -   **201 Created**—In the response to a POST that results in a creation. When this status received, the request body contains the description of the newly created entity in JSON format (similar to regular GET request).
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
-|
 Example. Successful request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -583,7 +573,6 @@ the error occurred. The most common of such codes are the following:
     -   **404 Not Found**—A non-existent resource is requested.
     -   **500 Internal Server Error**—The server encountered an unexpected condition which prevented it from fulfilling the request.
 
-|
 Example. Request resulted in error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -604,7 +593,6 @@ Example. Request resulted in error
        Status Code: 404 Not Found
        Remote Address: 127.0.0.1:80
 
-|
 Error Messages
 """"""""""""""
 
@@ -684,7 +672,6 @@ as 'Call,' 'Email,' etc.
 | timesContactedOut    | integer  | The total number of outgoing communication activities for the resource record.         |
 +----------------------+----------+----------------------------------------------------------------------------------------+
 
-|
 Filters
 ^^^^^^^^
 
@@ -694,7 +681,6 @@ Available filters are listed on the :guilabel:`Documentation` tab of the method'
 
 To filter, perform a GET request and put your filters parameters in the query string.
 
-|
 Example 1. Filter in the query string
 """""""""""""""""""""""""""""""""""""
 
