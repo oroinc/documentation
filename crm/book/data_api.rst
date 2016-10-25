@@ -2,7 +2,6 @@ Web Services API
 ================
 
 .. toctree::
-    data_api
     :maxdepth: 7
  
 Overview
