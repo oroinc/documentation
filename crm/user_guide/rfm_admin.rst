@@ -7,7 +7,6 @@ In OroCRM the RFM metrics are available for Magento customers and are defined pe
 For information about what is RFM and how to use it in OroCRM, please see the `RFM Analysis <./rfm-user>`__ guide.
 
 .. toctree::
-    rfm_admin
     :maxdepth: 3
 
 
