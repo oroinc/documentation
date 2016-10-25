@@ -46,15 +46,17 @@ To start using the API, you must take a few preliminary steps:
             
             - follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``. 
             
-        - If you want to generate an API key for another user, open their view page: 
+        - If you want to generate an API key for another user:
+        
+            - open their view page, 
         
             - open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`), 
             
-            - find the user who needs an API key, and 
+            - find the user who needs an API key, 
             
             - click the corresponding grid row or the |icView| :guilabel:`View` icon from the ellipsis menu at the right-hand end of the row.
             
-    3.  Click the :guilabel:`Generate Key` button. You'll see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa.'
+    3.  Click the :guilabel:`Generate Key` button. You will see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa.'
 
 .. image:: ./img/api/api_generateapikey_myuser.png
 
@@ -93,7 +95,7 @@ This page represents a list of plain API resources. Plain API resources are old 
 based on `FOSRestBundle <http://symfony.com/doc/current/bundles/FOSRestBundle/index.html>`__.
 
 To switch to the JSON API sandbox, go to the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page, or click the :guilabel:`JSON.API`
-link at the upper left-hand corner of the sandbox page.
+link in the upper left-hand corner of the sandbox page.
 
 |
 
@@ -117,7 +119,7 @@ To review available methods for the resource, click the resource row or the :gui
 
 |
 
-There is a documentation on how a method can be used with different resource URIs and there is a sandbox that contains a form that can be used to perform API requests. 
+There is a documentation on how a method can be used with different resource URIs and there is a sandbox which contains a form that can be used to perform API requests. 
 To review the documentation and access the sandbox, click the method row for a specific resource URI. You will see the corresponding tabs in the expanded area. 
 
 |
@@ -148,22 +150,22 @@ To retrieve a single record for a particular resource record with JSON API, perf
   
     4.  Click the :guilabel:`Sandbox` tab. You will see the request form.
  
-    5.  If you want to retrieve a single record, in the :guilabel:`Requirements` section, specify the record id for the :guilabel:`id` field.
+    5.  If you want to retrieve a single record, specify the record id for the :guilabel:`id` field in the :guilabel:`Requirements` section.
   
     6.  Click the :guilabel:`Try!` button to send the request to the server.
 
-After the response from the server is received, the :guilabel:`Request URL`, :guilabel:`Response Headers`, :guilabel:`Response Body`
-and :guilabel:`Curl Command Line` sections appear at the bottom of the :guilabel:`Sandbox` tab.
+As soon as the response from the server is received, the :guilabel:`Request URL`, :guilabel:`Response Headers`, :guilabel:`Response Body`
+and :guilabel:`Curl Command Line` sections will appear at the bottom of the :guilabel:`Sandbox` tab.
 
 The :guilabel:`Request URL` block contains the request URL sent to the server.
 
-The :guilabel:`Response Headers` block contains the status code of the server's response. If the request was successful,
+The :guilabel:`Response Headers` block contains the status code of the server's response. If the request is successful,
 it contains the '200 OK' string.
 To see the list of headers which the server sent in the response, click the :guilabel:`Expand` link next to the section header .
 
-If the request was successful, you should see the output data of the request in the :guilabel:`Response Body` section. In the given
+If the request is successful, you should see the output data of the request in the :guilabel:`Response Body` section. In the given
 case, entity data will be in JSON format. More information about this format can
-be found at the `JSON API <http://jsonapi.org/format/>`__ site.
+be found on the `JSON API <http://jsonapi.org/format/>`__ site.
 
 The :guilabel:`Curl Command Line` section contains an example of the CLI command to perform the request
 with `Curl <https://curl.haxx.se/>`__.
@@ -394,7 +396,7 @@ Below is a table summarizing HTTP methods by its idempotency and safety:
 GET
 """
 
-The HTTP GET method is used to *read* (or retrieve) a representation of a resource. In the case of success (or non-error), GET returns a representation in JSON and an HTTP response status code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
+The HTTP GET method is used to *read* (or retrieve) a representation of a resource. In case of success (or non-error), GET returns a representation in JSON and an HTTP response status code of 200 (OK). In an error case, it most often returns a 404 (NOT FOUND) or 400 (BAD REQUEST).
 
 .. note::
     According to the design of the HTTP specification, GET requests are used only to read data and not change it.
@@ -405,16 +407,16 @@ The HTTP GET method is used to *read* (or retrieve) a representation of a resour
 POST
 """"
 
-The POST method is most often utilized to *create* new resources. In particular, it's used to create subordinate
+The POST method is most often utilized to *create* new resources. In particular, it is used to create subordinate
 resources. That is, subordinate to some other (e.g. parent) resource. In other words, when creating a new resource,
 POST to the parent and the service takes care of associating the new resource with the parent, assigning an
 ID (new resource URI), etc.
 
-On successful creation, return the HTTP response code 201.
+On successful creation, HTTP response code 201 is returned.
 
 .. caution::
 
-    POST is not the safe operation. Making two identical POST requests will most likely result in two resources containing
+    POST is not a safe operation. Making two identical POST requests will most likely result in two resources containing
     the same information but with different identifiers.
 
 
@@ -429,10 +431,10 @@ server should be modified to produce a new version.
 
 .. caution::
 
-    PATCH is not the safe operation. Collisions from multiple PATCH requests may be dangerous because some patch formats
-    need to operate from a known base point or else they will corrupt the resource. Clients using this kind of patch
+    PATCH is not a safe operation. Collisions from multiple PATCH requests may be dangerous because some patch formats
+    need to operate from a known base point, otherwise they will corrupt the resource. Clients using this kind of patch
     application should use a conditional request (e.g. GET a resource, ensure it was not modified and apply PATCH) such
-    that the request will fail if the resource has been updated since the client last accessed the resource.
+    that the request will fail, if the resource has been updated since the client last accessed the resource.
 
 
 DELETE
@@ -444,8 +446,8 @@ On successful deletion, the HTTP response status code 204 (No Content) returns w
 
 .. important::
 
-    If you DELETE a resource, it's removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND)
-    since it was already removed and therefore is no longer findable.
+    If you DELETE a resource, it is removed. Repeatedly calling DELETE on that resource will often return a 404 (NOT FOUND)
+    since it was already removed and, therefore, is no longer findable.
 
 HTTP Header Specifics
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -460,7 +462,7 @@ and **Authentication** parameters, e.g.:
     Authorization: WSSE profile="UsernameToken"
     X-WSSE: UsernameToken Username="...",PasswordDigest="...", Created="...", Nonce="..."
 
-Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as a total
+Also, by providing additional requests header parameters, it is possible to retrieve additional information, such as the total
 number of records per certain resource for GET and DELETE methods or a total number of affected records
 for the DELETE methods. The **X-Include** request header can be used for such purposes.
 
@@ -591,7 +593,7 @@ Example. Successful request
 
 
 
-In case of an error, a response status code indicates the type of the error occurred. The most common of such codes are the following:
+In case of an error, a response status code indicates the type of an error that has occurred. The most common of such codes are the following:
 
     -   **400 Bad Request**—The request is malformed, such as if the body of the request contains misformatted JSON.
     
@@ -662,7 +664,7 @@ Most common resource fields
 | updatedAt    | datetime     | The date and time of the last update of the resource record.                                        |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | owner        | user         | An owner record represents the ownership capabilities of the record. In other words,                |
-|              | or           | depending on the owner type the different level of access applies.                                  |
+|              | or           | depending on the owner type, a different level of access applies.                                  |
 |              | businessunit | For more details, see `Access and Permissions Management <../user-guide/user-management-roles>`__.  |
 |              | or           |                                                                                                     |
 |              | organization |                                                                                                     |
@@ -706,7 +708,7 @@ Filters
 
 You can perform the GET and DELETE methods on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields. 
 
-Available filters are listed on the :guilabel:`Documentation` tab of the method's expanded area, in the :guilabel:`Filters` section. 
+Available filters are listed in the :guilabel:`Documentation` tab of the method's expanded area, in the :guilabel:`Filters` section. 
 
 To filter, perform a GET request and put your filters parameters in the query string.
 
@@ -715,7 +717,7 @@ To filter, perform a GET request and put your filters parameters in the query st
 Example 1. Filter in the query string
 """""""""""""""""""""""""""""""""""""
 
-Retrieve all users of the organization '1.'
+Retrieve all users of organization '1.'
 
 **Request**
 
@@ -1168,7 +1170,7 @@ Example. Ignore media type in response
 
 
 Requests with the invalid **Content-Type** value in the header will be perceived as a plain request, so the response data
-will have not a JSON but a plain format.
+will a plain format rather than JSON.
 
 Example. Invalid **Content-Type**
 """""""""""""""""""""""""""""""""
