@@ -53,5 +53,6 @@ Please note that in many cases, the tools may be not available to the usual user
     processes
     package_manager
     user_management_index
+    rfm_admin
     integrations_index
 
