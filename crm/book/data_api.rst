@@ -424,7 +424,7 @@ On successful deletion, the HTTP response status code 204 (No Content) returns w
 HTTP Header Specifics
 ^^^^^^^^^^^^^^^^^^^^^^
 
-As mentioned in the `Authentication<./data-api#authentication>`__ section, to successfully perform an API request, it is important to provide the correct **Content-Type**
+As mentioned in the `Authentication <./data-api#authentication>`__ section, to successfully perform an API request, it is important to provide the correct **Content-Type**
 and **Authentication** parameters, e.g.:
 
 .. code-block:: http
