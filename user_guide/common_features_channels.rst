@@ -91,8 +91,7 @@ Define What Details Are Collected From the Channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The information collected from a channel is represented by the entities assigned to the channel and their related 
-entities. Please, read the :ref:`Data Management Basics guide <user-guide-data-management-basics>` to learn more about 
-entities. In order to assign an entity to a channel and collect the data from the channel, go to the **Entities* section. 
+entities. Please, read the :ref:`Data Management Basics guide <user-guide-data-management-basics>` to learn more about entities. In order to assign an entity to a channel and collect the data from the channel, go to the **Entities** section. 
 
       |
   
@@ -117,7 +116,7 @@ These entities will be added to the entity list by default, however, they are op
 
 *Custom Entities* are created for specific customer needs and may contain any relevant data, including additional 
 customer details, information about the sales, etc. All the custom entities are available in the drop-down menu of the 
-**Entities* section for a channel.
+**Entities** section for a channel.
 
 The ways to create and manage custom entities, are described in the 
 :ref:`Entities guide <user-guide-entity-management-from-UI>`.
