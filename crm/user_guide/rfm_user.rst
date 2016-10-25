@@ -4,8 +4,8 @@ RFM Analysis
 In OroCRM the RFM metrics are available for Magento customers and are
 defined per channel.
 
-.. toctree::
-    :maxdepth: 3
+.. contents:: :local:
+    :depth: 2
 
 
 What Is RFM?
