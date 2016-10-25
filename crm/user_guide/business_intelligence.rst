@@ -24,3 +24,4 @@ related trends, and segmentation tools help users focus on a specific part of th
     business_intelligence_segments
     business_intelligence_filters
     business_intelligence_reports
+    rfm_user
