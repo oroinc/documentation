@@ -5,7 +5,7 @@ In OroCRM the RFM metrics are available for Magento customers and are
 defined per channel.
 
 .. toctree::
-    rfm-user-guide
+    rfm_user
     :maxdepth: 3
 
 
