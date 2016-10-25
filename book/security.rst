@@ -10,7 +10,7 @@ Introduction
 The `OroSecurityBundle`_ sits on top of the Symfony security layer to reach protect your resources.
 This means that each user of your application is granted access to a particular subset of your
 company's resources. Coincidentally, they have to be prevented from accessing resources, access was
-not granted on to them.
+not granted to them.
 
 Access Control Lists
 --------------------
@@ -21,8 +21,8 @@ by the OroSecurityBundle to fulfill the requirements of companies in the busines
 Access Levels
 ~~~~~~~~~~~~~
 
-Access can be granted to a user for a certain resource on the several levels. The lowest level is
-the *User* level. Being at this level means that a user can only access resources that have been
+Access can be granted to a user for a certain resource on several levels. The lowest level is
+the *User* level. Being on this level means that users can only access resources that have been
 assigned to them. At the other end of the hierarchy is the *System* level. Users at this level have
 the permission to access all records within the whole system without exception. The security bundle
 comes with the following five levels (ordered up from the bottom of the hierarchy):
@@ -47,8 +47,8 @@ comes with the following five levels (ordered up from the bottom of the hierarch
 | *System*        | ``SYSTEM_LEVEL`` | The user can access all objects within the system.        |
 +-----------------+------------------+-----------------------------------------------------------+
 
-Each record is associated an owning organization. When a user logs into the system, they work in
-the scope of one of their organizations. If a user is member in several organizations, they can
+Each record is associated with an owning organization. When a user logs into the system, they work in
+the scope of one of their organizations. If a user is a member in several organizations, they can
 switch the organization scope that is used to perform access checks.
 
 .. note::
@@ -58,7 +58,7 @@ switch the organization scope that is used to perform access checks.
     *Constant* column.
 
     There are two special constants ``AccessLevel::UNKNOWN`` (unknown acccess level, should not be
-    assign to a user) and ``AccessLevel::NONE_LEVEL`` (globally deny access for the user).
+    assigned to a user) and ``AccessLevel::NONE_LEVEL`` (globally deny access for the user).
 
 .. _permissions:
 
@@ -91,7 +91,7 @@ do with the resource. Namely, these permissions are:
 Configuring Entities
 --------------------
 
-To be able to protect the access to your entities, you first have to configure which permissions
+To be able to protect access to your entities, you first have to configure which permissions
 can be granted for a user to them. Use the ``security`` scope in the ``defaultValues`` section of
 the ``@Config`` annotation:
 
@@ -140,17 +140,17 @@ separated explicitly. For example, you limit it to the ``VIEW`` and ``EDIT`` per
 Protecting Resources
 --------------------
 
-After having configured which permissions a user can be granted on a particular entity, you have to
+After having configured which permissions a user can be granted to a particular entity, you have to
 make sure that the permissions are taken into account when checking if a user has access to a
 resource. Depending on the resource, this check can be performed automatically by the
-OroSecurityBundle or requires some additional configuration by you.
+OroSecurityBundle or require some additional configuration made by you.
 
 Restricting Access to Controller Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let's assume that you have configured an entity to be protectable via ACLs. You have granted
+Let us assume that you have configured an entity to be protectable via ACLs. You have granted
 some of its objects to a set of users. Now you can now control who can enter certain resources through
-a controller method. Restricting access can be done in two different ways:
+the controller method. Restricting access can be done in two different ways:
 
 #. Use the ``@Acl`` annotation on a controller method, providing the entity class name and the
    permission to check for:
@@ -180,8 +180,8 @@ a controller method. Restricting access can be done in two different ways:
            }
        }
 
-#. When you are in the need to perform a particular check repeatedly, writing the ``@Acl`` over and
-   over again becomes a tedious task. This becomes even more a serious issue when your requirements
+#. When you need to perform a particular check repeatedly, writing ``@Acl`` over and
+   over again becomes a tedious task. This becomes even a more serious issue when your requirements
    change and you have to change a lot of ACLs. Luckily, you can configure an ACL globally in your
    bundle configuration and refer to using the ACL id using the ``@AclAncestor`` annotation.
 
@@ -260,7 +260,7 @@ Data Grids
 ~~~~~~~~~~
 
 Records that are part of a data grid are automatically protected by the OroSecurityBundle. View
-permissions are attached to each record of a data grid.
+permissions are attached to each record of the data grid.
 
 .. _book-security-protecting-dql-queries:
 
@@ -293,10 +293,10 @@ provided by the OroSecurityBundle::
         }
     }
 
-In this example, first a query is built which selects all products from the database which are more
+In this example, first, a query is built that selects all products from the database which are more
 expensive than ``19.99`` order by their price. Then, the query builder is passed to the ``apply()``
 method of the ``oro_security.acl_helper`` service. This service, an instance of the
-:class:`Oro\\Bundle\\SecurityBundle\\ORM\\Walker\\AclHelper` class, modifies the query to only
+:class:`Oro\\Bundle\\SecurityBundle\\ORM\\Walker\\AclHelper` class, modifies the query only to the
 return entities the user has access to.
 
 Manual Access Checks
@@ -328,7 +328,7 @@ If you need to manually check the access of the current user to a certain object
 
 .. sidebar:: Restricting Access to "Non-Entity" Resources
 
-    Sometimes you don't want to protect an entity but just want to allow or deny access to a
+    Sometimes you do not want to protect an entity but just want to allow or deny access to a
     certain part of your application. To achieve this, use the special ``action`` type for an ACL:
 
     .. configuration-block::
