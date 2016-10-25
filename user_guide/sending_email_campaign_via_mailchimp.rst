@@ -4,9 +4,7 @@ Sending Email Campaign via MailChimp
 Flow
 ----
 
-|
 .. image:: ./img/mc_email_campaign/oro_mc_integration.jpg
-|
 
 
 Configure MailChimp Integration
@@ -37,21 +35,22 @@ create an API key. To do that:
 A newly created key will appear at the top of the list. Copy the key.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_account.jpg
-|
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_extras_api.jpg
-|
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_create_key.jpg
-|
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_copy_key.jpg
-|
 
+|
 
 Now log into OroCRM and navigate to \ **System>Integrations>Manage
 Integrations**.
@@ -59,13 +58,12 @@ Integrations**.
 Click **Create Integration** in the top right corner.
 
 |
+
 .. image:: ./img/mc_email_campaign/o_manage_integrations.jpg
-|
 
 |
+
 .. image:: ./img/mc_email_campaign/o_create_integration.jpg
-|
-
 
 Next, complete the following fields:
 
@@ -90,7 +88,9 @@ Next, complete the following fields:
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 |
+
 .. image:: ./img/mc_email_campaign/o_choose_mc_integration.jpg
+
 |
 
 
