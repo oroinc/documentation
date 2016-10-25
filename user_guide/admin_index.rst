@@ -34,6 +34,7 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/user_guide/magento_channel_integration`
   * :doc:`/user_guide/ldap_integration`
   * :doc:`/user_guide/mailchimp_integration`
+  * :doc:`/user_guide/sending_email_campaign_via_mailchimp`
   * :doc:`/user_guide/dotmailer_integration`
   * :doc:`/user_guide/ms_exchange_integration`
   * :doc:`/user_guide/outlook_sync`
