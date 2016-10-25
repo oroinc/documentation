@@ -339,7 +339,7 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 
 
 +-------------+----------------+----------------------------------------+----------------------------------------------+
-| HTTP Verb   | CRUD operation | Entire Collection (e.g. /users)        |         Specific Item (e.g. /users/{id})     |
+| HTTP Method | CRUD operation | Entire Collection (e.g. /users)        |         Specific Item (e.g. /users/{id})     |
 +=============+================+========================================+==============================================+
 | GET         | Read           | 200 (OK), list of entities.            | 200 (OK), single entity.                     |
 |             |                | Use pagination, sorting and filtering  |                                              |
@@ -468,7 +468,7 @@ The following table describes all existing keys for the X-Include header.
 
 
 +-------------+-----------------+---------------------------+-----------------------------------------+
-| HTTP MEthod | X-Include key   | Response Header           | Description                             |
+| HTTP Method | X-Include key   | Response Header           | Description                             |
 +=============+=================+===========================+=========================================+
 | GET         | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
 +-------------+-----------------+---------------------------+-----------------------------------------+
@@ -772,7 +772,7 @@ The API allows you to use several types of filters. Filter types are briefly des
 | Filter  | Usage Example                | Description                                                                 |
 +=========+==============================+=============================================================================+
 | fields  | fields[owner]=id,name        | Used for limiting the response data only to specified fields.               |
-|         |                              | Depends on the **include** filter in case if filter is applied to relation. |
+|         |                              | Depends on the **include** filter if the filter is applied to a relation.   |
 +---------+------------------------------+-----------------------------------------------------------------------------+
 | filter  | filter[id]=1                 | Used for filtering the response data by specific values of a specific       |
 |         | or                           | field. Can accept additional operators like ``<``, ``>``, etc.              |
