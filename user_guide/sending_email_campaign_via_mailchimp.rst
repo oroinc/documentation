@@ -107,10 +107,10 @@ In order to sync your **Integration:**
 -  Click **Schedule Sync** in the top right corner.
 
 |
+
 .. image:: ./img/mc_email_campaign/o_manage_integrations_orocrm_schedule_sync.jpg
+
 |
-
-
 
 Prepare Data for the Campaign in OroCRM
 ---------------------------------------
@@ -143,7 +143,9 @@ case, it is vital to add **Email Column** along with the First and Last
 Name of the contact.
 
 |
+
 .. image:: ./img/mc_email_campaign/o_marketing_list_email.jpg
+
 |
 
 
@@ -156,7 +158,9 @@ Now it is time to create a list on the MailChimp side. Login to your
 MailChimp account. Click on **Lists** in the menu above.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_create_list.jpg
+
 |
 
 
@@ -216,7 +220,9 @@ Subscribers List in MailChimp. To do this:
 -  Press **Connect.**
 
 |
+
 .. image:: ./img/mc_email_campaign/o_select_mc_subscribers_list2.jpg
+
 |
 
 
@@ -240,7 +246,9 @@ specified when creating a list on the OroCRM side, such as dates of
 birth or custom details, will not be synced.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_test_list2.jpg
+
 |
 
 
@@ -249,7 +257,9 @@ Create and Send Campaign on the MailChimp Side
 ----------------------------------------------
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_create_campaign.jpg
+
 |
 
 
@@ -272,7 +282,9 @@ select. You can choose one of the following:
 -  RSS Campaign
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_select_campaign.jpg
+
 |
 
 
@@ -281,7 +293,9 @@ in your email campaign. Here we can select the list segment that we
 created before.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_sending_to_test_list2.jpg
+
 |
 
 
@@ -303,7 +317,9 @@ OroCRM side, will appear below. Just click on the list that you would
 like to use. Next, press the **Update Recipient Count** button.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_choose_segments.jpg
+
 |
 
 
@@ -330,7 +346,9 @@ wish to promote your email in social media, select **Connect to
 Twitter** or **Connect to Facebook**.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_tracking.jpg
+
 |
 
 
@@ -343,7 +361,9 @@ specify merge tags for your recipients, i.e. \*\|FNAME\|\* or
 \*\|FNAME\|\* \*\|LNAME\|\*\ **.**
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_campaign_Info.jpg
+
 |
 
 
@@ -355,7 +375,9 @@ Select a template among a pre-set number of campaign templates, or
 create your own.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_select_templates.jpg
+
 |
 
 
@@ -383,11 +405,13 @@ Performance in Reports** on the same page. To do this manually, go to
 your newly created email campaign.
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_campaign_in_queue.jpg
-|
 
 |
+
 .. image:: ./img/mc_email_campaign/mc_statistics.jpg
+
 |
 
 
@@ -407,7 +431,9 @@ understand the outcome of your campaign and let you filter contacts for
 the next one.
 
 |
+
 .. image:: ./img/mc_email_campaign/o_email_campaign_info.jpg
+
 |
 
 
@@ -431,7 +457,9 @@ In the :ref:`Filters<user-guide-filters-management>` section:
 -  Select **Field Value.** In our case, it is 0.
    
 |
+
 .. image:: ./img/mc_email_campaign/o_segment_opens_zero.jpg
+
 |
 
 
