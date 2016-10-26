@@ -28,7 +28,7 @@ create an API key. To do that:
 
 -  Go to **Extras**.
 
--  click **API keys**.
+-  Click **API keys**.
 
 -  Scroll down to the bottom of the page and press **Create a Key**.
 
@@ -176,9 +176,9 @@ A page will open with the following fields to fill in:
 +-----------------------------------------------------+---------------------------------------------------------------------------------+
 | **Default From Name**                               | This will be displayed as the sender of the email, e.g. name of your company.   |
 +-----------------------------------------------------+---------------------------------------------------------------------------------+
-| **Remind People how they signed up to your list**   | Enter text message into the text field.                                         |
+| **Remind People How They Signed up to Your List**   | Enter text message into the text field.                                         |
 +-----------------------------------------------------+---------------------------------------------------------------------------------+
-| **Contact Information for this list**               | Enter/edit your contact address information                                     |
+| **Contact Information for This List**               | Enter/edit your contact address information                                     |
 +-----------------------------------------------------+---------------------------------------------------------------------------------+
 | **Notifications**                                   | Select the notifications to be sent to your provided email                      |
 |                                                     |                                                                                 |
