@@ -23,6 +23,21 @@ Custom workflows can be configured using a YAML configuration format that will b
 This configuration needs to be placed in a file named ``workflows.yml`` in the ``Resources/config/oro``
 directory of your bundle.
 
+Translations
+............
+
+Together with workflows configurations, for almost each sections that specified below there should be defined
+ translation messages under corresponded key to display correct UI text.
+Configuration of translations are implemented in the same way as other translation resources (you might know them by
+files placed under `<YourBundle>/Resources/translation/messages.en.yml` or
+`<YourBundle>/Resources/translations/jsmessages.en.yml`.
+For workflows there should be created their's own translations file
+`<YourBundle>Resources/translations/workflows.{lang_code}.yml`
+Where `{lang_code}` is your preferable language code for translations that gathered there.
+Further in each section that describe workflow configuration part would be note provided with a proper
+**translation key** for translatable fields that can be used in configuration section.
+
+
 General information
 ...................
 
@@ -36,7 +51,6 @@ calling a customer:
     # src/Acme/DemoBundle/Resources/config/oro/workflows.yml
     workflows:
         phone_call:
-            label: 'Call Customer'
             entity: Acme\Bundle\DemoBundle\Entity\PhoneCall
             start_step: start_call
             defaults:
@@ -45,6 +59,12 @@ calling a customer:
 
 The basic configuration contains a name that is displayed in the UI, the entity the workflow will
 be applied to and the initial step that is applied when initializing the workflow for an entity.
+
+.. note::
+
+    Translation fields:
+    - `oro.workflow.{workflow_name}.label` - label text for specified workflow
+
 
 Defining the Workflow Steps
 ...........................
@@ -59,16 +79,13 @@ Next, you need to define the states an entity can have when the workflow is appl
             # ...
             steps:
                 start_call:
-                    label: 'Start Phone Call'
                     allowed_transitions:
                         - connected
                         - not_answered
                 start_conversation:
-                    label: 'Call Phone Conversation'
                     allowed_transitions:
                         - end_conversation
                 end_call:
-                    label: 'End Phone Call'
                     is_final: true
 
 In this example, the entity can have three states: ``start_call`` (which was configured as the
@@ -79,6 +96,24 @@ data manipulation (for example, report entities whose workflow is in a final ste
 
 The ``allowed_transitions`` defines which :ref:`transitions <book-workflow-transitions>` can be
 applied in a step.
+
+.. note::
+
+    Translation fields:
+    - `oro.workflow.{workflow_name}.step.{step_name}.label` - label text for specified step in workflow
+    See below example of `Resource/translations/workflow.en.yml` for previous configuration section:
+
+
+.. code-block:: yaml
+    :linenos:
+
+    oro.workflows:
+        phone_call:
+            step:
+                start_call.label: 'Start Phone Call'
+                start_conversation.label: 'Call Phone Conversation'
+                end_call.label: 'End Phone Call'
+
 
 Workflow Attributes
 ...................
@@ -95,28 +130,21 @@ with the ``attributes`` option:
             # ...
             attributes:
                 phone_call:
-                    label: Phone Call
                     type: entity
                     options:
                         class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneCall
                 call_timeout:
                     type: integer
-                    label: 'Call Timeout'
-                call_successfull:
+                call_successful:
                     type: boolean
-                    label: 'Call Successful'
                 conversation_successful:
                     type: boolean
-                    label: 'Conversation Successful'
                 conversation_comment:
                     type: string
-                    label: 'Conversation Comment'
                 conversation_result:
                     type: string
-                    label: 'Conversation Result'
                 conversation:
                     type: entity
-                    label: 'Conversation'
                     options:
                         class: Acme\Bundle\DemoWorkflowBundle\Entity\PhoneConversation
 
@@ -136,11 +164,28 @@ with the ``attributes`` option:
                 # ...
                 attributes:
                     timeout:
-                        label: 'Call Timeout'
                         property_path: entity.call_timeout
 
     The ``entity`` part of the property path refers to the underlying entity. You can change the
     name using the :ref:`entity_attribute option <reference-format-workflow-entity-attribute>`.
+
+.. note::
+
+    Translation fields:
+    - `oro.workflow.{workflow_name}.attribute.{attribute_name}.label` - label text for specified attribute in workflow
+    See below example of `Resource/translations/workflow.en.yml` for previous configuration section:
+
+
+.. code-block:: yaml
+    :linenos:
+
+        oro.workflows:
+            phone_call:
+                attribute:
+                    phone_call.label: Phone Call
+                    call_timeout.label: Call Timeout
+                    call_successful.label: 'Call Successful'
+        #... and on
 
 .. _book-workflow-transitions:
 
@@ -174,6 +219,31 @@ and which attributes can be modified when applying a transition:
                             cron: '* * * * *'
                             filter: "e.someStatus = 'OPEN'"
 
+
+.. note::
+
+    Translation fields:
+    - `oro.workflow.{workflow_name}.transition.{transition_name}.label`
+        A label text for specified transition in workflow
+    - `oro.workflow.{workflow_name}.transition.{transition_name}.warning_message`
+        A notification message text that will be shown before transition execution.
+    - `oro.workflow.{workflow_name}.transition.{transition_name}.attribute.{attribute_name}.label`
+        A label text for attribute in corresponding transition form defined in `attribute_fields` under `form_options`.
+
+    See below example of `Resource/translations/workflow.en.yml` for previous configuration section:4r4
+
+.. code-block:: yaml
+    :linenos:
+
+            oro.workflows:
+                phone_call:
+                    transition:
+                        connected:
+                            label: Connected
+                            warning_message: Connection performed
+                        not_answered.label: Not answered
+                        end_conversation.label: End conversation
+            #... and on
 
 Transition Triggers Configuration
 .................................
@@ -329,6 +399,8 @@ Example:
 .. note::
 
     You can configure as many workflows as you like, even for one entity can be more than one active workflows.
+
+
 
 .. seealso::
 
