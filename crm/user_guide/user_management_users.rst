@@ -141,8 +141,8 @@ With the :ref:`action buttons <user-guide-ui-components-view-page-actions>` on t
   :ref:`Communication &  Collaboration settings <user-guide-entity-management-create-commun-collab>` (e.g. Assign Tasks,
   Send Emails etc.)
   
-- Reset Password: New password will be automatically generated for the user. The user will be notified on the change by 
-  email.
+- Reset Password: The user will be prompted by email to reset their password and will be disabled from login until
+  they do so.
 
 - Change Password: Create new password (administrator will know this new password). The user will be notified on the 
   change by email.
