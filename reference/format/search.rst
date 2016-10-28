@@ -206,8 +206,8 @@ one of the configured :ref:`fields <reference-format-search-fields>`.
 
 **type**: ``string``
 
-``title_fields`` (Deprecated)
------------------------------
+``title_fields``
+----------------
 
 **type**: ``sequence``
 
