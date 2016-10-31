@@ -335,7 +335,7 @@ For more details about WSSE authentication and particularly for how to generate 
 HTTP Methods Available in Oro API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The primary or most-commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other methods, too, but they are utilized less frequently.
+The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other methods, too, but they are utilized less frequently.
 
 Below is a table summarizing HTTP methods available in Oro API and their return values in combination with the resource URIs:
 
@@ -358,10 +358,11 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 +-------------+----------------+----------------------------------------+----------------------------------------------+
 | DELETE      | Delete         | 200(OK) or 403(Forbidden) or           | 200 (OK).                                    |
 |             |                | 400(Bad Request) if no filter          |                                              |
-|             |                | is specified                           | 404 (Not Found), if ID not found or invalid. |
+|             |                | is specified.                          | 404 (Not Found), if ID not found or invalid. |
 +-------------+----------------+----------------------------------------+----------------------------------------------+
 | PUT         | Update/Replace | **not implemented**                    | **not implemented**                          |
 +-------------+----------------+----------------------------------------+------------------------------------------ ---+
+
 
 Also, the HTTP methods can be classified by the *idempotent* and *safe* properties.
 
@@ -392,6 +393,7 @@ Below is a table summarizing HTTP methods by its idempotency and safety:
 +-------------+------------+------+
 | PATCH       | no         | no   |
 +-------------+------------+------+
+
 
 GET
 """
@@ -478,6 +480,7 @@ The following table describes all existing keys for the X-Include header.
 +-------------+-----------------+---------------------------+-----------------------------------------+
 | DELETE      | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities. |
 +-------------+-----------------+---------------------------+-----------------------------------------+
+
 
 Header Examples
 """""""""""""""
@@ -703,6 +706,7 @@ as 'Call,' 'Email,' etc.
 | timesContactedOut    | integer  | The total number of outgoing communication activities for the resource record.         |
 +----------------------+----------+----------------------------------------------------------------------------------------+
 
+
 Filters
 ^^^^^^^^
 
@@ -796,6 +800,7 @@ The API allows you to use several types of filters. Filter types are briefly des
 |         | sort=id,-name                | To perform DESC sorting specify ``-`` before field name.                    |
 +---------+------------------------------+-----------------------------------------------------------------------------+
 
+
 Fields Filter (**fields**)
 """"""""""""""""""""""""""
 
@@ -873,6 +878,7 @@ is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, fo
 +----------+-----------------------+-------------+---------------------------------------+
 | **>=**   | Greater than or equal | %3E%3D      | GET /api/users?filter[id]>=6 HTTP/1.1 |
 +----------+-----------------------+-------------+---------------------------------------+
+
 
 Example. Use operators to filter data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
