@@ -402,8 +402,7 @@ The HTTP GET method is used to *read* (or retrieve) a representation of a resour
 
 .. note::
     According to the design of the HTTP specification, GET requests are used only to read data and not change it.
-    So, they are considered safe. That is, they can be called without risk of data modification or corruption —
-    calling it once has the same effect as calling it 10 times.
+    So, they are considered safe. That is, they can be called without risk of data modification or corruption—calling it once has the same effect as calling it 10 times.
 
 
 POST
@@ -422,7 +421,7 @@ On successful creation, HTTP response code 201 is returned.
     the same information but with different identifiers.
 
 .. note::
-    It is possible to create related API resources in scope of one API request. For details see `Creating and updating related resources in scope of primary resource <./data-api#creating-and-updating-related-resources-in-scope-of-primary-resource>`__ section.
+    It is possible to create both primary and related API resources via a single API request. For details see the `Create and Update       Related Resources Together with a Primary API Resource <./data-api#create-and-update-related-resources-together-with-a-primary-api-     resource>`__ section.
 
 
 PATCH
@@ -442,7 +441,7 @@ server should be modified to produce a new version.
     that the request will fail, if the resource has been updated since the client last accessed the resource.
 
 .. note::
-    It is possible to update related API resources in scope of one API request. For details see `Creating and updating related resources in scope of primary resource <./data-api#creating-and-updating-related-resources-in-scope-of-primary-resource>`__ section.
+    `Create and Update Related Resources Together with a Primary API Resource <./data-api#create-and-update-related-resources-together-     with-a-primary-api-resource>`__ section.
 
 
 DELETE
@@ -1137,10 +1136,10 @@ Sort by **username** in descending order.
       ]
     }
 
-Creating and updating related resources in scope of primary resource
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create and Update Related Resources Together with a Primary API Resource
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Sometime it is required to create or update related resources while create or update the primary API resource. Especially it is true when a complex API resource is created and it should be done with one API request. Unfortunately JSON API specification does not describe how to do this. The solution proposed by the Oro Platform is to use **included** section of JSON API document. Please take a look at the following example:
+Sometimes it is required to create or update related resources while creating or updating the primary API resource. Especially often such a need arises when you create a complex API resource object via a single API request. Unfortunately, the JSON API specification does not describe how to do this. The solution proposed by the Oro Platform is to use the **included** section of a JSON request body. Please take a look at the following example:
 
 **Request**
 
@@ -1295,14 +1294,17 @@ Sometime it is required to create or update related resources while create or up
 
 This request does the following:
 
-- creates the account "Cloth World"
-- creates two contacts, "John Doe" and "Nancy Jones"
-- assigns these contacts to the account "Cloth World"
-- makes "Nancy Jones" the default contact for the "Cloth World"
+- Creates account 'Cloth World.'
 
-Please pay attention to the identifiers of the contacts. For "John Doe" it is "8da4d8e7-6b25-4c5c-8075-b510f7bbb84f". For "Nancy Jones" it is "707dda0d-35f5-47b9-b2ce-a3e92b9fdee7". These identifiers are used to specify relations between resources in scope of the request. In this example GUIDs are used, but it is possible to use any algorithm to generate such identifiers. The only requirement is they must be unique in scope of the request. For example, the following identifiers are valid as well: "john_doe" and "nancy_jones".
+- Creates two contacts, 'John Doe' and 'Nancy Jones.'
 
-Also it is possible to update several related resources in scope of one API request. The related resources to be updated should be marked with **_update** meta property. For instance take a look at the following request:
+- Assigns these contacts to the account 'Cloth World.'
+
+- Makes 'Nancy Jones' the default contact for 'Cloth World.'
+
+Please pay attention to the identifiers of the contacts. For 'John Doe' it is '8da4d8e7-6b25-4c5c-8075-b510f7bbb84f.' For 'Nancy Jones' it is '707dda0d-35f5-47b9-b2ce-a3e92b9fdee7.' These identifiers are used to specify relations between resources in scope of the request. In this example, GUIDs are used but it is possible to use any algorithm to generate such identifiers. The only requirement is that they must be unique in scope of the request. For example, the following identifiers are valid as well: 'john_doe' and 'nancy_jones.'
+
+Also, it is possible to update several related resources via a single API request. The related resources to be updated should be marked with **_update** meta property. For instance, take a look at the following request:
 
 **Request**
 
@@ -1360,8 +1362,9 @@ Also it is possible to update several related resources in scope of one API requ
 
 This request does the following:
 
-- changes the account name to "Cloth World Market"
-- sets the primary email for a contact with identifier "79"
+- Changes the account name to 'Cloth World Market.'
+
+- Sets the primary email for the contact with identifier '79.'
 
 
 Data API Client Requirements
