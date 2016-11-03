@@ -3,7 +3,7 @@ Web Services API
 
 .. contents:: :local:
     :depth: 6
- 
+
 Overview
 --------
 
@@ -37,25 +37,25 @@ Create an API Key
 To start using the API, you must take a few preliminary steps:
 
     1. Ensure that the application is installed correctly.
-    
+
     2. Generate an API key for a user:
-    
-        - If you want to generate an API key for yourself, navigate to the profile page of your user: 
-        
-            - either click the :guilabel:`My User` link in the **User Menu** in the top right corner of the current page, or 
-            
-            - follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``. 
-            
+
+        - If you want to generate an API key for yourself, navigate to the profile page of your user:
+
+            - either click the :guilabel:`My User` link in the **User Menu** in the top right corner of the current page, or
+
+            - follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``.
+
         - If you want to generate an API key for another user:
-        
-            - open their view page, 
-        
-            - open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`), 
-            
-            - find the user who needs an API key, 
-            
+
+            - open their view page,
+
+            - open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`),
+
+            - find the user who needs an API key,
+
             - click the corresponding grid row or the |icView| :guilabel:`View` icon from the ellipsis menu at the right-hand end of the row.
-            
+
     3.  Click the :guilabel:`Generate Key` button. You will see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa.'
 
 .. image:: ./img/api/api_generateapikey_myuser.png
@@ -119,8 +119,8 @@ To review available methods for the resource, click the resource row or the :gui
 
 |
 
-There is a documentation on how a method can be used with different resource URIs and there is a sandbox which contains a form that can be used to perform API requests. 
-To review the documentation and access the sandbox, click the method row for a specific resource URI. You will see the corresponding tabs in the expanded area. 
+There is a documentation on how a method can be used with different resource URIs and there is a sandbox which contains a form that can be used to perform API requests.
+To review the documentation and access the sandbox, click the method row for a specific resource URI. You will see the corresponding tabs in the expanded area.
 
 |
 
@@ -143,15 +143,15 @@ Retrieve a single record
 To retrieve a single record for a particular resource record with JSON API, perform the GET method with the id parameter specified:
 
     1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page to expand the methods block.
-    
+
     2.  Find the :guilabel:`/api/your_resource/{id}` block.
-      
+
     3.  Click the :guilabel:`GET` method row.
-  
+
     4.  Click the :guilabel:`Sandbox` tab. You will see the request form.
- 
+
     5.  If you want to retrieve a single record, specify the record id for the :guilabel:`id` field in the :guilabel:`Requirements` section.
-  
+
     6.  Click the :guilabel:`Try!` button to send the request to the server.
 
 As soon as the response from the server is received, the :guilabel:`Request URL`, :guilabel:`Response Headers`, :guilabel:`Response Body`
@@ -183,16 +183,16 @@ Edit a record
 To edit a record for a particular resource record with JSON API, perform the PATCH method with the id parameter specified:
 
     1.  Click the API resource row on the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page to expand the method block.
-    
+
     2.  Find the :guilabel:`/api/your_resource/{id}` block.
-    
+
     3.  Click the :guilabel:`PATCH` method row.
-    
+
     4.  Click the :guilabel:`Sandbox` tab. You will see the request form.
-    
+
     5.  If you want to edit a single record, in the :guilabel:`Requirements` section, in the :guilabel:`id` field, specify the record id.
-    
-    6.  In the :guilabel:`Content` section, specify how the resource how a resource currently residing on the server should be modified to produce a new version. 
+
+    6.  In the :guilabel:`Content` section, specify how the resource how a resource currently residing on the server should be modified to produce a new version.
 
         For example, if you want to change the **firstName** field to 'John' value for a User entity with id 1, the request content will look the following way:
 
@@ -361,7 +361,7 @@ Below is a table summarizing HTTP methods available in Oro API and their return 
 |             |                | is specified.                          | 404 (Not Found), if ID not found or invalid. |
 +-------------+----------------+----------------------------------------+----------------------------------------------+
 | PUT         | Update/Replace | **not implemented**                    | **not implemented**                          |
-+-------------+----------------+----------------------------------------+------------------------------------------ ---+
++-------------+----------------+----------------------------------------+----------------------------------------------+
 
 
 Also, the HTTP methods can be classified by the *idempotent* and *safe* properties.
@@ -421,6 +421,9 @@ On successful creation, HTTP response code 201 is returned.
     POST is not a safe operation. Making two identical POST requests will most likely result in two resources containing
     the same information but with different identifiers.
 
+.. note::
+    It is possible to create related API resources in scope of one API request. For details see `Creating and updating related resources in scope of primary resource <./data-api#creating-and-updating-related-resources-in-scope-of-primary-resource>`__ section.
+
 
 PATCH
 """""
@@ -437,6 +440,9 @@ server should be modified to produce a new version.
     need to operate from a known base point, otherwise they will corrupt the resource. Clients using this kind of patch
     application should use a conditional request (e.g. GET a resource, ensure it was not modified and apply PATCH) such
     that the request will fail, if the resource has been updated since the client last accessed the resource.
+
+.. note::
+    It is possible to update related API resources in scope of one API request. For details see `Creating and updating related resources in scope of primary resource <./data-api#creating-and-updating-related-resources-in-scope-of-primary-resource>`__ section.
 
 
 DELETE
@@ -569,9 +575,9 @@ Response status codes
 In case of a successful request, a response status code will be one of the following:
 
     -   **200 OK**—In the response to a successful GET, PATCH or DELETE.
-    
+
     -   **201 Created**—In the response to a POST that results in a creation. When this status received, the request body contains the description of the newly created entity in JSON format (similar to regular GET request).
-    
+
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
 Example. Successful request
@@ -599,13 +605,13 @@ Example. Successful request
 In case of an error, a response status code indicates the type of an error that has occurred. The most common of such codes are the following:
 
     -   **400 Bad Request**—The request is malformed, such as if the body of the request contains misformatted JSON.
-    
+
     -   **401 Unauthorized**—No or invalid authentication details are provided. This code can be used to trigger an authentication pop-up if the API is used from a browser.
-    
+
     -   **403 Forbidden**—Authentication succeeded but authenticated user does not have access to the resource.
-    
+
     -   **404 Not Found**—A non-existent resource is requested.
-    
+
     -   **500 Internal Server Error**—The server encountered an unexpected condition which prevented it from fulfilling the request.
 
 Example. Request resulted in error
@@ -667,7 +673,7 @@ Most common resource fields
 | updatedAt    | datetime     | The date and time of the last update of the resource record.                                        |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | owner        | user         | An owner record represents the ownership capabilities of the record. In other words,                |
-|              | or           | depending on the owner type, a different level of access applies.                                  |
+|              | or           | depending on the owner type, a different level of access applies.                                   |
 |              | businessunit | For more details, see `Access and Permissions Management <../user-guide/user-management-roles>`__.  |
 |              | or           |                                                                                                     |
 |              | organization |                                                                                                     |
@@ -710,9 +716,9 @@ as 'Call,' 'Email,' etc.
 Filters
 ^^^^^^^^
 
-You can perform the GET and DELETE methods on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields. 
+You can perform the GET and DELETE methods on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields.
 
-Available filters are listed in the :guilabel:`Documentation` tab of the method's expanded area, in the :guilabel:`Filters` section. 
+Available filters are listed in the :guilabel:`Documentation` tab of the method's expanded area, in the :guilabel:`Filters` section.
 
 To filter, perform a GET request and put your filters parameters in the query string.
 
@@ -860,7 +866,7 @@ Data Filter (**filter**)
 """""""""""""""""""""""""
 
 Depending on the type of the filter, certain operators are allowed. For example, for integer filter type it
-is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for string filter type - only two: **=**, **!**. 
+is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for string filter type - only two: **=**, **!**.
 
 
 +----------+-----------------------+-------------+---------------------------------------+
@@ -1131,6 +1137,233 @@ Sort by **username** in descending order.
       ]
     }
 
+Creating and updating related resources in scope of primary resource
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sometime it is required to create or update related resources while create or update the primary API resource. Especially it is true when a complex API resource is created and it should be done with one API request. Unfortunately JSON API specification does not describe how to do this. The solution proposed by the Oro Platform is to use **included** section of JSON API document. Please take a look at the following example:
+
+**Request**
+
+.. code-block:: http
+
+    POST /api/accounts HTTP/1.1
+    Content-Type: application/vnd.api+json
+
+**Request Body**
+
+.. code-block:: json
+
+    {"data": {
+        "type": "accounts",
+        "id": "1",
+        "attributes": {
+          "name": "Cloth World"
+        },
+        "relationships": {
+          "organization": {
+            "data": {"type": "organizations", "id": "1"}
+          },
+          "owner": {
+            "data": {"type": "users", "id": "1"}
+          },
+          "contacts": {
+            "data": [
+              {"type": "contacts", "id": "8da4d8e7-6b25-4c5c-8075-b510f7bbb84f"},
+              {"type": "contacts", "id": "707dda0d-35f5-47b9-b2ce-a3e92b9fdee7"}
+            ]
+          },
+          "defaultContact": {
+            "data": {"type": "contacts", "id": "707dda0d-35f5-47b9-b2ce-a3e92b9fdee7"}
+          }
+        }
+      },
+      "included": [
+        {
+          "type": "contacts",
+          "id": "8da4d8e7-6b25-4c5c-8075-b510f7bbb84f",
+          "attributes": {
+            "firstName": "John",
+            "lastName": "Doe"
+          },
+          "relationships": {
+            "organization": {
+              "data": {"type": "organizations", "id": "1"}
+            },
+            "owner": {
+              "data": {"type": "users", "id": "1"}
+            },
+            "source": {
+              "data": {"type": "contactsources", "id": "tv"}
+            }
+          }
+        },
+        {
+          "type": "contacts",
+          "id": "707dda0d-35f5-47b9-b2ce-a3e92b9fdee7",
+          "attributes": {
+            "firstName": "Nancy",
+            "lastName": "Jones"
+          },
+          "relationships": {
+            "organization": {
+              "data": {"type": "organizations", "id": "1"}
+            },
+            "owner": {
+              "data": {"type": "users", "id": "1"}
+            }
+          }
+        }
+      ]
+    }
+
+**Response**
+
+.. code-block:: json
+
+    {"data": {
+        "type": "accounts",
+        "id": "52",
+        "attributes": {
+          "name": "Cloth World"
+        },
+        "relationships": {
+          "organization": {
+            "data": {"type": "organizations", "id": "1"}
+          },
+          "owner": {
+            "data": {"type": "users", "id": "1"}
+          },
+          "contacts": {
+            "data": [
+              {"type": "contacts", "id": "79"},
+              {"type": "contacts", "id": "80"}
+            ]
+          },
+          "defaultContact": {
+            "data": {"type": "contacts", "id": "80"}
+          }
+        }
+      },
+      "included": [
+        {
+          "type": "contacts",
+          "id": "79",
+          "attributes": {
+            "firstName": "John",
+            "lastName": "Doe"
+          },
+          "relationships": {
+            "organization": {
+              "data": {"type": "organizations", "id": "1"}
+            },
+            "owner": {
+              "data": {"type": "users", "id": "1"}
+            },
+            "source": {
+              "data": {"type": "contactsources", "id": "tv"}
+            },
+            "accounts": {
+              "data": [
+                {"type": "accounts", "id": "52"}
+              ]
+            }
+          }
+        },
+        {
+          "type": "contacts",
+          "id": "80",
+          "attributes": {
+            "firstName": "Nancy",
+            "lastName": "Jones"
+          },
+          "relationships": {
+            "organization": {
+              "data": {"type": "organizations", "id": "1"}
+            },
+            "owner": {
+              "data": {"type": "users", "id": "1"}
+            },
+            "accounts": {
+              "data": [
+                {"type": "accounts", "id": "52"}
+              ]
+            }
+          }
+        }
+      ]
+    }
+
+This request does the following:
+
+- creates the account "Cloth World"
+- creates two contacts, "John Doe" and "Nancy Jones"
+- assigns these contacts to the account "Cloth World"
+- makes "Nancy Jones" the default contact for the "Cloth World"
+
+Please pay attention to the identifiers of the contacts. For "John Doe" it is "8da4d8e7-6b25-4c5c-8075-b510f7bbb84f". For "Nancy Jones" it is "707dda0d-35f5-47b9-b2ce-a3e92b9fdee7". These identifiers are used to specify relations between resources in scope of the request. In this example GUIDs are used, but it is possible to use any algorithm to generate such identifiers. The only requirement is they must be unique in scope of the request. For example, the following identifiers are valid as well: "john_doe" and "nancy_jones".
+
+Also it is possible to update several related resources in scope of one API request. The related resources to be updated should be marked with **_update** meta property. For instance take a look at the following request:
+
+**Request**
+
+.. code-block:: http
+
+    PATCH /api/accounts/52 HTTP/1.1
+    Content-Type: application/vnd.api+json
+
+**Request Body**
+
+.. code-block:: json
+
+    {"data": {
+        "type": "accounts",
+        "id": "52",
+        "attributes": {
+          "name": "Cloth World Market"
+        }
+      },
+      "included": [
+        {
+          "meta": {
+              "_update": true
+          },
+          "type": "contacts",
+          "id": "79",
+          "attributes": {
+            "primaryEmail": "john_doe@example.com"
+          }
+        }
+      ]
+    }
+
+**Response**
+
+.. code-block:: json
+
+    {"data": {
+        "type": "accounts",
+        "id": "52",
+        "attributes": {
+          "name": "Cloth World Market"
+        }
+      },
+      "included": [
+        {
+          "type": "contacts",
+          "id": "79",
+          "attributes": {
+            "primaryEmail": "john_doe@example.com"
+          }
+        }
+      ]
+    }
+
+This request does the following:
+
+- changes the account name to "Cloth World Market"
+- sets the primary email for a contact with identifier "79"
+
+
 Data API Client Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1148,7 +1381,7 @@ Example. A valid **Content-Type**
 
 At the same time, it **must** ignore any media type parameters received in the **Content-Type** header of the response.
 
-Example. Ignore media type in response 
+Example. Ignore media type in response
 """"""""""""""""""""""""""""""""""""""
 **Request**
 
