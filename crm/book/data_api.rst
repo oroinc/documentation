@@ -56,7 +56,7 @@ To start using the API, you must take a few preliminary steps:
 
             - click the corresponding grid row or the |icView| :guilabel:`View` icon from the ellipsis menu at the right-hand end of the row.
 
-    3.  Click the :guilabel:`Generate Key` button. You will see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa.'
+    3.  Click the :guilabel:`Generate Key` button. You will see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa'.
 
 .. image:: ./img/api/api_generateapikey_myuser.png
 
@@ -726,7 +726,7 @@ To filter, perform a GET request and put your filters parameters in the query st
 Example 1. Filter in the query string
 """""""""""""""""""""""""""""""""""""
 
-Retrieve all users of organization '1.'
+Retrieve all users of organization '1'.
 
 **Request**
 
@@ -1066,7 +1066,7 @@ parameters should be passed as the parameters of the query string.
 | Parameter name | Type    | Default value | Description                                                         |
 +================+=========+===============+=====================================================================+
 | page[size]     | integer | 10            | Set a positive integer number.                                      |
-|                |         |               | To disable the pagination, set it as '-1.'' In this case            |
+|                |         |               | To disable the pagination, set it as -1. In this case               |
 |                |         |               | **page[number]** will not be taken into account and can be omitted. |
 +----------------+---------+---------------+---------------------------------------------------------------------+
 | page[number]   | integer | 1             | The number of the page.                                             |
@@ -1247,6 +1247,9 @@ Sometimes it is required to create or update related resources while creating or
         {
           "type": "contacts",
           "id": "79",
+          "meta": {
+            "includeId": "8da4d8e7-6b25-4c5c-8075-b510f7bbb84f"
+          },
           "attributes": {
             "firstName": "John",
             "lastName": "Doe"
@@ -1271,6 +1274,9 @@ Sometimes it is required to create or update related resources while creating or
         {
           "type": "contacts",
           "id": "80",
+          "meta": {
+            "includeId": "707dda0d-35f5-47b9-b2ce-a3e92b9fdee7"
+          },
           "attributes": {
             "firstName": "Nancy",
             "lastName": "Jones"
@@ -1294,17 +1300,17 @@ Sometimes it is required to create or update related resources while creating or
 
 This request does the following:
 
-- Creates account 'Cloth World.'
+- Creates account 'Cloth World'.
 
-- Creates two contacts, 'John Doe' and 'Nancy Jones.'
+- Creates two contacts, 'John Doe' and 'Nancy Jones'.
 
-- Assigns these contacts to the account 'Cloth World.'
+- Assigns these contacts to the account 'Cloth World'.
 
-- Makes 'Nancy Jones' the default contact for 'Cloth World.'
+- Makes 'Nancy Jones' the default contact for 'Cloth World'.
 
-Please pay attention to the identifiers of the contacts. For 'John Doe' it is '8da4d8e7-6b25-4c5c-8075-b510f7bbb84f.' For 'Nancy Jones' it is '707dda0d-35f5-47b9-b2ce-a3e92b9fdee7.' These identifiers are used to specify relations between resources in scope of the request. In this example, GUIDs are used but it is possible to use any algorithm to generate such identifiers. The only requirement is that they must be unique in scope of the request. For example, the following identifiers are valid as well: 'john_doe' and 'nancy_jones.'
+Please pay attention to the identifiers of the contacts. For 'John Doe' it is '8da4d8e7-6b25-4c5c-8075-b510f7bbb84f'. For 'Nancy Jones' it is '707dda0d-35f5-47b9-b2ce-a3e92b9fdee7'. These identifiers are used to specify relations between resources in scope of the request. In this example, GUIDs are used but it is possible to use any algorithm to generate such identifiers. The only requirement is that they must be unique in scope of the request. For example, the following identifiers are valid as well: 'john_doe' and 'nancy_jones'.
 
-Also, it is possible to update several related resources via a single API request. The related resources to be updated should be marked with **_update** meta property. For instance, take a look at the following request:
+Also, it is possible to update several related resources via a single API request. The related resources to be updated should be marked with **update** meta property. For instance, take a look at the following request:
 
 **Request**
 
@@ -1322,12 +1328,17 @@ Also, it is possible to update several related resources via a single API reques
         "id": "52",
         "attributes": {
           "name": "Cloth World Market"
+        },
+        "relationships": {
+          "defaultContact": {
+            "data": {"type": "contacts", "id": "79"}
+          }
         }
       },
       "included": [
         {
           "meta": {
-              "_update": true
+              "update": true
           },
           "type": "contacts",
           "id": "79",
@@ -1347,12 +1358,20 @@ Also, it is possible to update several related resources via a single API reques
         "id": "52",
         "attributes": {
           "name": "Cloth World Market"
+        },
+        "relationships": {
+          "defaultContact": {
+            "data": {"type": "contacts", "id": "79"}
+          }
         }
       },
       "included": [
         {
           "type": "contacts",
           "id": "79",
+          "meta": {
+            "includeId": "79"
+          },
           "attributes": {
             "primaryEmail": "john_doe@example.com"
           }
@@ -1362,9 +1381,9 @@ Also, it is possible to update several related resources via a single API reques
 
 This request does the following:
 
-- Changes the account name to 'Cloth World Market.'
+- Changes the account name to 'Cloth World Market'.
 
-- Sets the primary email for the contact with identifier '79.'
+- Sets the primary email for the contact with identifier '79' and makes it the default contact.
 
 
 Data API Client Requirements
@@ -1412,7 +1431,7 @@ Example. Ignore media type in response
 
 
 Requests with the invalid **Content-Type** value in the header will be perceived as a plain request, so the response data
-will a plain format rather than JSON.
+will a plain format rather than JSON API.
 
 Example. Invalid **Content-Type**
 """""""""""""""""""""""""""""""""
