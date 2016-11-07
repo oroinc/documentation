@@ -220,15 +220,17 @@ and which attributes can be modified when applying a transition:
                             filter: "e.someStatus = 'OPEN'"
 
 
-.. note::
+.. note:: Translation fields:
 
-    Translation fields:
-    - `oro.workflow.{workflow_name}.transition.{transition_name}.label`
-        A label text for specified transition in workflow
-    - `oro.workflow.{workflow_name}.transition.{transition_name}.warning_message`
-        A notification message text that will be shown before transition execution.
-    - `oro.workflow.{workflow_name}.transition.{transition_name}.attribute.{attribute_name}.label`
-        A label text for attribute in corresponding transition form defined in `attribute_fields` under `form_options`.
+    +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+    | Field                                                                                        | Description                                                                                                     |
+    +==============================================================================================+=================================================================================================================+
+    | `oro.workflow.{workflow_name}.transition.{transition_name}.label`                            | A label text for specified transition in workflow                                                               |
+    +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+    | `oro.workflow.{workflow_name}.transition.{transition_name}.warning_message`                  | A notification message text that will be shown before transition execution.                                     |
+    +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+    | `oro.workflow.{workflow_name}.transition.{transition_name}.attribute.{attribute_name}.label` | A label text for attribute in corresponding transition form defined in `attribute_fields` under `form_options`. |
+    +----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
     See below example of `Resource/translations/workflow.en.yml` for previous configuration section:4r4
 
