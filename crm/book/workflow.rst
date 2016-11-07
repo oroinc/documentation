@@ -27,10 +27,10 @@ Translations
 ............
 
 Together with workflows configurations, for almost each sections that specified below there should be defined
- translation messages under corresponded key to display correct UI text.
+translation messages under corresponded key to display correct UI text.
 Configuration of translations are implemented in the same way as other translation resources (you might know them by
 files placed under `<YourBundle>/Resources/translation/messages.en.yml` or
-`<YourBundle>/Resources/translations/jsmessages.en.yml`.
+`<YourBundle>/Resources/translations/jsmessages.en.yml`).
 For workflows there should be created their's own translations file
 `<YourBundle>Resources/translations/workflows.{lang_code}.yml`
 Where `{lang_code}` is your preferable language code for translations that gathered there.
