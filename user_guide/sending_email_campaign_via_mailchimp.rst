@@ -80,7 +80,7 @@ Next, complete the following fields:
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Status**                     | **Active** or **Inactive**. By default, Status is set to Active.                                                                                                                                                                                                                                                                     |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Owner**                      | The Owner determines the list of users who can manage the integration and the data synchronized with it. All **Entities** imported within the integration will be assigned to the selected user. By default, the Owner is the currently signed in user. This can be changed using the select menu or by typing in the user’s name.   |
+| **Owner**                      | The Owner determines the list of users who can manage the integration and the data synchronized with it. This means that the owner receives the data produced by the email campaign. All **Entities** imported within the integration will be assigned to the selected user. It is suggested to select a marketing rep as the owner.   |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Enable Two Way Sync**        | Use this section to enable or disable two-way synchronization. By default, **Enable Two Way Sync** is unchecked. If it remains unchecked, unsubscribes will pass from MailChimp to OroCRM. If enabled, subscription status can be passed from OroCRM to MailCHimp and the other way around.                                          |
 +--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -96,9 +96,9 @@ Next, complete the following fields:
 
 Once all the details of the integration have been specified, click
 **Save and Close.** The integration has been successfully configured and
-will now appear in the **Integration Grid.**
+will now appear in the integration grid.
 
-In order to sync your **Integration:**
+In order to sync your integration:
 
 -  Navigate to **System>Integrations>Manage Integrations**.
 
@@ -115,13 +115,13 @@ In order to sync your **Integration:**
 Prepare Data for the Campaign in OroCRM
 ---------------------------------------
 
-Email campaign is based on data in **Marketing Lists**. In order to
+Email campaign is based on data in marketing lists. In order to
 prepare a campaign in OroCRM, you need to create a :ref:`Marketing List<user-guide-marketing-lists>` first. 
 
 This list will create a segment on the MailChimp side. Go to
 **Marketing>Marketing Lists>Create Marketing List.**
 
-You need to complete the following fields to create your Marketing List:
+You need to complete the following fields to create your marketing list:
 
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | \ **Field**       | **Description**                                                                                                                                                                                                                                                          |
@@ -130,17 +130,17 @@ You need to complete the following fields to create your Marketing List:
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Description**   | Optional field. Can be filled with text to help you and other users understand the purpose of the list in future.                                                                                                                                                        |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Entity**        | Data to be synchronized into the Marketing list will depend on the Entity we select.                                                                                                                                                                                     |
+| **Entity**        | Data to be synchronized into the marketing list will depend on the entity we select.                                                                                                                                                                                     |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Type**          | Type refers to the type of Marketing List update. Dynamic Type means that all changes you make to your Marketing List will be automatic. On Demand type means that updates will be performed manually.                                                                   |
+| **Type**          | Type refers to the type of marketing list update. Dynamic Type means that all changes you make to your marketing list will be automatic. On Demand type means that updates will be performed manually.                                                                   |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Owner**         | Limits the list of users that can manage the marketing list to the users, whose \ `roles <https://www.orocrm.com/documentation/index/current/user-guide/user-management-roles/#user-guide-user-management-permissions>`__ allow managing marketing lists of the owner    |
 +-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-You can add multiple columns to your Marketing List (e.g. birthday,
+You can add multiple columns to your marketing list (e.g. birthday,
 gender) but at least one column must contain contact information. In our
-case, it is vital to add **Email Column** along with the First and Last
-Name of the contact.
+case, it is vital to add an email column along with the first and last
+name of the contact.
 
 |
 
@@ -182,7 +182,7 @@ A page will open with the following fields to fill in:
 +-----------------------------------------------------+---------------------------------------------------------------------------------+
 | **Notifications**                                   | Select the notifications to be sent to your provided email                      |
 |                                                     |                                                                                 |
-|                                                     | -  Daily Summary (Summary of subscribe/unsubscribe activity)                    |
+|                                                     | -  Daily summary (Summary of subscribe/unsubscribe activity)                    |
 |                                                     |                                                                                 |
 |                                                     | -  One-by-one (Subscribe notifications as they happen)                          |
 |                                                     |                                                                                 |
@@ -203,8 +203,8 @@ MailChimp list. In order for OroCRM to see this list, we need to:
 
 -  Click **Schedule Sync** in the top right corner.
 
-You can map contents of OroCRM Marketing List to use a segment of the
-Subscribers List in MailChimp. To do this:
+You can map contents of OroCRM marketing list to use a segment of the
+**Subscribers List** in MailChimp. To do this:
 
 -  Navigate to **Market>Marketing Lists** and select the list you would
    like to use.
@@ -264,7 +264,7 @@ Create and Send Campaign on the MailChimp Side
 
 
 Now that you have configured integration with MailChimp and created a
-Marketing List, it is time to create and send campaign on the MailChimp
+marketing list, it is time to create and send campaign on the MailChimp
 side.
 
 Once you have logged into your MailChimp account, click **Create
@@ -329,7 +329,7 @@ contacts based on **Subscriber Engagement** (New Subscribers, Active
 Subscribers, Inactive Subscribers), or **Customer Behavior and
 Demographics (**\ available after connection to your store)\ **.**
 
-Click Next when you are finished. This will redirect you the next page
+Click **Next** when you are finished. This will redirect you the next page
 to complete your campaign information:
 
 -  Name your Campaign
@@ -467,5 +467,5 @@ The same way you can apply any conditions of your choice.
 
 When you are done, make sure you click **Save and Close**.
 
-This list will now appear in the **Marketing List** :ref:`View Page<user-guide-ui-components-view-pages>` and will
+This list will now appear in the **Marketing List** :ref:`Page<user-guide-ui-components-view-pages>` and will
 now contain contacts sorted according to your conditions.
