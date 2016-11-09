@@ -2,7 +2,7 @@ Sending Email Campaign via Dotmailer
 =====================================
 
 Flow
---------
+-----
 
 |
 
@@ -192,13 +192,13 @@ Once you have connected your marketing list, you will notice a
 dropdown:
 
 +---------------------------+-----------------------------------------------------------------------------+
-| \ **Field**               | **Description**                                                             |
+|   **Field**               | **Description**                                                             |
 +===========================+=============================================================================+
-| **Synchronize**            | Start sync manually                                                         |
+| **Synchronize**           | Start sync manually.                                                        |
 +---------------------------+-----------------------------------------------------------------------------+
-| **Connection Settings**   | Change connection or integration for the current marketing list in OroCRM   |
+| **Connection Settings**   | Change connection or integration for the current marketing list in OroCRM.  |
 +---------------------------+-----------------------------------------------------------------------------+
-| **Disconnect**            | Disconnect the list from the segment                                        |
+| **Disconnect**            | Disconnect the list from the segment.                                       |
 +---------------------------+-----------------------------------------------------------------------------+
 
 |
@@ -221,8 +221,7 @@ We have configured integration between OroCRM and Dotmailer and created
 a mailing list on the OroCRM side and an address book on the Dotmailer
 side. It is time to create a new email campaign via Dotmailer:
 
--  Hover on **Campaigns** tab in your Dotmailer account and select **New
-   Campaign.**
+-  Hover on **Campaigns** tab in your Dotmailer account and select **New Campaign.**
 
 -  Pick a template for your email campaign.
 
