@@ -29,7 +29,7 @@ The "General" section defines the basic settings of the mailbox created. The fol
   :widths: 10, 30
 
   "**Mailbox Label**","Name of the mailbox used in OroCRM to refer to it."
-  "**Email**","E-mail address used to write to the mailbox."
+  "**Email**","Email address used to write to the mailbox."
 
   
 Synchronization
@@ -78,7 +78,7 @@ Available options are:
 Email Management
 ^^^^^^^^^^^^^^^^
 
-Define what OroCRM users will have access to the mailbox. You can select roles and\or specific users. All the users with 
+Define what OroCRM users will have access to the mailbox. You can select roles and/or specific users. All the users with 
 defined :ref:`roles <user-guide-user-management-permissions>` + all the specifically defined users will have access to 
 the mailbox.
 

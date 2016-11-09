@@ -15,6 +15,7 @@ related trends, and segmentation tools help users focus on a specific part of th
   * :doc:`/user_guide/business_intelligence_filters`
   
 * :doc:`/user_guide/business_intelligence_reports`
+* :doc:`/user_guide/rfm_user`
   
 .. toctree::
     :maxdepth: 2
@@ -23,3 +24,4 @@ related trends, and segmentation tools help users focus on a specific part of th
     business_intelligence_segments
     business_intelligence_filters
     business_intelligence_reports
+    rfm_user
