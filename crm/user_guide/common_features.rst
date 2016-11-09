@@ -7,7 +7,7 @@ One of the main tasks of any CRM is the ability to aggregate the various details
 
 For example, say that you have a factory producing furniture, and you are selling it through a retail network, a 
 web-based store, where people can buy some items from you online. Along with that you are 
-partnering with several interrior desing studios - they buy in bulk directly from your factory in compliance with a 
+partnering with several interrior desing studios—they buy in bulk directly from your factory in compliance with a 
 purchase agreement. 
 
 This way, you are selling to individual clients in a store and online, and you are also selling to other businesses. 
@@ -23,13 +23,13 @@ Success of such deals requires keeping track of various information all the way 
 needs of the client, having all the specifications at hand and providing high-quality support will help to gain the 
 client's loyalty, an insight in the history of previous arrangements (if any) can help win new contracts. If there are 
 several ongoing and perspective projects with partner, you also need to keep the details of each project, understand 
-who the project managers are and what is their position in the company.
+who the project managers are and what their position in the company is.
 
 Individual customers just visit the store, look through the items offered, and make a purchase it they are interested. 
 In order to to this, they put the item in the cart and make their order. Usually they can leave you their personal, 
 contact and shipping details. If there is a problem after the delivery, they address your customer-support.
 
-If they are buying online, they can login to use profile details they have previously saved on your store. 
+If they are buying online, they can login to use profile details they have previously saved in your store. 
 
 With all of this in mind, you should ask yourself what kind of information you need in order to have successful 
 relations with your customers and how you can get them to come back to your store. With their purchases and after-sale 
@@ -37,10 +37,10 @@ request, you can understand what they are interested in, and then provide some t
 you can also keep track of pages or products they have viewed and items that they have added to their cart but haven't 
 ordered. 
 
-If it is possilbe that the same person is buying from the both your online store and from your retail outlets.
+If it is possible that the same person is buying both from your online store and retail outlets.
 Moreover, in some representatives/partners of the business may also be the web-store clients (for example, if managers 
-of the interrior-design studio have their profiles and can by individual items from your 
-web-store, or,if end-clients of the interrior design studio are granted a discount in your web-store). 
+of the interior-design studio have their profiles and can by individual items from your 
+web-store, or,if end-clients of the interior design studio are granted a discount in your web-store). 
 
 On one hand, you will want to keep all this information properly allocated and arranged according to the source it comes 
 from, as well as any other relevant factors. However, in order to have the most comprehensive understanding of your 
@@ -78,10 +78,9 @@ Channels
 
 **Channels** are the various sources of customer information. 
 
-For instance, in our previous example the web-store, the retail network and the factory are three different channels. 
-You can define what specific details will be collected from customers in one channel. Sometimes you can also divide on 
-source intro several channels - a specific channel can be created for each retails store in the network, 
-or for different sections of the web-store - for example, for kitchen furniture, for bedroom furniture, office 
+For instance, in our previous example the web store, the retail network and the factory are three different channels. 
+You can define what specific details will be collected from customers in one channel. Sometimes you can also divide one source intro several channels—a specific channel can be created for each retails store in the network, 
+or for different sections of the web-store—for example, for kitchen furniture, for bedroom furniture, office 
 furniture, etc.
 
 
@@ -94,7 +93,7 @@ Each profile within one channel is a **Customer**.
 
 This means that if, in our example above, you have specified one 
 channel for business customers, one channel for the retail outlet customers and several channels for different sections
-of your online-store, and there is Mr. John Jackson - a manager of the company "House Decoration", who also buys goods 
+of your online store, and there is Mr. John Jackson—a manager of the company "House Decoration", who also buys goods 
 from you retail outlets and has bought some kitchen and office furniture online, in the system there will be different 
 customer records "House Decorations" from the channel "Factory", "John Jackson" from the channel "Retail", "John 
 Jackson" from the channel "Web Kitchen Furniture", and "John Jackson" from the channel "Web Office Furniture".

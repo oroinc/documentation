@@ -6,7 +6,7 @@ Sidebar Panel
 The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
 information, such as recent emails or the task list. 
 
-TBy default, the sidebar panel is located on the right side of the page. However, subject to the configuration settings 
+By default, the sidebar panel is located on the right side of the page. However, subject to the configuration settings 
 of your organization, there can be a sidebar on the left, two sidebars (on the left and on the right), or no sidebar at 
 all. The location of the sidebar is defined by the system administrator for the whole organization.
 
@@ -158,7 +158,7 @@ The widget informs you about new and unread emails, and gives you a convenient w
 
 From the widget, you can:
 
-- Access the *"All Emails"* page and see all your emails available in OroCRM: Сlick the *"My emails"* link (1).
+- Access the *"All Emails"* page and see all your emails available in OroCRM: click the *"My emails"* link (1).
 
 - Mark all the visible emails as read: Click the :guilabel:`Mark Visible As Read button` at the top (2).
 
