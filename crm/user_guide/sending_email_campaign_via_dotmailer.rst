@@ -5,7 +5,9 @@ Flow
 --------
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/oro_dotmailer_integration.jpg
+
 |
 
 
@@ -30,6 +32,7 @@ create **an API managed user**. In order to do that:
 -  Click on the **New User** button.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_account_users.jpg
 
 |
@@ -42,7 +45,9 @@ Next, create and confirm your **Password**. The **Description** field is
 optional. Mark your user **Enabled** and click **Save** to proceed.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_api_users_new_user_details.jpg
+
 |
 
 
@@ -53,7 +58,9 @@ Integrations**.
 Click **Create Integration** in the top right corner.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/oro_create_dotmailer_integration.jpg
+
 |
 
 
@@ -75,7 +82,9 @@ Once all the details of the integration have been specified, click
 will now appear in the integration grid.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/oro_dotmailer_integration_grid.jpg
+
 |
 
 
@@ -136,7 +145,9 @@ will redirect you to a page with the following fields to fill in:
 +-------------------+--------------------------------------------------------------------+
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_create_address_book.jpg
+
 |
 
 
@@ -170,7 +181,9 @@ address book the following way:
    
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/oro_connect_to_dotmailer.jpg
+
 |
 
 
@@ -189,7 +202,9 @@ dropdown:
 +---------------------------+-----------------------------------------------------------------------------+
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/oro_dotmailer_button.jpg
+
 |
 
 
@@ -214,15 +229,21 @@ side. It is time to create a new email campaign via Dotmailer:
 -  Give your campaign a name and click **Continue.**
    
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_select_new_campaign.jpg
+
 |
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_pick_campaign_template.jpg
+
 |
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_name_campaign.jpg
+
 |
 
 
@@ -249,7 +270,9 @@ above the field (as shown in the screenshot) and selecting the
 personalization option that suits you best from the dropdown menu.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_create_campaign-crop_highlights.jpg
+
 |
 
 Click **Save and Continue** when you are done.
@@ -261,7 +284,9 @@ your contacts. You should have a copy of the email delivered to the
 specified email address.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_test_send.jpg
+
 |
 
 
@@ -288,10 +313,14 @@ page and select contacts for the campaign:
 -  **Confirm** sending.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/dotmailer_create_campaign_2.jpg
+
 |
-|
-.. image:: ./img/dotmailer_email_campaign/dotmailer_confirm_send.jpg.
+
+
+.. image:: ./img/dotmailer_email_campaign/dotmailer_confirm_send.jpg
+
 |
 
 To check the statistics for your campaign on the Dotmailer side,
@@ -311,7 +340,9 @@ contact define the number of times an action has been performed, e.g. 2
 opens, 1 click, 1 unsubscribe.
 
 |
+
 .. image:: ./img/dotmailer_email_campaign/oro_statistics_email_campaign_dotmailer.jpg
+
 |
 
 
