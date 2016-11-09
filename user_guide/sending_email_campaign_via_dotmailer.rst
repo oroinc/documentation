@@ -347,3 +347,23 @@ opens, 1 click, 1 unsubscribe.
 
 These statistics will help you understand the outcome of your campaign
 and let you filter contacts for the next one.
+
+For example, if you want to send your next email campaign to those contacts who have opened your previous emails, go to **Marketing>Marketing List>** and click **Create New Marketing List**. Fill in the mandatory fields, remembering to include at least one contact column below. 
+
+In the Filters section:
+
+•	Drag Field Condition to set conditions to the list.
+•	Select **Contact>Marketing List>Marketing List (Email Campaign)/Email Campaign (Dotmailer Campaign)/Activities>Opens Number**.
+•	Set Field Value to =1.
+•	When you are done, make sure you click **Save and Close**. 
+
+|
+
+.. image:: ./img/dotmailer_email_campaign/oro_statistics_general_opens.jpg
+
+|
+
+
+This list will now appear in the marketing list page and will contain all contacts who have opened your previous emails. 
+
+Similarly, you can apply any conditions of your choice.
