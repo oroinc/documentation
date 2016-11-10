@@ -102,7 +102,7 @@ Prepare Data for the Campaign in OroCRM
 Email campaigns are based on data in :ref:`marketing lists <user-guide-marketing-lists>`. 
 
 In order to prepare a campaign in OroCRM, you need to create a marketing list first.
-This list will create a segment on the **Dotmailer** side. Go to
+This list will create a segment on the Dotmailer side. Go to
 **Marketing>Marketing Lists** and click **Create Marketing List.**
 
 +-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -168,7 +168,7 @@ address book in Dotmailer. In order for OroCRM to see this address book:
 You can map contacts from OroCRM marketing list to your Dotmailer
 address book the following way:
 
--  Navigate to **Market>Marketing Lists** and select the list you would
+-  Navigate to **Marketing>Marketing Lists** and select the list you would
    like to use.
 
 -  Click **Connect to Dotmailer** in the top right corner\ **.**
@@ -354,7 +354,7 @@ In the Filters section:
 
 •	Drag Field Condition to set conditions to the list.
 •	Select **Contact>Marketing List>Marketing List (Email Campaign)/Email Campaign (Dotmailer Campaign)/Activities>Opens Number**.
-•	Set Field Value to =1.
+•	Set field value to =1.
 •	When you are done, make sure you click **Save and Close**. 
 
 |
