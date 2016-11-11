@@ -812,8 +812,11 @@ Review Assigned Roles and Access Settings
 
 5. In the upper-right corner of the page, review the **Owner** field. It represents the business unit that owns the user. If you review the user view being logged in the organization with a global access, you will also see a name of the organization that owns the user in the braces. 
 
-       
-    .. image:: ./img/access_roles_management/user_review_owner.png
+     
+
+    
+
+.. image:: ./img/access_roles_management/user_review_owner.png
 
 
 
@@ -940,7 +943,11 @@ Our sales director will have the following settings:
    **Regional Sales Manager**
    RSMs will have the following settings: 
 
+
    - **Owner**— Either 'USA' or 'EU.'  
+
+ 
+
    
    - **Roles**— 'Regional Sales Manager.'
    
@@ -950,7 +957,7 @@ Our sales director will have the following settings:
    
  
 
-   **Area Sales Manager**
+ **Area Sales Manager**
    ASMs will have the following settings: 
 
    - **Owner**— One of the business units of a lower level: 'Los Angeles,''Dallas,' 'New York,' 'Western Europe,' 'Eastern Europe.' 
@@ -1035,7 +1042,6 @@ But what happens when the need ceases for Jill's work at 'Sweet Tea' and an admi
 
 
 |
-
 .. image:: ./img/access_roles_management/multi_jillcannotlogin.png
 
 |
