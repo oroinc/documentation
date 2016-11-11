@@ -812,9 +812,6 @@ Review Assigned Roles and Access Settings
 
 5. In the upper-right corner of the page, review the **Owner** field. It represents the business unit that owns the user. If you review the user view being logged in the organization with a global access, you will also see a name of the organization that owns the user in the braces. 
 
-   .. note::
-       In the organization structure, business unit that owns the user plays role in determining which unit records created by a user belong to. 
-
        
     .. image:: ./img/access_roles_management/user_review_owner.png
 
@@ -943,7 +940,7 @@ Our sales director will have the following settings:
    **Regional Sales Manager**
    RSMs will have the following settings: 
 
-   - **Owner**— Either 'USA' or 'EU.' This will define which business unit the data created by a RSL will belong to. 
+   - **Owner**— Either 'USA' or 'EU.'  
    
    - **Roles**— 'Regional Sales Manager.'
    
