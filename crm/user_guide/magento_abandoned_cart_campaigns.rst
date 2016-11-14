@@ -115,16 +115,16 @@ More information about the ways to define filters is provided in the
 Columns
 ^^^^^^^
 
-In the "*Columns*" section, define the set of fields.
+In the **Columns** section, define a set of fields.
 The only goal of this set of fields is to visualize records that meet the filter requirements. (Values of the chosen 
-fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign).
+fields will be displayed on the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign).
 
 .. note::
 
     Marketing activities require some contact information, so at least one column that contains it must be 
     selected.
   
-- Choose the fields from the drop-down menu in the *"Column*" section.
+- Choose the fields from the drop-down list in the **Column** section.
 
 - Label is the way the field will be referred to in the grid. The value defined for the field will be added by default, 
   but can be changed. 
@@ -194,24 +194,24 @@ sections:
 
 - Magento Shopping Carts grid: the grid of Magento shopping carts included in the campaign.
   
-  - *"SUBSCRIBED"* column of the grid : Initially all the users in the list are subscribed (the column value is "Yes"). 
+  - **SUBSCRIBED** column of the grid : Initially all the users in the list are subscribed (the column value is "Yes"). 
     If during one of the mailing campaigns a user has unsubscribed, the value is changed to "No" and 
     the user is excluded from the next campaigns.
 
 - Removed Items: the grid contains carts that have been removed from the list (a cart may be removed from OroCRM 
-  and\or from MailChimp (requires synchronization).
+  and/or from MailChimp (requires synchronization).
 
 - Action icons in the last column of the grid enable the following actions:
 
-  - Get to the *"View"* page of the grid item: |IcView|
+  - Get to the **View** page of the grid item: |IcView|
 
   - Unsubscribe/subscribe the item from/to the list manually: |IcUns| and  |IcSub| icons
  
   - Remove the item from the list: |IcRemove|
 
-- Action icons in the last column of the *"Removed Items"* grid enable the following actions:
+- Action icons in the last column of the **Removed Items** grid enable the following actions:
 
-  - Get to the *"View"* page of the grid item: |IcView|
+  - Get to the **View** page of the grid item: |IcView|
 
   - Restore the item in the marketing list: |UndoRem|  
    
@@ -264,7 +264,7 @@ In order to enable the conversion you need to do the following:
 
 .. important::
 
-    For all the links to be monitored for conversion, add the *?pk_campaign=*|E_CMPGN_CD|*.
+    For all the links to be monitored for conversion, add the ``?pk_campaign=*|E_CMPGN_CD|``.
  
     This way, each time a user follows the link, an event will be created in OroCRM. Further actions of the user in the
     store will be tracked.

@@ -204,12 +204,9 @@ A condition group may also be included into another condition group as a separat
 Segments
 --------
 
-Segment is a set of Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately
-:ref:` <user-guide-filters-segments>` for records of a specific entity, and updated dynamically or 
-upon a direct user's request.
+A segment is a set of the Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately :ref:`Filters guide <user-guide-filters-segments>` for records of a specific entity. It can be updated dynamically or upon a user's request.
 
-In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a 
-segment and use it instead of redefining the same conditions time and again.
+In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a segment and use it instead of redefining the same conditions time and again.
 
 The ways to create and manage segments are described in more details in the 
 :ref:`Segments guide <user-guide-filters-segments>`.
