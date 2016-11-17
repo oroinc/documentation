@@ -153,7 +153,7 @@ With the :ref:`action buttons <user-guide-ui-components-view-page-actions>` on t
 
 - Disable: Disables the user so they are no longer available to access the system
 
-- Enable: Enables the user to be able to access the system. In addition 'Auth status' may prevent the user login.
+- Enable: Enables the user to be able to access the system. In addition 'Auth status' may prevent the user from login.
 
 .. image:: ./img/user_management/reset_password.png
 
