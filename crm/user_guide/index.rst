@@ -170,6 +170,7 @@ guide are most relevant for your work duties.
     * :doc:`/user_guide/mailchimp_integration`
     * :doc:`/user_guide/sending_email_campaign_via_mailchimp`
     * :doc:`/user_guide/dotmailer_integration`
+    * :doc:`/user_guide/sending_email_campaign_via_dotmailer`
     * :doc:`/user_guide/ms_exchange_integration`
     * :doc:`/user_guide/outlook_sync`
     * :doc:`/user_guide/embedded_forms`
