@@ -107,15 +107,15 @@ When you create an entity record, you may define its 'owner'. The type of the ow
 
 |
 
-'Owner' is an important concept as it may influence a user's access rights. For example, the 'Lex Shop' account belongs to John who has access to the 'West' office of the 'Acme' company. The company employees have access only to the accounts of the office they work at. If Acme decides to transfer John to another office and restricts him access to the 'West' office, employees of the 'West' office will not be able to access 'Lex Shop' any more.  
+'Owner' is an important concept as it may influence a user's access rights. For example, 'Lex Shop' account belongs to John who has access to the 'West' office of the 'Acme' company. The company employees have access only to the accounts of the office they work at. If Acme decides to transfer John to another office and restricts him access to the 'West' office, employees of the 'West' office will not be able to access 'Lex Shop' any more.  
 
 
 
 
-*Can a particular entity be managed by a user or a business unit or a organization? Or may be this is a system entity?*
+*Can a particular entity be managed by a user or a business unit or a organization? Or maybe this is a system entity?*
 You answer these questions by specifying the ``ownership type`` for an entity. 
-For example, the **Account** entity ownership type is **User.** So, a customer's account can be 'owned' by a particular user. The user can access, manage this account and is responsible for it. 
-A business unit represents a team of users. Decisions about a business unit's fate are taken at the level of the business unit that incorporates the said one or directly at the level of the organization.  So, it takes at least another business unit to 'own' the business unit. And the **Business Unit** entity ownership type is **Business Unit.**
+For example, ownership type of **Account** entity is **User.** So, a customer's account can be 'owned' by a particular user. The user can access, manage this account and is responsible for it. 
+A business unit represents a team of users. Decisions about a business unit's fate are taken at the level of the business unit that incorporates the said one or directly at the level of the organization. So, it takes at least another business unit to 'own' the business unit. And the **Business Unit** entity ownership type is **Business Unit.**
 
 |
 
@@ -156,7 +156,7 @@ The following table shows what access levels can be assigned depending on the en
 | None           | None, Global                                                  |
 +----------------+---------------------------------------------------------------+
 
-.. For CE **Organization** OT is the same as **None**?
+.. For CE **Organization** OT is the same as **System.** 
 
 .. caution::
 	As you can see, ownership types in general have the same names as access levels. However, do not be confused: they are very different things. 
@@ -177,7 +177,7 @@ Configure an Ownership Type for an Entity
 1. Start creating a new entity. To do this, follow the instructions provided in the
    `Create Entities <./entities#create-entities>`__ section of the `Entities <./entities>`__ guide. Specify all information as required for the **General Information,** **Communication & Collaboration,** **Attachments** sections.
 
-2. Click **Other**.
+2. Click **Other.**
 
 
 3. From the **Ownership Type** list, select the desired ownership type. 
@@ -314,13 +314,13 @@ All important information that comprises an entity is contained in the entity fi
 
 When you include the permission to view entity records in a role, users with such role are automatically able to see all fields of the entity. 
 
-However, there are situations when it is desirable to hide certain fields from one group of users while still having them available for others. For example, both the sales team and support team require to see the **Opportunity** entity records. But as the financial information is often considered sensitive, you may want to hide the **Budget Amount** field from the support team members.  
+However, there are situations when it is desirable to hide certain fields from one group of users while still having them available for others. For example, both the sales team and support team require to see **Opportunity** entity records. But as the financial information is often considered sensitive, you may want to hide the **Budget Amount** field from the support team members.  
 
 
-Its is possible to do this using the Field Level ACLs functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
+Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
 
 .. important::
-	Currently, the Field Level ACL functionality is available for the **Account,** **Opportunity** and custom entities. 
+	Currently, Field Level ACL functionality is available out of the box for **Account,** **Opportunity,** and custom entities. 
 
 
 The list of available actions for entity fields is smaller than for an entity:
