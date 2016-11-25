@@ -20,6 +20,7 @@ import sys, os
 
 sys.path.append(os.path.abspath('_exts'))
 sys.path.append('C:\Users\oro\dev\documentation\crm\_exts')
+sys.path.append('C:\Users\oro\sphinx-php')
 
 # adding PhpLexer
 from sphinx.highlighting import lexers
