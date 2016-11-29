@@ -107,7 +107,7 @@ Create New Records and Edit Existing Records
 To change the details of an existing record or to create a new record, you need to (re)define the record properties on 
 its Create/Edit form.
 
-The Create/Edit form details are described in the :ref:`Create/Edit Forms `<user-guide-ui-components-create-pages>` 
+The Create/Edit form details are described in the :ref:`Create a New Record and Edit the Record Details Pages `<user-guide-ui-components-create-pages>` 
 guide.
 
 Tag the Records
