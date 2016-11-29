@@ -3,12 +3,12 @@
 Create a New Record and Edit the Record Details Pages
 =====================================================
 
-In order to create a new record of an :term:`entity` or to update details of the existing record, use the dedicated **Create <entity name>** and **Edit <entity name>** pages.
+In order to create a new record of an :term:`entity` or to update details of the existing record, use the dedicated **Create <Entity name>** and **Edit <Entity name>** pages.
 
 Create a Record
 ---------------
 
-1. On the **All <entity name>** page (the page with the list of all entity records), click the  :guilabel:`Create <entity name>` button in the upper-right corner. The **Create <entity name>** page opens. 
+1. On the **All <entity name>** page (the page with the list of all entity records), click the  :guilabel:`Create <entity name>` button in the upper-right corner. The **Create <Entity name>** page opens. 
    
    |
 
@@ -47,11 +47,11 @@ Create a Record
    
    To save the record, click one of the options in the save menu in the upper-right corner of the page: 
   
-   - :guilable:`Save`—Save the changes and stay on the **Create <entity name>** page. Use this option if you want to make more changes into the record configuration.   
+   - :guilabel:`Save`—Save the changes and stay on the **Create <Entity name>** page. Use this option if you want to make more changes to the record configuration.   
    
-   - :guilable:`Save and Close`—Save the changes and close the **Create <entity name>** page. The record view page opens.
+   - :guilabel:`Save and Close`—Save the changes and close the **Create <Entity name>** page. The record view page opens.
    
-   - :guilable:`Save and New`—Save the changes and open an new **Create <entity name>** page. The blank **Create <entity name>** page opens. Use this option if you want to immedietely create another record. 
+   - :guilabel:`Save and New`—Save the changes and open a new **Create <Entity name>** page. The blank **Create <Entity name>** page opens. Use this option if you want to immediately create another record. 
    
    To discard the changes, click the :guilabel:`Cancel` button in the upper-right corner of the page.
 
@@ -64,11 +64,11 @@ Create a Record
 Edit a Record
 -------------
 
-To change the properties of a records, use the **Create <entity name>** page. 
+To change the properties of a record, use the **Create <Entity name>** page. 
 
 1. Do one of the following:
    
-   - In the grid on the **All <entity name>** page (the page with the list of all entity records), choose the entity record you want to edit, click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcEdit| **Edit** icon.
+   - In the grid on the **All <Entity name>** page (the page with the list of all entity records), choose the entity record you want to edit, click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcEdit| **Edit** icon.
 
    - Open the entity view page and click the  :guilabel:`Edit` button in the upper-right corner.  
    
