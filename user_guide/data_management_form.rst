@@ -8,7 +8,7 @@ In order to create a new record of an :term:`entity` or to update details of the
 Create a Record
 ---------------
 
-1. On the **All <entity name>** page (the page with the list of all entity records), click the  :guilabel:`Create <entity name>` button in the upper-right corner. The **Create <Entity name>** page opens. 
+1. On the **All <Entity name>** page (the page with the list of all entity records), click the  :guilabel:`Create <Entity name>` button in the upper-right corner. The **Create <Entity name>** page opens. 
    
    |
 
@@ -78,7 +78,7 @@ To change the properties of a record, use the **Create <Entity name>** page.
 
    |
 
-2. Modify records and save the changes as described in step 2–3 of the `Create a Record <./data-management-form#create-a-racord>`__ section.
+2. Modify records and save the changes as described in step 2–3 of the `Create a Record <./data-management-form#create-a-record>`__ section.
 
 .. note::
 
