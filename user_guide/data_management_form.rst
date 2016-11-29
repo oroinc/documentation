@@ -3,6 +3,10 @@
 Create a New Record and Edit the Record Details Pages
 =====================================================
 
+.. contents:: :local:
+    :depth: 3
+
+
 In order to create a new record of an :term:`entity` or to update details of the existing record, use the dedicated **Create <Entity name>** and **Edit <Entity name>** pages.
 
 Create a Record
