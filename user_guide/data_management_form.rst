@@ -1,71 +1,90 @@
 .. _user-guide-ui-components-create-pages:
 
-Forms to Create New Records and Edit Their Details
-==================================================
+Create a New Record and Edit the Record Details Pages
+=====================================================
 
-In order to create a new record of an :term:`entity`, or to update details of the existing record, use the dedicated 
-Create/Edit forms as described below.
+In order to create a new record of an :term:`entity` or to update details of the existing record, use the dedicated **Create <entity name>** and **Edit <entity name>** pages.
 
 Create a Record
 ---------------
 
-Click the  :guilabel:`Create {Entity Name}` button in the top right 
-corner of the grid to get to the *"Create ..."* form.
+1. On the **All <entity name>** page (the page with the list of all entity records), click the  :guilabel:`Create <entity name>` button in the upper-right corner. The **Create <entity name>** page opens. 
+   
+   |
 
-- All the editable fields of the entity will be displayed in the grid. 
+   .. image:: ./img/ui_components/create_page_example.png
 
-.. note::
+   |
 
-    The list of fields available from the form s defined by the system administrator 
-    (:ref:`Show on Form <user-guide-entity-management-other-common>` settings defined for 
-    fields of the entity).
 
-- Mandatory fields are identified with a red asterisk.
+   .. note::
 
-- If there are several sections, they are displayed one after another and allocated into different tabs.
+    The default list of fields available on the page can be modified by an administrator. For more information,  see the description of the **Show on Form** field in the :ref:`Show on Form <user-guide-entity-management-other-common>` guide. 
 
-For example, this is a *"Create Email Campaign"* form:
 
-|
 
-.. image:: ./img/ui_components/create_page.png
+2. Fill in all the required information. 
+   
+   Note that mandatory fields are identified with the red asterisk.
 
-|
+   |
 
-You can click on a name of the section you need (e.g. *"Email Settings"*), and this section will be 
-displayed at the top:
+   .. image:: ./img/ui_components/create_page_asterisk.png
 
-|
+   |
 
-.. image:: ./img/ui_components/create_page_tab.png
 
-|
+
+   Available fields are usually gathered into logical sections. Click the section name to scroll the page to the fields that belong to this section.
+
+   |
+
+   .. image:: ./img/ui_components/create_page_sections.png
+
+   |
+
+3. Save the new record or discard it. 
+   
+   To save the record, click one of the options in the save menu in the upper-right corner of the page: 
+  
+   - :guilable:`Save`—Save the changes and stay on the **Create <entity name>** page. Use this option if you want to make more changes into the record configuration.   
+   
+   - :guilable:`Save and Close`—Save the changes and close the **Create <entity name>** page. The record view page opens.
+   
+   - :guilable:`Save and New`—Save the changes and open an new **Create <entity name>** page. The blank **Create <entity name>** page opens. Use this option if you want to immedietely create another record. 
+   
+   To discard the changes, click the :guilabel:`Cancel` button in the upper-right corner of the page.
+
+   |
+
+   .. image:: ./img/ui_components/create_page_save_cancel.png
+
+   |
 
 Edit a Record
 -------------
 
-To change the properties of a records, use the Edit form. In most cases, the only difference between the *"Edit"* and 
-*"Create"* forms is that previously defined field values are already filled in. 
+To change the properties of a records, use the **Create <entity name>** page. 
+
+1. Do one of the following:
+   
+   - In the grid on the **All <entity name>** page (the page with the list of all entity records), choose the entity record you want to edit, click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcEdit| **Edit** icon.
+
+   - Open the entity view page and click the  :guilabel:`Edit` button in the upper-right corner.  
+   
+   |
+
+   .. image:: ./img/ui_components/edit_page_example.png
+
+   |
+
+2. Modify records and save the changes as described in step 2–3 of the `Create a Record <./data-management-form#create-a-racord>`__ section.
 
 .. note::
 
-    Some of the values cannot be re-defined, subject to the system requirements. 
+    Some of the fields labels cannot be changed after the record is created, subject to the system requirements. 
 
 
-Form Action Buttons
--------------------
-
-In the top right corner of every *"Create/Edit"* form, you can usually see two Action Buttons:  :guilabel:`Cancel` and  
-:guilabel:`Save` or  :guilabel:`Save and Close`.
-
-.. image:: ./img/ui_components/create_action_buttons.png
-
-- If you don't want to save the changes in the system, click :guilabel:`Cancel`. 
-
-- To Save the changes applied and stay on the form, click :guilabel:`Save`.
-
-- To get to the :ref:`View page <user-guide-ui-components-view-pages>` of the entity record, click 
-  :guilabel:`Save and Close` 
 
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
