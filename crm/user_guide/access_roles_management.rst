@@ -75,7 +75,7 @@ The full list of all possible access levels can be found in the following table:
 
 
 .. Important:: 
-	When a user logs into the organization with global access, all their access levels, except **Global**, are treated as **None**.
+	When a user logs into the organization with global access, all their access levels, except **Global,** are treated as **None.**
 
 
 How Are Access Levels Used? 
@@ -83,14 +83,14 @@ How Are Access Levels Used?
 You set access levels when you configure a user role and define permissions it will include. For each action that can be performed on entity (view, create, delete, etc.) you can set an access level. 
 
 For example, for the **Account** entity, **Create** action, you set the **User** access level. It means that a user with such role will be able to create accounts only with themselves as an owner. 
-If you decide to grant a user permission to create accounts withing the user's division (i.e., when creating an account, the user can set any member of the same division as the account's owner), create a role that will have the **Division**access level for the **Account** entity, action **Create**. 
+If you decide to grant a user permission to create accounts withing the user's division (i.e., when creating an account, the user can set any member of the same division as the account's owner), create a role that will have the **Division** access level for the **Account** entity, action **Create.** 
 
 For more information and examples on roles creation, see the `Roles <./access-roles-management#roles>`__ section.
 
 .. important::
-  There are two access levels that you can set for any entity: **None** and **Global**.
+  There are two access levels that you can set for any entity: **None** and **Global.**
 
-	Ability to set other access levels depends on the entity’s ownership type. You can set an access level that is ‘higher than or equal’ to the entity’s ownership type. Thus, if an entity's ownership type is **Business Unit**, you cannot set the **User** access level for any action on this entity. 
+	Ability to set other access levels depends on the entity’s ownership type. You can set an access level that is ‘higher than or equal’ to the entity’s ownership type. Thus, if an entity's ownership type is **Business Unit,** you cannot set the **User** access level for any action on this entity. 
 
 	For more information about ownership types, see the `Ownership Type <./access-roles-management#ownership-type>`__ section and specifically, the `Ownership type and access levels <./access-roles-management#ownership-types-and-access-levels>`__ subsection.
 
@@ -107,15 +107,15 @@ When you create an entity record, you may define its 'owner'. The type of the ow
 
 |
 
-'Owner' is an important concept as it may influence a user's access rights. For example, the 'Lex Shop' account belongs to John who has access to the 'West' office of the 'Acme' company. The company employees have access only to the accounts of the office they work at. If Acme decides to transfer John to another office and restricts him access to the 'West' office, employees of the 'West' office will not be able to access 'Lex Shop' any more.  
+'Owner' is an important concept as it may influence a user's access rights. For example, 'Lex Shop' account belongs to John who has access to the 'West' office of the 'Acme' company. The company employees have access only to the accounts of the office they work at. If Acme decides to transfer John to another office and restricts him access to the 'West' office, employees of the 'West' office will not be able to access 'Lex Shop' any more.  
 
 
 
 
-*Can a particular entity be managed by a user or a business unit or a organization? Or may be this is a system entity?*
+*Can a particular entity be managed by a user or a business unit or a organization? Or maybe this is a system entity?*
 You answer these questions by specifying the ``ownership type`` for an entity. 
-For example, the **Account** entity ownership type is **User**. So, a customer's account can be 'owned' by a particular user. The user can access, manage this account and is responsible for it. 
-A business unit represents a team of users. Decisions about a business unit's fate are taken at the level of the business unit that incorporates the said one or directly at the level of the organization.  So, it takes at least another business unit to 'own' the business unit. And the **Business Unit** entity ownership type is **Business Unit**.
+For example, ownership type of **Account** entity is **User.** So, a customer's account can be 'owned' by a particular user. The user can access, manage this account and is responsible for it. 
+A business unit represents a team of users. Decisions about a business unit's fate are taken at the level of the business unit that incorporates the said one or directly at the level of the organization. So, it takes at least another business unit to 'own' the business unit. And the **Business Unit** entity ownership type is **Business Unit.**
 
 |
 
@@ -156,7 +156,7 @@ The following table shows what access levels can be assigned depending on the en
 | None           | None, Global                                                  |
 +----------------+---------------------------------------------------------------+
 
-.. For CE **Organization** OT is the same as **None**?
+.. For CE **Organization** OT is the same as **System.** 
 
 .. caution::
 	As you can see, ownership types in general have the same names as access levels. However, do not be confused: they are very different things. 
@@ -172,12 +172,12 @@ Configure an Ownership Type for an Entity
 """""""""""""""""""""""""""""""""""""""""
 .. important::
 	You can define an entity ownership type only during the entity creation. As soon as the entity is saved for the first type, its ownership type cannot be changed. 
-	Consequently, you cannot change the predefined ownership types of the system entities (such as **Account**, **Business Unit**, etc.). 
+	Consequently, you cannot change the predefined ownership types of the system entities (such as **Account,** **Business Unit,** etc.). 
 
 1. Start creating a new entity. To do this, follow the instructions provided in the
-   `Create Entities <./entities#create-entities>`__ section of the `Entities <./entities>`__ guide. Specify all information as required for the **General Information**, **Communication & Collaboration**, **Attachments** sections.
+   `Create Entities <./entities#create-entities>`__ section of the `Entities <./entities>`__ guide. Specify all information as required for the **General Information,** **Communication & Collaboration,** **Attachments** sections.
 
-2. Click **Other**.
+2. Click **Other.**
 
 
 3. From the **Ownership Type** list, select the desired ownership type. 
@@ -196,7 +196,7 @@ Review the Ownership Type for an Entity
 """""""""""""""""""""""""""""""""""""""
 1. Open the entity view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **Entities** and in the new drop-down menu, click **Entity Management**.
+    a. In the **Main Menu,** point to **System,** in the drop-down menu, point to **Entities** and in the new drop-down menu, click **Entity Management.**
     
     b. In the grid on the **All Entities** view, click the required entity.
 
@@ -303,24 +303,24 @@ This is how the corresponding configuration looks on the interface for the **Acc
 For more information about which access levels defines which range, see the `Access Levels <./access-roles-management#access-levels>`__ section.
 
 .. Important::
-	Note that the set of available access levels depends on the entity's ownership type. For example, you will not be able to set the **User** access level if the entity's ownership type is **Organization**. Only two access levels are always available: **None**—access is denied and *Global*—access all entity records within the system.
+	Note that the set of available access levels depends on the entity's ownership type. For example, you will not be able to set the **User** access level if the entity's ownership type is **Organization.** Only two access levels are always available: **None**—access is denied and **Global**—access all entity records within the system.
 	For more information about ownership types, see the `Ownership Type <./access-roles-management#ownership-type>`__ section and specifically, the `Ownership type and access levels <./access-roles-management#ownership-types-and-access-levels>`__ subsection.
 
 
 Permissions for an Entity Field (Field Level ACLs) 
 ..................................................
 
-All important information that comprises an entity is contained in the entity fields. For example, if you open any record of the **Business Unit** entity, you will see such fields as **Name**, **Organization**, **Description**, **Website**, etc. 
+All important information that comprises an entity is contained in the entity fields. For example, if you open any record of the **Business Unit** entity, you will see such fields as **Name,** **Organization,** **Description,** **Website,** etc. 
 
 When you include the permission to view entity records in a role, users with such role are automatically able to see all fields of the entity. 
 
-However, there are situations when it is desirable to hide certain fields from one group of users while still having them available for others. For example, both the sales team and support team require to see the **Opportunity** entity records. But as the financial information is often considered sensitive, you may want to hide the **Budget Amount** field from the support team members.  
+However, there are situations when it is desirable to hide certain fields from one group of users while still having them available for others. For example, both the sales team and support team require to see **Opportunity** entity records. But as the financial information is often considered sensitive, you may want to hide the **Budget Amount** field from the support team members.  
 
 
-Its is possible to do this using the Field Level ACLs functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
+Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
 
 .. important::
-	Currently, the Field Level ACL functionality is available for the **Account**, **Opportunity** and custom entities. 
+	Currently, Field Level ACL functionality is available out of the box for **Account,** **Opportunity,** and custom entities. 
 
 
 The list of available actions for entity fields is smaller than for an entity:
@@ -340,7 +340,7 @@ For each of these actions you can set an access level, thus defining the range o
 .. Important::
 	Note that for entity fields, the set of available access levels depends on:
 
-	- Entity's ownership type. For example, you won't be able to set the **User** access level for a field if the entity's ownership type is **Organization**. 
+	- Entity's ownership type. For example, you won't be able to set the **User** access level for a field if the entity's ownership type is **Organization.** 
 	- Action. For the **Create** action only the **None** (access is denied) and *Global* (access all entity records within the system) access levels are available independently of the entity's ownership type.
 	  
 	  .. why? 
@@ -439,7 +439,7 @@ For convenience, permissions are grouped in tabs by functions they control:
 - **System Capabilities**——Access to the system functionalities.
   
 
-Each tab, except **System Capabilities**, is divided into two sections: 
+Each tab, except **System Capabilities,** is divided into two sections: 
 
 - With the list of 'action on entity' permissions.
 - With the list of capabilities.
@@ -457,7 +457,7 @@ It is divided itself in the following sections:
 - **Address**—A permission that defines whether a user can see drop-down country, address lists when they fill in address forms. 
 - **Application**—Access to system parts of OroCRM application (job queue, system configuration, etc.) or additional extension of 'action on entity' permissions(whether a user can share grid views, change passwords of other users, etc.) 
 - **Calendar**—Access to management of system calendars, etc. 
-- **Entity**—Permissions that define whether a user can import / export entity records, find them via the search functionality, etc.
+- **Entity**—Permissions that define whether a user can import or export entity records, find them via the search functionality, etc.
 
 
 Users Section
@@ -479,11 +479,11 @@ Actions with Roles
 
 Create a Role
 ~~~~~~~~~~~~~
-1. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
+1. In the **Main Menu,** point to **System,** in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
     
 2. Click the :guilabel:`Create Role` button in the upper-right corner of the view. The **Create Role** form opens.
 
-3. Click **General**, and in the **Role** field, type the role name. Note that the name must be unique for the system.
+3. Click **General,** and in the **Role** field, type the role name. Note that the name must be unique for the system.
 
 .. image:: ./img/access_roles_management/role_create1.png
 
@@ -492,13 +492,13 @@ Create a Role
 
    - **Description**—Type the description of this role. Use the in-built text editor to format the provided description.
    
-   - **Organization**—Select the organization for user's of which this role will be applicable. If you want this role to be applicable for all organizations defined in the system, do not specify any organization. In this case the field value becomes **System-wide**. (If there is only a single organization defined in the system or you do not have global access rights, there will be no option for selecting an organization.)
+   - **Organization**—Select the organization for user's of which this role will be applicable. If you want this role to be applicable for all organizations defined in the system, do not specify any organization. In this case the field value becomes **System-wide.** (If there is only a single organization defined in the system or you do not have global access rights, there will be no option for selecting an organization.)
 	
 .. image:: ./img/access_roles_management/role_create2.png
 
-5. Click **Entities**. In this section define which 'action on entity' permissions and which capabilities you want to include in the role. For more information about the 'action on entity' permissions and capabilities, see the `Roles <./access-roles-management#roles>`__ section.
+5. Click **Entities.** In this section define which 'action on entity' permissions and which capabilities you want to include in the role. For more information about the 'action on entity' permissions and capabilities, see the `Roles <./access-roles-management#roles>`__ section.
  
-   1. For each action on each entity specify the required access level. By default, for all entities access levels are set to **None**. Choose an entity which you want to assign different permissions for. In the entity row, click the action name and in the drop-down list, click the required access level. For more information about the access levels, see the `Access Levels <./access-roles-management#access-levels>`__ section.
+   1. For each action on each entity specify the required access level. By default, for all entities access levels are set to **None.** Choose an entity which you want to assign different permissions for. In the entity row, click the action name and in the drop-down list, click the required access level. For more information about the access levels, see the `Access Levels <./access-roles-management#access-levels>`__ section.
    
    .. image:: ./img/access_roles_management/role_create_entities_acl2.png
 
@@ -527,7 +527,7 @@ Clone a Role
 ~~~~~~~~~~~~
 You can create a role by cloning the existing one. For this, do as follows:
 
-1. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
+1. In the **Main Menu,** point to **System,** in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles.**
 
 2. In the grid on the **All Roles** view, choose the required role, click the ellipsis menu at the right-hand end of the corresponding role and then click the |IcClone| **Clone** icon.  
 
@@ -556,7 +556,7 @@ Review a Role
 ~~~~~~~~~~~~~
 1. Open the role view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
+    a. In the **Main Menu,** point to **System,** in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles.**
     
     b. In the grid on the **All Roles** view, click the required role. 
     
@@ -568,7 +568,7 @@ Edit a Role
 ~~~~~~~~~~~
 1. Open the role view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
+    a. In the **Main Menu,** point to **System,** in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles.**
     
     b. In the grid on the **All Roles** view, click the required role. 
 
@@ -584,7 +584,7 @@ Edit a Role
 
 Delete a Role
 ~~~~~~~~~~~~~
-1. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
+1. In the **Main Menu,** point to **System,** in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles.**
 
 2. In the grid on the **All Roles** view, choose the required role, click the ellipsis menu at the right-hand end of the corresponding role and then click the |IcDelete| **Delete** icon.  
 
@@ -614,9 +614,9 @@ Enable Assigning Permissions for an Entity Field
 
 1. Open the entity view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **Entities** and in the new drop-down menu, click **Entities Management**.
+    a. In the **Main Menu,** point to **System,** in the drop-down menu, point to **Entities** and in the new drop-down menu, click **Entities Management.**
     
-    b. In the grid on the **All Entities** view, click the required entity (it must be either  **Account**, **Opportunity** or any custom entity you have previously created). 
+    b. In the grid on the **All Entities** view, click the required entity (it must be either  **Account,** **Opportunity** or any custom entity you have previously created). 
 
 2. On the entity view, click the :guilabel:`Edit` button in the upper-right corner.
 
@@ -635,9 +635,9 @@ Enable User to See Restricted Fields
 
 1. Open the entity view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **Entities** and in the new drop-down menu, click **Entities Management**.
+    a. In the **Main Menu,** point to **System;** in the drop-down menu, point to **Entities;** and in the new drop-down menu, click **Entities Management.**
     
-    b. In the grid on the **All Entities** view, click the required entity (it must be either  **Account**, **Opportunity** or any custom entity you have previously created). 
+    b. In the grid on the **All Entities** view, click the required entity (it must be either **Account,** **Opportunity,** or any custom entity you have previously created). 
 
 2. On the entity view, click the :guilabel:`Edit` button in the upper-right corner.
 
@@ -656,13 +656,13 @@ Include Permissions for an Entity Field in a Role
 
 1. Open the role view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles**.
+    a. In the **Main Menu,** point to **System,** in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Roles.**
     
     b. In the grid on the **All Roles** view, click the required role. 
 
 2. On the role view, click the :guilabel:`Edit` button in the upper-right corner.
 
-3. Click **Entities**.
+3. Click **Entities.**
 
 4. Find the required entity in the list. If assigning permissions for an Entity Field was enabled for the entity, you will see the plus sign near its name. 
    
@@ -696,9 +696,9 @@ Configure Access Settings While Creating a New User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Start creating a new user. To do this, follow the instructions provided in the
-   `Create a User Record <./user-management-users#create-a-user-record>`__ section of the `User Records Management <./user-management-users>`__ guide. Specify all information as required for the **General**, **Additional**, **Groups and Roles** and **Password** sections.
+   `Create a User Record <./user-management-users#create-a-user-record>`__ section of the `User Records Management <./user-management-users>`__ guide. Specify all information as required for the **General,** **Additional,** **Groups and Roles,** and **Password** sections.
 
-2. Click **Access Settings**.
+2. Click **Access Settings.**
 
 3. (Only for EE) In the **Organizations** section, select the check boxes in front of organization(s) you want the user to have access to. 
    
@@ -723,9 +723,9 @@ Assign Roles While Creating a New User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Start creating a new user. To do this, follow the instructions provided in the
-   `Create a User Record <./user-management-users#create-a-user-record>`__ section of the `User Records Management <./user-management-users>`__ guide. Specify everything as required for the **General**, **Additional**, **Access Settings** and **Password** sections.
+   `Create a User Record <./user-management-users#create-a-user-record>`__ section of the `User Records Management <./user-management-users>`__ guide. Specify everything as required for the **General,** **Additional,** **Access Settings,** and **Password** sections.
 
-2. Click **Groups and Roles**.
+2. Click **Groups and Roles.**
 
 3. In the **Roles** section, select the check boxes in front of the desired roles. 
    
@@ -748,13 +748,13 @@ Change the Range of Assigned User Roles
 
 1. Open the user view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Users**.
+    a. In the **Main Menu,**, point to **System;** in the drop-down menu, point to **User Management;** and in the new drop-down menu, click **Users.**
     
     b. In the grid on the **All Users** view, click the required user. 
 
 2. On the user view, click the :guilabel:`Edit` button in the upper-right corner.
 
-3. Click **Groups and Roles**.
+3. Click **Groups and Roles.**
 
 4. If required, add a new user role as described in the step 3 of the `Configure User Roles While Creating a New User <./access_roles_management#configure-user-role-while-creating-a-new-user>`__ section.
 
@@ -769,13 +769,13 @@ Edit User's Access Settings
 
 1. Open the user view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Users**.
+    a. In the **Main Menu,** point to **System;** in the drop-down menu, point to **User Management;** and in the new drop-down menu, click **Users.**
     
     b. In the grid on the **All Users** view, click the required user. 
 
 2. On the user view, click the :guilabel:`Edit` button in the upper-right corner.
 
-4. Click **Access Settings**.
+4. Click **Access Settings.**
 
 5. If required, add a new organization as described in step 3 of the `Configure Access Settings While Creating a New User <./access_roles_management#configure-access-settings-while-creating-a-new-user>`__ section.
 
@@ -800,7 +800,7 @@ Review Assigned Roles and Access Settings
 
 1. Open the user view:
 
-    a. In the **Main Menu**, point to **System**, in the drop-down menu, point to **User Management** and in the new drop-down menu, click **Users**.
+    a. In the **Main Menu,** point to **System;** in the drop-down menu, point to **User Management;** and in the new drop-down menu, click **Users.**
     
     b. In the grid on the **All Users** view, click the required user. 
 
