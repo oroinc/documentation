@@ -1,26 +1,35 @@
 User Guide
 ==========
 
-OroCRM is a highly flexible open source CRM that can and should be custom-tailored to meet the specific needs of your 
-business. Our belief is that the software should yield to business needs and adapt to the way you handle your 
-business — so all sales, marketing, support, and administrative activities appear familiar, convenient and as a result, 
-efficient.
+OroCRM is a highly flexible open source CRM. It can be easily custom-tailored to meet the specific needs of your 
+business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
 
-With OroCRM you can easily store and process all kinds of customer data; record and analyze your customer interactions; 
-and manage your sales from a prospect to a close deal. OroCRM also possesses comprehensive marketing and support 
-capabilities, and our extensive Magento integration provides unprecedented eCommerce CRM experience. Convenient user 
-interface of OroCRM will ensure that all necessary details are always at hand when they are required.
+With OroCRM you can easily:
 
-This guide will provide you with the detailed overview of all capabilities, tools, and functions of OroCRM. It is 
-divided in sections that gradually explain the system from the very basics of setting up a user profile and generic 
-data management tasks to more advanced CRM concepts such as Contact and Account management and then further into 
-specialized areas of handling sales, marketing, and support-specific duties. The final part of this guide is dedicated 
+* Store and process all kinds of customer data. 
+
+* Record and analyze your customer interactions.  
+
+* Manage your sales from a prospect to a close deal.
+
+* Manage your marketing campaigns and other marketing activities.
+
+* Provide support for clients and stuff.
+
+* Engage into eCommerce using extensive Magento integration. 
+
+
+This guide will provide you with the detailed overview of all capabilities, tools, and functions of OroCRM. 
+It is divided in sections that gradually explain the system from the very basics (e.g. setting up a user profile and generic 
+data management tasks) to more advanced CRM concepts(e.g. the contact and account management) and then further into 
+specialized areas (handling sales, marketing, and support-specific duties, etc). The final part of this guide is dedicated 
 to system administration and configuration.
 
 If you are reading it for the first time, we recommend that you begin with 
 :ref:`Getting Started section <user-guide-getting-started>`, and then continue 
-to :ref:`Data Management Basics <user-guide-data-management-basics>`. The 
-:ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you find out which sections of this 
+to :ref:`Data Management Basics <user-guide-data-management-basics>`. 
+
+The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you find out which sections of this 
 guide are most relevant for your work duties.
 
 
@@ -64,6 +73,7 @@ guide are most relevant for your work duties.
   
   * :doc:`/user_guide/business_intelligence_reports`
   * :doc:`/user_guide/rfm_user`
+  
       |
   
 * :doc:`/user_guide/common_features`
@@ -71,13 +81,11 @@ guide are most relevant for your work duties.
   * :doc:`/user_guide/common_features_accounts`
   * :doc:`/user_guide/common_features_channels`
   * :doc:`/user_guide/common_features_multi_channel_functionality`
-  *   
   * :doc:`/user_guide/common_features_contacts`
 
     * :doc:`/user_guide/common_features_contact_groups`
 
       |
-
     
 * :doc:`/user_guide/sales_index`
  
@@ -99,7 +107,6 @@ guide are most relevant for your work duties.
 
       |
 
-
 * :doc:`/user_guide/marketing_index`
 
   * :doc:`/user_guide/marketing_lists`
@@ -108,7 +115,6 @@ guide are most relevant for your work duties.
   * :doc:`/user_guide/email_templates`
   * :doc:`/user_guide/marketing_tracking_website_records`
   * :doc:`/user_guide/marketing_campaigns`  
-
 
       |
   
@@ -135,7 +141,6 @@ guide are most relevant for your work duties.
     
   * :doc:`/user_guide/notification_rules`
   * :doc:`/user_guide/workflow_management`
-
 
       |
 
