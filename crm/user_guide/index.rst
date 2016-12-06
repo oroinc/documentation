@@ -113,7 +113,6 @@ guide are most relevant for your work duties.
   
 * :doc:`/user_guide/support_index`
 
-  * :doc:`/user_guide/zendesk_integration`
   * :doc:`/user_guide/activities_create_case`
   
       |
@@ -140,24 +139,52 @@ guide are most relevant for your work duties.
 
 * :doc:`/user_guide/admin_index`
 
-  * :doc:`/user_guide/admin_capabilities`
   * :doc:`/user_guide/system_config`
   
       * :doc:`/user_guide/system_mailboxes`
+      
   
   * :doc:`/user_guide/entities`
-  * :doc:`/user_guide/entity_fields` 
-  * :doc:`/user_guide/processes`
-  * :doc:`/user_guide/package_manager`
+ 
+  
+    * :doc:`/user_guide/entity_fields` 
+  
+      * :doc:`/user_guide/access_management_ownership_type`   
+        
+
   * :doc:`/user_guide/user_management_index`
 
     * :doc:`/user_guide/user_management_overview`
-    * :doc:`/user_guide/user_management_users`
-    * :doc:`/user_guide/user_management_roles`
-    * :doc:`/user_guide/user_management_bu`
+    
+    
     * :doc:`/user_guide/user_management_organization`
-    * :doc:`/user_guide/multiple_organizations_support`
-    * :doc:`/user_guide/user_management_groups`
+    
+      * :doc:`/user_guide/multiple_organizations_support`
+      
+      
+    * :doc:`/user_guide/user_management_bu`
+      
+    * :doc:`/user_guide/user_management_groups`      
+
+    * :doc:`/user_guide/user_management_users`
+
+
+
+  * :doc:`/user_guide/access-roles-management`
+   
+    * :doc:`/user_guide/access_management_roles`      
+      * :doc:`/user_guide/access_management_roles_interface`  
+      * :doc:`/user_guide/access_management_roles_actions`
+      * :doc:`/user_guide/admin_capabilities`   
+    
+    * :doc:`/user_guide/access_management_user_access_settings`  
+
+    * :doc:`/user_guide/access_management_ownership_type`  
+      
+    * :doc:`/user_guide/access_management_access_levels`
+      
+    * :doc:`/user_guide/access_management_examples`    
+    * 
 
   * :doc:`/user_guide/integrations_index`
   
@@ -171,8 +198,11 @@ guide are most relevant for your work duties.
     * :doc:`/user_guide/outlook_sync`
     * :doc:`/user_guide/embedded_forms`
     * :doc:`/user_guide/hangouts`  
-
+    * :doc:`/user_guide/zendesk_integration`
     
+  * :doc:`/user_guide/processes`
+  * :doc:`/user_guide/package_manager`  
+
 .. toctree::
     :hidden:
 
