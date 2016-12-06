@@ -3,12 +3,19 @@ User Management
 The section describes tools related to user and organization set-up and permissions management.
 
 * :doc:`/user_guide/user_management_overview`
-* :doc:`/user_guide/user_management_users`
-* :doc:`/user_guide/user_management_roles`
-* :doc:`/user_guide/user_management_bu`
+  
 * :doc:`/user_guide/user_management_organization`
-* :doc:`/user_guide/multiple_organizations_support`
+	* :doc:`/user_guide/multiple_organizations_support`
+
+* :doc:`/user_guide/user_management_bu`
+
 * :doc:`/user_guide/user_management_groups`
+
+* :doc:`/user_guide/user_management_users`
+
+
+	
+
 
 .. toctree::
     :hidden:
