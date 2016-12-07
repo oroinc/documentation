@@ -26,7 +26,7 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/user_guide/multiple_organizations_support`
   * :doc:`/user_guide/user_management_groups`
   
-
+* :doc:`/user_guide/rfm_admin`
 * :doc:`/user_guide/integrations_index`
   
   * :doc:`/user_guide/integrations_overview`
@@ -34,6 +34,7 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/user_guide/magento_channel_integration`
   * :doc:`/user_guide/ldap_integration`
   * :doc:`/user_guide/mailchimp_integration`
+  * :doc:`/user_guide/sending_email_campaign_via_mailchimp`
   * :doc:`/user_guide/dotmailer_integration`
   * :doc:`/user_guide/ms_exchange_integration`
   * :doc:`/user_guide/outlook_sync`
@@ -52,5 +53,6 @@ Please note that in many cases, the tools may be not available to the usual user
     processes
     package_manager
     user_management_index
+    rfm_admin
     integrations_index
 
