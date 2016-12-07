@@ -20,6 +20,7 @@ With OroCRM you can easily:
 
 
 This guide will provide you with the detailed overview of all capabilities, tools, and functions of OroCRM. 
+
 It is divided into sections that gradually explain the system from the very basics (e.g. setting up a user profile and generic 
 data management tasks) to more advanced CRM concepts (e.g. the contact and account management) and then further into 
 specialized areas (handling sales, marketing, and support-specific duties, etc.). The final part of this guide is dedicated 
@@ -79,12 +80,14 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
 
   * :doc:`/user_guide/common_features_accounts`
   * :doc:`/user_guide/common_features_channels`
-  * :doc:`/user_guide/common_features_multi_channel_functionality`  
+  * :doc:`/user_guide/common_features_multi_channel_functionality`
   * :doc:`/user_guide/common_features_contacts`
 
     * :doc:`/user_guide/common_features_contact_groups`
 
+
 |
+
 
     
 * :doc:`/user_guide/sales_index`
@@ -107,7 +110,6 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
 
 |
 
-
 * :doc:`/user_guide/marketing_index`
 
   * :doc:`/user_guide/marketing_lists`
@@ -118,7 +120,9 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
   * :doc:`/user_guide/marketing_campaigns`  
 
 
+
 |
+
   
 * :doc:`/user_guide/support_index`
 
@@ -144,7 +148,10 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
   * :doc:`/user_guide/workflow_management`
 
 
+
 |
+
+
 
 * :doc:`/user_guide/admin_index`
 
@@ -197,19 +204,27 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
      * :doc:`/user_guide/access_management_examples`    
     
 
+  * :doc:`/user_guide/rfm_admin`
   * :doc:`/user_guide/integrations_index`
   
-     * :doc:`/user_guide/integrations_overview`
-     * :doc:`/user_guide/google_single_sign_on`
-     * :doc:`/user_guide/magento_channel_integration`
-     * :doc:`/user_guide/ldap_integration`
-     * :doc:`/user_guide/mailchimp_integration`
-     * :doc:`/user_guide/dotmailer_integration`
-     * :doc:`/user_guide/ms_exchange_integration`
-     * :doc:`/user_guide/outlook_sync`
-     * :doc:`/user_guide/embedded_forms`
-     * :doc:`/user_guide/hangouts`  
-     * :doc:`/user_guide/zendesk_integration`
+
+
+  
+     
+    * :doc:`/user_guide/integrations_overview`
+    * :doc:`/user_guide/google_single_sign_on`
+    * :doc:`/user_guide/magento_channel_integration`
+    * :doc:`/user_guide/ldap_integration`
+    * :doc:`/user_guide/mailchimp_integration`
+    * :doc:`/user_guide/sending_email_campaign_via_mailchimp`
+    * :doc:`/user_guide/dotmailer_integration`
+    * :doc:`/user_guide/sending_email_campaign_via_dotmailer`
+    * :doc:`/user_guide/ms_exchange_integration`
+    * :doc:`/user_guide/outlook_sync`
+    * :doc:`/user_guide/embedded_forms`
+    * :doc:`/user_guide/hangouts`  
+    * :doc:`/user_guide/zendesk_integration`
+
     
   * :doc:`/user_guide/processes`
   * :doc:`/user_guide/package_manager`  
