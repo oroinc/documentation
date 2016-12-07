@@ -1,9 +1,11 @@
 
+Role on the Interface
+=======================
+
 .. contents:: :local:
     :depth: 3
 
-Role on the Interface
-----------------------
+    
 
 The information about a role is divided into four sections. 
 
