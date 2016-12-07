@@ -1,8 +1,12 @@
 Actions with Roles
-------------------
+===================
 
 .. contents:: :local:
     :depth: 3
+
+
+Actions
+--------
 
 Create a Role
 ^^^^^^^^^^^^^^
@@ -217,7 +221,9 @@ Links
 ------
 
 For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+
 For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+
 For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
 
 
