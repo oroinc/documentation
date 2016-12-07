@@ -134,7 +134,7 @@ However, there are situations when it is desirable to hide certain fields from o
 
 Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
 
-For more information about the field level ACLs, see the `Roles on the Interface <./access-management-field-level-acl>`__ guide.
+For more information about the field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <./access-management-field-level-acl>`__ guide.
 
 
 Links

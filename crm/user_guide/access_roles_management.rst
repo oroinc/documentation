@@ -43,7 +43,8 @@ Different OroCRM users require different information and tools. A user's ability
    Users who create or edit a record can specify a record owner. The range from which they can pick up a record owner depends on the user role(s) and the ownership type of an entity the record of which they create / edit.  
 
 
-
+Links
+------
 
 
 For how to configure roles, see the `Roles Management <./access-management-roles>`__ guide. 
