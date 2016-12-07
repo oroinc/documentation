@@ -124,5 +124,7 @@ Review the Ownership Type for an Entity
 Links
 -----
 For more information about the access settings configuration, see the `Access Management <./access-management>`__ guide.
+
 For more information about the entity configuration, see the `Entity Management <./entities>`__ guide.
+
 For more information about the user configuration, see the `User Management <./user-management-users>`__ guide.

@@ -33,7 +33,7 @@ Goal
 We want to configure roles and other access settings in such a way that the sales representatives could access only the data they own. ASMs must be able to access data of the their whole subdivision. RSMs—data of all areas in their region. Sales Director must be able to view all the company data. 
 
 Configuration
-"^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 Let's assume that we have already created all the required Business Units: 'Main Office' (represents the unit that has access to the whole organization), 'USA,' 'EU,' 'Los Angeles,' 'Dallas,' 'New York,' 'Western Europe,' 'Eastern Europe.' 'Main Office' does not have a parent business unit. Business Units 'USA' and 'EU' have 'Main Office' as a parent business unit. 'Los Angeles,' 'Dallas,' 'New York' have the 'USA' business unit as a parent one. 'Western Europe,' 'Eastern Europe' have 'EU' as a parent business unit. 
 
@@ -261,7 +261,9 @@ Links
 ------
 
 For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+
 For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+
 For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
 
 

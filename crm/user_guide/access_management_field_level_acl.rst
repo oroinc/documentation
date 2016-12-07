@@ -1,8 +1,14 @@
 Permissions for an Entity Field (Field Level ACLs) 
 ==================================================
 
+.. contents:: :local:
+    :depth: 3
+
+
+
 Overview
 ---------
+
 All important information that comprises an entity is contained in the entity fields. For example, if you open any record of the **Business Unit** entity, you will see such fields as **Name**, **Organization**, **Description**, **Website**, etc. 
 
 When you include the permission to view entity records in a role, users with such role are automatically able to see all fields of the entity. 
@@ -86,7 +92,7 @@ Enable Assigning Permissions for an Entity Field
 4. Select the **Field Level ACL** check box.
 
 
-.. image:: ./img/access_roles_management/user_roles_edit.png
+.. image:: ./img/access_roles_management/access_field_level_acl_enable.png
 
 5. Click the :guilabel:`Save` button in the upper-right corner.
 
@@ -108,7 +114,7 @@ Enable User to See Restricted Fields
 
 |
 
-.. image:: ./img/access_roles_management/user_roles_....png
+.. image:: ./img/access_roles_management/access_field_level_acl_showrestricted.png
 
 |
 

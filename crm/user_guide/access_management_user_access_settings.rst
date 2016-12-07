@@ -155,5 +155,7 @@ Review Assigned Roles and Access Settings
 Links
 -----
 For more information about the access settings configuration, see the `Access Management <./access-management>`__ guide.
+
 For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+
 For more information about the user configuration, see the `User Management <./user-management-users>`__ guide.

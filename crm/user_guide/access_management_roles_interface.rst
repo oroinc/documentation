@@ -1,9 +1,9 @@
-Role on the Interface
-----------------------
 
 .. contents:: :local:
     :depth: 3
 
+Role on the Interface
+----------------------
 
 The information about a role is divided into four sections. 
 
@@ -98,7 +98,9 @@ Links
 ------
 
 For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+
 For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
+
 For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
 
 
