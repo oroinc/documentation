@@ -33,7 +33,7 @@ for it. If something has changed (e.g., the phone number), the properties are up
 New records can be created and the existing record can be updated both manually and automatically 
 (as a result of integration with third-party systems). 
 
-With OroCRM's comprehensive :ref:`access settings <user-guide-user-management-permissions>` you can define what users 
+With OroCRM's comprehensive `access settings <./access-roles-management>`__ you can define what users 
 will be able to view, update, delete, and create records of specific entities.
 
 As soon as a property has been updated, all the system users who have access permission will see its new updated state.
@@ -199,7 +199,7 @@ Related Documents
 * :doc:`/user_guide/data_management_workflows`
 * :doc:`/user_guide/data_management_data_audit`
 * :doc:`/user_guide/data_management_import_export`
-* :doc:`/user_guide/data_management_access_permissions_basic`
+* :doc:`/user_guide/access_roles_management`
  
 .. toctree::
     :hidden:
@@ -212,6 +212,7 @@ Related Documents
     data_management_data_audit
     data_management_import_export
     data_management_access_permissions_basic
+    access_roles_management
 
  
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
