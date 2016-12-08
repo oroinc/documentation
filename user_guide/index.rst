@@ -59,7 +59,7 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
   * :doc:`/user_guide/data_management_workflows`
   * :doc:`/user_guide/data_management_data_audit`
   * :doc:`/user_guide/data_management_import_export`
-  * :doc:`/user_guide/access-roles-management`
+  * :doc:`/user_guide/access_roles_management`
 
 |
 
@@ -184,7 +184,7 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
 
 
 
-  * :doc:`/user_guide/access-roles-management`
+  * :doc:`/user_guide/access_roles_management`
    
      * :doc:`/user_guide/access_management_roles`  
         

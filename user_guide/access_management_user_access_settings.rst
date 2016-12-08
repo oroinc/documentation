@@ -85,6 +85,7 @@ Change the Range of Assigned User Roles
 4. If required, add a new user role as described in the step 3 of the `Configure User Roles While Creating a New User <./access-management-user-access-settings#configure-user-role-while-creating-a-new-user>`__ section.
 
 |
+
 .. image:: ./img/access_roles_management/user_roles_edit.png
 
 |
@@ -159,3 +160,13 @@ For more information about the access settings configuration, see the `Access Ma
 For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
 
 For more information about the user configuration, see the `User Management <./user-management-users>`__ guide.
+
+
+.. |IcRemove| image:: ./img/buttons/IcRemove.png
+  :align: middle
+
+.. |IcClone| image:: ./img/buttons/IcClone.png
+  :align: middle
+
+.. |IcDelete| image:: ./img/buttons/IcDelete.png
+  :align: middle
