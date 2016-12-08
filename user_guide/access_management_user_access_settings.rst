@@ -162,6 +162,7 @@ For general overview of roles, see the `Roles Management <./access-management-ro
 For more information about the user configuration, see the `User Management <./user-management-users>`__ guide.
 
 
+
 .. |IcRemove| image:: ./img/buttons/IcRemove.png
   :align: middle
 
@@ -170,3 +171,5 @@ For more information about the user configuration, see the `User Management <./u
 
 .. |IcDelete| image:: ./img/buttons/IcDelete.png
   :align: middle
+
+
