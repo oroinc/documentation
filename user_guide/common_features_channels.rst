@@ -161,7 +161,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
       Once a channel has been deleted, all of the data related to it will be deleted as well.
 
-- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel: |IcEdit|
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel: |IcEdit|
 
   .. caution::
 
@@ -182,7 +182,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 - Deactivate or activate channels.  No new data from the channel will be uploaded for
   an inactive channel.
 
-- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the channel.
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel.
 
 - Delete the channel.
 

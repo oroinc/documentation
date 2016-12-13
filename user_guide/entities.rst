@@ -55,7 +55,7 @@ The following two fields are mandatory and **must** be defined:
 
   The name field cannot be a `reserved sql word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_."
   "**Label***","The label will be used to refer to the entity in the UI. The value shall be at least 2 symbols long."
-  "**Plural Label**","The label defined will be used to name the menu items and grids related to the entity."
+  "**Plural Label***","The label defined will be used to name the menu items and grids related to the entity."
 
 .. caution::
 
@@ -229,7 +229,7 @@ From the :ref:`grid <user-guide-ui-components-grids>`
 
 From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
-- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the entity: |IcEdit|"
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the entity: |IcEdit|"
 - Manage the entity fields, as described in the :ref:`Field Management <user-guide-field-management>` Guide.
   
 
