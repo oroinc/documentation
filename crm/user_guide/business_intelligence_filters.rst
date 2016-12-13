@@ -72,7 +72,7 @@ To define a field condition:
 - A drop-down will appear. At the top of the drop-down menu, you can see the name of the :term:`entity <Entity>`, for 
   which the records are filtered. (In the example below it is a Contact). Below the entity name there is a list of all
   the  of the chosen entity. Below the list of fields, is a list of related entities (entities 
-  that have a :ref:relation <user-guide-entity-management-create-relation> with the filtered entity.)
+  that have a :ref:`relation <user-guide-entity-management-create-relation>` with the filtered entity.)
   
   |field_condition_fields|
 

@@ -268,9 +268,9 @@ The following options are available:
   may affect the performance.","Enabled"
   "**Log Rotation Interval***","Defines how often log files must be processed if the *Dynamic Tracking* is 
   disabled.","1 hour"
-  "**Piwik Host**","The field must be specified if you want the tracking date to be sent to a
+  "**Piwik Host**","The field must be specified if you want the tracking data to be sent to a
   Piwik account. The value corresponds to the Piwik analytics URL of your account.","None"
-  "**Piwik Token Auth**","The field must be specified if you want the tracking date to be sent to a
+  "**Piwik Token Auth**","The field must be specified if you want the tracking data to be sent to a
   Piwik account. The value corresponds to the Piwik `token_auth <http://piwik.org/faq/general/faq_114/>`_ field.","None"
 
 .. caution::
@@ -341,13 +341,6 @@ have "Reply all" shown at the top.
 
 .. image:: ./img/configuration/reply_selector.png
 
-.. _admin-configuration-campaign-configuration:
-
-Campaign Configuration
-^^^^^^^^^^^^^^^^^^^^^^
-
-These *Sender Email* and *Sender Name* fields are used for Email Campaigns if no other values are defined for them.
-
 .. _admin-configuration-email-notification:
 
 Notification Configuration
@@ -357,13 +350,13 @@ The section defines the rules that will be applied by default to a notification 
 the **Sender Email** and **Sender Name** to be used.
 
 
-.. _admin-configuration-email-campaign:
+.. _admin-configuration-campaign-configuration:
 
 Campaign Configuration
 ^^^^^^^^^^^^^^^^^^^^^^
 
 The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in 
-OroCRM. You can define the **Sender Email** and **Sender Name** to be used.
+OroCRM. You can define the **Sender Email** and **Sender Name** to be used if no other values are defined for them.
 
 
 System Mailboxes
