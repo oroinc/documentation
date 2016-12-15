@@ -40,12 +40,15 @@ For each of these actions you can set an access level, thus defining the range o
 	Note that for entity fields, the set of available access levels depends on:
 
 	- Entity's ownership type. For example, you won't be able to set the **User** access level for a field if the entity's ownership type is **Organization**. 
+	
 	- Action. For the **Create** action only the **None** (access is denied) and *Global* (access all entity records within the system) access levels are available independently of the entity's ownership type.
 	  
 	  
-  For more information about how access levels are configured for entities, please see the `Action on Entity Permissions <./access-roles-management#actions-on-entity-permissions>`__ section.
-	For more information about ownership types, see the `Ownership Type <./access-roles-management#ownership-type>`__ section and particularly, the `Ownership type and access levels <./access-roles-management#ownership-types-and-access-levels>`__ subsection.
+For more information about how access levels are configured for entities, please see the `Action on Entity Permissions <./access-management-roles#actions-on-entity-permissions>`__ section of the `Roles Management <./access_management_roles>`__ guide.
 
+For more information about ownership types, see the `Ownership Type <./access-management-ownership-type>`__ guide and particularly, the `Ownership Type and Access Levels <./access-management-ownership-type#ownership-types-and-access-levels>`__ section.
+
+|
 
 .. image:: ./img/access_roles_management/roles_permissions_fields_general_ex.png 
 
@@ -65,7 +68,7 @@ Visibility of Restricted Fields
 
 Sometimes you want to enable users to modify only certain entity fields and restrict them from modifying others. For example, the workflow accepted in your company states that only a sales manager can change the status of the opportunity. However, sales representatives still need be able to review the **Status** field when they work with opportunities. 
 
-It is possible to configure this with OroCRM for both the **Create** and **Edit** actions. Fields disabled for modifying will appear dimmed on the interface. For how to do this, please see the `Enable User to See Restricted Fields <./access-roles-management#enable-user-to-see-restricted-fields>`__  section.
+It is possible to configure this with OroCRM for both the **Create** and **Edit** actions. Fields disabled for modifying will appear dimmed on the interface. For how to do this, please see the `Enable a User to See Restricted Fields <./access-roles-field-level-acl#enable-a-user-to-see-restricted-fields>`__  section.
 
 |
 
@@ -97,8 +100,8 @@ Enable Assigning Permissions for an Entity Field
 5. Click the :guilabel:`Save` button in the upper-right corner.
 
 
-Enable User to See Restricted Fields 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enable a User to See Restricted Fields 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open the entity view page:
 
@@ -119,3 +122,12 @@ Enable User to See Restricted Fields
 |
 
 5. Click the :guilabel:`Save` button in the upper-right corner.
+
+Links
+------
+
+For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+
+For how a role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+
+For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
