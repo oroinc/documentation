@@ -4,7 +4,8 @@ Access Levels
 .. contents:: :local:
     :depth: 3
 
-
+overview
+---------
 
 Access levels define a hierarchy of access to data. They can be envisioned as nested boxes. The smaller the box, the more limited set of data a user can access and vice verse. If a user has no box, they have no access whatsoever.
 OroCRM has a predefined set of access levels with ``None`` being the most limited and ``Global`` providing the widest access to the data. 
