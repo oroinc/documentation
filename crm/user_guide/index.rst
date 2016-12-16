@@ -31,7 +31,6 @@ If you are reading it for the first time, we recommend that you begin with :ref:
 The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you find out which sections of this guide are most relevant for your work duties.
 
 
-
 * :doc:`/user_guide/intro`
   
   * :doc:`/user_guide/intro_users_and_benefits`
