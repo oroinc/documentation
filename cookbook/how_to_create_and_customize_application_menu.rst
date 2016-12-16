@@ -83,25 +83,26 @@ Now we need to create a ``navigation.yml`` file with the following content:
     :linenos:
 
     # src/Acme/Bundle/NewBundle/Resources/config/oro/navigation.yml
-    menu_config:
-        items:
-            acme_tab:
-                label: Acme label
-                uri:   '#'
-                extras:
-                    position: 300
-            acme_tab_link:
-                label: Acme link label
-                route: acme_link
-        tree:
-            application_menu:
-                children:
-                    acme_tab:
-                        children:
-                            acme_tab_link: ~
+    navigation:
+        menu_config:
+            items:
+                acme_tab:
+                    label: Acme label
+                    uri:   '#'
+                    extras:
+                        position: 300
+                acme_tab_link:
+                    label: Acme link label
+                    route: acme_link
+            tree:
+                application_menu:
+                    children:
+                        acme_tab:
+                            children:
+                                acme_tab_link: ~
 
-    titles:
-        acme_link: My link page title
+        titles:
+            acme_link: My link page title
 
 
 Then you have to reload navigation data and clear cache:
