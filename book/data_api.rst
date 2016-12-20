@@ -807,6 +807,8 @@ The API allows you to use several types of filters. Filter types are briefly des
 |         | or                           |                                                                             |
 |         | sort=id,-name                | To perform DESC sorting specify ``-`` before field name.                    |
 +---------+------------------------------+-----------------------------------------------------------------------------+
+| meta    | meta=property1,property2     | Used for requesting additional meta properties for API resources.           |
++---------+------------------------------+-----------------------------------------------------------------------------+
 
 
 Fields Filter (**fields**)
@@ -1138,6 +1140,62 @@ Sort by **username** in descending order.
         }
       ]
     }
+
+Meta Property Filter (**meta**)
+"""""""""""""""""""""""""""""""
+
+The **meta** filter allows you to request additional meta properties for the resource. Meta properties will be generated for every item and will be returned in the item's meta object in the response data.
+
+The following table contains a list of supported meta properties that may be requested using *?meta=meta_property_name* filter:
+
++---------------+----------------------------------------+
+| Name          | Description                            |
++===============+========================================+
+| title         | A text representation of the resource. |
++---------------+----------------------------------------+
+
+Example. Retrieve a text representation of the resource
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    **Request**
+
+    .. code-block:: http
+
+        GET api/users?meta=title HTTP/1.1
+
+        Content-Type: application/vnd.api+json
+        Accept: application/vnd.api+json
+        ...
+
+    **Response**
+
+    .. code-block:: json
+
+        {
+          "data": [
+            {
+              "type": "users",
+              "id": "1",
+              "meta": {
+                "title": "John Doe",
+              },
+              "attributes": {
+                "username": "john.doe",
+              }
+            },
+            {
+              "type": "users",
+              "id": "2",
+              "meta": {
+                "title": "Ellen Rowell",
+              },
+              "attributes": {
+                "username": "ellen.rowell"
+              }
+            }
+          ]
+        }
+
 
 Create and Update Related Resources Together with a Primary API Resource
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
