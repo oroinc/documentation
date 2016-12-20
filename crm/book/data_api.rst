@@ -751,9 +751,12 @@ A string value is passed as an input to a filter which can contain only integer 
     GET /api/users?filter[id]=aaa HTTP/1.1
 
     { "errors": [{
-      "status": "500",
+      "status": "400",
       "title": "unexpected value exception",
-      "detail": "Expected integer value. Given \"aaa\"."
+      "detail": "Expected integer value. Given \"aaa\".",
+      "source": {
+        "parameter": "filter[id]"
+      }
     }] }
 
 
