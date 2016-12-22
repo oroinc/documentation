@@ -16,6 +16,7 @@ Please note that in many cases, the tools may be not available to the usual user
 * :doc:`/user_guide/entities`
 * :doc:`/user_guide/entity_fields` 
 * :doc:`/user_guide/processes`
+* :doc:`/user_guide/package_manager`
 * :doc:`/user_guide/user_management_index`
 
   * :doc:`/user_guide/user_management_overview`

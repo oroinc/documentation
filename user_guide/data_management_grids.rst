@@ -113,7 +113,7 @@ example, we have filtered the *"All Contacts"* grid so that it only shows Jamese
 Change Sorting
 ^^^^^^^^^^^^^^
 
-Be default, grids are sorted in ascending order by the first column. You can sort them by any field and in any order - 
+By default, grids are sorted in ascending order by the first column. You can sort them by any field and in any order -
 it is enough to click the column header. An upward or downward looking arrow will appear by the column name.
 
 

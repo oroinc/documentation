@@ -211,7 +211,7 @@ Now you have to create the template for this action:
     {% set pageTitle = 'Vehicles'|trans %}
 
     {% block navButtons %}
-        {% if resource_granted('inventory.vehicle_view') %}
+        {% if resource_granted('inventory.vehicle_create') %}
             <div class="btn-group">
                 {{ UI.addButton({
                 'path': path('inventory.vehicle_create'),
@@ -322,7 +322,7 @@ name of a datagrid that will be looked up from a file called ``datagrids.yml`` i
                     icon:          trash
                     acl_resource:  inventory.vehicle_delete
 
-This file contains the configuration for one more datagrids under the ``datagrid`` key. Each grid
+This file contains the configuration for one more datagrids under the ``datagrids`` key. Each grid
 is identified by a name (``vehicles-grid`` here) and consists of the following sections:
 
 ``source``
@@ -518,6 +518,7 @@ Both actions just need to return the ``Vehicle`` to be shown in the form as well
 
     {# src/InventoryBundle/Resources/views/Vehicle/update.html.twig #}
     {% extends 'OroUIBundle:actions:update.html.twig' %}
+    {% import 'OroUIBundle::macros.html.twig' as UI %}
     {% form_theme form with 'OroFormBundle:Form:fields.html.twig' %}
 
     {% if form.vars.value.id %}

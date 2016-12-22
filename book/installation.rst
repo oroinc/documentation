@@ -54,16 +54,16 @@ First, you need to obtain the application's source code and define the dependenc
 
 #. Go to the directory, to which you want to save the OroCRM folder (``[$folder_location]``).
 
-#. Use the *git clone* command. Specify the version to download (in the example, it is "``1.8.2``").
+#. Use the *git clone* command. Specify the version to download (in the example, it is "``1.10.12``").
 
    .. code-block:: bash
 
        $ cd [$folder_location]
-       $ git clone -b 1.9.0 https://github.com/orocrm/crm-application.git orocrm
+       $ git clone -b 1.10.12 https://github.com/orocrm/crm-application.git orocrm
 
    .. hint::
 
-       Along with ``1.9.0``, you can use any other released version or even the master branch to run
+       Along with ``1.10.12``, you can use any other released version or even the master branch to run
        the latest development version of the OroCRM.
 
    .. tip::
@@ -75,7 +75,7 @@ First, you need to obtain the application's source code and define the dependenc
        .. code-block:: bash
 
            $ cd [$folder_location]
-           $ git clone -b 1.9.0 https://github.com/orocrm/platform-application.git orocrm
+           $ git clone -b 1.10.12 https://github.com/orocrm/platform-application.git orocrm
 
 #. Go to the ``orocrm`` directory and run the *composer install* command, in order to install the
    dependencies. You need to define the ``--prefer-dist --no-dev`` parameter, as otherwise you can
