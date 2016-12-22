@@ -143,7 +143,7 @@ From any of the grids above, you can manage the tasks using the action icons:
 
 - Delete the task: |IcDelete|
 
-- Get to the :ref:`Edit from <user-guide-ui-components-create-pages>` of the task: |IcEdit|
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the task: |IcEdit|
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the task:  |IcView|
 

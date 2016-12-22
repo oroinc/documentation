@@ -116,7 +116,7 @@ the purpose and specifics of the created field.
 .. _user-guide-entity-management-export-import-common:
 
 Import and Export
-*****************
+"""""""""""""""""
 
 The following details are available in the section:
 
@@ -140,7 +140,7 @@ The following details are available in the section:
 .. _user-guide-entity-management-other-common:
 
 Other
-*****
+"""""
 
 The following Yes/No options can be defined:
 
@@ -286,7 +286,7 @@ correspondingly). For example, "grade the level of service from 1 to 5" or "choo
 
 - The select and multi-select fields can be only of the *column table* storage type.
 
-- If you have chosen a "select" or "multi-select" option in the "Type" field, additional property "Options".
+- If you have chosen a "select" or "multi-select" option in the "Type" field, additional property "Options" appear.
 
 .. image:: ./img/entity_management/new_entity_field_select.png
 
@@ -343,9 +343,6 @@ The following is true for all the relations fields:
 - The relation fields cannot be defined as an identity field for 
   :ref:`export/import <user-guide-entity-management-export-import-common>`.
 
-- The image fields aren't displayed on a grid, so *Show on Grid* and *Show Grid Filter* properties cannot be defined for 
-  them.
-  
   
 *One to Many and Many to Many Relations*
 ****************************************

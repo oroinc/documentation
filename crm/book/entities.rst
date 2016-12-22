@@ -1092,7 +1092,33 @@ to assign activities (like calls, emails, tasks) to other entities. The associat
     }
 
 To create a new entity that can be assigned in an ``Activity`` association, let the entity class
-extend the ``ExtendActivity`` class:
+use the ``ExtendActivity`` trait:
+
+.. code-block:: php
+    :linenos:
+
+    // src/Acme/DemoBundle/Model/ExtendEmail.php
+    namespace Acme\DemoBundle\Model;
+
+    use Oro\Bundle\ActivityBundle\Model\ActivityInterface;
+    use Oro\Bundle\ActivityBundle\Model\ExtendActivity;
+
+    class ExtendEmail implements ActivityInterface
+    {
+        use ExtendActivity;
+
+        /**
+         * Constructor
+         *
+         * The real implementation of this method is auto generated.
+         *
+         * IMPORTANT: If the derived class has own constructor it must call parent constructor.
+         */
+        public function __construct()
+        {
+        }
+    }
+
 
 .. code-block:: php
     :linenos:
@@ -1102,6 +1128,7 @@ extend the ``ExtendActivity`` class:
 
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Acme\DemoBundle\Model\ExtendEmail;
 
     /**
      * @ORM\Entity

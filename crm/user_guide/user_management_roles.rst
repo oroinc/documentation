@@ -76,7 +76,7 @@ Permissions in non-system organizations depend on the ownership type of the enti
 
 Ownership Type "Organization"
 """""""""""""""""""""""""""""
-If the entity type is set to *"Organization"*, when an entity record is created, an :term:`organization <Organization>` 
+If the entity ownership type is set to *"Organization"*, when an entity record is created, an :term:`organization <Organization>`
 is chosen as its :term:`owner <Owner>`. 
 
 You can choose one of the following options for each action: 
@@ -90,7 +90,7 @@ You can choose one of the following options for each action:
 Ownership Type "Business Unit"
 """"""""""""""""""""""""""""""
 
-If the entity type is set to "Business Unit", when an entity record is created, a :term:`business unit <Business Unit>` 
+If the entity ownership type is set to "Business Unit", when an entity record is created, a :term:`business unit <Business Unit>`
 is chosen as its Owner. 
 
 You can choose one of the following options for each action: 
@@ -108,7 +108,7 @@ You can choose one of the following options for each action:
 Ownership Type "User"
 """""""""""""""""""""
 
-If the entity type is set to "User", when an entity record is created, a :term:`user <User>` is chosen as its owner. 
+If the entity ownership type is set to "User", when an entity record is created, a :term:`user <User>` is chosen as its owner.
 You can choose one of the following options for each action: 
 
 - **None**: No users will be able to perform the action.
@@ -208,7 +208,7 @@ From the grid you can:
 - Delete the role from the system: |IcDelete|. If there is at least one user that has this role, the role cannot be 
   deleted.
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit|. 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the role: |IcEdit|.
 
 
 

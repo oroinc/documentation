@@ -141,13 +141,6 @@ Related Documents
 
 You can find more detailed descriptions of these features in the following documents:
 
-* :doc:`/user_guide/common_features_accounts`
-* :doc:`/user_guide/common_features_channels`
-* :doc:`/user_guide/common_features_multi_channel_functionality`  
-* :doc:`/user_guide/common_features_contacts`
-
-  * :doc:`/user_guide/common_features_contact_groups`
-
 .. toctree::
     :maxdepth: 1
 

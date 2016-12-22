@@ -83,7 +83,7 @@ All the contacts available are displayed in the contacts :ref:`grid <user-guide-
 
 From the grid you can:
 
-- Export or import new contact, as described in the 
+- Export or import contacts, as described in the
   :ref:`Import and Export Functionality guide <user-guide-export-import>`.
 
 - Delete a contact from the system: |IcDelete|

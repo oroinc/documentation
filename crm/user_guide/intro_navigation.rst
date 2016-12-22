@@ -83,8 +83,8 @@ At the very top of the page, there is a navigation panel that contains different
   * favorite pages
   * most viewed pages","
   :ref:`History, Favorites and Most Viewed <user-guide-getting-started-history>`"
-  "7","**Help Icon**","Access the User Guide",""
-  "8","**Sidebar panel**","Hosts widgets that provide fast and convenient access to constantly needed information, such 
+  "8","**Help Icon**","Access the User Guide",""
+  "9","**Sidebar panel**","Hosts widgets that provide fast and convenient access to constantly needed information, such
   as recent emails or task lists. ",":ref:`Sidebar Pannel <user-guide-navigation-sidebar-panel>`"
   
 

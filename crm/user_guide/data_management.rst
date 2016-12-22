@@ -107,7 +107,7 @@ Create New Records and Edit Existing Records
 To change the details of an existing record or to create a new record, you need to (re)define the record properties on 
 its Create/Edit form.
 
-The Create/Edit form details are described in the :ref:`Create a New Record and Edit the Record Details Pages `<user-guide-ui-components-create-pages>` 
+The Create/Edit form details are described in the :ref:`Create a New Record and Edit the Record Details Pages <user-guide-ui-components-create-pages>`
 guide.
 
 Tag the Records
@@ -117,7 +117,7 @@ In order to give system users additional information about a record, as well as 
 future usage (e.g., to select them for reports or create segments), you can assign them existing or new tags. For 
 example, if you tag a customer as "VIP," this will let the other system users know about the customer's importance. You 
 can then adjust the report to show only data for your VIPs and make targeted mailings to them. Moreover, you can find a 
-record by its tag with the :ref:search <user-guide-getting-started-search> functionality.
+record by its tag with the :ref:`search <user-guide-getting-started-search>` functionality.
  
 
 Use Workflows to Define Processes

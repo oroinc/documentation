@@ -177,7 +177,7 @@ You can replace any service defined by one of the OroPlatform bundles with
 your own implementation. All you have to do is fill the class parameter
 name for the service you want to replace with the name of your new service
 class. All parameters used to set the services' class names are in the form of
-``bundle_alias.service_name.class_name`` (for example, ``oro_datagrid.configuration.provider.class``
+``bundle_alias.service_name.class`` (for example, ``oro_datagrid.configuration.provider.class``
 is the parameter holding the class name for the ``oro_datagrid.configuration.provider``
 service):
 

@@ -9,14 +9,6 @@ With numerous dedicated widgets, the users can easily access and analyze all the
 track of any important changes and updates. For instance, reports provide an understanding of historical data and 
 related trends, and segmentation tools help users focus on a specific part of their data.
 
-* :doc:`/user_guide/business_intelligence_dashboards`
-* :doc:`/user_guide/business_intelligence_segments`
-
-  * :doc:`/user_guide/business_intelligence_filters`
-  
-* :doc:`/user_guide/business_intelligence_reports`
-* :doc:`/user_guide/rfm_user`
-  
 .. toctree::
     :maxdepth: 2
 
