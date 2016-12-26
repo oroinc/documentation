@@ -49,39 +49,43 @@ same.
     executed at the desired times (see :ref:`How Does it Work <sidebar-cron-work>`
     for some insights into the actual process).
 
-If the daemon process that executes the queued jobs is not running, it will
-be started automatically by the ``oro:cron`` command, but you can also
-:ref:`start it manually <job-daemon-start>`.
 
 .. _sidebar-cron-work:
 
 .. sidebar:: How Does it Work?
 
-    When executed, the ``oro:cron`` command is the entry point for all cron
-    commands (:ref:`built-in commands <built-in-cron-commands>` as well as
-    :ref:`self-created commands <create-cron-command>`). It scans for all
-    commands from the ``oro:cron`` namespace that implement the
+    There're two commands to set up the cron tasks shedule. The command
+    ``oro:cron:definitions:load`` scans for all commands from the
+    ``oro:cron`` namespace that implement the
     :class:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface`. For each
     found command, a new :class:`Oro\\Bundle\\CronBundle\\Entity\\Schedule`
-    entry is created and registered at the cron
-    :class:`Oro\\Bundle\\CronBundle\\Job\\Daemon`. The ``Daemon`` is a background
-    process that manages :ref:`a queue <job-queues>` of all open jobs and
-    ensures that each job is executed at the appropriate times.
+    entry is created and saved to the db. This command runs on install and update.
+    It can also be run manually if some cron commands or command definitions are
+    changed.
+
+    The seconf command is ``oro:cron``. It takes all schedules from the db (created by
+    ``oro:cron:definitions:load`` command) and adds the commands that is due to the
+    Message Queue. It should run every minute.
 
 .. _create-cron-command:
 
 Creating the Command
 ~~~~~~~~~~~~~~~~~~~~
 
-The ``oro:cron`` command will automatically execute all registered commands
+The ``oro:cron`` command will automatically execute all commands previously
+loaded with ``oro:cron:definitions:load`` command. The command loads commands
 that implement the ``CronCommandInterface`` if they are registered in the
 ``oro:cron`` namespace. Implementing the ``CronCommandInterface`` requires
-you to implement one method -
+you to implement two methods -
 :method:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface::getDefaultDefinition`.
 It returns the `crontab compatible`_ description of when the command should
 be executed. For example, if a command should be run every day five minutes
 after midnight, the appropriate value is ``5 0 * * *``. Your command will
 then look like this:
+:method:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface::isCronEnabled`.
+It checks some pre-conditions and returns true or false. If it returns false the
+command will not be added to the Message Queue. For example for the integrations
+sync command it can check that there're more than 0 active integrations.
 
 .. code-block:: php
     :linenos:
@@ -98,6 +102,13 @@ then look like this:
         public function getDefaultDefinition()
         {
             return '5 0 * * *';
+        }
+
+        public function isCronEnabled()
+        {
+            // check some pre-conditions
+
+            return $condition ? true : false;
         }
 
         protected function configure()
