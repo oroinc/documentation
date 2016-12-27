@@ -241,12 +241,13 @@ One to many
 Select this relation if one and only one entity record can be assigned to many records of another entity. 
 
 For example, one account may be assigned many customer.
+Another example: we have created a field **Friends** that relates to contacts of potential clients recommended by a specific business customer. This is a 'one to many' relation, as one business customer may advise many friends.
 
 
 Many to one
 ^^^^^^^^^^^^
 
-Select this relation if any amount the entity records can be assigned to one and only one record of another entity 
+Select this relation if any amount the entity records can be assigned to one and only one record of another entity. 
  
 For example, any amount of customers may be assigned to an account in OroCRM, but a customer cannot be assigned to more than one account.
 
@@ -255,4 +256,3 @@ For example, any amount of customers may be assigned to an account in OroCRM, bu
 
 .. image:: ./img/entity_management/new_entity_field_many_to_one.png
 
-|
