@@ -4,7 +4,8 @@ Actions with Entities
 .. contents:: :local:
     :depth: 3
 
-
+Actions
+--------
 
 Create an Entity
 ^^^^^^^^^^^^^^^^
@@ -39,19 +40,20 @@ Create an Entity
       
    - **Description**— Type a short but meaningful description that can help you and other users understand the purpose and specifics of the created entity in future.    
 
-|
+   |
 
-.. image:: ./img/entity_management/entity_create1.png
+   .. image:: ./img/entity_management/entity_create1.png
 
-|
+   |
 
 
 4. Click **Communication & Collaboration** and specify the following:
 
    - **Share Scopes**—This subsection defines whether the records of the entity can be shared with an individual user, or the whole business unit / organization.
      
-     .. caution:: 
+      .. caution:: 
         This section is currently unavailable for custom entities. 
+
    
       - **User**—Select this check box if the entity records can be shared with an individual user.
       
@@ -73,13 +75,13 @@ Create an Entity
      
    |
 
-   .. image:: ./img/entity_management/entity_entity_addnotes.png
+   .. image:: ./img/entity_management/entity_addnotes.png
 
    |
 
-   |
 
-   .. image:: ./img/entity_management/entity_entity_addnotes2.png
+
+   .. image:: ./img/entity_management/entity_addnotes2.png
 
    |   
 
@@ -108,11 +110,11 @@ Create an Entity
      Mandatory. 
      Default value is **No**.
 
-|
+   |
 
-.. image:: ./img/entity_management/entity_create2.png
+   .. image:: ./img/entity_management/entity_create2.png
 
-|
+   |
 
 5. Click **Attachments** and specify the following:
 
@@ -141,7 +143,7 @@ Create an Entity
    
    - **Max Allowed File Size, Mb**—Type the upper limit of an attachment size. Attachments which size exceeds the specified value will not be allowed.
      
-   - **Allowed Mime Types**—Enter the list of supported MIME types. If this field is left empty, the list defined in the system upload settings (see `Upload Settings <./system-config/#admin-configuration-uploads>`__ ) will be used.
+   - **Allowed Mime Types**—Enter the list of supported MIME types. If this field is left empty, the list defined in the system upload settings (see `Upload Settings <./system-config#admin-configuration-uploads>`__ ) will be used.
      
      The format of MIME types must follow the examples: application/pdf, image/\*
  
@@ -156,16 +158,16 @@ Create an Entity
      Mandatory. 
      Default value is **Manual**.
 
-|
+   |
 
-.. image:: ./img/entity_management/entity_create3.png
+   .. image:: ./img/entity_management/entity_create3.png
 
-|
+   
 
     
 6. Click **Other** and specify the following:
 
-   - **Ownership Type**—Records of which entity can be set as owners of the entity. For more information, see the `Ownership Type <./access_management_ownership_type>`__ guide.
+   - **Ownership Type**—Records of which entity can be set as owners of the entity. For more information, see the `Ownership Type <./access-management-ownership-type>`__ guide.
      
  
       - **None**—Select this value form the list if the entity records must have no owner (it can be also said that the owner is the system itself).
@@ -217,11 +219,11 @@ Create an Entity
 
    - **Workflow Step in Grid**—Defines whether to show the column with information about the current workflow step in the grid that contains all entity records. For more information on workflows, see the `Following a Workflow <./data-management-workflows>`__ guide.
      
-|
-   
-.. image:: ./img/entity_management/entity_showworkflowstep.png.png
+     |
+       
+     .. image:: ./img/entity_management/entity_showworkflowstep.png
 
-|
+     |
 
       - **Show**—Select this value from the list to show the column with the workflow step in the grid on the **All \<Entity Name\>** page.
       
@@ -230,11 +232,11 @@ Create an Entity
      Default value is **Show**.
 
 
-|
-   
-.. image:: ./img/entity_management/entity_create4.png
+   |
+     
+   .. image:: ./img/entity_management/entity_create4.png
 
-|
+   |
 
 7. Click the :guilabel:`Save and Close` button in the upper-right corner. 
 
@@ -248,11 +250,12 @@ Create an Entity
 
 Review an Entity
 ^^^^^^^^^^^^^^^^^
+
 1. In the main menu, navigate **System>Entities>Entity Management**.
 
 2. In the grid on the **All Entities** page, click the required entity.
 
-3. Review the entity settings. Please see details in the `Entity Structure on the Interface <./entity-management#entity-interface>`__ section. 
+3. Review the entity settings. Please see details in the `Entity Structure on the Interface <./entity-interface>`__ guide. 
    
 
 Create a Field
@@ -337,9 +340,9 @@ The system assigns them different ids and treats as different records, but they 
 
 Now imagine that before adding contacts you have defined two sets of unique keys:
 
-  - First Name+Last Name+Birthday
+- First Name+Last Name+Birthday
 
-  - First Name+Last Name+Email
+- First Name+Last Name+Email
   
     
 You create a contact:
@@ -352,8 +355,9 @@ Jane Roe, sales@example.com
 
 The system checks: 
 
- - The first name and the first name are the same, but the birthday is different (not specified in the second case), may be this is different contacts.
- - The first name and the first name are the same, but the email is the same too, thus it must be the same contact.
+- The first names and the last names are the same, but the birthday is different (not specified in the second case), may be this is different contacts.
+ 
+- The first names and the last names are the same, but the email is the same too, thus it must be the same contact.
 
 As the result, the system informs Roger that this contact already exists in the system.
 
@@ -373,7 +377,7 @@ As the result, the system informs Roger that this contact already exists in the 
    
    - **Key**—Mandatory. The fields that will be included in this set. Hold the CTRL key to select several fields. 
 
-6. If you need to add another set, repeat steps 4—5.
+6. If you need to add another set, repeat steps 4–5.
    
    |
 
@@ -396,9 +400,9 @@ Edit an Entity
 
 2. In the grid on the **All Entities** page, choose the entity you want to edit, click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcEdit| **Edit** icon.
    
-3. Make the required changes according to the description provided steps 3–6 of the `Create an Entity <./entities-actionst#create-an-entity>`__ section.   
+3. Make the required changes according to the description provided steps 3–6 of the `Create an Entity <./entity-actions#create-an-entity>`__ section.   
 
-  .. important:: 
+   .. important:: 
     You cannot change the name of the entity.
     You cannot change the ownership type of the entity.
 

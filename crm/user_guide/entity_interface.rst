@@ -19,15 +19,20 @@ Top of the page
 |
 
 In the upper-left part of the page you can see the entity's name. 
+
 In the next row you can check when the entity's record was created, updated and how many records of this entity exist in the system. Click the **Number of records** link to see the list of existing entity records. 
 
 In the upper-right part of the page there is a set of action buttons: 
 
 **Import Fields** drop-down: 
-  :guilable:`Import Fields`—Click this button to import fields into the entity. See the `Import Fields <./entities-actions#import-fields>`__ section of the `Actions with Entities <./entities-actions>`__ guide.
-  :guilable:`Download Data Template`— If you are not sure, how to prepare data for the field import operation, click this button to download the .csv template. 
-:guilable:`Manage Unique Keys`—Click this button to define which entity fields must have unique values for different entity records. See the `Manage Unique Keys <./entities-actions#manage-unique-keys>`__ section of the `Actions with Entities <./entities-actions>`__ guide.
-:guilable:`Create Field`—Click this button to add a new field to an entity.  See the `Create a Field <./entities-actions#create-a-field>`__ section of the `Actions with Entities <./entities-actions>`__ guide. 
+
+  :guilable:`Import Fields`—Click this button to import fields into the entity. See the `Import Fields <./entity-actions#import-fields>`__ section of the `Actions with Entities <./entity-actions>`__ guide.
+
+  :guilable:`Download Data Template`— If you are not sure, how to prepare data for the field import operation, click this button to download the .csv template.
+
+:guilable:`Manage Unique Keys`—Click this button to define which entity fields must have unique values for different entity records. See the `Manage Unique Keys <./entity-actions#manage-unique-keys>`__ section of the `Actions with Entities <./entity-actions>`__ guide.
+
+:guilable:`Create Field`—Click this button to add a new field to an entity.  See the `Create a Field <./entity-actions#create-a-field>`__ section of the `Actions with Entities <./entity-actions>`__ guide. 
 
 In the next row you can click the **Change History** link to see who, how and when modified the entity.
 
@@ -63,7 +68,7 @@ Entity Information
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Description    | Short but meaningful description that can help you and other users understand the purpose and specifics of the created entity in future.                                                                     |
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Ownership Type | Records of which entity can be set as owners of the entity you review. For more information, see the `Ownership Type <./access_management_ownership_type>`__ guide.                                          |
+| Ownership Type | Records of which entity can be set as owners of the entity you review. For more information, see the `Ownership Type <./access-management-ownership-type>`__ guide.                                          |
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Module         | - For system entities, which program bundle contains implementation of the entity. For more information about bundles, see the `The Oro Bundles <../bundles/>`__ guide.                                      |
 |                |                                                                                                                                                                                                              |
@@ -75,7 +80,7 @@ Entity Information
 Unique Keys
 ~~~~~~~~~~~~
 
-This subsection contains sets of fields by which the system will compare entity records to determine whether these records are distinct or not. For more information about unique keys, see the `Manage Unique Keys <./entities-actions#manage-unique-keys>`__ section of the `Actions with Entities <./entities-actions>`__ guide. 
+This subsection contains sets of fields by which the system will compare entity records to determine whether these records are distinct or not. For more information about unique keys, see the `Manage Unique Keys <./entity-actions#manage-unique-keys>`__ section of the `Actions with Entities <./entity-actions>`__ guide. 
 
 Fields
 ^^^^^^^
