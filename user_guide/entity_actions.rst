@@ -261,16 +261,10 @@ Create a Field
 .. important::
    You can add custom fields only for custom entities and extendable system entities.  
 
-1. In the main menu, navigate **System>Entities>Entity Management**.
-
-2. In the grid on the **All Entities** page, click the required entity.
-
-3. Click the :guilabel:`Create Field` button in the upper-right corner. 
-
-4. Follow the instructions provided in the 
+To create a field, follow the instructions provided in the `Create a Custom Entity Field <./entity-fields#create-a-custom-entity-field>`__ section.`
 
 
-.. TODO: Incomlete
+
 
 Import Fields
 ^^^^^^^^^^^^^^^^^
@@ -402,7 +396,7 @@ Edit an Entity
 
 2. In the grid on the **All Entities** page, choose the entity you want to edit, click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcEdit| **Edit** icon.
    
-3. Make the required changes according to the description provided steps ... of the `Create an Entity <./entities-actionst#create-an-entity>`__ section.   
+3. Make the required changes according to the description provided steps 3–6 of the `Create an Entity <./entities-actionst#create-an-entity>`__ section.   
 
   .. important:: 
     You cannot change the name of the entity.
@@ -421,6 +415,12 @@ Edit an Entity
      - **No**—Select this value from the list if records of this entity are invisible for search.
 
    - **Applicable Organizations**—Select in which organizations this entity will be available. The default value is **All**. To specify a particular organization, clear the **All** check box and click the field that appears to choose the organization from the list.
+     
+   |
+
+   .. image:: ./img/entity_management/entity_edit.png
+
+   |     
 
 4. Click the :guilabel:`Save And Close` button in the upper-right corner of the page.
 
@@ -444,6 +444,20 @@ Delete an Entity
   After you see the notification that the item is deleted, you need to reload the page to see changes. 
 
   If you still can see the entity in the grid on the **All Entities** page, you may need to update the schema. For how to do it, see the `Update Schema <./entity-actions#update-schema>`__ section. 
+
+
+
+
+Links
+------
+
+
+For the overview of the entities, see the `Entities <./entities>`__ guide. 
+
+For the description of the entity view page, see the `Entity on the Interface <./entity-interface>`__ guide. 
+
+For the information about entity fields, see the `Entity Fields <./entity-fields>`__ guide. 
+
 
 
 .. |IcRemove| image:: ./img/buttons/IcRemove.png
