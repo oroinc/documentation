@@ -1,7 +1,7 @@
 Known Issues with Outlook Add-in
 =================================
 
-Issue: The Synchronization of Microsoft Outlook and OroCRM Fails
+Issue: Synchronization of Microsoft Outlook and OroCRM Fails
 ------------------------------------------------------------------
 
 1. The MS Outlook Add-in is installed.
@@ -12,11 +12,11 @@ Issue: The Synchronization of Microsoft Outlook and OroCRM Fails
 
 Cause
 ^^^^^^
-This issue sometimes arises when you uninstall the higher version of the Microsoft Outlook / Microsoft Office and return to the earlier version. Some registry keys may not be removed as expected during the uninstall and thus the Outlook loads using the invalid data.  
+This issue sometimes arises when you uninstall the higher version of the Microsoft Outlook / Microsoft Office and return to the earlier version. Some registry keys may not be removed as expected during uninstall resulting in Outlook using invalid data to load.  
 
 Solution
 ^^^^^^^^^
-One of the possible solutions is to clean up the system registry and remove the invalid register keys. Close your Microsoft applications and follow the instruction available at: 
+One of the possible solutions is to clean up the system registry and remove invalid register keys. Close your Microsoft applications and follow these instructions: 
 
 https://www.fieldstonsoftware.com/support/support_gsyncit_8002801D.shtml
 
