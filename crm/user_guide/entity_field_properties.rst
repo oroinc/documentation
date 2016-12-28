@@ -253,7 +253,7 @@ Text
    - The fields of the **Text** type aren't displayed on a grid, so **Show on Grid** and **Show Grid Filter** properties cannot be defined for them. 
 
 
-|
+
   
 
 
@@ -473,41 +473,41 @@ One to many fields have additional properties in the **General** section:
 
 Example
 """""""
-Let us create a field **Friends** that relates to opportunities appeared following the recommendations of a specific business customer. This is a 'one to many' relation, as one business customer may advise many friends.
+Let us create a field **Friend** that relates to contacts that were recommended by a specific business customer. This is a 'one to many' relation, as one business customer may advise many friends.
 
 Our **Friends** field has the following values:
 
-- **Target Entity**—Select **Opportunity**.
+- **Target Entity**—Select **Contact**.
 
-- **Related Entity Data Fields**—Select **Opportunity name** and **Customer Need**.
+- **Related Entity Data Fields**—Select **Description**, **Gender**, and **Job Title**.
  
-- **Related Entity Info Title**—Select **Opportunity name**.
+- **Related Entity Info Title**—Select **First name** and **Last name**.
 
 - **Related Entity Detailed**— Select all the fields available.
 
 |
 
-.. image:: ./img/entity_management/new_entity_field_to_many_def.png
+.. image:: ./img/entity_management/entity_field_example_newfield.png
 
 |
 
 Now we create a business customer:
 
-The following grid appears once you've clicked the :guilabel:`+Add` button against the **Friends** field on the record edit or ceate page:
+The following grid appears once you've clicked the :guilabel:`+Add` button against the **Friend** field on the record edit or ceate page:
 
 |
   
-.. image:: ./img/entity_management/new_entity_field_to_many_01.png
+.. image:: ./img/entity_management/entity_field_example_bc1.png
 
 |
 
 It contains all the fields defined for the **Related Entity Data Fields**.
 
-We have added three opportunities. They are now displayed on the create/edit pages. The title contain properties defined for the **Related Entity Info Title** and **Related Entity Data Fields** are displayed for each record below the link.
+We have added three contacts. The title contain properties defined for the **Related Entity Info Title** and **Related Entity Data Fields** are displayed for each record below the link.
 
 |
   
-.. image:: ./img/entity_management/new_entity_field_to_many_02.png
+.. image:: ./img/entity_management/entity_field_example_bc2.png
 
 |
    
@@ -515,13 +515,13 @@ If you click the title of one of the opportunities, a dialog box with all the de
 
 |
 
-.. image:: ./img/entity_management/new_entity_field_to_many_03.png
+.. image:: ./img/entity_management/entity_field_example_bc3.png
 
 |
    
-The **Related Entity Info Title** properties are also used to represent the related opportunitiess on the view page (**Friends** section).
+The **Related Entity Info Title** properties are also used to represent the related contacts on the view page.
 
-.. image:: ./img/entity_management/new_entity_field_to_many_04.png
+.. image:: ./img/entity_management/entity_field_example_bc4.png
 
 
 Many to one
@@ -557,11 +557,15 @@ Let us create a relation 'Business Unit' and specify:
 
 - **Target Field**—Select **Name**.
 
-Now, when creating/editing a user record, you can choose a related business unit from the list. Business unit records in the list are represented with their 'Name' values.  
+Now, when creating/editing an opportunity record, you can choose a related business unit from the list. Business unit records in the list are represented with their **Name** values.  
 
 |
 
-.. image:: ./img/entity_management/new_entity_field_to_one_01.png
+.. image:: ./img/entity_management/entity_field_example2_1.png
+
+|
+
+.. image:: ./img/entity_management/entity_field_example2_2.png
 
 |
 
