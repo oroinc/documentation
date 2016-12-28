@@ -76,9 +76,10 @@ Oro applications are compatible with most of the web servers with PHP support, b
 
 In case of using HDD instead recommended SSD please pay attention to following configuration settings:
 
-   .. code-block::text
-        innodb_file_per_table = 0
-        wait_timeout = 28800
+.. code-block:: text
+
+    innodb_file_per_table = 0
+    wait_timeout = 28800
 
 More optimization recommendations could be found in MySQL official documentation.
 See [Optimizing InnoDB Disk I/O][2] for more information.
@@ -118,6 +119,15 @@ configuration that allows to achive this goals.
 +-------------------+---------------------------------------------------+
 | *Job Queue*       | * `RabbitMQ`_ 3.5.x and above                     |
 +-------------------+---------------------------------------------------+
+
+**PostgreSQL Configuration**
+
+PostgreSQL `uuid-ossp` extension should be loaded for proper doctrine's `guid` type handling. In order to enable it,
+connect to the database server and run sql query:
+
+.. code-block:: sql
+
+    CREATE EXTENSION "uuid-ossp";
 
 
 Optional recommendations
