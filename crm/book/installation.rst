@@ -664,13 +664,18 @@ Activating Background Tasks
 ---------------------------
 
 Time consuming or blocking tasks should usually be performed in the background to not influence the
-user experience in a bad way. For example, the OroPlatform uses the `JMSJobQueueBundle`_ to
-asynchronously run maintenance tasks. You simply have to make sure that its entry point is called
-regularly, for example, by executing it every minute through the system's cron system:
+user experience in a bad way. For example, the OroPlatform uses the `MessageQueueComponent`_
+together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. You  have to make
+sure that its entry point is called regularly, for example, by executing it every minute through the
+system's cron system:
 
 .. code-block:: text
 
     */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:cron --env=prod > /dev/null
+
+and one or more consumers are running:
+
+    */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:message-queue:consume --env=prod > /dev/null
 
 .. seealso::
 
@@ -705,5 +710,6 @@ with the OroPlatform application and upgrade it by installing the "oro/crm" pack
 .. _`Symfony Cookbook`: http://symfony.com/doc/current/cookbook/index.html
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 .. _`documentation`: https://github.com/doctrine/data-fixtures/blob/master/README.md
-.. _`JMSJobQueueBundle`: http://jmsyst.com/bundles/JMSJobQueueBundle
+.. _`MessageQueueBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle
+.. _`MessageQueueComponent`: https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue
 .. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements

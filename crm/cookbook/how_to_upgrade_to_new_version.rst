@@ -33,18 +33,6 @@ Comment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-Kill the related job daemon process.
-
-.. code-block:: bash
-
-    $ ps ax|grep php5
-    $ kill -9 <process_pid>
-
-<process_pid> - is a PID of currently executing application job daemon process. For example:
-
-.. code-block:: text
-
-    /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
 
 **3**. Create backups of your Database and Code.
 
@@ -148,18 +136,6 @@ Comment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-Kill the related job daemon process.
-
-.. code-block:: bash
-
-    $ ps ax|grep php5
-    $ kill <process_pid>
-
-<process_pid> - is a PID of currently executing application job daemon process. For example:
-
-.. code-block:: text
-
-    /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
 
 **3**. Create backups of your Database and Code.
 
