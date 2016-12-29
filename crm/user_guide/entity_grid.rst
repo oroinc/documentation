@@ -4,21 +4,16 @@ All Entities
 .. contents:: :local:
     :depth: 3
 
-Description
-------------
 
 Page Top
 ^^^^^^^^
-
 View Options
 """""""""""""
-
 The default grid view shows all entities. You can configure a custom grid view. For how to do this, see `Save Customized Grid View <./data-management-grids#save-your-customized-grid-view-and-share-it-with-other-users>`__ . 
 
 Action Buttons
 """""""""""""""
-
-:guilabel:`Create Entity`—Click this button to create a new entity. See the `Create an Entity <./entity-actions#create-an-entity>`__ section of the `Actions with Entities <./entity-actions>`__ guide.
+:guilabel:`Create Entity`—Click this button to create a new entity. See the `Create an Entity <./entities-actions#create-an-entity>`__ section of the `Actions with Entities <./entities-actions>`__ guide.
 
 Grid
 ^^^^^
@@ -53,16 +48,3 @@ The following table describes columns of the **All Entities** page and how they 
   the entity belongs.","No"
   "**UPDATED AT**","The date and time of the last schema update for the entity.","No"
   "...","Hover your mouse over the *...* to access the action icons.","Use the icons to manage the entity."  
-
-
-
-Links
-------
-
-For general overview of entities, see the `Entities <./entities>`__ guide.
-
-For the description of the entity view page, see the `Entity on the Interface <./entity-interface>`__ guide. 
-
-For what actions you can perform with entities, see the `Actions with Entities <./entity-actions>`__ guide.
-
-For more information about entity fields, see the `Entity Fields <./entity-fields>`__ guide.
