@@ -9,10 +9,10 @@ Overview
 ---------
 
 Fields are used to collect details of :ref:`entity <user-guide-entity-management-from-UI>` :term:`records <Record>`. 
-
 For example, a 'street name,' 'zip code,' and 'building number' may be fields of an 'address.' 
 
-You can add new fields to any :term:`custom entity <Custom Entity>` or an :ref:`extendible <user-guide-entity-management-edit>` :term:`system entity <System Entity>`.
+You can add new fields to any :term:`custom entity <Custom Entity>` or 
+an :ref:`extendible <user-guide-entity-management-edit>` :term:`system entity <System Entity>`.
 
 This guide describes how to create and modify the fields.
 
@@ -30,18 +30,18 @@ Create a Custom Entity Field
 3. On the entity view page, click the :guilabel:`Create Field` button in the upper-right corner of the page. 
 
 4. Specify information for the basic entity field properties. See the descriptions of the basic properties in the `Basic Entity Field Properties <./entity-field-properties#basic-entity-field-properties>`__ section. 
-   
-   |
-
-   .. image:: ./img/entity_management/new_entity_field.png
-
-   |
 
 5. Click :guilabel:`Continue` button. Depending on what has been selected for **Type**, additional fields appear.
 
 6. Specify information for additional properties. See the descriptions of the basic properties in the `Advanced Entity Field Properties <./entity-field-properties#advanced-entity-field-properties>`__ section.
 
 7. Click **Save** in the upper-right corner of the page. 
+
+|
+
+.. image:: ./img/entity_management/new_entity_field.png
+
+|
 
 8. After that, you may require to update the schema. For how to do it, see the `Update Schema <./entity-actions#update-schema>`__ section. 
 
@@ -57,10 +57,10 @@ Edit a Custom Entity Field
 
 4. In the grid of the **Fields** section, click the required field.
 
-5. Make the required changes according to the description provided in step 6 of the `Create a Custom Entity Field <./entity-fields#create-a-custom-entiry-field>`__ section.  
+5. Make the required changes according to the description provided in step 6 of the `Create a Custom Entity Field <./entity-field#create-a-custom-entiry-field>`__ section.  
 
-   .. important:: 
-      The list of properties editable for system entity fields depends on configuration and is created in a way reasonable and safe for the system performance and operation.  
+.. important:: 
+  The list of properties editable for system entity fields depends on configuration and is created in a way reasonable and safe for the system performance and operation.  
 
 6. Click **Save** in the upper-right corner of the page. 
 
