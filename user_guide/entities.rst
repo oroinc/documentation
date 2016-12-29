@@ -1,10 +1,7 @@
+.. _user-guide-entity-management-from-UI:
 
 Entities
 ========
-
-.. contents:: :local:
-    :depth: 3
-
 
 Overview
 ---------
