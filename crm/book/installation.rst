@@ -675,6 +675,8 @@ system's cron system:
 
 and one or more consumers are running:
 
+.. code-block:: text
+
     */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:message-queue:consume --env=prod > /dev/null
 
 .. seealso::
