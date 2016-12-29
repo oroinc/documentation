@@ -14,12 +14,6 @@ Basic Entity Field Properties
 General Information Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|
-
-.. image:: ./img/entity_management/new_entity_field.png
-
-|
-
 .. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
@@ -108,14 +102,7 @@ Common Properties
 General Information Section
 """"""""""""""""""""""""""""
 
-|
-
-.. image:: ./img/entity_management/entity_field_general_information2.png
-
-|
-
-
-Fields **Name**, **Storage Type**, **Type** that you filled in when specifying information for basic entity field properties (see the `Basic Entity Field Properties <./entity-field-properties#basic-entity-field-properties>`__ section are still present on the interface but their values cannot be changed now.
+Fields **Name**, **Storage Type**, **Type** that you filled in when specifying information for basic entity field properties (see the `Basic Entity Field Properties <./entity-fields#basic-entity-field-properties>`__ section are still present on the interface but their values cannot be changed now.
 ) 
 
 There are two new fields in this section:
@@ -128,16 +115,10 @@ There are two new fields in this section:
   "**Description**","Type the short by meaningful description that will appear as a field tooltip on the interface."
   
 
-
+.. _user-guide-entity-management-export-import-common:
 
 Import and Export Section
 """"""""""""""""""""""""""
-
-|
-
-.. image:: ./img/entity_management/entity_field_import_and_export.png
-
-|
 
 .. csv-table:: 
   :header: "Field","Description"
@@ -154,17 +135,12 @@ Import and Export Section
   "
   
   
-
+.. _user-guide-entity-management-other-common:
 
 Other
 """"""
 
-|
-
-.. image:: ./img/entity_management/entity_field_other.png
-
-|
-
+The following Yes/No options can be defined:
 
 .. csv-table:: 
   :header: "Option","Description"
