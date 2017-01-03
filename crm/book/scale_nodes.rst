@@ -278,7 +278,7 @@ There are several ways to achieve this:
 
 - another way is to configure KnpGaufretteBundle to use the external storage, such as 
   Azure Blob Storage/AwsS3/AmazonS3/FTP/SFTP/MogileFS/MongoGridFS/Open Cloud/Dropbox, see full 
-  `documentation <https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.markdown>`_ 
+  `documentation <https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.md>`_ 
   
 To speed up file request responses you can optionally use APC cache. Use an adapter which allows you to cache other 
 adapters.
