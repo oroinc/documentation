@@ -95,7 +95,7 @@ customers the following way:
 	
 	-  Make sure that segments do not intersect.
 
-In OroCRM, this step is performed by the system administrator and is described in the `Configure RFM <./rfm-admin-guide>`__ guide.
+In OroCRM, this step is performed by the system administrator and is described in the `Configure RFM <./rfm-admin>`__ guide.
 
 Step 2
 ^^^^^^
