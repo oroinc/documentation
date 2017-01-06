@@ -68,7 +68,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env prod --force
+    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
 **8**. Remove the caches.
 
@@ -166,7 +166,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env prod --force
+    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
 **7**. Remove the caches.
 
