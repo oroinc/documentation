@@ -73,7 +73,7 @@ or, as an alternative:
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env prod --force
+    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
 Remove the caches.
 
