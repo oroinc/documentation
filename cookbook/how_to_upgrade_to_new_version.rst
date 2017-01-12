@@ -33,10 +33,11 @@ Comment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
+**3**. Stop all running consumers.
 
-**3**. Create backups of your Database and Code.
+**4**. Create backups of your Database and Code.
 
-**4**. Pull changes from the repository.
+**5**. Pull changes from the repository.
 
 .. note::
 
@@ -51,26 +52,26 @@ Comment this line.
     $ sudo -uwww-data git pull
     $ sudo -uwww-data git checkout <VERSION TO UPGRADE>
 
-**5**. Upgrade the composer dependency and set up the right owner to the retrieved files.
+**6**. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
 .. code-block:: bash
 
     $ sudo php composer.phar install --prefer-dist --no-dev
     $ sudo chown www-data:www-data -R ./*
 
-**6**. Remove old caches.
+**7**. Remove old caches.
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
 
-**7**. Upgrade the platform.
+**8**. Upgrade the platform.
 
 .. code-block:: bash
 
     $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
-**8**. Remove the caches.
+**9**. Remove the caches.
 
 .. code-block:: bash
 
@@ -83,7 +84,13 @@ or, as alternative:
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**9**. Enable cron.
+**10**. Run the consumer(s).
+
+.. code-block:: bash
+
+    $ sudo -u www-data app/console oro:message-queue:consume --env prod
+
+**11**. Enable cron.
 
 .. code-block:: bash
 
@@ -95,7 +102,7 @@ Uncomment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**10**. Switch your application back to normal mode from the maintenance mode.
+**12**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
@@ -136,10 +143,11 @@ Comment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
+**3**. Stop all running consumers.
 
-**3**. Create backups of your Database and Code.
+**4**. Create backups of your Database and Code.
 
-**4**. Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
+**5**. Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
       archive and overwrite existing system files.
 
 .. note::
@@ -156,19 +164,19 @@ Comment this line.
             $ sudo php composer.phar update --prefer-dist --no-dev
             $ sudo chown www-data:www-data -R ./*
 
-**5**. Remove old caches.
+**6**. Remove old caches.
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
 
-**6**. Upgrade the platform.
+**7**. Upgrade the platform.
 
 .. code-block:: bash
 
     $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
-**7**. Remove the caches.
+**8**. Remove the caches.
 
 .. code-block:: bash
 
@@ -181,7 +189,14 @@ or, as alternative:
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**8**. Enable cron.
+
+**9**. Run the consumer(s).
+
+.. code-block:: bash
+
+    $ sudo -u www-data app/console oro:message-queue:consume --env prod
+
+**10**. Enable cron.
 
 .. code-block:: bash
 
@@ -193,7 +208,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**9**. Switch your application back to normal mode from the maintenance mode.
+**11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
