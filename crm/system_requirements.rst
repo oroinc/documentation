@@ -137,6 +137,7 @@ Optional recommendations
 * `Xdebug`_ could be used as the debugger tool but it is recommended only in the development environment
     * xdebug.max_nesting_level above 100 should be used
 * Tidy PHP extension should be installed to make sure that HTML is correctly converted into a text representation
+* `Redis` - could be used for more efficient application caching. Supported versions of Redis from 2.0 to 3.2
 
 
 Client-side Requirements
