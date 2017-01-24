@@ -51,6 +51,8 @@ and technical details.
 
 * :doc:`/book/data_api`
 
+* :doc:`/book/db_optimization`
+
 .. toctree::
     :hidden:
 
@@ -65,6 +67,7 @@ and technical details.
     functional_tests
     scale_nodes
     data_api
+    db_optimization
 
 TODO List
 ---------

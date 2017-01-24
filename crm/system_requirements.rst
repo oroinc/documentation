@@ -83,6 +83,10 @@ If you are using an HDD instead of an SSD, please pay attention to the following
 More optimization recommendations could be found in MySQL official documentation.
 See [Optimizing InnoDB Disk I/O][2] for more information.
 
+.. note::
+
+    Also please take a look at :doc:`/book/db_optimization`.
+
 **MySQL Collate and Charset**
 
 The default MySQL character set utf8 uses a maximum of three bytes per character and contains only BMP characters.
