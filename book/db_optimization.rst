@@ -21,7 +21,7 @@ slower than in MySQL 5.5. In case of large amounts of data in the database, it i
 related to the new query optimizer. One of the possible solutions might be disabling ``block_nested_loop`` option.
 This can be achieved in two ways:
 
-    - If a modification of MySQL configuration file is granted, add the following under ``mysqld`` section
+    - If a modification of MySQL configuration file is granted, add the following under the ``mysqld`` section
 
       .. code-block:: cfg
 
