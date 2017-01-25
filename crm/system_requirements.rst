@@ -15,7 +15,7 @@ Resources
 ~~~~~~~~~
 
 Resources configuration depends on the data size and number of active users and integrations. Typical setup could be
-done on a single server with minimum 2 CPU cores, 2GB RAM and a fast hard drive (SSD is recommended). The application could
+done on a single server with the minimum of 2 CPU cores, 2GB RAM and a fast hard drive (SSD is recommended). The application could
 scale to multiple servers and a separate database server based on the expected load.
 
 
@@ -148,7 +148,7 @@ Client-side Requirements
 ------------------------
 
 On the client side, Oro applications could be used with most of the graphical browsers on any operating system.
-Recommended and supported browsers:
+Recommended and supported browsers are:
 
  * `Mozilla Firefox`_ (latest)
  * `Google Chrome`_ (latest)
