@@ -176,6 +176,14 @@ specifies how the actual filter looks like. The available options are:
     having part of the query (this is needed, for example, when the configured ``data_name`` is
     the result of an aggregation function.
 
+``force_like`` (**type**: ``bool`` **default**: ``false``)
+
+    When set to true, text-based search applies the ``LIKE %value%`` statement to the search string by default.
+
+``min_length`` (**type**: ``integer`` **default**: ``0``)
+
+    Specify minimum length of the search string. When the search string length is below the limit, OroCRM shows a validation message to the user and ignores the filter value.
+
 ``label`` (**type**: ``string``)
 
     By default, the label for the filter will be the same as the one configured in the
