@@ -347,7 +347,7 @@ If everything is OK, we can now clone the configuration to all the web farm node
 
 The default configuration is pretty simple:
 
-.. code-block:: http
+.. code-block:: none
 
    http {
        server {
