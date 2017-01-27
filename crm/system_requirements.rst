@@ -15,7 +15,7 @@ Resources
 ~~~~~~~~~
 
 Resources configuration depends on the data size and number of active users and integrations. Typical setup could be
-done on a single server with minimum 2 CPU cores, 2GB RAM and a fast hard drive (SSD is recommended). The application could
+done on a single server with the minimum of 2 CPU cores, 2GB RAM and a fast hard drive (SSD is recommended). The application could
 scale to multiple servers and a separate database server based on the expected load.
 
 
@@ -83,6 +83,10 @@ If you are using an HDD instead of an SSD, please pay attention to the following
 More optimization recommendations could be found in MySQL official documentation.
 See [Optimizing InnoDB Disk I/O][2] for more information.
 
+.. note::
+
+    Also please take a look at :doc:`/book/db_optimization`.
+
 **MySQL Collate and Charset**
 
 The default MySQL character set utf8 uses a maximum of three bytes per character and contains only BMP characters.
@@ -144,7 +148,7 @@ Client-side Requirements
 ------------------------
 
 On the client side, Oro applications could be used with most of the graphical browsers on any operating system.
-Recommended and supported browsers:
+Recommended and supported browsers are:
 
  * `Mozilla Firefox`_ (latest)
  * `Google Chrome`_ (latest)

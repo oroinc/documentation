@@ -8,7 +8,7 @@ entity can perform the transition from one state to another.
 .. seealso::
 
     Simple workflows can be created in the user interface. Read more about this feature
-    :doc:`in the user guide </user_guide/workflow_management>`.
+    :doc:`in the user guide </admin_guide/record_mgmt_config/workflow_management>`.
 
 .. sidebar:: Workflows, Steps, and Transitions
 

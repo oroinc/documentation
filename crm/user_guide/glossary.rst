@@ -1,3 +1,4 @@
+B2B
 :orphan:
 
 
@@ -61,10 +62,10 @@ Glossary
    Magento Channel
       A :term:`Channel` used to collect data from :term:`Magento`-based store.
 
-   B2B Customer
-      A :term:`Customer Identity` used within :term:`B2B channels <B2B Channel>`.
+   Business Customer
+      A :term:`Customer Identity` used within :term:`Sales channels <Sales Channel>`.
 
-   B2B Channel
+   Sales Channel
       A :term:`Channel` used to collect data related to business-to-business activities.
 
    Contact

@@ -173,7 +173,7 @@ bundles:
            abstract: true
            class: Snc\RedisBundle\Doctrine\Cache\RedisCache
            calls:
-               - [setRedis, [@snc_redis.default]]
+               - [setRedis, ["@snc_redis.default"]]
 
 
 7. **Annotations** cache configuration:
@@ -264,7 +264,7 @@ Our attachments functionality is based on
        adapters:
            attachments:
                local:
-                   directory: %kernel.root_dir%/attachment
+                   directory: "%kernel.root_dir%/attachment"
        filesystems:
            attachments:
                adapter: attachments
@@ -323,7 +323,7 @@ configuration examples:
        adapters:
            attachments:
                local:
-                   directory: %kernel.root_dir%/attachment
+                   directory: "%kernel.root_dir%/attachment"
            attachments_apc:
                apc:
                    prefix: file.
