@@ -129,7 +129,7 @@ The template that is responsible to display the form fields should extend the ba
 that you can use. This way your own forms will provide the same look and feel as the ones coming
 with the OroPlatform:
 
-.. code-block:: html+jinja
+.. code-block:: none
     :linenos:
 
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
