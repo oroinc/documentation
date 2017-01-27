@@ -354,7 +354,7 @@ init_actions
 
 Example:
 
-.. code-block:: yaml
+.. code-block:: none
     :linenos:
 
     workflows:
