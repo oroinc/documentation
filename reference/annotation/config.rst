@@ -68,10 +68,52 @@ The route name of a controller that shows a particular object:
 
     /**
      * @Config(
-     *      routeName="oro_user_view"
+     *      routeView="oro_user_view"
      * )
      */
     class User
     {
         // ...
     }
+
+``routeCreate``
+~~~~~~~~~~~~~~~
+
+The route name of a controller that creates an object:
+
+.. code-block:: php
+    :linenos:
+
+        // ...
+        use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+
+        /**
+         * @Config(
+         *      routeCreate="oro_user_create"
+         * )
+         */
+        class User
+        {
+            // ...
+        }
+
+``routeUpdate``
+~~~~~~~~~~~~~~~
+
+The route name of controller action that updates an object:
+
+.. code-block:: php
+    :linenos:
+
+            // ...
+            use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+
+            /**
+             * @Config(
+             *      routeUpdate="oro_user_update"
+             * )
+             */
+            class User
+            {
+                // ...
+            }

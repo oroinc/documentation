@@ -16,11 +16,11 @@ Database Setup
 
 Common database management systems like MySQL or Postgres offer additional
 indexes for fulltext searches. To initialize the advanced database index,
-run the ``oro:search:create-index`` command:
+run the ``oro:search:reindex`` command:
 
 .. code-block:: bash
 
-    $ php ./app/console oro:search:create-index
+    $ php ./app/console oro:search:reindex
 
 .. tip::
 
@@ -58,48 +58,49 @@ Indexing Entities
 Each time an entity is updated, the changed data needs to be persisted into
 the search index. The mapping of your entity fields to the search index can
 be configured either globally (under the ``oro_search`` key) or in a config
-file named ``search.yml`` which must be located in the bundle's ``Resources/config``
+file named ``search.yml`` which must be located in the bundle's ``Resources/config/oro``
 directory. Such a file would then look something like this:
 
 .. code-block:: yaml
     :linenos:
 
-    Acme\DemoBundle\Entity\Product:
-        alias: demo_product
-        label: Demo products
-        route:
-            name: acme_demo_search_product
-            parameters:
-                id: id
-        title_fields: [name]
-        fields:
-            -
-                name: name
-                target_type: text
-            -
-                name: description
-                target_type: text
-                target_fields: [description, another_index_name]
-            -
-                name: manufacturer
-                relation_type: many-to-one
-                relation_fields:
-                    -
-                        name: name
-                        target_type: text
-                        target_fields: [manufacturer, all_data]
-                    -
-                        name: id
-                        target_type: integer
-                        target_fields: [manufacturer]
-            -
-                name: categories
-                relation_type: many-to-many
-                relation_fields:
-                    -
-                        name: name
-                        target_type: text
-                        target_fields: [all_data]
+    search:
+        Acme\DemoBundle\Entity\Product:
+            alias: demo_product
+            label: Demo products
+            route:
+                name: acme_demo_search_product
+                parameters:
+                    id: id
+            title_fields: [name]
+            fields:
+                -
+                    name: name
+                    target_type: text
+                -
+                    name: description
+                    target_type: text
+                    target_fields: [description, another_index_name]
+                -
+                    name: manufacturer
+                    relation_type: many-to-one
+                    relation_fields:
+                        -
+                            name: name
+                            target_type: text
+                            target_fields: [manufacturer, all_data]
+                        -
+                            name: id
+                            target_type: integer
+                            target_fields: [manufacturer]
+                -
+                    name: categories
+                    relation_type: many-to-many
+                    relation_fields:
+                        -
+                            name: name
+                            target_type: text
+                            target_fields: [all_data]
 
 You can use the following options to configure the entity's search index
 mapping:
@@ -168,15 +169,20 @@ builder:
     $container = ...; // the Symfony service container
     $indexer = $container->get('oro_search.index');
     $query = $indexer
-        ->select()
-        ->from('Acme/DemoBundle/Entity:Product')
+        ->select(['text.name', 'text.description', 'integer.sku'])
+        ->from('oro_search_product')
         ->andWhere('all_data', '=', 'Functions', 'text')
         ->orWhere('price', '>', 85, 'decimal');
 
 The query builder offers several methods to modify the generated search:
 
+``select``
+    Specify the values to retrieve from search indexes. Expects for a string
+    or array of field names, with type prefix. If the type prefix is not provided,
+    default type of ``text`` will be used.
+
 ``from``
-    One entity or an array of entities to search in (the special ``*`` can
+    One entity or an array of entity aliases to search in (the special ``*`` can
     be used to search in all entities).
 
 ``andWhere``, ``orWhere``
@@ -190,6 +196,10 @@ The query builder offers several methods to modify the generated search:
     * The value to search for
 
     * The field type
+
+``addSelect``
+    Add another field name to gather the data for from the search indexes.
+    If no type prefix is specified, the default ``text`` type will be used.
 
 ``setOrderBy``
     Field and direction to order the search result by. By default, search

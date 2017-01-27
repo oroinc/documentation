@@ -4,26 +4,27 @@ Search Index
 +-----------+------------------------------------------------------------+
 | Filename  | ``search.yml``                                             |
 +-----------+------------------------------------------------------------+
-| Root Node | The fully qualified class name of the entity being indexed |
+| Root Node |  search                                                    |
 +-----------+------------------------------------------------------------+
-| Options   | * `alias`_                                                 |
-|           | * `fields`_                                                |
+| Options   | * The fully qualified class name the indexed entity        |
+|           |   * `alias`_                                               |
+|           |   * `fields`_                                              |
 |           |                                                            |
-|           |   * :ref:`name <reference-format-search-fields-name>`      |
-|           |   * `relation_fields`_                                     |
-|           |   * `relation_type`_                                       |
-|           |   * `target_fields`_                                       |
-|           |   * `target_type`_                                         |
+|           |     * :ref:`name <reference-format-search-fields-name>`    |
+|           |     * `relation_fields`_                                   |
+|           |     * `relation_type`_                                     |
+|           |     * `target_fields`_                                     |
+|           |     * `target_type`_                                       |
 |           |                                                            |
-|           | * `label`_                                                 |
-|           | * `mode`_                                                  |
-|           | * `route`_                                                 |
+|           |   * `label`_                                               |
+|           |   * `mode`_                                                |
+|           |   * `route`_                                               |
 |           |                                                            |
-|           |   * :ref:`name <reference-format-search-route-name>`       |
-|           |   * `parameters`_                                          |
+|           |     * :ref:`name <reference-format-search-route-name>`     |
+|           |     * `parameters`_                                        |
 |           |                                                            |
-|           | * `search_template`_                                       |
-|           | * `title_fields`_                                          |
+|           |   * `search_template`_                                     |
+|           |   * `title_fields`_  (deprecated since 2.0)                |
 +-----------+------------------------------------------------------------+
 
 The ``search.yml`` file is used to configure how your entities are indexed to make them usable by
@@ -32,45 +33,46 @@ the internal search engine of the OroPlatform. A fully working example can look 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/search.yml
-    Acme\DemoBundle\Entity\Product:
-        alias: demo_product
-        search_template: AcmeDemoBundle:result.html.twig
-        label: Demo products
-        route:
-            name: acme_demo_search_product
-            parameters:
-                id: id
-        mode: normal
-        title_fields: [name]
-        fields:
-            -
-                name: name
-                target_type: text
-            -
-                name: description
-                target_type: text
-                target_fields: [description, another_index_name]  parameter.
-            -
-                name: manufacturer
-                relation_type: many-to-one
-                relation_fields:
-                    -
-                        name: name
-                        target_type: text
-                        target_fields: [manufacturer, all_data]
-                    -
-                        name: id
-                        target_type: integer
-                        target_fields: [manufacturer]
-            -
-                name: categories
-                relation_type: many-to-many
-                relation_fields:
-                    -
-                        name: name
-                        target_type: text
-                        target_fields: [all_data]
+    # src/Acme/DemoBundle/Resources/config/oro/search.yml
+    search:
+        Acme\DemoBundle\Entity\Product:
+            alias: demo_product
+            search_template: AcmeDemoBundle:result.html.twig
+            label: Demo products
+            route:
+                name: acme_demo_search_product
+                parameters:
+                    id: id
+            mode: normal
+            title_fields: [name] # deprecated since 2.0
+            fields:
+                -
+                    name: name
+                    target_type: text
+                -
+                    name: description
+                    target_type: text
+                    target_fields: [description, another_index_name]  parameter.
+                -
+                    name: manufacturer
+                    relation_type: many-to-one
+                    relation_fields:
+                        -
+                            name: name
+                            target_type: text
+                            target_fields: [manufacturer, all_data]
+                        -
+                            name: id
+                            target_type: integer
+                            target_fields: [manufacturer]
+                -
+                    name: categories
+                    relation_type: many-to-many
+                    relation_fields:
+                        -
+                            name: name
+                            target_type: text
+                            target_fields: [all_data]
 
 ``alias``
 ---------
@@ -131,17 +133,18 @@ the ``name`` field in ``target_fields``:
 .. code-block:: yaml
     :linenos:
 
-    Acme\ContactBunde\Entity\Contact:
-        fields:
-            - name: firstName
-              target_type: text
-              target_fields: [name]
-            - name: lastName
-              target_type: text
-              target_fields: [name]
-            - name: namePrefix
-              target_type: text
-              target_fields: [name]
+    search:
+        Acme\ContactBunde\Entity\Contact:
+            fields:
+                - name: firstName
+                  target_type: text
+                  target_fields: [name]
+                - name: lastName
+                  target_type: text
+                  target_fields: [name]
+                - name: namePrefix
+                  target_type: text
+                  target_fields: [name]
 
 If the ``target_type`` is ``text``, the data will also be stored in the ``all_data`` field
 implicitly.
@@ -208,5 +211,6 @@ one of the configured :ref:`fields <reference-format-search-fields>`.
 
 **type**: ``sequence``
 
+Note: Usage of this field is deprecated since 2.0. Register an EntityNameProvider instead.
 The list of fields to build the title for the result set. The value used here denote to the
 :ref:`configured fields <reference-format-search-fields>`.

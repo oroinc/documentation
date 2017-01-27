@@ -196,15 +196,15 @@ method to load a fixture in a test:
             // $force = true to force the loading
             $this->loadFixtures(array(
                 'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadFooData',
-                'Oro\Bundle\FooBarBundle\Tests\Functional\DataFixtures\LoadBazData',
+                '@OroFooBarBundle/Tests/Functional/DataFixtures/bar_data.yml',
             ));
         }
 
         // ...
     }
 
-A fixture class must be a ``Doctrine\Common\DataFixtures\FixtureInterface``
-instance. An example fixture will look like this:
+A fixture must be a class name implements ``Doctrine\Common\DataFixtures\FixtureInterface``
+or a path to `nelmio/alice <https://github.com/nelmio/alice>`__ file. An example fixture will look like this:
 
 .. code-block:: php
     :linenos:
@@ -225,6 +225,14 @@ instance. An example fixture will look like this:
             $manager->flush();
         }
     }
+
+.. code-block:: yaml
+    :linenos:
+
+        # src/Oro/Bundle/FooBarBundle/Tests/Functional/DataFixtures/bar_data.yml
+        Oro\Bundle\FooBarBundle\Entity\BarEntity:
+            bar:
+                name: test
 
 You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterface``
 which allows to load fixtures depending on other fixtures being already loaded:
@@ -305,6 +313,19 @@ Now, you can reference the fixture by the configured name in your test:
 
         // ...
     }
+
+.. hint::
+
+    By default the entity manager is cleared after loading of each fixture. To prevent the clearing a fixture
+    can implement ``Oro\Bundle\TestFrameworkBundle\Test\DataFixtures\InitialFixtureInterface``.
+
+.. hint::
+
+    Sometimes you need a reference to admin organization or admin user. The following fixtures can be used to load them:
+
+    - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadOrganization``
+    - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadUser``
+
 
 Writing Functional Tests
 ------------------------
@@ -421,7 +442,7 @@ Have a look at an example of a controller test from the OroCRM:
     :linenos:
 
     // src/OroCRM/Bundle/TaskBundle/Tests/Functional/Controller/TaskControllersTest.php
-    namespace OroCRM\Bundle\TaskBundle\Tests\Functional\Controller;
+    namespace Oro\Bundle\TaskBundle\Tests\Functional\Controller;
 
     use Oro\Bundle\TestFrameworkBundle\Test\WebTestCase;
 

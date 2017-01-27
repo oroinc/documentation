@@ -6,7 +6,7 @@ Job Execution
 .. index::
     double: Cron Jobs ; Command
     double: Task Scheduler ; Command
-	
+
 Time-Based Command Execution
 ----------------------------
 
@@ -30,10 +30,10 @@ On UNIX-based systems, you can simply set up a ``crontab`` entry for this:
 .. code-block:: text
 
     */1 * * * * /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
-    
+
 Note: Some OS flavors will require the user name (usually root) in the crontab entry,
 like this:
-	
+
 .. code-block:: text
 
     */1 * * * * root /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
@@ -49,39 +49,43 @@ same.
     executed at the desired times (see :ref:`How Does it Work <sidebar-cron-work>`
     for some insights into the actual process).
 
-If the daemon process that executes the queued jobs is not running, it will
-be started automatically by the ``oro:cron`` command, but you can also
-:ref:`start it manually <job-daemon-start>`.
 
 .. _sidebar-cron-work:
 
 .. sidebar:: How Does it Work?
 
-    When executed, the ``oro:cron`` command is the entry point for all cron
-    commands (:ref:`built-in commands <built-in-cron-commands>` as well as
-    :ref:`self-created commands <create-cron-command>`). It scans for all
-    commands from the ``oro:cron`` namespace that implement the
+    There're two commands to set up the cron tasks shedule. The command
+    ``oro:cron:definitions:load`` scans for all commands from the
+    ``oro:cron`` namespace that implement the
     :class:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface`. For each
     found command, a new :class:`Oro\\Bundle\\CronBundle\\Entity\\Schedule`
-    entry is created and registered at the cron
-    :class:`Oro\\Bundle\\CronBundle\\Job\\Daemon`. The ``Daemon`` is a background
-    process that manages :ref:`a queue <job-queues>` of all open jobs and
-    ensures that each job is executed at the appropriate times.
+    entry is created and saved to the db. This command runs on install and update.
+    It can also be run manually if some cron commands or command definitions are
+    changed.
+
+    The seconf command is ``oro:cron``. It takes all schedules from the db (created by
+    ``oro:cron:definitions:load`` command) and adds the commands that is due to the
+    Message Queue. It should run every minute.
 
 .. _create-cron-command:
 
 Creating the Command
 ~~~~~~~~~~~~~~~~~~~~
 
-The ``oro:cron`` command will automatically execute all registered commands
+The ``oro:cron`` command will automatically execute all commands previously
+loaded with ``oro:cron:definitions:load`` command. The command loads commands
 that implement the ``CronCommandInterface`` if they are registered in the
 ``oro:cron`` namespace. Implementing the ``CronCommandInterface`` requires
-you to implement one method -
+you to implement two methods -
 :method:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface::getDefaultDefinition`.
 It returns the `crontab compatible`_ description of when the command should
 be executed. For example, if a command should be run every day five minutes
 after midnight, the appropriate value is ``5 0 * * *``. Your command will
 then look like this:
+:method:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface::isCronEnabled`.
+It checks some pre-conditions and returns true or false. If it returns false the
+command will not be added to the Message Queue. For example for the integrations
+sync command it can check that there're more than 0 active integrations.
 
 .. code-block:: php
     :linenos:
@@ -98,6 +102,13 @@ then look like this:
         public function getDefaultDefinition()
         {
             return '5 0 * * *';
+        }
+
+        public function isCronEnabled()
+        {
+            // check some pre-conditions
+
+            return $condition ? true : false;
         }
 
         protected function configure()
@@ -142,114 +153,6 @@ then look like this:
     * The ``oro:cron:integration:sync`` command runs integration jobs configured
       through the `IntegrationBundle`_ every five minutes.
 
-.. _job-queues:
-
-Job Queues
-----------
-
-OroPlatform is capable of creating job queues which will be processed
-sequentially by a daemon process.
-
-.. seealso::
-
-    Learn more about it in the in `JMSJobQueueBundle documentation`_.
-
-Creating a Job
-~~~~~~~~~~~~~~
-
-You can simply queue the execution of any Symfony command by persisting a
-``Job`` entity. A job references the command that will be executed once the
-job itself is being run. The scheduled jobs will be executed by the daemon
-process.
-
-For example, assume that you have command that sends a newsletter to a list
-of recipients:
-
-.. code-block:: php
-    :linenos:
-
-    // src/Acme/NewsletterBundle/Command/SendNewsletterCommand.php
-    namespace Acme\NewsletterBundle\Command;
-
-    use JMS\JobQueueBundle\Entity\Job;
-    use Symfony\Component\Console\Command;
-    use Symfony\Component\Console\Input\InputInterface;
-    use Symfony\Component\Console\Output\OutputInterface;
-
-    class SendNewsletterCommand extends Command
-    {
-        protected function configure()
-        {
-            $this->setName('acme:send-newsletter');
-        }
-
-        protected function execute(InputInterface $input, OutputInterface $output)
-        {
-            // do whatever is needed to send the newsletter
-        }
-    }
-
-A sales manager should be able to create a newsletter in the backend and trigger
-the command to send it to all registered recipients. Of course, you could
-simply execute the ``SendNewsletterCommand``. But, as you may have guessed,
-this is not a very clever idea. One of the drawbacks of this solution is that
-sending the emails to hundreds, thousands or even more recipients likely takes
-a long time blocking the response to the browser. Luckily, you can solve this
-issue by only queuing the command execution. Its actual execution will be
-done by a separate process:
-
-.. code-block:: php
-    :linenos:
-
-    // src/Acme/NewsletterBundle/Controller/NewsletterController.php
-    namespace Acme\NewsletterBundle\Controller;
-
-    use JMS\JobQueueBundle\Entity\Job;
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-
-    class NewsletterController extends Controller
-    {
-        public function sendAction()
-        {
-            $newsletter = ...;
-
-            $job = new Job('acme:newsletter:send');
-            $entityManager = $this->getDoctrine()->getManagerForClass('JMS\JobQueueBundle\Entity\Job')
-            $entityManager->persist($job);
-            $entityManager->flush();
-        }
-    }
-
-You can also configure dependencies between jobs, add relationships to other
-entities or schedule jobs to be executed at a later time. Take a look at the
-`examples in the JMSJobQueueBundle documentation`_ for more information.
-
-.. _job-daemon-start:
-
-Starting the Daemon
-~~~~~~~~~~~~~~~~~~~
-
-The ``oro:cron`` command actually doesn't run any of the cron commands. Instead,
-it schedules the needed jobs in a queue. The job queue is then later on processed
-by a daemon process. You will have to start the daemon either in the Web UI
-or on the command line:
-
-* On the command line, execute the ``jms-job-queue:run`` command to start
-  the daemon process. You can specify the maximum runtime and the maximum
-  number of concurrent jobs using the respective options:
-
-  ========================= ============ ============= =================================
-  Option                    Short option Default value Description
-  ========================= ============ ============= =================================
-  ``--max-runtime``         ``-r``       900           Maximum runtime in seconds
-  ------------------------- ------------ ------------- ---------------------------------
-  ``--max-concurrent-jobs`` ``-j``       5             Maximum number of concurrent jobs
-  ========================= ============ ============= =================================
-
-* You can also control the daemon from the web interface under *System* /
-  *Job Queue*:
-
-  .. image:: /images/book/job/daemon.png
 
 .. _`OroCronBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/CronBundle
 .. _`crontab compatible`: http://www.unix.com/man-page/linux/5/crontab/
@@ -258,5 +161,3 @@ or on the command line:
 .. _`ReminderBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ReminderBundle
 .. _`TrackingBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/TrackingBundle
 .. _`IntegrationBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/IntegrationBundle
-.. _`JMSJobQueueBundle documentation`: http://jmsyst.com/bundles/JMSJobQueueBundle
-.. _`examples in the JMSJobQueueBundle documentation`: http://jmsyst.com/bundles/JMSJobQueueBundle/master/usage

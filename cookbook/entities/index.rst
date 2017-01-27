@@ -6,9 +6,11 @@ Entities
     introduction
     creating_entities
     data_fixtures
-    datagrid
+    datagrids
     managing_tasks
     deleting_tasks
+    adding_properties
+    acls
     import_export
     report
-    dashboard
+    dashboards

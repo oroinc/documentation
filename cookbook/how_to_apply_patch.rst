@@ -32,22 +32,11 @@ Comment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-Kill the related job daemon process.
+**3**. Stop all running consumers.
 
-.. code-block:: bash
+**4**. Create backups of your Database and Code.
 
-    $ ps ax|grep php5
-    $ kill -9 <process_pid>
-
-<process_pid> - is a PID of currently executing application job daemon process. For example:
-
-.. code-block:: text
-
-    /path/to/application/app/console jms-job-queue:run --max-runtime=3600 --max-concurrent-jobs=5 --env=prod
-
-**3**. Create backups of your Database and Code.
-
-**4**. Copy the patch file to the package directory
+**5**. Copy the patch file to the package directory
 
 .. code-block:: text
 
@@ -55,7 +44,7 @@ Kill the related job daemon process.
 
 So, the "platform-1.9.2.patch" file should be copied to ``/path/to/crm_folder/vendor/oro/platform``.
 
-**5**. To apply the patch, ``cd`` to the package folder and execute ``patch`` command.
+**6**. To apply the patch, ``cd`` to the package folder and execute ``patch`` command.
 
 .. code-block:: bash
 
@@ -63,7 +52,7 @@ So, the "platform-1.9.2.patch" file should be copied to ``/path/to/crm_folder/ve
     $ patch -p1 < platform-1.9.2.patch
 
 
-**6**. ``cd`` to crm root folder and clear caches.
+**7**. ``cd`` to crm root folder and clear caches.
 
 .. code-block:: bash
 
@@ -81,11 +70,11 @@ or, as an alternative:
 
     $ sudo rm -rf app/cache/*
 
-**7**. Execute the ``oro:platform:update`` command and clear caches.
+**8**. Execute the ``oro:platform:update`` command and clear caches.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env prod --force
+    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
 Remove the caches.
 
@@ -100,7 +89,13 @@ or, as alternative:
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**8**. Enable cron.
+**9**. Run the consumer(s).
+
+.. code-block:: bash
+
+    $ sudo -u www-data app/console oro:message-queue:consume --env prod
+
+**10**. Enable cron.
 
 .. code-block:: bash
 
@@ -112,7 +107,7 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**9**. Switch your application back to normal mode from the maintenance mode.
+**11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 

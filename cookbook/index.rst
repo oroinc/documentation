@@ -8,12 +8,14 @@ This book contains list of most regularly used solutions in OroPlatform.
   * :doc:`/cookbook/entities/introduction`
   * :doc:`/cookbook/entities/creating_entities`
   * :doc:`/cookbook/entities/data_fixtures`
-  * :doc:`/cookbook/entities/datagrid`
+  * :doc:`/cookbook/entities/datagrids`
   * :doc:`/cookbook/entities/managing_tasks`
   * :doc:`/cookbook/entities/deleting_tasks`
+  * :doc:`/cookbook/entities/adding_properties`
+  * :doc:`/cookbook/entities/acls`
   * :doc:`/cookbook/entities/import_export`
   * :doc:`/cookbook/entities/report`
-  * :doc:`/cookbook/entities/dashboard`
+  * :doc:`/cookbook/entities/dashboards`
 
 * :doc:`/cookbook/how_to_create_new_bundle`
 * :doc:`/cookbook/how_to_extend_existing_bundle`
@@ -30,7 +32,10 @@ This book contains list of most regularly used solutions in OroPlatform.
 * :doc:`/cookbook/how_to_add_an_extension_to_oro_marketplace`
 * :doc:`/cookbook/how_to_upgrade_to_new_version`
 * :doc:`/cookbook/how_to_apply_patch`
+* :doc:`/cookbook/how_to_co-install_applications`
+* :doc:`/cookbook/known_issues_outlook_addin`
 * :doc:`/cookbook/faq`
+
 
 .. toctree::
     :hidden:
@@ -51,6 +56,8 @@ This book contains list of most regularly used solutions in OroPlatform.
     how_to_add_an_extension_to_oro_marketplace
     how_to_upgrade_to_new_version
     how_to_apply_patch
+    how_to_co-install_applications
+    known_issues_outlook_addin
     faq
 
 TODO List

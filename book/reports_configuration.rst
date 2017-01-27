@@ -9,7 +9,7 @@ like this:
 
 .. seealso::
 
-    You can also :doc:`configure reports in the web UI </user_guide/business_intelligence_reports>`.
+    You can also :doc:`configure reports in the web UI </user_guide/business_intelligence/business_intelligence_reports>`.
 
 .. _book-reports-configuration:
 
@@ -17,14 +17,14 @@ Configuring a Report
 --------------------
 
 Building a new report is as easy as defining a data grid. A data grid is a YAML configuration living in a
-file called ``datagrid.yml`` in the ``Resources/config`` directory of your bundle. Take a look at the
+file called ``datagrids.yml`` in the ``Resources/config/oro`` directory of your bundle. Take a look at the
 following example:
 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/Acme/DemoBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         orocrm_report-opportunities-won_by_period:
             pageTitle: orocrm.report.opportunities_won_by_period
             source:
@@ -195,8 +195,8 @@ of your bundle:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             account_opportunity:
                 label: Accounts by opportunity
@@ -223,5 +223,5 @@ Then, under the ``tree`` key you add the newly created item to the *Reports & Se
 application menu.
 
 .. _`datasources documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md
-.. _`ReportBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ReportBundle/Resources/config/datagrid.yml
+.. _`ReportBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ReportBundle/Resources/config/oro/datagrids.yml
 .. _`DataGridBundle documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/README.md

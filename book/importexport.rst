@@ -246,7 +246,7 @@ using :class:`annotations <Oro\\Bundle\\EntityConfigBundle\\Metadata\\Annotation
       *      defaultValues={
       *          "importexport"={
       *              "order"=200,
-      *              "short"=true
+      *              "full"=true
       *          }
       *      }
       */
@@ -264,10 +264,11 @@ You can use the following options:
 +--------------+-------------------------------------------------------------------+
 | ``excluded`` | The skip is field during export if ``excluded`` is ``true``.      |
 +--------------+-------------------------------------------------------------------+
-| ``short``    | If ``true``, the ``normalize()`` method returns only ``identity`` |
-|              | fields of associated entities during exports. This option cannot  |
-|              | be configured in the user interface, but can only be set using    |
-|              | annotations.                                                      |
+| ``full``     | If ``false``, the ``normalize()`` method returns only ``identity``|
+|              | fields of associated entities during exports. If ``true``, all    |
+|              | fields of the related entity are exported. Fields with Excluded   |
+|              | option are skipped.This option cannot be configured in the user   |
+|              | interface, but can only be set using annotations.                 |
 +--------------+-------------------------------------------------------------------+
 
 Importing one-to-many Relations
@@ -374,9 +375,9 @@ the following methods:
     .. code-block:: yaml
         :linenos:
 
-        # src/OroCRM/Bundle/ContactBundle/Resources/config/importexport.yml
+        # src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
         parameters:
-            orocrm_contact.importexport.strategy.contact.class: OroCRM\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
+            orocrm_contact.importexport.strategy.contact.class: Oro\Bundle\ContactBundle\ImportExport\Strategy\ContactAddOrUpadteOrDeleteStrategy
 
         services:
 
@@ -393,11 +394,11 @@ Read the `ImportExportBundle documentation`_ for more information.
 
 .. _`OroImportExportBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ImportExportBundle
 .. _`OroBatchBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/BatchBundle
-.. _`ContactBundle`: https://github.com/orocrm/crm/tree/master/src/OroCRM/Bundle/ContactBundle
-.. _`ImportExport namespace`: https://github.com/orocrm/crm/tree/master/src/OroCRM/Bundle/ContactBundle/ImportExport
-.. _`Resources/config/importexport.yml`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ContactBundle/Resources/config/importexport.yml
+.. _`ContactBundle`: https://github.com/orocrm/crm/tree/master/src/Oro/Bundle/ContactBundle
+.. _`ImportExport namespace`: https://github.com/orocrm/crm/tree/master/src/Oro/Bundle/ContactBundle/ImportExport
+.. _`Resources/config/importexport.yml`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml
 .. _`Symfony Serializer component`: http://symfony.com/doc/current/components/serializer.html
-.. _`ItemWriterInterface`: https://github.com/akeneo/BatchBundle/blob/master/Item/ItemWriterInterface.php
+.. _`ItemWriterInterface`: https://github.com/akeneo/batch/blob/master/Item/ItemWriterInterface.php
 .. _`Akeneo BatchBundle`: https://github.com/akeneo/BatchBundle
-.. _`ContactAddOrReplaceStrategy`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php
+.. _`ContactAddOrReplaceStrategy`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php
 .. _`ImportExportBundle documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/index.md

@@ -15,8 +15,8 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/emails`
-        * User guide: :doc:`/user_guide/common_features_accounts`
-        * User guide: :doc:`/user_guide/common_features_contacts`
+        * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
+        * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
 
 `ActivityBundle`_ (OroPlatform)
     Assign activities (such as calls, emails and tasks) to other entities.
@@ -25,7 +25,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/user_management_users`
+        * User guide: :doc:`/admin_guide/user_management/user_management_users`
 
 `ActivityListBundle`_ (OroPlatform)
     The bundle provides methods to show all activities in one widget.
@@ -70,7 +70,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/outlook_sync`
+        * User guide: :doc:`/admin_guide/integrations/outlook_sync`
 
 `CallBundle`_ (OroCRM)
     Basic implementation to log calls to and of contacts and accounts.
@@ -82,9 +82,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/marketing_campaigns`
-        * User guide: :doc:`/user_guide/email_campaigns`
-        * User guide: :doc:`/user_guide/marketing_tracking_website_records`
+        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_campaigns`
+        * User guide: :doc:`/user_guide_roles/marketing_tools/email_campaigns`
+        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_tracking_website_records`
 
 `CaseBundle`_ (OroCRM)
     Case entitiy management.
@@ -96,11 +96,11 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/common_features_multi_channel_functionality`
-        * User guide: :doc:`/user_guide/common_features_channels`
-        * User guide: :doc:`/user_guide/common_features_accounts`
-        * User guide: :doc:`/user_guide/b2b_channels`
-        * User guide: :doc:`/user_guide/magento_channels`
+        * User guide: :doc:`/user_guide/customer_management/common_features_multi_channel_functionality`
+        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
+        * User guide: :doc:`/user_guide_roles/sales_tools/sales_channels`
+        * User guide: :doc:`/user_guide_roles/sales_tools/magento_channels`
 
 `ChartBundle`_ (OroPlatform)
     Display different types of charts (like line charts, pie charts, flow charts).
@@ -126,8 +126,8 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/emails`
-        * User guide: :doc:`/user_guide/common_features_contacts`
-        * User guide: :doc:`/user_guide/outlook_sync`
+        * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
+        * User guide: :doc:`/admin_guide/integrations/outlook_sync`
 
 `ContactUsBundle`_ (OroCRM)
     Embedded form and workflow for *contact us* requests.
@@ -148,7 +148,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Reference: :doc:`/reference/format/dashboard`
+        * Reference: :doc:`/reference/format/dashboards`
 
 `DataAuditBundle`_ (OroPlatform)
     Provides changelogs of configured properties for entities.
@@ -169,8 +169,8 @@ related articles is provided below the description.
         * Book: :doc:`/book/crud`
         * Book: :doc:`/book/reports_configuration`
         * Cookbook: :doc:`/cookbook/how_to_pass_request_parameter_to_grid`
-        * Reference: :doc:`/reference/format/datagrid`
-        * User guide: :doc:`/user_guide/common_features_channels`
+        * Reference: :doc:`/reference/format/datagrids`
+        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
 
 `DemoDataBundle`_ (OroCRM)
     Contains necessary fixtures for CRM features demonstration.
@@ -193,7 +193,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/emails`
-        * User guide: :doc:`/user_guide/user_management_users`
+        * User guide: :doc:`/admin_guide/user_management/user_management_users`
 
 `EmbeddedFormBundle`_ (OroPlatform)
     Makes it possible to embed Symfony forms on third-party sites and view their submitted data.
@@ -206,9 +206,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/entities`
-        * User guide: :doc:`/user_guide/entity_fields`
-        * User guide: :doc:`/user_guide/common_features_channels`
+        * User guide: :doc:`/admin_guide/entities/entities`
+        * User guide: :doc:`/admin_guide/entities/entity_fields`
+        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
 
 `EntityConfigBundle`_ (OroPlatform)
     Allows to attach metadata to entity classes and offers a UI to manage them.
@@ -224,8 +224,8 @@ related articles is provided below the description.
         * Reference: :doc:`/reference/annotation/config`
         * Reference: :doc:`/reference/annotation/config_field`
         * Reference: :doc:`/reference/format/entity_config`
-        * User guide: :doc:`/user_guide/entities`
-        * User guide: :doc:`/user_guide/entity_fields`
+        * User guide: :doc:`/admin_guide/entities/entities`
+        * User guide: :doc:`/admin_guide/entities/entity_fields`
 
 `EntityExtendBundle`_ (OroPlatform)
     Offers a way to create new entities in the UI, to add new relations between existing entities
@@ -237,8 +237,8 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/entities`
-        * User guide: :doc:`/user_guide/entities`
-        * User guide: :doc:`/user_guide/entity_fields`
+        * User guide: :doc:`/admin_guide/entities/entities`
+        * User guide: :doc:`/admin_guide/entities/entity_fields`
 
 `EntityMergeBundle`_ (OroPlatform)
     Merges different entity definitions into one entity.
@@ -254,7 +254,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/business_intelligence_filters`
+        * User guide: :doc:`/user_guide/business_intelligence/business_intelligence_filters`
 
 `FormBundle`_ (OroPlatform)
     Adds additional form types and form extensions.
@@ -269,7 +269,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/user_management_users`
+        * User guide: :doc:`/admin_guide/user_management/user_management_users`
 
 `ImportExportBundle`_ (OroPlatform)
     Makes it possible to import and export data in an automated way into and from different
@@ -281,7 +281,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/importexport`
         * Cookbook: :doc:`/cookbook/how_to_accelerate_import`
-        * User guide: :doc:`/user_guide/data_management_import_export`
+        * User guide: :doc:`/user_guide/records/data_management_import_export`
 
 `InstallerBundle`_ (OroPlatform)
     The web installer for OroCRM.
@@ -300,8 +300,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/common_features_channels`
-        * User guide: :doc:`/user_guide/magento_channel_integration`
+        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/admin_guide/integrations/magento_channel_integration`
 
 `LocaleBundle`_ (OroPlatform)
     Formatting of numbers, dates, names and addresses based on the user's locale.
@@ -320,10 +320,10 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Cookbook: :doc:`/cookbook/faq`
-        * User guide: :doc:`/user_guide/common_features_multi_channel_functionality`
-        * User guide: :doc:`/user_guide/common_features_channels`
-        * User guide: :doc:`/user_guide/magento_channel_integration`
-        * User guide: :doc:`/user_guide/magento_channels`
+        * User guide: :doc:`/user_guide/customer_management/common_features_multi_channel_functionality`
+        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/admin_guide/integrations/magento_channel_integration`
+        * User guide: :doc:`/user_guide_roles/sales_tools/magento_channels`
 
 `MarketingListBundle`_ (OroCRM)
     Supports generating contact lists automatically for marketing purposes.
@@ -332,7 +332,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/marketing_lists`
+        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_lists`
 
 `MigrationBundle`_ (OroPlatform)
     Allows to version the application's database.
@@ -343,7 +343,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/customization`
         * Book: :doc:`/book/entities`
-        * User guide: :doc:`/user_guide/entities`
+        * User guide: :doc:`/admin_guide/entities/entities`
 
 `NavigationBundle`_ (OroPlatform)
     Define menus in different bundles in YAMl files based on the `KnpMenuBundle`_.
@@ -372,10 +372,10 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/user_management_overview`
-        * User guide: :doc:`/user_guide/user_management_users`
-        * User guide: :doc:`/user_guide/user_management_bu`
-        * User guide: :doc:`/user_guide/user_management_organization`
+        * User guide: :doc:`/admin_guide/user_management/user_management_overview`
+        * User guide: :doc:`/admin_guide/user_management/user_management_users`
+        * User guide: :doc:`/admin_guide/user_management/user_management_bu`
+        * User guide: :doc:`/admin_guide/user_management/user_management_organization`
 
 `PlatformBundle`_ (OroPlatform)
     The OroPlatform core.
@@ -394,11 +394,11 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/reports_configuration`
-        * User guide: :doc:`/user_guide/common_features_accounts`
-        * User guide: :doc:`/user_guide/b2b_customers`
-        * User guide: :doc:`/user_guide/leads`
-        * User guide: :doc:`/user_guide/opportunities`
-        * User guide: :doc:`/user_guide/business_intelligence_reports`
+        * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
+        * User guide: :doc:`/user_guide_roles/sales_tools/business_customers`
+        * User guide: :doc:`/user_guide_roles/sales_tools/leads`
+        * User guide: :doc:`/user_guide_roles/sales_tools/opportunities`
+        * User guide: :doc:`/user_guide/business_intelligence/business_intelligence_reports`
 
 `RequireJSBundle`_ (OroPlatform)
     Integrates the `RequireJS JavaScript library`_.
@@ -421,7 +421,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/sales_processes_workflow`
+        * User guide: :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
 
 `SearchBundle`_ (OroPlatform)
     Manages the application's search index and allows to search this index.
@@ -442,10 +442,10 @@ related articles is provided below the description.
         * Book: :doc:`/book/security`
         * Reference: :doc:`/reference/annotation/acl`
         * Reference: :doc:`/reference/annotation/acl_ancestor`
-        * Reference: :doc:`/reference/format/acl`
-        * User guide: :doc:`/user_guide/user_management_overview`
-        * User guide: :doc:`/user_guide/user_management_users`
-        * User guide: :doc:`/user_guide/user_management_roles`
+        * Reference: :doc:`/reference/format/acls`
+        * User guide: :doc:`/admin_guide/user_management/user_management_overview`
+        * User guide: :doc:`/admin_guide/user_management/user_management_users`
+        * User guide: :doc:`/admin_guide/security/access_management_roles`
 
 `SegmentBundle`_ (OroPlatform)
     Provides entity segmentation that can be used for further processing.
@@ -475,7 +475,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/outlook_sync`
+        * User guide: :doc:`/admin_guide/integrations/outlook_sync`
 
 `TestFrameworkBundle`_ (OroPlatform and OroCRM)
     Test framework functionality and main entry point for the JS UnitTest runner.
@@ -503,7 +503,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/marketing_tracking_website_records`
+        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_tracking_website_records`
 
 `TranslationBundle`_ (OroPlatform)
     Integration for translatable entities.
@@ -536,12 +536,12 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/user_management_overview`
-        * User guide: :doc:`/user_guide/user_management_users`
-        * User guide: :doc:`/user_guide/user_management_roles`
-        * User guide: :doc:`/user_guide/user_management_bu`
-        * User guide: :doc:`/user_guide/user_management_organization`
-        * User guide: :doc:`/user_guide/user_management_groups`
+        * User guide: :doc:`/admin_guide/user_management/user_management_overview`
+        * User guide: :doc:`/admin_guide/user_management/user_management_users`
+        * User guide: :doc:`/admin_guide/security/access_management_roles`
+        * User guide: :doc:`/admin_guide/user_management/user_management_bu`
+        * User guide: :doc:`/admin_guide/user_management/user_management_organization`
+        * User guide: :doc:`/admin_guide/user_management/user_management_groups`
 
 `WindowsBundle`_ (OroPlatform)
     Consists of a set of tools for manipulating dialog windows and their states.
@@ -554,39 +554,39 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/workflow`
-        * Reference: :doc:`/reference/format/workflow`
-        * User guide: :doc:`/user_guide/b2b_customers`
-        * User guide: :doc:`/user_guide/leads`
-        * User guide: :doc:`/user_guide/opportunities`
-        * User guide: :doc:`/user_guide/sales_processes_workflow`
-        * User guide: :doc:`/user_guide/workflow_management`
+        * Reference: :doc:`/reference/format/workflows`
+        * User guide: :doc:`/user_guide_roles/sales_tools/business_customers`
+        * User guide: :doc:`/user_guide_roles/sales_tools/leads`
+        * User guide: :doc:`/user_guide_roles/sales_tools/opportunities`
+        * User guide: :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
+        * User guide: :doc:`/admin_guide/record_mgmt_config/workflow_management`
 
-.. _`AccountBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/AccountBundle/README.md
+.. _`AccountBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/AccountBundle/README.md
 .. _`ActivityBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityBundle/README.md
 .. _`ActivityListBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/README.md
 .. _`AddressBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/AddressBundle/README.md
-.. _`AnalyticsBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/AnalyticsBundle/README.md
+.. _`AnalyticsBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/AnalyticsBundle/README.md
 .. _`AsseticBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/AsseticBundle/README.md
 .. _`core AsseticBundle`: https://github.com/symfony/AsseticBundle
 .. _`AttachmentBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/AttachmentBundle/readme.md
 .. _`BusinessEntitiesBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/BusinessEntitiesBundle/README.md
 .. _`CacheBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/CacheBundle/readme.md
-.. _`CalendarBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/CalendarBundle/README.md
+.. _`CalendarBundle`: https://github.com/orocrm/OroCalendarBundle/blob/master/README.md
 .. _`jQuery FullCalendar plugin`: http://arshaw.com/fullcalendar/
-.. _`CallBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/CallBundle/README.md
-.. _`CampaignBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/CampaignBundle/README.md
-.. _`CaseBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/CaseBundle/README.md
-.. _`ChannelBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ChannelBundle/README.md
+.. _`CallBundle`: https://github.com/orocrm/OroCRMCallBundle/blob/master/README.md
+.. _`CampaignBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/CampaignBundle/README.md
+.. _`CaseBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/CaseBundle/README.md
+.. _`ChannelBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ChannelBundle/README.md
 .. _`ChartBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ChartBundle/README.md
 .. _`CommentBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/CommentBundle/README.md
 .. _`ConfigBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ConfigBundle/README.md
-.. _`ContactBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ContactBundle/README.md
-.. _`ContactUsBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ContactUsBundle/README.md
+.. _`ContactBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/README.md
+.. _`ContactUsBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactUsBundle/README.md
 .. _`CronBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/CronBundle/README.md
 .. _`DashboardBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DashboardBundle/README.md
 .. _`DataAuditBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataAuditBundle/README.md
 .. _`DataGridBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/README.md
-.. _`DemoDataBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/DemoDataBundle/README.md
+.. _`DemoDataBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/DemoDataBundle/README.md
 .. _`DistributionBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DistributionBundle/README.md
 .. _`EmailBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/EmailBundle/readme.md
 .. _`EmbeddedFormBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/EmbeddedFormBundle/README.md
@@ -603,8 +603,8 @@ related articles is provided below the description.
 .. _`InstallerBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/InstallerBundle/README.md
 .. _`IntegrationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/IntegrationBundle/README.md
 .. _`LocaleBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/LocaleBundle/README.md
-.. _`MagentoBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/MagentoBundle/README.md
-.. _`MarketingListBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/MarketingListBundle/README.md
+.. _`MagentoBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/MagentoBundle/README.md
+.. _`MarketingListBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/MarketingListBundle/README.md
 .. _`MigrationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/MigrationBundle/README.md
 .. _`NavigationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/NavigationBundle/README.md
 .. _`KnpMenuBundle`: https://github.com/KnpLabs/KnpMenuBundle
@@ -617,7 +617,7 @@ related articles is provided below the description.
 .. _`ReportBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ReportBundle/readme.md
 .. _`RequireJSBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/RequireJSBundle/README.md
 .. _`RequireJS JavaScript library`: http://requirejs.org/
-.. _`SalesBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/SalesBundle/README.md
+.. _`SalesBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/SalesBundle/README.md
 .. _`SearchBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SearchBundle/README.md
 .. _`SecurityBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SecurityBundle/readme.md
 .. _`SegmentBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SegmentBundle/README.md
@@ -625,8 +625,8 @@ related articles is provided below the description.
 .. _`SoapBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SoapBundle/README.md
 .. _`SyncBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SyncBundle/README.md
 .. _`JDareClankBundle`: https://github.com/JDare/ClankBundle
-.. _`TagBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/TagBundle/readme.md
-.. _`TaskBundle`: https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/TaskBundle/README.md
+.. _`TagBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/TagBundle/README.md
+.. _`TaskBundle`: https://github.com/orocrm/OroCRMTaskBundle/blob/master/README.md
 .. _`TestFrameworkBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/README.md
 .. _`ThemeBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ThemeBundle/README.md
 .. _`TrackingBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/TrackingBundle/README.md

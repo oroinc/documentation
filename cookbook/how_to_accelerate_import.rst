@@ -147,10 +147,10 @@ command shows the list of all such listeners:
 
     $ app/console oro:platform:optional-listeners
     List of optional doctrine listeners:
-      > oro_dataaudit.listener.entity_listener
+      > oro_dataaudit.listener.send_changed_entities_to_message_queue
       > oro_notification.docrine.event.listener
       > oro_search.index_listener
-      > oro_workflow.listener.process_collector
+      > oro_workflow.listener.event_trigger_collector
 
 To disable these listeners the ``--disabled-listeners`` option can be used. Also this option can receive value "all" -
 it will disable all optional listeners. Here is an example:

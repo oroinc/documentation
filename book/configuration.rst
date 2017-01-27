@@ -40,7 +40,7 @@ To define your own configuration settings in a bundle, you use the
 
             // provide your regular Symfony configuration here
 
-            SettingsBuilder::append($root, array(
+            SettingsBuilder::append($rootNode, array(
                 'foo' => array(
                     'value' => true,
                     'type' => 'boolean',
@@ -89,8 +89,8 @@ For each option, define a field under ``fields`` key:
 .. code-block:: yaml
     :linenos:
 
-    # Acme/DemoBundle/Resources/config/system_configuration.yml
-    oro_system_configuration:
+    # Acme/DemoBundle/Resources/config/oro/system_configuration.yml
+    system_configuration:
         fields:
             foo:
                 type: checkbox

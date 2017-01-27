@@ -4,7 +4,7 @@ Assets
 +-----------+----------------+
 | Filename  | ``assets.yml`` |
 +-----------+----------------+
-| Root Node | ``css``        |
+| Root Node | ``assets``     |
 +-----------+----------------+
 
 The ``assets.yml`` file can be used to define CSS file groups. The listed files will be
@@ -16,16 +16,17 @@ containing three CSS files:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/assets.yml
-    css:
-        first_group:
-            - 'First/Assets/Path/To/Css/first.css'
-            - 'First/Assets/Path/To/Css/second.css'
-            - 'First/Assets/Path/To/Css/third.css'
-        second_group:
-            - 'Second/Assets/Path/To/Css/first.css'
-            - 'Second/Assets/Path/To/Css/second.css'
-            - 'Second/Assets/Path/To/Css/third.css'
+    # src/Acme/DemoBundle/Resources/config/oro/assets.yml
+    assets:
+        css:
+            first_group:
+                - 'First/Assets/Path/To/Css/first.css'
+                - 'First/Assets/Path/To/Css/second.css'
+                - 'First/Assets/Path/To/Css/third.css'
+            second_group:
+                - 'Second/Assets/Path/To/Css/first.css'
+                - 'Second/Assets/Path/To/Css/second.css'
+                - 'Second/Assets/Path/To/Css/third.css'
 
 By default, when you install the application's assets using the ``oro:assets:install`` command, all
 CSS files from all groups and all bundles will be merged and optimized.

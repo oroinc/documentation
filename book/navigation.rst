@@ -15,7 +15,7 @@ Mastering the application menu is a two-step process:
 #. :ref:`Compose trees of navigation items <book-navigation-compose-tree>`
 
 The `OroNavigationBundle`_ automatically processes a YAML configuration file which is named
-``navigation.yml`` when it is placed in the ``Resources/config`` directory of a registered bundle.
+``navigation.yml`` when it is placed in the ``Resources/config/oro`` directory of a registered bundle.
 The menu configuration needs to be placed under the ``oro_menu_config`` tree.
 
 .. _book-navigation-create-menu-item:
@@ -29,8 +29,8 @@ name which acts as a key in the menu configuration:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         items:
             blog:
                 label: acme_demo.menu.blog
@@ -67,8 +67,8 @@ build under the ``tree`` key:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         tree:
             application_menu:
                 children:
@@ -104,8 +104,8 @@ as child items of the ``application_menu`` entry like this:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/navigation.yml
-    oro_menu_config:
+    # src/Acme/DemoBundle/Resources/config/oro/navigation.yml
+    menu_config:
         tree:
             application_menu:
                 children:

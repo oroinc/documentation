@@ -18,8 +18,8 @@ For example:
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         # ...
         acme-tasks-grid:
             # ...
@@ -39,13 +39,13 @@ Solution 1: Grid Parameter binding
 The easiest way that should be sufficient for most situations is to use the parameter binding option of the datasource
 to configure mapping between datagrid and query parameters.
 
-You can do this by adding the ``bind_parameters`` option to your ``datagrid.yml`` using the following syntax:
+You can do this by adding the ``bind_parameters`` option to your ``datagrids.yml`` using the following syntax:
 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         # ...
         acme-tasks-grid:
             # ...
@@ -67,8 +67,8 @@ where the key will be the name of the query parameter, and the value will match 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/Bundle/TaskBundle/Resources/config/datagrid.yml
-    datagrid:
+    # src/Acme/Bundle/TaskBundle/Resources/config/oro/datagrids.yml
+    datagrids:
         # ...
         acme-tasks-grid:
             # ...
@@ -105,7 +105,7 @@ The controller receives a contact entity and passes it to the view:
 
         use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-        use OroCRM\Bundle\ContactBundle\Entity\Contact;
+        use Oro\Bundle\ContactBundle\Entity\Contact;
 
         class TaskController extends Controller
         {

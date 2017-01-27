@@ -77,42 +77,43 @@ Twig Placeholders
 
 The `OroUIBundle`_ extends Twig templates by allowing them to use so-called
 "placeholders". Placeholders are defined in any bundle in the `placeholders.yml`
-file which is stored in the bundle's ``Resources/config`` directory. For
+file which is stored in the bundle's ``Resources/config/oro`` directory. For
 example, the placeholders file of the OroDataGridBundle looks like this:
 
 .. code-block:: yaml
     :linenos:
 
-    # platform/src/Oro/Bundle/DataGridBundle/Resources/config/placeholders.yml
+    # platform/src/Oro/Bundle/DataGridBundle/Resources/config/oro/placeholders.yml
     placeholders:
-        scripts_before:
-            items:
-                template_datagrid_toolbar:
-                    order: 20
-                template_datagrid_toolbar_pagination:
-                    order: 30
-                template_datagrid_toolbar_pagination_input:
-                    order: 40
-                template_datagrid_toolbar_page_size:
-                    order: 50
-                template_datagrid_select_all_header_cell:
-                    order: 50
-                template_datagrid_action_header_cell:
-                    order: 50
+        placeholders:
+            scripts_before:
+                items:
+                    template_datagrid_toolbar:
+                        order: 20
+                    template_datagrid_toolbar_pagination:
+                        order: 30
+                    template_datagrid_toolbar_pagination_input:
+                        order: 40
+                    template_datagrid_toolbar_page_size:
+                        order: 50
+                    template_datagrid_select_all_header_cell:
+                        order: 50
+                    template_datagrid_action_header_cell:
+                        order: 50
 
-    items:
-        template_datagrid_toolbar:
-            template: OroDataGridBundle:js:toolbar.html.twig
-        template_datagrid_toolbar_pagination:
-            template: OroDataGridBundle:js:pagination.html.twig
-        template_datagrid_toolbar_pagination_input:
-            template: OroDataGridBundle:js:pagination-input.html.twig
-        template_datagrid_toolbar_page_size:
-            template: OroDataGridBundle:js:page-size.html.twig
-        template_datagrid_select_all_header_cell:
-            template: OroDataGridBundle:js:select-all-header-cell.html.twig
-        template_datagrid_action_header_cell:
-            template: OroDataGridBundle:js:action-header-cell.html.twig
+        items:
+            template_datagrid_toolbar:
+                template: OroDataGridBundle:js:toolbar.html.twig
+            template_datagrid_toolbar_pagination:
+                template: OroDataGridBundle:js:pagination.html.twig
+            template_datagrid_toolbar_pagination_input:
+                template: OroDataGridBundle:js:pagination-input.html.twig
+            template_datagrid_toolbar_page_size:
+                template: OroDataGridBundle:js:page-size.html.twig
+            template_datagrid_select_all_header_cell:
+                template: OroDataGridBundle:js:select-all-header-cell.html.twig
+            template_datagrid_action_header_cell:
+                template: OroDataGridBundle:js:action-header-cell.html.twig
 
 A placeholder is rendered in a twig template using the ``placeholder`` tag:
 
@@ -176,7 +177,7 @@ You can replace any service defined by one of the OroPlatform bundles with
 your own implementation. All you have to do is fill the class parameter
 name for the service you want to replace with the name of your new service
 class. All parameters used to set the services' class names are in the form of
-``bundle_alias.service_name.class_name`` (for example, ``oro_datagrid.configuration.provider.class``
+``bundle_alias.service_name.class`` (for example, ``oro_datagrid.configuration.provider.class``
 is the parameter holding the class name for the ``oro_datagrid.configuration.provider``
 service):
 
@@ -256,7 +257,7 @@ in the database and which are then generated into the application's cache
 directory.
 
 OroPlatform Entities
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
 
 The OroPlatform Application ships with a set of predefined entities. Their
 basic configuration is stored in the ``oro_entity_config`` table. Its structure

@@ -175,8 +175,8 @@ options, you create a ``entity_config.yml`` file in your bundle which can look l
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/entity_config.yml
-    oro_entity_config:
+    # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
+    entity_config:
         acme_demo:
             entity:
                 items:
@@ -852,7 +852,7 @@ which entities notes can be added:
 .. code-block:: yaml
     :linenos:
 
-    oro_entity_config:
+    entity_config:
         note:
             entity:
                 items:
@@ -1092,7 +1092,33 @@ to assign activities (like calls, emails, tasks) to other entities. The associat
     }
 
 To create a new entity that can be assigned in an ``Activity`` association, let the entity class
-extend the ``ExtendActivity`` class:
+use the ``ExtendActivity`` trait:
+
+.. code-block:: php
+    :linenos:
+
+    // src/Acme/DemoBundle/Model/ExtendEmail.php
+    namespace Acme\DemoBundle\Model;
+
+    use Oro\Bundle\ActivityBundle\Model\ActivityInterface;
+    use Oro\Bundle\ActivityBundle\Model\ExtendActivity;
+
+    class ExtendEmail implements ActivityInterface
+    {
+        use ExtendActivity;
+
+        /**
+         * Constructor
+         *
+         * The real implementation of this method is auto generated.
+         *
+         * IMPORTANT: If the derived class has own constructor it must call parent constructor.
+         */
+        public function __construct()
+        {
+        }
+    }
+
 
 .. code-block:: php
     :linenos:
@@ -1102,6 +1128,7 @@ extend the ``ExtendActivity`` class:
 
     use Doctrine\ORM\Mapping as ORM;
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+    use Acme\DemoBundle\Model\ExtendEmail;
 
     /**
      * @ORM\Entity
@@ -1117,8 +1144,8 @@ You then have to use the entity configuration
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/entity_config.yml
-    oro_entity_config:
+    # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
+    entity_config:
         activity:
             entity:
                 items:
