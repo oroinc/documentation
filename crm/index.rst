@@ -107,7 +107,7 @@ Developer Guides
 
    <div style="float: none;margin: 0 auto;width: 100%; height:100%;">
    <a class="reference external" href="./community"><h3><i class="fa fa-flag fa-2x" aria-hidden="true" style="color:#FFC221;"></i> Support and Contribution</h3></a>
-   <p>Join Oro community and contribute to the open-source OroCRM Community Edition. The OroCRM Community Guide provides information, best practices and conventions for contributing into the OroCommerce <a class="reference external" href="./community/contributing">source code</a>, <a class="reference external" href="./community/translations">translation</a>, and <a class="reference external" href="./community/contributing#improving-documentation">documentation</a></p>
+   <p>Join Oro community and contribute to the open-source OroCRM Community Edition.</p>
 
    </div>
 
