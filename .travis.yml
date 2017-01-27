@@ -3,6 +3,7 @@ language: python
 branches:
   only:
     - master
+    - /^\d+\.\d+$/
 
 python:
   - 2.6
