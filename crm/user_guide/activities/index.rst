@@ -18,7 +18,7 @@ calendar events, and more.
     activities_create_case
     activities_add_assign_calendar_events
     calendars_overview
-    activities_send_email
+    using_emails
     activities_log_call
     activities_create_contact_request
     activities_add_note

@@ -281,11 +281,8 @@ Here, you will see the code of your campaign.
 
 You can assign a tracking website record to your campaign in two steps.
 
-1. You can add the code from the `View Page of the
-   Campaign <https://www.orocrm.com/documentation/index/current/user-guide/marketing-campaigns/#user-guide-marketing-campaigns-view-page>`__
-   (see the screenshot above) to the tracking script from the \ `View
-   Page of the Website Tracking record <https://www.orocrm.com/documentation/index/current/user-guide/marketing-tracking-website-records#user-guide-marketing-tracking-websites-view-page>`__
-   (e.g. Magento Channel in our case) after **setUserId** call (e.g.  _paq.push(['setCampaignName', 'Demo\_ACC2']);). This code is added to the page of the website that you wish to track before the </body> tag. Each time a user reaches a page with such a code, an
+1. You can add the code from the :ref:`View Page of the Campaign <user-guide-marketing-campaigns-view-page>`.
+   (see the screenshot above) to the tracking script from the :ref:`View Page of the Website Tracking record <user-guide-marketing-tracking-websites-view-page>` (e.g. Magento Channel in our case) after **setUserId** call (e.g.  _paq.push(['setCampaignName', 'Demo\_ACC2']);). This code is added to the page of the website that you wish to track before the </body> tag. Each time a user reaches a page with such a code, an
    event is logged within the campaign.
 
    |
