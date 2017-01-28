@@ -159,7 +159,7 @@ WYSIWYG settings
 ^^^^^^^^^^^^^^^^
 
 In the  **WYSIWYG settings → Enable WYSIWYG Editor** field, define whether text formatting tools must be available for 
-:ref:`emails <user-guide-activities-emails>`, :ref:`notes <user-guide-add-note>` and 
+:ref:`emails <user-guide-email-admin>`, :ref:`notes <user-guide-add-note>` and 
 :ref:`comments <user-guide-activities-comments>`. 
 
 The value is enabled by default.
