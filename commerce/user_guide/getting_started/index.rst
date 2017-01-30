@@ -8,7 +8,7 @@ This section of the guide will provide an introduction to OroCommerce's user int
 .. contents:: :local:
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     intro_log_in
     intro_user_profile
