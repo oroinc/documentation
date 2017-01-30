@@ -45,6 +45,7 @@ To automatically generate a price list in Oro Commerce:
    For example, to include all products in categories 1 and 5, use the following expression:
 
    .. code-block:: rst
+      :linenos:
 
       product.category == 1 and product.category == 5
 
@@ -63,7 +64,8 @@ To automatically generate a price list in Oro Commerce:
    Another example, that filters products in stock with list price (also known as manufacturer’s suggested retail price - MSRP) that is higher than 100 USD per item:
    
    .. code-block:: rst
-   
+       :linenos:
+
       product.msrp.value > 100 and product.msrp.currency == ‘USD’ and 
       product.msrp.unit == ‘item’ and product.inventory_status == ‘in_stock’
    
@@ -90,16 +92,18 @@ To automatically generate a price list in Oro Commerce:
    The pricing behavior is configured in the Price Calculation Rule box, using the following expression:
    
    .. code-block:: rst
-   
-      Rule: (price formula), Condition: (product filtering expression)
+       :linenos:
+
+          Rule: (price formula), Condition: (product filtering expression)
    
    In this expression, the (price formula) may contain product (and/or it’s children) properties of the numeric type, numbers and arithmetic operations, and (product filtering expression) is a `Symfony2 expression <http://symfony.com/doc/current/components/expression_language/syntax.html>`_ that additionally filters the list of products that were generated in step two to limit the products this price shall apply to.
    
    For example, to set the price (per one item) for all products in category 1 to 99 USD, use the following expression:
    
    .. code-block:: rst
-   
-      Rule: 99, Condition: product.category == 1
+       :linenos:
+
+          Rule: 99, Condition: product.category == 1
    
    In our sample, this will set the following scene:
    
@@ -117,8 +121,9 @@ To automatically generate a price list in Oro Commerce:
    Alternatively, to set the price (for one item in US dollars) to be 5 US dollars more than the target margin (custom property of the product), use the following expression:  
    
    .. code-block:: rst
-   
-      product.msrp.value * product.category.margin + 5
+       :linenos:
+
+          product.msrp.value * product.category.margin + 5
    
    **Price list B**
    
@@ -159,12 +164,14 @@ Next, you entered the actual color for every product, and some of them indeed we
 Here is the product assignment rule that builds a price list of all yellow items in the catalog:
 
 .. code-block:: rst
+    :linenos:
 
    product.color == “yellow”
 
 and price rule that adds 10% to the list price. 
 
 .. code-block:: rst
+    :linenos:
 
    Rule: product.msrp.value * 1.1
 

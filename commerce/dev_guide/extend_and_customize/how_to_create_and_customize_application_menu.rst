@@ -105,6 +105,7 @@ Now we need to create a ``navigation.yml`` file with the following content:
 Then you have to reload navigation data and clear cache:
 
 .. code-block:: bash
+    :linenos:
 
     user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
     Load "Title Templates" from annotations and config files to db
@@ -157,6 +158,7 @@ To override some section in the main menu you have to create the ``navigation.ym
 And reload navigation data and clear cache:
 
 .. code-block:: bash
+    :linenos:
 
     user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
     Load "Title Templates" from annotations and config files to db

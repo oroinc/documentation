@@ -64,6 +64,7 @@ In OroCommerce, documentation is organized into the tree hierarchy of sections u
 Sample file structure:
 
 .. code-block:: none
+    :linenos:
 
     + user-guide:
         + img:
@@ -92,6 +93,7 @@ Use the following markup for the headings to split your topic into sections, sub
 Use an underline with =, -, ^, ~, " to mark up the sections.
 
 .. code-block:: none
+    :linenos:
 
     Section 1
     =========
@@ -125,6 +127,7 @@ Bulleted List
 To form a bullet list, start the line with \*, +, or \- followed by whitespace:
 
 .. code-block:: none
+    :linenos:
 
     * Item A
     * Item B
@@ -154,6 +157,7 @@ To form a numbered list, start the line with Arabic numerals (1,2,3), upper- or 
 Simple numbered list:
 
 .. code-block:: none
+    :linenos:
 
     1. Item A
     2. Item B
@@ -180,6 +184,7 @@ Auto Enumerated List
 ~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
+    :linenos:
 
     1. Item A
     #. Item B
@@ -272,6 +277,7 @@ Tables
 ~~~~~~
 
 .. code-block:: none
+    :linenos:
 
     +------------+------------+-----------+
     | Header 1   | Header 2   | Header 3  |
@@ -333,6 +339,7 @@ For example, when we create a new topic with additional information about price 
 **Before:**
 
 .. code-block:: none
+    :linenos:
 
     .. toctree::
        :maxdepth: 1
@@ -344,6 +351,7 @@ For example, when we create a new topic with additional information about price 
 **After:**
 
 .. code-block:: none
+    :linenos:
 
     .. toctree::
        :maxdepth: 1

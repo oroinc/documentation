@@ -16,6 +16,7 @@ Xdebug is a very useful debug tool for PHP, but at the same time it adds lots of
 operations. Xdebug status can be checked with ``php -m`` command:
 
 .. code-block:: bash
+    :linenos:
 
     # xdebug is enabled
     $ php -m | grep xdebug
@@ -36,6 +37,7 @@ or millions of entities the command line is your best choice. The OroPlatform pr
 that allows to import records from the specified CSV file.
 
 .. code-block:: bash
+    :linenos:
 
     $ php app/console oro:import:csv --help
     Usage:
@@ -51,6 +53,7 @@ that allows to import records from the specified CSV file.
 Here is a small example of its usage:
 
 .. code-block:: bash
+    :linenos:
 
     $ php app/console oro:import:csv ~/Contact_2000.csv
     Choose Processor:
@@ -104,6 +107,7 @@ Therefore, it is recommended to run import in prod environment so it would finis
 the ``--env=prod`` option to your import command:
 
 .. code-block:: bash
+    :linenos:
 
     $ php app/console oro:import:csv ~/Contact_2000.csv --env=prod
 
@@ -116,6 +120,7 @@ before saving imported entities (invalid entities will not be saved to the DB). 
 import can be performed without it. To do so, start the import command in no interaction mode with the ``--no-interaction`` option:
 
 .. code-block:: bash
+    :linenos:
 
     $ php app/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
     +---------------+-------+
@@ -144,6 +149,7 @@ With the OroPlatform you can disable some event listeners for the command execut
 command shows the list of all such listeners:
 
 .. code-block:: bash
+    :linenos:
 
     $ app/console oro:platform:optional-listeners
     List of optional doctrine listeners:
@@ -156,6 +162,7 @@ To disable these listeners the ``--disabled-listeners`` option can be used. Also
 it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
+    :linenos:
 
     $ app/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
 

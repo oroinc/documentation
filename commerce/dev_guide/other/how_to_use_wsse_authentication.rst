@@ -32,6 +32,7 @@ Header generation
 To generate an authentication header the console command ``oro:wsse:generate-header`` should be used.
 
 .. code-block:: bash
+    :linenos:
 
     user@host: php app/console oro:wsse:generate-header yourApiKey
     Authorization: WSSE profile="UsernameToken"
@@ -41,6 +42,7 @@ It has *apiKey* as the required argument and outputs generated headers.
 Here is an example of a request using curl:
 
 .. code-block:: bash
+    :linenos:
 
        curl -i -H "Accept: application/json" -H 'Authorization: WSSE profile="UsernameToken"' -H 'X-WSSE: UsernameToken Username="admin", PasswordDigest="buctlzbeVflrVCoEfTKB1mkltCI=", Nonce="ZmMzZDg4YzMzYzRmYjMxNQ==", Created="2014-03-22T15:24:49+00:00"' http://crmdev.lxc/app_dev.php/api/rest/latest/users
        HTTP/1.1 200 OK

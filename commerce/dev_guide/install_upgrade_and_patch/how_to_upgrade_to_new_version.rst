@@ -12,6 +12,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 **1**. ``cd`` to the crm root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
+    :linenos:
 
     $ cd /path/to/application
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
@@ -19,6 +20,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 **2**. Stop the cron tasks.
 
 .. code-block:: bash
+    :linenos:
 
     $ crontab -e -uwww-data
 
@@ -30,6 +32,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 Comment this line.
 
 .. code-block:: text
+    :linenos:
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
@@ -48,6 +51,7 @@ Comment this line.
         - your changes to configuration files in "app/config/" folder are merged to the new files.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -uwww-data git pull
     $ sudo -uwww-data git checkout <VERSION TO UPGRADE>
@@ -55,6 +59,7 @@ Comment this line.
 **6**. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo php composer.phar install --prefer-dist --no-dev
     $ sudo chown www-data:www-data -R ./*
@@ -62,24 +67,28 @@ Comment this line.
 **7**. Remove old caches.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo rm -rf app/cache/*
 
 **8**. Upgrade the platform.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
 **9**. Remove the caches.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -u www-data app/console cache:clear --env prod
 
 or, as alternative:
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
@@ -87,24 +96,28 @@ or, as alternative:
 **10**. Run the consumer(s).
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -u www-data app/console oro:message-queue:consume --env prod
 
 **11**. Enable cron.
 
 .. code-block:: bash
+    :linenos:
 
     $ crontab -e -uwww-data
 
 Uncomment this line.
 
 .. code-block:: text
+    :linenos:
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 **12**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
@@ -122,6 +135,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 **1**. ``cd`` to the crm root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
+    :linenos:
 
     $ cd /path/to/application
     $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
@@ -129,6 +143,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 **2** Stop the cron tasks.
 
 .. code-block:: bash
+    :linenos:
 
     $ crontab -e -uwww-data
 
@@ -140,6 +155,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 Comment this line.
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
@@ -167,24 +183,28 @@ Comment this line.
 **6**. Remove old caches.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo rm -rf app/cache/*
 
 **7**. Upgrade the platform.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
 **8**. Remove the caches.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -u www-data app/console cache:clear --env prod
 
 or, as alternative:
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
@@ -193,24 +213,28 @@ or, as alternative:
 **9**. Run the consumer(s).
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -u www-data app/console oro:message-queue:consume --env prod
 
 **10**. Enable cron.
 
 .. code-block:: bash
+    :linenos:
 
     $ crontab -e -uwww-data
 
 Uncomment this line.
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
 **11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
+    :linenos:
 
     $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
 
