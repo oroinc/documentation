@@ -66,8 +66,8 @@ To automatically generate a price list in Oro Commerce:
    .. code-block:: rst
        :linenos:
 
-      product.msrp.value > 100 and product.msrp.currency == ‘USD’ and 
-      product.msrp.unit == ‘item’ and product.inventory_status == ‘in_stock’
+       product.msrp.value > 100 and product.msrp.currency == ‘USD’ and
+       product.msrp.unit == ‘item’ and product.inventory_status == ‘in_stock’
    
    This will result in the following product list:
    
@@ -166,14 +166,14 @@ Here is the product assignment rule that builds a price list of all yellow items
 .. code-block:: rst
     :linenos:
 
-   product.color == “yellow”
+    product.color == “yellow”
 
 and price rule that adds 10% to the list price. 
 
 .. code-block:: rst
     :linenos:
 
-   Rule: product.msrp.value * 1.1
+    Rule: product.msrp.value * 1.1
 
 
 Filtering expression syntax
