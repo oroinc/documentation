@@ -7,3 +7,5 @@ This section contains information on optional OroCommerce post-install configura
    :maxdepth: 1
 
    localization/index
+
+   ../glossary

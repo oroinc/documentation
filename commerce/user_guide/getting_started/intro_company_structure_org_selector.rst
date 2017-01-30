@@ -150,7 +150,7 @@ dots to the left are the organization selector.
 
 |
 
-.. image:: /user_guide/img/system/user_management/Organization/multi_org/multi_org_select.png
+.. image:: /user_guide/img/system/user_management/organization/multi_org/multi_org_select.png
 
 |
 
@@ -159,7 +159,7 @@ bold. If a System organization exists, it will be shown at the top of the list a
 
 |
 
-.. image:: /user_guide/img/system/user_management/Organization/multi_org/multi_org_choice.png
+.. image:: /user_guide/img/system/user_management/organization/multi_org/multi_org_choice.png
 
 |
 
@@ -179,7 +179,7 @@ When creating a record in a system organization, the user should select an organ
 
 |
 
-.. image:: /user_guide/img/system/user_management/Organization/multi_org/multi_org_system1.png
+.. image:: /user_guide/img/system/user_management/organization/multi_org/multi_org_system1.png
 
 |
 

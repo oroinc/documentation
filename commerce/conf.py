@@ -29,7 +29,14 @@ from pygments.lexers.web import PhpLexer
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
+# https://github.com/nyergler/hieroglyph
+#https://pypi.python.org/pypi/sphinxcontrib-images
 extensions = ['sphinxcontrib.phpdomain', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode']
+
+spelling_lang='en_US'
+spelling_word_list_filename='spelling_wordlist.txt'
+spelling_show_suggestions=True
+
 
 # set url for API links
 api_url = 'http://phpdoc.orocrm.com/platform/%s'
@@ -49,8 +56,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'The Oro Platform'
-copyright = u'2014, The Oro Team'
+project = u'OroCommerce'
+copyright = u'2016, Oro Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -73,7 +80,7 @@ release = '1.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = ['_build', 'completeReference/overview']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -111,12 +118,14 @@ primary_domain = 'php'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+'fixed_sidebar': False,
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -151,8 +160,10 @@ html_theme = 'default'
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
-
+html_sidebars = {
+   '**': ['globaltoc.html', 'sourcelink.html', 'relations.html', 'searchbox.html'],
+   'using/windows': ['windowssidebar.html', 'relations.html', 'searchbox.html'],
+}
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
 #html_additional_pages = {}
@@ -184,7 +195,7 @@ html_theme = 'default'
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'TheOroPlatformdoc'
+htmlhelp_basename = 'TheOroCommercedoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -203,8 +214,8 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'TheOroPlatform.tex', u'The Oro Platform Documentation',
-   u'The Oro Team', 'manual'),
+  ('index', 'TheOroCommerce.tex', u'The OroCommerce Documentation',
+   u'Oro Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -233,8 +244,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'theoroplatform', u'The Oro Platform Documentation',
-     [u'The Oro Team'], 1)
+    ('index', 'theorocommerce', u'The Orocommerce Documentation',
+     [u'Oro Team'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -247,8 +258,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'TheOroPlatform', u'The Oro Platform Documentation',
-   u'The Oro Team', 'TheOroPlatform', 'One line description of project.',
+  ('index', 'TheOroCommerce', u'The OroCommerce Documentation',
+   u'Oro Team', 'TheOroCommerce', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -265,10 +276,10 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'The Oro Platform'
-epub_author = u'The Oro Team'
-epub_publisher = u'The Oro Team'
-epub_copyright = u'2014, The Oro Team'
+epub_title = u'The OroCommerce'
+epub_author = u'OroTeam'
+epub_publisher = u'OroTeam'
+epub_copyright = u'2016, OroTeam'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.

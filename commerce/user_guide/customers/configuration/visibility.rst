@@ -12,7 +12,7 @@ To change the default product and category visibility settings:
 
    The following page opens.
 
-   .. image:: /user_guide/img/system/configuration/customer/Visibility/Visibility.png
+   .. image:: /user_guide/img/system/configuration/customer/visibility/Visibility.png
       :class: with-border
 
 3. To customize any of the options:

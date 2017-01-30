@@ -244,7 +244,7 @@ In all other cases, usage of the @SuppressWarnings MUST NOT be used.
 
 **php-cs-fixer usage**
 
-In order to reduce development time and automate part of the code preparation related to the code style fixes, it is suggested to use `PHP Coding Standard Fixer <http://cs.sensiolabs.org/>`_ (or on the `GitHub <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`_) - automated tool that fixes most code style issues in the code.
+In order to reduce development time and automate part of the code preparation related to the code style fixes, it is suggested to use `PHP Coding Standard Fixer <http://cs.sensiolabs.org/>`_ (or in the `GitHub repository <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`_) - automated tool that fixes most code style issues in the code.
 
 JavaScript Code Style
 ^^^^^^^^^^^^^^^^^^^^^

@@ -178,7 +178,7 @@ operations and requests that are not required for some specific cases.
 To solve this issue, a developer can implement a custom strategy to perform required actions only.
 The following example shows services that should be created to add a new import strategy:
 
-.. code-block:: yaml
+.. code-block:: none
     :linenos:
 
     # Custom strategy
