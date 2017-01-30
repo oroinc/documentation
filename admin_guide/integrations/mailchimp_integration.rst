@@ -59,7 +59,7 @@ The only thing you will need on the MailChimp part is your API Key value:
 On the OroCRM Side
 ------------------
 
-Install the *"OroCRM MailChimp Integration"* extension (oro/crm-dotmailer)
+Install the *"OroCRM MailChimp Integration"* extension (oro/crm-mail-chimp)
 
 .. image:: ../img/mailchimp/extension.png
 
