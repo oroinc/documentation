@@ -8,6 +8,6 @@ branches:
 python:
   - 2.7
 
-pip install --upgrade -q -r requirements.txt
+install: pip install --upgrade -q -r requirements.txt
 
 script: sphinx-build -nW -b html -d _build/doctrees . _build/html
