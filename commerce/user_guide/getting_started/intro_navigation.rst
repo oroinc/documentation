@@ -3,9 +3,9 @@
 Navigation Basics
 =================
 
- OroCRM provides a broad set of navigation tools that allow you to easily access necessary information and tools. The 
- system helps to ensure that frequent actions can be performed with minimal effort by keeping required information at 
- hand. This means no important updates are missed.
+.. contents:: :local:
+
+OroCRM provides a broad set of navigation tools that allow you to easily access necessary information and tools. The system helps to ensure that frequent actions can be performed with minimal effort by keeping required information at hand. This means no important updates are missed.
 
 This section provides an overview of the navigation elements in OroCRM.
 
@@ -19,31 +19,20 @@ The menu bar is the main mode of accessing data in OroCRM, and is always display
 organization configuration, it may be displayed horizontally or vertically. In the latter case, the menu items will be 
 displayed as icons.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/menu/nav_bar_top.png
-
-|
 
 .. image:: /user_guide/img/getting_started/navigation/menu/nav_bar_side.png
 
-|
-
 In the mobile version, the menu bar can be accessed via the "hamburger" button next to the organization name:
-
-|
     
 .. image:: /user_guide/img/getting_started/navigation/menu/header_mobile.png
-
-|
 
 The list of menu items that are available to you depends on your access and permission settings, as defined in your 
 organization.
 
 Hover the cursor over a menu item to expand the drop-down menu with see the second-level items. Click on them to access 
 any corresponding pages or grids.
-  
-  
+
 .. _user-guide-navigation-panel:
 
 Navigation Tools
@@ -51,10 +40,7 @@ Navigation Tools
 
 At the very top of the page, there is a navigation panel that contains different navigation tools, as shown below.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/panel.png
-
 
 .. csv-table::
   :header: "#","Item","Description","Related Document"
@@ -101,5 +87,8 @@ If your decision is required, and OroCRM cannot proceed without it, a dialog win
 until you click a button. They usually pop up in order to warn you about something very important or irreversible, such 
 as deleting records.
 
-To see examples of flash messages and dialog windows, please read the 
+To see examples of flash messages and dialog windows, please read the
 :ref:`Flash Notifications and Dialog Windows <user-guide-intro-popups>` guide.
+
+.. include:: section_toc.rst
+   :start-after: begin

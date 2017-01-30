@@ -9,11 +9,7 @@ menu.
 
 Shortcuts are accessible via the icon in the navigation panel.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/panel/shortcut_full.png
-
-|
 
 From here, you can:
 
@@ -26,12 +22,8 @@ From here, you can:
 - Start typing the name of a related entity or an action to choose from a list of matching items:
 
   |shortcut|
-  
-|
 
 - To see all the available shortcut actions, click *"See the full list"* link.
-
-|
 
   |shortcut_all|
 
@@ -39,11 +31,11 @@ From here, you can:
 All the :ref:`menu and sub-menu items <user-guide-navigation-menu>` and 
 Create forms are available.
 
-
-
-
 .. |IcSearch| image:: /user_guide/img/common/buttons/IcSearch.png
 
 .. |shortcut| image:: /user_guide/img/getting_started/navigation/panel/shortcut.png
 
 .. |shortcut_all| image:: /user_guide/img/getting_started/navigation/panel/shortcut_all.png
+
+.. include:: section_toc.rst
+    :start-after: begin

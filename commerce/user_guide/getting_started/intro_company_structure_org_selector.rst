@@ -3,6 +3,8 @@
 Company Structure and Organization Selector
 ===========================================
 
+.. contents:: :local:
+
 Understanding the Company Structure
 -----------------------------------
 
@@ -13,7 +15,6 @@ etc. Even small companies organize their workforce into teams.
 For example, a telecommunication service provider might have several subsidiaries, e.g. in each of the states. The 
 Californian subsidiary may have two offices - Western and Eastern. In each of the offices there are unites working at 
 different directions:
-
 
 * CaliforniaTelecom
 
@@ -148,23 +149,14 @@ The name of an organization you are currently working with is displayed in the t
 have access to multiple organizations, upon your first login you will see a note with your current organization. Three 
 dots to the left are the organization selector.
 
-|
-
 .. image:: /user_guide/img/system/user_management/organization/multi_org/multi_org_select.png
-
-|
 
 Click the selector, to see a list of organizations you have access to. Your current organization will be displayed in 
 bold. If a System organization exists, it will be shown at the top of the list and shifted left.
 
-|
-
 .. image:: /user_guide/img/system/user_management/organization/multi_org/multi_org_choice.png
 
-|
-
 To switch to another organization, click its name in the list.
-
 
 Work with a System Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -177,11 +169,7 @@ field will be shown for each record viewed. The organization field is not editab
 
 When creating a record in a system organization, the user should select an organization to which the record will belong.
 
-|
-
 .. image:: /user_guide/img/system/user_management/organization/multi_org/multi_org_system1.png
-
-|
 
 .. note::
 
@@ -195,4 +183,6 @@ Conclusion
 
 Organizations and business units to which users belong will define the data available to them, and will mirror the 
 company structure and related rules from the physical world to the software application.
-    
+
+.. include:: section_toc.rst
+    :start-after: begin

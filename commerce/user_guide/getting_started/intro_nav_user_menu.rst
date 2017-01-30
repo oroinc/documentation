@@ -3,9 +3,10 @@
 User Menu 
 =========
 
+.. contents:: :local:
+
 On the right side of the screen, under your username, you will find the User Menu drop-down. It provides a fast way to 
 access your user profile, calendar, mailbox, and task list. It is also used to log out of the system.
-
 
 .. image:: /user_guide/img/getting_started/intro/user_menu.png
 
@@ -33,7 +34,6 @@ Use the action buttons to process your emails in the grid.
 
 Click the :guilabel:`Compose` button to create a new email.
 
-
 My Tasks
 --------    
   
@@ -49,5 +49,5 @@ Logout
 
 Click the menu item to logout from the system.
 
-
-
+.. include:: section_toc.rst
+    :start-after: begin

@@ -1,6 +1,8 @@
 View and Set up Your User Profile
 =================================
 
+.. contents:: :local:
+
 .. _user-guide-getting-started-my-user:
 
 Access Your User Page
@@ -19,11 +21,7 @@ This page provides you the full details of your user profile.
 
 Its **General** section contains the basic profile details.
 
-|
-
 .. image:: /user_guide/img/getting_started/my_profile.png
-
-|
 
 The set of information available in the section depends on the permissions defined for your user. The information may include:
 
@@ -48,11 +46,7 @@ If there is an email saved or/and a call logged in OroCommerce related to you, t
 
 If there is a task assigned to you, they will be displayed in corresponding grids of the **Additional** section.
 
-|
-
-.. image:: /user_guide/img/getting_started/intro/user_view_additional.png 
-
-|
+.. image:: /user_guide/img/getting_started/intro/user_view_additional.png
 
 Actions Available From the My User Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,11 +56,7 @@ Use Action Buttons
 
 Action buttons are available in the top left corner of **My User** page. The set of buttons depends on your organization settings and user permissions. These are the same actions that you can perform in the system with regard to other users. Most of the actions is described in the `Productivity Tools section <../commonActions>`.
 
-|
-
 .. image:: /user_guide/img/getting_started/intro/user_view_actions.png 
-
-|
 
 .. _user-guide-getting-started-my-user-tags:
 
@@ -77,43 +67,27 @@ If you a permitted, you can add and edit tags for your user. The tags can be use
 
 - Hover the mouse over the **Tags** field in the **General** section of the **My User** page as shown below.
 
-  |
-
   |IntroTags|
 
-  |
-  
 - Click the |IcEdit| icon, and the tag field will appear.
 
-  |
-  
   |IntroTags1|
 
-  |
-  
 - Start entering a tag and if an existing tag is found, it will be displayed for selection. If not, a new tag will be 
   created.  
 
 - If you have entered a new tag, it will appear in the selector with a **(New tag)** label. Select this to add to your 
   user as well as the list of available tags for future use. This way you can add one or more tags that contain one or 
   several words.
-  
-  |
-  
+
   |IntroTags2|
 
-  |
-  
 Generate an API Key
 """""""""""""""""""
 
 Should an integration with a third-party software require an `API Key <https://en.wikipedia.org/wiki/Application_programming_interface_key>`_, it can be generated  on the *My User* page:
 
-|
-
 .. image:: /user_guide/img/getting_started/intro/user_view_apik.png
-
-|
 
 - Click the :guilabel:`Generate Key` button next to the API Key label.
 
@@ -123,17 +97,12 @@ Should an integration with a third-party software require an `API Key <https://e
 
     Only one API key may exist for the user at the same time. If you choose to generate another API key over the existing one, the old key is discarded and cannot be used to access OroCommerce.
 
-
 Get to the Edit Page of Your User Profile
 """""""""""""""""""""""""""""""""""""""""
 
 Click the :guilabel:`Edit` button in the top left corner of the page to change and add the profile details, as described in the section below.
 
-|
-
 .. image:: /user_guide/img/getting_started/intro/user_edit.png
-    
-|
     
 .. _user-guide-getting-started-profile:
     
@@ -146,11 +115,7 @@ credentials, change your password, and synchronize OroCommerce with an existing 
 Manage Your User Details
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-|
-
 .. image:: /user_guide/img/getting_started/intro/user_edit_general.png
-
-|
 
 At the top of the **General** section, you can view, define and change the basic details such as:
 
@@ -168,12 +133,8 @@ At the top of the **General** section, you can view, define and change the basic
   OroCommerce administrator for details. The image will be displayed along with your name in the selectors and will help 
   other users to recognize you quickly.
 
-  |
-  
   |EditAvatar|
 
-  |
-  
 Any custom details permitted for editing will be available in the **Additional** section. In the example above, this is 
 the **Title** field.
 
@@ -185,13 +146,9 @@ the **Title** field.
 Manage Your Contact Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
  
-You can define and update the contact information in  the **General** section. 
+You can define and update the contact information in  the **General** section.
 
-|
-
-.. image:: /user_guide/img/getting_started/intro/user_edit_contacts.png 
-
-|
+.. image:: /user_guide/img/getting_started/intro/user_edit_contacts.png
   
 - **Your email addresses**: You are required to provide a primary email address. This email address must be unique for 
   each user in the system. You can also add additional email addresses via :guilabel:`Add Another Email` button. 
@@ -200,12 +157,8 @@ You can define and update the contact information in  the **General** section.
 
  - The primary email address is used as a default value and additional addresses are available in the selector for the 
    **from** field.
-
-   |
    
    |EmailFrom|
-
-   |
 
 .. note::
 
@@ -216,36 +169,23 @@ You can define and update the contact information in  the **General** section.
  - You will see the letters sent by other OroCommerce users to your primary and additional email addresses in the 
    "Activities" section on your User page.
    
-   |
-   
    |EmailTo|
-   
-   |
    
 - **Phone number**: is displayed to other users among your contact details.
 
-  |
-  
   |Phone|
-  
-  |
   
 - **Email signature**: The signature may be added to any email you write in OroCommerce. Your organization settings define 
   whether the signature will be added automatically or manually. 
-
 
 .. _user-guide-getting-started-profile-password:
 
 Change Your Password
 ^^^^^^^^^^^^^^^^^^^^
 
-To change your password, go to the **Password** section of the Edit page. 
-
-|
+To change your password, go to the **Password** section of the Edit page.
 
 .. image:: /user_guide/img/getting_started/intro/user_edit_password.png
-
-|
 
 You have to:
 
@@ -255,12 +195,10 @@ You have to:
 
 - Confirm the new password
 
-
 .. note::
 
     If you are not using your Google account, nor your corporate-wide credentials, it is strongly recommended to change 
     your password after the first log-in.
-
 
 .. _user-guide-intro-log-in-edit-profile-synchronize:
 
@@ -271,11 +209,7 @@ Emails can be sent from user to user within OroCommerce and outside OroCommerce 
 OroCommerce users already have some external mailbox used for work-related purposes. You can synchronize this mailbox with 
 your mailbox in OroCommerce in the **Email synchronization settings** section.
 
-|
-
 .. image:: /user_guide/img/getting_started/intro/email_sync_1.png
-
-|
 
 To synchronize your existing mailbox with your mailbox in OroCommerce, go the the **Email synchronization settings** section.
 
@@ -302,11 +236,7 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
 - Select the Account Type - **Other** (if available). If this is an only option enabled for the system, the selector 
   won’t be displayed - skip the step.
   
-  |
-  
   |EmailSync2|
-
-  |
   
 * In order to **receive emails** from the external mailbox in OroCommerce:
 
@@ -338,11 +268,7 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
 
   - Save the user profile.
   
-|
-  
 |EmailSyncYahoo|
-  
-|  
 
 Syncing with Gmail
 """"""""""""""""""
@@ -356,12 +282,8 @@ This section applies to both @gmail.com customers and Google Apps customers.(Che
 doubt).
 
 - Select the Account Type - **Gmail** and click the :guilabel:`Connect` button that appears below.
-
-  |
   
   |EmailSync3|
-  
-  |
   
 .. note::
 
@@ -370,32 +292,20 @@ doubt).
 
  - If you haven’t used a Google account in your browser (or if its cache has been cleared), the Sign-in form will appear. 
    Use it to log in to your account.
-
-   |
   
    |EmailSyncGM1|
 
-   |
-
  - If you are using several Gmail accounts in your browser, you will see a list of them. Select the account for which 
    you want to enable synchronization with OroCommerce, then log in (if necessary).
-   
-   |
-   
+
    |EmailSyncGM2|
-   
-   |
    
  - As soon as you are logged into a single Gmail account, you need to let OroCommerce view and manage your mail, and give it 
    offline access to your mailbox.
    
-   |
-   
    |EmailSyncGM3|
    
    |EmailSyncGM4|
-
-   |
    
 .. hint::
 
@@ -405,11 +315,7 @@ doubt).
 - After the connection has been established, you will see the connected account name (your email address) and the list of 
   folders that can be refreshed with the :guilabel:`Retrieve Folders` button.
 
-  |
-  
   |EmailSyncGM5|
-  
-  |
   
 Select the folders you want to synchronize and save your user profile. The synchronization will start immediately, but 
 the full sync can take a while depending on the size of your mailbox.
@@ -442,12 +348,7 @@ Logout
 
 Go to the User Menu in the top right corner of the page, and select the **Logout** item.
 
-|
-
 .. image:: /user_guide/img/getting_started/intro/user_logout.png
-
-
-
 
 
 .. |IcEdit| image:: /user_guide/img/common/buttons/IcEdit.png
@@ -483,6 +384,5 @@ Go to the User Menu in the top right corner of the page, and select the **Logout
 
 .. |EmailSyncGM5| image:: /user_guide/img/getting_started/intro/email_sync_gm_5.png  
 
-
-
-
+.. include:: section_toc.rst
+   :start-after: begin

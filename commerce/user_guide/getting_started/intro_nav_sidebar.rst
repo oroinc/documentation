@@ -3,6 +3,8 @@
 Sidebar Panel
 =============
 
+.. contents:: :local:
+
 The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
 information, such as recent emails or the task list. 
 
@@ -10,17 +12,12 @@ By default, the sidebar panel is located on the right side of the page. However,
 of your organization, there can be a sidebar on the left, two sidebars (on the left and on the right), or no sidebar at 
 all. The location of the sidebar is defined by the system administrator for the whole organization.
 
-
 What Can Be on the Sidebar 
 --------------------------
 
 Out of the box, any sidebar can contain widgets of three types:
 
-
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_icons.png
-
 
 1 - The *"Recent Emails"* widget: Set up the widget to get access to your emails in one or several of the 
   synchronized mailboxes, or to all the emails in your OroCRM mailbox.
@@ -31,18 +28,12 @@ Out of the box, any sidebar can contain widgets of three types:
 
 To add a new widget, use the :guilabel:`+` button, as described in the section below.
 
-
 Add a Widget to the Sidebar
 ---------------------------
 
-Click the :guilabel:`+` button to add a widget, then select the widget type an click the :guilabel:`OK` button. 
-
-|
+Click the :guilabel:`+` button to add a widget, then select the widget type an click the :guilabel:`OK` button.
 
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_select.png
-
-|
-
 
 The newly added widget will appear on the sidebar, below the existing widgets. To reorder widgets on the sidebar, drag 
 and drop them with your mouse. 
@@ -50,36 +41,20 @@ and drop them with your mouse.
 You can add more than one widget of any type if necessary. For example, you can stick any amount of notes or follow 
 several different email folders or mailboxes that are synchronized to your account in OroCRM.
 
-
 Expand/Collapse the Sidebar
 ---------------------------
 
 Initially, the sidebar panel is minimized. Hover over the icon to see the widget header.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_hover.png
 
-|
-
- In order to expand the sidebar panel, click the double-arrow at its bottom.
-
-|
+In order to expand the sidebar panel, click the double-arrow at its bottom.
 
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_expand.png
 
-|
-
-
 Now you can see the widget headers. To collapse the panel back, click the double-arrow again.
 
-
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_fold.png
-
-|
-
 
 Expand/Collapse a Widget
 ------------------------
@@ -89,12 +64,8 @@ In order to see the widget content:
 - Click the icon on a minimized bar.
 
 - Click the triangular arrow next to the header on the expanded bar.
-    
-|
 
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_expand_view.png
-
-| 
 
 To fold the widget, click the triangular arrow again.
 
@@ -103,24 +74,14 @@ states.
 
 This way, you can keep some of the content visible at all times, and keep fewer used widgets minimized.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_expand_view_1.png
-
-| 
 
 Manage the Widgets
 ------------------  
 
 As shown below, each widget contains a header (1), content (2), and icons (3).
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_view.png
-
-|
-
-
 
 You can:
 
@@ -132,13 +93,11 @@ You can:
 
 - Close the widget with |BCrLOwnerClear|  (appears only when the panel is minimized).
 
-
 .. hint::
 
     You can add several widgets of the same type and define different settings for them. For example, you can keep notes 
     with different content, or email widgets for different folders.
 
-    
 Default OroCRM Widgets
 ----------------------
 
@@ -148,13 +107,8 @@ The "Recent Emails" Widget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
-
-|
  
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_emails.png
-
-|
-
 
 From the widget, you can:
 
@@ -173,18 +127,12 @@ From the widget, you can:
 - Get to the view page of the user from whose mailbox the emails have been sent (if available): Click the user name 
   below the letter (e.g., 6).
 
-  
 Configure the "Recent Emails" Widget 
 """"""""""""""""""""""""""""""""""""
 
 Click the |IcSettings| icon to configure the widget. The settings window will emerge:
 
-
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_emails_set.png
-
-|
 
 - The widget can be configured to display all the emails from your OroCRM mailbox or from any specific folder or 
   mailbox that has been synchronized (1).
@@ -197,8 +145,7 @@ Click the |IcSettings| icon to configure the widget. The settings window will em
 
     To make sure you don’t miss some particularly important emails, configure your mailbox to sort them in a specific 
     folder, then configure the widget to display this folder and place it at the top of your sidebar panel.
-  
-  
+
 Sticky Note
 ^^^^^^^^^^^
 
@@ -206,16 +153,10 @@ Sticky notes are a great way to keep reminders and memos. You can keep them orga
 
 Click the |IcSettings| to change the content of a note.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_note.png
-
-|
 
 You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and 
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
-
-
 
 Task List
 ^^^^^^^^^
@@ -223,21 +164,15 @@ Task List
 To see the newest tasks you have been assigned, use the Task List widget. The widget displays the task name and due 
 date.
 
-|
-
 .. image:: /user_guide/img/getting_started/navigation/sidebar/sb_task.png
 
-|
-
 You can change the number of tasks that are displayed at the same time in the settings.
-
 
 Conclusion
 ----------
 
 Set up the sidebar widgets in the way that is most convenient for you. This will help you maximize your performance with 
 a minimum amount of effort.
-
 
 .. |IcDelete| image:: /user_guide/img/common/buttons/IcDelete.png
    :align: middle
@@ -250,3 +185,6 @@ a minimum amount of effort.
    
 .. |BCrLOwnerClear| image:: /user_guide/img/common/buttons/BCrLOwnerClear.png
    :align: middle
+
+.. include:: section_toc.rst
+   :start-after: begin
