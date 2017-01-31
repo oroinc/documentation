@@ -131,26 +131,21 @@ An example of correct DocBlock usage:
 @deprecated usage
 ~~~~~~~~~~~~~~~~~
 
-Community code contributions must not contain code marked as @deprecated.
+Please do not modify the existing @deprecated attributes, and do not use the code marked as @deprecated.
 
 @todo usage
 ~~~~~~~~~~~
 
-@todo is used for changes that are planned for the future by Oro developers. Cmmunity code contributions must not contain code marked as @todo.
+@todo is used for changes that are planned for the future by Oro developers. Please, do not modify the existing @todo attributes and do no use code marked as @todo. 
 
 PHP code style continuous control
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PHP code style is controlled by the  `PHP CodeSniffer tool <https://github.com/squizlabs/PHP_CodeSniffer>`_ installed on the continuous integration server according to the rules defined `in the ruleset.xml file <https://github.com/orocrm/webinar-application/blob/master/ruleset.xml>`_.
 
-It is highly recommended for the developers to configure appropriate code style inspections in the IDE or run these inspections manually before merge changes to the master branch to prevent failing of the build that checks code standards.
+Please, configure appropriate code style inspections in the IDE or run these inspections manually before merging changes to the master branch to prevent application build from failing. 
 
  .. note:: Information on how to enable PHP CodeSniffer inspection with the custom set of rules in the PHPStorm can be found `in PHPStorm documentation <https://www.jetbrains.com/help/phpstorm/2016.3/using-php-code-sniffer-tool.html>`_.
-
-PHP mess detector
-~~~~~~~~~~~~~~~~~
-
-To automatically control code, the quality detector is used, in addition to code style detector tool. `PHP Mess Detector (PHPMD) <http://phpmd.org/>`_, is a tool which can check PHP source code for potential problems. It can detect possible bugs, sub-optimal code, unused parameters, and helps to follow `SOLID <https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29>`_ principles. In addition to these, PHPMD contains several rules that check for code complexity and can tell if the code could be refactored to improve future maintenance efforts.
 
 Cyclomatic complexity
 ~~~~~~~~~~~~~~~~~~~~~
@@ -186,7 +181,7 @@ In all other cases, usage of the @SuppressWarnings MUST NOT be used.
 php-cs-fixer usage
 ~~~~~~~~~~~~~~~~~~
 
-In order to reduce development time and automate part of the code preparation related to the code style fixes, it is suggested to use `PHP Coding Standard Fixer <http://cs.sensiolabs.org/>`_ (or on the `GitHub <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`_). It is an automated tool that fixes most code style issues in the code.
+It is recommended to use `PHP Coding Standard Fixer <http://cs.sensiolabs.org/>`_ (or on the `GitHub <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`_) to keep code free from the style issues.
 
 JavaScript Code Style
 ^^^^^^^^^^^^^^^^^^^^^
