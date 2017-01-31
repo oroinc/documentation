@@ -6,7 +6,7 @@ Contributing to OroPlatform and OroCRM
 .. contents:: :local:
     :depth: 3
 
-We'd love for you to contribute to our source code and documentation to make our products even better than they are today! The following guidelines and recommendations help synchronize the community actions and provide a blueprint for seamless and non-intrusive collaboration.
+We would love for you to contribute to our source code and documentation to make our products even better than they are today! The following guidelines and recommendations help synchronize the community actions and provide a blueprint for seamless and non-intrusive collaboration.
 
 
 Submitting a Question
@@ -43,6 +43,7 @@ Providing the following information will increase the chances of your issue bein
 * Clear summary of an issue in its title.
 * Unambiguous set of steps describing how to reproduce the issue.
 * Details about your environment:
+
     * Version of the product (is it master? the latest stable version?)
     * Extensions you have installed and customizations if you made any
     * Server operating system (Windows, Ubuntu, CentOS, RHEL, Fedora, other Linux) version and bitness (32-bit, 64-bit)
@@ -54,7 +55,8 @@ Providing the following information will increase the chances of your issue bein
 * A screenshot or multiple screenshots of the user interface
 * Relevant excerpts from the web-server and application log files.
 
-Here is an example of a well defined issue: 
+Example of a well defined issue
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Title*: "Inconsistent display of address fields when adding address to the Contact".
 
