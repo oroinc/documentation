@@ -293,6 +293,8 @@ as the ``query`` parameter. It takes the following form:
 
   * ``!~``: does not contain (this operator can only be used on string types)
 
+  * ``like``: like (this operator can only be used on string types)
+
   * ``=``: equals (this operator cannot be used on string types)
 
   * ``!=``: not equals (this operator cannot be used on string types)
