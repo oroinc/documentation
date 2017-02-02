@@ -26,7 +26,7 @@ Join the Translation Team
 
    #) Sign in using your github account or social media account (facebook, google+, twitter). Alternatively, create a new Crowdin account: enter your email, user name, password and password confirmation, and click **Create account**. Follow the link in the confirmation Email to activate you account.
 
-#. Open `OroCommerce project <https://crowdin.com/project/orocommerce>`_. **Note:** To offer translations for OroCRM and OroPlatform, please use their dedicated translation projects: `OroCRM project <https://translate.orocrm.com>`_ and `OroPlatrom project <http://translate.platform.orocrm.com>`_.
+#. Open `OroCommerce project <https://crowdin.com/project/orocommerce>`_. **Note:** To offer translations for OroCRM and OroPlatform, please use their dedicated translation projects: `OroCRM project <https://translate.orocrm.com>`_ and `OroPlatform project <http://translate.platform.orocrm.com>`_.
 
 #. Select the target language for OroCommerce translation and click :guilabel:`Join` next to the following message: “You must join the translators team to be able to participate in this project”.
 

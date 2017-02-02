@@ -58,7 +58,7 @@ To map an entry point for the web catalog content tree:
 
 #) In the *SEO* section, fill in the meta description and meta keywords to help search engines show your web content to the relevant audience. similar to the title, you can translate the meta information.
 
-#) In the *Restriction section*, define the visibility of the web catalog. 
+#) In the *Restriction section*, define the visibility of the web catalog.
 
    By default, the web catalog is displayed for any localization, on any website, and for any customer.
 
@@ -92,13 +92,13 @@ To set up the mapping of the content to the web catalog content tree:
 
 #) In the *SEO* section, fill in the meta description and meta keywords to help search engines show your web content to the relevant audience. similar to the title, you can translate the meta information.
 
-#) In the *Restriction section*, define the visibility of the web catalog. 
+#) In the *Restriction section*, define the visibility of the web catalog.
 
    By default, the web catalog node inherits the settings from the root node or its parent node. However, you can adjust it to be displayed for particular localization, on a specific website, and/or for the selected customer(s).
 
    To modify the inherited default settings, clear the **Inherit Parent** box, and specify the restrictions by selecting all or some of the following: target localization, website, and customer or customer group.
 
-#) In the *Content Variants* section, add the default content item that shows on OroCommerce Front Store when no restriction conditions are met:
+#) In the *Content Variants* section, add the default content item that shows on OroCommerce store frontend when no restriction conditions are met:
 
      #. Select a type of content note from the list on the right.
 
@@ -178,7 +178,7 @@ To add a category node to the menu on the OroCommerce Store Front:
 Landing Page
 """"""""""""
 
-Landing Page node is a link to the `custom content page <./marketing-landing-pages>`_ created in the **Marketing > Landing Pages** section. 
+Landing Page node is a link to the `custom content page <./marketing-landing-pages>`_ created in the **Marketing > Landing Pages** section.
 
 To add a landing page node to the menu on the OroCommerce Store Front:
 

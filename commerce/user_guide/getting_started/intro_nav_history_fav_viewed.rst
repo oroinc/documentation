@@ -5,8 +5,8 @@ History, Favorites and Most Viewed
 
 .. contents:: :local:
 
-The "hamburger" icon next to the user menu contains a history of your page views, the list of your favorite pages, and 
-the list of the most viewed pages in OroCRM.
+The "hamburger" icon next to the user menu contains a history of your page views, the list of your favorite pages, and
+the list of the most viewed pages in OroCommerce.
 
 All the page names available in the lists are clickable links to the relevant pages.
 
@@ -25,7 +25,7 @@ The links to all the pages that you have marked as "favorite" are displayed in t
 Add a Page to the "Favorites" List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Most of the pages can be marked as a "favorite". This is handy when you need to return to the same page repeatedly. 
+Most of the pages can be marked as a "favorite". This is handy when you need to return to the same page repeatedly.
 In order to do so, click the star-shaped *"Mark as favorite*" icon in the top right corner of the page.
 
 .. image:: /user_guide/img/getting_started/navigation/panel/favorite.png
@@ -37,14 +37,14 @@ The icon will turn yellow and a link to the page will appear in the *"Favorites*
 Remove a Page From the "Favorites" List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In order to remove a page from the *"Favorites*" page, open the page and click the yellow star icon. 
+In order to remove a page from the *"Favorites*" page, open the page and click the yellow star icon.
 
 The icon will turn grey and the page will be removed from the *"Favorites*" list.
 
 Most Viewed
 -----------
 
-This section displays links to the most frequently used pages. Every time you visit a page, OroCRM recalculates the 
+This section displays links to the most frequently used pages. Every time you visit a page, OroCommerce recalculates the
 statistics and updates the list.
 
 .. include:: section_toc.rst

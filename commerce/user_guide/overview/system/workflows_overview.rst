@@ -7,10 +7,10 @@ Overview
 
 .. warning:: Reused from OroCRM. Rework.
 
-A workflow in OroCommerce is a set of steps and possible transitions accosiated with the entity (e.g. Checkout) that defines the sequence of steps.
+A workflow in OroCommerce is a set of steps and possible transitions associated with the entity (e.g. Checkout) that defines the sequence of steps.
 
-In OroCRM you can define what processes can be performed and in what order, with regard to objects represented by  
-:term:`records <Record>` of an OroCRM :term:`entity <Entity>`. 
+In OroCommerce you can define what processes can be performed and in what order, with regard to objects represented by
+:term:`records <Record>` of an OroCommerce :term:`entity <Entity>`.
 
 From this article you will learn to understand, create and manage workflows.
 
@@ -28,8 +28,8 @@ In the example below you can see a simple workflow of a document creation.
 
 .. image:: /user_guide/img/system/workflows/workflows/wf_example.png
 
-The **workflow steps** are "Start" and squares (In progress, Under review, Finished) and correspond to the state of the 
-document. 
+The **workflow steps** are "Start" and squares (In progress, Under review, Finished) and correspond to the state of the
+document.
 
 **Start step** is used only to specify the first condition (basically the record is in the "Start" step before its \
 processing has started.
@@ -38,11 +38,11 @@ The **workflow transitions** are the arrows that show what action can be applied
 
 Attributes
 ^^^^^^^^^^
-Attributes, (also referred as "fields") are characteristics of the record. For example, ZIP code and 
+Attributes, (also referred as "fields") are characteristics of the record. For example, ZIP code and
 street name are attributes of an address.
 
-In the course of each transition you can change some attributes of the record processed. For example, document 
-attributes may be "Name" that must be defined after transition "Start Writing" and can be changed after transitions 
+In the course of each transition you can change some attributes of the record processed. For example, document
+attributes may be "Name" that must be defined after transition "Start Writing" and can be changed after transitions
 "Submit for review" and "Return for rework" and "Number of Pages" that must be defined after "Submit for review" and can
 be changed after "Approved".
 
