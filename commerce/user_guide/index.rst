@@ -91,6 +91,10 @@ For detailed information on using OroCommerce CE and EE, please see the followin
 
 .. note:: Depending on your role in OroCommerce and custom system permissions, the available information and actions may vary.
 
+OroCommerce Sandbox
+-------------------
+
+You can use the <a href="https://www.orocommerce.com/demo">OroCommerce Online Demo</a> to try out the interactions described in this guide.
 
 Table of Contents
 -----------------

@@ -5,8 +5,6 @@ OroCommerce is an open-source Business to Business eCommerce application built w
 
 This section provides links to the online documentation for the latest OroCommerce release.
 
-
-
 .. raw:: html
 
     <div class="guideline">
@@ -37,6 +35,12 @@ This section provides links to the online documentation for the latest OroCommer
                     <li><a href="current/dev-guide/theme/layout">Customizing a Theme</a></li>
                     <li><a href="current/dev-guide/other">How to...</a></li>
                 </ul>
+          </div>
+       </div>
+       <div class="guideline__item">
+          <div style="text-align: center;">
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%; height:100%; text-align: left;">
           </div>
        </div>
     </div>
@@ -82,16 +86,9 @@ This section provides links to the online documentation for the latest OroCommer
        </div>
        <div class="guideline__item">
           <div style="text-align: center;">
-             <a href="https://www.orocommerce.com/demo">
-                <h3><i class="guideline__icon fa fa-laptop fa-2x" aria-hidden="true" style="color:#b84926;"></i><br>
-                Online Demo</h3></a>
-             </a>
-           </div>
-           <div style="overflow: hidden;margin: 0 auto;width: 100%; height:100%; text-align: left;">
-             <p>
-                Check out the <a href="https://www.orocommerce.com/demo">OroCommerce Online Demo</a> of the latest released version.
-             </p>
-           </div>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%; height:100%; text-align: left;">
+          </div>
        </div>
     </div>
 
