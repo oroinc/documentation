@@ -60,7 +60,7 @@ in the template. If no entity name is defined, only system variables will be ava
 Email Template Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-If :ref:`several languages have been enabled <admin-configuration-language>` for the email templates, move from tab to 
+If :ref:`several languages have been enabled <admin-configuration-language-settings>` for the email templates, move from tab to 
 tab, to define the template in different languages.
 
 .. image:: ../img/marketing/email_template_language.png
