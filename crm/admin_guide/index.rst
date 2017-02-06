@@ -10,9 +10,7 @@ Please note that in many cases, the tools may be not available to the usual user
 
 * :doc:`/admin_guide/app_look_feel/index`
 
-  * :doc:`/admin_guide/app_look_feel/system_config`
-
-* :doc:`/admin_guide/record_mgmt_config/index`
+ * :doc:`/admin_guide/record_mgmt_config/index`
 
   * :doc:`/admin_guide/record_mgmt_config/workflow_management`
   
@@ -73,6 +71,8 @@ Please note that in many cases, the tools may be not available to the usual user
 * :doc:`/admin_guide/integrations/index`
 
   * :doc:`/admin_guide/integrations/integrations_overview`
+  
+  * :doc:`/admin_guide/integrations/google_integration_settings`
 
   * :doc:`/admin_guide/integrations/google_single_sign_on`
 
@@ -80,13 +80,14 @@ Please note that in many cases, the tools may be not available to the usual user
 
   * :doc:`/admin_guide/integrations/ldap_integration`
 
-  * :doc:`/admin_guide/integrations/mailchimp_integration`
-
   * :doc:`/admin_guide/integrations/sending_email_campaign_via_mailchimp`
-
-  * :doc:`/admin_guide/integrations/dotmailer_integration`
+  
+  
+  * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
 
   * :doc:`/admin_guide/integrations/ms_exchange_integration`
+  
+  * :doc:`/admin_guide/integrations/ms_outlook_integration_settings`
 
   * :doc:`/admin_guide/integrations/outlook_sync`
 
