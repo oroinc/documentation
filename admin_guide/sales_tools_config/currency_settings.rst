@@ -4,7 +4,9 @@
 
 Currency Setings
 ================
-
+.. contents:: :local:
+    :depth: 2
+    
 .. begin
 
 Configuration
