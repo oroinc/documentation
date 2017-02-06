@@ -310,7 +310,7 @@ After the successful synchronization, details of the Magento entity records defi
 OroCRM and can be processed therein, for example cart can be converted, customer details can be edited and new customers
 can be added to the system.
 
-
+.. important:: When you *create* a channel of Magento type, perform initial sync of the created Magento integration and later delete the channel, Magento Сustomers will be deleted but Accounts and Contacts will remain in the system. If you *re-create* the channel of Magento type, perform initial sync of the created Magento integration once more, Accounts and Contacts will be populated into the system again, doubling their quantity by duplicates. Please, be aware that this behavior is standard.
 
 .. |IcCross| image:: ../../img/buttons/IcCross.png
    :align: middle
