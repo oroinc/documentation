@@ -75,7 +75,7 @@ From the grid you can:
 
 - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the organization: |IcView|.
 
-- Get to the :ref:`configuration settings <admin-configuration>` of the organization: |IcConfig|
+- Get to the configuration settings of the organization: |IcConfig|
 
 In the community edition, you can only edit the organization name and its description. To get to 
 the edit page, go to *System → User Management → Organizations*.
