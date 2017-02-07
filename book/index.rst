@@ -49,6 +49,8 @@ and technical details.
 
 * :doc:`/book/scale_nodes`
 
+* :doc:`/book/impersonation`
+
 * :doc:`/book/data_api`
 
 .. toctree::
@@ -65,6 +67,8 @@ and technical details.
     functional_tests
     scale_nodes
     data_api
+    impersonation
+
 
 TODO List
 ---------
