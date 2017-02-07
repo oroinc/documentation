@@ -2,9 +2,11 @@
 
 .. _admin-configuration-currency:
 
-Currency Setings
+Currency Settings
 ================
-
+.. contents:: :local:
+    :depth: 2
+    
 .. begin
 
 Configuration

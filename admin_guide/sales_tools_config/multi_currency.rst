@@ -41,6 +41,7 @@ below. This conversion is calculated according to the currency rate, determined 
 
 With this example in mind, let us have a look at how you can configure
 your currencies and rates.
+
 .. note:: So far, opportunity is the only OroCRM entity to have received multi-currency functionality out of the box.
 
 
