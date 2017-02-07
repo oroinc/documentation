@@ -1,4 +1,5 @@
 :orphan:
+
 .. _documentation-intro:
 
 OroCRM Community vs Enterprise
