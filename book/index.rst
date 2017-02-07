@@ -49,6 +49,8 @@ and technical details.
 
 * :doc:`/book/scale_nodes`
 
+* :doc:`/book/impersonation`
+
 * :doc:`/book/data_api`
 
 * :doc:`/book/db_optimization`
@@ -68,6 +70,7 @@ and technical details.
     scale_nodes
     data_api
     db_optimization
+    impersonation
 
 TODO List
 ---------
