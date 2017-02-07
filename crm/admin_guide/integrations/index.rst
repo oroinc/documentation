@@ -8,26 +8,34 @@ can be added to any website to collect requests to the OroCRM team.
 
 * :doc:`/admin_guide/integrations/integrations_overview`
 
+* :doc:`/admin_guide/integrations/google_integration_settings`
+
 * :doc:`/admin_guide/integrations/google_single_sign_on`
   
 * :doc:`/admin_guide/integrations/magento_channel_integration`
 
 * :doc:`/admin_guide/integrations/ldap_integration`
 
-* :doc:`/admin_guide/integrations/mailchimp_integration`
-
 * :doc:`/admin_guide/integrations/sending_email_campaign_via_mailchimp`
-
-* :doc:`/admin_guide/integrations/dotmailer_integration`
+ 
+* :doc:`/admin_guide/integrations/dotmailer_integration_settings`
 
 * :doc:`/admin_guide/integrations/sending_email_campaign_via_dotmailer`
 
+* :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
+
 * :doc:`/admin_guide/integrations/ms_exchange_integration`
+  
+* :doc:`/admin_guide/integrations/ms_outlook_integration_settings`
 
 * :doc:`/admin_guide/integrations/outlook_sync`
+ 
 * :doc:`/admin_guide/integrations/embedded_forms`
+
 * :doc:`/admin_guide/integrations/hangouts`
+ 
 * :doc:`/admin_guide/integrations/zendesk_integration`
+ 
 * :doc:`/admin_guide/integrations/commerce_integration`
 
 
@@ -36,14 +44,16 @@ can be added to any website to collect requests to the OroCRM team.
     :maxdepth: 1
 
     integrations_overview
+    google_integration_settings
     google_single_sign_on
     ldap_integration
     magento_channel_integration
-    mailchimp_integration
     sending_email_campaign_via_mailchimp
-    dotmailer_integration
+    dotmailer_integration_settings
     sending_email_campaign_via_dotmailer
+    ms_exchange_integration_settings
     ms_exchange_integration
+    ms_outlook_integration_settings
     outlook_sync
     embedded_forms
     hangouts

@@ -30,6 +30,7 @@ for you. This means that if you enter the amount of £20 000 into the
 Budget Amount field, this value will be converted into your base
 currency and constitute $25 050, as illustrated in the screenshot
 below. This conversion is calculated according to the currency rate, determined beforehand.
+
 |
 
 .. image:: ../img/multi_currency/budget_recalculated.png
@@ -45,92 +46,11 @@ your currencies and rates.
 
 
 
-Configuration
--------------
-
-Currency and rate configuration can be achieved at two levels, the **System level** and the **Organization level**. You can find more information on access levels :ref:`in Access Management guide <user-guide-user-management-permissions>`.
-
-At the system level, an admin sets up system currencies and rates. The
-currencies that the admin sets will be the only currencies available at
-the organization level (for a sales manager, for instance).
-
-Admin can add and delete currencies and change rates.
-
-To configure currencies as an admin, navigate to **System>Configuration** in the main menu.
-
-|
-
-.. image:: ../img/multi_currency/system_config_highlighted.png
-
-|
+.. include:: currency_settings.rst
+   :start-after: begin
+   :end-before: finish
 
 
-
-Next, open **System Configuration** dropdown list on your left, select
-**General Setup** and click :guilabel:`Currency`.
-
-|
-
-.. image:: ../img/multi_currency/system_config_currency_view_highlights.png
-
-|
-
-
-
-Currency Settings
-~~~~~~~~~~~~~~~~~
-
-The following sections will be available within the **Currency** tab:
-
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**              | Description                                                                                                                                                                                                                        |
-+========================+====================================================================================================================================================================================================================================+
-| **Allowed currencies** | Allowed currencies dropdown menu contains a list of all available currencies. This setting controls how the currencies will be identified within the system, by a 3-letter ISO code (e.g. GBP) or by the currency symbol (e.g. £). |
-|                        | Note: Not all currencies might have symbols. For such currencies, ISO codes are used instead.                                                                                                                                      |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Display format**     | Allows you to select the currency display format across the system, e.g. USD ISO code or $ currency symbol.                                                                                                                        |
-+------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-|
-
-.. image:: ../img/multi_currency/allowed_currencies_dropdown.png
-
-|
-
-|
-
-.. image:: ../img//multi_currency/display_format.png
-
-|
-
-The grid contains several columns:
-
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**           | Description                                                                                                                                                                                        |
-+=====================+====================================================================================================================================================================================================+
-| **Base**            | Allows to select the base currency (i.e. the default currency used within the organization) by ticking one or the other currency. Only one base currency can be selected at a time.                |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Current Name**    | Contains the full names of the added currencies.                                                                                                                                                   |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Currency Code**   | Contains ISO codes of the added currencies.                                                                                                                                                        |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Currency Symbol** | Contains the currency symbols. If no symbol is applicable to a currency, a currency ISO code is used instead.                                                                                      |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Rate From**       | The rate of the selected currency to the base currency. It is used to calculate transaction amounts (e.g. opportunity budget) in base currency if they were entered in a different currency.       |
-|                     | E.g. If a UK company wants to sign a deal with your US based company and the value of the deal is in GBP, you would need to see the value of the deal in US dollars.                               |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Rate To**         | The conversion rate of the base currency to the selected currency. It is used to calculate new exchange rates when the base currency is changed.                                                   |
-|                     | E.g. If you need to sign a contract with a client in GBP and the value of your contract is in US dollars, your UK client would like to see the cost in GBP.                                        |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Sort**            | Change the order of the added currencies by dragging them up and down to the preferred position. Sorting currencies on the list affects their order in currency selector of multi-currency fields. |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Actions**         | The cross sign allows to delete the selected currency.                                                                                                                                             |
-+---------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-Only currencies enabled by the admin at the system level are available
-in the **Currency** section at the organization level. Therefore, a
-sales manager would be able to manage rates at the organization level
-for the currencies setup by the admin at the system level.
 
 .. note:: Currently, to allow a sales manager to manage rates, the admin needs to give them access to manage organization records when configuring user roles. This, however, is subject to change. Therefore, the following guide on accessing Currency at organization level is temporary and will be actualized shortly.
  
@@ -188,7 +108,7 @@ unlock the grid by unticking **Use System**.
 
 
 Changing currency rate
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 To change the currency rate manually, the sales manager needs to enter
 the numbers in the corresponding field of the Rate From/To columns.
@@ -209,7 +129,7 @@ constitute 1.2525.
 The base currency rate is always 1 to 1 and cannot be changed.
 
 Adding and Deleting Currency
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A sales manager cannot add the currency that is not set at the system
 level.
@@ -244,7 +164,8 @@ necessary.
 To add the deleted currency back, select it from the Allowed Currencies dropdown menu and click :guilabel:`Add`.
 
 Changing Base Currency
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
+
 The base currency can be changed. This will lead to reconversion of all multi-currency data to the new base currency, and all values will be re-converted according to the current rates. 
 
 .. note:: Historical rates for closed deals will not be preserved.

@@ -228,8 +228,8 @@ MailChimp.*
 
 As soon as OroCRM has been integrated with a third party system, to which an abandoned cart campaign may be mapped,
 you will see :guilabel:`Connect to ...` buttons, with which you
-can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration-map-contacts>` or
-:ref:`Address Books of Dotmailer <user-guide-dm-integration-map>`.
+can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration>` or
+:ref:`Address Books of Dotmailer <user-guide-dm-integration>`.
   
   |
   
