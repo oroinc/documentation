@@ -3,7 +3,7 @@
 .. _admin-configuration-currency:
 
 Currency Settings
-================
+=================
 .. contents:: :local:
     :depth: 2
     
