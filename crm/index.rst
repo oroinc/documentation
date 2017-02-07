@@ -3,14 +3,38 @@ Welcome to OroCRM Documentation!
 
 OroCRM documentation provides several guides to help you understand Oro and use its capabilities as smoothly as possible, and find answers to the questions most frequently asked by the community.
 
-Learn how to enhance your business with the capabilities of OroCRM in the `User Guide <./user-guide>`__ and `User Guide: Roles <./user-guide-roles>`__.
-Read `The Oro Book <./book>`__ to get information about the basic features and capabilities of OroPlatform.
-Get acquainted with the most used OroPlatform solutions in `The Oro Cookbook <./cookbook>`__.
-Understand the bundles used at the back-end to build and modify OroCRM using the OroPlatform features with `The Oro Bundles <./bundles>`__.
+- Learn how to enhance your business with the capabilities of OroCRM in the `User Guide <./user-guide>`__ and `User Guide: Roles <./user-guide-roles>`__.
 
-Check out the `Community Guide <./community>`__ if you want to participate in the development process.
+- Read `The Oro Book <./book>`__ to get information about the basic features and capabilities of OroPlatform.
+
+- Get acquainted with the most used OroPlatform solutions in `The Oro Cookbook <./cookbook>`__.
+
+- Understand the bundles used at the back-end to build and modify OroCRM using the OroPlatform features with `The Oro Bundles <./bundles>`__.
+
+- Check out the `Community Guide <./community>`__ if you want to participate in the development process.-
  
 .. note:: Caution! Oro Documentation is still a work in progress—learn how you can help.
+
+OroCRM Community vs Enterprise
+------------------------------
+
+OroCRM comes in two editions, Community Edition (CE) and Enterprise Edition (EE).
+
+The key differences between the two is that OroCRM Enterprise Edition offers enhanced application performance scalability, extended functional capabilities and customer support.
+
+On top of the features available in OroCRM CE, OroCRM EE provides:
+
+- Big data processing with PostgreSQL database.
+- Big data search with ElasticSearch.
+- Integration with RabbitMQ to handle large amounts of job queues.
+- Multiple organizations support.
+- Multiple websites support.
+- Multiple currencies support.
+- Support for inventory management across multiple warehouses.
+- OroCommerce, LDAP, Microsoft Outlook, Microsoft Exchange integrations.
+
+  
+Complete information on differences between OroCRM Community and Enterprise editions is illustrated in the `Edition Comparison chart <https://www.orocrm.com/orocrm-enterprise-and-community>`_.
 
 User and Administrator Guides
 -----------------------------
