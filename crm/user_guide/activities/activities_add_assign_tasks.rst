@@ -20,8 +20,8 @@ There are several ways to create a task:
 Add a Task for Another Record
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The *Add Task* action will be available for records of entities with "Tasks" activity 
-:ref:`enabled <user-guide-activities-enable>`.
+.. important::
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
 
 1. Open the View page of a record the task is related to.
 

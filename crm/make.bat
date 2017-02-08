@@ -45,7 +45,9 @@ if "%1" == "clean" (
 )
 
 if "%1" == "html" (
-	%SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html -w C:\Users\oro\Desktop\logsphinx.log
+
+	%SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html 
+
 
 	if errorlevel 1 exit /b 1
 	echo.
