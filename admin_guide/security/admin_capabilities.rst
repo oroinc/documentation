@@ -337,8 +337,7 @@ integrators.
 System Configuration
 --------------------
 
-A user can access the :ref:`system configuration page <admin-configuration>`
-to localize the system, change the display and tracking settings, and otherwise change the system configuration.
+A user can access the system configuration page (in the main menu, navigate to **System>Configuration**) to localize the system, change the display and tracking settings, and otherwise change the system configuration.
 
 
 .. _admin-capabilities-tags:
