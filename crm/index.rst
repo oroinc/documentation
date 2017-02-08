@@ -3,14 +3,18 @@ Welcome to OroCRM Documentation!
 
 OroCRM documentation provides several guides to help you understand Oro and use its capabilities as smoothly as possible, and find answers to the questions most frequently asked by the community.
 
-Learn how to enhance your business with the capabilities of OroCRM in the `User Guide <./user-guide>`__ and `User Guide: Roles <./user-guide-roles>`__.
-Read `The Oro Book <./book>`__ to get information about the basic features and capabilities of OroPlatform.
-Get acquainted with the most used OroPlatform solutions in `The Oro Cookbook <./cookbook>`__.
-Understand the bundles used at the back-end to build and modify OroCRM using the OroPlatform features with `The Oro Bundles <./bundles>`__.
+- Learn how to enhance your business with the capabilities of OroCRM in the `User Guide <./user-guide>`__ and `User Guide: Roles <./user-guide-roles>`__.
 
-Check out the `Community Guide <./community>`__ if you want to participate in the development process.
+- Read `The Oro Book <./book>`__ to get information about the basic features and capabilities of OroPlatform.
+
+- Get acquainted with the most used OroPlatform solutions in `The Oro Cookbook <./cookbook>`__.
+
+- Understand the bundles used at the back-end to build and modify OroCRM using the OroPlatform features with `The Oro Bundles <./bundles>`__.
+
+- Check out the `Community Guide <./community>`__ if you want to participate in the development process.-
  
-.. note:: Caution! Oro Documentation is still a work in progress—learn how you can help.
+.. note:: OroCRM comes in two editions, Community Edition (CE) and Enterprise Edition (EE) and some features described in the documentation are applicable only to EE. To learn more on difference between editions, see :ref:`OroCRM Community vs Enterprise guide <documentation-intro>`.
+
 
 User and Administrator Guides
 -----------------------------
