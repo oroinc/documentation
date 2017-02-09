@@ -225,7 +225,7 @@ To run the check manually from the command line:
 
 .. code-block:: none
 
-    node_modules/.bin/jshint src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jshintrc 
+    ./vendor/oro/platform/build/node_modules/.bin/jshint src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=./vendor/oro/platform/build/.jshintrc
 
 
 CSS and HTML Code Style
