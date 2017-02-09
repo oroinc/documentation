@@ -84,3 +84,5 @@ Signing a Contributor License Agreement
 ---------------------------------------
 
 In order to accept your pull request, we need you to sign the `Contributor License Agreement`_ (CLA). You only need to do this once, so if you've done this for any of our open source projects, you're good to go with all of them. If you are submitting a pull request for the first time, our friendly *orocla* robot will automatically add a reminder to your pull request.
+
+.. _Contributor License Agreement: http://www.orocrm.com/contributor-license-agreement
