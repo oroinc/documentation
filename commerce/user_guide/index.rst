@@ -94,7 +94,7 @@ For detailed information on using OroCommerce CE and EE, please see the followin
 OroCommerce Sandbox
 -------------------
 
-You can use the <a href="https://www.orocommerce.com/demo">OroCommerce Online Demo</a> to try out the interactions described in this guide.
+You can use the `OroCommerce Online Demo <https://www.orocommerce.com/demo>`_ to try out the interactions described in this guide.
 
 Table of Contents
 -----------------
