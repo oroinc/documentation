@@ -258,7 +258,9 @@ Before you submit your pull request consider the following guidelines:
 
 * Search GitHub for an open or closed Pull Request that relates to your submission. You don't want to duplicate effort.
 * Please sign our `Contributor License Agreement`_ (CLA) before submitting pull requests. The CLA must be signed for any code or documentation changes to be accepted.
-  
+
+.. _Contributor License Agreement: http://www.orocrm.com/contributor-license-agreement
+
 Commit message
 ^^^^^^^^^^^^^^
 
