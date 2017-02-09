@@ -8,10 +8,8 @@ of an :term:`entity <Entity>` or on details of an :ref:`activity <user-guide-act
 (e.g. leave some additional details of task, comment on an email sent or a call made, etc.) use the "*Add Comment"* 
 action.
 
-.. note::
-
-    Comments are available for any activity or entity that has the Comments activity 
-    :ref:`enabled <user-guide-activities-enable>`.
+.. important::
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
 
 
 Create and View Comments

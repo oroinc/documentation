@@ -1,5 +1,11 @@
+.. _user-guide-mailchimp-campaign:
+.. _user-guide-mc-integration:
+
 Sending Email Campaign via MailChimp 
 =====================================
+
+.. contents:: :local:
+    :depth: 2
 
 Flow
 ----
@@ -209,7 +215,7 @@ You can map contents of OroCRM marketing list to use a segment of the
 -  Navigate to **Market>Marketing Lists** and select the list you would
    like to use.
 
--  Click **Connect to MailChimp** in the top right corner\ **.**
+-  Click **Connect to MailChimp** in the top right corner.
 
 -  Enter your **MailChimp Segment Name**.
 
@@ -229,15 +235,15 @@ You can map contents of OroCRM marketing list to use a segment of the
 Once you are connected, you will also notice a MailChimp button appear
 at the top with the following actions in the dropdown:
 
-+---------------------------+-----------------------------------------------------------------------------+
-| \ **Field**               | **Description**                                                             |
-+===========================+=============================================================================+
-| **Sync**                  | Start sync manually                                                         |
-+---------------------------+-----------------------------------------------------------------------------+
-| **Connection Settings**   | Change connection or integration for the current marketing list in OroCRM   |
-+---------------------------+-----------------------------------------------------------------------------+
-| **Disconnect**            | Disconnect the list from the segment                                        |
-+---------------------------+-----------------------------------------------------------------------------+
++-------------------------+---------------------------------------------------------------------------+
+| **Field**               | **Description**                                                           |
++=========================+===========================================================================+
+| **Sync**                | Start sync manually                                                       |
++-------------------------+---------------------------------------------------------------------------+
+| **Connection Settings** | Change connection or integration for the current marketing list in OroCRM |
++-------------------------+---------------------------------------------------------------------------+
+| **Disconnect**          | Disconnect the list from the segment                                      |
++-------------------------+---------------------------------------------------------------------------+
 
 At this point, if you go back to MailChimp, you will be able to see data
 from OroCRM (subscribers’ first and last names and contact details)
