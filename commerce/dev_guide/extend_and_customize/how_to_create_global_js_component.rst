@@ -113,18 +113,21 @@ to the build-file (``oro.min.js``). Once the source file was added to the config
     - Clear the Symfony application cache to update the cache and the included RequireJS config:
 
       .. code-block:: bash
+          :linenos:
 
-        $ php app/console cache:clear
+          $ php app/console cache:clear
 
     - Reinstall your assets if you don't deploy them via symlinks:
 
       .. code-block:: bash
+          :linenos:
 
           $ php app/console oro:assets:install
 
     - In production mode, you also have to rebuild the JavaScript code:
 
       .. code-block:: bash
+          :linenos:
 
           $ php app/console oro:requirejs:build
 

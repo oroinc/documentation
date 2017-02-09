@@ -12,7 +12,7 @@ With Ecommerce Dashboard, you get an instant insight of the following statistics
 * Other: purchase funnel, orders, and revenue graphs.
 
 
-If you use OroCommerce without OroCRM, deafult Dashboard gives you quick access to the frequently used actions in Quick Launchpad as an alternative to the Shortcuts option. You also can review recent emails and your calendar. 
+If you use OroCommerce without OroCommerce, default Dashboard gives you quick access to the frequently used actions in Quick Launchpad as an alternative to the Shortcuts option. You also can review recent emails and your calendar.
 
 In addition, you can create and manage your own custom dashboard to track the most relevant data.
 

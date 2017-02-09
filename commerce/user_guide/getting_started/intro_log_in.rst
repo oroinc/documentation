@@ -3,6 +3,8 @@
 Login
 =====
 
+.. contents:: :local:
+
 To get to your OroCommerce account, enter the OroCommerce instance url.
 
 .. image:: /user_guide/img/getting_started/intro/login.png
@@ -31,6 +33,9 @@ Log in Using Other Corporate Credentials
 
 OroCommerce can be set up to accept your existing corporate login and password. This is possible if your organization utilizes a common server to share them across multiple applications. This is referred to as LDAP integration. Please check with your system administrator to see if this is the case.
 
-*Next Steps**
+**Next Steps**
 
 `View and edit your User Profile <intro_user_profile>`_, including your personal and contact information, API Key, and password.
+
+.. include:: section_toc.rst
+    :start-after: begin

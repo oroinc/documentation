@@ -40,6 +40,7 @@ Let’s also make our entity compliant with the `ProductHolderInterface <https:/
 This is how our custom entity will look like:
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
     /**
@@ -87,6 +88,7 @@ We are going to have only one version of our custom bundle in this blog post, so
 Installation:
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
     class OroBlogPostExampleBundleInstaller implements Installation
@@ -146,6 +148,7 @@ Installation:
 Migration:
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
     class OroBlogPostExampleBundle implements Migration
@@ -200,6 +203,7 @@ Form Types
 In order to customize the new product field, we need to implement a corresponding form type that will be used in the main form on the product create and edit pages:
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/Form/Type/ProductOptionsType.php
     class ProductOptionsType extends AbstractType
@@ -251,6 +255,7 @@ The setDataClass method is used here to provide more flexibility while allowing 
 Once you have your new form type, it should be registered in the service container to be recognizable by the Symfony’s form factory:
 
 .. code-block:: none
+    :linenos:
 
     #src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
     services:
@@ -270,6 +275,7 @@ Any integrations between different form types within OroCommerce can use form ty
  * **FormEvents::POST_SUBMIT** – it will be used to convert, validate and persist our custom values.
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/Form/Extension/ProductFormExtension.php
     class ProductFormExtension extends AbstractTypeExtension
@@ -379,6 +385,7 @@ Any integrations between different form types within OroCommerce can use form ty
 Our new form type extension should also be registered in the service container:
 
 .. code-block:: none
+    :linenos:
 
     #src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
     services:
@@ -406,6 +413,7 @@ In our case, the custom data should be added to the product view page and the pr
 * product-create-step-two will be used to add our custom data to the product creation page.
 
 .. code-block:: none
+    :linenos:
 
     #src/Oro/Bundle/BlogPostExampleBundle/Resources/config/services.yml
 
@@ -425,6 +433,7 @@ In our case, the custom data should be added to the product view page and the pr
 The event listener may be implemented as follows:
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/EventListener/ProductFormListener.php
 
@@ -529,6 +538,7 @@ Templates
 And finally, we can define the templates – one for the form:
 
 .. code-block:: php
+    :linenos:
 
     {# //src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_update.html.twig #}
 
@@ -538,6 +548,7 @@ And finally, we can define the templates – one for the form:
 and one for the view:
 
 .. code-block:: php
+    :linenos:
 
     //src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_view.html.twig
 

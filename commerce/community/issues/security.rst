@@ -11,7 +11,7 @@ So, needless to say, we take security issues very seriously.
 Spotting major security issues
 ------------------------------
 
-If you believe you have discovered a vulnerability in OroPlatform, OroCRM or OroCommerce or have a security incident to report, please contact our dedicated email support security@orocrm.com
+If you believe you have discovered a vulnerability in OroPlatform, OroCRM or OroCommerce or have a security incident to report, please contact our dedicated email support security@oroinc.com
 
 If you feel the need, please use our PGP public key to keep your message safe and please provide us with a secure way to respond.
 

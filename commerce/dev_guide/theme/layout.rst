@@ -47,6 +47,7 @@ Now, you need to clear the cache and install the new stylesheets by running the 
 command:
 
 .. code-block:: bash
+    :linenos:
 
     $ php app/console cache:clear
     $ php app/console oro:assets:install
@@ -86,8 +87,9 @@ For instance, the following configuration excludes all files from the ``frontend
     You can run the ``oro:assetic:groups`` command to get a list of all active CSS groups:
 
     .. code-block:: bash
+        :linenos:
 
-        $ php app/console oro:assetic:groups
+            $ php app/console oro:assetic:groups
 
 .. _book-layout-themes:
 
@@ -181,8 +183,9 @@ To use the theme in any application, enable it in the application configuration:
     looks like this:
 
     .. code-block:: text
+        :linenos:
 
-        List of available themes:
+            List of available themes:
         acme-theme (active)
          - label: Acme Demo Theme
          - logo: bundles/acmebundle/themes/acme-theme/images/logo.png
@@ -213,6 +216,7 @@ To use the theme in any application, enable it in the application configuration:
 Finally, clear the cache and dump all assets:
 
 .. code-block:: bash
+    :linenos:
 
     $ php app/console cache:clear
     $ php app/console assets:install

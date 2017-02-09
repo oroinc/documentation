@@ -18,6 +18,7 @@ Configure OroLayoutBundle
 Only one templating engine can be used at a time in an OroPlatform application. By default, OroLayoutBundle is configured to use Twig. If you decide to use PHP templates, you should disable Twig and make PHP templating the default templating engine in the application configuration file:
 
 .. code-block:: yaml
+    :linenos:
 
     oro_layout:
         templating:
@@ -31,8 +32,8 @@ Modify Layouts to Use PHP Templates
 The default “base” OroPlatform theme uses Twig templates. You should choose a different approach in your default.yml file in your theme’s folder:
 
 .. code-block:: xml
-
-   :caption: #MyBundle/Resources/views/layouts/first_theme/default.yml
+    :caption: #MyBundle/Resources/views/layouts/first_theme/default.yml
+    :linenos:
 
     layout:
         actions:
@@ -67,6 +68,7 @@ The default “base” OroPlatform theme uses Twig templates. You should choose 
 The example above creates a standard web page structure (head, metadata, and body) with two custom blocks in the body (content and greeting). And in this layout, we specified a different “block theme” (so that the templating engine will know where to find our PHP templates):
 
 .. code-block:: xml
+    :linenos:
 
     actions:
         - @setBlockTheme:
@@ -80,6 +82,7 @@ As you are not using Twig anymore, you should provide the PHP templates for the 
 The PHP templates can be very simple, like in the following example of the greeting block template where we just want to display “Hello!”:
 
 .. code-block:: php
+    :linenos:
 
     #MyBundle/Resources/views/layouts/first_theme/php/_greeting_widget.html.php
     <p>Hello!</p>
@@ -87,6 +90,7 @@ The PHP templates can be very simple, like in the following example of the greet
 You can also create more complex templates that use variables and functions provided by the layout. This is an example of the content block template:
 
 .. code-block:: php
+    :linenos:
 
     #MyBundle/Resources/views/layouts/first_theme/php/_content_widget.html.php
     <div <?php echo $view['layout']->block($block, 'block_attributes') ?>>
@@ -97,6 +101,7 @@ You can also create more complex templates that use variables and functions prov
 The layout and templates from our examples will produce the following HTML output:
 
 .. code-block:: xml
+    :linenos:
 
     <!DOCTYPE html>
     <html>

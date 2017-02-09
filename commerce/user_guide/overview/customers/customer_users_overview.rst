@@ -10,7 +10,7 @@ For customer user management, navigate to **Customers > Customer Users** in the 
 In Customer Users section, you can:
 
 * View, edit and create new customer users
-* Select their roles in OroCommerce to define their level of permissions and access to the actions and data in OroCommerce Front
+* Select their roles in OroCommerce to define their level of permissions and access to the actions and data in OroCommerce store frontend
 * Manage customer user information:
 
     - Name

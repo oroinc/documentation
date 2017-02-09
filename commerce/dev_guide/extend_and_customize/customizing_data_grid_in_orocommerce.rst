@@ -63,6 +63,7 @@ Product Grid Customization
 The resulting implementation of the ProductsGridListener may look similar to this example:
 
 .. code-block:: php
+    :linenos:
 
     class ProductsGridListener
     {
@@ -158,6 +159,7 @@ The resulting implementation of the ProductsGridListener may look similar to thi
 We will need to register this event listener in the service container:
 
 .. code-block:: none
+    :linenos:
 
     grid_event_listener.product:
         class: 'Oro\Bundle\CustomGridBundle\Datagrid\ProductsGridListener'
@@ -177,6 +179,7 @@ Our second customization task will be to add filters for the newly introduced co
 In most cases, the `built-in filters <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md>`_ would work just perfectly. But in the case of the price lists column, a custom filter is required. The purpose of this filter will be to modify the data retrieval query depending on the filter values entered by a user.
 
 .. code-block:: php
+    :linenos:
 
     class ProductPriceListsFilter extends EntityFilter
     {
@@ -236,6 +239,7 @@ In most cases, the `built-in filters <https://github.com/orocrm/platform/blob/ma
 Our new filter should be registered in the service container with the oro_filter.extension.orm_filter.filter tag:
 
 .. code-block:: none
+    :linenos:
 
     grid_filter.price_lists:
         class: 'Oro\Bundle\CustomGridBundle\Filter\ProductPriceListsFilter'
@@ -251,6 +255,7 @@ Our new filter should be registered in the service container with the oro_filter
 This filter can be added to the grid configuration similarly to how we added new columns – in an event listener. Thus the final implementation of the ProductsGridListener would look like this:
 
 .. code-block:: php
+    :linenos:
 
     class ProductsGridListener
     {

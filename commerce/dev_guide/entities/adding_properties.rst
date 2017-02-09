@@ -1,7 +1,7 @@
 How to Add Properties to Core Entities
 ======================================
 
-OroCRM and OroPlatform come with a lot of entities that you may have to customize to fit your
+OroCommerce, OroCRM and OroPlatform come with a lot of entities that you may have to customize to fit your
 application's needs. For example, imagine that you want to store the date your contacts became
 member of your company's partner network.
 
@@ -88,7 +88,7 @@ and should be extended from empty Extend class:
 
 The important part in this migration (which is different to common Doctrine migrations) is the
 ``oro_options`` key passed through the ``options`` argument of the ``addColumn()`` method. All
-options nested under this key are special to OroCRM and OroPlatform and will be handled outside of
+options nested under this key are special to Oro products and will be handled outside of
 the usual Doctrine migration workflow.
 
 The ``extend`` key is interpreted by the EntityExtendBundle from the OroPlatform. Using it will

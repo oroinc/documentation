@@ -41,7 +41,7 @@ user within Magento, as described below:
 Define a New Role
 ^^^^^^^^^^^^^^^^^
 
-- Once logged in, go to the System → Web Services → SOAP/XML - RPC - Roles
+- Once logged in, go to the **System>Web Services>SOAP/XML - RPC - Roles**
 
   |
   
@@ -79,7 +79,7 @@ Define a New Role
 
 |
 
-- In the Roles Resources section, set the "Resource Access" field value to "All" and save the role.
+- In the Roles Resources section, set the **Resource Access** field value to **All** and save the role.
 
   |
   
@@ -89,7 +89,7 @@ Define a New Role
 Define a New User
 ^^^^^^^^^^^^^^^^^
 
-- Go to the System → Web Services → SOAP/XML - RPC - Users
+- Go to the **System>Web Services>SOAP/XML - RPC - Users**
 
 - You will get to the Users grid. Click the :guilabel:`Add New User` button.
 
@@ -106,7 +106,7 @@ Define a New User
     "**Email***","The email address of the user."
     "**API Key***","Define a password for the account. The key shall be at least 6 symbols long."
     "**API Key Confirmation***","Confirm the password."
-    "**The account is**","Set the value to *Active* in order to use the user account created."
+    "**The account is**","Set the value to **Active** in order to use the user account created."
 
 - Save the user created.
 
@@ -150,17 +150,17 @@ In order to accelerate performance of initial sync, please make sure WSDL cache 
 
 To enable the cache:
 
-- Go to the *System → Configuration*
+- Go to the **System>Configuration**
 
-- Go to the *"Services"* section in the tab on the left.
+- Go to the **Services** section in the tab on the left.
 
-- Click on the *"Magento Core API"* link
+- Click on the **Magento Core API** link
 
   |
   
   |Services|
 
-- Choose *"Yes"* in the *"Enable WSDL Cache"* field of the General Settings.
+- Choose **Yes** in the **Enable WSDL Cache** field of the General Settings.
 
   |EnableWSDL|
 
@@ -180,7 +180,7 @@ Create Magento Integration
 To create integration with Magento, create a channel of Magento type as described in the
 :ref:`Channels Management <user-guide-channel-guide-create>` guide.
 
-As soon as the channel type is set to *Magento*, a mandatory **Integration*** field  will appear in the "General"
+As soon as the channel type is set to **Magento**, a mandatory **Integration*** field  will appear in the **General**
 section.
 
       |
@@ -189,7 +189,7 @@ section.
 
 |
 
-Click the *Configure integration* link. The form will emerge.
+Click the **Configure integration** link. The form will emerge.
 
      |
 
@@ -200,7 +200,7 @@ Click the *Configure integration* link. The form will emerge.
 General Settings
 """"""""""""""""
 
-Define the following details in the *"General"* section:
+Define the following details in the **General** section:
 
 .. csv-table::
   :header: "Field", "Description"
@@ -217,19 +217,19 @@ Define the following details in the *"General"* section:
   mode <http://www.magentocommerce.com/api/soap/wsi_compliance.html>`_ is enabled for the Magento store."
   "**Sync start date**","Data will be synchronized as of the date defined."
 
-At this point, click :guilabel:`Check Connection` button, to see if the settings defined above are correct.
+At this point, click :guilabel:`Check Connection`, to see if the settings defined above are correct.
 Once the connection details have been verified, the following fields will be filled with default settings.
 
 .. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Website***","The list of all the Websites available for the shop. *All Websites* option is chosen by default.
+  "**Website***","The list of all the Websites available for the shop. **All Websites** option is chosen by default.
 
   You can edit the field value and choose one of the Websites available. Only entries of the selected Website are
   synchronized.
 
-  Click the *Sync website list* link if the list of Websites is outdated."
+  Click **Sync website list** if the list of Websites is outdated."
   "**Admin url**","Optional field. A url to the administrator panel of the specified Magento store."
   "**Default owner***","Specifies what users can manage the configuration, subject to the
   :ref:`access and permission settings <user-guide-user-management-permissions>`. By default is filled with the user 
@@ -241,20 +241,20 @@ Once the connection details have been verified, the following fields will be fil
 Synchronization Settings
 """"""""""""""""""""""""
 
-Use the *Synchronization Settings* section to enable/disable two-way synchronization.
+Use the **Synchronization Settings** section to enable/disable two-way synchronization.
 
 .. image:: ../img/magento_integration/synch_settings.png
 
-Check *Enable Two Way Sync* box, if you want to download data both from Magento to OroCRM and
+Check the **Enable Two Way Sync** box, if you want to download data both from Magento to OroCRM and
 back. If the box is unchecked, data from Magento will be loaded to OroCRM, but changes performed in OroCRM will not be
 loaded to Magento.
 
 If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same
 customer details were edited from both OroCRM and Magento):
 
-- *Remote wins*: Magento data will be applied to the both Magento and OroCRM.
+- **Remote wins**: Magento data will be applied to the both Magento and OroCRM.
 
-- *Local wins*: OroCRM data will be applied to the both Magento and OroCRM.
+- **Local wins**: OroCRM data will be applied to the both Magento and OroCRM.
 
 
 .. _user-guide-magento-channel-integration-details_edit:
@@ -264,7 +264,7 @@ Edit the Integration
 
 To edit the integration details:
 
-- Go to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel and click *"Edit"* link by the
+- Go to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel and click **Edit** link by the
   integration name.
 
   The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been
@@ -288,29 +288,27 @@ Start Synchronization Manually
 Once integration has been created, the data will be automatically synchronized. However, you can also start the
 synchronization manually from OroCRM:
 
-- Go to the System → Integrations → Manage Integrations and click the |BSchedule|
+- Go to **System>Integrations>Manage Integrations** and click the |BSchedule|
   :ref:`grid action icon <user-guide-ui-components-grid-action-icons>` or
 
 - Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel and click the integration name link:
 
   .. image:: ../img/magento_integration/edit_from_view.png
 
-- The *"View"* page of the integration will appear.
+- The view page of the integration will appear.
 
   .. image:: ../img/magento_integration/integration_view.png
 
 
-- Click :guilabel:`Schedule Sync` button. *A sync*
-  :ref:`job <book-job-execution>`
-  *has been added to the queue.   Check progress.* note will appear.
+- Click :guilabel:`Schedule Sync`. *A sync* :ref:`job <book-job-execution>` *has been added to the queue.   Check progress.* note will appear.
 
-- The data is being synchronized. You can click *Check progress* link to see the synchronization status.
+- The data is being synchronized. You can click **Check progress** link to see the synchronization status.
 
 After the successful synchronization, details of the Magento entity records defined for the channel will be loaded to 
 OroCRM and can be processed therein, for example cart can be converted, customer details can be edited and new customers
 can be added to the system.
 
-
+.. important:: When you *create* a channel of Magento type, perform initial sync of the created Magento integration and later delete the channel, Magento Сustomers will be deleted but Accounts and Contacts will remain in the system. If you *re-create* the channel of Magento type, perform initial sync of the created Magento integration once more, Accounts and Contacts will be populated into the system again, doubling their quantity by duplicates. Please, be aware that this behavior is standard.
 
 .. |IcCross| image:: ../../img/buttons/IcCross.png
    :align: middle

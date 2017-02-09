@@ -3,7 +3,7 @@ Overview
 
 .. begin
 
-In Customer User Roles section, you can view, edit and create new customer roles to define the level of permissions and access to the actions and data in OroCommerce Front for the users of this role.
+In Customer User Roles section, you can view, edit and create new customer roles to define the level of permissions and access to the actions and data in OroCommerce store frontend for the users of this role.
 
 The following roles are predefined and available for every customer by default:
 
@@ -13,7 +13,7 @@ The following roles are predefined and available for every customer by default:
 
 Any new role is labeled as customizable and may apply either to the customer specified in the role details or globally for all customers when the customer is not provided.
 
-With the Customer User Role you can manages the following access- and permissions-related settings: 
+With the Customer User Role you can manages the following access- and permissions-related settings:
 
 * Profile management permission: A user may be able to view and edit their user profile, when the **Self-Managed** option is enabled for their role.
 
@@ -70,14 +70,14 @@ With the Customer User Role you can manages the following access- and permission
         + Shopping List Line Item
 
     - **Quotes** permissions to view, create, edit, delete, and, optionally, assign the following items:
-          
+
         + Quote
         + Request for Quote
 
     - **Checkout** permissions to view, create, edit, delete, and, optionally, assign the following items:
 
         + Open Order
-        
+
     - **Checkout** capabilities:
 
         + Approve orders that exceed the allowable amount
@@ -94,7 +94,7 @@ With the Customer User Role you can manages the following access- and permission
 
         + Invoice
         + Order
-          
+
     - **System capabilities**:
 
         + **Address**
@@ -119,7 +119,7 @@ With the Customer User Role you can manages the following access- and permission
             * View SQL query of a report/segment
 
         + **Calendar**
-     
+
            * Manage organization calendar events
            * Manage system calendar events
            * Manage system calendars

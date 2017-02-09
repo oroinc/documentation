@@ -1,5 +1,11 @@
+.. _user-guide-dotmailer-campaign:
+.. _user-guide-dm-integration:
+
 Sending Email Campaign via Dotmailer 
 =====================================
+
+.. contents:: :local:
+    :depth: 2
 
 Flow
 -----
@@ -101,23 +107,21 @@ Prepare Data for the Campaign in OroCRM
 
 Email campaigns are based on data in :ref:`marketing lists <user-guide-marketing-lists>`. 
 
-In order to prepare a campaign in OroCRM, you need to create a marketing list first.
-This list will create a segment on the Dotmailer side. Go to
-**Marketing>Marketing Lists** and click **Create Marketing List.**
+In order to prepare a campaign in OroCRM, you need to create a marketing list first. This list will create a segment on the Dotmailer side. Go to **Marketing>Marketing Lists** and click **Create Marketing List.**
 
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**         | **Description**                                                                                                                                                                                          |
-+===================+==========================================================================================================================================================================================================+
-| **Name\***        | Name used to refer to the marketing list in the system.                                                                                                                                                  |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Description**   | Optional field. Can be filled with text to help you and other users understand the purpose of the list in future.                                                                                        |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Entity\***      | Data to be synchronized into the Marketing list will depend on the Entity we select.                                                                                                                     |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Type\***        | Type refers to the type of Marketing List update. Dynamic Type means that all changes you make to your Marketing List will be automatic. On Demand type means that updates will be performed manually.   |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Owner\***       | Limits the list of users that can manage the marketing list to the users, whose roles allow managing marketing lists of the owner                                                                        |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Field**       | **Description**                                                                                                                                                                                        |
++=================+========================================================================================================================================================================================================+
+| **Name**        | Name used to refer to the marketing list in the system.                                                                                                                                                |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Description** | Optional field. Can be filled with text to help you and other users understand the purpose of the list in future.                                                                                      |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Entity**      | Data to be synchronized into the Marketing list will depend on the Entity we select.                                                                                                                   |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Type**        | Type refers to the type of Marketing List update. Dynamic Type means that all changes you make to your Marketing List will be automatic. On Demand type means that updates will be performed manually. |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Owner**       | Limits the list of users that can manage the marketing list to the users, whose roles allow managing marketing lists of the owner                                                                      |
++-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 You can add multiple columns to your marketing list (e.g. birthday,
 gender) but at least one column must contain contact information. In our
@@ -134,15 +138,15 @@ In your Dotmailer account, navigate to the top right corner and select **My
 Contacts** from the dropdown. Clicking the **New Address Book** button
 will redirect you to a page with the following fields to fill in:
 
-+-------------------+--------------------------------------------------------------------+
-| **Field**         | **Description**                                                    |
-+===================+====================================================================+
-| **Name\***        | Enter the name for your address to identify it within the system   |
-+-------------------+--------------------------------------------------------------------+
-| **Folder**        | By default, Address Books is the selected folder                   |
-+-------------------+--------------------------------------------------------------------+
-| **Description**   | Add description for the address book if necessary                  |
-+-------------------+--------------------------------------------------------------------+
++-----------------+------------------------------------------------------------------+
+| **Field**       | **Description**                                                  |
++=================+==================================================================+
+| **Name**        | Enter the name for your address to identify it within the system |
++-----------------+------------------------------------------------------------------+
+| **Folder**      | By default, Address Books is the selected folder                 |
++-----------------+------------------------------------------------------------------+
+| **Description** | Add description for the address book if necessary                |
++-----------------+------------------------------------------------------------------+
 
 |
 
@@ -171,13 +175,13 @@ address book the following way:
 -  Navigate to **Marketing>Marketing Lists** and select the list you would
    like to use.
 
--  Click **Connect to Dotmailer** in the top right corner\ **.**
+-  Click **Connect to Dotmailer** in the top right corner.
 
 -  Choose your **Integration**.
 
 -  Select the address book that we have just created.
 
--  Press **Connect.**
+-  Press **Connect**.
    
 
 |
@@ -302,9 +306,9 @@ page and select contacts for the campaign:
 -  Add event triggered emails or autoresponders to the email (if
    necessary).
 
--  Click **Save and Continue.**
+-  Click **Save and Continue**.
 
--  Confirm your selection by clicking **Continue.**
+-  Confirm your selection by clicking **Continue**.
 
 -  Review your campaign details and click **Send Immediately** at the
    bottom.
@@ -332,7 +336,7 @@ Once you have sent out your email campaign in Dotmailer, information
 about your email campaign should have been exported to OroCRM.
 
 As soon as export has been completed, your email campaign should appear
-in **Marketing>Email Campaigns.** By clicking on your recent campaign,
+in **Marketing>Email Campaigns**. By clicking on your recent campaign,
 you will be able to see subscriber activity statistics, such as the
 number of clicks, bounces, opens, etc. Numbers in each column for each
 contact define the number of times an action has been performed, e.g. 2

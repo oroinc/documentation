@@ -1,34 +1,14 @@
 Create a Customer User Role
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a new Customer User Roles, navigate to **Customers > Customer User Roles** in the main menu and click **Create Customer User Roles**.
+To create a new Customer User Role, navigate to **Customers > Customer User Roles** in the main menu and click **Create Customer User Role**.
 
 Preview:
 
 .. image:: /user_guide/img/customers/customer_user_roles/CustomerUserRolesCreate.png
    :class: with-border
 
-The following information about the Customer User RolesCreate is available in the Customer User RolesCreate list:
-
-+---------------+-------------+
-| Name          | Description |
-+===============+=============+
-| ENTITY        |             |
-+---------------+-------------+
-| PERMISSIONS   |             |
-+---------------+-------------+
-| HAS ROLE      |             |
-+---------------+-------------+
-| FIRST NAME    |             |
-+---------------+-------------+
-| LAST NAME     |             |
-+---------------+-------------+
-| EMAIL ADDRESS |             |
-+---------------+-------------+
-| CUSTOMER      |             |
-+---------------+-------------+
-
-You can perform the following actions at the Customer User RolesCreate page:
+You can perform the following actions at the customer user role creation page:
 
  * Cancel
 

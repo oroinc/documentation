@@ -33,6 +33,7 @@ To create a new Landing Page:
 The new landing page is created and is available by the following URL:
 
 .. code-block:: none
+    :linenos:
 
     <OroCommerce application URL>/<slug prototype>/
 
