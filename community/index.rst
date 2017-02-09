@@ -9,8 +9,8 @@ Find out more about how you can contribute to Oro products.
     :maxdepth: 2
     
     contributing
-    code_standards
-    documentation_standards
+    contributing_to_code
+    contributing_to_documentation
     reporting-security-issues
     translations
     release_process
