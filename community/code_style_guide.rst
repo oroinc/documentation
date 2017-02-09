@@ -1,11 +1,11 @@
 .. _code-standards:
 
 
-Contributing to Code
-====================
+Code Style Guide
+================
 
 .. contents:: :local:
-    :depth: 3
+    :depth: 4
 
 Code style
 ----------
@@ -141,14 +141,25 @@ Please do not modify the existing @deprecated attributes, and do not use the cod
 PHP code style continuous control
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PHP code style is controlled by the  `PHP CodeSniffer tool <https://github.com/squizlabs/PHP_CodeSniffer>`_ installed on the continuous integration server according to the rules defined `in the ruleset.xml file <https://github.com/orocrm/webinar-application/blob/master/ruleset.xml>`_.
+PHP code style is controlled by the  `PHP CodeSniffer tool <https://github.com/squizlabs/PHP_CodeSniffer>`_ installed on the continuous integration server according to the rules defined `in the ruleset.xml file <https://github.com/orocrm/platform/blob/master/build/phpcs.xml>`_.
 
 Please, configure appropriate code style inspections in the IDE or run these inspections manually before merging changes to the master branch to prevent application build from failing. 
 
  .. note:: Information on how to enable PHP CodeSniffer inspection with the custom set of rules in the PHPStorm can be found `in PHPStorm documentation <https://www.jetbrains.com/help/phpstorm/2016.3/using-php-code-sniffer-tool.html>`_.
 
-Cyclomatic complexity
+
+Php-cs-fixer usage
+~~~~~~~~~~~~~~~~~~
+
+It is recommended to use `PHP Coding Standard Fixer <http://cs.sensiolabs.org/>`_ (or on the `GitHub <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`_) to keep code free from the style issues.
+
+PHP Code Size Control
 ~~~~~~~~~~~~~~~~~~~~~
+
+PHP code size is controlled by the `PHP Mess detector tool <https://phpmd.org/rules/codesize.html>`_. A ruleset for "phpmd" is located in `phmd.xml <https://github.com/orocrm/platform/blob/master/build/phpmd.xml>`_ file.
+
+Cyclomatic complexity
+"""""""""""""""""""""
 
 .. important:: 
   On the Oro projects, cyclomatic complexity must not exceed the limit of 15.
@@ -158,14 +169,14 @@ Cyclomatic complexity is determined by the number of decision points in a method
 
 
 NPath complexity
-~~~~~~~~~~~~~~~~
+"""""""""""""""""
 
 .. important:: The recommended limit of the NPath complexity is 200 (the default `PHPMD <https://phpmd.org/rules/codesize.html>`_ limit).
 
 The NPath metric computes the number of possible execution paths through a function, meaning how many “paths” there are in the flow of your code in the function. It is similar to the cyclomatic complexity but it also takes into account the nesting of conditional statements and multi-part boolean expressions. So, you should avoid long functions with a lot of (nested) if/else statements.
 
 @SuppressWarnings
-~~~~~~~~~~~~~~~~~
+"""""""""""""""""
 
 It is allowed to use suppress warnings annotations in the following cases ONLY:
 
@@ -178,10 +189,6 @@ It is allowed to use suppress warnings annotations in the following cases ONLY:
 
 In all other cases, usage of the @SuppressWarnings MUST NOT be used.
 
-php-cs-fixer usage
-~~~~~~~~~~~~~~~~~~
-
-It is recommended to use `PHP Coding Standard Fixer <http://cs.sensiolabs.org/>`_ (or on the `GitHub <https://github.com/FriendsOfPHP/PHP-CS-Fixer>`_) to keep code free from the style issues.
 
 JavaScript Code Style
 ^^^^^^^^^^^^^^^^^^^^^
@@ -198,21 +205,21 @@ In Oro projects, JavaScript code style is controlled by the `JSCS <http://jscs.i
 
 It is highly recommended to configure appropriate code style inspections in the IDE or run these inspections manually before committing the changes and merging it to the project repository.
 
-.. important:: JavaScript code style checker in PHPStorm could be enabled in "Languages & Frameworks>JavaScript>Code Quality Tools>JSCS/JSHint" and select to use configuration from .jscsrc/.jshintrc accordingly. For JSCS define path to installed node and path to jscs (it is {{your_project_root}}/node_modules/jscs). For JSHint select the version that is defined in package.json (in root folder of project).
+.. important:: JavaScript code style checker in PHPStorm could be enabled in "Languages & Frameworks>JavaScript>Code Quality Tools>JSCS/JSHint" and select to use configuration from .jscsrc/.jshintrc accordingly. For JSCS define path to installed node and path to jscs (it is {{your_project_root}}/vendor/oro/platform/build/node_modules/jscs). For JSHint select the version that is defined in package.json (in vendor/oro/platform/build folder of project).
 
 To run the check manually from the command line:
 
-- Install required js-modules
+- Install the required js-modules (from the project root folder).
 
 .. code-block:: none
 
-    npm install
+    npm install --prefix ./vendor/oro/platform/build/
 
 - Execute the following command to run JSCS check:
 
 .. code-block:: none
 
-    node_modules/.bin/jscs src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jscsrc 
+ ./vendor/oro/platform/build/node_modules/.bin/jscs src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=./vendor/oro/platform/build/.jscsrc
 
 - Execute the following command to run JSHint check:
 

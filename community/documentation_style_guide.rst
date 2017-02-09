@@ -1,7 +1,7 @@
 .. _documentation-standards:
 
-Contributing to Documentation
-=============================
+Documentation Style Guide
+==========================
 
 .. contents:: :local:
     :depth: 3
