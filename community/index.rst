@@ -9,6 +9,7 @@ Find out more about how you can contribute to Oro products.
     :maxdepth: 2
     
     contributing
+    code_version_control
     code_style_guide
     documentation_style_guide
     reporting-security-issues

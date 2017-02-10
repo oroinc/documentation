@@ -51,7 +51,7 @@ For large volume of  updates, fixes, and enhancements please use the following p
 Update Documentation
 --------------------
 
-This section is intended to provide you with the basic information of simple text formatting using reStructuredText (reST) markup language. Just enough to update and create new documentation files in OroCommerce documentation.
+This section is intended to provide you with the basic information of simple text formatting using reStructuredText (reST) markup language. Just enough to update and create new documentation files in OroCRM documentation.
 
 For more information, please refer to the sphinx's `reStructuredText Primer`_ and to the `Quick reStructuredText <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_ by `docutils <http://docutils.sourceforge.net>`_.
 
@@ -62,7 +62,7 @@ The most complete information is available in the `reStructureText specificaion 
 Documentation Structure and Topic Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In OroCommerce, documentation is organized into the tree hierarchy of sections using toctree directive in the index.rst. Sections of the same level reside in the same folder which simplifies navigation and sibling reference.
+In OroCRM, documentation is organized into the tree hierarchy of sections using toctree directive in the index.rst. Sections of the same level reside in the same folder which simplifies navigation and sibling reference.
 
 Sample file structure:
 
@@ -297,13 +297,6 @@ Preview:
 +------------+------------+-----------+
 | Cell 2.1   | Cell 2.2   | Cell 2.3  |
 +------------+------------+-----------+
-
-Advanced Rst Syntax
-^^^^^^^^^^^^^^^^^^^
-
-Temporarily, the information resides `on Confluence <https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation>`_. 
-
-.. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
 
 
 File Naming Conventions
