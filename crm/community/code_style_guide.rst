@@ -173,6 +173,18 @@ NPath complexity
 
 The NPath metric computes the number of possible execution paths through a function, meaning how many “paths” there are in the flow of your code in the function. It is similar to the cyclomatic complexity but it also takes into account the nesting of conditional statements and multi-part boolean expressions. So, you should avoid long functions with a lot of (nested) if/else statements.
 
+@SuppressWarnings
+~~~~~~~~~~~~~~~~~
+
+It is allowed to use suppress warnings annotations only in the following cases:
+
+
+1. @SuppressWarnings(PHPMD.ExcessiveMethodLength) for the dataProvider in the PHPUnit tests in the install schema or data migrations.
+2. @SuppressWarnings(PHPMD.TooManyMethods) for the PHPUnit test case classes in the install schema or data migrations.
+3. @SuppressWarnings(PHPMD.CouplingBetweenObjects) in the install schema or data migrations.
+
+
+In all other cases, usage of the @SuppressWarnings should not be used.
 
 JavaScript Code Style
 ^^^^^^^^^^^^^^^^^^^^^
