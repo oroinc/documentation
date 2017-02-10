@@ -6,7 +6,7 @@ Community Guide
 Find out more about how you can contribute to Oro products.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     
     contributing
     code_version_control
