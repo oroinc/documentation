@@ -66,7 +66,7 @@ To map an entry point for the web catalog content tree:
 
 #) In the *Content Variants* section, model the desired Store Front menu structure:
 
-     #. Select a type of content note from the list on the right.
+     #. Select a type of content node from the list on the right.
 
         .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreateContentVariants.png
            :class: with-border
