@@ -28,7 +28,7 @@ The goal of functional tests is not to test separate classes (unit tests),
 but to test the integration of the different parts of an application.
 
 Sometimes, writing unit tests to test certain functions can be come quite
-difficult. For example, you might be creating dozen of mock objects to test
+difficult. For example, you might be creating a dozen of mock objects to test
 Doctrine ORM queries. Besides being rather complicated, these unit tests'
 behavior can also be misleading. They might pass, while when working together
 with the other layers of your real application they still may produce unexpected
@@ -44,7 +44,7 @@ Initialization Client and Loading Fixtures Caveats
 To improve the performance of test execution, the initialization of a client
 is only done once per test case by default. This means that the kernel of
 the Symfony application will be booted once per test case. Fixtures are also
-loaded only once per test case by default. On one hand, initializing and loading
+loaded only once per test case by default. On the one hand, initializing and loading
 fixtures once per test case increases the performance of test execution but
 it can also cause bugs because the state of fixtures and the kernel (and as
 a result, the service container) will be shared by default between test methods
@@ -87,7 +87,7 @@ Next, install an application in the test environment:
 
 .. versionadded:: 1.10
 
-For platform versions prior to 1.10 need to run user fixtures upload command:
+For platform versions prior to 1.10 you need to run user fixtures upload command:
 
 .. code-block:: bash
 
@@ -101,11 +101,20 @@ For platform versions prior to 1.9 run command to update schema for test entitie
 
     $ app/console oro:test:schema:update --env test
 
-After this, you'll be able to run your tests in a command line or IDE, e.g.:
+After this, you'll be able to run your tests in a command line or IDE.    
+    
+    .. caution::
+
+	Currently, running different types of automated tests together is not supported. It is, therefore, strongly not recommended to run       unit tests and functional tests side by side in one run as this produces errors. Unit tests create mock objects that later interfere     with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help     of the test suite option:
 
 .. code-block:: bash
 
-    $ phpunit -c app/ %path_to_your_functional_test_folder_or_file%
+      $ php vendor/bin/phpunit -c app/ --testsuite "Functional Tests"
+
+.. code-block:: bash
+
+      $ php vendor/bin/phpunit -c app/ --testsuite “Unit Tests"
+
 
 Database Isolation
 ~~~~~~~~~~~~~~~~~~
@@ -330,7 +339,7 @@ Now, you can reference the fixture by the configured name in your test:
 Writing Functional Tests
 ------------------------
 
-To create a functional test case, you'll always have to do a couple of things:
+To create a functional test case, you need to do the following:
 
 * Extend the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase`
   class;
@@ -436,7 +445,7 @@ Types of Functional Tests
 Testing Controllers
 ~~~~~~~~~~~~~~~~~~~
 
-Have a look at an example of a controller test from the OroCRM:
+Have a look at an example of a controller test from OroCRM:
 
 .. code-block:: php
     :linenos:
@@ -547,7 +556,7 @@ Testing ACLs in a Controller
 In this example, a user without sufficient permissions is trying to access
 a controller action. The
 :method:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase::assertHtmlResponseStatusCodeEquals`
-method is used to ensure that access to the requested resource actually is
+method is used to ensure that access to the requested resource is
 denied for the user:
 
 .. code-block:: php
@@ -598,7 +607,7 @@ denied for the user:
         }
     }
 
-Here's an example of a fixture that adds a user without permissions:
+Here is an example of a fixture that adds a user without permissions:
 
 .. code-block:: php
     :linenos:
@@ -771,7 +780,7 @@ Integration Test Example
 ------------------------
 
 This is an example of how you can write an integration test for a class that
-uses Doctrine ORM without mocking it's classes and using real Doctrine services:
+uses Doctrine ORM without mocking its classes and using real Doctrine services:
 
 .. code-block:: php
     :linenos:
@@ -839,7 +848,7 @@ uses Doctrine ORM without mocking it's classes and using real Doctrine services:
 
 .. caution::
 
-    If your class is responsible for retrieving data, it's better to load
+    If your class is responsible for retrieving data, it is better to load
     fixtures and retrieve them using a test class and then assert that the
     results are valid. Checking DQL is enough in this case because this it
     is the sole responsibility of this class to modify the query.
