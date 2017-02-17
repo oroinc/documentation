@@ -3,8 +3,7 @@
 OroCRM Users and Their Benefits
 ===============================
 
-This chapter of the guide explains the most common OroCRM user roles in order to help you understand which sections of 
-this user guide best match your work duties.
+This chapter of the guide explains the differences between OroCRM Community and Enterprise editions, as well as describes the most common OroCRM user roles in order to help you understand which sections of the user guide best match your work duties.
 
 .. _documentation-intro:
 
