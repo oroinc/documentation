@@ -459,7 +459,7 @@ On successful deletion, the HTTP response status code 204 (No Content) returns w
     since it was already removed and, therefore, is no longer findable.
 
 HTTP Header Specifics
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 As mentioned in the `Authentication <./data-api#authentication>`__ section, to successfully perform an API request, it is important to provide the correct **Content-Type**
 and **Authentication** parameters, e.g.:
@@ -661,7 +661,7 @@ Resource Fields
 ^^^^^^^^^^^^^^^
 
 Most common resource fields
-""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""
 
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | Name         | Type         | Description                                                                                         |
@@ -673,15 +673,16 @@ Most common resource fields
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | updatedAt    | datetime     | The date and time of the last update of the resource record.                                        |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
-| owner        | user         | An owner record represents the ownership capabilities of the record. In other words,                |
-|              | or           | depending on the owner type, a different level of access applies.                                   |
+| owner        | user         | Defines the range of users that are responsible for a record and can manage it.                     |
+|              | or           | Ownership also determines access permissions.                                                       |
 |              | businessunit | For more details, see :ref:`Access / Role Management <user-guide-user-management-permissions>`.     |
 |              | or           |                                                                                                     |
 |              | organization |                                                                                                     |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | organization | organization | An organization record represents a real enterprise, business, firm, company or another             |
-|              |              | organization to which the users belong. For more details about the **organization** field purposes, |
-|              |              | see `Company Structure and Organization <../user-guide/intro-company-structure-org-selector>`__     |
+|              |              | organization to which the users belong. Available only in Enterprise Edition instances.             |
+|              |              | For more details about the **organization** field purposes, see                                     |
+|              |              | `Company Structure and Organization <../user-guide/intro-company-structure-org-selector>`__         |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 
 
@@ -706,16 +707,19 @@ as 'Call,' 'Email,' etc.
 +----------------------+----------+----------------------------------------------------------------------------------------+
 | lastContactedDateOut | datetime | The date and time of the last outgoing communication activity for the resource record. |
 +----------------------+----------+----------------------------------------------------------------------------------------+
-| timesContacted       | integer  | The total number of communication activities for the resource record.                  |
+| timesContacted       | integer  | Date and time of the last contact attempt (email sent, call logged,                    |
+|                      |          | or other contact activity). Marketing emails are not counted.                          |
 +----------------------+----------+----------------------------------------------------------------------------------------+
-| timesContactedIn     | integer  | The total number of incoming communication activities for the resource record.         |
+| timesContactedIn     | integer  | Date and time of the last incoming contact attempt (email received,                    |
+|                      |          | incoming call logged, or other contact activity). Marketing emails are not counted.    |
 +----------------------+----------+----------------------------------------------------------------------------------------+
-| timesContactedOut    | integer  | The total number of outgoing communication activities for the resource record.         |
+| timesContactedOut    | integer  | Date and time of the last outgoing contact attempt (email sent, outgoing call logged,  |
+|                      |          | or other contact activity). Marketing emails are not counted.                          |
 +----------------------+----------+----------------------------------------------------------------------------------------+
 
 
 Filters
-^^^^^^^^
+^^^^^^^
 
 You can perform the GET and DELETE methods on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields.
 
@@ -869,7 +873,7 @@ Example. Retrieve only required fields
 
 
 Data Filter (**filter**)
-"""""""""""""""""""""""""
+""""""""""""""""""""""""
 
 Depending on the type of the filter, certain operators are allowed. For example, for integer filter type it
 is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for string filter type - only two: **=**, **!**.
