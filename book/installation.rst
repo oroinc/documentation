@@ -492,14 +492,16 @@ provides some additional flexibility as described in the relevant section below.
 5b. Using the Installation Command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Another way to run the installation script is with the *oro:install* command in the console.  The "--env=prod" parameter
-must be defined, as otherwise the development environment will be installed.
+Another way to run the installation script is with the *oro:install* command in the console.  
+
+.. warning:: To avoid access permissions issues, please review the Symfony `Setting up or Fixing File Permissions <http://symfony.com/doc/current/setup/file_permissions.html>`_ guide before running any commands. On top of that, consider running the command(s) below with `sudo -u [web server user name]` prefix.
+
+The "--env=prod" parameter must be defined, as otherwise the development environment will be installed.
 
 .. code-block:: bash
 
     $ php app/console oro:install --env=prod
 
-.. warning:: To avoid issues with access permissions, prefix all commands with `sudo -u www-data`.
 
 The Installation is a four step process:
 
