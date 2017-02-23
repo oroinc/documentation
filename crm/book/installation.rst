@@ -499,6 +499,8 @@ must be defined, as otherwise the development environment will be installed.
 
     $ php app/console oro:install --env=prod
 
+.. warning:: To avoid issues with access permissions, prefix all commands with `sudo -u www-data`.
+
 The Installation is a four step process:
 
 #. The system requirements are checked. The setup process terminates if any of the requirements are not fulfilled.
