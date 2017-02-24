@@ -137,8 +137,7 @@ You need to complete the following fields to create your marketing list:
 | **Owner**       | Limits the list of users that can manage the marketing list to the users, whose :ref:`roles <user-guide-user-management-permissions-roles>` allow managing marketing lists of the owner                |
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-You can add multiple columns to your marketing list (e.g. birthday,
-gender) but at least one column must contain contact information. In our
+You can add multiple columns to your marketing list but at least one column must contain contact information. In our
 case, it is vital to add an email column along with the first and last
 name of the contact.
 
