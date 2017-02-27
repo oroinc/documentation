@@ -1,5 +1,11 @@
-Abandoned Cart Campaigns 
-=========================
+Magento Abandoned Cart Campaigns 
+================================
+
+.. contents:: :local:
+    :depth: 3
+    
+Overview
+--------
 
 OroCRM’s Magento Abandoned Cart Campaign (ACC) functionality allows
 users to receive additional store revenue by increasing conversion of
@@ -23,11 +29,11 @@ To increase this conversion, OroCRM allows to:
 The following guide will take you through the process of sending ACCs
 step by step.
 
-Sending Abandoned Cart Campaigns
-================================
+Sending Magento Abandoned Cart Campaigns
+----------------------------------------
 
 Flow
-----
+^^^^
 
 |
 
@@ -37,7 +43,7 @@ Flow
 
 
 Requirements for ACC functionality
-----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to send an ACC, you need to have:
 
@@ -48,7 +54,7 @@ In order to send an ACC, you need to have:
 -  An Active MailChimp Integration.
 
 Step 1: Enable ACC in the system
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install the Abandoned Cart Functionality:
 
@@ -69,13 +75,13 @@ To install the Abandoned Cart Functionality:
   
 
 Step 2: Create MailChimp Integration
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is necessary to have an active MailChimp Integration to be able to
 send an ACC. See the corresponding section of the `Sending Email Campaign via MailChimp <../../../admin-guide/sending-email-campaign-via-mailchimp>`_ guide for MailChimp integration instructions.
 
 Step 3: Add an Abandoned Cart to the Channel 
----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a Magento Channel for which your ACC will be used. See how to
 create a Channel in the :ref:`Channels <user-guide-channels>` guide. Make sure that all
@@ -95,7 +101,7 @@ channels that represent Magento stores contain the ACC entity:
 
 
 Step 4: Create an Abandoned Cart Campaign
------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  Navigate to **Marketing>Abandoned Cart Campaigns**.
 
@@ -219,7 +225,7 @@ your integration by going to **System>Integrations** and selecting your
 Magento integration.
 
 Step 5: Set Up Tracking Website Record 
----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For Magento Abandoned Cart Campaigns, OroCRM provides an out-of-the-box
 conversion tool. This means that you can see how many carts have been
@@ -302,7 +308,7 @@ You can assign a tracking website record to your campaign in two steps.
    This tracking code will be automatically passed to MailChimp and can be used as a variable in emails. When we start designing our email in MailChimp automation, the campaign code variable will be available on the list of **Merge Tags** (\|E\_CMPGN\_CD\| variable). This code will be synced to MailChimp during synchronization with Oro (see Step 7).
 
 Step 6: Prepare Data For Automation
------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 -  Log into your MailChimp account.
 
@@ -380,7 +386,7 @@ along with the details of their carts.
 
 
 Step 7: Create Automated Campaign
----------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is time to create automation for your campaign in MailChimp:
 
@@ -660,7 +666,7 @@ Let us click on the link in the email and place the order.
 
 
 Step 8: Collect Statistics on the OroCRM side
----------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 As soon as the order has been placed, information about this should
 become available in OroCRM:
@@ -703,7 +709,7 @@ Users, who placed their orders after receiving your ACC will be removed
 from the lists in OroCRM and MailChimp.
 
 Step 9: Enable conversion
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once automation emails have been sent and integrations have been
 synchronized, you can enable conversion results for your ACC.
@@ -733,7 +739,7 @@ choose your flow and click :guilabel:`Update`.
 
 
 Step 10: Use Campaign Statistics to Refine Your Segmentation
-------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tracking campaign statistics helps update the next ACC campaign
 according to your needs.
