@@ -33,11 +33,9 @@ Comment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**3**. Stop all running consumers.
+**3**. Create backups of your Database and Code.
 
-**4**. Create backups of your Database and Code.
-
-**5**. Pull changes from the repository.
+**4**. Pull changes from the repository.
 
 .. note::
 
@@ -52,26 +50,26 @@ Comment this line.
     $ sudo -uwww-data git pull
     $ sudo -uwww-data git checkout <VERSION TO UPGRADE>
 
-**6**. Upgrade the composer dependency and set up the right owner to the retrieved files.
+**5**. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
 .. code-block:: bash
 
     $ sudo php composer.phar install --prefer-dist --no-dev
     $ sudo chown www-data:www-data -R ./*
 
-**7**. Remove old caches.
+**6**. Remove old caches.
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
 
-**8**. Upgrade the platform.
+**7**. Upgrade the platform.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
+    $ sudo -u www-data php app/console oro:platform:upgrade20 --env=prod --force
 
-**9**. Remove the caches.
+**8**. Remove the caches.
 
 .. code-block:: bash
 
@@ -84,13 +82,13 @@ or, as alternative:
     $ sudo rm -rf app/cache/*
     $ sudo -u www-data app/console cache:warmup --env prod
 
-**10**. Run the consumer(s).
+**9**. Run the consumer(s).
 
 .. code-block:: bash
 
     $ sudo -u www-data app/console oro:message-queue:consume --env prod
 
-**11**. Enable cron.
+**10**. Enable cron.
 
 .. code-block:: bash
 
@@ -102,7 +100,7 @@ Uncomment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
-**12**. Switch your application back to normal mode from the maintenance mode.
+**11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
@@ -174,7 +172,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
+    $ sudo -u www-data php app/console oro:platform:upgrade20 --env=prod --force
 
 **8**. Remove the caches.
 
@@ -217,6 +215,6 @@ Uncomment this line.
 .. note::
 
     If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
-    after the uprgade to flush cached bytecode from the previous installation.
+    after the upgrade to flush cached bytecode from the previous installation.
 
 .. _`download section`: http://www.orocrm.com/download
