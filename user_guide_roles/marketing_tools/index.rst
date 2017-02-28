@@ -13,7 +13,6 @@ All the Tracking and Email Campaign details can be treated independently or aggr
 
 
 * :doc:`/user_guide_roles/marketing_tools/marketing_lists`
-* :doc:`/user_guide_roles/marketing_tools/magento_abandoned_cart_campaigns`
 * :doc:`/user_guide_roles/marketing_tools/sending_abandoned_cart_campaigns`
 * :doc:`/user_guide_roles/marketing_tools/email_campaigns`
 * :doc:`/user_guide_roles/marketing_tools/marketing_tracking_website_records`
@@ -27,7 +26,6 @@ All the Tracking and Email Campaign details can be treated independently or aggr
     :maxdepth: 1
 
     marketing_lists
-    magento_abandoned_cart_campaigns
     sending_abandoned_cart_campaigns
     email_campaigns
     marketing_campaigns
