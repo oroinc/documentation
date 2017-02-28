@@ -2,7 +2,7 @@
 .. _user-guide-mc-integration:
 
 Sending Email Campaign via MailChimp 
-=====================================
+====================================
 
 .. contents:: :local:
     :depth: 2
@@ -143,15 +143,17 @@ You need to complete the following fields to create your marketing list:
 | **Owner**       | Limits the list of users that can manage the marketing list to the users, whose :ref:`roles <user-guide-user-management-permissions-roles>` allow managing marketing lists of the owner                |
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-You can add multiple columns to your marketing list but at least one column must contain contact information. In our
-case, it is vital to add an email column along with the first and last
-name of the contact.
+You can add multiple columns to your marketing list in OroCRM but only First Name, Last Name and Email details will be synced over to MailChimp.
+
+Note that adding an Email column is vital to be able to send an email campaign via MailChimp.
+
 
 |
 
 .. image:: ../img/mc_email_campaign/o_marketing_list_email.jpg
 
 |
+
 
 
 Click **Save and Close** when you are finished.
@@ -292,6 +294,7 @@ select. You can choose one of the following:
 
 |
 
+.. note:: Please note that OroCRM is unable to receive email campaigns from segments used in automation programs.
 
 When you are done with the campaign type, choose a list to be sent out
 in your email campaign. Here we can select the list segment that we
@@ -305,7 +308,7 @@ created before.
 
 
 When you have selected your list, go to the lower right corner and click
-**Next.** Now select whether you are sending your email to:
+**Next.** You will see the following options:
 
 -  Entire List
 
@@ -316,7 +319,7 @@ When you have selected your list, go to the lower right corner and click
 **Entire list** is the entire collection of contacts. In our case,
 however, make sure that you send your email campaign to a segment of the
 list, i.e. a selected number of contacts within the entire list.
-Otherwise, the contacts will not get synced back to OroCRM. To do that,
+Otherwise, the contacts will **not** get synced back to OroCRM. To do that,
 tick **Saved or pre-built segment.** A list of segments, created on the
 OroCRM side, will appear below. Just click on the list that you would
 like to use. Next, press the **Update Recipient Count** button.
@@ -441,6 +444,7 @@ the next one.
 
 |
 
+.. note:: Please note that sometimes Mailchimp's summary information may not match the OroCRM summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
 
 For instance, if you need to exclude customers who did not open your
 email from the next campaign, go to **Marketing>Marketing List>Create
