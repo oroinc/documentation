@@ -1,4 +1,6 @@
-Magento Abandoned Cart Campaigns 
+.. _user-guide-acc:
+
+Magento Abandoned Cart Campaigns
 ================================
 
 .. contents:: :local:
@@ -52,6 +54,8 @@ In order to send an ACC, you need to have:
 -  An Active Magento Integration.
 
 -  An Active MailChimp Integration.
+
+.. _user-guide-acc-ext:
 
 Step 1: Enable ACC in the system
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
