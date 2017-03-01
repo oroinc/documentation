@@ -143,7 +143,7 @@ in OroCRM.
    
    
 
-Step 5: Check User Events
+Step 4: Check User Events
 -------------------------
 
 As soon as you have configured website tracking, you should be able to
@@ -189,7 +189,7 @@ In addition, activities of a specific customer are displayed in the **Website Ac
 
 |
 
-Step 6: Use Collected Data
+Step 5: Use Collected Data
 --------------------------
 
 You can use data collected from your Magento store in a number of ways,
@@ -243,7 +243,7 @@ users have visited your websites, registered and placed their orders.
 
 -  For entity type select **Tracking Website**.
 
--  In **Columns** section add:
+   In **Columns** section add:
 
 -  Tracking Website>Name
 
@@ -252,13 +252,13 @@ users have visited your websites, registered and placed their orders.
 -  Tracking Website/Tracking website (Visitor event)/Web event>Name, set
    function to **Count**
 
--  In **Grouping**, add
+   In **Grouping**, add:
 
 -  Tracking Website>Name
 
 -  Tracking Website/Tracking website (Visitor event)/Web event>Name
 
--  In **Filters**, set the following condition:
+   In **Filters**, set the following condition:
 
 -  Tracking Website/Tracking website (Visitor event)/Web event>Name,
    field value **is any of** **visit, registration, order placed.**
