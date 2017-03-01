@@ -3,6 +3,10 @@
 Magento Web Tracking 
 ====================
 
+.. contents:: :local:
+    :depth: 2
+
+
 To improve marketing and sales performance, OroCRM provides a tool that
 tracks user behavior data from your Magento Store.
 
@@ -86,21 +90,18 @@ panel.
 
 -  Click :guilabel:`Save Config` to save your configuration on the Magento side.
 
-Step 3: Create a Magento Channel
---------------------------------
-
-To be able to create a tracking website record, create a Magento channel
-first. You can find more information on Magento channels :ref:`here <user-guide-magento-channel>` and :ref:`here <user-guide-magento-channel-integration-synchronization>`.
 
 
-Step 4: Create a Tracking Website on the OroCRM side
+Step 3: Create a Tracking Website on the OroCRM side
 ----------------------------------------------------
 
-Now that you have installed OroCRM Tracking extension and configured
-OroCRM Tracking on the Magento side, you can create a Tracking Website
+
+Now that you have installed OroCRM Tracking extension, you can create a Tracking Website record
 in OroCRM.
 
 -  Go to **Marketing>Tracking Websites**.
+
+.. note:: If Tracking Websites is unavailable in the Marketing section of the main menu, make sure you have :ref:`Tracking enabled <admin-configuration-marketing-features-settings>`. Please, contact your administrator if you are experiencing any trouble.
 
 |
 
@@ -116,7 +117,7 @@ in OroCRM.
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**      | **Description**                                                                                                                                                                                                                                                               |
 +================+===============================================================================================================================================================================================================================================================================+
-| **Owner**      | Limits the list of Users that can manage the tracking website record to the users, whose :ref:`roles <user-guide-user-management-permissions>` allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system administrator, etc.). |
+| **Owner**      | Limits the list of users who can manage the tracking website record to the users, whose :ref:`roles <user-guide-user-management-permissions>` allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system administrator, etc.).  |
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Name**       | Name used to refer to the record in the system                                                                                                                                                                                                                                |
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -174,7 +175,19 @@ These events are illustrated in the screenshot below:
 
 |
 
+In addition, activities of a specific customer are displayed in the **Website Activity** section of their view page in Summary and Events:
 
+|
+
+.. image:: ../img/web_tracking_magento/customer_activity_1.jpg
+
+|
+
+|
+
+.. image:: ../img/web_tracking_magento/customer_activity_2.jpg
+
+|
 
 Step 6: Use Collected Data
 --------------------------
@@ -183,7 +196,7 @@ You can use data collected from your Magento store in a number of ways,
 creating reports and segments of users according to your needs.
 
 Build a segment 
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Building segments of your customers is one of many ways of using data
 collected through web tracking.
@@ -218,7 +231,7 @@ The segment will appear on the **Manage Segments** page and contain
 customers sorted according to your conditions.
 
 Create a report 
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Another example of using data, collected with the help of web tracking,
 is creating reports. Let us create a report that will display how many
