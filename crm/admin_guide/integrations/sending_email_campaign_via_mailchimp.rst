@@ -434,9 +434,7 @@ in **Marketing>Email Campaigns.** By clicking on your recent campaign,
 you will be able to see subscriber activity statistics, such as the
 number of clicks, bounces, opens, etc. Numbers in each column for each
 contact define the number of times an action has been performed, e.g. 2
-opened, 1 click, 1 unsubscribe. These statistics will help you
-understand the outcome of your campaign and let you filter contacts for
-the next one.
+opened, 1 click, 1 unsubscribe. 
 
 |
 
@@ -445,6 +443,10 @@ the next one.
 |
 
 .. note:: Please note that sometimes Mailchimp's summary information may not match the OroCRM summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
+
+These statistics will help you
+understand the outcome of your campaign and let you filter contacts for
+the next one.
 
 For instance, if you need to exclude customers who did not open your
 email from the next campaign, go to **Marketing>Marketing List>Create
