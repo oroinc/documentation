@@ -3,6 +3,10 @@
 Magento Web Tracking 
 ====================
 
+.. contents:: :local:
+    :depth: 2
+
+
 To improve marketing and sales performance, OroCRM provides a tool that
 tracks user behavior data from your Magento Store.
 
@@ -86,21 +90,18 @@ panel.
 
 -  Click :guilabel:`Save Config` to save your configuration on the Magento side.
 
-Step 3: Create a Magento Channel
---------------------------------
-
-To be able to create a tracking website record, create a Magento channel
-first. You can find more information on Magento channels :ref:`here <user-guide-magento-channel>` and :ref:`here <user-guide-magento-channel-integration-synchronization>`.
 
 
-Step 4: Create a Tracking Website on the OroCRM side
+Step 3: Create a Tracking Website on the OroCRM side
 ----------------------------------------------------
 
-Now that you have installed OroCRM Tracking extension and configured
-OroCRM Tracking on the Magento side, you can create a Tracking Website
+
+Now that you have installed OroCRM Tracking extension, you can create a Tracking Website record
 in OroCRM.
 
 -  Go to **Marketing>Tracking Websites**.
+
+.. note:: If Tracking Websites is unavailable in the Marketing section of the main menu, make sure you have :ref:`Tracking enabled <admin-configuration-marketing-features-settings>`. Please, contact your administrator if you are experiencing any trouble.
 
 |
 
@@ -116,7 +117,7 @@ in OroCRM.
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**      | **Description**                                                                                                                                                                                                                                                               |
 +================+===============================================================================================================================================================================================================================================================================+
-| **Owner**      | Limits the list of Users that can manage the tracking website record to the users, whose :ref:`roles <user-guide-user-management-permissions>` allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system administrator, etc.). |
+| **Owner**      | Limits the list of users who can manage the tracking website record to the users whose :ref:`roles <user-guide-user-management-permissions>` allow managing tracking-websites of the owner (e.g. the owner, members of the same business unit, system administrator, etc.).   |
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Name**       | Name used to refer to the record in the system                                                                                                                                                                                                                                |
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -142,7 +143,7 @@ in OroCRM.
    
    
 
-Step 5: Check User Events
+Step 4: Check User Events
 -------------------------
 
 As soon as you have configured website tracking, you should be able to
@@ -174,16 +175,28 @@ These events are illustrated in the screenshot below:
 
 |
 
+In addition, activities of a specific customer are displayed in the **Website Activity** section of their view page in Summary and Events:
 
+|
 
-Step 6: Use Collected Data
+.. image:: ../img/web_tracking_magento/customer_activity_1.jpg
+
+|
+
+|
+
+.. image:: ../img/web_tracking_magento/customer_activity_2.jpg
+
+|
+
+Step 5: Use Collected Data
 --------------------------
 
 You can use data collected from your Magento store in a number of ways,
 creating reports and segments of users according to your needs.
 
-Build a segment 
-~~~~~~~~~~~~~~~~
+Build a Segment 
+~~~~~~~~~~~~~~~
 
 Building segments of your customers is one of many ways of using data
 collected through web tracking.
@@ -217,8 +230,8 @@ In the **Filters** section:
 The segment will appear on the **Manage Segments** page and contain
 customers sorted according to your conditions.
 
-Create a report 
-~~~~~~~~~~~~~~~~
+Create a Report 
+~~~~~~~~~~~~~~~
 
 Another example of using data, collected with the help of web tracking,
 is creating reports. Let us create a report that will display how many
@@ -230,7 +243,7 @@ users have visited your websites, registered and placed their orders.
 
 -  For entity type select **Tracking Website**.
 
--  In **Columns** section add:
+   In **Columns** section add:
 
 -  Tracking Website>Name
 
@@ -239,13 +252,13 @@ users have visited your websites, registered and placed their orders.
 -  Tracking Website/Tracking website (Visitor event)/Web event>Name, set
    function to **Count**
 
--  In **Grouping**, add
+   In **Grouping**, add:
 
 -  Tracking Website>Name
 
 -  Tracking Website/Tracking website (Visitor event)/Web event>Name
 
--  In **Filters**, set the following condition:
+   In **Filters**, set the following condition:
 
 -  Tracking Website/Tracking website (Visitor event)/Web event>Name,
    field value **is any of** **visit, registration, order placed.**
