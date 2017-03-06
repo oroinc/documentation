@@ -142,7 +142,7 @@ For more information about the field level ACLs, see the `Permissions for an Ent
 Links
 ------
 
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-interface>`__ guide.
 
 For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
 
