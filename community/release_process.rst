@@ -22,6 +22,7 @@ Oro Team is working on multiple products and releases them on time-based schedul
 .. note::
     **Patch** versions are released roughly once in 2 weeks for all currently maintained regular and maintained/supported LTS versions.
 
+
 The key difference between regular and LTS version is the duration of maintenance (bugfix) period. LTS versions are also supported for security fixes. 
 
 - **Regular** versions are maintained for the next two release cycles, or roughly 4 months.
@@ -30,6 +31,40 @@ The key difference between regular and LTS version is the duration of maintenanc
 Below is the approximate schedule of Oro product releases and support timelines until 2019. Please take into account that numbering of major and minor versions is based on OroPlatform versions and is subject to change.
 
 .. image:: img/release_process/OroReleaseScheduleDark.png
+
++---------------+-------------------+-------------------+-------------------+
+| Version       | Release           | Maintenance ends  | Support ends      |
++===============+===================+===================+===================+
+| **1.12 EE**   | **August 2016**   | **June 2018**     | **January 2020**  |
++---------------+-------------------+-------------------+-------------------+
+| **2.0**       | **January 2017**  | **June 2018**     | **January 2020**  |
++---------------+-------------------+-------------------+-------------------+
+| 2.1           | March 2017        | June 2017         | June 2017         |
++---------------+-------------------+-------------------+-------------------+
+| 2.2           | May 2017          | August 2017       | August 2017       |
++---------------+-------------------+-------------------+-------------------+
+| **2.3**       | **July 2017**     | **January 2019**  | **June 2020**     |
++---------------+-------------------+-------------------+-------------------+
+| 2.4           | September 2017    | December 2017     | December 2017     |
++---------------+-------------------+-------------------+-------------------+
+| 2.5           | November 2017     | February 2018     | February 2018     |
++---------------+-------------------+-------------------+-------------------+
+| **2.6**       | **January 2018**  | **June 2019**     | **January 2021**  |
++---------------+-------------------+-------------------+-------------------+
+| 3.0           | March 2018        | June 2018         | June 2018         |
++---------------+-------------------+-------------------+-------------------+
+| 3.1           | May 2018          | August 2018       | August 2018       |
++---------------+-------------------+-------------------+-------------------+
+| **3.2**       | **July 2018**     | **January 2020**  | **June 2021**     |
++---------------+-------------------+-------------------+-------------------+
+| 3.3           | September 2018    | December 2018     | December 2018     |
++---------------+-------------------+-------------------+-------------------+
+| 3.4           | November 2018     | February 2019     | February 2019     |
++---------------+-------------------+-------------------+-------------------+
+| **3.5**       | **January 2019**  | **June 2020**     | **January 2022**  |
++---------------+-------------------+-------------------+-------------------+
+| 3.6           | March 2019        | June 2018         | June 2018         |
++---------------+-------------------+-------------------+-------------------+
 
 
 Upgrade Recommendations
