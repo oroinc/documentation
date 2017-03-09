@@ -17,6 +17,6 @@ The following sections provide information and guidance on the following topics:
 
 .. comment See `Configure tax exemptions </user-guide/taxes/managing-tax-exemptions>`_.
 
-* Controlling digital product taxes. Some states in USA and the EU have special rules for taxing digital products. OroCommerce takes those regulations into account and enforces destination-based taxation when the buyer's location is in EU or in the state with no digital product tax in USA. OroCommerce distinguishes purchases of digital products b y the product tax code. All digital items should be labeled with a special tax code for digital products. Moreover, all these tax codes should be listed in EU VAT Tax and US Sales Tax configuration, to launch special tax calculation rules.
+* Controlling digital product taxes. Some states in USA and the EU have special rules for taxing digital products. OroCommerce takes those regulations into account and enforces destination-based taxation when the buyer's location is in EU or in the state with no digital product tax in USA. OroCommerce distinguishes purchases of digital products by the product tax code. All digital items should be labeled with a special tax code for digital products. Moreover, all these tax codes should be listed in EU VAT Tax and US Sales Tax configuration, to launch special tax calculation rules.
 
 .. comment See `Before you begin`_ section for detailed configuration information.
