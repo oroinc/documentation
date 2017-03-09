@@ -17,7 +17,7 @@ You can modify the following configuration settings that impact the way OroComme
 
 - Configure how OroCommerce selects the core jurisdiction for which tax rules should be applied in a purchase order tax calculation. Tax jurisdiction may be defined by either shipping origin, billing address or shipping destination.
 
-- Set up any tax jurisdiction exceptions - countries and states where tax jurisdiction selection deviates from the core rule. For example, when the main tax jurisdiction is at the sale shipping destination, the exception may be for some countries and states to use shiping origin instead.
+- Set up any tax jurisdiction exceptions - countries and states where tax jurisdiction selection deviates from the core rule. For example, when the main tax jurisdiction is at the sale shipping destination, the exception may be for some countries and states to use shipping origin instead.
 
 - Determine whether the tax is included in the product price. When this option is enabled, the product price displayed in the purchase order will increase by the value of tax for this product item. **Note**: This may complicate the tax returns and deduction for your customers who are businesses.
 
@@ -61,7 +61,7 @@ To customize tax calculation in OroCommerce:
 
    b) With **Start Calculation On** option, select when the rounding off shall happen. For **Item**, the taxable amount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up.
 
-   c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax amount is substructed from unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.
+   c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax amount is subtracted from unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.
 
 6. In **Matcher** section:
 
