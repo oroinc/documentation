@@ -17,7 +17,7 @@ To create tax rules for a particular tax jurisdiction:
 
         .. image:: /user_guide/img/taxes/tax_rules/CreateTaxRule_TaxRules_Taxes_drop.png
 
-     b) In the lists select te Account Tax Code (customer tax code), product tax code, tax jurisdiction, and tax (tax rate). Optionally, add description of the tax rate applied.
+     b) In the lists select the Account Tax Code (customer tax code), product tax code, tax jurisdiction, and tax (tax rate). Optionally, add description of the tax rate applied.
 
      c) Click **Save** or **Save and Close**.
 
