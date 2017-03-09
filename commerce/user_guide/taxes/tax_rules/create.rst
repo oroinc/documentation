@@ -11,7 +11,7 @@ To create tax rules for a particular tax jurisdiction:
 
 4. Create all `the tax rates <./taxes/create>`_ defined by the tax jurisdiction for the customers you are serving and products you are selling.
 
-5. Finally, for every the valid combination of the tax rates, product types and customer types, create a tax rule:
+5. Finally, for every valid combination of the tax rates, product types and customer types, create a tax rule:
 
      a) Navigate to **Taxes > Tax Rules** and click **Create Tax Rule**.
 
