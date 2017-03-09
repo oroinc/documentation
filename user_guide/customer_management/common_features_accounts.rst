@@ -3,8 +3,13 @@
 Accounts
 ========
 
+.. contents:: :local:
+    :depth: 2
+
+
 To collect and process information on the customer activity of a person, group of people or business cooperating with 
-you, you can create an *"Account"* record ("account") that will represent them in OroCRM.
+you, you can create an **Account** record that will represent them in OroCRM.
+
 An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing 
 a 360-degree view of the customer. 
 
@@ -14,13 +19,17 @@ a 360-degree view of the customer.
 Create Account Records
 ----------------------
 
-- Go to the *Customers → Accounts*
+- Navigate to *Customers>Accounts*.
 
-- Click :guilabel:`Create Account` button
+- Click :guilabel:`Create Account`.
 
-- The *Create Account* :ref:`form <user-guide-ui-components-create-pages>` will appear:
+- The **Create Account** :ref:`form <user-guide-ui-components-create-pages>` will appear:
+
+|
 
 .. image:: ../img/accounts/accounts_create.png
+
+|
 
 The following fields are mandatory and **must** be defined:
 
@@ -28,20 +37,19 @@ The following fields are mandatory and **must** be defined:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Owner***","Limits the list of users that can manage the account to users,  whose 
+  "**Owner**","Limits the list of users that can manage the account to users,  whose 
   :ref:`roles <user-guide-user-management-permissions>` allow managing 
   accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
   
   By default, the user creating the account is chosen."
-  "**Account Name***","The name used to refer to the account in the system."
+  "**Account Name**","The name used to refer to the account in the system."
+  "**Description**","Details or a short description of an account record."
 
-The rest of the fields are optional. They keep additional details about the account (such as its :term:`tags <Tag>`
-and related :term:`contacts <Contact>`) and may be left empty.
 
-- In order to add a contact, click the :guilabel:`+Add` button in the *Contacts* section. 
+- To add a contact, click the :guilabel:`+Add` in the **Contacts** section. 
 
-If you need to record and process any other details of accounts, 
-:ref:`custom fields <doc-entity-fields-create>` can be created. Their values will 
+If you need to record and process any other details of accounts, contact your administrator or see the
+:ref:`custom fields <doc-entity-fields-create>` section for more information. Their values will 
 be displayed in the **Additional** section.
   
 Once all the necessary information has been defined, click the button in the right top corner of the page to save the 
@@ -73,7 +81,7 @@ The :ref:`view page <user-guide-ui-components-view-pages>` consists of several s
 
 |
 
-- **Record Activities**: activities (calls, emails and tasks assigned to the account)
+- **Activity**: activities such as calls, emails and tasks assigned to the account.
 
   |
   
@@ -84,15 +92,37 @@ The :ref:`view page <user-guide-ui-components-view-pages>` consists of several s
     If an activity-related action was performed for a customer or a contact assigned to the account, they will not be 
     displayed. Only the activities performed directly for the account are available in the section.
 
+- **Opportunities**: a list of opportunities related to an account.
+
+|
+
+.. image:: ../img/accounts/accounts_view_opps.png
+
+|
+
+
 - **Additional Information**: details of any :term:`custom fields <Custom Field>` defined for the account.
+- **Website Activity**: customer activities displayed in Summary and Events tabs.
+- 
+  |
+
+  .. image:: ../img/accounts/accounts_view_website_activity_1.png
+
+  |
+  
+  |
+
+  .. image:: ../img/accounts/accounts_view_website_activity_2.png
+
+  |
 
 - **Sections with channel names**: each section contains details of all the customers that are assigned to this 
-  account and belong to the specified channel, as described in the 
+  account and belong to a specified channel, as described in the 
   :ref:`multichannel functionality description <user-guide-multi-channel-overview>`. 
   
   Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
   
-  In the example below you can see a section of a channel named "B2B Channel":
+  In the example below you can see a section of a channel named **Sales Channel**:
   
   - There are three B2B Customers: Jewel Mart, A. L. Price, and PriceRite Warehouse Club.
 

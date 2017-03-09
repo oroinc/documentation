@@ -1,0 +1,693 @@
+/* -- page layout ----------------------------------------------------------- */
+
+body {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    background-color: #fff !important;
+    //text
+    margin: 0;
+    padding: 0;
+}
+
+div.body {
+    border-bottom: none;
+    /*border-left: 1px solid #1394ca;*/
+    background-color: #fff !important;
+
+}
+
+div.topic {
+    border: 0px solid #ccc;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+div.document {
+    width: 1170px;
+    margin: 30px auto 0 auto;
+}
+
+div.documentwrapper {
+    float: left;
+    width: 100%;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 292px;
+    background-color: #fff !important;
+    border-top: 1px solid #1394ca;
+    padding: 0 0 0 50px;
+}
+
+div.sphinxsidebar {
+    width: 292px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid #1394ca;
+}
+
+div.body > .section {
+    text-align: left;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+div.sphinxsidebar a {
+    color: #1394ca;
+    text-decoration: none;
+    border-bottom: 0 none #999;
+}
+
+div.sphinxsidebar a:hover {
+    border-bottom: 0px solid #1394ca;
+}
+
+div.sphinxsidebarwrapper {
+    display: inline-block;
+    box-sizing: border-box; /*+3*/
+    /*padding: 7px 10px 7px 15px;*/
+    padding: 7px 10px 7px 15px;
+    width:100%;
+    border-top: 1px solid #1394ca;
+    border-right: 1px solid #1394ca;
+}
+
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current {
+    width: 100%;
+    /*    background-color: #e16040; */
+}
+
+/* +2.0 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current, div.sphinxsidebarwrapper ul.current li.toctree-l1.active {
+    /* background-color: #e16040; */
+}
+
+/* +5.0 */
+div.sphinxsidebarwrapper ul li:hover {
+    /* background-color: #e16040; */
+    border-bottom: 0 none #999;
+}
+
+/* +2 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active a {
+    color: #fff !important;
+    background-color: #8fb3d7;
+    text-decoration: none;
+    display: block;
+}
+
+/* +2.1 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2 a {
+    /*color: #fff !important;*/
+    color: #1394ca !important;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+div.hiddendocmenu {
+    display: none;
+}
+
+/* +6 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current ul {
+    display: none;
+}
+
+/* +2.2 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2.active a {
+    color: #111 !important;
+    /*color: #1394ca !important;*/
+    text-decoration: none;
+}
+
+/* new 2.2*/
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a:hover {
+    display: inline-block;
+    padding: 7px 10px 7px 15px;
+    text-decoration: underline;
+}
+
+/* new new*/
+div.sphinxsidebarwrapper ul li.toctree-l1 a:hover {
+    display: inline-block;
+    padding: 7px 10px 7px 15px;
+    text-decoration: underline;
+}
+
+/* rem new */
+div.sphinxsidebarwrapper li a, div.sphinxsidebarwrapper li span {
+    display: inline-block;
+    padding: 7px 10px 7px 15px;
+}
+
+
+div.sphinxsidebarwrapper li a:hover {
+    display: inline-block;
+    padding: 7px 10px 7px 15px;
+    text-decoration: underline;
+}
+
+div.sphinxsidebarwrapper li {
+    line-height: 1.8;
+}
+
+div.sphinxsidebar ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+div.sphinxsidebar ul li.toctree-l1 > a {
+    font-size: 15px;
+}
+
+div.sphinxsidebar ul li.toctree-l2 > a {
+    color: #1394ca;/* !important;*/
+    background-color: #fff;
+    font-size: 13px;
+    padding: 2px 10px 2px 15px !important;
+}
+
+div.sphinxsidebar ul li.toctree-l2.current > a, div.sphinxsidebar ul li.toctree-l2.active > a {
+    color: #333 !important;
+    text-decoration: none;
+}
+
+div.sphinxsidebarwrapper li.current > li.toctree-l2 > a, div.sphinxsidebarwrapper li.active > li.toctree-l2 > a {
+    /*    color: #1394ca !important;*/
+}
+
+/* -- body styles ----------------------------------------------------------- */
+
+a {
+    color: #1394ca;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #1394ca;
+    text-decoration: underline;
+}
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    line-height: 1.3;
+}
+
+div.body h1, .h1, h1 { font-size: 30px; font-weight: 300 }
+div.body h2, .h2, h2 { font-size: 27px; }
+div.body h3, .h3, h3 { font-size: 23px; }
+div.body h4 { font-size: 130%; }
+div.body h5 { font-size: 100%; }
+div.body h6 { font-size: 100%; }
+
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+a.headerlink {
+    text-decoration: none;
+    color: #ccc !important;
+    font-size: 80%;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-top: -3px;
+    position: relative;
+    font-family: 'Arial',sans-serif;
+}
+
+a.headerlink:hover {
+    text-decoration: underline;
+    color: #ccc !important;
+    font-size: 80%;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-top: -3px;
+    position: relative;
+    font-family: 'Arial',sans-serif;
+}
+
+div.body p, .p, p, div.body dd, div.body li {
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+
+
+div.admonition {
+background-attachment: scroll;
+background-clip: border-box;
+background-color: rgb(255, 255, 255);
+background-image: none;
+background-origin: padding-box;
+background-position: 0% 0%;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: auto auto;
+border-bottom-color: rgb(238, 238, 238);
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0 0 0 0;
+border-image-repeat: stretch stretch;
+border-image-slice: 100% 100% 100% 100%;
+border-image-source: none;
+border-image-width: 1 1 1 1;
+border-left-color: rgb(238, 238, 238);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(238, 238, 238);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(238, 238, 238);
+border-top-style: solid;
+border-top-width: 1px;
+box-sizing: border-box;
+font-family: "Open Sans",Helvetica,Arial,sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 22.5px;
+margin-bottom: 25px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 45px;
+overflow-wrap: break-word;
+padding-bottom: 15px;
+padding-left: 25px;
+padding-right: 40px;
+padding-top: 15px;
+position: relative;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+-moz-osx-font-smoothing: grayscale;
+
+}
+
+div.admonition p.admonition-title {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgb(255, 255, 255);
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0% 0%;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border-bottom-color: rgb(238, 238, 238);
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: rgb(238, 238, 238);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(238, 238, 238);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(238, 238, 238);
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: transparent;
+    display: block;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 0px;
+    font-weight: 400;
+    height: 56px;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-wrap: break-word;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: -26px;
+    top: -26px;
+    width: 56px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+}
+
+div.topic {
+    background-color: #fff;
+}
+
+p.admonition-title:before {
+    box-sizing: border-box;
+    color: rgb(112, 112, 112);
+    content: "\e6f1";
+    display: block;
+    font-family: "icomoon";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 56px;
+    overflow-wrap: break-word;
+    text-align: center;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+table.footnote + table.footnote {
+    margin-top: -15px;
+    border-top: none;
+}
+
+table.field-list th {
+    padding: 0 0.8em 0 0;
+}
+
+table.field-list td {
+    padding: 0;
+}
+
+table.field-list p {
+    margin-bottom: 0.8em;
+}
+
+table.footnote td.label {
+    width: .1px;
+    padding: 0.3em 0 0.3em 0.5em;
+}
+
+table.footnote td {
+    padding: 0.3em 0.5em;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dl dd {
+    margin-left: 30px;
+}
+
+blockquote {
+    margin: 0 0 0 30px;
+    padding: 0;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-right: 40px;
+    padding: 0 0 0 0;
+
+}
+
+ul.simple li p, ul.simple li p.first, div.section ul li p, div.section ul li p.first {
+    padding: 0 0 0 0;
+}
+
+ol.arabic li {
+    padding: 0 0 0 0;
+
+}
+
+ol.arabic li p.first {
+    padding: 0 0 0 0;
+
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    /* Matches the 30px from the narrow-screen "li > ul" selector below */
+    /*margin: 10px 0 10px 30px;*/
+    margin: 0;
+    padding: 0 10px 0 20px;
+    line-height: 1.6;
+}
+
+ul.simple, div.section ul {
+    /* Matches the 30px from the narrow-screen "li > ul" selector below */
+    /*margin: 10px 0 10px 30px;*/
+    margin: 0;
+    padding: 0 10px 0 20px;
+    line-height: 1.6;
+    font-size: 24px;
+    list-style-type: disc;
+    list-style-image: none;
+    list-style-position: outside;
+}
+
+ul.simple li, div.section ul li {
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 24px!important;
+
+    outline-color: rgb(0, 0, 0);
+    outline-style: none;
+    outline-width: 0px;
+
+    padding-bottom: 5px!important;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 5px!important;
+
+}
+
+li a {
+    font-size: 15px;
+}
+
+a.reference {
+    text-decoration: none;
+    border-bottom: 0px none #004B6B;
+}
+
+div.viewcode-block:target {
+background: darkgray;
+}
+
+dl pre, blockquote pre, li pre {
+    margin-left: 0;
+    padding-left: 30px;
+}
+
+dl dl pre {
+    margin-left: -90px;
+    padding-left: 90px;
+}
+
+tt, code {
+background-color: black;
+color: white;
+padding: 1px 2px;
+}
+
+/* Don't put an underline on images */
+a.image-reference, a.image-reference:hover {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 870px) {
+
+    div.sphinxsidebar {
+        display: none;
+    }
+
+    div.document {
+        width: 100%;
+
+    }
+
+    div.documentwrapper {
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    div.bodywrapper {
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        background-color: #fff;
+    }
+
+    ul {
+        margin-left: 0;
+    }
+
+    li > ul {
+        /* Matches the 30px from the "ul, ol" selector above */
+        margin-left: 30px;
+    }
+
+    .document {
+        width: auto;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .bodywrapper {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .github {
+        display: none;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 875px) {
+
+    body {
+        margin: 0;
+        padding: 20px 30px;
+        background-color: #fff;
+    }
+
+    div.sphinxsidebar p.logo {
+        display: none;
+    }
+
+    div.document {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.footer {
+        display: none;
+    }
+
+    div.bodywrapper {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    div.body {
+        min-height: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+
+    .rtd_doc_footer {
+        display: none;
+    }
+
+    .document {
+        width: auto;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    .github {
+        display: none;
+    }
+}
+
+{%- if theme_fixed_sidebar|lower == 'true' %}
+@media screen and (min-width: 876px) {
+    div.sphinxsidebar {
+        position: fixed;
+        margin-left: 0;
+    }
+}
+{%- endif %}
+
+
+/* misc. */
+
+.revsys-inline {
+    display: none!important;
+}
+
+/* Make nested-list/multi-paragraph items look better in Releases changelog
+ * pages. Without this, docutils' magical list fuckery causes inconsistent
+ * formatting between different release sub-lists.
+ */
+div#changelog > div.section > ul > li > p:only-child {
+    margin-bottom: 0;
+}
+
+/* Hide fugly table cell borders in ..bibliography:: directive output */
+table.docutils.citation, table.docutils.citation td, table.docutils.citation th {
+    border: none;
+    /* Below needed in some edge cases; if not applied, bottom shadows appear */
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+table.docutils {
+    border: 1px solid #ddd;
+}
+
+table.docutils > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+    background: #ccc;
+}
+
+
+table.docutils {
+margin: 0 0 20px 0;
+}
+
+
+table.docutils > tbody {
+    background: #fff;
+}
+
+img {
+padding: 5px 0 5px 0;
+}
