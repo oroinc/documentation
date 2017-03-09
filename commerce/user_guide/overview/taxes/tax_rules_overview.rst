@@ -13,6 +13,6 @@ Basically, in OroCommerce, tax rule binds the following items:
 
 * product tax code - a label for a group of products that have similar taxation rules in at least one tax jurisdictions.
 
-* tax rate - the persentage of the sales income that should be payed as a tax in the particular tax jurisdiction for a certain type of products sold to a group of customers with the same tax status.
+* tax rate - the percentage of the sales income that should be payed as a tax in the particular tax jurisdiction for a certain type of products sold to a group of customers with the same tax status.
 
 .. finish
