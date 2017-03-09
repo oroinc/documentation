@@ -59,9 +59,9 @@ To customize tax calculation in OroCommerce:
 
       |
 
-   b) With **Start Calculation On** option, select when the rounding off shall happen. For **Item**, the taxable ammount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up.
+   b) With **Start Calculation On** option, select when the rounding off shall happen. For **Item**, the taxable amount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up.
 
-   c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax ammount is substructed from unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.
+   c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax amount is substructed from unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.
 
 6. In **Matcher** section:
 
