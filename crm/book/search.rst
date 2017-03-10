@@ -15,8 +15,9 @@ Database Setup
 ~~~~~~~~~~~~~~
 
 Common database management systems like MySQL or Postgres offer additional
-indexes for fulltext searches. To initialize the advanced database index,
-run the ``oro:search:reindex`` command:
+indexes for fulltext searches. This index is initialized during application
+install. You can manually reinitialize the advanced database index, though,
+using the ``oro:search:reindex`` command:
 
 .. code-block:: bash
 
