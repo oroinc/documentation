@@ -13,7 +13,7 @@ The following roles are predefined and available for every customer by default:
 
 Any new role is labeled as customizable and may apply either to the customer specified in the role details or globally for all customers when the customer is not provided.
 
-With the Customer User Role you can manages the following access- and permissions-related settings:
+With the Customer User Role you can manage the following access- and permissions-related settings:
 
 * Profile management permission: A user may be able to view and edit their user profile, when the **Self-Managed** option is enabled for their role.
 
