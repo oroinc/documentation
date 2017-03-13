@@ -80,11 +80,9 @@ Please note that in many cases, the tools may be not available to the usual user
 
   * :doc:`/admin_guide/integrations/ldap_integration`
 
-  * :doc:`/admin_guide/integrations/sending_email_campaign_via_mailchimp`
+  * :doc:`/admin_guide/integrations/mailchimp_configuration`
   
   * :doc:`/admin_guide/integrations/dotmailer_integration_settings`
-  
-  * :doc:`/admin_guide/integrations/sending_email_campaign_via_dotmailer`
   
   * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
 
