@@ -3,7 +3,7 @@ Configuring Customer Users
 
 .. begin
 
-You can enable or disable customer user registration, reuesting confirmation after registration and the way OroCommerce treats password security. 
+You can enable or disable customer user registration, requesting confirmation after registration and the way OroCommerce treats password security. 
 
 To change the default settings:
 
