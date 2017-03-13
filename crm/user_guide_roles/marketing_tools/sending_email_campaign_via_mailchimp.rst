@@ -1,5 +1,5 @@
 .. _user-guide-mailchimp-campaign:
-.. _user-guide-mc-integration:
+
 
 Sending Email Campaign via MailChimp 
 ====================================
@@ -12,111 +12,6 @@ Flow
 
 .. image:: ../img/mc_email_campaign/oro_mc_integration.jpg
 
-
-Configure MailChimp Integration
--------------------------------
-
-To configure MailChimp integration, ensure that you have MailChimp
-extension installed in your instance of OroCRM. To download extension,
-click `here <https://marketplace.orocrm.com/package/orocrm-mailchimp-integration/>`_.
-
-
-SaaS users should have MailChimp preinstalled.
-
-To configure integration with OroCRM on the MailChimp side, you need to
-create an API key. To do that:
-
--  Login to MailChimp.
-
--  Navigate to your name in the upper right corner.
-
--  Select **Account**.
-
--  Go to **Extras**.
-
--  Click **API keys**.
-
--  Scroll down to the bottom of the page and press **Create a Key**.
-
-A newly created key will appear at the top of the list. Copy the key.
-
-|
-
-.. image:: ../img/mc_email_campaign/mc_account.jpg
-
-|
-
-.. image:: ../img/mc_email_campaign/mc_extras_api.jpg
-
-|
-
-.. image:: ../img/mc_email_campaign/mc_create_key.jpg
-
-|
-
-.. image:: ../img/mc_email_campaign/mc_copy_key.jpg
-
-|
-
-Now log into OroCRM and navigate to \ **System>Integrations>Manage
-Integrations**.
-
-Click **Create Integration** in the top right corner.
-
-|
-
-.. image:: ../img/mc_email_campaign/o_manage_integrations.jpg
-
-|
-
-.. image:: ../img/mc_email_campaign/o_create_integration.jpg
-
-Next, complete the following fields:
-
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**                      | **Description**                                                                                                                                                                                                                                                                                                                      |
-+================================+======================================================================================================================================================================================================================================================================================================================================+
-| **Type**                       | Among other third-party services, choose MailChimp as this is the integration we are configuring. A form specific to MailChimp will be displayed.                                                                                                                                                                                    |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Name**                       | Specify the integration **Name** as it will be referred to within OroCRM                                                                                                                                                                                                                                                             |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **API Key**                    | Paste the API key you copied in your MailChimp account. Click **Check Connection**. **Everything’s Chimpy** means that the connection was successful and you are now authorized.                                                                                                                                                     |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Activity Update Interval**   | Now set the **Activity Update Interval** to a period you plan to run your campaign for. This should be set based on the length of your campaign and data storage requirements specific to your instance in OroCRM.                                                                                                                   |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Status**                     | **Active** or **Inactive**. By default, Status is set to Active.                                                                                                                                                                                                                                                                     |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Owner**                      | The Owner determines the list of users who can manage the integration and the data synchronized with it. This means that the owner receives the data produced by the email campaign. All **Entities** imported within the integration will be assigned to the selected user. It is suggested to select a marketing rep as the owner. |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Enable Two Way Sync**        | Use this section to enable or disable two-way synchronization. By default, **Enable Two Way Sync** is unchecked. If it remains unchecked, unsubscribes will pass from MailChimp to OroCRM. If enabled, subscription status can be passed from OroCRM to MailCHimp and the other way around.                                          |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Sync Priority:**             | **Remote Wins** means that the MailChimp will be considered the master and override conflicts with the OroCRM. **Local Wins** means that local data will be the master and override any conflicts with MailChimp.                                                                                                                    |
-+--------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-|
-
-.. image:: ../img/mc_email_campaign/o_choose_mc_integration.jpg
-
-|
-
-
-Once all the details of the integration have been specified, click
-**Save and Close.** The integration has been successfully configured and
-will now appear in the integration grid.
-
-In order to sync your integration:
-
--  Navigate to **System>Integrations>Manage Integrations**.
-
--  Select your newly created integration.
-
--  Click **Schedule Sync** in the top right corner.
-
-|
-
-.. image:: ../img/mc_email_campaign/o_manage_integrations_orocrm_schedule_sync.jpg
-
-|
 
 Prepare Data for the Campaign in OroCRM
 ---------------------------------------
@@ -434,7 +329,9 @@ in **Marketing>Email Campaigns.** By clicking on your recent campaign,
 you will be able to see subscriber activity statistics, such as the
 number of clicks, bounces, opens, etc. Numbers in each column for each
 contact define the number of times an action has been performed, e.g. 2
-opened, 1 click, 1 unsubscribe. 
+opened, 1 click, 1 unsubscribe. These statistics will help you
+understand the outcome of your campaign and let you filter contacts for
+the next one.
 
 |
 
@@ -443,10 +340,6 @@ opened, 1 click, 1 unsubscribe.
 |
 
 .. note:: Please note that sometimes Mailchimp's summary information may not match the OroCRM summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
-
-These statistics will help you
-understand the outcome of your campaign and let you filter contacts for
-the next one.
 
 For instance, if you need to exclude customers who did not open your
 email from the next campaign, go to **Marketing>Marketing List>Create
@@ -480,3 +373,8 @@ When you are done, make sure you click **Save and Close**.
 
 This list will now appear in the **Marketing List** :ref:`Page<user-guide-ui-components-view-pages>` and will
 now contain contacts sorted according to your conditions.
+
+Related Articles
+----------------
+
+:ref:`Configure MailChimp Integration <user-guide-mc-integration>`
