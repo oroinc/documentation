@@ -30,4 +30,4 @@ In Customer Users section, you can:
 
 **Customer Account Confirmation**
 
-Upon registeration, customer user receives an email confirmation request. Once they follow up with the requested action, their account is marked as confirmed.
+Upon registration, customer user receives an email confirmation request. Once they follow up with the requested action, their account is marked as confirmed.
