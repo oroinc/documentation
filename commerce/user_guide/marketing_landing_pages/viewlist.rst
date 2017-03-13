@@ -18,7 +18,7 @@ You can perform the following actions at the All Landing Pages page:
    
    OR
    
-   Aternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
+   Alternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
 
  * Delete a landing page: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcDelete| to remove the landing page.
    
