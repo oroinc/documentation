@@ -16,6 +16,7 @@ This book contains list of most regularly used solutions in OroPlatform.
   * :doc:`/cookbook/entities/import_export`
   * :doc:`/cookbook/entities/report`
   * :doc:`/cookbook/entities/dashboards`
+  * :doc:`/cookbook/entities/integration`
 
 * :doc:`/cookbook/how_to_create_new_bundle`
 * :doc:`/cookbook/how_to_extend_existing_bundle`
