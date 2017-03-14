@@ -14,3 +14,4 @@ Entities
     import_export
     report
     dashboards
+    integration
