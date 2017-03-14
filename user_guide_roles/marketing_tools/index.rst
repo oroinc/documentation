@@ -13,7 +13,9 @@ All the Tracking and Email Campaign details can be treated independently or aggr
 
 
 * :doc:`/user_guide_roles/marketing_tools/marketing_lists`
-* :doc:`/user_guide_roles/marketing_tools/magento_abandoned_cart_campaigns`
+* :doc:`/user_guide_roles/marketing_tools/dotmailer_overview`
+* :doc:`/user_guide_roles/marketing_tools/sending_email_campaign_via_dotmailer`
+* :doc:`/user_guide_roles/marketing_tools/dotmailer_data_fields_mappings`
 * :doc:`/user_guide_roles/marketing_tools/sending_abandoned_cart_campaigns`
 * :doc:`/user_guide_roles/marketing_tools/sending_email_campaign_via_mailchimp`
 * :doc:`/user_guide_roles/marketing_tools/email_campaigns`
@@ -28,7 +30,9 @@ All the Tracking and Email Campaign details can be treated independently or aggr
     :maxdepth: 1
 
     marketing_lists
-    magento_abandoned_cart_campaigns
+    dotmailer_overview
+    sending_email_campaign_via_dotmailer
+    dotmailer_data_fields_mappings
     sending_abandoned_cart_campaigns
     sending_email_campaign_via_mailchimp
     email_campaigns
