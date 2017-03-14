@@ -1,7 +1,7 @@
 .. _user-guide-admin-tools:
 
 Administrator Guide
-=====================
+===================
 
 The section describes tools for system management and administration, aimed to be used primarily by the system 
 administrators.
@@ -83,6 +83,10 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/admin_guide/integrations/mailchimp_configuration`
   
   * :doc:`/admin_guide/integrations/dotmailer_integration_settings`
+  
+  * :doc:`/admin_guide/integrations/dotmailer_configuration`
+
+  * :doc:`/admin_guide/integrations/dotmailer_single_sign_on` 
   
   * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
 
