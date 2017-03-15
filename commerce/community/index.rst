@@ -15,3 +15,5 @@ Join Oro community and contribute to the open-source OroCommerce Community Editi
    issues/index
 
    question
+
+   release
