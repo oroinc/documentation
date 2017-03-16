@@ -42,7 +42,7 @@ To enable tags for entities:
 
    |
    
-3. In the **Other** section of the entity viewpage, select **Yes** in the **Enable Tags** field.
+3. In the **Other** section of the entity view page, select **Yes** in the **Enable Tags** field.
    
    |
 
