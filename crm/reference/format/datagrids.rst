@@ -178,7 +178,7 @@ specifies how the actual filter looks like. The available options are:
 
 ``force_like`` (**type**: ``bool`` **default**: ``false``)
 
-    When set to true, text-based search applies the ``LIKE %value%`` statement to the search string by default.
+    When set to true, text-based search applies the ``LIKE %value%`` or ``NOT LIKE %value%`` statement to the search string by default. It depends on a chosen operator.
 
 ``min_length`` (**type**: ``integer`` **default**: ``0``)
 
