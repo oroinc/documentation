@@ -34,7 +34,7 @@ To enable tags for entities:
 
    |
 
-2. Open the :ref:`entity <doc-entities>` you wish to enable tags for and click :guilabel:`Edit`. Alternatively, click |IcEdit| to open the entity edit form.
+2. Click |IcEdit| to open the edit form for the required entity.
 
    |
 
