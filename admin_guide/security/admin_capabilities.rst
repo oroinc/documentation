@@ -30,7 +30,7 @@ directed at customers of Magento-based store.
 
 .. important::
 
-    To use this functionality, you also need to :ref:`set up the Abandoned Cart extension <user-guide-acc-ext>`.
+    To use this functionality, you also need to :ref:`set up the Abandoned Cart extension <user-guide-acc>`.
 
     
 .. _admin-capabilities-data-audit:    
