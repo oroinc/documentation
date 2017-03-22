@@ -3,9 +3,12 @@
 Marketing Lists
 ===============
 
+.. contents:: :local:
+    :depth: 2
+
 With OroCRM you can automatically generate a list of contacts used for marketing purposes (mass call or 
 mailing) subject to predefined conditions. For example, you can create a list of personal and contact details of leads 
-added to the system after October 1 with addresses in California. Such lists are called "*Marketing Lists"*.
+added to the system after October 1 with addresses in California. Such lists are called **Marketing Lists**.
 
 Marketing lists can be used to run :ref:`Email Campaigns <user-guide-email-campaigns>` in OroCRM. You can also 
 synchronize OroCRM Marketing lists with Subscribers Lists in :ref:`MailChimp <user-guide-mc-integration>` and/or 
@@ -18,7 +21,7 @@ The way to create and manage Marketing List records is described below.
 Create Marketing Lists
 ----------------------
 
-Go to *Marketing → Marketing Lists* and click the :guilabel:`Create Marketing List` button 
+Go to **Marketing>Marketing Lists** and click the :guilabel:`Create Marketing List` button 
 in the top right corner of the grid.
    
 The Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
@@ -45,15 +48,14 @@ The following fields are mandatory and **must** be specified:
   - **Dynamic** lists are updated as soon as any changes have taken place in the system.
   
   - **On demand** lists will be updated only following the user request 
-    (`refresh the grid <user-guide-ui-components-grid-action-buttons>` in the View page of the Marketing List record)."
-  "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose 
-  :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g. the owner, 
+    (:ref:`refresh the grid <user-guide-ui-components-grid-action-buttons>` in the View page of the Marketing List record)."
+  "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g. the owner, 
   members of the same business unit, system administrator, etc.)."
 
-Optional field **Description** can be filled with free text to help you and other users to understand the purpose or 
+Optional field **Description** can be filled with free text to help you and other users understand the purpose or 
 peculiarities of the list in the future.
 
-Custom fields may be added subject to specific business-needs. 
+Custom fields may be added subject to specific business needs. 
   
 .. image:: ../img/marketing/list_general_details_ex.png
 
@@ -63,7 +65,7 @@ Custom fields may be added subject to specific business-needs.
 Filters
 ^^^^^^^
 
-In the *"Filters"* section you can define  the Activity and/or Data audit and/or Field Condition and/or Condition Group 
+In the **Filters** section you can define  the Activity and/or Data audit and/or Field Condition and/or Condition Group 
 filters that will be used to select the records for the list. 
 
 More information about the ways to define filters is provided in the 
@@ -76,7 +78,7 @@ Columns
 
 .. image:: ../img/marketing/list_columns.png
 
-In the "*Columns*" section, define the set of fields.
+In the **Columns** section, define the set of fields.
 The only goal of this set of fields is to visualise records that meet the filter requirements.
 Value of the chosen fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the 
 Marketing List.
@@ -84,20 +86,20 @@ Marketing List.
 .. note::
 
     Marketing activities require some contact information, so at least one column that contains it must be 
-    selected. The list of these fields is provided in the *"Designer"* section. (e.g. for contacts these are Primary 
+    selected. A list of these fields is provided in the **Designer** section. (e.g. for contacts these are Primary 
     Email and Primary Phone fields).
 
 
 .. image:: ../img/marketing/list_columns_01.png
   
-- Choose the fields from the drop-down in the *"Column*" section.
+- Choose the fields from the drop-down in the **Column** section.
 
 - Label is the way the field will be referred to in the grid. The value defined for the field will be added by default, 
   but can be changed. 
   
 - Define the sorting order if you want the grid to be sorted by the field value.
 
-- Click the :guilabel:`Add` button.
+- Click :guilabel:`Add`.
 
 .. image:: ../img/marketing/list_columns_ex.png
 
@@ -142,10 +144,10 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 
 - :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`.
 
-- Mapping buttons: As soon as OroCRM has been integrated with a third party system, to which a marketing list may be 
-  mapped, you will see :guilabel:`Connect to ...` buttons, with which you
+- Mapping buttons: As soon as OroCRM has been integrated with a third party system to which a marketing list may be 
+  mapped, you will see :guilabel:`Connect to ...` buttons with the help of which you
   can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration>` or
-  :ref:`Address Books of Dotmailer <user-guide-dm-integration>`.
+  :ref:`Address Books in Dotmailer <user-guide-dm-integration>`.
   
   |
   
@@ -184,25 +186,31 @@ The grid contains:
 
 Action icons in the last column of the grid enable the following actions:
 
-- Get to the *"View"* page of the grid item: |IcView|
+- Get to the view page of the grid item: |IcView|
 
 - Unsubscribe/Subscribe items from/to the list manually: |IcUns| and |IcSub| icons
   
 - Remove the item from the list: |IcRemove|
 
-  |
+|
   
-As soon as at least one item has been removed, the *"Removed Items"* grid will appear.
+As soon as at least one item has been deleted from the marketing list, it is moved to the **Removed Items** section of the Marketing list view page.
+
+|
+
+.. image:: ../img/marketing/ml_removed_items.png
+
+|
+
  
+Action icons within **Removed Items** enable the following actions:
 
-Action icons in the last column of the *"Removed Items"* grid enable the following actions:
-
-- Get to the *"View"* page of the grid item: |IcView|
+- Get to the view page of the grid item: |IcView|
 
 - Restore the item in the marketing list: |UndoRem|
 
 
-Now, you can go ahead, and use contacts of your marketing lists to run dedicated campaigns among the customers that best
+Now, you can go ahead and use contacts of your marketing lists to run dedicated campaigns among the customers that best
 suit your purposes. 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png
@@ -226,7 +234,7 @@ suit your purposes.
 .. |IcRemove| image:: ../../img/buttons/IcRemove.png
    :align: middle
 
-.. |UndoRem| image:: ../../img/buttons/IcRemove.png
+.. |UndoRem| image:: ../../img/buttons/UndoRem.png
    :align: middle
       
 .. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
