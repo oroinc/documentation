@@ -21,6 +21,10 @@ Images
 
    <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 
+.. |IcUndo| raw:: html
+
+   <i class="fa fa-undo fa-lg" aria-hidden="true"></i>
+
 .. |IcCheck| raw:: html
 
    <i class="fa fa-check fa-lg" aria-hidden="true"></i>
