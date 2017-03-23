@@ -20,7 +20,8 @@ Oro Team works on multiple products and releases them on time-based schedule, wi
 - **Long-term support (LTS)** versions are released roughly every 6 months. These versions contain all completed features that were introduced in two previous regular versions
 
 .. note::
-**Patch** versions are released roughly once in 2 weeks for all currently maintained regular and maintained/supported LTS versions.
+
+   **Patch** versions are released roughly once in 2 weeks for all currently maintained regular and maintained/supported LTS versions.
 
 
 The key difference between a regular and a LTS version is the duration of the maintenance (bugfix) period. LTS versions are also supported for security fixes.
