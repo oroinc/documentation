@@ -140,8 +140,6 @@ in OroCRM.
    .. image:: ../img/web_tracking_magento/create_website_tracking_record.jpg
    
    |
-   
-   
 
 Step 4: Check User Events
 -------------------------

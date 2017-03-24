@@ -21,23 +21,23 @@ All the Tracking and Email Campaign details can be treated independently or aggr
 * :doc:`/user_guide_roles/marketing_tools/email_campaigns`
 * :doc:`/user_guide_roles/marketing_tools/marketing_tracking_website_records`
 * :doc:`/user_guide_roles/marketing_tools/magento_web_tracking`
-* :doc:`/user_guide_roles/marketing_tools/marketing_campaigns`  
-* :doc:`/user_guide_roles/marketing_tools/magento_newsletter_subs`  
-* :doc:`/user_guide_roles/marketing_tools/rfm_user`  
+* :doc:`/user_guide_roles/marketing_tools/marketing_campaigns`
+* :doc:`/user_guide_roles/marketing_tools/magento_newsletter_subs`
+* :doc:`/user_guide_roles/marketing_tools/rfm_user`
 
 .. toctree::
-    :hidden:
-    :maxdepth: 1
+   :hidden:
+   :maxdepth: 1
 
-    marketing_lists
-    dotmailer_overview
-    sending_email_campaign_via_dotmailer
-    dotmailer_data_fields_mappings
-    sending_abandoned_cart_campaigns
-    sending_email_campaign_via_mailchimp
-    email_campaigns
-    marketing_campaigns
-    marketing_tracking_website_records
-    magento_web_tracking
-    magento_newsletter_subs
-    rfm_user
+   marketing_lists
+   dotmailer_overview
+   sending_email_campaign_via_dotmailer
+   dotmailer_data_fields_mappings
+   sending_abandoned_cart_campaigns
+   sending_email_campaign_via_mailchimp
+   email_campaigns
+   marketing_campaigns
+   marketing_tracking_website_records
+   magento_web_tracking
+   magento_newsletter_subs
+   rfm_user
