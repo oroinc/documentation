@@ -31,7 +31,7 @@ The key difference between a regular and a LTS version is the duration of the ma
 
 Below is the approximate schedule of Oro product releases and support timelines until 2019. Please take into account that numbering of major and minor versions is based on OroPlatform versions and is subject to change.
 
-.. image:: img/release_process/OroReleaseScheduleDark.png
+.. image:: /user_guide/img/OroCommerceReleaseScheduleDark.png
 
 +------------------+--------------------+---------------------+-------------------+
 | Version          | Release Planned in | Maintenance Ends in | Support Ends in   |
