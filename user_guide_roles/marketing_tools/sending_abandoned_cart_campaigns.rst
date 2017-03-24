@@ -3,17 +3,6 @@
 Magento Abandoned Cart Campaigns 
 ================================
 
-=======
-Magento Abandoned Cart Campaigns
-================================
-
-.. contents:: :local:
-    :depth: 3
-    
-Overview
---------
-
->>>>>>> c67ac551b0f3a045090f29938629f58eb7599e98
 OroCRM’s Magento Abandoned Cart Campaign (ACC) functionality allows
 users to receive additional store revenue by increasing conversion of
 abandoned carts.
