@@ -1,3 +1,5 @@
+.. _doc-managing-app-menu:
+
 Managing the Application Menu
 =============================
 

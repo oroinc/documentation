@@ -94,7 +94,7 @@ the user and may be left empty.
 View and Manage Events
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:
+.. note::
 
    The ability to view and edit the events depends on specific roles and permissions defined for them in 
    the system. 
@@ -146,18 +146,18 @@ View and Manage Events
 .. image:: ../img/activities/my_tasks_info.png
 
 
-.. note:
+.. note::
   
-    The calendar events can also be mapped to the Oulook account as described in the corresponding 
-    :ref:`section <outlook-task-mapping>` of the :ref:`Synchronization with Outlook guide `<user-guide-synch-outlook>.
+    The calendar events can also be mapped to the Outlook account as described in the corresponding
+    :ref:`section <outlook-task-mapping>` of the :ref:`Synchronization with Outlook guide <user-guide-synch-outlook>`.
 
 
 
-.. note:
+.. note::
   
     The tasks can also be mapped to the Oulook account as described in the corresponding 
-    :ref:`section <ooutlook-calendar-mapping>` of the 
-    :ref:`Synchronization with Outlook guide `<user-guide-synch-outlook>.
+    :ref:`section <outlook-calendar-mapping>` of the
+    :ref:`Synchronization with Outlook guide <user-guide-synch-outlook>`.
 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png

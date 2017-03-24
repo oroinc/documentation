@@ -131,6 +131,7 @@ A convenient way to see and manage available tasks and calendar events is the Us
 Initially, the calendar (1) will contain all the events and tasks assigned to you, events and tasks of system and 
 organization calendars available to you, as shown in the list of items displayed in the calendar on the left (2).
 
+.. _doc-activities-events-manage-calendar-items:
 
 Add and Manage Calendar Items Displayed
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
