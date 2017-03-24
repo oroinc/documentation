@@ -8,9 +8,12 @@ Code Style Guide
     :depth: 4
 
 Code style
------------
+----------
 
-Code style is a set of conventions about how to write code, and if you wish to contribute code to Oro, the code styles should be observed. To be able to write quality code, follow the golden rule: imitate the existing code. Below, we are outlining the code styles used in all Oro projects. This is done to help the wide-spread Oro community understand our large codebase. 
+Code style is a set of conventions about how to write code, and if you wish to contribute code to Oro, the code styles should be observed. Below, we are outlining the code styles used in all Oro projects. This is done to help the wide-spread Oro community improve readability and maintenance of the large codebase. 
+
+Since Oro projects are based on Symfony framework, it is recommended to follow its standards http://symfony.com/doc/current/contributing/index.html) unless they contradict the guidelines outlined further in this guide.
+
 
 PHP Code Style
 ^^^^^^^^^^^^^^
@@ -59,7 +62,6 @@ It is **required** to add or update a DocBlock for every method you modify or pr
         * @param string $SKU The product SKU (unique product id).
         * 
         * @return string The inventory status of the product found by SKU.
-        * 
         */
 
 Property DocBlock
