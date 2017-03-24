@@ -76,7 +76,7 @@ Step 2: Create MailChimp Integration
 It is necessary to have an active MailChimp Integration to be able to
 send an ACC. See the corresponding section of the `Sending Email Campaign via MailChimp <../../../admin-guide/sending-email-campaign-via-mailchimp>`_ guide for MailChimp integration instructions.
 
-Step 3: Add an Abandoned Cart to the Channel 
+Step 3: Add an Abandoned Cart to the Channel
 --------------------------------------------
 
 Create a Magento Channel for which your ACC will be used. See how to
