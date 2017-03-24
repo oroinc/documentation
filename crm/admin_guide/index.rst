@@ -11,7 +11,7 @@ Please note that in many cases, the tools may be not available to the usual user
 * :doc:`/admin_guide/app_look_feel/index`
 
  * :doc:`/admin_guide/record_mgmt_config/index`
- 
+
   * :doc:`/admin_guide/record_mgmt_config/tag_management`
 
   * :doc:`/admin_guide/record_mgmt_config/workflow_management`
@@ -89,7 +89,7 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/admin_guide/integrations/dotmailer_configuration`
 
   * :doc:`/admin_guide/integrations/dotmailer_single_sign_on` 
-  
+
   * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
 
   * :doc:`/admin_guide/integrations/ms_exchange_integration`

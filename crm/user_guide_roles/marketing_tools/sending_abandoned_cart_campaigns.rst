@@ -3,6 +3,17 @@
 Magento Abandoned Cart Campaigns 
 ================================
 
+=======
+Magento Abandoned Cart Campaigns
+================================
+
+.. contents:: :local:
+    :depth: 3
+    
+Overview
+--------
+
+>>>>>>> c67ac551b0f3a045090f29938629f58eb7599e98
 OroCRM’s Magento Abandoned Cart Campaign (ACC) functionality allows
 users to receive additional store revenue by increasing conversion of
 abandoned carts.
@@ -76,7 +87,7 @@ Step 2: Create MailChimp Integration
 It is necessary to have an active MailChimp Integration to be able to
 send an ACC. See the corresponding section of the `Sending Email Campaign via MailChimp <../../../admin-guide/sending-email-campaign-via-mailchimp>`_ guide for MailChimp integration instructions.
 
-Step 3: Add an Abandoned Cart to the Channel 
+Step 3: Add an Abandoned Cart to the Channel
 --------------------------------------------
 
 Create a Magento Channel for which your ACC will be used. See how to
