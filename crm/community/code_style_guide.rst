@@ -12,7 +12,7 @@ Code style
 
 Code style is a set of conventions about how to write code, and if you wish to contribute code to Oro, the code styles should be observed. Below, we are outlining the code styles used in all Oro projects. This is done to help the wide-spread Oro community improve readability and maintenance of the large codebase. 
 
-Since Oro projects are based on Symfony framework, it is recommended to follow its standards http://symfony.com/doc/current/contributing/index.html) unless they contradict the guidelines outlined further in this guide.
+Since Oro projects are based on Symfony framework, it is recommended to follow its `standards <http://symfony.com/doc/current/contributing/index.html>`__ unless they contradict the guidelines outlined further in this guide.
 
 
 PHP Code Style
