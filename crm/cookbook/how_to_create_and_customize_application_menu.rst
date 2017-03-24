@@ -4,8 +4,10 @@
     single: Menu; Create an Application Menu
     single: Menu; Extend an Application Menu
 
-How to create and customize application menu
-============================================
+.. _doc-create-and-customize-app-menu:
+
+How to Create and Customize the Application Menu
+================================================
 
 *Used application: OroCRM 1.7*
 
