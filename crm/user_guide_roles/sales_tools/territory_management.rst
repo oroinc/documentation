@@ -34,7 +34,7 @@ Sales Territories are disabled by default. Prior to starting work with territory
 Create Territory
 ----------------
 
-Territories menu becomes available under **Sales** in the main menu when the sales territories feature is enabled.
+Territories menu becomes available under **Sales** in the main menu when the sales territories feature is enabled in system configuration.
 
 To create a new territory, navigate to **Sales>Territories** and click **Create Territory**.
 
@@ -97,7 +97,7 @@ So, in this scenario, Leads France will have **no** assigned leads as Leads Pari
 Filters
 ^^^^^^^
 
-A number of filters will be displayed on the Create Territory page. Each filter will correspond to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity will add a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
+A number of :ref:`filters <user-guide-filters-management>` will be displayed on the Create Territory page. Each filter will correspond to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity will add a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
 
 
 
@@ -118,7 +118,7 @@ As an example, we have set a condition to the Opportunity filter, looking only f
 
 |
 
-Once the territory is saved, it will need to be activated to be able to function.
+Once the territory is saved, it will need to be activated to be able to function (see the section below).
 
 
 Activate Territory
