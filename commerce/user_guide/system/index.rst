@@ -8,4 +8,6 @@ This section contains information on optional OroCommerce post-install configura
 
    localization/index
 
+   websites/index
+
    glossary

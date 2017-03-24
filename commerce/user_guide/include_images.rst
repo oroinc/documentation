@@ -5,6 +5,14 @@ Images
 
 .. begin
 
+.. |IcFlag| raw:: html
+
+   <i class="fa fa-flag fa-lg" aria-hidden="true"></i>
+
+.. |IcConfig| raw:: html
+
+   <i class="fa fa-gear fa-lg" aria-hidden="true"></i>
+
 .. |IcTranslate| raw:: html
 
    <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
