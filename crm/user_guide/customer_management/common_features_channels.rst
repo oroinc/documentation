@@ -150,7 +150,7 @@ Manage Channels
 
 The following actions can be performed on channels:
 
-From the :ref:`grid <user-guide-ui-components-grids>`
+From the :ref:`grid <doc-grids>`
 
      |
 

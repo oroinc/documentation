@@ -11,7 +11,7 @@ Magento Customers assigned to Magento Newsletter will be uploaded to OroCRM.
 
     The Magento Newsletter Subscribers are only supported with OroBridge version 1.1.5 or higher.
 
-To see the Magento Newsletter Subscribers :ref:`grid <user-guide-ui-components-grids>` go to the *Marketing* → 
+To see the Magento Newsletter Subscribers :ref:`grid <doc-grids>` go to the *Marketing* → 
 *Magento Newsletter Subscribers*.
 
       |
@@ -20,7 +20,7 @@ To see the Magento Newsletter Subscribers :ref:`grid <user-guide-ui-components-g
 
 |
 
-From the :ref:`grid <user-guide-ui-components-grids>` of Magento Customers you can:
+From the :ref:`grid <doc-grids>` of Magento Customers you can:
 
 - Subscribe or unsubscribe Magento customers to/from the Magento Newsletter: |IcSub| or |IcUns|
 

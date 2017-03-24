@@ -15,7 +15,7 @@ further explanation, you will find links to related documentation.
   :maxdepth: 1
 
   records_overview
-  data_management_grids
+  records_grids
   data_management_view
   data_management_form
   data_management_tags

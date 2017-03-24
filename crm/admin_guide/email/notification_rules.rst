@@ -63,7 +63,7 @@ View and Manage Notification Rules
 ----------------------------------
 
 All the rules available are displayed in the *"All Notification Rules"*
-:ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → Emails → Notification Rules*).
+(*System → Emails → Notification Rules*).
 
 From the grid you can:
 

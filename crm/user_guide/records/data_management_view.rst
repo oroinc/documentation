@@ -25,7 +25,7 @@ Get To a View Page
 
 There are several ways to get to a View page:
 
-- Select the relevant record in a :ref:`grid <user-guide-ui-components-grids>` (click the |IcView| icon).
+- Select the relevant record in a :ref:`grid <doc-grids>` (click the |IcView| icon).
 
 - Find the records in the :ref:`Search Panel <user-guide-getting-started-search>`.
 

@@ -10,7 +10,7 @@ With OroCRM you can automatically generate a list of contacts used for marketing
 mailing) subject to predefined conditions. For example, you can create a list of personal and contact details of leads 
 added to the system after October 1 with addresses in California. Such lists are called **Marketing Lists**.
 
-Marketing lists can be used to run :ref:`Email Campaigns <user-guide-email-campaigns>` in OroCRM. You can also 
+Marketing lists can be used to run :ref:`Email Campaigns <user-guide-email-campaigns>` in OroCRM. You can also
 synchronize OroCRM Marketing lists with Subscribers Lists in :ref:`MailChimp <user-guide-mc-integration>` and/or 
 Address Books in :ref:`DotMailer <user-guide-dm-integration>`.
 
@@ -48,7 +48,7 @@ The following fields are mandatory and **must** be specified:
   - **Dynamic** lists are updated as soon as any changes have taken place in the system.
   
   - **On demand** lists will be updated only following the user request 
-    (:ref:`refresh the grid <user-guide-ui-components-grid-action-buttons>` in the View page of the Marketing List record)."
+    (:ref:`refresh the grid <doc-grids-actions-refresh>` on the view page of the marketing list record)."
   "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g. the owner, 
   members of the same business unit, system administrator, etc.)."
 
@@ -122,7 +122,7 @@ Use action icons in the last column to edit the grid:
 Manage Marketing Lists
 ----------------------
 
-The following actions are available for a marketing list from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a marketing list from the :ref:`grid <doc-grids>`:
 
 .. image:: ../img/marketing/list_action_icons.png
 
@@ -142,10 +142,12 @@ Marketing List View Page
 
 The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list contains:
 
-- :ref:`Action buttons <user-guide-ui-components-grid-action-buttons>`.
+- Action buttons. To learn more about grid actions, see :ref:`Grid Page <doc-grids-grid-page>`.
 
-- Mapping buttons: As soon as OroCRM has been integrated with a third party system to which a marketing list may be 
-  mapped, you will see :guilabel:`Connect to ...` buttons with the help of which you
+
+- Mapping buttons: As soon as OroCRM has been integrated with a third party system, to which a marketing list may be 
+  mapped, you will see :guilabel:`Connect to` buttons, with which you
+
   can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration>` or
   :ref:`Address Books in Dotmailer <user-guide-dm-integration>`.
   

@@ -312,7 +312,7 @@ Manage Reports
 
 The following actions can be performed for a report:
 
-- From the **All Reports** :ref:`grid <user-guide-ui-components-grids>` (**Report & Segments>Manage Custom Reports**):
+- From the **All Reports** :ref:`grid <doc-grids>` (**Report & Segments>Manage Custom Reports**):
 
   |ReportActionIcon|
 

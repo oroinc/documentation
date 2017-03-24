@@ -50,7 +50,7 @@ The attachment is now available from the record View page in the grid in the *At
 
 .. image:: ../img/activities/add_attachment_view.png
 
-From the :ref:`grid <user-guide-ui-components-grids>`, you can
+From the :ref:`grid <doc-grids>`, you can
 
 - Delete the attachment: |IcDelete|
 - Get to the edit form of the attachment: |IcEdit|

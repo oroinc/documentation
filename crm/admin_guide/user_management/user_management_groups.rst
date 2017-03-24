@@ -2,7 +2,7 @@
 
 User Groups 
 ===========
-A *"User group"* is a system entity that represents a group of :term:`users <User>`. 
+A ``user group`` is a system entity that represents a group of :term:`users <User>`.
 By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
 :ref:`filters <user-guide-filters-management>`.
 
@@ -10,11 +10,11 @@ By default, user groups are used in the :ref:`notification rules <system-notific
 Create a User Group
 -------------------
 
-In order to create a user group:
+In order to create a user group, complete as follows:
 
-- Go to *System → User Management → Groups*
-- Click the :guilabel:`Create Group` button
-- Define the general details and the list of users for the group created:
+1. In the main menu, navigate **System>User Management>Groups**.
+2. Click the :guilabel:`Create Group` button.
+3. Define the general details and the list of users for the group. The description of the fields see in the sections below.
 
 General
 ^^^^^^^
@@ -25,29 +25,30 @@ General
 
   "**Owner**","Define a business unit, members of which may be able to manage the user group, subject to the 
   :ref:`access and permission settings <user-guide-user-management-permissions>`"
-  "**Name**","The name used to refer to the user group in the UI."
+  "**Name**","The name used to refer to the user group on the interface."
   
 Users
 ^^^^^
-  Check/uncheck the **HAS GROUP** box, to assign/unassign a user to/from the user group.
+
+  Select / clear the **HAS GROUP** check box, to assign/unassign a user to/from the user group.
 
 .. note::
 
-    The "HAS GROUP" check-box defines if the user is assign the specific user group that you are
+    The **HAS GROUP** check box defines if the user is assign the specific user group that you are
     creating/editing
 
 View and Manage a User Group Record
 --------------------------------------
 
-All the user groups available are displayed in the User Groups 
-:ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → User Management → User Groups*).
+All the user groups available are displayed in the **User Groups**
+grid (**System>User Management>User Groups**).
 
 From the grid you can:
 
 
-- Delete a user group from the system: |IcDelete|
+- Delete a user group from the system: click the |IcDelete| **Delete** icon.
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the user group: |IcEdit|
+- Get to the :ref:`Edit page <user-guide-ui-components-create-pages>` of the user group: click the |IcEdit| **Edit** icon.
 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png

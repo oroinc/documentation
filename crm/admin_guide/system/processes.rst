@@ -37,8 +37,8 @@ The *"All Processes"* grid contains the following details:
 View Process Details
 --------------------
 
-Click the |IcView| :ref:`action icon <user-guide-ui-components-grid-action-icons>` on the grid to get to the 
-:ref:`View page <user-guide-ui-components-view-pages>` of the process an see its details. 
+Click the |IcView| **IcView** on the grid to get to the
+:ref:`View page <user-guide-ui-components-view-pages>` of the process an see its details. (See :ref:`View a Record <doc-grids-actions-records-view>`.)
 
 On the View Page you can see the basic process details (as in the grid) and the **Process Triggers**, i.e. in what
 case and with what delay after the event the process will be executed.

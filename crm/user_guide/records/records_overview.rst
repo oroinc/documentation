@@ -68,7 +68,7 @@ We immediately see some major details of our contacts, such as their first and l
 You can adjust and save grid views, updated and delete grid records, get to the Edit and View pages of any grid record, 
 and even export all the data in the grid as a .csv file.
 
-The grid details are described in the :ref:`Grids <user-guide-ui-components-grids>` guide.
+The grid details are described in the :ref:`Grids <doc-grids>` guide.
 
 View Details of a Specific Record
 ---------------------------------

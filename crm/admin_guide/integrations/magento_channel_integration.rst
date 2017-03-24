@@ -288,8 +288,7 @@ Start Synchronization Manually
 Once integration has been created, the data will be automatically synchronized. However, you can also start the
 synchronization manually from OroCRM:
 
-- Go to **System>Integrations>Manage Integrations** and click the |BSchedule|
-  :ref:`grid action icon <user-guide-ui-components-grid-action-icons>` or
+- Go to **System>Integrations>Manage Integrations** and click the |BSchedule| **Reset** icon.
 
 - Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel and click the integration name link:
 

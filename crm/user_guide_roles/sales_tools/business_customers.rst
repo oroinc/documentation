@@ -1,4 +1,4 @@
-﻿.. _user-guide-system-channel-entities-business-customer:
+.. _user-guide-system-channel-entities-business-customer:
 
 Business Customers
 ==================
@@ -59,7 +59,7 @@ Manage Business Customer Records
 
 The following actions can be performed with business customer records:
 
-From the :ref:`grid <user-guide-ui-components-grids>`:
+From the :ref:`grid <doc-grids>`:
 
 |
 

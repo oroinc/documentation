@@ -59,7 +59,7 @@ Custom fields may be added, subject to specific business-needs.
 Manage Campaigns
 ----------------
 
-The following actions are available for a campaign from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for a campaign from the :ref:`grid <doc-grids>`:
 
 .. image:: ../img/marketing/marketing_campaign_action_icons.png
 
