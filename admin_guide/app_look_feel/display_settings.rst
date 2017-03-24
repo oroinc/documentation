@@ -38,11 +38,12 @@ Define the **Navigation bar** position. Choose a value from the drop-down menu: 
 |
 
 
+.. _doc-configuration-display-settings:
 
 Data Grid Settings
 ------------------
 
-Data Grid settings define different options used to display all the :ref:`entity records grids <user-guide-ui-components-grids>` in the UI.
+Data Grid settings define different options used to display all the :ref:`entity records grids <doc-grids>` in the UI.
 
 |
 

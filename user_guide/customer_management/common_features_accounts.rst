@@ -132,7 +132,7 @@ The following actions can be performed for the accounts from the :ref:`View page
 Account Actions from the Grid 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-From the :ref:`grid <user-guide-ui-components-grids>` you can:
+From the :ref:`grid <doc-grids>` you can:
 
       |
 
@@ -165,7 +165,7 @@ In order to merge accounts:
 
 - Check the accounts that you want to merge
 
-- Choose :ref:`bulk action <user-guide-ui-components-grid-edit>` *Merge Accounts*.
+- Click the **Merge** icon. (See :ref:`Merge Records <doc-grids-actions-records-merge>`.)
 
 *For the sake of example, we are merging three accounts "Acuserv", "Big Bear Stores" and "Casa Bonita"*
 

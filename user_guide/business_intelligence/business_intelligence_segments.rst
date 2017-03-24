@@ -41,7 +41,7 @@ The following fields are mandatory and **must** be specified:
   - **Dynamic** segments are updated as soon as any changes have taken place in the system 
   
   - **Manual** segments will be updated only following the user request 
-    (:ref:`refresh the grid <user-guide-ui-components-grid-action-buttons>` in the View page of the Segment record)"
+    (:ref:`refresh the grid <doc-grids-actions-refresh>` in the View page of the Segment record)"
   "**Owner**","A business unit, members of which can manage the segment, subject to the 
   :ref:`roles <user-guide-user-management-permissions>` defined in the system."
 
@@ -112,7 +112,7 @@ Save the segment in the system with the button in the top right corner of the pa
 Manage Segments
 ---------------
 
-The following actions are available for a segment from the :ref:`grid <user-guide-ui-components-grids>`
+The following actions are available for a segment from the :ref:`grid <doc-grids>`
 
       |
  

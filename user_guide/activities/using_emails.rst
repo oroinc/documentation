@@ -1,7 +1,7 @@
 .. _user-guide-using-emails:
 
 Using Emails
-=============
+============
 
 Emails are essential for conducting day-to-day business activities and
 communicating with co-workers or customers.
@@ -19,7 +19,7 @@ In this email guide, you will learn:
 -  How to setup email notifications.
 
 View and Process Your Emails 
------------------------------
+----------------------------
 
 You can reach your emails in a number of ways, via:
 
@@ -562,7 +562,7 @@ To create an email template:
 
 -  To save the template, click **Save and Close**.
 
-The following actions are available for an email template from the :ref:`grid <user-guide-ui-components-grids>`:
+The following actions are available for an email template from the :ref:`grid <doc-grids>`:
 
 -  Delete the template from the system: |IcDelete|
 
@@ -779,7 +779,7 @@ Note that the **Owner** box is only available for the entities with the :ref:`ow
 
 Click **Save and Close** when you have finished configuring the rule.
 
-All available rules are displayed in the **All Notification Rules** :ref:`grid <user-guide-ui-components-grids>` in **System>Emails>Notification Rules**.
+All available rules are displayed in the **All Notification Rules** :ref:`grid <doc-grids>` in **System>Emails>Notification Rules**.
 
 |
 

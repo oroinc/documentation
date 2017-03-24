@@ -67,7 +67,7 @@ Going Through a Workflow
 ------------------------
 
 If the workflow starts from creation of a record, the transition buttons are available in the top right corner of the 
-:ref:`grid <user-guide-ui-components-grids>`.
+:ref:`grid <doc-grids>`.
 
 E.g. :guilabel:`Start From Lead` and :guilabel:`Start From Opportunity` that create a new Lead or Opportunity record
 at the start of a Sales Process workflow.

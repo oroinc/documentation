@@ -97,7 +97,7 @@ Manage System and Organization Calendars
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following actions can be performed for each calendar and calendar event from their 
-:ref:`grids <user-guide-ui-components-grids>`:
+:ref:`grids <doc-grids>`:
 
 .. image:: ../img/calendars/system_cal_grid.png
 
@@ -176,7 +176,7 @@ Task and Calendar Event Grids
 -----------------------------
 
 Along with the Calendar view, you can also view and process tasks and events from a number of 
-:ref:`grid <user-guide-ui-components-grids>`, as described below:
+:ref:`grid <doc-grids>`, as described below:
 
 .. csv-table::
   :header: "Grid Name", "Route", "Description", "Actions" 

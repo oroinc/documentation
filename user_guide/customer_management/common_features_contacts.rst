@@ -72,8 +72,7 @@ One contact may be assigned to several accounts.
 View and Manage a Contact Record
 --------------------------------
 
-All the contacts available are displayed in the contacts :ref:`grid <user-guide-ui-components-grid-action-icons>` 
-(*Customers → Contacts*).
+All the contacts available are displayed in the contacts grid (**Customers>Contacts**).
 
 |
   
@@ -84,15 +83,15 @@ All the contacts available are displayed in the contacts :ref:`grid <user-guide-
 From the grid you can:
 
 - Export or import contacts, as described in the
-  :ref:`Import and Export Functionality guide <user-guide-export-import>`.
+  :ref:`Import and Export Functionality <user-guide-export-import>` guide .
 
-- Delete a contact from the system: |IcDelete|
+- Delete a contact from the system: click the |IcDelete| **Delete** icon.
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the contact: |IcEdit|
+- Get to the :ref:`edit page <user-guide-ui-components-create-pages>` of the contact: click the |IcEdit| **Edit** icon.
 
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the contact: |IcView|
+- Get to the :ref:`view page <user-guide-ui-components-view-pages>` of the contact: click the |IcView| **View** icon.
 
-- Perform :ref:`bulk delete <user-guide-ui-components-grid-edit>` of several contacts.
+- Perform :ref:`bulk delete <doc-grids-actions-records-delete-multiple>` of several contacts.
 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png

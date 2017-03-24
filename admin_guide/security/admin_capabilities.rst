@@ -231,7 +231,7 @@ Merge Entities
 --------------
 
 
-Users can :ref:`merge <user-guide-ui-components-grids-delete-merge>` 
+Users can :ref:`merge <doc-grids-actions-records-merge>`
 several records of the same entity.
 
 By default, it is recommended to enable this capability. It is usually used by sales representatives.
@@ -309,9 +309,8 @@ communications with potential customers, existing clients, other system users, e
 Share Grid View
 ---------------
 
-A user can share the :ref:`grid <user-guide-ui-components-grids>` views 
-that they have configured. This way, they can :ref:`adjust a grid <user-guide-ui-components-grids-adjust>` and share it 
-with other users.
+A user can :ref:`share the grid views <doc-grids-actions-grid-views-share>`
+that they have configured.
 
 This is particularly useful for team-leads and heads of departments who want to modify and share grids with their 
 subordinates.

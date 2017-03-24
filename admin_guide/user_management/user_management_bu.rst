@@ -6,11 +6,11 @@ Business Unit Records Management
 Create a Business Unit Record
 -----------------------------
 
-In order to create a :term:`Business Unit` record:
+In order to create a :term:`Business Unit` record, complete as follows:
 
-- Go to *System → User Management → Business Units*
-- Click the :guilabel:`Create Business Unit` button
-- Define the general details of the business unit created:
+1. In the main menu, navigate **System>User Management>Business Units**.
+2. Click the :guilabel:`Create Business Unit` button.
+3. Define the details of the business unit. See the fields descriptions in the sections below.
 
 General
 ^^^^^^^
@@ -19,9 +19,9 @@ General
   :header: "**Name**","**Description**"
   :widths: 10, 30
 
-  "**Name**","The name used to refer to the business unit in the UI. This is the only mandatory field."
+  "**Name**","The name used to refer to the business unit on the interface. This is the only mandatory field."
   "**Parent Business Unit**","Define the business unit to which this business unit belongs (a level higher in the 
-  administrative hierarchy), if applicable."
+  administrative hierarchy)."
   "**Phone**
   
   **Website**
@@ -35,27 +35,27 @@ General
   
 Users
 ^^^^^
-  Check/uncheck the **HAS BUSINESS UNIT** box to assign/unassign a user to the business unit:
+  Select / clear the **HAS BUSINESS UNIT** check box to assign/unassign a user to the business unit:
 
 .. note::
 
-    Please note that the "HAS BUSINESS UNIT" check-box defines if the user is assigned the specific business unit that 
+    Please note that the "HAS BUSINESS UNIT" check box defines if the user is assigned the specific business unit that
     you are creating/editing
 
 View and Manage a Business Unit Record
 --------------------------------------
 
-All the business units available are displayed in the Business Units 
-:ref:`grid <user-guide-ui-components-grid-action-icons>` (*System → User Management → Business Units*).
+All the business units available are displayed in the **Business Units**
+grid (**System>User Management>Business Units**).
 
 From the grid you can:
 
 
-- Delete a business unit from the system: |IcDelete|
+- Delete a business unit from the system: click the |IcDelete| **Delete** icon.
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the business unit: |IcEdit|
+- Get to the :ref:`Edit page <user-guide-ui-components-create-pages>` of the business unit: click the |IcEdit| **Edit** icon.
 
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the business unit: |IcView|
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the business unit: click the |IcView| **View** icon.
 
 
 
