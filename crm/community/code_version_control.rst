@@ -22,19 +22,19 @@ There is a number of tools to manage git repositories, for instance:
   
 
 Pull Request
--------------
+------------
 
 The best way to contribute a bug fix or enhancement is to submit a `pull request`_ to `OroCRM <http://github.com/orocrm/>`_. 
 
 Before you submit your pull request consider the following guidelines:
 
 * Search GitHub for an open or closed Pull Request that relates to your submission. You don't want to duplicate effort.
-* Please sign our `Contributor License Agreement`_ (CLA) before submitting pull requests. The CLA must be signed for any code or documentation changes to be accepted.
+* Please sign our `Contributor License Agreement`_ (CLA) before (or after) submitting pull requests. The CLA must be signed for any code or documentation changes to be accepted.
 
 .. _Contributor License Agreement: http://www.orocrm.com/contributor-license-agreement
 
 Commit message
----------------
+--------------
 
 The merge commit message contains the message from the author of the changes. This can help understand what the changes were about and the reasoning behind the changes. Therefore, commit messages should include a list of performed actions or changes in the code:
 
