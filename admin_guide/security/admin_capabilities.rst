@@ -222,7 +222,7 @@ by system administrators when :ref:`creating or editing a user record <user-mana
 
 .. hint::
 
-    This capability does not influence a user's ability to :ref:`edit their own password <user-guide-getting-started-profile-password>` from the **My User** page.
+    This capability does not influence a user's ability to edit their own password from the **My User** page (see step 5 of the :ref:`Edit Your Profile <doc-my-user-actions-edit>` action description.
 
 
 .. _admin-capabilities-merge:
@@ -243,7 +243,7 @@ Outlook Integration
 -------------------
 
 This capability is meaningful for Enterprise users only. If it is enabled, users can 
-:ref:`download <user-guide-getting-started-my-user-outlook>` the latest version of the OroCRM add-in for Outlook.
+ download the latest version of the OroCRM add-in for Outlook (see the **MS Outlook Add-In** field description of the :ref:`General <doc-my-user-view-page-general>` section of the **My User** page.
 
 If :ref:`OroCRM is synchronized with Outlook <user-guide-synch-outlook>`, you can use the add-in to synchronize 
 contacts, tasks, and calendar events between OroCRM and your Outlook account. You can also associate emails to accounts, 

@@ -47,7 +47,7 @@ Create a User
 
     - **Name Suffix**— Type a name suffix of the user. A name suffix is used after the user's name and provides additional information about the user. 
 
-    - **Birthday**—Click this field and select the user's date of birth using a pop-up calendar. Alternatively, you can type the date in the format defined by your current locale (for more information about locales, see the `Localization <doc-user-management-users-configuration-localization>` section).
+    - **Birthday**—Click this field and select the user's date of birth using a pop-up calendar. Alternatively, you can type the date in the format defined by your current locale (for more information about locales, see the :ref:`Localization <doc-user-management-users-configuration-localization>` section).
 
     -  **Avatar**—Click :guilabel:`Choose File` to locate a user's photo or another picture associated with the user on your computer or other device. 
     
@@ -555,7 +555,7 @@ When you suspect a security breach, you can reset passwords for multiple users a
 
   |
 
-  .. image:: ../img/user_management/user_resetpassword.png 
+  .. image:: ../img/user_management/user_resetpassword2.png
 
   |
 
