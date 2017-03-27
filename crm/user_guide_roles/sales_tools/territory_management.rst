@@ -9,15 +9,14 @@ Sales Territories
 Overview
 ---------
 
-Sales Territories represent a specific customer group or segment that sales teams are responsible for managing. In other words, it is a way to share existing or potential workload among sales teams, then group and structure it in a way that will be relevant to your business. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, a sales rep B can be responsible for country B. 
+A sales territory is the customer group or geographical area for which an individual sales person or a sales team holds responsibility. Territories can be based on various factors such as geography, industry, product line, the expected revenue, etc. Territory Management is a system by which customer accounts are grouped based on a defined set of criteria. This makes for easy sharing of customer accounts among sales teams in your company. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, a sales rep B can be responsible for country B. 
 
 Currently, the sales territory management feature is available for leads, opportunities and all types of customers.
 
 With Sales Territories you can:
 
 - Define territories for leads, opportunities, and any customer type.
-- Balance the workload and output per sales person.
-- Assign entities to users within particular territories.
+- Organize and balance the workload of sales people.
 - Automatically assign records to different territories.
 - Prioritize specific territories making sure they do not overlap.
 - Filter data by territory via the dashboard widget.
@@ -53,13 +52,13 @@ A page will open with the following fields to fill in within the General section
 
   "**Name**","The name specified for your territory." 
   "**Owner**","Limits the list of users who can manage the territory."
-  "**Priority**","Territory with the lowest priority will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
+  "**Priority**","Territory with the lowest priority number will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
   "**Description**","If necessary, enter a short but meaningful description related to the territory you are creating."
 
 Priorities
 ^^^^^^^^^^
 
-Specifying and managing territory type priority information helps you choose the appropriate territory type for territories you create or edit. Setting a priority will determine what records the territory should display, or which territory should display what data. 
+Setting a priority determines what records the territory should display, or which territory should display what data. 
 
 As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of leads' addresses have France specified for the country and Paris for the city within the same address record.
 
@@ -127,7 +126,7 @@ Activate Territory
 Once the details have been saved, a new territory with its matching records should become available in the **Matching Records** section. Matching records are records filtered according to the conditions determined for a specific territory. By default, the territory is inactive. To activate the territory and assign it to the opportunity records, click :guilabel:`Activate`.
 
 
-.. note:: Note that if the territory has not been activated, the Territory column of the Matching records grid will not contain any records yet.
+.. note:: Note that if the territory has not been activated, the Territory column of the Matching records grid will not contain any values yet.
 
 |
 
