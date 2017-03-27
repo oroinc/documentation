@@ -52,13 +52,15 @@ A page will open with the following fields to fill in within the General section
 
   "**Name**","The name specified for your territory." 
   "**Owner**","Limits the list of users who can manage the territory."
-  "**Priority**","Territory with the lowest priority number will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
+  "**Priority**","Territory with the highest priority (e.g. 1) will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
   "**Description**","If necessary, enter a short but meaningful description related to the territory you are creating."
 
 Priorities
 ^^^^^^^^^^
 
-Setting a priority determines what records the territory should display, or which territory should display what data. 
+Setting a priority determines what records the territory should display, or which territory should display what data.
+
+.. note:: Please avoid using negative priority numbers as this may cause to the confusion.
 
 As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of leads' addresses have France specified for the country and Paris for the city within the same address record.
 
