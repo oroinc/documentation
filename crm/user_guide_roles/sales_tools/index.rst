@@ -14,6 +14,7 @@ B2B enterprises.
   * :doc:`/user_guide_roles/sales_tools/leads`
   * :doc:`/user_guide_roles/sales_tools/opportunities`
   * :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
+  * :doc:`/user_guide_roles/sales_tools/territory_management`
 
 * :doc:`/user_guide_roles/sales_tools/magento_channels_index`
 
