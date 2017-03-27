@@ -8,7 +8,7 @@ In this section, you can find more information about Sales channels and the enti
 * :doc:`/user_guide_roles/sales_tools/leads`
 * :doc:`/user_guide_roles/sales_tools/opportunities`
 * :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
-
+* :doc:`/user_guide_roles/sales_tools/territory_management`
 
 .. toctree::
     :hidden:
@@ -19,3 +19,4 @@ In this section, you can find more information about Sales channels and the enti
     leads
     opportunities
     sales_processes_workflow
+    territory_management
