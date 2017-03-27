@@ -60,7 +60,7 @@ Priorities
 
 Setting a priority determines what records the territory should display, or which territory should display what data.
 
-.. note:: Please avoid using negative priority numbers as this may cause to the confusion.
+.. note:: Please avoid using negative priority numbers as this may cause the confusion.
 
 As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of leads' addresses have France specified for the country and Paris for the city within the same address record.
 
