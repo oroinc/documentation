@@ -104,6 +104,8 @@ This section provides links to the online documentation for the latest OroCommer
 
     system_requirements
 
+    seo_config_guide/index
+
 ..     admin_guide/index
 
 ..     install_guide/index

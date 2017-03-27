@@ -1,9 +1,11 @@
-Localization
-------------
+
+
+Global Localization Settings
+----------------------------
 
 .. begin
 
-To define the localization options (system locale, primary location, address formatting method, system timezone, calendar year settings, temperatuire and wind speed units on the map, enabled localizations and the default one):
+To define the localization options (system locale, primary location, address formatting method, system timezone, calendar year settings, temperature and wind speed units on the map, enabled localizations and the default one):
 
 1. Navigate to the localization settings:
 

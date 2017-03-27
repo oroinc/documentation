@@ -14,6 +14,8 @@ For detailed information on these topics please see the following sections:
 
    translations
 
-   Localization Settings <localization>
+   Global Localization Settings <localization>
+
+   Website Localization Settings <website_localization>
 
    language_settings
