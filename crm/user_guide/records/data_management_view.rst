@@ -3,6 +3,11 @@
 View Pages
 ==========
 
+.. contents:: :local:
+    :depth: 3
+
+Overview
+--------
 To see more details of a specific record, and to work directly with the record (i.e., create a task related to a 
 customer, appoint a calendar event for a user, turn a cart into an order, share a contact, and so on), you need to get 
 to its View page. 
@@ -36,13 +41,13 @@ What You Can See on a View Page
 -------------------------------
 
 Details of the chosen record are displayed on a View page. (The list of properties shown is defined 
-by the system administrator with the *"Show On View"* setting of the entity fields).
+by the system administrator with the **Show On View** setting of the entity fields).
 
 Information in a View page is allocated in sections that you can easily switch between. All the sections are placed one 
 after another, so you can also scroll down to find information.
 
-For example, this is a View page of an opportunity with *"General Information"*, *"Activities"* and 
-*"Additional Information"* sections:
+For example, this is a View page of an opportunity with **General Information**, **Activities** and
+**Additional Information** sections:
 
 |
 
@@ -92,7 +97,7 @@ If there are four or less actions available for a record, a separate button is c
 |
 
 If there are more than four actions available for a record, they will be collected under the 
-*"{Entity Name} Actions*" drop-down.
+**{Entity Name} Actions** drop-down.
 
 |
 
@@ -100,6 +105,41 @@ If there are more than four actions available for a record, they will be collect
 
 |
 
+Inline Editing
+~~~~~~~~~~~~~~
+
+Inline editing is available for a particular number of entities, such as opportunities, tasks or contacts.
+
+To be able to perform inline editing from a record's view page:
+
+1. Point to the value you want to edit. If the |IcEditInline| **Edit Inline** icon appears next to it, inline editing is available for the value.
+2. Click the |IcEditInline| **Edit Inline** icon. Alternatively, double click on the value itself.
+
+|
+
+.. image:: ../img/data_management/view/inline_editing_1.png
+
+|
+
+3. Modify the value as required.
+
+   Inline editors can be of different types. The simplest inline editor is a plain text field, where you can type the required value.
+
+|
+
+.. image:: ../img/data_management/view/inline_editing_2.png
+
+|
+
+   In some cases, you will need to select the value from a dropdown.
+
+|
+
+.. image:: ../img/data_management/view/inline_editing_3.png
+
+|
+
+4. Click the |IcSaveChanges| **Save Changes** icon to save a new value, or click the |IcDiscardChanges| **Discard Changes** icon to return to the old value.
 
 Review the Record History
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -139,7 +179,7 @@ marketing team. Marketing associates don't have access to opportunity records, b
 record with a specific user (or group of users), whose assistance is needed.
 
 To share a record, click the :guilabel:`Share`, and enter the name of the user to share the record with in the 
-*"Share with"* field or click the list icon to select such user(s). 
+**Share with** field or click the list icon to select such user(s).
 
 |
 
@@ -188,3 +228,11 @@ Get to Other Pages
 .. |IcView| image:: ../../img/buttons/IcView.png
    :align: middle
    
+.. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
+	:align: middle
+
+.. |IcDiscardChanges| image:: ../../img/buttons/IcDiscardChanges.png
+   :align: middle
+
+.. |IcSaveChanges| image:: ../../img/buttons/IcSaveChanges.png
+   :align: middle

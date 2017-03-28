@@ -266,7 +266,7 @@ To create a new opportunity manually:
   "**Additional comments**","Enter additional comments if necessary."
 
 Convert to Opportunity Form
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Convert To Opportunity Form** contains **Opportunity Information** and **New Contact Information** forms.
 
@@ -449,7 +449,11 @@ To change the grid view, click on the arrow icon on the right of **Open Opportun
 Inline Editing
 ^^^^^^^^^^^^^^
 
-Inline editing within the grid can help you amend opportunity details without opening the edit opportunity form. To edit opportunities from the grid, double-click on the field or the edit icon in the field you wish to edit.
+:ref:`Inline editing <doc-grids-actions-records-edit-inline>` can help you amend opportunity details without opening the edit opportunity form. For opportunities, it is available from records' grids and view pages.
+
+If the |IcEditInline| **Edit Inline** icon appears next to the field, inline editing is available for that value.
+
+To edit the opportunity from the grid, double-click on the field or the inline editing icon |IcEditInline| in the field you wish to edit. 
 
 |
 |
@@ -466,6 +470,32 @@ Inline editing within the grid can help you amend opportunity details without op
 
 |
 |
+
+Do the same for a record within its view page:
+
+|
+
+.. image:: ../img/opportunities_2.0/view_inline_editing_1.png
+
+|
+
+|
+
+.. image:: ../img/opportunities_2.0/view_inline_editing_2.png
+
+|
+
+Currently you can use inline editing for the following fields within the view page of a record:
+
+- Opportunity Name
+- Status
+- Contact
+- Probability
+- Budget Amount
+- Tags
+- Close Reason
+- Close Revenue
+- Expected Close Date
 
 Kanban Board
 ^^^^^^^^^^^^
@@ -899,4 +929,7 @@ The report shows:
    :align: middle
 
 .. |IcView| image:: ../../img/buttons/IcView.png
+   :align: middle
+
+.. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
    :align: middle
