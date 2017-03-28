@@ -46,6 +46,7 @@ The merge commit message contains the message from the author of the changes. Th
 
 - <action 1>
 - <action 2>
+- <action 3>
 - ...
 
 Signing a Contributor License Agreement
