@@ -27,7 +27,7 @@ Join the Translation Team
    2. Follow the link in the confirmation Email to activate you account.
 
 2. Click `OroCRM <http://translate.orocrm.com>`_ link to offer translations for OroCRM or
-   `Oro Platrom <http://translate.platform.orocrm.com>`_ to offer translations for OroPlatform.
+   `OroPlatform <http://translate.platform.orocrm.com>`_ to offer translations for OroPlatform.
 
    The project page will appear.
 
