@@ -242,9 +242,10 @@ Territories in Widgets
 
 Sales Territories can also be used in the following widgets:
 
-- Forecast.
-- Leads Statistics.
-- Opportunities Statistics.
+- Forecast
+- Leads Statistics
+- Opportunities Statistics
+- Opportunities by Status
 
 
 
@@ -265,6 +266,12 @@ Within these widgets, you can view records filtered within one or several specif
 |
 
 .. image:: ../img/territories/leads_statistics.png
+
+|
+
+|
+
+.. image:: ../img/territories/opp_by_status_ter.png
 
 |
 
