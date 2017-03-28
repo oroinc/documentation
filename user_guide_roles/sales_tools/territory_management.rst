@@ -9,15 +9,14 @@ Sales Territories
 Overview
 ---------
 
-Sales Territories represent a specific customer group or segment that sales teams are responsible for managing. In other words, it is a way to share existing or potential workload among sales teams, then group and structure it in a way that will be relevant to your business. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, a sales rep B can be responsible for country B. 
+A sales territory is the customer group or geographical area for which an individual sales person or a sales team holds responsibility. Territories can be based on various factors such as geography, industry, product line, the expected revenue, etc. Territory Management is a system by which customer accounts are grouped based on a defined set of criteria. This makes for easy sharing of customer accounts among sales teams in your company. In the simplest scenario, you can assign tasks based on geographical territory relation, where a sales rep A can be responsible for country A, a sales rep B can be responsible for country B. 
 
 Currently, the sales territory management feature is available for leads, opportunities and all types of customers.
 
 With Sales Territories you can:
 
 - Define territories for leads, opportunities, and any customer type.
-- Balance the workload and output per sales person.
-- Assign entities to users within particular territories.
+- Organize and balance the workload of sales people.
 - Automatically assign records to different territories.
 - Prioritize specific territories making sure they do not overlap.
 - Filter data by territory via the dashboard widget.
@@ -34,7 +33,7 @@ Sales Territories are disabled by default. Prior to starting work with territory
 Create Territory
 ----------------
 
-Territories menu becomes available under **Sales** in the main menu when the sales territories feature is enabled.
+Territories menu becomes available under **Sales** in the main menu when the sales territories feature is enabled in system configuration.
 
 To create a new territory, navigate to **Sales>Territories** and click **Create Territory**.
 
@@ -53,13 +52,15 @@ A page will open with the following fields to fill in within the General section
 
   "**Name**","The name specified for your territory." 
   "**Owner**","Limits the list of users who can manage the territory."
-  "**Priority**","Territory with the lowest priority will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
+  "**Priority**","Territory with the highest priority (e.g. 1) will be assigned to the record in case of overlapping definitions. The lower is the number, the higher is the priority. For more details on priorities, see the next section of the guide."
   "**Description**","If necessary, enter a short but meaningful description related to the territory you are creating."
 
 Priorities
 ^^^^^^^^^^
 
-Specifying and managing territory type priority information helps you choose the appropriate territory type for territories you create or edit. Setting a priority will determine what records the territory should display, or which territory should display what data. 
+Setting a priority determines what records the territory should display, or which territory should display what data.
+
+.. note:: Please avoid using negative priority numbers as this may cause the confusion.
 
 As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of leads' addresses have France specified for the country and Paris for the city within the same address record.
 
@@ -97,7 +98,7 @@ So, in this scenario, Leads France will have **no** assigned leads as Leads Pari
 Filters
 ^^^^^^^
 
-A number of filters will be displayed on the Create Territory page. Each filter will correspond to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity will add a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
+A number of :ref:`filters <user-guide-filters-management>` will be displayed on the Create Territory page. Each filter will correspond to the entity for which the territory has been enabled. Setting conditions to the filter of a specific entity will add a territory to its records. For instance, if you enable territories for leads, a Lead filter will become available in the Create Territory form. When you set conditions to the Lead filter, a territory will be added to the records of leads.
 
 
 
@@ -118,7 +119,7 @@ As an example, we have set a condition to the Opportunity filter, looking only f
 
 |
 
-Once the territory is saved, it will need to be activated to be able to function.
+Once the territory is saved, it will need to be activated to be able to function (see the section below).
 
 
 Activate Territory
@@ -127,7 +128,7 @@ Activate Territory
 Once the details have been saved, a new territory with its matching records should become available in the **Matching Records** section. Matching records are records filtered according to the conditions determined for a specific territory. By default, the territory is inactive. To activate the territory and assign it to the opportunity records, click :guilabel:`Activate`.
 
 
-.. note:: Note that if the territory has not been activated, the Territory column of the Matching records grid will not contain any records yet.
+.. note:: Note that if the territory has not been activated, the Territory column of the Matching records grid will not contain any values yet.
 
 |
 
@@ -241,9 +242,10 @@ Territories in Widgets
 
 Sales Territories can also be used in the following widgets:
 
-- Forecast.
-- Leads Statistics.
-- Opportunities Statistics.
+- Forecast
+- Leads Statistics
+- Opportunities Statistics
+- Opportunities by Status
 
 
 
@@ -264,6 +266,12 @@ Within these widgets, you can view records filtered within one or several specif
 |
 
 .. image:: ../img/territories/leads_statistics.png
+
+|
+
+|
+
+.. image:: ../img/territories/opp_by_status_ter.png
 
 |
 
