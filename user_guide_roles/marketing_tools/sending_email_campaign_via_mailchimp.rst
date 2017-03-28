@@ -38,7 +38,7 @@ You need to complete the following fields to create your marketing list:
 | **Owner**       | Limits the list of users that can manage the marketing list to the users, whose :ref:`roles <user-guide-user-management-permissions-roles>` allow managing marketing lists of the owner                |
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-You can add multiple columns to your marketing list in OroCRM but only First Name, Last Name and Email details will be synced over to MailChimp.
+.. note:: You can add multiple columns to your marketing list in OroCRM but only First Name, Last Name and Email details will be synced over to MailChimp.
 
 Note that adding an Email column is vital to be able to send an email campaign via MailChimp.
 
