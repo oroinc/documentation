@@ -10,4 +10,6 @@ This section contains information on optional OroCommerce post-install configura
 
    websites/index
 
+   menu/index
+
    glossary

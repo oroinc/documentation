@@ -4,6 +4,10 @@
     single: Menu; Create an Application Menu
     single: Menu; Extend an Application Menu
 
+.. _doc-managing-app-menu:
+.. _doc-create-and-customize-app-menu:
+
+
 How to Create and Customize Application Menu
 ============================================
 
