@@ -1,7 +1,7 @@
 .. _user-guide-productivity-tools:
 
 Activities
-=============
+==========
 
 An important part of a successful customer relations process is clear and timely communications between all the 
 stakeholders. OroCRM's provides a number of tools to enable them.
@@ -19,7 +19,7 @@ calendar events, and more.
     activities_add_assign_calendar_events
     calendars_overview
     using_emails
-    activities_log_call
+    calls/activities_calls_overview
     activities_create_contact_request
     activities_add_note
     activities_add_comment

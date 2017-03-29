@@ -4,7 +4,7 @@ Activities
 ==========
 
 .. contents:: :local:
-    :depth: 3
+    :depth: 2
 
 
 
@@ -188,6 +188,8 @@ Communications
 Making and Logging Calls
 """"""""""""""""""""""""
 
+.. start-include-calls
+
 Although not every company employee makes calls very often, calls play one of the most crucial roles in sales and are of significant help to support teams. For those users who make and receive many calls per day or / and communicate  with clients by phone, it is convenient to have an instrument that enables them to make records of who they called to and what they discussed. Such instrument is also helpful to managers who can monitor the progress of important tasks and see if all key contacts have received enough attention.
 
 OroCRM's call logging functionality allows users to record who the call was with, which party initiated it, when it was made and what its duration and subject were. A user can also make additional notes regarding the conversation and mention what entity records it dealt with. 
@@ -213,7 +215,7 @@ There are three ways to start making or logging a call:
 
 |
 
-Users can access logged calls in the dedicated system section, in the **Activities** section of their user page, via the **Recent calls** dashboard widget. If an entity record is marked as a context for a call, this call appears in the **Activity** section on the entity record view page.
+Users can access logged calls in the dedicated system section, in the **Activities** section of their user page, via the :ref:`Recent Calls <doc-widgets-recent-calls>` dashboard widget. If an entity record is marked as a context for a call, this call appears in the **Activity** section on the entity record view page.
 
 |
 
@@ -226,12 +228,12 @@ Users can access logged calls in the dedicated system section, in the **Activiti
 
 
 
-For more information about logging calls, see the :ref:`Calls <user-guide-activities-calls>` guide.
+For more information about logging calls, see the :ref:`Calls <doc-activities-calls>` guide.
 
 
 For information about whether Hangouts calls are available for you, contact an administrator or see the :ref:`Voice and Video Calls via Hangouts <user-guide-hangouts>` guide.
 
-
+.. end-include-calls
 
 Sending and Receiving Emails
 """"""""""""""""""""""""""""
