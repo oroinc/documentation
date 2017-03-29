@@ -202,7 +202,7 @@ Log or Make a Call
 
     - If you are using a browser other than Chrome, you also need to have the Google Hangout or Google Talk extension for your browser installed.
 
-For more information about calls, see the :ref:`Calls <user-guide-activities-calls>` guide.
+For more information about calls, see the :ref:`Calls <doc-activities-calls>` guide.
 
 
 
