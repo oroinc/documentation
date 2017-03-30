@@ -59,7 +59,13 @@ are available:
 Email Threads
 -------------
 
-The section field **Display Emails In Activities As** defines if the emails and replies must be displayed separately or in a thread.
+Section fields **Display Email Conversations As** and **Display Emails In Activities As** define if the emails and replies must be displayed separately or in a thread.
+
+
+|
+
+.. image:: ../img/configuration/threads_settings.png
+
 
 |
 
@@ -72,6 +78,8 @@ The section field **Display Emails In Activities As** defines if the emails and 
 .. image:: ../img/configuration/non_threaded_activities.jpg
 
 |
+
+
 
 Reply
 -----

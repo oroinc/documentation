@@ -10,7 +10,19 @@ Please note that in many cases, the tools may be not available to the usual user
 
 * :doc:`/admin_guide/app_look_feel/index`
 
- * :doc:`/admin_guide/record_mgmt_config/index`
+  * :doc:`/admin_guide/app_look_feel/application_settings`
+  
+  * :doc:`/admin_guide/app_look_feel/display_settings`
+    
+  * :doc:`/admin_guide/app_look_feel/language_settings`
+  
+  * :doc:`/admin_guide/app_look_feel/localization_settings`
+    
+  * :doc:`/admin_guide/app_look_feel/menus_config`
+    
+  * :doc:`/admin_guide/app_look_feel/upload_settings`
+
+* :doc:`/admin_guide/record_mgmt_config/index`
 
   * :doc:`/admin_guide/record_mgmt_config/tag_management`
 
@@ -19,10 +31,16 @@ Please note that in many cases, the tools may be not available to the usual user
 * :doc:`/admin_guide/email/index`
 
   * :doc:`/admin_guide/email/system_mailboxes`
+  
+  * :doc:`/admin_guide/email/system_mailbox_settings`
 
   * :doc:`/admin_guide/email/email_templates`
 
   * :doc:`/admin_guide/email/notification_rules`
+  
+  * :doc:`/admin_guide/email/email_configuration`
+  
+  * :doc:`/admin_guide/email/email_configuration_settings`
 
 * :doc:`/admin_guide/entities/index`
 
