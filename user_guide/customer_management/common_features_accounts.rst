@@ -7,11 +7,11 @@ Accounts
     :depth: 2
 
 
-To collect and process information on the customer activity of a person, group of people or business cooperating with 
+To collect and process information on the customer activity of a person, group of people or business cooperating with
 you, you can create an **Account** record that will represent them in OroCRM.
 
-An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing 
-a 360-degree view of the customer. 
+An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing
+a 360-degree view of the customer.
 
 
 .. _user-guide-accounts-create:
@@ -37,28 +37,28 @@ The following fields are mandatory and **must** be defined:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Owner**","Limits the list of users that can manage the account to users,  whose 
-  :ref:`roles <user-guide-user-management-permissions>` allow managing 
+  "**Owner**","Limits the list of users that can manage the account to users,  whose
+  :ref:`roles <user-guide-user-management-permissions>` allow managing
   accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
-  
+
   By default, the user creating the account is chosen."
   "**Account Name**","The name used to refer to the account in the system."
   "**Description**","Details or a short description of an account record."
 
 
-- To add a contact, click the :guilabel:`+Add` in the **Contacts** section. 
+- To add a contact, click the :guilabel:`+Add` in the **Contacts** section.
 
 If you need to record and process any other details of accounts, contact your administrator or see the
-:ref:`custom fields <doc-entity-fields-create>` section for more information. Their values will 
+:ref:`custom fields <doc-entity-fields-create>` section for more information. Their values will
 be displayed in the **Additional** section.
-  
-Once all the necessary information has been defined, click the button in the right top corner of the page to save the 
+
+Once all the necessary information has been defined, click the button in the right top corner of the page to save the
 account in the system.
 
 .. hint::
 
-    You can also export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
-    the :ref:`Export and Import Functionality <user-guide-import>` guide. 
+    You can also export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in
+    the :ref:`Export and Import Functionality <user-guide-import>` guide.
 
 
 Manage Account Records
@@ -69,14 +69,14 @@ Accounts View Page
 
 The :ref:`view page <user-guide-ui-components-view-pages>` consists of several sections, namely:
 
-- **Page Header**: date of the account creation and its latest update, as well as its 
+- **Page Header**: date of the account creation and its latest update, as well as its
   :term:`lifetime sales value <Lifetime Sales Value>`.
 
 - **General**: general details of the account, such as its name, tags, description and all the contacts assigned to the
-  account. 
+  account.
 
   |
-  
+
 .. image:: ../img/accounts/accounts_view_general.png
 
 |
@@ -84,12 +84,12 @@ The :ref:`view page <user-guide-ui-components-view-pages>` consists of several s
 - **Activity**: activities such as calls, emails and tasks assigned to the account.
 
   |
-  
+
 .. image:: ../img/accounts/accounts_view_activities.png
 
 .. note::
-    
-    If an activity-related action was performed for a customer or a contact assigned to the account, they will not be 
+
+    If an activity-related action was performed for a customer or a contact assigned to the account, they will not be
     displayed. Only the activities performed directly for the account are available in the section.
 
 - **Opportunities**: a list of opportunities related to an account.
@@ -109,15 +109,15 @@ The :ref:`view page <user-guide-ui-components-view-pages>` consists of several s
   .. image:: ../img/accounts/accounts_view_website_activity_1.png
 
   |
-  
+
   |
 
   .. image:: ../img/accounts/accounts_view_website_activity_2.png
 
   |
 
-- **Sections with channel names**: each section contains details of all the customers that are assigned to this 
-  account and belong to a specified channel, as described in the 
+- **Sections with channel names**: each section contains details of all the customers that are assigned to this
+  account and belong to a specified channel, as described in the
   :ref:`multichannel functionality description <user-guide-multi-channel-overview>`.
 
     .. note:: The number and names of such sections depend on the number and names of OroCRM channels and customer records assigned to the account. The type of channels can vary   depending on your configurations and integrations (e.g. Sales, Magento, Commerce).
@@ -207,7 +207,7 @@ The following actions can be performed for the accounts from the :ref:`View page
 
 .. note:: Actions available in the system depend on the system settings defined in the **Communication & Collaboration** settings section of the  **Accounts** entity (see step 4 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
 
-Account Actions from the Grid 
+Account Actions from the Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 From the :ref:`grid <user-guide-ui-components-grids>` you can:
@@ -220,7 +220,7 @@ From the :ref:`grid <user-guide-ui-components-grids>` you can:
 
 - View the account by clicking |IcView|.
 - Delete the account from the system by clicking |IcDelete|.
-  
+
 - Edit the account by clicking |IcEdit|.
 
 - Do inline editing for specific columns, such as account name, owner or tags, by clicking |IcEditInline|.
@@ -280,16 +280,16 @@ Once you have clicked :guilabel:`Merge Accounts`, a table with merge-settings wi
 
 - Choose the owner of the accounts being merged, that will be given to the Master Record.
 
-- Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be 
+- Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be
   appended.
 
 - Click :guilabel:`Merge`.
-  
+
 A Master Record with the merged data of several accounts will be created. The rest of the account details, including details
 of the customer identities will be appended.
 
 
-      
+
 .. _user-guide-accounts-reports:
 
 Reports with Account Records
@@ -297,16 +297,16 @@ Reports with Account Records
 
 OroCRM currently comes with two ready-to-use reports on accounts:
 
-- Accounts Life Time Value 
+- Accounts Life Time Value
 
 - Accounts by Opportunities
 
- 
-Accounts Life Time Value 
+
+Accounts Life Time Value
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a simple but useful report, with which you can see the total amount of money received from all the customers 
-assigned to the account. 
+This is a simple but useful report, with which you can see the total amount of money received from all the customers
+assigned to the account.
 
 In order to see the report go to **Reports and Segments>Reports>Accounts>Life Time**.
 
@@ -326,14 +326,14 @@ It shows:
 Accounts by Opportunities
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With this report you can see number of won, lost and pending opportunities for all the customers assigned to the 
-account. 
+With this report you can see number of won, lost and pending opportunities for all the customers assigned to the
+account.
 
 In order to see the report go to **Reports and Segments>Reports>Accounts>By Opportunities**.
 
 It shows:
 
-- the account name 
+- the account name
 
 - the number of won opportunities for all the customers assigned to the account
 
@@ -346,15 +346,15 @@ It shows:
 - total number of opportunities of a kind, regardless of their account.
 
 |
-  
+
 .. image:: ../img/accounts/accounts_report_by_opportunity.png
 
 |
 
 .. hint::
 
-    New custom reports can be added, that can use details of the accounts as well as of any records related to the 
-    accounts. For more details on the ways to create and customize the reports,  please see the 
+    New custom reports can be added, that can use details of the accounts as well as of any records related to the
+    accounts. For more details on the ways to create and customize the reports,  please see the
     :ref:`Reports guide <user-guide-reports>`.
 
 

@@ -27,7 +27,6 @@ On top of the features available in OroCRM CE, OroCRM EE provides:
 - Support for inventory management across multiple warehouses.
 - OroCommerce, LDAP, Microsoft Outlook, Microsoft Exchange integrations.
 
-
 Complete information on differences between OroCRM Community and Enterprise editions is illustrated in the `Edition Comparison chart <https://www.orocrm.com/orocrm-enterprise-and-community>`_.
 
 Something for Everyone
