@@ -16,7 +16,6 @@ can be added to any website to collect requests to the OroCRM team.
 
 * :doc:`/admin_guide/integrations/ldap_integration`
 
-<<<<<<< HEAD
 * :doc:`/admin_guide/integrations/mailchimp_configuration`
  
 * :doc:`/admin_guide/integrations/dotmailer_integration_settings`
@@ -24,13 +23,6 @@ can be added to any website to collect requests to the OroCRM team.
 * :doc:`/admin_guide/integrations/dotmailer_configuration`
 
 * :doc:`/admin_guide/integrations/dotmailer_single_sign_on`
-=======
-* :doc:`/admin_guide/integrations/sending_email_campaign_via_mailchimp`
- 
-* :doc:`/admin_guide/integrations/dotmailer_integration_settings`
-
-* :doc:`/admin_guide/integrations/sending_email_campaign_via_dotmailer`
->>>>>>> c642e61159d4fa0730b193bb86f78316b8ea635e
 
 * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
 

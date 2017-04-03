@@ -1,11 +1,7 @@
 .. _user-guide-admin-tools:
 
 Administrator Guide
-<<<<<<< HEAD
 ===================
-=======
-=====================
->>>>>>> c642e61159d4fa0730b193bb86f78316b8ea635e
 
 The section describes tools for system management and administration, aimed to be used primarily by the system 
 administrators.
@@ -14,13 +10,9 @@ Please note that in many cases, the tools may be not available to the usual user
 
 * :doc:`/admin_guide/app_look_feel/index`
 
-<<<<<<< HEAD
 * :doc:`/admin_guide/record_mgmt_config/index`
 
   * :doc:`/admin_guide/record_mgmt_config/tag_management`
-=======
- * :doc:`/admin_guide/record_mgmt_config/index`
->>>>>>> c642e61159d4fa0730b193bb86f78316b8ea635e
 
   * :doc:`/admin_guide/record_mgmt_config/workflow_management`
   
@@ -90,7 +82,6 @@ Please note that in many cases, the tools may be not available to the usual user
 
   * :doc:`/admin_guide/integrations/ldap_integration`
 
-<<<<<<< HEAD
   * :doc:`/admin_guide/integrations/mailchimp_configuration`
   
   * :doc:`/admin_guide/integrations/dotmailer_integration_settings`
@@ -99,12 +90,6 @@ Please note that in many cases, the tools may be not available to the usual user
 
   * :doc:`/admin_guide/integrations/dotmailer_single_sign_on` 
 
-=======
-  * :doc:`/admin_guide/integrations/sending_email_campaign_via_mailchimp`
-  
-  * :doc:`/admin_guide/integrations/dotmailer_integration_settings`
-  
->>>>>>> c642e61159d4fa0730b193bb86f78316b8ea635e
   * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
 
   * :doc:`/admin_guide/integrations/ms_exchange_integration`
