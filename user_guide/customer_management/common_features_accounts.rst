@@ -34,10 +34,10 @@ Create Account Records
 The following fields are mandatory and **must** be defined:
 
 .. csv-table::
-:header: "Field", "Description"
+  :header: "Field", "Description"
   :widths: 10, 30
 
-     "**Owner**","Limits the list of users that can manage the account to users,  whose
+  "**Owner**","Limits the list of users that can manage the account to users,  whose
   :ref:`roles <user-guide-user-management-permissions>` allow managing
   accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
 

@@ -28,4 +28,4 @@ Related Articles
 - :ref:`Dotmailer Configuration <user-guide-dotmailer-configuration>`
 - :ref:`Manage Dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
 - :ref:`Dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
-- :ref:`Sending Email Campaign via Dotmailer <user-guide-dotmailer-campaign>`
+- :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`

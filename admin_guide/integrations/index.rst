@@ -50,16 +50,10 @@ can be added to any website to collect requests to the OroCRM team.
     google_single_sign_on
     ldap_integration
     magento_channel_integration
-<<<<<<< HEAD
     mailchimp_configuration
     dotmailer_integration_settings
     dotmailer_configuration
     dotmailer_single_sign_on
-=======
-    sending_email_campaign_via_mailchimp
-    dotmailer_integration_settings
-    sending_email_campaign_via_dotmailer
->>>>>>> c642e61159d4fa0730b193bb86f78316b8ea635e
     ms_exchange_integration_settings
     ms_exchange_integration
     ms_outlook_integration_settings
