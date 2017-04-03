@@ -10,7 +10,6 @@ In this section, you can find more information about Sales channels and the enti
 * :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
 * :doc:`/user_guide_roles/sales_tools/territory_management`
 
-
 .. toctree::
     :hidden:
     :maxdepth: 1

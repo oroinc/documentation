@@ -68,7 +68,7 @@ Manage Magento Customer Records
 
 The following actions can be performed for Magento customers:
 
-From the :ref:`grid <user-guide-ui-components-grids>` you can:
+From the :ref:`grid <doc-grids>` you can:
 
       |
   

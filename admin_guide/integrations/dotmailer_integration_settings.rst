@@ -5,7 +5,6 @@ Dotmailer Integration Settings
 
 To configure dotmailer integration settings, navigate to **System>Configuration>System Configuration>Integrations>Dotmailer Settings**.
 
-
 |
 
 .. image:: ../img/configuration/dotmailer_settings.png

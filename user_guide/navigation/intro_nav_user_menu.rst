@@ -13,9 +13,7 @@ access your user profile, calendar, mailbox, and task list. It is also used to l
 My User
 -------
 
-This link opens your user profile that is described in the 
-:ref:`corresponding section <user-guide-getting-started-my-user-overview>` of the 
-*Log In, View Your User Page, and Set Up Your Profile* guide.
+This link opens your user profile. See the :ref:`My User <doc-my-user-view-page>` page description.
 
 My Emails
 ---------
@@ -24,7 +22,7 @@ This link opens the My Emails page—your OroCRM mailbox that stores all the ema
 contacts. 
 
 
-The *"My Emails"* page contains all the emails:
+The **My Emails** page contains all the emails:
 
 - Sent to you in OroCRM.
 - Sent by you in OroCRM.

@@ -3,9 +3,8 @@
 Activities
 ==========
 
-
 .. contents:: :local:
-    :depth: 3
+    :depth: 2
 
 
 
@@ -25,8 +24,7 @@ OroCRM provides such a tool. Its capabilities for managing activities are quite 
 For each activity, it is possible to add links to the related records. For example, a link to an email with the discussion in which the activity emerged, the marketing campaign that the activity deals with, and the user concerned, etc. Such links are called ``contexts`` and they make it much easier to take account of all the details connected with the activity.
 
 .. Note:: 
-   An account is an entity that integrates customer entities, therefore, if one of the customers who constitute an account is added as a context of some activity, the account inherits this activity and you can see it not only on the customer view page but on the account's as well.  
-
+   An account is an entity that integrates customer entities, therefore, if one of the customers who constitute an account is added as a context of some activity, the account inherits this activity and you can see it not only on the customer view page but on the account's as well.
 
 
 In this document, you can find short descriptions of what each activity serves for. 
@@ -106,6 +104,7 @@ The third way of creating tasks is the most traditional: you have the whole syst
 |
 
 Users can see tasks assigned to them on the **My Tasks** page and in the **Tasks** section of their view pages. 
+
 If an entity record is marked as a context for a task, this task appears in the **Activity** section on the entity record view page. 
 
 
@@ -139,8 +138,7 @@ In the dedicated system section (by default you can find it by navigating to **A
 |
 
 Users can see cases assigned to them in the **Cases** section of their view pages. 
-If an entity record is marked as a context for a case, this case appears in the **Activity** section of the entity record view page. 
-
+If an entity record is marked as a context for a case, this case appears in the **Activity** section of the entity record view page.
 
 For more information about cases, see the :ref:`Cases <user-guide-activities-cases>` guide.
 
@@ -179,8 +177,7 @@ Once you have created an event, an invitation will be sent to the specified part
 
 Users can track events on the **My Calendar** page or via the dashboard widget (**Today's calendar**). They can also see calendars of their colleagues or any additional calendars added by an administrator.
 
-If an entity record is marked as a context for a calendar event, this event appears in the **Activity** section on the entity record view page. 
-
+If an entity record is marked as a context for a calendar event, this event appears in the **Activity** section on the entity record view page.
 
 For more information about calendar events, see the :ref:`Calendar Events <user-guide-activities-events>` guide.
 
@@ -190,6 +187,8 @@ Communications
 
 Making and Logging Calls
 """"""""""""""""""""""""
+
+.. start-include-calls
 
 Although not every company employee makes calls very often, calls play one of the most crucial roles in sales and are of significant help to support teams. For those users who make and receive many calls per day or / and communicate  with clients by phone, it is convenient to have an instrument that enables them to make records of who they called to and what they discussed. Such instrument is also helpful to managers who can monitor the progress of important tasks and see if all key contacts have received enough attention.
 
@@ -205,7 +204,6 @@ There are three ways to start making or logging a call:
 - By clicking the **Hangouts call** or **Log Call** icons that appear near the phone fields throughout the system when you hover over them.  
 - By clicking :guilabel:`Log Call` action button on the view page of the entity that the call is connected to.
 
-
 |
 
 .. image:: ../img/activities/activities_calls3.png
@@ -217,8 +215,7 @@ There are three ways to start making or logging a call:
 
 |
 
-Users can access logged calls in the dedicated system section, in the **Activities** section of their user page, via the **Recent calls** dashboard widget. If an entity record is marked as a context for a call, this call appears in the **Activity** section on the entity record view page. 
-
+Users can access logged calls in the dedicated system section, in the **Activities** section of their user page, via the :ref:`Recent Calls <doc-widgets-recent-calls>` dashboard widget. If an entity record is marked as a context for a call, this call appears in the **Activity** section on the entity record view page.
 
 |
 
@@ -231,12 +228,12 @@ Users can access logged calls in the dedicated system section, in the **Activiti
 
 
 
-For more information about logging calls, see the :ref:`Calls <user-guide-activities-calls>` guide.
+For more information about logging calls, see the :ref:`Calls <doc-activities-calls>` guide.
 
 
 For information about whether Hangouts calls are available for you, contact an administrator or see the :ref:`Voice and Video Calls via Hangouts <user-guide-hangouts>` guide.
 
-
+.. end-include-calls
 
 Sending and Receiving Emails
 """"""""""""""""""""""""""""
@@ -251,7 +248,7 @@ OroCRM also provides a feature of auto-assignment to contact, thanks to which ne
 Oro CRM Enterprise Edition also supports integration with Microsoft Exchange Server and Outlook.
 
 
-Users can access their emails on the personal **My Emails** page, via the **Recent Emails** menu button, and the **Recent Emails** dashboard widget. 
+Users can access their emails on the personal **My Emails** page, via the **Recent Emails** menu button, and the **Recent Emails** dashboard widget.
 
 |
 
@@ -260,7 +257,6 @@ Users can access their emails on the personal **My Emails** page, via the **Rece
 |
 
 When an entity record is mentioned as a context in an email, or if an email is sent using the **Send Email** action button from the entity record view page, this email becomes available in the **Activities** section of the record  view page. Emails linked to contacts appear in the same section on the corresponding contact view pages.
-
 
 |
 
@@ -305,7 +301,6 @@ Sometimes you need to leave additional information about an entity record. For e
 
 For such cases, OroCRM provides an in-built functionality that enables you to leave different notes on entity records.
 
-
 |
 
 .. image:: ../img/activities/activities_notes.png
@@ -313,11 +308,10 @@ For such cases, OroCRM provides an in-built functionality that enables you to le
 |
 
 You can add a note by clicking the :guilabel:`Add Note` action button on the view page of the entity record that the note relates to. You can format notes as necessary and attach files to them. 
+
 Notes are displayed in the **Activities** section of the entity record view page.
 
-
 For more information about notes, see the :ref:`Notes <user-guide-add-note>` guide.
-
 
 Leaving Comments
 """"""""""""""""

@@ -55,7 +55,7 @@ Manage Tracking Websites Records
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The following actions are available for a Tracking Websites record from the 
-:ref:`grid <user-guide-ui-components-grids>`:
+:ref:`grid <doc-grids>`:
 
 .. image:: ../img/marketing/tracking_grid_actions.png
 

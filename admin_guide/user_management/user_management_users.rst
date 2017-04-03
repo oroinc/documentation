@@ -1,7 +1,7 @@
 .. _user-management-users:
 
-Users Overview
-===============
+Users
+=====
 
 .. contents:: :local:
     :depth: 3

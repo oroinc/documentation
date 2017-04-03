@@ -58,7 +58,7 @@ You can also convert a cart in an order. To do so:
 Manage Shopping Carts and Orders
 --------------------------------
 
-The only action available from the :ref:`grid <user-guide-ui-components-grids>` of Shopping Carts and Orders 
+The only action available from the :ref:`grid <doc-grids>` of Shopping Carts and Orders 
 is to open the :ref:`view pages <user-guide-ui-components-view-pages>` of their records by 
 clicking the |IcView| icon.
 

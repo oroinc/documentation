@@ -1,7 +1,7 @@
 .. _user-guide-email-admin:
 
 Email Configuration 
-====================
+===================
 
 .. contents:: :local:
     :depth: 4
@@ -39,23 +39,25 @@ all the emails generated within the instance.
 
 The following settings are available:
 
-+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**         | **Description**                                                                                                                                               |
-+===================+===============================================================================================================================================================+
-| **Autocomplete**  | Define how many characters need to be entered manually to enable auto-complete for emails.                                                                    |
-+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Signature**     | You can define a signature that will be added to all the email bodies created within the instance. The following fields are available:                        |
-|                   |                                                                                                                                                               |
-|                   | -  Signature Content: Specify the text and formatting of your signature (by default, the email signature body is empty).                                      |
-|                   |                                                                                                                                                               |
-|                   | -  Append Signature to Email Body: Defines whether a signature is added automatically or manually.                                                            |
-+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Email Threads** | **Display Emails In Activities As** field defines how emails and replies will be displayed to the users, as threads or separately. Two options are available: |
-|                   |                                                                                                                                                               |
-|                   | -  Threaded                                                                                                                                                   |
-|                   |                                                                                                                                                               |
-|                   | -  Non-threaded                                                                                                                                               |
-+-------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Field**         | **Description**                                                                                                                                                                                      |
++===================+======================================================================================================================================================================================================+
+| **Autocomplete**  | Define how many characters need to be entered manually to enable auto-complete for emails.                                                                                                           |
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Signature**     | You can define a signature that will be added to all the email bodies created within the instance. The following fields are available:                                                               |
+|                   | -  Signature Content: Specify the text and formatting of your signature (by default, the email signature body is empty).                                                                             |
+|                   | -  Append Signature to Email Body: Defines whether a signature is added automatically or manually.                                                                                                   |
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Email Threads** | **Display Email Conversations As** and **Display Emails In Activities As** fields define how emails and replies will be displayed to the users, as threads or separately. Two options are available: |
+|                   | threaded and non-threaded                                                                                                                                                                            |
++-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+|
+
+.. image:: ../img/configuration/threads_settings.png
+
+|
+
 
 
 |

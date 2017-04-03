@@ -141,6 +141,8 @@ Synchronization Settings on the OroCRM Side
 Yes"
   
 
+.. _doc-ms-outlook-add-in-set-up-outlook-side:
+
 Settings on the Outlook Side
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

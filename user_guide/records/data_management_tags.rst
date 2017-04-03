@@ -18,24 +18,28 @@ You can add a tag from the grid or from a View page of a specific record.
 Add a Tag from the Grid
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The tag column is available by default on the :ref:`grids <user-guide-ui-components-grids>`. If they are not, you can 
-:ref:`adjust the table settings <user-guide-ui-components-grids-change-table>` and add the column. Adding a tag is no 
-different from :ref:`editing other properties <user-guide-ui-components-grid-edit>` from a grid:
+The tag column is available by default on the :ref:`grids <doc-grids>`. If they are not, you can 
+:ref:`add the column <doc-grids-actions-change-table>`. Adding a tag is no
+different from :ref:`editing other properties from a grid <doc-grids-actions-records-edit>`:
 
-- Double-click the tag cell of the record. 
+1. Double-click the tag cell of the record.
 
-- Select one or several of the existing tags from the list, and/or enter a new tag in the field.
+2. Select one or several of the existing tags from the list, and/or enter a new tag in the field.
 
   |TagsfGrid|
   
-- Start entering the tag, and only matching tags will be left in the selector.  
+3. Start entering the tag, and only matching tags will be left in the selector.
   
-- If you have entered a new tag, it will also appear in the selector. Select it to add. This way you can add one or 
-  several tags that contain one or several words.
+4. If you have entered a new tag, it will also appear in the selector. Select it to add. This way you can add one or several tags that contain one or several words.
+
+   |
   
-    |TagsfGrid1|
+   |TagsfGrid1|
+
+   |
   
-- Click the check to confirm the action.
+5. Confirm the action.
+
 
 .. _user-guide-tags-add:
 
@@ -65,7 +69,7 @@ Manage Tags
 -----------
 
 You can see all the tags available in the system, as well as the amount of times they were assigned to a record, in the 
-Tags :ref:`grid <user-guide-ui-components-grids>`.
+Tags :ref:`grid <doc-grids>`.
 
 .. image:: ../img/data_management/tags/tags_from_grid.png
 

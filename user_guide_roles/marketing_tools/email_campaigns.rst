@@ -95,7 +95,7 @@ Manage Email Campaign Records
 -----------------------------
 
 The following actions are available for an email campaign from the 
-:ref:`grid <user-guide-ui-components-grid-action-icons>`:
+grid:
 
 .. image:: ../img/marketing/marketing_campaign_action_icons.png
 

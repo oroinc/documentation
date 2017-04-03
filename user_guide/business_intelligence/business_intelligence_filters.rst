@@ -3,7 +3,7 @@
 Filters
 =======
 
-Along with :ref:`grid filters <user-guide-ui-components-grid-filters>` that define a set of records to be *displayed*, 
+Along with :ref:`grid filters <doc-grids-actions-filters>` that define a set of records to be *displayed*,
 you sometimes need to select a set of records to be *processed* in different areas of the system, such as a 
 :ref:`Marketing List <user-guide-marketing-lists>` or a :ref:`Report <user-guide-reports>`. In this case,
 there is a *"Filters"* section.
