@@ -1,6 +1,6 @@
 .. _user-guide-magento-web-tracking:
 
-Magento Web Tracking 
+Magento Web Tracking
 ====================
 
 .. contents:: :local:
@@ -129,19 +129,19 @@ in OroCRM.
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note:: Connecting a tracking record with a channel in the system binds events registered by the tracking engine and other CRM data like orders, shopping carts, customer profiles, etc. This connection can be further utilized in reports and segments.
- 
-  
+
+
 
 -  Once you have completed filling in the Create Website Record form,
    click :guilabel:`Save and Close`.
 
    |
-   
+
    .. image:: ../img/web_tracking_magento/create_website_tracking_record.jpg
-   
+
    |
-   
-   
+
+
 
 Step 4: Check User Events
 -------------------------
@@ -195,7 +195,7 @@ Step 5: Use Collected Data
 You can use data collected from your Magento store in a number of ways,
 creating reports and segments of users according to your needs.
 
-Build a Segment 
+Build a Segment
 ~~~~~~~~~~~~~~~
 
 Building segments of your customers is one of many ways of using data
@@ -230,7 +230,7 @@ In the **Filters** section:
 The segment will appear on the **Manage Segments** page and contain
 customers sorted according to your conditions.
 
-Create a Report 
+Create a Report
 ~~~~~~~~~~~~~~~
 
 Another example of using data, collected with the help of web tracking,
