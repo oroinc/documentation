@@ -54,16 +54,16 @@ First, you need to obtain the application's source code and define the dependenc
 
 #. Go to the directory, to which you want to save the OroCRM folder (``[$folder_location]``).
 
-#. Use the *git clone* command. Specify the version to download (in the example, it is "``1.10.12``").
+#. Use the *git clone* command. Specify the version to download (in the example, it is "``2.1``").
 
    .. code-block:: bash
 
        $ cd [$folder_location]
-       $ git clone -b 1.10.12 https://github.com/orocrm/crm-application.git orocrm
+       $ git clone -b 2.1 https://github.com/orocrm/crm-application.git orocrm
 
    .. hint::
 
-       Along with ``1.10.12``, you can use any other released version or even the master branch to run
+       Along with ``2.1``, you can use any other released version or even the master branch to run
        the latest development version of the OroCRM.
 
    .. tip::
@@ -75,7 +75,7 @@ First, you need to obtain the application's source code and define the dependenc
        .. code-block:: bash
 
            $ cd [$folder_location]
-           $ git clone -b 1.10.12 https://github.com/orocrm/platform-application.git orocrm
+           $ git clone -b 2.1 https://github.com/orocrm/platform-application.git orocrm
 
 #. Go to the ``orocrm`` directory and run the *composer install* command, in order to install the
    dependencies. You need to define the ``--prefer-dist --no-dev`` parameter, as otherwise you can
@@ -296,7 +296,7 @@ Step 3. Web Server Configuration
         location ~ ^/(app|app_dev|config|install)\.php(/|$) {
 	    fastcgi_pass 127.0.0.1:9000;
 	    # or
-            # fastcgi_pass unix:/var/run/php5-fpm.sock;
+            # fastcgi_pass unix:/var/run/php/php7-fpm.sock;
             fastcgi_split_path_info ^(.+\.php)(/.*)$;
             include fastcgi_params;
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
@@ -323,7 +323,7 @@ Step 3. Web Server Configuration
     [www]
     listen = 127.0.0.1:9000
     ; or
-    ; listen = /var/run/php5-fpm.sock
+    ; listen = /var/run/php/php7-fpm.sock
 
     listen.allowed_clients = 127.0.0.1
 
@@ -362,7 +362,7 @@ environment variable:
 
     .. code-block:: apache
 
-        SetEnv ORO_PHP_PATH c:\OpenServer\modules\php\PHP-5.4\
+        SetEnv ORO_PHP_PATH c:\OpenServer\modules\php\PHP-7.0\
 
 **For Nginx**
 
