@@ -620,7 +620,7 @@ You can set Opportunity Status and Probability manually before starting Opportun
 Manage Multiple Workflows
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Workflows are expandable and can be collapsed if necessary by clicking on the :guilabel:`**+**` button on the left of the Workflow as illustrated below:
+Workflows are expandable and can be collapsed if necessary by clicking on the :guilabel:`+` button on the left of the Workflow as illustrated below:
 
 |
 |
@@ -729,6 +729,74 @@ Depending on their configuration, workflow steps can vary. Here is an example of
 
 |
 |
+
+OroCommerce Opportunity Flow
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+OroCommerce Opportunity Flow allows sales reps to create `quotes <https://www.orocommerce.com/documentation/current/user-guide>`__ directly from the opportunity view page. All quotes created within a specific opportunity are displayed in the corresponding section of its view page. The sales rep can manage quotes from this grid in the same way they can manage them from the quotes grid (e.g. edit or delete). 
+
+.. note:: Creating a quote from the opportunity view page is only available if opportunity is related to a Commerce customer. Otherwise, the workflow will behave exactly like the standard Opportunity Management flow (for standard flow, see the `Manage Opportunity Workflow`_ section of the guide).
+
+.. comments Quotes will be available here: https://www.orocommerce.com/documentation/current/user-guide/quotes
+
+When OroCommerce Opportunity flow is activated in **System>Workflows** and an opportunity is related to a Commerce customer, the :guilabel:`Create Quote` button will appear in the top right corner of the opportunity view page.
+
+.. note:: Creating a quote from the opportunity view page is only available for **open** opportunities, i.e. not closed or lost.
+
+
+|
+
+.. image:: ../img/opportunities_2.0/commerce_flow.png
+
+|
+
+
+|
+
+.. image:: ../img/opportunities_2.0/create_quote.png
+
+|
+   
+Click :guilabel:`Create Quote` to start creating a new quote. 
+
+When a quote is created and saved, the following information will appear on the opportunity page:
+
+- A **Quote Created** note next to the OroCommerce Opportunity Flow name.
+- A **Quotes** section with details of the created quote.
+
+
+From the opportunity view page, the following actions are possible for the quote:
+
+- View: |IcView|
+- Edit: |IcEdit|
+- Delete: |IcDelete|
+- Expire: |IcExpire|
+
+.. note:: Note that availability of the **Expire** option for a quote within the opportunity view page depends on the types of workflows activated in your system.
+
+
+|
+
+.. image:: ../img/opportunities_2.0/quote_created_opp.png
+
+|
+
+
+On the Quote view page, relation to the opportunity, which this quote has been created from, will remain, as illustrated in the following screenshot:
+
+|
+
+.. image:: ../img/opportunities_2.0/quote_opp.png
+
+|
+
+|
+
+.. image:: ../img/opportunities_2.0/quote_opp_edit.png
+
+|
+
+You can create any number of quotes for one open opportunity.
 
 Multi-currency Opportunities
 ----------------------------
@@ -933,3 +1001,8 @@ The report shows:
 
 .. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
    :align: middle
+
+.. |IcExpire| image:: ../../img/buttons/IcExpire.png
+   :align: middle
+
+
