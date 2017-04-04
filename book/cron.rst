@@ -67,6 +67,13 @@ same.
     ``oro:cron:definitions:load`` command) and adds the commands that are due to the
     Message Queue. This command should run every minute.
 
+.. note::
+
+    Please notice that ``oro:cron:definitions:load`` removes all previously loaded
+    commands from the db. So if there're another commands that add cron commands to
+    the db (such as ``oro:workflow:definition:load``) they should be run after
+    ``oro:cron:definitions:load``.
+
 .. _create-cron-command:
 
 Creating the Command
