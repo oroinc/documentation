@@ -677,7 +677,7 @@ cron command with the `oro:cron` CLI command as an application entry point (see 
 .. seealso::
 
     You can also create your own commands that are executed in the background at certain times.
-    Read more about it in the :doc:`chapter about executing jobs </book/jobs>`.
+    Read more about it in the :doc:`chapter about executing cron commands </book/cron>`.
 
 Time consuming or blocking tasks should usually be performed in the background to aviod negative impact on the application response time. For example, the OroPlatform uses the `MessageQueueComponent`_
 together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. Ensure that one or more consumers are always running:
