@@ -139,7 +139,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/jobs`
+        * Book: :doc:`/book/cron`
 
 `DashboardBundle`_ (OroPlatform)
     Organize widgets that contain useful information on the user's homepage.
@@ -333,6 +333,15 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_lists`
+
+`MessageQueueBundle`_ (OroPlatform)
+    An implementation of MessageQueue (together with `MessageQueueComponent`_)
+
+    .. seealso::
+
+        Read more about it in the following articles:
+
+        * Book: :doc:`/book/jobs`
 
 `MigrationBundle`_ (OroPlatform)
     Allows to version the application's database.
@@ -605,6 +614,8 @@ related articles is provided below the description.
 .. _`LocaleBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/LocaleBundle/README.md
 .. _`MagentoBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/MagentoBundle/README.md
 .. _`MarketingListBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/MarketingListBundle/README.md
+.. _`MessageQueueComponent`: https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue/README.md
+.. _`MessageQueueBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle/README.md
 .. _`MigrationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/MigrationBundle/README.md
 .. _`NavigationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/NavigationBundle/README.md
 .. _`KnpMenuBundle`: https://github.com/KnpLabs/KnpMenuBundle
