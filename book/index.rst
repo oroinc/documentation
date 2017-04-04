@@ -43,6 +43,7 @@ and technical details.
 
   * :doc:`/book/importexport`
   * :doc:`/book/jobs`
+  * :doc:`/book/cron`
   * :doc:`/book/search`
 
 * :doc:`/book/functional_tests`

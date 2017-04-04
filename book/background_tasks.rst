@@ -6,4 +6,5 @@ Background Tasks
 
     importexport
     jobs
+    cron
     search
