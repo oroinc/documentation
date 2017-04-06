@@ -100,6 +100,8 @@ This section provides links to the online documentation for the latest OroCommer
 
     dev_guide/index
 
+    admin_guide/index
+
     community/index
 
     system_requirements
