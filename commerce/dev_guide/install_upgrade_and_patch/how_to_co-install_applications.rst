@@ -21,7 +21,7 @@ Example:
 .. code-block:: bash
     :linenos:
 
-    $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://local.dev --force
+    $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://local.dev
 
 
 Install over existed application (console)
