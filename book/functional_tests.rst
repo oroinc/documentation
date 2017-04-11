@@ -85,7 +85,7 @@ Next, install an application in the test environment:
 
 .. code-block:: bash
 
-    $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost --force
+    $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
 
 .. versionadded:: 1.10
 
