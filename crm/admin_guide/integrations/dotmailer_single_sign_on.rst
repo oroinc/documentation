@@ -26,8 +26,8 @@ With the help of single sign-on, there will be no need of logging into dotmailer
 Related articles
 ----------------
 
-- :ref:`Dotmailer Overview <user-guide-dotmailer-overview>`
-- :ref:`Dotmailer Configuration <user-guide-dotmailer-configuration>`
-- :ref:`Manage Dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
-- :ref:`Sending Email Campaign via Dotmailer <user-guide-dotmailer-campaign>`
-- :ref:`Dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
+- :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
+- :ref:`dotmailer Configuration <user-guide-dotmailer-configuration>`
+- :ref:`Manage dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
+- :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`
+- :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`

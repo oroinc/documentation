@@ -1,7 +1,7 @@
 .. _user-guide-dotmailer-configuration:
 
 
-Configure Dotmailer Integration
+Configure dotmailer Integration
 ===============================
 
 .. contents:: :local:
@@ -12,7 +12,7 @@ Install Extension
 
 To configure dotmailer integration, ensure that you have dotmailer extension installed in your instance of OroCRM. For installation instructions, click `here <https://marketplace.orocrm.com/package/orocrm-dotmailer-integration/>`_.
 
-Create API Managed User on the Dotmailer Side
+Create API Managed User on the dotmailer Side
 ---------------------------------------------
 
 To configure integration with OroCRM on the dotmailer side, you need to
@@ -72,7 +72,7 @@ Create Integration on the OroCRM Side
      "**Name**","Enter the integration name to refer to within the system."
      "**Username**","Enter an API user name from your dotmailer **Manage users** page."
      "**Password**","Enter the password you set for your API user on the dotmailer side. Click **Check connection**. **Connection Successful** message indicates that connection to dotmailer has been established."
-     "**Client ID**","Dotmailer uses OAuth 2.0 to provide single `sign-on <https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer>`_. Client ID is the ID of the OAuth 2.0 making the request. Single sign   -on provides the means for a dotmailer user to log into their account just once, removing the need to constantly re-enter credentials. To register to use OAuth you will need to be on an dotmailer Enterprise    license and to contact your dotmailer account manager. More information on sign-on is available in the :ref:`Configure Single Sign-on <user-guide-dotmailer-single-sign-on>` section of the guide."
+     "**Client ID**","The dotmailer uses OAuth 2.0 to provide single `sign-on <https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer>`_. Client ID is the ID of the OAuth 2.0 making the request. Single sign   -on provides the means for a dotmailer user to log into their account just once, removing the need to constantly re-enter credentials. To register to use OAuth you will need to be on an dotmailer Enterprise    license and to contact your dotmailer account manager. More information on sign-on is available in the :ref:`Configure Single Sign-on <user-guide-dotmailer-single-sign-on>` section of the guide."
      "**Client Secret key**","The pre-shared client secret, used to authenticate your application when making token request."
      "**Custom OAuth Domain**","Enter custom domain if it is used in dotmailer. By default https://r1-app.dotmailer.com/ is used."
      "**Default Owner**","Select the owner of the integration. The selected user will be defined as the owner for all the records imported within the integration."
@@ -89,11 +89,11 @@ As soon as the integration is successfully configured, it will appear in the int
 
 In addition, **dotmailer menu group** will become available under **Marketing** in the main menu.
 
-Dotmailer menu group contains the following sections:
+The dotmailer menu group contains the following sections:
 
 - **Email Studio** (see :ref:`Configure Single Sign-on guide <user-guide-dotmailer-single-sign-on>`)
-- **Data Fields** (see :ref:`Manage Dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
-- **Data Field Mappings** (see :ref:`Manage Dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
+- **Data Fields** (see :ref:`Manage dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
+- **Data Field Mappings** (see :ref:`Manage dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
 
 
 |
@@ -102,7 +102,7 @@ Dotmailer menu group contains the following sections:
 
 |
 
-Sync Dotmailer Integration
+Sync dotmailer Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order to sync dotmailer integration:
@@ -116,8 +116,8 @@ In order to sync dotmailer integration:
 Related Articles
 ----------------
 
-- :ref:`Dotmailer Overview <user-guide-dotmailer-overview>`
-- :ref:`Dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
-- :ref:`Manage Dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
-- :ref:`Sending Email Campaign via Dotmailer <user-guide-dotmailer-campaign>`
-- :ref:`Dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
+- :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
+- :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
+- :ref:`Manage dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
+- :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`
+- :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`

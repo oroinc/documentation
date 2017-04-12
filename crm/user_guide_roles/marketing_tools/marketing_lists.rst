@@ -12,7 +12,7 @@ added to the system after October 1 with addresses in California. Such lists are
 
 Marketing lists can be used to run :ref:`Email Campaigns <user-guide-email-campaigns>` in OroCRM. You can also
 synchronize OroCRM Marketing lists with Subscribers Lists in :ref:`MailChimp <user-guide-mc-integration>` and/or 
-Address Books in :ref:`DotMailer <user-guide-dm-integration>`.
+Address Books in :ref:`dotmailer <user-guide-dm-integration>`.
 
 The way to create and manage Marketing List records is described below. 
 
@@ -146,7 +146,7 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 
 
 - Mapping buttons: As soon as OroCRM has been integrated with a third party system, to which a marketing list may be mapped, you will see :guilabel:`Connect to` buttons, with which you can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration>` or
-  :ref:`Address Books in Dotmailer <user-guide-dm-integration>`.
+  :ref:`Address Books in dotmailer <user-guide-dm-integration>`.
 
   |
   

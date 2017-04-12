@@ -60,13 +60,13 @@ of different records were changed, as well as by whom.
 
 .. _admin-capabilities-dotmailer-stats:    
 
-Dotmailer Statistic
+dotmailer Statistic
 -------------------
 
 This capability is meaningful if the system has been integrated with dotmailer.
 
 Such integration lets users utilize dotmailer as an email campaign engine, as described in the guide on
-:ref:`Integration with Dotmailer <user-guide-dm-integration>`. In short, the user can synchronize lists of contacts in 
+:ref:`Integration with dotmailer <user-guide-dm-integration>`. In short, the user can synchronize lists of contacts in
 OroCRM and dotmailer, and use them to create email campaigns in dotmailer and import them to OroCRM.
 
 The user will be able to see the dotmailer campaign 
@@ -426,7 +426,7 @@ system administrators have access to all capabilities, while other roles are lim
   "**Capability**","\+","\-","\+","\-"
   "**Abandoned Cart Campaign manipulations**","\+","\-","\+","\-"
   "**Data audit**","\+","\-","\+","\-"
-  "**Dotmailer Statistic**","\+","\-","\+","\-"
+  "**dotmailer Statistic**","\+","\-","\+","\-"
   "**Export entities**","\+","\+","\+","\-"
   "**General import/action operations**","\+","\-","\+","\-"
   "**Import entities**","\+","\+", "\+","\-"

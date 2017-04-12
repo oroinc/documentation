@@ -121,7 +121,7 @@ In order to start and email campaign, go to the View page of the Email Campaign 
 .. note::
 
     If an Email Campaign has been created as a result of integration in :ref:`MailChimp <user-guide-mc-integration>` or
-    :ref:`Dotmailer <user-guide-dm-integration>`, its record will be automatically created in OroCRM and related 
+    :ref:`dotmailer <user-guide-dm-integration>`, its record will be automatically created in OroCRM and related
     statistics will be uploaded and synchronized.
 
 

@@ -6,7 +6,7 @@ Processes
 Some actions in OroCRM trigger other actions. This behaviour is pre-defined at the background and can be modified in the
 course of the system integration. Mostly, this actions are related to :ref:`OroCRM extensions <admin-package-manager>`.
 For example, as soon as a new Magento Customer has been uploaded to OroCRM, an account and a record are
-automatically created for it, and if a new campaign has been created in a Dotmailer address book synchronized with 
+automatically created for it, and if a new campaign has been created in a dotmailer address book synchronized with
 a marketing list in OroCRM, a new Email Campaign record is automatically created in OroCRM.
 
 You can view and activate/deactivate the process in the OroCRM UI.
