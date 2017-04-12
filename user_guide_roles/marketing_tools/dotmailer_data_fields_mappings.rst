@@ -1,6 +1,6 @@
 .. _user-guide-dotmailer-data-fields:
 
-Manage Dotmailer Data Fields and Mappings
+Manage dotmailer Data Fields and Mappings
 =========================================
 
 .. contents:: :local:
@@ -69,7 +69,7 @@ Click :guilabel:`Save` to save the new data field.
 OroCRM Side
 ^^^^^^^^^^^
 
-Dotmailer data fields are collected by Oro and can be found under **Marketing>dotmailer>Data Fields**. Here, you can view, remove and create new dotmailer data fields on the Oro side.
+The dotmailer data fields are collected by Oro and can be found under **Marketing>dotmailer>Data Fields**. Here, you can view, remove and create new dotmailer data fields on the Oro side.
 
 |
 
@@ -199,9 +199,9 @@ Once you have configured mapping, tracking of changes will be performed automati
 Related Articles
 ----------------
 
-- :ref:`Dotmailer Overview <user-guide-dotmailer-overview>`
-- :ref:`Dotmailer Configuration <user-guide-dotmailer-configuration>`
-- :ref:`Dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
-- :ref:`Sending Email Campaign via Dotmailer <user-guide-dotmailer-campaign>`
-- :ref:`Dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
+- :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
+- :ref:`dotmailer Configuration <user-guide-dotmailer-configuration>`
+- :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
+- :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`
+- :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
 

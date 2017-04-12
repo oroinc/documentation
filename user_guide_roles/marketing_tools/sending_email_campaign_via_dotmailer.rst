@@ -1,7 +1,7 @@
 .. _user-guide-dotmailer-campaign:
 
 
-Sending Email Campaign via Dotmailer
+Sending Email Campaign via dotmailer
 ====================================
 
 .. contents:: :local:
@@ -52,7 +52,7 @@ name of the contact.
 
 Click :guilabel:`Save and Close` when you are finished.
 
-Sync OroCRM Marketing List Data with Dotmailer Address Book
+Sync OroCRM Marketing List Data with dotmailer Address Book
 -----------------------------------------------------------
 
 Once the integration has been configured and its status has been set to **Active**, the list of address books will be automatically imported from dotmailer to OroCRM. At this point, Oro marketing lists can be connected to existing dotmailer address books.
@@ -161,7 +161,7 @@ synced into your dotmailer address book.
 
 
 
-Create and Send Campaign on the Dotmailer Side
+Create and Send Campaign on the dotmailer Side
 ----------------------------------------------
 
 We have configured integration between OroCRM and dotmailer and created
@@ -195,19 +195,19 @@ side. It is time to create a new email campaign via dotmailer:
 
 4.  On the next page, complete the following fields:
 
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**                         | **Description**                                                                                                                                   |
-+===================================+===================================================================================================================================================+
-| **Subject Line**                  | Enter the subject for your email.                                                                                                                 |
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Friendly From Name**            | Enter the name of the sender.                                                                                                                     |
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Select From Address**           | Dotmailer assigns its own email address and domain so that in case of any complaints or issues, they would be separate from your current domain.  |
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Optional Forwarding Address**   | Email responses can be forwarded to your regular email address.                                                                                   |
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Campaign Tags**                 | Enter tags for your email campaign.                                                                                                               |
-+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Field**                         | **Description**                                                                                                                                     |
++===================================+=====================================================================================================================================================+
+| **Subject Line**                  | Enter the subject for your email.                                                                                                                   |
++-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Friendly From Name**            | Enter the name of the sender.                                                                                                                       |
++-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Select From Address**           | The dotmailer assigns its own email address and domain so that in case of any complaints or issues, they would be separate from your current domain.|
++-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Optional Forwarding Address**   | Email responses can be forwarded to your regular email address.                                                                                     |
++-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Campaign Tags**                 | Enter tags for your email campaign.                                                                                                                 |
++-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 5.  Personalization is available for two fields: **Subject Line** and **Friendly From Name**. 
 
@@ -312,8 +312,8 @@ Similarly, you can apply any conditions of your choice.
 Related Articles
 ----------------
 
-- :ref:`Dotmailer Overview <user-guide-dotmailer-overview>`
-- :ref:`Dotmailer Configuration <user-guide-dotmailer-configuration>`
-- :ref:`Manage Dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
-- :ref:`Dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
-- :ref:`Dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
+- :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
+- :ref:`dotmailer Configuration <user-guide-dotmailer-configuration>`
+- :ref:`Manage dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
+- :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
+- :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`

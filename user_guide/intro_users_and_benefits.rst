@@ -129,7 +129,7 @@ marketing, customer segmentation, and campaign analysis.  OroCRM facilitates all
 - Ability to send personalized emails using customer data and customizable templates from within OroCRM
 
 - Automatic synchronization of dynamic marketing lists with 3rd-party email marketing platforms, such as Mailchimp or 
-  Dotmailer, in order to ensure that your contact list is always up to date
+  dotmailer, in order to ensure that your contact list is always up to date
   
 - Tracking of online and offline marketing campaign results in order to study their outcome and effectiveness
 

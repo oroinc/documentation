@@ -1,9 +1,9 @@
 .. _admin-configuration-dotmailer-integration-settings:
 
-Dotmailer Integration Settings
+dotmailer Integration Settings
 ==============================
 
-To configure dotmailer integration settings, navigate to **System>Configuration>System Configuration>Integrations>Dotmailer Settings**.
+To configure dotmailer integration settings, navigate to **System>Configuration>System Configuration>Integrations>dotmailer Settings**.
 
 |
 
@@ -19,13 +19,13 @@ To configure dotmailer integration settings, navigate to **System>Configuration>
   "**Data Fields Sync Interval**", "This interval is used to update data fields from dotmailer. By default, the number is set to 1 day."
 
 
-Complete information on how to configure dotmailer integration on the dotmailer side can be found in the :ref:`Dotmailer Configuration <user-guide-dotmailer-configuration>` guide.
+Complete information on how to configure dotmailer integration on the dotmailer side can be found in the :ref:`dotmailer Configuration <user-guide-dotmailer-configuration>` guide.
 
 Related Articles
 ----------------
 
-- :ref:`Dotmailer Overview <user-guide-dotmailer-overview>`
-- :ref:`Dotmailer Configuration <user-guide-dotmailer-configuration>`
-- :ref:`Manage Dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
-- :ref:`Dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
-- :ref:`Sending Email Campaign via Dotmailer <user-guide-dotmailer-campaign>`
+- :ref:`dotmailer Overview <user-guide-dotmailer-overview>`
+- :ref:`dotmailer Configuration <user-guide-dotmailer-configuration>`
+- :ref:`Manage dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
+- :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
+- :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`

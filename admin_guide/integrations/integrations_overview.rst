@@ -29,11 +29,17 @@ OroCRM supports two types of integrations:
     synchronized and used to create email campaigns in MailChimp. These campaigns and related campaign 
     statistics can be imported back to OroCRM.
 
-  - Pre-implemented :ref:`Integration with DotMailer <user-guide-dm-integration>`: Allows mapping OroCRM 
-    Marketing Lists to an address book at Dotmailer. The address books can be used to create email campaigns in 
-    DotMailer. These campaigns and related campaign statistics can be imported back to OroCRM.
+  - Pre-implemented :ref:`Integration with dotmailer <user-guide-dm-integration>`: Allows mapping OroCRM
+    Marketing Lists to an address book at dotmailer. The address books can be used to create email campaigns in
+    dotmailer. These campaigns and related campaign statistics can be imported back to OroCRM.
 
 .. hint::
 
     Along with pre-implemented integration capabilities, OroCRM can also be integrated with other third-party
     systems.
+
+.. toctree::
+    :hidden:
+    :maxdepth: 1
+
+    dotmailer_integration
