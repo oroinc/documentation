@@ -1,3 +1,5 @@
+:orphan: 
+
 .. _sys--websites--sysconfig--websites--sitemap:
 
 Sitemap Configuration Per Website

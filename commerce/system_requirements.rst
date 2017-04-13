@@ -1,6 +1,8 @@
 .. index::
     single: Requirements
 
+.. _system-requirements:
+
 System Requirements
 ===================
 
@@ -71,15 +73,17 @@ Enterprise Edition Software
 
 Enterprise edition is built to support better scale and performance. It is compatible with additional software configuration that allows to achieve these goals.
 
-+-------------------+----------------------------------------------------+
-| *PHP Extensions*  | * pgsql                                            |
-+-------------------+----------------------------------------------------+
-| *Database*        | * `PostgreSQL`_ / `EnterpriseDB`_ 9.1 and above    |
-+-------------------+----------------------------------------------------+
-| *Search Index*    | * `Elasticsearch`_ 2.x                             |
-+-------------------+----------------------------------------------------+
-| *Job Queue*       | * `RabbitMQ`_ 3.5.8 and above, 3.6.x is recommended|
-+-------------------+----------------------------------------------------+
++------------------+-----------------------------------------------------+
+| *PHP Extensions* | * pgsql                                             |
++==================+=====================================================+
+| *Database*       | * `PostgreSQL`_ / `EnterpriseDB`_ 9.1 and above     |
++------------------+-----------------------------------------------------+
+| *Search Index*   | * `Elasticsearch`_ 2.x                              |
++------------------+-----------------------------------------------------+
+| *Job Queue*      | * `RabbitMQ`_ 3.5.8 and above, 3.6.x is recommended |
++------------------+-----------------------------------------------------+
+
+.. _sys-requirements-postgre-config:
 
 **PostgreSQL Configuration**
 

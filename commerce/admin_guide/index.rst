@@ -8,6 +8,7 @@ This section contains information about OroCommerce configuration, administratio
 .. toctree::
    :maxdepth: 1
 
+   price_list_sharding
    optimize_index_and_price_calculation
 
 .. .. note:: Content is temporary unavailable due to severe maintenance works. Sorry for inconvenience.
