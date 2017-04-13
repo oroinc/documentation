@@ -1,7 +1,7 @@
 Web Services API
 ================
 
-OroCommerce exposes REST API to enable developers integrate with Oro application from the third party software systems.
+OroCommerce REST API enables developers to integrate Oro functionality into third party software systems.
 
 .. contents:: :local:
     :depth: 6
@@ -44,19 +44,19 @@ To start using the API, you must take a few preliminary steps:
 
         - If you want to generate an API key for yourself, navigate to the profile page of your user:
 
-            - either click the :guilabel:`My User` link in the **User Menu** in the top right corner of the current page, or
+            - Either click the :guilabel:`My User` link in the **User Menu** in the upper-right corner of the current page, or
 
-            - follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``.
+            - Follow the direct link, e.g. ``http://<hostname_of_your_oro_application>/user/profile/view``.
 
         - If you want to generate an API key for another user:
 
-            - open their view page,
+            a. Open their view page.
 
-            - open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`),
+            b. Open the :guilabel:`Users` grid (:guilabel:`System` --> :guilabel:`User Management` --> :guilabel:`Users`).
 
-            - find the user who needs an API key,
+            c. Find the user who needs an API key.
 
-            - click the corresponding grid row or the |icView| :guilabel:`View` icon from the ellipsis menu at the right-hand end of the row.
+            d. Click the corresponding grid row or the |IcView| :guilabel:`View` icon in the ellipsis menu at the right end of the row.
 
     3.  Click the :guilabel:`Generate Key` button. You will see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa'.
 
@@ -81,7 +81,7 @@ API Sandbox
 The API sandbox page allows you to perform API requests directly from the Oro application instance.
 
 
-How to use the sandbox
+How to Use the Sandbox
 """"""""""""""""""""""
 
 The sandbox page for OroCommerce is available at: ``http://<hostname_of_your_oro_application>/admin/api/doc``, unlike in OroCRM.
@@ -116,7 +116,7 @@ To switch between the collapsed list of available resources and the expanded sta
 Examples
 ^^^^^^^^
 
-Retrieve a single record
+Retrieve a Single Record
 """"""""""""""""""""""""
 
 To retrieve a single record for a particular resource record with JSON API, perform the GET method with the id parameter specified:
@@ -464,7 +464,7 @@ The following table describes all existing keys for the X-Include header.
 
 Header Examples
 """""""""""""""
-Example 1. Total number of existing records
+Example 1. Total Number of Existing Records
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Retrieve the total count of resource records.
@@ -496,7 +496,7 @@ Retrieve the total count of resource records.
     Connection: Keep-Alive
     Content-Type: application/vnd.api+json
 
-Example 2. Total number of deleted records
+Example 2. Total Number of Deleted Records
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Retrieve the total number of deleted records of the resource
 
@@ -512,8 +512,9 @@ Retrieve the total number of deleted records of the resource
     ....
     X-Include: deletedCount
 
-Example 3. Conditions for deletion operation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example 3. Conditions for the Delete Operation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Request query string contains a filter that specifies conditions for deletion operation. Filters are described in more detail in the `Filters`_ section.
 
 **Request header**
@@ -543,7 +544,8 @@ Request query string contains a filter that specifies conditions for deletion op
 
 Response Status Codes and Errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Response status codes
+
+Response Status Codes
 """""""""""""""""""""
 
 In case of a successful request, a response status code will be one of the following:
@@ -554,7 +556,7 @@ In case of a successful request, a response status code will be one of the follo
 
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
-Example. Successful request
+Example. Successful Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Request**
@@ -588,7 +590,7 @@ In case of an error, a response status code indicates the type of an error that 
 
     -   **500 Internal Server Error**—The server encountered an unexpected condition which prevented it from fulfilling the request.
 
-Example. Request resulted in error
+Example. Request Resulted in Error
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Request**
@@ -633,7 +635,7 @@ with its own set of fields.
 Resource Fields
 ^^^^^^^^^^^^^^^
 
-Most common resource fields
+Most Common Resource Fields
 """""""""""""""""""""""""""
 
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
@@ -654,8 +656,6 @@ Most common resource fields
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 | organization | organization | An organization record represents a real enterprise, business, firm, company or another             |
 |              |              | organization to which the users belong. Available only in Enterprise Edition instances.             |
-|              |              | For more details about the **organization** field purposes, see                                     |
-|              |              | `Company Structure and Organization <../user-guide/intro-company-structure-org-selector>`__         |
 +--------------+--------------+-----------------------------------------------------------------------------------------------------+
 
 
@@ -700,8 +700,8 @@ Available filters are listed in the :guilabel:`Documentation` tab of the method'
 
 To filter, perform a GET request and put your filters parameters in the query string.
 
-Example 1. Filter in the query string
-"""""""""""""""""""""""""""""""""""""
+Example 1. Filter in a Query String
+"""""""""""""""""""""""""""""""""""
 
 Retrieve all users of organization '1'.
 
@@ -718,7 +718,7 @@ Similar to a field, a filter declares a data type and only takes specific values
 
 Below are examples of requests and errors.
 
-Example 2. Wrong input type
+Example 2. Wrong Input Type
 """""""""""""""""""""""""""
 
 A string value is passed as an input to a filter which can contain only integer values.
@@ -737,7 +737,7 @@ A string value is passed as an input to a filter which can contain only integer 
     }] }
 
 
-Example 3. Unknown filter
+Example 3. Unknown Filter
 """""""""""""""""""""""""
 
 Unknown, mistyped or unsupported filter.
@@ -802,7 +802,7 @@ To request particular fields, use the **fields** filter and specify the fields y
     We recommend you to always use the fields filter and retrieve only the fields you will use in your application.
 
 
-Example. Retrieve only required fields
+Example. Retrieve Only Required Fields
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Select the **username** and the **email** fields of the **users** resource.
@@ -867,7 +867,7 @@ is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, fo
 +----------+-----------------------+-------------+---------------------------------------+
 
 
-Example. Use operators to filter data
+Example. Use Operators to Filter Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Request**
@@ -923,7 +923,7 @@ All included resources will be represented in **included** section at the end of
     Please note, in case of using **fields** filter for the main resource (e.g. users), it must contain
     the field(s) used in the **include** filter.
 
-Example. Include a related resources information
+Example. Include a Related Resources Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Include the **roles** relation with the **fields** filter.
@@ -986,7 +986,7 @@ Include the **roles** relation with the **fields** filter.
 Also, it is possible to limit fields that will be retrieved from the relation. For such purposes, the **fields** filter
 should be used.
 
-Example. Retrieve only required fields of the related resource
+Example. Retrieve Only Required Fields of the Related Resource
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Request**
@@ -1055,7 +1055,7 @@ parameters should be passed as the parameters of the query string.
 +----------------+---------+---------------+---------------------------------------------------------------------+
 
 
-Example. Retrieve a particular page of the paged response
+Example. Retrieve a Particular Page of the Paged Response
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Get the 2nd page of the retrieved records for the **users** resource with 20 records per page.
@@ -1078,7 +1078,7 @@ When the response to your call is a list of objects, you can also sort this list
 available values listed in the API reference.
 
 
-Example. Sort by a field value
+Example. Sort by a Field Value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sort by **username** in descending order.
@@ -1131,7 +1131,7 @@ The following table contains a list of supported meta properties that may be req
 | title         | A text representation of the resource. |
 +---------------+----------------------------------------+
 
-Example. Retrieve a text representation of the resource
+Example. Retrieve a Text Representation of the Resource
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     **Request**
@@ -1338,13 +1338,13 @@ Sometimes it is required to create or update related resources while creating or
 
 This request does the following:
 
-- Creates account 'Cloth World'.
+1. Creates account 'Cloth World'.
 
-- Creates two contacts, 'John Doe' and 'Nancy Jones'.
+2. Creates two contacts, 'John Doe' and 'Nancy Jones'.
 
-- Assigns these contacts to the account 'Cloth World'.
+3. Assigns these contacts to the account 'Cloth World'.
 
-- Makes 'Nancy Jones' the default contact for 'Cloth World'.
+4. Makes 'Nancy Jones' the default contact for 'Cloth World'.
 
 Please pay attention to the identifiers of the contacts. For 'John Doe' it is '8da4d8e7-6b25-4c5c-8075-b510f7bbb84f'. For 'Nancy Jones' it is '707dda0d-35f5-47b9-b2ce-a3e92b9fdee7'. These identifiers are used to specify relations between resources in scope of the request. In this example, GUIDs are used but it is possible to use any algorithm to generate such identifiers. The only requirement is that they must be unique in scope of the request. For example, the following identifiers are valid as well: 'john_doe' and 'nancy_jones'.
 
@@ -1419,9 +1419,9 @@ Also, it is possible to update several related resources via a single API reques
 
 This request does the following:
 
-- Changes the account name to 'Cloth World Market'.
+1. Changes the account name to 'Cloth World Market'.
 
-- Sets the primary email for the contact with identifier '79' and makes it the default contact.
+2. Sets the primary email for the contact with identifier '79' and makes it the default contact.
 
 
 Data API Client Requirements
@@ -1430,8 +1430,8 @@ Data API Client Requirements
 The only requirement for the client that will send API requests to the server is that it **must** have the **Content-Type** header that looks like: ``Content-Type: application/vnd.api+json``.
 **Content-Type** must not contain any media type parameters.
 
-Example. A valid **Content-Type**
-"""""""""""""""""""""""""""""""""
+Example. Valid **Content-Type**
+"""""""""""""""""""""""""""""""
 
 .. code-block:: http
 
@@ -1441,7 +1441,7 @@ Example. A valid **Content-Type**
 
 At the same time, it **must** ignore any media type parameters received in the **Content-Type** header of the response.
 
-Example. Ignore media type in response
+Example. Ignore Media Type in Response
 """"""""""""""""""""""""""""""""""""""
 **Request**
 
@@ -1473,6 +1473,7 @@ will a plain format rather than JSON API.
 
 Example. Invalid **Content-Type**
 """""""""""""""""""""""""""""""""
+
 **Request**
 
 .. code-block:: http
