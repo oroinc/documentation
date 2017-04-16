@@ -1,7 +1,7 @@
 .. index::
     single: Configuration
 
-Configuration
+Configuration 1
 =============
 
 With the `OroConfigBundle`_ you can define configuration settings in different
