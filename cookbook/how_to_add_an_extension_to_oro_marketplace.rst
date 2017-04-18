@@ -27,12 +27,21 @@ information about the application, its author and distribution license, as shown
 .. code-block:: json
     :linenos:
 
-    {
-        "name": "oro/crm-application",
-        "description": "The OroCRM distribution",
-        "homepage": "https://github.com/orocrm/crm-application.git",
-        "license": "OSL-3.0"
-    }
+        {
+            "name": "namespace/example-bundle",
+            "description": "The Example Bundle distribution",
+            "homepage": "https://github.com//example-bundle.git",
+            "license": "OSL-3.0",
+            "autoload": {
+                "psr-0": {
+                    "Namespace\\Bundle\\ExampleBundle":""
+                }
+            },
+            "target-dir": "Namespace/Bundle/ExampleBundle",
+        }
+
+Also do not forget to include the "autoload" and "target-dir" sections. Note, that "Namespace/Bundle/ExampleBundle"
+value matches the namespace of your bundle.
 
 We only accept extensions under OSL-3 or MIT licenses.
 
