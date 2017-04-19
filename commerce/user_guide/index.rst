@@ -3,7 +3,7 @@ User Guide
 
 OroCommerce as a B2B eCommerce platform provides a number of self-serve capabilities, mature buyer-seller interaction processes (e.g. for placing orders, sharing pricing information, requesting quotes, and submitting proposals), and may be easily used as a B2B Marketplace that connects a wide range of suppliers with multiple buyers. Buyers may get multiple offers and bids across various goods and services.
 
-OroCommerce provides corporate accounts, multiple organizations, websites and stores, high-performance content management system (CMS) with product, `inventory <./inventory/manage-inventory>`_ and `warehouse <./inventory/warehouses>`_ management, personalized `web catalog management <./marketing/web-catalog>`_.
+OroCommerce provides corporate accounts, multiple organizations, websites and stores, high-performance content management system (CMS) with product, :ref:`inventory <user-guide--inventory>` and :ref:`warehouse <user-guide--inventory--warehouses--view>` management, personalized :ref:`web catalog management <user-guide--web-catalog>`.
 
 .. `product <./products/products>`_
 .. , multiple and customized `price lists <./sales/price-lists>`_ for your sales organization and multiple `shopping lists <./sales/shopping-lists>`_ for your buyer's organization.
@@ -20,8 +20,8 @@ Core Features
 
 .. `Websites <./system/websites>`_ &
 
-* Multiple `Organizations <./customers>`_, Websites and `Stores <./marketing-web-catalog>`_: Many businesses manage multinational brands that operate across various countries, currencies, and tax regulations. OroCommerce Enterprise Edition comes out-of-the-box with flexible and robust multi-website management capabilities which allows organizations to easily orchestrate multiple businesses from one central admin console.
-* `Content Management System <./marketing-web-catalog>`_: Native CMS capabilities allow marketers and merchandise managers to manage robust digital media-enabled catalogs and rich product information pages providing buyers with the information they need to make purchasing decisions. In addition, OroCommerce’s theme is designed with an intuitive, user-friendly front-end which allows buyers to easily find the information and products they need.
+* Multiple `Organizations <./customers>`_, Websites and :ref:`Stores <user-guide--web-catalog>`: Many businesses manage multinational brands that operate across various countries, currencies, and tax regulations. OroCommerce Enterprise Edition comes out-of-the-box with flexible and robust multi-website management capabilities which allows organizations to easily orchestrate multiple businesses from one central admin console.
+* :ref:`Content Management System <user-guide--web-catalog>`: Native CMS capabilities allow marketers and merchandise managers to manage robust digital media-enabled catalogs and rich product information pages providing buyers with the information they need to make purchasing decisions. In addition, OroCommerce’s theme is designed with an intuitive, user-friendly front-end which allows buyers to easily find the information and products they need.
 
 .. `Personalized Catalog Management <./products-master-catalog>`_
 
@@ -66,14 +66,14 @@ Orientation in the OroCommerce User Guide
 
 For detailed information on using OroCommerce CE and EE, please see the following topics:
 
-* `Navigation and using OroCommerce UI <./getting_started>`_
+* :ref:`Navigation and using OroCommerce UI <user-guide--getting-started>`
 
 .. * Managing master catalog, `product details <./products>`_, and price attributes <./products-misc/price-attributes>`_
 
 .. `master catalog <./products-master-catalog>`_
 .. * `Managing master catalog, product details, and price attributes <./products>`_
 
-* `Managing inventory and product availability in the warehouses <./inventory>`_
+* :ref:`Managing inventory and product availability in the warehouses <user-guide--inventory>`
 
 .. * `Managing product prices <./sales/price-lists>`_
 
@@ -83,7 +83,7 @@ For detailed information on using OroCommerce CE and EE, please see the followin
 
 .. * Configuring `payment <./sales/payment>`_ and `shipping <./sales/shipping>`_ options available to the csutomer users during checkout.
 
-* Using marketing tools: `custom web catalog <./marketing-web-catalog>`_ and `landing pages <./marketing-landing-pages>`_.
+* Using marketing tools: :ref:`custom web catalog <user-guide--web-catalog>` and :ref:`landing pages <user-guide--landing-pages>`.
 
 .. , and `customer login pages <./marketing-customer-login-pages>`_
 

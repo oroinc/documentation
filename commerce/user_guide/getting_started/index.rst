@@ -1,3 +1,5 @@
+.. _user-guide--getting-started:
+
 Getting Started with UI
 =======================
 

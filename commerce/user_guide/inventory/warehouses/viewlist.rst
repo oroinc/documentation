@@ -1,3 +1,5 @@
+.. _user-guide--inventory--warehouses--view:
+
 View and filter all Warehouses
 ------------------------------
 
