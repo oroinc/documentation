@@ -5,8 +5,6 @@
 How to use WSSE authentication
 ==============================
 
-*Used application: OroPlatform 1.7*
-
 Overview
 --------
 
@@ -63,10 +61,10 @@ To generate an authentication header with PHP:
     :linenos:
 
     $userName = 'your username';
-    $userPassword = 'your password';
-    $nonce = uniqid();
+    $userApiKey = 'your apiKey';
+    $nonce = base64_encode(substr(md5(uniqid()), 0, 16));
     $created  = date('c');
-    $digest   = base64_encode(sha1(base64_decode($nonce) . $created . $userPassword, true));
+    $digest   = base64_encode(sha1(base64_decode($nonce) . $created . $userApiKey, true));
 
     $wsseHeader = "Authorization: WSSE profile=\"UsernameToken\"\n";
     $wsseHeader.= sprintf(
@@ -76,7 +74,6 @@ To generate an authentication header with PHP:
         $nonce,
         $created
     );
-    
 
 Header and nonce lifetime
 -------------------------
