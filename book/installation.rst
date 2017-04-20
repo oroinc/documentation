@@ -663,26 +663,29 @@ To load your own data fixtures, you'll need to implement Doctrine's *"FixtureInt
 Activating Background Tasks
 ---------------------------
 
-Time consuming or blocking tasks should usually be performed in the background to not influence the
-user experience in a bad way. For example, the OroPlatform uses the `MessageQueueComponent`_
-together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. You  have to make
-sure that its entry point is called regularly, for example, by executing it every minute through the
-system's cron system:
+To launch scheduled execution of the operations required by the Oro application, set up a 
+cron command with the `oro:cron` CLI command as an application entry point (see the sample configuration below).
 
 .. code-block:: text
 
     */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:cron --env=prod > /dev/null
-
-and one or more consumers are running:
-
-.. code-block:: text
-
-    */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:message-queue:consume --env=prod > /dev/null
-
+    
 .. seealso::
 
     You can also create your own commands that are executed in the background at certain times.
-    Read more about it in the :doc:`chapter about executing jobs </book/jobs>`.
+    Read more about it in the :ref:`chapter about executing cron commands <book-job-execution>`.
+
+Time consuming or blocking tasks should usually be performed in the background to aviod negative impact on the application response time. For example, the OroPlatform uses the `MessageQueueComponent`_
+together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. Ensure that one or more consumers are always running:
+
+.. code-block:: text
+
+    /path/to/php [$folder_location]/orocrm/app/console oro:message-queue:consume --env=prod > /dev/null
+
+.. seealso::
+
+    To ensure that required number of consumers keeps running, set up a supervisor.
+    Here is an `example of supervisord configuration <https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle#supervisord>`_.
 
 Updating OroPlatform to OroCRM
 ------------------------------
