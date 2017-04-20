@@ -52,4 +52,4 @@ To speed up the indexation, you can:
 
 * Use parallel (multi-thread) indexation. As a prerequisite, ensure that several MessageQueue consumers are running. Next, run the command above with the ``--scheduled`` parameter. Depending on the number of CPU cores and consumers running, this can drastically cut the indexation time.
 
-* Use the ORM engine for index persistence. In future releases, OroCommerce will be optimized for ElasticSearch.
+* Use the ``--product-id`` switch together with ``--scheduled`` (multithreaded) indexation to control the amount of entities, indexed per message. This will control indexation load distribution among several consumers and allow scaling. Use an example value of ``*/1000`` to generate messages with 1000 products each.
