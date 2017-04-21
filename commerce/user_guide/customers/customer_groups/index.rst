@@ -4,7 +4,7 @@ Customer Groups
 .. begin
 
 .. include:: /user_guide/overview/customers/customer_groups_overview.rst
-  :start-after: begin
+   :start-after: begin
 
 .. image:: /user_guide/img/customers/customer_groups/CustomerGroups.png
    :class: with-border
@@ -12,10 +12,11 @@ Customer Groups
 .. contents:: :local:
 
 .. include:: /user_guide/customers/customer_groups/create.rst
-  :end-before: stop
+   :end-before: stop
 
 .. include:: /user_guide/customers/customer_groups/pricelist.rst
-  :end-before: stop
+   :start-after: begin
+   :end-before: stop
 
 .. finish
 

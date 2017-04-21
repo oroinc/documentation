@@ -3,6 +3,8 @@
     single: Customization; Grid Event Listeners
     single: Events; Grid Event Listeners
 
+.. _how-to-pass-request-parameter-to-the-grid:
+
 How to pass request parameter to the grid
 =========================================
 

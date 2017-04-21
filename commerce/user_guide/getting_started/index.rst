@@ -23,3 +23,5 @@ This section of the guide will provide an introduction to OroCommerce's user int
     intro_nav_history_fav_viewed
     intro_nav_sidebar
     intro_nav_popup
+    common_actions/manage_address_book
+    common_actions/manage_translation

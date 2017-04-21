@@ -1,3 +1,5 @@
+.. _user-guide--customers--customers--organize:
+
 Customer Organization Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

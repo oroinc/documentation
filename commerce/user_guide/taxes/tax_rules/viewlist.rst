@@ -6,7 +6,7 @@ To view all Tax Rules, navigate to **Taxes > Tax Rules** in the main menu.
 .. image:: /user_guide/img/taxes/tax_rules/All_TaxRules_Taxes.png
    :class: with-border
 
-.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use `filters <user-guide-ui-components-grid-filters>`_ to narrow down the list to just the codes you need.
+.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
 
 The following information about the Tax Rules is available in the Tax Rules list:
 
@@ -36,7 +36,7 @@ You can perform the following actions with every item in the Tax Rules list:
    
    OR
    
-   Aternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
+   Alternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
 
  * `Edit a Tax Rule details <edit>`_: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details.
 

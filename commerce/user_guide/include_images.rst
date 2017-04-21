@@ -5,6 +5,18 @@ Images
 
 .. begin
 
+.. |IcActivate| raw:: html
+
+   <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+.. |IcDeactivate| raw:: html
+
+   <i class="fa fa-close fa-lg" aria-hidden="true"></i>
+
+.. |IcClone| raw:: html
+
+   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
+
 .. |IcSearch| raw:: html
 
    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
@@ -32,6 +44,10 @@ Images
 .. |IcDelete| raw:: html
 
    <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+
+.. |IcExpireQuote| raw:: html
+
+   <i class="fa fa-clock fa-lg" aria-hidden="true"></i>
 
 .. |IcEdit| raw:: html
 

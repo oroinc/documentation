@@ -1,6 +1,12 @@
 User Guide
 ==========
 
+.. _user-guide--products--master-catalog:
+.. .. _config-guide--translations:
+.. _user-guide--products--products:
+.. _user-guide--sales--requests-for-quote:
+.. _user-guide--sales--orders:
+
 OroCommerce as a B2B eCommerce platform provides a number of self-serve capabilities, mature buyer-seller interaction processes (e.g. for placing orders, sharing pricing information, requesting quotes, and submitting proposals), and may be easily used as a B2B Marketplace that connects a wide range of suppliers with multiple buyers. Buyers may get multiple offers and bids across various goods and services.
 
 OroCommerce provides corporate accounts, multiple organizations, websites and stores, high-performance content management system (CMS) with product, :ref:`inventory <user-guide--inventory>` and :ref:`warehouse <user-guide--inventory--warehouses--view>` management, personalized :ref:`web catalog management <user-guide--web-catalog>`.
@@ -107,6 +113,12 @@ Table of Contents
    inventory/index
 
    customers/index
+
+   quotes/index
+
+   payment/index
+
+   shipping/index
 
    marketing_web_catalog/index
 

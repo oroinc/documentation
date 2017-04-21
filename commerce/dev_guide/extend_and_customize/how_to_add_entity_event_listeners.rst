@@ -14,7 +14,7 @@ Configuring the Listener
 ------------------------
 
 Suppose that you have already extended an Oro bundle like ``OroContactBundle`` (you can find more information
-on this page: `How to extend existing bundle`_).
+on this page: :ref:`How to extend existing bundle <how-to-extend-existing-bundle>`).
 And you would like to compliment your contact's social information with some external API data.
 
 For this you need to register your listener in the ``services.yml`` file.

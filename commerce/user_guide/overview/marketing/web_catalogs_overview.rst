@@ -11,5 +11,5 @@ The Web Catalog content nodes may be of the following types:
 
 * System page - one of the standard eCommerce website pages (e.g. sign in, user profile, open orders, etc). 
 * Landing page - a custom `landing page <./marketing-landing-page>`_ created in the **Marketing > Landing Pages** section.
-* Category - a category of the `master catalog <./products/master-catalog>`_.
-* Product - direct link to `product <./products/products>`_ details.
+* Category - a category of the :ref:`master catalog <user-guide--products--master-catalog>`.
+* Product - direct link to :ref:`product <user-guide--products--products>` details.

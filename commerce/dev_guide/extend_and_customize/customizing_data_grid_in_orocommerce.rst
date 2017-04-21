@@ -3,7 +3,7 @@ Customizing Data Grid
 
 Most business application users have to deal with significant amounts of data on a daily basis. Thus, efficiently navigating through large data sets becomes a must have requirement and OroCommerce is not an exception. The application users must be able to easily filter, sort, and search through thousands (or millions) of records, usually represented in the form of a data grid on a page.
 
-This topic uses existing OroCommerce data grids for illustration. If you are not familiar with OroPlatform data grids, you may find it helpful to check the `articles on how to create a simple data grid <../entities/datagrid>`_, and `how to pass request parameters to your data grid <../other/how_to_pass_request_parameter_to_grid>`_. The `datagrid.yml configuration reference <../reference/format/datagrid>`_ and the OroDataGridBundle documentation contain additional useful information.
+This topic uses existing OroCommerce data grids for illustration. If you are not familiar with OroPlatform data grids, you may find it helpful to check the `articles on how to create a simple data grid <../entities/datagrid>`_, and :ref:`how to pass request parameters to your data grid <how-to-pass-request-parameter-to-the-grid>`. The `datagrid.yml configuration reference <../reference/format/datagrid>`_ and the OroDataGridBundle documentation contain additional useful information.
 
 .. image:: /dev_guide/img/grid1.png
 

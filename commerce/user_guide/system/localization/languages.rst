@@ -13,29 +13,31 @@ Preview:
 .. image:: /user_guide/img/system/localization/Languages.png
    :class: with-border
 
-The following information about the Languages is available in the Languages list:
+.. TODO add languages, import, export. Review UI.
 
-+--------------------------+-------------+
-| Name                     | Description |
-+==========================+=============+
-| LANGUAGE                 |             |
-+--------------------------+-------------+
-| STATUS                   |             |
-+--------------------------+-------------+
-| TRANSLATION COMPLETENESS |             |
-+--------------------------+-------------+
-| UPDATES                  |             |
-+--------------------------+-------------+
+   The following information about the Languages is available in the Languages list:
 
-**Next steps**
+   +--------------------------+-------------+
+   | Name                     | Description |
+   +==========================+=============+
+   | LANGUAGE                 |             |
+   +--------------------------+-------------+
+   | STATUS                   |             |
+   +--------------------------+-------------+
+   | TRANSLATION COMPLETENESS |             |
+   +--------------------------+-------------+
+   | UPDATES                  |             |
+   +--------------------------+-------------+
 
-You can perform the following actions with every item in the Languages list:
+   **Next steps**
 
- * Import
+   You can perform the following actions with every item in the Languages list:
 
- * Export
+    * Import
+
+    * Export
 
 
-You can perform the following actions at the Languages page:
+   You can perform the following actions at the Languages page:
 
- * Add Language
+    * Add Language

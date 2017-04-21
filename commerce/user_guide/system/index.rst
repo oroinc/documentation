@@ -6,9 +6,13 @@ This section contains information on optional OroCommerce post-install configura
 .. toctree::
    :maxdepth: 1
 
+   commerce_configuration/index
+
    localization/index
 
    websites/index
+
+   workflows/index
 
    menu/index
 

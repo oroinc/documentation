@@ -1,3 +1,5 @@
+.. _user-guide--customers--customer-user-roles:
+
 Customer User Roles
 -------------------
 

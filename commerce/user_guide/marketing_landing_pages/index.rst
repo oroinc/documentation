@@ -11,19 +11,19 @@ Overview
 --------
 
 .. include:: /user_guide/overview/marketing/landing_pages_overview.rst
-  :start-after: begin
+   :start-after: begin
 
 .. include:: create.rst
-  :end-before: finish
+   :end-before: finish
 
 .. include:: viewlist.rst
-  :end-before: finish
+   :end-before: finish
 
 .. include:: view.rst
-  :end-before: finish
+   :end-before: finish
 
 .. include:: edit.rst
-  :end-before: finish
+   :end-before: finish
 
 .. toctree::
    :hidden:

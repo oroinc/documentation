@@ -1,5 +1,3 @@
-
-
 :orphan:
 
 Configuring Website Routing and Sitemaps Generation

@@ -12,10 +12,11 @@ For detailed information on these topics please see the following sections:
 
    localizations
 
-   translations
-
    Global Localization Settings <localization>
 
    Website Localization Settings <website_localization>
 
    language_settings
+
+
+..    translations

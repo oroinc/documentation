@@ -52,7 +52,7 @@ To map an entry point for the web catalog content tree:
 
 #) In the *General* section, fill in root content node title that serves as a container for the nodes added later in the Content Variants section.
 
-   If necessary, translate the title into the languages supported in your OroCommerce configuration. To manage title translations, click next to the Titles box and follow the `guidance here <./../getting-started/common-actions/manage-translation>`_).
+   If necessary, translate the title into the languages supported in your OroCommerce configuration. To manage title translations, click next to the Titles box and follow the :ref:`guidance here <config-guide--translations>`).
 
 #) Set **Rewrite Variant Title** to force override the native title of the content you are mapping to this catalog node.
 

@@ -16,7 +16,7 @@ In Customer Users section, you can:
     - Name
     - Birthday
     - Email address
-    - Billing and shipping address and phone number (using `address book <./../getting-started/common-actions/manage-address-book>`_)
+    - Billing and shipping address and phone number (using :ref:`address book <user-guide--getting-started--address-book>`)
     - Customer user role(s)
     - Website to redirect the customer upon login
 

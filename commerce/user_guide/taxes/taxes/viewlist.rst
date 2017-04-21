@@ -6,7 +6,7 @@ To view all Tax Rates, navigate to **Taxes > Tax Rates** in the main menu.
 .. image:: /user_guide/img/taxes/taxes/All_Taxes_Taxes.png
    :class: with-border
 
-.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use `filters <user-guide-ui-components-grid-filters>`_ to narrow down the list to just the codes you need.
+.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
 
 The following information about the Tax Rates is available in the Tax Rates list:
 

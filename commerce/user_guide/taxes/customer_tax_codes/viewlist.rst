@@ -6,7 +6,7 @@ To view all Customer Tax Codes, navigate to **Taxes > Customer Tax Codes** in th
 .. image:: /user_guide/img/taxes/customer_tax_codes/AllAccountTaxCodesTaxes.png
    :class: with-border
 
-.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use `filters <user-guide-ui-components-grid-filters>`_ to narrow down the list to just the codes you need.
+.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
 
 The following information about the Customer Tax Codes is available in the Customer Tax Codes list:
 

@@ -2,6 +2,8 @@
     single: Bundle; Extend a Bundle
     single: Customization; Extend a Bundle
 
+.. _how-to-extend-existing-bundle:
+
 How to Extend Existing Bundle
 =============================
 

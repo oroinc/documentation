@@ -15,13 +15,13 @@ Customer Users
 ~~~~~~~~~~~~~~
 
 .. include:: /user_guide/customers/configuration/customer_users.rst
-  :start-after: begin
+   :start-after: begin
 
 Visibility
 ~~~~~~~~~~
 
 .. include:: /user_guide/customers/configuration/visibility.rst
-  :start-after: begin
+   :start-after: begin
 
 .. finish
 

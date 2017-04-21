@@ -1,3 +1,5 @@
+.. _user-guide--getting-started--address-book:
+
 Managing Address Book
 ~~~~~~~~~~~~~~~~~~~~~
 

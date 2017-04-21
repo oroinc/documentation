@@ -1,3 +1,7 @@
+.. _user-guide--customers--customer-groups--pricelist:
+
+.. begin
+
 Price List Management for a Customer Group
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

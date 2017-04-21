@@ -1,3 +1,5 @@
+.. _tax-rules:
+
 Tax Rules
 ---------
 

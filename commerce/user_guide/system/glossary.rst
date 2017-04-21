@@ -1,6 +1,3 @@
-Glossary
-========
-
 .. comment:
    #OroCommerce buyer's interface
    #OroCommerce admin interface
@@ -16,9 +13,6 @@ Glossary
    #
    #Stock keeping unit (SKU) is a machine readable identifier of a product or service that helps    #inventory an item.
    #
-
-.. warning:: Reused from OroCRM. Rework.
-
 
 .. _glossary:
 

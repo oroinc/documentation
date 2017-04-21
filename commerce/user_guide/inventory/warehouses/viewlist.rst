@@ -21,11 +21,11 @@ You can perform the following actions with every item in the Warehouses list:
    
    OR
    
-   Aternatively: Click the |IcView| to the right of the item to open its details page.
+   Alternatively: Click the |IcView| to the right of the item to open its details page.
 
  * `Edit a Warehouse details <edit>`_: Click the |IcEdit| to the right of the item to start editing its details.
 
-You can perform the following actions on the Customer User Roles page:
+You can perform the following actions on the Warehouses page:
 
  * `Create Warehouse <./create>`_
 

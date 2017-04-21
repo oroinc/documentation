@@ -227,6 +227,6 @@ The trees from the configuration files of all bundles will be merged into one la
 ``priority`` option can be used to control the order in which nodes from different configuration
 files will be merged into the final tree. Nodes with a higher priority are shown first.
 
-.. _`system_configuration.yml file`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/config/system_configuration.yml
+.. _`system_configuration.yml file`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/config/oro/system_configuration.yml
 .. _`ActivityListBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/README.md
 .. _`Font Awesome Icon`: http://fontawesome.io/3.2.1/icons/

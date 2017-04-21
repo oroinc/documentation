@@ -19,7 +19,7 @@ To view all Web Catalogs, navigate to **Marketing > Web Catalogs** in the main m
    :class: with-border
 
 .. include:: create.rst
-  :end-before: finish
+   :end-before: finish
 
 .. toctree::
    :hidden:

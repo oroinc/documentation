@@ -6,7 +6,7 @@ To view all Tax Jurisdictions, navigate to **Taxes > Tax Jurisdictions** in the 
 .. image:: /user_guide/img/taxes/tax_jurisdictions/TaxJurisdictions.png
    :class: with-border
 
-.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use `filters <user-guide-ui-components-grid-filters>`_ to narrow down the list to just the codes you need.
+.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
 
 The following information about the Tax Jurisdictions is available in the Tax Jurisdictions list:
 
