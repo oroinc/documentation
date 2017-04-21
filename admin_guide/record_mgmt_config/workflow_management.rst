@@ -82,6 +82,8 @@ To create a workflow for an entity:
 
   "**Name**", "The name of the workflow."
   "**Related Entity**", "A related entity is the entity for which the workflow is created. When the workflow is active, it can be launched and executed on the records of its related entity."
+  "**Exclusive Active Groups**","Exclusive Active Groups is a list of group names for which the current workflow should be active exclusively. Determining Exclusive Record Groups allows to set up mutually exclusive workflows in order to configure how they each correlate in the system. This makes it possible for only one workflow to be active, or for an entity record to use only one workflow from the group at a time."
+  "**Exclusive Record Groups**","Exclusive Record Groups specify how workflows apply to certain sets of records in order to limit their applicability. This lets users create specific workflows for specific segments (subsets) of records. For example, no concurrent transitions are possible among workflows in same exclusive record group."
   "**Default Step**", "Specifying the default steps launches the workflow in a particular step by default. For instance, when you activate Opportunity Management Flow, a newly created opportunity will appear as **open**, if **Open** was specified as the default step.
   If no step is selected, all newly created records will have no workflow associated with them, and it must be launched with one of the starting transitions."
   "**Display Steps Ordered**", "Display Steps Ordered box is not checked by default.
@@ -161,6 +163,7 @@ As an example, we are going to create an **Opportunity Support Flow** to show ho
 
 Add a Step
 ~~~~~~~~~~
+
 To add a step to a workflow, click :guilabel:`Add Step` in the top right corner of the chart. 
 
 |
