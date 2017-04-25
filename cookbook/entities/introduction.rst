@@ -4,7 +4,7 @@ How to Work with Entities
 This section is step by step tutorial explaining all the things you come across when dealing with
 entities in a CRM application.
 
-The underlying use case is the need to track tasks that the users of you application have to do. A
+The underlying use case is the need to track tasks that the users of your application have to do. A
 task has a description, a due date, and a priority and it is assigned to the user who has to do the
 job.
 
