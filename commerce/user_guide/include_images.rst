@@ -9,6 +9,14 @@ Images
 
    <i class="fa fa-check fa-lg" aria-hidden="true"></i>
 
+.. |IcRefresh| raw:: html
+
+   <i class="fa fa-repeat fa-lg" aria-hidden="true"></i>
+
+.. |IcReorder| raw:: html
+
+   <i class="fa fa-arrows-v fa-lg" aria-hidden="true"></i>
+
 .. |IcDeactivate| raw:: html
 
    <i class="fa fa-close fa-lg" aria-hidden="true"></i>

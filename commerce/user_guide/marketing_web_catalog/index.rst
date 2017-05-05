@@ -18,6 +18,13 @@ To view all Web Catalogs, navigate to **Marketing > Web Catalogs** in the main m
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogs.png
    :class: with-border
 
+Configuration
+-------------
+
+.. include:: configuration/index.rst
+   :start-after: begin
+   :end-before: finish
+   
 .. include:: create.rst
    :end-before: finish
 

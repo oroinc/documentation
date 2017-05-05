@@ -23,6 +23,8 @@ This section contains information on the system configuration options specific f
    ../../taxes/configuration/us_sales_tax.rst
 
    ../../taxes/configuration/eu_vat_tax.rst
+   
+   ../../marketing_web_catalog/configuration/index.rst
 
    payment_configuration
 

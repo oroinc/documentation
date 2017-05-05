@@ -199,6 +199,34 @@ To add a landing page node to the menu on the OroCommerce Store Front:
 
 #. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
 
+Product Collection
+""""""""""""""""""
+
+Product Collection is a filter-based segment that helps you display a custom and dynamic set of products in the web catalog similarly to the category contents.
+
+To add a product collection node to the menu on the OroCommerce Store Front:
+
+#. Select the **Add Product Collection** in the Content Variants list.
+
+   The following section shows:
+
+   .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreateContentVariantsProductCollection.png
+      :class: with-border
+
+   .. add ref :ref:`filter <segments-filter>`
+
+#. Set up a filter to limit the products list and include only the necessary products.
+
+   .. note::
+
+      Click **Reset** to clear the filter configuration.
+
+      Click **Apply Query** to preview the filtered product collection.
+
+   .. warning:: If you save the web catalog node with the product collection without applying changed filters, you will be prompted to confirm the changes. It is recommended to preview and double-check the changes to ensure the results meet your expectations.
+
+#. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+
 .. stop
 
 .. include:: /user_guide/include_images.rst

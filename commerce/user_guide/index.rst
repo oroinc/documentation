@@ -126,6 +126,8 @@ Table of Contents
 
    taxes/index
 
+   segments/index
+
    system/index
 
 ..   install/index
