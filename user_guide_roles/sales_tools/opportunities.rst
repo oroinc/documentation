@@ -471,31 +471,31 @@ To edit the opportunity from the grid, double-click on the field or the inline e
 |
 |
 
-Do the same for a record within its view page:
+.. Do the same for a record within its view page:
 
-|
+.. |
 
-.. image:: ../img/opportunities_2.0/view_inline_editing_1.png
+.. .. image:: ../img/opportunities_2.0/view_inline_editing_1.png
 
-|
+.. |
 
-|
+.. |
 
-.. image:: ../img/opportunities_2.0/view_inline_editing_2.png
+.. .. image:: ../img/opportunities_2.0/view_inline_editing_2.png
 
-|
+.. |
 
-Currently you can use inline editing for the following fields within the view page of a record:
+.. Currently you can use inline editing for the following fields within the view page of a record:
 
-- Opportunity Name
-- Status
-- Contact
-- Probability
-- Budget Amount
-- Tags
-- Close Reason
-- Close Revenue
-- Expected Close Date
+.. - Opportunity Name
+.. - Status
+.. - Contact
+.. - Probability
+.. - Budget Amount
+.. - Tags
+.. - Close Reason
+.. - Close Revenue
+.. - Expected Close Date
 
 Kanban Board
 ^^^^^^^^^^^^

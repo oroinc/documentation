@@ -82,30 +82,30 @@ View and Manage a Contact Record
 
 If the |IcEditInline| **Edit Inline** icon appears next to a value, inline editing is available for it.
 
-To edit a contact from the view page, double-click on the required field or the inline editing icon |IcEditInline| in the field you wish to edit, and modify the value as required.
+.. To edit a contact from the view page, double-click on the required field or the inline editing icon |IcEditInline| in the field you wish to edit, and modify the value as required.
 
-|
+.. |
 
-.. image:: ../img/data_management/view/inline_editing_2.png
+.. .. image:: ../img/data_management/view/inline_editing_2.png
 
-|
+.. |
 
-In some cases, you will need to select the value from a dropdown.
+.. In some cases, you will need to select the value from a dropdown.
 
-|
+.. |
 
-.. image:: ../img/data_management/view/inline_editing_3.png
+.. .. image:: ../img/data_management/view/inline_editing_3.png
 
-|
+.. |
 
-From the view page, you can perform inline editing for the following fields:
+.. From the view page, you can perform inline editing for the following fields:
 
-- Fax
-- Skype
-- Tags
-- Birthday
-- Gender
-- Source
+.. - Fax
+.. - Skype
+.. - Tags
+.. - Birthday
+.. - Gender
+.. - Source
 
 To edit contacts from the grid using inline editing, perform the same actions as for inline editing from the view page.
 
