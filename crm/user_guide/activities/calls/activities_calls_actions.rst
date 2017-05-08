@@ -109,7 +109,31 @@ From the Call Grid
 
    |
 
-3. Review the user settings.
+3. Update call details as required. For the description of call log fields, see :ref:`Call View Page <doc-activities-calls-view-page>`.
+
+4. Click :guilabel:`Save`.
+
+
+From the Call View Page
+~~~~~~~~~~~~~~~~~~~~~~~
+
+1. In the main menu, navigate **Activities>Calls**.
+
+2. In the grid on the **Calls** page, click the required call.
+
+   Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
+
+   |
+
+   .. image:: ../../img/activities/calls_view_fromgrid.png
+
+   |
+
+3. On the **Log call** page, click the :guilabel:`Edit` button in the upper-right corner of the page.
+
+4. Update call details as required. For the description of call log fields, see :ref:`Call View Page <doc-activities-calls-view-page>`.
+
+4. Click :guilabel:`Save`.
 
 
 From the Related Entity View Page
@@ -526,7 +550,7 @@ You can make voice and video calls using the integrated Hangouts functionality.
    For more help on Hangouts calls, see `Hangouts Help <https://support.google.com/hangouts#topic=6386410>`__ on google.com.
 
 From the Calls Grid
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 1. In the main menu, navigate **Activities>Calls**.
 
@@ -550,7 +574,7 @@ From the Calls Grid
    If you do not specify a phone number in the **Phone Number** field, you can still start a Hangouts call. In this case, instead of immediately starting a call to the specified phone number, Hangouts will suggest sending invites or a call link to the person.
 
 From the Related Entity Record View Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By logging a call from a record view page, you specify that this record relates to the call in some way.
 

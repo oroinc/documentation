@@ -55,7 +55,7 @@ related contacts, deals, purchases, addresses, etc.
 Accounts 
 ^^^^^^^^
 
-Using details of the customer records, you can conviniently manage the details within one source, however efficient 
+Using details of the customer records, you can manage the details within one source, however efficient
 and comprehensive customer relations management requires you to aggregate information of the customer-activities in 
 different sources. To do so, you can use accounts.
 

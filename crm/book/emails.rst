@@ -111,7 +111,7 @@ Each entity owning an e-mail address must have its own e-mail entity that implem
 ``getEmailOwner()``
     The entity that owns a certain e-mail address.
 
-The ``Email`` entity then looks something like this:
+Sample ``Email`` entity:
 
 .. code-block:: php
     :linenos:
@@ -191,7 +191,7 @@ The entity that is the owner of the e-mail address has to implement the
     The last name of the e-mail address owner. It will be used to build proper recipient names
     when sending e-mails.
 
-For your ``Applicant`` entity, the implementation should now look something like this:
+For ``Applicant`` entity, the implementation should be similar to the following:
 
 .. code-block:: php
     :linenos:

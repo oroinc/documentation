@@ -17,7 +17,7 @@ Images
 
    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
 
-.. |IcIcEditInline| raw:: html
+.. |IcEditInline| raw:: html
 
    <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 
@@ -68,3 +68,8 @@ Images
 .. |IcEditContentTree| raw:: html
 
    <i class="fa fa-sitemap fa-lg" aria-hidden="true"></i>
+
+
+.. |IcArrowsV| raw:: html
+
+   <i class="fa fa-arrows-v fa-lg" aria-hidden="true"></i>

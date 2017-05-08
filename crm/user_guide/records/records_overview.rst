@@ -17,7 +17,7 @@ This means that one of the OroCRM entities is “Web Customer” and the system 
 number of properties, such as the first name, last name, email, phone number, ID of the shipping address, ID of the 
 cart, and ID's of the orders. The system is also aware that some of these properties need to be defined while some are 
 optional. When a new customer is added to the system, their record is created and values of the properties are saved 
-for it. If something has changed (e.g., the phone number), the properties are updated.
+for it. If the information has changed (e.g., the phone number), the properties are updated.
 
 New records can be created and the existing record can be updated both manually and automatically 
 (as a result of integration with third-party systems). 

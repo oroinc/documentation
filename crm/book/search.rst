@@ -60,7 +60,7 @@ Each time an entity is updated, the changed data needs to be persisted into
 the search index. The mapping of your entity fields to the search index can
 be configured either globally (under the ``oro_search`` key) or in a config
 file named ``search.yml`` which must be located in the bundle's ``Resources/config/oro``
-directory. Such a file would then look something like this:
+directory, for example:
 
 .. code-block:: yaml
     :linenos:

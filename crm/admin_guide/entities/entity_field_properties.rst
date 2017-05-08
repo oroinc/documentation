@@ -1,7 +1,7 @@
 .. _doc-entity-field-properties:
 
 Entity Field Properties
-==========================
+=======================
 
 .. contents:: :local:
     :depth: 3
@@ -10,10 +10,10 @@ Entity Field Properties
 The creation of an entity field takes two steps. In step 1, you specify just the very basic properties: name, field type and field storage type. In step 2, you specify more advanced properties, some of which can be field-type-related.
 
 Basic Entity Field Properties
--------------------------------
+-----------------------------
 
 General Information Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |
 
@@ -36,7 +36,7 @@ General Information Section
     a single entity. The field will appear in the system as soon as it has been added and no :ref:`schema update <schema update>` is required. 
   
     .. important:: 
-      Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, for :ref:`report <user-guide-reports>` and :ref:`chart <user-guide-reports-chart>` generation, for data audit, for creation of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
+      Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, :ref:`report <user-guide-reports>` and :ref:`chart <doc-reports-actions-create-chart>` generation, data audit, creation of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
   
       Serialized fields cannot be used for files, multi-selects or option sets.
   
@@ -95,7 +95,7 @@ General Information Section
 
 
 Advanced Entity Field Properties
----------------------------------
+--------------------------------
 
 
 Properties that can be defined may vary subject to the chosen field type. 
@@ -103,11 +103,11 @@ Properties that can be defined may vary subject to the chosen field type.
 The following sections provide descriptions of common properties (they are applicable to most of the types), and peculiarities of specific types.
 
 Common Properties
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 
 General Information Section
-""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""
 
 |
 
@@ -131,7 +131,7 @@ There are two new fields in this section:
 .. _user-guide-entity-management-export-import-common:
 
 Import and Export Section
-""""""""""""""""""""""""""
+"""""""""""""""""""""""""
 
 |
 
@@ -146,7 +146,7 @@ Import and Export Section
   "**Column Name**","Type a name that will be used for identifying the field in the .csv file with entity records. If left empty, the **Label** value will be used for identifying the field when you export entity records."
   "**Column Position**","Type a number that corresponds to the position of this field in the .csv file that contains entity records."
 
-  "**Exclude Column**", " - **No**—Select this value if you want this field to be available for export. 
+  "**Exclude Column**", "- **No**—Select this value if you want this field to be available for export.
 
   - **Yes**—Select this value if you do not want this field to be available for export (this field will not be present in the .csv file obtained as a result of the export operation)."
   
@@ -155,7 +155,7 @@ Import and Export Section
 .. _doc-entity-fields-properties-other:
 
 Other
-""""""
+"""""
 
 |
 
@@ -208,7 +208,7 @@ Other
 
 
 Type-Related Properties
--------------------------
+-----------------------
 
 
 Decimal
@@ -227,7 +227,7 @@ Decimal fields have two additional optional properties that can be defined in th
 
 
 String
-^^^^^^^
+^^^^^^
 
 String fields have an additional optional property in the **General** section:
 
@@ -240,7 +240,7 @@ String fields have an additional optional property in the **General** section:
 
 
 Text
-^^^^^
+^^^^
 
 .. important::
    Fields of the **Text** type are not displayed on a grid, so **Show on Grid** and **Show Grid Filter** properties cannot be defined for them. 
@@ -251,7 +251,7 @@ Text
 
 
 File
-^^^^^
+^^^^
 
 File fields have an additional property in the **General** section:
 
@@ -279,7 +279,7 @@ File fields have an additional property in the **General** section:
 
 
 Image
-^^^^^^
+^^^^^
 
 Image fields have three additional properties in the **General** section:
 
@@ -311,7 +311,7 @@ Image fields have three additional properties in the **General** section:
 
   
 Select 
-^^^^^^^
+^^^^^^
 
 Select fields have an additional property in the **General** section:
 
@@ -344,7 +344,7 @@ Select fields have an additional property in the **General** section:
 
 
 Multi-Select
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 Multi-select fields have an additional property in the **General** section:
 
@@ -378,7 +378,7 @@ Multi-select fields have an additional property in the **General** section:
 
 
 Many to many
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 Many to many fields have additional properties in the **General** section:
 
@@ -415,7 +415,7 @@ Many to many fields have additional properties in the **General** section:
 
 
 One to many
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 One to many fields have additional properties in the **General** section:
 
@@ -504,7 +504,7 @@ The **Related Entity Info Title** properties are also used to represent the rela
 
 
 Many to one
-^^^^^^^^^^^^
+^^^^^^^^^^^
 
 Many to one fields have additional properties in the **General** section:
 

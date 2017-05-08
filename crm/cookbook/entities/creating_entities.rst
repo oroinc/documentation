@@ -231,7 +231,7 @@ Doctrine will actually make the expected changes:
 
     $ php app/console doctrine:schema:update --dump-sql
 
-If the command displays something you did not expect, double check the configured mapping
+If the command displays the information you did not expect, double check the configured mapping
 information and run the command again.
 
 When everything displays as expected, update the database schema by passing the ``--force`` option:

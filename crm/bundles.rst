@@ -407,7 +407,7 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide_roles/sales_tools/business_customers`
         * User guide: :doc:`/user_guide_roles/sales_tools/leads`
         * User guide: :doc:`/user_guide_roles/sales_tools/opportunities`
-        * User guide: :doc:`/user_guide/business_intelligence/business_intelligence_reports`
+        * User guide: :ref:`Manage Reports <doc-reports-manage>`
 
 `RequireJSBundle`_ (OroPlatform)
     Integrates the `RequireJS JavaScript library`_.
