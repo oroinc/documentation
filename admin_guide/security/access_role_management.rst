@@ -39,15 +39,15 @@ Different OroCRM users require different information and tools. A user's ability
 
 -  An owner of particular data: 
    
-   When we say that user must have access only to the data of their office, we need to specify which data belongs to which office.
+   When a user must have access only to the data of their office, we need to specify which data belongs to which office.
 
-   - In its turn, who can be a data owner depends on the ownership type setting for a data. This setting defines whether the data can belong to a particular user or, for example, it is something like a company address book and thus, can belong only to the whole company but not its subunits or users.   	   
+   - Who can be a data owner depends on the ownership type setting for a data. This setting defines whether the data can belong to a particular user or, for example, like a company address book, can belong only to the whole company but not its subunits or users.
   
    Users who create or edit a record can specify a record owner. The range from which they can pick up a record owner depends on the user role(s) and the ownership type of an entity the record of which they create / edit.  
 
 
 Links
-------
+-----
 
 
 For how to configure roles, see the `Roles Management <./access-management-roles>`__ guide. 

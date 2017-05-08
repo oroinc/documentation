@@ -1,3 +1,5 @@
+
+
 Reports
 =======
 
@@ -9,7 +11,7 @@ like this:
 
 .. seealso::
 
-    You can also :doc:`configure reports in the web UI </user_guide/business_intelligence/business_intelligence_reports>`.
+    You can also :ref:`configure reports via the web UI <doc-reports-manage>`.
 
 .. _book-reports-configuration:
 

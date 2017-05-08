@@ -211,7 +211,7 @@ Notify a User
 -------------
 
 Notification Email
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 When someone uses the impersonation link, a user receives a notification email:
 
@@ -221,7 +221,7 @@ When someone uses the impersonation link, a user receives a notification email:
 
 |
 
-This helps avoid surprises when the user notices that something has changed in the system but cannot figure out why this has happened. Additionally, such email can instruct the user to contact the system administrator if they noticed suspicious activity, thus preventing possible fraud. 
+This helps avoid surprises when the user notices that something has changed in the system but cannot figure out why this has happened. Additionally, such email can instruct the user to contact the system administrator if they noticed suspicious activity, thus preventing possible fraud.
 
 The default notification email template is **user_impersonate**. It can be found on the **All Templates** page of your Oro application (**System>Emails>Templates**).
 

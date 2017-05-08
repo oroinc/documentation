@@ -393,8 +393,7 @@ and the :class:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration` interfaces:
 
 This migration creates a new entity, ``Extend\Entity\CustomEntity``. Its PHP
 class doesn't reside in any bundle but only in the application cache. Also,
-a new table ``oro_ext_customentity`` will be created in your database which
-should look something like this:
+a new table ``oro_ext_customentity`` will be created in your database, like in the following example:
 
 .. code-block:: bash
 
