@@ -226,5 +226,4 @@
         <sphinx format="doctest" destination="${builddir}/doctest"/>
         <echo level="info">Testing of doctests in the sources finished, look at the results in ${builddir}/doctest/output.txt.</echo>
     </target>
-
 </project>
