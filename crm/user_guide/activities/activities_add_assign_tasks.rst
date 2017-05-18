@@ -1,7 +1,7 @@
 .. _user-guide-activities-tasks:
 
-Add Task and Assign Task
-========================
+Tasks
+=====
 
 In order to save information on certain actions to be performed or issues to be resolved by an OroCRM user, you can 
 create a task in one of the ways described below.

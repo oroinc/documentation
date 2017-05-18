@@ -4,7 +4,7 @@
 
 **Related Topics**
 
-* `Login <./intro-log-in>`_
+* `Access <./access_oro/index>`_
 * `View and Set up Your User Profile <./intro-user-profile>`_
 * `Company Structure and Organization Selector <./intro-company-structure-org-selector>`_
 * `Navigation Basics <./intro-navigation>`_
@@ -15,3 +15,5 @@
 * `History, Favorites and Most Viewed <./intro-nav-history-fav-viewed>`_
 * `Sidebar Panel <./intro-nav-sidebar>`_
 * `Flash Notifications and Dialogs <./intro-nav-popup>`_
+* `My Oro <./my_oro/index>`_
+* `Activities <./activities/index>`_

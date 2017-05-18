@@ -18,7 +18,6 @@ to keep working with us at his new company.
 
 .. image:: /user_guide/img/common/activities/add_note_ex.png
 
-|
 
 4. Click the :guilabel:`Save` button and the note will be saved.
 
@@ -29,6 +28,5 @@ View page:
 
 .. image:: /user_guide/img/common/activities/add_note_view.png
 
-|
 
 To see the details, click on the note start or the :guilabel:`+` to the left from it.

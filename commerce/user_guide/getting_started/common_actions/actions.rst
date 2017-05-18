@@ -20,4 +20,4 @@ OroCommerce provides the following tools for streamlined communication inside an
 
    add_notes
 
-   assign_tasks
+..   assign_tasks

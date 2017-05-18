@@ -46,7 +46,7 @@ if "%1" == "clean" (
 
 if "%1" == "html" (
         mkdir %BUILDDIR%
-        %SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html -w %BUILDDIR%/sphinxbuild.log
+        %SPHINXBUILD% -b html %ALLSPHINXOPTS% %BUILDDIR%/html -w sphinxbuild.log
 	if errorlevel 1 exit /b 1
 	echo.
 	echo.Build finished. The HTML pages are in %BUILDDIR%/html.

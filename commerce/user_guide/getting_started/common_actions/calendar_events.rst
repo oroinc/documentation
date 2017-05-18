@@ -105,7 +105,6 @@ View and Manage Events
 
 .. image:: /user_guide/img/common/activities/add_event_view.png
 
-|
 
 - To see the details, click on the event title or the :guilabel:`+` to the left from it.
 
@@ -122,7 +121,6 @@ View and Manage Events
 
 .. image:: /user_guide/img/common/activities/assign_events_cal.png
 
-|
 
 - Choose the user in the drop-down on the left.
 

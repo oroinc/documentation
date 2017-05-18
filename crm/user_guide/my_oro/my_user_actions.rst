@@ -222,7 +222,7 @@ Assign an Event
 |
 
 
-3. In the **Assign Event To** dialog box, specify the required data. For help on this, see the :ref:`Calendar Events <user-guide-activities-events>` guide.
+3. In the **Assign Event To** dialog box, specify the required data. For help on this, see the :ref:`Calendar Events <doc-activities-events>` guide.
 
 |
 

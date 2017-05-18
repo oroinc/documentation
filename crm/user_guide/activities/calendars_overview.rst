@@ -1,7 +1,7 @@
 .. _user-guide-calendars:
 
-Calendars Overview
-==================
+Calendars
+=========
 
 Efficient business today is hard to imagine without an easy-to-understand and up-to-date schedule. 
 OroCRM provides each user with a calendar with tasks and events related to the specific user, to other users 
@@ -15,7 +15,7 @@ Tasks and Calendar Events
 -------------------------
 
 You can :ref:`create task <user-guide-activities-tasks>` and 
-:ref:`create calendar events <user-guide-activities-create-events>`.
+:ref:`add calendar events <doc-activities-events-actions-add>`.
 
 Each task/event will have an owner (user, who has created it and other users, subject to roles and permissions defined) 
 and the user, to whom the task/event has been assigned.
@@ -34,13 +34,13 @@ and :ref:`capabilities <admin-capabilities-org-calendar-events>`.
 Create System and Organization Calendars
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Go to the *System → System Calendars*.
+1. Go to the **System>System Calendars**.
 
-- Click the :guilabel:`Create System Calendar` button.
+2. Click the :guilabel:`Create System Calendar` button.
 
-- The *"Create System Calendar"* :ref:`form <user-guide-ui-components-create-pages>` will appear:
+3. The **Create System Calendar** page will appear:
 
-Define the following fields
+Define the following fields:
 
 .. csv-table::
   :header: "Field", "Description"
@@ -65,12 +65,11 @@ Add an Event to a Calendar
 
 In order to add an event to a calendar:
 
-- Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the calendar.
+1. Go to the :ref:`view page <user-guide-ui-components-view-pages>` of the calendar.
 
-- Click the :guilabel:`Create Calendar Event` button.
+2. Click the :guilabel:`Create Calendar Event` button.
 
-- The *"Create Calendar Event"* :ref:`form <user-guide-ui-components-create-pages>` will appear. The form has the 
-  following fields:
+3. The **Create Calendar Event** page will appear. The form has the following fields:
 
 .. csv-table::
   :header: "**Name**","**Description**"
@@ -101,14 +100,16 @@ The following actions can be performed for each calendar and calendar event from
 
 .. image:: ../img/calendars/system_cal_grid.png
 
-- Delete a calendar/event from the system : |IcDelete|
-  
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the  calendar/event : |IcEdit|
-  
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the  calendar/event : |IcView|
+|
 
-  From the View page you can also get to the Edit page of delete the record with corresponding buttons.
-  You can also :ref:`add a comment <user-guide-activities-comments>` to the calendar event from its View page. 
+- Delete a calendar/event from the system : click the |IcDelete| **Delete** icon.
+  
+- Get to the edit page of the  calendar/event: click the |IcEdit| **Edit** icon.
+  
+- Get to the view page of the  calendar/event: click the |IcView| **View** icon.
+
+  From the view page you can also get to the edit page of delete the record using the corresponding buttons.
+  You can also :ref:`add a comment <user-guide-activities-comments>` to the calendar event from its view page.
 
   
 .. _user-guide-calendar-add-another-user:
@@ -118,15 +119,17 @@ Tasks and Calendar Events on the User's Calendar
 
 A convenient way to see and manage available tasks and calendar events is the User's Calendar. In order to see it:
 
-- Go to the user drop-down menu (near the user name)   
+1. In the user menu (near the user name), click **My Calendar**.
 
-  |UserMenu|
+|UserMenu|
 
-- Click *"My Calendar"*
+2. The calendar will appear.
 
-- The calendar will appear
+|
 
 .. image:: ../img/calendars/user_calendar.png
+
+|
 
 Initially, the calendar (1) will contain all the events and tasks assigned to you, events and tasks of system and 
 organization calendars available to you, as shown in the list of items displayed in the calendar on the left (2).
@@ -138,8 +141,8 @@ Add and Manage Calendar Items Displayed
 
 For the items by default displayed in the calendar the following actions are available:
 
-- Hide from the calendar
-- Edit color
+- Hide from the calendar.
+- Edit color.
 
 .. image:: ../img/calendars/user_calendar_edit.png
 

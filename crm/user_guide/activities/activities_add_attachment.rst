@@ -1,7 +1,7 @@
 .. _user-guide-activities-attachments:
 
-Add Attachment
-==============
+Attachments
+===========
 
 You can add an attachment to a record in OroCRM.
 
@@ -23,23 +23,27 @@ Once a record has been created, an attachment can be added from its View page.
    The ability to view and upload attachments depends on the :ref:`permissions <user-guide-user-management-permissions>` 
    defined for the entity.
 
-- Go to the record view page.
+1. Go to the record view page.
 
-- Click the :guilabel:`Add Attachment` action button.
+2. Click the :guilabel:`Add Attachment` action button.
 
-.. image:: ../img/activities/add_attachment.png
+   |
 
-- In the form emerged:
+   .. image:: ../img/activities/add_attachment.png
 
-  - Choose the file to attached.
+   |
 
-  - Leave a comment, if necessary.
+3. In the form emerged:
 
-  - Define the attachment owner. Only the owner and users with whose 
-    :ref:`roles <user-guide-user-management-permissions>` that enable management/viewing of the owner's attachments will 
-    be able to manage/view the attachment.
+   - Choose the file to attached.
 
-.. image:: ../img/activities/add_attachment_form.png
+   - Leave a comment, if necessary.
+
+   - Define the attachment owner. Only the owner and users with whose :ref:`roles <user-guide-user-management-permissions>` that enable management/viewing of the owner's attachments will be able to manage/view the attachment.
+
+   |
+
+   .. image:: ../img/activities/add_attachment_form.png
 
 
    
@@ -52,8 +56,8 @@ The attachment is now available from the record View page in the grid in the *At
 
 From the :ref:`grid <doc-grids>`, you can
 
-- Delete the attachment: |IcDelete|
-- Get to the edit form of the attachment: |IcEdit|
+- Delete the attachment: click the |IcDelete| **Delete** icon.
+- Get to the edit form of the attachment: click the |IcEdit| **Edit** icon,
 
 You can also :ref:`add the attachment <user-guide-using-emails>` to emails related to the record.
 

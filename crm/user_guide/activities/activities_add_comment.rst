@@ -1,7 +1,7 @@
 .. _user-guide-activities-comments:
 
-Add Comment
-===========
+Comments
+========
 
 Interaction between users is an important part of successful work. In order to enable users to leave comments on records
 of an :term:`entity <Entity>` or on details of an :ref:`activity <user-guide-activities>`, other than a contact request 

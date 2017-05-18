@@ -345,7 +345,7 @@ See Also
 
     :ref:`Actions with My User <doc-my-user-actions>`
 
-    :ref:`My System Configuratrion <doc-my-user-configuration>`
+    :ref:`My System Configuration <doc-my-user-configuration>`
 
 
 .. |IcView| image:: ../../img/buttons/IcView.png

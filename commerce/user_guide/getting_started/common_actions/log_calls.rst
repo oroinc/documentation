@@ -71,11 +71,9 @@ Log Call from the Calls Grid
 
 .. image:: /user_guide/img/common/activities/log_call_form.png
 
-|
 
 The form has the same fields. By default, no phone number is defined.
 
-|
 
 View and Manage Calls
 ^^^^^^^^^^^^^^^^^^^^^

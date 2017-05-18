@@ -10,6 +10,7 @@ This section contains information about OroCommerce configuration, administratio
 
    price_list_sharding
    optimize_index_and_price_calculation
+..   entities/index
 
 .. .. note:: Content is temporary unavailable due to severe maintenance works. Sorry for inconvenience.
  * Installation

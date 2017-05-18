@@ -1,7 +1,10 @@
 .. _user-guide-activities-cases:
 
+Cases
+=====
+
 Create Case
-===========
+-----------
 
 In order to keep the details of a certain issue, problem or failures reported by the customers, define their priority 
 and the person responsible for handling them, use the "*Create Case*" action.
@@ -71,7 +74,7 @@ We've added the "Business" and "Gold Partner" tags for this case.
 .. image:: ../img/activities/create_case_ex.png
 
 View and Manage Cases
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 .. note:
 

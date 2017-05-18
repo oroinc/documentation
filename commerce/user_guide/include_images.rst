@@ -88,6 +88,58 @@ Images
 
    <i class="fa fa-sitemap fa-lg" aria-hidden="true"></i>
 
+.. |IcReminder| raw:: html
+
+   <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+
+.. |IcTimes| raw:: html
+
+   <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+
+.. |IcArrowsV| raw:: html
+
+   <i class="fa fa-arrows-v fa-lg" aria-hidden="true"></i>
+
+.. |IcContext| raw:: html
+
+   <i class="fa fa-link fa-lg" aria-hidden="true"></i>
+
+.. |IcInvitation| raw:: html
+
+   <i class="fa fa-reply fa-lg" aria-hidden="true"></i>
+
+.. |IcInviteYes| raw:: html
+
+   <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+.. |IcInviteMaybe| raw:: html
+
+   <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+
+.. |IcInviteMaybe2| raw:: html
+
+   <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+
+.. |IcFilter| raw:: html
+
+   <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
+
+.. |IcEditInline| raw:: html
+
+   <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+
+.. |IcUndo| raw:: html
+
+   <i class="fa fa-undo fa-lg" aria-hidden="true"></i>
+
+.. |IcCheck| raw:: html
+
+   <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+.. |IcSettings| raw:: html
+
+   <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+
 .. |SectionDropD| image:: /user_guide/img/dashboards/dashboard/dashboards/section_dd.png
    :align: middle   
 
@@ -102,3 +154,76 @@ Images
 
 .. |DActionIcons| image:: /user_guide/img/dashboards/dashboard/dashboards/dashboard_action_icons.png
    :align: middle 
+
+.. |IcPassReset| image:: /user_guide/img/getting_started/buttons/IcPassReset.png
+   :align: middle
+
+.. |IcDisable| image:: /user_guide/img/getting_started/buttons/IcDisable.png
+   :align: middle
+
+.. |IcShow| image:: /user_guide/img/getting_started/buttons/IcShow.png
+   :align: middle
+
+.. |IcHide| image:: /user_guide/img/getting_started/buttons/IcHide.png
+   :align: middle
+
+.. |BGotoPage| image:: /user_guide/img/getting_started/buttons/BGotoPage.png
+   :align: middle
+
+.. |Bdropdown| raw:: html
+
+   <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
+
+.. |IcPosition| image:: /user_guide/img/getting_started/buttons/IcPosition.png
+   :align: middle
+
+.. |IcRest| image:: /user_guide/img/getting_started/buttons/IcRest.png
+   :align: middle
+
+.. |BRefresh| image:: /user_guide/img/getting_started/buttons/BRefresh.png
+   :align: middle
+
+.. |BReset| image:: /user_guide/img/getting_started/buttons/BReset.png
+   :align: middle
+
+.. |ScrollPage| image:: /user_guide/img/getting_started/buttons/scroll_page.png
+   :align: middle
+
+.. |TagsfGrid| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid.png
+   :align: middle
+
+.. |TagsfGrid1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid_1.png
+   :align: middle   
+   
+.. |TagsfView| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view.png
+   :align: middle   
+   
+.. |TagsfView1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_1.png
+   :align: middle 
+   
+.. |TagsfView2| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_2.png
+   :align: middle 
+
+.. |IcDiscardChanges| image:: /user_guide/img/getting_started/buttons/IcDiscardChanges.png
+   :align: middle
+
+.. |IcSaveChanges| image:: /user_guide/img/getting_started/buttons/IcSaveChanges.png
+   :align: middle
+
+.. |IcMerge| image:: /user_guide/img/getting_started/buttons/IcMerge.png
+   :align: middle
+
+.. |IcFilters| image:: /user_guide/img/getting_started/buttons/IcFilters.png
+   :align: middle
+
+.. |IcMoveW| image:: /user_guide/img/getting_started/buttons/IcMoveW.png
+   :align: middle
+
+.. |IcIncoming| image:: /user_guide/img/getting_started/buttons/IcIncoming.png
+   :align: middle
+
+.. |IcOutgoing| image:: /user_guide/img/getting_started/buttons/IcOutgoing.png
+   :align: middle
+
+.. |IcConfigure| image:: /user_guide/img/getting_started/buttons/IcConfigure.png
+   :align: middle
