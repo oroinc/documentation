@@ -1,7 +1,7 @@
 .. _user-guide-using-emails:
 
-Using Emails
-============
+Emails
+======
 
 Emails are essential for conducting day-to-day business activities and
 communicating with co-workers or customers.

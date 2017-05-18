@@ -1,7 +1,10 @@
 .. _user-guide-add-note:
 
-Add Note
-========
+Notes
+=====
+
+Add a Note
+----------
 
 To save additional information about the record in OroCRM, use the "*Add Note"* action.
 

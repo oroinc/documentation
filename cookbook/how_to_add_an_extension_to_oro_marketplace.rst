@@ -115,6 +115,6 @@ References
 * `OroCRM Marketplace`_
 * `Oro Packagist`_
 
-.. _OroCRM Marketplace: http://www.orocrm.com/marketplace/oro-crm
+.. _OroCRM Marketplace: https://marketplace.orocrm.com/
 .. _Oro Packagist: http://packagist.orocrm.com/
 

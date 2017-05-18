@@ -69,7 +69,34 @@ Images
 
    <i class="fa fa-sitemap fa-lg" aria-hidden="true"></i>
 
+.. |IcInvitation| raw:: html
+
+   <i class="fa fa-reply fa-lg" aria-hidden="true"></i>
+
+.. |IcInviteYes| raw:: html
+
+   <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+.. |IcInviteMaybe| raw:: html
+
+   <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+
+.. |IcInviteMaybe2| raw:: html
+
+   <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+
+.. |IcReminder| raw:: html
+
+   <i class="fa fa-bell-o fa-lg" aria-hidden="true"></i>
+
+.. |IcTimes| raw:: html
+
+   <i class="fa fa-times fa-lg" aria-hidden="true"></i>
 
 .. |IcArrowsV| raw:: html
 
    <i class="fa fa-arrows-v fa-lg" aria-hidden="true"></i>
+
+.. |IcContext| raw:: html
+
+   <i class="fa fa-link fa-lg" aria-hidden="true"></i>

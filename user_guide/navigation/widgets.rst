@@ -20,11 +20,13 @@ Quick Launchpad
 
 Recent Emails
 
-Today's Calendar
+:ref:`Today's Calendar <doc-widgets-today-calendar>`
 
 :ref:`Recent Calls <doc-widgets-recent-calls>`
 
 Recently Accessed Contacts
+
+Recently Accessed Accounts
 
 :ref:`Opportunities List <doc-widgets-sales>`
 
@@ -48,7 +50,19 @@ Average Lifetime Sales
 
 :ref:`Forecast <doc-widgets-sales>`
 
+My Sales Flow B2C
 
+Average order amount
+
+New Magento Customers
+
+Ecommerce Statistics
+
+Revenue over time
+
+Orders over time
+
+Purchase Funnel
 
 
 .. toctree::
@@ -57,3 +71,4 @@ Average Lifetime Sales
 
        widgets_recent_calls
        widgets_sales
+       widgets_today_calendar

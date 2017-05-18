@@ -1,17 +1,11 @@
 .. _user-guide-activities:
 
-Activities
-==========
+Get Started with Activities
+===========================
 
-.. contents:: :local:
-    :depth: 2
+.. begin_activities_overview
 
-
-
-Overview
---------
-
-Activities are actions that employees of your company perform on a daily basis. The range of these actions is quite wide. Employees define and fulfill job tasks, handle different issues, communicate with colleagues and customers, participate in events. Hence, it is important to have a good tool that gives a possibility to conveniently keep track on and manage all these actions. 
+Activities are actions that employees of your company perform on a daily basis. The range of these actions is quite wide. Employees define and fulfill job tasks, handle different issues, communicate with colleagues and customers, participate in events. Hence, it is important to have a good tool that gives a possibility to conveniently keep track on and manage all these actions.
 
 OroCRM provides such a tool. Its capabilities for managing activities are quite wide. They cover three logical directions: workflow management, communications, and adding useful remarks.
 
@@ -19,23 +13,28 @@ OroCRM provides such a tool. Its capabilities for managing activities are quite 
 
 .. image:: ../img/activities/activities.png
 
-| 
+|
 
 For each activity, it is possible to add links to the related records. For example, a link to an email with the discussion in which the activity emerged, the marketing campaign that the activity deals with, and the user concerned, etc. Such links are called ``contexts`` and they make it much easier to take account of all the details connected with the activity.
 
-.. Note:: 
+.. Note::
    An account is an entity that integrates customer entities, therefore, if one of the customers who constitute an account is added as a context of some activity, the account inherits this activity and you can see it not only on the customer view page but on the account's as well.
 
+.. end_activities_overview
 
-In this document, you can find short descriptions of what each activity serves for. 
+In this document, you can find short descriptions of what each activity serves for.
 
 
-.. important:: 
+.. important::
  	By default, the list of activities available for each entity is determined by general business practices. However, if the work process of your company requires it, you can always turn on the desirable activity for almost any entity (except technical). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 
 
-Workflow Management
--------------------
+.. contents:: :local:
+    :depth: 2
+
+
+Work Management
+---------------
 
 Managing Tasks
 """"""""""""""
@@ -179,7 +178,7 @@ Users can track events on the **My Calendar** page or via the dashboard widget (
 
 If an entity record is marked as a context for a calendar event, this event appears in the **Activity** section on the entity record view page.
 
-For more information about calendar events, see the :ref:`Calendar Events <user-guide-activities-events>` guide.
+For more information about calendar events, see the :ref:`Calendar Events <doc-activities-events>` guide.
 
 
 Communications
@@ -223,10 +222,6 @@ Users can access logged calls in the dedicated system section, in the **Activiti
 .. image:: ../img/activities/activities_calls2.png
 
 |
-
-
-
-
 
 For more information about logging calls, see the :ref:`Calls <doc-activities-calls>` guide.
 
@@ -331,8 +326,8 @@ You can leave a comment in the **Comments** section of the entity view page.
 For more information about comments, see the :ref:`Comments <user-guide-activities-comments>` guide.
 
 
-Add Attachments
-"""""""""""""""
+Adding Attachments
+""""""""""""""""""
 
 When you need to provide additional information about an entity record and this information is fully included in a file (for example, you want to add a calculation sheet), add this file as an attachment directly to the entity record. 
 
@@ -349,6 +344,4 @@ Files attached to the entity record appear in the **Attachments** section of the
 
 
 For more information about attachments, see the :ref:`Attachments <user-guide-activities-attachments>` guide.
-
-
 

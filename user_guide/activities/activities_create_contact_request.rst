@@ -1,7 +1,7 @@
 .. _user-guide-activities-requests:
 
-Create Contact Request
-======================
+Contact Requests
+================
 
 Requests for OroCRM support, including partnership proposals, complaints, additional 
 information and assistance requests that come from a :ref:`third-party application <admin-embedded-forms>` or have been 

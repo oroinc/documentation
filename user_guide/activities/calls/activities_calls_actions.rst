@@ -71,7 +71,7 @@ Users who are owners of a call and entity records that are specified in the call
 1. On the entity record view page, click **Activities**.
 2. In the **Activities** section, choose a call log that you want to view, and perform one of the following actions:
 
-    - To view the call call log on the dedicated view page, click the ellipsis menu at the right end of the corresponding row and then click |IcView| **View Call log**.
+    - To view the call log on the dedicated view page, click the ellipsis menu at the right end of the corresponding row and then click |IcView| **View Call log**.
 
       |
 
@@ -79,7 +79,7 @@ Users who are owners of a call and entity records that are specified in the call
 
       |
 
-    - To preview call log on the current page, click the call row.
+    - To preview a call log on the current page, click the call row.
 
    |
 
@@ -113,7 +113,6 @@ From the Call Grid
 
 4. Click :guilabel:`Save`.
 
-
 From the Call View Page
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -129,11 +128,15 @@ From the Call View Page
 
    |
 
-3. On the **Log call** page, click the :guilabel:`Edit` button in the upper-right corner of the page.
+3. On the call view page, click the :guilabel:`Edit` button in the upper-right corner of the page.
 
 4. Update call details as required. For the description of call log fields, see :ref:`Call View Page <doc-activities-calls-view-page>`.
 
-4. Click :guilabel:`Save`.
+5. Click :guilabel:`Save and Close` in the upper-right corner of the page. Alternatively, you can use other *Save* options from the list next to the :guilabel:`Save and Close` button:
+
+   * To save intermediate edits, select **Save** from the list.
+
+   * To save changes, close the call information and log a new call, **Save and New**.
 
 
 From the Related Entity View Page
@@ -164,7 +167,7 @@ Users who are owners of a call and entity records that are specified in the call
 Add a Context to a Call
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. _doc-activities-calls-actions-contextadd-grid:
+.. _doc-activities-calls-actions-contextadd-viewpage:
 
 From the Call View Page
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -220,7 +223,7 @@ You can add more contexts to a call directly from the related entity view page.
 
       |
 
-3. Continue as described in steps 4–5 of the :ref:`Add Context to a Call from the Call View Page <doc-activities-calls-actions-contextadd-grid>` action description.
+3. Continue as described in steps 4–5 of the :ref:`Add Context to a Call from the Call View Page <doc-activities-calls-actions-contextadd-viewpage>` action description.
 
 
 
@@ -266,7 +269,7 @@ From the Related Entity View Page
 
 Users who are owners of a call and entity records that are specified in the call context have this call displayed in the **Activity** sections of their view pages.
 
-You can add more contexts to a call directly from the related entity view page.
+You can remove contexts of a call directly from the related entity view page.
 
 1. On the entity record view page, click **Activity**.
 2. In the **Activity** section, choose a call log that you want to remove context from, and click it to see the details.
@@ -285,7 +288,7 @@ Share a Call
 ^^^^^^^^^^^^
 
 .. important::
-   Enterprise Edition only.
+   This option is available in the Oro application Enterprise Edition only.
 
 When you share a call log with a user, this user will be able to view this call log even though they may have no permissions to it otherwise. For example, according to your company settings, users can see only those call logs that they own. However, you and your colleague work on the same project and you want them to see the log of the call that you made. In this case, you can share this call log with your colleague.
 
@@ -380,7 +383,7 @@ When you want to stop sharing a call with users / business units / organizations
 Comment a Call
 ^^^^^^^^^^^^^^
 
-.. _doc-activities-calls-actions-comment-grid:
+.. _doc-activities-calls-actions-comment-viewpage:
 
 From the Call View Page
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -425,10 +428,10 @@ From the Related Entity View Page
 
 Users who are owners of a call and entity records that are specified in the call context have this call displayed in the **Activity** sections of their view pages.
 
-You can add more contexts to a call directly from the view page of a related entity.
+You can comment a call directly from the view page of a related entity.
 
 1. On the entity record view page, click **Activity**.
-2. In the **Activity** section, choose a call log from which you want to remove a context, and click it to see details.
+2. In the **Activity** section, choose a call log which you want to comment, and click it to see details.
 3. Click the :guilabel:`Add Comment` button in the lower-right corner.
 
    |
@@ -437,7 +440,7 @@ You can add more contexts to a call directly from the view page of a related ent
 
    |
 
-4. Continue as described in steps 5–6 of the :ref:`Add Comment to a Call from the Call View Page <doc-activities-calls-actions-comment-grid>` action description.
+4. Continue as described in steps 5–6 of the :ref:`Add Comment to a Call from the Call View Page <doc-activities-calls-actions-comment-viewpage>` action description.
 
 You will see your comment in the **Comments** section of the call log details.
 
@@ -659,7 +662,7 @@ From the Calls Grid
 From the Call View Page
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Alternatively, you can delete a call log from the calls view page by clicking the :guilabel:`Delete` button in the upper-right corner of the call view page.
+Alternatively, you can delete a call log from the call view page by clicking the :guilabel:`Delete` button in the upper-right corner of the call view page.
 
 |
 
@@ -701,6 +704,7 @@ You can delete multiple calls at a time.
 .. image:: ../../img/activities/calls_massdelete.png
 
 4. In the **Delete Confirmation** dialog box, click :guilabel:`Yes, Delete`.
+
 
 
 See Also
