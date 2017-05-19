@@ -153,7 +153,7 @@ Images
    :align: middle 
 
 .. |DActionIcons| image:: /user_guide/img/dashboards/dashboard/dashboards/dashboard_action_icons.png
-   :align: middle 
+   :align: middle
 
 .. |IcPassReset| image:: /user_guide/img/getting_started/buttons/IcPassReset.png
    :align: middle

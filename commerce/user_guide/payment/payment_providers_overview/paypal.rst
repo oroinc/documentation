@@ -5,10 +5,9 @@ PayPal Payments Services
 
 .. begin
 
-.. contents:: :local:
+PayPal is a fast, safe and reliable online global payment system that offers an easy online payments for businesses and individuals.
 
-PayPal Services Overview
-^^^^^^^^^^^^^^^^^^^^^^^^
+Configure :ref:`PayPal integration <sys--integrations--manage-integrations--paypal-payflow-gateway>` to enable PayPal payment methods on the checkout.
 
 OroCommerce supports integration with PayPal to offer the following payment methods:
 
@@ -16,6 +15,8 @@ OroCommerce supports integration with PayPal to offer the following payment meth
 * PayPal Payments Pro
 * PayPal Payflow Gateway Express Checkout
 * PayPal Payments Pro Express Checkout
+
+.. contents:: :local:
 
 PayPal Payflow Payment Gateway vs PayPal Payments Pro
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

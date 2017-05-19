@@ -4,8 +4,8 @@
 
 .. System > Integrations > Manage Integrations. Payment Term
 
-Payment Terms
-^^^^^^^^^^^^^
+Payment Terms Payment Method Integration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 

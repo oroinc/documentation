@@ -1,4 +1,4 @@
-.. _user-guide--payment--configuration--payment-method-integration--paypal-details:
+  .. _user-guide--payment--configuration--payment-method-integration--paypal-details:
 
 Payment Integration Details For PayPal Payment Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

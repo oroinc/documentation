@@ -44,7 +44,7 @@ To register business account and enable express checkout for your OroCommerce Pa
 
    The PayPal Business Account opens.
 
-#. In the *Account Setup*, confirm your email, link your bank account, and configure the credit card statement.
+#. In *Account Setup*, confirm your email, link your bank account, and configure the credit card statement.
 
 Create a Sandbox Test Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -53,9 +53,9 @@ Test sandbox PayPal account is identical to the regular PayPal account but is ho
 
 To create a sandbox test account, follow the next steps:
 
-#. Log on to the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with the credentials generated in the previous step.
+#. Log into the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with the credentials generated in the previous step.
 
-#. Navigate to the **Dashboard** and click **Accounts** in the **Sandbox** section.
+#. Navigate to **Dashboard** and click **Accounts** in the **Sandbox** section.
 
 #. Click **Create Account** to create new sandbox account.
 
@@ -89,10 +89,10 @@ Configure PayPal Manager Account to Accept Payments
 
 To accept payments in OroCommerce, you need to configure your PayPal Manager Account using the following steps:
 
-* Enable secure token and silent post
-* Enable reference transactions
-* Disable fraud protection for test environments
-* Enable fraud protection for production environments
+* Enable secure token and silent post.
+* Enable reference transactions.
+* Disable fraud protection for test environments.
+* Enable fraud protection for production environments.
 
 Enable Secure Token and Silent Post
 """""""""""""""""""""""""""""""""""
@@ -101,7 +101,7 @@ OroCommerce requires enabling secure token and silent post features.
 
 To enable these features:
 
-#. Login to the `https://manager.paypal.com/ <https://manager.paypal.com/>`_:
+#. Log into the `https://manager.paypal.com/ <https://manager.paypal.com/>`_:
 
    a) Enter the partner name (e.g. PayPal) and PayPal Payflow Gateway account login and password.
 
@@ -120,7 +120,7 @@ Enable Reference Transactions
 
 OroCommerce depends on the reference transactions. To ensure they are enabled:
 
-#. Login to the https://manager.paypal.com/ as described in the previous section.
+#. Log into the https://manager.paypal.com/ as described in the previous section.
 
 #. Navigate to the **Account Administration > Manage Security > Transaction Settings** in the menu.
 
@@ -135,7 +135,7 @@ Disable Fraud Protection for Test Environments
 
 Disable Fraud Protection for the Test Setup to avoid your test transaction being blocked. Test transactions may look suspicions due to unusual behaviour and eventual failures because of the invalid data:
 
-#. Login to the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
+#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
 
 #. Navigate to the **Service Settings > Fraud Protection > Edit Standard Filters** in the menu.
 
@@ -148,7 +148,7 @@ Enable Fraud Protection for Production Environments
 
 Enable Fraud Protection for any customer facing environments where real purchases might happen:
 
-#. Login to the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
+#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
 
 #. Navigate to the **Service Settings > Fraud Protection > Edit Standard Filters** in the menu.
 
@@ -161,13 +161,13 @@ Configure PayPal Manager Account to Work with Express Checkout
 
 Using Express Checkout requires the following configuration in the Manager Account.
 
-#. Login to the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post` section.
+#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post` section.
 
 #. Navigate to the **Service Settings > Hosted Checkout Pages > Set Up**.
 
    .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_express_checkout_configuration1.png
 
-#. In the *PayPal Express Checkout* section, set **Enable PayPal Express Checkout** and **Enable PayPal Credit** to **Yes**, enter PayPal email address for production deployments and PayPal sandbox email address for sandbox and test deployments. Use the business account email (as in Register a Business Account with PayPal).
+#. In the **PayPal Express Checkout** section, set **Enable PayPal Express Checkout** and **Enable PayPal Credit** to **Yes**, enter PayPal email address for production deployments and PayPal sandbox email address for sandbox and test deployments. Use the business account email (as in Register a Business Account with PayPal).
 
 #. Save changes.
 
@@ -178,7 +178,7 @@ Create an API Transaction User
 
 To create an API Transaction User:
 
-#. Login to the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post` section.
+#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post` section.
 
 #. Navigate to the account administration and click on the **Add User** link.
 
