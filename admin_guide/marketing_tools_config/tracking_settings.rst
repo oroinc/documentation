@@ -21,7 +21,7 @@ The following options are available:
   :header: "Option", "Description", "Default"
   :widths: 10, 30, 10
   
-  "**Enable Dynamic Tracking**","If enabled, tracking data will be processed in the real-time mode. Please note that this may affect performance.","Enabled"
+  "**Enable Dynamic Tracking**","If enabled, tracking data will be processed in the real-time mode. Please note that this may affect performance.","Disabled"
   "**Log Rotation Interval**","Defines how often log files must be processed if **Dynamic Tracking** is disabled.","1 hour"
   "**Piwik Host**","The field must be specified if you want the tracking data to be sent to a Piwik account. The value corresponds to the Piwik analytics URL of your account.","None"
   "**Piwik Token Auth**","The field must be specified if you want the tracking data to be sent to a Piwik account. The value corresponds to the Piwik `token_auth <http://piwik.org/faq/general/faq_114/>`_ field.","None"
