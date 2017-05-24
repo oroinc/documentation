@@ -43,7 +43,7 @@ To manage quantities for a single product in multiple warehouses:
 
 1. Navigate to the product details:
 
-   a) Click **Products > Products** in the main menu.
+   a) Navigate to **Products > Products** in the main menu.
    b) Search for the necessary product and view its details.
 
 2. Click **Inventory** on the top right of the page.
@@ -60,14 +60,14 @@ To manage quantities for a single product in multiple warehouses:
 Manage Inventory in the External Systems
 ----------------------------------------
 
-When your need OroCommerce and other systems (like asset management and accounting software) exchange and synchronize product inventory information, you may transfer the inventory data from and into OroCommerce in the csv format.
+When your need OroCommerce and other systems (like asset management and accounting software) exchange and synchronize product inventory information, you may transfer the inventory data from and into OroCommerce in the .csv format.
 
 Export
 ~~~~~~
 
-You can export the inventory information in the csv format: 
+You can export the inventory information in the .csv format: 
 
-1. Select the items to export using a box to the left of the Name. You can filter the list and use **Select All** option in the header, if necessary.
+1. Select the items to export using a check box at the beginning of the corresponding rows. You can filter the list and use the **Select All** option in the table header, if necessary.
 2. Click **Export**.
 
 .. comment TODO clarify the remaining part of the procedure.
@@ -77,27 +77,17 @@ Later you can import the updated or processed inventory using import as describe
 Import
 ~~~~~~
 
-.. include:: /user_guide/getting_started/common_actions/import.rst
-  :start-after: begin
-  :end-before: finish
-
-Import Inventory Statuses and Levels
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The sample for importing bulk product inventory statuses (In Stock, Out of Stock, or Discontinued) and levels (quantity and unit) for the warehouses:
+Inventory Statuses and Levels
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /user_guide/getting_started/common_actions/import_inventory_levels.rst
-  :start-after: start
-  :end-before: stop
+   :start-after: start
 
-Import Inventory Statuses Only
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The sample for importing bulk product inventory statuses (In Stock, Out of Stock, or Discontinued) only:
+Inventory Statuses Only
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /user_guide/getting_started/common_actions/import_inventory_statuses.rst
-  :start-after: start
-  :end-before: stop
+   :start-after: start
 
 .. toctree::
    :hidden:

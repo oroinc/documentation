@@ -1,3 +1,7 @@
+.. _user-guide--taxes--link-a-tax-code-to-a-customer:
+
+.. begin
+
 Link a Tax Code to a Customer or Customer Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Customer

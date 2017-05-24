@@ -1,39 +1,43 @@
-Importing bulk items
+Importing Bulk Items
 --------------------
+
+
+To streamline adding a large bulk of items, like customer information, products, prices or inventory information, you can import the bulk details from a .csv file.
+
+1. Navigate to the list of items that you would like to import your data into.
 
 .. after
 .. begin
 
-To streamline adding a large bulk of items, like products, prices or inventory information, you can import the bulk details from a .csv file.
+2. **Get a sample:** To download a sample .csv file with the necessary headers, click **Download Data Template** in the list next to **Import**.
 
-1. **Get a sample:** To download a sample csv file with the necessary headers, click **Download Data Template** in the list next to **Import**. For the inventory template, select one of the options: a) inventory statuses only or b) detailed inventory levels.
+   .. note:: Follow the on-screen guidance for any additional actions. For example, for the inventory template, select one of the options: a) inventory statuses only or b) detailed inventory levels.
 
-3. **Prepare data for import**: Based on the downloaded file, create your bulk information in csv format. Once your file is ready, click **Import**, select the prepared comma-separated values (.csv) file and click **Submit**.
+3. **Prepare data for import**: Based on the downloaded file, create your bulk information in .csv format. Once your file is ready, click **Import**, select the prepared comma-separated values (.csv) file, and click **Submit**.
 
-4. **Validate import results**: Review import validation results. If there are any *Records with errors*, fix them in the csv file prior to starting the import. 
+4. **Validate import results**: Review import validation results. If there are any *Records with errors*, fix them in the .csv file prior to starting the import. 
 
 5. **Launch import:** After successful validation, click **Import**.
 
-Interactive status messages report the progress and once the import is complete, the imported products appear in the product catalog.
+Interactive status messages inform about the import progress and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
 
-.. finish
-
-See this two minute demo of the inventory import:
+See this two minute demo of the import process:
 
 .. raw:: HTML
 
-   <video width="700px" controls>
-   <source src="../../_static/video/common_actions/import.mp4" type="video/mp4">
-   Your browser does not support the video tag.
-   </video>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/shpqpFao6bA" frameborder="0" allowfullscreen></iframe>
+
+.. finish
 
 Related Topics
 ^^^^^^^^^^^^^^
 
-* `Importing product details <import-products>`_
-* `Importing price information <import-price-lists>`_
-* `Importing inventory status <import-inventory-status>`_
-* `Importing inventory levels <import-inventory-levels>`_
+* `Importing Product Details <import-products>`_
+* `Importing Price Information <import-price-lists>`_
+* `Importing Inventory Status <import-inventory-status>`_
+* `Importing Inventory Levels <import-inventory-levels>`_
+* `Importing Customer Users <import-customer-users>`_
+* `Importing Customers <import-customers>`_
   
 .. toctree::
    :hidden:
@@ -45,3 +49,7 @@ Related Topics
    import_inventory_levels
 
    import_price_lists
+
+   import_customer_users
+
+   import_customers

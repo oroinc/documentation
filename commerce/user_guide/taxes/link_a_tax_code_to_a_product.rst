@@ -1,3 +1,7 @@
+.. _user-guide--taxes--link-a-tax-code_to_a_product:
+
+.. begin
+
 Link a Tax Code to a Product
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

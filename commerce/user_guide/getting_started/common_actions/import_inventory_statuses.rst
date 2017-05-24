@@ -1,11 +1,11 @@
+.. _import-inventory-status:
+
 Importing Inventory Statuses
 ============================
 
-You can import the global product inventory statuses (In Stock, Out of Stock, or Discontinued) using the bulk import capabilities.
-
 .. start
 
-Import csv file should follow the high-level inventory details data structure.
+Import the global product inventory statuses (*In Stock*, *Out of Stock*, or *Discontinued*) using the .csv file that follows the high-level inventory details data structure.
 
 **Example of inventory statuses bulk import template**
 
@@ -15,10 +15,6 @@ Import csv file should follow the high-level inventory details data structure.
 
    "product.1", "Product Name", "In Stock"
 
-.. note:: Inventory Status may be *In Stock*, *Out of Stock*, and *Discontinued*.
+.. note:: Inventory status should be *In Stock*, *Out of Stock*, or *Discontinued*.
 
-.. stop
-
-.. include:: /user_guide/getting_started/common_actions/import.rst
-   :start-after: after
-   :end-before: Related Topics
+Inventory status import process is similar to the :ref:`inventory level <import-inventory-levels>` import.

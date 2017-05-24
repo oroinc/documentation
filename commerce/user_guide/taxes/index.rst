@@ -43,9 +43,11 @@ Manage Tax Rules
    :end-before: stop
 
 .. include:: /user_guide/taxes/link_a_tax_code_to_a_customer.rst
+   :start-after: begin
    :end-before: stop
 
 .. include:: /user_guide/taxes/link_a_tax_code_to_a_product.rst
+   :start-after: begin
    :end-before: stop
 
 **Related Information**
