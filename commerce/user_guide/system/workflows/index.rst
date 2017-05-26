@@ -30,15 +30,15 @@ In Oro applications, any workflow may be classified as either **system** or **cu
 
 The following system workflows are provided out of the box in OroCommerce:
 
-* Checkout
+* :ref:`Checkout <system--workflows--checkout-workflow>`
 
-* Alternative Checkout
+* :ref:`Alternative Checkout <system--workflows--alternative-checkout-workflow>`
 
 * :ref:`Quote Backoffice <system--workflows--quote-backoffice-workflow>`
 
-* RFQ Backoffice
+* :ref:`RFQ Backoffice <system--workflows--rfq-backoffice-workflow>`
 
-* RFQ Frontoffice
+* :ref:`RFQ Frontoffice <system--workflows--rfq-frontoffice-workflow>`
   
 
 .. _user-guide--system--workflow-management-steps-transitions:
@@ -371,3 +371,7 @@ See the following sections to get more information about the system workflows in
    :maxdepth: 1
 
    quote_management_workflow
+   rfq_backoffice
+   rfq_frontoffice
+   checkout
+   alternative_checkout

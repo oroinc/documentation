@@ -8,7 +8,7 @@ Quote Backoffice Workflow
 Overview
 --------
 
-Quote Backoffice Workflow (QBW) is a :ref:`system <user-guide--system--workflow-management-system-custom>` worklow that defines a sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a quote can go through as a deal progresses.
+Quote Backoffice Workflow (QBW) is a :ref:`system <user-guide--system--workflow-management-system-custom>` workflow that defines a sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a quote can go through as a deal progresses.
 
 To reach the workflow:
 
@@ -17,11 +17,11 @@ To reach the workflow:
    
 .. image:: /user_guide/img/system/workflows/workflows/QuoteBackofficeFlow.png
    
-.. note:: Since Quote Backoffice is a system worklow, it cannot be edited or deleted. To be able to introduce changes to system workflows, they need to be cloned, edited and activated.
+.. note:: Since Quote Backoffice is a system workflow, it cannot be edited or deleted. To be able to introduce changes to system workflows, they need to be cloned, edited and activated.
 
 On the Quote Backoffice page, you can perform the following actions:
 
-* Clone the worklow - click |IcClone| to clone the workflow.
+* Clone the workflow - click |IcClone| to clone the workflow.
 * Deactivate the workflow - click **Deactivate** to deactivate the workflow.
 
 Statuses
@@ -85,7 +85,7 @@ The QBW consists of the following steps and transitions:
 
 .. image:: /user_guide/img/system/workflows/workflows/QBW_steps_transitions_table.png
 
-.. note:: Please note that Accepted and Declined transitions for the Sent to Customer step are automatically triggered by the changes of customer statuses and they do not, therefore, take the form of buttons in the intefrace.
+.. note:: Please note that Accepted and Declined transitions for the Sent to Customer step are automatically triggered by the changes of customer statuses and they do not, therefore, take the form of buttons in the interface.
 
 As an illustration, let us go through a sample flow to see the QBW in action:
 

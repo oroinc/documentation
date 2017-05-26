@@ -21,6 +21,10 @@ Images
 
    <i class="fa fa-close fa-lg" aria-hidden="true"></i>
 
+.. |IcEditInline| raw:: html
+
+   <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
+
 .. |IcClone| raw:: html
 
    <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
@@ -123,10 +127,6 @@ Images
 .. |IcFilter| raw:: html
 
    <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
-
-.. |IcEditInline| raw:: html
-
-   <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 
 .. |IcUndo| raw:: html
 
