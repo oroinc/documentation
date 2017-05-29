@@ -18,5 +18,6 @@ For detailed information about payment provider services supported in OroCommerc
    payment_term
    paypal
    authorizenet
+   wirecard
 
 

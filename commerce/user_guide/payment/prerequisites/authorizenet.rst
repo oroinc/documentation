@@ -5,7 +5,7 @@ Prerequisites for Authorize.Net Integration
 
 .. begin
 
-To start using Authorize.Net with OroCommerce application, complete the following:
+To start using Authorize.Net with the OroCommerce application, complete the following:
 
 1. Sign up for the Authorize.Net service and configure it.
 
@@ -70,8 +70,8 @@ Get Authorize.Net Credentials Required for Integration with OroCommerce
 
 .. _user-guide--payment--prerequisites--authorizenet-testing:
 
-Test OroCommerce and Authorize.Net Integration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Test Authorize.Net Integration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When you set up an Authorize.Net integration for the first time and would like to check how payment via Authorize.Net works, you can use Authorize.Net `Sandbox Account`_. In a sandbox environment, with emulated transactions, you can test your customization and use the checkout with payment methods enabled by Authorize.Net.
 

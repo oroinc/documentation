@@ -1,7 +1,7 @@
-  .. _user-guide--payment--configuration--payment-method-integration--authorizenet-details:
+.. _user-guide--payment--configuration--payment-method-integration--authorizenet-details:
 
-Authorize.Net Payment Methods Integration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Authorize.Net Integration
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 

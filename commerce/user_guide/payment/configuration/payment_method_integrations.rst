@@ -47,6 +47,8 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 
    PayPal Payflow Gateway / PayPal Payment Pro <payment_methods/paypal_payflow_gateway>
 
+   Wirecard Checkout Seamless <payment_methods/wirecard>
+
 Delete an Integration with a Payment Method Provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -56,17 +58,17 @@ To delete an integration and related payment methods:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu. The **Manage Integrations** page opens.
 
-2. Hover over the |IcMore| **More Actions** menu at the end of the row with the necessary integration and click the |IcDelete| **Delete** icon.
+#. Hover over the |IcMore| **More Options** menu at the end of the row with the necessary integration and click the |IcDelete| **Delete** icon.
 
-   The confirmation dialog box appears.
+   The confirmation dialog appears.
 
    If any payment rule depends on the integration that is being deleted, the affected payment methods in those payment rules will be disabled. The payment rule might also be disabled if none of its payment methods remain enabled.
 
-3. If necessary, review the payment rules using the link in the confirmation dialog box.
+#. If necessary, review the payment rules using the link in the confirmation dialog.
 
    .. note:: The payment rules open in a new tab in your browser.
 
-4. Once you are ready to delete the integration, click **Delete**.
+#. Once you are ready to delete the integration, click **Delete**.
 
 The payment methods that were based on this integration are no longer usable in OroCommerce and cannot be enabled in the payment rule.
 

@@ -23,11 +23,13 @@ While your business must be based in one of the aforementioned countries, you ca
 Security
 ^^^^^^^^
 
-OroCommerce server never stores buyer's sensitive payment information (complete card number, expiration date, and cvv code).
+OroCommerce server never stores buyer's sensitive payment information (complete card number, expiration date, and cvv code), this information is directly sent to Authorize.Net.
 
-OroCommerce uses `Authorize.Net Accept.js <https://developer.authorize.net/api/reference/features/acceptjs.html>`_ library to process buyer's sensitive information in the client web browser.
+As Authorize.Net servers are PCI DSS complaint, this ensures that you provide to your buyers the security of payments that meets requirements of the controlling organizations.
 
-Transaction response from the payment gateway also does not contain sensitive information about buyer's card. It serves as an identifier of the initial authorization that is solely handled by the payment gateway.
+OroCommerce uses `Authorize.Net Accept.js <https://developer.authorize.net/api/reference/features/acceptjs.html>`_ library to process buyer's sensitive information in their web browser.
+
+Transaction response from the payment gateway also does not contain sensitive information about a buyer's card. It serves as an identifier of the initial authorization that is solely handled by the payment gateway.
 
 
 
