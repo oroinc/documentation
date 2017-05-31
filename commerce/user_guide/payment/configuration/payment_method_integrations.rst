@@ -49,6 +49,9 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 
    Wirecard Checkout Seamless <payment_methods/wirecard>
 
+   InfinitePay <payment_methods/infinitepay>
+
+
 Delete an Integration with a Payment Method Provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -13,3 +13,4 @@ For detailed information about configuration steps that should precede the integ
    paypal
    authorizenet
    wirecard
+   infinitepay

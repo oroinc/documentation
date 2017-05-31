@@ -66,6 +66,8 @@ Attributes
 
 * customer.id *int*
 * customer.name *string*
+* customer.group.id *int*
+* customer.group.name *string*
 
 *Customer User*
 

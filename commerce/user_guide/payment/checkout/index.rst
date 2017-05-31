@@ -34,6 +34,19 @@ Authorize.Net
 
 .. image:: /user_guide/img/payment/checkout/checkout_authorizenet.png
 
+.. InfinitePay Checkout
+.. ~~~~~~~~~~~~~~~~~~~~
+
+.. .. image:: /user_guide/img/payment/checkout/checkout_infinitepay.png
+
+.. email 
+
+.. Legal form: AG, eG. EK, e.V., Freelancer, GbR, GmbH, GmbH iG, GmbH & Co. KG
+
+.. special order # (matches InfinitePay one)
+
+.. paid in full
+
 .. _doc--payment--checkout-wirecard:
 
 .. _doc--payment--checkout-wirecard-card:

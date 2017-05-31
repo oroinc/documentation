@@ -19,5 +19,5 @@ For detailed information about payment provider services supported in OroCommerc
    paypal
    authorizenet
    wirecard
-
+   infinitepay
 

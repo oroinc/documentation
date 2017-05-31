@@ -38,35 +38,19 @@ Get Authorize.Net Credentials Required for Integration with OroCommerce
 
 1. Open https://account.authorize.net/ and log into Authorize.Net merchant interface:
 
-   |
-
    .. image:: /user_guide/img/payment/prerequisites/authorizenet/authorizenet_merchant.png
-
-   |
 
 #. Navigate to **Account > Settings > Security Settings**.
 
-   |
-
    .. image:: /user_guide/img/payment/prerequisites/authorizenet/authorizenet_security.png
-
-   |
 
 #. Click **API Credentials & Keys** and on the page that opens copy your API login ID and transaction key. If required, generate new ones.
 
-   |
-
    .. image:: /user_guide/img/payment/prerequisites/authorizenet/authorizenet_apicredentials.png
-
-   |
 
 #. Click **Manage Public Client Key** and on the page that opens copy your public client key. If required, generate a new one.
 
-   |
-
    .. image:: /user_guide/img/payment/prerequisites/authorizenet/authorizenet_clientkey.png
-
-   |
 
 .. _user-guide--payment--prerequisites--authorizenet-testing:
 
