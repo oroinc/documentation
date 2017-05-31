@@ -1,13 +1,13 @@
 .. _user-guide-common-features:
 
-Customer Management
-======================
+Account Management
+==================
 
 One of the main tasks of any CRM is the ability to aggregate the various details of a customer. 
 
 For example, say that you have a factory producing furniture, and you are selling it through a retail network, a 
 web-based store, where people can buy some items from you online. Along with that you are 
-partnering with several interrior desing studios—they buy in bulk directly from your factory in compliance with a 
+partnering with several interior design studios—they buy in bulk directly from your factory in compliance with a
 purchase agreement. 
 
 This way, you are selling to individual clients in a store and online, and you are also selling to other businesses. 
