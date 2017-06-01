@@ -32,7 +32,7 @@ could be built with [Sphinx](http://sphinx-doc.org/):
 
 1. [Install pip](https://pip.pypa.io/en/stable/installing/).
 2. Install [Sphinx with Extensions for PHP and Symfony](https://github.com/fabpot/sphinx-php) using the following command:
-`pip install sphinx~=1.3.0 git+https://github.com/fabpot/sphinx-php.git`.
+   `pip install --upgrade -q -r requirements.txt`
 3. Run `make html` in documentation folder. Ensure that `conf.py` (documentation build configuration file) is there.
 
 Documentation will be available in `_build/html` folder.
