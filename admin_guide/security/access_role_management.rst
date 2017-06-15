@@ -50,24 +50,28 @@ Links
 -----
 
 
-For how to configure roles, see the `Roles Management <./access-management-roles>`__ guide. 
+For how to configure roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
-For more information on access levels, see the `Access Levels <./access-management-access-levels>`__ guide.
+For more information on access levels, see the :ref:`Access Levels <user-guide-user-management-permissions-roles--acl>` guide.
 
-For how to configure which business units and organization the user has access to, see the `User Access Settings <./access-management-user-asccess-settings>`__ guide.
+For how to configure which business units and organization the user has access to, see the :ref:`User Access Settings <user-guide--user-management--permissions--user-access-settings>` guide.
 
-For how to define which entity can be an owner of the entity, see the `Ownership Type <./access-management-ownership-type>`__ guide.
+For how to define which entity can be an owner of the entity, see the :ref:`Ownership Type <user-guide-user-management-permissions-ownership-type>` guide.
 
-For examples on access configuration, see the `Access Configuration Examples <./access-management-examples>`__ guide.
+For examples on access configuration, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` guide.
 
+For the complete list of system capabilities that control user's access and permissions to view information and perform actions related to the particular feature or function in Oro application, see the :ref:`Capabilities List<admin-capabilities>`.
 
 .. toctree::
-    access_management_roles
-    access_management_roles_interface
-    access_management_roles_actions
-    access_management_field_level_acl 
-    access_management_user_access_settings 
-    access_management_ownership_type  
-    access_management_access_levels 
-    access_management_examples
-    admin_capabilities  
+   :maxdepth: 1
+   :hidden:
+
+   access_management_roles
+   access_management_roles_interface
+   access_management_roles_actions
+   access_management_field_level_acl
+   access_management_user_access_settings
+   access_management_ownership_type
+   access_management_access_levels
+   access_management_examples
+   admin_capabilities
