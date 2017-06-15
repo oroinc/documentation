@@ -29,7 +29,7 @@ To define the custom configuration options for the particular website:
 
    In the **Commerce** section, you may override the global system configuration for the following option groups:
 
-   * **Customers: Customer Users**
+   * :ref:`Customers: Customer Users <system--website--configuration--commerce--customers--customer-users>`
    * **Design: Theme**
    * **Inventory: Warehouse**
    * **Inventory: Product Options**

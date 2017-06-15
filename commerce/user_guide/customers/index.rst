@@ -17,8 +17,8 @@ System-wide Customer Configuration
 ----------------------------------
 
 .. include:: /user_guide/customers/configuration/index.rst
-   :start-after: begin
-   :end-before: finish
+   :start-after: start
+   :end-before: stop
 
 Customer Accounts
 -----------------

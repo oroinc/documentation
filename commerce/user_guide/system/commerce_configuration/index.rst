@@ -1,12 +1,16 @@
-General System Configuration
-============================
+General Oro Commerce Configuration
+==================================
 
 This section contains information on the system configuration options specific for OroCommerce.
 
 .. toctree::
    :maxdepth: 1
 
-   ../../customers/configuration/customer_users
+   ../../customers/configuration/global_customer_users
+
+   ../../customers/configuration/website_customer_users
+
+   ../../customers/configuration/organization_customer_users
 
    ../../customers/configuration/visibility
 
