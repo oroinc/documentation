@@ -1,7 +1,7 @@
 
 .. _admin-configuration-user-settings:
 
-User settings
+User Settings
 =============
 
 

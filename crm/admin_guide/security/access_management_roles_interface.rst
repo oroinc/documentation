@@ -1,11 +1,10 @@
+.. _user-guide-user-management-permissions-roles--interface:
 
 Role on the Interface
-=======================
+=====================
 
 .. contents:: :local:
     :depth: 3
-
-    
 
 The information about a role is divided into four sections. 
 
@@ -25,7 +24,7 @@ General Section
 +-------+----------------------------------------------------------------+
 
 Additional Section
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 +--------------+------------------------------------------------------------------------------------------------------+
 | Field        | Description                                                                                          |
@@ -38,7 +37,7 @@ Additional Section
 
 
 Entity Section
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 This section contains information about permissions included in a role. 
 
@@ -85,7 +84,7 @@ For more information about the system capabilities, see the `Capabilities List <
 
 
 Users Section
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 The list of users that have this role. 
 
@@ -97,13 +96,13 @@ The list of users that have this role.
 
 
 Links
-------
+-----
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
-For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
+For what actions you can perform with roles, see the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
 
-For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
+For examples on roles application, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` guide.
 
 
 

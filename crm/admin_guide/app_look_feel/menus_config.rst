@@ -66,7 +66,7 @@ This page contains a list of menus that you can configure.
 
   |
 
-- **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Add and Manage Calendar Items Displayed <doc-activities-events-manage-calendar-items>`.
+- **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Calendar List <doc-my-oro-calendar-list>`.
 
   |
 

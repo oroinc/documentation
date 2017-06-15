@@ -47,6 +47,7 @@ The following table describes who or what can own entity records depending on th
 | None           | No owner (it can be also said that the owner is the system itself) |
 +----------------+--------------------------------------------------------------------+
 
+.. _user-guide-user-management-permissions-ownership-type--access-levels:
 
 Ownership Type and Access Levels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,10 +80,10 @@ The following table shows what access levels can be assigned depending on the en
 
 
 Actions
---------
+-------
 
 Configure an Ownership Type for an Entity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. important::
 	You can define an entity ownership type only during the entity creation. As soon as the entity is saved for the first type, its ownership type cannot be changed. 
@@ -107,7 +108,7 @@ Configure an Ownership Type for an Entity
 
 
 Review the Ownership Type for an Entity
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open the entity view page:
 
@@ -125,8 +126,8 @@ Review the Ownership Type for an Entity
 
 Links
 -----
-For more information about the access settings configuration, see the `Access Management <./access-management>`__ guide.
+For more information about the access settings configuration, see the :ref:`Access Management <user-guide--user-management--permissions--user-access-settings>` guide.
 
 For more information about the entity configuration, see the `Entity Management <../entities>`__ guide.
 
-For more information about the user configuration, see the `User Management <./user-management-users>`__ guide.
+For more information about the user configuration, see the :ref:`User Management <user-management-users>` guide.

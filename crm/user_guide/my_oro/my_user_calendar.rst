@@ -18,8 +18,10 @@ In the upper-left corner of the page you can see the page name and in the upper-
 - :guilabel:`Tasks`—Click this button to open the **Tasks** grid.
 - :guilabel:`Events`—Click this button to open the **Calendar Events** grid.
 
-Calendars List
-^^^^^^^^^^^^^^
+.. _doc-my-oro-calendar-list:
+
+Calendar List
+^^^^^^^^^^^^^
 
 .. add image
 
@@ -28,13 +30,14 @@ By default, it contains the **My Tasks** calendar that shows your tasks by their
 
 Each calendar has its color. By default, events from this calendar will appear in this color. The color legend box is displayed in front of the calendar name. You can change a calendar color. For how to do this, see :ref:`Change Calendar Color <doc-activities-events-actions-change-calendar-color>`
 
+.. _doc-activities-events-actions-add-calendar:
 
 Add a Calendar of Another User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To start watching calendars of other users, select a user from the **Choose a user to add** list. You can use the search field to quickly find the required user: start entering their name and click the required name from the dynamically filtered suggestions. You can also click the hamburger menu next to the list to select the required user in the dialog box using filters, etc.
 
-.. _my-oro-calendar-show-hide:
+.. _doc-activities-events-actions-show-hide-calendar:
 
 Show / Hide a Calendar
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -51,11 +54,12 @@ Hidden calendars color legend box changes to transparent.
 
 Hidden calendars do not appear in the right part of the page and in the :ref:`Today's Calendar <doc-widgets-today-calendar>` widget.
 
+.. _doc-activities-events-actions-remove-calendar:
 
 Remove a Calendar
 ~~~~~~~~~~~~~~~~~
 
-If you want to temporary hide events from a certain calendar, see :ref:`Show / Hide Calendar <my-oro-calendar-show-hide>`.
+If you want to temporary hide events from a certain calendar, see :ref:`Show / Hide Calendar <doc-activities-events-actions-show-hide-calendar>`.
 
 If you are sure that you do not want to watch this calendar at all, you can remove it from your calendar list.
 

@@ -1,3 +1,5 @@
+.. _user-guide-user-management-permissions-roles--examples:
+
 Access Configuration Examples
 =============================
 
@@ -198,7 +200,7 @@ A USA Regional Sales Manager, Samuel Lee, can see and manage accounts of the Nin
 
  
 Multiple Organizations
------------------------
+----------------------
 
 There are two businesses that our company runs. One of them is tea sales. The other one—clothes sales. For each business we have created an individual organization in OroCRM ('Tea Sweet' and 'Best Style'). 
 John, Jane and Jill are marketing team members. John works in 'Tea Sweet,'' Jane and Jill—in 'Best Style.'' However, being a wide-range specialist, Jill shares her attention between both businesses and thus is given access to both organizations. 
@@ -236,7 +238,7 @@ But what happens when the need ceases for Jill's work at 'Sweet Tea' and an admi
 
 
 User Has Access to Multiple Business Units
--------------------------------------------
+------------------------------------------
 
 The 'Sweet Tea' company has the Lead Development team which is divided into two geographically distributed units: 'Los Angeles' and 'New York.' Alex, Aaron and Anna are Lead Development Representatives. Alex has access to the 'Los Angeles' business unit, Anna—to the 'New York' unit. Aaron is an experienced employee and was asked by his management to help team members of both business units. Thus, he is granted access to both 'Los Angeles' and 'New York.'   
 
@@ -260,14 +262,11 @@ Let's see which data each team member can see:
 Links
 ------
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+For how a role is represented on the interface, see the :ref:`Roles on the Interface <user-guide-user-management-permissions-roles--interface>` guide.
 
-For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
-
-
-
+For what actions you can perform with roles, see the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
 
 .. |IcRemove| image:: ../../img/buttons/IcRemove.png
    :align: middle

@@ -1,5 +1,7 @@
+.. _user-guide-user-management-permissions-roles--actions:
+
 Actions with Roles
-===================
+==================
 
 .. contents:: :local:
     :depth: 3
@@ -9,7 +11,7 @@ Actions
 --------
 
 Create a Role
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 1. In the main menu, navigate **System>User Management>Roles**.
     
@@ -25,7 +27,7 @@ Create a Role
    - **Description**—Type the description of this role. Use the in-built text editor to format the provided description.
    
    - **Organization**—Select the organization for user's of which this role will be applicable. If you want this role to be applicable for all organizations defined in the system, do not specify any organization. In this case the field value becomes **System-wide.** (If there is only a single organization defined in the system or you do not have global access rights, there will be no option for selecting an organization.)
-	
+
 |
 
 .. image:: ../img/access_roles_management/role_create2.png
@@ -214,17 +216,17 @@ Include Permissions for an Entity Field in a Role
 
 Roles in the User Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-For how to assign a role to a user, review and modify the range of roles assigned to the user, see the `User Access Settings <./access-management-user-asccess-settings>`__ guide.
+For how to assign a role to a user, review and modify the range of roles assigned to the user, see the :ref:`User Access Settings <user-guide--user-management--permissions--user-access-settings>` guide.
 
 
 Links
-------
+-----
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+For how role is represented on the interface, see the :ref:`Roles on the Interface <user-guide-user-management-permissions-roles--interface>` guide.
 
-For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
+For examples on roles application, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` guide.
 
 
 

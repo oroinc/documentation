@@ -78,9 +78,9 @@ To generate an authentication header with PHP:
 Header and nonce lifetime
 -------------------------
 
-The generated header has a lifetime of 300s and it expires if not used during this time.
+The generated header has a lifetime of 3600s and it expires if not used during this time.
 Each *nonce* might be used only once in specific time for generation of the *password digest*.
-By default, the *nonce* cooldown time is also set to 300s.
+By default, the *nonce* cooldown time is also set to 3600s.
 This rule is aimed to improve safety of the application and prevent *"replay"* attacks.
 
 Therefore, the header generation algorithm should be implemented on the side of the client application and headers should be re-generated for each request.

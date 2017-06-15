@@ -1,5 +1,7 @@
+.. _user-guide--user-management--permissions--user-access-settings:
+
 User Access Settings
-=====================
+====================
 
 .. contents:: :local:
     :depth: 3
@@ -18,8 +20,10 @@ User's access settings is one of the most important points in determining which 
 Actions
 -------
 
+.. _user-guide--user-management--permissions--user-access-settings--configure-on-creation:
+
 Configure Access Settings While Creating a New User
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Start creating a new user. To do this, follow the instructions provided in the
    `Create a User Record <../user-management/user-management-users#create-a-user-record>`__ section of the `User Records Management <../user-management/user-management-users>`__ guide. Specify all information as required for the **General**, **Additional**, **Groups and Roles**, and **Password** sections.
@@ -44,6 +48,8 @@ Configure Access Settings While Creating a New User
 
 6. Click the :guilabel:`Save` button in the upper-right corner.
 
+
+.. _user-guide--user-management--permissions--user-access-settings--assign-role:
 
 Assign Roles While Creating a New User
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,7 +88,7 @@ Change the Range of Assigned User Roles
 
 3. Click **Groups and Roles**.
 
-4. If required, add a new user role as described in the step 3 of the `Configure User Roles While Creating a New User <./access-management-user-access-settings#configure-user-role-while-creating-a-new-user>`__ section.
+4. If required, add a new user role as described in the step 3 of the :ref:'Assign Roles While Creating a New User <user-guide--user-management--permissions--user-access-settings--assign-role>` section.
 
 |
 
@@ -155,9 +161,9 @@ Review Assigned Roles and Access Settings
 
 Links
 -----
-For more information about the access settings configuration, see the `Access /Role Management <./access-role-management>`__ guide.
+For more information about the access settings configuration, see the :ref:`Access / Role Management <user-guide-user-management-permissions>` guide.
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
 For more information about the user configuration, see the `User Management <../user-management/user-management-users>`__ guide.
 

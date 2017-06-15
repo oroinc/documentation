@@ -12,29 +12,31 @@ Overview
 Roles are predefined sets of permissions. When you assign a role to a user, you can be sure that the user will be able to access only that information within the system which is necessary for them to do their work. 
 
 Roles Creation
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 Usually roles are created based on the user's job functions: sales manager, marketing team member, administrator. But this is not a strict rule. You can create as many roles as required and configure them according to the needs of your company. 
-For how to create a role, see the `Create a Role <./access-management-roles-actions#create-a-role>`__ section of the the `Actions with Roles <./access-management-roles-actions>`__ guide. 
+For how to create a role, see the *Create a Role* section of the the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
 
 
 
 Role Structure
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 A role is a set of permissions that you can grant to a user all-in-one. 
 There are two nominal types of permissions in OroCRM: 
 
 - Permissions to perform a certain action on entity. For each permission of this type you can specify a desired access level.
 
-- Permissions to access system functionalities. They are also called 'capabilities' on the interface. System functionalities belong to the system and thus for them you simply specify whether to include permissions to access them into the role or not. 
+- Permissions to access system functions. They are also called 'capabilities' on the interface. System functions belong to the system and thus for them you simply specify whether to include permissions to access them into the role or not.
 
 
 
 .. image:: ../img/access_roles_management/user_access.png 
 
 
+.. _user-guide-user-management-permissions-roles--actions-on-entity-permissions:
+
 Action on Entity Permissions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On each entity in the system a user can perform a certain set of actions. The set may vary for some entities but in general it looks as follows:
 
@@ -78,18 +80,18 @@ This is how the corresponding configuration looks on the interface for the **Acc
 |
 
 
-For more information about which access levels defines which range, see the `Access Levels <./access-management-access-levels>`__ guide.
+For more information about which access levels defines which range, see the :ref:`Access Levels <user-guide-user-management-permissions-roles--acl>` guide.
 
 .. Important::
 	Note that the set of available access levels depends on the entity's ownership type. For example, you will not be able to set the **User** access level if the entity's ownership type is **Organization.** Only two access levels are always available: **None**—access is denied and **Global**—access all entity records within the system.
-	For more information about ownership types, see the `Ownership Type <./access-management-ownership-type>`__ section and specifically, the `Ownership type and access levels <./access-management-ownership-type#ownership-types-and-access-levels>`__ subsection.
+	For more information about ownership types, see the :ref:`Ownership Type <user-guide-user-management-permissions-ownership-type>` section and specifically, the Ownership type and access levels subsection.
 
 
 
 
 
 System Functionalities Permissions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Permissions of this type either define whether a user must have access to certain parts of the system (e.g., should they see the page with system jobs queue) or extend 'action on entity' permissions (e.g. should a user retain the ability to modify their own user profile if editing of user profiles in general is forbidden for them). Permissions of this type are also called 'capabilities.'' Capabilities can be either enabled or disabled for a role. 
 
@@ -107,7 +109,7 @@ Assign and Combine Roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each OroCRM user must be assigned a role. A user can have several roles. This is a logical approach if we assume that roles may be based on job functions. For example, if you have roles 'Leads Development Representative' and 'Sales Representative' and some employees do both of these jobs, you simply assign them both roles instead of creating a specialized role that will cover the whole range of required permissions. 
-For how to assign a role to a user, see the `Assign Roles While Creating a New User <access_roles_management#assign-roles-while-creating-a-new-user>`__ section. 
+For how to assign a role to a user, see the :ref:`Assign Roles While Creating a New User <user-guide-user-management-permissions>` section.
 
 
 If a user has two or more roles with different permissions, in the result the user will have the maximum of rights granted by all of them.   
@@ -126,7 +128,7 @@ The following example shows what access level for an action on entity a user who
 
 
 Field Level ACLs
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 All important information that comprises an entity is contained in the entity fields. For example, if you open any record of the **Business Unit** entity, you will see such fields as **Name**, **Organization**, **Description**, **Website**, etc. 
 
 When you include the permission to view entity records in a role, users with such role are automatically able to see all fields of the entity. 
@@ -136,29 +138,29 @@ However, there are situations when it is desirable to hide certain fields from o
 
 Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
 
-For more information about the field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <./access-management-field-level-acl>`__ guide.
+For more information about the field level ACLs, see the :ref:`Permissions for an Entity Field (Field Level ACLs) <user-guide-user-management-permissions-roles--field-level-acl>` guide.
 
 
 Links
-------
+-----
 
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-interface>`__ guide.
+For how role is represented on the interface, see the :ref:`Roles on the Interface <user-guide-user-management-permissions-roles--interface>` guide.
 
-For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
+For what actions you can perform with roles, see the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
 
-For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
+For examples on roles application, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` guide.
 
-	
+
 
 
 
 
 
 .. |IcRemove| image:: ../../img/buttons/IcRemove.png
-	:align: middle
+   :align: middle
 
 .. |IcClone| image:: ../../img/buttons/IcClone.png
-	:align: middle
+   :align: middle
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png
-	:align: middle
+   :align: middle
