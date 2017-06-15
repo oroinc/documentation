@@ -1,4 +1,6 @@
-  .. _user-guide--payment--configuration--payment-method-integration--paypal-details:
+:orphan:
+
+.. _user-guide--payment--configuration--payment-method-integration--paypal-details:
 
 Payment Integration Details For PayPal Payment Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

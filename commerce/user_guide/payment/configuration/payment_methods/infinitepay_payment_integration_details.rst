@@ -1,3 +1,5 @@
+:orphan:
+
 .. _user-guide--payment--configuration--payment-method-integration--infinitepay-details:
 
 Payment Integration Details For InfinitePay Payment Methods

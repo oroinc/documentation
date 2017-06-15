@@ -6,6 +6,8 @@ User Guide
 .. _user-guide--products--products:
 .. _user-guide--sales--requests-for-quote:
 .. _user-guide--sales--orders:
+.. _user-guide-marketing-lists:
+.. _user-guide-reports:
 
 OroCommerce as a B2B eCommerce platform provides a number of self-serve capabilities, mature buyer-seller interaction processes (e.g. for placing orders, sharing pricing information, requesting quotes, and submitting proposals), and may be easily used as a B2B Marketplace that connects a wide range of suppliers with multiple buyers. Buyers may get multiple offers and bids across various goods and services.
 
@@ -29,9 +31,7 @@ Core Features
 * Multiple `Organizations <./customers>`_, Websites and :ref:`Stores <user-guide--web-catalog>`: Many businesses manage multinational brands that operate across various countries, currencies, and tax regulations. OroCommerce Enterprise Edition comes out-of-the-box with flexible and robust multi-website management capabilities which allows organizations to easily orchestrate multiple businesses from one central admin console.
 * :ref:`Content Management System <user-guide--web-catalog>`: Native CMS capabilities allow marketers and merchandise managers to manage robust digital media-enabled catalogs and rich product information pages providing buyers with the information they need to make purchasing decisions. In addition, OroCommerce’s theme is designed with an intuitive, user-friendly front-end which allows buyers to easily find the information and products they need.
 
-.. `Personalized Catalog Management <./products-master-catalog>`_
-
-* **Personalized Catalog Management**: Versatile catalog management capabilities allow B2B sellers to customize product catalogs to specific corporations, divisions, business units, and even individual buyers or customers. Each group has access to its own catalog where purchasing managers are able to view its content and purchase products.
+* :ref:`Personalized Catalog Management <user-guide--web-catalog>`: Versatile catalog management capabilities allow B2B sellers to customize product catalogs to specific corporations, divisions, business units, and even individual buyers or customers. Each group has access to its own catalog where purchasing managers are able to view its content and purchase products.
 * **Multiple & Customized Price Lists**: Create and manage multiple customized price lists for each customer, company, or business unit based on the negotiated contracts. Each price list can contain an unlimited number of price points, various tiers, and different currencies.
 
 .. * `Multiple & Customized Price Lists <./sales/price-lists/index>`_: Create and manage multiple customized price lists for each customer, company, or business unit based on the negotiated contracts. Each price list can contain an unlimited number of price points, various tiers, and different currencies.
