@@ -35,7 +35,7 @@ The first status shows that your are granted rights to use the system. The secon
 
 In the upper-right part of the page there is the following set of action buttons:
 
-:guilabel:`Configuration`—Click this button to configure how the interface will look for your, your email settings, and integrations. See the :ref:`Configure Your Interface, Email Settings and Integrations <doc-my-user-actions-configure>` action description.
+:guilabel:`Configuration`—Click this button to configure how the interface will look for you, your email settings, and integrations. See the :ref:`Configure Your Interface, Email Settings and Integrations <doc-my-user-actions-configure>` action description.
 
 :guilabel:`Edit`—Click this button to edit your profile. See the :ref:`Edit Your Profile <doc-my-user-actions-edit>` action description.
 
@@ -52,7 +52,7 @@ In the upper-right part of the page there is the following set of action buttons
 
   :guilabel:`Assign Task`—Click this action button to assign a task. See the :ref:`Assign a Task <doc-my-user-actions-task>` action description.
 
-  :guilabel:`Change Password`—Click this action button to change a password. See the :ref:`Change a Password <doc-my-user-actions-change-password>` action description.
+  :guilabel:`Change Password`—Click this action button to change the password. See the :ref:`Change a Password <doc-my-user-actions-change-password>` action description.
 
   :guilabel:`Reset Password`—Click this action button to reset a password. See the :ref:`Reset a Password <doc-my-user-actions-reset-password>` action description.
 
@@ -60,7 +60,7 @@ In the upper-right part of the page there is the following set of action buttons
     An administrator may add non-default buttons to this list. If you see such non-default buttons as **Add Task**, **Add Event**, **Add Attachment** in the **More Actions** drop-down, see the :ref:`Activities <user-guide-activities>` guide for more information about actions that you can perform via them.
 
 
-In the next row you, you can check which business unit owns your user record. Click the owner name to open the corresponding business unit view page. If you are logged into the organization with global access (i.e. technical organization that aggregates data from all organizations created in the system), then in brackets you will see the name of organization that owns the user.
+In the next row, you can check which business unit owns your user record. Click the owner name to open the corresponding business unit view page. If you are logged into the organization with global access (i.e. technical organization that aggregates data from all organizations created in the system), then in brackets you will see the name of organization that owns the user.
 
 
 |
@@ -70,7 +70,7 @@ In the next row you, you can check which business unit owns your user record. Cl
 |
 
 
-Click the **Change History** link to see who, how and when modified your profile.
+Click the **Change History** link to see how, when and who modified your profile.
 
 
 
@@ -97,7 +97,7 @@ This section contains information about the user filled in when creating the use
 +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Birthday                | A date of your birth and your calculated age.                                                                                                                                                                            |
 +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Emails                  | A list of your email addresses. The first one (in bold) is the your primary email. You receive system notifications to this address, and it's a default address that appears in the **From** field in your emails.       |
+| Emails                  | A list of your email addresses. The first one (in bold) is the your primary email. You receive system notifications to this address, and it's the default address that appears in the **From** field in your emails.     |
 |                         |                                                                                                                                                                                                                          |
 |                         | Point to the email address and click the **Email** icon next to it to immediately compose an email. Click the **Hangouts** icon to start making a call.                                                                  |
 |                         |                                                                                                                                                                                                                          |

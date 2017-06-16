@@ -4,7 +4,7 @@ Manage Calendar Events
 ======================
 
 Each topic of this section guides you through the steps required to perform one of the actions related to calendar events.
-As there are usually more than one way to start the same action, only the most straightforward way is described here. Follow the links at the end of the topics to learn about the alternative ways to start the action.
+As there is usually more than one way to start the same action, only the most straightforward way is described here. Follow the links at the end of the topics to learn about the alternative ways to start the action.
 
 .. contents::
    :local:
@@ -65,7 +65,7 @@ Get :ref:`more information on editing a calendar event from other perspectives <
 Reschedule a Calendar Event
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can change the assigned time frame during the :ref:`editing of the calendar event <doc-activities-events-actions-edit-detailed>`, but you can also change in directly in the calendar.
+You can change the assigned time frame during the :ref:`editing of the calendar event <doc-activities-events-actions-edit-detailed>`, but you can also change it directly in the calendar.
 
 .. important:: By default, you can edit only those events that you own.
 
@@ -143,7 +143,7 @@ Get :ref:`more information about responding to a calendar event from other persp
 Start a Hangout Meeting
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-If the event was planned as the Hangout meeting, you can join it from the calendar .
+If the event was planned as a Hangout meeting, you can join it from the calendar .
 
 .. important::
    The Hangouts functionality must be enabled to make Hangout calls possible. Contact your administrator or see :ref:`Google Integration Settings <admin-configuration-integrations-google>` for more information.
