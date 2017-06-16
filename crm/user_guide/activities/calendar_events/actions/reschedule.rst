@@ -1,7 +1,7 @@
 .. _doc-activities-events-actions-changetimeframe-detailed:
 
-Reschedule a Calendar Eventin the Calendar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Reschedule a Calendar Event in the Calendar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can change the assigned time frame during the :ref:`editing of the calendar event <doc-activities-events-actions-edit-detailed>`, but you can also change in directly in the calendar.
 
