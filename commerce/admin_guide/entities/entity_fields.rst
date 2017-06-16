@@ -34,12 +34,8 @@ Create a Custom Entity Field
 3. On the entity view page, click the :guilabel:`Create Field` button in the upper-right corner of the page. 
 
 4. Specify information for the basic entity field properties. See the descriptions of the basic properties in the `Basic Entity Field Properties <./entity-field-properties#basic-entity-field-properties>`__ section. 
-   
-   |
 
    .. image:: /user_guide/img/admin/entity_management/new_entity_field.png
-
-   |
 
 5. Click :guilabel:`Continue` button. Depending on what has been selected for **Type**, the corresponding additional fields appear.
 

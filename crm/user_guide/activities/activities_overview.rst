@@ -36,13 +36,17 @@ In this document, you can find short descriptions of what each activity serves f
 Work Management
 ---------------
 
+.. _doc-activities-overview-tasks:
+
 Managing Tasks
 """"""""""""""
+
+.. start_include_tasks
 
 What Is a Task? 
 ~~~~~~~~~~~~~~~
 
-Tasks are assignments that need to be accomplished by a user. Keeping track on tasks helps organize the work process and ensure that all the important work is done. 
+Tasks are assignments that need to be accomplished by a user. Keeping track of tasks helps organize the work process and ensure that all the important work is done.
 
 'Create a regional sales report,' 'Compose an email to customer ABC,' 'Prepare everything required for marketing campaign A'—these are all examples of tasks that users can be assigned. 
 
@@ -55,7 +59,7 @@ With OroCRM you can create, assign tasks, organize them by priority, set their d
 
 |
 
-.. image:: ../img/activities/activities_tasks.png
+.. image:: /user_guide/img/activities/activities_tasks.png
 
 | 
 
@@ -73,7 +77,7 @@ The second way is the most convenient when the idea of the task appears when you
 
 |
 
-.. image:: ../img/activities/activities_tasks2.png
+.. image:: /user_guide/img/activities/activities_tasks2.png
 
 | 
 
@@ -82,7 +86,7 @@ When you add a task from an opportunity page, this opportunity is displayed as a
 
 |
 
-.. image:: ../img/activities/activities_tasks2-2.png
+.. image:: /user_guide/img/activities/activities_tasks2-2.png
 
 |
   
@@ -98,18 +102,22 @@ The third way of creating tasks is the most traditional: you have the whole syst
 
 |
 
-.. image:: ../img/activities/activities_tasks3.png
+.. image:: /user_guide/img/activities/activities_tasks3.png
 
 |
 
-Users can see tasks assigned to them on the **My Tasks** page and in the **Tasks** section of their view pages. 
+Users can see tasks assigned to them on the **My Tasks** page, in the calendars on the **My Calendar** page and **Today's Calendar** widget, in the **Tasks List** sidebar widget, and in the **Tasks** section of their view pages.
 
-If an entity record is marked as a context for a task, this task appears in the **Activity** section on the entity record view page. 
+If an entity record is marked as a context for a task, this task appears in the **Activity** section on the entity record view page.
+
+.. end_include_tasks
+
+For more information about tasks, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
 
-For more information about tasks, see the :ref:`Tasks <user-guide-activities-tasks>` guide.
 
-  
+.. _doc-activities-overview-cases:
+
 Managing Cases
 """"""""""""""
 
@@ -141,9 +149,12 @@ If an entity record is marked as a context for a case, this case appears in the 
 
 For more information about cases, see the :ref:`Cases <user-guide-activities-cases>` guide.
 
+.. _doc-activities-overview-events:
 
 Calendar Events
 """""""""""""""
+
+.. start_include_events
 
 What Is a Calendar Event? 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -160,15 +171,16 @@ You can create a calendar event, define its participants, set up reminders about
 
 If more than one person should participate in the event, add them as guests to make this event appear in their calendars as well. 
 
-Similar to tasks, there are three ways of creating a calendar event: 
+There are four ways of creating a calendar event:
 
 - By clicking :guilabel:`Assign Calendar Event` action button on the view page of the user who you want to assign this event to.
 - By clicking the :guilabel:`Add Calendar Event` action button on the view page of the entity record related to this event. For example, if you want to discuss a certain account with your colleagues, you can go to the account's view page and add a new calendar event from it. The account will become a context for this event.   
-- By clicking the :guilabel:`Create Calendar Event` button in the dedicated system section. 
+- By clicking the :guilabel:`Create Calendar Event` button in the dedicated system section.
+- By adding a calendar event in the calendar on the **My Calendar** page or in the **Today's Calendar** widget.
 
 |
 
-.. image:: ../img/activities/activities_calendarevents.png
+.. image:: /user_guide/img/activities/activities_calendarevents.png
 
 |
 
@@ -180,9 +192,12 @@ If an entity record is marked as a context for a calendar event, this event appe
 
 For more information about calendar events, see the :ref:`Calendar Events <doc-activities-events>` guide.
 
+.. finish_include_events
 
 Communications
 --------------
+
+.. _doc-activities-overview-calls:
 
 Making and Logging Calls
 """"""""""""""""""""""""
@@ -205,12 +220,12 @@ There are three ways to start making or logging a call:
 
 |
 
-.. image:: ../img/activities/activities_calls3.png
+.. image:: /user_guide/img/activities/activities_calls3.png
 
 |
 
 
-.. image:: ../img/activities/activities_calls.png
+.. image:: /user_guide/img/activities/activities_calls.png
 
 |
 
@@ -219,7 +234,7 @@ Users can access logged calls in the dedicated system section, in the **Activiti
 |
 
 
-.. image:: ../img/activities/activities_calls2.png
+.. image:: /user_guide/img/activities/activities_calls2.png
 
 |
 
@@ -229,6 +244,8 @@ For more information about logging calls, see the :ref:`Calls <doc-activities-ca
 For information about whether Hangouts calls are available for you, contact an administrator or see the :ref:`Voice and Video Calls via Hangouts <user-guide-hangouts>` guide.
 
 .. end-include-calls
+
+.. _doc-activities-overview-emails:
 
 Sending and Receiving Emails
 """"""""""""""""""""""""""""
@@ -263,6 +280,7 @@ For more information on using emails, see the :ref:`Emails <user-guide-using-ema
 
 For how to configure emails, ask your administrator or see the :ref:`Email Configuration <user-guide-email-admin>` guide.
 
+.. _doc-activities-overview-contactrequests:
 
 Creating Contact Requests
 """""""""""""""""""""""""
@@ -288,6 +306,7 @@ For more information about contact requests, see the :ref:`Contact Requests <use
 Adding Useful Remarks
 ---------------------
 
+.. _doc-activities-overview-notes:
 
 Making Notes
 """"""""""""
@@ -308,6 +327,8 @@ Notes are displayed in the **Activities** section of the entity record view page
 
 For more information about notes, see the :ref:`Notes <user-guide-add-note>` guide.
 
+.. _doc-activities-overview-comments:
+
 Leaving Comments
 """"""""""""""""
 
@@ -325,6 +346,7 @@ You can leave a comment in the **Comments** section of the entity view page.
 
 For more information about comments, see the :ref:`Comments <user-guide-activities-comments>` guide.
 
+.. _doc-activities-overview-attachments:
 
 Adding Attachments
 """"""""""""""""""

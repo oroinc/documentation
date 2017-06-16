@@ -16,11 +16,7 @@ To respond to a calendar event when viewing a list of events:
 
 2. In the grid on the **Calendar Events** page, click the ellipsis menu at the end of the row with the event you want to reply to and then click either the |IcCheck| **Accept**, |IcInviteMaybe2| **Tentative**, or |IcTimes| **Decline** icon depending on whether you are going to attend the event.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_respond_fromgrid.png
-
-   |
 
 .. finish
 
@@ -36,11 +32,7 @@ To respond to a calendar event when viewing the event details:
 
 3. On the calendar event view page, next to the **Going?** label, click either the **Yes**, **Maybe**, or **No** link depending on whether you are going to attend the event.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_response_viewpage.png
-
-   |
 
 
 From the Related Entity (e.g. Account) View Page
@@ -54,11 +46,7 @@ You can respond to a calendar event directly from the related entity record view
 2. In the **Activity** section, choose a calendar event that you want to respond to, and click it to see the details.
 3. Next to the **Going?** label, click either the **Yes**, **Maybe**, or **No** link depending on whether you are going to attend the event.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_response_relatedrecord.png
-
-   |
 
 From the My Calendar page or Today's Calendar Widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,11 +55,7 @@ To respond to a calendar from a calendar (in Today's calendar widget or in your 
 1. Click the event in the calendar.
 2. At the bottom of the **View Event** calendar card, next to the **Going?** label, click either the **Yes**, **Maybe**, or **No** link depending on whether you are going to attend the event. The corresponding status appears next to the event name and the icon in front of your name in the list of guests that indicates the response status changes accordingly.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_response.png
 
-   |
-
-.. include:: /user_guide/include_images.rst
+.. include::  /user_guide/include_images.rst
    :start-after: begin

@@ -114,19 +114,11 @@ You can send an email message to other users or external emails.
 
     - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Send Email** on the list.
 
-      |
-
       .. image:: /user_guide/img/getting_started/my_oro/my_user_sendemail0.png
-
-      |
 
     - In the **General Information** section, find the **Emails** field, and point to one of your email address—actually the one that you want to use to send the email from. Click the **Send Email** icon that appears next to it.
 
-      |
-
       .. image:: /user_guide/img/getting_started/my_oro/email_icon.png
-
-      |
 
 
 3. In the **Send Email** dialog box, specify the required data. For help on this, see the :ref:`Email <user-guide-using-emails>` guide.
@@ -149,11 +141,7 @@ Log or Make a Call
 
    - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Log Call** on the list.
 
-     |
-
      .. image:: /user_guide/img/getting_started/my_oro/my_user_logcall0.png
-
-     |
 
    - In the **General Information** section, find the **Phone** field, and point to a specified phone number. The **Hangouts Call** and **Log Call** icons appear next to it.
 
@@ -162,19 +150,11 @@ Log or Make a Call
 
      - Click the **Log Call** icon to specify call details.
 
-     |
-
      .. image:: /user_guide/img/getting_started/my_oro/my_user_hangouts_call.png
-
-     |
 
    - In the **General Infromation** section, find the **Emails** field, and point to the required email. Click the **Hangouts Call** icon that appears next to it.
 
-     |
-
      .. image:: /user_guide/img/getting_started/my_oro/my_user_hangouts_call2.png
-
-     |
 
 3. If you used **Log Call** action button or icon, in the **Log Call** dialog box, specify the required data.
 
@@ -234,7 +214,7 @@ Assign a Task
 
 
 
-3. In the **Assign Task To** dialog box, specify the required data. For help on this, see the :ref:`Tasks <user-guide-activities-tasks>` guide.
+3. In the **Assign Task To** dialog box, specify the required data. For help on this, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_assigntask.png

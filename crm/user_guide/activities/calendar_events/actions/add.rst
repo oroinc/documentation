@@ -98,15 +98,17 @@ When adding or editing the calendar event, fill in the following information:
 
   Click the :guilabel:`+Add` button to configure when and how OroCommerce and OroCRM remind the participants about the event:
 
-  + Specify the type of the notification (to send the notification email or by showing a flash message in Oro application).
+  + Specify the type of the notification: whether to show a flash message in Oro application or send the notification email.
 
-  + Select the time units in which the delay bef: minutes, hours, days, or weeks in advance.
+  + Select the time units in which the time lag between a reminder and the event is measured: minutes, hours, days, or weeks.
 
-  + Select the delay before the reminder is sent: number of minutes, hours, days, or weeks.
+  + Enter what number of selected time intervals the time lag between a reminder and the event comprises.
 
   To remove a reminder, click the **x** icon next to it.
 
   .. important:: Reminders are disabled for recurring events.
+
+  .. note:: In Oro applications, an event start time is displayed adjusted according to the recipient's timezone settings both in notification emails and flash messages.  (That is, if the event is set to start at 7 a.m. in the organizational calendar that is run according to the New York time, the start time displayed in the reminder to the user in Tokio will be 8 p.m.)
 
 * **Call via Hangout**—Enable this option to plan a Google Hangout meeting for the calendar event. When enabled, a button that starts Hangout call appears on the event card and view page when viewed by the guest.
 

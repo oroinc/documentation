@@ -67,8 +67,6 @@ View and Process Emails
 -----------------------
 All the emails sent for a record are displayed in and can be reached from the *Record Activities* section on the record details:
 
-      |
-
 .. image:: /user_guide/img/common/activities/send_email_view.png
 
 You can use the action icons to
@@ -82,12 +80,7 @@ You can use the action icons to
 
   - The *Add Context Entity* form will appear.
 
-
-   |
-
-   |email_context_form|
-
-   |
+    |email_context_form|
 
   - Choose the entity (account, B2B customer, etc.) from the drop-down menu and choose a specific record from the grid.
 
@@ -96,8 +89,6 @@ You can use the action icons to
 
     If an email has been created from an entity record view page (e.g. from the Lead's page), this record will be added
     as a context automatically.
-
-    |
 
     |email_context_view|
 

@@ -31,7 +31,7 @@ The following set of action buttons is available in the upper-right part of the 
 - :guilabel:`Edit`—Click this button to edit a call log. See the :ref:`Edit a Call <doc-activities-calls-actions-edit>` action description.
 - :guilabel:`Delete`—Click this button to delete a call log. See the :ref:`Delete a Call <doc-activities-calls-actions-delete>` action description.
 
-In the next row you can check which user owns a specific call log record. Click the owner name to open the corresponding user view page. In brackets you can see the name of organization that owns the call log.
+In the next row you can check which user owns a specific call log record. Click the owner name to open the corresponding user view page. The name of organization that owns the call log is enclosed in parentheses.
 
 General Section
 ^^^^^^^^^^^^^^^

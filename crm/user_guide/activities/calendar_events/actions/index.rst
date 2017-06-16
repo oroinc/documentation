@@ -11,6 +11,8 @@ This section contains detailed information about the actions related to the cale
 
    edit
 
+   reschedule
+
    delete
 
    context
@@ -18,3 +20,5 @@ This section contains detailed information about the actions related to the cale
    comment
 
    reply
+
+   hangout

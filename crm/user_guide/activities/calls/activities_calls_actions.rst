@@ -290,7 +290,7 @@ Share a Call
 .. important::
    This option is available in the Oro application Enterprise Edition only.
 
-When you share a call log with a user, this user will be able to view this call log even though they may have no permissions to it otherwise. For example, according to your company settings, users can see only those call logs that they own. However, you and your colleague work on the same project and you want them to see the log of the call that you made. In this case, you can share this call log with your colleague.
+When you share a call log with a user, this user will be able to view this call log even though they may have no permissions to do it otherwise. For example, according to your company settings, users can see only those call logs that they own. However, you and your colleague work on the same project and you want them to see the log of the call that you made. In this case, you can share this call log with your colleague.
 
 Depending on you application settings, you can share call logs with other users, other business units, or other organizations.
 
@@ -351,7 +351,7 @@ Unshare a Call
 .. important::
    Enterprise Edition only.
 
-When you want to stop sharing a call with users / business units / organizations, perform as follows:
+To stop sharing a call with users / business units / organizations:
 
 1. In the main menu, navigate **Activities>Calls**.
 

@@ -215,7 +215,7 @@ Tasks are activities that need to be accomplished. Keeping track on tasks helps 
 
 You can filter tasks by a variety of parameters. To open the task view page, click this task in the grid.
 
-For more information about tasks management, see the :ref:`Tasks <user-guide-activities-tasks>` guide.
+For more information about tasks management, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
 
 Cases Subsection
@@ -231,11 +231,11 @@ For more information about cases management, see the :ref:`Cases <user-guide-act
 **Related Topics**
 
 .. toctree::
-    :maxdepth: 1
+   :maxdepth: 1
 
-    my_user_actions
-    my_user_system_config
-    my_user_menus_config
+   my_user_actions
+   my_user_system_config
+   my_user_menus_config
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

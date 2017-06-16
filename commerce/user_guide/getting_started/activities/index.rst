@@ -18,7 +18,7 @@ calendar events, and more.
    :maxdepth: 1
 
    activities_overview
-   activities_add_assign_tasks
+   tasks/index
    activities_create_case
    using_emails
    calls/activities_calls_overview

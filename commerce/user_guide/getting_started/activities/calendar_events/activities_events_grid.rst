@@ -4,9 +4,7 @@
 All Calendar Events Grid
 ========================
 
-
 .. image:: /user_guide/img/getting_started/activities/activities_events.png
-
 
 Page Top
 ^^^^^^^^
@@ -47,9 +45,7 @@ To respond to a calendar event, view, edit, or delete it, click the ellipsis men
 
 To view a calendar event, you can also click the corresponding row itself.
 
-
 .. image:: /user_guide/img/getting_started/activities/activities_events_grid_actions.png
-
 
 See the action descriptions:
 

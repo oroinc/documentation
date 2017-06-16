@@ -3,9 +3,10 @@
 Calendar Event View Page
 ========================
 
-
 .. image:: /user_guide/img/getting_started/activities/activities_events_viewpage.png
 
+.. contents:: :local:
+   :depth: 3
 
 Page Top
 ^^^^^^^^

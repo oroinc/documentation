@@ -4,33 +4,36 @@
 My Calendar
 ===========
 
-
 .. image:: /user_guide/img/getting_started/my_oro/my_calendar.png
 
-Actions
-~~~~~~~
+Top of the Page
+^^^^^^^^^^^^^^^
 
-Click the **Tasks** button to open the list of all tasks.
+In the upper-left corner of the page you can see the page name and in the upper-right corner there are buttons:
 
-Click the **Events** button to open the :ref:`list of all calendar Events <doc-activities-events-grid>`.
+- :guilabel:`Tasks`—Click this button to open the **Tasks** grid.
+- :guilabel:`Events`—Click this button to open the **Calendar Events** grid.
 
-Calendars List
-^^^^^^^^^^^^^^
+.. _doc-my-oro-calendar-list:
 
-.. image:: /user_guide/img/getting_started/my_oro/my_calendar_list.png
+Calendar List
+^^^^^^^^^^^^^
+
+.. add image
 
 This section enables you to add or remove calendars that you watch.
 By default, it contains the **My Tasks** calendar that shows your tasks by their due dates, all existing system calendars, and your personal calendar.
 
 Each calendar has its color. By default, events from this calendar will appear in this color. The color legend box is displayed in front of the calendar name. You can change a calendar color. For how to do this, see :ref:`Change Calendar Color <doc-activities-events-actions-change-calendar-color>`
 
+.. _doc-activities-events-actions-add-calendar:
 
 Add a Calendar of Another User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To start watching calendars of other users, select a user from the **Choose a user to add** list. You can use the search field to quickly find the required user: start entering their name and click the required name from the dynamically filtered suggestions. You can also click the hamburger menu next to the list to select the required user in the dialog box using filters, etc.
 
-.. _my-oro-calendar-show-hide:
+.. _doc-activities-events-actions-show-hide-calendar:
 
 Show / Hide a Calendar
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -47,11 +50,12 @@ Hidden calendars color legend box changes to transparent.
 
 Hidden calendars do not appear in the right part of the page and in the :ref:`Today's Calendar <doc-widgets-today-calendar>` widget.
 
+.. _doc-activities-events-actions-remove-calendar:
 
 Remove a Calendar
 ~~~~~~~~~~~~~~~~~
 
-If you want to temporary hide events from a certain calendar, see :ref:`Show / Hide Calendar <my-oro-calendar-show-hide>`.
+If you want to temporary hide events from a certain calendar, see :ref:`Show / Hide Calendar <doc-activities-events-actions-show-hide-calendar>`.
 
 If you are sure that you do not want to watch this calendar at all, you can remove it from your calendar list.
 
@@ -110,7 +114,9 @@ An icon in the upper-left corner of the event cell represents the invitation sta
 The |IcReminder| **Reminder** icon in the upper-left corner appears when the event owner configured sending reminders about the event.
 
 
-From the calendar you can add, view a calendar event, respond to it, edit and delete it, start a hangout meeting, remove a context from a calendar  event.
+From the calendar you can add, view a calendar event, respond to it, edit and delete it, start a hangout meeting, remove a context from a calendar event.
+
+You can also view, edit, and delete tasks.
 
 See the action descriptions:
 
@@ -123,9 +129,15 @@ See the action descriptions:
 - :ref:`Start a Hangout Meeting <doc-activities-events-actions-hangout>`
 - :ref:`Remove a Context from a Calendar Event <doc-activities-events-actions-contextdel>`
 
+- :ref:`View a Task <doc-activities-tasks-actions-view>`
+- :ref:`Edit a Task <doc-activities-tasks-actions-edit>`
+- :ref:`Delete a Task <doc-activities-tasks-actions-delete>`
+
 
 See Also
 ^^^^^^^^
+
+Calendar Events:
 
 :ref:`Calendar Events Overview <doc-activities-events>`
 
@@ -136,6 +148,26 @@ See Also
 :ref:`Calendar Event View Page <doc-activities-events-view-page>`
 
 :ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
+
+Tasks:
+
+:ref:`Tasks Overview <doc-activities-tasks>`
+
+:ref:`Manage Tasks <doc-activities-tasks-actions>`
+
+:ref:`Tasks Grid <doc-activities-tasks-grid>`
+
+:ref:`Task View Page <doc-activities-tasks-view-page>`
+
+:ref:`My Tasks <doc-my-oro-tasks>`
+
+:ref:`My Calendar Page <doc-my-oro-calendar>`
+
+:ref:`Tasks List Sidebar Widget <doc-widgets-sidebar-task-list>`
+
+:ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
+
+:ref:`Task Flow Workflow <doc--workflows--task-flow>`
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

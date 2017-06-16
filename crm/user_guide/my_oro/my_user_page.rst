@@ -6,6 +6,12 @@ My User
 .. contents:: :local:
    :depth: 3
 
+Navigation
+----------
+
+In the user menu that resides below your username in the upper-right corner of the application, click **My User**.
+
+.. image:: ../img/intro/user_menu.png
 
 Description
 -----------
@@ -42,7 +48,7 @@ In the upper-right part of the page there is the following set of action buttons
 
   :guilabel:`Assign Event`—Click this action button to assign an event. See the :ref:`Assign an Event <doc-my-user-actions-event>` action description.
 
-  :guilabel:`Edit Menus`—Click this action button to configure the main menu. See the :ref:`Assign an Event <doc-my-user-actions-configure-menus>` action description.
+  :guilabel:`Edit Menus`—Click this action button to configure the main menu. See the :ref:`My Menus Configuration <doc-my-user-actions-configure-menus>` action description.
 
   :guilabel:`Assign Task`—Click this action button to assign a task. See the :ref:`Assign a Task <doc-my-user-actions-task>` action description.
 
@@ -248,6 +254,7 @@ This section contains information about your tasks and opened cases.
 
 |
 
+.. _doc-my-user-view-page-activity-tasks:
 
 Tasks Subsection
 ~~~~~~~~~~~~~~~~
@@ -257,7 +264,7 @@ Tasks are activities that need to be accomplished. Keeping track on tasks helps 
 
 You can filter tasks by a variety of parameters. To open the task view page, click this task in the grid.
 
-For more information about tasks management, see the :ref:`Tasks <user-guide-activities-tasks>` guide.
+For more information about tasks management, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
 
 Cases Subsection

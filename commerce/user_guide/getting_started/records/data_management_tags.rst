@@ -26,17 +26,13 @@ different from :ref:`editing other properties from a grid <doc-grids-actions-rec
 
 2. Select one or several of the existing tags from the list, and/or enter a new tag in the field.
 
-  |TagsfGrid|
+   |TagsfGrid|
   
 3. Start entering the tag, and only matching tags will be left in the selector.
   
 4. If you have entered a new tag, it will also appear in the selector. Select it to add. This way you can add one or several tags that contain one or several words.
-
-   |
   
    |TagsfGrid1|
-
-   |
   
 5. Confirm the action.
 

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc-widgets-today-calendar:
 
 
@@ -8,10 +6,7 @@ Today's Calendar Widget
 
 This widget displays events planned for today and your tasks due today. The events displayed may belong to your personal calendar or other calendars that you watch. The list of calendars that you can see is the same as selected on the :ref:`My Calendar <doc-my-oro-calendar>` page.
 
-
-
 .. image:: /user_guide/img/getting_started/widgets/today_calendar/widget_calendar.png
-
 
 Widget's Header
 ---------------
@@ -48,9 +43,7 @@ Click the |IcSettings| **Configure** icon to set parameters for a widget.
 
 To change a widget title, clear the **Use default** check box, and enter a new widget name into the **Widget title** field.
 
-
 .. image:: /user_guide/img/getting_started/widgets/today_calendar/widgets_today_calendar_configuration.png
-
 
 
 Calendar
@@ -81,12 +74,13 @@ An icon in the upper-left corner of the event cell represents the invitation sta
 The |IcReminder| **Reminder** icon in the upper-left corner appears when the event owner configured sending reminders about the event.
 
 
-Manage Events
-^^^^^^^^^^^^^
+Manage Events / Tasks
+^^^^^^^^^^^^^^^^^^^^^
 
 From the calendar you can add, view a calendar event, respond to it, edit and delete it, start a hangout meeting, remove a context from a calendar event.
 
 See the action descriptions:
+
 
 - :ref:`Add a Calendar Event <doc-activities-events-actions-add>`
 - :ref:`View a Calendar Event <doc-activities-events-actions-view>`
@@ -97,9 +91,19 @@ See the action descriptions:
 - :ref:`Start a Hangout Meeting <doc-activities-events-actions-hangout>`
 - :ref:`Remove a Context from a Calendar Event <doc-activities-events-actions-contextdel>`
 
+You can also view, edit, and delete tasks. See the action descriptions:
+
+- :ref:`View a Task <doc-activities-tasks-actions-view>`
+- :ref:`Edit a Task <doc-activities-tasks-actions-edit>`
+- :ref:`Delete a Task <doc-activities-tasks-actions-delete>`
+
+
+
 
 See Also
 --------
+
+Calendar events:
 
 :ref:`Calendar Events <doc-activities-events>`
 
@@ -110,6 +114,30 @@ See Also
 :ref:`Calendar Event View Page <doc-activities-events-view-page>`
 
 :ref:`My Calendar Page <doc-my-oro-calendar>`
+
+
+Tasks:
+
+:ref:`Tasks Overview <doc-activities-tasks>`
+
+:ref:`Manage Tasks <doc-activities-tasks-actions>`
+
+:ref:`Tasks Grid <doc-activities-tasks-grid>`
+
+:ref:`Task View Page <doc-activities-tasks-view-page>`
+
+:ref:`My Tasks <doc-my-oro-tasks>`
+
+:ref:`My Calendar Page <doc-my-oro-calendar>`
+
+:ref:`Tasks List Sidebar Widget <doc-widgets-sidebar-task-list>`
+
+:ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
+
+:ref:`Task Flow Workflow <doc--workflows--task-flow>`
+
+
+
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

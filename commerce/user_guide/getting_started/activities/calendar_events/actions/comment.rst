@@ -24,19 +24,11 @@ To comment on a Calendar Event when viewing the event details:
 
 4. In the **Comments** section, click the :guilabel:`Add Comment` button in the lower-right corner.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/events_comment.png
-
-   |
 
 #. In the **Add Comment** dialog box, enter your comment. If rich text functionality is enabled for you, you can format your comment in the editor. You can also add an attachment to your comment.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_comment_dialog.png
-
-   |
 
 #. Click the :guilabel:`Add` button.
 
@@ -58,29 +50,17 @@ You can add a comment to a calendar event directly from the view page of a relat
 2. In the **Activity** section, choose a calendar event to comment, and click it to see details.
 #. Click the :guilabel:`Add Comment` button in the lower-right corner.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/events_comment_fromactivity.png
-
-   |
 
 #. In the **Add Comment** dialog box, enter your comment. If rich text functionality is enabled for you, you can format your comment in the editor. You can also add an attachment to your comment.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_comment_dialog.png
-
-   |
 
 #. Click the :guilabel:`Add` button.
 
    Your comment appears in the **Comments** section of the calendar event details.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/events_comment_fromactivity2.png
 
-   |
-
-.. include:: /user_guide/include_images.rst
+.. include::  /user_guide/include_images.rst
    :start-after: begin

@@ -42,19 +42,11 @@ From the Call Grid
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. Review the call details.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid2.png
-
-   |
 
 
 From the Related Entity View Page
@@ -67,19 +59,11 @@ Users who are owners of a call and entity records that are specified in the call
 
     - To view the call log on the dedicated view page, click the ellipsis menu at the right end of the corresponding row and then click |IcView| **View Call log**.
 
-      |
-
       .. image:: /user_guide/img/getting_started/activities/calls_view_fromactivities1.png
-
-      |
 
     - To preview a call log on the current page, click the call row.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromactivities2.png
-
-   |
 
 
 For the description of call log fields, see :ref:`Call View Page <doc-activities-calls-view-page>`.
@@ -97,11 +81,7 @@ From the Call Grid
 
 2. In the grid on the **Calls** page, click the ellipsis menu at the right end of the corresponding row and then click the |IcEdit| **Edit** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_edit_fromgrid.png
-
-   |
 
 3. Update call details as required. For the description of call log fields, see :ref:`Call View Page <doc-activities-calls-view-page>`.
 
@@ -116,11 +96,7 @@ From the Call View Page
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. On the call view page, click the :guilabel:`Edit` button in the upper-right corner of the page.
 
@@ -141,20 +117,12 @@ Users who are owners of a call and entity records that are specified in the call
 1. On the entity record view page, click **Activity**.
 2. In the **Activity** section, choose a call log that you want to edit, click the ellipsis menu at the right end of the corresponding row and then click |IcEdit| **Update Call log**.
 
-   |
-
      .. image:: /user_guide/img/getting_started/activities/calls_edit_fromactivities0.png
-
-   |
 
 3. In the dialog that appears, update call details as required. For the description of call log fields, see :ref:`Call View Page <doc-activities-calls-view-page>`.
 4. Click :guilabel:`Update Call`.
 
-    |
-
     .. image:: /user_guide/img/getting_started/activities/calls_edit_fromactivities1.png
-
-    |
 
 .. _doc-activities-calls-actions-contextadd:
 
@@ -172,21 +140,13 @@ From the Call View Page
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. On the **Log call** page, click the :guilabel:`Add Context` button in the upper-right corner of the page.
 
 4. In the **Add Context Entity** dialog box, select an entity that you wish to add as a call context. To do this, click the arrow next to the entity name in the upper-left corner of the dialog box, and select the required entity from the list.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/call_contextadd1.png
-
-   |
 
 
 5. In the main grid of the dialog box, click the required record.
@@ -209,11 +169,7 @@ You can add more contexts to a call directly from the related entity view page.
 1. On the entity record view page, click **Activity**.
 2. In the **Activity** section, choose a call log that you want to add context to, click the ellipsis menu at the right-hand end of the corresponding row and then click |IcContext| **Add Context**.
 
-      |
-
       .. image:: /user_guide/img/getting_started/activities/calls_context_fromactivities1.png
-
-      |
 
 3. Continue as described in steps 4–5 of the :ref:`Add Context to a Call from the Call View Page <doc-activities-calls-actions-contextadd-viewpage>` action description.
 
@@ -221,11 +177,7 @@ You can add more contexts to a call directly from the related entity view page.
 
 You will see the added context in the second row of the call details.
 
-      |
-
       .. image:: /user_guide/img/getting_started/activities/call_contextadd4.png
-
-      |
 
 .. _doc-activities-calls-actions-contextdel:
 
@@ -241,19 +193,11 @@ From the Call View Page
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. On the **Log call** page, find the context that you want to remove in upper-left corner of the page, under the call log name. Click the **x** icon next to it.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_context_del.png
-
-   |
 
 
 From the Related Entity View Page
@@ -267,11 +211,7 @@ You can remove contexts of a call directly from the related entity view page.
 2. In the **Activity** section, choose a call log that you want to remove context from, and click it to see the details.
 3. Find the context that you want to remove in the second row of the call log details, and click the **x** icon next to it.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_context_del_fromactivities1.png
-
-   |
 
 
 .. _doc-activities-calls-actions-share:
@@ -293,21 +233,13 @@ Depending on you application settings, you can share call logs with other users,
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. On the **Log call** page, click the :guilabel:`Share` button in the upper-right corner of the page.
 
 4. In the **Share with** field within the **Sharing Settings** dialog box, start typing the name of the user / business unit / organization that you want to share this call log with. When you see a suggestion in the drop-down list, click it to select.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_share_2.png
-
-   |
 
    As soon as you click the name, it will appear on the **Already shared with** list.
 
@@ -315,15 +247,11 @@ Depending on you application settings, you can share call logs with other users,
 
    Alternatively, you can click the |BGotoPage| **List** icon to open a list of all records that you can share the call log with.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_share_4.png
 
-   |
+   In the **Share With** dialog box, select the entity that you wish to share this call log with. To do this, click the arrow next to the entity name in the upper-left corner of the dialog box, and select the required entity from the list.
 
-    In the **Share With** dialog box, select the entity that you wish to share this call log with. To do this, click the arrow next to the entity name in the upper-left corner of the dialog box, and select the required entity from the list.
-
-    In the main grid of the dialog box, select the check boxes in front of  users / business units / organizations you want to share the call log with, and click the :guilabel:`Add`.
+   In the main grid of the dialog box, select the check boxes in front of  users / business units / organizations you want to share the call log with, and click the :guilabel:`Add`.
 
 5. Click the :guilabel:`Apply` button.
 
@@ -341,7 +269,7 @@ Unshare a Call
 .. important::
    Enterprise Edition only.
 
-When you want to stop sharing a call with users / business units / organizations, perform as follows:
+To stop sharing a call with users / business units / organizations:
 
 1. In the main menu, navigate **Activities>Calls**.
 
@@ -349,11 +277,7 @@ When you want to stop sharing a call with users / business units / organizations
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. On the **Log call** page, click the :guilabel:`Share` button in the upper-right corner of the page.
 
@@ -382,21 +306,13 @@ From the Call View Page
 
    Alternatively, you can click the ellipsis menu at the right end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_view_fromgrid.png
-
-   |
 
 3. On the **Log call** page, click **Comments**.
 
 4. In the **Comments** section, click the :guilabel:`Add Comment` button in the lower-right corner.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_comment.png
-
-   |
 
 
 5. In the **Add Comment** dialog, enter your comment. If rich text functionality is enabled for you, you can format you comment in the editor according to your liking. You can also add an attachment to you comment.
@@ -422,11 +338,7 @@ You can comment a call directly from the view page of a related entity.
 2. In the **Activity** section, choose a call log which you want to comment, and click it to see details.
 3. Click the :guilabel:`Add Comment` button in the lower-right corner.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_comment_fromactivity.png
-
-   |
 
 4. Continue as described in steps 5–6 of the :ref:`Add Comment to a Call from the Call View Page <doc-activities-calls-actions-comment-viewpage>` action description.
 
@@ -453,11 +365,7 @@ From the Calls Grid
 
 2. On the **Calls** page, click the :guilabel:`Log Call` button in the upper-right corner of the page.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_log_grid0.png
-
-   |
 
 3. Click **Log call**, and specify the following information:
 
@@ -489,27 +397,15 @@ By logging a call from a record view page, you specify that this record relates 
 
    - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Log Call** on the list.
 
-     |
-
      .. image:: /user_guide/img/getting_started/activities/calls_actions_log_related0.png
-
-     |
 
    - Find the **Phone** / **Phones** field, point to a specified phone number, and click the **Log Call** icon that appears next to it.
 
-     |
-
      .. image:: /user_guide/img/getting_started/activities/calls_actions_log_related1.png
-
-     |
 
 2. In the **Log Call** dialog box, specify the required data. The description of the fields can be found in steps 4–5 of the :ref:`Log a Call from the Calls Grid <doc-activities-calls-actions-log-grid>` action description.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_actions_log_related.png
-
-   |
 
 3. Click the :guilabel:`Log Call` button.
 
@@ -543,19 +439,11 @@ From the Calls Grid
 
 2. On the **Calls** page, click the :guilabel:`Log Call` button in the upper-right corner of the page.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_log_grid0.png
-
-   |
 
 3. On the **Log call** page, specify the call details (see steps 4–5 of the :ref:`Log a Call from the Calls Grid <doc-activities-calls-actions-log-grid>`), and click the :guilabel:`Start a Hangout` button in the upper-right corner of the page.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_make0.png
-
-   |
 
 .. hint::
    If you do not specify a phone number in the **Phone Number** field, you can still start a Hangouts call. In this case, instead of immediately starting a call to the specified phone number, Hangouts will suggest sending invites or a call link to the person.
@@ -569,11 +457,7 @@ By logging a call from a record view page, you specify that this record relates 
 
    - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Log Call** on the list.
 
-     |
-
      .. image:: /user_guide/img/getting_started/activities/calls_actions_log_related0.png
-
-     |
 
    - Find the **Phone** / **Phones**  field, point to a specified phone number, and click it to select. The **Hangouts Call** and **Log Call** icons appear next to it.
 
@@ -584,31 +468,18 @@ By logging a call from a record view page, you specify that this record relates 
 
      Click the **Log Call** icon to specify call details and then start a call.
 
-     |
-
      .. image:: /user_guide/img/getting_started/activities/calls_make_related2.png
-
-     |
 
    - Find the **Emails** field, point to a specified email address, and click the **Hangouts Call** icon that appears next to it. A Hangouts call will start immediately. The **Log Call** dialog box  appears in the background.
 
      .. note::
         You can start a Hangouts call this way whenever in the system you see an email address on the record view page. However, the **Log Call** dialog appears only for the records of an entity for which the **Calls** activity is enabled.
 
-
-     |
-
      .. image:: /user_guide/img/getting_started/activities/calls_make_related3.png
-
-     |
 
 4. If you used **Log Call** action button or icon, in the **Log Call** dialog box, specify the required data (see steps 4–5 of the :ref:`Log a Call from the Calls Grid <doc-activities-calls-actions-log-grid>` guide), and click the **Start** button next to the **Hangouts** label to initiate a hangout call.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/calls_make_related4.png
-
-   |
 
 
 

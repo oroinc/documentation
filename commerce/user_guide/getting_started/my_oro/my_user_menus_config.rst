@@ -22,11 +22,7 @@ This page contains a list of menus that you can configure.
 
 - **application_menu**—This is the main menu of the application (also called ``navigation bar`` in the application settings). Via it you can navigate through Oro application. It is always displayed on every page. Subject to the configuration, it may be displayed horizontally or vertically. In the latter case, the menu items are displayed as icons. For more information, see :ref:`Main Menu <user-guide-navigation-menu>`.
 
-  |
-
   .. image:: /user_guide/img/getting_started/navigation/menu/nav_bar_top.png
-
-  |
 
 - **shortcuts**—You can find this menu in the top panel of the application, next to the organization name. Via it you can quickly perform common actions from anywhere. It is always displayed on every page. For more information, see :ref:`Shortcuts <user-guide-getting-started-shortcuts>`.
 
@@ -34,24 +30,14 @@ This page contains a list of menus that you can configure.
 
   .. image:: /user_guide/img/getting_started/navigation/panel/shortcut_full.png
 
-  |
-
 
 - **usermenu**—This is the menu that you can access by clicking on your name in the upper-right corner of the application. Via it you can access your profile, emails, tasks and events. It is always displayed on every page. For more information, see :ref:`User Menu <user-guide-getting-started-user-menu>`.
 
-  |
-
   .. image:: /user_guide/img/getting_started/intro/user_menu.png
-
-  |
 
 - **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Add and Manage Calendar Items Displayed <doc-activities-events-manage-calendar-items>`.
 
-  |
-
   .. image:: /user_guide/img/getting_started/my_oro/calendar_menu.png
-
-  |
 
 .. _doc-menus-actions-viewmenu:
 
@@ -143,11 +129,7 @@ Add a Menu Item
 
 2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Menu Item` on the list.
 
-   |
-
    .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_createmenuitem.png
-
-   |
 
    The created menu item will appear as the last one on the list of children of the same parent item. You can move it to the position that you need as described in the :ref:`Rearrange Menu Items / Dividers <doc-menus-actions-draganddrop>` action description.
 
@@ -157,11 +139,7 @@ Add a Menu Item
 
      Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-     |
-
      .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_create_translations.png
-
-     |
 
 
    - **URI**—An web address of the page or resource that this menu item opens.
@@ -178,11 +156,7 @@ Add a Menu Item
 
      Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-   |
-
    .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_create_general.png
-
-   |
 
 4. Click :guilabel:`Save` or, if you want to start immediately create another menu item, :guilabel:`Save and New` in the upper-right corner of the page.
 
@@ -227,21 +201,13 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 
 - If an arrow points to the place between items, that is where the moved item will be placed.
 
-  |
-
   .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_d&dsame.png
-
-  |
 
 
 
  - If and arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
 
-  |
-
   .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_d&dunder.png
-
-  |
 
 
 .. _doc-menus-actions-delete:
@@ -277,7 +243,7 @@ If you do not want one of the default menu items to be visible on the interface,
 
     - You cannot hide non-default menu items.
 
-To hide a menu item, perform as follows:
+To hide a menu item:
 
 1. In the left panel, click a menu item that you want to hide.
 
@@ -292,7 +258,7 @@ To hide a menu item, perform as follows:
 Show a Menu Item
 ~~~~~~~~~~~~~~~~
 
-To show a previously hidden menu item, perform as follows:
+To show a previously hidden menu item:
 
 1. In the left panel, click a menu item that you want to show.
 

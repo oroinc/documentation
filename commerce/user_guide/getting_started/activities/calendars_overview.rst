@@ -14,7 +14,7 @@ defined for the whole organization or system.
 Tasks and Calendar Events
 -------------------------
 
-You can :ref:`create task <user-guide-activities-tasks>` and 
+You can :ref:`create task <doc-activities-tasks>` and
 :ref:`add calendar events <doc-activities-events-actions-add>`.
 
 Each task/event will have an owner (user, who has created it and other users, subject to roles and permissions defined) 
@@ -51,8 +51,6 @@ Define the following fields:
 
 For example, we have created a System Calendar "Sales update meeting" that will displayed at the yellow background:
 
-      |
-  
 .. image:: /user_guide/img/getting_started/calendars/create_system_cal.png
 
 
@@ -83,8 +81,6 @@ In order to add an event to a calendar:
 For example, we have created an event "Weekly report" event that will take place on July 16, 2015 from 3:35 to 4:35 PM.
 The event will be highlighted as defined for the calendar by default.
 
-     |
- 
 .. image:: /user_guide/img/getting_started/calendars/create_system_cal_event.png
 
 
@@ -118,7 +114,7 @@ A convenient way to see and manage available tasks and calendar events is the Us
 
 1. In the user menu (near the user name), click **My Calendar**.
 
-|UserMenu|
+   |UserMenu|
 
 2. The calendar will appear.
 
@@ -148,8 +144,6 @@ users whose calendars are available to you will be in the drop-down.
 
 For example, we have added calendar of Ellen Rowell. It has appeared in the items list and in the calendar. 
 Events from calendar of Ellen Rowell are highlighted blue.
-
-      |
 
 .. image:: /user_guide/img/getting_started/calendars/user_calendar_plus.png
 

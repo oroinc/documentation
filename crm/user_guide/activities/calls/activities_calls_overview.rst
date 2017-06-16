@@ -3,7 +3,7 @@
 Calls
 =====
 
-.. .. include:: ../activities_overview.rst
+.. include:: ../activities_overview.rst
    :start-after: start-include-calls
    :end-before: end-include-calls
 

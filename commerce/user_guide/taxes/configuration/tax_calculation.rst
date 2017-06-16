@@ -44,21 +44,9 @@ To customize tax calculation in OroCommerce:
 5. In **Calculator** section:
 
    a) With **Start Calculation With**, specify the formula for tax calculation. Tax is calculated either for unit price or for a product total price. Formula for *Unit price* is:
-
-      |
-
       tax = [ ( unit price * tax rate ) * unit quantity ] + ... + [ ( unit price * tax rate ) * unit quantity ].
-
-      |
-
       Formula for *Row Total* is:
-
-      |
-
       tax = [ (unit price * unit quantity) * tax rate ] + ... + [ (unit price * unit quantity) * tax rate ].
-
-      |
-
    b) With **Start Calculation On** option, select when the rounding off shall happen. For **Item**, the taxable amount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up.
 
    c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax amount is subtracted from unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.

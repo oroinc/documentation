@@ -156,7 +156,7 @@ Select Columns to Display
 
 You can define which columns to show in the grid.
 
-To do this, perform as follows:
+To do this:
 
 1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
 
@@ -189,7 +189,7 @@ Change Columns Order
 
 You can define the order of columns in the grid.
 
-To do this, perform as follows:
+To do this:
 
 1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
 
@@ -463,7 +463,7 @@ Alternatively, you can set a grid view as default during its creation (see step 
 Rename a Grid View
 ~~~~~~~~~~~~~~~~~~
 
-To rename a grid view, perform as follows:
+To rename a grid view:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Rename**.
@@ -488,7 +488,7 @@ To rename a grid view, perform as follows:
 Share a Grid View
 ~~~~~~~~~~~~~~~~~
 
-To share a grid view with other users, perform as follows:
+To share a grid view with other users:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Share with Others**.
@@ -507,7 +507,7 @@ Other users will see your customized grid view in their grid view selector.
 Unshare a Grid View
 ~~~~~~~~~~~~~~~~~~~
 
-To unshare a grid view, perform as follows:
+To unshare a grid view:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **UnShare**.
@@ -520,7 +520,7 @@ Delete a Grid View
 
 .. warning:: You can delete only custom grid views.
 
-To delete a grid view, perform as follows:
+To delete a grid view:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Delete**.
@@ -674,7 +674,7 @@ To delete a record, find the record in the grid, click the ellipsis menu at the 
 Delete Multiple Records
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-To delete several records, perform as follows:
+To delete several records:
 
 1. In the grid, select the check boxes in front of the records you want to delete.
 
@@ -694,7 +694,7 @@ Merge Records
 
 .. important:: Currently, merge can only be done for  :ref:`accounts <user-guide-accounts>`.
 
-To merge records, perform as follows:
+To merge records:
 
 1. In the grid, select the check boxes in front of the records you want to merge.
 

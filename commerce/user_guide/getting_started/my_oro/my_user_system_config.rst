@@ -219,8 +219,6 @@ Email Configuration
 
  Click the :guilabel:`Check Connection/Retrieve Folders` button to check whether the specified synchronization settings are correct and to retrieve the current folder structure of the user's remote mailbox.
 
- |
-
 **Email Threads**
 
  +--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

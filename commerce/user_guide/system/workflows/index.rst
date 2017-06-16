@@ -39,6 +39,8 @@ The following system workflows are provided out of the box in OroCommerce:
 * :ref:`RFQ Backoffice <system--workflows--rfq-backoffice-workflow>`
 
 * :ref:`RFQ Frontoffice <system--workflows--rfq-frontoffice-workflow>`
+
+* :ref:`Task Flow <doc--workflows--task-flow>`
   
 
 .. _user-guide--system--workflow-management-steps-transitions:
@@ -375,3 +377,4 @@ See the following sections to get more information about the system workflows in
    rfq_frontoffice
    checkout
    alternative_checkout
+   task_flow

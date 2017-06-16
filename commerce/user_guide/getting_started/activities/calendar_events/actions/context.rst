@@ -27,18 +27,12 @@ To add a context to an existing calendar event when viewing the event details:
 
 4. In the **Add Context Entity** dialog box, select an entity of the related (context) record from the list in the upper-left corner of the dialog box.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/event_contextadd1.png
-
-   |
 
 
 5. In the main grid of the dialog box, click the required record.
 
    The context record is added and is shown on the event view page under the calendar event name.
-
-   |
 
    .. image:: /user_guide/img/getting_started/activities/event_contextadd2.png
 
@@ -54,29 +48,17 @@ Add more records as a context to a calendar event directly from one of the relat
 1. On the entity record view page, click **Activity**.
 2. In the **Activity** section, click the ellipsis menu at the end of the row with the event you want to add context to and then click |IcContext| **Add Context**.
 
-      |
-
       .. image:: /user_guide/img/getting_started/activities/events_addcontext_fromactivities1.png
-
-      |
 
 4. In the **Add Context Entity** dialog box, select an entity of the related (context) record from the list in the upper-left corner of the dialog box.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/event_contextadd1.png
-
-   |
 
 5. In the main grid of the dialog box, click the required record.
 
    The context record is added and is shown in the calendar event details.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/events_contextadd4.png
-
-   |
 
 From the My Calendar page or Today's Calendar Widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,11 +69,7 @@ To add a context to an existing calendar event from a calendar (in Today's calen
 2. On the **View Event** calendar card, click :guilabel:`Edit`.
 3. In the context field, start typing the name of the record that should be linked to the event as a context. The list of suggestions shows up automatically and is dynamically filtered as you type. Click on the suggested item to add it to a context. Alternatively, to add the highlighted suggested item, press **Enter**.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_edit.png
-
-   |
 
 Remove a Context from a Calendar Event
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -111,11 +89,7 @@ To delete a calendar event's context when viewing the event details:
 
 3. On the calendar event view page, under the calendar event name in the upper-left corner of the page, click the **x** icon next to the context that you want to remove.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/events_context_del.png
-
-   |
 
 .. finish_remove_context
 
@@ -133,11 +107,7 @@ To remove a calendar event's context directly from the related entity view page:
 
 3. In the event details, click the **x** icon next to the context that you would like to remove.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/events_context_del_fromactivities1.png
-
-   |
 
 From the My Calendar page / Today's Calendar Widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,11 +117,7 @@ To delete a calendar event's context from the calendar in Today's calendar widge
 1. Click the event in the calendar.
 2. On the **View Event** calendar card, click the **x** icon next to the context that you would like to remove.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_contextdelete.png
 
-   |
-
-.. include:: /user_guide/include_images.rst
+.. include::  /user_guide/include_images.rst
    :start-after: begin

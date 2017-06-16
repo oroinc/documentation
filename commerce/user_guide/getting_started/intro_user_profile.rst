@@ -268,7 +268,7 @@ The functionality can be used to synchronize any IMAP/SMTP server with your mail
 
   - Save the user profile.
 
-|EmailSyncYahoo|
+    |EmailSyncYahoo|
 
 Syncing with Gmail
 """"""""""""""""""

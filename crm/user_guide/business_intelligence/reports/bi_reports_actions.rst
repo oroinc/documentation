@@ -81,7 +81,7 @@ Columns
 Add a Column
 """"""""""""
 
-To add a column, perform as follows:
+To add a column:
 
 1. Specify the required data:
 
@@ -180,7 +180,7 @@ The field you have defined will appear in the **COLUMN** grid.
 Edit a Column
 """""""""""""
 
-To edit a column, perform as follows:
+To edit a column:
 
 1. Click the |IcEdit| **Edit** icon at the right end of the corresponding row.
 2. Perform required changes as described in step 1 of the :ref:`Add a Column <doc-reports-actions-create-columns-add>` action description.

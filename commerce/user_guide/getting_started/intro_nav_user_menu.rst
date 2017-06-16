@@ -37,7 +37,7 @@ Click the :guilabel:`Compose` button to create a new email.
 My Tasks
 --------
 
-On this page you can see all the :ref:`tasks <user-guide-activities-tasks>` that have been assigned to you.
+On this page you can see all the :ref:`tasks <doc-activities-tasks>` that have been assigned to you.
 
 My Calendar
 -----------

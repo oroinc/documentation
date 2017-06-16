@@ -56,8 +56,6 @@ RFQ Statuses
 
 .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQsStatusView.png
 
-|
-
 .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQsStepsView.png
 
 
@@ -100,8 +98,6 @@ As an illustration, let us go through a sample flow to see RFQ Frontoffice in ac
 1. A customer user creates an RFQ in the front store. Once the RFQ is sent, its customer status is marked as Submitted.
    
    .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQButton.png
-
-   |
 
    .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQCreate.png
 

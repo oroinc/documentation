@@ -47,7 +47,7 @@ In the upper-right part of the page there is the following set of action buttons
 
 **More Actions** drop-down: 
 
-  :guilabel:`Send Email`—Click this action button to import fields into the entity. See the :ref:`Send an Email <doc-user-management-users-actions-email>` action description.
+  :guilabel:`Send Email`—Click this action button to send email related to the entity. See the :ref:`Send an Email <doc-user-management-users-actions-email>` action description.
 
   :guilabel:`Log Call`—Click this action button to log or make a call. See the :ref:`Log or Make a Call <doc-user-management-users-actions-call>` action description.
 
@@ -237,7 +237,8 @@ For a phone activity, you can call the user via Google Hangouts, if such functio
 |
 
 
-For more information about activities, see the `Activities <../../user-guide/activities/activities-overview>`__ guide.
+
+For more information about activities, see the :ref:`Activities <user-guide-activities>` guide.
 
 
 Additional Information Section
@@ -261,7 +262,7 @@ Tasks are activities that need to be accomplished by a user. Keeping track on ta
 
 You can filter tasks by a variety of parameters. To open the task view page, click this task in the grid.
 
-For more information about tasks management, see the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
+For more information about tasks management, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
 
 Cases Subsection
@@ -272,7 +273,7 @@ Cases are issues, problems or failures reported by customers or found internally
 
 You can filter cases by a variety of parameters. To open the case view page, click this case in the grid.
 
-For more information about cases management, see the `Create Case <../../user-guide/activities/activities-create-case>`__ guide.
+For more information about cases management, see the :ref:`Cases <user-guide-activities-cases>` guide.
 
 
 

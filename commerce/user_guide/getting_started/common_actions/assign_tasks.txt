@@ -58,14 +58,12 @@ changed his work.
 We have created a relevant task on the View page of Jeffrey Maynard's contact record.  The task must be done within
 a week (till April 5th). An email will be sent to Ellen Rowell one day before the due date.
 
-      |
-
 .. image:: /user_guide/img/common/activities/add_task_ex.png
 
 4. Click the :guilabel:`Create Task` button and the Task will be added.
 
 
-.. _user-guide-activities-tasks-assign:
+.. _doc-activities-tasks-assign:
 
 Assign a Task to a User
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,8 +80,6 @@ Assign a Task to a User
 For example, we also need Ellen Rowell to find a new contact at Cal Stereo, where Mr. Jeffrey Maynard used to work.
 The task has no specific due date, but its priority is high.
 
-      |
-
 .. image:: /user_guide/img/common/activities/assign_task.png
 
 4. Click the :guilabel:`Create Task` button and the task will be added.
@@ -97,8 +93,6 @@ Create a Task from the Tasks Grid
 2. Click the :guilabel:`Create Task` button.
 
 3. The "Create Task" form will appear.
-
-      |
 
 .. image:: /user_guide/img/common/activities/create_task.png
 
@@ -121,8 +115,6 @@ View and Manage Tasks
 - All the events added for a record are displayed and can be reached from the *Record Activities* section on the
   View page of this record:
 
-  |
-
 .. image:: /user_guide/img/common/activities/add_task_view.png
 
 
@@ -142,8 +134,6 @@ From any of the grids above, you can manage the tasks using the action icons:
 
 - Get to the task details page:  |IcView|
 
-      |
-
 Tasks Assigned to You
 """""""""""""""""""""
 
@@ -156,14 +146,10 @@ Once you have logged into the system, you can see the Task grid in "My Tasks" pa
 
 Tasks, for which a due date has been defined will also appear in the "My Calendar" page:
 
-      |
-
 .. image:: /user_guide/img/common/activities/my_tasks_cal.png
 
 
 Click on the task in the calendar to get to its information tab. Use the buttons at the bottom to manage the task.
-
-      |
 
 .. image:: /user_guide/img/common/activities/my_tasks_info.png
 

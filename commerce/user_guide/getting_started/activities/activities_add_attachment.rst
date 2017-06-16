@@ -27,11 +27,7 @@ Once a record has been created, an attachment can be added from its View page.
 
 2. Click the :guilabel:`Add Attachment` action button.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/add_attachment.png
-
-   |
 
 3. In the form emerged:
 
@@ -40,8 +36,6 @@ Once a record has been created, an attachment can be added from its View page.
    - Leave a comment, if necessary.
 
    - Define the attachment owner. Only the owner and users with whose roles that enable management/viewing of the owner's attachments will be able to manage/view the attachment.
-
-   |
 
    .. image:: /user_guide/img/getting_started/activities/add_attachment_form.png
 

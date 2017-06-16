@@ -36,11 +36,7 @@ There are several ways to get to a grid.
 - Click the grid link on the entity record :ref:`view page <user-guide-ui-components-view-pages>`
   or :ref:`create / edit page <user-guide-ui-components-create-pages>`.
 
- |
-
  .. image:: /user_guide/img/getting_started/data_management/grid/grid_from_view.png
-
- |
 
 .. hint::
 
@@ -143,15 +139,11 @@ Select Columns to Display
 
 You can define which columns to show in the grid.
 
-To do this, perform as follows:
+To do this:
 
 1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_configure.png
-
-   |
 
 
 2. To show / hide a column in the grid, in the **Grid Settings** menu, select / clear the corresponding check box in the **Show** column.
@@ -159,11 +151,7 @@ To do this, perform as follows:
 
    .. hint:: You can use a search field to quickly find the required item.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridsettingsmenu.png
-
-   |
 
 .. important::
     Some fields that an entity has may be unavailable as columns of the grid. The list of available fields is defined by the system administrator. If you are a system administrator, see the **Show on Grid** field of the :ref:`Other Entity Field Properties <doc-entity-fields-properties-other>`.
@@ -176,7 +164,7 @@ Change Columns Order
 
 You can define the order of columns in the grid.
 
-To do this, perform as follows:
+To do this:
 
 1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
 
@@ -272,19 +260,11 @@ Apply a Filter
 
    For text fields that can take any value, you can enter search words (or part of the word) and select from the list in front of it whether values that you select must contain these search phrase at any position or does not contain it at all, must start with it, end with it, etc.
 
-   |
-
    .. image:: /user_guide/img/getting_started/data_management/grid/grid_filters_define.png
-
-   |
 
    For conditions like 'Is Any Of' and 'Is Not Any Of,' enter search words separated by comma.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply1-2.png
-
-   |
 
 
    **Fields that can take limited values**
@@ -293,50 +273,29 @@ Apply a Filter
 
    You can click the empty text field to see the list of all available values.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply3.png
-
-   |
 
    **Dates and time**
 
    Click the date fields to select the date via the calendar menu. Click the time fields to select a time from the list.
 
-
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2.png
-
-   |
 
    In addition to selecting a strict calendar date, you can use variables that enable you to specify relative values, such as 'today,' 'start of the month,' etc.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2-2.png
-
-   |
 
 
    Also specify the condition of how to form your desired time range, whether it starts from the day and time that you specified, lays between set dates, etc.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2-3.png
-
-   |
 
 4. Click :guilabel:`Update`.
 
 .. important::
      If more than one filter are active, only the records that meet requirements of *all* selected filters are displayed.
 
-     |
-
      .. image:: /user_guide/img/getting_started/data_management/grid/grid_02.png
-
-     |
 
 .. _doc-grids-actions-reset:
 
@@ -369,11 +328,7 @@ Create a Grid View
 
 2. Click the **Options** link next to the grid view name, an then click **Save As**.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsaveas.png
-
-   |
 
 3. In the **Grid view** dialog box, provide the following information:
 
@@ -383,11 +338,7 @@ Create a Grid View
 
    **Set as default**—Select this check box to make the new grid view a default one. (The default grid view is what you see when you open a grid page.)
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewdialog.png
-
-   |
 
 4. Click the :guilabel:`Save` button.
 
@@ -432,7 +383,7 @@ Alternatively, you can set a grid view as default during its creation (see step 
 Rename a Grid View
 ~~~~~~~~~~~~~~~~~~
 
-To rename a grid view, perform as follows:
+To rename a grid view:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Rename**.
@@ -455,7 +406,7 @@ To rename a grid view, perform as follows:
 Share a Grid View
 ~~~~~~~~~~~~~~~~~
 
-To share a grid view with other users, perform as follows:
+To share a grid view with other users:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Share with Others**.
@@ -472,7 +423,7 @@ Other users will see your customized grid view in their grid view selector.
 Unshare a Grid View
 ~~~~~~~~~~~~~~~~~~~
 
-To unshare a grid view, perform as follows:
+To unshare a grid view:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **UnShare**.
@@ -485,7 +436,7 @@ Delete a Grid View
 
 .. warning:: You can delete only custom grid views.
 
-To delete a grid view, perform as follows:
+To delete a grid view:
 
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Delete**.
@@ -562,31 +513,17 @@ Inline Editing
 
    Alternatively, click the value itself twice.
 
-
-
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineedit.png
-
-   |
 
 3. Modify the value as required.
 
    Inline editors can be of different types. The simplest inline editor is a plain text field, where you can type the required value.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor.png
-
-   |
 
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
-   |
-
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor2.png
-
-   |
 
 4. Click the |IcSaveChanges| **Save Changes** icon to save a new value.
 
@@ -629,7 +566,7 @@ To delete a record, find the record in the grid, click the ellipsis menu at the 
 Delete Multiple Records
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-To delete several records, perform as follows:
+To delete several records:
 
 1. In the grid, select the check boxes in front of the records you want to delete.
 
@@ -647,7 +584,7 @@ Merge Records
 
 .. important:: Currently, merge can only be done for accounts.
 
-To merge records, perform as follows:
+To merge records:
 
 1. In the grid, select the check boxes in front of the records you want to merge.
 

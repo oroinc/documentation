@@ -92,8 +92,6 @@ View and Manage Calls
 
 - To see the details, click on the call title or the :guilabel:`+` to the left of it.
 
-      |
-
 From any of the grids above, you can manage the tasks using the action icons:
 
 - Delete the call: |IcDelete|

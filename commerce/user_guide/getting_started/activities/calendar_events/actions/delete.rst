@@ -16,9 +16,7 @@ To delete a calendar event or task when viewing a list of events:
 
 2. In the grid on the **Calendar Events** page, click the ellipsis menu at the end of the row of the event you would like to delete and then click the |IcDelete| **Delete** icon.
 
-
 .. image:: /user_guide/img/getting_started/activities/events_delete1.png
-
 
 3. In the **Deletion Confirmation** dialog box, click :guilabel:`Yes, Delete`.
 
@@ -29,9 +27,7 @@ From the Calendar Event View Page
 
 Alternatively, you can delete a calendar event from the event view page by clicking the :guilabel:`Delete` button in the upper-right corner of the event view page.
 
-
 .. image:: /user_guide/img/getting_started/activities/events_delete2.png
-
 
 From the Related Entity View Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,11 +50,7 @@ To delete a calendar event from a calendar (in Today's calendar widget or in you
 1. Click the event in the calendar.
 2. On the **View Event** calendar card, click :guilabel:`Delete`.
 
-   |
-
    .. image:: /user_guide/img/getting_started/activities/activities_events_actions_delete.png
-
-   |
 
 3. In the **Delete Confirmation** dialog box, click  :guilabel:`Yes, Delete`.
 
@@ -83,5 +75,5 @@ To delete a bulk of calendar events:
 
 .. finish_bulk
 
-.. include:: /user_guide/include_images.rst
+.. include::  /user_guide/include_images.rst
    :start-after: begin

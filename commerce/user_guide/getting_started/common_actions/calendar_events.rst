@@ -101,14 +101,10 @@ View and Manage Events
 - All the events  added  for a record are displayed and can be reached from the *Record Activities* section on the
   View page:
 
-  |
-
 .. image:: /user_guide/img/common/activities/add_event_view.png
 
 
 - To see the details, click on the event title or the :guilabel:`+` to the left from it.
-
-  |
 
 .. image:: /user_guide/img/common/activities/add_event_view_detailed.png
 

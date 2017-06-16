@@ -28,9 +28,7 @@ To combine conditions of any two filters you can use operators **"AND"** and **"
 
 The following sections provide detailed explanation of the filters with examples for different operators.
 
-      |
-
-|field_condition_and|
+ |field_condition_and|
 
 Field Conditions
 ----------------
@@ -44,27 +42,20 @@ To define a field condition:
 
   |field_condition|
 
-  |  
 
 - Click the *"Choose a field..."* link 
 
   |field_condition_click|
-
-  |
   
 - A drop-down will appear. At the top of the drop-down menu, you can see the name of the entity, for which the records are filtered. (In the example below it is a Contact). Below the entity name there is a list of all the  of the chosen entity. Below the list of fields, is a list of related entities (entities that have a relation with the filtered entity.)
   
   |field_condition_fields|
-
-  |
   
 - Choose a field that you want to use for the rule:
 
   - This can be a field of the chosen entity For example, we can filter Contact records by gender.
    
     |field_condition_defined|
-    
-    |
 
   - You can also choose a field of another entity, related to the one chosen.
     For example, if you want the list to contain only Contacts with address in California.
@@ -72,19 +63,15 @@ To define a field condition:
     To do so, scroll down the drop-down and choose this entity under the "Related Entities" header. 
 
     |field_condition_rel_ent|
- 
-    |
 
     The name of the entity (In our example it is  "Addresses") will appear at the top of the drop-down. 
   
     |field_condition_rel_ent_add|
 
-    |
-
   - You can also choose a field of another entity, related to the entity chosen in the "Related entities"
     section. For example, you can select only the contacts whose Address Owner has a specific Email.
 
-   |field_condition_rel_rel_ent|
+    |field_condition_rel_rel_ent|
 
 .. hint::
    
@@ -92,8 +79,6 @@ To define a field condition:
     are links. Each of these links contains a drop-down of possible values suitable for the specified field. 
 
     |field_condition_value|
-
-    |
 
 Activities
 ----------
@@ -112,13 +97,9 @@ To define the *"Activity"* setting:
 
     |activity_selector_1|
 
-    |
-
   - List if available activities to filter by. 
   
     |activity_selector_2|
-
-    |
   
   - Choose a field: select the field to filter by
 
@@ -139,8 +120,6 @@ To define the *"Data audit"* setting:
 - Choose if the condition should be valid for the records where the field has or hasn't been changed.
 
   |audit_selector_1|
-
-  |
   
 - Choose the date when the changes have/haven't been applied
   
@@ -190,14 +169,10 @@ To add a Segment to the filters:
 - Drag "Apply segment" to the box on the right, 
   
   |segments|
-  
-  |
 
 - Click "Choose segment" link and choose one of the Segment predefined in the system. 
  
   |segments_choose|
-
-  |
   
 Subject to the conjunction with the rest of conditions the list will now contain:
 
