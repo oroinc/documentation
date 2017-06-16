@@ -7,16 +7,15 @@ The drop-down user menu that resides below your username in the upper-right corn
 
 .. image:: ../img/intro/user_menu.png
 
-
-
 .. toctree::
    :maxdepth: 1
 
    my_user_page
    my_user_system_config
-   ../access_oro/access_oro_log_out
+   my_user_emails
+   my_user_tasks
    my_user_calendar
-   my_user_menus_config
+   ../access_oro/access_oro_log_out
 
 
 

@@ -18,7 +18,7 @@ You can add widgets in any combination and move them around the page creating a 
 
 Quick Launchpad
 
-Recent Emails
+:ref:`Recent Emails <doc-widgets-recent-emails>`
 
 :ref:`Today's Calendar <doc-widgets-today-calendar>`
 
@@ -65,10 +65,13 @@ Orders over time
 Purchase Funnel
 
 
+
 .. toctree::
        :maxdepth: 1
        :hidden:
 
        widgets_recent_calls
+       widgets_recent_emails
        widgets_sales
        widgets_today_calendar
+       widgets_sidebar_tasks

@@ -3,7 +3,8 @@
 Manage Calendar Events
 ======================
 
-This section aggregates information about the actions related to the calendar events. The topics below guide through the steps of the procedure for every action you can launch.
+Each topic of this section guides you through the steps required to perform one of the actions related to calendar events.
+As there are usually more than one way to start the same action, only the most straightforward way is described here. Follow the links at the end of the topics to learn about the alternative ways to start the action.
 
 .. contents::
    :local:
@@ -61,16 +62,18 @@ Get :ref:`more information on editing a calendar event from other perspectives <
 
 .. _doc-activities-events-actions-changetimeframe:
 
-Change a Calendar Event Time Frame in the Calendar
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Reschedule a Calendar Event
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can change the assigned time frame during the :ref:`editing of the calendar event <doc-activities-events-actions-edit-detailed>`, but you can also change in directly in the calendar.
 
 .. important:: By default, you can edit only those events that you own.
 
-When viewing a calendar in the **My Calendar** page on in the **Today's Calendar** widget, you can change the event time frame.
 
-Change the event start time by dragging the event to the new time slot: click the event in the calendar, hold the mouse button, and drag the event to the desired time.
+.. include:: actions/reschedule.rst
+   :start-after: begin_change_time
+   :end-before: finish_change_time
 
-Change the event duration by extending the event: hover over the bottom of the event box for **=** to show, and drag it to fill the desired time frame.
 
 .. _doc-activities-events-actions-delete:
 
@@ -134,52 +137,25 @@ Respond to a Calendar Event
 
 Get :ref:`more information about responding to a calendar event from other perspectives <doc-activities-events-actions-respond-detailed>`.
 
+
 .. _doc-activities-events-actions-hangout:
 
 Start a Hangout Meeting
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-If the event was planned as the Hangout meeting, you can join it from the calendar.
+If the event was planned as the Hangout meeting, you can join it from the calendar .
 
 .. important::
-   The Hangouts functionality must be enabled to allow making Hangout calls. Contact your administrator or see :ref:`Google Integration Settings <admin-configuration-integrations-google>` for more information.
+   The Hangouts functionality must be enabled to make Hangout calls possible. Contact your administrator or see :ref:`Google Integration Settings <admin-configuration-integrations-google>` for more information.
 
 .. tip::
    For more help on Hangouts calls, see `Hangouts Help <https://support.google.com/hangouts#topic=6386410>`__ on google.com.
 
+.. include:: actions/hangout.rst
+   :start-after: begin_hangout
+   :end-before: finish_hangout
 
-From the Calendar Event View Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To start a Hangout call from the Calendar Event view page:
-
-1. In the main menu, navigate to **Activities>Calendar Events**.
-
-2. In the grid of the **Calendar Events** page, click the required event.
-
-   Alternatively, you can click the ellipsis menu at the end of the corresponding row and then click the |IcView| **View** icon.
-
-3. On the calendar event view page, click the :guilabel:`Start Hangout` button in the upper-right corner of the page.
-
-   |
-
-   .. image:: ../../img/activities/activities_events_actions_hangout2.png
-
-   |
-
-From the My Calendar page or Today's Calendar Widget
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To start a Hangout call from the Calendar:
-
-1. Click the event in the calendar.
-2. On the **View Event** calendar card, click the :guilabel:`Start` button in the **Hangout** field.
-
-   |
-
-   .. image:: ../../img/activities/activities_events_actions_hangout.png
-
-   |
+Get :ref:`more information about joining a Hangout meeting event from other perspectives <doc-activities-events-actions-hangout-detailed>`.
 
 See Also
 ========

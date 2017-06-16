@@ -47,7 +47,7 @@ Preview event details inline by clicking on the event in the **Activity** sectio
 
 |
 
-Alternatively, you can navigate to the calendar event record and see the event details on a dedicated page: click the ellipsis menu at the end of the event header and then click |IcView| **View Calendar event**.
+Alternatively, you can review the event details on a dedicated page: click the ellipsis menu at the end of the event header and then click |IcView| **View Calendar event**.
 
 |
 

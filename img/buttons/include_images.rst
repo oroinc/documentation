@@ -100,3 +100,31 @@ Images
 .. |IcContext| raw:: html
 
    <i class="fa fa-link fa-lg" aria-hidden="true"></i>
+
+.. |IcRefresh| raw:: html
+
+   <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
+
+.. |IcTasks| raw:: html
+
+   <i class="fa fa-tasks fa-lg" aria-hidden="true"></i>
+
+.. |IcCaretRight| raw:: html
+
+   <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+
+.. |IcCaretLeft| raw:: html
+
+   <i class="fa fa-caret-left fa-lg" aria-hidden="true"></i>
+
+.. |IcCaretUp| raw:: html
+
+   <i class="fa fa-caret-up fa-lg" aria-hidden="true"></i>
+
+.. |IcCaretDown| raw:: html
+
+   <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
+
+.. |IcEllipsisH| raw:: html
+
+   <i class="fa fa-ellipsis-h fa-lg" aria-hidden="true"></i>

@@ -43,13 +43,15 @@ To edit a calendar event when viewing the calendar event details:
 
 1. In the main menu, navigate to **Activities>Calendar Events**.
 
-2. In the grid of the **Calendar Events** page, click the ellipsis menu at the end of the row with the necessary event and then click the |IcEdit| **Edit** icon.
+2. In the grid of the **Calendar Events** page, click the ellipsis menu at the end of the row with the necessary event and then click the |IcView| **View** icon.
 
-   Alternatively, you can click the required event and on the event view page, click the :guilabel:`Edit` button in the upper-right corner of the page.
+   Alternatively, you can click the required event.
 
-3. Update the event details as necessary. Follow the guidance provided in the :ref:`Create an Event <doc-activities-events-actions-add-fromgrid>` section (From the Calendar Events Grid, step 3).
+3. On the event view page, click the :guilabel:`Edit` button in the upper-right corner of the page.
 
-4. Click :guilabel:`Save and Close` in the upper-right corner of the page.
+4. Update the event details as necessary. Follow the guidance provided in the :ref:`Create an Event <doc-activities-events-actions-add-fromgrid>` section (From the Calendar Events Grid, step 3).
+
+5. Click :guilabel:`Save and Close` in the upper-right corner of the page.
 
 .. note:: You may be prompted whether you want to send an update notification to the participants (if any).
 
@@ -85,11 +87,11 @@ You can edit a calendar event when viewing the related entity record:
 From the My Calendar page / Today's Calendar Widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can edit both calendar events and tasks from the **My Calendar** page and the **Today's Calendar** widget.
+To edit a calendar event from the **My Calendar** page and the **Today's Calendar** widget:
 
-1. Click the event or task in the calendar.
-2. On the **View Event** / **Task Information** calendar card, click :guilabel:`Edit`.
-3. Continue as described in step 3 of the :ref:`Create an Event from the Calendar Events Grid <doc-activities-events-actions-add-fromgrid>` action description or in the :ref:`Tasks <user-guide-activities-tasks>` guide.
+1. Click the event in the calendar.
+2. On the **View Event** card, click :guilabel:`Edit`.
+3. Continue as described in step 3 of the :ref:`Create an Event from the Calendar Events Grid <doc-activities-events-actions-add-fromgrid>` action description.
 
    |
 

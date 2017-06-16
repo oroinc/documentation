@@ -7,6 +7,16 @@ My Menus Configuration
 .. contents:: :local:
    :depth: 3
 
+
+Navigation
+----------
+
+In the user menu that resides below your username in the upper-right corner of the application, click **My User**.
+
+.. image:: ../img/intro/user_menu.png
+
+On the page that opens, click **More Actions** in the upper-right part of the page and click **Edit Menus**.
+
 Description
 -----------
 
@@ -294,7 +304,7 @@ If you do not want one of the default menu items to be visible on the interface,
 
     - You cannot hide non-default menu items.
 
-To hide a menu item, perform as follows:
+To hide a menu item:
 
 1. In the left panel, click a menu item that you want to hide.
 
@@ -309,7 +319,7 @@ To hide a menu item, perform as follows:
 Show a Menu Item
 ~~~~~~~~~~~~~~~~
 
-To show a previously hidden menu item, perform as follows:
+To show a previously hidden menu item:
 
 1. In the left panel, click a menu item that you want to show.
 
@@ -359,3 +369,4 @@ See Also
 
 .. |IcTranslationsC| image:: ../../img/buttons/IcTranslationsC.png
 	:align: middle
+

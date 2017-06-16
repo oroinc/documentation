@@ -33,12 +33,12 @@ You can define a number of localization options to be applied to the OroCRM inst
   
   *First and Last name*, *Street name*, *CITY NAME, STATE CODE, US, ZIP code*.  
   Otherwise, the *Primary Location* formatting will be applied.","United States" 
-  "**Timezone**","Defines the timezone to be applied for all the time settings defined in the instance. If the time-zone is changed all the time settings (e.g. due dates of :ref:`tasks <user-guide-activities-tasks>`), time of reminders, etc. will be changed correspondingly.","UTC +02:00"
+  "**Timezone**","Defines the timezone to be applied for all the time settings defined in the instance. If the time-zone is changed all the time settings (e.g. due dates of :ref:`tasks <doc-activities-tasks>`), time of reminders, etc. will be changed correspondingly.","UTC +02:00"
   "**First Quarter Starts On**","Defines the quarter start date.","January 1"
 
 
 Map options
-------------
+-----------
 
 You can define the **Temperature Unit** and **Wind Speed Unit** used for the map displayed by the address.
 

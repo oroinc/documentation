@@ -22,12 +22,12 @@ Out of the box, any sidebar can contain widgets of three types:
 .. image:: ../img/navigation/sidebar/sb_icons.png
 
 
-1 - The *"Recent Emails"* widget: Set up the widget to get access to your emails in one or several of the 
+- **Recent Emails** widget: Set up the widget to get access to your emails in one or several of the
   synchronized mailboxes, or to all the emails in your OroCRM mailbox.
 
-2 - *"Sticky Notes"*:  Place free text notes and reminders.
+- **Sticky Notes**:  Place free text notes and reminders.
 
-3 - *"Task List"*: See the most recent tasks assigned to you.
+- **Task List**: See the most recent tasks assigned to you.
 
 To add a new widget, use the :guilabel:`+` button, as described in the section below.
 
@@ -144,8 +144,8 @@ Default OroCRM Widgets
 
 This section describes the three widgets available in OroCRM out of the box.
 
-The "Recent Emails" Widget 
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Recent Emails Widget
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
 
@@ -158,11 +158,11 @@ The widget informs you about new and unread emails, and gives you a convenient w
 
 From the widget, you can:
 
-- Access the *"All Emails"* page and see all your emails available in OroCRM: click the *"My emails"* link (1).
+- Access the **All Emails** page and see all your emails available in OroCRM: click the **My emails** link (1).
 
-- Mark all the visible emails as read: Click the :guilabel:`Mark Visible As Read button` at the top (2).
+- Mark all the visible emails as read: Click the :guilabel:`Mark Visible As Read` button at the top (2).
 
-- Access any of the displayed emails: Click the Email header.(e.g., 3)
+- Access any of the displayed emails: Click the email header.(e.g., 3)
 
 - Mark any of the displayed emails as read: Click the envelope icon by the letter (e.g., 4)
 
@@ -174,8 +174,8 @@ From the widget, you can:
   below the letter (e.g., 6).
 
   
-Configure the "Recent Emails" Widget 
-""""""""""""""""""""""""""""""""""""
+Configure the Recent Emails Widget
+""""""""""""""""""""""""""""""""""
 
 Click the |IcSettings| icon to configure the widget. The settings window will emerge:
 
@@ -220,20 +220,11 @@ keep others visible (such as those that are due today). When you don't need the 
 Task List
 ^^^^^^^^^
 
-To see the newest tasks you have been assigned, use the Task List widget. The widget displays the task name and due 
-date.
-
-|
-
-.. image:: ../img/navigation/sidebar/sb_task.png
-
-|
-
-You can change the number of tasks that are displayed at the same time in the settings.
+For the description, see :ref:`Task List Sidebar Widget <doc-widgets-sidebar-task-list>`.
 
 
-Conclusion
-----------
+Conclusions
+-----------
 
 Set up the sidebar widgets in the way that is most convenient for you. This will help you maximize your performance with 
 a minimum amount of effort.

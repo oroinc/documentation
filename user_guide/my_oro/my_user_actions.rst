@@ -248,7 +248,7 @@ Assign a Task
 |
 
 
-3. In the **Assign Task To** dialog box, specify the required data. For help on this, see the :ref:`Tasks <user-guide-activities-tasks>` guide.
+3. In the **Assign Task To** dialog box, specify the required data. For help on this, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
 |
 

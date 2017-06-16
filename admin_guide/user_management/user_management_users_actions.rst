@@ -317,7 +317,7 @@ By default, this way an email is meant to be sent to the user from whose view pa
       |
 
 
-4. In the **Send Email** dialog box, specify the required data. For help on this, see the beginning of the `Send Email <../../user-guide/activities/activities-send-email>`__ guide.
+4. In the **Send Email** dialog box, specify the required data. For help on this, see :ref:`Compose A New Email <doc-activities-emails-actions-compose>`.
    
 |
 
@@ -442,7 +442,7 @@ Assign a Task to a User
 
 |
 
-5. Click :guilabel:`Create Task`. The task will appear in the **Additional Information** section, **User Tasks** subsection of the user view page.  
+5. Click :guilabel:`Create Task`. The task will appear in the **Additional Information** section, **Tasks** subsection of the user view page.
 
 
 .. _doc-user-management-users-actions-configure:

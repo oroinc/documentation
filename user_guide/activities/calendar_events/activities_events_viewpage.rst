@@ -9,6 +9,9 @@ Calendar Event View Page
 
 |
 
+.. contents:: :local:
+   :depth: 3
+
 Page Top
 ^^^^^^^^
 

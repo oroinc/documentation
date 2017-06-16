@@ -4,6 +4,12 @@
 My Calendar
 ===========
 
+In the user menu that resides below your username in the upper-right corner of the application, click **My Calendar**.
+
+.. image:: ../img/intro/user_menu.png
+
+The following page opens:
+
 |
 
 .. image:: ../img/my_oro/my_calendar.png
@@ -118,7 +124,9 @@ An icon in the upper-left corner of the event cell represents the invitation sta
 The |IcReminder| **Reminder** icon in the upper-left corner appears when the event owner configured sending reminders about the event.
 
 
-From the calendar you can add, view a calendar event, respond to it, edit and delete it, start a hangout meeting, remove a context from a calendar  event.
+From the calendar you can add, view a calendar event, respond to it, edit and delete it, start a hangout meeting, remove a context from a calendar event.
+
+You can also view, edit, and delete tasks.
 
 See the action descriptions:
 
@@ -131,9 +139,15 @@ See the action descriptions:
 - :ref:`Start a Hangout Meeting <doc-activities-events-actions-hangout>`
 - :ref:`Remove a Context from a Calendar Event <doc-activities-events-actions-contextdel>`
 
+- :ref:`View a Task <doc-activities-tasks-actions-view>`
+- :ref:`Edit a Task <doc-activities-tasks-actions-edit>`
+- :ref:`Delete a Task <doc-activities-tasks-actions-delete>`
+
 
 See Also
 ^^^^^^^^
+
+Calendar Events:
 
 :ref:`Calendar Events Overview <doc-activities-events>`
 
@@ -144,6 +158,26 @@ See Also
 :ref:`Calendar Event View Page <doc-activities-events-view-page>`
 
 :ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
+
+Tasks:
+
+:ref:`Tasks Overview <doc-activities-tasks>`
+
+:ref:`Manage Tasks <doc-activities-tasks-actions>`
+
+:ref:`Tasks Grid <doc-activities-tasks-grid>`
+
+:ref:`Task View Page <doc-activities-tasks-view-page>`
+
+:ref:`My Tasks <doc-my-oro-tasks>`
+
+:ref:`My Calendar Page <doc-my-oro-calendar>`
+
+:ref:`Tasks List Sidebar Widget <doc-widgets-sidebar-task-list>`
+
+:ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
+
+:ref:`Task Flow Workflow <doc--workflows--task-flow>`
 
 .. include:: ../../img/buttons/include_images.rst
    :start-after: begin
