@@ -211,7 +211,7 @@ Now you have to create the template for this action:
     {% set pageTitle = 'Vehicles'|trans %}
 
     {% block navButtons %}
-        {% if resource_granted('inventory.vehicle_create') %}
+        {% if is_granted('inventory.vehicle_create') %}
             <div class="btn-group">
                 {{ UI.addButton({
                 'path': path('inventory.vehicle_create'),
@@ -528,7 +528,7 @@ Both actions just need to return the ``Vehicle`` to be shown in the form as well
     {% endif %}
 
     {% block navButtons %}
-        {% if form.vars.value.id and resource_granted('DELETE', form.vars.value) %}
+        {% if form.vars.value.id and is_granted('DELETE', form.vars.value) %}
             {{ UI.deleteButton({
                 'dataUrl': path('inventory_api_delete_vehicle', {'id': form.vars.value.id}),
                 'dataRedirect': path('inventory.vehicle_index'),
@@ -541,7 +541,7 @@ Both actions just need to return the ``Vehicle`` to be shown in the form as well
         {% endif %}
         {{ UI.cancelButton(path('inventory.vehicle_index')) }}
         {% set html = UI.saveAndCloseButton() %}
-        {% if resource_granted('inventory.vehicle_update') %}
+        {% if is_granted('inventory.vehicle_update') %}
             {% set html = html ~ UI.saveAndStayButton() %}
         {% endif %}
         {{ UI.dropdownSaveButton({ 'html': html }) }}
@@ -659,14 +659,14 @@ And of course you also have to create the matching template:
     {% import 'OroUIBundle::macros.html.twig' as UI %}
 
     {% block navButtons %}
-        {% if resource_granted('EDIT', vehicle) %}
+        {% if is_granted('EDIT', vehicle) %}
             {{ UI.editButton({
                 'path' : path('inventory.vehicle_update', { id: vehicle.id }),
                 'entity_label': 'Vehicle'|trans
             }) }}
         {% endif %}
 
-        {% if resource_granted('DELETE', vehicle) %}
+        {% if is_granted('DELETE', vehicle) %}
             {{ UI.deleteButton({
                 'dataUrl': path('inventory_api_delete_vehicle', {'id': vehicle.id}),
                 'dataRedirect': path('inventory.vehicle_index'),
