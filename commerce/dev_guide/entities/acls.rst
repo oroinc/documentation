@@ -204,15 +204,15 @@ Perform Access Checks
 ---------------------
 
 Once you have configured the ACLs you can protect all parts of your application. Anywhere in your
-PHP code you can use the ``isGranted()`` method of the ``oro_security.security_facade`` service
-(which is an instance of the :class:`Oro\\Bundle\\SecurityBundle\\SecurityFacade` class):
+PHP code you can use the ``isGranted()`` method of the ``security.authorization_checker`` service
+(which is an instance of the :class:`Symfony\\Component\\Security\\Core\\Authorization\\AuthorizationCheckerInterface` class):
 
 .. code-block:: php
     :linenos:
 
-    $securityFacade = $this->container->get('oro_security.security_facade');
+    $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($securityFacade->isGranted('app_task_create')) {
+    if ($authorizationChecker->isGranted('app_task_create')) {
         // do something when the user is granted permissions for the app_static_pages ACL
     }
 
@@ -223,9 +223,9 @@ You can set the second parameter to check access on Object level (with Access Le
 
     $taskEntity = $this->getTask();
 
-    $securityFacade = $this->container->get('oro_security.security_facade');
+    $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($securityFacade->isGranted('app_task_update', $taskEntity)) {
+    if ($authorizationChecker->isGranted('app_task_update', $taskEntity)) {
         // do something when the user is granted permissions for the app_static_pages ACL
     }
 
@@ -237,9 +237,9 @@ permission name you want to check:
 
     $taskEntity = $this->getTask();
 
-    $securityFacade = $this->container->get('oro_security.security_facade');
+    $authorizationChecker = $this->get('security.authorization_checker');
 
-    if ($securityFacade->isGranted('EDIT', $taskEntity)) {
+    if ($authorizationChecker->isGranted('EDIT', $taskEntity)) {
         // do something when the user is granted permissions for the app_static_pages ACL
     }
 
@@ -297,7 +297,7 @@ to an existing access control list using the ``@AclAncestor`` annotation:
 Show Parts of Templates Based on Permissions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Inside your templates you can use the ``resource_granted()`` Twig function to check for certain
+Inside your templates you can use the ``is_granted()`` Twig function to check for certain
 permissions to hide parts of your views for users who do not have the required permissions:
 
 .. code-block:: html+jinja
@@ -305,16 +305,16 @@ permissions to hide parts of your views for users who do not have the required p
 
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
-        {% if resource_granted('app_task_edit') %}
+        {% if is_granted('app_task_edit') %}
             Some info if access is granted
         {% endif %}
     {% endblock %}
 
-In this example we check access by ACL annotation info without Object to test. So, resource_granted will return
+In this example we check access by ACL annotation info without Object to test. So, ``is_granted`` will return
 true as result if user have any access level to EDIT permission to Task entity.
 
 In case if you want to check access more deeply, you can set the entity instance as the second parameter of
-``resource_granted()`` function:
+``is_granted()`` function:
 
 .. code-block:: html+jinja
     :linenos:
@@ -322,7 +322,7 @@ In case if you want to check access more deeply, you can set the entity instance
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
         {# an `entity` variable contains an Test entity instance #}
-        {% if resource_granted('app_task_edit', entity) %}
+        {% if is_granted('app_task_edit', entity) %}
             Some info if access is granted
         {% endif %}
     {% endblock %}
@@ -337,7 +337,7 @@ In case if you have no an ACL annotation, you can set the permission name direct
     {# src/AppBundle/Resources/views/Task/update.html.twig #}
     {% block someBlock %}
         {# an `entity` variable contains an Test entity instance #}
-        {% if resource_granted('EDIT', entity) %}
+        {% if is_granted('EDIT', entity) %}
             Some info if access is granted
         {% endif %}
     {% endblock %}

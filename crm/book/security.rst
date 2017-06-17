@@ -303,7 +303,7 @@ Manual Access Checks
 ~~~~~~~~~~~~~~~~~~~~
 
 If you need to manually check the access of the current user to a certain object, you can use the
-``isGranted()`` method from the ``oro_security.security_facade`` service for this::
+``isGranted()`` method from the ``security.authorization_checker`` service for this::
 
     // src/Acme/DemoBundle/Controller/DemoController.php
     namespace Acme\DemoBundle\Controller;
@@ -316,9 +316,8 @@ If you need to manually check the access of the current user to a certain object
         public function protectedAction()
         {
             $entity = ...;
-            $securityFacade = $this->get('oro_security.security_facade');
 
-            if (!$securityFacade->isGranted('VIEW', $entity)) {
+            if (!$this->isGranted('VIEW', $entity)) {
                 throw new AccessDeniedException();
             }
 
