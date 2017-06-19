@@ -6,6 +6,7 @@ Administrator Guide
 This section contains information about OroCommerce configuration, administration, and performance optimization:
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 1
 
    price_list_sharding

@@ -149,7 +149,7 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['_static']
+html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -161,7 +161,7 @@ html_theme_options = {
 
 # Custom sidebar templates, maps document names to template names.
 html_sidebars = {
-   '**': ['globaltoc.html', 'sourcelink.html', 'relations.html', 'searchbox.html'],
+   '**': ['globaltoc.html', 'relations.html', 'searchbox.html'],
    'using/windows': ['windowssidebar.html', 'relations.html', 'searchbox.html'],
 }
 # Additional templates that should be rendered to pages, maps page names to
@@ -279,7 +279,7 @@ texinfo_documents = [
 epub_title = u'The OroCommerce'
 epub_author = u'OroTeam'
 epub_publisher = u'OroTeam'
-epub_copyright = u'2016, OroTeam'
+epub_copyright = u'2017, OroTeam'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.

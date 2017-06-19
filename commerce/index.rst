@@ -92,21 +92,28 @@ This section provides links to the online documentation for the latest OroCommer
        </div>
     </div>
 
-.. toctree::
-    :hidden:
-    :maxdepth: 4
+.. container:: hidden
 
-    user_guide/index
+    .. raw:: html
 
-    dev_guide/index
+        <div><h2>Table of Contents</h2></div>
 
-    admin_guide/index
+    .. toctree::
+        :includehidden:
+        :titlesonly:
+        :maxdepth: 2
 
-    community/index
+        user_guide/index
 
-    system_requirements
+        dev_guide/index
 
-    seo_config_guide/index
+        admin_guide/index
+
+        community/index
+
+        system_requirements
+
+        seo_config_guide/index
 
 ..     admin_guide/index
 
