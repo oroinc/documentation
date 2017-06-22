@@ -9,6 +9,7 @@ Outlook account and vice versa.
 
 From this article you will learn how to configure and run synchronization, and see the workflow used for that.
 
+.. note:: Emails are not synced in the course of Outlook integration. For this, please refer to :ref:`Email Configuration <user-guide-email-admin>` topic.
 
 Getting Started
 ---------------

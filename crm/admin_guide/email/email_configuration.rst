@@ -6,12 +6,10 @@ Email Configuration
 .. contents:: :local:
     :depth: 4
 
-The following guide will introduce you to the email feature settings and
+The following guide will introduce you to the email settings and
 provide instructions on how to configure personal and system mailboxes,
 and integrate with Google, MS Exchange and Outlook.
 
-Email feature configuration
----------------------------
 
 To reach **Email Configuration** page:
 
@@ -28,7 +26,6 @@ To reach **Email Configuration** page:
 .. image:: ../img/admin_emails/email_config_1.jpg
 
 |
-
 
 
 -  In the left menu, select **System Configuration>General Setup>Email
@@ -234,6 +231,7 @@ synchronization of all the contacts. Tasks and calendar events available
 for the user can be synchronized with the specified Outlook account and
 vice versa. The integration set-up is described in the relevant :ref:`Outlook Integration guide <user-guide-synch-outlook>`.
 
+.. note:: Please note emails are not synced in the course of Outlook integration. For that, please, refer to `Standard personal mailbox configuration (IMAP/SMTP)`_ section.
 
 Configuration of system mailboxes
 ---------------------------------
