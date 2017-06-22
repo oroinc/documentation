@@ -106,14 +106,10 @@ Now we need to create a ``navigation.yml`` file with the following content:
             acme_link: My link page title
 
 
-Then you have to reload navigation data and clear cache:
+Then you have to clear cache:
 
 .. code-block:: bash
     :linenos:
-
-    user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
-    Load "Title Templates" from annotations and config files to db
-    Completed
 
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
@@ -159,14 +155,10 @@ To override some section in the main menu you have to create the ``navigation.ym
         acme_link: My link page title
 
 
-And reload navigation data and clear cache:
+And clear cache:
 
 .. code-block:: bash
     :linenos:
-
-    user@host:/var/www/vhosts/platform-application$ php app/console oro:navigation:init
-    Load "Title Templates" from annotations and config files to db
-    Completed
 
     user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
     Clearing the cache for the dev environment with debug true
