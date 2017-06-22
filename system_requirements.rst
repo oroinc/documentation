@@ -120,7 +120,6 @@ Recommended and supported browsers are:
 
     Any browser you use needs to have cookies and JavaScript turned on.
 
-
 .. _`Apache`: https://httpd.apache.org/
 .. _`Elasticsearch`: https://www.elastic.co/products/elasticsearch
 .. _`EnterpriseDB`: https://www.enterprisedb.com/
