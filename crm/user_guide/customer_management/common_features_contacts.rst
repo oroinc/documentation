@@ -80,9 +80,11 @@ View and Manage a Contact Record
 
 :ref:`Inline editing <doc-grids-actions-records-edit-inline>` can help you amend details of contacts without opening the edit contact form. For contacts, it is available from records' grids and view pages.
 
-If the |IcEditInline| **Edit Inline** icon appears next to a value, inline editing is available for it.
+If the |IcPencil| **Edit Inline** icon appears next to a value, inline editing is available for it.
 
-.. To edit a contact from the view page, double-click on the required field or the inline editing icon |IcEditInline| in the field you wish to edit, and modify the value as required.
+
+.. To edit a contact from the view page, double-click on the required field or the inline editing icon |IcPencil| in the field you wish to edit, and modify the value as required.
+
 
 .. |
 
@@ -157,5 +159,5 @@ In addition, from the grid you can:
 
 .. |BulkDelete| image:: ../img/contacts/bulk_delete.png
 
-.. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
+.. |IcPencil| image:: ../../img/buttons/IcEditInline.png
    :align: middle

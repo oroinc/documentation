@@ -101,7 +101,7 @@ This section provides links to the online documentation for the latest OroCommer
     .. toctree::
         :includehidden:
         :titlesonly:
-        :maxdepth: 2
+        :maxdepth: 3
 
         user_guide/index
 
@@ -114,6 +114,8 @@ This section provides links to the online documentation for the latest OroCommer
         system_requirements
 
         seo_config_guide/index
+
+        frontstore_guide/index
 
 ..     admin_guide/index
 

@@ -451,9 +451,9 @@ Inline Editing
 
 :ref:`Inline editing <doc-grids-actions-records-edit-inline>` can help you amend opportunity details without opening the edit opportunity form. For opportunities, it is available from records' grids and view pages.
 
-If the |IcEditInline| **Edit Inline** icon appears next to the field, inline editing is available for that value.
+If the |IcPencil| **Edit Inline** icon appears next to the field, inline editing is available for that value.
 
-To edit the opportunity from the grid, double-click on the field or the inline editing icon |IcEditInline| in the field you wish to edit. 
+To edit the opportunity from the grid, double-click on the field or the inline editing icon |IcPencil| in the field you wish to edit.
 
 |
 |
@@ -999,7 +999,7 @@ The report shows:
 .. |IcView| image:: ../../img/buttons/IcView.png
    :align: middle
 
-.. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
+.. |IcPencil| image:: ../../img/buttons/IcEditInline.png
    :align: middle
 
 .. |IcExpire| image:: ../../img/buttons/IcExpire.png

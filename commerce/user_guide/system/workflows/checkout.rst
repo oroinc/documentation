@@ -63,7 +63,7 @@ As an illustration, let us go through a sample flow to see how the Checkout work
    Clicking **Continue** will redirect you to the next step.
 
    .. note::     
-     It is possible to amend the order by clicking **Edit the Order** in the right corner of the Order Summary section. The Order Summary section will be available for Billing Information, Shipping Information, Shipping Method and Payment pages. Editing the order will remain possible throughout the checkout process until the order is submitted.
+     It is possible to amend the order by clicking **Edit Order** in the right corner of the Order Summary section. The Order Summary section will be available for Billing Information, Shipping Information, Shipping Method and Payment pages. Editing the order will remain possible throughout the checkout process until the order is submitted.
 
    .. image:: /user_guide/img/system/workflows/checkout/Checkout_BilInfo.png
 
@@ -93,7 +93,7 @@ As an illustration, let us go through a sample flow to see how the Checkout work
 
    .. image:: /user_guide/img/system/workflows/checkout/Payment.png 
 
-  6. **Step 5: Order Review**
+6. **Step 5: Order Review**
 
    Once all the necessary information has been provided, it is possible to review the order in the Order Review section:
 
