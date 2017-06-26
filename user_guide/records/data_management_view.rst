@@ -112,8 +112,8 @@ Inline editing is available for a particular number of entities, such as opportu
 
 To be able to perform inline editing from a record's view page:
 
-1. Point to the value you want to edit. If the |IcEditInline| **Edit Inline** icon appears next to it, inline editing is available for the value.
-2. Click the |IcEditInline| **Edit Inline** icon. Alternatively, double click on the value itself.
+1. Point to the value you want to edit. If the |IcPencil| **Edit Inline** icon appears next to it, inline editing is available for the value.
+2. Click the |IcPencil| **Edit Inline** icon. Alternatively, double click on the value itself.
 
 |
 
@@ -228,7 +228,7 @@ Get to Other Pages
 .. |IcView| image:: ../../img/buttons/IcView.png
    :align: middle
    
-.. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
+.. |IcPencil| image:: ../../img/buttons/IcEditInline.png
 	:align: middle
 
 .. |IcDiscardChanges| image:: ../../img/buttons/IcDiscardChanges.png

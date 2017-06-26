@@ -17,7 +17,9 @@ Images
 
    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
 
-.. |IcEditInline| raw:: html
+.. IcPencil refers to Rename in Commerce and Inline Editing in CRM
+
+.. |IcPencil| raw:: html
 
    <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 

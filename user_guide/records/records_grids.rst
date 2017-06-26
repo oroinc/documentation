@@ -580,7 +580,7 @@ To view a record, find it in the grid, click the ellipsis menu at the right end 
 .. note::
    Sometimes, instead of the ellipsis menu, you will see only the action icons at the end of the record row. This happens when you are enabled to perform only one or two actions with a record, and hiding the corresponding icons under the ellipsis menu will not simplify the interface.
 
-Alternatively, you can click the corresponding row itself (but make sure you do not click the |IcEditInline| **Edit Inline** icon).
+Alternatively, you can click the corresponding row itself (but make sure you do not click the |IcPencil| **Edit Inline** icon).
 
 
 
@@ -598,8 +598,8 @@ Inline Editing
 
 .. important:: Inline editing—ability to edit record field values directly from the grid—is available only for the limited set of fields. This set differs for different entities and is not configurable.
 
-1. Point to the value in the grid that you want to edit. If the |IcEditInline| **Edit Inline** icon appears next to it, you can edit this values in this column from the grid.
-2. Click the |IcEditInline| **Edit Inline** icon.
+1. Point to the value in the grid that you want to edit. If the |IcPencil| **Edit Inline** icon appears next to it, you can edit this values in this column from the grid.
+2. Click the |IcPencil| **Edit Inline** icon.
 
    Alternatively, click the value itself twice.
 
@@ -730,7 +730,7 @@ To merge records:
 .. |BReset| image:: ../../img/buttons/BReset.png
    :align: middle
 
-.. |IcEditInline| image:: ../../img/buttons/IcEditInline.png
+.. |IcPencil| image:: ../../img/buttons/IcEditInline.png
    :align: middle
 
 .. |IcDiscardChanges| image:: ../../img/buttons/IcDiscardChanges.png
