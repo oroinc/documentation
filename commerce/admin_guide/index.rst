@@ -9,6 +9,7 @@ This section contains information about OroCommerce configuration, administratio
    :titlesonly:
    :maxdepth: 1
 
+   optimize_server_compression_and_caching
    price_list_sharding
    optimize_index_and_price_calculation
 ..   entities/index
