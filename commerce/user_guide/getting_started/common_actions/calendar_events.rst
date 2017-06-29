@@ -10,6 +10,7 @@ record ("calendar event" or "event").
 
 Create an Event
 ---------------
+
 There are several ways to create an event:
 
 - Add an event for a related entity record and define the users-participants.

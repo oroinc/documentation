@@ -3,7 +3,8 @@ Overview
 
 .. begin
 
-Order contains information about the buyer's shopping list submitted for purchase and the collected information about billing and shipping address, payment method, etc.
+Orders contain information about buyers' shopping lists submitted for purchase and the collected information about billing and shipping addresses, payment methods, etc.
 
-In **Sales / Orders** section, you as a sales person can view, edit and delete already submitted orders and create new orders on behalf of buyers.
-For existing orders, you can `add notes <../getting-started/common-actions/add-notes>`_, `attachments <../getting-started/common-actions/add-attachments>`_, create related `calendar events <../getting-started/common_actions/calendar-events>`_, and `send emails <../getting-started/common-actions/send-email>`_ to the buyer.
+In **Sales > Orders**, you can view, edit and delete the already submitted orders and create new orders on behalf of the buyers.
+
+For existing orders, you can add :ref:`attachments <user-guide-activities-attachments>`, :ref:`notes <user-guide-add-note>`, :ref:`events <doc-activities-events>`, or send :ref:`emails <user-guide-using-emails>` to buyers.

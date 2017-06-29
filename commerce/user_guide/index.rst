@@ -5,7 +5,6 @@ User Guide
 .. .. _config-guide--translations:
 .. _user-guide--products--products:
 .. _user-guide--sales--requests-for-quote:
-.. _user-guide--sales--orders:
 .. _user-guide-marketing-lists:
 .. _user-guide-reports:
 
@@ -116,6 +115,8 @@ Table of Contents
    customers/index
 
    quotes/index
+
+   orders/index
 
    payment/index
 

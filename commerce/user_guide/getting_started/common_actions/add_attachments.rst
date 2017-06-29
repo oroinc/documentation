@@ -1,27 +1,29 @@
+.. _getting-started--add-attachments:
+
 Adding an Attachment
 ====================
 
-.. warning:: Reused from OroCRM. Rework.
+.. Reused from OroCRM. Rework.
 
-You can add an attachment to some system items in OroCommerce (e.g. Orders, Quotes, etc). Attchaments may be disabled for some items in system configuration, and every system item may have different attachment limitations (file types, size, and the way attachment links to the context).
+You can add an attachment to some system items in OroCommerce (e.g. Orders, Quotes, etc). Attachments may be disabled for some items in system configuration, and every system item may have different attachment limitations (file types, size, and the way an attachment is linked to the context).
 
 .. note:: You may not be able to view or add attachments if your role or sytem configuration disable those options.
 
-To add attachment to the item:
+To add an attachment to an item:
 
-1. Click **Add Attachment**. It may be nesting in the **More Actions** menu.
+1. Click **Add Attachment** (it can be nested under **More Actions** on the top right).
    
    .. image:: /user_guide/img/common/activities/add_attachment.png
 
-2. In the Add Attachment page:
+2. On the *Add Attachment* page:
    
    a) Select the file to be attached.
 
    b) Add a comment, if necessary.
       
-   c) To attach a file on behalf of other user, select the attachment owner.
+   c) To attach a file on behalf of a different user, select the attachment owner.
 
-    .. note:: Only the owner and users with whose role enables management/viewing of the owner's attachments are be able to manage and view the attachment.
+    .. note:: Only the owner is able to manage and view the attachment, unless certain users were assigned roles that give them permissions to manage/view this owner's attachment.
 
    d) Click **Save**.
 

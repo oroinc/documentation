@@ -1,3 +1,5 @@
+.. _getting-started--add-notes:
+
 Add Note
 ========
 
