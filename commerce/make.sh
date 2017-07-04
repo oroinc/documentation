@@ -40,7 +40,14 @@ if [ -z "$SPHINXBUILD" ]; then
   export SPHINXBUILD='sphinx-build'
 fi
 
+#export BUILDDIR=${DOCUMENTATION_BUILDDIR-'_build'}
+
+if [ -z "$DOCUMENTATION_BUILDDIR" ]; then
 export BUILDDIR=_build
+else
+export BUILDDIR="$DOCUMENTATION_BUILDDIR"
+fi
+
 export ALLSPHINXOPTS="-d $BUILDDIR/doctrees $SPHINXOPTS ."
 export I18NSPHINXOPTS="$SPHINXOPTS"
 

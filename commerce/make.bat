@@ -5,7 +5,15 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
-set BUILDDIR=_build
+
+if not "%DOCUMENTATION_BUILDDIR%"=="" (
+    set BUILDDIR=%DOCUMENTATION_BUILDDIR%
+)
+
+if "%BUILDDIR%"=="" (
+    set BUILDDIR=_build
+)
+
 set ALLSPHINXOPTS=-d %BUILDDIR%/doctrees %SPHINXOPTS% .
 set I18NSPHINXOPTS=%SPHINXOPTS% .
 if NOT "%PAPER%" == "" (
