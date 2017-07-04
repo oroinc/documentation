@@ -22,6 +22,12 @@ This section contains information on the system configuration options specific f
 
    ../../inventory/configuration/limitations.rst
 
+   ../../pricing/configuration/global_currency.rst
+
+   ../../pricing/configuration/global_pricing.rst
+
+   ../../pricing/configuration/website_pricing.rst
+
    ../../taxes/configuration/tax_calculation.rst
 
    ../../taxes/configuration/us_sales_tax.rst

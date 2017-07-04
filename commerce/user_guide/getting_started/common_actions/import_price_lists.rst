@@ -1,7 +1,7 @@
 .. _import-price-lists:
 
-Importing Prices
-================
+Import Prices Into the Price List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. start
 
@@ -9,7 +9,7 @@ To streamline adding a large bulk of items, like customer information, products,
 
 Import the product prices into the price list using the .csv file that follows the price details data structure.
 
-**Example of a prices bulk import template**
+**Example of prices bulk import template**
 
 .. csv-table::
    :header: "Product SKU","Quantity","Unit Code","Price","Currency"
@@ -17,7 +17,7 @@ Import the product prices into the price list using the .csv file that follows t
 
    "sku_001", 42, "kg", 100, "USD"
 
-.. note:: The unit and currency should be created prior to the inventory levels import.
+.. note:: The unit and currency should be created before the inventory levels import.
 
 To import a bulk of price information:
 

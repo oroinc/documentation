@@ -2,7 +2,7 @@ Importing Bulk Items
 --------------------
 
 
-To streamline adding a large bulk of items, like customer information, products, prices or inventory information, you can import the bulk details from a .csv file.
+To streamline adding a massive bulk of items, like customer information, products, prices or inventory information, you can import the bulk details from a .csv file.
 
 1. Navigate to the list of items that you would like to import your data into.
 
@@ -15,13 +15,13 @@ To streamline adding a large bulk of items, like customer information, products,
 
 3. **Prepare data for import**: Based on the downloaded file, create your bulk information in .csv format. Once your file is ready, click **Import**, select the prepared comma-separated values (.csv) file, and click **Submit**.
 
-4. **Validate import results**: Review import validation results. If there are any *Records with errors*, fix them in the .csv file prior to starting the import. 
+4. **Validate import results**: Review import validation results. If there are any *Records with errors*, fix them in the .csv file before starting the import.
 
 5. **Launch import:** After successful validation, click **Import**.
 
-Interactive status messages inform about the import progress and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
+Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
 
-See this two minute demo of the import process:
+See this two-minute demo of the import process:
 
 .. raw:: HTML
 
