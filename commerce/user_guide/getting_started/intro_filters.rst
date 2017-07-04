@@ -1,22 +1,13 @@
 .. _user-guide-getting-started-filters:
 
-Filters
-=======
+Data Filters For Reports, Segments, and Collections
+===================================================
 
 .. contents:: :local:
 
-Along with :ref:`grid filters <doc-grids-actions-filters>` that define a set of records to be *displayed*,
-sometimes you need to select a set of records to be *processed* in different areas of the system, such as a 
-:ref:`Marketing List <user-guide-marketing-lists>` or a :ref:`Report <user-guide-reports>`. In this case,
-there is a *"Filters"* section.
+You may filter the records to generate custom report, data segment, or a subset of items of particular type (e.g. products collection).
 
-It settings are used to automatically select only those records of the entity that meet the filter requirements.
-
-Filters are always created for records of a specific :term:`entity <Entity>` specified in the general details of the 
-relevant segment, report or marketing list. We'll call it a *filtered entity*.
-
-Filter Tools
-------------
+Filters are applicable to the records of an entity specified in the general details of the segment or report you are building.
 
 To define filters you can use any of the following filters or combine them:
 
@@ -25,12 +16,12 @@ To define filters you can use any of the following filters or combine them:
 - **Activity**: select only the records to which a specific kind of :ref:`activity <user-guide-activities>` has 
   been/hasn't been assigned.
 
-- **Data Audit**: select on the records that have been modified in a specific way (available only when the correponding fuctionality is enabled for an entity; see step 6 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
+- **Data Audit**: select on the records that have been modified in a specific way  (available for auditable entities only).
 
 - **Conditions Groups**: sets of field conditions that combine requirements of several other filters in one group.
 
 - **Segments**: sets of records dynamically or manually updated in compliance with 
-  predefined filters. Described in more details in the :ref:`Segments guide <user-guide-filters-segments>`.
+  predefined filters. . See :ref:`Using Segments <user-guide-filters-segments>` for more information.
 
   
 AND/OR Operators
@@ -67,7 +58,7 @@ To define a field condition:
 - A drop-down will appear. At the top of the drop-down menu, you can see the name of the :term:`entity <Entity>`, for 
   which the records are filtered. (In the example below it is a Contact). Below the entity name there is a list of all
   the  of the chosen entity. Below the list of fields, is a list of related entities (entities 
-  that have a :ref:`relation <user-guide-entity-management-relation>` with the filtered entity.)
+  that have a relation with the filtered entity.)
   
   |field_condition_fields|
 
@@ -183,12 +174,11 @@ A condition group may also be included into another condition group as a separat
 Segments
 --------
 
-A segment is a set of the Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately :ref:`Filters guide <user-guide-filters-segments>` for records of a specific entity. It can be updated dynamically or upon a user's request.
+A segment is a set of the Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately for records of a specific entity. It can be updated dynamically or upon a user's request.
 
 In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a segment and use it instead of redefining the same conditions time and again.
 
-The ways to create and manage segments are described in more details in the 
-:ref:`Segments guide <user-guide-filters-segments>`.
+The ways to create and manage segments are described in more details in the :ref:`Using Segments <user-guide-filters-segments>` section.
 
 To add a segment to the filters:
 

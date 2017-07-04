@@ -3,7 +3,7 @@ Filters
 
 You may filter the records to generate custom report or data segment.
 
-Filters are aplicable to the records of an entity specified in the general details of the segment or report you are building.
+Filters are applicable to the records of an entity specified in the general details of the segment or report you are building.
 
 To define filters you can use any of the following filters or combine them:
 

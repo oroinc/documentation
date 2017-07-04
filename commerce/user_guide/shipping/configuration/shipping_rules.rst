@@ -125,7 +125,7 @@ To create a shipping rule:
 
    b) For UPS, set **Enabled** for the necessary services and provide a surcharge next to the service to customize the shipping cost. If necessary, fill in the surcharge at the bottom to apply it to any enabled service on top of the per-service-surcharge.
 
-      *Service options and additional surcharge configuration for UPS*
+      **Service options and additional surcharge configuration for UPS**
 
       .. image:: /user_guide/img/system/shipping_rules/UPS_in_shipping_rule1.png
          :width: 582px

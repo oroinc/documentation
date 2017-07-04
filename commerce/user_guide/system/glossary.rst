@@ -110,7 +110,7 @@ Glossary
    Owner
       An :term:`organization <Organization>` or :term:`business unit <Business Unit>`, members    #whereof can view/process
       the entity records, or a :term:`user <User>`, who can view/process the entity records,    #subject to the  
-      `access and permission settings </complete_reference/system/UserManagement>`_.
+      access and permission settings.
 
    Context
        A set of :term:`records <Record>` related to a certain email.   

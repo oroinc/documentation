@@ -116,6 +116,8 @@ Table of Contents
 
    quotes/index
 
+   shopping_lists/index
+
    orders/index
 
    payment/index

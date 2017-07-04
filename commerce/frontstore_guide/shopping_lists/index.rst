@@ -12,7 +12,7 @@ In OroCommerce, shopping lists are much more than merely a list of items in a ca
 
 .. _frontstore-guide--shopping-lists-create:
 
-On the front store, shopping lists are located in the top right corner and can be easily spotted.
+In the front store, shopping lists are located in the top right corner and can be easily spotted.
 
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingLists.png
 
@@ -28,7 +28,7 @@ Create Shopping List
 
 Shopping lists can be created using several flows.
 
-**First**
+**Flow 1**
 
 1. Click |IcChevronDown| next to **Shopping Lists** on the top right of the page.
 2. Click **Create New List** on the bottom of the dropdown window.
@@ -36,7 +36,7 @@ Shopping lists can be created using several flows.
    
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingListName.png
 
-**Second**
+**Flow 2**
 
 1. Click on the dropdown icon |IcChevronDown| located in the **Add to** button next to each product.
 2. Select **Create New Shopping List**.
@@ -44,7 +44,7 @@ Shopping lists can be created using several flows.
 
 .. image:: /frontstore_guide/img/shopping_lists/CreateShoppingListItem.png
 
-**Third**
+**Flow 3**
 
 1. Click **Quick Order Form** on the top right of the page.
 2. Enter product details in the provided fields.
@@ -52,7 +52,7 @@ Shopping lists can be created using several flows.
 4. Select **Create New Shopping List**.
 5. Give the list a name and click **Create**.  
 
-**Fourth**
+**Flow 4**
 
 1. In the Quick Order Form, enter product SKU(s) and quantity.
 2. Click **Verify Order**.
@@ -62,7 +62,7 @@ Shopping lists can be created using several flows.
  
 .. image:: /frontstore_guide/img/shopping_lists/CreateShoppingListQuickOrder.png
 
-**Fifth**
+**Flow 5**
 
 1. Open :ref:`Matrix Ordering Form <frontstore-guide--orders-matrix>`.
    
@@ -79,7 +79,15 @@ Shopping lists can be created using several flows.
 
 7. Give the list a name and click **Create**.
    
+**Flow 6**
 
+Duplicate the already existing shopping list to make multiple similar orders:
+
+1. Open a shopping list.
+2. Click **Duplicate List** on the left under the list of items.
+3. A copy of the shopping list will be created.
+
+.. image:: /user_guide/img/sales/shopping_lists/DuplicateListFrontEndScreenShot.png
 
 .. _frontstore-guide--shopping-lists-view:
 

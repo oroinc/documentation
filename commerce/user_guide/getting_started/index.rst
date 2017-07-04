@@ -33,4 +33,6 @@ This section of the guide will provide an introduction to OroCommerce's user int
     my_oro/index
     activities/index
 
+..    records/index
+
 ..     intro_log_in

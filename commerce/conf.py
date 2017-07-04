@@ -57,7 +57,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OroCommerce'
-copyright = u'2016, Oro Team'
+copyright = u'2017, Oro Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
