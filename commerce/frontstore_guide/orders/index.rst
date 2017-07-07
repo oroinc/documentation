@@ -148,32 +148,47 @@ To create an order using a quick order form:
 
 1. Navigate to :ref:`Quick Access Menu <frontstore-guide--navigation-quick-access-menu>` n the top right corner of the page
 2. Click **Quick Order Form**.
-3. Provide order details (item and quantity #) in the given fields and click **Create Order**.
+3. Provide order details (item, quantity #, and unit) in the given fields and click **Create Order**.
    
    .. note:: 
 
-      You can also search the product by name, in which case, you need to select it in the dropdown when the product appears on the list.
+      You can also search the product by name, in which case, you need to select it from the suggestions list when the product appears there.
 
       Click **Add More Rows** to provide details for more than 5 items. 
 
       .. image:: /frontstore_guide/img/orders/QuickOrderFormSKU.png
    
-   
-   Alternatively, copy and paste as many order details as you wish in the text field on the right, click **Verify Order** followed by **Create Order**. Make sure that each item#+quantity# start from a new line.
+   Alternatively, copy and paste as many order details as you wish in the text field on the right. Make sure that each item#+quantity# start from a new line. Optionally, provide a unit.
 
    .. image:: /frontstore_guide/img/orders/QuickOrderForm.png
 
-   Import Validation will emerge to inform you whether products or their quantity qualify for the order.
+   .. note:: Your input is validated on the go. If you get a validation warning, ensure to correct any issues reported.
 
-   .. image:: /frontstore_guide/img/orders/VerifyOrder.png
+   Click **Verify Order** and the validated items will add to the quick order form.
 
-   .. note:: Here, you can also :ref:`Request a Quote <frontstore-guide--rfq>` and Add the order to the Quick Order Shopping List.
+   Then click **Create Order**.
+
+   .. note:: You can also :ref:`Request a Quote <frontstore-guide--rfq>` and Add the order to the Quick Order Shopping List.
    
-   
-4. You can also export a purchase list into the system by clicking **Import Excel CSV File** on the right of the quick order page, and uploading the file.
+4. You can also import a purchase list into the system in the **Upload Your order** section:
 
-.. image:: /frontstore_guide/img/orders/ImportCSV.png
+   a) Click **Get Directions** to see a quick help on the import process and the downloadable templates to fill it.
 
+      .. image:: /frontstore_guide/img/orders/ImportCSV.png
+
+   b) Once you downloaded the template in one of the provided formats, insert the items SKU and quantity numbers into the columns A and B and save the file.
+
+   c) To upload the file, click **Choose File**, navigate to the file location, select the file and click **Open**.
+
+      Import Validation will emerge to inform you whether products or their quantity qualify for the order and preview the line item and total price.
+
+      .. image:: /frontstore_guide/img/orders/VerifyOrder.png
+
+   d) Click **Add to Form** to finalize import. Validated items will add to the quick order form.
+
+5. To complete the order, click **Create Order**.
+
+   .. note:: You can also :ref:`Request a Quote <frontstore-guide--rfq>` and Add the order to the Quick Order Shopping List.
 
 .. _frontstore-guide--orders-matrix:
 
