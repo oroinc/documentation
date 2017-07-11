@@ -12,7 +12,6 @@ OroCommerce as a B2B eCommerce platform provides a number of self-serve capabili
 
 OroCommerce provides corporate accounts, multiple organizations, websites and stores, high-performance content management system (CMS) with product, :ref:`inventory <user-guide--inventory>` and :ref:`warehouse <user-guide--inventory--warehouses--view>` management, personalized :ref:`web catalog management <user-guide--web-catalog>`.
 
-.. `product <./products/products>`_
 .. , multiple and customized `price lists <./sales/price-lists>`_ for your sales organization and multiple `shopping lists <./sales/shopping-lists>`_ for your buyer's organization.
 
 .. contents:: :local:
@@ -108,6 +107,8 @@ Table of Contents
 
    getting_started/index
 
+   products/index
+
    inventory/index
 
    pricing/index
@@ -133,6 +134,8 @@ Table of Contents
    segments/index
 
    system/index
+
+   
 
 ..   install/index
 

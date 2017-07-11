@@ -5,6 +5,10 @@ Images
 
 .. begin
 
+.. |IcClose| raw:: html
+
+   <i class="fa fa-close fa-lg" aria-hidden="true"></i>
+
 .. |IcActivate| raw:: html
 
    <i class="fa fa-check fa-lg" aria-hidden="true"></i>
@@ -108,6 +112,10 @@ Images
 .. |Bplus| raw:: html
 
    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+
+.. |IcDuplicate| raw:: html
+
+   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
 
 
 .. |IcBars| raw:: html

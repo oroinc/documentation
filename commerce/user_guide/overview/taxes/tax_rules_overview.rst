@@ -3,7 +3,12 @@ Overview
 
 .. begin
 
-Tax rules help OroCommerce find the correct tax rate that should be used for the products listed in the purchase order by matching the product tax code that indicates tax status of the product, customer tax code that indicates tax status of the buying company, and tax jurisdiction where the tax is due. OroCommerce supports tax exemption mechanism: you can set zero tax rate for some customers and/or products.
+Tax rules help OroCommerce find the correct tax rate that should be used for the
+products listed in the purchase order by matching the product tax code that
+indicates tax status of the product, customer tax code that indicates tax status
+of the buying company, and tax jurisdiction where the tax is due. OroCommerce
+supports tax exemption mechanism: you can set zero tax rate for some customers
+and/or products.
 
 Basically, in OroCommerce, tax rule binds the following items:
 

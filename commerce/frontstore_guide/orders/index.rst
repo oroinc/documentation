@@ -188,8 +188,6 @@ To create an order using a quick order form:
 
 5. To complete the order, click **Create Order**.
 
-   .. note:: You can also :ref:`Request a Quote <frontstore-guide--rfq>` and Add the order to the Quick Order Shopping List.
-
 .. _frontstore-guide--orders-matrix:
 
 Matrix Ordering Form

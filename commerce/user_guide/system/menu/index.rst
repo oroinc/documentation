@@ -69,7 +69,7 @@ On the menu list you can see the menus available for review or customization.
    :end-before: stop
 
 Related Topics
---------------
+~~~~~~~~~~~~~~
 
 * :ref:`Customize a Menu <doc-managing-app-menu>` in the Developer Guide
 

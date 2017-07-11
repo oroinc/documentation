@@ -22,8 +22,8 @@ To define the custom configuration options for the particular website:
 
    In the **System Configuration** section, you may override the global system configuration for the following option groups:
 
-   * :ref:`Websits Routing <sys--websites--sysconfig--websites--routing>`
-   * :ref:`Websits Sitemap <sys--websites--sysconfig--websites--sitemap>`
+   * :ref:`Website Routing <sys--websites--sysconfig--websites--routing>`
+   * :ref:`Website Sitemap <sys--websites--sysconfig--websites--sitemap>`
    * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`
    * Email Configuration for the Website
 
@@ -31,6 +31,7 @@ To define the custom configuration options for the particular website:
 
    * :ref:`Customers: Customer Users <system--website--configuration--commerce--customers--customer-users>`
    * **Design: Theme**
+   * **Product: Product Images**
    * **Inventory: Warehouse**
    * **Inventory: Product Options**
    * **Inventory: Limitations**

@@ -13,7 +13,8 @@ To limit the shipping methods per quote:
 
 #. In the **Shipping Information** section, configure the shipping options available for the customer:
 
-   .. image Shipping Options.
+   .. image:: /user_guide/img/sales/quotes/ShippingInformation.png
+      :class: with-border
 
    a) In the **Shipping Methods** list, tick the boxes next to the shipping methods that you would like the customer to use for this order delivery.
 

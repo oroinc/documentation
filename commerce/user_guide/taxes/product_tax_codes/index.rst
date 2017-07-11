@@ -1,3 +1,5 @@
+.. _taxes--product-tax-code:
+
 Product Tax Codes
 -----------------
 
