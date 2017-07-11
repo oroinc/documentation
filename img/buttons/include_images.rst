@@ -9,6 +9,12 @@ Images
 
    <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
 
+.. fa-bars = fa-navicon
+
+.. |IcBars| raw:: html
+
+   <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+
 .. |IcFilter| raw:: html
 
    <i class="fa fa-filter fa-lg" aria-hidden="true"></i>
@@ -54,10 +60,6 @@ Images
 .. |Bplus| raw:: html
 
    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
-
-.. |IcBars| raw:: html
-
-   <i class="fa fa-navicon fa-lg" aria-hidden="true"></i>
 
 .. |IcMore| raw:: html
 
