@@ -132,3 +132,39 @@ Images
 .. |IcEllipsisH| raw:: html
 
    <i class="fa fa-ellipsis-h fa-lg" aria-hidden="true"></i>
+
+.. |IcClone| raw:: html
+
+   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
+
+.. |IcFilesO| raw:: html
+
+   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
+
+.. |IcLanguage| raw:: html
+
+   <i class="fa fa-language fa-lg" aria-hidden="true"></i>
+
+.. |IcSearchPlus| raw:: html
+
+   <i class="fa fa-search-plus fa-lg" aria-hidden="true"></i>
+
+.. |IcSearchMinus| raw:: html
+
+   <i class="fa fa-search-minus fa-lg" aria-hidden="true"></i>
+
+.. |IcExpand| raw:: html
+
+   <i class="fa fa-expand fa-lg" aria-hidden="true"></i>
+
+.. |IcPlusSquareO| raw:: html
+
+   <i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i>
+
+.. |IcReply| raw:: html
+
+   <i class="fa fa-reply fa-lg" aria-hidden="true"></i>
+
+.. |IcShare| raw:: html
+
+   <i class="fa fa-share fa-lg" aria-hidden="true"></i>

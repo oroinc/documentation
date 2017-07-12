@@ -38,11 +38,7 @@ Create Email Templates
 
 3. Define the email template. Click on the necessary variable to add drag it to the text box. 
 
-   |
-
    .. image:: ../img/marketing/email_template_ex.png
-
-   |
 
    .. note:: In the example below, the template contains a link to the website page composed with a piece of :ref:`tracking code <user-guide-how-to-track>`. Every time a user follows the link, visit event will be tracked for the campaign.
 
@@ -88,15 +84,7 @@ the :ref:`grid <doc-grids>`:
   
   
   
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
-   :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
-   :align: middle
-   
-.. |IcClone| image:: ../../img/buttons/IcClone.png
-   :align: middle
-   
 .. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
    :align: middle
    
@@ -107,3 +95,6 @@ the :ref:`grid <doc-grids>`:
    :align: middle
    
 .. |email_template_create| image:: ../img/marketing/email_template_create.png
+
+.. include:: ../../img/buttons/include_images.rst
+   :start-after: begin

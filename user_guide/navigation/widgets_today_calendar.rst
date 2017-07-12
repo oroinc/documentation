@@ -17,7 +17,7 @@ Widget's Header
 ---------------
 
 Expand / Collapse the Widget
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Click **+** / **-** in the upper-left corner of the widget to expand / collapse it.
 
@@ -27,17 +27,17 @@ Add a Calendar Event
 Click the :guilabel:`New Event` button to add a new calendar event. See the :ref:`Add a Calendar Event <doc-activities-events-actions-add>` action description.
 
 Move the Widget
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 Click the |IcMoveW| **Move** icon and drag-and-drop the widget to move to another part of a dashboard.
 
 Remove the Widget
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 Click the |IcDelete| **Delete** icon to remove the widget from a dashboard.
 
 Open the Calls Grid
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 Click the **My Calendar** link to open the **My Calendar** page.
 
@@ -150,8 +150,6 @@ Tasks:
 .. |IcRemove| image:: ../../img/buttons/IcRemove.png
    :align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
-   :align: middle
 
 .. |IcShow| image:: ../../img/buttons/IcShow.png
    :align: middle
