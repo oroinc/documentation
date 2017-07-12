@@ -1,3 +1,5 @@
+.. _sys--conf:
+
 General Oro Commerce Configuration
 ==================================
 
@@ -36,6 +38,8 @@ This section contains information on the system configuration options specific f
    
    ../../marketing_web_catalog/configuration/index.rst
 
+   /user_guide/system/commerce_configuration/sales_info.rst
+
    payment_configuration
 
    shipping_options
@@ -43,3 +47,5 @@ This section contains information on the system configuration options specific f
    shipping_origin
 
    shipping_tax
+
+   sales_info

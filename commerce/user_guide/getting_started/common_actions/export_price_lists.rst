@@ -1,3 +1,5 @@
+:orphan:
+
 .. _export-price-lists:
 
 Export Prices From the Price List

@@ -1,3 +1,5 @@
+:orphan:
+
 Price Calculation on the Front Store
 ------------------------------------
 

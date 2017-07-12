@@ -85,13 +85,13 @@ To create a new quote from scratch:
 
 7. In the **Shipping Information** section, configure the recommended shipping options for the customer:
 
-   .. image:: /user_guide/img/sales/quotes/create_quote_shipping.png
+   .. image:: /user_guide/img/sales/quotes/CreateQioteShipping.png
 
    .. TODO For BB-7506, update the image above, and use the commented lines below:
 
    .. a) In the **Shipping Methods** list, tick the boxes next to the shipping methods that you would like the customer use for this order delivery.
 
-   a) In the **Shipping Methods** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
+   a) In the **Shipping Method** list, select the recommended (default) shipping method that will be pre-selected when the customer gets to the shipping configuration on the checkout.
 
    .. .. note:: When none of the methods are selected, the customer can use any of the listed methods.
 
