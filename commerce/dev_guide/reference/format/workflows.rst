@@ -102,7 +102,7 @@ There two options which must be configured based on the chosen ``type``:
 **type**: ``string``
 
 An optional property path used to access the attribute's value (if this is set, the other options
-can be guessed). You can refer to the underlying entity by a variable whose name is controled with
+can be guessed). You can refer to the underlying entity by a variable whose name is controlled by
 the :ref:`entity_attribute option <reference-format-workflow-entity-attribute>` (its default value
 is ``entity``).
 

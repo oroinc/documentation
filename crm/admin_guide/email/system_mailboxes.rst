@@ -1,7 +1,7 @@
 .. _admin-configuration-system-mailboxes:
 
-System Mailboxes
-================
+Manage System Mailboxes
+=======================
 
 System mailbox allows people who don't have access to the company mailbox addresses write to the company. 
 You can create several system mailboxes. This may be, for example, a mailbox for support requests, for business 
@@ -144,6 +144,4 @@ Save the created mailbox with the button in the top right corner of the page.
 All the system mailboxes can be viewed and processed from the "System Mailboxes" 
 :ref:`grid <doc-grids>` in the corresponding section of the Email Configuration page.
 
-
 .. image:: ../img/system_mailbox/system_mb_grid.png
-  

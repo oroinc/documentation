@@ -12,7 +12,7 @@ Overview
 In order to save and process the details of commercial activity with people or businesses that have authority, budget and interest to purchase goods and/or services from you, for whom the probability of actual sales is not yet high or is impossible to define, use **Lead** records in OroCRM (“leads”). Essentially, leads are prospects or potential sales in a form of contact data. Initial agreement discussions, preliminary price requests or invitations for a bid may be examples of a lead.
  
 Enable Lead Record
--------------------
+------------------
 You can enable (or disable) a lead manually the following way:
 
 - Navigate to **Settings>Configuration** in the main menu.
@@ -292,7 +292,7 @@ Using Leads in Workflows
 ------------------------
 
 You can use
-OroCRM’s :term:`workflows <Workflow>` to define rules and guidelines on possible actions/updates of leads in the system. New customer-specific workflows can also be created, as described in the :ref:`Workflows guide <user-guide-workflow-management>`.
+OroCRM’s :term:`workflows <Workflow>` to define rules and guidelines on possible actions/updates of leads in the system. New customer-specific workflows can also be created, as described in the :ref:`Workflows guide <doc--workflows>`.
 
 
   

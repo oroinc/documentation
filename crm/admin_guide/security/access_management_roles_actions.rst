@@ -8,7 +8,7 @@ Actions with Roles
 
 
 Actions
---------
+-------
 
 Create a Role
 ^^^^^^^^^^^^^
@@ -36,7 +36,7 @@ Create a Role
 
 5. Click **Entities**. In this section define which 'action on entity' permissions and which capabilities you want to include in the role. For more information about the 'action on entity' permissions and capabilities, see the `Roles Management <./access-management-roles>`__ guide.
  
-   1. For each action on each entity specify the required access level. By default, for all entities access levels are set to **None**. Choose an entity which you want to assign different permissions for. In the entity row, click the action name and in the drop-down list, click the required access level. For more information about the access levels, see the `Access Levels <./access-management-access-levels>`__ guide.
+   1. For each action on each entity specify the required access level. By default, for all entities access levels are set to **None**. Choose an entity which you want to assign different permissions to. In the entity row, click the action name and in the drop-down list, click the required access level. For more information about the access levels, see the `Access Levels <./access-management-access-levels>`__ guide.
    
    |
    
@@ -61,8 +61,13 @@ Create a Role
    .. image:: ../img/access_roles_management/role_create_entities_acl2.png
 
    |
-   
-6. Click **Users**, and in the grid, select check boxes in front if the users to whom you want to assign this role.
+
+6. Click **Workflows** and for each workflow / workflow transition and each action specify the required access level. By default, for all workflows access levels are set to **None**. Choose the workflow or transition to which you want to assign different permissions, click the action name, and in the drop-down list, click the required access level. For more information about the access levels, see the `Access Levels <./access-management-access-levels>`__ guide.
+
+   .. tip:: If you cannot see individual transitions of the workflow, click the **+** **Expand** icon in front of the workflow name to expand the transitions list.
+
+
+7. Click **Users**, and in the grid, select check boxes in front if the users to whom you want to assign this role.
 
 |
    
@@ -70,13 +75,13 @@ Create a Role
 
 |
 
-7. lick the :guilabel:`Save` button in the upper-right corner. 
+7. Click the :guilabel:`Save` button in the upper-right corner. 
 
 
 
 
 Clone a Role
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 You can create a role by cloning the existing one. For this, do as follows:
 
@@ -113,7 +118,7 @@ Alternatively, you can clone a role from the role view page by clicking the :gui
 
 
 Review a Role
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 1. Open the role view page:
 
@@ -126,7 +131,7 @@ Review a Role
 
 
 Edit a Role
-^^^^^^^^^^^^
+^^^^^^^^^^^
 
 1. Open the role view page:
 
@@ -144,7 +149,7 @@ Edit a Role
 
 
 Delete a Role
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 1. In the main menu, navigate **System>User Management>Roles**.
 
@@ -176,7 +181,7 @@ Alternatively, you can delete a role from the role view page by clicking the :gu
 
 
 Include Permissions for an Entity Field in a Role
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
   For more information about the field level ACLs, see the `Roles on the Interface <./access-management-field-level-acl>`__ guide.
@@ -215,8 +220,9 @@ Include Permissions for an Entity Field in a Role
 
 
 Roles in the User Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-For how to assign a role to a user, review and modify the range of roles assigned to the user, see the :ref:`User Access Settings <user-guide--user-management--permissions--user-access-settings>` guide.
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For how to assign a role to a user, review and modify the range of roles assigned to the user, see the `User Access Settings <./access-management-user-asccess-settings>`__ guide.
 
 
 Links

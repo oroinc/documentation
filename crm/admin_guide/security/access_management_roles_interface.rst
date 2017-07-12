@@ -6,7 +6,9 @@ Role on the Interface
 .. contents:: :local:
     :depth: 3
 
-The information about a role is divided into four sections. 
+    
+
+The information about a role is divided into several sections.
 
 |
 
@@ -15,7 +17,7 @@ The information about a role is divided into four sections.
 |
 
 General Section
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 +-------+----------------------------------------------------------------+
 | Field | Description                                                    |
@@ -39,7 +41,7 @@ Additional Section
 Entity Section
 ^^^^^^^^^^^^^^
 
-This section contains information about permissions included in a role. 
+This section contains information about the granted 'action on entity' permissions and permissions to access system functionalities.
 
 For convenience, permissions are grouped in tabs by functions they control:
 
@@ -81,6 +83,15 @@ It is divided itself in the following sections:
 
 
 For more information about the system capabilities, see the `Capabilities List <./admin-capabilities>`.
+
+Workflows Section
+^^^^^^^^^^^^^^^^^
+
+This section contains information about the granted permissions to view workflows and progress records through them.
+
+Click the **+** **Expand** icon in front of the workflow name to see permissions to perform individual transactions within the wokflow.
+
+.. image:: ../img/access_roles_management/roles_workflowsection.png
 
 
 Users Section
