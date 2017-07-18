@@ -18,6 +18,7 @@ Menu Types Overview
 
 .. include:: /user_guide/overview/system/menus_overview.rst
    :start-after: begin
+   :end-before: finish
 
 Permissions Required to Customize Menus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
