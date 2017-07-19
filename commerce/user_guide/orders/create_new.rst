@@ -43,12 +43,12 @@ To create a new order from scratch:
    .. image:: /user_guide/img/sales/orders/CreateOrderLineItems.png
       :class: with-border
 
-5. In the **Billing Address** section, fill in the billing address details when you are done adding products. Use the drop down to select an existing billing address, or select **Enter Other Address** to add a new one.
+5. In the **Billing Address** section, fill in the billing address details when you are done adding products. Use the drop down to select an existing billing address, or select **New address** to add a new one.
    
    .. image:: /user_guide/img/sales/orders/CreateOrderBillingAddress.png
       :class: with-border
 
-7. In the **Shipping Address** section, fill in the shipping address details. Use the drop down to select an existing shipping address, or select **Enter Other Address** to add a new one.
+7. In the **Shipping Address** section, fill in the shipping address details. Use the drop down to select an existing shipping address, or select **New address** to add a new one.
    
    .. image:: /user_guide/img/sales/orders/CreateOrderShippingAddress.png
       :class: with-border
