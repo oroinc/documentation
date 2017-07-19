@@ -15,11 +15,12 @@ To edit an order:
 
 #. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
 
-#. Update the required information. See :ref:`Create an Order From Scratch topic <user-guide--sales--orders--create>` for detailed information on the available options.
+#. Update the required information. See :ref:`Create an Order From Scratch <user-guide--sales--orders--create>` and :ref:`Manage Promotions in Orders <user-guide--marketing--promotions--edit--in-order>` topics for detailed information on the available options.
 
 #. Click **Save** on the top right of the page.
 
 The order is updated.
+
 
 .. finish
 

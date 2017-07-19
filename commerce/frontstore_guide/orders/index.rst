@@ -60,7 +60,7 @@ All past orders table contains the following information:
 6. Payment Method
 7. Payment Status
 8. PO Number
-9. 11. DNSLT (Do Not Ship Later Than)
+9. DNSLT (Do Not Ship Later Than)
 10. Currency
 11. Subtotal
 12. Subtotal ($)
@@ -98,18 +98,20 @@ Past order view page contains the following information:
 3. Shipping Address
 4. Shipping Tracking Numbers
 5. Shipping Method
-6. payment Method
+6. Payment Method
 7. Payment Status
 8. Items Ordered (Products, Quantity, Price, Ship by, Notes)
 9. Subtotal
 10. Shipping Price
 11. Tax
-12. Total
+12. Discount
+13. Total
     
 To go back a step, click **Back to Orders List** on the bottom left of the view page.
 
 
 .. image:: /frontstore_guide/img/orders/PastOrder.png
+
 
 .. _frontstore-guide--orders-create:
 
@@ -130,10 +132,13 @@ To create an order from a shopping list:
 2. From the dropdown, select the required shopping list.
 3. Click **View Details**.
 4. To create an order, either click **Create Order** on the right of the shopping list name, or scroll down to the bottom of the page and click **Create Order** on the bottom right of the shopping list view page.
-   
-.. image:: /frontstore_guide/img/orders/CreateOrder1.png
 
-.. image:: /frontstore_guide/img/orders/CreateOrder2.png
+   .. note:: If there are any discounts that apply to your order, this will be displayed in the order totals.
+
+   .. image:: /frontstore_guide/img/orders/CreateOrder1.png
+
+   .. image:: /frontstore_guide/img/orders/CreateOrder2.png
+
 
 5. Follow the required steps to submit the order, as described in the :ref:`Checkout Process <frontstore-guide--orders-checkout>` topic.
 
