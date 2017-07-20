@@ -7,7 +7,7 @@ This is configured on your web server.
 For nginx
 ~~~~~~~~~
 
-To enable compression, add the following into your ``nginx.conf`` or website configuration file:
+To enable ``gzip`` compression, add the following into your ``nginx.conf`` or website configuration file:
 
 .. code::
 
@@ -20,6 +20,18 @@ To enable compression, add the following into your ``nginx.conf`` or website con
    gzip_proxied any;
    gzip_types text/plain application/javascript application/x-javascript text/javascript text/xml text/css image/svg+xml;
    gzip_vary on;
+
+.. note:: *Nginx.conf* is usually located at ``/etc/nginx/nginx.conf``.
+
+To install ``pagespeed_mod`` for nginx, use the `build ngx pagespeed from source <https://modpagespeed.com/doc/build_ngx_pagespeed_from_source>`_ guidance.
+To enable ``HTML compression``, add the following lines into your ``nginx.conf`` or website configuration file in sections ``server`` or ``http``:
+
+.. code::
+
+    pagespeed on;
+    pagespeed FileCachePath "/var/cache/ngx_pagespeed";
+    pagespeed EnableFilters collapse_whitespace;
+    pagespeed Disallow "*.svg*";
 
 .. note:: *Nginx.conf* is usually located at ``/etc/nginx/nginx.conf``.
 
@@ -98,3 +110,12 @@ Ensure these modules are enabled in Apache configuration:
            </filesMatch> 
       </IfModule> 
 
+3.  To install ``Pagespeed`` module for Apache, follow the guidance on `installing from Apache-only packages <https://modpagespeed.com/doc/download>`_
+    To enable ``HTML compression``, ensure that these lines are uncommetned in ``pagespeed.conf``:
+
+    .. code::
+
+        ModPagespeed On
+        ModPagespeedFileCachePath "/var/cache/mod_pagespeed/"
+        ModPagespeedEnableFilters collapse_whitespace
+        AddOutputFilterByType MOD_PAGESPEED_OUTPUT_FILTER text/html
