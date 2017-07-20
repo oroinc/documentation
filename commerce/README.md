@@ -1,6 +1,8 @@
-# OroPlatform Documentation
+# OroCommerce Documentation Source
 
 The use of the documentation is subject to the [CC-BY-NC-SA 4.0](./LICENSE) license.
+
+Documentation is published at https://www.orocommerce.com/documentation
 
 ## Build Documentation in Local Environment
 
