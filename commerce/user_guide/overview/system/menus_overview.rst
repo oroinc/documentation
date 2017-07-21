@@ -88,9 +88,10 @@ A **commerce_footer_links** defines the structure of the links in the OroCommerc
 
 .. image:: /user_guide/img/system/frontend_menu/FrontendFooterMenu.png
 
-User Menu Look and Feel
-"""""""""""""""""""""""
-Front store user menu is not customizable, however, the way it is displayed can be configured globally, on organization and website levels.
+User and Account Menu Look and Feel
+"""""""""""""""""""""""""""""""""""
+
+Front store user menu is customizable via the `Customer User Menu`_ and `Account Menu`_, and the way it is displayed can be configured globally, on organization, and website levels.
 
 .. image:: /user_guide/img/system/frontend_menu/ShowAllItemsAtOnce.png
 
@@ -122,6 +123,22 @@ To configure user menu on the website level:
           * When *Show subitems in a popup* is selected, the user menu has the following look in the font store:
 
              .. image:: /user_guide/img/system/frontend_menu/ShowSubitemsInPopup.png
+
+Customer User Menu
+""""""""""""""""""
+
+A **customer_usermenu** is a front store user menu that defines what a customer will see within it.
+
+.. note:: It is only active when user menu template is set to *Show subitems in a popup* in system, organization, or website configuration.
+
+         .. image:: /user_guide/img/system/frontend_menu/UserMenu2.png
+
+Account Menu
+""""""""""""
+
+An **oro_customer_menu** is a front store menu that defines what options the Account section of the user menu is populated with.
+
+.. image:: /user_guide/img/system/frontend_menu/AccMenu.png
 
 .. OroCRM Customer/Partner Portal Menus
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

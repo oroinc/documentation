@@ -1,3 +1,7 @@
+.. _user-guide--landing-pages-create:
+
+.. begin
+
 Create a Landing Page
 ---------------------
 
@@ -19,6 +23,10 @@ To create a new Landing Page:
    To ensure that slug prototype translation is localization-friendly, manage slug prototype translations: click |IcTranslate| next to the **Slug Prototypes** box and follow the guidance :ref:`here <config-guide--translations>`).
 
 #. Enter the landing page content in the WYSIWYG text editor or use the source code mode (**<>**) to enter the html code.
+
+   .. note:: You can insert the *Contact Us widget* into the required page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. The form should then become visible in the front store.
+
+             .. image:: /user_guide/img/system/configuration/contact_us/ContactWidget.png
 
 #. In the SEO section, manage the meta description and meta keywords that will be incapsulated in the landing page.
 
