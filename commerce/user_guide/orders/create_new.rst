@@ -76,12 +76,19 @@ To create a new order from scratch:
    .. image:: /user_guide/img/sales/orders/CreateOrderDiscount.png
       :class: with-border
 
-11. In the **Order Totals** section, review the final amount.
+11. In the **Promotions** section, review the :ref:`promotions <user-guide--marketing--promotions>` that may apply to your order. Make sure to click **Save** before checking out if any promotions apply to the selected item(s) in the order.
 
-    .. image:: /user_guide/img/sales/orders/ CreateOrderTotal.png
+ .. image:: /user_guide/img/sales/orders/CreateOrderPromotions.png
+    :class: with-border
+
+12. In the **Order Totals** section, review the final amount.
+
+    .. image:: /user_guide/img/sales/orders/CreateOrderTotal.png
        :class: with-border
 
-12. To save the order, click **Save** in the top right corner of the page.
+13. To save the order, click **Save** in the top right corner of the page.
+
+
 
 .. finish 
 

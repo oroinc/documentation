@@ -14,12 +14,12 @@ To enable New Product icons per website:
 1. Navigate to **System > Website** in the main menu.
 2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Product > Promotions** in the menu to the left.
-4. In the **New Product Icons**, clear the **Use Default** box and select **Yes** in the **Show on Product View** field.
 
    The following page opens.
 
-.. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsPerWebsite.png
-   :class: with-border
+   .. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsBlockWeb.png
+
+4. In the **New Product Icons**, clear the **Use Default** box and select **Yes** in the **Show on Product View** field.
 
 4. Click **Save**.
 

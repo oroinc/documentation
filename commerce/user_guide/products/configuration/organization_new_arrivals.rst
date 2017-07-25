@@ -14,12 +14,12 @@ To enable New Product icons per organization:
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| more actions menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Product > Promotions** in the menu to the left.
-4. In the **New Product Icons**, clear the **Use Default** box and select **Yes** in the **Show on Product View** field.
 
    The following page opens.
 
-.. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsPerOrganization.png
-   :class: with-border
+   .. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsBlockOrg.png
+
+4. In the **New Product Icons**, clear the **Use Default** box and select **Yes** in the **Show on Product View** field.
 
 4. Click **Save**.
 

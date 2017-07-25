@@ -88,21 +88,73 @@ A **commerce_footer_links** defines the structure of the links in the OroCommerc
 
 .. image:: /user_guide/img/system/frontend_menu/FrontendFooterMenu.png
 
-OroCRM Customer/Partner Portal Menus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+User and Account Menu Look and Feel
+"""""""""""""""""""""""""""""""""""
 
-.. contents:: :local:
-   :depth: 1
+Front store user menu is customizable via the `Customer User Menu`_ and `Account Menu`_, and the way it is displayed can be configured globally, on organization, and website levels.
 
-Main Menu
-"""""""""
-A **frontend menu** is a main menu on the customer/partner portal.
+.. image:: /user_guide/img/system/frontend_menu/ShowAllItemsAtOnce.png
 
-.. image:: /user_guide/img/system/frontend_menu/FrontendMenu.png
+To configure user menu globally:
 
-User Menu
-"""""""""
+1. Navigate to **System > Configuration** in the main menu.
+2. Click **Commerce > Design > Theme** in the panel on the left.
+3. In the **Menu Templates** section you have the following templates for user menu - *Show all items at once* (the default template) and *Show subitems in a popup*.
 
-A **customer_usermenu** is a user menu on the customer/partner portal.
+To configure user menu on the organization level:
 
-.. image:: /user_guide/img/system/frontend_menu/FrontendCustomerMenu.png
+1. Navigate to the system configuration (click **System > User Management > Organization** in the main menu).
+2. For the necessary organization, hover over the |IcMore| *more actions* menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
+3. Select **Commerce > Design > Theme** in the menu to the left.
+4. In the **Menu Templates** section you have the following templates for user menu - *Show all items at once* (the default template) and *Show subitems in a popup*.
+
+
+To configure user menu on the website level:
+
+1. Navigate to the system configuration (click **System > Websites** in the main menu).
+2. For the necessary website, hover over the |IcMore| *more actions* menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+3. Select **Commerce > Design > Theme** in the menu on the left.
+4. In the **Menu Templates** section you have the following templates for user menu - *Show all items at once* (the default template) and *Show subitems in a popup*.
+
+.. note:: * When *Show all items at once* is selected, the user menu has the following look in the front store:
+
+             .. image:: /user_guide/img/system/frontend_menu/ShowAllItemsAtOnce.png
+
+          * When *Show subitems in a popup* is selected, the user menu has the following look in the font store:
+
+             .. image:: /user_guide/img/system/frontend_menu/ShowSubitemsInPopup.png
+
+Customer User Menu
+""""""""""""""""""
+
+A **customer_usermenu** is a front store user menu that defines what a customer will see within it.
+
+.. note:: It is only active when user menu template is set to *Show subitems in a popup* in system, organization, or website configuration.
+
+         .. image:: /user_guide/img/system/frontend_menu/UserMenu2.png
+
+Account Menu
+""""""""""""
+
+An **oro_customer_menu** is a front store menu that defines what options the Account section of the user menu is populated with.
+
+.. image:: /user_guide/img/system/frontend_menu/AccMenu.png
+
+.. OroCRM Customer/Partner Portal Menus
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   .. contents:: :local:
+      :depth: 1
+      Main Menu
+      """""""""
+      A **frontend menu** is a main menu on the customer/partner portal.
+      .. image:: /user_guide/img/system/frontend_menu/FrontendMenu.png
+      User Menu
+      """""""""
+      A **customer_usermenu** is a user menu on the customer/partner portal.
+      .. image:: /user_guide/img/system/frontend_menu/FrontendCustomerMenu.png
+
+.. finish
+
+.. include:: /user_guide/include_images.rst
+   :start-after: begin
+

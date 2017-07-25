@@ -1,5 +1,7 @@
 .. _user-guide--new-products:
 
+.. contents:: :local:
+
 Highlight New Products
 ----------------------
 
@@ -50,5 +52,35 @@ Enable New Product Icons per Organization
 
 .. finish_higlight_new_products
 
+.. _user-guide--new-arrivals:
+
+Set Up New Arrivals
+-------------------
+
+To promote new arrivals on the store homepage, you can set up and control the products included in the **New Arrivals** block. This can be done on three levels - globall, per organization and per website.
+
+Set Up New Arrivals Globally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/global_new_arrivals_block.rst
+   :start-after: begin
+   :end-before: finish
+
+Set Up New Arrivals per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/organization_new_arrivals_block.rst
+   :start-after: begin
+   :end-before: finish
+
+Set Up New Arrivals per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/website_new_arrivals_block.rst
+   :start-after: begin
+   :end-before: finish
+
+
 .. include:: /user_guide/include_images.rst
    :start-after: begin
+

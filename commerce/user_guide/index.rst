@@ -129,6 +129,8 @@ Table of Contents
 
    marketing_landing_pages/index
 
+   marketing_promotions/index
+
    marketing_content_blocks/index
 
    taxes/index
