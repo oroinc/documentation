@@ -73,7 +73,7 @@ localization options to be applied to the OroCRM instance, as follows:
   Otherwise, the *Primary Location* formatting will be applied.","US" 
   "**First Quarter Starts On***","Defines the quarter start date.","January 1"
   "**Timezone***","Defines the timezone to be applied for all the time settings defined in the instance. If the 
-  time-zone is changed all the time settings (e.g. due dates of :ref:`tasks <user-guide-activities-tasks>`), time of
+  time-zone is changed all the time settings (e.g. due dates of :ref:`tasks <doc-activities-tasks>`), time of
   reminders, etc. will be changed correspondingly.","UTC +02:00"
   "**Currency***","Defines the default currency used in the system. There is no currency conversion in the system, so the
   setting basically defines the currency label applied to the monetary values defined in the system.","US dollars"
@@ -136,6 +136,7 @@ language-related options to be applied to the OroCRM instance, as follows:
 
   "
 
+.. _doc-configuration-display-settings:
 
 Display Settings
 ----------------

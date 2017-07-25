@@ -1,7 +1,7 @@
 .. _user-guide-log-in:
 
 Access Oro
-==============
+==========
 
 To get to your OroCRM account, enter the OroCRM instance url.
 
@@ -14,7 +14,7 @@ To get to your OroCRM account, enter the OroCRM instance url.
     
 .. _user-guide-getting-started-log-in:
 
-Log in
+Log In
 ------
 
 Your administrator will determine this but typically upon your user account creation you will receive an email with your 
@@ -24,8 +24,8 @@ in.
 
 .. caution::
 
-    It is strictly recommended to change your password immediately after the first login. You can learn how to do it in 
-    the :ref:`Changing Your Password section<user-guide-getting-started-profile-password>` below.
+    It is strictly recommended to change your password immediately after the first login. You can learn how to do it, see
+    the :ref:`Changing Your Password section <doc-my-user-actions-change-password>` topic.
 
 If you have forgotten the credentials, click the *"Forgot your password?"* link and follow the wizard to restore them.
 
@@ -48,7 +48,7 @@ check with your system administrator to see if this is the case.
 
 
 Log out
---------
+-------
 
 Go to the User Menu in the top right corner of the page, and select the *"Logout"* item.
 

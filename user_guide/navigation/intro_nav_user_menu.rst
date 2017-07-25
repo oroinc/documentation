@@ -14,7 +14,7 @@ My User
 -------
 
 This link opens your user profile that is described in the 
-:ref:`corresponding section <user-guide-getting-started-my-user-overview>` of the 
+:ref:`corresponding section <doc-my-user-view-page>` of the
 *Log In, View Your User Page, and Set Up Your Profile* guide.
 
 My Emails
@@ -39,8 +39,8 @@ Click the :guilabel:`Compose` button to create a new email.
 
 My Tasks
 --------    
-  
-On this page you can see all the :ref:`tasks <user-guide-activities-tasks>` that have been assigned to you. 
+
+On this page you can see all the :ref:`tasks <doc-activities-tasks>` that have been assigned to you.
 
 My Calendar
 -----------

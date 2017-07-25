@@ -6,7 +6,7 @@ Send Email
 Use the "*Send Email*" action to send an email from OroCRM.
 
 The  action will be available for records of entities with the *"Emails"* activity
-:ref:`enabled <user-guide-activities-enable>`.
+:ref:`enabled <doc-entity-actions-create>` (see step 4).
 
 .. note::
 

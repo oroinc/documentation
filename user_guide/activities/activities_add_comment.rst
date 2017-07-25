@@ -11,7 +11,7 @@ action.
 .. note::
 
     Comments are available for any activity or entity that has the Comments activity 
-    :ref:`enabled <user-guide-activities-enable>`.
+    :ref:`enabled <doc-entity-actions-create>` (see step 4).
 
 
 Create and View Comments

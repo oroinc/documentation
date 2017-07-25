@@ -1,11 +1,23 @@
 
 .. _user-guide-widgets:
 
-Dashboard Widgets For Sales
-===========================
+Dashboard Widgets
+=================
 
-Overview
---------
+Activities Widgets
+------------------
+
+:ref:`Recent Emails <doc-widgets-recent-emails>`
+
+:ref:`Today's Calendar <doc-widgets-today-calendar>`
+
+:ref:`Recent Calls <doc-widgets-recent-calls>`
+
+
+
+
+Widgets for Sales
+-----------------
 
 Specifically for business sales, there are a number of dashboards
 widgets available that can simplify day-to-day sales process activities.
@@ -346,3 +358,11 @@ The widget shows the top 5 campaigns that generate the most income.
 
 
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   widgets_recent_calls
+   widgets_recent_emails
+   widgets_today_calendar
+   widgets_sidebar_tasks

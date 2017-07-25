@@ -14,12 +14,12 @@ calendar events, and more.
 .. toctree::
 
     activities_overview
-    activities_add_assign_tasks
+    tasks/index
     activities_create_case
-    activities_add_assign_calendar_events
+    calendar_events/index
     calendars_overview
     activities_send_email
-    activities_log_call
+    calls/activities_calls_overview
     activities_create_contact_request
     activities_add_note
     activities_add_comment

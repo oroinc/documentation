@@ -5,10 +5,7 @@ Add Attachment
 
 You can add an attachment to a record in OroCRM.
 
-.. note::
 
-    Attachments are available only for the entities for which they are :ref:`enabled <user-guide-activities-enable>`.
-    
 .. hint::
 
     The attachment settings depend on the specific entity settings. See step 5 of the :ref:`Create and Entity <doc-entity-actions-create>` action description.

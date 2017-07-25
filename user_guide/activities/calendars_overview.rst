@@ -14,8 +14,8 @@ defined for the whole organization or system.
 Tasks and Calendar Events
 -------------------------
 
-You can :ref:`create task <user-guide-activities-tasks>` and 
-:ref:`create calendar events <user-guide-activities-create-events>`.
+You can :ref:`create task <doc-activities-tasks-actions-add-detailed>` and
+:ref:`create calendar events <doc-activities-events-actions-add-detailed>`.
 
 Each task/event will have an owner (user, who has created it and other users, subject to roles and permissions defined) 
 and the user, to whom the task/event has been assigned.

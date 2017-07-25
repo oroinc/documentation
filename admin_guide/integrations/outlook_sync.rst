@@ -101,8 +101,9 @@ In the example below, you can see the add-in default look:
 .. sidebar:: Use Default
 
     Beside each of the settings there is a *"Use Default"* check-box. If the check-box is active, the default value will 
-    be used. Default values for each of the settings are described in corresponding sections below.  
+    be used. Default values for each of the settings are described in corresponding sections below.
 
+.. _doc-ms-outlook-add-in-set-up-outlook-side:
 
 Integration Settings on the OroCRM Side
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

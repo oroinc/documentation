@@ -220,16 +220,7 @@ keep others visible (such as those that are due today). When you don't need the 
 Task List
 ^^^^^^^^^
 
-To see the newest tasks you have been assigned, use the Task List widget. The widget displays the task name and due 
-date.
-
-|
-
-.. image:: ../img/navigation/sidebar/sb_task.png
-
-|
-
-You can change the number of tasks that are displayed at the same time in the settings.
+See :ref:`Task List Widget <doc-widgets-sidebar-task-list>`.
 
 
 Conclusion

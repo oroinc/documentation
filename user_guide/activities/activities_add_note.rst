@@ -6,7 +6,7 @@ Add Note
 To save additional information about the record in OroCRM, use the "*Add Note"* action.
 
 The *Add Note* action will be available for records of entities, for which "Enable Notes" has been 
-:ref:`set to yes <user-guide-activities-enable>`.
+:ref:`set to yes <doc-entity-actions-create>` (see step 4).
 
 1. Click :guilabel:`Add Note` in the :ref:`actions <user-guide-ui-components-view-page-actions>` tab of the record.
 
