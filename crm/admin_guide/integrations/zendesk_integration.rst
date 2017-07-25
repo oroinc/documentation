@@ -316,7 +316,12 @@ The case fields are mapped to the Zendesk ticket fields as follows:
   "
 
 - After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in OroCRM.
-  
+
+.. note:: Please note that reopening a ticket in your Oro application will not reopen the same ticket in Zendesk. In addition, when the ticket in closed in Zendesk, comments added to it in the Oro application will not be passed back to Zendesk.
+
+
+
+
 Further Synchronizations
 """"""""""""""""""""""""
   
