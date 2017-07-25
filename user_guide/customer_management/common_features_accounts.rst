@@ -192,9 +192,9 @@ The following actions can be performed for the accounts from the :ref:`View page
  - :ref:`Add Attachment <user-guide-activities-attachments>`
  - :ref:`Add Note <user-guide-add-note>`
  - :ref:`Send Email <user-guide-using-emails>`
- - :ref:`Add Event <user-guide-activities-events>`
- - :ref:`Log Call <user-guide-activities-calls>`
- - :ref:`Add Task <user-guide-activities-tasks>`
+ - :ref:`Add Event <doc-activities-events>`
+ - :ref:`Log Call <doc-activities-calls>`
+ - :ref:`Add Task <doc-activities-tasks>`
  - :ref:`Add Contact <user-guide-contacts>`
  - :ref:`Create Opportunity <user-guide-system-channel-entities-opportunities>`.
 

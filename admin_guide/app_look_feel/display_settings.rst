@@ -1,5 +1,5 @@
 
-.. _admin-configuration-display-settings:
+.. _doc-configuration-display-settings:
 
 
 Display settings

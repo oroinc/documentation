@@ -109,7 +109,7 @@ Once the contact has joined the session, you can talk.
 Start a Hangout from the Log Call Form
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The Hangouts feature is also available in the :ref:`Log Call <user-guide-activities-calls>` form.
+The Hangouts feature is also available in the :ref:`Log Call <doc-activities-calls>` form.
 
 |
 

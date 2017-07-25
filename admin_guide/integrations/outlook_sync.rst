@@ -139,7 +139,8 @@ Synchronization Settings on the OroCRM Side
   
 "**Contacts, Tasks and Calendar Events**","Records of the entity are synchronized if the box is checked","Yes or No","
 Yes"
-  
+
+.. _doc-ms-outlook-add-in-set-up-outlook-side:
 
 Settings on the Outlook Side
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -10,8 +10,7 @@ action.
 
 .. note::
 
-    Comments are available for any activity or entity that has the Comments activity 
-    :ref:`enabled <user-guide-activities-enable>`.
+    Comments are available for any activity or entity that has the Comments activity enabled.
 
 
 Create and View Comments

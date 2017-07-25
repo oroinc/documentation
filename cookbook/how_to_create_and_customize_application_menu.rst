@@ -1,3 +1,5 @@
+.. _doc-create-and-customize-app-menu:
+
 .. index::
     single: Customization; Create an Application Menu
     single: Customization; Extend an Application Menu

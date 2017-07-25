@@ -167,7 +167,7 @@ From the Tag Page
 From the Grid
 ^^^^^^^^^^^^^
 
-1. Within the grid, select the required entity and click |IcIcEditInline| in the Tags column.
+1. Within the grid, select the required entity and click |IcEditInline| in the Tags column.
 
    |
 
@@ -196,7 +196,7 @@ From the Entity View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^ 
 
 1. Open the view page of the required entity.
-2. Click |IcIcEditInline| in Tags.
+2. Click |IcEditInline| in Tags.
    
    |
 
