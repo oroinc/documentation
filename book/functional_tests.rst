@@ -139,7 +139,7 @@ before a test starts and is rolled back when a test ends.
         // ...
     }
 
-The ``@dbIsolation`` annotation adds a transaction that will be performed
+The ``@dbIsolation`` (default behaviour) annotation adds a transaction that will be performed
 when a client is initialized for the first time and is rolled back when all
 test methods of the class have been executed.
 
