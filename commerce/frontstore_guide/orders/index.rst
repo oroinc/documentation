@@ -248,6 +248,10 @@ Once the products for purchase and their quantity have been selected, the custom
 
    .. image:: /user_guide/img/system/workflows/checkout/Shipping_Info.png
 
+   .. note:: If shipping discounts apply to the order, this will be displayed in the totals.
+
+             .. image:: /user_guide/img/marketing/promotions/ShippingDiscountFront.png
+
 **Step 4: Payment**
    
    Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
