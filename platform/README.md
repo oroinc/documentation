@@ -12,4 +12,5 @@ could be built with [Sphinx](http://sphinx-doc.org/):
    `pip install --upgrade -q -r requirements.txt`
 3. Run `make html` in documentation folder. Ensure that `conf.py` (documentation build configuration file) is there.
 
+
 Documentation will be available in `_build/html` folder.

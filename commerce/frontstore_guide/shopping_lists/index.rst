@@ -8,7 +8,7 @@ The following guide will describe how shopping lists can be used in OroCommerce 
 .. contents:: :local:
    :depth: 2
 
-In OroCommerce, shopping lists are much more than merely a list of items in a cart. For one, in OroCommerce customers can create and manage note just one, but multiple shopping lists. This is useful when customers have to work on many projects that need different products for various needs. 
+In OroCommerce, shopping lists are much more than merely a list of items in a cart. For one, in OroCommerce registered customers can create and manage note just one, but multiple shopping lists. This is useful when customers have to work on many projects that need different products for various needs. Unregistered customers, in turn, can purchase goods without the need of going through the registration process, which simplifies their shopping experience and saves time.
 
 .. _frontstore-guide--shopping-lists-create:
 
@@ -16,15 +16,17 @@ In the front store, shopping lists are located in the top right corner and can b
 
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingLists.png
 
-The shopping lists button displays the number of shopping lists that have been created. 
+The shopping lists button displays the number of shopping lists that have been created.
 
 Clicking on the |IcChevronDown| icon next to the button will open a dropdown with all available shopping lists, the number of items in each of them, and a button to create a new shopping list.
 
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingListsDropdown.png
 
+Shopping Lists for Registered Users
+-----------------------------------
 
-Create Shopping List 
---------------------
+Create a Shopping List
+^^^^^^^^^^^^^^^^^^^^^^
 
 Shopping lists can be created using several flows.
 
@@ -92,7 +94,7 @@ Duplicate the already existing shopping list to make multiple similar orders:
 .. _frontstore-guide--shopping-lists-view:
 
 View Shopping List 
-------------------
+^^^^^^^^^^^^^^^^^^
 
 The shopping list view page contains the following information and options:
 
@@ -113,7 +115,7 @@ Here you can add a note to the current shopping list, as well as each of the ite
 .. _frontstore-guide--shopping-lists-manage:
 
 Manage Shopping List 
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 To edit the shopping list name from within its view page:
 
@@ -144,6 +146,32 @@ To create a request for quote from the shopping list:
 1. Click **Request Quote** on the top right of the view page.
 2. Click |ICChevronDown| next to the **Create Order** button on the bottom of the view page.
 3. Click **Request Quote**.
+
+Shopping Lists for Guest Users
+------------------------------
+
+In Oro application, unregistered customers can create and manage a shopping list in the front store without the need to register. By default, they can have one shopping list per website and browsing session with the possiblity of storing such list for up to 30 days in a single browser.
+
+.. note:: If you seem unable to create a guest shopping list, please refer to your administrator.
+
+Create and Manage a Shopping List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By default, only one shopping list is available for unregistered users:
+
+1.  To add items to the list, click **Add to Shopping List** next to the product.
+2.  To add more items to the existing list, or change the quantity of the items that are already in the list, click **Update Shopping List** next to the product.
+
+    Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
+
+    In the *Quantity* field, change the quantity of the product.
+
+3.  To remove items from the list, click |ICChevronDown| next to **Update Shopping List** and click *Remove from Shopping List*.
+
+     Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
+
+     Next to the product, click |IcDelete| to remove it.
+
 
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
