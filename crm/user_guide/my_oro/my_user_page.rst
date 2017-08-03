@@ -26,12 +26,7 @@ On the upper-left of the page, you can see your avatar, full name and statuses.
 
 The first status shows that your are granted rights to use the system. The second status is called ``authentication status`` and defines the actuality of your password. As you can see your user page only being logged into the system, you will always see **Enabled** for the first status and **Active** for the other. When an administrator views your page, they will able to see values of your statuses.
 
-|
-
 .. image:: ../img/my_oro/my_user_review_pagetop.png
-
-|
-
 
 In the upper-right part of the page there is the following set of action buttons:
 
@@ -62,13 +57,7 @@ In the upper-right part of the page there is the following set of action buttons
 
 In the next row, you can check which business unit owns your user record. Click the owner name to open the corresponding business unit view page. If you are logged into the organization with global access (i.e. technical organization that aggregates data from all organizations created in the system), then in brackets you will see the name of organization that owns the user.
 
-
-|
-
 .. image:: ../img/my_oro/my_user_review_owner.png
-
-|
-
 
 Click the **Change History** link to see how, when and who modified your profile.
 
@@ -84,11 +73,7 @@ General Information Section
 
 This section contains information about the user filled in when creating the user.
 
-|
-
 .. image:: ../img/my_oro/my_user_review_general.png
-
-|
 
 +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                   | Description                                                                                                                                                                                                              |
@@ -142,12 +127,7 @@ Activity Section
 
 This section contains information about your activities: emails sent and received, calls, etc. If a user mentions you as a context for their activity, this activity will also appear in the list.
 
-
-|
-
 .. image:: ../img/my_oro/my_user_review_activity.png
-
-|
 
 You can filter activities by type and by date range when they took or will take place and browse them from the newest to the oldest and vice verse.
 
@@ -157,87 +137,40 @@ Click the activity to see detailed information about it.
 
 You can add a comment under a particular activity. To do this, click the activity to expand it and click the :guilabel:`Add Comment` button. In the **Add Comment** dialog box, type your message. Use the built-in text editor to format your comment. You can also attach a file to your comment. For this, click the **Upload** link in the dialog box and locate the required file. When the comment is ready, click :guilabel:`Add`.
 
-
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_comment.png
-
-|
 
 To edit or delete a comment, click the ellipsis menu next to it and click the |IcEdit| **Edit** or |IcDelete| **Delete** icon correspondingly.
 
-|
-
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_comment2.png
-
-|
-
-
 
 You can add and delete an activity context. To delete a context for an activity, click the **x** icon next to the required context.
 
 
 To add a context to the activity, click the **Context** icon in the ellipsis menu at the right end of the activity row. In the **Add Context Entity** dialog box, choose the desired context and click it to select.
 
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_context_delete.png
 
-|
-
-
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_context_add.png
-
-|
 
 You can open an activity view page. To do this, click the |IcView| **View** icon in the ellipsis menu at the right end of the activity row.
 
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_context_add.png
-
-|
-
 
 For an email activity, you can reply / reply all / forward the corresponding email. To do this, click the corresponding icon in the ellipsis menu at the right end of the activity row.
 
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_reply.png
-
-|
 
 Alternatively, you can select the required action from the list in the activity expanded area.
 
-
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_reply2.png
-
-|
-
 
 You can delete a phone activity. To do this, click the |IcDelete| **Delete** icon in the ellipsis menu at the right end of the activity row.
 
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_delete.png
-
-|
-
 
 For a phone activity, you can immediately start a call via Google Hangouts if such functionality is enabled. To do this, point to the specified phone number and click the **Hangouts** icon next to it. For how to enable Google Hangouts functionality, see the `Voice and Video Calls via Hangouts <../integrations/hangouts>`__ guide.
 
-
-|
-
 .. image:: ../../admin_guide/img/user_management/user_review_activity_phone_hangouts.png
-
-|
-
 
 For more information about activities, see the `Activities <../activities/activities-overview>`__ guide.
 
@@ -247,12 +180,7 @@ Additional Information Section
 
 This section contains information about your tasks and opened cases.
 
-
-|
-
 .. image:: ../img/my_oro/my_user_review_additional.png
-
-|
 
 .. _doc-my-user-view-page-activity-tasks:
 
