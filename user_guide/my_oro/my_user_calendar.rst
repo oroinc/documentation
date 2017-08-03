@@ -10,11 +10,7 @@ In the user menu that resides below your username in the upper-right corner of t
 
 The following page opens:
 
-|
-
 .. image:: ../img/my_oro/my_calendar.png
-
-|
 
 Top of the Page
 ^^^^^^^^^^^^^^^
