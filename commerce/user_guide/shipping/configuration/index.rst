@@ -1,10 +1,10 @@
 Shipping Configuration
 ----------------------
 
-.. begin
-
 .. contents:: :local:
    :depth: 1
+
+.. begin
 
 System Configuration
 ~~~~~~~~~~~~~~~~~~~~
@@ -21,8 +21,8 @@ Integration with Shipping Providers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /user_guide/shipping/configuration/shipping_method_integrations.rst
-   :start-after: begin
-   :end-before: stop
+   :start-after: begin_shipping_method_integrations
+   :end-before: stop_shipping_method_integrations
 
 Shipping Rules Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -30,6 +30,10 @@ Shipping Rules Configuration
 .. include:: /user_guide/shipping/configuration/shipping_rules.rst
    :start-after: begin
    :end-before: stop
+
+* :ref:`Shipping Rules Overview <doc--shipping-rules--overview>`
+* :ref:`Create a Shipping Rule <doc--shipping-rules--actions--create>`
+* :ref:`Enable a Shipping Rule <doc--shipping-rules--actions--enable>`
 
 .. finish
 

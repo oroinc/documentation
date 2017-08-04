@@ -3,28 +3,41 @@
 .. _sys--shipping-rules:
 
 Shipping Rules Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 .. begin
 
-You can configure one or more shipping rules that enable the shipping methods for the provided destinations and set the customized shipping service price by adding a surchange per service option or globally for all options of the service provider.
+You can configure one or more shipping rules that enable the shipping methods for the provided destinations and set the customized shipping service price by adding a surcharge per service option or globally for all options of the service provider.
+
+.. stop
+
+.. contents:: :local:
+
+.. _doc--shipping-rules--overview:
 
 Shipping Rules Overview
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
+
+.. begin-shipping-rules-overview
 
 On the checkout, when a customer user provides the shipping address, the OroCommerce evaluates shipping rules one by one following the Shipping Rules Sort Order. The matching shipping rule may enable one or more shipping method(s) in the shipping options on the checkout and set the shipping service fee components that are used in shipping cost calculation.
 
-To decide whether the shipping rule fits the order or not, OroCommerce uses the shipping destination and the shipping rule condition defined with the :ref:`expression <payment-shipping-expression-lang>`. Condition may rely on the customer order context. When a shipping rule destination and condition matches the order details (e.g. customer, ordered products and the environment), the shipping rule enables it's shipping options and shipping fee components.
+To decide whether the shipping rule fits the order or not, OroCommerce uses the shipping destination and the shipping rule condition defined with the :ref:`expression <payment-shipping-expression-lang>`. The condition may rely on the customer order context. When a shipping rule destination and condition matches the order details (e.g. customer, ordered products and the environment), the shipping rule enables it's shipping options and shipping fee components.
+
+.. _doc--shipping-rules--overview--stop-further-processing:
 
 Stop Further Rule Processing Mode
-"""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 When the OroCommerce gets to the shipping rule with the enabled **Stop Further Rule Processing** flag, the remaining rules are not taken into account and their shipping methods are not shown as the shipping options on the checkout. This is helpful when you would like to enforce the recommended shipping method for any location or other conditions it is technically applicable (e.g. use local shipping vendor for all addresses they handle or use the specific shipping vendor that has a VIP SLA with the particular customer). It is recommended to put this type of rules to the top (e.g. setting their sort order to 1).
 
-Overlapping Shipping Methods Definition
-"""""""""""""""""""""""""""""""""""""""
 
-When the shipping option is enabled by multiple shipping rules, only the first occurrence is shown to the customer user - the one from the shipping rule with the lower Sort Order value which means closer to the top of the list.
+.. _doc--shipping-rules--overview--shipping-methods-overlap:
+
+Overlapping Shipping Methods Definition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When the shipping option is enabled by multiple shipping rules, only the first occurrence is shown to the customer user—the one from the shipping rule with the lower sort order value which means closer to the top of the list.
 
 For example:
 
@@ -36,12 +49,13 @@ For example:
 |  B            | 2          | UPS Worldwide Expedited  | +15$      |
 +---------------+------------+--------------------------+-----------+
 
-When both shipping rules apply to an order, the customer user gets the **UPS Worldwide Expedited** with **+10$** surcharge.
+When both shipping rules apply to the order, the customer user gets UPS Worldwide Expedited with +10$ surcharge.
+
 
 Non-overlapping Shipping Method Definition
-""""""""""""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The shipping methods from the same service provide may be enabled in different shipping rules.
+The shipping methods from the same service provider may be enabled in different shipping rules.
 
 In the enhanced example, shipping rules enable more diverse shipping methods:
 
@@ -59,92 +73,158 @@ In the enhanced example, shipping rules enable more diverse shipping methods:
 
 When both shipping rules apply to an order, the customer user can choose from the following shipping options:
 
-* **UPS Worldwide Expedited** with **+10$** surcharge (enabled by shipping rule A).
-* **UPS UPS Worldwide Express** with **+5$** surcharge (enabled by shipping rule A).
-* **UPS Next Day Air** with **+5$** surcharge (enabled by shipping rule B).
+* UPS Worldwide Expedited with +10$ surcharge (enabled by shipping rule A).
+* UPS Worldwide Express with +5$ surcharge (enabled by shipping rule A).
+* UPS Next Day Air with +5$ surcharge (enabled by shipping rule B).
+
+
+.. _doc--shipping-rules--actions--create:
 
 Create a Shipping Rule
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 To create a shipping rule:
 
-1. Ensure that the integration(s) for the shipping method(s) you plan to use (UPS, Flat Rate, etc) is already configured.
+1. Ensure that the integrations for the shipping methods that you plan to use (UPS, Flat Rate, etc.) are already configured. For more information on shipping method integrations and how to configure them, see :ref:`Shipping Method Integration <sys--integrations--manage-integrations--ups--flat-rate>`.
 
-2. Navigate to the list of shipping rules by clicking **System > Shipping Rules** in the main menu.
+2. In the main menu, navigate to **System > Shipping Rules**. The list of shipping rules opens.
 
-   The following page opens:
 
-   .. image:: /user_guide/img/system/shipping_rules/ShippingRule1.png
-      :class: with-border
+   .. image:: /user_guide/img/system/shipping_rules/shipping_rule_list.png
 
-#. In the **General Information** section:
 
-   a) Tick the **Enabled** box to activate the shipping rule. You may keep it unselected while you are drafting and testing the conditions.
+#. Click **Create Shipping Rule** in the upper-right corner of the page. The shipping rule create page opens.
 
-   #) Specify the shipping rule name and sort order to set the priority compared to other shipping rules.
+#. In the **General Information** section, provide the following information:
 
-   #) Select the shipping cost currency.
+   - Select the **Enabled** check box to activate the shipping rule. You may keep it unselected while you are drafting and testing the conditions.
 
-   #) Select the **Stop Further Rule Processing**, if you would like to prevent applying other shipping rules with lower priority.
+   - **Name**—Specify the shipping rule name.
 
-#. In the **Destinations** section, add one or more destinations to apply this shipping rule to.
+   - **Sort Order**—Specify the sort order to set the priority compared to other shipping rules. It is used to select which shipping method to apply when more the one satisfy the defined conditions. See :ref:`Overlapping Shipping Methods Definition <doc--shipping-rules--overview--shipping-methods-overlap>`.
 
-   a) Click **+ Add**. The following box appears:
+   - **Currency**—Select the shipping cost currency from the list. Please note that the list of available shipping methods will depend upon which currency is selected here.
 
-      .. image:: /user_guide/img/system/shipping_rules/ShippingRule_Destination.png
-         :class: with-border
+   - Select the **Stop Further Rule Processing** check box to prevent applying other shipping rules with lower priority. See :ref:`Stop Further Rule Processing Mode <doc--shipping-rules--overview--stop-further-processing>`.
 
-   #) Specify the destination (e.g. select a Country, or select a Country and State; for the most granularity you may provide a distinct list of Postal Codes to apply the shipping rule for.
+   .. image:: /user_guide/img/system/shipping_rules/shipping_rule_general.png
 
-#. In the **Conditions** section, specify the expression that describes the conditions when this shipping rule should be applied.
+#. If required, in the **Destinations** section, add one or more destinations to apply this shipping rule to. To add a destination:
 
-   .. image:: /user_guide/img/system/shipping_rules/ShippingRule2.png
-      :class: with-border
+   a) Click **+ Add**. The following section appears:
 
-   For detailed information about the expression language used in the shipping and payment rules, please, see the :ref:`Expression Language for Shipping and Payment Rules <payment-shipping-expression-lang>` guide.
+      .. image:: /user_guide/img/system/shipping_rules/shipping_rule_destination1.png
 
-#. In the *Shipping Method Configurations* section, you may enable one or more shipping methods with this shipping rule. To add a shipping method, select it from the list and click **+ Add** and fill in the shipping price customization information tha may vary for different service providers.
 
-   .. warning::
+   b) Provide the destination to apply the shipping rule for. Depending on the granularity that you require, you may provide just a country, a country and a state, or a country and a distinct list of postal codes.
 
-      Only one shipping method per integration may be selected in the shipping rule. For example, to enable several flat rate options with various delivery SLA and insurance, please create a separate shipping rule for every option.
+      - **Country**—Select a country from the list.
+      - **State**—Select the state from the list. The list of states appears after you have selected a country.
+      - Enter the list of postal codes.
 
-   a) For Flat Rate, provide the following information:
+      .. image:: /user_guide/img/system/shipping_rules/shipping_rule_destination2.png
 
-      * **Price** - shipping price based on your agreement with the shipping service provider. Final Shipping price depends on the Type option (Pre Item/Per Order).
-      * **Handling fee** - additional cost for order processing by your company.
-      * **Type** - the way shipping price is calculated for the order. Supported options:
+      .. TODO: Use <delimiter> to separate values?
 
-        - **Per Item** - shipping price is a multiplication of product line item quantities (e.g. 5 cups of coffee, 10 napkins, and 5 cookies give us total of 20 items) and Flat Rate price (e.g. 1$). Finally, we add a handling fee (e.g. 10$) on top of the resulting amount. The shipping cost for this order is 20*1$+10$=30$
-        - **Per Order** - shipping price is an addition of the Flat Rate price (e.g. 1$) and a handling fee (e.g. 10$). The shipping cost for this order is 1$+10$=11$
+#. If required, in the **Conditions** section, specify the expression that describes the conditions when this shipping rule should be applied.
 
-      **Flat Rate service price configuration**
+   .. image:: /user_guide/img/system/shipping_rules/shipping_rule_condition.png
 
-      .. image:: /user_guide/img/system/shipping_rules/flat_rate_in_a_shipping_rule.png
-         :width: 400px
 
-   b) For UPS, set **Enabled** for the necessary services and provide a surcharge next to the service to customize the shipping cost. If necessary, fill in the surcharge at the bottom to apply it to any enabled service on top of the per-service-surcharge.
+   For detailed information about the expression language used in the shipping and payment rules, please see the :ref:`Expression Language for Shipping and Payment Rules <payment-shipping-expression-lang>` guide.
 
-      **Service options and additional surcharge configuration for UPS**
+#. In the **Shipping Method Configurations** section, add the shipping methods that should be available on the checkout when this shipping rule applies.
 
-      .. image:: /user_guide/img/system/shipping_rules/UPS_in_shipping_rule1.png
-         :width: 582px
+   a) Add shipping methods:
 
-      .. image:: /user_guide/img/system/shipping_rules/UPS_in_shipping_rule2.png
-         :width: 516px
+      - To add a single shipping method, select it from the list and click **+ Add**.
+
+      - To add all available shipping methods, click **Add All**.
+
+      .. image:: /user_guide/img/system/shipping_rules/shipping_rule_method_add1.png
+
+      .. warning::
+
+         Only one shipping method per integration may be selected in the shipping rule. For example, to enable several flat rate options with various delivery SLA and insurance, please create a separate shipping rule for every option.
+
+         A shipping method appears in the list only if it is configured to support the selected currency.
+
+      To delete a shipping method, click the |IcDelete| **Delete** icon at the end of the corresponding row.
+
+   b) Configure all selected shipping methods. Configuration options vary depending on a shipping method. For details on options available for different methods, see :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>`. The configuration summary appears next to the shipping method name, in the **Options** column.
+
+      .. image:: /user_guide/img/system/shipping_rules/shipping_rule_method_summary.png
+
+
+      If a shipping method appear collapsed, click the |IcPlusSquareO| **Expand** icon in front of its name to see configuration options.
+
+
+      .. image:: /user_guide/img/system/shipping_rules/shipping_rule_method.png
+
 
 #. Click **Save**.
 
+.. _doc--shipping-rules--shipping-methods--detailed:
+
+Configure a Shipping Method in a Shipping Rule
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+After you have added a shipping method to the shipping rule, you are prompted to provide the information that configures the shipping fee components and the method to calculate it.
+
+Flat Rate
+~~~~~~~~~
+
+For the flat rate shipping method, provide the following information:
+
+ * **Price**—A shipping price based on your agreement with the shipping service provider. The final shipping price depends on the **Type** option (*Pre Item*/*Per Order*).
+ * **Handling fee**—An additional cost for order processing charged by your company.
+ * **Type**—The way a shipping price is calculated for the order. Supported options:
+
+   - **Per Item**—A shipping price for an order is calculated by multiplying product line item quantities (e.g., 5 cups of coffee, 10 napkins, and 5 cookies give us total of 20 items) and flat rate price (e.g. 1$). Finally, we add a handling fee (e.g. 10$) on top of the resulting amount. The shipping cost for this order is 20*1$+10$=30$
+   - **Per Order**—A shipping price for an order is calculated as a sum of the specified price and handling fee. For example, if you have specified *$1* for **Price** and *$10* for **Handling fee**, then the shipping price for each order is $1+$10=$11
+
+For example:
+
+.. image:: /user_guide/img/system/shipping_rules/shipping_rule_method_flat.png
+
+UPS
+~~~
+
+For the UPS shipping method, provide the following information:
+
+* In the **Surcharge** field on top, enter a value that you want to be added to the standard UPS rates and the option surcharge (like the handling fee per order).
+
+* In the **Additional Options** section, provide the following information for each option that you want to use:
+
+  - **Surcharge**—To customize the shipping cost, enter a value to charge on top of the UPS standard rates (like the extra cost for this shipping method). It will be applied together with the global shipping method surcharge.
+  - Select the **Active** check box in the **Status** column to enable the option.
+
+For example:
+
+.. image:: /user_guide/img/system/shipping_rules/shipping_rule_method_ups.png
+
+DPD
+~~~
+
+In the **Additional Options** section, provide the following information for each option that you want to use:
+
+- **Handle Fee**—An additional cost for order processing (packing and mailing, etc) charged by your company. It is applied as a surcharge to the flat fee specified in the used DPD integration.
+- Select the **Active** check box in the **Status** column to enable the option.
+
+.. image:: /user_guide/img/system/shipping_rules/shipping_rule_method_dpd.png
+
+.. _doc--shipping-rules--actions--enable:
+
 Enable a Shipping Rule
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 To enable a shipping rule:
 
-1. Navigate to the list of shipping rules by clicking **System > Shipping Rules** in the main menu.
+1. In the main menu, navigate to **System > Shipping Rules**.
 
-2. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcActivate|.
+2. Choose the required shipping rule in the list, click the |IcMore| **More Options** menu at the end of the corresponding row, and then click the |IcActivate| **Activate** icon.
 
-.. stop
+.. image:: /user_guide/img/system/shipping_rules/shipping_rule_enable.png
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
