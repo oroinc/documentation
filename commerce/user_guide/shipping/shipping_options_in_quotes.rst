@@ -1,3 +1,5 @@
+.. _shipping-configuration-per-quote:
+
 Shipping Configuration per Quote
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
