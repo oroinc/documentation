@@ -25,12 +25,7 @@ General setup
 Localization
 ~~~~~~~~~~~~
 
-
-|
-
 .. image:: ../img/my_oro/my_user_config_localization.png
-
-|
 
 **Localization options**
 
@@ -64,12 +59,7 @@ Localization
 Language settings
 ~~~~~~~~~~~~~~~~~
 
-|
-
 .. image:: ../img/my_oro/my_user_config_language.png
-
-|
-
 
 **Languages**
 
@@ -85,12 +75,7 @@ Language settings
 Display settings
 ~~~~~~~~~~~~~~~~
 
-|
-
 .. image:: ../img/my_oro/my_user_config_display.png
-
-|
-
 
 **User bar**
 
@@ -174,24 +159,14 @@ Display settings
  |                                     |                                                                                                                  |
  +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-|
-
 .. image:: ../../admin_guide/img/user_management/user_configuration_showsql.png
-
-|
 
 .. _doc-my-user-configuration-email:
 
 Email Configuration
 ~~~~~~~~~~~~~~~~~~~
 
-|
-
 .. image:: ../img/my_oro/my_user_config_email.png
-
-|
-
-
 
 **Signature**
 
@@ -232,8 +207,6 @@ Email Configuration
 
  Click the :guilabel:`Check Connection/Retrieve Folders` button to check whether the specified synchronization settings are correct and to retrieve the current folder structure of the user's remote mailbox.
 
- |
-
 **Email Threads**
 
  +--------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -270,12 +243,7 @@ MS Outlook settings
 .. note::
 	This functionality is available only for OroCRM Enterprise Edition. For more information about the synchronization with Outlook, see the :ref:`Synchronization with Outlook <user-guide-synch-outlook>` guide.
 
-|
-
 .. image:: ../img/my_oro/my_user_config_outlook.png
-
-|
-
 
 **Integration settings**
 

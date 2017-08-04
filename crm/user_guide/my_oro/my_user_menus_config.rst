@@ -29,19 +29,11 @@ Menus Page
 
 This page contains a list of menus that you can configure.
 
-|
-
 .. image:: ../img/my_oro/my_user_menus.png
-
-|
 
 - **application_menu**—This is the main menu of the application (also called ``navigation bar`` in the application settings). Via it you can navigate through Oro application. It is always displayed on every page. Subject to the configuration, it may be displayed horizontally or vertically. In the latter case, the menu items are displayed as icons. For more information, see :ref:`Main Menu <user-guide-navigation-menu>`.
 
-  |
-
   .. image:: ../img/navigation/menu/nav_bar_top.png
-
-  |
 
 - **shortcuts**—You can find this menu in the top panel of the application, next to the organization name. Via it you can quickly perform common actions from anywhere. It is always displayed on every page. For more information, see :ref:`Shortcuts <user-guide-getting-started-shortcuts>`.
 
@@ -49,24 +41,14 @@ This page contains a list of menus that you can configure.
 
   .. image:: ../img/navigation/panel/shortcut_full.png
 
-  |
-
 
 - **usermenu**—This is the menu that you can access by clicking on your name in the upper-right corner of the application. Via it you can access your profile, emails, tasks and events. It is always displayed on every page. For more information, see :ref:`User Menu <user-guide-getting-started-user-menu>`.
 
-  |
-
   .. image:: ../img/intro/user_menu.png
-
-  |
 
 - **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Calendar List <doc-my-oro-calendar-list>`.
 
-  |
-
   .. image:: ../img/my_oro/calendar_menu.png
-
-  |
 
 .. _doc-menus-actions-viewmenu:
 
@@ -86,11 +68,7 @@ Menu items in a menu can be visually separated by a divider (a horizontal line).
 
 .. note:: Some menus (or some menu levels) cannot display dividers. For example, if you add a divider to the first level of the main menu (**application_menu**), this divider will not be displayed.
 
-|
-
 .. image:: ../img/my_oro/my_user_menus_application.png
-
-|
 
 .. _doc-menus-actions-hideorshowpanel:
 
@@ -99,12 +77,7 @@ Hide / Show the Left Menu Panel
 
 To minimize or maximize the left menu panel, click a double arrow in the upper-right corner of the panel.
 
-
-|
-
 .. image:: ../img/my_oro/my_user_menus_application_showpanel.png
-
-|
 
 .. _doc-menus-actions-expandorcollapse:
 
@@ -113,22 +86,11 @@ Expand / Collapse a Menu
 
 To expand / collapse a parent menu item, click an arrow in front of it.
 
-
-
-|
-
 .. image:: ../img/my_oro/my_user_menus_application_expand.png
-
-|
 
 To expand / collapse all menu items, click the ellipses dropdown menu in the upper-right corner of the left panel and click **Expand All** or **Collapse All**.
 
-|
-
 .. image:: ../img/my_oro/my_user_menus_application_expall.png
-
-|
-
 
 
 .. _doc-menus-actions-search:
@@ -138,12 +100,7 @@ Find a Menu Item
 
 To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon or press :guilabel:`Enter`.
 
-
-|
-
 .. image:: ../img/my_oro/my_user_menus_application_search.png
-
-|
 
 .. _doc-menus-actions-viewandedit:
 
@@ -168,11 +125,7 @@ Add a Menu Item
 
 2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Menu Item` on the list.
 
-   |
-
    .. image:: ../img/my_oro/my_user_menus_createmenuitem.png
-
-   |
 
    The created menu item will appear as the last one on the list of children of the same parent item. You can move it to the position that you need as described in the :ref:`Rearrange Menu Items / Dividers <doc-menus-actions-draganddrop>` action description.
 
@@ -182,12 +135,7 @@ Add a Menu Item
 
      Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-     |
-
      .. image:: ../img/my_oro/my_user_menus_actions_create_translations.png
-
-     |
-
 
    - **URI**—An web address of the page or resource that this menu item opens.
 
@@ -203,11 +151,7 @@ Add a Menu Item
 
      Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-   |
-
    .. image:: ../img/my_oro/my_user_menus_actions_create_general.png
-
-   |
 
 4. Click :guilabel:`Save` or, if you want to start immediately create another menu item, :guilabel:`Save and New` in the upper-right corner of the page.
 
@@ -225,11 +169,7 @@ Add a Divider
 
 2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Divider` on the list.
 
-|
-
 .. image:: ../img/my_oro/my_user_menus_createdivider.png
-
-|
 
 The created divider will appear as the last one on the list of children of the same parent item. You can move it to the position that you need as described in the :ref:`Rearrange Menu Items / Dividers <doc-menus-actions-draganddrop>` action description.
 
@@ -254,22 +194,11 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 
 - If an arrow points to the place between items, that is where the moved item will be placed.
 
-  |
-
   .. image:: ../img/my_oro/my_user_menus_actions_d&dsame.png
-
-  |
-
-
 
  - If and arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
 
-  |
-
   .. image:: ../img/my_oro/my_user_menus_actions_d&dunder.png
-
-  |
-
 
 .. _doc-menus-actions-delete:
 
