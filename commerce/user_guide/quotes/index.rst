@@ -35,40 +35,60 @@ Quote management and their use in many ways depend on the following:
 
   - Other. See the :ref:`Payment Configuration <user-guide--payment>` guide for more detailed information.
 
-* :ref:`Quote Workflow <system--workflows--quote-backoffice-workflow>` - the flow of possible sequential actions that lead to quote state transitions. The workflow defines the way a sales manager can handle a quote in a particular state.
+* Quote Management Process Configuration (Workflows):
+
+  - Ensure that one of the quote management workflows is activated:
+
+    * :ref:`Quote Management Flow <system--workflows--quote-backoffice-workflow>` --- A simple quote management flow, where a sales person is not bound by any limitations and can handle the sale without supervision.
+    * :ref:`Backoffice Quote flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` (QBFA)--- A flow, where a sales person might have to get approval from the authorized person (e.g. their manager) before sending the quote with updated prices to the buyer.
+
+    .. For more information, see the :ref:`Understanding Quote Workflows <system--workflows--quote--understanding>` topic.
+
+  - For the QBFA workflow, ensure the :ref:`prerequisites <doc--workflows--backoffice-quote-flow-with-approvals--prerequisites>` are met and the system is properly configured for the approval process.
 
 .. TODO replace the link to the workflow management with the link to the Quote backend workflow descriptions (when ready)
 
-.. include:: create.rst
-   :start-after: begin
-   :end-before: finish
+Creating a Quote
+----------------
+
+.. include:: create/index.rst
+   :start-after: begin_create_quote
+   :end-before: finish_create_quote
 
 .. .. include:: viewlist.rst
    :end-before: finish
 
+Quote Stages and Transitions
+----------------------------
+
+.. include:: quote_states_by_flow/index.rst
+   :start-after: begin_quote_states_by_flow
+   :end-before: finish_quote_states_by_flow
+
 .. .. include:: view.rst
    :end-before: finish
 
+Editing a Quote
+---------------
+
 .. include:: edit.rst
+   :start-after: begin
    :end-before: finish
 
-Quote in Use
-------------
-
-As an illustration, let us see the quote in action and walk through the steps buyer and sales manager may follow to communicate or negotiate for the sale:
-
-.. include:: /user_guide/system/workflows/quote_management_workflow.rst
-   :start-after: quote_in_use
-   :end-before: finish
-
-See more information about the :ref:`Quote Workflow <system--workflows--quote-backoffice-workflow>` for details on the steps and actions available at every step.
+.. include:: flows/index.rst
+   :end-before: finish_quotes_in_use
 
 .. toctree::
    :hidden:
 
-   create
+   create/index
+
+   quote_states_by_flow/index
 
    edit
+
+   flows/index
+
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

@@ -1,11 +1,6 @@
-.. _user-guide--quotes--create:
+:orphan:
 
-.. begin
-
-Create a Quote
---------------
-
-You can create a quote based on the customer request for quote, or from scratch, based on the customer interaction outside OroCommerce.
+.. _quote--create-from-scratch:
 
 Create a Quote From Scratch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -110,11 +105,3 @@ To create a new quote from scratch:
 .. 9. Optionally, select an **Opportunity** to bind it with the quote. (DOES NOT WORK YET)
 
 9. Click **Save**.
-
-
-.. Create a Quote on the Customer Request
-.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. .. include:: create_from_rfq.rst
-
-.. finish

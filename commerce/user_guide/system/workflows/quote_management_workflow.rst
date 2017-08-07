@@ -1,33 +1,38 @@
 .. _system--workflows:
 .. _system--workflows--quote-backoffice-workflow:
 
-Quote Backoffice Workflow
-=========================
+Quote Management Flow
+=====================
 
+.. contents:: :local:
+   :depth: 1
 
 Overview
 --------
 
-Quote Backoffice Workflow (QBW) is a :ref:`system <user-guide--system--workflow-management-system-custom>` workflow that defines a sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a quote can go through as a deal progresses.
+Quote Management Flow (QBW) is a :ref:`system <user-guide--system--workflow-management-system-custom>` workflow that defines a sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a quote can go through as a deal progresses.
+
+.. note::  The difference between the simple Quote Management Flow and the one with approval is covered in the :ref:`Understanding Quote Workflows <system--workflows--quote--understanding>` section.
 
 To reach the workflow:
 
 1. Navigate to **System > Workflows** in the main menu.
-2. Click **Quote Backoffice** to open the flow. The following page opens:
+2. Click **Quote Management Flow** to open the flow. The following page opens:
    
 .. image:: /user_guide/img/system/workflows/workflows/QuoteBackofficeFlow.png
    
-.. note:: Since Quote Backoffice is a system workflow, it cannot be edited or deleted. To be able to introduce changes to system workflows, they need to be cloned, edited and activated.
+.. note:: Since Quote Management Flow is a system workflow, it cannot be edited or deleted.
 
-On the Quote Backoffice page, you can perform the following actions:
+On the Quote Management Flow page, you can perform the following actions:
 
-* Clone the workflow - click |IcClone| to clone the workflow.
+.. Clone the workflow - click |IcClone| to clone the workflow.
+
 * Deactivate the workflow - click **Deactivate** to deactivate the workflow.
 
 Statuses
 --------
 
-When the QBW is active, the following statuses are available:
+When the QMF is active, the following statuses are available:
 
 1. Internal Statuses are the statuses displayed in OroCommerce to the sales personnel:
 
@@ -67,7 +72,7 @@ When the QBW is active, the following statuses are available:
 Steps and Transitions
 ---------------------
 
-The QBW consists of the following steps and transitions:
+The QMF consists of the following steps and transitions:
 
 1. Steps:
    
@@ -87,7 +92,10 @@ The QBW consists of the following steps and transitions:
 
 .. note:: Please note that Accepted and Declined transitions for the Sent to Customer step are automatically triggered by the changes of customer statuses and they do not, therefore, take the form of buttons in the interface.
 
-As an illustration, let us go through a sample flow to see the QBW in action:
+Example
+-------
+
+As an illustration, let us go through a sample flow to see the QMF in action:
 
 .. quote_in_use
 

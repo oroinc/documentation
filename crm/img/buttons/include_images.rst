@@ -5,15 +5,65 @@ Images
 
 .. begin
 
+.. |IcClose| raw:: html
+
+   <i class="fa fa-close fa-lg" aria-hidden="true"></i>
+
+.. |IcActivate| raw:: html
+
+   <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+
+.. |IcExpireQuote| raw:: html
+
+   <i class="fa fa-clock fa-lg" aria-hidden="true"></i>
+
+.. |IcUndo| raw:: html
+
+   <i class="fa fa-undo fa-lg" aria-hidden="true"></i>
+
 .. |IcTranslate| raw:: html
 
    <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
+
+.. |IcTranslations| raw:: html
+
+   <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
+
+.. |IcShareWithOthers| raw:: html
+
+   <i class="fa fa-reply-all fa-lg" aria-hidden="true"></i>
 
 .. fa-bars = fa-navicon
 
 .. |IcBars| raw:: html
 
    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+
+.. |IcUnshare| raw:: html
+
+   <i class="fa fa-share fa-lg" aria-hidden="true"></i>
+
+.. |IcChevronDown| raw:: html
+
+   <i class="fa fa-chevron-down fa-lg" aria-hidden="true"></i>
+
+.. Ic Tiles is used as Set As Default in saved views, and as tiles in display layout options
+
+.. |IcTiles| raw:: html
+
+   <i class="fa fa-th fa-lg" aria-hidden="true"></i>
+
+.. |IcDetails| raw:: html
+
+   <i class="fa fa-th-list fa-lg" aria-hidden="true"></i>
+
+.. |IcCompactDetails| raw:: html
+
+   <i class="fa fa-list fa-lg" aria-hidden="true"></i>
+
+.. |IcTranslationsC| raw:: html
+
+   <i class="fa fa-folder fa-lg" aria-hidden="true"></i>
 
 .. |IcFilter| raw:: html
 
@@ -23,15 +73,23 @@ Images
 
    <i class="fa fa-search fa-lg" aria-hidden="true"></i>
 
+.. |IcFlag| raw:: html
+
+   <i class="fa fa-flag fa-lg" aria-hidden="true"></i>
+
 .. IcPencil refers to Rename in Commerce and Inline Editing in CRM
 
 .. |IcPencil| raw:: html
 
    <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 
-.. |IcUndo| raw:: html
+.. |IcConfig| raw:: html
 
-   <i class="fa fa-undo fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-gear fa-lg" aria-hidden="true"></i>
+
+.. |IcEditInline| raw:: html
+
+   <i class="fa fa-pencil fa-lg" aria-hidden="true"></i>
 
 .. |IcCheck| raw:: html
 
@@ -60,6 +118,10 @@ Images
 .. |Bplus| raw:: html
 
    <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+
+.. |IcDuplicate| raw:: html
+
+   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
 
 .. |IcMore| raw:: html
 
@@ -109,13 +171,33 @@ Images
 
    <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
 
+.. |IcReorder| raw:: html
+
+   <i class="fa fa-arrows-v fa-lg" aria-hidden="true"></i>
+
+.. |IcDeactivate| raw:: html
+
+   <i class="fa fa-close fa-lg" aria-hidden="true"></i>
+
+.. |IcClone| raw:: html
+
+   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
+
 .. |IcTasks| raw:: html
 
    <i class="fa fa-tasks fa-lg" aria-hidden="true"></i>
 
+.. |IcMap| raw:: html
+
+   <i class="fa fa-map-o fa-lg" aria-hidden="true"></i>
+
 .. |IcCaretRight| raw:: html
 
    <i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>
+
+.. |IcRedo| raw:: html
+
+   <i class="fa fa-repeat fa-lg" aria-hidden="true"></i>
 
 .. |IcCaretLeft| raw:: html
 
@@ -133,9 +215,9 @@ Images
 
    <i class="fa fa-ellipsis-h fa-lg" aria-hidden="true"></i>
 
-.. |IcClone| raw:: html
+.. |IcReset| raw:: html
 
-   <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
 
 .. |IcFilesO| raw:: html
 
@@ -168,7 +250,10 @@ Images
 .. |IcShare| raw:: html
 
    <i class="fa fa-share fa-lg" aria-hidden="true"></i>
-   
+
+.. |Bdropdown| raw:: html
+
+   <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
    
 .. Check mark in the square.
 
@@ -178,4 +263,4 @@ Images
    
 .. |IcMinus| raw:: html
 
-   <i class="fa fa-minus fa-lg" aria-hidden="true"></i>     
+   <i class="fa fa-minus fa-lg" aria-hidden="true"></i>

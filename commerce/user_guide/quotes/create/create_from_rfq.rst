@@ -1,9 +1,11 @@
 :orphan:
 
+.. _quote--create-from-rfq:
+
 Create a Quote on the Customer Request
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin
+.. begin_create_from_rqf
 
 To create a new quote from the customer request for quote (RFQ):
 
@@ -21,7 +23,7 @@ To create a new quote from the customer request for quote (RFQ):
 
    b) Enter the quote expiration information in the **Valid Until** date and time boxes.
 
-   c) Select an order fulfilment officer in the **Assigned To** box. (TO BE CONFIRMED)
+   c) Select an order fulfilment officer in the **Assigned To** box.
 
    d) Select the assigned customer user that will receive the order delivery in the **Assigned Customer** box.
 

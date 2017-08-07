@@ -3,9 +3,9 @@
 Task Flow
 =========
 
-The **Task Flow** workflow help direct you through phases of work on the task.
+The **Task Flow** workflow helps you proceed through phases of work on the task.
 
-Available options depend on the current status of the task. The following table describes which options are available for each of the statuses and how the corresponding transitions chane the task status.
+Available options depend on the current status of the task. The following table describes which options are available for each of the statuses and how the corresponding transitions change the task status.
 
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 | Current Status | Available Options                                                                                                                                                                                    | New Status  |
