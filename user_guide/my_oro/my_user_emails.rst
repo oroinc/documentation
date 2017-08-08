@@ -3,75 +3,172 @@
 My Emails
 =========
 
-.. note:: Before you start using the **My Emails**, please configure you personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my_email_configuration>` for more information.
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
 
-Access My Emails
-----------------
 
 To reach the **My Emails** page:
 
-1.  Navigate to the user menu in the upper-right corner of the application.
+1.  Navigate to your user name in the upper-right corner.
 
-2.  Click **My Emails**.
+2.  Click **My Emails** in the dropdown menu.
+
+|
 
 .. image:: ../img/emails/user_my_emails.jpg
 
-My Emails Page
---------------
+|
 
-On the upper-left of the page, you can see the name of the selected mailbox view. There are four mailbox views (email grid views) available by default:
 
--  **All Emails** -- Contains all available emails.
 
--  **Inbox** -- Contains newly delivered emails.
+**My Emails** page has the following functionality available:
 
--  **Sent Mail** -- Contains sent emails.
+-  Grid views for emails.
 
--  **Mailbox: Local** -- Contains emails sent to the user’s personal
-   email.
+-  Compose button.
+
+-  Sync Emails button.
+
+-  Filters.
+
+-  Options.
+
+Grid Views
+~~~~~~~~~~
+
+There are four grid views for emails available by default:
+
+-  **All Emails** (contains all available emails).
+
+-  **Inbox** (contains newly delivered emails).
+
+-  **Sent Mail** (contains sent emails).
+
+-  **Mailbox: Local** (contains emails sent to the user’s personal
+   email).
+
+|
 
 .. image:: ../img/emails/my_emails_page.jpg
 
-.. note:: See the :ref:`Grids <doc-grids>` topic for more information on how to :ref:`filter <doc-grids-actions-filters>`, :ref:`sort <doc-grids-actions-sort-data>` listed emails, :ref:`save filtered views <doc-grids-grid-views>`, etc.
+|
 
 
-From the **My Emails** page, you can:
 
-- :ref:`Compose emails <doc-activities-emails-actions-compose>`
+Filters
+~~~~~~~
 
-- :ref:`Temporarly save email drafts <doc--activities--emails--actions--save-unfinished>`
+To enable filters for My emails page, click the corresponding button on
+the right, as illustrated below:
 
-- :ref:`Sync emails <doc--activities--emails--actions--sync>`
+|
 
-- :ref:`View emails <doc--activities--emails--actions--view>`
+.. image:: ../img/emails/filters_icon.jpg
 
-- :ref:`Mark emails as read/unread <doc--activities--emails--actions--mark-read-unread>`
+|
 
 
-.. _doc--activities--emails--actions:
+Filters sort your emails based on certain criteria, such as:
 
-Manage Emails
--------------
+-  Subject
 
-.. _doc--activities--emails--actions--sync:
+-  From
+
+-  To
+
+-  Date/Time
+
+-  Message Type
+
+-  Folders
+
+-  Status
+
+-  Mailbox
+
+To find a specific record, click on the filter and select the necessary
+search parameter from the dropdown:
+
+|
+
+.. image:: ../img/emails/filters_dropdown.jpg
+
+|
+
+
+
+Options
+~~~~~~~
+
+Options save the filtered view as a separate page.
+
+To save a page filtered according to the necessary criteria:
+
+1.  Filter your emails according to your requirements using **Filters**.
+
+2.  Click **Options**.
+
+3.  Select **Save As/Save As Default**.
+
+4.  Give your email page a name and click **Save**.
+
+5.  The page will appear in the **Emails** grid dropdown list.
+
+|
+
+.. image:: ../img/emails/filter.jpg
+
+|
+
+|
+
+.. image:: ../img/emails/options_save_list.jpg
+
+|
+
+|
+
+.. image:: ../img/emails/options_save.jpg
+
+|
+
+|
+
+.. image:: ../img/emails/options_saved_example.jpg
+
+|
+
+
 
 Sync Emails
-^^^^^^^^^^^
+~~~~~~~~~~~
 
-To manually synchronize emails, click **Sync Emails** in the upper-right corner of the page.
+By clicking **Sync Emails** in the top right corner, you will
+synchronize emails manually.
 
 .. _doc-activities-emails-actions-compose:
 
-Compose a New Email
-^^^^^^^^^^^^^^^^^^^
+Compose A New Email
+~~~~~~~~~~~~~~~~~~~
 
 To compose a new email:
 
-1.  In the user menu, click **My Emails**. The list of emails opens.
+1.  Navigate to your user name in the top right corner.
 
-2.  Click **Compose** in the upper-right corner of the page.
+2.  Click **My Emails** in the dropdown menu.
 
-3.  In the **Send Email** dialog, define the following fields:
+3.  Click **Compose** in the top right corner.
+
+4.  A **Send Email form** will appear:
+
+|
+
+.. image:: ../img/emails/compose_new_emails.jpg
+
+|
+
+
+
+To compose a new email, define the following fields in the form:
 
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
@@ -120,55 +217,108 @@ To compose a new email:
 |                    | **Note**: If an email has been created from an entity record view page (e.g. from a lead’s page), this record will be added as a context automatically.                                                                               |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: ../img/emails/compose_new_emails.jpg
-
-4.  Once done, click **Send** to send your email.
-
-.. _doc--activities--emails--actions--save-unfinished:
+5.  Once done, click **Send** to send your email.
 
 Save Unfinished Email
-^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~
 
-To save an unfinished email, minimize the email dialog by clicking on the corresponding button in the upper-right corner of the email dialog.
+To save an unfinished email, minimize the email dialog window by
+clicking on the corresponding button in the top right corner of the
+email dialog window.
+
+|
 
 .. image:: ../img/emails/minimize.jpg
 
-Your unfinished email will appear as a minimized throughout sessions, as illustrated in the following screenshot:
+|
+
+
+
+Your unfinished email will appear as a minimized window throughout
+sessions, as illustrated in the following screenshot:
+
+|
 
 .. image:: ../img/emails/email_minimized2.jpg
 
+|
+
+
+
 You can save several of such emails as drafts:
+
+|
 
 .. image:: ../img/emails/several_minimized_emails2.jpg
 
-.. _doc--activities--emails--actions--view:
+|
+
+
+
+
 
 View Emails
-^^^^^^^^^^^
+~~~~~~~~~~~
 
-To open an email click it in the list or click the |IcView| **View** icon at the end of the email row.
+To **open** an email, click once either on the email or the **View**
+icon at the right end of the email.
+
+
+|
 
 .. image:: ../img/emails/view.jpg
 
+|
+
+|
+
 .. image:: ../img/emails/example_email_sent.jpg
+
+|
+
+
 
 From the page of the opened email, you can:
 
 -  **Add Comment** (add, edit or delete a comment to the email).
 
+|
+
 .. image:: ../img/emails/add_comment.jpg
+
+|
+
+
 
 -  **Add Task** (assign a task through an email).
 
+|
+
 .. image:: ../img/emails/add_task.jpg
+
+|
+
+
 
 -  **Mark Unread**
 
+|
+
 .. image:: ../img/emails/mark_unread.jpg
+
+|
+
+
 
 -  **Add Context** (define a record related to the email).
 
+|
+
 .. image:: ../img/emails/add_context.jpg
+
+|
+
+
 
 -  **Reply** (reply directly to the sender).
 
@@ -176,31 +326,38 @@ From the page of the opened email, you can:
 
 -  **Forward** (forward an email to a different recipient).
 
+ |
+
  .. image:: ../img/emails/reply_reply_all_forward.jpg
+
+ |
+
+ |
 
  .. image:: ../img/emails/reply_all.jpg
 
+ |
+
+ |
 
  .. image:: ../img/emails/forward.jpg
+
+ |
+
+
 
 
 -  **Download Attachment** (download the attached file, if available).
 
+ |
+
  .. image:: ../img/emails/download_attachment.jpg
- 
- .. _doc--activities--emails--actions--mark-read-unread:
 
-Mark an Email as Read/Unread
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ |
 
-To mark an email as read/unread, click the |IcCheckSquareO| **Mark As Read** / |IcMinus| **Mark As Unread** icon at the end of the email row.
 
 See Also
 --------
 
 :ref:`Using Emails <user-guide-using-emails>`
 
-
-
-.. include:: ../../img/buttons/include_images.rst
-   :start-after: begin

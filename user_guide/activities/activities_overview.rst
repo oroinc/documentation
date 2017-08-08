@@ -50,6 +50,7 @@ Tasks are assignments that need to be accomplished by a user. Keeping track of t
 
 'Create a regional sales report,' 'Compose an email to customer ABC,' 'Prepare everything required for marketing campaign A'—these are all examples of tasks that users can be assigned. 
 
+.. note:: See a short demo on `how to create and manage tasks <https://www.orocrm.com/media-library/create-and-manage-tasks>`_, or keep reading the step-by-step guidance below.
 
 What You Can Do with Tasks?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -129,6 +130,10 @@ Cases are issues, problems or failures reported by customers or found internally
 '5 faulty details in the supply,' 'Missing picture for product 01234,' 'User Jane Smith cannot log in' are examples of cases that you can create. 
 
 
+.. note:: See a short demo on `how to create and manage cases <https://www.orocrm.com/media-library/create-manage-cases-orocrm>`_, or keep reading the step-by-step guidance below.
+
+
+
 What You Can Do with Cases?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -163,6 +168,7 @@ It is very easy for a busy employee who is working hard on some task to forget a
    
 While such incidents can negatively affect the reputation of your business and work performance, it is very easy to deal with them: for each important meeting, conference, call, vacation, etc. create an event in an OroCRM calendar. It will help you avoid missing appointments or calls, and your colleagues can easily follow your schedule and be sure that that they are up-to-date with your business trips and conferences.
 
+.. note:: See a short demo on `how to create and manage calendars <https://www.orocrm.com/media-library/create-and-manage-calendars#play=fVcOy3TmuQg>`_, or keep reading the step-by-step guidance below.
 
 What You Can Do with Calendar Events?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -211,8 +217,9 @@ OroCRM's call logging functionality allows users to record who the call was with
 Additionally, OroCRM's integration with Google Hangouts enables users to make Hangouts voice or video calls from within OroCRM, providing an advantage for sales and support teams by enabling them to connect with customers directly.
 Users can make voice calls to a single phone number, or launch a audio / video conference with up to 5 participants. Call data is logged automatically, including any notes made during the call.
 
+.. note:: See a short demo on `how to log calls in your Oro application <https://www.orocrm.com/media-library/log-call-orocrm>`_, or keep reading the step-by-step guidance below.
 
-There are three ways to start making or logging a call: 
+There are three ways to start making or logging a call:
 
 - By clicking the :guilabel:`Log Call` button in the dedicated system section.
 - By clicking the **Hangouts call** or **Log Call** icons that appear near the phone fields throughout the system when you hover over them.  
@@ -262,11 +269,10 @@ Oro CRM Enterprise Edition also supports integration with Microsoft Exchange Ser
 
 Users can access their emails on the personal **My Emails** page, via the **Recent Emails** menu button, and the **Recent Emails** dashboard widget.
 
-|
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the guidance below.
 
 .. image:: ../img/activities/activities_emails1.png
 
-|
 
 When an entity record is mentioned as a context in an email, or if an email is sent using the **Send Email** action button from the entity record view page, this email becomes available in the **Activities** section of the record  view page. Emails linked to contacts appear in the same section on the corresponding contact view pages.
 
@@ -292,6 +298,9 @@ To maintain such requests, use the contact request functionality in OroCRM. With
 Users can see and manage contact request in the dedicated system section.
 
 
+.. note:: See a short demo on `how to create and manage contact requests <https://www.orocrm.com/media-library/manage-contact-requests>`_, or keep reading the guidance below.
+
+
 |
 
 .. image:: ../img/activities/activities_contactrequests.png
@@ -315,6 +324,9 @@ Sometimes you need to leave additional information about an entity record. For e
 
 For such cases, OroCRM provides an in-built functionality that enables you to leave different notes on entity records.
 
+
+.. note:: See a short demo on `how to add notes <https://www.orocrm.com/media-library/add-notes-orocrm>`_, or keep reading guidance below.
+
 |
 
 .. image:: ../img/activities/activities_notes.png
@@ -335,7 +347,9 @@ Leaving Comments
 Discussing work with colleagues can boost work process. Use comments functionality to have a discussion on an entity record view page.  This way users can be sure that everything important that emerged during this discussion will not be lost and can be easily found.   
 Users can also use comments to express their personal opinion about an entity record or anything connected with it (while notes can designated for storing objective information regarding an entity record).
 
-You can leave a comment in the **Comments** section of the entity view page. 
+You can leave a comment in the **Comments** section of the entity view page.
+
+.. note:: See a short demo on `how to add comments <https://www.orocrm.com/media-library/add-comments-orocrm>`_, or keep reading the guidance below.
 
 |
 
@@ -352,6 +366,8 @@ Adding Attachments
 """"""""""""""""""
 
 When you need to provide additional information about an entity record and this information is fully included in a file (for example, you want to add a calculation sheet), add this file as an attachment directly to the entity record. 
+
+.. note:: See a short demo on `how to add attachments in your Oro application <https://www.orocrm.com/media-library/add-attachments-orocrm>`_, or keep reading the guidance below.
 
 You can attach files by clicking the :guilabel:`Add Attachment` action button on the view page of the entity record that the attachment relates to.
 

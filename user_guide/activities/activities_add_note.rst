@@ -3,6 +3,8 @@
 Notes
 =====
 
+.. note:: See a short demo on `how to add notes <https://www.orocrm.com/media-library/add-notes-orocrm>`_, or keep reading the step-by-step guidance below.
+
 Add a Note
 ----------
 

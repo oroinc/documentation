@@ -27,7 +27,7 @@ In the upper-right part of the page you can see the :guilabel:`Log Call` action 
 The other grid controls are common for all grids in the application. See the :ref:`Grids <doc-grids>` guide for more information on grids.
 
 Grid
-^^^^^
+^^^^
 
 +----------------+--------------------------------------------------------------+
 | Field          | Description                                                  |

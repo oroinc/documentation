@@ -164,9 +164,7 @@ Create an Entity
 
    .. image:: ../img/entity_management/entity_create3.png
 
-   
 
-    
 6. Click **Other** and specify the following:
 
    - **Ownership Type**—Records of which entity can be set as owners of the entity. For more information, see the `Ownership Type <../security/access-management-ownership-type>`__ guide.

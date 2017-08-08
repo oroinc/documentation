@@ -10,7 +10,7 @@ Description
 
 
 Top of the page
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 |
 
@@ -45,7 +45,7 @@ In the next row you can click the **Change History** link to see who, how and wh
 
 
 General Information Section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 |
 
@@ -79,12 +79,12 @@ Entity Information
 +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Unique Keys
-~~~~~~~~~~~~
+~~~~~~~~~~~
 
 This subsection contains sets of fields by which the system will compare entity records to determine whether these records are distinct or not. For more information about unique keys, see the `Manage Unique Keys <./entity-actions#manage-unique-keys>`__ section of the `Actions with Entities <./entity-actions>`__ guide. 
 
 Fields
-^^^^^^^
+^^^^^^
 
 This section contains the list of fields defined for this entity. For more information about the entity fields, see the `Entity Fields <./entity-fields>`__ guide.
 

@@ -20,12 +20,14 @@ This guide describes how to create and modify the fields.
 
 
 Actions
---------
+-------
 
 .. _doc-entity-fields-create:
 
 Create a Custom Entity Field
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: See a short demo on `how to create a custom field <https://www.orocrm.com/media-library/create-custom-field>`_, or keep reading the step-by-step guidance below.
 
 1. In the main menu, navigate **System>Entities>Entities Management**.
 
@@ -92,7 +94,7 @@ Delete a Custom Entity Field
 
 
 Links
-------
+-----
 
 For the detailed description of entity field types, see the `Entity Field Types <./entity-field-types>`__ guide. 
 

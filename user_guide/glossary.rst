@@ -1,6 +1,4 @@
-B2B
 :orphan:
-
 
 .. _glossary:
 

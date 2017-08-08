@@ -10,6 +10,8 @@ The following guide will introduce you to the email settings and
 provide instructions on how to configure personal and system mailboxes,
 and integrate with Google, MS Exchange and Outlook.
 
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://www.orocrm.com/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
+
 
 To reach **Email Configuration** page:
 
