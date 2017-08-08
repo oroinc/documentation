@@ -2,7 +2,7 @@
 
 .. _sys--conf--commerce--sales--contacts-global:
 
-Configure Sales Rep Information Globally 
+Configure Sales Rep Information Globally
 ----------------------------------------
 
 .. begin_body

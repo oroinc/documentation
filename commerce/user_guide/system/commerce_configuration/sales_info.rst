@@ -1,6 +1,6 @@
 .. _sys--conf--commerce--sales--contacts:
 
-Configure Sales Representative Information 
+Configure Sales Representative Information
 ==========================================
 
 
@@ -28,28 +28,28 @@ With this in mind, we will have a look at how sales representative information i
 .. contents:: :local:
    :depth: 2
 
-Configure Sales Rep Information Globally 
+Configure Sales Rep Information Globally
 ----------------------------------------
 
 .. include:: /user_guide/system/commerce_configuration/sales_info_global.rst
    :start-after: begin_body
    :end-before: finish_body
 
-Configure Sales Rep Information per Organization 
+Configure Sales Rep Information per Organization
 ------------------------------------------------
 
 .. include:: /user_guide/system/commerce_configuration/sales_info_organization.rst
   :start-after: begin
   :end-before: finish
 
-Configure Sales Rep Information per Website 
+Configure Sales Rep Information per Website
 -------------------------------------------
 
 .. include:: /user_guide/system/commerce_configuration/sales_info_website.rst
   :start-after: begin
   :end-before: finish
 
-Configure Sales Rep Information per User 
+Configure Sales Rep Information per User
 ----------------------------------------
 
 .. include:: /user_guide/system/commerce_configuration/sales_info_user.rst

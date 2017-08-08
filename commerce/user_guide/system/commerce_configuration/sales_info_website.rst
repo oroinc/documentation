@@ -2,7 +2,7 @@
 
 .. _sys--conf--commerce--sales--contacts-website:
 
-Configure Sales Rep Information per Website 
+Configure Sales Rep Information per Website
 -------------------------------------------
 
 .. begin

@@ -15,6 +15,15 @@ OroCommerce groups product configuration options into the following categories:
 
   * `Product Image Watermark Configuration Per Website`_
 
+* Image Gallery:
+
+  * `Configure Image Gallery Globally`_
+
+  * `Configure Image Gallery per Organization`_
+
+  * `Configure Image Gallery per Website`_
+
+
 * New Arrivals:
 
   * `Enable New Product Icons Globally`_
@@ -60,6 +69,31 @@ Product Image Watermark Configuration Per Website
 .. include:: /user_guide/products/configuration/website_images.rst
    :start-after: begin
    :end-before: finish
+
+Image Gallery
+^^^^^^^^^^^^^
+
+Configure Image Gallery Globally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/global_gallery.rst
+   :start-after: begin
+   :end-before: finish
+
+Configure Image Gallery Per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/organization_gallery.rst
+   :start-after: begin
+   :end-before: finish
+
+Configure Image Gallery Per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/website_gallery.rst
+   :start-after: begin
+   :end-before: finish
+
 
 New Arrivals
 ^^^^^^^^^^^^
