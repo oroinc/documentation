@@ -5,7 +5,7 @@ Manage Reports
 
 
 .. contents:: :local:
-   :depth: 3
+   :depth: 2
 
 
 .. _doc-reports-actions-create:
@@ -13,7 +13,11 @@ Manage Reports
 Create a Custom Report
 ----------------------
 
-1. In the main menu, navigate **Reports and Segments>Manage Custom Reports**.
+See a short demo on `how to create a report in your Oro application <https://www.orocrm.com/media-library/create-report-orocrm>`_, or continue reading the step-by-step guidance below.
+
+To create a customer report:
+
+1. Navigate to **Reports and Segments>Manage Custom Reports** in the main menu.
 
 2. On the reports grid page, click the :guilabel:`Create Report` button.
 

@@ -348,6 +348,10 @@ Step 3. Web Server Configuration
   opcache.interned_strings_buffer=8
   opcache.max_accelerated_files=11000
   opcache.fast_shutdown=1
+  opcache.load_comments=1
+  opcache.save_comments=1
+  
+.. note:: The opcache.load_comments and opcache.save_comments parameters are enabled by default and should remain so for Oro application operation. Please do not disable them.
 
 Multiple PHP Versions
 ~~~~~~~~~~~~~~~~~~~~~

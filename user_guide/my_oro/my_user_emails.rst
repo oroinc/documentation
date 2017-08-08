@@ -3,6 +3,9 @@
 My Emails
 =========
 
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+
+
 To reach the **My Emails** page:
 
 1.  Navigate to your user name in the upper-right corner.

@@ -4,10 +4,12 @@ System Mailbox Settings
 =======================
 .. contents:: :local:
     :depth: 2
-    
+
+
+See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+
 Configuration of system mailboxes
 ---------------------------------
-
 
 To create a system mailbox to process business information requests:
 
@@ -24,18 +26,10 @@ To create a system mailbox to process business information requests:
 
 .. begin
 
-
-|
-
 .. image:: ../img/admin_emails/add_mailbox.jpg
-
-|
-
-
 
 General
 ^^^^^^^
-
 
 The **General section** defines the basic settings of the mailbox
 created:
@@ -44,13 +38,7 @@ created:
 
 -  Type in your email address.
 
-|
-
 .. image:: ../img/admin_emails/create_mailbox.jpg
-
-|
-
-
 
 Synchronization
 ^^^^^^^^^^^^^^^
@@ -73,13 +61,7 @@ In the **Synchronization** section, configure your IMAP/SMTP connection:
 
 -  Check the **Folders** to be synchronized.
 
-|
-
 .. image:: ../img/admin_emails/imap_smtp.jpg
-
-|
-
-
 
 Email Processing
 ^^^^^^^^^^^^^^^^
@@ -100,52 +82,25 @@ business's unique requirements.
    lead record will be created in OroCRM.
 
    .. note:: In order to have an option to Convert to Lead, you need to have a Sales channel activated. Otherwise, this option will not be available on the list of options.
-    
-     
 
 -  **Convert to Case**. A new case record will be created in OroCRM
    based on the email received.
 
-|
-
 .. image:: ../img/admin_emails/email_processing.jpg
-
-|
-
-
 
 As an example, let us select the **Convert To Lead** option:
 
 -  Once the action has been selected, define which user will own the
    records and choose the source of your leads in the **Source** field.
 
-|
-
 .. image:: ../img/admin_emails/email_processing_2.jpg
-
-|
-
-
 
 .. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System>Entities>Entity Management>Lead>Source**.
 
 
- 
-
-|
-
 .. image:: ../img/admin_emails/lead_source.jpg
 
-|
-
-|
-
 .. image:: ../img/admin_emails/lead_source_field.jpg
-
-|
-
-
-
 
 Access Management
 ^^^^^^^^^^^^^^^^^
@@ -155,13 +110,7 @@ have access to the system mailbox. You can select roles and/or specific
 users. All the users with defined roles and all the specifically defined
 users will have access to this mailbox.
 
-|
-
 .. image:: ../img/admin_emails/access_management.jpg
-
-|
-
-
 
 Autoresponse Rules
 ^^^^^^^^^^^^^^^^^^
@@ -174,13 +123,7 @@ to the sender of the email.
 
 -  An Add Autoresponse Rule form will open.
 
-|
-
 .. image:: ../img/admin_emails/autoresponse.jpg
-
-|
-
-
 
 -  Define the following settings:
 

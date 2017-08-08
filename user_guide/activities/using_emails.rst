@@ -34,7 +34,7 @@ You can reach your emails in a number of ways, via:
 My Emails Page
 ^^^^^^^^^^^^^^
 
-For the description, see ref:`My Emails Page <doc-my-oro-emails>`.
+For the description, see :ref:`My Emails Page <doc-my-oro-emails>`.
 
 Recent Emails Menu Button
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -43,13 +43,7 @@ You can reach your emails by clicking on the Recent Emails button in the
 top right corner of the OroCRM window. A dropdown with unread emails
 will appear, as illustrated in the screenshot below:
 
-|
-
 .. image:: ../img/emails/recent_emails_button.jpg
-
-|
-
-
 
 Clicking on an email from the dropdown will redirect you to the page of
 the selected email.
@@ -69,19 +63,12 @@ dropdown:
 
 -  **Reply All** (launches a **Reply** email dialog window).
 
-|
-
 .. image:: ../img/emails/mark_unread_reply_all.jpg
-
-|
-
 
 Recent Emails Dashboard Widget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For the description, see :ref:`Recent Emails Widget <doc-widgets-recent-emails>`.
-
-
 
 Activity Section
 ^^^^^^^^^^^^^^^^
@@ -89,13 +76,7 @@ Activity Section
 All the emails sent to a record are displayed in and can be reached from
 the  **Activity** section of the record’s page.
 
-|
-
 .. image:: ../img/emails/activities_section.jpg
-
-|
-
-
 
 Clicking on the ellipsis menu of a record will launch the following
 action list for an email:
@@ -122,18 +103,10 @@ To add a signature manually or modify a signature:
 -  Navigate to the main menu and click **My User>My Configuration**.
 
 -  In **General Setup** click **Email Configuration**.
-   
-|
 
 .. image:: ../img/emails/user_email_config.jpg
 
-|
-
-|
-
 .. image:: ../img/emails/user_email_config_signature.jpg
-
-
 
 -  In the Email Configuration window find the **Signature** section and
    define the following fields:
@@ -180,14 +153,8 @@ To create an email template:
 +-------------------+------------------------------------------------------------------------------------------------------------+
 
 -  Define the email template. Click on the necessary variable on the right and drag it to the text box:
-   
-|
 
 .. image:: ../img/emails/create_template.jpg
-
-|
-
-
 
 -  You can preview your email by clicking **Preview** in the top right
    corner.
@@ -202,13 +169,7 @@ The following actions are available for an email template from the :ref:`grid <d
 
 -  Clone the template: |IcClone|
 
-|
-
 .. image:: ../img/emails/manage_templates.jpg
-
-|
-
-
 
 -  You can edit the template details and save a new (cloned and edited)
    template.
@@ -217,37 +178,17 @@ The following actions are available for an email template from the :ref:`grid <d
 
 .. note:: If you want to track the user-activity related to the emails sent within the email campaign, add a piece of :ref:`Tracking Website <user-guide-marketing-tracking>` code to the email template.
 
-
-
 To apply an email template to a new email, select the template from the dropdown of the **Apply Template** field, as shown below:
-
-|
 
 .. image:: ../img/emails/apply_template.jpg
 
-|
-
-
-
 -  You will see an **Apply Template Confirmation** message. Click **Yes, Proceed** to apply the selected template.
-
-|
 
 .. image:: ../img/emails/apply_template_confirmation.jpg
 
-|
-
-
-
 -  You should now have your template applied to your email.
- 
-|
 
 .. image:: ../img/emails/template_applied.jpg
-
-|
-
-
 
 How emails can be related to CRM records
 ----------------------------------------
@@ -283,12 +224,7 @@ by navigating to **My User>My Emails** in the top right corner and
 selecting the system mailbox from the grid view selector in the top left
 corner.
 
-|
-
 .. image:: ../img/emails/sys_mailbox_qa.jpg
-
-|
-
 
 Automated processing of emails
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -340,13 +276,7 @@ To create a notification rule:
 
 -  Go to **System> Emails>Notification Rules**.
 
-|
-
 .. image:: ../img/emails/notification_rules.jpg
-
-|
-
-
 
 -  Click **Create Notification Rule** in the top right corner.
 
@@ -381,13 +311,7 @@ The following details must be defined in the **General** section.
 | **Template**    | Choose the template for which the rule will be created.                                                                                                            |
 +-----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-|
-
 .. image:: ../img/emails/create_notification_rule.jpg
-
-|
-
-
 
 Recipient List
 ^^^^^^^^^^^^^^
@@ -402,23 +326,13 @@ If the **Owner** box is checked, the email will be sent to the user who is assig
 
 Note that the **Owner** box is only available for the entities with the :ref:`ownership type <user-guide-user-management-permissions-ownership-type>` set to **User**.
 
-|
-
 .. image:: ../img/emails/notification_rule.jpg
-
-|
-
 
 Click **Save and Close** when you have finished configuring the rule.
 
 All available rules are displayed in the **All Notification Rules** :ref:`grid <doc-grids>` in **System>Emails>Notification Rules**.
 
-|
-
 .. image:: ../img/emails/notification_rules_grid.jpg
-
-|
-
 
 From this grid you can:
 

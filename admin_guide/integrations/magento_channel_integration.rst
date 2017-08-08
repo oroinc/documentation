@@ -5,6 +5,7 @@ Integration with Magento
 ========================
 
 OroCRM supports out of the box integration with Magento.
+
 The integration enables loading  data from and to a Magento-based eCommerce store ("Magento store") and processing it in
 the OroCRM.
 This article describes how to define and edit the integration and synchronization settings.
@@ -14,11 +15,12 @@ This article describes how to define and edit the integration and synchronizatio
     While Magento integration capabilities are pre-implemented, OroCRM can be integrated with different third-party
     systems.
 
+.. note:: See a short demo on `how to setup an integration between a Magento and your Oro application <https://www.orocrm.com/media-library/setup-magento-crm-integration>`_, or keep reading the guidance below.
 
 On the Magento Side
 -------------------
 
-The integration is made possible with the OroCRM Bridge Magento Extenstion. The OroCRM Bridge can be installed through
+The integration is made possible with the OroCRM Bridge Magento Extension. The OroCRM Bridge can be installed through
 the MagentoConnect.
 
       |

@@ -5,8 +5,10 @@ Contact Requests
 
 Requests for OroCRM support, including partnership proposals, complaints, additional 
 information and assistance requests that come from a :ref:`third-party application <admin-embedded-forms>` or have been 
-registered directly in OroCRM are collected with the *"Create Contact Request"* actions.   
+registered directly in OroCRM are collected with the *"Create Contact Request"* actions.
 
+
+.. note:: See a short demo on `how to create and manage contact requests <https://www.orocrm.com/media-library/manage-contact-requests>`_, or keep reading the step-by-step guidance below.
 
 Create a Contact Request from OroCRM
 ------------------------------------

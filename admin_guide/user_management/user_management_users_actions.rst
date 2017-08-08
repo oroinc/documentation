@@ -2,14 +2,14 @@
 
 
 Actions with Users
-====================
+==================
 
 .. contents:: :local:
     :depth: 3
 
 
 Actions
---------
+-------
 
 
 .. _doc-user-management-users-actions-create:
@@ -27,9 +27,9 @@ Create a User
 
     - **Enabled**—Select a user status from the list. This field is mandatory. 
 
-        - **Enabled**—The user can log into the system and to do their work within it, be an owner of entity records upon creation. 
+        - **Enabled**—The user can log into the system and to do their work within it, be an owner of entity records upon creation.
 
-        - **Disabled**—The user cannot log into the system, be an owner of entity records upon creation. 
+        - **Disabled**—The user cannot log into the system or be the owner of entity records upon creation.
     
     - **Username**—Type a name that the user will use to log into the system. This field is mandatory. 
 
@@ -58,12 +58,8 @@ Create a User
     - **Emails**—Click the :guilabel:`Add Another Email` button and type an additional email address in the field that appears. You can add as many email addresses as required. To delete an email address, click the x icon next to the email field you want to delete.
       
     - **Phone**—Type the user's phone number.
-      
-|
 
-.. image:: ../img/user_management/user_create_general.png 
-
-|   
+.. image:: ../img/user_management/user_create_general.png
     
 4. Click **Additional** and provide more information about the user. In case any visible custom fields are added to the **User** entity, they appear in this section. 
  
@@ -82,31 +78,18 @@ Create a User
          
         - In case the user's role includes division level permissions, the user will be able to access data of each business unit specified in these sections, as well as the data of the whole chain of business units subordinated to those selected in this section. 
 
-|
-
 .. image:: ../img/user_management/user_create_accesssettings.png 
-
-|   
- 
 
 8. Click **Groups and Roles**. In the **Groups** subsection, select check boxes in front of the groups you want the user to be part of. All groups available in the system are listed here. A group is a set of users for convenience consolidated by one or more parameters. Instead of specifying each user one by one, you can specify a user group in filters and notification rules. For more information about groups, see the :ref:`User Groups <user-management-groups>` guide.
 
 9. In the **Roles** subsection, select check boxes in front of the roles you want the user to have. Roles are predefined sets of permissions. When you assign a role to a user, you can be sure that the user will have access only to the information within the system that is necessary for them to do their work. For more information about roles, see the :ref:`Access and Roles Management <user-guide-user-management-permissions>` guide.
 
-   .. important::
-      At least one role must be selected. 
+   .. important:: At least one role must be selected.
 
    .. caution::
       If the role is not 'System-Wide' and a particular organization is specified for it, check that the same organization is selected for a user in the **Access Settings** sections. Otherwise, the role does not appear in the **Roles** section. 
 
-
-|
-
 .. image:: ../img/user_management/user_create_groupsandroles.png 
-
-|   
- 
-
 
 10. Click :guilabel:`Save` in the upper-right corner of the page. Or, in case you need to create one more user, click the arrow next to the :guilabel:`Save` button and click :guilabel:`Save and New` in the menu. Then the current user will be saved and the blank **Create User** page will open.
    
@@ -128,12 +111,7 @@ Using LDAP integration does not prevent you from creating user records in OroCRM
 
 System administrators will be able to tell if a user has been added via the LDAP integration: for such users the **LDAP Distinguished Names** field of their view pages will not be empty and will contain the corresponding value.
 
-|
-
 .. image:: ../img/user_management/user_ldap_distinguished_name.png 
-
-|
-
 
 For how to configure the LDAP integration, please see the `LDAP integration <../integrations/ldap-integration>`__ guide.
 
@@ -148,11 +126,7 @@ Review a User
    
    Alternatively, you can click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: ../img/user_management/user_view_fromgrid.png
-
-   | 
 
 3. Review the user settings. Please, see details in the :ref:`User on the Interface <doc-user-management-users-view-page>` section. 
 
@@ -170,19 +144,11 @@ Enable a User
    
    Alternatively, you can click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: ../img/user_management/user_view_fromgrid.png
-
-   | 
 
 3. On the user view page, click the **Enable User** button in the upper-right corner. The user status will change to **Enabled**.
 
-|
-
 .. image:: ../img/user_management/user_enable.png
-
-| 
 
 .. _doc-user-management-users-actions-disable:
 
@@ -196,21 +162,11 @@ Disable a User
    
    Alternatively, you can click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: ../img/user_management/user_view_fromgrid.png
-
-   | 
 
 3. On the user view page, click the **Disable User** button in the upper-right corner. The user status will change to *Disabled**.
 
-|
-
 .. image:: ../img/user_management/user_disable.png
-
-| 
-
-
 
 .. _doc-user-management-users-actions-activate:
 
@@ -227,23 +183,11 @@ To activate a user, perform the following:
    
    Alternatively, you can click the ellipsis menu at the right-hand end of the corresponding row and then click the |IcView| **View** icon.
 
-   |
-
    .. image:: ../img/user_management/user_view_fromgrid.png
-
-   | 
 
 3. On the user view page, click the **Activate** button in the upper-right corner. The user authentication status will change to **Active**.
 
-|
-
 .. image:: ../img/user_management/user_activate.png
-
-| 
-
-
-
-
 
 .. _doc-user-management-users-actions-edit:
 
@@ -290,7 +234,7 @@ After the API key is generated, the user will be able to execute API requests vi
 .. _doc-user-management-users-actions-email:
 
 Send an Email 
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 By default, this way an email is meant to be sent to the user from whose view page you perform this action. However, you can modify addresses that appear in the **From** field as you like. 
 
@@ -302,28 +246,15 @@ By default, this way an email is meant to be sent to the user from whose view pa
 
     - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Send Email** on the list. 
 
-      |
-
       .. image:: ../img/user_management/user_sendemail0.png 
-
-      |
 
     - In the **General Information** section, find the **Emails** field, and point to the required email. Click the **Send Email** icon that appears next to it.   
 
-      |
-
       .. image:: ../img/user_management/user_email_icon.png
 
-      |
-
-
 4. In the **Send Email** dialog box, specify the required data. For help on this, see :ref:`Compose A New Email <doc-activities-emails-actions-compose>`.
-   
-|
 
 .. image:: ../img/user_management/user_sendmail.png 
-
-|
 
 5. Click :guilabel:`Send`. The email will appear in the **Activity** section of the user view page. 
 
@@ -344,11 +275,7 @@ By logging or making a call from a user's view page, you specify that this user 
 
    - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Log Call** on the list. 
 
-     |
-
      .. image:: ../img/user_management/user_logcall0.png 
-
-     |
 
    - In the **General Information** section, find the **Phone** field, and point to a specified phone number. The **Hangouts Call** and **Log Call** icons appear next to it. 
    
@@ -356,27 +283,15 @@ By logging or making a call from a user's view page, you specify that this user 
 
      Click the **Log Call** icon to specify call details.
 
-     |
-
      .. image:: ../img/user_management/user_hangouts_call.png
-
-     |
 
    - In the **General Infromation** section, find the **Emails** field, and point to the required email. Click the **Hangouts Call** icon that appears next to it.   
 
-     |
-
      .. image:: ../img/user_management/user_hangouts_call2.png
 
-     |
-
 4. If you used **Log Call** action button or icon, in the **Log Call** dialog box, specify the required data.
-   
-|
 
 .. image:: ../img/user_management/user_logcall.png 
-
-|
 
 5. Click :guilabel:`Log Call` to log a call, or click the **Start** button  next to **Hangouts** label to start a hangout call.  The call will appear in the **Activity** section of the user view page. 
 
@@ -399,20 +314,12 @@ Assign an Event to a User
 
 3. On the user view page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Assign Event** on the list. 
 
-|
-
 .. image:: ../img/user_management/user_assignevent0.png 
-
-|
 
 
 4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the `Add an Event for a Related Record <../../user-guide/activities/activities-add-assign-calendar-events#add-an-event-for-a-related-record>`__ section of the `Add and Assign Calendar Events <../../user-guide/activities/activities-add-assign-calendar-events>`__ guide.
-   
-|
 
 .. image:: ../img/user_management/user_assignevent.png 
-
-|
 
 5. Click :guilabel:`Save`. The event will appear in the **Activities** section of the user view page.  
 
@@ -427,20 +334,11 @@ Assign a Task to a User
 
 3. On the user view page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Assign Task** on the list. 
 
-|
-
 .. image:: ../img/user_management/user_assigntask0.png 
 
-|
-
-
 4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the `Add a Task for Another Record <../../user-guide/activities/activities-add-assign-tasks#add-a-task-for-another-record>`__ section of the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
-   
-|
 
 .. image:: ../img/user_management/user_assigntask.png 
-
-|
 
 5. Click :guilabel:`Create Task`. The task will appear in the **Additional Information** section, **Tasks** subsection of the user view page.
 
@@ -479,20 +377,12 @@ Change the User's Password
 
 3. On the user view page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Change Password** on the list. 
 
-|
-
 .. image:: ../img/user_management/user_changepassword0.png 
-
-|
 
 
 4. In the **Change Password** dialog box, type a new password for the user. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show** / |IcHide| **Hide** icon next to the **New password** field.
-   
-|
 
 .. image:: ../img/user_management/user_changepassword.png 
-
-|
 
 5. Click :guilabel:`Save`. The new password will be sent to the user's primary email address. 
    
@@ -509,26 +399,16 @@ Reset the User's Password
 
 3. On the user view page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Reset Password** on the list. 
 
-|
-
 .. image:: ../img/user_management/user_resetpassword0.png 
 
-|
-
 4. In the **Reset Password** dialog box, click :guilabel:`Reset`. The password reset link will be sent to the user's primary email address. 
-   
-|
 
 .. image:: ../img/user_management/user_resetpassword.png 
 
 .. important:: 
 	The user will not be able to log into the OroCRM before their password is changed. Note that user authentication status changes to **Password reset**:
 
-  |
-
   .. image:: ../img/user_management/user_resetpassword.png 
-
-  |
 
   It will return back to **Active** when the user completes password change procedure. 
 
@@ -553,13 +433,9 @@ When you suspect a security breach, you can reset passwords for multiple users a
 .. important:: 
   The users will not be able to log into the OroCRM before their passwords are changed. Note that user authentication statuses change to **Password reset**:
 
-  |
-
   .. image:: ../img/user_management/user_resetpassword2.png
 
-  |
-
-  They will return back to **Active** when the users complete password change procedure.    
+  They will return back to **Active** when the users complete password change procedure.
 
 
 .. _doc-user-management-users-actions-export:
@@ -569,7 +445,7 @@ Export Users
 You can export all user records into the .csv file. The exported file will contain all user record fields marked to be exported in the **User** entity settings. For more information about how to configure which fields will be exported, see the `Entity Fields <../admin-guide/entities/entity-fields>`__ guide. 
 
 .. note:: 
-	All existing user records are exported at once. 
+	All existing user records are exported at once.
 
 	Passwords are stored and exported in the hashed form. 
 
@@ -581,25 +457,16 @@ To export user records, do the following:
 
 3. After the export job is finished, you will receive a notification on your primary email address. 
 
-|
-
 .. image:: ../img/user_management/users_export.png 
 
-|
-
-|
-
 .. image:: ../img/user_management/users_export_csv.png 
-
-|
 
 .. _doc-user-management-users-actions-delete:
 
 Delete a User
 ^^^^^^^^^^^^^
 
-.. important:: 
-  You cannot delete a user who has records assigned to them. 
+.. important:: You cannot delete a user who has records assigned to them.
 
 
 1. In the main menu, navigate **System>User Management>Users**.

@@ -8,6 +8,8 @@ structure, as well as to group users in any other way and to define the access a
 
 .. user-guide-user-management-admin-structure
 
+.. note:: See a short demo on `how to create and manage users <https://www.orocrm.com/media-library/manage-users>`_, or keep reading the step-by-step guidance below.
+
 Administrative Structure
 ------------------------
 
@@ -28,7 +30,7 @@ or another organization, to which the users belongs.
 
 .. note::
 
-    In the community edition there is an only organization. 
+    In the community edition there is only one organization.
 
     In the enterprise edition, several organizations can be created within one system, as described in the 
     :ref:`Multiple Organizations Support guide <user-ee-multi-org>`.
@@ -62,7 +64,7 @@ When creating/editing the records, you can define their basic details and the fo
 
 For each organization:
 """"""""""""""""""""""
-- Users that belong to the organization (in the Enterprise edition only)
+- Users who belong to the organization (in the Enterprise edition only)
 
 The ways to create and manage the organization records is described in the 
 :ref:`Organization Records Management guide <user-management-organizations>`
@@ -70,7 +72,7 @@ The ways to create and manage the organization records is described in the
 
 For each business unit:
 """""""""""""""""""""""
-- Users that belong to the business unit
+- Users who belong to the business unit
 - Parent unit of the business unit
 
 The ways to create and manage the business unit records is described in the 

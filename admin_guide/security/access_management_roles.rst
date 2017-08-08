@@ -7,26 +7,31 @@ Roles Management
     :depth: 3
 
 Overview
----------
+--------
 
 Roles are predefined sets of permissions. When you assign a role to a user, you can be sure that the user will be able to access only that information within the system which is necessary for them to do their work. 
+
+.. note:: See a short demo on `how to create a and manage roles <https://www.orocrm.com/media-library/create-manage-roles>`_, or continue reading the step-by-step guidance below.
+
 
 Roles Creation
 ^^^^^^^^^^^^^^
 
 Usually roles are created based on the user's job functions: sales manager, marketing team member, administrator. But this is not a strict rule. You can create as many roles as required and configure them according to the needs of your company. 
-For how to create a role, see the *Create a Role* section of the the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
+For how to create a role, see the **Create a Role** section of the the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` topic.
 
 
 
 Role Structure
 ^^^^^^^^^^^^^^
 A role is a set of permissions that you can grant to a user all-in-one. 
-There are two nominal types of permissions in OroCRM: 
+There are several nominal types of permissions in OroCRM:
 
 - Permissions to perform a certain action on entity. For each permission of this type you can specify a desired access level.
 
-- Permissions to access system functions. They are also called 'capabilities' on the interface. System functions belong to the system and thus for them you simply specify whether to include permissions to access them into the role or not.
+- Permissions to access system functionalities. They are also called 'capabilities' on the interface. System functionalities belong to the system and thus for them you simply specify whether to include permissions to access them into the role or not.
+
+- Permissions to view workflows and perform transitions.
 
 
 
@@ -65,28 +70,31 @@ For each of this actions you can set an access level, thus defining the range of
 
 The picture below shows the scheme of how permissions for an entity may be configured:
 
-|
-
 .. image:: ../img/access_roles_management/ex_permissions-on-entity.png 
-
-|
 
 This is how the corresponding configuration looks on the interface for the **Account** entity:
 
-|
-
 .. image:: ../img/access_roles_management/roles_permissions_general_ex.png 
 
-|
-
-
-For more information about which access levels defines which range, see the :ref:`Access Levels <user-guide-user-management-permissions-roles--acl>` guide.
+For more information about which access levels defines which range, see the :ref:`Access Levels <user-guide-user-management-permissions-roles--acl>` topic.
 
 .. Important::
 	Note that the set of available access levels depends on the entity's ownership type. For example, you will not be able to set the **User** access level if the entity's ownership type is **Organization.** Only two access levels are always available: **None**—access is denied and **Global**—access all entity records within the system.
 	For more information about ownership types, see the :ref:`Ownership Type <user-guide-user-management-permissions-ownership-type>` section and specifically, the Ownership type and access levels subsection.
 
 
+Field Level ACLs
+""""""""""""""""
+All important information that comprises an entity is contained in the entity fields. For example, if you open any record of the **Business Unit** entity, you will see such fields as **Name**, **Organization**, **Description**, **Website**, etc.
+
+When you include the permission to view entity records in a role, users with such role are automatically able to see all fields of the entity.
+
+However, there are situations when it is desirable to hide certain fields from one group of users while still having them available for others. For example, both the sales team and support team require to see **Opportunity** entity records. But as the financial information is often considered sensitive, you may want to hide the **Budget Amount** field from the support team members.
+
+
+Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role.
+
+For more information about the field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <./access-management-field-level-acl>`__ topic.
 
 
 
@@ -97,12 +105,36 @@ Permissions of this type either define whether a user must have access to certai
 
 This is how capabilities look on the interface:
 
+.. image:: ../img/access_roles_management/roles_overview2.png
 
-|
+Workflow Permissions
+~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../img/access_roles_management/roles_overview2.png 
+The workflow permissions define whether a user can view a particular workflow and perform transitions within it:
 
-|
++---------------------+----------------------------------------------------------------------------------------+
+| Action              | Description                                                                            |
++=====================+========================================================================================+
+| View Workflow       | A user can see the workflow widget on the record pages and the workflow record itself. |
++---------------------+----------------------------------------------------------------------------------------+
+| Perform Transitions | A user can perform any transitions of the workflow.                                    |
++---------------------+----------------------------------------------------------------------------------------+
+
+For each of this actions you can set an access level defining whether a user can view workflow / perform transitions for the records owned by the user themselves, or by the user's division, or for all records in the system, etc.
+
+For more information about which access levels defines which range, see the `Access Levels <./access-management-access-levels>`__ topic.
+
+.. image:: ../img/access_roles_management/roles_workflow_permissions1.png
+
+
+Workflow Transition Permissions
+"""""""""""""""""""""""""""""""
+
+To enable a user to perform just certain transitions of a workflow and forbid others, set the permissions for each transition individually.
+
+For more information about which access levels you can set, see the `Access Levels <./access-management-access-levels>`__ topic.
+
+.. image:: ../img/access_roles_management/roles_workflow_permissions2.png
 
 
 Assign and Combine Roles
@@ -126,41 +158,14 @@ The following example shows what access level for an action on entity a user who
 | Access Level: **User** | Access Level: **Division** | Access Level: **Division** |
 +------------------------+----------------------------+----------------------------+
 
-
-Field Level ACLs
-^^^^^^^^^^^^^^^^
-All important information that comprises an entity is contained in the entity fields. For example, if you open any record of the **Business Unit** entity, you will see such fields as **Name**, **Organization**, **Description**, **Website**, etc. 
-
-When you include the permission to view entity records in a role, users with such role are automatically able to see all fields of the entity. 
-
-However, there are situations when it is desirable to hide certain fields from one group of users while still having them available for others. For example, both the sales team and support team require to see **Opportunity** entity records. But as the financial information is often considered sensitive, you may want to hide the **Budget Amount** field from the support team members.  
-
-
-Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
-
-For more information about the field level ACLs, see the :ref:`Permissions for an Entity Field (Field Level ACLs) <user-guide-user-management-permissions-roles--field-level-acl>` guide.
-
-
 Links
 -----
 
-For how role is represented on the interface, see the :ref:`Roles on the Interface <user-guide-user-management-permissions-roles--interface>` guide.
+For how a role is represented on the interface, see the :ref:`Roles on the Interface <user-guide-user-management-permissions-roles--interface>` topic.
 
-For what actions you can perform with roles, see the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
+For what actions you can perform with roles, see the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` topic.
 
-For examples on roles application, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` guide.
+For examples on roles application, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` topic.
 
-
-
-
-
-
-
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
-   :align: middle
-
-.. |IcClone| image:: ../../img/buttons/IcClone.png
-   :align: middle
-
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
-   :align: middle
+.. include:: ../../img/buttons/include_images.rst
+   :start-after: begin

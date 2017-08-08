@@ -3,55 +3,59 @@
 Accounts
 ========
 
+This section will cover the following topics:
+
+.. contents:: :local:
+   :depth: 2
+
 To collect and process information on the customer activity of a person, group of people or business cooperating with 
-you, you can create an *"Account"* record ("account") that will represent them in OroCRM.
-An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing 
+you, you can create an account that will represent them in your Oro application.
+
+An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing
 a 360-degree view of the customer. 
 
+.. note:: See three short demos on:
+
+          * `creating and editing <https://www.orocrm.com/media-library/22093>`_
+          * `managing <https://www.orocrm.com/media-library/22095>`_
+          * `merging account records <https://www.orocrm.com/media-library/merge-account-records-2>`_ , or
+
+          keep reading the step-by-step guidance below.
 
 .. _user-guide-accounts-create:
 
-Create Account Records
-----------------------
+Create an Account
+-----------------
 
-- Go to the *Customers → Accounts*
+To create a new account:
 
-- Click :guilabel:`Create Account` button
+1. Navigate to **Customers > Accounts** in the main menu.
 
-- The *Create Account* :ref:`form <user-guide-ui-components-create-pages>` will appear:
+2. Click **Create Account** in the top right corner.
 
-.. image:: ../img/accounts/accounts_create.png
+   The following :ref:`page <user-guide-ui-components-create-pages>` appears:
 
-The following fields are mandatory and **must** be defined:
+   .. image:: ../img/accounts/accounts_create.png
 
-.. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
+3. Define the following mandatory fields:
 
-  "**Owner***","Limits the list of users that can manage the account to users,  whose 
-  :ref:`roles <user-guide-user-management-permissions>` allow managing 
-  accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
+   .. csv-table::
+      :header: "Field", "Description"
+      :widths: 10, 30
+
+      "**Owner**","Limits the list of users that can manage the account to users,  whose
+      :ref:`roles <user-guide-user-management-permissions>` allow managing
+      accounts assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.).
+
+      By default, the user creating the account is chosen."
+      "**Account Name**","The name used to refer to the account in the system."
+      "**Description**","Details or a short description of an account record."
+
+4. In order to add a contact, click the **+Add** in the **Contacts** section.
+
+.. note:: If you need to record and process any other details of accounts, :ref:`custom fields <doc-entity-fields-create>` can be created. Their values will be displayed in the **Additional** section. Please, refer to your administrator for assistance.
   
-  By default, the user creating the account is chosen."
-  "**Account Name***","The name used to refer to the account in the system."
-
-The rest of the fields are optional. They keep additional details about the account (such as its :term:`tags <Tag>`
-and related :term:`contacts <Contact>`) and may be left empty.
-
-- In order to add a contact, click the :guilabel:`+Add` button in the *Contacts* section. 
-
-If you need to record and process any other details of accounts, 
-:ref:`custom fields <doc-entity-fields-create>` can be created. Their values will 
-be displayed in the **Additional** section.
-  
-Once all the necessary information has been defined, click the button in the right top corner of the page to save the 
-account in the system.
-
-.. hint::
-
-    You can also export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
-    the :ref:`Export and Import Functionality <user-guide-import>` guide. 
-
+5. Once all the necessary information has been defined, Click **Save**.
 
 Manage Account Records
 ----------------------
@@ -59,94 +63,113 @@ Manage Account Records
 Accounts View Page
 ^^^^^^^^^^^^^^^^^^
 
-The :ref:`view page <user-guide-ui-components-view-pages>` consists of several sections, namely:
+The following sections are available for the account :ref:`page <user-guide-ui-components-view-pages>`:
 
-- **Page Header**: date of the account creation and its latest update, as well as its 
-  :term:`lifetime sales value <Lifetime Sales Value>`.
+1. The **Page Header** has the date of account creation and its latest update, as well as its :term:`lifetime sales value <Lifetime Sales Value>`.
 
-- **General**: general details of the account, such as its name, tags, description and all the contacts assigned to the
-  account. 
+2. The **General** section is for general details of the account, such as its name, tags, description and all the contacts assigned to the account.
 
-  |
+   .. image:: ../img/accounts/accounts_view_general.png
+
+3. The **Activity** section includes any :ref:`activities <user-guide-activities>` related to the account, such as attachments, calls, calendar events, notes, emails or tasks (if available).
+
+   .. image:: ../img/accounts/accounts_view_activities.png
+
+   .. note:: If an activity-related action was performed for a customer or a contact assigned to the account, they will not be displayed. Only the activities performed directly for the account are available in the section.
+
+4.  The **Additional Information** section provides details of any :term:`custom fields <Custom Field>` defined for the account.
+5.  The **Website Activity** section lists customer activities displayed in the *Summary* and *Events* subsections.
+
+    .. image:: ../img/accounts/accounts_view_website_activity_1.png
+    .. image:: ../img/accounts/accounts_view_website_activity_2.png
+
+5.  The **Sections with channel names**. Each section contains details of all the customers that are assigned to this account and belong to the specified channel (e.g. Sales, Magento, OroCommerce).
+
+    .. image:: ../img/accounts/accounts_view_channels.png
   
-.. image:: ../img/accounts/accounts_view_general.png
+    .. note:: The number and names of such sections depend on the number and names of OroCRM channels and customer records assigned to the account. The type of channels can vary depending on your configurations and integrations (e.g. Sales, Magento, Commerce).
 
-|
+    Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
 
-- **Record Activities**: activities (calls, emails and tasks assigned to the account)
+    For instance:
 
-  |
-  
-.. image:: ../img/accounts/accounts_view_activities.png
+    * If an account relates to a Magento customer, its view page will have the **Magento** section displayed. Its subsections will be the following:
 
-.. note::
-    
-    If an activity-related action was performed for a customer or a contact assigned to the account, they will not be 
-    displayed. Only the activities performed directly for the account are available in the section.
+      1. The *General Info* subsection has the general information on the Magento customer related to the account (e.g. name, email, customer group, website, etc.)
+      2. The *Magento Orders* subsection lists all the :ref:`orders <user-guide-magento-orders-create>` related to the account.
+      3. The *Magento Shopping Carts* subsection shows the details of the :ref:`shopping carts <user-guide-magento-carts-create>` related to the account.
+      4. The *Magento Credit Memos* subsection is for :ref:`credit memo <user-guide--sales--magento-credit-memos>` and order details, such as the store from which the order has been placed, order number, the amount refunded, etc.
 
-- **Additional Information**: details of any :term:`custom fields <Custom Field>` defined for the account.
+     .. image:: ../img/accounts/account_subsections_new.png
 
-- **Sections with channel names**: each section contains details of all the customers that are assigned to this 
-  account and belong to the specified channel, as described in the 
-  :ref:`multichannel functionality description <user-guide-multi-channel-overview>`. 
-  
-  Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
-  
-  In the example below you can see a section of a channel named "B2B Channel":
-  
-  - There are three B2B Customers: Jewel Mart, A. L. Price, and PriceRite Warehouse Club.
+    * Within the **Sales** Channel section you will be able to see:
 
-  - Once one of the customers is chosen, you can see its general details and information on related Leads/Opportunities:
- 
-.. image:: ../img/accounts/accounts_view_channels.png
+      1. The Business Customer(s) related to the selected account.
+      2. Once one of the customers is selected, you can see their general details and information on related Leads/Opportunities.
 
-.. note::
+      .. note:: In new installations of OroCRM (2.0 and higher) the functions of a Sales channel are reduced to enabling Business Customers and controlling their grouping at the Account view. It is, therefore, no longer essential to create a Sales channel to enable leads and opportunities – these are enabled as features.
 
-    Number and names of such sections depends only on the number and names of OroCRM channels and customer records 
-    assigned to the account.
+      .. image:: ../img/accounts/accounts_view_channels_2.png
 
+    * Within a **Commerce** Channel, there are seven tabs with Commerce customer-related information:
+
+      1. General
+      2. Customer Users
+      3. Shopping Lists
+      4. Requests For Quote
+      5. Quotes
+      6. Orders
+      7. Opportunities.
 
 .. _user-guide-accounts-actions:
 
 Account Actions from the View Page
 """"""""""""""""""""""""""""""""""
 
-      |
+The following actions can be performed for the accounts from the :ref:`view page <user-guide-ui-components-view-pages>`:
 
-The following actions can be performed for the accounts from the :ref:`View page <user-guide-ui-components-view-pages>`:
-  
-- Get to the *"Edit"* form of the account
+1. Share the account. Clicking **Share** will prompt a sharing settings pop up window to open.
 
-- Delete the account from the system 
-
-- Export and import accounts with :guilabel:`Export` and :guilabel:`Import` buttons as described in 
-  the :ref:`Export and Import Functionality <user-guide-import>` guide. 
-
-- The rest of the actions available depend on the system settings defined in the
-  **Communication & Collaboration** settings section of the 
-  **Accounts** entity (see step 4 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
-
-.. image:: ../img/accounts/accounts_view_actions.png
+   .. image:: ../img/accounts/accounts_view_actions_share.png
 
 
-Account Actions from the Grid 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2. Get to the |IcEdit| **Edit** form of the account.
 
-From the :ref:`grid <doc-grids>` you can:
+3. Delete the account from the system by clicking |IcDelete| **Delete**
 
-      |
+4. Export and import accounts with **Export** and **Import** buttons as described in the :ref:`Export and Import Functionality <user-guide-import>` guide.
+
+5. Perform a number of actions under **More Actions** menu:
+
+   * :ref:`Add Attachment <user-guide-activities-attachments>`
+   * :ref:`Add Note <user-guide-add-note>`
+   * :ref:`Send Email <user-guide-using-emails>`
+   * :ref:`Add Event <doc-activities-events>`
+   * :ref:`Log Call <doc-activities-calls>`
+   * :ref:`Add Task <doc-activities-tasks>`
+   * :ref:`Add Contact <user-guide-contacts>`
+   * :ref:`Create Opportunity <user-guide-system-channel-entities-opportunities>`
+
+   .. image:: ../img/accounts/MoreActionsMenu.png
+
+Account Actions from the Account List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By hovering over the |IcMore| more actions menu to the right of the necessary accountm you can perform the following actions:
 
 .. image:: ../img/accounts/accounts_grid.png
 
-|
+1. View the account by clicking |IcView|
 
-- Delete the account from the system : |IcDelete|
+2. Delete the account from the system by clicking |IcDelete|
   
-- Edit the account : |IcEdit|
+3. Edit the account by clicking |IcEdit|
   
-- View the account : |IcView| 
+4. Do inline editing for specific columns, such as account name, owner or tags, by clicking |IcPencil|
 
-- Merge Accounts
+   .. image:: ../img/accounts/accounts_grid_inline_editing.gif
+
+4. Merge Accounts by clicking |IcMerge|
 
 
 .. _user-guide-accounts-merge:
@@ -161,45 +184,38 @@ business-to-business partner is co-operating with you from a new channel (e.g. s
 
 In order to merge accounts:
 
-- Go to the accounts grid
+1. Go to the list of all accounts.
 
-- Check the accounts that you want to merge
+2. Find the accounts that you want to merge.
 
-- Click the **Merge** icon. (See :ref:`Merge Records <doc-grids-actions-records-merge>`.)
+3. Click the **Merge** icon. (See :ref:`Merge Records <doc-grids-actions-records-merge>`).
 
-*For the sake of example, we are merging three accounts "Acuserv", "Big Bear Stores" and "Casa Bonita"*
+   As an example, we are merging three accounts: Acuserv, Big Bear Stores and Casa Bonita.
 
-.. image:: ../img/accounts/accounts_merge_01.png
+   .. image:: ../img/accounts/accounts_merge_01.png
 
-|
+4. Once you click **Merge Accounts**, a table with the merge-settings will appear.
 
-Once you've clicked the :guilabel:`Merge Accounts` button, a table with the merge-settings will appear.
+   .. image:: ../img/accounts/accounts_merge_02.png
 
-      |
 
-.. image:: ../img/accounts/accounts_merge_02.png
+5. Choose the name of one of the accounts that is being merged to give to your new account (Master Record).
 
-- Choose the name of one of the accounts being merged, that will be given to your new account ("Master Record").
+6. Choose if the contacts should replaced with the contacts of one account (and which), or if all the contacts should be appended.
 
-- Choose if the contacts shall be replaced with the contacts of one account (and which), or if all the contacts shall be
-  appended.
+7. Choose the default contact of the accounts being merged, that will be given to the Master Record.
 
-- Choose the default contact of the accounts being merged, that will be given to the Master Record.
+8. Choose the description of the accounts being merged that will be given to the Master Record.
 
-- Choose the description of the accounts being merged, that will be given to the Master Record.
+9. Choose the owner of the accounts being merged that will be given to the Master Record.
 
-- Choose the owner of the accounts being merged, that will be given to the Master Record.
+10. Choose if the tags should be replaced with the contacts of one account (and which), or if all the tags should be appended.
 
-- Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be 
-  appended.
-
-- Click the :guilabel:`Merge` button.
+11. Click **Merge**.
   
-A Master Record with merged data of several accounts will be created. The rest of the account details, including details 
-of the customer identities will be appended.
+    A Master Record with merged data of several accounts will be created. The rest of the account details, including details of the customer identities will be appended.
 
 
-      
 .. _user-guide-accounts-reports:
 
 Reports with Account Records
@@ -207,24 +223,23 @@ Reports with Account Records
 
 OroCRM currently comes with two ready-to-use reports on accounts:
 
-- Accounts Life Time Value 
+1. Accounts Life Time Value
 
-- Accounts by Opportunities
+2. Accounts by Opportunities
 
  
 Accounts Life Time Value 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is a simple but useful report, with which you can see the total amount of money received from all the customers 
-assigned to the account. 
+This a report, with which you can see the total amount of money received from all the customers assigned to the account.
 
-In order to see the report go to *Reports and Segments → Reports → Accounts → Life Time*.
+In order to see the report go to **Reports and Segments > Reports > Accounts > Life Time**.
 
 It shows:
 
-- the account name 
+- The account name
 
-- total lifetime sales value registered in OroCRM
+- The total lifetime sales value registered in your Oro application.
 
 .. image:: ../img/accounts/accounts_report_by_lifetime.png
 
@@ -232,57 +247,58 @@ It shows:
 Accounts by Opportunities
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With this report you can see number of won, lost and pending opportunities for all the customers assigned to the 
-account. 
+With this report you can see number of won, lost and pending opportunities for all the customers assigned to the account.
 
-In order to see the report go to *Reports and Segments → Reports → Accounts → By Opportunities*.
+In order to see the report go to **Reports and Segments > Reports > Accounts > By Opportunities**.
 
 It shows:
 
-- the account name 
+- The account name
 
-- the number of won opportunities for all the customers assigned to the account
+- The number of won opportunities for all the customers assigned to the account
 
-- the number of lost opportunities for all the customers assigned to the account
+- The number of lost opportunities for all the customers assigned to the account
 
-- the number of pending opportunities for all the customers assigned to the account
+- The number of pending opportunities for all the customers assigned to the account
 
-- total number of opportunities for all the customers assigned to the account
+- The total number of opportunities for all the customers assigned to the account
 
-- total number of opportunities of a kind, regardless of their account.
+- The total number of opportunities of a kind, regardless of their account.
 
-  |
-  
+
 .. image:: ../img/accounts/accounts_report_by_opportunity.png 
 
 .. hint::
 
-    New custom reports can be added, that can use details of the accounts as well as of any records related to the 
-    accounts. For more details on the ways to create and customize the reports,  please see the 
-    :ref:`Reports guide <user-guide-reports>`.
+    New custom reports can be added that can use details of the accounts, as well as of any records related to the
+    accounts. For more details on the ways to create and customize the reports, refer to the :ref:`Reports topic <user-guide-reports>`.
 
 
 
 
 
-.. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
-   :align: middle
 
-.. |Bdropdown| image:: ../../img/buttons/Bdropdown.png
-   :align: middle
 
-.. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
-   :align: middle
 
-.. |Bplus| image:: ../../img/buttons/Bplus.png
-   :align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
-   :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
-   :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
-   :align: middle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
 

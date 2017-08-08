@@ -10,23 +10,16 @@ The following guide will introduce you to the email settings and
 provide instructions on how to configure personal and system mailboxes,
 and integrate with Google, MS Exchange and Outlook.
 
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://www.orocrm.com/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
+
 
 To reach **Email Configuration** page:
 
 -  Navigate to **System** in the main menu, click **Configuration**.
- 
-|
 
 .. image:: ../img/admin_emails/system_config.jpg
 
-|
-
-|
-
 .. image:: ../img/admin_emails/email_config_1.jpg
-
-|
-
 
 -  In the left menu, select **System Configuration>General Setup>Email
    Configuration**.
@@ -49,26 +42,11 @@ The following settings are available:
 |                   | threaded and non-threaded                                                                                                                                                                            |
 +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-|
-
 .. image:: ../img/configuration/threads_settings.png
-
-|
-
-
-
-|
 
 .. image:: ../img/admin_emails/threaded_email_activities.jpg
 
-|
-
-|
-
 .. image:: ../img/admin_emails/non_threaded_activities.jpg
-
-|
-
 
 .. csv-table::
   :header: "Field", "Description"
@@ -76,13 +54,7 @@ The following settings are available:
 
   **Reply**,"This field defines which button will be displayed as the default one: **Reply** button is available by default with the **Forward ** and ** Reply** **all** options in its dropdown. The settings can be changed to have **Reply all** shown at the top. "
   
-
-
-|
-
 .. image:: ../img/admin_emails/reply.jpg
-
-|
 
 .. csv-table::
   :header: "Field", "Description"
@@ -102,6 +74,8 @@ The following settings are available:
   "**Campaign**","The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in OroCRM. You can define the Sender Email and Sender Name to be used."
   "**System Mailboxes**", "A system mailbox allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**. More information on System Mailboxes and their configuration can be found further below in this guide."
 
+.. _my_email_configuration:
+
 Standard personal mailbox configuration (IMAP/SMTP)
 ---------------------------------------------------
 
@@ -116,8 +90,6 @@ To configure a personal mailbox:
    left.
 
 -  This will load an email configuration page.
-   
-|
 
 .. image:: ../img/admin_emails/my_user_my_config.jpg
 

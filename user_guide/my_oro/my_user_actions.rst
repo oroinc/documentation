@@ -17,11 +17,7 @@ Review Your Profile
 ^^^^^^^^^^^^^^^^^^^
 1. In the user menu, click **My User**.
 
-|
-
 .. image:: ../img/my_oro/user_menu_my_user.png
-
-|
 
 2. Review your profile settings. Please, see details in the :ref:`My User Page <doc-my-user-view-page>` section.
 
@@ -58,11 +54,7 @@ Edit Your Profile
 
     - **Phone**—Type the user's phone number.
 
-|
-
 .. image:: ../img/my_oro/my_user_edit_general.png
-
-|
 
 4. Click **Additional** and provide more information about you.
 
@@ -74,12 +66,7 @@ Edit Your Profile
 
     - **Repeat New Password**—Type the new password one more time to confirm it.
 
-|
-
 .. image:: ../img/my_oro/my_user_edit_password.png
-
-|
-
 
 6. Click :guilabel:`Save` or :guilabel:`Save&Close` in the upper-right corner of the page.
 
@@ -120,28 +107,16 @@ You can send an email message to other users or external emails.
 
     - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Send Email** on the list.
 
-      |
-
       .. image:: ../img/my_oro/my_user_sendemail0.png
-
-      |
 
     - In the **General Information** section, find the **Emails** field, and point to one of your email address—actually the one that you want to use to send the email from. Click the **Send Email** icon that appears next to it.
 
-      |
-
       .. image:: ../img/my_oro/email_icon.png
-
-      |
 
 
 3. In the **Send Email** dialog box, specify the required data. For help on this, see the :ref:`Email <user-guide-using-emails>` guide.
 
-|
-
 .. image:: ../img/my_oro/my_user_sendmail.png
-
-|
 
 4. Click :guilabel:`Send`. The email will appear in the **Activity** section of the user view page.
 
@@ -157,11 +132,7 @@ Log or Make a Call
 
    - Click :guilabel:`More Actions` in the upper-right corner of the page and click **Log Call** on the list.
 
-     |
-
      .. image:: ../img/my_oro/my_user_logcall0.png
-
-     |
 
    - In the **General Information** section, find the **Phone** field, and point to a specified phone number. The **Hangouts Call** and **Log Call** icons appear next to it.
 
@@ -170,27 +141,15 @@ Log or Make a Call
 
      - Click the **Log Call** icon to specify call details.
 
-     |
-
      .. image:: ../img/my_oro/my_user_hangouts_call.png
 
-     |
-
-   - In the **General Infromation** section, find the **Emails** field, and point to the required email. Click the **Hangouts Call** icon that appears next to it.
-
-     |
+   - In the **General Information** section, find the **Emails** field, and point to the required email. Click the **Hangouts Call** icon that appears next to it.
 
      .. image:: ../img/my_oro/my_user_hangouts_call2.png
 
-     |
-
 3. If you used **Log Call** action button or icon, in the **Log Call** dialog box, specify the required data.
 
-|
-
 .. image:: ../img/my_oro/my_user_logcall.png
-
-|
 
 4. Click :guilabel:`Log Call` to log a call, or click the **Start** button next to **Hangouts** label to start a hangout call. The call will appear in the **Activity** section of the user view page.
 
@@ -215,20 +174,11 @@ Assign an Event
 
 2. On your profile view page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Assign Event** on the list.
 
-|
-
 .. image:: ../img/my_oro/my_user_assignevent0.png
-
-|
-
 
 3. In the **Assign Event To** dialog box, specify the required data. For help on this, see the :ref:`Calendar Events <doc-activities-events>` guide.
 
-|
-
 .. image:: ../img/my_oro/my_user_assignevent.png
-
-|
 
 4. Click :guilabel:`Save`. The event will appear in the **Activities** section of the page.
 
@@ -241,20 +191,11 @@ Assign a Task
 
 2. On your profile view page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Assign Task** on the list.
 
-|
-
 .. image:: ../img/my_oro/my_user_assigntask0.png
-
-|
-
 
 3. In the **Assign Task To** dialog box, specify the required data. For help on this, see the :ref:`Tasks <doc-activities-tasks>` guide.
 
-|
-
 .. image:: ../img/my_oro/my_user_assigntask.png
-
-|
 
 4. Click :guilabel:`Create Task`. The task will appear in the **Additional Information** section, **User Tasks** subsection of the page.
 
@@ -290,16 +231,9 @@ You can configure how the menus in the system will look for you.
 
 2. On your profile page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Change Password** on the list.
 
-|
-
 .. image:: ../img/my_oro/my_user_editmenus.png
 
-|
-
-
 3. On the **Menus** page, click the menu you want to configure. Follow the instructions provided in :ref:`My Menus Configuration <doc-my-user-menus>`.
-
-
 
 .. _doc-my-user-actions-change-password:
 
@@ -321,11 +255,7 @@ Change Your Password
 
     - **Repeat New Password**—Type the new password one more time to confirm it.
 
-|
-
 .. image:: ../img/my_oro/my_user_edit_password.png
-
-|
 
 4. Click :guilabel:`Save` or :guilabel:`Save&Close` in the upper-right corner of the page.
 
@@ -339,23 +269,13 @@ Change Your Password via Action Button
 
 2. On your profile page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Change Password** on the list.
 
-|
-
 .. image:: ../img/my_oro/my_user_changepassword0.png
-
-|
-
 
 3. In the **Change Password** dialog box, type a new password. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show** / |IcHide| **Hide** icon next to the **New password** field.
 
-|
-
 .. image:: ../img/my_oro/my_user_changepassword.png
 
-|
-
 4. Click :guilabel:`Save`. The new password will be also sent to your primary email address.
-
 
 
 .. _doc-my-user-actions-reset-password:
@@ -369,15 +289,9 @@ Reset Your Password
 
 2. On your profile page, click :guilabel:`More Actions` in the upper-right corner of the page and click **Reset Password** on the list.
 
-|
-
 .. image:: ../img/my_oro/my_user_resetpassword0.png
 
-|
-
 3. In the **Reset Password** dialog box, click :guilabel:`Reset`. The password reset link will be sent to your primary email address.
-
-|
 
 .. image:: ../img/my_oro/my_user_resetpassword.png
 

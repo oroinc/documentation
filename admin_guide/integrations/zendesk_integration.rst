@@ -1,16 +1,19 @@
 .. _user-guide-zendesk-integration:
 
-Integration with Zendesk
-========================
+Configure Integration with Zendesk
+==================================
 
 OroCRM supports out of the box integration with Zendesk, allowing you to load data from your Zendesk account and 
 process it in OroCRM. This article describes how to define and edit the integration and synchronization settings.
+
+.. contents:: :local:
 
 .. hint::
 
     While Zendesk integration capabilities are pre-implemented, OroCRM can be integrated with different third-party
     systems.
 
+.. note:: See a short demo on `how to setup Zendesk integration <https://www.orocrm.com/media-library/setup-zendesk-integration>`_, or continue reading the step-by-step guidance below.
 
 On the Zendesk Side
 -------------------
@@ -316,7 +319,12 @@ The case fields are mapped to the Zendesk ticket fields as follows:
   "
 
 - After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in OroCRM.
-  
+
+.. note:: Please note that reopening a ticket in your Oro application will not reopen the same ticket in Zendesk. In addition, when the ticket in closed in Zendesk, comments added to it in the Oro application will not be passed back to Zendesk.
+
+
+
+
 Further Synchronizations
 """"""""""""""""""""""""
   
