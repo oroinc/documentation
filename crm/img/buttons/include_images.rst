@@ -127,6 +127,10 @@ Images
 
    <i class="fa fa-ellipsis-h fa-lg" aria-hidden="true"></i>
 
+.. |IcMerge| raw:: html
+
+   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+
 .. |IcDashboard| raw:: html
 
    <i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i>
@@ -259,8 +263,8 @@ Images
 
 .. |IcCheckSquareO| raw:: html
 
-   <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>   
-   
+   <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+
 .. |IcMinus| raw:: html
 
    <i class="fa fa-minus fa-lg" aria-hidden="true"></i>

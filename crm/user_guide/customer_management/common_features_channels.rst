@@ -66,8 +66,7 @@ The following three fields are mandatory and *must* be defined:
 
   The following types are available out-of-the-box:
   
-  - **Sales**: dedicated to business customer relations. Described in more detail in the 
-    :ref:`Sales Channel guide <user-guide-sales-channel>`.
+  - **Sales**: dedicated to :ref:`business customer relations <user-guide-business-to-business-sales>`.
 
   - **Magento**: designed for Magento-based stores. Described in more detail in the 
     :ref:`Magento Channel guide <user-guide-magento-channel>`.

@@ -7,36 +7,25 @@ Display settings
 
 In **System>Configuration>System Configuration>General Setup>Display Settings**, you can define a number of display-related options to be applied to the OroCRM instance:
 
-|
-
 .. image:: ../img/configuration/display.gif
 
-|
+
+.. note:: See a short demo on `how to set display settings in your Oro application <https://www.orocrm.com/media-library/set-display-settings-orocrm#play=B2DqoTVQCao>`_, or continue reading the guidance below.
 
 User Bar
 --------
 
 Enable or disable showing recent emails. The functionality is enabled by default.
 
-|
 
 .. image:: ../img/configuration/user_bar.png
-
-|
-
-
 
 Navigation bar
 --------------
 
 Define the **Navigation bar** position. Choose a value from the drop-down menu: top or left. The default value is "Top".
 
-|
-
 .. image:: ../img/configuration/navigation_bar.png
-
-|
-
 
 .. _doc-configuration-display-settings:
 
@@ -45,13 +34,7 @@ Data Grid Settings
 
 Data Grid settings define different options used to display all the :ref:`entity records grids <doc-grids>` in the UI.
 
-|
-
 .. image:: ../img/configuration/data_grid_settings.png
-
-|
-
-
 
 The following options are available:
  
@@ -70,12 +53,8 @@ Activity lists
 
 The activity list setting defines different options to be applied to display :ref:`activities <user-guide-activities>` in the UI.
 
-|
 
 .. image:: ../img/configuration/activity_lists.png
-
-|
-
 
 
 The following options are available:
@@ -98,13 +77,7 @@ The value is enabled by default.
 
     The formatting tools can also be enabled for other text fields in the course of integration.
 
-|
-
 .. image:: ../img/configuration/wysiwyg_settings.png
-
-|
-
-
 
 
 Sidebar settings
@@ -113,12 +86,7 @@ Sidebar settings
 With the Sidebar settings you can enable or disable the left and/or right sidebar to keep your Sticky notes and Task lists. 
 By default only the right sidebar is enabled.
 
-
-|
-
 .. image:: ../img/configuration/sidebar_settings.png
-
-|
 
 
 Tag Settings
@@ -126,22 +94,16 @@ Tag Settings
 
 Tag settings specify the taxonomy colors available in the system.
 
-|
+
 
 .. image:: ../img/configuration/tag_settings.png
-
-|
-
 
 
 Calendar Settings
 -----------------
 
-|
 
 .. image:: ../img/configuration/calendar_settings.png
-
-|
 
 
 Calendar settings specify the colors available to manage calendars in the UI:
@@ -156,20 +118,12 @@ Calendar settings specify the colors available to manage calendars in the UI:
 Reports Settings
 ----------------
 
-|
-
 .. image:: ../img/configuration/reports_settings.png
-
-|
-
 
 If this function is enabled, users can see the SQL request sent to the system for a report.
 
-|
 
 .. image:: ../img/configuration/sql_show.png
-
-|
 
 This way, users can check if a report has been developed correctly.
 

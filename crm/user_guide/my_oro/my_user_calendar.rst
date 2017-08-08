@@ -10,7 +10,11 @@ In the user menu that resides below your username in the upper-right corner of t
 
 The following page opens:
 
+
 .. image:: ../img/my_oro/my_calendar.png
+
+
+.. note:: See a short demo on `how to create and manage calendars <https://www.orocrm.com/media-library/create-and-manage-calendars#play=fVcOy3TmuQg>`_, or keep reading the step-by-step guidance below.
 
 Top of the Page
 ^^^^^^^^^^^^^^^

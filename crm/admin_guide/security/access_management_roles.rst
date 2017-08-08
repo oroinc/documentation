@@ -11,6 +11,9 @@ Overview
 
 Roles are predefined sets of permissions. When you assign a role to a user, you can be sure that the user will be able to access only that information within the system which is necessary for them to do their work. 
 
+.. note:: See a short demo on `how to create a and manage roles <https://www.orocrm.com/media-library/create-manage-roles>`_, or continue reading the step-by-step guidance below.
+
+
 Roles Creation
 ^^^^^^^^^^^^^^
 

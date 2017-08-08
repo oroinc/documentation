@@ -1,5 +1,5 @@
 All Entities 
-=============
+============
 
 .. contents:: :local:
     :depth: 3
@@ -7,32 +7,33 @@ All Entities
 Description
 ------------
 
-|
 
-.. image:: ../img/entity_management/entity_grid.png 
 
-|
-
+.. image:: ../img/entity_management/entity_grid.png
 
 Page Top
 ^^^^^^^^
 
 View Options
-"""""""""""""
+""""""""""""
 
 The default grid view shows all entities. You can configure a custom grid view. For how to do this, see `Save Customized Grid View <../../user-guide/navigation/data-management-grids#save-your-customized-grid-view-and-share-it-with-other-users>`__ . 
 
 Action Buttons
-"""""""""""""""
+""""""""""""""
 
 :guilabel:`Create Entity`—Click this button to create a new entity. See the `Create an Entity <./entity-actions#create-an-entity>`__ section of the `Actions with Entities <./entity-actions>`__ guide.
 
 Grid
-^^^^^
+^^^^
+
+
+.. note:: See a short demo on `how to use grids <https://www.orocrm.com/media-library/how-to-use-grids>`_, or continue reading the step-by-step guidance below.
+
 
 The following table describes columns of the **All Entities** page and how they affect ability to edit the entity:
 
-.. csv-table:: All Enteties
+.. csv-table::
   :header: "Field","Description","Affects the ability to edit?"
   :widths: 20, 30, 30
 
@@ -55,7 +56,7 @@ The following table describes columns of the **All Entities** page and how they 
 
 
 Links
-------
+-----
 
 For general overview of entities, see the `Entities <./entities>`__ guide.
 

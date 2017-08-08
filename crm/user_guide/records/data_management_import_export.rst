@@ -11,6 +11,7 @@ If a grid can be exported the :guilabel:`Export` button will appear on the left,
 can be exported/imported and what field will be used as a record identifier during update, is defined by the system 
 administrator.
 
+.. note:: See a short demo on `how to export and import data <https://www.orocrm.com/media-library/export-import-data>`_, or continue reading the step-by-step guidance below.
 
 .. _user-guide-import:
 

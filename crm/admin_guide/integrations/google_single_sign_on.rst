@@ -1,7 +1,7 @@
 .. _user-guide-google-single-sign-on:
 
 Google Single Sign-On Capabilities for OroCRM
-==============================================
+=============================================
 
 
 .. contents:: :local:
@@ -10,6 +10,8 @@ Google Single Sign-On Capabilities for OroCRM
 OroCRM supports Google Single Sign-On capabilities. This means that for
 a user that has the same primary email in the OroCRM and Google
 accounts, it is enough to log-in only once during a session.
+
+.. note:: See a short demo on `how to configure Google Single Sign-On <https://www.orocrm.com/media-library/configure-oauth2-google-orocrm#play=xKf5UR8t2AE>`_, or keep reading the step-by-step guidance below.
 
 Google Side
 -----------

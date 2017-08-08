@@ -10,6 +10,9 @@ have/don't have a specific tag, and even generate targeted segments for mailings
 can easily find all records that have a specific tag from anywhere in the system, even if you don't know their other 
 details, as described below. 
 
+.. note:: See a short demo on `how to create tags and taxonomies <https://www.orocrm.com/media-library/tags-taxonomies>`_, or continue reading the guidance below.
+
+
 Add a Tag to a Record
 ---------------------
 
