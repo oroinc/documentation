@@ -55,7 +55,6 @@ In OroCRM, all of this data is tracked using three types of records: channels, c
     customer_management_overview
     common_features_accounts
     common_features_channels
-    common_features_multi_channel_functionality
     common_features_contacts
     common_features_contact_groups
 

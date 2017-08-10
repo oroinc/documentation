@@ -82,9 +82,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_campaigns`
-        * User guide: :doc:`/user_guide_roles/marketing_tools/email_campaigns`
-        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_tracking_website_records`
+        * User guide: :doc:`/user_guide_marketing_tools/automation/marketing_campaigns`
+        * User guide: :doc:`/user_guide_marketing_tools/automation/email_campaigns`
+        * User guide: :doc:`/user_guide_marketing_tools/tracking/index`
 
 `CaseBundle`_ (OroCRM)
     Case entitiy management.
@@ -96,11 +96,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/customer_management/common_features_multi_channel_functionality`
         * User guide: :doc:`/user_guide/customer_management/common_features_channels`
         * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
-        * User guide: :doc:`/user_guide_roles/sales_tools/sales_channels`
-        * User guide: :doc:`/user_guide_roles/sales_tools/magento_channels`
+        * User guide: :doc:`/user_guide_sales_tools/magento/magento_channels`
 
 `ChartBundle`_ (OroPlatform)
     Display different types of charts (like line charts, pie charts, flow charts).
@@ -320,10 +318,9 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Cookbook: :doc:`/cookbook/faq`
-        * User guide: :doc:`/user_guide/customer_management/common_features_multi_channel_functionality`
         * User guide: :doc:`/user_guide/customer_management/common_features_channels`
         * User guide: :doc:`/admin_guide/integrations/magento_channel_integration`
-        * User guide: :doc:`/user_guide_roles/sales_tools/magento_channels`
+        * User guide: :doc:`/user_guide_sales_tools/magento/magento_channels`
 
 `MarketingListBundle`_ (OroCRM)
     Supports generating contact lists automatically for marketing purposes.
@@ -332,7 +329,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_lists`
+        * User guide: :doc:`/user_guide_marketing_tools/automation/marketing_lists`
 
 `MessageQueueBundle`_ (OroPlatform)
     An implementation of MessageQueue (together with `MessageQueueComponent`_)
@@ -404,9 +401,9 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/reports_configuration`
         * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
-        * User guide: :doc:`/user_guide_roles/sales_tools/business_customers`
-        * User guide: :doc:`/user_guide_roles/sales_tools/leads`
-        * User guide: :doc:`/user_guide_roles/sales_tools/opportunities`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/business_customers`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/leads`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/opportunities/index`
         * User guide: :ref:`Manage Reports <doc-reports-manage>`
 
 `RequireJSBundle`_ (OroPlatform)
@@ -430,7 +427,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/index`
 
 `SearchBundle`_ (OroPlatform)
     Manages the application's search index and allows to search this index.
@@ -512,7 +509,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide_roles/marketing_tools/marketing_tracking_website_records`
+        * User guide: :doc:`/user_guide_marketing_tools/tracking/index`
 
 `TranslationBundle`_ (OroPlatform)
     Integration for translatable entities.
@@ -564,10 +561,10 @@ related articles is provided below the description.
 
         * Book: :doc:`/book/workflow`
         * Reference: :doc:`/reference/format/workflows`
-        * User guide: :doc:`/user_guide_roles/sales_tools/business_customers`
-        * User guide: :doc:`/user_guide_roles/sales_tools/leads`
-        * User guide: :doc:`/user_guide_roles/sales_tools/opportunities`
-        * User guide: :doc:`/user_guide_roles/sales_tools/sales_processes_workflow`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/business_customers`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/leads`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/opportunities/index`
+        * User guide: :doc:`/user_guide_sales_tools/b2b_sales/index`
         * User guide: :doc:`/admin_guide/record_mgmt_config/workflow_management`
 
 .. _`AccountBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/AccountBundle/README.md

@@ -1,6 +1,8 @@
 Edit a Quote
 ------------
 
+.. begin
+
 To edit the Quote:
 
 #. Navigate to **Sales > Quotes** in the main menu.

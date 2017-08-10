@@ -13,11 +13,11 @@ Overview
 
 The following guide describes how you can configure tags and taxonomies in your Oro application. These are located under **System>Tags Management** in the main menu. 
 
-|
+
 
 .. image:: ../img/tags/tags_menu_1.png
 
-|
+.. note:: See a short demo on `how to create tags and taxonomies <https://www.orocrm.com/media-library/tags-taxonomies>`_, or continue reading the guidance below.
 
 Enable Tags
 -----------

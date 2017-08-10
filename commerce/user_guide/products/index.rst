@@ -16,6 +16,7 @@ Ensure that you have configured:
 
 * :ref:`Product units <sys--commerce--product--product-units>` --- to select the primary product unit and its precision.
 * Product image watermarks (:ref:`globally <sys--commerce--product--product-images>` and :ref:`per website <sys--websites--commerce--product--product-images>`) --- to add a branded watermark to all the product images.
+* Product Image Gallery (:ref:`globally <sys--commerce--product--product-images--gallery-slider-global>`, :ref:`per organization <sys--users--organization--commerce--products--gallery-slider>`, and :ref:`per website <sys--websites--commerce--product--gallery-slider>` --- to use popup or inline view for the image gallery.
 * :ref:`Product families <products--product-families>` and :ref:`product attributes <products--product-attributes>` --- to design a structure for product information.
 * :ref:`Price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g. MRSP) that may be used in the rule-based price lists to calculate the price for the buyer.
 * New arrivals flag (:ref:`globally <sys--commerce--product--new-arrivals>`, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>`, and :ref:`per website <sys--websites--commerce--products--new-arrivals>`) --- to highlight the new products in your web catalog.

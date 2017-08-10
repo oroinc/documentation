@@ -3,12 +3,14 @@
 Manage System Mailboxes
 =======================
 
-System mailbox allows people who don't have access to the company mailbox addresses write to the company. 
+System mailbox allows people who do not have access to the company mailbox addresses write to the company.
 You can create several system mailboxes. This may be, for example, a mailbox for support requests, for business 
 proposals, for order requests, etc. 
 
 You can define and modify the list of OroCRM users who have access to each of these mailboxes, automatically turn 
 letters into cases or leads, and set-up auto-responses.
+
+.. note:: See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
 
 Create System Mailbox
 ---------------------

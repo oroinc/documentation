@@ -87,9 +87,6 @@ the :ref:`grid <doc-grids>`:
 
 .. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
    :align: middle
-   
-.. |Bdropdown| image:: ../../img/buttons/Bdropdown.png
-   :align: middle
 
 .. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
    :align: middle

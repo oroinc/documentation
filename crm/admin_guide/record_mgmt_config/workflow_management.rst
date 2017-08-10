@@ -1,3 +1,8 @@
+.. STATUS
+.. OroCRM (crm/admin_guide/record_mngm_config/workflow_management.rst)
+.. and OroCommerce (commerce/user_guide/system/workflows/index.rst) are aligned.
+.. Copied into the shared platform folder (platform/workflow_management/index.rst)
+
 .. _doc--workflows:
 
 Workflow Management
@@ -6,34 +11,59 @@ Workflow Management
 .. contents:: :local:
     :depth: 4
 
-Overview
----------
+.. TODO add information on exclusive active and exclusive record group
 
-A workflow is a sequence of steps or rules applied to a process from its initiation to completion. 
+.. TODO add workflow configuration info
+
+Overview
+--------
+
+.. A workflow is a sequence of steps or rules applied to a process from its initiation to completion.
+
 In OroCRM, workflows organize and direct users’ work, making them follow particular steps in a pre-defined order, or preventing them from performing actions that either contradict or conflict with the logical steps of a process.
 
-Workflow Types
---------------
 
-In OroCRM, there are two types of workflows: ``system`` and ``custom``.
+.. _user-guide--system--workflow-management-system-custom:
 
-System workflows are provided out of the box and their management from the UI is limited.
+System vs Custom Workflows
+--------------------------
 
-Custom workflows can be created and edited depending on your desired configurations. 
+In Oro applications, any workflow may be classified as either **system** or **custom**. *System* workflows are provided out of the box. Their modification is limited in order to keep core functionality operational. However, if you create a *Custom* workflow from scratch or clone the existing system workflow, you can tailor it for your needs without any restrictions.
 
-Workflow Components
--------------------
+  For more information on system and custom workflows, see :ref:`System Workflows <doc--workflows--actions--system>` and :ref:`Custom Workflows <doc--workflows--actions--custom>`.
+
+Available System Workflows
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The following system workflows are provided out of the box in OroCRM:
+
+* Unqualified Sales Lead
+
+* Abandoned Shopping Card
+
+* Order Follow Up
+
+* Opportunity Management Flow
+
+* Contact Request
+
+* :ref:`Task Flow <doc--workflows--task-flow>`
+
+.. _user-guide--system--workflow-management-steps-transitions:
+
+Workflow Steps, Transitions, and Attributes
+-------------------------------------------
+
+.. TODO Fix transitions if necessary (may it launch on schedule or on event?) .. Yes, it can, the information about it is in the dev guide.
 
 Each process or action applied to a record is called a ``workflow transition``. On the interface, transitions are usually initiated when a user clicks the corresponding button or icon. There are two types of transitions:
 
 -	Transitions that take a user from one state to another and connect to each step in the workflow.
--	Self-transitions that do not change steps in the workflow. 
-
-A ``workflow step`` is the state of a record before and after a transition.
+-	Self-transitions that do not change steps in the workflow.
 
 Every workflow has the **Start** transition that launches the workflow.
 
-A transition can be defined as soon as there is at least one step besides **Start**. However, it is often simpler to define all workflow steps and then all the transitions between them.  
+A transition can be defined as soon as there is at least one step besides **Start**. However, it is often simpler to define all workflow steps and then all the transitions between them.
 
 .. image:: ../img/workflows/1_transitions_steps.png
 
@@ -49,7 +79,7 @@ If enabled (see the section below), the **Workflow** widget displays the process
 
 .. _doc-workflows-actions-create:
 
-Workflow Creation
+Create a Workflow
 -----------------
 
 To create a workflow for an entity:
@@ -63,8 +93,9 @@ To create a workflow for an entity:
 
    .. image:: ../img/workflows/4_create_wfpng.png
 
-4. Once the details in the **General** section have been specified, you can add steps and transitions in the **Designer** section.
+4. Once the details in the **General** section have been specified, add steps and transitions in the **Designer** section.
 
+5. When done, click **Save**.
 
 .. _doc-workflows-actions-create-general:
 
@@ -90,11 +121,14 @@ The **General** section of the create a workflow page contains the following inf
    - **If checked**, all workflow steps are displayed in the workflow widget.
    - **If not checked**, only the steps that have actually been performed are displayed."
 
+.. TODO add some clue on how to plan a workflow
 
 .. _doc-workflows-actions-create-designer:
 
-Designer Section
-^^^^^^^^^^^^^^^^
+Using Workflow Designer
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. TODO rethink and adapt
 
 The **Designer** section consists of a table and an interactive chart representations of a workflow.
 
@@ -102,7 +136,7 @@ The **Designer** section consists of a table and an interactive chart representa
 
 **Within the table**, you can perform the following actions for a **transition**:
 
--	**Update** (clicking the transition name opens an **Edit Transition** form).
+-	**Update** (clicking the transition name opens the **Edit Transition** form).
 -	**Clone** (clicking the |IcClone| **Clone** icon next to the transition name opens the **Clone Transition** dialog).
 -	**Delete** (clicking the |IcDelete| **Delete** icon next to the transition launches name **Delete Confirmation** dialog).
 
@@ -145,6 +179,8 @@ As an example, we are going to create the **Opportunity Support Flow** workflow 
 Add a Step
 ~~~~~~~~~~
 
+.. TODO rethink and adapt
+
 To add a step to a workflow:
 
 1. Click **Add Step** in the upper-right corner of the chart.
@@ -154,12 +190,12 @@ To add a step to a workflow:
 2. In the **Add Step** dialog, complete the following fields:
 
 .. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
+   :header: "Field", "Description"
+   :widths: 10, 30
 
-  "**Name**", "The name of the step that will be displayed on the entity record."
-  "**Position**", "A number that determines the position of the step in the workflow. The higher the number, the further the step is from the start."
-  "**Final**", "This option marks the step as the logical *end* or the *outcome* of the workflow. This is a purely logical property required for distinguishing steps for the funnel charts or creating reports with the workflow data. Marking the step final has no effect on the flow itself."
+   "**Name**", "The name of the step that will be displayed on the entity record."
+   "**Position**", "A number that determines the position of the step in the workflow. The higher the number, the further the step is from the start."
+   "**Final**", "This option marks the step as the logical *end* or the *outcome* of the workflow. This is a purely logical property required for distinguishing steps for the funnel charts or creating reports with the workflow data. Marking the step final has no effect on the flow itself."
 
 
 3. Click **Apply** to save the step.
@@ -179,6 +215,8 @@ For the sample **Opportunity Support Flow**, we will start off by creating two s
 Add a Transition
 ~~~~~~~~~~~~~~~~
 
+.. TODO rethink and adapt
+
 To add a transition to a workflow:
 
 1. Click **Add Transition** in the upper-right corner of the chart.
@@ -187,36 +225,35 @@ To add a transition to a workflow:
 
 2. In the **Add New Transition** dialog, click the **Info** tab, and provide the following information:
 
-    .. csv-table::
-      :header: "Field", "Description"
-      :widths: 10, 30
+.. csv-table::
+   :header: "Field", "Description"
+   :widths: 10, 30
 
-      "**Name**", "The name of the transition that will be displayed on its button."
-      "**From Step**", "The workflow step, for which the transition button should appear on the entity page."
-      "**To Step**", "The step to which the workflow will progress after the transition is performed."
-      "**View Form**", "Transition attributes can appear in one of two available forms: in the *popup window*, which is a default transition behavior suitable for most cases, or on the *separate page*, which should be used with care and only for attribute-heavy transitions."
-      "**Warning Message**", "If you want to show a warning popup message to the user before a transition is executed, put the text of the warning into this field."
-      "**Button Label**", "This text appears on the transition button and as the title of the transition form. If the button label is not provided, the value of the **Name** field is used."
-      "**Button Title**", "This message appears when a user moves the pointer over the transition button. Use it to provide transition description or any other additional information."
-      "**Button Icon**", "An icon that will appear on the transition button before the transition name."
-      "**Button Style**", "This control specifies the visual style of the transition button."
-      "**Button Preview**", "This is the live preview of the transition button as it will appear on the entity page."
+   "**Name**", "The name of the transition that will be displayed on its button."
+   "**From Step**", "The workflow step, for which the transition button should appear on the entity page."
+   "**To Step**", "The step to which the workflow will progress after the transition is performed."
+   "**View Form**", "Transition attributes can appear in one of two available forms: in the *popup window*, which is a default transition behavior suitable for most cases, or on the *separate page*, which should be used with care and only for attribute-heavy transitions."
+   "**Warning Message**", "If you want to show a warning popup message to the user before a transition is executed, put the text of the warning into this field."
+   "**Button Label**", "This text appears on the transition button and as the title of the transition form. If the button label is not provided, the value of the **Name** field is used."
+   "**Button Title**", "This message appears when a user moves the pointer over the transition button. Use it to provide transition description or any other additional information."
+   "**Button Icon**", "An icon that will appear on the transition button before the transition name."
+   "**Button Style**", "This control specifies the visual style of the transition button."
+   "**Button Preview**", "This is the live preview of the transition button as it will appear on the entity page.
 
    .. image:: ../img/workflows/workflows_addtransition_info.png
 
-   .. important:: Self-transitions do not change steps in workflows (e.g. it can be a transition that launches an Edit form of a record within the same step).
-
+   .. important:: Self-transitions do not change steps in workflows (e.g. it can be a transition that launches an Edit form of a record within the same step)."
 
 3. Click the **Attributes** tab, and define the following fields:
 
 .. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
+   :header: "Field", "Description"
+   :widths: 10, 30
 
-  "**Entity Field**","This is the field of the workflow entity or its related entities that will appear on the view form of the transition. Use these if you want a user to add or edit some entity data in the transition."
-  "**Label**", "Use the field if you want to change the way it is displayed on the user interface. The system label value of the entity is used by default."
-  "**Required**","Select the **Required** check box if the definition of the attribute should be mandatory for the transition."
-  "**+Add**", "Click **+Add** to add a new attribute."
+   "**Entity Field**","This is the field of the workflow entity or its related entities that will appear on the view form of the transition. Use these if you want a user to add or edit some entity data in the transition."
+   "**Label**", "Use the field if you want to change the way it is displayed on the user interface. The system label value of the entity is used by default."
+   "**Required**","Select the **Required** check box if the definition of the attribute should be mandatory for the transition."
+   "**+Add**", "Click **+Add** to add a new attribute."
 
 4. Click **Apply** to save the transition.
 
@@ -265,16 +302,10 @@ To set a workflow configuration parameters:
 
 5. Click **Save and Close**.
 
-.. important:: You cannot create new or delete existing configuration parameters via the user interface. See :ref:` <User Interface Limitations for Workflows>`.
+.. important:: You cannot create new or delete existing configuration parameters via the user interface. See :ref:`User Interface Limitations <doc--workflows--ui-limitations>` section.
 
                When you clone a workflow, pay attention that configuration parameters are cloned too and cannot be removed from the cloned item.
 
-.. _doc--workflows--ui-limitations:
-
-User Interface Limitations for Workflows
-----------------------------------------
-
-OroCRM workflows can be created from both the server-side and the user interface. However, there is a number of functions that can be defined for a workflow only from the server-side logics in the course of integration. More information on workflow implementation can be found `on this GitHub page <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__   `and in the :ref:`Workflow Management for Developers <dev-doc--workflows>` guide.
 
 Workflow Visualization
 ----------------------
@@ -336,24 +367,30 @@ Workflow group can be expanded / collapsed, if necessary, by clicking the **+** 
 
 .. TODO: DOC-122, draft as the dev ticket is not completed.
 
-.. The frontstore and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
+.. The front store and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
 
-.. The frontstore workflows are marked with the |IcCustoemrUser| icon. The backoffice workflows are marked with the |IcUser| icon.
+.. The front store workflows are marked with the |IcCustomerUser| icon. The backoffice workflows (workflows available in the management console) are marked with the |IcUser| icon.
 
 .. .. image:: ../img/workflows/workflows_frontstore_backoffice.jpg
 
 Workflow Management
 -------------------
+
+.. _doc--workflows--actions--system:
+
 System Workflows
 ^^^^^^^^^^^^^^^^
 
 Since system workflows are pre-implemented in the system, their management from the user interface is limited. From the grid, you can perform the following actions for system workflows:
 
-- **Clone**:|IcClone| (copy the workflow to be able to customize it).
 - **View**: |IcView| (Go to the view page of the workflow).
 - **Activate/Deactivate**: |IcCheck| / |IcTimes| (activate/deactivate the workflow).
 
 .. image:: ../img/workflows/27_manage_wf_2.png
+
+.. hint:: In case you need to alter a system workflow, clone it under the different name and make the required changes (it will be saved as a custom workflow). For more information on how to clone a workflow, see `Workflow Imports <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md#workflow-imports>`__ in the oroinc/platform repository on GitHub.
+
+.. _doc--workflows--actions--custom:
 
 Custom Workflows
 ^^^^^^^^^^^^^^^^
@@ -368,6 +405,26 @@ You can perform the following actions for them:
 - **Delete**: |IcDelete| (delete the workflow from the system).
 
 .. image:: ../img/workflows/28_manage_wf_1.png
+
+
+.. _doc--workflows--ui-limitations:
+
+User Interface Limitations
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In Oro applications, there are two ways to create a new workflow:
+
+* Via the user interface, as explained in the :ref:`Create a Workflow <doc-workflows-actions-create>` section above.
+
+* In the command line console, by loading the workflow configuration files and related translations. Usually, it takes a system integrator with access to your Oro deployment to create a workflow in the command line.
+
+Some workflow components, like an email notification, may be created only via the command line.
+
+.. warning:: In the user interface, you cannot edit or clone the workflows that contain transition actions and conditions.
+
+For how to create, edit and clone workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
+
+.. _doc--system--workflow-management--activate:
 
 Workflow Activation
 ^^^^^^^^^^^^^^^^^^^

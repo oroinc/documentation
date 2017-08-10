@@ -1,3 +1,5 @@
+.. _shipping-configuration-per-quote:
+
 Shipping Configuration per Quote
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -24,7 +26,7 @@ To limit the shipping methods per quote:
 
    b) If necessary, select the preferred shipping method from the **Default Shipping Method** list. The customer will be able to change the option to any other available shipping method.
 
-   c) Optionally, enter the **Overriden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
+   c) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
 
    d) To enforce using only the default Shipping method, enable **Shipping Method Locked** flag.
 

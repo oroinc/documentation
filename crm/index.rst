@@ -3,7 +3,7 @@ Welcome to OroCRM Documentation!
 
 OroCRM documentation provides several guides to help you understand Oro and use its capabilities as smoothly as possible, and find answers to the questions most frequently asked by the community.
 
-- Learn how to enhance your business with the capabilities of OroCRM in the `User Guide <./user-guide>`__ and `User Guide: Roles <./user-guide-roles>`__.
+- Learn how to enhance your business with the capabilities of OroCRM in the :ref:`User Guide: Into <user-guide-into>`, :ref:`User Guide: Sales <user-guide-sales-index>`, :ref:`User Guide: Marketing <user-guide-marketing>` and :ref:`User Guide: Support <user-guide-support-index>`.
 
 - Read `The Oro Book <./book>`__ to get information about the basic features and capabilities of OroPlatform.
 
@@ -36,9 +36,9 @@ User and Administrator Guides
         <div class="guideline__item">
             <a href="current/user-guide-roles/"><h3 style="text-align:center"><i class="guideline__icon fa fa-user-plus fa-2x" style="color:#FFC221"></i><br />User Guide: Roles</h3></a>
             <ul class="guideline__list simple">
-                <li><a class="reference external" href="current/user-guide-roles/sales-tools/">Sales Tools</a></li>
-                <li><a class="reference external" href="current/user-guide-roles/marketing-tools/">Marketing Tools</a></li>
-                <li><a class="reference external" href="current/user-guide-roles/support-tools/">Support Tools</a></li>
+                <li><a class="reference external" href="current/user-guide-sales-tools/">Sales Tools</a></li>
+                <li><a class="reference external" href="current/user-guide-marketing-tools/">Marketing Tools</a></li>
+                <li><a class="reference external" href="current/user-guide-support-tools/">Support Tools</a></li>
             </ul>
         </div>
     
@@ -125,6 +125,8 @@ Developer Guides
 
 .. toctree::
     :maxdepth: 2
+    :titlesonly:
+    :includehidden:
     :hidden:
 
     book/index
@@ -135,7 +137,11 @@ Developer Guides
 
     user_guide/index
 
-    user_guide_roles/index
+    user_guide_sales_tools/index
+
+    user_guide_marketing_tools/index
+
+    user_guide_support_tools/index
 
     admin_guide/index
 
@@ -144,3 +150,4 @@ Developer Guides
     reference/index
 
     system_requirements
+

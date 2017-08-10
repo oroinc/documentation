@@ -1,13 +1,13 @@
 Shipping Configuration
-----------------------
-
-.. begin
+======================
 
 .. contents:: :local:
    :depth: 1
 
-System Configuration
-~~~~~~~~~~~~~~~~~~~~
+.. begin
+
+System Configuration for Shipping
+---------------------------------
 
 You can control the following options on the system configuration level. Click on the link to get to the detailed configuration instructions.
 
@@ -18,18 +18,26 @@ You can control the following options on the system configuration level. Click o
 * In the :ref:`Shipping Tax <sys--conf--commerce--taxation--shipping-tax>`, label the taxes that apply to the shipping cost.
 
 Integration with Shipping Providers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 .. include:: /user_guide/shipping/configuration/shipping_method_integrations.rst
-   :start-after: begin
-   :end-before: stop
+   :start-after: begin_shipping_method_integrations
+   :end-before: stop_shipping_method_integrations
+
+See the :ref:`Integration with Shipping Providers <sys--integrations--manage-integrations--ups--flat-rate>` topic for more information.
 
 Shipping Rules Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 .. include:: /user_guide/shipping/configuration/shipping_rules.rst
    :start-after: begin
    :end-before: stop
+
+See the :ref:`Shipping Rules Configuration <sys--shipping-rules>` topic for more information, including:
+
+* :ref:`Shipping Rules Overview <doc--shipping-rules--overview>`
+* :ref:`Create a Shipping Rule <doc--shipping-rules--actions--create>`
+* :ref:`Enable a Shipping Rule <doc--shipping-rules--actions--enable>`
 
 .. finish
 

@@ -9,10 +9,9 @@ OroCRM provides each user with a calendar with tasks and events related to the s
 defined for the whole organization or system.
 
 Events in the System and Organization calendars can be viewed by all the users within the system/organization.
-The ability to create, edit, and delete events depends on the user's 
-:ref:`roles <user-guide-user-management-permissions>`
-and :ref:`capabilities <admin-capabilities-org-calendar-events>`.
+The ability to create, edit, and delete events depends on the user's :ref:`roles <user-guide-user-management-permissions>` and :ref:`capabilities <admin-capabilities-org-calendar-events>`.
 
+.. note:: See a short demo on `how to create and manage calendars <https://www.orocrm.com/media-library/create-and-manage-calendars#play=fVcOy3TmuQg>`_, or keep reading the step-by-step guidance below.
 
 Create System and Organization Calendars
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

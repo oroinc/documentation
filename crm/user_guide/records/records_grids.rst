@@ -4,18 +4,14 @@ Grids
 =====
 
 .. contents:: :local:
-    :depth: 3
+    :depth: 2
 
 
-A ``grid`` is an aggregated view of all the entity records. Each row of a grid is one record, and columns represent record fields.
-
-
-|
+A grid is an aggregated view of all the entity records. Each row of a grid is one record, and columns represent record fields.
 
 .. image:: ../img/records/grids/grids_grid.png
 
-|
-
+.. note:: See a short demo on `how to use grids <https://www.orocrm.com/media-library/how-to-use-grids>`_, or continue reading the step-by-step guidance below.
 
 .. _doc-grids-open-grid:
 
@@ -38,11 +34,9 @@ There are several ways to get to a grid.
 - Click the grid link on the entity record :ref:`view page <user-guide-ui-components-view-pages>`
   or :ref:`create / edit page <user-guide-ui-components-create-pages>`.
 
- |
 
  .. image:: ../img/data_management/grid/grid_from_view.png
 
- |
 
 .. hint::
 
@@ -55,11 +49,7 @@ There are several ways to get to a grid.
 Grid Page
 ---------
 
-|
-
 .. image:: ../img/records/grids/grids_grid.png
-
-|
 
 
 At the upper-left of the grid page you can see where this page is located in the menu. In the next row you can see a name of the selected grid view. You can open another grid view from the drop-down menu next to the grid view. You rename, delete, etc. the current grid view. For more information about grid views and how to manage them, see :ref:`Manage Grid Views <doc-grids-grid-views>`).
@@ -80,11 +70,9 @@ If you have a lot of records, they may not all fit in one data page. In this cas
 
 In the pager block, you can see the page that you are currently on, the total number of data pages, and the total number of records in the grid.
 
-|
 
 .. image:: ../img/records/grids/grids_pager.png
 
-|
 
 You can navigate between pages using the :guilabel:`<` **Previous Page** and :guilabel:`>` **Next Page** buttons.
 
@@ -99,12 +87,7 @@ Refresh the Grid
 To refresh the grid and get the newest details on the displayed records, click the |BRefresh| :guilabel:`Refresh` button in the upper-right corner of the grid.
 
 
-|
-
 .. image:: ../img/records/grids/grids_refresh.png
-
-|
-
 
 
 .. _doc-grids-actions-export:
@@ -114,11 +97,8 @@ Export a Grid
 
 To export a grid, click the :guilabel:`Export Grid` button in the upper-left corner of the grid, and then click **CSV** or **XLXS** to export the grid to the file of the corresponding format (available formats may vary).
 
-|
 
 .. image:: ../img/data_management/grid/export_grid.png
-
-|
 
 .. _doc-grids-actions-adjust:
 
@@ -143,11 +123,9 @@ Set Number of Items Per Page
 
 You can change the amount of items displayed per page. To do this, click the **View Per Page** drop-down list in the upper-right corner of the grid, and select the required number of items per page.
 
-|
 
 .. image:: ../img/records/grids/grids_viewperpage.png
 
-|
 
 .. _doc-grids-actions-change-table:
 
@@ -231,6 +209,7 @@ You can apply filters to choose specific items to be shown in the grid.
 For example, if there are a lot of contacts, they will not all fit on one page. In order to find the required contact in the
 grid, use the grid filters.
 
+.. note:: See a short demo on `how to use grid filters <https://www.orocrm.com/media-library/how-to-use-filters#play=y8CqbC9IxdY>`_, or continue reading the guidance below.
 
 .. _doc-grids-actions-filters-showhide:
 

@@ -11,6 +11,7 @@ action.
 .. important::
     By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
 
+.. note:: See a short demo on `how to add comments <https://www.orocrm.com/media-library/add-comments-orocrm>`_, or keep reading the guidance below.
 
 Create and View Comments
 ------------------------
