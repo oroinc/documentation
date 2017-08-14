@@ -23,6 +23,13 @@ OroCommerce groups product configuration options into the following categories:
 
   * `Configure Image Gallery per Website`_
 
+* Image Preview:
+
+  * `Configure Image Preview on Product Listing Page Globally`_
+
+  * `Configure Image Preview on Product Listing Page per Organization`_
+
+  * `Configure Image Preview on Product Listing Page per Website`_
 
 * New Arrivals:
 
@@ -94,6 +101,30 @@ Configure Image Gallery Per Website
    :start-after: begin
    :end-before: finish
 
+Image Preview on Product Listing Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Configure Image Preview on Product Listing Page Globally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/global_image_preview.rst
+   :start-after: begin
+   :end-before: finish
+
+Configure Image Preview on Product Listing Page per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/organization_image_preview.rst
+   :start-after: begin
+   :end-before: finish
+
+
+Configure Image Preview on Product Listing Page per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/configuration/website_image_preview.rst
+   :start-after: begin
+   :end-before: finish
 
 New Arrivals
 ^^^^^^^^^^^^
@@ -183,11 +214,29 @@ Enable Related Products per Website
 
    website_images
 
+   global_gallery
+
+   organization_gallery
+
+   website_gallery
+
+   global_image_preview
+
+   organization_image_preview
+
+   website_image_preview
+
    global_new_arrivals
 
    organization_new_arrivals
 
    website_new_arrivals
+
+   global_featured_products
+
+   organization_featured_products
+
+   website_featured_products
 
    global_related_products
 

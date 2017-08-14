@@ -51,7 +51,9 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-    margin: 0 0 0 292px;
+    position:relative;
+    left: 292px;
+    margin: 0 0 0 0;
     background-color: white; /*#eee !important;*/
     /*border-top: 1px solid #b84926;*/
     padding: 0 0 0 50px;
@@ -83,6 +85,7 @@ div.sphinxsidebar a:hover {
     border-bottom: 0px solid #b84926;
 }
 
+
 div.sphinxsidebarwrapper {
     display: inline-block;
     box-sizing: border-box; /*+3*/
@@ -93,6 +96,20 @@ div.sphinxsidebarwrapper {
     /*border-top: 1px solid #b84926;*/
     border-right: 1px solid #b84926;
 }
+
+div.sphinxsidebarwrapper ul {
+    overflow-y: scroll;
+    min-height: 450px;
+    max-height: 450px;
+}
+
+div.sphinxsidebarwrapper ul.current li ul {
+
+    overflow-y: hidden;
+    max-height: 600px;
+
+}
+
 
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current {
     width: 100%;
@@ -864,6 +881,7 @@ padding: 5px 0 5px 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border-bottom: 1px solid var(--border-colors);
     background-color: white !important;
+    z-index: 1;
 }
 
 .navbar-brand {
