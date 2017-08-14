@@ -22,7 +22,7 @@ scale to multiple servers and a separate database server based on the expected l
 Operating Systems
 ~~~~~~~~~~~~~~~~~
 
-Linux distributions (RedHat, Ubuntu, Debian, CentOS) are recommended for the production setup. Windows 7 and above and Mac OS X can also be used.
+Linux distributions (RedHat, Ubuntu, Debian, CentOS) are recommended for the production setup. Windows 7 and above and Mac OS X can be used for the development environment.
 
 
 Software
