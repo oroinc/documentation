@@ -70,8 +70,8 @@ Overdue tasks appear in red.
 Click the task to open its view page.
 
 
-See Also
-========
+**See Also**
+
 
 :ref:`Tasks Overview <doc-activities-tasks>`
 

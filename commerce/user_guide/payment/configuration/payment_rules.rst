@@ -77,17 +77,76 @@ To create a payment rule:
 
        You can add any combination of these payment methods in a single payment rule. However, if you want to enable **WireCard - SEPA**, then in step 3 you must select *EUR* for **Currency**.
 
+#. In the **Websites** section, specify the website(s) that the payment rule should apply to, if you have more than one website. This field is optional and may be left empty. Hold the Ctrl key to choose several websites, if necessary.
 
-#. Click :guilabel:`Save`.
+   .. note:: Please note that application of payment rules to websites is only available for Enterprise customers.
+
+   .. image:: /user_guide/img/system/payment_rules/websites_payment_rule.png
+      :class: with-border
+
+   * When no website is selected, the payment rule is always applied by default.
+
+   * When at least one website is selected, the payment rule will apply to the orders created in the front store of the specified website.
+
+#. Click **Save**.
+
+Manage a Payment Rule
+^^^^^^^^^^^^^^^^^^^^^
 
 Enable a Payment Rule
-^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""
 
 To enable a payment rule:
 
 1. Navigate to **System > Payment Rules** in the main menu. The list of shipping rules opens.
 
-2. Hover over the |IcMore| **More Options** menu at the end of the row with the necessary payment rule and click the |IcActivate| **Activate** icon.
+2. Hover over the |IcMore| **More Options** menu at the end of the row with the necessary payment rule.
+
+3. Click the |IcActivate| **Activate** icon.
+
+To enable several shipping rules at the same time:
+
+1. Select the checkboxes on the left of the corresponding rows. The selected payment rules will be highlighted in yellow.
+
+2. Click |IcMore| on the far right of table header.
+
+3. Click |IcActivate| **Enable**.
+
+    .. image:: /user_guide/img/system/payment_rules/mass_action_payment_rule.png
+       :class: with-border
+
+Filter a Payment Rule List
+""""""""""""""""""""""""""
+
+You can use filters on the payment rules list page to find the required records quicker:
+
+1. To show filters, click |IcFilter| above the table on the far right.
+
+   .. image:: /user_guide/img/system/payment_rules/filter_payment_rule.png
+      :class: with-border
+
+   Filters are hidden by default.
+
+2. To apply a filter, click on its button in the bar, and specify your query in the control that appears.
+
+   .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g. textual, numeric, a date or an option set.
+
+   .. image:: /user_guide/img/system/payment_rules/filter_payment_rule_2.png
+      :class: with-border
+
+Organize a Payment Rule List
+""""""""""""""""""""""""""""
+
+To define which columns to show in the table, click |IcSettings| above the table on the far right:
+
+   .. image:: /user_guide/img/system/payment_rules/grid_settings_payment_rules.png
+      :class: with-border
+
+* To choose the columns to be displayed in the table, select the check box next to the required column under **Show**. Clear the check box to make the column disappear from the table.
+
+* To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button and drag the column to the required position.
+
+
 
 
 .. stop

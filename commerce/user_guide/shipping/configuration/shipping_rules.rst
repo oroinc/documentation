@@ -22,7 +22,7 @@ Shipping Rules Overview
 
 On the checkout, when a customer user provides the shipping address, the OroCommerce evaluates shipping rules one by one following the Shipping Rules Sort Order. The matching shipping rule may enable one or more shipping method(s) in the shipping options on the checkout and set the shipping service fee components that are used in shipping cost calculation.
 
-To decide whether the shipping rule fits the order or not, OroCommerce uses the shipping destination and the shipping rule condition defined with the :ref:`expression <payment-shipping-expression-lang>`. The condition may rely on the customer order context. When a shipping rule destination and condition matches the order details (e.g. customer, ordered products and the environment), the shipping rule enables it's shipping options and shipping fee components.
+To decide whether the shipping rule fits the order or not, OroCommerce uses the shipping destination and the shipping rule condition defined with the :ref:`expression <payment-shipping-expression-lang>`. The condition may rely on the customer order context. When a shipping rule destination and condition matches the order details (e.g. customer, ordered products and the environment), the shipping rule enables its shipping options and shipping fee components.
 
 .. _doc--shipping-rules--overview--stop-further-processing:
 
@@ -101,7 +101,7 @@ To create a shipping rule:
 
    - **Name**—Specify the shipping rule name.
 
-   - **Sort Order**—Specify the sort order to set the priority compared to other shipping rules. It is used to select which shipping method to apply when more the one satisfy the defined conditions. See :ref:`Overlapping Shipping Methods Definition <doc--shipping-rules--overview--shipping-methods-overlap>`.
+   - **Sort Order**—Specify the sort order to set the priority compared to other shipping rules. It is used to select which shipping method to apply when more than one satisfy the defined conditions. See :ref:`Overlapping Shipping Methods Definition <doc--shipping-rules--overview--shipping-methods-overlap>`.
 
    - **Currency**—Select the shipping cost currency from the list. Please note that the list of available shipping methods will depend upon which currency is selected here.
 
@@ -133,7 +133,7 @@ To create a shipping rule:
 
    For detailed information about the expression language used in the shipping and payment rules, please see the :ref:`Expression Language for Shipping and Payment Rules <payment-shipping-expression-lang>` guide.
 
-#. In the **Shipping Method Configurations** section, add the shipping methods that should be available on the checkout when this shipping rule applies.
+#. In the **Shipping Method Configurations** section, add the shipping methods that should be available at the checkout when this shipping rule applies.
 
    a) Add shipping methods:
 
@@ -156,11 +156,21 @@ To create a shipping rule:
       .. image:: /user_guide/img/system/shipping_rules/shipping_rule_method_summary.png
 
 
-      If a shipping method appear collapsed, click the |IcPlusSquareO| **Expand** icon in front of its name to see configuration options.
+      If a shipping method appears collapsed, click the |IcPlusSquareO| **Expand** icon in front of its name to see the configuration options.
 
 
       .. image:: /user_guide/img/system/shipping_rules/shipping_rule_method.png
 
+
+#. In the **Websites** section, specify the website(s) that the shipping rule should apply to, if you have more than one website. This field is optional and may be left empty. Hold the Ctrl key to choose several websites, if necessary.
+
+      .. note:: Please note that application of shipping rules to websites is only available for Enterprise customers.
+
+      .. image:: /user_guide/img/system/shipping_rules/SHRuleView1.png
+
+   * When no website is selected, the shipping rule is always applied by default.
+
+   * When at least one website is selected, the shipping rule will apply to the orders created in the front store of the specified website.
 
 #. Click **Save**.
 
@@ -215,16 +225,61 @@ In the **Additional Options** section, provide the following information for eac
 
 .. _doc--shipping-rules--actions--enable:
 
-Enable a Shipping Rule
+Manage a Shipping Rule
 ----------------------
+
+Enable a Shipping Rule
+^^^^^^^^^^^^^^^^^^^^^^
 
 To enable a shipping rule:
 
 1. In the main menu, navigate to **System > Shipping Rules**.
 
-2. Choose the required shipping rule in the list, click the |IcMore| **More Options** menu at the end of the corresponding row, and then click the |IcActivate| **Activate** icon.
+2. Choose the required shipping rule in the list, click the |IcMore| **More Options** menu at the end of the corresponding row.
 
-.. image:: /user_guide/img/system/shipping_rules/shipping_rule_enable.png
+3. Click the |IcActivate| **Activate** icon.
+
+   .. image:: /user_guide/img/system/shipping_rules/shipping_rule_enable.png
+
+To enable several shipping rules at the same time:
+
+1. Select the checkboxes on the left of the corresponding rows. The selected shipping rules will be highlighted in yellow.
+
+2. Click |IcMore| on the far right of table header.
+
+3. Click |IcActivate| **Enable**.
+
+  .. image:: /user_guide/img/system/shipping_rules/SRuleMassAction.png
+
+Filter a Shipping Rule List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use filters on the shipping rules list page to find the required records quicker:
+
+1. To show filters, click |IcFilter| above the table on the far right.
+
+   .. image:: /user_guide/img/system/shipping_rules/SRulesFilters.png
+
+   Filters are hidden by default.
+
+2. To apply a filter, click on its button in the bar, and specify your query in the control that appears.
+
+   .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g. textual, numeric, a date or an option set.
+
+   .. image:: /user_guide/img/system/shipping_rules/SRFilterButton.png
+
+Organize a Shipping Rule List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To define which columns to show in the table, click |IcSettings| above the table on the far right:
+
+   .. image:: /user_guide/img/system/shipping_rules/SRuleGridSettings.png
+
+* To choose the columns to be displayed in the table, select the check box next to the required column under **Show**. Clear the check box to make the column disappear from the table.
+
+* To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button and drag the column to the required position.
+
+
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
