@@ -10,29 +10,29 @@ Once the core product information is save, you may configure related products to
 To add related products to the product information:
 
 1. Navigate to the **Products > Products** using main menu.
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcView| to preview its details.
-#. Navigate to the **Related Items** section and click the |IcEdit| Quick Edit link in the section header.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| **View** icon to preview its details.
+#. Navigate to the **Related Items** section and click the |IcEdit| **Quick Edit** link in the section header.
 
    The Related Items page appears.
 
 #. Click **Select Related Products**.
 
-#. In the **Select Related Products For...** dialog:
+#. In the **Select Related Products For** dialog:
 
-   a) Check **Is Related** boxes next to the products to marl them as related. Use filter to limit the number of listed products and find the necessary items.
+   a) Select the **Is Related** check boxes next to the products to mark them as related. Use filter to limit the number of listed products and find the necessary items.
 
    b) Click **Select Products**.
 
-   This will close the dialog and update the Related Items list with the products you have selected.
+   This will close the dialog and update the related items list with the products you have selected.
 
-   .. note:: To delete a related item, click |IcDelete| next to it.
+   .. note:: To delete a related item, click |IcDelete| **Delete**  next to it.
 
 #. Once you are done adding the related items, click **Save and Close**.
 
 Configuration
 ~~~~~~~~~~~~~
 
-Configure Related Products globally, per website and organization.
+Configure related products globally, per website and organization.
 
 Enable Related Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

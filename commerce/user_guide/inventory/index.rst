@@ -39,23 +39,10 @@ Updated information is automatically saved.
 Per Product
 ~~~~~~~~~~~
 
-To manage quantities for a single product in multiple warehouses:
+.. include:: /user_guide/products/products/actions_details/manage_inventory.rst
+   :start-after: start_products_manage_inventory
+   :end-before: stop_products_manage_inventory
 
-1. Navigate to the product details:
-
-   a) Navigate to **Products > Products** in the main menu.
-   b) Search for the necessary product and view its details.
-
-2. Click **Inventory** on the top right of the page.
-   
-   The following page pops up:
-
-   .. image:: /user_guide/img/inventory/product_inventory.png
-      :class: with-border
-
-3. Update product quantity, if necessary.
-
-5. Click **Save**.
 
 Manage Inventory in the External Systems
 ----------------------------------------

@@ -26,6 +26,23 @@ This will look differently for various layout options:
 .. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsFrontstoreCompactDetails.png
    :class: with-border
 
+Mark a Product as a New Arrival
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/products/actions_details/make_new_arrival.rst
+   :start-after: start_products_actions_new_arrival_mark
+   :end-before: stop_products_actions_new_arrival_mark
+
+Remove a Product from New Arrivals
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/products/products/actions_details/make_new_arrival.rst
+   :start-after: start_products_actions_new_arrival_remove
+   :end-before: stop_products_actions_new_arrival_remove
+
+Set Up a New Arrival Icon
+-------------------------
+
 Configuring New Product icons can be done globally, per website and organization.
 
 
@@ -57,7 +74,7 @@ Enable New Product Icons per Organization
 Set Up New Arrivals
 -------------------
 
-To promote new arrivals on the store homepage, you can set up and control the products included in the **New Arrivals** block. This can be done on three levels - globall, per organization and per website.
+To promote new arrivals on the store homepage, you can set up and control the products included in the **New Arrivals** block. This can be done on three levels: globally, per organization and per website.
 
 Set Up New Arrivals Globally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

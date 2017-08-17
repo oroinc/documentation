@@ -1,4 +1,4 @@
-Overview index
+Overview Index
 ==============
 
 .. toctree::

@@ -10,7 +10,7 @@ You can enable or disable customer user registration, requesting confirmation af
 To change the default settings for a website:
 
 1. Navigate to the system configuration (click **System > Websites** in the main menu).
-2. For the necessary website, hover over the |IcMore| *more actions* menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Customer Users** in the menu on the left.
 
    The following page opens.

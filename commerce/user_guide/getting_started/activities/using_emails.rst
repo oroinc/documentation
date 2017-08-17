@@ -40,18 +40,17 @@ Recent Emails Menu Button
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can reach your emails by clicking on the Recent Emails button in the
-top right corner of the OroCRM window. A dropdown with unread emails
+top right corner of the OroCRM window. A drop-down with unread emails
 will appear, as illustrated in the screenshot below:
 
 .. image:: /user_guide/img/getting_started/emails/recent_emails_button.jpg
 
 
 
-Clicking on an email from the dropdown will redirect you to the page of
+Clicking on an email from the drop-down will redirect you to the page of
 the selected email.
 
-The following features are available within the **Recent Emails**
-dropdown:
+The following features are available within the **Recent Emails** list:
 
 -  **Mark All as Read** (marks all unread emails as read).
 
@@ -194,7 +193,7 @@ The following actions are available for an email template from the :ref:`grid <d
 
 
 
-To apply an email template to a new email: select the template from the dropdown of the **Apply Template** field, as shown below:
+To apply an email template to a new email: select the template from the drop-down of the **Apply Template** field, as shown below:
 
 .. image:: /user_guide/img/getting_started/emails/apply_template.jpg
 

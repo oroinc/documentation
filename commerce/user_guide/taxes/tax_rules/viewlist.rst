@@ -36,11 +36,11 @@ You can perform the following actions with every item in the Tax Rules list:
    
    OR
    
-   Alternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
+   Alternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
 
- * `Edit a Tax Rule details <edit>`_: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details.
+ * `Edit a Tax Rule details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
 
- * Delete a Tax Rule: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcDelete| to remove the Tax Rule.
+ * Delete a Tax Rule: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcDelete| to remove the Tax Rule.
 
  * `Create Tax Rule <create>`_: Click **Create Tax Rule** to the top right from the list. 
 

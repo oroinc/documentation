@@ -5,7 +5,7 @@ To edit the Tax Jurisdiction details:
 
 #. Navigate to **Taxes > Tax Jurisdictions** in the main menu.
 
-#. Hower over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details. 
+#. Hower over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
    The following page opens:
 
 .. image:: /user_guide/img/taxes/tax_jurisdictions/LOS_ANGELES_COUNTY_Edit_TaxJurisdictions_Taxes.png

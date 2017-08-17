@@ -54,7 +54,7 @@ On the All Requests for Quote Page
 From the Shopping List
 ~~~~~~~~~~~~~~~~~~~~~~
 
-1. In the top right corner, click on the |IcShoppingLists| N Shipping Lists button to open a dropdown with all available shopping lists.
+1. In the top right corner, click on the |IcShoppingLists| N Shipping Lists button to open a drop-down list with all available shopping lists.
 
    .. image:: /frontstore_guide/img/shopping_lists/ShoppingLists.png
 
@@ -62,7 +62,7 @@ From the Shopping List
 
    .. image:: /frontstore_guide/img/shopping_lists/ShoppingListsDropdown.png
 
-3. Click **Request Quote** on the rop right of the page, or by selecting this option from the dropdown of the **Create Order** button at the bottom of the page.
+3. Click **Request Quote** on the rop right of the page, or by selecting this option from the drop-down list of the **Create Order** button at the bottom of the page.
 
    .. image:: /frontstore_guide/img/rfq/CreateRFQ2.png
 

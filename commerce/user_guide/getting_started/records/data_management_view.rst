@@ -114,7 +114,7 @@ To be able to perform inline editing from a record's view page:
    .. image:: /user_guide/img/getting_started/data_management/view/inline_editing_2.png
 
 
-   In some cases, you will need to select the value from a dropdown.
+   In some cases, you will need to select the value from a drop-down.
 
 
    .. image:: /user_guide/img/getting_started/data_management/view/inline_editing_3.png

@@ -43,7 +43,7 @@ To access other shortcuts, click **See the full list** to see complete list of s
 User Menu
 """""""""
 
-In Management Console, user can access their profile configuration, emails, tasks and events via a **usermenu** (by clicking on your name in the upper-right corner of the application).
+In Management Console, user can access their profile configuration, emails, tasks and events via a **usermenu** (by clicking on your name on the top right of the application).
 
 .. image:: /user_guide/img/system/menus/user_menu.png
 
@@ -104,7 +104,7 @@ To configure user menu globally:
 To configure user menu on the organization level:
 
 1. Navigate to the system configuration (click **System > User Management > Organization** in the main menu).
-2. For the necessary organization, hover over the |IcMore| *more actions* menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
+2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Design > Theme** in the menu to the left.
 4. In the **Menu Templates** section you have the following templates for user menu - *Show all items at once* (the default template) and *Show subitems in a popup*.
 
@@ -112,7 +112,7 @@ To configure user menu on the organization level:
 To configure user menu on the website level:
 
 1. Navigate to the system configuration (click **System > Websites** in the main menu).
-2. For the necessary website, hover over the |IcMore| *more actions* menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Design > Theme** in the menu on the left.
 4. In the **Menu Templates** section you have the following templates for user menu - *Show all items at once* (the default template) and *Show subitems in a popup*.
 

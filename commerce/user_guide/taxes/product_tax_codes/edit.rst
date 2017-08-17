@@ -5,7 +5,7 @@ To edit the Product Tax Code value and description:
 
 #. Navigate to **Taxes > Product Tax Codes** in the main menu.
 
-#. Hower over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details. 
+#. Hower over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
    The following page opens:
 
    .. image:: /user_guide/img/taxes/product_tax_codes/MEDICAL_IDENTIFICATION_TAGS_Edit_ProductTaxCodes_Taxes1.png

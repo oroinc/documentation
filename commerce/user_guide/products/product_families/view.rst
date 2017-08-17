@@ -15,8 +15,8 @@ From the product families page you can:
 
 You can perform the following actions for the product families within the grid:
 
-- View a product family details: Click |IcView| to open its details page.
-- Edit a product family details: Click |IcEdit| to start editing its details.
+- View a product family details: Click the |IcView| **View** icon at the end of a product family row to open the product family view page.
+- Edit a product family details: Click the |IcEdit| **Edit** icon at the end of a product family row.
 
 
 .. image:: /user_guide/img/products/product_families/ProductFamiliesView.png 
@@ -25,7 +25,7 @@ You can perform the following actions for the product families within the grid:
 
 On the product families view page you can view the attributes defined for a specific product family.
 
-Additionaly, you can edit the details of a product family by clicking |IcEdit| **Edit** in the top right corner of its view page.
+Additionally, you can edit the details of a product family by clicking |IcEdit| **Edit** on the top right of its page.
 
 
 .. image:: /user_guide/img/products/product_families/ProductFamilyViewPage.png

@@ -93,7 +93,7 @@ To create a shipping rule:
    .. image:: /user_guide/img/system/shipping_rules/shipping_rule_list.png
 
 
-#. Click **Create Shipping Rule** in the upper-right corner of the page. The shipping rule create page opens.
+#. Click **Create Shipping Rule** on the top right. The shipping rule create page opens.
 
 #. In the **General Information** section, provide the following information:
 

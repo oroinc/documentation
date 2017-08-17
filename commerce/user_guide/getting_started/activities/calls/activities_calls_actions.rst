@@ -379,7 +379,7 @@ From the Calls Grid
 
 4. Click **Additional**, and specify the following information:
 
-   - **Context**—Select a record that has a meaningful relation to a call. Start entering a record name and when you see suggestions in the dropdown, click on the required name to select it. A call will then be displayed in the **Activity** section of the selected record.
+   - **Context**—Select a record that has a meaningful relation to a call. Start entering a record name and when you see suggestions in the drop-down, click on the required name to select it. A call will then be displayed in the **Activity** section of the selected record.
 
 5. Click :guilabel:`Save and Close` in the upper-right corner of the page.
 

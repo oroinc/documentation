@@ -132,7 +132,7 @@ To delete an integration and related shipping methods:
 
 1. Navigate to the **Manage Integrations** page by clicking **System > Integrations > Manage Integrations** in the main menu.
 
-2. Hover over the |IcMore| *more actions* menu on the right side of the line with the necessary integration and click |IcDelete|.
+2. Hover over the |IcMore| **More Options** menu on the right side of the line with the necessary integration and click |IcDelete|.
 
    The confirmation box is shown.
 

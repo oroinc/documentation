@@ -78,13 +78,13 @@ To enable quote approval for users with the particular role (e.g., for all sales
 
 2. Click the necessary role (e.g., *Sales Manager*) to open it.
 
-2. Start editing the role by clicking **Edit** in the upper-right corner.
+2. Start editing the role by clicking **Edit** on the top right.
 
 3. Click **Quotes** to get to the permissions and capabilities related to quotes management.
 
 4. In the capabilities list, select the **Review and approve quotes** check box.
 
-5. Click **Save And Close** in the upper-right corner of the page.
+5. Click **Save And Close** on the top right.
 
 .. important:: Note that users with the permission to review and approve a quote do not need to (and thus cannot) perform the **Send for Review** workflow transition. They can send any quote (either created by them or by someone else) directly to the customer.
 
@@ -106,11 +106,11 @@ If the option is disabled, do the following to enable it:
 
    The workflow details are shown.
 
-3. Click **Configuration** in the upper-right corner of the page.
+3. Click **Configuration** on the top right.
 
 4. Select the **Price Override Requires Approval** check box.
 
-5. Click **Save And Close** in the upper-right corner of the page.
+5. Click **Save And Close** on the top right.
 
 .. _doc--workflows--backoffice-quote-flow-with-approvals--steps:
 

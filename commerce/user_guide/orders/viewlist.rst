@@ -42,12 +42,12 @@ To manage the columns displayed within the grid, click |IcConfig| on the right o
 
 You can perform the following actions with every item of the orders list:
 
-* View order details: Hover over the |IcMore| *more actions* menu to the right of the item and click |IcView| to open its details page.
+* View order details: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page.
   
   Alternatively, click on the item to open its details page.
 
-* Edit order details: Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
-* Delete an order: Hover over the |IcMore| *more actions* menu to the right of the item and click |IcDelete| to remove an order.
+* Edit order details: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
+* Delete an order: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcDelete| to remove an order.
 
 .. image:: /user_guide/img/sales/orders/OrdersGridActions.png
    :class: with-border

@@ -106,7 +106,7 @@ To change the default global pricing settings:
 
 #. To change the price list priority, click and hold  the |IcReorder| **Sort** icon, and drag the price list up or down the list.
 
-#. To roll back any changes to the currency settings, click **Revert** in the upper-right corner of the page.
+#. To roll back any changes to the currency settings, click **Revert** on the top right.
 
 4. Click **Save Settings**.
 

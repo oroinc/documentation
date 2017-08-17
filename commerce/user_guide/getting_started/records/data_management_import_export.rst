@@ -17,9 +17,9 @@ administrator.
 Import
 ------
 
-- Click |Bdropdown| on the  :guilabel:`Import` button.
+- Click |Bdropdown| on the **Import** button.
 
-- Choose :guilabel:`Download Data Template`.
+- Choose **Download Data Template**.
 
 .. image:: /user_guide/img/getting_started/export_import/download_data_template.png
 

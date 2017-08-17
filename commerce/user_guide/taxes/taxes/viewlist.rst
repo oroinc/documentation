@@ -30,11 +30,11 @@ You can perform the following actions with every item in the Tax Rates list:
    
    OR
    
-   Aternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
+   Aternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
 
- * `Edit a Tax Rate details <edit>`_: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details.
+ * `Edit a Tax Rate details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
 
- * Delete a Tax Rate: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcDelete| to remove the Tax Rate.
+ * Delete a Tax Rate: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcDelete| to remove the Tax Rate.
 
  * `Create Tax <create>`_: Click **Create Tax** to the top right from the list. 
 

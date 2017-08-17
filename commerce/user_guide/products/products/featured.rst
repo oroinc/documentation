@@ -28,7 +28,7 @@ To create a new custom segment for featured products:
 
 1. Navigate to **Reports & Segments > Manage Segments** in the main menu.
 
-#. Click **Create Segment**.
+#. Click **Create Segment** on the top right of the page.
 
 #. Configure a new segment to have a distinct name and the necessary filtering condition. For more detailed steps, please see :ref:`Create Segment <user-guide--create-segments>` topic.
 
@@ -38,32 +38,27 @@ To create a new custom segment for featured products:
 
 #. Click **Save**.
 
-Now you can enable this segment to be a source of featured products in the :ref:`website <sys--websites--commerce--products--featured-products>` or :ref:`organization <sys--users--organization--commerce--products--featured-products>` configuration.
+Now you can enable this segment to be the source of featured products in the :ref:`website <sys--websites--commerce--products--featured-products>` or :ref:`organization <sys--users--organization--commerce--products--featured-products>` configuration.
+
 
 Mark a Product as Featured
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To mark a product as featured:
-
-1. Navigate to the **Products > Products** using main menu.
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
-#. In the **General** section, set **Is Featured** to *Yes*.
-#. Click **Save**.
+.. include:: /user_guide/products/products/actions_details/make_featured.rst
+   :start-after: start_products_actions_featured_mark
+   :end-before: stop_products_actions_featured_mark
 
 Remove a Product from Featured Products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To remove a product from Featured Products block, set **Is Featured** to *No* in the product details:
-
-1. Navigate to the **Products > Products** using main menu.
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
-#. In the **General** section, set **Is Featured** to *No*.
-#. Click **Save**.
+.. include:: /user_guide/products/products/actions_details/make_featured.rst
+   :start-after: start_products_actions_featured_remove
+   :end-before: stop_products_actions_featured_remove
 
 Source Configuration for Featured Products Block
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Configuring Feature Product segment can be done globally, per website and organization.
+Configuring the Feature Product segment can be done globally, per website and organization.
 
 Select a Featured Products Segment to Use Globally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

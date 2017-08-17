@@ -39,7 +39,7 @@ To add an address to the Address Book:
 	  "**Last name**", "Enter the last name of the account representative."
 	  "**Name suffix**", "If applicable, add a suffix name, e.g. IV, Jr., etc."
 	  "**Organization**",  "Specify the organization represented by the account."
-	  "**Country***", "This field is mandatory. Select the country from the dropdown menu. Selecting a country prompts the following fields to appear:
+	  "**Country***", "This field is mandatory. Select the country from the list. Selecting a country prompts the following fields to appear:
 
 	  -	Street*
 	  -	Street 2

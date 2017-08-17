@@ -30,9 +30,9 @@ You can perform the following actions with every item in the Customers list:
    
    OR
    
-   Aternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
+   Aternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
 
- * `Edit a Customer Group details <edit>`_: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details.
+ * `Edit a Customer Group details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
 
 You can perform the following actions on the Customer User Roles page:
 

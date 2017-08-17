@@ -5,7 +5,7 @@ To set a price attribute (e.g. Minimal Advertised Price) for a product:
 
 #. Navigate to **Products > Products** in the main menu.
 
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| **Edit** icon to start editing its details.
 
    The following page opens:
 

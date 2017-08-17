@@ -40,7 +40,7 @@ Toggle the Menu Tree View
 Hide / Show the Menu Tree
 """""""""""""""""""""""""
 
-To minimize or maximize the left menu panel, click a double arrow in the upper-right corner of the panel.
+To minimize or maximize the left menu panel, click a double arrow on the top right of the panel.
 
 .. image:: /user_guide/img/system/menus/edit/menus_application_showpanel.png
 
@@ -51,7 +51,7 @@ To expand / collapse a parent menu item, click an arrow in front of it.
 
 .. image:: /user_guide/img/system/menus/edit/menus_application_expand.png
 
-To expand / collapse all menu items, click the ellipses dropdown menu in the upper-right corner of the left panel and click **Expand All** or **Collapse All**.
+To expand / collapse all menu items, click the ellipses drop-down menu on the top right of the left panel and click **Expand All** or **Collapse All**.
 
 .. image:: /user_guide/img/system/menus/edit/menus_application_expall.png
 
@@ -75,7 +75,7 @@ Add a Menu Item
 
 1. In the left panel, click a menu item which will be parent for the menu item that you create.
 
-2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Menu Item` on the list.
+2. Click **Create** drop-down on the top right and click **Create Menu Item** on the list.
 
    .. image:: /user_guide/img/system/menus/edit/menus_createmenuitem.png
 
@@ -105,7 +105,7 @@ Add a Menu Item
 
    .. image:: /user_guide/img/system/menus/edit/menus_actions_create_general.png
 
-4. Click :guilabel:`Save` to save your changes. If you wish to start creating another menu item right away, click :guilabel:`Save and New` in the upper-right corner of the page.
+4. Click **Save** to save your changes. If you wish to start creating another menu item right away, click **Save and New** on the top right.
 
 .. important::
     You need to reload the page to see changes.
@@ -115,7 +115,7 @@ Add a Divider
 
 1. In the left panel, click a menu item which will be parent for the menu divider that you create.
 
-2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Divider` on the list.
+2. Click **Create** drop-down on the top right and select **Create Divider**.
 
 .. image:: /user_guide/img/system/menus/edit/menus_createdivider.png
 
@@ -155,7 +155,7 @@ To hide a menu item, perform the following steps:
 
 1. In the left panel, click a menu item that you want to hide.
 
-2. Click the :guilabel:`Hide` button in the upper-right corner of the page.
+2. Click **Hide** on the top right.
 
 .. important::
     You need to reload the page to see changes.
@@ -167,7 +167,7 @@ To show a previously hidden menu item, perform the following steps:
 
 1. In the left panel, click a menu item that you want to show.
 
-2. Click the :guilabel:`Show` button in the upper-right corner of the page.
+2. Click **Show** on the top right.
 
 .. note::
     If a menu item that you want to show has a parent, it will become visible too.
@@ -192,7 +192,7 @@ Delete a Menu Item / Divider
 
 1. In the left panel, click a menu item / divider that you want to delete.
 
-2. Click the :guilabel:`Delete` button in the upper-right corner of the page.
+2. Click **Delete** on the top right.
 
 3. In the **Delete Confirmation** dialog box, click :guilabel:`Yes, Delete`.
 
@@ -206,7 +206,7 @@ To reset any customization changes and roll back to the menu that is provided ou
 
 1. In the left panel, click a menu name.
 
-2. Click the :guilabel:`Reset` button in the upper-right corner of the page.
+2. Click **Reset** on the top right.
 
 3. In the **Reset Confirmation** dialog box, click :guilabel:`Yes, Reset`.
 

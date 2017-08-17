@@ -1,7 +1,7 @@
 .. _products--product-visibility:
 
-Product Visibility
-^^^^^^^^^^^^^^^^^^
+Manage Product Visibility
+-------------------------
 
 .. begin
 

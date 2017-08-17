@@ -11,7 +11,7 @@ To limit the shipping methods per quote:
 
 #. Navigate to **Sales > Quotes** in the main menu.
 
-#. Hover over the |IcMore| *more actions* menu to the right of the necessary quote and click |IcEdit| to start editing its details.
+#. Hover over the |IcMore| **More Options** menu to the right of the necessary quote and click |IcEdit| to start editing its details.
 
 #. In the **Shipping Information** section, configure the shipping options available for the customer:
 

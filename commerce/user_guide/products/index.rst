@@ -1,5 +1,7 @@
 :orphan:
 
+.. _doc--products:
+
 Products
 ========
 
@@ -29,26 +31,53 @@ Ensure that you have configured:
 Manage Products
 ---------------
 
-To create a product, manage product information and visibility, please use the following procedures:
+To create a product, manage product information and visibility, please use the procedures described below.
 
-* :ref:`Create Simple Product <products--products--create-simple-product>`
+* :ref:`Manage Product Information Structure <doc--product-information-structure>`
 
-* :ref:`Create Configurable Product <products--products--create-config-product>`
+* :ref:`Create a Product <doc--products--actions--create>`
 
-* :ref:`Review Product Prices <view-and-filter-product-prices>`
-
-* :ref:`Manage Product Information Structure <user-guide--product--product--bind-to-family>`
+* :ref:`Import Products <doc--products--actions--import>`
 
 * :ref:`Manage Product Visibility <products--product-visibility>`
 
 * :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>`
 
-* :ref:`Manage Related Products <products--related-products>`
+* :ref:`Review Product Prices <view-and-filter-product-prices>`
+
+* :ref:`Manage Product Inventory Quantity <doc--products--actions--manage-inventory>`
+
+* :ref:`Add Attachment to the Product <doc--products--actions--attachment>`
 
 .. ref:`Product Taxation <user-guide--products--products--taxation>`
 
-Enhance Navigation and Simplify Purchase Choices
-------------------------------------------------
+* :ref:`Add Note to a Product <doc--products--actions--note>`
+
+Once you have created all the required products, you can:
+
+* :ref:`View them all on the product list page <doc--products--actions--view-list>`
+
+* :ref:`View information for an individual product <doc--products--actions--view>`
+
+* :ref:`Edit a product <doc--products--actions--edit>`
+
+* :ref:`Duplicate a product <doc--products--actions--duplicate>`
+
+* :ref:`Delete a product <doc--products--actions--delete>`
+
+* :ref:`Export existing products <doc--products--actions--export>`
+
+.. Some
+   * View a Product List
+   * :ref:`View Product Information <doc--products--actions--view>`
+   * :ref:`Delete a Product <doc--products--actions--delete>`
+   * :ref:`Duplicate a Product <doc--products--actions--duplicate>`
+   * :ref:`Edit a Product <doc--products--actions--edit>`
+
+Simplify Purchase Choices and Increase Sales
+--------------------------------------------
+
+.. TODO intro
 
 * :ref:`Manage Featured Products <products--featured-products>`
 
@@ -56,23 +85,41 @@ Enhance Navigation and Simplify Purchase Choices
 
 * :ref:`Use Product Brands <user-guide--product-brands>`
 
+.. TODO intro
 
-**Related Topics**
+* :ref:`Manage Related Products <products--related-products>`
+
+* Up-sell Products
+
+* Cross-Sell Products
+
+.. **Related Topics**
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
 
    configuration/index
 
    configure_product_details
 
-   products/index
-
-   featured
-
    product_brands
 
-   new_arrivals
+   products/page_templates
+
+   products/featured
+
+   products/new_arrivals
+
+   products/actions_main/index
+
+   products/actions_details/index
+
+
+..    products/index
+
+.. actions/manage_product_taxation
+
 
 .. finish
 

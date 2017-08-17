@@ -86,7 +86,7 @@ To expand / collapse a parent menu item, click an arrow in front of it.
 .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_application_expand.png
 
 
-To expand / collapse all menu items, click the ellipses dropdown menu in the upper-right corner of the left panel and click **Expand All** or **Collapse All**.
+To expand / collapse all menu items, click the ellipses drop-down menu in the upper-right corner of the left panel and click **Expand All** or **Collapse All**.
 
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_application_expall.png
@@ -127,7 +127,7 @@ Add a Menu Item
 
 1. In the left panel, click a menu item which will be parent for the menu item that you create.
 
-2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Menu Item` on the list.
+2. Click the :guilabel:`Create` drop-down in the upper-right corner of the page and click :guilabel:`Create Menu Item` on the list.
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_createmenuitem.png
 
@@ -172,7 +172,7 @@ Add a Divider
 
 1. In the left panel, click a menu item which will be parent for the menu divider that you create.
 
-2. Click the :guilabel:`Create` dropdown in the upper-right corner of the page and click :guilabel:`Create Divider` on the list.
+2. Click the :guilabel:`Create` drop-down on the top right and click :guilabel:`Create Divider` on the list.
 
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_createdivider.png

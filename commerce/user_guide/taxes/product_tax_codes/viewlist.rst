@@ -30,11 +30,11 @@ You can perform the following actions with every item in the Product Tax Codes l
    
    OR
    
-   Aternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcView| to open its details page.
+   Aternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
 
- * `Edit a Product Tax Code details <edit>`_: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details.
+ * `Edit a Product Tax Code details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
 
- * Delete a Product Tax Code: Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcDelete| to remove the Product Tax Code.
+ * Delete a Product Tax Code: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcDelete| to remove the Product Tax Code.
 
  * `Create Account Tax Code <create>`_: Click **Create Account Tax Code** to the top right from the list. 
 

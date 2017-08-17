@@ -19,7 +19,7 @@ To create a new order from scratch:
    
    a) **Owner**: The owner is prepopulated with the user creating the order but this value can be changed to another user of the system by clicking |IcBars| and selecting a user from the list. 
 
-   b) **Customer**: Use the dropdown to select a customer. Click |IcBars| to load the list of customers to choose from.  If this is a new customer, click the plus button to open a new customer dialog.
+   b) **Customer**: Use the drop-down to select a customer. Click |IcBars| to load the list of customers to choose from.  If this is a new customer, click the plus button to open a new customer dialog.
 
    c) **Customer User**: Select a customer user, if necessary. This list will be populated with customer users associated with the customer. If this is a new customer user, click **+** to open a new customer dialog.
 
@@ -30,9 +30,9 @@ To create a new order from scratch:
 
 4. In the **Line Items** section, provide the following information: 
    
-   a) **Product**: Add products to the order by clicking **+Add Product**. Use the dropdown to select a product. Alternatively, begin typing in the name of the product to narrow down your search. To see a list of all the products, click |IcBars|.
+   a) **Product**: Add products to the order by clicking **+Add Product**. Use the drop-down to select a product. Alternatively, begin typing in the name of the product to narrow down your search. To see a list of all the products, click |IcBars|.
    b) **Quantity**: Enter product quantity.
-   c) **Warehouse**: Choose a warehouse from the dropdown, or click |IcBars| to see a list of all warehouses.
+   c) **Warehouse**: Choose a warehouse from the drop-down, or click |IcBars| to see a list of all warehouses.
    d) **Price**: Enter the price for the product, or click |IcBars| to select the price from the list.
    e) **Ship by**: If required, choose a date that the order must be shipped by at the customer’s request.
    f) **Add Notes**: Click the *add notes* link if you would like to add a note about the item.
@@ -43,13 +43,13 @@ To create a new order from scratch:
    .. image:: /user_guide/img/sales/orders/CreateOrderLineItems.png
       :class: with-border
 
-5. In the **Billing Address** section, fill in the billing address details when you are done adding products. Use the drop down to select an existing billing address, or select **New address** to add a new one.
-   
+5. In the **Billing Address** section, fill in the billing address details when you are done adding products. Use the drop-down list to select an existing billing address, or select **Enter Other Address** to add a new one.
+
    .. image:: /user_guide/img/sales/orders/CreateOrderBillingAddress.png
       :class: with-border
 
-7. In the **Shipping Address** section, fill in the shipping address details. Use the drop down to select an existing shipping address, or select **New address** to add a new one.
-   
+7. In the **Shipping Address** section, fill in the shipping address details. Use the drop-down list to select an existing shipping address, or select **Enter Other Address** to add a new one.
+
    .. image:: /user_guide/img/sales/orders/CreateOrderShippingAddress.png
       :class: with-border
 
@@ -69,7 +69,7 @@ To create a new order from scratch:
 
 9. In the **Discounts** section: 
     
-   a) Add either a discounted dollar value, or a percentage to discount (use the drop down next to the discount to select one of these options). 
+   a) Add either a discounted dollar value, or a percentage to discount (use the drop-down list next to the discount to select one of these options).
    b) Add a description of the type of discount. 
    c) To add more discounts, click **+Add Discount**. The discounted price will automatically be calculated for you and subtracted from the total when you are done adding discounts.
 
@@ -87,8 +87,6 @@ To create a new order from scratch:
        :class: with-border
 
 13. To save the order, click **Save** in the top right corner of the page.
-
-
 
 .. finish 
 

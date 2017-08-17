@@ -9,7 +9,7 @@ To configure the price list priority and controlled merge for the customer group
 
 #. Navigate to **Customers > Customer Groups** in the main menu.
 
-#. Find the necessary Customer Group in the list, hover over the |IcMore| *more actions* menu in the line and click the |IcEdit| to start editing the customer group details.
+#. Find the necessary Customer Group in the list, hover over the |IcMore| **More Options** menu in the line and click the |IcEdit| to start editing the customer group details.
 
 #. In the **Price Lists** section, you can build an aggregated price list for every website you have configured in OroCommerce. Use tabs to switch between the websites, e.g. Default, US, Australia, etc. in the example below.
 

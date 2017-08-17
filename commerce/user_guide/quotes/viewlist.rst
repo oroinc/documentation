@@ -38,13 +38,13 @@ You can perform the following actions with every item of the Quotes list:
 
    OR
 
-   Alternatively: Hover over the |IcMore| *more actions* menu to the right of the item and click |IcView| to open its details page.
+   Alternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page.
 
- * `Edit a Quote details <edit>`_: Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
+ * `Edit a Quote details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
 
  * `Expire a Quote <edit>`_: Click |IcExpireQuote| to the right of the item to start editing its details.
 
- * Delete a Quote: Hover over the |IcMore| *more actions* menu to the right of the item and click |IcDelete| to remove the Quote.
+ * Delete a Quote: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcDelete| to remove the Quote.
 
 You can perform the following actions on the Quotes page:
 

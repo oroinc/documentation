@@ -11,18 +11,18 @@ You can mark certain selected products to be displayed as new ones in the front 
 
 To enable New Product icons globally:
 
-1. Navigate to the system configuration (click **System > Configuration** in the main menu).
+1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Promotions** in the menu to the left.
 
    The following page opens.
 
    .. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsBlockSystemConfig.png
 
-3. In the **New Product Icons**, clear the **Use Default** box and select **Yes** in the **Show on Product View** field.
+3. In the **New Product Icons** section, clear the **Use Default** check box and select **Yes** in the **Show on Product View** field.
 
 4. Click **Save**.
 
-.. note:: To disable New Product icons, select **No** in the **Show on Product View** field, and click **Save**.
+.. note:: To disable 'New Product' icons, select **No** in the **Show on Product View** field, and click **Save**.
 
 .. finish
 

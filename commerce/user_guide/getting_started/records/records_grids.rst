@@ -86,7 +86,7 @@ To open a particular page, type its number in the field that displays the curren
 Refresh the Grid
 ^^^^^^^^^^^^^^^^^
 
-To refresh the grid and get the newest details on the displayed records, click the |BRefresh| :guilabel:`Refresh` button in the upper-right corner of the grid.
+To refresh the grid and get the newest details on the displayed records, click |BRefresh| **Refresh** on the top right of the grid.
 
 
 
@@ -126,7 +126,7 @@ Adjust a Grid
 Set Number of Items Per Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can change the amount of items displayed per page. To do this, click the **View Per Page** drop-down list in the upper-right corner of the grid, and select the required number of items per page.
+You can change the amount of items displayed per page. To do this, click the **View Per Page** drop-down list on the top right of the grid, and select the required number of items per page.
 
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_viewperpage.png
@@ -141,7 +141,7 @@ You can define which columns to show in the grid.
 
 To do this:
 
-1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
+1. Click the |IcSettings| **Grid Settings** icon on the top right of the grid.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_configure.png
 
@@ -166,7 +166,7 @@ You can define the order of columns in the grid.
 
 To do this:
 
-1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
+1. Click the |IcSettings| **Grid Settings** icon on the top right of the grid.
 
 2. In the **Grid Settings** menu, click on the **Sort** icon next to name of the column that you want to move, hold the mouse button, and drag the column to the new place.
 
@@ -208,7 +208,7 @@ grid, use the grid filters.
 Show / Hide Filters
 ~~~~~~~~~~~~~~~~~~~
 
-To show / hide filters, click the |icFilters| **Filters** icon in the upper-right corner of the grid. The filters section will appear.
+To show / hide filters, click the |icFilters| **Filters** icon on the top right of the grid. The filters section will appear.
 
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_filters.png
@@ -228,7 +228,7 @@ Click the summary to show filters.
 Select Filters to Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Click the |icFilters| **Filters** icon in the upper-right corner of the grid to show the filters block.
+1. Click the |icFilters| **Filters** icon on the top right of the grid to show the filters block.
 
 2. On the left side of the filters block, click the **Manage Filters** link.
 
@@ -248,7 +248,7 @@ Select Filters to Display
 Apply a Filter
 ^^^^^^^^^^^^^^
 
-1. Click the |icFilters| **Filters** icon in the upper-right corner of the grid to show the filters block.
+1. Click the |icFilters| **Filters** icon on the top right of the grid to show the filters block.
 
 2. Choose a filter you want to apply and click it. You will see controls that enable you to select desired values.
 
@@ -302,7 +302,7 @@ Apply a Filter
 Reset a Grid
 ^^^^^^^^^^^^
 
-To reset the grid (i.e., clear all the filters applied to the grid), click the |BReset| :guilabel:`Reset` button in the upper-right corner of the grid.
+To reset the grid (i.e., clear all the filters applied to the grid), click |BReset| **Reset** on the top right of the grid.
 
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_reset.png
@@ -469,7 +469,7 @@ Create a New Records
 
 The most common way of creating a new entity record is to do it directly from the grid.
 
-To create a new record, click the :guilabel:`Create <Entity Name>` action button in the upper-right corner of the grid page.
+To create a new record, click **Create <Entity Name>** action button on the top right of the grid page.
 
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_createnewrecord.png

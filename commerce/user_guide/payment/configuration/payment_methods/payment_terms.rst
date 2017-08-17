@@ -69,7 +69,7 @@ Alternatively, you can bind a customer to a payment term in the customer details
 
 #. Navigate to **Customers > Customers** in the main menu.
 
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
 
 #. Scroll down to the Additional section and select one of the Payment Terms (start typing or click (v) to see the options) or create a new one (click **+**, add a new payment term label in the box that opens, and click **Save**).
 

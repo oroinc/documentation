@@ -2,8 +2,8 @@
 
 .. _user-guide--page-templates:
 
-Product Page Design: Page Templates
-===================================
+Manage Product Page Design with Page Templates
+----------------------------------------------
 
 .. begin
 

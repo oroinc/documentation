@@ -12,7 +12,7 @@ You can control which :ref:`segment <user-guide-filters-segments>` is used to st
 To update the featured products segment for a particular website:
 
 1. Navigate to **System > Website** in the main menu.
-2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click the |IcConfig| **Configuration** icon to start editing the configuration.
 3. Select **Commerce > Products > Featured Products** in the menu to the left.
 
    The following page opens.
@@ -22,7 +22,7 @@ To update the featured products segment for a particular website:
 
 4. To customize the segment option:
 
-     a) Clear the **Use Default** box next to the option.
+     a) Clear the **Use Default** check box next to the option.
      b) Select the new segment from the list.
 
 5. Click **Save**.

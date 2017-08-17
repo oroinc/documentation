@@ -25,6 +25,7 @@ In this section you will learn how to:
    :end-before: finish
 
 .. include:: edit.rst
+   :start-after: begin
    :end-before: finish
 
 .. toctree::

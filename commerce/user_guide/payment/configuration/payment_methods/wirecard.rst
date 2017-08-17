@@ -9,7 +9,7 @@ To set up integration with Wirecard, complete the following:
 
 1. In the main menu, navigate to **System > Integrations > Manage Integrations**.
 
-#. On the **Manage Integrations** page, click :guilabel:`Create Integration` in the upper-right corner of the page.
+#. On the **Manage Integrations** page, click **Create Integration** on the top right.
 
 #. On the **Create Integration** page, provide the following information:
 

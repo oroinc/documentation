@@ -21,7 +21,7 @@ To change the default routing settings for the website:
 
 1. Navigate to **System > Websites** in the main menu.
 
-2. For the necessary website, hover over the |IcMore| *more actions* menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 
 3. Select **System Configuration > Websites > Routing** in the menu to the left.
 

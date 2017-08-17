@@ -10,7 +10,7 @@ You can enable or disable customer user registration, requesting confirmation af
 To change the default settings for an organization:
 
 1. Navigate to the system configuration (click **System > User Management > Organization** in the main menu).
-2. For the necessary organization, hover over the |IcMore| *more actions* menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
+2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Customer > Customer Users** in the menu to the left.
 
    The following page opens.

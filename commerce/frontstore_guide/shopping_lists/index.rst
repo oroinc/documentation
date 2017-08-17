@@ -18,7 +18,7 @@ In the front store, shopping lists are located in the top right corner and can b
 
 The shopping lists button displays the number of shopping lists that have been created.
 
-Clicking on the |IcChevronDown| icon next to the button will open a dropdown with all available shopping lists, the number of items in each of them, and a button to create a new shopping list.
+Clicking on the |IcChevronDown| icon next to the button will open a drop-down with all available shopping lists, the number of items in each of them, and a button to create a new shopping list.
 
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingListsDropdown.png
 
@@ -33,14 +33,14 @@ Shopping lists can be created using several flows.
 **Flow 1**
 
 1. Click |IcChevronDown| next to **Shopping Lists** on the top right of the page.
-2. Click **Create New List** on the bottom of the dropdown window.
+2. Click **Create New List** on the bottom of the drop-down window.
 3. Give the list a name and click **Create**.
    
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingListName.png
 
 **Flow 2**
 
-1. Click on the dropdown icon |IcChevronDown| located in the **Add to** button next to each product.
+1. Click on the drop-down icon |IcChevronDown| located in the **Add to** button next to each product.
 2. Select **Create New Shopping List**.
 3. Give the list a name and click **Create**.
 
@@ -74,7 +74,7 @@ Shopping lists can be created using several flows.
    
 .. image:: /frontstore_guide/img/orders/MatrixForm.png
 
-4. Click on the dropdown icon |IcChevronDown| located in the **Add to** button next to each product.
+4. Click on the drop-down icon |IcChevronDown| located in the **Add to** button next to each product.
 5. Select **Create New Shopping List**.
 
 .. image:: /frontstore_guide/img/orders/MatrixFormShoppngList.png
@@ -98,7 +98,7 @@ View Shopping List
 
 The shopping list view page contains the following information and options:
 
-1. Customer name (dropdown)
+1. Customer name (drop-down)
 2. Item name
 3. Availability
 4. Quantity

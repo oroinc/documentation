@@ -14,15 +14,15 @@ To create a new price attribute:
 
 #. Select the currencies that are supported for this price attribute:
 
-   * Click on the currency to select only one of them.
+   * Click the currency to select only one of them.
 
-   * Hold *Ctrl* and click to add a currency to the selection.
+   * Hold the ``Ctrl`` key and click another currency to add it to the selection.
 
-   * Hold *Shift* and click to select a range of currencies.
+   * Hold the ``Shift`` key and click another currency to select a range of currencies.
 
 #. Click **Save**.
 
-Now you can set the price attribute value for every product in the Product Prices section:
+Now you can set the price attribute value for every product in the **Product Prices** section:
 
 .. image:: /user_guide/img/products/price_attributes/PriceAttributesInProduct.png
    :class: with-border

@@ -13,8 +13,8 @@ Enable Related Products per Website
 
 To update the related products settings per website:
 
-1. Navigate to the system configuration (click **System > Websites** in the main menu).
-2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+1. In the main menu, navigate to **System > Websites**.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click the |IcConfig| **Configuration** icon to start editing the configuration.
 3. Select **Commerce > Catalog > Related Items** in the menu to the left.
 
    The following page opens.
@@ -28,8 +28,8 @@ To update the related products settings per website:
 
 4. To customize any of these options:
 
-     a) Clear the **Use Default** box next to the option.
-     b) Set or clear the option or type in the quantity.
+     a) Clear the **Use Default** check box next to the option.
+     b) Set or clear the option, or type in the quantity.
 
 5. Click **Save**.
 

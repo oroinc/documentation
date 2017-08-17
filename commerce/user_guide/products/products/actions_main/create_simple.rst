@@ -3,11 +3,13 @@
 Create a Simple Product
 -----------------------
 
-.. start
+.. start_product_create_simple
+
+See a short demo on `how to create a simple product <https://www.orocommerce.com/media-library/create-simple-product>`_, or keep reading the step-by-step guidance below.
 
 To add a new simple product and make it available in the master catalog (for internal product management) and for purchase in the front store:
 
-1. Navigate to **Products > Products** using the main menu.
+1. Navigate to **Products > Products** in the main menu.
 2. Click **Create Product**.
 
    .. image:: /user_guide/img/products/products/ProductsCreate0.png
@@ -43,7 +45,7 @@ To add a new simple product and make it available in the master catalog (for int
       .. image:: /user_guide/img/products/products/ProductsCreate0_1.png
          :class: with-border
 
-   b) Select the product status (e.g. Enabled/Disabled). When disabled, product is not included into the catalog and is considered to be a draft.
+   b) Select the product status: *Enabled* or *Disabled*. When disabled, product is not included into the catalog and is considered to be a draft.
 
       .. image:: /user_guide/img/products/products/ProductsCreate_Status.png
          :class: with-border
@@ -81,16 +83,16 @@ To add a new simple product and make it available in the master catalog (for int
 
 8. In the **Image** section, add a new image to the product by clicking **+Add Image** and uploading the necessary file. You can select whether the image will be shown as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove an image, click the |IcClose| **Delete** icon next to it.
 
-#. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the dropdown.
+#. In the **Design** section, select the :ref:`page template <user-guide--page-templates>` from the drop-down.
 
    .. image:: /user_guide/img/products/products/SimpleProductDesign.png
       :class: with-border"
 
 #. In the **SEO** section, provide the following information:
 
-   a) **Meta Keywords** -- Enter the meta keywords for the product. A meta keyword is a specific type of a meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
-   b)  **Meta Title** -- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
-   c) **Meta Description** -- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
+   * **Meta Keywords** --- Enter the meta keywords for the product. A meta keyword is a specific type of a meta tag that appears in the HTML code of a web page and helps tell search engines what the topic of the page is.
+   * **Meta Title** --- Enter the meta title for the product. A meta title is what is seen by search engine users and helps a search engine to index the page.
+   * **Meta Description** --- Enter the meta description for the product. A meta description summarizes a page content. Search engines show a meta description in search results if they see the searched phrase in the description.
 
 #. In the **Inventory** section, provide the following information: 
 
@@ -134,7 +136,7 @@ To add a new simple product and make it available in the master catalog (for int
 
 15. Click **Save**.
 
-.. stop
+.. stop_product_create_simple
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

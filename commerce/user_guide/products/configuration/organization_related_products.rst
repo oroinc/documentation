@@ -14,7 +14,7 @@ Enable Related Products per Organization
 To update the related products settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
-2. For the necessary organization, hover over the |IcMore| more actions menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
+2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click the |IcConfig| **Configuration** icon to start editing the configuration.
 3. Select **Commerce > Catalog > Related Items** in the menu to the left.
 
    The following page opens.
@@ -28,8 +28,8 @@ To update the related products settings per organization:
 
 4. To customize any of these options:
 
-     a) Clear the **Use Default** box next to the option.
-     b) Set or clear the option or type in the quantity.
+     a) Clear the **Use Default** check box next to the option.
+     b) Set or clear the option, or enter the quantity.
 
 5. Click **Save**.
 

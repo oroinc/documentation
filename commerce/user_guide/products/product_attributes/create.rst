@@ -5,7 +5,8 @@
 
 Create a Product Attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. TO DO: Add a link to the tutorial on PAttributes when it is publshed
+
+See a short demo on `how to create product attributes <https://www.orocommerce.com/media-library/create-product-attributes-families>`_, or keep reading the step-by-step guidance below.
 
 The creation of an attribute takes two steps:
 

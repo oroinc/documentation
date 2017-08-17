@@ -5,7 +5,7 @@ To edit the Tax Rule:
 
 #. Navigate to **Taxes > Tax Rules** in the main menu.
 
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
    The following page opens:
 
 .. image:: /user_guide/img/taxes/tax_rules/1Edit_TaxRules_Taxes.png

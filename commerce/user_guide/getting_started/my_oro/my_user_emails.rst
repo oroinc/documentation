@@ -7,7 +7,7 @@ To reach the **My Emails** page:
 
 1.  Navigate to your user name in the upper-right corner.
 
-2.  Click **My Emails** in the dropdown menu.
+2.  Click **My Emails** in the drop-down menu.
 
 .. image:: /user_guide/img/getting_started/emails/user_my_emails.jpg
 
@@ -71,7 +71,7 @@ Filters sort your emails based on certain criteria, such as:
 -  Mailbox
 
 To find a specific record, click on the filter and select the necessary
-search parameter from the dropdown:
+search parameter from the drop-down:
 
 .. image:: /user_guide/img/getting_started/emails/filters_dropdown.jpg
 
@@ -92,7 +92,7 @@ To save a page filtered according to the necessary criteria:
 
 4.  Give your email page a name and click **Save**.
 
-5.  The page will appear in the **Emails** grid dropdown list.
+5.  The page will appear in the **Emails** grid drop-down list.
 
 .. image:: /user_guide/img/getting_started/emails/filter.jpg
 
@@ -119,7 +119,7 @@ To compose a new email:
 
 1.  Navigate to your user name in the top right corner.
 
-2.  Click **My Emails** in the dropdown menu.
+2.  Click **My Emails** in the drop-down menu.
 
 3.  Click **Compose** in the top right corner.
 

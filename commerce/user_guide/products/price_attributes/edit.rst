@@ -1,3 +1,7 @@
+.. _doc--price-attributes--actions--edit:
+
+.. begin
+
 Edit a Price Attribute
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -5,7 +9,7 @@ To edit a price attribute:
 
 #. Navigate to **Products > Price Attributes** in the main menu.
 
-#. Hover over the |IcMore| *more actions* menu to the right of the item and click |IcEdit| to start editing its details.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| **Edit** icon to start editing its details.
 
    The following page opens:
 
@@ -16,11 +20,11 @@ To edit a price attribute:
 
 #. Modify selection of the currencies that are supported for this price attribute:
 
-   * Click on the currency to select only one of them.
+   * Click the currency to select only one of them.
 
-   * Hold *Ctrl* and click to add a currency to the selection.
+   * Hold the ``Ctrl`` key and click another currency to add it to the selection.
 
-   * Hold *Shift* and click to select a range of currencies.
+   * Hold the ``Shift`` key and click another currency to select a range of currencies.
 
 #. Click **Save**.
 

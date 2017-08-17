@@ -91,7 +91,7 @@ To change the default global currency settings:
 
 #. To change the currency sort order, click and hold the |IcReorder| **Sort** icon, and drag the currency up or down the list.
 
-#. To roll back any changes to the currency settings, click **Revert** in the upper-right corner of the page.
+#. To roll back any changes to the currency settings, click **Revert** on the top right.
 
 4. Click **Save Settings**.
 

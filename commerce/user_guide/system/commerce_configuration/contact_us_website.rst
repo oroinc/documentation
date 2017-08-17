@@ -11,7 +11,7 @@ To enable or disable the display of the form in the front store per website:
 
 
 1. Navigate to **System > Websites** in the main menu.
-2. For the necessary website, hover over the |IcMore| *more actions* menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Contacts** in the menu on the left.
 
 The following page opens:

@@ -5,7 +5,7 @@ To edit the Customer Tax Code value and description:
 
 #. Navigate to **Taxes > Customer Tax Codes** in the main menu.
 
-#. Hower over the |IcMore| *more actions* menu to the right of the item and click the |IcEdit| to start editing its details. 
+#. Hower over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
    The following page opens:
 
    .. image:: /user_guide/img/taxes/customer_tax_codes/FOREIGNGOVERNMENTSEditAccountTaxCodesTaxes.png

@@ -41,7 +41,7 @@ By default, prices in the OroCommerce Front Store are shown in the default curre
 .. image:: /user_guide/img/sales/price_lists/price_currency_change1.png
    :class: with-border
 
-However, you may select a different currency with a currency picker in the upper-right corner of the page.
+However, you may select a different currency with a currency picker on the top right.
 
 .. image:: /user_guide/img/system/configuration/catalog/pricing/currency_on_the_front_store.png
 
