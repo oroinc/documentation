@@ -1,5 +1,7 @@
 :orphan:
 
+.. _configuration--products:
+
 Configure Products in System Configuration
 ------------------------------------------
 
@@ -47,13 +49,30 @@ OroCommerce groups product configuration options into the following categories:
 
   * `Select a Featured Products Segment to Use Per Website`_
 
-* Related Products:
+* Related Items:
 
- * `Enable Related Products Globally`_
+  * Related Products:
 
- * `Enable Related Products per Organization`_
+    * `Enable and Set Up Related Products Globally`_
 
- * `Enable Related Products per Website`_
+    * `Enable and Set Up Related Products per Organization`_
+
+    * `Enable and Set Up Related Products per Website`_
+
+  * Up-Sell Products:
+
+    * `Enable and Set Up Up-Sell Products Globally`_
+
+    * `Enable and Set Up Up-Sell Products per Organization`_
+
+    * `Enable and Set Up Up-Sell Products per Website`_
+
+.. uncomment for DOC-145:
+
+..  To configure Cross-Sell Products:
+    * `Enable and Set Up Cross-Sell Products Globally`_
+    * `Enable and Set Up Cross-Sell Products per Organization`_
+    * `Enable and Set Up Cross-Sell Products per Website`_
 
 Product Units
 ^^^^^^^^^^^^^
@@ -178,26 +197,23 @@ Select a Featured Products Segment to Use Per Website
 Related Products
 ^^^^^^^^^^^^^^^^
 
-Enable Related Products Globally
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /user_guide/products/configuration/related_products/index.rst
+   :start-after: begin_related_products_configuration
+   :end-before: finish_related_products_configuration
 
-.. include:: /user_guide/products/configuration/global_related_products.rst
-   :start-after: begin_related_products_body
-   :end-before: finish_related_products_body
+Upsell Items
+^^^^^^^^^^^^
 
-Enable Related Products per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /user_guide/products/configuration/upsell_items/index.rst
+   :start-after: begin_upsell_items_configuration
+   :end-before: finish_upsell_items_configuration
 
-.. include:: /user_guide/products/configuration/organization_related_products.rst
-   :start-after: begin_related_products_body
-   :end-before: finish_related_products_body
+.. uncomment for DOC-145
 
-Enable Related Products per Website
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: /user_guide/products/configuration/website_related_products.rst
-   :start-after: begin_related_products_body
-   :end-before: finish_related_products_body
+.. Cross-Sell Items^^^^^^^^^^^^^^^^
+   include:: /user_guide/products/configuration/cross_sell_items/index.rst
+   :start-after: begin_cross_sell_items_configuration
+   :end-before: finish_cross_sell_items_configuration
 
 
 .. finish_configuration
@@ -238,8 +254,10 @@ Enable Related Products per Website
 
    website_featured_products
 
-   global_related_products
+   related_products/index
 
-   organization_related_products
+   upsell_items/index
 
-   website_related_products
+.. uncomment for DOC-145
+
+.. cross_sell_items/index

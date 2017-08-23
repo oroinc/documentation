@@ -1,15 +1,15 @@
 :orphan:
 
-.. _sys--users--organization--commerce--catalog--related-products:
+.. _sys--users--organization--commerce--catalog--upsell-products:
 
-Enable Related Products per Organization
-----------------------------------------
+Enable and Set Up Up-Sell Products per Organization
+---------------------------------------------------
 
-.. begin_related_products_body
+.. begin_upsell_items_body
 
-.. include:: /user_guide/products/configuration/global_related_products.rst
-   :start-after: begin_related_products_definition
-   :end-before: finish_related_products_definition
+.. include:: /user_guide/products/configuration/upsell_items/global_upsell_items.rst
+   :start-after: begin_upsell_items_definition
+   :end-before: finish_upsell_items_definition
 
 To update the related products settings per organization:
 
@@ -22,9 +22,9 @@ To update the related products settings per organization:
    .. image:: /user_guide/img/products/products/RelatedProductsOrg.png
       :class: with-border
 
-   .. include:: /user_guide/products/configuration/global_related_products.rst
-      :start-after: begin_related_products_option_description
-      :end-before: finish_related_products_option_description
+   .. include:: /user_guide/products/configuration/upsell_items/global_upsell_items.rst
+      :start-after: begin_upsell_items_option_description
+      :end-before: finish_upsell_items_option_description
 
 4. To customize any of these options:
 
@@ -33,7 +33,7 @@ To update the related products settings per organization:
 
 5. Click **Save**.
 
-.. finish_related_products_body
+.. finish_upsell_items_body
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

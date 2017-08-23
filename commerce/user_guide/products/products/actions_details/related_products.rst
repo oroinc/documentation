@@ -5,7 +5,7 @@
 Manage Related Products
 -----------------------
 
-Once the core product information is save, you may configure related products to show in the **Related Items** in the product details.
+Once the core product information is saved, you may configure related products to show in the **Related Items** section in the product details in the management console, and in the **Related Products** section next to the product details in the front store.
 
 To add related products to the product information:
 
@@ -13,7 +13,7 @@ To add related products to the product information:
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| **View** icon to preview its details.
 #. Navigate to the **Related Items** section and click the |IcEdit| **Quick Edit** link in the section header.
 
-   The Related Items page appears.
+   The **Related Items** page appears with the **Related Products** tab open by default.
 
 #. Click **Select Related Products**.
 
@@ -37,21 +37,21 @@ Configure related products globally, per website and organization.
 Enable Related Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/products/configuration/global_related_products.rst
+.. include:: /user_guide/products/configuration/related_products/global_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/products/configuration/organization_related_products.rst
+.. include:: /user_guide/products/configuration/related_products/organization_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/products/configuration/website_related_products.rst
+.. include:: /user_guide/products/configuration/related_products/website_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 

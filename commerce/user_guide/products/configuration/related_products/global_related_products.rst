@@ -2,20 +2,18 @@
 
 .. _sys--commerce--catalog--relate-products:
 
-Enable Related Products Globally
---------------------------------
+Enable and Set Up Related Products Globally
+-------------------------------------------
 
 .. begin_related_products_body
 
 .. begin_related_products_definition
 
-Related items listed for the product may include accessories, services, and other items that are likely to be purchased in the same order.  They help navigation through the product catalog in the management console.
-
-.. TODO update when they get to the front store
+Related products listed for the product may include accessories, services, and other items that are likely to be purchased in the same order. They facilitate navigation through the product catalog in the management console and help a buyer find the other products they may be interested in buying.
 
 In the system configuration, you can:
 
-* Enable and disable related item management for the products.
+* Enable and disable related product management for the products.
 * Control the type of the relationship (one-way or bidirectional).
 * Limit the number of items displayed as related.
 
@@ -35,17 +33,17 @@ To update the related products settings globally:
 
    .. begin_related_products_option_description
 
-   The following options are available:
+   In the **Related Products** section, the following options are available:
 
-   * **Enable Related Products** --- Toggles managing related items on/off. Enabled by default.
+   * **Enable Related Products** --- Toggles managing related products on/off. Enabled by default.
    * **Assign in Both Directions** --- When enabled, the products become mutually related. For example, when you add a lightning bulb as a related product for a standing lamp, the relation works both ways and the lamp automatically becomes related item of the lightning bulb. This option is disabled by default.
-   * **Maximum Number Of Assigned Items** --- A limit of related items that may be added to any product.
-   * **Maximum Items** --- A limit of related products that are shown to the buyer.
+   * **Maximum Number Of Assigned Items** --- A limit of related products that may be added to any product.
+   * **Maximum Items** --- A limit of related products that are shown to a buyer.
 
-     .. note:: Some related items may be hidden by the visibility settings. If the list of related products still exceeds the limit, only the specified number of items (top of the list) will be shown.
+     .. note:: Some related products may be hidden by the visibility settings. If the list of related products still exceeds the limit, only the specified number of items (top of the list) will be shown.
 
    * **Minimum Items** --- The minimum number of related products that may be shown to the buyer. If the actual number of products is less than this value, the related products section is hidden in the front store for the product.
-   * **Show Add Button** --- Enables a buyer to order the related product from the related products section in the main product details. When disabled, a buyer needs to open the related product information before they can add it to the shopping list.
+   * **Show Add Button** --- Enables a buyer to order a related product from the related products section in the main product details. When the option is disabled, a buyer needs to open the related product details before they can add it to the shopping list.
 
      **Show Add Button is Enabled**
 

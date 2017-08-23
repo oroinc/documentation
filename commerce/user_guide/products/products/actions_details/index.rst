@@ -27,6 +27,12 @@ This section contains detailed information about the actions related to the prod
 
    related_products
 
+   upsell_items
+
+.. uncomment for DOC-145:
+
+..   cross_sell_items
+
 .. manage_product_taxation
 
 See more information on :ref:`managing products <doc--products>`.

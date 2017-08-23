@@ -2,12 +2,12 @@
 
 .. _sys--websites--commerce--catalog--related-products:
 
-Enable Related Products per Website
------------------------------------
+Enable and Set Up Related Products per Website
+----------------------------------------------
 
 .. begin_related_products_body
 
-.. include:: /user_guide/products/configuration/global_related_products.rst
+.. include:: /user_guide/products/configuration/related_products/global_related_products.rst
    :start-after: begin_related_products_definition
    :end-before: finish_related_products_definition
 
@@ -22,7 +22,7 @@ To update the related products settings per website:
    .. image:: /user_guide/img/products/products/RelatedProductsWebsite.png
       :class: with-border
 
-   .. include:: /user_guide/products/configuration/global_related_products.rst
+   .. include:: /user_guide/products/configuration/related_products/global_related_products.rst
       :start-after: begin_related_products_option_description
       :end-before: finish_related_products_option_description
 

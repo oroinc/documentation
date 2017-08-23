@@ -24,7 +24,16 @@ Ensure that you have configured:
 * :ref:`Price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g. MRSP) that may be used in the rule-based price lists to calculate the price for the buyer.
 * New arrivals flag (:ref:`globally <sys--commerce--product--new-arrivals>`, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>`, and :ref:`per website <sys--websites--commerce--products--new-arrivals>`) --- to highlight the new products in your web catalog.
 * Featured products segment (:ref:`globally <sys--commerce--product--featured-products>`, :ref:`per organization <sys--users--organization--commerce--products--featured-products>`, and :ref:`per website <sys--websites--commerce--products--featured-products>`) -- to store the selected products that are displayed on the crowded paths of you website.
-* Related products (:ref:`globally <sys--commerce--catalog--relate-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--related-products>`, and :ref:`per website <sys--websites--commerce--catalog--related-products>`) --- to bind similar products or those that compliment each other, like the item and its accessories.
+
+* Related items configuration:
+
+  * Related products (:ref:`globally <sys--commerce--catalog--relate-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--related-products>`, and :ref:`per website <sys--websites--commerce--catalog--related-products>`) --- to bind similar products or those that complement each other, like the item and its accessories.
+
+  * Up-sell products (:ref:`globally <sys--commerce--catalog--upsell-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--upsell-products>`, and :ref:`per website <sys--websites--commerce--catalog--upsell-products>`) --- to bind products that should be promoted with the product being viewed, like more expensive alternatives of the model, upgrade options, additional parts.
+
+.. uncomment in DOC-145: Cross-sell products (:ref:`globally <sys--commerce--catalog--cross-sell-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--cross-sell-products>`, and :ref:`per website <sys--websites--commerce--catalog--cross-sell-products>`) --- to bind products that may replace each other, like other brands or similar models.
+
+See the reference of :ref:`Product-Related Settings in System Configuration <configuration--products>`.
 
 .. finish_product_configuration
 
@@ -67,13 +76,6 @@ Once you have created all the required products, you can:
 
 * :ref:`Export existing products <doc--products--actions--export>`
 
-.. Some
-   * View a Product List
-   * :ref:`View Product Information <doc--products--actions--view>`
-   * :ref:`Delete a Product <doc--products--actions--delete>`
-   * :ref:`Duplicate a Product <doc--products--actions--duplicate>`
-   * :ref:`Edit a Product <doc--products--actions--edit>`
-
 Simplify Purchase Choices and Increase Sales
 --------------------------------------------
 
@@ -89,9 +91,11 @@ Simplify Purchase Choices and Increase Sales
 
 * :ref:`Manage Related Products <products--related-products>`
 
-* Up-sell Products
+* :ref:`Manage Up-Sell Products <products--upsell-items>`
 
-* Cross-Sell Products
+.. uncomment in DOC-145:
+
+.. ref:`Manage Cross-Sell Products <products--cross-sell-items>`
 
 .. **Related Topics**
 

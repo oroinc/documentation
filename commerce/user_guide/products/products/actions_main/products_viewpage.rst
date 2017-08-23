@@ -1,4 +1,4 @@
-   :orphan:
+:orphan:
 
 .. begin_product_details_view
 
