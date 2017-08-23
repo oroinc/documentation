@@ -3,7 +3,7 @@
 Configuring Website Routing and Sitemaps Generation
 ---------------------------------------------------
 
-..  begin
+.. begin_zero
 
 OroCommerce groups website configuration options into the following categories:
 
@@ -15,11 +15,19 @@ OroCommerce groups website configuration options into the following categories:
 
 * `Sitemap Configuration Per Website`_
 
+.. finish_zero
+
+..  begin_one
+
 Global Routing Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /seo_config_guide/website/configuration/global_routing.rst
    :start-after: begin
+
+.. finish_one
+
+.. begin_two
 
 Routing Configuration Per Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,12 +36,19 @@ Routing Configuration Per Website
    :start-after: begin
    :end-before: finish
 
+.. finish_two
+
+.. begin_three
 
 Global Sitemap Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /seo_config_guide/website/configuration/global_sitemap.rst
    :start-after: begin
+
+.. finish_three
+
+.. begin_four
 
 Sitemap Configuration Per Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -42,5 +57,18 @@ Sitemap Configuration Per Website
    :start-after: begin
    :end-before: finish
 
+.. finish_four
+
+.. finish
+
 .. include:: /user_guide/include_images.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   global_routing
+   website_routing
+   global_sitemap
+   website_sitemap

@@ -20,12 +20,12 @@ This guide describes how to create and modify the fields.
 
 
 Actions
---------
+-------
 
 .. _doc-entity-fields-create:
 
 Create a Custom Entity Field
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. In the main menu, navigate **System>Entities>Entities Management**.
 
@@ -33,17 +33,17 @@ Create a Custom Entity Field
 
 3. On the entity view page, click the :guilabel:`Create Field` button in the upper-right corner of the page. 
 
-4. Specify information for the basic entity field properties. See the descriptions of the basic properties in the `Basic Entity Field Properties <./entity-field-properties#basic-entity-field-properties>`__ section. 
+4. Specify information for the basic entity field properties. See the descriptions of the basic properties in the :ref:`Basic Entity Field Properties <doc-entity-field-properties-basic>` section.
 
    .. image:: /user_guide/img/admin/entity_management/new_entity_field.png
 
 5. Click :guilabel:`Continue` button. Depending on what has been selected for **Type**, the corresponding additional fields appear.
 
-6. Specify information for additional properties. See the descriptions of the basic properties in the `Advanced Entity Field Properties <./entity-field-properties#advanced-entity-field-properties>`__ section.
+6. Specify information for additional properties. See the descriptions of the basic properties in the :ref:`Advanced Entity Field Properties <doc-entity-field-properties-advanced>` section.
 
 7. Click **Save** in the upper-right corner of the page. 
 
-8. After that, you may require to update the schema. For how to do it, see the `Update Schema <./entity-actions#update-schema>`__ section. 
+8. After that, you may require to update the schema. For how to do it, see the :ref:`Update Schema <schema-update>` section.
 
 
 Edit a Custom Entity Field
@@ -64,7 +64,7 @@ Edit a Custom Entity Field
 
 6. Click **Save** in the upper-right corner of the page. 
 
-7. After that, you may require to update the schema. For how to do it, see the `Update Schema <./entity-actions#update-schema>`__ section. 
+7. After that, you may require to update the schema. For how to do it, see the :ref:`Update Schema <schema-update>` section.
 
 
 Alternatively, you can start editing an entity field from the entity view page by clicking the |IcEdit| **Edit** icon at the right end of the corresponding row.

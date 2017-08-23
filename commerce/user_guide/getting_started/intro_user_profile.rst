@@ -8,7 +8,7 @@ View and Set up Your User Profile
 Access Your User Page
 ---------------------
 
-After you `log into <intro_log_in>`_ the OroCommerce, you can always find a link to your user page in the drop-down menu that resides below your username in the top right corner. This is a fast way to access your user profile, calendar, mailbox, and task list.
+After you :ref:`log into <user-guide-intro-log-in-edit-profile>` the OroCommerce, you can always find a link to your user page in the drop-down menu that resides below your username in the top right corner. This is a fast way to access your user profile, calendar, mailbox, and task list.
 
 The following subsection is devoted to the user page that is available with **My User** menu. You can find more information about other menu items in the :ref:`User Menu <user-guide-getting-started-user-menu>` section.
 
@@ -48,13 +48,13 @@ If there is a task assigned to you, they will be displayed in corresponding grid
 
 .. image:: /user_guide/img/getting_started/intro/user_view_additional.png
 
-Actions Available From the My User Page
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Actions Available From My User Page
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Use Action Buttons
 """"""""""""""""""
 
-Action buttons are available in the top left corner of **My User** page. The set of buttons depends on your organization settings and user permissions. These are the same actions that you can perform in the system with regard to other users. Most of the actions is described in the `Productivity Tools section <../commonActions>`_.
+Action buttons are available in the top left corner of **My User** page. The set of buttons depends on your organization settings and user permissions. These are the same actions that you can perform in the system with regard to other users. Most of the actions is described in the :ref:`Productivity Tools section <user-guide-productivity-tools>`.
 
 .. image:: /user_guide/img/getting_started/intro/user_view_actions.png
 

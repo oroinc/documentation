@@ -81,6 +81,7 @@ Inventory Statuses Only
 
    warehouses/index
 
+
 .. comment
     * Inventory
       * Semi-done Overview

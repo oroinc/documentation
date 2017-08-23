@@ -9,6 +9,8 @@ Entity Field Properties
 
 The creation of an entity field takes two steps. In step 1, you specify just the very basic properties: name, field type and field storage type. In step 2, you specify more advanced properties, some of which can be field-type-related.
 
+.. _doc-entity-field-properties-basic:
+
 Basic Entity Field Properties
 -----------------------------
 
@@ -31,14 +33,14 @@ General Information Section
   "**Storage Type**","Mandatory. Select how the field is stored in the system. There are two options:
 
   - **Serialized field**—Use this storage type for simple fields that keep information necessary for 
-    a single entity. The field will appear in the system as soon as it has been added and no :ref:`schema update <schema update>` is required. 
+    a single entity. The field will appear in the system as soon as it has been added and no :ref:`schema update <schema-update>` is required.
   
     .. important:: 
       Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, report and chart generation, data audit, creation of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
   
       Serialized fields cannot be used for files, multi-selects or option sets.
   
-  - **Table column**—Store field values to a database table. If this option is selected, the field can be used without the limitations applicable to a serialized field. For this type of fields a :ref:`schema update <schema update>` is required.
+  - **Table column**—Store field values to a database table. If this option is selected, the field can be used without the limitations applicable to a serialized field. For this type of fields a :ref:`schema update <schema-update>` is required.
   "
   "**Type**","Mandatory. Select a field type from the list.
   
@@ -89,7 +91,7 @@ General Information Section
   For the help on selection the field that is right for your purposes, see the `Entity Field Types <./entity-fields-types>`__ guide. 
   "
   
-
+.. _doc-entity-field-properties-advanced:
 
 
 Advanced Entity Field Properties

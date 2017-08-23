@@ -1,3 +1,5 @@
+.. _user-guide--inventory--warehouse--create:
+
 Create a Warehouse
 ------------------
 

@@ -9,7 +9,7 @@ To start using Authorize.Net with the OroCommerce application, complete the foll
 
 1. Sign up for the Authorize.Net service and configure it.
 
-   To set up an account in USD or CAD, sign up for the service at `www.authorize.net <www.authorize.net>`__. If you would like your account to operate in another currency, use one of the local Authorize.Net websites (see `Authorize.Net Support <https://support.authorize.net/authkb/index?page=content&id=A414>`__).
+   To set up an account in USD or CAD, sign up for the service at `www.authorize.net <http://www.authorize.net>`__. If you would like your account to operate in another currency, use one of the local Authorize.Net websites (see `Authorize.Net Support <https://support.authorize.net/authkb/index?page=content&id=A414>`__).
 
    .. important:: Authorize.Net can process payments in different currencies, however, it does not offer multi-currency accounts. Therefore, you need to create a separate gateway account with Authorize.Net and separate integration in OroCommerce for every currency you would like to accept payments in.
 

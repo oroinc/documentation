@@ -1,3 +1,4 @@
+
 :orphan:
 
 .. _user-guide-intro-log-in-edit-profile:
@@ -40,4 +41,4 @@ OroCommerce can be set up to accept your existing corporate login and password. 
 `View and edit your User Profile <intro_user_profile>`_, including your personal and contact information, API Key, and password.
 
 .. include:: section_toc.rst
-    :start-after: begin
+   :start-after: begin

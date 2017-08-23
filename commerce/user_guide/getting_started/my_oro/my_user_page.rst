@@ -185,7 +185,9 @@ You can delete a phone activity. To do this, click the |IcDelete| **Delete** ico
 
 
 
-For a phone activity, you can immediately start a call via Google Hangouts if such functionality is enabled. To do this, point to the specified phone number and click the **Hangouts** icon next to it. For how to enable Google Hangouts functionality, see the `Voice and Video Calls via Hangouts <../integrations/hangouts>`__ guide.
+For a phone activity, you can immediately start a call via Google Hangouts if such functionality is enabled. To do this, point to the specified phone number and click the **Hangouts** icon next to it.
+
+.. For how to enable Google Hangouts functionality, see the `Voice and Video Calls via Hangouts <../integrations/hangouts>`__ guide.
 
 
 

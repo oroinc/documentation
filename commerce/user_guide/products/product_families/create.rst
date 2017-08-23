@@ -28,6 +28,11 @@ Default Product Family may not be enough to cover all your needs. To create a ne
 
 6. Once you are happy with the product attribute organization, click **Save**.
 
+.. finish_include
+
+.. _product--product-families--product-attribute-in-families:
+
+.. begin_second_include
 
 Use Product Attributes in Product Families
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -101,4 +106,5 @@ To remove existing aproduct attribute group:
 
 4. Once you are done with the product attribute organization, click **Save**.
   
-.. finish_include
+
+.. finish_second_include

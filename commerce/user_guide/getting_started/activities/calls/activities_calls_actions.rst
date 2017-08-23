@@ -11,7 +11,7 @@ Manage Call Logs
 Export Call Logs
 ^^^^^^^^^^^^^^^^
 
-The exported file will contain all call record fields marked for export in the **Call** entity settings. For more information about configuring fields for export, see the `Entity Fields <../../admin-guide/entities/entity-fields>`__ guide.
+The exported file will contain all call record fields marked for export in the **Call** entity settings. For more information about configuring fields for export, see the :ref:`Entity Fields <doc-entity-fields-create>` guide.
 
 .. note::
 	All existing call records are exported at once.

@@ -18,7 +18,9 @@ On the upper-left of the page, you can see the name of the selected grid view. T
 
 In the upper-right part of the page, you can see the :guilabel:`Create Task` action button. Click it to add a new task. See the :ref:`Add a Task <doc-activities-tasks-actions-add>` action descriptions.
 
-The other grid controls are common for all grids in the application. See the :ref:`Grids <doc-grids>` guide for more information on grids.
+The other grid controls are common for all grids in the application.
+
+.. See the :ref:`Grids <doc-grids>` guide for more information on grids.
 
 
 .. _doc-activities-tasks-grid--grid:
@@ -60,7 +62,7 @@ To view a task, you can also click the corresponding row itself.
 
 .. image:: /user_guide/img/getting_started/activities/tasks/activities_tasks_grid_actions.png
 
-You can also perform :ref:`inline editing <doc-grids-actions-records-edit-inline>` to change one or more task details directly from the grid.
+You can also perform inline editing to change one or more task details directly from the grid.
 
 See the action descriptions:
 

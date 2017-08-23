@@ -26,7 +26,7 @@ In Customer Users section, you can:
 * Enable and disable the customer.
 * Reset the customer user password.
 
-.. note:: You can delegate this function to the customer who will access user and role management in the OroCommmerce front store (see `Delegating Users and Role Management to the Customer section <./../user-guide/customers/delegate>`_ for more information).
+.. note:: You can delegate this function to the customer who will access user and role management in the OroCommerce front store (see :ref:`Delegating Users and Role Management to the Customer section <user-guide--customers--customer-user-delegate>` for more information).
 
 **Customer Account Confirmation**
 

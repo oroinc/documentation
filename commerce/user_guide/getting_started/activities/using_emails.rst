@@ -172,11 +172,11 @@ To create an email template:
 
 -  To save the template, click **Save and Close**.
 
-The following actions are available for an email template from the :ref:`grid <doc-grids>`:
+The following actions are available for an email template from the list:
 
 -  Delete the template from the system: |IcDelete|
 
--  Get to the :ref:`edit <user-guide-ui-components-create-pages>` form of the template: |IcEdit|
+-  Get to the edit <user-guide-ui-components-create-pages form of the template: |IcEdit|
 
 -  Clone the template: |IcClone|
 

@@ -1,7 +1,7 @@
-Create a Customer Users
-~~~~~~~~~~~~~~~~~~~~~~~
+Create a Customer User
+~~~~~~~~~~~~~~~~~~~~~~
 
-To create a new Customer:
+To create a new customer:
 
 #. Navigate to **Customers > Customer Users** in the main menu.
 
@@ -24,11 +24,11 @@ To create a new Customer:
 
 #. Select the **Generate Password** and **Send Welcome Email** check boxes.
 
-#. Select the website the customer user will be redirected to upon the login. See `Managing Websites <./../../system/websites>`_ for more information.
+#. Select the website the customer user will be redirected to upon the login. See :ref:`Managing Websites <user-guide--system-websites>` for more information.
 
-#. Add billing and shipping address as described in `Address Book section <./../common_actions/manage-address-book>`_.
+#. Add billing and shipping address as described in `:ref: the Address Book section <user-guide--getting-started--address-book>`.
 
-#. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See `Managing Customer User Roles <./customer_user_roles>`_ for more information.
+#. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See :ref:`Managing Customer User Roles <user-guide--customers--customer-user-roles-overview>` for more information.
 
    .. important:: At least one role must be assigned if the **Enabled** check box is selected. Disabled customer users can be saved without roles, but you will need to assign roles to the them later before enabling.
 

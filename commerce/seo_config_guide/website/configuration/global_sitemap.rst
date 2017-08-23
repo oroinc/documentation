@@ -29,3 +29,4 @@ To change the default global sitemap settings:
      b) Select the new option.
 
 4. Click **Save**.
+

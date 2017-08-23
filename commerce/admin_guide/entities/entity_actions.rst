@@ -203,7 +203,7 @@ Create an Entity
 
 
 Review an Entity
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 1. In the main menu, navigate **System>Entities>Entity Management**.
 
@@ -213,7 +213,7 @@ Review an Entity
    
 
 Create a Field
-^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^
 
 .. important::
    You can add custom fields only for custom entities and extendable system entities.  
@@ -224,7 +224,7 @@ To create a field, follow the instructions provided in the `Create a Custom Enti
 
 
 Import Fields
-^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 To simplify creation of entity fields, you can create a .csv file that will contain all the required fields with their properties defined and import it into OroCRM/OroCommerce.
 
@@ -252,10 +252,10 @@ To simplify creation of entity fields, you can create a .csv file that will cont
 8. Update the schema to apply the changes. For how to do it, see the `Update Schema <./entity-actions#update-schema>`__ section. 
   
 
-.. _schema update:
+.. _schema-update:
 
 Update Schema
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
 
 Once you have defined the necessary entities and their fields, you need to update the schema—the internal structure so that the system could know how the existing fields are interconnected and where to find them.
 

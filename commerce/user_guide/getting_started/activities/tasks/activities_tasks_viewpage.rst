@@ -63,7 +63,7 @@ Available options depend on the current status of the task. The following table 
 
 For status descriptions, see the :ref:`Task Statuses <doc-activities-tasks-statuses>` section.
 
-For information on workflows, see the :ref:`Following a Workflow <user-guide-workflow-management-basics>` guide.
+
 
 .. _doc-activities-tasks-view-page-general:
 

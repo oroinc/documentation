@@ -20,8 +20,8 @@ Product Attributes
 
 **Related topics**
 
-* `Using product attributes in product families </user_guide/products/ProductFamilies#using-product-attributes-in-product-families>`_
-* `Binding a Product to a Product Family </user_guide/products/products/create#binding-a-product-to-a-product-family>`_
+* :ref:`Using product attributes in product families <product--product-families--product-attribute-in-families>`
+* :ref:`Binding a Product to a Product Family <user-guide--product--product--bind-to-family>`
 
 .. finish
 

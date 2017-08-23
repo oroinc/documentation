@@ -102,9 +102,9 @@ View and Manage Cases
 
   - Delete the case: |IcDelete|
 
-  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the case: |IcEdit|
+  - Get to the edit form of the case: |IcEdit|
 
-  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the case:  |IcView|
+  - Get to the case page:  |IcView|
 
 .. note::
 

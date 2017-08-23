@@ -17,6 +17,11 @@ In this section you will learn how to:
    :start-after: begin_include
    :end-before: finish_include
 
+.. include:: /user_guide/products/product_families/create.rst
+   :start-after: begin_second_include
+   :end-before: finish_second_include
+
+
 .. include:: /user_guide/products/product_families/view.rst
    :start-after: begin_include
    :end-before: finish_include

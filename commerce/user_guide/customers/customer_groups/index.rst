@@ -1,3 +1,6 @@
+
+.. _user-guide--customer-groups:
+
 Customer Groups
 ---------------
 

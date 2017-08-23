@@ -43,7 +43,7 @@ Menu Configuration Levels
 Menu Management
 ~~~~~~~~~~~~~~~
 
-On various `configuration levels <doc--menu-config-levels>`_, the menu and frontend menu list looks the same and the flow for customizing any menu is similar.
+On various :ref:`configuration levels <doc--menu-config-levels>`, the menu and frontend menu list looks the same and the flow for customizing any menu is similar.
 
 On the menu list you can see the menus available for review or customization.
 

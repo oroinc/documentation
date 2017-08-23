@@ -3,7 +3,7 @@ Configuring Warehouses
 
 .. begin
 
-After you `created the warehouse </user_guide/inventory/warehouses/create>`_ in the **Inventory > Warehouses** section, you should enable and prioritize them to ensure that OroCommerce uses the most efficient and recommended strategy for inventory updates that happen during the Store operations.
+After you :ref:`created the warehouse <user-guide--inventory--warehouse--create>` in the **Inventory > Warehouses** section, you should enable and prioritize them to ensure that OroCommerce uses the most efficient and recommended strategy for inventory updates that happen during the Store operations.
 
 To enable and prioritize warehouses:
 
