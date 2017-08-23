@@ -37,7 +37,7 @@ To create a payment rule:
 
    #) Select **Stop Further Rule Processing** if you would like to prevent applying other payment rules with lower priority.
 
-#. In the **Destinations** section, add one or more destinations to apply this payment rule to.
+#. In the **Destinations** section, add one or more destinations to apply this payment rule for. The payment rule applies when the billing address matches the provided destination(s). To add a destination:
 
    a) Click **+ Add**. The following section appears:
 

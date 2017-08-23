@@ -109,7 +109,7 @@ To create a shipping rule:
 
    .. image:: /user_guide/img/system/shipping_rules/shipping_rule_general.png
 
-#. If required, in the **Destinations** section, add one or more destinations to apply this shipping rule to. To add a destination:
+#. If required, in the **Destinations** section, add one or more destinations to apply this shipping rule for. The shipping rule applies when the shipping address matches the provided destination(s). To add a destination:
 
    a) Click **+ Add**. The following section appears:
 
