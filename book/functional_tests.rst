@@ -331,10 +331,11 @@ Now, you can reference the fixture by the configured name in your test:
 
 .. hint::
 
-    Sometimes you need a reference to admin organization or admin user. The following fixtures can be used to load them:
+    Sometimes you need a reference to admin organization, user or business unit. The following fixtures can be used to load them:
 
     - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadOrganization``
     - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadUser``
+    - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadBusinessUnit``
 
 
 Writing Functional Tests
