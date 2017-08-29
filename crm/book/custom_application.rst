@@ -1,8 +1,8 @@
 .. index::
     single: Platform Application; Customization
 
-Create Custom Oro Application
-=============================
+Custom Oro Application
+======================
 
 No two businesses are alike. This motto is a part of Oro products philosophy and this is why flexibility is one of
 the key principles that drive architecture in Oro. Depending on what you are planning to build, you can
@@ -16,7 +16,7 @@ Application Repository and Installation
 Before you start working on a new project, it is important to have version control system in place.
 The easiest way to start is to `fork application repository`_ of `OroPlatform`_, `OroCRM`_ or `OroCommerce`_ on GitHub.
 
-Once code repository is ready, please follow :doc:`installation </book/installation>` instructions.
+Once code repository is ready, please follow :ref:`installation <book_installation>` instructions.
 
 .. note::
 
@@ -46,16 +46,16 @@ is organized in bundles - modules that group application functionality (see `Sym
 of module structure and design).
 
 .. note::
-    Please note that Oro application has several :doc:`differences </book/differences>` compared to
+    Please note that Oro application has several :ref:`differences <book_differences>` compared to
     Symfony Standard Edition.
 
 Typically, to create a custom application you may follow the common steps:
 
 #) :doc:`Create a bundle </cookbook/how_to_create_new_bundle>`
-#) Introduce :doc:`new entity <entities>` types that represent your business data structure and add
+#) Introduce :doc:`new entity <entity_handling/entities>` types that represent your business data structure and add
    :doc:`related features </cookbook/entities/index>`
 #) :doc:`Customize </cookbook/how_to_extend_existing_bundle>` existing functionality
-   (:doc:`menu </cookbook/how_to_create_and_customize_application_menu>`, :doc:`workflow <workflow>`,
+   (:doc:`menu </cookbook/how_to_create_and_customize_application_menu>`, :doc:`workflow <data/workflow>`,
    :doc:`validation </cookbook/user_custom_validation_constraints>`,
    :doc:`existing entities </cookbook/entities/adding_properties>` etc.)
 
@@ -84,8 +84,8 @@ Oro applications are :doc:`scalable <scale_nodes>`.
 Learn more
 ----------
 
-* :doc:`installation`
-* :doc:`differences`
+* :doc:`getting_started_book/installation`
+* :doc:`getting_started_book/differences`
 * :doc:`customization`
 * :doc:`/cookbook/how_to_create_new_bundle`
 * :doc:`/cookbook/how_to_extend_existing_bundle`

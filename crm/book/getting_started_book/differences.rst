@@ -1,3 +1,5 @@
+.. _book_differences:
+
 Differences to Common Symfony Applications
 ==========================================
 
@@ -126,7 +128,7 @@ Furthermore, once an ACL has been defined, you can reuse it using the `@AclAnces
 
 .. seealso::
 
-    Read more in the :doc:`Security chapter </book/security>`.
+    Read more in the :doc:`Security chapter </book/getting_started_book/security>`.
 
 Extension Management
 --------------------

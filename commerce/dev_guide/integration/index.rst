@@ -1,3 +1,5 @@
+.. _web-services-api:
+
 Web Services API
 ================
 

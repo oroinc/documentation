@@ -1,3 +1,5 @@
+.. _search_index_db:
+
 .. index::
     single: Search
 
@@ -157,8 +159,8 @@ You can search in the index in two different ways:
 
 2. Send simple or advanced REST or SOAP requests to the search API.
 
-The Query Builder
-~~~~~~~~~~~~~~~~~
+Query Builder
+~~~~~~~~~~~~~
 
 The syntax of the search query builder is very similar to the Doctrine query
 builder:
@@ -214,8 +216,8 @@ The query builder offers several methods to modify the generated search:
 The result of such a query is a `Result object`_. It contains the original
 search request, the search results and the number of records returned.
 
-The Search API
-~~~~~~~~~~~~~~
+Search API
+~~~~~~~~~~
 
 You can query the search index remotely in two different ways: send simple
 queries which query all fields of all entities, or use a powerful query language
@@ -243,8 +245,8 @@ Both APIs return a data object with three attributes:
     ``record_string``
         The record's title
 
-The simple Search API
-^^^^^^^^^^^^^^^^^^^^^
+Simple Search API
+^^^^^^^^^^^^^^^^^
 
 The simple search API can be used to remotely search in all text fields of
 all entities. It's driven by three parameters describing a query:
@@ -265,8 +267,8 @@ being the default version. The SOAP function name is ``search``.
 
 .. _advanced-search-api:
 
-The advanced Search API
-^^^^^^^^^^^^^^^^^^^^^^^
+Advanced Search API
+^^^^^^^^^^^^^^^^^^^
 
 Instead of searching in all fields of all entities, you can use the advanced
 search API to create your own remote search queries. Each query is passed

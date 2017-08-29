@@ -46,7 +46,7 @@ It is responsible for the following things:
 .. seealso::
 
     You can find more information about Page Components in the
-    :doc:`Frontend Architecture chapter </book/frontend_architecture>` and in the
+    :doc:`Frontend Architecture chapter </book/ui/frontend_architecture>` and in the
     `Page Component documentation`_.
 
 Creating a Page Component

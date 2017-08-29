@@ -1,8 +1,8 @@
 .. index::
     single: Platform Application; Customization
 
-Customizing the Platform Application
-====================================
+Modify OroPlatform
+==================
 
 Symfony offers easy-to-use options for overriding parts of third party
 bundles in an application. Since the OroPlatform Application consists of

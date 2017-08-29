@@ -1,8 +1,10 @@
-ORO Application Scaling - Set-up Instructions
-=============================================
+.. _scalable_deployment:
 
-Introduction:
--------------
+Scalable Deployment Setup
+=========================
+
+Introduction
+------------
 
 Slow-down of the server response when application is under heavy loads may result in deterioration of the 
 user-experience and decrease of the user-satisfaction level. Therefore, we have to somehow optimize and speed-up the 
@@ -12,8 +14,8 @@ The simplest solution is to scale-up web nodes of the application. For example, 
 improve the response time twice (at certain amount of request). The article describes how to scale the web-nodes for the 
 application.
 
-Preliminary Recommendations:
-----------------------------
+Preliminary Recommendations
+---------------------------
 
 - Share the *[Application root]/app/cache* folder among all the web nodes, for example using NFS.
 
@@ -27,8 +29,8 @@ Preliminary Recommendations:
 
     The ways to share *[Application root]/app/attachment* are described in the Attachments section hereinafter. 
 
-Additional Requirements to the Bundles. Known Issues and Solutions:
--------------------------------------------------------------------
+Additional Requirements to the Bundles. Known Issues and Solutions
+------------------------------------------------------------------
 
 - **Maintenance mode**: there shouldn't be any problems with operations that require the maintenance mode, as default 
   configuration settings place the 'maintenance_lock' file in the cache directory, which is already shared among the 
@@ -66,8 +68,8 @@ If you don't want to use the extension, you can install the `Predis <https://git
     issue, install an older version or compile the extension from the master branch.
 
 
-CONFIGURATION:
---------------
+Configuration
+-------------
 
 **All the configuration changes can be done in [Application root]/app/config/{config.yml, security.yml} or inside your 
 own bundle in the app.yml file.**

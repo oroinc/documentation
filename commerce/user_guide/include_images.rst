@@ -346,7 +346,5 @@ Images
 
 .. |IcShoppingLists| raw:: html
 
-   <span class="cart-widget__icon">
-       <i class="fa-clipboard"></i>
-   </span>:orphan:
+   <i class="fa fa-clipboard" aria-hidden="true"></i>
 

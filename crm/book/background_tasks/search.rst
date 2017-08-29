@@ -1,3 +1,5 @@
+.. _search_index_db:
+
 .. index::
     single: Search
 

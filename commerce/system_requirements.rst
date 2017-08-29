@@ -111,7 +111,7 @@ Recommended and supported browsers are:
 
  * `Mozilla Firefox`_ (latest)
  * `Google Chrome`_ (latest)
- * `Microsoft Internet Explorer`_ 10 and above
+ * `Microsoft Internet Explorer`_ 11 and above
  * `Microsoft Edge`_ (latest)
  * `Safari`_ (latest)
 

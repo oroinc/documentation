@@ -13,7 +13,7 @@ The OroPlatform system configuration which is available the *System* / *Configur
 menu has a special *Localization* section that defines localization parameters.
 The user interface looks like this:
 
-.. image:: ./img/localization/system_configuration.png
+.. image:: /book/img/localization/system_configuration.png
 
 - **Locale**: defines the current system locale and is used to format date/time/datetime,
   numeric and percent values, monetary values and appropriate name formats;
