@@ -14,7 +14,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/emails`
+        * Book: :doc:`/book/emails/emails`
         * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
         * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
 
@@ -38,7 +38,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/emails`
+        * Book: :doc:`/book/emails/emails`
 
 `AnalyticsBundle`_ (OroCRM)
     Provides tools to analyze data and to visualize the analysis results.
@@ -51,7 +51,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/layout`
+        * Book: :doc:`/book/ui/layout`
 
 `AttachmentBundle`_ (OroPlatform)
     Allows to add file and image field types to extended entities.
@@ -114,7 +114,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/configuration`
+        * Book: :doc:`/book/getting_started_book/configuration`
 
 `ContactBundle`_ (OroCRM)
     Offers management functionality for customer contact data.
@@ -123,7 +123,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/emails`
+        * Book: :doc:`/book/emails/emails`
         * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
         * User guide: :doc:`/admin_guide/integrations/outlook_sync`
 
@@ -137,7 +137,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/cron`
+        * Book: :doc:`/book/background_tasks/cron`
 
 `DashboardBundle`_ (OroPlatform)
     Organize widgets that contain useful information on the user's homepage.
@@ -155,7 +155,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/data_audits`
+        * Book: :doc:`/book/data/data_audits`
 
 `DataGridBundle`_ (OroPlatform)
     UI control implementation for data grid views.
@@ -164,8 +164,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/crud`
-        * Book: :doc:`/book/reports_configuration`
+        * Book: :doc:`/book/entity_handling/crud`
+        * Book: :doc:`/book/data/reports_configuration`
         * Cookbook: :doc:`/cookbook/how_to_pass_request_parameter_to_grid`
         * Reference: :doc:`/reference/format/datagrids`
         * User guide: :doc:`/user_guide/customer_management/common_features_channels`
@@ -177,7 +177,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/installation`
+        * Book: :doc:`/book/getting_started_book/installation`
 
 `DistributionBundle`_ (OroPlatform)
     Makes it possible to automatically register bundles in the application without requiring the
@@ -190,7 +190,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/emails`
+        * Book: :doc:`/book/emails/emails`
         * User guide: :doc:`/admin_guide/user_management/user_management_users`
 
 `EmbeddedFormBundle`_ (OroPlatform)
@@ -216,9 +216,9 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
-        * Book: :doc:`/book/data_audits`
-        * Book: :doc:`/book/configuration`
-        * Book: :doc:`/book/entities`
+        * Book: :doc:`/book/data/data_audits`
+        * Book: :doc:`/book/getting_started_book/configuration`
+        * Book: :doc:`/book/entity_handling/entities`
         * Reference: :doc:`/reference/annotation/config`
         * Reference: :doc:`/reference/annotation/config_field`
         * Reference: :doc:`/reference/format/entity_config`
@@ -234,7 +234,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
-        * Book: :doc:`/book/entities`
+        * Book: :doc:`/book/entity_handling/entities`
         * User guide: :doc:`/admin_guide/entities/entities`
         * User guide: :doc:`/admin_guide/entities/entity_fields`
 
@@ -277,7 +277,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/importexport`
+        * Book: :doc:`/book/background_tasks/importexport`
         * Cookbook: :doc:`/cookbook/how_to_accelerate_import`
         * User guide: :doc:`/user_guide/records/data_management_import_export`
 
@@ -288,7 +288,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/installation`
+        * Book: :doc:`/book/getting_started_book/installation`
 
 `IntegrationBundle`_ (OroPlatform)
     Contains the abstracted logic to connect OroPlatform and OroCRM with third-party services
@@ -308,7 +308,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/localization`
+        * Book: :doc:`/book/getting_started_book/localization`
 
 `MagentoBundle`_ (OroCRM)
     Provides integration with the Magento e-commerce solution.
@@ -338,7 +338,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/jobs`
+        * Book: :doc:`/book/background_tasks/jobs`
 
 `MigrationBundle`_ (OroPlatform)
     Allows to version the application's database.
@@ -348,7 +348,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
-        * Book: :doc:`/book/entities`
+        * Book: :doc:`/book/entity_handling/entities`
         * User guide: :doc:`/admin_guide/entities/entities`
 
 `NavigationBundle`_ (OroPlatform)
@@ -358,9 +358,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/navigation`
-        * Book: :doc:`/book/crud`
-        * Book: :doc:`/book/reports_configuration`
+        * Book: :doc:`/book/getting_started_book/navigation`
+        * Book: :doc:`/book/entity_handling/crud`
+        * Book: :doc:`/book/data/reports_configuration`
         * Cookbook: :doc:`/cookbook/how_to_create_and_customize_application_menu`
         * Reference: :doc:`/reference/annotation/title_template`
         * Reference: :doc:`/reference/format/navigation`
@@ -399,7 +399,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/reports_configuration`
+        * Book: :doc:`/book/data/reports_configuration`
         * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/business_customers`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/leads`
@@ -414,8 +414,8 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/book/customization`
-        * Book: :doc:`/book/frontend_architecture`
-        * Book: :doc:`/book/javascript_modularity`
+        * Book: :doc:`/book/ui/frontend_architecture`
+        * Book: :doc:`/book/ui/javascript_modularity`
         * Cookbook: :doc:`/cookbook/how_to_create_global_js_component`
         * Cookbook: :doc:`/cookbook/how_to_replace_inline-javascript_with_component`
         * Reference: :doc:`/reference/format/requirejs`
@@ -436,7 +436,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/search`
+        * Book: :doc:`/book/background_tasks/search`
 
 `SecurityBundle`_ (OroPlatform)
     A flexible security model which allows to protect data integrity and privacy.
@@ -445,7 +445,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/security`
+        * Book: :doc:`/book/getting_started_book/security`
         * Reference: :doc:`/reference/annotation/acl`
         * Reference: :doc:`/reference/annotation/acl_ancestor`
         * Reference: :doc:`/reference/format/acls`
@@ -466,7 +466,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/crud`
+        * Book: :doc:`/book/entity_handling/crud`
 
 `SyncBundle`_ (OroPlatform)
     Supports websocket communications based on the `JDareClankBundle`_.
@@ -499,7 +499,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/layout`
+        * Book: :doc:`/book/ui/layout`
 
 `TrackingBundle`_ (OroPlatform)
     Provides the main data structure for web trackings and proxies tracking data to Piwik (if
@@ -518,7 +518,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/localization`
+        * Book: :doc:`/book/getting_started_book/localization`
         * Book: :doc:`/book/customization`
 
 `UIBundle`_ (OroPlatform)
@@ -528,9 +528,9 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/crud`
+        * Book: :doc:`/book/entity_handling/crud`
         * Book: :doc:`/book/customization`
-        * Book: :doc:`/book/frontend_architecture`
+        * Book: :doc:`/book/ui/frontend_architecture`
         * Cookbook: :doc:`/cookbook/how_to_create_global_js_component`
         * Cookbook: :doc:`/cookbook/how_to_replace_inline-javascript_with_component`
         * Reference: :doc:`/reference/format/placeholders`
@@ -559,7 +559,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/book/workflow`
+        * Book: :doc:`/book/data/workflow`
         * Reference: :doc:`/reference/format/workflows`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/business_customers`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/leads`

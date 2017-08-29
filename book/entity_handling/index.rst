@@ -1,5 +1,5 @@
-Handling Entities
-=================
+Entities
+========
 
 .. toctree::
     :maxdepth: 2

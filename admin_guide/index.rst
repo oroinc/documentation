@@ -8,6 +8,8 @@ administrators.
 
 Please note that in many cases, the tools may be not available to the usual users, subject to the permissions defined.
 
+* :doc:`/admin_guide/op_structure/index`
+
 * :doc:`/admin_guide/app_look_feel/index`
 
   * :doc:`/admin_guide/app_look_feel/application_settings`
@@ -132,7 +134,7 @@ Please note that in many cases, the tools may be not available to the usual user
     :maxdepth: 2
     :glob:
 
-
+    op_structure/index
     app_look_feel/index
     record_mgmt_config/index
     email/index

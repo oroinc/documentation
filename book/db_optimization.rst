@@ -1,5 +1,5 @@
-Database Optimization Notes
-===========================
+Database Optimization
+=====================
 
 .. contents:: :local:
     :depth: 6

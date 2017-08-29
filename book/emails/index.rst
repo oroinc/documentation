@@ -1,5 +1,5 @@
-E-Mails
-=======
+Emails
+======
 
 .. toctree::
     :maxdepth: 2

@@ -10,7 +10,7 @@ component is the Pin Bar:
 .. seealso::
 
     You can find more information about global components and global views and learn about
-    the App Module from the :doc:`Frontend Architecture chapter </book/frontend_architecture>`
+    the App Module from the :doc:`Frontend Architecture chapter </book/ui/frontend_architecture>`
     and from the `Page Component documentation`_.
 
 
