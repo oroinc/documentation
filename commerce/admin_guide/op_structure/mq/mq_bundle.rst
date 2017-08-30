@@ -8,13 +8,13 @@ Message Queue Jobs and Transport Configuration
 Overview
 --------
 
-The OroMessageQueue bundle integrates OroMessageQueue component. It adds easy to use
-configuration layer, register services and tie them together, register CLI commands.
+The OroMessageQueue bundle integrates the OroMessageQueue component. It adds an easy to use
+configuration layer, register services and ties them together, registers CLI commands.
 
 Jobs
 ----
 
-The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq-component--jobs>`. So the jobs are created in the db and have a web gui where you can monitor jobs status and interrupt jobs.
+The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq-component--jobs>`. So the jobs are created in the db and have a web gui where you can monitor the jobs' status and interrupt jobs.
 
 Usage
 -----

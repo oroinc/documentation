@@ -3,7 +3,7 @@
 Manage Search in Oro Applications
 =================================
 
-The OroSearch bundle creates search index for entities and allows to perform search using this index.
+The OroSearch bundle creates a search index for entities and allows to perform search using this index.
 
 .. toctree::
    :maxdepth: 2

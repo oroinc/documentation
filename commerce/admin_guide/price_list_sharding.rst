@@ -23,7 +23,7 @@ However, it is recommended to enable price list sharding if you are experiencing
 Configure Price List Sharding
 -----------------------------
 
-1. To enable price list sharding, set the following paramenter in app/config/parameters.yml:
+1. To enable price list sharding, set the following parameter in app/config/parameters.yml:
 
 	``enable_price_sharding: true``
      

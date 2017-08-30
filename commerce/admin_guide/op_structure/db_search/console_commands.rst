@@ -1,16 +1,16 @@
 Console Commands
 ================
 
-OroSearchBundle provides several console commands to interact with
+OroSearchBundle provides several console commands to interact with the
 search index.
 
 oro:search:index
 ----------------
 
-This command performs indexation of specified entities. Command required
-two arguments - class name (short notation or FQCN) and list of
-identifiers (at least one is required). If specified entity exists then
-corresponding search index data will be updated, if not - index data
+This command performs indexation of the specified entities. The command requires
+two arguments - class name (short notation or FQCN) and a list of
+identifiers (at least one is required). If the specified entity exists, then the
+corresponding search index data will be updated, If it does not, index data
 will be removed. This command is used for queued indexation.
 
 Single entity indexation:
@@ -34,8 +34,8 @@ This command performs full reindexation of all entities. It has one
 optional argument that allows to reindex only entities of specified
 type.
 
-Reindexation itself might takes lots of time for big amount of data, so
-it would be good idea to run it by schedule (f.e. once a day).
+Reindexation itself might take a lot of time for a big amount of data, so
+it would be a good idea to run it by schedule (e.g once a day).
 
 All entities reindexation:
 
