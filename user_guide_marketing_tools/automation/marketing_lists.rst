@@ -147,11 +147,7 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 - Mapping buttons: As soon as OroCRM has been integrated with a third party system, to which a marketing list may be mapped, you will see :guilabel:`Connect to` buttons, with which you can, for example, map the list to :ref:`Subscribers Lists in MailChimp <user-guide-mc-integration>` or
   :ref:`Address Books in dotmailer <user-guide-dm-integration>`.
 
-  |
-  
   |MapML|
-  
-  |
 
 - See general details of the list.
 
@@ -160,7 +156,6 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 
 Marketing List Grid
 ^^^^^^^^^^^^^^^^^^^
-      |
   
 The grid contains:
 
@@ -244,4 +239,3 @@ suit your purposes.
 .. |MapML| image:: ../../img/marketing/map_ml.png
    :align: middle
 
-   

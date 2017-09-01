@@ -1,7 +1,7 @@
 .. _user-guide-commerce-integration:
 
-OroCommerce Integration 
-=======================
+CRM and Commerce Integration
+============================
 
 .. contents:: :local:
     :depth: 3
@@ -10,15 +10,15 @@ OroCommerce Integration
 Overview
 --------
 
-Integration with `OroCommerce <https://www.orocommerce.com/documentation/current/>`_ provides seamless experience of two applications working as one. 
+Integration between `OroCRM <https://www.orocrm.com>`_ and `OroCommerce <https://www.orocommerce.com>`_ provides seamless experience of two applications working as one.
 
-It is possible to install OroCommerce over existing OroCRM instance, add OroCRM to existing OroCommerce instance or instal both applications as a single package.
+It is possible to install OroCommerce over existing OroCRM instance, add OroCRM to existing OroCommerce instance or install both applications as a single package.
 
 
-Interface
----------
+Look and Feel
+-------------
 
-As the result of OroCommerce integration with OroCRM, the application menu is combined, displaying both OroCommerce and OroCRM menus.
+Oro application share the baseline and combining capabilities of multiple applications and packages does not change the overall look and feel of the system. As the result of OroCommerce integration with OroCRM, the application menu is combined, displaying both OroCommerce and OroCRM menus.
 
 |
 
