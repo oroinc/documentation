@@ -1,5 +1,7 @@
-Contributing to Translatiion
-============================
+.. _community--translation:
+
+Contributing to Translation
+===========================
 
 .. contents:: :local:
 

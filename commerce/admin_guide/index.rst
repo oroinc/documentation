@@ -13,8 +13,14 @@ This section contains information about OroCommerce configuration, administratio
    optimize_server_compression_and_caching
    price_list_sharding
    optimize_index_and_price_calculation
+   package_manager
+   processes
+   jobs
+   cron
 
-..   entities/index
+.. scheduled_tasks
+.. data_audit
+.. entities/index
 
 .. .. note:: Content is temporary unavailable due to severe maintenance works. Sorry for inconvenience.
  * Installation

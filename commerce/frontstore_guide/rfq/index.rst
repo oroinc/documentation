@@ -30,7 +30,7 @@ The RFQ table shows the following data:
 7. Step
 8. More Actions (View)
 
-Within the table you have the following :ref:`actions buttons <frontstore-guide--navigation-action-buttons>` available:
+Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.
 2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.

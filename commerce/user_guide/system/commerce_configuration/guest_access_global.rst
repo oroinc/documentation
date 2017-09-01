@@ -1,0 +1,23 @@
+:orphan:
+
+
+Enabling Global Guest Access 
+----------------------------
+
+.. begin
+
+To enable guest access globally:
+
+1. Navigate to **System > Configuration > Commerce > Guests > Website Access**.
+2. Select the **Enable Guest Access** checkbox.
+3. Click **Save Settings**.
+   
+.. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
+   
+.. image:: /user_guide/img/system/configuration/guest_access/GuestAccessSysConfig.png
+
+
+.. finish
+
+.. include:: /user_guide/include_images.rst
+   :start-after: begin

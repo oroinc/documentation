@@ -34,7 +34,7 @@ The users table shows the following data:
 
 .. image:: /frontstore_guide/img/users_roles/UsersActions.png
 
-Within the table you have the following :ref:`actions buttons <frontstore-guide--navigation-action-buttons>` available:
+Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.
 2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
@@ -213,7 +213,7 @@ With the Customer User Role you can manage the following access- and permissions
 To apply a role to a specific user:
 
 1. Scroll down to the bottom of the Edit Role page.
-2. Enable the chackbox next to the selected user.
+2. Enable the checkbox next to the selected user.
 3. Click **Save**.
 
 .. image:: /frontstore_guide/img/users_roles/RolesAllUsers.png

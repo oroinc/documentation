@@ -348,3 +348,30 @@ Images
 
    <i class="fa fa-clipboard" aria-hidden="true"></i>
 
+.. |IcSub| image:: /user_guide/img/getting_started/buttons/IcSub.png
+   :align: middle
+
+.. |IcUns| image:: /user_guide/img/getting_started/buttons/IcUns.png
+   :align: middle
+
+.. |IcRemove| image:: /user_guide/img/getting_started/buttons/IcRemove.png
+   :align: middle
+
+.. |UndoRem| image:: /user_guide/img/getting_started/buttons/UndoRem.png
+   :align: middle
+
+.. |BCrLOwnerClear| image:: /user_guide/img/getting_started/buttons/BCrLOwnerClear.png
+   :align: middle
+
+.. |BSchedule| image:: /user_guide/img/getting_started/buttons/BSchedule.png
+   :align: middle
+
+.. |IcCross| image:: /user_guide/img/getting_started/buttons/IcCross.png
+   :align: middle
+
+.. |HObutton| image:: /user_guide/img/getting_started/buttons/hangouts.png
+   :align: middle
+
+.. |InstallPack| image:: /admin_guide/img/extension/install_package.png
+   :align: middle
+

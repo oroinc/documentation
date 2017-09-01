@@ -11,7 +11,20 @@
     --border-colors: #adadad; /*#b84926;*/
 }
 
+/*floating sidebar */
+
+
+div.sidebar {
+    width: 150px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+
+
 /* -- page layout ----------------------------------------------------------- */
+
+
 
 body {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -988,7 +1001,6 @@ flex-direction: row;
 font-family: "Open Sans", Helvetica, Arial, sans-serif;
 font-size: 15px;
 font-weight: normal;
-height: 265px;
 justify-content: space-around;
 line-height: 22.5px;
 margin-bottom: 0px;

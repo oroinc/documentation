@@ -3,9 +3,8 @@
 Embedded Forms
 ==============
 
-The OroCRM's *"Embedded Forms"* functionality provides for the creation of the code to add to a third-party web-site in 
-order to provide the communication between the site users and the OroCRM team. 
-These may be a request of marketing, technical, commercial or any other nature.
+In Oro application, **Embedded Forms** help create the code that may be added to a third-party website to enable communication between the third-party website users and the Oro application.
+Embedded forms may be used to collect requests of marketing, technical, commercial or any other nature.
 
 The fields of an embedded form depend on its type. 
 

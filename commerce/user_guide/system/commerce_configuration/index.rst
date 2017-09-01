@@ -1,42 +1,42 @@
 .. _sys--conf:
 
-General OroCommerce Configuration
-=================================
+General Oro Commerce Configuration
+==================================
 
 This section contains information on the system configuration options specific for OroCommerce.
 
 .. toctree::
    :maxdepth: 1
 
-   ../../customers/configuration/global_customer_users
+   /user_guide/customers/configuration/global_customer_users
 
-   ../../customers/configuration/website_customer_users
+   /user_guide/customers/configuration/website_customer_users
 
-   ../../customers/configuration/organization_customer_users
+   /user_guide/customers/configuration/organization_customer_users
 
-   ../../customers/configuration/visibility
+   /user_guide/customers/configuration/visibility
 
-   ../../inventory/configuration/statuses.rst
+   /user_guide/inventory/configuration/statuses.rst
 
-   ../../inventory/configuration/options.rst
+   /user_guide/inventory/configuration/options.rst
 
-   ../../inventory/configuration/warehouses.rst
+   /user_guide/inventory/configuration/warehouses.rst
 
-   ../../inventory/configuration/limitations.rst
+   /user_guide/inventory/configuration/limitations.rst
 
-   ../../pricing/configuration/global_currency.rst
+   /user_guide/pricing/configuration/global_currency.rst
 
-   ../../pricing/configuration/global_pricing.rst
+   /user_guide/pricing/configuration/global_pricing.rst
 
-   ../../pricing/configuration/website_pricing.rst
+   /user_guide/pricing/configuration/website_pricing.rst
 
-   ../../taxes/configuration/tax_calculation.rst
+   /user_guide/taxes/configuration/tax_calculation.rst
 
-   ../../taxes/configuration/us_sales_tax.rst
+   /user_guide/taxes/configuration/us_sales_tax.rst
 
-   ../../taxes/configuration/eu_vat_tax.rst
+   /user_guide/taxes/configuration/eu_vat_tax.rst
    
-   ../../marketing_web_catalog/configuration/index.rst
+   /user_guide/marketing_web_catalog/configuration/index.rst
 
    /user_guide/products/configuration/index.rst
 
@@ -53,7 +53,7 @@ This section contains information on the system configuration options specific f
    shipping_origin
 
    shipping_tax
-   
-  
 
+   sales_info
 
+   guest_access_overview
