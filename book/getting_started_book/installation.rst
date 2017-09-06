@@ -22,15 +22,46 @@ Prerequisites
 
 Please check that all the `system requirements`_ are met.
 
-Composer
-~~~~~~~~
+Get Oro Installer
+~~~~~~~~~~~~~~~~~
 
-OroCRM uses `Composer`_ to manage package dependencies. We recommend to install it globally. Symfony documentation
-provides detailed `instructions on installing Composer globally`_.
+Oro provides a dedicated application called the Oro Installer to ease the creation of Oro applications.
+This installer is a PHP executable that needs to be installed on your system only once:
+
+.. code-block:: bash
+
+    # Linux and macOS systems
+    $ sudo mkdir -p /usr/local/bin
+    $ sudo curl -LsS https://oroinc.com/installer -o /usr/local/bin/oro
+    $ sudo chmod a+x /usr/local/bin/oro
+
+    # Windows systems
+    c:\> php -r "file_put_contents('oro', file_get_contents('https://oroinc.com/installer'));"
 
 .. hint::
 
-    If Composer has been installed globally, it is enough to type *composer* in the console, in order to execute it.
+    In Linux and macOS, a global oro command is created. In Windows, move the symfony file to a directory
+    that's included in the PATH environment variable and create a symfony.bat file to create the global command
+    or move it to any other directory convenient for you:
+
+    .. code-block:: bash
+
+        # for example, if WAMP is used ...
+        c:\> move oro c:\wamp\bin\php
+
+        # create oro.bat in the same folder
+        c:\> cd c:\wamp\bin\php
+        c:\> (echo @ECHO OFF & echo php "%~dp0oro" %*) > oro.bat
+
+        # ... then, execute command as:
+        c:\> oro
+
+        # moving it to your projects folder ...
+        c:\> move oro c:\projects
+
+        # ... then execute command as
+        c:\> cd projects
+        c:\> php oro
 
 Recommended Prerequisites
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,92 +69,79 @@ Recommended Prerequisites
 To efficiently use the assets shipped with the OroCRM, it is recommended to install node.js. Detailed installation
 instructions are available in the `node.js installation document`_.
 
-Step 1. Get the Source Code and Define Dependencies
----------------------------------------------------
+Step 1. Get the Source Code
+---------------------------
 
-First, you need to obtain the application's source code and define the dependencies. There are two ways to do so:
-
-**1a.** :ref:`Clone the GitHub repository <book-installation-github-clone>` and run the *composer install* command.
-
-**1b.** :ref:`Download the source code archive <book-installation-download-archive>` and run the *composer update* command.
-
-
-.. _book-installation-github-clone:
-.. _clone-the-github-repository:
-
-1a. Clone the GitHub Repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. Go to the directory, to which you want to save the OroCRM folder (``[$folder_location]``).
-
-#. Use the *git clone* command. Specify the version to download (in the example, it is "``2.1``").
+First, you need to obtain the application's source code:
 
    .. code-block:: bash
 
        $ cd [$folder_location]
-       $ git clone -b 2.1 https://github.com/orocrm/crm-application.git orocrm
+       $ oro new orocrm crm 2.3 # here orocrm - folder where project will be created, crm - application name
 
    .. hint::
 
-       Along with ``2.1``, you can use any other released version or even the master branch to run
-       the latest development version of the OroCRM.
+        Along with ``2.3``, you can use any other released version or magic constants ``lts`` to install last long
+        term support version and ``latest`` to install last released version.
 
    .. tip::
 
        **Get Source Code for the OroPlatform Application**
 
-       If you are installing the Platform application, use the `Platform application repository URL`_ :
+       If you are installing the Platform application use ``platform`` as application name:
 
        .. code-block:: bash
 
            $ cd [$folder_location]
-           $ git clone -b 2.1 https://github.com/orocrm/platform-application.git orocrm
+           $ oro new oroplatform platform 2.3
 
-#. Go to the ``orocrm`` directory and run the *composer install* command, in order to install the
-   dependencies. You need to define the ``--prefer-dist --no-dev`` parameter, as otherwise you can
-   get an error or all the development environment will be installed:
+       Also you can list all applications that can be create using Oro Installer:
 
-   .. code-block:: bash
+       .. code-block:: bash
 
-       $ cd orocrm
-       $ composer install --prefer-dist --no-dev
+           $ oro apps
 
-   .. _book-installation-github-clone-configuration-params:
    .. _configuration-parameters:
 
-#. At the end of the ``composer install`` command, you will be asked to enter some configuration
-   parameters in the console. The parameters are required to bootstrap the application.
+At the end of the ``oro new`` command, you will have some default configuration in
+app/config/parameters.yml file. The default values are listed below:
 
-   If you enter nothing, the default values (in brackets) will be used:
+   .. code-block:: yaml
 
-   .. code-block:: text
+        parameters:
+        database_driver:   pdo_mysql
+        database_host:     127.0.0.1
+        database_port:     ~
+        database_name:     oro_crm
+        database_user:     root
+        database_password: ~
 
-       Creating the "app/config/parameters.yml" file
-       Some parameters are missing. Please provide them.
-       database_driver (pdo_mysql):
-       database_host (127.0.0.1):
-       database_port (null):
-       database_name (oro_crm):
-       database_user (root):
-       database_password (null):
-       mailer_transport (smtp):
-       mailer_host (127.0.0.1):
-       mailer_port (null):
-       mailer_encryption (null):
-       mailer_user (null):
-       mailer_password (null):
-       websocket_bind_address (0.0.0.0):
-       websocket_bind_port (8080):
-       websocket_frontend_host ('*'):
-       websocket_frontend_port (8080):
-       websocket_backend_host ('*'):
-       websocket_backend_port (8080):
-       session_handler (session.handler.native_file):
-       locale (en):
-       secret (ThisTokenIsNotSoSecretChangeIt):
-       installed (null):
-       assets_version (null):
-       assets_version_strategy: time_hash
+        mailer_transport:  smtp
+        mailer_host:       127.0.0.1
+        mailer_port:       ~
+        mailer_encryption: ~
+        mailer_user:       ~
+        mailer_password:   ~
+
+        # WebSocket server config
+        websocket_bind_address:  "0.0.0.0"
+        websocket_bind_port:     8080
+        websocket_frontend_host: "*"
+        websocket_frontend_port: 8080
+        websocket_backend_host:  "*"
+        websocket_backend_port:  8080
+
+        web_backend_prefix:         ''
+
+        session_handler:   session.handler.native_file
+
+        locale:            en
+        secret:            ThisTokenIsNotSoSecretChangeIt
+        installed:         ~
+        assets_version:    ~
+        assets_version_strategy: time_hash
+        message_queue_transport: 'dbal'
+        message_queue_transport_config: ~
 
    - The ``database_`` parameters are used to connect to the database.
 
@@ -153,50 +171,9 @@ First, you need to obtain the application's source code and define the dependenc
          The next asset's version is the previous version incremented by one (e.g. ``ver1`` ->
          ``ver2`` or ``1`` -> ``2``).
 
-.. hint ::
-
-    You can change the parameters in the "app/config/parameters.yml" file.
-
 .. note::
 
     The port used in Websocket must be open in firewall for outgoing/incoming connections
-
-.. _book-installation-download-archive:
-
-1b. Download the Source Code Archive
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-#. Download the latest OroCRM version from the `download section`_ on `orocrm.com`_.
-
-   For example, on a Linux based OS this can be done as follows:
-
-   .. code-block:: bash
-
-       $ cd [$folder_location]
-       $ wget -c http://www.orocrm.com/downloads/crm-application.tar.gz
-       $ tar -xzvf crm-application.tar.gz
-
-#. Run the ``composer install`` command with ``--prefer-dist --no-dev`` parameter to update the
-   downloaded libraries to the latest supported versions (The source code archive contains all the
-   required libraries. They will be installed to the ``vendor`` directory):
-
-   .. code-block:: bash
-
-       $ cd orocrm
-       $ composer install --prefer-dist --no-dev
-
-#. Update the :ref:`configuration parameters <book-installation-github-clone-configuration-params>`
-   if necessary.
-
-   Unlike when downloading from the GitHub repository, you won't be asked to define the parameters
-   in the console, and default values will be used instead. If any of the parameters need to be
-   changed, do this manually afterwards in the ``app/config/parameters.yml`` file.
-
-
-.. sidebar::  Download the Source Code Archive the OroPlatform Application
-
-    Use the OroPlatform download files from the `download section`_ on `orocrm.com`_.
-
 
 .. _configure-the-database:
 
@@ -204,7 +181,7 @@ Step 2. Create the Database
 ---------------------------
 
 Create an empty database, such that its values correspond to the
-:ref:`configuration parameters <book-installation-github-clone-configuration-params>` starting with
+:ref:`configuration parameters <configuration-parameters>` starting with
 ``database_``.
 
 .. note::
@@ -434,7 +411,7 @@ provides some additional flexibility as described in the relevant section below.
 #. **Configuration**
 
    - In the emerged page, specify the application configuration. The values defined in the
-     :ref:`configuration parameters <book-installation-github-clone-configuration-params>` will be
+     :ref:`configuration parameters <configuration-parameters>` will be
      filled in automatically, but they can be changed.
 
      .. image:: /images/book/installation/wizard-2.png
@@ -701,13 +678,17 @@ Updating OroPlatform to OroCRM
 If are not sure whether or not you need the full OroCRM application, you can start
 with the OroPlatform application and upgrade it by installing the "oro/crm" package using Composer:
 
-    .. code-block:: bash
+.. code-block:: bash
 
-        $ composer require oro/crm
+    $ composer require oro/crm
+
+.. tip::
+
+    If you don't have composer installed on your system see `instructions on installing Composer`_.
 
 
 .. _`Composer`: http://getcomposer.org/
-.. _`instructions on installing Composer globally`: http://symfony.com/doc/current/cookbook/composer.html
+.. _`instructions on installing Composer`: https://getcomposer.org/download/
 .. _`its documentation`: https://getcomposer.org/doc/
 .. _`node.js installation document`: https://nodejs.org/en/download/
 .. _`GitHub repository`: https://github.com/orocrm/crm-application
