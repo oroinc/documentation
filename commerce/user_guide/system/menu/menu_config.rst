@@ -3,7 +3,7 @@
 Customizing a Menu
 ------------------
 
-.. begin
+.. begin 1
 
 Generic Principles
 ^^^^^^^^^^^^^^^^^^
@@ -70,6 +70,12 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 
   .. image:: /user_guide/img/system/menus/edit/menus_actions_d&dunder.png
 
+.. finish 1
+
+.. _doc--system--menu--config--add-menu-item:
+
+.. begin 2
+
 Add a Menu Item
 ^^^^^^^^^^^^^^^
 
@@ -109,6 +115,13 @@ Add a Menu Item
 
 .. important::
     You need to reload the page to see changes.
+
+Edit a Frontend Menu
+^^^^^^^^^^^^^^^^^^^^
+
+.. include:: menu_frontend.rst
+   :start-after: start
+   :end-before: finish
 
 Add a Divider
 ^^^^^^^^^^^^^
@@ -214,7 +227,7 @@ To reset any customization changes and roll back to the menu that is provided ou
     You need to reload the page to see changes.
 
 
-.. stop
+.. finish 2
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

@@ -35,8 +35,12 @@ Menu Configuration Levels
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: menu_config_levels.rst
-   :start-after: start
-   :end-before: stop
+   :start-after: start 1
+   :end-before: stop 1
+
+.. include:: menu_config_levels.rst
+   :start-after: start 2
+   :end-before: stop 2
 
 .. _doc-config-menus-menuspage:
 
@@ -66,8 +70,12 @@ On the menu list you can see the menus available for review or customization.
 .. _doc-config-menus-actions-draganddrop:
 
 .. include:: menu_config.rst
-   :start-after: begin
-   :end-before: stop
+   :start-after: begin 1
+   :end-before: finish 1
+
+.. include:: menu_config.rst
+   :start-after: begin 2
+   :end-before: finish 2
 
 Related Topics
 ~~~~~~~~~~~~~~
@@ -80,3 +88,4 @@ Related Topics
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
+

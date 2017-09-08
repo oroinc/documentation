@@ -1,3 +1,5 @@
+.. _user-guide--taxes--tax-configuration:
+
 Tax Calculation
 ~~~~~~~~~~~~~~~
 
@@ -22,6 +24,8 @@ You can modify the following configuration settings that impact the way OroComme
 - Determine whether the tax is included in the product price. When this option is enabled, the product price displayed in the purchase order will increase by the value of tax for this product item. **Note**: This may complicate the tax returns and deduction for your customers who are businesses.
 
 - Configure a shipping origin address that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
+
+.. _user-guide--taxes--tax-configuration--calculation:
 
 Configure Tax Calculation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -66,3 +70,5 @@ To customize tax calculation in OroCommerce:
 7. In **Origin** section, provide the origin address (e.g. location of your warehouse or company legal address). For the origin-based jurisdictions, OroCommerce uses this address to find the matching tax rule.
 
 8. Click **Save**.
+
+.. finish

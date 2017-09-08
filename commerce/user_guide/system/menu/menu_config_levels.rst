@@ -3,7 +3,7 @@
 Menu Configuration Levels
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. start
+.. start 1
 
 .. _doc--menu-config-levels:
 
@@ -56,6 +56,12 @@ To customize one of the management console menus (e.g. navigation bar or user me
 3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
    The changes apply automatically.
 
+.. stop 1
+
+.. _doc--system--menu--config-levels--frontend-menus:
+
+.. start 2
+
 Customize Default Frontend Menus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -63,7 +69,7 @@ To customize one of the default front store menus (e.g. commerce main menu) or c
 
 1. Navigate to the front store menu list by click **System > Frontend Menus** in the main menu.
 2. Click on the menu you would like to edit.
-3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
+3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
    The changes apply automatically.
 
 Customize Frontend Menus per Organization
@@ -76,7 +82,7 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
 1. Navigate to the front store menu list by clicking **System > User Management > Organizations** in the main menu.
 2. Click on the organization you would like to edit the menu for.
 3. Click |IcConfig| **Edit Frontend Menu**.
-4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
+4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
    The changes apply automatically.
 
 Customize Frontend Menus per Website
@@ -89,7 +95,7 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
 1. Navigate to the front store menu list by click **System > Websites** in the main menu.
 2. Click on the website you would like to edit the menu for.
 3. Click |IcConfig| **Edit Frontend Menu**.
-4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
+4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
    The changes apply automatically.
 
 Customize Frontend Menus per Customer Group
@@ -100,7 +106,7 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
 1. Navigate to the front store menu list by clicking **Customers > Customer Groups** in the main menu.
 2. Click on the customer group you would like to edit the menu for.
 3. Click |IcConfig| **Edit Frontend Menu**.
-4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
+4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
    The changes apply automatically.
 
 Customize Frontend Menus per Customer
@@ -114,11 +120,11 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
 
 3. Click |IcConfig| **Edit Frontend Menu**.
 
-4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
+4. UUpdate the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
 
    The changes apply automatically.
 
-.. stop
+.. stop 2
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
