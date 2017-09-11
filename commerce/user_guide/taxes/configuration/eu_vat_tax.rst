@@ -1,3 +1,5 @@
+.. _user-guide--taxes--eu:
+
 Configure EU VAT Tax for Digital Products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

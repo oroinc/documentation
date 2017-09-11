@@ -5,11 +5,11 @@ Configuring Taxation
 
 OroCommerce groups taxation configuration options into the following categories:
 
-* `Tax Calculation`_
+* :ref:`Tax Calculation <user-guide--taxes--tax-configuration>`
 
-* `US Sales Tax for Digital Products`_
+* :ref:`US Sales Tax for Digital Products <user-guide--taxes--us>`
 
-* `EU VAT Tax for Digital Products`_
+* :ref:`EU VAT Tax for Digital Products <user-guide--taxes--eu>`
 
 
 Tax Calculation
@@ -17,6 +17,8 @@ Tax Calculation
 
 .. include:: /user_guide/taxes/configuration/tax_calculation.rst
    :start-after: begin
+
+
 
 US Sales Tax for Digital Products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

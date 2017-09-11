@@ -99,7 +99,7 @@ The menu item which you have selected to be hidden should now be excluded from t
 
   b) Click **Save** on the top right of the About menu page to save the changes.
 
-  b) Enable *Tax Calculation* in the system configuration. More information on tax configuration can be found in the relevant :ref:`Configure Tax Calculation <user-guide--taxes--tax-configuration--calculation>` topic.
+  b) Enable *Tax Calculation* in the system configuration. More information on tax configuration can be found in the relevant :ref:`Configure Tax Calculation <user-guide--taxes--tax-configuration>` topic.
 
   c) Click **Save** on the top right of the Tax Calculation configuration page.
 

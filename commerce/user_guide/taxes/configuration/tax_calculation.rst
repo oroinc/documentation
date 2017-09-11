@@ -1,5 +1,6 @@
 .. _user-guide--taxes--tax-configuration:
 
+
 Tax Calculation
 ~~~~~~~~~~~~~~~
 
@@ -13,7 +14,7 @@ You can modify the following configuration settings that impact the way OroComme
 
 - Select a tax provider. OroCommerce build-in Table Rates - the tax rules defined in Manage Tax Rules section below - are used by default. Alternatively, with some customization, you can use external tax management and compliance system, like AvaTax or Vertex, as a tax provider.
 
-.. comment See `Integration with external tax management systems </user-guide/taxes/index#integration-with-external-tax-management-systems>`_ for more information.
+     .. comment See `Integration with external tax management systems </user-guide/taxes/index#integration-with-external-tax-management-systems>`_ for more information.
 
 - Apply taxes per single item in the purchase order or per total for the requested amount of the items of same kind. This may minimize roundoff accumulated error and guard you and your customers from over or under paying.
 
@@ -25,7 +26,6 @@ You can modify the following configuration settings that impact the way OroComme
 
 - Configure a shipping origin address that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
 
-.. _user-guide--taxes--tax-configuration--calculation:
 
 Configure Tax Calculation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -71,4 +71,3 @@ To customize tax calculation in OroCommerce:
 
 8. Click **Save**.
 
-.. finish
