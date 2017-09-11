@@ -14,7 +14,7 @@ To update the frontend menu contents, follow the :ref:`Customize Default Fronten
 .. image:: /user_guide/img/system/menus/frontend_menu_1.png
    :class: with-border
 
-On the page that opens, the menu item tree is shown in the left panel. Center is reserved for the menu item configuration, which you can update as shown in the aforementioned :ref:`Add a Menu Item <doc--system--menu--config--add-menu-item>` section.
+On the page that opens, the menu item tree is shown in the left panel. The **General Information** section is reserved for the menu item configuration, which you can update, as shown in the :ref:`Add a Menu Item <doc--system--menu--config--add-menu-item>` section.
 
 .. image:: /user_guide/img/system/menus/frontend_menu_2.png
    :class: with-border
@@ -23,12 +23,12 @@ Moreover, you can customize additional visibility restrictions in the following 
 
 **User Agent**
 
-**User Agent** is unique to every customer. It is a catalogue of technical data about the device and software that the customer is using. You can enable or disable the customer from viewing some menu items by proceeding with the following steps:
+**User Agent** is unique to every customer. It is a catalogue of technical data about the device and software that the customer is using. You can control whether some menu items are shown to or hidden from the customer by proceeding with the following steps:
 
 .. image:: /user_guide/img/system/menus/frontend_menu_3.png
    :class: with-border
 
-1) Click **Add**.
+1) Click **Add** next to the *User Agent* field.
 2) Fill in the open field with a user agent substring or a string, if required.
 
 .. note::
@@ -41,45 +41,45 @@ Moreover, you can customize additional visibility restrictions in the following 
 
 3) Select the corresponding operation from the list.
 
-   The operation *contains* determines whether the specified substring is included in the user agent string (e.g. in case you mention Mozilla, all the versions of Mozilla in the user agent string will meet the requirements of this function).
+   * The *contains* operation determines whether the specified substring is included in the user agent string (e.g. in case you mention Mozilla, all the versions of Mozilla in the user agent string will meet the requirements of this function).
 
-   The operation *does not contain* determines whether the specified substring is not included in the user agent string.
+   * The *does not contain* operation determines whether the specified substring is not included in the user agent string.
 
-   The operation *matches* checks whether the specified value fully matches the user agent string (e.g. you need to provide a version of Mozilla to meet the requirements of this function).
+   * The *matches* operation checks whether the specified value fully matches the user agent string (e.g. you need to provide a version of Mozilla to meet the requirements of this function).
 
-   The operation *does not match* checks whether the specified value does not match the user agent string.
+   * The *does not match* operation checks when the specified value does not match the user agent string.
 
    .. image:: /user_guide/img/system/menus/frontend_menu_5.png
       :class: with-border
 
-4) Click **+And** below the operation field withing the same block to add another condition. This **And** stands for **AND**, meaning that the operation will be implemented only if all the specified conditions equally comply.
+4) Click **+And** below the operation field within the same block to add another condition. This **And** stands for **AND**, meaning that the operation will be implemented only if all the specified conditions comply equally.
 
-5) Click separate **+Add** which stands for **OR** and activates the operation once either first or second condition complies.
+5) Click separate **+Add** which stands for **OR** and activates the operation once either the first or the second condition complies.
 
    .. image:: /user_guide/img/system/menus/frontend_menu_6.png
       :class: with-border
 
 **Exclude On Screens**
 
-**Exclude On Screens** enables to hide the menu items on the specified screens.
+**Exclude On Screens** enables you to hide the menu items on the specified screens.
 
 1) Click on any screen to select the one which will be hidden from the customer.
-2) Press Ctrl to select/deselect multiple screens in no particular order.
+2) Hold Ctrl and click on the value to select/deselect multiple screens.
 3) Click **Save**.
 
 .. image:: /user_guide/img/system/menus/frontend_menu_7.png
    :class: with-border
 
-The menu item which you have selected to be hidden is excluded from the frontstore.
+The menu item which you have selected to be hidden should now be excluded from the front store.
 
 .. image:: /user_guide/img/system/menus/frontend_menu_8.png
    :class: with-border
 
 **Condition**
 
-**Condition** enables to restrict visibility of some menu items using the following functions:
+**Condition** enables you to restrict visibility of some menu items using the following functions:
 
-* the function *is_logged_in()* stands for the *registered users*. If entered, only the users who have logged into the Oro frontstore are enabled to view the corresponding menu item.
+* The *is_logged_in()* function stands for the *registered users*. If entered, only the users who have logged into the Oro front store are enabled to view the corresponding menu item.
 
   .. image:: /user_guide/img/system/menus/frontend_menu_9.png
      :class: with-border
@@ -89,13 +89,21 @@ The menu item which you have selected to be hidden is excluded from the frontsto
   .. image:: /user_guide/img/system/menus/frontend_menu_10.png
      :class: with-border
 
-* the function *!is_logged_in()* stands for the *non-registered users*. If entered, only the unregistered users are enabled to view the corresponding menu item.
-* the function *config_value('some_identifier')* limits visibility of the corresponding menu item upon specifying the certain value. To enable this function, proceed with the following steps:
+* The *!is_logged_in()* function stands for the *non-registered users*. If entered, only the unregistered users are enabled to view the corresponding menu item.
 
-  a) Enter the function in the **Condition** field.
-  b) Specify the exact value instead of *some_identifier*, on the basis of which the function will be customized (e.g. *oro_tax.tax_enable*, meaning that the menu item will become visible upon enabling *Taxation* through the System configuration in the management console).
-  c) Enable the *Taxation* following the :ref:`Configure Tax Calculation <user-guide--taxes--tax-configuration--calculation>`.
-  d) Click **Save**.
+* The *config_value('some_identifier')* function limits visibility of the corresponding menu item upon specifying the certain value.
+
+  As an example, let us make the *About* section in the front store visible to customers with configured taxes. For this, we need to:
+
+  a) Customize the *config_value('some_identifier')* function with the required value instead of *some_identifier*. In our case, it is the *oro_tax.tax_enable* value.
+
+  b) Click **Save** on the top right of the About menu page to save the changes.
+
+  b) Enable *Tax Calculation* in the system configuration. More information on tax configuration can be found in the relevant :ref:`Configure Tax Calculation <user-guide--taxes--tax-configuration--calculation>` topic.
+
+  c) Click **Save** on the top right of the Tax Calculation configuration page.
+
+  The steps are illustrated below:
 
      .. image:: /user_guide/img/system/menus/frontend_menu_11.png
         :class: with-border
