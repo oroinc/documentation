@@ -1,7 +1,7 @@
 .. _documentation-standards:
 
-Documentation Style Guide
-==========================
+Contribute to Documentation
+===========================
 
 .. contents:: :local:
     :depth: 3
@@ -10,18 +10,19 @@ We use `reStructuredText`_ markup language to write the documentation and `Sphin
 
 Documentation source files are maintained in the dedicated `github repository <https://github.com/orocrm/documentation>`_.
 
-If you are willing to contribute - you are totally welcome. The information below should help you understand the documentation structure and topic organization, useful rst directives and a simple workflow that helps quickly publish a new topic.
+If you are willing to contribute --- you are totally welcome. The information below should help you understand the documentation structure and topic organization, useful rst directives and a simple workflow that helps quickly publish a new topic.
 
-.. important:: Before submitting your documentation changes in a pull request, please sign our `Contributor License Agreement`_ (CLA). The CLA must be signed for any code or documentation changes to be accepted.
+Before You Begin
+----------------
+
+Before submitting your documentation changes in a pull request, please sign our `Contributor License Agreement`_ (CLA). The CLA must be signed for any code or documentation changes to be accepted.
 
 .. _Contributor License Agreement: http://www.orocrm.com/contributor-license-agreement
-
-
 
 Fork Documentation Project
 --------------------------
 
-If you're just making a small change, you can use the :guilabel:`Edit this file` button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
+If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
 
 * `OroPlatform and OroCRM documentation <https://github.com/orocrm/documentation>`_
 * `OroCommerce documentation <https://github.com/orocommerce/documentation>`_
@@ -62,18 +63,20 @@ The most complete information is available in the `reStructureText specificaion 
 Documentation Structure and Topic Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In OroCRM, documentation is organized into the tree hierarchy of sections using toctree directive in the index.rst. Sections of the same level reside in the same folder which simplifies navigation and sibling reference.
+The documentation is organized into the tree hierarchy of sections using toctree directive in the index.rst. Sections
+of the same level reside in the same folder which simplifies navigation and sibling reference.
 
 Sample file structure:
 
 .. code-block:: none
+    :linenos:
 
     + user-guide:
         + img:
             - Demo.png
-        - topic-1.rst
-        - topic-2.rst
-        - topic-3.rst
+        - topic_1.rst
+        - topic_2.rst
+        - topic_3.rst
         - index.rst
     + admin-guide:
         - index.rst
@@ -95,6 +98,7 @@ Use the following markup for the headings to split your topic into sections, sub
 Use an underline with =, -, ^, ~, " to mark up the sections.
 
 .. code-block:: none
+    :linenos:
 
     Section 1
     =========
@@ -113,11 +117,7 @@ Use an underline with =, -, ^, ~, " to mark up the sections.
 
 Preview:
 
-|
-
 .. image:: ./img/contributing/write.png
-
-|
 
 Preserve the same level of indentation for all lines of the paragraph. More information is available `here <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs>`_.
 
@@ -132,6 +132,7 @@ Bulleted List
 To form a bullet list, start the line with \*, +, or \- followed by whitespace:
 
 .. code-block:: none
+    :linenos:
 
     * Item A
     * Item B
@@ -161,6 +162,7 @@ To form a numbered list, start the line with Arabic numerals (1,2,3), upper- or 
 Simple numbered list:
 
 .. code-block:: none
+    :linenos:
 
     1. Item A
     2. Item B
@@ -183,10 +185,11 @@ Preview:
               i. Item E
               ii. Item F
 
-Auto enumerated List
+Auto Enumerated List
 ~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: none
+    :linenos:
 
     1. Item A
     #. Item B
@@ -211,6 +214,7 @@ Preview:
 
 Text Blocks
 ~~~~~~~~~~~
+
 Attention Block
 """""""""""""""
 
@@ -279,6 +283,7 @@ Tables
 ~~~~~~
 
 .. code-block:: none
+    :linenos:
 
     +------------+------------+-----------+
     | Header 1   | Header 2   | Header 3  |
@@ -298,6 +303,15 @@ Preview:
 | Cell 2.1   | Cell 2.2   | Cell 2.3  |
 +------------+------------+-----------+
 
+Advanced Rst Syntax
+^^^^^^^^^^^^^^^^^^^
+
+Temporarily, the information resides `on Confluence <https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation>`_.
+
+.. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
+
+.. TODO: complete this section (move from confluence to github)
+
 
 File Naming Conventions
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -308,7 +322,7 @@ Please follow the recommendations below when naming the new documenation file:
 
 * Use lowercase letters and Arabic numbers only.
 
-* Replace whitespace symbols with underscores (e.g. file_naming_onventions.rst).
+* Replace whitespace symbols with underscores (e.g. file_naming_conventions.rst).
 
 * Avoid special symbols (/,$,#, etc).
 
@@ -330,6 +344,7 @@ For example, when we create a new topic with additional information about price 
 **Before:**
 
 .. code-block:: none
+    :linenos:
 
     .. toctree::
        :maxdepth: 1
@@ -341,6 +356,7 @@ For example, when we create a new topic with additional information about price 
 **After:**
 
 .. code-block:: none
+    :linenos:
 
     .. toctree::
        :maxdepth: 1
@@ -352,12 +368,36 @@ For example, when we create a new topic with additional information about price 
        additional_pricelist_management_info
 
 .. tip::
-   If your are adding more than one topic and your new topics cover the same domain, consider grouping them into a folder. For better navigation, it is recommended to create a dedicated index.rst file with an overview and references to the topics in the new folder (using \.\. toctree:: directive). To attach your newly created group of topics into the general structure, add the reference to the index.rst to the appropriate loaction in the documetnation hierarchy (e.g. *documentation-structure-and-topic-organization.rst* and *file-naming-conventions.rst* may be saved to the *user-guide/writing* folder, may be added to the toctree of the dedicated *user-guide/writing/index.rst*. Finally, *user-guide/writing/index.rst* may be added into the *user-guide/index.rst* toctree to attach the newly created files into the global documentation structure).
+   If your are adding more than one topic and your new topics cover the same domain, consider grouping them into a folder.
+   For better navigation, it is recommended to create a dedicated index.rst file with an overview and references to the topics in the new folder (using \.\. toctree:: directive).
+   To attach your newly created group of topics into the general structure, add the reference to the index.rst to the appropriate loaction in the documetnation hierarchy (e.g. *documentation-structure-and-topic-organization.rst* and *file_naming_conventions.rst* may be saved to the *user_guide/writing* folder, may be added to the toctree of the dedicated *user_guide/writing/index.rst*.
+   Finally, *user_guide/writing/index.rst* may be added into the *user_guide/index.rst* toctree to attach the newly created files into the global documentation structure).
+
+Submit Documentation Updates
+----------------------------
+
+Once you are ready, create a pull request in the `OroCRM documentation <https://github
+.com/orocrm/documentation>`_ repository with changes from your forked repository. See :ref:`Code Version Control <code-version-control>` for more information on using repository.
+
+After documentation review, your changes will be merged to the OroCRM documentation and will be published on the
+`OroCRM website <http://www.orocrm.com/documentation>`_.
 
 
+See Also
+--------
 
-.. _pull request:   https://help.github.com/articles/using-pull-requests
-.. _Contributor License Agreement: http://www.orocrm.com/contributor-license-agreement
-.. _reStructuredText:        http://docutils.sourceforge.net/rst.html
-.. _reStructuredText Primer: http://sphinx-doc.org/rest.html
-.. _Sphinx:                  http://sphinx-doc.org/
+:ref:`Version Control <code-version-control>`
+
+:ref:`Code Style <doc--community--code-style>`
+
+:ref:`Set Up a Development Environment <doc--dev-env-best-practices>`
+
+:ref:`Contribute to Translations <doc--community--ui-translations>`
+
+:ref:`Report an Issue <doc--community--issue-report>`
+
+:ref:`Report a Security Issue <reporting-security-issues>`
+
+:ref:`Contact Community <doc--community--contact-community>`
+
+:ref:`Release Process <doc--community--release>`

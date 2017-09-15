@@ -1,23 +1,22 @@
 .. _reporting-security-issues:
 
-*************************
 Reporting Security Issues
-*************************
+=========================
 
-We appreciate your concern
-==========================
+We Appreciate Your Concern
+--------------------------
 
 We recognize how important it is to help protect your privacy and security. As a company, we not only have a vested interest in maintaining the trust you place in us and our products, but also a deep desire to see the Internet remain as safe as possible for us all.
 
 So, needless to say, we take security issues very seriously.
 
-Password and login problems
-===========================
+Password and Login Problems
+---------------------------
 
 For password reset and account restoration please contact us using our `customer support form <http://www.orocrm.com/contact-us>`_.
 
-Spotting major security issues
-==============================
+Spotting Major Security Issues
+------------------------------
 
 If you believe you have discovered a vulnerability in OroPlatform, OroCRM or OroCommerce or have a security incident to report, please contact our dedicated email support security@orocrm.com
 
@@ -31,9 +30,22 @@ This is our PGP key which is valid until March 08, 2017.
 
 When properly notified of legitimate issues, we will do our best to acknowledge your emailed report, assign resources to investigate the issue and fix potential problems as quickly as possible.
 
-Responsible disclosure
-======================
+Responsible Disclosure
+----------------------
 
 Responsible disclosure is the industry best practice, and we recommend it as a procedure to anyone researching security vulnerabilities. It allows individuals to notify companies of any security threats before going public with the information. This gives software vendors like us a chance to resolve the problem before the criminally-minded become aware of it.
 
 We will not disclose security issues until our internal investigation is finished, but we will work with you to ensure we fully understand the issue. Once the issue is resolved, we will post a security update along with thanks and credit for the discovery. We ask for your patience while we make sure all users of our products are protected.
+
+
+See Also
+--------
+
+:ref:`Report an Issue <doc--community--issue-report>`
+
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   issue_security_report
