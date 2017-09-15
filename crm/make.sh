@@ -76,9 +76,10 @@ elif [ "$1" = "qthelp" ]; then
   echo "\n ^> assistant -collectionFile $BUILDDIR\qthelp\TheOroPlatform.ghc"
 else 
   exec_cmd="$SPHINXBUILD  -b $1 $ALLSPHINXOPTS  $BUILDDIR/$1"
+  echo $exec_cmd
   $exec_cmd
   res=$?
   echo "executed: $exec_cmd"
   echo "result: $res"
 fi
-  exit $res
+  exit $ress

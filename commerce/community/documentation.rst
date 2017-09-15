@@ -1,13 +1,16 @@
-Contributing to Documentation
-=============================
+.. _documentation-standards:
+
+Contribute to Documentation
+===========================
 
 .. contents:: :local:
+    :depth: 3
 
 We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at http://www.orocommerce.com/documentation. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
 
 Documentation source files are maintained in the dedicated `github repository <https://github.com/orocommerce/documentation>`_.
 
-If you are willing to contribute - you are totally welcome. The information below should help you understand the documentation structure and topic organization, useful rst directives and a simple workflow that helps quickly publish a new topic.
+If you are willing to contribute --- you are totally welcome. The information below should help you understand the documentation structure and topic organization, useful rst directives and a simple workflow that helps quickly publish a new topic.
 
 Before You Begin
 ----------------
@@ -19,12 +22,13 @@ Before submitting your documentation changes in a pull request, please sign our 
 Fork Documentation Project
 --------------------------
 
-If you're just making a small change, you can use the "Edit this file" button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
+If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
 
 * `OroPlatform and OroCRM documentation <https://github.com/orocrm/documentation>`_
 * `OroCommerce documentation <https://github.com/orocommerce/documentation>`_
 
 For large volume of  updates, fixes, and enhancements please use the following process: 
+
 #. `Fork <https://help.github.com/articles/fork-a-repo>`_ a documentation repository.
 
 #. `Clone <https://help.github.com/articles/cloning-a-repository/>`_ the forked repository.
@@ -59,7 +63,8 @@ The most complete information is available in the `reStructureText specificaion 
 Documentation Structure and Topic Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In OroCommerce, documentation is organized into the tree hierarchy of sections using toctree directive in the index.rst. Sections of the same level reside in the same folder which simplifies navigation and sibling reference.
+The documentation is organized into the tree hierarchy of sections using toctree directive in the index.rst. Sections
+of the same level reside in the same folder which simplifies navigation and sibling reference.
 
 Sample file structure:
 
@@ -273,6 +278,7 @@ Preview:
 
 .. important:: The important message.
 
+
 Tables
 ~~~~~~
 
@@ -300,7 +306,7 @@ Preview:
 Advanced Rst Syntax
 ^^^^^^^^^^^^^^^^^^^
 
-Temporarily, the information resides `on Confluence <https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation>`_. 
+Temporarily, the information resides `on Confluence <https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation>`_.
 
 .. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
 
@@ -325,8 +331,7 @@ Please follow the recommendations below when naming the new documenation file:
 Add a New Topic
 ^^^^^^^^^^^^^^^
 
-1. Create topic contents using Restructured Text format and save it following the `File Naming Conventions`
-_.
+1. Create topic contents using Restructured Text format and save it following the `File Naming Conventions`_.
 
 2. To link a topic to the global documentation table of contents:
 
@@ -371,6 +376,26 @@ For example, when we create a new topic with additional information about price 
 Submit Documentation Updates
 ----------------------------
 
-Once you are ready, create a pull request in the `OroCommerce documentation <https://github.com/orocommerce/documentation>`_ repository with changes from your forked repository.
+Once you are ready, create a pull request in the `OroCommerce documentation <https://github.com/orocommerce/documentation>`_ repository with changes from your forked repository. See :ref:`Code Version Control <code-version-control>` for more information on using repository.
 
-After documentation review, your changes will be merged to the OroCommerce documentation and will be published on the `OroCommerce website <http://www.orocommerce.com/documentation>`_
+After documentation review, your changes will be merged to the OroCommerce documentation and will be published on the `OroCommerce website <http://www.orocommerce.com/documentation>`_.
+
+
+See Also
+--------
+
+:ref:`Version Control <code-version-control>`
+
+:ref:`Code Style <doc--community--code-style>`
+
+:ref:`Set Up a Development Environment <doc--dev-env-best-practices>`
+
+:ref:`Contribute to Translations <doc--community--ui-translations>`
+
+:ref:`Report an Issue <doc--community--issue-report>`
+
+:ref:`Report a Security Issue <reporting-security-issues>`
+
+:ref:`Contact Community <doc--community--contact-community>`
+
+:ref:`Release Process <doc--community--release>`

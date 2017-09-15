@@ -258,6 +258,10 @@ Images
 .. |Bdropdown| raw:: html
 
    <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
+
+.. |IcCloudDownload| raw:: html
+
+   <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>
    
 .. Check mark in the square.
 

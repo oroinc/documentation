@@ -1,5 +1,7 @@
-Reporting Security Issues
-=========================
+.. _reporting-security-issues:
+
+Report a Security Issue
+=======================
 
 We appreciate your concern
 --------------------------

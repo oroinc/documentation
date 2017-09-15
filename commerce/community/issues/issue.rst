@@ -1,5 +1,7 @@
-Submitting an Issue
-===================
+.. _doc--community--issue-report:
+
+Report an Issue
+===============
 
 We are using GitHub as a bug tracker. If you find a bug in the source code or a mistake in the documentation, you can help us by submitting an issue to our GitHub repository.
 

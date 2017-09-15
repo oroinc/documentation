@@ -1,12 +1,12 @@
-Troubleshooting Translation Issues
-==================================
+Report a Translation Issue
+==========================
 
 .. begin
 
 In order to report a translation-related issue, please use the
-`contact <https://crowdin.com/mail/compose/oro>`_ link in the "Owner" section on the `OroCommerce project <https://crowdin.com/project/orocommerce>`_ in the Crowdin.
+`contact <https://crowdin.com/mail/compose/oro>`_ link in the **Owner** section on the `OroCommerce project <https://crowdin.com/project/orocommerce>`_ in Crowdin.
 
-Please don't hesitate to contact us from Crowdin if:
+Please do not hesitate to contact us from Crowdin if:
 
 * Your translation has been marked as approved for over one day but has not appeared in OroCommerce
 

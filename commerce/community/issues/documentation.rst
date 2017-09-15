@@ -1,5 +1,5 @@
-Troubleshooting Documentation Issues
-====================================
+Report a Documentation Issue
+============================
 
 To report an issue in the OroCommerce documentation, file a suggestion for improvement, or share your feedback, please, send an email to the `documentation [at] oroinc.com <mailto:documentation@oroinc.com>`_.
 

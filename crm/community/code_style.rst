@@ -26,7 +26,7 @@ Default line break separator is LF (\n) - Unix and OS X style.
 
 **DocBlock**
 
-Use `PHPDoc <https://en.wikipedia.org/wiki/PHPDoc>`_ approach to commenting your code. 
+Use `PHPDoc <https://en.wikipedia.org/wiki/PHPDoc>`_ approach to commenting your code.
 
 **Class DocBlock**
 
@@ -53,9 +53,9 @@ It is **required** to add or update a DocBlock for every method you modify or pr
         * Supported values are In Stock, Out of Stock, and Discontinued.
         *
         * @param string $SKU The product SKU (unique product id).
-        * 
+        *
         * @return string The inventory status of the product found by SKU.
-        * 
+        *
         */
 
 **Property DocBlock**
@@ -72,11 +72,11 @@ An example of correct DocBlock usage:
     :linenos:
 
     namespace Oro\Bundle\DataGridBundle\Datasource;
- 
+
     use Doctrine\Common\Inflector\Inflector;
- 
+
     use Symfony\Component\PropertyAccess\PropertyAccess;
- 
+
     class ResultRecord implements ResultRecordInterface
     {
        /**
@@ -85,15 +85,15 @@ An example of correct DocBlock usage:
         * @var array
         */
        private $valueContainers = [];
- 
+
         /**
          * @var array
          */
         private $entities = [];
- 
+
         /** @var string */
         private $value = "";
- 
+
         /**
          * @param array $containers
          */
@@ -101,7 +101,7 @@ An example of correct DocBlock usage:
         {
             // ...
         }
- 
+
         /**
          * Get value of property by name
          *
@@ -113,7 +113,7 @@ An example of correct DocBlock usage:
             // ...
             return $value
         }
- 
+
         /**
          * @return object|null
          */
@@ -142,11 +142,11 @@ The following is an example of @deprecated usage:
         * @deprecated deprecated since version 2.0
         */
         private $valueContainers = [];
- 
+
         //....
     }
-  
- 
+
+
     /**
      * @deprecated
      */
@@ -174,7 +174,7 @@ Import internal PHP classes example:
     // incorrect
     use DateTime;
     $date = new DateTime();
- 
+
     // correct
     $date = new \DateTime();
 
@@ -260,14 +260,14 @@ To run the check manually from the command line:
 .. code-block:: none
     :linenos:
 
-    node_modules/.bin/jscs src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jscsrc 
+    node_modules/.bin/jscs src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jscsrc
 
 - Execute the following command to run JSHint check:
 
 .. code-block:: none
     :linenos:
 
-    node_modules/.bin/jshint src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jshintrc 
+    node_modules/.bin/jshint src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jshintrc
 
 .NET Code Style
 ^^^^^^^^^^^^^^^

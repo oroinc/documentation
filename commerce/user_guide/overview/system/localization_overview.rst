@@ -5,7 +5,7 @@ Overview
 
 Localization is the process of translating and adapting a product for a specific country or region. OroPlatform allows a user to customize the format of date/time/datetime, numeric and percent values, monetary values as well as the format of names and addresses.
 
-OroCommerce supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the box integration to CrowdIn service, OroCommerce has live access to the most recent updates from the Oro team and community. See :ref:`Translating OroCommerce into your Native Language <community--translation>` for more information about translation process.
+OroCommerce supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the box integration to CrowdIn service, OroCommerce has live access to the most recent updates from the Oro team and community. See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-translations>` for more information about translation process.
 
 In the `System > Localization > Languages <./localization/languages>`_, you can add more languages to the system, enable/disable them, import and export translation texts for the language, and install translation updates from the CrowdIn project.
 

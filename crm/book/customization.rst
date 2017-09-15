@@ -162,7 +162,7 @@ download and apply a translation pack:
 .. seealso::
 
     You can learn more about the Crowdin translation process
-    :doc:`in the community section </community/translations>`.
+    :ref:`in the community section <doc--community--ui-translations>`.
 
 .. index::
     single: Customization; Services

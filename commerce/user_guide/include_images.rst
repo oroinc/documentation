@@ -255,6 +255,10 @@ Images
 
    <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
 
+.. |IcCloudDownload| raw:: html
+
+   <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>
+
 .. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
    :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png
    :align: middle

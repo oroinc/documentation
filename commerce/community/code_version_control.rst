@@ -28,7 +28,7 @@ There is a number of tools to manage git repositories, for instance:
 Submit a Pull Request
 ---------------------
 
-The best way to contribute a bug fix or enhancement is to submit a pull request to `OroCRM <http://github.com/orocrm/>`_.
+The best way to contribute a bug fix or enhancement is to submit a pull request to the `OroCommerce <http://github.com/orocommerce/application>`_ repository on GitHub.
 
 Before you submit your pull request consider the following guidelines:
 

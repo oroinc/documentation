@@ -1,13 +1,17 @@
-Contacting Support and Reporting Issues
-=======================================
+
+Report Issues
+=============
 
 .. toctree::
    :maxdepth: 1
 
-   security
+   issue
 
-   documentation
+   security
 
    translation
 
-   issue
+   documentation
+
+
+
