@@ -93,6 +93,8 @@ Simplify Purchase Choices and Increase Sales
 
 * :ref:`Manage Up-Sell Products <products--upsell-items>`
 
+* :ref:`Create All Products Page <sys--conf--commerce--catalog--special-pages>`
+
 .. uncomment in DOC-145:
 
 .. ref:`Manage Cross-Sell Products <products--cross-sell-items>`
@@ -118,6 +120,8 @@ Simplify Purchase Choices and Increase Sales
    products/actions_main/index
 
    products/actions_details/index
+
+
 
 
 ..    products/index

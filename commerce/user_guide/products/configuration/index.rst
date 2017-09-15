@@ -67,6 +67,9 @@ OroCommerce groups product configuration options into the following categories:
 
     * `Enable and Set Up Up-Sell Products per Website`_
 
+* :ref:`All Products Page <sys--conf--commerce--catalog--special-pages>`
+
+
 .. uncomment for DOC-145:
 
 ..  To configure Cross-Sell Products:
@@ -215,6 +218,10 @@ Upsell Items
    :start-after: begin_cross_sell_items_configuration
    :end-before: finish_cross_sell_items_configuration
 
+All Products Page
+^^^^^^^^^^^^^^^^^
+
+All Products page displays all available products from the master catalog grouped by categories. See :ref:`All Products Page <sys--conf--commerce--catalog--special-pages>` topic for more information on how to enable All Products page and include it in the web catalog or frontend menu on the OroCommerce front store.
 
 .. finish_configuration
 
@@ -257,6 +264,8 @@ Upsell Items
    related_products/index
 
    upsell_items/index
+
+   all_products
 
 .. uncomment for DOC-145
 

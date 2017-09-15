@@ -49,8 +49,8 @@ Customize Web Catalog Contents for Localization, Customer or Customer Group
 
 To customize your web catalog contents visibility:
 
-1. Navigate to **Marketing > Web Catalog**.
-2. For the necessary website, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start  editing the catalog content tree.
+1. Navigate to **Marketing > Web Catalog** in the main menu.
+2. For the necessary web catalog, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start editing the catalog content tree.
    
 .. image:: /user_guide/img/marketing/web_catalogs/use_case/EditContentTreeIcon.png
    :class: with-border

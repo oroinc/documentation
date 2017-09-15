@@ -6,6 +6,7 @@ Menu Configuration Levels
 .. start
 
 .. _doc--menu-config-levels:
+.. _user-guide--system--menu--menu-frontend:
 
 In Oro applications, you can manage the way menus look and the elements they contain on the multiple configuration layers:
 
@@ -71,7 +72,7 @@ Customize Frontend Menus per Organization
 
 .. note:: This option is available in the Enterprise edition only.
 
-To customize one of the front store menus (e.g. commerce main menu) or customer/partner portal mensu (e.g. customer user menu) for a particular organization:
+To customize one of the front store menus (e.g. commerce main menu) or customer/partner portal menu (e.g. customer user menu) for a particular organization:
 
 1. Navigate to the front store menu list by clicking **System > User Management > Organizations** in the main menu.
 2. Click on the organization you would like to edit the menu for.
