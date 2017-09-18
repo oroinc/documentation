@@ -9,13 +9,29 @@ Images
 
    <i class="fa fa-close fa-lg" aria-hidden="true"></i>
 
+.. |IcMarkProcessed| raw:: html
+
+   <i class="fa fa-archive fa-lg" aria-hidden="true"></i>
+
+.. |IcSend| raw:: html
+
+   <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+
+.. |IcDecline| raw:: html
+
+   <i class="fa fa-minus-square fa-lg" aria-hidden="true"></i>
+
+.. |IcRequestMoreInfo| raw:: html
+
+   <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+
 .. |IcActivate| raw:: html
 
    <i class="fa fa-check fa-lg" aria-hidden="true"></i>
 
 .. |IcExpireQuote| raw:: html
 
-   <i class="fa fa-clock fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
 
 .. |IcUndo| raw:: html
 

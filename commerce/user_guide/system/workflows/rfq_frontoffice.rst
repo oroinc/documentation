@@ -1,78 +1,78 @@
 .. _system--workflows--rfq-frontoffice-workflow:
 
-RFQ Frontoffice Workflow 
-========================
+RFQ Submission Flow Workflow
+============================
 
 Overview
 --------
 
-RFQ (Request For Quote) Frontoffice Workflow is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that an RFQ can go through in the front store and the management console.
+RFQ (Request For Quote) Submission Flow Workflow is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that an RFQ can go through in the front store and the management console.
 
 To reach the workflow:
 
 1. Navigate to **System > Workflows** in the main menu.
-2. Click **RFQ Frontoffice** to open the flow.
-   
+2. Click **RFQ Submission Flow** to open the flow.
+
+On the RFQ Submission Flow page, you can disable the workflow by clicking |IcDeactivate| **Deactivate** the workflow.
   
-On the RFQ Frontoffice page, you can perform the following actions:
+.. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_1.png
 
-* Clone the workflow - click |IcClone| **Clone** to clone the workflow.
-* Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
-  
-.. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQFrontOfficeView.png
+Within the Workflows list, you can perform the following actions for the RFQ Submission Flow workflow:
 
-Within the Workflows grid, you can perform the following actions for the RFQ Frontoffice workflow:
-
-* Clone the workflow: |IcClone|
 * View the workflow: |IcView|
 * Deactivate the workflow: |IcDeactivate|
 
-.. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQFrontOfficeGrid.png
+.. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_2.png
 
-RFQ Statuses
-------------
+.. _system--workflows--rfq-frontoffice-workflow-rfq-customer-statuses:
 
-:ref:`RFQ Backoffice <system--workflows--rfq-backoffice-workflow>` and Frontoffice workflows are interconnected. When the RFQ Backoffice and Frontoffice workflows are active, the following statuses are available:
+RFQ Customer Statuses
+---------------------
 
-1. :ref:`Internal Statuses <system--workflows--rfq-backoffice-workflow>` (Marked RFQ Backoffice on the RFQ page) are the statuses displayed in OroCommerce to the sales personnel:
+:ref:`RFQ Management Flow <system--workflows--rfq-backoffice-workflow>` and Submission Flow workflows are interconnected. When both workflows are active, the following statuses are available:
 
-	a) Open
-	b) Processed
-	c) More Information Requested
-	d) Declined
-	e) Cancelled 
-	f) Deleted
+.. start_customer_statuses
 
-.. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQsStepsView2.png
-
-.. note:: RFQs with internal status Deleted are not visible in the front store.
-
-2. Customer Statuses (Marked RFQ Frontoffice on the RFQ page) are the statuses displayed to customers in the front store. In the management console, they are visible on the view page and in the grid:
+#. Customer Statuses (correspond to RFQ Submission Flow on the RFQ page) are the statuses displayed to customers in the front store. In the management console, they are visible on the RFQ page:
 
 	a) Submitted
 	b) Pending Approval
 	c) Requires Attention
 	d) Cancelled
 
-.. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQsStatusView.png
+.. stop_customer_statuses
 
-.. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQsStepsView.png
+.. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_3.png
 
+2. Internal Statuses (correspond to RFQ Management Flow) are described in :ref:`RFQ Management Flow workflow <system--workflows--rfq-backoffice-workflow>`.
 
-.. note:: Neither internal nor customer statuses can be edited or deleted.
+.. note:: Neither customer nor internal statuses can be edited or deleted.
 
-Statuses are also displayed in the grid:
+Statuses are also displayed in the RFQ list:
 
-.. image:: /user_guide/img/system/workflows/rfq/backoffice/Statuses.png
+.. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_4.png
 
-.. note:: You can add and remove columns in the grid by clicking |IcConfig| on the far right of the grid.
+The following table describes which options are available for each of the statuses, and how the corresponding transitions change them.
+
+.. csv-table::
+   :header: "Step", "Current Internal Status", "Current Customer Status"
+   :widths: 30, 20, 20
+
+       "An RFQ is submitted by a customer", "Open", "Submitted"
+       "The RFQ is marked as processed by sales representative. The customer is not authorized to view this status", "Processed", "Submitted"
+       "Sales representative requests more information from the customer", "More Information Requested", "Requires Attention"
+       "The customer responds to the request and provides the additional information", "Open", "Submitted"
+       "The RFQ is declined", "Declined", "Cancelled"
+       "The RFQ is deleted and no further actions are possible unless it is reopened", "Deleted", "The RFQ is removed from the customer user’s page"
+
+.. note:: You can add and remove columns in the workflows list by clicking |IcConfig| on the far right of the list.
 
           .. image:: /user_guide/img/system/workflows/rfq/frontoffice/GridSettings.png
 
 Steps and Transitions
 ---------------------
 
-The RFQ Frontoffice consists of the following steps and transitions:
+The RFQ Submission Flow consists of the following steps and transitions:
 
 1. Steps:
    
@@ -92,18 +92,21 @@ The RFQ Frontoffice consists of the following steps and transitions:
 
 .. image:: /user_guide/img/system/workflows/rfq/backoffice/RFQFrontofficeGrid_2.png
 
+.. _system--workflows--rfq-frontoffice-workflow-rfq-illustration:
 
-As an illustration, let us go through a sample flow to see RFQ Frontoffice in action:
+As an illustration, let us go through a sample flow to see RFQ Submission Flow in action:
 
 1. A customer user creates an RFQ in the front store. Once the RFQ is sent, its customer status is marked as Submitted.
    
    .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQButton.png
 
-   .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQCreate.png
+   .. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_3.png
 
-2. In the management console, a sales representative sees the RFQ and requests more information. The RQF is now in the Requires Attention customer status.
+2. In the management console, a sales representative sees the RFQ and requests more information. The RFQ is now in the Requires Attention customer status.
 
-   .. image:: /user_guide/img/system/workflows/rfq/frontoffice/RFQInformationRequested.png
+   .. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_5.png
+
+   .. image:: /user_guide/img/system/workflows/rfq/frontoffice/rfq_submission_flow_6.png
    
 3. The customer user receives the request in the front store, clicks Provide Information in the right corner of the page and replies to the message. The customer status is now Submitted.
    

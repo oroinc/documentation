@@ -46,6 +46,8 @@ This section contains information on the system configuration options specific f
 
    /user_guide/system/commerce_configuration/contact_us.rst
 
+   /user_guide/system/commerce_configuration/rfq_notifications.rst
+
    payment_configuration
 
    shipping_options

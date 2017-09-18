@@ -2,8 +2,8 @@
 
 .. begin
 
-Create an Order from a RFQ
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create an Order from an RFQ
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To create an order based on a request for quote (RFQ):
 
