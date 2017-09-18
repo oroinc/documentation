@@ -14,6 +14,8 @@ To enable or disable the display of the form in the front store globally:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Customer > Contact Requests** in the menu to the left.
 
+.. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 The following page opens:
 
 .. image:: /user_guide/img/system/configuration/contact_us/ContactUseSysConfig.png

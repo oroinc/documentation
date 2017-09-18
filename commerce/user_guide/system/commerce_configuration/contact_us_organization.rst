@@ -14,6 +14,9 @@ To enable or disable the display of the form in the front store per organization
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Customer > Contact Requests** in the menu to the left.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 The following page opens:
 
 .. image:: /user_guide/img/system/configuration/contact_us/ContactUsOrg.png

@@ -67,6 +67,10 @@ To set up information for non-authenticated visitors:
 
 1. Navigate to **System > Configuration > Commerce > Sales > Contacts**.
 2. In the Display list, select **Customer User Owner**.
+
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 3. Enable **Allow User Configuration** checkbox, and select all three available user options from the list.
 4. In **Guest Contact** text field, provide text for non-authenticated users, e.g.:
    

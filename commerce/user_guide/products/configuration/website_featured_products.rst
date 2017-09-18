@@ -15,7 +15,10 @@ To update the featured products segment for a particular website:
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click the |IcConfig| **Configuration** icon to start editing the configuration.
 3. Select **Commerce > Products > Featured Products** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. .. image:: /user_guide/img/system/configuration/product/products/RelatedProducts.png
       :class: with-border

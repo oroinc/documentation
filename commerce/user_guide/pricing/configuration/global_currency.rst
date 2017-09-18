@@ -27,7 +27,10 @@ To change the default global currency settings:
 
 2. Select **System Configuration > General Setup > Currency** in the menu to the left.
 
-   The **Currency Settings** page opens. It contains the following information:
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The **Currency Settings** page opens. It contains the following information:
 
    .. image:: /user_guide/img/system/configuration/general/currency.png
       :class: with-border

@@ -13,6 +13,9 @@ To enable or disable the display of sales representative information in the fron
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Contacts** in the menu on the left.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 Set Display Details
 ^^^^^^^^^^^^^^^^^^^
 

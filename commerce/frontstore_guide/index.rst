@@ -90,6 +90,16 @@ In the :ref:`Manage Users in Your Organization and Control Their Access Level <f
 
 ..  Can I change the password on behalf of the other user?
 
+Explore OroCommerce Unregistered
+--------------------------------
+
+In the following topics, you can find answers to the next questions:
+
+* :ref:`How do I create a RFQ if I am browsing as a guest <frontstore-guide--rfq--guests>`?
+* :ref:`How can I place an order if I am not registered <frontstore-guide--orders-quick-order>`?
+* :ref:`How can I create and manage shopping lists as a guest user <frontstore-guide--shopping-lists-guest>`?
+
+
 **Sample Front Store**
 
 .. image:: /frontstore_guide/img/FrontPage1.png

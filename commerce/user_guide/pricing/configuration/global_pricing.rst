@@ -27,7 +27,10 @@ To change the default global pricing settings:
 
 2. Select **Commerce > Catalog > Pricing** in the menu to the left.
 
-   The **Pricing** page opens. It contains the following information:
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The **Pricing** page opens. It contains the following information:
 
    .. image:: /user_guide/img/system/configuration/catalog/pricing/pricing2.png
       :class: with-border

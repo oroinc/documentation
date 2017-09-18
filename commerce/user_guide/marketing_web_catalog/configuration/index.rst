@@ -18,6 +18,9 @@ To change the default product collections indexation frequency:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Product > Product Collections** in the menu to the left.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
    .. The following page opens.
 
    .. .. image:: /user_guide/img/system/configuration/inventory/limitations.png

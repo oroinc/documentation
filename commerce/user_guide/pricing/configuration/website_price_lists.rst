@@ -13,6 +13,9 @@ To change the default price list settings for the website:
 
 2. Click the |IcMore| **More Options** menu to the right of the necessary website and click the |IcEdit| **Edit** icon to start editing the website details.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 3. In the **Price Lists** section:
 
    .. image:: /user_guide/img/system/websites/website_price_lists.png

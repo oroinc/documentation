@@ -16,10 +16,13 @@ To enable image preview per website:
 2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Product > Product Images** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/product/product_images/ImagePreviewWebsite.png
-      :class: with-border
+The following page opens.
+
+.. image:: /user_guide/img/system/configuration/product/product_images/ImagePreviewWebsite.png
+   :class: with-border
 
 4. When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the front store will open a pop up image gallery, rather than the product page.
 

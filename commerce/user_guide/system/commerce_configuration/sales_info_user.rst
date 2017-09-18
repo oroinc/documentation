@@ -11,6 +11,9 @@ Configure Sales Rep Information per User
 
 To locate user configuration settings, navigate to **My User > My Configuration** and click **Commerce > Sales > Contacts** in the panel on the left.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 In the **Customer Visible Contact Info** list in their user configuration settings, the user will see the options that are enabled and selected in **Available User Options** on the system, website or organization levels.
 
 Depending on the configuration, the **Customer Visible Contact Info** list may include one or more of the following options:

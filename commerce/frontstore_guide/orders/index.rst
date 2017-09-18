@@ -12,7 +12,7 @@ The following guide focuses on the Order History section of the OroCommerce fron
 
 Open and past orders are located:
 
-1. In the Quick Access Menu under **Orders**
+1. In the Quick Access Menu under **Orders**.
 2. Under **Account > Order History** in the menu on the left.
    
 
@@ -147,12 +147,17 @@ To create an order from a shopping list:
 Quick Order Form 
 ~~~~~~~~~~~~~~~~
 
-The quick order form allows customers to work on large orders in an efficient manner using search by product SKUs and names, or import their purchase lists into the system. Customers can work on multiple orders simultaneously and they can easily switch between different shopping carts or start new orders at any time.
+The quick order form allows customers to work on large orders in an efficient manner using search by product SKUs and names, or import their purchase lists into the system. Customers can work on multiple orders simultaneously and they can easily switch between different shopping carts or start new orders at any time. Quick order forms can be created by both registered and guest users.
 
 To create an order using a quick order form:
 
-1. Navigate to :ref:`Quick Access Menu <frontstore-guide--navigation-quick-access-menu>` n the top right corner of the page
+1. Navigate to :ref:`Quick Access Menu <frontstore-guide--navigation-quick-access-menu>` in the top right corner of the page.
 2. Click **Quick Order Form**.
+
+   .. note:: Please note that if you are a guest user, you will be able to see only **Quick Order Form** at the top. Only registered customers can view and manage quotes and orders. Also, please keep in mind that only one :ref:`shopping list <frontstore-guide--shopping-lists>` is available for guest customers.
+
+     .. image:: /frontstore_guide/img/orders/GuestQuickOrderButton.png
+
 3. Provide order details (item, quantity #, and unit) in the given fields and click **Create Order**.
    
    .. note:: 
@@ -174,6 +179,11 @@ To create an order using a quick order form:
    Then click **Create Order**.
 
    .. note:: You can also :ref:`Request a Quote <frontstore-guide--rfq>` and Add the order to the Quick Order Shopping List.
+
+   .. important:: If you are creating an order as a guest user, please keep in mind that you are only allowed one shopping list. Therefore, when creating an order, your default shopping list will be overwritten with the items from your order.
+
+          .. image:: /frontstore_guide/img/orders/SampleGuestCheckout11.png
+
    
 4. You can also import a purchase list into the system in the **Upload Your order** section:
 
@@ -219,7 +229,7 @@ To simplify ordering process when purchasing several variations of one product, 
 Checkout Process
 ^^^^^^^^^^^^^^^^
 
-Once the products for purchase and their quantity have been selected, the customer has to go through a series of steps to submit the order.
+Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 
 **Step 1: Billing Information**
    
@@ -281,8 +291,38 @@ Once the products for purchase and their quantity have been selected, the custom
 
    .. image:: /user_guide/img/system/workflows/checkout/Checkout_BilInfo.png
 
+.. _frontstore-guide--orders-checkout--guest:
+
+Guest Checkout
+~~~~~~~~~~~~~~
+
+In the Oro front store, guest customers can place orders similarly to registered users. They are, however, limited to just one shopping list.
+
+Unauthenticated customers can proceed to the checkout through:
+
+* Guest Quick Order Forms
+* Guest Shopping Lists
+
+At the checkout, guest customers can:
+
+* Login if they have forgotten to do this before placing items in the shopping list.
+* Create an account.
+* Register during order review by providing only their email address and the password for the account. Neither the order nor the shopping list is lost in this case.
+
+.. include:: /frontstore_guide/orders/sample_guest_checkout.rst
+   :start-after: begin_sample_checkout
+   :end-before: finish_sample_checkout
+
+
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+
+   sample_guest_checkout
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

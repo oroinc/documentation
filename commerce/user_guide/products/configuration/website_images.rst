@@ -15,12 +15,15 @@ To update the product watermark settings:
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click the |IcConfig| **Configuration** icon to start editing the configuration.
 3. Select **Commerce > Product > Product Images** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/product/product_images/ProductImagesPerWebsite.png
-      :class: with-border
+The following page opens.
 
-   The following options are available:
+.. image:: /user_guide/img/system/configuration/product/product_images/ProductImagesPerWebsite.png
+   :class: with-border
+
+The following options are available:
 
    * **File** -- The image file with the watermark on a transparent background.
    * **Size** -- The size of the watermark in percentage compared to the whole image.

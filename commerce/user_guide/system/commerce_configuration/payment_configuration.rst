@@ -15,10 +15,13 @@ To configure the merchant location:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Payment > General** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/payment/general/merchant_location.png
-      :class: with-border
+The following page opens:
+
+.. image:: /user_guide/img/system/configuration/payment/general/merchant_location.png
+   :class: with-border
 
 3. To customize the merchant location:
 

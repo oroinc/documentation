@@ -14,10 +14,13 @@ You can configure whether to use popup or inline view for the image gallery per 
 2. For the necessary organization, hover over the |IcMore| more actions menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Products > Product Images** in the menu to the left.
 
-   The following page opens:
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/product/product_images/ImageGalleryOrganization.png
-      :class: with-border
+The following page opens:
+
+.. image:: /user_guide/img/system/configuration/product/product_images/ImageGalleryOrganization.png
+   :class: with-border
 
 4. When **Popup Gallery on Product View** is enabled, image gallery in the front store will take the following form:
 

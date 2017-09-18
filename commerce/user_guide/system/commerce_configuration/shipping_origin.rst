@@ -14,12 +14,15 @@ To change the global shipping origin:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Shipping > Shipping Origin** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/shipping/shipping_origin/ShippingOrigin.png
-      :class: with-border
+The following page opens:
 
-   The following options are available on the page:
+.. image:: /user_guide/img/system/configuration/shipping/shipping_origin/ShippingOrigin.png
+   :class: with-border
+
+The following options are available on the page:
 
    * Country
    * Region/State

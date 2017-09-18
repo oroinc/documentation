@@ -40,8 +40,6 @@ This section contains information on the system configuration options specific f
 
    /user_guide/products/configuration/index.rst
 
-   /user_guide/system/commerce_configuration/guest_shopping_list.rst
-
    /user_guide/system/commerce_configuration/sales_info.rst
 
    /user_guide/system/commerce_configuration/contact_us.rst
@@ -59,3 +57,4 @@ This section contains information on the system configuration options specific f
    sales_info
 
    guest_access_overview
+

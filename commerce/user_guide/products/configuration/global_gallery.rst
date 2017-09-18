@@ -14,10 +14,13 @@ To configure image gallery options globally:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Product > Product Images** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/product/product_images/ImageGallery.png
-      :class: with-border
+The following page opens.
+
+.. image:: /user_guide/img/system/configuration/product/product_images/ImageGallery.png
+   :class: with-border
 
 3. When **Popup Gallery on Product View** is enabled, image gallery in the front store will take the following form:
 

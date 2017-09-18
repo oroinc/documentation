@@ -10,7 +10,10 @@ To change the default inventory statuses:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Inventory > Allowed Statuses** in the menu to the left.
 
-   The following page opens:
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. image:: /user_guide/img/system/configuration/inventory/allowed_statuses/AllowedStatuses.png
       :class: with-border

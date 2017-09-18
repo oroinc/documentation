@@ -11,23 +11,29 @@ Configure Guest Shopping Lists per Website
 To enable guest shopping lists per website:
 
 1. Navigate to **System > Websites** in the main menu.
-2. For the necessary website, hover over the |IcMore| *more actions* menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Shopping List** in the menu on the left.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-.. The following page opens:
+The following page opens:
 
-.. ADD SCREEN WHEN CHECKOUT BECOMES AVAILABLE
+.. image:: /user_guide/img/system/configuration/sales/shopping_list/ShopListWebsite.png
 
 4. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 5. In the **Guest Shopping List** section, set whether guests are allowed to create and manage shopping lists.
 
-   By default, guest shopping lists are enabled.
+   By default, guest shopping lists are disabled.
 
-   To disable guest shopping lists, clear the *Use System* and then *Enable Guest Shopping List* checkboxes.
+   To enable guest shopping lists, clear *Use System* and select the *Enable Guest Shopping List* check box.
 
 
-6. In the **Guest Shopping List Owner Settings** section, select the user who will be the default owner of all guest shopping lists.
+6. In the **Guest Shopping List Owner Settings** section, select the user who will be the default owner of all guest shopping lists. Depending on the roles and permissions of the owner, guest shopping lists may or may not be viewed and managed by the users who are subordinated to the owner.
+
+   .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest shopping lists, adjust permissions for the shopping list entity in their roles accordingly.
+
+
 7. Click **Save Settings**.
 
 .. note:: When **Use System** checkbox is enabled, :ref:`system settings <user-guide--system-configuration--commerce-sales-shopping-list-global>` are applied.

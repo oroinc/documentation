@@ -13,7 +13,10 @@ To change the default settings for an organization:
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Customer > Customer Users** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. image:: /user_guide/img/system/configuration/customer/customer_users/CustomerUsersPerOrganization.png
       :class: with-border

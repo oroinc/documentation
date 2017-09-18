@@ -15,7 +15,10 @@ To customize the segment for featured products that is used by default for or or
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Featured Products** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. TODO add screenshot
 

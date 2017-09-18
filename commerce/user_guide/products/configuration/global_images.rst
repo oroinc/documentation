@@ -15,10 +15,12 @@ To update the product watermark settings:
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Product Images** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. image:: /user_guide/img/system/configuration/product/product_images/ProductImages.png
-      :class: with-border
 
    The following options are available:
 

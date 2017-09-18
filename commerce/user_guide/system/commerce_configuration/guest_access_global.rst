@@ -1,14 +1,18 @@
 :orphan:
 
 
-Enabling Global Guest Access 
-----------------------------
+Enabling Website Guest Access Globally
+--------------------------------------
 
 .. begin
 
 To enable guest access globally:
 
 1. Navigate to **System > Configuration > Commerce > Guests > Website Access**.
+
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 2. Select the **Enable Guest Access** checkbox.
 3. Click **Save Settings**.
    

@@ -12,11 +12,15 @@ Enabling sales representative information globally sets system settings as defau
 To enable or disable the display of sales representative information in the front store :ref:`footer links <frontstore-guide--navigation-footer>` globally:
 
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
+
 2. Select **Commerce > Sales > Contacts** in the menu to the left.
 
-   The Customer Visible Contact Info page opens:
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/sales/contacts/SalesInfoGlobal.png
+The Customer Visible Contact Info page opens:
+
+.. image:: /user_guide/img/system/configuration/sales/contacts/SalesInfoGlobal.png
 
 Set Display Details
 ^^^^^^^^^^^^^^^^^^^

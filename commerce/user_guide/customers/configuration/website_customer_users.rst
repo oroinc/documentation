@@ -13,12 +13,15 @@ To change the default settings for a website:
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Customer Users** in the menu on the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/customer/customer_users/CustomerUsersPerWebsite.png
-      :class: with-border
+The following page opens.
 
-   The following table describes the options available on the page:
+.. image:: /user_guide/img/system/configuration/customer/customer_users/CustomerUsersPerWebsite.png
+   :class: with-border
+
+The following table describes the options available on the page:
 
    +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Name                                       | Description                                                                                                                                                                                               |

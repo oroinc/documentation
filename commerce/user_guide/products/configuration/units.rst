@@ -18,12 +18,15 @@ To update the product unit settings:
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Product Unit** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /user_guide/img/system/configuration/product/product_unit/ProductUnit.png
-      :class: with-border
+The following page opens.
 
-   The following options are available:
+.. image:: /user_guide/img/system/configuration/product/product_unit/ProductUnit.png
+   :class: with-border
+
+The following options are available:
 
    * **Unit Rounding Type** -- An algorithm that is used to round the volume specified for this unit (ceil, floor, half down, or half up).
    * **Single Unit** -- When enabled, it limits the product unit to just one default value and restricts adding new product units.

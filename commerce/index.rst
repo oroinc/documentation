@@ -258,6 +258,10 @@ This section provides links to the online documentation for the latest OroCommer
 
         user_guide/index
 
+        seo_config_guide/index
+
+        frontstore_guide/index
+
         dev_guide/index
 
         admin_guide/index
@@ -265,10 +269,6 @@ This section provides links to the online documentation for the latest OroCommer
         community/index
 
         system_requirements
-
-        seo_config_guide/index
-
-        frontstore_guide/index
 
 ..        configuration/index
 

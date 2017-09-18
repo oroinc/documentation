@@ -12,7 +12,10 @@ To change the default settings globally:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Customer > Customer Users** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. image:: /user_guide/img/system/configuration/customer/customer_users/CustomerUsers.png
       :class: with-border

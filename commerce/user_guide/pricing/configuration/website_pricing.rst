@@ -23,7 +23,10 @@ To change the default currency settings for the website:
 
 3. Select **Commerce > Catalog > Pricing** in the menu to the left.
 
-   The following page opens.
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
    .. image:: /user_guide/img/system/websites/config_commerce_catalog_pricing.png
       :class: with-border

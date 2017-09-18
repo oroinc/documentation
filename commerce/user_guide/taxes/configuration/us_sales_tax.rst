@@ -15,6 +15,9 @@ To label digital product codes in OroCommerce as taxable in US:
 
 1. Navigate to **System > Configuration > Commerce > Taxation > US Sales Tax**.
 
+.. note::
+   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
 2. Clear the **Use Default** check and click on **Choose the value**. To filter list of product tax codes, start typing the code name. The list refreshes automatically to show the values matching the text you enter. Once the necessary product code is found, select it to add to the Digital Products Tax Codes list.
 
 3. Click **Save**.
