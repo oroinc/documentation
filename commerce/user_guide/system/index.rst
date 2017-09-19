@@ -28,4 +28,6 @@ This section contains information on optional OroCommerce post-install configura
 
    /user_guide/system/email/index
 
+   general_setup/index
+
    /user_guide/system/glossary
