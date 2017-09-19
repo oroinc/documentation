@@ -304,7 +304,7 @@ which ensures that the column is recognized properly.
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/MigrationBundle/Schema/v1_0/AddCustomFieldMigration.php
+    // src/Acme/DemoBundle/Migrations/Schema/v1_0/AddCustomFieldMigration.php
     namespace Acme\DemoBundle\Migrations\Schema;
 
     use Doctrine\DBAL\Schema\Schema;
