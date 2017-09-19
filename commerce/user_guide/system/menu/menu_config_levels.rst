@@ -3,7 +3,7 @@
 Menu Configuration Levels
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. start 1
+.. start_1
 
 .. _doc--menu-config-levels:
 
@@ -120,11 +120,11 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
 
 3. Click |IcConfig| **Edit Frontend Menu**.
 
-4. UUpdate the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
+4. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
 
    The changes apply automatically.
 
-.. stop 2
+.. stop_2
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

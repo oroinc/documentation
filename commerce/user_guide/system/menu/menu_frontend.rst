@@ -19,9 +19,12 @@ On the page that opens, the menu item tree is shown in the left panel. The **Gen
 .. image:: /user_guide/img/system/menus/frontend_menu_2.png
    :class: with-border
 
-Moreover, you can customize additional visibility restrictions in the following fields in order to selectively display or hide some menu items from the customer.
+Moreover, you can customize additional visibility restrictions in the following fields in order to selectively display or hide some menu items from the customer:
 
-**User Agent**
+.. content:: :local:
+
+User Agent
+~~~~~~~~~~
 
 User agent is unique to every customer. It reveals a catalog of technical data about the device and software that the customer is using. You can control whether to show or hide some menu items from the customer by proceeding with the following steps:
 
@@ -59,7 +62,8 @@ User agent is unique to every customer. It reveals a catalog of technical data a
    .. image:: /user_guide/img/system/menus/frontend_menu_6.png
       :class: with-border
 
-**Exclude On Screens**
+Exclude On Screens
+~~~~~~~~~~~~~~~~~~
 
 **Exclude On Screens** enables you to hide the menu items on the specified screens.
 
@@ -75,7 +79,8 @@ The menu item which you have selected to be hidden should now be excluded from t
 .. image:: /user_guide/img/system/menus/frontend_menu_8.png
    :class: with-border
 
-**Condition**
+Condition
+~~~~~~~~~
 
 **Condition** enables you to restrict visibility of a menu item using the following functions:
 
@@ -83,8 +88,6 @@ The menu item which you have selected to be hidden should now be excluded from t
 
   .. image:: /user_guide/img/system/menus/frontend_menu_9.png
      :class: with-border
-
-|
 
   .. image:: /user_guide/img/system/menus/frontend_menu_10.png
      :class: with-border
@@ -107,8 +110,6 @@ The menu item which you have selected to be hidden should now be excluded from t
 
      .. image:: /user_guide/img/system/menus/frontend_menu_11.png
         :class: with-border
-
-|
 
      .. image:: /user_guide/img/system/menus/frontend_menu_12.png
         :class: with-border

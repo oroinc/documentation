@@ -3,7 +3,7 @@
 Customizing a Menu
 ------------------
 
-.. begin 1
+.. begin_1
 
 Generic Principles
 ^^^^^^^^^^^^^^^^^^
@@ -70,11 +70,11 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 
   .. image:: /user_guide/img/system/menus/edit/menus_actions_d&dunder.png
 
-.. finish 1
+.. finish_1
 
 .. _doc--system--menu--config--add-menu-item:
 
-.. begin 2
+.. begin_2
 
 Add a Menu Item
 ^^^^^^^^^^^^^^^
@@ -227,7 +227,7 @@ To reset any customization changes and roll back to the menu that is provided ou
     You need to reload the page to see changes.
 
 
-.. finish 2
+.. finish_2
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
