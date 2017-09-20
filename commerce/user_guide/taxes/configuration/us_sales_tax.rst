@@ -1,3 +1,5 @@
+.. _user-guide--taxes--us:
+
 Configure US Sales Tax for Digital Products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

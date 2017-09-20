@@ -1,12 +1,12 @@
 :orphan:
 
 Customizing a Menu
-------------------
+^^^^^^^^^^^^^^^^^^
 
-.. begin
+.. begin_1
 
 Generic Principles
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 A menu may be multi-level like, for example, a default OroCRM and OroCommerce Management Console main menu. The child menu items are nested under parent menu items (e.g. **Accounts**, etc are nested under the **Customers**).
 
@@ -23,7 +23,7 @@ Dividers help you logically organize menu items.
    .. image:: /user_guide/img/system/menus/ApplicationMenu.png
 
 Edit a Menu
-^^^^^^^^^^^
+~~~~~~~~~~~
 
 To view and edit menu contents, click on the menu name or on the |IcView| **View** icon in the corresponding row of the menu list.
 
@@ -35,7 +35,7 @@ On the page that opens, the menu item tree is shown in the left panel. Center is
 
 
 Toggle the Menu Tree View
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Hide / Show the Menu Tree
 """""""""""""""""""""""""
@@ -56,7 +56,7 @@ To expand / collapse all menu items, click the ellipses drop-down menu on the to
 .. image:: /user_guide/img/system/menus/edit/menus_application_expall.png
 
 Rearrange Menu Items / Dividers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+"""""""""""""""""""""""""""""""
 
 You can change the position of an item / divider in a menu by dragging and dropping it in the left panel. You can change the order of menu items at the same level as well as move an item / divider to the higher or lower level.
 
@@ -70,8 +70,14 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 
   .. image:: /user_guide/img/system/menus/edit/menus_actions_d&dunder.png
 
+.. finish_1
+
+.. _doc--system--menu--config--add-menu-item:
+
+.. begin_2
+
 Add a Menu Item
-^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~
 
 1. In the left panel, click a menu item which will be parent for the menu item that you create.
 
@@ -110,8 +116,15 @@ Add a Menu Item
 .. important::
     You need to reload the page to see changes.
 
+Edit a Frontend Menu
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: menu_frontend.rst
+   :start-after: start
+   :end-before: finish
+
 Add a Divider
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 1. In the left panel, click a menu item which will be parent for the menu divider that you create.
 
@@ -128,7 +141,7 @@ The created divider will appear as the last one on the list of children of the s
 
 
 View / Edit a Menu Item
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 1. In the left panel, click a menu item that you want to view / edit.
 
@@ -139,7 +152,7 @@ View / Edit a Menu Item
 
 
 Toggle Item Visibility
-^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~
 
 Hide a Menu Item
 """"""""""""""""
@@ -176,14 +189,14 @@ To show a previously hidden menu item, perform the following steps:
     You need to reload the page to see changes.
 
 Find a Menu Item
-^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~
 
 To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon, or press :guilabel:`Enter`.
 
 .. image:: /user_guide/img/system/menus/edit/menus_application_search.png
 
 Delete a Menu Item / Divider
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. important::
     - You cannot delete default menu items.
@@ -200,7 +213,7 @@ Delete a Menu Item / Divider
      You need to reload the page to see changes.
 
 Reset a Menu
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 To reset any customization changes and roll back to the menu that is provided out of the box in Oro application:
 
@@ -214,7 +227,7 @@ To reset any customization changes and roll back to the menu that is provided ou
     You need to reload the page to see changes.
 
 
-.. stop
+.. finish_2
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
