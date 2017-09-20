@@ -56,11 +56,11 @@ To customize one of the management console menus (e.g. navigation bar or user me
 3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` section.
    The changes apply automatically.
 
-.. stop 1
+.. stop_1
 
 .. _doc--system--menu--config-levels--frontend-menus:
 
-.. start 2
+.. start_2
 
 Customize Default Frontend Menus
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

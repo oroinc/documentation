@@ -12,26 +12,26 @@ Edit a Frontend Menu
 To update the frontend menu contents, follow the :ref:`Customize Default Frontend Menus <doc--system--menu--config-levels--frontend-menus>` guide and click the menu name or on the |IcView| View icon in the corresponding row of the frontend menu list.
 
 .. image:: /user_guide/img/system/menus/frontend_menu_1.png
-   :class: with-border
 
 On the page that opens, the menu item tree is shown in the left panel. The **General Information** section is reserved for the menu item configuration, which you can update, as shown in the :ref:`Add a Menu Item <doc--system--menu--config--add-menu-item>` section.
 
 .. image:: /user_guide/img/system/menus/frontend_menu_2.png
-   :class: with-border
 
 Moreover, you can customize additional visibility restrictions in the following fields in order to selectively display or hide some menu items from the customer:
 
-.. content:: :local:
+.. contents:: :local:
 
 User Agent
 ~~~~~~~~~~
 
 User agent is unique to every customer. It reveals a catalog of technical data about the device and software that the customer is using. You can control whether to show or hide some menu items from the customer by proceeding with the following steps:
 
-.. image:: /user_guide/img/system/menus/frontend_menu_3.png
-   :class: with-border
+1) Click **+Add** next to the **User Agent** field.
 
-1) Click **Add** next to the **User Agent** field.
+The following text field displays:
+
+.. image:: /user_guide/img/system/menus/frontend_menu_3.png
+
 2) Fill in the text field with a user agent substring or a string, if required.
 
 .. note::
@@ -40,7 +40,7 @@ User agent is unique to every customer. It reveals a catalog of technical data a
    A user agent substring is a part of the aforementioned string (e.g. Mozilla, Windows, Safari, etc).
 
 .. image:: /user_guide/img/system/menus/frontend_menu_4.png
-   :class: with-border
+   :width: 70%
 
 3) Select the corresponding operation from the list.
 
@@ -53,31 +53,36 @@ User agent is unique to every customer. It reveals a catalog of technical data a
    * The *does not match* operation checks when the specified value does not match the user agent string.
 
    .. image:: /user_guide/img/system/menus/frontend_menu_5.png
-      :class: with-border
+      :width: 70%
 
-4) To limit a range of user agents, click **+And** below the operation field within the same block to add another condition. This **And** stands for **AND**, meaning that only those user agents that comply with all the specified conditions will be selected.
+4) To create more advanced condition, you can combine constrains into the expression using logical AND and OR operators:
 
-5) Click separate **+Add** which stands for **OR** and activates the operation once either the first or the second condition complies.
+   * Click **+ And** below the operation field within the same block to add another constrain block into the expression via AND.
+
+     *AND* operation means that only those user agents that comply with all the specified conditions in a group will be selected.
 
    .. image:: /user_guide/img/system/menus/frontend_menu_6.png
-      :class: with-border
+
+   * Click **+ Add** at the bottom of the expression block to add another constrain block into the expression via OR.
+
+     *OR* operation activates the expression once any of the constraint blocks in a group evaluates to true.
+
+   .. image:: /user_guide/img/system/menus/frontend_menu_7.png
 
 Exclude On Screens
 ~~~~~~~~~~~~~~~~~~
 
-**Exclude On Screens** enables you to hide the menu items on the specified screens.
+**Exclude On Screens** enables you to hide the menu items on the specified screens sizes.
 
-1) Click any screen to select the one for which the menu will be hidden from the customer.
+1) Click any screen size to select the one for which the menu will be hidden from the customer.
 2) Hold **Ctrl** and click the value to select/deselect multiple screens.
 3) Click **Save**.
 
-.. image:: /user_guide/img/system/menus/frontend_menu_7.png
-   :class: with-border
-
-The menu item which you have selected to be hidden should now be excluded from the front store.
-
 .. image:: /user_guide/img/system/menus/frontend_menu_8.png
-   :class: with-border
+
+As an illustration, let us hide the **About** menu item from the desktops with 13 in. screen by enabling **Exclude On Screens** and selecting the corresponding screen size.
+
+.. image:: /user_guide/img/system/menus/frontend_menu_9.png
 
 Condition
 ~~~~~~~~~
@@ -86,11 +91,7 @@ Condition
 
 * The *is_logged_in()* function stands for the *registered users*. If entered, only the users who have logged into the Oro front store are enabled to view the corresponding menu item.
 
-  .. image:: /user_guide/img/system/menus/frontend_menu_9.png
-     :class: with-border
-
   .. image:: /user_guide/img/system/menus/frontend_menu_10.png
-     :class: with-border
 
 * The *!is_logged_in()* function stands for the *non-registered users*. If entered, only the unregistered users are enabled to view the corresponding menu item.
 

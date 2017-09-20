@@ -38,14 +38,14 @@ Toggle the Menu Tree View
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Hide / Show the Menu Tree
-"""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To minimize or maximize the left menu panel, click a double arrow on the top right of the panel.
 
 .. image:: /user_guide/img/system/menus/edit/menus_application_showpanel.png
 
 Expand / Collapse a Menu Tree
-"""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To expand / collapse a parent menu item, click an arrow in front of it.
 
@@ -155,7 +155,7 @@ Toggle Item Visibility
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Hide a Menu Item
-""""""""""""""""
+~~~~~~~~~~~~~~~~
 
 If you do not want one of the default menu items to be visible on the interface, you can hide it.
 
@@ -174,7 +174,7 @@ To hide a menu item, perform the following steps:
     You need to reload the page to see changes.
 
 Show a Menu Item
-""""""""""""""""
+~~~~~~~~~~~~~~~~
 
 To show a previously hidden menu item, perform the following steps:
 
