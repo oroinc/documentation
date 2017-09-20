@@ -1,7 +1,7 @@
 :orphan:
 
 Menu Configuration Levels
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. start_1
 
@@ -24,7 +24,7 @@ In Oro applications, you can manage the way menus look and the elements they con
 * `Customize Frontend Menus per Customer`_
 
 Customize Default Management Console Menus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To customize one of the default management console menus (e.g. navigation bar or user menu):
 
@@ -34,7 +34,7 @@ To customize one of the default management console menus (e.g. navigation bar or
    The changes apply automatically.
 
 Customize Management Console Menus per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: This option is available in the Enterprise edition only.
 
@@ -47,7 +47,7 @@ To customize one of the management console menus (e.g. navigation bar or user me
    The changes apply automatically.
 
 Customize Management Console Menus for Your Own Use
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To customize one of the management console menus (e.g. navigation bar or user menu) for your own use:
 
@@ -63,7 +63,7 @@ To customize one of the management console menus (e.g. navigation bar or user me
 .. start_2
 
 Customize Default Frontend Menus
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To customize one of the default front store menus (e.g. commerce main menu) or customer/partner portal menus (e.g. customer user menu):
 
@@ -73,7 +73,7 @@ To customize one of the default front store menus (e.g. commerce main menu) or c
    The changes apply automatically.
 
 Customize Frontend Menus per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: This option is available in the Enterprise edition only.
 
@@ -86,7 +86,7 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
    The changes apply automatically.
 
 Customize Frontend Menus per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note:: This option is available in the Enterprise edition only.
 
@@ -99,7 +99,7 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
    The changes apply automatically.
 
 Customize Frontend Menus per Customer Group
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To customize one of the front store menus (e.g. commerce main menu) or customer/partner portal menus (e.g. customer user menu) for the customers that belong to a particular customer group:
 
@@ -110,7 +110,7 @@ To customize one of the front store menus (e.g. commerce main menu) or customer/
    The changes apply automatically.
 
 Customize Frontend Menus per Customer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To customize one of the front store menus (e.g. commerce main menu) or customer/partner portal menus (e.g. customer user menu) for a particular customer:
 

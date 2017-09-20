@@ -11,7 +11,7 @@ In this section you will learn how to configure the menus globally, per organiza
     :depth: 1
 
 Menu Types Overview
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 .. contents:: :local:
     :depth: 1
@@ -21,7 +21,7 @@ Menu Types Overview
    :end-before: finish
 
 Permissions Required to Customize Menus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The ability to configure menus globally, per organization, and for personal use is controlled by the two capabilities: **Manage Menus** and **Access system configuration**.
 
@@ -32,7 +32,7 @@ To enable a user to personalise menus for themselves and configure menus for eac
 To enable a user to configure menus globally, for all organizations, websites, and users whose configuration fall back to the global settings, both **Manage Menus** and **Access system configuration** capabilities should be enabled for the user role.
 
 Menu Configuration Levels
-~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: menu_config_levels.rst
    :start-after: start_1
@@ -45,7 +45,7 @@ Menu Configuration Levels
 .. _doc-config-menus-menuspage:
 
 Menu Management
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 On various :ref:`configuration levels <doc--menu-config-levels>`, the menu and frontend menu list looks the same and the flow for customizing any menu is similar.
 
@@ -78,7 +78,7 @@ On the menu list you can see the menus available for review or customization.
    :end-before: finish_2
 
 Related Topics
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 * :ref:`Customize a Menu <doc-managing-app-menu>` in the Developer Guide
 

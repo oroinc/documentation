@@ -5,7 +5,7 @@
 .. insert into: Customize Default Frontend Menus (www.orocommerce.com/documentation/current/user-guide/system/menu)
 
 Edit a Frontend Menu
-^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~
 
 .. start
 
@@ -22,7 +22,7 @@ Moreover, you can customize additional visibility restrictions in the following 
 .. contents:: :local:
 
 User Agent
-~~~~~~~~~~
+""""""""""
 
 User agent is unique to every customer. It reveals a catalog of technical data about the device and software that the customer is using. You can control whether to show or hide some menu items from the customer by proceeding with the following steps:
 
@@ -70,7 +70,7 @@ The following text field displays:
    .. image:: /user_guide/img/system/menus/frontend_menu_7.png
 
 Exclude On Screens
-~~~~~~~~~~~~~~~~~~
+""""""""""""""""""
 
 **Exclude On Screens** enables you to hide the menu items on the specified screens sizes.
 
@@ -85,7 +85,7 @@ As an illustration, let us hide the **About** menu item from the desktops with 1
 .. image:: /user_guide/img/system/menus/frontend_menu_9.png
 
 Condition
-~~~~~~~~~
+"""""""""
 
 **Condition** enables you to restrict visibility of a menu item using the following functions:
 
