@@ -131,6 +131,10 @@ Images
 
    <i class="fa fa-random fa-lg" aria-hidden="true"></i>
 
+.. |IcMergeAccounts| raw:: html
+
+   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+
 .. |IcDashboard| raw:: html
 
    <i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i>

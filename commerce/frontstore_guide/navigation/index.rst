@@ -6,7 +6,7 @@ Getting Started with Navigation and UI
 Oro applications offer high flexibility and customization, which means that the user interface of the stores may differ. However, the integral parts that constitute the interface are cross-functional.
 
 .. contents:: :local:
-   :depth: 2
+   :depth: 3
 
 General Layout
 ^^^^^^^^^^^^^^
@@ -240,6 +240,10 @@ View tables usually contain one or more options applied to specific records with
 
 .. note:: The types of options available are subject to the type of data contained in the table and to the system configuration.
 
+.. include:: /frontstore_guide/navigation/mass_actions_front_store.rst
+   :start-after: begin
+   :end-before: finish
+
 .. _frontstore-guide--navigation-search:
 
 Search
@@ -255,6 +259,11 @@ Search is the fastest way to find a specific product:
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+
+   mass_actions_front_store
 
 .. finish
 

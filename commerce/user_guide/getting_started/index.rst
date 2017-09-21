@@ -32,6 +32,7 @@ This section of the guide will provide an introduction to OroCommerce's user int
     access_oro/index
     my_oro/index
     activities/index
+    mass_actions_management_console
 
 ..    records/index
 

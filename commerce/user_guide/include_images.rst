@@ -13,6 +13,10 @@ Images
 
    <i class="fa fa-archive fa-lg" aria-hidden="true"></i>
 
+.. |IcMergeAccounts| raw:: html
+
+   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+
 .. |IcSend| raw:: html
 
    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
