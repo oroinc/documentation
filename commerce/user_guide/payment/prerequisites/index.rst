@@ -14,3 +14,4 @@ For detailed information about configuration steps that should precede the integ
    authorizenet
    wirecard
    infinitepay
+   apruve

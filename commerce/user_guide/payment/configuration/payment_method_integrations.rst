@@ -51,6 +51,8 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 
    InfinitePay <payment_methods/infinitepay>
 
+   Apruve <payment_methods/apruve>
+
 
 Delete an Integration with a Payment Method Provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

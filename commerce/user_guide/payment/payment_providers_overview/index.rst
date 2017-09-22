@@ -20,4 +20,6 @@ For detailed information about payment provider services supported in OroCommerc
    authorizenet
    wirecard
    infinitepay
+   apruve
+
 
