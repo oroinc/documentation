@@ -1,4 +1,6 @@
-.. _user-guide--marketing--promotions:
+:orphan:
+
+.. Add labels from these docs in 1.4
 
 Promotions
 ==========
@@ -10,7 +12,6 @@ In your Oro application, you can configure promotions, apply various discount op
 The following topics will delve into how to view, create and manage promotions in your Oro application:
 
 .. contents:: :local:
-   :depth: 1
 
 Configure Promotions
 --------------------
@@ -21,27 +22,39 @@ Configure Promotions
 Create Promotions
 -----------------
 
-.. include:: /user_guide/marketing_promotions/create.rst
+
+.. include:: /user_guide/marketing_promotions/create_1.3.rst
    :start-after: begin
 
-View Promotions
+View Promotions 
 ---------------
 
-.. include:: /user_guide/marketing_promotions/viewlist.rst
+.. include:: /user_guide/marketing_promotions/viewlist_1.3.rst
    :start-after: begin
    :end-before: finish
 
-Manage Discounts in Orders
---------------------------
 
-.. include:: /user_guide/marketing_promotions/promotions_in_order/index.rst
-   :start-after: begin_promotions_in_order
-   :end-before: finish_promotions_in_order
+Set Up a Sample Promotion
+-------------------------
+
+.. include:: /user_guide/marketing_promotions/sample_promotion_1.3.rst
+      :start-after: begin
+      :end-before: finish
+
+.. This topic is relevant to 2.3 only
+
+Manage Promotions in Orders
+---------------------------
+
+.. include:: /user_guide/marketing_promotions/edit_in_order_1.3.rst
+      :start-after: begin
+      :end-before: finish
+
+.. This topic is relevant to 2.3 only
 
 Related Topics
---------------
+~~~~~~~~~~~~~~
 
-* :ref:`Promotions and Coupons in Use <user-guide--marketing--promotions--coupons--sample>`
 * :ref:`Coupons <user-guide--marketing--promotions--coupons>`
 * :ref:`Orders <user-guide--sales--orders>`
 * :ref:`Shopping Lists <frontstore-guide--shopping-lists>`
@@ -52,8 +65,11 @@ Related Topics
 
    configuration/index
 
-   create
+   create_1.3
 
-   viewlist
+   viewlist_1.3
 
-   promotions_in_order/index
+   edit_in_order_1.3
+
+   sample_promotion_1.3
+ 

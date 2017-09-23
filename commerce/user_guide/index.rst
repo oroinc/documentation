@@ -139,6 +139,8 @@ Table of Contents
 
    marketing_promotions/index
 
+   marketing_coupons/index
+
    marketing_content_blocks/index
 
    taxes/index
