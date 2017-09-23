@@ -23,57 +23,62 @@ Open and past orders are located:
 View Order History 
 ^^^^^^^^^^^^^^^^^^
 
-The Order History view page contains two sections:
+The Order History page contains two sections:
 
-1. All open orders
-2. All past orders
+* All open orders
+* All past orders
    
 All open orders table contains the following information:
 
-1. Ordered by
-2. Step (Order review, Payment, Billing Information)
-3. Started From (Quote #X, Shopping List X)
-4. Items
-5. Subtotal
-6. Started at (date)
-7. Last Updated
-8. Payment Method
-9. Shipping Method
-10. PO Number
-11. DNSLT (Do Not Ship Later Than)
-12. Shipping
-13. Total
-14. Customer Notes
-15. Completed
-16. More Actions (Check out, Delete)
+* Ordered By
+* Step (Order review, Payment, Billing Information)
+* Started From (Quote #X, Shopping List X)
+* Items
+* Subtotal
+* Started at (date)
+* Last Updated
+* Payment Method
+* Shipping Method
+* PO Number
+* DNSLT (Do Not Ship Later Than)
+* Shipping
+* Total
+* Customer Notes
+* Completed
 
-.. note:: Information displayed in the table depends on the columns selected in the |IcSettings| Grid Settings.
 
+Click |IcCheckout| **Check Out** at the end of the row to proceed to the checkout. You will be redirected to the ordering process page (the step where you left off).
+
+Click |IcDelete| **Delete** at the end of the row to delete an open order.
 
 All past orders table contains the following information:
 
-1. Order Number
-2. Create At
-3. Shipping Address
-4. Total
-5. Total ($)
-6. Payment Method
-7. Payment Status
-8. PO Number
-9. DNSLT (Do Not Ship Later Than)
-10. Currency
-11. Subtotal
-12. Subtotal ($)
-13. Shipping Method
-14. Updated At
-15. More Actions (View)
+* Order Number
+* Create At
+* Shipping Address
+* Total
+* Payment Method
+* Payment Status
+* PO Number
+* DNSLT (Do Not Ship Later Than)
+* Currency
+* Subtotal
+* Shipping Method
+* Updated At
+
+Click |IcView| **View** at the end of the row to view an order.
+
+
+.. note:: Information displayed in the tables depends on the columns selected in the |IcSettings| grid settings.
+
 
 Within each of the tables, you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
-1. Refresh the view table: click |IcRefresh| to update the view table.
-2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
-3. Table settings: click |IcSettings| to define which columns to show in the table.
-4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
+* Refresh the view table: click |IcRefresh| to update the view table.
+* Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
+* Adjust the table settings: click |IcSettings| to define which columns to show in the table.
+* Filter the displayed orders: click |IcFilter| :ref:`Filters <frontstore-guide--navigation-filters>` .
+
 
 .. _frontstore-guide--orders-view:
 
@@ -83,6 +88,8 @@ View Orders
 Open 
 ~~~~
 
+Click the order in the table to open it.
+
 On opening a selected open order, you will be redirected to the ordering process page (the step where you left off).
 
 .. image:: /frontstore_guide/img/orders/OpenOrder.png
@@ -91,23 +98,25 @@ On opening a selected open order, you will be redirected to the ordering process
 Past 
 ~~~~
 
+Click the order in the table to open it.
+
 Past order view page contains the following information:
 
-1. Order Date
-2. Billing Address
-3. Shipping Address
-4. Shipping Tracking Numbers
-5. Shipping Method
-6. Payment Method
-7. Payment Status
-8. Items Ordered (Products, Quantity, Price, Ship by, Notes)
-9. Subtotal
-10. Shipping Price
-11. Tax
-12. Discount
-13. Total
+* Order Date
+* Billing Address
+* Shipping Address
+* Shipping Tracking Numbers
+* Shipping Method
+* Payment Method
+* Payment Status
+* Items Ordered (Products, Quantity, Price, Ship By, Notes)
+* Subtotal
+* Shipping Price
+* Tax
+* Discount
+* Total
     
-To go back a step, click **Back to Orders List** on the bottom left of the view page.
+To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
 
 
 .. image:: /frontstore_guide/img/orders/PastOrder.png
@@ -120,8 +129,8 @@ Create Order
 
 You can create an order in two ways:
 
-1. From a Shopping List
-2. From a Quick Order Form
+* From a shopping list
+* From a quick order form
 
 Shopping List
 ~~~~~~~~~~~~~
@@ -178,14 +187,13 @@ To create an order using a quick order form:
 
    Then click **Create Order**.
 
-   .. note:: You can also :ref:`Request a Quote <frontstore-guide--rfq>` and Add the order to the Quick Order Shopping List.
+   .. note:: You can also :ref:`Request a Quote <frontstore-guide--rfq>` and add the order to the quick order shopping List.
 
    .. important:: If you are creating an order as a guest user, please keep in mind that you are only allowed one shopping list. Therefore, when creating an order, your default shopping list will be overwritten with the items from your order.
 
           .. image:: /frontstore_guide/img/orders/SampleGuestCheckout11.png
 
-   
-4. You can also import a purchase list into the system in the **Upload Your order** section:
+4. You can also import a purchase list into the system in the **Upload Your Order** section:
 
    a) Click **Get Directions** to see a quick help on the import process and the downloadable templates to fill it.
 
@@ -231,30 +239,39 @@ Checkout Process
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 
+In the Oro front store, the checkout can be multi page or single page. Although the checkout steps themselves are the same, the way they are displayed is different. For the multi page checkout each step is displayed on a new page. For the single page checkout all steps fit one page.
+
+Multi Page Checkout
+~~~~~~~~~~~~~~~~~~~
+
 **Step 1: Billing Information**
    
-   Enter billing information for the order by selecting an existing address from the address book, or creating a new one. 
+1. Enter billing information for the order by selecting an existing address from the address book, or creating a new
+    one.
  
-   Checking **Ship to this address** will allow you to use the provided billing address as shipping. 
+2. If you wish to use the provided billing address for shipping, select the **Ship to this address** check box.
 
-   Clicking **Continue** will redirect you to the next step.
+3. Click **Continue** to proceed to the next step.
 
 **Step 2: Shipping Information**
    
-   If the **Ship to this address** box has been checked in the Billing Information step, the provided address will be automatically selected in the Shipping Information step. 
-   
-   To edit shipping information, clear the **Use billing address** box and provide a different shipping address for the order.
+.. note:: If the **Ship to this address** check box has been selected in the Billing Information step, this step will be skipped.
+
+1. Enter shipping information for the order by selecting an existing address from the address book, or creating a new one.
+
+   If the **Ship to this address** check box has been checked in the Billing Information step, the provided address will be automatically selected in the Shipping Information step.
+
+   To use billing information for shipping, select the **Use billing address** check box.
 
    .. image:: /user_guide/img/system/workflows/checkout/UseBillingAddressBox.png
 
-   .. note:: It is possible to edit *the already provided* information (until the order is submitted) by clicking |IcEditInline| on the left side of the page.
 
-   	  .. image:: /user_guide/img/system/workflows/checkout/EditInfo.png
-   	     :align: center	
-   			
+#. Click **Continue** to proceed to the next step.
+
+
 **Step 3: Shipping Method**
     
-  Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
+1. Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
 
    .. image:: /user_guide/img/system/workflows/checkout/Shipping_Info.png
 
@@ -262,34 +279,98 @@ Once the products for purchase and their quantity have been selected, both regis
 
              .. image:: /user_guide/img/marketing/promotions/ShippingDiscountFront.png
 
+#. Click **Continue** to proceed to the next step.
+
 **Step 4: Payment**
    
-   Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
+1. Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
 
-   .. image:: /user_guide/img/system/workflows/checkout/Payment.png 
+   .. image:: /user_guide/img/system/workflows/checkout/Payment.png
+
+#. Click **Continue** to proceed to the next step.
 
 **Step 5: Order Review**
 
-   Once all the necessary information has been provided, it is possible to review the order in the Order Review section:
+1. Once all the necessary information has been provided, review the order details.
 
-   * View Options for the order:
+  .. important:: Check SKUs, quantities, price, subtotal, shipping and total cost.
 
-     * Do not ship later than
-     * PO Number
-     * Notes
-     * Delete the shopping list
-    
-   * Check quantity, price, subtotal, shipping and total cost
-   * Edit the Order
-   * Edit the already provided information by clicking |IcEditInline| on the left side of the page
-  
-   To submit the order, click **Submit Order** at the bottom of the page.
+  If not all of the items are visible, click **Show Less Items** on the bottom right of the item list.
+
+  .. tip::
+
+     You can edit the order content if required. To do this, click |IcEditInline| on the top right of the item list. The shopping list page will open. Make the required changes and then click **Create Order**. You will be redirected back to the order you have been submitting.
+
+2. If required, provide additional order options:
+
+   * **Do not ship later than** --- Click the field to select the date on which the order expires.
+   * **PO Number** --- Enter the purchase order number for reference.
+   * **Notes** --- Provide any additional information regarding the order.
+   * **Delete this shopping list after submitting order** --- Select this check box to remove the shopping list after order is completed.
+
+3. To submit the order, click **Submit Order** at the bottom of the page.
 
    .. image:: /user_guide/img/system/workflows/checkout/Order_Review.png
-   .. note::     
-     It is possible to amend the order by clicking **Edit Order** in the right corner of the Order Summary section. The Order Summary section will be available for Billing Information, Shipping Information, Shipping Method and Payment pages. Editing the order will remain possible throughout the checkout process until the order is submitted.
+
+.. tip::
+
+   Until you have submitted the order, you can return back and edit any step using the step list on the left of the page:
+
+   * Click the step that you want to return to. In this case, *all the changes made on the later steps will be lost*.
+
+   * Click |IcEditInline| next to the step that that you want to edit. In this case *all the changes made on the later steps will be preserved*.
+
+     .. image:: /user_guide/img/system/workflows/checkout/EditInfo.png
+        :align: center
+
+.. tip::
+
+   It is also possible to amend the order content until the order is submitted. To do this, click |IcEditInline| **Edit Order** in the right corner of the **Order Summary** section available at the bottom in the Billing Information, Shipping Information, Shipping Method, and Payment steps.
 
    .. image:: /user_guide/img/system/workflows/checkout/Checkout_BilInfo.png
+
+
+Single Page Checkout
+~~~~~~~~~~~~~~~~~~~~
+
+In the single page checkout, you can see how far along in the checkout you are, and how many fields are left to complete it. All checkout steps are displayed on a single page.
+
+.. image:: /user_guide/img/system/workflows/single_page_checkout/SinglePageCheckout.png
+
+**Step 1: Billing Information**
+
+  .. image:: /frontstore_guide/img/orders/SPCBillingInfo.png
+
+  1. Enter billing information for the order by selecting an existing address from the address book, or creating a new one.
+
+     Selecting the **Ship to this address** check box will allow you to use the provided billing address for shipping.
+
+  2.  Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
+
+
+**Step 2: Shipping Information**
+
+  .. image:: /frontstore_guide/img/orders/SPCShippingInfo.png
+
+  1. If the **Ship to this address** check box has been checked in the Billing Information step, the provided address will be automatically used at the **Shipping Information** step.
+
+     To edit shipping information, clear the **Use billing address** check box and provide a different shipping address for the order.
+
+  2. Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
+  3. Set the **Do Not Ship Later Than** date, if applicable.
+
+
+**Step 3: Order Summary**
+
+  Once all the necessary information has been provided, it is possible to review the order in the **Order Summary** section.
+
+  .. image:: /frontstore_guide/img/orders/SPCOrderSummary.png
+
+  1. Check the item SKUs, quantity, price and the subtotal amount.
+  2. Check and/or edit **Order Options** (PO number and notes).
+  3. Select the **Delete this shopping list after submitting order** check box to delete the shopping list after submitting the order.
+  4. Edit the already provided information by clicking |IcEditInline| on the right side of the section.
+  5. Submit the order by clicking **Submit Order** on the bottom of the checkout page.
 
 .. _frontstore-guide--orders-checkout--guest:
 
@@ -312,7 +393,6 @@ At the checkout, guest customers can:
 .. include:: /frontstore_guide/orders/sample_guest_checkout.rst
    :start-after: begin_sample_checkout
    :end-before: finish_sample_checkout
-
 
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin

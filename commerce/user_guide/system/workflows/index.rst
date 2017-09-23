@@ -49,6 +49,8 @@ The following system workflows are provided out of the box in OroCommerce:
 
 * :ref:`Alternative Checkout <system--workflows--alternative-checkout-workflow>`
 
+* :ref:`Single Page Checkout <system--workflows--single-page-checkout>`
+
 * :ref:`Quote Backoffice <system--workflows--quote-backoffice-workflow>`
 
 * :ref:`Backoffice Quote Flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>`
@@ -510,4 +512,6 @@ See the following sections to get more information about the system workflows in
    rfq_frontoffice
    checkout
    alternative_checkout
+   single_page_checkout_workflow
    task_flow
+

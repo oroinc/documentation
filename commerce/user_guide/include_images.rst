@@ -381,6 +381,10 @@ Images
 
    <i class="fa fa-clipboard" aria-hidden="true"></i>
 
+.. |IcCheckout| raw:: html
+
+   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
 .. |IcSub| image:: /user_guide/img/getting_started/buttons/IcSub.png
    :align: middle
 
@@ -407,4 +411,3 @@ Images
 
 .. |InstallPack| image:: /admin_guide/img/extension/install_package.png
    :align: middle
-
