@@ -39,7 +39,7 @@ To create a new price list:
       .. image:: /user_guide/img/sales/price_lists/PriceListsCreate_general_schedule_time.png
          :class: with-border
 
-      To add another slot, click **+ Add** below the time table. Add as many slots as you need.
+      To add another time slot, click **+ Add** below the time table. Add as many slots as you need.
 
 4. In the **Product Assignment** section, enter criteria to filter the products and add them to the price list. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
 

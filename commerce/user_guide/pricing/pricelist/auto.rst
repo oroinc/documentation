@@ -3,12 +3,14 @@
 .. _user-guide--pricing--price-list-auto:
 
 Automated Rule-Based Price Management
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. contents:: :local:
 
 .. begin
 
 Automate a Price List
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 .. begin_pricelist_management
 
@@ -28,20 +30,22 @@ The following simplified product catalog will be used in examples:
 | E      | Server        | no             | 5        | 30000      | -     | item | USD      |
 +--------+---------------+----------------+----------+------------+-------+------+----------+
 
-To automatically generate a price list in Oro Commerce:
+To automatically generate a price list in OroCommerce:
 
-#. Navigate to **Sales > Price Lists** in the main menu and open the required price list or create a new one.
+#. Navigate to **Sales > Price Lists** in the main menu.
 
-#. Set up the product list.
+#. Start editing the required price list or click **Create Price List** to create a new one.
 
-   With a `Symfony2 expression language <http://symfony.com/doc/current/components/expression_language/syntax.html>`_, set up criteria to filter products in the catalog. Once you enter the expression into the **Products Assignment** field, the filtered products get into the price list.
+#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, enter criteria to filter products in the catalog with the `Symfony2 expression language <http://symfony.com/doc/current/components/expression_language/syntax.html>`_.
+
+   .. Once you enter the expression into the **Products Assignment** field, the filtered products get into the price list.
 
    For example, to include all products in categories 1 and 5, use the following expression:
 
    .. code-block:: rst
       :linenos:
 
-      product.category == 1 and product.category == 5
+      product.category == 1 or product.category == 5
 
    For the sample catalog, this will generate the following product list:
 
@@ -75,64 +79,98 @@ To automatically generate a price list in Oro Commerce:
    | D      | Office shelve | yes            | 4        | 250        | -     | item | USD      |
    +--------+---------------+----------------+----------+------------+-------+------+----------+
 
-   .. hint:: For more information, see `Filtering Expression Syntax`_ and `Using custom properties in price list generation`_.
-   
-   .. note:: You can customize the automatically generated price list and add more products manually.
+   .. hint:: You can customize the automatically generated price list and add more products manually.
 
 
 
 #. Set up the price.
 
-   To enable outstanding pricing flexibility, Oro Commerce introduced a new option for the price list that automatically calculates the price for the automatically listed products.
+   To enable outstanding pricing flexibility, for the price list that automatically calculates the price for the products selected. The pricing behavior is configured in the **Price Calculation Rule** section.
 
-   The pricing behavior is configured in the **Price Calculation Rule** field using the following expression:
+   a. In the **Price for Quantity**, enter the quantity, select a product unit and currency that the rule will be applied to.
 
-   .. code-block:: rst
-       :linenos:
+   b. In the **Calculate As** field, enter a price formula.
 
-          Rule: (price formula), Condition: (product filtering expression)
+      For example:
 
-   In this expression, the (price formula) may contain product and product related items properties of the numeric type, numbers and arithmetic operations. The (product filtering expression) is a `Symfony2 expression <http://symfony.com/doc/current/components/expression_language/syntax.html>`_ that additionally filters the list of products generated in step two to limit the products this price shall apply to.
+      To set the price for all products to 99 USD, use the following expression:
 
-   For example, to set the price (per one item) for all products in category 1 to 99 USD, use the following expression:
+      .. code-block:: rst
+          :linenos:
 
-   .. code-block:: rst
-       :linenos:
+              99
 
-          Rule: 99, Condition: product.category == 1
+      The result will be the following:
 
-   The result will be the following:
+      **Price list A**
 
-   **Price list A**
+      +--------+---------+----------------+----------+------------+--------+------+----------+
+      | Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
+      +========+=========+================+==========+============+========+======+==========+
+      | A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
+      +--------+---------+----------------+----------+------------+--------+------+----------+
+      | E      | Server  | no             | 5        | 30000      | **99** | item | USD      |
+      +--------+---------+----------------+----------+------------+--------+------+----------+
 
-   +--------+---------+----------------+----------+------------+--------+------+----------+
-   | Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
-   +========+=========+================+==========+============+========+======+==========+
-   | A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
-   +--------+---------+----------------+----------+------------+--------+------+----------+
-   | E      | Server  | no             | 5        | 30000      | -      | item | USD      |
-   +--------+---------+----------------+----------+------------+--------+------+----------+
+      To set to set the price (for one item in US dollars) to be 5 USD more than the target margin (custom property of the product), use the following expression:
+
+      .. code-block:: rst
+           :linenos:
+
+               product.msrp.value * product.category.margin + 5
 
 
-   Alternatively, to set the price (for one item in US dollars) to be 5 US dollars more than the target margin (custom property of the product), use the following expression:
+      The result will be the following:
 
-   .. code-block:: rst
-       :linenos:
+      **Price list B**
 
-          product.msrp.value * product.category.margin + 5
+      +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
+      | Item # | Product       | Is in stock? | Category | List price | Margin | Price    | Unit | Currency |
+      +========+===============+==============+==========+============+========+==========+======+==========+
+      | A      | Laptop        | yes          | 1        | 2500       | 1.2    | **3005** | item | USD      |
+      +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
+      | D      | Office shelve | yes          | 4        | 250        | 1.5    | **380**  | item | USD      |
+      +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
 
-   **Price list B**
+      In this expression, the (price formula) may contain product and product-related items properties of the numeric type, numbers and arithmetic operations.
 
-   +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
-   | Item # | Product       | Is in stock? | Category | List price | Margin | Price    | Unit | Currency |
-   +========+===============+==============+==========+============+========+==========+======+==========+
-   | A      | Laptop        | yes          | 1        | 2500       | 1.2    | **3005** | item | USD      |
-   +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
-   | D      | Office shelve | yes          | 4        | 250        | 1.5    | **380**  | item | USD      |
-   +--------+---------------+--------------+----------+------------+--------+----------+------+----------+
+   c. In the **Condition** field, enter a product filtering expression.
 
-Quick Facts
-"""""""""""
+      For example, you have decided to set price 99 USD only to the products from the category 1. Then you have entered *99* in the **Calculate As** field (see step a. the first example. In the **Condition** field, enter the following expression:
+
+      .. code-block:: rst
+          :linenos:
+
+             product.category == 1
+
+      The result will be the following:
+
+      **Price list A**
+
+      +--------+---------+----------------+----------+------------+--------+------+----------+
+      | Item # | Product | Is in stock?   | Category | List Price | Price  | Unit | Currency |
+      +========+=========+================+==========+============+========+======+==========+
+      | A      | Laptop  | yes            | 1        | 2500       | **99** | item | USD      |
+      +--------+---------+----------------+----------+------------+--------+------+----------+
+      | E      | Server  | no             | 5        | 30000      |   -    | item | USD      |
+      +--------+---------+----------------+----------+------------+--------+------+----------+
+
+      The (product filtering expression) is based on a `Symfony2 expression <http://symfony.com/doc/current/components/expression_language/syntax.html>`_ that additionally filters the list of products generated in step 3 to limit the products the price shall apply to.
+
+   d. In the **Priority** field, specify the precedence for this rule. See `Filters, Priorities, and Matching Units in the Automatically Generated Price List`_ for more information.
+
+   e. If you need to set up prices for another range of products selected into the price list, or for another currency / unit, click **+Add** and repeat steps 4.a‒d.
+
+
+   .. hint::
+
+      * You can use :ref:`autocomplete <user-guide--pricing--price-list-auto--autocomplete>` to simplify the expression creation.
+      * For more information, see :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>`.
+      * For more help on expressions creation, see `Price Rules Automation Examples <price-rules--auto--examples>`.
+
+
+Filters, Priorities, and Matching Units in the Automatically Generated Price List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 **Funnel effect:** Condition filter is applied only to the products assigned to the price list in step two in the process above and not the complete catalog.
 
@@ -146,40 +184,23 @@ Quick Facts
 
 **Enforcing the price:** Prices that were provided manually have higher priority than those generated automatically. Once you manually set the price for the automatically assigned product, it will not change after price recalculation anymore.
 
-Using Custom Properties in Price List Generation
-""""""""""""""""""""""""""""""""""""""""""""""""
-Imagine that your customer’s marketing department needs a price list with all products of yellow color where the price is increased by 10% to prepare for the ‘go yellow’ promo next month and balance the prices in the default price list that are scheduled to drop down.
+Price Rules Automation Examples
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As a prerequisite, you ensured that the product entity has the ‘color’ attribute. It was not there originally, but you added it as a custom property.
-
-.. tip:: To add custom properties to the product or category entity, use entity management (**System > Entities > Entity Management**). Update the schema to apply changes.
-
-Next, you entered the actual color for every product, and some of them indeed were yellow.
-
-Here is the product assignment rule that builds a price list of all yellow items in the catalog:
-
-.. code-block:: rst
-    :linenos:
-
-    product.color == “yellow”
-
-And price rule that adds 10% to the list price:
-
-.. code-block:: rst
-    :linenos:
-
-    Rule: product.msrp.value * 1.1
-
+.. include:: /user_guide/pricing/pricelist/auto_examples.rst
+   :start-after: begin_price_rules_auto_examples
+   :end-before: finish_price_rules_auto_examples
 
 Filtering Expression Syntax
-"""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /user_guide/pricing/pricelist/filtering_expression.rst
    :start-after: begin
    :end-before: finish
 
+
 Developer Notice
-""""""""""""""""
+^^^^^^^^^^^^^^^^
 
 The expression is converted into internal Nodes tree. This tree is converted into QueryBuilder which is used in Insert From Select to fill prices and assignment with one query. Virtual relations and virtual fields are managed by AbstractQueryConverter, that is also used to join all required relations and generate unique table aliases. Generated query builder is cached along with its parameters. Each rule and assignment rules have their cache by ID. When a rule or an assignment rule is changed, the cached QueryBuilder is recalculated.
 

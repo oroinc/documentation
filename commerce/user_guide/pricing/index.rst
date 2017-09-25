@@ -47,10 +47,8 @@ To align the price list behavior with your needs, you can adjust the price, curr
   * :ref:`Per Customer Group <customers--customer-groups--edit--price-lists>`
   * :ref:`Per Customer <customers--customers--edit--price-lists>`
 
-* **Product Price Attributes Setup**
-* **Product Units Setup**
-
-.. TODO add link to Product Price Attributes from DOC-44
+* :ref:`Product Price Attributes Setup <user-guide--products--price-attributes>`
+* :ref:`Product Units Setup <sys--commerce--product--product-units>`
 
 .. TODO Product Units Setup
 

@@ -22,18 +22,15 @@ Import and Export Prices
    :start-after: begin
    :end-before: finish
 
-Manage Product Price
-~~~~~~~~~~~~~~~~~~~~
-
-Manually
-^^^^^^^^
+Manage Product Price Manually
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /user_guide/pricing/pricelist/manual.rst
    :start-after: begin
    :end-before: finish
 
-Automatically
-^^^^^^^^^^^^^
+Generate Product Price Automatically
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /user_guide/pricing/pricelist/auto.rst
    :start-after: begin_pricelist_management
@@ -55,9 +52,11 @@ Set Prices in Multiple Currencies
 
    create
    auto
+   auto_examples
    manual
    schedule
    import_export
    ownership
    multicurrency
    internal
+
