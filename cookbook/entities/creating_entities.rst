@@ -217,12 +217,6 @@ modeled as separate entities:
         }
     }
 
-.. caution::
-
-    Do not use the ``doctrine:schema:update`` command with your production database. Instead,
-    create migrations to update the schema of your database. You can read more about how to use
-    migrations :ref:`in the book <book-entities-database-schema-update>`.
-
 After you have modeled your entities, you need to update the database schema. This can be done by
 using the ``doctrine:schema:update`` command. Use the ``--dump-sql`` option to first make sure that
 Doctrine will actually make the expected changes:
@@ -256,3 +250,10 @@ When everything displays as expected, update the database schema by passing the 
 
         # apply the schema changes to the database
         $ php app/console doctrine:schema:update --force
+
+.. caution::
+
+    Do not use the ``doctrine:schema:update`` command with your production database. Instead,
+    create migrations to update the schema of your database. You can read more about how to use
+    migrations :ref:`in the book <book-entities-database-schema-update>`. To run migrations
+    and emulate complete migration process use ``oro:platform:update`` command.
