@@ -34,8 +34,8 @@ The following set of action buttons is available in the upper-right part of the 
 
   - **Manage Visibility** — Click this button to configure the product's visibility at different levels (customer, customer group, region). See the :ref:`Manage a Product's Visibility <products--product-visibility>` action description.
   - **Manage Inventory** — Click this button to configure how many product units are available in each warehouse. See the :ref:`Manage Inventory <doc--products--actions--manage-inventory>` action description.
-  - **Add Attachment** — Click this button to send an email related to this product. See the :ref:`Add an Attachment <doc--products--actions--attachment>` action description.
-  - **Add Note** — Click this button to send an email related to this product. See the :ref:`Add a Note <doc--products--actions--note>` action description.
+  - **Add Attachment** — Click this button to attach a file to this product. See the :ref:`Add an Attachment <doc--products--actions--attachment>` action description.
+  - **Add Note** — Click this button to make a note related to this product. See the :ref:`Add a Note <doc--products--actions--note>` action description.
 
 
 In the next row, you can check which user is responsible for the product (owns it). Click the owner name to open the profile of the corresponding user. Enclosed in parentheses, there is the name of the organization that the owner belongs too.

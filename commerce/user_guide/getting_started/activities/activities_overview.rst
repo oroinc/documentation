@@ -288,12 +288,16 @@ For more information about comments, see the :ref:`Comments <user-guide-activiti
 
 Adding Attachments
 """"""""""""""""""
+.. start_include_attachments
 
 When you need to provide additional information about an entity record and this information is fully included in a file (for example, you want to add a calculation sheet), add this file as an attachment directly to the entity record. 
 
+.. end_include_attachments
+
 You can attach files by clicking the :guilabel:`Add Attachment` action button on the view page of the entity record that the attachment relates to.
 
-Files attached to the entity record appear in the **Attachments** section of the entity record.
+Files attached to the entity record appear in the **Attachments** or **Additional Information** sections of the entity
+record.
 
 .. image:: /user_guide/img/getting_started/activities/activities_attachments.png
 

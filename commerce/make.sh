@@ -74,8 +74,9 @@ elif [ "$1" = "qthelp" ]; then
   echo "\n > qcollectiongenerator $BUILDDIR\qthelp\TheOroPlatform.qhcp"
   echo "\n To view the help file:"
   echo "\n ^> assistant -collectionFile $BUILDDIR\qthelp\TheOroPlatform.ghc"
-else 
-  exec_cmd="$SPHINXBUILD  -b $1 $ALLSPHINXOPTS  $BUILDDIR/$1"
+else
+  mkdir $BUILDDIR
+  exec_cmd="$SPHINXBUILD  -b $1 $ALLSPHINXOPTS  $BUILDDIR/$1 -w $BUILDDIR/sphinxbuild.log"
   $exec_cmd
   res=$?
   echo "executed: $exec_cmd"

@@ -1,7 +1,7 @@
 .. _sys--conf:
 
 General OroCommerce Configuration
-==================================
+=================================
 
 This section contains information on the system configuration options specific for OroCommerce.
 
@@ -59,4 +59,5 @@ This section contains information on the system configuration options specific f
    guest_access_overview
 
    design/index
-   
+
+   orders/index

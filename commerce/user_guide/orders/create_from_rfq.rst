@@ -17,19 +17,23 @@ To create an order based on a request for quote (RFQ):
 
    The Create Order form will open, prepopulated with the information from the RFQ:
 
-   .. image:: /user_guide/img/sales/orders/CreateOrderFromRFQForm.png
+   .. image:: /user_guide/img/sales/orders/orders_create_fromrfq1.png
       :class: with-border
 
 4. Amend or add new details to the order, if necessary, as described in :ref:`the Create an Order from Scratch topic <user-guide--sales--orders--create>`.
+
+   .. warning:: When you modify the order content, order totals and shipping costs may change. Please, review the shipping method selection before saving the order to make sure that the shipping cost is acceptable.
+
 5. Click **Save** when you have finished.
    
 
-.. note:: When amending order information, make sure shipping and payment details are correct. You may receive the following warning:
 
-          .. image:: /user_guide/img/sales/orders/CreateOrderFromRFQShippingCostChange.png
-             :align: center
 
-.. image:: /user_guide/img/sales/orders/CreateOrderFromRFQCreated.png
-   :class: with-border
+.. image:: /user_guide/img/sales/orders/orders_create_fromrfq2.png
+
+
+The new order is now created.
+
+.. hint:: By default, an order has :ref:`internal status <doc--orders--statuses--internal>` *Open* upon creation. If another status is required for new orders, an administrator must adjust the :ref:`order creation configuration settings <configuration--commerce--orders>`.
 
 .. finish

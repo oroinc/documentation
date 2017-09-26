@@ -8,7 +8,7 @@ My User
 
 On the upper-left of the page, you can see your avatar, full name and statuses.
 
-The first status shows that your are granted rights to use the system. The second status is called ``authentication status`` and defines the actuality of your password. As you can see your user page only being logged into the system, you will always see **Enabled** for the first status and **Active** for the other. When an administrator views your page, they will able to see values of your statuses.
+The first status shows that your are granted rights to use the system. The second status is called ``authentication status`` and shares the state of your password. As you can see your user page only being logged into the system, you will always see **Enabled** for the first status and **Active** for the other. When an administrator views your page, they will able to see values of your statuses.
 
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_review_pagetop.png

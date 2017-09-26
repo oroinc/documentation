@@ -17,7 +17,7 @@ On the upper-left of the page, you can see the user's avatar, their full name an
 
 The first status shows whether the user is enabled (i.e. the user is granted rights to use the system) or disabled. 
 
-The second status is called ``authentication status`` and defines the actuality of the user's password. The authentication status can be one of the following:
+The second status is called ``authentication status`` and defines the state of the user's password. The authentication status can be one of the following:
 
 - **Active**—The user can use their password to log into the system.
 - **Password reset**—The password reset link has been sent to the user, but the user is still is in the process of the password change. This status appears not only when password is being manually reset. The user will receive this authentication status when their password has expired—in this case the system automatically starts the password reset procedure. 

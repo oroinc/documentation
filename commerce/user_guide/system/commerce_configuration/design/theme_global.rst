@@ -44,7 +44,7 @@ The following page opens:
 
    .. image:: /frontstore_guide/img/profile/address_book_compact.png
 
-4. In the **Page Templates** section, select the theme from the list.
+4. In the **Page Templates** section, select the product page template from the list.
 
    This page template is used to render the product page in the front store by default, unless the template is overridden in the product details.
 
