@@ -61,7 +61,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo rm -rf app/cache/*
+    $ sudo rm -rf app/cache/prod
 
 **7**. Upgrade the platform.
 
@@ -79,7 +79,7 @@ or, as alternative:
 
 .. code-block:: bash
 
-    $ sudo rm -rf app/cache/*
+    $ sudo rm -rf app/cache/prod
     $ sudo -u www-data app/console cache:warmup --env prod
 
 **9**. Run the consumer(s).
@@ -166,7 +166,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo rm -rf app/cache/*
+    $ sudo rm -rf app/cache/prod
 
 **7**. Upgrade the platform.
 
@@ -184,7 +184,7 @@ or, as alternative:
 
 .. code-block:: bash
 
-    $ sudo rm -rf app/cache/*
+    $ sudo rm -rf app/cache/prod
     $ sudo -u www-data app/console cache:warmup --env prod
 
 
