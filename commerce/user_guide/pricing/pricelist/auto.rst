@@ -166,7 +166,7 @@ To automatically generate a price list in OroCommerce:
 
       * You can use :ref:`autocomplete <user-guide--pricing--price-list-auto--autocomplete>` to simplify the expression creation.
       * For more information, see :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>`.
-      * For more help on expressions creation, see `Price Rules Automation Examples <price-rules--auto--examples>`.
+      * For more help on expressions creation, see :ref:`Price Rules Automation Examples <price-rules--auto--examples>`.
 
 
 Filters, Priorities, and Matching Units in the Automatically Generated Price List

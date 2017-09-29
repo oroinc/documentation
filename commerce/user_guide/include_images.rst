@@ -27,7 +27,7 @@ Images
 
 .. |IcRequestMoreInfo| raw:: html
 
-   <i class="fa fa-question fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-question-circle-o" aria-hidden="true"></i>
 
 .. |IcActivate| raw:: html
 
