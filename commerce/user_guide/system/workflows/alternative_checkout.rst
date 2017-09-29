@@ -21,7 +21,6 @@ To reach the workflow:
 On the Alternative Checkout workflow page, you can perform the following actions:
 
 * Configure order approval threshold: |IcConfig| **Configuration**.
-* Clone the workflow - click |IcClone| **Clone** to clone the workflow.
 * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
 
 .. image:: /user_guide/img/system/workflows/alternative_checkout/ACF_page.png
@@ -31,7 +30,6 @@ On the Alternative Checkout workflow page, you can perform the following actions
 Within the Workflows grid, you can perform the following actions for the alternative checkout workflow:
 
 * Configure order approval threshold: |IcConfig|
-* Clone the workflow: |IcClone|
 * View the workflow: |IcView|
 * Deactivate the workflow: |IcDeactivate|
   

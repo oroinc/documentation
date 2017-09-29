@@ -22,7 +22,7 @@ To ensure data consistency and reasoned opportunity management by a sales manage
 This can be done from the **Workflows** view page by selecting Opportunity Management Flow and clicking :guilabel:`Activate` in the top right corner.
 
 
-.. image:: ../../../img/opportunities_2.0/activate_opp_flow.jpg
+.. image:: ../../../img/opportunities_2.0/activate_opp_flow.png
 
 Active Opportunity Management Flow limits what a sales manager can do with opportunities, thus eliminating situations when, for instance, an opportunity is not yet closed but its close reason is specified, or an opportunity is closed but its close reason is unspecified.
 

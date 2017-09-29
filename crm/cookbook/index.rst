@@ -34,6 +34,7 @@ This book contains list of most regularly used solutions in OroPlatform.
 * :doc:`/cookbook/how_to_upgrade_to_new_version`
 * :doc:`/cookbook/how_to_apply_patch`
 * :doc:`/cookbook/how_to_co-install_applications`
+* :doc:`/cookbook/how_to_clone_workflow`
 * :doc:`/cookbook/known_issues_outlook_addin`
 * :doc:`/cookbook/faq`
 
@@ -58,22 +59,7 @@ This book contains list of most regularly used solutions in OroPlatform.
     how_to_upgrade_to_new_version
     how_to_apply_patch
     how_to_co-install_applications
+    how_to_clone_workflow
     known_issues_outlook_addin
     faq
-
-TODO List
----------
-
-* How to override part of the bundle (controller, template etc.)
-* How to set up ACL
-* How to create simple datagrid
-* How to create complex datagrid
-* How to add entity to search index
-* How to work with localization
-* How to work with Data Audit
-* How to work with custom entities
-* How to work with extended entities
-* How to create custom workflow
-* How to work with JavaScript widgets
-* How to work with notifications and web sockets
 

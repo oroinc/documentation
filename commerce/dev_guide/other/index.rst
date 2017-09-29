@@ -13,3 +13,5 @@ This section aggregates uncategorized information that might be usefull for Oro 
    how_to_pass_request_parameter_to_grid
 
    how_to_use_wsse_authentication
+
+   how_to_clone_workflow

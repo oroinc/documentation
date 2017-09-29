@@ -20,16 +20,15 @@ To reach the workflow:
   
 On the Checkout workflow page, you can perform the following actions:
 
-* Clone the workflow - click |IcClone| **Clone** to clone the workflow.
 * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
+* Activate the workflow - click |IcActivate| **Activate** to activate the workflow.
   
 .. image:: /user_guide/img/system/workflows/checkout/CheckoutViewPageBackoffice.png
 
 Within the Workflows grid, you can perform the following actions for the Checkout workflow:
 
-* Clone the workflow: |IcClone|
 * View the workflow: |IcView|
-* Deactivate the workflow: |IcDeactivate|
+* Deactivate / Activate the workflow: |IcDeactivate| / |IcActivate|
 
 .. image:: /user_guide/img/system/workflows/checkout/CheckoutGridBackoffice.png
 

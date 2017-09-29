@@ -398,17 +398,18 @@ Since system workflows are pre-implemented in the system, their management from 
 
 - **View**: |IcView| (Go to the view page of the workflow).
 - **Activate/Deactivate**: |IcCheck| / |IcTimes| (activate/deactivate the workflow).
+- **Configure**: |IcSettings|
 
 .. image:: /user_guide/img/system/workflows/27_manage_wf_2.png
 
-.. hint:: In case you need to alter a system workflow, clone it under the different name and make the required changes (it will be saved as a custom workflow). For more information on how to clone a workflow, see `Workflow Imports <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md#workflow-imports>`__ in the oroinc/platform repository on GitHub.
+.. hint:: In case you need to alter a system workflow, clone it via the command line console under the different name and make the required changes. For more information on how to clone a workflow, see :ref:`How to Clone a Workflow <workflows--actions--clone>`.
 
 .. _doc--workflows--actions--custom:
 
 Custom Workflows
 ^^^^^^^^^^^^^^^^
 
-Cloned system workflows and workflows created in the UI from scratch are custom workflows.
+Workflows created on the UI from scratch are custom workflows.
 You can perform the following actions for them:
 
 - **Clone**: |IcClone| (copy the workflow to be able to customize it).
@@ -433,9 +434,11 @@ In Oro applications, there are two ways to create a new workflow:
 
 Some workflow components, like an email notification, may be created only via the command line.
 
-.. warning:: In the user interface, you cannot edit or clone the workflows that contain transition actions and conditions.
+.. warning:: In the user interface, you cannot edit or clone workflows that contain transition actions and conditions. If you need to clone a workflow anyway, see :ref:`How to clone a wokflow via the command line console <workflows--actions--clone>`.
 
-For how to create, edit and clone workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
+For how to create and manage workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
+
+
 
 .. _doc--system--workflow-management--activate:
 
@@ -487,7 +490,7 @@ To define a translation:
    .. image:: /user_guide/img/system/workflows/translations_relevantlist.png
 
 2. From the translation list, choose the language into which you want to translate the label, and point to the corresponding cell in the **Translated Value** column.
-3. Using the :ref:`inline editor <doc-grids-actions-records-edit-inline>`, specify the new translation for the label.
+3. Using the inline editor, specify the new translation for the label.
 
    .. image:: /user_guide/img/system/workflows/translations_edit1.png
 
