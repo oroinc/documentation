@@ -9,7 +9,7 @@ Workflow Management
 ===================
 
 .. contents:: :local:
-    :depth: 4
+   :depth: 4
 
 .. TODO add information on exclusive active and exclusive record group
 
@@ -28,9 +28,9 @@ In OroCRM, workflows organize and direct users’ work, making them follow parti
 System vs Custom Workflows
 --------------------------
 
-In Oro applications, any workflow may be classified as either **system** or **custom**. *System* workflows are provided out of the box. Their modification is limited in order to keep core functionality operational. However, if you create a *Custom* workflow from scratch or clone the existing system workflow, you can tailor it for your needs without any restrictions.
+In Oro applications, any workflow may be classified as either **system** or **custom**. *System* workflows are provided out of the box. Their modification is limited in order to keep core functionality operational. However, if you create a *Custom* workflow from scratch, you can tailor it for your needs without any restrictions.
 
-  For more information on system and custom workflows, see :ref:`System Workflows <doc--workflows--actions--system>` and :ref:`Custom Workflows <doc--workflows--actions--custom>`.
+For more information on system and custom workflows, see :ref:`System Workflows <doc--workflows--actions--system>` and :ref:`Custom Workflows <doc--workflows--actions--custom>`.
 
 Available System Workflows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -56,7 +56,7 @@ Workflow Steps, Transitions, and Attributes
 
 .. TODO Fix transitions if necessary (may it launch on schedule or on event?) .. Yes, it can, the information about it is in the dev guide.
 
-Each process or action applied to a record is called a ``workflow transition``. On the interface, transitions are usually initiated when a user clicks the corresponding button or icon. There are two types of transitions:
+Each process or action applied to a record is called a workflow transition. On the interface, transitions are usually initiated when a user clicks the corresponding button or icon. There are two types of transitions:
 
 -	Transitions that take a user from one state to another and connect to each step in the workflow.
 -	Self-transitions that do not change steps in the workflow.
@@ -67,13 +67,13 @@ A transition can be defined as soon as there is at least one step besides **Star
 
 .. image:: ../img/workflows/1_transitions_steps.png
 
-``Attributes`` are characteristics of the record. For example, a ZIP code and a street name are attributes of an address. In the course of each transition, you can change some attributes of the processed record.
+Attributes are characteristics of the record. For example, a ZIP code and a street name are attributes of an address. In the course of each transition, you can change some attributes of the processed record.
 
-A workflow may have ``configuration parameters`` (also known as ``variables``). For example, the **Alternative Checkout** workflow includes reviewing of an order by an authorized person. This is usually required only for orders over a certain amount, so the workflow's configuration parameter enables you to set an order subtotal limit that triggers the alternative checkout.
+A workflow may have configuration parameters (also known as variables). For example, the Alternative Checkout workflow includes reviewing of an order by an authorized person. This is usually required only for orders exceeding a certain amount, so the workflow's configuration parameter enables you to set an order subtotal limit that triggers the alternative checkout.
 
 .. image:: ../img/workflows/workflow_config_prameters.png
 
-If enabled (see the section below), the **Workflow** widget displays the process steps defined in workflow configuration on the record view page. Multiple workflow widgets can be displayed for one record at the same time.
+If enabled (see the section below), the workflow widget displays the process steps defined in workflow configuration on the record view page. Multiple workflow widgets can be displayed for one record at the same time.
 
 .. image:: ../img/workflows/2_wf_steps_new.png
 
@@ -85,7 +85,7 @@ Create a Workflow
 To create a workflow for an entity:
 
 1. In the main menu, navigate to **System > Workflows**.
-2. Click **Create Workflow** in the upper-right corner of the page.
+2. Click **Create Workflow** on the top right of the page.
 
    .. image:: ../img/workflows/3_create_wf_button.png
 
@@ -114,7 +114,7 @@ The **General** section of the create a workflow page contains the following inf
   "**Related Entity**", "A related entity is the entity for which the workflow is created. When the workflow is active, it can be launched and executed on the records of its related entity."
   "**Exclusive Active Groups**","Exclusive Active Groups is a list of group names for which the current workflow should be active exclusively. Determining Exclusive Record Groups allows to set up mutually exclusive workflows in order to configure how they each correlate in the system. This makes it possible for only one workflow to be active, or for an entity record to use only one workflow from the group at a time."
   "**Exclusive Record Groups**","Exclusive Record Groups specify how workflows apply to certain sets of records in order to limit their applicability. This lets users create specific workflows for specific segments (subsets) of records. For example, no concurrent transitions are possible among workflows in same exclusive record group."
-  "**Default Step**", "Specifying the default steps launches the workflow in a particular step by default. For instance, when you activate Opportunity Management Flow, a newly created opportunity will appear as **open**, if **Open** was specified as the default step.
+  "**Default Step**", "Specifying the default steps launches the workflow in a particular step by default. For instance, when you activate Opportunity Management Flow, a newly created opportunity will appear as open, if **open** was specified as the default step.
   If no step is selected, all newly created records will have no workflow associated with them, and it must be launched with one of the starting transitions."
   "**Display Steps Ordered**", "Display Steps Ordered box is not checked by default.
 
@@ -154,12 +154,12 @@ The **Designer** section consists of a table and an interactive chart representa
 - **Add a transition** (clicking the **+ Add Transition** button at the top of the chart opens the **Add Transition** dialog).
 - **Add a step** (clicking the **+ Add Step** button at the top of the chart opens the **Add Step** dialog).
 - **Autosort** (clicking the **Auto Sort** button at the top of the chart automatically shapes your chart).
-- **Rearrange the chart** for clearer workflow view (drag-and-drop transitions and steps in the chart as required, or click the |IcExpand| **Expand** button in the upper-right corner of the chart).
+- **Rearrange the chart** for clearer workflow view (drag-and-drop transitions and steps in the chart as required, or click the |IcExpand| **Expand** button in the top right corner of the chart).
 
 .. image:: ../img/workflows/auto_sort.gif
 
-- **Zoom in/out** (click the |IcSearchPlus| **Zoom In** / |IcSearchMinus| **Zoom Out** button in the upper-right corner of the chart to zoom the chart in/out, or select zoom percent from the list).
-- **Show transition labels** (select this check box in the upper-left corner of the chart to display transition labels in the chart).
+- **Zoom in/out** (click the |IcSearchPlus| **Zoom In** / |IcSearchMinus| **Zoom Out** button in the top right corner of the chart to zoom the chart in/out, or select zoom percent from the list).
+- **Show transition labels** (select this check box in the top left corner of the chart to display transition labels in the chart).
 - **Drag transitions from one step to another** (point to one of four corners of the step box, and when the cursor changes shape to the hand, click the corner and drag an arrow to another step).
 
 .. image:: ../img/workflows/drag_transition.gif
@@ -174,7 +174,7 @@ The **Designer** section consists of a table and an interactive chart representa
 Example Introduction
 ~~~~~~~~~~~~~~~~~~~~
 
-As an example, we are going to create the **Opportunity Support Flow** workflow to show how a workflow is configured and visualized.
+As an example, we are going to create the Opportunity Support Flow workflow to show how a workflow is configured and visualized.
 
 Add a Step
 ~~~~~~~~~~
@@ -183,7 +183,7 @@ Add a Step
 
 To add a step to a workflow:
 
-1. Click **Add Step** in the upper-right corner of the chart.
+1. Click **Add Step** in the top right corner of the chart.
 
    .. image:: ../img/workflows/7_add_step.png
 
@@ -206,7 +206,7 @@ Next, we are going to apply a transition for these steps.
 Example
 """""""
 
-For the sample **Opportunity Support Flow**, we will start off by creating two steps: **No Complaints** and **Complaint Received**.
+For the sample Opportunity Support Flow, we will start off by creating two steps: **No Complaints** and **Complaint Received**.
 
 .. image:: ../img/workflows/8_add_step_form.png
 
@@ -219,7 +219,7 @@ Add a Transition
 
 To add a transition to a workflow:
 
-1. Click **Add Transition** in the upper-right corner of the chart.
+1. Click **Add Transition** on the top right of the chart.
 
    .. image:: ../img/workflows/10_add_transition.png
 
@@ -271,7 +271,7 @@ To add a transition to a workflow:
 Example
 """""""
 
-The following is an example of an attribute added for the **Register a Complaint** transition in the sample **Opportunity Support Flow**. The entity selected for the attribute is Additional Comments. Its label has been changed to **Specify the Complaint**.
+The following is an example of an attribute added for the **Register a Complaint** transition in the sample Opportunity Support Flow. The entity selected for the attribute is Additional Comments. Its label has been changed to **Specify the Complaint**.
 
 .. image:: ../img/workflows/12_specify_complaint.png
 
@@ -279,7 +279,7 @@ The following is an example of an attribute added for the **Register a Complaint
 
 In the same manner, specify steps, transitions and attributes required for your custom workflow.
 
-The sample **Opportunity Support Flow** has been configured the following way:
+The sample Opportunity Support Flow has been configured the following way:
 
 .. image:: ../img/workflows/14_sample_flow_saved.png
 
@@ -292,7 +292,7 @@ To set a workflow configuration parameters:
 
 1. In the main menu, navigate **System > Workflows**.
 2. On the workflow list, click the required workflow.
-3. If the workflow has configuration parameters, you can see the **Configuration** button in the upper-right corner of the workflow view page. Click this button.
+3. If the workflow has configuration parameters, you can see the **Configuration** button on the top right of the workflow view page. Click this button.
 
    .. image:: ../img/workflows/workflow_set_config_param.png
 
@@ -312,13 +312,13 @@ Workflow Visualization
 
 Once the workflow has been configured and saved, you can see how it is visualized for the records:
 
-- Transition buttons will be displayed in the upper-right corner of the entity record page.
-- All the steps will be located at the top on the entity record page within the workflow widget.
+- Transition buttons will be displayed on the top right of the entity record page.
+- All the steps will be located on the top right of the entity record page within the workflow widget.
 
 Example
 ^^^^^^^
 
-The sample **Opportunity Support Flow** has been saved and activated.
+The sample Opportunity Support Flow has been saved and activated.
 
 As you can see from the screenshots below, the opportunity is currently in the **No Complaints** step. Clicking **Register a Complaint** will prompt an attribute we have configured for this transition:
 
@@ -385,17 +385,18 @@ Since system workflows are pre-implemented in the system, their management from 
 
 - **View**: |IcView| (Go to the view page of the workflow).
 - **Activate/Deactivate**: |IcCheck| / |IcTimes| (activate/deactivate the workflow).
+- **Configure**: |IcSettings|
 
 .. image:: ../img/workflows/27_manage_wf_2.png
 
-.. hint:: In case you need to alter a system workflow, clone it under the different name and make the required changes (it will be saved as a custom workflow). For more information on how to clone a workflow, see `Workflow Imports <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md#workflow-imports>`__ in the oroinc/platform repository on GitHub.
+.. hint:: In case you need to alter a system workflow, clone it via the command line console under the different name and make the required changes. For more information on how to clone a workflow, see :ref:`How to Clone a Workflow <workflows--actions--clone>`.
 
 .. _doc--workflows--actions--custom:
 
 Custom Workflows
 ^^^^^^^^^^^^^^^^
 
-Cloned system workflows and workflows created in the UI from scratch are custom workflows.
+Workflows created on the UI from scratch are custom workflows.
 You can perform the following actions for them:
 
 - **Clone**: |IcClone| (copy the workflow to be able to customize it).
@@ -420,9 +421,10 @@ In Oro applications, there are two ways to create a new workflow:
 
 Some workflow components, like an email notification, may be created only via the command line.
 
-.. warning:: In the user interface, you cannot edit or clone the workflows that contain transition actions and conditions.
+.. warning:: In the user interface, you cannot edit or clone workflows that contain transition actions and conditions. If you need to clone a workflow anyway, see :ref:`How to clone a wokflow via the command line console <workflows--actions--clone>`.
 
-For how to create, edit and clone workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
+For how to create and manage workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
+
 
 .. _doc--system--workflow-management--activate:
 
@@ -473,8 +475,8 @@ To define a translation:
 
    .. image:: ../img/workflows/translations_relevantlist.png
 
-2. On the translation list, choose the language into which you want to translate a label, and point to the corresponding cell in the **Translated Value** column.
-3. Using the :ref:`inline editor <doc-grids-actions-records-edit-inline>`, specify a new translation for a label.
+2. From the translation list, choose the language into which you want to translate the label, and point to the corresponding cell in the **Translated Value** column.
+3. Using the :ref:`inline editor <doc-grids-actions-records-edit-inline>`, specify the new translation for the label.
 
    .. image:: ../img/workflows/translations_edit1.png
 

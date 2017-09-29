@@ -25,6 +25,8 @@ Configure a Workflow
 
 To configure a custom workflow, create the ``workflows.yml`` file with the configuration and save it into the ``/Resources/config/oro`` directory of your bundle.
 
+.. hint:: You can simplify workflow creation by cloning the existing workflow. See :ref:`How to clone a workflow <workflows--actions--clone>`.
+
 For each entity, you can configure as many workflows as required.
 
 .. note:: Pay attention to the business logic. When you create workflows that can be mutually exclusive, make sure that there is no possibility that they may be activated simultaneously.
@@ -49,7 +51,6 @@ You need to create such file for each language that you will use.
    
    `app/console oro:workflow:translations:dump my_workflow --locale=en > <YourBundle>/Resources/translations/workflows.en.yml`
   
-
 
 For more information, see `Workflow Translation Wizard <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md>`__ on GitHub.
 
