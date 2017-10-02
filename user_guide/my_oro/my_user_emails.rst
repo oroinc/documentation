@@ -3,8 +3,9 @@
 My Emails
 =========
 
-.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+.. note:: Before you start using the **My Emails**, please configure you personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my_email_configuration>` for more information.
 
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
 
 To reach the **My Emails** page:
 

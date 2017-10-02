@@ -16,7 +16,7 @@ Application Repository and Installation
 Before you start working on a new project, it is important to have version control system in place.
 The easiest way to start is to `fork application repository`_ of `OroPlatform`_, `OroCRM`_ or `OroCommerce`_ on GitHub.
 
-Once code repository is ready, please follow :ref:`installation <book_installation>` instructions.
+Once code repository is ready, please follow :ref:`installation <installation>` instructions.
 
 .. note::
 
@@ -84,8 +84,8 @@ Oro applications are :doc:`scalable <scale_nodes>`.
 Learn more
 ----------
 
-* :doc:`getting_started_book/installation`
-* :doc:`getting_started_book/differences`
+* :doc:`/install_upgrade/installation/index`
+* :doc:`/book/getting_started_book/differences`
 * :doc:`customization`
 * :doc:`/cookbook/how_to_create_new_bundle`
 * :doc:`/cookbook/how_to_extend_existing_bundle`

@@ -35,7 +35,7 @@ You can perform the following actions from the grid:
 1. **Filter**: Click |IcFilter| to show filters per column. You can limit displayed items to those that match filtering criteria provided.
 2. **Refresh**: Click |IcRedo| to reload the information about the items. If another user recently updated the item details, these changes are reflected upon the refresh.
 3. **Reset**: Click |IcRefresh| to roll back the view per page, filters and columns configuration to the default values.
-4. **Manage columns**: Open grid settings by clicking |IcSettings| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. Toggle on and off the column show option using the *Show* checkbox.
+4. **Manage columns**: Open grid settings by clicking |IcSettings| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. Toggle on and off the column show option using the *Show* check box.
 
 .. note:: To handle big volume of data, use page switcher, increase View Per Page or use filters to narrow down the list to the information you need.
 
