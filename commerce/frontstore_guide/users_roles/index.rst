@@ -62,19 +62,19 @@ To create a new user, click **+Create User** on the top right of the page, next 
 A form will emerge with the following data to provide:
 
 * Customer
-* Enabled checkbox
+* Enabled check box
 * Email Address
 * Name Prefix
 * First Name
 * Middle Name
 * Last Name
 * Name Suffix
-* Send Welcome Email checkbox
+* Send Welcome Email check box
 * Birthday
 * Password
 * Confirm Password
-* Generate Password checkbox
-* Roles: administrator/buyer checkboxes
+* Generate Password check box
+* Roles: administrator/buyer check boxes
 
 
 Roles
@@ -158,10 +158,8 @@ With the Customer User Role you can manage the following access- and permissions
 
 .. image:: /frontstore_guide/img/users_roles/AccessPermissions.png
 
-|
-
 .. csv-table::
-  :header: "Field", "Entities", "Capabilities (Checkboxes)"
+  :header: "Field", "Entities", "Capabilities (Check boxes)"
   :widths: 10, 20, 50
 
   "**All**","Address, Customer User, Customer User Address, Customer User Roles, Grid (Table) View","Account Management:

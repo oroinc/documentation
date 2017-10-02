@@ -28,7 +28,7 @@ To edit a defined content block:
    * **Alias**:  The unique identifier that can be used in the layout to render a block.
    * **Titles**: Localized block title.
 
-   .. note:: To enable/disable the content block, select/clear the **Enabled** checkbox.
+   .. note:: To enable/disable the content block, select/clear the **Enabled** check box.
  
  
 4. In the *Restrictions* section, you can specify or edit visibility restrictions for the content block.

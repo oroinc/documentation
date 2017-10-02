@@ -19,8 +19,8 @@ Based on the level where configuration has taken place, settings can fall back t
 
 However:
 
-* When **Use System** checkbox is enabled, system settings override website or organization.
-* When **Use Organization** checkbox is enabled, organization settings override system.
+* When **Use System** check box is enabled, system settings override website or organization.
+* When **Use Organization** check box is enabled, organization settings override system.
 
 With this in mind, we will have a look at how sales representative information is configured at each level.
 
@@ -68,10 +68,11 @@ To set up information for non-authenticated visitors:
 1. Navigate to **System > Configuration > Commerce > Sales > Contacts**.
 2. In the Display list, select **Customer User Owner**.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. Enable **Allow User Configuration** checkbox, and select all three available user options from the list.
+3. Enable **Allow User Configuration** check box, and select all three available user options from the list.
+
 4. In **Guest Contact** text field, provide text for non-authenticated users, e.g.:
    
    *Please login to get your sales rep

@@ -35,7 +35,7 @@ The following settings are available within Email Configuration tab:
 Email Settings
 --------------
 
-Here, you can enable or disable user emails as a feature by ticking or unticking the checkbox.
+Here, you can enable or disable user emails as a feature by selecting or clearing the check box.
 
 Autocomplete
 ------------

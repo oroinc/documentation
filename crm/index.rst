@@ -143,6 +143,8 @@ Developer Guides
 
     user_guide_support_tools/index
 
+    install_upgrade/index
+
     admin_guide/index
 
     community/index

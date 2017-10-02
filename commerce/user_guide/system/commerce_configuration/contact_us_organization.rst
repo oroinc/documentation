@@ -21,9 +21,9 @@ The following page opens:
 
 .. image:: /user_guide/img/system/configuration/contact_us/ContactUsOrg.png
 
-4. In **Contact Requests**, select the *Allow Contact Requests* checkbox to enable the Contact Us form.
+4. In **Contact Requests**, select the *Allow Contact Requests* check box to enable the Contact Us form.
 
-   To disable it in the front store, clear the checkbox. You can still use the :ref:`Contact Us widget <user-guide--landing-pages-create>` in your web catalog pages.
+   To disable it in the front store, clear the check box. You can still use the :ref:`Contact Us widget <user-guide--landing-pages-create>` in your web catalog pages.
 
 5. Click **Save Settings**.
 

@@ -28,15 +28,13 @@ The following page opens:
 
    To enable guest shopping lists, clear *Use System* and select the *Enable Guest Shopping List* check box.
 
-
 6. In the **Guest Shopping List Owner Settings** section, select the user who will be the default owner of all guest shopping lists. Depending on the roles and permissions of the owner, guest shopping lists may or may not be viewed and managed by the users who are subordinated to the owner.
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest shopping lists, adjust permissions for the shopping list entity in their roles accordingly.
 
-
 7. Click **Save Settings**.
 
-.. note:: When **Use System** checkbox is enabled, :ref:`system settings <user-guide--system-configuration--commerce-sales-shopping-list-global>` are applied.
+.. note:: When **Use System** check box is enabled, :ref:`system settings <user-guide--system-configuration--commerce-sales-shopping-list-global>` are applied.
 
 .. finish
 

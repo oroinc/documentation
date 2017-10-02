@@ -5,9 +5,9 @@ Getting Started
     :maxdepth: 2
 
     introduction
-    installation
     differences
     configuration
     localization
     security
     navigation
+    ../../install_upgrade/index

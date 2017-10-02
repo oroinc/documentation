@@ -21,7 +21,7 @@ Set Display Details
 
 4. In the **Display** list, select one of the options that will determine what and whose information to show in the front store :ref:`footer links <frontstore-guide--navigation-footer>`. For options detailed description, see :ref:`Set Display Options <user-guide--system-configuration--display-sales-rep-info--display-options>`.
   
-   Such website settings override settings set at the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** checkbox is enabled.
+   Such website settings override settings set at the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** check box is enabled.
 
 Provide Guest Contact Details 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -91,7 +91,7 @@ Proceed to create the attribute as described below.
 
       "**Select** and **Multi-Select**","Perform the following actions:
        1. Click **+ Add** next to *Options*.
-       2. Type in the option label. Enable the checkbox next to the default option.
+       2. Type in the option label. Enable the check box next to the default option.
 
           .. image:: /user_guide/img/products/product_attributes/ProductAttributesCreate2_1_Select2.png
              :class: with-border

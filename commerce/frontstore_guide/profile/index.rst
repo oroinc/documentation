@@ -74,8 +74,6 @@ To :ref:`manage default addresses in the address book <frontstore-guide--company
 .. image:: /frontstore_guide/img/profile/MyProfileManageAddresses.png
 .. image:: /frontstore_guide/img/profile/MyProfileAddressBooks.png
 
-
-
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
 

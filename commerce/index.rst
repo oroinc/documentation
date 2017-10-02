@@ -262,6 +262,8 @@ This section provides links to the online documentation for the latest OroCommer
 
         frontstore_guide/index
 
+        install_upgrade/index
+
         dev_guide/index
 
         admin_guide/index
@@ -271,5 +273,3 @@ This section provides links to the online documentation for the latest OroCommer
         system_requirements
 
 ..        configuration/index
-
-..     install_guide/index

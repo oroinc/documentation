@@ -20,7 +20,7 @@ Here, you can perform the following actions:
 2. **Sort**: To sort the items by the values in a particular column (e.g. ID, Label, etc.), click the respective column header. When sorting is ascending, an upward arrow appears next to the column name. When sorting is descending, a downward arrow appears.
 3. **Refresh**: Click |IcRedo| to reload the information about the items. If another user recently updated the item details, these changes are reflected upon the refresh.
 4. **Reset**: Click |IcReset| to roll back the view per page, filters and columns configuration to the default values.
-5. **Manage columns**: Open the **Grid Settings** by clicking |IcConfig| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. Toggle on and off the column show option using the **Show** checkbox.
+5. **Manage columns**: Open the **Grid Settings** by clicking |IcConfig| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. Toggle on and off the column show option using the **Show** check box.
 
    .. image:: /user_guide/img/getting_started/ui_components/manage_columns.png
       :class: with-border

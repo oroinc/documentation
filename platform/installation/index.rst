@@ -1,0 +1,217 @@
+.. index::
+    single: Installation
+    single: OroCRM Application; Installation
+    single: Platform Application; Installation
+
+.. _installation:
+
+Environment Setup and Installation
+==================================
+
+This article describes how to install the Oro application (e.g. OroPlatform, OroCRM or OroCommerce).
+
+.. contents::
+   :local:
+   :depth: 2
+
+This topic will showcase the installation and configuration using |main_app_in_this_topic| as example.
+
+.. Both applications are similar, but the platform contains only a subset of all bundles available in the full CRM. Follow the :doc:`with the link </bundles>`, to see the full list of bundles available in the packages.
+
+.. The next steps assume that you are to install the complete OroCRM application and provide details of what has to be done differently when installing the Platform application.
+
+Before You Begin
+----------------
+
+Prerequisites
+~~~~~~~~~~~~~
+
+* Please ensure that all the `system requirements`_ are met.
+
+* |main_app_in_this_topic| uses `Composer`_ to manage package dependencies. Install it globally to simplify running the commands. Symfony documentation provides detailed `instructions on installing Composer globally`_.
+
+   .. hint:: If Composer has been installed globally, it is enough to type *composer* in the console, in order to execute it.
+
+* *Optional:* To efficiently use the assets shipped with the |main_app_in_this_topic|, it is recommended to install node.js. Detailed installation instructions are available in the `node.js installation document`_.
+
+* :ref:`Create the database <platform--installation--create-database>` that will be used to store Oro application data.
+
+* :ref:`Download Oro application source files <platform--installation--source-files>`.
+
+* :ref:`Install and Configure a Web Application Server <platform--installation--web-server-configuration>`.
+
+* :ref:`Download External Packages and Configure Installation Environment <platform--installation--download-external-packages-and-configure-installation>`.
+
+* Add a record to your DNS Server to map Oro application hostname (e.g., oro.example.com) with the IP address it runs on. For local deployment, update the *hosts* file (e.g., 127.0.0.1 oro.example.com).
+
+.. _platform--installation--create-database:
+
+Create the Database
+~~~~~~~~~~~~~~~~~~~
+
+.. include:: ../../platform/installation/create_database.rst
+   :start-after: begin_create_database
+   :end-before: finish_create_database
+
+.. _platform--installation--source-files:
+
+Get the Source Code and Install Dependencies
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Obtain the application source code and install or update the required dependencies in one of the following ways:
+
+* :ref:`Clone the GitHub repository and install dependencies <platform-installation-github-clone>`.
+
+* :ref:`Download the source code archive and install dependencies <platform-installation-download-archive>`.
+
+These methods are detailed below.
+
+.. _platform-installation-github-clone:
+.. _clone-the-github-repository:
+
+Method 1: Clone the GitHub Repository and Install Dependencies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. include:: ../../platform/installation/install_git_clone.rst
+   :start-after: begin_install_git_clone
+
+.. _platform-installation-download-archive:
+
+Method 2: Download the Source Code Archive and Install Dependencies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. include:: ../../platform/installation/install_archive.rst
+   :start-after: begin_install_archive
+
+.. _platform--installation--web-server-configuration:
+.. _step-3-configure-the-webserver:
+
+Install and Configure a Web Application Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: ../../platform/installation/web_server_configuration.rst
+   :start-after: begin_web_server_configuration
+
+.. _platform--installation--download-external-packages-and-configure-installation:
+
+Download External Packages and Configure Installation Environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: ../../platform/installation/download_packages_and_configure_install.rst
+   :start-after: begin_download_dependencies
+
+Optimize Performance
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: ../../platform/installation/optimize_performance.rst
+   :start-after: begin_performance_optimization
+
+Configure PHP Runtime Environment
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: ../../platform/installation/runtime_configuration.rst
+   :start-after: begin_runtime_configuration
+
+.. _doc_installation_section_installation_process:
+
+Installation
+------------
+
+.. include:: ../../platform/installation/installation_steps.rst
+   :start-after: begin_installation_intro
+   :end-before: finish_installation_intro
+
+Post-Install Configuration: Activating Background Tasks
+-------------------------------------------------------
+
+To launch scheduled execution of the operations required by the Oro application, set up a 
+cron command with the `oro:cron` CLI command as an application entry point (see the sample configuration below).
+
+.. code-block:: text
+
+    */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:cron --env=prod > /dev/null
+    
+.. seealso::
+
+    You can also create your own commands that are executed in the background at certain times.
+    Read more about it in the :doc:`chapter about executing cron commands </book/background_tasks/cron>`.
+
+.. TODO fix link, replace crm link with the platform one when the cron is migrated into the shared space
+
+Time consuming or blocking tasks should usually be performed in the background to avoid negative impact on the application response time. For example, the OroPlatform uses the `MessageQueueComponent`_
+together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. Ensure that one or more consumers are always running:
+
+.. code-block:: text
+
+    /path/to/php [$folder_location]/orocrm/app/console oro:message-queue:consume --env=prod > /dev/null
+
+.. seealso::
+
+    To ensure that required number of consumers keeps running, set up a supervisor.
+    Here is `example of supervisord configuration`_.
+
+Updating OroPlatform to OroCRM
+------------------------------
+
+If you are not sure whether or not you need the full Oro application, you can start
+with the OroPlatform application and upgrade it later by installing the ``oro/crm`` and/or ``oro/commerce`` package using Composer:
+
+    .. code-block:: bash
+
+        $ composer require oro/crm
+
+        or
+
+        $ composer require oro/commerce
+
+Re-Installation
+---------------
+
+To reinstall OroCommerce:
+
+1. Drop the database that was used for the previous installation attempt.
+2. Create a new database for new OroCommerce installation.
+3. Empty the *<OroCommerce installation directory>/app/cache/prod* and *<OroCommerce installation directory>/app/cache/session* directories.
+4. Clear the Installed option in the *app/config/parameters.yml* file and update the database name, if necessary.
+5. Launch the OroCommerce installation :ref:`Via Console: Silent Installation <silent-installation>` with the **--force** option provided.
+
+
+
+.. _`Composer`: http://getcomposer.org/
+.. _`instructions on installing Composer globally`: http://symfony.com/doc/current/cookbook/composer.html
+.. _`its documentation`: https://getcomposer.org/doc/
+.. _`node.js installation document`: https://nodejs.org/en/download/
+.. _`GitHub repository`: https://github.com/orocrm/crm-application
+.. _`Platform application repository URL`: https://github.com/orocrm/platform-application
+.. _`session handler`: http://symfony.com/doc/current/components/http_foundation/session_configuration.html#save-handlers
+.. _`translations`: http://symfony.com/doc/current/components/translation/introduction.html
+.. _`CSRF tokens`: http://symfony.com/doc/current/cookbook/security/csrf_in_login_form.html
+.. _`orocrm.com`:  http://www.orocrm.com/
+.. _`optimizing InnoDB Disk I/O`: http://dev.mysql.com/doc/refman/5.6/en/optimizing-innodb-diskio.html
+.. _`in the official Symfony documentation`: http://symfony.com/doc/current/book/installation.html#book-installation-permissions
+.. _`Configuring a Web Server`: http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
+.. _`Symfony Cookbook`: http://symfony.com/doc/current/cookbook/index.html
+.. _`MessageQueueBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle
+.. _`MessageQueueComponent`: https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue
+.. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements
+.. _`example of supervisord configuration`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle#supervisord
+
+.. _`orocommerce.com`: http://www.orocommerce.com/
+
+.. finish_common_install
+
+.. toctree::
+
+   ../../platform/installation/create_database
+   ../../platform/installation/install_git_clone
+   ../../platform/installation/install_archive
+   ../../platform/installation/web_server_configuration
+   ../../platform/installation/download_packages_and_configure_install
+   ../../platform/installation/runtime_configuration
+   ../../platform/installation/optimize_performance
+   ../../platform/installation/installation_steps
+   ../../platform/installation/post_install_steps
+
+.. |main_app_in_this_topic| replace:: OroCRM
+
+.. |the_site| replace:: `orocrm.com`_

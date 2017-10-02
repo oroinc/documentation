@@ -41,18 +41,22 @@ If you have a running Elasticsearch server, the default settings are sufficient.
 If required, you can customize the Elasticsearch client settings. For this, modify the following parameters in the `app/config/parameters.yml` file:
 
 Basic parameters:
+
 * **search_engine_name** - An engine name, must be "elastic_search" for the Elasticsearch engine.
 * **search_engine_host** - A host name that the Elasticsearch should be connected to. Remember to specify the `https://` if you are going to use SSL.
 * **search_engine_port** - A port number that the Elasticsearch should use for connection.
 
 Auth parameters:
+
 * **search_engine_username** - A login for the HTTP Auth authentication.
 * **search_engine_password** - A password for HTTP Auth authentication.
 
-Index name: 
+Index name:
+
 * **search_engine_index_name** - A name of the Elasticsearch index to store data in.
 
 SSL Authentication:
+
 * **search_engine_ssl_verification** - A path to the `cacert.pem` certificate which is used to verify a node certificate.
 * **search_engine_ssl_cert** - A path to the client public certificate file.
 * **search_engine_ssl_cert_password** - A password for the certificate defined in the **search_engine_ssl_cert** parameter (optional).

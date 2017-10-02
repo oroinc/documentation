@@ -25,7 +25,7 @@ Depending on the configuration, the **Customer Visible Contact Info** list may i
 
 User settings override all other settings only if **Customer Owner** or **Customer User Owner** are selected as display options. 
 
-.. note:: To fall back to organization settings, enable the **Use Organization** checkbox.
+.. note:: To fall back to organization settings, enable the **Use Organization** check box.
 
 In the **Enter Contact Info** field, provide custom text to be displayed. This text is used as a contact information only when the **Customer Visible Contact Info** setting is set to *Enter Manually*.
 
