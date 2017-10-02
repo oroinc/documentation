@@ -13,6 +13,10 @@ A grid is an aggregated view of all the entity records. Each row of a grid is on
 
 .. note:: See a short demo on `how to use grids <https://www.orocrm.com/media-library/how-to-use-grids>`_, or continue reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/H-6vYBSziPY" frameborder="0" allowfullscreen></iframe>
+
 .. _doc-grids-open-grid:
 
 Open a Grid Page
@@ -190,6 +194,10 @@ For example, if there are a lot of contacts, they will not all fit on one page. 
 grid, use the grid filters.
 
 .. note:: See a short demo on `how to use grid filters <https://www.orocrm.com/media-library/how-to-use-filters#play=y8CqbC9IxdY>`_, or continue reading the guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/y8CqbC9IxdY" frameborder="0" allowfullscreen></iframe>
 
 .. _doc-grids-actions-filters-showhide:
 

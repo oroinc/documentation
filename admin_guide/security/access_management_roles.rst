@@ -13,6 +13,10 @@ Roles are predefined sets of permissions. When you assign a role to a user, you 
 
 .. note:: See a short demo on `how to create a and manage roles <https://www.orocrm.com/media-library/create-manage-roles>`_, or continue reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jgiKa_rov8Y" frameborder="0" allowfullscreen></iframe>
+
 
 Roles Creation
 ^^^^^^^^^^^^^^

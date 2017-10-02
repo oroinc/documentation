@@ -14,6 +14,10 @@ In order to create a :term:`Business Unit` record, complete as follows:
 
 .. note:: See a short demo on `how to create organizations and business units <https://www.orocrm.com/media-library/create-organizations-and-business-units>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_PpE536CQ9c" frameborder="0" allowfullscreen></iframe>
+
 General
 ^^^^^^^
 

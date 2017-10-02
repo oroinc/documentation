@@ -5,7 +5,11 @@ My Emails
 
 .. note:: Before you start using the **My Emails**, please configure you personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my_email_configuration>` for more information.
 
-.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+   See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
 
 To reach the **My Emails** page:
 
@@ -13,13 +17,7 @@ To reach the **My Emails** page:
 
 2.  Click **My Emails** in the dropdown menu.
 
-|
-
 .. image:: ../img/emails/user_my_emails.jpg
-
-|
-
-
 
 **My Emails** page has the following functionality available:
 
@@ -47,13 +45,7 @@ There are four grid views for emails available by default:
 -  **Mailbox: Local** (contains emails sent to the user’s personal
    email).
 
-|
-
 .. image:: ../img/emails/my_emails_page.jpg
-
-|
-
-
 
 Filters
 ~~~~~~~
@@ -61,12 +53,7 @@ Filters
 To enable filters for My emails page, click the corresponding button on
 the right, as illustrated below:
 
-|
-
 .. image:: ../img/emails/filters_icon.jpg
-
-|
-
 
 Filters sort your emails based on certain criteria, such as:
 
@@ -89,13 +76,7 @@ Filters sort your emails based on certain criteria, such as:
 To find a specific record, click on the filter and select the necessary
 search parameter from the dropdown:
 
-|
-
 .. image:: ../img/emails/filters_dropdown.jpg
-
-|
-
-
 
 Options
 ~~~~~~~
@@ -114,31 +95,13 @@ To save a page filtered according to the necessary criteria:
 
 5.  The page will appear in the **Emails** grid dropdown list.
 
-|
-
 .. image:: ../img/emails/filter.jpg
-
-|
-
-|
 
 .. image:: ../img/emails/options_save_list.jpg
 
-|
-
-|
-
 .. image:: ../img/emails/options_save.jpg
 
-|
-
-|
-
 .. image:: ../img/emails/options_saved_example.jpg
-
-|
-
-
 
 Sync Emails
 ~~~~~~~~~~~
@@ -161,13 +124,7 @@ To compose a new email:
 
 4.  A **Send Email form** will appear:
 
-|
-
 .. image:: ../img/emails/compose_new_emails.jpg
-
-|
-
-
 
 To compose a new email, define the following fields in the form:
 
@@ -227,32 +184,16 @@ To save an unfinished email, minimize the email dialog window by
 clicking on the corresponding button in the top right corner of the
 email dialog window.
 
-|
-
 .. image:: ../img/emails/minimize.jpg
-
-|
-
-
 
 Your unfinished email will appear as a minimized window throughout
 sessions, as illustrated in the following screenshot:
 
-|
-
 .. image:: ../img/emails/email_minimized2.jpg
-
-|
-
-
 
 You can save several of such emails as drafts:
 
-|
-
 .. image:: ../img/emails/several_minimized_emails2.jpg
-
-|
 
 
 
@@ -265,61 +206,34 @@ To **open** an email, click once either on the email or the **View**
 icon at the right end of the email.
 
 
-|
-
 .. image:: ../img/emails/view.jpg
 
-|
-
-|
 
 .. image:: ../img/emails/example_email_sent.jpg
-
-|
-
 
 
 From the page of the opened email, you can:
 
 -  **Add Comment** (add, edit or delete a comment to the email).
 
-|
 
 .. image:: ../img/emails/add_comment.jpg
-
-|
-
 
 
 -  **Add Task** (assign a task through an email).
 
-|
 
 .. image:: ../img/emails/add_task.jpg
-
-|
 
 
 
 -  **Mark Unread**
 
-|
-
 .. image:: ../img/emails/mark_unread.jpg
-
-|
-
-
 
 -  **Add Context** (define a record related to the email).
 
-|
-
 .. image:: ../img/emails/add_context.jpg
-
-|
-
-
 
 -  **Reply** (reply directly to the sender).
 
@@ -327,35 +241,15 @@ From the page of the opened email, you can:
 
 -  **Forward** (forward an email to a different recipient).
 
- |
-
  .. image:: ../img/emails/reply_reply_all_forward.jpg
-
- |
-
- |
 
  .. image:: ../img/emails/reply_all.jpg
 
- |
-
- |
-
  .. image:: ../img/emails/forward.jpg
-
- |
-
-
-
 
 -  **Download Attachment** (download the attached file, if available).
 
- |
-
  .. image:: ../img/emails/download_attachment.jpg
-
- |
-
 
 See Also
 --------

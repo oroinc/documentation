@@ -13,6 +13,10 @@ accounts, it is enough to log-in only once during a session.
 
 .. note:: See a short demo on `how to configure Google Single Sign-On <https://www.orocrm.com/media-library/configure-oauth2-google-orocrm#play=xKf5UR8t2AE>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xKf5UR8t2AE" frameborder="0" allowfullscreen></iframe>
+
 Google Side
 -----------
 

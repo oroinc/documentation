@@ -8,6 +8,10 @@ System Mailbox Settings
 
 See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
 
+.. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2s3tWpyvdn8" frameborder="0" allowfullscreen></iframe>
+
 Configuration of system mailboxes
 ---------------------------------
 

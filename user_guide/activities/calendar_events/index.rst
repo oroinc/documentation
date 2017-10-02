@@ -9,6 +9,10 @@ Have a look at the :ref:`short overview of calendar events <doc-activities-overv
 
 .. note:: You can also see a short demo on `how to create and manage events in your Oro application <https://www.orocrm.com/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU>`_, or continue reading the guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lZKiS3TvXNU" frameborder="0" allowfullscreen></iframe>
+
 When managing calendar events, you can do the following: (see aggregated information :ref:`here <doc-activities-events-actions>`):
 
 * :ref:`Create <doc-activities-events-actions-add-detailed>` a calendar event.

@@ -30,6 +30,9 @@ Grid
 
 .. note:: See a short demo on `how to use grids <https://www.orocrm.com/media-library/how-to-use-grids>`_, or continue reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/H-6vYBSziPY" frameborder="0" allowfullscreen></iframe>
 
 The following table describes columns of the **All Entities** page and how they affect ability to edit the entity:
 

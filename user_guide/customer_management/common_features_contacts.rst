@@ -17,6 +17,10 @@ A contact may be assigned as a related entity to records of other entities, e.g.
 
 .. note:: For a quick guidance, please see a short demo on `accounts, contacts and customers <https://www.orocrm.com/media-library/22091>`_.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3typtIVAU6Y" frameborder="0" allowfullscreen></iframe>
+
 Create a Contact Record
 -----------------------
 

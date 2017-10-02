@@ -10,6 +10,10 @@ registered directly in OroCRM are collected with the *"Create Contact Request"* 
 
 .. note:: See a short demo on `how to create and manage contact requests <https://www.orocrm.com/media-library/manage-contact-requests>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/psQnfsFxQeg" frameborder="0" allowfullscreen></iframe>
+
 Create a Contact Request from OroCRM
 ------------------------------------
 

@@ -10,6 +10,10 @@ and the person responsible for handling them, use the "*Create Case*" action.
 
 .. note:: See a short demo on `how to create and manage cases <https://www.orocrm.com/media-library/create-manage-cases-orocrm>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qaLIO6H6po4" frameborder="0" allowfullscreen></iframe>
+
 Cases can be created from the Cases grid:
 
 1. Navigate to **Activities>Cases** in the main menu.

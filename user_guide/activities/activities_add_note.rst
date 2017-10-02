@@ -5,6 +5,11 @@ Notes
 
 .. note:: See a short demo on `how to add notes <https://www.orocrm.com/media-library/add-notes-orocrm>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TO_2SGV5KaU" frameborder="0" allowfullscreen></iframe>
+
+
 Add a Note
 ----------
 

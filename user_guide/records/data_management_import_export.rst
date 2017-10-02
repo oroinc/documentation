@@ -13,6 +13,10 @@ administrator.
 
 .. note:: See a short demo on `how to export and import data <https://www.orocrm.com/media-library/export-import-data>`_, or continue reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/p5HrsdMUB7A" frameborder="0" allowfullscreen></iframe>
+
 .. _user-guide-import:
 
 Import
