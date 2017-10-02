@@ -15,6 +15,10 @@ process it in OroCRM. This article describes how to define and edit the integrat
 
 .. note:: See a short demo on `how to setup Zendesk integration <https://www.orocrm.com/media-library/setup-zendesk-integration>`_, or continue reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4_czzcXNh8s" frameborder="0" allowfullscreen></iframe>
+
 On the Zendesk Side
 -------------------
 

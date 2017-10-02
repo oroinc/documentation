@@ -29,6 +29,10 @@ Create a Custom Entity Field
 
 .. note:: See a short demo on `how to create a custom field <https://www.orocrm.com/media-library/create-custom-field>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DwXQG9dcB0k" frameborder="0" allowfullscreen></iframe>
+
 1. In the main menu, navigate **System>Entities>Entities Management**.
 
 2. On the **All Entities** page, click the required entity in the grid. 

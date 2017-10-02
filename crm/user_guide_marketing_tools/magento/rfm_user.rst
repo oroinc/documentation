@@ -11,6 +11,10 @@ defined per channel.
 
 .. hint:: See a short demo on `how to use RFM analysis <https://www.orocrm.com/media-library/how-to-use-rfm-analysis#play=mEAyF73Irm0>`__, or keep reading the step-by-step guidance.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mEAyF73Irm0" frameborder="0" allowfullscreen></iframe>
+
 Overview
 --------
 

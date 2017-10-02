@@ -52,6 +52,10 @@ Tasks are assignments that need to be accomplished by a user. Keeping track of t
 
 .. note:: See a short demo on `how to create and manage tasks <https://www.orocrm.com/media-library/create-and-manage-tasks>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TIeEKgUJIu8" frameborder="0" allowfullscreen></iframe>
+
 What You Can Do with Tasks?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -132,7 +136,9 @@ Cases are issues, problems or failures reported by customers or found internally
 
 .. note:: See a short demo on `how to create and manage cases <https://www.orocrm.com/media-library/create-manage-cases-orocrm>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qaLIO6H6po4" frameborder="0" allowfullscreen></iframe>
 
 What You Can Do with Cases?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -169,6 +175,10 @@ It is very easy for a busy employee who is working hard on some task to forget a
 While such incidents can negatively affect the reputation of your business and work performance, it is very easy to deal with them: for each important meeting, conference, call, vacation, etc. create an event in an OroCRM calendar. It will help you avoid missing appointments or calls, and your colleagues can easily follow your schedule and be sure that that they are up-to-date with your business trips and conferences.
 
 .. note:: See a short demo on `how to create and manage calendars <https://www.orocrm.com/media-library/create-and-manage-calendars#play=fVcOy3TmuQg>`_, or keep reading the step-by-step guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fVcOy3TmuQg" frameborder="0" allowfullscreen></iframe>
 
 What You Can Do with Calendar Events?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -218,6 +228,10 @@ Additionally, OroCRM's integration with Google Hangouts enables users to make Ha
 Users can make voice calls to a single phone number, or launch a audio / video conference with up to 5 participants. Call data is logged automatically, including any notes made during the call.
 
 .. note:: See a short demo on `how to log calls in your Oro application <https://www.orocrm.com/media-library/log-call-orocrm>`_, or keep reading the step-by-step guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TKNXHcKxVII" frameborder="0" allowfullscreen></iframe>
 
 There are three ways to start making or logging a call:
 
@@ -271,6 +285,10 @@ Users can access their emails on the personal **My Emails** page, via the **Rece
 
 .. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
+
 .. image:: ../img/activities/activities_emails1.png
 
 
@@ -300,12 +318,13 @@ Users can see and manage contact request in the dedicated system section.
 
 .. note:: See a short demo on `how to create and manage contact requests <https://www.orocrm.com/media-library/manage-contact-requests>`_, or keep reading the guidance below.
 
+   .. raw:: html
 
-|
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/psQnfsFxQeg" frameborder="0" allowfullscreen></iframe>
+
 
 .. image:: ../img/activities/activities_contactrequests.png
 
-|
 
 Contact requests can be also created automatically. For this, put an embedded form like 'Contact Us' on your site. After a user fills in the form and submits it, a corresponding contact request will appear in your Oro application. You can read more about embedded forms in the :ref:`Embedded Forms <admin-embedded-forms>` guide.
 
@@ -327,11 +346,12 @@ For such cases, OroCRM provides an in-built functionality that enables you to le
 
 .. note:: See a short demo on `how to add notes <https://www.orocrm.com/media-library/add-notes-orocrm>`_, or keep reading guidance below.
 
-|
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TO_2SGV5KaU" frameborder="0" allowfullscreen></iframe>
 
 .. image:: ../img/activities/activities_notes.png
 
-|
 
 You can add a note by clicking the :guilabel:`Add Note` action button on the view page of the entity record that the note relates to. You can format notes as necessary and attach files to them. 
 
@@ -351,12 +371,11 @@ You can leave a comment in the **Comments** section of the entity view page.
 
 .. note:: See a short demo on `how to add comments <https://www.orocrm.com/media-library/add-comments-orocrm>`_, or keep reading the guidance below.
 
-|
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kGSqqKoNL20" frameborder="0" allowfullscreen></iframe>
 
 .. image:: ../img/activities/activities_comments.png
-
-|
-
 
 For more information about comments, see the :ref:`Comments <user-guide-activities-comments>` guide.
 
@@ -368,6 +387,10 @@ Adding Attachments
 When you need to provide additional information about an entity record and this information is fully included in a file (for example, you want to add a calculation sheet), add this file as an attachment directly to the entity record. 
 
 .. note:: See a short demo on `how to add attachments in your Oro application <https://www.orocrm.com/media-library/add-attachments-orocrm>`_, or keep reading the guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/TyG001xOw3U" frameborder="0" allowfullscreen></iframe>
 
 You can attach files by clicking the :guilabel:`Add Attachment` action button on the view page of the entity record that the attachment relates to.
 

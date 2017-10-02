@@ -10,6 +10,10 @@ Notification rules define when to send an email to a recipient. For example, you
 
 .. note:: See a short demo on `how to create notification rules <https://www.orocrm.com/media-library/create-notification-rules>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/m5-Bby5qRg4" frameborder="0" allowfullscreen></iframe>
+
 .. contents::
    :local:
    :depth: 2

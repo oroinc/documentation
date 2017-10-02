@@ -10,6 +10,10 @@ structure, as well as to group users in any other way and to define the access a
 
 .. note:: See a short demo on `how to create and manage users <https://www.orocrm.com/media-library/manage-users>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/t97qnxmEa6o" frameborder="0" allowfullscreen></iframe>
+
 Administrative Structure
 ------------------------
 

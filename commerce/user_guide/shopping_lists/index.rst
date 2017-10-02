@@ -19,6 +19,10 @@ Information on shopping lists is covered in the following sections:
 
 .. important:: See a short demo on `creating orders from the shopping list <https://www.orocommerce.com/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/w7NXMifQZnI" frameborder="0" allowfullscreen></iframe>
+
 Overview
 --------
 

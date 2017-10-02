@@ -10,7 +10,12 @@ proposals, for order requests, etc.
 You can define and modify the list of OroCRM users who have access to each of these mailboxes, automatically turn 
 letters into cases or leads, and set-up auto-responses.
 
-.. note:: See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+.. note::
+   See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+
+    .. raw:: html
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/2s3tWpyvdn8" frameborder="0" allowfullscreen></iframe>
 
 Create System Mailbox
 ---------------------

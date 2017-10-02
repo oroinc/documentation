@@ -19,6 +19,10 @@ In the following guide, you will learn how to:
 
 .. note:: See a short demo on `how to create and work with opportunities <https://www.orocrm.com/media-library/create-work-opportunity>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/662N4sMvyvc" frameborder="0" allowfullscreen></iframe>
+
 .. _user-guide-system-channel-entities-opportunities--enable:
 
 Enable Opportunities

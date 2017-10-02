@@ -7,6 +7,10 @@ Create a New Product Family
 
 See a short demo on `how to create a product family <https://www.orocommerce.com/media-library/create-product-attributes-families>`_ (from 6:43), or keep reading the step-by-step guidance below.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/Ja7-3G7ljTA" frameborder="0" allowfullscreen></iframe>
+
 Default Product Family may not be enough to cover all your needs. To create a new product family:
 
 1. Navigate to **Products > Product Families** using the main menu.

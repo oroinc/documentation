@@ -12,6 +12,10 @@ In **System>Configuration>System Configuration>General Setup>Display Settings**,
 
 .. note:: See a short demo on `how to set display settings in your Oro application <https://www.orocrm.com/media-library/set-display-settings-orocrm#play=B2DqoTVQCao>`_, or continue reading the guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/B2DqoTVQCao" frameborder="0" allowfullscreen></iframe>
+
 User Bar
 --------
 

@@ -13,6 +13,10 @@ In order to save and process the details of commercial activity with people or b
 
 .. note:: See a short demo on `how to create and work with a lead <https://www.orocrm.com/media-library/create-work-lead>`_, or keep reading the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5yZDC68sRTk" frameborder="0" allowfullscreen></iframe>
+
 Enable Lead Record
 ------------------
 You can enable (or disable) a lead manually the following way:

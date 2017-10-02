@@ -7,6 +7,10 @@ Create a Configurable Product
 
 See a short demo on `how to create a configurable product <https://www.orocommerce.com/media-library/create-configurable-products>`_, or keep reading the step-by-step guidance below.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/V3yhUw-Tc_U" frameborder="0" allowfullscreen></iframe>
+
 
 Checklist 
 ^^^^^^^^^

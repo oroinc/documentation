@@ -16,6 +16,10 @@ Address Books in :ref:`dotmailer <user-guide-dm-integration>`.
 
 .. note:: See a short demo on `how to create a marketing list <https://www.orocrm.com/media-library/create-marketing-list-2>`_, or follow the step-by-step guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9cCmx0N-Qf8" frameborder="0" allowfullscreen></iframe>
+
 .. _user-guide-marketing-lists-create:
 
 Create Marketing Lists

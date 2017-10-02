@@ -17,6 +17,10 @@ This article describes how to define and edit the integration and synchronizatio
 
 .. note:: See a short demo on `how to setup an integration between a Magento and your Oro application <https://www.orocrm.com/media-library/setup-magento-crm-integration>`_, or keep reading the guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/MfQdP2BClk0" frameborder="0" allowfullscreen></iframe>
+
 On the Magento Side
 -------------------
 

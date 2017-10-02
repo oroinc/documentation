@@ -7,6 +7,10 @@ You can add an attachment to a record in OroCRM.
 
 See a short demo on `how to add attachments in your Oro application <https://www.orocrm.com/media-library/add-attachments-orocrm>`_, or keep reading the step-by-step guidance below.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/TyG001xOw3U" frameborder="0" allowfullscreen></iframe>
+
 .. important::
     By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
     

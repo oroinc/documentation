@@ -13,6 +13,10 @@ action.
 
 .. note:: See a short demo on `how to add comments <https://www.orocrm.com/media-library/add-comments-orocrm>`_, or keep reading the guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/kGSqqKoNL20" frameborder="0" allowfullscreen></iframe>
+
 Create and View Comments
 ------------------------
 

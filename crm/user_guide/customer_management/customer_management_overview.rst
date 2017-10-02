@@ -11,6 +11,11 @@ Once a customer record is created, it is assigned to an account. Several account
 
 .. note:: For quick guidance, please see a short demo on `accounts, contacts and customers <https://www.orocrm.com/media-library/22091>`_.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3typtIVAU6Y" frameborder="0" allowfullscreen></iframe>
+
+
 .. _user-guide-common-features-channels:
 
 Channels
@@ -58,8 +63,22 @@ When customer-related data is uploaded to OroCRM (such as from Magento), a new a
 .. note:: You can also checkout three short demos on:
 
           * `creating and editing <https://www.orocrm.com/media-library/22093>`_
-          * `managing <https://www.orocrm.com/media-library/22095>`_, and
+
+             .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/00Vz_mkbeTE" frameborder="0" allowfullscreen></iframe>
+
+          * `managing <https://www.orocrm.com/media-library/22095>`_
+
+             .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5FEyHWr-jQY" frameborder="0" allowfullscreen></iframe>
+
           * `merging account records <https://www.orocrm.com/media-library/merge-account-records-2>`_
+
+             .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x-LwwCQfwGQ" frameborder="0" allowfullscreen></iframe>
 
 .. _user-guide-common-features-contacts:
 

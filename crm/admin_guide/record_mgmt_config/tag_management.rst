@@ -19,6 +19,10 @@ The following guide describes how you can configure tags and taxonomies in your 
 
 .. note:: See a short demo on `how to create tags and taxonomies <https://www.orocrm.com/media-library/tags-taxonomies>`_, or continue reading the guidance below.
 
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RBY6dvZc55E" frameborder="0" allowfullscreen></iframe>
+
 Enable Tags
 -----------
 

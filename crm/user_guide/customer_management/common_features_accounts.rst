@@ -17,8 +17,24 @@ a 360-degree view of the customer.
 .. note:: See three short demos on:
 
           * `creating and editing <https://www.orocrm.com/media-library/22093>`_
+
+             .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/00Vz_mkbeTE" frameborder="0" allowfullscreen></iframe>
+
           * `managing <https://www.orocrm.com/media-library/22095>`_
-          * `merging account records <https://www.orocrm.com/media-library/merge-account-records-2>`_ , or
+
+             .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5FEyHWr-jQY" frameborder="0" allowfullscreen></iframe>
+
+          * `merging account records <https://www.orocrm.com/media-library/merge-account-records-2>`_
+
+             .. raw:: html
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/x-LwwCQfwGQ" frameborder="0" allowfullscreen></iframe>
+
+          or
 
           keep reading the step-by-step guidance below.
 

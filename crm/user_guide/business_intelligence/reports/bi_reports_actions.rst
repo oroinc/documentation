@@ -15,6 +15,10 @@ Create a Custom Report
 
 See a short demo on `how to create a report in your Oro application <https://www.orocrm.com/media-library/create-report-orocrm>`_, or continue reading the step-by-step guidance below.
 
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/MMCRO1gUWAY" frameborder="0" allowfullscreen></iframe>
+
 To create a customer report:
 
 1. Navigate to **Reports and Segments>Manage Custom Reports** in the main menu.
