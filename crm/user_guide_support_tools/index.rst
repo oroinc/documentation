@@ -7,6 +7,8 @@ The section describes OroCRM tools used to collect and aggregate customer-detail
 
 
 .. toctree::
+   :includehidden:
+   :titlesonly:
    :maxdepth: 1
 
    /user_guide/activities/activities_create_case

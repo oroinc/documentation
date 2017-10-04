@@ -39,6 +39,7 @@ With Oro Tracking Websites functionality you can learn how many users have visit
 
 
 .. toctree::
+   :includehidden:
    :hidden:
    :titlesonly:
    :maxdepth: 2

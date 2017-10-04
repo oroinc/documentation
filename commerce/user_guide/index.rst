@@ -106,6 +106,7 @@ Table of Contents
 -----------------
 
 .. toctree::
+   :includehidden:
    :titlesonly:
    :maxdepth: 1
 

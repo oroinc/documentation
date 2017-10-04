@@ -14,7 +14,7 @@ Join Oro community and contribute to the open-source OroCommerce Community Editi
 Contribute to the Source Code, Translations, and Documentation
 --------------------------------------------------------------
 
-.. include:: /community/contribute.rst
+.. include:: /community/contribute/index.rst
    :start-after: begin_contribute
    :end-before: finish_contribute
 
@@ -37,8 +37,7 @@ Report Issues
 Learn about Release Versions and Dates
 --------------------------------------
 
-Please refer to the :ref:`Understand Release Process <doc--community--release>` topic to learn more about Oro versioning
-strategy, release and support cycle, and upgrade recommendations.
+Please refer to the :ref:`Understand Release Process <doc--community--release>` topic to learn more about Oro versioning strategy, release and support cycle, and upgrade recommendations.
 
 Contact Community
 -----------------
@@ -50,10 +49,12 @@ Contact Community
 
 
 .. toctree::
+   :includehidden:
+   :titlesonly:
    :maxdepth: 2
    :hidden:
 
-   Contribute <contribute>
+   contribute/index
    issues/index
    release_process
    contact_community

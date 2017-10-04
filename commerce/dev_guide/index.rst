@@ -43,6 +43,7 @@ Please navigate to the following sections for the complete list of topics:
 .. Potentially useful topics composer: vendor docs + http://www.masterzendframework.com/series/tooling/composer/command-line-essentials/
 
 .. toctree::
+   :includehidden:
    :titlesonly:
    :maxdepth: 1
 

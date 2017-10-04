@@ -22,8 +22,10 @@ The section describes OroCRM tools used to collect and aggregate customer-detail
 
 
 .. toctree::
-    :hidden:
-    :maxdepth: 2
+   :includehidden:
+   :titlesonly:
+   :hidden:
+   :maxdepth: 2
 
-    b2b_sales/index
-    magento/index
+   b2b_sales/index
+   magento/index

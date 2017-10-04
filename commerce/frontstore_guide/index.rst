@@ -9,6 +9,8 @@ The following guide is intended as an introduction to the OroCommerce default fr
 For a quick orientation, see how to :ref:`Register and Sign in <frontstore-guide--getting-started>` and check out the :ref:`Navigation Basics <frontstore-guide--navigation>`.
 
 .. toctree::
+   :includehidden:
+   :titlesonly:
    :hidden:
    :maxdepth: 1
 

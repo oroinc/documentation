@@ -9,6 +9,8 @@ How to Co-install OroCommerce and OroCRM
     1. Before install OroCommerce over OroCRM you should change default parameter ``web_backend_prefix`` to some non-empty prefix, f.e. - '/admin'.
     2. Package manager doesn't show enterprise packages, so you can't install commerce-enterprise and crm-enterprise through it, please use console instead.
 
+.. warning:: To avoid access permissions issues, please review the Symfony `Setting up or Fixing File Permissions <http://symfony.com/doc/current/setup/file_permissions.html>`_ guide before running any commands. On top of that, consider running the command(s) below with `sudo -u [web server user name]` prefix.
+
 Fresh install (console)
 -----------------------
 
@@ -19,7 +21,6 @@ Fresh install (console)
 Example:
 
 .. code-block:: bash
-    :linenos:
 
     $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://local.dev
 
@@ -33,7 +34,6 @@ Install over existed application (console)
 4. If you do install OroCommerce over OroCRM please run next commands ("unsecure_url" and "secure_url" are urls of the current frontend part of website):
 
 .. code-block:: bash
-    :linenos:
 
     app/console oro:config:update oro_website.url unsecure_url
     app/console oro:config:update oro_website.secure_url secure_url
@@ -52,7 +52,6 @@ Install over existed application (Package manager)
 3. If you do install OroCommerce over OroCRM please run next commands ("unsecure_url" and "secure_url" are urls of the current frontend part of website):
 
 .. code-block:: bash
-    :linenos:
 
     app/console oro:config:update oro_website.url unsecure_url
     app/console oro:config:update oro_website.secure_url secure_url

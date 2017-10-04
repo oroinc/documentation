@@ -33,6 +33,8 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
 
 
 .. toctree::
+   :includehidden:
+   :titlesonly:
    :maxdepth: 2
 
    intro_users_and_benefits     

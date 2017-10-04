@@ -1,7 +1,7 @@
 Welcome to OroCommerce Documentation
 ====================================
 
-OroCommerce is an open-source Business to Business eCommerce application built with flexibility in mind and with most comprehensive set of features - corporate accounts, multiple organizations, websites and stores, high-performance content management system (CMS), personalized catalog management, multiple and customized price lists for your sales organization and multiple shopping lists for your buyer's organization - available out of the box.
+.. OroCommerce is an open-source Business to Business eCommerce application built with flexibility in mind and with most comprehensive set of features - corporate accounts, multiple organizations, websites and stores, high-performance content management system (CMS), personalized catalog management, multiple and customized price lists for your sales organization and multiple shopping lists for your buyer's organization - available out of the box.
 
 .. note:: OroCommerce comes in two editions, Community Edition (CE) and Enterprise Edition (EE) and some features described in the documentation are applicable only to EE. To learn more about the difference between the editions, see :ref:`OroCommerce Community vs Enterprise <community-vs-enterprise>` topic.
 
@@ -9,8 +9,6 @@ This section provides links to the online documentation for the latest OroCommer
 
 .. raw:: html
 
-   <h4><b>Select your role:<br> <a href="#buyer">B2B Buyer</a> | <a href="#sales_marketing">Sales &amp; Marketing</a> | <a href="#administrator"> Administrator </a> | <a href="#developer">Developer </a></b></h4>
-   <p>This section provides links to the online documentation for the latest OroCommerce release.</p>
    <h2>Using OroCommerce Management Console</h2>
    <p>The management console is used by merchants to operate their online and offline sales.</p>
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
@@ -252,24 +250,24 @@ This section provides links to the online documentation for the latest OroCommer
         <div><h2>Table of Contents</h2></div>
 
     .. toctree::
-        :includehidden:
-        :titlesonly:
-        :maxdepth: 3
+       :includehidden:
+       :titlesonly:
+       :maxdepth: 3
 
-        user_guide/index
+       install_upgrade/index
 
-        seo_config_guide/index
+       user_guide/index
 
-        frontstore_guide/index
+       seo_config_guide/index
 
-        install_upgrade/index
+       frontstore_guide/index
 
-        dev_guide/index
+       dev_guide/index
 
-        admin_guide/index
+       admin_guide/index
 
-        community/index
+       community/index
 
-        system_requirements
+       system_requirements
 
 ..        configuration/index

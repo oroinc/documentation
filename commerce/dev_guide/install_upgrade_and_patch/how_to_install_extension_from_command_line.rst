@@ -4,7 +4,7 @@
     single: Extension
 
 How to Manage OroPlatform Extensions
-=====================================
+====================================
 
 *Used application: OroPlatform 1.**
 

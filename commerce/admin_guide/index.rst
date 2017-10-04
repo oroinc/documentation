@@ -6,6 +6,7 @@ Administrator Guide
 This section contains information about OroCommerce configuration, administration, and performance optimization:
 
 .. toctree::
+   :includehidden:
    :titlesonly:
    :maxdepth: 1
 
