@@ -18,9 +18,11 @@ Reference
   * :doc:`/reference/format/workflows`
 
 .. toctree::
-    :hidden:
+   :includehidden:
+   :titlesonly:
+   :hidden:
 
-    /reference/annotation/index
-    /reference/entity_config/index
-    /reference/format/index
+   /reference/annotation/index
+   /reference/entity_config/index
+   /reference/format/index
 

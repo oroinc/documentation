@@ -130,19 +130,21 @@ Please note that in many cases, the tools may be not available to the usual user
 
 
 .. toctree::
-    :hidden:
-    :maxdepth: 2
-    :glob:
+   :includehidden:
+   :titlesonly:
+   :hidden:
+   :maxdepth: 2
+   :glob:
 
-    op_structure/index
-    app_look_feel/index
-    record_mgmt_config/index
-    email/index
-    entities/index
-    security/index
-    user_management/index
-    sales_tools_config/index
-    marketing_tools_config/index
-    integrations/index
-    system/index
+   op_structure/index
+   app_look_feel/index
+   record_mgmt_config/index
+   email/index
+   entities/index
+   security/index
+   user_management/index
+   sales_tools_config/index
+   marketing_tools_config/index
+   integrations/index
+   system/index
 
