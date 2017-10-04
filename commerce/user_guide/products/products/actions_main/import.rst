@@ -31,7 +31,7 @@ Download Sample Data
 To download sample data:
 
 1.In the main menu, navigate to **Products > Products**. The product list opens.
-2. Click |IcArrowsV| next to **Import File** on the top right.
+2. Click |IcSortDesc| next to **Import File** on the top right.
 3. Click **Download Data Template**. The .csv file with sample data will be downloaded.
 
 .. _doc--products--actions--import--validate:
@@ -42,7 +42,7 @@ Validate the File for Import
 To validate that your .csv file is well-prepared for import:
 
 1.In the main menu, navigate to **Products > Products**. The product list opens.
-2. Click |IcArrowsV| next to **Import File** on the top right.
+2. Click |IcSortDesc| next to **Import File** on the top right.
 3. Click **Validate Data File**.
 #. In the **Import Validation** dialog, click **Choose File**, select the .csv file you prepared and then click **Submit**.
 

@@ -6,7 +6,7 @@ Quotes
 This topic contains the following sections:
 
 .. contents:: :local:
-   :depth: 2
+   :depth: 3
 
 Overview
 --------
@@ -37,7 +37,7 @@ Quote management and their use in many ways depend on the following:
 
 * Quote Management Process Configuration (Workflows):
 
-  - Ensure that one of the quote management workflows is activated:
+  - For wider possibilities, ensure that one of the quote management workflows is activated:
 
     * :ref:`Quote Management Flow <system--workflows--quote-backoffice-workflow>` --- A simple quote management flow, where a sales person is not bound by any limitations and can handle the sale without supervision.
     * :ref:`Backoffice Quote flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` (QBFA)--- A flow, where a sales person might have to get approval from the authorized person (e.g. their manager) before sending the quote with updated prices to the buyer.
@@ -48,12 +48,25 @@ Quote management and their use in many ways depend on the following:
 
 .. TODO replace the link to the workflow management with the link to the Quote backend workflow descriptions (when ready)
 
-Creating a Quote
-----------------
+Managing Quotes
+---------------
 
 .. include:: create/index.rst
    :start-after: begin_create_quote
    :end-before: finish_create_quote
+
+Also you can:
+
+* :ref:`Edit a quote <quotes--actions--edit>`
+
+* :ref:`Delete a quote <quotes--actions--delete>`
+
+* Engage in activities:
+
+  * :ref:`attach files to a quote <user-guide-activities-attachments>`
+  * :ref:`make notes <user-guide-add-note>` on the quote
+  * :ref:`create calendar events <doc-activities-events>` linked to the quote
+  * :ref:`send emails <user-guide-using-emails>` related to the quote
 
 .. .. include:: viewlist.rst
    :end-before: finish
@@ -68,13 +81,6 @@ Quote Stages and Transitions
 .. .. include:: view.rst
    :end-before: finish
 
-Editing a Quote
----------------
-
-.. include:: edit.rst
-   :start-after: begin
-   :end-before: finish
-
 .. include:: flows/index.rst
    :end-before: finish_quotes_in_use
 
@@ -85,10 +91,7 @@ Editing a Quote
 
    quote_states_by_flow/index
 
-   edit
-
    flows/index
-
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

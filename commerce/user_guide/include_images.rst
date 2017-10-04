@@ -13,10 +13,6 @@ Images
 
    <i class="fa fa-archive fa-lg" aria-hidden="true"></i>
 
-.. |IcMergeAccounts| raw:: html
-
-   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
-
 .. |IcSend| raw:: html
 
    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
@@ -146,6 +142,14 @@ Images
 .. |IcMore| raw:: html
 
    <i class="fa fa-ellipsis-h fa-lg" aria-hidden="true"></i>
+
+.. |IcMerge| raw:: html
+
+   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+
+.. |IcMergeAccounts| raw:: html
+
+   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
 
 .. |IcDashboard| raw:: html
 
@@ -287,6 +291,21 @@ Images
 
    <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>
 
+.. Check mark in the square.
+
+.. |IcCheckSquareO| raw:: html
+
+   <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+
+.. SortDesc is also used as drop-down arrow
+
+.. |IcSortDesc| raw:: html
+
+   <i class="fa fa-sort-desc fa-lg" aria-hidden="true"></i>
+
+.. |IcMinus| raw:: html
+
+   <i class="fa fa-minus fa-lg" aria-hidden="true"></i>
 
 .. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
    :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png
@@ -357,9 +376,6 @@ Images
    :align: middle
 
 .. |IcSaveChanges| image:: /user_guide/img/getting_started/buttons/IcSaveChanges.png
-   :align: middle
-
-.. |IcMerge| image:: /user_guide/img/getting_started/buttons/IcMerge.png
    :align: middle
 
 .. |IcFilters| image:: /user_guide/img/getting_started/buttons/IcFilters.png

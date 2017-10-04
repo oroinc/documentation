@@ -159,6 +159,8 @@ Images
 
    <i class="fa fa-times fa-lg" aria-hidden="true"></i>
 
+.. ArrowsV is a double-headed vertical arrow used for the Move action
+
 .. |IcArrowsV| raw:: html
 
    <i class="fa fa-arrows-v fa-lg" aria-hidden="true"></i>

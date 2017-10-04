@@ -152,7 +152,7 @@ The type of data that can be stored as the option value. Supported data types ar
 
 **type**: ``map``
 
-The :ref:`form type <reference-format-system-configuration-type>` options. The otpions being
+The :ref:`form type <reference-format-system-configuration-type>` options. The options being
 available depend on the actual form type.
 
 .. _reference-format-system-configuration-type:
