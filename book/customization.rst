@@ -304,8 +304,8 @@ which ensures that the column is recognized properly.
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/MigrationBundle/Schema/v1_0/AddCustomFieldMigration.php
-    namespace Acme\DemoBundle\Migrations\Schema;
+    // src/Acme/DemoBundle/Migrations/Schema/v1_0/AddCustomFieldMigration.php
+    namespace Acme\DemoBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
     use Oro\Bundle\EntityExtendBundle\EntityConfig\ExtendScope;
