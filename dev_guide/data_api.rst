@@ -799,12 +799,18 @@ The API allows you to use several types of filters. Filter types are briefly des
 | filter  | filter[id]=1                 | Used for filtering the response data by specific values of a specific       |
 |         | or                           | field. Can accept additional operators like ``<``, ``>``, etc.              |
 |         | filter[id]=5,7               |                                                                             |
-|         | or                           | May accept several values. In such case, they will be perceived as          |
-|         | filter[id]>8&filter[name]=a  | connected using a logical ``OR`` operator,                                  |
+|         | or                           | A filter may be a key-value pair delimited by an operator,                  |
+|         | filter[id]>8&filter[name]=a  | e.g. "filter[id]>8",                                                        |
+|         | or                           | or may be specified using the syntax "key[operator_name]=value".            |
+|         | filter[id][neq]=8            | The full list of supported operators is described in                        |
+|         |                              | the `Data Filter (**filter**) <./data-api#data-filter-filter>`__ section.   |
+|         |                              |                                                                             |
+|         |                              | May accept several values. In such case, they will be considered connected  |
+|         |                              | by the logical ``OR`` operator,                                             |
 |         |                              | e.g. id == 5 OR id == 7                                                     |
 |         |                              |                                                                             |
-|         |                              | And in case of several filters in request, all of them will be perceived as |
-|         |                              | connected using a logical ``AND`` operator,                                 |
+|         |                              | And in case of several filters in request, all of them will be considered   |
+|         |                              | connected by the logical ``AND`` operator,                                  |
 |         |                              | e.g. id > 8 AND name == 'a'                                                 |
 +---------+------------------------------+-----------------------------------------------------------------------------+
 | include | include=[owner,organization] | Used for inclusion into response the related resources data.                |
@@ -881,21 +887,27 @@ Depending on the type of the filter, certain operators are allowed. For example,
 is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for string filter type - only two: **=**, **!**.
 
 
-+----------+-----------------------+-------------+---------------------------------------+
-| Operator | Description           | URL Encoded | Request Example                       |
-+==========+=======================+=============+=======================================+
-| **=**    | Equality              | %3D         | GET /api/users?filter[id]=1 HTTP/1.1  |
-+----------+-----------------------+-------------+---------------------------------------+
-| **!=**   | Inequality            | %21%3D      | GET /api/users?filter[id]!=2 HTTP/1.1 |
-+----------+-----------------------+-------------+---------------------------------------+
-| **<**    | Less than             | %3C         | GET /api/users?filter[id]<3 HTTP/1.1  |
-+----------+-----------------------+-------------+---------------------------------------+
-| **<=**   | Less than or equal    | %3C%3D      | GET /api/users?filter[id]<=4 HTTP/1.1 |
-+----------+-----------------------+-------------+---------------------------------------+
-| **>**    | Greater than          | %3E         | GET /api/users?filter[id]>5 HTTP/1.1  |
-+----------+-----------------------+-------------+---------------------------------------+
-| **>=**   | Greater than or equal | %3E%3D      | GET /api/users?filter[id]>=6 HTTP/1.1 |
-+----------+-----------------------+-------------+---------------------------------------+
++----------+---------------+-----------------------+-------------+---------------------------------------------+
+| Operator | Operator Name | Description           | URL Encoded | Request Example                             |
++==========+===============+=======================+=============+=============================================+
+| **=**    | **eq**        | Equality              | %3D         | | GET /api/users?filter[id]=1 HTTP/1.1      |
+|          |               |                       |             | | GET /api/users?filter[id][eq]=1 HTTP/1.1  |
++----------+---------------+-----------------------+-------------+---------------------------------------------+
+| **!=**   | **neq**       | Inequality            | %21%3D      | | GET /api/users?filter[id]!=2 HTTP/1.1     |
+|          |               |                       |             | | GET /api/users?filter[id][neq]=2 HTTP/1.1 |
++----------+---------------+-----------------------+-------------+---------------------------------------------+
+| **<**    | **lt**        | Less than             | %3C         | | GET /api/users?filter[id]<3 HTTP/1.1      |
+|          |               |                       |             | | GET /api/users?filter[id][lt]=3 HTTP/1.1  |
++----------+---------------+-----------------------+-------------+---------------------------------------------+
+| **<=**   | **lte**       | Less than or equal    | %3C%3D      | | GET /api/users?filter[id]<=4 HTTP/1.1     |
+|          |               |                       |             | | GET /api/users?filter[id][lte]=4 HTTP/1.1 |
++----------+---------------+-----------------------+-------------+---------------------------------------------+
+| **>**    | **gt**        | Greater than          | %3E         | | GET /api/users?filter[id]>5 HTTP/1.1      |
+|          |               |                       |             | | GET /api/users?filter[id][gt]=5 HTTP/1.1  |
++----------+---------------+-----------------------+-------------+---------------------------------------------+
+| **>=**   | **gte**       | Greater than or equal | %3E%3D      | | GET /api/users?filter[id]>=6 HTTP/1.1     |
+|          |               |                       |             | | GET /api/users?filter[id][gte]=6 HTTP/1.1 |
++----------+---------------+-----------------------+-------------+---------------------------------------------+
 
 
 Example. Use operators to filter data
