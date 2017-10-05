@@ -30,7 +30,11 @@ The following table describes the options available on the page:
    +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Registration Allowed                       | Enables/disables new customers registration from the Store Frontend login screen.                                                                                                                         |
    +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Show Registration Link                     | Shows/hides the registration link from the Store Frontend login screen. The link is next to the Sign In link in the top bar.                                                                              |
+   +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Confirmation Required                      | Enables/disables email confirmation step after the user registration.                                                                                                                                     |
+   +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | Require Company Name                        | Shows/hides the company name field in the registration form in the Store Frontend. Required for the individual customers who do not belong to any company.                                               |
    +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Send Plain Text Password In Welcome Emails | Please, disable this option in a production environment. This option is disabled by default.                                                                                                              |
    +--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -44,7 +48,7 @@ The following table describes the options available on the page:
      a) Clear the **Use Default** box next to the option.
      b) Select the new option.
 
-4. Click **Save**.
+4. Click **Save Settings**.
 
 .. finish
 

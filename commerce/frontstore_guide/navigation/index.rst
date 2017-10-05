@@ -44,9 +44,9 @@ User Menu is located on the top left of the page and contains the following sect
 
 **For non-authenticated user (guest):**
 
-1. The **Sign In** button.
+1. The **Sign In** and **Register** buttons.
 
-   .. image:: /frontstore_guide/img/navigation/GeneralLayoutUserMenu0.png
+   .. image:: /frontstore_guide/img/navigation/registration_link_2.png
 
 **For a user that has signed in:**
 
