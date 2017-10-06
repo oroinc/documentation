@@ -74,8 +74,6 @@ For example:
         mailer_encryption: null
         mailer_user: null
         mailer_password: null
-        websocket_host: 127.0.0.1
-        websocket_port: 8080
         session_handler: null
         locale: en
         secret: ThisTokenIsNotSoSecretChangeIt
