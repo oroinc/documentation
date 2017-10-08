@@ -150,6 +150,11 @@ together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. Ens
     To ensure that required number of consumers keeps running, set up a supervisor.
     Here is `example of supervisord configuration`_.
 
+.. seealso::
+
+    When the system has a running socket server, it checks periodically whether consumers are alive. If no alive consumers are found,
+    a flash message notification appears informing users about the consumers' state. The same check is also performed upon a user logging in.
+
 Updating OroPlatform to OroCRM
 ------------------------------
 
