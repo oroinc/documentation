@@ -160,6 +160,17 @@ sync command it can check that there are more than 0 active integrations.
     * The ``oro:cron:integration:sync`` command runs integration jobs configured
       through the `IntegrationBundle`_ every five minutes.
 
+Synchronous CRON commands
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+By default, all CRON commands are executed asynchronously by sending a message to queue.
+
+Sometimes it is necessary to execute a CRON command immediately when CRON triggers it, without sending the message to the queue.
+
+To do this, a CRON command should implement interface :class:`Oro\\Bundle\\CronBundle\\Command\\SynchronousCommandInterface`.
+
+In this case, the command will be executed as a background process.
+
 
 .. _`OroCronBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/CronBundle
 .. _`crontab compatible`: http://www.unix.com/man-page/linux/5/crontab/
