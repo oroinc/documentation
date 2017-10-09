@@ -19,7 +19,7 @@ Learn :ref:`more ways to edit a quote <quotes--actions--edit>`.
 Notify a Customer About the Quote
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/quotes/quote_states_by_flow/no_workflow/notify_customer.rst
+.. include:: /user_guide/quotes/quote_states_by_flow/steps_in_quote_management_no_workflow/notify_customer.rst
    :start-after: begin
    :end-before: finish
 
@@ -27,7 +27,7 @@ Notify a Customer About the Quote
 Mark a Quote as Expired
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/quotes/quote_states_by_flow/no_workflow/expire.rst
+.. include:: /user_guide/quotes/quote_states_by_flow/steps_in_quote_management_no_workflow/expire.rst
    :start-after: begin
    :end-before: finish
 
@@ -44,3 +44,9 @@ Learn :ref:`more ways to delete a quote <quotes--actions--delete>`.
 
 .. include:: /user_guide/include_images.rst
     :start-after: begin
+
+.. toctree::
+   :hidden:
+
+   expire
+   notify_customer

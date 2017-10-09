@@ -84,10 +84,15 @@ Quote Stages and Transitions
 .. include:: flows/index.rst
    :end-before: finish_quotes_in_use
 
+
 .. toctree::
    :hidden:
 
    create/index
+
+   edit
+
+   delete
 
    quote_states_by_flow/index
 

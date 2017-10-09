@@ -24,6 +24,7 @@ Ensure that you have configured:
 * :ref:`Price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g. MRSP) that may be used in the rule-based price lists to calculate the price for the buyer.
 * New arrivals flag (:ref:`globally <sys--commerce--product--new-arrivals>`, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>`, and :ref:`per website <sys--websites--commerce--products--new-arrivals>`) --- to highlight the new products in your web catalog.
 * Featured products segment (:ref:`globally <sys--commerce--product--featured-products>`, :ref:`per organization <sys--users--organization--commerce--products--featured-products>`, and :ref:`per website <sys--websites--commerce--products--featured-products>`) -- to store the selected products that are displayed on the crowded paths of you website.
+* Previously Purchased Products (:ref:`globally <sys--commerce--orders--previously-purchased--global>` and :ref:`per website <sys--commerce--orders--previously-purchased--website>`) --- to display products that customer users have bought recently.
 
 * Related items configuration:
 
@@ -94,6 +95,8 @@ Simplify Purchase Choices and Increase Sales
 * :ref:`Manage Up-Sell Products <products--upsell-items>`
 
 * :ref:`Create All Products Page <sys--conf--commerce--catalog--special-pages>`
+
+* :ref:`Enable Previously Purchased Products Page <sys--commerce--orders--previously-purchased--global>`
 
 .. uncomment in DOC-145:
 

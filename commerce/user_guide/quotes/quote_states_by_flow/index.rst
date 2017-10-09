@@ -20,4 +20,4 @@ Follow the links below for more information on available steps and transitions.
 
    steps_in_quote_management_with_approvals
 
-   steps_in_quote_management_no_workflow
+   steps_in_quote_management_no_workflow/index

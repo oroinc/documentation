@@ -20,6 +20,7 @@ For a quick orientation, see how to :ref:`Register and Sign in <frontstore-guide
    address_book/index
    users_roles/index
    orders/index
+   previously_purchased/index
    rfq/index
    quotes/index
    shopping_lists/index
@@ -42,6 +43,7 @@ In the :ref:`Organize your planned purchases in the Shopping Lists <frontstore-g
 * Five ways to create a new shopping list.
 * How do I manage my shopping list?
 * Can I add notes on my shopping list?
+* Can I view my previously purchased products?
 
 .. Can I submit an order on behalf of other person in my organization?
 
