@@ -394,6 +394,32 @@ At the checkout, guest customers can:
    :start-after: begin_sample_checkout
    :end-before: finish_sample_checkout
 
+Promotions at Checkout
+~~~~~~~~~~~~~~~~~~~~~~
+
+At checkout, customers can redeem coupons that are connected to specific promotions. Depending on the promotion type, customers can apply one or several coupons to the current order.
+
+To redeem a coupon:
+
+1. Click **I have a Coupon Code** on the bottom left of the **Order Summary** section at the checkout.
+
+   .. image:: /frontstore_guide/img/orders/CouponCodeCheckout.png
+
+2. Enter the coupon code.
+
+    .. image:: /frontstore_guide/img/orders/CouponCodeCheckout2.png
+
+3. Click **Apply**.
+
+This way you can apply as many coupons as the conditions of the active promotions allow.
+
+.. note:: To delete the coupon code, click |IcDelete| **Delete** next to the code.
+
+In addition, any discounts applied ot the order will be displayed in the **Total** section of the **Order Summary**.
+
+.. image:: /frontstore_guide/img/orders/CouponCodeCheckout3.png
+
+
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
 
