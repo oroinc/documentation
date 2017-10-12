@@ -28,9 +28,9 @@ To create a new promotion:
 
    a) In the **Discount** list, select the level that the discount targets:
 
-      * *Order* -- discount applies to the total order amount,
-      * *Line Item* -- discount applies to the line item total,
-      * *Buy X Get Y* -- the price of certain quantity of the line items (up to Y) may be discounted when they are ordered in bulk (more than X), or
+      * *Order Total* -- discount applies to the total order amount,
+      * *Order Line Item* -- discount applies to the line item total,
+      * *Buy X Get Y (Same Product)* -- the price of certain quantity of the line items (up to Y) may be discounted when they are ordered in bulk (more than X), or
       * *Shipping* --  discount applies to shipping.
 
    b) In the **Type** list, select whether the discount type should be represented by a fixed amount (e.g. - 10USD) or a certain percent (5%) off the item price.
@@ -45,7 +45,7 @@ To create a new promotion:
 
       * `Discount Options for Line Items`_
 
-      * `Discount Options for Buy X Get Y`_
+      * `Discount Options for Buy X Get Y (Same Product)`_
 
       * `Discount Options for Shipping`_
 
@@ -61,7 +61,7 @@ To create a new promotion:
    a) **Restrictions** -- set visibility restrictions to promotions. By default, promotions are displayed for any customer or customer group. Only one field must be chosen at a time, either a customer group and a customer.
    b) **Expression** -- specify the :ref:`expression <user-guide--promotion--expression>` that describes the conditions when the promotion should be applied.
 
-7. In the **Matching Items** section, add, filter or reset the product that the promotion should apply to:
+7. In the **Items To Discount** section, add, filter or reset the product that the promotion should apply to:
 
    a) **Reset Products** -- click **Reset Products** next to the tabs to clear all filters and reset the product collection to the default state.
    b) **Add** -- click **Add** to add the selected products manually. This can be used in cases when you have few products to be added and there is no need to set up a complicated filter, or when you need to add specific products that may be out of the filter’s scope. Manually added items will appear both in the *Manually Added* and *All Added* tabs.
@@ -90,10 +90,10 @@ For line items discount, provide the following information:
 
   .. note:: Please note that **Maximum Quantity Discount is Applied to** field can only be applied if **Apply Discount to** field is set to *Each Item*.
 
-Discount Options for Buy X Get Y
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Discount Options for Buy X Get Y (Same Product)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For Buy X Get Y discount, provide the following information:
+For Buy X Get Y (Same Product) discount, provide the following information:
 
 .. image:: /user_guide/img/marketing/promotions/BuyX.png
 

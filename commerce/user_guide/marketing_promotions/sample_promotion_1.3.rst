@@ -53,7 +53,7 @@ Create a Promotion
    .. image:: /user_guide/img/marketing/promotions/CreateSamplePromotion1.png
 
 
-5. In the **Matching Items** section, click *Advanced Filter*, drag *Apply Segment* to the field on the right, choose the *Sale* segment and click **Preview Results** to load the list of products for sale.
+5. In the **Items To Discount** section, click *Advanced Filter*, drag *Apply Segment* to the field on the right, choose the *Sale* segment and click **Preview Results** to load the list of products for sale.
 
     .. image:: /user_guide/img/marketing/promotions/CreateSamplePromotion2.png
 

@@ -17,7 +17,7 @@ As coupons should always be linked to promotions, the first step is to create a 
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons1.png
 
-3. In the form that opens, specify the discount details and items, making sure that the **Use Coupons** field is set to *Yes*.
+3. In the form that opens, specify the discount details and items, making sure that the **Triggered by** field is set to *Coupons and Conditions*.
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons2.png
 
@@ -31,7 +31,7 @@ Generate Coupons
 Next, we will generate coupons for this promotion:
 
 1. Navigate to **Marketing > Promotions > Coupons** in the main menu.
-2. Click |IcListAlt| **Generate Coupons**.
+2. Click |IcListAlt| **Generate Multiple Coupons**.
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons3.png
 

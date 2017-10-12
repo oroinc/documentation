@@ -26,7 +26,7 @@ To create a new promotion:
    e) **Stop Further Rule Processing** --- Select this option if you wish to prevent applying other promotions with lower priority.
 
       For instance, if there are three promotions for the same products with sort orders 1, 2 and 3 respectively, and the promotion with sort order 2 has **Stop Further Rule Processing** enabled, then when the turn reaches such promotion, the queue stops and promotion with sort order 3 is not applied.
-   f) **Use Coupons** --- Select *Yes* if the promotion is going to use :ref:`coupons <user-guide--marketing--promotions--coupons>`, and *No* if it is not.
+   f) **Triggered by** --- Select *Coupons and Conditions* if the promotion is going to use :ref:`coupons <user-guide--marketing--promotions--coupons>`, and *Conditions only* if it is not.
 
       .. note:: When the option is set to *Yes*, the promotion can be applied exclusively via coupons. When the option is set to *No*, the promotion cannot be attached to any coupon.
 
@@ -34,9 +34,9 @@ To create a new promotion:
 
    a) In the **Discount** list, select the level that the discount targets:
 
-      * *Order* --- The discount applies to the total order amount,
-      * *Line Item* --- The discount applies to the line item total,
-      * *Buy X Get Y* --- The price of certain quantity of the line items (up to Y) may be discounted when they are ordered in bulk (more than X), or
+      * *Order Total* --- The discount applies to the total order amount,
+      * *Order Line Item* --- The discount applies to the line item total,
+      * *Buy X Get Y (Same Product)* --- The price of certain quantity of the line items (up to Y) may be discounted when they are ordered in bulk (more than X), or
       * *Shipping* ---  The discount applies to shipping.
 
    b) In the **Type** list, select whether the discount type should be represented by a fixed amount (e.g. - 10USD) or a certain percent (5%) off the item price.
@@ -67,7 +67,7 @@ To create a new promotion:
    a) **Restrictions** --- Set visibility restrictions to promotions. By default, promotions are displayed for any customer or customer group. Only one field must be chosen at a time, either a customer group and a customer.
    b) **Expression** --- Specify the :ref:`expression <user-guide--promotion--expression>` that describes the conditions when the promotion should be applied.
 
-7. In the **Matching Items** section, add, filter or reset the product that the promotion should apply to:
+7. In the **Items To Discount** section, add, filter or reset the product that the promotion should apply to:
 
    a) **Reset Products** --- Click **Reset Products** next to the tabs to clear all filters and reset the product collection to the default state.
    b) **Add** --- Click **Add** to add the selected products manually. This can be used in cases when you have few products to be added and there is no need to set up a complicated filter, or when you need to add specific products that may be out of the filter’s scope. Manually added items will appear both in the *Manually Added* and *All Added* tabs.
@@ -102,12 +102,12 @@ For the line items discount, provide the following information:
 Discount Options for Buy X Get Y
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For the Buy X Get Y discount, provide the following information:
+For the Buy X Get Y (Same Product) discount, provide the following information:
 
 .. image:: /user_guide/img/marketing/promotions/BuyX.png
 
-* **Buy X** --- Enter the quantity of X products the customer needs to purchase to be eligible for the discount.
-* **Get Y** --- Enter the quantity of Y products which the customer will get a discount for when purchases a number of X products.
+* **Buy X Quantity** --- Enter the quantity of X products the customer needs to purchase to be eligible for the discount.
+* **Get Y Quantity** --- Enter the quantity of Y products which the customer will get a discount for when purchases a number of X products.
 * **Product Unit** --- Select the necessary unit type from the list (e.g. each, item, set). Note that the discount will only apply to the product with the specified unit type.
 * **Apply Discount to** --- Select one of the options, *Each Y Item Separately* (the discount will apply to Y items only) or *X+Y Total* (the discount will apply to the total of X and Y items).
 

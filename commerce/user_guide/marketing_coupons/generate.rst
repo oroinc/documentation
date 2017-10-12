@@ -8,7 +8,7 @@ Generate Coupons
 To generate new coupons:
 
 1. Navigate to  **Marketing > Promotions > Coupons** in the main menu.
-2. Click |IcListAlt| **Generate Coupons** on the top right.
+2. Click |IcListAlt| **Generate Multiple Coupons** on the top right.
 
 
    The following form appears:
