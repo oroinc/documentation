@@ -140,6 +140,13 @@ An **oro_customer_menu** is a front store menu that defines what options the Acc
 
 .. image:: /user_guide/img/system/frontend_menu/AccMenu.png
 
+Featured Menu
+"""""""""""""
+
+A **featured_menu** is a front store menu that enables the administrator to configure the featured menu items on the homepage. 
+
+.. image:: /user_guide/img/system/frontend_menu/featured_menu.png
+
 .. OroCRM Customer/Partner Portal Menus
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    .. contents:: :local:
