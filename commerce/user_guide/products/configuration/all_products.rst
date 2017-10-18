@@ -10,7 +10,6 @@ To configure All Products page:
 1. Enable **All Products Page** in system configuration on the required level (globally or per website).
 2. Add it to the front store as part of either your :ref:`web catalog <user-guide--web-catalog>` (**Marketing > Web Catalog**) or a :ref:`frontend menu <doc--menu-config-levels>` (**System > Frontend Menus**).
 
-
 .. contents:: :local:
 
 
@@ -25,6 +24,7 @@ The following topics will describe how to:
 
 * :ref:`Configure All Products Page per Website <sys--conf--commerce--catalog--special-pages--website>`
 
+.. note:: Please note that it is recommended to enable All Products page exclusively for *small catalogs* with no more than a few hundred products, otherwise browser performance might be affected.
 
 Add All Products Page to the Web Catalog
 ----------------------------------------
