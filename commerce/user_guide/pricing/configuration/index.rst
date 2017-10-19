@@ -71,3 +71,22 @@ Per Customer
 .. include:: /user_guide/include_images.rst
    :start-after: begin
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   common_price_list_configuration_options
+
+   customer_group_price_lists
+
+   customer_price_lists
+
+   global_currency
+
+   global_pricing
+
+   price_list_configuration_overview
+
+   website_price_lists
+
+   website_pricing

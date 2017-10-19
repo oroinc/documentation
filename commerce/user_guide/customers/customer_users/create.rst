@@ -28,7 +28,7 @@ To create a new customer:
 
 #. Add billing and shipping address as described in `:ref: the Address Book section <user-guide--getting-started--address-book>`.
 
-#. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See :ref:`Managing Customer User Roles <user-guide--customers--customer-user-roles-overview>` for more information.
+#. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See :ref:`Managing Customer User Roles <user-guide--customers--customer-user-roles>` for more information.
 
    .. important:: At least one role must be assigned if the **Enabled** check box is selected. Disabled customer users can be saved without roles, but you will need to assign roles to the them later before enabling.
 

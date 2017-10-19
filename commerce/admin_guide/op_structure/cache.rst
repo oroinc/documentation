@@ -144,7 +144,7 @@ top of ``FilesystemCache``
 .. _Persistent/shared cache: #persistent/shared-cache
 .. _Cache chaining: #cache-chaining
 .. _Default cache implementation: #default-cache-implementation
-.. _Readme: ../../readme.md#abstract-cache-services
+.. _Readme: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/README.md#abstract-cache-services
 
 APC Cache
 ---------
@@ -180,5 +180,5 @@ By default, rules for `Symfony Validation Component`_ are cached using
 validation caching suit some custom requirements. To do this, you need
 to redefine the ``oro_cache.provider.validation`` service.
 
-.. _caching policy and default implementation: Resources/doc/caching_policy.md
+.. _caching policy and default implementation: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Resources/doc/caching_policy.md
 .. _Symfony Validation Component: http://symfony.com/doc/current/book/validation.html

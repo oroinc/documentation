@@ -17,7 +17,7 @@ To open display settings:
 2. Select **System Configuration > General Setup > Display Settings** in the menu to the left.
 
 
-.. note:: See a short demo on `how to set display settings in your Oro application <https://www.orocommerce.com/media-library/set-display-settings-orocrm#play=B2DqoTVQCao>`_, or continue reading the guidance below.
+.. note:: See a short demo on how to set display settings in your Oro application, or continue reading the guidance below.
 
    .. raw:: html
 

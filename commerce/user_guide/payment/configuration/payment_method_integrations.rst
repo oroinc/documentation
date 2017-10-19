@@ -81,3 +81,10 @@ The payment methods that were based on this integration are no longer usable in 
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
+
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   payment_methods/index

@@ -1,5 +1,8 @@
 :orphan:
 
+Price List Configuration Options
+--------------------------------
+
 .. price_list_actions_begin
 
 b) To add a price list, click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions appears. Press **Enter** or click the suggested value to add the price list.

@@ -1,4 +1,4 @@
-
+.. _localization--localization:
 
 Global Localization Settings
 ----------------------------

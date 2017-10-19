@@ -91,7 +91,11 @@ To use Redis for application caching, follow the corresponding
 License
 ~~~~~~~
 
-`OSL-3.0 <LICENSE>`__ Copyright (c) 2013 - 2017, Oro, Inc.
+The Open Software License version 3.0
+
+Copyright (c) 2013 - 2017, Oro, Inc.
+
+`Full license <http://opensource.org/licenses/OSL-3.0>`_
 
 .. finish_body
 

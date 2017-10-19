@@ -64,4 +64,5 @@ After the integration is configured, you can :ref:`Send Email Campaign via MailC
    sending_email_campaign_via_dotmailer
    dotmailer_data_fields_mappings
    sending_email_campaign_via_mailchimp
+   configuration/index
 

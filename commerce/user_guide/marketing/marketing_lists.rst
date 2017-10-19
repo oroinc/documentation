@@ -65,7 +65,7 @@ To create a new Marketing List:
       - **Dynamic** lists are updated as soon as any changes have taken place in the system.
 
       - **On demand** lists will be updated only following the user request
-        (:ref:`refresh the grid <doc-grids-actions-refresh>` on the view page of the marketing list record)."
+        (click |BRefresh| to refresh the table on the view page of the marketing list record)."
       "**Owner**","Limits the list of users that can manage the marketing list to the users, whose roles allow managing marketing lists of the owner (e.g. the owner,
       members of the same business unit, system administrator, etc.)."
       "**Description**","Free text to help you and other users understand the purpose or
@@ -81,7 +81,7 @@ To create a new Marketing List:
 
    The contacts that match the filter condition will be automatically subscribed to the Mailing list. You can later unsubscribe a contact or remove them from the mailing list.
 
-#. In the **Columns** section, define the set of fields that will be shown in the Marketing List details (at the :ref:`View page <user-guide-ui-components-view-pages>`) for every target contact.
+#. In the **Columns** section, define the set of fields that will be shown in the Marketing List details on the general page for every target contact.
 
    .. image:: /user_guide/img/marketing/marketing/list_columns.png
   

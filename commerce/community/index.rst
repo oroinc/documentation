@@ -18,7 +18,7 @@ Contribute to the Source Code, Translations, and Documentation
    :start-after: begin_contribute
    :end-before: finish_contribute
 
-Please sign the ref:`Contributor License Agreement <contributing--cla>` (CLA) before suggesting changes to the source code or documentation.
+Please sign the :ref:`Contributor License Agreement <contributing--cla>` (CLA) before suggesting changes to the source code or documentation.
 
 
 Report Issues

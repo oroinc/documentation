@@ -172,12 +172,12 @@ This section provides links to the online documentation for the latest OroCommer
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                    <li><a href="current/user-guide/system/commerce-configuration">Commerce</a></li>
-                   <li><a href="current/user-guide/marketing/configuration/index">Marketing</a></li>
-                   <li><a href="current/user-guide/system/websites/index">Website</a></li>
-                   <li><a href="current/user-guide/system/localization/index">Localization</a></li>
-                   <li><a href="current/user-guide/system/workflows/index">Workflows</a></li>
-                   <li><a href="current/user-guide/system/menu/index">Menu</a></li>
-                   <li><a href="current/user-guide/system/monitoring/index">Monitoring</a></li>
+                   <li><a href="current/user-guide/marketing/configuration">Marketing</a></li>
+                   <li><a href="current/user-guide/system/websites">Website</a></li>
+                   <li><a href="current/user-guide/system/localization">Localization</a></li>
+                   <li><a href="current/user-guide/system/workflows">Workflows</a></li>
+                   <li><a href="current/user-guide/system/menu">Menu</a></li>
+                   <li><a href="current/user-guide/system/monitoring">Monitoring</a></li>
                </ul>
          </div>
       </div>
@@ -207,9 +207,9 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                       <li><a href="current/community/contribute">Source Code</a></li>
-                       <li><a href="current/community/translations">Translation</a></li>
-                       <li><a href="current/community/write">Documentation</a></li>
+                       <li><a href="current/community#contribute-to-the-source-code-translations-and-documentation">Source Code</a></li>
+                       <li><a href="current/community/contribute/code-ui-translations">Translation</a></li>
+                       <li><a href="current/community/contribute/documentation">Documentation</a></li>
               </ul>
          </div>
       </div>

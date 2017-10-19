@@ -18,5 +18,4 @@ For detailed information on these topics please see the following sections:
 
    language_settings
 
-
-..    translations
+   translations

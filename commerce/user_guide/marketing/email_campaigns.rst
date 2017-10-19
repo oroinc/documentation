@@ -88,16 +88,15 @@ Multiple email campaigns may be assigned to a marketing campaign.
 Manage Email Campaign Records
 -----------------------------
 
-The following actions are available for an email campaign from the 
-grid:
+The following actions are available for an email campaign from the grid:
 
 .. image:: /user_guide/img/marketing/marketing/marketing_campaign_action_icons.png
 
 - Delete the campaign from the system: |IcDelete| 
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit| 
- 
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign:  |IcView| 
+- Edit the campaign: |IcEdit|
+
+- View the details of the campaign: |IcView|
 
 
 .. _user-guide-email-campaigns-send:

@@ -1,3 +1,5 @@
+.. _localization--localizations:
+
 Localizations
 -------------
 

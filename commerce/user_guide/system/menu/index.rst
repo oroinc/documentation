@@ -89,3 +89,10 @@ Related Topics
 .. include:: /user_guide/include_images.rst
    :start-after: begin
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   menu_config
+   menu_config_levels
+   menu_frontend

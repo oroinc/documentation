@@ -53,7 +53,7 @@ Install APCu via the package manager.  See additional information `on the php.ne
 
 .. note::
 
-    To avoid unnecessary and misleading php notices or exceptions when rendering image attachments caused by the known issue in the APCu version 4.0.7 (`key inconsistency bug <key inconsistency bug>`_), please use earlier or the latest (unreleased) version of the APCu.
+    To avoid unnecessary and misleading php notices or exceptions when rendering image attachments caused by the known issue in the APCu version 4.0.7 (key inconsistency bug), please use earlier or the latest (unreleased) version of the APCu.
 
 
 Memcached

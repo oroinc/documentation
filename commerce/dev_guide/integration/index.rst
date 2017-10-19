@@ -774,7 +774,7 @@ The API allows you to use several types of filters. Filter types are briefly des
 |         | filter[id]>8&filter[name]=a  | e.g. "filter[id]>8",                                                        |
 |         | or                           | or may be specified using the syntax "key[operator_name]=value".            |
 |         | filter[id][neq]=8            | The full list of supported operators is described in                        |
-|         |                              | the `Data Filter (**filter**) <./index#data-filter-filter>`__ section.      |
+|         |                              | the :ref:`Data Filter (**filter**) <integration--data-filter>` section.     |
 |         |                              |                                                                             |
 |         |                              | May accept several values. In such case, they are considered                |
 |         |                              | connected by the logical ``OR`` operator,                                   |
@@ -850,6 +850,7 @@ Example. Retrieve Only Required Fields
           ]
         }
 
+.. _integration--data-filter:
 
 Data Filter (**filter**)
 """"""""""""""""""""""""

@@ -23,7 +23,7 @@ Available options depend on the current status of the task. The following table 
 
 For status descriptions, see :ref:`Task Statuses <doc-activities-tasks-statuses>`.
 
-For information on workflows, see the :ref:`Following a Workflow <user-guide-workflow-management-basics>` guide.
+For information on workflows, see the :ref:`Workflow Management <doc--system--workflow-management>` guide.
 
 Follow the Workflow
 -------------------

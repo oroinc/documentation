@@ -22,7 +22,7 @@ In this document, you can find short descriptions of what each activity serves f
 
 
 .. important::
- 	By default, the list of activities available for each entity is determined by general business practices. However, if the work process of your company requires it, you can always turn on the desirable activity for almost any entity (except technical). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
+ 	By default, the list of activities available for each entity is determined by general business practices. However, if the work process of your company requires it, you can always turn on the desirable activity for almost any entity (except technical). If you need particular activities to be enabled for an entity, contact your administrator.
 
 
 .. contents:: :local:

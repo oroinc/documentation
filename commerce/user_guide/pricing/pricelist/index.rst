@@ -53,10 +53,12 @@ Set Prices in Multiple Currencies
    create
    auto
    auto_examples
+   autocomplete
+   filtering_expression
    manual
    schedule
    import_export
    ownership
    multicurrency
    internal
-
+   storage_type

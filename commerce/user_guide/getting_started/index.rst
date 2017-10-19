@@ -29,6 +29,7 @@ This section of the guide will provide an introduction to OroCommerce's user int
     widgets_sidebar_tasks
     common_actions/manage_address_book
     common_actions/manage_translation
+    common_actions/index
     access_oro/index
     my_oro/index
     activities/index

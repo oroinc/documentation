@@ -66,9 +66,9 @@ The following actions are available for a campaign after you navigate to the **M
 
 - Delete the campaign from the system: |IcDelete|
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the campaign: |IcEdit|
+- Edit the campaign: |IcEdit|
 
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the campaign: |IcView|
+- View the details of the campaign: |IcView|
 
 
 .. _user-guide-marketing-campaigns-view-page:

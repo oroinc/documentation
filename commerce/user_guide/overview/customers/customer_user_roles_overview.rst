@@ -1,5 +1,3 @@
-.. _user-guide--customers--customer-user-roles-overview:
-
 Overview
 ========
 

@@ -11,4 +11,6 @@ Overview Index
 
    product_families_overview
 
+   product_variants
+
    products_overview
