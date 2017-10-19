@@ -27,10 +27,14 @@ together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. Ens
 
     /path/to/php [$folder_location]/orocommerce/app/console oro:message-queue:consume --env=prod > /dev/null
 
-.. seealso::
+.. important::
 
-    To ensure that required number of consumers keeps running, set up a supervisor.
+   To ensure that required number of consumers keeps running, set up a supervisor.
     Here is `example of supervisord configuration`_.
+
+.. note::
+
+   If a socket server is running, it checks periodically whether consumers are alive. If no consumers are alive, a flash message notification appears informing users about the consumers' state. The same check is performed upon a user logging in.
 
 .. include:: /install_upgrade/installation/vars.rst
    :start-after: begin_vars
