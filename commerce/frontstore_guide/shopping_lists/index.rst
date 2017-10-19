@@ -3,7 +3,7 @@
 Shopping Lists 
 ==============
 
-The following guide will describe how shopping lists can be used in OroCommerce front store.
+The following guide will describe how shopping lists can be used in the OroCommerce front store.
 
 .. contents:: :local:
    :depth: 2
@@ -117,6 +117,16 @@ Here you can add a note to the current shopping list, as well as each of the ite
 Manage Shopping List 
 ^^^^^^^^^^^^^^^^^^^^
 
+While adding a product to a shopping list, click |IcChevronDown| to view a list with additional options available for the selected product.
+
+  .. image:: /user_guide/img/sales/shopping_lists/shopping_list_dropdown_1.png
+
+* To add the product to the current shopping list, click **Add to Shopping List X**.
+* Update the shopping list with a new information regarding the selected product by clicking **Update Shopping List**.
+* Add the product to the previous shopping list, in case you have it, click **Add to Shopping List Y**.
+* Remove the product from the shopping list, click **Remove From Shopping List**.
+* Create a new shopping list with the selected product, click **Create New Shopping List**.
+
 To edit the shopping list name from within its view page:
 
 1. Clicking |IcEditInline| next to the shopping list name.
@@ -168,7 +178,9 @@ By default, only one shopping list is available for unregistered users:
 
     In the *Quantity* field, change the quantity of the product.
 
-3.  To remove items from the list, click |ICChevronDown| next to **Update Shopping List** and click *Remove from Shopping List*.
+3.  To remove items from the list, click |ICChevronDown| next to **Update Shopping List** and click **Remove from Shopping List**.
+
+     .. image:: /user_guide/img/sales/shopping_lists/shopping_list_dropdown_2.png
 
      Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
 
