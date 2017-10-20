@@ -774,11 +774,16 @@ The API allows you to use several types of filters. Filter types are briefly des
 |         | filter[id]>8&filter[name]=a  | e.g. "filter[id]>8",                                                        |
 |         | or                           | or may be specified using the syntax "key[operator_name]=value".            |
 |         | filter[id][neq]=8            | The full list of supported operators is described in                        |
-|         |                              | the :ref:`Data Filter (**filter**) <integration--data-filter>` section.     |
-|         |                              |                                                                             |
-|         |                              | May accept several values. In such case, they are considered                |
-|         |                              | connected by the logical ``OR`` operator,                                   |
+|         | or                           | the :ref:`Data Filter (**filter**) <integration--data-filter>` section.     |
+|         | filter[id]=5..7              |                                                                             |
+|         |                              | May accept several values. In such case, they will be considered connected  |
+|         |                              | by the logical ``OR`` operator,                                             |
 |         |                              | e.g. id == 5 OR id == 7                                                     |
+|         |                              |                                                                             |
+|         |                              | May accept a data range. The syntax is "from_value..to_value".              |
+|         |                              | The range is inclusive (i.e. it includes the interval boundaries,           |
+|         |                              | and the same range can be obtained by executing the following               |
+|         |                              | expression: field >= from_value AND field <= to_value)                      |
 |         |                              |                                                                             |
 |         |                              | And in case of several filters in request, all of them will be perceived as |
 |         |                              | connected using a logical ``AND`` operator,                                 |
