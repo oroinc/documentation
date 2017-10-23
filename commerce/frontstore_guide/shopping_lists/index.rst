@@ -91,6 +91,23 @@ Duplicate the already existing shopping list to make multiple similar orders:
 
 .. image:: /user_guide/img/sales/shopping_lists/DuplicateListFrontEndScreenShot.png
 
+**Flow 7**
+
+.. _frontstore-guide--shopping-lists-create--mass-action:
+
+Create a new shopping list when selecting multiple products using mass action on the product listing page.
+
+1. Select the required items by clicking **Select Item**.
+
+   .. note:: **Select Item** can be placed under or next to the item depending on the :ref:`display options <frontstore-guide--navigation-display-options>`.
+   
+2. Click **Choose Action** on the top left next to the **Sort by** option.
+   
+   .. image:: /frontstore_guide/img/navigation/MassActionProductListing.png
+
+3. Click **Create New Shopping List**.
+4. Give the list a name and click **Create**.
+
 .. _frontstore-guide--shopping-lists-view:
 
 View Shopping List 
@@ -172,6 +189,9 @@ Create and Manage a Shopping List
 By default, only one shopping list is available for unregistered users:
 
 1.  To add items to the list, click **Add to Shopping List** next to the product.
+  
+    .. note:: You can also create a new shopping list when selecting multiple products using :ref:`mass action <frontstore-guide--shopping-lists-create--mass-action>` on the product listing page. 
+      
 2.  To add more items to the existing list, or change the quantity of the items that are already in the list, click **Update Shopping List** next to the product.
 
     Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
