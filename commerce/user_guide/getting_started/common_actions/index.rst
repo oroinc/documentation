@@ -29,6 +29,4 @@ OroCommerce provides the following tools for streamlined communication inside an
 
    import_inventory_statuses
 
-   ../../../service
-
    filter
