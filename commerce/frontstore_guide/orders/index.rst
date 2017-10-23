@@ -100,6 +100,8 @@ Past
 
 Click the order in the table to open it.
 
+.. image:: /frontstore_guide/img/orders/PastOrderNew.png
+
 Past order view page contains the following information:
 
 * Order Date
@@ -118,8 +120,7 @@ Past order view page contains the following information:
     
 To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
 
-
-.. image:: /frontstore_guide/img/orders/PastOrder.png
+You can print the selected past order by clicking **Print Order** below the order number.
 
 
 .. _frontstore-guide--orders-create:

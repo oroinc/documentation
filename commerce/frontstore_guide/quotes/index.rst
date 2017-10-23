@@ -29,6 +29,9 @@ The All Quotes page contains the following information:
 7. Owner
 8. More Actions (View) 
 
+
+You can print the selected quote by clicking **Print Quote** below the quote number.
+
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.
@@ -46,15 +49,15 @@ When you receive a quote, you can accept it and submit the order:
 1. On the All Quotes page, click on the necessary quote.
 2. Review the quote details, then scroll down to the bottom, and click |IcPencil| **Accept and Submit to Order** on the bottom right of the page.
 
-.. image:: /frontstore_guide/img/quotes/AcceptQuote.png
+.. image:: /frontstore_guide/img/quotes/AccepQuoteNew.png
 
 3. You will be redirected to the next page with quote information and product list. Click **Submit** to submit the order, or **Back to Quote List** to go back a step.
 
-.. image:: /frontstore_guide/img/quotes/SubmitOrder.png
+.. image:: /frontstore_guide/img/quotes/SubmitQuoteNew.png
 
 4. Once you submit an order, you are redirected to the :ref:`checkout <frontstore-guide--orders-checkout>`. If you are not ready to complete you order, it is saved in the Orders section. For more information on open orders, see the :ref:`Orders topic <frontstore-guide--orders>`.
 
-.. note:: Currently, it is not possible to decline or cancel quotes from OroCommerce front store.
+.. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce front store.
 
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin

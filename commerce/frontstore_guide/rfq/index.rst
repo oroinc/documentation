@@ -126,11 +126,13 @@ The Customer User View Page has the number of the selected RFQ in the page heade
 * Notes
 * Line Items (item name, requested quantity, target price).
 
-.. image:: /frontstore_guide/img/rfq/RFQViewPage.png
+You can print the selected RFQ by clicking **Print RFQ**  on the top right of the view page.
+
+.. image:: /frontstore_guide/img/rfq/PrintRFQ.png
 
 You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of the view page.
 
-.. image:: /frontstore_guide/img/rfq/RFQResubmit.png
+.. image:: /frontstore_guide/img/rfq/RFQResubmitNew.png
 
 
 .. _frontstore-guide--rfq--guests:

@@ -55,6 +55,7 @@ In the :ref:`Submit an Order, Review Your Existing Orders and Order History <fro
 * What do I need for a checkout?
 * How do I check the status of my order?
 * How do I find the information about my past orders?
+* How do I print my order?
 
 .. What shipping methods can I use?
 .. What payment methods can I use?
