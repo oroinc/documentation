@@ -195,6 +195,14 @@ specifies how the actual filter looks like. The available options are:
 
     The type of the filter to be used in the UI.
 
+``case_insensitive`` (**type**: ``bool`` **default**: ``true``)
+
+    [Postgres only] When set to false, string filter searching is case sensitive.
+
+``value_conversion`` (**type**: ``string|array``)
+
+    [ORM only] When string filter searching is case sensitive you can use this value to set callback which will be used to convert parameters.
+
 .. _reference-datagrid-filters-default:
 
 ``default``
