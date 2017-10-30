@@ -11,6 +11,14 @@ You can configure one or more shipping rules that enable the shipping methods fo
 
 .. stop
 
+.. note::
+    See a short demo on `how to create shipping rules in OroCommerce <https://www.orocommerce.com/media-library/create-shipping-rules>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/46KlATao3MU" frameborder="0" allowfullscreen></iframe>
+
+
 .. contents:: :local:
 
 .. _doc--shipping-rules--overview:

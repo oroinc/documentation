@@ -11,6 +11,13 @@ Payment Rules Configuration
 
 You can configure one or more payment rules that enable the payment methods for the provided destinations.
 
+.. note::
+    See a short demo on `how to create payment rules <https://www.orocommerce.com/media-library/how-to-create-payment-rules>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JwuvMGIwDfk" frameborder="0" allowfullscreen></iframe>
+
 Create a Payment Rule
 ^^^^^^^^^^^^^^^^^^^^^
 

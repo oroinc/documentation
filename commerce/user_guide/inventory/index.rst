@@ -13,6 +13,13 @@ Overview
 .. include:: /user_guide/overview/inventory_overview.rst
   :start-after: begin
 
+.. note::
+    See a short demo on `how to work with inventory and warehouses <https://www.orocommerce.com/media-library/how-to-setup-inventory-and-warehouses>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/L9dPdjbJmxI" frameborder="0" allowfullscreen></iframe>
+
 System-wide Inventory Configuration
 -----------------------------------
 

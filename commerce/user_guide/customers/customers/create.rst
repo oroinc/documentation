@@ -5,7 +5,14 @@
 Create a Customer
 ~~~~~~~~~~~~~~~~~
 
-To create a new Customer:
+.. note::
+    See a short demo on `how to create customers in OroCommerce <https://www.orocommerce.com/media-library/create-customer-record>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/iLphaHiU8YY" frameborder="0" allowfullscreen></iframe>
+
+To create a new customer:
 
 #. Navigate to **Customers > Customers** in the main menu.
 
@@ -38,6 +45,6 @@ To create a new Customer:
 
 #. Click **Save** in the top right right corner of the page.
 
-A new Customer is created.
+A new customer is created.
 
 .. stop

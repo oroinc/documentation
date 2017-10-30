@@ -1,7 +1,14 @@
 Create a Web Catalog
 --------------------
 
-To create a new Web Catalog:
+.. note::
+    See a short demo on `how to create a web catalog in OroCommerce <https://www.orocommerce.com/media-library/create-web-catalog>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SlW73esqBpk" frameborder="0" allowfullscreen></iframe>
+
+To create a new web catalog:
 
 #. Navigate to **Marketing > Web Catalogs** in the main menu.
 
@@ -16,7 +23,7 @@ To create a new Web Catalog:
 
 #. Click **Save** on the top right of the page.
 
-The new Web Catalog is created.
+The new web catalog is created.
 
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate_demo.png
       :class: with-border

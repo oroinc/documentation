@@ -19,6 +19,15 @@ Out of the box, you may integrate OroCommerce with :ref:`UPS <doc--integrations-
 
 .. stop_shipping_method_integrations
 
+
+.. note::
+    See a short demo on `how to create a shipping integration in OroCommerce <https://www.orocommerce.com/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ileKXVTG6B8" frameborder="0" allowfullscreen></iframe>
+
+
 .. contents:: :local:
 
 .. _doc--integrations--ups:
@@ -75,7 +84,7 @@ To enable communication with UPS in order to request the shipping cost estimate 
    * Shipping account name
    * Shipping account number
 
-#. Select the pickup type that shall apply to the deliveries for the shipping methods via this integration. Awailable options are:
+#. Select the pickup type that shall apply to the deliveries for the shipping methods via this integration. Available options are:
 
    * Regular Daily Pickup
    * Customer Counter

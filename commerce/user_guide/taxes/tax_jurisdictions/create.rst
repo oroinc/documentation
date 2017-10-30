@@ -1,7 +1,14 @@
 Create a Tax Jurisdiction
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To create a new Tax Jurisdiction:
+.. note::
+    See a short demo on `how to create tax codes and jurisdictions in OroCommerce <https://www.orocommerce.com/media-library/create-tax-code-and-jurisdictions>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3Bra02GiKZE" frameborder="0" allowfullscreen></iframe>
+
+To create a new tax jurisdiction:
 
 #. Navigate to **Taxes > Tax Jurisdictions** in the main menu.
 
@@ -25,7 +32,7 @@ To create a new Tax Jurisdiction:
 
 #. Click **Save** on the top right of the page.
 
-The new Tax Jurisdiction is created.
+The new tax jurisdiction is created.
 
 .. stop
 

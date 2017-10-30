@@ -1,6 +1,13 @@
 Create a Tax Rule
 ~~~~~~~~~~~~~~~~~
 
+.. note::
+    See a short demo on `how to create tax rules in OroCommerce <https://www.orocommerce.com/media-library/create-tax-rules>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ma0JOwn9VVs" frameborder="0" allowfullscreen></iframe>
+
 To create tax rules for a particular tax jurisdiction:
 
 1. `Create a tax jurisdiction <./tax-jurisdictions/create>`_ (country, state and a range of zip codes) where a special taxation rules apply.

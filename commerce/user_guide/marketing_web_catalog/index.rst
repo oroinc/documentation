@@ -13,7 +13,7 @@ Overview
 .. include:: /user_guide/overview/marketing/web_catalogs_overview.rst
    :start-after: begin
 
-To view all Web Catalogs, navigate to **Marketing > Web Catalogs** in the main menu.
+To view all web catalogs, navigate to **Marketing > Web Catalogs** in the main menu.
 
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogs.png
    :class: with-border

@@ -20,9 +20,15 @@ Prior to starting your work with RFQs, make sure that you have:
 
 2. **Configured RFQ notification options** --- :ref:`configure RFQ notification options <sys--conf--commerce--sales--rfq-notifications--general>` to ensure that both the customers and the sales representatives receive email notifications on submitting a new RFQ.
 
-3. **Configured guest RFQs** --- to let unregistered customers request quotes on the items they are interested in, you can enable :ref:`guest RFQ forms <sys--conf--commerce--guest>` in your Oro application.
+3. **Configured guest RFQs** --- to let unregistered customers request quotes on the items they are interested in, you can enable :ref:`guest RFQ forms <user-guide--system-configuration--commerce-sales--rfq>` in your Oro application.
 
-.. add link when the topic is available
+
+.. note::
+    See a short demo on `how to manage RFQs in OroCommerce <https://www.orocommerce.com/media-library/manage-request-for-quotes>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tNSZFHNDdQU" frameborder="0" allowfullscreen></iframe>
 
 View RFQ List Page
 ------------------

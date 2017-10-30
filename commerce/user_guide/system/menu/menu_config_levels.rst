@@ -73,6 +73,13 @@ To customize one of the default front store menus (e.g. commerce main menu) or c
 3. Update the menu contents following the guidelines provided in the :ref:`Customize a Menu <doc--menus--config>` and :ref:`Edit a Frontend Menu <user-guide--system--menu--menu-frontend>` sections.
    The changes apply automatically.
 
+.. note::
+    See a short demo on `how to customize front store menus in OroCommerce <https://www.orocommerce.com/media-library/customize-front-end-menus>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nNPLsSOUc1c" frameborder="0" allowfullscreen></iframe>
+
 Customize Frontend Menus per Organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
