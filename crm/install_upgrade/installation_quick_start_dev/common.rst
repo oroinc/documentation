@@ -88,11 +88,6 @@ Using Redis for application caching
 To use Redis for application caching, follow the corresponding
 `configuration instructions <https://github.com/orocrm/redis-config#configuration>`__.
 
-License
-~~~~~~~
-
-`OSL-3.0 <LICENSE>`__ Copyright (c) 2013 - 2017, Oro, Inc.
-
 .. finish_body
 
 .. |main_app| replace:: OroCommerce and OroCRM Community Edition
