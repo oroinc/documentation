@@ -84,6 +84,8 @@ Products and categories are visible by default. To change this, navigate to **Sy
 .. image:: /user_guide/img/products/products/product_visibility/ConfigVisibilityOptions.png
    :align: center
 
+.. TODO add link to system config user-guide--customers--configuration--visibility
+
 Visibility to All
 ^^^^^^^^^^^^^^^^^
 

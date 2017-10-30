@@ -100,6 +100,8 @@ To add a new simple product and make it available in the master catalog (for int
 
 #. In the **Inventory** section, provide the following information: 
 
+.. start_inventory
+
    .. csv-table::
       :header: "Field","Description"
       :widths: 30, 60
@@ -116,6 +118,8 @@ To add a new simple product and make it available in the master catalog (for int
        When both **Decrement Inventory** and **Backorders** are enabled, a product quantity may become negative."
       "**Minimum Quantity to Order**","A minimum quantity that a buyer or sales person can claim in the RFQ, customer order, quote, or a shopping list."
       "**Maximum Quantity to Order**","A maximum quantity that a buyer or sales person can claim in the RFQ, customer order, :ref:`quote <user-guide--sales--quotes>`, or a shopping list."
+
+.. finish_inventory
 
    .. image:: /user_guide/img/products/products/SimpleProductInventory.png
       :class: with-border

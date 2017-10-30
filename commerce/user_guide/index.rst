@@ -114,6 +114,8 @@ Table of Contents
 
    products/index
 
+   master_catalog/index
+
    inventory/index
 
    pricing/index

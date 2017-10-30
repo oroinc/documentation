@@ -1,3 +1,7 @@
+.. _user-guide--web-catalog-create:
+
+.. begin
+
 Create a Web Catalog
 --------------------
 

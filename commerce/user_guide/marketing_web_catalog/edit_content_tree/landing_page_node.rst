@@ -5,7 +5,7 @@
 Add a Landing Page (Web Catalog Content)
 """"""""""""""""""""""""""""""""""""""""
 
-Landing Page node is a link to the `custom content page <./marketing-landing-pages>`_ created in the **Marketing > Landing Pages** section.
+Landing Page node is a link to the :ref:`custom content page <user-guide--landing-pages>` created in the **Marketing > Landing Pages** section.
 
 To add a landing page node to the menu on the OroCommerce Store Front:
 
@@ -22,7 +22,7 @@ To add a landing page node to the menu on the OroCommerce Store Front:
 
       The Create Landing Page pops up.
 
-   #) Fill in the landing page details and contents as described `here <./marketing-landing-pages/create>`_.
+   #) Fill in the landing page details and contents as described :ref:`here <user-guide--landing-pages-create>`.
 
 #. This step applies only to the content nodes with more than one content variant.
 

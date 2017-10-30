@@ -1,9 +1,11 @@
+.. _user-guide--customers--configuration--visibility:
+
 Configuring Default Product and Category Visibility
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. begin
 
-You can control default visibility settings (e.g. visible or hidden) for products and product categories for customer users.
+By default, all categories are visible. However, an administrator can control the default visibility settings (e.g. visible or hidden) for products and product categories for customer users.
 
 To change the default product and category visibility settings:
 

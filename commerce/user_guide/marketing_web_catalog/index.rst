@@ -26,6 +26,7 @@ Configuration
    :end-before: finish
 
 .. include:: create.rst   
+   :start-after: begin
    :end-before: finish
 
 .. include:: web_catalog_usecase.rst   
