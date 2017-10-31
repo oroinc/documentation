@@ -115,7 +115,7 @@ With the Customer User Role you can manage the following access- and permissions
             * Share grid view
             * Unassign other tags
             * Unshare grid view
-            * Update User Profile
+            * Update User Profile (enables the customer user to update their profile under **Account > My Profile** in the front store)
             * View SQL query of a report/segment
 
         + **Calendar**
@@ -133,3 +133,7 @@ With the Customer User Role you can manage the following access- and permissions
            * Search
 
 Finally, in the customer role details, you may view customer users with this role assigned. If the role is global, this list contains users from all customer accounts.
+
+.. note:: Please note that there are two ways to control the capability of a customer user to update their profile details in the front store. One is defined by the **Edit** permission for Customer Users. When set to **Same Level/All Levels**, editing will become possible under **Account > All Users** in the front store. The second one is defined by the **Update User Profile** capability which, when enabled, gives the customer user permissions to update details under **Account > My Profile** in the front store.
+
+

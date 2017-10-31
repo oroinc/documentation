@@ -8,7 +8,7 @@ This section of the guide will provide information on how you can manage your or
 .. contents:: :local:
    :depth: 2
 
-The frontsore user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines.  The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
+The front store user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines.  The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
 
 Users
 ^^^^^
@@ -22,6 +22,8 @@ To locate users:
 .. image:: /frontstore_guide/img/users_roles/Users.png
 
 On the All Users page, you can view and edit the existing users, or create new ones.
+
+.. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
 
 The users table shows the following data:
 

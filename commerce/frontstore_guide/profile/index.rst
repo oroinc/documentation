@@ -39,6 +39,8 @@ In the **Account Info** section you can view the following details:
 
 To edit the profile, click |IcPencil| next to **Account Info**.
 
+.. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
+
 In editing mode, you can amend the following details:
 
 * Customer
