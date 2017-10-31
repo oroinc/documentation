@@ -75,7 +75,7 @@ Add Widgets to a Dashboard
   
 In order to add a widget to a Dashboard:
 
-- Get to the Dashboard to which the Dashboard should be added
+- Get to the Dashboard to which the widget should be added
 
 - Click the :guilabel:`+ Add Widget` button. 
 
