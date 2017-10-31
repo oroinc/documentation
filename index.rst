@@ -35,7 +35,6 @@ User Guides
             </ul>
         </div>
 
-
         <div class="guideline__item">
             <a href="current/user-guide-marketing-tools/"><h3 style="text-align:center"><i class="guideline__icon fa fa-user-plus fa-2x" style="color:#FFC221"></i><br />Marketing Guide</h3></a>
             <ul class="guideline__list simple">
