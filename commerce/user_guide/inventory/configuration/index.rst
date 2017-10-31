@@ -3,7 +3,7 @@
 Configuring Inventory
 ---------------------
 
-..  begin
+..  begin_configuration
 
 OroCommerce groups inventory configuration options into the following categories:
 
@@ -25,7 +25,8 @@ Product Inventory Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /user_guide/inventory/configuration/options.rst
-  :start-after: begin
+  :start-after: begin_configuring_product_options
+  :end-before: finish_configuring_product_options
 
 Warehouses
 ~~~~~~~~~~
@@ -39,7 +40,7 @@ Order Quantity Limitations
 .. include:: /user_guide/inventory/configuration/limitations.rst
   :start-after: begin
 
-.. finish
+.. finish_configuration
 
 .. toctree::
    :hidden:
@@ -51,3 +52,7 @@ Order Quantity Limitations
    warehouses
 
    limitations
+
+
+.. include:: /user_guide/include_images.rst
+   :start-after: begin

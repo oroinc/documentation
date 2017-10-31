@@ -24,8 +24,8 @@ System-wide Inventory Configuration
 -----------------------------------
 
 .. include:: /user_guide/inventory/configuration/index.rst
-  :start-after: begin
-  :end-before: finish
+  :start-after: begin_configuration
+  :end-before: finish_configuration
 
 Product-level Inventory Configuration
 -------------------------------------
@@ -88,6 +88,9 @@ Inventory Statuses Only
 
    warehouses/index
 
+
+.. include:: /user_guide/include_images.rst
+   :start-after: begin
 
 .. comment
     * Inventory

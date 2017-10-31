@@ -1,42 +1,47 @@
+.. _sys--conf--commerce--inventory--product-options:
+
 Configuring Product Options
 ---------------------------
 
-.. begin
+.. begin_configuring_product_options
 
-You can control the way product inventory is managed for every product in the OroCommerce product catalog.
+You can control the way product inventory is managed for every product in the OroCommerce product catalog on three levels -- globally, per organization and website.
 
-To customize the default product inventory options:
+.. contents:: :local:
+   :depth: 1
 
-1. Navigate to the system configuration (click **System > Configuration** in the main menu).
-2. Select **Commerce > Inventory > Product Options** in the menu to the left.
+Configure Product Options Globally
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+.. include:: /user_guide/inventory/configuration/global_options.rst
+   :start-after: begin
+   :end-before: finish
 
-The following page opens:
 
-   .. image:: /user_guide/img/system/configuration/inventory/product_options.png
-      :class: with-border
+Configure Product Options per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   The following table describes the options available on the page:
+.. include:: /user_guide/inventory/configuration/organization_options.rst
+   :start-after: begin
+   :end-before: finish
 
-   +---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Name                | Description                                                                                                                                                                                                                                                                                |
-   +=====================+============================================================================================================================================================================================================================================================================================+
-   | Managed Inventory   | This options indicates whether the product inventory is handled by OroCommerce vs external application.                                                                                                                                                                                    |
-   +---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Inventory Threshold | A minimum quantity of the product that is treated as *In stock*. When a product quantity reaches this threshold value, the product inventory status fallback to *Out Of Stock*.                                                                                                            |
-   +---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Backorders          | A flag that indicates whether OroCommerce accepts backorders. When set to yes, buyers and sales people can order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock. |
-   +---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | Decrement Inventory | A flag that indicates whether OroCommerce decrements inventory upon order. When both **Decrement Inventory** and **Backorders** are enabled, product quantity may get negative.                                                                                                            |
-   +---------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-3. To customize any of these options:
+Configure Product Options per Website
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-     a) Clear the **Use Default** box next to the option.
-     b) Select **Yes/No** for the flag-like options, and type in the updated value for the threshold-like options.
+.. include:: /user_guide/inventory/configuration/website_options.rst
+   :start-after: begin
+   :end-before: finish
 
-4. Click **Save**.
+.. finish_configuring_product_options
 
-.. comment FIXME Clarify Managed Inventory purpose. 
+.. toctree::
+   :hidden:
+
+   global_options
+   organization_options
+   website_options
+
+
+.. include:: /user_guide/include_images.rst
+   :start-after: begin

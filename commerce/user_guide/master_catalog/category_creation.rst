@@ -36,7 +36,7 @@ To create a master catalog category:
 
 5. In the **Default Product Options** section, configure the following settings:
 
-   .. image:: /user_guide/img/master_catalog/master_catalog_4.png
+   .. image:: /user_guide/img/master_catalog/master_catalog_4_new.png
 
    .. csv-table::
       :header: "Field","Description"
