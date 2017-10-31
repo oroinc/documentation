@@ -266,8 +266,12 @@ This section provides links to the online documentation for the latest OroCommer
 
        admin_guide/index
 
+       configuration_guide/index
+
        community/index
 
        system_requirements
 
-..        configuration/index
+       
+
+

@@ -177,6 +177,6 @@ to the sender of the email.
 | **Save Response As Email Template** | Checking the box automatically saves the current email as a template.                                               |
 +-------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
--  Click :**Add** to save the rule.
+-  Click **Add** to save the rule.
    
 .. finish

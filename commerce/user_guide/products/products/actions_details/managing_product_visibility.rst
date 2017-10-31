@@ -74,6 +74,8 @@ Navigation to Visibility Settings
 Default Settings
 ~~~~~~~~~~~~~~~~
 
+.. _products--product-visibility--system-configuration:
+
 System Configuration
 ^^^^^^^^^^^^^^^^^^^^
 

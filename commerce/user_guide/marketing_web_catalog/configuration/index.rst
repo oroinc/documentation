@@ -1,5 +1,7 @@
 :orphan:
 
+.. _configuration--guide--commerce--configuration--product-collections:
+
 Product Collections
 ~~~~~~~~~~~~~~~~~~~
 

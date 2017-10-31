@@ -9,26 +9,19 @@ Opportunity Settings
     :depth: 2
 
 
-In **System>Configuration>CRM>Sales Pipeline>Leads**, you can you can you can define a number of opportunity-related options to be applied to the OroCRM instance.
+In **System > Configuration > CRM>Sales Pipeline > Leads**, you can you can you can define a number of opportunity-related options to be applied to the OroCRM instance.
 
-|
 
 .. image:: ../img/configuration/opportunities.png
-
-|
 
 
 General Setup
 -------------
 
-Here, you can enable opportunities as a feature by ticking :guilabel:`Enable Opportunity`. When enabled, **Opportunities** will appear in the **Sales** section of the main menu.
+Here, you can enable opportunities as a feature by ticking **Enable Opportunity**. When enabled, **Opportunities** will appear in the **Sales** section of the main menu.
 
-|
 
 .. image:: ../img/configuration/opportunities_menu.png
-
-|
-
 
 
 Probabilities
@@ -37,7 +30,7 @@ Probabilities
 In probabilities section, you can:
 
 - Manage opportunity statuses and assign default probabilities to them, except for system statuses Closed Won and Closed Lost.
-- Add a new opportunity status by clicking :guilabel:`+Add`.
+- Add a new opportunity status by clicking **+Add**.
 
 Display Settings
 ----------------

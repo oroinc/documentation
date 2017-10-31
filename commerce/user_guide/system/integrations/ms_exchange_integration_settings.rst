@@ -5,27 +5,28 @@
 MS Exchange Settings
 ====================
 
-To configure MS Exchnage Integration Settings, navigate to **System>Configuration>System Configuration>Integrations>MS Exchange**.
+To configure MS Exchange Integration Settings:
 
-OroCRM Enterprise Edition supports integration with Microsoft Exchange server. This means that emails from mailboxes on the MS Exchange server can be automatically uploaded to OroCRM.
+1. Navigate to **System > Configuration > System Configuration > Integrations > MS Exchange**.
 
-This functionality enables using a single system-wide setting to collect letters of multiple users within organization.
+   The Enterprise edition of Oro applications supports integration with Microsoft Exchange server. This means that emails from mailboxes on the MS Exchange server can be automatically uploaded to the Oro application.
 
-.. image:: ../img/configuration/msexchange.png
+   This functionality enables using a single system-wide setting to collect letters of multiple users within organization.
 
-To enable MS Exchange Integration, check :guilabel:`Enabled` and define the following details:
+   .. image:: ../img/configuration/msexchange.png
 
-.. csv-table::
-  :header: "**Name**","**Description**"
-  :widths: 10, 30
+2. To enable MS Exchange Integration, check **Enabled** and define the following details:
 
-  "**Server**","Enter the name of your Microsoft Exchange Server instance"
-  "**Version**","Choose the server version from the drop-down menu"
-  "**Login and Password**","Enter the credentials of the super-user."
-  "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."
+   .. csv-table::
+     :header: "**Name**","**Description**"
+     :widths: 10, 30
+   
+     "**Server**","Enter the name of your Microsoft Exchange Server instance"
+     "**Version**","Choose the server version from the drop-down menu"
+     "**Login and Password**","Enter the credentials of the super-user."
+     "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."
 
-- Click the :guilabel:`Save Settings` button.
+3. Click **Save Settings**.
 
 
-
-More information of MS Exchange integration setup is described in the relevant :ref:`MS Exchange guide <admin-configuration-ms-exchange>`.
+More information on the MS Exchange integration setup is described in the relevant :ref:`MS Exchange topic <admin-configuration-ms-exchange>`.

@@ -30,6 +30,8 @@ For the OroCRM users, the following changes and improves after integration:
 .. contents:: :local:
     :depth: 1
 
+.. _user-guide-commerce-integration-accounts:
+
 Accounts
 --------
 

@@ -96,3 +96,4 @@ Related Topics
    menu_config
    menu_config_levels
    menu_frontend
+   service_page

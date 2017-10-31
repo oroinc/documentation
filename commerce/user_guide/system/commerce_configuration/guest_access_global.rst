@@ -1,5 +1,6 @@
 :orphan:
 
+.. _sys--conf--commerce--guest-access--global:
 
 Enabling Website Guest Access Globally
 --------------------------------------

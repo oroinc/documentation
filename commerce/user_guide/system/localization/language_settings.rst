@@ -1,3 +1,5 @@
+.. _sys--config--sysconfig--general-setup--language-settings:
+
 Language Settings
 -----------------
 
@@ -25,4 +27,4 @@ To define the default system language and additional supported languages:
 
 Settings are saved automatically.
 
-.. note:: See `languages section <languages>`_ for available languages mangement and translation synchronization status.
+.. note:: See `languages section <languages>`_ for available languages management and translation synchronization status.

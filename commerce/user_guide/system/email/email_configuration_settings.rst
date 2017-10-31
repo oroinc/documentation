@@ -8,34 +8,29 @@ Email Configuration Settings
 .. contents:: :local:
     :depth: 2
 
-In **System>Configuration>System Configuration>General Setup>Email Configuration**, you can define options, applied to all the emails generated within the instance.
+In **System > Configuration > System Configuration > General Setup > Email Configuration**, you can define options, applied to all the emails generated within the instance.
 
-|
+
 
 .. image:: ../img/configuration/email_1.png
 
-|
 
-|
 
 .. image:: ../img/configuration/email_2.png
 
-|
 
-|
 
 .. image:: ../img/configuration/email_3.png
 
-|
 
-Complete information on email configuration is available in the :ref:`Email Configuration guide <user-guide-email-admin>`.
+Complete information on email configuration is available in the :ref:`Email Configuration topic <user-guide-email-admin>`.
 
-The following settings are available within Email Configuration tab:
+The following settings are available within the Email Configuration tab:
 
 Email Settings
 --------------
 
-Here, you can enable or disable user emails as a feature by ticking or unticking the checkbox.
+Here, you can enable or disable user emails as a feature by selecting or clearing the check box.
 
 Autocomplete
 ------------
@@ -62,23 +57,13 @@ Email Threads
 Section fields **Display Email Conversations As** and **Display Emails In Activities As** define if the emails and replies must be displayed separately or in a thread.
 
 
-|
-
 .. image:: ../img/configuration/threads_settings.png
 
 
-|
-
 .. image:: ../img/configuration/threaded_email_activities.jpg
 
-|
-
-|
 
 .. image:: ../img/configuration/non_threaded_activities.jpg
-
-|
-
 
 
 Reply
@@ -125,7 +110,7 @@ Here, you can enable or disable HTML purifier. Disabling HTML purifier allows to
 Notification Rules
 ------------------
 
-The section defines the rules that will be applied by default to a notification generated in the OroCRM. You can define the **Sender Email** and **Sender Name** to be used.
+The section defines the rules that will be applied by default to a notification generated in the Oro application. You can define the **Sender Email** and **Sender Name** to be used.
 
 Maintenance Notifications
 -------------------------
@@ -141,7 +126,7 @@ Maintenance Notifications
 Campaign
 --------
 
-Campaign section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in OroCRM. You can define the Sender Email and Sender Name to be used.
+Campaign section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in the Oro application. You can define the Sender Email and Sender Name to be used.
 
 
 System Mailboxes

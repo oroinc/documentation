@@ -1,3 +1,5 @@
+.. _configuration--guide--commerce--configuration--inventory--limitations:
+
 Configuring Inventory Quantity Limitations
 ------------------------------------------
 

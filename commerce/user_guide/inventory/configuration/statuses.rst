@@ -1,3 +1,5 @@
+.. _configuration--guide--commerce--configuration--inventory--allowed-statuses:
+
 Configuring Inventory Status Constrains
 ---------------------------------------
 
