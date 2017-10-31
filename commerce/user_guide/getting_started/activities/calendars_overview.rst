@@ -61,7 +61,7 @@ Add an Event to a Calendar
 
 In order to add an event to a calendar:
 
-1. Go to the :ref:`view page <user-guide-ui-components-view-pages>` of the calendar.
+1. Go to the view page of the calendar.
 
 2. Click the :guilabel:`Create Calendar Event` button.
 
@@ -89,8 +89,7 @@ The event will be highlighted as defined for the calendar by default.
 Manage System and Organization Calendars
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following actions can be performed for each calendar and calendar event from their 
-:ref:`grids <doc-grids>`:
+The following actions can be performed for each calendar and calendar event from their grids:
 
 .. image:: /user_guide/img/getting_started/calendars/system_cal_grid.png
 
@@ -167,24 +166,18 @@ In order to get to the *"All Calendar Events"* grids  and :guilabel:`Events` (6)
 Task and Calendar Event Grids
 -----------------------------
 
-Along with the Calendar view, you can also view and process tasks and events from a number of 
-:ref:`grid <doc-grids>`, as described below:
+Along with the Calendar view, you can also view and process tasks and events from a number of grid, as described below:
 
 .. csv-table::
   :header: "Grid Name", "Route", "Description", "Actions" 
   :widths: 20, 30, 30, 30
   
   "All Calendar Events","*Activities → Calendar Events*","Displays calendar events of all the users added in My 
-  Calendar item list, including those hidden.","You can create and delete events and get to their 
-  :ref:`Edit forms <user-guide-ui-components-create-pages>` and :ref:`View pages <user-guide-ui-components-view-pages>`
-  ."
+  Calendar item list, including those hidden.","You can create and delete events and get to their edit and view pages."
   "All Tasks","*Activities → Tasks*","Displays all the tasks in the system that the user is allowed to view", "You can 
-  create and delete tasks and get to their 
-  :ref:`Edit forms <user-guide-ui-components-create-pages>` and :ref:`View pages <user-guide-ui-components-view-pages>`
-  ."
+  create and delete tasks and get to their edit and view pages."
   "My Tasks","User menu → My Tasks","Displays all the tasks assigned to the user","You can 
-  delete tasks and get to their :ref:`Edit forms <user-guide-ui-components-create-pages>` and 
-  :ref:`View pages <user-guide-ui-components-view-pages>`." 
+  delete tasks and get to their edit and view pages."
 
 
 

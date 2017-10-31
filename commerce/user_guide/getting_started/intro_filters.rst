@@ -21,7 +21,7 @@ To define filters you can use any of the following filters or combine them:
 - **Conditions Groups**: sets of field conditions that combine requirements of several other filters in one group.
 
 - **Segments**: sets of records dynamically or manually updated in compliance with 
-  predefined filters. . See :ref:`Using Segments <user-guide-filters-segments>` for more information.
+  predefined filters. . See :ref:`Using Segments <user-guide--business-intelligence--filters-segments>` for more information.
 
   
 AND/OR Operators
@@ -178,7 +178,7 @@ A segment is a set of the Activity and/or Data audit and/or Field Condition and/
 
 In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a segment and use it instead of redefining the same conditions time and again.
 
-The ways to create and manage segments are described in more details in the :ref:`Using Segments <user-guide-filters-segments>` section.
+The ways to create and manage segments are described in more details in the :ref:`Using Segments <user-guide--business-intelligence--filters-segments>` section.
 
 To add a segment to the filters:
 

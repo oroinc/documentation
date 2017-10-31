@@ -48,7 +48,7 @@ The following fields are mandatory and **must** be defined for a report:
   "**Name**","The name that is used to refer to the report on the interface.
 
   It is recommended to choose a name that indicates what information the report presents."
-  "**Entity**","A target :term:`entity <Entity>` of the report. Data related to it will be used to generate the report.
+  "**Entity**","A target :term:`entity <Entity>` of the report. The data related to it will be used to generate the report.
 
   Select one of the entities from the list. (You can also start typing the entity name in the text field to find it faster.)"
   "**Report Type**","Select *Table* from the list. The report will present data in the form of the table. This is the only type of the reports currently available."
@@ -73,13 +73,13 @@ In the section you can define the structure of your report.
 
 There are four main subsections that help you build your report:
 
-- **Columns**—In this subsection you define which data columns your report will contain.
+- **Columns**—In this subsection, you define which data columns your report will contain.
 
-- **Grouping**—In this subsection you can define how the information in your report will be aggregated.
+- **Grouping**—In this subsection, you can define how the information in your report will be aggregated.
 
-- **Grouping by Date**—In this section you can enable period filters.
+- **Grouping by Date**—In this subsection, you can enable period filters.
 
-- **Filters**—In this subsection you apply filters to the data that the report returns to select only the information you need.
+- **Filters**—In this subsection, you apply filters to the data that the report returns to select only the information you need.
 
 Columns
 ~~~~~~~
@@ -97,10 +97,10 @@ To add a column:
   :header: "Field","Description"
   :widths: 10, 30
 
-  "**Choose a field***","Choose the field that contains the required values. This can be a field of the entity
+  "**Column**","Choose the field that contains the required values. This can be a field of the entity
   specified in the **Entity** field of the **General** section or a field of an entity related to it. You can see the available fields in the
-  list, fields a grouped by entities."
-  "**Label**","If required, you can customly label the selected field. This custom name will be applicable only to the current report.
+  list, fields are grouped by entities."
+  "**Label**","If required, you can rename the label of the selected field. This custom name will be applicable only to the current report.
 
   By default, the field label is used."
   "**Function**","Select an aggregate function that you want to apply to the field values. Aggregate functions process a set of values and return just a single value.
@@ -128,9 +128,9 @@ To add a column:
   "
   "**Sorting**","Select the sorting order for the field.
 
-  - **None**—The data in the field is not sorted.
-  - **Asc**—The data is sorted in the ascending order (e.g. from the smallest to the largest number or from A to Z).
-  - **Desc**—The data is sorted in the descending order (e.g. from the largest to the smallest number or from Z to A).
+  - **None**—The data in the field are not sorted.
+  - **Asc**—The data are sorted in the ascending order (e.g. from the smallest to the largest number or from A to Z).
+  - **Desc**—The data are sorted in the descending order (e.g. from the largest to the smallest number or from Z to A).
 
   .. important::
     If sorting is defined for several columns, the report is sorted according to order specified for the first column, and then, if multiple values of other columns correspond to any value of a first column, they will be sorted according to the order defined for the next columns.
@@ -217,7 +217,7 @@ To move a column, click the |IcArrowsV| **Move** icon at the right end of the co
 Grouping
 ~~~~~~~~
 
-When you specify aggregating functions for some of the fields, you need to add all other fields (that does not have any aggregating functions specified for them) to the **Grouping** section.
+When you specify aggregating functions for some of the fields, you need to add all other fields (that do not have any aggregating functions specified for them) to the **Grouping** section.
 
 
 .. _doc-reports-actions-create-grouping-fieldadd:

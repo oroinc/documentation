@@ -42,7 +42,7 @@ From a View Page
 
 In order to start a hangout:
 
-- Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the record that you want to contact (account, 
+- Go to the view page of the record that you want to contact (account,
   lead, contact, user, etc.) . 
 
 - Hover the mouse over a phone number or an email address available on the View page.

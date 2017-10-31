@@ -22,10 +22,10 @@ In the next row there is the :guilabel:`Export Grid` button. Click it to export 
 
 In the upper-right part of the page you can see the :guilabel:`Log Call` action button. Click it to make or log a call. See the :ref:`Log a Call <doc-activities-calls-actions-log>` and :ref:`Make a Call <doc-activities-calls-actions-make>` action descriptions.
 
-The other grid controls are common for all grids in the application. See the :ref:`Grids <doc-grids>` guide for more information on grids.
+The other grid controls are common for all grids in the application.
 
 Grid
-^^^^^
+^^^^
 
 +----------------+--------------------------------------------------------------+
 | Field          | Description                                                  |

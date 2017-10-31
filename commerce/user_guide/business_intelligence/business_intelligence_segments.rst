@@ -1,4 +1,4 @@
-.. _user-guide-filters-segments:
+.. _user-guide--business-intelligence--filters-segments:
 
 Segments
 ========
@@ -19,7 +19,12 @@ Segment combines a set of records filtered using the query that may use the foll
 
 Dynamic segments refresh automatically. Segments of manual type require explicit refresh by clicking **Refresh** |IcRefresh|.
 
-.. _user-guide--create-segments:
+In this section you will learn how to:
+
+.. contents:: :local:
+
+
+.. _user-guide--business-intelligence--create-segments:
 
 Create Segments
 ---------------

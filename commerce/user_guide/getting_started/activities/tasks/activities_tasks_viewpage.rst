@@ -85,7 +85,7 @@ This section contains the main information about a task.
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Assigned To      | The user who is responsible for doing the work related to the task.                                                                                                                   |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Tags             | A list of :ref:`tags <user-guide-tags>` added to the task. Point to the the tags name (or **N/A** if no tags are defined) and click the **Edit** icon next to them to add a new tag.  |
+| Tags             | A list of tags added to the task. Point to the the tags name (or **N/A** if no tags are defined) and click the **Edit** icon next to them to add a new tag.                           |
 |                  |                                                                                                                                                                                       |
 |                  | .. image:: /user_guide/img/getting_started/activities/tasks/tags_add.png                                                                                                              |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

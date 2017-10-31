@@ -63,9 +63,9 @@ The following actions are available for a Tracking Websites record after you nav
 
 - Delete the record from the system : |IcDelete| 
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the record: |IcEdit| 
+- Get to the edit page of the record: |IcEdit|
  
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the record:  |IcView| 
+- Get to the view page of the record: |IcView|
 
 .. note::
 

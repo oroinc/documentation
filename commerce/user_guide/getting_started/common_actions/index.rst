@@ -7,7 +7,7 @@ Clear and timely communications between all the stakeholders is important for su
 
 OroCommerce provides the following tools for streamlined communication inside and outside OroCommerce.
 
-.. warning:: TODO: split folder into two: productivity tools and common tools (may be more).
+.. TODO split folder into two: productivity tools and common tools (may be more).
 
 .. toctree::
    
@@ -15,15 +15,9 @@ OroCommerce provides the following tools for streamlined communication inside an
 
    import
 
-   calendar_events
-
-   actions
-
    manage_translation
 
    manage_address_book
-
-   using_WYSIWYG_text_editor
 
    import_inventory_levels
 

@@ -30,7 +30,7 @@ To create a new custom segment for featured products:
 
 #. Click **Create Segment** on the top right of the page.
 
-#. Configure a new segment to have a distinct name and the necessary filtering condition. For more detailed steps, please see :ref:`Create Segment <user-guide--create-segments>` topic.
+#. Configure a new segment to have a distinct name and the necessary filtering condition. For more detailed steps, please see :ref:`Create Segment <user-guide--business-intelligence--create-segments>` topic.
 
    **Sample Featured Products segment (default configuration)**
 

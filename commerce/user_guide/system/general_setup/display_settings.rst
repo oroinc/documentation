@@ -59,7 +59,7 @@ The following options are available:
 
     "**Items Per Page By Default**","Defines the number of items displayed on one page of the grid by default (every time you open the grid). You can change the number each time.","25"
     "**Lock Headers In Grids**","Defines whether grid headers will be locked on a page during scrolling.","Enabled"
-    "**Record Pagination**","If enabled, you can navigate to previous or next grid record from  a :ref:`view page <user-guide-ui-components-view-pages>`","Enabled"
+    "**Record Pagination**","If enabled, you can navigate to previous or next grid record from  a view page","Enabled"
     "**Record Pagination Limit**","Defines a maximum number of records available for the record pagination*. (If there are more records, the pagination will be disabled for the grid to avoid performance deterioration) ","1000"
 
 

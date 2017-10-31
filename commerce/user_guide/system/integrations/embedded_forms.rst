@@ -84,9 +84,9 @@ Manage Embedded Forms
 
   - Delete the form: |IcDelete|
 
-  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the form: |IcEdit|
+  - Get to the edit page of the form: |IcEdit|
 
-  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the form:  |IcView|
+  - Get to the view page of the form:  |IcView|
 
 .. _admin-embedded-forms-code:
  

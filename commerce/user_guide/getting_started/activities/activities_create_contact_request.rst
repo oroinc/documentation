@@ -79,9 +79,9 @@ View and Manage Contact Requests
 
   - Delete the request: |IcDelete|
 
-  - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the request: |IcEdit|
+  - Get to the edit form of the request: |IcEdit|
 
-  - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the request:  |IcView|
+  - Get to the view page of the request:  |IcView|
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

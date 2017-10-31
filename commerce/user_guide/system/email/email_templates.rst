@@ -68,13 +68,13 @@ Manage Email Templates
 ----------------------
 
 The following actions are available for an email template from
-the :ref:`grid <doc-grids>`:
+the grid:
 
 .. image:: ../img/marketing/email_template_actions.png
 
 - Delete the template from the system: click the |IcDelete| **Delete** icon.
 
-- Get to the :ref:`edit page <user-guide-ui-components-create-pages>` form of the template: click the |IcEdit| **Edit** icon.
+- Get to the edit page form of the template: click the |IcEdit| **Edit** icon.
 
 - Clone the template: click the |IcClone| **Clone** icon.
 

@@ -8,7 +8,7 @@ you sometimes need to select a set of records to be *processed* in different are
 :ref:`Marketing List <user-guide-marketing-lists>` or a :ref:`Report <user-guide-reports>`. In this case,
 there is a *"Filters"* section.
 
-It settings are used to automatically select only those records of the entity that meet the filter requirements.
+Its settings are used to automatically select only those records of the entity that meet the filter requirements.
 
 Filters are always created for records of a specific :term:`entity <Entity>` specified in the general details of the 
 relevant segment, report or marketing list. We'll call it a *"filtered entity"*.
@@ -23,7 +23,7 @@ To define filters you can use any of the following filters or combine them:
 - **Activity**: select only the records to which a specific kind of :ref:`activity <user-guide-activities>` has 
   been/hasn't been assigned.
 
-- **Data Audit**: select on the records that have been modified in a specific way (available only when the correponding fuctionality is enabled for an entity; see step 6 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
+- **Data Audit**: select on the records that have been modified in a specific way (available only when the corresponding functionality is enabled for an entity; see step 6 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
 
 - **Conditions Groups**: sets of field conditions that combine requirements of several other filters in one group.
 
@@ -36,9 +36,9 @@ AND/OR Operators
 
 To combine conditions of any two filters you can use operators **"AND"** and **"OR"**:
 
-- If "AND" is used, only the records that meet conditions of all the connected filter filters will be selected.
+- If "AND" is used, only the records that meet conditions of all the connected filters will be selected.
 
-- If "OR" is used, all the records that meet conditions of any of the connected filter filters will be selected.
+- If "OR" is used, all the records that meet conditions of any of the connected filters will be selected.
 
 The following sections provide detailed explanation of the filters with examples for different operators.
 
@@ -51,7 +51,7 @@ The following sections provide detailed explanation of the filters with examples
 Field Conditions
 ----------------
 
-Field Condition filters specifies a rule for values of the record attributes. Only records that meet the condition will 
+Field Condition filters specify a rule for values of the record attributes. Only the records that meet the condition will
 be selected. 
 
 To define a field condition:
@@ -69,8 +69,8 @@ To define a field condition:
   |
   
 - A drop-down will appear. At the top of the drop-down menu, you can see the name of the :term:`entity <Entity>`, for 
-  which the records are filtered. (In the example below it is a Contact). Below the entity name there is a list of all
-  the  of the chosen entity. Below the list of fields, is a list of related entities (entities 
+  which the records are filtered. (In the example below it is a Contact). Below the entity name, there is a list of all
+  the chosen entities. Below the list of fields, there is a list of related entities (entities
   that have a :ref:`relation <user-guide-entity-management-relation>` with the filtered entity.)
   
   |field_condition_fields|
@@ -79,7 +79,7 @@ To define a field condition:
   
 - Choose a field that you want to use for the rule:
 
-  - This can be a field of the chosen entity For example, we can filter Contact records by gender.
+  - This can be a field of the chosen entity. For example, we can filter Contact records by gender.
    
     |field_condition_defined|
     
@@ -128,14 +128,14 @@ To define the activity setting:
 
 - There are three selector links:
   
-  - Has activity /has not activity - only records to which the defined activity has/hasn't been assigned will be 
+  - Has activity /has not activity - only records to which the defined activity has/has not been assigned will be
     selected
 
     |activity_selector_1|
 
     |
 
-  - List if available activities to filter by. 
+  - List of available activities to filter by.
   
     |activity_selector_2|
 
@@ -152,7 +152,7 @@ For example, we will select only those records, for which a call has been logged
 Data Audit
 ----------
 
-The **Data audit** filter specifies a rule for the record changes recorded in the system. Only records 
+The **Data audit** filter specifies a rule for the record changes recorded in the system. Only the records
 that meet the condition will be selected. 
 
 To define the data audit setting:
@@ -203,7 +203,7 @@ A condition group may also be included into another condition group as a separat
 Segments
 --------
 
-A segment is a set of the Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately :ref:`Filters guide <user-guide-filters-segments>` for records of a specific entity. It can be updated dynamically or upon a user's request.
+A segment is a set of the Activity and/or Data audit and/or Field Condition and/or Condition Group filters created separately for the records of a specific entity. It can be updated dynamically or upon a user's request.
 
 In other words, if you often need to use a specific set of conditions to filter the entity records, you can create a segment and use it instead of redefining the same conditions time and again.
 

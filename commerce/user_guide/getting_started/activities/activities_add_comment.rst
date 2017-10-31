@@ -17,8 +17,8 @@ Create and View Comments
 
 Once a record or an activity have been created, a comment can be added to it from:
 
-- :ref:`Record view page <user-guide-ui-components-view-pages>`.
-- :ref:`Record edit page <user-guide-ui-components-create-pages>`.
+- Record view page.
+- Record edit page.
 - View page of a record the activity is related to.
 
 .. caution::
@@ -48,7 +48,7 @@ Mr. Jeffrey Maynard.
 
 .. image:: /user_guide/img/getting_started/activities/comments_01.png  
 
-- Then she went to the :ref:`view page <user-guide-ui-components-view-pages>` page of the task and left a comment.
+- Then she went to the view page page of the task and left a comment.
 
 .. image:: /user_guide/img/getting_started/activities/comments_02.png  
 

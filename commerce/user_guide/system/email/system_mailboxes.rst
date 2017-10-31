@@ -126,8 +126,8 @@ Define the following settings for the rule:
   
 Click Add button and the rule will be saved.
 
-All the rules of a mailbox can be viewed and processed from the "Autoresponse Rules" 
-:ref:`grid <doc-grids>` in the corresponding section of the System Mailbox record page.
+All the rules of a mailbox can be viewed and processed from the Autoresponse Rules
+grid in the corresponding section of the System Mailbox record page.
 
 .. image:: ../img/system_mailbox/ar_rule.png   
 
@@ -137,8 +137,8 @@ Final Steps
 
 Save the created mailbox with the button in the top right corner of the page.
 
-All the system mailboxes can be viewed and processed from the "System Mailboxes" 
-:ref:`grid <doc-grids>` in the corresponding section of the Email Configuration page.
+All the system mailboxes can be viewed and processed from the System Mailboxes
+grid in the corresponding section of the Email Configuration page.
 
 
 .. image:: ../img/system_mailbox/system_mb_grid.png

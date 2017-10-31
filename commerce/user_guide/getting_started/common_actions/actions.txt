@@ -12,8 +12,6 @@ OroCommerce provides the following tools for streamlined communication inside an
 
    log_calls
 
-   add_notes
-
    add_attachments
 
    add_comments

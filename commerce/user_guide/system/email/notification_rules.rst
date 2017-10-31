@@ -70,7 +70,7 @@ From the grid you can:
 
 - Delete a notification rule from the system: |IcDelete|.
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the notification rule: |IcEdit|.
+- Get to the edit form of the notification rule: |IcEdit|.
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

@@ -36,7 +36,7 @@ General Information Section
     a single entity. The field will appear in the system as soon as it has been added and no :ref:`schema update <schema-update>` is required.
   
     .. important:: 
-      Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, report and chart generation, data audit, creation of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
+      Serialized fields cannot be used for :ref:`grid filters <user-guide--business-intelligence--filters-management>`, report and chart generation, data audit, creation of :ref:`segments <user-guide--business-intelligence--filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
   
       Serialized fields cannot be used for files, multi-selects or option sets.
   
@@ -173,7 +173,7 @@ Other
   "
   "**Show on Grid**","If set to *Yes*, the field will be displayed in a separate column of the respective grid."
   "**Show Grid Filter**","Not available for serialized fields. If set to *Yes*, a corresponding filter will be added to 
-  :ref:`grid filters <doc-grids-actions-filters>` by default."
+  :ref:`grid filters <user-guide--business-intelligence--filters-management>` by default."
   "**Show on Form**","If set to *Yes*, the field value appears as editable on record edit pages."
   "**Show on View**","If set to *Yes*, the field is displayed on record view pages."
   "**Priority**","Defines an order of custom fields on entity record view, edit, and create pages, and on the respective 

@@ -15,14 +15,14 @@ To set up a sample promotion, we go through the following steps:
 Set up a Segment with Products to Promote
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To set up such promotion in the management console, we first need to make sure that a :ref:`product segment <user-guide-filters-segments>` is created that would :ref:`include the items intended for sale <user-guide--new-arrivals>`.
+To set up such promotion in the management console, we first need to make sure that a :ref:`product segment <user-guide--business-intelligence--filters-segments>` is created that would :ref:`include the items intended for sale <user-guide--new-arrivals>`.
 
 
 **To set up such segment:**
 
 1. Navigate to **Reports&Segments** in the main menu and click **Manage Segments**.
 2. Click **Create Segment** in the top right corner.
-3. Create a *Sale* :ref:`segment <user-guide-filters-segments>`, populate it with the products for sale and save it.
+3. Create a *Sale* :ref:`segment <user-guide--business-intelligence--filters-segments>`, populate it with the products for sale and save it.
 
    As an example, we added four products to the segment.
 

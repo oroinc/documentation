@@ -3,7 +3,7 @@
 Understanding Quote Workflows
 -----------------------------
 
-.. note:: For general information on using workflows, see the :ref:`Following a Workflow <user-guide-workflow-management-basics>` guide.
+.. note:: For general information on using workflows, see the :ref:`Workflow Management <user-guide--system--workflow-management>` section.
 
 Quote workflows lead a sales person through the process of gaining agreement with a buyer on a quote. Backoffice workflows control the actions available in the management console.
 

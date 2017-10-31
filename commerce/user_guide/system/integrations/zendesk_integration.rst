@@ -97,13 +97,15 @@ Activate the Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 Initially the integration is inactive. In order to activate it, click the :guilabel:`Activate` button on the integration
-:ref:`view page <user-guide-ui-components-view-pages>`.
+view page.
 
 Edit the Integration
 ^^^^^^^^^^^^^^^^^^^^
 
 All the integrations created will be available in the **Integrations** grid (**System > Integrations > Manage
-Integrations**. You can delete or edit the integration details. See :ref:`Delete a Record <doc-grids-actions-records-delete>` and :ref:`Edit a Record <doc-grids-actions-records-edit>`
+Integrations**. You can delete or edit the integration details.
+
+.. See :ref:`Delete a Record <doc-grids-actions-records-delete>` and :ref:`Edit a Record <doc-grids-actions-records-edit>`
 
 .. image:: ../img/zendesk/zendesk_edit.png
 
@@ -121,7 +123,7 @@ synchronization manually from OroCRM:
 
 - Go to the **System>Integrations>Manage Integrations**, and click the |BSchedule| **Reset** button.
 
-- Alternatively, go to the integration :ref:`view page <user-guide-ui-components-view-pages>`, and click the :guilabel:`Schedule Sync` button.
+- Alternatively, go to the integration view page, and click the :guilabel:`Schedule Sync` button.
   *A sync* :ref:`job <book-job-execution>` *has been added to the queue. Check progress.* note will appear.
 
 The data is now being synchronized. You can click the **Check progress** link to see the synchronization status.
@@ -253,7 +255,7 @@ Synchronization from OroCRM to Zendesk
 """"""""""""""""""""""""""""""""""""""
 
 If two-way synchronization is enabled, :guilabel:`Publish to Zendesk` will be available in the Case 
-:ref:`View page <user-guide-ui-components-view-pages>`. Click the button and the case will be submitted to Zendesk.
+view page. Click the button and the case will be submitted to Zendesk.
 
 The case fields are mapped to the Zendesk ticket fields as follows:
 

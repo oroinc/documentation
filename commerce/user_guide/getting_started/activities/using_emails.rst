@@ -354,7 +354,7 @@ Note that the **Owner** box is only available for the entities with the ownershi
 
 Click **Save and Close** when you have finished configuring the rule.
 
-All available rules are displayed in the **All Notification Rules** :ref:`grid <doc-grids>` in **System>Emails>Notification Rules**.
+All available rules are displayed in the **All Notification Rules** grid in **System>Emails>Notification Rules**.
 
 .. image:: /user_guide/img/getting_started/emails/notification_rules_grid.jpg
 
