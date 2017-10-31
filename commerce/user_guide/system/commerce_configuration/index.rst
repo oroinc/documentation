@@ -59,6 +59,8 @@ This section contains information on the system configuration options specific f
    sales_info
 
    guest_access_overview
+   
+   mass_add_shopping_list
 
    design/index
 
