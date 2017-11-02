@@ -51,7 +51,7 @@ Please navigate to the following sections for the complete list of topics:
 
    extend_and_customize/index
 
-   integration/index
+   web_api/index
 
    theme/index
 
