@@ -18,7 +18,7 @@ This guide provides an overview of OroPlatform architecture, design and key feat
    background_tasks/index
    functional_tests
    scale_nodes
-   data_api
+   web_api/index
    db_optimization
    impersonation
    cookbook/index

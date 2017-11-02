@@ -60,7 +60,7 @@ To start using the API, you must take a few preliminary steps:
 
     3.  Click the :guilabel:`Generate Key` button. You will see the generated key near the button, it will look like: 'dd1c18d06773cc377c9df6166c54c6e5fefa50fa'.
 
-.. image:: ./img/api/api_generateapikey_myuser.png
+.. image:: ../img/api/api_generateapikey_myuser.png
 
 For more details about how to generate an API Key and authentication header, please see the
 
@@ -91,7 +91,7 @@ The sandbox page is available at: ``http://<hostname_of_your_oro_application>/ap
 
 |
 
-.. image:: ./img/api/api_plain_generalview.png
+.. image:: ../img/api/api_plain_generalview.png
 
 |
 
@@ -103,7 +103,7 @@ link in the upper left-hand corner of the sandbox page.
 
 |
 
-.. image:: ./img/api/api_jsonlink.png
+.. image:: ../img/api/api_jsonlink.png
 
 |
 
@@ -111,7 +111,7 @@ On the JSON.API sandbox page you will see the list of available resources.
 
 |
 
-.. image:: ./img/api/api_json_generalview.png
+.. image:: ../img/api/api_json_generalview.png
 
 |
 
@@ -119,7 +119,7 @@ To review available methods for the resource, click the resource row or the :gui
 
 |
 
-.. image:: ./img/api/api_json_listmethods.png
+.. image:: ../img/api/api_json_listmethods.png
 
 |
 
@@ -128,7 +128,7 @@ To review the documentation and access the sandbox, click the method row for a s
 
 |
 
-.. image:: ./img/api/api_json_methodsb.png
+.. image:: ../img/api/api_json_methodsb.png
 
 |
 
@@ -963,7 +963,7 @@ in a single request.
 
 All included resources will be represented in **included** section at the end of the response body.
 
-.. image:: ./img/api/api_filter_included.png
+.. image:: ../img/api/api_filter_included.png
 
 
 .. important::
@@ -1547,7 +1547,16 @@ Example. Invalid **Content-Type**
 
 For more information about the API client requirements, see the `JSON Specification <http://jsonapi.org/format/#content-negotiation-clients>`__.
 
+See Also
+========
 
-.. |IcView| image:: ./img/buttons/IcView.png
-   :align: middle
+Find more information about Web API in the following topics:
+
+.. toctree::
+   :maxdepth: 2
+
+   api_docs/index
+
+.. include:: ../../img/buttons/include_images.rst
+   :start-after: begin
 
