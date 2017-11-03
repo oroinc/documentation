@@ -184,7 +184,7 @@ You can use the following elements to build the expression that identifies the c
 * Attributes and data structures listed in the `Attributes Supported in Promotion Expressions`_, e.g. subtotal > 100000 or lineItems.all(lineItem.quantity > 1000).
 
   - Use *lineItems.all(expression)* and *lineItems.any(expression)* to assess the collection of line items (products and their quantity, units, price, weight, and dimensions) in the order, quote or request for quote. Inside the expression, use *lineItem.product.<fieldname>* phrase to access the product field value. Separate the field from the item with a period.
-  - Use lineItems.sum(expression) to sum up results of complex calculations that use the collection items and their properties as parameters. For example, you can get a total weight of the order using the following expression: *lineItems.sum(lineItem.weight *lineItem.quantity)*.
+  - Use lineItems.sum(expression) to sum up results of complex calculations that use the collection items and their properties as parameters. For example, you can get a total weight of the order using the following expression: *lineItems.sum(lineItem.weight.value * lineItem.quantity)*.
   - Outside the collection operations, you can assess an element of the array using *item[id].fieldname* phrase (e.g. lineItems[1].product.price > 1000.00). Separate the field from the item with a period.
 
 See more information about using collections in the **Collection Validation** section below.
