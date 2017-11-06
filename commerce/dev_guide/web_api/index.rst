@@ -1525,8 +1525,8 @@ For more information about the API client requirements, see the `JSON Specificat
    :start-after: begin
 
 
-See Also
-========
+Developer's Reference to Oro APIBundle
+--------------------------------------
 
 Find more information about Web API in the following topics:
 
