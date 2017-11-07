@@ -15,7 +15,7 @@ See the following sections for more information:
 
 * :ref:`Call View Page <doc-activities-calls-view-page>`
 
-* :ref:`Recent Calls Widget <doc-widgets-recent-calls>`
+* :ref:`Recent Calls Widget <user-guide--business-intelligence--widgets--recent--calls>`
 
 .. toctree::
    :maxdepth: 1

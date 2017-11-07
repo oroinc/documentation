@@ -16,7 +16,7 @@ See the following topics for more information:
 .. toctree::
     :maxdepth: 1
 
-    business_intelligence_dashboards
+    business_intelligence_dashboards_widgets/index
     business_intelligence_segments
     business_intelligence_filters
     reports/index

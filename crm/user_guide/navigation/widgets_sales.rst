@@ -33,7 +33,7 @@ at any point in time:
 
 -  Opportunity-generating campaigns
 
--  Campaigns by Close Revenue and others.
+-  Campaigns by close revenue and others.
 
 You can read more on how to create and manage dashboards in :ref:`this <user-guide-dashboards>` section
 of the guide.
@@ -44,38 +44,21 @@ Add Widgets
 -  To add a new widget, click **Add Widget** in the top right corner of
    the dashboard:
 
-|
-
 .. image:: ../img/widgets/add_widget_button.png
-
-|
-
-
 
 -  To search for a widget, type its name in the search field.
  
-|
-
 .. image:: ../img/widgets/business_sales_channel_statistics.png
-
-|
-
-
 
 -  To add a new widget from the list, click **Add**.
 
-|
-
 .. image:: ../img/widgets/widgets_list.png
-
-|
 
 
 
 .. note:: You can add the same widgets a number of times and assign them different owners.
  
   
-
 Manage Widgets
 --------------
 
@@ -171,17 +154,11 @@ Lead Statistics
 
 The Lead Statistics widget displays a set of metrics that indicate performance of the lead pipeline.
 
-|
 
 .. image:: ../img/widgets/lead_statistics_1.png
 
-|
-
-|
-
 .. image:: ../img/widgets/lead_statistics_2.png
 
-|
 
 Opportunities Statistics 
 ^^^^^^^^^^^^^^^^^^^^^^^^

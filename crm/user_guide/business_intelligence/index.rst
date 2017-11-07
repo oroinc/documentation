@@ -12,7 +12,7 @@ related trends, and segmentation tools help users focus on a specific part of th
 .. toctree::
     :maxdepth: 1
 
-    business_intelligence_dashboards
+    business_intelligence_dashboard_widgets/index
     business_intelligence_segments
     business_intelligence_filters
     reports/business_intelligence_reports
