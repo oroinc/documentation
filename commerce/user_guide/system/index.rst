@@ -18,6 +18,8 @@ This section contains information on optional OroCommerce post-install configura
 
    /user_guide/system/localization/index
 
+   /user_guide/system/tags_management/index
+
    /user_guide/system/workflows/index
 
    /user_guide/system/menu/index

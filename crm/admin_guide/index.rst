@@ -26,7 +26,7 @@ Please note that in many cases, the tools may be not available to the usual user
 
 * :doc:`/admin_guide/record_mgmt_config/index`
 
-  * :doc:`/admin_guide/record_mgmt_config/tag_management`
+  * :doc:`/admin_guide/record_mgmt_config/tags_management/index`
 
   * :doc:`/admin_guide/record_mgmt_config/workflow_management`
   
