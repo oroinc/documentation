@@ -9,6 +9,18 @@ Images
 
    <i class="fa fa-close fa-lg" aria-hidden="true"></i>
 
+.. |IcCollapse| raw:: html
+
+   <i class="fa fa-minus-square-o fa-lg" aria-hidden="true"></i>
+
+.. |IcExpandPlus| raw:: html
+
+   <i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i>
+
+.. |IcMoveArrow| raw:: html
+
+   <i class="fa fa-arrows fa-lg" aria-hidden="true"></i>
+   
 .. |IcMarkProcessed| raw:: html
 
    <i class="fa fa-archive fa-lg" aria-hidden="true"></i>
