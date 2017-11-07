@@ -421,6 +421,14 @@ In addition, any discounts applied ot the order will be displayed in the **Total
 .. image:: /frontstore_guide/img/orders/CouponCodeCheckout3.png
 
 
+Re-Order Option
+^^^^^^^^^^^^^^^
+
+.. include:: /frontstore_guide/orders/re-order.rst
+   :start-after: begin
+   :end-before: finish
+
+
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
 
@@ -430,6 +438,7 @@ In addition, any discounts applied ot the order will be displayed in the **Total
    :maxdepth: 1
 
    sample_guest_checkout
+   re-order
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
