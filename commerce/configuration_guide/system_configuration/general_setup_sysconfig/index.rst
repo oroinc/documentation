@@ -10,7 +10,13 @@ Learn how to configure localization options, currency and tracking, as well and 
 * :ref:`Display Settings <configuration--general-setup--display-settings>`
 * User Settings
 * :ref:`Tracking <admin-configuration-tracking-settings>`
-* Upload Settings
+* :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings>`
 * :ref:`Email Configuration <admin-configuration-email-configuration>`
 
 
+.. toctree::
+   :hidden:
+
+   upload_settings
+   upload_settings_globally
+   upload_settings_organization

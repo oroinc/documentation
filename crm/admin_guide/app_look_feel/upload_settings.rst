@@ -15,4 +15,4 @@ In **System>Configuration>System Configuration>General Setup>Upload Settings**, 
 
 
 
-If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the settings will be applied only if that mime type list is empty.
+If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding settings configured both globally and per organization.

@@ -23,6 +23,8 @@ GeneralSetup
 :ref:`Display Settings <configuration--general-setup--display-settings>`
 :ref:`Tracking <admin-configuration-tracking-settings>`
 :ref:`Email Configuration <admin-configuration-email-configuration>`
+:ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings>`
+
 
 Integrations
 ^^^^^^^^^^^^

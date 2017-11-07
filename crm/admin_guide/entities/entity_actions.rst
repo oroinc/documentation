@@ -145,7 +145,7 @@ Create an Entity
    
    - **Max Allowed File Size, Mb**—Type the upper limit of an attachment size. Attachments whose size exceeds the specified value will not be allowed.
      
-   - **Allowed Mime Types**—Enter the list of supported MIME types. If this field is left empty, the list defined in the system upload settings (see `Upload Settings <../app-look-feel/system-config#admin-configuration-uploads>`__ ) will be used.
+   - **Allowed Mime Types**—Enter the list of supported MIME types. If this field is left empty, the list of MIME types defined in the system configuration (see `Upload Settings <../app-look-feel/system-config#admin-configuration-uploads>`__ ) will be applied.
      
      The format of MIME types must follow these examples: application/pdf, image/\*
  

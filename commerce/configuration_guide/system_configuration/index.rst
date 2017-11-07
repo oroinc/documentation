@@ -34,7 +34,7 @@ This section of the configuration guide introduces you to the general applicatio
                 <ul class="guideline__list">
                      <li>User Settings</li>
                      <li><a class="reference internal" href="../../marketing/configuration/tracking_settings#admin-configuration-tracking-settings"><span class="std std-ref">Tracking</span></a></li> 
-                     <li>Upload Settings <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i></li> 
+                     <li><a class="reference internal" href="./general_setup_sysconfig/upload_settings.html#configuration-guide-system-configuration-general-setup-sysconfig-upload-settings">Upload Settings</a><i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i></li>
                      <li><a class="reference internal" href="../email/email_configuration_settings#admin-configuration-email-configuration"><span class="std std-ref">Email Configuration</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i></li> 
                     </ul>
     
