@@ -32,4 +32,6 @@ Customizing Oro Features
 
    payment_method_add
 
+   integration
+
    installer_generate

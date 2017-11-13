@@ -1,9 +1,7 @@
 How to Create an Integration
 ============================
 
-Sometimes you need to integrate data from external systems into your application. For example,
-imagine that you have another application where tasks can be created that you want to sync with
-your Oro application. OroPlatform provides means to achieve a seamless integration of third-party systems through the `OroIntegrationBundle`_.
+To integrate data from external systems into your Oro application (e.g. pull and/or push data about tasks, calendar events, or buyers interactions) and/or set up an ongoing synchronization, use the `OroIntegrationBundle`_.
 
 Basic Implementation and Configuration
 --------------------------------------
@@ -126,7 +124,7 @@ Connect the Data to Your Entities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. note::
-   Please note that this step is necessary when you need to import-export data between your database and the third-party system (e.g. synchronize tasks created in your Oro instance and other application, import/export cart items). Omit this step if you use this instruction to add an integration that requests and receives only credentials/tokens and a short list of available options.
+   Please note that this step is necessary when you need to import-export data between your database and the third-party system (e.g. synchronize tasks created in your Oro instance and other application, import/export cart items). Omit this step if you use this instruction to add an integration with a payment or shipping provider and you plan to request and receive only credentials/tokens and a short list of available options.
 
 Your final step is to implement the :class:`Oro\\Bundle\\IntegrationBundle\\Provider\\ConnectorInterface`:
 
