@@ -24,14 +24,7 @@ This article describes how to define and edit the integration and synchronizatio
 On the Magento Side
 -------------------
 
-The integration is made possible with the OroCRM Bridge Magento Extension. The OroCRM Bridge can be installed through
-the MagentoConnect.
-
-      |
-	  
-.. image:: ../img/magento_integration/oro_bridge.png
-
-|
+The integration is made possible with the OroCRM Bridge Magento Extension. The OroCRM Bridge can be installed through MagentoConnect.
 
 Once the extension has been successfully installed, you need to login to your Magento account and to set up a SOAP API
 user within Magento, as described below:
@@ -39,7 +32,7 @@ user within Magento, as described below:
 
 .. note::
 
-    The integration can also be created without installation of the OroCRM Bridge Magento Extenstion, however the
+    The integration can also be created without installation of the OroCRM Bridge Magento Extension, however the
     synchronization will then take longer, and some options, such as two-way synchronization, and synchronization of
     the custom records data will not be available.
 
@@ -47,104 +40,64 @@ user within Magento, as described below:
 Define a New Role
 ^^^^^^^^^^^^^^^^^
 
-- Once logged in, go to the **System>Web Services>SOAP/XML - RPC - Roles**
+1. Once logged in, go to the **System > Web Services > SOAP/XML - RPC - Roles**
 
-  |
+   .. image:: ../img/magento_integration/magento_01.png
   
-.. image:: ../img/magento_integration/magento_01.png
+2. On the table of all roles, click **Add New Role**
 
-|
+   .. image:: ../img/magento_integration/magento_02.png
+ 
+3. Define the Role Name that corresponds to your eCommerce store.
+
+   .. image:: ../img/magento_integration/magento_03.png
+
+4. Click **Save Role**. The role will be saved and you will get to the page of the role.
+
+5. Click  the **Role Resources** on the left.
   
-- You will get to the Roles grid. Click the :guilabel:`Add New Role`
+   .. image:: ../img/magento_integration/magento_04.png
 
-  |
-  
-.. image:: ../img/magento_integration/magento_02.png
+6. In the Roles Resources section, set the **Resource Access** field value to **All** and save the role.
 
-|
-  
-- Define the Role Name that corresponds to your eCommerce store.
-
-  |  
-
-.. image:: ../img/magento_integration/magento_03.png
-
-|
-
-- Click the :guilabel:`Save Role` button. The role will be saved and you will get to page of the role.
-
-  .. hint::
-
-      You can also click the role name in the grid at any time to get to the page of the role.
-
-- Click  the :guilabel:`Role Resources` on the left.
-
-  |
-  
-.. image:: ../img/magento_integration/magento_04.png
-
-|
-
-- In the Roles Resources section, set the **Resource Access** field value to **All** and save the role.
-
-  |
-  
-.. image:: ../img/magento_integration/magento_05.png
+   .. image:: ../img/magento_integration/magento_05.png
 
 
 Define a New User
 ^^^^^^^^^^^^^^^^^
 
-- Go to the **System>Web Services>SOAP/XML - RPC - Users**
+1. Go to the **System > Web Services > SOAP/XML - RPC - Users**
 
-- You will get to the Users grid. Click the :guilabel:`Add New User` button.
+2. You will get to the Users page. Click **Add New User**.
 
-- Define the following fields:
+3. Define the following fields:
 
+   .. csv-table::
+     :header: "Field", "Description"
+     :widths: 10, 30
+    
+     "**User Name**","The name used for login into the account."
+     "**First Name**","The first part of the name displayed in the system to refer to the user."
+     "**Last Name**","The last part of the name displayed in the system to refer to the user."
+     "**Email**","The email address of the user."
+     "**API Key**","Define a password for the account. The key shall be at least 6 symbols long."
+     "**API Key Confirmation**","Confirm the password."
+     "**The account is**","Set the value to **Active** in order to use the user account created."
 
-  .. csv-table::
-    :header: "Field", "Description"
-    :widths: 10, 30
+4. Save the user.
 
-    "**User Name***","The name used for login into the account."
-    "**First Name***","The first part of the name displayed in the system to refer to the user."
-    "**Last Name***","The last part of the name displayed in the system to refer to the user."
-    "**Email***","The email address of the user."
-    "**API Key***","Define a password for the account. The key shall be at least 6 symbols long."
-    "**API Key Confirmation***","Confirm the password."
-    "**The account is**","Set the value to **Active** in order to use the user account created."
+   .. image:: ../img/magento_integration/magento_06.png
 
-- Save the user created.
+5. The user account will be saved and you will get to page of the user.
+6. Click  the **User Role** on the left
 
-  |
+   .. image:: ../img/magento_integration/magento_07.png
+
+7. Select the role that you have created for your store.
   
-.. image:: ../img/magento_integration/magento_06.png
+   .. image:: ../img/magento_integration/magento_08.png
 
-|
-
-- The user account will be saved and you will get to page of the user.
-
-.. hint::
-
-    You can also click the user name in the grid at any time to get to the page of the Role.
-
-- Click  the :guilabel:`User Role` on the left
-
-  |
-  
-.. image:: ../img/magento_integration/magento_07.png
-
-|
-
-- Select the role that you've created for your store above.
-
-  |
-  
-.. image:: ../img/magento_integration/magento_08.png
-
-|
-
-- Click  the :guilabel:`Save User` button in the top right corner.
+8. Click **Save User** on the top right.
 
 
 .. _user-guide-magento-channel-integration-details:
@@ -152,56 +105,41 @@ Define a New User
 Enable WSDL Cache
 ^^^^^^^^^^^^^^^^^
 
-In order to accelerate performance of initial sync, please make sure WSDL cache is enabled in Magento configuration. 
+In order to accelerate the performance of the initial sync, please make sure WSDL cache is enabled in the Magento configuration. 
 
 To enable the cache:
 
-- Go to the **System>Configuration**
+1. Go to the **System > Configuration**
+2. Go to the **Services** section in the tab on the left.
+3. Click on the **Magento Core API** link
 
-- Go to the **Services** section in the tab on the left.
+   |Services|
 
-- Click on the **Magento Core API** link
+4. Choose **Yes** in the **Enable WSDL Cache** field of the General Settings.
 
-  |
-  
-  |Services|
+   |EnableWSDL|
 
-- Choose **Yes** in the **Enable WSDL Cache** field of the General Settings.
+   .. hint::
 
-  |EnableWSDL|
-
-.. hint::
-
-    The CSV support is not supported for the initial import of Magento data to OroCRM, but if you have concern as for 
-    the impact the import might have on the production environment, you can set-up a staging instance with the latest 
-    production data, run initial synchronization on the environment and update the integration url to production once it 
-    has been done.
+     The CSV support is not supported for the initial import of Magento data to OroCRM, but if you have concerns regarding
+     the impact the import might have on the production environment, you can set up a staging instance with the latest 
+     production data, run initial synchronization on the environment and update the integration URL to production once it 
+     has been done.
 
 On the Oro Side
--------------------
+---------------
 
 Create Magento Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To create integration with Magento, create a channel of Magento type as described in the
-:ref:`Channels Management <user-guide-channel-guide-create>` guide.
+1. To create integration with Magento, create a channel of Magento type as described in the :ref:`Channels Management <user-guide-channel-guide-create>` guide.
+2. As soon as the channel type is set to **Magento**, a mandatory **Integration** field  will appear in the **General** section.
+  	  
+   .. image:: ../img/magento_integration/configure_integration.png
 
-As soon as the channel type is set to **Magento**, a mandatory **Integration*** field  will appear in the **General**
-section.
+3. Click the **Configure integration** link. The form will emerge.
 
-      |
-	  
-.. image:: ../img/magento_integration/configure_integration.png
-
-|
-
-Click the **Configure integration** link. The form will emerge.
-
-     |
-
-.. image:: ../img/magento_integration/configure_integration_form.png
-
-|
+   .. image:: ../img/magento_integration/MagentoIntegrationCreate.png
 
 General Settings
 """"""""""""""""
@@ -212,32 +150,32 @@ Define the following details in the **General** section:
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Name***","The configuration name used to refer to the configuration within the system."
-  "**SOAP WSDL URL***","A URL of the SOAP v.2 WSDL source (this is the URL of your Magento installation plus
-  **api/v2_soap/?wsdl=1**). For example, if your installation were available at
-  *http://example.com/magento/index.php/*, the SOAP WSDL URL would be
-  *http://example.com/magento/index.php/api/v2_soap/?wsdl=1*."
-  "**SOAP API Key***","The API Key defined for the Magento user above."
-  "**SOAP API User***","The username defined for the Magento user above."
-  "**WS-I Compliance**","Defines whether `WS-I compliance
-  mode <http://www.magentocommerce.com/api/soap/wsi_compliance.html>`_ is enabled for the Magento store."
+  "**Name**","The configuration name used to refer to the configuration within the system."
+  "**SOAP WSDL URL**","A URL of the SOAP v.2 WSDL source (this is the URL of your Magento installation plus
+  **api/v2_soap/?wsdl=1**). For example, if your installation were available at http://example.com/magento/index.php, the SOAP WSDL URL would be http://example.com/magento/index.php/api/v2_soap/?wsdl=1."
+  "**SOAP API Key**","The API Key defined for the Magento user above."
+  "**SOAP API User**","The username defined for the Magento user above."
+  "**WS-I Compliance**","Defines whether `WS-I compliance mode <http://www.magentocommerce.com/api/soap/wsi_compliance.html>`_ is enabled for the Magento store."
+  "**Guest Customer Sync**","Checking this option will cause guest orders to be combined under a single customer based on email. If a registered customer exists with this email, all guest orders with this email will be attributed to that :ref:`account <user-guide-accounts>`."
   "**Sync start date**","Data will be synchronized as of the date defined."
 
-At this point, click :guilabel:`Check Connection`, to see if the settings defined above are correct.
+At this point, click **Check Connection**, to see if the settings defined above are correct.
+
 Once the connection details have been verified, the following fields will be filled with default settings.
 
 .. csv-table::
   :header: "Field", "Description"
   :widths: 10, 30
 
-  "**Website***","The list of all the Websites available for the shop. **All Websites** option is chosen by default.
+  "**Website**","The list of all the Websites available for the shop. **All Websites** option is chosen by default.
 
   You can edit the field value and choose one of the Websites available. Only entries of the selected Website are
   synchronized.
 
   Click **Sync website list** if the list of Websites is outdated."
   "**Admin url**","Optional field. A url to the administrator panel of the specified Magento store."
-  "**Default owner***","Specifies what users can manage the configuration, subject to the
+  "**Split by Full Name**","Separate customer accounts will be created for Magento customers with the specified email(s) during import. To enter multiple emails use semicolons or commas."
+  "**Default owner**","Specifies what users can manage the configuration, subject to the
   :ref:`access and permission settings <user-guide-user-management-permissions>`. By default is filled with the user 
   creating the integration."
 
@@ -251,15 +189,11 @@ Use the **Synchronization Settings** section to enable/disable two-way synchroni
 
 .. image:: ../img/magento_integration/synch_settings.png
 
-Check the **Enable Two Way Sync** box, if you want to download data both from Magento to OroCRM and
-back. If the box is unchecked, data from Magento will be loaded to OroCRM, but changes performed in OroCRM will not be
-loaded to Magento.
+Check the **Enable Two Way Sync** box, if you want to download data both from Magento to OroCRM and back. If the box is unchecked, data from Magento will be loaded to OroCRM, but changes performed in OroCRM will not be loaded to Magento.
 
-If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same
-customer details were edited from both OroCRM and Magento):
+If two-way synchronization is enabled, define the priority used for conflict resolution (e.g. if the same customer details were edited from both OroCRM and Magento):
 
 - **Remote wins**: Magento data will be applied to the both Magento and OroCRM.
-
 - **Local wins**: OroCRM data will be applied to the both Magento and OroCRM.
 
 
@@ -270,21 +204,19 @@ Edit the Integration
 
 To edit the integration details:
 
-- Go to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel and click **Edit** link by the
-  integration name.
+1. Go to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the channel and click **Edit** link by the integration name.
 
-  The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been
-  performed, it is impossible to change the Sync start date.
+   The integration form will appear. Priory defined settings will be shown in the form. Once synchronization has been
+   performed, it is impossible to change the Sync start date.
 
-  .. image:: ../img/magento_integration/edit_form.png
+   .. image:: ../img/magento_integration/MagentoIntegrationFillIn.png
 
-- Click :guilabel:`Done` button to save the changes
+2. Click **Done** button to save the changes
 
-  .. hint::
+   .. hint::
 
       To remove an integration from the system, go to the :ref:`Edit form <user-guide-ui-components-create-pages>`
       of the channel and click |IcCross| located next to the integration name
-
 
 .. _user-guide-magento-channel-start-synchronization:
 
@@ -294,24 +226,21 @@ Start Synchronization Manually
 Once integration has been created, the data will be automatically synchronized. However, you can also start the
 synchronization manually from OroCRM:
 
-- Go to **System>Integrations>Manage Integrations** and click the |BSchedule| **Reset** icon.
+1. Go to **System > Integrations > Manage Integrations**.
+2. Click the required integration on the list of integrations to open its page.
+3. Click **Schedule Sync**. 
 
-- Go to the :ref:`View page <user-guide-ui-components-view-pages>` of the channel and click the integration name link:
+   .. image:: ../img/magento_integration/MagentoIntegrationEdit.png
 
-  .. image:: ../img/magento_integration/edit_from_view.png
+4. The following note emerges:
 
-- The view page of the integration will appear.
+   *A sync* :ref:`job <book-job-execution>` *has been added to the queue. Check progress*.
+  
+   .. image:: ../img/magento_integration/MagentoIntegrationNote.png
 
-  .. image:: ../img/magento_integration/integration_view.png
+   This indicates data is being synchronized. You can click **Check progress** link to see the synchronization status.
 
-
-- Click :guilabel:`Schedule Sync`. *A sync* :ref:`job <book-job-execution>` *has been added to the queue.   Check progress.* note will appear.
-
-- The data is being synchronized. You can click **Check progress** link to see the synchronization status.
-
-After the successful synchronization, details of the Magento entity records defined for the channel will be loaded to 
-OroCRM and can be processed therein, for example cart can be converted, customer details can be edited and new customers
-can be added to the system.
+After successful synchronization, details of the Magento entity records defined for the channel will be loaded to OroCRM and can be processed therein, for example cart can be converted, customer details can be edited and new customers can be added to the system.
 
 .. important:: When you *create* a channel of Magento type, perform initial sync of the created Magento integration and later delete the channel, Magento Сustomers will be deleted but Accounts and Contacts will remain in the system. If you *re-create* the channel of Magento type, perform initial sync of the created Magento integration once more, Accounts and Contacts will be populated into the system again, doubling their quantity by duplicates. Please, be aware that this behavior is standard.
 

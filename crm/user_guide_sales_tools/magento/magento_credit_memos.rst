@@ -22,15 +22,15 @@ In your Oro application, Magento credit memos can be viewed on the view pages of
 
 - :ref:`Accounts <user-guide-accounts>`
 
-.. image:: /img/magento_entities/MagentoCreditMemoinAccounts.png
+.. image:: /img/magento_entities/MagentoCreditMemoinAccountsNew.png
 
 - :ref:`Magento customers <user-guide-magento-entities-customers>`
 
-.. image:: /img/magento_entities/MagentoCreditMemoCustomers.png
+.. image:: /img/magento_entities/MagentoCreditMemoCustomersNew.png
 
 - :ref:`Magento orders <user-guide-magento-orders-create>`
 
-.. image:: /img/magento_entities/MagentoCreditMemoOrder.png
+.. image:: /img/magento_entities/MagentoCreditMemoOrderNew.png
 
 .. note:: Please note that credit memos are generated on the Magento side and cannot be edited in your Oro application in any way.
 

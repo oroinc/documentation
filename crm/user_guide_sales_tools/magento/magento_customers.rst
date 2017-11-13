@@ -80,7 +80,7 @@ View Magento Orders
 
 You can view orders placed by a specific Magento customer on their view page in the Oro application by clicking **Sales > Magento Orders**, as illustrated below:
 
-.. image:: /img/magento_entities/MagentoCustomerOrdersTab.png
+.. image:: /img/magento_entities/MagentoCustomerOrdersTabNew.png
 
 The following information will be displayed:
 
@@ -103,6 +103,39 @@ You can perform the following actions with the orders on the view page of a Mage
 - To refresh the list of orders, click |IcRedo|
 - To reset the list of orders, click |IcRefresh|
 
+.. _user-guide-magento-recent-purchases:
+
+View Recent Magento Purchases
+-----------------------------
+
+You can get a quick overview of the products that a Magento customer recently purchased by clicking **Sales > Recently Purchased** on their view page. Newly purchased products appear on the list when a new order is created. By default, the most recently purchased products are displayed first. Products disappear from the list if an order is cancelled or deleted on the Magento side. 
+
+.. image:: /img/magento_entities/MagentoCustomerPurchases.png
+
+The following information will be displayed:
+
+- Order #
+- Created at
+- SKU
+- Name
+- Quantity
+- Price
+- Original Price
+- Discount Percent
+- Discount Amount
+- Tax Percent
+- Tax Amount
+- Row Total
+
+You can perform the following actions with the purchases on the view page of a Magento customer:
+
+- To open the view page of a specific purchase, click |IcView|
+- To select which information to display, click |IcSettings|.
+- To open filters, click |IcFilter|
+- To refresh the list of purchases, click |IcRedo|
+- To reset the list of purchases, click |IcRefresh|
+
+
 .. _user-guide-magento-carts:
 
 View Magento Carts
@@ -110,7 +143,7 @@ View Magento Carts
 
 In the Oro application, you can view carts related to a specific Magento customer on the their view page by clicking **Sales > Magento Shopping Carts**, as illustrated below:
 
-.. image:: /img/magento_entities/MagentoCreditMemoCartTab.png
+.. image:: /img/magento_entities/MagentoCreditMemoCartTabNew.png
 
 The following information will be displayed:
 
@@ -140,7 +173,7 @@ You can view :ref:`credit memos <user-guide--sales--magento-credit-memos>` relat
 
 To view memos on the view page of a selected Magento customer, click **Sales > Magento Credit Memos**, as illustrated below:
 
-.. image:: /img/magento_entities/MagentoCreditMemoCustomerPage2.png
+.. image:: /img/magento_entities/MagentoCreditMemoCustomerPage3.png
 
 The following information will be displayed:
 
