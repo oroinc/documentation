@@ -3,8 +3,7 @@ How to Create an Integration
 
 Sometimes you need to integrate data from external systems into your application. For example,
 imagine that you have another application where tasks can be created that you want to sync with
-OroCRM. OroPlatform provides means to achieve a seamless integration of other applications through
-the `OroIntegrationBundle`_.
+your Oro application. OroPlatform provides means to achieve a seamless integration of third-party systems through the `OroIntegrationBundle`_.
 
 Basic Implementation and Configuration
 --------------------------------------
@@ -15,6 +14,7 @@ skeleton:
 * :ref:`Create a new Channel <cookbook-integration-channel>`
 * :ref:`Read the Data Using a Transport <cookbook-integration-transport>`
 * :ref:`Connect the Data to Your Entities <cookbook-integration-connector>`
+
 
 .. _cookbook-integration-channel:
 
@@ -125,6 +125,9 @@ channel:
 Connect the Data to Your Entities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. note::
+   Please note that this step is necessary when you need to import-export data between your database and the third-party system (e.g. synchronize tasks created in your Oro instance and other application, import/export cart items). Omit this step if you use this instruction to add an integration that requests and receives only credentials/tokens and a short list of available options.
+
 Your final step is to implement the :class:`Oro\\Bundle\\IntegrationBundle\\Provider\\ConnectorInterface`:
 
 ``getLabel()``
@@ -184,13 +187,6 @@ the connector's ``getType()`` method:
                 tags:
                     - { name: oro_integration.connector, channel_type: app_channel, type: task }
 
-Going Deeper
-------------
 
-Reverse Synchronization
-~~~~~~~~~~~~~~~~~~~~~~~
 
-Setting the Default Owner for Imported Entities
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. _`OroIntegrationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/IntegrationBundle/
+.. _`OroIntegrationBundle`: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/
