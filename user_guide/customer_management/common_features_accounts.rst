@@ -85,7 +85,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
 
 2. The **General** section is for general details of the account, such as its name, tags, description and all the contacts assigned to the account.
 
-   .. image:: ../img/accounts/accounts_view_general.png
+   .. image:: ../img/accounts/account_view_general_new.png
 
 3. The **Activity** section includes any :ref:`activities <user-guide-activities>` related to the account, such as attachments, calls, calendar events, notes, emails or tasks (if available).
 
@@ -101,7 +101,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
 
 5.  The **Sections with channel names**. Each section contains details of all the customers that are assigned to this account and belong to the specified channel (e.g. Sales, Magento, OroCommerce).
 
-    .. image:: ../img/accounts/accounts_view_channels.png
+    .. image:: ../img/accounts/accounts_view_channels_new.png
   
     .. note:: The number and names of such sections depend on the number and names of OroCRM channels and customer records assigned to the account. The type of channels can vary depending on your configurations and integrations (e.g. Sales, Magento, Commerce).
 
@@ -113,10 +113,11 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
 
       1. The *General Info* subsection has the general information on the Magento customer related to the account (e.g. name, email, customer group, website, etc.)
       2. The *Magento Orders* subsection lists all the :ref:`orders <user-guide-magento-orders-create>` related to the account.
-      3. The *Magento Shopping Carts* subsection shows the details of the :ref:`shopping carts <user-guide-magento-carts-create>` related to the account.
-      4. The *Magento Credit Memos* subsection is for :ref:`credit memo <user-guide--sales--magento-credit-memos>` and order details, such as the store from which the order has been placed, order number, the amount refunded, etc.
+      3. The *Recent Purchases* subsection gives a quick overview of the products that the customer recently purchased. Products disappear from the list if an order is cancelled or deleted on the Magento side.
+      4. The *Magento Shopping Carts* subsection shows the details of the :ref:`shopping carts <user-guide-magento-carts-create>` related to the account.
+      5. The *Magento Credit Memos* subsection is for :ref:`credit memo <user-guide--sales--magento-credit-memos>` and order details, such as the store from which the order has been placed, order number, the amount refunded, etc.
 
-     .. image:: ../img/accounts/account_subsections_new.png
+     .. image:: ../img/accounts/account_subsections_new2.png
 
     * Within the **Sales** Channel section you will be able to see:
 
