@@ -37,6 +37,24 @@ The brand has been assigned to the product and should now be available in the fr
 
 .. image:: /user_guide/img/products/products/BrandFrontStore.png
 
+Make a Brand Filterable
+-----------------------
+
+Once a brand has been created and assigned to a product, you may set it filterable for the customers to narrow down their search and navigate through your webstore in a more efficient and simple way.
+
+1. Navigate to **Products > Product Attributes** in the main menu.
+2. Click the **brand** attribute or |IcEdit| at the end of the row to edit the attribute.
+3. In the **Frontend options** section, set the **Filterable** option to **Yes**.
+
+   .. image:: /user_guide/img/products/products/brand_filters_2.png
+
+4. Click **Save and Close**.
+
+The brand filter is now available in the front store.
+
+ .. image:: /user_guide/img/products/products/brand_filters_1.png
+
+
 .. stop_products_actions_manage_brand
 
 .. include:: /user_guide/include_images.rst
