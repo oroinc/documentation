@@ -100,7 +100,7 @@ To add a new simple product and make it available in the master catalog (for int
 
 #. In the **Inventory** section, provide the following information: 
 
-.. start_inventory
+   .. start_inventory
 
    .. csv-table::
       :header: "Field","Description"
@@ -121,10 +121,12 @@ To add a new simple product and make it available in the master catalog (for int
        When both **Decrement Inventory** and **Backorders** are enabled, a product quantity may become negative."
       "**Minimum Quantity to Order**","A minimum quantity that a buyer or sales person can claim in the RFQ, customer order, quote, or a shopping list."
       "**Maximum Quantity to Order**","A maximum quantity that a buyer or sales person can claim in the RFQ, customer order, :ref:`quote <user-guide--sales--quotes>`, or a shopping list."
+      "**Is Upcoming**", "This option informs a customer that the product of the selected category is not in stock currently, but will be available later. When set to *Yes*, additional **Availability Date** displays. "
+      "**Availability Date**", "The date which indicates the exact date and time since when the selected product will be available in stock."
 
-.. finish_inventory
+   .. finish_inventory
 
-   .. image:: /user_guide/img/products/products/SimpleProductInventory.png
+   .. image:: /user_guide/img/products/products/simple_product_inventory.png
       :class: with-border
 
 12. In the **Product Price** section, add fixed product prices. Note that fixed prices override the automatically generated :ref:`price lists <user-guide--pricing>`.
