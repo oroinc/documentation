@@ -15,7 +15,7 @@ The following topics will delve into how to view, create and manage promotions i
 Configure Promotions
 --------------------
 
-.. include:: /user_guide/marketing_promotions/configuration/index.rst
+.. include:: /configuration_guide/landing_commerce/sales/promotions/index.rst
    :start-after: begin
 
 Create Promotions
@@ -49,8 +49,6 @@ Related Topics
 
 .. toctree::
    :hidden:
-
-   configuration/index
 
    create
 

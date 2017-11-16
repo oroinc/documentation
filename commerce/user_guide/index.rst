@@ -149,7 +149,7 @@ Table of Contents
 
    business_intelligence/index
 
-   system/index
+   glossary
 
 ..   install/index
 

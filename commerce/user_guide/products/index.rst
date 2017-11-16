@@ -108,8 +108,6 @@ Simplify Purchase Choices and Increase Sales
    :hidden:
    :maxdepth: 1
 
-   configuration/index
-
    configure_product_details
 
    product_brands

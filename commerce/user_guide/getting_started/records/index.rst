@@ -27,7 +27,7 @@ When a new customer is added to the system, their record is created and values o
 New records can be created and the existing record can be updated both manually and automatically
 (as a result of integration with third-party systems).
 
-With the `access settings <./access-roles-management>`__ you can define who is
+With the access settings you can define who is
 able to view, update, delete, and create records of specific entities.
 
 How Entities Can Be Related

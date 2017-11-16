@@ -39,21 +39,21 @@ Configure cross-sell products globally, per website and organization.
 Enable Cross-Sell Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/products/configuration/cross_sell_items/global_cross_sell_items.rst
+.. include::/configuration_guide/products/cross_sell_items/global_cross_sell_items.rst
    :start-after: begin_cross_sell_items_body
    :end-before: finish_cross_sell_items_body
 
 Enable Cross-Sell Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/products/configuration/cross_sell_items/organization_cross_sell_items.rst
+.. include:: /configuration_guide/landing_commerce/product/products/cross_sell_items/organization_cross_sell_items.rst
    :start-after: begin_cross_sell_items_body
    :end-before: finish_cross_sell_items_body
 
 Enable Cross-Sell Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/products/configuration/cross_sell_items/website_cross_sell_items.rst
+.. include:: /configuration_guide/landing_commerce/product/products/cross_sell_items/website_cross_sell_items.rst
    :start-after: begin_cross_sell_items_body
    :end-before: finish_cross_sell_items_body
 

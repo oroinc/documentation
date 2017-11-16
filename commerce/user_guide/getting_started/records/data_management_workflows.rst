@@ -37,7 +37,7 @@ Each transition connects two steps.
 
 In the example below you can see a simple workflow of a document creation.
 
-.. image:: /user_guide/img/system/workflows/workflows/wf_example.png
+.. image:: /configuration_guide/img/workflows/workflows/wf_example.png
 
 The **workflow steps** are "Start" and squares (In progress, Under review, Finished) and correspond to the state of the 
 document. 
@@ -73,7 +73,7 @@ E.g. :guilabel:`Start From Lead` and :guilabel:`Start From Opportunity` that cre
 at the start of a Sales Process workflow.
 
 
-.. image:: /user_guide/img/system/workflows/workflows/wf_display_grid.png
+.. image:: /configuration_guide/img/workflows/workflows/wf_display_grid.png
 
 
 Button of all the transitions, for which pre-conditions (if any) are met, are displayed at
@@ -83,7 +83,7 @@ E.g. :guilabel:`Develop`, :guilabel:`Close As Won` and :guilabel:`Close As Lost`
 Process record qualified to an opportunity.
 
 
-.. image:: /user_guide/img/system/workflows/workflows/wf_display_view.png
+.. image:: /configuration_guide/img/workflows/workflows/wf_display_view.png
 
 .. _user-guide-worfklow-widget:
 
@@ -91,13 +91,13 @@ Process record qualified to an opportunity.
 The current step, or all the steps performed can be displayed on the entity grid, subject to the settings defined for 
 the entity in your organization (the *"Entity Management → Workflow Step on Grid"* settings).
 
-.. image:: /user_guide/img/system/workflows/workflows/wf_display_step.png
+.. image:: /configuration_guide/img/workflows/workflows/wf_display_step.png
 
 
 All the performed steps of the workflow are displayed at the **widget** on the top of the View pages of the entity 
 records, subject to the *Workflows → General → Show Ordered* and *Workflows → Designer → POSITION* settings.
 
-.. image:: /user_guide/img/system/workflows/workflows/wf_display_widget.png
+.. image:: /configuration_guide/img/workflows/workflows/wf_display_widget.png
 
 Conclusion
 ----------

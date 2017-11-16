@@ -5,6 +5,20 @@ Configuration Guide
 
 Oro Configuration Guide will walk your though all post-install configuration settings of the Oro application. In particular, you will learn how to set up general system configuration options, as well as settings specific for OroCommerce, OroCRM, and marketing.
 
+Before You Begin
+----------------
+
+Settings in Oro application can be managed on multiple configuration levels. Throughout the configuration guide, these levels are marked with the corresponding icons to help you navigate through the settings. You can find more information on levels and graphics in the following topics:
+
+* :ref:`Configuration Levels <configuration--guide--config-levels>`
+* :ref:`Configuration Levels Graphics <configuration--guide--config-graphics>`
+* :ref:`Configuration Option Quick Search <user-guide--system-configuration--quick-search>`
+
+Fundamental Configuration Settings
+----------------------------------
+
+.. note:: This section provide a reference for the settings accessible via the **System > Configuration** menu.
+
 .. raw:: html
 
    <div class="guideline">
@@ -49,58 +63,158 @@ Oro Configuration Guide will walk your though all post-install configuration set
       </div>
    </div>
 
-Configuration Levels
---------------------
 
-In Oro applications, you can manage all settings on multiple configuration layers:
 
-.. image:: /configuration_guide/img/landing/Levels.png
+Advanced Configuration Settings
+-------------------------------
 
-Based on the level where configuration has taken place, settings can fall back to other levels following the pattern below:
+.. note:: This section provide a reference for the settings accessible via the **System** menu (other than **System > Configuration**).
 
-* User settings can fall back either to system or organization settings.
-* Website settings can fall back to the system settings.
-* Organization settings can fall back to the system settings.
+.. raw:: html
 
-.. image:: /configuration_guide/img/landing/ConfigLevels.png
+   <div class="guideline">
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3><a class="reference internal" href="email#doc-email-configuration"><span class="std std-ref">Emails</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-However:
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="integrations#user-guide-integrations"><span class="std std-ref">Integrations</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-* When **Use System** check box is enabled on the configuration page of the required option, system settings override website or organization.
-* When **Use Organization** check box is enabled on the configuration page of the required option, organization settings override system.
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="tags_management#user-guide-system-tags-management"><span class="std std-ref">Tags</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-Configuration Level Graphics
-----------------------------
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+           <a class="reference internal" href="menu#doc-config-menus"><span class="std std-ref">Menus</span></a></p></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+   </div>
 
-By default, all configuration settings are available globally. Whenever you see the |IcOrganizationLevel| organization, |IcWebsiteLevel| website or |IcUserLevel| user icons, this means that the setting is also available on the organization, website or user level respectively.  
 
-.. container:: hidden
+.. raw:: html
 
-   .. image:: ./img/landing/system_config.png
-      :width: 0px
+   <div class="guideline">
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+            <a class="reference internal" href="workflows#user-guide-system-workflow-management"><span class="std std-ref">Workflow</span></a></h3>
+            </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-   .. image:: ./img/landing/commerce_config.png
-      :width: 0px
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="websites#user-guide-system-websites"><span class="std std-ref">Websites</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-   .. image:: ./img/landing/crm_config.png
-      :width: 0px
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="localization#sys-config-sysconfig-general-setup-localization"><span class="std std-ref">Localization</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-   .. image:: ./img/landing/marketing_config.png
-      :width: 0px
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="pricing#price-list-configuration"><span class="std std-ref">Pricing</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+   </div>
+
+.. raw:: html
+
+   <div class="guideline">
+
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="payment#doc-payment-configuration"><span class="std std-ref">Payments</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" style="background-color: #FFFFFF">
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+   </div>
+
+.. ref:`Entities Management <>`
 
 .. toctree::
    :includehidden:
    :titlesonly:
+   :hidden:
    :maxdepth: 1
 
-   system_configuration/index
-   commerce/index
-   crm/index
-   marketing/index
-     
+   landing_system_configuration/index
+   landing_commerce/index
+   landing_crm/index
+   landing_marketing/index
+   localization/index
+   pricing/index
+   email/index
+   integrations/index
+   payment/index
+   menu/index
+   workflows/index
+   tags_management/index
+   websites/index
 
-.. include:: /user_guide/include_images.rst
-   :start-after: begin
+.. entities/index
+
 
 
 

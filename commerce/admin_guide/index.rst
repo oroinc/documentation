@@ -18,10 +18,11 @@ This section contains information about OroCommerce configuration, administratio
    processes
    jobs
    cron
+   monitoring/index
 
 .. scheduled_tasks
 .. data_audit
-.. entities/index
+
 
 .. .. note:: Content is temporary unavailable due to severe maintenance works. Sorry for inconvenience.
  * Installation

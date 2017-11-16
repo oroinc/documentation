@@ -23,7 +23,7 @@ Overview
 System-wide Inventory Configuration
 -----------------------------------
 
-.. include:: /user_guide/inventory/configuration/index.rst
+.. include:: /configuration_guide/landing_commerce/inventory/inventory/index.rst
   :start-after: begin_configuration
   :end-before: finish_configuration
 

@@ -236,7 +236,7 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
              <ul class="guideline__list">
-                  <li><a href="current/community/release">Release Process</b></a></li>
+                  <li><a class="reference internal" href="community/release#"><span class="std std-ref">Release Process</span></a></li>
                </ul>
           </div>
       </div>

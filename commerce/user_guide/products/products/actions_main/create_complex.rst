@@ -19,7 +19,7 @@ Prior to creating a configurable product, ensure that you have performed the fol
 
 1. Created :ref:`attributes <products--product-attributes--create>`.
    
-   A configurable attribute is one of the product attributes that are used to distinguish :ref:`product variants <products--products--product variants>` of the same configurable product. There should be at least one configurable attribute specified for the configurable product in order to enable a customer to select product variants.
+   A configurable attribute is one of the product attributes that are used to distinguish :ref:`product variants <doc--products--actions--create>` of the same configurable product. There should be at least one configurable attribute specified for the configurable product in order to enable a customer to select product variants.
 
 2. Created a :ref:`product family <product--product-families--create>`.
    

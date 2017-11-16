@@ -13,17 +13,17 @@ This will look differently for various layout options:
 
 * **For tiles**:
 
-.. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsFrontstoreTiles.png
+.. image:: /configuration_guide/img/configuration/product/new_arrivals/NewArrivalsFrontstoreTiles.png
    :class: with-border
 
 * **For details**:
 
-.. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsFrontstoreDetails.png
+.. image:: /configuration_guide/img/configuration/product/new_arrivals/NewArrivalsFrontstoreDetails.png
    :class: with-border
 
 * **For compact details**:
 
-.. image:: /user_guide/img/system/configuration/product/new_arrivals/NewArrivalsFrontstoreCompactDetails.png
+.. image:: /configuration_guide/img/configuration/product/new_arrivals/NewArrivalsFrontstoreCompactDetails.png
    :class: with-border
 
 Mark a Product as a New Arrival
@@ -49,21 +49,21 @@ Configuring New Product icons can be done globally, per website and organization
 Enable New Product Icons Globally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/global_new_arrivals.rst
+.. include:: /configuration_guide/landing_commerce/product/products/global_new_arrivals.rst
   :start-after: begin
   :end-before: finish
 
 Enable New Product Icons per Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/website_new_arrivals.rst
+.. include:: /configuration_guide/landing_commerce/product/products/website_new_arrivals.rst
   :start-after: begin
   :end-before: finish
 
 Enable New Product Icons per Organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/organization_new_arrivals.rst
+.. include:: /configuration_guide/landing_commerce/product/products/organization_new_arrivals.rst
   :start-after: begin
   :end-before: finish
 
@@ -79,21 +79,21 @@ To promote new arrivals on the store homepage, you can set up and control the pr
 Set Up New Arrivals Globally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/global_new_arrivals_block.rst
+.. include:: /configuration_guide/landing_commerce/product/products/global_new_arrivals_block.rst
    :start-after: begin
    :end-before: finish
 
 Set Up New Arrivals per Organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/organization_new_arrivals_block.rst
+.. include:: /configuration_guide/landing_commerce/product/products/organization_new_arrivals_block.rst
    :start-after: begin
    :end-before: finish
 
 Set Up New Arrivals per Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/website_new_arrivals_block.rst
+.. include:: /configuration_guide/landing_commerce/product/products/website_new_arrivals_block.rst
    :start-after: begin
    :end-before: finish
 

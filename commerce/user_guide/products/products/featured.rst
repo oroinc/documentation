@@ -63,21 +63,21 @@ Configuring the Feature Product segment can be done globally, per website and or
 Select a Featured Products Segment to Use Globally
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/global_featured_products.rst
+.. include:: /configuration_guide/landing_commerce/product/products/global_featured_products.rst
    :start-after: begin
    :end-before: finish
 
 Select a Featured Products Segment to Use Per Organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/organization_featured_products.rst
+.. include:: /configuration_guide/landing_commerce/product/products/organization_featured_products.rst
    :start-after: begin
    :end-before: finish
 
 Select a Featured Products Segment to Use Per Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/products/configuration/website_featured_products.rst
+.. include:: /configuration_guide/landing_commerce/product/products/website_featured_products.rst
    :start-after: begin
    :end-before: finish
 

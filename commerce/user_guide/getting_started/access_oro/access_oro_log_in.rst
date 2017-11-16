@@ -76,7 +76,7 @@ capability is enabled for corporate email addresses only, so your cannot use you
 
    b. As soon as you have logged into you Google account, a request to use the account in order to log into OroCRM/OroCommerce will appear. Click the :guilabel:`Allow` button.
 
-      .. image:: /user_guide/img/system/configuration/integrations/google_integration/google_connection.jpg
+      .. image:: /configuration_guide/img/configuration/integrations/google_integration/google_connection.jpg
 
 
 
