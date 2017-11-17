@@ -136,6 +136,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                <ul class="guideline__list">
                      <li><a class="reference internal" href="promotions.html#configuration-guide-commerce-configuration-promotions"><span class="std std-ref">Promotions</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
                      <li><<a class="reference internal" href="marketing_web_catalog#configuration-guide-commerce-configuration-product-collections"><span class="std std-ref">Product Collections</span></a></li>
+                     <li><<a class="reference internal" href="products#user-guide-products-configurable-products-global"><span class="std std-ref">Configurable Products</span></a></li>
                     </ul>
           </div>
       </div>

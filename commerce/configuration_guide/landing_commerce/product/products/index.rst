@@ -55,6 +55,14 @@ OroCommerce groups product configuration options into the following categories:
 
   * `Enable and Set Up Previously Purchased Products per Website`_
 
+* Configurable Products:
+
+  * `Customize Configurable Products Globally`_
+
+  * `Customize Configurable Products Settings per Organization`_
+
+  * `Customize Configurable Products Settings per Website`_
+
 * Related Items:
 
   * Related Products:
@@ -230,6 +238,32 @@ Enable and Set Up Previously Purchased Products per Website
    :start-after: begin
    :end-before: finish
 
+
+Configurable Products
+^^^^^^^^^^^^^^^^^^^^^
+
+Customize Configurable Products Globally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /configuration_guide/landing_commerce/product/products/configurable_product/global_configurable_products.rst
+   :start-after: begin
+   :end-before: finish
+
+
+Customize Configurable Products Settings per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /configuration_guide/landing_commerce/product/products/configurable_product/configurable_products_organization.rst
+   :start-after: begin
+   :end-before: finish
+
+Customize Configurable Products Settings per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /configuration_guide/landing_commerce/product/products/configurable_product/configurable_products_website.rst
+   :start-after: begin
+   :end-before: finish
+
 Related Products
 ^^^^^^^^^^^^^^^^
 
@@ -303,6 +337,8 @@ All Products page displays all available products from the master catalog groupe
    upsell_items/index
 
    all_products
+
+   configurable_product/index
 
 .. uncomment for DOC-145
 

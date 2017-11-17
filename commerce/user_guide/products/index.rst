@@ -122,9 +122,6 @@ Simplify Purchase Choices and Increase Sales
 
    products/actions_details/index
 
-
-
-
 ..    products/index
 
 .. actions/manage_product_taxation
