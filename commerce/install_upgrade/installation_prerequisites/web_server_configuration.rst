@@ -94,6 +94,12 @@ Nginx
             fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
             fastcgi_param HTTPS off;
         }
+	
+	location ~* ^[^(\.php)]+\.(jpg|jpeg|gif|png|ico|css|pdf|ppt|txt|bmp|rtf|js)$ {
+           access_log off;
+           expires 1h;
+           add_header Cache-Control public;
+        }
 
         error_log /var/log/nginx/{$folder_name}_error.log;
         access_log /var/log/nginx/{$folder_name}_access.log;
