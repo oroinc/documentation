@@ -22,41 +22,41 @@ Fundamental Configuration Settings
 .. raw:: html
 
    <div class="guideline">
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item"">
           <div style="text-align: center">
           <h3>
           <img src="https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/system_config.png" alt="SystemConfig">
-            <a class="reference internal" href="system_configuration#configuration-guide-system-configuration"><span class="std std-ref">System Configuration</span></a></h3>
+            <a class="reference internal" href="landing-system_configuration#configuration-guide-system-configuration"><span class="std std-ref">System Configuration</span></a></h3>
             </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <img src="https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/commerce_config.png" alt="CommerceConfig">
-          <a class="reference internal" href="commerce#configuration-guide-commerce-configuration"><span class="std std-ref">Commerce Configuration</span></a></h3>
+          <a class="reference internal" href="landing-commerce#configuration-guide-commerce-configuration"><span class="std std-ref">Commerce Configuration</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <img src="https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/crm_config.png" alt="CRMConfig">
-          <a class="reference internal" href="crm#configuration-guide-crm-configuration"><span class="std std-ref">CRM Configuration</span></a></h3>
+          <a class="reference internal" href="landing-crm#configuration-guide-crm-configuration"><span class="std std-ref">CRM Configuration</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <img src="https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/marketing_config.png" alt="MarketingConfig">
-           <a class="reference internal" href="marketing#configuration-guide-marketing-configuration"><span class="std std-ref">Marketing Configuration</span></a></p></h3>
+           <a class="reference internal" href="landing-marketing#configuration-guide-marketing-configuration"><span class="std std-ref">Marketing Configuration</span></a></p></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -73,7 +73,7 @@ Advanced Configuration Settings
 .. raw:: html
 
    <div class="guideline">
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3><a class="reference internal" href="email#doc-email-configuration"><span class="std std-ref">Emails</span></a></h3>
           </div>
@@ -81,7 +81,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <a class="reference internal" href="integrations#user-guide-integrations"><span class="std std-ref">Integrations</span></a></h3>
@@ -90,7 +90,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <a class="reference internal" href="tags_management#user-guide-system-tags-management"><span class="std std-ref">Tags</span></a></h3>
@@ -99,7 +99,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
            <a class="reference internal" href="menu#doc-config-menus"><span class="std std-ref">Menus</span></a></p></h3>
@@ -113,7 +113,7 @@ Advanced Configuration Settings
 .. raw:: html
 
    <div class="guideline">
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
             <a class="reference internal" href="workflows#user-guide-system-workflow-management"><span class="std std-ref">Workflow</span></a></h3>
@@ -122,7 +122,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <a class="reference internal" href="websites#user-guide-system-websites"><span class="std std-ref">Websites</span></a></h3>
@@ -131,7 +131,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <a class="reference internal" href="localization#sys-config-sysconfig-general-setup-localization"><span class="std std-ref">Localization</span></a></h3>
@@ -140,7 +140,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <a class="reference internal" href="pricing#price-list-configuration"><span class="std std-ref">Pricing</span></a></h3>
@@ -154,7 +154,7 @@ Advanced Configuration Settings
 
    <div class="guideline">
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           <a class="reference internal" href="payment#doc-payment-configuration"><span class="std std-ref">Payments</span></a></h3>
@@ -163,7 +163,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           &nbsp;</h3>
@@ -172,7 +172,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           &nbsp;</h3>
@@ -181,7 +181,7 @@ Advanced Configuration Settings
           </div>
       </div>
 
-      <div class="guideline__item" style="background-color: #FFFFFF">
+      <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
           &nbsp;</h3>
