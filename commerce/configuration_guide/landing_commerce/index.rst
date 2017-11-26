@@ -134,7 +134,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a class="reference internal" href="promotions.html#configuration-guide-commerce-configuration-promotions"><span class="std std-ref">Promotions</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
+                     <li><a class="reference internal" href="promotions#configuration-guide-commerce-configuration-promotions"><span class="std std-ref">Promotions</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
                      <li><<a class="reference internal" href="marketing_web_catalog#configuration-guide-commerce-configuration-product-collections"><span class="std std-ref">Product Collections</span></a></li>
                      <li><<a class="reference internal" href="products#user-guide-products-configurable-products-global"><span class="std std-ref">Configurable Products</span></a></li>
                     </ul>
@@ -161,7 +161,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                       <a class="reference internal" href="inventory/statuses#configuration-guide-commerce-configuration-inventory-allowed-statuses"><span class="std std-ref">Allowed Statuses</span></a>
                       <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
                       <li><a class="reference internal" href="inventory/warehouses#configuration-guide-commerce-configuration-inventory-warehouses"><span class="std std-ref">Warehouses</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
-                      <li><a class="reference internal" href="inventory/options.html#configuration-guide-commerce-configuration-inventory-product-options"><span class="std std-ref">Product Options</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
+                      <li><a class="reference internal" href="inventory/options#configuration-guide-commerce-configuration-inventory-product-options"><span class="std std-ref">Product Options</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
                       <li><a class="reference internal" href="inventory/limitations#configuration-guide-commerce-configuration-inventory-limitations"><span class="std std-ref">Limitations</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i> <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i></li>
                      </ul>
           </div>

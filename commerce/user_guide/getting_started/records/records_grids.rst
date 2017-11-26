@@ -240,7 +240,7 @@ Select Filters to Display
 
 
 .. important::
-     Records may have more fields than you can use to filter data by. The list of fields by which you can filter data is defined by the system administrator. If you are a system administrator, see the **Show Grid Filter** field of the :ref:`Other Entity Field Properties <doc-entity-fields-properties-other>`.
+     Records may have more fields than you can use to filter data by. The list of fields by which you can filter data is defined by the system administrator. If you are a system administrator, see the **Show Grid Filter** field of the Other Entity Field Properties.
 
 
 .. _doc-grids-actions-filters-apply:
