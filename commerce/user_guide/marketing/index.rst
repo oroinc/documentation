@@ -35,7 +35,7 @@ In Oro application, you can use the following marketing tools:
 Via dotmailer
 -------------
 
-.. include:: /user_guide/system/integrations/dotmailer_integration.rst
+.. include:: /configuration_guide/integrations/dotmailer_integration.rst
    :start-after: begin_include
    :end-before: finish_include
 
@@ -64,5 +64,5 @@ After the integration is configured, you can :ref:`Send Email Campaign via MailC
    sending_email_campaign_via_dotmailer
    dotmailer_data_fields_mappings
    sending_email_campaign_via_mailchimp
-   configuration/index
+   
 

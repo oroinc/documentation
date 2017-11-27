@@ -16,7 +16,7 @@ In the :ref:`System > Localization > Localizations <localization--localizations>
 
 The configured system is used to offer the default translation frame for the in-place content translation.
 
-.. image:: /user_guide/img/system/localization/TranslationsContent.png
+.. image:: /configuration_guide/img/localization/TranslationsContent.png
    :class: with-border
 
 In the OroCommerce :ref:`System > Configuration > General > Localization <localization--localization>`, you can enable default or custom localization for all OroCommerce websites.

@@ -108,7 +108,7 @@ You can perform the following actions with the orders on the view page of a Mage
 View Recent Magento Purchases
 -----------------------------
 
-You can get a quick overview of the products that a Magento customer recently purchased by clicking **Sales > Recently Purchased** on their view page. Newly purchased products appear on the list when a new order is created. By default, the most recently purchased products are displayed first. Products disappear from the list if an order is cancelled or deleted on the Magento side. 
+You can get a quick overview of the products that a Magento customer recently purchased by clicking **Sales > Magento Purchases** on their view page. Newly purchased products appear on the list when a new order is created. By default, the most recently purchased products are displayed first. Products disappear from the list if an order is cancelled or deleted on the Magento side. 
 
 .. image:: /img/magento_entities/MagentoCustomerPurchases.png
 

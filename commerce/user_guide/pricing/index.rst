@@ -73,8 +73,6 @@ Price Calculation on the Front Store
    :maxdepth: 2
    :hidden:
 
-   configuration/index
-
    pricelist/index
 
 

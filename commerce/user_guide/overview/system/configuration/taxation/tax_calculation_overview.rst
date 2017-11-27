@@ -24,7 +24,7 @@ To edit configuration options that impact the way OroCommerce implies tax in the
 Sample configuration for tax calculation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: /user_guide/img/system/configuration/taxation/tax_calculation/ConfigurationSystemTaxationTaxCalculation.png
+.. image:: /configuration_guide/img/configuration/taxation/tax_calculation/ConfigurationSystemTaxationTaxCalculation.png
 
 Available actions:
 

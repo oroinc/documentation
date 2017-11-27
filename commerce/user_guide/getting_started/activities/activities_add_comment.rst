@@ -9,8 +9,9 @@ of an :term:`entity <Entity>` or on details of an :ref:`activity <user-guide-act
 action.
 
 .. important::
-    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator.
 
+    .. Add link when information on entities migrate.
 
 Create and View Comments
 ------------------------
@@ -39,7 +40,7 @@ On these pages, the user should:
 
 .. hint::
 
-    You can :ref:`edit <doc-entity-actions-edit>` the **Comment** entity and add new fields, if required.
+    You can edit the **Comment** entity and add new fields, if required.
 
 For example, Ellen Rowel was a task "Email change needed", which required her to change the email address of 
 Mr. Jeffrey Maynard.

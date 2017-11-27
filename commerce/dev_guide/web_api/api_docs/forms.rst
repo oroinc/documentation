@@ -11,15 +11,15 @@ Table of Contents
 Overview
 --------
 
-The Symfony `Validation Component <http://symfony.com/doc/current/book/validation.html>`__ and `Forms Component <http://symfony.com/doc/current/book/forms.html>`__ are used to validate and transform input data to an entity in `create <./actions.md#create-action>`__, `update <./actions.md#update-action>`__, `update\_relationship <./actions.md#update_relationship-action>`__, `add\_relationship <./actions.md#add_relationship-action>`__ and
-`delete\_relationship <./actions.md#delete_relationship-action>`__ actions.
+The Symfony `Validation Component <http://symfony.com/doc/current/book/validation.html>`__ and `Forms Component <http://symfony.com/doc/current/book/forms.html>`__ are used to validate and transform input data to an entity in `create <./actions.rst#create-action>`__, `update <./actions.rst#update-action>`__, `update\_relationship <./actions.rst#update_relationship-action>`__, `add\_relationship <./actions.rst#add_relationship-action>`__ and
+`delete\_relationship <./actions.rst#delete_relationship-action>`__ actions.
 
 Validation
 ----------
 
 The validation rules are loaded from ``Resources/config/validation.yml`` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable in Data API as well. Also, by default, Data API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in Data API only you should add them in **api** validation group.
 
-In case if input data violates some validation constraints, these constraints will be automatically converted to `validation errors <./processors.md#error-handling>`__ which are used to build correct response of Data API. The conversion is performed by `CollectFormErrors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php>`__ processor. By default the HTTP status code for validation errors is ``400 Bad Request``. But, if needed, there
+In case if input data violates some validation constraints, these constraints will be automatically converted to `validation errors <./processors.rst#error-handling>`__ which are used to build correct response of Data API. The conversion is performed by `CollectFormErrors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php>`__ processor. By default the HTTP status code for validation errors is ``400 Bad Request``. But, if needed, there
 are several ways to change it:
 
 -  Implement `ConstraintWithStatusCodeInterface <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Validator/Constraints/ConstraintWithStatusCodeInterface.php>`__ in you constraint class.
@@ -77,7 +77,7 @@ To register new form elements using application configuration file you can add `
                     widget: single_text
                     format: "yyyy-MM-dd'T'HH:mm:ssZZZZZ" # HTML5
 
-Already registered Data API form elements you can find in `Resources/config/oro/app.yml <../config/oro/app.yml>`__.
+Already registered Data API form elements you can find in `Resources/config/oro/app.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/oro/app.yml>`__.
 
 Also new form elements can be added using appropriate dependency injection tags. The following table shows all available tags.
 
@@ -115,4 +115,4 @@ An example:
 
 To switch between general and Data API forms `Processor:raw-latex:`\Shared`:raw-latex:`\InitializeApiFormExtension` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/InitializeApiFormExtension.php>`__ and `Processor:raw-latex:`\Shared`:raw-latex:`\RestoreDefaultFormExtension` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/RestoreDefaultFormExtension.php>`__ processors can be used.
 
-A form for a particular entity is built on the fly based on `Data API configuration <./configuration.md>`__ and an entity metadata. It is performed by `Processor:raw-latex:`\Shared`:raw-latex:`\BuildFormBuilder` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php>`__ processor.
+A form for a particular entity is built on the fly based on `Data API configuration <./configuration.rst>`__ and an entity metadata. It is performed by `Processor:raw-latex:`\Shared`:raw-latex:`\BuildFormBuilder` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php>`__ processor.

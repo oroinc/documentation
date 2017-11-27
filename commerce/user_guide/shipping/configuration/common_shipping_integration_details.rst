@@ -18,5 +18,5 @@ Basic information about the shipping is shared among all shipping methods and in
 
 Sample
 """"""
-   .. image:: /user_guide/img/system/integrations/manage_integrations/payment_terms.png
+   .. image:: /configuration_guide/img/integrations/manage_integrations/payment_terms.png
       :class: with-border

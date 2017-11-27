@@ -154,7 +154,7 @@ To do this:
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridsettingsmenu.png
 
 .. important::
-    Some fields that an entity has may be unavailable as columns of the grid. The list of available fields is defined by the system administrator. If you are a system administrator, see the **Show on Grid** field of the :ref:`Other Entity Field Properties <doc-entity-fields-properties-other>`.
+    Some fields that an entity has may be unavailable as columns of the grid. The list of available fields is defined by the system administrator. If you are a system administrator, see the **Show on Grid** field of the Other Entity Field Properties.
 
 
 .. _doc-grids-actions-change-column-order:
@@ -240,7 +240,7 @@ Select Filters to Display
 
 
 .. important::
-     Records may have more fields than you can use to filter data by. The list of fields by which you can filter data is defined by the system administrator. If you are a system administrator, see the **Show Grid Filter** field of the :ref:`Other Entity Field Properties <doc-entity-fields-properties-other>`.
+     Records may have more fields than you can use to filter data by. The list of fields by which you can filter data is defined by the system administrator. If you are a system administrator, see the **Show Grid Filter** field of the Other Entity Field Properties.
 
 
 .. _doc-grids-actions-filters-apply:

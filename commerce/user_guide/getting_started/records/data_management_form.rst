@@ -19,9 +19,9 @@ Create a Record
 
    .. note::
 
-    The default list of fields available on the page can be modified by an administrator. For more information, see the description of the **Show on Form** field in the :ref:`Entity Field Properties <doc-entity-field-properties>` guide. 
+    The default list of fields available on the page can be modified by an administrator.
 
-
+    .. Referred doc is yet missing in OroCommerce: For more information, see the description of the **Show on Form** field in the Entity Field Properties <doc-entity-field-properties>` guide.
 
 2. Fill in all the required information. 
    
@@ -62,7 +62,7 @@ To change the properties of a record, use the **Create <Entity name>** page.
 
    .. image:: /user_guide/img/getting_started/ui_components/edit_page_example.png
 
-2. Modify records and save the changes as described in step 2–3 of the `Create a Record <./data-management-form#create-a-record>`__ section.
+2. Modify records and save the changes as described in step 2–3 of the `Create a Record`_ section.
 
 .. note::
 

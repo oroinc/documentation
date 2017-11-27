@@ -10,7 +10,7 @@ address is represented by the :class:`Oro\\Bundle\\EmailBundle\\Entity\\EmailAdd
 E-Mail Templates
 ----------------
 
-When creating e-mails, your users often want to reuse texts they have written some time before for
+When creating e-mails, your may reuse the text that is frequently sent for
 a certain purpose. For this, they can create templates and reuse them as needed. Besides letting
 the users create and manage templates through the UI, every bundle can provide their own e-mail
 templates.

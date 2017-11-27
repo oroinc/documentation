@@ -6,6 +6,8 @@ Create Promotions
 
 .. begin
 
+In OroCommerce, you can set up a shipping promotion, line item promotion or buy X get Y promotion using the following process.
+
 To create a new promotion:
 
 1. Navigate to **Marketing > Promotions** in the main menu.

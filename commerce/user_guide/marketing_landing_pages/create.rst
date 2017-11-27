@@ -26,7 +26,7 @@ To create a new Landing Page:
 
    .. note:: You can insert the *Contact Us widget* into the required page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. The form should then become visible in the front store.
 
-             .. image:: /user_guide/img/system/configuration/contact_us/ContactWidget.png
+             .. image:: /configuration_guide/img/configuration/contact_us/ContactWidget.png
 
 #. In the SEO section, manage the meta description and meta keywords that will be incapsulated in the landing page.
 

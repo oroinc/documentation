@@ -108,8 +108,6 @@ Simplify Purchase Choices and Increase Sales
    :hidden:
    :maxdepth: 1
 
-   configuration/index
-
    configure_product_details
 
    product_brands
@@ -123,9 +121,6 @@ Simplify Purchase Choices and Increase Sales
    products/actions_main/index
 
    products/actions_details/index
-
-
-
 
 ..    products/index
 

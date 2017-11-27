@@ -123,6 +123,8 @@ at the top with the following actions in the dropdown:
 | **Disconnect**          | Disconnect the list from the segment                                      |
 +-------------------------+---------------------------------------------------------------------------+
 
+.. note:: Please be aware that if a marketing list contains invalid emails, they can be rejected by MailChimp and excluded from further synchronization.
+
 At this point, if you go back to MailChimp, you will be able to see data
 from OroCRM (subscribers’ first and last names and contact details)
 synced into your MailChimp list. Other information that you may have

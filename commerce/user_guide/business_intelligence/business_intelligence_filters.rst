@@ -20,7 +20,9 @@ To define filter, use any of the following filter options or combine them:
 
 - **Activity**: select only the records to which a specific kind of :ref:`activity <user-guide-activities>` has been/has not been assigned.
 
-- **Data Audit**: select only the records that have been modified in a specific way (available only when the corresponding functionality is enabled for an entity; see step 6 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
+- **Data Audit**: select only the records that have been modified in a specific way (available only when the corresponding functionality is enabled for an entity).
+
+.. see step 6 of the :ref:`Create an Entity <doc-entity-actions-create>` action description).
 
 - **Conditions Groups**: sets of field conditions that combine requirements of several other filters in one group.
 

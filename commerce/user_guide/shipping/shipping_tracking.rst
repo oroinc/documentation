@@ -17,11 +17,11 @@ To add a tracking information about the shipping to the order, in Management Con
 
 #. Click **Shipping Tracking**.
 
-   .. image:: /user_guide/img/system/shipping_rules/ShippingTrackingOrders.png
+   .. image:: /configuration_guide/img/shipping_rules/ShippingTrackingOrders.png
 
 3. Enter the shipping method (e.g. UPS), and the tracking number.
 
-   .. image:: /user_guide/img/system/shipping_rules/ShippingTrackingOrdersForm.png
+   .. image:: /configuration_guide/img/shipping_rules/ShippingTrackingOrdersForm.png
 
    Some orders may be delivered in multiple portions due to the circumstances related to the delivery time or delivered volume.
 
@@ -31,4 +31,4 @@ To add a tracking information about the shipping to the order, in Management Con
 
 After the tracking information for shipping has been provided, it becomes available to the buyer on the front store.
 
-.. image:: /user_guide/img/system/shipping_rules/ShippingTrackingFront.png
+.. image:: /configuration_guide/img/shipping_rules/ShippingTrackingFront.png

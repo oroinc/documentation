@@ -14,7 +14,7 @@ Overview
 Before You Begin: Taxation Configuration
 ----------------------------------------
 
-.. include:: /user_guide/taxes/configuration/index.rst
+.. include:: /configuration_guide/landing_commerce/taxation/taxes/index.rst
    :start-after: begin
    :end-before: finish
 
@@ -54,8 +54,6 @@ Manage Tax Rules
 
 .. toctree::
    :maxdepth: 1
-
-   configuration/index
 
    customer_tax_codes/index
 

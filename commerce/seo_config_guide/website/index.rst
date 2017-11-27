@@ -28,31 +28,26 @@ You can launch the sitemap generation manually using the following command:
 Routing and Sitemap Configuration
 ---------------------------------
 
-.. include:: /seo_config_guide/website/configuration/index.rst
+.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
    :start-after: begin_zero
    :end-before: finish_zero
 
-.. include:: /seo_config_guide/website/configuration/index.rst
+.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
    :start-after: begin_one
    :end-before: finish_one
 
-.. include:: /seo_config_guide/website/configuration/index.rst
+.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
    :start-after: begin_two
    :end-before: finish_two
 
-.. include:: /seo_config_guide/website/configuration/index.rst
+.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
    :start-after: begin_three
    :end-before: finish_three
 
-.. include:: /seo_config_guide/website/configuration/index.rst
+.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
    :start-after: begin_four
    :end-before: finish_four
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   configuration/index

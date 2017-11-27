@@ -81,7 +81,7 @@ file will be save in compliance to your browser settings.
 .. note::
 
     Please note that scope of record details exported, their names and position in the .csv file depend on the 
-    :ref:`Import&Export settings <user-guide-entity-management-export-import-common>` of the entity fields.
+    Import&Export settings of the entity fields.
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

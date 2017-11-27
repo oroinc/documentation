@@ -21,7 +21,7 @@ To view all web catalogs, navigate to **Marketing > Web Catalogs** in the main m
 Configuration
 -------------
 
-.. include:: configuration/index.rst
+.. include:: /configuration_guide/landing_commerce/product/marketing_web_catalog/index.rst
    :start-after: begin
    :end-before: finish
 
