@@ -1,13 +1,11 @@
-How to Add Properties to Core Entities
-======================================
+Add Properties to Core Entities
+===============================
 
-OroCRM and OroPlatform come with a lot of entities that you may have to customize to fit your
-application's needs. For example, imagine that you want to store the date your contacts became
-member of your company's partner network.
+You may require to customize the default Oro entities to fit your application's needs.
 
-To achieve this you may want to add a new property ``partnerSince`` which will hold a ``DateTime``
-instance that reflects the date the contact joined your network. This property is added by writing
-a migration:
+Let us customize the Contact entity to store the date of when a contact becomes a member of your company's partner network. For the sake of example, we will use the Contact entity from the custom AppBundle.
+
+To achieve this, add a new property ``partnerSince`` to store the date of when a contact joined your network. To add the property, create a migration:
 
 .. code-block:: php
     :linenos:
@@ -24,7 +22,7 @@ a migration:
     {
         public function up(Schema $schema, QueryBag $queries)
         {
-            $table = $schema->getTable('orocrm_contact');
+            $table = $schema->getTable('contact');
             $table->addColumn('partnerSince', 'datetime', [
                 'oro_options' => [
                     'extend' => ['owner' => ExtendScope::OWNER_CUSTOM],
@@ -33,71 +31,80 @@ a migration:
         }
     }
 
-Please note that the Entity that you add new property should have ``@Config`` annotation
-and should be extended from empty Extend class:
+.. note::
+   Please note that the entity that you add a new property to must have the ``@Config`` annotation and should extend an empty Extend class:
+
+   .. code-block:: php
+       :linenos:
+
+       // src/AppBundle/Entity/Contact.php
+       namespace AppBundle\Entity;
+
+       use Doctrine\ORM\Mapping as ORM;
+
+       use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
+
+       use AppBundle\Entity\Model\ExtendContact;
+
+       /**
+        * @ORM\Entity()
+        * @ORM\Table(name="contact")
+        * @Config()
+        */
+       class Contact extends ExtendContact
+       {
+       }
+
+
+   .. code-block:: php
+       :linenos:
+
+       // src/AppBundle/Model/ExtendContact.php
+       namespace AppBundle\Model;
+
+       class ExtendContact
+       {
+           /**
+            * A skeleton method for the getter. You can add it to use autocomplete hints from the IDE.
+            * The real implementation of this method is auto generated.
+            *
+            * @return \DateTime
+            */
+           public function getPartnerSince()
+           {
+           }
+
+           /**
+            * A skeleton method for the setter. You can add it to use autocomplete hints from the IDE.
+            * The real implementation of this method is auto generated.
+            *
+            * @param \DateTime $partnerSince
+            */
+           public function setPartnerSince(\DateTime $partnerSince)
+           {
+           }
+       }
+
+The important part in this migration (which is different from common Doctrine migrations) is the ``oro_options`` key. It is passed through the ``options`` argument of the ``addColumn()`` method:
 
 .. code-block:: php
-    :linenos:
+   :linenos:
+   :emphasize-lines: 3
 
-    // src/AppBundle/Entity/Contact.php
-    namespace AppBundle\Entity;
+   ...
+            $table->addColumn('partnerSince', 'datetime', [
+                'oro_options' => [
+                    'extend' => ['owner' => ExtendScope::OWNER_CUSTOM],
+                ],
+            ]);
+   ...
 
-    use Doctrine\ORM\Mapping as ORM;
+All options nested under this key are handled outside of the usual Doctrine migration workflow.
 
-    use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-
-    use AppBundle\Entity\Model\ExtendContact;
-
-    /**
-     * @ORM\Entity()
-     * @Config()
-     */
-    class Contact extends ExtendContact
-    {
-    }
+When the EntityExtendBundle of the OroPlatform finds the ``extend`` key, it generates an intermediate class with getters and setters for the defined properties, thus making them accessible from every part of the code. The intermediate class is generated automatically based on the configured data when the application cache is warmed up.
 
 
-.. code-block:: php
-    :linenos:
+The ``owner`` attribute can have the following values:
 
-    // src/AppBundle/Model/ExtendContact.php
-    namespace AppBundle\Model;
-
-    class Contact extends ExtendContact
-    {
-        /**
-         * A skeleton method for the getter. You can add it to use autocomplete hints from the IDE.
-         * The real implementation of this method is auto generated.
-         *
-         * @return \DateTime
-         */
-        public function getPartnerSince()
-        {
-        }
-
-        /**
-         * A skeleton method for the setter. You can add it to use autocomplete hints from the IDE.
-         * The real implementation of this method is auto generated.
-         *
-         * @param \DateTime $partnerSince
-         */
-        public function getPartnerSince(\DateTime $partnerSince)
-        {
-        }
-    }
-
-The important part in this migration (which is different to common Doctrine migrations) is the
-``oro_options`` key passed through the ``options`` argument of the ``addColumn()`` method. All
-options nested under this key are special to OroCRM and OroPlatform and will be handled outside of
-the usual Doctrine migration workflow.
-
-The ``extend`` key is interpreted by the EntityExtendBundle from the OroPlatform. Using it will
-instruct the bundle to generate PHP code in an intermediate class that deals with mapping data for
-this attribute to the underlying database and to make it accessible in PHP code. This code is
-generated automatically based on the configured data when the application cache is warmed up.
-
-By using the ``ExtendScope::OWNER_CUSTOM`` value the owner attribute tells the OroPlatform that the
-property was user defined and that the core system should handle how the property is shown in
-grids, forms, and so on if not configured otherwise. It is also possible to set the value of the
-owner attribute to ``ExtendScope::OWNER_SYSTEM``. In this case, nothing will be rendered
-automatically, but the developer is responsible to handle this explicitly in code.
+* ``ExtendScope::OWNER_CUSTOM`` --- The property is user-defined and the core system should handle how the property appears in grids, forms, etc. (if not configured otherwise).
+* ``ExtendScope::OWNER_SYSTEM``--- Nothing is rendered automatically, and the developer must explicitly specify how to show the property in different parts of the system (grids, forms, views, etc.).
