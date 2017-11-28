@@ -75,7 +75,7 @@ Advanced Configuration Settings
    <div class="guideline">
       <div class="guideline__item" >
           <div style="text-align: center">
-          <h3><a class="reference internal" href="email#doc-email-configuration"><span class="std std-ref">Emails</span></a></h3>
+          <h3><a class="reference internal" href="email#doc-email-configuration"><span class="std std-ref"><i class="fa fa-envelope-o" aria-hidden="true"></i><br>Emails</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -84,7 +84,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="integrations#user-guide-integrations"><span class="std std-ref">Integrations</span></a></h3>
+          <a class="reference internal" href="integrations#user-guide-integrations"><span class="std std-ref"><i class="fa fa-puzzle-piece" aria-hidden="true"></i><br>Integrations</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -93,7 +93,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="tags_management#user-guide-system-tags-management"><span class="std std-ref">Tags</span></a></h3>
+          <a class="reference internal" href="tags_management#user-guide-system-tags-management"><span class="std std-ref"><i class="fa fa-tag" aria-hidden="true"></i><br>Tags</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -102,7 +102,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-           <a class="reference internal" href="menu#doc-config-menus"><span class="std std-ref">Menus</span></a></p></h3>
+           <a class="reference internal" href="menu#doc-config-menus"><span class="std std-ref"><i class="fa fa-bars" aria-hidden="true"></i><br>Menus</span></a></p></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -116,7 +116,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-            <a class="reference internal" href="workflows#user-guide-system-workflow-management"><span class="std std-ref">Workflow</span></a></h3>
+            <a class="reference internal" href="workflows#user-guide-system-workflow-management"><span class="std std-ref"><i class="fa fa-retweet" aria-hidden="true"></i><br>Workflow</span></a></h3>
             </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -125,7 +125,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="websites#user-guide-system-websites"><span class="std std-ref">Websites</span></a></h3>
+          <a class="reference internal" href="websites#user-guide-system-websites"><span class="std std-ref"><i class="fa fa-globe" aria-hidden="true"></i><br>Websites</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -134,7 +134,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="localization#sys-config-sysconfig-general-setup-localization"><span class="std std-ref">Localization</span></a></h3>
+          <a class="reference internal" href="localization#sys-config-sysconfig-general-setup-localization"><span class="std std-ref"><i class="fa fa-flag" aria-hidden="true"></i><br>Localization</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -143,7 +143,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="pricing#price-list-configuration"><span class="std std-ref">Pricing</span></a></h3>
+          <a class="reference internal" href="pricing#price-list-configuration"><span class="std std-ref"><i class="fa fa-money" aria-hidden="true"></i><br>Pricing</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -157,7 +157,7 @@ Advanced Configuration Settings
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="payment#doc-payment-configuration"><span class="std std-ref">Payments</span></a></h3>
+          <a class="reference internal" href="payment#doc-payment-configuration"><span class="std std-ref"><i class="fa fa-credit-card" aria-hidden="true"></i><br>Payments</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
