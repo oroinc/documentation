@@ -275,7 +275,7 @@ search API to create your own remote search queries. Each query is passed
 as the ``query`` parameter. It takes the following form:
 ``[from <entity>] [conditions] [order_by field_type field_name direction] [offset <offset> max_results <max_results>]``:
 
-* You can query one ore more entities at the same time:
+* You can query one or more entities at the same time:
 
     .. code-block:: text
 
@@ -354,7 +354,7 @@ as the ``query`` parameter. It takes the following form:
 
 The endpoint of the advanced REST search API is described by the ``oro_api_get_search_advanced``
 route. Its path defaults to ``/api/rest/{version}/search/advanced.{_format}``. Valid
-formats are ``json``and ``html`` with ``json`` being the default format and ``latest``
+formats are ``json`` and ``html`` with ``json`` being the default format and ``latest``
 being the default version. The SOAP function name is ``advancedSearch``.
 
 .. _`SearchBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/SearchBundle
