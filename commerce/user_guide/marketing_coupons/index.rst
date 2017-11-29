@@ -53,6 +53,16 @@ Sample Coupon Generation
    :start-after: begin
    :end-before: finish
 
+Export Coupons
+--------------
+
+You can export the coupon details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
+
+Import Coupons
+--------------
+
+.. include:: /user_guide/getting_started/import_export/import_coupons.rst
+   :start-after: start
 
 Related Topics
 --------------

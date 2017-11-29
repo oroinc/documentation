@@ -59,14 +59,7 @@ When your need OroCommerce and other systems (like asset management and accounti
 Export
 ~~~~~~
 
-You can export the inventory information in the .csv format: 
-
-1. Select the items to export using a check box at the beginning of the corresponding rows. You can filter the list and use the **Select All** option in the table header, if necessary.
-2. Click **Export**.
-
-.. comment TODO clarify the remaining part of the procedure.
-
-Later you can import the updated or processed inventory using import as described below.
+You can export the customer user details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
 Import
 ~~~~~~
@@ -74,14 +67,12 @@ Import
 Inventory Statuses and Levels
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/getting_started/common_actions/import_inventory_levels.rst
-   :start-after: start
+You can import the bulk details of the product inventory levels (quantity and unit) for the warehouses in the .csv format following the :ref:`Importing Inventory Levels <import-inventory-levels>` guide.
 
 Inventory Statuses Only
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/getting_started/common_actions/import_inventory_statuses.rst
-   :start-after: start
+You can import the bulk details of the product inventory statuses (*In Stock*, *Out of Stock*, or *Discontinued*) for the warehouses in the .csv format following the :ref:`Importing Inventory Statuses <import-inventory-status>` guide.
 
 .. toctree::
    :hidden:

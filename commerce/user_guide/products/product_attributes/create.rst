@@ -229,6 +229,16 @@ Proceed to create the attribute as described below.
 
       .. image:: /user_guide/img/products/product_attributes/AttributeStorageType.png
 
+Export
+^^^^^^
+
+You can export the product attributes details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
+
+Import
+^^^^^^
+
+You can import the bulk details of the product attributes information in the .csv format following the steps described in the :ref:`Importing Product Attributes <import-product-attributes>` guide.
+
 .. TO DO Add links to entity management doc to explain table column + serialized fields.
 
 .. finish

@@ -6,6 +6,11 @@ Customer Groups
 
 .. begin
 
+.. contents:: :local:
+
+Overview
+~~~~~~~~
+
 .. include:: /user_guide/overview/customers/customer_groups_overview.rst
    :start-after: begin
 

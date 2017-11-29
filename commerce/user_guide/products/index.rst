@@ -47,8 +47,6 @@ To create a product, manage product information and visibility, please use the p
 
 * :ref:`Create a Product <doc--products--actions--create>`
 
-* :ref:`Import Products <doc--products--actions--import>`
-
 * :ref:`Manage Product Visibility <products--product-visibility>`
 
 * :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>`
@@ -75,7 +73,9 @@ Once you have created all the required products, you can:
 
 * :ref:`Delete a product <doc--products--actions--delete>`
 
-* :ref:`Export existing products <doc--products--actions--export>`
+* :ref:`Export existing products <export-products>`
+
+* :ref:`Import Products <import-products>`
 
 Simplify Purchase Choices and Increase Sales
 --------------------------------------------

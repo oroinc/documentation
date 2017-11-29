@@ -3,6 +3,11 @@ Customers
 
 .. begin
 
+.. contents:: :local:
+
+Overview
+~~~~~~~~
+
 .. include:: /user_guide/overview/customers/customers_overview.rst
    :start-after: begin
 
@@ -16,20 +21,12 @@ Customers
 Export
 ~~~~~~
 
-You can export the customer details in the .csv format:
-
-1. Select the items to export using check boxes at the beginning of the corresponding rows. You can filter the list and use the **Select All** option in the table header, if necessary.
-2. Click **Export**.
-
-.. comment TODO clarify the remaining part of the procedure.
-
-Later you can import the updated or processed customer information using import as described below.
+You can export the customer details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
 Import
 ~~~~~~
 
-.. include:: /user_guide/getting_started/common_actions/import_customers.rst
-   :start-after: start
+You can import the bulk details of updated or processed customer information in the .csv format following the steps described in the :ref:`Importing Customer <import-customers>` guide.
 
 .. finish
 

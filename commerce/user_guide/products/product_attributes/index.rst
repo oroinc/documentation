@@ -3,6 +3,11 @@
 Product Attributes
 ------------------
 
+.. contents:: :local:
+
+Overview
+^^^^^^^^
+
 .. include:: /user_guide/overview/products/product_attributes_overview.rst
    :start-after: begin
 
