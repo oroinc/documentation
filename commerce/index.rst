@@ -15,7 +15,7 @@ This section provides links to the online documentation for the latest OroCommer
    <div class="guideline">
       <div class="guideline__item">
           <div style="text-align: center">
-            <h3><i class="guideline__icon fa fa-archive" style="color:#1394ca"></i><br>Product <br>Information</h3>
+            <h3><i class="guideline__icon fa fa-archive"></i><br>Product <br>Information</h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -29,7 +29,7 @@ This section provides links to the online documentation for the latest OroCommer
 
       <div class="guideline__item" >
           <div style="text-align: center">
-            <h3><i class="guideline__icon fa fa-building-o" style="color:#1394ca"></i><br>Content <br>Management</h3>
+            <h3><i class="guideline__icon fa fa-building-o"></i><br>Content <br>Management</h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -43,7 +43,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" >
           <div style="text-align: center">
             <h3><a href="current/user-guide/customers">
-            <i class="guideline__icon fa fa-user-plus" style="color:#1394ca"></i><br>Customer <br>Management</a></h3>
+            <i class="guideline__icon fa fa-user-plus"></i><br>Customer <br>Management</a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -58,7 +58,7 @@ This section provides links to the online documentation for the latest OroCommer
    <div class="guideline">
       <div class="guideline__item" id="sales_marketing" >
           <div style="text-align: center">
-            <h3><i class="guideline__icon fa fa-comments-o" style="color:#1394ca"></i><br>Sales <br>Management</h3>
+            <h3><i class="guideline__icon fa fa-comments-o"></i><br>Sales <br>Management</h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -73,7 +73,7 @@ This section provides links to the online documentation for the latest OroCommer
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-            <h3><i class="guideline__icon fa fa-fire" style="color:#1394ca"></i><br>Marketing <br>Management</h3>
+            <h3><i class="guideline__icon fa fa-fire"></i><br>Marketing <br>Management</h3>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
              <ul class="guideline__list">
@@ -88,7 +88,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" >
           <div style="text-align: center">
             <h3><a href="current/user-guide/marketing">
-            <i class="guideline__icon fa fa-send-o" style="color:#1394ca"></i><br>Marketing <br>Automation</a></h3>
+            <i class="guideline__icon fa fa-send-o"></i><br>Marketing <br>Automation</a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -108,7 +108,7 @@ This section provides links to the online documentation for the latest OroCommer
    <div class="guideline">
       <div class="guideline__item" >
          <div style="text-align: center">
-             <h3><i class="guideline__icon fa fa-shopping-cart" style="color:#1394ca"></i><br>Getting Started</h3>
+             <h3><i class="guideline__icon fa fa-shopping-cart"></i><br>Getting Started</h3>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -120,7 +120,7 @@ This section provides links to the online documentation for the latest OroCommer
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-             <h3><i class="guideline__icon fa fa-shopping-cart" style="color:#1394ca"></i><br>For Buyer</h3>
+             <h3><i class="guideline__icon fa fa-shopping-cart"></i><br>For Buyer</h3>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -133,7 +133,7 @@ This section provides links to the online documentation for the latest OroCommer
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-             <h3><i class="guideline__icon fa fa-shopping-cart" style="color:#1394ca"></i><br>For Manager</h3>
+             <h3><i class="guideline__icon fa fa-shopping-cart"></i><br>For Manager</h3>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
@@ -149,7 +149,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" id="administrator" >
          <div style="text-align: center">
             <a href="current/admin-guide">
-               <h3><i class="guideline__icon fa fa-gear" style="color:#1394ca"></i><br>
+               <h3><i class="guideline__icon fa fa-gear"></i><br>
                Administration</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
@@ -166,7 +166,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" >
          <div style="text-align: center">
             <a href="current/configuration-guide">
-               <h3><i class="guideline__icon fa fa-spinner" style="color:#1394ca"></i><br>
+               <h3><i class="guideline__icon fa fa-spinner"></i><br>
                Configuration</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
@@ -184,7 +184,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" id="developer" >
          <div style="text-align: center">
             <a href="current/dev-guide">
-            <h3><i class="guideline__icon fa fa-flask" style="color:#1394ca"></i><br>
+            <h3><i class="guideline__icon fa fa-flask"></i><br>
             Development</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
@@ -202,7 +202,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" >
          <div style="text-align: center">
             <a href="current/community">
-               <h3><i class="guideline__icon fa fa-users" style="color:#1394ca"></i><br>
+               <h3><i class="guideline__icon fa fa-users"></i><br>
                Contributing</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
@@ -216,7 +216,7 @@ This section provides links to the online documentation for the latest OroCommer
       <div class="guideline__item" >
          <div style="text-align: center">
             <a href="current/community">
-               <h3><i class="guideline__icon fa fa-flag" style="color:#1394ca"></i><br>
+               <h3><i class="guideline__icon fa fa-flag"></i><br>
                Support</h3></a>
             </a>
           </div>
@@ -231,7 +231,7 @@ This section provides links to the online documentation for the latest OroCommer
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-         <h3><i class="guideline__icon fa fa-bullhorn" style="color:#1394ca"></i><br>
+         <h3><i class="guideline__icon fa fa-bullhorn"></i><br>
                Announcements</h3></a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
