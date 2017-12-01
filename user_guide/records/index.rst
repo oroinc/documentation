@@ -11,6 +11,8 @@ specific customer-related activities.
 In this article, we will review the ways that data is represented and managed in OroCRM. For each point that requires 
 further explanation, you will find links to related documentation.
 
+.. note:: You can export records of some type (e.g. account details) in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide. You can import the bulk details of updated or processed records in the .csv format following the steps described in the :ref:`Importing Accounts <import-accounts>` guide.
+
 .. toctree::
   :maxdepth: 1
 
@@ -20,7 +22,6 @@ further explanation, you will find links to related documentation.
   data_management_form
   data_management_tags
   data_management_workflows
-  data_management_import_export
 
 
 
