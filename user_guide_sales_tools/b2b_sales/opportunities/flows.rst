@@ -135,7 +135,7 @@ OroCommerce Opportunity Flow allows sales reps to create `quotes <https://www.or
 
 When OroCommerce Opportunity flow is activated in **System>Workflows** and an opportunity is related to a Commerce customer, the :guilabel:`Create Quote` button will appear in the top right corner of the opportunity view page.
 
-.. note:: Creating a quote from the opportunity view page is only available for **open** opportunities, i.e. not closed or lost.
+.. note:: Creating a quote from the opportunity view page is only available for **open** opportunities, i.e. not closed or lost. 
 
 
 .. image:: ../../../img/opportunities_2.0/commerce_flow.png
@@ -169,6 +169,8 @@ On the Quote view page, relation to the opportunity, which this quote has been c
 
 
 .. image:: ../../../img/opportunities_2.0/quote_opp_edit.png
+
+.. note:: Be aware that although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed.
 
 You can create any number of quotes for one open opportunity.
 
