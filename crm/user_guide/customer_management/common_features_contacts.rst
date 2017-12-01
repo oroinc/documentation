@@ -144,9 +144,6 @@ All contacts available in the system are displayed in the contacts grid (**Custo
 
 In addition, from the grid you can:
 
-- Export or import contacts, as described in the
-  :ref:`Import and Export Functionality <user-guide-export-import>` guide .
-
 - Delete a contact from the system: click the |IcDelete| **Delete** icon.
 
 - Get to the :ref:`edit page <user-guide-ui-components-create-pages>` of the contact: click the |IcEdit| **Edit** icon.
@@ -154,6 +151,16 @@ In addition, from the grid you can:
 - Get to the :ref:`view page <user-guide-ui-components-view-pages>` of the contact: click the |IcView| **View** icon.
 
 - Perform :ref:`bulk delete <doc-grids-actions-records-delete-multiple>` of several contacts.
+
+Export
+~~~~~~
+
+You can export the contact details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
+
+Import
+~~~~~~
+
+You can import the bulk details of updated or processed contact information in the .csv format following the steps described in the :ref:`Importing Contacts <import-contacts>` guide.
 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png

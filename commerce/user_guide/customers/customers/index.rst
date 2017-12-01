@@ -26,7 +26,7 @@ You can export the customer details in the .csv format following the :ref:`Expor
 Import
 ~~~~~~
 
-You can import the bulk details of updated or processed customer information in the .csv format following the steps described in the :ref:`Importing Customer <import-customers>` guide.
+You can import the bulk details of updated or processed customer information in the .csv format following the steps described in the :ref:`Importing Customers <import-customers>` guide.
 
 .. finish
 

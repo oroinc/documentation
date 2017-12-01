@@ -76,6 +76,17 @@ See detailed guidance in the :ref:`Create Opportunities <user-guide-opportunitie
    :start-after: begin_opportunity_reports
    :end-before: finish_opportunity_reports
 
+Export an Opportunity
+---------------------
+
+You can export the opportunity details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
+
+Import an Opportunity
+---------------------
+
+You can import the bulk details of updated or processed opportunity information in the .csv format following the steps described in the :ref:`Importing Opportunities <import-opportunities>` guide.
+
+
 .. BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle
 

@@ -154,9 +154,7 @@ The following actions can be performed for the accounts from the :ref:`view page
 
 3. Delete the account from the system by clicking |IcDelete| **Delete**
 
-4. Export and import accounts with **Export** and **Import** buttons as described in the :ref:`Export and Import Functionality <user-guide-import>` guide.
-
-5. Perform a number of actions under **More Actions** menu:
+4. Perform a number of actions under **More Actions** menu:
 
    * :ref:`Add Attachment <user-guide-activities-attachments>`
    * :ref:`Add Note <user-guide-add-note>`
@@ -168,6 +166,16 @@ The following actions can be performed for the accounts from the :ref:`view page
    * :ref:`Create Opportunity <user-guide-system-channel-entities-opportunities>`
 
    .. image:: ../img/accounts/MoreActionsMenu.png
+
+Export
+""""""
+
+You can export the account details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
+
+Import
+""""""
+
+You can import the bulk details of updated or processed account information in the .csv format following the steps described in the :ref:`Importing Accounts <import-accounts>` guide.
 
 Account Actions from the Account List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

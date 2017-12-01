@@ -46,6 +46,7 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
    activities/index
    business_intelligence/index
    security_basics/index
+   import_export/index
    glossary
 
 

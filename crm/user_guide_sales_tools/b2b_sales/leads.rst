@@ -48,17 +48,12 @@ Leads can be added to the system in a number of ways. The two most common ways a
 Import Leads
 ^^^^^^^^^^^^
 
-To be able to import correct data, first download a .csv template:
+You can import the bulk details of updated or processed leads information in the .csv format following the steps described in the :ref:`Importing Leads <import-leads>` guide.
 
--  Go to **Sales>Leads**
+Export
+~~~~~~
 
--  Click :guilabel:`Download Data Template` in Import.
-
-
-.. image:: ../../img/leads_2.0/import_data_template.jpg
-
-
-You can then modify your data according to the template and import leads to OroCRM. More details on Import and Export features can be found :ref:`here <user-guide-export-import>`.
+You can export the customer details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
 Create Lead
 ^^^^^^^^^^^
