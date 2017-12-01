@@ -38,7 +38,7 @@ In addition to viewing promotion details, you can perform the following actions 
 * Delete: |IcDelete| **Delete**
 * Add Note: |IcAddNote| **Add Note**
 
-.. image:: /user_guide/img/marketing/promotions/NewViewPromotions.png
+.. image:: /user_guide/img/marketing/promotions/ViewPromotions.png
 
 .. finish
 

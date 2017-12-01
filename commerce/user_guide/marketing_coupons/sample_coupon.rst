@@ -13,7 +13,7 @@ Create a Promotion
 As coupons should always be linked to promotions, the first step is to create a new promotion:
 
 1. Navigate to **Marketing > Promotions > Promotions** in the main menu.
-2. Click **Create Promotion** on the top right.
+2. Click **Coupons Actions > Create Promotion** on the top right.
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons1.png
 
@@ -31,7 +31,7 @@ Generate Coupons
 Next, we will generate coupons for this promotion:
 
 1. Navigate to **Marketing > Promotions > Coupons** in the main menu.
-2. Click |IcListAlt| **Generate Multiple Coupons**.
+2. Click **Coupons Actions > Generate Multiple Coupons**.
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons3.png
 

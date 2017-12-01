@@ -19,8 +19,8 @@ The page contains the list of all available coupons in your Oro application. Fro
 .. image:: /user_guide/img/marketing/coupons/ActionsCoupons.png
 
 
-1. Create a new coupon: Click **Create Promotion** on the top right.
-2. Generate coupons: Click |IcListAlt| **Generate Multiple Coupons** on the top right.
+1. Create a new coupon: Click **Coupons Actions > Create Promotion** on the top right.
+2. Generate coupons: Click **Coupons Actions > Generate Multiple Coupons** on the top right.
 3. Export coupons: Click  **Export** on the top right.
 4. Import coupons: Click  **Import** on the top right.
 5. View coupon details: Click on the item from the list to open its details page.

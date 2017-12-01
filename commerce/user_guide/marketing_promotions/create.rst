@@ -17,7 +17,7 @@ To create a new promotion:
 
    The following page opens:
 
-   .. image:: /user_guide/img/marketing/promotions/NewCreatePromotion.png
+   .. image:: /user_guide/img/marketing/promotions/CreateNewPromotion.png
 
 3. In the **General** section, complete the following fields:
 
@@ -28,9 +28,7 @@ To create a new promotion:
    e) **Stop Further Rule Processing** --- Select this option if you wish to prevent applying other promotions with lower priority.
 
       For instance, if there are three promotions for the same products with sort orders 1, 2 and 3 respectively, and the promotion with sort order 2 has **Stop Further Rule Processing** enabled, then when the turn reaches such promotion, the queue stops and promotion with sort order 3 is not applied.
-   f) **Triggered by** --- Select *Coupons and Conditions* if the promotion is going to use :ref:`coupons <user-guide--marketing--promotions--coupons>`, and *Conditions only* if it is not.
-
-      .. note:: When the option is set to *Yes*, the promotion can be applied exclusively via coupons. When the option is set to *No*, the promotion cannot be attached to any coupon.
+   f) **Triggered by** --- Select *Coupons and Conditions* if the promotion is going to use :ref:`coupons <user-guide--marketing--promotions--coupons>`, and *Conditions only* if it is not.  
 
 4. In the **Discount Options** section, configure the discount calculation.
 
@@ -51,9 +49,9 @@ To create a new promotion:
 
    d) Depending on the discount type, the remaining fields in the **Discount Options** section will differ. See the following sections for their detailed description:
 
-      * `Discount Options for Line Items`_
+      * `Discount Options for Order Line Item`_
 
-      * `Discount Options for Buy X Get Y`_
+      * `Discount Options for Buy X Get Y (Same Product)`_
 
       * `Discount Options for Shipping`_
 
@@ -84,25 +82,25 @@ To create a new promotion:
 
    .. image:: /user_guide/img/marketing/promotions/CouponFrontStoreName.png
 
-Discount Options for Line Items
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Discount Options for Order Line Item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For the line items discount, provide the following information:
 
 .. image:: /user_guide/img/marketing/promotions/LineItems.png
 
-* **Product Unit** --- Select the necessary unit type from the list (e.g. each, item, set.). Note that the discount will only apply to the product with a specified unit type.
+* **Unit of Quantity** --- Select the necessary unit type from the list (e.g. each, item, set.). Note that the discount will only apply to the product with a specified unit type.
 
 * **Apply Discount to** --- Select whether to apply discount to each of the items on sale or for the line items total.
 
   For instance, if there are 10 items in the shopping list that qualify for a discount and the discount is $1 per item, then the discount will constitute $10. If in the same scenario the promotion should apply to the line items total, then the total discount will constitute $1.
 
-* **Maximum Quantity Discount is Applied to** --- Enter the maximum quantity of products of the same type eligible for discount in a line item/order. For example, when the limit is set to 10 and a buyer orders 100 items, they will be charged the discounted price for 10 items out of 100, and will pay the full price for the remaining 90 items.
+* **Maximum Qty Discount is Applied to** --- Enter the maximum quantity of products of the same type eligible for discount in a line item/order. For example, when the limit is set to 10 and a buyer orders 100 items, they will be charged the discounted price for 10 items out of 100, and will pay the full price for the remaining 90 items.
 
   .. note:: Please note that the **Maximum Quantity Discount is Applied to** field can only be applied if the **Apply Discount to** field is set to *Each Item*.
 
-Discount Options for Buy X Get Y
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Discount Options for Buy X Get Y (Same Product)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For the Buy X Get Y (Same Product) discount, provide the following information:
 
@@ -110,7 +108,7 @@ For the Buy X Get Y (Same Product) discount, provide the following information:
 
 * **Buy X Quantity** --- Enter the quantity of X products the customer needs to purchase to be eligible for the discount.
 * **Get Y Quantity** --- Enter the quantity of Y products which the customer will get a discount for when purchases a number of X products.
-* **Product Unit** --- Select the necessary unit type from the list (e.g. each, item, set). Note that the discount will only apply to the product with the specified unit type.
+* **Unit of Quantity** --- Select the necessary unit type from the list (e.g. each, item, set). Note that the discount will only apply to the product with the specified unit type.
 * **Apply Discount to** --- Select one of the options, *Each Y Item Separately* (the discount will apply to Y items only) or *X+Y Total* (the discount will apply to the total of X and Y items).
 
   For instance, if:
