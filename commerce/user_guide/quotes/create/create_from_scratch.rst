@@ -96,12 +96,12 @@ To create a new quote from scratch:
 
    c) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
 
-   d) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shippig method is locked, the buyer does not see any other payment options but the default one.
+   d) To enforce using only the default Shipping method selected earlier, enable the **Shipping Method Locked** flag. When the shipping method is locked, the buyer does not see any other payment options but the default one.
 
    e) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method that is already selected as a default one, even if it is disabled by the shipping rule configuration.
 
 8. Optionally, select a **Payment Term** as an available payment method.
 
-.. 9. Optionally, select an **Opportunity** to bind it with the quote. (DOES NOT WORK YET)
+   .. note:: Be aware that although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed. More information on the relationship between opportunities and quotes is available in the relevant `OroCommerce Opportunity Flow topic <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/opportunities#orocommerce-opportunity-flow>`_ in the OroCRM documentation .
 
 9. Click **Save**.

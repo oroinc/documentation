@@ -9,7 +9,12 @@ You can create a quote based on the customer request for quote, or from scratch,
 
 * :ref:`Create a quote from scratch <quote--create-from-scratch>`
 
-* :ref:`Create a quote from RFQ <quote--create-from-rfq>`
+* :ref:`Create a quote from an RFQ <quote--create-from-rfq>`
+
+If you are using your OroCommerce application with OroCRM, you can create a quote from an open opportunity related to a Commerce Customer once you activate the OroCommerce Opportunity Flow:
+
+* `Create a quote from an opportunity <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/opportunities#orocommerce-opportunity-flow>`_
+
 
 .. finish_create_quote
 
