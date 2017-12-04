@@ -1,6 +1,7 @@
 :orphan:
 
 .. _import-bulk-items:
+.. _user-guide-import:
 
 .. begin_global_import
 

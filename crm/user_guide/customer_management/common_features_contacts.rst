@@ -153,12 +153,12 @@ In addition, from the grid you can:
 - Perform :ref:`bulk delete <doc-grids-actions-records-delete-multiple>` of several contacts.
 
 Export
-~~~~~~
+^^^^^^
 
 You can export the contact details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
 Import
-~~~~~~
+^^^^^^
 
 You can import the bulk details of updated or processed contact information in the .csv format following the steps described in the :ref:`Importing Contacts <import-contacts>` guide.
 

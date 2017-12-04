@@ -22,7 +22,7 @@ In the Marketing Configuration guide, you can learn how to enable the key market
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                      <li><a class="reference internal" href="../marketing_features#marketing-system-configuration"><span class="std std-ref">Features</span></a></li>
+                      <li><a class="reference internal" href="marketing_features#marketing-system-configuration"><span class="std std-ref">Features</span></a></li>
                     </ul>
           </div>
       </div>

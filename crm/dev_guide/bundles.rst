@@ -279,7 +279,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/dev_guide/background_tasks/importexport`
         * Cookbook: :doc:`/dev_guide/cookbook/how_to_accelerate_import`
-        * User guide: :doc:`/user_guide/records/data_management_import_export`
+        * User guide: :ref:`Import and Export <user-guide-export-import>`
 
 `InstallerBundle`_ (OroPlatform)
     The web installer for OroCRM.
