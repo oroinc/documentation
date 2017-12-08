@@ -6,7 +6,7 @@ Documentation Style Guide
 .. contents:: :local:
     :depth: 3
 
-We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at http://www.orocrm.com/documentation. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
+We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at http://www.oroinc.com/doc/orocrm. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
 
 Documentation source files are maintained in the dedicated `github repository <https://github.com/orocrm/documentation>`_.
 

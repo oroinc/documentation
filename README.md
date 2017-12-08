@@ -3,25 +3,25 @@
 Oro documentation explains how to develop business application in easy and extendable way.
 The use of the documentation is subject to the [CC-BY-NC-SA 4.0](./LICENSE) license.
 
-Documentation is published at https://www.orocrm.com/documentation
+Documentation is published at https://www.oroinc.com/doc/orocrm
 
 ## Documentation Structure
 
-### [The Oro Book](https://www.orocrm.com/documentation/index/current/book)
+### [The Oro Book](https://www.oroinc.com/doc/orocrm/current/book)
 
 Overview of Platform architecture, design and key features.
 This section will help to understand better platform design and technical details.
 
-### [The Oro Cookbook](https://www.orocrm.com/documentation/index/current/cookbook)
+### [The Oro Cookbook](https://www.oroinc.com/doc/orocrm/current/cookbook)
 
 Developer guidance to specific features and implementations, collection of "How to" articles that allow
 to achieve result in quick and right way without going deep into technical details.
 
-### [User Guide](https://www.orocrm.com/documentation/index/current/user-guide)
+### [User Guide](https://www.oroinc.com/doc/orocrm/current/user-guide)
 
 End user oriented documentation that explains how to administer and configure platform features.
 
-### [Community Guide](https://www.orocrm.com/documentation/index/current/community)
+### [Community Guide](https://www.oroinc.com/doc/orocrm/current/community)
 
 Learn about our development process and how you can contribute to the Oro Platform.
 

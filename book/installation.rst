@@ -723,5 +723,5 @@ with the OroPlatform application and upgrade it by installing the "oro/crm" pack
 .. _`documentation`: https://github.com/doctrine/data-fixtures/blob/master/README.md
 .. _`MessageQueueBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle
 .. _`MessageQueueComponent`: https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue
-.. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements
+.. _`system requirements`: http://www.oroinc.com/doc/orocrm/current/system-requirements
 .. _`example of supervisord configuration`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle#supervisord

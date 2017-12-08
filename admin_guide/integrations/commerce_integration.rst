@@ -10,7 +10,7 @@ OroCommerce Integration
 Overview
 --------
 
-Integration with `OroCommerce <https://www.orocommerce.com/documentation/current/>`_ provides seamless experience of two applications working as one. 
+Integration with `OroCommerce <https://www.oroinc.com/doc/orocommerce/current/>`_ provides seamless experience of two applications working as one.
 
 It is possible to install OroCommerce over existing OroCRM instance, add OroCRM to existing OroCommerce instance or instal both applications as a single package.
 

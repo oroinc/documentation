@@ -24,7 +24,7 @@ Currently, there are three types of channels in your Oro application: Magento, S
 
 * A Sales channel is required to enable a Business Customer entity. More information on business customers can be found in the :ref:`Business customer <user-guide-system-channel-entities-business-customer>` and :ref:`Business-to-business sales <user-guide-business-to-business-sales>` topics.
 
-* A :ref:`Commerce <user-guide-commerce-integration>` channel is available only for those applications that are integrated with OroCommerce. In applications with active OroCommerce integration, a Commerce channel enables Customers and Customer users. More information can be found in the relevant `OroCommerce documentation <https://www.orocommerce.com/documentation/current/user-guide/customers>`_.
+* A :ref:`Commerce <user-guide-commerce-integration>` channel is available only for those applications that are integrated with OroCommerce. In applications with active OroCommerce integration, a Commerce channel enables Customers and Customer users. More information can be found in the relevant `OroCommerce documentation <https://www.oroinc.com/doc/orocommerce/current/user-guide/customers>`_.
 
 .. note:: Please note that a Custom channel, although available in the user interface, is deprecated, and will be removed in later releases.
 

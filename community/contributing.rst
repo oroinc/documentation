@@ -14,9 +14,9 @@ Submitting a Question
 
 If you have questions about how to use, configure, extend or customize OroPlatform, OroCommerce or OroCRM, please direct these to our community forums:
 
-* `OroPlatform community forum <http://www.orocrm.com/forums/forum/oro-platform>`_
-* `OroCommerce community forum <http://www.orocommerce.com/forums/forum/orocommerce>`_
-* `OroCRM community forum <http://www.orocrm.com/forums/forum/orocrm>`_
+* `OroPlatform community forum <http://community.oroinc.com/forum/oro-platform>`_
+* `OroCommerce community forum <http://community.oroinc.com/forum/orocommerces/forum/orocommerce>`_
+* `OroCRM community forum <http://community.oroinc.com/forum/orocrm>`_
 
 Submitting a Bug
 ----------------
