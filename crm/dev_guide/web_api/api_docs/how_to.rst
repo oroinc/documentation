@@ -464,7 +464,7 @@ An example of ``Resources/oro/routing.yml`` configuration file:
 
 An information about ``ApiDoc`` annotation can be found in `Symfony documentation <https://symfony.com/doc/current/bundles/NelmioApiDocBundle/the-apidoc-annotation.html>`__. To find all possible properties of ``fields`` option take a look at `AbstractFormatter class in NelmioApiDocBundle <https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Formatter/AbstractFormatter.php>`__. Please note that ``fields`` option can be used inside ``input`` and ``output`` options.
 
-Use `oro:api:doc:cache:clear <./commands.md#oroapidoccacheclear>`__ command to apply changes in ``ApiDoc`` annotation to `API Sandbox <https://www.orocrm.com/documentation/current/dev_guide/web_api/index#api-sandbox>`__.
+Use `oro:api:doc:cache:clear <./commands.md#oroapidoccacheclear>`__ command to apply changes in ``ApiDoc`` annotation to `API Sandbox <https://oroinc.com/doc/orocrm/current/dev_guide/web_api/index#api-sandbox>`__.
 
 Using a non-primary key to identify an entity
 ---------------------------------------------

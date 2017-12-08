@@ -26,4 +26,4 @@ You can adjust the following settings for the purchase funnel widget:
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `Tracking Websites <https://www.orocrm.com/documentation/current/user-guide-marketing-tools/tracking#user-guide-marketing-tracking>`_
+* `Tracking Websites <https://oroinc.com/doc/orocrm/current/user-guide-marketing-tools/tracking#user-guide-marketing-tracking>`_

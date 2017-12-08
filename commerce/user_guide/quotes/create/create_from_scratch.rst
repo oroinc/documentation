@@ -102,6 +102,6 @@ To create a new quote from scratch:
 
 8. Optionally, select a **Payment Term** as an available payment method.
 
-   .. note:: Be aware that although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed. More information on the relationship between opportunities and quotes is available in the relevant `OroCommerce Opportunity Flow topic <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/opportunities#orocommerce-opportunity-flow>`_ in the OroCRM documentation .
+   .. note:: Be aware that although opportunity relation can be displayed on the quote page, it is not possible to manage it. When there is no opportunity relation available for a quote, inactive **Opportunity** field is displayed. More information on the relationship between opportunities and quotes is available in the relevant `OroCommerce Opportunity Flow topic <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/opportunities#orocommerce-opportunity-flow>`_ in the OroCRM documentation .
 
 9. Click **Save**.

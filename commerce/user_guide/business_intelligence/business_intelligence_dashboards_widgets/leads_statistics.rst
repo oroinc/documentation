@@ -26,12 +26,12 @@ You can adjust the following settings for the lead statistics widget:
 * **Compare with previous period** --- tick this option if you wish to compare statistics for the current and the previous periods and see it displayed in the dashboard widget.
 * **Advanced Filter** --- set the conditions if you wish to filter your leads.
 * **Choose Metrics** --- select what data the widget will display (open leads, new leads).
-* **Territories** --- if sales `territories <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view leads filtered within one or several specific territories.
+* **Territories** --- if sales `territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view leads filtered within one or several specific territories.
 
 .. image:: /user_guide/img/business_intelligence/lead_statistics_2.png
 
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `How to Create and Work with a Lead <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_
-* `Business-to-business Sales <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales>`_
+* `How to Create and Work with a Lead <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_
+* `Business-to-business Sales <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales>`_

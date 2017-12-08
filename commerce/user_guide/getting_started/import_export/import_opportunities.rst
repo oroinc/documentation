@@ -21,7 +21,7 @@ Importing Opportunities
    :start-after: begin 1
    :end-before: Related Topics
 
-More information on how to create and manage opportunities is described in the `Opportunities guide <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/opportunities>`_.
+More information on how to create and manage opportunities is described in the `Opportunities guide <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/opportunities>`_.
 
 .. finish
 

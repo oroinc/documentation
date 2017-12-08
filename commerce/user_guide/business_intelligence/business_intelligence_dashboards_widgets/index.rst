@@ -149,7 +149,7 @@ The header of each widget contains:
 
 - The |IcSettings| Settings button --- Click the button to adjust the widget. See the `Adjust Widget Settings`_ section for the options you can change.
 
-The specified owner, date range and the `territory <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/territory-management>`_ (if available for the entity) are displayed at the bottom of the widget:
+The specified owner, date range and the `territory <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ (if available for the entity) are displayed at the bottom of the widget:
 
 .. image:: /user_guide/img/business_intelligence/owner_date_terr_displayed.png
 

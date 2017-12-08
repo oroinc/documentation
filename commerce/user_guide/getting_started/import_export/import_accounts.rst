@@ -21,7 +21,7 @@ Importing Accounts
    :start-after: begin 1
    :end-before: Related Topics
 
-More information on how to create and manage accounts is described in the `Accounts guide <https://www.orocrm.com/documentation/current/user-guide/customer-management/common-features-accounts>`_.
+More information on how to create and manage accounts is described in the `Accounts guide <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts>`_.
 
 .. finish
 

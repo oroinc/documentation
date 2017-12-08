@@ -27,5 +27,5 @@ You can adjust the following settings for the recently accessed accounts widget:
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `Accounts: Create, Manage, Merge <https://www.orocrm.com/documentation/current/user-guide/customer-management/common-features-accounts>`_
+* `Accounts: Create, Manage, Merge <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts>`_
 * `How to Use Accounts, Contacts and Customers <https://www.orocrm.com/blog/product-news-updates/accounts-contacts-customers-360-degree-view>`_

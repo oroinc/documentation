@@ -21,7 +21,7 @@ Importing Leads
    :start-after: begin 1
    :end-before: Related Topics
 
-More information on how to create and manage leads is described in the `Leads guide <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/leads>`_.
+More information on how to create and manage leads is described in the `Leads guide <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads>`_.
 
 .. finish
 

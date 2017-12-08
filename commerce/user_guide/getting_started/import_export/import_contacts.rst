@@ -52,6 +52,6 @@ Follow the on-screen guidance for any additional actions. For example, for the i
    <iframe width="560" height="315" src="https://www.youtube.com/embed/shpqpFao6bA" frameborder="0" allowfullscreen></iframe>
 
 
-More information on how to create and manage contacts is described in the `Contacts guide <https://www.orocrm.com/documentation/current/user-guide/customer-management/common-features-contacts>`_.
+More information on how to create and manage contacts is described in the `Contacts guide <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-contacts>`_.
 
 .. finish

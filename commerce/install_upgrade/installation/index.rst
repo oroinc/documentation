@@ -63,7 +63,7 @@ To reinstall |main_app_in_this_topic|:
 .. _`in the official Symfony documentation`: http://symfony.com/doc/current/book/installation.html#book-installation-permissions
 .. _`Configuring a Web Server`: http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
 .. _`Symfony Cookbook`: http://symfony.com/doc/current/cookbook/index.html
-.. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements
+.. _`system requirements`: http://www.oroinc.com/doc/orocrm/current/system-requirements
 
 .. finish_common_install
 

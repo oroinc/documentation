@@ -31,7 +31,7 @@ You can adjust the following settings for the opportunity statistics widget:
   * Won Opportunities to date
   * Won Opportunities to date amount
 
-* **Territories** --- if sales `territories <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view opportunities filtered within one or several specific territories.
+* **Territories** --- if sales `territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view opportunities filtered within one or several specific territories.
 
 .. image:: /user_guide/img/business_intelligence/opportunity_statistics_2.png
 
@@ -40,5 +40,5 @@ Related Articles
 ^^^^^^^^^^^^^^^^
 
 * `How to Create and Work with an Opportunity <https://www.orocrm.com/blog/product-features-and-tutorials/create-work-opportunity-orocrm>`_
-* `Business-to-business Sales <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales>`_
-* `Sales Territories <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/territory-management#user-guide-territories>`_
+* `Business-to-business Sales <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales>`_
+* `Sales Territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management#user-guide-territories>`_

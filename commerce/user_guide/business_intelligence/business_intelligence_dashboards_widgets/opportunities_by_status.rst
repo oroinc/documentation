@@ -24,7 +24,7 @@ You can adjust the following settings for the opportunities by status widget:
 * **Date Range** --- the time for which the widget details are displayed.
 * **Excluded Statuses** --- select what status the widget should not display (e.g. Closed Won).
 * **Display data** --- choose which data to display on the chart. The *count* shows the number of opportunities in a particular status, and *amount* displays their total budget.
-* **Territories** --- if sales `territories <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view opportunities filtered within one or several specific territories.
+* **Territories** --- if sales `territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view opportunities filtered within one or several specific territories.
 
 .. image:: /user_guide/img/business_intelligence/opp_by_status_config.png
 
@@ -33,6 +33,6 @@ You can select whether to display opportunities amount or count, as well as sele
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `Business-to-business Sales <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales>`_
+* `Business-to-business Sales <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales>`_
 * `How to Create and Work with an Opportunity <https://www.orocrm.com/blog/product-features-and-tutorials/create-work-opportunity-orocrm>`_
-* `Sales Territories <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/territory-management#user-guide-territories>`_
+* `Sales Territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management#user-guide-territories>`_

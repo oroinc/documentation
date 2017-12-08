@@ -16,9 +16,9 @@ To view a system report, navigate to **Report & Segments > Reports** in the main
 
 The following system reports are available out-of-the-box at the Oro application:
 
-* `Account reports <https://www.orocrm.com/documentation/current/user-guide/customer-management/common-features-accounts>`_
-* `Leads reports <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/leads#doc-leads-reports>`_
-* `Opportunities reports <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/opportunities/reports#user-guide-opportunities-reports>`_
+* `Account reports <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts>`_
+* `Leads reports <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads#doc-leads-reports>`_
+* `Opportunities reports <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/opportunities/reports#user-guide-opportunities-reports>`_
 * :ref:`Best Selling Products reports <best-selling-products-reports>`
 
 .. _best-selling-products-reports:

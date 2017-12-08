@@ -9,9 +9,9 @@ Contact Community
 
 If you have questions or ideas about how to use, configure, extend or customize OroPlatform, OroCommerce or OroCRM, please direct these to our community forums:
 
-* `OroPlatform community forum <http://www.orocrm.com/forums/forum/oro-platform>`_
-* `OroCommerce community forum <https://www.orocommerce.com/forum>`_
-* `OroCRM community forum <http://www.orocrm.com/forums/forum/orocrm>`_
+* `OroPlatform community forum <http://community.oroinc.com/forum/oro-platform>`_
+* `OroCommerce community forum <https://community.oroinc.com/forum/orocommerce/>`_
+* `OroCRM community forum <http://community.oroinc.com/forum/orocrm>`_
 
 
 If you would like to join our community team chat channel on `Slack <https://orocommunity.slack.com/>`_,

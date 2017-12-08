@@ -198,7 +198,7 @@ To reinstall OroCommerce:
 .. _`Symfony Cookbook`: http://symfony.com/doc/current/cookbook/index.html
 .. _`MessageQueueBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle
 .. _`MessageQueueComponent`: https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue
-.. _`system requirements`: http://www.orocrm.com/documentation/index/current/system-requirements
+.. _`system requirements`: http://www.oroinc.com/doc/orocrm/current/system-requirements
 .. _`example of supervisord configuration`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle#supervisord
 
 .. _`orocommerce.com`: http://www.orocommerce.com/

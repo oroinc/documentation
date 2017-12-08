@@ -13,4 +13,4 @@ To enable lead in your Oro application:
    Leads menu should now appear under **Sales** in the main menu.
 
 
-More information on leads can be found in the relevant `Leads topic <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_ in OroCRM documentation.
+More information on leads can be found in the relevant `Leads topic <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_ in OroCRM documentation.

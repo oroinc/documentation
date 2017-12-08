@@ -25,5 +25,5 @@ You can adjust the following settings for the average lifetime sales widget:
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `Accounts Life Time Value <https://www.orocrm.com/documentation/current/user-guide/customer-management/common-features-accounts#accounts-life-time-value>`_
+* `Accounts Life Time Value <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts#accounts-life-time-value>`_
 * `Customer Life Time Value <https://www.orocommerce.com/blog/kpis-track-b2b-success-part-ii-customer-lifetime-value>`_

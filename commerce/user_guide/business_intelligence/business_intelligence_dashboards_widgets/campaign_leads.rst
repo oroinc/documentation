@@ -26,6 +26,6 @@ You can adjust the following settings for the campaign leads widget:
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `How to Create and Work with a Lead <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_
-* `Business-to-business Sales <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales>`_
+* `How to Create and Work with a Lead <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_
+* `Business-to-business Sales <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales>`_
 * :ref:`Marketing Automation <user-guide-marketing>`

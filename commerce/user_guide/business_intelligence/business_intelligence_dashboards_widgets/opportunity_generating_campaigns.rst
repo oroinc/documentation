@@ -26,5 +26,5 @@ Related Articles
 ^^^^^^^^^^^^^^^^
 
 * `How to Create and Work with an Opportunity <https://www.orocrm.com/blog/product-features-and-tutorials/create-work-opportunity-orocrm>`_
-* `Business-to-business Sales <https://www.orocrm.com/documentation/current/user-guide-sales-tools/b2b-sales>`_
+* `Business-to-business Sales <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales>`_
 * :ref:`Marketing Automation <user-guide-marketing>`

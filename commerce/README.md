@@ -2,7 +2,7 @@
 
 The use of the documentation is subject to the [CC-BY-NC-SA 4.0](./LICENSE) license.
 
-Documentation is published at https://www.orocommerce.com/documentation
+Documentation is published at https://www.oroinc.com/doc/orocommerce
 
 ## Build Documentation in Local Environment
 
