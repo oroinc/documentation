@@ -16,7 +16,7 @@ Table of Contents
 Overview
 --------
 
-To be sure that your REST API resources work properly you can cover them by `functional tests <https://www.orocrm.com/documentation/current/book/functional-tests>`__. To simplify creating the functional test for REST API resources conform `JSON.API specification <http://jsonapi.org/format/>`__ the `RestJsonApiTestCase <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiTestCase.php>`__ test case was created. The following table contains the list
+To be sure that your REST API resources work properly you can cover them by `functional tests <https://oroinc.com/doc/orocrm/current/book/functional-tests>`__. To simplify creating the functional test for REST API resources conform `JSON.API specification <http://jsonapi.org/format/>`__ the `RestJsonApiTestCase <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiTestCase.php>`__ test case was created. The following table contains the list
 of most useful methods of this class:
 
 +----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -70,7 +70,7 @@ of most useful methods of this class:
 Load Fixtures
 -------------
 
-You can use `Doctrine and Alice fixtures <https://www.orocrm.com/documentation/current/book/functional-tests#loading-data-fixtures>`__:
+You can use `Doctrine and Alice fixtures <https://oroinc.com/doc/orocrm/current/book/functional-tests#loading-data-fixtures>`__:
 
 .. code:: php
 

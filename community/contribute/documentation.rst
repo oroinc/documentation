@@ -6,7 +6,7 @@ Contribute to Documentation
 .. contents:: :local:
     :depth: 3
 
-We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at http://www.orocrm.com/documentation. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
+We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at http://www.oroinc.com/doc/orocrm. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
 
 Documentation source files are maintained in the dedicated `github repository <https://github.com/orocrm/documentation>`_.
 
@@ -380,7 +380,7 @@ Once you are ready, create a pull request in the `OroCRM documentation <https://
 .com/orocrm/documentation>`_ repository with changes from your forked repository. See :ref:`Code Version Control <code-version-control>` for more information on using repository.
 
 After documentation review, your changes will be merged to the OroCRM documentation and will be published on the
-`OroCRM website <http://www.orocrm.com/documentation>`_.
+`OroCRM website <http://www.oroinc.com/doc/orocrm>`_.
 
 
 See Also
