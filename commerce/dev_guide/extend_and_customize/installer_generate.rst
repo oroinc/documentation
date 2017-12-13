@@ -7,14 +7,21 @@ When you have implemented new entities, you want to be sure that upon installing
 
 To create an installer for AcmeBundle:
 
-1. Apply the changes that you defined in your code to the database:
+1. Clear the application cache:
+
+   .. code-block:: bash
+      :linenos:
+
+      app/console cache:clear
+
+2. Apply the changes that you defined in your code to the database:
 
    .. code-block:: bash
       :linenos:
 
       app/console doctrine:schema:update --force
 
-2. Generate an installer and save it to the AcmeBundleInstaller.php:
+3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
    .. code-block:: bash
       :linenos:

@@ -68,7 +68,7 @@ When running sales promotions:
 
 * :ref:`Manage order promotions, coupons <user-guide--marketing--promotions--coupons--edit--manage-when-editing-an-order>`, and special discounts when you edit an order.
 
-Moving an Order through Its Lifecycle
+Moving an Order Through Its Lifecycle
 -------------------------------------
 
 You can control the order lifecycle and:

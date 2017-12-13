@@ -1,9 +1,9 @@
 Add a New Payment Method
 ========================
 
-This topic will guide you through adding a custom payment method for your OroCommerce-based store.
+This topic describes how to add a custom payment method for your OroCommerce-based store.
 
-The good practice in OroCommerce is to manage payment methods through integrations. Therefore, to create a new payment method you need to:
+It is recommended to manage payment methods through integrations. Therefore, to create a new payment method:
 
 - Implement an integration for a payment method
 - Implement a payment method itself
@@ -33,7 +33,7 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
     {
     }
 
-2. To enable the bundle, in the same directory, create Resources/config/oro/bundles.yml with the following content:
+2. To enable the bundle, create Resources/config/oro/bundles.yml in the same directory, with the following content:
 
    .. code-block:: yaml
        :linenos:
@@ -44,16 +44,17 @@ First, create and enable the CollectOnDeliveryBundle bundle for your payment met
 
    .. hint:: To fully enable a bundle, you need to regenerate the application cache. However, to save time, you can do it after creation of the payment integration.
 
+
+.. tip::
+   All the files and subdirectories mentioned in the following sections of this topic are to be added to the /src/ACME/Bundle/CollectOnDeliveryBundle/ directory of your application (referred to as **<bundle_root>**).
+
 Create a Payment Integration
 ----------------------------
-
-All the files and subdirectories mentioned in this section are to be added to the /src/ACME/Bundle/CollectOnDeliveryBundle/ directory of your application (referred to as <bundle_root> below).
-
 
 Create an Entity to Store the Payment Method Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Define an entity that will store the payment method's configuration settings in the database. To do this, create <bundle_root>/Entity/CollectOnDeliverySettings.php:
+Define an entity to store the configuration settings of the payment method in the database. To do this, create <bundle_root>/Entity/CollectOnDeliverySettings.php:
 
 .. code-block:: php
    :linenos:
@@ -217,7 +218,7 @@ Define an entity that will store the payment method's configuration settings in 
        }
    }
 
-From the code above you can see, that only two necessary parameters are defined for our collect on delivery payment method: ``labels`` and ``shortLabels``.
+As you can see from the code above, the only two necessary parameters are defined for our collect on delivery payment method: ``labels`` and ``shortLabels``.
 
 .. important::
    When naming DB columns, make sure that the name does not exceed 31 symbols. Pay attention to the acme_coll_on_deliv_short_label name in the following extract:
@@ -269,106 +270,140 @@ Create a User Interface Form for the Payment Method Integration
 
 When you add an integration via the user interface of the management console, a form that contains the integration settings appears. In this step, implement the form. To do this, create <bundle_root>/Form/Type/CollectOnDeliverySettingsType.php:
 
-   .. code-block:: php
-      :linenos:
+.. code-block:: php
+   :linenos:
 
-      <?php
+   <?php
 
-      namespace ACME\Bundle\CollectOnDeliveryBundle\Form\Type;
+   namespace ACME\Bundle\CollectOnDeliveryBundle\Form\Type;
 
-      use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
-      use Oro\Bundle\LocaleBundle\Form\Type\LocalizedFallbackValueCollectionType;
-      use Symfony\Component\Form\AbstractType;
-      use Symfony\Component\Form\FormBuilderInterface;
-      use Symfony\Component\OptionsResolver\OptionsResolver;
-      use Symfony\Component\Validator\Constraints\NotBlank;
+   use ACME\Bundle\CollectOnDeliveryBundle\Entity\CollectOnDeliverySettings;
+   use Oro\Bundle\LocaleBundle\Form\Type\LocalizedFallbackValueCollectionType;
+   use Symfony\Component\Form\AbstractType;
+   use Symfony\Component\Form\FormBuilderInterface;
+   use Symfony\Component\OptionsResolver\OptionsResolver;
+   use Symfony\Component\Validator\Constraints\NotBlank;
 
-      class CollectOnDeliverySettingsType extends AbstractType
-      {
-          const BLOCK_PREFIX = 'acme_collect_on_delivery_setting_type';
+   class CollectOnDeliverySettingsType extends AbstractType
+   {
+       const BLOCK_PREFIX = 'acme_collect_on_delivery_setting_type';
 
-          /**
-           * {@inheritdoc}
-           */
-          public function buildForm(FormBuilderInterface $builder, array $options)
-          {
-              $builder
-                  ->add(
-                      'labels',
-                      LocalizedFallbackValueCollectionType::NAME,
-                      [
-                          'label' => 'acme.collect_on_delivery.settings.labels.label',
-                          'required' => true,
-                          'options' => ['constraints' => [new NotBlank()]],
-                      ]
-                  )
-                  ->add(
-                      'shortLabels',
-                      LocalizedFallbackValueCollectionType::NAME,
-                      [
-                          'label' => 'acme.collect_on_delivery.settings.short_labels.label',
-                          'required' => true,
-                          'options' => ['constraints' => [new NotBlank()]],
-                      ]
-                  );
-          }
+       /**
+        * {@inheritDoc}
+        */
+       public function buildForm(FormBuilderInterface $builder, array $options)
+       {
+           $builder
+               ->add(
+                   'labels',
+                   LocalizedFallbackValueCollectionType::NAME,
+                   [
+                       'label' => 'acme.collect_on_delivery.settings.labels.label',
+                       'required' => true,
+                       'options' => ['constraints' => [new NotBlank()]],
+                   ]
+               )
+               ->add(
+                   'shortLabels',
+                   LocalizedFallbackValueCollectionType::NAME,
+                   [
+                       'label' => 'acme.collect_on_delivery.settings.short_labels.label',
+                       'required' => true,
+                       'options' => ['constraints' => [new NotBlank()]],
+                   ]
+               );
+       }
 
-          /**
-           * {@inheritdoc}
-           */
-          public function configureOptions(OptionsResolver $resolver)
-          {
-              $resolver->setDefaults(
-                  [
-                      'data_class' => CollectOnDeliverySettings::class,
-                  ]
-              );
-          }
+       /**
+        * {@inheritDoc}
+        */
+       public function configureOptions(OptionsResolver $resolver)
+       {
+           $resolver->setDefaults(
+               [
+                   'data_class' => CollectOnDeliverySettings::class,
+               ]
+           );
+       }
 
-          /**
-           * {@inheritdoc}
-           */
-          public function getBlockPrefix()
-          {
-              return self::BLOCK_PREFIX;
-          }
+       /**
+        * {@inheritDoc}
+        */
+       public function getBlockPrefix()
+       {
+           return self::BLOCK_PREFIX;
+       }
 
-      }
+   }
 
-Add the User Interface From to the Services Container
+Create a Configuration File for the Service Container
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To start using a service container for your bundle, create <bundle_root>/Resources/config/services.yml:
+To start using a service container for your bundle, first create the configuration file <bundle_root>/Resources/config/services.yml.
 
-   .. code-block:: yaml
-      :linenos:
+Add the User Interface Form to the Services Container
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-       parameters:
-        acme_collect_on_delivery.method.identifier_prefix.collect_on_delivery: 'collect_on_delivery'
+Add the following lines to the services.yml:
 
-       services:
-        acme_collect_on_delivery.generator.collect_on_delivery_config_identifier:
-            parent: oro_integration.generator.prefixed_identifier_generator
-            public: true
-            arguments:
-                - '%acme_collect_on_delivery.method.identifier_prefix.collect_on_delivery%'
+.. code-block:: yaml
+   :linenos:
+
+     acme_collect_on_delivery.form.type.settings:
+         class: 'ACME\Bundle\CollectOnDeliveryBundle\Form\Type\CollectOnDeliverySettingsType'
+         tags:
+             - { name: form.type }
 
 
-To add the newly created form to the container, append the following lines to the services.yml:
+Set up Services with DependencyInjection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. code-block:: yaml
-      :linenos:
+To set up services, load your configuration file (services.yml) using the DependencyInjection component. For this, create <bundle_root>/DependencyInjection/CollectOnDeliveryExtension.php with the following content:
 
-        acme_collect_on_delivery.form.type.settings:
-            class: ACME\Bundle\CollectOnDeliveryBundle\Form\Type\CollectOnDeliverySettingsType
-            tags:
-                - { name: form.type }
+.. code-block:: php
+   :linenos:
+
+   <?php
+
+   namespace ACME\Bundle\CollectOnDeliveryBundle\DependencyInjection;
+
+   use Symfony\Component\Config\FileLocator;
+   use Symfony\Component\DependencyInjection\ContainerBuilder;
+   use Symfony\Component\DependencyInjection\Loader;
+   use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+
+   class CollectOnDeliveryExtension extends Extension
+   {
+       /** @internal */
+       const ALIAS = 'collect_on_delivery';
+
+       /**
+        * @param array            $configs
+        * @param ContainerBuilder $container
+        *
+        * @throws \Exception
+        */
+       public function load(array $configs, ContainerBuilder $container)
+       {
+           $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+           $loader->load('services.yml');
+       }
+
+       /**
+        * @return string
+        */
+       public function getAlias()
+       {
+           return static::ALIAS;
+       }
+   }
+
 
 
 Add Translations for the Form Texts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-As it is highly desirable to present the information on the user interface in the user-friendly way, you need to add translations for the payment method settings' names. To do this, create <bundle_root>/Resources/translations/messages.yml:
+To present the information on the user interface in the user-friendly way, add translations for the payment method settings' names. To do this, create <bundle_root>/Resources/translations/messages.en.yml:
 
 .. code-block:: yaml
    :linenos:
@@ -397,10 +432,9 @@ When you select the type of the integration on the user interface, you will see 
 
    class CollectOnDeliveryChannelType implements ChannelInterface, IconAwareIntegrationInterface
    {
-       const TYPE = 'collect_on_delivery';
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getLabel()
        {
@@ -408,7 +442,7 @@ When you select the type of the integration on the user interface, you will see 
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getIcon()
        {
@@ -416,11 +450,25 @@ When you select the type of the integration on the user interface, you will see 
        }
    }
 
+Add an Icon for the Integration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To add an icon:
+
+1. Save the file to the <bundle_root>/Resources/public/img directory.
+2. Install assets:
+
+   .. code-block:: bash
+       :linenos:
+
+       app/console oro:assets:install
+
+To make sure that the icon is accessible for the web interface, check if it appears (as a copy or a symlink depending on the settings selected during the application installation) in the /web/bundles/collect_on_delivery/img directory of your application.
 
 Create the Integration Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A transport is generally responsible for how the data is obtained from the external system. While our Collect On Delivery method does not interact with external systems, your still need to define a transport and implement all methods of the TransportInterface for integration to work properly. To add a transport, create <bundle_root>/Integration/CollectOnDeliveryTransport.php:
+A transport is generally responsible for how the data is obtained from the external system. While the Collect On Delivery method does not interact with external systems, you still need to define a transport and implement all methods of the TransportInterface for the integration to work properly. To add a transport, create <bundle_root>/Integration/CollectOnDeliveryTransport.php:
 
 .. code-block:: php
    :linenos:
@@ -438,14 +486,14 @@ A transport is generally responsible for how the data is obtained from the exter
    class CollectOnDeliveryTransport implements TransportInterface
    {
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function init(Transport $transportEntity)
        {
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getLabel()
        {
@@ -453,7 +501,7 @@ A transport is generally responsible for how the data is obtained from the exter
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getSettingsFormType()
        {
@@ -461,7 +509,7 @@ A transport is generally responsible for how the data is obtained from the exter
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getSettingsEntityFQCN()
        {
@@ -475,26 +523,30 @@ Add the Channel Type and Transport to the Services Container
 
 To register the channel type and transport, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. code-block:: yaml
+.. code-block:: none
    :linenos:
 
-    acme_collect_on_delivery.integration.channel:
-        class: ACME\Bundle\CollectOnDeliveryBundle\Integration\CollectOnDeliveryChannelType
-        public: true
-        tags:
-            - { name: oro_integration.channel, type: collect_on_delivery }
+   parameters:
+       acme_collect_on_delivery.integration.type: 'collect_on_delivery'
 
-    acme_collect_on_delivery.integration.transport:
-        class: ACME\Bundle\CollectOnDeliveryBundle\Integration\CollectOnDeliveryTransport
-        public: false
-        tags:
-            - { name: oro_integration.transport, type: collect_on_delivery, channel_type: collect_on_delivery }
+   services:
+       acme_collect_on_delivery.integration.channel:
+           class: 'ACME\Bundle\CollectOnDeliveryBundle\Integration\CollectOnDeliveryChannelType'
+           public: true
+           tags:
+               - { name: oro_integration.channel, type: %acme_collect_on_delivery.integration.type% }
+               
+       acme_collect_on_delivery.integration.transport:
+           class: 'ACME\Bundle\CollectOnDeliveryBundle\Integration\CollectOnDeliveryTransport'
+           public: false
+           tags:
+               - { name: oro_integration.transport, type: %acme_collect_on_delivery.integration.type%, channel_type: %acme_collect_on_delivery.integration.type% }
 
 
 Add Translations for the Channel Type and Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The channel type and, in general, transport labels also appear on the user interface (you will not see the the transport label for Collect On Delivery). Provide translations for them by appending the <bundle_root>/Resources/translations/messages.yml. Now, the messages.yml must look like:
+The channel type and, in general, transport labels also appear on the user interface (you will not see the the transport label for Collect On Delivery). Provide translations for them by appending the <bundle_root>/Resources/translations/messages.en.yml. Now, the messages.en.yml content must look as follows:
 
 .. code-block:: yaml
    :linenos:
@@ -512,8 +564,9 @@ The channel type and, in general, transport labels also appear on the user inter
 Add an Installer
 ^^^^^^^^^^^^^^^^
 
-An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle. To add an installer, create Migrations/Schema/CollectOnDeliveryBundleInstaller.php (see :ref:`How to generate an installer <installer_generate>` for help).
+An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle.
 
+Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic. After you complete it, you will have the class <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php with the following content:
 
 .. code-block:: php
    :linenos:
@@ -530,10 +583,10 @@ An installer ensures that upon the application installation, the database will c
     * @SuppressWarnings(PHPMD.TooManyMethods)
     * @SuppressWarnings(PHPMD.ExcessiveClassLength)
     */
-   class ACMECollectOnDeliveryBundleInstaller implements Installation
+   class CollectOnDeliveryBundleInstaller implements Installation
    {
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getMigrationVersion()
        {
@@ -541,7 +594,7 @@ An installer ensures that upon the application installation, the database will c
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function up(Schema $schema, QueryBag $queries)
        {
@@ -642,9 +695,9 @@ Check That the Integration is Created Successfully
 
    .. note::
 
-       If you are working in production environment, you have to use parameter --env=prod with the command.
+      If you are working in production environment, you have to use the ``--env=prod`` parameter  with the command.
 
-2. Open the user interface and check that the changes has applied and you can add an integration of the CollectOn Delivery type.
+2. Open the user interface and check that the changes have applied and you can add an integration of the Collect On Delivery type.
 
 
 Implement a Payment Method
@@ -960,7 +1013,7 @@ Configuration Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getLabel()
        {
@@ -968,7 +1021,7 @@ Configuration Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getShortLabel()
        {
@@ -976,7 +1029,7 @@ Configuration Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getAdminLabel()
        {
@@ -984,7 +1037,7 @@ Configuration Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getPaymentMethodIdentifier()
        {
@@ -1061,7 +1114,7 @@ Payment Method View Factory Class
    class CollectOnDeliveryViewFactory implements CollectOnDeliveryViewFactoryInterface
    {
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function create(CollectOnDeliveryConfigInterface $config)
        {
@@ -1113,7 +1166,7 @@ Payment Method View Provider Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        protected function buildViews()
        {
@@ -1172,7 +1225,7 @@ Payment Method View Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getOptions(PaymentContextInterface $context)
        {
@@ -1180,7 +1233,7 @@ Payment Method View Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getBlock()
        {
@@ -1188,7 +1241,7 @@ Payment Method View Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getLabel()
        {
@@ -1196,7 +1249,7 @@ Payment Method View Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getShortLabel()
        {
@@ -1204,14 +1257,14 @@ Payment Method View Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getAdminLabel()
        {
            return $this->config->getAdminLabel();
        }
 
-       /** {@inheritdoc} */
+       /** {@inheritDoc} */
        public function getPaymentMethodIdentifier()
        {
            return $this->config->getPaymentMethodIdentifier();
@@ -1285,7 +1338,7 @@ Factory Class
    class CollectOnDeliveryMethodFactory implements CollectOnDeliveryMethodFactoryInterface
    {
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function create(CollectOnDeliveryConfigInterface $config)
        {
@@ -1341,7 +1394,7 @@ Provider Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        protected function collectMethods()
        {
@@ -1401,7 +1454,7 @@ Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function execute($action, PaymentTransaction $paymentTransaction)
        {
@@ -1413,7 +1466,7 @@ Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function getIdentifier()
        {
@@ -1421,7 +1474,7 @@ Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function isApplicable(PaymentContextInterface $context)
        {
@@ -1429,7 +1482,7 @@ Class
        }
 
        /**
-        * {@inheritdoc}
+        * {@inheritDoc}
         */
        public function supports($actionName)
        {
@@ -1448,7 +1501,7 @@ Class
       ...
 
       /**
-      * {@inheritdoc}
+      * {@inheritDoc}
       */
        public function supports($actionName)
        {
@@ -1577,3 +1630,4 @@ Check That Payment Method is Added
 Now, the Collect On Delivery payment method is fully implemented.
 
 Clear the application cache, open the user interface and try to submit an order.
+
