@@ -16,7 +16,7 @@ OroCommerce supports integration with PayPal to offer the following payment meth
 * PayPal Payflow Gateway Express Checkout
 * PayPal Payments Pro Express Checkout
 
-.. contents:: :local:
+.. note:: Depending on PayPal policies, payment methods may be different in specific countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries.
 
 PayPal Payflow Payment Gateway vs PayPal Payments Pro
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
