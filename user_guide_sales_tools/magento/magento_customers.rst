@@ -193,6 +193,15 @@ You can perform the following actions with the credit memos on the view page of 
 - To refresh the list of memos, click |IcRedo|
 - To reset the list of memos, click |IcRefresh|
 
+View Comments Added to Orders
+-----------------------------
+
+You can view the comments added to an order by a manager in a Magento store as notes in Oro. Depending on the :ref:`configuration setup in the course of integration between Oro and a Magento store <user-guide-magento-channel-integration>`, these notes may or may not be visible on Magento Customer pages. Please refer to your administrator for configuration details. 
+
+To view comments imported to Oro as notes, click **Sales > Magento Order Notes** on the page of a selected Magento customer:
+
+.. image:: /img/magento_entities/MagentoOrderNotes.png
+
 View Magento Customer Website Activity
 --------------------------------------
 

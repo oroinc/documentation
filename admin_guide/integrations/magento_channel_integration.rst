@@ -165,7 +165,7 @@ Once the connection details have been verified, the following fields will be fil
 
 .. csv-table::
   :header: "Field", "Description"
-  :widths: 10, 30
+  :widths: 20, 30
 
   "**Website**","The list of all the Websites available for the shop. **All Websites** option is chosen by default.
 
@@ -173,12 +173,12 @@ Once the connection details have been verified, the following fields will be fil
   synchronized.
 
   Click **Sync website list** if the list of Websites is outdated."
-  "**Admin url**","Optional field. A url to the administrator panel of the specified Magento store."
-  "**Split by Full Name**","Separate customer accounts will be created for Magento customers with the specified email(s) during import. To enter multiple emails use semicolons or commas."
-  "**Default owner**","Specifies what users can manage the configuration, subject to the
-  :ref:`access and permission settings <user-guide-user-management-permissions>`. By default is filled with the user 
-  creating the integration."
+  "**Admin URL**","Optional field. A URL to the administrator panel of the specified Magento store."
+  "**Import Order Comments as Order Notes**","When the option is disabled, order notes are displayed on the Magento Order page only. When the option is enabled, order notes are also displayed on the Magento Customer and Account pages. The option is set to **Yes** by default."
+  "**Split by Full Name**","Separate customer accounts are created for Magento customers with the specified email(s) during import. To enter multiple emails, use semicolons or commas."
+  "**Default owner**","Specifies what users can manage the configuration, subject to the :ref:`access and permission settings <user-guide-user-management-permissions>`. By default is filled with the user creating the integration."
 
+.. note:: Be aware that comments added to an order on the Magento side are synced only when OroBridge extension v. 1.2.19 is installed on the Magento side. Otherwise, the *Import Order Comments as Order Notes* field is disabled in Oro, and no comments are imported.
 
 .. _user-guide-magento-channel-integration-synchronization:
 

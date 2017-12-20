@@ -117,14 +117,18 @@ Within the page, the following sections are available:
 
 1. **General Information** section is for order details, such as who created the order, which website it applies to, the customer's shipping/billing addresses, telephone, etc.
 2. **Order Items** section has the list of products added to the order, and their details.
-3. **Magento Credit Memos** section has records of any :ref:`credit memos <user-guide--sales--magento-credit-memos>` related to the order.
-4. **Activity** section includes any :ref:`activities <user-guide-activities>` related to the order related to the order, such as attachments, calls, calendar events, notes, emails or tasks (if available).
+3. **Credit Memos** section has records of any :ref:`credit memos <user-guide--sales--magento-credit-memos>` related to the order.
+4. **Order Notes** section contains comments added to an order on the Magento side. The visibility of comments under Order Notes for Magento Orders is controlled by the configuration setup when creating a Magento integration.
+
+   .. note:: Be aware that comments added to an order on the Magento side are synced only when OroBridge extension v. 1.2.19 (or higher) is installed on the Magento side. Otherwise, the *Import Order Comments as Order Notes* field is disabled in Oro when :ref:`creating or editing a Magento Integration <user-guide-magento-channel-integration>`, and no comments are imported. Please refer to your administrator if you are experiencing any problems.
+
+5. **Activity** section includes any :ref:`activities <user-guide-activities>` related to the order related to the order, such as attachments, calls, calendar events, notes, emails or tasks (if available).
 
 From the order view page, you can perform the following actions:
 
 1. Sync Data to synchronize order details. This will upload the latest information for the order from Magento and back (as defined by the synchronization settings).
 2. Under **More Actions** menu, you can log a call, add an attachment, a note, a task, an event, or send an email.
-3. Record Feedback on the order.
+3. **Record Feedback** on the order.
 
    .. image:: /img/magento_entities/MagentoOrderTopMenu.png
 
