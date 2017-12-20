@@ -116,6 +116,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
       3. The *Magento Purchases* subsection gives a quick overview of the products that the customer recently purchased. Products disappear from the list if an order is cancelled or deleted on the Magento side.
       4. The *Magento Shopping Carts* subsection shows the details of the :ref:`shopping carts <user-guide-magento-carts-create>` related to the account.
       5. The *Magento Credit Memos* subsection is for :ref:`credit memo <user-guide--sales--magento-credit-memos>` and order details, such as the store from which the order has been placed, order number, the amount refunded, etc.
+      6. The *Magento Order Notes* subsection show the comments added to an order on the Magento side as notes in Oro.
 
      .. image:: ../img/accounts/account_subsections_new2.png
 

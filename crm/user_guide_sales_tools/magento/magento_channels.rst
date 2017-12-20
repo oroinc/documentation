@@ -10,7 +10,7 @@ Magento Channels Overview
 
 OroCRM supports out-of-the-box integration with Magento. Information from Magento stores, such as cart, customer and order details, can be synced into your Oro application and used for multiple sales and marketing purposes. It can be used to create :ref:`reports <user-guide-reports>`, set up :ref:`related workflows <user-guide-magento-entities-workflows>` or conduct various :ref:`marketing activities <user-guide-marketing>`. In addition, from within your Oro application, you can create carts, convert them into orders, and view information on credit memos.
 
-
+.. note:: Please be aware that synchronization between OroCRM and Magento with Magento 2 API is currently not provided out-of-the box.
 
 Initial Steps
 -------------
@@ -53,11 +53,11 @@ During integration of your Oro application with a Magento store, data from this 
 
 5. **Magento Credit Memo**. When the entity is added to the channel of Magento type, the **Magento Credit Memos** menu is created under **Sales** in the main menu. These `credit memos <http://docs.magento.com/m1/ce/user_guide/order-processing/credit-refunds.html>`__ represent the document that lists the amount owed to customers and that could be applied to further purchases. In your Oro application, such credit memos can be viewed in a dedicated tab on the view pages of Magento-related accounts, customers and orders.
 
+6. **Comments Added to Orders**. You can view the comments added to an order by a manager in a Magento store as notes in Oro. Depending on the :ref:`configuration setup in the course of integration between Oro and a Magento store <user-guide-magento-channel-integration>`, these notes may or may not be visible on Account Magento Customer pages. 
+
 .. hint::
 
     It is possible to add other entities to the channel, as well as delete most of the default entities from it, subject to your needs.
-
-
 
 
 .. finish_magento_channels_2
