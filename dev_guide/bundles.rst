@@ -70,7 +70,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/integrations/outlook_sync`
+        * User guide: :doc:`/admin_guide/integrations/outlook/index`
 
 `CallBundle`_ (OroCRM)
     Basic implementation to log calls to and of contacts and accounts.
@@ -125,7 +125,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/dev_guide/emails/emails`
         * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
-        * User guide: :doc:`/admin_guide/integrations/outlook_sync`
+        * User guide: :doc:`/admin_guide/integrations/outlook/index`
 
 `ContactUsBundle`_ (OroCRM)
     Embedded form and workflow for *contact us* requests.
@@ -481,7 +481,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/integrations/outlook_sync`
+        * User guide: :doc:`/admin_guide/integrations/outlook/index`
 
 `TestFrameworkBundle`_ (OroPlatform and OroCRM)
     Test framework functionality and main entry point for the JS UnitTest runner.

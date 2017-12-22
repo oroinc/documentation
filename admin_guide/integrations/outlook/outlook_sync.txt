@@ -80,7 +80,7 @@ Outlook 2010+
     - Other programs or Outlook add-ins that create additional views or search folders
 
 Add-in Setup
-^^^^^^^^^^^^^
+^^^^^^^^^^^^
 
 In order to enable data synchronization from OroCRM go to *"My User"* and click the link to download the add-in to 
 integrate with your Outlook client. 
@@ -184,6 +184,7 @@ Choose "Settings". The *"OroCRM for Outlook Settings"* window will emerge.  The 
   
 Mapped Fields
 -------------
+
 Values of the fields of an OroCRM and Outlook records are mapped as described below:
 
 .. _outlook-contact-mapping:
