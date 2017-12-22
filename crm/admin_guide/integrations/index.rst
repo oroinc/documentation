@@ -30,9 +30,7 @@ can be added to any website to collect requests to the OroCRM team.
 
 * :doc:`/admin_guide/integrations/ms_exchange_integration`
   
-* :doc:`/admin_guide/integrations/ms_outlook_integration_settings`
-
-* :doc:`/admin_guide/integrations/outlook_sync`
+* :doc:`/admin_guide/integrations/outlook/index`
  
 * :doc:`/admin_guide/integrations/embedded_forms`
 
@@ -59,9 +57,8 @@ can be added to any website to collect requests to the OroCRM team.
     dotmailer_single_sign_on
     ms_exchange_integration_settings
     ms_exchange_integration
-    ms_outlook_integration_settings
-    outlook_sync
     embedded_forms
     hangouts
     zendesk_integration
     commerce_integration
+    outlook/index

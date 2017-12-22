@@ -9,11 +9,9 @@ Google Integration Settings
 
 The only integration by default available in the community editions is integration with Google. You can define the details used for Google Single Sign-on,  which enables users with the same Google account email address and OroCRM primary email address to log-in only once in the session. More information on integration with Google is described in the :ref:`Google Single Sign-on guide <user-guide-google-single-sign-on>`.
 
-|
 
 .. image:: ../img/configuration/google.png
 
-|
 
 Google Integration Settings
 ---------------------------
@@ -41,11 +39,9 @@ Google Sign-on
 | **OAuth 2.0 for email sync** | Check **Enable** to activate sync. Please, make sure that Gmail API is enabled in `Google Developers Console <https://console.developers.google.com/apis>`_.                                                                         |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-|
 
 .. image:: ../img/google_integration/oro_google_integration.jpg
 
-|
 
 Google Hangouts
 ---------------

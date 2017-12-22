@@ -114,9 +114,7 @@ Please note that in many cases, the tools may be not available to the usual user
 
   * :doc:`/admin_guide/integrations/ms_exchange_integration`
   
-  * :doc:`/admin_guide/integrations/ms_outlook_integration_settings`
-
-  * :doc:`/admin_guide/integrations/outlook_sync`
+  * :doc:`/admin_guide/integrations/outlook/index`
 
   * :doc:`/admin_guide/integrations/embedded_forms`
 
