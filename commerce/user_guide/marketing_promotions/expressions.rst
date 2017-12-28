@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--promotion--expression:
 .. promotion_expressions_begin
 

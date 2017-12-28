@@ -69,12 +69,6 @@ Manage Tax Rules
 
    link_a_tax_code_to_a_product
 
-..   managing_tax_exemptions
-
-..   integration_with_external_tax_management_systems
-
-..   Taxes in the customer order <../../guides_by_role/buyer_guide/taxes>
-
 .. finish 
 
 .. include:: /user_guide/include_images.rst

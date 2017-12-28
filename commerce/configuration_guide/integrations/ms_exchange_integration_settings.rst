@@ -1,5 +1,3 @@
-:orphan:
-
 .. _admin-configuration-ms-exchange-integration-settings:
 
 MS Exchange Settings

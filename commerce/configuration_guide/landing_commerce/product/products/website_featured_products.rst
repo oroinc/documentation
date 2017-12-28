@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--commerce--products--featured-products:
 
 Edit Segment for Featured Products per Website

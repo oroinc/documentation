@@ -1,5 +1,3 @@
-:orphan:
-
 .. _quote--create-from-rfq:
 
 Create a Quote on the Customer Request

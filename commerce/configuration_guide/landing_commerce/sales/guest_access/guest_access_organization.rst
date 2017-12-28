@@ -1,5 +1,3 @@
-:orphan:
-
 Enabling Guest Website Access per Organization
 ----------------------------------------------
 

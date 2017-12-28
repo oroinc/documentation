@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--customer--contact-request-global:
 
 Configure Contact Us Page Globally

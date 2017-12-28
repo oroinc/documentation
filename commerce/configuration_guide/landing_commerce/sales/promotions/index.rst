@@ -1,8 +1,6 @@
 .. _sys-config--commerce--sales--promotions:
 
-:orphan:
-
-Configure Promotions 
+Configure Promotions
 --------------------
 
 .. begin

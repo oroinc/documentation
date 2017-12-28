@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--payment--configuration--payment-method-integration--common-details:
 
 Common Payment Integration Details

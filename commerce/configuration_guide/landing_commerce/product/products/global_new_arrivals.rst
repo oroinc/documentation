@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--new-arrivals:
 
 Enable New Product Icons Globally

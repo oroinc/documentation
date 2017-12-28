@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--new-arrivals-block-organization:
 
 Set Up New Arrivals per Organization

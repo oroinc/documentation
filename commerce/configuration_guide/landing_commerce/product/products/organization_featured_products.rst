@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--users--organization--commerce--products--featured-products:
 
 Edit Segment for Featured Products per Organization

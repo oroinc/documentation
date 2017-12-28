@@ -1,5 +1,7 @@
 :orphan:
 
+.. Reused in quick start for developers. Not in the toctree and should remain so.
+
 .. begin_body
 
 Installation Notes

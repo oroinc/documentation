@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--config--commerce--catalog--pricing:
 
 Global Pricing Configuration

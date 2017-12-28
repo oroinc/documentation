@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--commerce--catalog--related-products:
 
 Enable and Set Up Related Products per Website

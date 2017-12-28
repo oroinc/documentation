@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--sales--contacts-user:
 
 Configure Sales Rep Information per User

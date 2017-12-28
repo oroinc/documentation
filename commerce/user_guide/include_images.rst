@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan. Content is reused in other topics and is not included in TOC.
+
 Images
 ======
 

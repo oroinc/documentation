@@ -55,6 +55,8 @@ Overview index
 
    rfq_statuses_overview
 
+   rule_conditions_overview
+
    scheduled_tasks_overview
 
    shipping_rules_overview

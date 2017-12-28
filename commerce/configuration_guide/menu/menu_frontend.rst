@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--system--menu--menu-frontend:
 
 .. insert into: Customize Default Frontend Menus (www.oroinc.com/doc/orocommerce/current/user-guide/system/menu)

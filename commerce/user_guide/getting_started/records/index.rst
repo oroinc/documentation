@@ -1,5 +1,3 @@
-:orphan:
-
 .. adjust for OroCommerce
 
 .. _user-guide-data-management-basics:

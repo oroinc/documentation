@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan in OroCommerce, as it is not relevant (applies ot OroCRM only).
+
 .. _user-guide--business-intelligence--widgets--ecommerce-statistics:
 
 Ecommerce Statistics

@@ -1,5 +1,3 @@
-:orphan:
-
 Manage Product Characteristics
 ==============================
 

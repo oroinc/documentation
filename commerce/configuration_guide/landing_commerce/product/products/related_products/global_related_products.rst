@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--catalog--relate-products:
 
 Enable and Set Up Related Products Globally

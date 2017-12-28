@@ -1,5 +1,0 @@
-:orphan:
-
-New Magento Customers
----------------------
-

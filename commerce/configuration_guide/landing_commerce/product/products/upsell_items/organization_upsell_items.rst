@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--users--organization--commerce--catalog--upsell-products:
 
 Enable and Set Up Up-Sell Products per Organization

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _understanding-price-list-configuration:
 
 Understanding Price List Configuration

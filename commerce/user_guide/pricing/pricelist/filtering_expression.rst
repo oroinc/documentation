@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--pricing--auto--expression:
 
 Filtering Expression Syntax

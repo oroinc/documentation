@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--commerce--products--new-arrivals:
 
 Enable New Product Icons per Website

@@ -1,5 +1,3 @@
-:orphan:
-
 Price List Configuration Options
 --------------------------------
 

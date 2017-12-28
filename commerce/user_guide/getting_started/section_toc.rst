@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan as it is not included in TOC, just reused in other sections as a shared content.
+
 .. begin
 
 **Related Topics**

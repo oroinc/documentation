@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc-widgets-recent-calls:
 
 Recent Calls Widget

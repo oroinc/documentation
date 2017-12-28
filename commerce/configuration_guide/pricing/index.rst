@@ -1,5 +1,3 @@
-:orphan:
-
 .. _price_list_configuration:
 
 Pricing Configuration

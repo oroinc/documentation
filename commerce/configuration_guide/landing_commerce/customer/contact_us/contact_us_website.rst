@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--customer--contact-request-website:
 
 Configure Contact Us Page per Website

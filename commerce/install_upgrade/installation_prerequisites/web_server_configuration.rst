@@ -1,5 +1,3 @@
-:orphan:
-
 .. _platform--installation--web-server-configuration:
 .. _step-3-configure-the-webserver:
 

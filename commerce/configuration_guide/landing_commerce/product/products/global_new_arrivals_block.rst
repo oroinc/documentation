@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--new-arrivals-block-global:
 
 Set Up New Arrivals Globally

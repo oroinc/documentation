@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--integrations--manage-integrations--payment-term:
 
 .. System > Integrations > Manage Integrations. Payment Term

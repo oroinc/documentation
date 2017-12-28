@@ -1,5 +1,3 @@
-:orphan:
-
 .. _installation--scalable-configuration:
 
 Scalability Configuration

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--integrations--manage-integrations--paypal-payflow-gateway:
 
 .. System > Integrations > Manage Integrations. PayPal Payflow Gateway

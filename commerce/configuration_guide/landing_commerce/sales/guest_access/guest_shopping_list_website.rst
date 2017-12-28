@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--system-configuration--commerce-sales-shopping-list-per-website:
 
 Configure Guest Shopping Lists per Website

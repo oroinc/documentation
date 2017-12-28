@@ -1,5 +1,7 @@
 :orphan:
 
+.. Not yet enabled, should remain orphan for now.
+
 Manage Entities
 ===============
 

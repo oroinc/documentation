@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--sales--contacts-global:
 
 Configure Sales Rep Information Globally

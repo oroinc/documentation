@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--integrations--manage-integrations--check-money-order:
 
 .. System > Integrations > Manage Integrations. Check/Money Order

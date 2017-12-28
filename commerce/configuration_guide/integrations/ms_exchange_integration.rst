@@ -1,5 +1,3 @@
-:orphan:
-
 .. _admin-configuration-ms-exchange:
 
 Integration with Microsoft Exchange Server

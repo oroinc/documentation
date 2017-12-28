@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--system-configuration--display-sales-rep-info--available-user-options:
 
 Allow User Configuration

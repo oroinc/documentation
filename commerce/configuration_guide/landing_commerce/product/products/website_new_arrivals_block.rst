@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--new-arrivals-block-website:
 
 Set Up New Arrivals per Website

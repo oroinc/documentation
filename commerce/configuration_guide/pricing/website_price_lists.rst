@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--website--edit--price-lists:
 
 Price List Configuration per Website

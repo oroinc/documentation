@@ -1,5 +1,3 @@
-:orphan:
-
 .. _products--related-products:
 
 Manage Related Products

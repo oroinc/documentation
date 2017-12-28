@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan. Included as a part of the view.rst.
+
 .. begin_product_details_view
 
 Product Details

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--shipping-rules:
 
 Shipping Rules Configuration

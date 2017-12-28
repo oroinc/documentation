@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--product-images--gallery-slider-global:
 
 Configure Image Gallery Globally

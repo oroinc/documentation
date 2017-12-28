@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--integrations--manage-integrations--ups--flat-rate:
 
 .. System > Integrations > Manage Integrations. UPS, flat rate

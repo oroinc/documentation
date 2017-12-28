@@ -58,5 +58,3 @@ Shipping Management in the Quote
    shipping_options_in_quotes
 
    shipping_tracking
-
-..    shipping_checkout

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--integrations--manage-integrations--payment-methods:
 
 .. System > Integrations > Manage Integrations. UPS, flat rate

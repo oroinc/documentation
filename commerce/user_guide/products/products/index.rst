@@ -1,5 +1,3 @@
-:orphan:
-
 Manage Product Design in the Front Store
 ========================================
 
@@ -7,11 +5,15 @@ This section contains detailed information about the actions related to the prod
 
 .. toctree::
 
+   page_templates
+
    featured
 
    new_arrivals
 
-   page_templates
+   actions_main/index
+
+   actions_details/index
 
 See more information on :ref:`managing products <doc--products>`.
 

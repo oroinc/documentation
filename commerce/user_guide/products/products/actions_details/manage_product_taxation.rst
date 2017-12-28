@@ -1,5 +1,7 @@
 :orphan:
 
+.. Incomplete. Should remain orphan for now.
+
 .. _user-guide--products--products--taxation:
 
 .. begin_product_taxation

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc--orders--statuses--internal:
 
 Order Internal Statuses

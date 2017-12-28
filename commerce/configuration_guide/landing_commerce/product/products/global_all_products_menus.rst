@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--frontend-menus--all-products--global:
 
 Add All Products Page to Frontend Menus Globally

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _configuration--products:
 
 Configure Products in System Configuration

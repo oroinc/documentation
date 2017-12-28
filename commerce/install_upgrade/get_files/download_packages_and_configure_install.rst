@@ -1,5 +1,3 @@
-:orphan:
-
 .. _platform--installation--download-external-packages-and-configure-installation:
 
 Download External Packages and Configure Installation Environment

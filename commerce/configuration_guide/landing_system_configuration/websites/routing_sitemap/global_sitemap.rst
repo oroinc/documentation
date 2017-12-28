@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--config--sysconfig--websites--sitemap:
 
 Global Sitemap Configuration

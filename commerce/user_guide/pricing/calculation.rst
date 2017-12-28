@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan. Used in the index.rst.
+
 Price Calculation on the Front Store
 ------------------------------------
 

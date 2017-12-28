@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan until we are ready to publish the Concept Guide.
+
 Concept Guide
 =============
 

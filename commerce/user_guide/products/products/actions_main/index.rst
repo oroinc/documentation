@@ -1,5 +1,3 @@
-:orphan:
-
 Manage Products: General Actions
 ================================
 

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _customize_install:
 
 Customizing the Installation Process

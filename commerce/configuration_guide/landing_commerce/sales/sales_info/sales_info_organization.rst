@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--sales--contacts-organization:
 
 Configure Sales Rep Information per Organization

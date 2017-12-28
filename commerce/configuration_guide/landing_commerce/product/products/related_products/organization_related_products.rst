@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--users--organization--commerce--catalog--related-products:
 
 Enable and Set Up Related Products per Organization

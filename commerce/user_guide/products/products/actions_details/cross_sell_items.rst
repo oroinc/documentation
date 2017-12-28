@@ -1,5 +1,7 @@
 :orphan:
 
+.. Not yet implemented. Should remain orphan for now.
+
 .. _products--cross-sell-items:
 
 Manage Cross-Sell Products

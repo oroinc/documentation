@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--payment-rules:
 
 .. System > Payment Rules

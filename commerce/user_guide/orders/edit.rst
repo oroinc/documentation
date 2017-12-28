@@ -1,5 +1,3 @@
-:orphan: 
-
 .. _user-guide--sales--orders--edit:
 
 .. begin

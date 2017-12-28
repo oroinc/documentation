@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--system-configuration--commerce-sales-shopping-list-global:
 
 Configure Guest Shopping Lists Globally

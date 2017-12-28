@@ -1,6 +1,3 @@
-:orphan:
-
-
 .. _sys--commerce--product--product-images--image-preview--organization:
 
 Configure Image Preview on Product Listing Page per Organization

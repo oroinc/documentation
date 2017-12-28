@@ -1,5 +1,7 @@
 :orphan:
 
+.. not yet implemented, should remain orphan for now.
+
 .. _sys--commerce--catalog--cross-sell-products:
 
 Enable and Set Up Cross-Sell Products Globally

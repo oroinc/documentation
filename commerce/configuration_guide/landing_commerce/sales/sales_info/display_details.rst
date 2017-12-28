@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--system-configuration--display-sales-rep-info--display-options:
 
 Set Display Details

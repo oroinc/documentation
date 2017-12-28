@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--page-templates:
 
 Manage Product Page Design with Page Templates

@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan. Reused in other sections.
+
 .. begin_include
 
 **Related Topics on Marketing Automation**

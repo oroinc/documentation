@@ -1,5 +1,3 @@
-:orphan:
-
 .. _customers--customer-groups--edit--price-lists:
 
 Price List Configuration per Customer Group

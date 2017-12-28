@@ -1,5 +1,0 @@
-:orphan:
-
-Revenue Over Time
------------------
-

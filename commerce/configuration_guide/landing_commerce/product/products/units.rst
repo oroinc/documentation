@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--product-units:
 
 Configure Product Units

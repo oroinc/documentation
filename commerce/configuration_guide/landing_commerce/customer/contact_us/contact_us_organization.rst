@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--customer--contact-request-organization:
 
 Configure Contact Us Page per Organization

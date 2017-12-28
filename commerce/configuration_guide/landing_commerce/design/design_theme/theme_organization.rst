@@ -1,5 +1,3 @@
-:orphan:
-
 .. _configuration--commerce--design--theme--theme-settings--organization:
 
 Configure Theme per Organization

@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan as reusable content. Not in TOC and should remain so.
+
 .. begin_vars
 
 .. _`Composer`: http://getcomposer.org/

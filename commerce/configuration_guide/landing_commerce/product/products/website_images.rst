@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--commerce--product--product-images:
 
 Product Image Watermark Configuration Per Website

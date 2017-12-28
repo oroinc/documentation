@@ -1,5 +1,3 @@
-:orphan:
-
 .. _book-installation-wizard:
 
 .. begin_installation_via_UI

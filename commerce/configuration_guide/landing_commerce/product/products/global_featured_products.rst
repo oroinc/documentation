@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--product--featured-products:
 
 

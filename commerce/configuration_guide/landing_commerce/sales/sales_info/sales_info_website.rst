@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--conf--commerce--sales--contacts-website:
 
 Configure Sales Rep Information per Website

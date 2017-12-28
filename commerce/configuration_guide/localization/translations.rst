@@ -1,5 +1,3 @@
-:orphan:
-
 .. _localization--translations:
 
 Translations

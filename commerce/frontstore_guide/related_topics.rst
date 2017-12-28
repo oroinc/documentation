@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan. Reused in other topics. Not in the TOC.
+
 .. begin
 
 .. rubric:: Related Topics

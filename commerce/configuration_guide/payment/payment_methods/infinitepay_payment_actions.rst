@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--payment--configuration--payment-method-integration--infinitepay-payment-actions:
 
 Guarantee Actions

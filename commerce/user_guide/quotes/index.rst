@@ -68,18 +68,12 @@ Also you can:
   * :ref:`create calendar events <doc-activities-events>` linked to the quote
   * :ref:`send emails <user-guide-using-emails>` related to the quote
 
-.. .. include:: viewlist.rst
-   :end-before: finish
-
 Quote Stages and Transitions
 ----------------------------
 
 .. include:: quote_states_by_flow/index.rst
    :start-after: begin_quote_states_by_flow
    :end-before: finish_quote_states_by_flow
-
-.. .. include:: view.rst
-   :end-before: finish
 
 .. include:: flows/index.rst
    :end-before: finish_quotes_in_use
@@ -100,5 +94,3 @@ Quote Stages and Transitions
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
-
-.. TODO add quote management by sales (workflow) and quote management by customer.

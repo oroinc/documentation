@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--sysconfig--currency:
 
 Currency Configuration Per Website

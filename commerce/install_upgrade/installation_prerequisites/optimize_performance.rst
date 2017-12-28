@@ -1,5 +1,3 @@
-:orphan:
-
 .. _installation--optimize-runtime-performance:
 
 Performance Optimization

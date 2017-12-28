@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--users--organization--commerce--products--new-arrivals:
 
 Enable New Product Icons per Organization

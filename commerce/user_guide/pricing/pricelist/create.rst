@@ -1,5 +1,3 @@
-:orphan:
-
 Create a Price List
 -------------------
 

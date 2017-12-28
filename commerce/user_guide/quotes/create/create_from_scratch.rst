@@ -1,5 +1,3 @@
-:orphan:
-
 .. _quote--create-from-scratch:
 
 Create a Quote From Scratch

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _installation-via-console:
 .. _book-installation-command:
 

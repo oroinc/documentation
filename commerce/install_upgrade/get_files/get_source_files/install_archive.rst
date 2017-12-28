@@ -1,5 +1,3 @@
-:orphan:
-
 Method 2: Download the Source Code Archive and Install Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

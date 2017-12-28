@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--commerce--catalog--upsell-products:
 
 Enable and Set Up Up-Sell Products per Website

@@ -1,7 +1,3 @@
-
-:orphan:
-
-
 .. _user-guide--sales--orders--viewlist:
 
 View Order List

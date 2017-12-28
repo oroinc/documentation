@@ -1,5 +1,3 @@
-:orphan:
-
 .. _installation--configure-php-runtime-environment:
 
 PHP Runtime Environment Configuration

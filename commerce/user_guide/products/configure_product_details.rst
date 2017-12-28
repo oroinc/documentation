@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc--product--structure:
 
 .. begin_include

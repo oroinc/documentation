@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--integrations--manage-integrations--infinitepay:
 
 .. System > Integrations > Manage Integrations. InfinitePay

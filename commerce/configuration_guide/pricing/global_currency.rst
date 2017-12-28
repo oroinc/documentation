@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--config--sysconfig--general-setup--currency:
 
 Global Currency Configuration

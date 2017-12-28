@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--pricing--price-list-auto:
 
 Automated Rule-Based Price Management

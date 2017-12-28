@@ -1,5 +1,3 @@
-:orphan:
-
 .. _configuration--commerce--design--theme--theme-settings--website:
 
 Configure Theme per Website

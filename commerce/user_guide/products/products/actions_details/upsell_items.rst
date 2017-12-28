@@ -1,5 +1,3 @@
-:orphan:
-
 .. _products--upsell-items:
 
 Manage Up-Sell Products

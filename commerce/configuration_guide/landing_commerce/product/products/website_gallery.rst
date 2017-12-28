@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--websites--commerce--product--gallery-slider:
 
 Configure Image Gallery per Website

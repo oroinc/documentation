@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--marketing--promotions--viewlist:
 
 View Promotions in Management Console

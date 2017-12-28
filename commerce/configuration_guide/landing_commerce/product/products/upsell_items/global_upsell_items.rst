@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--commerce--catalog--upsell-products:
 
 Enable and Set Up Up-Sell Products Globally

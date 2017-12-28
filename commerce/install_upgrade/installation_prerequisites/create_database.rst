@@ -1,5 +1,3 @@
-:orphan:
-
 .. _configure-the-database:
 .. _platform--installation--create-database:
 

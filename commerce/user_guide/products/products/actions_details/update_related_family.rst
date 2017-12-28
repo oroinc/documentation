@@ -1,5 +1,3 @@
-:orphan:
-
 .. TODO rework -> how to change the product info structure through the product families
 
 .. _user-guide--product--product--bind-to-family:

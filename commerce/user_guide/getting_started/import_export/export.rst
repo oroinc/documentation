@@ -1,5 +1,7 @@
 :orphan:
 
+.. Should remain orphan, as it is included into the index with TOC
+
 .. _export-bulk-items:
 
 .. begin_global_export

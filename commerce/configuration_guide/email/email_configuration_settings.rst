@@ -1,5 +1,3 @@
-:orphan:
-
 Email Configuration Settings
 ============================
 

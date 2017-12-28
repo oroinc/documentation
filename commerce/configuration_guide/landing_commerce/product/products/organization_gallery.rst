@@ -1,5 +1,3 @@
-:orphan:
-
 .. _sys--users--organization--commerce--products--gallery-slider:
 
 Configure Image Gallery per Organization

@@ -1,6 +1,3 @@
-:orphan:
-
-
 .. _sys--commerce--product--product-images--image-preview--global:
 
 Configure Image Preview on Product Listing Page Globally

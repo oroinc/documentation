@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc--products:
 
 Products
@@ -112,17 +110,7 @@ Simplify Purchase Choices and Increase Sales
 
    product_brands
 
-   products/page_templates
-
-   products/featured
-
-   products/new_arrivals
-
-   products/actions_main/index
-
-   products/actions_details/index
-
-..    products/index
+   products/index
 
 .. actions/manage_product_taxation
 

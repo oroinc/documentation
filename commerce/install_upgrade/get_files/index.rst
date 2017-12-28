@@ -1,5 +1,3 @@
-:orphan:
-
 .. _installation--get-files:
 
 Download Files and Packages
