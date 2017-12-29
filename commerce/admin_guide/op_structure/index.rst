@@ -83,7 +83,7 @@ Application files related to the user data (attachments, images, documents) are 
 .. toctree::
    :hidden:
 
-   elastic_search
-   db_search/index
+   search_index/index
+   database/index
    cache
    mq/index

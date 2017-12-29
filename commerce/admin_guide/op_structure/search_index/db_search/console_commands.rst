@@ -1,3 +1,5 @@
+.. _search_index_db_from_md--console-commands:
+
 Console Commands
 ================
 
