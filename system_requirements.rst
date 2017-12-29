@@ -84,7 +84,9 @@ Enterprise edition is built to support better scale and performance. It is compa
 +-------------------+----------------------------------------------------+
 | *Search Index*    | * `Elasticsearch`_ 2.x                             |
 +-------------------+----------------------------------------------------+
-| *Job Queue*       | * `RabbitMQ`_ 3.5.8 and above, 3.6.x is recommended|
+| *Job Queue*       | * `RabbitMQ`_ 3.5.8 and above, with Erlang/OTP     |
+|                   |   version 18.0 and higher.                         |
+|                   |   RabbitMQ 3.6.x is recommended                    |
 +-------------------+----------------------------------------------------+
 
 **PostgreSQL Configuration**
