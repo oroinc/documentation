@@ -12,6 +12,11 @@ OroCommerce is a web application which runs on a server. Users interact with the
 Server-side Requirements
 ------------------------
 
+Resources
+~~~~~~~~~
+
+Resources configuration depends on the data size and number of active users and integrations. Typical setup could be done on a single server with the minimum of 2 CPU cores, 2GB RAM and a fast hard drive (SSD is recommended). The application could scale to multiple servers and a separate database server based on the expected load.
+
 Operating Systems
 ~~~~~~~~~~~~~~~~~
 
