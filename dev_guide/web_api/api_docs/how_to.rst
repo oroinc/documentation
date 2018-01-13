@@ -65,27 +65,27 @@ By default, the following permissions are used to restrict access to an entity i
 +----------------------------------------------------------------------+-------------------+
 | Action                                                               | Permission        |
 +======================================================================+===================+
-| `get <./actions.md#get-action>`__                                    | VIEW              |
+| `get <./actions#get-action>`__                                       | VIEW              |
 +----------------------------------------------------------------------+-------------------+
-| `get\_list <./actions.md#get_list-action>`__                         | VIEW              |
+| `get\_list <./actions#get_list-action>`__                            | VIEW              |
 +----------------------------------------------------------------------+-------------------+
-| `delete <./actions.md#delete-action>`__                              | DELETE            |
+| `delete <./actions#delete-action>`__                                 | DELETE            |
 +----------------------------------------------------------------------+-------------------+
-| `delete\_list <./actions.md#delete_list-action>`__                   | DELETE            |
+| `delete\_list <./actions#delete_list-action>`__                      | DELETE            |
 +----------------------------------------------------------------------+-------------------+
-| `create <./actions.md#create-action>`__                              | CREATE and VIEW   |
+| `create <./actions#create-action>`__                                 | CREATE and VIEW   |
 +----------------------------------------------------------------------+-------------------+
-| `update <./actions.md#update-action>`__                              | EDIT and VIEW     |
+| `update <./actions#update-action>`__                                 | EDIT and VIEW     |
 +----------------------------------------------------------------------+-------------------+
-| `get\_subresource <./actions.md#get_subresource-action>`__           | VIEW              |
+| `get\_subresource <./actions#get_subresource-action>`__              | VIEW              |
 +----------------------------------------------------------------------+-------------------+
-| `get\_relationship <./actions.md#get_relationship-action>`__         | VIEW              |
+| `get\_relationship <./actions#get_relationship-action>`__            | VIEW              |
 +----------------------------------------------------------------------+-------------------+
-| `update\_relationship <./actions.md#update_relationship-action>`__   | EDIT and VIEW     |
+| `update\_relationship <./actions#update_relationship-action>`__      | EDIT and VIEW     |
 +----------------------------------------------------------------------+-------------------+
-| `add\_relationship <./actions.md#add_relationship-action>`__         | EDIT and VIEW     |
+| `add\_relationship <./actions#add_relationship-action>`__            | EDIT and VIEW     |
 +----------------------------------------------------------------------+-------------------+
-| `delete\_relationship <./actions.md#delete_relationship-action>`__   | EDIT and VIEW     |
+| `delete\_relationship <./actions#delete_relationship-action>`__      | EDIT and VIEW     |
 +----------------------------------------------------------------------+-------------------+
 
 In case if you want to change permission or disable access checks for some action, you can use the ``acl_resource`` option of ``actions`` configuration section.
@@ -173,7 +173,7 @@ Also, you can create own delete handler. The handler class must be derived from 
 Change the maximum number of entities that can be deleted by one request
 ------------------------------------------------------------------------
 
-By default, the `delete\_list <./actions.md#delete_list-action>`__ action can delete not more than 100 entities. This limit is set by the `SetDeleteLimit <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteList/SetDeleteLimit.php>`__ processor.
+By default, the `delete\_list <./actions#delete_list-action>`__ action can delete not more than 100 entities. This limit is set by the `SetDeleteLimit <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteList/SetDeleteLimit.php>`__ processor.
 
 If your want to use another limit, you can set it by the ``max_results`` option in ``Resources/config/oro/api.yml``:
 
@@ -223,7 +223,7 @@ Sometimes it is required to group several fields and expose them as an nested ob
                     intervalUnit:
                         exclude: true
 
-Please note that an entity, in this example *Oro\Bundle\ReminderBundle\Entity\Reminder*, should have ``setInterval`` method. This method is called by `create <./actions.md#create-action>`__ and `update <./actions.md#update-action>`__ actions to set the nested object.
+Please note that an entity, in this example *Oro\Bundle\ReminderBundle\Entity\Reminder*, should have ``setInterval`` method. This method is called by `create <./actions#create-action>`__ and `update <./actions#update-action>`__ actions to set the nested object.
 
 Here is an example how the nested objects looks in JSON.API:
 
@@ -301,8 +301,8 @@ By default, there is no possibility to retrieve targets of such associations. Bu
                     target:
                         data_type: association:manyToOne
 
-After applying configuration like above, the ``target`` relationship will be available in scope of `get\_list <./actions.md#get_list-action>`__, `get <./actions.md#get-action>`__, `create <./actions.md#create-action>`__ and `update <./actions.md#update-action>`__ actions. Also the ``target`` relationship will be available as subresource and it will be possible to perform `get\_subresource <./actions.md#get_subresource-action>`__, `get\_relationship <./actions.md#get_relationship-action>`__ and
-`update\_relationship <./actions.md#update_relationship-action>`__ actions.
+After applying configuration like above, the ``target`` relationship will be available in scope of `get\_list <./actions#get_list-action>`__, `get <./actions#get-action>`__, `create <./actions#create-action>`__ and `update <./actions#update-action>`__ actions. Also the ``target`` relationship will be available as subresource and it will be possible to perform `get\_subresource <./actions#get_subresource-action>`__, `get\_relationship <./actions#get_relationship-action>`__ and
+`update\_relationship <./actions#update_relationship-action>`__ actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 
@@ -327,8 +327,8 @@ By default, there is no possibility to retrieve targets of such associations. Bu
                     activityTargets:
                         data_type: association:manyToMany:activity
 
-After applying configuration like above, the ``activityTargets`` relationship will be available in scope of `get\_list <./actions.md#get_list-action>`__, `get <./actions.md#get-action>`__, `create <./actions.md#create-action>`__ and `update <./actions.md#update-action>`__ actions. Also the ``activityTargets`` relationship will be available as subresource and it will be possible to perform `get\_subresource <./actions.md#get_subresource-action>`__,
-`get\_relationship <./actions.md#get_relationship-action>`__, `add\_relationship <./actions.md#add_relationship-action>`__, `update\_relationship <./actions.md#update_relationship-action>`__ and. `delete\_relationship <./actions.md#delete_relationship-action>`__ actions.
+After applying configuration like above, the ``activityTargets`` relationship will be available in scope of `get\_list <./actions#get_list-action>`__, `get <./actions#get-action>`__, `create <./actions#create-action>`__ and `update <./actions#update-action>`__ actions. Also the ``activityTargets`` relationship will be available as subresource and it will be possible to perform `get\_subresource <./actions#get_subresource-action>`__,
+`get\_relationship <./actions#get_relationship-action>`__, `add\_relationship <./actions#add_relationship-action>`__, `update\_relationship <./actions#update_relationship-action>`__ and. `delete\_relationship <./actions#delete_relationship-action>`__ actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 
@@ -353,8 +353,8 @@ By default, there is no possibility to retrieve targets of such associations. Bu
                     targets:
                         data_type: association:multipleManyToOne
 
-After applying configuration like above, the ``targets`` relationship will be available in scope of `get\_list <./actions.md#get_list-action>`__, `get <./actions.md#get-action>`__, `create <./actions.md#create-action>`__ and `update <./actions.md#update-action>`__ actions. Also the ``targets`` relationship will be available as subresource and it will be possible to perform `get\_subresource <./actions.md#get_subresource-action>`__, `get\_relationship <./actions.md#get_relationship-action>`__,
-`add\_relationship <./actions.md#add_relationship-action>`__, `update\_relationship <./actions.md#update_relationship-action>`__ and. `delete\_relationship <./actions.md#delete_relationship-action>`__ actions.
+After applying configuration like above, the ``targets`` relationship will be available in scope of `get\_list <./actions#get_list-action>`__, `get <./actions#get-action>`__, `create <./actions#create-action>`__ and `update <./actions#update-action>`__ actions. Also the ``targets`` relationship will be available as subresource and it will be possible to perform `get\_subresource <./actions#get_subresource-action>`__, `get\_relationship <./actions#get_relationship-action>`__,
+`add\_relationship <./actions#add_relationship-action>`__, `update\_relationship <./actions#update_relationship-action>`__ and. `delete\_relationship <./actions#delete_relationship-action>`__ actions.
 
 The ``data_type`` parameter has format: ``association:relationType:associationKind``, where
 
@@ -366,9 +366,9 @@ Add custom controller
 
 By default, all REST API resources are handled by the following controllers:
 
--  `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__ - handles `get\_list <./actions.md#get_list-action>`__, `get <./actions.md#get-action>`__, `delete <./actions.md#delete-action>`__, `delete\_list <./actions.md#delete_list-action>`__, `create <./actions.md#create-action>`__ and `update <./actions.md#update-action>`__ actions.
--  `RestApiSubresourceController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php>`__ - handles `get\_subresource <./actions.md#get_subresource-action>`__ action.
--  `RestApiRelationshipController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php>`__ - handles `get\_relationship <./actions.md#get_relationship-action>`__, `update\_relationship <./actions.md#update_relationship-action>`__, `add\_relationship <./actions.md#add_relationship-action>`__ and `delete\_relationship <./actions.md#delete_relationship-action>`__ actions.
+-  `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__ - handles `get\_list <./actions#get_list-action>`__, `get <./actions#get-action>`__, `delete <./actions#delete-action>`__, `delete\_list <./actions#delete_list-action>`__, `create <./actions#create-action>`__ and `update <./actions#update-action>`__ actions.
+-  `RestApiSubresourceController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php>`__ - handles `get\_subresource <./actions#get_subresource-action>`__ action.
+-  `RestApiRelationshipController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php>`__ - handles `get\_relationship <./actions#get_relationship-action>`__, `update\_relationship <./actions#update_relationship-action>`__, `add\_relationship <./actions#add_relationship-action>`__ and `delete\_relationship <./actions#delete_relationship-action>`__ actions.
 
 If by some reasons your REST API resource cannot be implemented to be handled by one of these controllers you can register own controller. Please note that this way is not recommended and should be used only in a very special cases, because a lot of logic should be implemented from the scratch, including:
 
@@ -464,7 +464,7 @@ An example of ``Resources/oro/routing.yml`` configuration file:
 
 An information about ``ApiDoc`` annotation can be found in `Symfony documentation <https://symfony.com/doc/current/bundles/NelmioApiDocBundle/the-apidoc-annotation.html>`__. To find all possible properties of ``fields`` option take a look at `AbstractFormatter class in NelmioApiDocBundle <https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Formatter/AbstractFormatter.php>`__. Please note that ``fields`` option can be used inside ``input`` and ``output`` options.
 
-Use `oro:api:doc:cache:clear <./commands.md#oroapidoccacheclear>`__ command to apply changes in ``ApiDoc`` annotation to `API Sandbox <https://oroinc.com/doc/orocrm/current/dev_guide/web_api/index#api-sandbox>`__.
+Use `oro:api:doc:cache:clear <./commands#oroapidoccacheclear>`__ command to apply changes in ``ApiDoc`` annotation to `API Sandbox <https://oroinc.com/doc/orocrm/current/dev_guide/web_api#api-sandbox>`__.
 
 Using a non-primary key to identify an entity
 ---------------------------------------------

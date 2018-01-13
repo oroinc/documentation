@@ -299,7 +299,7 @@ By logging or making a call from a user's view page, you specify that this user 
 .. important::
    If you do not see icons and buttons that allow making Hangouts calls, make sure that the Hangouts functionality is enabled for the organization. See :ref:`Google Integration Settings <admin-configuration-integrations-google>` for more information. 
 
-For more information about calls, see the `Calls <../../user-guide/activities/activities-log-call>`__ guide.
+For more information about calls, see the :ref:`Calls <doc-activities-calls>` guide.
 
 
 
@@ -317,7 +317,7 @@ Assign an Event to a User
 .. image:: ../img/user_management/user_assignevent0.png 
 
 
-4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the `Add an Event for a Related Record <../../user-guide/activities/activities-add-assign-calendar-events#add-an-event-for-a-related-record>`__ section of the `Add and Assign Calendar Events <../../user-guide/activities/activities-add-assign-calendar-events>`__ guide.
+4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the **Add an Event for a Related Record** section of the :ref:`Add and Assign Calendar Events <doc-activities-events>` guide.
 
 .. image:: ../img/user_management/user_assignevent.png 
 
@@ -336,7 +336,7 @@ Assign a Task to a User
 
 .. image:: ../img/user_management/user_assigntask0.png 
 
-4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the `Add a Task for Another Record <../../user-guide/activities/activities-add-assign-tasks#add-a-task-for-another-record>`__ section of the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
+4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the **Add a Task for Another Record** section of the :ref:`Add Task and Assign Task <doc-activities-tasks>` guide.
 
 .. image:: ../img/user_management/user_assigntask.png 
 

@@ -1,3 +1,5 @@
+.. _how-to-extend-existing-bundle:
+
 .. index::
     single: Bundle; Extend a Bundle
     single: Customization; Extend a Bundle
@@ -12,11 +14,11 @@ Bundle Extension
 
 The OroPlatform application uses `default Symfony functionality to extend bundle`_ (in terms of Symfony it is called
 inheritance). To do that you have to override method getParent in your bundle class.
-Let's assume that we are using demo bundle from `How to create new bundle`_
+Let's assume that we are using demo bundle from :ref:`How to create new bundle <how-to-create-new-bundle>`
 article and we want to extend OroUserBundle - in this case ``AcmeNewBundle.php`` file should look like this:
 
 .. _default Symfony functionality to extend bundle: http://symfony.com/doc/2.3/cookbook/bundles/inheritance.html
-.. _How to create new bundle: ./how-to-create-new-bundle
+
 
 .. code-block:: php
     :linenos:

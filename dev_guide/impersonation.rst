@@ -58,7 +58,7 @@ There is no possibility to generate a token from any external sources, only the 
   When the token expires, you will see the **Login** page with the 'Impersonation token has expired' message on it.
 
 .. note::      	
-  By default, each impersonation link is valid for one day. You can generate links that will be valid for longer or shorter periods as well as change other link parameters. For how to do this, see the `Impersonation Link Options <./user-impersonation#impersonation-link-options>`__ section.
+  By default, each impersonation link is valid for one day. You can generate links that will be valid for longer or shorter periods as well as change other link parameters using the command options explained in the following section.
 
 
 Impersonation Command Options

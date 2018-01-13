@@ -222,7 +222,7 @@ Include Permissions for an Entity Field in a Role
 Roles in the User Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For how to assign a role to a user, review and modify the range of roles assigned to the user, see the `User Access Settings <./access-management-user-asccess-settings>`__ guide.
+For how to assign a role to a user, review and modify the range of roles assigned to the user, see the :ref:`User Access Settings <user-guide--user-management--permissions--user-access-settings>` guide.
 
 
 Links
