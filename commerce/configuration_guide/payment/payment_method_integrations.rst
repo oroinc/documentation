@@ -34,22 +34,19 @@ Create an Integration with a Payment Method Provider
 
 Out of the box, you may integrate OroCommerce with the following systems and services (click the links for detailed guidance):
 
-.. toctree::
-   :maxdepth: 1
+* :ref:`Authorize.Net <user-guide--payment--configuration--payment-method-integration--authorizenet-details>`
 
-   Authorize.Net <payment_methods/authorizenet>
+* :ref:`Check/Money Order <sys--integrations--manage-integrations--check-money-order>`
 
-   Check/Money Order <payment_methods/check_money_order>
+* :ref:`Payment Terms <sys--integrations--manage-integrations--payment-term>`
 
-   Payment Terms <payment_methods/payment_terms>
+* :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payments-pro>`
 
-   PayPal Payflow Gateway / PayPal Payment Pro <payment_methods/paypal_payflow_gateway>
+* :ref:`Wirecard Checkout Seamless <doc--payment--configuration--payment-method-integration--wirecard>`
 
-   Wirecard Checkout Seamless <payment_methods/wirecard>
+* :ref:`InfinitePay <sys--integrations--manage-integrations--infinitepay>`
 
-   InfinitePay <payment_methods/infinitepay>
-
-   Apruve <payment_methods/apruve>
+* :ref:`Apruve <user-guide--payment--configuration--payment-method-integration--apruve>`
 
 
 Delete an Integration with a Payment Method Provider

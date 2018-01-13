@@ -20,4 +20,6 @@ When the payment term is selected, the payment is considered to be captured in f
 
    prerequisites/index
 
+   payment_config
+
    checkout/index

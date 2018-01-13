@@ -36,8 +36,6 @@ Also each of these abstract services can be re-declared in the application confi
             class:                Oro\Bundle\CacheBundle\Provider\PhpFileCache
             arguments:            [%kernel.cache_dir%/oro_data]
 
-Read more about the `caching policy and default implementation`_.
-
 
 Caching Policy
 ^^^^^^^^^^^^^^
@@ -133,7 +131,7 @@ persistent cache.
 Default Cache Implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As you may read in `Readme`_ there are two abstract services you can use
+There are two abstract services you can use
 as a parent for your cache services. Default implementations are
 following: - for CLI requests: ``MemoryCacheChain`` with only
 ``Oro\Bundle\CacheBundle\Provider\FilesystemCache`` as a cache provider
@@ -144,7 +142,6 @@ top of ``FilesystemCache``
 .. _Persistent/shared cache: #persistent/shared-cache
 .. _Cache chaining: #cache-chaining
 .. _Default cache implementation: #default-cache-implementation
-.. _Readme: ../../readme.md#abstract-cache-services
 
 APC Cache
 ---------
@@ -180,5 +177,4 @@ By default, rules for `Symfony Validation Component`_ are cached using
 validation caching suit some custom requirements. To do this, you need
 to redefine ``oro_cache.provider.validation`` service.
 
-.. _caching policy and default implementation: Resources/doc/caching_policy.md
 .. _Symfony Validation Component: http://symfony.com/doc/current/book/validation.html

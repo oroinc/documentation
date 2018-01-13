@@ -15,9 +15,7 @@ In OroPlatform you can create your fully personalized menu or use a simple techn
 This tutorial describes how to override a section in the default menu.
 
 Let's assume that you already have a bundle with the namespace ``Acme\Bundle\NewBundle`` in the ``/src`` directory
-with annotation configuration format `generated or created manually`_.
-
-.. _generated or created manually: ./how_to_create_new_bundle.rst
+with annotation configuration format :ref:`generated or created manually <how-to-create-new-bundle>`.
 
 
 Create your route with annotation

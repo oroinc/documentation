@@ -1,6 +1,5 @@
 .. _doc-my-oro-tasks:
 
-
 My Tasks
 ========
 

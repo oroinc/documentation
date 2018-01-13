@@ -11,15 +11,15 @@ Table of Contents
 Overview
 --------
 
-The Symfony `Validation Component <http://symfony.com/doc/current/book/validation.html>`__ and `Forms Component <http://symfony.com/doc/current/book/forms.html>`__ are used to validate and transform input data to an entity in `create <./actions.rst#create-action>`__, `update <./actions.rst#update-action>`__, `update\_relationship <./actions.rst#update_relationship-action>`__, `add\_relationship <./actions.rst#add_relationship-action>`__ and
-`delete\_relationship <./actions.rst#delete_relationship-action>`__ actions.
+The Symfony `Validation Component <http://symfony.com/doc/current/book/validation.html>`__ and `Forms Component <http://symfony.com/doc/current/book/forms.html>`__ are used to validate and transform input data to an entity in `create <./actions#create-action>`__, `update <./actions#update-action>`__, `update\_relationship <./actions#update_relationship-action>`__, `add\_relationship <./actions#add_relationship-action>`__ and
+`delete\_relationship <./actions#delete_relationship-action>`__ actions.
 
 Validation
 ----------
 
 The validation rules are loaded from ``Resources/config/validation.yml`` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable in Data API as well. Also, by default, Data API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in Data API only you should add them in **api** validation group.
 
-In case if input data violates some validation constraints, these constraints will be automatically converted to `validation errors <./processors.rst#error-handling>`__ which are used to build correct response of Data API. The conversion is performed by `CollectFormErrors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php>`__ processor. By default the HTTP status code for validation errors is ``400 Bad Request``. But, if needed, there
+In case if input data violates some validation constraints, these constraints will be automatically converted to `validation errors <./processors#error-handling>`__ which are used to build correct response of Data API. The conversion is performed by `CollectFormErrors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php>`__ processor. By default the HTTP status code for validation errors is ``400 Bad Request``. But, if needed, there
 are several ways to change it:
 
 -  Implement `ConstraintWithStatusCodeInterface <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Validator/Constraints/ConstraintWithStatusCodeInterface.php>`__ in you constraint class.

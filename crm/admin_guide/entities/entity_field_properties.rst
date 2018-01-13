@@ -88,7 +88,7 @@ General Information Section
     
     - One to many
   
-  For the help on selection the field that is right for your purposes, see the `Entity Field Types <./entity-fields-types>`__ guide. 
+  For the help on selection the field that is right for your purposes, see the :ref:`Entity Field Types <entity-field-types>` guide.
   "
   
 

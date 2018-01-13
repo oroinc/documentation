@@ -86,9 +86,9 @@ The following table shows all actions provided out of the box:
 | `collect\_subresources <#collect_subresources-action>`__      | Returns a list of all sub-resources accessible through Data API for a given entity type                                                                    |
 +---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Please see `processors <./processors.md>`__ section for more details about how to create a processor.
+Please see `processors <./processors>`__ section for more details about how to create a processor.
 
-Also you can use the `oro:api:debug <./commands.md#oroapidebug>`__ command to see all actions and processors.
+Also you can use the `oro:api:debug <./commands#oroapidebug>`__ command to see all actions and processors.
 
 get Action
 ----------
@@ -226,7 +226,7 @@ This action is intended to delete a list of entities.
 
 The entities list is built based on input filters. Please take into account that at least one filter must be specified, otherwise an error raises.
 
-By default the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``, but please test your limit carefully because a big limit may make a big impact to the server. An example how to change default limit you can read at `how-to <how_to.md#change-the-maximum-number-of-entities-that-can-be-deleted-by-one-request>`__.
+By default the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``, but please test your limit carefully because a big limit may make a big impact to the server. An example how to change default limit you can read at `how-to <how_to#change-the-maximum-number-of-entities-that-can-be-deleted-by-one-request>`__.
 
 The route name for REST API: ``oro_rest_api_cdelete``.
 
@@ -898,4 +898,4 @@ In case if you need to create groups for your action, they should be registered 
                     finalize:
                         priority: -30
 
-Please note that the ``priority`` attribute is used to control the order in which groups of processors are executed. The highest the priority, the earlier a group of processors is executed. Default value is 0. The possible range is from -254 to 252. Details about creating processors you can find in the `processors <./processors.md#creating-a-processor>`__ section.
+Please note that the ``priority`` attribute is used to control the order in which groups of processors are executed. The highest the priority, the earlier a group of processors is executed. Default value is 0. The possible range is from -254 to 252. Details about creating processors you can find in the `processors <./processors#creating-a-processor>`__ section.
