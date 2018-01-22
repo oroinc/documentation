@@ -1,3 +1,5 @@
+.. _orm_search_engine:
+
 ORM Search Engine
 =================
 
@@ -9,14 +11,14 @@ ORM engine is used by default.
 Configuration
 -------------
 
-ORM engine configuration stored at
+ORM engine configuration is stored in
 ``Oro/Bundle/SearchBundle/Resources/config/oro/search_engine/orm.yml``
-and do not require any additional engine parameters.
+and does not require any additional engine parameters.
 
-ORM search engine has quite straightforward implementation - it simply
+ORM search engine has a straightforward implementation - it simply
 stores index data in appropriate tables: separate tables for ``text``,
-``datetime``, ``decimal`` and ``integer`` value, and another one table
-to store general information. Table that stores text data has
+``datetime``, ``decimal`` and ``integer`` value, and another table
+to store general information. The table that stores text data has
 ``fulltext`` index.
 
 .. code-block:: none
@@ -34,7 +36,7 @@ to store general information. Table that stores text data has
             calls:
                 - [setLogQueries, [%oro_search.log_queries%]]
 
-Each supported DBMS has it's own driver that knows about specific search
+Each supported DBMS has its own driver that knows about specific search
 implementation and generates valid SQL.
 
 .. code-block:: none
@@ -47,19 +49,19 @@ implementation and generates valid SQL.
 Features
 --------
 
-At current moment special characters are not supported in ORM search
-engines. Every character that is not a unicode letter or number is
-replaced with whitespace before the query.
+Currently, special characters are not supported in the ORM search
+engines. Every character that is not a unicode letter or a number is
+replaced with a whitespace before the query.
 
-Another one feature of ORM engine is fulltext index processing.
+Another feature of ORM engine is fulltext index processing.
 Configuration defines fulltext manager
 *Oro:raw-latex:`\Bundle`:raw-latex:`\SearchBundle`:raw-latex:`\Engine`:raw-latex:`\FulltextIndexManager`*
-that used during installation and inside special listener - it allows
+that is used during installation and inside a special listener - it allows the
 system to create fulltext indexes bypassing Doctrine processing.
 
-**Note for MySQL driver:** MySQL has lower limit to the string length
-for fulltext index called `ft\_min\_word\_len`_, i.e. if string will be
-shorter than this limit then fulltext index will not be used. It's
+**Note for MySQL driver:** MySQL has a lower limit to the string length
+for fulltext index called `ft\_min\_word\_len`_, i.e. if a string is
+shorter than this limit, the fulltext index will not be used. It is
 recommended to `change this value to 3`_.
 
 .. _ft\_min\_word\_len: http://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html#sysvar_ft_min_word_len
