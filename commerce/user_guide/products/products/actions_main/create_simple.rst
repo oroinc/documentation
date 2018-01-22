@@ -11,7 +11,7 @@ See a short demo on `how to create a simple product <https://www.orocommerce.com
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/I0dHJ87IpzE" frameborder="0" allowfullscreen></iframe>
 
-To add a new simple product and make it available in the master catalog (for internal product management) and for purchase in the front store:
+To add a new simple product and make it available in the master catalog (for internal product management) and for purchase in the storefront:
 
 1. Navigate to **Products > Products** in the main menu.
 2. Click **Create Product**.
@@ -54,14 +54,14 @@ To add a new simple product and make it available in the master catalog (for int
       .. image:: /user_guide/img/products/products/ProductsCreate_Status.png
          :class: with-border
 
-   #) Enter a URL slug that is used to build a human-readable URL for the product page on the front store.
+   #) Enter a URL slug that is used to build a human-readable URL for the product page on the storefront.
 
    #) Configure units of quantity:
 
       .. image:: /user_guide/img/products/products/ProductsCreate_Units0.png
          :class: with-border
 
-      * In the **Unit Of Quantity** list, select the main product unit that is shown by default when you view the product details in the front store. Available options: *each*, *item*, *kilogram*, *piece*, *set*.
+      * In the **Unit Of Quantity** list, select the main product unit that is shown by default when you view the product details in the storefront. Available options: *each*, *item*, *kilogram*, *piece*, *set*.
 
       * In the **Precision** field, set the acceptable precision (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg).
 
@@ -112,9 +112,9 @@ To add a new simple product and make it available in the master catalog (for int
        With *Use category defaults*, the product's **Manage Inventory** inherits the setting selected for the product's parent category. With *Use system config*, the product uses the system configuration setting.
 
        Selecting *Yes* enables interactive updates based on the product inventory information from the **Inventory > Warehouses** section. Selecting *No* disables connection to the inventory, and uses the static **Inventory Status** value."
-      "**Highlight Low Inventory**","This option defines if low inventory for products is displayed in the front store."
+      "**Highlight Low Inventory**","This option defines if low inventory for products is displayed in the storefront."
       "**Inventory Threshold**","A minimum quantity of the product that is treated as In stock. When a product quantity drops below this value, the product inventory status becomes Out Of Stock."
-      "**Low Inventory Threshold**","The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the front store."
+      "**Low Inventory Threshold**","The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the storefront."
       "**Backorders**","A flag that indicates whether OroCommerce accepts backorders. When set to *Yes*, buyers and sales people can order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock."
       "**Decrement Inventory**","A flag that indicates whether OroCommerce decrements inventory upon order.
 

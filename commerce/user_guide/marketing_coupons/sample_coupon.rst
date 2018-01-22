@@ -60,7 +60,7 @@ Now that the promotion has been created and coupons generated, we can add a coup
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons8.png
 
-6. In their front store account, the customer will be able to see the discount applied to their order in the **Order History** menu.
+6. In their storefront account, the customer will be able to see the discount applied to their order in the **Order History** menu.
 
    .. image:: /user_guide/img/marketing/coupons/SampleCoupons9.png
 

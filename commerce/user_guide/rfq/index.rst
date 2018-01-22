@@ -3,7 +3,7 @@
 Request for Quote (RFQ)
 =======================
 
-:abbr:`RFQs (Requests for quotes)` are used by sales representatives to assist customers and meet their needs through negotiations on a better price, more convenient quantities of products, or additional services. Once a customer submits a request for quotes in the Oro front store, it immediately becomes available in the Oro management console.
+:abbr:`RFQs (Requests for quotes)` are used by sales representatives to assist customers and meet their needs through negotiations on a better price, more convenient quantities of products, or additional services. Once a customer submits a request for quotes in the Oro storefront, it immediately becomes available in the Oro management console.
 
 .. contents:: :local:
    :depth: 3
@@ -13,7 +13,7 @@ Before You Begin
 
 Prior to starting your work with RFQs, make sure that you have:
 
-1. **Configured RFQ related workflows** --- activate or deactivate the RFQ :ref:`workflows <doc--workflows--actions--system>` that control the interactions between the front store and the management console. These workflows help buyers and sales managers run the process automatically and provide the corresponding status upon this interaction.
+1. **Configured RFQ related workflows** --- activate or deactivate the RFQ :ref:`workflows <doc--workflows--actions--system>` that control the interactions between the storefront and the management console. These workflows help buyers and sales managers run the process automatically and provide the corresponding status upon this interaction.
 
    .. image:: /user_guide/img/sales/requests_for_quote/rfq_1.png
       :width: 100%

@@ -5,6 +5,12 @@ Configuration Guide
 
 Oro Configuration Guide will walk your though all post-install configuration settings of the Oro application. In particular, you will learn how to set up general system configuration options, as well as settings specific for OroCommerce, OroCRM, and marketing.
 
+See a short video on using configuration options and orienting in the configuration guide:
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/BxyzaOXwo0k" frameborder="0" allowfullscreen></iframe>
+
 Before You Begin
 ----------------
 
@@ -214,10 +220,6 @@ Advanced Configuration Settings
    websites/index
 
 .. entities/index
-
-
-
-
 
 
 

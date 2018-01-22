@@ -27,7 +27,7 @@ Importing Inventory Levels
 
 .. |imported_information| replace:: inventory levels or statuses
 
-.. |menu| replace:: **Inventory > Warehouses**
+.. |menu| replace:: **Inventory > Manage Inventory**
 
 .. |item| replace:: inventory levels
 

@@ -37,7 +37,7 @@ Shipping Management in the Quote
    :start-after: begin
    :end-before: stop
 
-.. Shipping Control in the Checkout (Front Store)
+.. Shipping Control in the Checkout (Storefront)
    ----------------------------------------------
    .. include:: /user_guide/shipping/shipping_checkout.rst
    :start-after: begin

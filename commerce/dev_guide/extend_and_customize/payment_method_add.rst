@@ -1534,10 +1534,10 @@ To register the payment method main factory and provider, append the following k
             - { name: oro_payment.payment_method_provider }
 
 
-Define the Payment Method's Layouts for the Front Store
+Define the Payment Method's Layouts for the Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Layouts provide the html template for the payment method blocks that users see when doing the checkout in the front store. There are two different blocks: one that users see during selection of the payment method, and the other that they see when reviewing the order. You need to define templates for each of these blocks.
+Layouts provide the html template for the payment method blocks that users see when doing the checkout in the storefront. There are two different blocks: one that users see during selection of the payment method, and the other that they see when reviewing the order. You need to define templates for each of these blocks.
 
 For this, in the directory <bundle_root>//Resources/views/layouts/default/imports/, create templates for the payment method selection checkout step:
 

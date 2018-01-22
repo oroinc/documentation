@@ -54,7 +54,7 @@ A **calendar_menu** is a service menu that is used on the **My Calendar** page a
 
 .. image:: /configuration_guide/img/menus/menus_calendar_menu.png
 
-OroCommerce Front Store Menus
+OroCommerce Storefront Menus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. contents:: :local:
@@ -77,7 +77,7 @@ A **commerce_quick_access** menu provides quick access to the most frequent or i
 Navigation Bar
 """"""""""""""
 
-A **commerce_main_menu** defines the static content of the OroCommerce Front Store main menu. The leading part of the menu is generated based on the structure of the website web catalog or master catalog. The trailing part is composed of the **commerce_main_menu** items.
+A **commerce_main_menu** defines the static content of the OroCommerce Storefront main menu. The leading part of the menu is generated based on the structure of the website web catalog or master catalog. The trailing part is composed of the **commerce_main_menu** items.
 
 .. image:: /configuration_guide/img/frontend_menu/FrontendMainMenu.png
 
@@ -91,7 +91,7 @@ A **commerce_footer_links** defines the structure of the links in the OroCommerc
 User and Account Menu Look and Feel
 """""""""""""""""""""""""""""""""""
 
-Front store user menu is customizable via the `Customer User Menu`_ and `Account Menu`_, and the way it is displayed can be configured globally, on organization, and website levels.
+Storefront user menu is customizable via the `Customer User Menu`_ and `Account Menu`_, and the way it is displayed can be configured globally, on organization, and website levels.
 
 .. image:: /configuration_guide/img/frontend_menu/ShowAllItemsAtOnce.png
 
@@ -116,7 +116,7 @@ To configure user menu on the website level:
 3. Select **Commerce > Design > Theme** in the menu on the left.
 4. In the **Menu Templates** section you have the following templates for user menu - *Show all items at once* (the default template) and *Show subitems in a popup*.
 
-.. note:: * When *Show all items at once* is selected, the user menu has the following look in the front store:
+.. note:: * When *Show all items at once* is selected, the user menu has the following look in the storefront:
 
              .. image:: /configuration_guide/img/frontend_menu/ShowAllItemsAtOnce.png
 
@@ -127,7 +127,7 @@ To configure user menu on the website level:
 Customer User Menu
 """"""""""""""""""
 
-A **customer_usermenu** is a front store user menu that defines what a customer will see within it.
+A **customer_usermenu** is a storefront user menu that defines what a customer will see within it.
 
 .. note:: It is only active when user menu template is set to *Show subitems in a popup* in system, organization, or website configuration.
 
@@ -136,14 +136,14 @@ A **customer_usermenu** is a front store user menu that defines what a customer 
 Account Menu
 """"""""""""
 
-An **oro_customer_menu** is a front store menu that defines what options the Account section of the user menu is populated with.
+An **oro_customer_menu** is a storefront menu that defines what options the Account section of the user menu is populated with.
 
 .. image:: /configuration_guide/img/frontend_menu/AccMenu.png
 
 Featured Menu
 """""""""""""
 
-A **featured_menu** is a front store menu that enables the administrator to configure the featured menu items on the homepage. 
+A **featured_menu** is a storefront menu that enables the administrator to configure the featured menu items on the homepage.
 
 .. image:: /configuration_guide/img/frontend_menu/featured_menu.png
 

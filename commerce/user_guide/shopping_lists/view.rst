@@ -5,7 +5,7 @@ View Shopping List Summary
 
 .. begin_all
 
-In the management console, to view all shopping lists created in the front store, navigate to **Sales > Shopping Lists** in the main menu.
+In the management console, to view all shopping lists created in the storefront, navigate to **Sales > Shopping Lists** in the main menu.
 
 
 .. image:: /user_guide/img/sales/shopping_lists/SL_grid.png

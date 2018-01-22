@@ -7,7 +7,7 @@ Configure Sales Rep Information Globally
 
 Enabling sales representative information globally sets system settings as default ones.
 
-To enable or disable the display of sales representative information in the front store :ref:`footer links <frontstore-guide--navigation-footer>` globally:
+To enable or disable the display of sales representative information in the storefront :ref:`footer links <frontstore-guide--navigation-footer>` globally:
 
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 

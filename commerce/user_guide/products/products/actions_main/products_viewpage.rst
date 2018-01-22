@@ -58,7 +58,7 @@ General
    "**Name**","The name of the product how it appears on the user interface."
    "**Type**", "Whether it is a simple product or product that have variants (configurable) --- i.e., unites several simple products. The example of a configurable product is scissors that can be bought with either red or green handles."
    "**Is Featured**", "Whether the product is included in the featured products listing."
-   "**New Arrival**", "Whether the product is included in the listing of new arrivals. When set to *Yes*, the product is highlighted in the front store."
+   "**New Arrival**", "Whether the product is included in the listing of new arrivals. When set to *Yes*, the product is highlighted in the storefront."
    "**Brand**", "The :ref:`brand <user-guide--product-brands>` that the product belongs to."
    "**Tax Code**", "The code that helps identify what taxes to apply to the product."
    "**Description**", "A detailed information about the product. It appears in the product details."
@@ -83,7 +83,7 @@ For each product variant, the following information is displayed:
    "**ID**","The unique identifier of the product variant."
    "**SKU**","The stock keeping unit that helps identify the product variant and track it in inventory."
    "**Name**","The name of the product variant how it appears on the user interface."
-   "**Visible**", "Whether the simple product is visible in the front store."
+   "**Visible**", "Whether the simple product is visible in the storefront."
    "**Enabled**", "Whether the product variant is enabled and can be used."
    "**Inventory Status**", "Whether the product variant is in stock."
 
@@ -115,7 +115,7 @@ This section contains information about units this product is measured in.
    :header: "Field", "Description"
    :widths: 30, 60
 
-   "**Unit**","The main product unit that is used as default in the product details in the front store and the acceptable precision (number of digits after the decimal point) for it"
+   "**Unit**","The main product unit that is used as default in the product details in the storefront and the acceptable precision (number of digits after the decimal point) for it"
    "**Additional Units**","The list of additional units of quantity applicable for the product. For each unit, the following information is displayed:
 
     - The name of the unit.
@@ -162,9 +162,9 @@ In this section:
 
 * The products listed on the **Related Items** tab appear in the respective section of the product details in the management console.
 
-* The products listed on the **Up-sell Items** tab appear and in the **You may be also interested in** section in the product details in the front store.
+* The products listed on the **Up-sell Items** tab appear and in the **You may be also interested in** section in the product details in the storefront.
 
- .. The products listed on the **Cross-sell** tab appear in the **You may also like these products** section in the front store during the checkout.
+ .. The products listed on the **Cross-sell** tab appear in the **You may also like these products** section in the storefront during the checkout.
 
 To review related / up-sell products, click the required tab. The following related item information is available:
 
@@ -182,7 +182,7 @@ To review related / up-sell products, click the required tab. The following rela
    "**Updated At**","When the related / up-sell product has been updated."
 
 
-.. note:: Note that the number of products that appear in the corresponding sections in the front store can be limited by catalog configuration options. For more information on related items, see :ref:`Related Products <products--related-products>`.
+.. note:: Note that the number of products that appear in the corresponding sections in the storefront can be limited by catalog configuration options. For more information on related items, see :ref:`Related Products <products--related-products>`.
 .. and :ref:`Up-Sell Products <doc--products--up-sell-products>`.
 
 To add or remove related items, click the required tab, then click the  **Quick Edit** link at the right end of the section header. See the :ref:`Manage Related Products <products--related-products>` action description.
@@ -222,7 +222,7 @@ Design
 
 .. image:: /user_guide/img/products/products/products_review_design.png
 
-This section presents information about the template used to render the product page in the front store.
+This section presents information about the template used to render the product page in the storefront.
 
 For more information, see the :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>` topic.
 
@@ -237,7 +237,7 @@ There is information on how the product front-store web page is optimized for th
    :header: "Field", "Description"
    :widths: 30, 60
 
-   "**Slugs**","A URL slug that is used to build a human-readable URL for the product page in the front store."
+   "**Slugs**","A URL slug that is used to build a human-readable URL for the product page in the storefront."
    "**Meta Title**","A meta title is what is seen by search engine users and helps search engines to index the page."
    "**Meta Description**", "A meta description summarizes the page content. Search engines show a meta description in search results when the searched phrase is found in the description."
    "**Meta Keywords**", "Meta keywords are search terms that help search engines understand what the topic of the page is and find the page."

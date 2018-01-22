@@ -3,12 +3,12 @@
 My Organization Users and Roles 
 ===============================
 
-This section of the guide will provide information on how you can manage your organization users and roles, so they have the necessary level of access to the OroCommerce front store capabilities.
+This section of the guide will provide information on how you can manage your organization users and roles, so they have the necessary level of access to the OroCommerce storefront capabilities.
 
 .. contents:: :local:
    :depth: 2
 
-The front store user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines.  The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
+The storefront user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines.  The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
 
 Users
 ^^^^^
@@ -82,7 +82,7 @@ A form will emerge with the following data to provide:
 Roles
 ^^^^^
 
-Roles are predefined sets of permissions. In the Roles section, you can view, edit and create new roles to define the level of permissions and access to the actions and data in OroCommerce front store for the users of a specific role.
+Roles are predefined sets of permissions. In the Roles section, you can view, edit and create new roles to define the level of permissions and access to the actions and data in OroCommerce storefront for the users of a specific role.
 
 To locate roles:
 

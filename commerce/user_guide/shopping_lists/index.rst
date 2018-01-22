@@ -10,7 +10,7 @@ Shopping lists are similar to shopping carts in most online stores. However, sho
 * Submit orders from a shopping list.
 * Create as many shopping lists as needed.
 
-Via the management console, you can access any shopping list created in the Oro front store.
+Via the management console, you can access any shopping list created in the Oro storefront.
 
 Information on shopping lists is covered in the following sections:
 

@@ -3,9 +3,9 @@ Overview
 
 .. begin
 
-In OroCommerce terminology, customers are companies who buy your products using OroCommerce store frontend.
+In OroCommerce terminology, customers are companies who buy your products using OroCommerce storefront.
 
-Customer users act on behalf of the company and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization. You can manage customer users and roles in the OroCommerce administration interface (see :ref:`Managing Customer Users <user-guide--customers--customer-users>` and :ref:`Managing Customer Roles <user-guide--customers--customer-user-roles>` for more information), or you can delegate this function to the customer who will access user and role management in the OroCommerce front store (see :ref:`Delegating Users and Role Management to the Customer <user-guide--customers--customer-user-delegate>` for more information).
+Customer users act on behalf of the company and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization. You can manage customer users and roles in the OroCommerce administration interface (see :ref:`Managing Customer Users <user-guide--customers--customer-users>` and :ref:`Managing Customer Roles <user-guide--customers--customer-user-roles>` for more information), or you can delegate this function to the customer who will access user and role management in the OroCommerce storefront (see :ref:`Delegating Users and Role Management to the Customer <user-guide--customers--customer-user-delegate>` for more information).
 
 You can assign dedicated sales representatives to support the company purchase process. They can :ref:`assign custom price lists <user-guide--customers--customer-groups--pricelist>` that are visible to a customer user on the OroCommerce web front instead of the standard prices enabled generally. Assigned sales people can assist with requests for quote, quotes, and orders made by customer users. Sales people can :ref:`add notes <user-guide-add-note>` and :ref:`attachments <user-guide-activities-attachments>` to share additional information about the customer, their needs or any related information.
 

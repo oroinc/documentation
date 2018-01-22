@@ -5,7 +5,7 @@
 Menus Configuration
 -------------------
 
-In this section you will learn how to configure the menus globally, per organization/website, or for your own use only. You also will learn the various kinds of menus in OroCommerce and OroCRM management console and OroCommerce front store.
+In this section you will learn how to configure the menus globally, per organization/website, or for your own use only. You also will learn the various kinds of menus in OroCommerce and OroCRM management console and OroCommerce storefront.
 
 .. contents:: :local:
     :depth: 1

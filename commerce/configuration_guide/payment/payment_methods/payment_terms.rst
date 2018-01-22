@@ -11,7 +11,7 @@ In OroCommerce, you can use payment terms configured per customer to help them u
 
 Payment term is a set of conditions required for the sale to be completed, e.g. the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc.
 
-To use Payment Terms in your OroCommerce Front Store, you need to `Enable Payment Terms as Integration`_ and then `Create Payment Terms`_ with the conditions you would like to offer your buyers. You can `Link Payment Term to a Customer Based on Their Sales Agreement`_.
+To use Payment Terms in your OroCommerce Storefront, you need to `Enable Payment Terms as Integration`_ and then `Create Payment Terms`_ with the conditions you would like to offer your buyers. You can `Link Payment Term to a Customer Based on Their Sales Agreement`_.
 
 Enable Payment Terms as Integration
 """""""""""""""""""""""""""""""""""

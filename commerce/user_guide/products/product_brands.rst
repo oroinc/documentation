@@ -31,7 +31,7 @@ Create a New Brand from Scratch
 
    * **Owner** --- Select the owner of the product brand. This limits the list of users who can manage it.
    * **Name** --- Provide the brand name. The field is mandatory.
-   * **Slug** --- Enter a URL slug that is used when building a human-readable URL on the front store. If the field is left blank, the slug will be generated automatically.
+   * **Slug** --- Enter a URL slug that is used when building a human-readable URL on the storefront. If the field is left blank, the slug will be generated automatically.
    * **Status** --- Select product brand status (*Enabled*/*Disabled*). The field is mandatory.
    * **Description** --- Enter a product brand description.
    * **Short Description** --- Enter a short but meaningful description of the product brand to make identification of the brand easier.

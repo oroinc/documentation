@@ -5,7 +5,7 @@ Orders
 
 After you submit an order, it is available in the Order History, where you can review the ordered items, billing and shipping information.
 
-The following guide focuses on the Order History section of the OroCommerce front store.
+The following guide focuses on the Order History section of the OroCommerce storefront.
 
 .. contents:: :local:
    :depth: 3
@@ -240,7 +240,7 @@ Checkout Process
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 
-In the Oro front store, the checkout can be multi page or single page. Although the checkout steps themselves are the same, the way they are displayed is different. For the multi page checkout each step is displayed on a new page. For the single page checkout all steps fit one page.
+In the Oro storefront, the checkout can be multi page or single page. Although the checkout steps themselves are the same, the way they are displayed is different. For the multi page checkout each step is displayed on a new page. For the single page checkout all steps fit one page.
 
 Multi Page Checkout
 ~~~~~~~~~~~~~~~~~~~
@@ -378,7 +378,7 @@ In the single page checkout, you can see how far along in the checkout you are, 
 Guest Checkout
 ~~~~~~~~~~~~~~
 
-In the Oro front store, guest customers can place orders similarly to registered users. They are, however, limited to just one shopping list.
+In the Oro storefront, guest customers can place orders similarly to registered users. They are, however, limited to just one shopping list.
 
 Unauthenticated customers can proceed to the checkout through:
 

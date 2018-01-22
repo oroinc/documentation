@@ -12,8 +12,8 @@ While a product on a website can be either ``visible`` or ``hidden`` for a custo
 Whether the product is shown to the customer on the OroCommerce website depends on the following configuration:
 
 * `Visibility on a Website`_: Is the product visible to the customer (or customer group) on the website? Multiple websites with different visibility configured help split the content and settings for different target customer locations.
-* `Visibility to a Customer`_: Is the product/category visible in the front store to the user's organization or business unit (customer)?
-* `Visibility to a Customer Group`_: Is the product/category visible to the group of customers in the front store? Customers may be grouped based on authentication options or type of business that the customers are in.
+* `Visibility to a Customer`_: Is the product/category visible in the storefront to the user's organization or business unit (customer)?
+* `Visibility to a Customer Group`_: Is the product/category visible to the group of customers in the storefront? Customers may be grouped based on authentication options or type of business that the customers are in.
 
 Additionally, there are default visibility settings that may be easily inherited in the above configuration:
 

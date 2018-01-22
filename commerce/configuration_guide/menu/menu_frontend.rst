@@ -87,7 +87,7 @@ Condition
 
 **Condition** enables you to restrict visibility of a menu item using the following functions:
 
-* The *is_logged_in()* function stands for the *registered users*. If entered, only the users who have logged into the Oro front store are enabled to view the corresponding menu item.
+* The *is_logged_in()* function stands for the *registered users*. If entered, only the users who have logged into the Oro storefront are enabled to view the corresponding menu item.
 
   .. image:: /configuration_guide/img/menus/frontend_menu_10.png
 
@@ -95,7 +95,7 @@ Condition
 
 * The *config_value('some_identifier')* function limits visibility of the corresponding menu item upon specifying the certain value instead of *'some_identifier'*.
 
-  As an example, let us make the **About** section in the front store visible to customers with configured taxes. For this, we need to:
+  As an example, let us make the **About** section in the storefront visible to customers with configured taxes. For this, we need to:
 
   a) Customize the *config_value('some_identifier')* function with the required value instead of *some_identifier*. In our case, it is the *oro_tax.tax_enable* value.
 

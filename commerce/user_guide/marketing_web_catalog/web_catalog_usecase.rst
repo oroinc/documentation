@@ -12,9 +12,9 @@ Enable a Web Catalog Globally
 To enable a web catalog globally:
 
 1. Navigate to **System > Configuration > Websites > Routing**.
-2. In the Web Catalog section, select the required web catalog that should be displayed on the front store.
+2. In the Web Catalog section, select the required web catalog that should be displayed on the storefront.
    
-.. note:: When a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Front Store. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+.. note:: When a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
    
  
 .. image:: /user_guide/img/marketing/web_catalogs/use_case/SysConfigWebCatalog.png
@@ -59,7 +59,7 @@ To customize your web catalog contents visibility:
 
    By default, the web catalog is displayed for any localization, on any website, and for any customer.
 
-   To make OroCommerce apply a web catalog to the front store only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
+   To make OroCommerce apply a web catalog to the storefront only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
 
 .. image:: /user_guide/img/marketing/web_catalogs/use_case/CatalogRestrictions.png
    :class: with-border
@@ -89,7 +89,7 @@ A website that distributes beauty and skincare products to shops worldwide is to
 4. Baby and Child
 5. Toiletries
 
-These sections will serve as the first level of the front store main menu. In the management console, they will be called the root nodes.
+These sections will serve as the first level of the storefront main menu. In the management console, they will be called the root nodes.
 
 To set up root content nodes in the management console, we:
 
@@ -151,7 +151,7 @@ Each of such levels can be populated with more levels, or nodes, if necessary, a
 .. image:: /user_guide/img/marketing/web_catalogs/DragDropNode.png
    :class: with-border
 
-Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-per-website>`), you will be able to see it on the front store.
+Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-per-website>`), you will be able to see it on the storefront.
 
 .. image:: /user_guide/img/marketing/web_catalogs/use_case/NodesFrontStore.gif
 

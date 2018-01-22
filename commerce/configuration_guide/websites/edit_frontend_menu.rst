@@ -1,9 +1,9 @@
-Edit Front Store Menu
+Edit Storefront Menu
 ---------------------
 
-OroCommerce Front Store has a number of menus that may be rearranged and customized.
+OroCommerce Storefront has a number of menus that may be rearranged and customized.
 
-To customize a Front Store menu for the website:
+To customize a Storefront menu for the website:
 
 1. Navigate to **System > Websites** using the main menu.
 
@@ -17,7 +17,7 @@ To customize a Front Store menu for the website:
 
 3. On the website details page, click |IcConfig| **Edit Frontend Menu**.
 
-   Now you are redirected to the list of OroCommerce Front Store menus:
+   Now you are redirected to the list of OroCommerce Storefront menus:
 
    .. image:: /configuration_guide/img/websites/front_menu.png
       :class: with-border

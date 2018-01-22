@@ -14,11 +14,11 @@ Understanding Price Currencies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 A ``base currency`` is a currency that is used to display financial statistics (budgets, sales amounts, etc.) on the management console.
-A ``display currency`` is a currency that is used to display prices to customer users on the Front Store.
+A ``display currency`` is a currency that is used to display prices to customer users on the Storefront.
 
-.. The store frontend uses the exact value entered by the price manager when a customer requires prices in a selected display currency and the prices in the same base currency are available in the calculated price list. If the price list does not have the price in the selected currency, then additional currency conversion rules are used.
+.. The storefront uses the exact value entered by the price manager when a customer requires prices in a selected display currency and the prices in the same base currency are available in the calculated price list. If the price list does not have the price in the selected currency, then additional currency conversion rules are used.
 
-To enable your customer users to switch between the base currency and additional display currencies when they view the prices on the front store, set up currency conversion rules for each of the additional display currencies. See :ref:`Global Currency Configuration <sys--config--sysconfig--general-setup--currency>` for more information on the necessary steps.
+To enable your customer users to switch between the base currency and additional display currencies when they view the prices on the storefront, set up currency conversion rules for each of the additional display currencies. See :ref:`Global Currency Configuration <sys--config--sysconfig--general-setup--currency>` for more information on the necessary steps.
 
 Understanding Product Quantities and Tier Prices
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,7 +49,7 @@ Understanding Price Lists
 
 Price lists are used in OroCommerce to match the product quantities with their prices in one or more currencies.
 
-Price lists are used as a reference that helps calculate the price for the products that customer user sees on the store frontend.
+Price lists are used as a reference that helps calculate the price for the products that customer user sees on the storefront.
 
 For example, you can have one or multiple price lists with prices in US dollars and Euros that apply to all your customers.
 
@@ -57,9 +57,9 @@ At the same time, a different price list with prices in US dollars only may have
 
 Finally, a dedicated price list with prices in Euros may be available only to some of your selected European partners.
 
-.. A calculated price list (also called combined price list) is an internal representation of all prices available to all customer users of the selected customer on the store frontend.
+.. A calculated price list (also called combined price list) is an internal representation of all prices available to all customer users of the selected customer on the storefront.
 
-For example, let's imagine that one of your customer users logs into your store frontend. They may see prices for both product A and product B. The product A prices come from the default price list available to everybody. The product B prices are from a custom price list that you have created to override default product B pricing only for this specific customer. Even though you can see all price lists and switch between them in your store management console, your customer users can see only those prices on the store frontend that you have made available to them by configuring price lists and their settings.
+For example, let's imagine that one of your customer users logs into your storefront. They may see prices for both product A and product B. The product A prices come from the default price list available to everybody. The product B prices are from a custom price list that you have created to override default product B pricing only for this specific customer. Even though you can see all price lists and switch between them in your store management console, your customer users can see only those prices on the storefront that you have made available to them by configuring price lists and their settings.
 
 Price Selection Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,7 +118,7 @@ Automated pricing rules are a single source of truth for your price list. You ca
 Price List Calculation
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To provide an optimized user experience on the store frontend and in the store management console, and maintain the desired level of system performance, we provide a way to fine-tune the price list calculation behavior.
+To provide an optimized user experience on the storefront and in the store management console, and maintain the desired level of system performance, we provide a way to fine-tune the price list calculation behavior.
 
 OroCommerce performs a non-resource-consuming part of price recalculation immediately after the price change is submitted by the user in the management console (e.g., when a user submits the product edit form, or adds a price via the price list management, or modifies price list priority on a customer edit page, etc.).
 

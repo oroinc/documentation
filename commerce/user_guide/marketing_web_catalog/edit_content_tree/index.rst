@@ -16,9 +16,9 @@ To edit a web catalog content tree:
 
 #. In the page that opens, fill in the details of the **homepage node** of the web catalog as described in the :ref:`Set Up the Homepage, First Level Menu, and Sub Menus <user-guide--marketing--web-catalog--root-node>` section.
 
-   The content selected in the content variants of the **homepage node** is shown when the buyer navigates to the OroCommerce front store. The ***homepage node** also acts as a parent node for the web catalog menu and sub menu items. It is recommended to use Oro Frontend Root system page as a root node of your web catalog.
+   The content selected in the content variants of the **homepage node** is shown when the buyer navigates to the OroCommerce storefront. The ***homepage node** also acts as a parent node for the web catalog menu and sub menu items. It is recommended to use Oro Frontend Root system page as a root node of your web catalog.
 
-#. Under the **homepage node**, create main menu content nodes (e.g. first level of the main menu in the front store) as described in the :ref:`Set Up the Homepage, First Level Menu, and Sub Menus <user-guide--marketing--web-catalog--root-node>` section. It is recommended to create a dedicated landing page for main menu nodes of your web catalog.
+#. Under the **homepage node**, create main menu content nodes (e.g. first level of the main menu in the storefront) as described in the :ref:`Set Up the Homepage, First Level Menu, and Sub Menus <user-guide--marketing--web-catalog--root-node>` section. It is recommended to create a dedicated landing page for main menu nodes of your web catalog.
 
    .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate2.png
       :class: with-border

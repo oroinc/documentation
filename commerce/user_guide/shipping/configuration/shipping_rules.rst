@@ -176,7 +176,7 @@ To create a shipping rule:
 
    * When no website is selected, the shipping rule is always applied by default.
 
-   * When at least one website is selected, the shipping rule will apply to the orders created in the front store of the specified website.
+   * When at least one website is selected, the shipping rule will apply to the orders created in the storefront of the specified website.
 
 #. Click **Save**.
 

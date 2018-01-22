@@ -28,9 +28,9 @@ To change the default routing settings for the website:
    .. image:: /configuration_guide/img/configuration/websites/website_routing.png
       :class: with-border
 
-   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Front Store pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
+   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
-   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Front Store pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
+   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
 
    * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
@@ -46,7 +46,7 @@ To change the default routing settings for the website:
 
      When *Secure* is selected, the **Secure URL** value is used instead.
 
-   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Front Store. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
 
    * **Cookie Value** - a unique website ID that is saved in the cookies and is later used by a website matcher to identify the website customer is on. The cookie name is configured on the :ref:`system level <sys--config--sysconfig--websites--routing>`.
 

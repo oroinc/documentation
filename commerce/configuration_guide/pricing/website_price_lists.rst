@@ -21,7 +21,7 @@ To change the default price list settings for the website:
 
    a) Select one of the following values for the **Fallback** option for the users who are visiting this website:
 
-      * *Config* --- OroCommerce uses :ref:`Default Price Lists from the system configuration <sys--config--commerce--catalog--pricing>` to calculate the prices shown in the front store.
+      * *Config* --- OroCommerce uses :ref:`Default Price Lists from the system configuration <sys--config--commerce--catalog--pricing>` to calculate the prices shown in the storefront.
 
       * *Current website only* --- For price calculation, OroCommerce uses the configuration from the website settings.
 

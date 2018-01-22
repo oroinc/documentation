@@ -5,7 +5,7 @@ Enable All Products Page per Website
 
 .. begin_all_products
 
-The first step of configuring All Products page for your front store is enabling it in your system. To enable All Products page per website:
+The first step of configuring All Products page for your storefront is enabling it in your system. To enable All Products page per website:
 
 
 1. Navigate to **System > Websites** in the main menu.

@@ -7,7 +7,7 @@ Highlight New Products
 
 .. begin_higlight_new_products
 
-You can highlight certain products as new ones in the front store by enabling New Product icons display. You will find detailed guidance in the sections below.
+You can highlight certain products as new ones in the storefront by enabling New Product icons display. You will find detailed guidance in the sections below.
 
 This will look differently for various layout options:
 
@@ -71,27 +71,27 @@ Enable New Product Icons per Organization
 
 .. _user-guide--new-arrivals:
 
-Set Up New Arrivals
--------------------
+Set Up New Arrivals Block
+-------------------------
 
 To promote new arrivals on the store homepage, you can set up and control the products included in the **New Arrivals** block. This can be done on three levels: globally, per organization and per website.
 
-Set Up New Arrivals Globally
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Set Up New Arrivals Block Globally
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /configuration_guide/landing_commerce/product/products/global_new_arrivals_block.rst
    :start-after: begin
    :end-before: finish
 
-Set Up New Arrivals per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Set Up New Arrivals Block per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /configuration_guide/landing_commerce/product/products/organization_new_arrivals_block.rst
    :start-after: begin
    :end-before: finish
 
-Set Up New Arrivals per Website
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Set Up New Arrivals Block per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /configuration_guide/landing_commerce/product/products/website_new_arrivals_block.rst
    :start-after: begin

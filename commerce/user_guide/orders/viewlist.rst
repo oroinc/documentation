@@ -47,7 +47,7 @@ The following information about orders is available:
 * **Payment Status** --- Whether the order is already paid in full, the payment for the order is authorized, etc.
 * **Payment Method** --- The payment method selected to pay for the order.
 * **Shipping Method** --- The shipping method selected for the order delivery.
-* **Source Document** --- If the order has been created from an RFQ, quote, or another order, this field contains a link to the corresponding record. If the order has been created from scratch (in the management console) or the quick order form (in the front store), the field shows 'N/A'.
+* **Source Document** --- If the order has been created from an RFQ, quote, or another order, this field contains a link to the corresponding record. If the order has been created from scratch (in the management console) or the quick order form (in the storefront), the field shows 'N/A'.
 * **Discount** --- The total of all discounts applied to the order.
 * **Created At** --- The date and time when the order was created.
 * **Updated At** --- The date and time when the order was last updated.

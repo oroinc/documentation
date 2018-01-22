@@ -84,7 +84,7 @@ Proceed to create the attribute as described below.
       :width: 450px
 
 
-   * **Label** -- Enter the attribute label. It will be displayed both in the management console and in the front store.
+   * **Label** -- Enter the attribute label. It will be displayed both in the management console and in the storefront.
    * **Description** -- When filled in, the description will be used as a field tooltip when the attribute appears on the forms.
 
 2. Provide additional information for product attributes depending on their type:
@@ -139,7 +139,7 @@ Proceed to create the attribute as described below.
        - **Related Entity Detailed** -- Available only for the Many to Many and One to Many relations. Select those fields of the entity selected in **Target Entity** which contain additional information that you want to see on the master entity record edit page. The values of the fields selected will be available in the dialog that appears when you click the title of the related entity on the master page edit page. Hold the **Ctrl** key to choose several fields.
        - **Target Field** -- Available only for the Many to One relation. Select the field of the entity selected in **Target Entity** by which the entity records will be tied."
 
-#. In the **Frontend options** section, set up the front store options applicable to the product attribute.
+#. In the **Frontend options** section, set up the storefront options applicable to the product attribute.
 
    .. image:: /user_guide/img/products/product_attributes/productattributes_create_frontend.png
 
@@ -149,17 +149,17 @@ Proceed to create the attribute as described below.
       :header: "Field", "Description"
       :widths: 15, 50
 
-      "**Searchable**","If enabled, attribute content can be found in the front store via search."
-      "**Filterable**","Defines whether a dedicated filter is available for the attribute in the front store."
+      "**Searchable**","If enabled, attribute content can be found in the storefront via search."
+      "**Filterable**","Defines whether a dedicated filter is available for the attribute in the storefront."
       "**Filter By**","Defines the type of filtering to be applied to the attribute:
 
        - *Fuzzy search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
        - *Exact value* --- Look for the values that exactly match the entered text.
 
        "
-      "**Sortable**","Defines whether sorting is available for the attribute in the front store."
-      "**Enabled**","Defines whether the attribute is enabled in the front store."
-      "**Visible**","Defines whether the attribute is visible or hidden in the front store."
+      "**Sortable**","Defines whether sorting is available for the attribute in the storefront."
+      "**Enabled**","Defines whether the attribute is enabled in the storefront."
+      "**Visible**","Defines whether the attribute is visible or hidden in the storefront."
 
 #. In the **Backoffice options** section, fill in the **Import & Export** subsection to configure details of the product attribute's import/export:
 
@@ -174,7 +174,7 @@ Proceed to create the attribute as described below.
      - *Identity only* -- Export only the field that serves as an identifier of the related entity record.
      - *All* -- Export all fields of the related entity record.
 
-4. In the **Backoffice options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the management console and front store.
+4. In the **Backoffice options** section, fill in the **Other** subsection, specifying the configuration options for the product attribute view, search and use in the management console and storefront.
 
    .. note:: Please note that available options depend on the type selected for the attribute (e.g. image, text, multi-select, etc.).
 

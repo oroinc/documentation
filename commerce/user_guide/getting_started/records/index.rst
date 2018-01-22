@@ -31,7 +31,7 @@ able to view, update, delete, and create records of specific entities.
 How Entities Can Be Related
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Some pieces of information are complex enough to have their own entity. For example, for each shopping list in the OroCommerce front store, OroCommerce stores a unique ID (number), details of the items that are in the cart, their total value, and any additional information provided by the buyer.
+Some pieces of information are complex enough to have their own entity. For example, for each shopping list in the OroCommerce storefront, OroCommerce stores a unique ID (number), details of the items that are in the cart, their total value, and any additional information provided by the buyer.
 
 Therefore, there is a ShoppingList entity that defines the data structure of the shopping list  records that store all the necessary shopping list information.
 

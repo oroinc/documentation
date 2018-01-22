@@ -1,10 +1,10 @@
 .. _frontstore-guide:
 
-Front Store Guide 
+Storefront Guide
 =================
 
 
-The following guide is intended as an introduction to the OroCommerce default front store. It illustrates how to navigate, browse and interact with the store.
+The following guide is intended as an introduction to the OroCommerce default storefront. It illustrates how to navigate, browse and interact with the store.
 
 For a quick orientation, see how to :ref:`Register and Sign in <frontstore-guide--getting-started>` and check out the :ref:`Navigation Basics <frontstore-guide--navigation>`.
 
@@ -105,7 +105,7 @@ In the following topics, you can find answers to the next questions:
 * :ref:`How can I create and manage shopping lists as a guest user <frontstore-guide--shopping-lists-guest>`?
 
 
-**Sample Front Store**
+**Sample Storefront**
 
 .. image:: /frontstore_guide/img/FrontPage1.png
 .. image:: /frontstore_guide/img/FrontPage2.png

@@ -198,9 +198,9 @@ The following table describes which options are available for each of the status
 
 .. Future options for Sent to Customer step:
 
-.. |                                                                | Accept --- accept the quote. *(B, in the front store)*                                                                                                                                 |          |       | *     | Closed                |
+.. |                                                                | Accept --- accept the quote. *(B, in the storefront)*                                                                                                                                 |          |       | *     | Closed                |
    |                                                                +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-------+-----------------------+
-   |                                                                | Decline --- decline the quote. *(B, in he front store)*                                                                                                                                |          |       | *     | Closed                |
+   |                                                                | Decline --- decline the quote. *(B, in he storefront)*                                                                                                                                |          |       | *     | Closed                |
    |                                                                +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------+-------+-------+-----------------------+
 
 
@@ -304,7 +304,7 @@ Let us go through every step of this process:
 
    .. image:: /configuration_guide/img/workflows/backoffice_quote_approval_flow/workflow_bqfa_quote_sendtocustomer2.png
 
-   In the front store, the quote becomes available to the customer user it was created for:
+   In the storefront, the quote becomes available to the customer user it was created for:
 
    .. image:: /configuration_guide/img/workflows/backoffice_quote_approval_flow/workflow_bqfa_quote_sendtocustomer3.png
 

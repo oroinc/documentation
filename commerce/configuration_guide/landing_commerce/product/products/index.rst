@@ -212,7 +212,7 @@ Select a Featured Products Segment to Use Per Website
 Previously Purchased Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The previously purchased products page displays the products that were recently purchased by customer users. In the front store, this page is nested under the **Previous Purchased** menu in **Account**.
+The previously purchased products page displays the products that were recently purchased by customer users. In the storefront, this page is nested under the **Previous Purchased** menu in **Account**.
 
 .. image:: /configuration_guide/img/configuration/product/previously_purchased/PreviouslyPurchasedFrontStore.png
 
@@ -286,7 +286,7 @@ Upsell Items
 All Products Page
 ^^^^^^^^^^^^^^^^^
 
-All Products page displays all available products from the master catalog grouped by categories. See :ref:`All Products Page <sys--conf--commerce--catalog--special-pages>` topic for more information on how to enable All Products page and include it in the web catalog or frontend menu on the OroCommerce front store.
+All Products page displays all available products from the master catalog grouped by categories. See :ref:`All Products Page <sys--conf--commerce--catalog--special-pages>` topic for more information on how to enable All Products page and include it in the web catalog or frontend menu on the OroCommerce storefront.
 
 .. finish_configuration
 
@@ -316,9 +316,15 @@ All Products page displays all available products from the master catalog groupe
 
    global_new_arrivals
 
+   global_new_arrivals_block
+
    organization_new_arrivals
 
+   organization_new_arrivals_block
+
    website_new_arrivals
+
+   website_new_arrivals_block
 
    global_featured_products
 

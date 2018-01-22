@@ -102,8 +102,8 @@ This section provides links to the online documentation for the latest OroCommer
    </div>
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
 
-   <h2 id="buyer">Using Store Frontend</h2>
-   <p>The store frontend is a self-served web-interface for buyers.</p>
+   <h2 id="buyer">Using Storefront</h2>
+   <p>The storefront is a self-served web-interface for buyers.</p>
    <hr style="border-top: 1px dashed #fafafa; border-bottom: none;border-right: none">
    <div class="guideline">
       <div class="guideline__item" >

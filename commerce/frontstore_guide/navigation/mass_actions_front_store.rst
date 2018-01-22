@@ -7,11 +7,11 @@ Mass Delete in Tables
 
 With mass actions, you can apply one action to multiple items at the same time, which can simplify and speed up the process of selecting the required items.
 
-In the front store, mass delete action is available in the **Address book** and **Users** sections only for the registered users.
+In the storefront, mass delete action is available in the **Address book** and **Users** sections only for the registered users.
 
 .. image:: /frontstore_guide/img/mass_actions/mass_actions_1.png
 
-To use mass delete action in the front store, you need to :ref:`sign into the account <frontstore-guide--getting-started-overview-sign-in>` and proceed with the next steps:
+To use mass delete action in the storefront, you need to :ref:`sign into the account <frontstore-guide--getting-started-overview-sign-in>` and proceed with the next steps:
 
 1. Navigate to the account page by clicking **Account** at the top.
 

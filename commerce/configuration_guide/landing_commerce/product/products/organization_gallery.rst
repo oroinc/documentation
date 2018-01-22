@@ -20,7 +20,7 @@ The following page opens:
 .. image:: /configuration_guide/img/configuration/product/product_images/ImageGalleryOrganization.png
    :class: with-border
 
-4. When **Popup Gallery on Product View** is enabled, image gallery in the front store will take the following form:
+4. When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
 
    .. image:: /configuration_guide/img/configuration/product/product_images/ImageGalleryOrganizationEnabled.png
       :class: with-border

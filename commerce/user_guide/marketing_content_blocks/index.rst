@@ -34,7 +34,7 @@ To edit a defined content block:
 4. In the *Restrictions* section, you can specify or edit visibility restrictions for the content block.
    
    By default, the content block is displayed for any localization, on any website, and for any customer.
-   To make OroCommerce apply a content block to the front store only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
+   To make OroCommerce apply a content block to the storefront only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
 
    .. note:: Only one field must be chosen for customers at a time, either a customer group and a customer.
  

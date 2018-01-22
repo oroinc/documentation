@@ -3,12 +3,12 @@
 Configure All Products Page
 ===========================
 
-In your Oro management console, you can enable and configure All Products page for the OroCommerce front store. When configured, such page should display all available products from the :ref:`master catalog <user-guide--web-catalog>` grouped by categories.
+In your Oro management console, you can enable and configure All Products page for the OroCommerce storefront. When configured, such page should display all available products from the :ref:`master catalog <user-guide--web-catalog>` grouped by categories.
 
 To configure All Products page:
 
 1. Enable **All Products Page** in system configuration on the required level (globally or per website).
-2. Add it to the front store as part of either your :ref:`web catalog <user-guide--web-catalog>` (**Marketing > Web Catalog**) or a :ref:`frontend menu <doc--menu-config-levels>` (**System > Frontend Menus**).
+2. Add it to the storefront as part of either your :ref:`web catalog <user-guide--web-catalog>` (**Marketing > Web Catalog**) or a :ref:`frontend menu <doc--menu-config-levels>` (**System > Frontend Menus**).
 
 .. contents:: :local:
 

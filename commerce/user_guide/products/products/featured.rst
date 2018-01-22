@@ -5,7 +5,7 @@ Manage Featured Products
 
 .. begin_featured_products
 
-You can mark some of the products as featured to display them in the Featured Products block on the main landing page (home page) in the front store.
+You can mark some of the products as featured to display them in the Featured Products block on the main landing page (home page) in the storefront.
 
 .. image:: /user_guide/img/products/products/FeatruedProducts.png
 

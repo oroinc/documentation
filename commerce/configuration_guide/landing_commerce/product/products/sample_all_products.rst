@@ -5,7 +5,7 @@ Add a Sample All Products Page
 
 .. begin_all_products
 
-As an illustration, let us add a sample All Products page to the front store of the Europe website as a standalone page in the Quick Access menu.
+As an illustration, let us add a sample All Products page to the storefront of the Europe website as a standalone page in the Quick Access menu.
 
 .. image:: /configuration_guide/img/menus/edit/SampleAllProducts1.png
 
@@ -50,7 +50,7 @@ Next, add the page to the quick access menu:
 
 7. Click **Save** on the top right to save the changes.
 
-The All Products page should now be available as part of the Quick Access menu in the front store of the Europe website.
+The All Products page should now be available as part of the Quick Access menu in the storefront of the Europe website.
 
 .. note:: Please note, that the products unassigned to a category will be listed first, followed by those which belong to a category.
 

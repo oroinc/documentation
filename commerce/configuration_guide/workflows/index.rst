@@ -26,7 +26,7 @@ Overview
 
 In OroCommerce, a workflow is a business process that involves multiple user interactions or sequential phases. It may trigger other workflows and change the status of the items involved in a business process.
 
-In the front store, workflows organize and direct users’ work (e.g. during the checkout), making them follow particular steps in a pre-defined order (e.g. provide shipping address, then select shipping method from the options supported for the destination), or preventing them from performing actions that either contradict or conflict with the logical steps of a process (e.g. a customer may not be able to submit an order without their manager's approval).
+In the storefront, workflows organize and direct users’ work (e.g. during the checkout), making them follow particular steps in a pre-defined order (e.g. provide shipping address, then select shipping method from the options supported for the destination), or preventing them from performing actions that either contradict or conflict with the logical steps of a process (e.g. a customer may not be able to submit an order without their manager's approval).
 
 In the OroCommerce management console, workflows help users follow standard procedures that may be of a non-linear nature with alternating flow that depends on the available information, related items status, connectivity with integrated solutions, etc.
 
@@ -380,9 +380,9 @@ Workflow group can be expanded / collapsed, if necessary, by clicking the **+** 
 
 .. TODO: DOC-122, draft as the dev ticket is not completed.
 
-.. The front store and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
+.. The storefront and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
 
-.. The front store workflows are marked with the |IcCustomerUser| icon. The backoffice workflows (workflows available in the management console) are marked with the |IcUser| icon.
+.. The storefront workflows are marked with the |IcCustomerUser| icon. The backoffice workflows (workflows available in the management console) are marked with the |IcUser| icon.
 
 .. .. image:: /configuration_guide/img/workflows/workflows_frontstore_backoffice.jpg
 

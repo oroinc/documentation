@@ -1,33 +1,31 @@
 .. _sys--websites--sysconfig--general-setup--localization:
 
-Website Localization Settings
------------------------------
+Customize Localization Settings per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. begin
 
 To define the custom localization options for the particular website:
 
-1. Navigate to **System > Websites** using the main menu.
+1. Navigate to **System > Websites** in the main menu.
 
-   .. image:: /configuration_guide/img/websites/Websites.png
-      :class: with-border
+2. For the necessary website, hover over the |IcMore| **More Options** menu to the right and click |IcConfig| to start editing the configuration.
 
-2. Click on the website you would like to customize localization settings for (e.g. Australia).
+3. Select **System Configuration > General Setup > Localization** in the menu to the left.
 
-   .. image:: /configuration_guide/img/websites/view_website.png
-      :class: with-border
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-3. On the website details page, click |IcConfig| **Configuration**.
+The following page opens:
 
-#. In the **System Configuration** menu to the left, expand **General Setup** and click |IcFlag| **Localization**.
+.. image:: /configuration_guide/img/localization/localization_configuration_website.png
 
-        The following page opens:
+4. Select one or multiple enabled localizations for the website from the list to support the translation of the storefront UI elements to the target language.
 
-        .. image:: /configuration_guide/img/websites/website_localization.png
+5. Select the default localization for the storefront of the website.
 
-#. Select the localizations to be enabled for this website. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys and click to choose the languages from the list.
+6. Click **Save** to the save the settings.
 
-#. Select the default localization for this website. Localization affects formatting of numbers, addresses, names, and dates.
 
 .. finish
 

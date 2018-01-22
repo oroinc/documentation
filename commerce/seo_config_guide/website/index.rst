@@ -3,7 +3,7 @@
 Website Configuration
 =====================
 
-This section guides you through the OroCommerce Front Store website-related system configuration options.
+This section guides you through the OroCommerce Storefront website-related system configuration options.
 
 Routing
 ~~~~~~~

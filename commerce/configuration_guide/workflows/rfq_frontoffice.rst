@@ -9,7 +9,7 @@ RFQ Submission Flow Workflow
 Overview
 --------
 
-RFQ (Request For Quote) Submission Flow Workflow is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that an RFQ can go through in the front store and the management console.
+RFQ (Request For Quote) Submission Flow Workflow is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that an RFQ can go through in the storefront and the management console.
 
 To reach the workflow:
 
@@ -36,7 +36,7 @@ RFQ Customer Statuses
 
 .. start_customer_statuses
 
-#. Customer Statuses (correspond to RFQ Submission Flow on the RFQ page) are the statuses displayed to customers in the front store. In the management console, they are visible on the RFQ page:
+#. Customer Statuses (correspond to RFQ Submission Flow on the RFQ page) are the statuses displayed to customers in the storefront. In the management console, they are visible on the RFQ page:
 
 	a) Submitted
 	b) Pending Approval
@@ -99,7 +99,7 @@ The RFQ Submission Flow consists of the following steps and transitions:
 
 As an illustration, let us go through a sample flow to see RFQ Submission Flow in action:
 
-1. A customer user creates an RFQ in the front store. Once the RFQ is sent, its customer status is marked as Submitted.
+1. A customer user creates an RFQ in the storefront. Once the RFQ is sent, its customer status is marked as Submitted.
    
    .. image:: /configuration_guide/img/workflows/rfq/frontoffice/RFQButton.png
 
@@ -111,7 +111,7 @@ As an illustration, let us go through a sample flow to see RFQ Submission Flow i
 
    .. image:: /configuration_guide/img/workflows/rfq/frontoffice/rfq_submission_flow_6.png
    
-3. The customer user receives the request in the front store, clicks Provide Information in the right corner of the page and replies to the message. The customer status is now Submitted.
+3. The customer user receives the request in the storefront, clicks Provide Information in the right corner of the page and replies to the message. The customer status is now Submitted.
    
    .. image:: /configuration_guide/img/workflows/rfq/frontoffice/RFQProvideInfo.png
    .. image:: /configuration_guide/img/workflows/rfq/frontoffice/RFQInformationProvided.png

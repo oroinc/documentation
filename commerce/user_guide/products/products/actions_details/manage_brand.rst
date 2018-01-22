@@ -33,7 +33,7 @@ Once you have created a brand, you can assign it to a product the following way:
 
 4. Click **Save**.
 
-The brand has been assigned to the product and should now be available in the front store.
+The brand has been assigned to the product and should now be available in the storefront.
 
 .. image:: /user_guide/img/products/products/BrandFrontStore.png
 
@@ -50,7 +50,7 @@ Once a brand has been created and assigned to a product, you may set it filterab
 
 4. Click **Save and Close**.
 
-The brand filter is now available in the front store.
+The brand filter is now available in the storefront.
 
  .. image:: /user_guide/img/products/products/brand_filters_1.png
 

@@ -5,7 +5,7 @@ Enable All Products Page Globally
 
 .. begin_all_products
 
-The first step of configuring All Products page for your front store is enabling it in your system. To enable All Products page globally:
+The first step of configuring All Products page for your storefront is enabling it in your system. To enable All Products page globally:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Catalog > Special Pages** in the panel to the left.
