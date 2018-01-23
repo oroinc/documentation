@@ -25,11 +25,11 @@ The following page opens:
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Name                                               | Description                                                                                                                      |
    +====================================================+==================================================================================================================================+
-   | Storefront: Visible Inventory Statuses             | A buyer can see products with the selected inventory statuses on the OroCommerce storefront.                                     |
+   | Store Frontend: Visible Inventory Statuses         | A buyer can see products with the selected inventory statuses on the OroCommerce storefront.                                     |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Storefront: Can Be Added To RFQs                   | A buyer can add Products with the selected inventory statuses when creating an RFQ on the OroCommerce storefront.                |
+   | Store Frontend: Can Be Added To RFQs               | A buyer can add Products with the selected inventory statuses when creating an RFQ on the OroCommerce storefront.                |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Storefront: Can Be Added To Orders                 | A buyer can add Products with the selected inventory statuses when creating an Order on the OroCommerce storefront.              |
+   | Store Frontend: Can Be Added To Orders             | A buyer can add Products with the selected inventory statuses when creating an Order on the OroCommerce storefront.              |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Management Console: Can Be Added To Quotes         | A sales person can add products with the selected inventory statuses to the Quotes using OroCommerce management console.         |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
