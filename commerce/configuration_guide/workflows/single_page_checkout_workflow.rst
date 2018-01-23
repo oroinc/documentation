@@ -9,7 +9,7 @@ Single Page Checkout Workflow
 Overview
 --------
 
-In your Oro application, you can control the way the checkout is displayed to customers in the front store. By default, each checkout step is displayed on a new page. However, by activating the Single Page Checkout workflow in the management console, you can make all steps fit one page. This will make the checkout process easier and quicker for customers, since they will be able to see how far along in the checkout they are, and how many fields are left to complete it.
+In your Oro application, you can control the way the checkout is displayed to customers in the storefront. By default, each checkout step is displayed on a new page. However, by activating the Single Page Checkout workflow in the management console, you can make all steps fit one page. This will make the checkout process easier and quicker for customers, since they will be able to see how far along in the checkout they are, and how many fields are left to complete it.
 
 
 .. image:: /configuration_guide/img/workflows/single_page_checkout/SinglePageCheckout.png
@@ -65,7 +65,7 @@ Sample Flow
 
 As an illustration let us go through the sample flow to see the Single Page Checkout workflow in action:
 
-1. A customer adds an item to the shopping list in the front store, and clicks **Create Order** to proceed to the checkout.
+1. A customer adds an item to the shopping list in the storefront, and clicks **Create Order** to proceed to the checkout.
 
    .. image:: /configuration_guide/img/workflows/single_page_checkout/SampleFlow1.png
 
@@ -103,7 +103,7 @@ Related Topics
 * :ref:`Checkout Workflow <system--workflows--checkout-workflow>`
 * :ref:`Alternative Checkout Workflow <system--workflows--alternative-checkout-workflow>`
 * :ref:`Workflow Management topic <user-guide--system--workflow-management>`
-* :ref:`Checkout Process in the Front Store <frontstore-guide--orders-checkout>`
+* :ref:`Checkout Process in the Storefront <frontstore-guide--orders-checkout>`
 
 
 .. include:: /user_guide/include_images.rst

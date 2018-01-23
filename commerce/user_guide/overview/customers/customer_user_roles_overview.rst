@@ -3,7 +3,7 @@ Overview
 
 .. begin
 
-In Customer User Roles section, you can view, edit and create new customer roles to define the level of permissions and access to the actions and data in OroCommerce store frontend for the users of this role.
+In Customer User Roles section, you can view, edit and create new customer roles to define the level of permissions and access to the actions and data in OroCommerce storefront for the users of this role.
 
 The following roles are predefined and available for every customer by default:
 
@@ -115,7 +115,7 @@ With the Customer User Role you can manage the following access- and permissions
             * Share grid view
             * Unassign other tags
             * Unshare grid view
-            * Update User Profile (enables the customer user to update their profile under **Account > My Profile** in the front store)
+            * Update User Profile (enables the customer user to update their profile under **Account > My Profile** in the storefront)
             * View SQL query of a report/segment
 
         + **Calendar**
@@ -134,6 +134,6 @@ With the Customer User Role you can manage the following access- and permissions
 
 Finally, in the customer role details, you may view customer users with this role assigned. If the role is global, this list contains users from all customer accounts.
 
-.. note:: Please note that there are two ways to control the capability of a customer user to update their profile details in the front store. One is defined by the **Edit** permission for Customer Users. When set to **Same Level/All Levels**, editing will become possible under **Account > All Users** in the front store. The second one is defined by the **Update User Profile** capability which, when enabled, gives the customer user permissions to update details under **Account > My Profile** in the front store.
+.. note:: Please note that there are two ways to control the capability of a customer user to update their profile details in the storefront. One is defined by the **Edit** permission for Customer Users. When set to **Same Level/All Levels**, editing will become possible under **Account > All Users** in the storefront. The second one is defined by the **Update User Profile** capability which, when enabled, gives the customer user permissions to update details under **Account > My Profile** in the storefront.
 
 

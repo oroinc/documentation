@@ -3,7 +3,7 @@
 OroCommerce Design: Theme
 =========================
 
-In your Oro application, you can control and customize the front store look and feel.
+In your Oro application, you can control and customize the storefront look and feel.
 
 This can be done on three levels -- globally, per organization and website.
 

@@ -5,7 +5,7 @@ Configure Image Gallery Globally
 
 .. begin
 
-You can choose whether to use popup or inline view for the image gallery in the front store.
+You can choose whether to use popup or inline view for the image gallery in the storefront.
 
 To configure image gallery options globally:
 
@@ -20,7 +20,7 @@ The following page opens.
 .. image:: /configuration_guide/img/configuration/product/product_images/ImageGallery.png
    :class: with-border
 
-3. When **Popup Gallery on Product View** is enabled, image gallery in the front store will take the following form:
+3. When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
 
    .. image:: /configuration_guide/img/configuration/product/product_images/ImageGalleryEnabled.png
       :class: with-border

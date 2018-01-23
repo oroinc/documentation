@@ -24,7 +24,7 @@ To create a new Landing Page:
 
 #. Enter the landing page content in the WYSIWYG text editor or use the source code mode (**<>**) to enter the html code.
 
-   .. note:: You can insert the *Contact Us widget* into the required page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. The form should then become visible in the front store.
+   .. note:: You can insert the *Contact Us widget* into the required page. For this, enter ``{{widget('contact_us_form')}}`` in the text editor and click **Save** in the top right corner. The form should then become visible in the storefront.
 
              .. image:: /configuration_guide/img/configuration/contact_us/ContactWidget.png
 

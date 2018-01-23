@@ -22,9 +22,9 @@ To create a master catalog category:
 
    * **Description** — A short and/or a long description of the category you are creating. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-   * **URL Slug** — A web address generated automatically once the title of the category is defined. It is used to build a human-readable URL for the product page in the front store. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
+   * **URL Slug** — A web address generated automatically once the title of the category is defined. It is used to build a human-readable URL for the product page in the storefront. Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-   * **Small Image** — An image used to represent the category in the front store.
+   * **Small Image** — An image used to represent the category in the storefront.
 
    .. image:: /user_guide/img/master_catalog/master_catalog_3.png
 
@@ -42,7 +42,7 @@ To create a master catalog category:
       :header: "Field","Description"
       :widths: 30, 60
 
-      "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the front store. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter is used to refer to the same product quantity unit configured for the corresponding parent category."
+      "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the storefront. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter is used to refer to the same product quantity unit configured for the corresponding parent category."
       "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg)."
 
    .. include:: /user_guide/products/products/actions_main/create_simple.rst
@@ -61,8 +61,8 @@ To create a master catalog category:
 
    * *Parent Category* — Inherit the configuration from the parent category.
    * *Config* — Inherit the :ref:`category visibility settings <user-guide--customers--configuration--visibility>` customized in the system configuration menu.
-   * *Hidden* — The category will be hidden from the front store.
-   * *Visible* — The category will be shown in the front store.
+   * *Hidden* — The category will be hidden from the storefront.
+   * *Visible* — The category will be shown in the storefront.
 
 8. In the **SEO** section, fill in the following details to help search engines show your master catalog content to the relevant audience.
 

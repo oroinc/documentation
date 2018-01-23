@@ -5,7 +5,7 @@ Configuring Inventory Status Constrains
 
 .. begin
 
-You can control the way product inventory is displayed for your buyers (in the OroCommerce Store Frontend) and sales people (in the OroCommerce Management Console). Moreover, you can restrict adding products with particular inventory status to an RFQ, customer order, quote, or a shopping list.
+You can control the way product inventory is displayed for your buyers (in the OroCommerce Storefront) and sales people (in the OroCommerce Management Console). Moreover, you can restrict adding products with particular inventory status to an RFQ, customer order, quote, or a shopping list.
 
 To change the default inventory statuses:
 
@@ -25,11 +25,11 @@ The following page opens:
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Name                                               | Description                                                                                                                      |
    +====================================================+==================================================================================================================================+
-   | Store Frontend: Visible Inventory Statuses         | A buyer can see products with the selected inventory statuses on the OroCommerce store frontend.                                 |
+   | Store Frontend: Visible Inventory Statuses         | A buyer can see products with the selected inventory statuses on the OroCommerce storefront.                                     |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Store Frontend: Can Be Added To RFQs               | A buyer can add Products with the selected inventory statuses when creating an RFQ on the OroCommerce store frontend.            |
+   | Store Frontend: Can Be Added To RFQs               | A buyer can add Products with the selected inventory statuses when creating an RFQ on the OroCommerce storefront.                |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Store Frontend: Can Be Added To Orders             | A buyer can add Products with the selected inventory statuses when creating an Order on the OroCommerce store frontend.          |
+   | Store Frontend: Can Be Added To Orders             | A buyer can add Products with the selected inventory statuses when creating an Order on the OroCommerce storefront.              |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Management Console: Can Be Added To Quotes         | A sales person can add products with the selected inventory statuses to the Quotes using OroCommerce management console.         |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+

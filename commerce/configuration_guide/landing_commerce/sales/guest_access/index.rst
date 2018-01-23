@@ -11,7 +11,7 @@ In you Oro application, you can enable or disable guest website access, in addit
 Configure Guest Website Access
 ------------------------------
 
-In order to prevent non-registered customers from accessing OroCommerce front store, the administrator can disable website access by non-authenticated visitors. This can be done globally, per website, or per organization.
+In order to prevent non-registered customers from accessing OroCommerce storefront, the administrator can disable website access by non-authenticated visitors. This can be done globally, per website, or per organization.
 
 .. contents:: :local:
    :depth: 1
@@ -179,7 +179,7 @@ Configure Guest Shopping Lists per Website
 Configure Guest Quick Order Form
 --------------------------------
 
-Unregistered customers can use a guest :ref:`quick order form <frontstore-guide--orders-quick-order>` for fast purchases in the Oro front store. By default, the guest quick order form is disabled, but you can enable it on three levels -- globally, per organization and per website.
+Unregistered customers can use a guest :ref:`quick order form <frontstore-guide--orders-quick-order>` for fast purchases in the Oro storefront. By default, the guest quick order form is disabled, but you can enable it on three levels -- globally, per organization and per website.
 
 .. note:: Please note that website settings override organization, organization settings override system settings.
 
@@ -214,7 +214,7 @@ Configure Guest Request for Quote Submission
 
 In order to let unregistered customers request quotes on the items they are interested in, you can enable Guest RFQ Forms in your Oro application. This will also allow sales reps collect information on potential sales in the management console. This can be configured on three levels -- globally, per organization and website.
 
-.. hint:: Make sure you enable :ref:`Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list>` in the management console to let guest customers create RFQs from the shopping lists in their front store.
+.. hint:: Make sure you enable :ref:`Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list>` in the management console to let guest customers create RFQs from the shopping lists in their storefront.
 
 .. note:: Please note that website settings override organization, organization settings override system settings.
 

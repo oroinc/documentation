@@ -78,7 +78,7 @@ To create a new promotion:
 
       .. note:: You may use filter on the top of the dialog to limit the scope of the products and make it fit into the visible area.
 
-8. In the **Store Frontend** section, you can specify the label to be displayed next to the coupon code in the **Order Summary** section of the checkout in the front store (illustrated below). If left blank, the name of the promotion linked to the coupons will be used as the label.
+8. In the **Store Frontend** section, you can specify the label to be displayed next to the coupon code in the **Order Summary** section of the checkout in the storefront (illustrated below). If left blank, the name of the promotion linked to the coupons will be used as the label.
 
    .. image:: /user_guide/img/marketing/promotions/CouponFrontStoreName.png
 

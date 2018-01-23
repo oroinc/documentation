@@ -41,7 +41,7 @@ Configure the Category Visibility
 Link the Master Catalog Category to a Web Catalog
 -------------------------------------------------
 
-Now, when the master catalog category is created, you need to link it to a :ref:`web catalog <user-guide--web-catalog>` for the customer to view it from the front store.
+Now, when the master catalog category is created, you need to link it to a :ref:`web catalog <user-guide--web-catalog>` for the customer to view it from the storefront.
 
 Proceed with the following steps:
 

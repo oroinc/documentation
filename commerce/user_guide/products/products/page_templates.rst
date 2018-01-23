@@ -5,7 +5,7 @@ Manage Product Page Design with Page Templates
 
 .. begin
 
-When creating a product, you can select one of the available pre-designed page templates for it. Templates are located in the **Design** section of the **Create Product** page. They define the look of your product page in the front store.
+When creating a product, you can select one of the available pre-designed page templates for it. Templates are located in the **Design** section of the **Create Product** page. They define the look of your product page in the storefront.
 
 .. tip:: You can create a product from the product list. To open it, navigate to **Products > Products > Create Product** in the main menu.
 

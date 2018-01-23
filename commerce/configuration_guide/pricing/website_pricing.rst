@@ -7,9 +7,9 @@ Currency Configuration Per Website
 
 Currency configuration a the particular website helps you:
 
-* Enable all or some currencies from the allowed currencies list to be used in OroCommerce front store and management console for this website.
+* Enable all or some currencies from the allowed currencies list to be used in OroCommerce storefront and management console for this website.
 
-* Select the currency that is shown by default in the OroCommerce front store and management console for this website.
+* Select the currency that is shown by default in the OroCommerce storefront and management console for this website.
 
 .. note:: The website level configuration has higher priority and overrides these configuration settings.
 
@@ -33,7 +33,7 @@ The following page opens:
 
      .. image:: /configuration_guide/img/configuration/catalog/pricing/currency_on_the_front_store.png
 
-   * **Default Currency** --- The currency used by default to show prices in the front store on this website.
+   * **Default Currency** --- The currency used by default to show prices in the storefront on this website.
 
 4. To customize any of these options:
 

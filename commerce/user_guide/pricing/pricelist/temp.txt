@@ -24,7 +24,7 @@
 Process - change price, recalculate prices (sys conf) > partial recalc, reindex.
 -
 user_guide/pricing/configuration/global_pricing.html#sys-config-commerce-catalog-pricing
-Offset Of Processing CPL Prices — A time frame (in hours) before the scheduled price change when the price list recalculation and reindex should happen to prepare the future actual prices in the OroCommerce front store.
+Offset Of Processing CPL Prices — A time frame (in hours) before the scheduled price change when the price list recalculation and reindex should happen to prepare the future actual prices in the OroCommerce storefront.
 Recalc: x hours before the schedule
 --
 change price

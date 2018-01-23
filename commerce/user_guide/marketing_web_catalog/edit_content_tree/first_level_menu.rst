@@ -13,9 +13,9 @@ Concepts
 
 The homepage that is shown when a buyer navigates to the web store is configured by the very first node created in the web catalog (**homepage node**).
 
-The first level of the main menu in the front store is represented by **root content nodes** in the management console.
+The first level of the main menu in the storefront is represented by **root content nodes** in the management console.
 
-Front Store:
+Storefront:
 
 .. image:: /user_guide/img/marketing/web_catalogs/FirstLevelMenuFrontStore.png
 
@@ -47,7 +47,7 @@ To create or configure the content node in the web catalog:
 
    For the **homepage node**, the title is mentioned in the content nodes tree in OroCommerce Management Console.
 
-   For the **menu and sub-menu nodes**, the title is mentioned in the content nodes tree in OroCommerce Management Console and shows as a menu or sub menu caption in your OroCommerce Front Store (depending on the level in the content tree).
+   For the **menu and sub-menu nodes**, the title is mentioned in the content nodes tree in OroCommerce Management Console and shows as a menu or sub menu caption in your OroCommerce Storefront (depending on the level in the content tree).
 
    If necessary, translate the title into the languages supported in your OroCommerce configuration. To manage title translations, click next to the Titles box and follow the :ref:`content translation guidance here <config-guide--translations>`.
 
@@ -63,7 +63,7 @@ To create or configure the content node in the web catalog:
 
    By default, the web catalog is displayed for any localization, on any website, and for any customer.
 
-   To make OroCommerce apply a web catalog to the front store only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
+   To make OroCommerce apply a web catalog to the storefront only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
 
    .. note:: Only one field must be chosen for customers at a time, either a customer group and a customer.
 
@@ -77,9 +77,9 @@ To create or configure the content node in the web catalog:
    .. image:: /user_guide/img/marketing/web_catalogs/InheritParentOff.png
       :class: with-border
 
-#) In the *Content Variants* section, add the default content item to be displayed on the OroCommerce front store when the node-level restriction conditions are met:
+#) In the *Content Variants* section, add the default content item to be displayed on the OroCommerce storefront when the node-level restriction conditions are met:
 
-  * Select the type of content to be displayed on the front store from the list on the right.
+  * Select the type of content to be displayed on the storefront from the list on the right.
 
     .. image:: /user_guide/img/marketing/web_catalogs/ContentVariantSection.png
            :class: with-border

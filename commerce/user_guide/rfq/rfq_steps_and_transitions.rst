@@ -16,7 +16,7 @@ Now you can perform the following actions with an RFQ in the management console:
 
 .. contents:: :local:
 
-Once the RFQ is submitted by a customer in the front store, it becomes immediately available in the RFQ management console in the *Open* status.
+Once the RFQ is submitted by a customer in the storefront, it becomes immediately available in the RFQ management console in the *Open* status.
 
 .. image:: /user_guide/img/sales/requests_for_quote/rfq_12.png
    :class: with-border

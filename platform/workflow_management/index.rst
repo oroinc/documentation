@@ -388,9 +388,9 @@ Workflow group can be expanded / collapsed, if necessary, by clicking the **+** 
 
 .. TODO: DOC-122, draft as the dev ticket is not completed.
 
-.. The front store and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
+.. The storefront and backoffice workflows are united into separate groups, each can be expanded / collapsed individually.
 
-.. The front store workflows are marked with the |IcCustomerUser| icon. The backoffice workflows (workflows available in the management console) are marked with the |IcUser| icon.
+.. The storefront workflows are marked with the |IcCustomerUser| icon. The backoffice workflows (workflows available in the management console) are marked with the |IcUser| icon.
 
 .. .. image:: ../img/workflows/workflows_frontstore_backoffice.jpg
 

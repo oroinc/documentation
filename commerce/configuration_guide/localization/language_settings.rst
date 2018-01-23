@@ -17,7 +17,7 @@ To define the default system language and additional supported languages:
         .. image:: /configuration_guide/img/configuration/configuration/language_settings.png
            :class: with-border
 
-#. Select the default language for the OroCommerce store frontend and management console.
+#. Select the default language for the OroCommerce storefront and management console.
 
    .. image:: /configuration_guide/img/configuration/configuration/language_settings_use_def.png
 

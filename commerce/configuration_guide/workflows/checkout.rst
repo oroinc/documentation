@@ -10,7 +10,7 @@ Checkout Workflow
 Overview
 --------
 
-The Checkout workflow represents a standard checkout procedure in the eCommerce environment. It is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a user can go through when creating an order in the front store.
+The Checkout workflow represents a standard checkout procedure in the eCommerce environment. It is a :ref:`system workflow <user-guide--system--workflow-management-system-custom>` that defines the sequence of :ref:`steps and transitions <user-guide--system--workflow-management-steps-transitions>` that a user can go through when creating an order in the storefront.
 
 To reach the workflow:
 

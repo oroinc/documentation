@@ -3,7 +3,7 @@
 Quotes
 ======
 
-The following guide will help you to view and :ref:`accept <frontstore-guide--quotes--accept>` a quote in a Quote section of the OroCommerce front store.
+The following guide will help you to view and :ref:`accept <frontstore-guide--quotes--accept>` a quote in a Quote section of the OroCommerce storefront.
 
 .. .. contents:: :local:
    :depth: 1
@@ -57,7 +57,7 @@ When you receive a quote, you can accept it and submit the order:
 
 4. Once you submit an order, you are redirected to the :ref:`checkout <frontstore-guide--orders-checkout>`. If you are not ready to complete you order, it is saved in the Orders section. For more information on open orders, see the :ref:`Orders topic <frontstore-guide--orders>`.
 
-.. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce front store.
+.. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce storefront.
 
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin

@@ -154,7 +154,7 @@ Enable Fraud Protection for any customer facing environments where real purchase
 
 #. Select all the filters and click **Deploy**.
 
-.. note:: There might be a significant delay before this change comes into affect (up to several hours). During this time the fraud filter is disabled and any transactions may impose a security risk due to the reduced protection. Limit access to the Front Store and disable related payment methods until you confirm that the fraud filters are on and catch the suspicious and illegal transactions.
+.. note:: There might be a significant delay before this change comes into affect (up to several hours). During this time the fraud filter is disabled and any transactions may impose a security risk due to the reduced protection. Limit access to the Storefront and disable related payment methods until you confirm that the fraud filters are on and catch the suspicious and illegal transactions.
 
 Configure PayPal Manager Account to Work with Express Checkout
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

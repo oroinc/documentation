@@ -26,9 +26,9 @@ The following page opens:
    +--------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Name                           | Description                                                                                                                      |
    +================================+==================================================================================================================================+
-   | Show Registration Instructions | Enables/disables registration instructions on the front store login page. This option is disabled by default.                    |
+   | Show Registration Instructions | Enables/disables registration instructions on the storefront login page. This option is disabled by default.                     |
    +--------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Registration Instructions text | If *Show Registration Instructions* is enabled, the text provided in the fields will be displayed on the front store login page. |
+   | Registration Instructions text | If *Show Registration Instructions* is enabled, the text provided in the fields will be displayed on the storefront login page.  |
    +--------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    
 3. To customize any of these options:

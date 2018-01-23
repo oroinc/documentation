@@ -27,6 +27,6 @@ To add a tracking information about the shipping to the order, in Management Con
 
 4. Click **Save**.
 
-After the tracking information for shipping has been provided, it becomes available to the buyer on the front store.
+After the tracking information for shipping has been provided, it becomes available to the buyer on the storefront.
 
 .. image:: /configuration_guide/img/shipping_rules/ShippingTrackingFront.png

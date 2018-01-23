@@ -5,7 +5,7 @@ Configure Sales Rep Information per Organization
 
 .. begin 
 
-To enable or disable the display of sales representative information in the front store :ref:`footer links <frontstore-guide--navigation-footer>` per organization:
+To enable or disable the display of sales representative information in the storefront :ref:`footer links <frontstore-guide--navigation-footer>` per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.

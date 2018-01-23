@@ -51,7 +51,7 @@ To define the localization options (system locale, primary location, address for
 
 #. Select the supported localizations. Use the :guilabel:`Ctrl` and :guilabel:`Shift` keys to choose the languages from the list.
 
-#. Select the default localization for the OroCommerce store frontend and management console. Localization affects formatting of numbers, addresses, names, and dates.
+#. Select the default localization for the OroCommerce storefront and management console. Localization affects formatting of numbers, addresses, names, and dates.
 
 Related Articles
 ----------------

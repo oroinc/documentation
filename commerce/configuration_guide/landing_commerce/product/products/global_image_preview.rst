@@ -20,12 +20,12 @@ The following page opens:
 .. image:: /configuration_guide/img/configuration/product/product_images/ImagePreviewGlobal.png
    :class: with-border
 
-3. When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the front store will open a pop up image gallery, rather than the product page.
+3. When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
 
     .. image:: /configuration_guide/img/configuration/product/product_images/ImagePreviewEnabled.png
        :class: with-border
 
-4. When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the front store will open the product page.
+4. When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
 
     .. image:: /configuration_guide/img/configuration/product/product_images/ImagePreviewDisabled.png
        :class: with-border

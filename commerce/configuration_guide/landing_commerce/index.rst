@@ -151,7 +151,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
 
-             <p>Discover how to configure your front store and management console inventory statuses, add warehouses, manage product inventory options, set inventory thresholds and quantity limitations.</p>
+             <p>Discover how to configure your storefront and management console inventory statuses, add warehouses, manage product inventory options, set inventory thresholds and quantity limitations.</p>
           </div>
       </div>
       <div class="guideline__item">
@@ -269,7 +269,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
 
-             <p>Learn how to define how open orders should be displayed in the front store.</p>
+             <p>Learn how to define how open orders should be displayed in the storefront.</p>
           </div>
       </div>
       <div class="guideline__item">

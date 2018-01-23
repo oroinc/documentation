@@ -3,9 +3,9 @@
 Request for Quote
 =================
 
-To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create RFQs in the Oro front store.
+To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create RFQs in the Oro storefront.
 
-The following guide will focus on the Request for Quote (RFQ) section of the OroCommerce front store.
+The following guide will focus on the Request for Quote (RFQ) section of the OroCommerce storefront.
 
 .. contents:: :local:
    :depth: 2

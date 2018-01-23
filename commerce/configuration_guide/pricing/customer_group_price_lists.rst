@@ -20,7 +20,7 @@ To change the price list settings for the customer group:
 
    a) Select one of the following values for the **Fallback** option:
 
-      * *Website* --- OroCommerce uses :ref:`Website Price Lists from the selected website configuration <sys--website--edit--price-lists>` to calculate the prices shown in the front store.
+      * *Website* --- OroCommerce uses :ref:`Website Price Lists from the selected website configuration <sys--website--edit--price-lists>` to calculate the prices shown in the storefront.
 
       * *Current customer group only* --- For price calculation, OroCommerce uses the configurations (per website) in the current customer group.
 

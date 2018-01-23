@@ -3,12 +3,12 @@
 Previously Purchased Products
 =============================
 
-The Previously Purchased Products page displays the products that were recently purchased by customer users. In the front store, this page is nested under the **Previous Purchased** section of the **Account** menu.
+The Previously Purchased Products page displays the products that were recently purchased by customer users. In the storefront, this page is nested under the **Previous Purchased** section of the **Account** menu.
 
 .. image:: /frontstore_guide/img/previously_purchased/PreviouslyPurchased.png
 
 
-.. note:: The Previously Purchased section of the front store can be enabled or disabled by the website administrator depending on the business and website requirements.
+.. note:: The Previously Purchased section of the storefront can be enabled or disabled by the website administrator depending on the business and website requirements.
 
 From the Previously Purchased section, you can:
 

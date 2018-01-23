@@ -11,7 +11,7 @@ Enabling promotions allows you to perform the following actions with coupons:
 
 1. See **Coupons** under **Marketing > Promotions > Coupons** in the main menu of the management console.
 2. View and add coupons to :ref:`orders <user-guide--sales--orders>` in the management console.
-3. Apply coupons in :ref:`shopping lists <frontstore-guide--shopping-lists>` and :ref:`checkout <frontstore-guide--orders>` in the front store.
+3. Apply coupons in :ref:`shopping lists <frontstore-guide--shopping-lists>` and :ref:`checkout <frontstore-guide--orders>` in the storefront.
 
 Coupons can be created manually or generated. Usually, you *create* coupons manually when you need a small number of them (e.g. 2), or *generate* coupons when you need many (e.g. 1000).
 

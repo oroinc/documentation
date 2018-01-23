@@ -3,7 +3,7 @@
 Address Book
 ============
 
-The following information covers the **Address Book** section of the **Account** menu in OroCommerce front store.
+The following information covers the **Address Book** section of the **Account** menu in OroCommerce storefront.
 
 .. _frontstore-guide--address-overview:
 
@@ -28,7 +28,7 @@ The address book has two sections:
 .. image:: /frontstore_guide/img/profile/MyProfileAddressBooks.png
 
 .. note::
-   Depending on the front store settings, the address book lists may appear in the compact format with a map displayed on the right:
+   Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right:
 
    .. image:: /frontstore_guide/img/profile/address_book_compact.png
 

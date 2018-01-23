@@ -3,7 +3,7 @@
 Enable New Product Icons per Organization
 -----------------------------------------
 
-You can mark certain selected products to be displayed as new ones in the front store.
+You can mark certain selected products to be displayed as new ones in the storefront.
 
 .. begin
 

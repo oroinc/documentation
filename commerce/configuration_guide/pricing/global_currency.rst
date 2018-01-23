@@ -13,7 +13,7 @@ Global currency configuration helps you:
 
 * Specify the conversion rate to and from the base currency.
 
-* Define the order used when the currencies are displayed to the front store and management console users.
+* Define the order used when the currencies are displayed to the storefront and management console users.
 
 * Toggle between the currency display formats (currency code, e.g. USD, and currency symbol, e.g. $).
 

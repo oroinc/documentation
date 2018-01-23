@@ -5,7 +5,7 @@ Configure Contact Us Page per Organization
 
 .. begin
 
-To enable or disable the display of the form in the front store per organization:
+To enable or disable the display of the form in the storefront per organization:
 
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
@@ -21,7 +21,7 @@ The following page opens:
 
 4. In **Contact Requests**, select the *Allow Contact Requests* check box to enable the Contact Us form.
 
-   To disable it in the front store, clear the check box. You can still use the :ref:`Contact Us widget <user-guide--landing-pages-create>` in your web catalog pages.
+   To disable it in the storefront, clear the check box. You can still use the :ref:`Contact Us widget <user-guide--landing-pages-create>` in your web catalog pages.
 
 5. Click **Save Settings**.
 

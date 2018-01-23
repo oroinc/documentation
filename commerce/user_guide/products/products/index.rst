@@ -1,5 +1,5 @@
-Manage Product Design in the Front Store
-========================================
+Manage Product Design in the Storefront
+=======================================
 
 This section contains detailed information about the actions related to the products that may be launched in various perspectives.
 

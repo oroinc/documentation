@@ -5,7 +5,7 @@ Configure Sales Rep Information per Website
 
 .. begin
 
-To enable or disable the display of sales representative information in the front store :ref:`footer links <frontstore-guide--navigation-footer>` per website:
+To enable or disable the display of sales representative information in the storefront :ref:`footer links <frontstore-guide--navigation-footer>` per website:
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
@@ -17,7 +17,7 @@ To enable or disable the display of sales representative information in the fron
 Set Display Details
 ^^^^^^^^^^^^^^^^^^^
 
-4. In the **Display** list, select one of the options that will determine what and whose information to show in the front store :ref:`footer links <frontstore-guide--navigation-footer>`. For options detailed description, see :ref:`Set Display Options <user-guide--system-configuration--display-sales-rep-info--display-options>`.
+4. In the **Display** list, select one of the options that will determine what and whose information to show in the storefront :ref:`footer links <frontstore-guide--navigation-footer>`. For options detailed description, see :ref:`Set Display Options <user-guide--system-configuration--display-sales-rep-info--display-options>`.
   
    Such website settings override settings set at the :ref:`system level <sys--conf--commerce--sales--contacts-global>` unless **Use System** check box is enabled.
 

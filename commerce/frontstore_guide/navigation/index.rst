@@ -13,7 +13,7 @@ General Layout
 
 .. note:: The screenshots in this guide are provided for illustration purposes only, as layouts and available functionality may vary as the result of customization.
 
-The key elements of the front store menu are represented below.
+The key elements of the storefront menu are represented below.
 
 .. _frontstore-guide--navigation-top:
 
@@ -33,7 +33,7 @@ Footer links are placed at the bottom of the page.
 
 .. image:: /frontstore_guide/img/navigation/GeneralLayoutFooterLinks.png
 
-.. note:: You may find contact details of the assigned sales representative in the footer of the front store page.
+.. note:: You may find contact details of the assigned sales representative in the footer of the storefront page.
 
 .. _frontstore-guide--navigation-user-menu:
 

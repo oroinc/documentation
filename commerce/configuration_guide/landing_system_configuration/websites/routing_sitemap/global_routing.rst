@@ -26,9 +26,9 @@ To change the default global routing settings:
    .. image:: /configuration_guide/img/configuration/websites/routing_general.png
       :class: with-border
 
-   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Front Store pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
+   * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
 
-   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Front Store pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
+   * **Secure URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce Storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses secure (HTTPS) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.
 
    * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
@@ -52,7 +52,7 @@ To change the default global routing settings:
 
      When *Always* is selected, the redirects are created by default.
 
-   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Front Store. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
 
    .. image:: /configuration_guide/img/configuration/websites/routing_website_matchers.png
       :class: with-border

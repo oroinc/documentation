@@ -3,7 +3,7 @@
 Manage Related Products
 -----------------------
 
-Once the core product information is saved, you may configure related products to show in the **Related Items** section in the product details in the management console, and in the **Related Products** section next to the product details in the front store.
+Once the core product information is saved, you may configure related products to show in the **Related Items** section in the product details in the management console, and in the **Related Products** section next to the product details in the storefront.
 
 To add related products to the product information:
 

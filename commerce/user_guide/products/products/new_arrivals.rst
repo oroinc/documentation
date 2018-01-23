@@ -7,7 +7,7 @@ Highlight New Products
 
 .. begin_higlight_new_products
 
-You can highlight certain products as new ones in the front store by enabling New Product icons display. You will find detailed guidance in the sections below.
+You can highlight certain products as new ones in the storefront by enabling New Product icons display. You will find detailed guidance in the sections below.
 
 This will look differently for various layout options:
 

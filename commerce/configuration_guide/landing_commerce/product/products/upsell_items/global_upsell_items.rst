@@ -7,7 +7,7 @@ Enable and Set Up Up-Sell Products Globally
 
 .. begin_upsell_items_definition
 
-Up-sell products listed for the product in the OroCommerce front store may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
+Up-sell products listed for the product in the OroCommerce storefront may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
 
 In the system configuration, you can:
 
@@ -38,7 +38,7 @@ To update the up-sell products settings globally:
 
      .. note:: Some related items may be hidden by the visibility settings. If the list of up-sell products still exceeds the limit, only the specified number of items (top of the list) will be shown.
 
-   * **Minimum Items** --- The minimum number of up-sell products that may be shown to the buyer. If the actual number of products is less than this value, the up-sell products section is hidden in the front store for the product.
+   * **Minimum Items** --- The minimum number of up-sell products that may be shown to the buyer. If the actual number of products is less than this value, the up-sell products section is hidden in the storefront for the product.
    * **Show Add Button** --- Enables a buyer to order the product from the up-sell products section in the main product details. When disabled, a buyer needs to open the up-sell product details before they can add it to the shopping list.
 
      **Show Add Button is Enabled**

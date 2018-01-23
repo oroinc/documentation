@@ -3,7 +3,7 @@
 Enable Mass Product Actions 
 ===========================
 
-In OroCommerce, you can control whether customer and guest users can select and add multiple products to a shopping list in the front store. This can be enabled on three levels -- globally, per organization and per website.
+In OroCommerce, you can control whether customer and guest users can select and add multiple products to a shopping list in the storefront. This can be enabled on three levels -- globally, per organization and per website.
 
 
 .. contents:: :local: 

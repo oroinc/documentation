@@ -32,7 +32,7 @@ The new web catalog is created.
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate_demo.png
       :class: with-border
 
-Now you are ready to organize catalog content into the desired structure that will define the navigation and menu look and feel on the OroCommerce store frontend:
+Now you are ready to organize catalog content into the desired structure that will define the navigation and menu look and feel on the OroCommerce storefront:
 
 .. include:: edit_content_tree/index.rst
    :start-after: start

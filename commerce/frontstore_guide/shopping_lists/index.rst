@@ -3,7 +3,7 @@
 Shopping Lists 
 ==============
 
-The following guide will describe how shopping lists can be used in the OroCommerce front store.
+The following guide will describe how shopping lists can be used in the OroCommerce storefront.
 
 .. contents:: :local:
    :depth: 2
@@ -12,7 +12,7 @@ In OroCommerce, shopping lists are much more than merely a list of items in a ca
 
 .. _frontstore-guide--shopping-lists-create:
 
-In the front store, shopping lists are located in the top right corner and can be easily spotted.
+In the storefront, shopping lists are located in the top right corner and can be easily spotted.
 
 .. image:: /frontstore_guide/img/shopping_lists/ShoppingLists.png
 
@@ -179,7 +179,7 @@ To create a request for quote from the shopping list:
 Shopping Lists for Guest Users
 ------------------------------
 
-In Oro application, unregistered customers can create and manage a shopping list in the front store without the need to register. By default, they can have one shopping list per website and browsing session with the possiblity of storing such list for up to 30 days in a single browser.
+In Oro application, unregistered customers can create and manage a shopping list in the storefront without the need to register. By default, they can have one shopping list per website and browsing session with the possiblity of storing such list for up to 30 days in a single browser.
 
 .. note:: If you seem unable to create a guest shopping list, please refer to your administrator.
 

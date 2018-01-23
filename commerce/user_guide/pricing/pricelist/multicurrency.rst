@@ -33,10 +33,10 @@ When adding a product price manually or using a rule that automates price genera
 You can add only one price per combination of product quantity tier and currency (e.g. one price for 1 item in USD or per 10 items in EUR).
 For detailed information on adding product prices in particular currencies, see :ref:`Manual Price Management <user-guide--pricing--price-list-manual>` and :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>`.
 
-View Price in Specific Currency on the Front Store
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+View Price in Specific Currency on the Storefront
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-By default, prices in the OroCommerce Front Store are shown in the default currency.
+By default, prices in the OroCommerce Storefront are shown in the default currency.
 
 .. image:: /user_guide/img/sales/price_lists/price_currency_change1.png
    :class: with-border

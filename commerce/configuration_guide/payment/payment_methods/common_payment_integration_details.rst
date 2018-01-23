@@ -14,7 +14,7 @@ Basic information about the payment is shared among all payment methods and incl
 
   Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
-* **Short label**—The payment method name/label that is shown in the order details in the OroCommerce Management Console and Front Store after the order is submitted.
+* **Short label**—The payment method name/label that is shown in the order details in the OroCommerce Management Console and Storefront after the order is submitted.
 
   Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 

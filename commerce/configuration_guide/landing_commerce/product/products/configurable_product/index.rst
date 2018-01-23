@@ -3,7 +3,7 @@
 Configurable Products Settings
 ------------------------------
 
-In the system configuration, you can control the way a matrix form for a configurable product is displayed in the front store. Configurable product information can be set on three levels: globally, per organization, and per website. Website settings override organization, organization settings override the system ones.
+In the system configuration, you can control the way a matrix form for a configurable product is displayed in the storefront. Configurable product information can be set on three levels: globally, per organization, and per website. Website settings override organization, organization settings override the system ones.
 
 .. contents:: :local:
 

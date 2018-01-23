@@ -3,7 +3,7 @@
 Manage Up-Sell Products
 -----------------------
 
-Once the core product information is saved, you may configure up-sell items to show in the **Related Items** section in the product details in the management console, and in the **Up-Sell Products** section next to the product details in the front store.
+Once the core product information is saved, you may configure up-sell items to show in the **Related Items** section in the product details in the management console, and in the **Up-Sell Products** section next to the product details in the storefront.
 
 Use up-sell items to bind products that should be promoted when the buyer is viewing the product details. More expensive alternatives of the model, upgrade options, and additional parts are good fit for up-sell items.
 

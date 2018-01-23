@@ -45,7 +45,7 @@ RFQ Management Flow and :ref:`Submission Flow <system--workflows--rfq-frontoffic
 	e) Cancelled 
 	f) Deleted
 
-.. note:: RFQs with internal status Deleted are not visible in the front store.
+.. note:: RFQs with internal status Deleted are not visible in the storefront.
 
 .. stop_internal_statuses
 

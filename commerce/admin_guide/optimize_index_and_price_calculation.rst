@@ -16,7 +16,7 @@ The price list data may contain quite complex dependencies and
 formula. When price recalculation happens, all of the price list data is
 analyzed, recalculated if necessary, and saved to the simplified combine tables.
 This cache-like approach enables quicker data retrieval and increases the
-OroCommerce front store responsiveness.
+OroCommerce storefront responsiveness.
 
 To launch the price recalculation process, run the following console command:
 
