@@ -389,11 +389,6 @@ At the checkout, guest customers can:
 
 * Login if they have forgotten to do this before placing items in the shopping list.
 * Create an account.
-* Register during order review by providing only their email address and the password for the account. Neither the order nor the shopping list is lost in this case.
-
-.. include:: /frontstore_guide/orders/sample_guest_checkout.rst
-   :start-after: begin_sample_checkout
-   :end-before: finish_sample_checkout
 
 Promotions at Checkout
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -437,7 +432,6 @@ Re-Order Option
    :hidden:
    :maxdepth: 1
 
-   sample_guest_checkout
    re-order
 
 .. include:: /user_guide/include_images.rst

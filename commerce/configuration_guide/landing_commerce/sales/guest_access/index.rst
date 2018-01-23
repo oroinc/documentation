@@ -102,40 +102,6 @@ Configure Guest Checkout per Website
    :start-after: begin
    :end-before: finish
 
-.. _user-guide--system-configuration--commerce-sales-checkout-registration:
-
-Configure Guest Checkout with Registration Options
---------------------------------------------------
-
-You can control whether guest users are offered to login/register or continue as guests during the checkout. If they select to proceed as guests, they are once again offered to register during order review.
-
-In addition, you can enable customers who choose to register at the checkout to proceed through its steps without email confirmation. In the management console, in such case, the placed order will be assigned to this customer as the registered one, instead of being attributed to an unauthenticated user.
-
-Guest Checkout with Registration Options can be configured on three levels -- globally, per organization or per website.
-
-.. note:: Please note that website settings override organization, organization settings override system settings.
-
-Configure Guest Checkout with Registration Options Globally
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /configuration_guide/landing_commerce/sales/guest_access/global_guest_checkout_registration.rst
-   :start-after: begin
-   :end-before: finish
-
-Configure Guest Checkout with Registration Options per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /configuration_guide/landing_commerce/sales/guest_access/organization_guest_checkout_registration.rst
-   :start-after: begin
-   :end-before: finish
-
-Configure Guest Checkout with Registration Options per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /configuration_guide/landing_commerce/sales/guest_access/website_guest_checkout_registration.rst
-   :start-after: begin
-   :end-before: finish
-
 .. _user-guide--system-configuration--commerce-sales-shopping-list:
 
 Configure Guest Shopping Lists
@@ -253,9 +219,6 @@ Configure Guest Request for Quote Submission per Website
    guest_checkout_global
    guest_checkout_organization
    guest_checkout_website
-   global_guest_checkout_registration
-   organization_guest_checkout_registration
-   website_guest_checkout_registration
    guest_shopping_list_global
    guest_shopping_list_organization
    guest_shopping_list_website

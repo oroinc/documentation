@@ -320,6 +320,12 @@ All Products page displays all available products from the master catalog groupe
 
    website_new_arrivals
 
+   global_new_arrivals_block
+
+   organization_new_arrivals_block
+
+   website_new_arrivals_block
+
    global_featured_products
 
    organization_featured_products
