@@ -9,11 +9,8 @@ Activities are actions that employees of your company perform on a daily basis. 
 
 OroCRM provides such a tool. Its capabilities for managing activities are quite wide. They cover three logical directions: workflow management, communications, and adding useful remarks.
 
-|
 
 .. image:: ../img/activities/activities.png
-
-|
 
 For each activity, it is possible to add links to the related records. For example, a link to an email with the discussion in which the activity emerged, the marketing campaign that the activity deals with, and the user concerned, etc. Such links are called ``contexts`` and they make it much easier to take account of all the details connected with the activity.
 
@@ -62,12 +59,7 @@ What You Can Do with Tasks?
 With OroCRM you can create, assign tasks, organize them by priority, set their due date and manage them through their life cycles. 
 
 
-|
-
 .. image:: /user_guide/img/activities/activities_tasks.png
-
-| 
-
 
   
 Tasks can be created in 3 different ways. 
@@ -80,21 +72,13 @@ If you need to distribute work in your business unit and make sure that the work
 
 The second way is the most convenient when the idea of the task appears when you work with the certain entity record. For example, you work with an opportunity record and decide to create a task related to it. Click the :guilabel:`Add Task` action button on the opportunity record view page to create a task. 
 
-|
 
 .. image:: /user_guide/img/activities/activities_tasks2.png
 
-| 
 
 When you add a task from an opportunity page, this opportunity is displayed as a context of the task being created. 
 
-
-|
-
 .. image:: /user_guide/img/activities/activities_tasks2-2.png
-
-|
-  
 
 
 .. note::
@@ -105,11 +89,9 @@ When you add a task from an opportunity page, this opportunity is displayed as a
 
 The third way of creating tasks is the most traditional: you have the whole system section devoted to tasks (by default you can find it by navigating to **Activities>Tasks** in the main menu) where you can create, assign and manage them according to your liking.
 
-|
 
 .. image:: /user_guide/img/activities/activities_tasks3.png
 
-|
 
 Users can see tasks assigned to them on the **My Tasks** page, in the calendars on the **My Calendar** page and **Today's Calendar** widget, in the **Tasks List** sidebar widget, and in the **Tasks** section of their view pages.
 
@@ -118,7 +100,6 @@ If an entity record is marked as a context for a task, this task appears in the 
 .. end_include_tasks
 
 For more information about tasks, see the :ref:`Tasks <doc-activities-tasks>` guide.
-
 
 
 .. _doc-activities-overview-cases:
@@ -149,11 +130,9 @@ In addition to this, OroCRM provides an out-of-box integration with Zendesk cust
 
 In the dedicated system section (by default you can find it by navigating to **Activities>Cases** in the main menu) you can create, assign and manage cases as you find it necessary.
 
-|
 
 .. image:: ../img/activities/activities_cases.png
 
-|
 
 Users can see cases assigned to them in the **Cases** section of their view pages. 
 If an entity record is marked as a context for a case, this case appears in the **Activity** section of the entity record view page.
@@ -194,11 +173,9 @@ There are four ways of creating a calendar event:
 - By clicking the :guilabel:`Create Calendar Event` button in the dedicated system section.
 - By adding a calendar event in the calendar on the **My Calendar** page or in the **Today's Calendar** widget.
 
-|
 
 .. image:: /user_guide/img/activities/activities_calendarevents.png
 
-|
 
 Once you have created an event, an invitation will be sent to the specified participants.    
 
@@ -239,25 +216,18 @@ There are three ways to start making or logging a call:
 - By clicking the **Hangouts call** or **Log Call** icons that appear near the phone fields throughout the system when you hover over them.  
 - By clicking :guilabel:`Log Call` action button on the view page of the entity that the call is connected to.
 
-|
 
 .. image:: /user_guide/img/activities/activities_calls3.png
-
-|
 
 
 .. image:: /user_guide/img/activities/activities_calls.png
 
-|
-
 Users can access logged calls in the dedicated system section, in the **Activities** section of their user page, via the :ref:`Recent Calls <doc-widgets-recent-calls>` dashboard widget. If an entity record is marked as a context for a call, this call appears in the **Activity** section on the entity record view page.
 
-|
 
 
 .. image:: /user_guide/img/activities/activities_calls2.png
 
-|
 
 For more information about logging calls, see the :ref:`Calls <doc-activities-calls>` guide.
 
@@ -294,11 +264,8 @@ Users can access their emails on the personal **My Emails** page, via the **Rece
 
 When an entity record is mentioned as a context in an email, or if an email is sent using the **Send Email** action button from the entity record view page, this email becomes available in the **Activities** section of the record  view page. Emails linked to contacts appear in the same section on the corresponding contact view pages.
 
-|
 
 .. image:: ../img/activities/activities_emails2.png
-
-|
 
 For more information on using emails, see the :ref:`Emails <user-guide-using-emails>` guide.
 
@@ -396,13 +363,7 @@ You can attach files by clicking the :guilabel:`Add Attachment` action button on
 
 Files attached to the entity record appear in the **Attachments** section of the entity record. 
 
-
-|
-
 .. image:: ../img/activities/activities_attachments.png
-
-|
-
 
 For more information about attachments, see the :ref:`Attachments <user-guide-activities-attachments>` guide.
 
