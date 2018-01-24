@@ -125,7 +125,7 @@ The controller receives a contact entity and passes it to the view:
             // ...
         }
 
-    The view passes the "relatedContactId" parameter to the grid:
+The view passes the "relatedContactId" parameter to the grid:
 
 .. code-block:: html+jinja
     :linenos:
