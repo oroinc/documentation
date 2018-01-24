@@ -41,3 +41,4 @@ Using Message Queue in Oro Application
    dbal
    rabbit_mq_intro
    rabbit_mq
+   rabbit_mq_in_production

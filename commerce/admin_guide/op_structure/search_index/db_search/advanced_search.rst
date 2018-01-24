@@ -1,3 +1,5 @@
+.. _advanced-search-api:
+
 API Advanced Search
 ===================
 
