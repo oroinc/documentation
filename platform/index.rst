@@ -4,3 +4,4 @@ Welcome to OroPlatform Documentation
 .. toctree::
 
    system_requirements
+   architecture/index
