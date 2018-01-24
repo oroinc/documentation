@@ -1,3 +1,5 @@
+.. _op-structure--database:
+
 DataBase System Component
 =========================
 

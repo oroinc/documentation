@@ -144,6 +144,8 @@ Developer's Guide
    :includehidden:
    :hidden:
 
+   architecture/index
+
    install_upgrade/index
 
    user_guide/index
