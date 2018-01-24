@@ -254,6 +254,8 @@ This section provides links to the online documentation for the latest OroCommer
        :titlesonly:
        :maxdepth: 3
 
+       architecture/index
+
        install_upgrade/index
 
        user_guide/index
