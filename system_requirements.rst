@@ -27,7 +27,7 @@ Windows 7 and above and Mac OS X can be used for the development environment.
 Software
 ~~~~~~~~
 
-Oro applications are compatible with most web servers with PHP support, but we recommend the following configuration:
+Oro applications are compatible with most web servers with PHP support, but the following configuration is recommended:
 
 +-------------------+---------------------------------------------------+
 | *Web Server*      | * `Apache`_ 2.2.x or 2.4.x                        |
