@@ -9,7 +9,7 @@ Shipping Configuration
 System Configuration for Shipping
 ---------------------------------
 
-You can control the following options on the system configuration level. Click on the link to get to the detailed configuration instructions.
+You can control the following options on the system configuration level. Click the link to get to the detailed configuration instructions.
 
 * In the :ref:`Shipping Origin <sys--conf--commerce--shipping--shipping-origin>`, set the default shipping origin address.
 
@@ -24,7 +24,7 @@ Integration with Shipping Providers
    :start-after: begin_shipping_method_integrations
    :end-before: stop_shipping_method_integrations
 
-See the :ref:`Integration with Shipping Providers <sys--integrations--manage-integrations--ups--flat-rate>` topic for more information.
+See the :ref:`Shipping Method Integration <sys--integrations--manage-integrations--ups--flat-rate>` topic for more information.
 
 Shipping Rules Configuration
 ----------------------------
@@ -54,3 +54,5 @@ See the :ref:`Shipping Rules Configuration <sys--shipping-rules>` topic for more
    shipping_rules
 
    expression_lang
+
+   fedex_integration

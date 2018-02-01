@@ -4,13 +4,13 @@
 
 
 Shipping Method Integration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 .. begin_shipping_method_integrations
 
 You may configure integration with third-party providers to offer their shipping services for the quotes and orders placed using OroCommerce.
 
-Out of the box, you may integrate OroCommerce with :ref:`UPS <doc--integrations--ups>`, DPD, and :ref:`Flat Rate <doc--integrations--flat-rate>` shipping.
+Out of the box, you may integrate OroCommerce with :ref:`UPS <doc--integrations--ups>`, :ref:`FedEx <doc--integrations--fedex>`, DPD, and :ref:`Flat Rate <doc--integrations--flat-rate>` shipping.
 
 .. * ref:`UPS Shipping Integration <doc--integrations--ups>`
 .. * ref:`Flat Rate Shipping Integration <doc--integrations--flat-rate>`
@@ -36,7 +36,8 @@ UPS Shipping Integration
 This section describes the steps that are necessary to expose UPS as a shipping method in OroCommerce orders and quotes.
 
 Prepare for Integration
-"""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~
+
 First, ensure you have `registered with UPS.com <https://www.ups.com/one-to-one/register>`_ and have opened a UPS Account with the necessary shipping services level.
 
 Next:
@@ -48,7 +49,7 @@ Next:
 Please, ensure that you have requested separate access keys for your test and production environments.
 
 Configure a UPS Integration in OroCommerce
-""""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To enable communication with UPS in order to request the shipping cost estimate and/or request the shipping services, establish a connection with UPS API:
 
@@ -104,7 +105,16 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
 #. Click **Save**.
 
-Next, set up a shipping rule that enables this shipping methods for all or some customer orders.
+Next, set up a shipping rule that enables this shipping method for all or some customer orders.
+
+
+FedEx Shipping Integration
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. include:: /user_guide/shipping/configuration/fedex_integration.rst
+   :start-after: begin_fedex_integration
+   :end-before: stop_fedex_integration
+
 
 .. _doc--integrations--flat-rate:
 
@@ -128,7 +138,7 @@ To enable flat rate shipping:
 
 #. Click **Save**.
 
-Next, set up a shipping rule that defines enables this shipping methods for all or some customer orders.
+Next, set up a shipping rule that enables this shipping method for all or some customer orders.
 
 Delete Shipping Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
