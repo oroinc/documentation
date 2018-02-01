@@ -217,21 +217,36 @@ To create an order using a quick order form:
 Matrix Ordering Form
 ~~~~~~~~~~~~~~~~~~~~
 
-To simplify ordering process when purchasing several variations of one product, such as a hat in various colors and sizes, you can use a **Matrix Grid**:
+To simplify ordering process when purchasing several variations of one product, such as a USB flash drive in various colors and capacity, you can use a **Matrix Form**. The matrix form is available only when a product has one or two attributes.
 
-1. Open the product you wish to purchase.
-2. Click **Order with Matrix Grid** below the **Add to** button.
+Depending on the configuration:
 
-.. image:: /frontstore_guide/img/orders/HatProductPage.png
+1. The matrix form can be displayed:
 
-3. Enter the number of items for each category. 
+* on a product page:
+
+.. image:: /configuration_guide/img/configurable_products/matrix_product_view.png
+
+* on the product listing:
+
+.. image:: /configuration_guide/img/configurable_products/matrix_product_listing.png
+
+* on a shopping list page:
+
+.. image:: /configuration_guide/img/configurable_products/matrix_shopping_list.png
+
+* as a popup when clicking the **Update Shopping List** button on the product page.
+
+.. image:: /configuration_guide/img/configurable_products/matrix_popup.png
+
+
+2. Enter the number of items for each category.
+
+3. Click **Add to Shopping List** on the bottom right of the matrix ordering form. Alternatively, select the shopping list to add the items to, or create a new shopping list by clicking |IcChevronDown| and selecting your option.
    
-.. image:: /frontstore_guide/img/orders/MatrixForm.png
+.. image:: /frontstore_guide/img/orders/matrix_form_frontend.png
 
-4. Click **Add to Shopping List** on the bottom right of the matrix ordering form. Alternatively, select the shopping list to add the items to, or create a new shopping list by clicking |IcChevronDown| and selecting your option.
-   
-.. image:: /frontstore_guide/img/orders/MatrixFormShoppngList.png
-
+However, please keep in mind, that your website configuration may be different and the matrix form may be unavailable.
 
 .. _frontstore-guide--orders-checkout:
 
