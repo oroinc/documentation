@@ -15,8 +15,10 @@ Supported :ref:`shipping providers <sys--integrations--manage-integrations--ups-
 
 * UPS
 
+* FedEx
+
 * DPD
 
 * Flat rate
 
-When using UPS, cost evaluation is possible only for the products with available :ref:`shipping information (weight and weight unit) <user-guide--shipping--product-shipping-info>`.
+When using UPS or FedEx, cost evaluation is possible only for the products with available :ref:`shipping information (weight and weight unit) <user-guide--shipping--product-shipping-info>`.

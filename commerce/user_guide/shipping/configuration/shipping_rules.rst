@@ -91,7 +91,7 @@ Create a Shipping Rule
 
 To create a shipping rule:
 
-1. Ensure that the integrations for the shipping methods that you plan to use (UPS, Flat Rate, etc.) are already configured. For more information on shipping method integrations and how to configure them, see :ref:`Shipping Method Integration <sys--integrations--manage-integrations--ups--flat-rate>`.
+1. Ensure that the integrations for the shipping methods that you plan to use (UPS, FedEx, Flat Rate, etc.) are already configured. For more information on shipping method integrations and how to configure them, see :ref:`Shipping Method Integration <sys--integrations--manage-integrations--ups--flat-rate>`.
 
 2. In the main menu, navigate to **System > Shipping Rules**. The list of shipping rules opens.
 
@@ -212,12 +212,29 @@ For the UPS shipping method, provide the following information:
 
 * In the **Additional Options** section, provide the following information for each option that you want to use:
 
-  - **Surcharge**—To customize the shipping cost, enter a value to charge on top of the UPS standard rates (like the extra cost for this shipping method). It will be applied together with the global shipping method surcharge.
+  - **Surcharge**—To customize the shipping cost, enter a value to charge on top of the UPS standard rates (like the extra cost for this shipping method). It is applied together with the global shipping method surcharge.
   - Select the **Active** check box in the **Status** column to enable the option.
 
 For example:
 
 .. image:: /configuration_guide/img/shipping_rules/shipping_rule_method_ups.png
+
+FedEx
+~~~~~
+
+For the FedEx shipping method, provide the following information:
+
+* In the **Surcharge** field on top, enter a value that you want to be added to the standard FedEx rates and the option surcharge (like the handling fee per order).
+
+* In the **Additional Options** section, provide the following information for each option that you want to use:
+
+  - **Surcharge** — To customize the shipping cost, enter a value to charge on top of the FedEx standard rates (like the extra cost for this shipping method). It is applied together with the global shipping method surcharge.
+  - Select the **Active** check box in the **Status** column to enable the option.
+
+For example:
+
+   .. image:: /user_guide/img/integrations/FedEx/fedex_shipping_rule.png
+
 
 DPD
 ~~~
