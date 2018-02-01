@@ -1,9 +1,9 @@
-.. _user-guide--products--configurable-products:
+.. _config-guide--landing-commerce--products--configurable-products:
 
 Configurable Products Settings
 ------------------------------
 
-In the system configuration, you can control the way a matrix form for a configurable product is displayed in the storefront. Configurable product information can be set on three levels: globally, per organization, and per website. Website settings override organization, organization settings override the system ones.
+In the system configuration, you can control the way a matrix form and variations of a configurable product are displayed in the storefront. Configurable product information can be set on three levels: globally, per organization, and per website. Website settings override organization, organization settings override the system ones.
 
 .. contents:: :local:
 
