@@ -183,7 +183,7 @@ Another useful segment includes your best customers. Assuming you consider those
 Create a Marketing List Based on RFM Metrics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Exmaple 1. Top Customers Marketing List
+Example 1. Top Customers Marketing List
 """""""""""""""""""""""""""""""""""""""
 
 Let us assume that you regularly run upselling marketing campaigns that
