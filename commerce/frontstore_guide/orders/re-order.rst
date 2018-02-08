@@ -31,7 +31,7 @@ Alternatively, click **View** to check the details of the selected order, and th
 
    .. image:: /frontstore_guide/img/orders/reorder_4.png
 
-.. note:: As the product quantity may have changed since the time of the original order submission, a customer will be notified upon any differences occurred in stock.
+.. note:: As the product quantity may have changed since the time of the original order submission, a customer will be notified of any differences occurred in stock.
 
    .. image:: /frontstore_guide/img/orders/reorder_5.png
 

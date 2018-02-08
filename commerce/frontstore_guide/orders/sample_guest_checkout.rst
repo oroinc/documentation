@@ -50,7 +50,7 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 7. At the **Order Review** step, the following options are enabled by default:
 
    * Delete this shopping list after submitting the order.
-   * Save my data and create and account.
+   * Save my data and create an account.
 
    As **Save my data and create an account** is enabled, you can provide your credentials for a quick registration:
 
@@ -62,7 +62,7 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
 8. Click **Submit Order**.
 
-9. To complete registration, open your mailbox and check for the registration confirmation email.
+9. To complete registration, open your mailbox and check the registration confirmation email.
 
    .. image:: /frontstore_guide/img/orders/SampleGuestCheckout10.png
 
