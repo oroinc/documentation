@@ -42,7 +42,7 @@ User Menu
 
 User Menu is located on the top left of the page and contains the following sections:
 
-**For non-authenticated user (guest):**
+**For non-authenticated users (guests):**
 
 1. The **Sign In** and **Register** buttons.
 
@@ -86,7 +86,7 @@ Common Controls
 Tables
 ~~~~~~
 
-Views in the form of tables can be considered the most commonly used UI elements in Oro applications. They are interactive, as they not only display data about specific store records, but contain links to these records’ pages. Views are also configurable – so you can adjust the appearance and contents of the tables to your taste and needs.
+Views in the form of tables can be considered the most commonly used UI elements in Oro applications. They are interactive, as they not only display data about specific store records but contain links to these records’ pages. Views are also configurable – so you can adjust the appearance and contents of the tables to your taste and needs.
 
 Such tables represent aggregated views of data and store records, making it easy to locate and manage records, with every grid page functionally tailored to the type of information it represents.
 
@@ -128,7 +128,7 @@ The following layout options are available:
 
 **Page Navigation**
 
-If you have a lot of records, they all may not fit in one data page. In this case, use the pager block in the center above the view table.
+If you have a lot of records, they all may not fit on one data page. In this case, use the pager block in the center above the view table.
 
 In the pager block, you can see the page that you are currently on, the total number of data pages and the total number of records in the view table.
 
@@ -142,7 +142,7 @@ To open a particular page, type its number in the field that displays the curren
 Saved Views
 ~~~~~~~~~~~
 
-A saved view is a table with applied filters or custom ordering.
+A saved view is a table with applied filters or custom orders.
 
 The **default table view** is what you see when you open a view page, it shows unfiltered data.
 

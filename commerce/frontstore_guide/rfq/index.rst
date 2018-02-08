@@ -42,10 +42,10 @@ Within the table you have the following :ref:`action buttons <frontstore-guide--
 RFQs for Registered Users
 -------------------------
 
-Create a RFQ
-^^^^^^^^^^^^
+Create an RFQ
+^^^^^^^^^^^^^
 
-There are a few ways to create a RFQ.
+There are a few ways to create an RFQ.
 
 On the All Requests for Quote Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -67,7 +67,7 @@ From the Shopping List
 
    .. image:: /frontstore_guide/img/shopping_lists/ShoppingListsDropdown.png
 
-3. Click **Request Quote** on the rop right of the page, or by selecting this option from the drop-down list of the **Create Order** button at the bottom of the page.
+3. Click **Request Quote** on the top right of the page, or by selecting this option from the drop-down list of the **Create Order** button at the bottom of the page.
 
    .. image:: /frontstore_guide/img/rfq/CreateRFQ2.png
 
@@ -95,12 +95,12 @@ In the Products section:
 * Click **Add Another Line** to provide additional quantities and price.
 * Give the target price.
 * Add a note to the item by clicking **Add a Note to This Item** (You can delete or update such note by clicking on the corresponding buttons).
-* Click **Add Another Product** if a RFQ for more than one product is required.
-* Click **Submit Request** to sent the RFQ.
+* Click **Add Another Product** if an RFQ for more than one product is required.
+* Click **Submit Request** to send the RFQ.
 
 .. image:: /frontstore_guide/img/rfq/RFQProducts.png
 
-.. note:: If you are creating a RFQ for the products in the shopping list, the Products section will be pre-defined. There will be options to edit, delete the products, or add another product to the list.
+.. note:: If you are creating an RFQ for the products in the shopping list, the Products section will be pre-defined. There will be options to edit, delete the products, or add another product to the list.
 
     .. image:: /frontstore_guide/img/rfq/RFQFromShoppingList.png
 
@@ -140,7 +140,7 @@ You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of t
 RFQs for Guest Users
 --------------------
 
-In the Oro application, guest customers can create a request for quote for the articles they are interested in purchasing without the need to register.
+In the Oro application, guest customers can create a request for a quote for the items they are interested in purchasing without the need to register.
 
 Create a Guest RFQ
 ^^^^^^^^^^^^^^^^^^
@@ -160,7 +160,7 @@ To create a guest RFQ from the shopping list:
 
    .. image:: /frontstore_guide/img/rfq/GuestSLButton.png
 
-3. Click **Request Quote** on the rop right of the page, or select this option from the drop-down list of the **Create Order** button at the bottom of the page.
+3. Click **Request Quote** on the top right of the page, or select this option from the drop-down list of the **Create Order** button at the bottom of the page.
 
    .. image:: /frontstore_guide/img/rfq/GuestCreateRFQButtons.png
 
@@ -200,7 +200,7 @@ To create a guest RFQ from the shopping list:
 From the Quick Order Form
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To create a RFQ from the quick order form:
+To create an RFQ from the quick order form:
 
 1. Click **Quick Order Form** in the top right corner of the page.
 
