@@ -17,8 +17,6 @@ What Can Be on the Sidebar
 Out of the box, any sidebar can contain widgets of three types:
 
 
-|
-
 .. image:: ../img/navigation/sidebar/sb_icons.png
 
 
@@ -37,12 +35,7 @@ Add a Widget to the Sidebar
 
 Click the :guilabel:`+` button to add a widget, then select the widget type an click the :guilabel:`OK` button. 
 
-|
-
-.. image:: ../img/navigation/sidebar/sb_select.png
-
-|
-
+.. image:: /user_guide/img/navigation/sidebar/sb_select.png
 
 The newly added widget will appear on the sidebar, below the existing widgets. To reorder widgets on the sidebar, drag 
 and drop them with your mouse. 
@@ -56,30 +49,15 @@ Expand/Collapse the Sidebar
 
 Initially, the sidebar panel is minimized. Hover over the icon to see the widget header.
 
-|
+.. image:: /user_guide/img/navigation/sidebar/sb_hover.png
 
-.. image:: ../img/navigation/sidebar/sb_hover.png
-
-|
-
- In order to expand the sidebar panel, click the double-arrow at its bottom.
-
-|
+In order to expand the sidebar panel, click the double-arrow at its bottom.
 
 .. image:: ../img/navigation/sidebar/sb_expand.png
 
-|
-
-
 Now you can see the widget headers. To collapse the panel back, click the double-arrow again.
 
-
-|
-
 .. image:: ../img/navigation/sidebar/sb_fold.png
-
-|
-
 
 Expand/Collapse a Widget
 ------------------------
@@ -90,11 +68,7 @@ In order to see the widget content:
 
 - Click the triangular arrow next to the header on the expanded bar.
     
-|
-
 .. image:: ../img/navigation/sidebar/sb_expand_view.png
-
-| 
 
 To fold the widget, click the triangular arrow again.
 
@@ -103,23 +77,15 @@ states.
 
 This way, you can keep some of the content visible at all times, and keep fewer used widgets minimized.
 
-|
-
 .. image:: ../img/navigation/sidebar/sb_expand_view_1.png
 
-| 
 
 Manage the Widgets
 ------------------  
 
 As shown below, each widget contains a header (1), content (2), and icons (3).
 
-|
-
 .. image:: ../img/navigation/sidebar/sb_view.png
-
-|
-
 
 
 You can:
@@ -206,21 +172,12 @@ Sticky notes are a great way to keep reminders and memos. You can keep them orga
 
 Click the |IcSettings| to change the content of a note.
 
-|
 
 .. image:: ../img/navigation/sidebar/sb_note.png
-
-|
 
 You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and 
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
 
-
-
-Task List
-^^^^^^^^^
-
-For the description, see :ref:`Task List Sidebar Widget <doc-widgets-sidebar-task-list>`.
 
 
 Conclusions
