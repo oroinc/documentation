@@ -461,3 +461,19 @@ Images
 
 .. |InstallPack| image:: /admin_guide/img/extension/install_package.png
    :align: middle
+
+.. |IcSendEmail| raw:: html
+
+   <i class="fa fa-envelope fa-lg"></i>
+
+.. |IcStop| raw:: html
+
+   <i class="fa fa-stop fa-lg"></i>
+
+.. |IcStart| raw:: html
+
+   <i class="fa fa-play fa-lg"></i>
+
+.. |IcCall| raw:: html
+
+   <i class="fa fa-phone-square fa-lg"></i>

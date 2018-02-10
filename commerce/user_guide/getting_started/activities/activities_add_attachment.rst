@@ -3,88 +3,40 @@
 Attachments
 ===========
 
-.. contents:: :local:
-    :depth: 3
+Adding attachments in your Oro application helps to keep track of asses such as paper copies of a return, or a bill of service written on site. This way, the representative can attach the copy to a customer's case, the customer, or account records.
 
-Overview
---------
+See a short demo on `how to add attachments in your Oro application <https://www.orocrm.com/media-library/add-attachments-orocrm>`_, or keep reading the step-by-step guidance below.
 
-.. include:: /user_guide/getting_started/activities/activities_overview.rst
-   :start-after: start_include_attachments
-   :end-before: end_include_attachments
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/TyG001xOw3U" frameborder="0" allowfullscreen></iframe>
 
 .. important::
-   By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator or adjust the activity entity settings if you have the corresponding permission.
-    
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
 
 
-Manage Attachments
-------------------
+How to Add Attachments
+----------------------
 
-.. note:: Only the owner is able to manage and view the attachment, unless certain users were assigned roles that give them permissions to view/manage the owner's attachment.
+To add an attachment to a record:
 
-.. image:: /user_guide/img/getting_started/activities/add_attachment_form.png
-
-Add an Attachment
-^^^^^^^^^^^^^^^^^
-
-Once a record has been created, an attachment can be added to it.
-
-.. caution::
-
-   The ability to view and upload attachments depends on the permissions defined for the entity.
-
-1. Open the record details page.
-
-2. Click the **Add Attachment** on the top right of the page.
-
-   Or click **More Actions** and then click **Add Attachment**.
+1. Navigate to the page of the selected record.
+2. Click **Add Attachment** under the **More Actions** menu on the top right of the page.
 
    .. image:: /user_guide/img/getting_started/activities/add_attachment.png
 
-3. In the dialog that appears:
+3. In the Add Attachment dialog:
 
-   - Choose the file to attached.
+   * Choose the file to attach.
+   * Leave a comment, if necessary.
+   * Define the owner of the attachment. By default, the user creating the attachment is selected. 
 
-   - Leave a comment, if necessary.
-
-   - Define the attachment owner. 
-
-
-You can also :ref:`add the attachment to emails related to the record <user-guide-using-emails>`.
+   .. image:: /user_guide/img/getting_started/activities/add_attachment_form.png
 
 
+.. note:: You can access attached files under *Attachments* in the **Additional Information** section of record pages.  
 
-View or Downloaded an Attachment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Attachments are available in the **Attachments** or **Additional Information** section of the record details:
-
-.. image:: /user_guide/img/products/products/products_review_additional.png
-
-To view or download an attachment, click the file name.
-
-.. For how to filter displayed attachments, configure visible fields, etc., see the :ref:`Grids <doc-grids>` topic.
-
-
-Edit an Attachment
-^^^^^^^^^^^^^^^^^^
-
-To edit an attachment, click the |IcEdit| **Edit** icon at the end of the row.
-
-Delete Attachments
-^^^^^^^^^^^^^^^^^^
-
-Delete an Attachment
-~~~~~~~~~~~~~~~~~~~~
-
-To delete an attachment, click the |IcDelete| **Delete** icon at the end of the row.
-
-Delete Multiple Attachments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To delete multiple attachments, select check boxes in front of the files that you want to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |IcDelete| **Delete**.
-
+          .. image:: /user_guide/img/getting_started/activities/add_attachment_view.png
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

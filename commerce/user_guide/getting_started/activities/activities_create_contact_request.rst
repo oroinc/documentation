@@ -3,85 +3,36 @@
 Contact Requests
 ================
 
-Requests for OroCRM support, including partnership proposals, complaints, additional 
-information and assistance requests that come from a third-party application or have been
-registered directly in OroCRM are collected with the **Create Contact Request** actions.
+Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. When your customers use this form, contact requests are automatically generated and added to the page of all contacts in your Oro application. 
+
+See a short demo in our media library on `how to create and manage contact requests <https://www.orocrm.com/media-library/manage-contact-requests>`_, or keep reading the guidance below.
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/psQnfsFxQeg" frameborder="0" allowfullscreen></iframe>
 
 
-Create a Contact Request from OroCRM
-------------------------------------
-
-In order to create a contact request from OroCRM:
-
-1. Navigate to **Activities > Contact Requests**.
-
-2. Click the :guilabel:`Create Contact Request` button.
-
-3. The **Create Contact Request** page appears. The page contains the following fields:
-
-.. csv-table::
-  :header: "**Name**","**Description**"
-  :widths: 10, 30
-
-  "**First Name***","The first name of the person, who has requested support."
-  "**Last Name***","The last name of the person, who has requested support."
-  "**Channel***","The :term:`channel <Channel>` from which the request was received. The drop-down menu contains all the 
-  channels to which the Contact Request :term:`entity <Entity>` has been 
-  assigned in the
-  alphabetical order. By default, it is filled with the first channel in the list."
-  "**Organization Name**","The name of an organization, on behalf of which the request has been filed, if any. This 
-  field is for information and search purposes only."
-  "**Preferred Contact Method***","Choose the contact method to be used of the list. The possible values are:
-  
-  - Both phone and email
-  - Phone
-  - Email  
-  
-  By default, the field is set to *Email*."
-  "**Phone** and **Email**","Contact details related to the request. The values are determined by the *Preferred Contact 
-  Method* and must be defined."
-  "**Contact Reason**","Choose a contact reason from the drop-down menu to simplify the request analysis. The field is 
-  by default set to *Other*."
-  "**Comment***","Actual text of the request. This must be filled."
-
-4. Click the button in the top right corner to save the request.
-  
-For example, there was a request from Mr. Jack Johnson, representative of the General Ltd. interested in OroCRM functionality.
-
-.. image:: /user_guide/img/getting_started/activities/request_create.png
-
-  
 Create a Contact Request from a Third-Party Application
 -------------------------------------------------------
 
-Add the code for the form on your site.
-Use the forms of the *Magento Contact Us Request* type for the Magento-based businesses and of the *Contact Request*
-type for the other websites. Every time a user has filled the form it will be added to the Contact Requests grid in
-Oro CRM.
+Add the code for the form to your website, as described in the :ref:`Embedded Forms guide <admin-embedded-forms>` topic. 
+Use the *Magento Contact Us Request form* type for the Magento-based businesses, or the *Contact Request form*
+type for the other websites. Every time a customer completes the form, the information is automatically synced to your Oro application.  
 
-.. note::
-
-    Other contact request types can be developed in the course of integration, according to your specific business needs.
+.. note:: Other contact request types can be developed in the course of integration, according to your specific business needs.
 
 
-View and Manage Contact Requests
---------------------------------
+How to View and Manage Contact Requests
+---------------------------------------
 
-.. note::
-
-    The ability to view and edit contact requests depends on the specific roles and permissions defined in the system. 
+The ability to view and edit contact requests depends on the specific :ref:`roles and permissions <user-guide-user-management-permissions-roles--acl>` defined in the system. 
    
-- All the Contact Requests can be viewed from the Contact Requests grid.
+All contact requests can be viewed from the page of all contact requests under **Activities > Contact Requests** in the main menu. From this page, you can view, edit and delete contact requests:
 
 .. image:: /user_guide/img/getting_started/activities/request_grid.png
 
-- From the grid, you can manage the Contact Request using the action icons:
-
-  - Delete the request: |IcDelete|
-
-  - Get to the edit form of the request: |IcEdit|
-
-  - Get to the view page of the request:  |IcView|
+.. note:: You can also check out an article on :ref:`how to create contact requests manually <user-guide-activities-requests-create-manually>` in your Oro application.
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin
+

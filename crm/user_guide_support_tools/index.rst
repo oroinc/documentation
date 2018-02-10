@@ -11,6 +11,6 @@ The section describes OroCRM tools used to collect and aggregate customer-detail
    :titlesonly:
    :maxdepth: 1
 
-   /user_guide/activities/activities_create_case
-   /user_guide/activities/activities_manage_case
+   /user_guide/activities/cases/create_case
+   /user_guide/activities/cases/manage_case
    /admin_guide/integrations/zendesk_integration
