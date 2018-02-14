@@ -26,7 +26,9 @@ Defining the report basically is the same as configuring any other data grid:
 
     # src/AppBundle/Resources/config/oro/datagrids.yml
     datagrids:
-        orocrm_report-tasks-by_priority:
+        oro_report-tasks-by_priority:
+            pageTitle: oro.report.tasks_by_priority
+            acl_resource: oro_report_view
             source:
                 type: orm
                 query:
@@ -69,7 +71,7 @@ Adding an Entry to the Navigation
 
 If you followed the naming schema :ref:`explained above <cookbook-entities-report-grid>`, you do
 not have to create your own controller, but you can create a navigation item whose ``route`` config
-option refers to ``orocrm_report_index`` route which comes with the OroCRMReportBundle and is able
+option refers to ``oro_report_index`` route which comes with the OroReportBundle and is able
 to render any static report:
 
 .. code-block:: yaml
@@ -83,7 +85,7 @@ to render any static report:
                 uri: '#'
             app_tasks_by_priority_report:
                 label: By Priority
-                route: orocrm_report_index
+                route: oro_report_index
                 routeParameters:
                     reportGroupName: tasks
                     reportName: by_priority
