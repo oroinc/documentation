@@ -1,8 +1,9 @@
 .. _user-guide--business-intelligence--widgets--recent-emails:
 
-
 Recent Emails
 -------------
+
+.. start_emails_widget
 
 The Recent Emails widget allows you to see most recent additions to your inbox and outbox.
 
@@ -12,6 +13,8 @@ The Recent Emails widget allows you to see most recent additions to your inbox a
 
       * :ref:`Add Widgets to the Dashboard <user-guide--business-intelligence--widgets--add>`
       * :ref:`Manage Widgets on the Dashboard <user-guide--business-intelligence--widgets--manage>`
+
+.. finish_emails_widget
 
 Recent Emails Widget Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

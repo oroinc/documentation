@@ -82,7 +82,7 @@ To analyze your sales cycle performance and track your goals, OroCRM provides fl
 Sales Widgets
 ^^^^^^^^^^^^^
 
-Specifically for business sales, there are a number of :ref:`dashboard widgets <user-guide-widgets>` available that can simplify day-to-day sales process activities. These widgets give concise overview on what is happening with the sales at any point in time. More information on Sales Widgets can be found in the :ref:`Sales Widgets <doc-widgets-sales>` topic.
+Specifically for business sales, there are a number of :ref:`dashboard widgets <user-guide-dashboards>` available that can simplify day-to-day sales process activities. These widgets give concise overview on what is happening with the sales at any point in time. More information on Sales Widgets can be found in the :ref:`Sales Widgets <user-guide--business-intelligence--widgets--explore>` topic.
 
 Workflows
 ^^^^^^^^^

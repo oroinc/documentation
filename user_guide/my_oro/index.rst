@@ -1,7 +1,7 @@
 .. _user-guide-intro-log-in-edit-profile:
 
-My Oro
-======
+My Oro (User Menu)
+==================
 
 The drop-down user menu that resides below your username in the upper-right corner of the application is a fast way to access your user profile, calendar, mailbox, and task list.
 
