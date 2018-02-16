@@ -134,7 +134,7 @@ Here you can add a note to the current shopping list, as well as each of the ite
 Manage Shopping List 
 ^^^^^^^^^^^^^^^^^^^^
 
-While adding a product to a shopping list, click |IcChevronDown| to view a list with additional options available for the selected product.
+While adding a product to a shopping list, click |IcChevronDown| to view a list of additional options available for the selected product.
 
   .. image:: /user_guide/img/sales/shopping_lists/shopping_list_dropdown_1.png
 
@@ -157,13 +157,13 @@ To edit the shopping list name from within its view page:
 To delete the shopping list:
 
 1. Click |IcDelete| Delete.
-2. Confirm deletion by clicking **Yes, Delete** in the confirmation window.
+2. Confirm the deletion by clicking **Yes, Delete** in the confirmation window.
    
 .. image:: /frontstore_guide/img/shopping_lists/SHDelete.png
 
 To create an order from the shopping list:
 
-1. Click **Create Order** on the bottom of the view page.
+1. Click **Create Order** at the bottom of the view page.
 2. Click **Create Order** on the top right of the view page.
    
 .. image:: /frontstore_guide/img/shopping_lists/SHCreateOrder.png
@@ -179,7 +179,7 @@ To create a request for quote from the shopping list:
 Shopping Lists for Guest Users
 ------------------------------
 
-In Oro application, unregistered customers can create and manage a shopping list in the storefront without the need to register. By default, they can have one shopping list per website and browsing session with the possiblity of storing such list for up to 30 days in a single browser.
+In Oro application, unregistered customers can create and manage a shopping list in the storefront without the need to register. By default, they can have one shopping list per website and browsing session with the possibility of storing such list for up to 30 days in a single browser.
 
 .. note:: If you seem unable to create a guest shopping list, please refer to your administrator.
 
@@ -192,7 +192,7 @@ By default, only one shopping list is available for unregistered users:
   
     .. note:: You can also create a new shopping list when selecting multiple products using :ref:`mass action <frontstore-guide--shopping-lists-create--mass-action>` on the product listing page. 
       
-2.  To add more items to the existing list, or change the quantity of the items that are already in the list, click **Update Shopping List** next to the product.
+2.  To add more items to the existing list, or change the quantity of the items that are already on the list, click **Update Shopping List** next to the product.
 
     Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
 

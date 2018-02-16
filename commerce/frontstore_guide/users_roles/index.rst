@@ -25,7 +25,7 @@ On the All Users page, you can view and edit the existing users, or create new o
 
 .. note:: Please note that the ability to edit your account information depends on the permissions that correspond to your role. These are defined by the administrator.
 
-The users table shows the following data:
+The Users table shows the following data:
 
 * First Name
 * Last Name
@@ -91,7 +91,7 @@ To locate roles:
 
 .. image:: /frontstore_guide/img/users_roles/Roles.png
 
-On the All Roles page you will be able to see the list of roles available in the system. By default, the following roles are predefined and available for every customer
+On the All Roles page, you will be able to see the list of roles available in the system. By default, the following roles are predefined and available for every customer:
 
 * Administrator
 * Buyer
@@ -137,7 +137,7 @@ A form will emerge with the following data to provide:
 * Role Title
 * Access- and permissions-related settings
 
-.. image:: /frontstore_guide/img/users_roles/CreateRole.png
+.. image:: /frontstore_guide/img/users_roles/CreateRoleNew.png
 
 The following permissions are available:
 
@@ -153,6 +153,7 @@ The following permissions are available:
   - Assign","
 
   - None
+  - User (Own)
   - Department Level (Same Level)
   - Corporate (All Levels)."
 

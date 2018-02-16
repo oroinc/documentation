@@ -254,7 +254,7 @@ Checkout Process
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 
-In the Oro storefront, the checkout can be multi page or single page. Although the checkout steps themselves are the same, the way they are displayed is different. For the multi page checkout each step is displayed on a new page. For the single page checkout all steps fit one page.
+In the Oro storefront, the checkout can be multi page or single page. Although the checkout steps themselves are the same, the way they are displayed is different. For the multi page checkout, each step is displayed on a new page. For the single page checkout, all steps fit one page.
 
 Multi Page Checkout
 ~~~~~~~~~~~~~~~~~~~
@@ -321,7 +321,7 @@ Multi Page Checkout
    * **Do not ship later than** --- Click the field to select the date on which the order expires.
    * **PO Number** --- Enter the purchase order number for reference.
    * **Notes** --- Provide any additional information regarding the order.
-   * **Delete this shopping list after submitting order** --- Select this check box to remove the shopping list after order is completed.
+   * **Delete this shopping list after submitting order** --- Select this check box to remove the shopping list after the order is completed.
 
 3. To submit the order, click **Submit Order** at the bottom of the page.
 
@@ -331,9 +331,9 @@ Multi Page Checkout
 
    Until you have submitted the order, you can return back and edit any step using the step list on the left of the page:
 
-   * Click the step that you want to return to. In this case, *all the changes made on the later steps will be lost*.
+   * Click the step that you want to return to. In this case, *all the changes made at the later steps will be lost*.
 
-   * Click |IcEditInline| next to the step that that you want to edit. In this case *all the changes made on the later steps will be preserved*.
+   * Click |IcEditInline| next to the step that you want to edit. In this case, *all the changes made at the later steps will be preserved*.
 
      .. image:: /configuration_guide/img/workflows/checkout/EditInfo.png
         :align: center
@@ -425,7 +425,7 @@ This way you can apply as many coupons as the conditions of the active promotion
 
 .. note:: To delete the coupon code, click |IcDelete| **Delete** next to the code.
 
-In addition, any discounts applied ot the order will be displayed in the **Total** section of the **Order Summary**.
+In addition, any discounts applied to the order will be displayed in the **Total** section of the **Order Summary**.
 
 .. image:: /frontstore_guide/img/orders/CouponCodeCheckout3.png
 
