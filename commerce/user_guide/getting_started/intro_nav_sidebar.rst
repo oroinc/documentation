@@ -158,16 +158,6 @@ Click the |IcSettings| to change the content of a note.
 You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
 
-Task List
-^^^^^^^^^
-
-To see the newest tasks you have been assigned, use the Task List widget. The widget displays the task name and due
-date.
-
-.. image:: /user_guide/img/getting_started/navigation/sidebar/sb_task.png
-
-You can change the number of tasks that are displayed at the same time in the settings.
-
 Conclusion
 ----------
 

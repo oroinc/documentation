@@ -3,53 +3,21 @@
 Calendar Events
 ===============
 
-In OroCRM and in OroCommerce Management Console, you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in OroCRM and OroCommerce (e.g. a demo may be linked to the opportunity in OroCRM and to the request for quote in OroCommerce).
+In Oro application (e.g. in OroCRM and in OroCommerce Management Console), you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in Oro application (e.g. a demo may be linked to the opportunity in OroCRM and to the request for a quote in OroCommerce).
 
-Please see the :ref:`short overview of calendar events <doc-activities-overview-events>` for additional details.
+.. note:: You can also see a short demo on `how to create and manage events in your Oro application <https://www.orocrm.com/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU>`_, or continue reading the guidance below.
 
-When managing calendar events, you can do the following: (see aggregated information :ref:`here <doc-activities-events-actions>`):
+   .. raw:: html
 
-* :ref:`Create <doc-activities-events-actions-add-detailed>` a calendar event.
-* :ref:`View <doc-activities-events-actions-view-detailed>` a calendar event.
-* :ref:`Edit <doc-activities-events-actions-edit-detailed>` a calendar event.
-* :ref:`Delete <doc-activities-events-actions-delete-detailed>` a calendar event.
-* :ref:`Reschedule <doc-activities-events-actions-changetimeframe>` a calendar event.
-* :ref:`Manage context <doc-activities-events-actions-context-detailed>` of a calendar event.
-* :ref:`Comment <doc-activities-events-actions-comment-detailed>` on a calendar event.
-* :ref:`Respond to the invitation <doc-activities-events-actions-respond-detailed>` to the calendar event.
-* :ref:`Start a Hangout event <doc-activities-events-actions-hangout>` (available only when the google integration is enabled).
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lZKiS3TvXNU" frameborder="0" allowfullscreen></iframe>
 
-You can perform most of these actions while working with:
+In the Calendar Events topic you will learn how to:
 
-
-* The :ref:`list of calendar events <doc-activities-events-grid>`, also known as the `calendar events grid`.
-
-   .. image:: /user_guide/img/getting_started/activities/add_event_all_calendar_events.png
-
-* The :ref:`calendar event view page <doc-activities-events-view-page>`.
-
-   .. image:: /user_guide/img/getting_started/activities/events_view_fromgrid2.png
-
-
-* The :ref:`My Calendar <doc-my-oro-calendar>` page.
-
-   .. image:: /user_guide/img/getting_started/activities/add_event_my_calendar.png
-
-
-
-* The :ref:`Today's Calendar <doc-widgets-today-calendar>` widget.
-
-   .. image:: /user_guide/img/getting_started/activities/add_event_todays_calendar.png
-
-* The **Activity** section of the related items—records in OroCRM and OroCommerce that are related to the customer user activity and have been added as a calendar event context. By default, the event may be set to be related to opportunity, quote, customer user, contact, account, lead, business customer, case, request for quote, and order records.
-
-   .. image:: /user_guide/img/getting_started/activities/events_view_fromactivities2.png
-
+.. include:: /user_guide/include_images.rst
+   :start-after: begin
 
 .. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   activities_events_grid
-   activities_events_viewpage
-   activities_events_actions
+   :maxdepth: 2
+   
+   create_calendar_event
+   manage_calendar_event

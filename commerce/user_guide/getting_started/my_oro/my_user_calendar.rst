@@ -48,7 +48,7 @@ Alternatively, complete the following:
 
 Hidden calendars color legend box changes to transparent.
 
-Hidden calendars do not appear in the right part of the page and in the :ref:`Today's Calendar <doc-widgets-today-calendar>` widget.
+Hidden calendars do not appear in the right part of the page and in the :ref:`Today's Calendar <user-guide--business-intelligence--widgets--todays-calendar>` widget.
 
 .. _doc-activities-events-actions-remove-calendar:
 
@@ -116,7 +116,7 @@ The |IcReminder| **Reminder** icon in the upper-left corner appears when the eve
 
 From the calendar you can add, view a calendar event, respond to it, edit and delete it, start a hangout meeting, remove a context from a calendar event.
 
-You can also view, edit, and delete tasks.
+You can also view, edit, and delete :ref:`tasks <doc-activities-tasks>`.
 
 See the action descriptions:
 
@@ -128,46 +128,6 @@ See the action descriptions:
 - :ref:`Respond to a Calendar Event <doc-activities-events-actions-respond>`
 - :ref:`Start a Hangout Meeting <doc-activities-events-actions-hangout>`
 - :ref:`Remove a Context from a Calendar Event <doc-activities-events-actions-contextdel>`
-
-- :ref:`View a Task <doc-activities-tasks-actions-view>`
-- :ref:`Edit a Task <doc-activities-tasks-actions-edit>`
-- :ref:`Delete a Task <doc-activities-tasks-actions-delete>`
-
-
-See Also
-^^^^^^^^
-
-Calendar Events:
-
-:ref:`Calendar Events Overview <doc-activities-events>`
-
-:ref:`Manage Calendar Events <doc-activities-events-actions>`
-
-:ref:`Calendar Events Grid <doc-activities-events-grid>`
-
-:ref:`Calendar Event View Page <doc-activities-events-view-page>`
-
-:ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
-
-Tasks:
-
-:ref:`Tasks Overview <doc-activities-tasks>`
-
-:ref:`Manage Tasks <doc-activities-tasks-actions>`
-
-:ref:`Tasks Grid <doc-activities-tasks-grid>`
-
-:ref:`Task View Page <doc-activities-tasks-view-page>`
-
-:ref:`My Tasks <doc-my-oro-tasks>`
-
-:ref:`My Calendar Page <doc-my-oro-calendar>`
-
-:ref:`Tasks List Sidebar Widget <doc-widgets-sidebar-task-list>`
-
-:ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
-
-:ref:`Task Flow Workflow <doc--workflows--task-flow>`
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

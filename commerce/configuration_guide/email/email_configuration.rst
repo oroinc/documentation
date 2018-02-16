@@ -76,6 +76,8 @@ The following settings are available:
   "**Campaign**","The section defines the rules that will be applied by default to emails generated as a part of marketing campaigns in OroCRM. You can define the Sender Email and Sender Name to be used."
   "**System Mailboxes**", "A system mailbox allows people who do not have access to the company mailbox addresses write to the company. To add a new system mailbox, click **Add Mailbox**. More information on System Mailboxes and their configuration can be found further below in this guide."
 
+.. _my_email_configuration:
+
 Standard Personal Mailbox Configuration (IMAP/SMTP)
 ---------------------------------------------------
 

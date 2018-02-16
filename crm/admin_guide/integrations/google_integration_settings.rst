@@ -10,7 +10,7 @@ Google Integration Settings
 The only integration by default available in the community editions is integration with Google. You can define the details used for Google Single Sign-on,  which enables users with the same Google account email address and OroCRM primary email address to log-in only once in the session. More information on integration with Google is described in the :ref:`Google Single Sign-on guide <user-guide-google-single-sign-on>`.
 
 
-.. image:: ../img/configuration/google.png
+.. image:: ../img/configuration/google_settings_new.png
 
 
 Google Integration Settings
@@ -18,13 +18,13 @@ Google Integration Settings
 
 Please, read `instructions on the Google side <https://support.google.com/cloud/answer/6158862?hl=en>`_ for obtaining credentials. Make sure that your OroCRM domain is included into `Authorized JavaScript origins` and `Authorized redirect URIs`.
 
-+-------------------+-------------------------------------------------+
-| **Option**        | **Description**                                 |
-+===================+=================================================+
-| **Client ID**     | The Client ID generated in the API console.     |
-+-------------------+-------------------------------------------------+
-| **Client Secret** | The Client Secret generated in the API console. |
-+-------------------+-------------------------------------------------+
+ .. csv-table::
+    :header: "Field", "Description"
+    :widths: 10, 30
+   
+    "**Client ID** ","The Client ID generated in the API console."
+    "**Client Secret**","The Client Secret generated in the API console."
+    "**Google API Key** ","The API Key generated in the API console. Provide a valid `Google API key <https://developers.google.com/maps/documentation/javascript/get-api-key>`_ to activate maps for addresses in the system."
 
 Google Sign-on
 --------------
@@ -40,7 +40,7 @@ Google Sign-on
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-.. image:: ../img/google_integration/oro_google_integration.jpg
+.. image:: ../img/google_integration/oro_google_integration_new.jpg
 
 
 Google Hangouts
