@@ -78,6 +78,17 @@ Comment this line.
 
     $ sudo -u www-data php app/console oro:platform:update --env=prod --force
 
+.. note::
+
+    To speed up the update process, consider using `--schedule-search-reindexation` or 
+    `--skip-search-reindexation` option:
+    
+    * `--schedule-search-reindexation' --- postpone search reindexation process until 
+      the message queue consumer is started (on step 10 below).
+    * '--skip-search-reindexation' --- skips search reindexation. Later, you can start it manually using
+      the `oro:search:reindex` and `oro:website-search:reindex` commands.
+      See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
+
 **9**. Remove the caches.
 
 .. code-block:: bash
