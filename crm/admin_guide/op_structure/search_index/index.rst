@@ -290,6 +290,8 @@ However, if you really need to work on a lower level (e.g. to write functional t
 
 All these engines accept low-level query and execution context as an arguments, and return result object with list of found entities, total number of results and requested aggregated data.
 
+.. _search_index_overview--indexation-process:
+
 Indexation Process
 ------------------
 
