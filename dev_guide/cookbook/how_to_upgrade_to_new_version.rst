@@ -74,9 +74,9 @@ Comment this line.
     To speed up the update process, consider using `--schedule-search-reindexation` or 
     `--skip-search-reindexation` option:
     
-    * `--schedule-search-reindexation' --- postpone search reindexation process until 
+    * `--schedule-search-reindexation` --- postpone search reindexation process until 
       the message queue consumer is started (on step 9 below).
-    * '--skip-search-reindexation' --- skips search reindexation. Later, you can start it manually using
+    * `--skip-search-reindexation` --- skip search reindexation. Later, you can start it manually using
       the `oro:search:reindex` and `oro:website-search:reindex` commands.
       See :ref:`Search Index: Indexation Process <search_index_overview--indexation-process>`.
 
