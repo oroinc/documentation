@@ -28,26 +28,16 @@ To configure such capability on the Google side:
 -  Open `Google API
    Console <https://console.developers.google.com/start>`__
 
--  Navigate to **My Project** selector in the top left corner and click
-   :guilabel:`Create Project`.
+-  Navigate to **My Project** selector in the top left corner and click :guilabel:`Create Project`.
 
-|
 
 .. image:: ../img/google_integration/create_project.jpg
-
-|
 
 
 -  Define the **Project Name** and click :guilabel:`Create`.
 
-|
 
 .. image:: ../img/google_integration/new_project.jpg
-
-|
-
-
-
 
 
 Create Credentials
@@ -56,22 +46,11 @@ Create Credentials
 -  Click :guilabel:`Credentials` in the menu on the left and open
    **Credentials** tab.
 
-|
-
 .. image:: ../img/google_integration/create_credentials.jpg
-
-|
-
 
 -  Click :guilabel:`Create Credentials` and select **0Auth client ID.**
 
-|
-
 .. image:: ../img/google_integration/create_credentials_2.jpg
-
-|
-
-
 
 -  To create an OAuth client ID, you should first set a product name on
    the consent screen.
@@ -81,12 +60,8 @@ Configure Consent Form
 
 -  Click :guilabel:`Configure Consent Form`.
    
-|
 
 .. image:: ../img/google_integration/consent_form.jpg
-
-|
-
 
 
 - Complete the form by entering:
@@ -103,11 +78,7 @@ Configure Consent Form
 
   -  Terms of Service URL
 
-|
-
 .. image:: ../img/google_integration/complete_form.jpg
-
-|
 
 
 -  Clicking :guilabel:`Save` will launch a **Create Client ID** page.
@@ -127,29 +98,18 @@ Configure Consent Form
 
 -  Click :guilabel:`Create Client ID`.
 
-|
 
 .. image:: ../img/google_integration/create_id.jpg
-
-|
 
 
 -  Your client ID should have now been generated.
 
-|
 
 .. image:: ../img/google_integration/id_secret.jpg
 
-|
 
-|
 
 .. image:: ../img/google_integration/id_secret_2.jpg
-
-|
-
-
-
 
 
 OroCRM Side
@@ -164,13 +124,13 @@ Configure Google Integration
 
 -  Define the following fields for **Google Integration Settings**:
 
-+---------------------+---------------------------------------------------+
-| **Field**           | **Description**                                   |
-+=====================+===================================================+
-| **Client ID**       | The Client ID generated in the API console.       |
-+---------------------+---------------------------------------------------+
-| **Client Secret**   | The Client Secret generated in the API console.   |
-+---------------------+---------------------------------------------------+
+.. csv-table::
+   :header: "Field", "Description"
+   :widths: 10, 30
+  
+   "**Client ID** ","The Client ID generated in the API console."
+   "**Client Secret**","The Client Secret generated in the API console."
+   "**Google API Key** ","The API Key generated in the API console. Provide a valid `Google API key <https://developers.google.com/maps/documentation/javascript/get-api-key>`_ to activate maps for addresses in the system."
 
 -  Define the following fields for **Google Sign-on:**
 
@@ -184,11 +144,8 @@ Configure Google Integration
 | **OAuth 2.0 for email sync** | Check **Enable.**                                                                                                                                                                                                                    |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-|
 
-.. image:: ../img/google_integration/oro_google_integration.jpg
-
-|
+.. image:: ../img/google_integration/oro_google_integration_new.jpg
 
 
 Using Google Sign-on
@@ -198,12 +155,8 @@ When a user gets to the login page of an instance for which single
 sign-on capability has been enabled, a **Login Using Google** link will
 appear.
 
-|
 
 .. image:: ../img/google_integration/login_using_google.jpg
-
-|
- 
   
 
 -  If the user is not logged into any Google accounts after the link
@@ -213,11 +166,8 @@ appear.
    to use the account in order to log-in to OroCRM will appear (details
    defined for the consent screen will be used).
 
-|
 
 .. image:: ../img/google_integration/google_connection.jpg
-
-|
 
 
 For now on, for a user logged-in into a Google account, it is enough to
