@@ -15,8 +15,8 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/dev_guide/emails/emails`
-        * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
-        * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_accounts`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_contacts`
 
 `ActivityBundle`_ (OroPlatform)
     Assign activities (such as calls, emails and tasks) to other entities.
@@ -96,8 +96,8 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
-        * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_channels`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_accounts`
         * User guide: :doc:`/user_guide_sales_tools/magento/magento_channels`
 
 `ChartBundle`_ (OroPlatform)
@@ -124,7 +124,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/dev_guide/emails/emails`
-        * User guide: :doc:`/user_guide/customer_management/common_features_contacts`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_contacts`
         * User guide: :doc:`/admin_guide/integrations/outlook/index`
 
 `ContactUsBundle`_ (OroCRM)
@@ -168,7 +168,7 @@ related articles is provided below the description.
         * Book: :doc:`/dev_guide/data/reports_configuration`
         * Cookbook: :doc:`/dev_guide/cookbook/how_to_pass_request_parameter_to_grid`
         * Reference: :doc:`/reference/format/datagrids`
-        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_channels`
 
 `DemoDataBundle`_ (OroCRM)
     Contains necessary fixtures for CRM features demonstration.
@@ -206,7 +206,7 @@ related articles is provided below the description.
 
         * User guide: :doc:`/admin_guide/entities/entities`
         * User guide: :doc:`/admin_guide/entities/entity_fields`
-        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_channels`
 
 `EntityConfigBundle`_ (OroPlatform)
     Allows to attach metadata to entity classes and offers a UI to manage them.
@@ -252,7 +252,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/business_intelligence/business_intelligence_filters`
+        * User guide: :doc:`/user_guide_business_intelligence/business_intelligence_filters`
 
 `FormBundle`_ (OroPlatform)
     Adds additional form types and form extensions.
@@ -298,7 +298,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_channels`
         * User guide: :doc:`/admin_guide/integrations/magento_channel_integration`
 
 `LocaleBundle`_ (OroPlatform)
@@ -318,7 +318,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Cookbook: :doc:`/dev_guide/cookbook/faq`
-        * User guide: :doc:`/user_guide/customer_management/common_features_channels`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_channels`
         * User guide: :doc:`/admin_guide/integrations/magento_channel_integration`
         * User guide: :doc:`/user_guide_sales_tools/magento/magento_channels`
 
@@ -400,11 +400,11 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/dev_guide/data/reports_configuration`
-        * User guide: :doc:`/user_guide/customer_management/common_features_accounts`
+        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_accounts`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/business_customers`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/leads`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/opportunities/index`
-        * User guide: :ref:`Manage Reports <doc-reports-manage>`
+        * User guide: :ref:`Manage Reports <user-guide--business-intelligence--reports--use-custom-reports>`
 
 `RequireJSBundle`_ (OroPlatform)
     Integrates the `RequireJS JavaScript library`_.

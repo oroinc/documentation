@@ -20,7 +20,6 @@ User Guides
                 <li><a class="reference internal" href="user-guide/my-oro/">My Oro</a></li>
                 <li><a class="reference internal" href="user-guide/records/">Work with Records</a></li>
                 <li><a class="reference internal" href="user-guide/customer-management/">Customer Management</a></li>
-                <li><a class="reference internal" href="user-guide/business-intelligence/">Business Intelligence</a></li>
             </ul>
         </div>
         <div class="guideline__item">
@@ -80,6 +79,7 @@ Administrator Guide
                 <li><a class="reference internal" href="admin-guide/op-structure/">Architecture Overview</a></li>
                 <li><a class="reference internal" href="admin-guide/entities/">Entities Management</a></li>
                 <li><a class="reference internal" href="admin-guide/system">System Tools</a></li>
+                <li><a class="reference internal" href="user-guide-business-intelligence">Business Intelligence</a></li>
             </ul>
         </div>
     </div>
@@ -149,6 +149,8 @@ Developer's Guide
    install_upgrade/index
 
    user_guide/index
+   
+   user_guide_business_intelligence/index
 
    user_guide_sales_tools/index
 

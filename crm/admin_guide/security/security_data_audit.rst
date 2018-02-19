@@ -44,9 +44,7 @@ A link to a specific record's history of changes is available in the top right c
 :ref:`roles <user-guide-user-management-permissions>`
 )
 
-|
 
 .. image:: ../../user_guide/img/data_management/view/view_history.png
 
-|
     

@@ -3,12 +3,14 @@
 Navigation Basics
 =================
 
+
 .. contents:: :local:
 
 OroCommerce provides a broad set of navigation tools that allow you to easily access necessary information and tools. The system helps to ensure that frequent actions can be performed with minimal effort by keeping required information at hand. This means no important updates are missed.
 
-This section provides an overview of the navigation elements in OroCommerce.
+.. image:: /user_guide/img/getting_started/navigation/navigation_basics.png
 
+This section provides an overview of the navigation elements in OroCommerce.
 
 .. _user-guide-navigation-menu:
 
@@ -44,7 +46,7 @@ At the very top of the page, there is a navigation panel that contains different
 
 .. csv-table::
   :header: "#","Item","Description","Related Document"
-  :widths: 10, 30, 40,30
+  :widths: 10, 20, 40,30
 
   "1","**Organization Selector**","Switch between organizations when working in the multi-organization environment.","
   :ref:`Working with Multiple Organizations <user-guide-getting-started-change-organization>` section of the
@@ -53,8 +55,8 @@ At the very top of the page, there is a navigation panel that contains different
   :ref:`Shortcuts <user-guide-getting-started-shortcuts>`"
   "3","**Search**","Find a specific record details.","
   :ref:`Search <user-guide-getting-started-search>`"
-  "4","**Pinned pages**","Open pages preserved in the state they were pinned in.",
-  ":ref:`Pinned Page <user-guide-ui-components-pinned>`"
+  "4","**Pinned pages**","Open pages preserved in the state they were pinned in.","
+  :ref:`Pinned Page <user-guide-ui-components-pinned>`"
   "5","**User menu**","Access your user profile, calendar, mailbox, and task list. Log out of the system.","
   :ref:`User Menu <user-guide-getting-started-user-menu>`"
   "6","**My Emails**","See if you have new and unread emails. Quickly read and reply to the most recent emails.

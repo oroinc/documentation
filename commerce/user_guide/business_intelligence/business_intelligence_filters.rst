@@ -1,4 +1,5 @@
 .. _user-guide--business-intelligence--filters-management:
+.. _user-guide-getting-started-filters:
 
 Filters
 =======
