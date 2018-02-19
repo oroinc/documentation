@@ -42,11 +42,9 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
    my_oro/index
    navigation/index
    records/index
-   customer_management/index
    activities/index
-   business_intelligence/index
-   security_basics/index
    import_export/index
+   mass_actions_management_console
    glossary
 
 

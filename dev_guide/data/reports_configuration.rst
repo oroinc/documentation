@@ -11,7 +11,7 @@ like this:
 
 .. seealso::
 
-    You can also :ref:`configure reports via the web UI <doc-reports-manage>`.
+    You can also :ref:`configure reports via the web UI <user-guide--business-intelligence--reports--use-custom-reports>`.
 
 .. _book-reports-configuration:
 

@@ -10,11 +10,8 @@ Role on the Interface
 
 The information about a role is divided into several sections.
 
-|
 
 .. image:: ../img/access_roles_management/roles_overview1.png 
-
-|
 
 General Section
 ^^^^^^^^^^^^^^^
@@ -64,11 +61,9 @@ Each tab, except **System Capabilities**, is divided into two sections:
 
 The **System Capabilities** tab lists only capabilities that control access to the system functionalities. 
 
-|
 
 .. image:: ../img/access_roles_management/roles_overview2.png 
 
-|
 
 It is divided itself in the following sections:
 
@@ -99,11 +94,8 @@ Users Section
 
 The list of users that have this role. 
 
-|
-
 .. image:: ../img/access_roles_management/roles_userssection.png 
 
-|
 
 
 Links
@@ -114,7 +106,6 @@ For general overview of roles, see the :ref:`Roles Management <user-guide-user-m
 For what actions you can perform with roles, see the :ref:`Actions with Roles <user-guide-user-management-permissions-roles--actions>` guide.
 
 For examples on roles application, see the :ref:`Access Configuration Examples <user-guide-user-management-permissions-roles--examples>` guide.
-
 
 
 .. |IcRemove| image:: ../../img/buttons/IcRemove.png
