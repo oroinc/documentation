@@ -106,13 +106,13 @@ Configure Google Integration
 
 -  Define the following fields for **Google Integration Settings**:
 
-+---------------------+---------------------------------------------------+
-| **Field**           | **Description**                                   |
-+=====================+===================================================+
-| **Client ID**       | The Client ID generated in the API console.       |
-+---------------------+---------------------------------------------------+
-| **Client Secret**   | The Client Secret generated in the API console.   |
-+---------------------+---------------------------------------------------+
+.. csv-table::
+   :header: "Field", "Description"
+   :widths: 10, 30
+     
+   "**Client ID** ","The Client ID generated in the API console."
+   "**Client Secret**","The Client Secret generated in the API console."
+   "**Google API Key** ","The API Key generated in the API console. Provide a valid `Google API key <https://developers.google.com/maps/documentation/javascript/get-api-key>`_ to activate maps for addresses in the system."
 
 -  Define the following fields for **Google Sign-on:**
 
@@ -126,7 +126,7 @@ Configure Google Integration
 | **OAuth 2.0 for email sync** | Check **Enable.**                                                                                                                                                                                                                    |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /user_guide/system/img/google_integration/oro_google_integration.jpg
+.. image:: /user_guide/system/img/google_integration/oro_google_integration_new.jpg
 
 Using Google Sign-on
 --------------------
