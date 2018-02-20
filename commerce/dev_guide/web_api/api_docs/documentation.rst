@@ -8,7 +8,7 @@ You need to provide detailed documentation for your API resources because it is 
 
 The Oro Platform collects documentation for API resources from several sources:
 
--  The documentation can be written in a `configuration file <./configuration.rst>`__.
+-  The documentation can be written in a `configuration file <./configuration>`__.
 -  A `Markdown <https://daringfireball.net/projects/markdown/>`__ document. The detailed information you can find bellow in this document.
 -  System-wide descriptions of `configurable entities and fields <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/README.md>`__.
 

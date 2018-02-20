@@ -115,4 +115,4 @@ An example:
 
 To switch between general and Data API forms `Processor:raw-latex:`\Shared`:raw-latex:`\InitializeApiFormExtension` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/InitializeApiFormExtension.php>`__ and `Processor:raw-latex:`\Shared`:raw-latex:`\RestoreDefaultFormExtension` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/RestoreDefaultFormExtension.php>`__ processors can be used.
 
-A form for a particular entity is built on the fly based on `Data API configuration <./configuration.rst>`__ and an entity metadata. It is performed by `Processor:raw-latex:`\Shared`:raw-latex:`\BuildFormBuilder` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php>`__ processor.
+A form for a particular entity is built on the fly based on `Data API configuration <./configuration>`__ and an entity metadata. It is performed by `Processor:raw-latex:`\Shared`:raw-latex:`\BuildFormBuilder` <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php>`__ processor.

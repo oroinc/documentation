@@ -33,7 +33,7 @@ All entities, except custom entities, dictionaries and enumerations are not acce
 
 If an auto-generated alias for your entity looks bad for you, you can change it in ``Resources/config/oro/entity.yml``. More details you can find in `entity aliases documentation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_aliases.md>`__.
 
-Do not forget to run ``oro:api:cache:clear`` CLI command to immediately make an entity accessible through Data API. If you use API sandbox run ``oro:api:doc:cache:clear`` CLI command to apply the changes for it. Also please see other `CLI commands <./commands.md>`__ that may be helpful.
+Do not forget to run ``oro:api:cache:clear`` CLI command to immediately make an entity accessible through Data API. If you use API sandbox run ``oro:api:doc:cache:clear`` CLI command to apply the changes for it. Also please see other `CLI commands <./commands>`__ that may be helpful.
 
 Configuration structure
 -----------------------
@@ -175,7 +175,7 @@ An example:
 
 The ``entities`` section describes a configuration of entities.
 
--  **documentation\_resource** *string* May contain the link to `markdown <https://en.wikipedia.org/wiki/Markdown>`__ file that contains a detailed documentation for a single or multiple API resources. For more details see `Documenting API Resources <./documentation.md>`__. Please note that the same entity can be configured in different ``Resources/config/oro/api.yml`` files, e.g. when some bundle needs to add a field to an entity declared in another bundle. In this case all configuration files
+-  **documentation\_resource** *string* May contain the link to `markdown <https://en.wikipedia.org/wiki/Markdown>`__ file that contains a detailed documentation for a single or multiple API resources. For more details see `Documenting API Resources <./documentation>`__. Please note that the same entity can be configured in different ``Resources/config/oro/api.yml`` files, e.g. when some bundle needs to add a field to an entity declared in another bundle. In this case all configuration files
    for this entity can have **documentation\_resource** option and all documentation files declared there will be merged. Also pay attention that in case if the same field is documented in several documentation files, they will not be merged and only a documentation from one file will be used.
 -  **exclude** *boolean* Indicates whether the entity should be excluded from Data API. By default ``false``.
 -  **inherit** *boolean* By default ``true``. The flag indicates that the configuration for certain entity should be merged with the configuration of a parent entity. If a derived entity should have completely different configuration and merging with parent configuration is not needed the flag should be set to ``false``.
@@ -260,7 +260,7 @@ As described above, the **data\_type** attribute can be used to specify a data t
 +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | array                                        | Used to represent to-many association as a field. In JSON.API it means that the association should be in "attributes" section instead of "relationships" section.                                                                                                                                                                                                                                            |
 +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| nestedObject                                 | Used to configure nested objects. For details see `Configure nested object <./how_to#configure-nested-object>`__.                                                                                                                                                                                                                                                                                            |
+| nestedObject                                 | Used to configure nested objects. For details see `Configure nested object <./how-to#configure-nested-object>`__.                                                                                                                                                                                                                                                                                            |
 +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | nestedAssociation                            | Used to configure nested associations. For details see `Configure nested association <./how_to#configure-nested-association>`__.                                                                                                                                                                                                                                                                             |
 +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -333,7 +333,7 @@ This section describes fields by which the result data can be filtered. It conta
 -  **fields** This section describes a configuration of each field that can be used to filter the result data. Each filter can have the following properties:
 
    -  **exclude** *boolean* Indicates whether filtering by this field should be disabled. By default ``false``.
-   -  **description** *string* A human-readable description of the filter or a link to the `documentation resource <./documentation.rst>`__. Used in auto generated documentation only.
+   -  **description** *string* A human-readable description of the filter or a link to the `documentation resource <./documentation>`__. Used in auto generated documentation only.
    -  **property\_path** *string* The property path to reach the fields' value. The same way as above in ``fields`` configuration section.
    -  **data\_type** *string* The data type of the filter value. Can be ``boolean``, ``integer``, ``string``, etc.
    -  **allow\_array** *boolean* A flag indicates whether the filter can contains several values. By default ``false``.
@@ -403,7 +403,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 -  **exclude** *boolean* Indicates whether the action is disabled for entity. By default ``false``.
 -  **description** *string* A short, human-readable description of API resource. Used in auto generated documentation only.
--  **documentation** *string* A detailed documentation of API resource or a link to the `documentation resource <./documentation.rst>`__. Used in auto generated documentation only.
+-  **documentation** *string* A detailed documentation of API resource or a link to the `documentation resource <./documentation>`__. Used in auto generated documentation only.
 -  **acl\_resource** *string* The name of ACL resource that should be used to protect an entity in a scope of this action. The ``null`` can be used to disable access checks.
 -  **max\_results** *integer* The maximum number of entities in the result. Set ``-1`` (it means unlimited), zero or positive number to set the limit. Can be used to set the limit for both root and related entities.
 -  **order\_by** *array* The property can be used to configure default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default the result is ordered by identifier field.

@@ -27,7 +27,7 @@ The both types of the configuration extras works in the following way:
 -  The loading of the configuration is performed by the `get\_config <./actions#get_config-action>`__ action. Any of processors registered for this action can check which configuration data is requested and will do suitable work. There are two ways how a processor can find out which configuration data is requested. The first is to use the `processor conditions <./processors#processor-conditions>`__. The second one is to use the ``hasExtra`` method of the
    `ConfigContext <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigContext.php>`__.
 
-Also, please take a look into `Configuration Reference <./configuration.rst>`__ for more details about config structure, sections, properties etc.
+Also, please take a look into `Configuration Reference <./configuration>`__ for more details about config structure, sections, properties etc.
 
 ConfigExtraInterface
 --------------------
