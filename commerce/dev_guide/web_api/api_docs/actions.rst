@@ -86,9 +86,9 @@ The following table shows all actions provided out of the box:
 | `collect\_subresources <#collect_subresources-action>`__      | Returns a list of all sub-resources accessible through Data API for a given entity type                                                                    |
 +---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Please see `processors <./processors.rst>`__ section for more details about how to create a processor.
+Please see `processors <./processors>`__ section for more details about how to create a processor.
 
-Also you can use the `oro:api:debug <./commands.rst#oroapidebug>`__ command to see all actions and processors.
+Also you can use the `oro:api:debug <./commands#oroapidebug>`__ command to see all actions and processors.
 
 get Action
 ----------

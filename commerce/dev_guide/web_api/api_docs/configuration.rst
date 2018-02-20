@@ -333,7 +333,7 @@ This section describes fields by which the result data can be filtered. It conta
 -  **fields** This section describes a configuration of each field that can be used to filter the result data. Each filter can have the following properties:
 
    -  **exclude** *boolean* Indicates whether filtering by this field should be disabled. By default ``false``.
-   -  **description** *string* A human-readable description of the filter or a link to the `documentation resource <./documentation.rst>`__. Used in auto generated documentation only.
+   -  **description** *string* A human-readable description of the filter or a link to the `documentation resource <./documentation>`__. Used in auto generated documentation only.
    -  **property\_path** *string* The property path to reach the fields' value. The same way as above in ``fields`` configuration section.
    -  **data\_type** *string* The data type of the filter value. Can be ``boolean``, ``integer``, ``string``, etc.
    -  **allow\_array** *boolean* A flag indicates whether the filter can contains several values. By default ``false``.
@@ -403,7 +403,7 @@ The ``actions`` configuration section allows to specify action-specific options.
 
 -  **exclude** *boolean* Indicates whether the action is disabled for entity. By default ``false``.
 -  **description** *string* A short, human-readable description of API resource. Used in auto generated documentation only.
--  **documentation** *string* A detailed documentation of API resource or a link to the `documentation resource <./documentation.rst>`__. Used in auto generated documentation only.
+-  **documentation** *string* A detailed documentation of API resource or a link to the `documentation resource <./documentation>`__. Used in auto generated documentation only.
 -  **acl\_resource** *string* The name of ACL resource that should be used to protect an entity in a scope of this action. The ``null`` can be used to disable access checks.
 -  **max\_results** *integer* The maximum number of entities in the result. Set ``-1`` (it means unlimited), zero or positive number to set the limit. Can be used to set the limit for both root and related entities.
 -  **order\_by** *array* The property can be used to configure default ordering of the result. The item key is the name of a field. The value can be ``ASC`` or ``DESC``. By default the result is ordered by identifier field.
