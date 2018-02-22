@@ -66,7 +66,7 @@ Clicking on the ellipsis menu of a record will launch the following action list 
 Recent Emails Widget
 ^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_guide/business_intelligence/business_intelligence_dashboard_widgets/recent_emails.rst
+.. include:: /business_intelligence/business_intelligence_dashboard_widgets/recent_emails.rst
    :start-after: start_emails_widget
    :end-before: finish_emails_widget
 

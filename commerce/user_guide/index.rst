@@ -1,5 +1,5 @@
-User Guide
-==========
+User Guide: Commerce
+====================
 
 .. _user-guide:
 .. _user-guide--products--master-catalog:
@@ -146,8 +146,6 @@ Table of Contents
    marketing_content_blocks/index
 
    taxes/index
-
-   business_intelligence/index
 
    glossary
 

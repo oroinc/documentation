@@ -1,7 +1,7 @@
 .. _user-guide--business-intelligence:
 
-Business Intelligence 
-=====================
+User Guide: Business Intelligence 
+=================================
 
 Data analysis tools in OroCommerce help you make informed decisions related to your sales and commerce activities:
 

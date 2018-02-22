@@ -83,8 +83,8 @@ This way, you can keep some of the content visible at all times, and keep fewer 
 .. image:: ../img/navigation/sidebar/sb_expand_view_1.png
 
 
-Manage the Widgets
-------------------  
+Manage Widgets
+--------------  
 
 As shown below, each widget contains a header (1), content (2), and icons (3).
 
@@ -107,7 +107,6 @@ You can:
     You can add several widgets of the same type and define different settings for them. For example, you can keep notes 
     with different content, or email widgets for different folders.
 
-    
 Default Sidebar Widgets
 -----------------------
 
@@ -115,8 +114,8 @@ This section describes the three sidebar widgets available in OroCRM out of the 
 
 .. note:: You can find more information on dashboard widgets in the corresponding :ref:`Dashboard Widgets topic <user-guide-dashboards>`. 
 
-The Recent Emails Widget
-^^^^^^^^^^^^^^^^^^^^^^^^
+Recent Emails Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
  
@@ -140,8 +139,8 @@ From the widget, you can:
   below the letter (e.g., 6).
 
   
-Configure the Recent Emails Widget
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Configure the Recent Emails Sidebar Widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Click the |IcSettings| icon to configure the widget. The settings window will emerge:
 
@@ -158,8 +157,8 @@ Click the |IcSettings| icon to configure the widget. The settings window will em
     folder, then configure the widget to display this folder and place it at the top of your sidebar panel.
   
   
-Sticky Note
-^^^^^^^^^^^
+Sticky Note Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sticky notes are a great way to keep reminders and memos. You can keep them organized in your OroCRM sidebar panel.
 
@@ -173,8 +172,8 @@ keep others visible (such as those that are due today). When you don't need the 
 
 .. _doc-widgets-sidebar-task-list:
 
-Task List Widget
-^^^^^^^^^^^^^^^^
+Task List Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This widget displays tasks assigned to you.
 
@@ -191,8 +190,12 @@ The widget's look on the maximized sidebar panel:
 
 For more information about the sidebar, see the :ref:`Sidebar Panel <user-guide-navigation-sidebar-panel>` topic.
 
-Manage Tasks Widget
-~~~~~~~~~~~~~~~~~~~
+Manage Task List Sidebar Widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red. 
+
+You can perform the following actions with the task list sidebar widget:
 
 * **Expand**
 
@@ -212,7 +215,6 @@ Manage Tasks Widget
 
 * **Remove**
 
-
    * Click |IcDelete| **Delete** to remove the widget from a dashboard.
 
 
@@ -221,13 +223,6 @@ Manage Tasks Widget
   * On the minimized sidebar, click |IcTimes| **Close** to collapse the widget.
 
   * On the maximized sidebar, click |IcCaretDown| **Collapse**  to collapse the widget.
-
-
-Task List
-~~~~~~~~~
-
-Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red. 
-
 
 
 .. include:: /img/buttons/include_images.rst

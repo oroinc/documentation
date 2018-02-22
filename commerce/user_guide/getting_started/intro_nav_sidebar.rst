@@ -98,15 +98,15 @@ You can:
 .. hint:: You can add several widgets of the same type and define different settings for them. For example, you can keep notes
     with different content, or email widgets for different folders.
 
-Default OroCommerce Widgets
----------------------------
+Default OroCommerce Sidebar Widgets
+-----------------------------------
 
 This section describes the three sidebar widgets available in OroCommerce out of the box.
 
 .. note:: You can find more information on dashboard widgets in the corresponding :ref:`Dashboard Widgets topic <user-guide--business-intelligence--dashboards>`. 
 
-The Recent Emails Widget
-^^^^^^^^^^^^^^^^^^^^^^^^
+Recent Emails Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
 
@@ -129,8 +129,8 @@ From the widget, you can:
 - Get to the view page of the user from whose mailbox the emails have been sent (if available): Click the user name 
   below the letter (e.g., 6).
 
-Configure the Recent Emails Widget
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Configure the Recent Emails Sidebar Widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Click the |IcSettings| icon to configure the widget. The settings window will emerge:
 
@@ -146,8 +146,8 @@ Click the |IcSettings| icon to configure the widget. The settings window will em
 .. hint:: To make sure you don’t miss some particularly important emails, configure your mailbox to sort them in a specific
     folder, then configure the widget to display this folder and place it at the top of your sidebar panel.
 
-Sticky Note
-^^^^^^^^^^^
+Sticky Note Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sticky notes are a great way to keep reminders and memos. You can keep them organized in your OroCommerce sidebar panel.
 
@@ -158,8 +158,8 @@ Click the |IcSettings| to change the content of a note.
 You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
 
-Task List Widget
-^^^^^^^^^^^^^^^^
+Task List Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This widget displays tasks assigned to you.
 
@@ -173,9 +173,12 @@ The widget's look on the maximized sidebar panel:
 
 For more information about the sidebar, see the :ref:`Sidebar Panel <user-guide-navigation-sidebar-panel>` topic.
 
+Manage Task List Sidebar Widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Manage Tasks Widget
-~~~~~~~~~~~~~~~~~~~
+Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red. 
+
+You can perform the following actions with the task list sidebar widget:
 
 * **Expand**
 
@@ -195,21 +198,13 @@ Manage Tasks Widget
 
 * **Remove**
 
-
    * Click |IcDelete| **Delete** to remove the widget from a dashboard.
-
 
 * **Collapse** 
 
   * On the minimized sidebar, click |IcTimes| **Close** to collapse the widget.
 
   * On the maximized sidebar, click |IcCaretDown| **Collapse**  to collapse the widget.
-
-
-Task List
-~~~~~~~~~
-
-Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red. 
 
 
 .. include:: /user_guide/include_images.rst

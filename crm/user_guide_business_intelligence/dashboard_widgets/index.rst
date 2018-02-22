@@ -91,9 +91,8 @@ Your Oro application comes with a number of out-of-the-box widgets that can simp
        * :ref:`Quick launchpad <user-guide--business-intelligence--widgets--quick-launchpad>`
        * :ref:`Recently accessed contacts <user-guide--business-intelligence--widgets--recently-accessed--contacts>`
        * :ref:`Recently accessed accounts <user-guide--business-intelligence--widgets--recently-accessed-accounts>`
-       * :ref:`Today's calendar <user-guide--business-intelligence--widgets--todays-calendar>`
-       * :ref:`Task List <doc-widgets-sidebar-task-list>`","
-     
+       * :ref:`Today's calendar <user-guide--business-intelligence--widgets--todays-calendar>`"
+            
        * :ref:`Ecommerce statistics <user-guide--business-intelligence--widgets--ecommerce-statistics>`
        * :ref:`New Magento customers <user-guide--business-intelligence--widgets--new-magento-customers>`
        * :ref:`Revenue over time <user-guide--business-intelligence--widgets--revenue-over-time>`
