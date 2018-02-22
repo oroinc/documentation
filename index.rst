@@ -149,14 +149,14 @@ Developer's Guide
    install_upgrade/index
 
    user_guide/index
-   
-   user_guide_business_intelligence/index
-
+      
    user_guide_sales_tools/index
 
    user_guide_marketing_tools/index
 
    user_guide_support_tools/index
+
+   user_guide_business_intelligence/index
 
    admin_guide/index
 
