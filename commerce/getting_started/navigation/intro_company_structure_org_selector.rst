@@ -184,5 +184,5 @@ Conclusion
 Organizations and business units to which users belong will define the data available to them, and will mirror the
 company structure and related rules from the physical world to the software application.
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

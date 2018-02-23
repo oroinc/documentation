@@ -1,9 +1,11 @@
 .. _user-guide--getting-started:
 
-Getting Started with UI
-=======================
+User Guide: Getting Started
+===========================
 
-This section of the guide will provide an introduction to OroCommerce's user interface as well as instructions for setting up your user profile. 
+The Getting Started section introduces you to the OroCommerce user interface and provides instructions for setting up your user profile. 
+
+See the following topics for more information:
 
 .. In the first article you will find an overview of the benefits OroCRM can bring to different stakeholders of the customer-relationships management process, and links to let you know where to look for specifics when you get up to speed with the basics.
 
@@ -13,20 +15,15 @@ This section of the guide will provide an introduction to OroCommerce's user int
     :maxdepth: 1
 
     intro_user_profile
-    intro_company_structure_org_selector
-    intro_navigation
-    intro_nav_shortcuts
-    intro_nav_search
-    intro_nav_pinned_pages
-    intro_nav_user_menu
-    intro_nav_history_fav_viewed
-    intro_nav_sidebar
-    intro_nav_popup
     access_oro/index
     my_oro/index
-    activities/index
-    mass_actions_management_console
+    navigation/index
     records/index
+    activities/index
     import_export/index
+    mass_actions_management_console
+   
+
+    
     
 ..     common_actions/manage_translation

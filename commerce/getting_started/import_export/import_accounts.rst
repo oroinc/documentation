@@ -17,7 +17,7 @@ Importing Accounts
 
       111, "Company A", "admin", "Jerry", "Company"
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 

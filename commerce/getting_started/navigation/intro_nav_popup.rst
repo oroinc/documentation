@@ -31,5 +31,5 @@ buttons and will not disappear until a decision has been made:
 
 .. image:: /user_guide/img/getting_started/navigation/popup/pop_up.png
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

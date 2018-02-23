@@ -55,5 +55,5 @@ You will see a page that looks similar to the search results and that contains a
 
 .. |IcSearch| image:: /user_guide/img/common/buttons/IcSearch.png
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

@@ -37,5 +37,5 @@ Create forms are available.
 
 .. |shortcut_all| image:: /user_guide/img/getting_started/navigation/panel/shortcut_all.png
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

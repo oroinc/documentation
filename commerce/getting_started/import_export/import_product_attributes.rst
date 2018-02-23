@@ -17,7 +17,7 @@ Importing Product Attributes
 
      "field_money","money","label_value","description_value","marketinglist.entity_config.","yes","header_value",12,"no","mimetypes_value"
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 

@@ -17,7 +17,7 @@ Importing Customer Users
 
      1,"Mr","Jerry","John","Coleman","Jr.","04/19/1987","example@email.com",111,"Oro Inc.","ROLE_FRONTEND_BUYER",1,0,1,1
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 

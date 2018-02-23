@@ -61,7 +61,7 @@ You can export the coupon details in the .csv format following the :ref:`Exporti
 Import Coupons
 --------------
 
-.. include:: /user_guide/getting_started/import_export/import_coupons.rst
+.. include:: /getting_started/import_export/import_coupons.rst
    :start-after: start
 
 Related Topics

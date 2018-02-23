@@ -17,7 +17,7 @@ Importing Leads
 
       111, "Gov Mart", "Mr", "Jerry", "Coleman", "new", "Gov Mart", "Primary Address", "@Jerry", "LinkedInID", "Jerry"
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 
