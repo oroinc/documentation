@@ -147,7 +147,7 @@ It is possible to filter your reports by tags. For instance, we can create a rep
 
 1. Navigate to **Reports&Segments > Manage Custom Reports**.
 
-2. Click **Create Report** and fill all the required information in the **General**, **Designer** and **Chart Designer** sections as described in the :ref:`Create a Custom Report <doc-reports-manage>` guide.
+2. Click **Create Report** and fill all the required information in the **General**, **Designer** and **Chart Designer** sections as described in the :ref:`Create a Custom Report <user-guide--business-intelligence--reports--use-custom-reports>` guide.
 
 2. Within the **Filters** section, add the **Field Condition** by dragging it to the right.
 

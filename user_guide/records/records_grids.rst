@@ -4,18 +4,16 @@ Grids
 =====
 
 .. contents:: :local:
-    :depth: 2
+    :depth: 3
 
 
-A grid is an aggregated view of all the entity records. Each row of a grid is one record, and columns represent record fields.
+A ``grid`` is an aggregated view of all the entity records. Each row of a grid is one record, and columns represent record fields.
 
-.. image:: ../img/records/grids/grids_grid.png
 
-.. note:: See a short demo on `how to use grids <https://www.orocrm.com/media-library/how-to-use-grids>`_, or continue reading the step-by-step guidance below.
 
-   .. raw:: html
+.. image:: /user_guide/img/getting_started/records/grids/grids_grid.png
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/H-6vYBSziPY" frameborder="0" allowfullscreen></iframe>
+
 
 .. _doc-grids-open-grid:
 
@@ -38,9 +36,7 @@ There are several ways to get to a grid.
 - Click the grid link on the entity record :ref:`view page <user-guide-ui-components-view-pages>`
   or :ref:`create / edit page <user-guide-ui-components-create-pages>`.
 
-
- .. image:: ../img/data_management/grid/grid_from_view.png
-
+ .. image:: /user_guide/img/getting_started/data_management/grid/grid_from_view.png
 
 .. hint::
 
@@ -53,7 +49,9 @@ There are several ways to get to a grid.
 Grid Page
 ---------
 
-.. image:: ../img/records/grids/grids_grid.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_grid.png
+
 
 
 At the upper-left of the grid page you can see where this page is located in the menu. In the next row you can see a name of the selected grid view. You can open another grid view from the drop-down menu next to the grid view. You rename, delete, etc. the current grid view. For more information about grid views and how to manage them, see :ref:`Manage Grid Views <doc-grids-grid-views>`).
@@ -75,7 +73,7 @@ If you have a lot of records, they may not all fit in one data page. In this cas
 In the pager block, you can see the page that you are currently on, the total number of data pages, and the total number of records in the grid.
 
 
-.. image:: ../img/records/grids/grids_pager.png
+.. image:: /user_guide/img/getting_started/records/grids/grids_pager.png
 
 
 You can navigate between pages using the :guilabel:`<` **Previous Page** and :guilabel:`>` **Next Page** buttons.
@@ -88,10 +86,13 @@ To open a particular page, type its number in the field that displays the curren
 Refresh the Grid
 ^^^^^^^^^^^^^^^^^
 
-To refresh the grid and get the newest details on the displayed records, click the |IcRefresh| :guilabel:`Refresh` button in the upper-right corner of the grid.
+To refresh the grid and get the newest details on the displayed records, click |BRefresh| **Refresh** on the top right of the grid.
 
 
-.. image:: ../img/records/grids/grids_refresh.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_refresh.png
+
+
 
 
 .. _doc-grids-actions-export:
@@ -102,7 +103,8 @@ Export a Grid
 To export a grid, click the :guilabel:`Export Grid` button in the upper-left corner of the grid, and then click **CSV** or **XLXS** to export the grid to the file of the corresponding format (available formats may vary).
 
 
-.. image:: ../img/data_management/grid/export_grid.png
+.. image:: /user_guide/img/getting_started/data_management/grid/export_grid.png
+
 
 .. _doc-grids-actions-adjust:
 
@@ -114,8 +116,7 @@ Adjust a Grid
     The default data grid settings define whether to paginate data in grids, how many items to show per page, and what maximum number of pages can be shown.
     They also define whether to the top of the grid page will be locked so that you will be able to see the page name, data headers, etc. at any moment when you scroll.
 
-    Usually these settings are defined by a system administrator for the whole OroCRM application. If you are a system administrator, see :ref:`Data Grid Settings <doc-configuration-display-settings>`.
-    If you are a regular user, check whether you have access to the personal configuration: in the user menu, look for the **My Configuration** item. If the access is granted to you, see the **Data Grid Settings** for how to configure basic data grid settings.
+    Usually these settings are defined by a system administrator for the whole OroCRM/OroCommerce application. Check whether you have access to the personal configuration: in the user menu, look for the **My Configuration** item. If the access is granted to you, see the **Data Grid Settings** for how to configure basic data grid settings.
 
 .. TODO: Add link to My Configuration
 
@@ -125,10 +126,10 @@ Adjust a Grid
 Set Number of Items Per Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can change the amount of items displayed per page. To do this, click the **View Per Page** drop-down list in the upper-right corner of the grid, and select the required number of items per page.
+You can change the amount of items displayed per page. To do this, click the **View Per Page** drop-down list on the top right of the grid, and select the required number of items per page.
 
 
-.. image:: ../img/records/grids/grids_viewperpage.png
+.. image:: /user_guide/img/getting_started/records/grids/grids_viewperpage.png
 
 
 .. _doc-grids-actions-change-table:
@@ -140,19 +141,20 @@ You can define which columns to show in the grid.
 
 To do this:
 
-1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
+1. Click the |IcSettings| **Grid Settings** icon on the top right of the grid.
 
-   .. image:: ../img/records/grids/grids_configure.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_configure.png
+
 
 2. To show / hide a column in the grid, in the **Grid Settings** menu, select / clear the corresponding check box in the **Show** column.
 
 
    .. hint:: You can use a search field to quickly find the required item.
 
-   .. image:: ../img/records/grids/grids_gridsettingsmenu.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_gridsettingsmenu.png
 
 .. important::
-    Some fields that an entity has may be unavailable as columns of the grid. The list of available fields is defined by the system administrator. If you are a system administrator, see the **Show on Grid** field of the :ref:`Other Entity Field Properties <doc-entity-fields-properties-other>`.
+    Some fields that an entity has may be unavailable as columns of the grid. The list of available fields is defined by the system administrator. If you are a system administrator, see the **Show on Grid** field of the Other Entity Field Properties.
 
 
 .. _doc-grids-actions-change-column-order:
@@ -164,13 +166,16 @@ You can define the order of columns in the grid.
 
 To do this:
 
-1. Click the |IcSettings| **Grid Settings** icon in the upper-right corner of the grid.
+1. Click the |IcSettings| **Grid Settings** icon on the top right of the grid.
 
 2. In the **Grid Settings** menu, click on the **Sort** icon next to name of the column that you want to move, hold the mouse button, and drag the column to the new place.
 
    .. hint:: You can use a search field to quickly find the required item.
 
-.. image:: ../img/data_management/grid/grid_table_settings.png
+
+.. image:: /user_guide/img/getting_started/data_management/grid/grid_table_settings.png
+
+
 
 .. _doc-grids-actions-sort-data:
 
@@ -181,9 +186,13 @@ By default, data in grid is sorted in ascending order by the first column. You c
 
 To sort a field, click the column header. When sorting is ascending, an upward arrow appears next to the column name. When sorting is descending, a downward arrow appears.
 
-.. image:: ../img/records/grids/grids_sorted.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_sorted.png
+
+
 
 .. _doc-grids-actions-filters:
+
 
 Apply Filters
 ^^^^^^^^^^^^^
@@ -193,49 +202,53 @@ You can apply filters to choose specific items to be shown in the grid.
 For example, if there are a lot of contacts, they will not all fit on one page. In order to find the required contact in the
 grid, use the grid filters.
 
-.. note:: See a short demo on `how to use grid filters <https://www.orocrm.com/media-library/how-to-use-filters#play=y8CqbC9IxdY>`_, or continue reading the guidance below.
-
-   .. raw:: html
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/y8CqbC9IxdY" frameborder="0" allowfullscreen></iframe>
 
 .. _doc-grids-actions-filters-showhide:
 
 Show / Hide Filters
 ~~~~~~~~~~~~~~~~~~~
 
-To show / hide filters, click the |IcFilters| **Filters** icon in the upper-right corner of the grid. The filters section will appear.
+To show / hide filters, click the |icFilters| **Filters** icon on the top right of the grid. The filters section will appear.
 
-.. image:: ../img/records/grids/grids_filters.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_filters.png
+
 
 By default, filters are usually hidden. When filters are hidden and some of them are currently applied to the data in grid, you will see the short summary of the applied filters on the top of the grid page.
 
-.. image:: ../img/records/grids/grids_filters_applied-hidden.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_filters_applied-hidden.png
+
 
 Click the summary to show filters.
+
 
 .. _doc-grids-actions-filters-select-to-display:
 
 Select Filters to Display
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-1. Click the |IcFilters| **Filters** icon in the upper-right corner of the grid to show the filters block.
+1. Click the |icFilters| **Filters** icon on the top right of the grid to show the filters block.
 
 2. On the left side of the filters block, click the **Manage Filters** link.
 
 3. In the list, select check boxes in front of the filters you want to display. You can use a search field at the top of the list to quickly find the required filter.
 
-.. image:: ../img/records/grids/grids_filterstodisplay.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_filterstodisplay.png
+
+
 
 .. important::
-     Records may have more fields than you can use to filter data by. The list of fields by which you can filter data is defined by the system administrator. If you are a system administrator, see the **Show Grid Filter** field of the :ref:`Other Entity Field Properties <doc-entity-fields-properties-other>`.
+     Records may have more fields than you can use to filter data by. The list of fields by which you can filter data is defined by the system administrator. If you are a system administrator, see the **Show Grid Filter** field of the Other Entity Field Properties.
+
 
 .. _doc-grids-actions-filters-apply:
 
 Apply a Filter
 ^^^^^^^^^^^^^^
 
-1. Click the |IcFilters| **Filters** icon in the upper-right corner of the grid to show the filters block.
+1. Click the |icFilters| **Filters** icon on the top right of the grid to show the filters block.
 
 2. Choose a filter you want to apply and click it. You will see controls that enable you to select desired values.
 
@@ -247,11 +260,12 @@ Apply a Filter
 
    For text fields that can take any value, you can enter search words (or part of the word) and select from the list in front of it whether values that you select must contain these search phrase at any position or does not contain it at all, must start with it, end with it, etc.
 
-   .. image:: ../img/data_management/grid/grid_filters_define.png
+   .. image:: /user_guide/img/getting_started/data_management/grid/grid_filters_define.png
 
    For conditions like 'Is Any Of' and 'Is Not Any Of,' enter search words separated by comma.
 
-   .. image:: ../img/records/grids/grids_filters_apply1-2.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply1-2.png
+
 
    **Fields that can take limited values**
 
@@ -259,37 +273,41 @@ Apply a Filter
 
    You can click the empty text field to see the list of all available values.
 
-   .. image:: ../img/records/grids/grids_filters_apply3.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply3.png
 
    **Dates and time**
 
    Click the date fields to select the date via the calendar menu. Click the time fields to select a time from the list.
 
-   .. image:: ../img/records/grids/grids_filters_apply2.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2.png
 
    In addition to selecting a strict calendar date, you can use variables that enable you to specify relative values, such as 'today,' 'start of the month,' etc.
 
-   .. image:: ../img/records/grids/grids_filters_apply2-2.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2-2.png
+
 
    Also specify the condition of how to form your desired time range, whether it starts from the day and time that you specified, lays between set dates, etc.
 
-   .. image:: ../img/records/grids/grids_filters_apply2-3.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2-3.png
 
 4. Click :guilabel:`Update`.
 
 .. important::
      If more than one filter are active, only the records that meet requirements of *all* selected filters are displayed.
 
-     .. image:: ../img/data_management/grid/grid_02.png
+     .. image:: /user_guide/img/getting_started/data_management/grid/grid_02.png
 
 .. _doc-grids-actions-reset:
 
 Reset a Grid
 ^^^^^^^^^^^^
 
-To reset the grid (i.e., clear all the filters applied to the grid), click the |IcReset| :guilabel:`Reset` button in the upper-right corner of the grid.
+To reset the grid (i.e., clear all the filters applied to the grid), click |BReset| **Reset** on the top right of the grid.
 
-.. image:: ../img/records/grids/grids_reset.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_reset.png
+
+
 
 .. _doc-grids-grid-views:
 
@@ -310,7 +328,7 @@ Create a Grid View
 
 2. Click the **Options** link next to the grid view name, an then click **Save As**.
 
-   .. image:: ../img/records/grids/grids_gridviewsaveas.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsaveas.png
 
 3. In the **Grid view** dialog box, provide the following information:
 
@@ -320,13 +338,16 @@ Create a Grid View
 
    **Set as default**—Select this check box to make the new grid view a default one. (The default grid view is what you see when you open a grid page.)
 
-   .. image:: ../img/records/grids/grids_gridviewdialog.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewdialog.png
 
 4. Click the :guilabel:`Save` button.
 
 The view will now be available in the drop-down menu next to the grid name.
 
-.. image:: ../img/records/grids/grids_gridviewsave.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsave.png
+
+
 
 .. _doc-grids-actions-grid-views-open:
 
@@ -335,7 +356,10 @@ Open a Grid View
 
 To open a particular grid view, click the arrow next to the current grid view name, and then click the name of the grid view you want to open.
 
-.. image:: ../img/records/grids/grids_gridviewopen.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_gridviewopen.png
+
+
 
 .. _doc-grids-actions-grid-views-set-default:
 
@@ -347,9 +371,12 @@ The default grid view is what you see when you open a grid page.
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Set As Default**.
 
-.. image:: ../img/records/grids/grids_gridviewsaveasdefault.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsaveasdefault.png
+
 
 Alternatively, you can set a grid view as default during its creation (see step 3 of the :ref:`Create a Grid View <doc-grids-actions-grid-views-create>` action description) or renaming (see step 3 of the :ref:`Rename a Grid View <doc-grids-actions-grid-views-rename>` action description).
+
 
 .. _doc-grids-actions-grid-views-rename:
 
@@ -361,7 +388,9 @@ To rename a grid view:
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Rename**.
 
-.. image:: ../img/records/grids/grids_gridviewrename.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_gridviewrename.png
+
 
 3. In the **Grid view** dialog box, provide the following information:
 
@@ -382,9 +411,12 @@ To share a grid view with other users:
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Share with Others**.
 
-.. image:: ../img/records/grids/grids_gridviewshare.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_gridviewshare.png
+
 
 Other users will see your customized grid view in their grid view selector.
+
 
 .. _doc-grids-actions-grid-views-unshare:
 
@@ -409,9 +441,15 @@ To delete a grid view:
 1. Open a grid view.
 2. Click the **Options** link next to the grid view name, and then click **Delete**.
 
-.. image:: ../img/records/grids/grids_gridviewdelete.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_gridviewdelete.png
+
+
 
 3. In the **Delete Confirmation** dialog box, click :guilabel:`Yes, Delete`.
+
+
+
 
 .. _doc-grids-records:
 
@@ -431,9 +469,11 @@ Create a New Records
 
 The most common way of creating a new entity record is to do it directly from the grid.
 
-To create a new record, click the :guilabel:`Create <Entity Name>` action button in the upper-right corner of the grid page.
+To create a new record, click **Create <Entity Name>** action button on the top right of the grid page.
 
-.. image:: ../img/records/grids/grids_createnewrecord.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_createnewrecord.png
+
 
 .. _doc-grids-actions-records-view:
 
@@ -442,17 +482,24 @@ View a Record
 
 To view a record, find it in the grid, click the ellipsis menu at the right end of the corresponding row, and the click the |IcView| **View** icon. The record view page will open.
 
-.. image:: ../img/records/grids/grids_viewrecord.png
+
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_viewrecord.png
+
 
 .. note::
    Sometimes, instead of the ellipsis menu, you will see only the action icons at the end of the record row. This happens when you are enabled to perform only one or two actions with a record, and hiding the corresponding icons under the ellipsis menu will not simplify the interface.
 
-Alternatively, you can click the corresponding row itself (but make sure you do not click the |IcPencil| **Edit Inline** icon).
+Alternatively, you can click the corresponding row itself (but make sure you do not click the |IcEditInline| **Edit Inline** icon).
+
+
+
 
 .. _doc-grids-actions-records-edit:
 
 Edit a Record
 ^^^^^^^^^^^^^
+
 
 .. _doc-grids-actions-records-edit-inline:
 
@@ -461,22 +508,22 @@ Inline Editing
 
 .. important:: Inline editing—ability to edit record field values directly from the grid—is available only for the limited set of fields. This set differs for different entities and is not configurable.
 
-1. Point to the value in the grid that you want to edit. If the |IcPencil| **Edit Inline** icon appears next to it, you can edit this values in this column from the grid.
-2. Click the |IcPencil| **Edit Inline** icon.
+1. Point to the value in the grid that you want to edit. If the |IcEditInline| **Edit Inline** icon appears next to it, you can edit this values in this column from the grid.
+2. Click the |IcEditInline| **Edit Inline** icon.
 
    Alternatively, click the value itself twice.
 
-   .. image:: ../img/records/grids/grids_inlineedit.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_inlineedit.png
 
 3. Modify the value as required.
 
    Inline editors can be of different types. The simplest inline editor is a plain text field, where you can type the required value.
 
-   .. image:: ../img/records/grids/grids_inlineeditor.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor.png
 
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
-   .. image:: ../img/records/grids/grids_inlineeditor2.png
+   .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor2.png
 
 4. Click the |IcSaveChanges| **Save Changes** icon to save a new value.
 
@@ -490,25 +537,29 @@ Open the Edit Page
 
 To open a record edit page, find the record in the grid, click the ellipsis menu at the right end of the corresponding row, and the click the |IcEdit| **Edit** icon.
 
-.. image:: ../img/records/grids/grids_editrecord.png
+
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_editrecord.png
+
+
 
 .. _doc-grids-actions-records-delete:
 
 Delete a Record
 ^^^^^^^^^^^^^^^
 
+
 .. _doc-grids-actions-records-delete-single:
+
+Delete a Single Record
+~~~~~~~~~~~~~~~~~~~~~~
 
 To delete a record, find the record in the grid, click the ellipsis menu at the right end of the corresponding row, and the click the |IcDelete| **Delete** icon.
 
-.. image:: ../img/records/grids/grids_deleterecord.png
 
-Mass Actions with Records
-^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: /user_guide/img/getting_started/records/grids/grids_deleterecord.png
 
-.. include:: /user_guide/records/mass_actions.rst
-   :start-after: begin_body
-   :end-before: finish_body
+
 
 .. _doc-grids-actions-records-delete-multiple:
 
@@ -521,14 +572,17 @@ To delete several records:
 
 2. Click the ellipsis menu at the right end of the grid header row, and the click the |IcDelete| **Delete** icon.
 
-.. image:: ../img/records/grids/grids_delete_bulk.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_delete_bulk.png
+
+
 
 .. _doc-grids-actions-records-merge:
 
 Merge Records
-~~~~~~~~~~~~~
+^^^^^^^^^^^^^
 
-.. important:: Currently, merge can only be done for  :ref:`accounts <user-guide-accounts>`.
+.. important:: Currently, merge can only be done for accounts.
 
 To merge records:
 
@@ -536,17 +590,9 @@ To merge records:
 
 2. Click the ellipsis menu at the right end of the grid header row, and the click the |IcMerge| **Merge** icon.
 
-.. image:: ../img/records/grids/grids_merge.png
+
+.. image:: /user_guide/img/getting_started/records/grids/grids_merge.png
 
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-   
-.. |IcDiscardChanges| image:: ../../img/buttons/IcDiscardChanges.png
-   :align: middle
-
-.. |IcSaveChanges| image:: ../../img/buttons/IcSaveChanges.png
-   :align: middle
-
-.. |IcFilters| image:: ../../img/buttons/IcFilters.png
-   :align: middle

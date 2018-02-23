@@ -318,3 +318,120 @@ Images
 .. |IcMinus| raw:: html
 
    <i class="fa fa-minus fa-lg" aria-hidden="true"></i>
+
+.. |IcSendEmail| raw:: html
+
+   <i class="fa fa-envelope fa-lg"></i>
+
+.. |IcStop| raw:: html
+
+   <i class="fa fa-stop fa-lg"></i>
+
+.. |IcStart| raw:: html
+
+   <i class="fa fa-play fa-lg"></i>
+
+.. |IcCall| raw:: html
+
+   <i class="fa fa-phone-square fa-lg"></i>
+
+.. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
+   :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png
+   :align: middle
+   :width: 11px
+
+.. |IcPassReset| image:: /user_guide/img/getting_started/buttons/IcPassReset.png
+   :align: middle
+
+.. |IcDisable| image:: /user_guide/img/getting_started/buttons/IcDisable.png
+   :align: middle
+
+.. |IcShow| image:: /user_guide/img/getting_started/buttons/IcShow.png
+   :align: middle
+
+.. |IcHide| image:: /user_guide/img/getting_started/buttons/IcHide.png
+   :align: middle
+
+.. |IcPosition| image:: /user_guide/img/getting_started/buttons/IcPosition.png
+   :align: middle
+
+.. |IcRest| image:: /user_guide/img/getting_started/buttons/IcRest.png
+   :align: middle
+
+.. |BRefresh| image:: /user_guide/img/getting_started/buttons/BRefresh.png
+   :align: middle
+
+.. |BReset| image:: /user_guide/img/getting_started/buttons/BReset.png
+   :align: middle
+
+.. |ScrollPage| image:: /user_guide/img/getting_started/buttons/scroll_page.png
+   :align: middle
+
+.. |TagsfGrid| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid.png
+   :align: middle
+
+.. |TagsfGrid1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid_1.png
+   :align: middle
+
+.. |TagsfView| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view.png
+   :align: middle
+
+.. |TagsfView1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_1.png
+   :align: middle
+
+.. |TagsfView2| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_2.png
+   :align: middle
+
+.. |IcDiscardChanges| image:: /user_guide/img/getting_started/buttons/IcDiscardChanges.png
+   :align: middle
+
+.. |IcSaveChanges| image:: /user_guide/img/getting_started/buttons/IcSaveChanges.png
+   :align: middle
+
+.. |IcFilters| image:: /user_guide/img/getting_started/buttons/IcFilters.png
+   :align: middle
+
+.. |IcMoveW| image:: /user_guide/img/getting_started/buttons/IcMoveW.png
+   :align: middle
+
+.. |IcIncoming| image:: /user_guide/img/getting_started/buttons/IcIncoming.png
+   :align: middle
+
+.. |IcOutgoing| image:: /user_guide/img/getting_started/buttons/IcOutgoing.png
+   :align: middle
+
+.. |IcConfigure| image:: /user_guide/img/getting_started/buttons/IcConfigure.png
+   :align: middle
+
+.. |IcShoppingLists| raw:: html
+
+   <i class="fa fa-clipboard" aria-hidden="true"></i>
+
+.. |IcCheckout| raw:: html
+
+   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+.. |IcSub| image:: /user_guide/img/getting_started/buttons/IcSub.png
+   :align: middle
+
+.. |IcUns| image:: /user_guide/img/getting_started/buttons/IcUns.png
+   :align: middle
+
+.. |IcRemove| image:: /user_guide/img/getting_started/buttons/IcRemove.png
+   :align: middle
+
+.. |UndoRem| image:: /user_guide/img/getting_started/buttons/UndoRem.png
+   :align: middle
+
+.. |BSchedule| image:: /user_guide/img/getting_started/buttons/BSchedule.png
+   :align: middle
+
+.. |IcCross| image:: /user_guide/img/getting_started/buttons/IcCross.png
+   :align: middle
+
+.. |HObutton| image:: /user_guide/img/getting_started/buttons/hangouts.png
+   :align: middle
+
+.. |InstallPack| image:: /admin_guide/img/extension/install_package.png
+   :align: middle
+

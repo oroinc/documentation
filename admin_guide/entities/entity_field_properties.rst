@@ -36,7 +36,7 @@ General Information Section
     a single entity. The field will appear in the system as soon as it has been added and no :ref:`schema update <schema update>` is required. 
   
     .. important:: 
-      Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, :ref:`report <user-guide-reports>` and :ref:`chart <doc-reports-actions-create-chart>` generation, data audit, creation of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
+      Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, :ref:`report <user-guide-reports>` and :ref:`chart <user-guide--business-intelligence--reports--use-custom-reports>` generation, data audit, creation of :ref:`segments <user-guide-filters-segments>` and :ref:`relations <user-guide-entity-management-relation>`.
   
       Serialized fields cannot be used for files, multi-selects or option sets.
   

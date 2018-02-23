@@ -15,11 +15,9 @@ to its View page.
 
 For example, this is a View page of a contact.
 
-|
 
-.. image:: ../img/data_management/view/view_01.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_01.png
 
-|
 
 On this View page, you can see all the details of the record and its location on the map. You can use the links and 
 action buttons as described in this article.
@@ -49,20 +47,15 @@ after another, so you can also scroll down to find information.
 For example, this is a View page of an opportunity with **General Information**, **Activities** and
 **Additional Information** sections:
 
-|
 
-.. image:: ../img/data_management/view/view_page.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_page.png
 
-|
 
- Click the section name in order to move it to the top of the page:
-
-      |
+Click the section name in order to move it to the top of the page:
 
   
-.. image:: ../img/data_management/view/view_page_tabs.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_page_tabs.png
 
-|
 
 .. _user-guide-ui-components-view-page-actions:
 
@@ -81,29 +74,23 @@ These include the ability to share a record with other users (if applicable), go
 and write an email).
 
   
-|
 
-.. image:: ../img/data_management/view/view_edit.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_edit.png
 
-|
 
 
 If there are four or less actions available for a record, a separate button is created for each of them.
 
-|
 
-.. image:: ../img/data_management/view/view_action_buttons_1.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_action_buttons_1.png
 
-|
 
 If there are more than four actions available for a record, they will be collected under the 
 **{Entity Name} Actions** drop-down.
 
-|
 
-.. image:: ../img/data_management/view/view_action_buttons_2.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_action_buttons_2.png
 
-|
 
 Inline Editing
 ~~~~~~~~~~~~~~
@@ -112,47 +99,38 @@ Inline editing is available for a particular number of entities, such as opportu
 
 To be able to perform inline editing from a record's view page:
 
-1. Point to the value you want to edit. If the |IcPencil| **Edit Inline** icon appears next to it, inline editing is available for the value.
-2. Click the |IcPencil| **Edit Inline** icon. Alternatively, double click on the value itself.
+1. Point to the value you want to edit. If the |IcEditInline| **Edit Inline** icon appears next to it, inline editing is available for the value.
+2. Click the |IcEditInline| **Edit Inline** icon. Alternatively, double click on the value itself.
 
-|
 
-.. image:: ../img/data_management/view/inline_editing_1.png
+.. image:: /user_guide/img/getting_started/data_management/view/inline_editing_1.png
 
-|
 
 3. Modify the value as required.
 
    Inline editors can be of different types. The simplest inline editor is a plain text field, where you can type the required value.
 
-|
 
-.. image:: ../img/data_management/view/inline_editing_2.png
+   .. image:: /user_guide/img/getting_started/data_management/view/inline_editing_2.png
 
-|
 
-   In some cases, you will need to select the value from a dropdown.
+   In some cases, you will need to select the value from a drop-down.
 
-|
 
-.. image:: ../img/data_management/view/inline_editing_3.png
+   .. image:: /user_guide/img/getting_started/data_management/view/inline_editing_3.png
 
-|
 
 4. Click the |IcSaveChanges| **Save Changes** icon to save a new value, or click the |IcDiscardChanges| **Discard Changes** icon to return to the old value.
 
 Review the Record History
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If the user is allowed to do this (i.e., the :ref:`Data Audit capabilty <admin-capabilities-data-audit>` has been
-enabled for at least one of the user's :ref:`roles <user-guide-user-management-permissions>`, there will be a 
+If the user is allowed to do this (i.e., the Data Audit capability has been
+enabled for at least one of the user's roles, there will be a **Change History** link at the top of the page.
 
 
-|
+.. image:: /user_guide/img/getting_started/data_management/view/view_history.png
 
-.. image:: ../img/data_management/view/view_history.png
-
-|
 
 
 Use Contact Details on a View Page
@@ -181,11 +159,9 @@ record with a specific user (or group of users), whose assistance is needed.
 To share a record, click the :guilabel:`Share`, and enter the name of the user to share the record with in the 
 **Share with** field or click the list icon to select such user(s).
 
-|
 
-.. image:: ../img/data_management/view/view_share_01.png
+.. image:: /user_guide/img/getting_started/data_management/view/view_share_01.png
 
-|
 
 The selected users will gain access to the record.
 
@@ -193,9 +169,7 @@ Sometimes, there also appears a need to exchange information between organizatio
 countries, and sales reps of one office want to share the information to the second office.
 Such sharing is possible, but only from a system organization.
 
-(This means that a user with system-wide access should log-in to the 
-:ref:`System organization <user-ee-multi-org-system>`), access this record and share it with users in other 
-organizations.
+.. This means that a user with system-wide access should log-in to the :ref:`System organization <user-ee-multi-org-system>`), access this record and share it with users in other organizations.
 
 Get to Other Pages
 ^^^^^^^^^^^^^^^^^^
@@ -204,35 +178,21 @@ Get to Other Pages
   in the top right corner of the page:  
 
  
-|
 
-.. image:: ../img/data_management/view/view_paginator.png
-
-|  
+.. image:: /user_guide/img/getting_started/data_management/view/view_paginator.png
 
 - If there is a related entity, its identifier will be a link to the View page of this entity. 
 
 - You can get to the corresponding grid of records with the link in the top left corner of the page:
 
-|
 
-.. image:: ../img/data_management/grid/grid_from_view.png
+.. image:: /user_guide/img/getting_started/data_management/grid/grid_from_view.png
 
-|
 
 .. hint::
 
     If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, this 
     grid will be look in the same as it did when you left it for the View page (the same filters and order applied). 
 
-.. |IcView| image:: ../../img/buttons/IcView.png
-   :align: middle
-   
-.. |IcPencil| image:: ../../img/buttons/IcEditInline.png
-	:align: middle
-
-.. |IcDiscardChanges| image:: ../../img/buttons/IcDiscardChanges.png
-   :align: middle
-
-.. |IcSaveChanges| image:: ../../img/buttons/IcSaveChanges.png
-   :align: middle
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

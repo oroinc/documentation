@@ -6,7 +6,7 @@ Default Workflows with Magento Entities
 =======================================
 
 To provide a consistent and customer-oriented approach, you can 
-:ref:`define a specific workflow <user-guide-workflow-management-basics>` within which the actions can be
+:ref:`define a specific workflow <doc--workflows>` within which the actions can be
 performed for each shopping cart or order. The following two workflows are pre-implemented in OroCRM
 for Magento-based shops out-of-the-box:
 

@@ -507,10 +507,6 @@ Available options depend on the current status of the task. The following table 
 | Closed         | Click **Reopen** to actualize the task again.                                                                                                                                                        | Open        |
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
-For status descriptions, see :ref:`Task Statuses <doc-activities-tasks-statuses>`.
-
-For information on using workflows, see the :ref:`Following a Workflow <user-guide-workflow-management-basics>` guide.
-
 Task Flow Transitions for the Task
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -528,5 +524,5 @@ For a task activity on the related entity view page, you can use the transition 
 .. image:: /user_guide/img/workflows/task_flow/related_activity_taskflow.png
 
 
-.. include:: ../../img/buttons/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
