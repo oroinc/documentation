@@ -26,7 +26,11 @@ This guide will provide you with the overview of all capabilities, tools, and fu
 
 It is divided into sections that gradually explain the system from the very basics (e.g. setting up a user profile and generic 
 data management tasks) to more advanced CRM concepts (e.g. the contact and account management). The more 
-specialized areas (handling sales, marketing, and support-specific duties, etc.) are described in the following relevant guides: :ref:`User Guide: Sales <user-guide-sales-index>`, :ref:`User Guide: Marketing <user-guide-marketing>` and :ref:`User Guide: Support <user-guide-support-index>`.
+specialized areas (handling sales, marketing, and support-specific duties, etc.) are described in the following relevant guides: 
+
+* :ref:`User Guide: Sales <user-guide-sales-index>`
+* :ref:`User Guide: Marketing <user-guide-marketing>`
+* :ref:`User Guide: Support <user-guide-support-index>`
 
 
 The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you find out which sections of this guide are most relevant for your work duties.

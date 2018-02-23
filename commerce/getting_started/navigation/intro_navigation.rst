@@ -92,5 +92,5 @@ as deleting records.
 To see examples of flash messages and dialog windows, please read the
 :ref:`Flash Notifications and Dialog Windows <user-guide-intro-popups>` guide.
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
    :start-after: begin

@@ -60,7 +60,7 @@ Price List Management
    :end-before: stop_pricelist_management
 
 Price Calculation on the Storefront
-------------------------------------
+-----------------------------------
 
 .. include:: /user_guide/pricing/calculation.rst
    :start-after: begin

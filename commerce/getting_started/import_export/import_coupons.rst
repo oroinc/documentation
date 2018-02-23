@@ -17,7 +17,7 @@ Importing Coupons
 
      123,1,1,1,"01-12-2018","Discounts","Owner Name"
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 

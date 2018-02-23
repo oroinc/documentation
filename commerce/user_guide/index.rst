@@ -109,8 +109,7 @@ Table of Contents
    :titlesonly:
    :maxdepth: 1
 
-   getting_started/index
-
+   
    products/index
 
    master_catalog/index

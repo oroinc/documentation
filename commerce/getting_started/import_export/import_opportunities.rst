@@ -17,7 +17,7 @@ Importing Opportunities
 
       111, "Henry Vining", "15-12-2018", "high", "2000", "USD", "1500", "USD", "won", "Jerry", "Coleman"
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 

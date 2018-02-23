@@ -48,5 +48,5 @@ Unpin a Page
 To unpin a page, click the cross next to its name in the pinbar or the pin icon of a pinned page—it will turn grey 
 again and the page will be unpinned.
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

@@ -28,7 +28,7 @@ Exporting Product Information
 
       "sku_001","MSRP/MAP","item","USD","20"
 
-.. include:: /user_guide/getting_started/import_export/export.rst
+.. include:: /getting_started/import_export/export.rst
    :start-after: start
    :end-before: stop
 

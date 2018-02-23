@@ -47,5 +47,5 @@ Most Viewed
 This section displays links to the most frequently used pages. Every time you visit a page, OroCommerce recalculates the
 statistics and updates the list.
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

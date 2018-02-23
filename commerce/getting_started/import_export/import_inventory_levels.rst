@@ -19,7 +19,7 @@ Importing Inventory Levels
    * Inventory status should be *In Stock*, *Out of Stock*, or *Discontinued*.
    * The warehouse and unit should be created prior to the inventory levels import.
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 

@@ -3,6 +3,6 @@
 Import Products
 ===============
 
-.. include:: /user_guide/getting_started/import_export/import_products.rst
+.. include:: /getting_started/import_export/import_products.rst
    :start-after: start
 

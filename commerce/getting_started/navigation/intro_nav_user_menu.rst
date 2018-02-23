@@ -10,5 +10,5 @@ access your user profile, calendar, mailbox, and task list. It is also used to l
 
 See :ref:`My Oro (User Menu) <user-guide-intro-log-in-edit-profile>` for detailed information on the available actions and information.
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
     :start-after: begin

@@ -210,5 +210,5 @@ You can perform the following actions with the task list sidebar widget:
 .. include:: /user_guide/include_images.rst
    :start-after: begin
 
-.. include:: section_toc.rst
+.. include:: /getting_started/section_toc.rst
    :start-after: begin

@@ -17,7 +17,7 @@ Exporting Prices From the Price List
 
       "sku_001", 42, "kg", 100, "USD"
 
-.. include:: /user_guide/getting_started/import_export/export.rst
+.. include:: /getting_started/import_export/export.rst
    :start-after: start
    :end-before: stop
 

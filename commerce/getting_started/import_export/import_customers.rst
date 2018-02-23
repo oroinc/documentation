@@ -17,7 +17,7 @@ Importing Customers
 
       1111, "Company A", 111, "All Customers", 111, "FOREIGN_GOVERNMENTS", 1111, "VAT ID", "net 60"
 
-.. include:: /user_guide/getting_started/import_export/import.rst
+.. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
 
