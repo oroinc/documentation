@@ -3,11 +3,7 @@
 Navigation and Search
 =====================
 
-This section of the guide will provide an introduction to OroCRM's user interface as well as instructions for setting up 
-your user profile. In the first article you will find an overview of the benefits OroCRM can bring to different 
-stakeholders of the customer-relationships management process, and links to let you know where to look for specifics 
-when you get up to speed with the basics.
-
+The Navigation and Search section illustrates the following topics:
 
 .. toctree::
     :maxdepth: 1
