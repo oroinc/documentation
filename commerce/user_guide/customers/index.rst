@@ -60,6 +60,13 @@ Delegate Account Management to a Customer User
 .. include:: /user_guide/customers/delegate.rst
    :start-after: begin
 
+Manage Address Books
+--------------------
+
+.. include:: /user_guide/customers/customers/manage_address_book.rst
+   :start-after: begin
+   :end-before: finish
+
 .. include:: /user_guide/include_images.rst
    :start-after: begin
 

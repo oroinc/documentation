@@ -260,6 +260,8 @@ This section provides links to the online documentation for the latest OroCommer
 
        user_guide/index
 
+       business_intelligence/index
+
        seo_config_guide/index
 
        frontstore_guide/index

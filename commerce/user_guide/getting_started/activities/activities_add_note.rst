@@ -3,34 +3,34 @@
 Notes
 =====
 
-.. TODO rework legacy: 0% done. Quote: This is a text box that you can fill with any text.
+In the Oro application, you can create quick notes to store details about a customer or an account. For instance, if a customer frequently returns products, a note on the case would advise other customer service representatives to review any cases from this customer thoroughly.
 
-Add a Note
-----------
+You can see a short demo on `how to add notes <https://www.orocrm.com/media-library/add-notes-orocrm>`_ or keep reading the guidance below.
 
-To save additional information about the record in OroCRM and OroCommerce, use the **Add Note** action.
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/TO_2SGV5KaU" frameborder="0" allowfullscreen></iframe>
+
+
+How to Add a Note
+-----------------
 
 .. important::
-    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator.
+    By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 
-    .. add link to create entity when moved
+To add a note to a record:
 
-1. Click on the **More Actions** menu on the top right of the page and then click **Add Note**.
+1. Click **Add Note** under the **More Actions** menu on the top right on the page of the selected record.
 
-2. The **Add Note** dailog appears. Formatting tools are available at the top menu.
+   .. image:: /user_guide/img/getting_started/activities/ AddNotetoRecord.png
 
-For example, we want to add a note to the contact Jeffrey Maynard to say that he has changed the company and is eager 
-to keep working with us at his new company.
+2. In the **Add Note** dialog, provide the text for your note. Formatting tools are available at the top menu.
+  
+   .. image:: /user_guide/img/getting_started/activities/add_note_ex.png
 
-.. image:: /user_guide/img/getting_started/activities/add_note_ex.png  
+3. Click **Save** to save and add the note to the record.
 
-
-4. Click the :guilabel:`Save` button and the note will be saved.
-
-All the notes made for a record are displayed and can be reached from the **Record Activities** section on the
-View page:
+All the notes added to a record are displayed and can be reached from the **Activity** section of the record pages:
 
 .. image:: /user_guide/img/getting_started/activities/add_note_view.png
 
-
-To see the details, click on the note start or the :guilabel:`+` to the left from it.

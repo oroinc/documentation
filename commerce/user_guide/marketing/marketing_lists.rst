@@ -77,7 +77,7 @@ To create a new Marketing List:
   
 #. In the *Filters* section, define the Activity and/or Data audit and/or Field Condition and/or Condition Group filters that will be used to select the records for the list.
 
-   More information about the ways to define filters is provided in the :ref:`Filters Management <user-guide-getting-started-filters>` guide.
+   More information about the ways to define filters is provided in the :ref:`Filters Management <user-guide--business-intelligence--filters-management>` guide.
 
    The contacts that match the filter condition will be automatically subscribed to the Mailing list. You can later unsubscribe a contact or remove them from the mailing list.
 

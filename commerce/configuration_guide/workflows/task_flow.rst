@@ -21,8 +21,6 @@ Available options depend on the current status of the task. The following table 
 | Closed         | Click **Reopen** to actualize the task again.                                                                                                                                                        | Open        |
 +----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 
-For status descriptions, see :ref:`Task Statuses <doc-activities-tasks-statuses>`.
-
 For information on workflows, see the :ref:`Workflow Management <doc--system--workflow-management>` guide.
 
 Follow the Workflow

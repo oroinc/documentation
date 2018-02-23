@@ -1,5 +1,5 @@
-User Guide
-==========
+User Guide: Commerce
+====================
 
 .. _user-guide:
 .. _user-guide--products--master-catalog:
@@ -147,8 +147,6 @@ Table of Contents
 
    taxes/index
 
-   business_intelligence/index
-
    glossary
 
 ..   install/index
@@ -259,7 +257,7 @@ Table of Contents
     * Quotes & Proposals
       * RFQs
         * RFQs in general + notifications
-        * Default RFQ workflows (management console + store frontend)
+        * Default RFQ workflows (management console + storefront)
         * Customize RFQ submission form
         * Processing RFQs, creating quotes (proposals)
           * Working with line items, etc.
@@ -270,7 +268,7 @@ Table of Contents
     * Order Management
       * Editing an order
       * Default order workflow (management console)
-      * Default order workflow (store frontend)
+      * Default order workflow (storefront)
       * Create an order
       * Customizing the checkout experience
         * Address books and permissions

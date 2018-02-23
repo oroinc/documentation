@@ -40,3 +40,5 @@ You can import the bulk details of updated or processed customer information in 
    create
 
    organize
+
+   manage_address_book

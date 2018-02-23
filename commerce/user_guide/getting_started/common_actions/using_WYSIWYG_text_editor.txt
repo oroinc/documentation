@@ -1,2 +1,0 @@
-WYSIWYG Editor
---------------

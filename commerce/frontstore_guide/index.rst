@@ -3,7 +3,6 @@
 Storefront Guide
 ================
 
-
 The following guide is intended as an introduction to the OroCommerce default storefront. It illustrates how to navigate, browse and interact with the store.
 
 For a quick orientation, see how to :ref:`Register and Sign in <frontstore-guide--getting-started>` and check out the :ref:`Navigation Basics <frontstore-guide--navigation>`.

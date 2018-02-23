@@ -110,7 +110,7 @@ these procedures. Potentially big contracts require specific negotiations before
 In Oro applications, to handle these complex procedures you can use workflows. Workflow defines what transitions (changes of
 properties) are available to the system users at each stage.
 
-You can find more details about workflows in the :ref:`Workflows <user-guide-workflow-management-basics>` guide.
+You can find more details about workflows in the :ref:`Workflows <user-guide--system--workflow-management>` guide.
 
 Integrate with Third-Party Systems
 ----------------------------------
@@ -149,7 +149,8 @@ Step-by-step instructions for the import and export actions are provided in the
    data_management_view
    data_management_form
    data_management_tags
-   data_management_workflows
+
+* :ref:`Workflow Management <user-guide--system--workflow-management>`
 
 
 

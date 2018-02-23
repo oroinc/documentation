@@ -36,11 +36,9 @@ The report can be found by navigating to **System>Data Audit** in the main menu,
 The link to a specific record's history of changes is available in the top right corner of the record’s
 :ref:`view page <user-guide-ui-components-view-pages>`.
 
-|
 
 .. image:: ../../user_guide/img/data_management/view/view_history.png
 
-|
 
 Data audit is usually used by system administrators but may also be used by managers in order to see how details
 of different records were changed, as well as by whom.
@@ -65,11 +63,8 @@ With OroCRM's :ref:`email campaigns <user-guide-email-campaigns>`, a user can se
 to multiple users. This capability enables a user to launch a campaign manually. That is, to start
 :ref:`sending emails <user-guide-email-campaigns-send>` specified by the campaign which is not scheduled to send emails at a specific time (campaigns that has *Manual* selected for **Schedule**)).
 
-|
 
 .. image:: ../img/roles/email_campaign.png
-
-|
 
 
 .. note:: This capability does not affect the user's ability to define and edit campaign settings and create templates.
@@ -127,15 +122,10 @@ Export Grid View
 
 This capability enables a user to :ref:`export the grid views <doc-grids-actions-export>` that they have configured.
 
-|
-
 .. image:: ../img/roles/export_grid.png
-
-|
 
 
 This is particularly useful for data analysts.
-
 
 
 .. _admin-capabilities-outlook:
@@ -153,11 +143,7 @@ contacts, opportunities, and cases, as well as create leads, opportunities, and 
 from the Outlook sidebar.
 
 
-|
-
 .. image:: ../img/roles/outlook_add-in.png
-
-|
 
 
 This is a general capability that can improve the user experience for all Enterprise users who are using both OroCRM and Outlook.
@@ -184,7 +170,6 @@ non-hierarchical keywords or phrases assigned to records. They provide additiona
 are visible to all the system users.
 
 Tags can be successfully utilized by all users.
-
 
 
 Manage Menus
@@ -216,7 +201,6 @@ Users can modify menus at three different levels:
    To made changes only for a specific organization, make changes at the organization level.
 
 
-
 .. Select the Assignee of the Integration
 .. ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -234,15 +218,10 @@ This capability enables a user to review the SQL request that is sent to the sys
 Usually, this capability is only granted to system administrators so they can check if a report has been developed correctly.
 The **Show SQL Query** link will appear below the report.
 
-|
 
 .. image:: ../img/configuration/sql_show.png
 
-|
-
-
 .. hint:: This capability must be also enabled in the report settings. For this, in the main menu, navigate to **System Configuration>Display Settings>Report settings**, and select the **Display SQL In Reports And Segments** check box.
-
 
 
 Access Personal Configuration
@@ -251,11 +230,8 @@ Access Personal Configuration
 This capability enables a user to access the :ref:`personal configuration page <doc-my-user-configuration>` where they can localize the application, change the display settings, and otherwise modify how the application will appear to themselves. Changes made by a user on the personal configuration page do not affect other users.
 
 
-|
-
 .. image:: ../img/roles/my_configuration.png
 
-|
 
 .. _admin-capabilities-mailchimp:
 
@@ -284,11 +260,7 @@ by system administrators. See :ref:`User Management <user-management-users>` for
 
     This capability does not influence a user's ability to edit their own password from the **My User** page (see step 5 of the :ref:`Edit Your Profile <doc-my-user-actions-edit>` action description.
 
-|
-
 .. image:: ../img/roles/manage_passwords.png
-
-|
 
 
 .. _admin-capabilities-share-grid:
@@ -298,24 +270,17 @@ Share Data View
 
 This capability enables a user to :ref:`share and unshare the grid views <doc-grids-actions-grid-views-share>` that they have configured.
 
-|
-
 .. image:: ../img/roles/grid_share.png
-
-|
 
 
 .. image:: ../img/roles/grid_unshare.png
 
-|
 
 This is particularly useful for team-leads and heads of departments who want to modify and share grids with their subordinates.
 
 
-
 Calendar
 --------
-
 
 Assign Calendar Events
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -326,7 +291,6 @@ For more information, see the :ref:`Manage Calendar Events <doc-activities-event
 
 
 .. _admin-capabilities-org-calendar-events:
-
 
 Manage Organization Calendars (and Their Events)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -413,14 +377,9 @@ This capability enables users to export entity records as described in the :ref:
 
 The :guilabel:`Export` button appears in the upper-right corner of the grid page.
 
-|
-
 .. image:: ../img/roles/export_data.png
 
-|
-
 Export is a general productivity tool that is usually enabled for most users.
-
 
 .. _admin-capabilities-import-entities:
 
@@ -431,11 +390,7 @@ This capability enables users to import records from a file to OroCRM as describ
 
 The :guilabel:`Import File` button appears in the upper-right corner of the grid page.
 
-|
-
 .. image:: ../img/roles/import_data.png
-
-|
 
 This is necessary for users who need to import large sets of data into the system. For example, these may include sales
 representatives or employees responsible for lead development.

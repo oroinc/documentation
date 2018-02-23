@@ -28,11 +28,8 @@ Create a Role
    
    - **Organization**—Select the organization for user's of which this role will be applicable. If you want this role to be applicable for all organizations defined in the system, do not specify any organization. In this case the field value becomes **System-wide.** (If there is only a single organization defined in the system or you do not have global access rights, there will be no option for selecting an organization.)
 
-|
-
 .. image:: ../img/access_roles_management/role_create2.png
 
-|
 
 5. Click **Entities**. In this section define which 'action on entity' permissions and which capabilities you want to include in the role. For more information about the 'action on entity' permissions and capabilities, see the `Roles Management <./access-management-roles>`__ guide.
  

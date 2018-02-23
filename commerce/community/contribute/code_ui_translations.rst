@@ -25,13 +25,13 @@ To contribute to OroCommerce translation into your native language:
 Join the Translation Team
 -------------------------
 
-#. Sign into your Crowdin account or sign up for a new user account if you don not have one yet:
+#. Sign into your Crowdin account or sign up for a new user account if you do not have one yet:
 
    a) Open `Crowdin <https://crowdin.com/join>`_ in your browser.
 
    #) Sign in using your github or social network account (Facebook, Google+, Twitter).
 
-      Alternatively, create a new Crowdin account: enter your email, user name, password and password confirmation, and click **Create account**. Follow the link in the confirmation email to activate you account.
+      Alternatively, create a new Crowdin account: enter your email, user name, password, and password confirmation, and click **Create account**. Follow the link in the confirmation email to activate you account.
 
 #. Open `OroCommerce project <https://crowdin.com/project/orocommerce>`_.
 
@@ -70,14 +70,13 @@ When the translation is approved, it is marked with a green check mark and moved
 Update Translation in Oro Application
 -------------------------------------
 
-.. TODO: OroCommerce UI has changed. Confirm th correct process for translation sync with crowdin.
-
 1. Navigate to the **System > Localization > Languages** in the main menu.
 
-2. If your target language is not listed, click **Add language**, in the **Add Language** dialog that opens, select the target language from the list and click **Add language**. This will trigger the download of the translation files from the Crowdin project into the Oro application.
+2. If your target language is not listed, click **Add Language** at the top right corner. Select the target language from the available list in the popup dialog. Click **Add Language** in the bottom right of the dialog.
+
+3. Import the system elements translation from the `Crowdin <https://crowdin.com/join>`_ project by clicking the |IcCloudDownload| icon at the end of the row and then **Install** in the popup form. The import is available if the status in the **Updates** column is set to **Can be installed** signifying that the corresponding translation has been provided on the Crowdin website.
 
 3. If the status for your target language is *Disabled*, click the |IcCheck| **Enable** icon at the end of the row.
-   .. This will enable loading the translation updates automatically from the Crowdin project into the Oro application.
 
 4. If you see *Update is available* in the **Updates** column, click |IcCloudDownload| **Update** at the end of the row to update translations from the Crowdin project.
 

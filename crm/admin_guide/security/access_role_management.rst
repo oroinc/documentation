@@ -31,11 +31,7 @@ Different OroCRM users require different information and tools. A user's ability
 
    This information users also can see on the **My User** page.  
 
-|   
-	   
-.. image:: ../img/access_roles_management/user_access.png 
-
-|
+	   .. image:: ../img/access_roles_management/user_access.png 
 
 -  An owner of particular data: 
    

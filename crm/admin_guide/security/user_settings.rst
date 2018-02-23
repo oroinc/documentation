@@ -7,11 +7,9 @@ User Settings
 
 In **System>Configuration>System Configuration>General Setup>User Settings**, you can define the user-related options to be applied to your OroCRM instance.
 
-|
 
 .. image:: ../img/configuration/user.png
 
-|
 
 Password Restrictions
 ---------------------
@@ -59,11 +57,7 @@ Two-factor Authentication
 
   "**Security Level**","Determines how often to require authentication via email: never, upon first login from a new computer, or at every login.
 
-  |
-
   .. image:: ../img/configuration/authentication.png
-
-  |
 
   The option is disabled by default."
   "**Code Validity Period**","This option determines how long the authentication code will be valid. If not used within the validity period, the code expires and the user must log in again. By default, the option is set to 1 hour."

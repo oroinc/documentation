@@ -5,16 +5,10 @@ Tags
 
 Tags are non-hierarchical keywords or phrases that are assigned to records. They provide additional information about 
 records and are visible to all the system users. Tags can be assigned to any records of any entity and used for 
-:ref:`filtering <user-guide-filters-management>`. They can also be used to create a report for only the records that 
+filtering. They can also be used to create a report for only the records that
 have/don't have a specific tag, and even generate targeted segments for mailings and marketing campaigns. Moreover, you 
 can easily find all records that have a specific tag from anywhere in the system, even if you don't know their other 
 details, as described below. 
-
-.. note:: See a short demo on `how to create tags and taxonomies <https://www.orocrm.com/media-library/tags-taxonomies>`_, or continue reading the guidance below.
-
-   .. raw:: html
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/RBY6dvZc55E" frameborder="0" allowfullscreen></iframe>
 
 Add a Tag to a Record
 ---------------------
@@ -32,17 +26,13 @@ different from :ref:`editing other properties from a grid <doc-grids-actions-rec
 
 2. Select one or several of the existing tags from the list, and/or enter a new tag in the field.
 
-  |TagsfGrid|
+   |TagsfGrid|
   
 3. Start entering the tag, and only matching tags will be left in the selector.
   
 4. If you have entered a new tag, it will also appear in the selector. Select it to add. This way you can add one or several tags that contain one or several words.
-
-   |
   
    |TagsfGrid1|
-
-   |
   
 5. Confirm the action.
 
@@ -77,9 +67,8 @@ Manage Tags
 You can see all the tags available in the system, as well as the amount of times they were assigned to a record, in the 
 Tags :ref:`grid <doc-grids>`.
 
-.. image:: ../img/data_management/tags/tags_from_grid.png
+.. image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid.png
 
-|
 
 From the grid, you can:
 
@@ -100,23 +89,18 @@ Search by Tag
 
 In order to see all the records with a specific tag anywhere in the system.
 
-|
 
-.. image:: ../img/navigation/panel/search_vip.png
+.. image:: /user_guide/img/getting_started/navigation/panel/search_vip.png
 
-|
 
-.. image:: ../img/navigation/panel/search_vip_1.png
+.. image:: /user_guide/img/getting_started/navigation/panel/search_vip_1.png
 
-|
 
 You will see the page similar to the search results. It will contain all the records with this tag.
 
-|
 
-.. image:: ../img/navigation/panel/search_vip_2.png
+.. image:: /user_guide/img/getting_started/navigation/panel/search_vip_2.png
 
-|
 
 
 
@@ -126,35 +110,5 @@ Conclusion
 Tags are easy to add and can help manage the content of any record. They can be used to find records from anywhere 
 within the system and can filter records for reports and segments.
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
-   :align: middle
-
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
-   :align: middle
-
-.. |IcView| image:: ../../img/buttons/IcView.png
-   :align: middle
-   
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
-   :align: middle  
-   
-.. |Tags01| image:: ../img/data_management/tags/tags_01.png
-   :align: middle
-   
-.. |Tags02| image:: ../img/data_management/tags/tags_02.png
-   :align: middle
-
-.. |TagsfGrid| image:: ../img/data_management/tags/tags_from_grid.png
-   :align: middle
-
-.. |TagsfGrid1| image:: ../img/data_management/tags/tags_from_grid_1.png
-   :align: middle   
-   
-.. |TagsfView| image:: ../img/data_management/tags/tags_from_view.png
-   :align: middle   
-   
-.. |TagsfView1| image:: ../img/data_management/tags/tags_from_view_1.png
-   :align: middle 
-   
-.. |TagsfView2| image:: ../img/data_management/tags/tags_from_view_2.png
-   :align: middle 
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

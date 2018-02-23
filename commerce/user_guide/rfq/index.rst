@@ -70,7 +70,7 @@ From the **Requests for Quote** page, you can perform the following actions:
 * `Edit an RFQ`_
 * `Create an Order from an RFQ`_
 * `Use RFQ Transitions`_ if system workflows are active
-* Use **More Actions** at the end of the required RFQ row to :ref:`add a note <user-guide-add-note>`, :ref:`send an email <user-guide-using-emails>` or :ref:`add an event <doc-activities-events-view-page>`.
+* Use **More Actions** at the end of the required RFQ row to :ref:`add a note <user-guide-add-note>`, :ref:`send an email <user-guide-using-emails>` or :ref:`add an event <doc-activities-events>`.
 
   .. image:: /user_guide/img/sales/requests_for_quote/rfq_4.png
      :width: 100%
@@ -141,7 +141,7 @@ To create an order from an RFQ:
 
 .. note:: You can find more information on how to create an order from an RFQ, add additional products, add offers specific for the customer, edit or add shipping and billing information, calculate shipping options, add discounts and more, in the relevant :ref:`Create an Order from an RFQ <user-guide--sales--orders--create--from-rfq>` topic.
 
-The **More Actions** menu enables users to :ref:`add notes <user-guide-add-note>` to the order, :ref:`send an email <user-guide-using-emails>` to the customer or :ref:`add an event <doc-activities-events-view-page>`. An event could be used to schedule a call or a meeting.
+The **More Actions** menu enables users to :ref:`add notes <user-guide-add-note>` to the order, :ref:`send an email <user-guide-using-emails>` to the customer or :ref:`add an event <doc-activities-events>`. An event could be used to schedule a call or a meeting.
 
  .. image:: /user_guide/img/sales/requests_for_quote/rfq_11.png
     :width: 100%

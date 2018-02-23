@@ -3,6 +3,9 @@
 Sidebar Panel
 =============
 
+.. contents:: :local:
+   :depth: 1
+
 The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
 information, such as recent emails or the task list. 
 
@@ -17,8 +20,6 @@ What Can Be on the Sidebar
 Out of the box, any sidebar can contain widgets of three types:
 
 
-|
-
 .. image:: ../img/navigation/sidebar/sb_icons.png
 
 
@@ -29,20 +30,15 @@ Out of the box, any sidebar can contain widgets of three types:
 
 - **Task List**: See the most recent tasks assigned to you.
 
-To add a new widget, use the :guilabel:`+` button, as described in the section below.
+To add a new widget, use the **+** button, as described in the section below.
 
 
 Add a Widget to the Sidebar
 ---------------------------
 
-Click the :guilabel:`+` button to add a widget, then select the widget type an click the :guilabel:`OK` button. 
+Click **+** to add a widget, then select the widget type and click **OK** button. 
 
-|
-
-.. image:: ../img/navigation/sidebar/sb_select.png
-
-|
-
+.. image:: /user_guide/img/navigation/sidebar/sb_select.png
 
 The newly added widget will appear on the sidebar, below the existing widgets. To reorder widgets on the sidebar, drag 
 and drop them with your mouse. 
@@ -56,30 +52,15 @@ Expand/Collapse the Sidebar
 
 Initially, the sidebar panel is minimized. Hover over the icon to see the widget header.
 
-|
+.. image:: /user_guide/img/navigation/sidebar/sb_hover.png
 
-.. image:: ../img/navigation/sidebar/sb_hover.png
-
-|
-
- In order to expand the sidebar panel, click the double-arrow at its bottom.
-
-|
+In order to expand the sidebar panel, click the double-arrow at its bottom.
 
 .. image:: ../img/navigation/sidebar/sb_expand.png
 
-|
-
-
 Now you can see the widget headers. To collapse the panel back, click the double-arrow again.
 
-
-|
-
 .. image:: ../img/navigation/sidebar/sb_fold.png
-
-|
-
 
 Expand/Collapse a Widget
 ------------------------
@@ -90,11 +71,7 @@ In order to see the widget content:
 
 - Click the triangular arrow next to the header on the expanded bar.
     
-|
-
 .. image:: ../img/navigation/sidebar/sb_expand_view.png
-
-| 
 
 To fold the widget, click the triangular arrow again.
 
@@ -103,23 +80,15 @@ states.
 
 This way, you can keep some of the content visible at all times, and keep fewer used widgets minimized.
 
-|
-
 .. image:: ../img/navigation/sidebar/sb_expand_view_1.png
 
-| 
 
-Manage the Widgets
-------------------  
+Manage Widgets
+--------------  
 
 As shown below, each widget contains a header (1), content (2), and icons (3).
 
-|
-
 .. image:: ../img/navigation/sidebar/sb_view.png
-
-|
-
 
 
 You can:
@@ -130,7 +99,7 @@ You can:
 
 - Delete the widget from the sidebar with |IcDelete|.
 
-- Close the widget with |BCrLOwnerClear|  (appears only when the panel is minimized).
+- Click **x** to close the widget (appears only when the panel is minimized).
 
 
 .. hint::
@@ -138,29 +107,25 @@ You can:
     You can add several widgets of the same type and define different settings for them. For example, you can keep notes 
     with different content, or email widgets for different folders.
 
-    
-Default OroCRM Widgets
-----------------------
+Default Sidebar Widgets
+-----------------------
 
-This section describes the three widgets available in OroCRM out of the box.
+This section describes the three sidebar widgets available in OroCRM out of the box.
 
-The Recent Emails Widget
-^^^^^^^^^^^^^^^^^^^^^^^^
+.. note:: You can find more information on dashboard widgets in the corresponding :ref:`Dashboard Widgets topic <user-guide-dashboards>`. 
+
+Recent Emails Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
-
-|
  
 .. image:: ../img/navigation/sidebar/sb_emails.png
-
-|
-
 
 From the widget, you can:
 
 - Access the **All Emails** page and see all your emails available in OroCRM: click the **My emails** link (1).
 
-- Mark all the visible emails as read: Click the :guilabel:`Mark Visible As Read` button at the top (2).
+- Mark all the visible emails as read: Click the **Mark Visible As Read** button at the top (2).
 
 - Access any of the displayed emails: Click the email header.(e.g., 3)
 
@@ -174,17 +139,12 @@ From the widget, you can:
   below the letter (e.g., 6).
 
   
-Configure the Recent Emails Widget
-""""""""""""""""""""""""""""""""""
+Configure the Recent Emails Sidebar Widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Click the |IcSettings| icon to configure the widget. The settings window will emerge:
 
-
-|
-
 .. image:: ../img/navigation/sidebar/sb_emails_set.png
-
-|
 
 - The widget can be configured to display all the emails from your OroCRM mailbox or from any specific folder or 
   mailbox that has been synchronized (1).
@@ -193,51 +153,79 @@ Click the |IcSettings| icon to configure the widget. The settings window will em
 
 - You can define which default action is shown if the sidebar panel has been expanded (3).
 
-.. hint::
-
-    To make sure you don’t miss some particularly important emails, configure your mailbox to sort them in a specific 
+.. hint:: To make sure you don’t miss some particularly important emails, configure your mailbox to sort them in a specific 
     folder, then configure the widget to display this folder and place it at the top of your sidebar panel.
   
   
-Sticky Note
-^^^^^^^^^^^
+Sticky Note Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sticky notes are a great way to keep reminders and memos. You can keep them organized in your OroCRM sidebar panel.
 
 Click the |IcSettings| to change the content of a note.
 
-|
 
 .. image:: ../img/navigation/sidebar/sb_note.png
-
-|
 
 You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and 
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
 
+.. _doc-widgets-sidebar-task-list:
+
+Task List Sidebar Widget
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+This widget displays tasks assigned to you.
+
+The widget's look on the minimized sidebar panel:
 
 
-Task List
-^^^^^^^^^
-
-For the description, see :ref:`Task List Sidebar Widget <doc-widgets-sidebar-task-list>`.
+.. image:: ../img/widgets/task_list/widget_task_list.png
 
 
-Conclusions
------------
-
-Set up the sidebar widgets in the way that is most convenient for you. This will help you maximize your performance with 
-a minimum amount of effort.
+The widget's look on the maximized sidebar panel:
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
-   :align: middle
-   
-.. |IcSettings| image:: ../../img/buttons/IcSettings.png
-   :align: middle
-   
-.. |BRefresh| image:: ../../img/buttons/BRefresh.png
-   :align: middle
-   
-.. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
-   :align: middle
+.. image:: ../img/widgets/task_list/widget_task_list2.png
+
+For more information about the sidebar, see the :ref:`Sidebar Panel <user-guide-navigation-sidebar-panel>` topic.
+
+Manage Task List Sidebar Widget
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red. 
+
+You can perform the following actions with the task list sidebar widget:
+
+* **Expand**
+
+   * On the minimized sidebar, click |IcTasks| **Task List**  on the sidebar to expand the widget.
+
+   * On the maximized sidebar, click  |IcCaretRight| **Expand** on the sidebar to expand the widget.
+
+* **Update Task List**
+
+   * Click |IcRefresh| **Refresh** on the widget's header to actualize the list of tasks.
+
+   * Click |IcSettings| **Configure** to update/set the parameters for a widget.
+
+   * To change a number of displayed tasks, enter the required value into the **Number of tasks to show** field and click **OK**.
+
+     .. image:: ../img/widgets/task_list/widgets_task_list_configuration.png
+
+* **Remove**
+
+   * Click |IcDelete| **Delete** to remove the widget from a dashboard.
+
+
+* **Collapse** 
+
+  * On the minimized sidebar, click |IcTimes| **Close** to collapse the widget.
+
+  * On the maximized sidebar, click |IcCaretDown| **Collapse**  to collapse the widget.
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
+
+

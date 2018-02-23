@@ -17,12 +17,6 @@ Overview index
 
    integrations/manage_integrations_overview
 
-   localization/languages_overview
-
-   localization/localizations_overview
-
-   localization/translations_overview
-
    user_management/business_units_overview
 
    user_management/groups_overview
@@ -44,8 +38,6 @@ Overview index
    integrations_overview
 
    job_queue_overview
-
-   localization_overview
 
    menus_overview
 

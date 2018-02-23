@@ -40,11 +40,9 @@ Configure Access Settings While Creating a New User
 
 5. Type the business unit name or select it from a drop-down list. 
    
-|
 
 .. image:: ../img/access_roles_management/user_access-settings.png 
    
-|
 
 6. Click the :guilabel:`Save` button in the upper-right corner.
 
@@ -69,8 +67,6 @@ Assign Roles While Creating a New User
 
 .. image:: ../img/access_roles_management/user_roles.png 
    
-|
-
 
 4. Click the :guilabel:`Save` button in the upper-right corner.
 
@@ -90,11 +86,7 @@ Change the Range of Assigned User Roles
 
 4. If required, add a new user role as described in the step 3 of the :ref:'Assign Roles While Creating a New User <user-guide--user-management--permissions--user-access-settings--assign-role>` section.
 
-|
-
 .. image:: ../img/access_roles_management/user_roles_edit.png
-
-|
 
 5. Click the :guilabel:`Save` button in the upper-right corner.
 
@@ -116,28 +108,23 @@ Edit User's Access Settings
 
 5. If required, add a new business unit as described in steps 4–5 of the `Configure Access Settings While Creating a New User <./access-management-user-access-settings#configure-access-settings-while-creating-a-new-user>`__ section.
 
-|
 
 .. image:: ../img/access_roles_management/user_access-settings_edit.png
 
-|
 
 6. If required, remove an organization. To do this, in the **Organizations** section, clear the check box against organization which you want to forbid the user to have access to.
 
 7. If required, remove a business unit. To do this, click the |IcRemove| **Remove** icon next to the corresponding business unit. 
 
-|
 
 .. image:: ../img/access_roles_management/user_access-settings_delbu.png
 
-|
 
 8. Click the :guilabel:`Save` button in the upper-right corner.
 
 
-
 Review Assigned Roles and Access Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open the user view page:
 
@@ -153,11 +140,9 @@ Review Assigned Roles and Access Settings
 
 4. In the upper-right corner of the page, review the **Owner** field. It represents the business unit that owns the user. If you review the user view page being logged in the organization with a global access, you will also see a name of the organization that owns the user in the braces. 
 
-|
 
 .. image:: ../img/access_roles_management/user_review_owner.png
 
-|
 
 Links
 -----
