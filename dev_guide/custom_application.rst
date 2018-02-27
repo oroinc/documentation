@@ -1,6 +1,8 @@
 .. index::
     single: Platform Application; Customization
 
+.. _custom-oro-application:
+
 Custom Oro Application
 ======================
 
