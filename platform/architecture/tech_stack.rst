@@ -5,6 +5,10 @@
 Technology Stack
 ~~~~~~~~~~~~~~~~
 
+**Table of Contents**
+
+.. contents:: :local:
+
 As any **web application**, Oro application generally follows a `client - server architecture <https://en.wikipedia.org/wiki/Client%E2%80%93server_model>`_ to deliver the web content prepared by the server-side stack to the client-side and deliver response. Oro application rely on the number of embedded, integrated, and distributed technologies explained below.
 
 Client Side
@@ -13,7 +17,7 @@ Client Side
 A **client**, whether it is a web-browser or a third-party application connected via :ref:`the API <web-services-api>`, makes requests to the Oro application server-side to get the application content or JSON response. Information received in response from the server-side may be used:
 
 * By the web browser -- to render or update the web page shown to the end user.
-* By the third party application -- to launch data synchronization, trigger actions in Oro applications or other integrated systems.
+* By the third party application -- to launch data synchronization, trigger actions in the Oro applications or other integrated systems.
 
 Web Browser
 """""""""""
@@ -33,7 +37,7 @@ In addition to the HTTP connections, Oro applications establish websocket connec
 API Client
 """"""""""
 
-The architecture of the third-party application that connects to Oro application via :ref:`the API <web-services-api>` is not limited by the Oro application architecture. The API client may be implemented as a separate custom web application, custom mobile application, ERP system, ETL service, etc.
+The architecture of the third-party application that connects to the Oro application via :ref:`the API <web-services-api>` is not limited by the Oro application architecture. The API client may be implemented as a separate custom web application, custom mobile application, ERP system, ETL service, etc.
 
 Server Side
 ^^^^^^^^^^^
@@ -53,7 +57,7 @@ The core component, let us call it **Oro PHP Application**, is a modular **PHP**
 Database and RDBMS
 """"""""""""""""""
 
-**Oro application** uses the **database** to store application data and uses Doctrine database abstraction layer (DBAL) and object-relational mapper (ORM) to interact with the database. That enables out of the box support of various databases enabled by Doctrine. On top of that, in Oro application, Doctrine capabilities are extended with additional database functions in the `Oro Doctrine Extensions <https://github.com/oroinc/doctrine-extensions>`_ library. Currently the extended functions are supported for MySQL and PostgreSQL databases only.
+**Oro application** uses the **database** to store application data and uses Doctrine database abstraction layer (DBAL) and object-relational mapper (ORM) to interact with the database. That enables out of the box support of various databases enabled by Doctrine. On top of that, in the Oro application, Doctrine capabilities are extended with additional database functions in the `Oro Doctrine Extensions <https://github.com/oroinc/doctrine-extensions>`_ library. Currently the extended functions are supported for MySQL and PostgreSQL databases only.
 
 Supported RDBMs:
 

@@ -4,6 +4,7 @@
 .. Copied into the shared platform folder (platform/workflow_management/index.rst)
 
 .. _doc--workflows:
+.. _doc--system--workflow-management:
 
 Workflow Management
 ===================

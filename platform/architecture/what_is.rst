@@ -1,3 +1,5 @@
+:orphan:
+
 .. _architecture-what-is-oro-application:
 
 .. begin_what_is
