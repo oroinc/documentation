@@ -184,13 +184,4 @@ the connector's ``getType()`` method:
                 tags:
                     - { name: oro_integration.connector, channel_type: app_channel, type: task }
 
-Going Deeper
-------------
-
-Reverse Synchronization
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Setting the Default Owner for Imported Entities
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. _`OroIntegrationBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/IntegrationBundle/
