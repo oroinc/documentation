@@ -35,7 +35,7 @@ This page contains a list of menus that you can configure.
 
   .. image:: /user_guide/img/getting_started/intro/user_menu.png
 
-- **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Calendar List <doc-my-oro-calendar-list>`.
+- **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Calendar List <user-guide-calendars>`.
 
   .. image:: /user_guide/img/getting_started/my_oro/calendar_menu.png
 
@@ -286,15 +286,10 @@ Reset a Menu
    You need to reload the page to see changes.
 
 
-See Also
---------
+**Related Topics**
 
-
-    :ref:`My User Page <doc-my-user-view-page>`
-
-    :ref:`Actions with My User <doc-my-user-actions>`
-
-    :ref:`My System Configuration <doc-my-user-configuration>`
+:ref:`My User Page <doc-my-user-view-page>`
+:ref:`My System Configuration <doc-my-user-configuration>`
 
 .. include:: /user_guide/include_images.rst
    :start-after: begin

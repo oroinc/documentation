@@ -56,6 +56,8 @@ Configure Sales Rep Information per User
   :start-after: begin
   :end-before: finish
 
+.. _sys--conf--commerce--sales--contacts--sample:
+
 Configuration Sample 
 --------------------
 
