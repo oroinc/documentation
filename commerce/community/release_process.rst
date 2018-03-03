@@ -19,22 +19,22 @@ OroCommerce follows `Semantic Versioning`_ strategy (MAJOR.MINOR.PATCH) with a f
 Release Schedule
 ----------------
 
-Oro Team works on OroCommerce using a time-based schedule, with new minor or major version coming out roughly every 2 months.
+Oro Team works on OroCommerce using a time-based schedule, with new minor or major version coming out every 2 months.
 
 OroCommerce Enterprise Edition Releases and Support Cycle
 ---------------------------------------------------------
 
-- **Regular** major or minor versions are released roughly every 2 months. These versions contain new features and capabilities that might not be complete yet, but still offer value to the users.
+- **Regular** major or minor versions are released every 2 months. These versions contain new features and capabilities that might not be complete yet, but still offer value to the users.
 - **Long-term support (LTS)** versions are released roughly every 6 months. These versions contain all completed features that were introduced in regular releases since the previous LTS version.
 
 .. note::
 
-   **Patch** versions are released roughly once in 2 weeks for all currently maintained regular and maintained/supported LTS versions.
+   **Patch** versions may be released as often as every week for all currently maintained regular and maintained/supported LTS versions.
 
 
 The key difference between a regular and a LTS version is the duration of the maintenance (bugfix) period. LTS versions are also supported for security fixes.
 
-- **Regular** versions are maintained for the next two release cycles, or roughly 4 months.
+- **Regular** versions are maintained for the next two release cycles, or 4 months.
 - **LTS** versions are maintained for 18 months after the release, and security fixes are released for 18 more months.
 
 Below is the approximate schedule of OroCommerce releases and support timelines until 2019. Please take into account that numbering of major and minor versions is subject to change.
@@ -79,15 +79,14 @@ Upgrade Recommendations
 OroCommerce Enterprise Edition release cycle offers two primary upgrade models:
 
 - **(Recommended) Long Term Stability** – Upgrade from an LTS version to the next LTS version to take your time to adopt new features. Choose this model to receive continued support without necessity to upgrade frequently, especially if the version upgrade is complicated for you because of the sheer size of your business or due to rich customizations of the system.
-- **Bleeding Edge** – Immediately utilize and benefit from new features as soon as they are introduced by always upgrading to the newest version every 2 months. Choose this model if you mostly use the application without customizations and are OK with frequent updates. Enterprise partners and extension developers should choose this model to make sure their extensions and customization will be ready and tested with all new features before the next LTS release.
-
+- **Bleeding Edge** – Immediately utilize and benefit from new features as soon as they are introduced by always upgrading to the newest version every 2 months. Choose this model if you mostly use the application without customizations and are OK with frequent updates. If you are an enterprise partner or an extension developer, choose this model to ensure that your extensions and customizations are tested in combination with all new features before the next LTS release.
 
 Community Edition Releases
 --------------------------
 
 Community developers and users have access to the following two product branches:
 
-- **Stable** – The `stable <https://github.com/oroinc/orocommerce/tree/stable>`_ branch always points to the last regular or LTS version. You should use this branch for testing and deployment. In order to benefit from the latest features, fixes and security updates you should upgrade to the next stable release tag roughly every 2 months or even more frequently.
-- **Development** – The `development <https://github.com/oroinc/orocommerce/tree/development>`_ branch points to the latest available commit and is updated daily. This branch should be used **only by developers and contributors** who actively follow the project progress on GitHub. This branch is not considered ready for production use.
+- **Stable** – The `stable <https://github.com/oroinc/orocommerce/tree/stable>`_ branch always points to the latest regular or LTS version. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next stable release tag every 2 months or more frequently.
+- **Development** – The `development <https://github.com/oroinc/orocommerce/tree/development>`_ branch points to the latest available commit and is updated daily. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered ready for production use.
 
 .. _Semantic Versioning:    http://semver.org/
