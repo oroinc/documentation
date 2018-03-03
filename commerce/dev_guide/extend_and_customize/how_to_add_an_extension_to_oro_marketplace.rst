@@ -1,5 +1,9 @@
+.. _dev--extend--how-to-publish-extension-on-the-marketplace:
+
 .. index::
     single: Marketplace; Add an Extension
+
+
 
 How to Add an Extension to the OroCRM Marketplace
 =================================================

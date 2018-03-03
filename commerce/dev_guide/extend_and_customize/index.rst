@@ -1,3 +1,5 @@
+.. _dev--extend-and-customize:
+
 Customizing Oro Features
 ------------------------
 

@@ -5,6 +5,10 @@
 Oro PHP Application Structure
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+**Table of Contents**
+
+.. contents:: :local:
+
 Source Code Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
