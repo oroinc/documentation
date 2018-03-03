@@ -1,22 +1,35 @@
 .. _user-guide-intro-log-in-edit-profile:
 
-My Oro (User Menu)
-==================
+My Profile Configuration
+========================
 
-The drop-down user menu that resides below your username in the upper-right corner of the application is a fast way to access your user profile, calendar, mailbox, and task list.
+By clicking on your user name on the top right of the application screen, you can quickly access your profile configuration page, the available user-level configuration settings, as well as your calendar, tasks, events and the log out link. 
 
-.. image:: ../img/intro/user_menu.png
+.. image:: /user_guide/img/intro/user_menu_new.png
+
+Follow the links below to find out what capabilities each section of this menu offers: 
+
+* :ref:`My User <doc-my-user-view-page>`
+* :ref:`My Configuration <doc-my-user-configuration>`
+* :ref:`My Emails <user-guide-using-emails>`
+* :ref:`My Tasks <doc-activities-tasks>`
+* :ref:`My Calendar <user-guide-calendars-manage>`
+* :ref:`Log Out <doc-log-out>`
+
+
+
+
 
 .. toctree::
    :maxdepth: 1
+   :hidden: 
 
    my_user_page
    my_user_system_config
    my_user_emails
-   my_user_tasks
-   my_user_calendar
-   ../access_oro/access_oro_log_out
+   my_user_menus_config
 
+ 
 
 
 
