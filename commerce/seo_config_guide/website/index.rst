@@ -1,7 +1,7 @@
 .. _seo-config-guide--website:
 
-Website Configuration
-=====================
+Website SEO Configuration
+=========================
 
 This section guides you through the OroCommerce Storefront website-related system configuration options.
 

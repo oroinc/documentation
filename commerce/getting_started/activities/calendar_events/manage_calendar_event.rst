@@ -84,7 +84,7 @@ From My Calendar
 
 You can also manage calendar events from the My Calendar page and the Today’s Calendar widget.
 
-1. Navigate to My User on the top right of the page.
+1. Navigate to **My User** on the top right of the page.
 2. Click **My Calendar**.
 3. Click on a specific event in the calendar.
 4. On the event information card, select one of the following actions:
@@ -95,6 +95,22 @@ You can also manage calendar events from the My Calendar page and the Today’s 
    .. image:: /user_guide/img/getting_started/activities/CalendarEventMyCalendar.png
 
 5. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event. 
+
+
+From the Page of a System Calendar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can manage events from the page of the selected system calendar:
+
+1. Navigate **System > System Calendars** in the main menu.
+2. Click on the required calendar.
+3. The list of all events related to the selected calendar is located under the **Calendar Events** section. For each event, you can perform the following actions:
+
+   * |IcView| View
+   * |IcDelete| Delete
+   * |IcEdit| Edit
+
+.. image:: /user_guide/img/getting_started/activities/manage_event_from_system_calendar.png
 
 .. finish_manage_calendar_event 
 

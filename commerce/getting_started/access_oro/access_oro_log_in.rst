@@ -38,9 +38,7 @@ Log In
 
 
 
-.. caution::
-
-    It is strictly recommended to change your password immediately after the first login. For how to do this, see :ref:`Change Your Password <doc-my-user-actions-change-password>`.
+.. caution:: It is strictly recommended to change your password immediately after the first login. For how to do this, see :ref:`Change Your Password <doc-my-user-actions-change-password>`.
 
 
 

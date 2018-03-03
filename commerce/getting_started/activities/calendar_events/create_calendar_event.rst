@@ -111,6 +111,8 @@ Calendar events are displayed in the **Activity** section of the pages of relate
 
 .. note:: If you create a calendar event from the view page of a related entity record, this entity record appears as a context of the calendar event.
 
+.. _user-guide-activities-events-add-my-calendar:
+
 From My Calendar
 ^^^^^^^^^^^^^^^^
 
@@ -128,5 +130,19 @@ To add calendar events on the **My Calendar** page or in the **Today's Calendar*
 
    .. important:: Refresh a page to update the widget after you created the new event.
 
+.. _user-guide-activities-events-add-system-calendar:
+
+From the Page of a System Calendar
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To add an event to a system calendar from its page:
+
+1. Navigate **System > System Calendars** in the main menu.
+2. Click on the required calendar.
+3. On the page of the selected calendar, click **Create Calendar Event**.
+4. The **Create Calendar Event** page appears. Specify the event details.
+5. Click **Save and Close**.
+  
+  .. image:: /user_guide/img/getting_started/calendars/create_system_cal_event_new.png
 
 .. finish_calendar_event

@@ -135,7 +135,7 @@ Outlook Integration
 
 .. important:: For Enterprise Edition users only.
 
-This capability enables a user to download the latest version of the OroCRM add-in for Outlook (see the **MS Outlook Add-In** field description of the :ref:`General <doc-my-user-view-page-general>` section of the **My User** page.
+This capability enables a user to download the latest version of the OroCRM add-in for Outlook.
 
 If :ref:`OroCRM is synchronized with Outlook <user-guide-synch-outlook>`, this add-in enables a user to synchronize
 contacts, tasks, and calendar events between OroCRM and the user's Outlook account. The user can also associate emails to accounts,
@@ -258,7 +258,7 @@ by system administrators. See :ref:`User Management <user-management-users>` for
 
 .. hint::
 
-    This capability does not influence a user's ability to edit their own password from the **My User** page (see step 5 of the :ref:`Edit Your Profile <doc-my-user-actions-edit>` action description.
+    This capability does not influence a user's ability to edit their own password from the **My User** page.
 
 .. image:: ../img/roles/manage_passwords.png
 

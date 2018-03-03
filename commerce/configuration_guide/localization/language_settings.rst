@@ -38,7 +38,7 @@ To define the default system language and supported languages for email notifica
 Customize language Settings per Organization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To define the default system language for the particular organization:
+To define the default system language for a particular organization:
 
 1. Navigate to **System > User management > Organizations** in the main menu.
 
@@ -61,7 +61,7 @@ The following page opens:
 Customize Language Settings per User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To define the default system language for the particular organization:
+To define the default system language for a particular user:
 
 1. Navigate to **System > User management > Users** in the main menu.
 

@@ -14,7 +14,6 @@ See the following topics for more information:
 .. toctree::
     :maxdepth: 1
 
-    intro_user_profile
     access_oro/index
     my_oro/index
     navigation/index
