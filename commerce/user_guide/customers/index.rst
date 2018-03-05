@@ -20,8 +20,8 @@ System-wide Customer Configuration
    :start-after: start
    :end-before: stop
 
-Customer Accounts
------------------
+Customers
+---------
 
 .. include:: /user_guide/customers/customers/index.rst
    :start-after: begin
