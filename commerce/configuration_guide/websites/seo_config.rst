@@ -1,17 +1,17 @@
 .. _seo-config-guide--website:
 
-Website SEO Configuration
-=========================
+Setup SEO Configuration for a Website
+-------------------------------------
 
-This section guides you through the OroCommerce Storefront website-related system configuration options.
+This section guides you through the OroCommerce Storefront website-related system configuration options for search engine optimization (SEO).
 
 Routing
-~~~~~~~
+^^^^^^^
 
 You can control the way OroCommerce routes the HTTP requests to the components that service these requests. Some of these options may be configured only globally, on a system level, and some are applicable to the individual websites.
 
 Sitemap
-~~~~~~~
+^^^^^^^
 
 A sitemap is a file that explains the structure of your site to the search engines. Sitemap helps improve indexing the site contents by the search engine (e.g. by providing metrics like page priority, update frequency and content uniqueness).
 
@@ -25,29 +25,14 @@ You can launch the sitemap generation manually using the following command:
 
 `oro:cron:sitemap:generate`
 
-Routing and Sitemap Configuration
----------------------------------
+Routing Configuration
+^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
-   :start-after: begin_zero
-   :end-before: finish_zero
+* :ref:`Global Routing Configuration <sys--config--sysconfig--websites--routing>`
+* :ref:`Routing Configuration per Website <sys--websites--sysconfig--websites--routing>`
 
-.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
-   :start-after: begin_one
-   :end-before: finish_one
+Sitemap Configuration
+^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
-   :start-after: begin_two
-   :end-before: finish_two
-
-.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
-   :start-after: begin_three
-   :end-before: finish_three
-
-.. include:: /configuration_guide/landing_system_configuration/websites/routing_sitemap/index.rst
-   :start-after: begin_four
-   :end-before: finish_four
-
-.. include:: /user_guide/include_images.rst
-   :start-after: begin
-
+* :ref:`Global Sitemap Configuration <sys--config--sysconfig--websites--sitemap>`
+* :ref:`Sitemap Configuration per Website <sys--websites--sysconfig--websites--sitemap>`

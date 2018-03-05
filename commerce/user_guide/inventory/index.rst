@@ -27,8 +27,8 @@ System-wide Inventory Configuration
   :start-after: begin_configuration
   :end-before: finish_configuration
 
-Product-level Inventory Configuration
--------------------------------------
+Inventory Levels Management
+---------------------------
 
 In the Inventory Registry
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,9 +39,14 @@ To manage quantities for all products in multiple warehouses:
 
 2. Filter the product inventory to limit the records to the subset you would like to update.
 
-3. Edit inventory status and quantity in the respective columns by clicking on the current value, typing in the new one, and pressing **Enter**.
+3. Edit inventory status and quantity in the respective columns directly by clicking on the current value.
+
+ .. image:: /user_guide/img/inventory/manage_inventory/manage_inventory_from_registry.png
+
+4. Type in a new value and press **Enter**.
 
 Updated information is automatically saved.
+
 
 Per Product
 ~~~~~~~~~~~

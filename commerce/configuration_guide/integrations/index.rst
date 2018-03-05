@@ -7,17 +7,17 @@ Integrations
 
 Oro application supports two types of integrations:
 
-- Integrations that are configured on the system level and share the same configuration for all :term:`organizations <Organization>` in an Oro instance. These integrations (or any combination of them) can be enabled/disabled and configured in the **System > Configuration > Integration**.
+- Integrations that are configured on the system level and share the same configuration for all :term:`organizations <Organization>` in an Oro instance. These integrations (or any combination of them) can be enabled/disabled and configured in **System > Configuration > Integration**.
 
   These are:
 
-  - Pre-implemented :ref:`Google single sign-on functionality <user-guide-google-single-sign-on>`: Allows users to log in to Oro with their organization Google Apps for Work, Education or Government account, or their personal Google account if their Google account email address and Oro primary email address are the same.
+  - Pre-implemented :ref:`Google single sign-on functionality <user-guide-google-single-sign-on>`: Enables users to log into Oro with their organization Google Apps for Work, Education or Government account, or their personal Google account if their Google account email address and Oro primary email address are the same.
 
-  - Pre-implemented :ref:`Integration with Microsoft Exchange server <admin-configuration-ms-exchange>`: Allows Oro users to access contents of their mailboxes on the server directly in the Oro UI. (Available for enterprise edition only).
+  - Pre-implemented :ref:`Integration with Microsoft Exchange server <admin-configuration-ms-exchange>`: Enables Oro users to access contents of their mailboxes on the server directly in the Oro UI. (Available for enterprise edition only).
 
-  - Pre-implemented :ref:`Integration with Microsoft Outlook <user-guide-synch-outlook>`: Allows automatic bi-directional synchronization of the Oro contacts, tasks and calendar events that are available to the users with their Microsoft Outlook applications. (Available for enterprise edition only).
+  - Pre-implemented :ref:`Integration with Microsoft Outlook <config-guide--integrations--ms-outlook>`: Enables automatic bi-directional synchronization of the Oro contacts, tasks and calendar events that are available to the users with their Microsoft Outlook applications. (Available for enterprise edition only).
 
-- Integrations that are configured at the :term:`organization <Organization>` level. These integrations allow for adjustment of third-party system integration parameters (e.g. credentials, account IDs, synchronizations settings, etc.) for different organizations.
+- Integrations that are configured at the :term:`organization <Organization>` level. These integrations enable adjustment of third-party system integration parameters (e.g. credentials, account IDs, synchronizations settings, etc.) for different organizations.
 
   These are:
 
@@ -59,8 +59,7 @@ Oro application supports two types of integrations:
     dotmailer_single_sign_on
     ms_exchange_integration_settings
     ms_exchange_integration
-    ms_outlook_integration_settings
-    outlook_sync
+    outlook/index
     embedded_forms
     hangouts
     zendesk_integration

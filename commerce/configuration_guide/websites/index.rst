@@ -14,6 +14,8 @@ For detailed information on managing websites please refer to the following sect
 
    create
 
+   seo_config
+
    config
 
    default_website

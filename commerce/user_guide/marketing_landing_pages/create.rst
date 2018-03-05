@@ -47,6 +47,8 @@ The new landing page is created and is available by the following URL:
 
 For example, *http://acme.orocommerce.com/online-webinar-jan2017/*
 
+.. note:: You can also create a landing page from the web catalog configuration page following the guidance described in the :ref:`Add a Landing Page <user-guide--marketing--web-catalog--content-variant-landing page>` topic.
+
 **Next steps**
 
 Use the landing page URL in your marketing activities (email campaigns, advertisement, etc). 
