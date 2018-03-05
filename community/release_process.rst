@@ -39,7 +39,7 @@ The key difference between a regular and a LTS version is the duration of the ma
 
 Below is the approximate schedule of OroCRM releases and support timelines until 2019. Please take into account that numbering of major and minor versions is subject to change.
 
-.. .. image:: img/release_process/OroReleaseScheduleDark.png
+.. image:: img/release_process/OroCRM_release_schedule.png
 
 +---------------+-------------------+-------------------+-------------------+
 | Version       | Release           | Maintenance ends  | Support ends      |
