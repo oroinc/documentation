@@ -23,7 +23,7 @@ To create a new customer:
    .. image:: /user_guide/img/customers/customers/CustomersCreate.png
       :class: with-border
 
-#. *Optionally*, select an existing `account <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts>`_ to help tracking sales actions and metrics for the customer that is a member of bigger customer organization. When remains empty, the new account is created for the new customer automatically.
+#. *Optionally*, select an existing `account <https://oroinc.com/orocrm/doc/current/user-guide-sales-tools/customer-management/common-features-accounts>`_ to help tracking sales actions and metrics for the customer that is a member of bigger customer organization. When remains empty, the new account is created for the new customer automatically.
 
 #. Fill in the customer **Name**.
    
