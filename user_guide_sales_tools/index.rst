@@ -11,6 +11,7 @@ The section describes OroCRM tools used to collect and aggregate customer-detail
    :titlesonly:
    :maxdepth: 2
 
+   customer_management/index
    b2b_sales/index
    magento/index
-   customer_management/index
+   
