@@ -14,8 +14,7 @@ To manage quantities for a single product in multiple warehouses:
 
    The following dialog appears:
 
-   .. image:: /user_guide/img/inventory/product_inventory.png
-      :class: with-border
+   .. image:: /user_guide/img/inventory/manage_inventory/manage_inventory_product_page.png
 
 4. Update product quantities, if necessary.
 5. Click **Save**.
