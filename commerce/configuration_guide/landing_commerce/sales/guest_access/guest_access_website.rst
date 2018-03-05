@@ -1,3 +1,5 @@
+.. _sys--conf--commerce--guest-access--website:
+
 Enabling Guest Website Access per Website
 -----------------------------------------
 

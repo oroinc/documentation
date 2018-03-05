@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--sales--rfq-notifications--website:
 
-Configure RFQ Notification Options per Organization
----------------------------------------------------
+Configure RFQ Notification Options per Website
+----------------------------------------------
 
 .. begin
 

@@ -14,6 +14,8 @@ To enable or disable the display of sales representative information in the stor
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
+.. image:: /configuration_guide/img/configuration/sales/contacts/website_contacts_config.png
+
 Set Display Details
 ^^^^^^^^^^^^^^^^^^^
 

@@ -131,6 +131,8 @@ Calendar settings specify the colors available to manage calendars:
     "**Calendar Colors**","A set of colors available for different users' calendars."
     "**Event Colors**","A set of colors available for different events in the user's calendar."
 
+.. _display-settings--map-settings:
+
 Map Settings
 ------------
 
