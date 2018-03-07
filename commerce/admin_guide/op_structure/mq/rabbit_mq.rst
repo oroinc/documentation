@@ -69,7 +69,7 @@ Required plugins
 +---------------+-------------+---------------+
 | Plugin name   | Version     | Appointment   |
 +===============+=============+===============+
-| rabbitmq\_del | 0.0.1       | A plugin that |
+| rabbitmq\_del | 20171215    | A plugin that |
 | ayed\_message |             | adds          |
 | \_exchange    |             | delayed-messa |
 |               |             | ging          |
@@ -94,7 +94,7 @@ To download it, use the following command:
 
 .. code-block:: none
 
-   curl http://www.rabbitmq.com/community-plugins/v3.6.x/rabbitmq_delayed_message_exchange-0.0.1.ez > {RABBITMQ_HOME}/plugins/rabbitmq_delayed_message_exchange-0.0.1.ez
+   wget https://dl.bintray.com/rabbitmq/community-plugins/3.6.x/rabbitmq_delayed_message_exchange/rabbitmq_delayed_message_exchange-20171215-3.6.x.zip && unzip rabbitmq_delayed_message_exchange-20171215-3.6.x.zip -d {RABBITMQ_HOME}/plugins && rm rabbitmq_delayed_message_exchange-20171215-3.6.x.zip
 
 To enable it, use the following command:
 
@@ -144,7 +144,7 @@ You will see something like:
 
     [e*] amqp_client                       3.6.5
     [e*] mochiweb                          2.13.1
-    [E*] rabbitmq_delayed_message_exchange 0.0.1
+    [E*] rabbitmq_delayed_message_exchange 20171215
     [E*] rabbitmq_management               3.6.5
     [e*] rabbitmq_management_agent         3.6.5
     [e*] rabbitmq_web_dispatch             3.6.5
