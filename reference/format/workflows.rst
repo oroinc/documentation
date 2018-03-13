@@ -178,7 +178,7 @@ Two options can be configured under this key to control which kind of actions ca
 
   If ``true``, the entity can be removed.
 
-- ``update`` (**type**: ``bolean``)
+- ``update`` (**type**: ``boolean``)
 
   If ``true``, the entity can be modified.
 
@@ -276,7 +276,7 @@ is_start
 **type**: ``boolean``
 
 If set to ``true``, this transition can be applied when a workflow is not in a start step. There
-must be at least on transition having this option set to ``true`` if the workflow does not have at
+must be at least one transition having this option set to ``true`` if the workflow does not have at
 least one start step.
 
 is_unavailable_hidden
