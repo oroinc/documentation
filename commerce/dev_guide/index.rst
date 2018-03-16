@@ -62,3 +62,5 @@ Please navigate to the following sections for the complete list of topics:
    entities/index
 
    other/index
+
+   faq/index
