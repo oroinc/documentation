@@ -1,9 +1,6 @@
 Upgrade OroCommerce to the Newer Version
 ========================================
 
-Upgrade OroCommerce
-===================
-
 .. begin
 
 To retrieve a new version and upgrade your OroCommerce instance, please execute the following steps:
@@ -33,9 +30,9 @@ To retrieve a new version and upgrade your OroCommerce instance, please execute 
 
 3. Stop all running consumers.
 
-4. Create backups of your Database and Code.
+4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the orocommerce.com <http://www.orocommerce.com/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`1.6`) or tag (`1.6.1`) in the application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the oroinc.com/orocommerce <https://oroinc.com/orocrm/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 
@@ -48,7 +45,7 @@ To retrieve a new version and upgrade your OroCommerce instance, please execute 
    .. code-block:: bash
 
       $ sudo -uwww-data git pull
-      $ sudo -uwww-data git checkout <VERSION TO UPGRADE>
+      $ sudo -uwww-data git checkout <branch or tag with version to upgrade to>
 
 6. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
