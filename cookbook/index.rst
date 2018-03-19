@@ -59,6 +59,7 @@ This book contains list of most regularly used solutions in OroPlatform.
     how_to_apply_patch
     how_to_co-install_applications
     known_issues_outlook_addin
+    how_to_clone_workflow
     faq
 
 TODO List

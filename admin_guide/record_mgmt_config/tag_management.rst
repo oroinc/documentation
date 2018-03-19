@@ -1,4 +1,6 @@
 .. _admin-guide-tag-management:
+.. _user-guide-tags:
+.. _user-guide-tags-add:
 
 Tag Management
 ==============

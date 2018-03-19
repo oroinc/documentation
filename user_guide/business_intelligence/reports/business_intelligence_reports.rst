@@ -1,4 +1,5 @@
 .. _user-guide-reports:
+.. _user-guide--business-intelligence--reports--use-custom-reports:
 
 Reports
 =======

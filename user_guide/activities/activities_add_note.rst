@@ -13,7 +13,7 @@ To save additional information about the record in OroCRM, use the "*Add Note"* 
 .. important::
     By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description
 
-1. Click :guilabel:`Add Note` in the :ref:`actions <user-guide-ui-components-view-page-actions>` tab of the record.
+1. Click :guilabel:`Add Note` in the actions tab of the record.
 
 2. The "Add Note" form will appear.
 

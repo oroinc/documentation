@@ -268,3 +268,5 @@ Images
 .. |IcMinus| raw:: html
 
    <i class="fa fa-minus fa-lg" aria-hidden="true"></i>
+
+
