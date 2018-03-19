@@ -165,7 +165,7 @@ This is convenient for all users.
 Assign/Unassign Tags
 ^^^^^^^^^^^^^^^^^^^^
 
-A user can  assign/unassign :ref:`tags <user-guide-tags>` which are
+A user can  assign/unassign :ref:`tags <admin-guide-tag-management>` which are
 non-hierarchical keywords or phrases assigned to records. They provide additional information about records and
 are visible to all the system users.
 
@@ -337,11 +337,10 @@ Access Entity Management
 
 This capability enables a user to access entity management (by default, it can be found by navigating to **System>Entities>Entity Management** in the main menu).
 
-Many entities in OroCRM can be configured from the interface, as described in the
-:ref:`Entities <doc-entities>` guide. A user can change the attachments settings,
+Many entities in OroCRM can be configured from the interface, as described in the :ref:`Entities <doc-entities>` guide. A user can change the attachments settings,
 define whether the entity should be displayed on a grid and/or a record view page, whether it will be
 exported to a .csv file, and define other settings. For some of them, it is also possible to add new fields, as
-described in the :ref:`Entity Fields  <doc-entity-fields>` guide.
+described in the :ref:`Entity Fields <doc-entity-fields>` guide.
 
 
 They are usually performed by the system administrators.

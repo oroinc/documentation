@@ -178,7 +178,7 @@ Action buttons are on the right of the view page. They enable you to perform a n
 
 The following action buttons can be available:
 
-1. Refresh the view table: click |IcRefresh| to update the view table.
+1. Refresh the view table: click |IcUndo| to update the view table.
 2. Reset the view table: click |IcReset| to clear view table customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
 3. Table settings: click |IcSettings| to define which columns to show in the table:
 
