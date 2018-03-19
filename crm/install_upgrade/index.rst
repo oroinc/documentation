@@ -1,4 +1,4 @@
-:orphan:
+.. _installation_guide:
 
 Installation Guide
 ==================
@@ -16,5 +16,4 @@ This section provides information on installing the Oro application, including t
    post_install_steps
    vm
    upgrade/index
-   update
    installation_quick_start_dev/index

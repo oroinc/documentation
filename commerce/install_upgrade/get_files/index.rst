@@ -8,7 +8,7 @@ As a final stage before installation, download |main_app_in_this_topic| installa
 * :ref:`Download Oro application source files <platform--installation--source-files>`.
 * :ref:`Download External Packages and Configure Installation Environment <platform--installation--download-external-packages-and-configure-installation>`.
 
-Once you are done, you may proceed with |main_app_in_this_topic| :ref:`installation <installation>`.
+Once you are done, you may proceed with |main_app_in_this_topic| :ref:`installation <installation-step>`.
 
 .. toctree::
    :hidden:

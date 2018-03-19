@@ -3,7 +3,7 @@
     single: OroCRM Application; Installation
     single: Platform Application; Installation
 
-.. _installation:
+.. _installation-step:
 
 Run Installation via Wizard or CLI
 ==================================
