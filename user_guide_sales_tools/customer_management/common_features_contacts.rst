@@ -102,7 +102,7 @@ All contacts available in the system are displayed on the page of all contacts (
 
 .. note:: On the page of all contacts, you can view, edit, delete and bulk delete contacts. 
 
- .. important:: Learn how to :ref:`export <export-bulk-items>` and :ref:` import <import-contacts>` contacts in the .csv format in corresponding topics in Oro documentation library. 
+ .. important:: Learn how to :ref:`export <export-bulk-items>` and :ref:`import <import-contacts>` contacts in the .csv format in corresponding topics in Oro documentation library. 
 
 Manage Address Book
 -------------------

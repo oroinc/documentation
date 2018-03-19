@@ -1,3 +1,5 @@
+:orphan:
+
 .. _architecture--customization--how-to-customize:
 
 How to Customize Oro Application

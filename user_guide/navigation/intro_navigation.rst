@@ -4,6 +4,7 @@ Navigation Basics
 =================
 
 .. contents:: :local:
+   :depth: 2
 
 OroCRM provides a broad set of navigation tools that allow you to easily access necessary information and tools. The system helps to ensure that frequent actions can be performed with minimal effort by keeping required information at hand. This means no important updates are missed.
 
@@ -32,11 +33,10 @@ In the mobile version, the menu bar can be accessed via the "hamburger" button n
 The list of menu items that are available to you depends on your access and permission settings, as defined in your 
 organization.
 
-Hover the cursor over a menu item to expand the drop-down menu with see the second-level items. Click on them to access 
-any corresponding pages or grids. (See :ref:`Data management basics <user-guide-data-management-basics>` for further 
+Hover the cursor over a menu item to expand the drop-down menu to see the second-level items. Click on them to access 
+any corresponding pages or table views (grids). (See :ref:`Data management basics <user-guide-data-management-basics>` for further 
 details.)
-  
-  
+    
 .. _user-guide-navigation-panel:
 
 Navigation Tools
@@ -45,7 +45,6 @@ Navigation Tools
 At the very top of the page, there is a navigation panel that contains different navigation tools, as shown below.
 
 .. image:: ../img/navigation/panel.png
-
 
 .. csv-table::
   :header: "#","Item","Description","Related Document"
@@ -75,22 +74,12 @@ At the very top of the page, there is a navigation panel that contains different
   :ref:`History, Favorites and Most Viewed <user-guide-getting-started-history>`"
   "8","**Help Icon**","Access the User Guide",""
   "9","**Sidebar panel**","Hosts widgets that provide fast and convenient access to constantly needed information, such
-  as recent emails or task lists. ",":ref:`Sidebar Pannel <user-guide-navigation-sidebar-panel>`"
+  as recent emails or task lists. ",":ref:`Sidebar Panel <user-guide-navigation-sidebar-panel>`"
   
-
 This way, users can easily access, store, and organize any and all information required to manage customer relations in 
 the most efficient way.
 
-Flash Notifications and Dialog Windows
---------------------------------------
 
-Flash notifications and dialog windows are used by OroCRM to notify you about important changes or events.
-
-If just a notification is needed (e.g., to mark the success or failure of an operation, a reminder, etc.), the flash 
-message will appear. They may contain links to more detailed information.
-
-If your decision is required, and OroCRM cannot proceed without it, a dialog window will appear and will remain in place 
-until you click a button. They usually pop up in order to warn you about important or irreversible changes, such
-as deleting records.
-
-To see examples of flash messages and dialog windows, please read the :ref:`Flash Notifications and Dialog Windows <user-guide-intro-popups>` guide.
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
+ 
