@@ -1,13 +1,15 @@
 .. _installation--orocommerce-crm-ee-de--readme:
 
-Quick Start Installation: OroCommerce and OroCRM Enterprise Edition for Germany
-===============================================================================
+Quick Start Installation: OroCommerce Enterprise Edition for Germany
+====================================================================
 
 -  Clone https://github.com/oroinc/orocommerce-enterprise-application-de.git repository with:
 
    .. code:: bash
 
-      git clone --recursive https://github.com/oroinc/orocommerce-enterprise-application-de.git
+      git clone -b x.y.z https://github.com/oroinc/orocommerce-enterprise-application-de.git
+
+   where x.y.z is the latest `release tag <https://github.com/oroinc/orocommerce-enterprise-application-de/releases>`__.
 
 .. include:: /install_upgrade/installation_quick_start_dev/commerce-crm.rst
    :start-after: begin_general_commerce_body
@@ -15,4 +17,4 @@ Quick Start Installation: OroCommerce and OroCRM Enterprise Edition for Germany
 
 .. |db_name| replace:: *b2b_crm_ee_dev*
 
-.. |main_app| replace:: OroCommerce and OroCRM Enterprise Edition for Germany
+.. |main_app| replace:: OroCommerce Enterprise Edition for Germany
