@@ -204,10 +204,10 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/entities/entities`
-        * User guide: :doc:`/admin_guide/entities/entity_fields`
-        * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_channels`
-
+        * User guide: :doc:`/admin_guide/entities/index`
+        * User guide: :doc:`/admin_guide/entities/create_entities`
+        * User guide: :doc:`/admin_guide/entities/create_entity_fields`
+        
 `EntityConfigBundle`_ (OroPlatform)
     Allows to attach metadata to entity classes and offers a UI to manage them.
 
@@ -222,8 +222,8 @@ related articles is provided below the description.
         * Reference: :doc:`/reference/annotation/config`
         * Reference: :doc:`/reference/annotation/config_field`
         * Reference: :doc:`/reference/format/entity_config`
-        * User guide: :doc:`/admin_guide/entities/entities`
-        * User guide: :doc:`/admin_guide/entities/entity_fields`
+        * User guide: :doc:`/admin_guide/entities/index`
+        * User guide: :doc:`/admin_guide/entities/create_entity_fields`
 
 `EntityExtendBundle`_ (OroPlatform)
     Offers a way to create new entities in the UI, to add new relations between existing entities
@@ -235,8 +235,8 @@ related articles is provided below the description.
 
         * Book: :doc:`/dev_guide/customization`
         * Book: :doc:`/dev_guide/entities/using_entities`
-        * User guide: :doc:`/admin_guide/entities/entities`
-        * User guide: :doc:`/admin_guide/entities/entity_fields`
+        * User guide: :doc:`/admin_guide/entities/index`
+        * User guide: :doc:`/admin_guide/entities/create_entity_fields`
 
 `EntityMergeBundle`_ (OroPlatform)
     Merges different entity definitions into one entity.
@@ -349,7 +349,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/dev_guide/customization`
         * Book: :doc:`/dev_guide/entities/using_entities`
-        * User guide: :doc:`/admin_guide/entities/entities`
+        * User guide: :doc:`/admin_guide/entities/index`
 
 `NavigationBundle`_ (OroPlatform)
     Define menus in different bundles in YAMl files based on the `KnpMenuBundle`_.
