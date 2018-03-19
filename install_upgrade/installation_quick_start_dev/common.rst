@@ -5,14 +5,14 @@
 Installation Notes
 ------------------
 
-Installed PHP Accelerators must be compatible with Symfony and Doctrine (support DOCBLOCKs).
+Configuration of used PHP Accelerator must be compatible with with Symfony and Doctrine and should support DOCBLOCKs.
 
 Note that the port used by the WebSocket server must be open in firewall for outgoing/incoming connections.
 
 MySQL Configuration
 ~~~~~~~~~~~~~~~~~~~
 
-Using MySQL 5.6 on HDD is potentially risky as it can result in performance issues.
+Use SSD storage in production environment, as using MySQL 5.6 on HDD is potentially risky.
 
 Recommended configuration for this case:
 

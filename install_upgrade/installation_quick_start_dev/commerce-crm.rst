@@ -1,13 +1,15 @@
 .. _installation--orocommerce-crm-ce--readme:
 
-Quick Start Installation: OroCommerce and OroCRM Community Edition
-==================================================================
+Quick Start Installation: OroCommerce Community Edition
+=======================================================
 
 -  Clone https://github.com/orocommerce/orocommerce-application.git repository with:
 
    .. code:: bash
 
-      git clone --recursive https://github.com/orocommerce/orocommerce-application.git
+      git clone -b x.y.z https://github.com/orocommerce/orocommerce-application.git
+
+   where x.y.z is the latest `release tag <https://github.com/oroinc/orocommerce-application/releases>`__.
 
 .. begin_general_commerce_body
 
@@ -44,4 +46,4 @@ Quick Start Installation: OroCommerce and OroCRM Community Edition
 
 .. |db_name| replace:: *b2b_crm_dev*
 
-.. |main_app| replace:: OroCommerce and OroCRM Community Edition
+.. |main_app| replace:: OroCommerce Community Edition
