@@ -44,10 +44,7 @@ In order to add a new extension:
 - Confirm the package installation. Uncheck the *"Load demo data"* box, if you don't need demo data. Click 
   :guilabel:`Continue`.
   
-When installation is over, the package will be added to the Installed Packages list. Relevant 
-:ref:`processes <user-guide-processes>` and :ref:`entities <doc-entities>` will be added to the 
-system and the functionality can be used.
-
+When installation is over, the package will be added to the Installed Packages list. Relevant :ref:`processes <user-guide-processes>` and :ref:`entities <doc-entities>` will be added to the system and the functionality can be used.
 
 
 .. |InstallPack| image:: ../img/extension/install_package.png

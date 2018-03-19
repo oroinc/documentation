@@ -53,7 +53,7 @@ A sales process workflow leads a sales manager step-by-step through the sales pr
 Lead Qualification
 ~~~~~~~~~~~~~~~~~~
 
-A :term:`lead <Lead>` is created as soon as a potential :term:`opportuity <Opportunity>` arises.
+A :term:`lead <Lead>` is created as soon as a potential :term:`opportunity <Opportunity>` arises.
 
 As the probability of the deal gets clear, the lead may be disqualified (if it is likely that no deal will be made), or qualified into an opportunity (if the deal probability gets high enough).
 

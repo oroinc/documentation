@@ -19,7 +19,7 @@ Create a Record
 
    .. note::
 
-    The default list of fields available on the page can be modified by an administrator. For more information, see the description of the **Show on Form** field in the :ref:`Entity Field Properties <doc-entity-field-properties>` guide.
+    The default list of fields available on the page can be modified by an administrator. For more information, see the section on :ref:`Creating Entity Fields <admin-guide-create-entity-fields>`.
 
 2. Fill in all the required information. 
    

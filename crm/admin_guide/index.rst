@@ -45,10 +45,22 @@ Please note that in many cases, the tools may be not available to the usual user
   * :doc:`/admin_guide/email/email_configuration_settings`
 
 * :doc:`/admin_guide/entities/index`
-
-  * :doc:`/admin_guide/entities/entities`
   
-    * :doc:`/admin_guide/entities/entity_fields` 
+  * :doc:`/admin_guide/entities/create_entities` 
+
+  * :doc:`/admin_guide/entities/manage_entities`
+
+  * :doc:`/admin_guide/entities/create_entity_fields`
+
+  * :doc:`/admin_guide/entities/manage_entity_fields`
+
+  * :doc:`/admin_guide/entities/create_entity_field_example`
+
+  * :doc:`/admin_guide/entities/entity_field_type_related_properties`
+
+  * :doc:`/admin_guide/entities/entity_fields_basic_properties`
+
+  * :doc:`/admin_guide/entities/entity_fields_advanced_properties`
 
 * :doc:`/admin_guide/security/index`
 

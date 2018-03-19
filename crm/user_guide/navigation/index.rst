@@ -6,9 +6,10 @@ Navigation and Search
 The Navigation and Search section illustrates the following topics:
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
 
     intro_navigation
+    record_tables
     intro_nav_shortcuts
     intro_nav_search
     intro_company_structure_org_selector
