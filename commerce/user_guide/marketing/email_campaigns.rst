@@ -126,7 +126,7 @@ This generates an email based on the template you've selected, populates it with
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
    
 .. |email_campaign_schedule| image:: /user_guide/img/marketing/marketing/email_campaign_schedule.png

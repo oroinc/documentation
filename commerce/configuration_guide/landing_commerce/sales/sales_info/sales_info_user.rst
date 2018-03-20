@@ -31,5 +31,5 @@ In the **Enter Contact Info** field, provide custom text to be displayed. This t
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -72,5 +72,5 @@ From the grid you can:
 
 - Get to the edit form of the notification rule: |IcEdit|.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

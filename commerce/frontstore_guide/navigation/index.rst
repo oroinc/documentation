@@ -257,7 +257,7 @@ Search is the fastest way to find a specific product:
 
 .. image:: /frontstore_guide/img/navigation/Search.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

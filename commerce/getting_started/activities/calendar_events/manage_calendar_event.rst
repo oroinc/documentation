@@ -115,5 +115,5 @@ You can manage events from the page of the selected system calendar:
 .. finish_manage_calendar_event 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

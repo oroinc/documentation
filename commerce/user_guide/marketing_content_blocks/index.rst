@@ -61,5 +61,5 @@ For instance, you can set the content block to have a specific text displayed fo
 
 .. finish 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

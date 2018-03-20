@@ -40,5 +40,5 @@ Enable Mass Product Actions per Website
    organization_mass_add_shopping_list
    website_mass_add_shopping_list
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

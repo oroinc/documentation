@@ -144,7 +144,7 @@ You can perform the following actions for each address record in the table:
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

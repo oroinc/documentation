@@ -85,7 +85,7 @@ You can import the bulk details of the product inventory statuses (*In Stock*, *
    warehouses/index
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. comment

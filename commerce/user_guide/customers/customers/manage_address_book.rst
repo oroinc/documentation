@@ -86,5 +86,5 @@ Delete an address by clicking the |IcDelete| next to it.
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

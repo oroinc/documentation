@@ -41,7 +41,7 @@ See the :ref:`Shipping Rules Configuration <sys--shipping-rules>` topic for more
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

@@ -212,5 +212,5 @@ By default, only one shopping list is available for unregistered users:
 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -60,7 +60,7 @@ This way  you can set up as many sub-menu nodes as you need.
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

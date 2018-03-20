@@ -207,7 +207,7 @@ You can perform the following actions with the task list sidebar widget:
   * On the maximized sidebar, click |IcCaretDown| **Collapse**  to collapse the widget.
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. include:: /getting_started/section_toc.rst

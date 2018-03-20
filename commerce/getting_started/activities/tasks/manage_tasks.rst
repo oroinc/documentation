@@ -122,7 +122,7 @@ You can also manage tasks from the My Calendar page and the Today’s Calendar w
 .. end_manage_tasks 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

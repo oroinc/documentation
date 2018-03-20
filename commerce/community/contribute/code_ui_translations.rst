@@ -108,5 +108,5 @@ See Also
 
 :ref:`Release Process <doc--community--release>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

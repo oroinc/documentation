@@ -151,5 +151,5 @@ To add a new simple product and make it available in the master catalog (for int
 
 .. stop_product_create_simple
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

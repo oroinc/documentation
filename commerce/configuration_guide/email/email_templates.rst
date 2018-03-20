@@ -89,7 +89,7 @@ the grid:
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. |email_template_create| image:: /user_guide/system/img/marketing/email_template_create.png

@@ -33,5 +33,5 @@ To update the related products settings per website:
 
 .. finish_upsell_items_body
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

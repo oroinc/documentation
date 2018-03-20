@@ -30,5 +30,5 @@ If `attachments are enabled for an entity <https://oroinc.com/doc/orocrm/current
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

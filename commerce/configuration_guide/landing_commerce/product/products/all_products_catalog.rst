@@ -33,5 +33,5 @@ Once the All Products page has been enabled in the system configuration, you can
 
 .. finish_all_products
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

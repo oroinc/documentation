@@ -41,7 +41,7 @@ Shipping Management in the Quote
    .. include:: /user_guide/shipping/shipping_checkout.rst
    :start-after: begin
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

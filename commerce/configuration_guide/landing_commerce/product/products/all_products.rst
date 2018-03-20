@@ -60,7 +60,7 @@ Related Topics
 * :ref:`Build a Custom Web Catalog <user-guide--marketing--web-catalog--sample>`
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

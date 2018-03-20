@@ -72,7 +72,7 @@ Recent Emails Widget
 
 .. finish_activity_section
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

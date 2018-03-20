@@ -365,5 +365,5 @@ You can delete multiple custom reports at a time.
 :ref:`Reports Examples <user-guide--business-intelligence--reports--reports-examples>`
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

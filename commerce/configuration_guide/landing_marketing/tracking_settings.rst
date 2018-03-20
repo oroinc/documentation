@@ -48,5 +48,5 @@ Related Articles
 
 * :ref:`Marketing Features <marketing-system-configuration>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

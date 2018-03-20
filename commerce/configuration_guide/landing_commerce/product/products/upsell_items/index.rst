@@ -29,7 +29,7 @@ Enable and Set Up Up-Sell Products per Website
 .. finish_upsell_items_configuration
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

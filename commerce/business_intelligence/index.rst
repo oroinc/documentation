@@ -1,4 +1,5 @@
 .. _user-guide--business-intelligence:
+.. _business-intelligence:
 
 User Guide: Business Intelligence 
 =================================

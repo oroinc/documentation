@@ -54,5 +54,5 @@ From the Product Details
 #. Click **Save and Close** on the top right of the page.
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

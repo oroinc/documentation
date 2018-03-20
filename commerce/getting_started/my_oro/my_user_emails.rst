@@ -211,5 +211,5 @@ See Also
 
 :ref:`Using Emails <user-guide-using-emails>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

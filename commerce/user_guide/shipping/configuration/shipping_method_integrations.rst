@@ -163,6 +163,6 @@ To delete an integration and related shipping methods:
 
 The shipping methods created due to this integration are no longer usable in OroCommerce and cannot be enabled in the shipping rule.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

@@ -29,5 +29,5 @@ Now you can set the price attribute value for every product in the **Product Pri
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

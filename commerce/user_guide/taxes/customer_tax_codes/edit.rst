@@ -31,5 +31,5 @@ You can edit the association of the Customer Tax Code with the tax when `editing
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -41,6 +41,6 @@ You can view and manage logged calls from the following pages in your Oro applic
 
 .. end_manage_calls
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

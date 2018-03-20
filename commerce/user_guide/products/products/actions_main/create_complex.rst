@@ -221,5 +221,5 @@ The product should now be available on the website in the category we have previ
 
 .. stop_product_create_configurable
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

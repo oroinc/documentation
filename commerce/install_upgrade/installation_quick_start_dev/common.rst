@@ -74,13 +74,14 @@ Recommended configuration:
 
 .. code:: ini
 
-    ;512Mb for php5
-    opcache.memory_consumption=512
-
-    ;256Mb for php7
-    opcache.memory_consumption=256
-    opcache.max_accelerated_files=32531
-    opcache.interned_strings_buffer=32
+   opcache.enable=1
+   opcache.enable_cli=0
+   opcache.memory_consumption=512
+   opcache.max_accelerated_files=32531
+   opcache.interned_strings_buffer=32
+   #http://symfony.com/doc/current/performance.html
+   realpath_cache_size=4096K
+   realpath_cache_ttl=600
 
 See `Symfony Performance <http://symfony.com/doc/current/performance.html>`__.
 

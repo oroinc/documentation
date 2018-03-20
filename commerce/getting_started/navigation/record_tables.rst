@@ -204,6 +204,6 @@ To manage saved views, click **Options** next to the view name. The following is
 
 .. image:: /user_guide/img/getting_started/records/Table_Options.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
  

@@ -135,5 +135,5 @@ To create a new entity:
 * :ref:`Examples of Creating Custom Entity Fields <admin-guide-create-entity-fields-example>`
 * :ref:`Manage Entity Fields <admin-guide-manage-entity-fields>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

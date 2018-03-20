@@ -20,7 +20,7 @@ See a short demo on `how to create and manage emails <https://www.orocrm.com/med
 
 In this email guide, you will learn how to:
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

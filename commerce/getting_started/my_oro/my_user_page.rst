@@ -160,5 +160,5 @@ More information on how to setup :ref:`MS Outlook Integration <admin-configurati
 * :ref:`Access Oro <user-guide-log-in>`
 * :ref:`My Menus Configuration <doc-my-user-menus>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

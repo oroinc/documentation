@@ -132,5 +132,5 @@ To customize one of the storefront menus (e.g. commerce main menu) or customer/p
 
 .. stop_2
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

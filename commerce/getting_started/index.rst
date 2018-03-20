@@ -8,13 +8,11 @@ The Getting Started section introduces you to the OroCommerce user interface and
 
 See the following topics for more information:
 
-.. In the first article you will find an overview of the benefits OroCRM can bring to different stakeholders of the customer-relationships management process, and links to let you know where to look for specifics when you get up to speed with the basics.
-
-.. contents:: :local:
-
 .. toctree::
     :maxdepth: 1
 
+    community_vs_enterprise
+    core_features
     access_oro/index
     my_oro/index
     navigation/index
@@ -22,8 +20,12 @@ See the following topics for more information:
     activities/index
     import_export/index
     mass_actions_management_console
-   
+    glossary
 
-    
-    
-..     common_actions/manage_translation
+See Also
+--------
+
+For more advanced concepts, see the following sections:
+
+* :ref:`User Guide: Commerce <user-guide>`
+* :ref:`User Guide: Business Intelligence <business-intelligence>`

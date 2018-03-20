@@ -28,7 +28,7 @@ To create a custom entity field:
 8. Once the field is saved, :ref:`update the schema <admin-guide-update-schema>`, if the storage type for the field is set to **Table Column**. 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 **Related Topics**

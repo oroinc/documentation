@@ -31,5 +31,5 @@ The All Products page should now become available as part of the selected fronte
 .. finish_all_products
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

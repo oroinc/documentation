@@ -30,5 +30,5 @@ As an illustration, you can have a look at how mass actions work for accounts:
 
    .. image:: /frontstore_guide/img/mass_actions/mass_actions_9.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

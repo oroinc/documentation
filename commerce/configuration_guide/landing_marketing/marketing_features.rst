@@ -31,5 +31,5 @@ To toggle the availability of :ref:`marketing lists <user-guide-marketing-lists>
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

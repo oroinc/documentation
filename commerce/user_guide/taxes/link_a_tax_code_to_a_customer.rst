@@ -46,5 +46,5 @@ A clickable tax code link is now available in the Customer and Customer Group de
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

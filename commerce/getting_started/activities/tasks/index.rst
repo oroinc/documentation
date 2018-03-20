@@ -26,6 +26,6 @@ In the Tasks topic, you will learn how to:
    manage_tasks
   
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

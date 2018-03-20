@@ -36,5 +36,5 @@ This way you can apply as many coupons to the order as necessary as long as they
 
 .. finish_add_in_order
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

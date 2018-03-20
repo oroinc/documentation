@@ -22,6 +22,6 @@ You can log a call in the following ways:
 
 .. end_log_call
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

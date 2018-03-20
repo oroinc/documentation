@@ -19,5 +19,5 @@ Additionally, you can provide the translation for all the content elements of yo
 
 .. finish_content_translation
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

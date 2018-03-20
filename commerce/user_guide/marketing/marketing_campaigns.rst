@@ -102,7 +102,7 @@ In the **Tracking Code** section, you can copy a tracking code that may be incor
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. |ViewEvents| image:: /user_guide/img/marketing/marketing/marketing_campaign_view_events.png

@@ -30,5 +30,5 @@ The following page opens:
 
 .. finish_quick_order_form
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

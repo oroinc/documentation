@@ -31,7 +31,7 @@ Configure Theme per Website
    :start-after: begin_body
    :end-before: finish_body
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

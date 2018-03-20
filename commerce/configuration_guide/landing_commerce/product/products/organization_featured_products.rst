@@ -25,5 +25,5 @@ To update the featured products segment for a particular organization:
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -498,7 +498,7 @@ To define a translation:
 
 .. You can find more information on translations in the :ref:`Manage Translations <> guide.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 Detailed Information About System Workflows

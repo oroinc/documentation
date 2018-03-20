@@ -110,5 +110,5 @@ Output:
 
 :ref:`Use Custom Reports <user-guide--business-intelligence--reports--use-custom-reports>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

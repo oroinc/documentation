@@ -163,6 +163,6 @@ It is possible to filter your reports by tags. For instance, we can create a rep
 
 You can create any reports of your choice and filter them by tag in a similar manner.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

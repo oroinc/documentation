@@ -105,5 +105,5 @@ The internal status will be changed to *Deleted*.
 
 .. finish_5
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

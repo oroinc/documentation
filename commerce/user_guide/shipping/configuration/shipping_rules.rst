@@ -304,5 +304,5 @@ To define which columns to show in the table, click |IcSettings| above the table
 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

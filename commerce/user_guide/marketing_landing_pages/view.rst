@@ -31,5 +31,5 @@ You can do the following changes to the landing page in `edit mode <edit>`_ (cli
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -24,5 +24,5 @@ Now the website is marked as default and will be used for the anonymous access.
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

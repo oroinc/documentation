@@ -73,7 +73,7 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Content Translation <content-translation>`
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

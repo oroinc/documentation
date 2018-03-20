@@ -34,5 +34,5 @@ To remove a product from Featured Products block, set **Is Featured** to *No* in
 .. stop_products_actions_featured_remove
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

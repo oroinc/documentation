@@ -31,5 +31,5 @@ Basic information about the payment is shared among all payment methods and incl
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

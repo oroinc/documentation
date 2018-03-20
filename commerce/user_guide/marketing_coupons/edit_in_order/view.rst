@@ -20,5 +20,5 @@ To view the coupon codes that apply to the selected order:
 
 .. finish_view_body
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

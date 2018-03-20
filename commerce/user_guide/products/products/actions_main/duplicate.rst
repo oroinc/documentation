@@ -31,6 +31,6 @@ From the Product View Page
 
 3. Click **Duplicate** on the top right.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

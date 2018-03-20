@@ -42,7 +42,7 @@ Deleting a Quote
 
 Learn :ref:`more ways to delete a quote <quotes--actions--delete>`.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
     :start-after: begin
 
 .. toctree::

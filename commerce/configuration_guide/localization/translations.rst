@@ -90,5 +90,5 @@ Hover over the |IcMore| **More Options** menu at the end of the list header and 
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -308,5 +308,5 @@ To delete multiple attachments, select check boxes in front of the files that yo
 
 .. finish_product_details_view
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

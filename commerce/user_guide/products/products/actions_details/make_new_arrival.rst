@@ -34,5 +34,5 @@ To remove a product from Featured Products block, set **Is New Arrival** to *No*
 .. stop_products_actions_new_arrival_remove
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

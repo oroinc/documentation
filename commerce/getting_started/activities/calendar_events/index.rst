@@ -13,7 +13,7 @@ In Oro application (e.g. in OroCRM and in OroCommerce Management Console), you c
 
 In the Calendar Events topic you will learn how to:
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

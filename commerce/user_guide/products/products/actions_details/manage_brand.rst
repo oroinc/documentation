@@ -57,5 +57,5 @@ The brand filter is now available in the storefront.
 
 .. stop_products_actions_manage_brand
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
