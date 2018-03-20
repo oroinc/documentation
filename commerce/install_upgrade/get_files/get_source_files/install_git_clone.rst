@@ -39,11 +39,11 @@ To prepare for installation:
 
             $ git clone -b 2.3 https://github.com/oroinc/crm-application.git orocrm
 
-         **OroCommerce** (with OroCRM):
+         **OroCommerce** (with CRM):
 
          .. code-block:: bash
 
-            $ git clone --recursive -b 1.3.0 https://github.com/orocommerce/orocommerce-application.git orocommerce
+            $ git clone -b 1.3.0 https://github.com/orocommerce/orocommerce-application.git orocommerce
 
          **OroPlatform**:
 

@@ -11,6 +11,8 @@ Quick Start Installation: OroCommerce Enterprise Edition
 
    where x.y.z is the latest `release tag <https://github.com/oroinc/orocommerce-enterprise-application/releases>`__.
 
+   .. note:: To clone |main_app| version 1.6, run `git clone -b 1.6 https://github.com/oroinc/orocommerce-enterprise-application.git`
+
 .. include:: /install_upgrade/installation_quick_start_dev/commerce-crm.rst
    :start-after: begin_general_commerce_body
    :end-before: finish_general_commerce_body

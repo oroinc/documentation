@@ -11,6 +11,8 @@ Quick Start Installation: OroCRM Enterprise Edition
 
    where x.y.z is latest `release tag <https://github.com/oroinc/crm-enterprise-application/releases>`__.
 
+   .. note:: To clone |main_app| version 2.6, run `git clone -b 2.6 https://github.com/oroinc/crm-enterprise-application.git`
+
 .. include:: /install_upgrade/installation_quick_start_dev/common_process.rst
    :start-after: begin_body
    :end-before: finish_body

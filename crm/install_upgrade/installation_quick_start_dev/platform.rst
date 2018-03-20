@@ -11,11 +11,7 @@ Quick Start Installation: OroPlatform
 
    where x.y.z is the latest `release tag <https://github.com/oroinc/platform-application/releases>`__.
 
-   You can also use the latest master:
-
-   .. code:: bash
-
-      git clone https://github.com/oroinc/platform-application.git
+   .. note:: To clone |main_app| version 2.6, run `git clone -b 2.6 https://github.com/oroinc/platform-application.git`
 
 .. include:: /install_upgrade/installation_quick_start_dev/common_process.rst
    :start-after: begin_body

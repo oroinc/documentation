@@ -3,13 +3,15 @@
 Quick Start Installation: OroCommerce Community Edition
 =======================================================
 
--  Clone https://github.com/orocommerce/orocommerce-application.git repository with:
+-  Clone https://github.com/oroinc/orocommerce-application.git repository with:
 
    .. code:: bash
 
-      git clone -b x.y.z https://github.com/orocommerce/orocommerce-application.git
+      git clone -b x.y.z https://github.com/oroinc/orocommerce-application.git
 
    where x.y.z is the latest `release tag <https://github.com/oroinc/orocommerce-application/releases>`_
+
+   .. note:: To clone |main_app| version 1.6, run `git clone -b 1.6 https://github.com/oroinc/orocommerce-application.git`
 
 .. begin_general_commerce_body
 
