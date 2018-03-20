@@ -3,7 +3,7 @@ Welcome to OroCRM Documentation
 
 .. OroCRM documentation provides several guides to help you understand Oro and use its capabilities as smoothly as possible, and find answers to the questions most frequently asked by the community.
  
-.. note:: OroCRM comes in two editions, Community Edition (CE) and Enterprise Edition (EE) and some features described in the documentation are applicable only to EE. To learn more on difference between editions, see :ref:`OroCRM Community vs Enterprise guide <documentation-intro>`.
+.. note:: OroCRM comes in two editions, Community Edition (CE) and Enterprise Edition (EE) and some features described in the documentation are applicable only to EE. To learn more on difference between editions, see :ref:`OroCRM Community vs Enterprise guide <community-vs-enterprise>`.
 
 
 User Guides
