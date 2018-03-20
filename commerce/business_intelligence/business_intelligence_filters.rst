@@ -119,6 +119,7 @@ To define the activity settings:
 .. image:: /user_guide/img/business_intelligence/filters_12.png
 
 .. _user-guide--business-intelligence--filters-data-audit:
+.. _user-guide-data-audit:
 
 Data Audit
 ----------
@@ -163,6 +164,8 @@ To define the **Condition Group** filter:
     For complex conditions, it is a good idea to draw an outline of the conditions first.
 
 A condition group may also be included into another condition group as a separate filter. 
+
+.. _user-guide-filters-segments:
 
 Segments
 --------

@@ -1,7 +1,7 @@
 .. _user-guide--business-intelligence--dashboards:
 .. _user-guide--business-intelligence--widgets:
+.. _user-guide-dashboards:
 
-.. OroCRM doc on dashboards and widgets is located in: /crm/user_guide/business_intelligence/business_intelligence_dashboards_widgets/index.rst
 
 Dashboards and Widgets
 ======================

@@ -1,4 +1,5 @@
 .. _user-guide--getting-started:
+.. _user-guide-getting-started:
 
 User Guide: Getting Started
 ===========================
