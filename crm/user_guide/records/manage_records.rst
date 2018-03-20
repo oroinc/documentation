@@ -91,7 +91,7 @@ To delete several records:
 Merge Records
 -------------
 
-.. important:: Currently, merging is available for accounts and contacts.
+.. important:: Currently, merging is available for accounts, contacts and campaigns.
 
 To merge records:
 

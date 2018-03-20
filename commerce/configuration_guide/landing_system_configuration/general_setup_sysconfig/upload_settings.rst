@@ -1,4 +1,5 @@
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings:
+.. _admin-configuration-upload-settings:
 
 Upload Settings
 ---------------

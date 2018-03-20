@@ -197,7 +197,6 @@ Advanced Configuration Settings
       </div>
    </div>
 
-.. ref:`Entities Management <>`
 
 .. toctree::
    :includehidden:
@@ -219,7 +218,7 @@ Advanced Configuration Settings
    tags_management/index
    websites/index
 
-.. entities/index
+
 
 
 

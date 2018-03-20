@@ -3,6 +3,7 @@
 .. Should remain orphan, as it is included into the index with TOC
 
 .. _import-bulk-items:
+.. _user-guide-import:
 
 .. begin_global_import
 
