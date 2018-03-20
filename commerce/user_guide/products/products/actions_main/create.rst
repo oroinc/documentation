@@ -32,7 +32,7 @@ Create a Configurable Product
 
 .. finish_create
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

@@ -22,6 +22,6 @@ Payment Rules Configuration
    :start-after: begin
    :end-before: stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

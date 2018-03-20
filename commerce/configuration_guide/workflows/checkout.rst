@@ -118,5 +118,5 @@ As an illustration, let us go through a sample flow to see how the Checkout work
    
    .. image:: /configuration_guide/img/workflows/checkout/order_received.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

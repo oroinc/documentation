@@ -148,5 +148,5 @@ Once you have successfully configured the OroCommerce FedEx integration, and the
 .. stop_fedex_integration
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -74,7 +74,7 @@ The payment methods that were based on this integration are no longer usable in 
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

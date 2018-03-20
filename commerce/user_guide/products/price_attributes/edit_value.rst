@@ -20,5 +20,5 @@ Now you can use the price attribute as a variable parameter in price list genera
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

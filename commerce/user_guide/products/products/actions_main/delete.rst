@@ -53,6 +53,6 @@ Delete a Product (From the Product Details)
 #. In the confirmation dialog, click **Yes, Delete**.
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

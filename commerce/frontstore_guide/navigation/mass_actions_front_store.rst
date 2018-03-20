@@ -37,5 +37,5 @@ To use mass delete action in the storefront, you need to :ref:`sign into the acc
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

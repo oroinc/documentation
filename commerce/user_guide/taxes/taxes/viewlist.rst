@@ -40,6 +40,6 @@ You can perform the following actions with every item in the Tax Rates list:
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

@@ -42,5 +42,5 @@ Once you are done creating a web catalog, update your web-catalog configuration 
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

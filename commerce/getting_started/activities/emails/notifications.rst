@@ -57,5 +57,5 @@ From the page of all notification rules you can perform the following actions to
 
 .. finish_email_notifications
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

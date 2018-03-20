@@ -98,6 +98,6 @@ You can perform the following actions for a specific product from the product li
 * :ref:`Import products <doc--products--actions--import>`
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

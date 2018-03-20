@@ -131,5 +131,5 @@ To share a record, click **Share** on the top right of record page, and enter th
 .. image:: /user_guide/img/getting_started/data_management/view/view_share_01.png
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

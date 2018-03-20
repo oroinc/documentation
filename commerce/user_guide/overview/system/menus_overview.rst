@@ -162,6 +162,6 @@ A **featured_menu** is a storefront menu that enables the administrator to confi
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

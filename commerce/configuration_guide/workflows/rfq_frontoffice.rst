@@ -123,5 +123,5 @@ As an illustration, let us go through a sample flow to see RFQ Submission Flow i
  .. image:: /configuration_guide/img/workflows/rfq/frontoffice/RFQNotes.png
  .. image:: /configuration_guide/img/workflows/rfq/frontoffice/RFQCreateQuote.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

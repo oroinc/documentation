@@ -27,7 +27,7 @@ Actions and transitions available for your records in the application are define
 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
  
   

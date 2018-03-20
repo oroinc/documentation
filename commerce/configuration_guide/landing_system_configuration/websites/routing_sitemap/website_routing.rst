@@ -63,5 +63,5 @@ To change the default routing settings for the website:
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

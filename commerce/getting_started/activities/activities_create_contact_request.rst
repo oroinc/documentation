@@ -33,6 +33,6 @@ All contact requests can be viewed from the page of all contact requests under *
 
 .. note:: You can also check out an article on :ref:`how to create contact requests manually <user-guide-activities-requests-create-manually>` in your Oro application.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

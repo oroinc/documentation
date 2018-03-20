@@ -106,6 +106,6 @@ Related Topics
 * :ref:`Checkout Process in the Storefront <frontstore-guide--orders-checkout>`
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

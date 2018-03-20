@@ -188,7 +188,7 @@ Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettin
     .. image:: /user_guide/img/business_intelligence/dashboards_9.png
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

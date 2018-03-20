@@ -290,7 +290,7 @@ All Products page displays all available products from the master catalog groupe
 
 .. finish_configuration
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

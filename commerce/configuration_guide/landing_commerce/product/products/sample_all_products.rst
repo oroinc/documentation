@@ -60,5 +60,5 @@ Similarly, you can add All Products page to the menus of your choice.
 
 .. finish_all_products
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

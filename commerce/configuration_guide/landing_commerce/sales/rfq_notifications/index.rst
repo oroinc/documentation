@@ -30,7 +30,7 @@ Configure RFQ Notification Options per Organization
    rfq_notifications_global
    rfq_notifications_website
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

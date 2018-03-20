@@ -82,5 +82,5 @@ To create a master catalog category:
 
 .. finish_category_creation
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

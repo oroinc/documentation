@@ -63,5 +63,5 @@ To indicate that the quote's validity period is over from the quote details page
 
 The quote is updated.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
     :start-after: begin

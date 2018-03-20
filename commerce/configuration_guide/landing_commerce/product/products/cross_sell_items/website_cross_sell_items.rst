@@ -37,5 +37,5 @@ To update the cross-sell products settings per website:
 
 .. finish_cross_sell_items_body
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

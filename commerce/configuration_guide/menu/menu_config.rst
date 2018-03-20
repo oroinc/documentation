@@ -227,5 +227,5 @@ To reset any customization changes and roll back to the menu that is provided ou
 
 .. finish_2
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

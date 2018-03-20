@@ -27,7 +27,7 @@ Enable and Set Up Related Products per Website
 .. finish_related_products_configuration
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

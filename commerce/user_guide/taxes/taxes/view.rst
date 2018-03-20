@@ -28,5 +28,5 @@ You can perform the following actions with a Tax Rate:
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

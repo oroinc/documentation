@@ -33,5 +33,5 @@ To configure the price list priority and controlled merge for the customer group
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -23,5 +23,5 @@ When editing the selected order, you can perform the following actions with the 
 
 .. finish_manage_when_editing_an_order
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

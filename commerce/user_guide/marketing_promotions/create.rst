@@ -140,5 +140,5 @@ For the :ref:`shipping <user-guide--shipping>` discount, select the necessary sh
 
    expressions
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

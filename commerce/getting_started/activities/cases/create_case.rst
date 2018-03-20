@@ -57,6 +57,6 @@ To create a new case:
 .. end_create_case
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

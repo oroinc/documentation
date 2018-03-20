@@ -242,7 +242,7 @@ To delete a marketing list:
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. include:: /user_guide/marketing/related_topics.rst

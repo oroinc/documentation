@@ -36,5 +36,5 @@ To change the default product collections indexation frequency:
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

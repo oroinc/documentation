@@ -319,5 +319,5 @@ Let us go through every step of this process:
 
    quote_flows_overview
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

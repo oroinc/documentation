@@ -162,6 +162,6 @@ Icons within event cells represents invitation statuses depending on whether the
 * :ref:`Calendar Events <doc-activities-events>`
 * :ref:`Tasks <doc-activities-tasks>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

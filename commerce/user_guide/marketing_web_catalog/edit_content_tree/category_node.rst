@@ -39,5 +39,5 @@ To add a category node to the menu on the OroCommerce Store Front:
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

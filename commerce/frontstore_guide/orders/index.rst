@@ -455,5 +455,5 @@ Re-Order Option
    sample_guest_checkout
    re-order
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

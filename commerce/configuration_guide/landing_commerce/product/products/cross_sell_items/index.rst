@@ -32,7 +32,7 @@ Enable and Set Up Cross-Sell Products per Website
 
 .. finish_cross_sell_items_configuration
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. toctree::

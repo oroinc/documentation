@@ -222,7 +222,7 @@ To apply a role to a specific user:
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
  
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

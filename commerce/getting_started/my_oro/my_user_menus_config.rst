@@ -291,5 +291,5 @@ Reset a Menu
 :ref:`My User Page <doc-my-user-view-page>`
 :ref:`My System Configuration <doc-my-user-configuration>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

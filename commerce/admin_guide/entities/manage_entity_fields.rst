@@ -86,5 +86,5 @@ Every time you create or delete :ref:`entity fields <doc-entity-fields>` with th
 * :ref:`Provide Basic Entity Field Properties <admin-guide-create-entity-fields-basic>`
 * :ref:`Provide Advanced Entity Field Properties <admin-guide-create-entity-fields-advanced>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -55,5 +55,5 @@ To filter the output of a Best Selling Products report:
 
    .. image:: /user_guide/img/business_intelligence/system_reports_5.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

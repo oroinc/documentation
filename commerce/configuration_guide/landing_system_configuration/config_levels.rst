@@ -49,5 +49,5 @@ By default, all configuration settings are available globally. Whenever you see 
 
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

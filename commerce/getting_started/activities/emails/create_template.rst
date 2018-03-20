@@ -75,6 +75,6 @@ You should now have your template applied to your email.
 
 .. finish_create_template
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

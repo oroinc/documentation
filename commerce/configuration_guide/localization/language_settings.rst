@@ -82,5 +82,5 @@ The following page opens:
 
 .. finish 1
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
     :start-after: begin

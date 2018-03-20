@@ -35,5 +35,5 @@ Next, in the product details, adjust the price attribute values and provide valu
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

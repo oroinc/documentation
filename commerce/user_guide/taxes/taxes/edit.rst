@@ -24,6 +24,6 @@ You can edit the association of the Tax Rate with other tax components when `edi
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

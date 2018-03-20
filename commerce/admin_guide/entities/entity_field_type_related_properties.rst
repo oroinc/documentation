@@ -79,5 +79,5 @@ Depending on the entity type selected when defining the :ref:`basic properties <
 * :ref:`Examples of Creating Custom Entity Fields <admin-guide-create-entity-fields-example>`
 * :ref:`Create Entities <admin-guide-create-entities>`
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

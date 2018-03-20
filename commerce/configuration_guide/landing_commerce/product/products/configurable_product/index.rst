@@ -38,5 +38,5 @@ Customize Configurable Products Settings per Website
    configurable_products_website
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

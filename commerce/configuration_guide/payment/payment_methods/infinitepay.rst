@@ -38,5 +38,5 @@ To enable payments using InfinitePay:
 
 Next, set up a payment rule that enables these payment methods (...) for all or some customer orders.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -98,6 +98,6 @@ Set Up New Arrivals Block per Website
    :end-before: finish
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 

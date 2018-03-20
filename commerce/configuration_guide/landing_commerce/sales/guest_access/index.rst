@@ -267,7 +267,7 @@ Configure Guest Request for Quote Submission per Website
    guest_rfq_website
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

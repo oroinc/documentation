@@ -36,5 +36,5 @@ To enable check/money order payments, complete the following steps:
 
 Next, set up a payment rule that enables this payment method for all or some customer orders.
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -27,5 +27,5 @@ In the Calls topic, you will learn how to:
    manage_calls
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -21,5 +21,5 @@ e) To change the price list priority, click and hold the |IcReorder| **Sort** ic
 
 .. price_list_actions_end
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

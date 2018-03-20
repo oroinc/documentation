@@ -44,5 +44,5 @@ Configure Product Options per Website
    website_options
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

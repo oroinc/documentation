@@ -229,7 +229,7 @@ To include one or several Tracking Website(s) to a marketing campaign, use one o
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 .. include:: /user_guide/marketing/related_topics.rst

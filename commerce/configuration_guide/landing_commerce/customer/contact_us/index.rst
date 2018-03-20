@@ -42,7 +42,7 @@ Configure Contact Us Page per Website
    contact_us_website
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 

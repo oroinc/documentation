@@ -77,5 +77,5 @@ Now, you need to update the translation cache so that all the changes could ente
 
 .. finish
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

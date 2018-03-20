@@ -98,5 +98,5 @@ Open the form View page and go to the **Get Code** section. The code to add your
 
 .. stop
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

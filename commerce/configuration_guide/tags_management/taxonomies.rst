@@ -57,5 +57,5 @@ Within the taxonomies list, you can:
 
    .. image:: /user_guide/img/tags/tags_grid_settings_8.png
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin

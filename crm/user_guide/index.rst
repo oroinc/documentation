@@ -1,47 +1,18 @@
 .. _user-guide-into:
 
-
 User Guide: Getting Started
 ===========================
 
-OroCRM is a highly flexible open source CRM. It can be easily custom-tailored to meet the specific needs of your 
-business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
+OroCRM is a flexible CRM that can be easily custom-tailored to meet the specific needs of your business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
 
-With OroCRM you can easily:
-
-* Store and process all kinds of customer data. 
-
-* Record and analyze your customer interactions.  
-
-* Manage your sales from a prospect to a close deal.
-
-* Manage your marketing campaigns and other marketing activities.
-
-* Provide support for clients and stuff.
-
-* Engage into eCommerce using extensive Magento integration. 
-
-
-This guide will provide you with the overview of all capabilities, tools, and functions of OroCRM. 
-
-It is divided into sections that gradually explain the system from the very basics (e.g. setting up a user profile and generic 
-data management tasks) to more advanced CRM concepts (e.g. the contact and account management). The more 
-specialized areas (handling sales, marketing, and support-specific duties, etc.) are described in the following relevant guides: 
-
-* :ref:`User Guide: Sales <user-guide-sales-index>`
-* :ref:`User Guide: Marketing <user-guide-marketing>`
-* :ref:`User Guide: Support <user-guide-support-index>`
-
-
-The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you find out which sections of this guide are most relevant for your work duties.
-
+The Getting Started guide explains generic concepts and detail the OroCRM basic navigation and use.
 
 .. toctree::
    :includehidden:
    :titlesonly:
-   :maxdepth: 2
+   :maxdepth: 1
 
-   intro_users_and_benefits     
+   community_vs_enterprise
    access_oro/index
    my_oro/index
    navigation/index
@@ -51,7 +22,15 @@ The :ref:`OroCRM Users and Their Benefits <oro-benefits>` page will help you fin
    mass_actions_management_console
    glossary
 
+See Also
+--------
 
+For more advanced CRM concepts, like contact and account management, handling sales, marketing, and support-specific duties, and detailed information on using them, see the following sections:
+
+* :ref:`User Guide: Sales <user-guide-sales-index>`
+* :ref:`User Guide: Marketing <user-guide-marketing>`
+* :ref:`User Guide: Support <user-guide-support-index>`
+* :ref:`User Guide: Business Intelligence <business-intelligence>`
 
 
 

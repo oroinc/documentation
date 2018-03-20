@@ -1521,7 +1521,7 @@ Example. Invalid **Content-Type**
 For more information about the API client requirements, see the `JSON Specification <http://jsonapi.org/format/#content-negotiation-clients>`__.
 
 
-.. include:: /user_guide/include_images.rst
+.. include:: /img/buttons/include_images.rst
    :start-after: begin
 
 
