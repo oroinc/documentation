@@ -20,7 +20,7 @@ Installation Hints
 
       composer install --prefer-dist --no-dev
 
-   .. note:: For Enterprise Editions, it is strongly recommended to use ElasticSearch as a search engine and RabbitMQ as a message queue broker in production.
+   .. note:: For Enterprise Editions, it is strongly recommended to use ElasticSearch as a search engine and RabbitMQ as a message queue broker in production environment.
 
 -  Create the database with the name specified in the previous step (default name is |db_name|).
 

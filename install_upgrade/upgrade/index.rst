@@ -34,7 +34,7 @@ To retrieve a new version and upgrade your OroCommerce instance, please execute 
 
 4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary branch (`maintenance/2.6`) or tag (`2.6`) in the application repository (e.g. ``https://github.com/oroinc/orocrm-application.git``) or download the latest OroCRM version from the `download section on the oroinc.com/orocrm <https://oroinc.com/orocrm/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`2.6`) or tag (`2.6.1`) in the application repository (e.g. ``https://github.com/oroinc/orocrm-application.git``) or download the latest OroCRM version from the `download section on the oroinc.com/orocrm <https://oroinc.com/orocrm/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 
