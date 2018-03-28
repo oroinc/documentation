@@ -39,7 +39,7 @@ The key difference between a regular and a LTS version is the duration of the ma
 
 Below is the approximate schedule of OroCRM releases and support timelines until 2019. Please take into account that numbering of major and minor versions is subject to change.
 
-.. image:: img/release_process/OroCRM_release_schedule.png
+.. image:: img/release_process/OroCRM_release_schedule_3.0.png
 
 +---------------+-------------------+-------------------+-------------------+
 | Version       | Release           | Maintenance ends  | Support ends      |
@@ -60,9 +60,9 @@ Below is the approximate schedule of OroCRM releases and support timelines until
 +---------------+-------------------+-------------------+-------------------+
 | **2.6** (LTS) | **January 2018**  | **June 2019**     | **January 2021**  |
 +---------------+-------------------+-------------------+-------------------+
-| 2.7           | March 2018        | June 2018         | June 2018         |
+| 3.0 Beta      | March 2018        | March 2018        | March 2018        |
 +---------------+-------------------+-------------------+-------------------+
-| 2.8           | May 2018          | August 2018       | August 2018       |
+| 3.0 RC        | May 2018          | May 2018          | May 2018          |
 +---------------+-------------------+-------------------+-------------------+
 | **3.0** (LTS) | **July 2018**     | **January 2020**  | **June 2021**     |
 +---------------+-------------------+-------------------+-------------------+

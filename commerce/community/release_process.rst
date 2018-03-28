@@ -39,7 +39,7 @@ The key difference between a regular and a LTS version is the duration of the ma
 
 Below is the approximate schedule of OroCommerce releases and support timelines until 2019. Please take into account that numbering of major and minor versions is subject to change.
 
-.. image:: /user_guide/img/OroCommerce_release_schedule.png
+.. image:: /user_guide/img/OroCommerce_release_schedule_3.0.png
 
 +------------------+--------------------+---------------------+-------------------+
 | Version          | Release Planned in | Maintenance Ends in | Support Ends in   |
@@ -58,19 +58,19 @@ Below is the approximate schedule of OroCommerce releases and support timelines 
 +------------------+--------------------+---------------------+-------------------+
 | **1.6** (LTS)    | **January 2018**   | **June 2019**       | **January 2021**  |
 +------------------+--------------------+---------------------+-------------------+
-| 1.7              | March 2018         | June 2018           | June 2018         |
+| 3.0 Beta         | March 2018         | March 2018          | March 2018        |
 +------------------+--------------------+---------------------+-------------------+
-| 1.8              | May 2018           | August 2018         | August 2018       |
+| 3.0 RC           | May 2018           | May 2018            | May 2018          |
 +------------------+--------------------+---------------------+-------------------+
-| **2.0** (LTS)    | **July 2018**      | **January 2020**    | **June 2021**     |
+| **3.0** (LTS)    | **July 2018**      | **January 2020**    | **June 2021**     |
 +------------------+--------------------+---------------------+-------------------+
-| 2.1              | September 2018     | December 2018       | December 2018     |
+| 3.1              | September 2018     | December 2018       | December 2018     |
 +------------------+--------------------+---------------------+-------------------+
-| 2.2              | November 2018      | February 2019       | February 2019     |
+| 3.2              | November 2018      | February 2019       | February 2019     |
 +------------------+--------------------+---------------------+-------------------+
-| **2.3** (LTS)    | **January 2019**   | **June 2020**       | **January 2022**  |
+| **3.3** (LTS)    | **January 2019**   | **June 2020**       | **January 2022**  |
 +------------------+--------------------+---------------------+-------------------+
-| 2.4              | March 2019         | June 2019           | June 2019         |
+| 3.4              | March 2019         | June 2019           | June 2019         |
 +------------------+--------------------+---------------------+-------------------+
 
 Upgrade Recommendations
