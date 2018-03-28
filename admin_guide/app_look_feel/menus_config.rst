@@ -368,8 +368,10 @@ See Also
 .. |IcSearch| image:: ../../img/buttons/IcSearch.png
 	:align: middle
 
-.. |IcTranslations| image:: ../../img/buttons/IcTranslations.png
-	:align: middle
+.. |IcTranslations| raw:: html
+   
+   <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
 
-.. |IcTranslationsC| image:: ../../img/buttons/IcTranslationsC.png
-    :align: middle
+.. |IcTranslationsC| raw:: html
+
+   <i class="fa fa-folder fa-lg" aria-hidden="true"></i>
