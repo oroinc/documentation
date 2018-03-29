@@ -37,16 +37,10 @@ You can find information on Magento Integration in :ref:`this <user-guide-magent
 Step 1: Download OroCRM Tracking Extension
 ------------------------------------------
 
-To download OroCRM Tracking extension, use the following link:
-`*https://www.magentocommerce.com/magento-connect/orocrm-tracking.html* <https://www.magentocommerce.com/magento-connect/orocrm-tracking.html>`__
-
-
-
-.. image:: ../../img/web_tracking_magento/magento_extension.jpg
+To download OroCRM Tracking extension, use the following link: https://marketplace.magento.com/oro-oro-tracking.html
 
 
 .. note:: You must be logged in to be able to download extension key.
-
 
 
 Step 2: Configure the Extension on the Magento side
