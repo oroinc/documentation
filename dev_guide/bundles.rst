@@ -137,7 +137,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/dev_guide/background_tasks/cron`
+        * Book: :ref:`Scheduled Tasks via Cron <book-time-based-command-execution>`
 
 `DashboardBundle`_ (OroPlatform)
     Organize widgets that contain useful information on the user's homepage.
@@ -338,7 +338,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/dev_guide/background_tasks/jobs`
+        * Book: :ref:`Scheduled Tasks via Cron <book-time-based-command-execution>`
 
 `MigrationBundle`_ (OroPlatform)
     Allows to version the application's database.
@@ -436,7 +436,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/dev_guide/background_tasks/search`
+        * Book: :doc:`/admin_guide/op_structure/search_index/index`
 
 `SecurityBundle`_ (OroPlatform)
     A flexible security model which allows to protect data integrity and privacy.
@@ -565,7 +565,7 @@ related articles is provided below the description.
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/leads`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/opportunities/index`
         * User guide: :doc:`/user_guide_sales_tools/b2b_sales/index`
-        * User guide: :doc:`/admin_guide/record_mgmt_config/workflow_management`
+        * User guide: :doc:`/admin_guide/workflows/index`
 
 .. _`AccountBundle`: https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/AccountBundle/README.md
 .. _`ActivityBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityBundle/README.md

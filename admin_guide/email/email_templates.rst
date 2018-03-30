@@ -53,7 +53,7 @@ Create Email Templates
 Email Template Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-If :ref:`several languages have been enabled <admin-configuration-language-settings>` for the email templates, move from tab to 
+If :ref:`several languages have been enabled <sys--config--sysconfig--general-setup--language-settings>` for the email templates, move from tab to
 tab, to define the template in different languages.
 
 .. image:: ../img/marketing/email_template_language.png

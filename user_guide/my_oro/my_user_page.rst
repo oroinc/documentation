@@ -30,7 +30,7 @@ There are a number of effective tools and actions available on the page of your 
 
    * You can also see who, how and when modified your profile by clicking **Change History** link. 
 
-    .. image:: /user_guide/img/getting_started/my_oro/My_User_Change_History.png
+    .. image:: /user_guide/img/getting_started/my_oro/my_user_change_history.png
 
 #. **Access user-level configuration options.**
 
@@ -40,7 +40,7 @@ There are a number of effective tools and actions available on the page of your 
 
    To update the details of your profile, click **Edit** on the top right on the page. On the edit page, you can update your credentials, change the password, upload a new avatar, and update email details.
 
-    .. image:: /user_guide/img/getting_started/my_oro/User_Profile_Edit_Page.png
+    .. image:: /user_guide/img/getting_started/my_oro/user_profile_edit_page.png
 
 #. **Perform actions available under the More Actions menu**: 
 
@@ -52,7 +52,7 @@ There are a number of effective tools and actions available on the page of your 
    * :ref:`Change your profile password <user-guide-getting-started-profile-password>`
    * :ref:`Reset your profile password <user-guide-getting-started-profile-password>`
 
-   .. image:: /user_guide/img/getting_started/my_oro/My_User_More_Actions.png
+   .. image:: /user_guide/img/getting_started/my_oro/my_user_more_actions.png
 
    .. note:: Non-default buttons can be added to **More Actions** menu. If you see non-default buttons such as Add Task, Add Event or Add Attachment, please refer to the :ref:`Activities <user-guide-activities>` guide for more information.
 
@@ -60,15 +60,15 @@ There are a number of effective tools and actions available on the page of your 
 
    * In the **General Information** section, you can view the details of your profile, :ref:`create an API key <doc-my-user-actions-api>`, and :ref:`download the latest MS Outlook add-in <admin-configuration-ms-outlook-integration-settings>`.
 
-     .. image:: /user_guide/img/getting_started/my_oro/My_User_General_Details.png
+     .. image:: /user_guide/img/getting_started/my_oro/my_user_general_details.png
 
    * In the **Activity** section, you can see the emails you sent and the calls you logged. If a user mentions you as a context for their activity, this activity also appears on the list. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in OroCommerce.
   
-     .. image:: /user_guide/img/getting_started/my_oro/My_User_Activity.png
+     .. image:: /user_guide/img/getting_started/my_oro/my_user_activity.png
 
    * In the **Additional Information** section, you can view and manage tasks and cases related to you. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in OroCommerce.
 
-     .. image:: /user_guide/img/getting_started/my_oro/My_User_Additional.png
+     .. image:: /user_guide/img/getting_started/my_oro/my_user_additional.png
 
 .. _doc-my-user-actions-api:
 
@@ -81,7 +81,7 @@ When a third-party software requires an API key to integrate with your Oro appli
 2. Click **My User**.
 3. In the **General Information section**, click **Generate Key** next to the API Key label.
 
-   .. image:: /user_guide/img/getting_started/my_oro/My_User_Create_Api.png
+   .. image:: /user_guide/img/getting_started/my_oro/my_user_create_api.png
 
 4. Copy the generated key and use it where required.
 
@@ -112,7 +112,7 @@ You can change your password to the OroCommerce application in 3 ways:
    * **New Password** -- Provide new password. It must be at least 8 characters long and include a lower case letter, an upper case letter, and a number
    * **Repeat New Password** -- Confirm the new passport by typing it in once again.
 
-  .. image:: /user_guide/img/getting_started/my_oro/My_User_Change_Password_Edit_Page.png
+  .. image:: /user_guide/img/getting_started/my_oro/my_user_change_password_edit_page.png
 
 5. Click **Save**. The new password will be sent to your primary email address.
 
@@ -122,7 +122,7 @@ You can change your password to the OroCommerce application in 3 ways:
 2. Click **My User**.
 3. On the page of your profile, click **More Actions > Change Password**.
  
-   .. image:: /user_guide/img/getting_started/my_oro/My_User_Change_Password.png
+   .. image:: /user_guide/img/getting_started/my_oro/my_user_change_password.png
 
 4. Provide new passport in the corresponding field. Alternatively, click **Suggest Password** to generate a secure random password. To see/hide  the entered password, click the |IcShow| **Show** / |IcHide| **Hide** icon next to the **New password** field.
 
@@ -137,7 +137,7 @@ Only administrators can reset passwords.
 3. On the page of your profile, click **More Actions > Reset Password**.
 4. In the dialog box, click **Reset**. The password reset link will be sent to your (admin) primary email address.
 
-    .. image:: /user_guide/img/getting_started/my_oro/My_User_Reset_Password.png
+    .. image:: /user_guide/img/getting_started/my_oro/my_user_reset_password.png
 
 Download MS Outlook Add-in
 --------------------------

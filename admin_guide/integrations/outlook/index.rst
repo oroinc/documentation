@@ -1,5 +1,6 @@
 .. _admin-configuration-ms-outlook-integration-settings:
 .. _user-guide-synch-outlook:
+.. _config-guide--integrations--ms-outlook:
 
 MS Outlook Integration 
 ======================

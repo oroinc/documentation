@@ -118,6 +118,14 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current a, div.sphinxsidebarwr
     display: block;
 }
 
+/* +3 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul.current li.toctree-l2.active a {
+    color: #fff !important;
+    background-color: #8fb3d7;
+    text-decoration: none;
+    display: block;
+}
+
 /* +2.1 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2 a {
     /*color: #fff !important;*/
@@ -125,6 +133,15 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a, di
     background-color: white; /*#eee*/
     text-decoration: none;
 }
+
+/* +3.1 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current ul li.toctree-l3 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul.current li.toctree-l2.active ul li.toctree-l3 a {
+    /*color: #fff !important;*/
+    color: #1394ca !important;
+    background-color: white; /*#eee*/
+    text-decoration: none;
+}
+
 
 div.hiddendocmenu {
     display: none;
@@ -136,11 +153,19 @@ div.hidden {
 
 /* +6 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current ul {
-    display: none;
+    /*display: none;*/
+    display: block;
 }
 
 /* +2.2 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2.active a {
+    color: #111 !important;
+    /*color: #b84926 !important;*/
+    text-decoration: none;
+}
+
+/* +3.2 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current ul li.toctree-l3.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul.current li.toctree-l2.active ul li.toctree-l3.active a {
     color: #111 !important;
     /*color: #b84926 !important;*/
     text-decoration: none;
@@ -152,6 +177,15 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a:hov
     padding: 7px 10px 7px 15px;
     text-decoration: underline;
 }
+
+
+/* new 3.2*/
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current ul li.toctree-l3 a:hover {
+    display: inline-block;
+    padding: 7px 10px 7px 15px;
+    text-decoration: underline;
+}
+
 
 /* new new*/
 div.sphinxsidebarwrapper ul li.toctree-l1 a:hover {
@@ -194,7 +228,22 @@ div.sphinxsidebar ul li.toctree-l2 > a {
     padding: 2px 10px 2px 15px !important;
 }
 
+
+/* +3.4 */
+div.sphinxsidebar ul li.toctree-l3 > a {
+    color: #1394ca;/* !important;*/
+    background-color: white; /*#eee*/
+    font-size: 13px;
+    padding: 2px 10px 2px 15px !important;
+}
+
 div.sphinxsidebar ul li.toctree-l2.current > a, div.sphinxsidebar ul li.toctree-l2.active > a {
+    color: #333 !important;
+    text-decoration: none;
+}
+
+/* +3.4 */
+div.sphinxsidebar ul li.toctree-l3.current > a, div.sphinxsidebar ul li.toctree-l3.active > a {
     color: #333 !important;
     text-decoration: none;
 }
