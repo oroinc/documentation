@@ -16,7 +16,7 @@ Overview
 System-wide Customer Configuration
 ----------------------------------
 
-.. include:: /configuration_guide/landing_commerce/customer/customers/index.rst
+.. include:: /admin_guide/landing_commerce/customer/customers/index.rst
    :start-after: start
    :end-before: stop
 

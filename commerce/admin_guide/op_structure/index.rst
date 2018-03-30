@@ -1,3 +1,5 @@
+.. _admin-op-structure:
+
 Operational Structure
 ---------------------
 
@@ -41,19 +43,19 @@ System Components
 System components are 3rd party software required by the Oro application, and they should be accessible by the application Web Server and the application Consumer. System components can be installed on the same server or on the separate servers that are accessible by the Oro application.
 
 Search Index
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 Application data is indexed based on the application configuration and is stored in the search index. Community Edition supports only DB fulltext search index. The Enterprise Edition supports the highly scalable Elastic Search.
 
 For more information, see :ref:`Search Index <search_index_overview>` overview.
 
 DB
-^^
+~
 
 All application data is stored in the relational database. PostgreSQL is supported by the Enterprise Edition only. MySQL can be used with both Community Edition and Enterprise Edition.
 
 Cache
-^^^^^
+~~~~~
 
 Application functions use cache in order to optimize complex operations processing. By default, in a single server setup, file system is used asa cache storage. In the distributed environment, Redis is recommended as a cache storage.
 
@@ -62,19 +64,19 @@ Application functions use cache in order to optimize complex operations processi
 See more information about the :ref:`cache configuration <op-structure--cache>`.
 
 Message Queue
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 In order to provide proper user experience and scale heavy backend operations, application integrated with message queue where all asynchronous jobs are registered and handled with consumer process. The Community Edition of the message queue component is implemented based on the database and Enterprise Edition requires RabbitMQ for better scale.
 
 See more information about using the :ref:`Message Queue <op-structure--mq--index>`.
 
 SMTP Relay
-^^^^^^^^^^
+~~~~~~~~~~
 
 In order to send emails, Oro application needs SMTP Relay service to be configured.
 
 File Storage
-^^^^^^^^^^^^
+~~~~~~~~~~~~
 
 Application files related to the user data (attachments, images, documents) are stored in the file storage. In case of a single server setup, the server file system is used as the default file storage. In the distributed setup, Oro application supports any file storage supported by `KnpGaufretteBundle <https://github.com/KnpLabs/KnpGaufretteBundle>`_.
 

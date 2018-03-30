@@ -149,12 +149,12 @@ The name of an organization you are currently working with is displayed in the t
 have access to multiple organizations, upon your first login you will see a note with your current organization. Three
 dots to the left are the organization selector.
 
-.. image:: /configuration_guide/img/user_management/organization/multi_org/multi_org_select.png
+.. image:: /admin_guide/img/user_management/organization/multi_org/multi_org_select.png
 
 Click the selector, to see a list of organizations you have access to. Your current organization will be displayed in
 bold. If a System organization exists, it will be shown at the top of the list and shifted left.
 
-.. image:: /configuration_guide/img/user_management/organization/multi_org/multi_org_choice.png
+.. image:: /admin_guide/img/user_management/organization/multi_org/multi_org_choice.png
 
 To switch to another organization, click its name in the list.
 
@@ -169,7 +169,7 @@ field will be shown for each record viewed. The organization field is not editab
 
 When creating a record in a system organization, the user should select an organization to which the record will belong.
 
-.. image:: /configuration_guide/img/user_management/organization/multi_org/multi_org_system1.png
+.. image:: /admin_guide/img/user_management/organization/multi_org/multi_org_system1.png
 
 .. note::
 

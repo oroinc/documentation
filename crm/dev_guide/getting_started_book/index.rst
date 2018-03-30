@@ -6,11 +6,9 @@ Getting Started
 .. toctree::
     :maxdepth: 2
 
-
-    ../../admin_guide/op_structure/index
     differences
     configuration
     localization
     security
     navigation
-    ../../../install_upgrade/index
+

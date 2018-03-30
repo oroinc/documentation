@@ -139,7 +139,7 @@ Developer's Guide
     </div>
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :titlesonly:
    :includehidden:
    :hidden:

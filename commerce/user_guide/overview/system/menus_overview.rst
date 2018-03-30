@@ -17,42 +17,42 @@ In the latter case, the menu items are displayed as icons. For more information,
 
 In a top position, Application Menu (Navigation Bar) looks like a top menu with a drop-down sub-menus that expand once you hover over the parent item:
 
-.. image:: /configuration_guide/img/menus/ApplicationMenu.png
+.. image:: /admin_guide/img/menus/ApplicationMenu.png
 
 In a left position, Application Menu (Navigation Bar) may be collapsed into the icon bar:
 
-.. image:: /configuration_guide/img/menus/ApplicationMenuVertical.png
+.. image:: /admin_guide/img/menus/ApplicationMenuVertical.png
 
 or expanded for visible labels and sub-menu items:
 
-.. image:: /configuration_guide/img/menus/ApplicationMenuVerticalExpanded.png
+.. image:: /admin_guide/img/menus/ApplicationMenuVerticalExpanded.png
 
 Shortcuts
 """""""""
 
 You can find **shortcuts** menu in the top panel of the application, next to the organization name.
 
-.. image:: /configuration_guide/img/menus/shortcut_full.png
+.. image:: /admin_guide/img/menus/shortcut_full.png
 
 It helps you pin the frequently used actions and have them handy. You can launch an action by clicking it in the dynamically generated **Most Used Actions** list. This list is updated as you are using the system, and will initially contain the actions that you use the most.
 
 To access other shortcuts, click **See the full list** to see complete list of shortcut items or use search: start typing the name of a related entity or an action to choose from a list of matching items.
 
-.. image:: /configuration_guide/img/menus/shortcut_full.png
+.. image:: /admin_guide/img/menus/shortcut_full.png
 
 User Menu
 """""""""
 
 In Management Console, user can access their profile configuration, emails, tasks and events via a **usermenu** (by clicking on your name on the top right of the application).
 
-.. image:: /configuration_guide/img/menus/user_menu.png
+.. image:: /admin_guide/img/menus/user_menu.png
 
 Calendar Menu
 """""""""""""
 
 A **calendar_menu** is a service menu that is used on the **My Calendar** page and helps to change the displayed calendar color, hide or remove a calendar.
 
-.. image:: /configuration_guide/img/menus/menus_calendar_menu.png
+.. image:: /admin_guide/img/menus/menus_calendar_menu.png
 
 OroCommerce Storefront Menus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,35 +65,35 @@ Top Links
 
 A **commerce_top_nav** menu defines the links that appear at the top right of the page.
 
-.. image:: /configuration_guide/img/frontend_menu/FrontendTopNavMenu.png
+.. image:: /admin_guide/img/frontend_menu/FrontendTopNavMenu.png
 
 Quick Access
 """"""""""""
 
 A **commerce_quick_access** menu provides quick access to the most frequent or important actions.
 
-.. image:: /configuration_guide/img/frontend_menu/FrontendQuickAccessMenu.png
+.. image:: /admin_guide/img/frontend_menu/FrontendQuickAccessMenu.png
 
 Navigation Bar
 """"""""""""""
 
 A **commerce_main_menu** defines the static content of the OroCommerce Storefront main menu. The leading part of the menu is generated based on the structure of the website web catalog or master catalog. The trailing part is composed of the **commerce_main_menu** items.
 
-.. image:: /configuration_guide/img/frontend_menu/FrontendMainMenu.png
+.. image:: /admin_guide/img/frontend_menu/FrontendMainMenu.png
 
 Footer Links
 """"""""""""
 
 A **commerce_footer_links** defines the structure of the links in the OroCommerce website page footer.
 
-.. image:: /configuration_guide/img/frontend_menu/FrontendFooterMenu.png
+.. image:: /admin_guide/img/frontend_menu/FrontendFooterMenu.png
 
 User and Account Menu Look and Feel
 """""""""""""""""""""""""""""""""""
 
 Storefront user menu is customizable via the `Customer User Menu`_ and `Account Menu`_, and the way it is displayed can be configured globally, on organization, and website levels.
 
-.. image:: /configuration_guide/img/frontend_menu/ShowAllItemsAtOnce.png
+.. image:: /admin_guide/img/frontend_menu/ShowAllItemsAtOnce.png
 
 To configure user menu globally:
 
@@ -118,11 +118,11 @@ To configure user menu on the website level:
 
 .. note:: * When *Show all items at once* is selected, the user menu has the following look in the storefront:
 
-             .. image:: /configuration_guide/img/frontend_menu/ShowAllItemsAtOnce.png
+             .. image:: /admin_guide/img/frontend_menu/ShowAllItemsAtOnce.png
 
           * When *Show subitems in a popup* is selected, the user menu has the following look in the font store:
 
-             .. image:: /configuration_guide/img/frontend_menu/ShowSubitemsInPopup.png
+             .. image:: /admin_guide/img/frontend_menu/ShowSubitemsInPopup.png
 
 Customer User Menu
 """"""""""""""""""
@@ -131,21 +131,21 @@ A **customer_usermenu** is a storefront user menu that defines what a customer w
 
 .. note:: It is only active when user menu template is set to *Show subitems in a popup* in system, organization, or website configuration.
 
-         .. image:: /configuration_guide/img/frontend_menu/UserMenu2.png
+         .. image:: /admin_guide/img/frontend_menu/UserMenu2.png
 
 Account Menu
 """"""""""""
 
 An **oro_customer_menu** is a storefront menu that defines what options the Account section of the user menu is populated with.
 
-.. image:: /configuration_guide/img/frontend_menu/AccMenu.png
+.. image:: /admin_guide/img/frontend_menu/AccMenu.png
 
 Featured Menu
 """""""""""""
 
 A **featured_menu** is a storefront menu that enables the administrator to configure the featured menu items on the homepage.
 
-.. image:: /configuration_guide/img/frontend_menu/featured_menu.png
+.. image:: /admin_guide/img/frontend_menu/featured_menu.png
 
 .. OroCRM Customer/Partner Portal Menus
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -154,11 +154,11 @@ A **featured_menu** is a storefront menu that enables the administrator to confi
       Main Menu
       """""""""
       A **frontend menu** is a main menu on the customer/partner portal.
-      .. image:: /configuration_guide/img/frontend_menu/FrontendMenu.png
+      .. image:: /admin_guide/img/frontend_menu/FrontendMenu.png
       User Menu
       """""""""
       A **customer_usermenu** is a user menu on the customer/partner portal.
-      .. image:: /configuration_guide/img/frontend_menu/FrontendCustomerMenu.png
+      .. image:: /admin_guide/img/frontend_menu/FrontendCustomerMenu.png
 
 .. finish
 

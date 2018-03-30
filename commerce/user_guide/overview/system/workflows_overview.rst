@@ -26,7 +26,7 @@ Each transition connect to steps.
 
 In the example below you can see a simple workflow of a document creation.
 
-.. image:: /configuration_guide/img/workflows/workflows/wf_example.png
+.. image:: /admin_guide/img/workflows/workflows/wf_example.png
 
 The **workflow steps** are "Start" and squares (In progress, Under review, Finished) and correspond to the state of the
 document.

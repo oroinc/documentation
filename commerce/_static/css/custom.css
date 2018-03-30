@@ -166,7 +166,7 @@ div.hidden {
 
 /* +6 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current ul {
-    display: none;
+    /*display: none;*/
 }
 
 /* +2.2 */

@@ -14,7 +14,7 @@ Overview
 Before You Begin: Taxation Configuration
 ----------------------------------------
 
-.. include:: /configuration_guide/landing_commerce/taxation/taxes/index.rst
+.. include:: /admin_guide/landing_commerce/taxation/taxes/index.rst
    :start-after: begin
    :end-before: finish
 

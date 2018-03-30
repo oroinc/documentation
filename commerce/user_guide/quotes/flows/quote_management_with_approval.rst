@@ -5,7 +5,7 @@ Quote Management with Approvals
 
 .. note:: This flows activates when the :ref:`Backoffice Quote Flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` is enabled.
 
-.. include:: /configuration_guide/workflows/backoffice_quote_flow_with_approvals.rst
+.. include:: /admin_guide/workflows/backoffice_quote_flow_with_approvals.rst
    :start-after: quote_in_use
    :end-before: finish
 

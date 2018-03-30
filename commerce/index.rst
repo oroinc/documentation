@@ -165,7 +165,7 @@ This section provides links to the online documentation for the latest OroCommer
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-            <a href="current/configuration-guide">
+            <a href="current/admin-guide">
                <h3><i class="guideline__icon fa fa-spinner"></i><br>
                Configuration</h3></a>
          </div>
@@ -269,8 +269,6 @@ This section provides links to the online documentation for the latest OroCommer
        dev_guide/index
 
        admin_guide/index
-
-       configuration_guide/index
 
        community/index
 

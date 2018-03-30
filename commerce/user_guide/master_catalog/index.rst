@@ -35,7 +35,7 @@ Create a Master Catalog Subcategory
 Configure the Category Visibility
 ---------------------------------
 
-.. include:: /configuration_guide/landing_commerce/customer/customers/visibility.rst
+.. include:: /admin_guide/landing_commerce/customer/customers/visibility.rst
    :start-after: begin
 
 Link the Master Catalog Category to a Web Catalog

@@ -5,6 +5,14 @@ Images
 
 .. begin
 
+.. |IcUpload| raw:: html
+
+   <i class="fa fa-upload fa-lg" aria-hidden="true"></i>
+
+.. |IcDownload| raw:: html
+
+   <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+
 .. |IcClose| raw:: html
 
    <i class="fa fa-close fa-lg" aria-hidden="true"></i>
@@ -334,6 +342,18 @@ Images
 .. |IcCall| raw:: html
 
    <i class="fa fa-phone-square fa-lg"></i>
+
+.. |IcGlobalLevel| raw:: html
+
+   <i class="fa fa-cogs-o fa-lg" aria-hidden="true"></i>
+
+.. |IcOrganizationLevel| raw:: html
+
+   <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
+
+.. |IcUserLevel| raw:: html
+
+   <i class="fa fa-user-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
 
 .. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
    :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png
