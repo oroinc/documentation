@@ -5,7 +5,7 @@ To edit the Tax Rate code, description, and rate:
 
 #. Navigate to **Taxes > Taxes** in the main menu.
 
-#. Hower over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
    The following page opens:
 
    .. image:: /user_guide/img/taxes/taxes/LOS_ANGELES_COUNTY_SALES_TAX_Edit_Taxes_Taxes.png
@@ -18,7 +18,7 @@ To edit the Tax Rate code, description, and rate:
 The Tax Rate is updated.
 
 Association of the Tax Rate with the Tax Rule
-"""""""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can edit the association of the Tax Rate with other tax components when `editing the tax rule details <../tax_rule/edit>`_ (see the respective topic for more information).
 

@@ -1,3 +1,5 @@
+.. _user-guide--taxes--tax-rates:
+
 Taxes (Tax Rates)
 -----------------
 
@@ -20,15 +22,16 @@ Taxes (Tax Rates)
 .. include:: /user_guide/taxes/taxes/edit.rst
    :end-before: stop
 
-Export
-^^^^^^
+Export Tax Rates
+^^^^^^^^^^^^^^^^
 
 You can export the tax rate details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
-Import
-^^^^^^
+Import Tax Rates
+^^^^^^^^^^^^^^^^
 
-You can import the bulk details of tax rate information in the .csv format following the steps described in the :ref:`Importing Taxes <import-taxes>` guide.
+.. include:: /getting_started/import_export/import_taxes.rst
+   :start-after: start
 
 .. finish
 

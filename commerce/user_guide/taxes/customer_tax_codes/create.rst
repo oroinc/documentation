@@ -1,6 +1,8 @@
 Create a Customer Tax Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. begin
+
 To create a new Customer Tax Code:
 
 #. Navigate to **Taxes > Customer Tax Codes** in the main menu.

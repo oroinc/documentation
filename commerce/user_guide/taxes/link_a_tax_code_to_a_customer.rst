@@ -1,15 +1,16 @@
 .. _user-guide--taxes--link-a-tax-code-to-a-customer:
 
-.. begin
-
 Link a Tax Code to a Customer or Customer Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. begin
+
 Customer
 """"""""
 
 To link a tax code to a customer:
 
-#. Navigate to the necessary customer and open it for editing (e.g. click **Customers > Customers** in the main menu, filter customers to find the one you need, hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details).
+#. Navigate to the necessary customer and open it for editing (e.g. click **Customers > Customers** in the main menu, filter customers to find the one you need, hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details).
 
 #. In the **General** section, in the Tax Code list, select the tax code that matches customer's tax obligations.
 
@@ -30,7 +31,7 @@ A tax code assigned to a customer group is by default applied to the customers i
 
 To link a tax code to a customer group:
 
-#. Navigate to the necessary customer group and open it for editing (e.g. click **Customers > Customer Groups** in the main menu, filter customer groups to find the one you need, hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details).
+#. Navigate to the necessary customer group and open it for editing (e.g. click **Customers > Customer Groups** in the main menu, filter customer groups to find the one you need, hover over the |IcMore| **More Options** menu to the right of the item and click  |IcEdit| to start editing its details).
 
 #. In the **General** section, in the Tax Code list, select the tax code that matches customer's tax obligations.
 

@@ -1,6 +1,8 @@
 Create a Product Tax Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. begin
+
 To create a new Product Tax Code:
 
 #. Navigate to **Taxes > Product Tax Codes** in the main menu.

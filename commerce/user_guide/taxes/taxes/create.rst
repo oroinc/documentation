@@ -1,6 +1,8 @@
 Create a Tax Rate
 ^^^^^^^^^^^^^^^^^
 
+.. begin
+
 To create a new Tax Rate:
 
 #. Navigate to **Taxes > Taxes** in the main menu.

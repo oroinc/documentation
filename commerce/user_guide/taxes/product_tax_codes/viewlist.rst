@@ -6,7 +6,7 @@ To view all Product Tax Codes, navigate to **Taxes > Product Tax Codes** in the 
 .. image:: /user_guide/img/taxes/product_tax_codes/All_ProductTaxCodes_Taxes.png
    :class: with-border
 
-.. note:: To handle big volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
+.. note:: To handle a big volume of data, use the page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
 
 The following information about the Product Tax Codes is available in the Product Tax Codes list:
 
@@ -27,14 +27,12 @@ The following information about the Product Tax Codes is available in the Produc
 You can perform the following actions with every item in the Product Tax Codes list:
 
  * `View a Product Tax Code details <view>`_: Click on the item to open its details page.
-   
-   OR
-   
-   Aternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
 
- * `Edit a Product Tax Code details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
+   Alternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page.
 
- * Delete a Product Tax Code: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcDelete| to remove the Product Tax Code.
+ * `Edit a Product Tax Code details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
+
+ * Delete a Product Tax Code: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcDelete| to remove the Product Tax Code.
 
  * `Create Account Tax Code <create>`_: Click **Create Account Tax Code** to the top right from the list. 
 

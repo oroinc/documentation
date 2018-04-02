@@ -1,7 +1,7 @@
 View Tax Rule Details
 ~~~~~~~~~~~~~~~~~~~~~
 
-To view a Tax Rule details: 
+To view Tax Rule details:
 
 #. Navigate to **Taxes > Tax Rules** in the main menu. 
 
