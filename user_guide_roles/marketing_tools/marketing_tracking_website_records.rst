@@ -12,7 +12,7 @@ monitor.
 .. note::
 
     Tracking of Magento stores is pre-implemented and available with the extension at 
-    http://www.magentocommerce.com/magento-connect/orocrm-tracking.html
+    https://marketplace.magento.com/oro-oro-tracking.html
 
 
 
