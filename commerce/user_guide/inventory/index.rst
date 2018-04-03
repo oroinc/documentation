@@ -10,8 +10,9 @@ This topic contains the following sections:
 Overview
 --------
 
-.. include:: /user_guide/overview/inventory_overview.rst
-  :start-after: begin
+Inventory in OroCommerce helps you track the availability of your product in one or more warehouses, display it for the buyer and sales people, and automatically adjust it after every operation in OroCommerce.
+
+You can create one or more warehouses, configure inventory management options, manage product inventory status and track product quantities in every warehouse.
 
 .. note::
     See a short demo on `how to work with inventory and warehouses <https://www.orocommerce.com/media-library/how-to-setup-inventory-and-warehouses>`_, or keep reading the step-by-step guidance below.
@@ -19,6 +20,13 @@ Overview
     .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/L9dPdjbJmxI" frameborder="0" allowfullscreen></iframe>
+
+Before You Begin
+----------------
+
+* :ref:`Create warehouses <user-guide--inventory--warehouse--create>` to store your inventory.
+
+* :ref:`Manage Warehouses <user-guide--inventory--warehouses--view>` - view warehouse details, edit them, and delete the warehouse.
 
 System-wide Inventory Configuration
 -----------------------------------

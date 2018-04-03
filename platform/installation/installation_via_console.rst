@@ -95,7 +95,9 @@ If any problem occurs, you can see the details in ``app/logs/oro_install.log`` f
       --disabled-listeners=DISABLED-LISTENERS  Disable optional listeners, "all" to disable all listeners, command "oro:platform:optional-listeners" shows all listeners (multiple values allowed)
       -v | vv | vvv, --verbose                 Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debugHelp:  Oro Application Installer.
 
-.. _silent-installation:
+.. finish_installation_via_console
+
+.. begin_silent_installation_via_console
 
 Silent Installation
 ^^^^^^^^^^^^^^^^^^^
@@ -126,3 +128,5 @@ If any problem occurs, you can see the details in ``app/logs/oro_install.log`` f
 .. hint:: Normally, the installation process is terminated if it detects an already-existing installation. Use the "--force" option to overwrite an existing installation, e.g. during your development process.
 
 .. hint:: After the installation finished remember to run ``php app/console oro:api:doc:cache:clear`` to warm-up the API documentation cache. This process may take several minutes.
+
+.. finish_silent_installation_via_console

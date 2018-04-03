@@ -5,29 +5,20 @@ View and filter all Warehouses
 
 To view all Warehouses, navigate to **Inventory > Warehouses** in the main menu.
 
-.. include:: /user_guide/overview/inventory/warehouses_overview.rst
-  :start-after: begin
-
-Preview:
-
 .. image:: /user_guide/img/inventory/warehouses/Warehouses.png
    :class: with-border
 
-**Next steps**
+You can perform the following actions here:
 
-You can perform the following actions with every item in the Warehouses list:
-   
-  * `View a Warehouse details <view>`_: Click on the item to open its details page.
-   
-   OR
-   
-   Alternatively: Click the |IcView| to the right of the item to open its details page.
+* `Create Warehouse <./create>`_
 
- * `Edit a Warehouse details <edit>`_: Click the |IcEdit| to the right of the item to start editing its details.
+* **View Warehouse details**: Click on the warehouse to open its details page.
 
-You can perform the following actions on the Warehouses page:
+* **Edit Warehouse details**: Click |IcEdit| at the end of the row to start editing the selected warehouse details. You might need to click the |IcMore| **More Options** menu at the end of the row to reach the |IcEdit| icon.
 
- * `Create Warehouse <./create>`_
+* **Delete a Warehouse**: Click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
+
+  .. note:: If the warehouse has been enabled in the global system configuration with no other warehouses enabled, you cannot delete it.
 
 .. finish
 
