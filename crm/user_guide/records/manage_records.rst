@@ -70,6 +70,7 @@ Ellipsis menu, or the more options menu, is located on the page of all records, 
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_deleterecord.png
 
+.. _user-guide--getting-started--mass-actions-management-console:
 .. _doc-grids-actions-records-delete-multiple:
 
 Remove Multiple Records
