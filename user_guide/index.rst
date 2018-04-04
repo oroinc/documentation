@@ -19,7 +19,6 @@ The Getting Started guide explains generic concepts and detail the OroCRM basic 
    records/index
    activities/index
    import_export/index
-   mass_actions_management_console
    glossary
 
 See Also
