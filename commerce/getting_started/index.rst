@@ -19,7 +19,6 @@ See the following topics for more information:
     records/index
     activities/index
     import_export/index
-    mass_actions_management_console
     glossary
 
 See Also
