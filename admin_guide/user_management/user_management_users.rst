@@ -1,11 +1,13 @@
 .. _user-management-users:
 
 User Management—Users
-======================
+=====================
+
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
 
 .. contents:: :local:
     :depth: 3
-
 
 Overview
 --------
@@ -405,7 +407,7 @@ You can delete a phone activity. To do this, click the |IcDelete| **Delete** ico
 |
 
 
-For a phone activity, you can call the user via Google Hangouts, if such functionality is enabled. To do this, point to the user's phone number and click the **Hangouts** icon next to it. For how to enable Google Hangouts functionality, see the `Voice and Video Calls via Hangouts <../integrations/hangouts>`__ guide.
+For a phone activity, you can call the user via Google Hangouts, if such functionality is enabled. To do this, point to the user's phone number and click the **Hangouts** icon next to it. For how to enable Google Hangouts functionality, see the :ref:`Voice and Video Calls via Hangouts <user-guide-hangouts>` guide.
 
 
 |
@@ -415,7 +417,7 @@ For a phone activity, you can call the user via Google Hangouts, if such functio
 |
 
 
-For more information about activities, see the `OroCRM Activities Overview <../../user-guide/activities/activities-overview>`__ guide.
+For more information about activities, see the :ref:`OroCRM Activities Overview <user-guide-activities>` guide.
 
 
 Additional Information Section
@@ -438,7 +440,7 @@ Tasks are activities that need to be accomplished by a user. Keeping track on ta
 
 You can filter tasks by a variety of parameters. To open the task view page, click this task in the grid.
 
-For more information about tasks management, see the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
+For more information about tasks management, see the :ref:`Add Task and Assign Task <doc-activities-tasks>` guide.
 
 
 Cases Subsection
@@ -501,7 +503,7 @@ Send Email to a User
 |
 
 
-4. In the **Send Email** dialog box, specify the required data. For help on this, see the beginning of the `Send Email <../../user-guide/activities/activities-send-email>`__ guide.
+4. In the **Send Email** dialog box, specify the required data. For help on this, see the beginning of the :ref:`Send Email <user-guide-activities-emails>` guide.
    
 |
 
@@ -528,7 +530,7 @@ Log a User's Call
 |
 
 
-4. In the **Log Call** dialog box, specify the required data. For help on this, see the `Log a Call Related to Another Entity Record <./activities-log-call#log-a-call-related-to-another-entity-record>`__ section of the `Log Call <../../user-guide/activities/activities-log-call>`__ guide.
+4. In the **Log Call** dialog box, specify the required data. For help on this, see the **Log a Call Related to Another Entity Record** section of the :ref:`Log Call <doc-activities-calls>` guide.
    
 |
 
@@ -555,7 +557,7 @@ Assign an Event to a User
 |
 
 
-4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the `Add an Event for a Related Record <../../user-guide/activities/activities-add-assign-calendar-events#add-an-event-for-a-related-record>`__ section of the `Add and Assign Calendar Events <../../user-guide/activities/activities-add-assign-calendar-events>`__ guide.
+4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the **Add an Event for a Related Record** section of the :ref:`Add and Assign Calendar Events <doc-activities-events-actions-add-detailed>` guide.
    
 |
 
@@ -582,7 +584,7 @@ Assign a Task to a User
 |
 
 
-4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the `Add a Task for Another Record <../../user-guide/activities/activities-add-assign-tasks#add-a-task-for-another-record>`__ section of the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
+4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the **Add a Task for Another Record** section of the :ref:`Add Task and Assign Task <doc-activities-tasks>` guide.
    
 |
 
@@ -996,24 +998,24 @@ You can delete multiple users at a time.
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
 	:align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
 	:align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
 	:align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
 	:align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
 	:align: middle
 
-.. |IcShow| image:: ../../img/buttons/IcShow.png
+.. |IcShow| image:: /img/buttons/IcShow.png
 	:align: middle
 
-.. |IcHide| image:: ../../img/buttons/IcHide.png
+.. |IcHide| image:: /img/buttons/IcHide.png
 	:align: middle
 

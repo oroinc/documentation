@@ -4,6 +4,9 @@
 Access / Role Management
 ========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
     :depth: 3
 
@@ -54,7 +57,7 @@ For how to configure roles, see the `Roles Management <./access-management-roles
 
 For more information on access levels, see the `Access Levels <./access-management-access-levels>`__ guide.
 
-For how to configure which business units and organization the user has access to, see the `User Access Settings <./access-management-user-asccess-settings>`__ guide.
+For how to configure which business units and organization the user has access to, see the `User Access Settings <./access-management-user-access-settings>`__ guide.
 
 For how to define which entity can be an owner of the entity, see the `Ownership Type <./access-management-ownership-type>`__ guide.
 

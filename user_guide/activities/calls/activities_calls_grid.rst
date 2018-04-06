@@ -3,12 +3,15 @@
 Calls Page
 ==========
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Description
 -----------
 
 |
 
-.. image:: ../../img/activities/activities_calls.png
+.. image:: /user_guide/img/activities/activities_calls.png
 
 |
 
@@ -48,7 +51,7 @@ To view a call log, you can also click the corresponding row itself.
 
 |
 
-.. image:: ../../img/activities/calls_grid_actions.png
+.. image:: /user_guide/img/activities/calls_grid_actions.png
 
 |
 

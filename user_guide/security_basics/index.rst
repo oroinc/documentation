@@ -1,6 +1,9 @@
 Security Basics
 ==================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Access and Permissions Basics
 ------------------------------
 
@@ -33,6 +36,7 @@ guide.
   
 
 .. toctree::
-    :hidden:
+   :titlesonly:
+   :hidden:
 
-    data_management_data_audit
+   data_management_data_audit

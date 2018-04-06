@@ -3,6 +3,9 @@
 Integration with Zendesk
 ========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 OroCRM supports out of the box integration with Zendesk, allowing you to load data from your Zendesk account and 
 process it in OroCRM. This article describes how to define and edit the integration and synchronization settings.
 
@@ -330,18 +333,18 @@ Further Synchronizations
 
 
 
-.. |IcCross| image:: ../../img/buttons/IcCross.png
+.. |IcCross| image:: /img/buttons/IcCross.png
    :align: middle
 
-.. |BSchedule| image:: ../../img/buttons/BSchedule.png
+.. |BSchedule| image:: /img/buttons/BSchedule.png
    :align: middle
 
    
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

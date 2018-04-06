@@ -3,6 +3,9 @@
 Import and Export Data
 ======================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 OroCRM's import and export functionality is a simple way of working with multiple records in the .CSV format.
 
 If the functionality is enabled for an entity, :guilabel:`Export` and :guilabel:`Import` buttons are displayed
@@ -86,5 +89,5 @@ file will be save in compliance to your browser settings.
 
 
 
-.. |Bdropdown| image:: ../../img/buttons/Bdropdown.png
+.. |Bdropdown| image:: /img/buttons/Bdropdown.png
    :align: middle

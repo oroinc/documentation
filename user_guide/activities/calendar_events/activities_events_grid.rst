@@ -4,9 +4,12 @@
 All Calendar Events Grid
 ========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 |
 
-.. image:: ../../img/activities/activities_calendarevents_grid_1.10.png
+.. image:: /user_guide/img/activities/activities_calendarevents_grid_1.10.png
 
 |
 
@@ -47,7 +50,7 @@ To view a calendar event, you can also click the corresponding row itself.
 
 |
 
-.. image:: ../../img/activities/activities_events_grid_actions.png
+.. image:: /user_guide/img/activities/activities_events_grid_actions.png
 
 |
 

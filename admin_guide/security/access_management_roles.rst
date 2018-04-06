@@ -3,6 +3,9 @@
 Roles Management
 ================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
     :depth: 3
 
@@ -15,7 +18,7 @@ Roles Creation
 ^^^^^^^^^^^^^^^
 
 Usually roles are created based on the user's job functions: sales manager, marketing team member, administrator. But this is not a strict rule. You can create as many roles as required and configure them according to the needs of your company. 
-For how to create a role, see the `Create a Role <./access-management-roles-actions#create-a-role>`__ section of the the `Actions with Roles <./access-management-roles-actions>`__ guide. 
+For how to create a role, see the **Create a Role** section of the the `Actions with Roles <./access-management-roles-actions>`__ guide.
 
 
 
@@ -107,7 +110,7 @@ Assign and Combine Roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each OroCRM user must be assigned a role. A user can have several roles. This is a logical approach if we assume that roles may be based on job functions. For example, if you have roles 'Leads Development Representative' and 'Sales Representative' and some employees do both of these jobs, you simply assign them both roles instead of creating a specialized role that will cover the whole range of required permissions. 
-For how to assign a role to a user, see the `Assign Roles While Creating a New User <access_roles_management#assign-roles-while-creating-a-new-user>`__ section. 
+For how to assign a role to a user, see the **Assign Roles While Creating a New User** :ref:`section <access-management-user-access-settings>`.
 
 
 If a user has two or more roles with different permissions, in the result the user will have the maximum of rights granted by all of them.   
@@ -142,7 +145,7 @@ For more information about the field level ACLs, see the `Permissions for an Ent
 Links
 ------
 
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-interface>`__ guide.
 
 For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
 
@@ -154,11 +157,11 @@ For examples on roles application, see the `Access Configuration Examples <./acc
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
 	:align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
 	:align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
 	:align: middle

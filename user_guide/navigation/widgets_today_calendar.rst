@@ -4,6 +4,9 @@
 Today's Calendar Widget
 =======================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 This widget displays events planned for today and your tasks due today. The events displayed may belong to your personal calendar or other calendars that you watch. The list of calendars that you can see is the same as selected on the :ref:`My Calendar <doc-my-oro-calendar>` page.
 
 
@@ -146,29 +149,29 @@ Tasks:
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
    :align: middle
 
 
-.. |IcShow| image:: ../../img/buttons/IcShow.png
+.. |IcShow| image:: /img/buttons/IcShow.png
    :align: middle
 
-.. |IcHide| image:: ../../img/buttons/IcHide.png
+.. |IcHide| image:: /img/buttons/IcHide.png
    :align: middle
 
-.. |IcPassReset| image:: ../../img/buttons/IcPassReset.png
+.. |IcPassReset| image:: /img/buttons/IcPassReset.png
    :align: middle
 
-.. |IcDisable| image:: ../../img/buttons/IcDisable.png
+.. |IcDisable| image:: /img/buttons/IcDisable.png
    :align: middle
 
-.. |IcIncoming| image:: ../../img/buttons/IcIncoming.png
+.. |IcIncoming| image:: /img/buttons/IcIncoming.png
    :align: middle
 
-.. |IcOutgoing| image:: ../../img/buttons/IcOutgoing.png
+.. |IcOutgoing| image:: /img/buttons/IcOutgoing.png
    :align: middle
 
-.. |IcMoveW| image:: ../../img/buttons/IcMoveW.png
+.. |IcMoveW| image:: /img/buttons/IcMoveW.png
    :align: middle
 
 

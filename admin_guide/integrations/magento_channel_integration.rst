@@ -4,6 +4,9 @@
 Integration with Magento
 ========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 OroCRM supports out of the box integration with Magento.
 The integration enables loading  data from and to a Magento-based eCommerce store ("Magento store") and processing it in
 the OroCRM.
@@ -312,10 +315,10 @@ can be added to the system.
 
 
 
-.. |IcCross| image:: ../../img/buttons/IcCross.png
+.. |IcCross| image:: /img/buttons/IcCross.png
    :align: middle
 
-.. |BSchedule| image:: ../../img/buttons/BSchedule.png
+.. |BSchedule| image:: /img/buttons/BSchedule.png
    :align: middle
 
 .. |Services| image:: ../img/magento_integration/services.png

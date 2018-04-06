@@ -4,6 +4,9 @@
 Task List Widget
 ================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 This widget displays tasks assigned to you.
 
 The widget's look on the minimized sidebar pannel:

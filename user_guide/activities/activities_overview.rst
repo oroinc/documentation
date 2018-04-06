@@ -3,6 +3,9 @@
 Get Started with Activities
 ===========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. begin_activities_overview
 
 Activities are actions that employees of your company perform on a daily basis. The range of these actions is quite wide. Employees define and fulfill job tasks, handle different issues, communicate with colleagues and customers, participate in events. Hence, it is important to have a good tool that gives a possibility to conveniently keep track on and manage all these actions.

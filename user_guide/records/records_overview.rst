@@ -5,6 +5,9 @@
 How Data Is Organized
 ======================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 The customer relationship management process requires us to collect and process huge amounts of information. OroCRM is
 designed to do this in the most efficient and convenient way possible.
 
@@ -22,7 +25,7 @@ for it. If something has changed (e.g., the phone number), the properties are up
 New records can be created and the existing record can be updated both manually and automatically 
 (as a result of integration with third-party systems). 
 
-With OroCRM's comprehensive `access settings <./access-roles-management>`__ you can define what users 
+With OroCRM's comprehensive :ref:`access settings <user-guide-user-management-permissions>` you can define what users
 will be able to view, update, delete, and create records of specific entities.
 
 As soon as a property has been updated, all the system users who have access permission will see its new updated state.
@@ -171,25 +174,25 @@ details in order to make their work more efficient. More information can be foun
     
 
  
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
    
-.. |IcSettings| image:: ../../img/buttons/IcSettings.png
+.. |IcSettings| image:: /img/buttons/IcSettings.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    
-.. |IcBulk| image:: ../../img/buttons/IcBulk.png
+.. |IcBulk| image:: /img/buttons/IcBulk.png
    :align: middle
    
-.. |ScrollPage| image:: ../../img/buttons/scroll_page.png
+.. |ScrollPage| image:: /img/buttons/scroll_page.png
    :align: middle
    
-.. |BRefresh| image:: ../../img/buttons/BRefresh.png
+.. |BRefresh| image:: /img/buttons/BRefresh.png
    :align: middle
 
-.. |BReset| image:: ../../img/buttons/BReset.png
+.. |BReset| image:: /img/buttons/BReset.png

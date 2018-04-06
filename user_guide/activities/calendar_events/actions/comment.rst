@@ -3,14 +3,18 @@
 Comment on a Calendar Event
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
+
 
 .. _doc-activities-events-actions-comment-viewpage:
 
 From the Calendar Event View Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin
+.. begin_comment
 
 To comment on a Calendar Event when viewing the event details:
 

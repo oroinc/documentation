@@ -3,6 +3,9 @@
 Shortcuts
 =========
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Shortcuts are used to quickly perform common actions from anywhere. They can also be used to create new records and to 
 navigate through the system with ease. Shortcuts are particularly useful when you are not sure where an entity is in a 
 menu.
@@ -42,7 +45,7 @@ All the :ref:`menu and sub-menu items <user-guide-navigation-menu>` and
 
 
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
 
 .. |shortcut| image:: ../img/navigation/panel/shortcut.png
 

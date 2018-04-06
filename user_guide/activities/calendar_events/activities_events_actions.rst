@@ -3,6 +3,9 @@
 Manage Calendar Events
 ======================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Each topic of this section guides you through the steps required to perform one of the actions related to calendar events.
 As there is usually more than one way to start the same action, only the most straightforward way is described here. Follow the links at the end of the topics to learn about the alternative ways to start the action.
 
@@ -52,7 +55,7 @@ Edit a Calendar Event
    * You can add reminders for the event that have not yet started.
 
 .. include:: actions/edit.rst
-   :start-after: begin
+   :start-after: begin_edit
    :end-before: finish
 
 Get :ref:`more information on editing a calendar event from other perspectives <doc-activities-events-actions-edit-detailed>`.
@@ -118,7 +121,7 @@ Comment on a Calendar Event
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: actions/comment.rst
-   :start-after: begin
+   :start-after: begin_comment
    :end-before: finish
 
 Get :ref:`more information about commenting on a calendar event from other perspectives <doc-activities-events-actions-comment-detailed>`.

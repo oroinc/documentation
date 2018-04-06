@@ -1,6 +1,9 @@
+.. _entity-fields-types:
 
 Field Types
-============
+===========
+
+.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/entity-fields-basic-properties#admin-guide-create-entity-fields-basic>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/entity-fields-basic-properties#admin-guide-create-entity-fields-basic>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities/entity-fields-basic-properties>`_.
 
 .. contents:: :local:
     :depth: 3

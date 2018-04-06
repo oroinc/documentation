@@ -3,6 +3,9 @@
 OroCRM Users and Their Benefits
 ===============================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 This chapter of the guide explains the most common OroCRM user roles in order to help you understand which sections of 
 this user guide best match your work duties.
 

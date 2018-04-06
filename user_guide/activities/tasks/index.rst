@@ -3,6 +3,9 @@
 Tasks
 =====
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. include:: ../activities_overview.rst
    :start-after: start_include_tasks
    :end-before: end_include_tasks
@@ -26,6 +29,7 @@ Tasks
 
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 1
    :hidden:
 

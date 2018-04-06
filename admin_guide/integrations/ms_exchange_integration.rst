@@ -3,6 +3,9 @@
 Integration with Microsoft Exchange Server
 ==========================================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 OroCRM Enterprise Edition supports integration with Microsoft Exchange server. This means that 
 emails from mailboxes on the MS Exchange server can be automatically uploaded of to OroCRM.
 

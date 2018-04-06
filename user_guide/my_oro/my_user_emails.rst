@@ -3,6 +3,9 @@
 My Emails
 =========
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 To reach the **My Emails** page:
 
 1.  Navigate to your user name in the upper-right corner.

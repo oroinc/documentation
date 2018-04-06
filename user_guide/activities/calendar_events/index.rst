@@ -3,6 +3,9 @@
 Calendar Events
 ===============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 In OroCRM and in OroCommerce Management Console, you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in OroCRM and OroCommerce (e.g. a demo may be linked to the opportunity in OroCRM and to the request for quote in OroCommerce).
 
 Please see the :ref:`short overview of calendar events <doc-activities-overview-events>` for additional details.
@@ -26,7 +29,7 @@ You can perform most of these actions while working with:
 
    |
 
-   .. image:: ../../img/activities/activities_calendarevents_grid_1.10.png
+   .. image:: /user_guide/img/activities/activities_calendarevents_grid_1.10.png
 
    |
 
@@ -35,7 +38,7 @@ You can perform most of these actions while working with:
 
    |
 
-   .. image:: ../../img/activities/events_view_fromgrid2.png
+   .. image:: /user_guide/img/activities/events_view_fromgrid2.png
 
    |
 
@@ -44,7 +47,7 @@ You can perform most of these actions while working with:
 
    |
 
-   .. image:: ../../img/activities/add_event_my_calendar.png
+   .. image:: /user_guide/img/activities/add_event_my_calendar.png
 
    |
 
@@ -54,7 +57,7 @@ You can perform most of these actions while working with:
 
    |
 
-   .. image:: ../../img/activities/add_event_todays_calendar.png
+   .. image:: /user_guide/img/activities/add_event_todays_calendar.png
 
    |
 
@@ -62,12 +65,13 @@ You can perform most of these actions while working with:
 
    |
 
-   .. image:: ../../img/activities/events_view_fromactivities2.png
+   .. image:: /user_guide/img/activities/events_view_fromactivities2.png
 
    |
 
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 1
    :hidden:
 

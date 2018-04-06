@@ -1,5 +1,7 @@
 Actions with Entities
-======================
+=====================
+
+.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities>`_.
 
 .. contents:: :local:
     :depth: 3
@@ -183,7 +185,7 @@ Create an Entity
      Mandatory. 
      Default value is **None**. 
    
-   - **Auditable**—This subsection defines whether system will log what actions are performed with the entity records and who performed them, and users with the corresponding permissions will be able to check it in the **Change History** and **Data Audit** sections of the system. For more information about the data audit, see the `Data Audit <../security/security_data_audit>`__ guide.
+   - **Auditable**—This subsection defines whether system will log what actions are performed with the entity records and who performed them, and users with the corresponding permissions will be able to check it in the **Change History** and **Data Audit** sections of the system. For more information about the data audit, see the `Data Audit <../security/security-data-audit>`__ guide.
    
      |
 
@@ -475,19 +477,19 @@ For the information about entity fields, see the `Entity Fields <./entity-fields
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
 	:align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
 	:align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
 	:align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
 	:align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
 	:align: middle
 
 

@@ -1,5 +1,7 @@
 Entity on the Interface
-========================
+=======================
+
+.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities>`_.
 
 .. contents:: :local:
     :depth: 3
@@ -106,12 +108,12 @@ For what actions you can perform with entities, see the `Actions with Entities <
 For more information about entity fields, see the `Entity Fields <./entity-fields>`__ guide.
   
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    

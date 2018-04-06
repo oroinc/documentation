@@ -3,6 +3,9 @@
 Tags
 ====
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Tags are non-hierarchical keywords or phrases that are assigned to records. They provide additional information about 
 records and are visible to all the system users. Tags can be assigned to any records of any entity and used for 
 :ref:`filtering <user-guide-filters-management>`. They can also be used to create a report for only the records that 
@@ -116,16 +119,16 @@ Conclusion
 Tags are easy to add and can help manage the content of any record. They can be used to find records from anywhere 
 within the system and can filter records for reports and segments.
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
    :align: middle  
    
 .. |Tags01| image:: ../img/data_management/tags/tags_01.png

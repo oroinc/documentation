@@ -3,6 +3,9 @@
 Add Attachment
 ==============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 You can add an attachment to a record in OroCRM.
 
 
@@ -57,8 +60,8 @@ You can also :ref:`add the attachment <user-guide-activities-emails-add-attachme
 
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle

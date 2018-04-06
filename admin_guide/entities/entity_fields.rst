@@ -3,6 +3,15 @@
 Entity Fields
 =============
 
+.. warning::
+
+   The newer version of the information is available via the links below:
+
+   * **Create Entity Fields** in `version 2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/create-entity-fields>`_, `in 2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/create-entity-fields>`_, and `current version <https://oroinc.com/orocrm/doc/current/admin-guide/entities/create-entity-fields>`_.
+
+   * **Manage Entity Fields** in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/manage-entity-fields>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/manage-entity-fields>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities/manage-entity-fields>`_.
+
+
 .. contents:: :local:
     :depth: 3
 
@@ -100,17 +109,17 @@ For the overview of the entities, see the `Entities <./entities>`__ guide.
 
 
 
-.. |IcPosition| image:: ../../img/buttons/IcPosition.png
+.. |IcPosition| image:: /img/buttons/IcPosition.png
    :align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    
-.. |IcRest| image:: ../../img/buttons/IcRest.png
+.. |IcRest| image:: /img/buttons/IcRest.png
    :align: middle

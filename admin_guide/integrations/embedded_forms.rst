@@ -3,6 +3,9 @@
 Embedded Forms
 ==============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 The OroCRM's *"Embedded Forms"* functionality provides for the creation of the code to add to a third-party web-site in 
 order to provide the communication between the site users and the OroCRM team. 
 These may be a request of marketing, technical, commercial or any other nature.
@@ -110,11 +113,11 @@ Open the form View page and go to the "Get Code" section. The code to add your f
 .. image:: ../img/emb_form/emb_form_code.png
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

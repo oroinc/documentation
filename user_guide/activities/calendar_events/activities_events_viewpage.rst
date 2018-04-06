@@ -3,9 +3,12 @@
 Calendar Event View Page
 ========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 |
 
-.. image:: ../../img/activities/activities_events_viewpage.png
+.. image:: /user_guide/img/activities/activities_events_viewpage.png
 
 |
 

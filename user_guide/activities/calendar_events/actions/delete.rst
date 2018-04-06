@@ -3,6 +3,9 @@
 Delete a Calendar Event / Task
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
 
 From the Calendar Events Grid

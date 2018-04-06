@@ -3,6 +3,9 @@
 Start a Hangout Meeting
 ^^^^^^^^^^^^^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 If the event was planned as the Hangout meeting, you can join it from the calendar.
 
 .. important::

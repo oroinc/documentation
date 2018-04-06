@@ -3,14 +3,13 @@
 Entities
 ========
 
+.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities>`_.
+
 .. contents:: :local:
     :depth: 3
 
-
-
 Overview
 ---------
-
 
 ``Entity`` is an abstract object in the system. **User**, **Account**, **Lead**, etc. are the examples of entities. One entity may have many instances, they are called ``entity records``. This way, the 'John Doe' user, the 'Lex Shop' account or the 'Jane Smith' lead are specific entity records. 
 

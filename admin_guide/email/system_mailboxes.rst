@@ -3,6 +3,9 @@
 System Mailboxes
 ================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 System mailbox allows people who don't have access to the company mailbox addresses write to the company. 
 You can create several system mailboxes. This may be, for example, a mailbox for support requests, for business 
 proposals, for order requests, etc. 

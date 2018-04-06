@@ -3,11 +3,11 @@
 Configuration Settings
 ======================
 
+.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/app-look-feel>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/app-look-feel>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/config-levels>`_.
+
 Use the Configuration settings to define options to be applied to the OroCRM instance.
 
 Open the OroCRM instance and go to *"System → Configuration"*.
-
-      |
   
 .. image:: ../img/configuration/menu.png
 

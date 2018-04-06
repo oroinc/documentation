@@ -1,6 +1,9 @@
 Entity Configuration
 ====================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 +-----------+---------------------------------------------------------+
 | Filename  | ``entity_config.yml``                                   |
 +-----------+---------------------------------------------------------+

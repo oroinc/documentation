@@ -4,6 +4,9 @@
 System Requirements
 ===================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 OroCRM is a web application which runs on a server. Users interact with the application via a web browser on any computer or mobile
 device that have access to the internet or the network where the server is hosted.
 

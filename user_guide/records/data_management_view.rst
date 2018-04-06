@@ -3,6 +3,9 @@
 View Pages
 ==========
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 To see more details of a specific record, and to work directly with the record (i.e., create a task related to a 
 customer, appoint a calendar event for a user, turn a cart into an order, share a contact, and so on), you need to get 
 to its View page. 
@@ -185,6 +188,6 @@ Get to Other Pages
     If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, this 
     grid will be look in the same as it did when you left it for the View page (the same filters and order applied). 
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    

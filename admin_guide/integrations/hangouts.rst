@@ -2,6 +2,10 @@
 
 Voice and Video Calls via Hangouts
 ==================================
+
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 With the Hangouts integration feature, you can call via Google Hangouts directly from OroCRM. This means that sales team 
 can make calls to their customers and prospects directly from OroCRM, making it faster than ever to make and log your 
 sales calls. This feature is also great for support teams, as they can contact customers and utilize the screen sharing 
@@ -142,5 +146,5 @@ event:
 
 
 
-.. |HObutton| image:: ../../img/buttons/hangouts.png
+.. |HObutton| image:: /img/buttons/hangouts.png
    :align: middle

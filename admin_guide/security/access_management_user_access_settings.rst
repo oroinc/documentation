@@ -1,5 +1,10 @@
+.. _access-management-user-access-settings:
+
 User Access Settings
 =====================
+
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
 
 .. contents:: :local:
     :depth: 3
@@ -163,13 +168,13 @@ For more information about the user configuration, see the `User Management <../
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
   :align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
   :align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
   :align: middle
 
 

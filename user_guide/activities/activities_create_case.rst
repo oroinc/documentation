@@ -3,6 +3,9 @@
 Create Case
 ===========
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 In order to keep the details of a certain issue, problem or failures reported by the customers, define their priority 
 and the person responsible for handling them, use the "*Create Case*" action.
 
@@ -109,11 +112,11 @@ View and Manage Cases
     :ref:`Integration with Zendesk <user-guide-zendesk>` guide.
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

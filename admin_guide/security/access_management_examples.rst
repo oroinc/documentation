@@ -1,6 +1,9 @@
 Access Configuration Examples
 =============================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
     :depth: 3
 
@@ -269,11 +272,11 @@ For what actions you can perform with roles, see the `Actions with Roles <./acce
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
    :align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
    :align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle

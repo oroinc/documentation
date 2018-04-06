@@ -3,6 +3,9 @@
 Calendars Overview
 ==================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Efficient business today is hard to imagine without an easy-to-understand and up-to-date schedule. 
 OroCRM provides each user with a calendar with tasks and events related to the specific user, to other users 
 (subject to the :ref:`roles and permissions defined <user-guide-user-management-permissions>`), as well as to events 
@@ -195,14 +198,14 @@ Along with the Calendar view, you can also view and process tasks and events fro
 
 
 
-.. |UserMenu| image:: ../../img/buttons/user_menu.png
+.. |UserMenu| image:: /img/buttons/user_menu.png
    :align: middle
    
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

@@ -3,6 +3,9 @@
 Edit a Task
 ^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
 
 .. important::
@@ -18,7 +21,7 @@ Edit a Task
 From the Tasks Grid / My Tasks Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin
+.. begin_edit
 
 To edit a task when viewing a list of tasks:
 

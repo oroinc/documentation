@@ -3,6 +3,9 @@
 Access Oro
 ==========
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 To get to your OroCRM account, enter the OroCRM instance url.
 
 .. image:: ../img/intro/login.png
@@ -60,7 +63,7 @@ Go to the User Menu in the top right corner of the page, and select the *"Logout
 
 
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
  
 .. |IntroTags| image:: ../img/intro/user_view_tags.png    

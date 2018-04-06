@@ -3,6 +3,9 @@
 Create Contact Request
 ======================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Requests for OroCRM support, including partnership proposals, complaints, additional 
 information and assistance requests that come from a :ref:`third-party application <admin-embedded-forms>` or have been 
 registered directly in OroCRM are collected with the *"Create Contact Request"* actions.   
@@ -87,11 +90,11 @@ View and Manage Contact Requests
   - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the request:  |IcView|
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

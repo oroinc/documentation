@@ -3,6 +3,9 @@
 Grids
 =====
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 A grid is an aggregated view of all the records within an entity. Each row of a grid is one record and each column is 
 one of the grid properties. Thus, each cell displays a value of a property for a record.
 
@@ -280,26 +283,26 @@ The file will be saved in compliance with your browser settings.
 
  
  
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
    
-.. |IcSettings| image:: ../../img/buttons/IcSettings.png
+.. |IcSettings| image:: /img/buttons/IcSettings.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    
-.. |IcBulk| image:: ../../img/buttons/IcBulk.png
+.. |IcBulk| image:: /img/buttons/IcBulk.png
    :align: middle
    
-.. |ScrollPage| image:: ../../img/buttons/scroll_page.png
+.. |ScrollPage| image:: /img/buttons/scroll_page.png
    :align: middle
    
-.. |BRefresh| image:: ../../img/buttons/BRefresh.png
+.. |BRefresh| image:: /img/buttons/BRefresh.png
    :align: middle
    
-.. |BReset| image:: ../../img/buttons/BReset.png
+.. |BReset| image:: /img/buttons/BReset.png
    :align: middle

@@ -3,6 +3,9 @@
 Share / Unshare a Task
 ----------------------
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
 
 .. _doc-activities-tasks-actions-share-detailed:

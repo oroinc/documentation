@@ -3,6 +3,9 @@
 Organization Records Management
 ===============================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 An Organization record represents a real enterprise, business, firm, company or another organization, to which the 
 :term:`users <User>` belong. 
 
@@ -81,12 +84,12 @@ In the community edition, you can only edit the organization name and its descri
 the edit page, go to *System → User Management → Organizations*.
 
 
-.. |IcConfig| image:: ../../img/buttons/IcConfig.png
+.. |IcConfig| image:: /img/buttons/IcConfig.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
  

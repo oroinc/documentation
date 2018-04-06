@@ -1,6 +1,9 @@
 @Config
 =======
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 This annotation is used to configure default values for configurable entity classes.
 
 Options

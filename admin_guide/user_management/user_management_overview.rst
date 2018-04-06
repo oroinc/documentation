@@ -3,6 +3,9 @@
 User Management Overview
 ========================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 OroCRM provides a flexible user management functionality that can be tailored to reflect any specific administrative 
 structure, as well as to group users in any other way and to define the access and permission settings.
 

@@ -3,6 +3,9 @@
 Company Structure and Organization Selector
 ===========================================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Understanding the Company Structure
 -----------------------------------
 

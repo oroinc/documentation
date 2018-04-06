@@ -3,9 +3,12 @@
 Task View Page
 ==============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 |
 
-.. image:: ../../img/activities/tasks/activities_tasks_viewpage.png
+.. image:: /user_guide/img/activities/tasks/activities_tasks_viewpage.png
 
 |
 
@@ -24,7 +27,7 @@ In the center you can see the **Task Flow** widget. See :ref:`doc-activities-tas
 
 |
 
-.. image:: ../../img/activities/tasks/activities_tasks_taskflow.png
+.. image:: /user_guide/img/activities/tasks/activities_tasks_taskflow.png
 
 |
 
@@ -55,7 +58,7 @@ Task Flow
 
 |
 
-.. image:: ../../img/activities/tasks/activities_tasks_taskflow.png
+.. image:: /user_guide/img/activities/tasks/activities_tasks_taskflow.png
 
 |
 
@@ -103,7 +106,7 @@ This section contains the main information about a task.
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Tags             | A list of :ref:`tags <user-guide-tags>` added to the task. Point to the the tags name (or **N/A** if no tags are defined) and click the **Edit** icon next to them to add a new tag.  |
 |                  |                                                                                                                                                                                       |
-|                  | .. image:: ../../img/activities/tasks/tags_add.png                                                                                                                                    |
+|                  | .. image:: /user_guide/img/activities/tasks/tags_add.png                                                                                                                              |
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. _doc-activities-tasks-view-page-activities:
@@ -115,7 +118,7 @@ This section contains information about the activities related to the task. By d
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity.png
 
 |
 
@@ -130,7 +133,7 @@ You can add a comment under a particular activity. To do this, click the activit
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity_comment.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_comment.png
 
 |
 
@@ -139,7 +142,7 @@ To edit or delete a comment, click the ellipsis menu next to it and click the |I
 |
 
 
-.. image:: ../../img/activities/tasks/task_review_activity_comment2.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_comment2.png
 
 |
 
@@ -151,7 +154,7 @@ To delete a context for an activity, click the **x** icon next to the required c
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity_context_delete.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_context_delete.png
 
 |
 
@@ -159,7 +162,7 @@ To add a context to the activity, click the **Context** icon in the ellipsis men
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity_context_add.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_context_add.png
 
 |
 
@@ -167,7 +170,7 @@ You can open an activity view page. To do this, click the |IcView| **View email*
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity_view.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_view.png
 
 |
 
@@ -176,7 +179,7 @@ For an email activity, you can reply / reply all / forward the corresponding ema
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity_reply.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_reply.png
 
 |
 
@@ -185,7 +188,7 @@ Alternatively, you can select the required action from the list in the activity 
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_activity_reply2.png
+.. image:: /user_guide/img/activities/tasks/task_review_activity_reply2.png
 
 |
 
@@ -198,7 +201,7 @@ Comments
 
 |
 
-.. image:: ../../img/activities/tasks/task_review_comments.png
+.. image:: /user_guide/img/activities/tasks/task_review_comments.png
 
 |
 

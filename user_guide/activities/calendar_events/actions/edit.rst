@@ -3,6 +3,9 @@
 Edit a Calendar Event
 ^^^^^^^^^^^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
 
 .. important::
@@ -14,7 +17,7 @@ Edit a Calendar Event
 From the Calendar Events Grid
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin
+.. begin_edit
 
 To edit a calendar event when viewing a list of events:
 

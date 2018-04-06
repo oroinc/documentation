@@ -3,6 +3,9 @@
 Manage Tasks
 ============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Each topic of this section guides you through the steps required to perform one of the actions related to task management.
 As there are usually more than one way to start the same action, only the most straightforward way is described here. Follow the links at the end of the topics to learn about the alternative ways to start the action.
 
@@ -35,7 +38,7 @@ View a Task
 ^^^^^^^^^^^
 
 .. include:: actions/view.rst
-   :start-after: begin
+   :start-after: begin_view
    :end-before: finish
 
 Get :ref:`more information on viewing a task from other perspectives <doc-activities-tasks-actions-view-detailed>`.
@@ -46,7 +49,7 @@ Edit a Task
 ^^^^^^^^^^^
 
 .. include:: actions/edit.rst
-   :start-after: begin
+   :start-after: begin_edit
    :end-before: finish
 
 Get :ref:`more information on editing a task from other perspectives <doc-activities-tasks-actions-edit-detailed>`.
@@ -101,7 +104,7 @@ Comment on a Task
 ^^^^^^^^^^^^^^^^^
 
 .. include:: actions/comment.rst
-   :start-after: begin
+   :start-after: begin_comment
    :end-before: finish
 
 Get :ref:`more information about commenting on a task from other perspectives <doc-activities-tasks-actions-comment-detailed>`.

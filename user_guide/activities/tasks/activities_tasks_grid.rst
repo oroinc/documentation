@@ -4,9 +4,12 @@
 All Tasks Grid
 ==============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 |
 
-.. image:: ../../img/activities/tasks/activities_tasks.png
+.. image:: /user_guide/img/activities/tasks/activities_tasks.png
 
 |
 
@@ -62,7 +65,7 @@ To view a task, you can also click the corresponding row itself.
 
 |
 
-.. image:: ../../img/activities/tasks/activities_tasks_grid_actions.png
+.. image:: /user_guide/img/activities/tasks/activities_tasks_grid_actions.png
 
 |
 

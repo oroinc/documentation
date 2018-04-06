@@ -3,6 +3,9 @@
 Actions with Calls
 ==================
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
    :depth: 3
 
@@ -26,7 +29,7 @@ From the Call Grid
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -34,7 +37,7 @@ From the Call Grid
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid2.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid2.png
 
    |
 
@@ -51,7 +54,7 @@ Users who are owners of a call and entity records that are specified in the call
 
       |
 
-      .. image:: ../../img/activities/calls_view_fromactivities1.png
+      .. image:: /user_guide/img/activities/calls_view_fromactivities1.png
 
       |
 
@@ -59,7 +62,7 @@ Users who are owners of a call and entity records that are specified in the call
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromactivities2.png
+   .. image:: /user_guide/img/activities/calls_view_fromactivities2.png
 
    |
 
@@ -81,7 +84,7 @@ From the Call Grid
 
    |
 
-   .. image:: ../../img/activities/calls_edit_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_edit_fromgrid.png
 
    |
 
@@ -100,7 +103,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -125,7 +128,7 @@ Users who are owners of a call and entity records that are specified in the call
 
    |
 
-     .. image:: ../../img/activities/calls_edit_fromactivities0.png
+     .. image:: /user_guide/img/activities/calls_edit_fromactivities0.png
 
    |
 
@@ -134,7 +137,7 @@ Users who are owners of a call and entity records that are specified in the call
 
     |
 
-    .. image:: ../../img/activities/calls_edit_fromactivities1.png
+    .. image:: /user_guide/img/activities/calls_edit_fromactivities1.png
 
     |
 
@@ -156,7 +159,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -166,7 +169,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/call_contextadd1.png
+   .. image:: /user_guide/img/activities/call_contextadd1.png
 
    |
 
@@ -177,7 +180,7 @@ You will see the added context on the call view page under the call log name.
 
 |
 
-.. image:: ../../img/activities/call_contextadd2.png
+.. image:: /user_guide/img/activities/call_contextadd2.png
 
 |
 
@@ -195,7 +198,7 @@ You can add more contexts to a call directly from the related entity view page.
 
       |
 
-      .. image:: ../../img/activities/calls_context_fromactivities1.png
+      .. image:: /user_guide/img/activities/calls_context_fromactivities1.png
 
       |
 
@@ -207,7 +210,7 @@ You will see the added context in the second row of the call details.
 
       |
 
-      .. image:: ../../img/activities/call_contextadd4.png
+      .. image:: /user_guide/img/activities/call_contextadd4.png
 
       |
 
@@ -227,7 +230,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -235,7 +238,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/calls_context_del.png
+   .. image:: /user_guide/img/activities/calls_context_del.png
 
    |
 
@@ -253,7 +256,7 @@ You can remove contexts of a call directly from the related entity view page.
 
    |
 
-   .. image:: ../../img/activities/calls_context_del_fromactivities1.png
+   .. image:: /user_guide/img/activities/calls_context_del_fromactivities1.png
 
    |
 
@@ -279,7 +282,7 @@ Depending on you application settings, you can share call logs with other users,
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -289,7 +292,7 @@ Depending on you application settings, you can share call logs with other users,
 
    |
 
-   .. image:: ../../img/activities/calls_share_2.png
+   .. image:: /user_guide/img/activities/calls_share_2.png
 
    |
 
@@ -301,7 +304,7 @@ Depending on you application settings, you can share call logs with other users,
 
    |
 
-   .. image:: ../../img/activities/calls_share_4.png
+   .. image:: /user_guide/img/activities/calls_share_4.png
 
    |
 
@@ -315,7 +318,7 @@ In the brackets next to the :guilabel:`Share` button name, you will be able to s
 
 |
 
-.. image:: ../../img/activities/calls_share_5.png
+.. image:: /user_guide/img/activities/calls_share_5.png
 
 |
 
@@ -337,7 +340,7 @@ To stop sharing a call with users / business units / organizations:
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -347,7 +350,7 @@ To stop sharing a call with users / business units / organizations:
 
 |
 
-.. image:: ../../img/activities/calls_unshare.png
+.. image:: /user_guide/img/activities/calls_unshare.png
 
 |
 
@@ -372,7 +375,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/calls_view_fromgrid.png
+   .. image:: /user_guide/img/activities/calls_view_fromgrid.png
 
    |
 
@@ -382,7 +385,7 @@ From the Call View Page
 
    |
 
-   .. image:: ../../img/activities/calls_comment.png
+   .. image:: /user_guide/img/activities/calls_comment.png
 
    |
 
@@ -412,7 +415,7 @@ You can comment a call directly from the view page of a related entity.
 
    |
 
-   .. image:: ../../img/activities/calls_comment_fromactivity.png
+   .. image:: /user_guide/img/activities/calls_comment_fromactivity.png
 
    |
 
@@ -422,7 +425,7 @@ You will see your comment in the **Comments** section of the call log details.
 
 |
 
-.. image:: ../../img/activities/calls_comment_fromactivity2.png
+.. image:: /user_guide/img/activities/calls_comment_fromactivity2.png
 
 |
 
@@ -445,7 +448,7 @@ From the Calls Grid
 
    |
 
-   .. image:: ../../img/activities/calls_log_grid0.png
+   .. image:: /user_guide/img/activities/calls_log_grid0.png
 
    |
 
@@ -467,7 +470,7 @@ From the Calls Grid
 
 |
 
-.. image:: ../../img/activities/calls_log_grid.png
+.. image:: /user_guide/img/activities/calls_log_grid.png
 
 |
 
@@ -483,7 +486,7 @@ By logging a call from a record view page, you specify that this record relates 
 
      |
 
-     .. image:: ../../img/activities/calls_actions_log_related0.png
+     .. image:: /user_guide/img/activities/calls_actions_log_related0.png
 
      |
 
@@ -491,7 +494,7 @@ By logging a call from a record view page, you specify that this record relates 
 
      |
 
-     .. image:: ../../img/activities/calls_actions_log_related1.png
+     .. image:: /user_guide/img/activities/calls_actions_log_related1.png
 
      |
 
@@ -499,7 +502,7 @@ By logging a call from a record view page, you specify that this record relates 
 
    |
 
-   .. image:: ../../img/activities/calls_actions_log_related.png
+   .. image:: /user_guide/img/activities/calls_actions_log_related.png
 
    |
 
@@ -537,7 +540,7 @@ From the Calls Grid
 
    |
 
-   .. image:: ../../img/activities/calls_log_grid0.png
+   .. image:: /user_guide/img/activities/calls_log_grid0.png
 
    |
 
@@ -545,7 +548,7 @@ From the Calls Grid
 
    |
 
-   .. image:: ../../img/activities/calls_make0.png
+   .. image:: /user_guide/img/activities/calls_make0.png
 
    |
 
@@ -563,7 +566,7 @@ By logging a call from a record view page, you specify that this record relates 
 
      |
 
-     .. image:: ../../img/activities/calls_actions_log_related0.png
+     .. image:: /user_guide/img/activities/calls_actions_log_related0.png
 
      |
 
@@ -578,7 +581,7 @@ By logging a call from a record view page, you specify that this record relates 
 
      |
 
-     .. image:: ../../img/activities/calls_make_related2.png
+     .. image:: /user_guide/img/activities/calls_make_related2.png
 
      |
 
@@ -590,7 +593,7 @@ By logging a call from a record view page, you specify that this record relates 
 
      |
 
-     .. image:: ../../img/activities/calls_make_related3.png
+     .. image:: /user_guide/img/activities/calls_make_related3.png
 
      |
 
@@ -598,7 +601,7 @@ By logging a call from a record view page, you specify that this record relates 
 
    |
 
-   .. image:: ../../img/activities/calls_make_related4.png
+   .. image:: /user_guide/img/activities/calls_make_related4.png
 
    |
 
@@ -629,7 +632,7 @@ From the Calls Grid
 
 |
 
-.. image:: ../../img/activities/calls_delete1.png
+.. image:: /user_guide/img/activities/calls_delete1.png
 
 |
 
@@ -642,7 +645,7 @@ Alternatively, you can delete a call log from the call view page by clicking the
 
 |
 
-.. image:: ../../img/activities/calls_delete2.png
+.. image:: /user_guide/img/activities/calls_delete2.png
 
 |
 
@@ -656,7 +659,7 @@ Users who are owners of a call and entity records that are specified in the call
 
 |
 
-.. image:: ../../img/activities/calls_delete3.png
+.. image:: /user_guide/img/activities/calls_delete3.png
 
 |
 
@@ -677,7 +680,7 @@ You can delete multiple calls at a time.
 
 3. Click the ellipsis menu at the right end of the grid header row and then click |IcDelete| **Delete**.
 
-.. image:: ../../img/activities/calls_massdelete.png
+.. image:: /user_guide/img/activities/calls_massdelete.png
 
 4. In the **Delete Confirmation** dialog box, click :guilabel:`Yes, Delete`.
 

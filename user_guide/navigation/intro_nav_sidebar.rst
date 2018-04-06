@@ -3,6 +3,9 @@
 Sidebar Panel
 =============
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
 information, such as recent emails or the task list. 
 
@@ -230,14 +233,14 @@ Set up the sidebar widgets in the way that is most convenient for you. This will
 a minimum amount of effort.
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
    
-.. |IcSettings| image:: ../../img/buttons/IcSettings.png
+.. |IcSettings| image:: /img/buttons/IcSettings.png
    :align: middle
    
-.. |BRefresh| image:: ../../img/buttons/BRefresh.png
+.. |BRefresh| image:: /img/buttons/BRefresh.png
    :align: middle
    
-.. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
+.. |BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle

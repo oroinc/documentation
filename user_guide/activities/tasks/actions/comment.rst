@@ -3,6 +3,9 @@
 Comment on a Task
 ^^^^^^^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 .. contents:: :local:
 
 .. _doc-activities-tasks-actions-comment-viewpage:
@@ -10,7 +13,7 @@ Comment on a Task
 From the Task View Page
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin
+.. begin_comment
 
 To comment on a task when viewing the task details:
 

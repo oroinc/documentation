@@ -3,6 +3,9 @@
 Reschedule a Calendar Event in the Calendar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 You can change the assigned time frame during the :ref:`editing of the calendar event <doc-activities-events-actions-edit-detailed>`, but you can also change in directly in the calendar.
 
 .. begin_change_time

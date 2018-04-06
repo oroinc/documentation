@@ -3,6 +3,9 @@
 Search
 ======
 
+.. include:: /old_version_notice.rst
+   :start-after: begin_old_version_notice
+
 Search is the fastest way to find a specific record you need. To find a record in OroCRM:
 
 1. Click the search icon at the top of the screen – |IcSearch|.
@@ -86,5 +89,5 @@ You will see a page that looks similar to the search results and that contains a
 
 
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
 
