@@ -90,8 +90,6 @@ Create a special free test account at https://developer.authorize.net/hello_worl
 
 Transactions made via integration that uses the API Login ID and keys generated for sandbox account are sent to the special testing server and are not sent to the financial institution for processing. However, in other aspects, the sandbox works the same as actual production server, and returns proper transaction IDs.
 
-.. important:: Do not use the test mode with your sandbox account if you require proper responses from the server.
-
 Use sandbox account when customizing the Authorize.Net integration or if you do not have an actual account with Authorize.Net but you would like to check how the integration works.
 
 For more information about how to use the sandbox, see `Authorize.Net Testing Guide <https://developer.authorize.net/hello_world/testing_guide/>`__.

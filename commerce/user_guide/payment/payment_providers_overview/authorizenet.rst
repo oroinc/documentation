@@ -31,7 +31,8 @@ OroCommerce uses `Authorize.Net Accept.js <https://developer.authorize.net/api/r
 
 Transaction response from the payment gateway also does not contain sensitive information about a buyer's card. It serves as an identifier of the initial authorization that is solely handled by the payment gateway.
 
-
+.. important::
+   Note that the Authorize.Net payment method runs only via HTTPS for security reasons. The JS library uses HTTPS to ensure that the connection is secure, and all passed data is encrypted. In case of non-https connection used, the payment method gets disabled.
 
 
 
