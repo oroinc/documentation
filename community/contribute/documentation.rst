@@ -17,14 +17,14 @@ Before You Begin
 
 Before submitting your documentation changes in a pull request, please sign our `Contributor License Agreement`_ (CLA). The CLA must be signed for any code or documentation changes to be accepted.
 
-.. _Contributor License Agreement: http://www.orocrm.com/contributor-license-agreement
+.. _Contributor License Agreement: https://oroinc.com/orocrm/contributor-license-agreement
 
 Fork Documentation Project
 --------------------------
 
 If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
 
-* `OroPlatform and OroCRM documentation <https://github.com/orocrm/documentation>`_
+* `OroPlatform and OroCRM documentation <https://github.com/oroinc/documentation>`_
 * `OroCommerce documentation <https://github.com/orocommerce/documentation>`_
 
 For large volume of  updates, fixes, and enhancements please use the following process: 

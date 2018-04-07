@@ -54,8 +54,8 @@ Ensure that the server is installed in your local or corporate environment and i
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.orocommerce.com/download
+.. _`download section`: http://www.oroinc.com/orocommerce/download
 
-.. |the_site| replace:: `orocommerce.com`_
+.. |the_site| replace:: `oroinc.com/orocommerce`_
 
-.. _`orocommerce.com`:  http://www.orocommerce.com/
+.. _`oroinc.com/orocommerce`:  http://www.oroinc.com/orocommerce/

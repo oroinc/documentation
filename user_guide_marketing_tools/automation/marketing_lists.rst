@@ -14,7 +14,7 @@ Marketing lists can be used to run :ref:`Email Campaigns <user-guide-email-campa
 synchronize OroCRM Marketing lists with Subscribers Lists in :ref:`MailChimp <user-guide-mc-integration>` and/or 
 Address Books in :ref:`dotmailer <user-guide-dm-integration>`.
 
-.. note:: See a short demo on `how to create a marketing list <https://www.orocrm.com/media-library/create-marketing-list-2>`_, or follow the step-by-step guidance below.
+.. note:: See a short demo on `how to create a marketing list <https://oroinc.com/orocrm/media-library/create-marketing-list-2>`_, or follow the step-by-step guidance below.
 
    .. raw:: html
 

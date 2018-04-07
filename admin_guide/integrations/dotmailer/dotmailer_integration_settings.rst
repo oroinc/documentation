@@ -5,7 +5,7 @@ dotmailer Synchronization Settings
 
 To configure dotmailer synchronization settings, navigate to **System>Configuration>System Configuration>Integrations>dotmailer Settings**.
 
-.. image:: ../img/configuration/dotmailer_settings.png
+.. image:: /admin_guide/img/configuration/dotmailer_settings.png
 
 .. csv-table::
   :header: "**Setting**","**Description**" 

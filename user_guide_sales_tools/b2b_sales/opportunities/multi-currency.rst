@@ -29,7 +29,7 @@ In the following example, the base currency is US dollars, the currency format i
 
 
 
-These exchange rates to the base currency will be used to calculate and convert the actual budget value, close revenue, the total number of orders (for Commerce), etc.
+These exchange rates to the base currency will be used to calculate and convert the actual budget value, close revenue, the total number of orders (for OroCommerce), etc.
 
 This is how multi-currency feature is displayed in the **Create Opportunity** form:
 

@@ -10,7 +10,7 @@ Fields are used to store details of entity records. For example, a 'street name'
 
 This topic describes how you can create custom entity fields, explains what basic and advanced entity field properties are available for them, and illustrates :ref:`examples <admin-guide-create-entity-fields-example>` of adding new fields to existing entities.
 
- .. note:: See a short demo on `how to create a custom field <https://www.orocrm.com/media-library/create-custom-field>`_, or keep reading the step-by-step guidance below.
+ .. note:: See a short demo on `how to create a custom field <https://oroinc.com/orocrm/media-library/create-custom-field>`_, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 

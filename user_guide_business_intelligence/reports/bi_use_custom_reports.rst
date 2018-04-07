@@ -9,7 +9,7 @@ Use Custom Reports
 Create a Custom Report
 ----------------------
 
-See a short demo on `how to create a report in your Oro application <https://www.orocrm.com/media-library/create-report-orocrm>`_, or continue reading the step-by-step guidance below.
+See a short demo on `how to create a report in your Oro application <https://oroinc.com/orocrm/media-library/create-report-orocrm>`_, or continue reading the step-by-step guidance below.
 
 .. raw:: html
 

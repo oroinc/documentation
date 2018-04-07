@@ -58,7 +58,7 @@ To reinstall |main_app_in_this_topic|:
 .. _`session handler`: http://symfony.com/doc/current/components/http_foundation/session_configuration.html#save-handlers
 .. _`translations`: http://symfony.com/doc/current/components/translation/introduction.html
 .. _`CSRF tokens`: http://symfony.com/doc/current/cookbook/security/csrf_in_login_form.html
-.. _`orocrm.com`:  http://www.orocrm.com/
+.. _`oroinc.com/orocrm`:  http://www.oroinc.com/orocrm
 .. _`optimizing InnoDB Disk I/O`: http://dev.mysql.com/doc/refman/5.6/en/optimizing-innodb-diskio.html
 .. _`in the official Symfony documentation`: http://symfony.com/doc/current/book/installation.html#book-installation-permissions
 .. _`Configuring a Web Server`: http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html

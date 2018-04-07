@@ -45,7 +45,7 @@ To import a bulk of contacts:
 
 .. important:: Interactive status messages inform about the import progress, and once the import is complete, the changes are reflected in the list upon refresh. Additionally, an email message with the import status is delivered to your mailbox.
 
-.. note:: See a short demo on `how to export and import data <https://www.orocrm.com/media-library/export-import-data>`_, below.
+.. note:: See a short demo on `how to export and import data <https://oroinc.com/orocrm/media-library/export-import-data>`_, below.
 
    .. raw:: html
 

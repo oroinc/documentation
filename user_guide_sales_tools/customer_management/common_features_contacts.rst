@@ -8,7 +8,7 @@ Contacts
 
 In your Oro application, you can use contacts to save details of actual people with whom you are getting in touch during the business activities.
 
-.. note:: For a quick guidance, please see a short demo on `accounts, contacts and customers <https://www.orocrm.com/media-library/22091>`_.
+.. note:: For a quick guidance, please see a short demo on `accounts, contacts and customers <https://oroinc.com/orocrm/media-library/22091>`_.
 
    .. raw:: html
 
@@ -17,7 +17,7 @@ In your Oro application, you can use contacts to save details of actual people w
 Create a Contact Record
 -----------------------
 
-.. note:: Checkout a short video on `how to create and edit contact records <https://www.orocrm.com/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0>`_, or keep reading the step-by-step guidance.
+.. note:: Checkout a short video on `how to create and edit contact records <https://oroinc.com/orocrm/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0>`_, or keep reading the step-by-step guidance.
 
 In order to create a Contact record:
 

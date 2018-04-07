@@ -8,7 +8,7 @@ An ``organization`` represents a real enterprise, business, firm, company or ano
 
 .. _user-management-organization-create:
 
-.. note:: See a short demo on `how to create organizations and business units <https://www.orocrm.com/media-library/create-organizations-and-business-units>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on `how to create organizations and business units <https://oroinc.com/orocrm/media-library/create-organizations-and-business-units>`_, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 

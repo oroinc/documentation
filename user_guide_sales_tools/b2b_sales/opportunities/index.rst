@@ -17,7 +17,7 @@ In the following guide, you will learn how to:
 -	:ref:`Manage opportunity workflow <user-guide-system-channel-entities-opportunities--manage-flow-intro>`
 -	Work with :ref:`reports for opportunities <user-guide-opportunities-reports-intro>`
 
-.. note:: See a short demo on `how to create and work with opportunities <https://www.orocrm.com/media-library/create-work-opportunity>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on `how to create and work with opportunities <https://oroinc.com/orocrm/media-library/create-work-opportunity>`_, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
