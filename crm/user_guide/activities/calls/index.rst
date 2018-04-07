@@ -11,7 +11,7 @@ Additionally, OroCRM's integration with :ref:`Google Hangouts <user-guide-hangou
 
 You can make voice calls to a single phone number, or launch a audio / video conference with up to 5 participants. Call data is logged automatically, including any notes made during the call.
 
-Before proceeding to the detailed guidance below, see a short demo on `how to log calls in your Oro application <https://www.orocrm.com/media-library/log-call-orocrm>`_.
+Before proceeding to the detailed guidance below, see a short demo on `how to log calls in your Oro application <https://oroinc.com/orocrm/media-library/log-call-orocrm>`_.
 
 .. raw:: html
 

@@ -29,7 +29,7 @@ The Activities topic introduces you to the following types of activities:
 
 
 .. toctree::
-   :hidden: 
+   :hidden:
    :maxdepth: 1
 
    tasks/index

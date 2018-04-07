@@ -45,7 +45,7 @@ Before setting up a tax rule, make sure to complete the following actions:
    :depth: 2
 
 .. note::
-   See a short demo on `how to create tax codes and jurisdictions in OroCommerce <https://www.orocommerce.com/media-library/create-tax-code-and-jurisdictions>`_, or keep reading the step-by-step guidance below.
+   See a short demo on `how to create tax codes and jurisdictions in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-tax-code-and-jurisdictions>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

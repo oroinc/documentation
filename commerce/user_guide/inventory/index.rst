@@ -15,7 +15,7 @@ Inventory in OroCommerce helps you track the availability of your product in one
 You can create one or more warehouses, configure inventory management options, manage product inventory status and track product quantities in every warehouse.
 
 .. note::
-    See a short demo on `how to work with inventory and warehouses <https://www.orocommerce.com/media-library/how-to-setup-inventory-and-warehouses>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to work with inventory and warehouses <https://www.oroinc.com/orocommerce/media-library/how-to-setup-inventory-and-warehouses>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

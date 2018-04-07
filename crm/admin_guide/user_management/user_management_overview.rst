@@ -8,7 +8,7 @@ structure, as well as to group users in any other way and to define the access a
 
 .. user-guide-user-management-admin-structure
 
-.. note:: See a short demo on `how to create and manage users <https://www.orocrm.com/media-library/manage-users>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on `how to create and manage users <https://oroinc.com/orocrm/media-library/manage-users>`_, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 

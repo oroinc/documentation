@@ -28,3 +28,10 @@ Finally, if you wish to configure dotmailer single sign on, please follow the st
 
 .. hint:: While dotmailer integration capabilities are pre-implemented, Oro application can be integrated with different third-party
     systems. Please, refer to the Integrations section of the :ref:`Admin guide <user-guide-admin-tools>` to learn more.
+
+.. toctree::
+   :maxdepth: 1
+
+   dotmailer_integration_settings
+   dotmailer_configuration
+   dotmailer_single_sign_on

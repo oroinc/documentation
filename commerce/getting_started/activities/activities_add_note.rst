@@ -5,7 +5,7 @@ Notes
 
 In the Oro application, you can create quick notes to store details about a customer or an account. For instance, if a customer frequently returns products, a note on the case would advise other customer service representatives to review any cases from this customer thoroughly.
 
-You can see a short demo on `how to add notes <https://www.orocrm.com/media-library/add-notes-orocrm>`_ or keep reading the guidance below.
+You can see a short demo on `how to add notes <https://www.oroinc.com/orocrm/media-library/add-notes-orocrm>`_ or keep reading the guidance below.
 
 .. raw:: html
 

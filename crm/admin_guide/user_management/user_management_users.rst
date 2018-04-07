@@ -14,7 +14,7 @@ A user is the lowest element of the administrative structure in your company. Us
 
 Any amount of users can be created within one OroCRM system.
 
-.. note:: You can also checkout a video on `how to set up user profiles in your Oro application <https://www.orocrm.com/media-library/set-user-profiles#play=I3v9HRF0ivE>`_ for more details, or refer to the links below.
+.. note:: You can also checkout a video on `how to set up user profiles in your Oro application <https://oroinc.com/orocrm/media-library/set-user-profiles#play=I3v9HRF0ivE>`_ for more details, or refer to the links below.
 
 Links
 -----

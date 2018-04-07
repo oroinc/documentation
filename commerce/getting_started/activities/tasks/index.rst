@@ -10,7 +10,7 @@ In your Oro application, tasks represent assignments that need to be accomplishe
 
 Within Oro application you can create and assign tasks, organize them by priority, set their due date and manage them at any stage. In the sections below, you will learn how to create and manage tasks from various pages of your Oro application.
 
-Before reading on, consider watching a short demo from our media library on `how to create and manage tasks <https://www.orocrm.com/media-library/create-and-manage-tasks>`_.
+Before reading on, consider watching a short demo from our media library on `how to create and manage tasks <https://www.oroinc.com/orocrm/media-library/create-and-manage-tasks>`_.
 
 .. raw:: html
 

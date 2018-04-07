@@ -14,7 +14,7 @@ During add-in installation you are required to provide integration settings to e
  
    * If you are running a CRM application, copy the URL from the address bar. Alternatively, copy it from the **Application URL** field by navigating to **System > Configuration > System Configuration > General Setup > Application Settings** (e.g. demo.orocrm.com).
 
-   * If you are running a CRM+Commerce application, add **/admin** at the end of the URL. Otherwise, connection between the add-in and your Oro instance may fail (e.g. demo.orocommerce.com/admin).
+   * If you are running an OroCommerce application, add **/admin** at the end of the URL. Otherwise, connection between the add-in and your Oro instance may fail (e.g. demo.orocommerce.com/admin).
 
 2. **Ignore self-signed certificate** --- Check this box to allow connection to secure servers that use self-signed certificates. We recommend to keep this box checked at all times.
 

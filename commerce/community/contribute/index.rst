@@ -44,7 +44,7 @@ Signing a Contributor License Agreement
 Although signing the `Contributor License Agreement`_ is a prerequisite for accepting your pull request, you only need to do it once. So, if you've done this for any of our open source projects, you're good to go with all of them. If you are submitting a pull request for the first time, our friendly *orocla* robot will automatically add a reminder to your pull request.
 
 .. _pull request: https://help.github.com/articles/using-pull-requests
-.. _Contributor License Agreement: https://www.orocommerce.com/contributor-license-agreement
+.. _Contributor License Agreement: https://www.oroinc.com/orocommerce/contributor-license-agreement
 
 See Also
 --------

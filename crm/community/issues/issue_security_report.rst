@@ -13,7 +13,7 @@ So, needless to say, we take security issues very seriously.
 Password and Login Problems
 ---------------------------
 
-For password reset and account restoration please contact us using our `customer support form <http://www.orocrm.com/contact-us>`_.
+For password reset and account restoration please contact us using our `customer support form <https://oroinc.com/orocrm/contact-us>`_.
 
 Spotting Major Security Issues
 ------------------------------

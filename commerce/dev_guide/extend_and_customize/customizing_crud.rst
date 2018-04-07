@@ -1,7 +1,7 @@
 Customizing CRUD Pages
 ======================
 
-.. https://www.orocommerce.com/blog/customizing-crud-orocommerce
+.. https://www.oroinc.com/orocommerce/blog/customizing-crud-orocommerce
 
 OroCommerce equips users and developers with powerful UIs that they can use to manage both simple and complex data entities, including all entity attributes (fields) and relations. As a developer, you can easily enable standard CRUD pages for a new entity, and with the same ease, you can add more fields to any of the entities that you have created before. Just add new entity properties, create a migration script and modify the templates if necessary.
 
@@ -564,7 +564,7 @@ In view mode, the block looks as follows:
 
 .. image:: /dev_guide/img/crud_result_view.png
 
-A fully working example, organized into a custom bundle is available `here <https://www.orocommerce.com/downloads/orob2bblogpostexamplebundle?wpdmdl=1732>`_ (Download 13.47 KB).
+A fully working example, organized into a custom bundle is available `here <https://www.oroinc.com/orocommerce/downloads/orob2bblogpostexamplebundle?wpdmdl=1732>`_ (Download 13.47 KB).
 
 In order to add this bundle to your application:
 

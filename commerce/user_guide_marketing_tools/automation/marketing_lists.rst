@@ -245,5 +245,5 @@ To delete a marketing list:
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. include:: /user_guide/marketing/related_topics.rst
+.. include:: /user_guide_marketing_tools/related_topics.rst
    :start-after: begin_include

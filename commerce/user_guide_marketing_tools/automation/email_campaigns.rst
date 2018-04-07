@@ -132,5 +132,5 @@ This generates an email based on the template you've selected, populates it with
 .. |email_campaign_schedule| image:: /user_guide/img/marketing/marketing/email_campaign_schedule.png
    :align: middle
 
-.. include:: /user_guide/marketing/related_topics.rst
+.. include:: /user_guide_marketing_tools/related_topics.rst
    :start-after: begin_include

@@ -5,7 +5,7 @@
 Create a New Product Family
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See a short demo on `how to create a product family <https://www.orocommerce.com/media-library/create-product-attributes-families>`_ (from 6:43), or keep reading the step-by-step guidance below.
+See a short demo on `how to create a product family <https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families>`_ (from 6:43), or keep reading the step-by-step guidance below.
 
 .. raw:: html
 

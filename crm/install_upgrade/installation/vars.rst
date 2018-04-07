@@ -11,11 +11,11 @@
 .. _`MessageQueueComponent`: https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue
 .. _`example of supervisord configuration`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle#supervisord
 
-.. _`download section`: http://www.orocrm.com/download
+.. _`download section`: http://www.oroinc.com/orocrm/download
 
-.. _`orocommerce.com`: http://www.orocommerce.com/
-.. _`orocrm.com`: http://www.orocrm.com/
+.. _`oroinc.com/orocommerce`: http://www.oroinc.com/orocommerce
+.. _`oroinc.com/orocrm`: http://www.oroinc.com/orocrm
 
 .. |main_app_in_this_topic| replace:: OroCRM
 
-.. |the_site| replace:: `orocrm.com`_
+.. |the_site| replace:: `oroinc.com/orocrm`_

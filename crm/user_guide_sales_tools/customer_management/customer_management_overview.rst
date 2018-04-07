@@ -9,7 +9,7 @@ One of the entities must represent a :term:`customer <Customer>`.
 
 Once a customer record is created, it is assigned to an account. Several accounts may be  :ref:`merged <user-guide-accounts-merge>`  into one, regardless of the channels. (For example, when you have a Business customer who represents a client of yours, and this client is also buying something from your Magento store).
 
-.. note:: For quick guidance, please see a short demo on `accounts, contacts and customers <https://www.orocrm.com/media-library/22091>`_.
+.. note:: For quick guidance, please see a short demo on `accounts, contacts and customers <https://oroinc.com/orocrm/media-library/22091>`_.
 
    .. raw:: html
 
@@ -62,19 +62,19 @@ When customer-related data is uploaded to OroCRM (such as from Magento), a new a
 
 .. note:: You can also checkout three short demos on:
 
-          * `creating and editing <https://www.orocrm.com/media-library/22093>`_
+          * `creating and editing <https://oroinc.com/orocrm/media-library/22093>`_
 
              .. raw:: html
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/00Vz_mkbeTE" frameborder="0" allowfullscreen></iframe>
 
-          * `managing <https://www.orocrm.com/media-library/22095>`_
+          * `managing <https://oroinc.com/orocrm/media-library/22095>`_
 
              .. raw:: html
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5FEyHWr-jQY" frameborder="0" allowfullscreen></iframe>
 
-          * `merging account records <https://www.orocrm.com/media-library/merge-account-records-2>`_
+          * `merging account records <https://oroinc.com/orocrm/media-library/merge-account-records-2>`_
 
              .. raw:: html
 
@@ -90,5 +90,5 @@ While a Customer and an Account may refer to a company, an enterprise, or a pers
 System users can define a relationship between a customer and a contact (i.e. bind them to each other), or between a contact and a project (e.g., a lead or opportunity). They can easily find the contact record with OroCRM's :ref:`search functionality <user-guide-getting-started-search>` and use the contact details for the customer-related activities. Moreover, contacts can be allocated into groups to simplify the search and :ref:`filtration <user-guide-filters-management>`.
 
 
-.. note:: You can also checkout a short video on `how to create and edit contact records <https://www.orocrm.com/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0>`_.
+.. note:: You can also checkout a short video on `how to create and edit contact records <https://oroinc.com/orocrm/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0>`_.
 

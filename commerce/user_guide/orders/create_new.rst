@@ -5,7 +5,7 @@
 Create an Order from Scratch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. hint:: See a short demo on `how to create a new order from scratch <https://www.orocommerce.com/media-library/create-new-order#play=ztwuz7NX1Y4>`_ or keep reading for step-by-step guidance.
+.. hint:: See a short demo on `how to create a new order from scratch <https://www.oroinc.com/orocommerce/media-library/create-new-order#play=ztwuz7NX1Y4>`_ or keep reading for step-by-step guidance.
 
    .. raw:: html
 

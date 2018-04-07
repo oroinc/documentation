@@ -19,7 +19,7 @@ Overview
 
 
 .. note::
-    See a short demo on `how to create customer groups in OroCommerce <https://www.orocommerce.com/media-library/create-customer-groups>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to create customer groups in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-customer-groups>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

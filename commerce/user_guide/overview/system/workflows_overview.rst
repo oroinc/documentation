@@ -47,4 +47,4 @@ attributes may be "Name" that must be defined after transition "Start Writing" a
 be changed after "Approved".
 
 
-See `more about Workflows <https://www.orocommerce.com/blog/importance-workflows-b2b-ecommerce>`_.
+See `more about Workflows <https://www.oroinc.com/orocommerce/blog/importance-workflows-b2b-ecommerce>`_.

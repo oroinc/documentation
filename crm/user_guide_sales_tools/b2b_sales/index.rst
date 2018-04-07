@@ -15,7 +15,7 @@ A sales pipeline is usually a series of steps taken by a salesperson from the in
 
 .. image:: ../../img/sales_process/sales_process_diagram.png
 
-.. note:: See a short demo on `how to work with OroCRM sales flow <https://www.orocrm.com/media-library/work-native-orocrm-sales-flow>`_, or keep reading the guidance below.
+.. note:: See a short demo on `how to work with OroCRM sales flow <https://oroinc.com/orocrm/media-library/work-native-orocrm-sales-flow>`_, or keep reading the guidance below.
 
    .. raw:: html
 

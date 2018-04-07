@@ -6,7 +6,7 @@ Create a Web Catalog
 --------------------
 
 .. note::
-    See a short demo on `how to create a web catalog in OroCommerce <https://www.orocommerce.com/media-library/create-web-catalog>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to create a web catalog in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-web-catalog>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

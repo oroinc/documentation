@@ -103,4 +103,4 @@ Learn more
 .. _`Symfony Bundle System` : http://symfony.com/doc/2.8/bundles.html
 .. _`Symfony Application Deployment` : http://symfony.com/doc/2.8/deployment.html
 .. _`composer.lock` : https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-.. _`contact us` : https://www.orocrm.com/contact-us
+.. _`contact us` : https://www.oroinc.com/orocrm/contact-us

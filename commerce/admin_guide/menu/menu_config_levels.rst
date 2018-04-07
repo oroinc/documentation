@@ -72,7 +72,7 @@ To customize one of the default storefront menus (e.g. commerce main menu) or cu
    The changes apply automatically.
 
 .. note::
-    See a short demo on `how to customize storefront menus in OroCommerce <https://www.orocommerce.com/media-library/customize-front-end-menus>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to customize storefront menus in OroCommerce <https://www.oroinc.com/orocommerce/media-library/customize-front-end-menus>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

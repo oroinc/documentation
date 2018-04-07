@@ -109,6 +109,6 @@ In the **Tracking Code** section, you can copy a tracking code that may be incor
 
 .. |CampaignCode| image:: /user_guide/img/marketing/marketing/marketing_campaign_view_code.png
 
-.. include:: /user_guide/marketing/related_topics.rst
+.. include:: /user_guide_marketing_tools/related_topics.rst
    :start-after: begin_include
 

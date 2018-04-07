@@ -28,4 +28,4 @@ Related Articles
 ^^^^^^^^^^^^^^^^
 
 * `Accounts: Create, Manage, Merge <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts>`_
-* `How to Use Accounts, Contacts and Customers <https://www.orocrm.com/blog/product-news-updates/accounts-contacts-customers-360-degree-view>`_
+* `How to Use Accounts, Contacts and Customers <https://www.oroinc.com/orocrm/blog/product-news-updates/accounts-contacts-customers-360-degree-view>`_

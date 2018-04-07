@@ -250,5 +250,5 @@ See Also on dotmailer
 - :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
 - :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
 
-.. include:: /user_guide/marketing/related_topics.rst
+.. include:: /user_guide_marketing_tools/related_topics.rst
    :start-after: begin_include

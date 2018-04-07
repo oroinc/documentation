@@ -1,4 +1,4 @@
-.. _user-guide-marketing:
+.. _user-guide-marketing-automation:
 
 .. updated on 06 July 2017
 
@@ -52,17 +52,15 @@ To use MailChimp with Oro application, ensure that all the necessary integration
 
 After the integration is configured, you can :ref:`Send Email Campaign via MailChimp <user-guide-mailchimp-campaign>`.
 
+.. automation_finish
+
 **Related Topics**
 
 .. toctree::
+   :titlesonly:
    :maxdepth: 1
 
    marketing_lists
    email_campaigns
    marketing_campaigns
-   marketing_tracking_website_records
-   sending_email_campaign_via_dotmailer
-   dotmailer_data_fields_mappings
-   sending_email_campaign_via_mailchimp
-   
 

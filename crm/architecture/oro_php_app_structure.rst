@@ -94,7 +94,7 @@ For registration, Oro application or package submits the metadata to the compose
    "authors": [
      {
        "name": "Oro, Inc",
-       "homepage": "https://www.orocommerce.com"
+       "homepage": "https://www.oroinc.com/orocommerce"
      }
    ],
 

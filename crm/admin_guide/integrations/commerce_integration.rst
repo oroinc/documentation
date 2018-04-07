@@ -10,7 +10,7 @@ CRM and Commerce Integration
 Overview
 --------
 
-Integration between `OroCRM <https://www.orocrm.com>`_ and `OroCommerce <https://www.orocommerce.com>`_ provides seamless experience of two applications working as one.
+Integration between `OroCRM <https://oroinc.com/orocrm/>`_ and `OroCommerce <https://oroinc.com/orocommerce/>`_ provides seamless experience of two applications working as one.
 
 It is possible to install OroCommerce over existing OroCRM instance, add OroCRM to existing OroCommerce instance or install both applications as a single package.
 
@@ -30,9 +30,9 @@ Oro application share the baseline and combining capabilities of multiple applic
 Accounts 
 --------
 
-Commerce customers are treated the same way as CRM customers, Magento or Business. Their data and business transactions are displayed on the :ref:`Account <user-guide-accounts>` view page, and their activities are added to the Account's activity list.
+Commerce customers are treated the same way as other customers, Magento or Business. Their data and business transactions are displayed on the :ref:`Account <user-guide-accounts>` view page, and their activities are added to the Account's activity list.
 
-Lifetime sales values metric will be calculated for Commerce customer based on orders placed.
+Lifetime sales values metric will be calculated for OroCommerce customer based on orders placed.
 
 The following illustrates an example of an Account for Commerce customer.
 
@@ -55,7 +55,9 @@ When a customer is created or edited at backend, the Account can be specified di
 
 When a new customer is self-registering at frontend, a new Account of the same name will be created automatically.
 
-In case of installation of OroCRM over an existing Commerce instance, new Accounts are automatically created for all existing customers.
+.. In case of installation of OroCRM over an existing Commerce instance, new Accounts are automatically created for all existing customers.
+
+.. comment: OroCommerce always comes with OroCRM features on-board.
 
 You can specify the strategy for Account creation in **System Configuration>Integrations>CRM and Commerce**. There are two options: 
 

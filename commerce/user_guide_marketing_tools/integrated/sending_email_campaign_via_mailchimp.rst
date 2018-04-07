@@ -298,5 +298,5 @@ When you are done, make sure you click **Save and Close**.
 This list will now appear in the **Marketing List** page and will
 now contain contacts sorted according to your conditions.
 
-.. include:: /user_guide/marketing/related_topics.rst
+.. include:: /user_guide_marketing_tools/related_topics.rst
    :start-after: begin_include

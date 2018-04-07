@@ -17,7 +17,7 @@ Once the connection is established, you will be able to see your dotmailer accou
 
 With the help of single sign-on, there will be no need of logging into dotmailer account every time and it will be possible to access it straight from the Oro application.
 
-.. image:: ../img/dotmailer_email_campaign/sign_on.png
+.. image:: /admin_guide/img/dotmailer_email_campaign/sign_on.png
 
 Related articles
 ----------------

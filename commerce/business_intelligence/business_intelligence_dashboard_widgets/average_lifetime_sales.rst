@@ -26,4 +26,4 @@ Related Articles
 ^^^^^^^^^^^^^^^^
 
 * `Accounts Life Time Value <https://oroinc.com/doc/orocrm/current/user-guide/customer-management/common-features-accounts#accounts-life-time-value>`_
-* `Customer Life Time Value <https://www.orocommerce.com/blog/kpis-track-b2b-success-part-ii-customer-lifetime-value>`_
+* `Customer Life Time Value <https://www.oroinc.com/orocommerce/blog/kpis-track-b2b-success-part-ii-customer-lifetime-value>`_

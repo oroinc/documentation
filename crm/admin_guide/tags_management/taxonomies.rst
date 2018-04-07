@@ -15,7 +15,7 @@ The following guide describes how you can configure taxonomies in your Oro appli
 
 Taxonomy is a way to group things together. In your Oro application, you can group tags in taxonomies, and to every taxonomy you can assign a distinctive color to clearly identify different groups of tags that might serve different purposes.
 
-.. note:: See a short demo on `how to create taxonomies <https://www.orocrm.com/media-library/tags-taxonomies>`_, or continue reading the guidance below.
+.. note:: See a short demo on `how to create taxonomies <https://oroinc.com/orocrm/media-library/tags-taxonomies>`_, or continue reading the guidance below.
 
    .. raw:: html
 
