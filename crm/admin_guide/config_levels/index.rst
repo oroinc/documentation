@@ -10,14 +10,16 @@ Hierarchy
 
 In Oro applications, you can manage all settings on multiple configuration layers:
 
-.. image:: /admin_guide/img/landing/Levels.png
+.. image:: /admin_guide/img/landing/levels_small.png
+   :width: 400px
 
 Based on the level where configuration has taken place, settings can fall back to other levels following the pattern below:
 
 * :ref:`User settings <doc-my-user-configuration>` can fall back either to :ref:`system <doc-system-configuration>` or :ref:`organization settings <doc-organization-configuration>`.
 * :ref:`Organization settings <doc-organization-configuration>` can fall back to the :ref:`system settings <doc-system-configuration>`.
 
-.. image:: /admin_guide/img/landing/ConfigLevels.png
+.. image:: /admin_guide/img/landing/configuration_levels_commerce.png
+   :width: 400px 
 
 However:
 

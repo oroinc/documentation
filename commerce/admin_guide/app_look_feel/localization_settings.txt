@@ -1,4 +1,4 @@
-
+.. _doc-user-management-users-configuration-localization:
 .. _admin-configuration-localization:
 
 Localization Settings

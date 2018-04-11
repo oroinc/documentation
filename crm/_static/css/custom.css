@@ -11,6 +11,15 @@
     --border-colors: #adadad; /*#b84926;*/
 }
 
+/*floating sidebar */
+
+
+div.sidebar {
+    width: 150px;
+    font-size: 12px;
+    line-height: 1;
+}
+
 /* -- page layout ----------------------------------------------------------- */
 
 body {
@@ -51,7 +60,9 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-    margin: 0 0 0 292px;
+    position:relative;
+    left: 292px;
+    margin: 0 0 0 0;
     background-color: white; /*#eee !important;*/
     /*border-top: 1px solid #b84926;*/
     padding: 0 0 0 50px;
@@ -94,6 +105,19 @@ div.sphinxsidebarwrapper {
     border-right: 1px solid #8fb3d7;
 }
 
+div.sphinxsidebarwrapper ul {
+    overflow-y: scroll;
+    /*min-height: 450px;*/
+    max-height: 450px;
+}
+
+div.sphinxsidebarwrapper ul.current li ul {
+
+    overflow-y: hidden;
+    max-height: 600px;
+
+}
+
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current {
     width: 100%;
     /*    background-color: #e16040; */
@@ -118,6 +142,18 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current a, div.sphinxsidebarwr
     display: block;
 }
 
+/* +2.1 */
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2 a {
+    /*color: #fff !important;*/
+    color: #1394ca !important;
+    background-color: white; /*#eee*/
+    text-decoration: none;
+}
+
+div.hiddendocmenu {
+    display: none;
+}
+
 /* +3 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul.current li.toctree-l2.active a {
     color: #fff !important;
@@ -126,12 +162,8 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-
     display: block;
 }
 
-/* +2.1 */
-div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2 a {
-    /*color: #fff !important;*/
-    color: #1394ca !important;
-    background-color: white; /*#eee*/
-    text-decoration: none;
+div.hidden {
+    display: none;
 }
 
 /* +3.1 */
@@ -142,19 +174,10 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-
     text-decoration: none;
 }
 
-
-div.hiddendocmenu {
-    display: none;
-}
-
-div.hidden {
-    display: none;
-}
-
 /* +6 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current ul {
     /*display: none;*/
-    display: block;
+    /*display: block;*/ /* Commerce */
 }
 
 /* +2.2 */
@@ -319,8 +342,6 @@ div.body p, .p, p, div.body dd, div.body li {
     padding: 10px 0;
     line-height: 1.5;
 }
-
-
 
 div.admonition {
 background-attachment: scroll;
@@ -913,6 +934,7 @@ padding: 5px 0 5px 0;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     border-bottom: 1px solid var(--border-colors);
     background-color: white !important;
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -1019,7 +1041,7 @@ flex-direction: row;
 font-family: "Open Sans", Helvetica, Arial, sans-serif;
 font-size: 15px;
 font-weight: normal;
-height: 265px;
+/* height: 265px;*/
 justify-content: space-around;
 line-height: 22.5px;
 margin-bottom: 0px;

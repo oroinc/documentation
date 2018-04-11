@@ -2,6 +2,7 @@
 .. _doc-activities-tasks-actions-add-fromuserpage:
 .. _doc-activities-tasks-actions-add-fromrelated:
 .. _doc-activities-tasks-information:
+.. _doc-user-management-users-actions-task:
 
 Create a Task
 -------------

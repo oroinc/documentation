@@ -265,6 +265,14 @@ Images
 
    <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
 
+.. |IcChangePassword| raw:: html
+
+   <i class="fa fa-key fa-lg" aria-hidden="true"></i>
+
+.. |IcResetPassword| raw:: html
+
+   <i class="fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
+
 .. |IcFilesO| raw:: html
 
    <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>

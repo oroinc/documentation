@@ -1,4 +1,5 @@
 .. _sys--config--sysconfig--general-setup--localization:
+.. _doc-user-management-users-configuration-localization:
 
 System Localization and Translations
 ------------------------------------

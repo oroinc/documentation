@@ -1,60 +1,36 @@
 .. _user-ee-multi-org:
+.. _user-ee-multi-org-system:
 
 Multiple Organizations Support
 ==============================
 
-OroCRM Enterprise Edition allows the :ref:`creation <user-management-organization-create>` of multiple organizations 
-within one OroCRM instance.
+In |oro_application| Enterprise edition, you can :ref:`create <user-management-organization-create>` as many organizations as needed with any number of child business units within the application instance. A single user can belong to several different organization. 
 
-There may be any amount of organizations within one OroCRM instance (the system) and one user may belong to several 
-organizations.
+For example, one company can run three different stores under a franchise license. In |oro_application|, each store can be an organization to isolate data managed by the unrelated business partners. Users within the organization would only see records that are relevant to their organization. However, the franchise owner could have access to all organizations to gather aggregated customer or order information. To enable that, the global organization should be created in the |oro_application|.
 
+.. note:: In |oro_application|, you can have only one global organization. Users in the global organization, given they have the **Global** access levels in their role, can access and control all system data in all organizations within one instance of the application.
 
-.. _user-ee-multi-org-system:
+Switch between Organizations
+----------------------------
 
-System Organization
--------------------
+If you have access to more than one organization, you can switch between them using the selector on the top left.
 
-When an organization is created, you can set it as a **system organization**. 
+.. image:: /admin_guide/img/user_management/organization_selector.png
 
-While non-system organizations have separate access and permissions as 
-described in the :ref:`Access and Permissions Management guide <user-guide-user-management-permissions>`, a system 
-organization enables managing (view, create, edit, delete and assign) entity records in all 
-organizations within one OroCRM instance. 
-
-Such permissions are granted to users that have been assigned a role, for which the action access is set to *"System"*.
-
-      |
+.. note:: The global organization is shifted to the left. The organization you are currently logged into is in bold. 
   
-.. image:: ../img/multi_org/multi_org_permission.png
-  
-.. caution::
+When creating a new record in the global organization, you first need to select the organization this record should belong to. Once the organization is selected, you can proceed to the usual record creation flow.
 
-    Any other permission setting but *"System"* defined for a role, in a system organization, will be treated as *"None"*.
+.. |multi_org_choice| image:: /admin_guide/img/multi_org/multi_org_choice.png
 
+**Related Articles**
 
-Choosing an Organization
-------------------------
-
-If there are several organizations available to a user, this user can switch between the organizations. To switch to 
-another organization, click the selector in the top-left corner and choose the organization.
-
-.. hint::
-
-    The system organization (if any) is shifted left related to the other organizations. The organization you are 
-    currently logged into is displayed in bold. 
-
-    |multi_org_choice|
-
-Once a user has chosen a non-system organization, all the new records will be created within this 
-organization.
-
-Within a system organization, the user can choose to which organization a new record will belong:
-
-      |
-
-.. image:: ../img/multi_org/multi_org_new_entity.png
+* :ref:`Create and Manage Organizations <user-management-organizations>`
+* :ref:`Create and Manage Users <doc-user-management-users-actions>`
+* :ref:`Create and Manage User Groups <user-management-groups>`
+* :ref:`Create Business Units <user-management-bu>`
+* :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 
 
 
-.. |multi_org_choice| image:: ../img/multi_org/multi_org_choice.png
+.. |oro_application| replace:: OroCRM
