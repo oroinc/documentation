@@ -21,6 +21,12 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
    * **Column Position** --- Type a number that corresponds to the position of this field in the .csv file that contains entity records.
    * **Exclude Column** --- Select *No* if you want this field to be available for export. Select *Yes* if you do not want this field to be available for export (this field will not be present in the .csv file obtained as a result of the export operation).
 
+     .. note:: Import and export of non-default fields may not be supported until the dedicated customization is developed.
+
+   * **Export Fields** --- When a field is a relation (many to many, many to one, one to many), in the Export Fields you can select whether all the fields of the related entity are exported, or the identity fields only.
+
+      .. comment: May apply to import as well. Not confirmed.
+
 3. In the **Other** section, provide the following information:
 
    .. image:: ../img/entity_management/entity_field_other.png
