@@ -316,7 +316,6 @@ Advanced Configuration Settings
    landing_system_configuration/index
    landing_crm/index
    landing_marketing/index
-   security/index
    user_management/index
    localization/index
    email/index

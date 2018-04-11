@@ -25,7 +25,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/user_management/user_management_users`
+        * User guide: :ref:`Activities <user-guide-activities>`
 
 `ActivityListBundle`_ (OroPlatform)
     The bundle provides methods to show all activities in one widget.
@@ -191,7 +191,7 @@ related articles is provided below the description.
         Read more about it in the following articles:
 
         * Book: :doc:`/dev_guide/emails/emails`
-        * User guide: :doc:`/admin_guide/user_management/user_management_users`
+        * User guide: :ref:`Emails <user-guide-using-emails>`
 
 `EmbeddedFormBundle`_ (OroPlatform)
     Makes it possible to embed Symfony forms on third-party sites and view their submitted data.
@@ -267,7 +267,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/user_management/user_management_users`
+        * User guide: :ref:` Email Configuration <my_email_configuration>`
 
 `ImportExportBundle`_ (OroPlatform)
     Makes it possible to import and export data in an automated way into and from different
@@ -378,10 +378,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/user_management/user_management_overview`
-        * User guide: :doc:`/admin_guide/user_management/user_management_users`
-        * User guide: :doc:`/admin_guide/user_management/user_management_bu`
-        * User guide: :doc:`/admin_guide/user_management/user_management_organization`
+        * User guide: :doc:`/admin_guide/user_management/index`
 
 `PlatformBundle`_ (OroPlatform)
     The OroPlatform core.
@@ -449,9 +446,8 @@ related articles is provided below the description.
         * Reference: :doc:`/reference/annotation/acl`
         * Reference: :doc:`/reference/annotation/acl_ancestor`
         * Reference: :doc:`/reference/format/acls`
-        * User guide: :doc:`/admin_guide/user_management/user_management_overview`
-        * User guide: :doc:`/admin_guide/user_management/user_management_users`
-        * User guide: :doc:`/admin_guide/security/access_management_roles`
+        * User guide: :doc:`/admin_guide/user_management/index`
+        * User guide: :ref:` <user-guide-user-management>`
 
 `SegmentBundle`_ (OroPlatform)
     Provides entity segmentation that can be used for further processing.
@@ -542,12 +538,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * User guide: :doc:`/admin_guide/user_management/user_management_overview`
-        * User guide: :doc:`/admin_guide/user_management/user_management_users`
-        * User guide: :doc:`/admin_guide/security/access_management_roles`
-        * User guide: :doc:`/admin_guide/user_management/user_management_bu`
-        * User guide: :doc:`/admin_guide/user_management/user_management_organization`
-        * User guide: :doc:`/admin_guide/user_management/user_management_groups`
+        * User guide: :doc:`/admin_guide/user_management/index`
 
 `WindowsBundle`_ (OroPlatform)
     Consists of a set of tools for manipulating dialog windows and their states.
