@@ -1,3 +1,5 @@
+.. _admin-package-manager:
+
 .. index::
     single: Extension; Install extension
     single: Extension; Install extension from command line

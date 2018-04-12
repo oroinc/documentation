@@ -1,26 +1,24 @@
+.. _admin-guide--workflows--opportunity--management:
+
 .. begin_opportunity_flows
 
 Manage Opportunity Workflow
 ---------------------------
 
-You can use OroCRM’s workflows to define rules and guidelines on possible actions/updates of opportunities in the system.
+You can use OroCRM’s workflows to define rules and guidelines of possible actions and updates of the opportunities in the application.
 
-It is possible to have multiple active workflows for the same entity at the same time (e.g.: alternative sales workflows that the sales representative can choose when they decide how to deal with an opportunity; parallel sales follow-up and order fulfillment workflows for a placed order, etc.).
+You can have multiple active workflows for the same entity at the same time (e.g.: alternative sales workflows that the sales representative can choose when they decide how to deal with an opportunity; parallel sales follow-up and order fulfillment workflows for a placed order, etc.).
 
-In the following example, we have two workflows for Opportunity active at the same time (Opportunity Management Flow and Opportunity Support Flow).
-
-
+In the following example, we have two workflows for an opportunity which are active at the same time (Opportunity Management Flow and Opportunity Support Flow).
 
 .. image:: ../../../img/opportunities_2.0/multiple_flows.jpg
-
 
 Activate Opportunity Management Flow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To ensure data consistency and reasoned opportunity management by a sales manager, you can activate Opportunity Management Flow in **System>Workflows**.
+To ensure data consistency and reasoned opportunity management by a sales manager, you can activate Opportunity Management Flow in **System > Workflows**.
 
-This can be done from the **Workflows** view page by selecting Opportunity Management Flow and clicking :guilabel:`Activate` in the top right corner.
-
+This can be done from the **Workflows** page by selecting Opportunity Management Flow and clicking **Activate** on the top right.
 
 .. image:: ../../../img/opportunities_2.0/activate_opp_flow.png
 
@@ -29,36 +27,26 @@ Active Opportunity Management Flow limits what a sales manager can do with oppor
 Start Opportunity Management Flow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Activating Opportunity Management Flow does not happen automatically for all opportunities. Once the flow has been activated in **System>Workflows**, you need to start it manually for the required opportunities.
+Activating Opportunity Management Flow does not happen automatically for all opportunities. Once the flow has been activated in **System > Workflows**, you need to start it manually for the required opportunities.
 
 It is possible to have multiple active workflows for the same record. If you have more than one active workflow, you can separately activate each of them. In the following example, two workflows are available for one opportunity record:
 
-
-
 .. image:: ../../../img/opportunities_2.0/start_opp_managemtn_flow_manually.jpg
-
 
 You can set Opportunity Status and Probability manually before starting Opportunity Management Flow.
 
-
 .. image:: ../../../img/opportunities_2.0/stautus_probability_opp_flow.jpg
 
-
 .. image:: ../../../img/opportunities_2.0/two_workflows_active.jpg
-
-
 
 Manage Multiple Workflows
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Workflows are expandable and can be collapsed if necessary by clicking on the :guilabel:`+` button on the left of the Workflow as illustrated below:
-
+Workflows are expandable and can be collapsed, if necessary, by clicking **+** on the left of the workflow as illustrated below:
 
 .. image:: ../../../img/opportunities_2.0/collapse_flow.jpg
 
-
 .. image:: ../../../img/opportunities_2.0/collapse_flow_2.jpg
-
 
 Transitions
 ^^^^^^^^^^^
@@ -78,38 +66,32 @@ Close As Won/Close As Lost
 
 .. image:: ../../../img/opportunities_2.0/inactive_close_reason.jpg
 
-
-To close an opportunity as Won or Lost, use **Close As Won/Close As Lost** transition buttons instead. They are located at the top of Opportunities view page.
-
-|
+To close an opportunity as Won or Lost, use **Close As Won/Close As Lost** transition buttons instead. They are located at the top of Opportunitiespage.
 
 .. image:: ../../../img/opportunities_2.0/transitions.jpg
 
-Note that it is not possible to close an opportunity from the grid, although inline editing as a feature is available after flow activation.
+Note that it is not possible to close an opportunity from the table of all opportunities, although inline editing is available after flow activation.
 
-To close an opportunity as Won:
+To close an opportunity as won:
 
--	Click :guilabel:`Close As Won`.
+-	Click **Close As Won**.
 -	Enter **Close Revenue**.
 -	Enter **Expected Close Date**.
--	Click :guilabel:`Submit`.
+-	Click **Submit**.
 
 To close an opportunity as Lost:
 
--	Click :guilabel:`Close As Lost`.
+-	Click **Close As Lost**.
 -	Select **Close Reason** from the dropdown.
 -	Select the **Expected Close Date**.
--	Click :guilabel:`Submit`.
+-	Click **Submit**.
 
 Develop
 ~~~~~~~
 
 Develop transition is a simplified form for editing an opportunity.
 
-
-
 .. image:: ../../../img/opportunities_2.0/develop.jpg
-
 
 Other
 ~~~~~
@@ -125,48 +107,43 @@ Depending on their configuration, workflow steps can vary. Here is an example of
 .. image:: ../../../img/opportunities_2.0/wf_steps_3.jpg
 
 
-
 OroCommerce Opportunity Flow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-OroCommerce Opportunity Flow allows sales reps to create `quotes <https://www.oroinc.com/doc/orocommerce/current/user-guide/quotes>`__ directly from the opportunity view page. All quotes created within a specific opportunity are displayed in the corresponding section of its view page. The sales rep can manage quotes from this grid in the same way they can manage them from the quotes grid (e.g. edit or delete).
+OroCommerce Opportunity Flow enables sales reps to create `quotes <https://www.oroinc.com/doc/orocommerce/current/user-guide/quotes>`__ directly from the opportunity page. All quotes created within a specific opportunity are displayed in the corresponding section of its  page. The sales rep can manage quotes from this table in the same way they can manage them from the quotes table (e.g. edit or delete).
 
-.. note:: Creating a quote from the opportunity view page is only available if opportunity is related to a Commerce customer. Otherwise, the workflow will behave exactly like the standard Opportunity Management flow (for standard flow, see the `Manage Opportunity Workflow`_ section of the guide).
+.. note:: Creating a quote from the opportunity page is only available if the opportunity is related to a Commerce customer. Otherwise, the workflow will behave exactly like the standard Opportunity Management flow (for standard flow, see the `Manage Opportunity Workflow`_ section of the guide).
 
-When OroCommerce Opportunity flow is activated in **System>Workflows** and an opportunity is related to a Commerce customer, the :guilabel:`Create Quote` button will appear in the top right corner of the opportunity view page.
+When OroCommerce Opportunity flow is activated in **System > Workflows** and an opportunity is related to a Commerce customer, the **Create Quote** button appears on the top right of the opportunity page.
 
-.. note:: Creating a quote from the opportunity view page is only available for **open** opportunities, i.e. not closed or lost. 
-
+.. note:: Creating a quote from the opportunity page is only available for **open** opportunities, i.e. not closed or lost. 
 
 .. image:: ../../../img/opportunities_2.0/commerce_flow.png
 
-
 .. image:: ../../../img/opportunities_2.0/create_quote.png
 
-Click :guilabel:`Create Quote` to start creating a new quote.
+Click **Create Quote** to start creating a new quote.
 
-When a quote is created and saved, the following information will appear on the opportunity page:
+When a quote is created and saved, the following information appears on the opportunity page:
 
 - A **Quote Created** note next to the OroCommerce Opportunity Flow name.
 - A **Quotes** section with details of the created quote.
 
 
-From the opportunity view page, the following actions are possible for the quote:
+From the opportunity page, the following actions are possible for the quote:
 
 - View: |IcView|
 - Edit: |IcEdit|
 - Delete: |IcDelete|
 - Expire: |IcExpire|
 
-.. note:: Note that availability of the **Expire** option for a quote within the opportunity view page depends on the types of workflows activated in your system.
+.. note:: Note that availability of the **Expire** option for a quote within the opportunity page depends on the types of workflows activated in your system.
 
 .. image:: ../../../img/opportunities_2.0/quote_created_opp.png
 
-On the Quote view page, relation to the opportunity, which this quote has been created from, will remain, as illustrated in the following screenshot:
+On the Quote page, the relation to the opportunity (which this quote has been created from) remains, as illustrated in the following screenshot:
 
 .. image:: ../../../img/opportunities_2.0/quote_opp.png
-
-
 
 .. image:: ../../../img/opportunities_2.0/quote_opp_edit.png
 
