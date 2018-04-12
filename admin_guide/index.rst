@@ -19,7 +19,6 @@ Please note that in many cases, the tools may be not available to the usual user
 
    app_look_feel/index
    monitoring/index
-   package_manager
    security/index
    user_management/index
    email/index

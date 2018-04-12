@@ -3,6 +3,8 @@
     single: Extension; Install extension from command line
     single: Extension
 
+.. _admin-package-manager:
+
 How to Manage OroPlatform Extensions
 =====================================
 
