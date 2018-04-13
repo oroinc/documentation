@@ -311,7 +311,6 @@ Advanced Configuration Settings
 
    op_structure/index
    monitoring/index
-   package_manager
    config_levels/index
    landing_system_configuration/index
    landing_crm/index
