@@ -5,7 +5,7 @@ Workflow Management
 ===================
 
 .. contents:: :local:
-   :depth: 4
+   :depth: 1
 
 .. TODO add information on exclusive active and exclusive record group
 
@@ -35,11 +35,11 @@ Available System Workflows
 
 The following system workflows are provided out of the box in OroCRM:
 
-* Unqualified Sales Lead
+* :ref:`Unqualified Sales Lead <admin-guide--workflows--unqualified-sales-lead>`
 * :ref:`Abandoned Shopping Cart (Magento) <user-guide-magento-entities-workflows--abandoned-shopping-cart>`
 * :ref:`Order Follow Up (Magento) <user-guide-magento-entities-workflows--order-follow-up>`
-* Opportunity Management Flow
-* Contact Request
+* :ref:`Opportunity Management Flow <admin-guide--workflows--opportunity--management>`
+* :ref:`Contact Request <admin-guide--workflows--contact-request-wf>`
 * :ref:`Task Flow <doc--workflows--task-flow>`
 
 .. _user-guide--system--workflow-management-steps-transitions:
@@ -490,4 +490,5 @@ See the following sections to get more information about the system workflows in
    :maxdepth: 1
 
    task_flow
-
+   unqualified_sales_lead_wf
+   contact_request_wf
