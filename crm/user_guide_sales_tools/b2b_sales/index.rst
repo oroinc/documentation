@@ -40,7 +40,7 @@ In OroCRM, the following key sales components frame the sales process:
 
    :ref:`Opportunities <user-guide-system-channel-entities-opportunities>` are potential deals. Similar to leads, opportunities can be enabled or disabled subject to company roles or needs. once enabled, they are added to **Sales** in the main menu.
 
-   In OroCRM, opportunities can either be created from scratch, or converted from related entities, such as leads, customers, or accounts. Various   details can be provided for opportunities. For instance, they can be assigned probabilities percentage for each status (e.g. needs analysis,    solution development) tailored to the requirements of your business, or given a budget amount in the currency specific to this particular opportunity. Moreover, a sales rep processing an opportunity can track the history of all deals of a particular customer from their opportunity page. This helps compare past and current opportunities, and use this data to manage ongoing projects for each customer. Opportunities can also be viewed on a Kanban board, and managed through multiple :ref:`workflows <doc--workflows>`.
+   In OroCRM, opportunities can either be created from scratch, or converted from related entities, such as leads, customers, or accounts. Various   details can be provided for opportunities. For instance, they can be assigned probabilities percentage for each status (e.g. needs analysis,    solution development) tailored to the requirements of your business, or given a budget amount in the currency specific to this particular opportunity. Moreover, a sales rep processing an opportunity can track the history of all deals of a particular customer from their opportunity page. This helps compare past and current opportunities, and use this data to manage ongoing projects for each customer. Opportunities can also be viewed on a Kanban board, and managed through multiple :ref:`workflows <doc--system--workflow-management>`.
 
 
 Workflow
@@ -87,7 +87,7 @@ Specifically for business sales, there are a number of :ref:`dashboard widgets <
 Workflows
 ^^^^^^^^^
 
-You can use OroCRM’s workflows to define rules and guidelines on possible actions for leads and opportunities in the system. New customer-specific workflows can also be created, as described in the :ref:`Workflows topic <doc--workflows>`.
+You can use OroCRM’s workflows to define rules and guidelines on possible actions for leads and opportunities in the system. New customer-specific workflows can also be created, as described in the :ref:`Workflows topic <doc--system--workflow-management>`.
 
 Sales Territories
 ^^^^^^^^^^^^^^^^^

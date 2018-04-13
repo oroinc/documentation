@@ -3,6 +3,7 @@
 .. _doc-activities-events-information:
 .. _doc-activities-events-schedule:
 .. _doc-activities-events-actions-add:
+.. _doc-user-management-users-actions-event:
 
 Add a Calendar Event
 --------------------

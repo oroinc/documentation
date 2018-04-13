@@ -265,6 +265,14 @@ Images
 
    <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
 
+.. |IcChangePassword| raw:: html
+
+   <i class="fa fa-key fa-lg" aria-hidden="true"></i>
+
+.. |IcResetPassword| raw:: html
+
+   <i class="fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
+
 .. |IcFilesO| raw:: html
 
    <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
@@ -329,17 +337,21 @@ Images
 
    <i class="fa fa-minus fa-lg" aria-hidden="true"></i>
 
+.. |IcGlobalLevel| raw:: html
+
+   <i class="fa fa-cogs fa-lg" aria-hidden="true"></i>
+
 .. |IcOrganizationLevel| raw:: html
 
-   <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
+   <i class="fa fa-building-o fa-lg" aria-hidden="true"></i>
 
 .. |IcUserLevel| raw:: html
 
-   <i class="fa fa-user-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
+   <i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
 
 .. |IcWebsiteLevel| raw:: html
 
-   <i class="fa fa-globe" aria-hidden="true" style="color:#56A5EC"></i>
+   <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
 
 .. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
    :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png

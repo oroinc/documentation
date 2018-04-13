@@ -96,7 +96,7 @@ To create a shipping rule:
 2. In the main menu, navigate to **System > Shipping Rules**. The list of shipping rules opens.
 
 
-   .. image:: /configuration_guide/img/shipping_rules/shipping_rule_list.png
+   .. image:: /admin_guide/img/shipping_rules/shipping_rule_list.png
 
 
 #. Click **Create Shipping Rule** on the top right. The shipping rule create page opens.
@@ -113,13 +113,13 @@ To create a shipping rule:
 
    - Select the **Stop Further Rule Processing** check box to prevent applying other shipping rules with lower priority. See :ref:`Stop Further Rule Processing Mode <doc--shipping-rules--overview--stop-further-processing>`.
 
-   .. image:: /configuration_guide/img/shipping_rules/shipping_rule_general.png
+   .. image:: /admin_guide/img/shipping_rules/shipping_rule_general.png
 
 #. If required, in the **Destinations** section, add one or more destinations to apply this shipping rule for. The shipping rule applies when the shipping address matches the provided destination(s). To add a destination:
 
    a) Click **+ Add**. The following section appears:
 
-      .. image:: /configuration_guide/img/shipping_rules/shipping_rule_destination1.png
+      .. image:: /admin_guide/img/shipping_rules/shipping_rule_destination1.png
 
 
    b) Provide the destination to apply the shipping rule for. Depending on the granularity that you require, you may provide just a country, a country and a state, or a country and a distinct list of postal codes.
@@ -128,13 +128,13 @@ To create a shipping rule:
       - **State**—Select the state from the list. The list of states appears after you have selected a country.
       - Enter the list of postal codes.
 
-      .. image:: /configuration_guide/img/shipping_rules/shipping_rule_destination2.png
+      .. image:: /admin_guide/img/shipping_rules/shipping_rule_destination2.png
 
       .. TODO: Use <delimiter> to separate values?
 
 #. If required, in the **Conditions** section, specify the expression that describes the conditions when this shipping rule should be applied.
 
-   .. image:: /configuration_guide/img/shipping_rules/shipping_rule_condition.png
+   .. image:: /admin_guide/img/shipping_rules/shipping_rule_condition.png
 
 
    For detailed information about the expression language used in the shipping and payment rules, please see the :ref:`Expression Language for Shipping and Payment Rules <payment-shipping-expression-lang>` guide.
@@ -147,7 +147,7 @@ To create a shipping rule:
 
       - To add all available shipping methods, click **Add All**.
 
-      .. image:: /configuration_guide/img/shipping_rules/shipping_rule_method_add1.png
+      .. image:: /admin_guide/img/shipping_rules/shipping_rule_method_add1.png
 
       .. warning::
 
@@ -159,20 +159,20 @@ To create a shipping rule:
 
    b) Configure all selected shipping methods. Configuration options vary depending on a shipping method. For details on options available for different methods, see :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>`. The configuration summary appears next to the shipping method name, in the **Options** column.
 
-      .. image:: /configuration_guide/img/shipping_rules/shipping_rule_method_summary.png
+      .. image:: /admin_guide/img/shipping_rules/shipping_rule_method_summary.png
 
 
       If a shipping method appears collapsed, click the |IcPlusSquareO| **Expand** icon in front of its name to see the configuration options.
 
 
-      .. image:: /configuration_guide/img/shipping_rules/shipping_rule_method.png
+      .. image:: /admin_guide/img/shipping_rules/shipping_rule_method.png
 
 
 #. In the **Websites** section, specify the website(s) that the shipping rule should apply to, if you have more than one website. This field is optional and may be left empty. Hold the Ctrl key to choose several websites, if necessary.
 
       .. note:: Please note that application of shipping rules to websites is only available for Enterprise customers.
 
-      .. image:: /configuration_guide/img/shipping_rules/SHRuleView1.png
+      .. image:: /admin_guide/img/shipping_rules/SHRuleView1.png
 
    * When no website is selected, the shipping rule is always applied by default.
 
@@ -201,7 +201,7 @@ For the flat rate shipping method, provide the following information:
 
 For example:
 
-.. image:: /configuration_guide/img/shipping_rules/shipping_rule_method_flat.png
+.. image:: /admin_guide/img/shipping_rules/shipping_rule_method_flat.png
 
 UPS
 ~~~
@@ -217,7 +217,7 @@ For the UPS shipping method, provide the following information:
 
 For example:
 
-.. image:: /configuration_guide/img/shipping_rules/shipping_rule_method_ups.png
+.. image:: /admin_guide/img/shipping_rules/shipping_rule_method_ups.png
 
 
 FedEx
@@ -244,7 +244,7 @@ In the **Additional Options** section, provide the following information for eac
 - **Handle Fee**—An additional cost for order processing (packing and mailing, etc) charged by your company. It is applied as a surcharge to the flat fee specified in the used DPD integration.
 - Select the **Active** check box in the **Status** column to enable the option.
 
-.. image:: /configuration_guide/img/shipping_rules/shipping_rule_method_dpd.png
+.. image:: /admin_guide/img/shipping_rules/shipping_rule_method_dpd.png
 
 .. _doc--shipping-rules--actions--enable:
 
@@ -262,7 +262,7 @@ To enable a shipping rule:
 
 3. Click the |IcActivate| **Activate** icon.
 
-   .. image:: /configuration_guide/img/shipping_rules/shipping_rule_enable.png
+   .. image:: /admin_guide/img/shipping_rules/shipping_rule_enable.png
 
 To enable several shipping rules at the same time:
 
@@ -272,7 +272,7 @@ To enable several shipping rules at the same time:
 
 3. Click |IcActivate| **Enable**.
 
-  .. image:: /configuration_guide/img/shipping_rules/SRuleMassAction.png
+  .. image:: /admin_guide/img/shipping_rules/SRuleMassAction.png
 
 Filter a Shipping Rule List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -281,7 +281,7 @@ You can use filters on the shipping rules list page to find the required records
 
 1. To show filters, click |IcFilter| above the table on the far right.
 
-   .. image:: /configuration_guide/img/shipping_rules/SRulesFilters.png
+   .. image:: /admin_guide/img/shipping_rules/SRulesFilters.png
 
    Filters are hidden by default.
 
@@ -289,14 +289,14 @@ You can use filters on the shipping rules list page to find the required records
 
    .. note:: Filter controls might look different depending on the type of data you are going to filter, e.g. textual, numeric, a date or an option set.
 
-   .. image:: /configuration_guide/img/shipping_rules/SRFilterButton.png
+   .. image:: /admin_guide/img/shipping_rules/SRFilterButton.png
 
 Organize a Shipping Rule List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To define which columns to show in the table, click |IcSettings| above the table on the far right:
 
-   .. image:: /configuration_guide/img/shipping_rules/SRuleGridSettings.png
+   .. image:: /admin_guide/img/shipping_rules/SRuleGridSettings.png
 
 * To choose the columns to be displayed in the table, select the check box next to the required column under **Show**. Clear the check box to make the column disappear from the table.
 

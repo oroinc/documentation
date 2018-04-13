@@ -90,7 +90,7 @@ The following actions can be performed with business customer records:
 
     :ref:`Custom Reports <user-guide-reports>` can be added to analyze details of business customers in OroCRM. 
 
-    :ref:`Workflows <doc--workflows>` can be created to define rules and guidelines on possible actions/updates of business customers in the system.
+    :ref:`Workflows <doc--system--workflow-management>` can be created to define rules and guidelines on possible actions/updates of business customers in the system.
 
 
 .. BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png

@@ -1,4 +1,5 @@
 .. _user-guide--activities--calls--log:
+.. _doc-activities-overview-calls:
 
 Log Calls
 ---------

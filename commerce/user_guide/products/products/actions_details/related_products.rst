@@ -35,21 +35,21 @@ Configure related products globally, per website and organization.
 Enable Related Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_commerce/product/products/related_products/global_related_products.rst
+.. include:: /admin_guide/landing_commerce/product/products/related_products/global_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_commerce/product/products/related_products/organization_related_products.rst
+.. include:: /admin_guide/landing_commerce/product/products/related_products/organization_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_commerce/product/products/related_products/website_related_products.rst
+.. include:: /admin_guide/landing_commerce/product/products/related_products/website_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 

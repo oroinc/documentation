@@ -30,8 +30,6 @@ Open Opportunities grid is the default view.
 
 To change the grid view, click on the arrow icon on the right of **Open Opportunities** header and select the preferred grid view from the dropdown, as shown in the screenshot below.
 
-|
-
 .. image:: ../../../img/opportunities_2.0/opp_grid.jpg
 
 

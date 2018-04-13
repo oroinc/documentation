@@ -15,7 +15,7 @@ The following topics will delve into how to view, create and manage promotions i
 Configure Promotions
 --------------------
 
-.. include:: /configuration_guide/landing_commerce/sales/promotions/index.rst
+.. include:: /admin_guide/landing_commerce/sales/promotions/index.rst
    :start-after: begin
 
 Create Promotions

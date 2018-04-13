@@ -39,21 +39,21 @@ Configure up-sell products globally, per website and organization.
 Enable Up-Sell Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_commerce/product/products/upsell_items/global_upsell_items.rst
+.. include:: /admin_guide/landing_commerce/product/products/upsell_items/global_upsell_items.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 
 Enable Up-Sell Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_commerce/product/products/upsell_items/organization_upsell_items.rst
+.. include:: /admin_guide/landing_commerce/product/products/upsell_items/organization_upsell_items.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 
 Enable Up-Sell Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /configuration_guide/landing_commerce/product/products/upsell_items/website_upsell_items.rst
+.. include:: /admin_guide/landing_commerce/product/products/upsell_items/website_upsell_items.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 

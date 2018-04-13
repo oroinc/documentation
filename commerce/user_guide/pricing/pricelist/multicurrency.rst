@@ -43,7 +43,7 @@ By default, prices in the OroCommerce Storefront are shown in the default curren
 
 However, you may select a different currency with a currency picker on the top right.
 
-.. image:: /configuration_guide/img/configuration/catalog/pricing/currency_on_the_front_store.png
+.. image:: /admin_guide/img/configuration/catalog/pricing/currency_on_the_front_store.png
 
 After the new currency is selected, product prices automatically adjust to show the unit prices in the selected currency.
 

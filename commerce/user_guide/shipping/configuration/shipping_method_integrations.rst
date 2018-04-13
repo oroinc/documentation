@@ -57,7 +57,7 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
 2. Click **Create Integration** and select UPS as integration type:
 
-   .. image:: /configuration_guide/img/integrations/manage_integrations/CreateUPSIntegration.png
+   .. image:: /admin_guide/img/integrations/manage_integrations/CreateUPSIntegration.png
       :class: with-border
 
 3. Type in the *Common Integration Details*:
@@ -129,7 +129,7 @@ To enable flat rate shipping:
 
 2. Click **Create Integration** and select Flat Rate Shipping as integration type:
 
-   .. image:: /configuration_guide/img/integrations/manage_integrations/CreateFlatRate.png
+   .. image:: /admin_guide/img/integrations/manage_integrations/CreateFlatRate.png
       :class: with-border
 
 3. Type in the integration name and label (e.g. Flat Rate). Add label translations, if necessary.

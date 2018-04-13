@@ -3,6 +3,7 @@
 .. Should remain orphan, as it is included into the index with TOC
 
 .. _export-bulk-items:
+.. _user-guide-export:
 
 .. begin_global_export
 
