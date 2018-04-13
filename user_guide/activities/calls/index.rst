@@ -1,5 +1,5 @@
 .. _doc-activities-calls:
-.. _doc-activities-overview-calls:
+
 
 Calls
 =====

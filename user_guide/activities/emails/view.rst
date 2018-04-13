@@ -1,4 +1,5 @@
 .. _user-guide-using-emails-view:
+.. _doc-user-management-users-actions-email:
 
 View, Create, and Process Your Emails
 -------------------------------------
