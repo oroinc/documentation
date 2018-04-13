@@ -28,4 +28,4 @@ You can adjust the following settings for the recently accessed contacts widget:
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `How to Use Accounts, Contacts and Customers <https://www.orocrm.com/blog/product-news-updates/accounts-contacts-customers-360-degree-view>`_
+* `How to Use Accounts, Contacts and Customers <https://www.oroinc.com/orocrm/blog/product-news-updates/accounts-contacts-customers-360-degree-view>`_

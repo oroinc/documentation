@@ -15,7 +15,7 @@ This article describes how to define and edit the integration and synchronizatio
     While Magento integration capabilities are pre-implemented, OroCRM can be integrated with different third-party
     systems.
 
-.. note:: See a short demo on `how to setup an integration between a Magento and your Oro application <https://www.orocrm.com/media-library/setup-magento-crm-integration>`_, or keep reading the guidance below.
+.. note:: See a short demo on `how to setup an integration between a Magento and your Oro application <https://oroinc.com/orocrm/media-library/setup-magento-crm-integration>`_, or keep reading the guidance below.
 
    .. raw:: html
 

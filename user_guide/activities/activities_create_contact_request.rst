@@ -5,7 +5,7 @@ Contact Requests
 
 Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. When your customers use this form, contact requests are automatically generated and added to the page of all contacts in your Oro application. 
 
-See a short demo in our media library on `how to create and manage contact requests <https://www.orocrm.com/media-library/manage-contact-requests>`_, or keep reading the guidance below.
+See a short demo in our media library on `how to create and manage contact requests <https://oroinc.com/orocrm/media-library/manage-contact-requests>`_, or keep reading the guidance below.
 
 .. raw:: html
 
