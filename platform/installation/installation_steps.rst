@@ -12,6 +12,14 @@ The installation wizard guides you through the installation process and is more 
 
 .. include:: ../../platform/installation/installation_via_console.rst
    :start-after: begin_installation_via_console
+   :end-before: finish_installation_via_console
+
+.. _silent-installation:
+
+.. include:: ../../platform/installation/installation_via_console.rst
+   :start-after: begin_silent_installation_via_console
+   :end-before: finish_silent_installation_via_console
+
 
 .. _book-installation-wizard:
 
@@ -136,5 +144,5 @@ To load your own data fixtures, you'll need to implement Doctrine's *"FixtureInt
 
 .. toctree::
 
-   ../../platform/installation/installation_via_console
-   ../../platform/installation/installation_via_UI
+   installation_via_console
+   installation_via_UI

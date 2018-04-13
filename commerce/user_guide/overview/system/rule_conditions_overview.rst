@@ -6,7 +6,7 @@ Filtering Expression Syntax
 * Entity properties, that may vary depending on the context (see `Shipping Rules`_ and `Payment Rules`_ sections below for details).
 
 .. note::
-   To keep the filter behavior predictable, Oro Commerce enforces the following limitation in regards to using relations in the filtering criteria: you can only use parameters residing on the “one” side of “one-to-many” relation (including the custom ones).
+   To keep the filter behavior predictable, OroCommerce enforces the following limitation in regards to using relations in the filtering criteria: you can only use parameters residing on the “one” side of “one-to-many” relation (including the custom ones).
    When using relation, the id is assumed and may be omitted (e.g. “product.category == 1” expression means the same as “product.category.id == 1”).
    Generally, any product, price and category entity attribute is accessible by field name.
 
@@ -44,14 +44,4 @@ Prices, product, unit, quantity
 * **Literals:** You can use strings (e.g. *'hello'*), numbers (e.g. *345*), arrays (e.g. *[7, 8, 9]* ), hashes (e.g. *{ property_name: 'property_value' }*), *true*, *false* and *null*.
 
 .. Prices, product, unit, quantity
-
-
 .. virtual fields and relations (category, inventory level)
-
-.. https://github.com/laboro/dev/blob/52428e32187ce31dcd2c59e30a1bfe38ba8301c0/package/platform/src/Oro/Component/ExpressionLanguage/README.md#L4-L4
-.. https://github.com/laboro/dev/blob/d0cd3b79e45adb52a378dc87f21ddb568d04bca5/package/commerce/src/Oro/Bundle/ShippingBundle/Context/ShippingContextInterface.php#L30-L30
-.. https://github.com/laboro/dev/blob/8695f4ebf7407cc65f3c270cc880f7d6f55ffc16/package/commerce/src/Oro/Bundle/PaymentBundle/Context/PaymentContextInterface.php#L15-L15
-
-
-
-

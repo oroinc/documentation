@@ -8,7 +8,7 @@ Payment Methods and Providers
 For detailed information about payment provider services supported in OroCommerce, please see the following sections.
 
  .. note::
-    See a short demo on `how to create payment method integrations <https://www.orocommerce.com/media-library/how-to-create-payment-method-integrations>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to create payment method integrations <https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

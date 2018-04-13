@@ -22,15 +22,16 @@ Tax Rules
 .. include:: /user_guide/taxes/tax_rules/edit.rst
    :end-before: stop
 
-Export
-~~~~~~
+Export Tax Rules
+^^^^^^^^^^^^^^^^
 
 You can export the tax rule details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
-Import
-~~~~~~
+Import Tax Rules
+^^^^^^^^^^^^^^^^
 
-You can import the bulk details of tax rule information in the .csv format following the steps described in the :ref:`Importing Tax Rules <import-tax-rules>` guide.
+.. include:: /getting_started/import_export/import_tax_rules.rst
+   :start-after: start
 
 .. finish
 

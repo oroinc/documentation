@@ -11,7 +11,7 @@ You can define and modify the list of OroCRM users who have access to each of th
 letters into cases or leads, and set-up auto-responses.
 
 .. note::
-   See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+   See a short demo on `how to create and configure system mailboxes <https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
 
     .. raw:: html
 

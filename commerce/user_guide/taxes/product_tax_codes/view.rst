@@ -1,7 +1,7 @@
 View Product Tax Code Details, Linked Products and Change History
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To view a Product Tax Code details: 
+To view Product Tax Code details:
 
 #. Navigate to **Taxes > Product Tax Codes** in the main menu. 
 
@@ -11,7 +11,7 @@ To view a Product Tax Code details:
 
    * Code
 
-   * Decription
+   * Description
 
    * List of products with this product tax code
 
@@ -22,14 +22,14 @@ To view a Product Tax Code details:
 
 You can perform the following actions with a Product Tax Code:
 
- * View Change History: See the log of edits of this product tax code by clicking on the **Change History** link to the tp right of the page.
+ * View Change History: See the log of edits of this product tax code by clicking the **Change History** link to the top right of the page.
    
    .. image:: /user_guide/img/taxes/product_tax_codes/MEDICAL_IDENTIFICATION_TAGS_View_ProductTaxCodes_Taxes_ChangeHistory.png
       :class: with-border
 
  * View details of the product linked to this product tax code: Click on the line with the customer account details.
    
-   .. note:: You can edit the product details to remove link to this product tax code, if necessary.
+   .. note:: You can edit the product details to remove the link to this product tax code, if necessary.
 
    .. image:: /user_guide/img/taxes/product_tax_codes/ProductTaxCodeLinkedProduct.png
       :class: with-border

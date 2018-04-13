@@ -6,7 +6,7 @@
 Create a Product Attribute
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-See a short demo on `how to create product attributes <https://www.orocommerce.com/media-library/create-product-attributes-families>`_, or keep reading the step-by-step guidance below.
+See a short demo on `how to create product attributes <https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families>`_, or keep reading the step-by-step guidance below.
 
 .. raw:: html
 

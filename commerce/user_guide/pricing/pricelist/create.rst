@@ -4,7 +4,7 @@ Create a Price List
 .. begin
 
 .. note::
-    See a short demo on `how to configure price lists for customers and customer groups in OroCommerce <https://www.orocommerce.com/media-library/configuring-pricelists>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to configure price lists for customers and customer groups in OroCommerce <https://www.oroinc.com/orocommerce/media-library/configuring-pricelists>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

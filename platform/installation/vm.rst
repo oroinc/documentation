@@ -1,3 +1,5 @@
+:orphan:
+
 .. _virtual_machine_deployment:
 
 Virtual Machine Sandbox Deployment

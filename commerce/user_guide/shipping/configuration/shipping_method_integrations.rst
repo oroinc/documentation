@@ -19,7 +19,7 @@ Out of the box, you may integrate OroCommerce with :ref:`UPS <doc--integrations-
 
 
 .. note::
-    See a short demo on `how to create a shipping integration in OroCommerce <https://www.orocommerce.com/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to create a shipping integration in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

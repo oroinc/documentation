@@ -9,7 +9,7 @@ defined per channel.
 .. contents:: :local:
     :depth: 2
 
-.. hint:: See a short demo on `how to use RFM analysis <https://www.orocrm.com/media-library/how-to-use-rfm-analysis#play=mEAyF73Irm0>`__, or keep reading the step-by-step guidance.
+.. hint:: See a short demo on `how to use RFM analysis <https://oroinc.com/orocrm/media-library/how-to-use-rfm-analysis#play=mEAyF73Irm0>`__, or keep reading the step-by-step guidance.
 
    .. raw:: html
 

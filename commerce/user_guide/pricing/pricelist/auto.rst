@@ -172,13 +172,13 @@ Filters, Priorities, and Matching Units in the Automatically Generated Price Lis
 
 **Funnel effect:** Condition filter is applied only to the products assigned to the price list in step two in the process above and not the complete catalog.
 
-**Default units and currency:** If the currency and unit are not specified as filtering criteria, Oro Commerce applies *USD* as the default currency and *item* as a default unit. When currency and unit values are included in the filtering criteria, they override the default values.
+**Default units and currency:** If the currency and unit are not specified as filtering criteria, OroCommerce applies *USD* as the default currency and *item* as a default unit. When currency and unit values are included in the filtering criteria, they override the default values.
 
-**Automatic updates:** Oro Commerce automatically updates price lists and recalculates prices whenever product-related data is updated. The trigger could be a new product, category structure changes, or the product that moved to another category.
+**Automatic updates:** OroCommerce automatically updates price lists and recalculates prices whenever product-related data is updated. The trigger could be a new product, category structure changes, or the product that moved to another category.
 
-**Matching units:** During price generation, Oro Commerce precisely matches the rule units and product units to ensure calculations are correct. For example, when you sell stuffed toys and the supported units are items and bundles of 10 items, your price calculation rule configured only for kilograms will not apply and the price will not be generated.
+**Matching units:** During price generation, OroCommerce precisely matches the rule units and product units to ensure calculations are correct. For example, when you sell stuffed toys and the supported units are items and bundles of 10 items, your price calculation rule configured only for kilograms will not apply and the price will not be generated.
 
-**Multiple price rules that are targeting the same product:** When several price calculation rules apply to the same product in the price list, Oro Commerce uses the rule with the highest priority.
+**Multiple price rules that are targeting the same product:** When several price calculation rules apply to the same product in the price list, OroCommerce uses the rule with the highest priority.
 
 **Enforcing the price:** Prices that were provided manually have higher priority than those generated automatically. Once you manually set the price for the automatically assigned product, it will not change after price recalculation anymore.
 

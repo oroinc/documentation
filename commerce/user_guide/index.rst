@@ -59,7 +59,7 @@ For detailed information on using OroCommerce CE and EE, please see the followin
 OroCommerce Sandbox
 -------------------
 
-You can use the `OroCommerce Online Demo <https://www.orocommerce.com/demo>`_ to try out the interactions described in this guide.
+You can use the `OroCommerce Online Demo <https://www.oroinc.com/orocommerce/demo>`_ to try out the interactions described in this guide.
 
 Table of Contents
 -----------------
@@ -95,8 +95,6 @@ Table of Contents
    marketing_web_catalog/index
 
    marketing_landing_pages/index
-
-   marketing/index
 
    marketing_promotions/index
 
@@ -166,7 +164,7 @@ Table of Contents
         * Quick start for...
             * Sales manager
             * Commerce manager
-            * Oro Commerce administrator
+            * OroCommerce administrator
               
     * Manage your product catalog
       * Product information management

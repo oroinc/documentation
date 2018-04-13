@@ -1,5 +1,5 @@
-Editing a Tax Jurisdiction
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Edit a Tax Jurisdiction
+^^^^^^^^^^^^^^^^^^^^^^^
 
 To edit the Tax Jurisdiction details: 
 

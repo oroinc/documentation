@@ -1,7 +1,7 @@
 View Tax Jurisdiction Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To view a Tax Jurisdiction details: 
+To view Tax Jurisdiction details:
 
 #. Navigate to **Taxes > Tax Jurisdictions** in the main menu. 
 

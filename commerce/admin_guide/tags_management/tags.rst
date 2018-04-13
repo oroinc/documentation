@@ -13,7 +13,7 @@ The following guide describes how you can configure tags in your Oro application
 
 .. image:: /user_guide/img/tags/tags_menu_1.png
 
-.. note:: See a short demo on `how to create tags <https://www.orocrm.com/media-library/tags-taxonomies>`_, or continue reading the guidance below.
+.. note:: See a short demo on `how to create tags <https://www.oroinc.com/orocrm/media-library/tags-taxonomies>`_, or continue reading the guidance below.
 
    .. raw:: html
 

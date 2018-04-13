@@ -17,7 +17,7 @@ Before You Begin
 
 Before submitting your documentation changes in a pull request, please sign our `Contributor License Agreement`_ (CLA). The CLA must be signed for any code or documentation changes to be accepted.
 
-.. _Contributor License Agreement: http://www.orocommerce.com/contributor-license-agreement
+.. _Contributor License Agreement: http://www.oroinc.com/orocommerce/contributor-license-agreement
 
 Fork Documentation Project
 --------------------------

@@ -1,3 +1,5 @@
+:orphan:
+
 .. _search_index_overview:
 
 
@@ -632,8 +634,6 @@ References
 * :ref:`Standard search index type <search_index_db_from_md>`
 * :ref:`Elasticsearch support for standard index type <elastic-search>`
 * `Website search index type <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/README.md>`_
-
-.. Elasticsearch support for website index type <https://github.com/laboro/dev/blob/master/package/commerce-enterprise/src/Oro/Bundle/WebsiteElasticSearchBundle/README.md>`_
 
 .. toctree::
    :maxdepth: 1

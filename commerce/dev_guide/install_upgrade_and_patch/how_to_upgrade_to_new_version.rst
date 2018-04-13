@@ -174,7 +174,7 @@ Comment this line.
 
 **4**. Create backups of your Database and Code.
 
-**5**. Download the latest OroCRM version from the `download section`_ on `orocrm.com <http://www.orocrm.com/>`_ , unpack
+**5**. Download the latest OroCRM version from the `download section`_ on `oroinc.com/orocrm <http://www.oroinc.com/orocrm/>`_ , unpack
       archive and overwrite existing system files.
 
 .. note::
@@ -254,4 +254,4 @@ Uncomment this line.
     If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted
     after the uprgade to flush cached bytecode from the previous installation.
 
-.. _`download section`: https://www.orocommerce.com/download
+.. _`download section`: https://www.oroinc.com/orocommerce/download

@@ -11,7 +11,7 @@ To view a Tax Rate details:
 
    * Code
 
-   * Decription
+   * Description
 
    * Rate in percentage
 

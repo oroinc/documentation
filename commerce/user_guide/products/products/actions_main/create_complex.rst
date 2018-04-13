@@ -5,7 +5,7 @@ Create a Configurable Product
 
 .. start_product_create_configurable
 
-See a short demo on `how to create a configurable product <https://www.orocommerce.com/media-library/create-configurable-products>`_, or keep reading the step-by-step guidance below.
+See a short demo on `how to create a configurable product <https://www.oroinc.com/orocommerce/media-library/create-configurable-products>`_, or keep reading the step-by-step guidance below.
 
 .. raw:: html
 

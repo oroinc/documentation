@@ -5,7 +5,7 @@ Create a Simple Product
 
 .. start_product_create_simple
 
-See a short demo on `how to create a simple product <https://www.orocommerce.com/media-library/create-simple-product>`_, or keep reading the step-by-step guidance below.
+See a short demo on `how to create a simple product <https://www.oroinc.com/orocommerce/media-library/create-simple-product>`_, or keep reading the step-by-step guidance below.
 
 .. raw:: html
 

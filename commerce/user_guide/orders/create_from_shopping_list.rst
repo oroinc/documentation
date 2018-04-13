@@ -8,7 +8,7 @@ Create an Order from a Shopping List
 
 Any time a customer creates a new shopping list, it can be accessed in the management console.  This is helpful if a customer needs assistance finding particular items or with creating an order.
 
-.. hint:: See a short demo on `creating orders from the shopping list <https://www.orocommerce.com/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_ or keep reading for step-by-step guidance.
+.. hint:: See a short demo on `creating orders from the shopping list <https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_ or keep reading for step-by-step guidance.
 
    .. raw:: html
 

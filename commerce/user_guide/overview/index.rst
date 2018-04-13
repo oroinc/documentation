@@ -14,8 +14,6 @@ Concept Guide
 
    dashboards/index
 
-   inventory/index
-
    marketing/index
 
    products/index
@@ -35,8 +33,6 @@ Concept Guide
    dashboards_overview
 
    index_overview
-
-   inventory_overview
 
    marketing_overview
 

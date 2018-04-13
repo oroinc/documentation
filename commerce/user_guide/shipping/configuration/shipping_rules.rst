@@ -10,7 +10,7 @@ You can configure one or more shipping rules that enable the shipping methods fo
 .. stop
 
 .. note::
-    See a short demo on `how to create shipping rules in OroCommerce <https://www.orocommerce.com/media-library/create-shipping-rules>`_, or keep reading the step-by-step guidance below.
+    See a short demo on `how to create shipping rules in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-rules>`_, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 

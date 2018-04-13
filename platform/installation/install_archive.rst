@@ -35,3 +35,7 @@ To prepare for installation:
 
    .. warning:: Unlike when downloading from the GitHub repository, you are not prompted to enter the configuration parameter values. :ref:`Default values <book-installation-github-clone-configuration-params--default>` are used instead. If necessary, update :ref:`configuration parameters <book-installation-github-clone-configuration-params>` in the ``app/config/parameters.yml`` file after the command execution is complete.
 
+.. _`download section`: http://www.orocrm.com/download
+.. _`orocrm.com`: http://www.orocrm.com/
+
+.. |the_site| replace:: `orocrm.com`_

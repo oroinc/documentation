@@ -25,6 +25,6 @@ You can adjust the following settings for the opportunity generating campaigns w
 Related Articles
 ^^^^^^^^^^^^^^^^
 
-* `How to Create and Work with an Opportunity <https://www.orocrm.com/blog/product-features-and-tutorials/create-work-opportunity-orocrm>`_
+* `How to Create and Work with an Opportunity <https://www.oroinc.com/orocrm/blog/product-features-and-tutorials/create-work-opportunity-orocrm>`_
 * `Business-to-business Sales <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales>`_
 * :ref:`Marketing Automation <user-guide-marketing>`

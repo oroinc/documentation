@@ -27,7 +27,7 @@ You can create a new order in the following ways:
 .. hint::
    Check out the training videos on how to create an order:
 
-   * `From scratch <https://www.orocommerce.com/media-library/create-new-order#play=ztwuz7NX1Y4>`_
+   * `From scratch <https://www.oroinc.com/orocommerce/media-library/create-new-order#play=ztwuz7NX1Y4>`_
 
 
      .. raw:: html
@@ -35,7 +35,7 @@ You can create a new order in the following ways:
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ztwuz7NX1Y4" frameborder="0" allowfullscreen></iframe>
 
 
-   * `Based on a shopping list <https://www.orocommerce.com/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_
+   * `Based on a shopping list <https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_
 
      .. raw:: html
 

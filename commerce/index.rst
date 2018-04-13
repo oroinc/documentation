@@ -262,6 +262,8 @@ This section provides links to the online documentation for the latest OroCommer
 
        user_guide/index
 
+       user_guide_marketing_tools/index
+
        business_intelligence/index
 
        frontstore_guide/index

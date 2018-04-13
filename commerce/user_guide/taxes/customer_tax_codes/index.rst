@@ -1,3 +1,5 @@
+.. _user-guide--taxes--customer_tax_codes:
+
 Customer Tax Codes
 ------------------
 

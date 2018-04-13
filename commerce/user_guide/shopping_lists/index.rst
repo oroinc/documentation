@@ -17,7 +17,7 @@ Information on shopping lists is covered in the following sections:
 .. contents:: :local:
    :depth: 2
 
-.. important:: See a short demo on `creating orders from the shopping list <https://www.orocommerce.com/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_.
+.. important:: See a short demo on `creating orders from the shopping list <https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_.
 
    .. raw:: html
 
