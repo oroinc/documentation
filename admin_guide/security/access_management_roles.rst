@@ -154,11 +154,11 @@ For examples on roles application, see the `Access Configuration Examples <./acc
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
 	:align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
 	:align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
 	:align: middle

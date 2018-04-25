@@ -87,11 +87,11 @@ View and Manage Contact Requests
   - Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the request:  |IcView|
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

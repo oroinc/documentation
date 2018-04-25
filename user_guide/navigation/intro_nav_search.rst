@@ -86,5 +86,5 @@ You will see a page that looks similar to the search results and that contains a
 
 
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
 

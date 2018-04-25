@@ -86,5 +86,5 @@ file will be save in compliance to your browser settings.
 
 
 
-.. |Bdropdown| image:: ../../img/buttons/Bdropdown.png
+.. |Bdropdown| image:: /img/buttons/Bdropdown.png
    :align: middle

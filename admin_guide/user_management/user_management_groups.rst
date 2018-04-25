@@ -50,10 +50,10 @@ From the grid you can:
 - Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the user group: |IcEdit|
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
  

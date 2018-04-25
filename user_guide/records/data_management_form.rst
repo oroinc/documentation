@@ -91,14 +91,14 @@ To change the properties of a record, use the **Create <Entity name>** page.
 
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    
-.. |IcBulk| image:: ../../img/buttons/IcBulk.png
+.. |IcBulk| image:: /img/buttons/IcBulk.png
    :align: middle

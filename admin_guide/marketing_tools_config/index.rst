@@ -1,3 +1,5 @@
+.. _marketing-system-configuration:
+
 Marketing Tools Configuration
 =================================
 

@@ -94,22 +94,22 @@ template to the pre-defined list of subscribers.*
   
   
   
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
    
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
    :align: middle
    
-.. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
+.. |BGotoPage| image:: /img/buttons/BGotoPage.png
    :align: middle
    
-.. |Bdropdown| image:: ../../img/buttons/Bdropdown.png
+.. |Bdropdown| image:: /img/buttons/Bdropdown.png
    :align: middle
 
-.. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
+.. |BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle
    
 .. |email_template_create| image:: ../img/marketing/email_template_create.png

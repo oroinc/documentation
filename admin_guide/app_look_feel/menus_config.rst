@@ -362,10 +362,10 @@ See Also
    :ref:`Language Settings <admin-configuration-language-settings>`
 
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
 	:align: middle
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
 	:align: middle
 
 .. |IcTranslations| raw:: html

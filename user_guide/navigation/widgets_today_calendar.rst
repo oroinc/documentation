@@ -146,29 +146,29 @@ Tasks:
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
    :align: middle
 
 
-.. |IcShow| image:: ../../img/buttons/IcShow.png
+.. |IcShow| image:: /img/buttons/IcShow.png
    :align: middle
 
-.. |IcHide| image:: ../../img/buttons/IcHide.png
+.. |IcHide| image:: /img/buttons/IcHide.png
    :align: middle
 
-.. |IcPassReset| image:: ../../img/buttons/IcPassReset.png
+.. |IcPassReset| image:: /img/buttons/IcPassReset.png
    :align: middle
 
-.. |IcDisable| image:: ../../img/buttons/IcDisable.png
+.. |IcDisable| image:: /img/buttons/IcDisable.png
    :align: middle
 
-.. |IcIncoming| image:: ../../img/buttons/IcIncoming.png
+.. |IcIncoming| image:: /img/buttons/IcIncoming.png
    :align: middle
 
-.. |IcOutgoing| image:: ../../img/buttons/IcOutgoing.png
+.. |IcOutgoing| image:: /img/buttons/IcOutgoing.png
    :align: middle
 
-.. |IcMoveW| image:: ../../img/buttons/IcMoveW.png
+.. |IcMoveW| image:: /img/buttons/IcMoveW.png
    :align: middle
 
 

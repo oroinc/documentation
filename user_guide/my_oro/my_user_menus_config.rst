@@ -358,15 +358,15 @@ See Also
     :ref:`My System Configuration <doc-my-user-configuration>`
 
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
 	:align: middle
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
 	:align: middle
 
-.. |IcTranslations| image:: ../../img/buttons/IcTranslations.png
+.. |IcTranslations| image:: /img/buttons/IcTranslations.png
 	:align: middle
 
-.. |IcTranslationsC| image:: ../../img/buttons/IcTranslationsC.png
+.. |IcTranslationsC| image:: /img/buttons/IcTranslationsC.png
 	:align: middle
 

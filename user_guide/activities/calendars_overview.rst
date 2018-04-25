@@ -99,14 +99,14 @@ The following actions can be performed for each calendar and calendar event from
 
 
 
-.. |UserMenu| image:: ../../img/buttons/user_menu.png
+.. |UserMenu| image:: /img/buttons/user_menu.png
    :align: middle
    
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle

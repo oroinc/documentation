@@ -556,5 +556,5 @@ For the information about entity fields, see the `Entity Fields <./entity-fields
 For the overview of the entities, see the `Entities <./entities>`__ guide. 
 
 
-.. |IcPosition| image:: ../../img/buttons/IcPosition.png
+.. |IcPosition| image:: /img/buttons/IcPosition.png
    :align: middle

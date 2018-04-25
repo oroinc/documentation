@@ -291,30 +291,30 @@ See Also
     my_user_menus_config
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
 	:align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
 	:align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
 	:align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
 	:align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
 	:align: middle
 
-.. |IcShow| image:: ../../img/buttons/IcShow.png
+.. |IcShow| image:: /img/buttons/IcShow.png
 	:align: middle
 
-.. |IcHide| image:: ../../img/buttons/IcHide.png
+.. |IcHide| image:: /img/buttons/IcHide.png
 	:align: middle
 
-.. |IcPassReset| image:: ../../img/buttons/IcPassReset.png
+.. |IcPassReset| image:: /img/buttons/IcPassReset.png
      :align: middle
 
-.. |IcConfig| image:: ../../img/buttons/IcConfig.png
+.. |IcConfig| image:: /img/buttons/IcConfig.png
      :align: middle
 

@@ -139,7 +139,7 @@ and shortcuts with their corresponding descriptions.
 
 
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+.. |IcSearch| image:: /img/buttons/IcSearch.png
 
 .. |shortcut| image:: ../img/navigation/panel/shortcut.png
 

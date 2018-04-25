@@ -35,6 +35,7 @@ if "%1" == "help" (
 	echo.  changes    to make an overview over all changed/added/deprecated items
 	echo.  linkcheck  to check all external links for integrity
 	echo.  doctest    to run all doctests embedded in the documentation if enabled
+	echo.  pdf        to make pdf
 	goto end
 )
 
@@ -57,6 +58,14 @@ if "%1" == "dirhtml" (
 	if errorlevel 1 exit /b 1
 	echo.
 	echo.Build finished. The HTML pages are in %BUILDDIR%/dirhtml.
+	goto end
+)
+
+if "%1" == "pdf" (
+	%SPHINXBUILD% -b pdf %ALLSPHINXOPTS% %BUILDDIR%/pdf
+	if errorlevel 1 exit /b 1
+	echo.
+	echo.Build finished. The pdf file(s) are in %BUILDDIR%/pdf.
 	goto end
 )
 

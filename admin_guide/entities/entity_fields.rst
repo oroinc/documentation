@@ -100,17 +100,17 @@ For the overview of the entities, see the `Entities <./entities>`__ guide.
 
 
 
-.. |IcPosition| image:: ../../img/buttons/IcPosition.png
+.. |IcPosition| image:: /img/buttons/IcPosition.png
    :align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
    :align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    
-.. |IcRest| image:: ../../img/buttons/IcRest.png
+.. |IcRest| image:: /img/buttons/IcRest.png
    :align: middle

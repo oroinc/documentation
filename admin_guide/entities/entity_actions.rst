@@ -475,19 +475,19 @@ For the information about entity fields, see the `Entity Fields <./entity-fields
 
 
 
-.. |IcRemove| image:: ../../img/buttons/IcRemove.png
+.. |IcRemove| image:: /img/buttons/IcRemove.png
 	:align: middle
 
-.. |IcClone| image:: ../../img/buttons/IcClone.png
+.. |IcClone| image:: /img/buttons/IcClone.png
 	:align: middle
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
 	:align: middle
 
-.. |IcEdit| image:: ../../img/buttons/IcEdit.png
+.. |IcEdit| image:: /img/buttons/IcEdit.png
 	:align: middle
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
 	:align: middle
 
 

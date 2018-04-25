@@ -7,7 +7,7 @@ This chapter of the guide explains the most common OroCRM user roles in order to
 this user guide best match your work duties.
 
 .. _documentation-intro:
-
+.. _community-vs-enterprise:
 
 OroCRM Community vs Enterprise
 ------------------------------

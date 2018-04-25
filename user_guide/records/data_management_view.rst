@@ -185,6 +185,6 @@ Get to Other Pages
     If you have reached a View page or Create/Edit form from a grid, and now click  link to get back to the grid, this 
     grid will be look in the same as it did when you left it for the View page (the same filters and order applied). 
 
-.. |IcView| image:: ../../img/buttons/IcView.png
+.. |IcView| image:: /img/buttons/IcView.png
    :align: middle
    

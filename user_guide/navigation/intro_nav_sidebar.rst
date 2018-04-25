@@ -230,14 +230,14 @@ Set up the sidebar widgets in the way that is most convenient for you. This will
 a minimum amount of effort.
 
 
-.. |IcDelete| image:: ../../img/buttons/IcDelete.png
+.. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
    
-.. |IcSettings| image:: ../../img/buttons/IcSettings.png
+.. |IcSettings| image:: /img/buttons/IcSettings.png
    :align: middle
    
-.. |BRefresh| image:: ../../img/buttons/BRefresh.png
+.. |BRefresh| image:: /img/buttons/BRefresh.png
    :align: middle
    
-.. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
+.. |BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle

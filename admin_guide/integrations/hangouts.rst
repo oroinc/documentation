@@ -142,5 +142,5 @@ event:
 
 
 
-.. |HObutton| image:: ../../img/buttons/hangouts.png
+.. |HObutton| image:: /img/buttons/hangouts.png
    :align: middle
