@@ -21,8 +21,8 @@ Global Currency Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /admin_guide/pricing/global_currency.rst
-   :start-after: begin
-   :end-before: finish
+   :start-after: begin_global_currency_settings
+   :end-before: finish_global_currency_settings
 
 Currency Configuration per Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
