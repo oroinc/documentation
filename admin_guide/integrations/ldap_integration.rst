@@ -3,6 +3,9 @@
 LDAP Integration
 ================
 
+.. contents:: :local: 
+   :depth: 1
+
 Single sign-on capability (the ability for users to use the same login credentials for all corporate applications) is 
 particularly important for efficiency and performance in large-scale companies. The LDAP Integration feature available 
 in OroCRM’s Enterprise Edition supports this capability.
@@ -15,6 +18,7 @@ The integration can also significantly simplify the initial setup of OroCRM, as 
 :ref:`OroCRM's roles <user-guide-user-management-permissions-roles>`.
 
 In order to enable this functionality you need to perform the steps described in the following sections.
+
 
 Install Extension
 -----------------
@@ -117,8 +121,6 @@ Synchronization Settings
 
 Use the *Synchronization Settings* section to enable/disable two-way synchronization.
 
-|
-
 .. image:: ../img/ldap/ldap_synch.png
 
 Check the *Enable Two Way Sync* box, if you want to upload the user-related data both from the LDAP server to OroCRM and
@@ -129,17 +131,13 @@ If two-way synchronization is enabled, define the priority used for conflict res
 user details were edited from both OroCRM and the target LDAP server):
 
 - *Remote wins*: the LDAP server data will be applied
-
 - *Local wins*: the OroCRM data will be applied
-
 
 Mapping Settings
 ^^^^^^^^^^^^^^^^  
 
 Use the *Mapping Settings* section to define how the user attributes and role names of OroCRM and the target LDAP 
 server will be mapped to each other.
-
-|
 
 .. image:: ../img/ldap/ldap_role_mapping.png
 
@@ -162,15 +160,12 @@ The following values must be defined:
   user to a role (e.g. roleOccupant)."
   "**Export User Object Class***","The class of the LDAP server objects that correspond to OroCRM's user profiles
   (e.g. inetOrgPerson)."
-  "**Export User Base Distinguished Name***","Distinuguished name of the directory that contains LDAP server objects 
-  that 
-  correspond to OroCRM's user profiles (e.g. dc=orocrm,dc=com)."
+  "**Export User Base Distinguished Name***","Distinguished name of the directory that contains LDAP server objects 
+  that correspond to OroCRM's user profiles (e.g. dc=orocrm,dc=com)."
 
 Click the :guilabel:`+Add` button under the *Role Mapping* section to map roles of OroCRM and the target LDAP server.
 
 Define the role name in the target LDAP server and choose the role in OroCRM to map.
-
-  |
 
 .. image:: ../img/ldap/ldap_role_mapping_add_role.png
   
@@ -178,8 +173,7 @@ Define the role name in the target LDAP server and choose the role in OroCRM to 
 Conclusion
 ^^^^^^^^^^
 
-After the integration has been established, user profiles will be imported to OroCRM and users will be able to use their 
-usual credentials to log-in to OroCRM.
+Once the integration is established, user profiles are imported to OroCRM and users are able to use their usual credentials to log into OroCRM.
 
 .. note::
 

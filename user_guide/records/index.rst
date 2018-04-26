@@ -38,7 +38,7 @@ Actions and transitions available for your records in the application are define
    :maxdepth: 1
    
    manage_records
-   data_management_import_export
+   
    
 
 

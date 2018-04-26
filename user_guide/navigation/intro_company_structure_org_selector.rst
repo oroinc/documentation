@@ -1,3 +1,4 @@
+
 .. _user-guide-getting-started-company-structure:
 
 Company Structure and Organization Selector
@@ -13,7 +14,6 @@ etc. Even small companies organize their workforce into teams.
 For example, a telecommunication service provider might have several subsidiaries, e.g. in each of the states. The 
 Californian subsidiary may have two offices - Western and Eastern. In each of the offices there are unites working at 
 different directions:
-
 
 * CaliforniaTelecom
 
@@ -46,7 +46,6 @@ Each unit in its turn may be divided in teams, for example:
 
 The corporate structure is essential, as it defines the scope of the user’s tasks and and available resources. As a 
 business application, OroCRM provides tools to reflect the corporate structure normally.
-
 
 How Corporate Structure is Reflected in OroCRM
 ----------------------------------------------
@@ -121,7 +120,6 @@ from his computer will benefit using a separate organization to represent each o
 Subject to the work done in the company, some users may have access to several organizations 
 (work with multiple organization) or to all records across all organizations that are available to them 
 (work from a system organization). This is described below. 
-
     
 .. _user-guide-getting-started-change-organization:
 
@@ -141,7 +139,6 @@ performance.
 As organizations are often much bigger and more separated than business units, the user will have to switch to the 
 necessary organization to work with data in each one of them.
 
-
 Switching Between Organizations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -149,23 +146,14 @@ The name of an organization you are currently working with is displayed in the t
 have access to multiple organizations, upon your first login you will see a note with your current organization. Three 
 dots to the left are the organization selector.
 
-|
-
 .. image:: ../img/multi_org/multi_org_select.png
-
-|
 
 Click the selector, to see a list of organizations you have access to. Your current organization will be displayed in 
 bold. If a System organization exists, it will be shown at the top of the list and shifted left.
 
-|
-
 .. image:: ../img/multi_org/multi_org_choice.png
 
-|
-
 To switch to another organization, click its name in the list.
-
 
 Work with a System Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,11 +166,7 @@ field will be shown for each record viewed. The organization field is not editab
 
 When creating a record in a system organization, the user should select an organization to which the record will belong.
 
-|
-
 .. image:: ../img/multi_org/multi_org_system1.png
-
-|
 
 .. note::
 
@@ -191,9 +175,5 @@ When creating a record in a system organization, the user should select an organ
     based on data from multiple organizations — it will make sense only within the system organization where all the 
     necessary data is available.
 
-Conclusion
-----------
 
-Organizations and business units to which users belong will define the data available to them, and will mirror the 
-company structure and related rules from the physical world to the software application.
     

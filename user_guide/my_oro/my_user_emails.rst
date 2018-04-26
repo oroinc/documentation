@@ -3,172 +3,97 @@
 My Emails
 =========
 
-.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+.. note:: Before you start using the **My Emails**, please configure you personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my_email_configuration>` for more information.
 
+   See a short demo on `how to create and manage emails <https://oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
+
+.. start_my_emails
 
 To reach the **My Emails** page:
 
-1.  Navigate to your user name in the upper-right corner.
+1.  Click on your user name on the top right of the application page.
+2.  Click **My Emails** .
 
-2.  Click **My Emails** in the dropdown menu.
+.. image:: /user_guide/img/getting_started/emails/user_my_emails.jpg
 
-|
+From the page of all emails, you can:
 
-.. image:: ../img/emails/user_my_emails.jpg
+* View all available emails
+* Filter emails
+* Compose a new email
+* Synchronize Emails
+* Mark one or selected emails as unread
 
-|
+Save Table Views
+~~~~~~~~~~~~~~~~
 
-
-
-**My Emails** page has the following functionality available:
-
--  Grid views for emails.
-
--  Compose button.
-
--  Sync Emails button.
-
--  Filters.
-
--  Options.
-
-Grid Views
-~~~~~~~~~~
-
-There are four grid views for emails available by default:
+There are four table views for emails available by default:
 
 -  **All Emails** (contains all available emails).
-
 -  **Inbox** (contains newly delivered emails).
-
 -  **Sent Mail** (contains sent emails).
-
 -  **Mailbox: Local** (contains emails sent to the user’s personal
    email).
 
-|
+.. image:: /user_guide/img/getting_started/emails/my_emails_page.jpg
 
-.. image:: ../img/emails/my_emails_page.jpg
+Use Filters
+~~~~~~~~~~~
 
-|
+To enable filters for My Emails page, click the corresponding button on the right:
 
-
-
-Filters
-~~~~~~~
-
-To enable filters for My emails page, click the corresponding button on
-the right, as illustrated below:
-
-|
-
-.. image:: ../img/emails/filters_icon.jpg
-
-|
-
+.. image:: /user_guide/img/getting_started/emails/filters_icon.jpg
 
 Filters sort your emails based on certain criteria, such as:
 
 -  Subject
-
 -  From
-
 -  To
-
 -  Date/Time
-
 -  Message Type
-
 -  Folders
-
 -  Status
-
 -  Mailbox
 
-To find a specific record, click on the filter and select the necessary
-search parameter from the dropdown:
+To find a specific record, click on the |IcFilter| filter and select the necessary search parameter from the list:
 
-|
-
-.. image:: ../img/emails/filters_dropdown.jpg
-
-|
-
-
-
-Options
-~~~~~~~
-
-Options save the filtered view as a separate page.
+.. image:: /user_guide/img/getting_started/emails/filters_dropdown.jpg
 
 To save a page filtered according to the necessary criteria:
 
 1.  Filter your emails according to your requirements using **Filters**.
 
-2.  Click **Options**.
+.. image:: /user_guide/img/getting_started/emails/filter.jpg
 
+2.  Click **Options**.
 3.  Select **Save As/Save As Default**.
+
+.. image:: /user_guide/img/getting_started/emails/options_save_list.jpg
 
 4.  Give your email page a name and click **Save**.
 
-5.  The page will appear in the **Emails** grid dropdown list.
+.. image:: /user_guide/img/getting_started/emails/options_save.jpg
 
-|
+5. The saved page should now appear on the list.
 
-.. image:: ../img/emails/filter.jpg
-
-|
-
-|
-
-.. image:: ../img/emails/options_save_list.jpg
-
-|
-
-|
-
-.. image:: ../img/emails/options_save.jpg
-
-|
-
-|
-
-.. image:: ../img/emails/options_saved_example.jpg
-
-|
+.. image:: /user_guide/img/getting_started/emails/options_saved_example.jpg
 
 
-
-Sync Emails
-~~~~~~~~~~~
-
-By clicking **Sync Emails** in the top right corner, you will
-synchronize emails manually.
-
-.. _doc-activities-emails-actions-compose:
+.. note:: To synchronize your emails manually, click **Sync Emails** on the top right of the page with all emails.
 
 Compose A New Email
 ~~~~~~~~~~~~~~~~~~~
 
 To compose a new email:
 
-1.  Navigate to your user name in the top right corner.
+1. On the page of all emails, click **Compose** on the top right.
+2. Provide the following information on the page that opens:
 
-2.  Click **My Emails** in the dropdown menu.
-
-3.  Click **Compose** in the top right corner.
-
-4.  A **Send Email form** will appear:
-
-|
-
-.. image:: ../img/emails/compose_new_emails.jpg
-
-|
-
-
-
-To compose a new email, define the following fields in the form:
+.. image:: /user_guide/img/getting_started/emails/compose_new_emails.jpg
 
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
@@ -199,11 +124,11 @@ To compose a new email, define the following fields in the form:
 |                    | -  Image Embed Upload                                                                                                                                                                                                                 |
 |                    | -  Fullscreen view                                                                                                                                                                                                                    |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Add Signature**  | The signature may be added to any email you write in OroCRM. Your organization settings define whether the signature will be added automatically or manually.                                                                         |
+| **Add Signature**  | The signature may be added to any email you write in Oro application. Your organization settings define whether the signature will be added automatically or manually.                                                                |
 |                    | If you have a signature configured, you can add it by clicking **Add Signature**. For example:                                                                                                                                        |
 |                    | -                                                                                                                                                                                                                                     |
 |                    | John Doe, VP                                                                                                                                                                                                                          |
-|                    | OroCRM                                                                                                                                                                                                                                |
+|                    | Example Inc.                                                                                                                                                                                                                          |
 |                    | t.: 0786756465                                                                                                                                                                                                                        |
 |                    | e.: john.doe@example.com                                                                                                                                                                                                              |
 |                    | For more information, see **Add Signature To Your Email** section of this guide.                                                                                                                                                      |
@@ -217,108 +142,51 @@ To compose a new email, define the following fields in the form:
 |                    | **Note**: If an email has been created from an entity record view page (e.g. from a lead’s page), this record will be added as a context automatically.                                                                               |
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-5.  Once done, click **Send** to send your email.
+3. Click **Send** to send your email.
 
 Save Unfinished Email
 ~~~~~~~~~~~~~~~~~~~~~
 
-To save an unfinished email, minimize the email dialog window by
-clicking on the corresponding button in the top right corner of the
+To save an unfinished email, minimize the email dialog window by clicking on the corresponding button in the top right corner of the
 email dialog window.
 
-|
+.. image:: /user_guide/img/getting_started/emails/minimize.jpg
 
-.. image:: ../img/emails/minimize.jpg
+Your unfinished email will appear as a minimized window throughout the sessions:
 
-|
-
-
-
-Your unfinished email will appear as a minimized window throughout
-sessions, as illustrated in the following screenshot:
-
-|
-
-.. image:: ../img/emails/email_minimized2.jpg
-
-|
-
-
+.. image:: /user_guide/img/getting_started/emails/email_minimized2.jpg
 
 You can save several of such emails as drafts:
 
-|
-
-.. image:: ../img/emails/several_minimized_emails2.jpg
-
-|
-
-
-
+.. image:: /user_guide/img/getting_started/emails/several_minimized_emails2.jpg
 
 
 View Emails
 ~~~~~~~~~~~
 
-To **open** an email, click once either on the email or the **View**
-icon at the right end of the email.
+To **open** an email, click once either on the email or the **View** icon at the right end of the email.
 
+.. image:: /user_guide/img/getting_started/emails/view.jpg
 
-|
-
-.. image:: ../img/emails/view.jpg
-
-|
-
-|
-
-.. image:: ../img/emails/example_email_sent.jpg
-
-|
-
-
+.. image:: /user_guide/img/getting_started/emails/example_email_sent.jpg
 
 From the page of the opened email, you can:
 
 -  **Add Comment** (add, edit or delete a comment to the email).
 
-|
-
-.. image:: ../img/emails/add_comment.jpg
-
-|
-
-
+   .. image:: /user_guide/img/getting_started/emails/add_comment.jpg
 
 -  **Add Task** (assign a task through an email).
 
-|
-
-.. image:: ../img/emails/add_task.jpg
-
-|
-
-
+   .. image:: /user_guide/img/getting_started/emails/add_task.jpg
 
 -  **Mark Unread**
 
-|
-
-.. image:: ../img/emails/mark_unread.jpg
-
-|
-
-
+   .. image:: /user_guide/img/getting_started/emails/mark_unread.jpg
 
 -  **Add Context** (define a record related to the email).
 
-|
-
-.. image:: ../img/emails/add_context.jpg
-
-|
-
-
+   .. image:: /user_guide/img/getting_started/emails/add_context.jpg
 
 -  **Reply** (reply directly to the sender).
 
@@ -326,38 +194,22 @@ From the page of the opened email, you can:
 
 -  **Forward** (forward an email to a different recipient).
 
- |
+   .. image:: /user_guide/img/getting_started/emails/reply_reply_all_forward.jpg
 
- .. image:: ../img/emails/reply_reply_all_forward.jpg
+   .. image:: /user_guide/img/getting_started/emails/reply_all.jpg
 
- |
-
- |
-
- .. image:: ../img/emails/reply_all.jpg
-
- |
-
- |
-
- .. image:: ../img/emails/forward.jpg
-
- |
-
-
-
+   .. image:: /user_guide/img/getting_started/emails/forward.jpg
 
 -  **Download Attachment** (download the attached file, if available).
 
- |
+   .. image:: /user_guide/img/getting_started/emails/download_attachment.jpg
 
- .. image:: ../img/emails/download_attachment.jpg
-
- |
-
+.. finish_my_emails
 
 See Also
 --------
 
 :ref:`Using Emails <user-guide-using-emails>`
 
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

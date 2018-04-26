@@ -1,15 +1,14 @@
-
-
 .. _user-guide-magento-entities-workflows:
 
 Default Workflows with Magento Entities
 =======================================
 
 To provide a consistent and customer-oriented approach, you can 
-:ref:`define a specific workflow <user-guide-workflow-management-basics>` within which the actions can be
+:ref:`define a specific workflow <doc--system--workflow-management>` within which the actions can be
 performed for each shopping cart or order. The following two workflows are pre-implemented in OroCRM
 for Magento-based shops out-of-the-box:
 
+.. _user-guide-magento-entities-workflows--abandoned-shopping-cart:
 
 *Abandoned Shopping Cart* Workflow
 ----------------------------------
@@ -30,6 +29,7 @@ The workflow helps to improve customer-oriented communications and to increase t
 same time, the managers can see all the information on the relevant items (no long search during the call), switch to
 the customer and account info and even check if the customer has already been contacted.
 
+.. _user-guide-magento-entities-workflows--order-follow-up:
 
 *Order Follow Up* Workflow
 --------------------------
@@ -43,7 +43,7 @@ The workflow aims to keep track of the customer feedback on the purchase. For ea
 
 3. Once a call has been logged, there are two options:
 
-  - Record Feedback: the *Record Feedback* form will appear. Fill it out, and click :guilabel:`Submit` to save it in the
+  - Record Feedback: the *Record Feedback* form will appear. Fill it out, and click **Submit** to save it in the
     system.
 
     There can be no more calls or emails to the customer related to this cart.

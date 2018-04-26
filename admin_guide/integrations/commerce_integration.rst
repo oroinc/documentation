@@ -1,61 +1,48 @@
 .. _user-guide-commerce-integration:
 
-OroCommerce Integration 
-=======================
+CRM and Commerce Integration
+============================
 
 .. contents:: :local:
     :depth: 3
 
-
 Overview
 --------
 
-Integration with `OroCommerce <https://www.oroinc.com/doc/orocommerce/current/>`_ provides seamless experience of two applications working as one.
+Integration between `OroCRM <https://oroinc.com/orocrm/>`_ and `OroCommerce <https://oroinc.com/orocommerce/>`_ provides seamless experience of two applications working as one.
 
-It is possible to install OroCommerce over existing OroCRM instance, add OroCRM to existing OroCommerce instance or instal both applications as a single package.
+It is possible to install OroCommerce over existing OroCRM instance, add OroCRM to existing OroCommerce instance or install both applications as a single package.
 
+Look and Feel
+-------------
 
-Interface
----------
-
-As the result of OroCommerce integration with OroCRM, the application menu is combined, displaying both OroCommerce and OroCRM menus.
-
-|
+Oro application share the baseline and combining capabilities of multiple applications and packages does not change the overall look and feel of the system. As the result of OroCommerce integration with OroCRM, the application menu is combined, displaying both OroCommerce and OroCRM menus.
 
 .. image:: ../img/commerce_integration/commerce_integration_ui.png
-
-|
-
 
 Accounts 
 --------
 
-Commerce customers are treated the same way as CRM customers, Magento or Business. Their data and business transactions are displayed on the :ref:`Account <user-guide-accounts>` view page, and their activities are added to the Account's activity list.
+Commerce customers are treated the same way as other customers, Magento or Business. Their data and business transactions are displayed on the :ref:`Account <user-guide-accounts>` view page, and their activities are added to the Account's activity list.
 
-Lifetime sales values metric will be calculated for Commerce customer based on orders placed.
+Lifetime sales values metric will be calculated for OroCommerce customer based on orders placed.
 
 The following illustrates an example of an Account for Commerce customer.
 
-|
 
 .. image:: ../img/commerce_integration/account.png
 
-|
-
 A Commerce Channel section is available at the Account view. It displays basic data for Commerce customers and some additional data, such as orders, quotes, or opportunities that can be related to a Commerce customer:
 
-|
-
 .. image:: ../img/commerce_integration/account_commerce_customer.png
-
-|
-
 
 When a customer is created or edited at backend, the Account can be specified directly.
 
 When a new customer is self-registering at frontend, a new Account of the same name will be created automatically.
 
-In case of installation of OroCRM over an existing Commerce instance, new Accounts are automatically created for all existing customers.
+.. In case of installation of OroCRM over an existing Commerce instance, new Accounts are automatically created for all existing customers.
+
+.. comment: OroCommerce always comes with OroCRM features on-board.
 
 You can specify the strategy for Account creation in **System Configuration>Integrations>CRM and Commerce**. There are two options: 
 
@@ -64,32 +51,21 @@ You can specify the strategy for Account creation in **System Configuration>Inte
   
 These options can be changed any time with customers re-related to accounts accordingly.
 
-|
 
 .. image:: ../img/commerce_integration/config_commerce_integration.png
-
-|
 
 Opportunities 
 --------------
 
 Opportunities for Commerce customers are created the same way as for other CRM customers. You can read more on opportunities in the :ref:`corresponding guide <user-guide-system-channel-entities-opportunities>`.
 
-|
 
 .. image:: ../img/commerce_integration/create_opp.png
-
-|
 
 
 A Commerce customer can be added to the Account field when creating a new opportunity:
 
-|
-
 .. image:: ../img/commerce_integration/opp.png
-
-|
-
 
 
 Track and Forecast Commerce Sales

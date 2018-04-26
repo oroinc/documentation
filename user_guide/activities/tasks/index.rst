@@ -1,37 +1,30 @@
 .. _doc-activities-tasks:
+.. _doc-activities-overview-tasks:
+.. _doc-activities-tasks-actions-add:
+.. _doc-activities-tasks-actions-add-fromgrid:
 
 Tasks
 =====
 
-.. include:: ../activities_overview.rst
-   :start-after: start_include_tasks
-   :end-before: end_include_tasks
+In your Oro application, tasks represent assignments that need to be accomplished by a user. Keeping track of tasks helps organize the work process and ensure that all the important work is done. 
 
+Within OroCRM you can create and assign tasks, organize them by priority, set their due date and manage them at any stage. In the sections below, you will learn how to create and manage tasks from various pages of your Oro application.
 
-:ref:`Manage Tasks <doc-activities-tasks-actions>`
+Before reading on, consider watching a short demo from our media library on `how to create and manage tasks <https://oroinc.com/orocrm/media-library/create-and-manage-tasks>`_.
 
-:ref:`Tasks Grid <doc-activities-tasks-grid>`
+.. raw:: html
 
-:ref:`Task View Page <doc-activities-tasks-view-page>`
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/TIeEKgUJIu8" frameborder="0" allowfullscreen></iframe>
 
-:ref:`My Tasks <doc-my-oro-tasks>`
-
-:ref:`My Calendar Page <doc-my-oro-calendar>`
-
-:ref:`Tasks List Sidebar Widget <doc-widgets-sidebar-task-list>`
-
-:ref:`Today's Calendar Widget <doc-widgets-today-calendar>`
-
-:ref:`Task Flow Workflow <doc--workflows--task-flow>`
-
+In the Tasks topic, you will learn how to:
 
 
 .. toctree::
-       :maxdepth: 1
-       :hidden:
+   :maxdepth: 2
+      
+   create_tasks
+   manage_tasks
+  
 
-       activities_tasks_grid
-       activities_tasks_viewpage
-       activities_tasks_actions
-       activities_tasks_statuses
-
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

@@ -37,4 +37,3 @@ OroCRM supports two types of integrations:
 
     Along with pre-implemented integration capabilities, OroCRM can also be integrated with other third-party
     systems.
-

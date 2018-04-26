@@ -9,11 +9,7 @@ OroCRM Enterprise Edition supports integration with Microsoft Exchange server. T
 
 This functionality enables using a single system-wide setting to collect letters of multiple users within organization.
 
-|
-
 .. image:: ../img/configuration/msexchange.png
-
-|
 
 To enable MS Exchange Integration, check :guilabel:`Enabled` and define the following details:
 

@@ -5,9 +5,45 @@ Images
 
 .. begin
 
+.. |IcUpload| raw:: html
+
+   <i class="fa fa-upload fa-lg" aria-hidden="true"></i>
+
+.. |IcDownload| raw:: html
+
+   <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+
 .. |IcClose| raw:: html
 
    <i class="fa fa-close fa-lg" aria-hidden="true"></i>
+
+.. |IcCollapse| raw:: html
+
+   <i class="fa fa-minus-square-o fa-lg" aria-hidden="true"></i>
+
+.. |IcExpandPlus| raw:: html
+
+   <i class="fa fa-plus-square-o fa-lg" aria-hidden="true"></i>
+
+.. |IcMoveArrow| raw:: html
+
+   <i class="fa fa-arrows fa-lg" aria-hidden="true"></i>
+   
+.. |IcMarkProcessed| raw:: html
+
+   <i class="fa fa-archive fa-lg" aria-hidden="true"></i>
+
+.. |IcSend| raw:: html
+
+   <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+
+.. |IcDecline| raw:: html
+
+   <i class="fa fa-minus-square fa-lg" aria-hidden="true"></i>
+
+.. |IcRequestMoreInfo| raw:: html
+
+   <i class="fa fa-question fa-lg" aria-hidden="true"></i>
 
 .. |IcActivate| raw:: html
 
@@ -15,7 +51,7 @@ Images
 
 .. |IcExpireQuote| raw:: html
 
-   <i class="fa fa-clock fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
 
 .. |IcUndo| raw:: html
 
@@ -131,6 +167,10 @@ Images
 
    <i class="fa fa-random fa-lg" aria-hidden="true"></i>
 
+.. |IcMergeAccounts| raw:: html
+
+   <i class="fa fa-random fa-lg" aria-hidden="true"></i>
+
 .. |IcDashboard| raw:: html
 
    <i class="fa fa-bar-chart fa-lg" aria-hidden="true"></i>
@@ -223,6 +263,14 @@ Images
 
    <i class="fa fa-refresh fa-lg" aria-hidden="true"></i>
 
+.. |IcChangePassword| raw:: html
+
+   <i class="fa fa-key fa-lg" aria-hidden="true"></i>
+
+.. |IcResetPassword| raw:: html
+
+   <i class="fa fa-unlock-alt fa-lg" aria-hidden="true"></i>
+
 .. |IcFilesO| raw:: html
 
    <i class="fa fa-files-o fa-lg" aria-hidden="true"></i>
@@ -258,6 +306,18 @@ Images
 .. |Bdropdown| raw:: html
 
    <i class="fa fa-caret-down fa-lg" aria-hidden="true"></i>
+
+.. |IcListAlt| raw:: html
+
+   <i class="fa fa-list-alt fa-lg" aria-hidden="true"></i>
+
+.. |IcAddNote| raw:: html
+
+   <i class="fa fa-comment-o fa-lg" aria-hidden="true"></i>
+
+.. |IcCloudDownload| raw:: html
+
+   <i class="fa fa-cloud-download fa-lg" aria-hidden="true"></i>
    
 .. Check mark in the square.
 
@@ -265,8 +325,141 @@ Images
 
    <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
 
+.. SortDesc is also used as drop-down arrow
+
+.. |IcSortDesc| raw:: html
+
+   <i class="fa fa-sort-desc fa-lg" aria-hidden="true"></i>
+
 .. |IcMinus| raw:: html
 
    <i class="fa fa-minus fa-lg" aria-hidden="true"></i>
 
+.. |IcSendEmail| raw:: html
+
+   <i class="fa fa-envelope fa-lg"></i>
+
+.. |IcStop| raw:: html
+
+   <i class="fa fa-stop fa-lg"></i>
+
+.. |IcStart| raw:: html
+
+   <i class="fa fa-play fa-lg"></i>
+
+.. |IcCall| raw:: html
+
+   <i class="fa fa-phone-square fa-lg"></i>
+
+.. |IcGlobalLevel| raw:: html
+
+   <i class="fa fa-cogs-o fa-lg" aria-hidden="true"></i>
+
+.. |IcOrganizationLevel| raw:: html
+
+   <i class="fa fa-building-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
+
+.. |IcUserLevel| raw:: html
+
+   <i class="fa fa-user-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
+
+.. .. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
+   :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png
+   :align: middle
+   :width: 11px
+
+.. |IcPassReset| image:: /user_guide/img/getting_started/buttons/IcPassReset.png
+   :align: middle
+
+.. |IcDisable| image:: /user_guide/img/getting_started/buttons/IcDisable.png
+   :align: middle
+
+.. |IcShow| image:: /user_guide/img/getting_started/buttons/IcShow.png
+   :align: middle
+
+.. |IcHide| image:: /user_guide/img/getting_started/buttons/IcHide.png
+   :align: middle
+
+.. |IcPosition| image:: /user_guide/img/getting_started/buttons/IcPosition.png
+   :align: middle
+
+.. |IcRest| image:: /user_guide/img/getting_started/buttons/IcRest.png
+   :align: middle
+
+.. |BRefresh| image:: /user_guide/img/getting_started/buttons/BRefresh.png
+   :align: middle
+
+.. |BReset| image:: /user_guide/img/getting_started/buttons/BReset.png
+   :align: middle
+
+.. |ScrollPage| image:: /user_guide/img/getting_started/buttons/scroll_page.png
+   :align: middle
+
+.. |TagsfGrid| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid.png
+   :align: middle
+
+.. |TagsfGrid1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid_1.png
+   :align: middle
+
+.. |TagsfView| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view.png
+   :align: middle
+
+.. |TagsfView1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_1.png
+   :align: middle
+
+.. |TagsfView2| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_2.png
+   :align: middle
+
+.. |IcDiscardChanges| image:: /user_guide/img/getting_started/buttons/IcDiscardChanges.png
+   :align: middle
+
+.. |IcSaveChanges| image:: /user_guide/img/getting_started/buttons/IcSaveChanges.png
+   :align: middle
+
+.. |IcFilters| image:: /user_guide/img/getting_started/buttons/IcFilters.png
+   :align: middle
+
+.. |IcMoveW| image:: /user_guide/img/getting_started/buttons/IcMoveW.png
+   :align: middle
+
+.. |IcIncoming| image:: /user_guide/img/getting_started/buttons/IcIncoming.png
+   :align: middle
+
+.. |IcOutgoing| image:: /user_guide/img/getting_started/buttons/IcOutgoing.png
+   :align: middle
+
+.. |IcConfigure| image:: /user_guide/img/getting_started/buttons/IcConfigure.png
+   :align: middle
+
+.. |IcShoppingLists| raw:: html
+
+   <i class="fa fa-clipboard" aria-hidden="true"></i>
+
+.. |IcCheckout| raw:: html
+
+   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+.. |IcSub| image:: /user_guide/img/getting_started/buttons/IcSub.png
+   :align: middle
+
+.. |IcUns| image:: /user_guide/img/getting_started/buttons/IcUns.png
+   :align: middle
+
+.. |IcRemove| image:: /user_guide/img/getting_started/buttons/IcRemove.png
+   :align: middle
+
+.. |UndoRem| image:: /user_guide/img/getting_started/buttons/UndoRem.png
+   :align: middle
+
+.. |BSchedule| image:: /user_guide/img/getting_started/buttons/BSchedule.png
+   :align: middle
+
+.. |IcCross| image:: /user_guide/img/getting_started/buttons/IcCross.png
+   :align: middle
+
+.. |HObutton| image:: /user_guide/img/getting_started/buttons/hangouts.png
+   :align: middle
+
+.. |InstallPack| image:: /admin_guide/img/extension/install_package.png
+   :align: middle
 

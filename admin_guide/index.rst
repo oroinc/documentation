@@ -3,156 +3,326 @@
 Administrator Guide
 ===================
 
-The section describes tools for system management and administration, aimed to be used primarily by the system 
-administrators.
+Administration
+--------------
 
-Please note that in many cases, the tools may be not available to the usual users, subject to the permissions defined.
+This section groups the guidance and reference information on hardware and software configuration for Oro application components, users and role management (including the data and access level restrictions), system monitoring tools, and Oro application extensions installation.
 
-* :doc:`/admin_guide/app_look_feel/index`
+.. raw:: html
 
-  * :doc:`/admin_guide/app_look_feel/application_settings`
-  
-  * :doc:`/admin_guide/app_look_feel/display_settings`
-    
-  * :doc:`/admin_guide/app_look_feel/language_settings`
-  
-  * :doc:`/admin_guide/app_look_feel/localization_settings`
-    
-  * :doc:`/admin_guide/app_look_feel/menus_config`
-    
-  * :doc:`/admin_guide/app_look_feel/upload_settings`
+   <div class="guideline">
 
-* :doc:`/admin_guide/record_mgmt_config/index`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="user-management"><span class="std std-ref"><i class="fa fa-users fa-lg" aria-hidden="true"></i><br>User Management</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/record_mgmt_config/tag_management`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="security"><span class="std std-ref"><i class="fa fa-universal-access fa-lg" aria-hidden="true"></i><br>Roles and Access Management</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/record_mgmt_config/workflow_management`
-  
-* :doc:`/admin_guide/email/index`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="security/security-data-audit#user-guide-data-audit"><span class="std std-ref"><i class="fa fa-book fa-lg" aria-hidden="true"></i><br>Data Audit</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/email/system_mailboxes`
-  
-  * :doc:`/admin_guide/email/system_mailbox_settings`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/email/email_templates`
+   </div>
 
-  * :doc:`/admin_guide/email/notification_rules`
-  
-  * :doc:`/admin_guide/email/email_configuration`
-  
-  * :doc:`/admin_guide/email/email_configuration_settings`
 
-* :doc:`/admin_guide/entities/index`
-  
-  * :doc:`/admin_guide/entities/create_entities` 
+.. raw:: html
 
-  * :doc:`/admin_guide/entities/manage_entities`
+   <div class="guideline">
 
-  * :doc:`/admin_guide/entities/create_entity_fields`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="op-structure"><span class="std std-ref"><i class="fa fa-wrench fa-lg" aria-hidden="true"></i><br>System Components Administration</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/entities/manage_entity_fields`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="package-manager"><span class="std std-ref"><i class="fa fa-puzzle-piece fa-lg" aria-hidden="true"></i><br>Extensions and Package Management</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/entities/create_entity_field_example`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="monitoring"><span class="std std-ref"><i class="fa fa-heartbeat fa-lg" aria-hidden="true"></i><br>Monitoring and Healthcheck</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/entities/entity_field_type_related_properties`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/entities/entity_fields_basic_properties`
 
-  * :doc:`/admin_guide/entities/entity_fields_advanced_properties`
+   </div>
 
-* :doc:`/admin_guide/security/index`
 
-  * :doc:`/admin_guide/security/access_role_management`
-  
-    * :doc:`/admin_guide/security/access_management_roles`
-    
-      * :doc:`/admin_guide/security/admin_capabilities`
+Configuration
+-------------
 
-      * :doc:`/admin_guide/security/access_management_roles_interface`
+The Configuration section of Administrator Guide walks your though all post-install configuration settings of the Oro application. In particular, you will learn how to set up general system configuration options, as well as settings specific for CRM and marketing.
 
-      * :doc:`/admin_guide/security/access_management_roles_actions`
-      
-    * :doc:`/admin_guide/security/access_management_access_levels`
+See a short video on using configuration options and orienting in the configuration guide:
 
-    * :doc:`/admin_guide/security/access_management_ownership_type`
+.. raw:: html
 
-    * :doc:`/admin_guide/security/access_management_user_access_settings`
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/BxyzaOXwo0k" frameborder="0" allowfullscreen></iframe>
 
-    * :doc:`/admin_guide/security/access_management_field_level_acl`
+Before You Begin
+^^^^^^^^^^^^^^^^
 
-    * :doc:`/admin_guide/security/access_management_examples`
-    
-  * :doc:`/admin_guide/security/security_data_audit`
+Settings in Oro application can be managed on multiple configuration levels. Throughout the configuration guide, these levels are marked with the corresponding icons to help you navigate through the settings. You can find more information on levels and graphics in the following topics:
 
-* :doc:`/admin_guide/user_management/index`
+* :ref:`Configuration Layers <configuration--guide--config-levels>`: global, website, organization, and user
+* :ref:`Configuration Option Quick Search <user-guide--system-configuration--quick-search>`
 
-  * :doc:`/admin_guide/user_management/user_management_overview`
+Fundamental Configuration Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  * :doc:`/admin_guide/user_management/user_management_users`
-  
-    * :doc:`/admin_guide/user_management/user_management_groups`
-    
-  * :doc:`/admin_guide/user_management/user_management_bu`
+Configuration Levels
+~~~~~~~~~~~~~~~~~~~~
 
-  * :doc:`/admin_guide/user_management/user_management_organization`
+.. note:: This section provide a reference for the settings accessible via the **System > Configuration** menu and **Configuration** menu of the organization, website, and user.
 
-  * :doc:`/admin_guide/user_management/multiple_organizations_support`  
-  
-* :doc:`/admin_guide/marketing_tools_config/rfm_admin`
+.. raw:: html
 
-* :doc:`/admin_guide/integrations/index`
+   <div class="guideline">
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3><a class="reference internal" href="config-levels/global#doc-system-configuration"><span class="std std-ref"><i class="fa fa-cogs fa-lg" aria-hidden="true"></i><br>Global Configuration</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/integrations/integrations_overview`
-  
-  * :doc:`/admin_guide/integrations/google_integration_settings`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="config-levels/org#doc-organization-configuration"><span class="std std-ref"><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><br>Organization Configuration</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/integrations/google_single_sign_on`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+           <a class="reference internal" href="config-levels/user#doc-my-user-configuration"><span class="std std-ref"><i class="fa fa-user-o fa-lg" aria-hidden="true"></i><br>User Configuration</span></a></p></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/integrations/magento_channel_integration`
 
-  * :doc:`/admin_guide/integrations/ldap_integration`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+           &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/integrations/mailchimp_configuration`
-  
-  * :doc:`/admin_guide/integrations/dotmailer_integration_settings`
-  
-  * :doc:`/admin_guide/integrations/dotmailer_configuration`
+   </div>
 
-  * :doc:`/admin_guide/integrations/dotmailer_single_sign_on` 
+Domain-specific Groups of Configuration Settings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  * :doc:`/admin_guide/integrations/ms_exchange_integration_settings`
+.. raw:: html
 
-  * :doc:`/admin_guide/integrations/ms_exchange_integration`
-  
-  * :doc:`/admin_guide/integrations/ms_outlook_integration_settings`
+   <div class="guideline">
 
-  * :doc:`/admin_guide/integrations/outlook_sync`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <img src="https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/crm_config.png" alt="CRMConfig">
+          <a class="reference internal" href="landing-crm#configuration-guide-crm-configuration"><span class="std std-ref">CRM Configuration</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/integrations/embedded_forms`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <img src="https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/marketing_config.png" alt="MarketingConfig">
+           <a class="reference internal" href="landing-marketing#configuration-guide-marketing-configuration"><span class="std std-ref">Marketing Configuration</span></a></p></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/integrations/hangouts`  
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-* :doc:`/admin_guide/system/index`
 
-  * :doc:`/admin_guide/system/processes`
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          &nbsp;</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
 
-  * :doc:`/admin_guide/system/package_manager`
+   </div>
 
+Advanced Configuration Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. note:: This section provide a reference for the settings accessible via the **System** menu (other than **System > Configuration**).
+
+.. raw:: html
+
+   <div class="guideline">
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3><a class="reference internal" href="email#doc-email-configuration"><span class="std std-ref"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i><br>Emails</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="integrations#user-guide-integrations"><span class="std std-ref"><i class="fa fa-puzzle-piece fa-lg" aria-hidden="true"></i><br>Integrations</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="tags_management#user-guide-system-tags-management"><span class="std std-ref"><i class="fa fa-tag fa-lg" aria-hidden="true"></i><br>Tags</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+
+       <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+           <a class="reference internal" href="menu#doc-config-menus"><span class="std std-ref"><i class="fa fa-bars fa-lg" aria-hidden="true"></i><br>Menus</span></a></p></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+
+   </div>
+
+
+.. raw:: html
+
+   <div class="guideline">
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+            <a class="reference internal" href="workflows#user-guide-system-workflow-management"><span class="std std-ref"><i class="fa fa-retweet fa-lg" aria-hidden="true"></i><br>Workflow</span></a></h3>
+            </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="localization#sys-config-sysconfig-general-setup-localization"><span class="std std-ref"><i class="fa fa-flag fa-lg" aria-hidden="true"></i><br>Localization</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="entities#entities-management"><span class="std std-ref"><i class="fa fa-list-alt fa-lg" aria-hidden="true"></i><br>Entities</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
+          <h3>
+          <a class="reference internal" href="multi-currency#user-guide-multi-currency"><span class="std std-ref"><i class="fa fa-credit-card fa-lg" aria-hidden="true"></i><br>Multi-Currency</span></a></h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          </div>
+      </div>
+
+   </div>
+
+**For more information, see the following sections**:
 
 .. toctree::
-    :hidden:
-    :maxdepth: 2
-    :glob:
+   :includehidden:
+   :titlesonly:
+   :maxdepth: 2
 
+   op_structure/index
+   monitoring/index
+   config_levels/index
+   landing_system_configuration/index
+   landing_crm/index
+   landing_marketing/index
+   user_management/index
+   localization/index
+   email/index
+   entities/index
+   integrations/index
+   menu/index
+   workflows/index
+   tags_management/index
+   multi_currency/index
 
-    app_look_feel/index
-    record_mgmt_config/index
-    email/index
-    entities/index
-    security/index
-    user_management/index
-    sales_tools_config/index
-    marketing_tools_config/index
-    integrations/index
-    system/index
 

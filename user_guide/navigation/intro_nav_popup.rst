@@ -1,50 +1,26 @@
-.. _user-guide-intro-popups:
+... _user-guide-intro-popups:
 
 Flash Notifications and Dialog Windows
 ======================================
 
-While using OroCRM, you may sometimes need to inform a user about some events in the system. For example, when an 
-operation has been executed or has failed, or they need to be reminded about a task or event.
+While using OroCRM, you may sometimes need to inform a user about some events in the system. For example, when an operation has been executed or has failed, or they need to be reminded about a task or event:
 
-Success flash messages are displayed against a green background:
+* Success flash messages are displayed against the green background:
 
-|
+  .. image:: ../img/navigation/popup/flash_success.png
 
-.. image:: ../img/navigation/popup/flash_success.png
+* If something goes wrong, the flash message is displayed against the red background to attract your attention.
 
-|
+  .. image:: ../img/navigation/popup/flash_error.png
 
-If something has gone wrong, the flash message will be displayed against a red background in order to attract your 
-attention.
+* Other flash messages have a yellow background. 
 
-|
+  .. image:: ../img/navigation/popup/flash_task.png
 
-.. image:: ../img/navigation/popup/flash_error.png
+* Sometimes, a flash message contains links to other pages, such as the task reminder above, or this synchronization message:
 
-|
+  .. image:: ../img/navigation/popup/flash_link.png
 
-Other flash messages have a yellow background. 
+* Flash messages appear on the top of the screen for several seconds and then disappear. If the user must make a decision before the system can go on, a dialog window appears. The dialog windows have buttons and will not disappear until a decision is made:
 
-|
-
-.. image:: ../img/navigation/popup/flash_task.png
-
-|
-
-Sometimes, a flash message can contain links to other pages, such as the task reminder above, or this synchronization 
-message:
-
-|
-
-.. image:: ../img/navigation/popup/flash_link.png
-
-|
-
-Flash messages appear on the top of the screen for several seconds and then disappear.
-
-If the user must make a decision before the system can go on, a dialog window will appear. The dialog windows have 
-buttons and will not disappear until a decision has been made:
-
-|
-
-.. image:: ../img/navigation/popup/pop_up.png
+  .. image:: ../img/navigation/popup/pop_up.png

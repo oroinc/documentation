@@ -1,3 +1,5 @@
+.. _admin-guide--workflows--opportunity--management:
+
 .. begin_opportunity_flows
 
 Manage Opportunity Workflow

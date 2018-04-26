@@ -1,6 +1,8 @@
 .. index::
     single: Requirements
 
+.. _system-requirements:
+
 System Requirements
 ===================
 

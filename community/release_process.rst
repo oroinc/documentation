@@ -1,36 +1,45 @@
-Release Process
-===============
+.. _doc--community--release:
 
-Oro Product Versions
---------------------
+Understand Release Process
+==========================
 
-Oro products are following `Semantic Versioning`_ strategy (MAJOR.MINOR.PATCH) with a few additions:
+.. contents:: :local:
+   :depth: 1
 
-- **Major** version releases are reserved for backward incompatible architecture and technology changes, e.g. introduction of application namespaces, or switch to new version of Symfony
-- **Minor** releases include new features and clear migration path in case of small backward incompatible updates
-- **Patch** version releases are used for bug fixes and minor improvements
+OroCRM Versions
+---------------
+
+OroCRM follows `Semantic Versioning`_ strategy (MAJOR.MINOR.PATCH) with a few additions:
+
+- **Major** version releases are reserved for backward incompatible architecture and technology changes, e.g. introduction of application namespaces, or a switch to a new version of Symfony.
+- **Minor** version releases may introduce new features and provide a clear migration path in case of small backward incompatible changes.
+- **Patch** version releases are mainly used for bug fixes and minor improvements and usually do not contain any backward incompatible changes.
 
 
-Release and Support Cycle
--------------------------
+Release Schedule
+----------------
 
-Oro Team is working on multiple products and releases them on time-based schedule, with new minor or major version coming out roughly every 2 months.
+Oro Team works on OroCRM using a time-based schedule, with new minor or major version coming out every 2 months.
 
-- **Regular** major or minor versions are released roughly every 2 months. These versions contain new features and capabilities that might not be complete yet, but still offer value to the users
-- **Long-term support (LTS)** versions are released roughly every 6 months. These versions contain all completed features that were introduced in two previous regular versions
+OroCRM Enterprise Edition Releases and Support Cycle
+----------------------------------------------------
+
+- **Regular** major or minor versions are released every 2 months. These versions contain new features and capabilities that might not be complete yet, but still offer value to the users.
+- **Long-term support (LTS)** versions are released roughly every 6 months. These versions contain all completed features that were introduced in regular releases since the previous LTS version.
 
 .. note::
-    **Patch** versions are released roughly once in 2 weeks for all currently maintained regular and maintained/supported LTS versions.
+
+   **Patch** versions may be released as often as every week for all currently maintained regular and maintained/supported LTS versions.
 
 
-The key difference between regular and LTS version is the duration of maintenance (bugfix) period. LTS versions are also supported for security fixes. 
+The key difference between a regular and a LTS version is the duration of the maintenance (bugfix) period. LTS versions are also supported for security fixes.
 
-- **Regular** versions are maintained for the next two release cycles, or roughly 4 months.
-- **LTS** versions are maintained for 18 months after the release, and security fixes will be released for 18 more months
+- **Regular** versions are maintained for the next two release cycles, or 4 months.
+- **LTS** versions are maintained for 18 months after the release, and security fixes are released for 18 more months.
 
-Below is the approximate schedule of Oro product releases and support timelines until 2019. Please take into account that numbering of major and minor versions is based on OroPlatform versions and is subject to change.
+Below is the approximate schedule of OroCRM releases and support timelines until 2019. Please take into account that numbering of major and minor versions is subject to change.
 
-.. image:: img/release_process/OroCRM_release_schedule_3.0.png
+.. image:: /community/img/release_process/OroCRM_release_schedule_3.0.png
 
 +---------------+-------------------+-------------------+-------------------+
 | Version       | Release           | Maintenance ends  | Support ends      |
@@ -70,9 +79,19 @@ Below is the approximate schedule of Oro product releases and support timelines 
 Upgrade Recommendations
 -----------------------
 
-Our release cycle offers two primary upgrade models:
+OroCRM Enterprise Edition release cycle offers two primary upgrade models:
 
-- **"Bleeding Edge"** – always upgrade to the newest regular or LTS version to immediately utilize and benefit from new features. Choose this model if you mostly use the application without customizations and are OK with frequent updates.
-- **"Stability"** – upgrade from LTS to LTS version to take your time to adopt new features. Choose this model if version upgrade is complicated to you because of the sheer size of your business or due to rich customizations of the system.
+- **(Recommended) Long Term Stability** – Upgrade from an LTS version to the next LTS version to take your time to adopt new features. Choose this model to receive continued support without necessity to upgrade frequently, especially if the version upgrade is complicated for you because of the sheer size of your business or due to rich customizations of the system.
+- **Bleeding Edge** – Immediately utilize and benefit from new features as soon as they are introduced by always upgrading to the newest version every 2 months. Choose this model if you mostly use the application without customizations and are OK with frequent updates. If you are an enterprise partner or an extension developer, choose this model to ensure that your extensions and customizations are tested in combination with all new features before the next LTS release.
+
+
+Community Edition Releases
+--------------------------
+
+Community developers and users have access to the following two product branches:
+
+- **Stable** – The `stable <https://github.com/oroinc/crm/tree/stable>`_ branch always points to the latest regular or LTS version. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next stable release tag every 2 months or more frequently.
+- **Development** – The `development <https://github.com/oroinc/crm/tree/development>`_ branch points to the latest available commit and is updated daily. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered ready for production use.
+
 
 .. _Semantic Versioning:    http://semver.org/

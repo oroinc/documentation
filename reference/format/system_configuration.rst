@@ -1,3 +1,5 @@
+.. _ref-format-system-configuration:
+
 System Configuration
 ====================
 
