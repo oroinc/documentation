@@ -1,5 +1,5 @@
-User Guide
-==========
+User Guide: Getting Started
+===========================
 
 OroCRM is a highly flexible open source CRM. It can be easily custom-tailored to meet the specific needs of your 
 business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.

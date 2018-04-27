@@ -1,7 +1,7 @@
-The Oro Book
-============
+Developer Guide
+===============
 
-Overview of Platform architecture, design and key features. This section will help to understand better platform design
+Overview of Oro application architecture, design and key features. This section will help to understand better platform design
 and technical details.
 
 .. toctree::
