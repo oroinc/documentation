@@ -35,7 +35,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in `Symfony documentation`_             |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * `PHP`_ 7.1.x versions                           |
+| *PHP*             | * `PHP`_ ~7.1.17 version (see ~ explained `here`_)|
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -77,6 +77,8 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * `Supervisor`_ or alternative                    |
 +-------------------+---------------------------------------------------+
+
+.. _`here`: https://getcomposer.org/doc/articles/versions.md#tilde-version-range-
 
 Enterprise Edition Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
