@@ -19,7 +19,7 @@ With these out-of-the-box benefits, developers can focus on implementing their u
 Oro Licensing
 ~~~~~~~~~~~~~
 
-All Oro applications are distributed under `OSL v3 <http://opensource.org/licenses/OSL-3.0>`_ license, however, every Oro application is available as an Enterprise Edition under the `EULA <https://github.com/oroinc/platform-enterprise/blob/master/LICENSE.md>`_ license. Enterprise Editions come with support and better scalability.
+Community versions of OroCRM and OroCommerce are distributed under `OSL-3.0 <http://opensource.org/licenses/OSL-3.0>`_ license, community edition of OroPlatform is distributed under `MIT <https://opensource.org/licenses/MIT>`_ license. Enterprise editions of OroCRM, OroCommerce, and OroPlatform are distributed under a custom End User License Agreement.
 
 .. finish_what_is
 
