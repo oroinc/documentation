@@ -43,7 +43,6 @@ To download OroCRM Tracking extension, use the following link: https://marketpla
 .. note:: You must be logged in to be able to download extension key.
 
 
-
 Step 2: Configure the Extension on the Magento side
 ---------------------------------------------------
 
