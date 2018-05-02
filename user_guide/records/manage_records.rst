@@ -64,7 +64,7 @@ To edit a record using inline-editing:
 Manage Records Using Ellipsis Menu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of the row of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process. 
+Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process. 
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_editrecord.png
 
