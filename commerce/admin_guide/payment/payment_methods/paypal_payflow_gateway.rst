@@ -43,7 +43,7 @@ To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
 
 #. Click **Save**.
 
-Next, set up a payment rule that enables these payment methods (PayPal Payflow Gateway and PayPal Payflow Gateway Express Checkout and/or PayPal Payment Pro and PayPal Payment Pro Express Checkout) for all or some customer orders.
+Next, set up a payment rule that enables these payment methods (PayPal Payflow Gateway and PayPal Payflow Gateway Express Checkout and/or PayPal Payment Pro and PayPal Payment Pro Express Checkout) for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

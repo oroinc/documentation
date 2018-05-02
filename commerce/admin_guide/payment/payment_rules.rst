@@ -40,6 +40,8 @@ To create a payment rule:
 
    #) Select the payment currency.
 
+      .. important:: When setting a payment rule for the PayPal integration, make sure to select the currency that PayPal supports, otherwise the payment will not be processed. For the list of currencies supported by PayPal, refer to the :ref:`Currency and Currency Codes <admin-guide--payment--paypal-currency>` section.
+
    #) Select **Stop Further Rule Processing** if you would like to prevent applying other payment rules with lower priority.
 
 #. In the **Destinations** section, add one or more destinations to apply this payment rule for. The payment rule applies when the billing address matches the provided destination(s). To add a destination:
@@ -68,13 +70,13 @@ To create a payment rule:
 
       **PayPal:**
 
-      To enable several PayPal Payflow Gateway options with different payment settings, create a separate payment rule for every unique option.
+      To enable several PayPal Payflow Gateway/ PayPal Express options with different payment settings, create a separate payment rule for every unique option and for each specific currency. Find the list of currencies supported by PayPal in the :ref:`PayPal Currency and Currency Codes <admin-guide--payment--paypal-currency>` topic.
       You still can use one copy of PayPal Payflow Gateway and one copy of PayPal Payflow Gateway Express Checkout in the same payment rule, as these are different payment methods.
 
 
       **Wirecard:**
 
-      The single Wircard integration enables you to set up the following payment methods:
+      The single Wirecard integration enables you to set up the following payment methods:
 
        - *WireCard - Credit Card*—Via this payment method a buyer can pay for the order using a credit card.
        - *WireCard - PayPal*—When this payment method is used, a buyer is redirected to the PayPal site where they can complete the payment using their PayPal account or credit card.
