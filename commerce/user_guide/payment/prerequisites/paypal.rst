@@ -1,16 +1,18 @@
 .. _user-guide--payment--prerequisites--paypal:
 
 Prerequisites for PayPal Services Integration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------
 
 .. begin
+
+.. contents:: :local:
 
 Before adding a PayPal Payflow Gateway as a payment method in OroCommerce, create a PayPal Payflow Gateway Manager Account and create a dedicated API transaction user for every instance of OroCommerce. You might need a separate instance for a sandbox, test, staging/pre-production, and production environment.
 
 Register a Business Account with PayPal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To register business account and enable express checkout for your OroCommerce PayPal integration, follow the next steps:
+To register a business account and enable express checkout for your OroCommerce PayPal integration, follow the next steps:
 
 #. Open `https://developer.paypal.com/ <https://developer.paypal.com/>`_ and click **Log In**.
 #. On the login page that opens, click **Sign Up**.
@@ -46,10 +48,12 @@ To register business account and enable express checkout for your OroCommerce Pa
 
 #. In *Account Setup*, confirm your email, link your bank account, and configure the credit card statement.
 
+.. _paypal-test-account:
+
 Create a Sandbox Test Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Test sandbox PayPal account is identical to the regular PayPal account but is hosted in the sandbox environment.
+The PayPal sandbox test account is identical to the regular PayPal account but is hosted in the sandbox environment.
 
 To create a sandbox test account, follow the next steps:
 
@@ -57,9 +61,68 @@ To create a sandbox test account, follow the next steps:
 
 #. Navigate to **Dashboard** and click **Accounts** in the **Sandbox** section.
 
-#. Click **Create Account** to create new sandbox account.
+#. Click **Create Account** to create a new sandbox account.
 
 #. Fill in the account details (Account Type, Email Address, Password, PayPal Balance) and click **Create Account**.
+
+#. Once the account is created, you can check its details by clicking the **Profile** link below the newly created account.
+
+   .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_sandbox_account.png
+
+Here, you can view your profile details, sandbox API credentials, your test credit card number, the PayPal balance, and other configuration by clicking the corresponding tab.
+
+   .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_sandbox_profile_details.png
+
+.. _paypal-express--sandbox-credentials:
+
+Obtain Sandbox Credentials
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once you have created a sandbox account, you need to obtain the test credentials, such as **Client ID** and **Client Secret**, to check the integration between OroCommerce and PayPal Express in the test mode without any charges.
+
+To receive the credentials, you need to create a corresponding REST API application:
+
+#. Log into the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with your existing credentials.
+
+#. Navigate to **Dashboard > My Apps & Credentials** in the main menu to the left.
+
+#. Scroll down to the **REST API apps** section and click **Create App** to request the credentials.
+
+   .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_rest_API_credentials.png
+
+#. Enter a name for your application and select a sandbox developer account from the list.
+
+#. Click **Create App**.
+
+   .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_rest_API_credentials_steps.png
+
+#. On the page that opens, select **Sandbox** to get the requested **Client ID** and **Client Secret** values.
+
+   .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_sandbox_API_credentials.png
+
+#. Use the credentials to set up the test integration between PayPal Express and OroCommerce.
+
+
+.. _paypal-express--production-credentials:
+
+Obtain Production Credentials (PayPal Express only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once you have successfully configured the PayPal Express integration as described in the :ref:`PayPal Express <config-guide--payment--paypal-express>` guide, and the connection to the test environment is working properly, you can move to a production stage, but this time use the production credentials.
+
+#. Log into the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with your existing credentials.
+
+#. Navigate to **Dashboard > My Apps & Credentials** in the main menu to the left.
+
+#. Scroll down to the **REST API apps** section and select the required application by clicking it.
+
+#. On the page that opens, select **Live** to get the requested **Client ID** and **Client Secret** values.
+
+   .. image:: /user_guide/img/payment/prerequisites/paypal/ paypal_live_API_credentials.png
+
+#. Use the credentials to set up the production integration between PayPal Express and OroCommerce.
+
+.. note:: Remember NOT to select the **Sandbox Mode** check box as you are configuring the production integration.
 
 Register a PayPal Payflow Gateway Account
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,7 +135,7 @@ To create a PayPal Payflow Gateway Account:
 
 #. Fill in the required fields in the Account Information section, confirm you have read the *PayPal Gateway Agreement* in the *Term and Conditions* section, and click **Continue**.
 
-#. Follow the on-screen guidance to prepare for integration: login to the Payflow Manager and create one or more API Transaction User(s).
+#. Follow the on-screen guidance to prepare for integration: log into the Payflow Manager and create one or more API Transaction User(s).
 
    .. image:: /user_guide/img/payment/prerequisites/paypal/paypal_sandbox_test_account.png
 
@@ -84,8 +147,8 @@ To create a PayPal Payflow Gateway Account:
 
 #. Now you have *Payflow Gateway Account* and you can use PayPal Payments Pro and Payflow Gateway in your applications.
 
-Configure PayPal Manager Account to Accept Payments
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configure a PayPal Manager/Merchant Account to Accept Payments
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To accept payments in OroCommerce, you need to configure your PayPal Manager Account using the following steps:
 
@@ -95,7 +158,7 @@ To accept payments in OroCommerce, you need to configure your PayPal Manager Acc
 * Enable fraud protection for production environments.
 
 Enable Secure Token and Silent Post
-"""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 OroCommerce requires enabling secure token and silent post features.
 
@@ -116,7 +179,7 @@ To enable these features:
 #. In the *Silent Post for Data Transfer* section, set **Use Silent Post** to **Yes** and enable the **Void transaction when my server fails to receive data sent by the silent post**.
 
 Enable Reference Transactions
-"""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 OroCommerce depends on the reference transactions. To ensure they are enabled:
 
@@ -128,12 +191,12 @@ OroCommerce depends on the reference transactions. To ensure they are enabled:
 
 #. Click **Confirm** (twice).
 
-.. note:: There might be a significant delay before this change comes into affect (up to several hours). During this time your reference transactions could be rejected by PayPal.
+.. note:: There might be a significant delay before this change comes into effect (up to several hours). During this time your reference transactions could be rejected by PayPal.
 
 Disable Fraud Protection for Test Environments
-""""""""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Disable Fraud Protection for the Test Setup to avoid your test transaction being blocked. Test transactions may look suspicions due to unusual behaviour and eventual failures because of the invalid data:
+Disable Fraud Protection for the Test Setup to avoid your test transaction being blocked. Test transactions may look suspicions due to unusual behavior and eventual failures because of the invalid data:
 
 #. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
 
@@ -141,12 +204,12 @@ Disable Fraud Protection for the Test Setup to avoid your test transaction being
 
 #. Unselect all the filters and click **Deploy**.
 
-.. note:: There might be a significant delay before this change comes into affect (up to several hours). During this time your transactions may be caught by the fraud filter which will lead to the payment failure.
+.. note:: There might be a significant delay before this change comes into effect (up to several hours). During this time your transactions may be caught by the fraud filter which will lead to the payment failure.
 
 Enable Fraud Protection for Production Environments
-"""""""""""""""""""""""""""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Enable Fraud Protection for any customer facing environments where real purchases might happen:
+Enable Fraud Protection for any customer-facing environments where real purchases might happen:
 
 #. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
 
@@ -154,10 +217,10 @@ Enable Fraud Protection for any customer facing environments where real purchase
 
 #. Select all the filters and click **Deploy**.
 
-.. note:: There might be a significant delay before this change comes into affect (up to several hours). During this time the fraud filter is disabled and any transactions may impose a security risk due to the reduced protection. Limit access to the Storefront and disable related payment methods until you confirm that the fraud filters are on and catch the suspicious and illegal transactions.
+.. note:: There might be a significant delay before this change comes into effect (up to several hours). During this time the fraud filter is disabled and any transactions may impose a security risk due to the reduced protection. Limit access to the Storefront and disable related payment methods until you confirm that the fraud filters are on and catch the suspicious and illegal transactions.
 
-Configure PayPal Manager Account to Work with Express Checkout
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configure the PayPal Manager/Merchant Account to Work with Express Checkout
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Using Express Checkout requires the following configuration in the Manager Account.
 
@@ -197,3 +260,8 @@ To create an API Transaction User:
 #. Click **Update**.
 
 The basic user login information is securely delivered to the provided email.
+
+Install Oro PayPal Express Integration Package
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/packages/oro/paypal-express>`_ package.

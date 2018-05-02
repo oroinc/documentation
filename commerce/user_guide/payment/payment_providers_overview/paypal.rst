@@ -7,7 +7,7 @@ PayPal Payments Services
 
 PayPal is a fast, safe and reliable online global payment system that offers an easy online payments for businesses and individuals.
 
-Configure :ref:`PayPal integration <sys--integrations--manage-integrations--paypal-payflow-gateway>` to enable PayPal payment methods on the checkout.
+Configure the :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payflow-gateway>` and the :ref:`PayPal Express <config-guide--payment--paypal-express>` integrations to enable PayPal payment methods on the checkout.
 
 OroCommerce supports integration with PayPal to offer the following payment methods:
 
@@ -15,6 +15,9 @@ OroCommerce supports integration with PayPal to offer the following payment meth
 * PayPal Payments Pro
 * PayPal Payflow Gateway Express Checkout
 * PayPal Payments Pro Express Checkout
+* PayPal Express (verify availability in your country at `PayPal website <https://www.paypal.com/us/webapps/mpp/country-worldwide>`_)
+
+  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/packages/oro/paypal-express>`_ package.
 
 .. note:: Depending on PayPal policies, payment methods may be different in specific countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries.
 

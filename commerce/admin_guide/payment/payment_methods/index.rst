@@ -17,4 +17,6 @@ Payment Methods
    paypal_payflow_gateway
    paypal_payment_actions
    paypal_payment_integration_details
+   paypal_express
+   paypal_currency
    wirecard

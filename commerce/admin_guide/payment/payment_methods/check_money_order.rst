@@ -34,7 +34,7 @@ To enable check/money order payments, complete the following steps:
 
 #. Click :guilabel:`Save`.
 
-Next, set up a payment rule that enables this payment method for all or some customer orders.
+Next, set up a payment rule that enables this payment method for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
