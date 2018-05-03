@@ -1,13 +1,13 @@
 .. _virtual_machine_deployment:
 
-Evaluate Oro App in a Sandbox
------------------------------
+Running a Pre-Installed Oro Application with the Oracle VM VirtualBox
+---------------------------------------------------------------------
 
 .. begin_virtual_machine_deployment
 
-You can deploy a virtual machine with Oro application demo instance for a more flexible and secure evaluation experience.
+For a more flexible and secure evaluation experience, you can deploy a virtual machine with Oro application demo instance on an Oracle VM VirtualBox server.
 
-You can run the virtual machine on an Oracle VM VirtualBox server that is supported on OS X, Windows, and Linux-based operation systems.
+.. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox Server.
 
 Ensure that the server is installed in your local or corporate environment and is accessible before you do the following steps:
 
@@ -54,8 +54,8 @@ Ensure that the server is installed in your local or corporate environment and i
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.oroinc.com/b2b-commerce/download
+.. _`download section`: http://www.oroinc.com/orocrm/download
 
-.. |the_site| replace:: `oroinc.com/b2b-commerce`_
+.. |the_site| replace:: `oroinc.com/orocrm`_
 
-.. _`oroinc.com/b2b-commerce`:  http://www.oroinc.com/b2b-commerce/
+.. _`oroinc.com/orocrm`:  http://www.oroinc.com/ororm/

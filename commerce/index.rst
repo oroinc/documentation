@@ -276,6 +276,5 @@ This section provides links to the online documentation for the latest OroCommer
 
        system_requirements
 
-       
 
 
