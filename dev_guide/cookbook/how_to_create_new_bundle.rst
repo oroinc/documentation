@@ -49,7 +49,7 @@ Also new bundle can be generated using `Symfony command generate:bundle`_:
 
 .. code-block:: bash
 
-    user@host:/var/www/vhosts/platform-application$ php app/console generate:bundle
+    user@host:/var/www/vhosts/platform-application$ php bin/console generate:bundle
     Bundle namespace: Acme/Bundle/NewBundle
     Bundle name [AcmeNewBundle]:
     Target directory [/var/www/vhosts/platform-application/src]:
@@ -98,7 +98,7 @@ Now you have all required files to enable your new bundle. To do that you have t
 
    .. code-block:: bash
 
-       user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
+       user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
        Clearing the cache for the dev environment with debug true
 
    .. note::

@@ -116,7 +116,7 @@ To start the |oro_app_name| installation, run the following command:
 .. code:: bash
 
    scl enable oro-php71 bash
-   php ./app/console oro:install --env=prod --timeout=900
+   php ./bin/console oro:install --env=prod --timeout=900
    exit
 
 Follow the on-screen instructions in the console.
@@ -131,7 +131,7 @@ To install the application with demo data, use the `--sample-data` option. To ad
 .. code:: bash
 
    scl enable oro-php71 bash
-   sudo -u nginx php ./app/console oro:migration:data:load --fixtures-type=demo --env=prod
+   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
    exit
 
 **For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCommerce after installation, you can:
@@ -169,7 +169,7 @@ To schedule execution of the *oro:cron* command every-minute, add the following 
 
 .. code:: bash
 
-   */1 * * * * scl enable oro-php71 'php /usr/share/nginx/html/oroapp/app/console oro:cron --env=prod > /dev/null'
+   */1 * * * * scl enable oro-php71 'php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null'
 
 Save the updated file.
 

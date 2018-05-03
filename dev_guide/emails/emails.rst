@@ -334,7 +334,7 @@ Finally, you have to update the database schema and clear the application cache:
 .. code-block:: bash
 
     # update the database schema
-    $ php app/console doctrine:schema:update --force
+    $ php bin/console doctrine:schema:update --force
 
     # warm up the application cache
-    $ php app/console cache:warmup
+    $ php bin/console cache:warmup

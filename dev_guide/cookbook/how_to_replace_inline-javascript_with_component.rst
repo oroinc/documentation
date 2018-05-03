@@ -251,19 +251,19 @@ and include it into the build file.
 
       .. code-block:: bash
 
-        $ php app/console cache:clear
+        $ php bin/console cache:clear
 
     - Reinstall your assets if you don't deploy them via symlinks:
 
       .. code-block:: bash
 
-          $ php app/console oro:assets:install
+          $ php bin/console oro:assets:install
 
     - In production mode, you also have to rebuild the JavaScript code:
 
       .. code-block:: bash
 
-          $ php app/console oro:requirejs:build
+          $ php bin/console oro:requirejs:build
 
 .. _`Page Component documentation`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md
 .. _`PageController`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/public/js/app/controllers/page-controller.js

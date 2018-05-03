@@ -14,7 +14,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 .. code-block:: bash
 
     $ cd /path/to/application
-    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
+    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
 
 **2**. Stop the cron tasks.
 
@@ -31,7 +31,7 @@ Comment this line.
 
 .. code-block:: text
 
-     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
+     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
 **3**. Create backups of your Database and Code.
 
@@ -67,7 +67,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:update --env=prod --force
+    $ sudo -u www-data php bin/console oro:platform:update --env=prod --force
 
 .. note::
 
@@ -84,20 +84,20 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console cache:clear --env prod
+    $ sudo -u www-data bin/console cache:clear --env prod
 
 or, as alternative:
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/prod
-    $ sudo -u www-data app/console cache:warmup --env prod
+    $ sudo -u www-data bin/console cache:warmup --env prod
 
 **9**. Run the consumer(s).
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console oro:message-queue:consume --env prod
+    $ sudo -u www-data bin/console oro:message-queue:consume --env prod
 
 **10**. Enable cron.
 
@@ -109,13 +109,13 @@ Uncomment this line.
 
 .. code-block:: text
 
-     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
+     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
 **11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
-    $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
+    $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
 
 .. note::
 
@@ -133,7 +133,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 .. code-block:: bash
 
     $ cd /path/to/application
-    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
+    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
 
 **2** Stop the cron tasks.
 
@@ -150,7 +150,7 @@ Comment this line.
 
 .. code-block:: text
 
-    */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
+    */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
 **3**. Stop all running consumers.
 
@@ -183,27 +183,27 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php app/console oro:platform:upgrade20 --env=prod --force
+    $ sudo -u www-data php bin/console oro:platform:upgrade20 --env=prod --force
 
 **8**. Remove the caches.
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console cache:clear --env prod
+    $ sudo -u www-data bin/console cache:clear --env prod
 
 or, as alternative:
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/prod
-    $ sudo -u www-data app/console cache:warmup --env prod
+    $ sudo -u www-data bin/console cache:warmup --env prod
 
 
 **9**. Run the consumer(s).
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console oro:message-queue:consume --env prod
+    $ sudo -u www-data bin/console oro:message-queue:consume --env prod
 
 **10**. Enable cron.
 
@@ -215,13 +215,13 @@ Uncomment this line.
 
 .. code-block:: text
 
-    */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
+    */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
 **11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
-    $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
+    $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
 
 .. note::
 

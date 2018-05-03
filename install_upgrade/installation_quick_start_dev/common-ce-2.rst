@@ -51,7 +51,7 @@ To start the |oro_app_name| installation, run the following command:
 
 .. code:: bash
 
-   php ./app/console oro:install --env=prod --timeout=900
+   php ./bin/console oro:install --env=prod --timeout=900
 
 Follow the on-screen instructions in the console.
 
@@ -64,7 +64,7 @@ To install the application with demo data, use the `--sample-data` option. To ad
 
 .. code:: bash
 
-   sudo -u nginx php ./app/console oro:migration:data:load --fixtures-type=demo --env=prod
+   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
 
 **For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCommerce after installation, you can:
 
@@ -101,7 +101,7 @@ To schedule execution of the *oro:cron* command every-minute, add the following 
 
 .. code::
 
-   */1 * * * * php /usr/share/nginx/html/oroapp/app/console oro:cron --env=prod > /dev/null
+   */1 * * * * php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null
 
 Save the updated file.
 
@@ -127,7 +127,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
 .. code::
 
    [program:oro_web_socket]
-   command=php ./app/console clank:server --env=prod
+   command=php ./bin/console clank:server --env=prod
    numprocs=1
    autostart=true
    autorestart=true
@@ -136,7 +136,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
    redirect_stderr=true
 
    [program:oro_message_consumer]
-   command=php ./app/console oro:message-queue:consume --env=prod
+   command=php ./bin/console oro:message-queue:consume --env=prod
    process_name=%(program_name)s_%(process_num)02d
    numprocs=5
    autostart=true

@@ -223,7 +223,7 @@ Doctrine will actually make the expected changes:
 
 .. code-block:: bash
 
-    $ php app/console doctrine:schema:update --dump-sql
+    $ php bin/console doctrine:schema:update --dump-sql
 
 If the command displays the information you did not expect, double check the configured mapping
 information and run the command again.
@@ -232,7 +232,7 @@ When everything displays as expected, update the database schema by passing the 
 
 .. code-block:: bash
 
-    $ php app/console doctrine:schema:update --force
+    $ php bin/console doctrine:schema:update --force
 
 .. tip::
 
@@ -243,13 +243,13 @@ When everything displays as expected, update the database schema by passing the 
     .. code-block:: bash
 
         # clear the metadata cache
-        $ php app/console doctrine:cache:clear-metadata
+        $ php bin/console doctrine:cache:clear-metadata
 
         # check the schema change queries to be executed
-        $ php app/console doctrine:schema:update --dump-sql
+        $ php bin/console doctrine:schema:update --dump-sql
 
         # apply the schema changes to the database
-        $ php app/console doctrine:schema:update --force
+        $ php bin/console doctrine:schema:update --force
 
 .. caution::
 

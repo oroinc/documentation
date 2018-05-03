@@ -140,7 +140,7 @@ To actually load and apply the migrations to the existing database schema, you h
 
 .. code-block:: bash
 
-    $ php app/console oro:migration:load --force
+    $ php bin/console oro:migration:load --force
 
 This command checks for present migration versions that are currently not reflected in the existing
 database schema and executes all missing migrations sequentially in ascending order.
@@ -309,7 +309,7 @@ modified or added using the ``oro:entity-config:update`` command:
 
 .. code-block:: bash
 
-    $ php app/console oro:entity-config:update --force
+    $ php bin/console oro:entity-config:update --force
 
 When the ``oro:entity-config:update`` command is executed without using the ``--force`` option,
 only new values will be added, but no existing parameters will be updated.
@@ -783,7 +783,7 @@ Creating Extended Entities
 
    .. code-block:: bash
 
-       $ php app/console oro:migration:load --force
+       $ php bin/console oro:migration:load --force
 
    This command updates the database schema and generates the real implementation of the
    ``ExtendHotel`` class in the application cache as well.

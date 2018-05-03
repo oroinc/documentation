@@ -49,7 +49,7 @@ You need to create such file for each language that you will use.
 
    To simplify creation of the translation file, you can first create a workflow configuration, and then dump all related translation keys to the `workflows.{lang_code}.yml`. For example, if you create workflow 'my_workflow':
    
-   `app/console oro:workflow:translations:dump my_workflow --locale=en > <YourBundle>/Resources/translations/workflows.en.yml`
+   `bin/console oro:workflow:translations:dump my_workflow --locale=en > <YourBundle>/Resources/translations/workflows.en.yml`
   
 
 For more information, see `Workflow Translation Wizard <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md>`__ on GitHub.

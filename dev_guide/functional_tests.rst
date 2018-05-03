@@ -83,7 +83,7 @@ Next, install an application in the test environment:
 
 .. code-block:: bash
 
-    $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
+    $ bin/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
 
 .. versionadded:: 1.10
 
@@ -91,7 +91,7 @@ For platform versions prior to 1.10, you need to run user fixtures upload comman
 
 .. code-block:: bash
 
-     $ app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures ./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+     $ bin/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures ./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
 
 .. versionadded:: 1.9
 
@@ -99,7 +99,7 @@ For platform versions prior to 1.9 run command to update schema for test entitie
 
 .. code-block:: bash
 
-    $ app/console oro:test:schema:update --env test
+    $ bin/console oro:test:schema:update --env test
 
 After this, you'll be able to run your tests in a command line or IDE.
 
@@ -430,7 +430,7 @@ Initialization with authentication:
             // second array is service options
             // this example will create client with server options array('PHP_AUTH_USER' =>  'admin@example.com', 'PHP_AUTH_PW' => 'admin')
             // make sure you loaded fixture with test user
-            // app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures src/Oro/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+            // bin/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures src/Oro/src/Oro/Bundle/TestFrameworkBundle/Fixtures
             $this->initClient(array(), $this->generateBasicAuthHeader());
 
             // init client with custom username and password
