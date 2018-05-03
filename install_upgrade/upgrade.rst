@@ -1,13 +1,13 @@
 .. _upgrade:
 
-Upgrade OroCRM to the Newer Version
-===================================
+Upgrading to the Newer Version
+------------------------------
 
 .. begin
 
-To retrieve a new version and upgrade your OroCommerce instance, please execute the following steps:
+To retrieve source code of a new version and upgrade your OroCRM instance, please execute the following steps:
 
-1. ``cd`` to the OroCommerce root folder and switch the application to the maintenance mode.
+1. ``cd`` to the OroCRM root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
 
@@ -34,7 +34,7 @@ To retrieve a new version and upgrade your OroCommerce instance, please execute 
 
 4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary branch (`2.6`) or tag (`2.6.1`) in the application repository (e.g. ``https://github.com/oroinc/orocrm-application.git``) or download the latest OroCRM version from the `download section on the oroinc.com/orocrm <https://oroinc.com/orocrm/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`1.6`) or tag (`1.6.1`) in the application repository (e.g. ``https://github.com/oroinc/orocrm-application.git``) or download the latest OroCRM version from the `download section on the oroinc.com/orocrm <https://oroinc.com/orocrm/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 
@@ -43,8 +43,6 @@ To retrieve a new version and upgrade your OroCommerce instance, please execute 
         - your changes to "src/" folder are merged and it contains the custom files.
         - your changes to "composer.json" file are merged to the new file.
         - your changes to configuration files in "app/config/" folder are merged to the new files.
-
-      If you need to install any additional packages as dependencies, run `composer require <packageA name> command. List multiple packages separated by comma if necessary. For example, `composer require orocommerce`.
 
    .. code-block:: bash
 
@@ -111,4 +109,4 @@ To retrieve a new version and upgrade your OroCommerce instance, please execute 
 
     .. note::
 
-       If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted after the uprgade to flush cached bytecode from the previous installation.
+       If PHP bytecode cache tools (e.g. opcache) are used, PHP-FPM (or Apache web server) should be restarted after the upgrade to flush cached bytecode from the previous installation.

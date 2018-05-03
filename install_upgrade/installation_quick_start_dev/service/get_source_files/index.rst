@@ -1,7 +1,8 @@
 .. _platform--installation--source-files:
+.. _installation--get-files:
 
-Get the Source Code and Install Dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Get the Source Code
+~~~~~~~~~~~~~~~~~~~
 
 Obtain the application source code and install or update the required dependencies in one of the following ways:
 
@@ -14,18 +15,18 @@ These methods are detailed below.
 .. _platform-installation-github-clone:
 .. _clone-the-github-repository:
 
-Method 1: Clone the GitHub Repository and Install Dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Method 1: Clone the GitHub Repository
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /install_upgrade/get_files/get_source_files/install_git_clone.rst
+.. include:: /install_upgrade/installation_quick_start_dev/service/get_source_files/install_git_clone.rst
    :start-after: begin_install_git_clone
 
 .. _platform-installation-download-archive:
 
-Method 2: Download the Source Code Archive and Install Dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Method 2: Download the Source Code Archive
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /install_upgrade/get_files/get_source_files/install_archive.rst
+.. include:: /install_upgrade/installation_quick_start_dev/service/get_source_files/install_archive.rst
    :start-after: begin_install_archive
 
 .. toctree::

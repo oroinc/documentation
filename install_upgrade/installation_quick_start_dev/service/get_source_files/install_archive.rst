@@ -1,5 +1,3 @@
-:orphan:
-
 Method 2: Download the Source Code Archive and Install Dependencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -33,9 +31,13 @@ To prepare for installation:
        $ cd [$oro_installation_folder]
        $ composer install --prefer-dist --no-dev
 
-   .. warning:: Unlike when downloading from the GitHub repository, you are not prompted to enter the configuration parameter values. :ref:`Default values <book-installation-github-clone-configuration-params--default>` are used instead. If necessary, update :ref:`configuration parameters <book-installation-github-clone-configuration-params>` in the ``app/config/parameters.yml`` file after the command execution is complete.
+   .. warning:: Unlike when downloading from the GitHub repository, you are not prompted to enter the configuration parameter values. Default values are used instead. If necessary, update configuration parameters in the ``app/config/parameters.yml`` file after the command execution is complete.
 
 .. finish_installation_archive
 
-.. include:: /install_upgrade/installation/vars.rst
-   :start-after: begin_vars
+.. |main_app_in_this_topic| replace:: OroCRM
+
+.. |the_site| replace:: `oroinc.com/orocrm`_
+
+.. _`download section`: http://oroinc.com/orocrm/download
+.. _`oroinc.com/orocrm`: http://www.oroinc.com/orocrm/
