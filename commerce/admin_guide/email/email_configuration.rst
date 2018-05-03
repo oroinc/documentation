@@ -14,10 +14,12 @@ To reach the **Email Configuration** page:
 1. Navigate to **System > Configuration** in the main menu.
 
   .. image:: /admin_guide/img/admin_emails/system_config.jpg
-
-  .. image:: /admin_guide/img/admin_emails/email_config_1.jpg
+     :alt: Demonstrating a path to the system configuration menu
 
 2. In the panel to the left, click **System Configuration > General Setup > Email Configuration**.
+
+  .. image:: /admin_guide/img/admin_emails/email_config_1.jpg
+     :alt: Demonstrating a path to the email configuration menu
 
 General Settings
 ----------------
@@ -40,13 +42,13 @@ The following settings are available:
 +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /user_guide/system/img/configuration/threads_settings.png
-
+   :alt: Selecting email threads options in the email configuration
 
 .. image:: /admin_guide/img/admin_emails/threaded_email_activities.jpg
-
+   :alt: A sample of an email with the threaded option selected
 
 .. image:: /admin_guide/img/admin_emails/non_threaded_activities.jpg
-
+   :alt: A sample of an email with the non-threaded option selected
 
 .. csv-table::
   :header: "Field", "Description"
@@ -56,7 +58,7 @@ The following settings are available:
   
 
 .. image:: /admin_guide/img/admin_emails/reply.jpg
-
+   :alt: Selecting the default reply option
 
 .. csv-table::
   :header: "Field", "Description"
@@ -86,15 +88,16 @@ Accessing Personal Mailbox Configuration
 
 To configure a personal mailbox:
 
-1. Navigate to **My User>My Configuration** in the top right corner.
+1. Navigate to **My User > My Configuration** in the top right corner.
 2. Click **Email Configuration** in the **General Setup** tab on the
    left.
 3. This will load an email configuration page.
    
    .. image:: /admin_guide/img/admin_emails/my_user_my_config.jpg
+      :alt: Demonstrating a path to the user configuration menu
 
    .. image:: /admin_guide/img/admin_emails/personal_email_config.jpg
-
+      :alt: Demonstrating a path to the email configuration of the user
 
 Configuring IMAP/SMPT 
 ^^^^^^^^^^^^^^^^^^^^^
@@ -118,6 +121,7 @@ can see them in other email clients):
 As an example, we have synchronized a Gmail mailbox with OroCRM, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found `here <https://support.google.com/mail/answer/7126229?hl=en&rd=2&visit_id=1-636180891016092253-2149088408#ts=1665018%2C1665144>`_  `and here <https://support.google.com/accounts/answer/6010255?hl=en>`_
 
 .. image:: /admin_guide/img/admin_emails/personabox_imap_smtp.jpg
+   :alt: Email synchronization settings configuration on the user level
 
 -  Click **Save Settings**.
 
@@ -136,6 +140,7 @@ allows a user with the same Google account email address and OroCRM
 primary email address to log-in only once in the session.
 
 .. image:: /admin_guide/img/admin_emails/google_sign_on.jpg
+   :alt: Configuration of the google settings options
 
 See how to configure Google Sign-on integration in the :ref:`Google Integration guide <user-guide-google-single-sign-on>`.
 
@@ -151,18 +156,17 @@ letters of multiple users within organization.
 
 
 .. image:: /admin_guide/img/admin_emails/ms_exchange.png
-
+   :alt: Selecting an ms exchange server to be uploaded to orocrm in the email settings menu
 
 The integration set-up is described in the relevant :ref:`MS Exchange guide <admin-configuration-ms-exchange>`.
 
 Microsoft Outlook Integration
 -----------------------------
 
-Integration with Microsoft Outlook is available for the OroCRM
-Enterprise Edition only. 
-
+Integration with Microsoft Outlook is available for the OroCRM Enterprise Edition only.
 
 .. image:: /admin_guide/img/admin_emails/ms_outlook.jpg
+   :alt: Configuration of the ms outlook integration and synchronization settings
 
 
 The integration allows automatic synchronization of all the contacts. Tasks and calendar events available for the user can be synchronized with the specified Outlook account and vice versa. The integration set-up is described in the relevant :ref:`Outlook Integration guide <user-guide-synch-outlook>`.

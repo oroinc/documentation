@@ -3,13 +3,13 @@
 System Configuration for Website
 ================================
 
-In OroCommerce, you can configure available system settings on four :ref:`configuration levels <configuration--guide--config-levels>`: system, organization, website and user.
+In OroCommerce, you can configure available system settings on four :ref:`configuration levels <configuration--guide--config-levels>`: system, organization, website, and user.
 
 On website level, there are a number of options that you can configure specifically for the particular OroCommerce website, but which will not affect system-wide or organization-wide configuration.
 
 .. important:: Website-level configuration settings can fall back to global settings. For this, select the **Use System** check box next to the selected option. To go back to the default website-level settings, click **Reset** on the top right.
 
-Two categories of settings are available for configuration at user level:
+Two categories of settings are available for configuration at website level:
  
 * System Configuration (General Setup, Integrations)
 * Commerce (Sales) 

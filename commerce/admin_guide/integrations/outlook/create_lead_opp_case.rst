@@ -8,6 +8,7 @@ Create Leads, Opportunities and Cases from Outlook
 With the help of the OroCRM for Outlook add-in side panel, you can create leads, opportunities and cases from Outlook based on email data, or manually, and sync the data back to your Oro application. 
 
 .. image:: /admin_guide/img/outlook/CreateLOCOutlook.png
+   :alt: A path to the lead, opportunity, and case create button in the outlook application
 
 Create a Lead from Outlook
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -25,11 +26,13 @@ To create a lead, open the add-in side panel in Outlook:
 6. A pop-up window opens with a form to fill in. `The Create Lead <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads#user-guide-system-channel-entities-leads>`_ form has the same fields as the one in the Oro application.
 
    .. image:: /admin_guide/img/outlook/CreateLeadOutlook.png
+      :alt: A popup window that opens when clicking lead
 
 7. Fill in the required details, and click **Create Lead** on the bottom right of the pop-up window.
 8. Start sync between the Oro and Outlook applications to sync the new lead back to Oro.
    
    .. image:: /admin_guide/img/outlook/LeadCreatedOroSide.png
+      :alt: Illustration of a lead created in outlook and synced back to the oro application
 
 Create an Opportunity from Outlook
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,11 +50,13 @@ To create an opportunity, open the add-in side panel in Outlook:
 6. A pop-up window opens with a form to fill in. `The Create Opportunity <https://oroinc.com/orocrm/doc/current/user-guide-sales-tools/b2b-sales/opportunities/create#user-guide-opportunities-create>`_ form has the same fields as the one in the Oro application.
 
    .. image:: /admin_guide/img/outlook/CreateOpportunityOutlook.png
+      :alt: A popup window that opens when clicking opportunity
 
 7. Fill in the required details, and click **Create Opportunity** on the bottom right of the pop-up window.
 8. Start sync between the Oro and Outlook applications to sync the new opportunity back to Oro.
  
    .. image:: /admin_guide/img/outlook/OppCreatedInOro.png
+      :alt: Illustration of an opportunity created in outlook and synced back to the oro application
 
 Create a Case from Outlook
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,10 +74,12 @@ To create a case, open the add-in side panel in Outlook.
 6. A pop-up window opens with a form to fill in. `The Create Case <https://oroinc.com/orocrm/doc/current/user-guide/activities/cases/create-case#user-guide-activities-cases>`_ form has the same fields as the one in the Oro application.
 
    .. image:: /admin_guide/img/outlook/CreateCaseOutlook.png
+      :alt: A popup window that opens when clicking case
 
 7. Fill in the required details, and click **Create Case** on the bottom right of the pop-up window.
 8. Start sync between the Oro and Outlook applications to sync the new case back to Oro.
 
    .. image:: /admin_guide/img/outlook/CaseCreatedOro.png
+      :alt: Illustration of a case created in outlook and synced back to the oro application
 
 .. finish_create_lead_opp_case

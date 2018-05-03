@@ -17,6 +17,7 @@ To configure **MIME types** per organization:
 3. The following page opens:
 
    .. image:: /admin_guide/img/landing/upload_settings_2.png
+      :alt: Selecting mime types for a file or an image in the upload settings menu
 
 4. Clear the **Use Default** check box next to the option.
 

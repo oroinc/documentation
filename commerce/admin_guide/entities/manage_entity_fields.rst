@@ -6,7 +6,7 @@ Manage Entity Fields
 .. contents:: :local:
     :depth: 1
 
-In your Oro applications, you can manage the already existing and newly added entity fields. Specifically, you can edit and delete them, as well as import fields in bulk. To makes sure that the new or updated fields are successfully added to entities, you update the schema. 
+In your Oro applications, you can manage the already existing and newly added entity fields. Specifically, you can edit and delete them, as well as import fields in bulk. To make sure that the new or updated fields are successfully added to entities, you update the schema.
 
 Edit Custom Entity Fields
 -------------------------
@@ -20,6 +20,7 @@ To edit a custom entity field:
 3. On the page of the selected entity, click **Fields**. 
 
    .. image:: /admin_guide/img/entity_management/opportunity_entity_fields.png
+      :alt: A list of custom entity fields displayed in the field section
 
 4. In the **Fields** section, click the required field.
 5. Update the field, as described in the :ref:`Create Entity Fields <admin-guide-create-entity-fields>` topic. 
@@ -53,6 +54,7 @@ To simplify creation of entity fields, you can import a .csv file with a list of
 3. On the page of the entity, click **Import File** on the top right.
 
    .. image:: /admin_guide/img/entity_management/entity_import_dialog.png
+      :alt: A popup dialog that opens when clicking the import file button
 
 4. In the dialog that opens, you can:
 
@@ -74,10 +76,11 @@ Every time you create or delete :ref:`entity fields <doc-entity-fields>` with th
 
 .. important:: Schema update is not required for entity fields with the **Serialized field** storage type.
 
-1. Click **Update Schema** on the page of the page of the selected entity. 
+1. Click **Update Schema** on the page of the selected entity.
 2. In the **Schema update confirmation** dialog box, click **Yes, Proceed**. Keep in mind that schema update may take some time to finish.
 
     .. image:: /admin_guide/img/entity_management/update_schema.png
+       :alt: An interactive message that appears once the schema is updated
 
 **Related Topics**
 

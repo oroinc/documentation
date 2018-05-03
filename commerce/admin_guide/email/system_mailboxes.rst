@@ -7,13 +7,14 @@ System mailbox allows people who do not have access to the company mailbox addre
 You can create several system mailboxes. This may be, for example, a mailbox for support requests, for business 
 proposals, for order requests, etc. 
 
-You can define and modify the list of OroCRM users who have access to each of these mailboxes, automatically turn 
+You can define and modify the list of OroCommerce users who have access to each of these mailboxes, automatically turn
 letters into cases or leads, and set up auto-responses.
 
 Create System Mailbox
 ---------------------
 
 .. image:: /user_guide/system/img/system_mailbox/new_mb.png
+   :alt: System mailbox configuration options
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Click **General Setup > Email Configuration** in the menu to the left.
@@ -52,7 +53,8 @@ In the example below, synchronization has been done for a .gmail mailbox. The IN
     `Allow access for less secure apps box <https://support.google.com/accounts/answer/6010255?hl=en>`_
 
 
-.. image:: /user_guide/system/img/system_mailbox/synchronize_mb.png 
+.. image:: /user_guide/system/img/system_mailbox/synchronize_mb.png
+   :alt: An example of synchronization for a gmail mailbox
 
 	
 Email Processing
@@ -92,7 +94,8 @@ To create a rule, click the **Add Rule**.
 
 The Autoresponse Rule form will appear.
 
-.. image:: /user_guide/system/img/system_mailbox/ar_rule.png 
+.. image:: /user_guide/system/img/system_mailbox/ar_rule.png
+   :alt: A sample of an autoresponse rule form
 
 Define the following settings for the rule:
 
@@ -129,7 +132,7 @@ Click Add button and the rule will be saved.
 All the rules of a mailbox can be viewed and processed from the Autoresponse Rules grid in the corresponding section of the System Mailbox record page.
 
 .. image:: /user_guide/system/img/system_mailbox/ar_rule.png   
-
+   :alt: A sample of an autoresponse rule form
   
 Final Steps
 ^^^^^^^^^^^ 
@@ -140,4 +143,5 @@ All the system mailboxes can be viewed and processed from the System Mailboxes g
 
 
 .. image:: /user_guide/system/img/system_mailbox/system_mb_grid.png
+   :alt: A list of system mailboxes with available options to edit and delete
   

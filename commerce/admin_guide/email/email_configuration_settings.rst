@@ -8,10 +8,13 @@ In **System > Configuration > System Configuration > General Setup > Email Confi
 
 
 .. image:: /user_guide/system/img/configuration/email_1.png
+   :alt: Email configuration options overview, part 1
 
 .. image:: /user_guide/system/img/configuration/email_2.png
+   :alt: Email configuration options overview, part 2
 
 .. image:: /user_guide/system/img/configuration/email_3.png
+   :alt: Email configuration options overview, part 3
 
 
 Complete information on email configuration is available in the :ref:`Email Configuration topic <user-guide-email-admin>`.
@@ -49,13 +52,13 @@ Section fields **Display Email Conversations As** and **Display Emails In Activi
 
 
 .. image:: /user_guide/system/img/configuration/threads_settings.png
-
+   :alt: Selecting email threads options in the email configuration
 
 .. image:: /user_guide/system/img/configuration/threaded_email_activities.jpg
-
+   :alt: A sample of an email with the threaded option selected
 
 .. image:: /user_guide/system/img/configuration/non_threaded_activities.jpg
-
+   :alt: A sample of an email with the non-threaded option selected
 
 Reply
 -----
@@ -91,7 +94,7 @@ SMTP protocol allows to send email messages.
   "**Username**", "Enter your email address."
   "**Password**", "Enter the password for your email address."
 
-Once you have completed filling in the form, click :guilabel:`Check SMTP Connection`.
+Once you have completed filling in the form, click **Check SMTP Connection**.
     
 HTML in templates
 -----------------

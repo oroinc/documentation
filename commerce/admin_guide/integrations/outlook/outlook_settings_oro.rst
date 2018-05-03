@@ -13,6 +13,7 @@ Once you downloaded and installed the add-in, you can configure MS Outlook setti
  * **Synchronization settings**
 
 .. image:: /admin_guide/img/outlook/MSOutlookSettingsOroSide.gif
+   :alt: The configuration settings of ms outlook in the oro management console
 
 
 .. note:: MS Outlook settings can be configured globally, per organization, and per user, with the exception of MS Outlook add-in settings, which can only be managed globally. 
@@ -30,6 +31,7 @@ Configure MS Outlook Add-in Layout Settings
 When the add-in is installed, a side bar panel appears on the right side of the Outlook window which displays the actions that can be performed in Outlook and synchronized back to Oro (e.g. create a lead). Depending on the synchronization settings set up between the applications, you can create leads, opportunities, and cases from within MS Outlook using the side bar, and then sync them back to Oro. 
 
  .. image:: /admin_guide/img/outlook/SideBarPanelWidget.png
+    :alt: A side bar panel displayed in the outlook application that enables creating leads, opportunities, and cases
 
 The layout of this sidebar, as well as the lead, opportunity, and case dialogs, can be changed by amending the default XAML code (or providing a new one) in the MS Outlook Add-in Settings on the Oro side.
 
@@ -44,6 +46,7 @@ To change the layouts:
 5. Click **Save Settings**.
 
    .. image:: /admin_guide/img/outlook/add_in_layout.png
+      :alt: The configuration settings of ms outlook add-in in the oro management console
 
 .. note:: For the changes to take effect, remember either to start sync manually, or wait until automatic sync finishes.
 

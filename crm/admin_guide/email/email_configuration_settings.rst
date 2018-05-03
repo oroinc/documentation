@@ -8,29 +8,21 @@ Email Configuration Settings
 .. contents:: :local:
     :depth: 2
 
-In **System>Configuration>System Configuration>General Setup>Email Configuration**, you can define options, applied to all the emails generated within the instance.
-
-|
+In **System > Configuration > System Configuration > General Setup > Email Configuration**, you can define options, applied to all the emails generated within the instance.
 
 .. image:: ../img/configuration/email_1.png
-
-|
-
-|
+   :alt: Email configuration options overview, part 1
 
 .. image:: ../img/configuration/email_2.png
-
-|
-
-|
+   :alt: Email configuration options overview, part 2
 
 .. image:: ../img/configuration/email_3.png
+   :alt: Email configuration options overview, part 3
 
-|
 
 Complete information on email configuration is available in the :ref:`Email Configuration guide <user-guide-email-admin>`.
 
-The following settings are available within Email Configuration tab:
+The following settings are available within the Email Configuration tab:
 
 Email Settings
 --------------
@@ -61,24 +53,14 @@ Email Threads
 
 Section fields **Display Email Conversations As** and **Display Emails In Activities As** define if the emails and replies must be displayed separately or in a thread.
 
-
-|
-
 .. image:: ../img/configuration/threads_settings.png
-
-
-|
+   :alt: Selecting email threads options in the email configuration
 
 .. image:: ../img/configuration/threaded_email_activities.jpg
-
-|
-
-|
+   :alt: A sample of an email with the threaded option selected
 
 .. image:: ../img/configuration/non_threaded_activities.jpg
-
-|
-
+   :alt: A sample of an email with the non-threaded option selected
 
 
 Reply
@@ -115,7 +97,7 @@ SMTP protocol allows to send email messages.
   "**Username**", "Enter your email address."
   "**Password**", "Enter the password for your email address."
 
-Once you have completed filling in the form, click :guilabel:`Check SMTP Connection`.
+Once you have completed filling in the form, click **Check SMTP Connection**.
     
 HTML in templates
 -----------------

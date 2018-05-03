@@ -3,7 +3,7 @@
 Email Configuration
 ===================
 
-In this section you will learn to set up general email settings, IMAP/SMTP, system mailbox, notification rules, integrations between MS Exchange, MS Outlook, Google and your application.
+In this section you will learn how to set up general email settings, IMAP/SMTP, system mailbox, notification rules, integrations between MS Exchange, MS Outlook, Google and your application.
 
 
 .. toctree::

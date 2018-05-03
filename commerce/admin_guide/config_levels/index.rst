@@ -10,8 +10,8 @@ Hierarchy
 
 In Oro applications, you can manage all settings on multiple configuration layers:
 
-.. image:: /admin_guide/img/landing/levels_small.png
-   :width: 400px
+.. image:: /admin_guide/img/landing/Levels.png
+   :alt: Configuration layers
 
 Based on the level where configuration has taken place, settings can fall back to other levels following the pattern below:
 
@@ -19,8 +19,9 @@ Based on the level where configuration has taken place, settings can fall back t
 * :ref:`Website settings <doc-website-configuration>` can fall back to the :ref:`system settings <doc-system-configuration>`.
 * :ref:`Organization settings <doc-organization-configuration>` can fall back to the :ref:`system settings <doc-system-configuration>`.
 
-.. image:: /admin_guide/img/landing/configuration_levels_commerce.png
-   :width: 400px
+
+.. image:: /admin_guide/img/landing/ConfigLevels.png
+   :alt: A fallback pattern of the configuration levels
 
 However:
 
@@ -32,7 +33,7 @@ However:
 Graphics
 ~~~~~~~~
 
-By default, all configuration settings are available globally. Whenever you see the |IcOrganizationLevel| organization, |IcWebsiteLevel| website or |IcUserLevel| user icons, this means that the setting is also available on the organization, website or user level respectively.  
+By default, all configuration settings are available globally. Whenever you see the |IcOrganizationLevel| organization, |IcWebsiteLevel| website or |IcUserLevel| user icons, this means that the setting is also available on the organization, website, or user level respectively.
 
 .. container:: hidden
 

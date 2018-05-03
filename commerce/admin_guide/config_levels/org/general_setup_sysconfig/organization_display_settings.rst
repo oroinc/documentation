@@ -13,6 +13,7 @@ In this section you can define a number of display-related options to be applied
 
 .. image:: /admin_guide/img/configuration/organization_display_settings.png
    :width: 500
+   :alt: Settings menu configuration for organization
 
 To open display settings for organization:
 
@@ -34,9 +35,10 @@ To open display settings for organization:
 Update Display Settings
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-In the Display section, you can configure the following display options:
+In the Display Settings section, you can configure the following display options:
 
 .. image:: /admin_guide/img/configuration/organization_display_settings.png
+   :alt: Settings menu configuration for organization
 
 **Map Settings**
 
@@ -62,6 +64,7 @@ In the Display section, you can configure the following display options:
 | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
 |                       |                                                                                                           |
 |                       | .. image:: /admin_guide/img/user_management/user_configuration_wysiwyg.png                                |
+|                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 
@@ -84,9 +87,10 @@ In the Display section, you can configure the following display options:
 +===========================+================================================================================================================+
 | Items Per Page By Default | Select how many records will appear on one page of record grids.                                               |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
-| Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
+| Record Pagination         | Select this check box to enable user navigation to the previous or next record list from a record view page.   |
 |                           |                                                                                                                |
 |                           | .. image:: /admin_guide/img/user_management/user_configuration_pagination.png                                  |
+|                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination Limit   | Type the maximum number of records that the user can navigate from a record view page.                         |
@@ -128,6 +132,7 @@ To change any color in the set:
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /admin_guide/img/user_management/user_configuration_showsql.png
+   :alt: A sample of the enabled display sql field
 
 .. finish
 
