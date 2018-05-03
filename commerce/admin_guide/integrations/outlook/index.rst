@@ -28,6 +28,7 @@ To configure the integration between your Oro Enterprise application and MS Outl
 
 
 .. image:: /admin_guide/img/outlook/outlook_integration_prerequisites.png
+   :alt: The ms outlook integration prerequisites displayed in 6 steps
 
 
 Check Hardware and System Requirements
@@ -47,10 +48,12 @@ To download the add-in:
 1. Click **My User** below your username on the top right of the application.
    
    .. image:: /admin_guide/img/outlook/my_user.png
+      :alt: My user menu displayed on the top right of the application
 
 2. Next to the **MS Outlook Add-in** option, click the link to download the file.
 
    .. image:: /admin_guide/img/outlook/add_in_link.png
+      :alt: The link for downloading the file displayed next to the ms outlook add-in option
 
    .. note:: At this point it is also recommended to generate an API key by clicking **Generate Key** next to the API Key option. Once generated, copy the key as it will later be required during add-in installation.
    

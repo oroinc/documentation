@@ -16,6 +16,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 2. In the **Import and Export** section, specify the following information:
 
    .. image:: ../img/entity_management/entity_field_import_and_export.png
+      :alt: Basic settings of the import and export section available when creating a new entity field
 
    * **Column Name** --- Type a name that will be used for identifying the field in the .csv file with entity records. If left empty, the **Label** value will be used for identifying the field when you export entity records.
    * **Column Position** --- Type a number that corresponds to the position of this field in the .csv file that contains entity records.
@@ -30,6 +31,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
 3. In the **Other** section, provide the following information:
 
    .. image:: ../img/entity_management/entity_field_other.png
+      :alt: The general settings of the other section available when creating a new entity field
 
    * **Available in Email Templates** --- If this option is set to *Yes*, values of the field can be used for creating email patterns.
    * **Contact Information** --- Possible values are:    

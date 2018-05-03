@@ -16,15 +16,18 @@ To create such field:
 2. Using filters, find the **Customer** entity, and click on it once to open its page.
 
    .. image:: /admin_guide/img/entity_management/customer_create_field_example.png
+      :alt: Navigating to the customer entity using filters
 
 3. On the page of the Customer entity, click **Create Field**.
 
    .. image:: /admin_guide/img/entity_management/customer_page_create_field_button.png
+      :alt: View the create field button on the customer entity page
 
 4. For **Storage Type**, select *Table Column*.
 5. For **Type**, select the *One to many* relation.
 
    .. image:: /admin_guide/img/entity_management/create_field_basic_properties.png
+      :alt: Basic properties available when creating a new field for an entity
 
 6. For **Target Entity**, select *Contact*.
 7. For **Related Entity Data Fields**, select *Description*, *Gender*, and *Job Title*.
@@ -40,14 +43,17 @@ To check whether the field has been added to the Customer entity:
 3. In the **Additional** section, click **+Add** next to *Referral*.
 
    .. image:: /admin_guide/img/entity_management/customer_page_referral_entity.png
+      :alt: View the +add button in the additional section
 
    In the dialog that opens, enable the check box next to the required contact, and click **Select**.
 
    .. image:: /admin_guide/img/entity_management/customer_page_new_entity_added.png
+      :alt: Selecting contacts from the list to be added to the customer entity
 
    Once selected, the contact is added to the customer record.
    
-   .. image:: /admin_guide/img/entity_management/customer_new_entity_added_2.png  
+   .. image:: /admin_guide/img/entity_management/customer_new_entity_added_2.png
+      :alt: View the contact added to the customer record
 
 Create an entity field with a many to one relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -65,6 +71,7 @@ To create such field for the opportunity entity:
 7. For **Target Field**, select *Name*.
   
    .. image:: /admin_guide/img/entity_management/example_new_field_bu_to_opportunity.png
+      :alt: Settings available in the general information section when creating a new field for an entity
 
 6. Click **Save**.
 7. On the page that opens, click **Update Schema** on the top right.
@@ -76,6 +83,7 @@ To check whether the field has been added to the Opportunity entity:
 3. In the **Additional** section, select the required business unit from the list.
 
    .. image:: /admin_guide/img/entity_management/example_new_field_bu_on_opportunity_page.png
+      :alt: Select the required business unit from the list in the additional section
 
 **Related Topics**
 

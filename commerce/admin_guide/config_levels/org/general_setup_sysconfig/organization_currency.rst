@@ -28,6 +28,7 @@ Currency Settings
 The following sections are available within the **Currency** tab:
 
 .. image:: /admin_guide/img/configuration/general/currency.png
+   :alt: Currency configuration for organization
 
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Name**               | Description                                                                                                 |
@@ -55,16 +56,19 @@ The following sections are available within the **Currency** tab:
 |                        | The order subtotal when the display format is set to *Currency Code*:                                       |
 |                        |                                                                                                             |
 |                        |      .. image:: /admin_guide/img/configuration/general/currency_code.png                                    |
+|                        |         :alt: Currency code sample                                                                          |
 |                        |                                                                                                             |
 |                        |      The order subtotal when the display format is set to *Currency Symbol*:                                |
 |                        |                                                                                                             |
 |                        |      .. image:: /admin_guide/img/configuration/general/currency_symbol.png                                  |
-|                        |                                                                                                             |
+|                        |         :alt: Currency symbol sample                                                                        |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 
 .. image::  /admin_guide/img/multi_currency/allowed_currencies_dropdown.png
+   :alt: Selecting allowed currencies in the currency settings
 
 .. image::  /admin_guide/img/multi_currency/display_format.png
+   :alt: Selecting display format in the currency settings
 
 .. finish_org_currency
 

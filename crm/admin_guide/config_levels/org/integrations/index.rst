@@ -3,7 +3,7 @@
 Integrations Configuration for Organization
 ===========================================
 
-This section contains an integration options available in the system configuration for the organization.
+This section contains integration options available in the system configuration for the organization.
 
 Here you can enable and setup the integration between your organization's Oro application and the following systems:
 
@@ -53,6 +53,7 @@ In the MS Outlook settings section, you can configure the following integration 
 .. note:: Integration between MS Outlook and your Oro application is available only for the Enterprise Edition of your Oro application. For more information about the synchronization with Outlook, see the :ref:`Synchronization with Outlook <user-guide-synch-outlook>` guide.
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_outlook.png
+   :alt: Integration and synchronization settings options displayed in the ms outlook menu
 
 **Integration settings**
 

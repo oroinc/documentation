@@ -3,9 +3,9 @@
 System Configuration for User
 =============================
 
-In OroCRM, you can configure available system settings on four configuration levels: system, organization, website and user.
+In OroCRM, you can configure available system settings on four configuration levels: system, organization, website, and user.
 
-On user level, there are a number of options that you can configure specifically for your application instance, but which will not affect system-wide or organization-wide configuration. Here, for instance, you can update the contact information of the primary assigned sales representative, or change your email configuration settings.
+On user level, there is a number of options that you can configure specifically for your application instance, but which will not affect system-wide or organization-wide configuration. Here, for instance, you can update the contact information of the primary assigned sales representative, or change your email configuration settings.
 
 .. important:: User-level configuration settings can fall back to organization settings. For this, select the **Use Organization** check box next to the selected option. To go back to the default user-level settings, click **Reset** on the top right.
 
@@ -29,6 +29,7 @@ Update Localization Options
 In the Localization section, you can configure the following localization and map related options:
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_localization.png
+   :alt: Localization options available on the user level
 
 **Localization options**
 
@@ -62,6 +63,7 @@ Update Language Settings
 In the Language section, you can select the default language for the interface:
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_language.png
+   :alt: Selecting default languages in the language settings menu on the user level
 
 **Languages**
 
@@ -81,6 +83,7 @@ Update Display Settings
 In the Display section, you can configure the following display options:
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_display.png
+   :alt: Settings menu options available on the user level
 
 **User bar**
 
@@ -90,6 +93,7 @@ In the Display section, you can configure the following display options:
 | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                       |
 |                    |                                                                                                                                    |
 |                    | .. image:: /admin_guide/img/user_management/user_configuration_showemailsuserbar.png                                               |
+|                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
 |                    |                                                                                                                                    |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -101,6 +105,7 @@ In the Display section, you can configure the following display options:
 | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
 |                       |                                                                                                           |
 |                       | .. image:: /admin_guide/img/user_management/user_configuration_wysiwyg.png                                |
+|                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
 
@@ -117,6 +122,7 @@ In the Display section, you can configure the following display options:
 | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
 |                           |                                                                                                                |
 |                           | .. image:: /admin_guide/img/user_management/user_configuration_pagination.png                                  |
+|                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination Limit   | Type the maximum number of records that the user can navigate from a record view page.                         |
@@ -162,6 +168,7 @@ In the Display section, you can configure the following display options:
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 .. image:: /admin_guide/img/user_management/user_configuration_showsql.png
+   :alt: A sample of the enabled display SQL field
 
 .. _doc-my-user-configuration-email:
 
@@ -171,6 +178,7 @@ Update Email Configuration Options
 In the Email Configuration section, you can configure the following email related options:
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_email.png
+   :alt: Email configuration options available on the user level
 
 **Signature**
 
@@ -229,6 +237,7 @@ In the Email Configuration section, you can configure the following email relate
 | Default Reply Button | Select which button will be default for replying to emails: **Reply** or **Reply All**. Other button will continue be available in the **Reply** menu, it will just not be on the top of the list. |
 |                      |                                                                                                                                                                                                    |
 |                      | .. image:: /admin_guide/img/user_management/reply_selector.png                                                                                                                                     |
+|                      |    :alt: Selecting the default button for replying to emails                                                                                                                                       |
 |                      |                                                                                                                                                                                                    |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -246,6 +255,7 @@ In the MS Outlook settings section, you can configure the following integration 
 .. note:: Integration between MS Outlook and your Oro application is available only for the Enterprise Edition of your Oro application. For more information about the synchronization with Outlook, see the :ref:`Synchronization with Outlook <user-guide-synch-outlook>` guide.
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_outlook.png
+   :alt: Integration and synchronization settings options displayed in the ms outlook menu on the user level
 
 **Integration settings**
 
@@ -282,6 +292,7 @@ In Oro applications, you can configure the contact information visible to the cu
 In the **Customer Visible Contact Info** list in your user configuration settings, you can see the options that are enabled and selected in **Available User Options** on the system, website or organization levels.
 
 .. image:: /user_guide/img/getting_started/my_oro/sales_rep_info.png
+   :alt: Selecting customer visible contact info in the contacts menu on the user configuration level
 
 More information on how to configure the contact information visible to the customers of your store, please refer to the `Configure Sales Representative Information <https://oroinc.com/orocommerce/doc/current/configuration-guide/landing-commerce/sales/sales-info>`_ topic of the OroCommerce Configuration guide and the `contact information configuration sample <https://oroinc.com/orocommerce/doc/current/configuration-guide/landing-commerce/sales/sales-info#configuration-sample>`_.
 

@@ -6,7 +6,7 @@ System Mailbox Settings
 .. contents:: :local:
     :depth: 2
 
-Configuration of system mailboxes
+Configuration of System Mailboxes
 ---------------------------------
 
 .. begin
@@ -26,6 +26,7 @@ To create a system mailbox to process business information requests:
 
 
 .. image:: /admin_guide/img/admin_emails/add_mailbox.jpg
+   :alt: Adding a new mailbox in the email configuration
 
 
 General
@@ -35,12 +36,13 @@ General
 The **General section** defines the basic settings of the mailbox
 created:
 
--  Define a name of your Mailbox in the **Mailbox Label** field.
+-  Define a name of your mailbox in the **Mailbox Label** field.
 
 -  Type in your email address.
 
 
 .. image:: /admin_guide/img/admin_emails/create_mailbox.jpg
+   :alt: Creating a new mailbox in the email configuration
 
 
 
@@ -67,7 +69,7 @@ In the **Synchronization** section, configure your IMAP/SMTP connection:
 
 
 .. image:: /admin_guide/img/admin_emails/imap_smtp.jpg
-
+   :alt: Synchronization configuration options in the email configuration
 
 
 Email Processing
@@ -97,6 +99,7 @@ business's unique requirements.
 
 
 .. image:: /admin_guide/img/admin_emails/email_processing.jpg
+   :alt: Selecting an action for processing the emails received in the mailbox
 
 
 As an example, let us select the **Convert To Lead** option:
@@ -106,18 +109,15 @@ As an example, let us select the **Convert To Lead** option:
 
 
 .. image:: /admin_guide/img/admin_emails/email_processing_2.jpg
+   :alt: Selecting an owner and a source for processing the emails when the action is set to `convert to lead`
 
-
-
-.. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System>Entities>Entity Management>Lead>Source**.
-
-
+.. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System > Entities > Entity Management > Lead > Source**.
 
 .. image:: /admin_guide/img/admin_emails/lead_source.jpg
-
-|
+   :alt: A list of the entity management fields
 
 .. image:: /admin_guide/img/admin_emails/lead_source_field.jpg
+   :alt: Creating a source entity from the entity management menu
 
 
 
@@ -130,6 +130,7 @@ users. All the users with defined roles and all the specifically defined
 users will have access to this mailbox.
 
 .. image:: /admin_guide/img/admin_emails/access_management.jpg
+   :alt: Selecting the users who will have access to the system mailbox
 
 
 Autoresponse Rules
@@ -139,14 +140,13 @@ In the **Autoresponse Rules** section you can generate one or several
 auto-response rules. These rules will determine which template is sent
 to the sender of the email.
 
--  Click **Add Rule** to add a new Autoresponse rule.
+-  Click **Add Rule** to add a new autoresponse rule.
 
--  An Add Autoresponse Rule form will open.
-
+-  An Add Autoresponse Rule form opens.
 
 
 .. image:: /admin_guide/img/admin_emails/autoresponse.jpg
-
+   :alt: A sample of an autoresponse rule form
 
 -  Define the following settings:
 

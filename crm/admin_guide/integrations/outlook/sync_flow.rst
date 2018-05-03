@@ -33,6 +33,7 @@ Sync Records from OroCRM to Outlook
 Synchronization is run in the same way for records of activities, tasks and calendar events: 
 
  .. image:: /admin_guide/img/outlook/outlook_from_oro_diag.png
+    :alt: A diagram that explains how to sync records from orocrm to outlook
 
 All the records processed in OroCRM since the latest synchronization date and available to the user are checked:
 
@@ -71,6 +72,7 @@ Sync Records from Outlook to OroCRM
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /admin_guide/img/outlook/oro_from_outlook_diag.png
+   :alt: A diagram that explains how to sync records from outlook to orocrm
 
 All the records processed in Outlook since the latest synchronization date and available to the user are loaded:
 
