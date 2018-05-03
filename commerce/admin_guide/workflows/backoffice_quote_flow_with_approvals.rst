@@ -207,8 +207,8 @@ The following table describes which options are available for each of the status
 .. _doc--workflows--backoffice-quote-flow-with-approvals--follow:
 
 
-Example
--------
+Sample Flow
+-----------
 
 .. quote_in_use
 

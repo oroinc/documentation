@@ -14,7 +14,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
 
-             <p>Learn how to set up product and category visibility restrictions, customer user registration options, and manage contact requests.</p>
+             <p>Learn how to set up product and category visibility restrictions, customer user registration options, manage contact requests and enable consents.</p>
           </div>
       </div>
       <div class="guideline__item">
@@ -23,6 +23,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                       <li><a class="reference internal" href="customers/customers/visibility#sys-config-configuration-commerce-customers-visibility"><span class="std std-ref">Visibility</span></a></li>
                       <li><a class="reference internal" href="customers/customers/global_customer_users#sys-config-configuration-commerce-customers-customer-users"><span class="std std-ref">Customer Users</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                       <li>Contact Requests <i class="fa fa-building-o fa-lg" aria-hidden="true"></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
+                      <li><a class="reference internal" href="customer/consents#configuration-guide-commerce-configuration-consents"><span class="std std-ref">Consents</span></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
                     </ul>
           </div>
       </div>

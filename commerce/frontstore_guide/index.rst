@@ -104,6 +104,14 @@ In the following topics, you can find answers to the next questions:
 * :ref:`How can I place an order if I am not registered <frontstore-guide--orders-quick-order>`?
 * :ref:`How can I create and manage shopping lists as a guest user <frontstore-guide--shopping-lists-guest>`?
 
+Review and Accept Consents
+--------------------------
+
+* :ref:`What are consents and how do I use them <frontstore-guide--profile-consents>`?
+* :ref:`Where can I accept the required consents <frontstore-guide--profile-consents--accept>`? 
+* :ref:`Can I revoke my consent to process personal information <frontstore-guide--profile-consents--revoke>`?
+
+.. comment: :ref:`Can I register without accepting terms and conditions <frontstore-guide--orders-checkout--consents>`?
 
 **Sample Storefront**
 

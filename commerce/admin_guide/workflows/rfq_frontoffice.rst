@@ -97,6 +97,9 @@ The RFQ Submission Flow consists of the following steps and transitions:
 
 .. _system--workflows--rfq-frontoffice-workflow-rfq-illustration:
 
+Sample Flow
+-----------
+
 As an illustration, let us go through a sample flow to see RFQ Submission Flow in action:
 
 1. A customer user creates an RFQ in the storefront. Once the RFQ is sent, its customer status is marked as Submitted.

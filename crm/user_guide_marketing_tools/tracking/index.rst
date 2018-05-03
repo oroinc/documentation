@@ -26,17 +26,17 @@ Create a Tracking Website and Generate a Tracking Code
 #. In the **General Section**, define the following settings:
      
    .. csv-table::
-      :header: "**Field**","**Description**"
-      :widths: 10, 30
+     :header: "**Field**","**Description**"
+     :widths: 10, 30
 
-      "**Name***","Name used to refer to the record in the system"
-      "**Identifier***","Unique code of the website used to generate its tracking"
-      "**URL***","Url of the website to be tracked"
-      "**Owner***","Limits the list of Users that can manage the tracking website record to the users,  whose
+     "**Name***","Name used to refer to the record in the system"
+     "**Identifier***","Unique code of the website used to generate its tracking"
+     "**URL***","Url of the website to be tracked"
+     "**Owner***","Limits the list of Users that can manage the tracking website record to the users,  whose
      roles allow managing tracking-websites of the owner (e.g. the owner,
      members of the same business unit, system administrator, etc.)."
-      "**Description**","Optional."
-      "**Channel**","Optional. Select one of the channels from the list. This connects the tracking record with a channel in the system.
+     "**Description**","Optional."
+     "**Channel**","Optional. Select one of the channels from the list. This connects the tracking record with a channel in the system.
      If this is done, you will be able to bind events registered by the tracking engine and other application data like orders, shopping carts, customer profiles, etc. This connection can be further utilized in reports and segments.
 
       .. image:: /img/marketing/tracking_general.png

@@ -100,10 +100,13 @@ In the Products section:
 
 .. image:: /frontstore_guide/img/rfq/RFQProducts.png
 
-.. note:: If you are creating an RFQ for the products in the shopping list, the Products section will be pre-defined. There will be options to edit, delete the products, or add another product to the list.
+.. note:: If you are creating an RFQ for the products in the shopping list, the Products section is be pre-defined. There are options to edit, delete the products, or add another product to the list.
 
     .. image:: /frontstore_guide/img/rfq/RFQFromShoppingList.png
 
+In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
+
+.. image:: /frontstore_guide/img/rfq/rfq_data_protection.png
 
 RFQ View Page 
 ^^^^^^^^^^^^^
@@ -190,6 +193,10 @@ To create a guest RFQ from the shopping list:
 
    .. image:: /frontstore_guide/img/rfq/GuestRFQForm.png
 
+   In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
+
+.. image:: /frontstore_guide/img/rfq/rfq_data_protection.png
+
 5. Click **Submit Request** to submit your RFQ.
 
    You should receive a confirmation email with your request details.
@@ -234,9 +241,12 @@ To create an RFQ from the quick order form:
    * Delete the item by clicking |IcDelete| at the end of the product row.
    * Add another product by clicking **+Add Another Product**
 
-
    .. image:: /frontstore_guide/img/rfq/GuestRFQForm.png
 
+   In the Data Protection section, you may be required to accept mandatory consents to process your personal information. If the consent is not accepted, you cannot submit the RFQ.
+
+   .. image:: /frontstore_guide/img/orders/data_protection_quick_order_form.png
+    
 5. Click **Submit Request** to submit your RFQ.
 
    You should receive a confirmation email with your request details.

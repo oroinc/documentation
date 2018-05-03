@@ -32,4 +32,8 @@ First things first, you need to create a new account to be able to work with the
 
 3. Once the details have been provided, click **Create an Account**. A sales representative may contact you shortly to proceed with registration. Check your email to complete registration.
 
+You may need to read and accept :ref:`mandatory (and/or optional) agreements <frontstore-guide--profile-consents>` to process your personal data before you are allowed to register. Such consents are marked with a red asterisk. Select the check box next to the agreement or open the agreement link to view the full text of the agreement. Click **Accept** to confirm that you have read, understood and accept its conditions. You do not have to accept optional consents; these are not marked with a red asterisk. 
+
+.. image:: /frontstore_guide/img/profile/registration_consent.png
+
 .. finish

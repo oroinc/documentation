@@ -11,13 +11,28 @@ Overview
 ~~~~~~~~
 
 .. include:: /user_guide/overview/customers/customer_users_overview.rst
-  :start-after: begin
+   :start-after: begin
 
 .. image:: /user_guide/img/customers/customer_users/CustomerUsers.png
    :class: with-border
 
 .. include:: /user_guide/customers/customer_users/create.rst
-  :end-before: stop
+   :end-before: stop
+
+View Accepted Consents
+~~~~~~~~~~~~~~~~~~~~~~
+
+When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**. 
+
+ .. image:: /admin_guide/img/workflows/checkout_with_consents/consents_section_customer_user_page.png
+
+You can read more information on consent management in the following related topics:
+
+* :ref:`Configure Consents <configuration--guide--commerce--configuration--consents>`
+* :ref:`Create Consents <user-guide--consents--create>`
+* :ref:`Add a Consent Landing Page to a Web Catalog <user-guide--consents--add>`
+* :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
+* :ref:`Revoke Consents <user-guide-activities-requests>`
 
 Export
 ~~~~~~
@@ -35,7 +50,5 @@ You can import the bulk details of updated or processed customer user informatio
 
 .. toctree::
    :maxdepth: 1
-
-   viewlist
 
    create

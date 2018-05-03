@@ -333,6 +333,10 @@ Images
 
    <i class="fa fa-sort-desc fa-lg" aria-hidden="true"></i>
 
+.. |ConsentDeclined| raw:: html
+
+   <i class="fa fa-minus-circle fa-lg" aria-hidden="true"></i>
+
 .. |IcMinus| raw:: html
 
    <i class="fa fa-minus fa-lg" aria-hidden="true"></i>

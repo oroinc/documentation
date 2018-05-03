@@ -7,6 +7,7 @@ Learn how to set up product and category visibility restrictions, customer user 
 
 * :ref:`Visibility <sys-config--configuration--commerce--customers--visibility>`
 * :ref:`Customer Users <sys-config--configuration--commerce--customers--customer-users>`
+* :ref:`Consents <configuration--guide--commerce--configuration--consents>`
 
 
 .. toctree::
@@ -16,3 +17,4 @@ Learn how to set up product and category visibility restrictions, customer user 
 
    contact_us/index
    customers/index
+   consents/index
