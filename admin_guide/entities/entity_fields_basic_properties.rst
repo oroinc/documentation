@@ -8,6 +8,7 @@ Basic Entity Field Properties
 The first step of creating a new entity field is providing information on its basic properties in the **General Information** section:
 
 .. image:: ../img/entity_management/new_entity_field.png
+   :alt: Basic properties available when creating a new field for an entity
 
 1. **Field Name** --- Provide a name of the field that will be used to refer to it in the system. This name must be unique within an entity and it can be neither a `reserved SQL word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_ nor a `reserved PHP word <http://php.net/manual/en/reserved.keywords.php>`_.
 

@@ -60,9 +60,10 @@ When you create or edit a notification rule, specify the following information i
   "**Template**","Select the template for which the rule will be created."
 
 .. image:: ../img/notification/notification_rule_general1.png
-
+   :alt: A general notification rule creation form
 
 .. image:: ../img/notification/notification_rule_general2.png
+   :alt: A notification rule creation form with workflow transition selected for the event name
 
 
 .. _doc--notification-rules--recipient-list:
@@ -107,6 +108,7 @@ Select check boxes in front of the required associations to send notification em
 
 
 .. image:: ../img/notification/notification_rule_recipient.png
+   :alt: Selecting recipients for the email notification when editing notification rules
 
 
 View a Notification Rule

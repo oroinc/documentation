@@ -17,6 +17,7 @@ To create a new entity:
    The following page opens.
 
    .. image:: ../img/entity_management/entity_create1.png
+      :alt: A new entity creation page
 
 3. In the **General Information** section, provide the following information:
     
@@ -35,6 +36,7 @@ To create a new entity:
 4. In the **Communication & Collaboration** section, provide the following information:
 
    .. image:: /admin_guide/img/entity_management/create_entity_communication_collaboration.png
+      :alt: Basic settings available under the communication and collaboration section
 
    - **Share Scopes** --- This subsection defines whether the records of the entity can be shared with an individual user or the whole business unit/organization.
      
@@ -56,24 +58,29 @@ To create a new entity:
       
       - **Tasks** --- Select this check box to enable adding tasks from the page of an entity record.
    
-      - **Notes** --- Select this check box to enable adding notes to an entity record. Notes are added via the action button and are displayed in the **Activity** section on the page of an entity record. Select **Yes** to enable adding notes to entity records. Select **No** to restrict adding notes to entity records. The default value is **No**.
+      - **Notes** --- Select this check box to enable adding notes to an entity record. Notes are added via the action button and are displayed in the **Activity** section on the page of an entity record.
         
         .. image:: ../img/entity_management/entity_addnotes.png
-   
+           :alt: The add note button becomes available if the notes check box is enabled
+
         .. image:: ../img/entity_management/entity_addnotes2.png
+           :alt: View the list of notes in the activity section of an entity record page
 
    - **Enable Comments** --- Defines whether it is possible to leave comments on entity records. Select **Yes** from the list to enable adding comments to entity records. Select **No** from the list to restrict adding comments to entity records. The default value is **No**. Comments are displayed in the corresponding section on the page of an entity record. For more information on comments, see the topic on :ref:`Adding Comments <user-guide-activities-comments>`.
     
-     .. image:: ../img/entity_management/entity_addcomment.png     
+     .. image:: ../img/entity_management/entity_addcomment.png
+        :alt: Available actions displayed in the comments section when the enabled comments field is set to `yes`
      
 5. In the **Attachments** section, specify the following:
 
    - **Enable Attachments** --- Defines whether it is possible to attach files to the entity records. Select **Yes** from the list if you want to enable adding attachments to entity records. Select **No** from the list if you want to disable adding attachments to entity records. The default value is **No**. Attachments are added via the action button and are displayed on the page of an entity record in the corresponding section. For more information on comments, see the topic on :ref:`attachments <user-guide-activities-attachments>`.
      
      .. image:: ../img/entity_management/entity_addattachment.png
+        :alt: The add attachment option becomes available if the enable attachments field is set to `yes`
 
      .. image:: ../img/entity_management/entity_addattachment2.png
-   
+        :alt: View the list of attachments in the attachment section of an entity record page
+
    - **Max Allowed File Size, Mb** --- Type the upper limit of attachment size. Attachments whose size exceed the specified value will not be allowed.
      
    - **Allowed Mime Types** --- Enter the list of supported MIME types. If this field is left empty, the list of MIME types defined in the :ref:`system configuration <admin-configuration-upload-settings>` will be applied. The format of MIME types must follow these examples: application/pdf, image/\*
@@ -87,10 +94,12 @@ To create a new entity:
      This field is available only when **Enable Attachments** is set to **Yes**. The default value is **Manual**.
    
    .. image:: ../img/entity_management/entity_create3.png
+      :alt: Basic properties available under the attachments section of an entity record page
 
 6. In the **Other** section, specify the following:
 
    .. image:: ../img/entity_management/entity_create4.png
+      :alt: Basic properties available under the other section of an entity record page
 
    - **Ownership Type** --- Defines who the owner of the entity can be. For more information, see the :ref:`Ownership Type <user-guide-user-management-permissions-ownership-type>` topic.
       
@@ -104,18 +113,22 @@ To create a new entity:
         
    - **Auditable** --- This subsection defines whether the system will log what actions are performed with the entity records and who performed them, and users with the corresponding permissions will be able to check it in the **Change History** and **Data Audit** sections of the system. Select **Yes** to enable audit of records of the entity. Select **No** to disable audit of records of the entity. The default value is **No**. For more information about the data audit, see the :ref:`Data Audit <user-guide-data-audit>` topic.
         
-     .. image:: ../img/entity_management/entity_change history.png
+     .. image:: ../img/entity_management/entity_change_history.png
+        :alt: The logging audit report displayed in the change history section when the auditable option is set to `yes`
 
-     .. image:: ../img/entity_management/data_audit.png     
+     .. image:: ../img/entity_management/data_audit.png
+        :alt: A list of logging audit records displayed in the data audit section when the auditable option is set to `yes`
 
    - **Enable Tags** --- Defines whether it is possible to assign tags to entity records. Select **Yes** to enable adding tags to entity records. Select **No** to disable adding tags to entity records. The default value is  **No**. For more information on tag management, see the :ref:`Tags topic <admin-guide-tag-management>`.
    
      .. image:: ../../user_guide/img/navigation/panel/search_vip_1.png
-    
+        :alt: A sample of an entity record with assigned tags
+
    - **Workflow Step in Grid** --- Defines whether to show the column with information about the current workflow step in the grid that contains all entity records.  For more information on workflows, see the :ref:`Workflow Management topic <doc--system--workflow-management>`.     
             
      .. image:: ../img/entity_management/entity_showworkflowstep.png
-     
+        :alt: A sample of an entity record with enabled workflow step
+
      - **Show**—Select this value from the list to show the column with the workflow step in the grid on the **All \<Entity Name\>** page. This is the default value.
       
      - **Hide**—Select this value from the list if you do not want to show the column with the workflow step in the grid.   
