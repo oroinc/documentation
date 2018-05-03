@@ -1,7 +1,9 @@
 .. _install-for-dev:
 
-Installation Quick Start for Developers
-=======================================
+Manual Installation
+===================
+
+Use the application-specific installation guides below to install the particular Oro application in the development, staging, or production environment:
 
 .. toctree::
    :maxdepth: 1
