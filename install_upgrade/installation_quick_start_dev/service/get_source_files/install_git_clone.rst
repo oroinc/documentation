@@ -1,5 +1,3 @@
-:orphan:
-
 Method 1: Clone the GitHub Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _customize_install:
 
 Customizing the Installation Process
@@ -120,6 +118,4 @@ To load your own data fixtures, you will need to implement Doctrine's *"FixtureI
 
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 
-
-.. include:: /install_upgrade/installation/vars.rst
-   :start-after: begin_vars
+.. |main_app_in_this_topic| replace:: OroCRM
