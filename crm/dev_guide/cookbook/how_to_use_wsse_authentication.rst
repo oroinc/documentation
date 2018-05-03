@@ -31,7 +31,7 @@ To generate an authentication header the console command ``oro:wsse:generate-hea
 
 .. code-block:: bash
 
-    user@host: php app/console oro:wsse:generate-header yourApiKey
+    user@host: php bin/console oro:wsse:generate-header yourApiKey
     Authorization: WSSE profile="UsernameToken"
     X-WSSE: UsernameToken Username="admin", PasswordDigest="mTe5J+wM7tcBsI2Qx7bnajQ+0lQ=", Nonce="OWRmNWEwZWZiMTcyMTRkNQ==", Created="2014-12-09T21:29:18+02:00"
 

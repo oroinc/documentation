@@ -28,7 +28,7 @@ After that, perform the following console command:
 .. code-block:: bash
     :linenos:
 
-    php app/console oro:translation:load --rebuild-cache --timeout=900
+    php bin/console oro:translation:load --rebuild-cache --timeout=900
 
 The oro.sales.lead.collector.label string acquires the translation provided and is now displayed as Collector.
 

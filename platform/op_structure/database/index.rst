@@ -157,7 +157,7 @@ When metadata caching is turned on than any changes to entity will be not seen b
 
 .. code:: text
 
-   # app/console doctrine:cache:clear-metadata
+   # bin/console doctrine:cache:clear-metadata
 
 Hydrations
 ~~~~~~~~~~

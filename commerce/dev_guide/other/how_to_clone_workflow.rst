@@ -12,7 +12,7 @@ To clone a workflow, create a dump of its configuration and translation files, a
    .. code-block:: bash
       :linenos:
 
-       php app/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/config/oro/workflows.yml
+       php bin/console oro:debug:workflow:definitions b2b_flow_alternative_checkout > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/config/oro/workflows.yml
 
    where /<Acme>/Bundle/<CustomBundle> is a path to the bundle you want to create a workflow for.
 
@@ -23,7 +23,7 @@ To clone a workflow, create a dump of its configuration and translation files, a
    .. code-block:: bash
       :linenos:
 
-      php app/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/translations/workflows.en.yml
+      php bin/console oro:workflow:translations:dump b2b_flow_alternative_checkout --locale=en > /home/oro/commerce-application/src/<Acme>/Bundle/<CustomBundle>/Resources/translations/workflows.en.yml
 
    The copy of the initial file will be created in the destination directory.
 
@@ -44,11 +44,11 @@ To clone a workflow, create a dump of its configuration and translation files, a
    .. code-block:: bash
       :linenos:
 
-      php app/console oro:translation:load
+      php bin/console oro:translation:load
 
 6. Load your cloned and adjusted workflow configuration:
 
    .. code-block:: bash
       :linenos:
 
-      php app/console oro:workflow:definitions:load
+      php bin/console oro:workflow:definitions:load

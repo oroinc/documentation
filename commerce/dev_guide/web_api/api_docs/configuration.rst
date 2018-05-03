@@ -42,13 +42,13 @@ To get the overall configuration structure, execute the following command:
 
 .. code:: bash
 
-    php app/console oro:api:config:dump-reference
+    php bin/console oro:api:config:dump-reference
 
 By default this command shows configuration of nesting entities. To simplify the output you can use the ``--max-nesting-level`` option, e.g.
 
 .. code:: bash
 
-    php app/console oro:api:config:dump-reference --max-nesting-level=0
+    php bin/console oro:api:config:dump-reference --max-nesting-level=0
 
 The default nesting level is ``3``. It is specified in the configuration of ApiBundle via the ``config_max_nesting_level`` parameter. So, if needed, you can easily change this value, for example:
 

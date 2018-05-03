@@ -157,7 +157,7 @@ download and apply a translation pack:
 
 .. code-block:: bash
 
-    $ php app/console oro:translation:pack -i <project-id> -k <api-key> --download <project>
+    $ php bin/console oro:translation:pack -i <project-id> -k <api-key> --download <project>
 
 .. seealso::
 
@@ -333,7 +333,7 @@ Apply these changes by running the ``oro:migration:load`` command:
 
 .. code-block:: bash
 
-    $ php app/console oro:migration:load
+    $ php bin/console oro:migration:load
 
 This command updates the ``oro_entity_config`` and ``oro_user`` tables. Additionally,
 each time the cache is generated, corresponding entity and mapping files are
@@ -455,7 +455,7 @@ command in the ``dev`` environment first:
 
 .. code-block:: bash
 
-    $ php app/console doctrine:schema:update --force
+    $ php bin/console doctrine:schema:update --force
 
 This created a ``RegularEntity`` table in your database. You can now use the
 ``oro:migration:dump`` to dump the complete database schema:

@@ -131,7 +131,7 @@ cron command with the `oro:cron` CLI command as an application entry point (see 
 
 .. code-block:: text
 
-    */1 * * * * /path/to/php [$folder_location]/orocrm/app/console oro:cron --env=prod > /dev/null
+    */1 * * * * /path/to/php [$folder_location]/orocrm/bin/console oro:cron --env=prod > /dev/null
     
 .. seealso::
 
@@ -145,7 +145,7 @@ together with `MessageQueueBundle`_ to asynchronously run maintenance tasks. Ens
 
 .. code-block:: text
 
-    /path/to/php [$folder_location]/orocrm/app/console oro:message-queue:consume --env=prod > /dev/null
+    /path/to/php [$folder_location]/orocrm/bin/console oro:message-queue:consume --env=prod > /dev/null
 
 .. seealso::
 

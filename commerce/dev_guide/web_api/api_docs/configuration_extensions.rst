@@ -251,7 +251,7 @@ An example of usage created configuration section:
                 my_section:
                     my_option: value
 
-To check that you configuration section was added correctly run ``php app/console oro:api:config:dump-reference``. The output will be something like this:
+To check that you configuration section was added correctly run ``php bin/console oro:api:config:dump-reference``. The output will be something like this:
 
 .. code:: yaml
 

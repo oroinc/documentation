@@ -35,21 +35,21 @@ First, clear the cache to make sure that the package reads the list of packages 
 .. code-block:: bash
     :linenos:
 
-    $ php app/console cache:clear --env=prod
+    $ php bin/console cache:clear --env=prod
 
 Then use the ``oro:package:install`` command to install the extension:
 
 .. code-block:: bash
     :linenos:
 
-    $ php app/console oro:package:install <extension name> <extension-version> --env=prod
+    $ php bin/console oro:package:install <extension name> <extension-version> --env=prod
 
 Finish the installation by clearing the cache again:
 
 .. code-block:: bash
     :linenos:
 
-    $ php app/console cache:clear --env=prod
+    $ php bin/console cache:clear --env=prod
 
 .. _cookbook-extensions-composer:
 
@@ -79,14 +79,14 @@ installed extensions:
 .. code-block:: bash
     :linenos:
 
-    $ php app/console oro:platform:update --env=prod --force
+    $ php bin/console oro:platform:update --env=prod --force
 
 Finally, make sure to properly clean the cache:
 
 .. code-block:: bash
     :linenos:
 
-    $ php app/console cache:clear --env=prod
+    $ php bin/console cache:clear --env=prod
 
 Querying Extension Information
 ------------------------------
@@ -98,7 +98,7 @@ The ``oro:package:available`` command can be used to retrieve a list of all avai
 .. code-block:: bash
     :linenos:
 
-    $ php app/console oro:package:available --env=prod
+    $ php bin/console oro:package:available --env=prod
 
 If you are only interested in the currently installed extensions, run the ``oro:package:installed``
 command:
@@ -106,6 +106,6 @@ command:
 .. code-block:: bash
     :linenos:
 
-    $ php app/console oro:package:installed --env=prod
+    $ php bin/console oro:package:installed --env=prod
 
 .. _`OroCRM Marketplace`: http://marketplace.orocrm.com/

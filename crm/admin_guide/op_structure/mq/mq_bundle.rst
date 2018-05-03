@@ -94,7 +94,7 @@ Now you can start consuming messages:
 
 .. code:: bash
 
-    ./app/console oro:message-queue:consume
+    ./bin/console oro:message-queue:consume
 
 ***Note**: Add -vvv to find out what is going while you are consuming
 messages. There is a lot of valuable debug info there.*
@@ -114,7 +114,7 @@ example if a consumer was run:
 
 .. code:: bash
 
-    ./app/console oro:message-queue:consume --memory-limit=700
+    ./bin/console oro:message-queue:consume --memory-limit=700
 
 then:
 
@@ -189,7 +189,7 @@ instance has dead by any reason.
 .. code-block:: ini
 
     [program:oro_message_consumer]
-    command=/path/to/app/console --env=prod --no-debug oro:message-queue:consume
+    command=/path/to/bin/console --env=prod --no-debug oro:message-queue:consume
     process_name=%(program_name)s_%(process_num)02d
     numprocs=4
     autostart=true

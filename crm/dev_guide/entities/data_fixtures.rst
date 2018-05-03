@@ -50,7 +50,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
 .. code-block:: bash
 
-    $ php app/console oro:migration:data:load
+    $ php bin/console oro:migration:data:load
 
 .. tip::
 
@@ -58,7 +58,7 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     .. code-block:: bash
 
-        $ php app/console oro:migration:data:load
+        $ php bin/console oro:migration:data:load
 
 .. tip::
 
@@ -69,4 +69,4 @@ Use the ``oro:migration:data:load`` command to load all fixtures that have not b
 
     .. code-block:: bash
 
-        $ php app/console oro:migration:data:load --fixtures-type=demo
+        $ php bin/console oro:migration:data:load --fixtures-type=demo

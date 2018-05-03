@@ -461,7 +461,7 @@ To add an icon:
    .. code-block:: bash
        :linenos:
 
-       app/console oro:assets:install
+       bin/console oro:assets:install
 
 To make sure that the icon is accessible for the web interface, check if it appears (as a copy or a symlink depending on the settings selected during the application installation) in the /web/bundles/collect_on_delivery/img directory of your application.
 
@@ -691,7 +691,7 @@ Check That the Integration is Created Successfully
    .. code-block:: bash
        :linenos:
 
-       app/console cache:clear
+       bin/console cache:clear
 
    .. note::
 

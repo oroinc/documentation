@@ -12,21 +12,21 @@ To create an installer for AcmeBundle:
    .. code-block:: bash
       :linenos:
 
-      app/console cache:clear
+      bin/console cache:clear
 
 2. Apply the changes that you defined in your code to the database:
 
    .. code-block:: bash
       :linenos:
 
-      app/console doctrine:schema:update --force
+      bin/console doctrine:schema:update --force
 
 3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
    .. code-block:: bash
       :linenos:
 
-      app/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
+      bin/console oro:migration:dump --bundle=AcmeBundle > AcmeBundleInstaller.php
 
 
    .. hint:: The generated installer may contain a lot of excessive information as the same database table might contain options related to different bundles and entities while the generator has no option to distinguish which entity 'has added' particular options. Delete the information unrelated to your entities from the output file.
@@ -40,7 +40,7 @@ To create an installer for AcmeBundle:
    .. code-block:: bash
       :linenos:
 
-      app/console doctrine:schema:update --dump-sql
+      bin/console doctrine:schema:update --dump-sql
 
    If the database is successfully synchronized, you will see the following message:
 

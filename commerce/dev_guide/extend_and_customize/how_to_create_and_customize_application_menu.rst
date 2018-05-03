@@ -111,12 +111,12 @@ Then you have to clear cache:
 .. code-block:: bash
     :linenos:
 
-    user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
+    user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
     Clearing the cache for the dev environment with debug true
 
 .. note::
 
-    You can use ``php app/console cache:clear`` command with parameters ``--env=prod`` or ``--env=dev``.
+    You can use ``php bin/console cache:clear`` command with parameters ``--env=prod`` or ``--env=dev``.
 
 Here you can see your new menu items in the default OroPlatform menu:
 
@@ -160,7 +160,7 @@ And clear cache:
 .. code-block:: bash
     :linenos:
 
-    user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
+    user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
     Clearing the cache for the dev environment with debug true
 
 

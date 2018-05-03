@@ -22,7 +22,7 @@ run the ``oro:search:reindex`` command:
 
 .. code-block:: bash
 
-    $ php ./app/console oro:search:reindex
+    $ php ./bin/console oro:search:reindex
 
 .. tip::
 

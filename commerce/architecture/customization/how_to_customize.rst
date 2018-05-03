@@ -159,7 +159,7 @@ Remember to implement custom processing of the registered changes, if necessary.
 
 To get the list of listeners registered in the event dispatcher, use the following command:
 
-```php app/console debug:event-dispatcher```
+```php bin/console debug:event-dispatcher```
 
 See the `Event dispatcher <http://symfony.com/doc/current/event_dispatcher.html>`_ topic in the Symfony documentation for more information.
 

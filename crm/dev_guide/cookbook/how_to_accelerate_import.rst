@@ -37,7 +37,7 @@ that allows to import records from the specified CSV file.
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv --help
+    $ php bin/console oro:import:csv --help
     Usage:
      oro:import:csv [--validation-processor="..."] [--processor="..."] file
 
@@ -52,7 +52,7 @@ Here is a small example of its usage:
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv ~/Contact_2000.csv
+    $ php bin/console oro:import:csv ~/Contact_2000.csv
     Choose Processor:
       [0 ] orocrm_contact.add_or_replace
       [1 ] orocrm_contact.add
@@ -105,7 +105,7 @@ the ``--env=prod`` option to your import command:
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv ~/Contact_2000.csv --env=prod
+    $ php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
 
 
 Skip Import File Validation
@@ -117,7 +117,7 @@ import can be performed without it. To do so, start the import command in no int
 
 .. code-block:: bash
 
-    $ php app/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
+    $ php bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
     +---------------+-------+
     | Results       | Count |
     +---------------+-------+
@@ -145,7 +145,7 @@ command shows the list of all such listeners:
 
 .. code-block:: bash
 
-    $ app/console oro:platform:optional-listeners
+    $ bin/console oro:platform:optional-listeners
     List of optional doctrine listeners:
       > oro_dataaudit.listener.send_changed_entities_to_message_queue
       > oro_notification.docrine.event.listener
@@ -157,7 +157,7 @@ it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
 
-    $ app/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
+    $ bin/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
 
 .. caution::
 

@@ -15,7 +15,7 @@ To add OroCommerce to the existing instance of OroCRM, please follow the ordinar
 
 .. code-block:: bash
 
-    app/console oro:config:update oro_website.url https://unsecure.url
-    app/console oro:config:update oro_website.secure_url http://secure.url
+    bin/console oro:config:update oro_website.url https://unsecure.url
+    bin/console oro:config:update oro_website.secure_url http://secure.url
 
 where `https://unsecure.url` and `http://secure.url` are urls for the OroCommerce storefront.

@@ -28,7 +28,7 @@ It will return
     < X-Include-Total-Count: 67
     ...
 
-Notes: - to generate WSSE header you can run ``php app/console oro:wsse:generate-header YOUR_API_KEY``
+Notes: - to generate WSSE header you can run ``php bin/console oro:wsse:generate-header YOUR_API_KEY``
 
 Existing X-Include keys
 -----------------------

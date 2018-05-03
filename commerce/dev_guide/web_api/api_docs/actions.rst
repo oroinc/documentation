@@ -105,7 +105,7 @@ The context class: `GetContext <https://github.com/oroinc/platform/tree/master/s
 
 The main processor class: `GetProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/GetProcessor.php>`__.
 
-Existing worker processors: `processors.get.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug get``.
+Existing worker processors: `processors.get.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug get``.
 
 This action has the following processor groups:
 
@@ -148,7 +148,7 @@ The context class: `GetListContext <https://github.com/oroinc/platform/tree/mast
 
 The main processor class: `GetListProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/GetListProcessor.php>`__.
 
-Existing worker processors: `processors.get\_list.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_list.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug get_list``.
+Existing worker processors: `processors.get\_list.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_list.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug get_list``.
 
 This action has the following processor groups:
 
@@ -191,7 +191,7 @@ The context class: `DeleteContext <https://github.com/oroinc/platform/tree/maste
 
 The main processor class: `DeleteProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteProcessor.php>`__.
 
-Existing worker processors: `processors.delete.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug delete``.
+Existing worker processors: `processors.delete.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug delete``.
 
 This action has the following processor groups:
 
@@ -238,7 +238,7 @@ The context class: `DeleteListContext <https://github.com/oroinc/platform/tree/m
 
 The main processor class: `DeleteListProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteListProcessor.php>`__.
 
-Existing worker processors: `processors.delete\_list.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_list.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug delete_list``.
+Existing worker processors: `processors.delete\_list.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_list.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug delete_list``.
 
 This action has the following processor groups:
 
@@ -281,7 +281,7 @@ The context class: `CreateContext <https://github.com/oroinc/platform/tree/maste
 
 The main processor class: `CreateProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CreateProcessor.php>`__.
 
-Existing worker processors: `processors.create.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.create.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug create``.
+Existing worker processors: `processors.create.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.create.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug create``.
 
 This action has the following processor groups:
 
@@ -326,7 +326,7 @@ The context class: `UpdateContext <https://github.com/oroinc/platform/tree/maste
 
 The main processor class: `UpdateProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/UpdateProcessor.php>`__.
 
-Existing worker processors: `processors.update.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug update``.
+Existing worker processors: `processors.update.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug update``.
 
 This action has the following processor groups:
 
@@ -371,7 +371,7 @@ The context class: `GetSubresourceContext <https://github.com/oroinc/platform/tr
 
 The main processor class: `GetSubresourceProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetSubresourceProcessor.php>`__.
 
-Existing worker processors: `processors.get\_subresource.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_subresource.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug get_subresource``.
+Existing worker processors: `processors.get\_subresource.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_subresource.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug get_subresource``.
 
 This action has the following processor groups:
 
@@ -414,7 +414,7 @@ The context class: `GetRelationshipContext <https://github.com/oroinc/platform/t
 
 The main processor class: `GetRelationshipProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetRelationshipProcessor.php>`__.
 
-Existing worker processors: `processors.get\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug get_relationship``.
+Existing worker processors: `processors.get\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug get_relationship``.
 
 This action has the following processor groups:
 
@@ -457,7 +457,7 @@ The context class: `UpdateRelationshipContext <https://github.com/oroinc/platfor
 
 The main processor class: `UpdateRelationshipProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/UpdateRelationshipProcessor.php>`__.
 
-Existing worker processors: `processors.update\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug update_relationship``.
+Existing worker processors: `processors.update\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug update_relationship``.
 
 This action has the following processor groups:
 
@@ -500,7 +500,7 @@ The context class: `AddRelationshipContext <https://github.com/oroinc/platform/t
 
 The main processor class: `AddRelationshipProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/AddRelationshipProcessor.php>`__.
 
-Existing worker processors: `processors.add\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.add_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug add_relationship``.
+Existing worker processors: `processors.add\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.add_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug add_relationship``.
 
 This action has the following processor groups:
 
@@ -543,7 +543,7 @@ The context class: `AddRelationshipContext <https://github.com/oroinc/platform/t
 
 The main processor class: `AddRelationshipProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/AddRelationshipProcessor.php>`__.
 
-Existing worker processors: `processors.delete\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php app/console oro:api:debug delete_relationship``.
+Existing worker processors: `processors.delete\_relationship.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_relationship.yml>`__, `processors.shared.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml>`__ or run ``php bin/console oro:api:debug delete_relationship``.
 
 This action has the following processor groups:
 
@@ -580,7 +580,7 @@ The context class: `CustomizeLoadedDataContext <https://github.com/oroinc/platfo
 
 The main processor class: `CustomizeLoadedDataProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedDataProcessor.php>`__.
 
-As example of a processor is used to modify loaded data you can see `ComputePrimaryField <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedData/ComputePrimaryField.php>`__. Also you can run ``php app/console oro:api:debug customize_loaded_data`` to see other processors registered in this action.
+As example of a processor is used to modify loaded data you can see `ComputePrimaryField <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedData/ComputePrimaryField.php>`__. Also you can run ``php bin/console oro:api:debug customize_loaded_data`` to see other processors registered in this action.
 
 customize\_form\_data Action
 ----------------------------
@@ -591,7 +591,7 @@ The context class: `CustomizeFormDataContext <https://github.com/oroinc/platform
 
 The main processor class: `CustomizeFormDataProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormDataProcessor.php>`__.
 
-As example of a processor is used to modify loaded data you can see `MapPrimaryField <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/MapPrimaryField.php>`__. Also you can run ``php app/console oro:api:debug customize_form_data`` to see other processors registered in this action.
+As example of a processor is used to modify loaded data you can see `MapPrimaryField <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/MapPrimaryField.php>`__. Also you can run ``php bin/console oro:api:debug customize_form_data`` to see other processors registered in this action.
 
 get\_config Action
 ------------------
@@ -602,7 +602,7 @@ The context class: `ConfigContext <https://github.com/oroinc/platform/tree/maste
 
 The main processor class: `ConfigProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigProcessor.php>`__.
 
-Existing worker processors: `processors.get\_config.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_config.yml>`__ or run ``php app/console oro:api:debug get_config``.
+Existing worker processors: `processors.get\_config.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_config.yml>`__ or run ``php bin/console oro:api:debug get_config``.
 
 Also `ConfigProvider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/ConfigProvider.php>`__ was created to make usage of this action as easy as possible.
 
@@ -623,7 +623,7 @@ The context class: `RelationConfigContext <https://github.com/oroinc/platform/tr
 
 The main processor class: `RelationConfigProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/RelationConfigProcessor.php>`__.
 
-Existing worker processors: `processors.get\_config.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_config.yml>`__ or run ``php app/console oro:api:debug get_relation_config``.
+Existing worker processors: `processors.get\_config.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_config.yml>`__ or run ``php bin/console oro:api:debug get_relation_config``.
 
 Also `RelationConfigProvider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/RelationConfigProvider.php>`__ was created to make usage of this action as easy as possible.
 
@@ -644,7 +644,7 @@ The context class: `MetadataContext <https://github.com/oroinc/platform/tree/mas
 
 The main processor class: `MetadataProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/MetadataProcessor.php>`__.
 
-Existing worker processors: `processors.get\_metadata.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_metadata.yml>`__ or run ``php app/console oro:api:debug get_metadata``.
+Existing worker processors: `processors.get\_metadata.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_metadata.yml>`__ or run ``php bin/console oro:api:debug get_metadata``.
 
 Also `MetadataProvider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/MetadataProvider.php>`__ was created to make usage of this action as easy as possible.
 
@@ -665,7 +665,7 @@ The context class: `NormalizeValueContext <https://github.com/oroinc/platform/tr
 
 The main processor class: `NormalizeValueProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/NormalizeValueProcessor.php>`__.
 
-Existing worker processors: `processors.normalize\_value.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.normalize_value.yml>`__ or run ``php app/console oro:api:debug normalize_value``.
+Existing worker processors: `processors.normalize\_value.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.normalize_value.yml>`__ or run ``php bin/console oro:api:debug normalize_value``.
 
 Also `ValueNormalizer <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/ValueNormalizer.php>`__ was created to make usage of this action as easy as possible.
 
@@ -686,7 +686,7 @@ The context class: `CollectResourcesContext <https://github.com/oroinc/platform/
 
 The main processor class: `CollectResourcesProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CollectResourcesProcessor.php>`__.
 
-Existing worker processors: `processors.collect\_resources.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_resources.yml>`__ or run ``php app/console oro:api:debug collect_resources``.
+Existing worker processors: `processors.collect\_resources.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_resources.yml>`__ or run ``php bin/console oro:api:debug collect_resources``.
 
 Also `ResourcesProvider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/ResourcesProvider.php>`__ was created to make usage of this action as easy as possible.
 
@@ -713,7 +713,7 @@ The context class: `CollectSubresourcesContext <https://github.com/oroinc/platfo
 
 The main processor class: `CollectSubresourcesProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CollectSubresourcesProcessor.php>`__.
 
-Existing worker processors: `processors.collect\_subresources.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_subresources.yml>`__ or run ``php app/console oro:api:debug collect_subresources``.
+Existing worker processors: `processors.collect\_subresources.yml <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_subresources.yml>`__ or run ``php bin/console oro:api:debug collect_subresources``.
 
 Also `SubresourcesProvider <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/SubresourcesProvider.php>`__ was created to make usage of this action as easy as possible.
 

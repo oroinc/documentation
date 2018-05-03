@@ -30,7 +30,7 @@ In the php console, execute the ``oro:user:impersonate <username>`` command, whe
 
     .. code-block:: bash
 
-    	$ php app/console oro:user:impersonate johndoe
+    	$ php bin/console oro:user:impersonate johndoe
  
 After code execution, you will see the impersonation link in the console:
 
@@ -69,7 +69,7 @@ To check all possible options, execute the ``oro:user:impersonate -h`` command i
 
    .. code-block:: bash
 
-    	$ php app/console oro:user:impersonate -h
+    	$ php bin/console oro:user:impersonate -h
 
 
 Limit the Link Lifetime
@@ -81,14 +81,14 @@ Your command will look the following way: ``oro:user:impersonate -t<numberofseco
 
    .. code-block:: bash
 
-    	$ php app/console oro:user:impersonate -t3600 johndoe
+    	$ php bin/console oro:user:impersonate -t3600 johndoe
 
 
 You can also specify the time in the format that the strtotime() php parser can translate into Unix timestamp. This can be a wide range of English textual datetimes. You can check the examples at http://www.w3schools.com/php/func_date_strtotime.asp, http://php.net/manual/en/datetime.formats.time.php, and http://php.net/manual/en/datetime.formats.date.php.   
 
    .. code-block:: bash
 
-    	$ php app/console oro:user:impersonate -t"1 month" johndoe
+    	$ php bin/console oro:user:impersonate -t"1 month" johndoe
 
 
 Impersonate a User in the Silent Mode
@@ -104,7 +104,7 @@ Your command will look the following way: ``oro:user:impersonate -S <username>``
 
    .. code-block:: bash
 
-    	$ php app/console oro:user:impersonate -S johndoe
+    	$ php bin/console oro:user:impersonate -S johndoe
 
 
 
@@ -122,7 +122,7 @@ In the php console, execute the ``oro:user:list`` command.
 
    .. code-block:: bash
 
-      $ php app/console oro:user:list
+      $ php bin/console oro:user:list
 
 This command generates a list of all users with the **Enabled** status. You will see a table that shows user IDs, usernames, statuses, first and last names, and roles.
 
@@ -142,7 +142,7 @@ For example, to see page 2, execute:
 
    .. code-block:: bash
 
-      $ php app/console oro:user:list -p2
+      $ php bin/console oro:user:list -p2
 
 
 You can limit the number of users displayed on each page. For this, use the ``-l<number_of_users>`` parameter. 
@@ -150,21 +150,21 @@ For example, to see 10 users per page, execute:
 
    .. code-block:: bash
 
-      $ php app/console oro:user:list -l10
+      $ php bin/console oro:user:list -l10
 
 You can use the same parameter to see all users in the system on one page. For this, specify the number of pages as ``-1``:
 
 
    .. code-block:: bash
 
-      $ php app/console oro:user:list -l-1
+      $ php bin/console oro:user:list -l-1
 
 
 To check all possible options, execute the ``oro:user:list -h`` command in the php console.
 
    .. code-block:: bash
    
-    	$ php app/console oro:user:list -h
+    	$ php bin/console oro:user:list -h
 
 List All Users
 ^^^^^^^^^^^^^^^^
@@ -174,7 +174,7 @@ To include users with the **Disabled** status as well, use the ``-a`` parameter:
 
    .. code-block:: bash
    
-      $ php app/console oro:user:list -a
+      $ php bin/console oro:user:list -a
       
       
 You will see all users that exist in the system.       
@@ -186,14 +186,14 @@ To see only the users with a specific role, use the ``-r"<role_name>"`` paramete
 
    .. code-block:: bash
 
-      $ php app/console oro:user:list -r"Marketing Manager"
+      $ php bin/console oro:user:list -r"Marketing Manager"
       
       
 You can specify multiple roles:
 
    .. code-block:: bash
    
-    	$ php app/console oro:user:list -r"Marketing Manager" -r"Sales Manager"
+    	$ php bin/console oro:user:list -r"Marketing Manager" -r"Sales Manager"
 
 
 Other Listing Command Options
@@ -203,7 +203,7 @@ To check all possible options, execute the ``oro:user:list -h`` command in the p
 
    .. code-block:: bash
    
-    	$ php app/console oro:user:list -h
+    	$ php bin/console oro:user:list -h
 
 
 

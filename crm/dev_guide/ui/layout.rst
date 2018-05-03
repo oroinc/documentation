@@ -48,9 +48,9 @@ command:
 
 .. code-block:: bash
 
-    $ php app/console cache:clear
-    $ php app/console oro:assets:install
-    $ php app/console assetic:dump
+    $ php bin/console cache:clear
+    $ php bin/console oro:assets:install
+    $ php bin/console assetic:dump
 
 In this example, all four CSS files from your bundle as well as all the other files from the Oro
 Platform and from third party bundles will be merged and dumped in the ``web/css/style.css`` file.
@@ -87,7 +87,7 @@ For instance, the following configuration excludes all files from the ``frontend
 
     .. code-block:: bash
 
-        $ php app/console oro:assetic:groups
+        $ php bin/console oro:assetic:groups
 
 .. _book-layout-themes:
 
@@ -214,9 +214,9 @@ Finally, clear the cache and dump all assets:
 
 .. code-block:: bash
 
-    $ php app/console cache:clear
-    $ php app/console assets:install
-    $ php app/console assetic:dump
+    $ php bin/console cache:clear
+    $ php bin/console assets:install
+    $ php bin/console assetic:dump
 
 .. _book-themes-overriding:
 

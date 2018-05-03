@@ -571,7 +571,7 @@ In order to add this bundle to your application:
 * Please extract the content of the zip archive into a source code directory that is recognized by your composer autoload settings;
 * Clear the application cache with the following command:
   
-  `php app/console clear:cache`
+  `php bin/console clear:cache`
 
   and run the migrations with the following command:
 

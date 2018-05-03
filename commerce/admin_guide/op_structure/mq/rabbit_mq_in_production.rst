@@ -115,7 +115,7 @@ For example, name it `oro-message-queue@.service` and put it into `/lib/systemd/
    WorkingDirectory=/path/to/the/project
    ExecStart=/bin/bash -c '\
       QUEUE=$(echo %i | sed "s/:.*//g") && \
-      exec app/console --env=prod --no-debug oro:message-queue:transport:consume oro.$QUEUE oro_message_queue.client.delegate_message_processor --time-limit="now + 15minutes" -vv'
+      exec bin/console --env=prod --no-debug oro:message-queue:transport:consume oro.$QUEUE oro_message_queue.client.delegate_message_processor --time-limit="now + 15minutes" -vv'
    Restart=always
    RestartSec=3s
    

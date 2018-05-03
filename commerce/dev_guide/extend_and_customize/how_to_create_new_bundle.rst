@@ -49,7 +49,7 @@ Basically, it is a regular Symfony bundle. The only difference is in the way it 
 .. .. code-block:: bash
 ..     :linenos:
 ..
-..     user@host:/var/www/vhosts/platform-application$ php app/console generate:bundle
+..     user@host:/var/www/vhosts/platform-application$ php bin/console generate:bundle
 ..     Bundle namespace: Acme/Bundle/NewBundle
 ..     Bundle name [AcmeNewBundle]:
 ..     Target directory [/var/www/vhosts/platform-application/src]:
@@ -97,7 +97,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
    .. code-block:: bash
        :linenos:
 
-       user@host:/var/www/vhosts/platform-application$ php app/console cache:clear
+       user@host:/var/www/vhosts/platform-application$ php bin/console cache:clear
        Clearing the cache for the dev environment with debug true
 
    .. note::

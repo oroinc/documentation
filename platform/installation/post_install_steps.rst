@@ -3,13 +3,13 @@ Important Post-Install Configuration
 
 After the installation has finished, please, perform the following mandatory post-install steps:
 
-* In console, run ``php app/console oro:api:doc:cache:clear``
+* In console, run ``php bin/console oro:api:doc:cache:clear``
     to prepare the API documentation cache. This process may take several minutes.
 * Start one or more MessageQueue consumers using the following command:
 
   .. code-block:: text
 
-     <OroCommerce installation directory>/app/console oro:message-queue:consume --env=prod
+     <OroCommerce installation directory>/bin/console oro:message-queue:consume --env=prod
 
   .. note::
 
@@ -22,4 +22,4 @@ After the installation has finished, please, perform the following mandatory pos
 
    .. code-block:: text
 
-      <OroCommerce installation directory>/app/console oro:cron --env=prod
+      <OroCommerce installation directory>/bin/console oro:cron --env=prod
