@@ -7,7 +7,7 @@ Add a Product Page (Web Catalog Content)
 
 Product page node is a direct link to the product details in OroCommerce Store Front.
 
-To add a product page node to the menu on the OroCommerce Store Front:
+To add a product page node to the menu in the OroCommerce storefront:
 
 #. Select the **Add Product Page** in the Content Variants list.
 

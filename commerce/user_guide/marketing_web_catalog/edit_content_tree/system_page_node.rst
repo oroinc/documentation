@@ -7,7 +7,7 @@ Add a System Page (Web Catalog Content)
 
 System page is one of the standard pre-designed pages of OroCommerce Store Front (e.g. Requests for Quotes, Open Orders).
 
-To add a system page to the menu on the OroCommerce Store Front:
+To add a system page to the menu in the OroCommerce storefront:
 
 #. Select the **Add System Page** in the Content Variants list.
 

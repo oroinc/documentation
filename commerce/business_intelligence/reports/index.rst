@@ -14,6 +14,8 @@ There is a number of out-of-the-box reports, such as `Leads by Date <https://oro
 
 System reports are read-only. You can view the report output and filter the resulting data.
 
+.. comment: Add information on Reports & Segments > Consents > Declined Consents when https://magecore.atlassian.net/browse/BB-14261 is implemented.
+
 See the following sections for more information:
 
 .. toctree::

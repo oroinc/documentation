@@ -34,7 +34,7 @@ The steps for node configuration provided below apply to the homepage, main menu
 
 * For **homepage node** --- You will be offered to fill in the homepage details once you start editing a blank content tree.
 
-* For **menu and sub-men nodes** --- To create a menu or sub-menu node, select the parent node you would like to place it in, and click **Create Content Node**.
+* For **menu and sub-menu nodes** --- To create a menu or sub-menu node, select the parent node you would like to place it in, and click **Create Content Node**.
 
 * To launch editing the existing content node configuration, select it in the content nodes tree.
 

@@ -5,12 +5,13 @@ Contact Requests
 
 Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. When your customers use this form, contact requests are automatically generated and added to the page of all contacts in your Oro application. 
 
+Additionally, contact requests are used for consent management purposes when a customer :ref:`declines a consent <user-guide--consents--create>` in the OroCommerce storefront. When the **Declined Consent Notification** option is enabled for a specific consent, a notification is created in the management console as a contact request to inform that the consent has been declined. Read more information on consents in the relevant :ref:`Data Protection and Consent Management <user-guide--consents>` topic.
+
 See a short demo in our media library on `how to create and manage contact requests <https://www.oroinc.com/orocrm/media-library/manage-contact-requests>`_, or keep reading the guidance below.
 
 .. raw:: html
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/psQnfsFxQeg" frameborder="0" allowfullscreen></iframe>
-
 
 Create a Contact Request from a Third-Party Application
 -------------------------------------------------------
@@ -20,7 +21,6 @@ Use the *Magento Contact Us Request form* type for the Magento-based businesses,
 type for the other websites. Every time a customer completes the form, the information is automatically synced to your Oro application.  
 
 .. note:: Other contact request types can be developed in the course of integration, according to your specific business needs.
-
 
 How to View and Manage Contact Requests
 ---------------------------------------

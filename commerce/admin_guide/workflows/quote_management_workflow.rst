@@ -92,8 +92,8 @@ The QMF consists of the following steps and transitions:
 
 .. note:: Please note that Accepted and Declined transitions for the Sent to Customer step are automatically triggered by the changes of customer statuses and they do not, therefore, take the form of buttons in the interface.
 
-Example
--------
+Sample Flow
+-----------
 
 As an illustration, let us go through a sample flow to see the QMF in action:
 

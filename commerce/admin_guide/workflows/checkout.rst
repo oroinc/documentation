@@ -5,7 +5,7 @@ Checkout Workflow
 =================
 
 .. contents:: :local:
-   :depth: 1
+   :depth: 2
 
 Overview
 --------
@@ -16,8 +16,7 @@ To reach the workflow:
 
 1. Navigate to **System > Workflows** in the main menu.
 2. Click **Checkout** to open the flow.
-   
-  
+
 On the Checkout workflow page, you can perform the following actions:
 
 * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
@@ -25,7 +24,7 @@ On the Checkout workflow page, you can perform the following actions:
   
 .. image:: /admin_guide/img/workflows/checkout/CheckoutViewPageBackoffice.png
 
-Within the Workflows grid, you can perform the following actions for the Checkout workflow:
+On the page of all workflows, you can perform the following actions for the Checkout workflow:
 
 * View the workflow: |IcView|
 * Deactivate / Activate the workflow: |IcDeactivate| / |IcActivate|
@@ -39,84 +38,125 @@ The following table illustrates the steps and transitions that the Checkout work
 
 .. image:: /admin_guide/img/workflows/checkout/CheckoutWfTable.png
 
-As an illustration, let us go through a sample flow to see how the Checkout workflow works:
+Sample Flow
+-----------
 
-1. A product has been added to a shopping list. On opening the shopping list, you can create an order either by clicking **Create Order** on the right of the page next to Request Quote or by clicking on the **Create Order** button at the bottom of the page.
+As an illustration, we are going to proceed through the steps of the Checkout workflow to see how it works.
+
+.. start_checkout_sample_0
+
+Several items have been added to a shopping list in the OroCommerce storefront. To proceed to the checkout, click **Create Order** on the bottom right of the shopping list page.
    
-   .. image:: /admin_guide/img/workflows/checkout/CreateOrderButton.png
+|create_order_img|
 
-   .. note:: The **Create Order** button will only be available if the following conditions are met:
+.. note:: The **Create Order** button is available if the following conditions are met:
 
-      * at least one :ref:`shipping method <user-guide--shipping>` is available
-      * at least one :ref:`payment method <user-guide--payment>` is available
-      * there is at least one product with a price in the shopping list
-      * items to be purchased are available in the :ref:`inventory <user-guide--inventory>` in the management console
+  * At least one :ref:`shipping method <user-guide--shipping>` is available
+  * At least one :ref:`payment method <user-guide--payment>` is available
+  * There is at least one product with a price in the shopping list
+  * Items to be purchased are available in the :ref:`inventory <user-guide--inventory>` in the management console
        
-  A warning message will be shown if for some reason you are unable to start the checkout process.
+A warning message is shown if for some reason you are unable to start the checkout process.
 
-  .. check the conditions
+.. finish_checkout_sample_0
 
-2. **Step 1: Billing Information**
+.. |create_order_img| image:: /admin_guide/img/workflows/checkout/CreateOrderButton.png
+   :alt: Shopping list with option to create order and proceed to checkout
+
+.. check the conditions
+
+Step 1: Billing Information
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
-   The order is open. The first step is to enter billing information for the order by selecting an existing address from the address book, or creating a new one. 
+.. start_checkout_sample_1
+
+The checkout is now open. The next step is to enter billing information for the order by selecting an existing address from the address book, or creating a new one.
  
-   Checking **Ship to this address** will allow you to use the provided billing address as shipping. 
+Checking **Ship to this address** allows you to use the provided billing address as shipping.
 
-   Clicking **Continue** will redirect you to the next step.
+Clicking **Continue** redirects you to the next step.
 
-   .. note::     
-     It is possible to amend the order by clicking **Edit Order** in the right corner of the Order Summary section. The Order Summary section will be available for Billing Information, Shipping Information, Shipping Method and Payment pages. Editing the order will remain possible throughout the checkout process until the order is submitted.
+.. note:: You can edit *the already provided* information (until the order is submitted) by clicking |IcEditInline| on the left side of the page.
 
-   .. image:: /admin_guide/img/workflows/checkout/Checkout_BilInfo.png
+.. finish_checkout_sample_1
 
+.. image:: /admin_guide/img/workflows/checkout/Checkout_BilInfo.png
+   :alt: The billing information step at the checkout (with consents)
 
-3. **Step 2: Shipping Information**
+Step 2: Shipping Information
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. start_checkout_sample_2
+
+If the **Ship to this address** box has been checked at the Billing Information step, the provided address is automatically selected at the Shipping Information step.
    
-   If the **Ship to this address** box has been checked in the Billing Information step, the provided address will be automatically selected in the Shipping Information step. 
-   
-   To edit shipping information, clear the **Use billing address** box and provide a different shipping address for the order.
+To edit shipping information, clear the **Use billing address** box and provide a different shipping address for the order.
 
-   .. image:: /admin_guide/img/workflows/checkout/UseBillingAddressBox.png
+.. finish_checkout_sample_2
 
-   .. note:: It is possible to edit *the already provided* information (until the order is submitted) by clicking |IcEditInline| on the left side of the page.
+.. image:: /admin_guide/img/workflows/checkout/UseBillingAddressBox.png
 
-   	  .. image:: /admin_guide/img/workflows/checkout/EditInfo.png
-   	     :align: center	
-   			
-4. **Step 3: Shipping Method**
+Step 3: Shipping Method
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. start_checkout_sample_3
+
+Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
+
+.. finish_checkout_sample_3
+
+.. image:: /admin_guide/img/workflows/checkout/Shipping_Info.png
+   :alt: The shipping method step at the checkout
+
+Step 4: Payment
+^^^^^^^^^^^^^^^
+
+.. start_checkout_sample_4
+
+Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
+
+.. finish_checkout_sample_4
+
+.. image:: /admin_guide/img/workflows/checkout/Payment.png
+   :alt: The payment method step at the checkout
+
+Step 5: Order Review
+^^^^^^^^^^^^^^^^^^^^
+
+.. start_checkout_sample_5
+
+.. start_checkout_sample_alt5
+
+Once all the necessary information has been provided, you can review the order at the **Order Review** step:
+
+* View Options for the order:
+
+  * Do not ship later than
+  * PO Number
+  * Notes
+  * Delete the shopping list
     
-   At this stage, it is necessary to provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
-
-   .. image:: /admin_guide/img/workflows/checkout/Shipping_Info.png
-
-5. **Step 4: Payment**
-   
-   Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
-
-   .. image:: /admin_guide/img/workflows/checkout/Payment.png
-
-6. **Step 5: Order Review**
-
-   Once all the necessary information has been provided, it is possible to review the order in the Order Review section:
-
-   * View Options for the order:
-
-     * Do not ship later than
-     * PO Number
-     * Notes
-     * Delete the shopping list
-    
-   * Check quantity, price, subtotal, shipping and total cost
-   * Edit the Order
-   * Edit the already provided information by clicking |IcEditInline| on the left side of the page
+* Check quantity, price, subtotal, shipping and total cost
+* Edit the Order
+* Edit the already provided information by clicking |IcEditInline| on the left side of the page
   
-   To submit the order, click **Submit Order** at the bottom of the page.
+To submit the order, click **Submit Order** at the bottom of the page.
 
-   .. image:: /admin_guide/img/workflows/checkout/Order_Review.png
+.. finish_checkout_sample_alt5
 
-7. Once submitted, the order will be received and dealt with by the sales team.
-   
-   .. image:: /admin_guide/img/workflows/checkout/order_received.png
+|order_review_img|
+
+Once submitted, the order will be received and dealt with by the sales team.
+
+|order_submitted_img|
+
+.. finish_checkout_sample_5
+
+.. |order_submitted_img| image:: /admin_guide/img/workflows/checkout/order_received.png
+   :alt: The page of the order in the management console, once the order is submitted
+
+.. |order_review_img| image:: /admin_guide/img/workflows/checkout/Order_Review.png
+   :alt: The order review step at the checkout
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

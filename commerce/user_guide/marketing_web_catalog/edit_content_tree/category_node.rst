@@ -7,7 +7,7 @@ Add a Category (Web Catalog Content)
 
 Category node is a direct link to the product category with the list of products in the OroCommerce Store Front.
 
-To add a category node to the menu on the OroCommerce Store Front:
+To add a category node to the menu in the OroCommerce storefront:
 
 1. Select **Add Category** in the Content Variants list.
 

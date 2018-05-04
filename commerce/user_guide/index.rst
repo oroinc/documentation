@@ -103,6 +103,8 @@ Table of Contents
    marketing_content_blocks/index
 
    taxes/index
+ 
+   consents/index
 
 ..   install/index
 

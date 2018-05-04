@@ -109,6 +109,9 @@ RFQ Management Flow consists of the following steps and transitions:
 
 .. _system--workflows--rfq-backoffice-workflow-illustration:
 
+Sample Flow
+-----------
+
 As an illustration, let us go through a sample flow to see RFQ Management Flow in action:
 
 1. Once an RFQ is received, it is automatically moved to the Open step with a possibility to mark this request processed, request more information, decline or delete it.

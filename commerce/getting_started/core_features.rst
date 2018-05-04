@@ -11,6 +11,8 @@ Core eCommerce Features
 
 .. Websites <./system/websites>`_ &
 
+* :ref:`Data Protection and Consent Management <user-guide--consents>`: Complying with the data protection regulations, OroCommerce provides a flexible mechanism for collecting and managing customer consents.
+
 * Multiple `Organizations <./customers>`_, Websites and :ref:`Stores <user-guide--web-catalog>`: Many businesses manage multinational brands that operate across various countries, currencies, and tax regulations. OroCommerce Enterprise Edition comes out-of-the-box with flexible and robust multi-website management capabilities which allows organizations to easily orchestrate multiple businesses from one central admin console.
 
 * :ref:`Content Management System <user-guide--web-catalog>`: Native CMS capabilities allow marketers and merchandise managers to manage robust digital media-enabled catalogs and rich product information pages providing buyers with the information they need to make purchasing decisions. In addition, OroCommerce’s theme is designed with an intuitive, user-friendly front-end which allows buyers to easily find the information and products they need.
