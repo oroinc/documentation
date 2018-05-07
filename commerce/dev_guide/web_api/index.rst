@@ -861,30 +861,51 @@ Data Filter (**filter**)
 """"""""""""""""""""""""
 
 Depending on the type of the filter, certain operators are allowed. For example, for integer filter type it
-is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**, for string filter type - only two: **=**, **!**.
+is allowed to use six operators: **=**, **!=**, **<**, **<=**, **>**, **>=**,
+for string filter type - only two: **=**, **!=**.
+The operators **~**, **!~**, **^**, **!^**, **$**, **!$** are not allowed by default and should be enabled
+by a developer who creates API resources.
 
 
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
-| Operator | Operator Name | Description           | URL Encoded | Request Example                             |
-+==========+===============+=======================+=============+=============================================+
-| **=**    | **eq**        | Equality              | %3D         | | GET /api/users?filter[id]=1 HTTP/1.1      |
-|          |               |                       |             | | GET /api/users?filter[id][eq]=1 HTTP/1.1  |
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
-| **!=**   | **neq**       | Inequality            | %21%3D      | | GET /api/users?filter[id]!=2 HTTP/1.1     |
-|          |               |                       |             | | GET /api/users?filter[id][neq]=2 HTTP/1.1 |
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
-| **<**    | **lt**        | Less than             | %3C         | | GET /api/users?filter[id]<3 HTTP/1.1      |
-|          |               |                       |             | | GET /api/users?filter[id][lt]=3 HTTP/1.1  |
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
-| **<=**   | **lte**       | Less than or equal    | %3C%3D      | | GET /api/users?filter[id]<=4 HTTP/1.1     |
-|          |               |                       |             | | GET /api/users?filter[id][lte]=4 HTTP/1.1 |
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
-| **>**    | **gt**        | Greater than          | %3E         | | GET /api/users?filter[id]>5 HTTP/1.1      |
-|          |               |                       |             | | GET /api/users?filter[id][gt]=5 HTTP/1.1  |
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
-| **>=**   | **gte**       | Greater than or equal | %3E%3D      | | GET /api/users?filter[id]>=6 HTTP/1.1     |
-|          |               |                       |             | | GET /api/users?filter[id][gte]=6 HTTP/1.1 |
-+----------+---------------+-----------------------+-------------+---------------------------------------------+
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| Operator | Operator Name       | Description           | URL Encoded | Request Example                                            |
++==========+=====================+=======================+=============+============================================================+
+| **=**    | **eq**              | Equality              | %3D         | | GET /api/users?filter[id]=1 HTTP/1.1                     |
+|          |                     |                       |             | | GET /api/users?filter[id][eq]=1 HTTP/1.1                 |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **!=**   | **neq**             | Inequality            | %21%3D      | | GET /api/users?filter[id]!=2 HTTP/1.1                    |
+|          |                     |                       |             | | GET /api/users?filter[id][neq]=2 HTTP/1.1                |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **<**    | **lt**              | Less than             | %3C         | | GET /api/users?filter[id]<3 HTTP/1.1                     |
+|          |                     |                       |             | | GET /api/users?filter[id][lt]=3 HTTP/1.1                 |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **<=**   | **lte**             | Less than or equal    | %3C%3D      | | GET /api/users?filter[id]<=4 HTTP/1.1                    |
+|          |                     |                       |             | | GET /api/users?filter[id][lte]=4 HTTP/1.1                |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **>**    | **gt**              | Greater than          | %3E         | | GET /api/users?filter[id]>5 HTTP/1.1                     |
+|          |                     |                       |             | | GET /api/users?filter[id][gt]=5 HTTP/1.1                 |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **>=**   | **gte**             | Greater than or equal | %3E%3D      | | GET /api/users?filter[id]>=6 HTTP/1.1                    |
+|          |                     |                       |             | | GET /api/users?filter[id][gte]=6 HTTP/1.1                |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **~**    | **contains**        | Contains a text       | %7E         | | GET /api/users?filter[id]~test HTTP/1.1                  |
+|          |                     |                       |             | | GET /api/users?filter[id][contains]=test HTTP/1.1        |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **!~**   | **not_contains**    | Not contains a text   | %21%7E      | | GET /api/users?filter[id]!~test HTTP/1.1                 |
+|          |                     |                       |             | | GET /api/users?filter[id][not_contains]=test HTTP/1.1    |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **^**    | **starts_with**     | Starts with a text    | %5E         | | GET /api/users?filter[id]^test HTTP/1.1                  |
+|          |                     |                       |             | | GET /api/users?filter[id][starts_with]=test HTTP/1.1     |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **!^**   | **not_starts_with** | Not starts with       | %21%5E      | | GET /api/users?filter[id]!^test HTTP/1.1                 |
+|          |                     | a text                |             | | GET /api/users?filter[id][not_starts_with]=test HTTP/1.1 |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **$**    | **ends_with**       | Ends with a text      | %24         | | GET /api/users?filter[id]$test HTTP/1.1                  |
+|          |                     |                       |             | | GET /api/users?filter[id][ends_with]=test HTTP/1.1       |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
+| **!$**   | **not_ends_with**   | Not ends with         | %21%24      | | GET /api/users?filter[id]!$test HTTP/1.1                 |
+|          |                     | a text                |             | | GET /api/users?filter[id][not_ends_with]=test HTTP/1.1   |
++----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 
 
 Example. Use Operators to Filter Data
