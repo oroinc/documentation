@@ -96,7 +96,7 @@ For instance, the following configuration excludes all files from the ``frontend
 Application Themes
 ------------------
 
-A theme is a set of CSS and/or LESS files that customize the look and feel of OroPlatform. A
+A theme is a set of CSS and/or SCSS files that customize the look and feel of OroPlatform. A
 theme has the following properties:
 
 ==============  ========  ===========================================================
@@ -104,7 +104,7 @@ Property        Required  Description
 ==============  ========  ===========================================================
 ``name``        yes       A unique name
 ``label``       no        A string that will be displayed in the theme management UI.
-``styles``      yes       The list of CSS and LESS files that define the theme.
+``styles``      yes       The list of CSS and SCSS files that define the theme.
 ``icon``        no        The theme's favicon.
 ``logo``        no        A logo that will be shown in the theme management UI.
 ``screenshot``  no        A screenshot of the theme to be shown in the management UI.
@@ -198,7 +198,7 @@ To use the theme in any application, enable it in the application configuration:
          - label: Demo Theme
          - logo: bundles/oroui/themes/demo/images/favicon.ico
          - styles:
-             - bundles/oroui/themes/demo/css/less/main.less
+             - bundles/oroui/themes/demo/css/scss/main.scss
              - bundles/oroui/themes/demo/css/style.css
         mytheme
          - label: My Theme
