@@ -381,6 +381,6 @@ This filter can be added to the grid configuration similarly to how we added new
         }
     }
 
-A fully working example, organized into a custom bundle is available `here <https://www.oroinc.com/orocommerce/downloads/customgridbundle-zip?wpdmdl=1647>`_ (Download 13.47 KB).
+A fully working example, organized into a custom bundle is available `here <https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/CustomGridBundle.zip>`_ (Download 13.47 KB).
 
 In order to add this bundle to your application please extract the content of the zip archive into a source code directory that is recognized by your composer autoload settings.
