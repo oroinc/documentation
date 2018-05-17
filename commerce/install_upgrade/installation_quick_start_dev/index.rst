@@ -8,9 +8,8 @@ Use the application-specific installation guides below to install the particular
 .. toctree::
    :maxdepth: 1
 
+   commerce-crm
+   commerce-crm-de
    commerce-crm-ee
    commerce-crm-ee-de
    commerce-ee
-   commerce-crm
-   commerce-crm-de
-   platform

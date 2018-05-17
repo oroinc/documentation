@@ -2,8 +2,8 @@
 
 .. begin_installation_via_UI
 
-Via Installation Wizard
-~~~~~~~~~~~~~~~~~~~~~~~
+Installation Via UI
+~~~~~~~~~~~~~~~~~~~
 
 .. See this quick preview of the installation wizard steps:
 
@@ -53,7 +53,7 @@ Via Installation Wizard
 
    .. image:: /install_upgrade/img/installation/wizard-3.png
 
-   .. hint:: If something goes wrong and a failure occurs, you can check error logs in the ``var/logs/oro_install.log`` file. Fix the errors, click the **Back** button and repeat.
+   .. hint:: If something goes wrong and a failure occurs, you can check error logs in the ``app/logs/oro_install.log`` file. Fix the errors, click the **Back** button and repeat.
 
    Click **Next** when status turns green for every step.
 
@@ -78,7 +78,7 @@ Via Installation Wizard
 
         .. image:: /install_upgrade/img/installation/wizard-5.png
 
-        .. hint:: If something goes wrong and a failure occurs, you can check error logs in the var/logs/oro_install. Fix the errors, click **Back** and repeat the installation step.
+        .. hint:: If something goes wrong and a failure occurs, you can check error logs in the app/logs/oro_install. Fix the errors, click **Back** and repeat the installation step.
 
         Once installation is complete, click **Next**.
 

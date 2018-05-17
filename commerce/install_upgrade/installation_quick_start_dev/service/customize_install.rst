@@ -3,15 +3,11 @@
 Customizing the Installation Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin_custom_installation_intro
-
 To customize the installation process and modify the database structure and/or data that are loaded in the |main_app_in_this_topic| after installation, you can:
 
-- :ref:`Execute custom migrations <execute-custom-migrations>`, and
-
-- :ref:`Load custom data fixtures <load-custom-data-fixtures>`
-
-.. finish_custom_installation_intro
+.. contents::
+    :local:
+    :depth: 1
 
 .. _execute-custom-migrations:
 

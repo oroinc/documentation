@@ -20,7 +20,6 @@ the |oro_app_name| application (for example, 1.6, 1.6.8, 1.6.9, etc.).
    :start-after: begin_body
    :end-before: finish_body
 
-
 * :ref:`User Guide: Getting Started <user-guide--getting-started>`
 * :ref:`User Guide: Commerce <user-guide>`
 * :ref:`User Guide: Marketing <user-guide-marketing>`
