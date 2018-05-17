@@ -7,8 +7,14 @@ Step 3: |oro_app_name| Application Installation (Part 2)
 
 .. begin_body
 
-Install Oro Application Dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. note::
+
+    Alternatively, you can download and unpack the archive with |oro_app_name| source code instead of using Git repository.
+    Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>`
+    for more details.
+
+Install Application Dependencies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Run the Composer Install
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -19,17 +25,16 @@ Run the Composer Install
 
 The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
 
-Note that you are prompted to enter the installation environment configuration and
-integration parameters (database name, user, etc.) that are saved into the *app/config/parameters.yml* file.
-
-.. warning:: Ensure you provide the configuration values specific for your environment.
+Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
+are saved into the *app/config/parameters.yml* file. A description for every parameter you can find in the
+:ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
 Configure WebSocket Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you use HTTP for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *app/config/parameters.yml* file.
+If you use HTTP mode for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *app/config/parameters.yml* file.
 
-If you use HTTPS, open the *app/config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
+If you use HTTPS mode, open the *app/config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
 
 .. code::
 
@@ -44,29 +49,31 @@ If you use HTTPS, open the *app/config/parameters.yml* file and change the WebSo
 
 For more information on these parameters, see `OroSyncBundle documentation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle>`_.
 
-Install Oro Application
-^^^^^^^^^^^^^^^^^^^^^^^
+Install |oro_app_name| Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To start the |oro_app_name| installation, run the following command:
 
 .. code:: bash
 
-   php ./bin/console oro:install --env=prod --timeout=900
+   php ./app/console oro:install --env=prod --timeout=900
 
 Follow the on-screen instructions in the console.
 
-Alternatively, use the web installer as described in the `Installation via UI`_ topic.
+.. note::
 
-Before you launch the installation via UI, make the application files and folders writable for the *nginx*
-user. When the installation is complete, revert the file permission to restore the original ones.
+    Alternatively, use the web installer as described in the `Installation via UI`_ topic. Before you launch the installation
+    via UI, make the application files and folders writable for the *nginx*
+    user. When the installation is complete, revert the file permission to restore the original ones.
 
-To install the application with demo data, use the `--sample-data` option. To add demo data on to of the installed application, run the following command:
+You will be prompted to choose the installation with- or without- demo data. If you discard demo data during installation,
+you can install it later by running the following command:
 
 .. code:: bash
 
-   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
+   sudo -u nginx php ./app/console oro:migration:data:load --fixtures-type=demo --env=prod
 
-**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCommerce after installation, you can:
+**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCrm after installation, you can:
 
 * :ref:`Execute custom migrations <execute-custom-migrations>`, and
 
@@ -101,7 +108,7 @@ To schedule execution of the *oro:cron* command every-minute, add the following 
 
 .. code::
 
-   */1 * * * * php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null
+   */1 * * * * php /usr/share/nginx/html/oroapp/app/console oro:cron --env=prod > /dev/null
 
 Save the updated file.
 
@@ -124,10 +131,12 @@ Configure the supervisor
 
 Add the following configuration sections to the */etc/supervisord.conf* Supervisord config file:
 
+.. finish_common_ce_part_5
+
 .. code::
 
    [program:oro_web_socket]
-   command=php ./bin/console clank:server --env=prod
+   command=php ./app/console clank:server --env=prod
    numprocs=1
    autostart=true
    autorestart=true
@@ -136,7 +145,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
    redirect_stderr=true
 
    [program:oro_message_consumer]
-   command=php ./bin/console oro:message-queue:consume --env=prod
+   command=php ./app/console oro:message-queue:consume --env=prod
    process_name=%(program_name)s_%(process_num)02d
    numprocs=5
    autostart=true
@@ -144,6 +153,8 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
    directory=/usr/share/nginx/html/oroapp
    user=nginx
    redirect_stderr=true
+
+.. begin_common_ce_part_6
 
 Restart Supervisord
 ~~~~~~~~~~~~~~~~~~~
@@ -182,12 +193,28 @@ You should now be able to open the homepage *http(s)://<your_domain_name>/* and 
 What's Next
 -----------
 
+Optimization, Scalability, and Configuration Recommendations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you're interested in customization of described installation scenario, please, refer to the following topics:
+
+* :ref:`Get the Oro Application Source Code <installation--get-files>`
+* :ref:`Customizing the Installation Process <customize_install>`
+* :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>`
+* :ref:`Web Server Configuration <installation--web-server-configuration>`
+* :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>`
+* :ref:`Silent Installation <silent-installation>`
+* :ref:`Installation Via UI Wizard <book-installation-wizard>`
+
+User Guides
+^^^^^^^^^^^
+
 To become familiar with |oro_app_name| functional as user or developer, please, read the following guides:
 
-.. finish_common_ce_part_5
+.. finish_common_ce_part_6
 
 .. finish_body
 
 .. |oro_app_name| replace:: Oro application
 
-.. _Installation via UI: https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation/installation-via-UI
+.. _Installation via UI: https://oroinc.com/orocrm/doc/current/install-upgrade/installation/installation-via-UI

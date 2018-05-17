@@ -2,8 +2,8 @@
 
 .. begin_installation_via_UI
 
-Via Installation Wizard
-~~~~~~~~~~~~~~~~~~~~~~~
+Installation Via UI
+~~~~~~~~~~~~~~~~~~~
 
 .. See this quick preview of the installation wizard steps:
 
@@ -37,12 +37,12 @@ Via Installation Wizard
 
      		* provide a driver (either MySQL or PostgreSQL),
      		* enter the database server host and port,
-     		* enter the database name (*Name*), user name and password for OroCommerce authentication with the database server.
-     		* For re-installation, specify whether OroCommerce should remove the existing database table contents. Available options are *None*, *Application Tables*, *All Tables*. The default value is *None*.
+     		* enter the database name (*Name*), user name and password for OroCRM authentication with the database server.
+     		* For re-installation, specify whether OroCRM should remove the existing database table contents. Available options are *None*, *Application Tables*, *All Tables*. The default value is *None*.
 
      b) In *System settings*, specify the system language and the secret for OAuth 2 client authorization.
-     c) In *Web settings*, provide the prefix that will be attached to the application URL to access the OroCommerce configuration and administration application (backend).
-     d) In *Mailer settings*, select the transport for the emails OroCommerce will be sending. Available options are *PHP mail*, *SMTP*, and *sendmail*. When you select the *SNMP*, please, provide the following mail server connection details: host, port, encryption (None, SSL, TLS), user name, and password.
+     c) In *Web settings*, provide the prefix that will be attached to the application URL to access the OroCRM configuration and administration application (backend).
+     d) In *Mailer settings*, select the transport for the emails OroCRM will be sending. Available options are *PHP mail*, *SMTP*, and *sendmail*. When you select the *SNMP*, please, provide the following mail server connection details: host, port, encryption (None, SSL, TLS), user name, and password.
      e) In the *Websocket connection*, set up your web service network configuration: service bind address and port, WS backend and frontend host/post.
 
    Once you are happy with the information you have provided, click **Next**.
@@ -53,7 +53,7 @@ Via Installation Wizard
 
    .. image:: /install_upgrade/img/installation/wizard-3.png
 
-   .. hint:: If something goes wrong and a failure occurs, you can check error logs in the ``var/logs/oro_install.log`` file. Fix the errors, click the **Back** button and repeat.
+   .. hint:: If something goes wrong and a failure occurs, you can check error logs in the ``app/logs/oro_install.log`` file. Fix the errors, click the **Back** button and repeat.
 
    Click **Next** when status turns green for every step.
 
@@ -66,11 +66,11 @@ Via Installation Wizard
 6. At the *Administration* step, provide the following information:
 
      a) Organization name
-     b) Application URL (e.g. http://commerce.MyCompany.com)
+     b) Application URL (e.g. http://crm.MyCompany.com)
      c) Create the first system administrator by providing a user name, a password (with confirmation), an email, and their first and last name.
      d) If necessary, select the *Load Sample Data* check box.
 
-        .. note:: Load Sample Data only for learning purposes, test deployments and pre-production deployments. In this mode, OroCommerce is populated with sample data that help you unlock all the features so that you can quickly test the system after re-configuration or customization.
+        .. note:: Load Sample Data only for learning purposes, test deployments and pre-production deployments. In this mode, OroCRM is populated with sample data that help you unlock all the features so that you can quickly test the system after re-configuration or customization.
 
      .. _a-5-finalization:
 
@@ -78,13 +78,13 @@ Via Installation Wizard
 
         .. image:: /install_upgrade/img/installation/wizard-5.png
 
-        .. hint:: If something goes wrong and a failure occurs, you can check error logs in the var/logs/oro_install. Fix the errors, click **Back** and repeat the installation step.
+        .. hint:: If something goes wrong and a failure occurs, you can check error logs in the app/logs/oro_install. Fix the errors, click **Back** and repeat the installation step.
 
         Once installation is complete, click **Next**.
 
 .. _a-6-launch-the-application:
 
-7. At the *Finish* step, click **Launch Application** to open the OroCommerce Administration Login screen.
+7. At the *Finish* step, click **Launch Application** to open the OroCRM Administration Login screen.
 
    .. image:: /install_upgrade/img/installation/wizard-6.png
 

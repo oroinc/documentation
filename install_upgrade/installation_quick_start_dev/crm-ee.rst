@@ -31,3 +31,11 @@ the |oro_app_name| application (for example, 2.6, 2.6.8, 2.6.9, etc.).
 
 .. _System Requirements: https://oroinc.com/orocrm/doc/current/system-requirements
 .. _Installation via UI: https://oroinc.com/orocrm/doc/current/install-upgrade/installation/installation-via-ui
+
+.. toctree::
+   :includehidden:
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+   service/index
