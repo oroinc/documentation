@@ -2,8 +2,8 @@
 
 .. begin_installation_via_UI
 
-Via Installation Wizard
-~~~~~~~~~~~~~~~~~~~~~~~
+Installation Via UI
+~~~~~~~~~~~~~~~~~~~
 
 .. See this quick preview of the installation wizard steps:
 

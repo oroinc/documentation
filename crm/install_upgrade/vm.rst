@@ -48,9 +48,9 @@ Ensure that the server is installed in your local or corporate environment and i
         * *Windows:* c:\windows\system32\drivers\etc\hosts
         * *Linux:* /etc/hosts
 
-    b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocommerce.com) and save the file.
+    b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocrm.com) and save the file.
 
-   To start using the Oro application demo, type in the suggested hostname (e.g., acme.orocommerce.com) in the browser on your device.
+   To start using the Oro application demo, type in the suggested hostname (e.g., acme.orocrm.com) in the browser on your device.
 
 .. finish_virtual_machine_deployment
 

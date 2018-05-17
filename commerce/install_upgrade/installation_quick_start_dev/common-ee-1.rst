@@ -67,7 +67,7 @@ Install PHP 7.1 and the required dependencies using the following command:
 Install Composer
 ^^^^^^^^^^^^^^^^
 
-Run the commands below, or use the Composer installation process described in the
+Run the commands below, or use another Composer installation process described in the
 `official documentation <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx>`_.
 
 .. code:: bash
@@ -173,7 +173,7 @@ To configure PHP, perform the following changes in the configuration files:
      group = nginx
      catch_workers_output = yes
 
-* In the `PHP.INI` file (*/etc/opt/oro/oro-php71/php.ini*) --- Change the memory limit and cache configuration to the following:
+* In the `php.ini` file (*/etc/opt/oro/oro-php71/php.ini*) --- Change the memory limit and cache configuration to the following:
 
   .. code::
 
@@ -181,7 +181,7 @@ To configure PHP, perform the following changes in the configuration files:
      realpath_cache_size=4096K
      realpath_cache_ttl=600
 
-* In the 10-opcache.ini file (*/etc/opt/oro/oro-php71/php.d/10-opcache.ini*) --- Modify the OPcache parameter to match the following values:
+* In the opcache.ini file (*/etc/opt/oro/oro-php71/php.d/10-opcache.ini*) --- Modify the OPcache parameter to match the following values:
 
   .. code::
 

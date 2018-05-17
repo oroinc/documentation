@@ -23,7 +23,7 @@ For silent installation, use -n (no interaction) and -q (silence the output mess
 	        --force
 	        --timeout=10000
 
-.. note:: Use *--sample-data=y* only for learning purposes, test deployments and pre-production deployments. In this mode, OroCommerce is populated with sample data that help you unlock all the features so that you can quickly test the system after re-configuration or customization.
+.. note:: Use *--sample-data=y* only for learning purposes, test deployments and pre-production deployments. In this mode, OroCRM is populated with sample data that help you unlock all the features so that you can quickly test the system after re-configuration or customization.
 
 .. note:: The installation process terminates with the warning if the environment does not meet any of the system requirements. You can try launching installation again after you fix the reported issue(s).
 

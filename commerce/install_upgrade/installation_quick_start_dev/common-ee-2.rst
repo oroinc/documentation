@@ -89,6 +89,11 @@ To enable Redis cache storage configuration, ensure the following lines are adde
 
 .. warning:: The *redis_dsn_session*, *redis_dsn_cache*, *redis_dsn_doctrine*, *redis_setup* parameters are mot included into the *app/config/parameters.yml* by default.
 
+.. note::
+
+   To improve application performance, you can configure two Redis instances to store separately the sessions and the
+   doctrine application cache as described in the `OroRedisConfigBundle documentation <https://github.com/oroinc/redis-config>`_.
+
 Enterprise Application Licence
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -121,12 +126,14 @@ To start the |oro_app_name| installation, run the following command:
 
 Follow the on-screen instructions in the console.
 
-Alternatively, use the web installer as described in the `Installation via UI`_ topic.
+.. note::
 
-Before you launch the installation via UI, make the application files and folders writable for the *nginx*
-user. When the installation is complete, revert the file permission to restore the original ones.
+    Alternatively, use the web installer as described in the `Installation via UI`_ topic. Before you launch the installation
+    via UI, make the application files and folders writable for the *nginx*
+    user. When the installation is complete, revert the file permission to restore the original ones.
 
-To install the application with demo data, use the `--sample-data` option. To add demo data on to of the installed application, run the following command:
+You will be prompted to choose the installation with- or without- demo data. If you discard demo data during installation,
+you can install it later by running the following command:
 
 .. code:: bash
 
@@ -179,6 +186,31 @@ Configure and Run Required Background Processes
 .. include:: /install_upgrade/installation_quick_start_dev/common-ce-2.rst
    :start-after: begin_common_ce_part_5
    :end-before: finish_common_ce_part_5
+
+.. code::
+
+   [program:oro_web_socket]
+   command=scl enable oro-php71 'php ./app/console clank:server --env=prod'
+   numprocs=1
+   autostart=true
+   autorestart=true
+   directory=/usr/share/nginx/html/oroapp
+   user=nginx
+   redirect_stderr=true
+
+   [program:oro_message_consumer]
+   command=scl enable oro-php71 'php ./app/console oro:message-queue:consume --env=prod'
+   process_name=%(program_name)s_%(process_num)02d
+   numprocs=5
+   autostart=true
+   autorestart=true
+   directory=/usr/share/nginx/html/oroapp
+   user=nginx
+   redirect_stderr=true
+
+.. include:: /install_upgrade/installation_quick_start_dev/common-ce-2.rst
+   :start-after: begin_common_ce_part_6
+   :end-before: finish_common_ce_part_6
 
 .. finish_body
 

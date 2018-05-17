@@ -3,15 +3,11 @@
 Customizing the Installation Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin_custom_installation_intro
-
 To customize the installation process and modify the database structure and/or data that are loaded in the |main_app_in_this_topic| after installation, you can:
 
-- :ref:`Execute custom migrations <execute-custom-migrations>`, and
-
-- :ref:`Load custom data fixtures <load-custom-data-fixtures>`
-
-.. finish_custom_installation_intro
+.. contents::
+    :local:
+    :depth: 1
 
 .. _execute-custom-migrations:
 
@@ -24,20 +20,20 @@ A migration is a class which implements the :class:`Oro\\Bundle\\MigrationBundle
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/Migration/CustomMigration.php
-    namespace Acme\DemoBundle\Migration;
+        // src/Acme/DemoBundle/Migration/CustomMigration.php
+        namespace Acme\DemoBundle\Migration;
 
-    use Doctrine\DBAL\Schema\Schema;
-    use Oro\Bundle\MigrationBundle\Migration\Migration;
-    use Oro\Bundle\MigrationBundle\Migration\QueryBag;
+        use Doctrine\DBAL\Schema\Schema;
+        use Oro\Bundle\MigrationBundle\Migration\Migration;
+        use Oro\Bundle\MigrationBundle\Migration\QueryBag;
 
-    class CustomMigration implements Migration
-    {
-        public function up(Schema $schema, QueryBag $queries)
+        class CustomMigration implements Migration
         {
-            // ...
+            public function up(Schema $schema, QueryBag $queries)
+            {
+                // ...
+            }
         }
-    }
 
 In the :method:`Oro\\Bundle\\MigrationBundle\\Migration\\Migration::up`,
 you can modify the database schema and/or add additional SQL queries that
@@ -53,27 +49,27 @@ of the passed event instance to register your custom migrations:
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
-    namespace Acme\DemoBundle\EventListener;
+        // src/Acme/DemoBundle/EventListener/RegisterCustomMigrationListener.php
+        namespace Acme\DemoBundle\EventListener;
 
-    use Acme\DemoBundle\Migration\CustomMigration;
-    use Oro\Bundle\MigrationBundle\Event\PostMigrationEvent;
-    use Oro\Bundle\MigrationBundle\Event\PreMigrationEvent;
+        use Acme\DemoBundle\Migration\CustomMigration;
+        use Oro\Bundle\MigrationBundle\Event\PostMigrationEvent;
+        use Oro\Bundle\MigrationBundle\Event\PreMigrationEvent;
 
-    class RegisterCustomMigrationListener
-    {
-        // listening to the oro_migration.pre_up event
-        public function preUp(PreMigrationEvent $event)
+        class RegisterCustomMigrationListener
         {
-            $event->addMigration(new CustomMigration());
-        }
+            // listening to the oro_migration.pre_up event
+            public function preUp(PreMigrationEvent $event)
+            {
+                $event->addMigration(new CustomMigration());
+            }
 
-        // listening to the oro_migration.post_up event
-        public function postUp(PostMigrationEvent $event)
-        {
-            $event->addMigration(new CustomMigration());
+            // listening to the oro_migration.post_up event
+            public function postUp(PostMigrationEvent $event)
+            {
+                $event->addMigration(new CustomMigration());
+            }
         }
-    }
 
 .. tip::
 
@@ -93,19 +89,19 @@ To load your own data fixtures, you will need to implement Doctrine's *"FixtureI
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
-    namespace Acme\DemoBundle\Migrations\Data\ORM;
+        // src/Acme/DemoBundle/Migrations/Data/ORM/CustomFixture.php
+        namespace Acme\DemoBundle\Migrations\Data\ORM;
 
-    use Doctrine\Common\DataFixtures\FixtureInterface;
-    use Doctrine\Common\Persistence\ObjectManager;
+        use Doctrine\Common\DataFixtures\FixtureInterface;
+        use Doctrine\Common\Persistence\ObjectManager;
 
-    class CustomFixture implements FixtureInterface
-    {
-        public function load(ObjectManager $manager)
+        class CustomFixture implements FixtureInterface
         {
-            // ...
+            public function load(ObjectManager $manager)
+            {
+                // ...
+            }
         }
-    }
 
 .. caution::
 

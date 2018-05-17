@@ -11,11 +11,7 @@ The information is grouped into the following topics:
 
   * :ref:`OroPlatform <installation--platform--readme>`
   * :ref:`OroCRM Community Edition <installation--crm-ce--readme>`
-  * :ref:`OroCommerce Community Edition <installation--orocommerce-crm-ce--readme>`
-  * :ref:`OroCommerce Community Edition for Germany <installation--orocommerce-crm-de--readme>`
   * :ref:`OroCRM Enterprise Edition <installation--crm-ee--readme>`
-  * :ref:`OroCommerce Enterprise Edition <installation--orocommerce-crm-ee--readme>`
-  * :ref:`OroCommerce Enterprise Edition for Germany <installation--orocommerce-crm-ee-de--readme>`
 
 .. Automated Installation via Vagrant file -- Automated installation using prepared images or provision configuration to familiarize themselves with the app functional.
 

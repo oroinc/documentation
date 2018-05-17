@@ -16,12 +16,12 @@ The information is grouped into the following sections:
 
 .. contents::
    :local:
-   :depth: 5
+   :depth: 2
 
 Step 1: Environment Setup
 -------------------------
 
-We are demonstrating the installation process using the following environment:
+We are demonstrating the installation process using the certain versions of the recommended environmental components:
 
 .. finish_common_ce_part_1
 
@@ -36,11 +36,17 @@ We are demonstrating the installation process using the following environment:
 
 .. begin_common_ce_part_2
 
-If you are using is the same environment, you can reuse the commands provided below without modification. Otherwise, please adjust them to match the syntax supported by the tools of your choice.
+.. note::
 
-.. warning::
+   Please refer to the :ref:`System Requirements <system-requirements>` for the complete list of the alternatives of the
+   required environment components and their supported versions.
 
-   Ensure that you use the supported versions of Oro application and environment components. Please refer to the :ref:`System Requirements <system-requirements>` for the complete list.
+If you are using the same environment, you can reuse the commands provided below without modification. Otherwise, please adjust them to match the syntax supported by the tools of your choice.
+
+.. note:
+   In the current installation example we setup the simple one-server application environment. To see recommendations
+   how to configure the scalable multi-server Oro application environment please see the
+   :ref:`Scalable Environment Configuration <installation--scalable-configuration>` article.
 
 Prepare a Server with OS
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -108,7 +114,7 @@ Next, install PHP 7.1 and the required dependencies using the following command:
 Install Composer
 ^^^^^^^^^^^^^^^^
 
-Run the commands below, or use the Composer installation process described in the
+Run the commands below, or use another Composer installation process described in the
 `official documentation <https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx>`_.
 
 .. code:: bash
@@ -379,6 +385,11 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
 Replace *<your_domain_name>* with your configured domain name. In addition, change *ssl_certificate_key* and
 *ssl_certificate* with the actual values of your active SSL certificate.
 
+Optionally, you can enable and configure `Apache PageSpeed module <https://www.modpagespeed.com/>`_ for Nginx to improve
+web page latency as described in the :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>` article.
+
+.. note:: If you choose the Apache web server instead of Nginx one, the example of the web server configuration you can find in the :ref:`Web Server Configuration <installation--web-server-configuration>` article.
+
 .. finish_common_ce_part_4
 
 For the changes to take effect, restart `nginx` by running:
@@ -418,7 +429,7 @@ To configure PHP, perform the following changes in the configuration files:
      group = nginx
      catch_workers_output = yes
 
-* In the `PHP.INI` file (*/etc/php.ini*) --- Change the memory limit and cache configuration to the following:
+* In the `php.ini` file (*/etc/php.ini*) --- Change the memory limit and cache configuration to the following:
 
   .. code::
 
@@ -426,7 +437,7 @@ To configure PHP, perform the following changes in the configuration files:
      realpath_cache_size=4096K
      realpath_cache_ttl=600
 
-* In the 10-opcache.ini file (*/etc/php.d/10-opcache.ini*) --- Modify the OPcache parameter to match the following values:
+* In the `opcache.ini` file (*/etc/php.d/10-opcache.ini*) --- Modify the OPcache parameter to match the following values:
 
   .. code::
 
@@ -446,7 +457,7 @@ For the changes to take effect, restart PHP-FPM by running:
 Step 3: |oro_app_name| Application Installation
 -----------------------------------------------
 
-Get |oro_app_name| Source Code
+Get Application Source Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. |recommended_OS| replace:: CentOS v7.4

@@ -9,7 +9,7 @@ Clone |oro_app_name| source code to */usr/share/nginx/html/oroapp* folder:
 .. code:: bash
 
    cd /usr/share/nginx/html
-   git clone -b 1.6.9 https://github.com/oroinc/crm-enterprise-application.git oroapp
+   git clone -b 2.6.9 https://github.com/oroinc/crm-enterprise-application.git oroapp
    cd oroapp
 
 The *branch* value (*2.6.9* in this example) could be changed to any published
@@ -31,3 +31,11 @@ the |oro_app_name| application (for example, 2.6, 2.6.8, 2.6.9, etc.).
 
 .. _System Requirements: https://oroinc.com/orocrm/doc/current/system-requirements
 .. _Installation via UI: https://oroinc.com/orocrm/doc/current/install-upgrade/installation/installation-via-ui
+
+.. toctree::
+   :includehidden:
+   :titlesonly:
+   :maxdepth: 1
+   :hidden:
+
+   service/index

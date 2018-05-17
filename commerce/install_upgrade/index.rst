@@ -9,7 +9,6 @@ The information is grouped into the following topics:
 
 * :ref:`Manual Installation <install-for-dev>` -- Comprehensive step-by-step guides that help administrators and developers install the particular Oro application in the development, staging, or production environment. After installation, Oro application is ready for use, further development (customization), and troubleshooting. See the application-specific installation steps for every Oro application:
 
-  * :ref:`OroPlatform <installation--platform--readme>`
   * :ref:`OroCommerce Community Edition <installation--orocommerce-crm-ce--readme>`
   * :ref:`OroCommerce Community Edition for Germany <installation--orocommerce-crm-de--readme>`
   * :ref:`OroCommerce Enterprise Edition <installation--orocommerce-crm-ee--readme>`
