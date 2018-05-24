@@ -462,7 +462,7 @@ An example of ``Resources/oro/routing.yml`` configuration file:
         options:
             group: rest_api
 
-An information about ``ApiDoc`` annotation can be found in `Symfony documentation <https://symfony.com/doc/current/bundles/NelmioApiDocBundle/the-apidoc-annotation.html>`__. To find all possible properties of ``fields`` option take a look at `AbstractFormatter class in NelmioApiDocBundle <https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Formatter/AbstractFormatter.php>`__. Please note that ``fields`` option can be used inside ``input`` and ``output`` options.
+An information about ``ApiDoc`` annotation can be found in `Symfony documentation <https://symfony.com/doc/2.x/bundles/NelmioApiDocBundle/the-apidoc-annotation.html>`__. To find all possible properties of ``fields`` option take a look at `AbstractFormatter class in NelmioApiDocBundle <https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Formatter/AbstractFormatter.php>`__. Please note that ``fields`` option can be used inside ``input`` and ``output`` options.
 
 Use `oro:api:doc:cache:clear <./commands#oroapidoccacheclear>`__ command to apply changes in ``ApiDoc`` annotation to `API Sandbox <https://oroinc.com/doc/orocrm/current/dev_guide/web_api#api-sandbox>`__.
 
