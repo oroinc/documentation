@@ -76,9 +76,10 @@ to the channel:
 
     // src/AppBundle/Resources/config/integration.yml
     services:
-        class: AppBundle\Integration\TaskChannel
-        tags:
-            - { name: oro_integration.channel, type: app_channel }
+        app.integration.task:
+            class: AppBundle\Integration\TaskChannel
+            tags:
+                - { name: oro_integration.channel, type: app_channel }
 
 .. _cookbook-integration-transport:
 
@@ -116,9 +117,10 @@ channel:
 
         // src/AppBundle/Resources/config/integration.yml
         services:
-            class: AppBundle\Integration\RestTransport
-            tags:
-                - { name: oro_integration.transport, channel_type: app_channel, type: rest }
+            app.integration.transport.rest:
+                 class: AppBundle\Integration\RestTransport
+                tags:
+                    - { name: oro_integration.transport, channel_type: app_channel, type: rest }
 
 .. _cookbook-integration-connector:
 
