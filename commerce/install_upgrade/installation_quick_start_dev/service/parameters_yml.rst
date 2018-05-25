@@ -3,7 +3,7 @@
 Infrastructure-related Oro Application Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Infrastructure-related configuration parameters are stored in the *app/config/parameters.yml* file and grouped in the following way:
+Infrastructure-related configuration parameters are stored in the *config/parameters.yml* file and grouped in the following way:
 
 * The ``database_`` parameters are used to connect to the database.
 * The ``mailer_`` parameters define settings used to deliver emails sent by the application.
@@ -63,7 +63,7 @@ Default configuration options for the Oro application are provided in brackets b
 The Sample of Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The sample contents of the **<installation directory>/app/config/parameters.yml** file for OroCommerce:
+The sample contents of the **<installation directory>/config/parameters.yml** file for OroCommerce:
 
 .. code-block:: none
    :linenos:

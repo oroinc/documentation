@@ -26,15 +26,15 @@ Run the Composer Install
 The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
 
 Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
-are saved into the *app/config/parameters.yml* file. A description for every parameter you can find in the
+are saved into the *config/parameters.yml* file. A description for every parameter you can find in the
 :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
 Configure WebSocket Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you use HTTP mode for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *app/config/parameters.yml* file.
+If you use HTTP mode for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *config/parameters.yml* file.
 
-If you use HTTPS mode, open the *app/config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
+If you use HTTPS mode, open the *config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
 
 .. code::
 
@@ -56,7 +56,7 @@ To start the |oro_app_name| installation, run the following command:
 
 .. code:: bash
 
-   php ./app/console oro:install --env=prod --timeout=900
+   php ./bin/console oro:install --env=prod --timeout=900
 
 Follow the on-screen instructions in the console.
 
@@ -71,7 +71,7 @@ you can install it later by running the following command:
 
 .. code:: bash
 
-   sudo -u nginx php ./app/console oro:migration:data:load --fixtures-type=demo --env=prod
+   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
 
 **For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCommerce after installation, you can:
 
@@ -89,8 +89,8 @@ As *nginx* user should be able to create folders, run the following commands to 
    setfacl -b -R ./
    find . -type f -exec chmod 0644 {} \;
    find . -type d -exec chmod 0755 {} \;
-   chown -R nginx:nginx ./app/{attachment,cache,import_export,logs}
-   chown -R nginx:nginx ./web/{media,uploads,js}
+   chown -R nginx:nginx ./var/{sessions,attachment,cache,import_export,logs}
+   chown -R nginx:nginx ./public/{media,uploads,js}
 
 Step 4: Post-installation Environment Configuration
 ---------------------------------------------------
@@ -108,7 +108,7 @@ To schedule execution of the *oro:cron* command every-minute, add the following 
 
 .. code::
 
-   */1 * * * * php /usr/share/nginx/html/oroapp/app/console oro:cron --env=prod > /dev/null
+   */1 * * * * php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null
 
 Save the updated file.
 
@@ -136,7 +136,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
 .. code::
 
    [program:oro_web_socket]
-   command=php ./app/console clank:server --env=prod
+   command=php ./bin/console clank:server --env=prod
    numprocs=1
    autostart=true
    autorestart=true
@@ -145,7 +145,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
    redirect_stderr=true
 
    [program:oro_message_consumer]
-   command=php ./app/console oro:message-queue:consume --env=prod
+   command=php ./bin/console oro:message-queue:consume --env=prod
    process_name=%(program_name)s_%(process_num)02d
    numprocs=5
    autostart=true

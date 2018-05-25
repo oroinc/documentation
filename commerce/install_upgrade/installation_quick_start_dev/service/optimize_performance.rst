@@ -123,7 +123,7 @@ To enable ``HTML compression``, add the following lines into your ``nginx.conf``
 For Apache
 ~~~~~~~~~~
 
-If you are using Apache as your web server, you already have the necessary configuration in the ``web/.htaccess`` file.
+If you are using Apache as your web server, you already have the necessary configuration in the ``public/.htaccess`` file.
 
 However, this configuration rely on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
 and caching to work. Ensure these modules are enabled in Apache configuration.

@@ -22,7 +22,7 @@ However, it is recommended to enable price list sharding if you are experiencing
 Configure Price List Sharding
 -----------------------------
 
-1. To enable price list sharding, set the following parameter in app/config/parameters.yml:
+1. To enable price list sharding, set the following parameter in config/parameters.yml:
 
 	``enable_price_sharding: true``
      
@@ -35,7 +35,7 @@ Disable Price Sharding
 
 To restore the default price storage structure:
 
-1. To disable price list sharding, change app/config/parameters.yml to set ``enable_price_sharding: false``.
+1. To disable price list sharding, change config/parameters.yml to set ``enable_price_sharding: false``.
 
 2. To reorganize storage and join sharded price tables into one, run the following command:
          

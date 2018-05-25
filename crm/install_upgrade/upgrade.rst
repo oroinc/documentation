@@ -39,10 +39,10 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
    .. note::
 
       If you have any customization or third party extensions installed, make sure that:
-        - your changes to "app/AppKernel.php" file are merged to the new file.
+        - your changes to "src/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
         - your changes to "composer.json" file are merged to the new file.
-        - your changes to configuration files in "app/config/" folder are merged to the new files.
+        - your changes to configuration files in "config/" folder are merged to the new files.
 
    .. code-block:: bash
 
@@ -60,9 +60,9 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
    .. code-block:: bash
 
-       sudo rm -rf app/cache/*
-       sudo rm -rf web/js/*
-       sudo rm -rf web/css/*
+       sudo rm -rf var/cache/*
+       sudo rm -rf public/js/*
+       sudo rm -rf public/css/*
 
 8. Upgrade the platform.
 
@@ -80,7 +80,7 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
    .. code-block:: bash
 
-      $ sudo rm -rf app/cache/*
+      $ sudo rm -rf var/cache/*
       $ sudo -u www-data bin/console cache:warmup --env prod
 
 10. Run the consumer(s).

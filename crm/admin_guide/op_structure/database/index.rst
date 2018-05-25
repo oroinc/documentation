@@ -40,7 +40,7 @@ Configuration
 Connection
 ^^^^^^^^^^
 
-DataBase connection is configured using the following parameters placed in app/config/parameters.yml:
+DataBase connection is configured using the following parameters placed in config/parameters.yml:
 
 .. code:: text
 

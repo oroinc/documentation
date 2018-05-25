@@ -9,7 +9,7 @@ To optimize |main_app_in_this_topic| for large enterprise deployments, you can s
 
 The following configuration may prepare |main_app_in_this_topic| for a high load and is described in the sections below:
 
-* Share the *[Application root]/app/cache* and *[Application root]/app/attachment* folder between all server instances, for example, using NFS.
+* Share the *[Application root]/var/cache* and *[Application root]/var/attachment* folder between all server instances, for example, using NFS.
 
 * Configure Nginx (http://nginx.org/) to proxy and load balance requests to php and fpm servers.
 
@@ -67,7 +67,7 @@ By default the parameters.yml is configured to store the session in files
    (*session_handler: *session.handler.native_file*). The simplest way to deal with the sessions in a web farm
    configuration is to store them in the DB - just change the value to "*session.handler.pdo*".
 
-You can also store them in Redis, APCu, or Memcached caching system. Use the following configuration  (in the *app/config/config.yml*):
+You can also store them in Redis, APCu, or Memcached caching system. Use the following configuration  (in the *config/config.yml*):
 
 APCu
 """"
@@ -126,7 +126,7 @@ Redis
 Caching Service
 ^^^^^^^^^^^^^^^
 
-Configure the *oro.cache.abstract* service that takes care of the cache that is shared among several nodes  (in the *app/config/config.yml*).
+Configure the *oro.cache.abstract* service that takes care of the cache that is shared among several nodes  (in the *config/config.yml*).
 
 APCu
 """"
@@ -142,7 +142,7 @@ APCu
 Memcached
 """""""""
 
-Configure the *oro.cache.abstract* service that takes care of the cache that is shared among several nodes (in the *app/config/config.yml*).
+Configure the *oro.cache.abstract* service that takes care of the cache that is shared among several nodes (in the *config/config.yml*).
 
    .. code-block:: yaml
       :linenos:
@@ -168,7 +168,7 @@ Redis
 
 **Recommended Configuration**
 
-Configuration in *app/config/config.yml*:
+Configuration in *config/config.yml*:
 
 .. code-block:: yaml
    :linenos:
@@ -184,7 +184,7 @@ Configuration in *app/config/config.yml*:
 
 .. method 2 - Redis ext (doctrine)
 
-Configuration in *app/config/config.yml*:
+Configuration in *config/config.yml*:
 
 .. code-block:: yaml
    :linenos:
@@ -197,7 +197,7 @@ Configuration in *app/config/config.yml*:
 Connnection to Redis Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. note:: All the configuration updates may be applied to the [Application root]/app/config/{config.yml, security.yml} or may happen inside your own bundle in the app.yml file.
+.. note:: All the configuration updates may be applied to the [Application root]/config/{config.yml, security.yml} or may happen inside your own bundle in the app.yml file.
 
 To configure connection to Redis server in OroCommerce:
 
@@ -240,7 +240,7 @@ To configure connection to Redis server in OroCommerce:
                - Snc\RedisBundle\SncRedisBundle
                ...
 
-4. Configure SncRedisBundle in the *app/config/config.yml* (see
+4. Configure SncRedisBundle in the *config/config.yml* (see
 `the SncRedisBundle documentation <https://github.com/snc/SncRedisBundle/blob/master/Resources/doc/index.md>`_ for detailed information):
 
    .. code-block:: yaml
@@ -271,7 +271,7 @@ To configure connection to Redis server in OroCommerce:
 
 .. Annotations Cache^^^^^^^^^^^^^^^^^
 .. remove this section (master only)
-.. Configuration in *app/config/config.yml*:
+.. Configuration in *config/config.yml*:
 
     .. code-block:: yaml
         :linenos:
@@ -290,7 +290,7 @@ To configure connection to Redis server in OroCommerce:
 Doctrine Cache
 ^^^^^^^^^^^^^^
 
-Configuration in *app/config/config.yml*:
+Configuration in *config/config.yml*:
 
     .. code-block:: yaml
         :linenos:
@@ -319,7 +319,7 @@ Configuration in *app/config/config.yml*:
 .. JMS Serializer Cache^^^^^^^^^^^^^^^^^^^^
 .. remove (master only)
 
-Configuration in *app/config/config.yml*:
+Configuration in *config/config.yml*:
 
     .. code-block:: yaml
         :linenos:
@@ -331,7 +331,7 @@ Configuration in *app/config/config.yml*:
 Serializer Cache
 ^^^^^^^^^^^^^^^^
 
-Configuration in *app/config/config.yml*:
+Configuration in *config/config.yml*:
 
 .. code-block:: yaml
    :linenos:
@@ -353,7 +353,7 @@ Security Nonces
 Since each nonce should be used only once, they cannot be stored on every server, as we need
     access to all the nonces when the next API request comes in.
 
-Configuration in *app/config/security.yml*:
+Configuration in *config/security.yml*:
 
 .. code-block:: yaml
    :linenos:

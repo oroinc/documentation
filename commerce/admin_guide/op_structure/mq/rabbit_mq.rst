@@ -19,7 +19,7 @@ virtual host) are the following:
 
 .. code:: yaml
 
-    # app/config/config.yml
+    # config/config.yml
 
     oro_message_queue:
       transport:
@@ -35,7 +35,7 @@ We can also move the specified options to the ``parameters.yml``:
 
 .. code:: yaml
 
-    # app/config/config.yml
+    # config/config.yml
 
     oro_message_queue:
         transport:
@@ -45,7 +45,7 @@ We can also move the specified options to the ``parameters.yml``:
 
 .. code:: yaml
 
-    # app/config/parameters.yml
+    # config/parameters.yml
 
         message_queue_transport: 'amqp'
         message_queue_transport_config: { host: 'localhost', port: '5672', user: 'guest', password: 'guest', vhost: '/' }

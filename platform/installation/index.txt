@@ -178,8 +178,8 @@ To reinstall OroCommerce:
 
 1. Drop the database that was used for the previous installation attempt.
 2. Create a new database for new OroCommerce installation.
-3. Empty the *<OroCommerce installation directory>/app/cache/prod* and *<OroCommerce installation directory>/app/cache/session* directories.
-4. Clear the Installed option in the *app/config/parameters.yml* file and update the database name, if necessary.
+3. Empty the *<OroCommerce installation directory>/var/cache/prod* and *<OroCommerce installation directory>/var/cache/session* directories.
+4. Clear the Installed option in the *config/parameters.yml* file and update the database name, if necessary.
 5. Launch the OroCommerce installation :ref:`Via Console: Silent Installation <silent-installation>` with the **--force** option provided.
 
 

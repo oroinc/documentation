@@ -463,7 +463,7 @@ To add an icon:
 
        bin/console oro:assets:install
 
-To make sure that the icon is accessible for the web interface, check if it appears (as a copy or a symlink depending on the settings selected during the application installation) in the /web/bundles/collect_on_delivery/img directory of your application.
+To make sure that the icon is accessible for the web interface, check if it appears (as a copy or a symlink depending on the settings selected during the application installation) in the /public/bundles/collect_on_delivery/img directory of your application.
 
 Create the Integration Transport
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

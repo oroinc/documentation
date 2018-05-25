@@ -14,12 +14,12 @@ Configuring routes
 ------------------
 
 If you want to secure some routes and make sure that they are always accessed via the HTTPS protocol,
-you can add the ``schemes`` parameter to the ``app/config/routing.yml`` file.
+you can add the ``schemes`` parameter to the ``config/routing.yml`` file.
 
 .. code-block:: yaml
     :linenos:
 
-    # app/config/routing.yml
+    # config/routing.yml
     acme_secure:
         resource: .
         type:     oro_auto
@@ -29,12 +29,12 @@ you can add the ``schemes`` parameter to the ``app/config/routing.yml`` file.
 Configuring security config
 ---------------------------
 
-As an alternative, you have to add the ``requires_channel`` option to the ``app/config/security.yml`` file:
+As an alternative, you have to add the ``requires_channel`` option to the ``config/security.yml`` file:
 
 .. code-block:: yaml
     :linenos:
 
-    # app/config/security.yml
+    # config/security.yml
     # ...
 
     access_control:

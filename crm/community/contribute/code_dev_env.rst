@@ -66,8 +66,8 @@ To mark directory as excluded, right-click it in the project panel and select **
 
 Here is a list of directories that can be excluded by default:
 
-* app/cache
-* web/bundles
+* var/cache
+* public/bundles
 
 Testing in PhpStorm
 ^^^^^^^^^^^^^^^^^^^

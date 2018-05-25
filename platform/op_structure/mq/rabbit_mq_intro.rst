@@ -89,7 +89,7 @@ The config:
 
 .. code:: yaml
 
-    # app/config/config.yml
+    # config/config.yml
     oro_message_queue:
         transport:
             default: 'amqp'

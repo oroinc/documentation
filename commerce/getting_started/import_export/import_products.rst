@@ -120,7 +120,7 @@ To import a bulk of product images:
 
 6. **Prepare data for import**: Based on the downloaded file, create your bulk information in the .csv format.
 
-.. important:: Make sure to upload the image files for the related products to the appropriate location at the "{PROJECT}/app/import_export/product_images" path at the server where the Oro application is running. Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
+.. important:: Make sure to upload the image files for the related products to the appropriate location at the "{PROJECT}/var/import_export/product_images" path at the server where the Oro application is running. Then, fill the table with the name of the image file, the SKU name of the product, and a place for the image to be displayed, where **1** is **display** and **0** is **do not display**.
 
 Once your file is ready, click **Choose File** and select the prepared comma-separated values (.csv) file.
 

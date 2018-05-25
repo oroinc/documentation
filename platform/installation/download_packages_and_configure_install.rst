@@ -16,7 +16,7 @@ This command downloads the latest version of the external packages used in Oro a
 
 .. note:: When installing from the cloned git repository, you are prompted to enter the installation environment configuration and integration parameters that are saved to the parameters.yml file. Enter nothing to keep the default value (provided in brackets), or find more information on the options :ref:`here <book-installation-github-clone-configuration-params>`.
 
-When installing from the downloaded archive, open the *<installation directory>/app/config/parameters.yml* file and update the environment configuration and integration details to match the server and network infrastructure you've prepared.
+When installing from the downloaded archive, open the *<installation directory>/config/parameters.yml* file and update the environment configuration and integration details to match the server and network infrastructure you've prepared.
 
 .. _book-installation-github-clone-configuration-params:
 .. _configuration-parameters:
@@ -56,7 +56,7 @@ Default configuration options for Oro application are provided in brackets below
 
       .. code-block:: text
 
-         Creating the "app/config/parameters.yml" file
+         Creating the "config/parameters.yml" file
          Some parameters are missing. Please provide them.
          database_driver (pdo_mysql):
          database_host (127.0.0.1):
@@ -86,7 +86,7 @@ Default configuration options for Oro application are provided in brackets below
 Environment Configuration and Integration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The sample contents of the **<installation directory>/app/config/parameters.yml** file for OroCommerce:
+The sample contents of the **<installation directory>/config/parameters.yml** file for OroCommerce:
 
 .. code-block:: none
    :linenos:

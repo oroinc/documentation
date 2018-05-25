@@ -20,7 +20,7 @@ Configuration extensions allow to:
 Creating configuration extension
 --------------------------------
 
-Each configuration extension must implement `ConfigExtensionInterface <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtensionInterface.php>`__ (also you can use `AbstractConfigExtension <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/AbstractConfigExtension>`__ as a superclass). To register new configuration extension you can add ``Resources/config/oro/app.yml`` in any bundle or use *app/config/config.yml* of your
+Each configuration extension must implement `ConfigExtensionInterface <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtensionInterface.php>`__ (also you can use `AbstractConfigExtension <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/AbstractConfigExtension>`__ as a superclass). To register new configuration extension you can add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your
 application. Here is an example:
 
 .. code:: php
@@ -36,7 +36,7 @@ application. Here is an example:
 
 .. code:: yaml
 
-    # app/config/config.yml
+    # config/config.yml
     services:
       acme.api.my_config_extension:
         class: Acme\Bundle\AcmeBundle\Api\MyConfigExtension

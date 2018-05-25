@@ -45,10 +45,10 @@ Comment this line.
 .. note::
 
     If you have any customization or third party extensions installed, make sure that:
-        - your changes to "app/AppKernel.php" file are merged to the new file.
+        - your changes to "src/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
         - your changes to "composer.json" file are merged to the new file.
-        - your changes to configuration files in "app/config/" folder are merged to the new files.
+        - your changes to configuration files in "config/" folder are merged to the new files.
 
 .. code-block:: bash
     :linenos:
@@ -69,7 +69,7 @@ Comment this line.
 .. code-block:: bash
     :linenos:
 
-    $ sudo rm -rf app/cache/prod
+    $ sudo rm -rf var/cache/prod
 
 **8**. Upgrade the platform.
 
@@ -101,7 +101,7 @@ or, as alternative:
 .. code-block:: bash
     :linenos:
 
-    $ sudo rm -rf app/cache/prod
+    $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env prod
 
 **10**. Run the consumer(s).
@@ -180,10 +180,10 @@ Comment this line.
 .. note::
 
     If you have any customization or third party extensions installed, make sure that:
-        - your changes to "app/AppKernel.php" file are merged to the new file.
+        - your changes to "src/AppKernel.php" file are merged to the new file.
         - your changes to "src/" folder are merged and it contains the custom files.
         - your changes to "composer.json" file are merged to the new file.
-        - your changes to configuration files in "app/config/" folder are merged to the new files.
+        - your changes to configuration files in "config/" folder are merged to the new files.
         - upgrade the composer dependency and set up right owner to the retrieved files.
 
         .. code-block:: bash
@@ -196,7 +196,7 @@ Comment this line.
 .. code-block:: bash
     :linenos:
 
-    $ sudo rm -rf app/cache/prod
+    $ sudo rm -rf var/cache/prod
 
 **7**. Upgrade the platform.
 
@@ -217,7 +217,7 @@ or, as alternative:
 .. code-block:: bash
     :linenos:
 
-    $ sudo rm -rf app/cache/prod
+    $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env prod
 
 

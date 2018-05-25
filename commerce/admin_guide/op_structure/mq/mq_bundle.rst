@@ -24,7 +24,7 @@ default. For the config settings
 
 .. code-block:: none
 
-    # app/config/config.yml
+    # config/config.yml
 
     oro_message_queue:
         transport:
@@ -39,7 +39,7 @@ DBAL Transport
 
 .. code-block:: none
 
-    # app/config/parameters.yml
+    # config/parameters.yml
 
         message_queue_transport: DBAL
         message_queue_transport_config: ~
@@ -291,7 +291,7 @@ environment.
 
 .. code-block:: none
 
-    # app/config/config_test.yml
+    # config/config_test.yml
 
     services:
         oro_message_queue.test.message_collector:

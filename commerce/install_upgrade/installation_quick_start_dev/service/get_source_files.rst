@@ -71,7 +71,7 @@ dependencies:
        $ composer install --prefer-dist --no-dev
 
 Note that you are prompted to enter the installation environment configuration and that are saved into the
-*app/config/parameters.yml* file. A description for every parameter you can find in the
+*config/parameters.yml* file. A description for every parameter you can find in the
 :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
 .. _platform-installation-download-archive:
@@ -97,7 +97,7 @@ The directory you extracted the files to, will be used in the following steps an
 
 2. All required dependencies already installed in the vendor folder in the extracted archive.
 
-   .. warning:: Unlike when cloning from the GitHub repository, you are not prompted to enter the configuration parameter values. Default values are used instead. If necessary, update configuration parameters in the ``app/config/parameters.yml`` file after the command execution is complete.
+   .. warning:: Unlike when cloning from the GitHub repository, you are not prompted to enter the configuration parameter values. Default values are used instead. If necessary, update configuration parameters in the ``config/parameters.yml`` file after the command execution is complete.
 
 .. |main_app_in_this_topic| replace:: OroCommerce
 

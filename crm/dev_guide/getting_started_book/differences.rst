@@ -56,12 +56,12 @@ Routing Configuration
 
 You can configure routes for your controller actions the same way that you are used with Symfony.
 However, usually you would manually an import for your routing configuration in the main
-``routing.yml`` file in your ``app/config`` directory like this:
+``routing.yml`` file in your ``config`` directory like this:
 
 .. code-block:: yaml
     :linenos:
 
-    # app/config/routing.yml
+    # config/routing.yml
     default_controller:
         resource: "@AcmeDemoBundle/Controller/DefaultController.php"
         type:     annotation

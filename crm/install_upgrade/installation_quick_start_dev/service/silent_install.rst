@@ -10,7 +10,7 @@ For silent installation, use -n (no interaction) and -q (silence the output mess
 
 .. code-block:: bash
 
-	php -dxcache.cacher=0 app/console oro:install
+	php -dxcache.cacher=0 bin/console oro:install
 	        --application-url=**<URL that is configured as an entry point for Oro application>**
 	        --env=prod
 	        --user-name=**admin**
@@ -27,10 +27,10 @@ For silent installation, use -n (no interaction) and -q (silence the output mess
 
 .. note:: The installation process terminates with the warning if the environment does not meet any of the system requirements. You can try launching installation again after you fix the reported issue(s).
 
-If any problem occurs, you can see the details in ``app/logs/oro_install.log`` file.
+If any problem occurs, you can see the details in ``var/logs/oro_install.log`` file.
 
 .. hint:: Normally, the installation process is terminated if it detects an already-existing installation. Use the "--force" option to overwrite an existing installation, e.g. during your development process.
 
-.. hint:: After the installation finished remember to run ``php app/console oro:api:doc:cache:clear`` to warm-up the API documentation cache. This process may take several minutes.
+.. hint:: After the installation finished remember to run ``php bin/console oro:api:doc:cache:clear`` to warm-up the API documentation cache. This process may take several minutes.
 
 .. finish_silent_installation_via_console

@@ -38,7 +38,7 @@ Parameters
 
 If you have a running Elasticsearch server, the default settings are sufficient. The search engine automatically defines the client and index configuration, and then creates the index.
 
-If required, you can customize the Elasticsearch client settings. For this, modify the following parameters in the `app/config/parameters.yml` file:
+If required, you can customize the Elasticsearch client settings. For this, modify the following parameters in the `config/parameters.yml` file:
 
 Basic parameters:
 
@@ -72,16 +72,16 @@ If you need more specific Elasticsearch configuration, see the following chapter
 Client Configuration
 ^^^^^^^^^^^^^^^^^^^^
 
-To configure your Elasticsearch engine, put the following configuration into the `app/config/config.yml` file, under the `oro_search` section:
+To configure your Elasticsearch engine, put the following configuration into the `config/config.yml` file, under the `oro_search` section:
 
 .. code-block:: none
 
    oro_search:
        engine: "elastic_search"
 
-In this case, all the required settings will be taken from `app/config/parameters.yml` (see the :ref:`Parameters <elastic-search--parameters>` section.
+In this case, all the required settings will be taken from `config/parameters.yml` (see the :ref:`Parameters <elastic-search--parameters>` section.
 
-If you need to create a more transparent and detailed configuration, define the required settings directly in the `app/config/config.yml`.
+If you need to create a more transparent and detailed configuration, define the required settings directly in the `config/config.yml`.
 
 .. code-block:: none
 

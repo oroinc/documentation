@@ -28,7 +28,7 @@ This can be achieved in two ways:
           [mysqld]
           optimizer_switch=block_nested_loop=off
 
-    - Another way is to add the following configuration to the ``app/config/config.yml`` file
+    - Another way is to add the following configuration to the ``config/config.yml`` file
 
       .. code-block:: yaml
 

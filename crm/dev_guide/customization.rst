@@ -50,10 +50,10 @@ Overriding Templates
 There are two options for overriding the OroPlatform templates:
 
 #) Overriding one of the platform templates is as easy as adding a template
-   at the same path under ``app/Resources/`` as the template being overriden.
+   at the same path under ``templates/bundles/`` as the template being overriden.
    For example, to override the ``Grid/widget/widget.html.twig`` template
    from the DataGridBundle, create a new template file located at
-   ``app/Resources/OroDataGridBundle/views/Grid/widget/widget.html.twig``.
+   ``templates/bundles/OroDataGridBundle/Grid/widget/widget.html.twig``.
 
 #) You can :ref:`extend an existing bundle <extending-bundles>` to override
    its templates. For example, if the AcmeDemoBundle extends the OroDataGridBundle,
@@ -61,7 +61,7 @@ There are two options for overriding the OroPlatform templates:
    a template with the same name in the ``Resources/views/Grid/widget`` directory
    of the AcmeDemoBundle.
 
-Both methods of overriding the templates have their advantages. Putting templates under the ``app/Resources``
+Both methods of overriding the templates have their advantages. Putting templates under the ``templates``
 directory ensures that they can't be overriden by any bundle. For example,
 you usually store templates that are specific to a particular application
 under this path. Extending one of the Platform bundles is useful if you want
@@ -144,7 +144,7 @@ files is loaded after the OroPlatform bundles in ``AppKernel``. To change
 order in which bundles are loaded, you can use the priority option in the bundle configuration.
 
 .. tip::
-    Translation files located in the ``app/Resources/translations`` directory
+    Translation files located in the ``translations`` directory
     always win over others as they are loaded last.
 
 
@@ -184,7 +184,7 @@ service):
 .. code-block:: yaml
     :linenos:
 
-    # app/config/parameters.yml
+    # config/parameters.yml
     parameters:
         # ...
         oro_datagrid.configuration.provider.class: Acme\DataGridBundleBundle\Provider\ConfigurationProvider
@@ -337,11 +337,11 @@ Apply these changes by running the ``oro:migration:load`` command:
 
 This command updates the ``oro_entity_config`` and ``oro_user`` tables. Additionally,
 each time the cache is generated, corresponding entity and mapping files are
-created in the ``app/cache``:
+created in the ``var/cache``:
 
 .. code-block:: bash
 
-    $ ls -l app/cache/<env>/oro_entities/Extend/Entity
+    $ ls -l var/cache/<env>/oro_entities/Extend/Entity
     total 28
     -rw-rw-r--+ 1 user user  245 Jun  6 20:40 ExtendUser.orm.yml
     -rw-rw-r--+ 1 user user  347 Jun  6 20:40 ExtendUser.php
@@ -410,7 +410,7 @@ Furthermore, two new files are created in the entities cache directory:
 
 .. code-block:: bash
 
-    $ ls -l app/cache/<env>/oro_entities/Extend/Entity
+    $ ls -l var/cache/<env>/oro_entities/Extend/Entity
     total 36
     -rw-rw-r--+ 1 user user  202 Jun  6 20:49 CustomEntity.orm.yml
     -rw-rw-r--+ 1 user user  488 Jun  6 20:49 CustomEntity.php
