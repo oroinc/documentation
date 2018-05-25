@@ -9,12 +9,13 @@ Clone |oro_app_name| source code to the */usr/share/nginx/html/oroapp* folder:
 .. code:: bash
 
    cd /usr/share/nginx/html
-   git clone -b 2.6 https://github.com/oroinc/crm-application.git oroapp
+   git clone -b 3.0-rc https://github.com/oroinc/crm-application.git oroapp
    cd oroapp
 
-The *branch* value (*2.6* in this example) could be changed to any published
-`release tag <https://github.com/oroinc/platform-application/releases>`_ from 2.6 branch of
-the |oro_app_name| application (for example, 2.6, 2.6.1, etc.).
+..
+   The *branch* value (*2.6* in this example) could be changed to any published
+   `release tag <https://github.com/oroinc/platform-application/releases>`_ from 2.6 branch of
+   the |oro_app_name| application (for example, 2.6, 2.6.1, etc.).
 
 .. include:: /install_upgrade/installation_quick_start_dev/common-ce-2.rst
    :start-after: begin_body

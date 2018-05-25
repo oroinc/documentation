@@ -61,7 +61,7 @@ For example:
 .. code-block:: yaml
     :linenos:
 
-    # app/config/parameters_test.yml
+    # config/parameters_test.yml
     parameters:
         database_host: 127.0.0.1
         database_port: null
@@ -109,11 +109,11 @@ After this, you'll be able to run your tests in a command line or IDE.
 
 .. code-block:: bash
 
-      $ php vendor/bin/phpunit -c app/ --testsuite "Functional Tests"
+      $ php bin/phpunit -c ./ --testsuite "Functional Tests"
 
 .. code-block:: bash
 
-      $ php vendor/bin/phpunit -c app/ --testsuite “Unit Tests"
+      $ php bin/phpunit -c ./ --testsuite “Unit Tests"
 
 Database Isolation
 ~~~~~~~~~~~~~~~~~~

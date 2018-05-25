@@ -68,7 +68,7 @@ or, as an alternative:
 
 .. code-block:: bash
 
-    $ sudo rm -rf app/cache/prod
+    $ sudo rm -rf var/cache/prod
 
 **8**. Execute the ``oro:platform:update`` command and clear caches.
 
@@ -86,7 +86,7 @@ or, as alternative:
 
 .. code-block:: bash
 
-    $ sudo rm -rf app/cache/prod
+    $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env prod
 
 **9**. Run the consumer(s).

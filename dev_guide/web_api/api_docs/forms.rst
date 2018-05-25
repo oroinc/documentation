@@ -56,7 +56,7 @@ The Data API forms are isolated from UI forms. It is done to avoid collisions be
 -  using application configuration file
 -  tagging form elements by appropriate tag in the dependency injection container
 
-To register new form elements using application configuration file you can add ``Resources/config/oro/app.yml`` in any bundle or use *app/config/config.yml* of your application. The following example shows how it can be done:
+To register new form elements using application configuration file you can add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your application. The following example shows how it can be done:
 
 .. code:: yaml
 

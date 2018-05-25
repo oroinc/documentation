@@ -43,7 +43,7 @@ The default nesting level is ``3``. It is specified in the configuration of ApiB
 
 .. code:: yaml
 
-    # app/config/config.yml
+    # config/config.yml
 
     oro_api:
         config_max_nesting_level: 3

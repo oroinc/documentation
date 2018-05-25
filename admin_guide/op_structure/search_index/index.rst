@@ -592,7 +592,7 @@ Website search index type: The entity is invisible to a current user. Please, ch
 Cannot Connect to Elasticsearch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Please, verify credentials specified at the app/confing/parameters.yml file - host, port, index name, authentication options. You can try to manually connect to Elasticsearch server via CLI curl command to make sure that you have an access to it:
+Please, verify credentials specified at the confing/parameters.yml file - host, port, index name, authentication options. You can try to manually connect to Elasticsearch server via CLI curl command to make sure that you have an access to it:
 
 .. code:: yaml
 

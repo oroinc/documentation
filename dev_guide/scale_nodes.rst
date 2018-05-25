@@ -17,17 +17,17 @@ application.
 Preliminary Recommendations
 ---------------------------
 
-- Share the *[Application root]/app/cache* folder among all the web nodes, for example using NFS.
+- Share the *[Application root]/var/cache* folder among all the web nodes, for example using NFS.
 
 - Use Nginx (http://nginx.org/) as a proxy balancer
 
 - Use REDIS (http://redis.io/) as a data cache for Annotations, Metadata, ACL, etc.
 
-- Share *[Application root]/app/attachment* folder among all the web nodes
+- Share *[Application root]/var/attachment* folder among all the web nodes
 
 .. hint::
 
-    The ways to share *[Application root]/app/attachment* are described in the Attachments section hereinafter. 
+    The ways to share *[Application root]/var/attachment* are described in the Attachments section hereinafter.
 
 Additional Requirements to the Bundles. Known Issues and Solutions
 ------------------------------------------------------------------
@@ -48,7 +48,7 @@ Additional Requirements to the Bundles. Known Issues and Solutions
 Configuration
 -------------
 
-**All the configuration changes can be done in [Application root]/app/config/{config.yml, security.yml} or inside your 
+**All the configuration changes can be done in [Application root]/config/{config.yml, security.yml} or inside your
 own bundle in the app.yml file.**
 
 Cache Configuration
@@ -57,7 +57,7 @@ Cache Configuration
 **Configure** OroRedisConfigBundle following the steps in the 
 `OroRedisConfigBundle documentation <https://github.com/oroinc/redis-config#configure-application>`_
 
-**app/config/parameters.yml:**
+**config/parameters.yml:**
 
 .. code-block:: yaml
    

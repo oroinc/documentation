@@ -53,7 +53,7 @@ command:
     $ php bin/console assetic:dump
 
 In this example, all four CSS files from your bundle as well as all the other files from the Oro
-Platform and from third party bundles will be merged and dumped in the ``web/css/style.css`` file.
+Platform and from third party bundles will be merged and dumped in the ``public/css/style.css`` file.
 Optionally, you can apply different filters to each CSS file (separate them by comma if you want to
 apply multiple filters.
 
@@ -77,7 +77,7 @@ For instance, the following configuration excludes all files from the ``frontend
 .. code-block:: yaml
     :linenos:
 
-    # app/config.yml
+    # config/config.yml
     oro_assetic:
         css_debug: [frontend]
 
@@ -127,7 +127,7 @@ your application's configuration using the ``oro_theme`` option:
 .. code-block:: yaml
     :linenos:
 
-    # app/config.yml
+    # config/config.yml
     oro_theme:
         themes:
             mytheme:
@@ -171,7 +171,7 @@ To use the theme in any application, enable it in the application configuration:
 .. code-block:: yaml
     :linenos:
 
-    # app/config.yml
+    # config/config.yml
     oro_theme:
         active_theme: acme-theme
 
@@ -257,7 +257,7 @@ of your bundle and define the values you want to change:
     .. code-block:: php
         :linenos:
 
-        // app/AppKernel.php
+        // src/AppKernel.php
         // ...
 
         class AppKernel extends OroKernel
