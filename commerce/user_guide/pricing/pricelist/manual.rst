@@ -3,7 +3,7 @@
 Manual Price Management
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. begin
+.. begin_one
 
 You can add a product price in the specific currency to the price list manually in one of the following ways:
 
@@ -40,6 +40,12 @@ To add a product price in the price list:
 
 #. Click **Save**.
 
+.. finish_one
+
+.. _user-guide--pricing--price-list-manual--product-details:
+
+.. begin_two
+
 In the Product Details
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -71,7 +77,7 @@ To add a product price in the product details:
 
 #. Click **Save**.
 
-.. finish
+.. finish_two
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

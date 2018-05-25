@@ -349,7 +349,6 @@ Advanced Configuration Settings
    landing_commerce/index
    landing_crm/index
    landing_marketing/index
-   security/index
    user_management/index
    localization/index
    email/index

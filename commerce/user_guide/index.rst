@@ -69,8 +69,13 @@ Table of Contents
    :titlesonly:
    :maxdepth: 1
 
-   
    products/index
+
+   price_attributes/index
+
+   product_attributes/index
+
+   product_families/index
 
    master_catalog/index
 

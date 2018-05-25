@@ -1,4 +1,5 @@
 .. _import-products:
+.. _doc--products--actions--import:
 
 Importing Product Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

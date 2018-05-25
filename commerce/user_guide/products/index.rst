@@ -3,99 +3,78 @@
 Products
 ========
 
-In this section you will learn how to add, configure and manage the product information, including product details structure and page design, product prices, and multiple options to simplify product search and navigation.
+OroCommerce enables you to create and manage products in the way that fits specifically your business strategies and requirements. As it may not be obvious where to start working with your product, several dedicated sections have been compiled to help you understand the full picture of creating and manging products, as well as some additional aspects that working with products may involve. 
 
-.. contents:: :local:
+It is suggested to start off with the :ref:`Understand Products' Life Cycle <doc--products--before-you-begin>` section to familiarize yourself with the product cycle in OroCommerce. 
 
-Before You Begin
-----------------
+Continue to the :ref:`Create Products <doc--products--actions--create>` section to find out how to create different types of products (simple and configurable) and how to set up a matrix form to display multiple variations of one configurable product in the storefront.
 
-.. begin_product_configuration
+To learn more about the ways to control visibility of the products you created for specific customers, customer groups or websites, navigate to the :ref:`Manage Product Visibility <products--product-visibility>` section. Here, you will learn how to set up specific visibility settings, as well configure visibility priorities.
 
-Ensure that you have configured:
+Refer to the the :ref:`Manage Products: Core and Advanced Actions <doc--products--characteristics>` section to learn about the actions available for products, such as duplicating or importing, as well as how to manage product quantities in multiple warehouses on the product page.
 
-* :ref:`Product units <sys--commerce--product--product-units>` --- to select the primary product unit and its precision.
-* Product image watermarks (:ref:`globally <sys--commerce--product--product-images>` and :ref:`per website <sys--websites--commerce--product--product-images>`) --- to add a branded watermark to all the product images.
-* Product image gallery (:ref:`globally <sys--commerce--product--product-images--gallery-slider-global>`, :ref:`per organization <sys--users--organization--commerce--products--gallery-slider>`, and :ref:`per website <sys--websites--commerce--product--gallery-slider>`) --- to use popup or inline view for the image gallery.
-* Image preview on product listing page (:ref:`globally <sys--commerce--product--product-images--image-preview--global>`, :ref:`per organization <sys--commerce--product--product-images--image-preview--organization>`, and :ref:`per website <sys--commerce--product--product-images--image-preview--website>`) --- to see the product image gallery instead of the product page when clicking on the image in the product listing.
-* :ref:`Product families <products--product-families>` and :ref:`product attributes <products--product-attributes>` --- to design a structure for product information.
-* :ref:`Price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g. MRSP) that may be used in the rule-based price lists to calculate the price for the buyer.
-* New arrivals flag (:ref:`globally <sys--commerce--product--new-arrivals>`, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>`, and :ref:`per website <sys--websites--commerce--products--new-arrivals>`) --- to highlight the new products in your web catalog.
-* Featured products segment (:ref:`globally <sys--commerce--product--featured-products>`, :ref:`per organization <sys--users--organization--commerce--products--featured-products>`, and :ref:`per website <sys--websites--commerce--products--featured-products>`) -- to store the selected products that are displayed on the crowded paths of you website.
-* Previously Purchased Products (:ref:`globally <sys--commerce--orders--previously-purchased--global>` and :ref:`per website <sys--commerce--orders--previously-purchased--website>`) --- to display products that customer users have bought recently.
-* :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products>`
+To learn how to associate your products with specific brands and create them in the management console, head for the :ref:`Use Product Brands <user-guide--product-brands>` section.
 
-* Related items configuration:
+Review the ways to define the look of your product page in the dedicated :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>` section. 
 
-  * Related products (:ref:`globally <sys--commerce--catalog--relate-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--related-products>`, and :ref:`per website <sys--websites--commerce--catalog--related-products>`) --- to bind similar products or those that complement each other, like the item and its accessories.
+Configure the visual elements to improve the way products are represented in the storefront, as described in the :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` section.
 
-  * Up-sell products (:ref:`globally <sys--commerce--catalog--upsell-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--upsell-products>`, and :ref:`per website <sys--websites--commerce--catalog--upsell-products>`) --- to bind products that should be promoted with the product being viewed, like more expensive alternatives of the model, upgrade options, additional parts.
+To check what flows in terms of product creation and management may suit best for your business, check out the `Blueprints`_ section below.
 
-.. uncomment in DOC-145: Cross-sell products (:ref:`globally <sys--commerce--catalog--cross-sell-products>`, :ref:`per organization <sys--users--organization--commerce--catalog--cross-sell-products>`, and :ref:`per website <sys--websites--commerce--catalog--cross-sell-products>`) --- to bind products that may replace each other, like other brands or similar models.
+Blueprints 
+----------
 
-See the reference of :ref:`Product-Related Settings in System Configuration <configuration--products>`.
+This section provides shortcuts to topics that may be useful for various types of business operations:  
 
-.. finish_product_configuration
+* **For minimal product configuration**
 
-Manage Products
----------------
+  * :ref:`Create a simple product <products--products--create-simple-product>`
+  * :ref:`Create product units <sys--commerce--product--product-units>` 
+  * :ref:`Create product families <products--product-families>` and :ref:`product attributes <products--product-attributes>` 
+  * :ref:`Create price attributes <user-guide--products--price-attributes>` 
+  * :ref:`Structure your master catalog <user-guide--master-catalog>`
 
-To create a product, manage product information and visibility, please use the procedures described below.
+* **For complex product configuration**
 
-* :ref:`Manage Product Information Structure <doc--product-information-structure>`
+  * :ref:`Create a configurable product <products--products--create-config-product>`
+  * :ref:`Set up a matrix form and variations of a configurable product <config-guide--landing-commerce--products--configurable-products>`
+  * :ref:`Highlight and illustrate products <doc--products--manage-inventory-prices-look>`
+  * :ref:`Manage product quantities <doc--products--actions--manage-inventory>`
+  * :ref:`Configure product-related settings in system configuration <configuration--products>`
+   
+* **For businesses with rich product page design**
 
-* :ref:`Create a Product <doc--products--actions--create>`
+  * :ref:`Manage product page design <user-guide--page-templates>`
 
-* :ref:`Manage Product Visibility <products--product-visibility>`
+* **For businesses with complicated custom price lists**
 
-* :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>`
+  * :ref:`Pricing in OroCommerce <user-guide--pricing>`
+  * :ref:`Adding pricing to individual products <user-guide--pricing--price-list-manual--product-details>`
+ 
+* **For businesses with multiple visibility levels**
 
-* :ref:`Review Product Prices <view-and-filter-product-prices>`
+  * :ref:`Managing product visibility <products--product-visibility>`
+  * :ref:`Configure content visibility <user-guide--marketing--web-catalog--node--visibility>`
 
-* :ref:`Manage Product Inventory Quantity <doc--products--actions--manage-inventory>`
+* **For businesses with complex website structure and different requirements for customers from different websites**
 
-* :ref:`Add Attachment to the Product <doc--products--actions--attachment>`
+  * :ref:`Manage web catalogs <user-guide--web-catalog>`
 
-.. ref:`Product Taxation <user-guide--products--products--taxation>`
 
-* :ref:`Add Note to a Product <doc--products--actions--note>`
 
-Once you have created all the required products, you can:
 
-* :ref:`View them all on the product list page <doc--products--actions--view-list>`
-
-* :ref:`View information for an individual product <doc--products--actions--view>`
-
-* :ref:`Edit a product <doc--products--actions--edit>`
-
-* :ref:`Duplicate a product <doc--products--actions--duplicate>`
-
-* :ref:`Delete a product <doc--products--actions--delete>`
-
-* :ref:`Export existing products <export-products>`
-
-* :ref:`Import Products <import-products>`
-
-Simplify Purchase Choices and Increase Sales
---------------------------------------------
+.. Simplify Purchase Choices and Increase Sales--------------------------------------------
 
 .. TODO intro
 
-* :ref:`Manage Featured Products <products--featured-products>`
-
-* :ref:`Highlight New Products <user-guide--new-products>`
-
-* :ref:`Use Product Brands <user-guide--product-brands>`
-
+.. ref:`Manage Featured Products <products--featured-products>`
+.. ref:`Highlight New Products <user-guide--new-products>`
+.. ref:`Use Product Brands <user-guide--product-brands>`
 .. TODO intro
-
-* :ref:`Manage Related Products <products--related-products>`
-
-* :ref:`Manage Up-Sell Products <products--upsell-items>`
-
-* :ref:`Create All Products Page <sys--conf--commerce--catalog--special-pages>`
-
-* :ref:`Enable Previously Purchased Products Page <sys--commerce--orders--previously-purchased--global>`
+.. ref:`Manage Related Products <products--related-products>`
+.. ref:`Manage Up-Sell Products <products--upsell-items>`
+.. ref:`Create All Products Page <sys--conf--commerce--catalog--special-pages>`
+.. ref:`Enable Previously Purchased Products Page <sys--commerce--orders--previously-purchased--global>`
 
 .. uncomment in DOC-145:
 
@@ -103,20 +82,39 @@ Simplify Purchase Choices and Increase Sales
 
 .. **Related Topics**
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   configure_product_details
-
-   product_brands
-
-   products/index
 
 .. actions/manage_product_taxation
 
 
 .. finish
 
+
+.. Manage Product Design in the Storefront========================================
+
+.. This section contains detailed information about the actions related to the products that may be launched in various perspectives.
+
+Key Points of Reference
+-----------------------
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1  
+
+   use_products
+
+   create/index
+
+   manage/index
+
+   manage_look
+
+   managing_product_visibility
+
+   page_templates
+
+   brand/index
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
+
+
