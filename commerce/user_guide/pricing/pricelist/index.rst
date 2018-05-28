@@ -32,8 +32,12 @@ Manage Product Price Manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /user_guide/pricing/pricelist/manual.rst
-   :start-after: begin
-   :end-before: finish
+   :start-after: begin_one
+   :end-before: finish_one
+
+.. include:: /user_guide/pricing/pricelist/manual.rst
+   :start-after: begin_two
+   :end-before: finish_two
 
 Generate Product Price Automatically
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -59,7 +59,7 @@ Updated information is automatically saved.
 Per Product
 ~~~~~~~~~~~
 
-.. include:: /user_guide/products/products/actions_details/manage_inventory.rst
+.. include:: /user_guide/products/manage/manage_inventory.rst
    :start-after: start_products_manage_inventory
    :end-before: stop_products_manage_inventory
 
