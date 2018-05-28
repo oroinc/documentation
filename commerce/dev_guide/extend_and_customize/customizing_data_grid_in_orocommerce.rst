@@ -3,7 +3,7 @@ Customizing Data Grid
 
 Most business application users have to deal with significant amounts of data on a daily basis. Thus, efficiently navigating through large data sets becomes a must have requirement and OroCommerce is not an exception. The application users must be able to easily filter, sort, and search through thousands (or millions) of records, usually represented in the form of a data grid on a page.
 
-This topic uses existing OroCommerce data grids for illustration. If you are not familiar with OroPlatform data grids, you may find it helpful to check the `articles on how to create a simple data grid <../entities/datagrid>`_, and :ref:`how to pass request parameters to your data grid <how-to-pass-request-parameter-to-the-grid>`. The `datagrid.yml configuration reference <../reference/format/datagrid>`_ and the OroDataGridBundle documentation contain additional useful information.
+This topic uses existing OroCommerce data grids for illustration. If you are not familiar with OroPlatform data grids, you may find it helpful to check the `articles on how to create a simple data grid <../entities/datagrids>`_, and :ref:`how to pass request parameters to your data grid <how-to-pass-request-parameter-to-the-grid>`. The `datagrids.yml configuration reference <../reference/format/datagrids>`_ and the OroDataGridBundle documentation contain additional useful information.
 
 .. image:: /dev_guide/img/grid1.png
 
@@ -12,7 +12,7 @@ Data Sources
 
 A data grid is usually used to visualize some data coming from a data source. OroDataGridBundle allows for use of various data sources for data grids, and includes the ORM data source adapter out of the box. It is possible to `implement your own data source adapters <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md>`_ as well.
 
-The ORM data source types allow for database query specification, sorters and filters definitions to be specified in the data grid configuration. Data grid configuration can be supplied by a developer in YAML format. By convention, the datagrid.yml files placed in Resources/config folders of any application bundle are processed automatically. All supported data source configuration options that can be used in data source configuration section are described in the `datasources section of the DataGridBundle documentation <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md>`_.
+The ORM data source types allow for database query specification, sorters and filters definitions to be specified in the data grid configuration. Data grid configuration can be supplied by a developer in YAML format. By convention, the datagrids.yml files placed in Resources/config folders of any application bundle are processed automatically. All supported data source configuration options that can be used in data source configuration section are described in the `datasources section of the DataGridBundle documentation <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md>`_.
 
 Inner Workings of Data Grids
 ----------------------------
