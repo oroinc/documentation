@@ -1,3 +1,9 @@
+.. _user-guide--pricing--pricelist--management:
+
+Price Lists Management
+======================
+
+.. contents:: :local:
 
 .. start_pricelist_management
 

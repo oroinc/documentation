@@ -3,7 +3,7 @@ Overview
 
 .. begin
 
-In OroCommerce, you can create multiple websites that target a particular audience, geography, or that segments the goods and services your company is selling.
+In OroCommerce, you can create multiple websites that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
 
 Every website may have:
 

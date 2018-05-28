@@ -3,9 +3,9 @@
 Global System Configuration
 ===========================
 
-In OroCommerce, you can configure available system settings on four configuration levels: system, organization, and user.
+In OroCommerce, you can configure available system settings on four configuration levels: system, organization, website, and user.
 
-On system level, there are a number of baseline options that serve as a foundation for the features and processes. These options apply for all organizations and users. Along with these core settings, there are others that may be modified for the organization or user. On the system level, you can provide a system-wide default configuration that applies to all organizations and users unless their configuration overrides the defaults.
+On system level, there is a number of baseline options that serve as a foundation for the features and processes. These options apply for all organizations and users. Along with these core settings, there are others that may be modified for the organization or user. On the system level, you can provide a system-wide default configuration that applies to all organizations and users unless their configuration overrides the defaults.
 
 .. important:: System-level configuration settings can fall back to system default values. For this, select the **Use Default** check box next to the selected option. To roll back all the settings to the default values, click **Reset** on the top right.
 

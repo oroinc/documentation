@@ -1,6 +1,7 @@
+.. _user-guide--payment-configuration:
+
 Payment Configuration
 ---------------------
-
 
 System Configuration: Merchant Location
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
