@@ -6,18 +6,17 @@ Website Management
 .. include:: /user_guide/overview/system/websites_overview.rst
    :start-after: begin
 
-For detailed information on managing websites please refer to the following sections:
+Learn more about website management from the following sections:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    create
 
-   seo_config
+   host_config
 
-   config
+   configure
 
-   default_website
+   manage
 
-   edit_frontend_menu
