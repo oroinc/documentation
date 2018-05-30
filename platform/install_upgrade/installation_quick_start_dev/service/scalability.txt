@@ -1,13 +1,13 @@
-:orphan:
+.. _installation--scalable-configuration:
 
-Scalability Configuration
--------------------------
+Scalable Environment Configuration
+----------------------------------
 
 .. begin_scalability
 
-To optimize OroCommerce for large enterprise deployments, you can scale critical resources (e.g. php and fpm server), set up load balancing between the servers using nginx, and use data cache for annotations, metadata, access control levels, etc.
+To optimize |main_app_in_this_topic| for large enterprise deployments, you can scale critical resources (e.g. php and fpm server), set up load balancing between the servers using nginx, and use data cache for annotations, metadata, access control levels, etc.
 
-The following configuration may prepare OroCommerce for a high load and is described in the sections below:
+The following configuration may prepare |main_app_in_this_topic| for a high load and is described in the sections below:
 
 * Share the *[Application root]/var/cache* and *[Application root]/var/attachment* folder between all server instances, for example, using NFS.
 
@@ -24,7 +24,7 @@ Generic Recommendations
 
 * **CRON** jobs isolation: It is recommended to run CRON jobs on the dedicated server. Distributing CRON jobs among several servers is not recommended.
 
-* **Data Cache**: OroCommerce supports REDIS, ADCu, and Memcached data caching systems.
+* **Data Cache**: |main_app_in_this_topic| supports REDIS, ADCu, and Memcached data caching systems.
 
 Data Cache System Installation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -32,9 +32,7 @@ Data Cache System Installation
 Redis and PhpRedis
 ^^^^^^^^^^^^^^^^^^
 
-You can use the `SncRedisBundle <https://github.com/snc/SncRedisBundle>`_ with either `PhpRedis <https://github.com/phpredis/phpredis>`_, or `Predis <https://github.com/nrk/predis>`_ to integrate OroCommerce with Redis server.
-
-OroCommerce supports PhpRedis v1.1.9 and Predis v0.8.x.
+You can use the `OroRedisConfigBundle <https://github.com/oroinc/redis-config>`_ to integrate |main_app_in_this_topic| with Redis server.
 
 Install the PhpRedis extension (.so) via the package manager. For example, you may use the following commands:
 
@@ -51,13 +49,13 @@ Install APCu via the package manager.  See additional information `on the php.ne
 
 .. note::
 
-    To avoid unnecessary and misleading php notices or exceptions when rendering image attachments caused by the known issue in the APCu version 4.0.7 (`key inconsistency bug <key inconsistency bug>`_), please use earlier or the latest (unreleased) version of the APCu.
+    To avoid unnecessary and misleading php notices or exceptions when rendering image attachments caused by the known issue in the APCu version 4.0.7 (key inconsistency bug), please use earlier or the latest (unreleased) version of the APCu.
 
 
 Memcached
 ^^^^^^^^^
 
-Use official `Memcached documentation <https://memcached.org/>`_  for the detailed installation description. Use the `php-memcached <https://github.com/php-memcached-dev/php-memcached>`_ extension to connect OroCommerce with Memcached servers.
+Use official `Memcached documentation <https://memcached.org/>`_  for the detailed installation description. Use the `php-memcached <https://github.com/php-memcached-dev/php-memcached>`_ extension to connect |main_app_in_this_topic| with Memcached servers.
 
 Data Cache System Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,17 +75,17 @@ APCu
 .. code-block:: yaml
    :linenos:
 
-   snc_apcu:
-      clients:
-         ...
-         session:
-            type: apcu
-            alias: session
-            dsn: apcu://localhost/3
-      session:  # configure sessions
-         client: session
-         prefix: session
-         use_as_default: true
+       snc_apcu:
+          clients:
+             ...
+             session:
+                type: apcu
+                alias: session
+                dsn: apcu://localhost/3
+          session:  # configure sessions
+             client: session
+             prefix: session
+             use_as_default: true
 
 Memcached
 """""""""
@@ -95,17 +93,17 @@ Memcached
 .. code-block:: yaml
    :linenos:
 
-         snc_memcached:
-             clients:
-                 ...
-                 session:
-                     type: memcached
-                     alias: session
-                     dsn: memcached://localhost/3
-             session:  # configure sessions
-                 client: session
-                 prefix: session
-                 use_as_default: true
+             snc_memcached:
+                 clients:
+                     ...
+                     session:
+                         type: memcached
+                         alias: session
+                         dsn: memcached://localhost/3
+                 session:  # configure sessions
+                     client: session
+                     prefix: session
+                     use_as_default: true
 
 Redis
 """""
@@ -113,17 +111,17 @@ Redis
 .. code-block:: yaml
    :linenos:
 
-         snc_redis:
-             clients:
-                 ...
-                 session:
-                     type: phpredis
-                     alias: session
-                     dsn: redis://localhost/3
-             session:  # configure sessions
-                 client: session
-                 prefix: session
-                 use_as_default: true
+             snc_redis:
+                 clients:
+                     ...
+                     session:
+                         type: phpredis
+                         alias: session
+                         dsn: redis://localhost/3
+                 session:  # configure sessions
+                     client: session
+                     prefix: session
+                     use_as_default: true
 
 Caching Service
 ^^^^^^^^^^^^^^^
@@ -136,10 +134,10 @@ APCu
    .. code-block:: yaml
       :linenos:
 
-      services:
-         oro.cache.abstract:
-            abstract: true
-            parent: doctrine_cache.abstract.apcu
+          services:
+             oro.cache.abstract:
+                abstract: true
+                parent: doctrine_cache.abstract.apcu
 
 Memcached
 """""""""
@@ -149,21 +147,21 @@ Configure the *oro.cache.abstract* service that takes care of the cache that is 
    .. code-block:: yaml
       :linenos:
 
-      services:
-         oro.cache.abstract:
-            abstract: true
-            parent: doctrine_cache.abstract.memcached
-         calls:
-            - ['setMemcached', ['@memcached']]
-      memcached:
-         class: Memcached
-         arguments:
-            - 'persistent_id'
-         calls:
-            - ['addServer', ['localhost', '11211']]
-            - ['setOption', [0, true]] #OPT_NO_BLOCK
-            - ['setOption', [1, true]] #OPT_TCP_NODELAY
-            - ['setOption', [14, 100]] #OPT_CONNECT_TIMEOUT
+          services:
+             oro.cache.abstract:
+                abstract: true
+                parent: doctrine_cache.abstract.memcached
+             calls:
+                - ['setMemcached', ['@memcached']]
+          memcached:
+             class: Memcached
+             arguments:
+                - 'persistent_id'
+             calls:
+                - ['addServer', ['localhost', '11211']]
+                - ['setOption', [0, true]] #OPT_NO_BLOCK
+                - ['setOption', [1, true]] #OPT_TCP_NODELAY
+                - ['setOption', [14, 100]] #OPT_CONNECT_TIMEOUT
 
 Redis
 """""
@@ -175,12 +173,12 @@ Configuration in *config/config.yml*:
 .. code-block:: yaml
    :linenos:
 
-      services:
-          oro.cache.abstract:
-              abstract: true
-              class: Snc\RedisBundle\Doctrine\Cache\RedisCache
-              calls:
-                  - [setRedis, ["@snc_redis.default"]]
+          services:
+              oro.cache.abstract:
+                  abstract: true
+                  class: Snc\RedisBundle\Doctrine\Cache\RedisCache
+                  calls:
+                      - [setRedis, ["@snc_redis.default"]]
 
 **Alternative Configuration**
 
@@ -191,10 +189,10 @@ Configuration in *config/config.yml*:
 .. code-block:: yaml
    :linenos:
 
-      services:
-         oro.cache.abstract:
-            abstract: true
-            parent: doctrine_cache.abstract.redis
+          services:
+             oro.cache.abstract:
+                abstract: true
+                parent: doctrine_cache.abstract.redis
 
 Connnection to Redis Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -208,123 +206,127 @@ To configure connection to Redis server in OroCommerce:
    .. code-block:: yaml
       :linenos:
 
-      "require": {
-          ...
-          "snc/redis-bundle": "1.1.*",
-          "predis/predis": "0.8.7" #in case using Predis instead of PhpRedis
-      }
+          "require": {
+              ...
+              "snc/redis-bundle": "1.1.*",
+              "predis/predis": "0.8.7" #in case using Predis instead of PhpRedis
+          }
 
 2. Run the `composer update` command.
 
 3. Register the SncRedisBundle in AppKernel.php or in your own bundles.yml (Acme/Bundle/AcmeBundle/Resources/config/oro/bundles.yml):
 
-    - Sample registration in AppKernel.php:
+- Sample registration in AppKernel.php:
 
-      .. code-block:: php
+   .. code-block:: php
+      :linenos:
+
+          ...
+          public function registerBundles()
+          {
+              $bundles = array(
+              //bundles
+                  new Snc\RedisBundle\SncRedisBundle()
+              );
+          ...
+
+- Sample registration in the bundle (Acme/Bundle/AcmeBundle/Resources/config/oro/bundles.yml):
+
+    .. code-block:: none
          :linenos:
 
-         ...
-         public function registerBundles()
-         {
-             $bundles = array(
-             //bundles
-                 new Snc\RedisBundle\SncRedisBundle()
-             );
-         ...
-
-    - Sample registration in the bundle (Acme/Bundle/AcmeBundle/Resources/config/oro/bundles.yml):
-
-      .. code-block:: none
-         :linenos:
-
-         bundles:
-           ...
-           - Snc\RedisBundle\SncRedisBundle
-           ...
+             bundles:
+               ...
+               - Snc\RedisBundle\SncRedisBundle
+               ...
 
 4. Configure SncRedisBundle in the *config/config.yml* (see
-   `the SncRedisBundle documentation <https://github.com/snc/SncRedisBundle/blob/master/Resources/doc/index.md>`_ for detailed information):
+`the SncRedisBundle documentation <https://github.com/snc/SncRedisBundle/blob/master/Resources/doc/index.md>`_ for detailed information):
 
    .. code-block:: yaml
       :linenos:
 
-      snc_redis:
-          clients:  # configure phpredis client
-              default:
-                  type: phpredis
-                  alias: default
-                  dsn: redis://localhost/1
-              doctrine:
-                  type: phpredis
-                  alias: doctrine
-                  dsn: redis://localhost/2
+          snc_redis:
+              clients:  # configure phpredis client
+                  default:
+                      type: phpredis
+                      alias: default
+                      dsn: redis://localhost/1
+                  doctrine:
+                      type: phpredis
+                      alias: doctrine
+                      dsn: redis://localhost/2
 
-          doctrine: # use Redis caching for Doctrine
-              metadata_cache:
-                  client: doctrine
-                  entity_manager: default
-                  document_manager: default
-              result_cache:
-                  client: doctrine
-                  entity_manager: [default]
-              query_cache:
-                  client: doctrine
-                  entity_manager: default
+              doctrine: # use Redis caching for Doctrine
+                  metadata_cache:
+                      client: doctrine
+                      entity_manager: default
+                      document_manager: default
+                  result_cache:
+                      client: doctrine
+                      entity_manager: [default]
+                  query_cache:
+                      client: doctrine
+                      entity_manager: default
 
 .. Annotations Cache^^^^^^^^^^^^^^^^^
 .. remove this section (master only)
 .. Configuration in *config/config.yml*:
-   .. code-block:: yaml
-   :linenos:
-          services:
-              …
-              oro.cache.annotations:
-                  public: false
-                  parent: oro.cache.abstract
-                  calls:
-                      - [ setNamespace, [ "oro_annotations_cache" ] ]
-          …
-          framework:
-              annotations:
-                  cache: oro.cache.annotations
+
+    .. code-block:: yaml
+        :linenos:
+            services:
+                …
+                oro.cache.annotations:
+                    public: false
+                    parent: oro.cache.abstract
+                    calls:
+                    - [ setNamespace, [ "oro_annotations_cache" ] ]
+                …
+                framework:
+                    annotations:
+                        cache: oro.cache.annotations
 
 Doctrine Cache
 ^^^^^^^^^^^^^^
 
 Configuration in *config/config.yml*:
 
-.. code-block:: yaml
-   :linenos:
+    .. code-block:: yaml
+        :linenos:
 
-          services:
-             oro_cache.doctrine.query_cache_driver:
-                public: false
-                parent: oro.cache.abstract
-                calls:
-                   - [ setNamespace, [ 'oro_query_cache_driver' ] ]
-             oro_cache.doctrine.result_cache_driver:
-                public: false
-                parent: oro.cache.abstract
-                calls:
-                   - [ setNamespace, [ 'oro_result_cache_driver' ] ]
+            services:
+                 oro_cache.doctrine.query_cache_driver:
+                    public: false
+                    parent: oro.cache.abstract
+                    calls:
+                       - [ setNamespace, [ 'oro_query_cache_driver' ] ]
+                 oro_cache.doctrine.result_cache_driver:
+                    public: false
+                    parent: oro.cache.abstract
+                    calls:
+                       - [ setNamespace, [ 'oro_result_cache_driver' ] ]
 
-          doctrine:
-             orm:
-                query_cache_driver:
-                   type: service
-                   id: oro_cache.doctrine.query_cache_driver
-                result_cache_driver:
-                   type: service
-                   id: oro_cache.doctrine.result_cache_driver
+            doctrine:
+                 orm:
+                    query_cache_driver:
+                       type: service
+                       id: oro_cache.doctrine.query_cache_driver
+                    result_cache_driver:
+                       type: service
+                       id: oro_cache.doctrine.result_cache_driver
 
 .. JMS Serializer Cache^^^^^^^^^^^^^^^^^^^^
 .. remove (master only)
-   Configuration in *config/config.yml*:
-   .. code-block:: yaml
-   :linenos:
-          jms_serializer:
-              metadata:
-                  cache: Metadata\Cache\DoctrineCacheAdapter
+
+Configuration in *config/config.yml*:
+
+    .. code-block:: yaml
+        :linenos:
+
+            jms_serializer:
+                metadata:
+                    cache: Metadata\Cache\DoctrineCacheAdapter
 
 Serializer Cache
 ^^^^^^^^^^^^^^^^
@@ -334,16 +336,16 @@ Configuration in *config/config.yml*:
 .. code-block:: yaml
    :linenos:
 
-          framework:
-             serializer:
-                cache: oro.cache. serializer
+              framework:
+                 serializer:
+                    cache: oro.cache. serializer
 
-          services:
-             oro_cache.serializer:
-                public: false
-                parent: oro.cache.abstract
-                calls:
-                   - [ setNamespace, [ 'oro_serializer_cache' ] ]
+              services:
+                 oro_cache.serializer:
+                    public: false
+                    parent: oro.cache.abstract
+                    calls:
+                       - [ setNamespace, [ 'oro_serializer_cache' ] ]
 
 Security Nonces
 ^^^^^^^^^^^^^^^
@@ -356,39 +358,39 @@ Configuration in *config/security.yml*:
 .. code-block:: yaml
    :linenos:
 
-          services:
-           oro_embedded_form.csrf_token_cache:
-               public: false
-               parent: oro.cache.abstract
-               calls:
-                   - [ setNamespace, [ 'oro_csrf_cache' ] ]
-           oro_security.wsse_nonce_cache:
-               public: false
-               parent: oro.cache.abstract
-               calls:
-                   - [ setNamespace, [ 'oro_nonces_cache' ]
+      services:
+       oro_embedded_form.csrf_token_cache:
+           public: false
+           parent: oro.cache.abstract
+           calls:
+               - [ setNamespace, [ 'oro_csrf_cache' ] ]
+       oro_security.wsse_nonce_cache:
+           public: false
+           parent: oro.cache.abstract
+           calls:
+               - [ setNamespace, [ 'oro_nonces_cache' ]
 
 Attachments Cache
 ~~~~~~~~~~~~~~~~~
 
-The attachments in OroCommerce use `**KnpGaufretteBundle** <https://github.com/KnpLabs/KnpGaufretteBundle>`_. Default storage is the *attachments* directory in the [Application root] directory as stated in the following configuration:
+The attachments in |main_app_in_this_topic| use `**KnpGaufretteBundle** <https://github.com/KnpLabs/KnpGaufretteBundle>`_. Default storage is the *attachments* directory in the [Application root] directory as stated in the following configuration:
 
 Configuration in *Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yml*:
 
 .. code-block:: yaml
    :linenos:
 
-   knp_gaufrette:
-       adapters:
-           attachments:
-               local:
-                   directory: "%kernel.root_dir%/attachment"
-       filesystems:
-           attachments:
-               adapter: attachments
-               alias:   attachments_filesystem
+       knp_gaufrette:
+           adapters:
+               attachments:
+                   local:
+                       directory: "%kernel.root_dir%/attachment"
+           filesystems:
+               attachments:
+                   adapter: attachments
+                   alias:   attachments_filesystem
 
-When OroCommerce deployment is scaled, the attachments should be shared among all the web nodes in one of the following ways:
+When |main_app_in_this_topic| deployment is scaled, the attachments should be shared among all the web nodes in one of the following ways:
 
 - **Recommended**: Configure KnpGaufretteBundle to use the external storage, such as
   Azure Blob Storage, AwsS3, AmazonS3, FTP, SFTP, MogileFS, MongoGridFS, Open Cloud, or Dropbox. Find more information in the `KnpGaufretteBundle documentation <https://github.com/KnpLabs/KnpGaufretteBundle/blob/master/README.md>`_.
@@ -561,8 +563,8 @@ Adapter Configuration for Memcached
                adapter: attachments_cache
                alias:   attachments_filesystem
 
-Multiple OroCommerce Nodes Configuration and Load Balancing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Multiple |main_app_in_this_topic| Nodes Configuration and Load Balancing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this point we have fully configured a single node and have to check that everything is working fine.
 
@@ -595,3 +597,5 @@ https://www.nginx.com/blog/load-balancing-with-nginx-plus/
 
 https://www.nginx.com/blog/load-balancing-with-nginx-plus-part2/
 
+
+.. |main_app_in_this_topic| replace:: OroCommerce

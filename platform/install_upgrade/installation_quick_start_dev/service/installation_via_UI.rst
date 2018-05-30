@@ -1,9 +1,9 @@
-:orphan:
+.. _book-installation-wizard:
 
 .. begin_installation_via_UI
 
-Via Installation Wizard
-~~~~~~~~~~~~~~~~~~~~~~~
+Installation Via UI
+~~~~~~~~~~~~~~~~~~~
 
 .. See this quick preview of the installation wizard steps:
 
@@ -17,9 +17,9 @@ Via Installation Wizard
 
 .. _a-1-check-system-requirements:
 
-3. During the *System requirements check*, The installation wizard will check the system configuration:
+3. During the *System requirements check*, the installation wizard will check the system configuration:
 
-   .. image:: ../../platform/img/installation/wizard-1.png
+   .. image:: /install_upgrade/img/installation/wizard-1.png
 
    Ensure that system requirements are met (status indicators should be green for all items) and click **Next**.
 
@@ -27,9 +27,9 @@ Via Installation Wizard
 
    The application configuration page emerges.
 
-   .. image:: ../../platform/img/installation/wizard-2.png
+   .. image:: /install_upgrade/img/installation/wizard-2.png
 
-   The values defined in the :ref:`configuration parameters <book-installation-github-clone-configuration-params>` will be filled in automatically, but they can be changed.
+   The default values will be filled in automatically, but they can be changed.
 
 4. For the *Configuration*, provide the following information:
 
@@ -45,13 +45,13 @@ Via Installation Wizard
      d) In *Mailer settings*, select the transport for the emails OroCommerce will be sending. Available options are *PHP mail*, *SMTP*, and *sendmail*. When you select the *SNMP*, please, provide the following mail server connection details: host, port, encryption (None, SSL, TLS), user name, and password.
      e) In the *Websocket connection*, set up your web service network configuration: service bind address and port, WS backend and frontend host/post.
 
-   Once you are happy with the information you've provided, click **Next**.
+   Once you are happy with the information you have provided, click **Next**.
 
    .. _a-3-database-initialization:
 
 5. The *Database initialization* starts automatically.
 
-   .. image:: ../../platform/img/installation/wizard-3.png
+   .. image:: /install_upgrade/img/installation/wizard-3.png
 
    .. hint:: If something goes wrong and a failure occurs, you can check error logs in the ``var/logs/oro_install.log`` file. Fix the errors, click the **Back** button and repeat.
 
@@ -61,14 +61,14 @@ Via Installation Wizard
 
    The administration step appears.
 
-   .. image:: ../../platform/img/installation/wizard-4.png
+   .. image:: /install_upgrade/img/installation/wizard-4.png
 
-6. On the *Administration* step, provide the following information:
+6. At the *Administration* step, provide the following information:
 
      a) Organization name
      b) Application URL (e.g. http://commerce.MyCompany.com)
      c) Create the first system administrator by providing a user name, a password (with confirmation), an email, and their first and last name.
-     d) If necessary, tick *Load Sample Data* box.
+     d) If necessary, select the *Load Sample Data* check box.
 
         .. note:: Load Sample Data only for learning purposes, test deployments and pre-production deployments. In this mode, OroCommerce is populated with sample data that help you unlock all the features so that you can quickly test the system after re-configuration or customization.
 
@@ -76,7 +76,7 @@ Via Installation Wizard
 
      e) Finally, click **Install** and wait until the status for all operations turns green.
 
-        .. image:: ../../platform/img/installation/wizard-5.png
+        .. image:: /install_upgrade/img/installation/wizard-5.png
 
         .. hint:: If something goes wrong and a failure occurs, you can check error logs in the var/logs/oro_install. Fix the errors, click **Back** and repeat the installation step.
 
@@ -84,11 +84,11 @@ Via Installation Wizard
 
 .. _a-6-launch-the-application:
 
-7. On the *Finish* step, click **Launch Application** to open the OroCommerce Administration Login screen.
+7. At the *Finish* step, click **Launch Application** to open the OroCommerce Administration Login screen.
 
-   .. image:: ../../platform/img/installation/wizard-6.png
+   .. image:: /install_upgrade/img/installation/wizard-6.png
 
-   The URL will  be similar to the following: *http://<hostname>:<port>/app.php/admin/user/login*. To log in, use credentials you provided for the first system administrator.
+   The URL will be similar to the following: *http://<hostname>:<port>/app.php/admin/user/login*. To log in, use credentials you provided for the first system administrator.
 
 .. TODO incorporate imgs for OroCRM/OroCommerce
 

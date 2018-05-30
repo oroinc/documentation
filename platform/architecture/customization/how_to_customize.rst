@@ -1,5 +1,6 @@
-.. _architecture--customization--how-to-customize:
+:orphan:
 
+.. _architecture--customization--how-to-customize:
 
 How to Customize Oro Application
 ================================
@@ -27,9 +28,9 @@ Browse published extensions for Oro applications on the following marketplaces:
 * OroCRM --- `https://marketplace.orocrm.com/ <https://marketplace.orocrm.com/>`_
 * OroCommerce --- `https://marketplace.orocommerce.com/ <https://marketplace.orocommerce.com/>`_
 
-.. note:: Once the Oro application extension package is :ref:`published on the Oro marketplace <dev--extend--how-to-publish-extension-on-the-marketplace>`, it is automatically registered in the `Oro Packagist repository <https://packagist.orocrm.com/>`_. See a topic on a :ref:`Distribution Model <architecture-oro-php-application-structure>` for more information on using composer service with Packagist and OroPackagist repositories.
+.. note:: Once the Oro application extension package is `published on the Oro marketplace <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/extend-and-customize/how-to-add-an-extension-to-oro-marketplace>`_, it is automatically registered in the `Oro Packagist repository <https://packagist.orocrm.com/>`_. See a topic on a :ref:`Distribution Model <architecture-oro-php-application-structure>` for more information on using composer service with Packagist and OroPackagist repositories.
 
-To install an extension, use the package manager CLI (`oro:package:install command`) or the composer CLI (`composer require <extension-name>:<version>` command). For detailed information, please, see the :ref:`How To Install Extensions from the Marketplace <dev--extend--how-to-publish-extension-on-the-marketplace>` topic.
+To install an extension, use the package manager CLI (`oro:package:install command`) or the composer CLI (`composer require <extension-name>:<version>` command). For detailed information, please, see the `How To Install Extensions from the Marketplace <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/install-upgrade-and-patch/how-to-install-extension-from-command-line>`_ topic.
 
 Source Code Customization
 -------------------------
@@ -41,7 +42,9 @@ In addition to existing extensions, you can create your own customization of the
 Prepare for Source Code Customization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before you begin customizing you Oro application, follow the guidance provided in the :ref:`Custom Application <custom-oro-application>` topic to set up your custom application repository for version control, and install Oro application from your custom repository.
+.. TODO replace the link once the topic is ported to the OroCommerce
+
+Before you begin customizing you Oro application, follow the guidance provided in the `Custom Application <https://oroinc.com/doc/orocrm/current/dev-guide/custom-application>`_ topic to set up your custom application repository for version control, and install Oro application from your custom repository.
 
 Running the application in development mode (via the `http://<oro-application-base-url>/app_dev.php/` link) helps you debug and test your customization steps.
 
@@ -58,7 +61,9 @@ Create a new bundle to put all your custom code and updated configuration files.
 
 .. contents:: :local:
 
-.. seealso:: See the :ref:`Cookbook <dev-cookbook>` section in OroCRM documentation and the :ref:`Customization <dev--extend-and-customize>` topic in the Oro application Developer Guide for additional information.
+.. TODO fix the Cookbook link when info is ported to OroCommerce
+
+.. seealso:: See the `Cookbook <https://oroinc.com/orocrm/doc/current/dev-guide/cookbook>`_ section in OroCRM documentation and the Customization topic in the Oro application Developer Guide for additional information.
 
 [PHP] Add a Third-Party Component or Library via Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,15 +105,14 @@ To enable it in the Oro application, register the bundle in the bundles.yml file
 
 .. TODO replace the link when doc is ported to Commerce
 
-.. note:: See the topic on :ref:`Differences to Common Symfony Applications <book_differences>` for more information on bundle registration effect.
+.. note:: See the topic on `Differences to Common Symfony Applications <https://oroinc.com/orocrm/doc/current/dev-guide/getting-started-book/differences>`_ for more information on bundle registration effect.
 
 This immediately enforces the customization changes defined in the bundle to apply to your Oro application.
 However, next, you may need to implement custom changes in the existing business logics to benefit from the enabled capabilities.
 
 [Symfony] Extend the Existing Bundle via Inheritance or Using Compiler Passes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Use Symfony inheritance (e.g. override controllers, templates, routes of this parent bundle) to customize the existing Oro application bundle. For detailed information, please, see the :ref:`How to extend existing bundle <how-to-extend-existing-bundle>` topic in Oro documentation and `How to use compiler passes <https://symfony.com/doc/current/service_container/compiler_passes.html>`_ in Symfony documentation.
+Use Symfony inheritance (e.g. override controllers, templates, routes of this parent bundle) to customize the existing Oro application bundle. For detailed information, please, see the :`How to extend existing bundle <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/extend-and-customize/how-to-extend-existing-bundle>`_ topic in Oro documentation and `How to use compiler passes <https://symfony.com/doc/current/service_container/compiler_passes.html>`_ in Symfony documentation.
 
 .. note:: Inheritance techniques are easier to implement and maintain than the compiler pass approach.
 
@@ -170,7 +174,9 @@ Once added, the option may be displayed in the UI or may affect the Oro applicat
 
 .. add more examples for every type of the items/features: workflow, navigation tree, datagrid, dashboard widget
 
-Please, see the :ref:`System Configuration <ref-format-system-configuration>` topic for sample configuration files.
+.. TODO <replace link when the content is synced between OroCRM and OroCommerce
+
+Please, see the `System Configuration <https://oroinc.com/doc/orocrm/current/reference/format/system-configuration>`_ topic for sample configuration files.
 
 [Oro] Customization Using Twig Placeholders
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -198,7 +204,7 @@ Please, see the `OroMigrationBundle documentation <https://github.com/oroinc/pla
 Publish Your Complete Customization as a Package on the Oro Marketplace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once your customization is ready, you can publish it in a dedicated repository that follows the :ref:`package repository requirements <architecture-oro-php-application-structure>`, create a reusable package, and share it on the Oro marketplace. See :ref:`How to add extension to the Oro marketplace <dev--extend--how-to-publish-extension-on-the-marketplace>` for more information.
+Once your customization is ready, you can publish it in a dedicated repository that follows the :ref:`package repository requirements <architecture-oro-php-application-structure>`, create a reusable package, and share it on the Oro marketplace. See `How to add extension to the Oro marketplace <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/extend-and-customize/how-to-add-an-extension-to-oro-marketplace>`_ for more information.
 
 Customization via UI
 --------------------
@@ -209,8 +215,8 @@ For data model and business processes customization, Oro applications provide th
 
 .. TODO replace link one the information on entities is synced to the OroCommerce
 
-In the **System > Entity Management**, you can create a data model for a new business entity (e.g. add information about the purchase orders and link them  to the B2B orders in OroCommerce), and start using it right away after quick field and relationships configuration. See :ref:`Entities Management <entities-management>` for detailed information.
+In the **System > Entity Management**, you can create a data model for a new business entity (e.g. add information about the purchase orders and link them  to the B2B orders in OroCommerce), and start using it right away after quick field and relationships configuration. See `Entities Management <https://oroinc.com/orocrm/doc/current/admin-guide/entities>`_ for detailed information.
 
-In the **System > Workflows**, you can automate a workflow to reflect a custom business process in your organization. See :ref:`Workflows <doc--system--workflow-management>` for detailed information.
+In the **System > Workflows**, you can automate a workflow to reflect a custom business process in your organization.
 
 .. finish_architecture_customization_how_to_customize

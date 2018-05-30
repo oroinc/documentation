@@ -1,3 +1,5 @@
+.. _orm_search_engine:
+
 ORM Search Engine
 =================
 

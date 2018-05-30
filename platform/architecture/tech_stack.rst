@@ -14,7 +14,7 @@ As any **web application**, Oro application generally follows a `client - server
 Client Side
 ^^^^^^^^^^^
 
-A **client**, whether it is a web-browser or a third-party application connected via :ref:`the API <web-services-api>`, makes requests to the Oro application server-side to get the application content or JSON response. Information received in response from the server-side may be used:
+A **client**, whether it is a web-browser or a third-party application connected via the `API <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/web-api>`_, makes requests to the Oro application server-side to get the application content or JSON response. Information received in response from the server-side may be used:
 
 * By the web browser -- to render or update the web page shown to the end user.
 * By the third party application -- to launch data synchronization, trigger actions in the Oro applications or other integrated systems.
@@ -37,7 +37,7 @@ In addition to the HTTP connections, Oro applications establish websocket connec
 API Client
 """"""""""
 
-The architecture of the third-party application that connects to the Oro application via :ref:`the API <web-services-api>` is not limited by the Oro application architecture. The API client may be implemented as a separate custom web application, custom mobile application, ERP system, ETL service, etc.
+The architecture of the third-party application that connects to the Oro application via `the API <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/web-api>`_ is not limited by the Oro application architecture. The API client may be implemented as a separate custom web application, custom mobile application, ERP system, ETL service, etc.
 
 Server Side
 ^^^^^^^^^^^

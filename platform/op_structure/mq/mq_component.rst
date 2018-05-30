@@ -15,10 +15,10 @@ different transports. It contains several layers.
 
 The lowest layer is called Transport and provides an abstraction of
 transport protocol. The Consumption layer provides tools to consume
-messages, such as cli command, signal handling, logging, extensions. It
+messages, such as the cli command, signal handling, logging, extensions. It
 works on top of transport layer.
 
-The Client layer provides an ability to start producing/consuming
+The Client layer provides the ability to start producing/consuming
 messages with as little configuration as possible.
 
 
@@ -64,7 +64,7 @@ Terminology
 -  **Message Processor** - Processes the queue messages (i.e. contains a
    code that should run when a consumer processes a message with the
    specified topic).
--  **Message Topic** - Some identifier that indicates which message
+-  **Message Topic** - An identifier that indicates which message
    processor should be executed for the message. One processor can
    subscribe to several topics. Also, there can be several processes
    subscribed to the same topic.
@@ -201,7 +201,7 @@ and changes its status without creating any job.
         public function process(MessageInterface $message, SessionInterface $session)
         {
             $body = JSON::decode($message->getBody());
-            
+
             if (! isset($body['id'])) {
                 $this->logger->critical(
                     sprintf('Got invalid message, id is empty: "%s"', $message->getBody()),
@@ -210,25 +210,25 @@ and changes its status without creating any job.
 
                 return self::REJECT;
             }
-            
+
             $em = $this->getEntityManager();
             $repository = $em->getRepository(SomeEntity::class);
-            
+
             $entity = $repository->find($body['id']);
-            
+
             if(! $entity) {
                 $this->logger->error(
                     sprintf('Cannot find an entity with id: "%s"', $body['id']),
                     ['message' => $message]
                 );
 
-                return self::REJECT;            
+                return self::REJECT;
             }
-            
+
             $entity->setStatus('success');
             $em->persist($entity);
             $em->flush();
-            
+
             return self::ACK;
           }
 
@@ -584,7 +584,7 @@ The processor creates a set of delayed jobs, each of them sends
         {
             $bigJobParts = JSON::decode($message->getBody());
 
-            $result = $this->jobRunner->runUnique( //a root job is creating here 
+            $result = $this->jobRunner->runUnique( //a root job is creating here
                 $message->getMessageId(),
                 Topics::DO_BIG_JOB,
                 function (JobRunner $jobRunner) use ($bigJobParts) {
@@ -622,9 +622,9 @@ created delayed job.
 
             $result = $this->jobRunner->runDelayed($payload['jobId'], function (JobRunner $jobRunner) use ($payload) {
                 //the child job status with the id $payload['jobId'] is changed from new to running
-                
+
                 $smallJobData = $payload['smallJob'];
-                
+
                 if (! $this->checkDataValidity($smallJobData))) {
                     $this->logger->error(
                         sprintf('Invalid data received: "%s"', $smallJobData),

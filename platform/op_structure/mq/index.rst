@@ -1,5 +1,3 @@
-:orphan:
-
 .. _op-structure--mq--index:
 
 Message Queue
@@ -17,7 +15,7 @@ information about previous and next messages.
 Therefore, a message queues should be used if:
 
 -  A process can be executed asynchronously.
--  A process does not affect User Experience.
+-  A process does not affect user experience.
 -  Processes need to be executed in parallel for faster performance.
 -  You need a guarantee of processing.
 -  You need scalability.
@@ -28,7 +26,7 @@ For more information, see the following external resources:
    Queue <http://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002620_.htm>`__
 -  `Message Queue
    Benefits <https://www.iron.io/top-10-uses-for-message-queue/>`__
-   (most of them are applicable for Oro Message Queue Component)
+   (most of them are applicable to Oro Message Queue Component)
 -  `Rabbit MQ
    Introduction <https://www.rabbitmq.com/tutorials/tutorial-one-php.html>`__
 
@@ -43,3 +41,4 @@ Using Message Queue in Oro Application
    dbal
    rabbit_mq_intro
    rabbit_mq
+   rabbit_mq_in_production

@@ -1,13 +1,19 @@
-:orphan:
+.. _installation--optimize-runtime-performance:
 
-Performance Optimization
-~~~~~~~~~~~~~~~~~~~~~~~~
+Performance Optimization of the Oro Application Environment
+-----------------------------------------------------------
+
+.. contents::
+   :local:
+   :depth: 1
 
 .. begin_performance_optimization
 
+Optimize PHP performance
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-PHP-FPM
-^^^^^^^
+PHP-FPM configuration
+~~~~~~~~~~~~~~~~~~~~~
 
 PHP-FPM (FastCGI Process Manager) is an alternative PHP FastCGI implementation adjusted for better handling of the heavy workload.
 
@@ -16,26 +22,26 @@ The recommended configuration of the PHP-FPM is provided below.
 .. code-block:: ini
     :linenos:
 
-            [www]
-            listen = 127.0.0.1:9000
-            ; or
-            ; listen = /var/run/php5-fpm.sock
+       [www]
+       listen = 127.0.0.1:9000
+       ; or
+       ; listen = /var/run/php5-fpm.sock
 
-            listen.allowed_clients = 127.0.0.1
+       listen.allowed_clients = 127.0.0.1
 
-            pm = dynamic
-            pm.max_children = 128
-            pm.start_servers = 8
-            pm.min_spare_servers = 4
-            pm.max_spare_servers = 8
-            pm.max_requests = 512
+       pm = dynamic
+       pm.max_children = 128
+       pm.start_servers = 8
+       pm.min_spare_servers = 4
+       pm.max_spare_servers = 8
+       pm.max_requests = 512
 
-            catch_workers_output = yes
+       catch_workers_output = yes
 
 .. note:: Make sure that Nginx ``fastcgi_pass`` and PHP-FPM ``listen`` options are aligned.
 
-Optimize Runtime Compilation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Optimize PHP Runtime Compilation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use an OpCache bytecode engine to cache bytecode representation of the PHP code and save time on the repetitive runtime compilation.
 
@@ -61,9 +67,9 @@ You can improve your website performance by turning on compression and caching.
 This is configured on your web server.
 
 For nginx
-"""""""""
+~~~~~~~~~
 
-To enable ``gzip`` compression, add the following into your ``nginx.conf`` or website configuration file:
+1. To enable ``gzip`` compression, add the following into your ``nginx.conf`` or website configuration file:
 
 .. code::
 
@@ -79,7 +85,10 @@ To enable ``gzip`` compression, add the following into your ``nginx.conf`` or we
 
 .. note:: *Nginx.conf* is usually located at ``/etc/nginx/nginx.conf``.
 
-To install ``pagespeed_mod`` for nginx, use the `build ngx pagespeed from source <https://modpagespeed.com/doc/build_ngx_pagespeed_from_source>`_ guidance.
+.. _installation--add-pagespeed-mod:
+
+2. To install ``pagespeed_mod`` for nginx, use the `build ngx pagespeed from source <https://modpagespeed.com/doc/build_ngx_pagespeed_from_source>`_ guidance.
+
 To enable ``HTML compression``, add the following lines into your ``nginx.conf`` or website configuration file in sections ``server`` or ``http``:
 
 .. code::
@@ -91,7 +100,7 @@ To enable ``HTML compression``, add the following lines into your ``nginx.conf``
 
 .. note:: *Nginx.conf* is usually located at ``/etc/nginx/nginx.conf``.
 
-To enable caching, insert the following in the server section of your website configuration file:
+3. To enable caching, insert the following in the server section of your website configuration file:
 
 .. code::
 
@@ -112,13 +121,12 @@ To enable caching, insert the following in the server section of your website co
    }
 
 For Apache
-""""""""""
+~~~~~~~~~~
 
 If you are using Apache as your web server, you already have the necessary configuration in the ``public/.htaccess`` file.
 
-However, this configuration rely on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression and caching to work.
-
-Ensure these modules are enabled in Apache configuration:
+However, this configuration rely on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
+and caching to work. Ensure these modules are enabled in Apache configuration.
 
 1. To enable compression, ensure that ``mod_deflate`` module is loaded in your Apache config file as illustrated below:
 
@@ -144,7 +152,17 @@ Ensure these modules are enabled in Apache configuration:
           BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
       </IfModule>
 
-2. To enable caching, ensure that ``mod_headers`` is loaded in your Apache config file as shown below:
+2.  To install ``Pagespeed`` module for Apache, follow the guidance on `installing from Apache-only packages <https://modpagespeed.com/doc/download>`_
+    To enable ``HTML compression``, ensure that these lines are uncommetned in ``pagespeed.conf``:
+
+    .. code::
+
+        ModPagespeed On
+        ModPagespeedFileCachePath "/var/cache/mod_pagespeed/"
+        ModPagespeedEnableFilters collapse_whitespace
+        AddOutputFilterByType MOD_PAGESPEED_OUTPUT_FILTER text/html
+
+3. To enable caching, ensure that ``mod_headers`` is loaded in your Apache config file as shown below:
 
    .. code::
 
@@ -165,14 +183,4 @@ Ensure these modules are enabled in Apache configuration:
               Header set Cache-Control "max-age=1814400, public"
            </filesMatch> 
       </IfModule> 
-
-3.  To install ``Pagespeed`` module for Apache, follow the guidance on `installing from Apache-only packages <https://modpagespeed.com/doc/download>`_
-    To enable ``HTML compression``, ensure that these lines are uncommetned in ``pagespeed.conf``:
-
-    .. code::
-
-        ModPagespeed On
-        ModPagespeedFileCachePath "/var/cache/mod_pagespeed/"
-        ModPagespeedEnableFilters collapse_whitespace
-        AddOutputFilterByType MOD_PAGESPEED_OUTPUT_FILTER text/html
 

@@ -1,39 +1,13 @@
-Installation
-------------
-
-.. begin_installation_intro
-
-You can launch Oro application installation either :ref:`from the console <installation-via-console>`, or using :ref:`the web installation wizard <book-installation-wizard>`.
-
-The installation wizard guides you through the installation process and is more straightforward. However, with console-based installation, you get more flexibility in choosing custom options, like force reinstall. Additionally, from the console, you can install Oro application in a silent mode.
-
-.. _installation-via-console:
-.. _book-installation-command:
-
-.. include:: ../../platform/installation/installation_via_console.rst
-   :start-after: begin_installation_via_console
-   :end-before: finish_installation_via_console
-
-.. _silent-installation:
-
-.. include:: ../../platform/installation/installation_via_console.rst
-   :start-after: begin_silent_installation_via_console
-   :end-before: finish_silent_installation_via_console
-
-
-.. _book-installation-wizard:
-
-.. include:: ../../platform/installation/installation_via_UI.rst
-   :start-after: begin_installation_via_UI
+.. _customize_install:
 
 Customizing the Installation Process
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can customize the installation process in several ways:
+To customize the installation process and modify the database structure and/or data that are loaded in the |main_app_in_this_topic| after installation, you can:
 
-- :ref:`Execute custom migrations <execute-custom-migrations>`.
-
-- :ref:`Load custom data fixtures <load-custom-data-fixtures>`.
+.. contents::
+    :local:
+    :depth: 1
 
 .. _execute-custom-migrations:
 
@@ -110,7 +84,7 @@ event are executed after the *main* migrations have been processed.
 Load Custom Data Fixtures
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To load your own data fixtures, you'll need to implement Doctrine's *"FixtureInterface"*:
+To load your own data fixtures, you will need to implement Doctrine's *"FixtureInterface"*:
 
 .. code-block:: php
     :linenos:
@@ -140,9 +114,4 @@ To load your own data fixtures, you'll need to implement Doctrine's *"FixtureInt
 
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 
-.. finish_installation_intro
-
-.. toctree::
-
-   installation_via_console
-   installation_via_UI
+.. |main_app_in_this_topic| replace:: OroCommerce

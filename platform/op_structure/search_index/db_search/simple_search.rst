@@ -1,3 +1,5 @@
+.. _simple_search:
+
 API Simple Search
 =================
 

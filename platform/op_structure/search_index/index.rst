@@ -1,5 +1,3 @@
-:orphan:
-
 .. _search_index_overview:
 
 
@@ -291,6 +289,8 @@ However, if you really need to work on a lower level (e.g. to write functional t
 * website Elasticsearch engine - Oro\Bundle\WebsiteElasticSearchBundle\Engine\ElasticSearchEngine, service ID is oro_website_search.engine.
 
 All these engines accept low-level query and execution context as an arguments, and return result object with list of found entities, total number of results and requested aggregated data.
+
+.. _search_index_overview--indexation-process:
 
 Indexation Process
 ------------------
@@ -634,6 +634,7 @@ References
 * :ref:`Standard search index type <search_index_db_from_md>`
 * :ref:`Elasticsearch support for standard index type <elastic-search>`
 * `Website search index type <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/README.md>`_
+
 
 .. toctree::
    :maxdepth: 1

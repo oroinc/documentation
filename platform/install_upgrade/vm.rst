@@ -1,15 +1,13 @@
-:orphan:
-
 .. _virtual_machine_deployment:
 
-Virtual Machine Sandbox Deployment
-----------------------------------
+Running a Pre-Installed Oro Application with the Oracle VM VirtualBox
+---------------------------------------------------------------------
 
 .. begin_virtual_machine_deployment
 
-You can deploy a virtual machine with Oro application demo instance for a more flexible and secure evaluation experience.
+For a more flexible and secure evaluation experience, you can deploy a virtual machine with Oro application demo instance on an Oracle VM VirtualBox server.
 
-You can run the virtual machine on an Oracle VM VirtualBox server that is supported on OS X, Windows, and Linux-based operation systems.
+.. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox Server.
 
 Ensure that the server is installed in your local or corporate environment and is accessible before you do the following steps:
 
@@ -47,7 +45,7 @@ Ensure that the server is installed in your local or corporate environment and i
 
     a) Open the following file in the text editor with administrator permissions (use *run as administrator* option on Windows, and *sudo* on Linux and OS X):
 
-        * *Windows:* c:\windows\system32\drivers\etc\hosts
+        * *Windows:* c:/windows/system32/drivers/etc/hosts
         * *Linux:* /etc/hosts
 
     b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocommerce.com) and save the file.
@@ -56,8 +54,8 @@ Ensure that the server is installed in your local or corporate environment and i
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.orocrm.com/download
+.. _`download section`: http://www.oroinc.com/v/download
 
-.. |the_site| replace:: `orocrm.com`_
+.. |the_site| replace:: `oroinc.com/b2b-ecommerce`_
 
-.. _`orocrm.com`:  http://www.orocrm.com/
+.. _`oroinc.com/b2b-ecommerce`:  http://www.oroinc.com/b2b-ecommerce/

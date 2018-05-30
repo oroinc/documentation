@@ -8,13 +8,13 @@ Message Queue Jobs and Transport Configuration
 Overview
 --------
 
-The OroMessageQueue bundle integrates OroMessageQueue component. It adds easy to use
-configuration layer, register services and tie them together, register CLI commands.
+The OroMessageQueue bundle integrates the OroMessageQueue component. It adds an easy to use
+configuration layer, register services and ties them together, registers CLI commands.
 
 Jobs
 ----
 
-The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq-component--jobs>`. So the jobs are created in the db and have a web gui where you can monitor jobs status and interrupt jobs.
+The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq-component--jobs>`. So the jobs are created in the db and have a web gui where you can monitor the jobs' status and interrupt jobs.
 
 Usage
 -----
@@ -150,6 +150,28 @@ message processing and interrupts after the processing is done.
 
 Also a consumer interrupts **if an exception was thrown during a message
 processing**.
+
+Consumer Heartbeat
+~~~~~~~~~~~~~~~~~~
+
+Users may be informed about the state of consumers in the system (whether there is at least one alive). To guarantee that, the following process is used:
+
+- On start and after every configured time period, each consumer calls the `tick` method of the ConsumerHeartbeat service that informs the system that the consumer is alive.
+- The cron command `oro:cron:message-queue:consumer_heartbeat_check` is periodically executed to check consumers' state. If it does not find any consumers alive, the `oro/message_queue_state` socket message is sent. This message notifies all logged-in users that the system may work incorrectly. Users of the management console get a flash message notification with information that consumers are not available.
+- The same check is also performed when a user logs in. This is done to notify users about the problem as soon as possible.
+
+The notification period can be changed in the application configuration file using the `consumer_heartbeat_update_period` option:
+
+.. code:: yaml
+
+   oro_message_queue:
+       consumer:
+           heartbeat_update_period: 20  #the update period was set to 20 minutes
+
+The default value of the `heartbeat_update_period` option is 15 minutes.
+
+To disable the Consumer Heartbeat notifications, set the `heartbeat_update_period` option to 0.
+
 
 Supervisord
 ~~~~~~~~~~~
