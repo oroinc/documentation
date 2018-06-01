@@ -1,7 +1,7 @@
 .. _virtual_machine_deployment:
 
-Running a Pre-Installed Oro Application with the Oracle VM VirtualBox
----------------------------------------------------------------------
+Using the VirtualBox VM Image
+=============================
 
 .. begin_virtual_machine_deployment
 
@@ -45,7 +45,7 @@ Ensure that the server is installed in your local or corporate environment and i
 
     a) Open the following file in the text editor with administrator permissions (use *run as administrator* option on Windows, and *sudo* on Linux and OS X):
 
-        * *Windows:* c:\windows\system32\drivers\etc\hosts
+        * *Windows:* c:/windows/system32/drivers/etc/hosts
         * *Linux:* /etc/hosts
 
     b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocrm.com) and save the file.
