@@ -1,7 +1,7 @@
 .. _virtual_machine_deployment:
 
-Running a Pre-Installed Oro Application with the Oracle VM VirtualBox
----------------------------------------------------------------------
+Using the VirtualBox VM Image
+=============================
 
 .. begin_virtual_machine_deployment
 
