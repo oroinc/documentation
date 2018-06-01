@@ -15,11 +15,12 @@ The information is grouped into the following topics:
   * :ref:`OroCommerce Enterprise Edition for Germany <installation--orocommerce-crm-ee-de--readme>`
   * :ref:`OroCommerce Enterprise Edition (without CRM) <installation--orocommerce-ee--readme>`
 
-.. Automated Installation via Vagrant file -- Automated installation using prepared images or provision configuration to familiarize themselves with the app functional.
+* :ref:`One-Click Automated Installation <one-step-install>` -- The automated ways to quickly get the running Oro Application for the familiarization or development purpose with minimum efforts:
+
+  * :ref:`Run Pre-Installed Oro Application in the Oracle VM VirtualBox <virtual_machine_deployment>`
+  * :ref:`Get Running Oro Application Using Vagrant Provision <vagrant_installation>`
 
 .. Installation in the AWS -- ...
-
-* :ref:`Run Pre-Installed Oro Application in the Oracle VM VirtualBox <virtual_machine_deployment>` -- Steps for downloading and using the virtual image with Oro application to get a sandbox environment without any hassle.
 
 * :ref:`Upgrade <upgrade>` -- Guidance on how to upgrade the Oro application to the newer version.
 
@@ -32,6 +33,6 @@ The information is grouped into the following topics:
    :hidden:
 
    installation_quick_start_dev/index
-   vm
+   one_step_automated_installation/index
    upgrade
    reinstall
