@@ -1,7 +1,7 @@
 .. _install-for-dev:
 
-Installation Quick Start for Developers
-=======================================
+Manual Installation
+===================
 
 .. toctree::
    :maxdepth: 1

@@ -9,7 +9,7 @@ Clone |oro_app_name| source code to the */usr/share/nginx/html/oroapp* folder:
 .. code:: bash
 
    cd /usr/share/nginx/html
-   git clone -b 3.0-rc https://github.com/orocommerce/orocommerce-application.git oroapp
+   git clone -b 3.0.0-rc https://github.com/oroinc/orocommerce-application.git oroapp
    cd oroapp
 
 ..

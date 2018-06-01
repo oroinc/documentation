@@ -1,7 +1,7 @@
 .. _virtual_machine_deployment:
 
-Running a Pre-Installed Oro Application with the Oracle VM VirtualBox
----------------------------------------------------------------------
+Using the VirtualBox VM Image
+=============================
 
 .. begin_virtual_machine_deployment
 
@@ -48,14 +48,14 @@ Ensure that the server is installed in your local or corporate environment and i
         * *Windows:* c:/windows/system32/drivers/etc/hosts
         * *Linux:* /etc/hosts
 
-    b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocommerce.com) and save the file.
+    b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocrm.com) and save the file.
 
-   To start using the Oro application demo, type in the suggested hostname (e.g., acme.orocommerce.com) in the browser on your device.
+   To start using the Oro application demo, type in the suggested hostname (e.g., acme.orocrm.com) in the browser on your device.
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.oroinc.com/v/download
+.. _`download section`: http://www.oroinc.com/orocrm/download
 
-.. |the_site| replace:: `oroinc.com/b2b-ecommerce`_
+.. |the_site| replace:: `oroinc.com/orocrm`_
 
-.. _`oroinc.com/b2b-ecommerce`:  http://www.oroinc.com/b2b-ecommerce/
+.. _`oroinc.com/orocrm`:  http://www.oroinc.com/ororm/
