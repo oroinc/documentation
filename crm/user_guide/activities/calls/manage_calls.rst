@@ -17,6 +17,7 @@ You can view and manage logged calls from the following pages in your Oro applic
   * Add Comment
 
   .. image:: /user_guide/img/activities/CallsRelatedRecord.png
+     :alt: Activities
 
 
 * From the page of all calls under **Activities > Calls** in the main menu, where you can perform the following actions for a call by hovering over the |IcEllipsisH| **More Actions** menu at the end of the row:
@@ -26,6 +27,7 @@ You can view and manage logged calls from the following pages in your Oro applic
   * |IcDelete| Delete
 
   .. image:: /user_guide/img/activities/AllCallsPage.png
+     :alt: More action menu
 
 * From the page of a selected call, you can perform the following actions:
 
@@ -36,6 +38,7 @@ You can view and manage logged calls from the following pages in your Oro applic
   * Add Comment
 
   .. image:: /user_guide/img/activities/CallsPage.png
+     :alt: Perform the actions
 
 .. note:: You can also access your call log from the :ref:`Recent Calls dashboard widget <user-guide--business-intelligence--widgets--recent--calls>`.
 
@@ -43,4 +46,3 @@ You can view and manage logged calls from the following pages in your Oro applic
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-

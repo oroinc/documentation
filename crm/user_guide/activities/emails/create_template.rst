@@ -36,6 +36,7 @@ To create an email template:
 4. Define the email template. Click on the necessary variable on the right and drag it to the text box:
 
    .. image:: /user_guide/img/emails/create_template.jpg
+      :alt: Click on the necessary variable
 
 5. You can preview your email by clicking **Preview** on the top right corner.
 
@@ -51,6 +52,7 @@ The following actions are available for an email template from the page of all t
 * |IcClone| Clone
 
 .. image:: /user_guide/img/emails/manage_templates.jpg
+   :alt: Actions are available for an email template
 
 You can edit the template details and save a new (cloned and edited) template.
 
@@ -64,17 +66,19 @@ Apply Template
 To apply an email template to a new email, select the template from the list of the **Apply Template** field, as shown below:
 
 .. image:: /user_guide/img/emails/apply_template.jpg
+   :alt: Select the template from the list of the apply template field
 
 You will see an **Apply Template Confirmation** message. Click **Yes, Proceed** to apply the selected template.
 
 .. image:: /user_guide/img/emails/apply_template_confirmation.jpg
+   :alt: Click yes, proceed
 
 You should now have your template applied to your email.
 
 .. image:: /user_guide/img/emails/template_applied.jpg
+   :alt: Have your template applied
 
 .. finish_create_template
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
