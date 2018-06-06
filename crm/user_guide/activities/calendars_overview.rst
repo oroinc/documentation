@@ -4,7 +4,7 @@ Calendars: System, Organization and User
 ========================================
 
 In your Oro application, you can add calendars with tasks and events related to a specific user, other users in the system
-(subject to the :ref:`roles and permissions defined <user-guide-user-management-permissions>`), as well as events 
+(subject to the :ref:`roles and permissions defined <user-guide-user-management-permissions>`), as well as events
 defined for the whole organization or system.
 
 Events in the system and organization calendars can be viewed by all the users within the system/organization.
@@ -32,18 +32,19 @@ To create a system or an organization calendar:
 3. The **Create System Calendar** page will appear:
 
    Define the following fields:
-   
+
    .. csv-table::
       :header: "Field", "Description"
       :widths: 10, 30
-   
+
       "**Calendar Name**","This is the only mandatory field. Defines the name used to refer to the calendar in the system."
       "**Color**","Choose the color used to highlight events in the calendar by default."
       "**Scope**","Define if this is a system or organization calendar (meaningful for enterprise edition only)."
 
   .. image:: /user_guide/img/getting_started/calendars/create_system_cal_new.png
- 
-4. Click **Save**. 
+     :alt: Create system and organization calendars
+
+4. Click **Save**.
 
 .. _user-guide-calendars-add-event:
 
@@ -66,24 +67,25 @@ You can find detailed information on adding calendar events to user calendars in
 Manage My Calendar
 ^^^^^^^^^^^^^^^^^^
 
-My Calendar shows you all user and system calendars subject to the permissions of your organization. You can reach My Calendar from the :ref:`Today's Calendar widget <user-guide--business-intelligence--widgets--todays-calendar>` on the dashboard, or from the :ref:`menu under your user name <doc-my-user-view-page>`. 
+My Calendar shows you all user and system calendars subject to the permissions of your organization. You can reach My Calendar from the :ref:`Today's Calendar widget <user-guide--business-intelligence--widgets--todays-calendar>` on the dashboard, or from the :ref:`menu under your user name <doc-my-user-view-page>`.
 
 From the calendar page, you can:
 
 1. Open the page of all :ref:`tasks <doc-activities-tasks>`
-  
-2. Open the page of all :ref:`calendar events <doc-activities-events>` 
 
-3. :ref:`Add the calendar of another user <user-guide-calendars-add-users-calendar>` 
+2. Open the page of all :ref:`calendar events <doc-activities-events>`
+
+3. :ref:`Add the calendar of another user <user-guide-calendars-add-users-calendar>`
 
 4. :ref:`Change calendar color <user-guide-calendars-change-color>`
 
 5. :ref:`Show/Hide selected calendars <doc-activities-events-actions-show-hide-calendar>`
- 
+
 6. :ref:`Remove calendars <doc-activities-events-actions-remove-calendar>`
 
 
 .. image:: /user_guide/img/getting_started/calendars/My_Calendar_Navigation.png
+   :alt: Add events to a system calendar
 
 .. _user-guide-calendars-add-users-calendar:
 
@@ -93,6 +95,7 @@ Add the Calendar of Another User
 You can add or remove calendars that you want to watch from the calendar panel on the left. By default, you have **My Tasks** calendar showing your tasks by their due dates, all existing system calendars, and your personal calendar.
 
 .. image:: /user_guide/img/getting_started/calendars/My_Calendar_Add_User_Calendar.png
+   :alt: Add the calendar of another user
 
 To start watching calendars of other users, select a user by clicking **Choose a user to add**. Use the search field to quickly find the required user: start entering their name and click the required name from the dynamically filtered suggestions. You can also click the hamburger menu next to the list to select the required user in the dialog box using filters, etc.
 
@@ -104,9 +107,10 @@ Change Calendar Color
 System calendars have default colors defined by the person who manages them, but you can change colors of your own calendars the following way:
 
 1. Hover over the calendar name in the panel to the left.
-2. Click the ellipsis menu that appears at the end of the corresponding row, and click to choose the desired color (either from the default color box, or custom color wheel). 
+2. Click the ellipsis menu that appears at the end of the corresponding row, and click to choose the desired color (either from the default color box, or custom color wheel).
 
 .. image:: /user_guide/img/getting_started/calendars/My_Calendar_Change_Color.png
+   :alt: Change calendar color
 
 .. _doc-activities-events-actions-show-hide-calendar:
 
@@ -116,6 +120,7 @@ Show/Hide a Calendar
 Click on the selected calendar from the list in the panel to the left to show or hid it. Alternatively, click the ellipsis menu at the end of row of the selected calendar, and then click **Show calendar**/**Hide calendar**.
 
  .. image:: /user_guide/img/getting_started/calendars/My_Calendar_Show_Hide.png
+   :alt: Show/Hide a calendar
 
 .. note:: Hidden calendars do not appear in the right part of the page and in the :ref:`Today's Calendar <user-guide--business-intelligence--widgets--todays-calendar>` widget.
 
@@ -132,6 +137,7 @@ You can remove from calendars of other users from your list:
 .. important:: You cannot remove **My Tasks**, system calendars, and your personal calendar.
 
 .. image:: /user_guide/img/getting_started/calendars/My_Calendar_Remove.png
+   :alt: Remove a calendar
 
 Explore Calendar Event Statuses
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -156,6 +162,7 @@ Icons within event cells represents invitation statuses depending on whether the
 - The |IcReminder| **Reminder** icon in appears when the event owner set up reminders about the event.
 
 .. image:: /user_guide/img/getting_started/calendars/My_Calendar_Statuses.png
+   :alt: Explore calendar event statuses
 
 **Related Topic:**
 
@@ -165,4 +172,3 @@ Icons within event cells represents invitation statuses depending on whether the
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
