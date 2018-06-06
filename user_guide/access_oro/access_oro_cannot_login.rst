@@ -14,6 +14,7 @@ Account Is Locked
 The **Account is locked** notification means that your account has been disabled in the system. You can no longer log into the system and other users cannot engage you in business activities.
 
 .. image:: ../img/access_oro/login_user_disabled.png
+   :alt: Account is locked notification
 
 **Solution:**
 
@@ -25,6 +26,7 @@ Credentials Have Expired
 The **Credentials have expired** notification means that the password reset procedure has been initiated. It could be started manually by an administrator or automatically if your company has a password policy that requires users to periodically change their password. (In the latter case, you might have received notifications reminding you to change your password soon.)
 
 .. image:: ../img/access_oro/login_user_expired.png
+   :alt: Credentials have expired notification
 
 **Solution:**
 
@@ -36,6 +38,7 @@ Invalid Username or Password
 You have provided wrong credentials.
 
 .. image:: ../img/access_oro/login_user_invalodusername.png
+   :alt: Invalid username or password
 
 **Solution:**
 
@@ -47,6 +50,7 @@ Invalid Username
 The password policy of your organization gives you a limited number of login attempts. You have entered the wrong credentials but you still have some attempts left.
 
 .. image:: ../img/access_oro/login_user_failednotexceeded.png
+   :alt: Invalid username
 
 **Solution:**
 
@@ -59,6 +63,7 @@ Invalid Credentials. The Account Has Been Locked
 You account has been locked because you have reached the maximum number of failed login attempts. Other users can still engage you in business activities.
 
 .. image:: ../img/access_oro/login_user_failed.png
+   :alt: Invalid credentials
 
 **Solution:**
 
