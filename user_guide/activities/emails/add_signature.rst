@@ -14,8 +14,10 @@ To add a signature manually or modify a signature:
 2. In **General Setup** click **Email Configuration**.
 
    .. image:: /user_guide/img/emails/user_email_config.jpg
+      :alt:  Click my user, my configuration
 
    .. image:: /user_guide/img/emails/user_email_config_signature.jpg
+      :alt: Click email configuration, signature, save settings
 
 3. In the Email Configuration window find the **Signature** section and define the following fields:
 

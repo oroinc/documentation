@@ -20,14 +20,16 @@ Add a New Task Manually
 
 To add a task  manually:
 
-1. Navigate to **Activities > Tasks** in the main menu. 
+1. Navigate to **Activities > Tasks** in the main menu.
 2. Click **Create Task** on the top right.
-   
+
    .. image:: /user_guide/img/activities/tasks/tasks_add_fromgrid.png
+      :alt: Click Create Task
 
 3. On the **Create Task** page, fill in the required information:
- 
+
    .. image:: /user_guide/img/activities/tasks/activities_tasks_actions_add0.png
+      :alt: Fill in the required information
 
    * **Subject** — The name which summarizes what the task is about.
    * **Description** — Detailed statement of what work is to be done in relation to the task. Use the embedded editor to format text, add images, links, etc.
@@ -59,7 +61,7 @@ To add a task  manually:
      .. note:: In Oro applications, the due date and time of the task are displayed according to the recipient's timezone settings both in the notification emails and flash messages. For instance, if the due time of a task is displayed as 7 a.m. to a user in New York, the due time displayed in the reminder to a user in Tokio is 8 p.m.
 
    * **Context** — Select a record that has a meaningful relation to the task. Start entering a record name, and when the list of suggestions appears, click the required name to select it. The task becomes immediately linked to the selected item and is displayed in its **Activity** section.
-   
+
 4. Click **Save and Close** when you are finished.
 
 Add a Task From the User Profile
@@ -73,11 +75,13 @@ To create a task from a user profile:
 2. Click **More Actions** on the top right of the page and then click **Assign Task**.
 
    .. image:: /user_guide/img/activities/tasks/activities_tasks_actions_add_userpage1.png
+      :alt: Click More Actions, then click Assign Task.
 
 3. In the **Assign Task To** dialog, specify the required data. Fill in the required information as described in the `Add a New Task Manually`_ section.
 
    .. image:: /user_guide/img/activities/tasks/activities_tasks_actions_add_userpage2.png
- 
+      :alt: ill in the required information
+
 4. Click **Create Task**. The task appears in the **Tasks** subsection **Additional Information** on the user profile page.
 
 
@@ -94,10 +98,12 @@ To create a task when viewing the related record (e.g. opportunity, account, etc
 1. On the page of a related record, click **More Actions > Add Task** on the top right of the page.
 
    .. image:: /user_guide/img/activities/tasks/tasks_actions_add_related0.png
+      :alt: Click More Actions, Add Task
 
 2. In the **Add Task** dialog, specify the required data, as described in the `Add a New Task Manually`_ section.
 
    .. image:: /user_guide/img/activities/tasks/tasks_actions_add_related.png
+      :alt: Specify the required data
 
 3. Click **Create Task**.
 

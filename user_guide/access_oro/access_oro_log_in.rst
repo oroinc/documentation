@@ -9,6 +9,7 @@ Log in/out
 |oro_application| is a web application and to access it you need to enter its address in a web browser.
 
 .. image:: ../img/access_oro/application_url.png
+   :alt: Enter address in a web browser
 
 If you are not currently logged into the Oro application, the **Login** page opens.
 
@@ -20,6 +21,7 @@ If you are not currently logged into the Oro application, the **Login** page ope
 3. Click **Log In**.
 
    .. image:: ../img/access_oro/login_ok.png
+      :alt: Log in form
 
 .. caution::  It is highly recommended to change your password immediately after the first login. See :ref:`Change Your Password <doc-my-user-actions-change-password>` for more information.
 
@@ -33,6 +35,7 @@ As an additional security measure, an administrator may enable double-factor aut
 3. Click **Log In**.
 
 .. image:: ../img/access_oro/login_authcode.png
+   :alt: Log in with an Authentication Code
 
 Log in with a Google Account
 ----------------------------
@@ -48,6 +51,7 @@ If Google Single Sign-On has been enabled for your organization, you can log in 
    * As soon as you have logged into you Google account, a request to use the account appears. Click **Allow**.
 
      .. image:: ../../admin_guide/img/google_integration/google_connection.jpg
+        :alt: Log in with a Google Account
 
  .. _doc-log-out:
 
@@ -57,5 +61,6 @@ Log out
 To log out of the |oro_application| application, click **Logout** in the user menu on the top right of the page.
 
 .. image:: ../img/access_oro/logout.png
+   :alt: Log out form
 
 .. |oro_application| replace:: OroCRM

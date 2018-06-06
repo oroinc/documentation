@@ -5,7 +5,7 @@ Create a Case
 
 .. begin_create_case
 
-To create a new case: 
+To create a new case:
 
 1. Navigate to **Activities > Cases** in the main menu.
 2. Click **Create Case** on the top right of the page.
@@ -49,14 +49,14 @@ To create a new case:
      The field is by default set to the *Normal* option."
      "**Related Contact**","Define a :term:`contact record <Contact>` related to the case (optional)."
      "**Related Account**","Define an :term:`account record <Account>` related to the case (optional)."
-     
+
 4. Click **Save** on the top right.
 
     .. image:: /user_guide/img/activities/CreateCaseNew.png
+       :alt: Click save
 
 .. end_create_case
 
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
