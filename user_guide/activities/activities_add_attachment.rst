@@ -24,19 +24,22 @@ To add an attachment to a record:
 2. Click **Add Attachment** under the **More Actions** menu on the top right of the page.
 
    .. image:: /user_guide/img/activities/add_attachment.png
+      :alt: Click add attachment under the more actions menu
 
 3. In the Add Attachment dialog:
 
    * Choose the file to attach.
    * Leave a comment, if necessary.
-   * Define the owner of the attachment. By default, the user creating the attachment is selected. 
+   * Define the owner of the attachment. By default, the user creating the attachment is selected.
 
    .. image:: ../img/activities/add_attachment_form.png
+      :alt: Add attachment form
 
 
-.. note:: You can access attached files under *Attachments* in the **Additional Information** section of record pages.  
+.. note:: You can access attached files under *Attachments* in the **Additional Information** section of record pages.
 
           .. image:: ../img/activities/add_attachment_view.png
+             :alt: 
 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png

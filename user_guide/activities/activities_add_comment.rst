@@ -27,7 +27,7 @@ Once a record or an activity have been created, a comment can be added to it fro
 
    The ability to view and write comments depends on the permissions and role settings defined in the system for the Comment entity.
 
-To add a comment: 
+To add a comment:
 
 1. Click **Add Comment**.
 2. Enter the comment into the text-box.
@@ -35,11 +35,12 @@ To add a comment:
 4. Click **Add** to save the comment.
 
 .. image:: /user_guide/img/activities/AddCommentToTask.png
-
+   :alt: How to create and view comments
 .. hint::
 
     You can :ref:`edit <doc-entity-actions-edit>` the **Comment** entity and add new fields if required.
 
- .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment  public in :ref:`Zendesk <user-guide-zendesk-integration>`. 
+ .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment  public in :ref:`Zendesk <user-guide-zendesk-integration>`.
 
-     .. image:: /user_guide/img/activities/comments_case.png 
+     .. image:: /user_guide/img/activities/comments_case.png
+        :alt: How to make a specific comment public in Zendesk
