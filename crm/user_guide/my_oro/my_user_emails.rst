@@ -19,6 +19,7 @@ To reach the **My Emails** page:
 2.  Click **My Emails** .
 
 .. image:: /user_guide/img/getting_started/emails/user_my_emails.jpg
+   :alt: How to reach the my emails page
 
 From the page of all emails, you can:
 
@@ -40,6 +41,7 @@ There are four table views for emails available by default:
    email).
 
 .. image:: /user_guide/img/getting_started/emails/my_emails_page.jpg
+   :alt: Save table views
 
 Use Filters
 ~~~~~~~~~~~
@@ -47,6 +49,7 @@ Use Filters
 To enable filters for My Emails page, click the corresponding button on the right:
 
 .. image:: /user_guide/img/getting_started/emails/filters_icon.jpg
+   :alt: The corresponding button
 
 Filters sort your emails based on certain criteria, such as:
 
@@ -62,25 +65,30 @@ Filters sort your emails based on certain criteria, such as:
 To find a specific record, click on the |IcFilter| filter and select the necessary search parameter from the list:
 
 .. image:: /user_guide/img/getting_started/emails/filters_dropdown.jpg
+   :alt: The screen shows how to click on the filter
 
 To save a page filtered according to the necessary criteria:
 
 1.  Filter your emails according to your requirements using **Filters**.
 
 .. image:: /user_guide/img/getting_started/emails/filter.jpg
+   :alt: The screen shows how to filter your emails
 
 2.  Click **Options**.
 3.  Select **Save As/Save As Default**.
 
 .. image:: /user_guide/img/getting_started/emails/options_save_list.jpg
+   :alt: In options click save as
 
 4.  Give your email page a name and click **Save**.
 
 .. image:: /user_guide/img/getting_started/emails/options_save.jpg
+   :alt: Name the page and click save
 
 5. The saved page should now appear on the list.
 
 .. image:: /user_guide/img/getting_started/emails/options_saved_example.jpg
+   :alt: New page is in the list
 
 
 .. note:: To synchronize your emails manually, click **Sync Emails** on the top right of the page with all emails.
@@ -94,6 +102,7 @@ To compose a new email:
 2. Provide the following information on the page that opens:
 
 .. image:: /user_guide/img/getting_started/emails/compose_new_emails.jpg
+   :alt: Compose a new email
 
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
@@ -151,14 +160,17 @@ To save an unfinished email, minimize the email dialog window by clicking on the
 email dialog window.
 
 .. image:: /user_guide/img/getting_started/emails/minimize.jpg
+   :alt: Click on the corresponding button
 
 Your unfinished email will appear as a minimized window throughout the sessions:
 
 .. image:: /user_guide/img/getting_started/emails/email_minimized2.jpg
+   :alt: Unfinished email will be in the bottom
 
 You can save several of such emails as drafts:
 
 .. image:: /user_guide/img/getting_started/emails/several_minimized_emails2.jpg
+   :alt: There could be not only one email
 
 
 View Emails
@@ -167,26 +179,33 @@ View Emails
 To **open** an email, click once either on the email or the **View** icon at the right end of the email.
 
 .. image:: /user_guide/img/getting_started/emails/view.jpg
+   :alt: View emails
 
 .. image:: /user_guide/img/getting_started/emails/example_email_sent.jpg
+   :alt: View emails
 
 From the page of the opened email, you can:
 
 -  **Add Comment** (add, edit or delete a comment to the email).
 
    .. image:: /user_guide/img/getting_started/emails/add_comment.jpg
+      :alt: How to add a comment
 
 -  **Add Task** (assign a task through an email).
 
    .. image:: /user_guide/img/getting_started/emails/add_task.jpg
+      :alt: How to add a task
 
 -  **Mark Unread**
 
    .. image:: /user_guide/img/getting_started/emails/mark_unread.jpg
+      :alt: How to mark unread
 
 -  **Add Context** (define a record related to the email).
 
    .. image:: /user_guide/img/getting_started/emails/add_context.jpg
+      :alt: How to add a context
+
 
 -  **Reply** (reply directly to the sender).
 
@@ -195,14 +214,18 @@ From the page of the opened email, you can:
 -  **Forward** (forward an email to a different recipient).
 
    .. image:: /user_guide/img/getting_started/emails/reply_reply_all_forward.jpg
+      :alt: How to reply
 
    .. image:: /user_guide/img/getting_started/emails/reply_all.jpg
+      :alt: How to reply all
 
    .. image:: /user_guide/img/getting_started/emails/forward.jpg
+      :alt: How to forward an email
 
 -  **Download Attachment** (download the attached file, if available).
 
    .. image:: /user_guide/img/getting_started/emails/download_attachment.jpg
+      :alt: How to download attachment
 
 .. finish_my_emails
 

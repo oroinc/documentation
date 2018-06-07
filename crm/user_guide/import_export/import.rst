@@ -60,3 +60,4 @@ Related Topics
 .. |item| replace:: item
 
 .. |image| image::  /user_guide/img/export_import/import_1.png
+   :alt: Importing bulk items

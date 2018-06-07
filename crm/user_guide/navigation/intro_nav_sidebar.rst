@@ -1,26 +1,27 @@
 .. _user-guide-navigation-sidebar-panel:
-  
+
 Sidebar Panel
 =============
 
 .. contents:: :local:
    :depth: 1
 
-The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
-information, such as recent emails or the task list. 
+The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed
+information, such as recent emails or the task list.
 
-By default, the sidebar panel is located on the right side of the page. However, subject to the configuration settings 
-of your organization, there can be a sidebar on the left, two sidebars (on the left and on the right), or no sidebar at 
+By default, the sidebar panel is located on the right side of the page. However, subject to the configuration settings
+of your organization, there can be a sidebar on the left, two sidebars (on the left and on the right), or no sidebar at
 all. The location of the sidebar is defined by the system administrator for the whole organization.
 
 
-What Can Be on the Sidebar 
+What Can Be on the Sidebar
 --------------------------
 
 Out of the box, any sidebar can contain widgets of three types:
 
 
 .. image:: ../img/navigation/sidebar/sb_icons.png
+   :alt: What can be on the sidebar
 
 
 - **Recent Emails** widget: Set up the widget to get access to your emails in one or several of the
@@ -36,14 +37,15 @@ To add a new widget, use the **+** button, as described in the section below.
 Add a Widget to the Sidebar
 ---------------------------
 
-Click **+** to add a widget, then select the widget type and click **OK** button. 
+Click **+** to add a widget, then select the widget type and click **OK** button.
 
 .. image:: /user_guide/img/navigation/sidebar/sb_select.png
+   :alt: Add a widget to the sidebar
 
-The newly added widget will appear on the sidebar, below the existing widgets. To reorder widgets on the sidebar, drag 
-and drop them with your mouse. 
+The newly added widget will appear on the sidebar, below the existing widgets. To reorder widgets on the sidebar, drag
+and drop them with your mouse.
 
-You can add more than one widget of any type if necessary. For example, you can stick any amount of notes or follow 
+You can add more than one widget of any type if necessary. For example, you can stick any amount of notes or follow
 several different email folders or mailboxes that are synchronized to your account in OroCRM.
 
 
@@ -53,14 +55,17 @@ Expand/Collapse the Sidebar
 Initially, the sidebar panel is minimized. Hover over the icon to see the widget header.
 
 .. image:: /user_guide/img/navigation/sidebar/sb_hover.png
+   :alt: Sidebar panel
 
 In order to expand the sidebar panel, click the double-arrow at its bottom.
 
 .. image:: ../img/navigation/sidebar/sb_expand.png
+   :alt: Double-arrow at the bottom
 
 Now you can see the widget headers. To collapse the panel back, click the double-arrow again.
 
 .. image:: ../img/navigation/sidebar/sb_fold.png
+   :alt 
 
 Expand/Collapse a Widget
 ------------------------
@@ -70,12 +75,12 @@ In order to see the widget content:
 - Click the icon on a minimized bar.
 
 - Click the triangular arrow next to the header on the expanded bar.
-    
+
 .. image:: ../img/navigation/sidebar/sb_expand_view.png
 
 To fold the widget, click the triangular arrow again.
 
-To reorder widgets on the sidebar, drag and drop them with your mouse. This works in both the collapsed and expanded 
+To reorder widgets on the sidebar, drag and drop them with your mouse. This works in both the collapsed and expanded
 states.
 
 This way, you can keep some of the content visible at all times, and keep fewer used widgets minimized.
@@ -84,7 +89,7 @@ This way, you can keep some of the content visible at all times, and keep fewer 
 
 
 Manage Widgets
---------------  
+--------------
 
 As shown below, each widget contains a header (1), content (2), and icons (3).
 
@@ -104,7 +109,7 @@ You can:
 
 .. hint::
 
-    You can add several widgets of the same type and define different settings for them. For example, you can keep notes 
+    You can add several widgets of the same type and define different settings for them. For example, you can keep notes
     with different content, or email widgets for different folders.
 
 Default Sidebar Widgets
@@ -112,13 +117,13 @@ Default Sidebar Widgets
 
 This section describes the three sidebar widgets available in OroCRM out of the box.
 
-.. note:: You can find more information on dashboard widgets in the corresponding :ref:`Dashboard Widgets topic <user-guide-dashboards>`. 
+.. note:: You can find more information on dashboard widgets in the corresponding :ref:`Dashboard Widgets topic <user-guide-dashboards>`.
 
 Recent Emails Sidebar Widget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
- 
+
 .. image:: ../img/navigation/sidebar/sb_emails.png
 
 From the widget, you can:
@@ -131,14 +136,14 @@ From the widget, you can:
 
 - Mark any of the displayed emails as read: Click the envelope icon by the letter (e.g., 4)
 
-- Reply, reply all, or forward the emails: All these actions are available as links below the email header when the 
-  widget is expanded from a minimized tray (e.g., 5). (If the panel bar is expanded, only the default actions will be 
+- Reply, reply all, or forward the emails: All these actions are available as links below the email header when the
+  widget is expanded from a minimized tray (e.g., 5). (If the panel bar is expanded, only the default actions will be
   available).
-  
-- Get to the view page of the user from whose mailbox the emails have been sent (if available): Click the user name 
+
+- Get to the view page of the user from whose mailbox the emails have been sent (if available): Click the user name
   below the letter (e.g., 6).
 
-  
+
 Configure the Recent Emails Sidebar Widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -146,17 +151,17 @@ Click the |IcSettings| icon to configure the widget. The settings window will em
 
 .. image:: ../img/navigation/sidebar/sb_emails_set.png
 
-- The widget can be configured to display all the emails from your OroCRM mailbox or from any specific folder or 
+- The widget can be configured to display all the emails from your OroCRM mailbox or from any specific folder or
   mailbox that has been synchronized (1).
-  
+
 - You can change the number of emails displayed (2).
 
 - You can define which default action is shown if the sidebar panel has been expanded (3).
 
-.. hint:: To make sure you don’t miss some particularly important emails, configure your mailbox to sort them in a specific 
+.. hint:: To make sure you don’t miss some particularly important emails, configure your mailbox to sort them in a specific
     folder, then configure the widget to display this folder and place it at the top of your sidebar panel.
-  
-  
+
+
 Sticky Note Sidebar Widget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -167,7 +172,7 @@ Click the |IcSettings| to change the content of a note.
 
 .. image:: ../img/navigation/sidebar/sb_note.png
 
-You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and 
+You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
 
 .. _doc-widgets-sidebar-task-list:
@@ -193,7 +198,7 @@ For more information about the sidebar, see the :ref:`Sidebar Panel <user-guide-
 Manage Task List Sidebar Widget
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red. 
+Tasks in the list are represented by their subject and due date. Tasks are ordered by their due dates in ascending order—the earlier a due date, the higher on the list a task is displayed. Overdue tasks appear in red.
 
 You can perform the following actions with the task list sidebar widget:
 
@@ -218,7 +223,7 @@ You can perform the following actions with the task list sidebar widget:
    * Click |IcDelete| **Delete** to remove the widget from a dashboard.
 
 
-* **Collapse** 
+* **Collapse**
 
   * On the minimized sidebar, click |IcTimes| **Close** to collapse the widget.
 
@@ -227,5 +232,3 @@ You can perform the following actions with the task list sidebar widget:
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
-

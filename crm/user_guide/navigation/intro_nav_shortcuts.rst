@@ -8,6 +8,7 @@ Shortcuts are used to quickly perform common actions from anywhere. They can als
 Shortcuts are accessible via the icon in the navigation panel.
 
 .. image:: ../img/navigation/panel/shortcut_full.png
+   :alt: Shortcuts
 
 From here, you can:
 
@@ -18,7 +19,7 @@ From here, you can:
 - Start typing the name of a related entity or an action to choose from a list of matching items:
 
   |shortcut|
-  
+
 - To see all the available shortcut actions, click **See the full list** link.
 
 
@@ -35,6 +36,7 @@ and shortcuts with their corresponding descriptions.
 
 
 .. image:: ../img/navigation/shortcuts_see_full_list_2.png
+   :alt: Shortcut actions list
 
 .. csv-table::
    :header: "Action Name", "Description"
