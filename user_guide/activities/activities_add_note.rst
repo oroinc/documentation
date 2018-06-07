@@ -35,4 +35,4 @@ To add a note to a record:
 All the notes added to a record are displayed and can be reached from the **Activity** section of the record pages:
 
 .. image:: ../img/activities/add_note_view.png
-   :alt: Click save to save
+   :alt: Added note to a record

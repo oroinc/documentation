@@ -30,3 +30,4 @@ Importing Opportunities
 .. |item| replace:: opportunity
 
 .. |image| image:: /user_guide/img/export_import/import_opportunities.png
+   :alt: Import a bulk of opportunity information
