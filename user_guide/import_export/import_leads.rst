@@ -30,3 +30,4 @@ Importing Leads
 .. |item| replace:: lead
 
 .. |image| image:: /user_guide/img/export_import/import_leads.png
+   :alt: Import a bulk of lead information

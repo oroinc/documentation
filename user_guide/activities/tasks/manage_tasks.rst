@@ -38,7 +38,7 @@ To manage a specific task from the page of all tasks:
     * |IcDelete| Delete
 
     .. image:: /user_guide/img/activities/AllTasksPageNew.png
-      :alt: From the page of all tasks
+      :alt: The actions you can perform to tasks from the page of all tasks
 
 From the Task Page
 ~~~~~~~~~~~~~~~~~~
@@ -57,7 +57,8 @@ To manage a specific task from its page:
    * Add Comment
 
 .. image:: /user_guide/img/activities/ManageTasksTaskPage.png
-   :alt: Select one of the actions above
+   :alt: The actions you can perform on the task page
+
 
 4. If the :ref:`task flow <doc--workflows--task-flow>` is enabled, you can:
 
@@ -67,7 +68,7 @@ To manage a specific task from its page:
 .. note:: To delete a bulk of tasks in one go, click the |IcEllipsisH| **More Actions** menu at the end of the table header row and then click |IcDelete| **Delete**.
 
             .. image:: /user_guide/img/activities/tasks/tasks_delete1.png
-               :alt: If the task flow is enabled
+               :alt: Delete a bulk of tasks
 
 From the Assignee's Profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,7 +86,7 @@ To manage a task from the assignee's profile page:
     * |IcDelete| Delete
 
 .. image:: /user_guide/img/activities/TaskUserProfile.png
-   :alt: From the assignee's profile
+   :alt: Manage tasks from the assignee's profile page
 
 From the Page of a Related Record
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -103,10 +104,10 @@ Records that are specified in a task context have the task displayed in the **Ac
    * |IcStart| / |IcStop| :ref:`Start/Stop Progress <doc--workflows--task-flow>`
    * |IcActivate| :ref:`Close the task <doc--workflows--task-flow>`
 
-4. Click **Add Comment** on the lower-right to add a comment to the task.
+4. Click **Add Context** on the lower-right to add a comment to the task.
 
 .. image:: /user_guide/img/activities/ManageTasksInRelatedRecord.png
-   :alt: Click add comment
+   :alt: Add context to the task
 
 From My Calendar
 ~~~~~~~~~~~~~~~~
@@ -123,7 +124,7 @@ You can also manage tasks from the My Calendar page and the Today’s Calendar w
    * |IcEdit| Edit task
 
 .. image:: /user_guide/img/activities/ManageTasksInMyCalendar.png
-   :alt: On the task information card, select one of the actions above
+   :alt: Task information on calendar pages
 
 .. end_manage_tasks
 

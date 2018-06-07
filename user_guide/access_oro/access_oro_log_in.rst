@@ -35,7 +35,7 @@ As an additional security measure, an administrator may enable double-factor aut
 3. Click **Log In**.
 
 .. image:: ../img/access_oro/login_authcode.png
-   :alt: Log in with an Authentication Code
+   :alt: Log in with an authentication Code
 
 Log in with a Google Account
 ----------------------------
@@ -51,7 +51,7 @@ If Google Single Sign-On has been enabled for your organization, you can log in 
    * As soon as you have logged into you Google account, a request to use the account appears. Click **Allow**.
 
      .. image:: ../../admin_guide/img/google_integration/google_connection.jpg
-        :alt: Log in with a Google Account
+        :alt: Log in with a google account
 
  .. _doc-log-out:
 
