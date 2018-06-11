@@ -21,7 +21,7 @@ Out of the box, any sidebar can contain widgets of three types:
 
 
 .. image:: ../img/navigation/sidebar/sb_icons.png
-   :alt: What can be on the sidebar
+   :alt: Icons displayed on the sidebar
 
 
 - **Recent Emails** widget: Set up the widget to get access to your emails in one or several of the
@@ -60,12 +60,12 @@ Initially, the sidebar panel is minimized. Hover over the icon to see the widget
 In order to expand the sidebar panel, click the double-arrow at its bottom.
 
 .. image:: ../img/navigation/sidebar/sb_expand.png
-   :alt: Double-arrow at the bottom
+   :alt: Expand the sidebar by clicking on the double arrow at the bottom
 
 Now you can see the widget headers. To collapse the panel back, click the double-arrow again.
 
 .. image:: ../img/navigation/sidebar/sb_fold.png
-   :alt 
+   :alt: Collapse the panel back by clicking the double-arrow again
 
 Expand/Collapse a Widget
 ------------------------
@@ -77,6 +77,7 @@ In order to see the widget content:
 - Click the triangular arrow next to the header on the expanded bar.
 
 .. image:: ../img/navigation/sidebar/sb_expand_view.png
+   :alt: See the widget content by clicking the icon on a minimized bar
 
 To fold the widget, click the triangular arrow again.
 
@@ -86,6 +87,7 @@ states.
 This way, you can keep some of the content visible at all times, and keep fewer used widgets minimized.
 
 .. image:: ../img/navigation/sidebar/sb_expand_view_1.png
+   :alt: Visible content could be kept at all times
 
 
 Manage Widgets
@@ -94,6 +96,7 @@ Manage Widgets
 As shown below, each widget contains a header (1), content (2), and icons (3).
 
 .. image:: ../img/navigation/sidebar/sb_view.png
+   :alt: Manage widgets
 
 
 You can:
@@ -125,6 +128,7 @@ Recent Emails Sidebar Widget
 The widget informs you about new and unread emails, and gives you a convenient way to access them.
 
 .. image:: ../img/navigation/sidebar/sb_emails.png
+   :alt: Recent emails sidebar widget
 
 From the widget, you can:
 
@@ -150,6 +154,7 @@ Configure the Recent Emails Sidebar Widget
 Click the |IcSettings| icon to configure the widget. The settings window will emerge:
 
 .. image:: ../img/navigation/sidebar/sb_emails_set.png
+   :alt: Configure the recent emails sidebar widget
 
 - The widget can be configured to display all the emails from your OroCRM mailbox or from any specific folder or
   mailbox that has been synchronized (1).
@@ -171,6 +176,7 @@ Click the |IcSettings| to change the content of a note.
 
 
 .. image:: ../img/navigation/sidebar/sb_note.png
+   :alt: Sticky note sidebar widget
 
 You can keep any number of sticky notes in the panel. If the panel is expanded, you can minimize some of the notes, and
 keep others visible (such as those that are due today). When you don't need the note anymore, you can easily delete it.
@@ -186,12 +192,14 @@ The widget's look on the minimized sidebar panel:
 
 
 .. image:: ../img/widgets/task_list/widget_task_list.png
+   :alt: The widget’s look on the minimized sidebar panel
 
 
 The widget's look on the maximized sidebar panel:
 
 
 .. image:: ../img/widgets/task_list/widget_task_list2.png
+   :alt: The widget’s look on the maximized sidebar panel
 
 For more information about the sidebar, see the :ref:`Sidebar Panel <user-guide-navigation-sidebar-panel>` topic.
 
@@ -217,6 +225,7 @@ You can perform the following actions with the task list sidebar widget:
    * To change a number of displayed tasks, enter the required value into the **Number of tasks to show** field and click **OK**.
 
      .. image:: ../img/widgets/task_list/widgets_task_list_configuration.png
+        :alt: Enter the required value into the number of tasks to show field and click ok
 
 * **Remove**
 

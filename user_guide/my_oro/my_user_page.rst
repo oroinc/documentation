@@ -57,7 +57,7 @@ There are a number of effective tools and actions available on the page of your 
    * :ref:`Reset your profile password <user-guide-getting-started-profile-password>`
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_more_actions.png
-      :alt: Availeble actoins in more actions menu
+      :alt: Availeble actoins in the more actions menu
 
    .. note:: Non-default buttons can be added to **More Actions** menu. If you see non-default buttons such as Add Task, Add Event or Add Attachment, please refer to the :ref:`Activities <user-guide-activities>` guide for more information.
 
@@ -71,12 +71,12 @@ There are a number of effective tools and actions available on the page of your 
    * In the **Activity** section, you can see the emails you sent and the calls you logged. If a user mentions you as a context for their activity, this activity also appears on the list. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in OroCommerce.
 
      .. image:: /user_guide/img/getting_started/my_oro/my_user_activity.png
-        :alt: Activity section
+        :alt: Activity section on the user page
 
    * In the **Additional Information** section, you can view and manage tasks and cases related to you. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in OroCommerce.
 
      .. image:: /user_guide/img/getting_started/my_oro/my_user_additional.png
-        :alt: Additional information section
+        :alt: Additional information section on the user page
 
 .. _doc-my-user-actions-api:
 
@@ -133,7 +133,7 @@ You can change your password to the OroCommerce application in 3 ways:
 3. On the page of your profile, click **More Actions > Change Password**.
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_change_password.png
-      :alt: Chenge password form
+      :alt: Chenge the password form
 
 4. Provide new passport in the corresponding field. Alternatively, click **Suggest Password** to generate a secure random password. To see/hide  the entered password, click the |IcShow| **Show** / |IcHide| **Hide** icon next to the **New password** field.
 
@@ -149,7 +149,7 @@ Only administrators can reset passwords.
 4. In the dialog box, click **Reset**. The password reset link will be sent to your (admin) primary email address.
 
     .. image:: /user_guide/img/getting_started/my_oro/my_user_reset_password.png
-       :alt: Сlick кeset
+       :alt: Reset password notification dialog
 
 Download MS Outlook Add-in
 --------------------------

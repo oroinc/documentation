@@ -14,7 +14,7 @@ For example, we are searching for "Ann"  across the system:
 
 
 .. image:: ../img/navigation/panel/search_ex_1.png
-   :alt: Example of searching
+   :alt: Using the search icon to look for a name
 
 
 These are our search results:
@@ -30,7 +30,7 @@ are looking for is in the list, you can immediately click it to open. Here are t
 above:
 
 .. image:: ../img/navigation/panel/search_ex_3.png
-   :alt: Example of drop-down results
+   :alt: A list of search results
 
 
 Modify the Search
@@ -45,7 +45,7 @@ you can look for "Ann" in Accounts only.
 
 
 .. image:: ../img/navigation/panel/search_ex_5.png
-   :alt: Resaults of searching in an option
+   :alt: Search within a certain entity
 
 
 .. _user-guide-getting-started-search-tag:

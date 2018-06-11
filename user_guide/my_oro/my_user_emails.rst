@@ -78,7 +78,7 @@ To save a page filtered according to the necessary criteria:
 3.  Select **Save As/Save As Default**.
 
 .. image:: /user_guide/img/getting_started/emails/options_save_list.jpg
-   :alt: In options click save as
+   :alt: Save the filtered page
 
 4.  Give your email page a name and click **Save**.
 
@@ -88,7 +88,7 @@ To save a page filtered according to the necessary criteria:
 5. The saved page should now appear on the list.
 
 .. image:: /user_guide/img/getting_started/emails/options_saved_example.jpg
-   :alt: New page is in the list
+   :alt: The filtered page is displayed on the list of all saved pages
 
 
 .. note:: To synchronize your emails manually, click **Sync Emails** on the top right of the page with all emails.
@@ -102,7 +102,7 @@ To compose a new email:
 2. Provide the following information on the page that opens:
 
 .. image:: /user_guide/img/getting_started/emails/compose_new_emails.jpg
-   :alt: Compose a new email
+   :alt: Compose a new email page
 
 +--------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**          | **Description**                                                                                                                                                                                                                       |
@@ -160,17 +160,17 @@ To save an unfinished email, minimize the email dialog window by clicking on the
 email dialog window.
 
 .. image:: /user_guide/img/getting_started/emails/minimize.jpg
-   :alt: Click on the corresponding button
+   :alt: Minimize the email dialog to save an unfinished email
 
 Your unfinished email will appear as a minimized window throughout the sessions:
 
 .. image:: /user_guide/img/getting_started/emails/email_minimized2.jpg
-   :alt: Unfinished email will be in the bottom
+   :alt: Unfinished email is collapsed and displayed at the bottom
 
 You can save several of such emails as drafts:
 
 .. image:: /user_guide/img/getting_started/emails/several_minimized_emails2.jpg
-   :alt: There could be not only one email
+   :alt: Several unfinished emails are saved as drafts and displayed at the bottom
 
 
 View Emails
@@ -179,32 +179,32 @@ View Emails
 To **open** an email, click once either on the email or the **View** icon at the right end of the email.
 
 .. image:: /user_guide/img/getting_started/emails/view.jpg
-   :alt: View emails
+   :alt: Click on the view icon to open an email and view its details
 
 .. image:: /user_guide/img/getting_started/emails/example_email_sent.jpg
-   :alt: View emails
+   :alt: View the details of a sent email
 
 From the page of the opened email, you can:
 
 -  **Add Comment** (add, edit or delete a comment to the email).
 
    .. image:: /user_guide/img/getting_started/emails/add_comment.jpg
-      :alt: How to add a comment
+      :alt: Add a comment to an email
 
 -  **Add Task** (assign a task through an email).
 
    .. image:: /user_guide/img/getting_started/emails/add_task.jpg
-      :alt: How to add a task
+      :alt: Add a task to an email
 
 -  **Mark Unread**
 
    .. image:: /user_guide/img/getting_started/emails/mark_unread.jpg
-      :alt: How to mark unread
+      :alt: Mark a selected email unread
 
 -  **Add Context** (define a record related to the email).
 
    .. image:: /user_guide/img/getting_started/emails/add_context.jpg
-      :alt: How to add a context
+      :alt: Add a related context to an email
 
 
 -  **Reply** (reply directly to the sender).
@@ -214,18 +214,18 @@ From the page of the opened email, you can:
 -  **Forward** (forward an email to a different recipient).
 
    .. image:: /user_guide/img/getting_started/emails/reply_reply_all_forward.jpg
-      :alt: How to reply
+      :alt: Use the drop-down to click reply, reply all or forward a selected email
 
    .. image:: /user_guide/img/getting_started/emails/reply_all.jpg
-      :alt: How to reply all
+      :alt: Reply all dialog is displayed
 
    .. image:: /user_guide/img/getting_started/emails/forward.jpg
-      :alt: How to forward an email
+      :alt: Forward dialog is displayed
 
 -  **Download Attachment** (download the attached file, if available).
 
    .. image:: /user_guide/img/getting_started/emails/download_attachment.jpg
-      :alt: How to download attachment
+      :alt:  A link to download an attachment is displayed at the bottom of the email
 
 .. finish_my_emails
 
