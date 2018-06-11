@@ -256,6 +256,8 @@ This section provides links to the online documentation for the latest OroCommer
 
        architecture/index
 
+       cloud/index
+
        install_upgrade/index
 
        getting_started/index

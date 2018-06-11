@@ -11,7 +11,7 @@ The **Re-Order** option triggers a new checkout using the items from an existing
 
 To proceed with re-ordering:
 
-1. Navigate to **Orders** in the Quick Access Menu, or click **Account** and then click **Order History** in the git menu on the left.
+1. Navigate to **Orders** in the Quick Access Menu, or click **Account** and then click **Order History** in the menu on the left.
 
    .. image:: /frontstore_guide/img/orders/reorder_1.png
 
