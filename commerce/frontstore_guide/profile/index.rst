@@ -84,12 +84,12 @@ To :ref:`manage default addresses in the address book <frontstore-guide--company
 Data Protection
 ^^^^^^^^^^^^^^^
 
-To comply with the :ref:`General Data Protection Regulations in the EU (GDPR) <user-guide--consents>`, you need to be to provide your explicit consent to the application to process your personal data. All available consents are located in your profile under **Account Info**.
+To comply with the :ref:`General Data Protection Regulations in the EU (GDPR) <user-guide--consents>`, you need to be able to provide your explicit consent to the application to process your personal data. All available consents are located in your profile under **Account Info**.
 
 Consents can be mandatory and optional:
 
 * **Mandatory consents** restrict you from proceeding to the checkout or creating RFQs, unless you accept them. Mandatory consents are marked with a red asterisk.
-* **Optional consents** do not restrict you from working with the application and are usually used to retrieve permissions to send them email newsletters, inform about upcoming sales or seasonal discounts, etc.
+* **Optional consents** do not restrict you from working with the application and are usually used to retrieve permissions to send email newsletters, inform about upcoming sales or seasonal discounts, etc.
 
 The following key rules apply to consents in OroCommerce:
 
