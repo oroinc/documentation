@@ -21,21 +21,19 @@ When to Write Functional Tests
 
 Functional tests are generally written for:
 
-* Controllers;
-* Commands;
-* Repositories;
-* Other services.
+* Controllers
+* Commands
+* Repositories
+* Other services
 
 The goal of functional tests is not to test separate classes (unit tests),
 but to test the integration of the different parts of an application.
 
-Sometimes, writing unit tests to test certain functions can be come quite
-difficult. For example, you might be creating a dozen of mock objects to test
-Doctrine ORM queries. Besides being rather complicated, these unit tests'
-behavior can also be misleading. They might pass, while when working together
-with the other layers of your real application they still may produce unexpected
-results. In these situtations, functional tests can be the more approriate
-choice.
+Add functional tests to supplement unit tests for the following reasons:
+
+* You can test the multi-component system and ensure it works as a whole.
+* You can skip mocking the complicated interface or data manipulation layer (like doctrine classes to build a query).
+* Unit tests can pass even when functionality works incorrectly.
 
 The Test Environment
 --------------------
@@ -55,65 +53,53 @@ of separate test cases. Be sure to reset this state if necessary.
 Test Environment Setup
 ~~~~~~~~~~~~~~~~~~~~~~
 
-You will need to configure a set of parameters for the testing environment.
-For example:
+You need to configure the following parameters for the testing environment:
 
-.. code-block:: yaml
-    :linenos:
+1. Create a separate database for tests (e.g. add "_test" suffix):
+2. Set up host, port and authentication parameters for the database, the mail server, and the web socket server in the parameters_test.yml file:
 
-    # config/parameters_test.yml
-    parameters:
-        database_host: 127.0.0.1
-        database_port: null
-        database_name: crm_test
-        database_user: root
-        database_password: null
-        mailer_transport: smtp
-        mailer_host: 127.0.0.1
-        mailer_port: null
-        mailer_encryption: null
-        mailer_user: null
-        mailer_password: null
-        session_handler: null
-        locale: en
-        secret: ThisTokenIsNotSoSecretChangeIt
-        installed: '2014-08-12T09:05:04-07:00'
+   For example:
+   
+   .. code-block:: yaml
+       :linenos:
+   
+       # config/parameters_test.yml
+       parameters:
+           database_host: 127.0.0.1
+           database_port: null
+           database_name: crm_test
+           database_user: root
+           database_password: null
+           mailer_transport: smtp
+           mailer_host: 127.0.0.1
+           mailer_port: null
+           mailer_encryption: null
+           mailer_user: null
+           mailer_password: null
+           session_handler: null
+           locale: en
+           secret: ThisTokenIsNotSoSecretChangeIt
+           installed: '2014-08-12T09:05:04-07:00'
 
-Next, install an application in the test environment:
+3. Install the application in the test environment:
 
-.. code-block:: bash
+   .. code-block:: bash
+   
+       $ bin/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
+   
+   During installation, the database structure is set up and standard fixtures are loaded.
 
-    $ bin/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
+4. Run tests using phpunit with the proper --testsuite option (unit or functional). 
 
-.. versionadded:: 1.10
+   .. caution::	Currently, running different types of automated tests together is not supported. It is, therefore, strongly not recommended to run unit tests and functional tests side by side in one run as this produces errors. Unit tests create mock objects that later interfere with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help of the test suite option:
 
-For platform versions prior to 1.10, you need to run user fixtures upload command:
+   .. code-block:: bash
 
-.. code-block:: bash
+         $ php bin/phpunit -c ./ --testsuite "Functional Tests"
 
-     $ bin/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures ./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+   .. code-block:: bash
 
-.. versionadded:: 1.9
-
-For platform versions prior to 1.9 run command to update schema for test entities:
-
-.. code-block:: bash
-
-    $ bin/console oro:test:schema:update --env test
-
-After this, you'll be able to run your tests in a command line or IDE.
-
-.. caution::
-
-	Currently, running different types of automated tests together is not supported. It is, therefore, strongly not recommended to run       unit tests and functional tests side by side in one run as this produces errors. Unit tests create mock objects that later interfere     with functional test execution and create unnecessary ambiguity. It is possible to disable unit tests on test startup with the help     of the test suite option:
-
-.. code-block:: bash
-
-      $ php bin/phpunit -c ./ --testsuite "Functional Tests"
-
-.. code-block:: bash
-
-      $ php bin/phpunit -c ./ --testsuite “Unit Tests"
+         $ php bin/phpunit -c ./ --testsuite “Unit Tests"
 
 Database Isolation
 ~~~~~~~~~~~~~~~~~~
@@ -211,8 +197,10 @@ method to load a fixture in a test:
         // ...
     }
 
-A fixture must be a class name implements ``Doctrine\Common\DataFixtures\FixtureInterface``
-or a path to `nelmio/alice <https://github.com/nelmio/alice>`__ file. An example fixture will look like this:
+A fixture must be either a class name that implements ``Doctrine\Common\DataFixtures\FixtureInterface``
+or a path to the `nelmio/alice <https://github.com/nelmio/alice>`__ file. 
+
+An example of a fixture:
 
 .. code-block:: php
     :linenos:
@@ -243,7 +231,7 @@ or a path to `nelmio/alice <https://github.com/nelmio/alice>`__ file. An example
                 name: test
 
 You can also implement the ``Doctrine\Common\DataFixtures\DependentFixtureInterface``
-which allows to load fixtures depending on other fixtures being already loaded:
+which enables to load fixtures depending on other fixtures being already loaded:
 
 .. code-block:: php
     :linenos:
@@ -324,7 +312,7 @@ Now, you can reference the fixture by the configured name in your test:
 
 .. hint::
 
-    By default the entity manager is cleared after loading of each fixture. To prevent the clearing a fixture
+    By default the entity manager is cleared after loading each fixture. To prevent clearing a fixture
     can implement ``Oro\Bundle\TestFrameworkBundle\Test\DataFixtures\InitialFixtureInterface``.
 
 .. hint::
@@ -335,25 +323,17 @@ Now, you can reference the fixture by the configured name in your test:
     - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadUser``
     - ``Oro\Bundle\TestFrameworkBundle\Tests\Functional\DataFixtures\LoadBusinessUnit``
 
-
 Writing Functional Tests
 ------------------------
 
-To create a functional test case, you need to do the following:
+To create a functional test case:
 
-* Extend the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase`
-  class;
-
-* Prepare the test client (an instance of the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\Client`
-  class);
-
-* Prepare fixtures (optional);
-
-* Prepare container (optional);
-
-* Call test functionality;
-
-* Verify result.
+1. Extend the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\WebTestCase` class
+2. Prepare the test client (an instance of the :class:`Oro\\Bundle\\TestFrameworkBundle\\Test\\Client` class)
+3. Prepare fixtures (optional)
+4. Prepare container (optional)
+5. Call test functionality
+6. Verify the result
 
 Functional Tests for Controllers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -363,11 +343,11 @@ The Control Flow
 
 A functional test for a controller consists of a couple of steps:
 
-* Make a request;
-* Test the response;
-* Click on a link or submit a form;
-* Test the response;
-* Rinse and repeat.
+1. Make a request
+#. Test the response
+#. Click on a link or submit a form
+#. Test the response
+#. Rinse and repeat
 
 Prepare Client Examples
 -----------------------
@@ -776,8 +756,8 @@ method:
     }
 
 
-Integration Test Example
-------------------------
+Functional Test Example
+-----------------------
 
 This is an example of how you can write an integration test for a class that
 uses Doctrine ORM without mocking its classes and using real Doctrine services:
