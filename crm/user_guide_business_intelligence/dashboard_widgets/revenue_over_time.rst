@@ -6,6 +6,7 @@ Revenue Over Time
 The Revenue Over Time widget gives you a quick overview of Magento revenues.
 
 .. image:: /user_guide/img/widgets/revenue_over_time.png
+   :alt: Revenue over time
 
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
@@ -22,6 +23,7 @@ You can adjust the following settings for the revenue over time widget:
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user_guide/img/widgets/revenue_over_time_config.png
+   :alt: Revenue over time widget configuration
 
 
 Related Articles

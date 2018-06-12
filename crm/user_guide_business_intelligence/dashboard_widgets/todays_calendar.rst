@@ -6,6 +6,7 @@ Today's Calendar
 The Today's Calendar displays planned events and your tasks due today. The events may belong to your personal calendar or other calendars that you watch.
 
 .. image:: /user_guide/img/widgets/calendar.png
+   :alt: Today's calendar
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -20,6 +21,7 @@ You can adjust the following settings for the today's calendar widget:
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
 
 .. image:: /user_guide/img/widgets/calendar_config.png
+   :alt: Today's calendar widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

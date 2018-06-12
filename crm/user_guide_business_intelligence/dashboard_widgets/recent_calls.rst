@@ -7,6 +7,7 @@ The Recent Calls widget displays the list of recently logged calls.
 
 
 .. image:: /user_guide/img/widgets/recent_calls.png
+   :alt: Recent calls
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -25,6 +26,7 @@ You can adjust the following settings for the recent calls widget:
 * **Owner** --- select the owner for the widget to see statistics for a certain user.
 
 .. image:: /user_guide/img/widgets/recent_calls_config.png
+   :alt: Recent calls widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

@@ -20,14 +20,17 @@ You can edit records in your application in three ways:
 1. By using |IcPencil| :ref:`inline editing <doc-grids-actions-records-edit-inline>` in :ref:`record tables <doc-grids>`.
 
    .. image:: /user_guide/img/getting_started/records/inline_editing_example.png
+      :alt: Use inline editing in record tables
 
 2. By clicking  |IcEdit| **Edit** it in the ellipsis (or more options) menu located at the end of the row of the selected record in the :ref:`table <doc-grids>`.
 
    .. image:: /user_guide/img/getting_started/records/ellipsis_example.png
+      :alt: Edit it in the ellipsis in the table
 
 3. By opening the page of the selected record and clicking **Edit**.
 
    .. image:: /user_guide/img/getting_started/records/record_edit_button_example.png
+      :alt: Open the page of the selected record
 
 .. _doc-grids-actions-records-edit-inline:
 
@@ -44,16 +47,19 @@ To edit a record using inline-editing:
    Alternatively, double-click on the value itself.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineedit.png
+      :alt: Click the edit inline icon
 
 3. Modify the value as required.
 
    Inline editors can be of different types. The simplest inline editor is a plain text field, where you can type the required value.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor.png
+      :alt: In text field modify the value as required
 
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor2.png
+      :alt: The field can show just certain values
 
 4. Click the |IcActivate| **Save Changes** icon to save a new value, or the |IcBan| **Discard Changes** icon to return to the old value.
 
@@ -64,11 +70,13 @@ To edit a record using inline-editing:
 Manage Records Using Ellipsis Menu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process. 
+Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_editrecord.png
+   :alt: Edit records
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_deleterecord.png
+   :alt: Delete records
 
 .. _user-guide--getting-started--mass-actions-management-console:
 .. _doc-grids-actions-records-delete-multiple:
@@ -86,6 +94,7 @@ To delete several records:
 4. Once deletion is confirmed, the records are removed.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_delete_bulk.png
+   :alt: Remove multiple records
 
 .. _doc-grids-actions-records-merge:
 
@@ -100,6 +109,7 @@ To merge records:
 2. Click the ellipsis menu at the right end of the table header row, and the click the |IcMerge| **Merge** icon.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_merge.png
+   :alt: Merge records
 
 The process of merging is described in detail in the :ref:`Merging Accounts <user-guide-accounts-merge>` topic.
 
@@ -109,11 +119,12 @@ Save Updated Records
 To save the record you have created or updated, click one of the options in the save menu on the top right:
 
 .. image:: /user_guide/img/getting_started/ui_components/create_page_save_cancel.png
+   :alt: Save updated records
 
-1. **Save** --- Save the changes but remain on the same page. Use this option if you want to make more changes to the record configuration.     
+1. **Save** --- Save the changes but remain on the same page. Use this option if you want to make more changes to the record configuration.
 2. **Save and Close** --- Save the changes and close the page. Once saved and closed, you are redirected to the record page.
-3. **Save and New** --- Save the changes for the record you are creating/updating, and create/update another one straight away. 
-   
+3. **Save and New** --- Save the changes for the record you are creating/updating, and create/update another one straight away.
+
 .. note:: To discard the changes, click **Cancel** on the top right.
 
 Review Record History
@@ -122,8 +133,10 @@ Review Record History
 You can review the history of a specific record if you have the corresponding permissions. Click on the **Change History** link on the top right of the record page to open the dialog window. If the record has been modified in any way, you will see who, how and when updated it.
 
 .. image:: /user_guide/img/getting_started/data_management/view/view_history.png
+   :alt: Open the dialog window by clicking on the change history link
 
 .. image:: /user_guide/img/records/change_history.png
+   :alt: Change history window
 
 Share Records
 -------------
@@ -134,6 +147,7 @@ To share a record, click **Share** on the top right of record page, and enter th
 
 
 .. image:: /user_guide/img/getting_started/data_management/view/view_share_01.png
+   :alt: Share records
 
 
 .. include:: /img/buttons/include_images.rst

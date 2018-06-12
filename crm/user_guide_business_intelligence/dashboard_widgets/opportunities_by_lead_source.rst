@@ -6,6 +6,7 @@ Opportunities by Lead Source
 The Opportunities by Lead Source widget displays the breakdown of opportunities by lead sources in a form of a pie chart.
 
 .. image:: /user_guide/img/widgets/opp_by_lead_source.png
+   :alt: Opportunities by lead source
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -27,6 +28,7 @@ You can adjust the following settings for the opportunities by lead source widge
 
 
 .. image:: /user_guide/img/widgets/opp_by_lead_source_config.png
+   :alt: Opportunities by lead source widget configuration
 
 
 Related Articles

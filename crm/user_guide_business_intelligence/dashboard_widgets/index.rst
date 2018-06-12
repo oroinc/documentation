@@ -6,9 +6,10 @@ Dashboards and Widgets
 ======================
 
 Dashboard is a default page you see after you log in. It is an adjustable view that may contain many :ref:`types of information blocks (widgets) <user-guide--business-intelligence--widgets--explore>`,
-such as today's calendar, recent calls and emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them. 
+such as today's calendar, recent calls and emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them.
 
 .. image:: /user_guide/img/widgets/dashboards_0.png
+   :alt: Dashboards and widgets
 
 In this section you will learn how to easily customize existing dashboard or create a new one, as well as add and manage widgets in the Oro application.
 
@@ -20,12 +21,13 @@ Create a Dashboard
 To create a dashboard:
 
 #. Hover over the |IcDashboard| in the main menu and click **Manage Dashboards**.
-  
+
 #. Click **Create Dashboard** on the top right of the page.
 
    The following page appears:
 
    .. image:: /user_guide/img/widgets/dashboards_1.png
+      :alt: Create dashboard by clicking manage dashboards
 
    The following fields are mandatory and **must** be specified:
 
@@ -42,6 +44,7 @@ To create a dashboard:
 Initially, the dashboard contains all the widgets of the dashboard it has been cloned from. Dashboards cloned from the Blank Dashboard will be empty.
 
 .. image:: /user_guide/img/widgets/dashboards_2.png
+   :alt: New dashboard
 
 Manage Dashboard
 ----------------
@@ -52,12 +55,14 @@ Switch Between Dashboards
 You can switch to a dashboard in one of the two ways:
 
 - Hover over the |IcDashboard| in the main menu and click the dashboard name.
- 
+
   .. image:: /user_guide/img/widgets/dashboards_3.png
-  
+     :alt: Switch to a dashboard by clicking the dashboard name
+
 - Toggle dashboards in the header of the Dashboard page.
 
   .. image:: /user_guide/img/widgets/dashboards_4.png
+     :alt: Toggle dashboards by cliking the dashboard page
 
 .. _user-guide--business-intelligence--widgets--explore:
 
@@ -82,30 +87,30 @@ Your Oro application comes with a number of out-of-the-box widgets that can simp
        * :ref:`Opportunity-generating campaigns <user-guide--business-intelligence--widgets--opportunity-generating-campaigns>`
        * :ref:`Average lifetime sales <user-guide--business-intelligence--widgets--average-lifetime-sales>`
        * :ref:`Purchase funnel <user-guide--business-intelligence--widgets--purchase-funnel>`
-       * :ref:`Campaigns by close revenue <user-guide--business-intelligence--widgets--close-revenue>`","                                                                     
-       
+       * :ref:`Campaigns by close revenue <user-guide--business-intelligence--widgets--close-revenue>`","
+
        * :ref:`Recent emails <user-guide--business-intelligence--widgets--recent-emails>`
        * :ref:`Recent calls <user-guide--business-intelligence--widgets--recent--calls>`","
-       
-       
+
+
        * :ref:`Quick launchpad <user-guide--business-intelligence--widgets--quick-launchpad>`
        * :ref:`Recently accessed contacts <user-guide--business-intelligence--widgets--recently-accessed--contacts>`
        * :ref:`Recently accessed accounts <user-guide--business-intelligence--widgets--recently-accessed-accounts>`
        * :ref:`Today's calendar <user-guide--business-intelligence--widgets--todays-calendar>`"
-            
+
        * :ref:`Ecommerce statistics <user-guide--business-intelligence--widgets--ecommerce-statistics>`
        * :ref:`New Magento customers <user-guide--business-intelligence--widgets--new-magento-customers>`
        * :ref:`Revenue over time <user-guide--business-intelligence--widgets--revenue-over-time>`
        * :ref:`Orders over time <user-guide--business-intelligence--widgets--revenue-over-time>`
-       * :ref:`My sales flow B2C <user-guide--business-intelligence--widgets--sales-flow>`" 
-   
+       * :ref:`My sales flow B2C <user-guide--business-intelligence--widgets--sales-flow>`"
+
 .. note:: Additional widgets can be added via a third-party system integrations.
 
 .. _user-guide--business-intelligence--widgets--add:
 
 Add Widgets to a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  
+
 To add a widget to a dashboard:
 
 #. Navigate to the dashboard (e.g. hover over the |IcDashboard| in the main menu and click the dashboard name).
@@ -113,18 +118,22 @@ To add a widget to a dashboard:
 #. Click **+Add Widget**.
 
    .. image:: /user_guide/img/widgets/add_widget_button_new.png
+      :alt: Add widget by clicking on +add widget
 
 #. The page that appears lists all the widgets available in the system which have not been added to the dashboard yet.
 
    .. image:: /user_guide/img/widgets/dashboards_5_new.png
- 
+      :alt: The widget that is not added to the toolbar is displayed here
+
 #. To search for a widget, type its name in the search field.
 
    .. image:: /user_guide/img/widgets/business_sales_channel_statistics.png
-  
+      :alt: Type name of the widget in the search field to search it
+
 #. Select the widget that you would like to add and click **Add**.
 
    .. image:: /user_guide/img/widgets/widgets_list.png
+      :alt: Add the widget by clicking add
 
 This way you can add the same widgets a number of times and assign them different owners.
 
@@ -140,6 +149,7 @@ Widgets can be easily managed and filtered. A number of widgets can be created f
 Manage widgets using the tools in their header:
 
 .. image:: /user_guide/img/widgets/dashboards_6.png
+   :alt: Use the tools in the header to manage widgets
 
 The header of each widget contains:
 
@@ -156,6 +166,7 @@ The header of each widget contains:
 The specified owner, date range and the `territory <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ (if available for the entity) are displayed at the bottom of the widget:
 
 .. image:: /user_guide/img/widgets/owner_date_terr_displayed.png
+   :alt: At the bottom of the widget is a specified owner, date range and the territory
 
 Adjust Widget Settings
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -171,6 +182,7 @@ By clicking |IcSettings| in the widget header, you can adjust the following sett
 * Other widget details (depending on widget type).
 
 .. image:: /user_guide/img/widgets/configure_widget2.png
+   :alt: Adjust widget settings
 
 Add, Edit, and Delete a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,6 +190,7 @@ Add, Edit, and Delete a Dashboard
 Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettings| **Tools** and use one of the following actions:
 
 .. image:: /user_guide/img/widgets/dashboards_8_new.png
+   :alt: Manage the widgets bu clicking the tools menu
 
 - Click |IcEdit| to edit the dashboard.
 
@@ -190,6 +203,7 @@ Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettin
     You can also perform these actions via the  |IcMore| **More Options** menu from the Dashboards list page (**Dashboards > Manage Dashboards** in the main menu).
 
     .. image:: /user_guide/img/widgets/dashboards_9.png
+       :alt: Perform actions by cliking the more options menu
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
@@ -221,5 +235,3 @@ Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettin
    revenue_over_time
    orders_over_time
    my_sales_flow_b2c
- 
-    
