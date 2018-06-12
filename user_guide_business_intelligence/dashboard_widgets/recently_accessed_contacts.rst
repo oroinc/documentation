@@ -6,6 +6,7 @@ Recently Accessed Contacts
 The Recently Accessed Contacts widget displays the list of recently accessed contacts.
 
 .. image:: /user_guide/img/widgets/recently_accessed_contacts.png
+   :alt: Recently accessed contacts
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -24,6 +25,7 @@ You can adjust the following settings for the recently accessed contacts widget:
 * **Owner** --- select the owner for the widget to see statistics for a certain user.
 
 .. image:: /user_guide/img/widgets/recently_accessed_contacts_config.png
+   :alt: Recently accessed contacts widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

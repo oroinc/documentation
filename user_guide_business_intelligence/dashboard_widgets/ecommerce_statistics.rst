@@ -6,6 +6,7 @@ Ecommerce Statistics
 The Ecommerce Statistics widget displays a set of metrics that indicate performance of your Magento channels.
 
 .. image:: /user_guide/img/widgets/ecommerce_statistics.png
+   :alt: Ecommerce statistics
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -35,8 +36,9 @@ You can adjust the following settings for the ecommerce statistics widget:
   * Average order value
   * Abandoned revenue
   * Abandoned carts
-  
+
 .. image:: /user_guide/img/widgets/ecommerce_statistics_config.png
+   :alt: Ecommerce statistics widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

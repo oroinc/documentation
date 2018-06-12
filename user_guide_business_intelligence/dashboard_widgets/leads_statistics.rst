@@ -3,9 +3,10 @@
 Leads Statistics
 ----------------
 
-The Leads Statistics widget displays a set of metrics that indicate the performance of your lead pipeline. You can configure the widget to show only leads in certain conditions, e.g. only open leads owned by the current user. 
+The Leads Statistics widget displays a set of metrics that indicate the performance of your lead pipeline. You can configure the widget to show only leads in certain conditions, e.g. only open leads owned by the current user.
 
 .. image:: /user_guide/img/widgets/lead_statistics_1.png
+   :alt: Leads statistics
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -29,6 +30,7 @@ You can adjust the following settings for the lead statistics widget:
 * **Territories** --- if sales `territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view leads filtered within one or several specific territories.
 
 .. image:: /user_guide/img/widgets/lead_statistics_2.png
+   :alt: Lead statistics configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

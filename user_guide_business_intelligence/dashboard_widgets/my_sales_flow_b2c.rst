@@ -6,6 +6,7 @@ My Sales Flow B2C
 My sales Flow B2C widget gives you a quick overview of a B2C workflow in a form of a funnel chart.
 
 .. image:: /user_guide/img/widgets/sales_flow.png
+   :alt: My sales flow b2c
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -22,6 +23,7 @@ You can adjust the following settings for My Sales Flow B2C widget:
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user_guide/img/widgets/sales_flow_config.png
+   :alt: My sales flow b2c widget configuration
 
 
 Related Articles

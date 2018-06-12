@@ -6,6 +6,7 @@ Purchase Funnel
 The Purchase Funnel widget gives you a quick overview of purchases. It allows managers to effectively track conversion rate of each step of their ecommerce funnel. This provides crucial insight and identifies steps in the conversion funnel that require optimization to improve customer experience and increase sales.
 
 .. image:: /user_guide/img/widgets/purchase_funnel.png
+   :alt: Purchase funnel
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -21,6 +22,7 @@ You can adjust the following settings for the purchase funnel widget:
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user_guide/img/widgets/purchase_funnel_config.png
+   :alt: Purchase funnel widget configuration
 
 
 Related Articles
