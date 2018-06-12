@@ -6,6 +6,7 @@ Recently Accessed Account
 The Recently Accessed Accounts widget displays the list of recently accessed accounts.
 
 .. image:: /user_guide/img/widgets/recently_accessed_accounts.png
+   :alt: Recently accessed account
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -23,6 +24,7 @@ You can adjust the following settings for the recently accessed accounts widget:
 * **Owner** --- select the owner for the widget to see statistics for a certain user.
 
 .. image:: /user_guide/img/widgets/recently_accessed_accounts_config.png
+   :alt: Recently accessed accounts widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

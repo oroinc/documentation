@@ -21,6 +21,7 @@ You can adjust the following settings for the average lifetime sales widget:
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user_guide/img/widgets/average_lifetime_sales_config.png
+   :alt: Average lifetime sales widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^
