@@ -146,8 +146,6 @@ Developer's Guide
 
    architecture/index
 
-   cloud/index
-
    install_upgrade/index
 
    user_guide/index

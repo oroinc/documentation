@@ -18,8 +18,6 @@ The information is grouped into the following topics:
   * :ref:`Run Pre-Installed Oro Application in the Oracle VM VirtualBox <virtual_machine_deployment>`
   * :ref:`Get Running Oro Application Using Vagrant Provision <vagrant_installation>`
 
-* :ref:`Hosting Oro application in OroCloud <orocloud>`
-
 * :ref:`Run Pre-Installed Oro Application in the Oracle VM VirtualBox <virtual_machine_deployment>` -- Steps for downloading and using the virtual image with Oro application to get a sandbox environment without any hassle.
 
 * :ref:`Upgrade <upgrade>` -- Guidance on how to upgrade the Oro application to the newer version.
