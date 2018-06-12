@@ -28,6 +28,13 @@ Import and Export Prices
    :start-after: begin
    :end-before: finish
 
+Duplicate a Price List
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /user_guide/pricing/pricelist/duplicate_pl.rst
+   :start-after: begin
+   :end-before: finish
+
 Manage Product Price Manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -68,6 +75,7 @@ Set Prices in Multiple Currencies
    manual
    schedule
    import_export
+   duplicate_pl
    ownership
    multicurrency
    internal
