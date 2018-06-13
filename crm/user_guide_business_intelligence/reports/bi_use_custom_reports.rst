@@ -27,6 +27,7 @@ General
 ^^^^^^^
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_1.png
+   :alt: General information
 
 The following fields are mandatory and **must** be defined for a report:
 
@@ -51,6 +52,7 @@ Designer
 In the **Designer** section, you can define the structure of your report.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_2.png
+   :alt: Designer of your report
 
 There are four main subsections that help you build your report:
 
@@ -89,10 +91,12 @@ To add a column:
   For example, you want a report that shows the number of opportunities with each of the statuses **Open**, **Closed Won** and **Closed Lost**. Then, you can create a report with target entity **Opportunity**. For the opportunity's columns, add **Status** and **Id**. For the **Id** field, specify the **Count** function.
 
   .. image:: /user_guide/img/business_intelligence/custom_reports_3.png
+     :alt: Create columns in the report
 
   As the result, the system takes the first of the statuses and counts how many Ids are listed under it, and the same for other statuses.
 
   .. image:: /user_guide/img/business_intelligence/custom_reports_4.png
+     :alt: The status for the opportunity report
 
   There are some field-specific functions (e.g. **Won Count** that shows the number of won opportunities) for the opportunity's **Status** field. The most common functions are the following:
 
@@ -213,11 +217,13 @@ Grouping by Date
 In this section, you can define whether to show additional period filters for this report on the report view page.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_6.png
+   :alt: Grouping by date
 
 With these filters, you can define the date range to filter the report data and group the data in this range by periods (days, month, quarters, years).
 You can also decide whether to show or not the periods that do not contain any data.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_7.png
+   :alt: Desiner in the grouping by date
 
 .. csv-table::
   :header: "Field","Description"
@@ -238,6 +244,7 @@ Chart Designer
 ^^^^^^^^^^^^^^
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_8.png
+   :alt: Chart designer
 
 Chart
 ~~~~~
@@ -268,6 +275,7 @@ In the main menu, navigate to **Report & Segments > Manage Reports**, and in the
 Alternatively, hover over the |IcEllipsisH| **More Options** menu and click the |IcView| **View** icon.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_9.png
+   :alt: View a custom report
 
 From the Custom Report View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -275,6 +283,7 @@ From the Custom Report View Page
 In the main menu, navigate to **Report & Segments**. Custom reports are gathered in sections by the name of the field they are related to. Select the required section, navigated further to the desired report, and click it.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_10.png
+   :alt: From the custom report view page
 
 Export a Report
 ---------------
@@ -288,6 +297,7 @@ Export a Report
 2. On the report page, click the **Export Grid** button in the upper-left corner, and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_11.png
+      :alt: Export a report
 
 Edit a Custom Report
 --------------------
@@ -300,6 +310,7 @@ From the Custom Reports Grid
 2. On the **All Reports** page, hover over the |IcEllipsisH| **More Options** menu, and then click the |IcEdit| **Edit** icon.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_12.png
+      :alt: From the custom reports grid
 
 3. Update the report details as required. For the description of the fields, see `Create a Custom Report`_.
 
@@ -315,6 +326,7 @@ From the Custom Report View Page
    Alternatively, hover over the |IcEllipsisH| **More Options** menu, and then click the |IcView| **View** icon.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_13.png
+      :alt: From the custom report view page
 
 3. On the report page, click **Edit** in the upper-right corner.
 
@@ -333,6 +345,7 @@ From the Custom Reports Grid
 2. On the custom reports page, select the report to delete, hover over the |IcEllipsisH| **More Options** menu, and then click |IcDelete| **Delete**.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_14.png
+      :alt: From the custom reports grid
 
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
@@ -342,6 +355,7 @@ From the Custom Report View Page
 Alternatively, you can delete a custom report from the reports view page by clicking **Delete** in the upper-right corner.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_15.png
+   :alt: From the custom report view page
 
 Delete Multiple Custom Reports
 ------------------------------
@@ -355,6 +369,7 @@ You can delete multiple custom reports at a time.
 2. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| to delete multiple reports at a time.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_16.png
+      :alt: Delete multiple custom reports
 
 4. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
 
@@ -366,4 +381,3 @@ You can delete multiple custom reports at a time.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
