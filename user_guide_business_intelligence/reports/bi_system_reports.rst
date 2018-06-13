@@ -13,6 +13,7 @@ View a System Report
 To view a system report, navigate to **Report & Segments > Reports** in the main menu.
 
 .. image:: /user_guide/img/business_intelligence/system_reports_1.png
+   :alt: View a system report
 
 The following system reports are available out-of-the-box at the Oro application:
 
@@ -33,6 +34,7 @@ To filter the output of a Best Selling Products report:
 1. Navigate to **Report & Segments > Reports > Best Selling Products**.
 
    .. image:: /user_guide/img/business_intelligence/system_reports_2.png
+      :alt: Filter the output of a best selling products report by clicking the best selling products in navigate to report & segments
 
 2. Here, you can view:
 
@@ -44,17 +46,19 @@ To filter the output of a Best Selling Products report:
 3. To configure a new report, click |IcFilter| to display the configurable fields and filter them by the corresponding time and product.
 
    .. image:: /user_guide/img/business_intelligence/system_reports_3.png
+      :alt: Configure a new report and display the configurable fields
 
 4. Once finished with the configuration, click **Update** at the same field to reload the page and display a new report with the requested information.
 
    .. image:: /user_guide/img/business_intelligence/system_reports_4.png
+      :alt: Click update to reload the page
 
 5. Also, you can manage the columns of the report by clicking |IcSettings| to the right and opening the **Grid Settings** to see the list of columns that organize the item details.
 
 6. To reorder the columns, click and hold the column name, then drag it to a new location. To show / hide a column, select / clear the **Show** check box next to it.
 
    .. image:: /user_guide/img/business_intelligence/system_reports_5.png
+      :alt: Grid settings in the report
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
