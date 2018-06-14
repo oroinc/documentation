@@ -190,7 +190,7 @@ Configure and Run Required Background Processes
 .. code::
 
    [program:oro_web_socket]
-   command=scl enable oro-php71 'php ./bin/console clank:server --env=prod'
+   command=scl enable oro-php71 'php ./bin/console gos:websocket:server --env=prod'
    numprocs=1
    autostart=true
    autorestart=true
