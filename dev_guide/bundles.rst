@@ -465,7 +465,7 @@ related articles is provided below the description.
         * Book: :doc:`/dev_guide/entities/crud`
 
 `SyncBundle`_ (OroPlatform)
-    Supports websocket communications based on the `JDareClankBundle`_.
+    Supports websocket communications based on the `GosWebsocketBundle`_.
 
 `TagBundle`_ (OroPlatform)
     Categorize entities with user-defined tags.
@@ -623,7 +623,7 @@ related articles is provided below the description.
 .. _`SidebarBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SidebarBundle/README.md
 .. _`SoapBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SoapBundle/README.md
 .. _`SyncBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SyncBundle/README.md
-.. _`JDareClankBundle`: https://github.com/JDare/ClankBundle
+.. _`GosWebsocketBundle`: https://github.com/GeniusesOfSymfony/WebSocketBundle
 .. _`TagBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/TagBundle/README.md
 .. _`TaskBundle`: https://github.com/orocrm/OroCRMTaskBundle/blob/master/README.md
 .. _`TestFrameworkBundle`: https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/TestFrameworkBundle/README.md
