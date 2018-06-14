@@ -1,13 +1,14 @@
 .. _one-step-install:
 
-One-Click Automated Installation
-================================
+One-Click Automated Setup
+=========================
 
-To quickly get the running Oro Application for the familiarization or development purpose with minimum efforts there are
-following automated "one-click" installation scenarios:
+The instructions on how to quickly setup and run Oro Applications with the help of prepared machine images or
+provisioning tools are listed below:
 
-* :ref:`Get Running Oro Application Using the Prepared VirtualBox VM Image <virtual_machine_deployment>`
-* :ref:`Get Running Oro Application Using Vagrant Provision <vagrant_installation>`
+* :ref:`Run Oro Applications with a VirtualBox VM Image <virtual_machine_deployment>`
+* :ref:`Run Oro Application Using Vagrant Provision <vagrant_installation>`
+* :ref:`Run Oro Application on the AWS Cloud Platform with an Amazon Machine Image Image <aws_simple>`.
 
 .. toctree::
    :titlesonly:
@@ -15,3 +16,4 @@ following automated "one-click" installation scenarios:
 
    vm
    vagrant
+   aws
