@@ -13,12 +13,11 @@ The information is grouped into the following topics:
   * :ref:`OroCRM Community Edition <installation--crm-ce--readme>`
   * :ref:`OroCRM Enterprise Edition <installation--crm-ee--readme>`
 
-* :ref:`One-Click Automated Installation <one-step-install>` -- The automated ways to quickly get the running Oro Application for the familiarization or development purpose with minimum efforts:
+* :ref:`One-Click Automated Setup <one-step-install>` -- A collection of instructions on how to setup and run Oro Applications with the help of prepared machine images or provisioning tools:
 
-  * :ref:`Run Pre-Installed Oro Application in the Oracle VM VirtualBox <virtual_machine_deployment>`
-  * :ref:`Get Running Oro Application Using Vagrant Provision <vagrant_installation>`
-
-* :ref:`Run Pre-Installed Oro Application in the Oracle VM VirtualBox <virtual_machine_deployment>` -- Steps for downloading and using the virtual image with Oro application to get a sandbox environment without any hassle.
+   * :ref:`Run Oro Applications with a VirtualBox VM Image <virtual_machine_deployment>`
+   * :ref:`Run Oro Application Using Vagrant Provision <vagrant_installation>`
+   * :ref:`Run Oro Application on the AWS Cloud Platform with an Amazon Machine Image Image <aws_simple>`.
 
 * :ref:`Upgrade <upgrade>` -- Guidance on how to upgrade the Oro application to the newer version.
 
