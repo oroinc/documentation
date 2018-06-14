@@ -26,7 +26,7 @@ Any Oro application and packages may be used in the following modes:
 * Oro application or Oro package source code may be used as a base for a custom application. Clone the Oro application repository, fork it, or download the source code as an archive and customize and extend the code as necessary.
 * Oro packages may be embedded as ready-to-use features into any application. Create your own application from scratch and add Oro packages as composer dependencies. Read more about composer dependency manager in the Distribution Model section below.
 
-An **application** repository stores a complete solution created to automate activities for the business domain (e.g. customer relationship management, B2B commerce, marketing automation, etc.) Oro application provides a set of features and delivers number of benefits to the end user. Apart from the source code that implements business logics for the application features, Oro application repositories contain minimal set of configuration and initialization scripts for installing and running Oro application in dev, test, or prod environment.
+An **application** repository stores a complete solution created to automate activities for the business domain (e.g. customer relationship management, B2B commerce, marketing automation, etc.) Oro application provides a set of features and delivers number of benefits to the end user. Apart from the source code that implements business logic for the application features, Oro application repositories contain minimal set of configuration and initialization scripts for installing and running Oro application in dev, test, or prod environment.
 
 Sample applications: `OroCRM <https://github.com/oroinc/crm-application>`_, `OroCommerce <https://github.com/oroinc/orocommerce-application>`_, `OroPlatform <https://github.com/oroinc/platform-application>`_
 
@@ -112,30 +112,32 @@ Oro PHP Application File System Structure
 
 From a file system perspective, Oro PHP application contains a structured combination of configuration and initialization files used to build application source code. Typically, Oro application folders are organized in the following way:
 
-* app folder - application initialization and requirements validation files
+* **bin** folder - executable scripts for application maintenance
+* **config** folder - application configuration files
+* **public** folder - the web server root directory with accessible public files
 
-   * attachment - files uploaded to the application as attachments
-   * bin - scripts for application maintenance
-   * cache - framework and application cache files
-   * config - configuration files
-   * import_export - files generated during data import and export
-   * logs - application logs
-   * Resources - base application templates and translations
+   * **bundles** - static assets created based on public resources of application dependencies (third-party bundles and packages)
+   * **css** - CSS files generated based on bundle Resources/config/oro/assets.yml definitions
+   * **images** - images pre-processed by Symfony Assetic and optimized for the web
+   * **js** - javascript files generated based on the source code of the application packages: routes, translations, minified files, etc.
+   * **media** - the folder for application media (images) cache generation
+   * **uploads** - writable folder for uploading user files
+   * **index.php** - the main application entry point
 
-* src folder - application customizations source code
-* vendor folder - code of 3rd party vendors installed based on dependencies definition in composer.json.
-* web folder - web server root directory
+* **src** folder - application customization PHP source code
+* **templates** folder - application customization templates
+* **translations** folder - application customization translation files
+* **var** folder - application generated files
 
-   * bundles - static assets created based on packages assets dependencies and bundles public resources
-   * css - CSS files generated based on bundles Resources/config/oro/assets.yml definitions
-   * images - images pre-processed by Symfony Assetic and optimized for web
-   * js - javascript files generated based on application packages source code: routes, translations, minified files etc.
-   * media - folder for application media (images) cache generation
-   * uploads - writable folder for user's files upload
+   * **attachment** - files uploaded to the application as attachments
+   * **cache** - framework and application cache files
+   * **import_export** - files generated during data import and export
+   * **logs** - application logs
 
-* composer.json file - applications dependencies definition
-* composer.lock file - initialized dependencies list for dependencies installation
-* README.md file
+* **vendor** folder - code of 3rd party vendors installed based on the definition of dependencies in composer.json.
+* **composer.json** file - definition of application dependencies 
+* **composer.lock** file - the list of initialized dependencies
+* **README.md** file - a brief description of the application
 
 Oro Package File System Structure
 """""""""""""""""""""""""""""""""
