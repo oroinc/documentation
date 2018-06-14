@@ -12,7 +12,7 @@ Support Desk
 
 The OroCloud customer support is available for Oro authorized partners and Enterprise edition customers.
 
-For the support and assistance requests, there is an online customer support desk that is available 24x7x365 for ticket submission and further ticket-related communication:
+For the support and assistance requests, there is a customer support desk that is available 24x7x365 for ticket submission and further ticket-related communication:
 
 .. image:: /cloud/img/cloud/support_portal.png
 
