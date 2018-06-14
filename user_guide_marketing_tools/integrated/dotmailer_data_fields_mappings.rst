@@ -18,12 +18,15 @@ As well as utilizing the default contact data fields (FIRSTNAME, FULLNAME or LAS
 The default fields are listed on the **Default Data Fields** tab, while new customized fields are on **My Data Fields**. These are located in **Contacts>Contact Data fields**.
 
 .. image:: ../../img/dotmailer_email_campaign/dt_contacts_contact_data_fields.jpg
+   :alt: Contact data fields
 
 .. image:: ../../img/dotmailer_email_campaign/default_data_fields_dt.jpg
+   :alt: Default data fields
 
 Within **My Data Fields**, you can view, create or remove new data fields.
 
 .. image:: ../../img/dotmailer_email_campaign/new_data_fields_example_dt.jpg
+   :alt: My data fields
 
 Create a New Data Field
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -47,6 +50,7 @@ To create a new data field, click :guilabel:`New Data Field`. A dialog box will 
 Click :guilabel:`Save` to save the new data field.
 
 .. image:: ../../img/dotmailer_email_campaign/new_data_fields_create_dt.jpg
+   :alt: The new data field form
 
 OroCRM Side
 ^^^^^^^^^^^
@@ -54,6 +58,7 @@ OroCRM Side
 The dotmailer data fields are collected by Oro and can be found under **Marketing>dotmailer>Data Fields**. Here, you can view, remove and create new dotmailer data fields on the Oro side.
 
 .. image:: ../../img/dotmailer_email_campaign/oro_data_fields_grid.jpg
+   :alt: OroCRM Side
 
 Create a New Data Field in OroCRM
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,8 +82,9 @@ To create a new data field in OroCRM, click :guilabel:`Create dotmailer Data Fie
 You can add a note for the data field you are creating in the **Additional** section in **Notes**.
 
 .. image:: ../../img/dotmailer_email_campaign/oro_create_data_field.jpg
+   :alt: Add notes to the field
 
-Click :guilabel:`Save and Close` to save the new data field. Once saved, it will appear in the **Data Fields** grid. 
+Click :guilabel:`Save and Close` to save the new data field. Once saved, it will appear in the **Data Fields** grid.
 
 
 From within the grid, you can also:
@@ -90,6 +96,7 @@ From within the grid, you can also:
 .. note:: System fields (e.g. FIRSTNAME, LASTNAME) cannot be deleted.
 
 .. image:: ../../img/dotmailer_email_campaign/grid_data_fields.jpg
+   :alt: System fields cannot be deleted
 
 Sync Data Fields
 ~~~~~~~~~~~~~~~~
@@ -105,6 +112,7 @@ Data Field Mappings
 **Data Field Mappings** is available under **Marketing** in the main menu.
 
 .. image:: ../../img/dotmailer_email_campaign/data_field_mappings.jpg
+   :alt: Data field mappings
 
 Create a New Mapping
 ^^^^^^^^^^^^^^^^^^^^
@@ -127,10 +135,12 @@ A form will emerge with the following fields to fill in within the **General** s
 +-------------------+----------------------------------------------------------------------------------------------------------------------+
 
 .. image:: ../../img/dotmailer_email_campaign/data_field_mapping_form.jpg
+   :alt: The mapping configuration
 
 Configure your mapping in the **Mapping Configuration** section of the same page.
 
 .. image:: ../../img/dotmailer_email_campaign/data_field_mapping_example.jpg
+   :alt: The two way sync
 
 The **Two Way Sync** check box should be selected if you want to update application entities with data from dotmailer.
 
@@ -144,6 +154,7 @@ Once you have configured mapping, tracking of changes will be performed automati
 3. Click :guilabel:`Refresh Data Fields`.
 
 .. image:: ../../img/dotmailer_email_campaign/refresh_data_fields.jpg
+   :alt: Perform sync
 
 Related Articles
 ----------------
@@ -153,4 +164,3 @@ Related Articles
 - :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
 - :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`
 - :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
-
