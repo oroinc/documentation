@@ -23,9 +23,9 @@ In this topic you can find examples of expressions for automatic generation of p
 Example 1. Different Discounts Based on the Current Price
 ---------------------------------------------------------
 
-You have a group of 'golden' wholesale customers to whom you would like to offer the $1 discount for products that cost less than $10, and $2 discount for products that cost $10 and more.
+You have a group of 'golden' wholesale customers to whom you would like to offer the $1 discount for products that cost less than $10, and $2.5 discount for products that cost $10 and more.
 
-You have the standard price list Wholesale which you want to base a new price list on. The Wholesale ID is 2.
+You have the standard price list Wholesale which you want to base a new price list on. The Wholesale pricelist ID is 2.
 
 Then use the following expressions.
 
@@ -132,16 +132,12 @@ Price Calculation Rule
 
    product.msrp.value * 1.15
 
-
-where product.msrp.value * 1.15 = product.msrp.value * (1 - 15%).
-
 .. _price-rules--auto--examples--4:
 
 Example 4. MAP Price for all Featured Products in Certain Category
 ------------------------------------------------------------------
 
-You have decided to set the MAP price for all 'featured' products in category 'Office Furniture' (category ID is 7),
-
+You have decided to set the MAP (minimum advertised price) price attribute value for all 'featured' products price in category 'Office Furniture' (category ID is 7),
 
 Product Assignment
 ^^^^^^^^^^^^^^^^^^
@@ -149,14 +145,7 @@ Product Assignment
 .. code-block:: rst
    :linenos:
 
-   product.featured == true and product.category == 7
-
-
-.. hint::
-
-   You can also use product SKUs instead of IDs:
-
-   ``product.sku in ['1GS46','2TK59','8DO33','6VC22']``
+   product.featured == true and product.category.id == 7
 
 Price Calculation Rule
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -214,7 +203,7 @@ Product Assignment
 .. code-block:: rst
    :linenos:
 
-   product.brand != 5
+   product.brand.id != 5
 
 
 Price Calculation Rule
@@ -226,9 +215,6 @@ Price Calculation Rule
    :linenos:
 
    pricelist[1].prices.value * 0.9
-
-
-where 0.9 = 1 - 10%
 
 .. _price-rules--auto--examples--7:
 
@@ -255,4 +241,4 @@ And price rule that adds 10% to the list price:
 .. code-block:: rst
     :linenos:
 
-    product.msrp.value * 1.1
+    pricelist[1].prices.value * 1.1

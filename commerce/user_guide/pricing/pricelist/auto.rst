@@ -110,7 +110,7 @@ To automatically generate a price list in OroCommerce:
       | E      | Server  | no             | 5        | 30000      | **99** | item | USD      |
       +--------+---------+----------------+----------+------------+--------+------+----------+
 
-      To set to set the price (for one item in US dollars) to be 5 USD more than the target margin (custom property of the product), use the following expression:
+      To set the price (for one item in US dollars) to be 5 USD more than the target margin (custom property of the product category), use the following expression:
 
       .. code-block:: rst
            :linenos:

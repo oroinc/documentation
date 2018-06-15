@@ -122,4 +122,4 @@ To provide an optimized user experience on the storefront and in the store manag
 
 OroCommerce performs a non-resource-consuming part of price recalculation immediately after the price change is submitted by the user in the management console (e.g., when a user submits the product edit form, or adds a price via the price list management, or modifies price list priority on a customer edit page, etc.).
 
-The resource-consuming part of recalculation (e.g., when the price auto-calculation formula depends on the attribute of the item that is not directly related to the product) is deferred and happens on a schedule that is defined using the **Offset Of Processing CPL Prices** value in hours.
+The resource-consuming part of recalculation (e.g., when the price auto-calculation formula depends on the attribute of the item that is not directly related to the product) is deferred to eliminate unnecessary recalculations every time the price is updated and launch them only when the price is going to be used soon. The schedule of this recalculation is defined using the :ref:`Offset Of Processing CPL Prices <offset-of-processing-cpl-prices>` value in hours.
