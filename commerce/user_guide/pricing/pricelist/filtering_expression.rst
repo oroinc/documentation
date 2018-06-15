@@ -15,10 +15,9 @@ The filtering expression for the product assignment rule and the price calculati
 
       + **Category properties**: product.category.id, product.category.left, product.category.right, product.category.level, product.category.root, product.category.createdAt, and product.category.updatedAt
 
-      + **Price properties**: product.price.value, product.price.unit, product.price.quantity, and product.price.currency
-
       + Any **custom properties** added to the product entity (e.g. product.awesomeness), or to the product children entity (e.g. product.category.priority and product.price.season)
 
+  - **Price properties**: pricelist[N].prices.currency, pricelist[N].prices.productSku, pricelist[N].prices.quantity, and pricelist[N].prices.value, where `N` is the ID of the pricelist that the product belongs to.
 
   - **Relations** (for example, product.owner, product.organization, product.primaryUnitPrecision, product.category, and any virtual relations created in OroCommerce for entities of product and its children.
 

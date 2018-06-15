@@ -58,6 +58,8 @@ The **Pricing** page opens. It contains the following information:
 
      .. note:: Price lists with higher priority are on top.
 
+.. _offset-of-processing-cpl-prices:
+
    * **Offset Of Processing CPL Prices** --- An offset (in hours) from the scheduled price change that determines how early the price list recalculation and reindex should happen to prepare the actual prices in the OroCommerce storefront for the scheduled launch. Delayed recalculation helps spread resource-consuming tasks in time and launch them only when the price is going to be used soon. This eliminates unnecessary intermediate recalculation every time the price is updated between the time price list schedule is added and the time when recalculation is expected to start (considering the offset from the scheduled launch). If you update the price once a week, set the offset to 40 (hours). If you update prices more frequently, set the value that approximately matches the delay between the updates of the price information. It may be aligned with the data synchronization process between your OroCommerce and the external ERP system. For continuos price updates use the minimal recommended offset value of 0.083 (5 minutes).
 
    .. that should be sustained between the price recalculation for the prices with the resource consuming conditions (e.g. when the price auto-calculation formula depends on the attribute of the item that is not directly related to the product). The complex price recalculation is deferred and happens on schedule, in bulk, for all prices that are awaiting to be updated since the previous run.
