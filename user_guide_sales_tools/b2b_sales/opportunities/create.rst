@@ -27,7 +27,7 @@ It is possible to create opportunities from all related entities, such as Magent
 OroCommerce Customer
 ~~~~~~~~~~~~~~~~~~~~
 
-To create an opportunity from a Commerce customer view page, make sure you have OroCommerce and OroCRM integrated.
+To create an opportunity from a Commerce customer view page, make sure you have the CRM features enabled in the system configuration.
 
 -	Navigate to **Customers** in the main menu, click **Commerce Customers**.
 -	Select your customer and open their view page.

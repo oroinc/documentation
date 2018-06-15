@@ -11,7 +11,7 @@ Overview
 
 In order to save and process the details of commercial activity with people or businesses that have authority, budget and interest to purchase goods and/or services from you, for whom the probability of actual sales is not yet high or is impossible to define, use **Lead** records in OroCRM (“leads”). Essentially, leads are prospects or potential sales in a form of contact data. Initial agreement discussions, preliminary price requests or invitations for a bid may be examples of a lead.
 
-.. note:: See a short demo on `how to create and work with a lead <https://www.orocrm.com/media-library/create-work-lead>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on `how to create and work with a lead <https://oroinc.com/orocrm/media-library/create-work-lead>`_, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -230,7 +230,7 @@ Using Leads in Workflows
 ------------------------
 
 You can use
-OroCRM’s :term:`workflows <Workflow>` to define rules and guidelines on possible actions/updates of leads in the system. New customer-specific workflows can also be created, as described in the :ref:`Workflows guide <doc--workflows>`.
+OroCRM’s :term:`workflows <Workflow>` to define rules and guidelines on possible actions/updates of leads in the system. New customer-specific workflows can also be created, as described in the :ref:`Workflows guide <doc--system--workflow-management>`.
 
 .. BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle

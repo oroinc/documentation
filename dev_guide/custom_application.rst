@@ -86,7 +86,7 @@ Oro applications are :doc:`scalable <scale_nodes>`.
 Learn more
 ----------
 
-* :doc:`/install_upgrade/installation/index`
+* :doc:`/install_upgrade/installation_quick_start_dev/index`
 * :doc:`/dev_guide/getting_started_book/differences`
 * :doc:`customization`
 * :doc:`/dev_guide/cookbook/how_to_create_new_bundle`
@@ -103,4 +103,4 @@ Learn more
 .. _`Symfony Bundle System` : http://symfony.com/doc/2.8/bundles.html
 .. _`Symfony Application Deployment` : http://symfony.com/doc/2.8/deployment.html
 .. _`composer.lock` : https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-.. _`contact us` : https://www.orocrm.com/contact-us
+.. _`contact us` : https://www.oroinc.com/orocrm/contact-us

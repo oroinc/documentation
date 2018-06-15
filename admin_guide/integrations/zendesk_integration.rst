@@ -13,7 +13,7 @@ process it in OroCRM. This article describes how to define and edit the integrat
     While Zendesk integration capabilities are pre-implemented, OroCRM can be integrated with different third-party
     systems.
 
-.. note:: See a short demo on `how to setup Zendesk integration <https://www.orocrm.com/media-library/setup-zendesk-integration>`_, or continue reading the step-by-step guidance below.
+.. note:: See a short demo on `how to setup Zendesk integration <https://oroinc.com/orocrm/media-library/setup-zendesk-integration>`_, or continue reading the step-by-step guidance below.
 
    .. raw:: html
 

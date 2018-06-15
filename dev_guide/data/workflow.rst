@@ -16,7 +16,7 @@ A workflow ``step`` is a state of an entity record. It is represented by an inst
 
 The process of moving an entity from one step to another is called a ``transition``.
 
-Simple workflows can be created via the user interface. For more information on how to do it, see :ref:`Workflow Management <doc--workflows>`.
+Simple workflows can be created via the user interface. For more information on how to do it, see :ref:`Workflow Management <doc--system--workflow-management>`.
 
 This guide provides you with the basic assistance on how to create workflows by adding information into the configuration files. For more detailed information about the workflow configuration, see `Workflow Guide <https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md>`__ on GitHub.
 

@@ -9,18 +9,20 @@ Connect MS Outlook Add-in to Oro Instance
 During add-in installation you are required to provide integration settings to ensure correct work between applications:
 
 .. image:: /admin_guide/img/outlook/outlook_addin_settings.png
+   :alt: General outlook add-in settings available when configuring the integration between applications
 
 1. **OroCRM URL** --- Provide the URL of your instance:
  
    * If you are running a CRM application, copy the URL from the address bar. Alternatively, copy it from the **Application URL** field by navigating to **System > Configuration > System Configuration > General Setup > Application Settings** (e.g. demo.orocrm.com).
 
-   * If you are running a CRM+Commerce application, add **/admin** at the end of the URL. Otherwise, connection between the add-in and your Oro instance may fail (e.g. demo.orocommerce.com/admin).
+   * If you are running an OroCommerce application, add **/admin** at the end of the URL. Otherwise, connection between the add-in and your Oro instance may fail (e.g. demo.orocommerce.com/admin).
 
 2. **Ignore self-signed certificate** --- Check this box to allow connection to secure servers that use self-signed certificates. We recommend to keep this box checked at all times.
 
 3. **User** --- Provide the username defined on the **My User** page of your Oro instance.
 
    .. image:: /admin_guide/img/outlook/username.png
+      :alt: Demonstrating a path to the username defined on the my user page
 
 4. **API Key** --- Paste the API key generated in your Oro instance. 
 
@@ -33,10 +35,12 @@ During add-in installation you are required to provide integration settings to e
    * When **Disable Sync** is selected, synchronization has to be triggered manually. One way of doing this is by right-clicking on the Outlook add-in icon on the bottom right of your screen and clicking **Sync Now**. 
 
       .. image:: /admin_guide/img/outlook/sync_now.png
+         :alt: The sync now button displayed on the bottom right of your screen when right-clicking the outlook add-in icon
 
     Alternatively, start sync within your Outlook application by clicking the **ADD-INS** tab, and clicking **Sync Now** in the OroCRM for Outlook settings menu.
    
       .. image:: /admin_guide/img/outlook/sync_now_panel.png
+         :alt: The sync now button displayed in the orocrm for outlook settings menu
 
 6. **Sync Type** --- Select whether you wish to sync all or selected records.
 7. **Show Alerts** --- This check box controls whether alerts are displayed in the bottom panel next to the add-in icon:
@@ -54,9 +58,11 @@ During add-in installation you are required to provide integration settings to e
     When the add-in is installed, you see its icon displayed on the bottom right corner of your computer screen.
  
     .. image:: /admin_guide/img/outlook/addin_icon.png
+       :alt: The outlook add-in icon displayed on the bottom right corner of your computer screen
 
 .. note:: You can access the same settings after installation by clicking **Settings** in the **OroCRM for Outlook** menu under the **ADD-INS** tab in your Outlook application.
 
    .. image:: /admin_guide/img/outlook/crm_outlook_menu.png
+      :alt: The settings button displayed in the orocrm for outlook menu under the add-ins tab
 
 .. finish_connect_outlook

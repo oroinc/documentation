@@ -6,31 +6,32 @@ System Mailbox Settings
     :depth: 2
 
 
-See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+See a short demo on `how to create and configure system mailboxes <https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
 
 .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/2s3tWpyvdn8" frameborder="0" allowfullscreen></iframe>
 
-Configuration of system mailboxes
+Configuration of System Mailboxes
 ---------------------------------
 
 To create a system mailbox to process business information requests:
 
--  Navigate to **System** in the main menu, click :guilabel:`Configuration`.
+-  Navigate to **System** in the main menu, click **Configuration**.
 
--  Next, click :guilabel:`Email Configuration` on the left in the **General
+-  Next, click **Email Configuration** on the left in the **General
    Setup** menu.
 
 -  At the bottom of the page, you will see a section where you can
    create and configure a system mailbox.
 
--  Click :guilabel:`Add Mailbox` in the bottom right corner, as shown below:
+-  Click **Add Mailbox** in the bottom right corner, as shown below:
 
 
 .. begin
 
 .. image:: ../img/admin_emails/add_mailbox.jpg
+   :alt: Adding a new mailbox in the email configuration
 
 General
 ^^^^^^^
@@ -38,11 +39,12 @@ General
 The **General section** defines the basic settings of the mailbox
 created:
 
--  Define a name of your Mailbox in the **Mailbox Label** field.
+-  Define a name of your mailbox in the **Mailbox Label** field.
 
 -  Type in your email address.
 
 .. image:: ../img/admin_emails/create_mailbox.jpg
+   :alt: Creating a new mailbox in the email configuration
 
 Synchronization
 ^^^^^^^^^^^^^^^
@@ -59,13 +61,13 @@ In the **Synchronization** section, configure your IMAP/SMTP connection:
 
 -  Specify the **login username** and **password** for this mailbox.
 
--  Once the credentials and configuration fields are filled in, click
-   the :guilabel:`Check Connection/Retrieve Folders` button. After successful
+-  Once the credentials and configuration fields are filled in, click **Check Connection/Retrieve Folders**. After successful
    connection, a list of available folders will be displayed.
 
 -  Check the **Folders** to be synchronized.
 
 .. image:: ../img/admin_emails/imap_smtp.jpg
+   :alt: Synchronization configuration options in the email configuration
 
 Email Processing
 ^^^^^^^^^^^^^^^^
@@ -91,6 +93,7 @@ business's unique requirements.
    based on the email received.
 
 .. image:: ../img/admin_emails/email_processing.jpg
+   :alt: Selecting an action for processing the emails received in the mailbox
 
 As an example, let us select the **Convert To Lead** option:
 
@@ -98,13 +101,15 @@ As an example, let us select the **Convert To Lead** option:
    records and choose the source of your leads in the **Source** field.
 
 .. image:: ../img/admin_emails/email_processing_2.jpg
+   :alt: Selecting an owner and a source for processing the emails when the action is set to `convert to lead`
 
 .. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System>Entities>Entity Management>Lead>Source**.
 
-
 .. image:: ../img/admin_emails/lead_source.jpg
+   :alt: A list of the entity management fields
 
 .. image:: ../img/admin_emails/lead_source_field.jpg
+   :alt: Creating a source entity from the entity management menu
 
 Access Management
 ^^^^^^^^^^^^^^^^^
@@ -115,6 +120,7 @@ users. All the users with defined roles and all the specifically defined
 users will have access to this mailbox.
 
 .. image:: ../img/admin_emails/access_management.jpg
+   :alt: Selecting the users who will have access to the system mailbox
 
 Autoresponse Rules
 ^^^^^^^^^^^^^^^^^^
@@ -123,11 +129,12 @@ In the **Autoresponse Rules** section you can generate one or several
 auto-response rules. These rules will determine which template is sent
 to the sender of the email.
 
--  Click :guilabel:`Add Rule` to add a new Autoresponse rule.
+-  Click **Add Rule** to add a new autoresponse rule.
 
--  An Add Autoresponse Rule form will open.
+-  An Add Autoresponse Rule form opens.
 
 .. image:: ../img/admin_emails/autoresponse.jpg
+   :alt: Sample autoresponse rule form
 
 -  Define the following settings:
 
@@ -157,6 +164,6 @@ to the sender of the email.
 | **Save Response As Email Template** | Checking the box automatically saves the current email as a template.                                               |
 +-------------------------------------+---------------------------------------------------------------------------------------------------------------------+
 
--  Click :guilabel:`Add` to save the rule.
+-  Click **Add** to save the rule.
    
 .. finish

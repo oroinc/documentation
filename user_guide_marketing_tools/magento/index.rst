@@ -71,5 +71,5 @@ The relevant :ref:`Abandoned Cart Campaigns guide <user-guide-acc>` will take yo
    sending_abandoned_cart_campaigns
    magento_web_tracking
    magento_newsletter_subs
-   rfm_user
+   rfm_user/index
 

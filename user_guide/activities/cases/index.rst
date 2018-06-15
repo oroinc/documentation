@@ -9,7 +9,7 @@ OroCRM also provides an out-of-box integration with the :ref:`Zendesk <user-guid
 
 In the sections below, you will learn how to create cases in Oro and manage them through their life cycles. 
 
-Before proceeding to the step-by-step guidance, have a look at a short demo on `how to create and manage cases in your Oro application <https://www.orocrm.com/media-library/create-manage-cases-orocrm>`_.
+Before proceeding to the step-by-step guidance, have a look at a short demo on `how to create and manage cases in your Oro application <https://oroinc.com/orocrm/media-library/create-manage-cases-orocrm>`_.
 
 .. raw:: html
 

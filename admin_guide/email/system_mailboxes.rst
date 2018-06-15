@@ -11,7 +11,7 @@ You can define and modify the list of OroCRM users who have access to each of th
 letters into cases or leads, and set-up auto-responses.
 
 .. note::
-   See a short demo on `how to create and configure system mailboxes <https://www.orocrm.com/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+   See a short demo on `how to create and configure system mailboxes <https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -21,10 +21,11 @@ Create System Mailbox
 ---------------------
 
 .. image:: ../img/system_mailbox/new_mb.png
+   :alt: System mailbox configuration options
 
-- Go to *System → SYSTEM CONFIGURATION → General Setup → Email Configuration*
-- Click the :guilabel:`Add Mailbox` button in the System Mailboxes sections
-- Define the mailbox settings, as described in the sections below
+- Navigate to **System > System Configuration > General Setup > Email Configuration**
+- Click **Add Mailbox** in the System Mailboxes sections
+- Define the mailbox settings as described in the sections below
 
 General
 ^^^^^^^
@@ -45,7 +46,7 @@ Synchronization
 - Let OroCRM know the details of IMAP (incoming mail) and/or SMTP (outgoing mail) connection for the mailbox, 
   such as host, port, and encryption, and specify the login (user) and password used to access the mailbox.
   
-- Click the :guilabel:`Check Connection/Retrieve Folders` 
+- Click **Check Connection/Retrieve Folders**
 
 - After successful connection, the list of available folders will be loaded. Check the Folders to be synchronized.
 
@@ -61,7 +62,8 @@ In the example below, synchronization has been done for a .gmail mailbox. The IN
     `Allow access for less secure apps box <https://support.google.com/accounts/answer/6010255?hl=en>`_
 
 
-.. image:: ../img/system_mailbox/synchronize_mb.png 
+.. image:: ../img/system_mailbox/synchronize_mb.png
+   :alt: An example of synchronization for a gmail mailbox
 
 	
 Email Processing
@@ -98,11 +100,12 @@ Autoresponse Rules
 You can generate one or several auto-response rules upon which response emails will be generated and sent back to the 
 senders of all the letters in the mailbox that meet predefined criteria.
 
-To create a rule, click the :guilabel:`Add Rule`
+To create a rule, click **Add Rule**.
 
 "Add Autoresponse Rule" form will appear.
 
-.. image:: ../img/system_mailbox/ar_rule.png 
+.. image:: ../img/system_mailbox/ar_rule.png
+   :alt: A sample of an autoresponse rule form
 
 Define the following settings for the rule:
 
@@ -119,8 +122,7 @@ Define the following settings for the rule:
   - In the field  besides the selectors, define the values where required (e.g. for conditions contain/doesn't contain/
     is any of, etc.)
   
-  Click the :guilabel:`+` or :guilabel:`+Add` button to add another condition for the rule.  Click the :guilabel:`x` 
-  button to remove the condition All the conditions are summed up (AND operator).
+  Click the **+** or **+Add** button to add another condition for the rule.  Click the **x** button to remove the condition All the conditions are summed up (AND operator).
   
   .. hint::
   
@@ -141,7 +143,7 @@ All the rules of a mailbox can be viewed and processed from the "Autoresponse Ru
 :ref:`grid <doc-grids>` in the corresponding section of the System Mailbox record page.
 
 .. image:: ../img/system_mailbox/ar_rule.png   
-
+   :alt: Sample autoresponse rule form
   
 Final Steps
 ^^^^^^^^^^^ 
@@ -152,3 +154,4 @@ All the system mailboxes can be viewed and processed from the "System Mailboxes"
 :ref:`grid <doc-grids>` in the corresponding section of the Email Configuration page.
 
 .. image:: ../img/system_mailbox/system_mb_grid.png
+   :alt: A list of system mailboxes with available options to edit and delete

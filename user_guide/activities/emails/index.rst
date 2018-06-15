@@ -12,7 +12,7 @@ Oro also provides a feature of auto-assignment to contact, thanks to which new e
 
 OroCRM Enterprise Edition also supports integration with Microsoft Exchange Server and Outlook.
 
-See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_, or keep reading for the step-by-step guidance.
+See a short demo on `how to create and manage emails <https://oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_, or keep reading for the step-by-step guidance.
 
 .. raw:: html
 

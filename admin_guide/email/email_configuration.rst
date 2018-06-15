@@ -10,7 +10,7 @@ The following guide will introduce you to the email settings and
 provide instructions on how to configure personal and system mailboxes,
 and integrate with Google, MS Exchange and Outlook.
 
-.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://www.orocrm.com/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on `how to create and manage emails <https://oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://oroinc.com/orocrm/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -21,14 +21,15 @@ To reach **Email Configuration** page:
 -  Navigate to **System** in the main menu, click **Configuration**.
 
 .. image:: ../img/admin_emails/system_config.jpg
+   :alt: Demonstrating a path to the system configuration menu
+
+-  In the left menu, select **System Configuration > General Setup > Email Configuration**.
 
 .. image:: ../img/admin_emails/email_config_1.jpg
+   :alt: Demonstrating a path to the email configuration menu
 
--  In the left menu, select **System Configuration>General Setup>Email
-   Configuration**.
 
-On the **Email Configuration** page, you can define options applied to
-all the emails generated within the instance.
+On the **Email Configuration** page, you can define options applied to all the emails generated within the instance.
 
 The following settings are available:
 
@@ -46,10 +47,13 @@ The following settings are available:
 +-------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: ../img/configuration/threads_settings.png
+   :alt: Selecting email threads options in the email configuration
 
 .. image:: ../img/admin_emails/threaded_email_activities.jpg
+   :alt: A sample of an email with the threaded option selected
 
 .. image:: ../img/admin_emails/non_threaded_activities.jpg
+   :alt: A sample of an email with the non-threaded option selected
 
 .. csv-table::
   :header: "Field", "Description"
@@ -58,6 +62,7 @@ The following settings are available:
   **Reply**,"This field defines which button will be displayed as the default one: **Reply** button is available by default with the **Forward ** and ** Reply** **all** options in its dropdown. The settings can be changed to have **Reply all** shown at the top. "
   
 .. image:: ../img/admin_emails/reply.jpg
+   :alt: Selecting the default reply option
 
 .. csv-table::
   :header: "Field", "Description"
@@ -87,26 +92,17 @@ Accessing personal mailbox configurations
 
 To configure a personal mailbox:
 
--  Navigate to **My User>My Configuration** in the top right corner.
+-  Navigate to **My User > My Configuration** in the top right corner.
 
--  Click :guilabel:`Email Configuration` in the **General Setup** tab on the
-   left.
+-  Click **Email Configuration** in the **General Setup** tab on the left.
 
 -  This will load an email configuration page.
 
 .. image:: ../img/admin_emails/my_user_my_config.jpg
-
-|
-
-|
+   :alt: Demonstrating a path to the user configuration menu
 
 .. image:: ../img/admin_emails/personal_email_config.jpg
-
-|
-
-
-
-
+   :alt: Demonstrating a path to the email configuration of the user
 
 Configuring IMAP/SMPT 
 ^^^^^^^^^^^^^^^^^^^^^
@@ -121,12 +117,11 @@ To retrieve your mail from a mail client and sync data into OroCRM, as
 well as synchronize emails sent from OroCRM into your mailbox (so you
 can see them in other email clients):
 
--  Check :guilabel:`Enable IMAP and Enable SMTP.`
+-  Check **Enable IMAP and Enable SMTP**.
 
--  Fill in the following fields: **IMAP and SMTP Host, IMAP and SMTP
-   Port, Encryption (SSL, TLS)**.
+-  Fill in the following fields: **IMAP and SMTP Host, IMAP and SMTP Port, Encryption (SSL, TLS)**.
 
--  Click :guilabel:`Check Connection/Retrieve Folders.`
+-  Click **Check Connection/Retrieve Folders**.
 
 -  After successful connection, a list of folders will be loaded.
 
@@ -134,14 +129,10 @@ can see them in other email clients):
 
 As an example, we have synchronized a Gmail mailbox with OroCRM, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found `here <https://support.google.com/mail/answer/7126229?hl=en&rd=2&visit_id=1-636180891016092253-2149088408#ts=1665018%2C1665144>`_  `and here <https://support.google.com/accounts/answer/6010255?hl=en>`_
 
-|
-
 .. image:: ../img/admin_emails/personabox_imap_smtp.jpg
+   :alt: Email synchronization settings configuration on the user level
 
-|
-
-
--  Click :guilabel:`Save Settings` in the top right corner to save your configurations.
+-  Click **Save Settings** in the top right corner to save your configurations.
 
 Google integration 
 -------------------
@@ -149,21 +140,16 @@ Google integration
 The only integration available in the community edition by default is
 integration with Google:
 
--  Navigate to **System** in the main menu and click :guilabel:`Configuration`.
+-  Navigate to **System** in the main menu and click **Configuration**.
 
--  In the left menu, click :guilabel:`Integrations>Google Settings`.
+-  In the left menu, click **Integrations > Google Settings**.
 
 Here, you can define the details used for Google single sign-on which
 allows a user with the same Google account email address and OroCRM
 primary email address to log-in only once in the session.
 
-|
-
 .. image:: ../img/admin_emails/google_sign_on.jpg
-
-|
-
-
+   :alt: Configuration of the google settings options
 
 See how to configure Google Sign-on integration in the :ref:`Google Integration guide <user-guide-google-single-sign-on>`.
 
@@ -177,51 +163,38 @@ can be automatically uploaded to OroCRM.
 This functionality enables using a single system-wide setting to collect
 letters of multiple users within organization.
 
-
-|
-
 .. image:: ../img/admin_emails/ms_exchange.png
-
-|
-
+   :alt: Selecting an ms exchange server to be uploaded to orocrm in the email settings menu
 
 
-The integration set-up is described in the
-relevant :ref:`MS Exchange guide <admin-configuration-ms-exchange>`.
+The integration set-up is described in the relevant :ref:`MS Exchange guide <admin-configuration-ms-exchange>`.
 
 Microsoft Outlook Integration
 -----------------------------
 
-Integration with Microsoft Outlook is available for the OroCRM
-Enterprise Edition only. 
-
-|
+Integration with Microsoft Outlook is available for the OroCRM Enterprise Edition only.
 
 .. image:: ../img/admin_emails/ms_outlook.jpg
+   :alt: Configuration of the ms outlook integration and synchronization settings
 
-|
-
-The integration allows automatic
-synchronization of all the contacts. Tasks and calendar events available
-for the user can be synchronized with the specified Outlook account and
+The integration allows automatic synchronization of all the contacts. Tasks and calendar events available for the user can be synchronized with the specified Outlook account and
 vice versa. The integration set-up is described in the relevant :ref:`Outlook Integration guide <user-guide-synch-outlook>`.
 
 .. note:: Please note emails are not synced in the course of Outlook integration. For that, please, refer to `Standard personal mailbox configuration (IMAP/SMTP)`_ section.
 
-Configuration of system mailboxes
+Configuration of System Mailboxes
 ---------------------------------
 
 To create a system mailbox to process business information requests:
 
--  Navigate to **System** in the main menu, click :guilabel:`Configuration`.
+-  Navigate to **System** in the main menu, click **Configuration**.
 
--  Next, click :guilabel:`Email Configuration` on the left in the **General
-   Setup** menu.
+-  Next, click **Email Configuration** on the left in the **General Setup** menu.
 
 -  At the bottom of the page, you will see a section where you can
    create and configure a system mailbox.
 
--  Click :guilabel:`Add Mailbox` in the right bottom corner, as shown below:
+-  Click **Add Mailbox** in the right bottom corner, as shown below:
 
 .. include:: system_mailbox_settings.rst
    :start-after: begin

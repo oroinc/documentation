@@ -15,7 +15,7 @@ This guide describes how to create and manage email template records.
 Create Email Templates
 ----------------------
 
-1. In the main menu, navigate **System>Emails>Templates**, and click the :guilabel:`Create Template` button in the upper-right corner of the page.
+1. In the main menu, navigate **System>Emails>Templates**, and click the **Create Template** button in the upper-right corner of the page.
    
   |email_template_create|
 
@@ -36,43 +36,45 @@ Create Email Templates
    .. important::
       If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the **Entity Name** field value should be **Email**.
 
-3. Define the email template. Click on the necessary variable to add drag it to the text box. 
+3. Define the email template. Click on the necessary variable to add it to the text box.
 
    .. image:: ../img/marketing/email_template_ex.png
+      :alt: A sample of an email template
 
    .. note:: In the example below, the template contains a link to the website page composed with a piece of :ref:`tracking code <user-guide-how-to-track>`. Every time a user follows the link, visit event will be tracked for the campaign.
 
-4. You can click :guilabel:`Preview` button to check your template.
+4. You can click **Preview** to check your template.
 
 .. image:: ../img/marketing/email_template_preview.png
+   :alt: Preview of an email template
 
-5. If you are satisfied with the preview, click the :guilabel:`Save` button in the upper-right corner of
-   the page.
+5. If you are satisfied with the preview, click the **Save** button in the upper-right corner of the page.
 
    
 Email Template Languages
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-If :ref:`several languages have been enabled <admin-configuration-language-settings>` for the email templates, move from tab to 
-tab, to define the template in different languages.
+If :ref:`several languages have been enabled <sys--config--sysconfig--general-setup--language-settings>` for the email templates, move from tab to
+tab to define the template in different languages.
 
 .. image:: ../img/marketing/email_template_language.png
+   :alt: Navigating from one language tab to another
 
 .. _user-guide-email-templates-actions:
 
 Manage Email Templates
 ----------------------
 
-The following actions are available for an email template from
-the :ref:`grid <doc-grids>`:
+The following actions are available for an email template from the list:
 
 .. image:: ../img/marketing/email_template_actions.png
+   :alt: View a list of templates with three options available: edit, clone, delete
 
-- Delete the template from the system: click the |IcDelete| **Delete** icon.
+- Click |IcDelete| to delete the template from the system.
 
-- Get to the :ref:`edit page <user-guide-ui-components-create-pages>` form of the template: click the |IcEdit| **Edit** icon.
+- Click |IcEdit| to get to the :ref:`edit page <user-guide-ui-components-create-pages>` of the template.
 
-- Clone the template: click the |IcClone| **Clone** icon.
+- Click |IcClone| to clone the template.
 
   You can edit the template details and save a new (cloned and edited) template.  
 

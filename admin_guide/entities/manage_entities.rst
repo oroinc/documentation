@@ -34,7 +34,8 @@ To edit an entity:
    - **Applicable Organizations** --- Select in which organizations this entity will be available. The default value is **All**. To specify a particular organization, clear the **All** check box and click the field that appears to choose the organization from the list.     
  
    .. image:: ../img/entity_management/entity_edit.png
-       
+      :alt: Additional fields available in the other section when editing an entity
+
 4. Click **Save And Close**.
 
 Delete an Entity
@@ -46,6 +47,7 @@ You can delete only custom entities that have no records. To delete such entitie
 2. In the grid on the **All Entities** page, choose the entity you want to delete, click the ellipsis menu at the right end of the corresponding role and then click the |IcDelete| **Delete** icon.
 
    .. image:: ../img/entity_management/entity_delete1.png
+      :alt: The delete button displayed in the ellipsis menu on the all entities page
 
 3. In the **Deletion Confirmation** dialog box, click **Yes**.
 4. Reload the page when you see the notification about item deletion. 
@@ -100,6 +102,7 @@ To manage unique keys:
 6. If you need to add another set, repeat steps 4–5.
    
    .. image:: ../img/entity_management/entity_manageuniquekeys.png
+      :alt: Specifying a name and a key in the unique keys section
   
 7. If you need to delete a set, click the **x** icon next to the set name. 
 8. Click **Save**.      

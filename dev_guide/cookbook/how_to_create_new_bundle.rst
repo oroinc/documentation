@@ -128,7 +128,7 @@ References
 * `Symfony Framework Events`_
 
 .. _Symfony Best Practices for Structuring Bundles: http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html
-.. _Generating a New Bundle Skeleton: http://symfony.com/doc/2.3/bundles/SensioGeneratorBundle/commands/generate_bundle.html
+.. _Generating a New Bundle Skeleton: http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/commands/generate_bundle.html
 .. _Symfony Framework Events: http://symfony.com/doc/2.3/reference/events.html
 
 
