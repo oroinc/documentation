@@ -61,7 +61,7 @@ peculiarities of the list in the future.
 Custom fields may be added subject to specific business needs.
 
 .. image:: ../../img/marketing/list_general_details_ex.png
-   :alt: Custom field
+   :alt: General settings of the marketing list details page.
 
 
 .. _user-guide-marketing-marketing-list-create-filters:
@@ -81,7 +81,7 @@ Columns
 ^^^^^^^
 
 .. image:: ../../img/marketing/list_columns.png
-   :alt: The set of fields
+   :alt: Add columns to the marketing list to display relevant filtered data
 
 In the **Columns** section, define the set of fields.
 The only goal of this set of fields is to visualise records that meet the filter requirements.
@@ -108,7 +108,7 @@ Marketing List.
 - Click :guilabel:`Add`.
 
 .. image:: ../../img/marketing/list_columns_ex.png
-   :alt: Click add in the columns
+   :alt: An example of several columns added to the marketing list, including contact information
 
 Use action icons in the last column to edit the grid:
 
@@ -200,7 +200,7 @@ As soon as at least one item has been deleted from the marketing list, it is mov
 
 
 .. image:: ../../img/marketing/ml_removed_items.png
-   :alt: Marketing list grid
+   :alt: Removed items section of the marketing list page
 
 
 

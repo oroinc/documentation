@@ -11,7 +11,7 @@ Flow
 ----
 
 .. image:: ../../img/dotmailer_email_campaign/oro_dotmailer_integration.jpg
-   :alt: Flow
+   :alt: The diagram illustrating the flow of sending a dotmailer campaign with the help of Oro application
 
 Prepare Data for the Campaign in OroCRM
 ---------------------------------------
@@ -147,17 +147,17 @@ side. It is time to create a new email campaign via dotmailer:
 1.  Hover over the **Campaigns** menu in your dotmailer account and select **New Campaign**.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_select_new_campaign.jpg
-       :alt: New campaign in the campaigns menu
+       :alt: Creating a new campaign by clicking new campaign in the campaigns menu in dotmailer
 
 2.  Pick a template for your email campaign.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_pick_campaign_template.jpg
-       :alt: Pick a template
+       :alt: Selecting a template for the email campaign on the dotmailer side
 
 3.  Give your campaign a name and click :guilabel:`Continue`.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_name_campaign.jpg
-       :alt: Give campaign a name form
+       :alt: A dialog window prompting to provide a name for the campaign in dotmailer
 
 4.  On the next page, complete the following fields:
 
@@ -180,7 +180,7 @@ side. It is time to create a new email campaign via dotmailer:
     It is possible to prefix the recipient’s name with the data stored in OroCRM. You can do this by clicking on the icon above the field (as shown in the screenshot) and selecting the personalization option that suits you best from the dropdown menu.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_create_campaign-crop_highlights.jpg
-       :alt: Two fields are available for the personalization
+       :alt: An example of selecting personalization options in dotmailer
 
 6.  Click **Save and Continue** when you are done. You will be redirected to the **Test and Proof Your Email** page.
 
@@ -209,10 +209,10 @@ side. It is time to create a new email campaign via dotmailer:
 11.  Click **Confirm** to confirm sending.
 
      .. image:: ../../img/dotmailer_email_campaign/dotmailer_create_campaign_2.jpg
-        :alt: Click save and continue
+        :alt: Example of the campaign builder
 
      .. image:: ../../img/dotmailer_email_campaign/dotmailer_confirm_send.jpg
-        :alt: Click confirm
+        :alt: Click confirm to send the email campaign in dotmailer
 
 
 Check Statistics for Your Campaign
@@ -235,7 +235,7 @@ contact define the number of times an action has been performed, e.g. 2
 opens, 1 click, 1 unsubscribe.
 
 .. image:: ../../img/dotmailer_email_campaign/oro_statistics_email_campaign_dotmailer.jpg
-   :alt: Receive campaign statistics
+   :alt: Email campaign statistics displayed o the details page of this campaign in the Oro application
 
 These statistics will help you understand the outcome of your campaign
 and let you filter contacts for the next one.
@@ -250,7 +250,7 @@ In the **Filters** section:
 4.	When you are done, click :guilabel:`Save and Close`.
 
    .. image:: ../../img/dotmailer_email_campaign/oro_statistics_general_opens.jpg
-      :alt: Click save fnd close in marketing list
+      :alt: Example of using email campaign statistics results to create a new marketing list
 
 
 This list will now appear in the marketing list page and will contain all contacts who have opened your previous emails.

@@ -27,7 +27,7 @@ General
 ^^^^^^^
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_1.png
-   :alt: General information
+   :alt: Providing general details when creating a new custom report
 
 The following fields are mandatory and **must** be defined for a report:
 
@@ -52,7 +52,7 @@ Designer
 In the **Designer** section, you can define the structure of your report.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_2.png
-   :alt: Designer of your report
+   :alt: Defining the structure of the report in the designer section
 
 There are four main subsections that help you build your report:
 
