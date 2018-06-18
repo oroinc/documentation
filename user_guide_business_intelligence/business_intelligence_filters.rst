@@ -69,14 +69,14 @@ To define a field condition:
 3. A list of fields appears. At the top of the list, you can see the name of the field, for which the records are filtered. (In the example below it is a Contact). Below the Contact name, there is a list of all available fields related to it.
 
   .. image:: /user_guide/img/business_intelligence/filters_4.png
-     :alt: Appears the list of fields
+     :alt: Example of the list of fields filtered for a contact
 
 4. Select a field that you want to apply for the rule:
 
   - This can be a field of the entity selected in the **General** section. For example, we can filter Contact records by gender.
 
   .. image:: /user_guide/img/business_intelligence/filters_5.png
-     :alt: Select a field that you want to apply for the rule
+     :alt: An example of filtering records by gender
 
   - You can also select a field of another entity, related to it. For example, if you want the list to contain only Contacts with addresses in California.
 
@@ -100,7 +100,7 @@ To define a field condition:
     Once you have specified all the required conditions, another default field condition appears. Some components of this field contain links with a list of possible values suitable for the specified field.
 
     .. image:: /user_guide/img/business_intelligence/filters_9.png
-      :alt: Another default field condition appears
+      :alt: An example of an additional condition field
 
 .. _user-guide--business-intelligence--filters-activity:
 
@@ -118,7 +118,7 @@ To define the activity settings:
   - *Has activity /has not activity* - only the records to which the defined activity has/has not been assigned will be selected.
 
     .. image:: /user_guide/img/business_intelligence/filters_10.png
-       :alt: Only the records to which the defined activity has / has not been assigned will be selected
+       :alt: The activity filter and its selectors
 
   - The List of available activities to filter by.
 
@@ -128,7 +128,7 @@ To define the activity settings:
   - *Choose a field*: select the field to filter by. For example, we will select only the records, for which a call was logged after July 1, 2015.
 
 .. image:: /user_guide/img/business_intelligence/filters_12.png
-   :alt: Select the field to filter
+   :alt: An example of using the activity filter
 
 .. _user-guide--business-intelligence--filters-data-audit:
 

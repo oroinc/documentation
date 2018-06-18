@@ -166,7 +166,7 @@ The header of each widget contains:
 The specified owner, date range and the `territory <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ (if available for the entity) are displayed at the bottom of the widget:
 
 .. image:: /user_guide/img/widgets/owner_date_terr_displayed.png
-   :alt: At the bottom of the widget is a specified owner, date range and the territory
+   :alt: View the specified owner, date range and the territory for a widget
 
 Adjust Widget Settings
 ^^^^^^^^^^^^^^^^^^^^^^

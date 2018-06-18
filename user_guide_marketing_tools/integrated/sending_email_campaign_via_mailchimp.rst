@@ -1,7 +1,7 @@
 .. _user-guide-mailchimp-campaign:
 
 
-Sending Email Campaign via MailChimp 
+Sending Email Campaign via MailChimp
 ====================================
 
 .. contents:: :local:
@@ -11,13 +11,14 @@ Flow
 ----
 
 .. image:: ../../img/mc_email_campaign/oro_mc_integration.jpg
+   :alt: Sending email campaign via mailchimp
 
 
 Prepare Data for the Campaign in OroCRM
 ---------------------------------------
 
 Email campaign is based on data in marketing lists. In order to
-prepare a campaign in OroCRM, you need to create a :ref:`Marketing List<user-guide-marketing-lists>` first. 
+prepare a campaign in OroCRM, you need to create a :ref:`Marketing List<user-guide-marketing-lists>` first.
 
 This list will create a segment on the MailChimp side. Go to
 **Marketing>Marketing Lists>Create Marketing List.**
@@ -43,6 +44,7 @@ You need to complete the following fields to create your marketing list:
 Note that adding an Email column is vital to be able to send an email campaign via MailChimp.
 
 .. image:: ../../img/mc_email_campaign/o_marketing_list_email.jpg
+   :alt: Add email field to the columns
 
 Click **Save and Close** when you are finished.
 
@@ -53,6 +55,7 @@ Now it is time to create a list on the MailChimp side. Login to your
 MailChimp account. Click on **Lists** in the menu above.
 
 .. image:: ../../img/mc_email_campaign/mc_create_list.jpg
+   :alt: Click create list in the lists
 
 A page will open with the following fields to fill in:
 
@@ -109,6 +112,7 @@ You can map contents of OroCRM marketing list to use a segment of the
 -  Press **Connect.**
 
 .. image:: ../../img/mc_email_campaign/o_select_mc_subscribers_list2.jpg
+   :alt: "Connect to mailchimp" form
 
 Once you are connected, you will also notice a MailChimp button appear
 at the top with the following actions in the dropdown:
@@ -132,11 +136,13 @@ specified when creating a list on the OroCRM side, such as dates of
 birth or custom details, will not be synced.
 
 .. image:: ../../img/mc_email_campaign/mc_test_list2.jpg
+   :alt: Columns that will be synced
 
 Create and Send Campaign on the MailChimp Side
 ----------------------------------------------
 
 .. image:: ../../img/mc_email_campaign/mc_create_campaign.jpg
+   :alt: Create and send campaign on the mailchimp side
 
 Now that you have configured integration with MailChimp and created a
 marketing list, it is time to create and send campaign on the MailChimp
@@ -157,6 +163,7 @@ select. You can choose one of the following:
 -  RSS Campaign
 
 .. image:: ../../img/mc_email_campaign/mc_select_campaign.jpg
+   :alt: Select a type of campaign to send in the campaign builder
 
 .. note:: Please note that OroCRM is unable to receive email campaigns from segments used in automation programs.
 
@@ -165,6 +172,7 @@ in your email campaign. Here we can select the list segment that we
 created before.
 
 .. image:: ../../img/mc_email_campaign/mc_sending_to_test_list2.jpg
+   :alt: Select the list segment
 
 When you have selected your list, go to the lower right corner and click
 **Next.** You will see the following options:
@@ -184,6 +192,7 @@ OroCRM side, will appear below. Just click on the list that you would
 like to use. Next, press the **Update Recipient Count** button.
 
 .. image:: ../../img/mc_email_campaign/mc_choose_segments.jpg
+   :alt: A list of segments, created on the OroCRM side
 
 **Pre-Built Segments** section of the same page allows you to choose
 contacts based on **Subscriber Engagement** (New Subscribers, Active
@@ -207,6 +216,7 @@ wish to promote your email in social media, select **Connect to
 Twitter** or **Connect to Facebook**.
 
 .. image:: ../../img/mc_email_campaign/mc_tracking.jpg
+   :alt: Tracking options
 
 To add relevance to your emails and to avoid spam filters, you can
 personalize emails in your campaign. To do that, check **Personalize the
@@ -217,6 +227,7 @@ specify merge tags for your recipients, i.e. \*\|FNAME\|\* or
 \*\|FNAME\|\* \*\|LNAME\|\*\ **.**
 
 .. image:: ../../img/mc_email_campaign/mc_campaign_Info.jpg
+   :alt: Check personalize the "to" field
 
 Once you are done, click **Next** in the lower right corner. You can
 also click on the links at the bottom of the page, they will redirect
@@ -226,6 +237,7 @@ Select a template among a pre-set number of campaign templates, or
 create your own.
 
 .. image:: ../../img/mc_email_campaign/mc_select_templates.jpg
+   :alt: Select a template among a pre-set number of campaign templates, or create your own
 
 When you have chosen the template that suits you best, go the next page
 and design your email following the instructions on the page.
@@ -250,8 +262,10 @@ Performance in Reports** on the same page. To do this manually, go to
 your newly created email campaign.
 
 .. image:: ../../img/mc_email_campaign/mc_campaign_in_queue.jpg
+   :alt: Click track performance in reports on the mailchimp side
 
 .. image:: ../../img/mc_email_campaign/mc_statistics.jpg
+   :alt: Halloween offers
 
 Receive Campaign Statistics on the OroCRM Side
 ----------------------------------------------
@@ -269,6 +283,7 @@ understand the outcome of your campaign and let you filter contacts for
 the next one.
 
 .. image:: ../../img/mc_email_campaign/o_email_campaign_info.jpg
+   :alt: Receive campaign statistics on the Oro application
 
 .. note:: Please note that sometimes Mailchimp's summary information may not match the OroCRM summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
 
@@ -292,6 +307,7 @@ In the :ref:`Filters<user-guide-filters-management>` section:
 -  Select **Field Value.** In our case, it is 0.
 
 .. image:: ../../img/mc_email_campaign/o_segment_opens_zero.jpg
+   :alt: Select field value in filters
 
 The same way you can apply any conditions of your choice.
 

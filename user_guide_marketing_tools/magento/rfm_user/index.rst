@@ -92,11 +92,11 @@ customers the following way:
 
 .. hint::
 	-  Define the same number of ranks for each parameter (this is a traditional approach).
-	
+
 	-  Do not define too many ranks. Segments must be large enough to be statistically valid, therefore 3–5 ranks usually bring the most sensible results. However, if you have a great number of customers, you may need to use more ranks.
-	
+
 	-  Use data analysis methods, such as calculating the percentiles, to correctly identify segment thresholds.
-	
+
 	-  Make sure that segments do not intersect.
 
 In OroCRM, this step is performed by the system administrator and is described in the :ref:`Configure RFM <doc-rfm-admin>` guide.
@@ -165,6 +165,7 @@ as soon as new data appears in the system.
 3. Filter data by the recency and frequency values (the combined filter should have the following values: ``Recency >= 4 AND Frequency <=3``).
 
  .. image:: /admin_guide/img/rfm/rfm_segment-norecentactivity.png
+    :alt: Churn candidates segment
 
 When you decide to start reactivation campaign and begin creating a marketing list, specify that you want to include only customers belonging to a particular segment into it. To do this, use the **Apply Segment** filter on the marketing list creation form.
 
@@ -178,6 +179,7 @@ Another useful segment includes your best customers. Assuming you consider those
 
 
 .. image:: /admin_guide/img/rfm/rfm_segment-topcustomers.png
+   :alt: Top customers segment
 
 
 Create a Marketing List Based on RFM Metrics
@@ -202,12 +204,14 @@ To create such marketing list, do as follows:
 
 
 .. image:: /admin_guide/img/rfm/rfm_marketinglist-topcustomers.png
+   :alt: Select field values in filters
 
 
 To simplify creation of the marketing list, you can filter data using a predefined segment. Assuming that you have created the "Top customers" segment as described in the `Example 2. Top customers segment <./rfm-user#example2-top-customers-segment>`__ , in step 3, instead of applying individual filters to recency, frequency and monetary values, use the **Apply Segment** filter and select the "Top customers" segment for it.
 
 
 .. image:: /admin_guide/img/rfm/rfm_marketinglist-topcustomers_sgmnt.png
+   :alt: Use the Apply Segment filter and select the “top customers” segment for it
 
 
 For more details about marketing lists and their creation, please see the `Marketing Lists <../../user-guide-role-based/marketing-tools/marketing-lists>`__ guide.
@@ -232,9 +236,11 @@ order.
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-cell.png
+   :alt: Select RFM metrics and the customers’ identifiers as the report columns to a simple report
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-cell2.png
+   :alt: The list of customers
 
 
 
@@ -251,9 +257,11 @@ Let us assume, you have created the corresponding "Top customers" segment in adv
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-topcustomers_sgmnt.png
-  
+   :alt: Use the apply segment in the filters
+
 
 .. image:: /admin_guide/img/rfm/rfm_report-topcustomers_sgmnt2.png
+   :alt: The “top customers” list
 
 
 For more details about reports and their creation, please see the :ref:`Reports <user-guide-reports>` topic.
@@ -272,15 +280,16 @@ Review RFM Metrics for a Customer
 2. You can see the RFM cell under the customer name in the top right corner of the page.
 
 .. image:: /admin_guide/img/rfm/rfm_cusomerview.png
+   :alt: Review RFM metrics for a customer
 
-  
+
 
 
 Review the RFM Metrics for a Customer from an Account View
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Open the account view:
-   
+
     a. Navigate to **Customers > Accounts** in the main menu.
 
     b. Click on the required account from the list.
@@ -294,6 +303,7 @@ Review the RFM Metrics for a Customer from an Account View
 
 
 .. image:: /admin_guide/img/rfm/rfm_accountview.png
+   :alt: Magneto channel in the oro application
 
 
 .. Important::
@@ -310,14 +320,14 @@ Review the RFM Metrics for a Customer from an Account View
 	-  RFM segments are defined per channel, thus customers of each channel are likely to be segmented based on different thresholds.
 
 	-  Order history data differs for each channel.
-	
+
 
   .. image:: /admin_guide/img/rfm/rfm_accountview2.png
-  
+     :alt: Order history data differs for each channel
+
 .. toctree::
    :hidden:
    :titlesonly:
    :maxdepth: 1
 
    rfm_admin
-
