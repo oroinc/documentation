@@ -25,12 +25,12 @@ You can edit records in your application in three ways:
 2. By clicking  |IcEdit| **Edit** it in the ellipsis (or more options) menu located at the end of the row of the selected record in the :ref:`table <doc-grids>`.
 
    .. image:: /user_guide/img/getting_started/records/ellipsis_example.png
-      :alt: Edit it in the ellipsis in the table
+      :alt: The edit option in the ellipsis menu
 
 3. By opening the page of the selected record and clicking **Edit**.
 
    .. image:: /user_guide/img/getting_started/records/record_edit_button_example.png
-      :alt: Open the page of the selected record
+      :alt: Editing records from their details page
 
 .. _doc-grids-actions-records-edit-inline:
 
@@ -59,7 +59,7 @@ To edit a record using inline-editing:
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor2.png
-      :alt: The field can show just certain values
+      :alt: An example of a list values for a field when editing a record inline
 
 4. Click the |IcActivate| **Save Changes** icon to save a new value, or the |IcBan| **Discard Changes** icon to return to the old value.
 
@@ -73,10 +73,10 @@ Manage Records Using Ellipsis Menu
 Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_editrecord.png
-   :alt: Edit records
+   :alt: Edit records using the ellipsis menu
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_deleterecord.png
-   :alt: Delete records
+   :alt: Delete records using the ellipsis menu
 
 .. _user-guide--getting-started--mass-actions-management-console:
 .. _doc-grids-actions-records-delete-multiple:

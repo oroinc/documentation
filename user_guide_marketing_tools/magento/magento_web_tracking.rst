@@ -1,6 +1,6 @@
 .. _user-guide-magento-web-tracking:
 
-Magento Web Tracking 
+Magento Web Tracking
 ====================
 
 .. contents:: :local:
@@ -51,11 +51,13 @@ panel.
 -  Navigate to :guilabel:`System` in the main menu and click :guilabel:`Configuration`.
 
 .. image:: ../../img/web_tracking_magento/system_config.jpg
+   :alt: Click configuration in the system
 
 -  In the left menu, go to **Customers** section and click :guilabel:`OroCRM`.
 
 
 .. image:: ../../img/web_tracking_magento/customers_crm.jpg
+   :alt: Click OroCRM in the customers
 
 
 -  OroCRM section contains the following fields to be defined:
@@ -89,6 +91,7 @@ in OroCRM.
 
 
 .. image:: ../../img/web_tracking_magento/marketing_tracking_websites.jpg
+   :alt: Click tracking websites in the marketing
 
 
 
@@ -111,16 +114,17 @@ in OroCRM.
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. note:: Connecting a tracking record with a channel in the system binds events registered by the tracking engine and other CRM data like orders, shopping carts, customer profiles, etc. This connection can be further utilized in reports and segments.
- 
-  
+
+
 
 -  Once you have completed filling in the Create Website Record form,
    click :guilabel:`Save and Close`.
 
 
-   
+
    .. image:: ../../img/web_tracking_magento/create_website_tracking_record.jpg
-   
+      :alt: General form in webfront
+
 
 
 Step 4: Check User Events
@@ -151,15 +155,18 @@ These events are illustrated in the screenshot below:
 
 
 .. image:: ../../img/web_tracking_magento/events.jpg
+   :alt: Five events are tracked by default
 
 
 In addition, activities of a specific customer are displayed in the **Website Activity** section of their view page in Summary and Events:
 
 
 .. image:: ../../img/web_tracking_magento/customer_activity_1.jpg
+   :alt: Summary of the customer
 
 
 .. image:: ../../img/web_tracking_magento/customer_activity_2.jpg
+   :alt: Custover' events
 
 |
 
@@ -169,7 +176,7 @@ Step 5: Use Collected Data
 You can use data collected from your Magento store in a number of ways,
 creating reports and segments of users according to your needs.
 
-Build a Segment 
+Build a Segment
 ~~~~~~~~~~~~~~~
 
 Building segments of your customers is one of many ways of using data
@@ -196,12 +203,13 @@ In the **Filters** section:
 
 
 .. image:: ../../img/web_tracking_magento/create_segment.jpg
+   :alt: Build a segment
 
 
 The segment will appear on the **Manage Segments** page and contain
 customers sorted according to your conditions.
 
-Create a Report 
+Create a Report
 ~~~~~~~~~~~~~~~
 
 Another example of using data, collected with the help of web tracking,
@@ -239,6 +247,7 @@ users have visited your websites, registered and placed their orders.
 
 
 .. image:: ../../img/web_tracking_magento/tracking_website_report_3.png
+   :alt: Create a record
 
 
 Once you have saved your report, you will be able to see how many users
@@ -246,6 +255,7 @@ have visited your websites, registered there and placed their orders, as
 shown in the following example:
 
 .. image:: ../../img/web_tracking_magento/TrackingWebsitereport.png
+   :alt: Filters for the customers
 
 In similar manner, using website tracking data, you can create custom
 reports that fit specifically your needs and the needs of your business.

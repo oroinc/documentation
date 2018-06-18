@@ -57,7 +57,7 @@ There are a number of effective tools and actions available on the page of your 
    * :ref:`Reset your profile password <user-guide-getting-started-profile-password>`
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_more_actions.png
-      :alt: Availeble actoins in the more actions menu
+      :alt: Available actoins in the more actions menu
 
    .. note:: Non-default buttons can be added to **More Actions** menu. If you see non-default buttons such as Add Task, Add Event or Add Attachment, please refer to the :ref:`Activities <user-guide-activities>` guide for more information.
 
@@ -133,7 +133,7 @@ You can change your password to the OroCommerce application in 3 ways:
 3. On the page of your profile, click **More Actions > Change Password**.
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_change_password.png
-      :alt: Chenge the password form
+      :alt: Change the password form
 
 4. Provide new passport in the corresponding field. Alternatively, click **Suggest Password** to generate a secure random password. To see/hide  the entered password, click the |IcShow| **Show** / |IcHide| **Hide** icon next to the **New password** field.
 

@@ -8,7 +8,7 @@ Segments are dynamically filtered subsets of the data (e.g. product collection, 
 To use a set of records in reports, filters, web catalog nodes or marketing lists, you can create a segment and reuse it instead of copying the same query as a condition.
 
 .. image:: /user_guide/img/filters/use_segments_in_filter.png
-   :alt: Choose segments
+   :alt: Filter by segments
 
 Segment combines a set of records filtered using the query that may use the following information as the foundation:
 
@@ -39,7 +39,7 @@ To create a new segment:
 #. In the *General Details*:
 
    .. image:: /user_guide/img/filters/segment_general.png
-      :alt: File the fields in general details
+      :alt: Creating a segment
 
    a) Fill in the segment name.
 
@@ -56,7 +56,7 @@ To create a new segment:
 #. In the *Designer > Columns* section, define the set of the fields of the entity records to be shown in the segment.
 
    .. image:: /user_guide/img/filters/list_columns.png
-      :alt: The set of the fields of the entity records
+      :alt: Defining the fields to be shown in the segment when creating a new segment
 
    In order to add a column to the grid:
 

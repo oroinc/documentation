@@ -34,7 +34,7 @@ To filter the output of a Best Selling Products report:
 1. Navigate to **Report & Segments > Reports > Best Selling Products**.
 
    .. image:: /user_guide/img/business_intelligence/system_reports_2.png
-      :alt: Filter the output of a best selling products report by clicking the best selling products in navigate to report & segments
+      :alt: Filter the output of the best selling products report
 
 2. Here, you can view:
 
