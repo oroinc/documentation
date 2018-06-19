@@ -38,6 +38,7 @@ In order to create a new business customer in the system:
 3. The **Create Business Customer** :ref:`form <user-guide-ui-components-create-pages>` will appear:
 
    .. image:: ../../img/business_customers/business_customers_create.png
+      :alt: Create a new business customer
 
    The following fields are mandatory and **must** be defined:
 
@@ -54,13 +55,13 @@ In order to create a new business customer in the system:
    processes and keep additional details of the customer. The optional fields may be left empty.
 
    If you need to collect and process any other details of business customers, :ref:`custom fields can be created <doc-entity-fields-create>`. Their values will be displayed in the **Additional** section.
-  
+
    Once all the necessary fields have been defined, click **Save and Close** in the right top corner of the page to save the customer in the system.
 
 
 .. _user-guide-customers-actions:
 
-Manage Business Customer Records 
+Manage Business Customer Records
 --------------------------------
 
 The following actions can be performed with business customer records:
@@ -68,27 +69,29 @@ The following actions can be performed with business customer records:
 **From the list of all business customers**:
 
 1. Delete a customer from the system : |IcDelete|
-  
+
 2. Edit the customer : |IcEdit|
-  
+
 3. View the customer : |IcView|
 
 .. image:: ../../img/business_customers/customers_grid.png
+   :alt: Some actions can be performed with business customer records
 
 **From the view page of a specific business customer**:
-  
+
 1. Get to the Edit form of the customer.
 
 2. Delete the customer from the system.
-  
+
 3. The rest of the available actions  depend on the system settings defined in the  **Communication &  Collaboration** section of the **Business Customer** entity configuration. See step 4 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 
 .. image:: ../../img/business_customers/business_customers_viewpage.png
+   :alt: The page of a specific business customer
 
 
-.. hint:: 
+.. hint::
 
-    :ref:`Custom Reports <user-guide-reports>` can be added to analyze details of business customers in OroCRM. 
+    :ref:`Custom Reports <user-guide-reports>` can be added to analyze details of business customers in OroCRM.
 
     :ref:`Workflows <doc--system--workflow-management>` can be created to define rules and guidelines on possible actions/updates of business customers in the system.
 
