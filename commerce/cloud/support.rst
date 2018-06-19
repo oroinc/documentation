@@ -10,17 +10,17 @@ Support
 Support Desk
 ~~~~~~~~~~~~
 
-The OroCloud customer support is available for Oro authorized partners and Enterprise edition customers.
+OroCloud's customer support is available for Oro authorized partners and Enterprise Edition customers.
 
-For the support and assistance requests, there is a customer support desk that is available 24x7x365 for ticket submission and further ticket-related communication:
+For support and assistance requests, there is a customer support desk that is available 24x7x365 for ticket submission and further ticket-related communication:
 
 .. image:: /cloud/img/cloud/support_portal.png
 
-.. note:: Please, find the link to the Oro Inc. support desk in your Welcome to Oro Enterprise email.
+.. note:: Please find the link to the Oro Inc. support desk in your Welcome to Oro Enterprise email.
 
 Working hours of the support team are M-F 09:00-17:00 (EEST).
 
-Oro support team continues to put in all possible efforts to provide an initial response to the tickets as soon as possible and within:
+Oro support team continues to put in all possible efforts to provide an initial response to the tickets within:
 
 * 24 business hours for P2-P4 issues
 * 4 hours for P1 issues
@@ -31,7 +31,7 @@ Support Process
 Create a Support Request
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once you experience an issue that you struggle to resolve with the help of existing documentation, and you would like to get technical assistance:
+If you are struggling to resolve an issue with the existing documentation and you would like to get technical assistance:
 
 #. Proceed to the Oro Inc. support desk using the link in your Welcome to Oro Enterprise email.
 #. Log into your existing account or register a new one.
@@ -56,7 +56,7 @@ Once you experience an issue that you struggle to resolve with the help of exist
 Comment on Your Request
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You can later get back you any of your created requests using your user menu at the top right.
+You can get back to any of your created requests using the user menu at the top right.
 
 Click on your user picture, and select **Created by me** or **All** under the `REQUESTS` group.
 
@@ -69,9 +69,9 @@ Click on the individual ticket to expand its details. You can always add comment
 Share Support Requests in Your Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To keep multiple people in your organization informed of the support requests and their progress, you may request Oro support to create you an Organization group and include the accounts that should have shared access to the tickets.
+To keep multiple people in your organization informed of support requests and their progress, you may request Oro support to create an Organization group and include the accounts that should have shared access to the tickets.
 
-Once the group is created, and one of the grouped accounts proceeds to the ticket creation, the new field is added to the request details where they can specify if the request should stay *private* or be *shared with the group*.
+Once the group is created, and one of the grouped accounts proceeds to the ticket creation, the new field will be added to the request details where they can specify if the request should stay *private* or be *shared with the group*.
 
 Mark the Ticket as Resolved
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -96,7 +96,7 @@ Your request may be assigned one of the following priorities:
 Support Request Statuses
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Your request may be in one of the following statuses:
+Your request may fit one of the following statuses:
 
 * **Waiting for triage** is a status of the new ticket that just entered the queue.
 * **Request acknowledged** is set when a ticket has been acknowledged by the support team and is waiting for the proper resources to be assigned.

@@ -5,7 +5,7 @@
 Onboarding
 ----------
 
-This topic details the communication steps and the information that should be shared between you and the customer support team before your Oro application deployment begins.
+This topic details the onboarding process between you and our customer support team before your Oro application deployment begins.
 
 .. contents::
    :local:
@@ -13,26 +13,26 @@ This topic details the communication steps and the information that should be sh
 Welcome Onboard
 ~~~~~~~~~~~~~~~
 
-After you have signed an agreement with the Oro Inc. or one of Oro-authorized partners, you will get a *Welcome to Oro Enterprise* email that guides you through the following steps toward your Oro application going live.
+After you have signed an agreement with Oro Inc. or one of Oro-authorized partners, you will get a *Welcome to Oro Enterprise* email that guides you through the steps toward your Oro application going live.
 
 You can refer to this email when you need the following information:
 
 * Your license key (you may need it for support requests of any type)
-* Contacts of  the financial department (for questions and inquiries related to the invoice and payment)
-* Link to the Oro Inc. Support Desk (for technical questions and questions related to the deployment, application configuration, and use)
-* Links to the useful resources with training and documentation.
+* Contacts of the financial department (for questions and inquiries related to invoice and payment)
+* Link to Oro Inc. Support Desk (for technical questions and questions related to the deployment, application configuration, and use)
+* Links to the other training and documentation resources
 
 Choose a Domain for the Application and Obtain an SSL Certificate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the welcome email, you will be offered a default domain name for your OroCloud instance that is usually based on the customer name. If you would like to use a different domain, please, share that information in your reply to the welcome email or the customer support request.
+In the welcome email, you will be offered a default domain name for your OroCloud instance typically based on your company name. If you would like to use a different domain, please share that information in your reply to the welcome email or you can contact customer support.
 
-.. note:: If you choose to use the domain you manage, your company’s authorized IT personnel should handle the DNS update after the application deployment or disaster recovery. Customer support team will provide you with the public IP address for DNS configuration once the deployment is complete.
+.. note:: If you choose to use the domain you manage, your company’s authorized IT personnel should handle the DNS update after the application deployment. The customer support team will provide you with the public IP address for DNS configuration once the deployment is complete.
 
 Create an Account in Oro Inc. Support Desk
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Oro Inc. Support Desk is the main point of contact for any questions and issues related to your company’s OroCloud environment and application instance. To start using the customer support service, please, create an account on the Oro Inc. Support Desk.
+Oro Inc. Support Desk is the main point of contact for any questions and issues related to your company’s OroCloud environment and application instance. To start using the customer support service, please create an account on the Oro Inc. Support Desk.
 
 .. note:: In your support requests, remember to provide your company’s name, the license key (if applicable), and the application version.
 
@@ -41,16 +41,15 @@ For more information on using the support portal, see the :ref:`Support <cloud_s
 Get Access to the Oro application Enterprise Edition Source Code
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once you purchase an Oro application license, in your `Welcome Onboard`_ email, you will get a link to the Oro application Enterprise Edition source code in GitHub.
+Once you purchase an Oro application license, your `Welcome Onboard`_ email will link to the Oro application Enterprise Edition source code in GitHub.
 
-To be able to access, clone and fork the repository, please request access for the necessary GitHub account via the Oro Inc. Support Desk by providing the GitHub usernames, first and last names, and emails of the accounts.
+To be able to access, clone and fork the repository, please request access to the necessary GitHub account via the Oro Inc. Support Desk by providing GitHub usernames, first and last names, and emails of the accounts.
 
 .. sample
 
 You can use the source code from the repository to install Oro application in your local, staging, development and production environment, including OroCloud.
 
-You can also fork and customize the Enterprise Edition of the Oro application source code, if necessary.
-It is highly recommended to use only Long Term Support (LTS) versions for production environment. Check out the list of LTS versions and their release schedule in the relevant :ref:`Release and Support Cycle <doc--community--release>` article.
+You can also fork and customize the Enterprise Edition of Oro's application source code if needed. It is highly recommended to use only Long Term Support (LTS) versions for production environments. Check out the list of LTS versions and their release schedule in the relevant :ref:`Release and Support Cycle <doc--community--release>` article.
 
 
 OroCloud Environment and Application Deployment
@@ -58,17 +57,17 @@ OroCloud Environment and Application Deployment
 
 If you plan to deploy a custom Oro application from the forked or private repository, you will be requested to provide the custom repository address in ssh format (i.e. git@github.com:org/app.git), tag or branch that should be used for installation.
 
-.. note:: For customized installation, please, ensure that your custom source code is fully functional and doesn't affect application installation flow.
+.. note:: For customized installation, please ensure that your custom source code is fully functional and does not disrupt the application installation flow.
 
-Support team will generate SSH keys and will share a public key with you. This key should be added as deployment key to your custom repository to authorize cloning the repository from the Oro application host in the cloud environment.
+The support team will generate SSH keys and will share a public key with you. This key should be added as a deployment key to your custom repository to authorize cloning the repository from the Oro application host in the cloud environment.
 
-Once all the necessary information is collected and the necessary access permissions are granted, the environment of the :ref:`standard configuration <cloud_architecture>` is prepared, and the Oro application is installed using the repository, tag or branch you have specified, or with the latest LTS :ref:`released version <doc--community--release>` of the application if no customization is planned.
+Once all the necessary information is collected and the necessary access permissions are granted, the environment of the :ref:`standard configuration <cloud_architecture>` is prepared and the Oro application is installed using the repository, tag or branch you have specified, or with the latest LTS :ref:`released version <doc--community--release>` of the application if no customization is planned.
 
 Once the installation is complete, the support team creates the first administrator in the Oro Application using the details collected during your onboarding.
 
 Customer support will inform you of the successful installation and remind the VPN details and the general guidance on the available maintenance tools.
 
-If later you happen to require a system update or customization, you may either perform it manually using the :ref:`OroCloud maintenance tools <cloud_maintenance>` and :ref:`Oro application upgrade <upgrade>` documentation or request the necessary changes using the Oro Inc. Support Desk.
+If you happen to require a system update or customization at a leter time, you may either perform it manually using the :ref:`OroCloud maintenance tools <cloud_maintenance>` and :ref:`Oro application upgrade <upgrade>` documentation or you can request the necessary changes using the Oro Inc. Support Desk.
 
 
 SSH Access to the OroCloud Environment (Optional)
@@ -78,7 +77,7 @@ SSH access to OroCloud environment can be requested via the customer support por
 
 * First and last name(s) of the user(s), and their Organization(s)
 * E-mail addresses of the user(s)
-* User(s) public keys (a key should be created using the following command)
+* User(s) public keys (a key) should be created using the following command:
 
   .. code-block:: none
 

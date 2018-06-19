@@ -16,8 +16,8 @@ Configure RFQ Notification Options Globally
    :start-after: begin
    :end-before: finish
 
-Configure RFQ Notification Options per Organization
----------------------------------------------------
+Configure RFQ Notification Options per Website
+----------------------------------------------
 
 .. include:: /admin_guide/landing_commerce/sales/rfq_notifications/rfq_notifications_website.rst
    :start-after: begin

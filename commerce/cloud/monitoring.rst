@@ -5,7 +5,7 @@
 Monitoring
 ----------
 
-Sustaining the service availability and monitoring the resource metrics is vital for any service operations. With monitoring process, OroCloud ensures the service continuity, efficient troubleshooting, and proactive resource management.
+Maintaining the service availability and monitoring the resource metrics is vital for any service operations. With monitoring processes, OroCloud ensures service continuity, efficient troubleshooting, and proactive resource management.
 
 .. contents::
    :local:
@@ -17,14 +17,14 @@ Monitoring Tools
 Stackdriver
 ^^^^^^^^^^^
 
-In OroCloud, the main monitoring tool is Stackdriver -- the cloud service for monitoring applications hosted on the Google Cloud Platform (GCP). Stackdriver is tightly integrated with GCP, requires minimal efforts for implementation and support, and generates no overhead for the monitored services and resources.
+In OroCloud, the main monitoring tool is Stackdriver -- the cloud service for monitoring applications hosted on Google Cloud Platform (GCP). Stackdriver is tightly integrated with GCP, requires minimal efforts for implementation and support, and generates no overhead for monitoring services and resources.
 
 NewRelic, Blackfire and Quanta (Supported)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-While Stackdriver is proven to be powerful and flexible monitoring tool, OroCloud team can provide NewRelic, Blackfire or Quanta monitoring solutions for customer convenience per additional request.
+While Stackdriver is proven to be powerful and flexible monitoring tool, OroCloud team can provide NewRelic, Blackfire or Quanta monitoring solutions for customer convenience.
 
-Other tools, including proprietary suits and systems, need additional evaluation of efforts for implementation and support.
+Other tools, including proprietary suites and systems, need additional discovery before committing to implementation and support.
 
 Monitoring Guidelines
 ~~~~~~~~~~~~~~~~~~~~~
@@ -83,7 +83,7 @@ Live Tuples (count)
 Nginx, Elasticsearch, Redis, and RabbitMQ
 """""""""""""""""""""""""""""""""""""""""
 
-Other collected metrics depend on the system’s monitoring plugins:
+Other metrics that are collected depend on the system’s monitoring plugins:
 Nginx monitoring plugin
 Elasticsearch monitoring plugin
 Redis monitoring plugin
@@ -92,7 +92,7 @@ RabbitMQ monitoring plugin
 Alerting
 ^^^^^^^^
 
-Depending on the Recovery Time Objective, OroCloud classifies the alerts by severity as warnings and critical alerts. These types of alerts use separate notification channels and trigger unique recovery flows that are described in the following sections.
+Depending on the Recovery Time Objective, OroCloud classifies alerts by severity as warnings and critical alerts. These types of alerts use separate notification channels and trigger unique recovery flows that are described in the following sections.
 
 Warning Alerts
 """"""""""""""
@@ -100,18 +100,18 @@ Warning Alerts
 SLA for Warnings
 ''''''''''''''''
 
-For alerts of a warning level, the reported issue is resolved in a 12-hours time frame. If it proves to be impossible, the critical incident is created as the cause of the issue may affect the production environment availability.
+For warning alerts, the reported issues are resolved in a 12-hour time frame. If it proves to be impossible, a critical incident is created since the issue may affect the production environment availability.
 
 Warnings are sent to the dedicated email distribution list.
 
 Recovery Flow for Warnings
 ''''''''''''''''''''''''''
 
-Every day the system engineer checks the mentioned email and project for new letters and tickets. Once the new warning is acknowledged, it is processed asap, and the reporter is informed of the related root-cause analysis and the progress of issue resolution in the comments to the ticket. Once the issue is resolved, any additional details on the resolution steps are provided as well.
+Once the new warning is acknowledged, it is processed immediately, and the reporter is notified of the related root-cause. The progress of the issue and timeframe to resolution are also reported and logged in the comments section of the ticket. Once the issue is resolved, additional details on the resolution steps are provided as well.
 
 Standard Alerting Policies for Warnings
 '''''''''''''''''''''''''''''''''''''''
-The alert is triggered once the monitoring system predicts that in 12 hours the actual metric value will exceed the threshold. The following alerting policies apply to every OroCloud environment:
+An alert is triggered once the monitoring system predicts that the actual metric value will exceed the threshold in the next 12 hours. The following alerting policies apply to every OroCloud environment:
 
 * Disk usage -- Disk usage is above 80% and has been increasing with the rate of 1% per hour in the last hour
 * Swap -- The swap usage registered in the last hour is above 10%
@@ -122,7 +122,7 @@ The alert is triggered once the monitoring system predicts that in 12 hours the 
 Escalation for Warnings
 '''''''''''''''''''''''
 
-The warning is escalated to the critical incident if it is expected to be fixed in more than 12 hrs or if the warning alert repeats in less than 12 hours.
+The warning is escalated to a critical incident if it is expected to be fixed in more than 12 hrs or if the warning alert repeats in less than 12 hours.
 
 Critical Alerts
 """""""""""""""
@@ -130,7 +130,7 @@ Critical Alerts
 SLAs for Critical Alerts
 ''''''''''''''''''''''''
 
-The critical alert means that service is not available or there is a clear sign that service will be down in about 10 minutes. Critical alert needs an immediate reaction from the system engineer, and it automatically triggers an incident creation. Recovery Time Objective for critical incidents is 30 minutes.
+The critical alert means that service is not available or there is a clear sign that service will be down in roughly 10 minutes. Critical alert needs an immediate reaction from the system engineer, and it automatically triggers an incident creation. Recovery Time Objective for critical incidents is 30 minutes.
 
 Notification Channels for Critical Alerts
 '''''''''''''''''''''''''''''''''''''''''
@@ -140,7 +140,7 @@ Critical alerts are sent to the dedicated email distribution list.
 Recovery Flow for Critical Alerts
 '''''''''''''''''''''''''''''''''
 
-Each critical alert triggers the execution of the Incident Response Plan which is targeting to solve critical issues as soon as possible.
+Each critical alert triggers the execution of the Incident Response Plan which aims to solve critical issues as soon as possible.
 
 .. more info will follow
 
@@ -163,12 +163,12 @@ Escalation is performed according to the Incident Response Plan.
 Planned Maintenance Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Maintenance windows for the production OroCloud environment are planned and scheduled ahead of time. If the maintenance is initiated by the OroCloud service team and involves only the infrastructure changes, the alerts are handled gracefully.
+Maintenance windows for the production OroCloud environment are planned and scheduled ahead of time. If the maintenance is initiated by the OroCloud service team and involves only infrastructure changes, the alerts are handled gracefully.
 
 Incident Management
 ~~~~~~~~~~~~~~~~~~~
 
-To handle the unexpected service-related issues, OroCloud team has an Incident Response Plan in place.  It covers the following information:
+To handle unexpected service-related issues, OroCloud team has an Incident Response Plan in place. It covers the following information:
 
 * SWAT team members and roles -- Information about the incident resolution team, including their contact details, and office and emergency numbers
 * Incident triggers -- The conditions that trigger the service recovery actions
@@ -177,7 +177,7 @@ To handle the unexpected service-related issues, OroCloud team has an Incident R
 * Incident closing steps -- What are the steps and actions that should happen after the incident is resolved
 * Post-mortem analysis -- An analysis that identifies root causes and measures to prevent the incident with the same root causes from happening in the future. Measures may be (but are not limited to) the following: the fixes in the product, infrastructure changes, improvement of the monitoring process, any other processes and procedure changes, personnel training, etc.
 
-When the incident happens, the affected OroCloud customers get an email notification informing them of the incident. The support team may request cooperative actions from the customer IT team. Customers are also informed about the service recovery.
+When an incident happens, affected OroCloud customers get an email notification informing them of the incident. The support team may request cooperative actions from the customer's IT team. Customers are also informed about the service recovery.
 
 **What’s Next**
 

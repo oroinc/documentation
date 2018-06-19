@@ -57,7 +57,7 @@ The sanitization configuration is grouped under the sanitize node and supports t
 sanitize.method.rawsql
 """"""""""""""""""""""
 
-The **sanitize.method.rawsql** method contains the list of raw SQL queries that help you sanitize the existing data, for example, delete the data using TRUNCATE method, UPDATE the data to apply any custom modification, etc.
+The **sanitize.method.rawsql** method contains the list of raw SQL queries that help you sanitize the existing data. For example, delete the data using TRUNCATE method, UPDATE the data to apply any custom modification, etc.
 
 .. code-block:: none
 
@@ -71,7 +71,7 @@ The **sanitize.method.rawsql** method contains the list of raw SQL queries that 
 sanitize.method.update
 """"""""""""""""""""""
 
-The **sanitize.method.update** method contains mapping between the specific table columns and the sanitizing method that should be used for the values.  The update strategies are provided in JSON format, like in the following example:
+The **sanitize.method.update** method contains mapping between the specific table columns and the sanitizing method that should be used for the values. The update strategies are provided in JSON format, like in the following example:
 
 .. code-block:: none
 
@@ -117,7 +117,7 @@ Please use the following conventions to design your sanitize.method.update strat
 * Provide the column name in the name node. Use the following sanitization methods/strategies (ensure thay are reasonably matching the column type):
 
   * md5 — Replaces the original string with the string hash
-  * email — Replaces the email with the sanitized version of the email. When the sanitize.custom_email_domain configuration parameter is provided in the deployment.yml or <oroapplication>.yml files, the email strategy replaces the real email domain with the custom one provided as sanitize.custom_email_domain. If the custom domain is not provided, the sanitized email will be generated randomly, for example: sdfsdf@dfdfdf.test
+  * email — Replaces the email with the sanitized version of the email. When the sanitize.custom_email_domain configuration parameter is provided in the deployment.yml or <oroapplication>.yml files, the email strategy replaces the real email domain with the custom one provided as sanitize.custom_email_domain. If the custom domain is not provided, the sanitized email will be generated randomly. For example, sdfsdf@dfdfdf.test
   * date — Replaces the date values with the current date and time
   * attachment — Replaces the attachment file content with the dummy blank image
 

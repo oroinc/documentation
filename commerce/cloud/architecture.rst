@@ -12,23 +12,23 @@ Architecture
 Google Cloud Platform
 ~~~~~~~~~~~~~~~~~~~~~
 
-Google Cloud Platform (GCP) is Infrastructure as a Service (IaaS) provider with many data centers located all around the globe. To organize the GCP resources that are allocated for a particular OroCloud environment, they are grouped into a `GCP project <https://cloud.google.com/storage/docs/projects>`_. Within a single project, the resources are optimized for data transmission and communication in the same `region <https://cloud.google.com/compute/docs/regions-zones>`_ and are redundant to provide high availability with the replicas of the resources distributed among multiple zones.
+Google Cloud Platform (GCP) is an Infrastructure as a Service (IaaS) provider with many data centers located all around the globe. To organize GCP resources for a particular OroCloud environment, the resources are grouped into a `GCP project <https://cloud.google.com/storage/docs/projects>`_. Within a single project, resources are optimized for data transmission and communication within the same `region <https://cloud.google.com/compute/docs/regions-zones>`_ and provide redundancy for high availability with redundant resources distributed among multiple zones.
 
 GCP Data Centers
 ^^^^^^^^^^^^^^^^
 
-Google's data centers are located in the US, South America, Europe, and Asia. See `Data center locations <https://www.google.com/about/datacenters/inside/locations/index.html>`_ for more information. Google organizes its GCP resources into zones and regions to ensure:
+Google's data centers are located in the US, South America, Europe, and Asia. Click `Data center locations <https://www.google.com/about/datacenters/inside/locations/index.html>`_ for more information. Google organizes its GCP resources into zones and regions to ensure:
 
-* Fault tolerance, as every zone is isolated from other zones and it is unlikely that two zones will fail for the same cause.
-* Fast network connectivity between the zones in the same region, gaining latency of under 5ms.
-* On-demand resource distribution to multiple regions, to get closer to the end customer, and protect from the global disaster that affects the entire region.
+* Fault tolerance, as every zone is isolated from other zones. It is highly unlikely for two zones to fail from the same cause.
+* Fast network connectivity between zones in the same region, resulting in latency of under 5ms.
+* On-demand resource distribution to multiple regions and protection from global disasters that may affect an entire region.
 
-.. note:: Google is the first company in North America to obtain multi-site `ISO 50001 <http://www.iso.org/iso/home/standards/management-standards/iso50001.htm>`_ Energy Management System certification for their data centers across the US, Europe, and Asia.
+.. note:: Google is the first North American company to obtain multi-site `ISO 50001 <http://www.iso.org/iso/home/standards/management-standards/iso50001.htm>`_ Energy Management System certification for their data centers across the US, Europe, and Asia.
 
-In OroCloud, you can pick the GCP region(s) where your Oro application environment resources are allocated. Taking fault-tolerance into account, all the resources usually share the same geographic region for the response-time optimization but are distributed across multiple zones within the selected region.
+In OroCloud, you can pick the GCP region(s) where your Oro application environment will be allocated to. Taking fault-tolerance into account, all resources typically share the same geographic region for response-time optimization but are distributed across multiple zones within the selected region.
 
-OroCoud Environment Infrastructure Diagram
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OroCloud Environment Infrastructure Diagram
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The diagram below reflects a standard Oro application deployment in GCP via OroCloud.
 
@@ -38,20 +38,20 @@ The diagram below reflects a standard Oro application deployment in GCP via OroC
 Redundancy
 ~~~~~~~~~~
 
-Redundancy is a system design that ensures that all the system components are duplicated so that if one of the hosts fails, the system can run using the redundant host.
+Redundancy is a system design that ensures all system components are duplicated. In the event one of the hosts fails, the system can run using the redundant host.
 
-The OroCloud infrastructure uses the fully redundant components and services for Oro application operation. Check out the following sections for details on how redundancy is achieved.
+The OroCloud infrastructure uses fully redundant components and services for Oro application operations. Check out the following sections for details on how redundancy is achieved.
 
 Web Node
 ^^^^^^^^
 
-Google Load Balancer distributes the incoming traffic to a set of the web nodes to enable service on-demand scaling, fault tolerance, DDoS protection, etc. At least two web nodes are allocated in different zones for fault-tolerance.
+Google Load Balancer distributes the incoming traffic to a set of the web nodes that enable on-demand scaling, fault tolerance, DDoS protection, etc. At least two web nodes are allocated in different zones for fault-tolerance.
 For more information, see the `Google Cloud Load Balancing <https://cloud.google.com/load-balancing/>`_ documentation.
 
 Search Index
 ^^^^^^^^^^^^
 
-To speed up the search, Oro application data is indexed according to the application configuration and stored in the search index. As a search index provider, the OroCloud instances use ElasticSearch that out of the box provides cluster architecture and the ability to add more nodes to the cluster to spread the load between them and enhance reliability. For more information, see the `Life Inside the Cluster <https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html>`_ getting started documentation.
+To speed up the search, Oro application data is indexed according to the application configurations and stored in the search index. As a search index provider, OroCloud instances use ElasticSearch which provides cluster architecture out-of-the-box as well as the ability to add more nodes to clusters to spread the load and enhance reliability. For more information, see the `Life Inside the Cluster <https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html>`_ documentation.
 
 Database
 ^^^^^^^^
@@ -61,37 +61,37 @@ Oro application data is stored in the PostgreSQL relational database. Each envir
 Job / Message Queue
 ^^^^^^^^^^^^^^^^^^^
 
-Oro application uses RabbitMQ as a message queue broker to enable asynchronous processing for the heavy jobs. RabbitMQ is highly scalable and it supports cluster architecture out of the box. RabbitMQ brokers tolerate the failure of individual nodes. Nodes can be started and stopped at will, as long as they can contact a cluster member node known at the time of shutdown. See `RabbitMQ Clustering <https://www.rabbitmq.com/clustering.html>`_ for more information.
+Oro application uses RabbitMQ as a message queue broker to enable asynchronous processing for heavy jobs. RabbitMQ is highly scalable and supports cluster architecture out-of-the-box. RabbitMQ brokers tolerate the failure of individual nodes. Nodes can be initiated and stopped at will, as long as they can contact a cluster member node known at the time of shutdown. See `RabbitMQ Clustering <https://www.rabbitmq.com/clustering.html>`_ for more information.
 
 To process queued messages, Oro application uses a proprietary consumer service. It runs as a daemon and handles all the jobs (messages) registered within a message queue.
 
-Consumer service is scalable and can run as parallel processes and on multiple hosts to handle a large volume of messages. To guarantee the acceptable response time and address spikes in the server-side workload, the message processing is scaled by adding more consumer services.
+The consumer service is scalable and can run as parallel processes on multiple hosts to handle a large volume of messages. To guarantee an acceptable response time and address spikes to the server-side workload, message processing can be scaled by adding more consumer services.
 
 SMTP Relay
 ^^^^^^^^^^
 
-To send emails from the OroCloud environment, Oro application uses the dedicated configured SMTP Relay service, whose high availability is provided using a set of mail relays with different priorities. The setup is similar to master-master database replication, where there is more than one active service to handle the requests.
+To send emails from an OroCloud environment, the Oro application uses the dedicated SMTP Relay service, which provides high availability using a set of mail relays with different priorities. The setup is similar to a master-master database replication, where there is more than one active service to handle the requests.
 
 Cache
 ^^^^^
 
-Oro application uses Redis cluster to store cache that helps it to optimize processing of complex operations. Redis Sentinel provides high availability for Redis cluster via the automatic failover and failure detection.
+Oro application uses Redis cluster to store cache which optimizes processing of complex operations. Redis Sentinel provides high availability for Redis cluster via the automatic failover and failure detection.
 See `Redis Sentinel Documentation <https://redis.io/topics/sentinel>`_ for more information.
 
 File Storage
 ^^^^^^^^^^^^
 
-OroCloud environments are configured with `BeeGFS <https://www.beegfs.io/content/documentation/>`_  clustered file system to store application files related to the user data (attachments, images, documents).
+OroCloud environments are configured with a `BeeGFS <https://www.beegfs.io/content/documentation/>`_ clustered file system to store application files related to the user data (attachments, images, documents).
 
 Backups and Restore
 ~~~~~~~~~~~~~~~~~~~
 
-Backups of OroCloud environment include the database dump, media files, and the application source code or the repository commit hash that may be used to retrieve the code.
+Backups of OroCloud environment include the database dump, media files, and either the application source code or the repository commit hash that may be used to retrieve the code.
 
 Schedule
 ^^^^^^^^
 
-A full backup is created daily at 2 am UTC by default.
+By default, a full backup is created daily at 2 am UTC.
 
 .. note:: To change the backup schedule, please create a request via the Oro Inc. Help Desk.
 
@@ -100,10 +100,7 @@ On-demand backup may be launched via the ssh session using the automated OroClou
 Encryption
 ^^^^^^^^^^
 
-A backed up data is encrypted using AES-256 keys.
-Retention policy
-Daily backups are retained for one week.
-Backups created on Sunday are retained for one year and they serve as weekly backups.
+The backed up data is encrypted using AES-256 keys. The Retention policy for daily backups are retained for one week. Backups created on Sunday are retained for one year and they serve as weekly backups.
 
 RTO
 ^^^
@@ -113,26 +110,26 @@ Restore time objective may vary from 30 minutes up to a couple of hours dependin
 Maintenance
 ~~~~~~~~~~~
 
-To maintain optimal performance, reliability, and security, OroCloud team performs regular environment maintenance and may roll out environment updates during the predefined maintenance window.
+To maintain optimal performance, reliability, and security, the OroCloud team performs regular environment maintenance where the team may roll out environment updates during the predefined maintenance window.
 
-For the events when a critical infrastructure security patch is being released or some maintenance activity is urgently required for security or performance reasons, the OroCloud service team reserves an unplanned maintenance window informing the environment owner about such maintenance.
+During the events when a critical infrastructure security patch is released or some maintenance activity is urgently required for security or performance reasons, the OroCloud Services team reserves the right for unplanned maintenance windows. The Oro team will inform the environment owner about such maintenance activity.
 
 Disaster Recovery
 ~~~~~~~~~~~~~~~~~
 
-**Disaster Recovery** (DR) is a process, supported by procedures, tools and infrastructure which allows the IT support team to recover OroCloud service operations when the total failure or major malfunction of the main hosting resources happens.
+**Disaster Recovery** (DR) is a process that allows the IT support team to recover OroCloud service operations during a total failure or major malfunction of main hosting resources.
 
-While every tier of GCP resources is trebly redundant, there is still a chance of a catastrophe putting down the entire Google Cloud region to sink the entire infrastructure. Moreover, for the service disruption, GCP Region failure should suffice but may not be required. The internet connectivity issue outside of Google and Oro control may be caused by adversary actions or misconfiguration and may as well take down the Oro Cloud environments in a particular region.
+While every tier of GCP resources are redundant, there is still a chance a catastrophe can shut down the entire Google Cloud region. For service disruption, GCP Region failure should suffice but may not be required. Internet connectivity issues outside of Google and Oro's control may be caused by adversary actions or misconfiguration and may as well take down the Oro Cloud environments in a particular region.
 
 Disaster Recovery Objectives and Criteria
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following events are treated as a disaster and are used as DR criteria for OroCloud:
+The following criteria define an event is classified under Disaster Recovery on OroCloud:
 
-* `GCP Region <https://cloud.google.com/compute/docs/regions-zones/>`_ that is hosting a particular OroCloud environment is not available and is not anticipated to be recovered by Google in the nearest hour.
-* OroCloud environment is not accessible because of the network issues that are related to the GCP geographical location.
+* The `GCP Region <https://cloud.google.com/compute/docs/regions-zones/>`_ hosting a particular OroCloud environment is not available and is not anticipated to be recovered by Google in the next hour.
+* The OroCloud environment is not accessible because of network issues related to the GCP geographical location.
 
-In the event of the disaster, OroCloud team targets the following disaster recovery objectives:
+In the event of a disaster, the OroCloud team takes the following disaster recovery objectives:
 
 * **Recovery Point Objective** - The instance is restored from the last daily backup.
 * **Minimal Recovery Time** - It takes at least 60 minutes to restore service availability after the disaster recovery has been approved.
@@ -141,22 +138,22 @@ In the event of the disaster, OroCloud team targets the following disaster recov
 Disaster Recovery Principles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Oro uses the cold disaster recovery location. No resource is allocated and billed for until the disaster recovery launches. In case a disastrous event takes place in the primary location, the OroCloud environment is re-created in a different GCP Region unaffected by the disaster and where the Oro application instance may continue its operation. Each GCP Region that is used for a production hosting has an assigned DR location.
+Oro uses a cold disaster recovery location. No resources are allocated or billed until the disaster recovery is initiated. In case a disastrous event takes place at the primary location, the OroCloud environment is re-created at a different GCP Region unaffected by the disaster. Each GCP Region that is used for production hosting has a designated Disaster Recovery location.
 
-Oro provides both primary and DR IP addresses for outgoing connections to the customer as a part of onboarding information. These IP addresses must be added to the whitelists if any whitelisting used.
+Oro provides both primary and Disaster Recovery IP addresses to the customer as a part of onboarding information. These IP addresses must be added to the whitelists if any whitelisting is used.
 
 Disaster Recovery Flow
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Customer Support requests DR approval by contacting environment owner technical contact person.
+Customer Support will request DR approval by contacting environment owner technical contact person.
 
-Once the DR is approved, OroCloud SWAT team puts the following plan into action:
+Once the DR is approved, OroCloud SWAT team uses the following action plan:
 
-* Provision the DR infrastructure and restore latest backups there
+* Provision the DR infrastructure and restore latest backups at the new infrastructure
 * Update the DNS record to point to the new location (if possible)
-* Perform health check of the restored instance
+* Perform health checks for the restored instance
 
-Once the restored instance health check is complete and the instance is confirmed to be up and running, Customer Support notifies the technical contact person specified by the environment owner that the service has been successfully restored.
+Once the health check for the restored instance is complete and the instance is up and running, Customer Support will notify the technical contact that the service has been successfully restored.
 
 .. note:: If the Oro application is configured with the custom domain, the DNS record update should be handled by the domain owner.
 

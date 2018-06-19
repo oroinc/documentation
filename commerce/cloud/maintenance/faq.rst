@@ -3,13 +3,13 @@
 FAQ
 ~~~
 
-What is the Difference Between the `deploy` and `upgrade` Commands?
+What is the Difference between the `Deploy` and `Upgrade` Commands?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The deploy command executes `oro:install`, while the upgrade command executes `oro:platform:update`. The `oro:install` command populates the database with the minimal necessary data for application operation. The `oro:platfrom:update` prepares the existing data for the upgrade by running the necessary data migrations and ensures that the data is preserved and compatible with the updated version of the application.
+The 'deploy' command executes `oro:install` while the 'upgrade' command executes `oro:platform:update`. The `oro:install` command populates the database with the minimal necessary data for application operation. The `oro:platform:update` prepares the existing data for the upgrade by running the necessary data migrations. The update also ensures that the data is preserved and compatible with the updated version of the application.
 
-How Can I Remove Existing Data and Install Application From Scratch in the Staging Environment?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+How Can I Remove Existing Data and Install the Application From Scratch in the Staging Environment?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Run `deploy` on the running application. This operation cleans up the database and installs the application from scratch.
 
@@ -21,12 +21,12 @@ No, access to the app_dev.php file in OroCloud is prohibited for security reason
 What Is in the Application Backup?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A full backup consist of the application media files, database dump, and the application source code backup. The application source code may be either backed up in the archive file, which can be extracted during restore operation, or saved as a git commit hash, which will be checked out from the repository during the restore operation.
+A full backup consists of the application media files, database dump, and the application source code backup. The application source code may either be backed up in the archive file, which can be extracted during restore operation, or saved as a git commit hash, which will be checked out from the repository during the restore operation.
 
 How Do I Know What the OroCloud Operation Does?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can run any OroCloud command in the verbose mode via the -vvv option. With this option, OroCloud commands will echo the commands being executed into the console output.
+You can run any OroCloud command in verbose mode via the -vvv option. With this option, OroCloud commands will echo the commands being executed into the console output.
 
 How Can I Find the Supported Options for each Command?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -42,12 +42,12 @@ For security reasons, you cannot download backups with the sensitive data from O
 Can we Make Specific Custom Directories Writable for Web User?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Please see the :ref:`Deployment and Maintenance Configuration <orocloud-maintenance-advanced-use>`  section for more information about the `writeable_path_for_group` option.
+Please see the :ref:`Deployment and Maintenance Configuration <orocloud-maintenance-advanced-use>` section for more information about the `writeable_path_for_group` option.
 
-Backup process takes long as there are gigabytes of media files in the system. Can we skip backing them up before the upgrade to save time?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Backup Process Takes a While as There are Gigabytes of Media Files in the System. Can We Skip Backing Them up before the Upgrade to Save Time?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can use selective backups for this. It is possible to create a separate backup files for database and media. You can later restore from one or both files.
+You can use selective backups for this. It is possible to create separate backup files for database and media. At a later time, you can restore from one or both files.
 
 The Upgrade has Failed. What are the Recommended Steps to Have Application Up and Running ASAP?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
