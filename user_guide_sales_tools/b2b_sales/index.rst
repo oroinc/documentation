@@ -14,6 +14,7 @@ Sales Pipeline in OroCRM
 A sales pipeline is usually a series of steps taken by a salesperson from the initial contact with a potential customer, to qualifying this customer into a lead, and further converting this lead into a sales opportunity followed through different stages until closed as a sale or lost. To gather detailed information across all stages of this sales funnel, OroCRM provides convenient leads and opportunities management tools. With their help, you can forecast pipelines and ensure sales and marketing goals are on track.
 
 .. image:: ../../img/sales_process/sales_process_diagram.png
+   :alt: Sales pipeline in OroCRM
 
 .. note:: See a short demo on `how to work with OroCRM sales flow <https://oroinc.com/orocrm/media-library/work-native-orocrm-sales-flow>`_, or keep reading the guidance below.
 
@@ -49,6 +50,7 @@ Workflow
 A sales process workflow leads a sales manager step-by-step through the sales process cycle from its start to completion. In your Oro application, such sales process is comprised of the following events:
 
 .. image:: ../../img/sales_process/sales_process_wf.png
+   :alt: Diagram of workflow
 
 Lead Qualification
 ~~~~~~~~~~~~~~~~~~

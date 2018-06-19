@@ -31,6 +31,7 @@ Once enabled, leads menu will become available under **Sales** in the main menu.
 
 
 .. image:: ../../img/leads_2.0/lead_enabled_new.jpg
+   :alt: Enable lead record
 
 Create Lead Record
 ------------------
@@ -43,6 +44,7 @@ Leads can be added to the system in a number of ways. The two most common ways a
 
 
 .. image:: ../../img/leads_2.0/create_lead.jpg
+   :alt: Create lead record
 
 
 Import Leads
@@ -67,9 +69,10 @@ The **Create Lead** :ref:`form <user-guide-ui-components-create-pages>` will app
 -  Contact Information
 
 -  Additional
-   
+
 
 .. image:: ../../img/leads_2.0/leads_create_general.png
+   :alt: Create lead
 
 
 The **General** section contains the following mandatory fields to be defined:
@@ -80,9 +83,9 @@ The **General** section contains the following mandatory fields to be defined:
 
   "**Owner**", "Limits the list of users who can manage the opportunity to users, whose :ref:`roles <user-guide-user-management-permissions-roles>` allow managing opportunities assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.). By default, the user creating the record is chosen."
   "**Lead Name**", "The name used to refer to a lead in the system."
-  "**Status**", "Three statuses are available for a lead:                                                                                                                                                                                                                                                                                              
-    - **New** (newly created lead).                                                                                                                                          
-    - **Qualified** (lead is recognized as valid as a result of initial analysis, e.g. there is an interested person or organization behind the lead).                        
+  "**Status**", "Three statuses are available for a lead:
+    - **New** (newly created lead).
+    - **Qualified** (lead is recognized as valid as a result of initial analysis, e.g. there is an interested person or organization behind the lead).
     - **Disqualified** (lead is recognized as invalid as a result of initial analysis, e.g. no person or organization was found behind the lead)."
   "**Channel**","Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this lead."
 
@@ -97,6 +100,7 @@ Multiple emails, phones and addresses can be added for a lead.
 
 
 .. image:: ../../img/leads_2.0/leads_create_contact_info.png
+   :alt: Contact information in the new lead
 
 
 
@@ -104,6 +108,7 @@ In the **Additional** section, you can give additional information on the lead (
 
 
 .. image:: ../../img/leads_2.0/leads_add_info.jpg
+   :alt: The additional section in the new lead
 
 Once all the necessary fields have been defined, click :guilabel:`Save and Close` in the right top corner of the page to save the lead in the system.
 
@@ -116,6 +121,7 @@ The lead page contains all available information on the lead in the
 
 
 .. image:: ../../img/leads_2.0/lead_saved.png
+   :alt: Manage lead from the lead page
 
 
 **Activity** section shows all activity for a lead that has taken place, such as phone calls placed or emails sent to the lead.
@@ -126,12 +132,13 @@ The following actions are available for a lead record on the lead record page:
 
 
 .. image:: ../../img/leads_2.0/share_lead.png
+   :alt: Sharing settings
 
 
 -  **Disqualify action:** Disqualify a lead.
 
-   .. note:: You can disqualify a lead in three ways:  
-      
+   .. note:: You can disqualify a lead in three ways:
+
 
               1. By clicking on red :guilabel:`Disqualify` button on the lead record page.
 
@@ -142,8 +149,8 @@ The following actions are available for a lead record on the lead record page:
 -  **Convert To Opportunity:** Converting a lead to opportunity (i.e.    and potential deal) qualifies the lead. More information on opportunities can be found :ref:`here <user-guide-system-channel-entities-opportunities>`.
 
    .. note:: Once the lead is converted to an opportunity, it is marked Qualified and will no longer be visible in Open Leads grid.
-     
-      
+
+
 -  **Edit:** Open the edit form for a lead and amend lead details.
 
 -  **Delete:** Delete a lead from the system.
@@ -152,6 +159,7 @@ The following actions are available for a lead record on the lead record page:
 
 
 .. image:: ../../img/leads_2.0/more_actions_lead.png
+   :alt: Click on more actions to add new actions
 
 
 You can also edit address details of a lead, as illustrated in the screenshot below:
@@ -159,6 +167,7 @@ You can also edit address details of a lead, as illustrated in the screenshot be
 
 
 .. image:: ../../img/leads_2.0/address_edit.png
+   :alt: Add address details of a lead
 
 
 Manage Lead From the Grid
@@ -174,6 +183,7 @@ The following actions can be performed for leads from the grid:
 
 
 .. image:: ../../img/leads_2.0/manage_leads.jpg
+   :alt: Manage lead from the grid
 
 
 Grid Views
@@ -187,6 +197,7 @@ All leads grid view displays all existing leads, including the ones that have be
 
 
 .. image:: ../../img/leads_2.0/leads_grid.jpg
+   :alt: Grid views
 
 
 Inline Editing
@@ -195,14 +206,16 @@ Inline Editing
 Inline editing within the grid can help you amend lead details without opening the edit lead form. To edit leads from the grid, double-click on the field or the edit icon in the field you wish to edit.
 
 .. image:: ../../img/leads_2.0/leads_inline_editing_1.jpg
+   :alt: Click on the edit icon to edit leads from the grid
 
 .. image:: ../../img/leads_2.0/leads_inline_editing_2.jpg
+   :alt: Click on the field to edit leads from the grid
 
 
 .. note:: Although multiple emails, phones and addresses can be added for leads, only one email, phone and address will be displayed in the grid.
- 
-  
-.. _doc-leads-reports: 
+
+
+.. _doc-leads-reports:
 
 View Reports
 ------------
@@ -223,6 +236,7 @@ Leads by Date report shows:
 -  Total amount of the leads created.
 
 .. image:: ../../img/leads_2.0/leads_by_date.png
+   :alt: Lead by date report
 
 New custom reports can be added. For more details on the ways to create and customize the reports, see the :ref:`Reports guide <user-guide-reports>`.
 
