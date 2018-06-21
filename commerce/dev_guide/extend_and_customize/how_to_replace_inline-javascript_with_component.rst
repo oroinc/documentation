@@ -4,8 +4,8 @@ How to Replace Inline-Javascript with a Component
 Embedding Functionality in a Page
 ---------------------------------
 
-Commonly, inline JavaScript is used to bind some interactive functionality into the particular markup
-fragment:
+The easiest way to bind an interactive functionality with the particular markup is to write an
+inline JavaScript fragment:
 
 .. code-block:: html
     :linenos:
@@ -24,12 +24,12 @@ fragment:
     </script>
 
 Inline scripts are often larger than in the example above and may also make use of inline Twig code.
-It is impossible to reuse this code, extend it or test it. Additionally, it's hard to maintain it.
+It is impossible to reuse this code, extend it or test it, and it is also hard to maintain.
 
 Furthermore, the lifecycle of its instances is not defined and it is not specified how the function
-will be disabled when the control is not used anymore. Instead, one has to rely on jQuery to
-properly clean the memory. Most of the time, jQuery does this fine. However, there's no
-guarantee that jQuery would always handle this task successfully without developer's help.
+will be destructed properly when the control is not used anymore. Instead, one has to rely on jQuery to
+properly clean the memory. Most of the time, jQuery does this fine. However, there is no
+guarantee that jQuery would always handle this task successfully without the help from developers.
 
 The solution for the problems explained above is a Page Component.
 
@@ -99,16 +99,17 @@ file that lives in the ``Resources/public/js/app/components`` directory of your 
         return Select2Component;
     });
 
-This code can be tested, extended and reused. What's even more important is that the component
+This code can be tested, extended and reused. What is even more important is that the component
 provides two methods ``initialize()`` and ``dispose()`` which restrict the existence of the
-``select2`` instance. Thus, it defines its own lifesycle and therefore minimizes the risk of
+``select2`` instance. Thus, it defines its own lifecycle and therefore minimizes the risk of
 memory leaks.
 
 Declaring a Page Component in HTML
 ----------------------------------
 
-Next, the HTML code of the related template has to be modified to tell the ``Layout`` which
-HTML elements are related to the ``Select2Component`` component:
+Next, the HTML code of the related template has to be modified to tell the parent ``View``
+(or other parent ``ComponentContainer``) which HTML elements are related to the
+``Select2Component`` component:
 
 .. code-block:: html+jinja
     :linenos:
@@ -126,21 +127,18 @@ HTML elements are related to the ``Select2Component`` component:
         <option value="bar">Bar</option>
     </select>
 
-The ``Layout`` uses two attributes to resolve the Component module associated with an HTML element
-when ``layout:init`` is executed by the `PageController`_:
+The parent ``ComponentContainer`` uses two attributes to resolve the Component module associated
+with an HTML element when the ``initPageComponents`` method is executed:
 
 ``data-page-component-module``
     The name of the module
 ``data-page-component-options``
     A JSON encoded string containing module configuration options
 
-Once this HTML code is injected into the document, the ``PageController`` will execute the
-``layout:init`` handler and the component will be initialized.
-
 Using the View Component
 ------------------------
 
-The code is now reusable. Though it can be improved by separating business logic from the view
+The code is now reusable. Though it can be improved by separating the business logic from the view
 layer. Therefore, replace the ``Select2Component`` with the ``Select2View`` class in the file named
 ``select2-view.js`` that lives in the ``Resources/public/js/app/views`` directory of your bundle
 and that extends the ``BaseView`` class:
