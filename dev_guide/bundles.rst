@@ -413,7 +413,6 @@ related articles is provided below the description.
         * Book: :doc:`/dev_guide/customization`
         * Book: :doc:`/dev_guide/ui/frontend_architecture`
         * Book: :doc:`/dev_guide/ui/javascript_modularity`
-        * Cookbook: :doc:`/dev_guide/cookbook/how_to_create_global_js_component`
         * Cookbook: :doc:`/dev_guide/cookbook/how_to_replace_inline-javascript_with_component`
         * Reference: :doc:`/reference/format/requirejs`
 
@@ -527,7 +526,6 @@ related articles is provided below the description.
         * Book: :doc:`/dev_guide/entities/crud`
         * Book: :doc:`/dev_guide/customization`
         * Book: :doc:`/dev_guide/ui/frontend_architecture`
-        * Cookbook: :doc:`/dev_guide/cookbook/how_to_create_global_js_component`
         * Cookbook: :doc:`/dev_guide/cookbook/how_to_replace_inline-javascript_with_component`
         * Reference: :doc:`/reference/format/placeholders`
 
