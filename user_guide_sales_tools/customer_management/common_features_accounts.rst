@@ -8,11 +8,11 @@ This section will cover the following topics:
 .. contents:: :local:
    :depth: 2
 
-To collect and process information on the customer activity of a person, group of people or business cooperating with 
+To collect and process information on the customer activity of a person, group of people or business cooperating with
 you, you can create an account that will represent them in your Oro application.
 
 An account can aggregate details of all the :term:`customer identities <Customer Identity>` assigned to it, providing
-a 360-degree view of the customer. 
+a 360-degree view of the customer.
 
 .. note:: See three short demos on:
 
@@ -52,6 +52,7 @@ To create a new account:
    The following :ref:`page <user-guide-ui-components-create-pages>` appears:
 
    .. image:: /user_guide/img/accounts/accounts_create.png
+      :alt: Create an account
 
 3. Define the following mandatory fields:
 
@@ -70,7 +71,7 @@ To create a new account:
 4. In order to add a contact, click the **+Add** in the **Contacts** section.
 
 .. note:: If you need to record and process any other details of accounts, :ref:`custom fields <doc-entity-fields-create>` can be created. Their values will be displayed in the **Additional** section. Please, refer to your administrator for assistance.
-  
+
 5. Once all the necessary information has been defined, Click **Save**.
 
 Manage Account Records
@@ -86,10 +87,12 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
 2. The **General** section is for general details of the account, such as its name, tags, description and all the contacts assigned to the account.
 
    .. image:: /user_guide/img/accounts/account_view_general_new.png
+      :alt: General information about account
 
 3. The **Activity** section includes any :ref:`activities <user-guide-activities>` related to the account, such as attachments, calls, calendar events, notes, emails or tasks (if available).
 
    .. image:: /user_guide/img/accounts/accounts_view_activities.png
+      :alt: The activity section
 
    .. note:: If an activity-related action was performed for a customer or a contact assigned to the account, they will not be displayed. Only the activities performed directly for the account are available in the section.
 
@@ -97,13 +100,15 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
 5.  The **Website Activity** section lists customer activities displayed in the *Summary* and *Events* subsections.
 
     .. image:: /user_guide/img/accounts/accounts_view_website_activity_1.png
+       :alt: Summary activity
 
     .. image:: /user_guide/img/accounts/accounts_view_website_activity_2.png
+       :alt: Event activity
 
 5.  The **Sections with channel names**. Each section contains details of all the customers that are assigned to this account and belong to the specified channel (e.g. Sales, Magento, OroCommerce).
 
     .. image:: /user_guide/img/accounts/accounts_view_channels_new.png
-  
+       :alt: The sections with channel names
     .. note:: The number and names of such sections depend on the number and names of OroCRM channels and customer records assigned to the account. The type of channels can vary depending on your configurations and integrations (e.g. Sales, Magento, Commerce).
 
     Records of other entities assigned to this channel with regard to a specific customer are represented as subsections.
@@ -120,6 +125,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
       6. The *Magento Order Notes* subsection show the comments added to an order on the Magento side as notes in Oro.
 
      .. image:: /user_guide/img/accounts/account_subsections_new2.png
+        :alt: The magento section
 
     * Within the **Sales** Channel section you will be able to see:
 
@@ -129,6 +135,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
       .. note:: In new installations of OroCRM (2.0 and higher) the functions of a Sales channel are reduced to enabling Business Customers and controlling their grouping at the Account view. It is, therefore, no longer essential to create a Sales channel to enable leads and opportunities – these are enabled as features.
 
       .. image:: /user_guide/img/accounts/accounts_view_channels_2.png
+         :alt: Opportunity in customers lazysize
 
     * Within a **Commerce** Channel, there are seven tabs with Commerce customer-related information:
 
@@ -150,6 +157,7 @@ The following actions can be performed for the accounts from the :ref:`view page
 1. Share the account. Clicking **Share** will prompt a sharing settings pop up window to open.
 
    .. image:: /user_guide/img/accounts/accounts_view_actions_share.png
+      :alt: Click Share to share the account
 
 
 2. Get to the |IcEdit| **Edit** form of the account.
@@ -168,6 +176,7 @@ The following actions can be performed for the accounts from the :ref:`view page
    * :ref:`Create Opportunity <user-guide-system-channel-entities-opportunities>`
 
    .. image:: /user_guide/img/accounts/MoreActionsMenu.png
+      :alt: More actions menu
 
 Export
 """"""
@@ -185,16 +194,18 @@ Account Actions from the Account List
 By hovering over the |IcMore| more actions menu to the right of the necessary accountm you can perform the following actions:
 
 .. image:: /user_guide/img/accounts/accounts_grid.png
+   :alt: Click on the menu to do some actions
 
 1. View the account by clicking |IcView|
 
 2. Delete the account from the system by clicking |IcDelete|
-  
+
 3. Edit the account by clicking |IcEdit|
-  
+
 4. Do inline editing for specific columns, such as account name, owner or tags, by clicking |IcPencil|
 
    .. image:: /user_guide/img/accounts/accounts_grid_inline_editing.gif
+      :alt: Actions in the account
 
 4. Merge Accounts by clicking |IcMerge|
 
@@ -205,8 +216,8 @@ Merging Accounts
 """"""""""""""""
 
 Once the accounts have been added to the system you can :ref:`merge <user-guide-accounts-merge>` them, to get a full
-view of customer activities, regardless of the :term:`channels <Channel>`. This can be useful if, for example, it has 
-appeared that several accounts have been created for the different representatives of the same client, or that your 
+view of customer activities, regardless of the :term:`channels <Channel>`. This can be useful if, for example, it has
+appeared that several accounts have been created for the different representatives of the same client, or that your
 business-to-business partner is co-operating with you from a new channel (e.g. started buying from your Magento store).
 
 In order to merge accounts:
@@ -220,10 +231,12 @@ In order to merge accounts:
    As an example, we are merging three accounts: Acuserv, Big Bear Stores and Casa Bonita.
 
    .. image:: /user_guide/img/accounts/accounts_merge_01.png
+      :alt: Click the merge icon to see merge records
 
 4. Once you click **Merge Accounts**, a table with the merge-settings will appear.
 
    .. image:: /user_guide/img/accounts/accounts_merge_02.png
+      :alt: Click merge accounts
 
 
 5. Choose the name of one of the accounts that is being merged to give to your new account (Master Record).
@@ -239,7 +252,7 @@ In order to merge accounts:
 10. Choose if the tags should be replaced with the contacts of one account (and which), or if all the tags should be appended.
 
 11. Click **Merge**.
-  
+
     A Master Record with merged data of several accounts will be created. The rest of the account details, including details of the customer identities will be appended.
 
 
@@ -254,8 +267,8 @@ OroCRM currently comes with two ready-to-use reports on accounts:
 
 2. Accounts by Opportunities
 
- 
-Accounts Life Time Value 
+
+Accounts Life Time Value
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 This a report, with which you can see the total amount of money received from all the customers assigned to the account.
@@ -269,6 +282,7 @@ It shows:
 - The total lifetime sales value registered in your Oro application.
 
 .. image:: /user_guide/img/accounts/accounts_report_by_lifetime.png
+  :alt: Accounts life time value
 
 
 Accounts by Opportunities
@@ -293,7 +307,8 @@ It shows:
 - The total number of opportunities of a kind, regardless of their account.
 
 
-.. image:: /user_guide/img/accounts/accounts_report_by_opportunity.png 
+.. image:: /user_guide/img/accounts/accounts_report_by_opportunity.png
+   :alt: Accounts by opportunities
 
 .. hint::
 
@@ -304,4 +319,3 @@ It shows:
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-

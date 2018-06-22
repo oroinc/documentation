@@ -75,7 +75,7 @@ The following actions can be performed with business customer records:
 3. View the customer : |IcView|
 
 .. image:: ../../img/business_customers/customers_grid.png
-   :alt: Some actions can be performed with business customer records
+   :alt: The actions available for the business customer from the grid, such as view, edit and delete.
 
 **From the view page of a specific business customer**:
 

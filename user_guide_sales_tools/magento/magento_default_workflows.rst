@@ -3,7 +3,7 @@
 Default Workflows with Magento Entities
 =======================================
 
-To provide a consistent and customer-oriented approach, you can 
+To provide a consistent and customer-oriented approach, you can
 :ref:`define a specific workflow <doc--system--workflow-management>` within which the actions can be
 performed for each shopping cart or order. The following two workflows are pre-implemented in OroCRM
 for Magento-based shops out-of-the-box:
@@ -24,6 +24,7 @@ This way, the workflow allows converting the cart into an order without contacti
 it is impossible to abandon the cart without getting in touch with the customer.
 
 .. image:: ../../img/magento_entities/cart_workflow_diagram.png
+   :alt: Diagram of cart workflow
 
 The workflow helps to improve customer-oriented communications and to increase the number of actual orders. At the
 same time, the managers can see all the information on the relevant items (no long search during the call), switch to
@@ -52,6 +53,7 @@ The workflow aims to keep track of the customer feedback on the purchase. For ea
     (e.g. "an answering machine", "no parents at home, call back after six").
 
 .. image:: ../../img/magento_entities/order_followup_workflow_diagram.png
+   :alt: Diagram of order follow up workflow
 
 The workflow provides for consistent feedback collection and eliminates excessive calls, as each manager can see
 the log of emails and call-attempts.

@@ -61,7 +61,7 @@ Setting a priority determines what records the territory should display, or whic
 As an illustration, two overlapping territories have been created - **Leads France** and **Leads Paris**. These two territories will overlap if some of leads' addresses have France specified for the country and Paris for the city within the same address record.
 
 .. image:: ../../img/territories/leads_france_paris.png
-   :alt: Leads France and leads Paris
+   :alt: An illustration of two overlapping territories, e.g. leads France and leads Paris
 
 The priority of 30 has been set for Leads France, and the priority of zero was left for Leads Paris. When the territories are activated, Leads Paris will display leads (assigned records) that fall into Leads France as well as Leads Paris category.
 
@@ -90,7 +90,7 @@ A number of :ref:`filters <user-guide-filters-management>` will be displayed on 
 As an example, we have set a condition to the Opportunity filter, looking only for those that have the budget amount higher than $1000.
 
 .. image:: ../../img/territories/set_filter.png
-   :alt: Example of the Opportunity filter
+   :alt: Example of the opportunity filter
 
 Once the territory is saved, it will need to be activated to be able to function (see the section below).
 
@@ -131,7 +131,7 @@ You can perform the following actions for an **inactive** territory from the gri
 - Delete: |IcDelete|
 
 .. image:: ../../img/territories/inactive_territory_manage.png
-   
+   :alt: Actions available with new territory
 
 You can perform the following actions for an **active** territory from the grid:
 
@@ -139,12 +139,15 @@ You can perform the following actions for an **active** territory from the grid:
 - View: |IcView|
 
 .. image:: ../../img/territories/active_territory_manage.png
+   :alt: The active territory from the grid
 
 It is possible to filter records by territories. To enable the territory filter, click :guilabel:`Manage Filters` and select **Territories** from the list.
 
 .. image:: ../../img/territories/grid_filters.png
+   :alt: click manage filters to enable the territory filter
 
 .. image:: ../../img/territories/grid_filters_vip.png
+   :alt: Select VIP territory
 
 View Territories
 ----------------
@@ -155,8 +158,10 @@ From the Grid of an Assigned Record
 To be able to view territory assignment from the grid of the related entity, make sure that **Territory** is enabled in the **Grid Settings**.
 
 .. image:: ../../img/territories/grid_settings_territory.png
+   :alt: Select territory in grid settings
 
 .. image:: ../../img/territories/grid_territories.png
+   :alt: Opportunity in territories is 1000
 
 When enabled, the Territory column will appear in the grid showing the territory to which a particular record is assigned.
 
@@ -167,6 +172,7 @@ From the View Page of an Assigned Record
 When a record is assigned a territory, it is displayed in the Territory field on the view page of that record.
 
 .. image:: ../../img/territories/territory_view_page.png
+   :alt: From the view page of an assigned record
 
 Territories in Widgets
 ----------------------
@@ -181,12 +187,16 @@ Sales Territories can also be used in the following widgets:
 Within these widgets, you can view records filtered within one or several specific territories.
 
 .. image:: ../../img/territories/forecasts.png
+   :alt: Forecast territory
 
 .. image:: ../../img/territories/opp_statistics.png
+   :alt: Opportunity statistics territory
 
 .. image:: ../../img/territories/leads_statistics.png
+   :alt: Lead statistics territory
 
 .. image:: ../../img/territories/opp_by_status_ter.png
+   :alt: Opportunity by status territory
 
 
 .. include:: /img/buttons/include_images.rst
