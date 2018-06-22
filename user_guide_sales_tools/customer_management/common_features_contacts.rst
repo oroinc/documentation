@@ -23,30 +23,30 @@ In order to create a Contact record:
 
 1. Navigate to **Customers > Contacts** in the main menu.
 2. Click **Create Contact**.
-3. In the **General** section, define the basic settings of the contact created. 
+3. In the **General** section, define the basic settings of the contact created.
 
    The following fields are mandatory and **must** be defined in the section.
 
    .. csv-table::
      :header: "**Name**","**Description**"
      :widths: 10, 30
-   
+
      "**Owner**","Define users that can manage the contact, subject to the :ref:`role settings <user-guide-user-management-permissions>`."
      "**First Name** and **Last Name**","Name used to refer to the contact in the UI."
-     
+
    The rest of the fields are optional. They can be used to define additional details of the contact, such as the name prefix and suffix, the middle name, free-text description, emails and phone numbers, birthday, etc.
-   
+
    - With the optional field **Assigned To** you can specify a :term:`User` record, to which the contact will be assigned.
-   
-   - With the optional field **Reports To** you can specify another Contact record, that corresponds to a person in charge 
+
+   - With the optional field **Reports To** you can specify another Contact record, that corresponds to a person in charge
      of the contact added (e.g. manager of the department, CEO of the company etc.).
-   
-   - You can also add a picture (upload a picture to be used for the contact in the UI) and/or 
+
+   - You can also add a picture (upload a picture to be used for the contact in the UI) and/or
      :term:`tags <Tag>` related to the contact.
-   
-   - With the **Addresses** form you can define Billing and Shipping addresses of the contact. Any amount of the addresses 
+
+   - With the **Addresses** form you can define Billing and Shipping addresses of the contact. Any amount of the addresses
      may be added.
-   
+
 4. The **Groups** section contains all the :ref:`contact groups <contact_groups>` available in the system. Check the boxes to assign the contact to a group. One contact may be assigned to several groups.
 
 5. The **Accounts** section contains all the :ref:`accounts <user-guide-accounts>` available in the system. Check the boxes to assign the contact to an account. One contact may be assigned to several accounts.
@@ -89,20 +89,23 @@ To edit contacts from the grid using inline editing, perform the same actions as
 
 
 .. image:: /user_guide/img/contacts/inline_editing_contacts.png
+   :alt: Click the edit icon
 
 
 .. image:: /user_guide/img/contacts/inline_editing_contacts_2.png
+   :alt: Type the right message
 
 
 All contacts available in the system are displayed on the page of all contacts (**Customers > Contacts**).
 
-  
+
 .. image:: /user_guide/img/contacts/action_icons.png
+   :alt: click the delete icon to delete contact
 
 
-.. note:: On the page of all contacts, you can view, edit, delete and bulk delete contacts. 
+.. note:: On the page of all contacts, you can view, edit, delete and bulk delete contacts.
 
- .. important:: Learn how to :ref:`export <export-bulk-items>` and :ref:`import <import-contacts>` contacts in the .csv format in corresponding topics in Oro documentation library. 
+ .. important:: Learn how to :ref:`export <export-bulk-items>` and :ref:`import <import-contacts>` contacts in the .csv format in corresponding topics in Oro documentation library.
 
 Manage Address Book
 -------------------
@@ -117,6 +120,7 @@ To add an address to the address book:
 1. Click **Add Address** in the right corner of the selected page.
 
    .. image:: /user_guide/img/contacts/acc_add_address.png
+      :alt: Click add address
       :class: with-border
 
    A popup form appears with the following fields to fill in:
@@ -125,13 +129,13 @@ To add an address to the address book:
 	  :header: "Field", "Description"
 	  :widths: 10, 30
 
-	  "**Types**","Defines the type of the address to be entered: 
+	  "**Types**","Defines the type of the address to be entered:
 
 	  - Billing
 	  - Shipping
 	  - Default Billing
 	  - Default Shipping
-	  
+
 	  Note: More than one type can be selected for one address."
 	  "**Primary**", "Checking the **Primary** box marks the address primary. Note that only one primary address is possible. Marking a different address primary will by default delete the this mark from the address that has previously been marked Primary."
 	  "**Label**", "Identify the address by adding a label. This can help distinguish addresses, if there is more than one address in the address book for one account."
@@ -152,11 +156,12 @@ To add an address to the address book:
 
 	Street, City and Zip are mandatory fields.
 
-2. Click **Save** once you have filled in all the fields. 
+2. Click **Save** once you have filled in all the fields.
 
    The address and the map showing the address location is displayed on the right of the address.
 
    .. image:: /user_guide/img/contacts/acc_address_saved.png
+      :alt: Click Save on the
       :class: with-border
 
 View an Address on the Map
@@ -165,6 +170,7 @@ View an Address on the Map
 It is possible to add more addresses to the same account. If you have more than one address on the Address Book page, clicking on one or the other will prompt a map to appear that corresponds to the selected address.
 
 .. image:: /user_guide/img/contacts/acc_address_correspondin_map.png
+   :alt: View an address on the map
    :class: with-border
 
 Manage an Address
@@ -178,7 +184,7 @@ To mark address as primary, click the |IcEdit| on the right top of the address b
 
 * **Edit an address**
 
-To edit an address, click the |IcEdit| on the right top of the address background, update the address details and click **Save**. 
+To edit an address, click the |IcEdit| on the right top of the address background, update the address details and click **Save**.
 
 * **Delete an address**
 

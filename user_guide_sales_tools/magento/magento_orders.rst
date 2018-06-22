@@ -30,15 +30,18 @@ To create an order from the view page of the selected Magento customer:
 3. Click **Create Order** in the top navigation menu on the customer page.
 
    .. image:: /img/magento_entities/CreateOrderButtonNew.png
+      :alt: Click create order in the navigation menu
 
 
 4. Enter the admin panel of your Magento shop.
 
    .. image:: /img/magento_entities/LoginToAdminMagento.png
+      :alt: Log in to admin panel form
 
 5. Fill in the details in the order form and click **Submit Order** in the top right corner of the form.
 
    .. image:: /img/magento_entities/CreatOrderInAdminPanel.png
+      :alt: Enter details and click submit order
 
 Please, keep in mind that:
 
@@ -55,10 +58,12 @@ To convert a shopping cart into an order, perform the following steps:
 3. Click the **Place an Order**.
 
    .. image:: /img/magento_entities/PlaceOrderFromCart.png
+      :alt: Click place as order
 
 3. Enter the admin panel of your Magento shop and submit the order.
 
    .. image:: /img/magento_entities/PlaceOrderFromCartAdminPanel.png
+      :alt: Magento shop
 
 .. caution::
 
@@ -73,6 +78,7 @@ View Magento Orders
 To view all orders, navigate to **Sales > Magento Orders** in the main menu.
 
 .. image:: /img/magento_entities/MagentoOrdersGrid.png
+   :alt: Magento orders
 
 The following information about orders is available:
 
@@ -112,6 +118,7 @@ To view details of a specific order:
 The following page opens:
 
 .. image:: /img/magento_entities/OrderPending.png
+   :alt: 
 
 Within the page, the following sections are available:
 

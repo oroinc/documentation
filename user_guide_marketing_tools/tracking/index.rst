@@ -120,7 +120,7 @@ Use the Tracking Code
 Tracking code generated in the Tracking Website shall be added before the </body> tag on every page of the website you would like to monitor.
 
 .. image:: /img/marketing/how_to_tracking_code.png
-   :alt: Use the tracking code
+   :alt: The generated tracking code for a website
 
 The code defines some of `piwik <http://piwik.org>`_-specific settings that should not be changed.
 
@@ -222,7 +222,7 @@ Collect Website Statistics
 A list of events on the tracking website page helps you monitor every occurrence of the tracked action (e.g. a user has accessed a pre-defined part of the website following the campaign). You can find event name and value, user id (guest or user email), the url of the visited page, the code of the marketing campaign and time when the event was logged.
 
   .. image:: /img/marketing/tracking_view_events.png
-     :alt: Collect website statistics
+     :alt: Collected website statistics displayed in the events section on the tracking website page in the management console
 
 In the example above you can see the three kinds of events defined for the Jack and Johnson E-commerce website tracking. As soon as a user gets on any of the website pages, a *visit* event is logged with the *1* value. As soon as a user gets to the **Orders** page of the website, an *Order* event is logged, with the value that stores an ordered item id. As soon as a user gets to the **Item Details** page of the website, an *View item* event is logged with a value that stores a viewed item id.
 
