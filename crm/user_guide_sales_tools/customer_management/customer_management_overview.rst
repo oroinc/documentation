@@ -45,6 +45,7 @@ Each profile within one channel is a *customer*. However, the type of customers 
 * For profiles that come from the Commerce channel, these are **Customer Users** and **Customers**. In this case, Customers are companies who buy your products using OroCommerce storefront, and Customer Users are those people who act on behalf of a company.
 
 .. image:: /user_guide/img/accounts/accounts_view_channels.png
+   :alt: Customers
 
 Although all these customers may come from different channels, data received is aggregated under accounts. For instance, if customer A has arrived from Sales and Commerce channels, but has been recognized as the same person, information on such customer will be collected under one account. This means that all quotes, orders or carts created by Customer A will be visible and trackable on one page, giving a 360 degree view of his activity.
 
@@ -52,7 +53,7 @@ Although all these customers may come from different channels, data received is 
 
 .. _user-guide-common-features-accounts:
 
-Accounts 
+Accounts
 ^^^^^^^^
 
 Using details of the customer records, you can manage the details within one source, however efficient and comprehensive customer relations management requires you to aggregate information of the customer-activities in different sources. To do so, you can use accounts.
@@ -91,4 +92,3 @@ System users can define a relationship between a customer and a contact (i.e. bi
 
 
 .. note:: You can also checkout a short video on `how to create and edit contact records <https://oroinc.com/orocrm/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0>`_.
-

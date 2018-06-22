@@ -132,7 +132,7 @@ The following actions are available for a lead record on the lead record page:
 
 
 .. image:: ../../img/leads_2.0/share_lead.png
-   :alt: Sharing settings
+   :alt: Sharing settings dialog for a lead
 
 
 -  **Disqualify action:** Disqualify a lead.

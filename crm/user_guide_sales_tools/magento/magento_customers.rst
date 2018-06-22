@@ -28,6 +28,7 @@ In order to create a new Magento customer in the system:
 
 
    .. image:: ../../img/magento_entities/magento-customer_create.png
+      :alt: Create magento customer record
 
 
 3. Define the following mandatory fields:
@@ -50,7 +51,7 @@ In order to create a new Magento customer in the system:
 
 .. _user-guide-magento-customers-actions:
 
-Manage Magento Customer Records 
+Manage Magento Customer Records
 -------------------------------
 
 Actions that can be performed for Magento customers are described below.
@@ -59,6 +60,7 @@ From the :ref:`grid <doc-grids>`, you can:
 
 
 .. image:: ../../img/magento_entities/mag_customers_grid.png
+   :alt: Actions for magento customers
 
 
 1. Subscribe or unsubscribe the customers to/from the :ref:`Magento Newsletter <user-guide-magento-entities-newsletters>`: **+** or **--**.
@@ -66,7 +68,8 @@ From the :ref:`grid <doc-grids>`, you can:
 3. Get to the :ref:`view page <user-guide-ui-components-view-pages>` of the customer:  |IcView|
 
    .. image:: ../../img/magento_entities/magento_customers_view.png
-  
+      :alt: Magento customer general information
+
 From the view page, you can:
 
 1. Create an order for the customer in Magento: click **Create Order** to get to the admin panel and place and order in the Magento store.
@@ -81,6 +84,7 @@ View Magento Orders
 You can view orders placed by a specific Magento customer on their view page in the Oro application by clicking **Sales > Magento Orders**, as illustrated below:
 
 .. image:: /img/magento_entities/MagentoCustomerOrdersTabNew.png
+   :alt: View magento orders
 
 The following information will be displayed:
 
@@ -108,9 +112,10 @@ You can perform the following actions with the orders on the view page of a Mage
 View Recent Magento Purchases
 -----------------------------
 
-You can get a quick overview of the products that a Magento customer recently purchased by clicking **Sales > Magento Purchases** on their view page. Newly purchased products appear on the list when a new order is created. By default, the most recently purchased products are displayed first. Products disappear from the list if an order is cancelled or deleted on the Magento side. 
+You can get a quick overview of the products that a Magento customer recently purchased by clicking **Sales > Magento Purchases** on their view page. Newly purchased products appear on the list when a new order is created. By default, the most recently purchased products are displayed first. Products disappear from the list if an order is cancelled or deleted on the Magento side.
 
 .. image:: /img/magento_entities/MagentoCustomerPurchases.png
+   :alt: View recent magento purchases
 
 The following information will be displayed:
 
@@ -144,6 +149,7 @@ View Magento Carts
 In the Oro application, you can view carts related to a specific Magento customer on the their view page by clicking **Sales > Magento Shopping Carts**, as illustrated below:
 
 .. image:: /img/magento_entities/MagentoCreditMemoCartTabNew.png
+   :alt: View magento carts
 
 The following information will be displayed:
 
@@ -174,6 +180,7 @@ You can view :ref:`credit memos <user-guide--sales--magento-credit-memos>` relat
 To view memos on the view page of a selected Magento customer, click **Sales > Magento Credit Memos**, as illustrated below:
 
 .. image:: /img/magento_entities/MagentoCreditMemoCustomerPage3.png
+   :alt: View magento credit memos
 
 The following information will be displayed:
 
@@ -196,11 +203,12 @@ You can perform the following actions with the credit memos on the view page of 
 View Comments Added to Orders
 -----------------------------
 
-You can view the comments added to an order by a manager in a Magento store as notes in Oro. Depending on the :ref:`configuration setup in the course of integration between Oro and a Magento store <user-guide-magento-channel-integration>`, these notes may or may not be visible on Magento Customer pages. Please refer to your administrator for configuration details. 
+You can view the comments added to an order by a manager in a Magento store as notes in Oro. Depending on the :ref:`configuration setup in the course of integration between Oro and a Magento store <user-guide-magento-channel-integration>`, these notes may or may not be visible on Magento Customer pages. Please refer to your administrator for configuration details.
 
 To view comments imported to Oro as notes, click **Sales > Magento Order Notes** on the page of a selected Magento customer:
 
 .. image:: /img/magento_entities/MagentoOrderNotes.png
+   :alt: View comments added to orders
 
 View Magento Customer Website Activity
 --------------------------------------
@@ -208,8 +216,10 @@ View Magento Customer Website Activity
 You can view activities of a specific Magento customer in the **Website Activity** section of their view page in *Summary* and *Events*, if :ref:`website tracking <user-guide-magento-web-tracking>` has been configured in your Oro application:
 
 .. image:: ../../img/web_tracking_magento/customer_activity_1.jpg
+   :alt: Summary activity
 
 .. image:: ../../img/web_tracking_magento/customer_activity_2.jpg
+   :alt: Event activity
 
 
 Five events are tracked by default:
