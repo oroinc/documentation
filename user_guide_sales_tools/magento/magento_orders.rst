@@ -118,7 +118,7 @@ To view details of a specific order:
 The following page opens:
 
 .. image:: /img/magento_entities/OrderPending.png
-   :alt: 
+   :alt: General information on the magento orders page
 
 Within the page, the following sections are available:
 
@@ -138,6 +138,7 @@ From the order view page, you can perform the following actions:
 3. **Record Feedback** on the order.
 
    .. image:: /img/magento_entities/MagentoOrderTopMenu.png
+      :alt: Click record feedback
 
 
 .. important::
