@@ -22,6 +22,7 @@ To update the product unit settings:
 The following page opens.
 
 .. image:: /admin_guide/img/configuration/product/product_unit/ProductUnit.png
+   :alt: The product units configuration page
    :class: with-border
 
 The following options are available:
@@ -31,6 +32,8 @@ The following options are available:
    * **Show Unit Code** -- When enabled, the unit appears next to the requested quantity; when disabled, the unit name is hidden and only quantity is displayed. This option is available only when the **Single Unit** is enabled. 
    * **Default Primary Unit** -- The product unit that is shown by default in the website.
    * **Default Primary Unit Precision** -- The number of digits after the floating point that limits the Primary unit precision (e.g., 1 for 0.x, 2 for 0.xx, 3 for 0.xxx and so on).
+
+.. note:: Please keep in mind that when importing products into the application the *Product Single Unit Mode* setting is not checked. This means that even if the *Single Unit* setting is enabled, the admin can still create and import products with additional product units using API. In addition, if *Single Unit* is enabled and *Show Unit Code* is disabled, unit codes are not displayed anywhere, except for the product page and shippinglist bucket.
 
 3. To customize any of these options:
 
