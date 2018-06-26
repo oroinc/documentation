@@ -11,6 +11,7 @@ Flow
 ----
 
 .. image:: ../../img/dotmailer_email_campaign/oro_dotmailer_integration.jpg
+   :alt: The diagram illustrating the flow of sending a dotmailer campaign with the help of Oro application
 
 Prepare Data for the Campaign in OroCRM
 ---------------------------------------
@@ -40,6 +41,7 @@ case, it is vital to add an email column along with the first and last
 name of the contact.
 
 .. image:: ../../img/dotmailer_email_campaign/create_ml_oro.jpg
+   :alt: Prepare data for the campaign in orocrm
 
 Click :guilabel:`Save and Close` when you are finished.
 
@@ -65,6 +67,7 @@ will redirect you to a page with the following fields to fill in:
 +-----------------+-------------------------------------------------------------------+
 
 .. image:: ../../img/dotmailer_email_campaign/dotmailer_create_address_book.jpg
+   :alt: Address book form
 
 Click **Save** when you are done.
 
@@ -90,6 +93,7 @@ address book the following way:
 2.  Click **Connect to dotmailer** in the upper-right corner.
 
    .. image:: ../../img/dotmailer_email_campaign/connect_dotmailer_button.jpg
+      :alt: Contact to dotmailer in the marketing list
 
 A pop up form will emerge will the following fields to be defined:
 
@@ -108,6 +112,7 @@ As soon as the connection has been saved, contacts from the marketing list will 
 .. note:: One marketing list may only be connected to one dotmailer address book, and vice versa. Therefore, each connected Oro marketing list will be represented as an address book in dotmailer. Also, note that only marketing lists with email fields can be connected.
 
 .. image:: ../../img/dotmailer_email_campaign/connect_dotmailer_address_book.jpg
+   :alt: Connect to dotmailer form
 
 Once you have connected your marketing list, you will notice a
 **dotmailer button** appear at the top (instead of **Connect to dotmailer**) with the following actions in the
@@ -126,6 +131,7 @@ dropdown:
 +-------------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
 .. image:: ../../img/dotmailer_email_campaign/dotmailer_connected_new.jpg
+   :alt: Data synced into dotmailer address book
 
 At this point, if you go back to dotmailer, you will be able to see data
 from OroCRM (subscribers’ first and last names and contact details)
@@ -141,14 +147,17 @@ side. It is time to create a new email campaign via dotmailer:
 1.  Hover over the **Campaigns** menu in your dotmailer account and select **New Campaign**.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_select_new_campaign.jpg
+       :alt: Creating a new campaign by clicking new campaign in the campaigns menu in dotmailer
 
 2.  Pick a template for your email campaign.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_pick_campaign_template.jpg
+       :alt: Selecting a template for the email campaign on the dotmailer side
 
 3.  Give your campaign a name and click :guilabel:`Continue`.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_name_campaign.jpg
+       :alt: A dialog window prompting to provide a name for the campaign in dotmailer
 
 4.  On the next page, complete the following fields:
 
@@ -166,19 +175,21 @@ side. It is time to create a new email campaign via dotmailer:
 | **Campaign Tags**                 | Enter tags for your email campaign.                                                                                                                 |
 +-----------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
 
-5.  Personalization is available for two fields: **Subject Line** and **Friendly From Name**. 
+5.  Personalization is available for two fields: **Subject Line** and **Friendly From Name**.
 
     It is possible to prefix the recipient’s name with the data stored in OroCRM. You can do this by clicking on the icon above the field (as shown in the screenshot) and selecting the personalization option that suits you best from the dropdown menu.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_create_campaign-crop_highlights.jpg
+       :alt: An example of selecting personalization options in dotmailer
 
 6.  Click **Save and Continue** when you are done. You will be redirected to the **Test and Proof Your Email** page.
 
-7.  On the **Test and Proof Your Email** page, it is possible to choose contacts to send a text version of your email to the selected email addresses. 
+7.  On the **Test and Proof Your Email** page, it is possible to choose contacts to send a text version of your email to the selected email addresses.
 
     Click **Test Send** when you have chosen your contacts. You should have a copy of the email delivered to the specified email address.
 
     .. image:: ../../img/dotmailer_email_campaign/dotmailer_test_send.jpg
+       :alt: Test send form
 
 
 8.  When you are finished, click **Continue** to get redirected to the next page and select contacts for the campaign:
@@ -198,8 +209,10 @@ side. It is time to create a new email campaign via dotmailer:
 11.  Click **Confirm** to confirm sending.
 
      .. image:: ../../img/dotmailer_email_campaign/dotmailer_create_campaign_2.jpg
+        :alt: Example of the campaign builder
 
      .. image:: ../../img/dotmailer_email_campaign/dotmailer_confirm_send.jpg
+        :alt: Click confirm to send the email campaign in dotmailer
 
 
 Check Statistics for Your Campaign
@@ -222,6 +235,7 @@ contact define the number of times an action has been performed, e.g. 2
 opens, 1 click, 1 unsubscribe.
 
 .. image:: ../../img/dotmailer_email_campaign/oro_statistics_email_campaign_dotmailer.jpg
+   :alt: Email campaign statistics displayed o the details page of this campaign in the Oro application
 
 These statistics will help you understand the outcome of your campaign
 and let you filter contacts for the next one.
@@ -236,6 +250,7 @@ In the **Filters** section:
 4.	When you are done, click :guilabel:`Save and Close`.
 
    .. image:: ../../img/dotmailer_email_campaign/oro_statistics_general_opens.jpg
+      :alt: Example of using email campaign statistics results to create a new marketing list
 
 
 This list will now appear in the marketing list page and will contain all contacts who have opened your previous emails.

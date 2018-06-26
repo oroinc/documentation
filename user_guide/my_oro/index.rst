@@ -3,7 +3,7 @@
 My Profile Configuration
 ========================
 
-By clicking on your user name on the top right of the application screen, you can quickly access your profile configuration page, the available user-level configuration settings, as well as your calendar, tasks, events and the log out link. 
+By clicking on your user name on the top right of the application screen, you can quickly access your profile configuration page, the available user-level configuration settings, as well as your calendar, tasks, events and the log out link.
 
 .. image:: /user_guide/img/intro/user_menu_new.png
 
@@ -18,17 +18,8 @@ Follow the links below to find out what capabilities each section of this menu o
 
 .. toctree::
    :maxdepth: 1
-   :hidden: 
+   :hidden:
 
    my_user_page
    my_user_emails
    my_user_menus_config
-
- 
-
-
-
-
-
-
-

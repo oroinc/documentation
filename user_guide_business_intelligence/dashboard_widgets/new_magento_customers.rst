@@ -6,6 +6,7 @@ New Magento Customers
 The widget gives you a quick overview of new Magento customers.
 
 .. image:: /user_guide/img/widgets/new_magento_customers.png
+   :alt: New magento customers
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -21,6 +22,7 @@ You can adjust the following settings for the new Magento customers widget:
 * **Date Range** --- the time for which the widget details are displayed.
 
 .. image:: /user_guide/img/widgets/new_magento_customers_config.png
+   :alt: New magento customers widget configuration
 
 Related Articles
 ^^^^^^^^^^^^^^^^

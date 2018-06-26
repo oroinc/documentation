@@ -30,3 +30,4 @@ Importing Accounts
 .. |item| replace:: account
 
 .. |image| image:: /user_guide/img/export_import/import_accounts.png
+   :alt: Import form

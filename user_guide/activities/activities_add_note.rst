@@ -22,15 +22,17 @@ To add a note to a record:
 
 1. Click **Add Note** under the **More Actions** menu on the top right on the page of the selected record.
 
-   .. image:: /user_guide/img/activities/ AddNotetoRecord.png
+   .. image:: /user_guide/img/activities/AddNotetoRecord.png
+      :alt: Click add note under the more actions
 
 2. In the **Add Note** dialog, provide the text for your note. Formatting tools are available at the top menu.
-  
-   .. image:: /user_guide/img/activities/add_note_ex.png  
+
+   .. image:: /user_guide/img/activities/add_note_ex.png
+      :alt: Add note form
 
 3. Click **Save** to save and add the note to the record.
 
 All the notes added to a record are displayed and can be reached from the **Activity** section of the record pages:
 
 .. image:: ../img/activities/add_note_view.png
-
+   :alt: Added note to a record

@@ -4,7 +4,7 @@ Tracking Websites
 =================
 
 With OroCRM Tracking Websites, you can learn how many users have visited your Web-site from links
-within a specific marketing campaign and what these users' actions at the site were. 
+within a specific marketing campaign and what these users' actions at the site were.
 
 Before you start using tracking websites, ensure that :ref:`tracking is enabled <marketing-system-configuration>` and :ref:`configure tracking settings <admin-configuration-tracking>` in Oro application via system configuration.
 
@@ -13,7 +13,7 @@ When the tracking configuration is ready, create a Tracking Website record and a
 .. contents:: :local:
     :depth: 1
 
-.. note::  Tracking of Magento stores is pre-implemented and available with the extension that you can download at 
+.. note::  Tracking of Magento stores is pre-implemented and available with the extension that you can download at
     https://marketplace.magento.com/oro-oro-tracking.html
 
 .. _user-guide-marketing-tracking-websites-create:
@@ -24,7 +24,7 @@ Create a Tracking Website and Generate a Tracking Code
 1. Navigate to **Marketing > Tracking Websites** in the main menu.
 #. Click **Create Tracking Website**.
 #. In the **General Section**, define the following settings:
-     
+
    .. csv-table::
      :header: "**Field**","**Description**"
      :widths: 10, 30
@@ -40,13 +40,13 @@ Create a Tracking Website and Generate a Tracking Code
      If this is done, you will be able to bind events registered by the tracking engine and other application data like orders, shopping carts, customer profiles, etc. This connection can be further utilized in reports and segments.
 
       .. image:: /img/marketing/tracking_general.png
-      "
+      :alt: Create a tracking website and generate a tracking code
 
 #. Once you finish configuring the tracking website, click **Save and Close** in the top right corner of the page.
 
 .. _user-guide-marketing-tracking-websites-actions:
 
-Manage Tracking Websites 
+Manage Tracking Websites
 ------------------------
 
 You can manage tracking websites from the page of all tracking websites under **Marketing > Tracking Websites**.
@@ -54,12 +54,13 @@ You can manage tracking websites from the page of all tracking websites under **
 When you hover over the more options menu (ellipsis menu) at the end of the row of a tracking website in the table, you can perform the following actions to it:
 
 .. image:: /img/marketing/tracking_grid_actions.png
+   :alt: Manage tracking websites
 
 * |IcEdit| Edit
 * |IcDelete| Delete
 * |IcView| View
 
-.. note:: The tracking process also depends on the :ref:`Tracking Settings <admin-configuration-tracking>` defined for the 
+.. note:: The tracking process also depends on the :ref:`Tracking Settings <admin-configuration-tracking>` defined for the
     OroCRM instance.
 
 .. _user-guide-marketing-tracking-websites-view-page:
@@ -78,17 +79,19 @@ Here you can:
 * Preview the general website tracking details (including the identifier and the URL).
 
   .. image:: /img/marketing/tracking_view_general.png
+     :alt: The general website tracking details
 
 * Get the tracking code that may be incorporated into the website page to :ref:`track <user-guide-how-to-track>` the
   campaign-related user activities.
 
   .. image:: /img/marketing/tracking_view_code.png
+     :alt: The tracking code may be incorporated into the website page
 
   .. note:: The tracking code comes with the following instructions on basic use and customization:
 
      *Make sure this code is on every page of your website before the </body> tag. To track custom events, please uncomment the trackEvent string and replace [name], [value], and [user_identifier] parameters with your values. The script will log an event with the [name] name and optional [value].*
 
-* :ref:`Review the tracking results <user-guide-how-to-track--statistics>` in the Events section. 
+* :ref:`Review the tracking results <user-guide-how-to-track--statistics>` in the Events section.
 
 Share the Tracking Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -117,6 +120,7 @@ Use the Tracking Code
 Tracking code generated in the Tracking Website shall be added before the </body> tag on every page of the website you would like to monitor.
 
 .. image:: /img/marketing/how_to_tracking_code.png
+   :alt: The generated tracking code for a website
 
 The code defines some of `piwik <http://piwik.org>`_-specific settings that should not be changed.
 
@@ -138,8 +142,8 @@ If you want to track user activities on a specific page of the Website, uncommen
 "[name]" and "[value]" with the event name (string) and value (number) you would like to see in the Events report in Oro application (e.g. for a cart, event name may be cart_created, and the value may store the item code or cost).
 
 .. note::
-  
-    The code may be filled with both static and dynamic values. However, the use of dynamic values requires complex back-end development. 
+
+    The code may be filled with both static and dynamic values. However, the use of dynamic values requires complex back-end development.
 
 Tracked Website Example
 -----------------------
@@ -218,6 +222,7 @@ Collect Website Statistics
 A list of events on the tracking website page helps you monitor every occurrence of the tracked action (e.g. a user has accessed a pre-defined part of the website following the campaign). You can find event name and value, user id (guest or user email), the url of the visited page, the code of the marketing campaign and time when the event was logged.
 
   .. image:: /img/marketing/tracking_view_events.png
+     :alt: Collected website statistics displayed in the events section on the tracking website page in the management console
 
 In the example above you can see the three kinds of events defined for the Jack and Johnson E-commerce website tracking. As soon as a user gets on any of the website pages, a *visit* event is logged with the *1* value. As soon as a user gets to the **Orders** page of the website, an *Order* event is logged, with the value that stores an ordered item id. As soon as a user gets to the **Item Details** page of the website, an *View item* event is logged with a value that stores a viewed item id.
 

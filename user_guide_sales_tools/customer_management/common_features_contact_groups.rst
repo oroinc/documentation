@@ -1,6 +1,6 @@
 .. _contact_groups:
 
-Contact Groups 
+Contact Groups
 ==============
 
 A ``contact group`` is a system entity that represents a group of :term:`contacts <Contact>`.
@@ -24,10 +24,10 @@ General
   :widths: 10, 30
 
   "**Owner**","Limits the list of users that can manage the contact group to the users whose
-  :ref:`roles <user-guide-user-management-permissions>` allow managing contact groups of the owner (e.g. the owner, 
+  :ref:`roles <user-guide-user-management-permissions>` allow managing contact groups of the owner (e.g. the owner,
   members of the same business unit, system administrator, etc.)."
   "**Label**","The name used to refer to the contact group on the interface."
-  
+
 Contacts
 ^^^^^^^^
 
@@ -51,6 +51,7 @@ From the grid you can:
 
 
 .. image:: /user_guide/img/contact_groups/cont_groups_grid.png
+   :alt: View and manage a contact group record
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

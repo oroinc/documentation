@@ -6,6 +6,7 @@ Opportunity Statistics
 The Opportunity Statistics widget displays a set of metrics that indicate performance of the opportunity pipeline.
 
 .. image:: /user_guide/img/widgets/opportunity_statistics_1.png
+   :alt: Opportunity statistics
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -25,7 +26,7 @@ You can adjust the following settings for the opportunity statistics widget:
 * **Compare with previous period** --- tick this option if you wish to compare statistics for the current and the previous periods and see it displayed in the dashboard widget.
 * **Advanced Filter** --- set the conditions if you wish to filter your opportunities.
 * **Choose Metrics** --- select what data the widget will display:
-  
+
   * New Opportunities count
   * New Opportunities amount
   * Won Opportunities to date
@@ -34,6 +35,7 @@ You can adjust the following settings for the opportunity statistics widget:
 * **Territories** --- if sales :ref:`territories <user-guide-territories>` are enabled in your system, you can view opportunities filtered within one or several specific territories.
 
 .. image:: /user_guide/img/widgets/opportunity_statistics_2.png
+   :alt: Opportunity statistics configuration
 
 
 Related Articles

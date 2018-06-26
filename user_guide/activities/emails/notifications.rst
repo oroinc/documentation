@@ -20,21 +20,23 @@ To create a notification rule:
 1. Navigate to **System > Emails > Notification Rules**.
 
    .. image:: /user_guide/img/emails/notification_rules.jpg
+      :alt: Click system, emails, notification rules
 
 2. Click **Create Notification Rule** on the top right.
 3. Provide the following details in the **General** section.
 
    * **Entity Name** --- Choose an entity from the list. Only entities that have templates available are listed. If you do not see the necessary entity on the list this list, create a notification template for it first.
 
-   * **Event name** --- Choose the event that will trigger the mailing. The following values are possible: 
-   
+   * **Event name** --- Choose the event that will trigger the mailing. The following values are possible:
+
      * Entity create --- A new record of the entity has been created.
      * Entity remove --- A record of the entity has been removed.
      * Entity update --- A record of the entity has been edited
 
-   * **Template**  --- Choose the template for which the rule will be created. 
+   * **Template**  --- Choose the template for which the rule will be created.
 
    .. image:: /user_guide/img/emails/create_notification_rule.jpg
+      :alt: Provide details in the general section
 
 4. In the **Recipient List** section, define a list of users to whom the email will be sent when the rule is met.
 
@@ -45,12 +47,14 @@ To create a notification rule:
    .. note:: Note that the **Owner** box is only available for the entities with the :ref:`ownership type <user-guide-user-management-permissions-ownership-type>` set to **User**.
 
         .. image:: /user_guide/img/emails/notification_rule.jpg
+           :alt: The form for creating a new notification rule
 
 All available rules are displayed on the pages of all **All Notification Rules** under **System > Emails > Notification Rules**.
 
 .. image:: /user_guide/img/emails/notification_rules_grid.jpg
+   :alt: System, emails, notification rules.
 
-From the page of all notification rules you can perform the following actions to selected rules: 
+From the page of all notification rules you can perform the following actions to selected rules:
 
 * |IcDelete| Delete
 * |IcEdit| Edit

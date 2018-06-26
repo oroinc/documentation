@@ -31,6 +31,7 @@ To define filter, use any of the following filter options or combine them:
 Sample filter that finds all the records with any related activity logged:
 
    .. image:: /user_guide/img/business_intelligence/filters_1.1.png
+      :alt: Filters options
 
 AND/OR Operators
 ----------------
@@ -44,7 +45,8 @@ To combine the conditions of two or more filters, you can use the operators **AN
 The following sections provide a detailed explanation of the filters with examples for different operators.
 
 .. image:: /user_guide/img/business_intelligence/filters_1.png
-  
+   :alt: And / or operators
+
 .. _user-guide--business-intelligence--filters-field-conditions:
 
 Field Conditions
@@ -57,40 +59,48 @@ To define a field condition:
 1. Drag **Field condition** to the box on the right.
 
   .. image:: /user_guide/img/business_intelligence/filters_2.png
+     :alt: Define a field condition by dragging field to the field to the right
 
 2. Click **Choose a field**.
 
   .. image:: /user_guide/img/business_intelligence/filters_3.png
+     :alt: Choose a field
 
 3. A list of fields appears. At the top of the list, you can see the name of the field, for which the records are filtered. (In the example below it is a Contact). Below the Contact name, there is a list of all available fields related to it.
-  
+
   .. image:: /user_guide/img/business_intelligence/filters_4.png
+     :alt: Example of the list of fields filtered for a contact
 
 4. Select a field that you want to apply for the rule:
 
   - This can be a field of the entity selected in the **General** section. For example, we can filter Contact records by gender.
-   
+
   .. image:: /user_guide/img/business_intelligence/filters_5.png
+     :alt: An example of filtering records by gender
 
   - You can also select a field of another entity, related to it. For example, if you want the list to contain only Contacts with addresses in California.
 
     To do so, scroll down the list and select this field under the *Related Entities* header.
 
     .. image:: /user_guide/img/business_intelligence/filters_6.png
+       :alt: Scroll down the list and select this field under the Related Entities header
 
     The name of the selected field (in our example, it is *Addresses*) will appear at the top of the list.
-  
+
     .. image:: /user_guide/img/business_intelligence/filters_7.png
+      :alt: The name of the selected field appears at the top of the list
 
   - You can also add another field related to *Addresses* under the *Related entities* section. For example, you can select only the contacts whose Address Owner has a specific Email.
 
     .. image:: /user_guide/img/business_intelligence/filters_8.png
+       :alt: Add another field related under the related entities section
 
 .. hint::
-   
+
     Once you have specified all the required conditions, another default field condition appears. Some components of this field contain links with a list of possible values suitable for the specified field.
 
     .. image:: /user_guide/img/business_intelligence/filters_9.png
+      :alt: An example of an additional condition field
 
 .. _user-guide--business-intelligence--filters-activity:
 
@@ -104,18 +114,21 @@ To define the activity settings:
 1. Drag **Activity** to the box on the right.
 
 2. There are three selector links:
-  
+
   - *Has activity /has not activity* - only the records to which the defined activity has/has not been assigned will be selected.
 
     .. image:: /user_guide/img/business_intelligence/filters_10.png
+       :alt: The activity filter and its selectors
 
   - The List of available activities to filter by.
-  
+
     .. image:: /user_guide/img/business_intelligence/filters_11.png
-  
+       :alt: The list of available activities to filter by
+
   - *Choose a field*: select the field to filter by. For example, we will select only the records, for which a call was logged after July 1, 2015.
 
 .. image:: /user_guide/img/business_intelligence/filters_12.png
+   :alt: An example of using the activity filter
 
 .. _user-guide--business-intelligence--filters-data-audit:
 
@@ -131,14 +144,16 @@ To define the data audit settings:
 2. Determine if the condition should be valid for the records where the field has or has not been changed.
 
    .. image:: /user_guide/img/business_intelligence/filters_13.png
+      :alt: The condition valid for the records with the field has or has not been changed
 
 3. Select the date when the changes have/have not been applied.
-  
+
 For example, we will select only the records, for which Job Title value has been changed since July 1, 2015.
 
 .. image:: /user_guide/img/business_intelligence/filters_14.png
+   :alt: Select the date when the changes have / have not been applied
 
-.. note:: 
+.. note::
 
     You can combine any number of Activity, Data audit, and Field Condition filters, joining them with the **AND** and **OR** operators.
 
@@ -161,7 +176,7 @@ To define the **Condition Group** filter:
 
     For complex conditions, it is a good idea to draw an outline of the conditions first.
 
-A condition group may also be included into another condition group as a separate filter. 
+A condition group may also be included into another condition group as a separate filter.
 
 Segments
 --------
@@ -175,13 +190,15 @@ The ways to create and manage segments are described more detailed in the :ref:`
 To add a segment to the filters:
 
 1. Drag **Apply segment** to the box on the right.
-  
+
    .. image:: /user_guide/img/business_intelligence/filters_15.png
+      :alt: Drag apply segment to the box on the right
 
 2. Click **Choose segment** and select one of the Segment predefined in the system.
- 
+
    .. image:: /user_guide/img/business_intelligence/filters_16.png
-  
+      :alt: Click choose segment
+
 Subject to the conjunction with the rest of conditions, the list will now include:
 
  - Only the records from the segment that correspond to the rest of conditions (**AND** is used).

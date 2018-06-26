@@ -19,7 +19,7 @@ Manage Calendar Events
 
 In your Oro application, you can manage calendar events from the following pages:
 
-.. contents:: :local: 
+.. contents:: :local:
 
 Please, note that:
 
@@ -32,7 +32,7 @@ From the Page of All Calendar Events
 To manage a specific calendar event from the page of all calendar events:
 
 1. Navigate to **Activities > Calendar Events** in the main menu.
-2. Click the |IcEllipsisH| **More Options** menu at the end of the corresponding calendar event row and select one of the following actions: 
+2. Click the |IcEllipsisH| **More Options** menu at the end of the corresponding calendar event row and select one of the following actions:
 
    * **V** Accept / **X** Decline
    * **?** Accept Tentatively
@@ -41,6 +41,7 @@ To manage a specific calendar event from the page of all calendar events:
    * |IcDelete| Delete
 
    .. image:: /user_guide/img/activities/ManageCalendarEventsPage.png
+      :alt: Select one of the options above
 
 From the Calendar Event Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -55,11 +56,11 @@ To manage a specific calendar event from its page:
    * |IcEdit| Edit
    * |IcDelete| Delete
    * Add Comment
-   
-4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event. 
+
+4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 
    .. image:: /user_guide/img/activities/CalendarEventPage.png
-
+      :alt: Accepted calendar event
 
 From the Page of a Related Record
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -68,7 +69,7 @@ Records that are specified in a calendar event context have this event displayed
 
 1. Navigate to the page of a related record.
 2. Click on the calendar event under **Activity**, and click to expand it and view its details.
-3. Click the |IcEllipsisH| **More Options** menu at the end of the calendar event header and select one of the following actions: 
+3. Click the |IcEllipsisH| **More Options** menu at the end of the calendar event header and select one of the following actions:
 
    * |IcContext| Add Context
    * |IcView| View Calendar Event
@@ -76,8 +77,9 @@ Records that are specified in a calendar event context have this event displayed
    * |IcDelete| Delete Calendar Event
 
    .. image:: /user_guide/img/activities/CalendarEventRelatedRecord.png
+      :alt: Select one of the options above
 
-4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event. 
+4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 
 From My Calendar
 ^^^^^^^^^^^^^^^^
@@ -93,8 +95,9 @@ You can also manage calendar events from the My Calendar page and the Today’s 
    * |IcEdit| Edit
 
    .. image:: /user_guide/img/activities/CalendarEventMyCalendar.png
+      :alt: Select one of the options above
 
-5. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event. 
+5. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 
 
 From the Page of a System Calendar
@@ -111,8 +114,9 @@ You can manage events from the page of the selected system calendar:
    * |IcEdit| Edit
 
 .. image:: /user_guide/img/getting_started/activities/manage_event_from_system_calendar.png
+   :alt: The actions you can perform to calendar events on the page of a system calendar
 
-.. finish_manage_calendar_event 
+.. finish_manage_calendar_event
 
 
 .. include:: /img/buttons/include_images.rst

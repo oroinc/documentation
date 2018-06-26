@@ -27,10 +27,12 @@ To convert a shopping cart into an :ref:`order <user-guide-magento-orders-create
 3. Click the **Place an Order**.
 
    .. image:: /img/magento_entities/PlaceOrderFromCart.png
+      :alt: The place an order button on the magento shopping cart page
 
 3. Enter the admin panel of your Magento shop and submit the order.
 
    .. image:: /img/magento_entities/PlaceOrderFromCartAdminPanel.png
+      :alt: The admin panel of a magento shop in OroCRM
 
 .. caution::
 
@@ -46,6 +48,7 @@ View Carts
 To view all Magento carts, navigate to **Sales > Magento Carts** in the main menu.
 
 .. image:: /img/magento_entities/AllMagentoCartsGrid.png
+   :alt: The list of all magento carts
 
 The following information is displayed for carts:
 
@@ -89,6 +92,7 @@ To view details of a specific cart:
 The following page opens:
 
 .. image:: /img/magento_entities/MagentoCartViewPageNew.png
+   :alt: Details of a specific cart displayed on the cart page
 
 Within the page, the following sections are available:
 
@@ -105,6 +109,7 @@ From the cart view page, you can perform the following actions:
 3. Log a :ref:`Call <doc-activities-calls>`.
 
 .. image:: /img/magento_entities/MagentoCartItemsTopMenu.png
+   :alt: The actions you can perform on the cart view page, such as sync data, send email and log call.
 
 
 .. important::
@@ -118,4 +123,3 @@ From the cart view page, you can perform the following actions:
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-

@@ -6,6 +6,7 @@ Forecast
 The Forecast widget displays expected sales potential: the forecast of opportunities, including opportunities in progress, total and weighted forecasts, total and weighted intermediate forecasts.
 
 .. image:: /user_guide/img/widgets/forecast_dashboard.png
+  :alt:  The forecast widget
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -34,10 +35,10 @@ You can adjust the following settings for the forecast widget:
 
 
 .. image:: /user_guide/img/widgets/configure_widget2.png
+   :alt: Forecast widget configuration form
 
 Related Articles
 ^^^^^^^^^^^^^^^^
 
 * :ref:`Business-to-business Sales <user-guide-business-to-business-sales>`
 * :ref:`How to Create and Work with an Opportunity <user-guide-system-channel-entities-opportunities>`
-

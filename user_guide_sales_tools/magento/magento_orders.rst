@@ -30,15 +30,18 @@ To create an order from the view page of the selected Magento customer:
 3. Click **Create Order** in the top navigation menu on the customer page.
 
    .. image:: /img/magento_entities/CreateOrderButtonNew.png
+      :alt: Click create order in the navigation menu
 
 
 4. Enter the admin panel of your Magento shop.
 
    .. image:: /img/magento_entities/LoginToAdminMagento.png
+      :alt: The dialog displaying that log in form for the magento admin panel
 
 5. Fill in the details in the order form and click **Submit Order** in the top right corner of the form.
 
    .. image:: /img/magento_entities/CreatOrderInAdminPanel.png
+      :alt: Create an order in a magento store from the admin panel in OroCRM.
 
 Please, keep in mind that:
 
@@ -55,10 +58,12 @@ To convert a shopping cart into an order, perform the following steps:
 3. Click the **Place an Order**.
 
    .. image:: /img/magento_entities/PlaceOrderFromCart.png
+      :alt: Placing an order from a magento shopping cart page in OroCRM
 
 3. Enter the admin panel of your Magento shop and submit the order.
 
    .. image:: /img/magento_entities/PlaceOrderFromCartAdminPanel.png
+      :alt: Providing details of an order in the admin panel
 
 .. caution::
 
@@ -73,6 +78,7 @@ View Magento Orders
 To view all orders, navigate to **Sales > Magento Orders** in the main menu.
 
 .. image:: /img/magento_entities/MagentoOrdersGrid.png
+   :alt: The list of all magento orders in OroCRM
 
 The following information about orders is available:
 
@@ -112,6 +118,7 @@ To view details of a specific order:
 The following page opens:
 
 .. image:: /img/magento_entities/OrderPending.png
+   :alt: The page of a pending magento order in OroCRM
 
 Within the page, the following sections are available:
 
@@ -131,6 +138,7 @@ From the order view page, you can perform the following actions:
 3. **Record Feedback** on the order.
 
    .. image:: /img/magento_entities/MagentoOrderTopMenu.png
+      :alt: Click record feedback
 
 
 .. important::

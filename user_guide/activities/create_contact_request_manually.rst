@@ -7,7 +7,7 @@ For troubleshooting purposes, you can also create a contact request from within 
 
 1. Navigate to **Activities > Contact Requests** in the main menu.
 2. Click **Create Contact Request** on the top right.
-3. Provide the following details on the page that appears: 
+3. Provide the following details on the page that appears:
 
    .. csv-table::
      :header: "**Name**","**Description**"
@@ -29,25 +29,11 @@ For troubleshooting purposes, you can also create a contact request from within 
      "**Comment**","The text of the request."
 
    .. image:: /user_guide/img/activities/CreateContactRequestCRM.png
+      :alt: Request information form
 
 4. Click **Save** on the top right.
 
-.. note:: If you use OroCRM+Commerce application, you can also relate a contact request to a customer user or a website, if necessary. 
+.. note:: If you use OroCRM+Commerce application, you can also relate a contact request to a customer user or a website, if necessary.
 
           .. image:: /user_guide/img/activities/CreateContactRequestCommerce.png
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             :alt: The form for creating the new contact request

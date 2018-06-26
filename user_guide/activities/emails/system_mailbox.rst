@@ -5,8 +5,8 @@ Work with System Mailboxes
 
 .. start_system_mailbox
 
-.. contents:: :local: 
-   
+.. contents:: :local:
+
 Getting Access to a System Mailbox
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -26,6 +26,7 @@ selecting the system mailbox from the grid view selector in the top left
 corner.
 
 .. image:: /user_guide/img/emails/sys_mailbox_qa.jpg
+   :alt: Accessing the system mailbox from the grid view selector
 
 Automated Processing of Emails
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -58,6 +59,6 @@ incoming emails. Using an auto-response is a great way to let your
 customers know that you have received their message and that someone
 will be in touch soon.
 
-Refer to your administrator to enable this functionality. More information on auto-responses configuration can be found in the admin :ref:`guide <user-guide-email-admin>` to email. 
+Refer to your administrator to enable this functionality. More information on auto-responses configuration can be found in the admin :ref:`guide <user-guide-email-admin>` to email.
 
 .. finish_system_mailbox

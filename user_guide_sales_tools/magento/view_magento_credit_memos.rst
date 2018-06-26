@@ -15,6 +15,7 @@ From the Magento Credit Memo List
 To view all Magento credit memos, navigate to **Sales > Magento Credit Memos** in the main menu.
 
 .. image:: /img/magento_entities/MagentoCreditMemosGrid.png
+   :alt: The page of all available magento credit memos in OroCRM
 
 The following information is displayed for credit memos:
 
@@ -55,6 +56,7 @@ To view details of a specific Magento Credit Memo:
    The following page opens:
 
    .. image:: /img/magento_entities/MagentoCreditMemosViewPage.png
+      :alt: Click magento credit memos in the main menu
 
 Within the page, the following sections are available:
 
@@ -63,10 +65,10 @@ Within the page, the following sections are available:
 3. **Activity** section includes any :ref:`notes <user-guide-add-note>` related to the credit memos (if available).
 
    .. image:: /img/magento_entities/CreditMemoSectionViewPage.png
+      :alt: Credit memo items
 
 
 
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
