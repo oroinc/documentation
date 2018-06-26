@@ -47,7 +47,7 @@ To create a notification rule:
    .. note:: Note that the **Owner** box is only available for the entities with the :ref:`ownership type <user-guide-user-management-permissions-ownership-type>` set to **User**.
 
         .. image:: /user_guide/img/emails/notification_rule.jpg
-           :alt: Owner box
+           :alt: The form for creating a new notification rule
 
 All available rules are displayed on the pages of all **All Notification Rules** under **System > Emails > Notification Rules**.
 

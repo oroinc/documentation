@@ -71,12 +71,12 @@ To apply an email template to a new email, select the template from the list of 
 You will see an **Apply Template Confirmation** message. Click **Yes, Proceed** to apply the selected template.
 
 .. image:: /user_guide/img/emails/apply_template_confirmation.jpg
-   :alt: Click yes, proceed
+   :alt: The confirmation dialog prompting to apply an email template
 
 You should now have your template applied to your email.
 
 .. image:: /user_guide/img/emails/template_applied.jpg
-   :alt: Have your template applied
+   :alt: The email message with the applied email template
 
 .. finish_create_template
 

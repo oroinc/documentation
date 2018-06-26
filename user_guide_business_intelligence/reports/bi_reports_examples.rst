@@ -32,7 +32,7 @@ Let us see what happens after we use the **Count** function for the **Opportunit
 5. Click |IcEdit| to update the column and change the function for the **Budget amount** to *Count*.
 
    .. image:: /user_guide/img/business_intelligence/reports_examples_3.png
-      :alt: Update the column and change the function for the budget amount to count by clicking on it
+      :alt: Updating the buget amount in the report
 
 6. Click **Save**. The report data changes:
 

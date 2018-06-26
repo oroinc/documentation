@@ -23,16 +23,16 @@ organization configuration, it may be displayed horizontally or vertically. In t
 displayed as icons.
 
 .. image:: ../img/navigation/menu/nav_bar_top.png
-   :alt: The horizontally menu bar
+   :alt: The horizontal menu bar
 
 .. image:: ../img/navigation/menu/nav_bar_side.png
-   :alt: The vertically menu bar
+   :alt: The vertical menu bar
 
 In the mobile version, the menu bar can be accessed via the "hamburger" button next to the organization name:
 
 
 .. image:: ../img/navigation/menu/header_mobile.png
-   :alt: The menu bar can be accessed by clicking the “hamburger” button
+   :alt: The menu bar can be accessed by clicking the hamburger button
 
 The list of menu items that are available to you depends on your access and permission settings, as defined in your
 organization.
@@ -49,7 +49,7 @@ Navigation Tools
 At the very top of the page, there is a navigation panel that contains different navigation tools, as shown below.
 
 .. image:: ../img/navigation/panel.png
-   :alt: Navigation tools
+   :alt: Navigation tools in the navigation panel
 
 .. csv-table::
   :header: "#","Item","Description","Related Document"

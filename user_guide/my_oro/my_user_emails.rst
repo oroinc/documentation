@@ -19,7 +19,7 @@ To reach the **My Emails** page:
 2.  Click **My Emails** .
 
 .. image:: /user_guide/img/getting_started/emails/user_my_emails.jpg
-   :alt: How to reach the my emails page
+   :alt: My emails link
 
 From the page of all emails, you can:
 
@@ -49,7 +49,7 @@ Use Filters
 To enable filters for My Emails page, click the corresponding button on the right:
 
 .. image:: /user_guide/img/getting_started/emails/filters_icon.jpg
-   :alt: The corresponding button
+   :alt: The filter icon on the page of all emails
 
 Filters sort your emails based on certain criteria, such as:
 

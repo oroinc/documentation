@@ -15,7 +15,7 @@ To see the Magento Newsletter Subscribers :ref:`grid <doc-grids>` go to the **Ma
 
 
 .. image:: ../../img/magento_entities/nl_menu.png
-   :alt: Click magento newsletter subscribers
+   :alt: Magento newsletter subscribers section in the main menu
 
 
 From the :ref:`grid <doc-grids>` of Magento Customers you can:

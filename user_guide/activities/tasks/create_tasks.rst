@@ -24,12 +24,12 @@ To add a task  manually:
 2. Click **Create Task** on the top right.
 
    .. image:: /user_guide/img/activities/tasks/tasks_add_fromgrid.png
-      :alt: Click Create Task
+      :alt: Create a task button
 
 3. On the **Create Task** page, fill in the required information:
 
    .. image:: /user_guide/img/activities/tasks/activities_tasks_actions_add0.png
-      :alt: Fill in the required information
+      :alt: Filling in the required information when creating a new task
 
    * **Subject** — The name which summarizes what the task is about.
    * **Description** — Detailed statement of what work is to be done in relation to the task. Use the embedded editor to format text, add images, links, etc.
@@ -80,7 +80,7 @@ To create a task from a user profile:
 3. In the **Assign Task To** dialog, specify the required data. Fill in the required information as described in the `Add a New Task Manually`_ section.
 
    .. image:: /user_guide/img/activities/tasks/activities_tasks_actions_add_userpage2.png
-      :alt: ill in the required information
+      :alt: Filling in the required information when adding a task from the user profile
 
 4. Click **Create Task**. The task appears in the **Tasks** subsection **Additional Information** on the user profile page.
 
@@ -98,12 +98,12 @@ To create a task when viewing the related record (e.g. opportunity, account, etc
 1. On the page of a related record, click **More Actions > Add Task** on the top right of the page.
 
    .. image:: /user_guide/img/activities/tasks/tasks_actions_add_related0.png
-      :alt: Click More Actions, Add Task
+      :alt: Adding a task from the page of a related record
 
 2. In the **Add Task** dialog, specify the required data, as described in the `Add a New Task Manually`_ section.
 
    .. image:: /user_guide/img/activities/tasks/tasks_actions_add_related.png
-      :alt: Specify the required data
+      :alt: Specifying the required data when adding a task from a page of a related record
 
 3. Click **Create Task**.
 

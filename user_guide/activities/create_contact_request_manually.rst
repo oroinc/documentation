@@ -36,4 +36,4 @@ For troubleshooting purposes, you can also create a contact request from within 
 .. note:: If you use OroCRM+Commerce application, you can also relate a contact request to a customer user or a website, if necessary.
 
           .. image:: /user_guide/img/activities/CreateContactRequestCommerce.png
-             :alt: Click save
+             :alt: The form for creating the new contact request
