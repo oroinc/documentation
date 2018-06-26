@@ -60,8 +60,7 @@ To manage a specific calendar event from its page:
 4. To respond to the event, click  **Yes**, **Maybe**, or **No** for *Going* depending on whether you are going to attend the event.
 
    .. image:: /user_guide/img/activities/CalendarEventPage.png
-      :alt: Click yes, maybe or no
-
+      :alt: Accepted calendar event
 
 From the Page of a Related Record
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -115,7 +114,7 @@ You can manage events from the page of the selected system calendar:
    * |IcEdit| Edit
 
 .. image:: /user_guide/img/getting_started/activities/manage_event_from_system_calendar.png
-   :alt: Select one of the options above
+   :alt: The actions you can perform to calendar events on the page of a system calendar
 
 .. finish_manage_calendar_event
 
