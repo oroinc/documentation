@@ -15,7 +15,7 @@ From the Magento Credit Memo List
 To view all Magento credit memos, navigate to **Sales > Magento Credit Memos** in the main menu.
 
 .. image:: /img/magento_entities/MagentoCreditMemosGrid.png
-   :alt: From the magento credit memo list
+   :alt: The page of all available magento credit memos in OroCRM
 
 The following information is displayed for credit memos:
 
