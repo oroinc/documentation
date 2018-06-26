@@ -28,7 +28,7 @@ You can reach your emails by clicking on the Recent Emails button in the top rig
 will appear, as illustrated in the screenshot below:
 
 .. image:: /user_guide/img/emails/recent_emails_button.jpg
-   :alt: Click on the Recent Emails button
+   :alt: Click on the recent emails button
 
 Clicking on an email from the list redirects you to the page of the selected email.
 
@@ -45,7 +45,7 @@ The following features are available within the **Recent Emails** list:
 3. **Reply All** (launches a **Reply** email dialog window).
 
    .. image:: /user_guide/img/emails/mark_unread_reply_all.jpg
-      :alt: Functions that can be done with letters
+      :alt: Read and unread emails on the recent emails list
 
 .. finish_recent_emails_menu_button
 
@@ -57,7 +57,7 @@ Activity Section
 All the emails sent to a record are displayed in and can be reached from the **Activity** section of a record’s page.
 
 .. image:: /user_guide/img/emails/activities_section.jpg
-   :alt: Activity Section
+   :alt: Emails displayed in the activity section on a record`s page
 
 Clicking on the ellipsis menu of a record will launch the following action list for an email:
 

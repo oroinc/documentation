@@ -190,7 +190,7 @@ Add, Edit, and Delete a Dashboard
 Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettings| **Tools** and use one of the following actions:
 
 .. image:: /user_guide/img/widgets/dashboards_8_new.png
-   :alt: Manage the widgets bu clicking the tools menu
+   :alt: Manage the widgets by clicking the tools menu
 
 - Click |IcEdit| to edit the dashboard.
 
@@ -203,7 +203,7 @@ Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettin
     You can also perform these actions via the  |IcMore| **More Options** menu from the Dashboards list page (**Dashboards > Manage Dashboards** in the main menu).
 
     .. image:: /user_guide/img/widgets/dashboards_9.png
-       :alt: Perform actions by cliking the more options menu
+       :alt: Perform actions by clicking the more options menu
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

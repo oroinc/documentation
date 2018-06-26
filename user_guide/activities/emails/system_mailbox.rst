@@ -26,7 +26,7 @@ selecting the system mailbox from the grid view selector in the top left
 corner.
 
 .. image:: /user_guide/img/emails/sys_mailbox_qa.jpg
-   :alt: Click my user, my emails
+   :alt: Accessing the system mailbox from the grid view selector
 
 Automated Processing of Emails
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

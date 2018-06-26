@@ -217,13 +217,13 @@ Grouping by Date
 In this section, you can define whether to show additional period filters for this report on the report view page.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_6.png
-   :alt: Grouping by date
+   :alt: A report with additional period filters
 
 With these filters, you can define the date range to filter the report data and group the data in this range by periods (days, month, quarters, years).
 You can also decide whether to show or not the periods that do not contain any data.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_7.png
-   :alt: Desiner in the grouping by date
+   :alt: Designer in the grouping by date
 
 .. csv-table::
   :header: "Field","Description"
@@ -275,7 +275,7 @@ In the main menu, navigate to **Report & Segments > Manage Reports**, and in the
 Alternatively, hover over the |IcEllipsisH| **More Options** menu and click the |IcView| **View** icon.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_9.png
-   :alt: View a custom report
+   :alt: Using the view icon to open the details page of the custom report
 
 From the Custom Report View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -283,7 +283,7 @@ From the Custom Report View Page
 In the main menu, navigate to **Report & Segments**. Custom reports are gathered in sections by the name of the field they are related to. Select the required section, navigated further to the desired report, and click it.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_10.png
-   :alt: From the custom report view page
+   :alt: Reports and segments menu
 
 Export a Report
 ---------------
@@ -297,7 +297,7 @@ Export a Report
 2. On the report page, click the **Export Grid** button in the upper-left corner, and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_11.png
-      :alt: Export a report
+      :alt: Exporting a report
 
 Edit a Custom Report
 --------------------
@@ -310,7 +310,7 @@ From the Custom Reports Grid
 2. On the **All Reports** page, hover over the |IcEllipsisH| **More Options** menu, and then click the |IcEdit| **Edit** icon.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_12.png
-      :alt: From the custom reports grid
+      :alt: The edit icon on the page of all reports
 
 3. Update the report details as required. For the description of the fields, see `Create a Custom Report`_.
 
@@ -326,7 +326,7 @@ From the Custom Report View Page
    Alternatively, hover over the |IcEllipsisH| **More Options** menu, and then click the |IcView| **View** icon.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_13.png
-      :alt: From the custom report view page
+      :alt: The view icon on the page of all reports
 
 3. On the report page, click **Edit** in the upper-right corner.
 
@@ -345,7 +345,7 @@ From the Custom Reports Grid
 2. On the custom reports page, select the report to delete, hover over the |IcEllipsisH| **More Options** menu, and then click |IcDelete| **Delete**.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_14.png
-      :alt: From the custom reports grid
+      :alt: The delete icon on the page of all reports
 
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
@@ -355,7 +355,7 @@ From the Custom Report View Page
 Alternatively, you can delete a custom report from the reports view page by clicking **Delete** in the upper-right corner.
 
 .. image:: /user_guide/img/business_intelligence/custom_reports_15.png
-   :alt: From the custom report view page
+   :alt: Deleting the report from its details page
 
 Delete Multiple Custom Reports
 ------------------------------
@@ -369,7 +369,7 @@ You can delete multiple custom reports at a time.
 2. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| to delete multiple reports at a time.
 
    .. image:: /user_guide/img/business_intelligence/custom_reports_16.png
-      :alt: Delete multiple custom reports
+      :alt: Deleting multiple custom reports
 
 4. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
 
