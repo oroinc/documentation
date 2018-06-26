@@ -53,7 +53,7 @@ To create a new case:
 4. Click **Save** on the top right.
 
     .. image:: /user_guide/img/activities/CreateCaseNew.png
-       :alt: Click save
+       :alt: A new case on the page of create cases
 
 .. end_create_case
 

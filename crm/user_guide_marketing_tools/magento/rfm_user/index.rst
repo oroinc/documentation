@@ -165,7 +165,7 @@ as soon as new data appears in the system.
 3. Filter data by the recency and frequency values (the combined filter should have the following values: ``Recency >= 4 AND Frequency <=3``).
 
  .. image:: /admin_guide/img/rfm/rfm_segment-norecentactivity.png
-    :alt: Churn candidates segment
+    :alt: Create a segment based on RFM metrics
 
 When you decide to start reactivation campaign and begin creating a marketing list, specify that you want to include only customers belonging to a particular segment into it. To do this, use the **Apply Segment** filter on the marketing list creation form.
 
@@ -211,7 +211,7 @@ To simplify creation of the marketing list, you can filter data using a predefin
 
 
 .. image:: /admin_guide/img/rfm/rfm_marketinglist-topcustomers_sgmnt.png
-   :alt: Use the Apply Segment filter and select the “top customers” segment for it
+   :alt: Create a marketing list based on RFM metrics
 
 
 For more details about marketing lists and their creation, please see the `Marketing Lists <../../user-guide-role-based/marketing-tools/marketing-lists>`__ guide.
@@ -236,11 +236,11 @@ order.
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-cell.png
-   :alt: Select RFM metrics and the customers’ identifiers as the report columns to a simple report
+   :alt: A report that shows RFM cells for each customer, part 1
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-cell2.png
-   :alt: The list of customers
+   :alt: A report that shows RFM cells for each customer, part 2
 
 
 
@@ -257,11 +257,11 @@ Let us assume, you have created the corresponding "Top customers" segment in adv
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-topcustomers_sgmnt.png
-   :alt: Use the apply segment in the filters
+   :alt: Top customers report, part 1
 
 
 .. image:: /admin_guide/img/rfm/rfm_report-topcustomers_sgmnt2.png
-   :alt: The “top customers” list
+   :alt: Top customers report, part 2
 
 
 For more details about reports and their creation, please see the :ref:`Reports <user-guide-reports>` topic.
@@ -303,7 +303,7 @@ Review the RFM Metrics for a Customer from an Account View
 
 
 .. image:: /admin_guide/img/rfm/rfm_accountview.png
-   :alt: Magneto channel in the oro application
+   :alt: RFM cell under the customer name in the top right corner of the customer view page
 
 
 .. Important::
@@ -323,7 +323,7 @@ Review the RFM Metrics for a Customer from an Account View
 
 
   .. image:: /admin_guide/img/rfm/rfm_accountview2.png
-     :alt: Order history data differs for each channel
+     :alt: RFM metrics is different for each of the customer records displayed
 
 .. toctree::
    :hidden:

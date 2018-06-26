@@ -112,7 +112,7 @@ You can map contents of OroCRM marketing list to use a segment of the
 -  Press **Connect.**
 
 .. image:: ../../img/mc_email_campaign/o_select_mc_subscribers_list2.jpg
-   :alt: "Connect to mailchimp" form
+   :alt: Map contents of an OroCRM marketing list to use a segment of the subscribers' list in MailChimp
 
 Once you are connected, you will also notice a MailChimp button appear
 at the top with the following actions in the dropdown:
@@ -227,7 +227,7 @@ specify merge tags for your recipients, i.e. \*\|FNAME\|\* or
 \*\|FNAME\|\* \*\|LNAME\|\*\ **.**
 
 .. image:: ../../img/mc_email_campaign/mc_campaign_Info.jpg
-   :alt: Check personalize the "to" field
+   :alt: Select the option to personalize emails in the campaign
 
 Once you are done, click **Next** in the lower right corner. You can
 also click on the links at the bottom of the page, they will redirect
@@ -265,7 +265,7 @@ your newly created email campaign.
    :alt: Click track performance in reports on the mailchimp side
 
 .. image:: ../../img/mc_email_campaign/mc_statistics.jpg
-   :alt: Halloween offers
+   :alt: Campaign statistics collected on the MailChimp side
 
 Receive Campaign Statistics on the OroCRM Side
 ----------------------------------------------
@@ -283,7 +283,7 @@ understand the outcome of your campaign and let you filter contacts for
 the next one.
 
 .. image:: ../../img/mc_email_campaign/o_email_campaign_info.jpg
-   :alt: Receive campaign statistics on the Oro application
+   :alt: Receive campaign statistics on the Oro application side
 
 .. note:: Please note that sometimes Mailchimp's summary information may not match the OroCRM summary in the same report. This may happen because one set of statistics comes from Mailchimp directly. The other is generated as we receive specific reporting data back about recipients.
 

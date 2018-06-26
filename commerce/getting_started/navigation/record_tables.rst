@@ -42,7 +42,7 @@ You can navigate between pages using the **<** (previous page) and **>** (next p
 To change the number of records displayed per page, click the **View Per Page** drop-down list on the top right of the table, and select the required number of items per page.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_viewperpage.png
-   :alt: Click the View Per Page drop-down list to change the number of records displayed
+   :alt: Changing the number of records displayed
 
 .. _doc-grids-actions-refresh:
 .. _doc-grids-actions-export:
@@ -71,12 +71,12 @@ The tables not only display record data but also contain links to the pages of t
 #. |IcRedo| **Refresh** --- Use to refresh the data displayed in the table and retrieve the latest details
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_refresh.png
-      :alt: Refresh in the table
+      :alt: Refreshing data in the table
 
 #. |IcReset| **Reset** --- Use to clear the table customization and return to default settings. Reset applies to all filters, records per page and sorting changes you have made.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_reset.png
-      :alt: Reset in tables
+      :alt: Resetting data in the tables
 
 #. |IcSettings| **Grid Settings** --- Use to define which columns to show in the table.
 
@@ -198,7 +198,7 @@ To save a table as a new one:
 2. Click **Save as**.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsaveas.png
-      :alt: Click save as in the options next to the table name
+      :alt: Saving a table view
 
 3. In the dialog, provide the following information:
 
@@ -206,7 +206,7 @@ To save a table as a new one:
    * **Set as default** --- Select this check box to make the new grid view a default one.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewdialog.png
-      :alt: Provide the following information in the dialog
+      :alt: Providing a name for a new table view
 
 4. Click **Save**.
 

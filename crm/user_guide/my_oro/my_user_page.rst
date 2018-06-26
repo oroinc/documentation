@@ -28,12 +28,12 @@ There are a number of effective tools and actions available on the page of your 
    * You can also check which business unit owns your user record. Click on the owner name (e.g. Main) to open the page of the corresponding business unit. If you are logged into the organization with global access (i.e. technical organization that aggregates data from all organizations created in the system), then in brackets you will see the name of organization that owns the user.
 
      .. image:: /user_guide/img/getting_started/my_oro/my_user_review_owner.png
-        :alt: Owner form
+        :alt: The link to the bussiness unit specified as the user record owner
 
    * You can also see who, how and when modified your profile by clicking **Change History** link.
 
     .. image:: /user_guide/img/getting_started/my_oro/my_user_change_history.png
-       :alt: Window of admin change history
+       :alt: Admin change history page
 
 #. **Access user-level configuration options.**
 
@@ -44,7 +44,7 @@ There are a number of effective tools and actions available on the page of your 
    To update the details of your profile, click **Edit** on the top right on the page. On the edit page, you can update your credentials, change the password, upload a new avatar, and update email details.
 
     .. image:: /user_guide/img/getting_started/my_oro/user_profile_edit_page.png
-       :alt: User profile
+       :alt: User profile page
 
 #. **Perform actions available under the More Actions menu**:
 
@@ -57,7 +57,7 @@ There are a number of effective tools and actions available on the page of your 
    * :ref:`Reset your profile password <user-guide-getting-started-profile-password>`
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_more_actions.png
-      :alt: Available actoins in the more actions menu
+      :alt: Available actions in the more actions menu
 
    .. note:: Non-default buttons can be added to **More Actions** menu. If you see non-default buttons such as Add Task, Add Event or Add Attachment, please refer to the :ref:`Activities <user-guide-activities>` guide for more information.
 
