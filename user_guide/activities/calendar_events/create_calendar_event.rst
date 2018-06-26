@@ -149,6 +149,6 @@ To add an event to a system calendar from its page:
 5. Click **Save and Close**.
 
   .. image:: /user_guide/img/getting_started/calendars/create_system_cal_event_new.png
-     :alt: Click safe and close
+     :alt: The form for creating a system calendar
 
 .. finish_calendar_event
