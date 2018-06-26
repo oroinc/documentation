@@ -92,7 +92,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
 3. The **Activity** section includes any :ref:`activities <user-guide-activities>` related to the account, such as attachments, calls, calendar events, notes, emails or tasks (if available).
 
    .. image:: /user_guide/img/accounts/accounts_view_activities.png
-      :alt: The activity section
+      :alt: The activity section on the account page, displaying assigned tasks, added notes and calendar events, and logged calls
 
    .. note:: If an activity-related action was performed for a customer or a contact assigned to the account, they will not be displayed. Only the activities performed directly for the account are available in the section.
 
@@ -135,7 +135,7 @@ The following sections are available for the account :ref:`page <user-guide-ui-c
       .. note:: In new installations of OroCRM (2.0 and higher) the functions of a Sales channel are reduced to enabling Business Customers and controlling their grouping at the Account view. It is, therefore, no longer essential to create a Sales channel to enable leads and opportunities – these are enabled as features.
 
       .. image:: /user_guide/img/accounts/accounts_view_channels_2.png
-         :alt: Opportunity in customers lazysize
+         :alt: Opportunities for customers displayed in the sales channel on the account page
 
     * Within a **Commerce** Channel, there are seven tabs with Commerce customer-related information:
 
@@ -157,7 +157,7 @@ The following actions can be performed for the accounts from the :ref:`view page
 1. Share the account. Clicking **Share** will prompt a sharing settings pop up window to open.
 
    .. image:: /user_guide/img/accounts/accounts_view_actions_share.png
-      :alt: Click Share to share the account
+      :alt: The sharing settings dialog displayed after clicking the share button on the account page
 
 
 2. Get to the |IcEdit| **Edit** form of the account.
@@ -176,7 +176,7 @@ The following actions can be performed for the accounts from the :ref:`view page
    * :ref:`Create Opportunity <user-guide-system-channel-entities-opportunities>`
 
    .. image:: /user_guide/img/accounts/MoreActionsMenu.png
-      :alt: More actions menu
+      :alt: The more actions menu on the account page
 
 Export
 """"""
@@ -194,7 +194,7 @@ Account Actions from the Account List
 By hovering over the |IcMore| more actions menu to the right of the necessary accountm you can perform the following actions:
 
 .. image:: /user_guide/img/accounts/accounts_grid.png
-   :alt: Click on the menu to do some actions
+   :alt: Account actions from the account list displaying the view, edit and delete icons for the selected account
 
 1. View the account by clicking |IcView|
 
@@ -205,7 +205,7 @@ By hovering over the |IcMore| more actions menu to the right of the necessary ac
 4. Do inline editing for specific columns, such as account name, owner or tags, by clicking |IcPencil|
 
    .. image:: /user_guide/img/accounts/accounts_grid_inline_editing.gif
-      :alt: Actions in the account
+      :alt: Inline editing for specific columns on the page of all accounts
 
 4. Merge Accounts by clicking |IcMerge|
 
@@ -282,7 +282,7 @@ It shows:
 - The total lifetime sales value registered in your Oro application.
 
 .. image:: /user_guide/img/accounts/accounts_report_by_lifetime.png
-  :alt: Accounts life time value
+  :alt: The list of lifetime value reports for accounts
 
 
 Accounts by Opportunities

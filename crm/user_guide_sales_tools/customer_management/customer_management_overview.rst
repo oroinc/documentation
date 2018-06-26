@@ -45,7 +45,7 @@ Each profile within one channel is a *customer*. However, the type of customers 
 * For profiles that come from the Commerce channel, these are **Customer Users** and **Customers**. In this case, Customers are companies who buy your products using OroCommerce storefront, and Customer Users are those people who act on behalf of a company.
 
 .. image:: /user_guide/img/accounts/accounts_view_channels.png
-   :alt: Customers
+   :alt: The account page with 3 channel sections
 
 Although all these customers may come from different channels, data received is aggregated under accounts. For instance, if customer A has arrived from Sales and Commerce channels, but has been recognized as the same person, information on such customer will be collected under one account. This means that all quotes, orders or carts created by Customer A will be visible and trackable on one page, giving a 360 degree view of his activity.
 
