@@ -282,7 +282,7 @@ It shows:
 - The total lifetime sales value registered in your Oro application.
 
 .. image:: /user_guide/img/accounts/accounts_report_by_lifetime.png
-  :alt: The list of lifetime value reports for accounts
+   :alt: The list of lifetime value reports for accounts
 
 
 Accounts by Opportunities
