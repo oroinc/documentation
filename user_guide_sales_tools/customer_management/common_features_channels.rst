@@ -169,7 +169,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 
 .. image:: /user_guide/img/channel_guide/channels_created_b2b_view.png
-   :alt: From the view page
+   :alt: The view page of the sales channel
 
 
 - Deactivate or activate channels.  No new data from the channel will be uploaded for
