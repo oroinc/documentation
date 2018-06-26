@@ -39,7 +39,7 @@ To add an attachment to a record:
 .. note:: You can access attached files under *Attachments* in the **Additional Information** section of record pages.
 
           .. image:: ../img/activities/add_attachment_view.png
-             :alt: Attachment on the page of apportunity
+             :alt: Attachment on the page of opportunity
 
 
 .. |IcDelete| image:: ../../img/buttons/IcDelete.png
