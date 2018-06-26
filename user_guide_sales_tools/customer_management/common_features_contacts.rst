@@ -161,7 +161,7 @@ To add an address to the address book:
    The address and the map showing the address location is displayed on the right of the address.
 
    .. image:: /user_guide/img/contacts/acc_address_saved.png
-      :alt: Click Save on the
+      :alt: The address and the map displaying the address location
       :class: with-border
 
 View an Address on the Map
