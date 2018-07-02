@@ -23,6 +23,7 @@ First, you have to configure a transport layer and set one to be
 default. For the config settings
 
 .. code-block:: none
+    :linenos:
 
     # config/config.yml
 
@@ -38,6 +39,7 @@ DBAL Transport
 ~~~~~~~~~~~~~~
 
 .. code-block:: none
+    :linenos:
 
     # config/parameters.yml
 
@@ -84,6 +86,7 @@ To consume messages you have to first create a message processor:
 Register it as a container service and subscribe to the topic:
 
 .. code-block:: none
+    :linenos:
 
     oro_channel.async.change_integration_status_processor:
         class: 'FooMessageProcessor'
@@ -187,6 +190,7 @@ configuration supervisord keeps running four simultaneous instances of
 instance has dead by any reason.
 
 .. code-block:: ini
+    :linenos:
 
     [program:oro_message_consumer]
     command=/path/to/bin/console --env=prod --no-debug oro:message-queue:consume
@@ -290,6 +294,7 @@ Before you start to use traits in functional tests, you need to register
 environment.
 
 .. code-block:: none
+    :linenos:
 
     # config/config_test.yml
 

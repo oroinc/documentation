@@ -80,8 +80,9 @@ SSH access to OroCloud environment can be requested via the customer support por
 * User(s) public keys (a key) should be created using the following command:
 
   .. code-block:: none
+      :linenos:
 
-     ssh-keygen -t rsa -b 2048 -f /path/to/ keyfile.
+      ssh-keygen -t rsa -b 2048 -f /path/to/ keyfile.
 
 See the *Before You Begin* section of the :ref:`OroCloud maintenance tools <cloud_maintenance>` topic for more information on how to generate the key.
 

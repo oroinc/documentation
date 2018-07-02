@@ -14,14 +14,16 @@ To prepare files for the website located in the sub-directory (e.g /uk), do the 
    For example:
 
    .. code-block:: php
+       :linenos:
 
-      require_once __DIR__.'/../app/AppKernel.php';
+       require_once __DIR__.'/../app/AppKernel.php';
 
    should be changed to
 
    .. code-block:: php
+       :linenos:
 
-      require_once __DIR__.'/../../app/AppKernel.php';
+       require_once __DIR__.'/../../app/AppKernel.php';
 
 2. Add WEBSITE_PATH parameter to ServerBag before $response = $kernel->handle($request); This parameter value should be the new website folder name.
 

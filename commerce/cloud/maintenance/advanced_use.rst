@@ -15,30 +15,33 @@ With <oroapplication>.yml you can rewrite the following nodes.
 **install_commands**
 
 .. code-block:: none
+    :linenos:
 
-   deployment:
-       install_commands: # Application commands which run during the installation process
-           - 'oro:install --sample-data=n --user-name=customized_admin --user-email=akokoa@okokoa.com --user-password=new_password --user-firstname=Steven --user-lastname=Franklin --application-url=https://okokoa.oro-cloud.com --organization-name=okokoa'
+    deployment:
+        install_commands: # Application commands which run during the installation process
+            - 'oro:install --sample-data=n --user-name=customized_admin --user-email=akokoa@okokoa.com --user-password=new_password --user-firstname=Steven --user-lastname=Franklin --application-url=https://okokoa.oro-cloud.com --organization-name=okokoa'
 
 **upgrade command**
 
 .. code-block:: none
+    :linenos:
 
-   deployment:
-       upgrade_commands: # Application commands which run during update process
-           - 'oro:platform:update'
+    deployment:
+        upgrade_commands: # Application commands which run during update process
+            - 'oro:platform:update'
 
 **writeable_path_for_group**
 
 .. code-block:: none
+    :linenos:
 
-   deployment:
-       writeable_path_for_group:
-           - { path: 'web/css', method: recursive }
-           - { path: 'web/js', method: recursive }
-           - { path: 'web/sitemaps', method: recursive }
-           - { path: 'web/robots.txt' }
-           - { path: 'web' }
+    deployment:
+        writeable_path_for_group:
+            - { path: 'web/css', method: recursive }
+            - { path: 'web/js', method: recursive }
+            - { path: 'web/sitemaps', method: recursive }
+            - { path: 'web/robots.txt' }
+            - { path: 'web' }
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 
@@ -60,13 +63,14 @@ sanitize.method.rawsql
 The **sanitize.method.rawsql** method contains the list of raw SQL queries that help you sanitize the existing data. For example, delete the data using TRUNCATE method, UPDATE the data to apply any custom modification, etc.
 
 .. code-block:: none
+    :linenos:
 
-   sanitize:
-       method:
-           rawsql:
-               - TRUNCATE oro_audit CASCADE
-               - UPDATE oro_email_attachment SET file_name='test.jpg', content_type='image/jpeg'
-               - UPDATE oro_email_attachment_content SET content_transfer_encoding = 'base64'
+    sanitize:
+        method:
+            rawsql:
+                - TRUNCATE oro_audit CASCADE
+                - UPDATE oro_email_attachment SET file_name='test.jpg', content_type='image/jpeg'
+                - UPDATE oro_email_attachment_content SET content_transfer_encoding = 'base64'
 
 sanitize.method.update
 """"""""""""""""""""""
@@ -74,35 +78,37 @@ sanitize.method.update
 The **sanitize.method.update** method contains mapping between the specific table columns and the sanitizing method that should be used for the values. The update strategies are provided in JSON format, like in the following example:
 
 .. code-block:: none
+    :linenos:
 
-   sanitize:
-       method:
-           update:
-               - {
-                    table:table_name,
-                    columns:[
-                       {
-                          name:column_name_A,
-                          method:sanitizing_strategy_for_column_A
-                       },
-                       {
-                          name:column_name_B,
-                          method:sanitizing_strategy_for_column_B
-                       },
-                       {
-                          name:column_name_C,
-                          method:sanitizing_strategy_for_column_C
-                       }
-                    ]
-                 }
+    sanitize:
+        method:
+            update:
+                - {
+                     table:table_name,
+                     columns:[
+                        {
+                           name:column_name_A,
+                           method:sanitizing_strategy_for_column_A
+                        },
+                        {
+                           name:column_name_B,
+                           method:sanitizing_strategy_for_column_B
+                        },
+                        {
+                           name:column_name_C,
+                           method:sanitizing_strategy_for_column_C
+                        }
+                     ]
+                  }
 
 Please use the following conventions to design your sanitize.method.update strategy:
 
 * Provide sanitizing configuration for every table as a new update item:
 
   .. code-block:: none
+      :linenos:
 
-     update:
+      update:
             - { table: oro_address, columns: [{name: street, method: md5}, {name: city, method: md5}, {name: postal_code, method: md5}, {name: last_name, method: md5}] }
             - { table: oro_business_unit, columns: [{name: email, method: email}, {name: name, method: md5}, {name: phone, method: md5}] }
 
@@ -111,8 +117,9 @@ Please use the following conventions to design your sanitize.method.update strat
   For example:
 
   .. code-block:: none
+      :linenos:
 
-     columns: [{name: street, method: md5}, {name: city, method: md5} ]
+      columns: [{name: street, method: md5}, {name: city, method: md5} ]
 
 * Provide the column name in the name node. Use the following sanitization methods/strategies (ensure thay are reasonably matching the column type):
 

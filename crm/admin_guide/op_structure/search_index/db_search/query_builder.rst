@@ -7,6 +7,7 @@ To perform search queries, you need to use the query builder =>
 Example:
 
 .. code-block:: none
+    :linenos:
 
     $query = (new Query())
             ->select('sku')
@@ -23,6 +24,7 @@ Syntax of Query builder is close to Doctrine 2.
    example:
 
 .. code-block:: none
+    :linenos:
 
     $query = (new Query())
             ->select('fieldvalue as name')

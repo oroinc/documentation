@@ -41,8 +41,9 @@ Please refer to the `oro:install` command help for more information on the param
 .. note:: To get the `oro:install` help command output, navigate to the `/mnt/ocom/app/www` folder and run the following command:
 
    .. code-block:: none
+       :linenos:
 
-      sudo -u www-data php app/console --env=prod oro:install --help
+       sudo -u www-data php app/console --env=prod oro:install --help
 
 Installation Parameters Provided in the Deploy Command
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,8 +57,9 @@ To enforce the Oro application installation parameters with the deploy command, 
 For example:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep deploy -O user-firstname='John' -O user-lastname='Doe' -O user-email='admin@example.com' -O user-password='admin1111' -O application-url='https://example.com' -O sample-data=n -O user-name=admin
+    bin/dep deploy -O user-firstname='John' -O user-lastname='Doe' -O user-email='admin@example.com' -O user-password='admin1111' -O application-url='https://example.com' -O sample-data=n -O user-name=admin
 
 Installation Parameters Provided in the Deployment Configuration File
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -69,18 +71,20 @@ Alternatively, you can provide the Oro application installation parameters in th
 For example:
 
 .. code-block:: none
+    :linenos:
 
-   deployment:
-       install_commands: # Application commands which run during the installation process
-           - 'oro:install --sample-data=n --user-name=admin --user-email=admin@example.com --user-password=11111111 --user-firstname=John --user-lastname=Doe --application-url=https://intra.oro-cloud.com --organization-name=Oro'
+    deployment:
+        install_commands: # Application commands which run during the installation process
+            - 'oro:install --sample-data=n --user-name=admin --user-email=admin@example.com --user-password=11111111 --user-firstname=John --user-lastname=Doe --application-url=https://intra.oro-cloud.com --organization-name=Oro'
 
 For more customization samples see the :ref:`Deployment and Maintenance Configuration <orocloud-maintenance-advanced-use>` section.
 
 Once the file is ready, run the following command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep deploy
+    bin/dep deploy
 
 The command will use `oro:install` parameters from *orocommerce.yml* or *orocrm.yml*.
 
@@ -103,8 +107,9 @@ Upgrade With Downtime
 To upgrade the Oro application, run the `upgrade` command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep upgrade
+    bin/dep upgrade
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file from. Use valid tag or branch from the Oro application repository, for example, the 1.6 branch or the 1.6.1 tag.
 
@@ -124,8 +129,9 @@ Upgrade With Zero Downtime (Rolling Upgrade)
 To perform Oro application upgrade with zero downtime, run the `upgrade:rolling` command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep upgrade:rolling
+    bin/dep upgrade:rolling
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the `1.6 <https://github.com/oroinc/orocommerce-application/tree/1.6>`_ branch or the `1.6.1 <https://github.com/oroinc/orocommerce-application/tree/1.6.1>`_ tag).
 
@@ -156,8 +162,9 @@ Backup Everything
 To backup the information in the database, the existing media files and the latest repository commit hash or filesystem archive code run the `backup:create` command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  backup:create [--fs-backup-type=archive|vcs]
+    bin/dep  backup:create [--fs-backup-type=archive|vcs]
 
 By default, `fs-backup-type` is an *archive*. To successfully restore the *vcs* backup, access to the application source code repository is required.
 
@@ -167,14 +174,16 @@ Selective Backup
 To only backup the database and skip backing up the media files, run `backup:create:db` command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  backup:create:db
+    bin/dep  backup:create:db
 
 To backup only the media files and skip the database backup, run `backup:create:media` command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  backup:create:media
+    bin/dep  backup:create:media
 
 List Existing Backups
 """""""""""""""""""""
@@ -182,8 +191,9 @@ List Existing Backups
 To view the list of the backups, run `backup:list` command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  backup:list
+    bin/dep  backup:list
 
 If the list is longer that one page, use the optional *page* parameter to switch between pages (e.g., *page=2*).
 
@@ -207,8 +217,9 @@ Restore Everything
 To restore the information (the database dump and media files) from backup, run the backup:restore command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  backup:restore
+    bin/dep  backup:restore
 
 During the restore operation, OroCloud automatically detects the *fs-backup-type* and proceeds with the matching restore method.
 
@@ -222,18 +233,20 @@ Alternatively, it is possible to launch a selective restore.
 To restore only the database and skip restoring media files, run:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  maintenance:on
-   bin/dep  backup:restore:db
-   bin/dep  maintenance:off
+    bin/dep  maintenance:on
+    bin/dep  backup:restore:db
+    bin/dep  maintenance:off
 
 To backup the media files only and skip the database backup, run:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep  maintenance:on
-   bin/dep  backup:restore:media
-   bin/dep  maintenance:off
+    bin/dep  maintenance:on
+    bin/dep  backup:restore:media
+    bin/dep  maintenance:off
 
 .. _orocloud-maintenance-use-sanitized-backup:
 
@@ -243,30 +256,34 @@ Creating a Sanitized Backup
 To make your application data safe for wide visibility (i.e when you copy data to your local environment), you can create a sanitized backup using the following command:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep backup:create:sanitized
+    bin/dep backup:create:sanitized
 
 The resulting backup is not encrypted and is located next to the ordinary encrypted backups.
 
 To review the list of available sanitized backups, their creation timestamps and the precise location they are saved to, run:
 
 .. code-block:: none
+    :linenos:
 
-   bin/dep backup:list:sanitized
+    bin/dep backup:list:sanitized
 
 Once you have identified the backup file you need, download it using the following steps:
 
 #. To enable download, first copy the backup into the home directory as orodeployer user.
 
   .. code-block:: none
+      :linenos:
 
-     sudo -u orodeployer cp /path/to/the/backup/file ~/backup_name
+      sudo -u orodeployer cp /path/to/the/backup/file ~/backup_name
 
 #. Download the file to the target server via the `scp` command:
 
   .. code-block:: none
+      :linenos:
 
-     scp oro_cloud_username@oro_cloud_hostname:~/backup_name target_username@target_hostname:/path/to/the/target/backup/file
+      scp oro_cloud_username@oro_cloud_hostname:~/backup_name target_username@target_hostname:/path/to/the/target/backup/file
 
 See :ref:`Sanitizing Configuration <orocloud-maintenance-advanced-use-sanitization-conf>` for details on how to configure the sanitizing scope and strategy.
 

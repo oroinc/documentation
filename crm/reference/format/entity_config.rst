@@ -22,6 +22,7 @@ Entity Configuration
     ``entity_config`` key, but a scope key must be used as an intermediate mapping key:
 
     .. code-block:: yaml
+        :linenos:
 
         # src/Acme/DemoBundle/Resources/config/oro/entity_config.yml
         entity_config:

@@ -93,12 +93,14 @@ download, install and enable it.
 To download it, use the following command:
 
 .. code-block:: none
+    :linenos:
 
-   wget https://dl.bintray.com/rabbitmq/community-plugins/3.6.x/rabbitmq_delayed_message_exchange/rabbitmq_delayed_message_exchange-20171215-3.6.x.zip && unzip rabbitmq_delayed_message_exchange-20171215-3.6.x.zip -d {RABBITMQ_HOME}/plugins && rm rabbitmq_delayed_message_exchange-20171215-3.6.x.zip
+    wget https://dl.bintray.com/rabbitmq/community-plugins/3.6.x/rabbitmq_delayed_message_exchange/rabbitmq_delayed_message_exchange-20171215-3.6.x.zip && unzip rabbitmq_delayed_message_exchange-20171215-3.6.x.zip -d {RABBITMQ_HOME}/plugins && rm rabbitmq_delayed_message_exchange-20171215-3.6.x.zip
 
 To enable it, use the following command:
 
 .. code-block:: none
+    :linenos:
 
     rabbitmq-plugins enable --offline rabbitmq_delayed_message_exchange
 
@@ -141,6 +143,7 @@ To see the list of enabled plugins, use:
 You will see something like:
 
 .. code-block:: none
+    :linenos:
 
     [e*] amqp_client                       3.6.5
     [e*] mochiweb                          2.13.1
@@ -165,9 +168,10 @@ Troubleshooting
 The following exception
 
 .. code-block:: none
+    :linenos:
 
-      [PhpAmqpLib\Exception\AMQPRuntimeException]
-      Broken pipe or closed connection
+    [PhpAmqpLib\Exception\AMQPRuntimeException]
+    Broken pipe or closed connection
 
 might be caused by one of the following reasons:
 

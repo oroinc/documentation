@@ -12,14 +12,16 @@ Launch the Local SSH Agent
 Check if you have the agent already running on your local machine:
 
 .. code-block:: none
+    :linenos:
 
-   ps aux | grep -v grep | grep ssh-agent
+    ps aux | grep -v grep | grep ssh-agent
 
 If the command does not produce any output, the ssh-agent is not yet running on your system. To launch the ssh-agent, run:
 
 .. code-block:: none
+    :linenos:
 
-   eval "$(ssh-agent -s)"
+    eval "$(ssh-agent -s)"
 
 Generate SSH Key and Add it to Your Local SSH-Agent
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -27,22 +29,25 @@ Generate SSH Key and Add it to Your Local SSH-Agent
 Generate a pair of private and public ssh keys using the following command:
 
 .. code-block:: none
+    :linenos:
 
-   ssh-keygen -t rsa -b 4096 -f /path/to/keyfile
+    ssh-keygen -t rsa -b 4096 -f /path/to/keyfile
 
 The public key will be printed as a result of command execution. Provide it to the Oro Support Team who will provision it as the authorized key for SSH access to the OroCloud infrastructure.
 
 Add the generated private key to the local ssh-agent using the following command:
 
 .. code-block:: none
+    :linenos:
 
-   ssh-add -K /path/to/keyfile
+    ssh-add -K /path/to/keyfile
 
 To verify that your key has been added successfully, run:
 
 .. code-block:: none
+    :linenos:
 
-   ssh-add -l
+    ssh-add -l
 
 This command shows the fingerprints for the identities added to the ssh-agent. Ensure that the key you just added is listed.
 
@@ -52,11 +57,12 @@ Enable SSH Agent Forwarding on Your Local Machine
 Enable SSH agent forwarding in your ssh-agent configuration to ensure your local ssh key can be used to authenticate any commands that are executed on the OroCloud server (e.g., use the same ssh key for GitHub authentication when cloning a repository).
 
 .. code-block:: none
-   :caption: ~/.ssh/config
+    :linenos:
+    :caption: ~/.ssh/config
 
-   Host *
-      StrictHostKeyChecking no
-      ForwardAgent yes
+    Host *
+       StrictHostKeyChecking no
+       ForwardAgent yes
 
 Connect to the OroCloud Environment via VPN
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
