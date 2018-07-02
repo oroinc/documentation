@@ -29,6 +29,7 @@ For example, platform-1.9.2.patch.
 Comment this line.
 
 .. code-block:: text
+    :linenos:
 
      */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
@@ -39,6 +40,7 @@ Comment this line.
 **5**. Copy the patch file to the package directory
 
 .. code-block:: text
+    :linenos:
 
     /path/to/application/vendor/oro/{package}
 
@@ -104,6 +106,7 @@ or, as alternative:
 Uncomment this line.
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 

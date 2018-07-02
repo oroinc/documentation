@@ -28,6 +28,7 @@ configure your system to run the ``oro:cron`` command every minute.
 On UNIX-based systems, you can simply set up a ``crontab`` entry for this:
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
 
@@ -35,6 +36,7 @@ Note: Some OS flavors will require the user name (usually root) in the crontab e
 like this:
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * root /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
 

@@ -48,6 +48,7 @@ should consist the type prefix, otherwise the default ``text`` type will
 be used.
 
 .. code-block:: none
+    :linenos:
 
     select text.field_name
     select (text.first_field_name, text.second_field_name)
@@ -55,12 +56,14 @@ be used.
 You can use fieldname aliasing, as known in SQL, for example:
 
 .. code-block:: none
+    :linenos:
 
     select text.field_1 as name, text.field_2 as author
 
 You can use fieldname aliasing, as known in SQL, for example:
 
 .. code-block:: none
+    :linenos:
 
     select (text.field_1 as name, text.field_2 as author)
 
@@ -73,6 +76,7 @@ A list of entity aliases to search from. It can be one alias or group.
 Examples:
 
 .. code-block:: none
+    :linenos:
 
     from one_alias
     from (first_alias, second_alias)
@@ -90,6 +94,7 @@ and, or
 Syntax:
 
 .. code-block:: none
+    :linenos:
 
     and field_type field_name operator value
     or field_type field_name operator value
@@ -114,6 +119,7 @@ The ``order_by`` clause allows to sort results in ascending or descending order.
 Syntax:
 
 .. code-block:: none
+    :linenos:
 
     order_by field_type field_name direction
 
@@ -140,6 +146,7 @@ For String Fields
    If search value is string, it must be quoted. Examples:
 
    .. code-block:: none
+       :linenos:
 
        name ~ value
        name ~ "string value"
@@ -149,6 +156,7 @@ For String Fields
    Examples:
 
    .. code-block:: none
+       :linenos:
 
        name !~ value
        name !~ "string value"
@@ -159,6 +167,7 @@ For String Fields
    whitespaces, it should be enclosed in quotes. Examples:
 
    .. code-block:: none
+       :linenos:
 
        name like value
        name like "string value"
@@ -169,6 +178,7 @@ For String Fields
    contains whitespaces, it should be enclosed in quotes. Examples:
 
    .. code-block:: none
+       :linenos:
 
        name notlike value
        name notlike "string value"
@@ -180,6 +190,7 @@ For Numeric Fields
    field value matches the specified value. Examples:
 
    .. code-block:: none
+       :linenos:
 
        integer count = 100
        decimal price = 12.5
@@ -189,6 +200,7 @@ For Numeric Fields
    where the field value does not match the specified value. Examples:
 
    .. code-block:: none
+       :linenos:
 
        integer count != 5
        decimal price != 45
@@ -199,6 +211,7 @@ For Numeric Fields
    specified value. Examples:
 
    .. code-block:: none
+       :linenos:
 
        integer count >= 5
        decimal price < 45
@@ -208,6 +221,7 @@ For Numeric Fields
    the specified set of data. Examples:
 
    .. code-block:: none
+       :linenos:
 
        integer count in (5, 10, 15, 20)
        decimal price in (12.2, 55.25)
@@ -216,6 +230,7 @@ For Numeric Fields
    in the specified set of data. Examples:
 
    .. code-block:: none
+       :linenos:
 
        integer count !in (1, 3, 5)
        decimal price !in (2.1, 55, 45.4)
@@ -228,6 +243,7 @@ User can combined operators in the search query with brackets.
 Examples:
 
 .. code-block:: none
+    :linenos:
 
     from oro_test where (owner ~ john and (integer count > 10 or float price = 10)) or (owner ~ mary and (integer count > 5 or float price = 150))
 
@@ -238,6 +254,7 @@ Query Examples
    and where the price is greater than ``100``.
 
    .. code-block:: none
+       :linenos:
 
        from demo_product where name ~ opportunity and double price > 100
 
@@ -245,12 +262,14 @@ Query Examples
    products.
 
    .. code-block:: none
+       :linenos:
 
        select (name, description) from demo_product
 
 -  Search by all entities where the integer field count is not equal ``10``.
 
    .. code-block:: none
+       :linenos:
 
        integer count != 10
 
@@ -258,6 +277,7 @@ Query Examples
    ``opportunity`` string.
 
    .. code-block:: none
+       :linenos:
 
        all_text !~ "opportunity"
 

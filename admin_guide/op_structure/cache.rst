@@ -18,6 +18,7 @@ There are two abstract services you can use as a parent for your cache services:
 The following example shows how this services can be used:
 
 .. code-block:: none
+    :linenos:
 
     services:
         acme.test.cache:
@@ -29,6 +30,7 @@ The following example shows how this services can be used:
 Also each of these abstract services can be re-declared in the application configuration file, for example:
 
 .. code-block:: none
+    :linenos:
 
     services:
         oro.cache.abstract:
@@ -50,6 +52,7 @@ invalidation. When using memory based cache we need to make sure that we
 do not keep old values in memory. Consider this example:
 
 .. code-block:: php
+    :linenos:
 
     <?php
 
@@ -98,6 +101,7 @@ between the fast and shared cache. It is implemented in the
 ``ChainCache`` class.
 
 .. code-block:: php
+    :linenos:
 
     <?php
 
@@ -154,6 +158,7 @@ this, the production configuration file (``config_prod.yml``) should be
 updated with the following parameters:
 
 .. code-block:: none
+    :linenos:
 
     doctrine:
         orm:
