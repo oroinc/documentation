@@ -13,6 +13,7 @@ All configuration data is placed in the configuration under alias
 ``oro_search``. Let us look at the configuration example:
 
 .. code-block:: none
+    :linenos:
 
     oro_search:
         engine: orm
@@ -66,6 +67,7 @@ Example
 `Acme\Bundle\DemoBundle\Resources\config\oro\search.yml`:
 
 .. code-block:: none
+    :linenos:
 
     Acme\Bundle\DemoBundle\Entity\Tag:
         alias:                          acme_tag
@@ -84,6 +86,7 @@ Example
 `AcmeCRM\Bundle\DemoBundle\Resources\config\search.yml`:
 
 .. code-block:: none
+    :linenos:
 
     Acme\Bundle\DemoBundle\Entity\Tag:
         alias:                          acme_tag
@@ -97,6 +100,7 @@ Example
 Result:
 
 .. code-block:: none
+    :linenos:
 
         alias:                          acme_tag
         title_fields:                   [subject]
@@ -138,6 +142,7 @@ fields, if the ``target_fields`` parameter is not set.
 Example:
 
 .. code-block:: none
+    :linenos:
 
     Acme\DemoBundle\Entity\Product:
         alias: demo_product                                      # Alias for 'from' keyword in advanced search
@@ -224,6 +229,7 @@ datagrid using search index data only:
 
 
 .. code-block:: none
+    :linenos:
 
      user-search-grid:
          source:

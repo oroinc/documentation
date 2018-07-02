@@ -181,6 +181,7 @@ To use the theme in any application, enable it in the application configuration:
     looks like this:
 
     .. code-block:: text
+        :linenos:
 
         List of available themes:
         acme-theme (active)

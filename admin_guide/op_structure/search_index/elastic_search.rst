@@ -75,8 +75,9 @@ Client Configuration
 To configure your Elasticsearch engine, put the following configuration into the `config/config.yml` file, under the `oro_search` section:
 
 .. code-block:: none
+    :linenos:
 
-   oro_search:
+    oro_search:
        engine: "elastic_search"
 
 In this case, all the required settings will be taken from `config/parameters.yml` (see the :ref:`Parameters <elastic-search--parameters>` section.
@@ -84,8 +85,9 @@ In this case, all the required settings will be taken from `config/parameters.ym
 If you need to create a more transparent and detailed configuration, define the required settings directly in the `config/config.yml`.
 
 .. code-block:: none
+    :linenos:
 
-   oro_search:
+    oro_search:
        engine: "elastic_search"
        engine_parameters:
            client:
@@ -100,8 +102,9 @@ Index Configuration
 All settings required for the creation of an Elasticsearch index are defined in the `search.yml` and `config.yml` (the main config) files. This configuration is converted to the Elasticsearch mappings format and appears as follows:
 
 .. code-block:: none
+    :linenos:
 
-   oro_search:
+    oro_search:
        engine_parameters:
            client:
                # ... client configuration
@@ -142,8 +145,9 @@ Set the following options to false to disable checks:
 Here is an example of the configuration that disables both of these checks:
 
 .. code-block:: none
+    :linenos:
 
-   oro_search:
+    oro_search:
        engine_parameters:
            system_requirements_check: false
            index_status_check: false
@@ -169,18 +173,19 @@ field type mappings. Field type mappings are injected through the DI as a parame
 _oro\_ElasticSearch.field\_type\_mapping_:
 
 .. code-block:: none
+    :linenos:
 
-   text:
+    text:
        type: string
        store: true
        index: not_analyzed
-   decimal:
+    decimal:
        type: double
        store: true
-   integer:
+    integer:
        type: integer
        store: true
-   datetime:
+    datetime:
        type: date
        store: true
        format: "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd"
@@ -280,9 +285,10 @@ host and port using the `curl` utility.
 The following is an example of an invalid response when the Elastic search is not available:
 
 .. code-block:: none
+    :linenos:
 
-   > curl localhost:9200
-   curl: (7) couldn't connect to host
+    > curl localhost:9200
+    curl: (7) couldn't connect to host
 
 
 To fix this issue, please, turn on Elasticsearch and make sure that it is available, e.g. the host is resolved to the
@@ -291,9 +297,10 @@ appropriate IP address and the port is open.
 The following is the example of a valid response when the Elasticsearch is available:
 
 .. code-block:: none
+    :linenos:
 
-   > curl localhost:9200
-   {
+    > curl localhost:9200
+    {
      "name" : "Llyron",
      "cluster_name" : "Elasticsearch",
      "version" : {
@@ -304,7 +311,7 @@ The following is the example of a valid response when the Elasticsearch is avail
        "lucene_version" : "5.5.0"
      },
      "tagline" : "You Know, for Search"
-   }
+    }
 
 
 

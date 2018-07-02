@@ -171,6 +171,7 @@ For example, the following Twig template prints a formatted datetime and a
 formatted monetary value:
 
 .. code-block:: jinja
+    :linenos:
 
     {{ entity.createdAt|oro_format_datetime }}
     {{ item.value|oro_format_currency }}
@@ -179,6 +180,7 @@ Supposed that the current locale is ``en`` and that ``USD`` is the currency
 being used, the template will render the following values:
 
 .. code-block:: text
+    :linenos:
 
     May 28, 2014 1:40 PM
     $5,103.00
@@ -222,6 +224,7 @@ The same formatting can be used in twig templates using the ``oro_format_name``
 filter:
 
 .. code-block:: jinja
+    :linenos:
 
     {{ entity|oro_format_name }}
 
@@ -229,6 +232,7 @@ For the ``en`` locale, an entity implementing the ``FullNameInterface`` will
 be formatted like this:
 
 .. code-block:: text
+    :linenos:
 
     Mr. John S Doe Jr.
 
@@ -261,12 +265,14 @@ default newline separators (``\n``).
 To use this formatter in a template, use the ``oro_format_address`` filter:
 
 .. code-block:: jinja
+    :linenos:
 
     {{ address|oro_format_address }}
 
 When used with the USA, such an address will be rendered like so:
 
 .. code-block:: text
+    :linenos:
 
     Mr. Roy K Greenwell
     Products Inc.
