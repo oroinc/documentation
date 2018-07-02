@@ -30,6 +30,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 Comment this line.
 
 .. code-block:: text
+    :linenos:
 
      */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
@@ -108,6 +109,7 @@ or, as alternative:
 Uncomment this line.
 
 .. code-block:: text
+    :linenos:
 
      */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
@@ -149,6 +151,7 @@ To retrieve a new version and upgrade your OroCRM instance, please execute the f
 Comment this line.
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
@@ -214,6 +217,7 @@ or, as alternative:
 Uncomment this line.
 
 .. code-block:: text
+    :linenos:
 
     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 

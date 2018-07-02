@@ -264,6 +264,7 @@ basic configuration is stored in the ``oro_entity_config`` table. Its structure
 looks essentially like this:
 
 .. code-block:: text
+    :linenos:
 
     +------------+--------------+------+-----+---------+----------------+
     | Field      | Type         | Null | Key | Default | Extra          |
