@@ -46,11 +46,13 @@ To add an address to the address book:
 	  -	Street*
 	  -	Street 2
 	  -	City*
-	  -	State
+	  -	State (is mandatory for some countries)
 	  -	Zip/postal code*
 	  -	Phone"
 
 	Street, City and Zip are mandatory fields.
+	
+.. note:: Either the Organization or both the First and Last Name fields are mandatory.
 
 2. Click **Save** once you have filled in all the fields. 
 
