@@ -20,6 +20,7 @@ to store general information. The table that stores text data has
 ``fulltext`` index.
 
 .. code-block:: none
+    :linenos:
 
     parameters:
         oro_search.engine.class: Oro\Bundle\SearchBundle\Engine\Orm
@@ -38,6 +39,7 @@ Each supported DBMS has its own driver that knows about specific search
 implementation and generates valid SQL.
 
 .. code-block:: none
+    :linenos:
 
     parameters:
         oro_search.drivers:

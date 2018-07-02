@@ -402,8 +402,9 @@ Adapter Configuration for APC
 **FTP with APC:**
 
 .. code-block:: yaml
+    :linenos:
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                ftp:
@@ -431,8 +432,9 @@ Adapter Configuration for APC
 **Local with APC:**
 
 .. code-block:: yaml
+    :linenos:
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                local:
@@ -457,8 +459,9 @@ Adapter Configuration for Redis
 **FTP with Redis:**
 
 .. code-block:: yaml
+    :linenos:
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                ftp:
@@ -486,8 +489,9 @@ Adapter Configuration for Redis
 **Local with Redis:**
 
 .. code-block:: yaml
+    :linenos:
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                local:
@@ -512,8 +516,9 @@ Adapter Configuration for Memcached
 **FTP with Redis:**
 
 .. code-block:: yaml
+    :linenos:
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                ftp:
@@ -541,8 +546,9 @@ Adapter Configuration for Memcached
 **Local with Redis:**
 
 .. code-block:: yaml
+    :linenos:
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                local:
@@ -571,8 +577,9 @@ If everything is OK, we can now clone the configuration to all the web farm node
 The default configuration is pretty simple:
 
 .. code-block:: none
+    :linenos:
 
-   http {
+    http {
        server {
            listen 80;
            location / {
@@ -585,7 +592,7 @@ The default configuration is pretty simple:
            server node2.local.com;
            server node3.local.com;
        }
-   }
+    }
 
 **Please refer to Nginx documentation for more details:**
 

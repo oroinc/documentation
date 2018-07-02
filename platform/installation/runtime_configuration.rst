@@ -14,6 +14,7 @@ Use the *SetEnv* directive that comes with the mod_env module to update the **OR
 environment variable with the path to the necessary php instance:
 
     .. code-block:: apache
+        :linenos:
 
         SetEnv ORO_PHP_PATH c:\OpenServer\modules\php\PHP-7.0\
 

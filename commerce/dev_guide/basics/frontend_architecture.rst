@@ -41,6 +41,7 @@ File structures and naming conventions use best practices of Backbone
 development adopted for Oro needs.
 
 .. code-block:: text
+    :linenos:
 
     AcmeBundle/Resources/public
     ├── css

@@ -27,6 +27,7 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
    Comment this line.
 
    .. code-block:: text
+       :linenos:
 
        */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 
@@ -98,6 +99,7 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
     Uncomment this line.
 
     .. code-block:: text
+        :linenos:
 
         */1 * * * * /usr/bin/php /path/to/application/app/console --env=prod oro:cron >> /dev/null
 

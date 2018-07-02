@@ -18,6 +18,7 @@ will be removed. This command is used for queued indexation.
 Single entity indexation:
 
 .. code-block:: none
+    :linenos:
 
     > php app/console oro:search:index OroUserBundle:User 1
     Started index update for entities.
@@ -25,6 +26,7 @@ Single entity indexation:
 Multiple entities indexation:
 
 .. code-block:: none
+    :linenos:
 
     > php app/console oro:search:index "Oro\Bundle\ContactBundle\Entity\Contact" 1 2 3 4 5 6 7 8 9 10
     Started index update for entities.
@@ -42,6 +44,7 @@ it would be a good idea to run it by schedule (e.g once a day).
 All entities reindexation:
 
 .. code-block:: none
+    :linenos:
 
     > php app/console oro:search:reindex
     Started reindex task for all mapped entities
@@ -49,6 +52,7 @@ All entities reindexation:
 One entity reindexation:
 
 .. code-block:: none
+    :linenos:
 
     > app/console oro:search:reindex OroUserBundle:User
     Started reindex task for "OroUserBundle:User" entity
@@ -66,6 +70,7 @@ consumer worker to use this mode.
 Please use the following parameter to enable it:
 
 .. code-block:: none
+    :linenos:
 
     > app/console oro:search:reindex --scheduled
 

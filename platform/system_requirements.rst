@@ -96,6 +96,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 PostgreSQL `uuid-ossp` extension should be loaded for proper doctrine's `guid` type handling. In order to enable it, one can connect to the database server and run the following sql query:
 
 .. code-block:: sql
+    :linenos:
 
     CREATE EXTENSION "uuid-ossp";
 

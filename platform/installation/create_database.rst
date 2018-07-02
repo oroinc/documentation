@@ -25,8 +25,9 @@ Create the Database
 #. If you use Oro application with the PostgreSQL database, load the `uuid-ossp` extension. Log into the database management system and run the following SQL query:
 
    .. code-block:: sql
+       :linenos:
 
-      CREATE EXTENSION "uuid-ossp";
+       CREATE EXTENSION "uuid-ossp";
 
    This step ensures that PostgreSQL properly handles the doctrine `guid` type.
 

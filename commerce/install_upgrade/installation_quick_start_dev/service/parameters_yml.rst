@@ -34,31 +34,32 @@ Default Configuration Values
 Default configuration options for the Oro application are provided in brackets below:
 
       .. code-block:: text
+          :linenos:
 
-         database_driver (pdo_mysql):
-         database_host (127.0.0.1):
-         database_port (null):
-         database_name (oro_crm):
-         database_user (root):
-         database_password (null):
-         mailer_transport (smtp):
-         mailer_host (127.0.0.1):
-         mailer_port (null):
-         mailer_encryption (null):
-         mailer_user (null):
-         mailer_password (null):
-         websocket_bind_address (0.0.0.0):
-         websocket_bind_port (8080):
-         websocket_frontend_host ('*'):
-         websocket_frontend_port (8080):
-         websocket_backend_host ('*'):
-         websocket_backend_port (8080):
-         session_handler (session.handler.native_file):
-         locale (en):
-         secret (ThisTokenIsNotSoSecretChangeIt):
-         installed (null):
-         assets_version (null):
-         assets_version_strategy: time_hash
+             database_driver (pdo_mysql):
+             database_host (127.0.0.1):
+             database_port (null):
+             database_name (oro_crm):
+             database_user (root):
+             database_password (null):
+             mailer_transport (smtp):
+             mailer_host (127.0.0.1):
+             mailer_port (null):
+             mailer_encryption (null):
+             mailer_user (null):
+             mailer_password (null):
+             websocket_bind_address (0.0.0.0):
+             websocket_bind_port (8080):
+             websocket_frontend_host ('*'):
+             websocket_frontend_port (8080):
+             websocket_backend_host ('*'):
+             websocket_backend_port (8080):
+             session_handler (session.handler.native_file):
+             locale (en):
+             secret (ThisTokenIsNotSoSecretChangeIt):
+             installed (null):
+             assets_version (null):
+             assets_version_strategy: time_hash
 
 The Sample of Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

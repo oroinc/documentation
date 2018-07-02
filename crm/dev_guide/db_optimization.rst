@@ -24,6 +24,7 @@ This can be achieved in two ways:
     - If a modification of MySQL configuration file is granted, add the following under the ``mysqld`` section
 
       .. code-block:: cfg
+          :linenos:
 
           [mysqld]
           optimizer_switch=block_nested_loop=off

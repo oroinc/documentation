@@ -178,6 +178,7 @@ To edit a record for a particular resource record with JSON API, perform the PAT
         For example, if you want to change the **firstName** field to 'John' value for a User entity with id 1, the request content will look the following way:
 
         .. code-block:: json
+            :linenos:
 
             {
               "data": {
@@ -211,6 +212,7 @@ Curl Example
 """"""""""""
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users/1 HTTP/1.1
 
@@ -226,6 +228,7 @@ Curl Example
 Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users/1 HTTP/1.1
     Host: localhost.com
@@ -237,6 +240,7 @@ Please note that to simplify representation of request examples in the document,
 **Typical response header**
 
 .. code-block:: http
+    :linenos:
 
     HTTP/1.1 200 OK
     Server: Apache/2.4.18 (Unix) PHP/5.5.38
@@ -251,6 +255,7 @@ Please note that to simplify representation of request examples in the document,
 **Typical response body**
 
 .. code-block:: json
+    :linenos:
 
     { "data": {
         "type": "users",
@@ -291,6 +296,7 @@ that covers most cases from the
 Here's an example of a request header with the WSSE authentication. Please pay attention to the **Authentication** and **X-WSSE** parameters:
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users HTTP/1.1
     Host: localhost.com
@@ -440,6 +446,7 @@ As mentioned in the `Authentication`_ section, to successfully perform an API re
 and **Authentication** parameters, e.g.:
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -474,6 +481,7 @@ Retrieve the total count of resource records.
 **Request header**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users HTTP/1.1
 
@@ -486,6 +494,7 @@ Retrieve the total count of resource records.
 **Response**
 
 .. code-block:: http
+    :linenos:
 
     HTTP/1.1 200 OK
     Date: Fri, 23 Sep 2016 12:27:05 GMT
@@ -505,6 +514,7 @@ Retrieve the total number of deleted records of the resource
 **Request header**
 
 .. code-block:: http
+    :linenos:
 
     DELETE /api/users HTTP/1.1
 
@@ -522,6 +532,7 @@ Request query string contains a filter that specifies conditions for deletion op
 **Request header**
 
 .. code-block:: http
+    :linenos:
 
     DELETE /api/users?filter[id]=21,22 HTTP/1.1
 
@@ -532,6 +543,7 @@ Request query string contains a filter that specifies conditions for deletion op
 **Response**
 
 .. code-block:: http
+    :linenos:
 
     HTTP/1.1 204 No Content
     Date: Fri, 23 Sep 2016 12:38:47 GMT
@@ -564,12 +576,14 @@ Example. Successful Request
 **Request**
 
    .. code-block:: http
+       :linenos:
 
        GET /api/users/1 HTTP/1.1
 
 **Response**
 
    .. code-block:: http
+       :linenos:
 
        HTTP/1.1 200 OK
 
@@ -598,12 +612,14 @@ Example. Request Resulted in Error
 **Request**
 
    .. code-block:: http
+       :linenos:
 
        GET /api/users/999 HTTP/1.1
 
 **Response**
 
    .. code-block:: http
+       :linenos:
 
        HTTP/1.1 404 Not Found
 
@@ -621,6 +637,7 @@ with its own set of fields.
 
 
 .. code-block:: json
+    :linenos:
 
     {
       "errors": [
@@ -710,6 +727,7 @@ Retrieve all users of organization '1'.
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users?filter[organization]=1 HTTP/1.1
 
@@ -726,6 +744,7 @@ Example 2. Wrong Input Type
 A string value is passed as an input to a filter which can contain only integer values.
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users?filter[id]=aaa HTTP/1.1
 
@@ -745,6 +764,7 @@ Example 3. Unknown Filter
 Unknown, mistyped or unsupported filter.
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users?filter[unknown]=aaa HTTP/1.1
 
@@ -823,6 +843,7 @@ Example. Retrieve Only Required Fields
     **Request**
 
     .. code-block:: http
+        :linenos:
 
         GET api/users?fields[users]=username,email HTTP/1.1
 
@@ -833,6 +854,7 @@ Example. Retrieve Only Required Fields
     **Response**
 
     .. code-block:: json
+        :linenos:
 
         {
           "data": [
@@ -914,6 +936,7 @@ Example. Use Operators to Filter Data
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email HTTP/1.1
 
@@ -924,6 +947,7 @@ Example. Use Operators to Filter Data
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {
       "data": [
@@ -972,6 +996,7 @@ Include the **roles** relation with the **fields** filter.
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET api/users?fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
 
@@ -982,6 +1007,7 @@ Include the **roles** relation with the **fields** filter.
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {
       "data": [
@@ -1033,6 +1059,7 @@ Example. Retrieve Only Required Fields of the Related Resource
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET api/users?fields[userroles]=label&fields[users]=username,email,roles&include=roles&page[number]=1&page[size]=1 HTTP/1.1
 
@@ -1044,6 +1071,7 @@ Example. Retrieve Only Required Fields of the Related Resource
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {
       "data": [
@@ -1104,6 +1132,7 @@ Get the 2nd page of the retrieved records for the **users** resource with 20 rec
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users?page[number]=2&page[size]=20 HTTP/1.1
 
@@ -1127,6 +1156,7 @@ Sort by **username** in descending order.
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users?filter[id]>5$page[number]=1&page[size]=2&fields[users]=username,email&sort=-username HTTP/1.1
 
@@ -1137,6 +1167,7 @@ Sort by **username** in descending order.
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {
       "data": [
@@ -1178,6 +1209,7 @@ Example. Retrieve a Text Representation of the Resource
     **Request**
 
     .. code-block:: http
+        :linenos:
 
         GET api/users?meta=title HTTP/1.1
 
@@ -1188,6 +1220,7 @@ Example. Retrieve a Text Representation of the Resource
     **Response**
 
     .. code-block:: json
+        :linenos:
 
         {
           "data": [
@@ -1223,6 +1256,7 @@ Sometimes it is required to create or update related resources while creating or
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     POST /api/accounts HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -1230,6 +1264,7 @@ Sometimes it is required to create or update related resources while creating or
 **Request Body**
 
 .. code-block:: json
+    :linenos:
 
     {"data": {
         "type": "accounts",
@@ -1297,6 +1332,7 @@ Sometimes it is required to create or update related resources while creating or
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {"data": {
         "type": "accounts",
@@ -1394,6 +1430,7 @@ Also, it is possible to update several related resources via a single API reques
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     PATCH /api/accounts/52 HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -1401,6 +1438,7 @@ Also, it is possible to update several related resources via a single API reques
 **Request Body**
 
 .. code-block:: json
+    :linenos:
 
     {"data": {
         "type": "accounts",
@@ -1431,6 +1469,7 @@ Also, it is possible to update several related resources via a single API reques
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {"data": {
         "type": "accounts",
@@ -1475,6 +1514,7 @@ Example. Valid **Content-Type**
 """""""""""""""""""""""""""""""
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users HTTP/1.1
     Content-Type: application/vnd.api+json
@@ -1487,6 +1527,7 @@ Example. Ignore Media Type in Response
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users HTTP/1.1
     Host: localhost.com
@@ -1495,6 +1536,7 @@ Example. Ignore Media Type in Response
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     {"data": [
       {
@@ -1518,6 +1560,7 @@ Example. Invalid **Content-Type**
 **Request**
 
 .. code-block:: http
+    :linenos:
 
     GET /api/users HTTP/1.1
     Host: localhost.com
@@ -1526,6 +1569,7 @@ Example. Invalid **Content-Type**
 **Response**
 
 .. code-block:: json
+    :linenos:
 
     [
       {

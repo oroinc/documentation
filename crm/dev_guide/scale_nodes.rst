@@ -60,11 +60,12 @@ Cache Configuration
 **app/config/parameters.yml:**
 
 .. code-block:: yaml
+    :linenos:
    
-   session_handler:    'snc_redis.session.handler'
-   redis_dsn_session:  'redis://127.0.0.1:6379/0'
-   redis_dsn_cache:    'redis://127.0.0.1:6380/0'
-   redis_dsn_doctrine: 'redis://127.0.0.1:6380/1'
+    session_handler:    'snc_redis.session.handler'
+    redis_dsn_session:  'redis://127.0.0.1:6379/0'
+    redis_dsn_cache:    'redis://127.0.0.1:6380/0'
+    redis_dsn_doctrine: 'redis://127.0.0.1:6380/1'
    
 After that, the Redis cache configuration for session and security nonce storage, annotations and doctrine cache, etc.
 will be performed by OroRedisConfigBundle.
@@ -79,8 +80,9 @@ sub-directory in the [Application root] directory, like in the following configu
 **Oro/Bundle/AttachmentBundle/Resources/config/oro/app.yml:**
 
 .. code-block:: yaml
+    :linenos:
    
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                local:
@@ -108,9 +110,10 @@ Configuration examples:
 **FTP with APC:**
 
 .. code-block:: yaml
+    :linenos:
 
 
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                ftp:
@@ -138,8 +141,9 @@ Configuration examples:
 **Local with APC:**
  
 .. code-block:: yaml
+    :linenos:
    
-   knp_gaufrette:
+    knp_gaufrette:
        adapters:
            attachments:
                local:
@@ -168,21 +172,22 @@ If everything is OK, we can now clone the configuration to all the web farm node
 The default configuration is pretty simple:
 
 .. code-block:: none
+    :linenos:
 
-   http {
+    http {
        server {
            listen 80;
            location / {
-               proxy_pass http://application; 
+               proxy_pass http://application;
            }
        }
 
        upstream application {
-           server node1.local.com; 
-           server node2.local.com; 
-           server node3.local.com; 
+           server node1.local.com;
+           server node2.local.com;
+           server node3.local.com;
        }
-   }
+    }
     
 
 **Please refer to Nginx documentation for more details:**

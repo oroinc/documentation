@@ -48,15 +48,16 @@ Use an OpCache bytecode engine to cache bytecode representation of the PHP code 
 Please install Opcache php-extention and configure it in the following way:
 
 .. code-block:: text
+    :linenos:
 
-   opcache.enable=1
-   opcache.enable_cli=0
-   opcache.memory_consumption=512
-   opcache.max_accelerated_files=32531
-   opcache.interned_strings_buffer=32
-   #http://symfony.com/doc/current/performance.html
-   realpath_cache_size=4096K
-   realpath_cache_ttl=600
+    opcache.enable=1
+    opcache.enable_cli=0
+    opcache.memory_consumption=512
+    opcache.max_accelerated_files=32531
+    opcache.interned_strings_buffer=32
+    #http://symfony.com/doc/current/performance.html
+    realpath_cache_size=4096K
+    realpath_cache_ttl=600
 
 .. note:: The opcache.load_comments and opcache.save_comments parameters are enabled by default and should remain so for Oro application operation. Please do not disable them.
 

@@ -8,6 +8,7 @@ After the installation has finished, please, perform the following mandatory pos
 * Start one or more MessageQueue consumers using the following command:
 
   .. code-block:: text
+      :linenos:
 
      <OroCommerce installation directory>/app/console oro:message-queue:consume --env=prod
 

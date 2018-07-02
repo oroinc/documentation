@@ -58,6 +58,7 @@ See the following example configuration:
 The import algorithm being performed is (in pseudocode):
 
 .. code-block:: text
+    :linenos:
 
     Process job:
       - Process step 1:
@@ -157,6 +158,7 @@ doesn't use a strategy:
 The export algorithm being performed is (in pseudocode):
 
 .. code-block:: text
+    :linenos:
 
     Process job:
       - Process step 1:
@@ -288,6 +290,7 @@ meaning:
 For example:
 
 .. code-block:: text
+    :linenos:
 
     "Addresses 1 First name"
 
@@ -311,6 +314,7 @@ have the following meaning:
 For example:
 
 .. code-block:: text
+    :linenos:
 
     "Owner Username"
 
