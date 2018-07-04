@@ -219,6 +219,25 @@ set the following configuration parameters in the **/etc/my.cnf** file:
    innodb_file_per_table = 0
    wait_timeout = 28800
 
+If you want to store supplementary characters, like 4-bytes emojis, the `utf8mb4` character set can be used.
+But in case if you use MySQL older than 5.7 the following configuration parameters should be set in
+the **/etc/my.cnf** file:
+
+.. code:: bash
+
+   innodb_file_format = Barracuda
+   innodb_large_prefix = 1
+
+Since MySQL 5.7 these parameters are set by default.
+More details can be found in `Unicode Support <https://dev.mysql.com/doc/refman/5.7/en/charset-unicode.html>`_
+and `InnoDB File-Format Management <https://dev.mysql.com/doc/refman/5.7/en/innodb-file-format.html>`_ articles.
+
+Also take a look at
+`Setting up the Database to be UTF8 <https://symfony.com/doc/3.4/doctrine.html#configuring-the-database>`_
+in Symfony Documentation to learn how to configure an application to use `utf8mb4` character set.
+But again in case if you use MySQL older than 5.7 you need to add `row_format: DYNAMIC` option
+in `default_table_options` section.
+
 For the changes to take effect, restart MySQL server by running:
 
 .. code:: bash
