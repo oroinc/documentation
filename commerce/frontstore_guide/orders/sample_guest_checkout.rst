@@ -2,8 +2,8 @@
 
 .. begin_sample_checkout
 
-Sample Guest Checkout
----------------------
+Proceed Through Sample Guest Checkout
+-------------------------------------
 
 As an illustration, let us follow the steps of the checkout as an unauthenticated user. The following example has registration options available at the checkout. However, please keep in mind, that your website configuration may be different and registration options may be unavailable.
 

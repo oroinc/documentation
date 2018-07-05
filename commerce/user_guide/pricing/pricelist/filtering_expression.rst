@@ -33,7 +33,3 @@ The filtering expression for the product assignment rule and the price calculati
 
   .. finish
 
-.. toctree::
-   :hidden:
-
-   storage_type

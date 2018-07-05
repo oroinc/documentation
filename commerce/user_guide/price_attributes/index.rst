@@ -18,10 +18,8 @@ In this section you will learn how to:
 .. toctree::
    :maxdepth: 1
 
-   viewlist
-
    create
-
+          
    view
 
    edit

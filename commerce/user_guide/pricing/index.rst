@@ -3,76 +3,66 @@
 Pricing
 =======
 
-This topic contains the following sections:
+Price list management is one of the most important aspects of any e-Commerce business and even more so for Business to Business (B2B) e-Commerce 
+companies. B2B businesses require high level of flexibility to support the most advanced use cases, including a highly structured approach to account 
+management and versatile sales processes that are often customized to the needs of specific customer groups or individual large accounts. This is why
+OroCommerce has one of the most advanced price list management features.
 
-.. contents:: :local:
+Overall, price management in OroCommerce enables you to:
 
-Overview
---------
+* Set up flexible product prices for different websites, customer groups, and customers.
+* Assign prices for newly added products automatically.
+* Schedule temporary or permanent price changes.
+* Override the automatically assigned price with the manually adjusted value.
 
-.. include:: /user_guide/overview/sales/price_lists_overview.rst
-  :start-after: begin
+Below you can find the complete reference of topics that provide a 360 degree view of price management in OroCommerce.
 
-Configuration
--------------
+* :ref:`Understanding Pricing in OroCommerce <user-guide--pricing--overview>` --- provides the overview of price-related definitions in OroCommerce, such as:
 
-To align the price list behavior with your needs, you can adjust the price, currency, and other related configuration options that are grouped in OroCommerce in the following way:
+   * Price Currencies
+   * Product Quantities and Tier Prices
+   * Price Lists
+   * Price Selection Strategy
+   * Combining Price Lists
+   * Auto-Generated Price Lists
+   * Price List Calculation
 
-* :ref:`Global Currency Configuration <sys--config--sysconfig--general-setup--currency>`, where you can:
+* :ref:`Price List Management <user-guide--pricing--pricelist--management>` --- aggregates practical information on how to work with price lists and adapt them to your business needs:
 
-  * Add and remove currencies from the **Allowed Currencies** list.
-  * Set the base currency.
-  * Define the order that is used to display the currencies to the storefront and management console users.
-  * Toggle between the currency display formats (currency code, e.g. USD, and currency symbol, e.g. $).
+   * :ref:`Create a Price List <user-guide--pricing--create-pricelist>`
+   * :ref:`Schedule Price Adjustments <user-guide--pricing--schedule-price-adjustments>`
+   * :ref:`Import and Export Prices <user-guide--pricing--import--export>`
+   * :ref:`Duplicate a Price List <user-guide--pricing--duplicate-price-lists>`
+   * :ref:`Manage Product Price Manually <user-guide--pricing--price-list-manual>`
+   * :ref:`Generate Product Price Automatically <user-guide--pricing--price-list-auto>`
+   * :ref:`Review Examples of Price Rule Automation <price-rules--auto--examples>`
+   * :ref:`Set Prices in Multiple Currencies <user-guide--pricing--multiple--currencies>`
+   * :ref:`Filtering Expression Syntax <user-guide--pricing--auto--expression>`, :ref:`Autocomplete <user-guide--pricing--price-list-auto--autocomplete>` and :ref:`Storage Type <user-guide--pricing--auto--expression--storage-type>`
+   
 
-..  Specify the conversion rate to and from the base currency.
+* :ref:`Price Calculation in the Storefront <user-guide--pricing-calculation>` --- describes how prices are calculated for the storefront and what price selection strategies you can apply (minimal price vs priority-based):
+ 
+   * Minimal Prices Strategy
+   * Merge by Priority Strategy
 
-* :ref:`Currency Configuration per Website <sys--websites--sysconfig--currency>`, where you can:
 
-  * Enable all or some currencies from the **Allowed Currencies** list to be used in OroCommerce storefront and management console for this website.
-  * Select the currency to show by default in the OroCommerce storefront and management console for this website.
+.. note:: For more information on pricing configuration in the management console, see the following topics:
 
-* :ref:`Global Pricing Configuration <sys--config--commerce--catalog--pricing>`, where you can:
+          * :ref:`Understanding Price List Configuration <understanding-price-list-configuration>`
+          * :ref:`Pricing Configuration Options <user-guide--pricing--configuration>`
+          * :ref:`Pricing Calculation Optimization <admin-website-index-and-price-calc>`
 
-  * Set price precision and price rounding strategy.
-  * Configure default price lists, their priority and merge strategy to get the necessary resulting combination of prices that are shown on the websites and for the customers whenever their price list settings fall back to the system default.
-  * Specify an offset in hours that helps launch combined price list recalculation before price change is activated.
-  * Enable all or some currencies from the **Allowed Currencies** list to be used in OroCommerce storefront and management console.
-  * Select the currency to show by default in the OroCommerce storefront and management console.
-
-* **Price List Configuration**, where you can configure default price lists, their priority and merge strategy to get the necessary resulting combination of prices that are shown on the websites and for the customers whenever their price list settings are customized. See :ref:`Understanding Price List Configuration <understanding-price-list-configuration>` for more information on the configuration priorities, default settings, and fallback strategies.
-
-  * Default --- See the **Price Lists** option description in the :ref:`Global Pricing Configuration <sys--config--commerce--catalog--pricing>` topic.
-  * :ref:`Per Website <sys--website--edit--price-lists>`
-  * :ref:`Per Customer Group <customers--customer-groups--edit--price-lists>`
-  * :ref:`Per Customer <customers--customers--edit--price-lists>`
-
-* :ref:`Product Price Attributes Setup <user-guide--products--price-attributes>`
-* :ref:`Product Units Setup <sys--commerce--product--product-units>`
-
-.. TODO Product Units Setup
-
-Price List Management
----------------------
-
-.. include:: /user_guide/pricing/pricelist/index.rst
-   :start-after: start_pricelist_management
-   :end-before: stop_pricelist_management
-
-Price Calculation on the Storefront
------------------------------------
-
-.. include:: /user_guide/pricing/calculation.rst
-   :start-after: begin
-   :end-before: finish
-
-.. include:: /img/buttons/include_images.rst
-   :start-after: begin
 
 .. toctree::
    :maxdepth: 2
    :hidden:
+   :titlesonly:
 
+   price_lists_overview
+   configure_pricing
    pricelist/index
 
 
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

@@ -1,15 +1,15 @@
+.. _user-guide--pricing--multiple--currencies:
+
 Manage Prices in Multiple Currencies
-------------------------------------
+====================================
 
 .. begin
 
-Prerequisites
-~~~~~~~~~~~~~
 
-Ensure that the necessary currencies are enabled in the :ref:`global <sys--config--sysconfig--general-setup--currency>` and :ref:`website <sys--websites--sysconfig--currency>` configuration.
+.. note:: Before you begin, ensure that the necessary currencies are enabled in the :ref:`global <sys--config--sysconfig--general-setup--currency>` and :ref:`website <sys--websites--sysconfig--currency>` configuration.
 
 Enable Multiple Currencies for the Price List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------
 
 To add or remove currencies that may be used in a price list:
 
@@ -27,14 +27,14 @@ To add or remove currencies that may be used in a price list:
 4. Once you enable the necessary currencies for the price list, click **Save**.
 
 Add Price in Specific Currency to the Price List
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------
 
 When adding a product price manually or using a rule that automates price generation, you always specify the currency it is in.
 You can add only one price per combination of product quantity tier and currency (e.g. one price for 1 item in USD or per 10 items in EUR).
 For detailed information on adding product prices in particular currencies, see :ref:`Manual Price Management <user-guide--pricing--price-list-manual>` and :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>`.
 
 View Price in Specific Currency on the Storefront
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------
 
 By default, prices in the OroCommerce Storefront are shown in the default currency.
 

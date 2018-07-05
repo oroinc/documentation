@@ -1,17 +1,26 @@
-Checkout Process
-^^^^^^^^^^^^^^^^
+.. _frontstore-guide--orders-checkout:
+.. _frontstore-guide--orders-checkout--multi-page-checkout:
 
-.. contents:: :local:
-   :depth: 4
+Understand the Checkout Process
+-------------------------------
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 
 In the Oro storefront, the checkout can be multi page or single page. Although the checkout steps themselves are the same, the way they are displayed is different. For the multi page checkout, each step is displayed on a new page. For the single page checkout, all steps fit one page.
 
-.. _frontstore-guide--orders-checkout--multi-page-checkout:
+In addition, with the checkout with consents, OroCommerce storefront customer users can be restricted from proceeding to the checkout unless mandatory consents are accepted at the Agreements step of the checkout.
+
+Learn more about the checkout process in OroCommerce in the following topics:
+
+* :ref:`Multi Page Checkout <frontstore-guide--orders-checkout--multi-page-checkout>`
+* :ref:`Single Page Checkout <frontstore-guide--orders-checkout--single-page-checkout>`
+* :ref:`Guest Checkout <frontstore-guide--orders-checkout--guest>`
+* :ref:`Sample Guest Checkout <frontstore-guide--orders-checkout--sample--guest>`
+* :ref:`Promotions at Checkout <frontstore-guide--orders-checkout--promotions>`
+* :ref:`Checkout with Consents <frontstore-guide--orders-checkout--consents>`
 
 Multi Page Checkout
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 **Step 1: Billing Information**
    
@@ -101,7 +110,7 @@ Multi Page Checkout
 .. _frontstore-guide--orders-checkout--single-page-checkout:
 
 Single Page Checkout
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 In the single page checkout, you can see how far along in the checkout you are, and how many fields are left to complete it. All checkout steps are displayed on a single page.
 
@@ -145,7 +154,7 @@ In the single page checkout, you can see how far along in the checkout you are, 
 .. _frontstore-guide--orders-checkout--guest:
 
 Guest Checkout
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 In the Oro storefront, guest customers can place orders similarly to registered users. They are, however, limited to just one shopping list.
 
@@ -165,7 +174,7 @@ At the checkout, guest customers can:
 .. _frontstore-guide--orders-checkout--promotions:
 
 Promotions at Checkout
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 At checkout, customers can redeem coupons that are connected to specific promotions. Depending on the promotion type, customers can apply one or several coupons to the current order.
 
@@ -192,7 +201,7 @@ In addition, any discounts applied to the order will be displayed in the **Total
 .. _frontstore-guide--orders-checkout--consents:
 
 Checkout with Consents
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 OroCommerce storefront customer users can manage the consents applicable to them, and can be restricted from proceeding to the checkout unless mandatory consents are accepted.
  

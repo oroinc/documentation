@@ -10,7 +10,7 @@ For customer and customer users in OroCommerce, the address book allows to enter
 .. contents:: :local:
 
 Create an Address
-~~~~~~~~~~~~~~~~~
+-----------------
 
 To add an address to the address book:
 
@@ -62,7 +62,7 @@ To add an address to the address book:
       :class: with-border
 
 View an Address on the Map
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 It is possible to add more addresses to the same account. If you have more than one address on the Address Book page, clicking on one or the other will prompt a map to appear that corresponds to the selected address.
 
@@ -70,7 +70,7 @@ It is possible to add more addresses to the same account. If you have more than 
    :class: with-border
 
 Manage an Address
-~~~~~~~~~~~~~~~~~
+-----------------
 
 * **Mark address as primary**
 

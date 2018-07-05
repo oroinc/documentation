@@ -1,5 +1,5 @@
-Next Steps
-----------
+Quote Stages and Transitions
+----------------------------
 
 .. begin_quote_states_by_flow
 

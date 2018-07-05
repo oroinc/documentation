@@ -1,7 +1,7 @@
 .. _frontstore-guide--orders-reorder:
 
-Re-Order Option
-^^^^^^^^^^^^^^^
+Re-Order Items
+--------------
 
 .. begin
 

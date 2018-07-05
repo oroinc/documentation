@@ -1,14 +1,10 @@
 .. _user-guide--customers--customer-users:
+.. _user-guide--customers--create-customer-user:
 
 Customer Users
---------------
-
-.. begin
+==============
 
 .. contents:: :local:
-
-Overview
-~~~~~~~~
 
 .. include:: /user_guide/overview/customers/customer_users_overview.rst
    :start-after: begin
@@ -19,8 +15,11 @@ Overview
 .. include:: /user_guide/customers/customer_users/create.rst
    :end-before: stop
 
+.. _user-guide--customers--customer-users--consents:
+
+
 View Accepted Consents
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**. 
 
@@ -34,21 +33,18 @@ You can read more information on consent management in the following related top
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 
-Export
-~~~~~~
+Export Customer User Details
+----------------------------
 
 You can export the customer user details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
-Import
-~~~~~~
+Import Customer User Details
+----------------------------
 
 You can import the bulk details of updated or processed customer user information in the .csv format following the steps described in the :ref:`Importing Customer Users <import-customer-users>` guide.
 
-.. finish
-
-**Related Information**
-
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    create
