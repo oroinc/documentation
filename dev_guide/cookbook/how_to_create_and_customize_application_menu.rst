@@ -136,21 +136,22 @@ To override some section in the main menu you have to create the ``navigation.ym
     :linenos:
 
     # src/Acme/Bundle/NewBundle/Resources/config/oro/navigation.yml
-    menu_config:
-        items:
-            acme_tab_link:
-                label: Acme link label
-                route: acme_link
-        tree:
-            application_menu:
-                children:
-                    sales_tab:
-                        merge_strategy: append
-                        children:
-                            acme_tab_link: ~
+    navigation:
+        menu_config:
+            items:
+                acme_tab_link:
+                    label: Acme link label
+                    route: acme_link
+            tree:
+                application_menu:
+                    children:
+                        sales_tab:
+                            merge_strategy: append
+                            children:
+                                acme_tab_link: ~
 
-    titles:
-        acme_link: My link page title
+        titles:
+            acme_link: My link page title
 
 
 And clear cache:
