@@ -1,3 +1,5 @@
+.. _admin-guide--customer--configuration:
+
 Configuring Customer
 --------------------
 

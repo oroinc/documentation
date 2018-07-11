@@ -1,7 +1,7 @@
 .. _user-guide--pricing--duplicate-price-lists:
 
 Duplicate a Price List
-----------------------
+======================
 
 .. begin
 

@@ -24,11 +24,12 @@ The following guide gives you an overview of the first steps you need to take to
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
    :hidden:
    
    create_account
    sign_in
    forgot_password
 
-.. include:: /frontstore_guide/related_topics.rst
+.. .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin

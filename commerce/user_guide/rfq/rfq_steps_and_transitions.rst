@@ -1,7 +1,7 @@
 .. _user-guide--sales--requests-for-quote--steps-and-transitions:
 
 Use RFQ Transitions
-^^^^^^^^^^^^^^^^^^^
+===================
 
 .. begin_1
 
@@ -31,7 +31,7 @@ Once the RFQ is submitted by a customer in the storefront, it becomes immediatel
 .. begin_2
 
 Mark the RFQ as Processed
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 To mark the RFQ as processed, click **Mark as Processed** |IcMarkProcessed| on the RFQ page. This will notify the assigned sales representative that the quote is being processed.
 
@@ -47,7 +47,7 @@ Marking RFQ as processed will change its internal status to *Processed*.
 .. begin_3
 
 Request More Information from the Customer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 To request more information from a customer:
 
@@ -76,7 +76,7 @@ The internal status changes back to *Open*, and the customer status changes back
 .. begin_4
 
 Decline the RFQ
-~~~~~~~~~~~~~~~
+---------------
 
 To decline the RFQ,  click **Decline** on the RFQ page.
 
@@ -92,7 +92,7 @@ This will change the internal status to *Declined*, and the customer status to *
 .. begin_5
 
 Delete the RFQ
-~~~~~~~~~~~~~~
+--------------
 
 To delete the RFQ from the list, click **Delete** on the RFQ page.
 

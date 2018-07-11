@@ -1,11 +1,38 @@
 .. _user-guide--sales--requests-for-quote--summary:
+.. _user-guide--sales--requests-for-quote--details:
 
-View Requests for Quote Summary
--------------------------------
+View RFQ Summary
+================
 
-.. begin
+View a Single RFQ
+-----------------
 
-To view all the Requests for Quotes, navigate to **Sales > Requests for Quote** in the main menu.
+To view a specific RFQ in the management console:
+
+1. Navigate to **Sales > Request for Quotes** in the main menu.
+2. Find the required request for quotes and click on it.
+3. In the **General** section, you can find the following information:
+
+   * First Name and Last Name of the customer user
+   * Email Address
+   * Phone Number
+   * Company
+   * Role
+   * PO Number
+   * Do Not Ship Later Than
+   * Customer
+   * Submitted By
+   * Internal Status
+   * Customer Status
+
+5. In the **Notes** section, you can view the comments added by the customer regarding the RFQ.
+6. In the **Line Items** section, you can review the products, requested quantity, target prices and notes to the line items, if any.
+7. The **Activity** section displays :ref:`activities <user-guide-productivity-tools>` available for RFQs.
+
+View All RFQs
+-------------
+
+To view all requests for quotes, navigate to **Sales > Requests for Quote** in the main menu.
 
 .. image:: /user_guide/img/sales/requests_for_quote/rfq_1.2.png
    :class: with-border
@@ -22,14 +49,11 @@ Here, you can perform the following actions:
    .. image:: /user_guide/img/sales/requests_for_quote/rfq_2.png
       :class: with-border
 
-|
-
 Choose the required RFQ in the list, hover over the |IcEllipsisH| **More Options** menu and perform one of the following:
 
 .. image:: /user_guide/img/sales/requests_for_quote/rfq_3.png
    :class: with-border
 
-|
 
 * Click |IcView| to :ref:`View the details <user-guide--sales--requests-for-quote--details>` of the request for quote.
 * Click |IcMarkProcessed| to :ref:`Mark the RFQ as Processed <user-guide--sales--requests-for-quote--steps-and-transitions--processed>`.

@@ -1,5 +1,10 @@
-Overview
-========
+.. _user-guide--pricing--overview:
+
+Understanding Pricing in OroCommerce
+------------------------------------
+
+.. contents:: :local:
+   :depth: 4
 
 .. begin
 

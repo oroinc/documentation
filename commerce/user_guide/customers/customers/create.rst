@@ -3,7 +3,7 @@
 .. begin
 
 Create a Customer
-~~~~~~~~~~~~~~~~~
+-----------------
 
 .. note::
     See a short demo on `how to create customers in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-customer-record>`_, or keep reading the step-by-step guidance below.
@@ -48,3 +48,23 @@ To create a new customer:
 A new customer is created.
 
 .. stop
+
+View and Filter Customers
+-------------------------
+
+To view all customers, navigate to **Customers > Customers** in the main menu.
+
+.. image:: /user_guide/img/customers/customers/Customers.png
+   :class: with-border
+
+You can perform the following actions with every item in the Customers list:
+   
+  * `View a Customer details <view>`_: Click on the item to open its details page. Alternatively, hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
+
+ * `Edit a Customer details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
+
+
+.. finish
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

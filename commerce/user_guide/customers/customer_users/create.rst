@@ -1,5 +1,7 @@
+
+
 Create a Customer User
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 To create a new customer:
 

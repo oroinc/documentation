@@ -110,7 +110,7 @@ the ``@Config`` annotation:
      *     "security"={
      *       "type"="ACL",
      *       "permissions"="All",
-     *       "group_name="DemoGroup"
+     *       "group_name"="DemoGroup"
      *   }
      * )
      */

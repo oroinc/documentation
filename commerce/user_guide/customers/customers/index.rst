@@ -1,12 +1,12 @@
+.. _user-guide--customers:
+
 Customers
----------
+=========
 
 .. begin
 
 .. contents:: :local:
 
-Overview
-~~~~~~~~
 
 .. include:: /user_guide/overview/customers/customers_overview.rst
    :start-after: begin
@@ -19,26 +19,23 @@ Overview
    :end-before: stop
 
 Export
-~~~~~~
+------
 
 You can export the customer details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
 
 Import
-~~~~~~
+------
 
 You can import the bulk details of updated or processed customer information in the .csv format following the steps described in the :ref:`Importing Customers <import-customers>` guide.
 
 .. finish
 
-**Related Information**
+**Related Articles**
 
 .. toctree::
    :maxdepth: 1
-
-   viewlist
-
+   :hidden: 
+  
    create
-
    organize
-
    manage_address_book

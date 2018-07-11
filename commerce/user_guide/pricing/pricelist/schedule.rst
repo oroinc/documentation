@@ -1,3 +1,5 @@
+.. _user-guide--pricing--schedule-price-adjustments:
+
 Schedule Price Adjustments
 --------------------------
 

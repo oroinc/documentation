@@ -69,8 +69,8 @@ To view a specific shopping list in the management console:
 
 6. The *Marketing Activity* section shows any activity of this kind associated with the shopping list.
 
-Manage Shopping List
---------------------
+Manage a Shopping List
+----------------------
 
 From the Shopping List view page, you can perform the following actions for the shopping list:
 

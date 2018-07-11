@@ -1,3 +1,5 @@
+.. _configuration--guide--commerce--inventory:
+
 Configuring Inventory
 ---------------------
 
