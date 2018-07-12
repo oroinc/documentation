@@ -38,7 +38,7 @@ information about the application, its author and distribution license, as shown
 
 We only accept extensions under OSL-3 or MIT licenses.
 
-.. _our packagist application: http://packagist.orocrm.com/
+.. _our packagist application: http://packagist.oroinc.com/
 
 
 Adding an Extension
@@ -118,5 +118,5 @@ References
 * `Oro Packagist`_
 
 .. _OroCRM Marketplace: https://marketplace.orocrm.com/
-.. _Oro Packagist: http://packagist.orocrm.com/
+.. _Oro Packagist: http://packagist.oroinc.com/
 
