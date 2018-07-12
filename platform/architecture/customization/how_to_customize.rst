@@ -28,7 +28,7 @@ Browse published extensions for Oro applications on the following marketplaces:
 * OroCRM --- `https://marketplace.orocrm.com/ <https://marketplace.orocrm.com/>`_
 * OroCommerce --- `https://marketplace.orocommerce.com/ <https://marketplace.orocommerce.com/>`_
 
-.. note:: Once the Oro application extension package is `published on the Oro marketplace <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/extend-and-customize/how-to-add-an-extension-to-oro-marketplace>`_, it is automatically registered in the `Oro Packagist repository <https://packagist.orocrm.com/>`_. See a topic on a :ref:`Distribution Model <architecture-oro-php-application-structure>` for more information on using composer service with Packagist and OroPackagist repositories.
+.. note:: Once the Oro application extension package is `published on the Oro marketplace <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/extend-and-customize/how-to-add-an-extension-to-oro-marketplace>`_, it is automatically registered in the `Oro Packagist repository <https://packagist.oroinc.com/>`_. See a topic on a :ref:`Distribution Model <architecture-oro-php-application-structure>` for more information on using composer service with Packagist and OroPackagist repositories.
 
 To install an extension, use the package manager CLI (`oro:package:install command`) or the composer CLI (`composer require <extension-name>:<version>` command). For detailed information, please, see the `How To Install Extensions from the Marketplace <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/install-upgrade-and-patch/how-to-install-extension-from-command-line>`_ topic.
 

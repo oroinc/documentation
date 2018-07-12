@@ -17,7 +17,7 @@ OroCommerce supports integration with PayPal to offer the following payment meth
 * PayPal Payments Pro Express Checkout
 * PayPal Express (verify availability in your country at `PayPal website <https://www.paypal.com/us/webapps/mpp/country-worldwide>`_)
 
-  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/packages/oro/paypal-express>`_ package.
+  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
 
 .. note:: Depending on PayPal policies, payment methods may be different in specific countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries.
 
