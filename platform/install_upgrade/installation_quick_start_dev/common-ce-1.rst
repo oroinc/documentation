@@ -193,6 +193,40 @@ Use this password to login to mysql CLI as root user and change the temporary pa
 Replace `P@ssword123` with your secret password. Ensure it contains at least one upper case letter, one lower case letter,
 one digit, and one special character, and has a total length of at least 8 characters.
 
+Change the MySQL Server Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database. However, if you are forced to
+use the HDD, to avoid performance issues, set the following configuration parameters in the **/etc/my.cnf** file:
+
+.. code:: bash
+
+   [mysqld]
+   innodb_file_per_table = 0
+   wait_timeout = 28800
+
+To store supplementary characters, like 4-bytes emojis, you should configure options file to use `utf8mb4`
+character set:
+
+.. code:: bash
+
+   [client]
+   default-character-set = utf8mb4
+
+   [mysql]
+   default-character-set = utf8mb4
+
+   [mysqld]
+   character-set-client-handshake = FALSE
+   character-set-server = utf8mb4
+   collation-server = utf8mb4_unicode_ci
+
+For the changes to take effect, restart MySQL server by running:
+
+.. code:: bash
+
+   systemctl restart mysqld
+
 Create a Database for |oro_app_name| Application and a Dedicated Database User
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -200,49 +234,12 @@ Create a Database for |oro_app_name| Application and a Dedicated Database User
 
    CREATE DATABASE oro;
    GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
+   FLUSH PRIVILEGES;
    exit
 
 Replace `oro_user` and `P@ssword123` with a new username and more secure password respectively.
 Ensure the password contains at least one upper case letter, one lower case letter, one digit,
 and one special character, and has a total length of at least 8 characters.
-
-Change the MySQL Server Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database.
-However, if you are forced to use the HDD, as a precaution, to avoid performance issues, use the remedy explained in the
-`optimizing InnoDB Disk I/O <https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html>`_ article, and hence
-set the following configuration parameters in the **/etc/my.cnf** file:
-
-.. code:: bash
-
-   innodb_file_per_table = 0
-   wait_timeout = 28800
-
-If you want to store supplementary characters, like 4-bytes emojis, the `utf8mb4` character set can be used.
-But in case if you use MySQL older than 5.7 the following configuration parameters should be set in
-the **/etc/my.cnf** file:
-
-.. code:: bash
-
-   innodb_file_format = Barracuda
-   innodb_large_prefix = 1
-
-Since MySQL 5.7 these parameters are set by default.
-More details can be found in `Unicode Support <https://dev.mysql.com/doc/refman/5.7/en/charset-unicode.html>`_
-and `InnoDB File-Format Management <https://dev.mysql.com/doc/refman/5.7/en/innodb-file-format.html>`_ articles.
-
-Also take a look at
-`Setting up the Database to be UTF8 <https://symfony.com/doc/3.4/doctrine.html#configuring-the-database>`_
-in Symfony Documentation to learn how to configure an application to use `utf8mb4` character set.
-But again in case if you use MySQL older than 5.7 you need to add `row_format: DYNAMIC` option
-in `default_table_options` section.
-
-For the changes to take effect, restart MySQL server by running:
-
-.. code:: bash
-
-   systemctl restart mysqld
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^

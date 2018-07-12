@@ -49,6 +49,21 @@ If you use HTTPS mode, open the *config/parameters.yml* file and change the WebS
 
 For more information on these parameters, see `OroSyncBundle documentation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle>`_.
 
+Configure DBAL Parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Change the defaults for Doctrine in the *config/config.yml* file so that the generated SQL uses the *utf8mb4* character
+set:
+
+.. code::
+
+    doctrine:
+        dbal:
+            charset: utf8mb4
+            default_table_options:
+                charset: utf8mb4
+                collate: utf8mb4_unicode_ci
+
 Install |oro_app_name| Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
