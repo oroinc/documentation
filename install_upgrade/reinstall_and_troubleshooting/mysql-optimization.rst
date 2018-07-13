@@ -89,7 +89,7 @@ put the following configuration into the **config/config.yml** file:
                 collate: utf8mb4_unicode_ci
 
 .. note:: If you use the version of MySQL that is older than 5.7, also add the `row_format: DYNAMIC` option to the
-`default_table_options` section.
+    `default_table_options` section.
 
 For more details, please see the
 `Setting up the Database to be UTF8 <https://symfony.com/doc/3.4/doctrine.html#configuring-the-database>`_ article.
