@@ -106,7 +106,7 @@ Now you have all required files to enable your new bundle. To do that you have t
        If you are working in production environment you have to add parameter
        --env=prod.
 
-Now you can go to frontend in development mode (http://bap.tutorial/app_dev.php/) and click on
+Now you can go to frontend in development mode (http://bap.tutorial/index_dev.php/) and click on
 `Symfony profiler`_ config icon:
 
 .. _Symfony profiler: http://symfony.com/doc/current/book/internals.html#profiler

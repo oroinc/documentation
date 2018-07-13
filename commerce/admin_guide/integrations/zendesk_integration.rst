@@ -1,137 +1,107 @@
 .. _user-guide-zendesk-integration:
+.. _user-guide-zendesk-channel-integration-synchronization:
 
-Integration with Zendesk
-========================
+Zendesk Integration
+===================
 
-OroCRM supports out of the box integration with Zendesk, allowing you to load data from your Zendesk account and process it in OroCRM. This article describes how to define and edit the integration and synchronization settings.
+.. contents:: :local:
+   :depth: 2
 
-.. hint::
+Oro applications support out of the box integration with Zendesk, enabling you to load data from your Zendesk account and process it in the Oro application. This article describes how to define and edit the integration and synchronization settings.
 
-    While Zendesk integration capabilities are pre-implemented, OroCRM can be integrated with different third-party systems.
+.. hint:: While Zendesk integration capabilities are pre-implemented, OroCRM and OroCommerce can be integrated with different third-party systems.
 
+Generate API token in Zendesk
+-----------------------------
 
-On the Zendesk Side
--------------------
-
-The only thing you will need from Zendesk is your API token.
+To retrieve your API token on the Zendesk side:
 
 1. Open your account and go to the **Admin** page.
 
-.. image:: /user_guide/system/img/zendesk/zendesk_admin.png
+   .. image:: /user_guide/system/img/zendesk/zendesk_admin.png
 
-2. Go to the **CHANNELS>API**.
+2. Navigate to the **CHANNELS>API**.
 
-.. image:: /user_guide/system/img/zendesk/zendesk_api.png
+   .. image:: /user_guide/system/img/zendesk/zendesk_api.png
 
 3. Make sure the **Token Access** is enabled.
 
 4. Copy an active API token.
 
-.. image:: /user_guide/system/img/zendesk/zendesk_api_token.png
+   .. image:: /user_guide/system/img/zendesk/zendesk_api_token.png
 
 
+Create the Integration
+----------------------
 
-On the Oro Side
----------------
+To create an integration with Zendesk:
 
-Create Zendesk Integration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Navigate to **System > Integrations > Manage Integrations** in the main menu:
+2. Click **Create Integration** on the top right.
+3. On the **Create Integration** page, set the integration type to **Zendesk**
+4. In the **General** section, define the following mandatory details:
 
-Go to the **System > Integrations > Manage Integrations**, and click the :guilabel:`Create Integration` button.
-
-The **Create Integration** form will appear.
-
-As soon as you set the integration type to **Zendesk**, the form is recalculated to meet specific integration
-  requirements.
-
-General
-"""""""
-
-Define the following mandatory details in the **General** section:
-
-.. csv-table::
-  :header: "Field", "Description"
-  :widths: 10, 30
-
-  "**Type***","The integration type. Must be set to **Zendesk**"
-  "**Name***","The integration name used to refer to the integration within the system."
-  "**URL***","A URL of your Zendesk account (e.g. ``https://username.zendesk.com``)."
-  "**API Email***","The email used to register your Zendesk account."
-  "**API Token***","The API token generated and/or copied in the Zendesk (as described above)."
-  "**Default Zendesk User Email**","User with this email will be assigned tickets that come from OroCRM and for which
-  there are no Zendesk users with a matching email address."
-  "**Owner**","Limits the list of users that can manage the integration, subject to the 
-  access and permission settings
-  etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
+   .. csv-table::
+     :header: "Field", "Description"
+     :widths: 10, 30
+   
+     "**Type***","The integration type. Must be set to **Zendesk**"
+     "**Name***","The integration name used to refer to the integration within the system."
+     "**URL***","A URL of your Zendesk account (e.g. ``https://username.zendesk.com``)."
+     "**API Email***","The email used to register your Zendesk account."
+     "**API Token***","The API token generated and/or copied in the Zendesk (as described above)."
+     "**Default Zendesk User Email**","User with this email will be assigned tickets that come from the Oro application and for which
+     there are no Zendesk users with a matching email address."
+     "**Owner**","Limits the list of users that can manage the integration, subject to the access and permission settings
+     etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
   
+5. In the **Synchronization Settings** section, enable/disable the two-way synchronization.
 
-.. _user-guide-zendesk-channel-integration-synchronization:
+   Select the **Enable Two Way Sync** check box, if you want to download data both from Zendesk to your Oro application and back. 
+   
+   If the box is left unselected, data from Zendesk is loaded into the Oro application, but changes performed within it are not loaded back into Zendesk.
 
-Synchronization Settings
-""""""""""""""""""""""""
+6. If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same customer details were edited from the both OroCRM and Zendesk):
 
-Use the **Synchronization Settings** section to enable/ disable two way synchronization.
+   * **Remote wins** --- Zendesk data is applied to both Zendesk and the Oro application.
+   * **Local wins** --- Oro application data is applied to both Zendesk and Oro the application.
 
-Select the **Enable Two Way Sync** check box, if you want to download data both from Zendesk to OroCRM and
-back. If the box is left unchecked, data from Zendesk will be loaded into OroCRM, but changes performed in OroCRM will 
-not be loaded into Zendesk.
+.. _user-guide-Zendesk-channel-integration-details_edit:
 
-If two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same
-customer details were edited from the both OroCRM and Zendesk):
+Manage the Integration
+----------------------
 
-- **Remote wins**—Zendesk data will be applied to both Zendesk and OroCRM.
-
-- **Local wins**—OroCRM data will be applied to both Zendesk and OroCRM.
-
-For example we have created a 'Demo Zendesk Integration' with two-way synchronization enabled. In this integration you have set that if the same data
-is changed from both Zendesk and OroCRM, the Zendesk changes will take precedence.
+As an illustration, we have created a sample Zendesk integration with two-way synchronization enabled and sync priority set to **Remote Wins**. This means that if the same data is changed from both Zendesk and OroCRM, Zendesk changes take precedence.
 
 .. image:: /user_guide/system/img/zendesk/zendesk_create.png
 
 
-.. _user-guide-Zendesk-channel-integration-details_edit:
+Initially the integration is inactive. In order to activate it, click **Activate** on the integration details page.
 
-Activate the Integration
-^^^^^^^^^^^^^^^^^^^^^^^^
+.. note:: To delete or edit integration details, navigate to the the page with all integrations **System > Integrations > Manage Integrations**.
 
-Initially the integration is inactive. In order to activate it, click the :guilabel:`Activate` button on the integration
-view page.
-
-Edit the Integration
-^^^^^^^^^^^^^^^^^^^^
-
-All the integrations created will be available in the **Integrations** grid (**System > Integrations > Manage
-Integrations**. You can delete or edit the integration details.
-
-.. See :ref:`Delete a Record <doc-grids-actions-records-delete>` and :ref:`Edit a Record <doc-grids-actions-records-edit>`
-
-.. image:: /user_guide/system/img/zendesk/zendesk_edit.png
-
+    .. image:: /user_guide/system/img/zendesk/zendesk_edit.png
 
 .. _user-guide-Zendesk-channel-start-synchronization:
 
-Synchronization
----------------
+Synchronize Data
+----------------
 
-Start Synchronization
-^^^^^^^^^^^^^^^^^^^^^
+Once integration has been created, the data is automatically synchronized. 
 
-Once integration has been created, the data will be automatically synchronized. However, you can also start the synchronization manually from OroCRM:
+To start the synchronization manually:
 
-- Go to the **System>Integrations>Manage Integrations**, and click the |BSchedule| **Reset** button.
+1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
+2. For the the integraion with Zendesk, hover over the |IcMore| **More Options** menu to the right and click |BSchedule| to schedule sync.
 
-- Alternatively, go to the integration view page, and click the :guilabel:`Schedule Sync` button.
-  *A sync* :ref:`job <book-job-execution>` *has been added to the queue. Check progress.* note will appear.
+.. note:: Alternatively, open the integration details page and click **Schedule Sync** on the top right. 
 
-The data is now being synchronized. You can click the **Check progress** link to see the synchronization status.
+3. Wait for data to synchronize. Click the **Check progress** link to see the synchronization status.
 
-Synchronization Process
-^^^^^^^^^^^^^^^^^^^^^^^
+Sync from Zendesk to the Oro Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First Synchronization from Zendesk to OroCRM
-""""""""""""""""""""""""""""""""""""""""""""
-
-A new OroCRM case is created for every Zendesk ticket. The ticket fields are mapped at the OroCRM case fields as 
+A new case is created in the Oro application for every Zendesk ticket. The ticket fields are mapped in the Oro application case fields as 
 follows:
 
 .. csv-table::
@@ -192,8 +162,9 @@ follows:
 
 .. image:: /user_guide/system/img/zendesk/example_ticket.png
   
-For each case created as a result of synchronization with Zendesk, a ticket is created in OroCRM. The following
-field values are defined as follows:
+For each case created as a result of synchronization with Zendesk, a ticket is created in the Oro application.
+ 
+The following field values are defined as follows:
   
 .. csv-table::
   :header: "OroCRM Ticket Field", "Description"
@@ -248,11 +219,10 @@ field values are defined as follows:
   "Problem","Same as the **Problem** field in the Zendesk ticket."
   "Collaborators","Same as the **Collaborators** field in the Zendesk ticket."
 
-Synchronization from OroCRM to Zendesk
-""""""""""""""""""""""""""""""""""""""
+Sync from the Oro Application to Zendesk
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If two-way synchronization is enabled, :guilabel:`Publish to Zendesk` will be available in the Case 
-view page. Click the button and the case will be submitted to Zendesk.
+If two-way synchronization is enabled, the **Publish to Zendesk** button is available on the Case details page. Click the button to submit the case to Zendesk.
 
 The case fields are mapped to the Zendesk ticket fields as follows:
 
@@ -312,14 +282,14 @@ The case fields are mapped to the Zendesk ticket fields as follows:
 
 - After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in OroCRM.
   
-Further Synchronizations
-""""""""""""""""""""""""
+Review Further Sync Rules
+^^^^^^^^^^^^^^^^^^^^^^^^^
   
 - If some ticket details of a Zendesk ticket have been changed after the initial synchronization, the corresponding 
-  OroCRM case details will also be updated in the course of the nearest synchronization.
-- If some ticket details of an OroCRM case have been changed after the initial synchronization, the corresponding 
+  Oro application case details will also be updated in the course of the nearest synchronization.
+- If some ticket details of an Oro application case have been changed after the initial synchronization, the corresponding 
   Zendesk ticket details will also be updated automatically (if the two-way synchronization is enabled).
-- If the same details have been updated in a related Zendesk ticket and OroCRM case, and the two-way synchronization is 
+- If the same details have been updated in a related Zendesk ticket and Oro application case, and the two-way synchronization is 
   enabled, the synchronization priority settings will be applied.
 
 .. stop

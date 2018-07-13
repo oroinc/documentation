@@ -10,15 +10,14 @@ Configure dotmailer Integration
 Install Extension
 -----------------
 
-To configure dotmailer integration, ensure that you have dotmailer extension installed in your instance of OroCRM. For installation instructions, click `here <https://marketplace.orocrm.com/package/orocrm-dotmailer-integration/>`_.
+To configure dotmailer integration, ensure that you have the dotmailer extension installed in your application. For installation instructions, click `here <https://marketplace.orocrm.com/package/orocrm-dotmailer-integration/>`_.
 
 .. _user-guide-dotmailer-configuration--dotmailer-side:
 
 Create API Managed User on the dotmailer Side
 ---------------------------------------------
 
-To configure integration with OroCRM and OroCommerce on the dotmailer side, you need to
-create **an API managed user**. In order to do that:
+To configure integration with OroCRM and OroCommerce on the dotmailer side, create **an API managed user**:
 
 1. Log in to dotmailer.
 
@@ -32,12 +31,9 @@ create **an API managed user**. In order to do that:
     
    .. image:: /user_guide/system/img/dotmailer_email_campaign/dotmailer_account_users.jpg
 
-Your unique email address will be generated in the **Email Address**
-field. You need this email address to configure OroCRM integration with
-dotmailer.
+   Your unique email address will be generated in the **Email Address** field. You need this email address to configure OroCRM integration with dotmailer.
 
-6. Next, create and confirm your **Password**. The **Description** field is
-optional. Mark your user **Enabled** and click **Save** to proceed.
+6. Next, create and confirm your **Password**. The **Description** field is optional. Mark your user **Enabled** and click **Save** to proceed.
    
    .. image:: /user_guide/system/img/dotmailer_email_campaign/dotmailer_api_users_new_user_details.jpg
 
@@ -46,13 +42,13 @@ optional. Mark your user **Enabled** and click **Save** to proceed.
 Create Integration on the Oro Application Side
 ----------------------------------------------
 
-1. Log into OroCRM and navigate to **System > Integrations > Manage Integrations**.
+1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
 
 2. Click **Create Integration** in the upper-right corner of the page.
 
    .. image:: /user_guide/system/img/dotmailer_email_campaign/oro_create_dotmailer_integration_new.jpg
 
-3. Next, complete the following fields:
+3. Complete the following fields:
 
    .. csv-table::
      :header: "Field", "Description"
@@ -67,7 +63,7 @@ Create Integration on the Oro Application Side
      "**Custom OAuth Domain**","Enter custom domain if it is used in dotmailer. By default https://r1-app.dotmailer.com/ is used."
      "**Default Owner**","Select the owner of the integration. The selected user will be defined as the owner for all the records imported within the integration."
 
-Once all the details of the integration have been specified, click **Save and Close**.
+4. Once all the details of the integration have been specified, click **Save and Close**.
 
 As soon as the integration is successfully configured, it will appear in the integration grid.
 
@@ -86,12 +82,10 @@ The dotmailer menu group contains the following sections:
 Sync dotmailer Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In order to sync dotmailer integration:
+To sync dotmailer integration:
 
 1.  Navigate to **System > Integrations > Manage Integrations**.
-
 2.  Select the newly created integration.
-
 3.  Click **Schedule Sync** in the upper-right corner of the page.
    
 Related Articles

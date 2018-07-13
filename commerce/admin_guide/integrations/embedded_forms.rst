@@ -3,96 +3,71 @@
 Embedded Forms
 ==============
 
-In Oro application, **Embedded Forms** help create the code that may be added to a third-party website to enable communication between the third-party website users and the Oro application.
+.. contents:: :local:
+   :depth: 2
+
+In Oro application, embedded forms help create the code that may be added to a third-party website to enable communication between the third-party website users and the Oro application.
+
 Embedded forms may be used to collect requests of marketing, technical, commercial or any other nature.
 
-The fields of an embedded form depend on its type. 
+The fields of an embedded form depend on its type. The two out-of-the-box types of the embedded forms are:
 
-Embedded Form Types and Fields
-------------------------------
+* Contact Request
 
-The two out-of-the-box types of the embedded forms are *Contact Request* and *Magento Contact Us Request*.
+   .. image:: /user_guide/system/img/emb_form/cont_req.png
+ 
+* Magento Contact Us Request
+ 
+   .. image:: /user_guide/system/img/emb_form/cont_req_magento.png
+ 
+Additional embedded form types may be created in the course of integration with the Oro application, subject to your specific business needs.
 
-.. hint::
-
-    Additional embedded form types may be created in the course of integration with OroCRM, subject to your specific
-    business needs.
-
-Contact Request
-^^^^^^^^^^^^^^^
-
-The form initially looks as follows:
-
-.. image:: /user_guide/system/img/emb_form/cont_req.png
-
-Magento Contact Us Request
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The form is sharpened for the Magento design, however it can be used for any website.
-
-The form initially looks as follows:
-
-.. image:: /user_guide/system/img/emb_form/cont_req_magento.png
-
-
-Create and Preview an Embedded Form
------------------------------------
+Create an Embedded Form
+-----------------------
 
 In order to create a new embedded form:
 
-1. Go to the **System > Integrations > Embedded Forms**.
+1. Navigate to **System > Integrations > Embedded Forms** in the main menu.
+2. Click **Create Embedded Form**.
+3. Provide the following details: 
 
-2. Click the :guilabel:`Create Embedded Form` button.
+   .. csv-table::
+     :header: "**Name**","**Description**"
+     :widths: 10, 30   
+     
+     "**Title**","The title used to refer to the form in the system. The field must be defined."
+     "**Form Type**","Choose one of the form types described above. Please note, that while the *Magento Contact Us Request* type is sharpened to suit the Magento design, you can choose the type regardless of the Channel chosen."
+     "**CSS**","Editable CSS. The default CSS corresponds to the initial form design, subject to its type. You can edit the CSS to change such settings as the border width, color, fonts etc."
+     "**Success Message**","The message to be displayed on the website following the successful form submission. By default is set to *Form has been submitted successfully*."
+     "**Allowed Domains**","Allowed cross origin domains where the form can be embedded. Supports wildcard e.g. X.example.com"
 
-   The Create Embedded Form page opens. The form has the following fields:
+   
+   .. image:: /user_guide/system/img/emb_form/embedded_form_contact_us.png
 
-.. csv-table::
-  :header: "**Name**","**Description**"
-  :widths: 10, 30
+4. Click **Save and Close**.
 
-  "**Channel***","The :term:`channel <Channel>` from which the form information will be received. The drop-down contains
-  all the channels defined in the system. The field must be defined."
-  "**Title***","The title used to refer to the form in the system. The field must be defined."
-  "**Form Type***","Choose one of the form types described above. 
-  
-  Please note, that while the *Magento Contact Us Request* type is sharpened to suite the Magento design, you can choose 
-  the type regardless of the Channel chosen."
-  "**CSS***","Editable CSS. The default CSS corresponds to the initial form design, subject to its type. You can edit 
-  the CSS to change such settings as the border width, color, fonts etc."
-  "**Success Message***","The message to be displayed on the website following the successful form submission. By 
-  default is set to *Form has been submitted successfully*."
+   .. image:: /user_guide/system/img/emb_form/emb_form_create_ex_02.png
 
-4. Click the button in the top right corner to save the form.
-
-For example, we have created a form for the custom channel. We've changed the text color to green and the background to 
-yellow. We've also changed the Success Message to "Thank you for the question!".
-  
-.. image:: /user_guide/system/img/emb_form/emb_form_create_ex.png
-
-After we've saved it, the form has appeared in the Embedded Forms grid.
+Once saved, the form is displayed on the page of all embedded forms under **System > Integrations > Embedded Forms**.
   
 .. image:: /user_guide/system/img/emb_form/emb_form_create_ex_01.png
 
-You can preview the form:
+You can manage contact requests using the following action icons:
 
-.. image:: /user_guide/system/img/emb_form/emb_form_create_ex_02.png
-
-Manage Embedded Forms
----------------------
-
-- From the gird, you can manage the Contact Request using the action icons:
-
-  - Delete the form: |IcDelete|
-
-  - Get to the edit page of the form: |IcEdit|
-
-  - Get to the view page of the form:  |IcView|
+* Delete |IcDelete|
+* Edit |IcEdit|
+* View |IcView|
 
 .. _admin-embedded-forms-code:
  
-Add the Form to Your Site
--------------------------  
-Open the form View page and go to the **Get Code** section. The code to add your form to the site is available there.
+Add Embedded Forms to Your Site
+-------------------------------
+
+To add the necessary embedded form to your website:
+
+1. Navigate to **System > Integrations > Embedded Forms** in the main menu.
+2. Click once on the form to open its details page.
+3. In the **Get Code** section, copy the provided code and paste it to the required section of your website. 
 
 .. image:: /user_guide/system/img/emb_form/emb_form_code.png
 

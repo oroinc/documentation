@@ -16,7 +16,7 @@ Run `deploy` on the running application. This operation cleans up the database a
 Can I Test the Customized Application in a Development Mode in OroCloud?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-No, access to the app_dev.php file in OroCloud is prohibited for security reasons.
+No, access to the index_dev.php file in OroCloud is prohibited for security reasons.
 
 What Is in the Application Backup?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -5,7 +5,7 @@ Overview
 
 .. begin_overview
 
-Adoption of cloud platforms has been rocketing up due to the elasticity, security, easy and fast deployments, and, most importantly, the minimized total cost of ownership of the cloud-hosted solutions.
+Adoption of cloud platforms has skyrocketed due to their elasticity, security, ability to quickly and easily deploy, and, most importantly, their minimized total cost of ownership.
 
 With full control over the resources and infrastructure configuration that cloud platforms offer today, one can hardly find any downsides of moving their business solutions from the private in-house infrastructure to the highly distributed and fault-tolerant global resources provided by the cloud niche leaders.
 

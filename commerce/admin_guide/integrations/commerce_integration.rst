@@ -10,7 +10,7 @@ CRM and Commerce Integration
 Overview
 --------
 
-Integration between `OroCRM <https://www.oroinc.com/orocrm>`_ and `OroCommerce <https://www.oroinc.com/orocommerce>`_ provides seamless experience of two applications working as one.
+The integration between `OroCRM <https://www.oroinc.com/orocrm>`_ and `OroCommerce <https://oroinc.com/b2b-ecommerce/>`_ provides seamless experience of two applications working as one.
 
 OroCommerce comes with OroCRM integration enabled out of the box. If you are using OroCRM, you can install OroCommerce on top of it and enable the integration.
 
@@ -25,7 +25,7 @@ Oro application share the baseline and combining capabilities of multiple applic
 What OroCRM Users Get After Integration
 ---------------------------------------
 
-For the OroCRM users, the following changes and improves after integration:
+For the OroCRM users, the following aspects are changed and improved after the integration:
 
 .. contents:: :local:
     :depth: 1
