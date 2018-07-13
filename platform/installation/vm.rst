@@ -56,7 +56,7 @@ Ensure that the server is installed in your local or corporate environment and i
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.orocrm.com/download
+.. _`download section`: https://oroinc.com/oroplatform/download
 
 .. |the_site| replace:: `orocrm.com`_
 

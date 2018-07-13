@@ -54,7 +54,7 @@ Ensure that the server is installed in your local or corporate environment and i
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.oroinc.com/v/download
+.. _`download section`: http://www.oroinc.com/b2b-ecommerce/download
 
 .. |the_site| replace:: `oroinc.com/b2b-ecommerce`_
 
