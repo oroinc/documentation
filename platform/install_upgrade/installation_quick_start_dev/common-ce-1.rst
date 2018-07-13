@@ -196,8 +196,8 @@ one digit, and one special character, and has a total length of at least 8 chara
 Change the MySQL Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database. However, if you are forced to
-use the HDD, to avoid performance issues, set the following configuration parameters in the **/etc/my.cnf** file:
+It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database. However, in case you do need to
+use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
 
 .. code:: bash
 
@@ -205,8 +205,8 @@ use the HDD, to avoid performance issues, set the following configuration parame
    innodb_file_per_table = 0
    wait_timeout = 28800
 
-To store supplementary characters, like 4-bytes emojis, you should configure options file to use `utf8mb4`
-character set:
+To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character
+set:
 
 .. code:: bash
 
@@ -237,9 +237,9 @@ Create a Database for |oro_app_name| Application and a Dedicated Database User
    FLUSH PRIVILEGES;
    exit
 
-Replace `oro_user` and `P@ssword123` with a new username and more secure password respectively.
-Ensure the password contains at least one upper case letter, one lower case letter, one digit,
-and one special character, and has a total length of at least 8 characters.
+Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains
+at least one upper case letter, one lower case letter, one digit, one special character and has the total length of at
+least 8 characters.
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
