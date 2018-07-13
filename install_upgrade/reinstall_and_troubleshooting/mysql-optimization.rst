@@ -12,10 +12,10 @@ MySQL Optimization
 How To Avoid Performance Issuses When MySQL Data is Stored on HDD
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is recommended to use SSD to store the data in the MySQL 5.X database. However, if you are forced to use the HDD, as
-a precaution, to avoid performance issues, use the remedy explained in the
-`optimizing InnoDB Disk I/O <https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html>`_ article, and hence
-set the following configuration parameters in the **/etc/my.cnf** file:
+It is recommended to use SSD to store the data in the MySQL 5.X database. However, if you do need to use the HDD, follow
+the steps described in the
+`optimizing InnoDB Disk I/O <https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html>`_ article to avoid
+performance issues and set the following configuration parameters in the **/etc/my.cnf** file:
 
 .. code:: bash
 
@@ -28,8 +28,8 @@ set the following configuration parameters in the **/etc/my.cnf** file:
 Usage of The utf8mb4 Character Set (The Full 4-Byte UTF-8 Unicode Encoding) in MySQL
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you want to store supplementary characters, like 4-bytes emojis, configure your MySQL server to use `utf8mb4`
-character set and collation. Put the following configuration settings in your options file **/etc/my.cnf**:
+To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4`
+character set. Put the following configuration settings in your options file **/etc/my.cnf**:
 
 .. code:: bash
 
@@ -45,7 +45,7 @@ character set and collation. Put the following configuration settings in your op
    collation-server = utf8mb4_unicode_ci
 
 MySQL also can load default options from another file (not */etc/my.cnf*). In such cases, you have to put the
-configuration settings in this file. To find out which configuration files uses your MySQL server, run the
+configuration settings in this file. To find out which configuration files your MySQL server uses, run the
 following command:
 
 .. code:: bash
@@ -59,9 +59,9 @@ You will get the output with MySQL config files names similar to this:
     Default options are read from the following files in the given order:
     /etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf
 
-.. note:: You also can set up character set and collation on `the other levels <https://dev.mysql.com/doc/refman/5.5/en/charset-syntax.html>`_ as well.
+.. note:: You also can set up the character set and the collation on `the other levels <https://dev.mysql.com/doc/refman/5.5/en/charset-syntax.html>`_ as well.
 
-In case if you use MySQL **older than 5.7** the following configuration parameters should be set in
+If you use the version of MySQL that is **older than 5.7**, the following configuration parameters should be set in
 the **/etc/my.cnf** file:
 
 .. code:: bash
@@ -70,13 +70,14 @@ the **/etc/my.cnf** file:
    innodb_file_format = Barracuda
    innodb_large_prefix = 1
 
-Since MySQL 5.7 these parameters are set by default.
+Since MySQL 5.7, these parameters are set by default.
 
-More details you can find in `Unicode Support <https://dev.mysql.com/doc/refman/5.7/en/charset-unicode.html>`_
-and `InnoDB File-Format Management <https://dev.mysql.com/doc/refman/5.7/en/innodb-file-format.html>`_ articles.
+You can find more information on MySQL configuration in the
+`Unicode Support <https://dev.mysql.com/doc/refman/5.7/en/charset-unicode.html>`_ and
+`InnoDB File-Format Management <https://dev.mysql.com/doc/refman/5.7/en/innodb-file-format.html>`_ articles.
 
 You can also change the defaults for Doctrine so that the generated SQL uses the correct character set. To achieve this,
-put the following configuration to the **config/config.yml** file:
+put the following configuration into the **config/config.yml** file:
 
 .. code::
 
@@ -87,8 +88,8 @@ put the following configuration to the **config/config.yml** file:
                 charset: utf8mb4
                 collate: utf8mb4_unicode_ci
 
-.. note:: If you use MySQL older than 5.7 you also need to add `row_format: DYNAMIC` option in `default_table_options`
-    section.
+.. note:: If you use the version of MySQL that is older than 5.7, also add the `row_format: DYNAMIC` option to the
+`default_table_options` section.
 
-For more details, please see the article
-`Setting up the Database to be UTF8 <https://symfony.com/doc/3.4/doctrine.html#configuring-the-database>`_.
+For more details, please see the
+`Setting up the Database to be UTF8 <https://symfony.com/doc/3.4/doctrine.html#configuring-the-database>`_ article.
