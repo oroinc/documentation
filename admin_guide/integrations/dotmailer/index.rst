@@ -1,37 +1,51 @@
 .. _user-guide-dotmailer-overview:
 .. _user-guide-dm-integration:
 
-dotmailer Integration Overview
-==============================
+dotmailer Integration
+=====================
 
 .. begin_include
 
-Oro applications supports out of the box integration with dotmailer, allowing you to:
+Oro application supports out of the box integration with dotmailer, allowing you to do the following:
 
 - Map the :ref:`Marketing Lists <user-guide-marketing-lists>` to address books in dotmailer and keep them
   synchronized.
 - Use your address books to create email campaigns in dotmailer and import them to Oro application.
-- Create new contact data fields to capture and/or contain additional information about your contacts.
+- Create new contact data fields to capture additional information about your contacts.
 - Use dotmailer campaign statistics and Oro application reporting tools to analyze the campaign efficiency.
 
-To learn, how to configure dotmailer integration, please refer to the :ref:`dotmailer Configuration guide <user-guide-dotmailer-configuration>`.
+Before you can use dotmailer with Oro application, ensure that all the necessary integration steps are complete:
 
-For dotmailer settings in Oro application, see :ref:`dotmailer Integration Settings guide <admin-configuration-dotmailer-integration-settings>`.
+* Configure dotmailer for integration --- please refer to the :ref:`dotmailer Configuration guide <user-guide-dotmailer-configuration>`.
 
-To find out how to send an email campaign via dotmailer, please read the :ref:`Sending Email Campaign via dotmailer guide <user-guide-dotmailer-campaign>`.
+* Check the :ref:`dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>` to the Oro application data.
 
-Information on data fields and mappings can be found in the related :ref:`Manage dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`.
+* Set up the schedule for data synchronization between dotmailer and Oro application --- see :ref:`dotmailer Synchronization Settings <admin-configuration-dotmailer-integration-settings>`.
 
-Finally, if you wish to configure dotmailer single sign on, please follow the steps in the :ref:`dotmailer Single Sign-on guide <user-guide-dotmailer-single-sign-on>`.
+* Optionally, configure dotmailer single sign on --- please follow the :ref:`dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>` steps.
+
+After configuring the integration and data synchronization, you can :ref:`Send Email Campaign via dotmailer guide <user-guide-dotmailer-campaign>`.
 
 .. finish_include
 
-.. hint:: While dotmailer integration capabilities are pre-implemented, Oro application can be integrated with different third-party
-    systems. Please, refer to the Integrations section of the :ref:`Admin guide <user-guide-admin-tools>` to learn more.
+.. hint:: While dotmailer integration comes out of the box, Oro application can be integrated with other third-party
+    systems. Please, refer to the :ref:`Integrations <user-guide-integrations>` section to learn more.
+
+Key Points of Reference
+-----------------------
+
+- :ref:`Configure dotmailer Integration <user-guide-dotmailer-configuration>`
+- :ref:`Configure dotmailer Synchronization Settings <admin-configuration-dotmailer-integration-settings>`
+- :ref:`Manage dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
+- :ref:`Configure dotmailer Single Sign-on <user-guide-dotmailer-single-sign-on>`
+- :ref:`Send Email Campaigns via dotmailer <user-guide-dotmailer-campaign>`
+
 
 .. toctree::
+   :hidden:
    :maxdepth: 1
 
-   dotmailer_integration_settings
    dotmailer_configuration
+   dotmailer_integration_settings
    dotmailer_single_sign_on
+                    

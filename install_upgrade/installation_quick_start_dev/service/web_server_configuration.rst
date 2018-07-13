@@ -32,7 +32,7 @@ Apache 2.2
         <VirtualHost *:80>
             ServerName {$folder_name}.example.com
 
-            DirectoryIndex app.php
+            DirectoryIndex index.php
             DocumentRoot [$folder_location]}/{$folder_name}/web
             <Directory  [$folder_location]}/{$folder_name}/web>
                 # enable the .htaccess rewrites
@@ -54,7 +54,7 @@ Apache 2.4
         <VirtualHost *:80>
             ServerName {$folder_name}.example.com
 
-            DirectoryIndex app.php
+            DirectoryIndex index.php
             DocumentRoot [$folder_location]}/{$folder_name}/web
             <Directory  [$folder_location]}/{$folder_name}/web>
                 # enable the .htaccess rewrites
@@ -79,11 +79,11 @@ Nginx
             root  [$folder_location]}/{$folder_name}/web;
 
             location / {
-                # try to serve file directly, fallback to app.php
-                try_files $uri /app.php$is_args$args;
+                # try to serve file directly, fallback to index.php
+                try_files $uri /index.php$is_args$args;
             }
 
-            location ~ ^/(app|app_dev|config|install)\.php(/|$) {
+            location ~ ^/(index|index_dev|config|install)\.php(/|$) {
                 fastcgi_pass 127.0.0.1:9000;
                 # or
                 # fastcgi_pass unix:/var/run/php/php7-fpm.sock;

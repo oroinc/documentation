@@ -88,7 +88,7 @@ Installation Via UI
 
    .. image:: /install_upgrade/img/installation/wizard-6.png
 
-   The URL will be similar to the following: *http://<hostname>:<port>/app.php/admin/user/login*. To log in, use credentials you provided for the first system administrator.
+   The URL will be similar to the following: *http://<hostname>:<port>/index.php/admin/user/login*. To log in, use credentials you provided for the first system administrator.
 
 .. TODO incorporate imgs for OroCRM/OroCommerce
 
