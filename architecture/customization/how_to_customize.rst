@@ -44,7 +44,7 @@ Prepare for Source Code Customization
 
 Before you begin customizing you Oro application, follow the guidance provided in the :ref:`Custom Application <custom-oro-application>` topic to set up your custom application repository for version control, and install Oro application from your custom repository.
 
-Running the application in development mode (via the `http://<oro-application-base-url>/app_dev.php/` link) helps you debug and test your customization steps.
+Running the application in development mode (via the `http://<oro-application-base-url>/index_dev.php/` link) helps you debug and test your customization steps.
 
 Implement the Customization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
