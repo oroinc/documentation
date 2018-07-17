@@ -39,7 +39,7 @@ The key difference between preview and LTS versions is the duration of the maint
 
 Below is the approximate schedule of the currently maintained/supported and planned upcoming releases and support timelines of OroPlatform Enterprise Edition until 2019. Please take into account that numbering of major and minor versions is subject to change.
 
-.. .. image:: /community/img/release_process/OroPlatform_release_schedule_3.0.png
+.. .. image:: /community/img/release_process/OroPlatform_release_schedule.png
 
 +--------------------------------+-------------------+-------------------+-------------------+
 | OroPlatform Enterprise Edition | Release           | Maintenance ends  | Support ends      |
