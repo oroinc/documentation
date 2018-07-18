@@ -47,8 +47,6 @@ The following system workflows are provided out of the box in OroCommerce:
 
 * :ref:`Checkout <system--workflows--checkout-workflow>`
 
-* :ref:`Checkout with Consents <system--workflows--checkout-with-consents-workflow>`
-
 * :ref:`Alternative Checkout <system--workflows--alternative-checkout-workflow>`
 
 * :ref:`Single Page Checkout <system--workflows--single-page-checkout>`
@@ -519,5 +517,5 @@ See the following sections to get more information about the system workflows in
    alternative_checkout
    single_page_checkout_workflow
    task_flow
-   consents_flow
+
 

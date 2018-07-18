@@ -204,10 +204,82 @@ Checkout with Consents
 ^^^^^^^^^^^^^^^^^^^^^^
 
 OroCommerce storefront customer users can manage the consents applicable to them, and can be restricted from proceeding to the checkout unless mandatory consents are accepted.
- 
-.. include:: /admin_guide/workflows/consents_flow.rst
-   :start-after: start_checkout_with_consents_sample
-   :end-before: finish_checkout_with_consents_sample
+
+As an illustration, we are going to proceed through the steps of the Checkout with Consents workflow to see how it works.
+
+.. include:: /admin_guide/workflows/checkout.rst
+   :start-after: start_checkout_sample_0
+   :end-before: finish_checkout_sample_0
+
+.. |create_order_img| image:: /admin_guide/img/workflows/checkout/CreateOrderButton.png
+   :alt: Shopping list with option to create order and proceed to checkout
+
+Step 1: Agreements
+^^^^^^^^^^^^^^^^^^
+
+At the Agreements step, you are required to accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
+
+  .. image:: /admin_guide/img/workflows/checkout_with_consents/storefront_step_agreements.png
+     :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+
+  .. image:: /admin_guide/img/workflows/checkout_with_consents/storefront_step_accept_agreement.png
+     :alt: Accept a mandatory consent on the agreements step at checkout
+
+Once the consent is accepted, click **Continue** to proceed with the checkout.
+
+Step 2: Billing Information
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. include:: /admin_guide/workflows/checkout.rst
+   :start-after: start_checkout_sample_1
+   :end-before: finish_checkout_sample_1
+
+.. image:: /admin_guide/img/workflows/checkout_with_consents/billing_information_step_checkout_with_consents.png
+   :alt: The billing information step at the checkout (with consents)
+
+Step 3: Shipping Information
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. include:: /admin_guide/workflows/checkout.rst
+   :start-after: start_checkout_sample_2
+   :end-before: finish_checkout_sample_2
+
+Step 4: Shipping Method
+^^^^^^^^^^^^^^^^^^^^^^^
+
+.. include:: /admin_guide/workflows/checkout.rst
+   :start-after: start_checkout_sample_3
+   :end-before: finish_checkout_sample_3
+
+.. image:: /admin_guide/img/workflows/checkout_with_consents/shipping_method_checkout_with_consents.png
+   :alt: The shipping method step at the checkout (with consents)
+
+Step 5: Payment
+^^^^^^^^^^^^^^^
+
+.. include:: /admin_guide/workflows/checkout.rst
+   :start-after: start_checkout_sample_4
+   :end-before: finish_checkout_sample_4
+
+.. image:: /admin_guide/img/workflows/checkout_with_consents/payment_method_step_checkout_with_consents.png
+   :alt: The payment method step at the checkout (with consents)
+
+Step 6: Order Review
+^^^^^^^^^^^^^^^^^^^^
+
+.. include:: /admin_guide/workflows/checkout.rst
+   :start-after: start_checkout_sample_5
+   :end-before: finish_checkout_sample_5
+
+.. |order_submitted_img| image:: /admin_guide/img/workflows/checkout_with_consents/order_submitted.png
+   :alt: The page of the order in the management console, once the order is submitted
+
+.. |order_review_img| image:: /admin_guide/img/workflows/checkout_with_consents/order_review_step_checkout_with_consents.png
+   :alt: The order review step at the checkout (with consents)
+
+.. note:: You can view consents available for your specific buyers in the **Consents** section of their pages in the management console under **Customers > Customer Users**.
+
+.. image:: /admin_guide/img/workflows/checkout_with_consents/consents_section_customer_user_page.png
 
 
 .. include:: /img/buttons/include_images.rst
