@@ -132,13 +132,13 @@ For the :ref:`shipping <user-guide--shipping>` discount, select the necessary sh
 
  .. image:: /user_guide/img/marketing/promotions/Shipping.png
 
+**Related Topics**
+
+* :ref:`Expression Language for Promotions <user-guide--promotion--expression>`
+* :ref:`Manage Discounts in Order <user-guide--sales--orders--promotions>`
 
 .. finish
 
-.. toctree::
-   :hidden:
-
-   expressions
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

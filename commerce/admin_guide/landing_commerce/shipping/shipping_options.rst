@@ -11,7 +11,7 @@ You can enable and disable the shipping units of length and weight (and the frei
 
 To change these shipping options:
 
-1. Navigate to the system configuration (click **System > Configuration** in the main menu).
+1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Shipping > Shipping Options** in the menu to the left.
 
    .. note::

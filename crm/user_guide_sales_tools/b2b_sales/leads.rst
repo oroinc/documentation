@@ -19,15 +19,16 @@ In order to save and process the details of commercial activity with people or b
 
 Enable Lead Record
 ------------------
+
 You can enable (or disable) a lead manually the following way:
 
-- Navigate to **Settings>Configuration** in the main menu.
-- Open **CRM>Sales Pipeline** in the left menu and click :guilabel:`Lead`.
-- In the **General Setup** section, check the **Enable Lead** box.
+1. Navigate to **System > Configuration** in the main menu.
+2. Open **CRM > Sales Pipeline** in the left menu and click **Lead**.
+3. In the **General Setup** section, check the **Enable Lead** box.
 
-.. note:: Please refer to your administrator if you have insufficient permissions to enable/disable leads in your application.
+   .. note:: Please refer to your administrator if you have insufficient permissions to enable/disable leads in your application.
 
-Once enabled, leads menu will become available under **Sales** in the main menu.
+Once enabled, leads menu is displayed under **Sales** in the main menu.
 
 
 .. image:: ../../img/leads_2.0/lead_enabled_new.jpg
@@ -38,14 +39,11 @@ Create Lead Record
 
 Leads can be added to the system in a number of ways. The two most common ways are:
 
--  Importing leads in a form of a .csv file.
-
--  Creating leads manually.
-
+* Importing leads in a form of a .csv file
+* Creating leads manually
 
 .. image:: ../../img/leads_2.0/create_lead.jpg
    :alt: Create lead record
-
 
 Import Leads
 ^^^^^^^^^^^^
@@ -60,20 +58,16 @@ You can export the customer details in the .csv format following the :ref:`Expor
 Create Lead
 ^^^^^^^^^^^
 
-To create a lead manually, click :guilabel:`Create Lead` in the top right corner.
+To create a lead manually, click **Create Lead** in the top right corner.
 
 The **Create Lead** :ref:`form <user-guide-ui-components-create-pages>` will appear with the following 3 sections:
 
 -  General
-
 -  Contact Information
-
 -  Additional
-
 
 .. image:: ../../img/leads_2.0/leads_create_general.png
    :alt: Create lead
-
 
 The **General** section contains the following mandatory fields to be defined:
 
@@ -89,23 +83,16 @@ The **General** section contains the following mandatory fields to be defined:
     - **Disqualified** (lead is recognized as invalid as a result of initial analysis, e.g. no person or organization was found behind the lead)."
   "**Channel**","Choose one of active :term:`channels <Channel>`, from which OroCRM will get information on this lead."
 
-
-
 The rest of the fields are optional.
 
 The **Contact Information** section contains contact details to be entered for a lead.
 
 Multiple emails, phones and addresses can be added for a lead.
 
-
-
 .. image:: ../../img/leads_2.0/leads_create_contact_info.png
    :alt: Contact information in the new lead
 
-
-
 In the **Additional** section, you can give additional information on the lead (if available).
-
 
 .. image:: ../../img/leads_2.0/leads_add_info.jpg
    :alt: The additional section in the new lead
@@ -118,11 +105,8 @@ Manage Lead From the Lead Page
 The lead page contains all available information on the lead in the
 **General Information** section.
 
-
-
 .. image:: ../../img/leads_2.0/lead_saved.png
    :alt: Manage lead from the lead page
-
 
 **Activity** section shows all activity for a lead that has taken place, such as phone calls placed or emails sent to the lead.
 
@@ -130,26 +114,20 @@ The following actions are available for a lead record on the lead record page:
 
 -  **Share**: Share a lead with contacts of your choice.
 
-
 .. image:: ../../img/leads_2.0/share_lead.png
    :alt: Sharing settings dialog for a lead
-
 
 -  **Disqualify action:** Disqualify a lead.
 
    .. note:: You can disqualify a lead in three ways:
 
-
-              1. By clicking on red :guilabel:`Disqualify` button on the lead record page.
-
+              1. By clicking **Disqualify** on the lead record page.
               2. By changing its status to Disqualified in the edit lead form.
-
               3. By changing its status to Disqualified from the grid.
 
 -  **Convert To Opportunity:** Converting a lead to opportunity (i.e.    and potential deal) qualifies the lead. More information on opportunities can be found :ref:`here <user-guide-system-channel-entities-opportunities>`.
 
    .. note:: Once the lead is converted to an opportunity, it is marked Qualified and will no longer be visible in Open Leads grid.
-
 
 -  **Edit:** Open the edit form for a lead and amend lead details.
 
@@ -157,34 +135,25 @@ The following actions are available for a lead record on the lead record page:
 
 -  **More Actions:** Add Note, Send Email, Add Event, Log Call or Add Task.
 
-
 .. image:: ../../img/leads_2.0/more_actions_lead.png
    :alt: Click on more actions to add new actions
 
-
 You can also edit address details of a lead, as illustrated in the screenshot below:
-
-
 
 .. image:: ../../img/leads_2.0/address_edit.png
    :alt: Add address details of a lead
-
 
 Manage Lead From the Grid
 -------------------------
 
 The following actions can be performed for leads from the grid:
 
--  Delete a lead from the system: \ |IcDelete|
-
--  Get to the :ref:`edit form <user-guide-ui-components-create-pages>` of the lead: \ |IcEdit|
-
--  Get to the :ref:`view page <user-guide-ui-components-create-pages>` of the lead: \ |IcView|
-
+* Delete a lead from the system:  |IcDelete|
+* Get to the :ref:`edit form <user-guide-ui-components-create-pages>` of the lead:  |IcEdit|
+* Get to the :ref:`view page <user-guide-ui-components-create-pages>` of the lead:  |IcView|
 
 .. image:: ../../img/leads_2.0/manage_leads.jpg
    :alt: Manage lead from the grid
-
 
 Grid Views
 ^^^^^^^^^^
@@ -195,10 +164,8 @@ Open leads grid view displays the list of all open leads.
 
 All leads grid view displays all existing leads, including the ones that have been disqualified or converted to an opportunity and marked qualified.
 
-
 .. image:: ../../img/leads_2.0/leads_grid.jpg
    :alt: Grid views
-
 
 Inline Editing
 ^^^^^^^^^^^^^^
@@ -211,9 +178,7 @@ Inline editing within the grid can help you amend lead details without opening t
 .. image:: ../../img/leads_2.0/leads_inline_editing_2.jpg
    :alt: Click on the field to edit leads from the grid
 
-
 .. note:: Although multiple emails, phones and addresses can be added for leads, only one email, phone and address will be displayed in the grid.
-
 
 .. _doc-leads-reports:
 

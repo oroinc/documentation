@@ -274,7 +274,7 @@ You can import the bulk details of the product attributes information in the .cs
 **Related topics**
 
 * :ref:`Using product attributes in product families <product--product-families--product-attribute-in-families>`
-
+* :ref:`Limiting Filters and Sorting Options <configuration--guide--commerce--configuration--catalog--filters-sorters>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
