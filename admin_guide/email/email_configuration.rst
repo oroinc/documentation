@@ -169,18 +169,6 @@ letters of multiple users within organization.
 
 The integration set-up is described in the relevant :ref:`MS Exchange guide <admin-configuration-ms-exchange>`.
 
-Microsoft Outlook Integration
------------------------------
-
-Integration with Microsoft Outlook is available for the OroCRM Enterprise Edition only.
-
-.. image:: ../img/admin_emails/ms_outlook.jpg
-   :alt: Configuration of the ms outlook integration and synchronization settings
-
-The integration allows automatic synchronization of all the contacts. Tasks and calendar events available for the user can be synchronized with the specified Outlook account and
-vice versa. The integration set-up is described in the relevant :ref:`Outlook Integration guide <user-guide-synch-outlook>`.
-
-.. note:: Please note emails are not synced in the course of Outlook integration. For that, please, refer to `Standard personal mailbox configuration (IMAP/SMTP)`_ section.
 
 Configuration of System Mailboxes
 ---------------------------------
