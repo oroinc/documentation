@@ -62,7 +62,7 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
 
-             <p>Learn how to enable and setup the integration between your Oro application and Google, MS Exchange, MS Outlook, dotmailer.</p>
+             <p>Learn how to enable and setup the integration between your Oro application and Google, MS Exchange, dotmailer.</p>
           </div>
       </div>
       <div class="guideline__item">
@@ -77,7 +77,6 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a class="reference internal" href="../integrations/outlook#admin-configuration-ms-outlook-integration-settings"><span class="std std-ref">MS Outlook Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li><a class="reference internal" href="../integrations/dotmailer_integration_settings#admin-configuration-dotmailer-integration-settings"><span class="std std-ref">dotmailer Settings</span></a></li>
                      </ul>
           </div>

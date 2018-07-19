@@ -232,48 +232,6 @@ Click **Check Connection/Retrieve Folders** to check whether the specified synch
 
 .. _doc-my-user-configuration-integrations:
 
-.. Integrations ^^^^^^^^^^^^
-
-.. _doc-my-user-configuration-msoutlook:
-
-Update MS Outlook Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In the MS Outlook settings section, you can configure the following integration and synchronization settings:
-
-.. note:: Integration between MS Outlook and your Oro application is available only for the Enterprise Edition of your Oro application. For more information about the synchronization with Outlook, see the :ref:`Synchronization with Outlook <user-guide-synch-outlook>` guide.
-
-
-.. image:: /user_guide/img/getting_started/my_oro/my_user_config_outlook.png
-   :alt: Integration and synchronization settings options displayed in the ms outlook menu on the user level
-
-**Integration settings**
-
-+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| Field                              | Description                                                                                                                            |
-+====================================+========================================================================================================================================+
-| Sync Direction                     | Select whether the data will be taken from OroCRM to Outlook, from Outlook to OroCRM or synchronization will occur in both directions. |
-+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| Conflict Resolution                | Select whether OroCRM or Outlook has priority if the same piece of data has been changed in both systems.                              |
-+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| CRM Sync Interval (In Seconds)     | Type how often changes on OroCRM side will be checked.                                                                                 |
-+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-| Outlook Sync Interval (In Seconds) | Type how often changes on Outlook side will be checked.                                                                                |
-+------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
-
-**Synchronization settings**
-
-+-----------------+-----------------------------------------------------------+
-| Field           | Description                                               |
-+=================+===========================================================+
-| Contacts        | Select this check box to synchronize the contacts.        |
-+-----------------+-----------------------------------------------------------+
-| Tasks           | Select this check box to synchronize the tasks.           |
-+-----------------+-----------------------------------------------------------+
-| Calendar Events | Select this check box to synchronize the calendar events. |
-+-----------------+-----------------------------------------------------------+
-
-
 Update Contact Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
