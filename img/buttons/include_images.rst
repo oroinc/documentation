@@ -172,3 +172,9 @@ Images
 .. |IcShare| raw:: html
 
    <i class="fa fa-share fa-lg" aria-hidden="true"></i>
+
+.. .. |IcTranslationsC| raw:: html
+   <i class="fa fa-folder fa-lg" aria-hidden="true"></i>
+
+.. .. |IcTranslate| raw:: html
+   <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>

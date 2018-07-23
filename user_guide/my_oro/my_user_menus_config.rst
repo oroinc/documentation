@@ -359,14 +359,14 @@ See Also
 
 
 .. |IcView| image:: /img/buttons/IcView.png
-	:align: middle
+   :align: middle
 
 .. |IcSearch| image:: /img/buttons/IcSearch.png
-	:align: middle
+   :align: middle
 
 .. |IcTranslations| image:: /img/buttons/IcTranslations.png
-	:align: middle
+   :align: middle
 
 .. |IcTranslationsC| image:: /img/buttons/IcTranslationsC.png
-	:align: middle
+   :align: middle
 

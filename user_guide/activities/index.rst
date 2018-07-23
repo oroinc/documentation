@@ -21,7 +21,7 @@ calendar events, and more.
    tasks/index
    activities_create_case
    using_emails
-   calls/activities_calls_overview
+   calls/index
    calendars_overview
    calendar_events/index
    activities_create_contact_request
