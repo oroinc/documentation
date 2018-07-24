@@ -796,8 +796,8 @@ The API allows you to use several types of filters. Filter types are briefly des
 |         | filter[id][neq]=8            | The full list of supported operators is described in                        |
 |         | or                           | the :ref:`Data Filter (**filter**) <integration--data-filter>` section.     |
 |         | filter[id]=5..7              |                                                                             |
-|         |                              | May accept several values. In such case, they will be considered connected  |
-|         |                              | by the logical ``OR`` operator,                                             |
+|         |                              | May accept several values separated by comma. In such case,                 |
+|         |                              | they will be considered connected by the logical ``OR`` operator,           |
 |         |                              | e.g. id == 5 OR id == 7                                                     |
 |         |                              |                                                                             |
 |         |                              | May accept a data range. The syntax is "from_value..to_value".              |
@@ -892,11 +892,23 @@ by a developer who creates API resources.
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | Operator | Operator Name       | Description           | URL Encoded | Request Example                                            |
 +==========+=====================+=======================+=============+============================================================+
-| **=**    | **eq**              | Equality              | %3D         | | GET /api/users?filter[id]=1 HTTP/1.1                     |
-|          |                     |                       |             | | GET /api/users?filter[id][eq]=1 HTTP/1.1                 |
+| **=**    | **eq**              | Equality for fields   | %3D         | | GET /api/users?filter[id]=1 HTTP/1.1                     |
+|          |                     | and *to-one*          |             | | GET /api/users?filter[id][eq]=1 HTTP/1.1                 |
+|          |                     | associations          |             |                                                            |
+|          |                     |                       |             |                                                            |
+|          |                     | Contains any of       |             |                                                            |
+|          |                     | specified element     |             |                                                            |
+|          |                     | for *to-many*         |             |                                                            |
+|          |                     | associations          |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
-| **!=**   | **neq**             | Inequality            | %21%3D      | | GET /api/users?filter[id]!=2 HTTP/1.1                    |
-|          |                     |                       |             | | GET /api/users?filter[id][neq]=2 HTTP/1.1                |
+| **!=**   | **neq**             | Inequality for        | %21%3D      | | GET /api/users?filter[id]!=2 HTTP/1.1                    |
+|          |                     | fields and *to-one*   |             | | GET /api/users?filter[id][neq]=2 HTTP/1.1                |
+|          |                     | associations          |             |                                                            |
+|          |                     |                       |             |                                                            |
+|          |                     | Not contains any of   |             |                                                            |
+|          |                     | specified element     |             |                                                            |
+|          |                     | for *to-many*         |             |                                                            |
+|          |                     | associations          |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | **<**    | **lt**              | Less than             | %3C         | | GET /api/users?filter[id]<3 HTTP/1.1                     |
 |          |                     |                       |             | | GET /api/users?filter[id][lt]=3 HTTP/1.1                 |
@@ -910,19 +922,45 @@ by a developer who creates API resources.
 | **>=**   | **gte**             | Greater than or equal | %3E%3D      | | GET /api/users?filter[id]>=6 HTTP/1.1                    |
 |          |                     |                       |             | | GET /api/users?filter[id][gte]=6 HTTP/1.1                |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
-| **\***   | **exists**          | Is not null if        | %2A         | | GET /api/users?filter[id]\*yes HTTP/1.1                  |
-|          |                     | filter value is true  |             | | GET /api/users?filter[id][exists]=yes HTTP/1.1           |
-|          |                     | Is null if            |             | | GET /api/users?filter[id]\*no HTTP/1.1                   |
-|          |                     | filter value is false |             | | GET /api/users?filter[id][exists]=no HTTP/1.1            |
+| **\***   | **exists**          | Is not null for       | %2A         | | GET /api/users?filter[id]\*yes HTTP/1.1                  |
+|          |                     | fields and *to-one*   |             | | GET /api/users?filter[id][exists]=yes HTTP/1.1           |
+|          |                     | associations and      |             | | GET /api/users?filter[id]\*no HTTP/1.1                   |
+|          |                     | is not empty for      |             | | GET /api/users?filter[id][exists]=no HTTP/1.1            |
+|          |                     | *to-many* associations|             |                                                            |
+|          |                     | if filter value is    |             |                                                            |
+|          |                     | *true*, *1* or *yes*  |             |                                                            |
+|          |                     |                       |             |                                                            |
+|          |                     | Is null for           |             |                                                            |
+|          |                     | fields and *to-one*   |             |                                                            |
+|          |                     | associations and      |             |                                                            |
+|          |                     | is empty for *to-many*|             |                                                            |
+|          |                     | associations if       |             |                                                            |
+|          |                     | filter value is       |             |                                                            |
+|          |                     | *false*, *0* or *no*  |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | **!\***  | **neq_or_null**     | Inequal or is null    | %21%2A      | | GET /api/users?filter[id]!\*test HTTP/1.1                |
-|          |                     |                       |             | | GET /api/users?filter[id][neq_or_null]=test HTTP/1.1     |
+|          |                     | for fields and        |             | | GET /api/users?filter[id][neq_or_null]=test HTTP/1.1     |
+|          |                     | *to-one* associations |             |                                                            |
+|          |                     |                       |             |                                                            |
+|          |                     | Inequal or empty      |             |                                                            |
+|          |                     | for *to-many*         |             |                                                            |
+|          |                     | associations          |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | **~**    | **contains**        | Contains a text       | %7E         | | GET /api/users?filter[id]~test HTTP/1.1                  |
-|          |                     |                       |             | | GET /api/users?filter[id][contains]=test HTTP/1.1        |
+|          |                     | for *string* fields   |             | | GET /api/users?filter[id][contains]=test HTTP/1.1        |
+|          |                     |                       |             |                                                            |
+|          |                     | Contains all          |             |                                                            |
+|          |                     | specified elements    |             |                                                            |
+|          |                     | for *to-many*         |             |                                                            |
+|          |                     | associations          |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | **!~**   | **not_contains**    | Not contains a text   | %21%7E      | | GET /api/users?filter[id]!~test HTTP/1.1                 |
-|          |                     |                       |             | | GET /api/users?filter[id][not_contains]=test HTTP/1.1    |
+|          |                     | for *string* fields   |             | | GET /api/users?filter[id][not_contains]=test HTTP/1.1    |
+|          |                     |                       |             |                                                            |
+|          |                     | Not contains all      |             |                                                            |
+|          |                     | specified elements    |             |                                                            |
+|          |                     | for *to-many*         |             |                                                            |
+|          |                     | associations          |             |                                                            |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 | **^**    | **starts_with**     | Starts with a text    | %5E         | | GET /api/users?filter[id]^test HTTP/1.1                  |
 |          |                     |                       |             | | GET /api/users?filter[id][starts_with]=test HTTP/1.1     |
