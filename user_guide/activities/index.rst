@@ -23,7 +23,7 @@ calendar events, and more.
    calendar_events/index
    calendars_overview
    activities_send_email
-   calls/activities_calls_overview
+   calls/index
    activities_create_contact_request
    activities_add_note
    activities_add_comment
