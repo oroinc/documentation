@@ -249,9 +249,9 @@ Proceed to create the attribute as described below.
 
 5. Once all options are configured and the necessary information is provided, click **Save**.
 
-6. If the created attribute is of a *table column* storage type, click **Update Schema** to reindex the data for search and filter.
+6. If the created attribute is of a *table column* :ref:`storage type <admin-guide-create-entity-fields-basic>`, click **Update Schema** to reindex the data for search and filter.
 
-   .. note:: The product attribute storage type is set to *table column* for the attribute with Select of Multi-Select data type, and also for the attribute of any type with *Filterable* or *Sortable* option enabled. If this step is omitted, the newly created attribute will not appear in the select attribute options in other areas of OroCommerce (e.g. product families configuration).
+   .. note:: The product attribute :ref:`storage type <admin-guide-create-entity-fields-basic>` is set to *table column* for the attribute with Select of Multi-Select data type, and also for the attribute of any type with *Filterable* or *Sortable* option enabled. If this step is omitted, the newly created attribute will not appear in the select attribute options in other areas of OroCommerce (e.g. product families configuration).
 
       You can check an attribute's storage type on the page with the attributes list:
 
@@ -267,7 +267,6 @@ Import
 
 You can import the bulk details of the product attributes information in the .csv format following the steps described in the :ref:`Importing Product Attributes <import-product-attributes>` guide.
 
-.. TO DO Add links to entity management doc to explain table column + serialized fields.
 
 .. finish
 
@@ -275,6 +274,7 @@ You can import the bulk details of the product attributes information in the .cs
 
 * :ref:`Using product attributes in product families <product--product-families--product-attribute-in-families>`
 * :ref:`Limiting Filters and Sorting Options <configuration--guide--commerce--configuration--catalog--filters-sorters>`
+* :ref:`Translate Product Attribute Labels <localization--translations--labels>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
