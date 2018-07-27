@@ -89,25 +89,7 @@ How to use the sandbox
 
 The sandbox page is available at: ``http://<hostname_of_your_oro_application>/api/doc``.
 
-|
-
-.. image:: ../img/api/api_plain_generalview.png
-
-|
-
-This page represents a list of plain API resources. Plain API resources are old API implementations
-based on `FOSRestBundle <http://symfony.com/doc/current/bundles/FOSRestBundle/index.html>`__.
-
-To switch to the JSON API sandbox, go to the ``http://<hostname_of_your_oro_application>/api/doc/rest_json_api`` page, or click the :guilabel:`JSON.API`
-link in the upper left-hand corner of the sandbox page.
-
-|
-
-.. image:: ../img/api/api_jsonlink.png
-
-|
-
-On the JSON.API sandbox page you will see the list of available resources.
+This page represents a list of available JSON.API resources.
 
 |
 
