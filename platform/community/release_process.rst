@@ -74,6 +74,8 @@ OroPlatform Enterprise Edition release cycle offers two primary upgrade models:
 - **(Recommended) Long Term Stability** – Upgrade from an LTS version to the next LTS version to take your time to adopt new features. Choose this model to receive continued support without necessity to upgrade frequently.
 - **Bleeding Edge** – Immediately utilize and benefit from new features as soon as they are introduced by always upgrading to the newest preview version every 2 months. Choose this model if you are an enterprise partner or an extension developer and you want to ensure that your extensions and customizations are tested in combination with all new features before the next LTS release.
 
+If you are planning to start a new project this year which is scheduled to go live after January 2019, we recommend to start the development on the most recent release in 3.1 series. You might need to continually upgrade to the next available 3.1 version (Beta, RC) and ultimately upgrade to 3.1 LTS version prior to going live with the project.
+
 
 OroPlatform Community Edition Releases
 --------------------------------------
@@ -82,8 +84,8 @@ Oro Team produces patch releases for an **LTS** version of OroPlatform Community
 
 Community developers and users have access to the following two product branches:
 
-- **Stable** – The `stable <https://github.com/oroinc/platform-application/tree/stable>`_ branch always points to the latest LTS version. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next patch release tag or LTS release tag as soon as they are available in this branch.
-- **Master** – The `master <https://github.com/oroinc/platform-application/tree/master>`_ branch points to the latest available commit and is updated daily. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered stable and it is not recommended for production use.
+- **Stable** – `2.6 branch <https://github.com/oroinc/platform-application/tree/2.6>`_ points to the latest LTS version. Use this branch for testing and deployment. To benefit from the latest features, fixes, and security updates, upgrade to the next patch release tag or LTS release tag as soon as they are available.
+- **Development** – `3.1 branch <https://github.com/oroinc/platform-application/tree/3.1>`_ points to the latest available commit and is updated daily. This branch should be used **only by the developers and contributors** who actively follow the project progress on GitHub. This branch is not considered stable and it is not recommended for production use.
 
 +-------------------------------+-------------------+--------------------------------+
 | OroPlatform Community Edition | Release           | Patch Releases Available Until |
