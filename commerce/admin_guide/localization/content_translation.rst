@@ -1,7 +1,7 @@
 .. _content-translation:
 
-Content Translation
-~~~~~~~~~~~~~~~~~~~
+Translate Content
+~~~~~~~~~~~~~~~~~
 
 In the system configuration, you can define the :ref:`localization options <localization--localization>`, such as system locale, primary location, address formatting method, system timezone, calendar year settings, temperature and wind speed units on the map. Furthermore, you can set the default language of the UI elements displayed in the storefront.
 
