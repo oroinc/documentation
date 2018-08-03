@@ -6,3 +6,6 @@ This section contains the following topics that help you customize the Oro appli
 .. toctree::
    
    layout
+   frontend_stylebook
+ 
+ 

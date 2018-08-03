@@ -33,8 +33,8 @@ To translate a product attribute label from English into the required language, 
 
 #. Clear the **Use Organization** checkbox and set the language that you have just added (e.g. German) as the default language for the UI elements displayed in the management console.
  
-  .. image:: /admin_guide/img/localization/labels/user_confi_language_settings.png
-     :alt: Changing the default language on user level
+   .. image:: /admin_guide/img/localization/labels/user_confi_language_settings.png
+      :alt: Changing the default language on user level
 
 #. Click **Save Settings**.
 
