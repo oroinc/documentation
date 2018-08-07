@@ -5,71 +5,25 @@ Coupons
 
 As a promotional tool, coupons can be generated and distributed to customers to be redeemed for a discount when purchasing goods online. In your Oro application, coupons are always linked to promotions, although they can be created separately and linked to a promotion when the need arises.
 
-The following topics will explore how to create, generate and manage coupons in your Oro application.
+The following topics will explore how to create, generate and manage coupons in your Oro application:
 
-.. contents:: :local:
+* :ref:`Before You Begin <user-guide--marketing--promotions--coupons--begin>`
+* :ref:`Create Coupons <user-guide--marketing--promotions--coupons--create>`
+* :ref:`Generate Coupons <user-guide--marketing--promotions--coupons--generate>`
+* :ref:`Manage a Coupons List <user-guide--marketing--promotions--coupons--view>`
+* :ref:`Manage Coupons in Orders <user-guide--marketing--promotions--coupons--edit>`
+* :ref:`Sample Coupon Generation <user-guide--marketing--promotions--coupons--sample>`
+* :ref:`Export Coupons <export-bulk-items>`
+* :ref:`Import Coupons <import-coupons>`
+* :ref:`Review the FQAs <user-guide--marketing--promotions--issues>`
 
+.. note:: You can check out `how to create coupons and link them to promotions <https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions>`__ in our media library.
 
-Before You Begin
-----------------
-
-.. include:: /user_guide/marketing_coupons/begin.rst
-   :start-after: start
-   :end-before: finish
-
-
-Create Coupons
---------------
-
-.. include:: /user_guide/marketing_coupons/create.rst
-   :start-after: begin
-   :end-before: finish
-
-Generate Coupons
-----------------
-
-.. include:: /user_guide/marketing_coupons/generate.rst
-   :start-after: begin
-   :end-before: stop
-
-Manage a Coupons List
----------------------
-
-.. include:: /user_guide/marketing_coupons/viewlist.rst
-   :start-after: begin
-   :end-before: finish
-
-Manage Coupons in Orders
-------------------------
-
-.. include:: /user_guide/marketing_coupons/edit_in_order/index.rst
-   :start-after: begin_edit_in_order_body
-   :end-before: finish_edit_in_order_body
-
-Sample Coupon Generation
-------------------------
-
-.. include:: /user_guide/marketing_coupons/sample_coupon.rst
-   :start-after: begin
-   :end-before: finish
-
-Export Coupons
---------------
-
-You can export the coupon details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
-
-Import Coupons
---------------
-
-.. include:: /getting_started/import_export/import_coupons.rst
-   :start-after: start
-
-Related Topics
---------------
+**Related Topics**
 
 * :ref:`Promotions <user-guide--marketing--promotions>`
 * :ref:`Orders <user-guide--sales--orders>`
-
+* :ref:`Add Conditions to a Promotion <user-guide--marketing--promotions--conditions>`
 
 
 .. include:: /img/buttons/include_images.rst
@@ -77,7 +31,6 @@ Related Topics
 
 .. toctree::
    :hidden:
-
 
    begin
    create
