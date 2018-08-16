@@ -97,7 +97,7 @@ Developer's Guide
                 <li><a class="reference internal" href="dev-guide/getting-started-book/configuration/">Configuration</a>, <a
                         class="reference internal" href="dev-guide/localization">localization</a>, and <a class="reference internal" href="dev-guide/security">security</a>,
                     and <a class="reference internal" href="dev-guide/customization">customization</a></li>
-                <li><a class="reference internal" href="dev-guide/book/data-api">Using Web Services API</a></li>
+                <li><a class="reference internal" href="dev-guide/web-api">Using Web Services API</a></li>
                 <li><a class="reference internal" href="dev-guide/book/scale-nodes">Scaling</a> Oro application</li>
                 <li><a class="reference internal"  href="dev-guide/reference">Annotation and Configuration Format Reference</a></li>
             </ul>
