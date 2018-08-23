@@ -5,8 +5,7 @@ Configure Image Gallery per Organization
 
 .. begin
 
-You can configure whether to use popup or inline view for the image gallery per organization:
-
+To configure whether to use popup or inline view for the image gallery per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| more actions menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.

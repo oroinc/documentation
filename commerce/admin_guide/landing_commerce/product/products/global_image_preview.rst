@@ -5,8 +5,6 @@ Configure Image Preview on Product Listing Page Globally
 
 .. begin
 
-To simplify product selection for customer, you can enable product previews on product listing pages.
-
 To enable image preview globally:
 
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).

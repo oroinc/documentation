@@ -1,3 +1,5 @@
+.. _sys--commerce--catalog--upsell-products--main:
+
 Up-Sell Products
 ^^^^^^^^^^^^^^^^
 

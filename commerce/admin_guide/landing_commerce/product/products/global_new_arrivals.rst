@@ -3,8 +3,6 @@
 Enable New Product Icons Globally
 ---------------------------------
 
-You can mark certain selected products to be displayed as new ones in the storefront.
-
 .. begin
 
 To enable New Product icons globally:

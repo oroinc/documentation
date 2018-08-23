@@ -1,12 +1,11 @@
 .. _price_list_configuration:
+.. _pricing-configuration:
 
 Price Calculation Optimization
 ------------------------------
 
 * :ref:`How to Configure Price List Sharding <admin-price-list-sharding>`
-
 * :ref:`Optimize Website Indexation and Price Recalculation <admin-website-index-and-price-calc>`
-
 
 Pricing Configuration
 ---------------------

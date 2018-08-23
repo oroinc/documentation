@@ -5,9 +5,7 @@ Product Image Watermark Configuration Per Website
 
 .. begin
 
-You can control the watermark that will appear on top of every image uploaded as a part of product details per website.
-
-To update the product watermark settings:
+To update the product watermark settings per website:
 
 1. In the main menu, navigate to **System > Websites**.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click the |IcConfig| **Configuration** icon to start editing the configuration.

@@ -5,10 +5,6 @@ Enable and Set Up Related Products per Organization
 
 .. begin_related_products_body
 
-.. include:: /admin_guide/landing_commerce/product/products/related_products/global_related_products.rst
-   :start-after: begin_related_products_definition
-   :end-before: finish_related_products_definition
-
 To update the related products settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.

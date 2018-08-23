@@ -1,14 +1,11 @@
 .. _sys--commerce--product--featured-products:
 
-
 Global Featured Products Configuration
 --------------------------------------
 
 .. begin
 
-You can control which :ref:`segment <user-guide--business-intelligence--filters-segments>` is used to store :ref:`featured products <products--featured-products>` globally by default.
-
-To customize the segment for featured products that is used by default for or organizations and all websites:
+To customize the segment for featured products that is used by default for or organizations and all websites globally:
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Featured Products** in the menu to the left.
