@@ -5,7 +5,7 @@ Design
 
 Learn how to select theme settings, page and menu templates.
 
-* :ref:`Theme <configuration--commerce--design--theme--theme-settings--globally>`
+* :ref:`Theme <configuration--commerce--design--theme>`
 
 
 .. toctree::

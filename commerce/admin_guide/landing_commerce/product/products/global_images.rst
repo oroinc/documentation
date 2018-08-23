@@ -6,9 +6,7 @@ Global Product Image Watermark Configuration
 
 .. begin
 
-You can control the watermark that will appear on top of every image uploaded as a part of product details.
-
-To update the product watermark settings:
+To update the product watermark settings globally:
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Product Images** in the menu to the left.

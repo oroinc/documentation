@@ -5,7 +5,7 @@ Configure Promotions
 
 .. begin
 
-You can enable or disable promotions and coupons, as well as control their strategy across your application in the system configuration.
+You can enable or disable :ref:`promotions <user-guide--marketing--promotions>` and :ref:`coupons <user-guide--marketing--promotions--coupons>`, as well as control their strategy across your application in the system configuration.
 
 
 To reach promotion configuration:
@@ -30,5 +30,10 @@ To reach promotion configuration:
 
 4. Click **Save**.
 
+**Related Topics**
+
+* :ref:`Promotions in OroCommerce <user-guide--marketing--promotions>`
+* :ref:`Promotions and Coupons in Use <user-guide--marketing--promotions--coupons--sample>`
+* :ref:`Coupons <user-guide--marketing--promotions--coupons>`
 
 .. finish

@@ -5,8 +5,6 @@ Configure Image Gallery Globally
 
 .. begin
 
-You can choose whether to use popup or inline view for the image gallery in the storefront.
-
 To configure image gallery options globally:
 
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
