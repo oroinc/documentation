@@ -528,7 +528,7 @@ method afterwards:
     $acmeDemoProvider = $container->get('oro_entity_config.provider.acme_demo');
     $acmeConfig = $acmeDemoProvider->getConfig('Acme\Bundle\AcmeBundle\Entity\Hotel');
     $acmeConfig->set('comment', 'Updated comment');
-    $acmeDemoProvider->flush();
+    $acmeDemoProvider->getConfigManager()->flush();
 
 .. tip::
 
