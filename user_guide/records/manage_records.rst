@@ -24,10 +24,12 @@ You can edit records in your application in three ways:
 2. By clicking  |IcEdit| **Edit** it in the ellipsis (or more options) menu located at the end of the row of the selected record in the :ref:`table <doc-grids>`.
 
    .. image:: /user_guide/img/getting_started/records/ellipsis_example.png
+      :alt: The edit option in the ellipsis menu
 
 3. By opening the page of the selected record and clicking **Edit**.
 
    .. image:: /user_guide/img/getting_started/records/record_edit_button_example.png
+      :alt: Editing records from their details page
 
 .. _doc-grids-actions-records-edit-inline:
 
@@ -54,6 +56,7 @@ To edit a record using inline-editing:
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor2.png
+      :alt: An example of a list values for a field when editing a record inline
 
 4. Click the |IcActivate| **Save Changes** icon to save a new value, or the |IcBan| **Discard Changes** icon to return to the old value.
 
@@ -64,11 +67,13 @@ To edit a record using inline-editing:
 Manage Records Using Ellipsis Menu
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process. 
+Ellipsis menu, or the more options menu, is located on the page of all records, and is available for each item in the table. To see what actions are available for the selected record, click the ellipsis menu at the end of its row. You may be able to view, edit, delete records, or perform other record-specific actions, such as activating or deactivating a process.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_editrecord.png
+   :alt: Edit records using the ellipsis menu
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_deleterecord.png
+   :alt: Delete records using the ellipsis menu
 
 .. _user-guide--getting-started--mass-actions-management-console:
 .. _doc-grids-actions-records-delete-multiple:
@@ -110,10 +115,10 @@ To save the record you have created or updated, click one of the options in the 
 
 .. image:: /user_guide/img/getting_started/ui_components/create_page_save_cancel.png
 
-1. **Save** --- Save the changes but remain on the same page. Use this option if you want to make more changes to the record configuration.     
+1. **Save** --- Save the changes but remain on the same page. Use this option if you want to make more changes to the record configuration.
 2. **Save and Close** --- Save the changes and close the page. Once saved and closed, you are redirected to the record page.
-3. **Save and New** --- Save the changes for the record you are creating/updating, and create/update another one straight away. 
-   
+3. **Save and New** --- Save the changes for the record you are creating/updating, and create/update another one straight away.
+
 .. note:: To discard the changes, click **Cancel** on the top right.
 
 Review Record History

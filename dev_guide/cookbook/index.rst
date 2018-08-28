@@ -29,7 +29,6 @@ This book contains list of most regularly used solutions in OroPlatform.
 * :doc:`/dev_guide/cookbook/how_to_pass_request_parameter_to_grid`
 * :doc:`/dev_guide/cookbook/user_custom_validation_constraints`
 * :doc:`/dev_guide/cookbook/how_to_accelerate_import`
-* :doc:`/dev_guide/cookbook/how_to_create_global_js_component`
 * :doc:`/dev_guide/cookbook/how_to_replace_inline-javascript_with_component`
 * :doc:`/dev_guide/cookbook/how_to_install_extension_from_command_line`
 * :doc:`/dev_guide/cookbook/how_to_add_an_extension_to_oro_marketplace`
@@ -53,7 +52,6 @@ This book contains list of most regularly used solutions in OroPlatform.
     how_to_pass_request_parameter_to_grid
     user_custom_validation_constraints
     how_to_accelerate_import
-    how_to_create_global_js_component
     how_to_replace_inline-javascript_with_component
     how_to_install_extension_from_command_line
     how_to_add_an_extension_to_oro_marketplace

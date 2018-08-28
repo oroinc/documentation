@@ -29,6 +29,7 @@ To export the |exported_information| in a .csv format:
    After the following notification, you will receive an email with the link to download the .csv file.
 
    .. image:: /user_guide/img/export_import/successful_export.png
+      :alt: Screen shows how to export
 
 3. Open the email and click the **Download** link.
 
@@ -42,3 +43,4 @@ To export the |exported_information| in a .csv format:
 .. |menu_export| replace:: menu item to import the list of the necessary data (e.g. **Customers > Customers**)
 
 .. |image_export| image:: /user_guide/img/export_import/export_1.png
+   :alt: Import form

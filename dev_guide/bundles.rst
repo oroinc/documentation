@@ -66,12 +66,6 @@ related articles is provided below the description.
     Integrates the `jQuery FullCalendar plugin`_ into OroPlatform and provides additional
     calendar related functionality.
 
-    .. seealso::
-
-        Read more about it in the following articles:
-
-        * User guide: :doc:`/admin_guide/integrations/outlook/index`
-
 `CallBundle`_ (OroCRM)
     Basic implementation to log calls to and of contacts and accounts.
 
@@ -125,8 +119,7 @@ related articles is provided below the description.
 
         * Book: :doc:`/dev_guide/emails/emails`
         * User guide: :doc:`/user_guide_sales_tools/customer_management/common_features_contacts`
-        * User guide: :doc:`/admin_guide/integrations/outlook/index`
-
+  
 `ContactUsBundle`_ (OroCRM)
     Embedded form and workflow for *contact us* requests.
 
@@ -413,7 +406,6 @@ related articles is provided below the description.
         * Book: :doc:`/dev_guide/customization`
         * Book: :doc:`/dev_guide/ui/frontend_architecture`
         * Book: :doc:`/dev_guide/ui/javascript_modularity`
-        * Cookbook: :doc:`/dev_guide/cookbook/how_to_create_global_js_component`
         * Cookbook: :doc:`/dev_guide/cookbook/how_to_replace_inline-javascript_with_component`
         * Reference: :doc:`/reference/format/requirejs`
 
@@ -473,12 +465,6 @@ related articles is provided below the description.
 `TaskBundle`_ (OroCRM)
     Task entity management and relations.
 
-    .. seealso::
-
-        Read more about it in the following articles:
-
-        * User guide: :doc:`/admin_guide/integrations/outlook/index`
-
 `TestFrameworkBundle`_ (OroPlatform and OroCRM)
     Test framework functionality and main entry point for the JS UnitTest runner.
 
@@ -527,7 +513,6 @@ related articles is provided below the description.
         * Book: :doc:`/dev_guide/entities/crud`
         * Book: :doc:`/dev_guide/customization`
         * Book: :doc:`/dev_guide/ui/frontend_architecture`
-        * Cookbook: :doc:`/dev_guide/cookbook/how_to_create_global_js_component`
         * Cookbook: :doc:`/dev_guide/cookbook/how_to_replace_inline-javascript_with_component`
         * Reference: :doc:`/reference/format/placeholders`
 

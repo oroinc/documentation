@@ -42,13 +42,13 @@ Via dotmailer
 Via Mailchimp
 ^^^^^^^^^^^^^
 
-Oro application supports out of the box integration with MailChimp, allowing you to do the following:
+Oro application supports out of the box integration with MailChimp, enabling you to do the following:
 
 * Map the :ref:`Marketing Lists <user-guide-marketing-lists>` as segments in MailChimp and keep them synchronized.
 * Use existing segments in MailChimp and import them to Oro application.
 * Schedule importing statistics of the MailChimp campaigns into Oro Application.
 
-To use MailChimp with Oro application, ensure that all the necessary integration steps are complete. See :ref:`MailChimp Integration <user-guide-mc-integration>` for more information.
+To use MailChimp with Oro application, ensure that all the necessary integration steps are completed. See :ref:`MailChimp Integration <user-guide-mc-integration>` for more information.
 
 After the integration is configured, you can :ref:`Send Email Campaign via MailChimp <user-guide-mailchimp-campaign>`.
 

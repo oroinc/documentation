@@ -9,7 +9,7 @@
 Manage Tasks
 ------------
 
-.. begin_manage_tasks 
+.. begin_manage_tasks
 
 You can view, edit and delete tasks from the following pages of your Oro application:
 
@@ -31,13 +31,14 @@ From the Page of All Tasks
 To manage a specific task from the page of all tasks:
 
 1. Navigate to **Activities > Tasks** in the main menu.
-2. Click the |IcEllipsisH| **More Options** menu at the end of the corresponding task row and select one of the following actions: 
+2. Click the |IcEllipsisH| **More Options** menu at the end of the corresponding task row and select one of the following actions:
 
     * |IcView| View
     * |IcEdit| Edit
     * |IcDelete| Delete
 
     .. image:: /user_guide/img/activities/AllTasksPageNew.png
+      :alt: The actions you can perform to tasks from the page of all tasks
 
 From the Task Page
 ~~~~~~~~~~~~~~~~~~
@@ -56,41 +57,44 @@ To manage a specific task from its page:
    * Add Comment
 
 .. image:: /user_guide/img/activities/ManageTasksTaskPage.png
+   :alt: The actions you can perform on the task page
 
 4. If the :ref:`task flow <doc--workflows--task-flow>` is enabled, you can:
 
-   * |IcStart| Start/ |IcStop| Stop Progress of the task 
+   * |IcStart| Start/ |IcStop| Stop Progress of the task
    * |IcActivate| Close the task
 
 .. note:: To delete a bulk of tasks in one go, click the |IcEllipsisH| **More Actions** menu at the end of the table header row and then click |IcDelete| **Delete**.
 
             .. image:: /user_guide/img/activities/tasks/tasks_delete1.png
+               :alt: Delete a bulk of tasks
 
-From the Assignee's Profile 
+From the Assignee's Profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When user is assigned a task, it appears in the **User Tasks** subsection under **Additional Information** on their profile page. 
+When user is assigned a task, it appears in the **User Tasks** subsection under **Additional Information** on their profile page.
 
 To manage a task from the assignee's profile page:
 
 1. Open the assignee's profile.
 2. Click **Additional Information > User Tasks**.
-3. Click the |IcEllipsisH| **More Options** menu at the end of the row with the task you would like to edit and select one of the following actions: 
+3. Click the |IcEllipsisH| **More Options** menu at the end of the row with the task you would like to edit and select one of the following actions:
 
-    * |IcView| View  
-    * |IcEdit| Edit 
-    * |IcDelete| Delete 
+    * |IcView| View
+    * |IcEdit| Edit
+    * |IcDelete| Delete
 
 .. image:: /user_guide/img/activities/TaskUserProfile.png
+   :alt: Manage tasks from the assignee's profile page
 
 From the Page of a Related Record
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Records that are specified in a task context have the task displayed in the **Activity** sections of their pages. 
+Records that are specified in a task context have the task displayed in the **Activity** sections of their pages.
 
 1. Navigate to the page of a related record.
 2. Click on the task in the **Activity** section, and click to expand it and view its details.
-3. Click the |IcEllipsisH| **More Options** menu at the end of the task header and select one of the following actions: 
+3. Click the |IcEllipsisH| **More Options** menu at the end of the task header and select one of the following actions:
 
    * |IcContext| Add Context
    * |IcView| View Task
@@ -99,9 +103,10 @@ Records that are specified in a task context have the task displayed in the **Ac
    * |IcStart| / |IcStop| :ref:`Start/Stop Progress <doc--workflows--task-flow>`
    * |IcActivate| :ref:`Close the task <doc--workflows--task-flow>`
 
-4. Click **Add Comment** on the lower-right to add a comment to the task.
+4. Click **Add Context** on the lower-right to add a comment to the task.
 
 .. image:: /user_guide/img/activities/ManageTasksInRelatedRecord.png
+   :alt: Add context to the task
 
 From My Calendar
 ~~~~~~~~~~~~~~~~
@@ -118,8 +123,9 @@ You can also manage tasks from the My Calendar page and the Today’s Calendar w
    * |IcEdit| Edit task
 
 .. image:: /user_guide/img/activities/ManageTasksInMyCalendar.png
+   :alt: Task information on calendar pages
 
-.. end_manage_tasks 
+.. end_manage_tasks
 
 
 .. include:: /img/buttons/include_images.rst

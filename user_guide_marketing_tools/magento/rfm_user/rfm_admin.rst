@@ -19,7 +19,8 @@ Configure RFM Segments While Creating a New Channel
 2. Click **Additional**.
 
 
-   .. image:: /admin_guide/img/rfm/rfm_clickadditional.png 
+   .. image:: /admin_guide/img/rfm/rfm_clickadditional.png
+      :alt: Configure RFM segments while creating a new channel
 
 
 3. In the **RFM Segment Configuration** section, select the **Enable RFM** check box. The default ranking table appears.
@@ -39,22 +40,23 @@ Modify Segments
 To modify the ranking table with your data, specify the following information for each segment:
 
     -  **Recency** shows the number of days since the last order made by a customer. Measured in days. The fewer days has passed, the better must be the score.
-    
+
     -  **Frequency** shows the total number of orders a customer placed in the course of the last 365 days. The more orders, the better the score.
-    
+
     -  **Monetary value** shows the total amount of money spent in the course of the last 365 days. The more is spent, the better must be the score.
 
 .. note::
     Note the following:
 
         -  Score 1 is considered the best.
-        
+
         -  You need to specify only one of the thresholds, the other is filled in automatically.
-        
+
     For information about how to define segments, see the `How the RFM Analysis Is Done <./rfm-user#how-the-rfm-analysis-is-done>`__ section of the `RFM Analysis <./rfm-user>`__ guide.
 
 
-.. image:: /admin_guide/img/rfm/rfm_modifyrfmtable.png 
+.. image:: /admin_guide/img/rfm/rfm_modifyrfmtable.png
+   :alt: Modify the ranking table
 
 
 Add a New Segment
@@ -66,7 +68,7 @@ If required, add another segment. To do this, **Add Segment** under the table. R
 Delete a Segment
 """"""""""""""""
 
-If required, delete excess segments. To do this, click the X icon in the **Actions** column at the end of the segment row. You cannot delete segments if there are only two segments left.    
+If required, delete excess segments. To do this, click the X icon in the **Actions** column at the end of the segment row. You cannot delete segments if there are only two segments left.
 
 
 
@@ -76,7 +78,7 @@ Configure RFM for the Existing Channel
 1. Open the channel view:
 
     a. Navigate to **System > Channels** in the main menu.
-    
+
     b. Open the required channel by clicking on it once. Please note that the channel should be of Magento type.
 
 2. On the channel view, click **Edit** in the top right corner.
@@ -84,7 +86,8 @@ Configure RFM for the Existing Channel
 3. Follow steps 2–5 of the `Configure RFM While Creating a New Channel <./rfm-admin#configure-rfm-segments-while-creating-a-new-channel>`__ section.
 
 
-.. image:: /admin_guide/img/rfm/rfm_editrfmconfiguration.png 
+.. image:: /admin_guide/img/rfm/rfm_editrfmconfiguration.png
+   :alt: Configure RFM for the existing channel
 
 
 Review the RFM Configuration
@@ -93,7 +96,7 @@ Review the RFM Configuration
 1. Open the channel view:
 
     a. Navigate to **System > Channels** in the main menu.
-    
+
     b. Open the required channel by clicking on it once. Please note that the channel should be of Magento type.
 
 2. On the channel view, click **Additional Information** and in the **RFM Segment Configuration** section, review the RFM settings.
@@ -105,7 +108,7 @@ Disable RFM
 1. Open the channel view:
 
     a. Navigate to **System > Channels** in the main menu.
-    
+
     b. Open the required channel by clicking on it once. Please note that the channel should be of Magento type.
 
 2. On the channel view, click **Edit** in the top right corner.

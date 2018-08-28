@@ -88,4 +88,3 @@ Related Topics
 
    menu_config
    menu_config_levels
-   service_page

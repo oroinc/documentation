@@ -1,6 +1,6 @@
 .. _user-guide-acc:
 
-Magento Abandoned Cart Campaigns 
+Magento Abandoned Cart Campaigns
 ================================
 
 OroCRM’s Magento Abandoned Cart Campaign (ACC) functionality enables
@@ -31,6 +31,7 @@ Flow: Sending an Abandoned Cart Campaign
 ----------------------------------------
 
 .. image:: ../../img/sending_abandoned_cart_campaigns/ACC_flow.png
+   :alt: The diagram of sending an abandoned cart campaign
 
 
 Requirements for Abandoned Cart Campaign
@@ -77,6 +78,7 @@ create a Channel in the :ref:`Channels <user-guide-channels>` guide. Make sure t
 channels that represent Magento stores contain the ACC entity:
 
 .. image:: ../../img/sending_abandoned_cart_campaigns/channel_acc.png
+   :alt:
 
 .. image:: ../../img/sending_abandoned_cart_campaigns/o_channel_magento_channel.jpg
 
@@ -148,7 +150,7 @@ The following actions are available for an ACC from the grid:
 
 -  Delete campaign from the system : |IcDelete|
 
--  Edit campaign : |IcEdit|  
+-  Edit campaign : |IcEdit|
 
 -  View campaign: |IcView|
 
@@ -157,9 +159,9 @@ The following actions are available for an ACC from the grid:
  .. image:: ../../img/sending_abandoned_cart_campaigns/oro_ACC_grid.jpg
 
  |
- 
- 
- 
+
+
+
 When an ACC is saved, a campaign is automatically created as well, and
 if at this point we go to **Marketing>Campaigns**, we will see out newly
 created ACC in the grid.
@@ -204,7 +206,7 @@ created with the customer’s and cart details. Make sure you synchronize
 your integration by going to **System>Integrations** and selecting your
 Magento integration.
 
-Step 5: Set Up Tracking Website Record 
+Step 5: Set Up Tracking Website Record
 --------------------------------------
 
 For Magento Abandoned Cart Campaigns, OroCRM provides an out-of-the-box
@@ -276,13 +278,13 @@ You can assign a tracking website record to your campaign in two steps.
    .. image:: ../../img/sending_abandoned_cart_campaigns/oro_tracking_code_highlights.jpg
 
    |
-   
-   
+
+
 
  .. note:: If you have OroCRM Tracking extension installed, this tracking code will be added to your Magento Store for you. You can read more on Magento Web Tracking in the corresponding section of the guide.
 
-     
-      
+
+
 2. Add the piece of code from the :ref:`campaign view page <user-guide-marketing-campaigns-view-page>` (e.g. ``?pk\_campaign=Demo\_ACC2``) to the Magento store’s URL and use this modified URL as a link in your MailChimp automation emails. Each time a user reaches a page with such a URL, an event will be logged within the campaign (e.g. ``http://XXXX/checkout/cart/?pk_campaign=Demo_ACC2``).
 
    This tracking code will be automatically passed to MailChimp and can be used as a variable in emails. When we start designing our email in MailChimp automation, the campaign code variable will be available on the list of **Merge Tags** (\|E\_CMPGN\_CD\| variable). This code will be synced to MailChimp during synchronization with Oro (see Step 7).
@@ -295,14 +297,14 @@ Step 6: Prepare Data For Automation
 -  Navigate to **Lists** and click :guilabel:`Create a List`.
 
 -  Complete the required fields and click :guilabel:`Save`.
-   
+
  |
 
  .. image:: ../../img/sending_abandoned_cart_campaigns/mc_list_created.jpg
 
  |
- 
- 
+
+
 
 At this point your list should be empty. After OroCRM’s synchronization
 with MailChimp, an ACC list will be mapped to MailChimp as a segment.
@@ -327,7 +329,7 @@ To map the list to a segment:
 -  Once connected, navigate to MailChimp button in the upper-right corner.
 
 -  Click :guilabel:`Synchronize`.
-   
+
 
  |
 
@@ -335,23 +337,23 @@ To map the list to a segment:
 
  |
 
- 
+
 
  .. image:: ../../img/sending_abandoned_cart_campaigns/oro_connect_to_mc_sync.jpg
 
  |
- 
- 
+
+
 
  .. image:: ../../img/sending_abandoned_cart_campaigns/oro_connect_to_mc_sync_up_to_date.jpg
 
  |
- 
- 
- 
- 
- 
- 
+
+
+
+
+
+
 
 Once the connection has been marked as **Up To Date**, go back to your
 MailChimp account. Your ACC should have now been synced to your
@@ -373,7 +375,7 @@ It is time to create automation for your campaign in MailChimp:
 -  Click the :guilabel:`Automation` tab in the upper menu.
 
 -  Click :guilabel:`Add Automation` in the upper-right corner.
- 
+
 
 |
 
@@ -385,7 +387,7 @@ It is time to create automation for your campaign in MailChimp:
 
 -  Click :guilabel:`Add Automation`.
 
-    
+
 |
 
 .. image:: ../../img/sending_abandoned_cart_campaigns/mc_cutom_add_automation.jpg
@@ -403,7 +405,7 @@ It is time to create automation for your campaign in MailChimp:
 |
 
 -  On the newly opened page, click :guilabel:`Edit Trigger`.
- 
+
 |
 
 .. image:: ../../img/sending_abandoned_cart_campaigns/mc_edit_segment_edit_trigger.jpg
@@ -547,7 +549,7 @@ items. If there are 5 items in the cart, only information about the
 first three will be sent.
 
  .. note:: Note, that the tracking code for Demo ACC campaign (**?pk\_campaign=\*\|E\_CMPGN\_CD\|\*** where \*\|E\_CMPGN\_CD\|\* is **Demo\_ACC2**) follows the URL for our Magento Store with an abandoned cart. In the example, this link is attached to the word *here* in the text (see the previous screenshot).
-  
+
 
 Below is a list of variables available for personalization in MailChimp
 based on data received from OroCRM:
@@ -752,7 +754,7 @@ In similar manner, you can apply various conditions of your choice to
 help you filter customers based on previous campaigns.
 
 
-  
+
 .. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
 
@@ -776,10 +778,10 @@ help you filter customers based on previous campaigns.
 
 .. |UndoRem| image:: /img/buttons/UndoRem.png
    :align: middle
-      
+
 .. |BGotoPage| image:: /img/buttons/BGotoPage.png
    :align: middle
-   
+
 .. |Bdropdown| image:: /img/buttons/Bdropdown.png
    :align: middle
 
@@ -788,10 +790,10 @@ help you filter customers based on previous campaigns.
 
 .. |BSchedule| image:: /img/buttons/BSchedule.png
    :align: middle
-   
+
 .. |acc_related_camp| image:: ../../img/marketing/acc_related_camp.png
    :align: middle
-   
+
 .. |MapML| image:: ../../img/marketing/map_ml.png
    :align: middle
 

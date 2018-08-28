@@ -6,12 +6,12 @@ Marketing Lists
 .. contents:: :local:
     :depth: 2
 
-With OroCRM you can automatically generate a list of contacts used for marketing purposes (mass call or 
-mailing) subject to predefined conditions. For example, you can create a list of personal and contact details of leads 
+With OroCRM you can automatically generate a list of contacts used for marketing purposes (mass call or
+mailing) subject to predefined conditions. For example, you can create a list of personal and contact details of leads
 added to the system after October 1 with addresses in California. Such lists are called **Marketing Lists**.
 
 Marketing lists can be used to run :ref:`Email Campaigns <user-guide-email-campaigns>` in OroCRM. You can also
-synchronize OroCRM Marketing lists with Subscribers Lists in :ref:`MailChimp <user-guide-mc-integration>` and/or 
+synchronize OroCRM Marketing lists with Subscribers Lists in :ref:`MailChimp <user-guide-mc-integration>` and/or
 Address Books in :ref:`dotmailer <user-guide-dm-integration>`.
 
 .. note:: See a short demo on `how to create a marketing list <https://oroinc.com/orocrm/media-library/create-marketing-list-2>`_, or follow the step-by-step guidance below.
@@ -25,16 +25,16 @@ Address Books in :ref:`dotmailer <user-guide-dm-integration>`.
 Create Marketing Lists
 ----------------------
 
-Go to **Marketing>Marketing Lists** and click the :guilabel:`Create Marketing List` button 
+Go to **Marketing>Marketing Lists** and click the :guilabel:`Create Marketing List` button
 in the top right corner of the grid.
-   
+
 The Create Marketing List :ref:`form <user-guide-ui-components-create-pages>` will emerge.
 
 Define the list settings, as described in the sections below:
 
 .. _user-guide-marketing-marketing-list-create-general:
-  
-General Details  
+
+General Details
 ^^^^^^^^^^^^^^^
 
 The following fields are mandatory and **must** be specified:
@@ -47,31 +47,32 @@ The following fields are mandatory and **must** be specified:
   "**Entity**","Choose an entity from the drop-down. Virtually every entity is available as a marketing list target. For instance, marketing lists can be created based on accounts (primary email of a default contact is used), or, if you are using OroCommerce, from customer users, quotes, orders, and shopping lists.
   Records of the chosen entity and entities related to it will be used to create the list of contacts."
   "**Type**","Chose the list type from the drop-down:
- 
+
   - **Dynamic** lists are updated as soon as any changes have taken place in the system.
-  
-  - **On demand** lists will be updated only following the user request 
+
+  - **On demand** lists will be updated only following the user request
     (:ref:`refresh the grid <doc-grids-actions-refresh>` on the view page of the marketing list record)."
-  "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g. the owner, 
+  "**Owner**","Limits the list of users that can manage the marketing list to the users,  whose :ref:`roles <user-guide-user-management-permissions>` allow managing marketing lists of the owner (e.g. the owner,
   members of the same business unit, system administrator, etc.)."
 
-Optional field **Description** can be filled with free text to help you and other users understand the purpose or 
+Optional field **Description** can be filled with free text to help you and other users understand the purpose or
 peculiarities of the list in the future.
 
-Custom fields may be added subject to specific business needs. 
-  
+Custom fields may be added subject to specific business needs.
+
 .. image:: ../../img/marketing/list_general_details_ex.png
+   :alt: General settings of the marketing list details page.
 
 
 .. _user-guide-marketing-marketing-list-create-filters:
-  
+
 Filters
 ^^^^^^^
 
-In the **Filters** section you can define  the Activity and/or Data audit and/or Field Condition and/or Condition Group 
-filters that will be used to select the records for the list. 
+In the **Filters** section you can define  the Activity and/or Data audit and/or Field Condition and/or Condition Group
+filters that will be used to select the records for the list.
 
-More information about the ways to define filters is provided in the 
+More information about the ways to define filters is provided in the
 :ref:`Filters Management <user-guide-filters-management>` guide.
 
 .. _user-guide-marketing-marketing-list-create-columns:
@@ -80,31 +81,33 @@ Columns
 ^^^^^^^
 
 .. image:: ../../img/marketing/list_columns.png
+   :alt: Add columns to the marketing list to display relevant filtered data
 
 In the **Columns** section, define the set of fields.
 The only goal of this set of fields is to visualise records that meet the filter requirements.
-Value of the chosen fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the 
+Value of the chosen fields will be displayed at the :ref:`View page <user-guide-ui-components-view-pages>` of the
 Marketing List.
-  
+
 .. note::
 
-    Marketing activities require some contact information, so at least one column that contains it must be 
-    selected. A list of these fields is provided in the **Designer** section. (e.g. for contacts these are Primary 
+    Marketing activities require some contact information, so at least one column that contains it must be
+    selected. A list of these fields is provided in the **Designer** section. (e.g. for contacts these are Primary
     Email and Primary Phone fields).
 
 
 .. image:: ../../img/marketing/list_columns_01.png
-  
+
 - Choose the fields from the drop-down in the **Column** section.
 
-- Label is the way the field will be referred to in the grid. The value defined for the field will be added by default, 
-  but can be changed. 
-  
+- Label is the way the field will be referred to in the grid. The value defined for the field will be added by default,
+  but can be changed.
+
 - Define the sorting order if you want the grid to be sorted by the field value.
 
 - Click :guilabel:`Add`.
 
 .. image:: ../../img/marketing/list_columns_ex.png
+   :alt: An example of several columns added to the marketing list, including contact information
 
 Use action icons in the last column to edit the grid:
 
@@ -129,11 +132,11 @@ The following actions are available for a marketing list from the :ref:`grid <do
 
 .. image:: ../../img/marketing/list_action_icons.png
 
-- Delete the list from the system: |IcDelete| 
+- Delete the list from the system: |IcDelete|
 
-- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the list: |IcEdit| 
+- Get to the :ref:`Edit form <user-guide-ui-components-create-pages>` of the list: |IcEdit|
 
-- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the list:  |IcView| 
+- Get to the :ref:`View page <user-guide-ui-components-view-pages>` of the list:  |IcView|
 
 
 .. _user-guide-marketing-list-view-page:
@@ -160,25 +163,25 @@ The :ref:`View page <user-guide-ui-components-view-pages>` of a marketing list c
 
 Marketing List Grid
 ^^^^^^^^^^^^^^^^^^^
-  
+
 The grid contains:
 
 - Columns defined in the :ref:`Create form <user-guide-marketing-marketing-list-create-columns>`.
 
-- "TOTAL CONTACTED" column: contains the number of times a record of this marketing list was contacted within 
+- "TOTAL CONTACTED" column: contains the number of times a record of this marketing list was contacted within
   different :ref:`E-mail campaigns <user-guide-email-campaigns>`.
-   
-- "LAST CONTACTED" column: contains the date when a  record of this marketing list was last contacted within 
+
+- "LAST CONTACTED" column: contains the date when a  record of this marketing list was last contacted within
   different :ref:`Email campaigns <user-guide-email-campaigns>`.
-  
-  
+
+
 .. note::
 
    Please note that if the same record is a part of different marketing lists, its data from other marketing lists will
    not affect the TOTAL CONTACTED and LAST CONTACTED values.
-   
-- "SUBSCRIBED" column: Initially all the users in the list are subscribed (the column value is "Yes"). If following one 
-  of the :ref:`Email campaigns <user-guide-email-campaigns>` using the marketing list, a user has 
+
+- "SUBSCRIBED" column: Initially all the users in the list are subscribed (the column value is "Yes"). If following one
+  of the :ref:`Email campaigns <user-guide-email-campaigns>` using the marketing list, a user has
   unsubscribed, the value is changed to "No" and the user is excluded from the next mailings.
 
 Action icons in the last column of the grid enable the following actions:
@@ -186,17 +189,18 @@ Action icons in the last column of the grid enable the following actions:
 - Get to the view page of the grid item: |IcView|
 
 - Unsubscribe/Subscribe items from/to the list manually: |IcUns| and |IcSub| icons
-  
+
 - Remove the item from the list: |IcRemove|
 
-  
+
 As soon as at least one item has been deleted from the marketing list, it is moved to the **Removed Items** section of the Marketing list view page.
 
 
 .. image:: ../../img/marketing/ml_removed_items.png
+   :alt: Removed items section of the marketing list page
 
 
- 
+
 Action icons within **Removed Items** enable the following actions:
 
 - Get to the view page of the grid item: |IcView|
@@ -205,7 +209,7 @@ Action icons within **Removed Items** enable the following actions:
 
 
 Now, you can go ahead and use contacts of your marketing lists to run dedicated campaigns among the customers that best
-suit your purposes. 
+suit your purposes.
 
 .. |IcDelete| image:: /img/buttons/IcDelete.png
    :align: middle
@@ -230,10 +234,10 @@ suit your purposes.
 
 .. |UndoRem| image:: /img/buttons/UndoRem.png
    :align: middle
-      
+
 .. |BGotoPage| image:: /img/buttons/BGotoPage.png
    :align: middle
-   
+
 .. |Bdropdown| image:: /img/buttons/Bdropdown.png
    :align: middle
 

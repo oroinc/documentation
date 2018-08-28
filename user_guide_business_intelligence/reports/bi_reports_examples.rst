@@ -36,18 +36,21 @@ Let us see what happens after we use the **Count** function for the **Opportunit
    **Report Preview (Function = Count)**
 
    .. image:: /user_guide/img/business_intelligence/reports_examples_4.png
+      :alt: Report example illustrating the count function
 
 Similarly, you can use sum, max, average, and min functions.
 
 **Report Preview (Function = Sum)**
 
 .. image:: /user_guide/img/business_intelligence/reports_examples_5.png
+   :alt: Report example illustrating the sum function
 
 The sum of **Budget Amount** values of all opportunities makes $202,565.00.
 
 **Report Preview (Function = Max)**
 
 .. image:: /user_guide/img/business_intelligence/reports_examples_6.png
+   :alt: Report example illustrating the max function
 
 The biggest budget amount value of the opportunity is $9,902.00.
 
@@ -57,6 +60,7 @@ Use Simple Grouping by Value
 You can group the information in the report by unique values in the column(s).
 
 .. image:: /user_guide/img/business_intelligence/reports_examples_7.png
+   :alt: Group the information in the report by unique values in the column(s)
 
 The report preview:
 
@@ -74,6 +78,7 @@ Now, you can see the calculated budget metrics (total, average, min, and max) fo
 The report preview:
 
 .. image:: /user_guide/img/business_intelligence/reports_examples_10.png
+   :alt: Calculated budget metrics for all the opportunities
 
 .. hint::
 

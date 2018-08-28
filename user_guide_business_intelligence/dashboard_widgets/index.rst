@@ -6,7 +6,7 @@ Dashboards and Widgets
 ======================
 
 Dashboard is a default page you see after you log in. It is an adjustable view that may contain many :ref:`types of information blocks (widgets) <user-guide--business-intelligence--widgets--explore>`,
-such as today's calendar, recent calls and emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them. 
+such as today's calendar, recent calls and emails, quick launchpad, etc. You can have several dashboards that serve different purposes and switch between them.
 
 .. image:: /user_guide/img/widgets/dashboards_0.png
 
@@ -20,7 +20,7 @@ Create a Dashboard
 To create a dashboard:
 
 #. Hover over the |IcDashboard| in the main menu and click **Manage Dashboards**.
-  
+
 #. Click **Create Dashboard** on the top right of the page.
 
    The following page appears:
@@ -52,9 +52,9 @@ Switch Between Dashboards
 You can switch to a dashboard in one of the two ways:
 
 - Hover over the |IcDashboard| in the main menu and click the dashboard name.
- 
+
   .. image:: /user_guide/img/widgets/dashboards_3.png
-  
+
 - Toggle dashboards in the header of the Dashboard page.
 
   .. image:: /user_guide/img/widgets/dashboards_4.png
@@ -82,30 +82,30 @@ Your Oro application comes with a number of out-of-the-box widgets that can simp
        * :ref:`Opportunity-generating campaigns <user-guide--business-intelligence--widgets--opportunity-generating-campaigns>`
        * :ref:`Average lifetime sales <user-guide--business-intelligence--widgets--average-lifetime-sales>`
        * :ref:`Purchase funnel <user-guide--business-intelligence--widgets--purchase-funnel>`
-       * :ref:`Campaigns by close revenue <user-guide--business-intelligence--widgets--close-revenue>`","                                                                     
-       
+       * :ref:`Campaigns by close revenue <user-guide--business-intelligence--widgets--close-revenue>`","
+
        * :ref:`Recent emails <user-guide--business-intelligence--widgets--recent-emails>`
        * :ref:`Recent calls <user-guide--business-intelligence--widgets--recent--calls>`","
-       
-       
+
+
        * :ref:`Quick launchpad <user-guide--business-intelligence--widgets--quick-launchpad>`
        * :ref:`Recently accessed contacts <user-guide--business-intelligence--widgets--recently-accessed--contacts>`
        * :ref:`Recently accessed accounts <user-guide--business-intelligence--widgets--recently-accessed-accounts>`
        * :ref:`Today's calendar <user-guide--business-intelligence--widgets--todays-calendar>`"
-            
+
        * :ref:`Ecommerce statistics <user-guide--business-intelligence--widgets--ecommerce-statistics>`
        * :ref:`New Magento customers <user-guide--business-intelligence--widgets--new-magento-customers>`
        * :ref:`Revenue over time <user-guide--business-intelligence--widgets--revenue-over-time>`
        * :ref:`Orders over time <user-guide--business-intelligence--widgets--revenue-over-time>`
-       * :ref:`My sales flow B2C <user-guide--business-intelligence--widgets--sales-flow>`" 
-   
+       * :ref:`My sales flow B2C <user-guide--business-intelligence--widgets--sales-flow>`"
+
 .. note:: Additional widgets can be added via a third-party system integrations.
 
 .. _user-guide--business-intelligence--widgets--add:
 
 Add Widgets to a Dashboard
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  
+
 To add a widget to a dashboard:
 
 #. Navigate to the dashboard (e.g. hover over the |IcDashboard| in the main menu and click the dashboard name).
@@ -117,11 +117,11 @@ To add a widget to a dashboard:
 #. The page that appears lists all the widgets available in the system which have not been added to the dashboard yet.
 
    .. image:: /user_guide/img/widgets/dashboards_5_new.png
- 
+
 #. To search for a widget, type its name in the search field.
 
    .. image:: /user_guide/img/widgets/business_sales_channel_statistics.png
-  
+
 #. Select the widget that you would like to add and click **Add**.
 
    .. image:: /user_guide/img/widgets/widgets_list.png
@@ -156,6 +156,7 @@ The header of each widget contains:
 The specified owner, date range and the `territory <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ (if available for the entity) are displayed at the bottom of the widget:
 
 .. image:: /user_guide/img/widgets/owner_date_terr_displayed.png
+   :alt: View the specified owner, date range and the territory for a widget
 
 Adjust Widget Settings
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -221,5 +222,5 @@ Manage the widgets via the |IcSettings| **Tools** menu. Hover over the |IcSettin
    revenue_over_time
    orders_over_time
    my_sales_flow_b2c
- 
-    
+
+
