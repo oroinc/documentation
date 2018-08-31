@@ -56,10 +56,31 @@ For instance, you can set the content block to have a specific text displayed fo
 2. Add a new content variant by clicking **Add Content** in the **Content Variant** section.
 3. Enter text.
    
-.. image:: /user_guide/img/marketing/landing_pages/ContentBlocksSample.png
-   :class: with-border
+   .. image:: /user_guide/img/marketing/landing_pages/ContentBlocksSample.png
+      :class: with-border
 
+.. _user-guide--landing-pages--marketing--content-blocks--translation:
+
+To translate the content block (e.g. the homepage slider), restrict it to the required localization(s). 
+
+For instance, to translate the homepage slider into German:
+
+1. Set the visibility restriction to *German* in **Restrictions > Localization**.
+2. Edit the default variant to include Germany-specific content, or add another content variant by clicking **+Add**.
+
+   .. image:: /user_guide/img/marketing/landing_pages/translate_homepageslider.png
+      :alt: Translating the landing page content block
+      :class: with-border
+
+3. Click **Save and Close**
+4. Once switched to the German localization, the home page slider displays the new content.
+
+   .. image:: /user_guide/img/marketing/landing_pages/translated_slider_front.png
+      :alt: Translated home page slider in the storefront
+      :class: with-border
+ 
 .. finish 
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
+   
