@@ -62,7 +62,7 @@ Please navigate to the following sections for the complete list of topics:
    reference/index
 
    entities/index
-  
+
    other/index
 
    faq/index

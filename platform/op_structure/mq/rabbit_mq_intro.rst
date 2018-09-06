@@ -1,3 +1,5 @@
+:orphan:
+
 AmqpMessageQueue Component (Enterprise Edition Only)
 ====================================================
 

@@ -1,3 +1,5 @@
+:orphan:
+
 .. _op-structure--mq:
 
 Message Queue Jobs and Transport Configuration

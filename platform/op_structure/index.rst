@@ -1,3 +1,5 @@
+:orphan:
+
 .. _admin-op-structure:
 
 Operational Structure

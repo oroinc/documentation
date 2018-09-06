@@ -1,3 +1,5 @@
+:orphan:
+
 .. _op-structure--database:
 
 DataBase System Component

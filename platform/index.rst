@@ -58,7 +58,7 @@ This section provides links to the online documentation for the latest OroPlatfo
 
    architecture/index
    install_upgrade/index
-   op_structure/index
+   dev_guide/index
+   dev_cookbook/index
    community/index
    system_requirements
-   

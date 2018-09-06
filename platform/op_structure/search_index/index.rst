@@ -1,3 +1,5 @@
+:orphan:
+
 .. _search_index_overview:
 
 

@@ -64,7 +64,7 @@ Supported RDBMs:
 * MySQL in CE and EE
 * PostgreSQL in EE only (for scalability)
 
-.. note:: For implementation details, see :ref:`Database System Component <op-structure--database>` topic for more information about the database component.
+.. note: For implementation details, see :ref:`Database System Component <op-structure--database>` topic for more information about the database component.
 
 Web Server and PHP
 """"""""""""""""""
@@ -84,7 +84,7 @@ Supported MQ solutions:
 * Proprietary DB-based MQ in CE and EE
 * RabbitMQ in EE only (for scalability)
 
-.. note:: For implementation details, see :ref:`Message Queue <op-structure--mq--index>` topic for more information about the message queue component.
+.. note: For implementation details, see :ref:`Message Queue <op-structure--mq--index>` topic for more information about the message queue component.
 
 Search Engine
 """""""""""""
@@ -93,10 +93,10 @@ Oro application uses **Search Index** to enable full-text search and speed up th
 
 Supported search index providers:
 
-* :ref:`DB full-text search <search_index_db_from_md>` in CE and EE
-* :ref:`Elastic Search <elastic-search>` in EE only
+* *DB full-text search* in CE and EE
+* *Elastic Search* in EE only
 
-.. note:: For implementation details, see :ref:`Search Index <search_index_overview>` topic for more information about the search index component.
+.. note: For implementation details, see :ref:`Search Index <search_index_overview>` topic for more information about the search index component.
 
 Notes on Deployment Options
 """""""""""""""""""""""""""
