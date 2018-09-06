@@ -1,4 +1,3 @@
-
 .. _admin-configuration-user-settings:
 
 User Settings
@@ -15,13 +14,14 @@ To apply user-related options in your |oro_application| instance:
    .. image:: /admin_guide/img/configuration/user.png
 
 
-Configure Password Restrictions
--------------------------------
+Configure Email Settings and Password Restrictions
+--------------------------------------------------
 
 .. csv-table::
   :header: "Option", "Description"
   :widths: 10, 30 
 
+  "**Case-Insensitive Email Addresses**","If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled."
   "**MinimalPassword Length**","Enter the number of characters to define the length of the password. By default, 8 is specified"
   "**Require a Number**","Specify whether the password should contain a number. By default, the option is enabled."
   "**Require A Lower Case Letter**","Specify whether the password should contain a lower case letter. By default, the option is enabled"
@@ -35,7 +35,7 @@ Configure Login Attempts
   :header: "Option", "Description" 
   :widths: 10, 30 
 
-  "**Enable Failed logins Limit**","Specify whether you wish to enable failed logins limit. By default, the option is enabled."
+  "**Enable Failed Logins Limit**","Specify whether you wish to enable failed logins limit. By default, the option is enabled."
   "**Max Login Attempts**","Specify the maximum number of failed login attempts. By default, the number is set to 10."
 
 Configure Password Change Policy
