@@ -17,6 +17,8 @@ Importing Product Attributes
 
      "field_money","money","label_value","description_value","marketinglist.entity_config.","yes","header_value",12,"no","mimetypes_value"
 
+.. note:: Keep in mind that multi-select attribute type doesn't support the sorting option, so make sure to set this option to "0" or "No" when preparing the corresponding file for importing.
+
 .. include:: /getting_started/import_export/import.rst
    :start-after: begin 1
    :end-before: Related Topics
