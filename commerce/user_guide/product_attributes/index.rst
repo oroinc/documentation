@@ -172,19 +172,20 @@ Proceed to create the attribute as described below.
 
    .. note:: Please note that if the option is not applicable to attributes of the selected type (e.g. image, text, multi-select, etc.), it does not appear in this section.
 
-   .. csv-table::
-      :header: "Field", "Description"
-      :widths: 15, 50
+.. csv-table::
+   :header: "Field", "Description"
+   :widths: 15, 50
 
       "**Searchable**","If enabled, attribute content can be found in the storefront via search."
       "**Filterable**","Defines whether a dedicated filter is available for the attribute in the storefront."
       "**Filter By**","Defines the type of filtering to be applied to the attribute:
 
        - *Fuzzy search* --- Find the exactly matching text and similar words. This type of filtering helps find the required values even if the entered text contains typos or incomplete words.
-       - *Exact value* --- Look for the values that exactly match the entered text.
+       - *Exact value* --- Look for the values that exactly match the entered text."
 
-       "
-      "**Sortable**","Defines whether sorting is available for the attribute in the storefront."
+      "**Sortable**","Defines whether sorting is available for the attribute in the storefront.
+       .. note:: Please note that the sortable option is not applicable for the multi-select attribute type. Make sure to set the option to '0' or 'No' when using the importing strategy."
+
       "**Enabled**","Defines whether the attribute is enabled in the storefront."
       "**Visible**","Defines whether the attribute is visible or hidden in the storefront."
 
