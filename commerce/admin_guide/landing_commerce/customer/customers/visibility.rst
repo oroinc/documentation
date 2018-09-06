@@ -1,8 +1,8 @@
 .. _sys-config--configuration--commerce--customers--visibility:
 .. _user-guide--customers--configuration--visibility:
 
-Configuring Default Product and Category Visibility
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Configure Product and Category Visibility to Customers
+------------------------------------------------------
 
 .. begin
 
