@@ -246,48 +246,47 @@ view of customer activities, regardless of the :term:`channels <Channel>`. This 
 
 In order to merge accounts:
 
-- Go to the accounts grid.
+1. Go to the list of all accounts.
 
-- Check the accounts that you want to merge.
+2. Select the accounts that you want to merge.
 
-- Choose :ref:`bulk action <user-guide-ui-components-grid-edit>` **Merge Accounts**.
+3. Click the ellipsis menu at the right end of the table header row, and then click the |IcMerge| **Merge** icon.
 
-As an example, we are merging three accounts "Acuserv", "Big Bear Stores" and "Casa Bonita".
+   As an example, we are merging three accounts: Acuserv, Big Bear Stores, and Body Toning.
 
-|
+4. Once you click **Merge**, a table with the merge-settings appears.
 
-.. image:: /user_guide/img/accounts/accounts_merge_01.png
+   .. image:: /user_guide/img/accounts/accounts_merge_02_part1.png
+      :alt: Click merge accounts, part 1
 
-|
-
-Once you have clicked :guilabel:`Merge Accounts`, a table with merge-settings will appear.
-
-|
-
-.. image:: /user_guide/img/accounts/accounts_merge_02.png
-
-|
-
-- Choose the name of one of the accounts that is being merged to give to your new account ("Master Record").
-
-- Choose if the contacts shall be replaced with the contacts of one account (and which), or if all the contacts shall be
-  appended.
-
-- Choose the default contact of the accounts being merged, that will be given to the Master Record.
-
-- Choose the description of the accounts being merged, that will be given to the Master Record.
-
-- Choose the owner of the accounts being merged, that will be given to the Master Record.
-
-- Choose if the tags shall be replaced with the contacts of one account (and which), or if all the tags shall be
-  appended.
-
-- Click :guilabel:`Merge`.
-
-A Master Record with the merged data of several accounts will be created. The rest of the account details, including details
-of the customer identities will be appended.
+   .. image:: /user_guide/img/accounts/accounts_merge_02_part2.png
+      :alt: Click merge accounts, part 2
 
 
+5. Choose a name of the accounts that are being merged to give to your new account (Master Record).
+
+6. Choose the accounts merging strategy:
+
+   * *Append* - combines selected values and assigns them to the master record.
+   * *Replace* - uses the selected value as the new value for the corresponding field.
+
+7. Apply the strategy to the attachments, calendar event activity, call activity, contacts, email activity, note activity, tags, and task activity.
+
+8. Choose the default contact of the accounts being merged to give to the Master Record.
+
+9. Choose the description of the accounts being merged to give to the Master Record.
+
+10. Choose the last contact datetime as well as the last incoming and outgoing contact datetime to give to the Master Record.
+
+11. Choose the owner of the accounts being merged to give to the Master Record.
+
+12. Choose the total number of incoming and outgoing contact attempts and total times the account has been contacted to give to the Master Record.
+
+13. Click **Merge**.
+
+    A Master Record with merged data of several accounts is created. The rest of the account details, including details of the customer identities are merged using the append strategy.
+
+    .. note:: Keep in mind that after you create a new account profile (Master Record), the accounts that were merged are automatically deleted from the list of all accounts.
 
 .. _user-guide-accounts-reports:
 
@@ -307,7 +306,7 @@ Accounts Life Time Value
 This is a simple but useful report, with which you can see the total amount of money received from all the customers
 assigned to the account.
 
-In order to see the report go to **Reports and Segments>Reports>Accounts>Life Time**.
+In order to see the report go to **Reports and Segments > Reports > Accounts > Life Time**.
 
 It shows:
 
@@ -328,7 +327,7 @@ Accounts by Opportunities
 With this report you can see number of won, lost and pending opportunities for all the customers assigned to the
 account.
 
-In order to see the report go to **Reports and Segments>Reports>Accounts>By Opportunities**.
+In order to see the report go to **Reports and Segments > Reports > Accounts > By Opportunities**.
 
 It shows:
 
@@ -382,3 +381,7 @@ It shows:
    :align: middle
 
 .. |IcEditInline| image:: /img/buttons/IcEditInline.png
+   :align: middle
+
+.. |IcMerge| image:: /img/buttons/IcMerge.png
+   :align: middle
