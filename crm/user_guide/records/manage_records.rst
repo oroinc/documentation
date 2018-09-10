@@ -97,7 +97,7 @@ Merge Records
 To merge records:
 
 1. In the table, select the check boxes in front of the records you want to merge.
-2. Click the ellipsis menu at the right end of the table header row, and the click the |IcMerge| **Merge** icon.
+2. Click the ellipsis menu at the right end of the table header row, and then click the |IcMerge| **Merge** icon.
 
 .. image:: /user_guide/img/getting_started/records/grids/grids_merge.png
 
