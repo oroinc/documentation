@@ -56,8 +56,8 @@ This section provides links to the online documentation for the latest OroPlatfo
 .. toctree::
    :hidden:
 
-   architecture/index
    install_upgrade/index
+   architecture/index
    dev_guide/index
    dev_cookbook/index
    community/index

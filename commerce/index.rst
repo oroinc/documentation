@@ -254,11 +254,11 @@ This section provides links to the online documentation for the latest OroCommer
        :titlesonly:
        :maxdepth: 3
 
-       architecture/index
+       install_upgrade/index
 
        cloud/index
 
-       install_upgrade/index
+       architecture/index
 
        getting_started/index
 
