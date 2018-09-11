@@ -34,7 +34,7 @@ The **Pricing** page opens. It contains the following information:
       :class: with-border
 
    * **Pricing Precision** --- The number of digits that are allowed in the fractional part of the price (e.g. precision of 4 enables your sales manager use prices like $10.0001).
-   * **Pricing Rounding Type** --- The rounding type that is used when calculated product price has more digits in the fractional part than allowed by the **Pricing Precision** value. Please use one of the following options:
+   * **Pricing Rounding Type** --- The rounding type that is used when calculated product price has more digits in the fractional part than allowed by the **Pricing Precision** value. These are the rounding settings used for price and tax calculations that happen in shopping lists, checkout, orders, and RFQs. Please use one of the following options:
 
      - *Ceil* --- Rounds to the nearest integer that is not less than the price with the fractional part (e.g. 23.5 is rounded to 24; 23.3 is rounded to 24; 23.7 is rounded to 24)
 
