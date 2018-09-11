@@ -11,8 +11,11 @@ Once you downloaded and installed the add-in, you can configure MS Outlook setti
  * **Integration settings**
  * **Synchronization settings**
 
-.. image:: /admin_guide/img/outlook/MSOutlookSettingsOroSide.gif
+.. image:: /admin_guide/img/outlook/MS_outlook_settings(part1).png
    :alt: The configuration settings of ms outlook in the oro management console
+
+.. image:: /admin_guide/img/outlook/MS_outlook_settings(part2).png
+   :alt: The configuration settings of ms outlook in the oro management console, part 2
 
 
 .. note:: MS Outlook settings can be configured globally, per organization, and per user, with the exception of MS Outlook add-in settings, which can only be managed globally. 
