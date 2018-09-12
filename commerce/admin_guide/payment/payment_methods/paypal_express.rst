@@ -7,7 +7,7 @@ This section describes the steps that are necessary to expose PayPal Express as 
 
 .. warning:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
 
-.. note:: Before you begin, see :ref:`PayPal Services overview <user-guide--payment--payment-providers-overview--paypal>` and learn about :ref:`PayPal integration prerequisites <user-guide--payment--prerequisites--paypal>` - the preparation steps that should be performed on the PayPal service side.
+.. note:: Before you begin, see :ref:`PayPal Express Service overview <user-guide--payment--payment-providers-overview--paypal-express>` and learn about :ref:`PayPal Express integration prerequisites <user-guide--payment--prerequisites--paypal-express>` - the preparation steps that should be performed on the PayPal service side.
 
 To enable PayPal Express payments:
 

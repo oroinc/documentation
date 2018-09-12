@@ -25,6 +25,7 @@ For detailed information about payment provider services supported in OroCommerc
    money_order
    payment_term
    paypal
+   paypal_express
    authorizenet
    wirecard
    infinitepay
