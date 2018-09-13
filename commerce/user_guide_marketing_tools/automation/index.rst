@@ -35,7 +35,7 @@ In Oro application, you can use the following marketing tools:
 Via dotmailer
 -------------
 
-.. include:: /admin_guide/integrations/dotmailer_integration.rst
+.. include:: /admin_guide/integrations/dotmailer/index.rst
    :start-after: begin_include
    :end-before: finish_include
 

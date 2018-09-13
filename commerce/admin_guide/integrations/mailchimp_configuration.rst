@@ -1,7 +1,7 @@
 .. _user-guide-mc-integration:
 
-Configure MailChimp Integration
-===============================
+MailChimp Integration
+=====================
 
 .. begin_include
 
@@ -15,7 +15,7 @@ To configure MailChimp integration, ensure that you have MailChimp
 extension installed in your Oro instance. For installation instructions,
 click `here <https://marketplace.orocrm.com/package/orocrm-mailchimp-integration/>`_.
 
-SaaS users should have MailChimp preinstalled.
+SaaS users should have MailChimp pre-installed.
 
 .. _user-guide-mc-integration--mailchimp-side:
 
@@ -98,9 +98,8 @@ In order to sync your integration:
 
 3. Click **Schedule Sync** in the top right corner.
 
-.. image:: /user_guide/system/img/mc_email_campaign/o_manage_integrations_orocrm_schedule_sync.jpg
+   .. image:: /user_guide/system/img/mc_email_campaign/o_manage_integrations_orocrm_schedule_sync.jpg
 
-Related Articles
-----------------
+**Related Topic**
 
-:ref:`Sending Email Campaign via MailChimp <user-guide-mailchimp-campaign>`
+* :ref:`Sending Email Campaign via MailChimp <user-guide-mailchimp-campaign>`

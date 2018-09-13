@@ -3,15 +3,15 @@
 Configure Single Sign-on
 ========================
 
-`Single sign-on <https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer>`__ allows to enter dotmailer account from within Oro application.
+`Single sign-on <https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer>`__ allows to enter dotmailer account from within your OroCRM and OroCommerce applications.
 
 To be able to use single sign-on:
 
- 1. Obtain a Client ID and a Client Secret Keys from your dotmailer manager.
- 2. Enter these credentials during integration configuration (see the :ref:`Configure dotmailer Integration guide <user-guide-dotmailer-configuration>`).
- 3. The requested call back URL should be as follows: https:// {your domain}/dotmailer/oauth/callback.
- 4. Navigate to **Marketing > dotmailer > Email Studio** and select the integration you wish to connect to.
- 5. Click :guilabel:`Connect` to perform OAuth authorization.
+1. Obtain a Client ID and a Client Secret Keys from your dotmailer manager.
+2. Enter these credentials during integration configuration (see the :ref:`Configure dotmailer Integration guide <user-guide-dotmailer-configuration>`).
+3. The requested call back URL should be as follows: https:// {your domain}/dotmailer/oauth/callback.
+4. Navigate to **Marketing > dotmailer > Email Studio** and select the integration you wish to connect to.
+5. Click **Connect** to perform OAuth authorization.
 
 Once the connection is established, you will be able to see your dotmailer account dashboard within Email Studio in Oro application.
 
