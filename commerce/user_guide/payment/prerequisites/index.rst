@@ -11,6 +11,7 @@ For detailed information about configuration steps that should precede the integ
    :maxdepth: 1
 
    paypal
+   paypal_express
    authorizenet
    wirecard
    infinitepay
