@@ -199,7 +199,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li>Order History</li>
+                     <li><a class="reference internal" href="sales/open_orders#configuration-guide-commerce-configuration-sales-order-history"><span class="std std-ref">Order History (Open Orders)</span></a></li>
                      <li><a class="reference internal" href="sales/sales_info/available_user_options#user-guide-system-configuration-display-sales-rep-info-available-user-options"><span class="std std-ref">Contacts</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true"  ></i></li>
                      <li><a class="reference internal" href="sales/guest_access/guest_shopping_list_global#user-guide-system-configuration-commerce-sales-shopping-list-global"><span class="std std-ref">Shopping List</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                     </ul>
@@ -278,6 +278,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                <ul class="guideline__list">
                   <li><a class="reference internal" href="orders/orders/order_automation_global#configuration-commerce-orders-order-automation-global"><span class="std std-ref">Order Automation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i></li>
                   <li><a class="reference internal" href="orders/orders/order_creation_global#configuration-commerce-orders-order-creation-global"><span class="std std-ref">Order Creation</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
+                  <li><a class="reference internal" href="product/products/config_previously_purchased#sys-commerce-orders-previously-purchased-main"><span class="std std-ref">Purchase History</span></a><i class="fa fa-globe" aria-hidden="true"  ></i></li>
                   </ul>
           </div>
       </div>

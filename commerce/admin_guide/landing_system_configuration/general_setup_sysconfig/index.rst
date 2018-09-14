@@ -5,7 +5,7 @@ General Setup
 
 Learn how to configure localization options, currency and tracking, as well and user, email, display and upload settings.
 
-* Application Settings
+* :ref:`Application Settings <admin-configuration-application>`
 * :ref:`Localization <sys--config--sysconfig--general-setup--localization--global>`
 * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`
 * :ref:`Currency <sys--config--sysconfig--general-setup--currency>`
@@ -23,3 +23,4 @@ Learn how to configure localization options, currency and tracking, as well and 
    upload_settings_globally
    display_settings
    user_settings
+   application_settings
