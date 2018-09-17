@@ -11,7 +11,7 @@ In OroCommerce, you can use payment terms configured per customer to help them u
 
 Payment term is a set of conditions required for the sale to be completed, e.g. the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc.
 
-To use Payment Terms in your OroCommerce Storefront, you need to `Enable Payment Terms as Integration`_ and then `Create Payment Terms`_ with the conditions you would like to offer your buyers. You can `Link Payment Term to a Customer Based on Their Sales Agreement`_.
+To use Payment Terms in your OroCommerce Storefront, you need to `Enable Payment Terms as Integration`_ and then `Create a Payment Term`_ with the conditions you would like to offer your buyers. You can `Link Payment Term to a Customer Based on Their Sales Agreement`_.
 
 Enable Payment Terms as Integration
 """""""""""""""""""""""""""""""""""
@@ -39,41 +39,40 @@ To enable payment using payment terms:
 
 Next, set up a payment rule that enables this payment method for all or some customer orders, create individual payment terms based on the sales agreement with your customers to cover all the agreed payment terms/options, and bind your customers to their respective payment term. You may use only one payment term per B2B customer.
 
-Create Payment Terms
-""""""""""""""""""""
+Create a Payment Term
+"""""""""""""""""""""
 
-To create a new Payment Term:
+To create a new payment term:
 
-1. Navigate to **Sales > Payment Terms** using the main menu.
+1. Navigate to **Sales > Payment Terms** in the main menu.
 
-.. image:: /user_guide/img/sales/payment_terms/payment_terms_list.png
-   :class: with-border
+   .. image:: /user_guide/img/sales/payment_terms/payment_terms_list.png
+      :class: with-border
+      :alt: Create a new payment method
 
 2. Click **Create Payment Term**. The following page opens:
 
-.. image:: /user_guide/img/sales/payment_terms/PaymenttermsCreate.png
-   :class: with-border
+   .. image:: /user_guide/img/sales/payment_terms/PaymenttermsCreate.png
+      :class: with-border
+      :alt: Provide payment term name
 
 3. Type in the label that is informative for both the sales person and the customer buyer, as it will be exposed as one of the payment options for both parties.
-
-4. Tick the **Has Payment Term** box for the customers who will use this payment term.
-
-5. Click **Save**.
+4. Click **Save**.
 
 Link Payment Term to a Customer Based on Their Sales Agreement
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Alternatively, you can bind a customer to a payment term in the customer details:
+Yu can bind a customer to a payment term in the customer details:
 
 #. Navigate to **Customers > Customers** in the main menu.
 
 #. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
 
-#. Scroll down to the Additional section and select one of the Payment Terms (start typing or click (v) to see the options) or create a new one (click **+**, add a new payment term label in the box that opens, and click **Save**).
+#. Scroll down to the **Additional** section and select one of the existing payment terms (start typing or click (v) to see the options) or create a new one (click **+**, add a new payment term label in the box that opens, and click **Save**).
 
 #. Click **Save** on the top right of the page.
 
-The Customer is now bound to the selected payment term.
+The customer is now bound to the selected payment term.
 
 .. finish
 
