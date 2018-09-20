@@ -12,13 +12,13 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 .. code-block:: bash
 
     $ cd /path/to/application
-    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
+    $ sudo -u www-data bin/console lexik:maintenance:lock --env prod
 
 2. Stop the cron tasks.
 
    .. code-block:: bash
 
-      $ crontab -e -uwww-data
+      $ crontab -e -u www-data
 
    .. note::
 
@@ -47,8 +47,8 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
    .. code-block:: bash
 
-      $ sudo -uwww-data git pull
-      $ sudo -uwww-data git checkout <branch or tag with version to upgrade to>
+      $ sudo -u www-data git pull
+      $ sudo -u www-data git checkout <branch or tag with version to upgrade to>
 
 6. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
@@ -107,7 +107,7 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
     .. code-block:: bash
 
-       $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
+       $ sudo -u www-data bin/console lexik:maintenance:unlock --env prod
 
     .. note::
 

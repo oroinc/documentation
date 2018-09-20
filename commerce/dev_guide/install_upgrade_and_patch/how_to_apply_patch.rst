@@ -13,7 +13,7 @@ For example, platform-1.9.2.patch.
     :linenos:
 
     $ cd /path/to/application
-    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
+    $ sudo -u www-data bin/console lexik:maintenance:lock --env prod
 
 
 **2**. Stop the cron tasks.
@@ -21,7 +21,7 @@ For example, platform-1.9.2.patch.
 .. code-block:: bash
     :linenos:
 
-    $ crontab -e -uwww-data
+    $ crontab -e -u www-data
 
 
 .. note::
@@ -112,7 +112,7 @@ or, as alternative:
 .. code-block:: bash
     :linenos:
 
-    $ crontab -e -uwww-data
+    $ crontab -e -u www-data
 
 Uncomment this line.
 
@@ -126,7 +126,7 @@ Uncomment this line.
 .. code-block:: bash
     :linenos:
 
-    $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
+    $ sudo -u www-data bin/console lexik:maintenance:unlock --env prod
 
 .. note::
 
