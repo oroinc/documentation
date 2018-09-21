@@ -12,7 +12,7 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 .. code-block:: bash
 
     $ cd /path/to/application
-    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
+    $ sudo -uwww-data bin/console lexik:maintenance:lock --env=prod
 
 2. Stop the cron tasks.
 
@@ -75,20 +75,20 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
    .. code-block:: bash
 
-      $ sudo -u www-data bin/console cache:clear --env prod
+      $ sudo -u www-data bin/console cache:clear --env=prod
 
    or, as alternative:
 
    .. code-block:: bash
 
       $ sudo rm -rf var/cache/*
-      $ sudo -u www-data bin/console cache:warmup --env prod
+      $ sudo -u www-data bin/console cache:warmup --env=prod
 
 10. Run the consumer(s).
 
     .. code-block:: bash
 
-       $ sudo -u www-data bin/console oro:message-queue:consume --env prod
+       $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
 
 11. Enable cron.
 
@@ -107,7 +107,7 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
     .. code-block:: bash
 
-       $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
+       $ sudo -uwww-data bin/console lexik:maintenance:unlock --env=prod
 
     .. note::
 
