@@ -18,7 +18,7 @@ Messages are processed by one or more consumers that work in the background. Con
 .. code-block:: bash
     :linenos:
 
-        $ bin/console oro:message-queue:consume --env prod
+        $ bin/console oro:message-queue:consume --env=prod
 
 A message processor can create a job in the database during processing. Jobs allow to monitor processing status, progress,
 a user can interrupt a job. Also, a job can create a set of sub-jobs to split a big task to a set of sub-tasks to run

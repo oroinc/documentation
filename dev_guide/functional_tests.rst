@@ -85,7 +85,7 @@ You need to configure the following parameters for the testing environment:
 
    .. code-block:: bash
    
-       $ bin/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
+       $ bin/console oro:install --env=test --organization-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n --application-url=http://localhost
    
    During installation, the database structure is set up and standard fixtures are loaded.
 
@@ -95,11 +95,11 @@ You need to configure the following parameters for the testing environment:
 
    .. code-block:: bash
 
-         $ php bin/phpunit -c ./ --testsuite "Functional Tests"
+         $ php bin/phpunit -c ./ --testsuite="Functional Tests"
 
    .. code-block:: bash
 
-         $ php bin/phpunit -c ./ --testsuite “Unit Tests"
+         $ php bin/phpunit -c ./ --testsuite=“Unit Tests"
 
 Database Isolation
 ~~~~~~~~~~~~~~~~~~
