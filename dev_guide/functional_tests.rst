@@ -85,7 +85,7 @@ Next, install an application in the test environment:
 
 .. code-block:: bash
 
-    $ app/console oro:install --env test --organization-name Oro --user-name admin --user-email admin@example.com --user-firstname John --user-lastname Doe --user-password admin --sample-data n --application-url http://localhost
+    $ app/console oro:install --env=test --organization-name=Oro --user-name=admin --user-email=admin@example.com --user-firstname=John --user-lastname=Doe --user-password=admin --sample-data=n --application-url=http://localhost
 
 .. versionadded:: 1.10
 
@@ -93,7 +93,7 @@ For platform versions prior to 1.10, you need to run user fixtures upload comman
 
 .. code-block:: bash
 
-     $ app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures ./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
+     $ app/console doctrine:fixture:load --no-debug --append --no-interaction --env=test --fixtures=./vendor/oro/platform/src/Oro/Bundle/TestFrameworkBundle/Fixtures
 
 .. versionadded:: 1.9
 
@@ -115,7 +115,7 @@ After this, you'll be able to run your tests in a command line or IDE.
 
 .. code-block:: bash
 
-      $ php vendor/bin/phpunit -c app/ --testsuite “Unit Tests"
+      $ php vendor/bin/phpunit -c app/ --testsuite=“Unit Tests"
 
 Database Isolation
 ~~~~~~~~~~~~~~~~~~

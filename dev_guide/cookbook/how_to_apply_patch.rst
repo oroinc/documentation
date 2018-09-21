@@ -12,7 +12,7 @@ For example, platform-1.9.2.patch.
 .. code-block:: bash
 
     $ cd /path/to/application
-    $ sudo -uwww-data app/console lexik:maintenance:lock --env prod
+    $ sudo -uwww-data app/console lexik:maintenance:lock --env=prod
 
 
 **2**. Stop the cron tasks.
@@ -62,7 +62,7 @@ Remove the caches.
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console cache:clear --env prod
+    $ sudo -u www-data app/console cache:clear --env=prod
 
 or, as an alternative:
 
@@ -80,20 +80,20 @@ Remove the caches.
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console cache:clear --env prod
+    $ sudo -u www-data app/console cache:clear --env=prod
 
 or, as alternative:
 
 .. code-block:: bash
 
     $ sudo rm -rf app/cache/*
-    $ sudo -u www-data app/console cache:warmup --env prod
+    $ sudo -u www-data app/console cache:warmup --env=prod
 
 **9**. Run the consumer(s).
 
 .. code-block:: bash
 
-    $ sudo -u www-data app/console oro:message-queue:consume --env prod
+    $ sudo -u www-data app/console oro:message-queue:consume --env=prod
 
 **10**. Enable cron.
 
@@ -111,7 +111,7 @@ Uncomment this line.
 
 .. code-block:: bash
 
-    $ sudo -uwww-data app/console lexik:maintenance:unlock --env prod
+    $ sudo -uwww-data app/console lexik:maintenance:unlock --env=prod
 
 .. note::
 
