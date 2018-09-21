@@ -157,7 +157,7 @@ it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
 
-    $ app/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
+    $ app/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod
 
 .. caution::
 
