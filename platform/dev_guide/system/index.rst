@@ -19,3 +19,4 @@ application and its system components (operational and external):
    websockets/index
    cron_jobs/index
    message_queue/index
+   file_storage/index
