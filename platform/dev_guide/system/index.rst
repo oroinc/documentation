@@ -11,6 +11,7 @@ application and its system components (operational and external):
 * :doc:`/dev_guide/system/message_queue/index` - enables robust loosely coupled communication between system components to allow performing the heavy or high important jobs asynchroniously or in the background mode.
 * :doc:`/dev_guide/system/file_storage/index` - enables filesystem abstraction layer
 * :doc:`/dev_guide/system/logging/index` - tools that allows to control and recover the application in abnornal situations.
+* :doc:`/dev_guide/system/database/index` - enables `RDMBS <https://en.wikipedia.org/wiki/Relational_database_management_system>`_ management system in Oro applications
 
 .. toctree::
    :hidden:
@@ -23,3 +24,4 @@ application and its system components (operational and external):
    message_queue/index
    file_storage/index
    logging/index
+   database/index
