@@ -111,6 +111,8 @@ Set host, port and path (optional) for WebSocket server in the parameters.yml fi
     websocket_backend_host:  "*"
     websocket_backend_port:  8080
     websocket_backend_path:  ""
+    websocket_backend_transport: "tcp"
+    websocket_backend_ssl_context_options: {}
 
 Configure a Secure (SSL/WSS) Connection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -127,6 +129,26 @@ Set WebSocket settings in the parameters.yml file:
     websocket_backend_host:  "*"
     websocket_backend_port:  8080
     websocket_backend_path:  ""
+    websocket_backend_transport: "tcp"
+    websocket_backend_ssl_context_options: {}
+
+If you want to make backend work under secure connection as well, change the corresponding parameters too:
+
+.. code-block:: yaml
+    
+   websocket_backend_port: 443
+   websocket_backend_path: "ws"
+   websocket_backend_transport: "ssl"
+
+If you use untrusted SSL certificate, configure websocket_backend_ssl_context_options parameter with:
+
+ .. code-block:: yaml
+     
+    websocket_backend_ssl_context_options:
+    verify_peer: false
+    verify_peer_name: false
+
+.. warning:: Please keep in mind that having peer verification disabled is not recommended in production.
 
 Since WebSocket server is running as a service, there are three host:port pairs for configuration:
 
