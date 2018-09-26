@@ -116,7 +116,7 @@ Since the order amount exceeds the threshold of $5000, manager approval is requi
 
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_RequestApproval.png
 
-Order Approval will remain pending until the manager aproves it.
+Order Approval will remain pending until the manager approves it.
 
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_ApprovalPending.png
 

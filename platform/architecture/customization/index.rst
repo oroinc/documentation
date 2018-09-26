@@ -1,3 +1,5 @@
+.. _architecture--customization--customize:
+
 Oro Application Customization
 =============================
 

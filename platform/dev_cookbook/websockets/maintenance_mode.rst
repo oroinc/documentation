@@ -21,3 +21,9 @@ who had their pages open when the site switched to the maintenance mode will get
 a WebSocket message informing that the maintenance mode is on. The website will
 show a flash message and disable all UI elements on the opened page.
 
+To turn off the maintenance mode, run the following command:
+
+.. code-block:: bash
+
+   bin/console lexik:maintenance:unlock --env=prod
+

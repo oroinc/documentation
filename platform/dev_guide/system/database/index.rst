@@ -92,7 +92,7 @@ MySQL
 
   .. code:: text
 
-     # mysqlcheck -u root -p --auto-repair --check --optimize databasename
+     mysqlcheck -u root -p --auto-repair --check --optimize databasename
 
 * Use **mysqltuner** tool to review MySQL installation quickly and make adjustments to increase performance and stability.
 
@@ -100,8 +100,8 @@ MySQL
 
   .. code:: text
 
-     # wget http://mysqltuner.pl mysqltuner.pl
-     # ./mysqltuner.pl
+     wget http://mysqltuner.pl mysqltuner.pl
+     ./mysqltuner.pl
 
 PostgreSQL
 ~~~~~~~~~~
@@ -116,8 +116,8 @@ PostgreSQL
 
   .. code:: text
 
-     # wget https://postgresqltuner.pl postgresqltuner.pl
-     # ./postgresqltuner.pl
+     wget https://postgresqltuner.pl postgresqltuner.pl
+     ./postgresqltuner.pl
 
 * PostgreSQL has a highly recommended feature called **autovacuum** aimed at automating the execution of VACUUM and ANALYZE commands.
 
@@ -155,7 +155,7 @@ When metadata caching is turned on, then no changes to an entity will be seen by
 
 .. code:: text
 
-   # bin/console doctrine:cache:clear-metadata
+   bin/console doctrine:cache:clear-metadata
 
 Hydrations
 ^^^^^^^^^^

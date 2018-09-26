@@ -31,7 +31,7 @@ For more information about the Message Queues concept, see the following externa
 
 * `What is Message Queue <http://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002620_.htm>`_,
 * `Message Queue Benefits <https://www.iron.io/top-10-uses-for-message-queue/>`_ (most of them are applicable to Oro Message Queue Component)
-* `Rabbit MQ Introduction <https://www.rabbitmq.com/tutorials/tutorial-one-php.html>`_.
+* `RabbitMQ Introduction <https://www.rabbitmq.com/tutorials/tutorial-one-php.html>`_.
 
 How It Works
 ------------

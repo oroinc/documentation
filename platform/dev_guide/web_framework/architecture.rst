@@ -13,7 +13,7 @@ Architecture Principles of Oro Applications
 Symfony Role in OroPlatform
 ---------------------------
 
-.. note:: We’re using `Symfony Framework <https://symfony.com/>`_ v. 3.4 LTS in Oro Applications v.3.x.
+.. note:: We are using `Symfony Framework <https://symfony.com/>`_ v. 3.4 LTS in Oro Applications v.3.x.
 
 Currently Symfony is the most mature PHP framework that provides a wide range of functions that are typical for any web
 application. Symfony takes care of numerous tasks, for instance:
@@ -47,7 +47,7 @@ This flow in Oro applications is similar to the flows of other `Symfony applicat
 
 1. A client sends an HTTP request to the application.
 2. The request is executed by the application's front controller (index.php) file which takes a request, boots the application and passes the request information to it.
-3. Internally, te application uses registered routes, controllers, event dispatchers and event subscribers to process the request and create a response object.
+3. Internally, the application uses registered routes, controllers, event dispatchers and event subscribers to process the request and create a response object.
 4. The application turns the response object into the text headers and content which are sent back to the client.
 
 .. image:: /dev_guide/img/web_framework/request-flow.png
@@ -105,9 +105,9 @@ In Oro applications, for the bundle to be registered and enabled, it is sufficie
 
 .. note:: **Using Symfony Flex**
 
-    In the 4th version of the Symfony Framework, the default way to manage bundles is by using Symphony Flex.
+    In the 4th version of the Symfony Framework, the default way to manage bundles is by using Symfony Flex.
 
-    As mentioned at the beginning of this article, current versions of Oro applications (v.3.x) use Symphony v.3.4.
+    As mentioned at the beginning of this article, current versions of Oro applications (v.3.x) use Symfony v.3.4.
     Fabien Potensier `recommends to consider Flex as an alpha up to 4th versions of Symfony <https://medium.com/@fabpot/fabien-potencier-4574622d6a7e>`_. Consequently, Oro applications of the current version do not use Flex as the main way to manage the bundles but we intend to introduce it after switching to the 4.4-th version of Symfony Framework (the first LTS version of the 4th generation of Symfony framework).
 
 .. However, you have the technical possibility to switch to using Flex in your custom applications. Since Symfony
@@ -204,7 +204,7 @@ business applications.
 .. note:: More information on this is available in the next section of this guide which is dedicated to OroPlatform and its Security System.
 
 However, this RBAC system of Oro applications widely uses
-`Symfony Security Components <https://symfony.com/doc/3.4/components/security.html>`_. It is, therefore, important that you  familiarize yourself with them to ba able to work with Oro applications.
+`Symfony Security Components <https://symfony.com/doc/3.4/components/security.html>`_. It is, therefore, important that you  familiarize yourself with them to be able to work with Oro applications.
 
 .. _dev-guide-application-web-framework-symfony-databases-management-doctrine-orm:
 

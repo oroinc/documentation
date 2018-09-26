@@ -73,7 +73,7 @@ Change an Existing Functionality
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to change the existing behavior of Oro application, please refer to the
-:ref:`Oro Application Customization <architecture--customization--how-to-customize>` section of the Architecture Guide
+:ref:`Oro Application Customization <architecture--customization--customize>` section of the Architecture Guide
 for the guidance.
 
 Create and Publish an Extension

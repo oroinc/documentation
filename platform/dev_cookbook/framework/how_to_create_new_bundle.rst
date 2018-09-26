@@ -33,7 +33,6 @@ To enable the bundle:
 1. Create a **Resources/config/oro/bundles.yml** file with the following content:
 
     .. code-block:: yaml
-
         :linenos:
 
         # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml

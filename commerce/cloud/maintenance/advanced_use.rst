@@ -121,7 +121,7 @@ Please use the following conventions to design your sanitize.method.update strat
 
       columns: [{name: street, method: md5}, {name: city, method: md5} ]
 
-* Provide the column name in the name node. Use the following sanitization methods/strategies (ensure thay are reasonably matching the column type):
+* Provide the column name in the name node. Use the following sanitization methods/strategies (ensure they are reasonably matching the column type):
 
   * md5 — Replaces the original string with the string hash
   * email — Replaces the email with the sanitized version of the email. When the sanitize.custom_email_domain configuration parameter is provided in the deployment.yml or <oroapplication>.yml files, the email strategy replaces the real email domain with the custom one provided as sanitize.custom_email_domain. If the custom domain is not provided, the sanitized email will be generated randomly. For example, sdfsdf@dfdfdf.test

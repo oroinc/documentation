@@ -79,7 +79,7 @@ installed extensions:
 .. code-block:: bash
     :linenos:
 
-    $ php bin/console oro:platform:update --env=prod --force
+    $ php bin/console oro:platform:update --env=prod 
 
 Finally, make sure to properly clean the cache:
 

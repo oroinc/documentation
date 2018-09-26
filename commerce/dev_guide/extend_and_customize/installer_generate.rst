@@ -19,7 +19,7 @@ To create an installer for AcmeBundle:
    .. code-block:: bash
       :linenos:
 
-      bin/console doctrine:schema:update --force
+      bin/console doctrine:schema:update 
 
 3. Generate an installer and save it to the AcmeBundleInstaller.php:
 
