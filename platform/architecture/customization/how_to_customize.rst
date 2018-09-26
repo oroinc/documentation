@@ -1,6 +1,5 @@
 .. _architecture--customization--how-to-customize:
 
-
 How to Customize Oro Application
 ================================
 

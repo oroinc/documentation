@@ -28,8 +28,8 @@ For more information, see the following external resources:
    Queue <http://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002620_.htm>`__
 -  `Message Queue
    Benefits <https://www.iron.io/top-10-uses-for-message-queue/>`__
-   (most of them are applicable for Oro Message Queue Component)
--  `Rabbit MQ
+   (most of them are applicable to Oro Message Queue Component)
+-  `RabbitMQ
    Introduction <https://www.rabbitmq.com/tutorials/tutorial-one-php.html>`__
 
 Using Message Queue in Oro Application
