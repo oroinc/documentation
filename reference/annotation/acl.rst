@@ -118,12 +118,12 @@ The type of resource that should be protected. Possible values are:
 
         When using the ``action`` type, it is only possible to grant or deny access to a user for a
         given action. If you want to grant them access for a certain action only for a subset of
-        the data, you can configure ACLs for each object indivually by setting the ``action``
+        the data, you can configure ACLs for each object individually by setting the ``action``
         option to ``entity`` and then control the allowed action with the `permission`_ option.
 
 ``entity``
 
-    When ``type`` is set to entity, each domain object can be protected indivually which means that
+    When ``type`` is set to entity, each domain object can be protected individually which means that
     access can be granted based on a particular domain object.
 
 .. _`ParamConverter`: http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html
