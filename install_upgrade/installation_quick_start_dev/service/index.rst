@@ -1,3 +1,7 @@
+:orphan:
+
+.. comment: Should remain orphan to stay away from the left panel menu on the website
+
 Related Information
 -------------------
 
