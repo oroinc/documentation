@@ -1,7 +1,7 @@
 .. _dev-cookbook-framework:
 
-Application Framework Reciepes
-==============================
+Application Framework Recipes
+=============================
 
 .. toctree::
     :includehidden:

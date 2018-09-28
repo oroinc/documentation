@@ -33,10 +33,3 @@ Clone |oro_app_name| source code to */usr/share/nginx/html/oroapp* folder:
 .. _System Requirements: https://oroinc.com/orocrm/doc/current/system-requirements
 .. _Installation via UI: https://oroinc.com/orocrm/doc/current/install-upgrade/installation/installation-via-ui
 
-.. toctree::
-   :includehidden:
-   :titlesonly:
-   :maxdepth: 1
-   :hidden:
-
-   service/index

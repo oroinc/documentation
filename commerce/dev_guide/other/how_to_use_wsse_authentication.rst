@@ -4,7 +4,7 @@
     single: Security; WSSE Authentication
     single: WSSE Authentication
 
-How to use WSSE authentication
+How to use WSSE Authentication
 ==============================
 
 Overview
@@ -16,7 +16,7 @@ It's based on the `EscapeWSSEAuthenticationBundle`_ that covers most cases from 
 .. _EscapeWSSEAuthenticationBundle: https://github.com/escapestudios/EscapeWSSEAuthenticationBundle
 .. _specs: http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf
 
-API key
+API Key
 -------
 
 An *API key* has been added to the platform in order to prevent usage of regular (raw) user passwords in third party software.
@@ -26,7 +26,7 @@ It can be generated for every user on the *"user view"* page by users that have 
 
 This key should be used for ``PasswordDigest`` generation on the client side.
 
-Header generation
+Header Generation
 -----------------
 
 To generate an authentication header the console command ``oro:wsse:generate-header`` should be used.
@@ -79,7 +79,7 @@ To generate an authentication header with PHP:
         $created
     );
 
-Header and nonce lifetime
+Header and Nonce Lifetime
 -------------------------
 
 The generated header has a lifetime of 3600s and it expires if not used during this time.

@@ -35,11 +35,3 @@ Clone |oro_app_name| source code to the */usr/share/nginx/html/oroapp* folder:
 .. _System Requirements: https://oroinc.com/b2b-ecommerce/doc/current/system-requirements
 .. _Installation via UI: https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation/installation-via-UI
 
-
-.. toctree::
-   :includehidden:
-   :titlesonly:
-   :maxdepth: 1
-   :hidden:
-
-   service/index
