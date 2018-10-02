@@ -54,7 +54,8 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
       </div>
    </div>
-   <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
+
+  <hr style="border-top: 1px dashed #fafafa;border-bottom: none">
    <div class="guideline">
       <div class="guideline__item" id="sales_marketing" >
           <div style="text-align: center">

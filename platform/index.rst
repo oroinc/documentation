@@ -1,12 +1,58 @@
 Welcome to OroPlatform Documentation
 ====================================
 
-.. note:: OroPlatform comes in two editions, Community Edition (CE) and Enterprise Edition (EE) and some features described in the documentation are applicable only to EE.
-
-This section provides links to the online documentation for the latest OroPlatform release.
+OroPlatform is an open-source platform made for rapid application development of enterprise web applications. It is the backbone of `OroCRM <https://oroinc.com/orocrm/>`__ and `OroCommerce <https://oroinc.com/b2b-ecommerce/doc/current>`__ and can be used as a blueprint for any custom business application development.
 
 .. raw:: html
-  
+
+   <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
+   <div class="guideline">
+
+    <div class="guideline__item" >
+       <div style="text-align: center">
+          <a href="current/install_upgrade">
+             <h3><i class="guideline__icon fa fa-cogs"></i><br>
+             Installation Guide</h3></a>
+       </div>
+       <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+          <ul class="guideline__list">
+                <li><a href="current/install_upgrade/installation-quick-start-dev">OroPlatform Installation</a></li>
+                <li><a href="current/install_upgrade/reinstall">Reinstallation and Troubleshooting Hints</a></li>
+                <li><a href="current/install_upgrade/upgrade">Upgrading to the Newer Version</a></li>
+                <li><a href="current/install_upgrade/vm">Running Oro Application in VirtualBox</a></li>
+              </ul>
+         </div>
+      </div>
+
+      <div class="guideline__item" >
+         <div style="text-align: center">
+            <a href="current/architecture">
+               <h3><i class="guideline__icon fa fa-linode"></i><br>
+               Architecture Guide</h3></a>
+         </div>
+         <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+            <ul class="guideline__list">
+                  <li><a href="current/architecture/tech-stack">Technology Stack</a></li>
+                  <li><a href="current/architecture/oro-php-app-structure">Oro PHP Application Structure</a></li>
+                  <li><a href="current/architecture/customization">Oro Application Customization</a></li>
+              </ul>
+         </div>
+      </div>
+
+   <div class="guideline__item" >
+          <div style="text-align: center">
+            <h3><i class="guideline__icon fa fa-code-fork"></i><br>Developer Guide</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+               <ul class="guideline__list">
+                   <li><a href="current/dev-guide/web-framework">Application Framework</a></li>
+                   <li><a href="current/dev-guide/system">System Components</a></li>
+                   <li><a href="current/dev-guide/dev-cookbook">Developer Cookbook</a></li>
+                </ul>
+          </div>
+      </div>
+ </div>
+
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none">
    <div class="guideline">
       <div class="guideline__item" >
