@@ -1,3 +1,5 @@
+.. _how-to-use-wsse-authentication:
+
 .. index::
     single: Security; WSSE Authentication
     single: WSSE Authentication
