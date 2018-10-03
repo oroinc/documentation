@@ -1,3 +1,5 @@
+.. _dev-cookbook:
+
 The Oro Cookbook
 ================
 

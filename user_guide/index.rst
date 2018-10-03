@@ -1,3 +1,5 @@
+.. _user-guide-into:
+
 User Guide: Getting Started
 ===========================
 
