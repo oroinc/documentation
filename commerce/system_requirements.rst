@@ -78,7 +78,12 @@ Oro applications are compatible with most web servers with PHP support, but the 
 | *Process Control* | * `Supervisor`_ or alternative                    |
 +-------------------+---------------------------------------------------+
 
+.. note::
+
+    It is recommended to disable `phar` PHP extension to reduce the risk of `PHP unserialization vulnerability`_.
+
 .. _`here`: https://getcomposer.org/doc/articles/versions.md#tilde-version-range-
+.. _`PHP unserialization vulnerability`: https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf
 
 Enterprise Edition Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
