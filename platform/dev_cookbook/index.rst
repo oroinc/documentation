@@ -12,3 +12,4 @@ Developer Cookbook
     websockets/index
     cron/index
     mq/index
+    layouts/index
