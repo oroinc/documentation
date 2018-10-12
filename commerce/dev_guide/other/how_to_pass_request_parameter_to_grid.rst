@@ -5,7 +5,7 @@
 
 .. _how-to-pass-request-parameter-to-the-grid:
 
-How to pass request parameter to the grid
+How to Pass Request Parameter to the Grid
 =========================================
 
 In some cases, you need to pass parameters from the request to the grid.
@@ -35,7 +35,7 @@ For example:
 
 Our goal is to set :contactId parameter with the value from the request.
 
-Solution 1: Grid Parameter binding
+Solution 1: Grid Parameter Binding
 ----------------------------------
 
 The easiest way that should be sufficient for most situations is to use the parameter binding option of the datasource
@@ -137,7 +137,7 @@ The controller receives a contact entity and passes it to the view:
         {{ dataGrid.renderGrid('acme-tasks-grid', {relatedContactId: contact.id}) }}
     </div>
 
-Solution 2. Create custom event listener
+Solution 2. Create Custom Event Listener
 ----------------------------------------
 
 If the first example does not work for you for some reason (datasource does not support parameters binding,

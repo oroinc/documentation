@@ -34,11 +34,3 @@ the |oro_app_name| application (for example, 1.6, 1.6.8, 1.6.9, etc.).
 .. _System Requirements: https://oroinc.com/b2b-ecommerce/doc/current/system-requirements
 .. _Installation via UI: https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation/installation-via-UI
 
-
-.. toctree::
-   :includehidden:
-   :titlesonly:
-   :maxdepth: 1
-   :hidden:
-
-   service/index

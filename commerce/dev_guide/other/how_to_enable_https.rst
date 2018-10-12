@@ -3,14 +3,14 @@
     single: HTTPS
     single: HTTPS; Enable HTTPS
 
-How to enable https
+How to Enable https
 ===================
 
 *Used application: OroPlatform 1.7*
 
 There are two ways to enable HTTPS:
 
-Configuring routes
+Configuring Routes
 ------------------
 
 If you want to secure some routes and make sure that they are always accessed via the HTTPS protocol,
@@ -26,7 +26,7 @@ you can add the ``schemes`` parameter to the ``app/config/routing.yml`` file.
         schemes:  [https]
 
 
-Configuring security config
+Configuring Security Config
 ---------------------------
 
 As an alternative, you have to add the ``requires_channel`` option to the ``app/config/security.yml`` file:
