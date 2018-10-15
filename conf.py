@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# The Oro Platform documentation build configuration file, created by
+# The OroPlatform documentation build configuration file, created by
 # sphinx-quickstart on Fri Mar 28 09:32:08 2014.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'The Oro Platform'
+project = u'The OroPlatform'
 copyright = u'2017, The Oro Team'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -208,7 +208,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'TheOroPlatform.tex', u'The Oro Platform Documentation',
+  ('index', 'TheOroPlatform.tex', u'The OroPlatform Documentation',
    u'The Oro Team', 'manual'),
 ]
 
@@ -238,7 +238,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'theoroplatform', u'The Oro Platform Documentation',
+    ('index', 'theoroplatform', u'The OroPlatform Documentation',
      [u'The Oro Team'], 1)
 ]
 
@@ -252,7 +252,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'TheOroPlatform', u'The Oro Platform Documentation',
+  ('index', 'TheOroPlatform', u'The OroPlatform Documentation',
    u'The Oro Team', 'TheOroPlatform', 'One line description of project.',
    'Miscellaneous'),
 ]
@@ -270,7 +270,7 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'The Oro Platform'
+epub_title = u'The OroPlatform'
 epub_author = u'The Oro Team'
 epub_publisher = u'The Oro Team'
 epub_copyright = u'2014, The Oro Team'
