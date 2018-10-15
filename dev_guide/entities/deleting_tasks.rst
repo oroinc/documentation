@@ -89,7 +89,7 @@ OroSoapBundle which comes with basic features:
 .. note::
 
     The name of action method is important. The FOSRestBundle will use it to ensure that the route
-    will only be matched when ``DELETE`` requests are issued (which are dispatched by the OroPlatform
+    will only be matched when ``DELETE`` requests are issued (which are dispatched by OroPlatform
     when a row is to be deleted).
 
 .. _cookbook-entity-delete-routing:
@@ -147,6 +147,6 @@ your data grid configuration:
 
 .. note::
 
-    It is important to use the ``delete`` value for the ``type`` option so that the OroPlatform
+    It is important to use the ``delete`` value for the ``type`` option so that OroPlatform
     issues an HTTP ``DELETE`` request when the trash bin icon is clicked (instead of a regular
     ``GET`` request).

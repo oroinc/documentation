@@ -141,7 +141,7 @@ you can install it later by running the following command:
    sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
    exit
 
-**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCRM after installation, you can:
+**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in OroCRM after installation, you can:
 
 * :ref:`Execute custom migrations <execute-custom-migrations>`, and
 

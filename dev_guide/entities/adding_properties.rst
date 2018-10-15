@@ -101,7 +101,7 @@ The important part in this migration (which is different from common Doctrine mi
 
 All options nested under this key are handled outside of the usual Doctrine migration workflow.
 
-When the EntityExtendBundle of the OroPlatform finds the ``extend`` key, it generates an intermediate class with getters and setters for the defined properties, thus making them accessible from every part of the code. The intermediate class is generated automatically based on the configured data when the application cache is warmed up.
+When the EntityExtendBundle of OroPlatform finds the ``extend`` key, it generates an intermediate class with getters and setters for the defined properties, thus making them accessible from every part of the code. The intermediate class is generated automatically based on the configured data when the application cache is warmed up.
 
 
 The ``owner`` attribute can have the following values:

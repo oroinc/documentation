@@ -28,7 +28,7 @@ Search Index
 +-----------+------------------------------------------------------------+
 
 The ``search.yml`` file is used to configure how your entities are indexed to make them usable by
-the internal search engine of the OroPlatform. A fully working example can look like this:
+the internal search engine of OroPlatform. A fully working example can look like this:
 
 .. code-block:: yaml
     :linenos:

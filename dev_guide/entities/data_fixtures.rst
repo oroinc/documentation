@@ -2,7 +2,7 @@ How to Load Data Fixtures
 =========================
 
 Before your application contains an interface to create new tasks, you need to load them
-programmatically. In the OroPlatform, this can be done by creating classes that are placed in the
+programmatically. In OroPlatform, this can be done by creating classes that are placed in the
 ``Migrations/Data/ORM`` subdirectory of your bundle and that implement the ``FixtureInterface``:
 
 .. code-block:: php
