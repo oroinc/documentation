@@ -76,4 +76,4 @@ How to Upload Media Files to the Server?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Upload media archive to the server and extract it.
-#. Copy files via the `www-data` user to the `/mnt/ocom/app/persistent_shared/` path into the specific subdirectory: `app/attachment`, `app/import_export`, `web/media`, or `web/uploads`.
+#. Copy files via the `www-data` user to the `/mnt/ocom/app/persistent_shared/` path into the specific subdirectory: `var/attachment`, `var/import_export`, `public/media`, or `public/uploads`.

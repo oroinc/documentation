@@ -43,7 +43,7 @@ Please refer to the `oro:install` command help for more information on the param
    .. code-block:: none
        :linenos:
 
-       sudo -u www-data php app/console --env=prod oro:install --help
+       sudo -u www-data php bin/console --env=prod oro:install --help
 
 Installation Parameters Provided in the Deploy Command
 """"""""""""""""""""""""""""""""""""""""""""""""""""""

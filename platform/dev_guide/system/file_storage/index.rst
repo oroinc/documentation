@@ -74,7 +74,7 @@ To store and retrieve the files, create a file manager for FTP storage in three 
    .. code-block:: yaml
        :linenos:
 
-        # app/config/config.yml
+        # config/config.yml
         knp_gaufrette:
             adapters:
                 acme_ftp_server:
@@ -91,7 +91,7 @@ To store and retrieve the files, create a file manager for FTP storage in three 
    .. code-block:: yaml
        :linenos:
 
-        # app/config/config.yml
+        # config/config.yml
         knp_gaufrette:
             adapters:
                 acme_ftp_server:

@@ -37,11 +37,11 @@ With <oroapplication>.yml you can rewrite the following nodes.
 
     deployment:
         writeable_path_for_group:
-            - { path: 'web/css', method: recursive }
-            - { path: 'web/js', method: recursive }
-            - { path: 'web/sitemaps', method: recursive }
-            - { path: 'web/robots.txt' }
-            - { path: 'web' }
+            - { path: 'public/css', method: recursive }
+            - { path: 'public/js', method: recursive }
+            - { path: 'public/sitemaps', method: recursive }
+            - { path: 'public/robots.txt' }
+            - { path: 'public' }
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 

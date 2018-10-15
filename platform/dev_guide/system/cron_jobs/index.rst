@@ -32,13 +32,13 @@ To run a set of commands from your application regularly, configure your system 
 
   .. code-block:: bash
 
-      */1 * * * * /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
+      */1 * * * * /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
 
   .. note:: Some OS flavors require a username (usually root) in the crontab entry:
 
       .. code-block:: bash
 
-          */1 * * * * root /path/to/php /path/to/app/console oro:cron --env=prod > /dev/null
+          */1 * * * * root /path/to/php /path/to/bin/console oro:cron --env=prod > /dev/null
 
 * For Windows, use the Control Panel to configure the Task Scheduler to do the same.
 
