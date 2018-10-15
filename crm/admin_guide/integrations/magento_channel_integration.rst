@@ -7,7 +7,7 @@ Integration with Magento
 OroCRM supports out of the box integration with Magento.
 
 The integration enables loading  data from and to a Magento-based eCommerce store ("Magento store") and processing it in
-the OroCRM.
+OroCRM.
 This article describes how to define and edit the integration and synchronization settings.
 
 .. hint::
@@ -43,11 +43,11 @@ Define a New Role
 1. Once logged in, go to the **System > Web Services > SOAP/XML - RPC - Roles**
 
    .. image:: ../img/magento_integration/magento_01.png
-  
+
 2. On the table of all roles, click **Add New Role**
 
    .. image:: ../img/magento_integration/magento_02.png
- 
+
 3. Define the Role Name that corresponds to your eCommerce store.
 
    .. image:: ../img/magento_integration/magento_03.png
@@ -55,7 +55,7 @@ Define a New Role
 4. Click **Save Role**. The role will be saved and you will get to the page of the role.
 
 5. Click  the **Role Resources** on the left.
-  
+
    .. image:: ../img/magento_integration/magento_04.png
 
 6. In the Roles Resources section, set the **Resource Access** field value to **All** and save the role.
@@ -75,7 +75,7 @@ Define a New User
    .. csv-table::
      :header: "Field", "Description"
      :widths: 10, 30
-    
+
      "**User Name**","The name used for login into the account."
      "**First Name**","The first part of the name displayed in the system to refer to the user."
      "**Last Name**","The last part of the name displayed in the system to refer to the user."
@@ -94,7 +94,7 @@ Define a New User
    .. image:: ../img/magento_integration/magento_07.png
 
 7. Select the role that you have created for your store.
-  
+
    .. image:: ../img/magento_integration/magento_08.png
 
 8. Click **Save User** on the top right.
@@ -105,7 +105,7 @@ Define a New User
 Enable WSDL Cache
 ^^^^^^^^^^^^^^^^^
 
-In order to accelerate the performance of the initial sync, please make sure WSDL cache is enabled in the Magento configuration. 
+In order to accelerate the performance of the initial sync, please make sure WSDL cache is enabled in the Magento configuration.
 
 To enable the cache:
 
@@ -122,8 +122,8 @@ To enable the cache:
    .. hint::
 
      The CSV support is not supported for the initial import of Magento data to OroCRM, but if you have concerns regarding
-     the impact the import might have on the production environment, you can set up a staging instance with the latest 
-     production data, run initial synchronization on the environment and update the integration URL to production once it 
+     the impact the import might have on the production environment, you can set up a staging instance with the latest
+     production data, run initial synchronization on the environment and update the integration URL to production once it
      has been done.
 
 On the Oro Side
@@ -134,7 +134,7 @@ Create Magento Integration
 
 1. To create integration with Magento, create a channel of Magento type as described in the :ref:`Channels Management <user-guide-channel-guide-create>` guide.
 2. As soon as the channel type is set to **Magento**, a mandatory **Integration** field  will appear in the **General** section.
-  	  
+
    .. image:: ../img/magento_integration/configure_integration.png
 
 3. Click the **Configure integration** link. The form will emerge.
@@ -228,14 +228,14 @@ synchronization manually from OroCRM:
 
 1. Go to **System > Integrations > Manage Integrations**.
 2. Click the required integration on the list of integrations to open its page.
-3. Click **Schedule Sync**. 
+3. Click **Schedule Sync**.
 
    .. image:: ../img/magento_integration/MagentoIntegrationEdit.png
 
 4. The following note emerges:
 
    *A sync* :ref:`job <book-job-execution>` *has been added to the queue. Check progress*.
-  
+
    .. image:: ../img/magento_integration/MagentoIntegrationNote.png
 
    This indicates data is being synchronized. You can click **Check progress** link to see the synchronization status.
@@ -252,6 +252,6 @@ After successful synchronization, details of the Magento entity records defined 
 
 .. |Services| image:: ../img/magento_integration/services.png
    :align: middle
-   
+
 .. |EnableWSDL| image:: ../img/magento_integration/enable_wsdl.png
    :align: middle

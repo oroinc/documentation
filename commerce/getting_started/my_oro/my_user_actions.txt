@@ -335,7 +335,7 @@ Reset Your Password
 .. image:: /user_guide/img/getting_started/my_oro/my_user_resetpassword.png
 
 .. warning::
-	You will be immediately logged out of the OroCRM and will not be able to log ib before your password is changed.
+    You will be immediately logged out of OroCRM and will not be able to log in until your password is changed.
 
 See Also
 --------

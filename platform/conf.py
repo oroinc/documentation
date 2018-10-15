@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'The OroPlatform'
+project = u'OroPlatform'
 copyright = u'2017, The Oro Team'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -270,7 +270,7 @@ texinfo_documents = [
 # -- Options for Epub output ---------------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'The OroPlatform'
+epub_title = u'OroPlatform'
 epub_author = u'The Oro Team'
 epub_publisher = u'The Oro Team'
 epub_copyright = u'2014, The Oro Team'

@@ -6,7 +6,7 @@ Overview
 
 You need to provide detailed documentation for your API resources because it is an important part of API and it could help a lot to developers to use your API.
 
-The OroPlatform collects documentation for API resources from several sources:
+OroPlatform collects documentation for API resources from several sources:
 
 -  The documentation can be written in a `configuration file <./configuration.rst>`__.
 -  A `Markdown <https://daringfireball.net/projects/markdown/>`__ document. The detailed information you can find bellow in this document.
@@ -21,7 +21,7 @@ The most priority source is the configuration file. The documentation provided t
             Acme\Bundle\AppBundle\Entity\AcmeEntity:
                 documentation_resource: '@AcmeAppBundle/Resources/doc/api/acme_entity.md'
 
-If the documentation was not found neither the configuration file nor the documentation file, the OroPlatform will try to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files and, actually, they are the best way to document fields, because these descriptions can be used not only in API. Here is an example of a translation file contains descriptions for entities and fields:
+If the documentation was not found neither the configuration file nor the documentation file, OroPlatform will try to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files and, actually, they are the best way to document fields, because these descriptions can be used not only in API. Here is an example of a translation file contains descriptions for entities and fields:
 
 .. code:: yaml
 

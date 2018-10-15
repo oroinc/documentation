@@ -30,7 +30,7 @@ The ``system_configuration.yml`` file defines all the configuration options a bu
 can be modified by the user in the system settings menu.
 
 The following example shows a complete working configuration taken from the
-`system_configuration.yml file`_ of the `ActivityListBundle`_ from the OroPlatform:
+`system_configuration.yml file`_ of the `ActivityListBundle`_ from OroPlatform:
 
 .. code-block:: yaml
     :linenos:

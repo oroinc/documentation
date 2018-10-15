@@ -67,7 +67,7 @@ is only responsible for protecting access to a certain kind of objects.
 **type**: ``string``
 
 A human-readable label that can be presented to the users. For example, this label is shown in the
-role management section of the OroPlatform.
+role management section of the OroPlatform UI.
 
 ``permission``
 --------------

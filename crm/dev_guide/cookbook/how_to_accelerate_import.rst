@@ -32,7 +32,7 @@ Run Import Operation from the Command Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities the command line is your best choice. The OroPlatform provides the CLI command ``oro:import:csv``
+or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:csv``
 that allows to import records from the specified CSV file.
 
 .. code-block:: bash
@@ -140,7 +140,7 @@ import can be performed without it. To do so, start the import command in no int
 Disable Optional Listeners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-With the OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
+With OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
 command shows the list of all such listeners:
 
 .. code-block:: bash
@@ -170,7 +170,7 @@ it will disable all optional listeners. Here is an example:
 Write Custom Import Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
+OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
 to be used as the default one. This strategy automatically handles field types, relations etc.
 However, all this functionality significantly slows down the import process and might perform
 operations and requests that are not required for some specific cases.
