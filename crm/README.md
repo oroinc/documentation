@@ -23,7 +23,7 @@ End user oriented documentation that explains how to administer and configure pl
 
 ### [Community Guide](https://www.oroinc.com/doc/orocrm/current/community)
 
-Learn about our development process and how you can contribute to the Oro Platform.
+Learn about our development process and how you can contribute to the OroPlatform.
 
 ## Build Documentation in Local Environment
 

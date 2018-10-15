@@ -1,7 +1,7 @@
 How to Import and Export Entities
 =================================
 
-You have to create some services and add some configuration to make Oro Platform capable to export
+You have to create some services and add some configuration to make OroPlatform capable to export
 your custom entities as CSV files and to be able to load data from CSV files for your entities.
 
 All the configuration described below will be added to the ``importexport.yml`` file in the
