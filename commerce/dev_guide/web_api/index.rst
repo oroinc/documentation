@@ -1291,7 +1291,7 @@ Example. Retrieve a Text Representation of the Resource
 Create and Update Related Resources Together with a Primary API Resource
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Sometimes it is required to create or update related resources while creating or updating the primary API resource. Especially often such a need arises when you create a complex API resource object via a single API request. Unfortunately, the JSON API specification does not describe how to do this. The solution proposed by the Oro Platform is to use the **included** section of a JSON request body. Please take a look at the following example:
+Sometimes it is required to create or update related resources while creating or updating the primary API resource. Especially often such a need arises when you create a complex API resource object via a single API request. Unfortunately, the JSON API specification does not describe how to do this. The solution proposed by OroPlatform is to use the **included** section of a JSON request body. Please take a look at the following example:
 
 **Request**
 

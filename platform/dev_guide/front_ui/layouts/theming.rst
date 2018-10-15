@@ -6,7 +6,7 @@ Theming
 A **layout theme** is a collection of files that declares a visual
 presentation for a group of pages. You can think of a **theme** as the skin for your application.
 
-Files that the theme consists of, are :ref:`layout updates <dev-guide-layouts-layout-updates>`, 
+Files that the theme consists of, are :ref:`layout updates <dev-guide-layouts-layout-updates>`,
 **styles**, **scripts** and anything else related to the look and feel of the page.
 
 .. contents:: Table of Contents
@@ -27,7 +27,7 @@ A **theme folder**
 * must match the **[a-zA-Z][a-zA-Z0-9_-:]\*** pattern
 * must be placed in the **Resources/views/layouts** folder of the bundle
 
-An example of a theme folder is `DemoBundle/Resources/views/layouts/first_theme/`. 
+An example of a theme folder is `DemoBundle/Resources/views/layouts/first_theme/`.
 
 The theme folder name becomes the theme ID.
 
@@ -80,7 +80,7 @@ The application configuration option **active theme** could be set on the applic
     groups: [ main ]
 
     # src/Acme/Bundle/DemoBundle/Resources/views/layouts/oro/theme.yml
-    # Default layout theme for the Oro Platform
+    # Default layout theme for OroPlatform
     label:  Oro Theme
     icon:   bundles/oroui/themes/oro/images/favicon.ico
     parent: base

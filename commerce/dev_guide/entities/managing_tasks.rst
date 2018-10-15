@@ -127,7 +127,7 @@ The Template
 The template that is responsible to display the form fields should extend the base template
 ``OroUIBundle:actions:update.html.twig`` from the OroUIBundle. This templates defines some basic blocks
 that you can use. This way your own forms will provide the same look and feel as the ones coming
-with the OroPlatform:
+with OroPlatform:
 
 .. code-block:: html
     :linenos:
@@ -137,7 +137,7 @@ with the OroPlatform:
     {# extend the base template from the OroUIBundle #}
     {% extends 'OroUIBundle:actions:update.html.twig' %}
 
-    {# reuse the form theme provided with the OroPlatform #}
+    {# reuse the form theme provided with OroPlatform #}
     {% form_theme form with 'OroFormBundle:Form:fields.html.twig' %}
 
     {# make the current task accessible with the task variable #}

@@ -7,7 +7,7 @@ Configure Google Integration Settings
     :depth: 2
 
 
-To configure Google integration-related settings on the OroCRM/Commerce side:
+To configure Google integration-related settings on the OroCRM side:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. In the panel to the left, click **System Configuration > Integrations > Google Settings**.
@@ -24,7 +24,7 @@ In the Google Integration Settings section, provide the following details:
 .. csv-table::
    :header: "Field", "Description"
    :widths: 10, 30
-     
+
    "**Client ID** ","The Client ID generated in the API console."
    "**Client Secret**","The Client Secret generated in the API console."
    "**Google API Key** ","The API Key generated in the API console. Provide a valid `Google API key <https://developers.google.com/maps/documentation/javascript/get-api-key>`_ to activate maps for addresses in the system."

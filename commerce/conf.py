@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# The Oro Platform documentation build configuration file, created by
+# The OroPlatform documentation build configuration file, created by
 # sphinx-quickstart on Fri Mar 28 09:32:08 2014.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -245,7 +245,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'theorocommerce', u'The Orocommerce Documentation',
+    ('index', 'theorocommerce', u'The OroCommerce Documentation',
      [u'Oro Team'], 1)
 ]
 
