@@ -365,7 +365,7 @@ the following methods:
 .. sidebar:: Example: Adding a custom Strategy
 
     You can see an example of how to add a custom strategy in the ContactBundle
-    of the OroCRM. The bundle ships with a custom ``ContactAddOrUpdateOrDeleteStrategy``.
+    of OroCRM. The bundle ships with a custom ``ContactAddOrUpdateOrDeleteStrategy``.
     The strategy class implements the following interfaces:
 
     * :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\StrategyInterface`

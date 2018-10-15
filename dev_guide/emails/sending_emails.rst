@@ -4,7 +4,7 @@ Sending E-Mails
 Creating an E-Mail
 ------------------
 
-An e-mail that is created and sent by the OroPlatform is centered around the
+An e-mail that is created and sent by OroPlatform is centered around the
 :class:`Oro\\Bundle\\EmailBundle\\Form\\Model\\Email` model class which reflects all the properties
 of an e-mail.
 
@@ -167,7 +167,7 @@ E-Mail Notifications
 --------------------
 
 Sometimes you want to receive e-mails when entities of a particular class are written to the
-database. To achieve this the OroPlatform comes with the NotificationBundle. This bundle registers
+database. To achieve this OroPlatform comes with the NotificationBundle. This bundle registers
 an event listener that is executed whenever a Doctrine entity is created, updated or removed.
 
 To be notified by such an event, you have to create an
