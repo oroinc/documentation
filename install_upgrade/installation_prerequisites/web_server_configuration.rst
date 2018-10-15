@@ -35,8 +35,8 @@ Apache 2.2
         ServerName {$folder_name}.example.com
 
         DirectoryIndex app.php
-        DocumentRoot [$folder_location]}/{$folder_name}/web
-        <Directory  [$folder_location]}/{$folder_name}/web>
+        DocumentRoot [$folder_location]}/{$folder_name}/public
+        <Directory  [$folder_location]}/{$folder_name}/public>
             # enable the .htaccess rewrites
             AllowOverride All
             Order allow,deny
@@ -57,8 +57,8 @@ Apache 2.4
         ServerName {$folder_name}.example.com
 
         DirectoryIndex app.php
-        DocumentRoot [$folder_location]}/{$folder_name}/web
-        <Directory  [$folder_location]}/{$folder_name}/web>
+        DocumentRoot [$folder_location]}/{$folder_name}/public
+        <Directory  [$folder_location]}/{$folder_name}/public>
             # enable the .htaccess rewrites
             AllowOverride All
             Require all granted
@@ -78,7 +78,7 @@ Nginx
 
     server {
         server_name {$folder_name}.example.com;
-        root  [$folder_location]}/{$folder_name}/web;
+        root  [$folder_location]}/{$folder_name}/public;
 
         location / {
             # try to serve file directly, fallback to app.php
