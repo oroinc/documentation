@@ -222,6 +222,6 @@ Configure and Run Required Background Processes
 * :ref:`User Guide: Commerce <user-guide>`
 * :ref:`User Guide: Marketing <user-guide-marketing>`
 * :ref:`User Guide: Business Intelligence <user-guide--business-intelligence>`
-* :ref:`Storefront Guide <frontstore-guide>`
+* :ref:`User Guide: Storefront <frontstore-guide>`
 * :ref:`Developer Guide <dev-guide>`
 * :ref:`Administration Guide <configuration--guide--landing--page>`
