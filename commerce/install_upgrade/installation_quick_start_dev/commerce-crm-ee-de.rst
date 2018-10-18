@@ -25,7 +25,7 @@ Clone |oro_app_name| source codes to the */usr/share/nginx/html/oroapp* folder:
 * :ref:`User Guide: Commerce <user-guide>`
 * :ref:`User Guide: Marketing <user-guide-marketing>`
 * :ref:`User Guide: Business Intelligence <user-guide--business-intelligence>`
-* :ref:`Storefront Guide <frontstore-guide>`
+* :ref:`User Guide: Storefront <frontstore-guide>`
 * :ref:`Developer Guide <dev-guide>`
 * :ref:`Administration Guide <configuration--guide--landing--page>`
 
