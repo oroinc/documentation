@@ -61,7 +61,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * intl (ICU library 4.4 and above)                |
 |                   | * json                                            |
 |                   | * mbstring                                        |
-|                   | * mcrypt                                          |
+|                   | * openssl                                         |
 |                   | * mysql                                           |
 |                   | * pcre                                            |
 |                   | * simplexml                                       |
