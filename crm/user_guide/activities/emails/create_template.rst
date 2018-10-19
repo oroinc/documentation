@@ -56,6 +56,8 @@ The following actions are available for an email template from the page of all t
 
 You can edit the template details and save a new (cloned and edited) template.
 
+.. important::  Keep in mind that the ability to view, edit, clone, or delete email templates depends on specific roles and permissions defined in the system configuration. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
+
 You can also create an :ref:`email campaign <user-guide-email-campaigns>`, and send personalized emails based on your template to the pre-defined list of subscribers.
 
 .. note:: If you want to track the user-activity related to the emails sent within the email campaign, add a piece of :ref:`Tracking Website <user-guide-marketing-tracking>` code to the email template.
@@ -67,6 +69,8 @@ To apply an email template to a new email, select the template from the list of 
 
 .. image:: /user_guide/img/emails/apply_template.jpg
    :alt: Select the template from the list of the apply template field
+
+.. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give the access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
 
 You will see an **Apply Template Confirmation** message. Click **Yes, Proceed** to apply the selected template.
 

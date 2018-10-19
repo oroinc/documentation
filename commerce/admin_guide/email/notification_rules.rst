@@ -41,6 +41,8 @@ To create a notification rule:
      .. image:: /user_guide/system//img/notification/notification_rule_general2.png
         :alt: A notification rule creation form with workflow transition selected for the event name
 
+     .. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give the access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
+
 4. In the **Recipient List** section, define email notification recipients.
 
    An email notification can be sent to specific users and/or user groups and/or external email address:

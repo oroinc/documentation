@@ -50,6 +50,8 @@ Create a New Email Template
           .. image:: /user_guide/system/img/marketing/email_template_actions.png
              :alt: View a list of templates with three options available: edit, clone, delete
 
+.. important:: Keep in mind that the ability to view, edit, clone, or delete email templates depends on specific roles and permissions defined in the system configuration. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
+
 .. hint:: If you want to track the user-activity related to the emails sent within the email campaign, add a piece of :ref:`tracking website <user-guide-marketing-tracking>` code to the email template.
 
 Available Template Variables and Functions
