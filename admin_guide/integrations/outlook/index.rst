@@ -3,9 +3,6 @@
 Synchronization with Outlook
 ============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM Enterprise Edition supports data synchronization in the OroCRM and Outlook.
 Now, all the contacts, tasks and calendar events available for the user can be synchronized with the specified
 Outlook account and vice versa. 

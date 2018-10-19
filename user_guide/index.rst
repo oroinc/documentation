@@ -3,8 +3,6 @@
 User Guide: Getting Started
 ===========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 OroCRM is a flexible CRM that can be easily custom-tailored to meet the specific needs of your business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
 

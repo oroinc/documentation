@@ -3,9 +3,6 @@
 Organization Records Management
 ===============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 An Organization record represents a real enterprise, business, firm, company or another organization, to which the 
 :term:`users <User>` belong. 
 

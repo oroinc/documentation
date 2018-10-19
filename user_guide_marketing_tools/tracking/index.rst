@@ -3,8 +3,6 @@
 Tracking Websites
 =================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 With OroCRM Tracking Websites functionality you can learn how many users have visited your Web-site from links 
 within a specific marketing campaign and what these users' actions at the site were. 

@@ -3,8 +3,6 @@
 Sidebar Panel
 =============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
 information, such as recent emails or the task list. 

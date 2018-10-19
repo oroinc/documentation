@@ -3,8 +3,6 @@
 Customer Management
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 One of the main tasks of any CRM is the ability to aggregate the various details of a customer. 
 

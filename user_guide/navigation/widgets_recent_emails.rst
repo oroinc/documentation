@@ -4,8 +4,6 @@
 Recent Emails Dashboard Widget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Another way of reaching your emails is through a **Recent Emails
 widget** on your dashboard. You can find more information on Dashboard

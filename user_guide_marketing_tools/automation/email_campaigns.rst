@@ -3,8 +3,6 @@
 Email Campaigns
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Want to send a congratulation letter to all of your loyal customers born in June? 
 

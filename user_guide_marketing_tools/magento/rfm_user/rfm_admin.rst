@@ -4,8 +4,6 @@
 Configure RFM
 =============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In OroCRM the RFM metrics are available for Magento customers and are defined per channel.
 

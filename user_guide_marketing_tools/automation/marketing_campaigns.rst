@@ -3,8 +3,6 @@
 Marketing Campaigns
 ===================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Campaign records in OroCRM are used to define general details of the marketing activity and monitor its flow and results.
 

@@ -1,8 +1,6 @@
 Sending Email Campaign via Dotmailer 
 =====================================
 
-.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/user-guide-marketing-tools/integrated/sending-email-campaign-via-dotmailer>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/user-guide-marketing-tools/integrated/sending-email-campaign-via-dotmailer>`_, and `current <https://oroinc.com/orocrm/doc/current/user-guide-marketing-tools/integrated/sending-email-campaign-via-dotmailer>`_.
-
 Flow
 -----
 

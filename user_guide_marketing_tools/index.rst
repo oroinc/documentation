@@ -3,8 +3,6 @@
 User Guide: Marketing
 =====================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 OroCRM's Marketing functionality helps you efficiently organize and monitor marketing campaigns and mailings.
 

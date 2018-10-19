@@ -1,9 +1,6 @@
 How to Create a global JavaScript Component
 ===========================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 A global component or global view is an instance that exists beyond the content area and is not
 re-created in the course of navigation between different pages. A good example of a global
 component is the Pin Bar:

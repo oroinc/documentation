@@ -3,8 +3,6 @@
 View Pages
 ==========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To see more details of a specific record, and to work directly with the record (i.e., create a task related to a 
 customer, appoint a calendar event for a user, turn a cart into an order, share a contact, and so on), you need to get 

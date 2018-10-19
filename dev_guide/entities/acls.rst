@@ -1,9 +1,6 @@
 How to Protect Entities Using ACLs
 ==================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Using ACLs you can granularly grant access to your entities. Doing so requires three steps:
 
 #. :ref:`Activate ACL checks for your entities <coobook-entities-acl-enable>`.

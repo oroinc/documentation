@@ -5,8 +5,6 @@
 Default Workflows with Magento Entities
 =======================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To provide a consistent and customer-oriented approach, you can 
 :ref:`define a specific workflow <user-guide-workflow-management-basics>` within which the actions can be

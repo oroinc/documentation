@@ -3,9 +3,6 @@
 Email Templates
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 With OroCRM you can easily sent numerous personalized emails using one template. For example, you can make a single 
 template that welcomes {username}, assign it to an :ref:`Email Campaign <user-guide-email-campaigns>` and each of your 
 subscribers will get a mail send specifically to them. 

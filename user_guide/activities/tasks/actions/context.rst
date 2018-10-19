@@ -3,8 +3,6 @@
 Manage a Task Context
 ---------------------
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 .. contents:: :local:
 

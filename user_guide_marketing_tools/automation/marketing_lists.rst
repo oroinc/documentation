@@ -3,8 +3,6 @@
 Marketing Lists
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 With OroCRM you can automatically generate a list of contacts used for marketing purposes (mass call or 
 mailing) subject to predefined conditions. For example, you can create a list of personal and contact details of leads 

@@ -3,15 +3,6 @@
 Entity Fields
 =============
 
-.. warning::
-
-   The newer version of the information is available via the links below:
-
-   * **Create Entity Fields** in `version 2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/create-entity-fields>`_, `in 2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/create-entity-fields>`_, and `current version <https://oroinc.com/orocrm/doc/current/admin-guide/entities/create-entity-fields>`_.
-
-   * **Manage Entity Fields** in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/manage-entity-fields>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/manage-entity-fields>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities/manage-entity-fields>`_.
-
-
 .. contents:: :local:
     :depth: 3
 

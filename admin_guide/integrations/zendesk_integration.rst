@@ -3,9 +3,6 @@
 Integration with Zendesk
 ========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM supports out of the box integration with Zendesk, allowing you to load data from your Zendesk account and 
 process it in OroCRM. This article describes how to define and edit the integration and synchronization settings.
 

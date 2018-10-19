@@ -4,9 +4,6 @@
 Working with E-Mails
 ====================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Communicating with customers is an important part of every business. In OroPlatform, an e-mail
 address is represented by the :class:`Oro\\Bundle\\EmailBundle\\Entity\\EmailAddress` class.
 

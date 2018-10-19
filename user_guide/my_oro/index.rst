@@ -3,8 +3,6 @@
 My Oro
 ======
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The drop-down user menu that resides below your username in the upper-right corner of the application is a fast way to access your user profile, calendar, mailbox, and task list.
 

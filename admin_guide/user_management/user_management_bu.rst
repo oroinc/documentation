@@ -3,9 +3,6 @@
 Business Unit Records Management
 ================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Create a Business Unit Record
 -----------------------------
 

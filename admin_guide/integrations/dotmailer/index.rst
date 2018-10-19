@@ -3,9 +3,6 @@
 Integration with Dotmailer
 --------------------------
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 .. begin_include
 
 OroCRM supports out of the box integration with dotmailer, allowing you to do the following:

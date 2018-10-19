@@ -3,8 +3,6 @@
 Segments
 ========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 If you often need to use a set of records in reports, filters or 
 Marketing lists, you can create a segment and use it instead of redefining the same conditions time and again.

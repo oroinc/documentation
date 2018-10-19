@@ -3,8 +3,6 @@
 Contact Groups 
 ==============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 A *"Contact group"* is a system entity that represents a group of :term:`contacts <Contact>`. 
 By default, contact groups are used in the :ref:`filters and segments <user-guide-filters-management>`.

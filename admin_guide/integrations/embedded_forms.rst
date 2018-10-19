@@ -3,9 +3,6 @@
 Embedded Forms
 ==============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The OroCRM's *"Embedded Forms"* functionality provides for the creation of the code to add to a third-party web-site in 
 order to provide the communication between the site users and the OroCRM team. 
 These may be a request of marketing, technical, commercial or any other nature.

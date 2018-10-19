@@ -6,9 +6,6 @@
 How to Accelerate Import
 ========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 This article contains several recommendation about import process acceleration.
 
 

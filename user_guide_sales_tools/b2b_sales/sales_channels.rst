@@ -3,8 +3,6 @@
 Sales Channels Overview
 =======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In order to collect and process data received from a specific source of customer-related data related to your 
 business-to-business activities, create a Sales :ref:`Channel <user-guide-channels>`. 

@@ -3,9 +3,6 @@
 User Groups 
 ===========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 A *"User group"* is a system entity that represents a group of :term:`users <User>`. 
 By default, user groups are used in the :ref:`notification rules <system-notification-rules>` and 
 :ref:`filters <user-guide-filters-management>`.

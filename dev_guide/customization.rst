@@ -4,8 +4,6 @@
 Customizing the Platform Application
 ====================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Symfony offers easy-to-use options for overriding parts of third party
 bundles in an application. Since the OroPlatform Application consists of

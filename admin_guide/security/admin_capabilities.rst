@@ -3,9 +3,6 @@
 Capabilities List
 =================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The capabilities are an important part of the system's access and permission settings, as described in the 
 :ref:`Access and Permissions Basics guide <user-guide-user-management-permissions>`. 
 

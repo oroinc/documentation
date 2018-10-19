@@ -4,9 +4,6 @@
 How to Add an Extension to the OroCRM Marketplace
 =================================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The `OroCRM Marketplace`_ is the place where developers can publish their extensions and customers can obtain them.
 
 There are two types of extensions in the OroCRM Marketplace: free and paid. Free extensions are distributed directly

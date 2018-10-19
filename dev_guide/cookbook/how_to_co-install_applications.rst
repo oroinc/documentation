@@ -5,9 +5,6 @@
 How to co-install OroCommerce and OroCRM
 ========================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 .. note::
     1. Before install OroCommerce over OroCRM you should change default parameter ``web_backend_prefix`` to some non-empty prefix, f.e. - '/admin'.
     2. Package manager doesn't show enterprise packages, so you can't install commerce-enterprise and crm-enterprise through it, please use console instead.

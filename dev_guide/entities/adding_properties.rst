@@ -1,9 +1,6 @@
 How to Add Properties to Core Entities
 ======================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM and OroPlatform come with a lot of entities that you may have to customize to fit your
 application's needs. For example, imagine that you want to store the date your contacts became
 member of your company's partner network.

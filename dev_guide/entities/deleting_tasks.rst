@@ -1,8 +1,6 @@
 How to Delete Tasks
 ===================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The data grid that you created so far is able to let the user delete entries without having to
 reload the entire page. To achieve this you have to follow these three steps:

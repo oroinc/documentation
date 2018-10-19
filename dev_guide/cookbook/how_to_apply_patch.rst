@@ -4,9 +4,6 @@
 How to apply patch
 ==================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The patch file name supports the following naming convention: {package}-{version_to_apply}.patch.
 For example, platform-1.9.2.patch.
 

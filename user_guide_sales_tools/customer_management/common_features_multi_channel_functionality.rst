@@ -4,8 +4,6 @@
 Aggregating Data from Multiple Sources
 ======================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The new technology era brings new ways to reach your customers, which go along with overwhelming amount of information 
 to keep a track of.

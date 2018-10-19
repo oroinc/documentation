@@ -1,9 +1,6 @@
 Import/Export Entity Data
 =========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The `OroImportExportBundle`_ is intended to import entities into or export
 them out of OroPlatform. The bundle uses the `OroBatchBundle`_ to organize
 the execution of import/export operations. Any import/export operation is

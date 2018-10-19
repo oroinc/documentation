@@ -4,8 +4,6 @@
 Sales Processes Workflow
 ========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 As an alternative to direct manipulation of leads and opportunities, it is possible to manage the sales process following the steps of a Sales Process :ref:`Workflow <user-guide-workflow-management-basics>`.
 

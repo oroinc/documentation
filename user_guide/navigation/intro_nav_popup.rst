@@ -3,8 +3,6 @@
 Flash Notifications and Dialog Windows
 ======================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 While using OroCRM, you may sometimes need to inform a user about some events in the system. For example, when an 
 operation has been executed or has failed, or they need to be reminded about a task or event.

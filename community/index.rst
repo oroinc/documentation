@@ -1,9 +1,6 @@
 Community Guide
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 **We appreciate your help and interest in contributing to Oro products!**
 
 Find out more about how you can contribute to Oro products.

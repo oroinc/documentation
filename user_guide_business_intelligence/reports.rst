@@ -3,8 +3,6 @@
 Reports
 =======
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In OroCRM, you can create reports based on the details of any entity available in the system. 
 

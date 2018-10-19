@@ -3,8 +3,6 @@
 Magento Newsletter Subscribers
 ==============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 If the Magento Newsletter Subscribers entity has been :ref:`assigned to a channel <user-guide-channel-guide-entities>` 
 of Magento type, after the :ref:`synchronization <user-guide-magento-channel-integration>` the list of all the 

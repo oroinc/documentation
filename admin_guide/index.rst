@@ -3,9 +3,6 @@
 Administrator Guide
 ===================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 
 The section describes tools for system management and administration, aimed to be used primarily by the system 
 administrators.

@@ -3,8 +3,6 @@
 Magento Shopping Carts and Orders
 =================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To represent actual |WT02|_ of a Magento-based store, OroCRM provides records of the *"Shopping Cart"* entity.
 

@@ -7,9 +7,6 @@
 How to create new bundle
 ========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 New bundle can be created either manually, or automatically using standard Symfony console command.
 
 

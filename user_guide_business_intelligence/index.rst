@@ -3,8 +3,6 @@
 User guide: Business Intelligence
 =================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 OroCRM comes with a set of data analysis tools to help users make more informed decisions. 
 

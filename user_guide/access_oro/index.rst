@@ -3,8 +3,6 @@
 Access Oro
 ==========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To get to your OroCRM account, enter the OroCRM instance url.
 

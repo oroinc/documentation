@@ -3,9 +3,6 @@
 Workflows
 =========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 In a business application, entities often have a well defined state and undergo transitions between
 different states. Workflows are a way to apply state to entities and to control when and how an
 entity can perform the transition from one state to another.

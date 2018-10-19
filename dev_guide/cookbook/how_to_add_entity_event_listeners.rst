@@ -5,9 +5,6 @@
 How to add entity event listeners
 =================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 In some cases, you need to update a field before saving or before updating an entity.
 A Doctrine Listener is a perfect way to do that.
 

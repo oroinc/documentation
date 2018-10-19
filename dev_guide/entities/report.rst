@@ -1,8 +1,6 @@
 How to Create a Report
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In the user interface, users can configure their own reports through an intuitive graphical report
 builder. However, you can also define your own static reports through YAML configuration and make

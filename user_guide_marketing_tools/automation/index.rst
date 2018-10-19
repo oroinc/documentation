@@ -1,8 +1,6 @@
 Marketing Automation
 --------------------
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking:
 

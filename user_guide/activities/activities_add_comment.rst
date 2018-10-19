@@ -3,8 +3,6 @@
 Add Comment
 ===========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Interaction between users is an important part of successful work. In order to enable users to leave comments on records
 of an :term:`entity <Entity>` or on details of an :ref:`activity <user-guide-activities>`, other than a contact request 

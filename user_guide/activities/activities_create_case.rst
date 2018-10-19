@@ -3,8 +3,6 @@
 Create Case
 ===========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In order to keep the details of a certain issue, problem or failures reported by the customers, define their priority 
 and the person responsible for handling them, use the "*Create Case*" action.

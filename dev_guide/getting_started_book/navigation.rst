@@ -1,8 +1,6 @@
 Managing the Application Menu
 =============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Both the OroPlatform application and the OroCRM application come with a rich user interface. Each
 part of the application can be accessed by browsing the application using the provided navigation

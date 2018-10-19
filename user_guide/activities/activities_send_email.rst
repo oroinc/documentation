@@ -3,8 +3,6 @@
 Send Email
 ==========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Use the "*Send Email*" action to send an email from OroCRM.
 

@@ -5,9 +5,6 @@
 How to Add custom User Validation Constraints
 =============================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The UserBundle from OroPlatform already ships a set of
 `predefined validation constraints`_ for the ``User`` entity. These rules
 are checked when a user is either being created or being modified.

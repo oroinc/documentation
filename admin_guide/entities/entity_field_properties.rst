@@ -3,14 +3,6 @@
 Entity Field Properties
 =======================
 
-.. warning::
-
-   The newer version of the information is available via the links below:
-
-   * **Basic Entity Field Properties** in `versions 2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/entity-fields-basic-properties>`_, `in 2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/entity-fields-basic-properties>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities/entity-fields-basic-properties>`_.
-
-   * **Advanced Entity Field Properties** in version `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities/entity-fields-advanced-properties>`_, `version 2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities/entity-fields-advanced-properties>`_, and `current version <https://oroinc.com/orocrm/doc/current/admin-guide/entities/entity-fields-advanced-properties>`_.
-
 
 .. contents:: :local:
     :depth: 3

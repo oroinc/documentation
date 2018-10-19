@@ -3,9 +3,6 @@
 OroCRM Integrations Overview
 ============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM supports two types of integrations: 
 
 - Integrations that are configured at the system level and share the same configuration for all :term:`organizations <Organization>` in an OroCRM instance. These integrations (or any combination of them) can be enabled/disabled and configured in the *"System → Configuration → Integration"*.

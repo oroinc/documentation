@@ -3,8 +3,6 @@
 Add Attachment
 ==============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 You can add an attachment to a record in OroCRM.
 

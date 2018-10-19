@@ -3,8 +3,6 @@
 Following a Workflow
 ====================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In the process of the work with the customers information saved in the CRM system can be changed: carts turn 
 into orders, what seemed to be a potential opportunity appears not to be worth effort or tuns into a successful deal, 

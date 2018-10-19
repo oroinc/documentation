@@ -3,9 +3,6 @@
 Multiple Organizations Support
 ==============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM Enterprise Edition allows the :ref:`creation <user-management-organization-create>` of multiple organizations 
 within one OroCRM instance.
 

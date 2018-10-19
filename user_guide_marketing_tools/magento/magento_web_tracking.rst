@@ -3,8 +3,6 @@
 Magento Web Tracking 
 ====================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To improve marketing and sales performance, OroCRM provides a tool that
 tracks user behavior data from your Magento Store.

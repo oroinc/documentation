@@ -1,9 +1,6 @@
 Reports
 =======
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroPlatform gives you the opportunity to create customized reports about the entities in your
 application. For example, you may want to create a report that displays the achieved accounts by opportunity
 like this:

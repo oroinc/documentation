@@ -6,9 +6,6 @@
 How to pass request parameter to the grid
 =========================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 In some cases, you need to pass parameters from the request to the grid.
 This task may be solved using grid event listeners. An existing listener implementation also could be used.
 

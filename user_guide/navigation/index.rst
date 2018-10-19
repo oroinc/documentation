@@ -3,8 +3,6 @@
 Navigation and Search
 =======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This section of the guide will provide an introduction to OroCRM's user interface as well as instructions for setting up 
 your user profile. In the first article you will find an overview of the benefits  OroCRM  can bring to different 

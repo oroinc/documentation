@@ -1,8 +1,6 @@
 How to Create an Integration
 ============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Sometimes you need to integrate data from external systems into your application. For example,
 imagine that you have another application where tasks can be created that you want to sync with

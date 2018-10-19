@@ -1,8 +1,6 @@
 Entities Management
 ===================
 
-.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/entities>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/entities>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/entities>`_.
-
 Oro applications organize information into entities, records, and properties. An **entity** is a collection of similar information. That information is usually stored in a separate table in the database. Each instance of this collection is a **record** that is stored as a row in the table. The details of each record are its **properties**. They are stored in the dedicated table columns. The parameters of properties are defined in the entity fields.
 
 For instance, a contact is a system entity. When you create a new contact record in the application (e.g. a potential customer called Mary Smith), it becomes a contact record in OroCRM. Information about contact records is organized into a set of properties, such as the first name, the last name, a telephone number, etc. Every entity in Oro applications has its own properties, depending on what this entity is supposed to represent or display.

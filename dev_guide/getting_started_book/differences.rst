@@ -1,8 +1,6 @@
 Differences to Common Symfony Applications
 ==========================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 When you are familiar with building Symfony applications from scratch, you will recognize many well
 known building blocks when you start your first project using OroPlatform or OroCRM. However,

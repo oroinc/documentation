@@ -3,8 +3,6 @@
 The Oro Bundles
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 OroPlatform together with OroCRM offer wide range of bundles. This article gives you an
 overview of all these bundles. For each bundle, it is shortly described which features it offers.

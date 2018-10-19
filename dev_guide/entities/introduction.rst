@@ -1,8 +1,6 @@
 How to Work with Entities
 =========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This section is step by step tutorial explaining all the things you come across when dealing with
 entities in a CRM application.

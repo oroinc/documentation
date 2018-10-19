@@ -4,9 +4,6 @@
 How to Upgrade to a New Version
 ===============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 1. Checkout from the GitHub Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

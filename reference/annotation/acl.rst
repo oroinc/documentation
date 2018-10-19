@@ -1,8 +1,6 @@
 @Acl
 ====
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The ``@Acl`` annotation is used to create a new access control list and to protect the controller
 that is annotation with this ACL accordingly:

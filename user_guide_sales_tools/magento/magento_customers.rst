@@ -3,8 +3,6 @@
 Magento Customers
 =================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The *"Magento Customer"* records represent clients of a Magento-based store, for which data is collected within the 
 channel. The entity must be assigned to a Magento channel.

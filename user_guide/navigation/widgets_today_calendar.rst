@@ -4,8 +4,6 @@
 Today's Calendar Widget
 =======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This widget displays events planned for today and your tasks due today. The events displayed may belong to your personal calendar or other calendars that you watch. The list of calendars that you can see is the same as selected on the :ref:`My Calendar <doc-my-oro-calendar>` page.
 

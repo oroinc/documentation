@@ -3,8 +3,6 @@
 Filters
 =======
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Along with :ref:`grid filters <user-guide-ui-components-grid-filters>` that define a set of records to be *displayed*, 
 you sometimes need to select a set of records to be *processed* in different areas of the system, such as a 

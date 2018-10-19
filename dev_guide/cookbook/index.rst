@@ -1,9 +1,6 @@
 The Oro Cookbook
 ================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 This book contains list of most regularly used solutions in OroPlatform.
 
 .. toctree::

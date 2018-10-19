@@ -1,8 +1,6 @@
 Business-to-business Sales
 ==========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 In this section, you can find more information about Sales channels and the entities added to them by default.
 

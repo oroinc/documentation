@@ -3,8 +3,6 @@
 History, Favorites and Most Viewed
 ==================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The "hamburger" icon next to the user menu contains a history of your page views, the list of your favorite pages, and 
 the list of the most viewed pages in OroCRM.

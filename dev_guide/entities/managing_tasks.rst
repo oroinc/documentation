@@ -1,8 +1,6 @@
 How to Create and Modify Tasks
 ==============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To let the users create new tasks and edit existing ones you need to perform several steps:
 

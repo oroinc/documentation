@@ -3,8 +3,6 @@
 User Guide: Sales
 =================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The section describes OroCRM tools used to collect and aggregate customer-detailed 
 information from different sources (`channels`), including sharpened out-of-the-box tools for Magento-based stores and

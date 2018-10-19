@@ -3,8 +3,6 @@
 Navigation Basics
 =================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 OroCRM provides a broad set of navigation tools that allow you to easily access necessary information and tools. The
 system helps to ensure that frequent actions can be performed with minimal effort by keeping required information at

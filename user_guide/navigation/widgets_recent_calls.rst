@@ -3,8 +3,6 @@
 Recent Calls Widget
 ===================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This widget displays the list of recently logged calls.
 

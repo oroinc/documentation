@@ -1,9 +1,6 @@
 User Management
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 The section describes tools related to user and organization set-up and permissions management.
 
 .. toctree::

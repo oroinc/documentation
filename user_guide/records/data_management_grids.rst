@@ -3,8 +3,6 @@
 Grids
 =====
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 A grid is an aggregated view of all the records within an entity. Each row of a grid is one record and each column is 
 one of the grid properties. Thus, each cell displays a value of a property for a record.

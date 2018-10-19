@@ -5,8 +5,6 @@
 How Data Is Organized
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 The customer relationship management process requires us to collect and process huge amounts of information. OroCRM is
 designed to do this in the most efficient and convenient way possible.

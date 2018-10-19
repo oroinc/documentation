@@ -3,9 +3,6 @@
 LDAP Integration
 ================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Single sign-on capability (the ability for users to use the same login credentials for all corporate applications) is 
 particularly important for efficiency and performance in large-scale companies. The LDAP Integration feature available 
 in OroCRM’s Enterprise Edition supports this capability.

@@ -1,8 +1,6 @@
 How to Load Data Fixtures
 =========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Before your application contains an interface to create new tasks, you need to load them
 programmatically. In the OroPlatform, this can be done by creating classes that are placed in the

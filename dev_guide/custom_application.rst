@@ -4,8 +4,6 @@
 Create Custom Oro Application
 =============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 No two businesses are alike. This motto is a part of Oro products philosophy and this is why flexibility is one of
 the key principles that drive architecture in Oro. Depending on what you are planning to build, you can

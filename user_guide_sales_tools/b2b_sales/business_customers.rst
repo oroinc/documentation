@@ -3,8 +3,6 @@
 Business Customers
 ==================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 For each customer involved in the business-to-business activity you can create a **Business Customer** record.
 

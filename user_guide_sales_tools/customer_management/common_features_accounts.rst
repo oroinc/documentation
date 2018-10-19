@@ -3,8 +3,6 @@
 Accounts
 ========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To collect and process information on the customer activity of a person, group of people or business cooperating with 
 you, you can create an *"Account"* record ("account") that will represent them in OroCRM.

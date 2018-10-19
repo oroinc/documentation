@@ -3,8 +3,6 @@
 Contacts
 ========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To save details of actual people with whom you are getting in touch during the business activities, use the Contact 
 records ("contacts"). 

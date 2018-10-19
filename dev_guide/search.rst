@@ -4,8 +4,6 @@
 Dealing with the Search Index
 =============================
 
-.. warning:: The newer version of the topic is available in versions `2.3 <https://oroinc.com/orocrm/doc/2.3/admin-guide/op-structure/search-index#search-index-overview>`_, `2.6 <https://oroinc.com/orocrm/doc/2.6/admin-guide/op-structure/search-index#search-index-overview>`_, and `current <https://oroinc.com/orocrm/doc/current/admin-guide/op-structure/search-index#search-index-overview>`_.
-
 As a part of OroPlatform, the `SearchBundle`_ allows you to create an advanced
 search index for mapped objects and to perform advanced queries on the indexed
 data.

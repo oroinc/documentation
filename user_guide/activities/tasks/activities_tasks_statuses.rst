@@ -3,8 +3,6 @@
 Task Statuses
 ~~~~~~~~~~~~~
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 .. begin_task_statuses
 

@@ -3,8 +3,6 @@
 Get Started with Activities
 ===========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 .. begin_activities_overview
 

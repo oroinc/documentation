@@ -3,8 +3,6 @@
 Channels
 ========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Today, successful businesses usually have more than one sales site. These may be different online stores, 
 business-to-business enterprises, or business-to-customer outlets. Moreover, different customers and sales-related data 

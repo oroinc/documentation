@@ -1,9 +1,6 @@
 How to Create Entities
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 When working with the OroPlatform, creating entities and map them to the database is not different
 from doing the same in a common Symfony application. After you have created your bundle, create the
 entity classes you need in the bundle's ``Entity`` namespace, add all the needed properties, and

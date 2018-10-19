@@ -3,9 +3,6 @@
 Data Audit
 ==========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 With this functionality, users can see the full history of changes made to any record of an ``auditable entity``, as well as the out-of-the-box report of all such 
 actions.
 

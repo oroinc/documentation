@@ -1,9 +1,6 @@
 How to Translate the Oro Project
 ================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Oro products support many internationalization functions including multiple languages and translations.
 All translatable strings are defined in each bundle translation domain files and are available via the translation
 management service `CrowdIn`_. This service allows to easily collaborate on the translation process and to enable

@@ -1,8 +1,6 @@
 How to Import and Export Entities
 =================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 You have to create some services and add some configuration to make Oro Platform capable to export
 your custom entities as CSV files and to be able to load data from CSV files for your entities.

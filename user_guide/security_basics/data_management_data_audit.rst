@@ -4,8 +4,6 @@
 History of Changes
 =====================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 A link to a specific record's history of changes is available in the top right corner of the record's
 :ref:`View page <user-guide-ui-components-view-pages>`,  if Data Audit has been enabled for the user. (The

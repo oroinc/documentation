@@ -3,8 +3,6 @@
 Activities
 ==========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 An important part of a successful customer relations process is clear and timely communications between all the 
 stakeholders. OroCRM's provides a number of tools to enable them.

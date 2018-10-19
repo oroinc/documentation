@@ -6,9 +6,6 @@
 How to enable https
 ===================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 There are two ways to enable HTTPS:
 
 Configuring routes

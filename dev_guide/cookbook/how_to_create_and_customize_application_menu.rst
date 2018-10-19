@@ -7,9 +7,6 @@
 How to create and customize application menu
 ============================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 In OroPlatform you can create your fully personalized menu or use a simple technique to add or override a section in the default menu.
 This tutorial describes how to override a section in the default menu.
 

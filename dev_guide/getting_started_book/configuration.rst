@@ -4,8 +4,6 @@
 Configuration
 =============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 With the `OroConfigBundle`_ you can define configuration settings in different
 scopes. These settings can be organized and visualized in different configuration

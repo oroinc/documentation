@@ -1,9 +1,6 @@
 Creating a simple CRUD
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 When you deal with your own entities you usually want to create so-called CRUDs for them. CRUD is
 an acronym for **C**\ reate, **R**\ ead, **U**\ pdate and **D**\ elete.
 

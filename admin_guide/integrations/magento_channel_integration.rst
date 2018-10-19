@@ -4,9 +4,6 @@
 Integration with Magento
 ========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM supports out of the box integration with Magento.
 The integration enables loading  data from and to a Magento-based eCommerce store ("Magento store") and processing it in
 the OroCRM.

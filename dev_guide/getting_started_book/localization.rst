@@ -1,8 +1,6 @@
 Localization
 ============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Localization is the process of translating and adapting a product for a specific
 country or region. OroPlatform allows a user to customize the format of

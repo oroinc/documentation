@@ -3,9 +3,6 @@
 Automatic Notification
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Want an administrator to get a letter when there is a request from a user? Need to notify users each time a new activity
 has been assigned to them? Prefer to drop a line to a manager, each time some customer details have been edited? 
 In OroCRM, you can specify conditions at which emails will be sent based on a pre-defined 

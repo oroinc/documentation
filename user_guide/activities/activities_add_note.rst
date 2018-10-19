@@ -3,8 +3,6 @@
 Add Note
 ========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 To save additional information about the record in OroCRM, use the "*Add Note"* action.
 

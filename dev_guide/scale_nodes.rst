@@ -1,8 +1,6 @@
 ORO Application Scaling - Set-up Instructions
 =============================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Introduction:
 -------------

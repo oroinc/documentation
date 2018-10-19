@@ -3,8 +3,6 @@
 Dashboards
 ==========
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Dashboard is an adjustable view that contains a number of widgets, such as today's calendar, recent calls and emails, 
 quick launchpad etc. 

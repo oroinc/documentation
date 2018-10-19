@@ -3,8 +3,6 @@
 Calls
 =====
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 .. include:: ../activities_overview.rst
    :start-after: start-include-calls

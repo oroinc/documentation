@@ -8,9 +8,6 @@
 How to Manage OroPlatform Extensions
 =====================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Installing an Extension
 -----------------------
 

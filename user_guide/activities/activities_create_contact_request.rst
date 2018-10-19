@@ -3,8 +3,6 @@
 Create Contact Request
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Requests for OroCRM support, including partnership proposals, complaints, additional 
 information and assistance requests that come from a :ref:`third-party application <admin-embedded-forms>` or have been 

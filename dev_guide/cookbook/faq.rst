@@ -1,9 +1,6 @@
 FAQ
 ===
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 **Question:** I have problem with Magento channel sync: when I'm clicking on "Check Connection" it returns
 error "Parameters are not valid!", but in fact parameters are valid and SOAP API URL is working fine.
 

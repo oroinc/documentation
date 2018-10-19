@@ -1,8 +1,6 @@
 @TitleTemplate
 ==============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This annotation is used to configure the template that is used to render the page title when the
 controller tagged with this annotation is accessed:

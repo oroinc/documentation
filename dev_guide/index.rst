@@ -1,8 +1,6 @@
 Developer Guide
 ===============
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This guide provides an overview of OroPlatform architecture, design and key features. This section will help you better understand the internal organization and technical details of Oro applications.
 

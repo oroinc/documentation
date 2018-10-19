@@ -3,8 +3,6 @@
 Import and Export Data
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 OroCRM's import and export functionality is a simple way of working with multiple records in the .CSV format.
 

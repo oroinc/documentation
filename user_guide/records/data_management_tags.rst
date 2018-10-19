@@ -3,8 +3,6 @@
 Tags
 ====
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Tags are non-hierarchical keywords or phrases that are assigned to records. They provide additional information about 
 records and are visible to all the system users. Tags can be assigned to any records of any entity and used for 

@@ -1,8 +1,6 @@
 How to Create a Basic Datagrid
 ==============================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Creating a basic datagrid to display the data of all tasks requires three steps:
 

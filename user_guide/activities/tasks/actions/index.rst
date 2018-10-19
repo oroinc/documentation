@@ -1,8 +1,6 @@
 Manage Tasks in Detail
 ======================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 This section contains detailed information about the actions related to the tasks that may be launched in various perspectives.
 

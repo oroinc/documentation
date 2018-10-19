@@ -4,8 +4,6 @@
 Customizing the Application Layout
 ==================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 You can customize the OroPlatform layout in different ways:
 

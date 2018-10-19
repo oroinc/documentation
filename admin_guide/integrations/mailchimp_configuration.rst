@@ -3,9 +3,6 @@
 Integration with MailChimp
 ==========================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM supports out of the box integration with MailChimp, allowing you to do the following:
 
 - Map OroCRM :ref:`Marketing Lists <user-guide-marketing-lists>` and 

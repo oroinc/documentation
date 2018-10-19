@@ -1,9 +1,6 @@
 How to Create a Dashboard Widget
 ================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 To display a list of tasks on the dashboard with most recent tasks first you basically have to
 perform three steps:
 

@@ -3,8 +3,6 @@
 Search
 ======
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Search is the fastest way to find a specific record you need. To find a record in OroCRM:
 

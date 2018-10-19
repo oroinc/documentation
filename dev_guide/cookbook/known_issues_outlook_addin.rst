@@ -1,9 +1,6 @@
 Known Issues with Outlook Add-in
 =================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 Issue: Synchronization of Microsoft Outlook and OroCRM Fails
 ------------------------------------------------------------------
 

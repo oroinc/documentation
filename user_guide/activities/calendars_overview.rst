@@ -3,8 +3,6 @@
 Calendars Overview
 ==================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 Efficient business today is hard to imagine without an easy-to-understand and up-to-date schedule. 
 OroCRM provides each user with a calendar with tasks and events related to the specific user, to other users 

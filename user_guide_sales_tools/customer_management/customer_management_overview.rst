@@ -5,8 +5,6 @@
 Understanding Accounts, Channels, and Customers
 =================================================
 
-.. include:: /old_version_notice.rst
-   :start-after: begin_old_version_notice
 
 For each :ref:`channel created <user-guide-channel-guide-create>`, there is a set of 
 :term:`entities <Entity>`  that are defined. These entities correspond to the various types of information collected 
