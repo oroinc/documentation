@@ -94,13 +94,7 @@ or, as alternative:
     $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env=prod
 
-**9**. Run the consumer(s).
-
-.. code-block:: bash
-
-    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
-
-**10**. Enable cron.
+**9**. Enable cron.
 
 .. code-block:: bash
 
@@ -113,11 +107,18 @@ Uncomment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
-**11**. Switch your application back to normal mode from the maintenance mode.
+**10**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
     $ sudo -uwww-data bin/console lexik:maintenance:unlock --env=prod
+
+**11**. Run the consumer(s).
+
+.. code-block:: bash
+
+    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
+
 
 .. note::
 
@@ -186,7 +187,7 @@ Comment this line.
 
 .. code-block:: bash
 
-    $ sudo -u www-data php bin/console oro:platform:upgrade20 --env=prod --force
+    $ sudo -u www-data php bin/console oro:platform:upgrade --env=prod --force
 
 **8**. Remove the caches.
 
@@ -201,14 +202,7 @@ or, as alternative:
     $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env=prod
 
-
-**9**. Run the consumer(s).
-
-.. code-block:: bash
-
-    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
-
-**10**. Enable cron.
+**9**. Enable cron.
 
 .. code-block:: bash
 
@@ -221,11 +215,18 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
-**11**. Switch your application back to normal mode from the maintenance mode.
+**10**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
 
     $ sudo -uwww-data bin/console lexik:maintenance:unlock --env=prod
+
+**11**. Run the consumer(s).
+
+.. code-block:: bash
+
+    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
+
 
 .. note::
 
