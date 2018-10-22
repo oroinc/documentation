@@ -76,7 +76,7 @@ Attributes
 * customerUser.firstName *string*
 * customerUser.middleName *string*
 * customerUser.lastName *string*
-* customerUser.lastName *string* (which is a customerUser.firstName ~ ‘ ‘ ~ customerUser.lastName, e.g. 'Amanda Cole')
+* customerUser.FullName *string* (which is a customerUser.firstName ~ ‘ ‘ ~ customerUser.lastName, e.g. 'Amanda Cole')
 
 Collections
 """""""""""
@@ -206,7 +206,7 @@ See more information about using collections in the **Collection Validation** se
   - and
   - or
   - not
-  - .. (range, like in 1..10)
+  - \.\. (range, like in 1..10)
 
 
 **Collection Validation** with *any (OR)* and *all (AND)* Operations

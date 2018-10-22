@@ -84,13 +84,7 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
       $ sudo rm -rf var/cache/*
       $ sudo -u www-data bin/console cache:warmup --env=prod
 
-10. Run the consumer(s).
-
-    .. code-block:: bash
-
-       $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
-
-11. Enable cron.
+10. Enable cron.
 
     .. code-block:: bash
 
@@ -103,11 +97,18 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
         */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
-12. Switch your application back to normal mode from the maintenance mode.
+11. Switch your application back to normal mode from the maintenance mode.
 
     .. code-block:: bash
 
        $ sudo -uwww-data bin/console lexik:maintenance:unlock --env=prod
+
+12. Run the consumer(s).
+
+    .. code-block:: bash
+
+       $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
+
 
     .. note::
 

@@ -61,8 +61,7 @@ Comment this line.
 .. code-block:: bash
     :linenos:
 
-    $ sudo php composer.phar install --prefer-dist --no-dev
-    $ sudo chown www-data:www-data -R ./*
+    $ sudo -u www-data php composer.phar install --prefer-dist --no-dev
 
 **7**. Remove old caches.
 
@@ -104,14 +103,7 @@ or, as alternative:
     $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env=prod
 
-**10**. Run the consumer(s).
-
-.. code-block:: bash
-    :linenos:
-
-    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
-
-**11**. Enable cron.
+**10**. Enable cron.
 
 .. code-block:: bash
     :linenos:
@@ -125,12 +117,19 @@ Uncomment this line.
 
      */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
-**12**. Switch your application back to normal mode from the maintenance mode.
+**11**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
     :linenos:
 
     $ sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
+
+**12**. Run the consumer(s).
+
+.. code-block:: bash
+    :linenos:
+
+        $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
 
 .. note::
 
@@ -220,15 +219,7 @@ or, as alternative:
     $ sudo rm -rf var/cache/prod
     $ sudo -u www-data bin/console cache:warmup --env=prod
 
-
-**9**. Run the consumer(s).
-
-.. code-block:: bash
-    :linenos:
-
-    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
-
-**10**. Enable cron.
+**9**. Enable cron.
 
 .. code-block:: bash
     :linenos:
@@ -242,12 +233,19 @@ Uncomment this line.
 
     */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
-**11**. Switch your application back to normal mode from the maintenance mode.
+**10**. Switch your application back to normal mode from the maintenance mode.
 
 .. code-block:: bash
     :linenos:
 
     $ sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
+
+**11**. Run the consumer(s).
+
+.. code-block:: bash
+    :linenos:
+
+        $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
 
 .. note::
 
