@@ -34,11 +34,5 @@ From the :ref:`grid <doc-grids>` of Magento Customers you can:
     :ref:`two-way synchronization <user-guide-magento-channel-integration-synchronization>` has been enabled.
 
 
-.. |IcView| image:: /img/buttons/IcView.png
-   :align: middle
-
-.. |IcSub| image:: /img/buttons/IcSub.png
-   :align: middle
-
-.. |IcUns| image:: /img/buttons/IcUns.png
-   :align: middle
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

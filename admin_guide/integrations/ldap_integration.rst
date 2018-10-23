@@ -36,7 +36,8 @@ To set up an integration with LDAP:
 3. On the **Create Integration** page, select the *LDAP* integration type. Th
 4. In the **General Settings**, provide the following details:
     
-   .. image:: /admin_guide/img/ldap/ldap_general.png    
+   .. image:: /admin_guide/img/ldap/ldap_general.png
+      :width: 40%
    
    .. csv-table::
      :header: "",""
@@ -82,11 +83,13 @@ To set up an integration with LDAP:
    If everything is correct, the success message will appear.
      
    .. image:: /admin_guide/img/ldap/ldap_check_connection.png
+      :width: 30%
    
   
 6. In the **Synchronization Settings** section, enable/disable two-way synchronization.
 
    .. image:: /admin_guide/img/ldap/ldap_synch.png
+      :width: 40%
 
    Select the **Enable Two Way Sync** check box to upload user-related data both from the LDAP server to Oro application and back. 
 
@@ -127,6 +130,7 @@ To set up an integration with LDAP:
    * Define the role name in the target LDAP server and choose the role in Oro application to map.
 
      .. image:: /admin_guide/img/ldap/ldap_role_mapping_add_role.png
+        :width: 40%
   
   
 9. Once the integration is established, user profiles are imported to the Oro application and users will be able to use their

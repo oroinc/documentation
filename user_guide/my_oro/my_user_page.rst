@@ -28,7 +28,8 @@ There are a number of effective tools and actions available on the page of your 
    * You can also check which business unit owns your user record. Click on the owner name (e.g. Main) to open the page of the corresponding business unit. If you are logged into the organization with global access (i.e. technical organization that aggregates data from all organizations created in the system), then in brackets you will see the name of organization that owns the user.
 
      .. image:: /user_guide/img/getting_started/my_oro/my_user_review_owner.png
-        :alt: Owner form
+        :width: 40%
+        :alt: The link to the bussiness unit specified as the user record owner
 
    * You can also see who, how and when modified your profile by clicking **Change History** link.
 

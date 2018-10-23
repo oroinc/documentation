@@ -156,5 +156,3 @@ You can create any number of quotes for one open opportunity.
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. |IcExpire| image:: /img/buttons/IcExpire.png
-   :align: middle

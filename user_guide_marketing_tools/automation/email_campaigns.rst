@@ -126,26 +126,8 @@ In order to start and email campaign, go to the View page of the Email Campaign 
 
 
 
-.. |IcDelete| image:: /img/buttons/IcDelete.png
-   :align: middle
-
-.. |IcEdit| image:: /img/buttons/IcEdit.png
-   :align: middle
-
-.. |IcView| image:: /img/buttons/IcView.png
-   :align: middle
-   
-.. |BGotoPage| image:: /img/buttons/BGotoPage.png
-   :align: middle
-   
-.. |Bdropdown| image:: /img/buttons/Bdropdown.png
-   :align: middle
-   
-.. |BPlus| image:: /img/buttons/Bdropdown.png
-   :align: middle
-
-.. |BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
-   :align: middle
-   
 .. |email_campaign_schedule| image:: ../../img/marketing/email_campaign_schedule.png
    :align: middle
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
