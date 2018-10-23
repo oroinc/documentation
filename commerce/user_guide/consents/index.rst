@@ -61,6 +61,7 @@ Learn more on the configuration of consents in OroCommerce in the following topi
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Explore the Checkout with Consents <frontstore-guide--orders-checkout--consents>`
+* :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
 
 .. ref: Consents in Context 
 
@@ -79,3 +80,4 @@ Learn more on the configuration of consents in OroCommerce in the following topi
    create_consent
    add_consent
    accepted_consents_report
+   cookie_banner
