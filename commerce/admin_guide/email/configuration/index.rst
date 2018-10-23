@@ -1,6 +1,6 @@
 .. _user-guide-email-admin:
 .. _admin-configuration-email-configuration:
-.. _doc_email_configuration:
+.. _doc-email-configuration:
 
 Configure Email Settings
 ========================
