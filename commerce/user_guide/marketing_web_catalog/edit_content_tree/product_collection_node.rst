@@ -7,6 +7,8 @@ Add a Product Collection (Web Catalog Content)
 
 Product Collection is a filter-based segment that helps you display a custom and dynamic set of products in the web catalog similarly to the category contents.
 
+.. note:: You can control the frequency of the product collections indexation. By default, product collections are indexed every hour. See the :ref:`Product Collections Configuration <configuration--guide--commerce--configuration--product-collections>` guide for the details on how to change the default indexation frequency.
+
 1. To add a product collection node to the menu in the OroCommerce storefront:
 
    Select the **Add Product Collection** in the Content Variants list.
