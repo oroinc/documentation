@@ -7,26 +7,23 @@ Marketing Features
 
 .. begin
 
-You can enable and disable marketing features in your Oro application.
-
-To toggle the availability of :ref:`marketing lists <user-guide-marketing-lists>`, :ref:`website tracking <user-guide-marketing-tracking>`, :ref:`marketing campaigns <user-guide-marketing-campaigns>`, :ref:`email campaigns <user-guide-email-campaigns>`, and/or marketing activity statistics in context (e.g. for orders, customer users, etc.):
+You can customize marketing features, such as :ref:`marketing lists <user-guide-marketing-lists>`, :ref:`website tracking <user-guide-marketing-tracking>`, :ref:`marketing campaigns <user-guide-marketing-campaigns>`, :ref:`email campaigns <user-guide-email-campaigns>`, and/or marketing activity statistics in context (e.g. for orders, customer users, etc.) in your Oro application via the system configuration.
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Marketing > General Setup > Features** in the menu to the left.
 
-   You can customize the following options:
+3. To enable/disable the necessary feature, first clear the **Use Default** check box and then select the required option.
 
-   * Enable Marketing List
-   * Enable Tracking
-   * Enable Campaign Features
-   * Enable Marketing Activities Features
+.. image:: /user_guide/img/marketing/configuration/marketing_features.png
+   :alt: Marketing features configuration
 
-3. To enable/disable the feature:
+4. Click **Save Setting**.
 
-     a) Clear the **Use Default** box next to the option.
-     b) Check or clear the checkbox next to the option.
+Related Articles
+^^^^^^^^^^^^^^^^
 
-4. Click **Save**.
+* :ref:`Tracking Settings <admin-configuration-tracking-settings>`
+* :ref:`Tracking Websites <user-guide-marketing-tracking>`
 
 
 .. finish
