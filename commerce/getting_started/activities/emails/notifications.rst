@@ -36,6 +36,8 @@ To create a notification rule:
 
    .. image:: /user_guide/img/getting_started/emails/create_notification_rule.jpg
 
+.. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give the access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
+
 4. In the **Recipient List** section, define a list of users to whom the email will be sent when the rule is met.
 
    You can define one specific :term:`user <User>` and/or :ref:`user groups <user-management-groups>` and/or a specific email address.
