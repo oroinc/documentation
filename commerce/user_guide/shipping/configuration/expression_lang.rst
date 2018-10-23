@@ -76,7 +76,7 @@ Attributes
 * customerUser.firstName *string*
 * customerUser.middleName *string*
 * customerUser.lastName *string*
-* customerUser.FullName *string* (which is a customerUser.firstName ~ ‘ ‘ ~ customerUser.lastName, e.g. 'Amanda Cole')
+* customerUser.fullName *string* (which is a customerUser.firstName ~ ‘ ‘ ~ customerUser.lastName, e.g. 'Amanda Cole')
 
 Collections
 """""""""""

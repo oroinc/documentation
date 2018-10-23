@@ -11,14 +11,14 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
 .. code-block:: bash
 
-    $ cd /path/to/application
-    $ sudo -uwww-data bin/console lexik:maintenance:lock --env=prod
+      cd /path/to/application
+      sudo -uwww-data bin/console lexik:maintenance:lock --env=prod
 
 2. Stop the cron tasks.
 
    .. code-block:: bash
 
-      $ crontab -e -uwww-data
+        crontab -e -uwww-data
 
    .. note::
 
@@ -47,14 +47,14 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
    .. code-block:: bash
 
-      $ sudo -uwww-data git pull
-      $ sudo -uwww-data git checkout <branch or tag with version to upgrade to>
+        sudo -uwww-data git pull
+        sudo -uwww-data git checkout <branch or tag with version to upgrade to>
 
 6. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
    .. code-block:: bash
 
-      $ sudo -u www-data php composer.phar install --prefer-dist --no-dev
+        sudo -u www-data php composer.phar install --prefer-dist --no-dev
     
 7. Remove old caches.
 
@@ -68,26 +68,26 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
    .. code-block:: bash
 
-      $ sudo -u www-data php bin/console oro:platform:update --env=prod --force
+        sudo -u www-data php bin/console oro:platform:update --env=prod --force
 
 9. Remove the caches.
 
    .. code-block:: bash
 
-      $ sudo -u www-data bin/console cache:clear --env=prod
+        sudo -u www-data bin/console cache:clear --env=prod
 
    or, as alternative:
 
    .. code-block:: bash
 
-      $ sudo rm -rf var/cache/*
-      $ sudo -u www-data bin/console cache:warmup --env=prod
+        sudo rm -rf var/cache/*
+        sudo -u www-data bin/console cache:warmup --env=prod
 
 10. Enable cron.
 
     .. code-block:: bash
 
-       $ crontab -e -uwww-data
+         crontab -e -uwww-data
 
     Uncomment this line.
 
@@ -100,13 +100,13 @@ To retrieve source code of a new version and upgrade your OroCRM instance, pleas
 
     .. code-block:: bash
 
-       $ sudo -uwww-data bin/console lexik:maintenance:unlock --env=prod
+         sudo -uwww-data bin/console lexik:maintenance:unlock --env=prod
 
 12. Run the consumer(s).
 
     .. code-block:: bash
 
-       $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
+         sudo -u www-data bin/console oro:message-queue:consume --env=prod
 
 
     .. note::
