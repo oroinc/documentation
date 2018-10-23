@@ -5,7 +5,7 @@
 Marketing Automation
 ====================
 
-In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking:
+In Oro applications, you can manage, perform, and track the results of your marketing activities, like email campaigns and website activities tracking.
 
 .. contents::
    :local:
@@ -18,19 +18,19 @@ In Oro application and external systems, you can launch marketing campaigns dist
 
 Once the marketing efforts get their results, you can monitor the collected marketing information in the context of the customers, leads, and many more perspectives
 
-.. note:: Enable or disable marketing automation in Oro application using :ref:`system configuration <marketing-system-configuration>`.
+.. note:: Enable or disable marketing automation in Oro application via the :ref:`system configuration <marketing-system-configuration>`.
 
 Via Oro Application
 -------------------
 
 In Oro application, you can use the following marketing tools:
 
-* **Marketing Lists** --- Group email data into a target :ref:`marketing list <user-guide-marketing-lists>` may be automatically generated using flexible filters and may contain any record with an email information, like leads or customer users.
+* **Marketing Lists** --- Group email data into a target :ref:`marketing list <user-guide-marketing-lists>`. It may be automatically generated using flexible filters and may contain any record with an email information, like leads or customer users.
 * **Marketing Campaign** --- Track statistics of the marketing efforts related to the same :ref:`marketing campaign <user-guide-marketing-campaigns>`.
 * **Email Campaigns** --- Schedule or send an email campaign that uses a marketing list as a target audience and may optionally be related to the existing marketing campaign and monitor the results.
-* **Website Tracking** --- Generate javascript :ref:`tracking code <user-guide-marketing-tracking>` that may be embedded in your or third-party websites to track users activity that brings valuable insight into your customer needs and your marketing efforts.
+* **Website Tracking** --- Generate a javascript :ref:`tracking code <user-guide-marketing-tracking>` that may be embedded in your or third-party websites to track users activity that brings valuable insight into your customer needs and your marketing efforts.
 
-.. note:: Configure tracking settings in Oro application using :ref:`system configuration <admin-configuration-tracking>`.
+.. note:: Configure tracking settings in Oro application via the :ref:`system configuration <admin-configuration-tracking>`.
 
 Via dotmailer
 -------------

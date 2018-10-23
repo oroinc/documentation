@@ -220,9 +220,7 @@ Here, you will see the code of your campaign.
 
 You can assign a tracking website record to your campaign in two steps.
 
-1. You can add the code from the :ref:`View Page of the Campaign <user-guide-marketing-campaigns-view-page>`.
-   (see the screenshot above) to the tracking script from the :ref:`View Page of the Website Tracking record <user-guide-marketing-tracking-websites-view-page>` (e.g. Magento Channel in our case) after **setUserId** call (e.g.  _paq.push(['setCampaignName', 'Demo\_ACC2']);). This code is added to the page of the website that you wish to track before the </body> tag. Each time a user reaches a page with such a code, an
-   event is logged within the campaign.
+1. You can add the :ref:`marketing campaign code <user-guide-marketing-campaigns-view-page>` (see the screenshot above) to the :ref:`tracking script <user-guide-how-to-track>` (e.g. Magento Channel in our case) after **setUserId** call (e.g.  _paq.push(['setCampaignName', 'Demo\_ACC2']);). This code is added to the page of the website that you wish to track before the </body> tag. Each time a user reaches a page with such a code, an event is logged within the campaign.
 
 
 .. image:: ../../img/sending_abandoned_cart_campaigns/oro_tracking_code_highlights.jpg

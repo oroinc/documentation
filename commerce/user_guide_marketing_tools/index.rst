@@ -19,7 +19,7 @@ Marketing lists can be used to run Email Campaigns in OroCommerce and synchroniz
 
 * :doc:`/user_guide_marketing_tools/automation/email_campaigns`
 
-You can send an email campaign generated in your Oro application, without involvement of external marketing automation applications. This means that once you have defined the rules for generation of a :ref:`Marketing List <user-guide-marketing-lists>` and have created an :ref:`Email Template <user-guide-email-template>`, you can easily set-up an email campaign, within which all the contacts on the list will receive personalized emails in compliance with the campaign. You can then collect statistics for such campaigns and :ref:`create reports <user-guide-reports>`.
+You can send an email campaign generated in your Oro application, without the involvement of external marketing automation applications. This means that once you have defined the rules for generation of a :ref:`Marketing List <user-guide-marketing-lists>` and have created an :ref:`Email Template <user-guide-email-template>`, you can easily set-up an email campaign, within which all the contacts on the list will receive personalized emails in compliance with the campaign. You can then collect statistics for such campaigns and :ref:`create reports <user-guide-reports>`.
 
 * :doc:`/user_guide_marketing_tools/automation/marketing_campaigns`
 
@@ -31,7 +31,7 @@ Campaign records in OroCommerce are used to define general details of the market
 Website Tracking
 ----------------
 
-With Oro Tracking Websites functionality you can learn how many users have visited your Web-site from links within a specific marketing campaign and what these users' actions at the site were. For how to create a Tracking Website record and add the generated code to the web-pages you want to monitor, see the :ref:`Tracking Websites topic <user-guide-marketing-tracking>`.
+With Oro Tracking Websites functionality, you can learn how many users have visited your website from links within a specific marketing campaign and what these users' actions at the site were. For the detailed guide on how to create a Tracking Website record and add the generated code to the web pages you want to monitor, see the :ref:`Tracking Websites <user-guide-marketing-tracking>` topic.
 
 
 .. toctree::
