@@ -15,30 +15,33 @@ To tune the tracking configuration:
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **System Configuration > General Setup > Tracking** in the menu to the left.
 
-   .. image:: /user_guide/img/marketing/configuration/tracking.png
+.. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. csv-table::
-      :header: "Option", "Description", "Default"
-      :widths: 10, 30, 10
+.. image:: /user_guide/img/marketing/configuration/tracking.png
+   :alt: Tracking configuration
 
-      "**Enable Tracking Statistics Aggregation**","If enabled, website visits information is aggregated for the statistics report. This improves statistics calculation time, but may have impact on the performance.","Enabled"
-      "**Enable Dynamic Tracking**","If enabled, tracking data will be processed in the real-time mode. Please note that this may affect performance.","Disabled"
-      "**Log Rotation Interval**","Defines how often log files must be processed if **Dynamic Tracking** is disabled.","1 hour"
-      "**Piwik Host**","The field must be specified if you want the tracking data to be sent to a Piwik account. The value corresponds to the Piwik analytics URL of your account.","None"
-      "**Piwik Token Auth**","The field must be specified if you want the tracking data to be sent to a Piwik account. The value corresponds to the Piwik `token_auth <http://piwik.org/faq/general/faq_114/>`_ field.","None"
 
-   .. note:: To enable the data transfer to a Piwik account, the **identifier** field of the Tracking Website record should be the same as the `Website ID <http://piwik.org/faq/general/faq_19212/>`_ used by Piwik.
+.. csv-table::
+  :header: "Option", "Description", "Default"
+  :widths: 10, 30, 10
 
-3. To enable/disable the feature:
+  "**Enable Tracking Statistics Aggregation**","If enabled, website visits information is aggregated for the statistics report. This improves statistics calculation time, but may have impact on the performance.","Enabled"
+  "**Enable Dynamic Tracking**","If enabled, tracking data will be processed in the real-time mode. Please note that this may affect performance.","Disabled"
+  "**Log Rotation Interval**","Defines how often log files must be processed if **Dynamic Tracking** is disabled.","1 hour"
+  "**Piwik Host**","The field must be specified if you want the tracking data to be sent to a Matomo (previously known as Piwik) account. The value corresponds to the Matomo analytics URL of your account.","None"
+  "**Piwik Token Auth**","The field must be specified if you want the tracking data to be sent to a Matomo (previously known as Piwik) account. The value corresponds to the Matomo `token_auth <https://matomo.org/faq/general/faq_114/>`_ field.","None"
 
-     a) Clear the **Use Default** box next to the option.
-     b) Check or clear the checkbox next to the option, or select the new value from the list, or type in the necessary information.
+.. note:: To enable the data transfer to a Matomo account, the **identifier** field of the Tracking Website record should be the same as the `Website ID <https://matomo.org/faq/general/faq_19212/>`_ used by Matomo.
 
-4. Click **Save Settings**.
+3. Clear the **Use Default** check box to customize the required option.
 
-.. important:: The **Reset** button in the upper right corner of the page will restore the latest saved values.
+4. Select the checkbox next to the option, choose a new value from the list, or type in the necessary information.
 
-.. note:: You can navigate to the Tracking Website management page using the Tracking website link at the bottom of the page.
+5. Click **Save Settings**.
+
+.. important:: The **Reset** button in the upper right corner of the page restores the latest saved values.
+
+.. note:: You can navigate to the tracking website management page using the tracking website link at the bottom of the page.
 
 .. finish
 
@@ -46,6 +49,7 @@ Related Articles
 ^^^^^^^^^^^^^^^^
 
 * :ref:`Marketing Features <marketing-system-configuration>`
+* :ref:`Tracking Websites <user-guide-marketing-tracking>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
