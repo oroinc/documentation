@@ -3,7 +3,7 @@
 .. _cloud_maintenance:
 
 Maintenance
------------
+===========
 
 The OroCloud application maintenance tool helps you to run and control complex maintenance operations with the existing Oro application environment that is hosted in the OroCloud environment.
 
@@ -15,8 +15,7 @@ The OroCloud application maintenance tool helps you to run and control complex m
    before_you_begin
    basic_use
    advanced_use
-   faq
    patches
-   custom
+   faq
 
-* Technical :ref:`support <cloud_support>` service details (exclusions, priorities, SLA, etc).
+* :ref:`Technical support <cloud_support>` service details (exclusions, priorities, SLA, etc).
