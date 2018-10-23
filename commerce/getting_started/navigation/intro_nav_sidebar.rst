@@ -195,6 +195,7 @@ You can perform the following actions with the task list sidebar widget:
    * To change a number of displayed tasks, enter the required value into the **Number of tasks to show** field and click **OK**.
 
      .. image:: /user_guide/img/getting_started/widgets/task_list/widgets_task_list_configuration.png
+        :width: 40%
 
 * **Remove**
 

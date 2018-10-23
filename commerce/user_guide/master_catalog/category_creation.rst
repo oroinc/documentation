@@ -58,6 +58,7 @@ To create a master catalog category:
    To make OroCommerce show or hide the master catalog category for a particular customer or customer group, create a visibility restriction by clicking the corresponding tab and selecting one of the following options:
 
    .. image:: /user_guide/img/master_catalog/master_catalog_6.png
+      :width: 50%
 
    * *Parent Category* — Inherit the configuration from the parent category.
    * *Config* — Inherit the :ref:`category visibility settings <user-guide--customers--configuration--visibility>` customized in the system configuration menu.
@@ -73,6 +74,7 @@ To create a master catalog category:
    Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
 
    .. image:: /user_guide/img/master_catalog/master_catalog_7.png
+      :width: 50%
 
 9. Click **Save** on the top right.
 

@@ -62,6 +62,7 @@ Delete an Quote (From the Quote Details)
 3. Click **Delete** on the top right of the page.
 
    .. image:: /user_guide/img/quotes/quotes_delete1.png
+      :width: 40%
 
 #. In the confirmation dialog, click **Yes, Delete**.
 

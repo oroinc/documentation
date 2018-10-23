@@ -23,6 +23,7 @@ Here, you can perform the following actions:
 5. **Manage columns**: Open the **Grid Settings** by clicking |IcConfig| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. Toggle on and off the column show option using the **Show** check box.
 
    .. image:: /user_guide/img/getting_started/ui_components/manage_columns.png
+      :width: 40%
       :class: with-border
 
 6. **View per page**: In the list, select the number of items to be displayed per page. Available options are 10, 25, 50, and 100.

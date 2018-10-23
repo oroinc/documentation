@@ -23,6 +23,7 @@ To retrieve your API token on the Zendesk side:
 2. Navigate to the **CHANNELS>API**.
 
    .. image:: /admin_guide/img/zendesk/zendesk_api.png
+      :width: 40%
 
 3. Make sure the **Token Access** is enabled.
 

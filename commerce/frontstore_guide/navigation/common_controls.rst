@@ -112,7 +112,7 @@ The following action buttons can be available:
    * You can manually select the columns by clicking on the check box next to the required field.
    * To show/hide all columns in the table, click **Select All**/**Deselect All**.
    * To clear customization, click |IcReset| **Reset**.
-   * To change the order of the columns, click on the ellipsis icon |IcHandle| next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
+   * To change the order of the columns, click the ellipsis icon next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
 
 4. Filters: click |IcFilter| to show/hide filters to select specific items to be shown in the table. More information on filters is provided in the Filters section below.
 

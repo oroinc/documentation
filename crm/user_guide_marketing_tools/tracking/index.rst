@@ -79,6 +79,7 @@ Here you can:
 * Preview the general website tracking details (including the identifier and the URL).
 
   .. image:: /img/marketing/tracking_view_general.png
+     :width: 40%
      :alt: The general website tracking details
 
 * Get the tracking code that may be incorporated into the website page to :ref:`track <user-guide-how-to-track>` the

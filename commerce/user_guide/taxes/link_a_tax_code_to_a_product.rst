@@ -14,6 +14,8 @@ To link a tax code to a product:
 #. In the **General** section, in the Tax Code list, select the tax code that matches tax regulation for the product.
 
    .. image:: /user_guide/img/taxes/taxes_from_product_view/ProductTaxCode.png
+      :width: 40%
+
 
 #. Click **Save**.
 
