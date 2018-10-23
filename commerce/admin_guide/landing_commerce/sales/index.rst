@@ -13,7 +13,7 @@ Learn how to enable the quick order form, promotions, guest shopping lists, esta
 * :ref:`Order History (Open Orders) <configuration--guide--commerce--configuration--sales-order-history>`
 * :ref:`Contacts <sys--conf--commerce--sales--contacts>`
 * :ref:`Shopping List <user-guide--system-configuration--commerce-sales-shopping-list>`
-
+* :ref:`Enable Mass Product Actions <user-guide--system-configuration--commerce-sales-shopping-list--mass-action>`
 
 .. toctree::
    :titlesonly:
