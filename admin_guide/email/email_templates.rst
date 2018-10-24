@@ -41,7 +41,7 @@ in the template. If no entity name is defined, only system variables will be ava
     If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the
     *"Entity Name"* value should be *"Email"*.
 
-3. Define the email template. Click on the necessary variable to add drag it to the text box. 
+3. Define the email template. Click on the necessary variable to drag it to the text box.
 
 .. image:: ../img/marketing/email_template_ex.png
 
@@ -53,8 +53,64 @@ in the template. If no entity name is defined, only system variables will be ava
 
 .. image:: ../img/marketing/email_template_preview.png
 
-5. If you are satisfied with the preview, save the template in the system with the button in the top right corner of
-   the page.
+.. important:: Keep in mind that when editing HTML email templates, you pass them to the WYSIWYG editor. WYSIWYG automatically tries to modify the given HTML template against the HTML specifications. Therefore, the text and tags that violate the HTML specifications should be wrapped up in the HTML comment. For example, there should not be any other tags or text between the **<table></table>** tags except **thead**, **tbody**, **tfoot**, **th**, **tr**, **td**.
+
+   Examples:
+
+   Invalid template:
+
+   .. code-block:: php
+       :linenos:
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>ACME</strong></th>
+                        </tr>
+                    </thead>
+                    {% for item in collection %}
+                    <tbody>
+                        {% for subItem in item %}
+                        <tr>
+                            {% if loop.first %}
+                            <td>{{ subItem.key }}</td>
+                            <td>{{ subItem.value }}</td>
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    {% endfor %}
+                </table>
+
+
+   Valid template:
+
+       .. code-block:: php
+           :linenos:
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th><strong>ACME</strong></th>
+                        </tr>
+                    </thead>
+                    <!--{% for item in collection %}-->
+                    <tbody>
+                        <!--{% for subItem in item %}-->
+                        <tr>
+                            <!--{% if loop.first %}-->
+                            <td>{{ subItem.key }}</td>
+                            <td>{{ subItem.value }}</td>
+                            <!--{% endif %}-->
+                        </tr>
+                        <!--{% endfor %}-->
+                    </tbody>
+                    <!--{% endfor %}-->
+                </table>
+
+
+
+5. If you are satisfied with the preview, save the template in the system with the button in the top right corner on the page.
 
    
 Email Template Languages
@@ -91,25 +147,12 @@ template to the pre-defined list of subscribers.*
 
     If you want to track the user-activity related to the emails sent within the Email Campaign, add a piece of 
     :ref:`Tracking Website <user-guide-marketing-tracking>` code to the email template. 
-  
-  
-  
-.. |IcDelete| image:: /img/buttons/IcDelete.png
-   :align: middle
 
-.. |IcEdit| image:: /img/buttons/IcEdit.png
-   :align: middle
-   
-.. |IcClone| image:: /img/buttons/IcClone.png
-   :align: middle
-   
-.. |BGotoPage| image:: /img/buttons/BGotoPage.png
-   :align: middle
-   
-.. |Bdropdown| image:: /img/buttons/Bdropdown.png
-   :align: middle
 
 .. |BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle
    
 .. |email_template_create| image:: ../img/marketing/email_template_create.png
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
