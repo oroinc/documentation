@@ -118,7 +118,7 @@ This way, we create all the required first level menus.
 
 **Create Sub-level Menu**
 
-Once all fist level nodes have been created, we can create the sub-menu nodes (second level menus) that would populate root nodes.
+Once all first level nodes have been created, we can create the sub-menu nodes (second level menus) that would populate root nodes.
 
 Each of the main menu sections will have the following second level menus:
 
