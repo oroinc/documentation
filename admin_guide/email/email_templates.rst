@@ -36,7 +36,7 @@ Create Email Templates
    .. important::
       If you want to use the template for :ref:`autoresponses <admin-configuration-system-mailboxes-autoresponse>`, the **Entity Name** field value should be **Email**.
 
-3. Define the email template. Click on the necessary variable to add drag it to the text box. 
+3. Define the email template. Click on the necessary variable to drag it to the text box.
 
    .. image:: ../img/marketing/email_template_ex.png
 
@@ -45,6 +45,60 @@ Create Email Templates
 4. You can click :guilabel:`Preview` button to check your template.
 
 .. image:: ../img/marketing/email_template_preview.png
+
+.. important:: Keep in mind that when editing HTML email templates, you pass them to the WYSIWYG editor. WYSIWYG automatically tries to modify the given HTML template against the HTML specifications. Therefore, the text and tags that violate the HTML specifications should be wrapped up in the HTML comment. For example, there should not be any other tags or text between the **<table></table>** tags except **thead**, **tbody**, **tfoot**, **th**, **tr**, **td**.
+
+   Examples:
+
+   Invalid template:
+
+   .. code-block:: php
+       :linenos:
+
+             <table>
+                <thead>
+                    <tr>
+                        <th><strong>ACME</strong></th>
+                    </tr>
+                </thead>
+                {% for item in collection %}
+                <tbody>
+                    {% for subItem in item %}
+                    <tr>
+                        {% if loop.first %}
+                        <td>{{ subItem.key }}</td>
+                        <td>{{ subItem.value }}</td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                {% endfor %}
+             </table>
+
+   Valid template:
+
+   .. code-block:: php
+       :linenos:
+
+             <table>
+                <thead>
+                    <tr>
+                        <th><strong>ACME</strong></th>
+                    </tr>
+                </thead>
+                <!--{% for item in collection %}-->
+                <tbody>
+                    <!--{% for subItem in item %}-->
+                    <tr>
+                        <!--{% if loop.first %}-->
+                        <td>{{ subItem.key }}</td>
+                        <td>{{ subItem.value }}</td>
+                        <!--{% endif %}-->
+                    </tr>
+                    <!--{% endfor %}-->
+                </tbody>
+                <!--{% endfor %}-->
+             </table>
 
 5. If you are satisfied with the preview, click the :guilabel:`Save` button in the upper-right corner of
    the page.
