@@ -64,6 +64,62 @@ The full list of these functions is the following:
 .. contents:: :local:
     :depth: 2
 
+.. important:: Keep in mind that when editing HTML email templates, you pass them to the WYSIWYG editor. WYSIWYG automatically tries to modify the given HTML template against the HTML specifications. Therefore, the text and tags that violate the HTML specifications should be wrapped up in the HTML comment. For example, there should not be any other tags or text between the **<table></table>** tags except **thead**, **tbody**, **tfoot**, **th**, **tr**, **td**.
+
+   Examples:
+
+   Invalid template:
+
+   .. code-block:: php
+       :linenos:
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>ACME</strong></th>
+                    </tr>
+                </thead>
+                {% for item in collection %}
+                <tbody>
+                    {% for subItem in item %}
+                    <tr>
+                        {% if loop.first %}
+                        <td>{{ subItem.key }}</td>
+                        <td>{{ subItem.value }}</td>
+                        {% endif %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                {% endfor %}
+            </table>
+
+
+   Valid template:
+
+   .. code-block:: php
+       :linenos:
+
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>ACME</strong></th>
+                    </tr>
+                </thead>
+                <!--{% for item in collection %}-->
+                <tbody>
+                    <!--{% for subItem in item %}-->
+                    <tr>
+                        <!--{% if loop.first %}-->
+                        <td>{{ subItem.key }}</td>
+                        <td>{{ subItem.value }}</td>
+                        <!--{% endif %}-->
+                    </tr>
+                    <!--{% endfor %}-->
+                </tbody>
+                <!--{% endfor %}-->
+            </table>
+
+
 Functions
 ^^^^^^^^^
 
@@ -171,12 +227,12 @@ get_event_recurrence_pattern
 .. code-block:: php
     :linenos:
 
-        {% if get_event_recurrence_pattern(entity) %}
+        <!--{% if get_event_recurrence_pattern(entity) %}-->
             <tr>
                 <td style="width: 65pt; padding: 0 5pt 0 9pt; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; vertical-align: top"><strong>Repeats:</strong></td>
                 <td style="padding: 0 9pt 0 0; line-height: 1.3em; font-family: Arial, Helvetica, sans-serif; font-size: 10pt; vertical-align: top">{{ get_event_recurrence_pattern(entity) }}</td>
             </tr>
-        {% endif %}
+        <!--{% endif %}-->
 
 website_path
 ~~~~~~~~~~~~
@@ -248,15 +304,15 @@ get_payment_methods (OroCommerce Only)
 .. code-block:: php
     :linenos:
 
-        % set payment_methods = get_payment_methods(entity) %}
+        {% set payment_methods = get_payment_methods(entity) %}
 
-        {% if  payment_methods|length == 1 %}
+        <!--{% if  payment_methods|length == 1 %}-->
             <h4>Payment Method:</h4>
-            {{ payment_methods[0] }}
-        {% elseif payment_methods|length > 1 %}
+            <!--{{ payment_methods[0] }}-->
+        <!--{% elseif payment_methods|length > 1 %}-->
             <h4>Payment Methods:</h4>
-            {{ payment_methods|join(', ') }}
-        {% endif %}
+            <!--{{ payment_methods|join(', ') }}-->
+        <!--{% endif %}-->
 
 rfp_products (OroCommerce Only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -301,7 +357,7 @@ rfp_products (OroCommerce Only)
     :linenos:
 
         {% set products = rfp_products(entity) %}
-        {% if products|length %}
+        <!--{% if products|length %}-->
             <table style="border: 1px solid black;margin-top: 10px">
                 <thead>
                     <tr>
@@ -312,28 +368,28 @@ rfp_products (OroCommerce Only)
                         <th><strong>Comment</strong></th>
                     </tr>
                 </thead>
-                {% for product in products %}
-                    {% set numItems = product.items|length %}
+                <!--{% for product in products %}-->
+                    <!--{% set numItems = product.items|length %}-->
                     <tbody>
-                        {% for item in product.items %}
+                        <!--{% for item in product.items %}-->
                             <tr>
-                                {% if loop.first %}
+                                <!--{% if loop.first %}-->
                                     <td rowspan="{{ numItems }}">{{ product.sku }}</td>
                                     <td rowspan="{{ numItems }}">{{ product.name }}</td>
-                                {% endif %}
+                                <!--{% endif %}-->
 
                                 <td>{{ item.quantity }} {{ item.unit }}</td>
                                 <td>{{ item.price ? item.price|oro_format_price : '' }}</td>
 
-                                {% if loop.first %}
+                                <!--{% if loop.first %}-->
                                     <td rowspan="{{ numItems }}">{{ product.comment }}</td>
-                                {% endif %}
+                                <!--{% endif %}-->
                             </tr>
-                        {% endfor %}
+                        <!--{% endfor %}-->
                     </tbody>
-                {% endfor %}
+                <!--{% endfor %}-->
             </table>
-        {% endif %}
+        <!--{% endif %}-->
 
 order_line_items (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -376,15 +432,15 @@ order_line_items (OroCommerce only)
 .. code-block:: php
     :linenos:
 
-        {% set data = order_line_items(entity) %}
-        {% for item in data.lineItems %}
+        <!--{% set data = order_line_items(entity) %}-->
+        <!--{% for item in data.lineItems %}-->
             <tr>
                 <td>{{ item.product_name }}<br>SKU #: {{ item.product_sku }}</td>
                 <td>{{ item.quantity|oro_format_short_product_unit_value(item.unit) }}</td>
                 <td>{{ item.price|oro_format_price }}</td>
                 <td>{{ item.subtotal|oro_format_price }}</td>
             </tr>
-        {% endfor %}
+        <!--{% endfor %}-->
 
 .. note:: If none of these Twig functions cover your cases, you can **create a custom Twig function** that returns the desired data that you can use in email templates.
     Please, see `OroEmailBundle documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md>`_  for details.
