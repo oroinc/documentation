@@ -91,9 +91,7 @@ Table of Contents
 
    shopping_lists/index
 
-   orders/index
-
-   payment/index
+   orders/index  
 
    shipping/index
 

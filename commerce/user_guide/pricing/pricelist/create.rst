@@ -70,7 +70,7 @@ To create a new price list:
 
       You can override the existing rule-based price. A manual entry has higher priority.
 
-5. In the **Price Calculation Rules** section, specify rules for price calculation based on the price attributes (e.g. mrsp) and other product details. You may use conditions to apply the rule to the subset or the filtered products. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
+5. In the **Price Calculation Rules** section, specify rules for price calculation based on the price attributes (e.g. msrp) and other product details. You may use conditions to apply the rule to the subset or the filtered products. See :ref:`Automated Rule-Based Price Management <user-guide--pricing--price-list-auto>` for more information.
 
 .. TODO elaborate... deeply. Can we have multiple rule + condition pair per price list?
 
