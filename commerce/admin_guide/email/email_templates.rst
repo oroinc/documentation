@@ -68,7 +68,7 @@ The full list of these functions is the following:
 
    Examples:
 
-   Invalid template:
+   **Invalid template**:
 
    .. code-block:: php
        :linenos:
@@ -94,7 +94,7 @@ The full list of these functions is the following:
         </table>
 
 
-   Valid template:
+   **Valid template**:
 
    .. code-block:: php
        :linenos:
@@ -118,8 +118,6 @@ The full list of these functions is the following:
             </tbody>
             <!--{% endfor %}-->
         </table>
-
-
 
 Functions
 ^^^^^^^^^
@@ -296,24 +294,99 @@ get_payment_methods (OroCommerce Only)
 
     get_payment_methods(Order $entity)
 
-**Description:** Return the allowed payment methods for orders.
+**Description:** Returns the allowed payment methods for orders.
 
-**Returns:** array of strings (array of the payment methods names)
+**Returns:** array of \Oro\Bundle\PaymentBundle\Twig\DTO\PaymentMethodObject objests with payment method label and options
+(can be used as array of strings thanks to PaymentMethodObject::__toString method)
 
 **Example:**
 
-.. code-block:: php
+.. code-block:: twig
     :linenos:
 
     {% set payment_methods = get_payment_methods(entity) %}
 
-    <!--{% if  payment_methods|length == 1 %}-->
+    {% if  payment_methods|length == 1 %}
         <h4>Payment Method:</h4>
-        <!--{{ payment_methods[0] }}-->
-    <!--{% elseif payment_methods|length > 1 %}-->
+        {{ payment_methods[0] }}
+    {% elseif payment_methods|length > 1 %}
         <h4>Payment Methods:</h4>
-        <!--{{ payment_methods|join(', ') }}-->
-    <!--{% endif %}-->
+        {{ payment_methods|join(', ') }}
+    {% endif %}
+
+**Alternative example:**
+
+.. code-block:: twig
+    :linenos:
+
+    {% set payment_methods = get_payment_methods(entity) %}
+    {% if  payment_methods|length == 1 %}
+        <strong>Payment Method: </strong>
+    {% elseif payment_methods|length > 1 %}
+        <strong>Payment Methods: </strong>
+    {% endif %}
+    {% for payment_method in payment_methods %}
+        {{ payment_method.label }}
+        {% if payment_method.options|length > 0 %}
+            {{- ' (' ~ payment_method.options|join(', ') ~ ')' -}}
+        {% endif %}
+        <br/>
+    {% endfor %}
+
+get_payment_status_label (OroCommerce only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: php
+    :linenos:
+
+    get_payment_status_label(Order $entity)
+
+**Description:** Returns the translated label for the payment status.
+See the \Oro\Bundle\PaymentBundle\Formatter\PaymentStatusLabelFormatter::formatPaymentStatusLabel method for details.
+
+**Returns:** string
+
+**Example:** See an example for the `get_payment_status (OroCommerce only)`_ method.
+
+get_payment_status (OroCommerce only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: php
+    :linenos:
+
+    get_payment_status(Order $entity)
+
+**Description:** Returns the payment status for requested order.
+
+**Returns:** string, one of \Oro\Bundle\PaymentBundle\Provider\PaymentStatusProvider class statuses
+('full', 'partially', 'invoiced', 'authorized', 'declined', 'pending')
+
+**Example:**
+
+.. code-block:: twig
+    :linenos:
+
+    <strong>Payment Status: </strong>{{ get_payment_status_label(get_payment_status(entity)) }}
+
+oro_order_shipping_method_label (OroCommerce only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: php
+    :linenos:
+
+    oro_order_shipping_method_label(string $shippingMethod, string $shippingMethodType)
+
+**Description:** Returns the translated label of the order`s shipping method.
+
+**Returns:** string
+
+**Example:**
+
+.. code-block:: twig
+    :linenos:
+
+    {% set shipping_method = oro_order_shipping_method_label(entity.shippingMethod, entity.shippingMethodType) %}
+    <strong>Shipping Method: </strong>{{ shipping_method }}<br/>
 
 rfp_products (OroCommerce Only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -358,7 +431,7 @@ rfp_products (OroCommerce Only)
     :linenos:
 
     {% set products = rfp_products(entity) %}
-    <!--{% if products|length %}-->
+    {% if products|length %}
         <table style="border: 1px solid black;margin-top: 10px">
             <thead>
                 <tr>
@@ -390,7 +463,32 @@ rfp_products (OroCommerce Only)
                 </tbody>
             <!--{% endfor %}-->
         </table>
-    <!--{% endif %}-->
+    {% endif %}
+
+line_items_discounts (OroCommerce only)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: php
+    :linenos:
+
+    line_items_discounts(Order $entity)
+
+**Description:** Returns array of discount total sum for every order line item.
+
+**Returns:** array
+
+.. code-block:: php
+    :linenos:
+
+    array: [
+        '123123' => [ // Line Item ID
+            'value' => 15.065, \\ float, total sum of discount for the line item
+            'currency' => 'USD', \\ string, Currency of discount
+        ],
+        ...
+    ]
+
+**Example:** See an example for `order_line_items (OroCommerce only)`_ method.
 
 order_line_items (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -415,6 +513,9 @@ order_line_items (OroCommerce only)
                 'quantity' => 1.00, \\ float, Product quantity
                 'unit' => 'item', \\ string, Product unit
                 'price' => $price, \\ \Oro\Bundle\CurrencyBundle\Entity\Price object, Product price
+                'comment' => 'Comment for this line Item', string
+                'ship_by' => $price, \\ \DateTime, Line item ship by field
+                'id' => $id, \\ int|string, Line item identifier value
                 'subtotal' => $price, \\\Oro\Bundle\CurrencyBundle\Entity\Price object, Line Item subtotal
             ],
             ...
@@ -426,22 +527,54 @@ order_line_items (OroCommerce only)
             ],
             ...
         ],
+        'total' => [
+            'label' => 'Total', \\ string, label for Total
+            'totalPrice' => $price, \\\Oro\Bundle\CurrencyBundle\Entity\Price object, Total sum Price for all order line items
+        ],
     ]
 
 **Example:**
 
-.. code-block:: php
+.. code-block:: twig
     :linenos:
 
-    <!--{% set data = order_line_items(entity) %}-->
-    <!--{% for item in data.lineItems %}-->
+    <table style="border: 1px solid black;margin-top: 10px">
+        <thead>
         <tr>
-            <td>{{ item.product_name }}<br>SKU #: {{ item.product_sku }}</td>
-            <td>{{ item.quantity|oro_format_short_product_unit_value(item.unit) }}</td>
-            <td>{{ item.price|oro_format_price }}</td>
-            <td>{{ item.subtotal|oro_format_price }}</td>
+            <th><strong>Item</strong></th>
+            <th><strong>Quantity</strong></th>
+            <th><strong>Price</strong></th>
+            <th><strong>Subtotal</strong></th>
+            <th><strong>Ship By</strong></th>
+            <th><strong>Notes</strong></th>
         </tr>
-    <!--{% endfor %}-->
+        </thead>
+        <tbody>
+        <!--{% set data = order_line_items(entity) %}-->
+        <!--{% set lineItemDiscounts = line_items_discounts(entity) %}-->
+        <!--{% for item in data.lineItems %}-->
+            <tr>
+                <td>
+                    {{ item.product_name }}
+                    <br>
+                    SKU #: {{ item.product_sku }}
+                    <br>
+                </td>
+                <td>{{ item.quantity|oro_format_short_product_unit_value(item.unit) }}</td>
+                <td>{{ item.price|oro_format_price }}</td>
+                <td>
+                    {{ item.subtotal|oro_format_price }}
+                    {% set matchedDiscount = lineItemDiscounts[item.id] %}
+                    {% if matchedDiscount is not null and matchedDiscount.value > 0 %}
+                        <br/>{{ (-matchedDiscount.value)|oro_format_currency({'currency': matchedDiscount.currency}) }}
+                    {% endif %}
+                </td>
+                <td>{{ item.ship_by }}</td>
+                <td>{{ item.comment }}</td>
+            </tr>
+        <!--{% endfor %}-->
+        </tbody>
+    </table>
 
 .. note:: If none of these Twig functions cover your cases, you can **create a custom Twig function** that returns the desired data that you can use in email templates.
     Please, see `OroEmailBundle documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md>`_  for details.
@@ -472,6 +605,7 @@ On top of functions, you can use filters in email templates. The full set of the
 * oro_format_datetime_organization
 * `oro_format_name <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md#oro_format_name>`_
 * `oro_format_price <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Twig/CurrencyExtension.php#L111>`_
+* `oro_format_currency <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212>`_
 * `oro_format_short_product_unit_value <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-value-formatting.md#oro_format_short_product_unit_value>`_
 * `join <https://twig.symfony.com/doc/2.x/filters/join.html>`_
 
