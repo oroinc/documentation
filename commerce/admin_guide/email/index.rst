@@ -29,4 +29,3 @@ Click on the topics below to learn more:
    email_templates
    notification_rules
   
-                         
