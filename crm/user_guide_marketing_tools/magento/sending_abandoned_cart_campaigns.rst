@@ -48,7 +48,7 @@ In order to send an ACC, you need to have:
 Install Abandoned Cart Extension
 --------------------------------
 
-OroCRM supports out-of-the-box Magento Abandoned Cart Campaign functionality for Enterprise and Community Edition users, which means that no additional installation is required. However, if you happen to use a custom Enterprise or Community Edition application without the ACC extension, you can install it separately. For this, use the `Composer <https://getcomposer.org/doc/03-cli.md#require>`_ to install the *oro/abandoned-cart* package in your Oro application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
+OroCRM supports out-of-the-box Magento Abandoned Cart Campaign functionality for Enterprise and Community Edition users, which means that no additional installation is required. However, if you happen to use a custom Enterprise or Community Edition application without the ACC extension, you can install it separately. For this, use the `Composer <https://getcomposer.org/doc/03-cli.md#require>`_ to install the *oro/magento-abandoned-cart* package in your Oro application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
 
 .. note:: Ensure that your Magento channel has the Abandoned Cart Campaign entity added to the list of entities managed by the channel. Otherwise, Abandoned Cart Campaign entity will not be available in the main menu.
 
