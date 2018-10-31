@@ -67,9 +67,9 @@ The required packages (dependencies) are listed in the following way:
         "oro/crm": "2.x-dev",
         "oro/platform-serialised-fields": "2.x-dev",
         "oro/crm-hangouts-call-bundle": "2.x-dev",
-        "oro/crm-abandoned-cart": "2.x-dev",
+        "oro/magento-abandoned-cart": "2.x-dev",
         "oro/crm-magento-embedded-contact-us": "2.x-dev",
-        "oro/crm-mail-chimp": "2.x-dev",
+        "oro/mailchimp": "2.x-dev",
         "oro/crm-dotmailer": "2.x-dev",
         "oro/crm-zendesk": "2.x-dev"
         },
