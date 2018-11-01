@@ -68,7 +68,7 @@ Oro applications are compatible with most web servers with PHP support, but we r
 |                   | * xml                                             |
 |                   | * zip                                             |
 +-------------------+---------------------------------------------------+
-| *Database*        | * `MySQL`_ 5.1 and above                          |
+| *Database*        | * `MySQL`_ 5.7 and above                          |
 |                   |                                                   |
 |                   | .. note:: Latest version of `mariaDB` may be used |
 |                   |    at one's own risk. Oro applications are not    |
@@ -78,7 +78,12 @@ Oro applications are compatible with most web servers with PHP support, but we r
 | *Process Control* | * `Supervisor`_ or alternative                    |
 +-------------------+---------------------------------------------------+
 
+.. note::
+
+    It is recommended to disable `phar` PHP extension to reduce the risk of `PHP unserialization vulnerability`_.
+
 .. _`here`: https://getcomposer.org/doc/articles/versions.md#tilde-version-range-
+.. _`PHP unserialization vulnerability`: https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf
 
 Enterprise Edition Software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -87,10 +92,10 @@ Enterprise edition is built to support better scale and performance. It is compa
 
 +------------------+-----------------------------------------------------+
 | *PHP Extensions* | * pgsql                                             |
-+==================+=====================================================+
-| *Database*       | * `PostgreSQL`_ / `EnterpriseDB`_ 9.1 and above     |
 +------------------+-----------------------------------------------------+
-| *Search Index*   | * `Elasticsearch`_ 2.x                              |
+| *Database*       | * `PostgreSQL`_ / `EnterpriseDB`_ 9.6 and above     |
++------------------+-----------------------------------------------------+
+| *Search Index*   | * `Elasticsearch`_ 6.0.*                            |
 +------------------+-----------------------------------------------------+
 | *Job Queue*      | * `RabbitMQ`_ 3.5.8 and above with Erlang/OTP       |
 |                  |   version 18.0 and higher.                          |
@@ -107,7 +112,6 @@ PostgreSQL `uuid-ossp` extension should be loaded for proper doctrine's `guid` t
     :linenos:
 
     CREATE EXTENSION "uuid-ossp";
-
 
 Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~

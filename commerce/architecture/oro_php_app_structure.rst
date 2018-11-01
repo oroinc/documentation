@@ -82,7 +82,7 @@ These packages may be registered at:
 
 * The public `Packagist <https://packagist.org/>`_ (e.g. a third-party package)
 * `OroPackagist <https://packagist.oroinc.com/>`_ (e.g. other Oro package that was registered earlier)
-* Bower or NPM packages from `Oro Asset Packagist <https://asset-packagist.orocrm.com/>`_.
+* Bower or NPM packages from `Oro Asset Packagist <https://asset-packagist.oroinc.com/>`_.
 
 For registration, Oro application or package submits the metadata to the composer using *composer.json* file located in the root directory of the application/package source code in the github repository:
 

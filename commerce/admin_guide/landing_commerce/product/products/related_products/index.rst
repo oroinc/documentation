@@ -1,28 +1,23 @@
+.. _sys--commerce--catalog--relate-products--main:
+
 Related Products
 ^^^^^^^^^^^^^^^^
 
 .. begin_related_products_configuration
 
-Enable and Set Up Related Products Globally
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. begin_related_products_definition
 
-.. include:: /admin_guide/landing_commerce/product/products/related_products/global_related_products.rst
-   :start-after: begin_related_products_body
-   :end-before: finish_related_products_body
+Related products listed for the product may include accessories, services, and other items that are likely to be purchased in the same order. They facilitate navigation through the product catalog in the management console and help a buyer find the other products they may be interested in buying.
 
-Enable and Set Up Related Products per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In the system configuration, you can:
 
-.. include::/configuration_guide/products/related_products/organization_related_products.rst
-   :start-after: begin_related_products_body
-   :end-before: finish_related_products_body
+* Enable and disable related product management for the products.
+* Control the type of the relationship (one-way or bidirectional).
+* Limit the number of items displayed as related.
 
-Enable and Set Up Related Products per Website
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+These settings may apply :ref:`globally <sys--commerce--catalog--relate-products>`, on the :ref:`organization level <sys--users--organization--commerce--catalog--related-products>`, and on the :ref:`website level <sys--websites--commerce--catalog--related-products>`.
 
-.. include:: /admin_guide/landing_commerce/product/products/related_products/website_related_products.rst
-   :start-after: begin_related_products_body
-   :end-before: finish_related_products_body
+.. finish_related_products_definition
 
 .. finish_related_products_configuration
 
@@ -35,7 +30,5 @@ Enable and Set Up Related Products per Website
    :hidden:
 
    global_related_products
-
    organization_related_products
-
    website_related_products

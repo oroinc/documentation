@@ -3,11 +3,9 @@
 Configure Image Gallery per Website
 -----------------------------------
 
-
 .. begin
 
-You can configure whether to use popup or inline view for the image gallery per website:
-
+To configure whether to use popup or inline view for the image gallery per website:
 
 1. Navigate to the system configuration (click **System > Websites** in the main menu).
 2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.

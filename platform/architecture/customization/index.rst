@@ -1,4 +1,4 @@
-:orphan:
+.. _architecture--customization--customize:
 
 Oro Application Customization
 =============================

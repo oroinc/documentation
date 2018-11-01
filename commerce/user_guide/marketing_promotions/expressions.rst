@@ -1,4 +1,5 @@
 .. _user-guide--promotion--expression:
+
 .. promotion_expressions_begin
 
 Expression Language for Promotions

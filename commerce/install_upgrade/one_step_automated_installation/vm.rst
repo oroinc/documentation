@@ -5,57 +5,45 @@ Using the VirtualBox VM Image
 
 .. begin_virtual_machine_deployment
 
-For a more flexible and secure evaluation experience, you can deploy a virtual machine with Oro application demo instance on an Oracle VM VirtualBox server.
+For a more flexible and secure evaluation experience, you can deploy a virtual machine with Oro application demo instance in Oracle VM VirtualBox.
 
-.. note:: OS X, Windows, and Linux-based operation systems support Oracle VM VirtualBox Server.
+.. note:: OS X, Windows and Linux-based operation systems support Oracle VM VirtualBox.
 
-Ensure that the server is installed in your local or corporate environment and is accessible before you do the following steps:
+Before you proceed, ensure that VM VirtualBox v.5.2.* is installed in your local or corporate environment and is accessible.
 
-1. Download a virtual machine image by clicking **virtual machine** link in the `download section`_ on |the_site|. Save it to the location that is available to your VirtualBox instance.
+To download the virtual image:
 
-   .. note:: In the virtual machine image, the latest released version of Oro application is deployed on the SliTaz Linux OS that secures moderate resource consumption.
+1. On the `OroCommerce website <https://oroinc.com/b2b-ecommerce/download>`__, navigate to **Resources > Downloads**.
 
-2. Import the virtual machine into the VirtualBox Server:
+2. Download a virtual machine image by clicking on the **virtual machine** link.
 
-    a) Open a VirtualBox.
-    b) Click **File > Import Appliance** in the main menu.
-    c) Navigate to the *.ova* file you have saved at the previous step, select it and click **Open**.
-    d) Review the virtual appliance settings and modify resources to meet your server capabilities, if necessary. To do so, double-click on the item and type in the updated value. It is recommended to set at least 1024 MB in the RAM configuration.
-    e) Once you are happy with the virtual appliance configuration, click **Import**.
+   .. image:: /install_upgrade/img/vb/download_image.png
+      :alt: Download the virtual image
 
-    The VirtualBox imports the virtual machine from the image, copies virtual disk drives, and applies the provided configuration.
+3. Save the *.ova* file.
 
-3. Start the virtual machine you just imported and log in as *oro* (that is a default Oro application demo username). Leave the password blank.
+To import the virtual machine into VirtualBox:
 
-   .. note:: You can log in as a system administrator using the following credentials:
+1. Open VirtualBox.
+2. Click **File > Import Appliance** in the main menu.
 
-      * *username:* root
-      * *password:* root
+   .. image:: /install_upgrade/img/vb/import_appliance.png
+      :alt: Importing a virtual machine image via virtualbox
 
-4. Press **Enter** twice to open the Oro Application Demo information page.
-5. Follow the provided guidance to start using your local isolated Oro Application Demo.
+3. Locate the *.ova* file, select it and click **Open**.
 
-   You can open Oro application in the browser in the virtual machine and start your evaluation right away.
+   .. note:: In the virtual machine image, the latest released version of Oro application is deployed on the CentOS-7 OS that secures moderate resource consumption.
 
-   Alternatively, you can set up access to Oro application from other devices in your network.
+4. Review the virtual appliance settings and modify resources to meet your server capabilities, if necessary. To do so, double-click on the item and type in the updated value.
 
-   In order to do so, map the Oro application virtual machine IP address that is provided in the Oro Application Demo information page and the hostname you intend to use for quick access. You can either set up the mapping locally, in the *hosts* file on every device that you plan to access Oro application demo from, or configure the mapping on the local DNS server.
+5. Once you are happy with the virtual appliance configuration, click **Import**.
 
-   To set up the Oro application hostname locally:
+   The VirtualBox imports the virtual machine from the image, copies virtual disk drives, and applies the provided configuration.
 
-    a) Open the following file in the text editor with administrator permissions (use *run as administrator* option on Windows, and *sudo* on Linux and OS X):
+6. The application opens in a VirtualBox Google Chrome browser window.
 
-        * *Windows:* c:/windows/system32/drivers/etc/hosts
-        * *Linux:* /etc/hosts
+   Follow the steps on the screen to start working with the demo instance of the application.
 
-    b) Add the virtual appliance external IP address and the suggested appliance hostname (e.g. 129.168.1.31 acme.orocommerce.com) and save the file.
-
-   To start using the Oro application demo, type in the suggested hostname (e.g., acme.orocommerce.com) in the browser on your device.
 
 .. finish_virtual_machine_deployment
 
-.. _`download section`: http://www.oroinc.com/v/download
-
-.. |the_site| replace:: `oroinc.com/b2b-ecommerce`_
-
-.. _`oroinc.com/b2b-ecommerce`:  http://www.oroinc.com/b2b-ecommerce/

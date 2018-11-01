@@ -254,9 +254,9 @@ This section provides links to the online documentation for the latest OroCommer
        :titlesonly:
        :maxdepth: 3
 
-       architecture/index
-
        install_upgrade/index
+
+       architecture/index
 
        getting_started/index
 
@@ -269,6 +269,8 @@ This section provides links to the online documentation for the latest OroCommer
        frontstore_guide/index
 
        dev_guide/index
+
+       storefront_customization_guide/index
 
        admin_guide/index
 

@@ -5,4 +5,4 @@ Guests
 
 Learn how to enable guest access.
 
-* :ref:`Website Access <sys--conf--commerce--guest-access--global>`
+* :ref:`Website Access <sys--conf--commerce--guest--enable--access>`

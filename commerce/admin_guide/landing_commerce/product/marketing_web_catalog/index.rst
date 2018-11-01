@@ -9,9 +9,9 @@ You can control the frequency of the product collections indexation. By default,
 
 .. note::
 
-   Indexing simple filters that rely only on the product attributes happens via the message queue. Indexing task is queued immediately after the product collection node is saved. After the index task is processed, the product collection (or the part of product collection) is available on the Storefront immediately.
+   Indexing of simple filters that rely only on the product attributes happens via the message queue. Indexing task is queued immediately after the product collection node is saved. After the index task is processed, the product collection (or the part of product collection) is available on the Storefront immediately.
 
-   Indexing more complex filters (e.g. those that involve relationships with other entities) is separated from the common reindexation process and happens on a dedicated schedule via cron.
+   Indexing of more complex filters (e.g. those that involve relationships with other entities) is separated from the common reindexation process and happens on a dedicated schedule via cron.
 
 To change the default product collections indexation frequency:
 
@@ -21,17 +21,23 @@ To change the default product collections indexation frequency:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. The following page opens.
+3. The following page opens.
 
-   .. .. image:: /admin_guide/img/configuration/inventory/limitations.png
-         :class: with-border
+.. image:: /admin_guide/img/configuration/product/product_collections/product_collections_configuration.png
 
-3. To customize the Indexation Cron Schedule:
+Here, you can set the indexation cron schedule and the mass action limit.
+
+4. To customize the Indexation Cron Schedule:
 
      a) Clear the **Use Default** box next to the option.
      b) Select the desired frequency from the list.
 
-4. Click **Save**.
+5. To set the limit for mass actions:
+
+     a) Clear the **Use Default** box next to the option.
+     b) Specify the limited number of products that can be handled when using mass action.
+
+6. Click **Save Settings**.
 
 
 .. finish

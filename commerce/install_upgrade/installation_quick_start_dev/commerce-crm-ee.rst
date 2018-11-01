@@ -24,7 +24,7 @@ the |oro_app_name| application (for example, 1.6, 1.6.8, 1.6.9, etc.).
 * :ref:`User Guide: Commerce <user-guide>`
 * :ref:`User Guide: Marketing <user-guide-marketing>`
 * :ref:`User Guide: Business Intelligence <user-guide--business-intelligence>`
-* :ref:`Storefront Guide <frontstore-guide>`
+* :ref:`User Guide: Storefront <frontstore-guide>`
 * :ref:`Developer Guide <dev-guide>`
 * :ref:`Administration Guide <configuration--guide--landing--page>`
 
@@ -34,11 +34,3 @@ the |oro_app_name| application (for example, 1.6, 1.6.8, 1.6.9, etc.).
 .. _System Requirements: https://oroinc.com/b2b-ecommerce/doc/current/system-requirements
 .. _Installation via UI: https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/installation/installation-via-UI
 
-
-.. toctree::
-   :includehidden:
-   :titlesonly:
-   :maxdepth: 1
-   :hidden:
-
-   service/index

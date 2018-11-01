@@ -1,0 +1,68 @@
+.. _admin-configuration-ms-exchange:
+.. _admin-configuration-ms-exchange-integration-settings:
+
+Configure the Integration with MS Exchange Server
+=================================================
+
+.. contents:: :local:
+   :depth: 1
+
+To set up an integration between your Oro application and MS Exchange Server, define the settings on the MS Exchange Side and the Oro application side.
+
+MS Exchange Side 
+----------------
+
+You need Microsoft Exchange Server version 2007 or newer.
+
+The administrator of the Microsoft Exchange Server account must create at least one user with the permission to impersonate necessary accounts on the related Exchange Server (super-user).
+
+The impersonation procedure is different subject to a specific MS Exchange version. It is described in detail in the relevant documents from the `Microsoft API and reference catalog <https://msdn.microsoft.com/en-us/library>`_
+(for example, this is the `document <https://msdn.microsoft.com/en-us/library/office/dn722376(v=exchg.150).aspx>`_ for Exchange Server 2013).
+
+Oro Application Side
+--------------------
+
+To configure MS Exchange integration settings in your Oro application:
+
+1. Navigate to **System > Configuration > System Configuration > Integrations > MS Exchange**.
+
+   The Enterprise edition of Oro applications supports integration with Microsoft Exchange server. This means that emails from mailboxes on the MS Exchange server can be automatically uploaded to the Oro application.
+
+   This functionality enables using a single system-wide setting to collect letters of multiple users within organization.
+
+   .. image:: /user_guide/system/img/configuration/msexchange.png
+
+2. To enable MS Exchange Integration, check **Enabled** and define the following details:
+
+   .. csv-table::
+     :header: "**Name**","**Description**"
+     :widths: 10, 30
+   
+     "**Server**","Enter the name of your Microsoft Exchange Server instance"
+     "**Version**","Choose the server version from the drop-down menu"
+     "**Login and Password**","Enter the credentials of the super-user."
+     "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."
+
+3. Click **Save Settings**.
+
+
+
+1. Navigate to **System > Configuration > Integrations >  Email settings** in the main menu.
+2. Select the **Enable** check box and define the following details:
+
+   .. csv-table::
+      :header: "**Name**","**Description**"
+      :widths: 10, 30
+
+      "**Server**","Enter the name of your Microsoft Exchange Server instance"
+      "**Version**","Choose the server version from the drop-down menu"
+      "**Login and Password**","Enter the credentials of the super-user."
+      "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."
+
+3. Click **Save Settings**.
+
+Oro application collect emails from it and save it for the user (in the User's activities/Emails and in "My Email" section of this user):
+
+
+If the mailbox is on this server, its domain is permitted by the integration settings, it belongs to OroCRM user 
+and can be accessed by the super-user of Exchange Server, *

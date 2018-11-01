@@ -32,7 +32,7 @@ Campaign records in OroCRM are used to define general details of the marketing a
 Website Tracking
 ----------------
 
-With Oro Tracking Websites functionality you can learn how many users have visited your Web-site from links within a specific marketing campaign and what these users' actions at the site were. For how to create a Tracking Website record and add the generated code to the web-pages you want to monitor, see the :ref:`Tracking Websites topic <user-guide-marketing-tracking>`.
+With Oro Tracking Websites functionality, you can learn how many users have visited your website from links within a specific marketing campaign and what these users' actions at the site were. For the detailed guide on how to create a Tracking Website record and add the generated code to the web pages you want to monitor, see the :ref:`Tracking Websites <user-guide-marketing-tracking>` topic.
 
 .. include:: /user_guide_marketing_tools/magento/index.rst
    :end-before: magento_marketing_finish

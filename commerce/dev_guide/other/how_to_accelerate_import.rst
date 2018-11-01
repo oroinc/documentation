@@ -29,7 +29,7 @@ To disable it, a developer has to remove or comment inclusion of Xdebug library 
 php.ini).
 
 
-Run import Operation from the Command Line
+Run Import Operation from the Command Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
@@ -99,7 +99,7 @@ Here is a small example of its usage:
     File was successfully imported.
 
 
-Perform Import in the prod Environment
+Perform Import in the Prod Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The default environment for CLI is dev. In dev environment the application stores lots of data generally not required for real-life usage.
@@ -164,7 +164,7 @@ it will disable all optional listeners. Here is an example:
 .. code-block:: bash
     :linenos:
 
-    $ app/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
+    $ app/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod
 
 .. caution::
 

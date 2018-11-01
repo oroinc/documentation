@@ -15,14 +15,6 @@ Spotting major security issues
 
 If you believe you have discovered a vulnerability in OroPlatform, OroCRM or OroCommerce or have a security incident to report, please contact our dedicated email support security@oroinc.com
 
-If you feel the need, please use our PGP public key to keep your message safe and please provide us with a secure way to respond.
-
-This is our PGP key which is valid until March 08, 2017.
-
-* Key ID: 0x1D8F7D880A764A8E
-* Fingerprint: CE2A FEE0 72B9 4E7F F928 0F4B 1D8F 7D88 0A76 4A8E
-* Full key: https://keybase.io/orocrm/key.asc or http://pgp.mit.edu/pks/lookup?op=get&search=0x1D8F7D880A764A8E
-
 When properly notified of legitimate issues, we will do our best to acknowledge your emailed report, assign resources to investigate the issue and fix potential problems as quickly as possible.
 
 Responsible disclosure

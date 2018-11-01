@@ -93,10 +93,6 @@ Table of Contents
 
    orders/index
 
-   payment/index
-
-   shipping/index
-
    marketing_web_catalog/index
 
    marketing_landing_pages/index

@@ -71,8 +71,9 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Add and Manage Localizations <localization--localizations>`
 * :ref:`Configure Localization Settings <localization--localization>`
 * :ref:`Configure Language Settings <sys--config--sysconfig--general-setup--language-settings>`
-* :ref:`Content Translation <content-translation>`
-
+* :ref:`Translate Content <content-translation>`
+* :ref:`Translate Product Attribute Labels <localization--translations--labels>`
+* :ref:`Translate Content Blocks <user-guide--landing-pages--marketing--content-blocks--translation>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
@@ -91,3 +92,4 @@ For detailed information on these topics, please see the following sections:
    language_settings
    intro
    content_translation
+   label_translation
