@@ -1,33 +1,38 @@
 .. _admin-configuration-integrations-google:
 
-Google Integration Settings
-===========================
+Configure Google Integration Settings
+=====================================
 
 .. contents:: :local:
     :depth: 2
 
 
-The only integration by default available in the community editions is integration with Google. You can define the details used for Google Single Sign-on,  which enables users with the same Google account email address and OroCRM primary email address to log-in only once in the session. More information on integration with Google is described in the :ref:`Google Single Sign-on guide <user-guide-google-single-sign-on>`.
+To configure Google integration-related settings on the OroCRM/Commerce side:
 
+1. Navigate to **System > Configuration** in the main menu.
+2. In the panel to the left, click **System Configuration > Integrations > Google Settings**.
 
-.. image:: ../img/configuration/google_settings_new.png
-
+.. image:: /admin_guide/img/google_integration/google_settings.png
 
 Google Integration Settings
 ---------------------------
 
-Please, read `instructions on the Google side <https://support.google.com/cloud/answer/6158862?hl=en>`_ for obtaining credentials. Make sure that your OroCRM domain is included into `Authorized JavaScript origins` and `Authorized redirect URIs`.
+Before you begin, check out the `instructions on obtaining credentials the Google side <https://support.google.com/cloud/answer/6158862?hl=en>`_. Make sure that your Oro domain is included into `Authorized JavaScript origins` and `Authorized redirect URIs`.
+
+In the Google Integration Settings section, provide the following details:
 
 .. csv-table::
    :header: "Field", "Description"
    :widths: 10, 30
-  
+
    "**Client ID** ","The Client ID generated in the API console."
    "**Client Secret**","The Client Secret generated in the API console."
    "**Google API Key** ","The API Key generated in the API console. Provide a valid `Google API key <https://developers.google.com/maps/documentation/javascript/get-api-key>`_ to activate maps for addresses in the system."
 
 Google Sign-on
 --------------
+
+In the Google Sign-on section, provide the following details:
 
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Field**                    | Description                                                                                                                                                                                                                          |
@@ -39,12 +44,12 @@ Google Sign-on
 | **OAuth 2.0 for email sync** | Check **Enable** to activate sync. Please, make sure that Gmail API is enabled in `Google Developers Console <https://console.developers.google.com/apis>`_.                                                                         |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-
-.. image:: ../img/google_integration/oro_google_integration_new.jpg
-
+.. image:: /admin_guide/img/google_integration/oro_google_integration_new.jpg
 
 Google Hangouts
 ---------------
+
+In the Google Hangouts section, provide the following details:
 
 +-----------------------+-----------------------------------------------------+
 | **Option**            | **Description**                                     |

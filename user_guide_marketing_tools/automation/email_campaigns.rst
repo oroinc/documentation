@@ -78,8 +78,10 @@ There are two mandatory fields that **must** be defined:
   
   "Transport","The field defines the service to be used for the mailing. Out of the box, the only option is OroCRM. 
   Other services can be added in the course of customization."
-  "Template","Choose the :ref:`email template <user-guide-email-template>` to be used from the drop-down. 
-  
+  "Template","Choose the :ref:`email template <user-guide-email-template>` to be used from the drop-down.
+
+  .. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give the access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
+
   Please note that you can only see the templates assigned to no entity or to the same entity as the marketing list"
   
 4. Save the campaign in the system with the button in the top right corner of the page.

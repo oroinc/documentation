@@ -157,7 +157,7 @@ it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
 
-    $ app/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
+    $ app/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod
 
 .. caution::
 
@@ -194,4 +194,3 @@ The following example shows services that should be created to add a new import 
         tags:
             - { name: oro_importexport.processor, type: import, entity: "%orocrm_contact.entity.class%", alias: orocrm_contact.add }
             - { name: oro_importexport.processor, type: import_validation, entity: "%orocrm_contact.entity.class%", alias: orocrm_contact.add }
-
