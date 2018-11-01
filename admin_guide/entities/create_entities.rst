@@ -61,6 +61,7 @@ To create a new entity:
       - **Notes** --- Select this check box to enable adding notes to an entity record. Notes are added via the action button and are displayed in the **Activity** section on the page of an entity record.
         
         .. image:: ../img/entity_management/entity_addnotes.png
+           :width: 40%
            :alt: The add note button becomes available if the notes check box is enabled
 
         .. image:: ../img/entity_management/entity_addnotes2.png
@@ -76,9 +77,11 @@ To create a new entity:
    - **Enable Attachments** --- Defines whether it is possible to attach files to the entity records. Select **Yes** from the list if you want to enable adding attachments to entity records. Select **No** from the list if you want to disable adding attachments to entity records. The default value is **No**. Attachments are added via the action button and are displayed on the page of an entity record in the corresponding section. For more information on comments, see the topic on :ref:`attachments <user-guide-activities-attachments>`.
      
      .. image:: ../img/entity_management/entity_addattachment.png
+        :width: 50%
         :alt: The add attachment option becomes available if the enable attachments field is set to `yes`
 
      .. image:: ../img/entity_management/entity_addattachment2.png
+        :width: 50%
         :alt: View the list of attachments in the attachment section of an entity record page
 
    - **Max Allowed File Size, Mb** --- Type the upper limit of attachment size. Attachments whose size exceed the specified value will not be allowed.
@@ -122,6 +125,7 @@ To create a new entity:
    - **Enable Tags** --- Defines whether it is possible to assign tags to entity records. Select **Yes** to enable adding tags to entity records. Select **No** to disable adding tags to entity records. The default value is  **No**. For more information on tag management, see the :ref:`Tags topic <admin-guide-tag-management>`.
    
      .. image:: ../../user_guide/img/navigation/panel/search_vip_1.png
+        :width: 40%
         :alt: A sample of an entity record with assigned tags
 
    - **Workflow Step in Grid** --- Defines whether to show the column with information about the current workflow step in the grid that contains all entity records.  For more information on workflows, see the :ref:`Workflow Management topic <doc--system--workflow-management>`.     

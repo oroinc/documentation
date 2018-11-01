@@ -1,3 +1,5 @@
+.. _security:
+
 .. index::
     single: Security
 

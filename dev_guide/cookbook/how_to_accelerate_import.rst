@@ -28,11 +28,11 @@ To disable it, a developer has to remove or comment inclusion of Xdebug library 
 php.ini).
 
 
-Run import Operation from the Command Line
+Run Import Operation from the Command Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities the command line is your best choice. The OroPlatform provides the CLI command ``oro:import:csv``
+or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:csv``
 that allows to import records from the specified CSV file.
 
 .. code-block:: bash
@@ -96,7 +96,7 @@ Here is a small example of its usage:
     File was successfully imported.
 
 
-Perform Import in the prod Environment
+Perform Import in the Prod Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The default environment for CLI is dev. In dev environment the application stores lots of data generally not required for real-life usage.
@@ -140,7 +140,7 @@ import can be performed without it. To do so, start the import command in no int
 Disable Optional Listeners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-With the OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
+With OroPlatform you can disable some event listeners for the command execution. The ``oro:platform:optional-listeners``
 command shows the list of all such listeners:
 
 .. code-block:: bash
@@ -157,7 +157,7 @@ it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
 
-    $ bin/console oro:import:csv ~/Contact_2000.csv --processor orocrm_contact.add --disabled-listeners all --no-interaction --env prod
+    $ bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod
 
 .. caution::
 
@@ -170,7 +170,7 @@ it will disable all optional listeners. Here is an example:
 Write Custom Import Strategy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
+OroPlatform provides :class:`Oro\\Bundle\\ImportExportBundle\\Strategy\\Import\\ConfigurableAddOrReplaceStrategy`
 to be used as the default one. This strategy automatically handles field types, relations etc.
 However, all this functionality significantly slows down the import process and might perform
 operations and requests that are not required for some specific cases.

@@ -20,7 +20,9 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li>Application Settings</li>
+                     
+                     <li><a class="reference internal" href="../landing_system_configuration/general_setup_sysconfig/application_settings#admin-configuration-application"><span class="std std-ref">Application Settings</span></a></li>
+
                      <li><a class="reference internal" href="../localization/localization#sys-config-sysconfig-general-setup-localization-global"><span class="std std-ref">Localization</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
 
@@ -42,8 +44,8 @@ This section of the configuration guide introduces you to the general applicatio
       </div>
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-               <ul class="guideline__list">
-                     <li>User Settings</li>
+               <ul class="guideline__list">                     
+                     <li><a class="reference internal" href="../landing_system_configuration/general_setup_sysconfig/user_settings#admin-configuration-user-settings"><span class="std std-ref">User Settings</span></a></li>
                      <li><a class="reference internal" href="../landing_marketing/tracking_settings#admin-configuration-tracking-settings"><span class="std std-ref">Tracking</span></a></li>
                      <li><a class="reference internal" href="upload_settings#configuration-guide-system-configuration-general-setup-sysconfig-upload-settings"><span class="std std-ref">Upload Settings</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
                      <li><a class="reference internal" href="../email/email_configuration#user-guide-email-admin"><span class="std std-ref">Email Configuration</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-globe" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
@@ -77,15 +79,12 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a class="reference internal" href="../integrations/outlook#admin-configuration-ms-outlook-integration-settings"><span class="std std-ref">MS Outlook Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li><a class="reference internal" href="../integrations/dotmailer_integration_settings#admin-configuration-dotmailer-integration-settings"><span class="std std-ref">dotmailer Settings</span></a></li>
                      </ul>
           </div>
       </div>
    </div>
 
-
-.. In the integrations section you will find out how to setup the integration between Google, MS Exchange, MS Outlook, Dotmailer and your Oro application. For the integration with Google, you can provide domains for single sign-on, enable OAuth 2.0 for email synchronization and Google Hangouts. For MS Exchange, you can specify your server and login details. For MS Outlook, you will be able to configure the add-in by creating various dialog layouts and setting up synchronization settings.  In addition, you will be able to set synchronization settings for Dotmailer and define account and customer relations between OroCRM and OroCommerce.
 
 .. toctree::
    :titlesonly:

@@ -283,4 +283,4 @@ At last, you need to make the action accessible by creating a menu item:
 .. note::
 
     ``application_menu`` is just the name of the menu you want to hook your item into. In this
-    case, ``application_menu`` is an existing menu that is part of the OroPlatform.
+    case, ``application_menu`` is an existing menu that is part of OroPlatform.

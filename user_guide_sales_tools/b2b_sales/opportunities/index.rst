@@ -90,9 +90,6 @@ You can import the bulk details of updated or processed opportunity information 
 .. BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
    :align: middle
 
-.. |IcExpire| image:: /img/buttons/IcExpire.png
-   :align: middle
-
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 

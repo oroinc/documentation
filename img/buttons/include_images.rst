@@ -87,11 +87,11 @@ Images
 
 .. |IcTiles| raw:: html
 
-   <i class="fa fa-th fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-th" aria-hidden="true"></i>
 
 .. |IcDetails| raw:: html
 
-   <i class="fa fa-th-list fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-th-list" aria-hidden="true"></i>
 
 .. |IcCompactDetails| raw:: html
 
@@ -363,73 +363,65 @@ Images
 
    <i class="fa fa-user-o fa-lg" aria-hidden="true" style="color:#56A5EC"></i>
 
-.. |IcHandle| image:: /user_guide/img/getting_started/buttons/IcHandle.png
-   :target: https://www.orocommerce.com/wp-content/uploads/sites/3/documentation/orocommerce/documentation/current/IcHandle.png
-   :align: middle
-   :width: 11px
+.. |IcPassReset| raw:: html
 
-.. |IcPassReset| image:: /user_guide/img/getting_started/buttons/IcPassReset.png
-   :align: middle
+   <i class="fa fa-unlock-alt" aria-hidden="true"></i>
 
-.. |IcDisable| image:: /user_guide/img/getting_started/buttons/IcDisable.png
-   :align: middle
+.. |IcDisable| raw:: html
 
-.. |IcShow| image:: /user_guide/img/getting_started/buttons/IcShow.png
-   :align: middle
+   <i class="fa fa-ban" aria-hidden="true"></i>
 
-.. |IcHide| image:: /user_guide/img/getting_started/buttons/IcHide.png
-   :align: middle
+.. |IcShow| raw:: html
 
-.. |IcPosition| image:: /user_guide/img/getting_started/buttons/IcPosition.png
-   :align: middle
+   <i class="fa fa-eye" aria-hidden="true"></i>
 
-.. |IcRest| image:: /user_guide/img/getting_started/buttons/IcRest.png
-   :align: middle
+.. |IcHide| raw:: html
 
-.. |BRefresh| image:: /user_guide/img/getting_started/buttons/BRefresh.png
-   :align: middle
+   <i class="fa fa-eye-slash" aria-hidden="true"></i>
 
-.. |BReset| image:: /user_guide/img/getting_started/buttons/BReset.png
-   :align: middle
+.. |IcPosition| raw:: html
 
-.. |ScrollPage| image:: /user_guide/img/getting_started/buttons/scroll_page.png
-   :align: middle
+   <i class="fa fa-arrows-v" aria-hidden="true"></i>
 
-.. |TagsfGrid| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid.png
-   :align: middle
+.. |IcRest| raw:: html
 
-.. |TagsfGrid1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_grid_1.png
-   :align: middle
+   <i class="fa fa-backward" aria-hidden="true"></i>
 
-.. |TagsfView| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view.png
-   :align: middle
+.. |BRefresh| raw:: html
 
-.. |TagsfView1| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_1.png
-   :align: middle
+   <i class="fa fa-refresh" aria-hidden="true"></i>
 
-.. |TagsfView2| image:: /user_guide/img/getting_started/data_management/tags/tags_from_view_2.png
-   :align: middle
+.. |BReset| raw:: html
 
-.. |IcDiscardChanges| image:: /user_guide/img/getting_started/buttons/IcDiscardChanges.png
-   :align: middle
+   <i class="fa fa-repeat" aria-hidden="true"></i>
 
-.. |IcSaveChanges| image:: /user_guide/img/getting_started/buttons/IcSaveChanges.png
-   :align: middle
+.. |IcDiscardChanges| raw:: html
 
-.. |IcFilters| image:: /user_guide/img/getting_started/buttons/IcFilters.png
-   :align: middle
+   <i class="fa fa-eye-slash" aria-hidden="true"></i>
 
-.. |IcMoveW| image:: /user_guide/img/getting_started/buttons/IcMoveW.png
-   :align: middle
+.. |IcSaveChanges| raw:: html
 
-.. |IcIncoming| image:: /user_guide/img/getting_started/buttons/IcIncoming.png
-   :align: middle
+   <i class="fa fa-check" aria-hidden="true"></i>
 
-.. |IcOutgoing| image:: /user_guide/img/getting_started/buttons/IcOutgoing.png
-   :align: middle
+.. |IcFilters| raw:: html
 
-.. |IcConfigure| image:: /user_guide/img/getting_started/buttons/IcConfigure.png
-   :align: middle
+   <i class="fa fa-filter" aria-hidden="true"></i>
+
+.. |IcMoveW| raw:: html
+
+   <i class="fa fa-arrows" aria-hidden="true"></i>
+
+.. |IcIncoming| raw:: html
+
+   <i class="fa fa-sign-in" aria-hidden="true"></i>
+
+.. |IcOutgoing| raw:: html
+
+   <i class="fa fa-sign-out" aria-hidden="true"></i>
+
+.. |IcConfigure| raw:: html
+
+   <i class="fa fa-cog" aria-hidden="true"></i>
 
 .. |IcShoppingLists| raw:: html
 
@@ -439,26 +431,33 @@ Images
 
    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 
-.. |IcSub| image:: /user_guide/img/getting_started/buttons/IcSub.png
-   :align: middle
+.. |IcSub| raw:: html
 
-.. |IcUns| image:: /user_guide/img/getting_started/buttons/IcUns.png
-   :align: middle
+   <i class="fa fa-plus" aria-hidden="true"></i>
 
-.. |IcRemove| image:: /user_guide/img/getting_started/buttons/IcRemove.png
-   :align: middle
+.. |IcUns| raw:: html
 
-.. |UndoRem| image:: /user_guide/img/getting_started/buttons/UndoRem.png
-   :align: middle
+   <i class="fa fa-minus" aria-hidden="true"></i>
 
-.. |BSchedule| image:: /user_guide/img/getting_started/buttons/BSchedule.png
-   :align: middle
+.. |IcRemove| raw:: html
 
-.. |IcCross| image:: /user_guide/img/getting_started/buttons/IcCross.png
-   :align: middle
+   <i class="fa fa-times" aria-hidden="true"></i>
 
-.. |HObutton| image:: /user_guide/img/getting_started/buttons/hangouts.png
-   :align: middle
+.. |UndoRem| raw:: html
+
+   <i class="fa fa-undo" aria-hidden="true"></i>
+
+.. |BSchedule| raw:: html
+
+   <i class="fa fa-refresh" aria-hidden="true"></i>
+
+.. |IcCross| raw:: html
+
+   <i class="fa fa-times" aria-hidden="true"></i>
+
+.. |IcExpire| raw:: html
+
+   <i class="fa fa-clock-o" aria-hidden="true"></i>
 
 .. |InstallPack| image:: /admin_guide/img/extension/install_package.png
    :align: middle

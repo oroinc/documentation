@@ -80,6 +80,8 @@ There are two mandatory fields that **must** be defined:
   Other services can be added in the course of customization."
   "Template","Choose the :ref:`email template <user-guide-email-template>` to be used from the drop-down.
 
+  .. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give the access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide.
+
   Please note that you can only see the templates assigned to no entity or to the same entity as the marketing list"
 
 4. Save the campaign in the system with the button in the top right corner of the page.
@@ -127,26 +129,9 @@ In order to start and email campaign, go to the View page of the Email Campaign 
 
 
 
-.. |IcDelete| image:: /img/buttons/IcDelete.png
-   :align: middle
-
-.. |IcEdit| image:: /img/buttons/IcEdit.png
-   :align: middle
-
-.. |IcView| image:: /img/buttons/IcView.png
-   :align: middle
-
-.. |BGotoPage| image:: /img/buttons/BGotoPage.png
-   :align: middle
-
-.. |Bdropdown| image:: /img/buttons/Bdropdown.png
-   :align: middle
-
-.. |BPlus| image:: /img/buttons/Bdropdown.png
-   :align: middle
-
-.. |BCrLOwnerClear| image:: /img/buttons/BCrLOwnerClear.png
-   :align: middle
 
 .. |email_campaign_schedule| image:: ../../img/marketing/email_campaign_schedule.png
    :align: middle
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
