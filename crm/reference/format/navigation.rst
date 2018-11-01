@@ -97,7 +97,7 @@ Additional options that control the behavior and look-and-feel of the menu item:
 
 ``icon`` (**type**: ``string``)
 
-    The name of a `Font Awesome Icon`_ (the Oro Platform uses the old 3.2.1 version of the Font
+    The name of a `Font Awesome Icon`_ (OroPlatform uses the old 3.2.1 version of the Font
     Awesome Icons).
 
 ``position`` (**type**: ``integer``)

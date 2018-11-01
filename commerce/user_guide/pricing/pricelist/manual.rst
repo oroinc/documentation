@@ -11,6 +11,15 @@ You can add a product price in the specific currency to the price list manually 
 
 * When viewing the price list details, by clicking **+ Add Product Price**.
 
+.. note:: The ability to add product prices from the price list and product pages depends on the *Create* role permission for the Product Price entity. If it is set to *None* for a particular role, adding prices will not be permitted for a user with this role. Please see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` topic for more details.
+
+        .. image:: /user_guide/img/sales/price_lists/product_price_acl.png
+
+
+
+
+
+
 In the Price List
 -----------------
 

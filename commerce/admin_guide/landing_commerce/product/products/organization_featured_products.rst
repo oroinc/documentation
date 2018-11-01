@@ -5,7 +5,6 @@ Edit Segment for Featured Products per Organization
 
 .. begin
 
-You can control which :ref:`segment <user-guide--business-intelligence--filters-segments>` is used to store :ref:`featured products <products--featured-products>` by default.
 
 To update the featured products segment for a particular organization:
 

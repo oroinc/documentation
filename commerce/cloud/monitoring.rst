@@ -163,7 +163,7 @@ Escalation is performed according to the Incident Response Plan.
 Planned Maintenance Windows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Maintenance windows for the production OroCloud environment are planned and scheduled ahead of time. If the maintenance is initiated by the OroCloud service team and involves only infrastructure changes, the alerts are handled gracefully.
+Maintenance windows for the production OroCloud environment are planned and scheduled ahead of time. If the maintenance is initiated by the OroCloud service team and involves only infrastructure changes, the alerts are muted.
 
 Incident Management
 ~~~~~~~~~~~~~~~~~~~

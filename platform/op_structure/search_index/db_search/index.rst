@@ -1,3 +1,5 @@
+:orphan:
+
 .. _search_index_db_from_md:
 
 Manage Search in Oro Applications (ORM)

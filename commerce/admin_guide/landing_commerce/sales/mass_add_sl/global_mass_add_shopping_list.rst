@@ -13,7 +13,7 @@ To enable mass product actions globally:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   The following page opens:
+   The following page is displayed:
 
    .. image:: /admin_guide/img/configuration/sales/shopping_list/MassProductActionsSListGlobal.png
 

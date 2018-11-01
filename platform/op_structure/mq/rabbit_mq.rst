@@ -1,3 +1,5 @@
+:orphan:
+
 RabbitMQ Transport (via AmqpOroMessageQueue Bundle)
 ===================================================
 

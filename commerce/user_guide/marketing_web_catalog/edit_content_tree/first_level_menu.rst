@@ -25,12 +25,12 @@ Management Console:
 
 **Root content nodes** are nested under the **homepage node**.
 
-After you set up the first level of the main menu, you can set up the second level for it, as well as many other sub levels for them, depending on the structure envisioned by you for the store.
+After you set up the first level of the main menu, you can set up the second level for it, as well as many other sub-levels for them, depending on the structure envisioned by you for the store.
 
 .. image:: /user_guide/img/marketing/web_catalogs/Levels.png
    :class: with-border
 
-The steps for node configuration provided below apply to the homepage, main menu and sub menu content with the only difference in the way you launch the node configuration:
+The steps for node configuration provided below apply to the homepage, main menu and sub-menu content with the only difference in the way you launch the node configuration:
 
 * For **homepage node** --- You will be offered to fill in the homepage details once you start editing a blank content tree.
 
@@ -47,7 +47,7 @@ To create or configure the content node in the web catalog:
 
    For the **homepage node**, the title is mentioned in the content nodes tree in OroCommerce Management Console.
 
-   For the **menu and sub-menu nodes**, the title is mentioned in the content nodes tree in OroCommerce Management Console and shows as a menu or sub menu caption in your OroCommerce Storefront (depending on the level in the content tree).
+   For the **menu and sub-menu nodes**, the title is mentioned in the content nodes tree in OroCommerce Management Console and shows as a menu or sub-menu caption in your OroCommerce Storefront (depending on the level in the content tree).
 
    If necessary, translate the title into the languages supported in your OroCommerce configuration. To manage title translations, click next to the Titles box and follow the :ref:`content translation guidance here <localization--localization>`.
 

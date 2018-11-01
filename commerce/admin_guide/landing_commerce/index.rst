@@ -22,7 +22,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                <ul class="guideline__list">
                       <li><a class="reference internal" href="customers/customers/visibility#sys-config-configuration-commerce-customers-visibility"><span class="std std-ref">Visibility</span></a></li>
                       <li><a class="reference internal" href="customers/customers/global_customer_users#sys-config-configuration-commerce-customers-customer-users"><span class="std std-ref">Customer Users</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
-                      <li>Contact Requests <i class="fa fa-building-o fa-lg" aria-hidden="true"></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
+                      <li><a class="reference internal" href="customer/contact_us#sys-conf-commerce-customer-contact-request"><span class="std std-ref">Contact Requests</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
                       <li><a class="reference internal" href="customer/consents#configuration-guide-commerce-configuration-consents"><span class="std std-ref">Consents</span></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
                     </ul>
           </div>
@@ -75,6 +75,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                     <li><a class="reference internal" href="product/products/related_products/global_related_products#sys-commerce-catalog-relate-products"><span class="std std-ref">Related Items</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
+                    <li><a class="reference internal" href="catalog/filters_sorters#configuration-guide-commerce-configuration-catalog-filters-sorters"><span class="std std-ref">Filters and Sorters</span></a> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                     <li><a class="reference internal" href="../pricing/global_pricing#sys-config-commerce-catalog-pricing"><span class="std std-ref">Pricing</span></a> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                     <li><a class="reference internal" href="product/products/global_all_products#sys-conf-commerce-catalog-special-pages-global"><span class="std std-ref">Special Pages</span></a> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                   </ul>
@@ -199,7 +200,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li>Order History</li>
+                     <li><a class="reference internal" href="sales/open_orders#configuration-guide-commerce-configuration-sales-order-history"><span class="std std-ref">Order History (Open Orders)</span></a></li>
                      <li><a class="reference internal" href="sales/sales_info/available_user_options#user-guide-system-configuration-display-sales-rep-info-available-user-options"><span class="std std-ref">Contacts</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true"  ></i></li>
                      <li><a class="reference internal" href="sales/guest_access/guest_shopping_list_global#user-guide-system-configuration-commerce-sales-shopping-list-global"><span class="std std-ref">Shopping List</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                     </ul>
@@ -278,6 +279,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                <ul class="guideline__list">
                   <li><a class="reference internal" href="orders/orders/order_automation_global#configuration-commerce-orders-order-automation-global"><span class="std std-ref">Order Automation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i></li>
                   <li><a class="reference internal" href="orders/orders/order_creation_global#configuration-commerce-orders-order-creation-global"><span class="std std-ref">Order Creation</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
+                  <li><a class="reference internal" href="product/products/config_previously_purchased#sys-commerce-orders-previously-purchased-main"><span class="std std-ref">Purchase History</span></a><i class="fa fa-globe" aria-hidden="true"  ></i></li>
                   </ul>
           </div>
       </div>
@@ -304,8 +306,8 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                  <li><a class="reference internal" href="shipping/shipping_origin#sys-conf-commerce-shipping-shipping-origin"><span class="std std-ref">Shipping Origin</span></a></li>
-                  <li><a class="reference internal" href="shipping/shipping_options#sys-conf-commerce-shipping-shipping-options"><span class="std std-ref">Shipping Options</span></a></li>
+                  <li><a class="reference internal" href="../shipping/configuration/shipping_origin#sys-conf-commerce-shipping-shipping-origin"><span class="std std-ref">Shipping Origin</span></a></li>
+                  <li><a class="reference internal" href="../shipping/configuration/shipping_options#sys-conf-commerce-shipping-shipping-options"><span class="std std-ref">Shipping Options</span></a></li>
                   </ul>
           </div>
       </div>

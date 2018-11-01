@@ -31,8 +31,8 @@ application cache in development mode please run:
 
         $php bin/console cache:clear --env=dev
 
-To access application in development mode, add `app_dev.php` to the base URL
-(example: http://orocrm.example.com/app_dev.php).
+To access application in development mode, add `index_dev.php` to the base URL
+(example: http://orocrm.example.com/index_dev.php).
 
 .. _application-custom-code:
 
@@ -72,7 +72,7 @@ noting the following recommendations:
 #) Take into account recommendations in `Symfony Application Deployment`_ documentation
 #) Lock all dependencies with `composer.lock`_ before taking the code to production
 #) Warm up the application cache in production mode
-#) Disable access to `app_dev.php`
+#) Disable access to `index_dev.php`
 #) Configure crontab and run web socket server
 
 Oro applications are :doc:`scalable <scale_nodes>`.

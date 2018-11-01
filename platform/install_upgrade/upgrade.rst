@@ -5,20 +5,20 @@ Upgrading to the Newer Version
 
 .. begin
 
-To retrieve source code of a new version and upgrade your OroCommerce instance, please execute the following steps:
+To retrieve source code of a new version and upgrade your OroPlatform instance, please execute the following steps:
 
-1. ``cd`` to the OroCommerce root folder and switch the application to the maintenance mode.
+1. ``cd`` to the OroPlatform root folder and switch the application to the maintenance mode.
 
 .. code-block:: bash
 
-    $ cd /path/to/application
-    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
+     cd /path/to/application
+     sudo -uwww-data bin/console lexik:maintenance:lock --env=prod
 
 2. Stop the cron tasks.
 
    .. code-block:: bash
 
-      $ crontab -e -uwww-data
+       crontab -e -uwww-data
 
    .. note::
 
@@ -35,7 +35,7 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
 4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary branch (`1.6`) or tag (`1.6.1`) in the application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the oroinc.com/orocommerce <https://oroinc.com/b2b-ecommerce/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`3.0`) or tag (`3.0.0`) in the application repository (e.g. ``https://github.com/oroinc/platform-application.git``) or download the latest OroPlatform version from the `download section on the oroinc.com/oroplatform <https://oroinc.com/oroplatform/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 
@@ -47,15 +47,14 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
    .. code-block:: bash
 
-      $ sudo -uwww-data git pull
-      $ sudo -uwww-data git checkout <branch or tag with version to upgrade to>
+       sudo -uwww-data git pull
+       sudo -u your_user_for_admin_tasks php composer.phar update --prefer-dist --no-dev
 
 6. Upgrade the composer dependency and set up the right owner to the retrieved files.
 
    .. code-block:: bash
 
-      $ sudo php composer.phar install --prefer-dist --no-dev
-      $ sudo chown www-data:www-data -R ./*
+       sudo -u your_user_for_admin_tasks php composer.phar update --prefer-dist --no-dev
 
 7. Remove old caches.
 
@@ -69,32 +68,26 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
    .. code-block:: bash
 
-      $ sudo -u www-data php bin/console oro:platform:update --env=prod --force
+       sudo -u www-data php bin/console oro:platform:update --env=prod --force
 
 9. Remove the caches.
 
    .. code-block:: bash
 
-      $ sudo -u www-data bin/console cache:clear --env prod
+       sudo -u www-data bin/console cache:clear --env=prod
 
    or, as alternative:
 
    .. code-block:: bash
 
-      $ sudo rm -rf var/cache/*
-      $ sudo -u www-data bin/console cache:warmup --env prod
+       sudo rm -rf var/cache/*
+       sudo -u www-data bin/console cache:warmup --env=prod
 
-10. Run the consumer(s).
-
-    .. code-block:: bash
-
-       $ sudo -u www-data bin/console oro:message-queue:consume --env prod
-
-11. Enable cron.
+10. Enable cron.
 
     .. code-block:: bash
 
-       $ crontab -e -uwww-data
+        crontab -e -uwww-data
 
     Uncomment this line.
 
@@ -103,11 +96,18 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
         */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
-12. Switch your application back to normal mode from the maintenance mode.
+11. Switch your application back to normal mode from the maintenance mode.
 
     .. code-block:: bash
 
-       $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
+        sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
+
+12. Run the consumer(s).
+
+    .. code-block:: bash
+
+        sudo -u www-data bin/console oro:message-queue:consume --env=prod
+
 
     .. note::
 

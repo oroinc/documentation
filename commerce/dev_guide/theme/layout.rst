@@ -1,8 +1,8 @@
 .. index::
     pair: Customization; Themes
 
-Customizing the Application Layout
-==================================
+Customizing the Management Console Theme
+========================================
 
 You can customize the OroPlatform layout in different ways:
 

@@ -15,12 +15,12 @@ The following categories of settings are available for system configuration (fol
 
   * GeneralSetup
 
-     * Application Settings
+     * :ref:`Application Settings <admin-configuration-application>`
      * :ref:`Localization <sys--config--sysconfig--general-setup--localization--global>`
      * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`
      * :ref:`Currency <sys--config--sysconfig--general-setup--currency>`
      * :ref:`Display Settings <configuration--general-setup--display-settings>`
-     * User Settings
+     * :ref:`User Settings <admin-configuration-user-settings>`
      * :ref:`Tracking <admin-configuration-tracking-settings>`
      * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings>`
      * :ref:`Email Configuration <admin-configuration-email-configuration>`
@@ -62,6 +62,8 @@ The following categories of settings are available for system configuration (fol
 
     * :ref:`Order Automation <configuration--commerce--orders--order-automation--global>`
     * :ref:`Order Creation <configuration--commerce--orders--order-creation--global>`
+    * :ref:`Purchase History <sys--commerce--orders--previously-purchased--main>`
+
 
   * Payment
 

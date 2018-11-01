@@ -14,7 +14,7 @@
    "**OS**","|recommended_OS| (recommended OS)"
    "**Web server**","Nginx v.1.12"
    "**Database**","PostgreSQL v.9.6"
-   "**Search engine**","ElasticSearch v.2.4"
+   "**Search engine**","Elasticsearch v.6.0.*"
    "**Message queue brocker**","RabbitMQ v.3.6"
    "**PHP**","PHP-FPM and PHP CLI v.7.1"
    "**Other tools**","Redis v.4.0, NodeJS v.6.14, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
@@ -26,7 +26,7 @@
 Enable Required Package Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To install the third-party components (like RabbitMQ, ElasticSearch, Radis, etc.)
+To install the third-party components (like RabbitMQ, Elasticsearch, Redis, etc.)
 required for |oro_app_name| application operation, use the following repositories:
 
 * Extra Packages for Enterprise Linux (EPEL) repository by `Red Hat <https://www.redhat.com/>`_
@@ -46,14 +46,14 @@ Next, add Oro Enterprise Linux Packages repository to your `yum` package manager
 
    yum-config-manager --add-repo http://koji.oro.cloud/rpms/oro-el7.repo
 
-Install Nginx, PostgreSQL, Redis, ElasticSearch, NodeJS, Git, Supervisor, and Wget
+Install Nginx, PostgreSQL, Redis, Elasticsearch, NodeJS, Git, Supervisor, and Wget
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Install most of the required |oro_app_name| application environment components using the following command:
 
 .. code:: bash
 
-   yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch24 oro-elasticsearch24-runtime oro-elasticsearch24-elasticsearch oro-redis4 oro-redis4-runtime oro-redis4-redis oro-rabbitmq-server36 oro-rabbitmq-server36-runtime oro-rabbitmq-server36-rabbitmq-server nginx nodejs npm git bzip2 supervisor
+   yum install -y rh-postgresql96 rh-postgresql96-postgresql rh-postgresql96-postgresql-server rh-postgresql96-postgresql-contrib rh-postgresql96-postgresql-syspaths oro-elasticsearch62 oro-elasticsearch62-runtime oro-elasticsearch62-elasticsearch oro-redis4 oro-redis4-runtime oro-redis4-redis oro-rabbitmq-server36 oro-rabbitmq-server36-runtime oro-rabbitmq-server36-rabbitmq-server nginx nodejs npm git bzip2 supervisor
 
 Install PHP
 ^^^^^^^^^^^
@@ -236,8 +236,8 @@ Enable Installed Services
 
 .. code:: bash
 
-   systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch24-elasticsearch oro-php71-php-fpm nginx supervisord
-   systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch24-elasticsearch oro-php71-php-fpm nginx supervisord
+   systemctl restart rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch62-elasticsearch oro-php71-php-fpm nginx supervisord
+   systemctl enable rh-postgresql96-postgresql oro-rabbitmq-server36-rabbitmq-server oro-redis4-redis oro-elasticsearch62-elasticsearch oro-php71-php-fpm nginx supervisord
 
 Step 3: |oro_app_name| Application Installation
 -----------------------------------------------

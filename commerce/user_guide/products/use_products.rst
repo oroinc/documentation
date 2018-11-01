@@ -16,7 +16,7 @@ With this information in mind, here are the references to the elements that need
 
 * :ref:`Create product units <sys--commerce--product--product-units>` --- to select the primary product unit and its precision.
 * :ref:`Create product families <products--product-families>` and :ref:`product attributes <products--product-attributes>` --- to design a structure for product information and give the product specific characteristics, such as color or size.
-* :ref:`Create price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g. MRSP) that may be used in the rule-based price lists to calculate the price for the buyer.
+* :ref:`Create price attributes <user-guide--products--price-attributes>` --- to add custom parameters where you can store the price-related information (e.g. MSRP) that may be used in the rule-based price lists to calculate the price for the buyer.
 
 Create Your Products
 ^^^^^^^^^^^^^^^^^^^^

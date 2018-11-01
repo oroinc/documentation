@@ -1,7 +1,7 @@
 .. _frontstore-guide:
 
-Storefront Guide
-================
+User Guide: Storefront
+======================
 
 
 The following guide is intended as an introduction to the OroCommerce default storefront. It illustrates how to navigate, browse and interact with the store.

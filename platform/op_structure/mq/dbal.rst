@@ -1,3 +1,5 @@
+:orphan:
+
 .. _op-structure--mq--mq-bundle--dbal:
 
 DBAL Transport Options and Limitations

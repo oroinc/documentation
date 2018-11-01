@@ -31,11 +31,12 @@ From here, you can:
 All the :ref:`menu and sub-menu items <user-guide-navigation-menu>` and 
 Create forms are available.
 
-.. |IcSearch| image:: /user_guide/img/common/buttons/IcSearch.png
 
 .. |shortcut| image:: /user_guide/img/getting_started/navigation/panel/shortcut.png
+   :width: 40%
 
 .. |shortcut_all| image:: /user_guide/img/getting_started/navigation/panel/shortcut_all.png
+   :width: 40%
 
 .. include:: /getting_started/section_toc.rst
-    :start-after: begin
+   :start-after: begin

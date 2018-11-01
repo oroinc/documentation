@@ -75,7 +75,7 @@ So, we need to create ``/src/Acme/Bundle/NewBundle/Resources/views/User/widget/i
         </div>
     </div>
 
-And now we can go to the user view page (e.g. http\://<oro_application_base_url>/app_dev.php/#url=/app_dev.php/user/view/1) and find
+And now we can go to the user view page (e.g. http\://<oro_application_base_url>/index_dev.php/#url=/index_dev.php/user/view/1) and find
 that user info widget has changed:
 
 .. image:: /dev_guide/img/how_to_extend_existing_bundle/user_info_widget.png

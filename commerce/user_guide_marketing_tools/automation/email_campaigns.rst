@@ -67,7 +67,9 @@ To create a new email campaign:
      Other services can be added in the course of customization."
      "Template","Choose the :ref:`email template <user-guide-email-template>` to be used from the drop-down.
 
-     .. note:: You can only see the templates assigned to no entity or the same entity as the marketing list"
+     .. note:: You can only see the templates assigned to no entity or the same entity as the marketing list.
+
+     .. important::  Keep in mind that the ability to view and add email templates from the dropdown list depends on specific roles and permissions defined in the system configuration. For example, with the User permissions, you can view and add the templates created by you exclusively. The Business Unit permissions give the access to the email templates created by any user who belongs to the same business unit as you. For more information about available access levels and permissions, see the :ref:`Understand Roles and Permissions <user-guide-user-management-permissions-roles>` guide."
 
 #. Once you finish configuring the marketing campaign, click **Save and Close** in the top right corner of the page.
 

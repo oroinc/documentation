@@ -1,3 +1,5 @@
+:orphan:
+
 .. _orm_search_engine:
 
 ORM Search Engine
@@ -57,7 +59,7 @@ replaced with a whitespace before the query.
 
 Another feature of ORM engine is fulltext index processing.
 Configuration defines fulltext manager
-*Oro:raw-latex:`\Bundle`:raw-latex:`\SearchBundle`:raw-latex:`\Engine`:raw-latex:`\FulltextIndexManager`*
+*Oro\\Bundle\\SearchBundle\\Engine\\FulltextIndexManager*
 that is used during installation and inside a special listener - it allows the
 system to create fulltext indexes bypassing Doctrine processing.
 

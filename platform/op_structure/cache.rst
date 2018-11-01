@@ -1,3 +1,5 @@
+:orphan:
+
 .. _op-structure--cache:
 
 Cache in Oro Application

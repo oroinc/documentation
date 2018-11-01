@@ -77,7 +77,7 @@ The same file can be used to add new data types, for example:
            types:
                duration: Oro\Bundle\EntityBundle\DoctrineExtensions\DBAL\Types\DurationType
 
-Enabling metadata cache is strongly recommended for the development and productions environments to improve performance. Metadata caching in Oro platform is done with the `doctrine.metadata.cache` service.
+Enabling metadata cache is strongly recommended for the development and productions environments to improve performance. Metadata caching in OroPlatform is done with the `doctrine.metadata.cache` service.
 
 .. code:: text
 

@@ -32,9 +32,9 @@ Apache 2.2
         <VirtualHost *:80>
             ServerName {$folder_name}.example.com
 
-            DirectoryIndex app.php
-            DocumentRoot [$folder_location]}/{$folder_name}/web
-            <Directory  [$folder_location]}/{$folder_name}/web>
+            DirectoryIndex index.php
+            DocumentRoot [$folder_location]}/{$folder_name}/public
+            <Directory  [$folder_location]}/{$folder_name}/public>
                 # enable the .htaccess rewrites
                 AllowOverride All
                 Order allow,deny
@@ -54,9 +54,9 @@ Apache 2.4
         <VirtualHost *:80>
             ServerName {$folder_name}.example.com
 
-            DirectoryIndex app.php
-            DocumentRoot [$folder_location]}/{$folder_name}/web
-            <Directory  [$folder_location]}/{$folder_name}/web>
+            DirectoryIndex index.php
+            DocumentRoot [$folder_location]}/{$folder_name}/public
+            <Directory  [$folder_location]}/{$folder_name}/public>
                 # enable the .htaccess rewrites
                 AllowOverride All
                 Require all granted
@@ -76,14 +76,14 @@ Nginx
 
         server {
             server_name {$folder_name}.example.com;
-            root  [$folder_location]}/{$folder_name}/web;
+            root  [$folder_location]}/{$folder_name}/public;
 
             location / {
-                # try to serve file directly, fallback to app.php
-                try_files $uri /app.php$is_args$args;
+                # try to serve file directly, fallback to index.php
+                try_files $uri /index.php$is_args$args;
             }
 
-            location ~ ^/(app|app_dev|config|install)\.php(/|$) {
+            location ~ ^/(index|index_dev|config|install)\.php(/|$) {
                 fastcgi_pass 127.0.0.1:9000;
                 # or
                 # fastcgi_pass unix:/var/run/php/php7-fpm.sock;

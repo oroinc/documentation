@@ -5,7 +5,7 @@ User Guide: Getting Started
 
 OroCRM is a flexible CRM that can be easily custom-tailored to meet the specific needs of your business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
 
-The Getting Started guide explains generic concepts and detail the OroCRM basic navigation and use.
+The Getting Started guide explains generic concepts and details of OroCRM basic navigation and use.
 
 .. toctree::
    :includehidden:
@@ -33,7 +33,7 @@ For more advanced CRM concepts, like contact and account management, handling sa
 
 
 
-     
 
 
-    
+
+

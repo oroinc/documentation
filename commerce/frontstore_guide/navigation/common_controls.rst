@@ -35,7 +35,7 @@ Display Options
 
 **Sorting**
 
-Sorting options are located on the left of the view page under the view table name below the :ref:`filter <frontstore-guide--navigation-filters>`. They allow sorting records alphabetically, by price or relevance.
+Sorting options are located on the left of the view page under the view table name below the :ref:`filter <frontstore-guide--navigation-filters>`. They allow sorting records alphabetically, by price, relevance, or other attributes related to the products displayed on the page you are viewing.
 
 .. image:: /frontstore_guide/img/navigation/DispayOptionsSorting.png
 
@@ -112,7 +112,7 @@ The following action buttons can be available:
    * You can manually select the columns by clicking on the check box next to the required field.
    * To show/hide all columns in the table, click **Select All**/**Deselect All**.
    * To clear customization, click |IcReset| **Reset**.
-   * To change the order of the columns, click on the ellipsis icon |IcHandle| next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
+   * To change the order of the columns, click the ellipsis icon next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
 
 4. Filters: click |IcFilter| to show/hide filters to select specific items to be shown in the table. More information on filters is provided in the Filters section below.
 
@@ -135,7 +135,15 @@ The following actions are available for filters:
 
    .. image:: /frontstore_guide/img/navigation/FiltersAdd.png
 
-3. To apply a filter, click on its button in the bar, and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set.
+3. To apply a filter, click on its button in the bar and select the required option from the dropdown list.
+
+   .. image:: /frontstore_guide/img/navigation/FiltersSelect.png
+
+   .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list.
+
+      .. image:: /frontstore_guide/img/navigation/FiltersSelectOneAttribute.png
+
+4. Another way to apply a filter is to click on its button and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set.
 
    .. image:: /frontstore_guide/img/navigation/FilterExample.png
 
@@ -143,7 +151,11 @@ The following actions are available for filters:
 
    .. image:: /frontstore_guide/img/navigation/FiltersApplied.png
 
-4. To remove a filter, click on a cross **x** after the query.
+Filter controls may be hidden at all if there are no related products on the displayed page.
+
+   .. image:: /frontstore_guide/img/navigation/FiltersDisabled.png
+
+5. To remove a filter, click on a cross **x** after the query.
 
    If you wish to reset all applied filters, click **x Clear All Filters**.
 

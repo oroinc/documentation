@@ -23,11 +23,13 @@ To schedule price activation and deactivation:
    a) Click *Choose a date* to open the calendar and pick the date.
 
       .. image:: /user_guide/img/sales/price_lists/PriceListsCreate_general_schedule.png
+         :width: 40%
          :class: with-border
 
    b) Click *time* and select the activation or deactivation time from the list. Alternatively, type it in and press **Enter**.
 
       .. image:: /user_guide/img/sales/price_lists/PriceListsCreate_general_schedule_time.png
+         :width: 40%
          :class: with-border
 
    c) To add another slot, click **+ Add** below the time table. Add as many slots as you need.

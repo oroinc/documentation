@@ -4,7 +4,7 @@ Community Guide
 This guide provides information about best practices and conventions for contributing to the Oro application source code, user interface translations, and documentation. It also describes the ways to contact the Oro community and support
 team, and offers an insight into the Oro application release process.
 
-Join Oro community and contribute to the open-source OroCommerce Community Edition.
+Join Oro community and contribute to the open-source Oro applications.
 
 
 .. contents:: :local:

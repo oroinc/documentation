@@ -18,6 +18,7 @@ You can reach record tables the following ways:
 3. By clicking the grid link on the page of a record (see the screenshot below).
 
    .. image:: /user_guide/img/getting_started/data_management/grid/grid_from_view.png
+      :width: 40%
 
 Follow the links below to learn more about the actions you can perform within record tables:
 
@@ -55,13 +56,12 @@ Manage Data in Tables
 The tables not only display record data but also contain links to the pages of these records. In addition, the tables configurable, so you can adjust the appearance and contents of these tables to your taste and needs using the action buttons:
 
 1. **Export Data** --- Use to export the data in the table to a file either in .csv or .xlxs format (available formats may vary). Import results are sent to your email.
-   
-   .. image:: /user_guide/img/getting_started/data_management/grid/export_grid.png
 
 #. **Sort Data** --- By default, data in tables is sorted in ascending order by the first column. To sort a field, click the column header. When sorting is ascending, an upward arrow appears next to the column name. When sorting is descending, a downward arrow appears.
  
    .. image:: /user_guide/img/getting_started/records/grids/grids_sorted.png
-   
+      :width: 40%
+
 #. |IcRedo| **Refresh** --- Use to refresh the data displayed in the table and retrieve the latest details
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_refresh.png
@@ -79,6 +79,8 @@ The tables not only display record data but also contain links to the pages of t
    * To change the order of the columns, click on the arrow icon next to the name of the column you wish to move, hold the mouse button, and drag the column to the required position.
 
      .. image:: /user_guide/img/getting_started/data_management/grid/grid_table_settings.png
+        :width: 20%
+
 
    * Use the quick search field to quickly find the required item.
   
@@ -128,6 +130,7 @@ The controls available for fields depend on the field type.
    For text fields that can take any value, you can enter search words (or part of the word) and select from the list in front of it whether values that you select must contain these search phrase at any position or does not contain it at all, must start with it, end with it, etc.
 
    .. image:: /user_guide/img/getting_started/data_management/grid/grid_filters_define.png
+      :width: 40%
 
    For conditions like 'Is Any Of' and 'Is Not Any Of,' enter search words separated by the comma.
 
@@ -138,20 +141,24 @@ The controls available for fields depend on the field type.
    Start typing the required value into the text filed. When you this value appears in the drop-down list, click it to select. You can click the empty text field to see the list of all available values.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply3.png
+      :width: 30%
 
 3. **Dates and time**
 
    Click the date fields to select the date via the calendar menu. Click the time fields to select a time from the list.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2.png
+      :width: 40%
 
    In addition to selecting a strict calendar date, you can use variables that enable you to specify relative values, such as 'today,' 'start of the month,' etc.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2-2.png
+      :width: 40%
 
    Also specify the condition of how to form your desired time range, whether it starts from the day and time that you specified, lays between set dates, etc.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_filters_apply2-3.png
+      :width: 40%
 
 .. important::  If more than one filter is active, only the records that meet requirements of *all* selected filters are displayed.
 
@@ -177,6 +184,7 @@ To save a table as a new one:
 2. Click **Save as**.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsaveas.png
+      :width: 30%
 
 3. In the dialog, provide the following information:
 
@@ -190,10 +198,12 @@ To save a table as a new one:
    The new view is now available in the menu next to the table name.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewsave.png
+      :width: 30%
 
 5. To open a particular table view, click the arrow next to the current view name, and then click the name of the view you want to open.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_gridviewopen.png
+      :width: 30%
 
 To manage saved views, click **Options** next to the view name. The following is the list of options available:
 

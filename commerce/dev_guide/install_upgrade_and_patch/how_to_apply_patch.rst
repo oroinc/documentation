@@ -13,7 +13,7 @@ For example, platform-1.9.2.patch.
     :linenos:
 
     $ cd /path/to/application
-    $ sudo -uwww-data bin/console lexik:maintenance:lock --env prod
+    $ sudo -u www-data bin/console lexik:maintenance:lock --env=prod
 
 
 **2**. Stop the cron tasks.
@@ -21,7 +21,7 @@ For example, platform-1.9.2.patch.
 .. code-block:: bash
     :linenos:
 
-    $ crontab -e -uwww-data
+    $ crontab -e -u www-data
 
 
 .. note::
@@ -69,7 +69,7 @@ Remove the caches.
 .. code-block:: bash
     :linenos:
 
-    $ sudo -u www-data bin/console cache:clear --env prod
+    $ sudo -u www-data bin/console cache:clear --env=prod
 
 or, as an alternative:
 
@@ -90,7 +90,7 @@ Remove the caches.
 .. code-block:: bash
     :linenos:
 
-    $ sudo -u www-data bin/console cache:clear --env prod
+    $ sudo -u www-data bin/console cache:clear --env=prod
 
 or, as alternative:
 
@@ -98,21 +98,21 @@ or, as alternative:
     :linenos:
 
     $ sudo rm -rf var/cache/prod
-    $ sudo -u www-data bin/console cache:warmup --env prod
+    $ sudo -u www-data bin/console cache:warmup --env=prod
 
 **9**. Run the consumer(s).
 
 .. code-block:: bash
     :linenos:
 
-    $ sudo -u www-data bin/console oro:message-queue:consume --env prod
+    $ sudo -u www-data bin/console oro:message-queue:consume --env=prod
 
 **10**. Enable cron.
 
 .. code-block:: bash
     :linenos:
 
-    $ crontab -e -uwww-data
+    $ crontab -e -u www-data
 
 Uncomment this line.
 
@@ -126,7 +126,7 @@ Uncomment this line.
 .. code-block:: bash
     :linenos:
 
-    $ sudo -uwww-data bin/console lexik:maintenance:unlock --env prod
+    $ sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
 
 .. note::
 

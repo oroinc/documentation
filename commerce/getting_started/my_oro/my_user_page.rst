@@ -27,6 +27,7 @@ There are a number of effective tools and actions available on the page of your 
    * You can also check which business unit owns your user record. Click on the owner name (e.g. Main) to open the page of the corresponding business unit. If you are logged into the organization with global access (i.e. technical organization that aggregates data from all organizations created in the system), then in brackets you will see the name of organization that owns the user.
 
      .. image:: /user_guide/img/getting_started/my_oro/my_user_review_owner.png
+        :width: 40%
 
    * You can also see who, how and when modified your profile by clicking **Change History** link. 
 
@@ -58,7 +59,7 @@ There are a number of effective tools and actions available on the page of your 
 
 #. **View your profile details aggregated under 3 sections: general information, activity and additional information.**
 
-   * In the **General Information** section, you can view the details of your profile, :ref:`create an API key <doc-my-user-actions-api>`, and :ref:`download the latest MS Outlook add-in <admin-configuration-ms-outlook-integration-settings>`.
+   * In the **General Information** section, you can view the details of your profile and :ref:`create an API key <doc-my-user-actions-api>`.
 
      .. image:: /user_guide/img/getting_started/my_oro/My_User_General_Details.png
 
@@ -139,20 +140,6 @@ Only administrators can reset passwords.
 
     .. image:: /user_guide/img/getting_started/my_oro/My_User_Reset_Password.png
 
-Download MS Outlook Add-in
---------------------------
-
-The Enterprise edition of your Oro application (OroCRM or OroCommerce) supports an out-of-the-box integration with MS Outlook (2010, 2013, 2016). To configure this integration between your Oro Enterprise application and MS Outlook, you need to download the MS Outlook add-in.
-
-The link to the MS Outlook add-in is located in your Oro application instance on the page of your user profile.
-
-To download the add-in:
-
-1. Click **My User** below your username on the top right of the application screen.
-2. Next to the MS Outlook Add-in option, click the link to download the file.
-3. Open the downloaded file and start the installation process.
-
-More information on how to setup :ref:`MS Outlook Integration <admin-configuration-ms-outlook-integration-settings>` is available in the relevant MS Outlook Integration topic in the Oro documentation library.
 
 **Related Topics**
 

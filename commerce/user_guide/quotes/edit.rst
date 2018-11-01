@@ -48,6 +48,7 @@ To edit a quote:
 #. Click **Edit** on the top right of the page:
 
    .. image:: /user_guide/img/quotes/quotes_edit1.png
+      :width: 40%
 
 #. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <quote--create-from-scratch>` topic for detailed information on the available options.
 #. Click **Save** on the top right of the page.

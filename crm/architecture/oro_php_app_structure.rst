@@ -67,9 +67,9 @@ The required packages (dependencies) are listed in the following way:
         "oro/crm": "2.x-dev",
         "oro/platform-serialised-fields": "2.x-dev",
         "oro/crm-hangouts-call-bundle": "2.x-dev",
-        "oro/crm-abandoned-cart": "2.x-dev",
+        "oro/magento-abandoned-cart": "2.x-dev",
         "oro/crm-magento-embedded-contact-us": "2.x-dev",
-        "oro/crm-mail-chimp": "2.x-dev",
+        "oro/mailchimp": "2.x-dev",
         "oro/crm-dotmailer": "2.x-dev",
         "oro/crm-zendesk": "2.x-dev"
         },
@@ -82,7 +82,7 @@ These packages may be registered at:
 
 * The public `Packagist <https://packagist.org/>`_ (e.g. a third-party package)
 * `OroPackagist <https://packagist.oroinc.com/>`_ (e.g. other Oro package that was registered earlier)
-* Bower or NPM packages from `Oro Asset Packagist <https://asset-packagist.orocrm.com/>`_.
+* Bower or NPM packages from `Oro Asset Packagist <https://asset-packagist.oroinc.com/>`_.
 
 For registration, Oro application or package submits the metadata to the composer using *composer.json* file located in the root directory of the application/package source code in the github repository:
 

@@ -32,7 +32,7 @@ When your business calls for a non-standard solution, you may customize Oro appl
 How to enable import/export for a custom entity
 -----------------------------------------------
 
-To make Oro Platform capable to export your custom entities as CSV files and to be able to load data from CSV files for your entities, create the following methods, services and configurations:
+To make OroPlatform capable to export your custom entities as CSV files and to be able to load data from CSV files for your entities, create the following methods, services and configurations:
 
 * `Implement Configuration Loading Method`_
 * `Configure Import and Export Services (Processors)`_
@@ -65,16 +65,16 @@ extension class in the entity bundle and implement the *load* method, like in th
         }
     }
 
-In this example, the *importexport.yml* file is located in the *Resources/config* directory of the bundle. 
+In this example, the *importexport.yml* file is located in the *Resources/config* directory of the bundle.
 
 .. note:: It is recommended to keep the default location and default filename for the import/export configuration file.
 
 Configure Import and Export Services (Processors)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In Oro Platform, import and export processor are implemented in the :class:`Oro\\Bundle\\ImportExportBundle\\Processor\\ImportProcessor` and
+In OroPlatform, import and export processor are implemented in the :class:`Oro\\Bundle\\ImportExportBundle\\Processor\\ImportProcessor` and
 :class:`Oro\\Bundle\\ImportExportBundle\\Processor\\ExportProcessor` classes that ship with the
-OroImportExportBundle. 
+OroImportExportBundle.
 
 In the *importexport.yml* configuration file located in the *Resources/config* directory, define the secrvices that are based on the on abstract OroImportExportBundle services, like in the following example:
 
@@ -112,7 +112,7 @@ Prepare Import Data Template
 
 Import capability in Oro applications is documented with a Data Template - a sample import file that illustrates expected structure of the data, like the headers, data types, and acceptable values that are valid for the entity attributes.
 
-User can download data template in a csv format from the list next to the Import option. Oro application creates a file automatically based on the related template fixtures. 
+User can download data template in a csv format from the list next to the Import option. Oro application creates a file automatically based on the related template fixtures.
 
 To implement these fixtures for your custom entity, create a class that implements TemplateFixtureInterface and extends AbstractTemplateRepository and implement the following methods:
 

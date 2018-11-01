@@ -3,8 +3,6 @@
 Configure Image Preview on Product Listing Page per Organization
 ----------------------------------------------------------------
 
-To simplify product selection for customer, you can enable product previews on product listing pages.
-
 .. begin
 
 To enable image preview per organization:

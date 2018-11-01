@@ -54,7 +54,8 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
       </div>
    </div>
-   <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
+
+  <hr style="border-top: 1px dashed #fafafa;border-bottom: none">
    <div class="guideline">
       <div class="guideline__item" id="sales_marketing" >
           <div style="text-align: center">
@@ -254,11 +255,11 @@ This section provides links to the online documentation for the latest OroCommer
        :titlesonly:
        :maxdepth: 3
 
-       architecture/index
+       install_upgrade/index
 
        cloud/index
 
-       install_upgrade/index
+       architecture/index
 
        getting_started/index
 
@@ -271,6 +272,8 @@ This section provides links to the online documentation for the latest OroCommer
        frontstore_guide/index
 
        dev_guide/index
+
+       storefront_customization_guide/index
 
        admin_guide/index
 

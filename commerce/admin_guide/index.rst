@@ -24,7 +24,7 @@ This section groups the guidance and reference information on hardware and softw
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="security"><span class="std std-ref"><i class="fa fa-universal-access fa-lg" aria-hidden="true"></i><br>Roles and Access Management</span></a></h3>
+          <a class="reference internal" href="security"><span class="std std-ref"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i><br>Roles and Access Management</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -37,16 +37,7 @@ This section groups the guidance and reference information on hardware and softw
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          &nbsp;</h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
+      </div>      
 
    </div>
 
@@ -80,17 +71,7 @@ This section groups the guidance and reference information on hardware and softw
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          &nbsp;</h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
-
+      </div>    
 
    </div>
 
@@ -324,15 +305,6 @@ Advanced Configuration Settings
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
       </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          <a class="reference internal" href="security"><span class="std std-ref"><i class="fa fa-shield" aria-hidden="true"></i><br>Security</span></a></h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
    </div>
 
 **For more information, see the following sections**:
@@ -359,6 +331,7 @@ Advanced Configuration Settings
    tags_management/index
    pricing/index
    payment/index
+   shipping/index
    websites/index
 
 .. include:: /img/buttons/include_images.rst
