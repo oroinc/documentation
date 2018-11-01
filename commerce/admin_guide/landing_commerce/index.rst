@@ -306,8 +306,8 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                  <li><a class="reference internal" href="shipping/shipping_origin#sys-conf-commerce-shipping-shipping-origin"><span class="std std-ref">Shipping Origin</span></a></li>
-                  <li><a class="reference internal" href="shipping/shipping_options#sys-conf-commerce-shipping-shipping-options"><span class="std std-ref">Shipping Options</span></a></li>
+                  <li><a class="reference internal" href="../shipping/configuration/shipping_origin#sys-conf-commerce-shipping-shipping-origin"><span class="std std-ref">Shipping Origin</span></a></li>
+                  <li><a class="reference internal" href="../shipping/configuration/shipping_options#sys-conf-commerce-shipping-shipping-options"><span class="std std-ref">Shipping Options</span></a></li>
                   </ul>
           </div>
       </div>

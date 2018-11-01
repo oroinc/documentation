@@ -1,18 +1,24 @@
 .. _doc--integrations--fedex:
 
 FedEx Shipping Integration
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 .. contents:: :local:
+   :depth: 2
 
-.. begin_fedex_integration
-
-FedEx is a largest multinational delivery service company that provides a variety of shipping methods solutions, both ground and airfreight, day and overnight, to meet the customers' requirements.
+FedEx is the largest multinational delivery service company that provides a variety of shipping methods solutions, both ground and airfreight, day and overnight, to meet the customers' requirements.
 
 This section describes the steps that are necessary to expose FedEx as a shipping method in OroCommerce orders and quotes.
 
+.. note::
+   See a short demo on `how to create a shipping integration in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+
+    .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ileKXVTG6B8" frameborder="0" allowfullscreen></iframe>
+
 Prerequisites for Integration
-"""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Before adding FedEx as a shipping method in OroCommerce, you need to create a FedEx business account and obtain a dedicated shipping account number and a meter number via the official FedEx website.
 
@@ -62,12 +68,11 @@ Once the registration is complete, you can now obtain the necessary test keys to
 
    * Key
    * Password
-   * Account Number
+   * Account ID
    * Meter Number
 
-
 Configure a FedEx Integration in OroCommerce
-""""""""""""""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To enable the integration with FedEx in order to request the shipping cost estimation and/or request the shipping services:
 
@@ -98,10 +103,10 @@ Click the |IcTranslate| **Translations** icon to provide spelling for different 
 
 6. Provide the connection credentials which you have received from FedEx:
 
-   * User Credential Key - is the FedEx key.
-   * User Credential Password - is the FedEx password.
-   * Shipping Account Number - is the FedEx account number.
-   * Meter Number - is the FedEx meter number.
+   * User Credential Key - is the authentication key provided by FedEx and used for accessing your FedEx account.
+   * User Credential Password - is the production password provided by FedEx.
+   * Shipping Account Number - is the account ID provided by FedEx.
+   * Meter Number - is the meter number provided by FedEx.
 
 7. Select the available pickup type that applies to the deliveries for the shipping methods via this integration:
 
@@ -126,11 +131,13 @@ Click the |IcTranslate| **Translations** icon to provide spelling for different 
 13. Click **Save and Close**.
 
 
-Next, set up a shipping rule following the :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>` guide to enable this shipping method for all or some customer orders.
+Next, set up a shipping rule via the :ref:`Shipping Rules Configuration <sys--shipping-rules>` page to enable this shipping method for all or some customer orders.
+
+Once the shipping method is added to the shipping rule, provide the information that configures the shipping fee components and the method to calculate it following the :ref:`Configure a Shipping Method in a Shipping Rule <doc--shipping-rules--shipping-methods--detailed>` topic.
 
 
 Obtain a Set of Production Credentials
-""""""""""""""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Once you have successfully configured the OroCommerce FedEx integration, and the connection to the test environment is working properly, you can move to a production stage and request a new set of credentials.
 
@@ -144,11 +151,18 @@ Once you have successfully configured the OroCommerce FedEx integration, and the
 
 4. Receive an email with the corresponding production keys from FedEx.
 
-5. Follow the steps described in the aforementioned `Configure a FedEx Integration in OroCommerce`_ guide to set up the production integration between FedEx and OroCommerce.
+5. Follow the steps described in the aforementioned Configure a FedEx Integration in OroCommerce section to set up the production integration between FedEx and OroCommerce.
 
-   .. important:: Make sure NOT to select the **Test Mode** check box as you are configuring the production integration.
+   .. important:: Make sure that the **Test Mode** check box is NOT selected as you are configuring the production integration.
 
 .. stop_fedex_integration
+
+**Related Topics**
+
+* :ref:`Shipping Configuration <admin-guide--shipping>`
+* :ref:`Shipping Method Integration <sys--integrations--manage-integrations--ups--flat-rate>`
+* :ref:`Shipping Rules Configuration <sys--shipping-rules>`
+
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

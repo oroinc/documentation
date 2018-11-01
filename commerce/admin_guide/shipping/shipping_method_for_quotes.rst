@@ -1,11 +1,9 @@
 .. _shipping-configuration-per-quote:
 
-Shipping Configuration per Quote
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Assign a Shipping Method to a Quote
+-----------------------------------
 
-.. begin
-
-When editing the quote, a sales person may limit the shipping methods visible to customer.
+When editing the quote, a salesperson may limit the shipping methods visible to a customer.
 
 To limit the shipping methods per quote:
 
@@ -18,7 +16,7 @@ To limit the shipping methods per quote:
    .. image:: /user_guide/img/sales/quotes/ShippingInformation.png
       :class: with-border
 
-   a) In the **Shipping Methods** list, tick the boxes next to the shipping methods that you would like the customer to use for this order delivery.
+   a) In the **Shipping Methods** list, select the check boxes next to the shipping methods that you would like the customer to use for this order delivery.
 
       .. note:: When none of the methods are selected, the customer can use any of the listed methods.
 
@@ -28,11 +26,9 @@ To limit the shipping methods per quote:
 
    c) Optionally, enter the **Overridden Shipping Cost Amount, USD** - a custom shipping cost that will be used instead of the one dynamically generated based on the shipping method selection.
 
-   d) To enforce using only the default Shipping method, enable **Shipping Method Locked** flag.
+   d) To enforce using only the default Shipping method, enable the **Shipping Method Locked** flag.
 
-   e) Tick the **Allow Unlisted Shipping Methods** box to allow using the shipping method that is already selected as a default one, even if it is disabled in this quote configuration.
-
-.. stop
+   e) Select the **Allow Unlisted Shipping Methods** check box to allow using the shipping method that is already selected as a default one, even if it is disabled in this quote configuration.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -2,8 +2,8 @@
 
 .. System > Configuration > Commerce > Taxation > Shipping Tax
 
-Shipping Tax
-~~~~~~~~~~~~
+Configure Shipping Tax
+----------------------
 
 .. begin
 
@@ -32,6 +32,6 @@ To change the shipping tax configuration:
 
      a) Clear the **Use Default** box next to the option.
      b) Modify the tax code list: click **x** to remove the item, type in the new code value and press **Enter**.
-     c) Select/unselect the **Shipping Rates Include Tax** option.
+     c) Select/deselect the **Shipping Rates Include Tax** option.
 
 4. Click **Save**.

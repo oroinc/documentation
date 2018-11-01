@@ -18,6 +18,7 @@ You can configure one or more shipping rules that enable the shipping methods fo
 
 
 .. contents:: :local:
+   :depth: 2
 
 .. _doc--shipping-rules--overview:
 
@@ -183,12 +184,12 @@ To create a shipping rule:
 .. _doc--shipping-rules--shipping-methods--detailed:
 
 Configure a Shipping Method in a Shipping Rule
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------
 
 After you have added a shipping method to the shipping rule, you are prompted to provide the information that configures the shipping fee components and the method to calculate it.
 
 Flat Rate
-~~~~~~~~~
+^^^^^^^^^
 
 For the flat rate shipping method, provide the following information:
 
@@ -204,7 +205,7 @@ For example:
 .. image:: /admin_guide/img/shipping_rules/shipping_rule_method_flat.png
 
 UPS
-~~~
+^^^
 
 For the UPS shipping method, provide the following information:
 
@@ -220,7 +221,7 @@ For example:
 .. image:: /admin_guide/img/shipping_rules/shipping_rule_method_ups.png
 
 FedEx
-~~~~~
+^^^^^
 
 For the FedEx shipping method, provide the following information:
 
@@ -237,7 +238,7 @@ For example:
 
 
 DPD
-~~~
+^^^
 
 In the **Additional Options** section, provide the following information for each option that you want to use:
 
@@ -303,6 +304,17 @@ To define which columns to show in the table, click |IcSettings| above the table
 * To change the order of the columns, click |IcReorder| next to the name of the column you wish to move, hold the mouse button and drag the column to the required position.
 
 
+**Related Topics**
+
+* :ref:`Shipping Configuration <admin-guide--shipping>`
+* :ref:`General Shipping Configuration (System Configuration) <user-guide--shipping--configuration>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   expression_lang
