@@ -148,6 +148,7 @@ Also, refer to the :ref:`shipping configuration on the system level <user-guide-
 
 Customize Content Blocks per a Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 When you prepare :ref:`web catalogs <user-guide--web-catalog>` for you storefront, you can :ref:`create <user-guide--web-catalog-create>` and :ref:`enable a custom web catalog for the website <user-guide--marketing--web-catalog--enable-per-website>` or :ref:`set up a custom node content for the website <user-guide--marketing--web-catalog--customize>` in the default web catalog.
 
 .. Customize Activity Tracking per a Website~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
