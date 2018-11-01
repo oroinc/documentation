@@ -51,8 +51,6 @@ Overview index
 
    scheduled_tasks_overview
 
-   shipping_rules_overview
-
    system_calendars_overview
 
    system_information_overview

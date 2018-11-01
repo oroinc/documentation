@@ -2,16 +2,16 @@
 
 .. System > Configuration > Commerce > Shipping > Shipping Origin
 
-Shipping Origin
-~~~~~~~~~~~~~~~
+Configure Shipping Origin
+-------------------------
 
 .. begin
 
-You can control the global shipping origin that is used by default, unless there is an alternative address configured for the particular warehouse.
+You can control the global shipping origin that is used by default unless there is an alternative address configured for the particular warehouse.
 
 To change the global shipping origin:
 
-1. Navigate to the system configuration (click **System > Configuration** in the main menu).
+1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Shipping > Shipping Origin** in the menu to the left.
 
 .. note::

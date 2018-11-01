@@ -331,6 +331,7 @@ Advanced Configuration Settings
    tags_management/index
    pricing/index
    payment/index
+   shipping/index
    websites/index
 
 .. include:: /img/buttons/include_images.rst

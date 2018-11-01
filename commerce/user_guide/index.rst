@@ -91,9 +91,7 @@ Table of Contents
 
    shopping_lists/index
 
-   orders/index  
-
-   shipping/index
+   orders/index
 
    marketing_web_catalog/index
 

@@ -1,11 +1,18 @@
 .. _sys--conf--commerce--shipping--shipping-options:
+.. _user-guide--shipping--product-shipping-info:
 
 .. System > Configuration > Commerce > Shipping > Shipping Options
 
 Shipping Options
-~~~~~~~~~~~~~~~~
+----------------
 
 .. begin
+
+.. contents:: :local:
+   :depth: 2
+
+Global Shipping Options
+^^^^^^^^^^^^^^^^^^^^^^^
 
 You can enable and disable the shipping units of length and weight (and the freight class) that are available in OroCommerce out of the box. The enabled options are used in the customer orders and product shipping details.
 
@@ -24,14 +31,14 @@ To change these shipping options:
 
    The following options are available on the page:
 
-   * Allowed Units Of Length:
+   * Allowed Units of Length:
 
      - inch
      - foot
      - centimeter
      - meter
 
-   * Allowed Units Of Weight:
+   * Allowed Units of Weight:
 
      - pound
      - kilogram
@@ -46,3 +53,16 @@ To change these shipping options:
      b) Select/deselect the option by holding *Ctrl* and clicking on the value (e.g. pound).
 
 4. Click **Save**.
+
+Shipping Options per Product
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To enable shipping cost estimation by an integrated system, like UPS, every product in an order or a quote should have the shipping information. This information combined with the shipping origin and destination address helps the integrated system calculate the shipping cost with acceptable accuracy.
+
+Sample shipping information in the product details:
+
+.. image:: /user_guide/img/products/products/shipping_options_per_product_new.png
+
+It is recommended to add shipping information for every product unit.
+
+
