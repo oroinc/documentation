@@ -61,11 +61,11 @@ Images
 
 .. |IcTranslate| raw:: html
 
-   <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-language" aria-hidden="true"></i>
 
 .. |IcTranslations| raw:: html
 
-   <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-language" aria-hidden="true"></i>
 
 .. |IcShareWithOthers| raw:: html
 
@@ -101,7 +101,7 @@ Images
 
 .. |IcTranslationsC| raw:: html
 
-   <i class="fa fa-folder fa-lg" aria-hidden="true"></i>
+   <i class="fa fa-language" aria-hidden="true"></i>
 
 .. |IcFilter| raw:: html
 
