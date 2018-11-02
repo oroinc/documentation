@@ -357,7 +357,7 @@ rfp_products (OroCommerce Only)
     :linenos:
 
         {% set products = rfp_products(entity) %}
-        <!--{% if products|length %}-->
+        {% if products|length %}
             <table style="border: 1px solid black;margin-top: 10px">
                 <thead>
                     <tr>
@@ -389,7 +389,7 @@ rfp_products (OroCommerce Only)
                     </tbody>
                 <!--{% endfor %}-->
             </table>
-        <!--{% endif %}-->
+        {% endif %}
 
 order_line_items (OroCommerce only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
