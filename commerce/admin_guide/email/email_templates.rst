@@ -304,15 +304,15 @@ get_payment_methods (OroCommerce Only)
 .. code-block:: twig
     :linenos:
 
-    {% set payment_methods = get_payment_methods(entity) %}
+        {% set payment_methods = get_payment_methods(entity) %}
 
-    {% if  payment_methods|length == 1 %}
-        <h4>Payment Method:</h4>
-        {{ payment_methods[0] }}
-    {% elseif payment_methods|length > 1 %}
-        <h4>Payment Methods:</h4>
-        {{ payment_methods|join(', ') }}
-    {% endif %}
+        <!--{% if  payment_methods|length == 1 %}-->
+            <h4>Payment Method:</h4>
+            <!--{{ payment_methods[0] }}-->
+        <!--{% elseif payment_methods|length > 1 %}-->
+            <h4>Payment Methods:</h4>
+            <!--{{ payment_methods|join(', ') }}-->
+        <!--{% endif %}-->
 
 **Alternative example:**
 
