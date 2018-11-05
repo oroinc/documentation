@@ -493,13 +493,6 @@ If :ref:`several languages have been enabled <sys--config--sysconfig--general-se
 .. image:: ../img/marketing/email_template_language.png
    :alt: Navigating from one language tab to another
 
-  
-
-.. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
-   :align: middle
-
-.. |BCrLOwnerClear| image:: ../../img/buttons/BCrLOwnerClear.png
-   :align: middle
    
 .. |email_template_create| image:: ../img/marketing/email_template_create.png
 

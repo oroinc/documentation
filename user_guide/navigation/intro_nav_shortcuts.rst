@@ -118,8 +118,9 @@ and shortcuts with their corresponding descriptions.
 
 
 
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
-
 .. |shortcut| image:: ../img/navigation/panel/shortcut.png
+   :width: 40%
 
 .. |shortcut_all| image:: ../img/navigation/panel/shortcut_all.png
+   :width: 40%
+

@@ -32,12 +32,6 @@ From the :ref:`grid <doc-grids>` of Magento Customers you can:
     Editing the subscription list is only possible if 
     :ref:`two-way synchronization <user-guide-magento-channel-integration-synchronization>` has been enabled. 
 
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
 
-.. |IcView| image:: /img/buttons/IcView.png
-   :align: middle
-   
-.. |IcSub| image:: /img/buttons/IcSub.png
-   :align: middle
-
-.. |IcUns| image:: /img/buttons/IcUns.png
-   :align: middle

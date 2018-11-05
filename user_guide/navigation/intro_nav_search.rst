@@ -5,7 +5,7 @@ Search
 
 Search is the fastest way to find a specific record you need. To find a record in OroCRM:
 
-1. Click the search icon at the top of the screen – |IcSearch|.
+1. Click the search icon at the top of the screen.
 2. Type the search key into the text field.
 3. Click **Go** or hit *Enter* on the keyboard.
 
@@ -28,6 +28,8 @@ are looking for is in the list, you can immediately click it to open. Here are t
 above:
 
 .. image:: ../img/navigation/panel/search_ex_3.png
+   :width: 60%
+   :alt: A list of search results
 
 
 Modify the Search
@@ -60,7 +62,5 @@ You will see a page that looks similar to the search results and that contains a
 
 
 .. image:: ../img/navigation/panel/search_vip_2.png
-
-
-.. |IcSearch| image:: ../../img/buttons/IcSearch.png
+   :alt: Tagged records
 

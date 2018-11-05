@@ -194,4 +194,3 @@ The **Already shared with** section gets automatically populated with the person
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-  
