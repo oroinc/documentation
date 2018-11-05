@@ -39,11 +39,13 @@ To create a new price list:
       Click *Choose a date* to open a calendar and pick the date.
 
       .. image:: /user_guide/img/sales/price_lists/PriceListsCreate_general_schedule.png
+         :width: 40%
          :class: with-border
 
       Click *time* and select the activation or deactivation time from the list. Alternatively, type it in and press **Enter**.
 
       .. image:: /user_guide/img/sales/price_lists/PriceListsCreate_general_schedule_time.png
+         :width: 50%
          :class: with-border
 
       To add another time slot, click **+ Add** below the time table. Add as many slots as you need.

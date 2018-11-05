@@ -22,6 +22,8 @@ Below is an example of a simple report that displays a particular budget per opp
 3. You are now redirected to the report view that shows the opportunities with the known **Budget Amount**:
 
    .. image:: /user_guide/img/business_intelligence/reports_examples_2.png
+      :width: 60%
+      :alt: Report view with the opportunities
 
 4. Click **Edit** to continue the report configuration.
 
@@ -36,6 +38,8 @@ Let us see what happens after we use the **Count** function for the **Opportunit
    **Report Preview (Function = Count)**
 
    .. image:: /user_guide/img/business_intelligence/reports_examples_4.png
+      :width: 60%
+      :alt: Report example illustrating the count function
 
 Similarly, you can use sum, max, average, and min functions.
 

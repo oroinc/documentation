@@ -29,15 +29,20 @@ This page contains a list of menus that you can configure.
 
 
   .. image:: /user_guide/img/getting_started/navigation/panel/shortcut_full.png
-
+     :width: 40%
+     :alt: The shortcuts menu displayed at the top of the application screen
 
 - **usermenu**—This is the menu that you can access by clicking on your name in the upper-right corner of the application. Via it you can access your profile, emails, tasks and events. It is always displayed on every page. For more information, see :ref:`User Menu <user-guide-getting-started-user-menu>`.
 
   .. image:: /user_guide/img/getting_started/intro/user_menu.png
+     :width: 20%
+     :alt: User menu opens after clicking on the username on the top right of the application screen
 
 - **calendar_menu**—This is a specialized menu that you can find on the **My Calendar** page. Via it you can change the displayed calendar color, hide or remove a calendar from view. For more information, see :ref:`Calendar List <user-guide-calendars>`.
 
   .. image:: /user_guide/img/getting_started/my_oro/calendar_menu.png
+     :width: 40%
+     :alt: Calendar menu on my calendar page
 
 .. _doc-menus-actions-viewmenu:
 
@@ -99,7 +104,7 @@ To expand / collapse all menu items, click the ellipses drop-down menu in the up
 Find a Menu Item
 ~~~~~~~~~~~~~~~~
 
-To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon or press :guilabel:`Enter`.
+To quickly find a menu item, enter its name into the search field and click the |IcSearch| **Search** icon or press **Enter**.
 
 
 
@@ -127,9 +132,11 @@ Add a Menu Item
 
 1. In the left panel, click a menu item which will be parent for the menu item that you create.
 
-2. Click the :guilabel:`Create` drop-down in the upper-right corner of the page and click :guilabel:`Create Menu Item` on the list.
+2. Click the **Create**` drop-down in the upper-right corner of the page and click :**Create Menu Item** on the list.
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_createmenuitem.png
+      :width: 40%
+      :alt: Create menu item button
 
    The created menu item will appear as the last one on the list of children of the same parent item. You can move it to the position that you need as described in the :ref:`Rearrange Menu Items / Dividers <doc-menus-actions-draganddrop>` action description.
 
@@ -158,7 +165,7 @@ Add a Menu Item
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_create_general.png
 
-4. Click :guilabel:`Save` or, if you want to start immediately create another menu item, :guilabel:`Save and New` in the upper-right corner of the page.
+4. Click **Save** or, if you want to start immediately create another menu item, **Save and New** in the upper-right corner of the page.
 
 
 .. important::
@@ -172,7 +179,7 @@ Add a Divider
 
 1. In the left panel, click a menu item which will be parent for the menu divider that you create.
 
-2. Click the :guilabel:`Create` drop-down on the top right and click :guilabel:`Create Divider` on the list.
+2. Click the **Create** drop-down on the top right and click **Create Divider** on the list.
 
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_createdivider.png
@@ -202,6 +209,8 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 - If an arrow points to the place between items, that is where the moved item will be placed.
 
   .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_d&dsame.png
+     :width: 40%
+     :alt: Rearranging menu items
 
 
 
@@ -223,9 +232,9 @@ Delete a Menu Item / Divider
 
 1. In the left panel, click a menu item / divider that you want to delete.
 
-2. Click the :guilabel:`Delete` button in the upper-right corner of the page.
+2. Click the **Delete** button in the upper-right corner of the page.
 
-3. In the **Delete Confirmation** dialog box, click :guilabel:`Yes, Delete`.
+3. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
 
 .. important::
     You need to reload the page to see changes.
@@ -247,7 +256,7 @@ To hide a menu item:
 
 1. In the left panel, click a menu item that you want to hide.
 
-2. Click the :guilabel:`Hide` button in the upper-right corner of the page.
+2. Click the **Hide** button in the upper-right corner of the page.
 
 .. important::
     You need to reload the page to see changes.
@@ -262,7 +271,7 @@ To show a previously hidden menu item:
 
 1. In the left panel, click a menu item that you want to show.
 
-2. Click the :guilabel:`Show` button in the upper-right corner of the page.
+2. Click the **Show** button in the upper-right corner of the page.
 
 .. note::
     If a menu item that you want to show has a parent, it will become visible too.
@@ -278,9 +287,9 @@ Reset a Menu
 
 1. In the left panel, click a menu name.
 
-2. Click the guilabel:`Reset` button in the upper-right corner of the page.
+2. Click the **Reset** button in the upper-right corner of the page.
 
-3. In the **Reset Confirmation** dialog box, click :guilabel:`Yes, Reset`.
+3. In the **Reset Confirmation** dialog box, click **Yes, Reset**.
 
 .. important::
    You need to reload the page to see changes.

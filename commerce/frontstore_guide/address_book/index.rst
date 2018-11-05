@@ -31,6 +31,8 @@ The address book has two sections:
    Depending on the storefront settings, the address book lists may appear in the compact format with a map displayed on the right:
 
    .. image:: /frontstore_guide/img/profile/address_book_compact.png
+      :width: 40%
+
 
 
 

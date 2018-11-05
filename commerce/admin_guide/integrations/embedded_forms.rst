@@ -15,10 +15,12 @@ The fields of an embedded form depend on its type. The two out-of-the-box types 
 * Contact Request
 
    .. image:: /user_guide/system/img/emb_form/cont_req.png
+      :width: 50%
  
 * Magento Contact Us Request
  
    .. image:: /user_guide/system/img/emb_form/cont_req_magento.png
+      :width: 50%
  
 Additional embedded form types may be created in the course of integration with the Oro application, subject to your specific business needs.
 

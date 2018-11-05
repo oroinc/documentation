@@ -55,6 +55,8 @@ You can switch to a dashboard in one of the two ways:
 - Hover over the |IcDashboard| in the main menu and click the dashboard name.
  
   .. image:: /user_guide/img/business_intelligence/dashboards_3.png
+     :width: 20%
+     :alt: Switch to a dashboard by clicking the dashboard name
   
 - Toggle dashboards in the header of the Dashboard page.
 

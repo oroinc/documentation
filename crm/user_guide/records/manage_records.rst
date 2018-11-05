@@ -54,6 +54,8 @@ To edit a record using inline-editing:
    If a field can take just certain values, the inline editor will show you a list values to select from.
 
    .. image:: /user_guide/img/getting_started/records/grids/grids_inlineeditor2.png
+      :width: 20%
+      :alt: An example of a list values for a field when editing a record inline
 
 4. Click the |IcActivate| **Save Changes** icon to save a new value, or the |IcBan| **Discard Changes** icon to return to the old value.
 
@@ -122,8 +124,14 @@ Review Record History
 You can review the history of a specific record if you have the corresponding permissions. Click on the **Change History** link on the top right of the record page to open the dialog window. If the record has been modified in any way, you will see who, how and when updated it.
 
 .. image:: /user_guide/img/getting_started/data_management/view/view_history.png
+   :width: 80%
+   :alt: Open the dialog window by clicking on the change history link
+
+|
 
 .. image:: /user_guide/img/records/change_history.png
+   :width: 70%
+   :alt: Change history window
 
 Share Records
 -------------

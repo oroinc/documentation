@@ -63,10 +63,12 @@ When you drag-and-drop items, pay attention to the arrow that shows where the it
 - If an arrow points to the place between items, that is where the moved item will be placed.
 
   .. image:: /admin_guide/img/menus/edit/menus_actions_d&dsame.png
+     :width: 40%
 
 - If and arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
 
   .. image:: /admin_guide/img/menus/edit/menus_actions_d&dunder.png
+     :width: 40%
 
 .. finish_1
 
@@ -82,6 +84,7 @@ Add a Menu Item
 2. Click **Create** drop-down on the top right and click **Create Menu Item** on the list.
 
    .. image:: /admin_guide/img/menus/edit/menus_createmenuitem.png
+      :width: 50%
 
    The created menu item will appear as the last one on the list of children of the same parent item. You can move it to the position that you need, as described in the :ref:`Rearrange Menu Items / Dividers <doc-config-menus-actions-draganddrop>` action description.
 

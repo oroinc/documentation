@@ -90,7 +90,7 @@ Multi Page Checkout
    * Click |IcEditInline| next to the step that you want to edit. In this case, *all the changes made at the later steps will be preserved*.
 
      .. image:: /admin_guide/img/workflows/checkout/EditInfo.png
-        :align: center
+        :width: 20%
 
 .. tip::
 

@@ -43,7 +43,7 @@ In order to start a hangout call from the page of a record:
 
    .. image:: /user_guide/system/img/hangouts/hover.png  
 
-3. Click |HObutton|.
+3. Click the hangouts icon.
 4. In the **Invite Contacts to a Google Hangout** form , click **Start a Hangout**.
 
    .. image:: /user_guide/system/img/hangouts/invite.png
@@ -95,6 +95,7 @@ To start a Hangout call with contacts invited to an event:
 3. If the event has at least one guest invited, the **Start a Hangout** button is displayed.
 
    .. image:: /user_guide/system/img/hangouts/view_event.png
+      :width: 40%
 
 4. Click **Start a Hangout** to start a call using the email addresses of the first five guests.
 

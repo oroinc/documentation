@@ -9,18 +9,26 @@ If you forgot your password, perform the following steps:
 2. Click the **Forgot your password?** link.
 
    .. image:: ../img/access_oro/login_forgot1.png
+      :width: 40%
+      :alt: Forgot your password
 
 3. On the **Forgot Password** page, enter your username or the primary email address specified in your profile and click **Request**.
   
    .. image:: ../img/access_oro/login_forgot2.png
+      :width: 40%
+      :alt: Click request
 
 4. If the credentials you have entered in the previous step are not valid, you will see the corresponding notification:
  
    .. image:: ../img/access_oro/login_forgot4.png
+      :width: 40%
+      :alt: There is no active user with username or email address
 
 5. If the credentials are valid, the password reset link is sent to your email address:
 
    .. image:: ../img/access_oro/login_forgot5.png
+      :width: 40%
+      :alt: The password reset link is sent to your email address
 
 6. Follow the link and instructions in your email to change your password.
 

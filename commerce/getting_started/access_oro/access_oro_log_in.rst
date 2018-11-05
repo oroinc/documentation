@@ -18,6 +18,7 @@ If you are not currently logged into the Oro application, the **Login** page ope
 3. Click **Log In**.
 
    .. image:: /user_guide/img/access_oro/login_ok.png
+      :width: 40%
 
 .. caution::  It is highly recommended to change your password immediately after the first login. See :ref:`Change Your Password <doc-my-user-actions-change-password>` for more information.
 

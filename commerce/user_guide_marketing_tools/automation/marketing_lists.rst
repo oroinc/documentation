@@ -238,6 +238,7 @@ To delete a marketing list:
 
 
 .. |MapML| image:: /user_guide/img/marketing/marketing/map_ml.png
+   :width: 50%
    :align: middle
 
 .. stop
