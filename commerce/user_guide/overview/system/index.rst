@@ -59,6 +59,4 @@ Overview index
 
    user_management_overview
 
-   websites_overview
-
    workflows_overview

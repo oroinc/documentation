@@ -1,3 +1,5 @@
+.. _user-guide--system-websites--configure-website:
+
 Configure a Website
 ^^^^^^^^^^^^^^^^^^^
 
@@ -43,18 +45,18 @@ To define the custom configuration options for the particular website:
 
 1. Navigate to **System > Websites** using the main menu.
 
-   .. image:: /admin_guide/img/websites/Websites.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/all_websites_page.png
+      :alt: The list of available websites
 
 2. Click on the website you would like to customize configuration for (e.g. Australia).
 
-   .. image:: /admin_guide/img/websites/view_website.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/view_website_australia.png
+      :alt: View the details of Australia website
 
 3. On the website details page, click |IcConfig| **Configuration**. The following page opens:
 
-   .. image:: /admin_guide/img/websites/website_system_config.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/website_config.png
+      :alt: The configuration page of Australia website
 
 
    .. include:: /admin_guide/config_levels/website.rst
@@ -63,7 +65,9 @@ To define the custom configuration options for the particular website:
 
 4. Once you complete configuring the website-level settings in the option group, click **Save Settings**.
 
+**Related Topics**
 
+* :ref:`Website Management <user-guide--system-websites>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
