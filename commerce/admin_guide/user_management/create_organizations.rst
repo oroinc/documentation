@@ -36,6 +36,7 @@ Once saved, the organization is available on the list of all organizations under
 
 .. image:: /admin_guide/img/user_management/organizations_grid.png
 
+
 .. _user-management-organization-manage:
 
 Manage Organizations
@@ -57,6 +58,8 @@ To open the page of a specific organization:
    * To view who updated organization details, click the **Change History** link.
    * To disable users within the organization, click |IcBan| in the table at the end of the row of the selected user.
    * To reset the existing password for a particular user on the list, click |IcResetPassword| in the table at the end of the row.
+
+.. note:: Keep in mind that only those customer user roles that have been created in the current organization will be displayed in the Customer User Roles record table of the current organization.
 
 **Related Articles**
 

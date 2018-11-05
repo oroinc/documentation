@@ -1,3 +1,5 @@
+.. _user-guide--system-websites--manage-websites:
+
 Manage a Website
 ^^^^^^^^^^^^^^^^
 
@@ -26,20 +28,20 @@ To set a website as default:
 
 1. Navigate to **System > Websites** using the main menu.
 
-   .. image:: /admin_guide/img/websites/Websites.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/all_websites_page.png
+      :alt: The list of available websites
 
 2. Click on the website you would like to use as default (e.g. Australia).
 
-   .. image:: /admin_guide/img/websites/view_website.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/view_website_australia.png
+      :alt: View the details of Australia website
 
 3. On the website details page, click |IcFlag| **Set Default**.
 
 Now the website is marked as default and will be used for the anonymous access.
 
-.. image:: /admin_guide/img/websites/default_website.png
-   :class: with-border
+.. image:: /admin_guide/img/websites/default_australia_website.png
+   :alt: Mark Australia website as the default one
 
 Edit a Storefront Menu
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -50,25 +52,25 @@ To customize a storefront menu for the website:
 
 1. Navigate to **System > Websites** using the main menu.
 
-   .. image:: /admin_guide/img/websites/Websites.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/all_websites_page.png
+      :alt: The list of available websites
 
 2. Click the website you would like to edit a menu for (e.g. Australia).
 
-   .. image:: /admin_guide/img/websites/view_website.png
-      :class: with-border
+   .. image:: /admin_guide/img/websites/view_website_australia.png
+      :alt: View the details of Australia website
 
 3. On the website details page, click |IcConfig| **Edit Frontend Menu**.
 
    Now you are redirected to the list of OroCommerce Storefront menus:
 
    .. image:: /admin_guide/img/websites/front_menu.png
-      :class: with-border
+      :alt: The list of OroCommerce Storefront menus
 
 4. Click on the menu to start customizing it:
 
    .. image:: /admin_guide/img/websites/edit_menu.png
-      :class: with-border
+      :alt: Click on the menu to start customizing it
 
    * Drag-and-drop menu items to rearrange them.
 
@@ -77,7 +79,7 @@ To customize a storefront menu for the website:
    * Click on the menu item to edit its details.
 
      .. image:: /admin_guide/img/websites/edit_menu_item.png
-        :class: with-border
+        :alt: Edit the details of the menu item
 
 Find more information on how to edit and customize the storefront menu in the :ref:`Menu Management <doc-config-menus-menuspage>` section.
 
@@ -112,7 +114,7 @@ For more details on how to create a price list and enable it for a particular we
 Customize Product Inventory per a Website
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You acn also create and manage multiple warehouses, track your inventory status and the availability of your products, as well as their quantities, in each warehouse assigned to a particular website.
+You can also create and manage multiple warehouses, track your inventory status and the availability of your products, as well as their quantities, in each warehouse assigned to a particular website.
 
 The :ref:`Warehouses and Inventory <user-guide--inventory>` section covers the details on how to configure inventory-related settings globally and per a website.
 
@@ -152,6 +154,11 @@ Customize Content Blocks per a Website
 When you prepare :ref:`web catalogs <user-guide--web-catalog>` for you storefront, you can :ref:`create <user-guide--web-catalog-create>` and :ref:`enable a custom web catalog for the website <user-guide--marketing--web-catalog--enable-per-website>` or :ref:`set up a custom node content for the website <user-guide--marketing--web-catalog--customize>` in the default web catalog.
 
 .. Customize Activity Tracking per a Website~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Related Topics**
+
+* :ref:`Website Management <user-guide--system-websites>`
+
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

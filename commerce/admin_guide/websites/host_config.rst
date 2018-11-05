@@ -35,4 +35,9 @@ To prepare files for the website located in the sub-directory (e.g /uk), do the 
 
 where <yoursitename> is *uk* in our example.
 
-Now when you use the http://localhost/<yoursitename>/app_dev.php address, the asset files (styles.css, require.js, etc.) are taken from the root folder on the domain instead of the dedicated website sub-folder.
+Now when you use the http://localhost/<yoursitename>/index_dev.php address, the asset files (styles.css, require.js, etc.) are taken from the root folder on the domain instead of the dedicated website sub-folder.
+
+**Related Topics**
+
+* :ref:`Configure a Website <user-guide--system-websites--configure-website>`
+* :ref:`Manage a Website <user-guide--system-websites--manage-websites>`
