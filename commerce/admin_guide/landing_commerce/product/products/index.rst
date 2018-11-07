@@ -44,7 +44,7 @@ OroCommerce groups product configuration options into the following categories:
 .. toctree::
    :hidden:
 
-   units
+   product_units
 
    config_watermark
          
