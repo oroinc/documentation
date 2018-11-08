@@ -152,33 +152,6 @@ top of ``FilesystemCache``
 .. _Default cache implementation: #default-cache-implementation
 .. _Readme: ../../readme.md#abstract-cache-services
 
-APC Cache
----------
-
-There is a possibility to use APC cache and few steps should be
-completed for this.
-
-First of all, APC should be installed and enabled in the system. After
-this, the production configuration file (``config_prod.yml``) should be
-updated with the following parameters:
-
-.. code-block:: none
-    :linenos:
-
-    doctrine:
-        orm:
-            auto_mapping: true
-            query_cache_driver:    apc
-            metadata_cache_driver: apc
-            result_cache_driver: apc
-
-    services:
-        oro.cache.abstract:
-            abstract:             true
-            class:                Doctrine\Common\Cache\ApcCache
-
-On the last step of the configuration, production cache should be cleared.
-
 Caching of Symfony Validation Rules
 -----------------------------------
 
