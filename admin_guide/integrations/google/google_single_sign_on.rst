@@ -64,13 +64,9 @@ Configure Consent Form
 5. For **Authorized JavaScript Origins**, enter the URL of the Oro application instance for which single sign-on is being enabled.
 6. **Authorized Redirect URIs** are unified resource names used for the interaction between Google and the Oro application instance. It is recommended to add the following two values:
 
-   **For version 2.6 and below**
-   [Oro application instance URL]/admin/login/check-google
-   [Oro application instance URL]/app.php/admin/login/check-google
+   - [Oro application instance URL]/login/check-google
 
-   **For version 3.0 and above**
-   [Oro application instance URL]/admin/login/check-google
-   [Oro application instance URL]/index.php/admin/login/check-google
+   - [Oro application instance URL]/index.php/login/check-google
 
 7. Click **Create Client ID**.
 
