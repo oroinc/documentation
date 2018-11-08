@@ -34,7 +34,7 @@ Apply Patches to a Deployed Application
 
 In order to unify the process of applying patches during application deployment, the maintenance agent has the functionality for applying/reverting patches.
 
-Use the following commands to work with patches (supports only patches created in ``PhpStorm``):
+Use the following commands to work with patches:
 
 * **patch:list** - shows the list of applied patches to the current application deployment
 

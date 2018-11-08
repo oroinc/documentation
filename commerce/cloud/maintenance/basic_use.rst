@@ -15,6 +15,30 @@ To list the available OroCloud maintenance management commands, run `orocloud-cl
 
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
+Locks
+^^^^^
+
+Any time the `orocloud-cli` command runs with any argument or options, the maintenance agent is locked to prevent simultaneous execution of itself. This is required to avoid cases when different users may execute commands that may lead to environment corruption, e.g. when different users run `deploy` and `upgrade` at the same time. If this happens, a warning message is displayed.
+
+As an example:
+
+.. code-block:: none
+    :linenos:
+
+    WARNING!
+    Another `orocloud-cli` instance is already running PID `2860`.
+    Nov 01 12:00:01 ocrm-prod-app maintenance_user: upgrade -vv --log ~/upgrade.log
+
+* `PID \`2860\`` - the currently running command process identifier.
+* `Nov 01 12:00:01` - the date and time when the command has started.
+* `ocrm-prod-app` - the name of the cloud node instance.
+* `maintenance_user` - the name of the user who runs the command.
+* `upgrade -vv --log ~/upgrade.log` - the `orocloud-cli` command argument and options being used.
+
+.. note:: When you need to check the current maintenance agent version or list all available commands, running `orocloud-cli` command without any arguments is allowed even when locked.
+
+.. note:: When the currently running command has finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
+
 Deploy
 ^^^^^^
 
