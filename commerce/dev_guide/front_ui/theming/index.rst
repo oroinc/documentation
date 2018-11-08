@@ -9,6 +9,8 @@ presentation for a group of pages. You can think of a **theme** as the skin for 
 Files that the theme consists of, are :ref:`layout updates <dev-guide-layouts-layout-updates>`,
 **styles**, **scripts** and anything else related to the look and feel of the page.
 
+The application comes with three `Out-of-the-box OroCommerce Themes`_ . 
+
 .. contents:: Table of Contents
     :local:
     :depth: 2
@@ -42,7 +44,7 @@ The **allowed options in the theme configuration** file are following:
 | `label`       | The label displayed in       | yes                   |
 |               | the theme management UI.     |                       |
 +---------------+------------------------------+-----------------------+
-| `logo`        | The logo that  displayed     | no                    |
+| `logo`        | The logo displayed           | no                    |
 |               | in the UI.                   |                       |
 +---------------+------------------------------+-----------------------+
 |  `screenshot` | A preview screenshot         | no                    |
@@ -176,6 +178,8 @@ place it into the `Resources/views/layouts/{theme_name}/config` folder.
 -  `RequireJS Definition`_
 -  `Page Templates`_
 
+.. _dev-guide-layouts-theming-configuration-assets:
+
 Assets
 ~~~~~~
 
@@ -249,6 +253,8 @@ example `DemoBundle/Resources/views/layouts/first_theme/config/assets.yml`.
                src: '=data["asset"].getUrl(data["theme"].getStylesOutput(context["theme"], "own_styles"))'
        ...
 
+.. _dev-guide-layouts-theming-configuration-images:
+
 Images
 ~~~~~~
 
@@ -275,6 +281,8 @@ example `DemoBundle/Resources/views/layouts/first_theme/config/images.yml`.
            label: orob2b.product.productimage.type.additional.label
            dimensions: ~
            max_number: ~
+
+.. _dev-guide-layouts-theming-configuration-requirejs:
 
 RequireJS Definition
 ~~~~~~~~~~~~~~~~~~~~
@@ -351,6 +359,8 @@ you want use your own minimized scripts in the theme, define the
 `oro_layout_requirejs_config_provider` is alias of
 `oro_layout.provider.requirejs_config`.
 
+.. _dev-guide-layouts-theming-page-templates:
+
 Page Templates
 --------------
 
@@ -395,26 +405,26 @@ The **allowed page templates configuration options** are following:
 .. code-block:: yaml
     :linenos:
 
-        #DemoBundle/Resources/views/layouts/first_theme/config/page_templates.yml
-        templates:
-           -
-               label: Custom page template
-               description: Custom page template description
-               route_name: demo_first_route_name
-               key: custom
-           -
-               label: Additional page template
-               description: Additional page template description
-               route_name: demo_first_route_name
-               key: additional
-           -
-               label: Additional page template
-               description: Additional page template description
-               route_name: demo_second_route_name
-               key: additional
-        titles:
-           demo_first_route_name: First route name title
-           demo_second_route_name: Second route name title
+    #DemoBundle/Resources/views/layouts/first_theme/config/page_templates.yml
+    templates:
+       -
+           label: Custom page template
+           description: Custom page template description
+           route_name: demo_first_route_name
+           key: custom
+       -
+           label: Additional page template
+           description: Additional page template description
+           route_name: demo_first_route_name
+           key: additional
+       -
+           label: Additional page template
+           description: Additional page template description
+           route_name: demo_second_route_name
+           key: additional
+    titles:
+       demo_first_route_name: First route name title
+       demo_second_route_name: Second route name title
 
 .. note:: Be aware that page templates inherit parent themes. To
     override the existing page template, add the **layout update** file to
@@ -427,6 +437,19 @@ All page template :ref:`layout updates <dev-guide-layouts-layout-updates>` shoul
 `Resources/views/layouts/{theme_name}/{route_name}/page_template/{page_template_KEY}/`
 folder, for example
 `DemoBundle/Resources/views/layouts/first_theme/demo_first_route_name/page_template/custom/layout.yml`.
+
+.. _dev-guide-layouts-theming-orocommerce-themes:
+
+Out-of-the-box OroCommerce Themes
+---------------------------------
+
+Out-of-the-box the OroCommerce application comes with three predefined Storefront themes: blank, default and custom.
+
+* **The blank theme** is a simple theme aimed at providing the base for future decorations.
+* **The default theme** is a fully featured theme that extends the blank theme and provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.
+* **The custom theme** is a sample that illustrates how to build your own custom theme.
+
+The *blank* and *default* themes are aimed to be *base for any* `customizations <https://oroinc.com/b2b-ecommerce/doc/current/storefront-customization-guide>`_.
 
 .. _LayoutBundle: https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/README.md
 .. _RequireJSBundle: https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle/README.md

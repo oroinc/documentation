@@ -23,14 +23,14 @@ Getting Started
 In the following example we are going to create a product page with the
 next details:
 
-.. figure:: /dev_cookbook/layouts/img/product_page.png
+.. figure:: /dev_guide/other/layouts/img/product_page.png
     :alt: Product page example
 
     Product page example
 
 A simplified page structure is presented by the following picture:
 
-.. image:: /dev_cookbook/layouts/img/sample_page_structure.gif
+.. image:: /dev_guide/other/layouts/img/sample_page_structure.gif
     :alt: Simplified page structure
 
 As described in the :ref:`Quick Start guide <dev-guide-layouts-getting-started>`, you can

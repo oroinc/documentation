@@ -1,7 +1,7 @@
 .. _dev-cookbook-layouts:
 
-Layouts Recipes
-===============
+Layouts Cookbook Recipes
+========================
 
 .. toctree::
     :includehidden:

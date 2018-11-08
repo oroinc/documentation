@@ -15,6 +15,8 @@ The information in this topic is grouped into the following sections:
    :local:
    :depth: 2
 
+.. _install-for-dev-step-1:
+
 Step 1: Environment Setup
 -------------------------
 
@@ -118,6 +120,8 @@ Enable Installed Services
 
    systemctl start mysqld php-fpm nginx supervisord
    systemctl enable mysqld php-fpm nginx supervisord
+
+.. _install-for-dev-step-2:
 
 Step 2: Pre-installation Environment Configuration
 --------------------------------------------------
@@ -430,6 +434,8 @@ For the changes to take effect, restart PHP-FPM by running:
 
    systemctl restart php-fpm
 
+.. _install-for-dev-step-3:
+
 Step 3: |oro_app_name| Application Installation
 -----------------------------------------------
 
@@ -535,6 +541,8 @@ As *nginx* user should be able to create folders, run the following commands to 
    find . -type d -exec chmod 0755 {} \;
    chown -R nginx:nginx ./var/{sessions,attachment,cache,import_export,logs}
    chown -R nginx:nginx ./public/{media,uploads,js}
+
+.. _install-for-dev-step-4:
 
 Step 4: Post-installation Environment Configuration
 ---------------------------------------------------

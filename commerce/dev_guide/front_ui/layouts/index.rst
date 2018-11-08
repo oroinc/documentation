@@ -38,8 +38,9 @@ For detailed information on specific aspects of the layouts system, please check
     what_is_layout
     layout_updates
     layout_data
-    theming
     debugging
+
+* :doc:`/dev_guide/front_ui/theming/index`
 
 .. _dev-guide-layouts-getting-started:
 

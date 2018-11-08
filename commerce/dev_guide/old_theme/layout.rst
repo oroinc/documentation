@@ -1,3 +1,7 @@
+:orphan:
+
+.. Should be removed entirely after creating the Admin UI and Front UI sections of the new Developer Guide
+
 .. index::
     pair: Customization; Themes
 
