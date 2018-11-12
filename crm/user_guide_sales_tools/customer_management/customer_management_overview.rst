@@ -1,7 +1,7 @@
 .. _doc-customer-management-overview:
 
 Understanding Accounts, Channels, and Customers
-===============================================
+-----------------------------------------------
 
 For each :ref:`channel created <user-guide-channel-guide-create>`, there is a set of :term:`entities <Entity>`  that are defined. These entities correspond to the various types of information collected from the corresponding data source.
 
@@ -92,3 +92,4 @@ System users can define a relationship between a customer and a contact (i.e. bi
 
 .. note:: You can also checkout a short video on `how to create and edit contact records <https://oroinc.com/orocrm/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0>`_.
 
+Now that you have the general understanding of the Accounts, Contacts, Customers, and Customer Users concepts, you can summarize the information by checking the :ref:`Compare Accounts and Contacts to Customers and Customer Users <user-guide-commerce-integration-accounts--compare>` topic. It helps clarify the difference between all these entities in case your OroCRM application is integrated with OroCommerce, and the menu content is combined displaying the modules from both OroCRM and OroCommerce.
