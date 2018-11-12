@@ -1,8 +1,7 @@
 .. _reinstall:
 
-
-Reinstallation and Troubleshooting Hints
-----------------------------------------
+Reinstallation of the |main_app_in_this_topic|
+----------------------------------------------
 
 To reinstall |main_app_in_this_topic|:
 
@@ -14,10 +13,10 @@ To reinstall |main_app_in_this_topic|:
 
 .. note:: The installation process terminates with a warning if the environment does not meet the system requirements. Fix the reported issue(s) and launch the installation again.
 
-If any problem occurs, you can see the details in ``app/logs/oro_install.log`` file.
+If any problem occurs, you can see the details in ``var/logs/oro_install.log`` file.
 
 .. hint:: Normally, the installation process is terminated if it detects an already-existing installation. 
 
 .. hint:: After the installation finished remember to run ``php app/console oro:api:doc:cache:clear`` to warm-up the API documentation cache. This process may take several minutes.
 
-.. |main_app_in_this_topic| replace:: OroCRM
+.. |main_app_in_this_topic| replace:: OroCommerce
