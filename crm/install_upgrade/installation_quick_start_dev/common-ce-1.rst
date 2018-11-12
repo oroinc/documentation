@@ -193,37 +193,52 @@ Use this password to login to mysql CLI as root user and change the temporary pa
 Replace `P@ssword123` with your secret password. Ensure it contains at least one upper case letter, one lower case letter,
 one digit, and one special character, and has a total length of at least 8 characters.
 
-Create a Database for |oro_app_name| Application and a Dedicated Database User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: sql
-
-   CREATE DATABASE oro;
-   GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
-   exit
-
-Replace `oro_user` and `P@ssword123` with a new username and more secure password respectively.
-Ensure the password contains at least one upper case letter, one lower case letter, one digit,
-and one special character, and has a total length of at least 8 characters.
-
 Change the MySQL Server Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database.
-However, if you are forced to use the HDD, as a precaution, to avoid performance issues, use the remedy explained in the
-`optimizing InnoDB Disk I/O <https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html>`_ article, and hence
-set the following configuration parameters in the **/etc/my.cnf** file:
+It is recommended to use SSD to store the |oro_app_name| data in the MySQL 5.X database. However, in case you do need to
+use the HDD, set the following configuration parameters in the **/etc/my.cnf** file to avoid performance issues:
 
 .. code:: bash
 
+   [mysqld]
    innodb_file_per_table = 0
    wait_timeout = 28800
+
+To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character
+set:
+
+.. code:: bash
+
+   [client]
+   default-character-set = utf8mb4
+
+   [mysql]
+   default-character-set = utf8mb4
+
+   [mysqld]
+   character-set-server = utf8mb4
+   collation-server = utf8mb4_unicode_ci
 
 For the changes to take effect, restart MySQL server by running:
 
 .. code:: bash
 
    systemctl restart mysqld
+
+Create a Database for |oro_app_name| Application and a Dedicated Database User
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: sql
+
+    CREATE DATABASE oro;
+    GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
+    FLUSH PRIVILEGES;
+    exit
+
+Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains
+at least one upper case letter, one lower case letter, one digit, one special character and has the total length of at
+least 8 characters.
 
 Configure Web Server
 ^^^^^^^^^^^^^^^^^^^^
