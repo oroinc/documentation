@@ -2,7 +2,7 @@
 .. _installation--get-files:
 
 Get the Oro Application Source Code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================================
 
 You can obtain the application source code and the required dependencies in one of the following ways:
 
