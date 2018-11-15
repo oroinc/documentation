@@ -23,7 +23,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                       <li><a class="reference internal" href="customers/customers/visibility#sys-config-configuration-commerce-customers-visibility"><span class="std std-ref">Visibility</span></a></li>
                       <li><a class="reference internal" href="customers/customers/global_customer_users#sys-config-configuration-commerce-customers-customer-users"><span class="std std-ref">Customer Users</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
                       <li><a class="reference internal" href="customer/contact_us#sys-conf-commerce-customer-contact-request"><span class="std std-ref">Contact Requests</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
-                      <li><a class="reference internal" href="customer/consents#configuration-guide-commerce-configuration-consents"><span class="std std-ref">Consents</span></i> <i class="fa fa-globe" aria-hidden="true"></i></li>
+                      <li><a class="reference internal" href="customer/consents#configuration-guide-commerce-configuration-consents"><span class="std std-ref">Consents</span></a><i class="fa fa-globe" aria-hidden="true"></i></li>
                     </ul>
           </div>
       </div>

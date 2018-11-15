@@ -29,7 +29,7 @@ This section provides shortcuts to topics that may be useful for various types o
 * **For minimal product configuration**
 
   * :ref:`Create a simple product <products--products--create-simple-product>`
-  * :ref:`Create product units <sys--commerce--product--product-units>` 
+  * :ref:`Create product units <user-guide--products--product-units-in-use>` 
   * :ref:`Create product families <products--product-families>` and :ref:`product attributes <products--product-attributes>` 
   * :ref:`Create price attributes <user-guide--products--price-attributes>` 
   * :ref:`Structure your master catalog <user-guide--master-catalog>`
@@ -105,7 +105,7 @@ Key Points of Reference
    create/index
 
    manage/index
-
+   
    manage_look
 
    managing_product_visibility

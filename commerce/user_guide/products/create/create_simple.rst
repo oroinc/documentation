@@ -61,7 +61,7 @@ To add a new simple product and make it available in the master catalog (for int
       .. image:: /user_guide/img/products/products/ProductsCreate_Units0.png
          :class: with-border
 
-      * In the **Unit Of Quantity** list, select the main product unit that is shown by default when you view the product details in the storefront. Available options: *each*, *item*, *kilogram*, *piece*, *set*.
+      * In the **Unit Of Quantity** list, select the main :ref:`product unit <user-guide--products--product-units-in-use>` that is shown by default when you view the product details in the storefront. Available options: *each*, *item*, *kilogram*, *piece*, *set*.
 
       * In the **Precision** field, set the acceptable precision (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg).
 
