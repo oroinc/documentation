@@ -23,6 +23,8 @@ The following page opens:
 
    To enable it, clear *Use Default* and select the *Enable Guest RFQ* check box.
 
+   When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
+
 4. In the **Guest RFQ Owner Settings** section, select the user who will be the default owner of all guest RFQs.  Depending on the roles and permissions of the owner, guest RFQs may or may not be viewed and managed by the users who are subordinated to the owner.
 
    .. note::  To enable users from the same business unit or organization (that the owner belongs to) to view and manage guest RFQs, adjust permissions for the Request for Quote entity in their roles accordingly.

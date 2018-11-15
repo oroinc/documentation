@@ -15,6 +15,9 @@ Create a Guest RFQ
 
 Guest RFQs can be created from the shopping list and a quick order form.
 
+.. note:: Guest users can receive quotes via a direct ink to the provided email. Learn how in the :ref:`Send a Guest Quote <user-guide--sales--guest-quotes>` topic.
+
+
 From the Shopping List
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -119,6 +122,12 @@ To create an RFQ from the quick order form:
    .. image:: /frontstore_guide/img/rfq/GuestConfirmationDetails.png
 
 .. finish
+
+**Related Articles**
+
+* :ref:`Guest Quote in the Storefront <frontstore-guide--guest-quotes>`
+* :ref:`Guest Quote in the Management Console <user-guide--sales--guest-quotes>`
+
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

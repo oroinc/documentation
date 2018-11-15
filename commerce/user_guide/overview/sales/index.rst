@@ -7,8 +7,6 @@ Overview index
 
    payment_terms_overview
 
-   quotes_overview
-
    requests_for_quote_overview
 
    shopping_lists_overview

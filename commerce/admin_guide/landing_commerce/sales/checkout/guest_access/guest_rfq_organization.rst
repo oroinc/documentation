@@ -1,6 +1,5 @@
 .. _user-guide--system-configuration--commerce-sales--rfq--organization:
 
-
 Configure Guest Request for Quote Submission per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -25,6 +24,8 @@ The following page opens:
    By default, guest request for quote submission is disabled.
 
    To enable it, clear *Use System* and select the *Enable Guest RFQ* check box.
+
+   When the guest RFQ is enabled, click **Save Settings** to display the additional **Guest RFQ Owner Settings** section.
 
 5. In the **Guest RFQ Owner Settings** section, select the user who will be the default owner of all guest RFQs.  Depending on the roles and permissions of the owner, guest RFQs may or may not be viewed and managed by the users who are subordinated to the owner.
 
