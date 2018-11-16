@@ -51,3 +51,4 @@ Manage Discounts When Editing the Order
    apply_multiple_discounts
    add_special_discount
    manage_discounts_in_order
+  
