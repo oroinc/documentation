@@ -21,10 +21,10 @@ The following topics will delve into how to view, create and manage promotions i
 * :ref:`Add Conditions to a Promotion <user-guide--marketing--promotions--conditions>`
 * :ref:`View Promotions <user-guide--marketing--promotions--viewlist>`
 * :ref:`Manage Discounts in Orders <user-guide--sales--orders--promotions>`
-* :ref:`Review the FAQs <user-guide--marketing--promotions--issues>`
+* :ref:`Review the FQAs <user-guide--marketing--promotions--issues>`
+* :ref:`Review Order Total Calculation with Promotions (Example) <user-guide--marketing--promotions--price-calculation>`
 
 .. note:: You can check out a video on `how to create promotions <https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions>`__ in our media library.
-
 
 **Related Topics**
 
@@ -34,12 +34,11 @@ The following topics will delve into how to view, create and manage promotions i
 * :ref:`Shopping Lists <frontstore-guide--shopping-lists>`
 
 
-
 .. toctree::
    :hidden:
 
    create
-   
+
    conditions
 
    viewlist
@@ -47,5 +46,7 @@ The following topics will delve into how to view, create and manage promotions i
    promotions_in_order/index
 
    expressions
-   
-   faqs  
+
+   price_calculation_sample
+
+   faqs
