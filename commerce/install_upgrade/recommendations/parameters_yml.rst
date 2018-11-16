@@ -1,7 +1,7 @@
 .. _installation--parameters-yml-description:
 
 Infrastructure-related Oro Application Configuration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================================
 
 Infrastructure-related configuration parameters are stored in the *config/parameters.yml* file and grouped in the following way:
 
@@ -64,7 +64,7 @@ Default configuration options for the Oro application are provided in brackets b
 The Sample of Configuration Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The sample contents of the **<installation directory>/config/parameters.yml** file for OroCRM:
+The sample contents of the **<installation directory>/config/parameters.yml** file for OroCommerce:
 
 .. code-block:: none
    :linenos:
@@ -73,16 +73,16 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
           database_driver:        pdo_mysql
           database_host:          154.122.122.154
           database_port:          3606
-          database_name:          oro_database
-          database_user:          oro_database_user
-          database_password:      oro_database_password
+          database_name:          orocommerce_database
+          database_user:          orocommerce_database_user
+          database_password:      orocommerce_database_password
 
           mailer_transport:       mail
           mailer_host:            155.122.122.155
           mailer_port:            22
           mailer_encryption:      TLS
-          mailer_user:            oro_mail_user
-          mailer_password:        oro_mail_password
+          mailer_user:            orocommerce_mail_user
+          mailer_password:        orocommerce_mail_password
 
           # WebSocket server config
           websocket_bind_address:  "0.0.0.0"  # The host IP the socket server will bind to
@@ -97,8 +97,8 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
           search_engine_host:       156.122.122.156
           search_engine_port:       ~
           search_engine_index_name: oro_search
-          search_engine_username:   oro_search_user
-          search_engine_password:   oro_search_password
+          search_engine_username:   orocommerce_search_user
+          search_engine_password:   orocommerce_search_password
           search_engine_ssl_verification: ~
           search_engine_ssl_cert: ~
           search_engine_ssl_cert_password: ~

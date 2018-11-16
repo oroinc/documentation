@@ -1,7 +1,7 @@
 .. _installation--optimize-runtime-performance:
 
 Performance Optimization of the Oro Application Environment
------------------------------------------------------------
+===========================================================
 
 .. contents::
    :local:
@@ -45,7 +45,7 @@ Optimize PHP Runtime Compilation
 
 Use an OpCache bytecode engine to cache bytecode representation of the PHP code and save time on the repetitive runtime compilation.
 
-Please install Opcache php-extention and configure it in the following way:
+Please install Opcache php-extension and configure it in the following way:
 
 .. code-block:: text
     :linenos:
@@ -126,7 +126,7 @@ For Apache
 
 If you are using Apache as your web server, you already have the necessary configuration in the ``public/.htaccess`` file.
 
-However, this configuration rely on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
+However, this configuration relies on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
 and caching to work. Ensure these modules are enabled in Apache configuration.
 
 1. To enable compression, ensure that ``mod_deflate`` module is loaded in your Apache config file as illustrated below:

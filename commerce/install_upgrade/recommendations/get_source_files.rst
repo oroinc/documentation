@@ -2,7 +2,7 @@
 .. _installation--get-files:
 
 Get the Oro Application Source Code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===================================
 
 You can obtain the application source code and the required dependencies in one of the following ways:
 
@@ -99,9 +99,9 @@ The directory you extracted the files to, will be used in the following steps an
 
    .. warning:: Unlike when cloning from the GitHub repository, you are not prompted to enter the configuration parameter values. Default values are used instead. If necessary, update configuration parameters in the ``config/parameters.yml`` file after the command execution is complete.
 
-.. |main_app_in_this_topic| replace:: OroCRM
+.. |main_app_in_this_topic| replace:: OroCommerce
 
-.. |the_site| replace:: `oroinc.com/orocrm`_
+.. |the_site| replace:: `oroinc.com/b2b-ecommerce`_
 
-.. _`download section`: http://oroinc.com/orocrm/download
-.. _`oroinc.com/orocrm`: http://www.oroinc.com/orocrm/
+.. _`download section`: http://oroinc.com/b2b-ecommerce/download
+.. _`oroinc.com/b2b-ecommerce`: http://www.oroinc.com/b2b-ecommerce/

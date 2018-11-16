@@ -1,8 +1,8 @@
 .. _installation--web-server-configuration:
 .. _step-3-configure-the-webserver:
 
-Configure a Web Server
-~~~~~~~~~~~~~~~~~~~~~~
+Web Server Configuration
+========================
 
 Web Server Installation
 ^^^^^^^^^^^^^^^^^^^^^^^

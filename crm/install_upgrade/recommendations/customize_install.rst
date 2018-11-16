@@ -1,7 +1,7 @@
-.. _customize_install:
+.. _customize-install:
 
 Customizing the Installation Process
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 
 To customize the installation process and modify the database structure and/or data that are loaded in the |main_app_in_this_topic| after installation, you can:
 
@@ -114,4 +114,4 @@ To load your own data fixtures, you will need to implement Doctrine's *"FixtureI
 
 .. _`custom event listeners`: http://symfony.com/doc/current/cookbook/service_container/event_listener.html
 
-.. |main_app_in_this_topic| replace:: OroCommerce
+.. |main_app_in_this_topic| replace:: OroCRM

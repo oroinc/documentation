@@ -3,7 +3,7 @@
 Installation Guide
 ==================
 
-This section provides information on the Oro application installation, the steps and recommendations for environment preparation, guidance on the installation via CLI and :ref:`via UI <book-installation-wizard>`, and the necessary post-install actions.
+This section provides information on the Oro application installation, the steps and recommendations for environment preparation, guidance on the installation via CLI, and the necessary post-install actions.
 
 The information is grouped into the following topics:
 
@@ -27,6 +27,8 @@ The information is grouped into the following topics:
 
 * :ref:`Reinstall and troubleshooting <reinstall>` -- Information on how to reinstall Oro application to reset any customization and troubleshoot the installation issues.
 
+* :ref:`Optimization, Scalability, and Configuration Recommendations <installation-recommendations>`
+
 .. toctree::
    :includehidden:
    :titlesonly:
@@ -37,3 +39,4 @@ The information is grouped into the following topics:
    one_step_automated_installation/index
    upgrade
    reinstall
+   recommendations/index

@@ -1,7 +1,7 @@
-.. _customize_install:
+.. _customize-install:
 
 Customizing the Installation Process
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+====================================
 
 To customize the installation process and modify the database structure and/or data that are loaded in the |main_app_in_this_topic| after installation, you can:
 

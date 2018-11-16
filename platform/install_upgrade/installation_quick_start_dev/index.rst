@@ -4,8 +4,7 @@
 OroPlatform Installation
 ========================
 
-This topic provides a detailed description of the OroPlatform installation process and illustrates
-examples of installation scenarios.
+This topic provides a detailed description of the OroPlatform installation process and illustrates examples of installation scenarios.
 
 .. note:: OroPlatform application comes in a Community edition only. The package with enterprise features of OroPlatform application is used only in OroCRM and OroCommerce Enterprise edition applications.
 
@@ -642,15 +641,15 @@ What's Next
 Optimization, Scalability, and Configuration Recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you're interested in customization of described installation scenario, please, refer to the following topics:
+If you need to customize the described installation scenario, refer to the following topics:
 
 * :ref:`Get the Oro Application Source Code <installation--get-files>`
-* :ref:`Customizing the Installation Process <customize_install>`
+* :ref:`Customizing the Installation Process <customize-install>`
 * :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>`
 * :ref:`Web Server Configuration <installation--web-server-configuration>`
 * :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>`
 * :ref:`Silent Installation <silent-installation>`
-* :ref:`Installation Via UI Wizard <book-installation-wizard>`
+
 
 User Guides
 ^^^^^^^^^^^
