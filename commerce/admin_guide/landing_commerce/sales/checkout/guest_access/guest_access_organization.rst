@@ -1,5 +1,5 @@
-Enabling Guest Website Access per Organization
-----------------------------------------------
+Enable Guest Website Access per Organization
+--------------------------------------------
 
 .. begin
 

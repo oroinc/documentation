@@ -3,6 +3,9 @@
 Quotes
 ======
 
+.. contents:: :local:
+   :depth: 1
+
 The following guide will help you to view and :ref:`accept <frontstore-guide--quotes--accept>` a quote in a Quote section of the OroCommerce storefront.
 
 .. .. contents:: :local:
@@ -41,8 +44,8 @@ Within the table you have the following :ref:`action buttons <frontstore-guide--
 
 .. _frontstore-guide--quotes--accept:
 
-Accept Quote 
-^^^^^^^^^^^^
+Accept a Quote
+--------------
 
 When you receive a quote, you can accept it and submit the order:
 
@@ -59,8 +62,23 @@ When you receive a quote, you can accept it and submit the order:
 
 .. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce storefront.
 
+Send a Guest Quote
+------------------
+
+.. include:: /frontstore_guide/quotes/guest_quote_storefront.rst
+   :start-after: begin
+   :end-before: finish
+
+
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
+
+
+.. toctree::
+   :hidden:
+
+   guest_quote_storefront
+
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

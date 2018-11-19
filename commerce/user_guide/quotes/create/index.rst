@@ -1,7 +1,7 @@
 .. _user-guide--quotes--create:
 
 Create a Quote
---------------
+==============
 
 .. begin_create_quote
 

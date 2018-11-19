@@ -27,23 +27,22 @@ When guest access is disabled:
 
 .. image:: /admin_guide/img/configuration/guest_access/SignIn.png
 
-
-Enabling Guest Website Access Globally
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enable Guest Website Access Globally
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_access_global.rst
    :start-after: begin
    :end-before: finish
    
-Enabling Guest Website Access per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enable Guest Website Access per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_access_organization.rst
    :start-after: begin
    :end-before: finish
 
-Enabling Guest Website Access per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Enable Guest Website Access per Website
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_access_website.rst
    :start-after: begin
@@ -209,6 +208,12 @@ Configure Guest Request for Quote Submission per Website
    :start-after: begin_rfq
    :end-before: finish_rfq
 
+Enable Guest Quotes
+^^^^^^^^^^^^^^^^^^^
+
+.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_quote.rst
+   :start-after: begin_guest_quote
+   :end-before: finish_guest_quote
 
 .. toctree::
    :hidden:
@@ -229,6 +234,8 @@ Configure Guest Request for Quote Submission per Website
    guest_rfq_global
    guest_rfq_organization
    guest_rfq_website
+   guest_quote
+   global_guest_checkout_registration
 
 
 .. include:: /img/buttons/include_images.rst

@@ -138,7 +138,7 @@ You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of t
 .. image:: /frontstore_guide/img/rfq/RFQResubmitNew.png
 
 
-.. _frontstore-guide--rfq--guests:
+.. _frontstore-guide--guest-rfq:
 
 RFQs for Guest Users
 --------------------
@@ -255,6 +255,14 @@ To create an RFQ from the quick order form:
 
 .. include:: /frontstore_guide/related_topics.rst
    :start-after: begin
+
+.. toctree::
+   :includehidden:
+   :titlesonly:
+   :maxdepth: 2
+   :hidden:
+
+   guests
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

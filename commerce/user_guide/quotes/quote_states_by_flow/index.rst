@@ -3,7 +3,7 @@ Next Steps
 
 .. begin_quote_states_by_flow
 
-Depending on the active workflow, the quote statuses and management steps differ.
+Depending on the active workflow, the quote statuses and management steps may differ.
 
 Follow the links below for more information on available steps and transitions.
 

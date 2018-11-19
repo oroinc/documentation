@@ -10,7 +10,7 @@ Basic Quote Lifecycle Management (When Workflows Are Disabled)
 Edit a Quote
 ~~~~~~~~~~~~
 
-.. include:: /user_guide/quotes/edit.rst
+.. include:: /user_guide/quotes/manage/edit.rst
    :start-after: begin
    :end-before: finish
 
@@ -23,7 +23,6 @@ Notify a Customer About the Quote
    :start-after: begin
    :end-before: finish
 
-
 Mark a Quote as Expired
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -33,10 +32,10 @@ Mark a Quote as Expired
 
 Learn :ref:`more ways to expire a quote <quotes--actions--expire>`.
 
-Deleting a Quote
-~~~~~~~~~~~~~~~~
+Delete a Quote
+~~~~~~~~~~~~~~
 
-.. include:: /user_guide/quotes/delete.rst
+.. include:: /user_guide/quotes/manage/delete.rst
    :start-after: begin
    :end-before: finish
 
