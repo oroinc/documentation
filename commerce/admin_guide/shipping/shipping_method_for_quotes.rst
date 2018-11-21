@@ -3,17 +3,24 @@
 Assign a Shipping Method to a Quote
 -----------------------------------
 
-When editing the quote, a salesperson may limit the shipping methods visible to a customer.
+When editing the quote, a salesperson may limit the shipping methods and shipping addresses visible to a customer.
 
-To limit the shipping methods per quote:
+To limit the shipping address and methods per quote:
 
-#. Navigate to **Sales > Quotes** in the main menu.
+1. Navigate to **Sales > Quotes** in the main menu.
 
-#. Hover over the |IcMore| **More Options** menu to the right of the necessary quote and click |IcEdit| to start editing its details.
+2. Hover over the |IcMore| **More Options** menu to the right of the necessary quote and click |IcEdit| to start editing its details.
 
-#. In the **Shipping Information** section, configure the shipping options available for the customer:
+3. In the **Shipping Address** section, enter the shipping address, organization name and name of the person the future order should be shipped to.
 
-   .. image:: /user_guide/img/sales/quotes/ShippingInformation.png
+   .. image:: /user_guide/img/sales/quotes/shipping_address_quote.png
+      :alt: The shipping address form to be filled
+
+   .. note:: Keep in mind that the shipping address you enter when editing a quote will be the only option available for the customer on the checkout.
+
+4. In the **Shipping Information** section, configure the shipping options available for the customer:
+
+   .. image:: /user_guide/img/sales/quotes/shipping_methods.png
       :class: with-border
 
    a) In the **Shipping Methods** list, select the check boxes next to the shipping methods that you would like the customer to use for this order delivery.
