@@ -3,7 +3,7 @@
 How to Create a Contact Request Manually
 ----------------------------------------
 
-For troubleshooting purposes, you can also create a contact request from within your Oro application.
+In case you need to register a certain request received from a customer by phone or email, you can create a contact request manually from within your Oro application.
 
 1. Navigate to **Activities > Contact Requests** in the main menu.
 2. Click **Create Contact Request** on the top right.
@@ -25,7 +25,7 @@ For troubleshooting purposes, you can also create a contact request from within 
      By default, the field is set to *Email*."
      "**Phone** and **Email**","Contact details related to the request. The values are determined by the *Preferred Contact
      Method* and must be defined."
-     "**Contact Reason**","Choose a contact reason from the list to simplify request analysis. By default, the field is set to *Other*."
+     "**Contact Reason**","Choose a contact reason from the list to simplify request analysis. By default, the field is set to *Other*. To create a new contact reason that can be assigned to a certain contact request, refer to the :ref:`Contact Reasons <admin-guide-contact-reasons>` topic for more details."
      "**Comment**","The text of the request."
 
    .. image:: /user_guide/img/getting_started/activities/CreateContactRequestCRM.png
