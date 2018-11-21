@@ -81,7 +81,7 @@ Accounts View Page
 
 The following sections are available for the account :ref:`page <user-guide-ui-components-view-pages>`:
 
-1. The **Page Header** has the date of account creation and its latest update, as well as its :term:`lifetime sales value <Lifetime Sales Value>`.
+1. The **Page Header** has the date of account creation and its latest update, as well as its :term:`Lifetime Sales Value`.
 
 2. The **General** section is for general details of the account, such as its name, tags, description and all the contacts assigned to the account.
 
@@ -266,7 +266,7 @@ It shows:
 
 - The account name
 
-- The total lifetime sales value registered in your Oro application.
+- The total :term:`Lifetime Sales Value` registered in your Oro application.
 
 .. image:: /user_guide/img/accounts/accounts_report_by_lifetime.png
 
