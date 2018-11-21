@@ -37,7 +37,7 @@ Accounts
 
 OroCommerce customers are treated the same way as OroCRM Business customers. Their data and business transactions are displayed on the Account page, and their activities are added to the Account's activity list.
 
-Lifetime sales values metric will be calculated for OroCommerce customer based on orders placed.
+:term:`Lifetime Sales Value` metric will be calculated for OroCommerce customer based on orders placed.
 
 The following illustrates an example of an Account for Commerce customer.
 
@@ -117,7 +117,7 @@ Another important concept is a Customer. Out-of-the-box, OroCommerce supports th
 
  * *Magento Customers* (from CRM package) are used to represent customers related to a Magento store.
 
-Additionally, you can associate *Lifetime Sales Value* with a customer and track financial statistics related to a specific customer or account.
+Additionally, you can associate :term:`Lifetime Sales Value` with a customer and track financial statistics related to a specific customer or account.
 
 Below is an illustration of the account hierarchy where CRM-related concepts are marked grey, and Commerce-related concepts are marked white.
 

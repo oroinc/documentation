@@ -246,7 +246,7 @@ You can search for an account or create a new one.
 
 .. image:: ../../../img/opportunities_2.0/account_related_opportunity.jpg
 
-Account view page will display opportunities related to a particular account in the **Action** section. Lifetime sales value will be calculated based on the values of the opportunities related to an account.
+Account view page will display opportunities related to a particular account in the **Action** section. :term:`Lifetime Sales Value` will be calculated based on the values of the opportunities related to an account.
 
 .. image:: ../../../img/opportunities_2.0/account_view_page_opp.jpg
 

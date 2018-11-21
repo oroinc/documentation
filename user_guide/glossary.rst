@@ -71,7 +71,7 @@ Glossary
       sales activities. 
 
    Lifetime Sales Value
-      Total amount of money received from the :term:`Customer` and registered in OroCRM. 
+      A metric that helps understand the :term:`Customer`. It predicts the potential benefit that the selling organization can obtain from a relationship with the customer in the long-term perspective. Lifetime sales value measures the total amount of money received from the customer based on orders placed and registered in OroCRM. When calculating a lifetime sales value, OroCommerce takes into account an average order amount, purchase frequency, and an average retention period.
 
    Account
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a person, company or group of people you
