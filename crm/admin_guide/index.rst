@@ -300,6 +300,7 @@ Advanced Configuration Settings
    landing_marketing/index
    user_management/index
    localization/index
+   contact_reasons/index
    email/index
    entities/index
    integrations/index

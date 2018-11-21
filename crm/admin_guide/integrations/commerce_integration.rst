@@ -95,7 +95,7 @@ In the applications where an integration between Commerce and CRM is configured,
 .. image:: /user_guide/img/accounts/customers_menu.png
    :alt: The entities under the customer menu that were combined
 
-w*Account* and *Contact* come from CRM, while *Customers* and *Customer Users* come from Commerce. 
+*Account* and *Contact* come from CRM, while *Customers* and *Customer Users* come from Commerce.
 
 An :ref:`account <user-guide-accounts>` and a :ref:`customer <user-guide-common-features-customers>` represent a company or a division. A :ref:`contact <user-guide-contacts>` and a customer user represent a real person who acts on behalf of the company.
 
