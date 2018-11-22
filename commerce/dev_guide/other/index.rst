@@ -4,7 +4,7 @@ How to... Articles
 This section aggregates uncategorized information that might be usefull for Oro developers:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    how_to_accelerate_import
 
@@ -15,3 +15,7 @@ This section aggregates uncategorized information that might be usefull for Oro 
    how_to_use_wsse_authentication
 
    how_to_clone_workflow
+
+   layouts/index
+
+   front_ui_css/index

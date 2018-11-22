@@ -68,6 +68,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | * tokenizer                                       |
 |                   | * xml                                             |
 |                   | * zip                                             |
+|                   | * imap                                            |
 +-------------------+---------------------------------------------------+
 | *Database*        | * `MySQL`_ 5.7 and above                          |
 |                   |                                                   |

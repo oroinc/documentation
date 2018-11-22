@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--guest-access--global:
 
-Enabling Website Guest Access Globally
---------------------------------------
+Enable Website Guest Access Globally
+------------------------------------
 
 .. begin
 

@@ -49,13 +49,15 @@ Please navigate to the following sections for the complete list of topics:
    :titlesonly:
    :maxdepth: 1
 
+   dev_practice/index
+
    basics/index
 
    extend_and_customize/index
 
    web_api/index
 
-   theme/index
+   front_ui/index
 
    install_upgrade_and_patch/index
 

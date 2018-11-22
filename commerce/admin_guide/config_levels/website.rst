@@ -23,7 +23,7 @@ More information about the options available for each of the two categories is a
   * General Setup
 
     * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`
-    * Email Configuration for the Website
+    * :ref:`Email Configuration for the Website <admin-configuration-system-mailboxes-website>`
     * :ref:`Display Settings for the Website <display-settings--map-settings>`
 
   * Website
@@ -35,10 +35,10 @@ More information about the options available for each of the two categories is a
 
   * Customer
 
-    * Contact Requests
+    * :ref:`Contact Requests <user-guide-activities-requests>`
     * :ref:`Customer Users <system--website--configuration--commerce--customers--customer-users>`
 
-  * Guests
+  * :ref:`Guests <sys--conf--commerce--guest>`
 
    * :ref:`Website Access <sys--conf--commerce--guest-access--website>`
 
@@ -46,7 +46,7 @@ More information about the options available for each of the two categories is a
 
     * :ref:`Theme <configuration--commerce--design--theme--theme-settings--website>`
 
-  * Product
+  * :ref:`Product <doc--products--before-you-begin>`
 
     * :ref:`Product Images <configuration--guide--commerce--configuration--product-images>`
     * :ref:`Featured Products <sys--websites--commerce--products--featured-products>`
@@ -54,7 +54,7 @@ More information about the options available for each of the two categories is a
     * :ref:`Promotions. New Arrivals <sys--commerce--product--new-arrivals-block-website>`
     * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--website>`
 
-  * Inventory
+  * :ref:`Inventory <user-guide--inventory>`
 
     * :ref:`Product Options <sys--conf--commerce--inventory--product-options--website>`
     * :ref:`Limitations <configuration--guide--commerce--configuration--inventory--limitations>`

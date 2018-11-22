@@ -3,19 +3,10 @@
 Quotes
 ======
 
-This topic contains the following sections:
-
 .. contents:: :local:
-   :depth: 3
+   :depth: 2
 
-Overview
---------
-
-.. include:: /user_guide/overview/sales/quotes_overview.rst
-   :start-after: begin
-
-Configuration
--------------
+A quote in OroCommerce is used to negotiate with the customer (e.g. offer better price, more convenient quantities and additional services). A quote may be created in response to a customer request for quote, or as a result of the direct communication with the customer.  Once the customer is happy with the offer in the quote and is ready to proceed with their order, they accept the quote.
 
 Quote management and their use in many ways depend on the following:
 
@@ -48,48 +39,15 @@ Quote management and their use in many ways depend on the following:
 
 .. TODO replace the link to the workflow management with the link to the Quote backend workflow descriptions (when ready)
 
-Managing Quotes
----------------
-
-.. include:: create/index.rst
-   :start-after: begin_create_quote
-   :end-before: finish_create_quote
-
-Also you can:
-
-* :ref:`Edit a quote <quotes--actions--edit>`
-
-* :ref:`Delete a quote <quotes--actions--delete>`
-
-* Engage in activities:
-
-  * :ref:`attach files to a quote <user-guide-activities-attachments>`
-  * :ref:`make notes <user-guide-add-note>` on the quote
-  * :ref:`create calendar events <doc-activities-events>` linked to the quote
-  * :ref:`send emails <user-guide-using-emails>` related to the quote
-
-Quote Stages and Transitions
-----------------------------
-
-.. include:: quote_states_by_flow/index.rst
-   :start-after: begin_quote_states_by_flow
-   :end-before: finish_quote_states_by_flow
-
-.. include:: flows/index.rst
-   :end-before: finish_quotes_in_use
+To learn more on how to create and use quotes and their workflows, check out the topics below:
 
 
 .. toctree::
-   :hidden:
-
+   
    create/index
-
-   edit
-
-   delete
-
+   guest_quote
+   manage/index 
    quote_states_by_flow/index
-
    flows/index
 
 .. include:: /img/buttons/include_images.rst

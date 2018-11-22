@@ -1,6 +1,5 @@
 .. _user-guide--system-configuration--commerce-sales-checkout-registration--global:
 
-
 Configure Guest Checkout with Registration Options Globally
 -----------------------------------------------------------
 
@@ -18,7 +17,7 @@ The following page opens:
 
 .. image:: /admin_guide/img/configuration/sales/checkout/GuestCheckoutRegistrationGlobal.png
 
-2. In the **Customer Users Registration** section, you can:
+3. In the **Customer Users Registration** section, you can:
 
    a) **Allow Registration** ---  when the option is enabled, registration is allowed for customers on the checkout page.
    b) **Allow Checkout without Email Confirmation** --- when the option is enabled, customers proceed to the checkout immediately once registration details are provided. When this option is disabled, the checkout does not start until the user confirms their email address.
@@ -30,7 +29,7 @@ The following page opens:
    a) Clear the **Use Default** check box.
    b) Clear the **Allow Registration** and **Allow Checkout without Email Confirmation** check boxes.
 
-3. Click **Save Settings**
+4. Click **Save Settings**
 
 
 .. finish

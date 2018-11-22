@@ -214,6 +214,8 @@ The sanitize configuration is grouped under the `sanitize` node and supports the
 
 * **sanitize.update_override_rules** — the list of rules which will be applied to sanitizing data and overriding the default sanitize rule `sanitize.method.update`. Please note, that if this option is specified, all `sanitize.update_add_rules` and `sanitize.update_delete_rules` will be ignored. The format is the same as `sanitize.update_add_rules`.
 
+.. note:: Please keep in mind that **ALL** values in `rawsql_*_rules` and `update_*_rules` **MUST** be wrapped in **SINGLE** quotes.
+
 .. code-block:: none
       :linenos:
 
@@ -226,9 +228,9 @@ The sanitize configuration is grouped under the `sanitize` node and supports the
             rawsql_delete_rules:
               - 'TRUNCATE oro_tracking_visit_event'
               - 'TRUNCATE oro_tracking_website CASCADE'
-            raswsql_override_rules:
-              - 'TRUNCATE oro_tracking_visit_event_raswsql_override'
-              - 'TRUNCATE oro_tracking_website CASCADE raswsql_override'
+            rawsql_override_rules:
+              - 'TRUNCATE oro_tracking_visit_event'
+              - 'TRUNCATE oro_tracking_website CASCADE'
             update_add_rules:
               - '{ table: oro_email_test, columns: [{name: subject, method: md5}, {name: from_name, method: md5}] }'
             update_delete_rules:
@@ -248,8 +250,8 @@ Please use the following conventions to design your `sanitize.update_*` strategy
       :linenos:
 
       update_add_rules:
-            - { table: oro_address, columns: [{name: street, method: md5}, {name: city, method: md5}, {name: postal_code, method: md5}, {name: last_name, method: md5}] }
-            - { table: oro_business_unit, columns: [{name: email, method: email}, {name: name, method: md5}, {name: phone, method: md5}] }
+            - '{ table: oro_address, columns: [{name: street, method: md5}, {name: city, method: md5}, {name: postal_code, method: md5}, {name: last_name, method: md5}] }'
+            - '{ table: oro_business_unit, columns: [{name: email, method: email}, {name: name, method: md5}, {name: phone, method: md5}] }'
 
 * Provide the table name in the table node.
 * In the columns section, provide an array of column name and sanitizing method pairs for all the columns that should be sanitized in the mentioned table.

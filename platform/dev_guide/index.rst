@@ -7,6 +7,8 @@ The Developer Guide is targeted at full-stack PHP developers and contains inform
 
 The guide groups reference information on all OroPlatform features, describing and illustrating them in the following area-specific categories:
 
+* :ref:`Development Practice <dev-guide-development-practice>`:
+
 * :ref:`Application Framework <dev-guide-application-web-framework>`: Describes the functionality, which determines the application structure and how different application segments interact with each other.
 
 * :ref:`System Components <dev-guide-system>`: Describes components that ensure interaction between a PHP application and external systems (file system, databases, etc.)
@@ -21,7 +23,7 @@ The guide groups reference information on all OroPlatform features, describing a
 .. * Localizations:
 .. * Admin UI:
 
-* :ref:`Front UI <dev-guide-front-ui>`: Describes components on which are built a Front UI of the OroPlatform derivative applications.
+.. * :ref:`Front UI <dev-guide-front-ui>`: Describes components on which are built a Front UI of the OroPlatform derivative applications.
    * :ref:`Layouts <dev-guide-layouts>`: The system for building theamable front public UI (like storefronts) in OroPlatform based applications.
 
 If you have searched for an answer with no luck, we can help you with your technical issues via our community slack channel and forums:
@@ -34,9 +36,9 @@ If you have searched for an answer with no luck, we can help you with your techn
    :hidden:
    :maxdepth: 2
 
+   dev_practice/index
    web_framework/index
    system/index
-   front_ui/index
 
 ..    application/index
 ..    entity_management/index

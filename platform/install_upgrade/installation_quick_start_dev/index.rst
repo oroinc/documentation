@@ -4,8 +4,7 @@
 OroPlatform Installation
 ========================
 
-This topic provides a detailed description of the OroPlatform installation process and illustrates
-examples of installation scenarios.
+This topic provides a detailed description of the OroPlatform installation process and illustrates examples of installation scenarios.
 
 .. note:: OroPlatform application comes in a Community edition only. The package with enterprise features of OroPlatform application is used only in OroCRM and OroCommerce Enterprise edition applications.
 
@@ -14,6 +13,8 @@ The information in this topic is grouped into the following sections:
 .. contents::
    :local:
    :depth: 2
+
+.. _install-for-dev-step-1:
 
 Step 1: Environment Setup
 -------------------------
@@ -118,6 +119,8 @@ Enable Installed Services
 
    systemctl start mysqld php-fpm nginx supervisord
    systemctl enable mysqld php-fpm nginx supervisord
+
+.. _install-for-dev-step-2:
 
 Step 2: Pre-installation Environment Configuration
 --------------------------------------------------
@@ -445,6 +448,8 @@ For the changes to take effect, restart PHP-FPM by running:
 
    systemctl restart php-fpm
 
+.. _install-for-dev-step-3:
+
 Step 3: |oro_app_name| Application Installation
 -----------------------------------------------
 
@@ -566,6 +571,8 @@ As *nginx* user should be able to create folders, run the following commands to 
    chown -R nginx:nginx ./var/{sessions,attachment,cache,import_export,logs}
    chown -R nginx:nginx ./public/{media,uploads,js}
 
+.. _install-for-dev-step-4:
+
 Step 4: Post-installation Environment Configuration
 ---------------------------------------------------
 
@@ -664,15 +671,15 @@ What's Next
 Optimization, Scalability, and Configuration Recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you're interested in customization of described installation scenario, please, refer to the following topics:
+If you need to customize the described installation scenario, refer to the following topics:
 
 * :ref:`Get the Oro Application Source Code <installation--get-files>`
-* :ref:`Customizing the Installation Process <customize_install>`
+* :ref:`Customizing the Installation Process <customize-install>`
 * :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>`
 * :ref:`Web Server Configuration <installation--web-server-configuration>`
 * :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>`
 * :ref:`Silent Installation <silent-installation>`
-* :ref:`Installation Via UI Wizard <book-installation-wizard>`
+
 
 User Guides
 ^^^^^^^^^^^

@@ -29,6 +29,11 @@ Prior to creating a configurable product, ensure that you have performed the fol
    
    A configurable product may group several simple products, or configurable product variants whose information mostly overlaps except for several product attributes. It means that you have to create a simple product for each variant that you need to add to the configurable product.
 
+   .. note:: Make sure the configurable product you are creating has the same product unit as its product variants.
+
+   .. note::  Product variants for configurable products in the storefront are displayed only when either customer users are logged in or :ref:`guest shopping lists <sys--conf--commerce--guest>` are enabled in the system configuration.
+
+
 Flow 
 ^^^^
 
@@ -103,6 +108,8 @@ To add a new configurable product and make it available in the master catalog (f
 
    .. image:: /user_guide/img/products/products/SampleProductVariantsForConfigProduct.png
       :class: with-border
+
+   .. note:: Make sure the configurable product has the same product unit as its product variants.
 
 #. Review translation rules for a product name, URL slug, description and short description.
    

@@ -14,7 +14,7 @@ examples of installation scenarios.
 
 .. note::
 
-   On the local environment you can :ref:`use the prepeared Vagrantfiles to perform an automated installation <vagrant_installation>`,
+   On the local environment you can :ref:`use the prepared Vagrant files to perform an automated installation <vagrant_installation>`,
    which replicates steps from this guide.
 
 The information is grouped into the following sections:

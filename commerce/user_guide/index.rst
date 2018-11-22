@@ -70,8 +70,8 @@ Table of Contents
    :maxdepth: 1
 
    products/index
-
-   price_attributes/index
+   
+   product_units/index
 
    product_attributes/index
 
@@ -82,6 +82,8 @@ Table of Contents
    inventory/index
 
    pricing/index
+
+   price_attributes/index
 
    customers/index
 

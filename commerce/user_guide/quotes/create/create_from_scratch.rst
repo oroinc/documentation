@@ -76,6 +76,8 @@ To create a new quote from scratch:
 
    .. image:: /user_guide/img/sales/quotes/create_quote_address.png
 
+   .. note:: Keep in mind that the shipping address you enter when creating a quote will be the only option available for the customer on the checkout.
+
 7. In the **Shipping Information** section, configure the recommended shipping options for the customer:
 
    .. image:: /user_guide/img/sales/quotes/CreateQioteShipping.png

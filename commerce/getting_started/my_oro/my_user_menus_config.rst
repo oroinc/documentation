@@ -152,7 +152,7 @@ Add a Menu Item
 
    - **Title**—A name for the menu item. This is how this menu item will be represented in the menu.
 
-     Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
+     Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the same icon again to return to the single-language view.
 
      .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_create_translations.png
         :alt: Provide title to the menu item
@@ -170,7 +170,7 @@ Add a Menu Item
 
    - **Description**—Type a short but meaningful description of the menu item.
 
-     Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the |IcTranslationsC| **Default Language** icon to return to the single-language view.
+     Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the same icon again to return to the single-language view.
 
    .. image:: /user_guide/img/getting_started/my_oro/my_user_menus_actions_create_general.png
       :alt: Add description to the menu item

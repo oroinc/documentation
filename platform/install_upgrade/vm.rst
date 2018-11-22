@@ -56,6 +56,6 @@ Ensure that the server is installed in your local or corporate environment and i
 
 .. _`download section`: https://oroinc.com/oroplatform/download
 
-.. |the_site| replace:: `oroinc.com/b2b-ecommerce`_
+.. |the_site| replace:: `oroinc.com/oroplatform`_
 
-.. _`oroinc.com/b2b-ecommerce`:  http://www.oroinc.com/b2b-ecommerce/
+.. _`oroinc.com/oroplatform`:  http://www.oroinc.com/oroplatform/

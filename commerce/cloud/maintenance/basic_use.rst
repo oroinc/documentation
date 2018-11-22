@@ -15,6 +15,30 @@ To list the available OroCloud maintenance management commands, run `orocloud-cl
 
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
+Locks
+^^^^^
+
+Any time the `orocloud-cli` command runs with any argument or options, the maintenance agent is locked to prevent simultaneous execution of itself. This is required to avoid cases when different users may execute commands that may lead to environment corruption, e.g. when different users run `deploy` and `upgrade` at the same time. If this happens, a warning message is displayed.
+
+As an example:
+
+.. code-block:: none
+    :linenos:
+
+    WARNING!
+    Another `orocloud-cli` instance is already running PID `2860`.
+    Nov 01 12:00:01 ocrm-prod-app maintenance_user: upgrade -vv --log ~/upgrade.log
+
+* `PID \`2860\`` - the currently running command process identifier.
+* `Nov 01 12:00:01` - the date and time when the command has started.
+* `ocrm-prod-app` - the name of the cloud node instance.
+* `maintenance_user` - the name of the user who runs the command.
+* `upgrade -vv --log ~/upgrade.log` - the `orocloud-cli` command argument and options being used.
+
+.. note:: When you need to check the current maintenance agent version or list all available commands, running `orocloud-cli` command without any arguments is allowed even when locked.
+
+.. note:: When the currently running command has finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
+
 Deploy
 ^^^^^^
 
@@ -122,7 +146,22 @@ To view the list of the backups, run `backup:list` command:
 
     orocloud-cli  backup:list
 
-If the list is longer that one page, use the optional *page* parameter to switch between pages (e.g., *page=2*).
+The command output is similar to the following:
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task backup:list
+    +-----------------+-----------------------+
+    | DATE            | LABEL                 |
+    +-----------------+-----------------------+
+    | 2018-11-14-1725 | backup_before_upgrade |
+    | 2018-11-12-1425 | -                     |
+    | 2018-11-10-1025 | initial_deploy        |
+    +-----------------+-----------------------+
+    [localhost] Total 3 items.
+
+If the list is longer than one page, use the optional *page* parameter to switch between pages (e.g., *page=2*).
 
 By default, the command returns 25 backup records per page. To modify the number of records per page, use the optional *per-page* parameter (e.g. *per-page=50*).
 
@@ -137,9 +176,9 @@ To restore the information from backup, run the `backup:restore` command:
 .. code-block:: none
     :linenos:
 
-    orocloud-cli  backup:restore
+    orocloud-cli  backup:restore {backup_date}
 
-
+.. note:: The `{backup_date}` argument is the one of the available backups listed in `backup:list` command output, e.g. `2018-11-12-1425`.
 
 The command enables the maintenance mode and restores the application. Once restoration is complete, the maintenance mode is turned off.
 
@@ -182,3 +221,25 @@ Run application commands via the `app:console`, for example:
     :linenos:
 
     orocloud-cli app:console oro:user:list
+
+Application Cache
+-----------------
+
+Sometimes you may require to clear the application cache (for example, after applying a patch, or changing a configuration). This can be done with the `cache:rebuild` command that rebuilds the application cache without downtime. This command does the following:
+
+* Stops `Consumer` and `Cron` jobs
+* Prepares `Redis` cache storage
+* Clears and warms up the application cache
+* Switches `Redis` storage
+* Restarts `PHP FPM`
+* Starts `Consumer` and `Cron`.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli cache:rebuild [--force] [--skip-session-flush]
+
+.. note:: Since the `cache:rebuild` operation requires the `Consumer` and `Cron` jobs to be stopped, a confirmation message is displayed before execution.
+
+* `--force` is optional, it allows to skip execution confirmation.
+* `--skip-session-flush` is optional, it allows to skip session data deletion (e.g. logged-in users are not logged out after command completion).
