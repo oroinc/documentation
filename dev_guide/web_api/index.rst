@@ -457,15 +457,17 @@ for the DELETE methods. The **X-Include** request header can be used for such pu
 The following table describes all existing keys for the X-Include header.
 
 
-+-------------+-----------------+---------------------------+-----------------------------------------+
-| HTTP Method | X-Include key   | Response Header           | Description                             |
-+=============+=================+===========================+=========================================+
-| GET         | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
-+-------------+-----------------+---------------------------+-----------------------------------------+
-| DELETE      | totalCount      | X-Include-Total-Count     | Returns the total number of entities.   |
-+-------------+-----------------+---------------------------+-----------------------------------------+
-| DELETE      | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities. |
-+-------------+-----------------+---------------------------+-----------------------------------------+
++-------------+-----------------+---------------------------+------------------------------------------------------+
+| HTTP Method | X-Include key   | Response Header           | Description                                          |
++=============+=================+===========================+======================================================+
+| any         | noHateoas       |                           | Removes all HATEOAS related links from the response. |
++-------------+-----------------+---------------------------+------------------------------------------------------+
+| GET         | totalCount      | X-Include-Total-Count     | Returns the total number of entities.                |
++-------------+-----------------+---------------------------+------------------------------------------------------+
+| DELETE      | totalCount      | X-Include-Total-Count     | Returns the total number of entities.                |
++-------------+-----------------+---------------------------+------------------------------------------------------+
+| DELETE      | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities.              |
++-------------+-----------------+---------------------------+------------------------------------------------------+
 
 
 Header Examples
