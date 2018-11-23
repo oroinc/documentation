@@ -1,8 +1,7 @@
 .. _reinstall:
 
-
-Reinstallation and Troubleshooting Hints
-----------------------------------------
+Reinstallation of the |main_app_in_this_topic|
+----------------------------------------------
 
 To reinstall |main_app_in_this_topic|:
 

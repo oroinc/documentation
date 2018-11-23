@@ -120,6 +120,7 @@ Optional recommendations
 * `Node.js`_ could be used for more efficient JS assets minification
 * `Tidy PHP extension`_ should be installed to make sure that HTML is correctly converted into a text representation
 * `Redis`_ - could be used for more efficient application caching. Supported versions of Redis from 2.0 to 3.2
+* The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration
 
 
 Client-side Requirements

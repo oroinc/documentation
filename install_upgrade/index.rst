@@ -21,7 +21,7 @@ The information is grouped into the following topics:
 
 * :ref:`Upgrade <upgrade>` -- Guidance on how to upgrade the Oro application to the newer version.
 
-* :ref:`Reinstall and troubleshooting <reinstall>` -- Information on how to reinstall Oro application to reset any customization and troubleshoot the installation issues.
+* :ref:`Reinstall and troubleshooting <reinstallation-and-troubleshooting>` -- Information on how to reinstall Oro application to reset any customization and troubleshoot the installation issues.
 
 * :ref:`Optimization, Scalability, and Configuration Recommendations <installation-recommendations>`
 
@@ -34,5 +34,5 @@ The information is grouped into the following topics:
    installation_quick_start_dev/index
    one_step_automated_installation/index
    upgrade
-   reinstall
+   reinstall_and_troubleshooting/index
    recommendations/index
