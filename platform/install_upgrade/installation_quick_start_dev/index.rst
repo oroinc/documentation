@@ -206,6 +206,21 @@ set the following configuration parameters in the **/etc/my.cnf** file:
    innodb_file_per_table = 0
    wait_timeout = 28800
 
+To store supplementary characters (such as 4-byte emojis), configure the options file to use the `utf8mb4` character
+set:
+
+.. code:: bash
+
+   [client]
+   default-character-set = utf8mb4
+
+   [mysql]
+   default-character-set = utf8mb4
+
+   [mysqld]
+   character-set-server = utf8mb4
+   collation-server = utf8mb4_unicode_ci
+
 For the changes to take effect, restart MySQL server by running:
 
 .. code:: bash
@@ -497,6 +512,21 @@ If you use HTTPS mode, open the *config/parameters.yml* file and change the WebS
    websocket_backend_path:  ""
 
 For more information on these parameters, see `OroSyncBundle documentation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle>`_.
+
+Configure DBAL Parameters
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Change the defaults for Doctrine in the *config/config.yml* file so that the generated SQL uses the *utf8mb4* character
+set:
+
+.. code::
+
+    doctrine:
+        dbal:
+            charset: utf8mb4
+            default_table_options:
+                charset: utf8mb4
+                collate: utf8mb4_unicode_ci
 
 Install |oro_app_name| Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
