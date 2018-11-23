@@ -3,11 +3,10 @@
 Elasticsearch
 =============
 
-Enterprise Editions of Oro applications support implementation of the search engine using `Elasticsearch <http://www.Elasticsearch.org/>`_.
-
-In this section, you will learn the following about Elasticsearch:
-
 .. contents:: :local:
+   :depth: 1
+
+Enterprise Editions of Oro applications support implementation of the search engine using `Elasticsearch <https://www.elastic.co/products/elasticsearch>`_.
 
 System Requirements
 -------------------
@@ -17,14 +16,7 @@ The following are requirements that should be met before using the ElasticSearch
 Elasticsearch Supported Versions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, ElasticSearchBundle supports Elasticsearch engine version 2.*. You can manually specify the minimum allowed version and the upper bound version in the application configuration.
-
-Required Plugins
-^^^^^^^^^^^^^^^^
-
-* `Delete By Query <https://www.elastic.co/guide/en/Elasticsearch/plugins/2.4/plugins-delete-by-query.html>`_
-
-   To provide a possibility to refresh types, OroElasticSearchBundle relies on the Delete By Query functionality, and it is required to install a plugin to support it. Please, follow the installation steps in the `Elasticsearch official documentation <https://www.elastic.co/guide/en/Elasticsearch/plugins/2.4/plugins-delete-by-query.html#_installation>`_.
+By default, ElasticSearchBundle supports Elasticsearch engine version 6.*. You can manually specify the minimum allowed version and the upper bound version in the application configuration.
 
 Configuration
 -------------
@@ -53,7 +45,7 @@ Auth parameters:
 
 Index name:
 
-* **search_engine_index_name** - A name of the Elasticsearch index to store data in.
+* **search_engine_index_prefix** - A prefix of the Elasticsearch indexes to store data in.
 
 SSL Authentication:
 
@@ -81,6 +73,7 @@ To configure your Elasticsearch engine, put the following configuration into the
        engine: "elastic_search"
 
 In this case, all the required settings will be taken from `config/parameters.yml` (see the :ref:`Parameters <elastic-search--parameters>` section.
+The default configuration is defined in Oro/Bundle/ElasticSearchBundle/Resources/config/oro/app.yml.
 
 If you need to create a more transparent and detailed configuration, define the required settings directly in the `config/config.yml`.
 
@@ -128,13 +121,28 @@ All settings required for the creation of an Elasticsearch index are defined in 
 For more information about index configuration, see the
 `Elasticsearch API documentation <https://www.elastic.co/guide/en/Elasticsearch/client/php-api/current/_index_management_operations.html>`_.
 
+Per-request Client Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can also configure per-request client options like this:
+
+.. code-block:: none
+    :linenos:
+
+    oro_search:
+        engine_parameters:
+            client_per_request:
+                timeout: 10
+                connect_timeout: 10
+                # ... other options
+
 Disable Environment Checks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The bundle provides you with the opportunity to disable some system level checks that are performed during the application installation or index creation. These checks are used to ensure that environment is properly configured and that the search index is accessible. 
 However, in some cases, these checks might be disabled to isolate all interactions with Elasticsearch at the `/<indexName>/` URL. These checks do not affect the application performance - the flags are used only during application installation or full reindexation.
 
-**Important!** Disabling these checks might lead to inconsistent or unpredictable behavior of the application. Disable at your own risk.
+.. important:: **Important!** Disabling these checks might lead to inconsistent or unpredictable behavior of the application. Disable at your own risk.
 
 Set the following options to false to disable checks:
 
@@ -152,16 +160,49 @@ Here is an example of the configuration that disables both of these checks:
            system_requirements_check: false
            index_status_check: false
 
+Language Optimization
+^^^^^^^^^^^^^^^^^^^^^
+
+The bundle provides the ability to enable language optimization of indexation. There is only one option here:
+
+* **language_optimization** (default `false`) - use specialized language analyzers for search index based on the used language.
+
+The list of all applicable analyzers can be found in the Elasticsearch documentation. If no appropriate analyzer found then default whitespace analyzer will be used instead.
+
+Here is how language optimization may be enabled.
+
+.. code-block:: none
+    :linenos:
+
+    oro_search:
+        engine_parameters:
+            language_optimization: true
+
+To use language optimization, remove all search index and start full reindexation to fill it with data. 
+
+Force Refresh
+^^^^^^^^^^^^^
+
+Elasticsearch is an asynchronous search engine, which means that data might be available with a small delay after it was scheduled for indexation. If you want to make is work synchronously, trigger the refresh operation after each reindexation request. To enable such synchronous behaviour, you should define **option force_refresh** in the engine parameters:
+
+.. code-block:: none
+    :linenos:
+
+    oro_search:
+        engine_parameters:
+            force_refresh: true
+
+Keep in mind that synchronous indexation is slower than asynchronous because the application has to wait for the reindexation to finish after every reindexation request.
+
 Index Agent and Search Engine
 -----------------------------
 
 Index agent and search engine are two basic classes used to work with Elasticsearch index and perform the full text search.
 
-
 Index Agent
 ^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\Engine\IndexAgent
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\Engine\\IndexAgent
 
 Index agent is used by the search engine to get index name, initialize client and perform reindexing.
 The agent receives DI configuration of the search engine, like access credentials and index name, and uses it to setup entity mapping.
@@ -170,28 +211,32 @@ Afterwards, it supplies additional settings to tokenize text fields and merge al
 The entity mapping is built based on the search entity configuration that is defined in `search.yml` files, the main configuration and
 field type mappings. Field type mappings are injected through the DI as a parameter.
 
-_oro\_ElasticSearch.field\_type\_mapping_:
+*oro\\_elasticsearch.field\\_type\\_mapping:*
 
 .. code-block:: none
     :linenos:
 
     text:
-       type: string
-       store: true
-       index: not_analyzed
+        type: keyword
+        store: true
+        # see Oro\Bundle\ElasticSearchBundle\Engine\AbstractIndexAgent for analyzer definitions
+        fields:
+            analyzed:
+                type: text
+                search_analyzer: fulltext_search_analyzer
+                analyzer: fulltext_index_analyzer
     decimal:
-       type: double
-       store: true
+        type: double
+        store: true
     integer:
-       type: integer
-       store: true
+        type: integer
+        store: true
     datetime:
-       type: date
-       store: true
-       format: "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd"
+        type: date
+        store: true
+        format: "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd"
 
-To make search faster, a special field that contains all text information ("all_text") is generated (in lowercase and
-split into tokens using nGram tokenizer). In additional index settings, custom search and index analyzers are defined for this field.
+To make search faster, a special field that contains all text information ("all_text") is generated (in lowercase and split into tokens using nGram tokenizer). Custom search and index analyzers are attached to this field. They are defined in additional index settings.
 
 The data explained above is used to create and initialize a client (an instance of the ElasticSearch\Client) and then return it to the
 search engine to perform full text search. The Index agent class uses the ClientFactory class to create an instance. You can use the factory to instantiate as many clients with various configurations, as you wish.
@@ -202,14 +247,14 @@ Partial mapping recreation is no longer possible.
 Search Engine
 ^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\Engine\ElasticSearch
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\Engine\\ElasticSearch
 
 The search engine implements the AbstractEngine interface. The SearchBundle uses search engine to handle search-related operations, and the
 search engine uses an index agent as a proxy to call the search-index-related operations (e.g. to get the index name or
 to request index recreation).
 
-To perform *save* and *delete* operations, search engine uses `Elasticsearch bulk API <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/docs-bulk.html>`_.
-Deletion performs as is, but save requires to delete the existing entity first and only then saves the new entity. This is done to clean the traces of old values that have no matching new values to overwrite them.
+To perform *save* and *delete* operations, search engine uses `Elasticsearch bulk API <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docs-bulk.html>`__.
+Deletion performs as is, but save uses the `index` operation to override the existing data. This is done to clean the traces of old values that have no matching new values to overwrite them.
 
 Reindex operation recreates the entire search index and then triggers the save operation for
 all affected entities.
@@ -225,7 +270,7 @@ Request Builders
 
 Request builder is a separate class used to build a specific part of a search request to Elasticsearch based on the
 source Query object. The request builder must implement the
-_\Oro\Bundle\ElasticSearchBundle\RequestBuilder\RequestBuilderInterface_ interface. According to this interface, the builder receives
+*\\Oro\Bundle\\ElasticSearchBundle\\RequestBuilder\\RequestBuilderInterface* interface. According to this interface, the builder receives
 Query object and the existing request array. The builder returns modified request array.
 
 There are four default request builders.
@@ -233,51 +278,148 @@ There are four default request builders.
 FromRequestBuilder
 ^^^^^^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\RequestBuilder\FromRequestBuilder
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\FromRequestBuilder
 
 The builder gets the **from** part of a query and converts any specific entities into the required
-`index types <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/search-search.html>`_.
+`index types <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-search.html>`_.
 
 
 WhereRequestBuilder
 ^^^^^^^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\RequestBuilder\WhereRequestBuilder
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\WhereRequestBuilder
 
 The builder iterates through all conditions in the **where** part of the query and passes them to the chain of part builders that are used to process specific condition operators.
 
-- **ContainsWherePartBuilder** - processes **~** (contains) and **!~** (does not contain) operators. Adds `match query <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/query-dsl-match-query.html>`_ for "all_text" field with nGram tokenizer or `wildcard query <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/query-dsl-wildcard-query.html>`_ for regular fields;
+- **ContainsWherePartBuilder** - processes **~** (contains) and **!~** (does not contain) operators. Adds `match query <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-match-query.html>`_ for "all_text" field with nGram tokenizer or `wildcard query <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-wildcard-query.html>`_ for regular fields;
 
-- **EqualsWherePartBuilder** - processes **=** (equals) and **!=** (is not equal) operators. Adds a  `match query <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/query-dsl-match-query.html>`_;
+- **EqualsWherePartBuilder** - processes **=** (equals) and **!=** (is not equal) operators. Adds a `term query <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-term-query.html>`_;
 
-- **RangeWherePartBuilder** - processes arithmetical operators applied to numeric values: **>** (greater), **>=** (greater or equals), **<** (lower) and **<=** (lower or equals ). Adds appropriate `range query <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/query-dsl-range-query.html>`_;
+- **RangeWherePartBuilder** - processes arithmetical operators applied to numeric values: **>** (greater), **>=** (greater or equals), **<** (lower) and **<=** (lower or equals ). Adds appropriate `range query <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-range-query.html>`_;
 
-- **InWherePartBuilder** - processes **in** and **!in** operators. Converts the set into several **=** or **!=** conditions that uses `match query <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/query-dsl-match-query.html>`_.
+- **InWherePartBuilder** - processes **in** and **!in** operators. Converts the set into several **=** or **!=** conditions that uses `term query <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-term-query.html>`_.
 
 Each part builder receives field name, field type, condition operator, value, boolean keyword and source request and returns the altered request.
 
 OrderRequestBuilder
 ^^^^^^^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\RequestBuilder\OrderRequestBuilder
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\OrderRequestBuilder
 
 The builder gets the order-by field and the order direction from the query. If they are defined, builder converts them to the
-`sort <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/search-request-sort.html>`_ parameter of a search request.
+`sort <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-request-sort.html>`_ parameter of a search request.
 The result is sorted by relevance by default.
-
 
 LimitRequestBuilder
 ^^^^^^^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\RequestBuilder\LimitRequestBuilder
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\LimitRequestBuilder
 
-The builder gets the first result and max results values from the query, and if they are defined they are converted into the `from/size <http://www.ElasticSearch.org/guide/en/ElasticSearch/reference/current/search-request-from-size.html>`_ pagination parameters of a search request.
+The builder gets the first result and max results values from the query, and if they are defined they are converted into the `from/size <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-request-from-size.html>`_ pagination parameters of a search request.
+
+AggregateBuilder
+^^^^^^^^^^^^^^^^
+
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\AggregateBuilder
+
+The builder gets collection of the aggregating function and the field name from the query. If they are defined, they are converted into the `aggregations <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations.html>`__ parameters of a search request. Built structure of aggregations parameters will have bucket type of aggregations, where each `bucket <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations-bucket.html>`__ is associated with a field name and a document criterion.
+
+Upgrade Standard Index From Elasticsearch 2.* / 5.* to Elasticsearch 6.*
+------------------------------------------------------------------------
+
+You can perform the upgrade either via full reindexation or via search index dump.
+
+Full Reindexation
+^^^^^^^^^^^^^^^^^
+
+This option is suitable for upgrades from version lower than 2.6, or if you have a small number of entities (fewer than a hundred thousand).
+
+Search index upgrade is a part of the `application upgrade <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`_.
+Once you have turned on maintenance mode through `app/console lexik:maintenance:lock --env=prod`, perform the following actions:
+
+1. `Stop Elasticsearch 2.\* / 5.\* <https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html>`_
+2. Modify credentials  for search engine configuration in the `config/parameters.yml` file.
+3. `Start the Elasticsearch 6.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html>`_
+
+Proceed with the `standard upgrade procedure <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`__.
+
+Search Index Dump
+^^^^^^^^^^^^^^^^^
+
+Search index dump is suitable only if you perform upgrade from version 2.6 to 3.+, and you have a large number of entities.
+The biggest advantage of this approach is that you do not need to schedule reindexation and wait until it is finished.
+
+Generating the search index dump is also a part of standard procedure of application upgrade.
+But you should note that the elastic index dump must be created from the old version of the code (2.6). So follow next step of upgrade procedure:
+
+1. Turn on maintenance mode to switch the application to the maintenance mode through:
+
+   .. code-block:: none
+      :linenos:
+
+      app/console lexik:maintenance:lock --env=prod
+
+2. Create Elastic search index dump. Consider you must do this **before** updating code to new version.
+
+   .. code-block:: none
+      :linenos:
+
+      app/console oro:elasticsearch:dump-standard-index elasticsearch6 standard-index-es6.dump --env=prod
+
+   It creates the `standard-index-es6.dump` file (in application directory) with search index dump in the `Elasticsearch bulk API <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docs-bulk.html>`__ format which is applicable for Elasticsearch version 6.\*.
+   Here is an example:
+
+   .. code-block:: none
+      :linenos:
+
+      {"index":{"_index":"oro_search_oro_organization","_type":"oro_organization","_id":1}}
+      {"all_text":"Oro","oro_organization_owner":0,"organization":0,"name":"Oro"}
+
+3. `Stop the Elasticsearch 2.\* / 5.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html>`_.
+
+4. Proceed with `standard upgrade procedure <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`__ which includes creating needed backups and updating code to new version, updating composer dependencies (all actions required before running the update command).
+   Composer should ask you to enter value of the new parameter `search_engine_index_prefix` - put there the same value as was previously in the `search_engine_index_name` parameter.
+
+5. Then modify credentials for search engine configuration in the `config/parameters.yml` file.
+   Consider doing this **after** updating the code to the new version. Keep in mind that the new version of the application has Symfony 3 with different structure of directories.
+
+6. `Start the Elasticsearch 6.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html>`_
+7. Execute update command from standard upgrade procedure but **pay attention** to `skip-search-reindexation` (it will prevent full reindexation start):
+
+   .. code-block:: none
+      :linenos:
+
+      bin/console oro:platform:update --skip-search-reindexation --env=prod
+
+8. Now you need to execute command which will create an empty indexes (without any data) with correct elastic search mappings:
+
+   .. code-block:: none
+      :linenos:
+
+      bin/console oro:elasticsearch:create-standard-index --env=prod
+
+
+9. Upload the dump data to the Elasticsearch 6.\* index, the Elasticsearch 6.\* bulk API, and the dump file created previously using a standard curl CLI command:
+
+   .. code-block:: none
+      :linenos:
+
+      curl -XPOST http://localhost:9200/_bulk -H 'Content-Type: application/json' --data-binary @standard-index-es6.dump > /dev/null
+
+   To speed up this process you may split the dump file into smaller chunks and upload them in parallel. In this case, each chunk has to contain an even number of lines because each document is represented by two lines in the dump file.
+
+10. Finish `standard upgrade procedure <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`__.
+
+You may adjust this procedure according to your needs, but keep in mind that you need to:
+
+* Create index dump **before** upgrading to 3.+ and ensure that the Elasticsearch 2.\* / 5.\* service is running at this time;
+* Create and upload index dump during maintenance mode to avoid data loss.
 
 Troubleshooting
 ---------------
 
-Got exception `No alive nodes found in your cluster` during installation or indexation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Got the `No alive nodes found in your cluster` exception  during installation or indexation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Check if Elasticsearch instance is turned on and accessible. The easiest way to do that is to try connecting to the Elasticsearch
 host and port using the `curl` utility.

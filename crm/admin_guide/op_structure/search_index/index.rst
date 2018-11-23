@@ -628,12 +628,12 @@ Website search index provides following command (`hear are examples of a work wi
 References
 ----------
 
-* `Elasticsearch references <https://www.elastic.co/guide/en/elasticsearch/reference/2.4/index.html>`_
+* `Elasticsearch References <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/index.html>`_
 * `Scaling Elasticsearch <https://medium.com/hipages-engineering/scaling-elasticsearch-b63fa400ee9e>`_
 * `Web Performance Tuning: Latency and Throughput <https://www.safaribooksonline.com/library/view/web-performance-tuning/059600172X/ch04s02.html>`_
-* :ref:`Standard search index type <search_index_db_from_md>`
-* :ref:`Elasticsearch support for standard index type <elastic-search>`
-* `Website search index type <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/README.md>`_
+* :ref:`Standard Search Index Type <search_index_db_from_md>`
+* :ref:`Elasticsearch Support For Standard Index Type <elastic-search>`
+* `Website Search Index Type <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/README.md>`_
 
 .. toctree::
    :maxdepth: 1

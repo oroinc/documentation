@@ -17,15 +17,15 @@ Meet the Hardware and OS Requirements
 
 * **Operating System**
 
-    The recommended OS for Oro applications is CentOS. However, it is possible to set up the development environment on any Linux, Mac, or Windows OS.
+  The recommended OS for Oro applications is CentOS. However, it is possible to set up the development environment on any Linux, Mac, or Windows OS.
 
 * **Disk Drive**
 
-    A solid-state drive (SSD) is recommended. As Oro application uses lots of files (vendors, cache), a SSD makes everyday development operations much faster than when using HDD.
+  A solid-state drive (SSD) is recommended. As Oro application uses lots of files (vendors, cache), a SSD makes everyday development operations much faster than when using HDD.
 
 * **Available RAM**
 
-    The recommended amount of available RAM is 8Gb for most development operations (e.g., upgrading the application or updating Composer dependencies). However, 2Gb of available RAM is usually enough to run the application.
+  The recommended amount of available RAM is 8Gb for most development operations (e.g., upgrading the application or updating Composer dependencies). However, 2Gb of available RAM is usually enough to run the application.
 
 .. _dev-guide-development-practice-setup-dev-env-prepare-tools:
 
@@ -67,9 +67,9 @@ Create a Custom Application
 
 1. Fork Oro application repository.
 
-   Use the `Github guide on forking a repo <https://help.github.com/articles/fork-a-repo/>`_ as an ilustration of how to fork Oro application repository.
+   Use the `Github guide on forking a repo <https://help.github.com/articles/fork-a-repo/>`_ as an illustration of how to fork Oro application repository.
 
-   .. note:: Pay attention to the **Keep your fork synced** section of this guide. You have to set original Oro application repository as the remote upstream in order to be able to pull improvements and fixes from the original Oro application.
+   .. note:: Pay attention to the `Keep your fork synced <https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced>`__ section of this Github guide. You have to set the original Oro application repository as the remote upstream in order to be able to pull improvements and fixes from the original Oro application.
 
 4. (optional) Change the **README.md** file in your repo to describe your application.
 
@@ -100,7 +100,7 @@ Please, follow the **Step 1: Environment Setup** and **Step 2: Pre-installation 
 Install Your Application
 ------------------------
 
-When the environment set up, follow instructions in **Step 3: OroPlatform Application Installation** and **Step 4: Post-installation Environment Configuration** sections of the :ref:`Installation Guide <install-for-dev>` to install your application.
+When the environment is set up, follow the instructions in **Step 3: OroPlatform Application Installation** and **Step 4: Post-installation Environment Configuration** sections of the :ref:`Installation Guide <install-for-dev>` to install your application.
 
 .. _dev-guide-development-practice-setup-dev-env-create-bundle:
 
