@@ -37,9 +37,9 @@ The default “base” OroPlatform theme uses Twig templates. You should choose 
 
     layout:
         actions:
-            - @setBlockTheme:
+            - '@setBlockTheme':
                 themes: 'MyBundle:layouts/first_theme/php'
-            - @addTree:
+            - '@addTree':
                 items:
                     head:
                         blockType: head
@@ -71,7 +71,7 @@ The example above creates a standard web page structure (head, metadata, and bod
     :linenos:
 
     actions:
-        - @setBlockTheme:
+        - '@setBlockTheme':
             themes: 'MyBundle:layouts/first_theme/php'
 
 Creating Templates
