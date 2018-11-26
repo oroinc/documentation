@@ -128,12 +128,14 @@ Work with Multiple Organizations
 In many cases a user has access to a single organization. A sales representative in the U.S. office is likely to have no 
 access to the company’s French division.
 
-However, users can be assigned to multiple organizations just as they can be assigned to multiple business units and 
-will get access to the records in different organizations. For example, if you are working at the worldwide help desk 
-of a multinational organization, you should be able to access customer records in all the organization within your 
-company in order to open cases based on the customer requests. Similarly, if you are the CEO of a big enterprise 
-comprised of multiple independent divisions, you would like to have access to every one of them in order to check their 
-performance.
+However, users can be assigned to multiple organizations just as they can be assigned to multiple business units and
+will get access to the records in different organizations.
+
+.. note:: This feature is only available in the Enterprise edition.
+
+For example, if you are working at the worldwide help desk of a multinational organization, you should be able to access customer records in all the organization within your
+company in order to open cases based on the customer requests. Similarly, if you are the CEO of a big enterprise
+comprised of multiple independent divisions, you would like to have access to every one of them in order to check their performance.
 
 As organizations are often much bigger and more separated than business units, the user will have to switch to the 
 necessary organization to work with data in each one of them.
