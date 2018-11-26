@@ -78,6 +78,8 @@ The **Pricing** page opens. It contains the following information:
 
    * **Enabled Currencies** --- The subset of :ref:`allowed currencies <sys--config--sysconfig--general-setup--currency>` that is available for the customer user by default.
 
+     .. note:: The **Display Currencies** field is only available in the Enterprise edition.
+
      .. note:: The website level configuration has higher priority and overrides the global configuration settings.
 
      .. image:: /admin_guide/img/configuration/catalog/pricing/currency_on_the_front_store.png

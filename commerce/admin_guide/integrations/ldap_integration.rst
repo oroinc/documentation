@@ -7,8 +7,9 @@ LDAP Integration
    :depth: 2
 
 Single sign-on capability (the ability for users to use the same login credentials for all corporate applications) is 
-particularly important for efficiency and performance in large-scale companies. The LDAP Integration feature available 
-in Oro Enterprise Edition supports this capability.
+particularly important for efficiency and performance in large-scale companies. LDAP Integration in Oro application supports this capability.
+
+.. note:: This feature is only available in the Enterprise edition.
 
 LDAP is a Lightweight Directory Access Protocol, an open-source and vendor-neutral protocol that is commonly used to 
 share user-related information in the network.

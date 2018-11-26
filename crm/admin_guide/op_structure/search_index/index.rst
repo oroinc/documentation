@@ -76,7 +76,7 @@ Search mapping can be stored inside any bundle at the file Resources/config/oro/
 Website Index Type
 ^^^^^^^^^^^^^^^^^^
 
-Website index type (sometimes referred as frontend index type) is used only at the OroCommerce application - this application uses standard index type at backend part, and website index type at frontent part of the application. Each entity is represented by one alias wtih optional search placeholder (e.g. oro_product_WEBSITE_IT), so in fact each website might have it's own entity alias (e.g. oro_product_1 and oro_product_2). Entity fields might contain search placeholders as well (e.g. name_LOCALIZATION_ID), so in fact each field might have several values depending on the provided placeholders (e.g. name_1, name_2 and name_3).
+Website index type (sometimes referred as frontend index type) is used only at the OroCommerce application - this application uses standard index type at backend part, and website index type at frontent part of the application. Each entity is represented by one alias wtih optional search placeholder (e.g. oro_product_WEBSITE_IT), so in fact each website might have its own entity alias (e.g. oro_product_1 and oro_product_2). Entity fields might contain search placeholders as well (e.g. name_LOCALIZATION_ID), so in fact each field might have several values depending on the provided placeholders (e.g. name_1, name_2 and name_3).
 
 Website index type triggers following events:
 
@@ -116,7 +116,7 @@ See detailed information about the implementation of ORM search engine in the :r
 Elasticsearch Search Engine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-:ref:`Elasticsearch search engine <elastic-search>` allows to store big amount of data and perform fast search queries. Performance of Elasticsearch engine is quite good and it's recommended for bigger applications - with hundereds of thousands and millions of entities.
+:ref:`Elasticsearch search engine <elastic-search>` allows to store big amount of data and perform fast search queries. Performance of Elasticsearch engine is quite good and it is recommended for bigger applications - with hundereds of thousands and millions of entities.
 Elasticsearch search engine requires credentials to connect to actual index. Credentials include optional WWW-auth parameters and SSH connection support.
 Elasticsearch search engine for standard index type is implemented at the OroElasticSearchBundle at platform-enterprise package, for website index type - at the OroWebsiteElasticSearchBundle at commerce-enterprise package.
 Current implementation supports only Elasticsearch 2.* versions.
@@ -145,7 +145,7 @@ One main entity contains main information about the document - entity class, ent
 
 .. image:: /admin_guide/img/op_structure/op_structure_search_orm.png
 
-Each of the supported index types uses it's own set of entities - i.e. 5 entities for standard index type and 5 more entities for website index type.
+Each of the supported index types uses its own set of entities - i.e. 5 entities for standard index type and 5 more entities for website index type.
 
 Elasticsearch Search Engine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -159,7 +159,7 @@ Search mapping is defined at the `Elasticsearch mapping <https://www.elastic.co/
 
 .. image:: /admin_guide/img/op_structure/op_structure_search_elastic.png
 
-Each of the supported index types uses it's own Elasticsearch index.
+Each of the supported index types uses its own Elasticsearch index.
 
 Example of Standard Index Type Document
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -265,14 +265,14 @@ To perform search request developer has to build a query to search index. There 
 String Representation
 ^^^^^^^^^^^^^^^^^^^^^
 
-String representation is pretty similar to standard SQL query - this string may contain keywords select, from, where, aggregate, order_by, offset and max_results. String represenation is used mostly at the API where user can request specific data with specific condition. During the processing of string representation it's converted to object representation.
+String representation is pretty similar to standard SQL query - this string may contain keywords select, from, where, aggregate, order_by, offset and max_results. String represenation is used mostly at the API where user can request specific data with specific condition. During the processing of string representation it is converted to object representation.
 
 Object Representation
 ^^^^^^^^^^^^^^^^^^^^^
 
 Object representation has two levels - low and high.
-**Low-level object** (Oro\Bundle\SearchBundle\Query\Query, sometime called search query builder) represents a query and has parts similar to string represenation (select, where etc). Low-level query is not aware about specific search engine. It's used by all search engines as a main query representation. Low-level object is in fact a `Data transfer object <https://en.wikipedia.org/wiki/Data_transfer_object>`_.
-**High-level object** (implementation of Oro\Bundle\SearchBundle\Query\SearchQueryInterface) is used to hide search engine specific logic from a developer. It embeds low-level object and proxies most of the calls. High-level objects are created by the query factory (implementation of Oro\Bundle\SearchBundle\Query\Factory\QueryFactoryInterface). Each index type has it's own implementation of high-level object which encapsulates the way this query has to be executed, and it's own implementation of query factory responsible for creation of high-level object. High-level object is in fact a `Facade <https://en.wikipedia.org/wiki/Facade_pattern>`_.
+**Low-level object** (Oro\Bundle\SearchBundle\Query\Query, sometime called search query builder) represents a query and has parts similar to string represenation (select, where etc). Low-level query is not aware about specific search engine. It is used by all search engines as a main query representation. Low-level object is in fact a `Data transfer object <https://en.wikipedia.org/wiki/Data_transfer_object>`_.
+**High-level object** (implementation of Oro\Bundle\SearchBundle\Query\SearchQueryInterface) is used to hide search engine specific logic from a developer. It embeds low-level object and proxies most of the calls. High-level objects are created by the query factory (implementation of Oro\Bundle\SearchBundle\Query\Factory\QueryFactoryInterface). Each index type has its own implementation of high-level object which encapsulates the way this query has to be executed, and its own implementation of query factory responsible for creation of high-level object. High-level object is in fact a `Facade <https://en.wikipedia.org/wiki/Facade_pattern>`_.
 Following diagram demonstrates connection between low-level object, high-level object, query factory and search engine:
 
 .. image:: /admin_guide/img/op_structure/op_structure_search_index_object_representation.png
@@ -350,7 +350,7 @@ ORM Search Engine
 ^^^^^^^^^^^^^^^^^
 
 ORM search engine uses DBMS as a main storage and its scalability depends on scalability of DBMS. For example, PostgreSQL supports `several clustering solutions <https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling>`_, so ORM search index can be scaled together with the main relational DB.
-There is one more trick that can be used. As long as ORM search engine uses it's own connection and it's own entity manager, all search related tables can be moved to a separate DB at the remote server. In this case application administrator has to override configuration for connection called search and refer to this remote server.
+There is one more trick that can be used. As long as ORM search engine uses its own connection and entity manager, all search related tables can be moved to a separate DB at the remote server. In this case application administrator has to override configuration for connection called search and refer to this remote server.
 
 Elasticsearch Search Engine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -368,7 +368,7 @@ Search index does not provide any additional logic to recognize that index not a
 ORM Search Engine
 ^^^^^^^^^^^^^^^^^
 
-ORM search engine uses DBMS as a main storage and ability to handle unavilable state of a storage depends on how it's organized at the used DBMS. Both `MySQL <https://dev.mysql.com/doc/refman/5.7/en/replication.html>`_ and `PostgreSQL <https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling>`_ support repliacation, which can be used to manage such situation.
+ORM search engine uses DBMS as a main storage and ability to handle unavailable state of a storage depends on how it is organized at the used DBMS. Both `MySQL <https://dev.mysql.com/doc/refman/5.7/en/replication.html>`_ and `PostgreSQL <https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling>`_ support repliacation, which can be used to manage such situation.
 If you have search index at the separate DB then you can organize replication exclusively for this DB.
 
 Elasticsearch Search Engine
@@ -570,7 +570,7 @@ Here are couple of recommendations how to work properly with search index with a
 * **Use language optimization** - if you know what languages are used at your application then you can optimize index structure and data according to these languagues; see list of Elasticsearch language analyzers.
 * **Keep search index at the separate server** - this way it will not be affected by main relational DB load.
 * **Use Elasticseach cluster if needed** - if your index is too big to keep it on one server and/or you want to balance search index load between several servers then you might use Elasticseach cluster.
-* **Increase RAM** - the recommended amount of RAM for search index is a half of index size or more, i.e. if you have 50GB of index data it's recommended to have 25GB+ of RAM.
+* **Increase RAM** - the recommended amount of RAM for search index is a half of index size or more, i.e. if you have 50GB of index data it is recommended to have 25GB+ of RAM.
 * **Use SSD** - this type of disk provides faster read/write access than HDD and allows to request parts of search index data faster.
 
 Troubleshooting

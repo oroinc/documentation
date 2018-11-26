@@ -6,6 +6,8 @@ Create and Manage a Warehouse
 Create a Warehouse
 ^^^^^^^^^^^^^^^^^^
 
+.. note:: This feature is only available in the Enterprise edition.
+
 To create a new warehouse:
 
 1. Navigate to **Inventory > Warehouses** using the main menu.

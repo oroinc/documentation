@@ -10,6 +10,8 @@ Apruve is a B2B credit management service that provides a credit line for your b
 
 Integration of OroCommerce with Apruve enables you to secure your company from financial risks related to delayed payments. Apruve allows you to get the payment within 24 hours of any invoice being generated. You offer terms to your customer but still get the payment for your sales within 1 day.
 
+.. note:: The Apruve integration is only available in the Enterprise edition.
+
 To set up Apruve payment service in OroCommerce:
 
 1. :ref:`Configure Apruve Payment Method Integration <user-guide--payment--configuration--payment-method-integration--apruve>` 
