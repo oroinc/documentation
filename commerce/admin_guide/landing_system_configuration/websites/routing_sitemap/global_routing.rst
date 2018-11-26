@@ -57,6 +57,8 @@ To change the default global routing settings:
    .. image:: /admin_guide/img/configuration/websites/routing_website_matchers.png
       :class: with-border
 
+   .. note:: The Website Matchers feature is only available in the Enterprise edition.
+
    * **Website Matchers** - with this option, you can define the way OroCommerce will identify the website customer uses. It is recommended to select at least one option. Supported options: *ENV Variable Based*, *Cookie Based*, *URL Based*. When more than one option is selected, set the method priority in the **sort order** column to define the most reliable and trusted one.
 
    * **Enable Redirect** - indicates whether the customer should be automatically redirected to the website that was identified using one of the  website matching methods (e.g. user navigated to the *us-store.com* but their cookies indicate that they are visiting the *uk-store.com*).

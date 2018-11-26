@@ -87,6 +87,8 @@ Allowed Currencies Options
 
 The information about the allowed currencies options is grouped in the following columns:
 
+.. note:: This feature is only available in the Enterprise edition.
+
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Name**               | Description                                                                                                 |
 +========================+=============================================================================================================+

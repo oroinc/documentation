@@ -5,6 +5,8 @@ Website Management
 
 In OroCommerce, you can create multiple websites that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
 
+.. note:: The multiple websites management is only available in the Enterprise edition.
+
 Every website may have:
 
 * A dedicated web catalog that defines the website content (products, categories, web pages, etc)

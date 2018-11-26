@@ -3,11 +3,12 @@
 Elasticsearch
 =============
 
-Enterprise Editions of Oro applications support implementation of the search engine using `Elasticsearch <http://www.Elasticsearch.org/>`_.
+In this section, you will learn about implementation of the search engine using `Elasticsearch <https://www.elastic.co/products/elasticsearch>`__.
 
-In this section, you will learn the following about Elasticsearch:
+.. note:: The Elasticsearch feature is only available in the Enterprise edition.
 
 .. contents:: :local:
+   :depth: 1
 
 System Requirements
 -------------------

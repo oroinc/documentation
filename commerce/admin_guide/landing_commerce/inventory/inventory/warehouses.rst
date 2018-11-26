@@ -7,6 +7,8 @@ Configuring Warehouses
 
 After you :ref:`created several warehouses <user-guide--inventory--warehouse--create>` in the **Inventory > Warehouses** section, you should enable and prioritize them to ensure that OroCommerce uses the most efficient and recommended strategy for inventory updates that happen during the Store operations.
 
+.. note:: The ability to configure warehouses is only available in the Enterprise edition.
+
 To enable and prioritize warehouses:
 
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
