@@ -22,7 +22,7 @@ Configure Password Restrictions
   :header: "Option", "Description"
   :widths: 10, 30 
 
-  "**MinimalPassword Length**","Enter the number of characters to define the length of the password. By default, 8 is specified"
+  "**Minimal Password Length**","Enter the number of characters to define the length of the password. By default, 8 is specified"
   "**Require a Number**","Specify whether the password should contain a number. By default, the option is enabled."
   "**Require A Lower Case Letter**","Specify whether the password should contain a lower case letter. By default, the option is enabled"
   "**Require An Upper Case Letter**","Specify whether the password should contain an upper case letter. By default, the option is enabled"
@@ -30,6 +30,8 @@ Configure Password Restrictions
 
 Configure Login Attempts
 ------------------------
+
+.. note:: This feature is only available in the Enterprise edition.
 
 .. csv-table::
   :header: "Option", "Description" 
@@ -40,6 +42,8 @@ Configure Login Attempts
 
 Configure Password Change Policy
 --------------------------------
+
+.. note:: This feature is only available in the Enterprise edition.
 
 .. csv-table::
   :header: "Option", "Description"
@@ -52,6 +56,8 @@ Configure Password Change Policy
 
 Configure Two-factor Authentication
 -----------------------------------
+
+.. note:: This feature is only available in the Enterprise edition.
 
 .. csv-table::
   :header: "Option", "Description" 

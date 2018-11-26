@@ -52,7 +52,9 @@ For more information, see :ref:`Search Index <search_index_overview>` overview.
 DB
 ~~
 
-All application data is stored in the relational database. PostgreSQL is supported by Enterprise Edition only. MySQL can be used with both Community Edition and Enterprise Edition.
+All application data is stored in the relational database.
+
+.. note:: The PostgreSQL feature is only available in the Enterprise edition. MySQL can be used with both Community and Enterprise editions.
 
 Cache
 ~~~~~
