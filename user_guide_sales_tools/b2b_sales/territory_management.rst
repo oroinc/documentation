@@ -13,6 +13,8 @@ A sales territory is the customer group or geographical area for which an indivi
 
 Currently, the sales territory management is available for leads, opportunities and all types of customers.
 
+.. note:: The Sales Territories feature is only available in the Enterprise edition.
+
 With Sales Territories you can:
 
 - Define territories for leads, opportunities, and any customer type.
@@ -20,10 +22,6 @@ With Sales Territories you can:
 - Automatically assign records to different territories.
 - Prioritize specific territories making sure they do not overlap.
 - Filter data by territory via the dashboard widget.
-
-
-.. note:: Sales Territories feature is available only for Enterprise customers.
-
 
 Enable Territories
 ------------------

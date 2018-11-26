@@ -9,9 +9,9 @@ Multi-Currency
 Overview
 --------
 
-Multiple currency functionality for OroCRM Enterprise edition is a
-useful tool for companies that do business internationally and negotiate
-deals in various currencies.
+Multiple currency functionality for OroCRM is a useful tool for companies that do business internationally and negotiate deals in various currencies.
+
+.. note:: This feature is only available in the Enterprise edition.
 
 Currency configuration allows to:
 
