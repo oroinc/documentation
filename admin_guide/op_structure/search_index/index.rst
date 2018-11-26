@@ -91,7 +91,7 @@ Website index type triggers following events:
 
 Website index type performs reindexation on an entity batch level - i.e. indexation process is triggered for batch of entities (default batch size is 100). Search field values have to be calculated and set manually at a listener to oro_website_search.event.index_entity event. Each search document contains all-text fields for each available localization (all_text_LOCALIZATION_ID) and one all-text field that includes values from all localizations, values are calculated automatically based on a flag set during the indexation (i.e. developer may specify what exact values should be in all-text field value). Each field without placeholder must have ony one value. During the reindexation entities that are being reindexing are available with the old (outdated) data.
 
-Placeholders are defined in code in a classes that implements Oro\Bundle\WebsiteSearchBundle\Placeholder\PlaceholderInterface. Here are the most commonly used placeholders (pay attention that there are more of them in a code):
+Placeholders are defined in code in a classes that implements ``Oro\Bundle\WebsiteSearchBundle\Placeholder\PlaceholderInterface``. Here are the most commonly used placeholders (pay attention that there are more of them in a code):
 
 * WEBSITE_ID - integer identifier of a current website
 * LOCALIZATION_ID - integer identifier of a current localization
@@ -281,7 +281,7 @@ How to Trigger Search Request
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The recommended way to trigger search request is to get instance of high-level object, build a query, execute it and get results. It's also recommended to isolate all search requests in a search repository (see `Best Practices`_ section) to separate storage logic from business logic.
-However, if you really need to work on a lower level (e.g. to write functional test) then you can get instance of an appropriate search engine type. All following engines implement standard search engine interface Oro\Bundle\SearchBundle\Engine\EngineInterface:
+However, if you really need to work on a lower level (e.g. to write functional test) then you can get instance of an appropriate search engine type. All following engines implement standard search engine interface ``Oro\Bundle\SearchBundle\Engine\EngineInterface``:
 
 * standard ORM engine - Oro\Bundle\SearchBundle\Engine\Orm, service ID is oro_search.search.engine;
 * standard Elasticsearch engine - Oro\Bundle\ElasticSearchBundle\Engine\ElasticSearch, service ID is oro_search.search.engine;
@@ -317,9 +317,9 @@ Standard search index type provides CLI command oro:search:reindex that can be u
 
 Website search index type provides similar CLI command called oro:website-search:reindex which used to manually tirgger full reindexation of all entities, only entities of a specific class or entitie for a specific website. It also has flag called scheduled to run indexation  asynchronously. Here are `examples of a work with oro:website-search:reindex command <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/console_commands.md>`_.
 
-Website search index type provides an event called oro_website_search.reindexation_request to manually trigger reindexation process for the specified scope of entities. It uses event class Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behaviour) or synchronous. Here are `examples of a triggering of this event <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md>`_.
+Website search index type provides an event called oro_website_search.reindexation_request to manually trigger reindexation process for the specified scope of entities. It uses event class ``Oro\Bundle\WebsiteSearchBundle\Event\ReindexationRequestEvent`` which accepts boolean parameter $scheduled to specify whether indexation has to be asynchronous (default behaviour) or synchronous. Here are `examples of a triggering of this event <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md>`_.
 
-Both standard and website search index types have synchronous and asynchronous indexers which trigger corresponding type of indexation. All following indexers implement the same standard indexer interface Oro\Bundle\SearchBundle\Engine\IndexerInterface:
+Both standard and website search index types have synchronous and asynchronous indexers which trigger corresponding type of indexation. All following indexers implement the same standard indexer interface ``Oro\Bundle\SearchBundle\Engine\IndexerInterface``:
 
 * standard asynchronous indexer - Oro\Bundle\SearchBundle\Async\Indexer, service ID is oro_search.async.indexer
 * standard synchronous ORM indexer - Oro\Bundle\SearchBundle\Engine\OrmIndexer, service ID is oro_search.search.engine.indexer
@@ -381,7 +381,7 @@ Logging
 -------
 
 Loggin is an essential part of any conponent, and search component is not an exception. Both standard and website search indexes in dev mode log all requests to search index storages (DB or Elasticsearch); in prod mode only exceptions are logged. In case of prod mode all exceptions are also sent to an emails specified in system configurations at System Configuration > General setup > Application settings > Error logs notification section.
-Standard search index also may log all search queries to database table oro_search_query (entity name is Oro\Bundle\SearchBundle\Entity\Query), by default this logging is turned off.
+Standard search index also may log all search queries to database table oro_search_query (entity name is ``Oro\Bundle\SearchBundle\Entity\Query``), by default this logging is turned off.
 Elasticsearch engine impelementations uses their own Monolog logger channels - oro_elastic_search for standard index type and oro_website_elastic_search for website index type.
 
 Use Cases
@@ -400,7 +400,7 @@ Implemented search datagrids:
 Autocomplete
 ^^^^^^^^^^^^
 
-Autocomplete form types by default use standard search index type to find entities and show them to user (see Oro\Bundle\FormBundle\Autocomplete\SearchHandler). They don't use niether string, nor object query representation directly - instead it uses the indexer from the standard search index, which uses low-level query object inside.
+Autocomplete form types by default use standard search index type to find entities and show them to user (see ``Oro\Bundle\FormBundle\Autocomplete\SearchHandler``). They don't use niether string, nor object query representation directly - instead it uses the indexer from the standard search index, which uses low-level query object inside.
 
 Simple and Advanced Search API
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -431,7 +431,7 @@ Isolate Search Index Interaction Inside Search Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Every time you want to request some custom information from the search index you should get it via the search repository. Search repository provides a storage abstraction layer (similar to Doctrine entity repositories), so business logic will be aware about the repository, but not about the search index structure.
-If you want to create a repository then you should create new class extended from the appropriate search repository class (Oro\Bundle\SearchBundle\Query\SearchRepository for standard index type or Oro\Bundle\WebsiteSearchBundle\Query\WebsiteSearchRepository for website index type), declare it as a service, add custom methods and inject it into required business logic service. Search repositories work with the high-level search query object representations. You can optinally pass entity name as well - in this case queries will be by default executed only for the specific entity.
+If you want to create a repository then you should create new class extended from the appropriate search repository class (``Oro\Bundle\SearchBundle\Query\SearchRepository`` for standard index type or ``Oro\Bundle\WebsiteSearchBundle\Query\WebsiteSearchRepository`` for website index type), declare it as a service, add custom methods and inject it into required business logic service. Search repositories work with the high-level search query object representations. You can optinally pass entity name as well - in this case queries will be by default executed only for the specific entity.
 Here is example of search repository for standard index type and its definition:
 
 .. code:: php
