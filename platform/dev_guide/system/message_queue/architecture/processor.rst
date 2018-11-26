@@ -85,7 +85,7 @@ The subscription to the message topic can be performed in two ways:
 
 The following examples are equal:
 
-1. The message processor implements \\Oro\\Component\\MessageQueue\\Client\\TopicSubscriberInterface:
+1. The message processor implements ``\Oro\Component\MessageQueue\Client\TopicSubscriberInterface``:
 
     .. code-block:: yaml
         :linenos:

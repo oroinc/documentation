@@ -104,7 +104,7 @@ Now you have all the required files to enable the new bundle. To enable the bund
 
        If you are working in production environment, you have to use parameter --env=prod with the command.
 
-Now open the application user interface in development mode (use the link http\://<oro-application-base-url>/app_dev.php/) and click the
+Now open the application user interface in development mode (use the link ``http://<oro-application-base-url>/app_dev.php/``) and click the
 `Symfony profiler`_ config icon:
 
 .. _Symfony profiler: http://symfony.com/doc/current/book/internals.html#profiler

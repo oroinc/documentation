@@ -12,7 +12,7 @@ messages, such as the cli command, signal handling, logging, extensions. It
 works on top of the transport layer.
 
 The Client layer provides the ability to start
-producing\consuming messages with as little configuration as possible.
+``producing\consuming`` messages with as little configuration as possible.
 
 Minimum Permissions (RabbitMQ)
 ------------------------------

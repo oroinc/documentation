@@ -238,7 +238,7 @@ field type mappings. Field type mappings are injected through the DI as a parame
 
 To make search faster, a special field that contains all text information ("all_text") is generated (in lowercase and split into tokens using nGram tokenizer). Custom search and index analyzers are attached to this field. They are defined in additional index settings.
 
-The data explained above is used to create and initialize a client (an instance of the ElasticSearch\Client) and then return it to the
+The data explained above is used to create and initialize a client (an instance of the ``ElasticSearch\Client``) and then return it to the
 search engine to perform full text search. The Index agent class uses the ClientFactory class to create an instance. You can use the factory to instantiate as many clients with various configurations, as you wish.
 
 For reindex, the agent recreates the entire index by deleting the existing one and creating a new one with the defined configuration.

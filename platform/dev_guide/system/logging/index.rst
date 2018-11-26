@@ -207,7 +207,7 @@ Messages with LogLevel::DEBUG provide additional detailed debug information for 
 Logging Exceptions
 ^^^^^^^^^^^^^^^^^^
 
-You should not throw the `SPL <http://php.net/manual/en/book.spl.php>` exceptions, but create more specific, based on them, and throw only these custom specific exceptions (like \Oro\Bundle\EntityMergeBundle\Exception\OutOfBoundsException). For logging these, the DEBUG log level is usually used.
+You should not throw the `SPL <http://php.net/manual/en/book.spl.php>` exceptions, but create more specific, based on them, and throw only these custom specific exceptions (like ``\Oro\Bundle\EntityMergeBundle\Exception\OutOfBoundsException``). For logging these, the DEBUG log level is usually used.
 
 In exceptional circumstances, catch SPL exception classes (like \Exception, \OutOfBoundsException) only when you really intend to handle all exceptions in a same unified manner. Log them with the ERROR log level and re-throw on debug mode, if possible.
 
@@ -289,7 +289,7 @@ How to Enable Logging for CLI Commands
 Input of cli command will be logged automatically by OroPlatform. 
 Uncaught exceptions will be logged automatically as well.
 Log command output to the DEBUG level only if it short and is necessary for debugging while command input is known.
-In case you need to log extra information, your command should extend Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand so you would be able to get the logger from the container (see example `here <http://symfony.com/doc/current/console/logging.html#manually-logging-from-a-console-command>`_).
+In case you need to log extra information, your command should extend ``Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand`` so you would be able to get the logger from the container (see example `here <http://symfony.com/doc/current/console/logging.html#manually-logging-from-a-console-command>`_).
 
 How to Enable Logger Only on Dev Environment
 --------------------------------------------

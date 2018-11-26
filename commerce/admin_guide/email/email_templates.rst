@@ -342,7 +342,7 @@ get_payment_status_label (OroCommerce only)
     get_payment_status_label(Order $entity)
 
 **Description:** Returns the translated label for the payment status.
-See the \Oro\Bundle\PaymentBundle\Formatter\PaymentStatusLabelFormatter::formatPaymentStatusLabel method for details.
+See the ``\Oro\Bundle\PaymentBundle\Formatter\PaymentStatusLabelFormatter::formatPaymentStatusLabel`` method for details.
 
 **Returns:** string
 

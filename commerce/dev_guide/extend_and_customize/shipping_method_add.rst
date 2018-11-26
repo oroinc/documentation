@@ -573,7 +573,7 @@ Now implement the shipping method itself using the following steps:
 Implement the Main Method
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To implement the main method, create the <bundle_root>/Method/FastShipping.php class that implements two standard interfaces \Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface and \Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface:
+To implement the main method, create the <bundle_root>/Method/FastShipping.php class that implements two standard interfaces ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodInterface`` and ``\Oro\Bundle\ShippingBundle\Method\ShippingMethodIconAwareInterface``:
 
 
 .. code-block:: php

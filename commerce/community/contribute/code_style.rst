@@ -20,7 +20,7 @@ PSR-2 is considered a code standard of the PHP code style.
 **Default line break separator**
 
 
-Default line break separator is LF (\n) - Unix and OS X style.
+Default line break separator is LF (\\n) - Unix and OS X style.
 
   .. note:: To eliminate issues with this requirement, it is recommended to configure IDE and always use appropriate line break separator. How to configure this in PHPStorm could be found `here <https://www.jetbrains.com/help/phpstorm/2016.3/configuring-line-separators.html>`_
 

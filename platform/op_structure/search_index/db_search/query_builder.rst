@@ -4,7 +4,7 @@ Query Builder
 =============
 
 To perform search queries, you need to use the query builder =>
-\Oro\Bundle\SearchBundle\Query\Query.
+``\Oro\Bundle\SearchBundle\Query\Query``.
 
 Example:
 
