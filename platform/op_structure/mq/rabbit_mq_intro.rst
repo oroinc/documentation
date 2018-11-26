@@ -10,7 +10,7 @@ messages, such as cli command, signal handling, logging, extensions. It
 works on top of transport layer.
 
 The Client layer provides ability to start
-producing\consuming messages with as less as possible
+``producing\consuming`` messages with as less as possible
 configuration.
 
 Minimum Permissions (RabbitMQ)
@@ -51,10 +51,10 @@ RabbitMQ is used as a broker with minimum configuration.
     use Oro\Component\AmqpMessageQueue\Transport\Amqp\AmqpConnection;
 
     $connection = AmqpConnection::createFromConfig([
-        'host' => '127.0.0.1', 
-        'port' => 5672, 
-        'user' =>  'guest', 
-        'password' => 'guest', 
+        'host' => '127.0.0.1',
+        'port' => 5672,
+        'user' =>  'guest',
+        'password' => 'guest',
         'vhost' => '/',
     ]);
 
@@ -64,7 +64,7 @@ bundle to use it.
 
 .. code:: php
 
-    <?php 
+    <?php
     namespace Oro\Bundle\AmqpMessageQueueBundle;
 
     use Oro\Bundle\MessageQueueBundle\DependencyInjection\OroMessageQueueExtension;
@@ -93,10 +93,10 @@ The config:
     oro_message_queue:
         transport:
             default: 'amqp'
-            amqp: 
+            amqp:
               host: '127.0.0.1'
               port: 5672
-              user: 'guest' 
+              user: 'guest'
               password: 'guest'
               vhost: '/'
 

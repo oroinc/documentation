@@ -193,7 +193,7 @@ _oro\_ElasticSearch.field\_type\_mapping_:
 To make search faster, a special field that contains all text information ("all_text") is generated (in lowercase and
 split into tokens using nGram tokenizer). In additional index settings, custom search and index analyzers are defined for this field.
 
-The data explained above is used to create and initialize a client (an instance of the ElasticSearch\Client) and then return it to the
+The data explained above is used to create and initialize a client (an instance of the ``ElasticSearch\Client``) and then return it to the
 search engine to perform full text search. The Index agent class uses the ClientFactory class to create an instance. You can use the factory to instantiate as many clients with various configurations, as you wish.
 
 For reindex, the agent recreates the entire index by deleting the existing one and creating a new one with the defined configuration.
