@@ -9,7 +9,7 @@ In the system configuration, you can define the :ref:`localization options <loca
 
 Additionally, you can provide the translation for all the content elements of your storefront (e.g. product names, descriptions, catalog titles, SEO attributes, etc.):
 
-1. Click the |IcTranslate| **Translations** icon next to the required content element to provide spelling for different languages.
+1. Click the |IcTranslations| **Translations** icon next to the required content element to provide spelling for different languages.
 
 .. image:: /admin_guide/img/localization/content_translation.png
 

@@ -24,6 +24,7 @@ For a quick orientation, see how to :ref:`Register and Sign in <frontstore-guide
    rfq/index
    quotes/index
    shopping_lists/index
+   cim/index
 
 Manage Your Personal or Corporate Information
 ---------------------------------------------

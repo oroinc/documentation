@@ -53,7 +53,7 @@ Keep reading to learn about the localization process (:ref:`open the quick visua
 |             |                                   | available for most of the text                                     |
 |             |                                   | fields (e.g. names, titles, labels, descriptions, etc.)            |
 |             |                                   |                                                                    |
-|             |                                   | To enter translation manually, click |IcTranslate| next to the     |
+|             |                                   | To enter translation manually, click |IcTranslations| next to the  |
 |             |                                   | field, clear the                                                   |
 |             |                                   | **Use <parent translation>** check box next to the required        |
 |             |                                   | language, and provide your version of the translation.             |

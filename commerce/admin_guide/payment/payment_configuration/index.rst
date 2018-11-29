@@ -78,4 +78,4 @@ The payment methods that were based on this integration are no longer usable in 
    :hidden:
 
    payment_configuration
-   common_payment_integration_details
+

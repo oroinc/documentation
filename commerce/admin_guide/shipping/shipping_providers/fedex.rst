@@ -89,7 +89,7 @@ To enable the integration with FedEx in order to request the shipping cost estim
    * **Name** – the shipping method name that is shown as an option for shipping configuration in the OroCommerce management console.
    * **Label** – the shipping method name/label that is shown as a shipping option for the buyer in the OroCommerce storefront during the checkout.
 
-Click the |IcTranslate| **Translations** icon to provide spelling for different languages. Click the same icon again to return to the single-language view.
+Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the same icon again to return to the single-language view.
 
 5. Set the **Test Mode** check box into the necessary state. Enable it if you are using the test FedEx access key and disable for the production access.
 

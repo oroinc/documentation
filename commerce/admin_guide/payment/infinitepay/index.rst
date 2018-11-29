@@ -49,5 +49,4 @@ Depending on the way InfinitePay integration parameters are configured, the foll
    :maxdepth: 2
 
    infinitepay_integration
-   infinitepay_payment_integration_details
    infinitepay_prerequisites

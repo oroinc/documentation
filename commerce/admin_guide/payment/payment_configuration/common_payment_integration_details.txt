@@ -10,7 +10,7 @@ Basic information about the payment is shared among all payment methods and incl
 .. embedded_list
 
 * **Name**—The payment method name that is shown as an option for payment configuration in the OroCommerce Management Console.
-* **Label**—The payment method name/label that is shown as a payment option for the buyer in the OroCommerce Store Front during the checkout. It may not include the payment processor name if you want to hide it from the buyers. For example, you can enter 'Credit Card Payments' if you have a single payment method configured for processing credit cards.
+* **Label**—The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. It may not include the payment processor name if you want to hide it from the buyers. For example, you can enter 'Credit Card Payments' if you have a single payment method configured for processing credit cards.
 
   Click the |IcTranslations| **Translations** icon to provide spelling for different languages. Click the same icon again to return to the single-language view.
 

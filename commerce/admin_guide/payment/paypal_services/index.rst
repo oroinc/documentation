@@ -80,7 +80,6 @@ PayPal Express Configuration Flow
 
 * :ref:`Enable PayPal Integration (Getaway/Pro) <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`Enable PayPal Express Integration <config-guide--payment--paypal-express>`
-* :ref:`Payment Integration Details For PayPal Payment Methods <user-guide--payment--configuration--payment-method-integration--paypal-details>`
 * :ref:`Payment Actions (Authorize/Authorize and Charge) <user-guide--payment--configuration--payment-method-integration--payment-actions>`
 * :ref:`Payments at Checkout (Illustration) <doc--payment--checkout>`
 

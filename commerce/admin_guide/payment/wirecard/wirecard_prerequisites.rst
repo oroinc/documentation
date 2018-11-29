@@ -1,7 +1,7 @@
 .. _doc--payment--prerequisites--wirecard:
 
 Prerequisites for Wirecard Integration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================
 
 .. begin
 
@@ -26,7 +26,7 @@ Now you are ready to accept card payments via Wirecard.
 .. _doc--payment--prerequisites--wirecard-testing:
 
 Test Wirecard Integration
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 When you set up a Wirecard integration for the first time and would like to check how payment via Wirecard payment methods works, you can use the Wirecard :ref:`Demo Mode <doc--payment--prerequisites--wirecard-testing-demo>`.
 
@@ -35,7 +35,7 @@ To troubleshoot the integration issues or demonstrate the payment process, you c
 .. _doc--payment--prerequisites--wirecard-testing-demo:
 
 Demo Mode
-"""""""""
+^^^^^^^^^
 
 In the demo mode, transactions created for the OroCommerce checkout are never sent to the financial institution for processing. All communications take place only between you OroCommerce shop and a Wirecard server.
 
@@ -48,7 +48,7 @@ For demo credentials and more information about the demo mode, see `Wirecard Dem
 .. _doc--payment--prerequisites--wirecard-testing-test:
 
 Test Mode
-"""""""""
+^^^^^^^^^
 
 In the test mode, the transaction information is sent to the financial institution, however, it reaches only a test server/area provided by the financial institution and actual money transfer does not take place.
 
@@ -59,7 +59,7 @@ For testing credentials and more information about the test mode, see `Wirecard 
 .. _doc--payment--prerequisites--wirecard-testing-test-enable:
 
 Enable the Test Mode
-####################
+~~~~~~~~~~~~~~~~~~~~
 
 To enable the test mode, complete the following:
 
@@ -69,6 +69,6 @@ To enable the test mode, complete the following:
 
 3. On the integration edit page, provide the testing credentials if required, find the **Test Mode** check box and select it.
 
-4. Click :guilabel:`Save & Close`.
+4. Click **Save and Close**.
 
 

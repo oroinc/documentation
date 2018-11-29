@@ -142,7 +142,7 @@ To add a new simple product and make it available in the master catalog (for int
 
 14. Review translation rules for a product name, URL slug, description, and short description.
 
-    To enter translation manually, click |IcTranslate|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
+    To enter translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
 
     .. image:: /user_guide/img/products/products/ProductsCreateTranslation.png
        :class: with-border

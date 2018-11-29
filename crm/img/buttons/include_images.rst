@@ -57,10 +57,6 @@ Images
 
    <i class="fa fa-undo fa-lg" aria-hidden="true"></i>
 
-.. |IcTranslate| raw:: html
-
-   <i class="fa fa-language" aria-hidden="true"></i>
-
 .. |IcTranslations| raw:: html
 
    <i class="fa fa-language" aria-hidden="true"></i>

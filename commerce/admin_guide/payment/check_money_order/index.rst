@@ -21,24 +21,30 @@ To enable check/money order payments, complete the following steps:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
 2. On the **Manage Integrations** page, click **Create Integration**.
-3. Select *Check/Money Order* for **Type**.
+
+   The following page is displayed:
 
    .. image:: /admin_guide/img/integrations/manage_integrations/check_money_order.png
       :class: with-border
 
-#. In the **Common Integration Details** section, provide the following details:
+#. In the **Basic Integration Details** section, provide the following details:
 
-   .. include:: /admin_guide/payment/payment_configuration/common_payment_integration_details.rst
-      :start-after: embedded_list
-      :end-before: end_of_embedded_list
+   * **Type** -- -Select *Check/Money Order* for **Type**.
+   * **Name** --- The payment method name that is shown as an option for payment configuration in the OroCommerce management console.
+   * **Label** --- The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
 
-#. In the **Pay To** field, enter the name of the company or a person to file the payment to.
-#. In the **Send To** field, provide directions and the address to send the check or money order to.
+     .. note:: It may not include the payment processor name if you want to hide it from the buyers. For example, you can enter 'Credit Card Payments' if you have a single payment method configured for processing credit cards.
 
-   This information will be shared with the customer together with other payment instructions at checkout.
+   * **Short label** --- The payment method name/label that is shown in the order details in the OroCommerce management console and storefront after the order is submitted. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
 
-#. Set **Status** to *Active* to enable the integration.
-#. Click **Save**.
+   * **Pay To** --- Provide the name of the company or a person to file the payment to.
+   * **Send To** --- Provide directions and the address to send the check or money order to.
+
+     This information is shared with the customer together with other payment instructions at checkout.
+
+   * **Status** --- Set the status to *Active* to enable the integration.
+
+#. Click **Save and Close**.
 
 Next, set up a payment rule that enables this payment method for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 

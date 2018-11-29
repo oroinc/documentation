@@ -37,7 +37,7 @@ To add a consent landing page to a web catalog content node:
     
    * **Titles** --- Provide the name for the consent and translate it into the languages supported in your OroCommerce configuration. 
 
-     To manage title translations, click |IcTranslate| next to the **Titles** box and follow the guidance :ref:`in the Translations and Localizations section <localization--localization>`.
+     To manage title translations, click |IcTranslations| next to the **Titles** box and follow the guidance :ref:`in the Translations and Localizations section <localization--localization>`.
 
    * **Content** --- Provide the consent description. The text that you enter will be displayed to customers in the storefront.
 

@@ -25,19 +25,24 @@ Enable Payment Terms Integration
 To expose payment terms as a payment method for OroCommerce orders and quotes, enable payment using payment terms:
 
 1. Navigate to **System > Integrations > Manage Integrations** in the main menu.
-2. Click **Create Integration** and select Payment Terms as the integration type:
+2. Click **Create Integration**.
+#. In the **Basic Information** section, provide the following information:
 
    .. image:: /admin_guide/img/integrations/manage_integrations/payment_terms.png
       :class: with-border
 
-#. In the **Common Integration Details**, provide the following details:
+   * **Type** ---  Select *Payment Terms*.
+   * **Name** --- The payment method name that is shown as an option for payment configuration in the OroCommerce management console.
+   * **Label** --- The payment method name/label displayed as a payment option for the buyer in the OroCommerce storefront during the checkout. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
 
-   .. include:: /admin_guide/payment/payment_configuration/common_payment_integration_details.rst
-      :start-after: embedded_list
-      :end-before: end_of_embedded_list
+     .. note:: It may not include the payment processor name if you want to hide it from the buyers. For example, you can enter 'Credit Card Payments' if you have a single payment method configured for processing credit cards.
 
-#. Set status to **Active** to enable the integration.
-#. Click **Save**.
+   * **Short label** --- The payment method name/label that is shown in the order details in the OroCommerce management console and storefront after the order is submitted. To translate the label into other languages, click on the |IcTranslations| icon next to the field.
+
+   * **Status**  --- Set the status to **Active** to enable the integration.
+   * **Default Owner** --- A user who is responsible for this integration and manages it.
+
+#. Click **Save and Close**.
 
 Next, set up a :ref:`payment rule <sys--payment-rules>` that enables this payment method for all or some customer orders, create individual payment terms based on the sales agreement with your customers to cover all the agreed payment terms/options, and bind your customers to their respective payment term. You may use only one payment term per customer.
 

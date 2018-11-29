@@ -36,7 +36,7 @@ This section provides links to the online documentation for the latest OroCommer
                    <li><a href="current/user-guide/marketing-web-catalog">Web Catalogs</a></li>
                    <li><a href="current/user-guide/system/websites">Websites</a></li>
                    <li><a href="current/user-guide/marketing-landing-pages">Landing Page</a></li>
-                   <li><a href="current/user-guide/marketing-content-block">Content Block</a></li>
+                   <li><a href="current/user-guide/marketing-content-blocks">Content Block</a></li>
                 </ul>
           </div>
       </div>

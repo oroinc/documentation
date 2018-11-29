@@ -69,7 +69,9 @@ To troubleshoot the integration issues or demonstrate the payment process, you c
 Test Mode
 ^^^^^^^^^
 
-Set up an integration using the API Login ID and keys generated for your actual Authorize.net account. Enable the **Test mode** option to inform the system that you would like only to test the connection to Authorize.Net.
+Set up an integration using the API Login ID and keys generated for your actual Authorize.Net account. Enable the **Test mode** option to inform the system that you would like only to test the connection to Authorize.Net.
+
+.. warning:: *Test mode* implies that a `sandbox account <https://sandbox.authorize.net/>` is used, not live authorize.net account in test mode.
 
 Transactions made in the test mode are not sent to a financial institution for processing (i.e. actual money transfer does not take place). These transactions are not stored by the payment gateway and do not appear in search results and reports. Returned transaction ID is zero.
 
