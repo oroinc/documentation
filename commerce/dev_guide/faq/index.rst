@@ -1,3 +1,5 @@
+.. _dev-faqs:
+
 Frequently Asked Questions (FAQs)
 =================================
 
@@ -5,6 +7,8 @@ This section is aimed to provide answers to common questions and help Oro develo
 
 .. contents:: :local:
     :depth: 1
+
+.. _dev-faqs-fix-ui-label-in-column:
 
 How to fix the UI label of a column?
 --------------------------------------

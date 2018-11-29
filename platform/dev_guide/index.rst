@@ -11,6 +11,8 @@ The guide groups reference information on all OroPlatform features, describing a
 
 * :ref:`Application Framework <dev-guide-application-web-framework>`: Describes the functionality, which determines the application structure and how different application segments interact with each other.
 
+* :ref:`Translations and Localization <dev-translation>`: Describes the ways of translating content (text) in Oro applications.
+
 * :ref:`System Components <dev-guide-system>`: Describes components that ensure interaction between a PHP application and external systems (file system, databases, etc.)
    * :doc:`/dev_guide/system/websockets/index`
    * :doc:`/dev_guide/system/cron_jobs/index`
@@ -39,6 +41,7 @@ If you have searched for an answer with no luck, we can help you with your techn
    dev_practice/index
    web_framework/index
    system/index
+   translations/index
 
 ..    application/index
 ..    entity_management/index
