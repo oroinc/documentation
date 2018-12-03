@@ -10,7 +10,7 @@ OroPlatform is an open-source platform made for rapid application development of
 
     <div class="guideline__item" >
        <div style="text-align: center">
-          <a href="current/install_upgrade">
+          <a href="current/install-upgrade">
              <h3><i class="guideline__icon fa fa-cogs"></i><br>
              Installation Guide</h3></a>
        </div>
@@ -78,9 +78,8 @@ OroPlatform is an open-source platform made for rapid application development of
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                  <li><a href="current/community/issues/issue">Report an Issue</b></a></li>
-                  <li><a href="current/community/issues/security">Report Security Issue</b></a></li>
-                  <li><a href="current/community/issues/translation">Report Translation Issue</a></li>
+                  <li><a href="current/community/issues">Report an Issue</b></a></li>
+                  <li><a href="current/community/issues/issue-security-report">Report Security Issue</b></a></li>
                   <li><a href="current/community/issues/documentation">Report Documentation Issue</a></li>
                </ul>
           </div>
@@ -108,3 +107,7 @@ OroPlatform is an open-source platform made for rapid application development of
    dev_cookbook/index
    community/index
    system_requirements
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

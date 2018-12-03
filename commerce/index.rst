@@ -34,22 +34,24 @@ This section provides links to the online documentation for the latest OroCommer
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                    <li><a href="current/user-guide/marketing-web-catalog">Web Catalogs</a></li>
-                   <li><a href="current/user-guide/system/websites">Websites</a></li>
-                   <li><a href="current/user-guide/marketing-landing-pages">Landing Page</a></li>
-                   <li><a href="current/user-guide/marketing-content-blocks">Content Block</a></li>
+                   <li><a href="current/user-guide/master-catalog">Master Catalog</a></li>
+                   <li><a href="current/user-guide/marketing-landing-pages">Landing Pages</a></li>
+                   <li><a href="current/user-guide/marketing-content-blocks">Content Blocks</a></li>
                 </ul>
           </div>
       </div>
       <div class="guideline__item" >
           <div style="text-align: center">
-            <h3><a href="current/user-guide/customers">
-            <i class="guideline__icon fa fa-user-plus"></i><br>Customer <br>Management</a></h3>
+            <a href="current/user-guide/customers">
+                <h3><i class="guideline__icon fa fa-user-plus"></i><br>Customer <br>Management</h3>
+            </a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                    <li><a href="current/user-guide/customers/customer-groups">Customer Groups</a></li>
                    <li><a href="current/user-guide/customers/customers">Customers</a></li>
                    <li><a href="current/user-guide/customers/customer-users">Customer Users</a></li>
+                   <li><a href="current/user-guide/consents">GDPR Compliance</a></li>
                 </ul>
           </div>
       </div>
@@ -66,10 +68,10 @@ This section provides links to the online documentation for the latest OroCommer
                    <li><a href="current/user-guide/shopping-lists">Shopping Lists</a></li>
                    <li><a href="current/user-guide/quotes">Quotes</a></li>
                    <li><a href="current/user-guide/orders">Orders</a></li>
-                   <li><a href="current/user-guide/shipping">Shipping</a></li>
-                   <li><a href="current/user-guide/payment">Payment</a></li>
-                   <li>Guest Checkout</li>
-                </ul>
+                   <li><a href="current/admin-guide/shipping">Shipping</a></li>
+                   <li><a href="current/admin-guide/payment">Payment</a></li>
+                   <li><a href="current/admin-guide/landing-commerce/sales/checkout/guest-access#configure-guest-checkout">Guest Checkout</a></li>
+               </ul>
           </div>
       </div>
       <div class="guideline__item" >
@@ -79,24 +81,26 @@ This section provides links to the online documentation for the latest OroCommer
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
              <ul class="guideline__list">
                    <li><a href="current/user-guide/marketing-promotions">Promotions</a></li>
-                   <li><a href="current/user-guide/products/featured">Featured Products</a></li>
-                   <li><a href="current/user-guide/products/new-arrivals">New Arrivals</a></li>
-                   <li><a href="current/user-guide/products/product-brand">Brands</a></li>
-                   <li><a href="current/user-guide/segments">Segments</a></li>
+                   <li><a href="current/user-guide/marketing-coupons">Coupons</a></li>
+                   <li><a href="current/user-guide/products/manage-look">Highlight and Illustrate Products</a></li>
+                   <li><a href="current/user-guide/products/brand">Brands</a></li>
+                   <li><a href="current/business-intelligence/business-intelligence-segments">Segments</a></li>
+                   <li><a href="current/business-intelligence/reports">Reports</a></li>
                 </ul>
          </div>
       </div>
       <div class="guideline__item" >
           <div style="text-align: center">
-            <h3><a href="current/user-guide/marketing">
-            <i class="guideline__icon fa fa-send-o"></i><br>Marketing <br>Automation</a></h3>
+            <a href="current/user-guide-marketing-tools">
+                <h3><i class="guideline__icon fa fa-send-o"></i><br>Marketing <br>Automation</h3>
+            </a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a href="current/user-guide/marketing/marketing-lists">Marketing Lists</a></li>
-                     <li><a href="current/user-guide/marketing/marketing-campaigns">Marketing Campaigns</a></li>
-                     <li><a href="current/user-guide/marketing/email-campaigns">Email Campaigns</a></li>
-                     <li><a href="current/user-guide/marketing/marketing-tracking-website-records">Website Tracking</a></li>
+                     <li><a href="current/user-guide-marketing-tools/automation/marketing-lists">Marketing Lists</a></li>
+                     <li><a href="current/user-guide-marketing-tools/automation/marketing-campaigns">Marketing Campaigns</a></li>
+                     <li><a href="current/user-guide-marketing-tools/automation/email-campaigns">Email Campaigns</a></li>
+                     <li><a href="current/user-guide-marketing-tools/tracking">Tracking Websites</a></li>
                   </ul>
           </div>
       </div>
@@ -155,12 +159,12 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                   <li><a href="current/admin-guide/optimize-server-compression-and-caching">Web Server Performance</a></li>
-                   <li><a href="current/admin-guide/price-list-sharding">Price List Sharding</a></li>
-                   <li><a href="current/admin-guide/optimize-index-and-price-calculation">Optimize Indexation</a></li>
-                   <li><a href="current/admin-guide/package-manager">Extensions and Package Manager</a></li>
-                   <li><a href="current/admin-guide/processes">Processes</a></li>
-                   <li><a href="current/admin-guide/jobs">Job Execution</a></li>
+                   <li><a href="current/install-upgrade/recommendations/optimize-performance">Web Server Performance</a></li>
+                   <li><a href="current/admin-guide/pricing/price-list-sharding">Price List Sharding</a></li>
+                   <li><a href="current/admin-guide/pricing/optimize-index-and-price-calculation">Optimize Indexation</a></li>
+                   <li><a href="current/dev-guide/install-upgrade-and-patch">Extension and Patch Installation</a></li>
+                   <li><a href="current/admin-guide/monitoring/processes">Processes</a></li>
+                   <li><a href="current/admin-guide/monitoring/jobs">Job Execution</a></li>
                </ul>
           </div>
       </div>
@@ -172,13 +176,13 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/user-guide/system/commerce-configuration">Commerce</a></li>
-                   <li><a href="current/user-guide/marketing/configuration">Marketing</a></li>
-                   <li><a href="current/user-guide/system/websites">Website</a></li>
-                   <li><a href="current/user-guide/system/localization">Localization</a></li>
-                   <li><a href="current/user-guide/system/workflows">Workflows</a></li>
-                   <li><a href="current/user-guide/system/menu">Menu</a></li>
-                   <li><a href="current/user-guide/system/monitoring">Monitoring</a></li>
+                   <li><a href="current/admin-guide/landing-commerce">Commerce</a></li>
+                   <li><a href="current/admin-guide/landing-marketing">Marketing</a></li>
+                   <li><a href="current/admin-guide/websites">Websites</a></li>
+                   <li><a href="current/admin-guide/localization">Localization</a></li>
+                   <li><a href="current/admin-guide/workflows">Workflows</a></li>
+                   <li><a href="current/admin-guide/menu">Menu</a></li>
+                   <li><a href="current/admin-guide/monitoring">Monitoring</a></li>
                </ul>
          </div>
       </div>
@@ -190,9 +194,9 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                   <li><a href="current/dev-guide/basics/frontend-architecture">OroPlatform Architecture</a></li>
+                   <li><a href="current/dev-guide/basics">OroPlatform Architecture</a></li>
                    <li><a href="current/dev-guide/extend-and-customize">Customizing Features</a></li>
-                   <li><a href="current/dev-guide/theme/layout">Customizing a Theme</a></li>
+                   <li><a href="current/dev-guide/front-ui">Customizing a Theme</a></li>
                    <li><a href="current/dev-guide/other">How to...</a></li>
                </ul>
          </div>
