@@ -38,8 +38,8 @@ User Guides
             <a class="reference internal" href="user-guide-marketing-tools/"><h3 style="text-align:center"><i class="guideline__icon fa fa-user-plus fa-2x" style="color:#FFC221"></i><br />Marketing Guide</h3></a>
             <ul class="guideline__list simple">
                 <li><a class="reference internal" href="user-guide-marketing-tools/automation/marketing-campaigns/">Campaigns</a></li>
-                <li><a class="reference internal"  href="user-guide-marketing-tools/automation/marketing-lists/">Marketing Lists</a></li>
-                <li><a class="reference internal"  href="user-guide-marketing-tools/automation/email-campaigns/">Email Campaigns</a></li>
+                <li><a class="reference internal" href="user-guide-marketing-tools/automation/marketing-lists/">Marketing Lists</a></li>
+                <li><a class="reference internal" href="user-guide-marketing-tools/automation/email-campaigns/">Email Campaigns</a></li>
                 <li><a class="reference internal" href="user-guide-marketing-tools/integrated/">Using dotmailer and MailChimp</a></li>
                 <li><a class="reference internal" href="user-guide-marketing-tools/tracking/">Website Tracking</a></li>
                 <li><a class="reference internal" href="user-guide-marketing-tools/magento/">Marketing Magento Store</a></li>
@@ -54,22 +54,21 @@ Administrator Guide
 
     <div class="guideline">
         <div class="guideline__item">
-            <a class="reference internal" href="admin-guide/"><h3 style="text-align:center"><i class="guideline__icon fa fa-cog fa-2x" style="color:#FFC221"></i><br />Users and Roles</h3></a>
+            <a class="reference internal" href="admin-guide/"><h3 style="text-align:center"><i class="guideline__icon fa fa-cog fa-2x" style="color:#FFC221"></i><br />Administration</h3></a>
             <ul class="guideline__list simple">
-                <li><a class="reference internal" href="admin-guide/security/user-settings/">Login and Password Policy</a></li>
-                <li><a class="reference internal" href="admin-guide/security/access-role-management">Access and Role Management</a></li>
-                <li><a class="reference internal" href="admin-guide/user-management/user-management-overview/">User Management</a></li>
-                <li><a class="reference internal" href="admin-guide/security/data-audit">Data Audit</a></li>
-                </li>
+                <li><a class="reference internal" href="admin-guide/landing-system-configuration/general-setup-sysconfig/user-settings">Login and Password Policy</a></li>
+                <li><a class="reference internal" href="admin-guide/user-management">User, Role and Access Management</a></li>
+                <li><a class="reference internal" href="admin-guide/monitoring">Monitoring and Healthcheck</a></li>
+                <li><a class="reference internal" href="admin-guide/monitoring/security-data-audit">Data Audit</a></li>
             </ul>
         </div>
         <div class="guideline__item">
-            <a class="reference internal" href="admin-guide/"><h3 style="text-align:center"><i class="guideline__icon fa fa-cog fa-2x" style="color:#FFC221"></i><br />System Configuration</h3></a>
+            <a class="reference internal" href="admin-guide/landing-system-configuration"><h3 style="text-align:center"><i class="guideline__icon fa fa-cog fa-2x" style="color:#FFC221"></i><br />System Configuration</h3></a>
             <ul class="guideline__list simple">
-                <li><a class="reference internal" href="admin-guide/app-look-feel/">Application Look and Feel</a></li>
+                <li><a class="reference internal" href="admin-guide/landing-system-configuration/general-setup-sysconfig">Application Look and Feel</a></li>
                 <li><a class="reference internal" href="admin-guide/email/">Email Configuration</a></li>
-                <li><a class="reference internal" href="admin-guide/sales-tools_config/">Sales Tools Configuration</a></li>
-                <li><a class="reference internal" href="admin-guide/marketing-tools-config/">Marketing Tools Configuration</a></li>
+                <li><a class="reference internal" href="admin-guide/multi-currency">Currency Settings</a></li>
+                <li><a class="reference internal" href="admin-guide/landing-marketing">Marketing Tools Configuration</a></li>
                 <li><a class="reference internal" href="admin-guide/integrations/">Integrations</a></li>
             </ul>
         </div>
@@ -78,7 +77,7 @@ Administrator Guide
             <ul class="guideline__list simple">
                 <li><a class="reference internal" href="admin-guide/op-structure/">Architecture Overview</a></li>
                 <li><a class="reference internal" href="admin-guide/entities/">Entities Management</a></li>
-                <li><a class="reference internal" href="admin-guide/system">System Tools</a></li>
+                <li><a class="reference internal" href="admin-guide/menu">Menus Configuration</a></li>
                 <li><a class="reference internal" href="user-guide-business-intelligence">Business Intelligence</a></li>
             </ul>
         </div>
@@ -91,15 +90,15 @@ Developer's Guide
 
     <div class="guideline">
         <div class="guideline__item">
-            <a class="reference internal" href="dev-guide"><h3 style="text-align:center"><i
+            <a class="reference internal" href="dev-guide/"><h3 style="text-align:center"><i
                     class="guideline__icon fa fa-book fa-2x" style="color:#FFC221"></i><br/>Getting Started</h3></a>
             <ul class="guideline__list">
                 <li><a class="reference internal" href="dev-guide/getting-started-book/configuration/">Configuration</a>, <a
-                        class="reference internal" href="dev-guide/localization">localization</a>, and <a class="reference internal" href="dev-guide/security">security</a>,
-                    and <a class="reference internal" href="dev-guide/customization">customization</a></li>
+                        class="reference internal" href="dev-guide/getting-started-book/localization">localization</a>, and <a class="reference internal" href="dev-guide/getting-started-book/security">security</a>,
+                    and <a class="reference internal" href="dev-guide/custom-application">customization</a></li>
                 <li><a class="reference internal" href="dev-guide/web-api">Using Web Services API</a></li>
-                <li><a class="reference internal" href="dev-guide/book/scale-nodes">Scaling</a> Oro application</li>
-                <li><a class="reference internal"  href="dev-guide/reference">Annotation and Configuration Format Reference</a></li>
+                <li><a class="reference internal" href="dev-guide/scale-nodes">Scaling</a> Oro application</li>
+                <li><a class="reference internal" href="reference">Annotation and Configuration Format Reference</a></li>
             </ul>
     
             </p>
@@ -112,7 +111,7 @@ Developer's Guide
             <p>This section provides a series of articles with more detailed information for developers and integrators:
     
             <ul class="guideline__list">
-                <li><a class="reference internal" href="dev-guide/cookbook/entities">Entity customization</a></li>
+                <li><a class="reference internal" href="dev-guide/entities">Entity customization</a></li>
                 <li><a class="reference internal" href="dev-guide/cookbook/how-to-install-extension-from-command-line">Extension
                     installation</a></li>
                 <li><a class="reference internal" href="dev-guide/cookbook/how-to-upgrade-to-new-version">Upgrade</a>
@@ -132,8 +131,7 @@ Developer's Guide
     </div>
     
     <div style="float: none;margin: 0 auto;width: 100%;height:100%">
-        <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-flag fa-2x"
-                                                                style="color:#FFC221"></i> Support and Contribution</h3></a>
+        <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-flag fa-2x" style="color:#FFC221"></i> Support and Contribution</h3></a>
         <p>Join Oro community and contribute to the open-source OroCRM Community Edition. Check out the <a href="community">Community Guide</a>.</p>
     
     </div>
