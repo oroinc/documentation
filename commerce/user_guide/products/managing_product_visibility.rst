@@ -48,9 +48,14 @@ The following table summarizes visibility options per website:
 
 
 .. image:: /user_guide/img/products/products/product_visibility/product_visibility.png
-   :align: center
+   :alt: A table that summarizes visibility options per website
 
-Note that  the'config' visibility type sets system-wide visibility for products and categories for existing customers.
+The following schema illustrates all possible fallbacks where the solid lines define the fallbacks set by default.
+
+.. image:: /user_guide/img/products/products/product_visibility/product_visibility_fallbacks.png
+   :alt: A schema that illustrates all possible fallbacks
+
+.. note:: Keep in mind that the *config* visibility type sets system-wide visibility for products and categories for existing customers.
 
 
 Navigation to Visibility Settings
@@ -59,17 +64,14 @@ Navigation to Visibility Settings
 **In Product**: Navigate to **Products > Products** in the main menu, select a product to customize its visibility, and click **Manage visibility** on the top right (product menu).
 
 .. image:: /user_guide/img/products/products/product_visibility/ProductManageVisibility.png
-	:align: center
 
 **In Category**: Navigate to **Products > Master Catalog** in the main menu, select a category on the left, and scroll to the **Visibility** section.
 
 .. image:: /user_guide/img/products/products/product_visibility/CategoryVisibility.png
-	:align: center
 
 **In System Configuration**: Navigate to **System > Configuration** in the main menu. Select **Commerce > Customer > Visibility** on the left.
 
 .. image:: /user_guide/img/products/products/product_visibility/ConfigVisibility.png
-	:align: center
 
 Default Settings
 ~~~~~~~~~~~~~~~~
