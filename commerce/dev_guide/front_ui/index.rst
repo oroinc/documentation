@@ -39,6 +39,11 @@ many storefront appearance customization tasks can be performed by changing the 
 
 Please, refer to :ref:`CSS and Images <dev-guide-css>` section for more details.
 
+Storefront Customization
+------------------------
+
+Examples of how to use technologies used in the storefront in concrete customization tasks are provided in the :ref:`Storefront Customization <storefront_customization_guide>` section.
+
 ..  todo
 
     Javascript
@@ -81,15 +86,18 @@ Please, refer to :ref:`CSS and Images <dev-guide-css>` section for more details.
 .. _`OroPlatform`: https://oroinc.com/oroplatform/doc/current/
 .. _`Symfony templating`: https://symfony.com/doc/current/templating.html
 
-Further Reading
----------------
+------------------------
+
+**Further Reading:**
 
 .. toctree::
     :includehidden:
     :titlesonly:
     :maxdepth: 1
 
-    storefront_customization_guide/index
     layouts/index
     theming/index
     css/index
+    storefront_customization_guide/index
+
+- Slideshare: `Using Oro Layouts <https://www.slideshare.net/AndreyYatsenco/using-oro-layouts>`_

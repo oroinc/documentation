@@ -1,21 +1,26 @@
 .. _storefront_customization_guide:
 
-Storefront Customization Guide
-==============================
+Storefront Customization
+========================
 
-Storefront Customization Guide provides recipes for most frequent OroCommerce storefront customization tasks.
+The Storefront Customization topic provides recipes for most frequent OroCommerce storefront customization tasks.
 
-.. note:: In this guide we assume that you have already :ref:`set up development environment <dev-guide-development-practice-setup-dev-env>`.
+.. note:: Before proceeding with this topic, make sure you have :ref:`set up the development environment <dev-guide-development-practice-setup-dev-env>`,
+    including creating your own custom bundle.
 
-To adapt the appearance of the default OroCommerce storefront to the design that suits your company, follow the links below. You will learn how to change the default logo, add your contact information details and policies, change the overall look and feel of the website:
+    A **priority** parameter of your bundle should be greater than **210** as the bundle has to be loaded after all commerce application bundles.
+
+Follow the links below to learn how to adapt the appearance of the default OroCommerce storefront to the design that suits your company:
+
+.. such as changing the default logo, add your contact information details and policies, change the overall look and feel of the website:
 
 #. :ref:`Understand Storefront Templating <dev-guide-front-ui>`
 #. :ref:`Create a Storefront Theme <dev-guide-layouts-theming-definition>`
+#. Change Corporate Identity
+    * :ref:`Replace the Default Logo and Favicon <dev-cookbook-storefront-customization-replace-logo-and-favicon>`
+    * :ref:`Change the Color Scheme <dev-cookbook-front-ui-css-color-scheme>`
+    * :ref:`Change Fonts and Typography <dev-cookbook-front-ui-css-fonts>`
 
-.. #. :ref:`Change the Corporate Identity <storefront_customization_guide_change_identity>`
-    * :ref:`Change the Logo <storefront_customization_guide_change_logo>`
-    * :ref:`Change the color scheme <storefront_customization_guide_change_company_name>`
-    * :ref:`Change fonts <storefront_customization_guide_change_company_name>`
 .. #. :ref:`Change the Homepage <storefront_customization_guide_change_homepage>` blocks
     * :ref:`Configure the a Main Slider <storefront_customization_guide_change_main_slider>`
     * :ref:`Configure the Top Tile Menu <storefront_customization_guide_change_top_tile_menu>`
@@ -35,8 +40,7 @@ To adapt the appearance of the default OroCommerce storefront to the design that
     :maxdepth: 2
     :hidden:
 
-..    change_identity
-    change_homepage
+..    change_homepage
     configure_product_details_page
     change_menu
     modify_header

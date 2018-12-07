@@ -1,17 +1,31 @@
 .. _dev-cookbook-front-ui-css-fonts:
 
-How to Change Fonts and Typography in Storefront
-================================================
+How to Change Fonts and Typography in the Storefront
+====================================================
 
-To disable all ORO fonts, override the ``$theme-fonts`` variable and set
-``map`` empty;
+.. contents:: :local:
+   :depth: 1
+
+.. note:: We assume that you are making all customizations in your custom ``AppBundle`` (placed in the folder ``src/AppBundle``).
+
+.. note:: You have to insert this code into your own **styles.scss** file as described in
+    the :ref:`CSS Files Structure <dev-guide-css-theme-structure>` article.
+
+Disable and Override Fonts
+--------------------------
+
+To disable all Oro fonts, override the ``$theme-fonts`` variable and set ``map`` to *empty*.
 
 .. code:: scss
 
     $theme-fonts: ();
 
-To update fonts, merge ``$theme-fonts`` with your
-``$theme-custom-fonts``
+Update Fonts
+------------
+
+To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
+
+.. note:: You have to put the font files in your bundle public folder beforehand, e.g. ``Resources/public/default/fonts``.
 
 .. code:: scss
 
@@ -20,12 +34,12 @@ To update fonts, merge ``$theme-fonts`` with your
             'family': 'Lato',
              'variants': (
                  (
-                     'path': '#{$global-url}/orofrontend/default/fonts/lato/lato-regular-webfont',
+                     'path': '#{$global-url}/app/default/fonts/lato/lato-regular-webfont',
                      'weight': 400,
                      'style': normal
                  ),
                  (
-                  'path': '#{$global-url}/orofrontend/default/fonts/lato/lato-bold-webfont',
+                  'path': '#{$global-url}/app/default/fonts/lato/lato-bold-webfont',
                   'weight': 700,
                   'style': normal
                  )
@@ -35,7 +49,7 @@ To update fonts, merge ``$theme-fonts`` with your
             'family': 'Roboto',
             'variants': (
                 (
-                    'path': '#{$global-url}/orofrontend/default/fonts/roboto/roboto-regular-webfont',
+                    'path': '#{$global-url}/app/default/fonts/roboto/roboto-regular-webfont',
                     'weight': 700,
                     'style': normal
                 )
@@ -45,51 +59,56 @@ To update fonts, merge ``$theme-fonts`` with your
 
     $theme-fonts: map_merge($theme-fonts, $theme-custom-fonts);
 
+Disable Fonts without Overriding
+--------------------------------
+
 To disable all Oro fonts without overriding them with yours:
 
-1. Set in your $theme-fonts: ();
-2. Call mixin font-face() or use-font-face();
+1. Override ``$theme-fonts: ();``
+2. Call mixin ``font-face()`` or ``use-font-face();``
 
-.. code:: scss
+    .. code:: scss
 
-    $theme-fonts: ();
+        $theme-fonts: ();
 
-    // Using font-face
-    @include font-face($font-family, $file-path, $font-weight, $font-style);
+        // Using font-face
+        @include font-face($font-family, $file-path, $font-weight, $font-style);
 
-    // Using use-font-face
-    $your-fonts: (
-        'main': (
-            'family': '...',
-             'variants': (
-                 (
-                     'path': '..',
-                     'weight': normal,
-                     'style': normal
+        // Using use-font-face
+        $your-fonts: (
+            'main': (
+                'family': '...',
+                 'variants': (
+                     (
+                         'path': '..',
+                         'weight': normal,
+                         'style': normal
+                     ),
+                     (
+                      'path': '...',
+                      'weight': 700,
+                      'style': normal
+                     )
                  ),
-                 (
-                  'path': '...',
-                  'weight': 700,
-                  'style': normal
-                 )
-             ),
-        ),
-        'secondary': (
-            'family': '...',
-            'variants': (
-                (
-                    'path': '...',
-                    'weight': normal,
-                    'style': normal
+            ),
+            'secondary': (
+                'family': '...',
+                'variants': (
+                    (
+                        'path': '...',
+                        'weight': normal,
+                        'style': normal
+                    )
                 )
             )
-        )
-    );
+        );
 
-    @include use-font-face($your-fonts);
+        @include use-font-face($your-fonts);
 
-    ``@mixin use-font-face`` call dynamically ``font-face`` with
-    ``$your-fonts``.
+    @mixin ``use-font-face`` call dynamically ``font-face`` with ``$your-fonts``.
+
+Change Font Size
+----------------
 
 To change the font size and line-height, override the following variables:
 
@@ -110,5 +129,10 @@ To change the font size and line-height, override the following variables:
     $base-font-size--xl: 26px;
     $base-line-height: 1.35;
 
-.. note:: You have to insert this code into your own **styles.scss** file as described in
-    the :ref:`CSS Files Structure <dev-guide-css-theme-structure>` article.
+.. important:: In all cases above you have to run the following console commands to publish the changes:
+
+                .. code-block:: bash
+
+                    php bin/console cache:clear
+                    php bin/console oro:assets:install
+                    php bin/console assetic:dump

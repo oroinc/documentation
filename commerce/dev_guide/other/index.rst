@@ -19,3 +19,5 @@ This section aggregates uncategorized information that might be usefull for Oro 
    layouts/index
 
    front_ui_css/index
+
+   storefront_customization/index

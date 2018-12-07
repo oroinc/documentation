@@ -6,6 +6,8 @@ Theming
 A **layout theme** is a collection of files that declares a visual
 presentation for a group of pages. You can think of a **theme** as the skin for your application.
 
+.. note:: Please, refer to the :ref:`OroCommerce Design: Theme <configuration--commerce--design--theme>` Admin Guide section for description on how to switch the storefront theme from the management console UI.
+
 Files that the theme consists of, are :ref:`layout updates <dev-guide-layouts-layout-updates>`,
 **styles**, **scripts** and anything else related to the look and feel of the page.
 

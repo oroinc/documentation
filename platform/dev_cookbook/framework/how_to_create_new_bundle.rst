@@ -3,23 +3,25 @@
 How to Create a New Bundle
 ==========================
 
-To create a new bundle, you first need to specify a name and a namespace for it. Symfony framework provides
-`best practices for bundle structure and bundle name`_ and we highly recommend to follow them.
+According to the :ref:`application directory structure <architecture-oro-php-application-structure>`, your custom bundle should be placed in the ``src/`` folder.
 
-.. _best practices for bundle structure and bundle name: http://symfony.com/doc/2.6/cookbook/bundles/best_practices.html#bundle-name
+To create a new bundle, first specify a name and a namespace for it.
 
-As an illustration, let us create *AcmeNewBundle* and put it under the ``Acme\Bundle\NewBundle`` namespace in the ``/src`` directory. We need to create the corresponding directory structure and the bundle file with the following content:
+As an illustration, let us create an *AppBundle* and put it under the ``AppBundle`` namespace in the ``/src`` directory (
+accordingly to the :ref:`application directory structure <architecture-oro-php-application-structure>`).
+
+We need to create the corresponding directory structure and the bundle file with the following content:
 
 .. code-block:: php
     :linenos:
 
     <?php
-    // src/Acme/Bundle/NewBundle/AcmeNewBundle.php
-    namespace Acme\Bundle\NewBundle;
+    // src/AppBundle/AppBundle.php
+    namespace AppBundle;
 
     use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-    class AcmeNewBundle extends Bundle
+    class AppBundle extends Bundle
     {
     }
 
@@ -35,11 +37,22 @@ To enable the bundle:
     .. code-block:: yaml
         :linenos:
 
-        # src/Acme/Bundle/NewBundle/Resources/config/oro/bundles.yml
+        # src/AppBundle/Resources/config/oro/bundles.yml
         bundles:
-            - Acme\Bundle\NewBundle\AcmeNewBundle
+            - AppBundle\AppBundle
+
+    or
+
+    .. code-block:: yaml
+        :linenos:
+
+        # src/AppBundle/Resources/config/oro/bundles.yml
+        bundles:
+            - { name: AppBundle\AppBundle, priority: 210 }
 
     This file provides a list of bundles to register. All such files will be automatically parsed to load the required bundles.
+
+    .. note:: Bundles with lower **priority** are loaded first.
 
 #. Regenerate the application cache using the *cache:clear* console command:
 
