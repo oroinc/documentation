@@ -17,6 +17,8 @@ OroCommerce supports the following pre-implemented integrations:
 
   - :ref:`LDAP <user-guide-ldap-integration>`: Enables uploading the existing user records into Oro applications and map LDAP user role identifiers to Oro application roles.
 
+  - :ref:`Microsoft Outlook <config-guide--integrations--ms-outlook>`: Enables automatic bi-directional synchronization of the Oro application contacts, tasks and calendar events that are available to the users with their Microsoft Outlook applications. (Available for Enterprise edition only).
+
 - Integrations that are configured at the :term:`organization <Organization>` level. These integrations enable adjustment of third-party system integration parameters (e.g. credentials, account IDs, synchronizations settings, etc.) for different organizations.
 
   These are:
@@ -45,6 +47,7 @@ OroCommerce supports the following pre-implemented integrations:
    mailchimp_configuration
    dotmailer/index
    ms_exchange/index
+   outlook/index
    embedded_forms
    zendesk_integration
    commerce_integration

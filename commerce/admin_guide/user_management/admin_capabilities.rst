@@ -175,6 +175,10 @@ Application
 
   .. image:: ../img/roles/manage_passwords.png
 
+* **Outlook Integration** --- Enables a user to download the latest version of the |oro_application| (Enterprise edition) add-in for Outlook. If :ref:`OroCRM is synchronized with Outlook <user-guide-synch-outlook>`, this add-in enables a user to synchronize contacts, tasks, and calendar events between OroCRM and the user's Outlook account. The user can also associate emails to accounts, contacts, opportunities, and cases, as well as create leads, opportunities, and cases in OroCRM that are based on emails from the Outlook sidebar.
+
+   .. image:: ../img/roles/outlook_add-in.png
+
 * **Share Data View** --- Enables a user to :ref:`share and unshare the grid views <doc-grids-actions-grid-views-share>` that they have configured.
 
   .. image:: ../img/roles/grid_share.png

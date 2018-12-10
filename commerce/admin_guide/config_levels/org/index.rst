@@ -18,7 +18,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Localization <config_guide--localization--organization-localization>`
     * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings--organization>`
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
-    * Email Configuration
+    * :ref:`Email Configuration <admin-configuration-email-configuration>`
     * :ref:`Currency <sys--config--sysconfig--general-setup--currency-organization>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
@@ -26,6 +26,7 @@ The following categories of settings are available for system configuration at o
 
     * :ref:`MS Exchange Settings <admin-configuration-ms-exchange-integration-settings>`
     * :ref:`Google Settings <admin-configuration-integrations-google>`
+    * :ref:`MS Outlook Settings <configuration--guide--system--configuration--integrations--org--ms-outlook>`
 
 * **Commerce**
 
