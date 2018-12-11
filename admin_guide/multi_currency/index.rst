@@ -163,6 +163,8 @@ necessary.
 
 To add the deleted currency back, select it from the Allowed Currencies dropdown menu and click :guilabel:`Add`.
 
+.. note:: This feature is only available in the Enterprise edition.
+
 Changing Base Currency
 ^^^^^^^^^^^^^^^^^^^^^^
 
