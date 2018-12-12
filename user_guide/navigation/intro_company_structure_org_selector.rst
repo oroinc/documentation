@@ -15,7 +15,7 @@ Californian subsidiary may have two offices - Western and Eastern. In each of th
 different directions:
 
 
-* CaliforniaTelecom
+* California Telecom
 
   * Western California
  
