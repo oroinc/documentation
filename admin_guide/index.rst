@@ -59,15 +59,15 @@ Settings in Oro application can be managed on multiple configuration levels. Thr
    <div class="guideline">
       <div class="guideline__item" >
           <div style="text-align: center">
-            <a href="current/config-levels">
+            <a class="reference internal" href="config-levels">
                 <h3><i class="guideline__icon fa fa-cogs fa-lg"></i><br>Configuration <br>Levels</h3>
             </a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/config-levels/global">Global Configuration</a></li>
-                   <li><a href="current/config-levels/org">Organization Configuration</a></li>
-                   <li><a href="current/config-levels/user">User Configuration</a></li>
+                   <li><a class="reference internal" href="config-levels/global">Global Configuration</a></li>
+                   <li><a class="reference internal" href="config-levels/org">Organization Configuration</a></li>
+                   <li><a class="reference internal" href="config-levels/user">User Configuration</a></li>
                 </ul>
           </div>
       </div>
@@ -78,8 +78,8 @@ Settings in Oro application can be managed on multiple configuration levels. Thr
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/landing-crm#configuration-guide-crm-configuration">CRM Configuration</a></li>
-                   <li><a href="current/landing-marketing#configuration-guide-marketing-configuration">Marketing Configuration</a></li>
+                   <li><a class="reference internal" href="landing-crm#configuration-guide-crm-configuration">CRM Configuration</a></li>
+                   <li><a class="reference internal" href="landing-marketing#configuration-guide-marketing-configuration">Marketing Configuration</a></li>
                 </ul>
           </div>
       </div>
@@ -99,10 +99,10 @@ This section provides a reference for the settings accessible via the **System**
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/workflows">Workflows</a></li>
-                   <li><a href="current/localization">Localization and Translations</a></li>
-                   <li><a href="current/menu">Menus Configuration</a></li>
-                   <li><a href="current/multi-currency">Multi-Currency</a></li>
+                   <li><a class="reference internal" href="workflows">Workflows</a></li>
+                   <li><a class="reference internal" href="localization">Localization and Translations</a></li>
+                   <li><a class="reference internal" href="menu">Menus Configuration</a></li>
+                   <li><a class="reference internal" href="multi-currency">Multi-Currency</a></li>
                 </ul>
           </div>
       </div>
@@ -113,10 +113,10 @@ This section provides a reference for the settings accessible via the **System**
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/integrations">Integrations</a></li>
-                   <li><a href="current/entities">Entity Management</a></li>
-                   <li><a href="current/email">Email Configuration</a></li>
-                   <li><a href="current/tags-management">Tags and Taxonomies</a></li>
+                   <li><a class="reference internal" href="integrations">Integrations</a></li>
+                   <li><a class="reference internal" href="entities">Entity Management</a></li>
+                   <li><a class="reference internal" href="email">Email Configuration</a></li>
+                   <li><a class="reference internal" href="tags-management">Tags and Taxonomies</a></li>
                 </ul>
           </div>
       </div>
