@@ -59,8 +59,7 @@ Settings in Oro application can be managed on multiple configuration levels. Thr
    <div class="guideline">
       <div class="guideline__item" >
           <div style="text-align: center">
-            <a class="reference internal" href="config-levels">
-                <h3><i class="guideline__icon fa fa-cogs fa-lg"></i><br>Configuration <br>Levels</h3>
+            <a class="reference internal" href="config-levels"><h3><i class="guideline__icon fa fa-cogs fa-lg"></i><br>Configuration <br>Levels</h3>
             </a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
