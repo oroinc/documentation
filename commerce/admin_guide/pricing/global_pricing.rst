@@ -7,9 +7,11 @@ Global Pricing Configuration
 
 Global pricing configuration helps you:
 
-* Set price precision and price rounding strategy.
+* Enable/disable the default OroCommerce pricing management system.
 
-* Configure default price lists, their priority and merge strategy to get the necessary resulting combination of prices that are shown on the websites and for the customers whenever their price list settings fall back to the system default.
+* Set the price precision and price rounding strategy.
+
+* Configure default price lists, their priority and merge strategy to get the necessary resulting combination of prices that are shown on the websites, and for the customers whenever their price list settings fall back to the system default.
 
 * Specify an offset in hours that helps launch combined price list recalculation before price change is activated.
 
@@ -30,8 +32,11 @@ To change the default global pricing settings:
 
 The **Pricing** page opens. It contains the following information:
 
-   .. image:: /admin_guide/img/configuration/catalog/pricing/pricing2.png
+   .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_sys_config.png
       :class: with-border
+      :alt: Pricing system configuration page
+
+   * **Enable Oro Pricing** --- By default, this option is enabled. When disabled, all pricing stored in and managed by the default OroCommerce pricing management system becomes hidden from the application. Disable Oro Pricing when you need to introduce a custom pricing management system for storing and fetching prices.
 
    * **Pricing Precision** --- The number of digits that are allowed in the fractional part of the price (e.g. precision of 4 enables your sales manager use prices like $10.0001).
    * **Pricing Rounding Type** --- The rounding type that is used when calculated product price has more digits in the fractional part than allowed by the **Pricing Precision** value. These are the rounding settings used for price and tax calculations that happen in shopping lists, checkout, orders, and RFQs. Please use one of the following options:
@@ -50,11 +55,13 @@ The **Pricing** page opens. It contains the following information:
 
      When the *Minimal Price* is selected as the pricing strategy, OroCommerce looks up the minimal price for various tiers of amount and the product units:
 
-     .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist.png
+     .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist_new_ui.png
+        :alt: Default price lists configuration when minimal strategy is selected
 
      When the *Merge by priority* is selected as the pricing strategy, the OroCommerce considers the price list priority and *Merge Allowed* flags to look up all the available price per units and per tiers of amount:
 
-     .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist2.png
+     .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist2_new_ui.png
+        :alt: Default price lists configuration when merge allowed is selected
 
      .. note:: Price lists with higher priority are on top.
 
