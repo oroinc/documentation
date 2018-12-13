@@ -2,7 +2,7 @@ Welcome to OroCRM Documentation
 ===============================
 
 .. OroCRM documentation provides several guides to help you understand Oro and use its capabilities as smoothly as possible, and find answers to the questions most frequently asked by the community.
- 
+
 .. note:: OroCRM comes in two editions, Community Edition (CE) and Enterprise Edition (EE) and some features described in the documentation are applicable only to EE. To learn more on difference between editions, see :ref:`OroCRM Community vs Enterprise guide <community-vs-enterprise>`.
 
 
@@ -90,26 +90,22 @@ Developer's Guide
 
     <div class="guideline">
         <div class="guideline__item">
-            <a class="reference internal" href="dev-guide/"><h3 style="text-align:center"><i
-                    class="guideline__icon fa fa-book fa-2x" style="color:#FFC221"></i><br/>Getting Started</h3></a>
+            <a class="reference internal" href="dev-guide/"><h3 style="text-align:center"><i class="guideline__icon fa fa-book fa-2x" style="color:#FFC221"></i><br/>Getting Started</h3></a>
             <ul class="guideline__list">
-                <li><a class="reference internal" href="dev-guide/getting-started-book/configuration/">Configuration</a>, <a
-                        class="reference internal" href="dev-guide/getting-started-book/localization">localization</a>, and <a class="reference internal" href="dev-guide/getting-started-book/security">security</a>,
-                    and <a class="reference internal" href="dev-guide/custom-application">customization</a></li>
+                <li><a class="reference internal" href="dev-guide/getting-started-book/configuration/">Configuration</a>, <a class="reference internal" href="dev-guide/getting-started-book/localization">localization</a>, and <a class="reference internal" href="dev-guide/getting-started-book/security">security</a>, and <a class="reference internal" href="dev-guide/custom-application">customization</a></li>
                 <li><a class="reference internal" href="dev-guide/web-api">Using Web Services API</a></li>
                 <li><a class="reference internal" href="dev-guide/scale-nodes">Scaling</a> Oro application</li>
                 <li><a class="reference internal" href="reference">Annotation and Configuration Format Reference</a></li>
             </ul>
-    
+
             </p>
-    
+
         </div>
-    
+
         <div class="guideline__item">
-            <a class="reference internal" href="dev-guide/cookbook"><h3 style="text-align:center"><i
-                    class="guideline__icon fa fa-flask fa-2x" style="color:#FFC221"></i><br/>The Cookbook</h3></a>
+            <a class="reference internal" href="dev-guide/cookbook"><h3 style="text-align:center"><i class="guideline__icon fa fa-flask fa-2x" style="color:#FFC221"></i><br/>The Cookbook</h3></a>
             <p>This section provides a series of articles with more detailed information for developers and integrators:
-    
+
             <ul class="guideline__list">
                 <li><a class="reference internal" href="dev-guide/entities">Entity customization</a></li>
                 <li><a class="reference internal" href="dev-guide/cookbook/how-to-install-extension-from-command-line">Extension
@@ -119,21 +115,19 @@ Developer's Guide
             </ul>
             </p>
         </div>
-    
+
         <div class="guideline__item">
-            <a class="reference internal" href="dev-guide/bundles"><h3 style="text-align:center"><i
-                    class="guideline__icon fa fa-puzzle-piece fa-2x" style="color:#FFC221"></i><br/>The Oro Bundles</h3></a>
+            <a class="reference internal" href="dev-guide/bundles"><h3 style="text-align:center"><i class="guideline__icon fa fa-puzzle-piece fa-2x" style="color:#FFC221"></i><br/>The Oro Bundles</h3></a>
             <p>This section contains information about OroPlatform and OroCRM bundles, overview of system capabilities they
-                introduce, and guidance and advice on customization and extension of the out-of-the box
-                capabilities.<br><br></p>
+                introduce, and guidance and advice on customization and extension of the out-of-the box capabilities.<br><br></p>
         </div>
-    
+
     </div>
-    
+
     <div style="float: none;margin: 0 auto;width: 100%;height:100%">
         <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-flag fa-2x" style="color:#FFC221"></i> Support and Contribution</h3></a>
-        <p>Join Oro community and contribute to the open-source OroCRM Community Edition. Check out the <a href="community">Community Guide</a>.</p>
-    
+        <p>Join Oro community and contribute to the open-source OroCRM Community Edition. Check out the <a class="reference internal" href="community">Community Guide</a>.</p>
+
     </div>
 
 .. toctree::
@@ -147,7 +141,7 @@ Developer's Guide
    architecture/index
 
    user_guide/index
-      
+
    user_guide_sales_tools/index
 
    user_guide_marketing_tools/index
@@ -165,4 +159,3 @@ Developer's Guide
    reference/index
 
    system_requirements
-
