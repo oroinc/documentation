@@ -19,10 +19,10 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/user-guide/products">Products</a></li>
-                   <li><a href="current/user-guide/pricing">Pricing</a></li>
-                   <li><a href="current/user-guide/inventory">Warehouses and Inventory</a></li>
-                   <li><a href="current/user-guide/taxes">Taxes</a></li>
+                   <li><a class="reference internal" href="user-guide/products">Products</a></li>
+                   <li><a class="reference internal" href="user-guide/pricing">Pricing</a></li>
+                   <li><a class="reference internal" href="user-guide/inventory">Warehouses and Inventory</a></li>
+                   <li><a class="reference internal" href="user-guide/taxes">Taxes</a></li>
                 </ul>
           </div>
       </div>
@@ -33,28 +33,29 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/user-guide/marketing-web-catalog">Web Catalogs</a></li>
-                   <li><a href="current/user-guide/system/websites">Websites</a></li>
-                   <li><a href="current/user-guide/marketing-landing-pages">Landing Page</a></li>
-                   <li><a href="current/user-guide/marketing-content-block">Content Block</a></li>
-                </ul>
+                   <li><a class="reference internal" href="user-guide/marketing-web-catalog">Web Catalogs</a></li>
+                   <li><a class="reference internal" href="user-guide/master-catalog">Master Catalog</a></li>
+                   <li><a class="reference internal" href="user-guide/marketing-landing-pages">Landing Pages</a></li>
+                   <li><a class="reference internal" href="user-guide/marketing-content-blocks">Content Blocks</a></li>
+               </ul>
           </div>
       </div>
       <div class="guideline__item" >
           <div style="text-align: center">
-            <h3><a href="current/user-guide/customers">
-            <i class="guideline__icon fa fa-user-plus"></i><br>Customer <br>Management</a></h3>
+            <a class="reference internal" href="user-guide/customers"><h3><i class="guideline__icon fa fa-user-plus"></i><br>Customer <br>Management</h3></a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/user-guide/customers/customer-groups">Customer Groups</a></li>
-                   <li><a href="current/user-guide/customers/customers">Customers</a></li>
-                   <li><a href="current/user-guide/customers/customer-users">Customer Users</a></li>
+                   <li><a class="reference internal" href="user-guide/customers/customer-groups">Customer Groups</a></li>
+                   <li><a class="reference internal" href="user-guide/customers/customers">Customers</a></li>
+                   <li><a class="reference internal" href="user-guide/customers/customer-users">Customer Users</a></li>
+                   <li><a class="reference internal" href="user-guide/consents">GDPR Compliance</a></li>
                 </ul>
           </div>
       </div>
    </div>
-   <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
+
+  <hr style="border-top: 1px dashed #fafafa;border-bottom: none">
    <div class="guideline">
       <div class="guideline__item" id="sales_marketing" >
           <div style="text-align: center">
@@ -62,13 +63,13 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/user-guide/shopping-lists">Shopping Lists</a></li>
-                   <li><a href="current/user-guide/quotes">Quotes</a></li>
-                   <li><a href="current/user-guide/orders">Orders</a></li>
-                   <li><a href="current/user-guide/shipping">Shipping</a></li>
-                   <li><a href="current/user-guide/payment">Payment</a></li>
-                   <li>Guest Checkout</li>
-                </ul>
+                   <li><a class="reference internal" href="user-guide/shopping-lists">Shopping Lists</a></li>
+                   <li><a class="reference internal" href="user-guide/quotes">Quotes</a></li>
+                   <li><a class="reference internal" href="user-guide/orders">Orders</a></li>
+                   <li><a class="reference internal" href="admin-guide/shipping">Shipping</a></li>
+                   <li><a class="reference internal" href="admin-guide/payment">Payment</a></li>
+                   <li><a class="reference internal" href="admin-guide/landing-commerce/sales/checkout/guest-access#configure-guest-checkout">Guest Checkout</a></li>
+               </ul>
           </div>
       </div>
       <div class="guideline__item" >
@@ -77,25 +78,25 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
              <ul class="guideline__list">
-                   <li><a href="current/user-guide/marketing-promotions">Promotions</a></li>
-                   <li><a href="current/user-guide/products/featured">Featured Products</a></li>
-                   <li><a href="current/user-guide/products/new-arrivals">New Arrivals</a></li>
-                   <li><a href="current/user-guide/products/product-brand">Brands</a></li>
-                   <li><a href="current/user-guide/segments">Segments</a></li>
+                   <li><a class="reference internal" href="user-guide/marketing-promotions">Promotions</a></li>
+                   <li><a class="reference internal" href="user-guide/marketing-coupons">Coupons</a></li>
+                   <li><a class="reference internal" href="user-guide/products/manage-look">Highlight Products in the Storefront</a></li>
+                   <li><a class="reference internal" href="user-guide/products/brand">Brands</a></li>
+                   <li><a class="reference internal" href="business-intelligence/business-intelligence-segments">Segments</a></li>
+                   <li><a class="reference internal" href="business-intelligence/reports">Reports</a></li>
                 </ul>
          </div>
       </div>
       <div class="guideline__item" >
           <div style="text-align: center">
-            <h3><a href="current/user-guide/marketing">
-            <i class="guideline__icon fa fa-send-o"></i><br>Marketing <br>Automation</a></h3>
+            <a class="reference internal" href="user-guide-marketing-tools"><h3><i class="guideline__icon fa fa-send-o"></i><br>Marketing <br>Automation</h3></a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a href="current/user-guide/marketing/marketing-lists">Marketing Lists</a></li>
-                     <li><a href="current/user-guide/marketing/marketing-campaigns">Marketing Campaigns</a></li>
-                     <li><a href="current/user-guide/marketing/email-campaigns">Email Campaigns</a></li>
-                     <li><a href="current/user-guide/marketing/marketing-tracking-website-records">Website Tracking</a></li>
+                     <li><a class="reference internal" href="user-guide-marketing-tools/automation/marketing-lists">Marketing Lists</a></li>
+                     <li><a class="reference internal" href="user-guide-marketing-tools/automation/marketing-campaigns">Marketing Campaigns</a></li>
+                     <li><a class="reference internal" href="user-guide-marketing-tools/automation/email-campaigns">Email Campaigns</a></li>
+                     <li><a class="reference internal" href="user-guide-marketing-tools/tracking">Tracking Websites</a></li>
                   </ul>
           </div>
       </div>
@@ -112,9 +113,9 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/frontstore-guide/getting-started">Register and Sign in</a></li>
-                   <li><a href="current/frontstore-guide/navigation">Navigation Basics</a></li>
-                   <li><a href="current/frontstore-guide/profile">Manage Your Account and Billing and Shipping Addresses</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/getting-started">Register and Sign in</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/navigation">Navigation Basics</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/profile">Manage Your Account and Billing and Shipping Addresses</a></li>
                 </ul>
           </div>
       </div>
@@ -124,10 +125,10 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/frontstore-guide/shopping-lists">Use Shopping Lists</a></li>
-                   <li><a href="current/frontstore-guide/orders">Submit an Order</a></li>
-                   <li><a href="current/frontstore-guide/rfq">Request a Quote</a></li>
-                   <li><a href="current/frontstore-guide/quotes">Submit an Order from Quote</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/shopping-lists">Use Shopping Lists</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/orders">Submit an Order</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/rfq">Request a Quote</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/quotes">Submit an Order from Quote</a></li>
                 </ul>
           </div>
       </div>
@@ -137,7 +138,7 @@ This section provides links to the online documentation for the latest OroCommer
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/frontstore-guide/users-roles">Manage Users in Your Customer Organization and Control Their Access Level</a></li>
+                   <li><a class="reference internal" href="frontstore-guide/users-roles">Manage Users in Your Customer Organization and Control Their Access Level</a></li>
                 </ul>
           </div>
       </div>
@@ -148,51 +149,45 @@ This section provides links to the online documentation for the latest OroCommer
    <div class="guideline">
       <div class="guideline__item" id="administrator" >
          <div style="text-align: center">
-            <a href="current/admin-guide">
-               <h3><i class="guideline__icon fa fa-gear"></i><br>
-               Administration</h3></a>
+            <a class="reference internal" href="admin-guide"><h3><i class="guideline__icon fa fa-gear"></i><br> Administration</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                   <li><a href="current/admin-guide/optimize-server-compression-and-caching">Web Server Performance</a></li>
-                   <li><a href="current/admin-guide/price-list-sharding">Price List Sharding</a></li>
-                   <li><a href="current/admin-guide/optimize-index-and-price-calculation">Optimize Indexation</a></li>
-                   <li><a href="current/admin-guide/package-manager">Extensions and Package Manager</a></li>
-                   <li><a href="current/admin-guide/processes">Processes</a></li>
-                   <li><a href="current/admin-guide/jobs">Job Execution</a></li>
+                   <li><a class="reference internal" href="install-upgrade/installation-quick-start-dev/service/web-server-configuration">Web Server Performance</a></li>
+                   <li><a class="reference internal" href="admin-guide/pricing/price-list-sharding">Price List Sharding</a></li>
+                   <li><a class="reference internal" href="admin-guide/pricing/optimize-index-and-price-calculation">Optimize Indexation</a></li>
+                   <li><a class="reference internal" href="dev-guide/install-upgrade-and-patch">Extension and Patch Installation</a></li>
+                   <li><a class="reference internal" href="admin-guide/monitoring/processes">Processes</a></li>
+                   <li><a class="reference internal" href="admin-guide/monitoring/jobs">Job Execution</a></li>
                </ul>
           </div>
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-            <a href="current/admin-guide">
-               <h3><i class="guideline__icon fa fa-spinner"></i><br>
-               Configuration</h3></a>
+            <a class="reference internal" href="admin-guide"><h3><i class="guideline__icon fa fa-spinner"></i><br>Configuration</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a href="current/user-guide/system/commerce-configuration">Commerce</a></li>
-                   <li><a href="current/user-guide/marketing/configuration">Marketing</a></li>
-                   <li><a href="current/user-guide/system/websites">Website</a></li>
-                   <li><a href="current/user-guide/system/localization">Localization</a></li>
-                   <li><a href="current/user-guide/system/workflows">Workflows</a></li>
-                   <li><a href="current/user-guide/system/menu">Menu</a></li>
-                   <li><a href="current/user-guide/system/monitoring">Monitoring</a></li>
+                   <li><a class="reference internal" href="admin-guide/landing-commerce">Commerce</a></li>
+                   <li><a class="reference internal" href="admin-guide/landing-marketing">Marketing</a></li>
+                   <li><a class="reference internal" href="admin-guide/websites">Websites</a></li>
+                   <li><a class="reference internal" href="admin-guide/localization">Localization</a></li>
+                   <li><a class="reference internal" href="admin-guide/workflows">Workflows</a></li>
+                   <li><a class="reference internal" href="admin-guide/menu">Menu</a></li>
+                   <li><a class="reference internal" href="admin-guide/monitoring">Monitoring</a></li>
                </ul>
          </div>
       </div>
       <div class="guideline__item" id="developer" >
          <div style="text-align: center">
-            <a href="current/dev-guide">
-            <h3><i class="guideline__icon fa fa-flask"></i><br>
-            Development</h3></a>
+            <a class="reference internal" href="dev-guide"><h3><i class="guideline__icon fa fa-flask"></i><br>Development</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                   <li><a href="current/dev-guide/basics/frontend-architecture">OroPlatform Architecture</a></li>
-                   <li><a href="current/dev-guide/extend-and-customize">Customizing Features</a></li>
-                   <li><a href="current/dev-guide/theme/layout">Customizing a Theme</a></li>
-                   <li><a href="current/dev-guide/other">How to...</a></li>
+                   <li><a class="reference internal" href="dev-guide/basics">OroPlatform Architecture</a></li>
+                   <li><a class="reference internal" href="dev-guide/extend-and-customize">Customizing Features</a></li>
+                   <li><a class="reference internal" href="dev-guide/theme">Customizing a Theme</a></li>
+                   <li><a class="reference internal" href="dev-guide/other">How to...</a></li>
                </ul>
          </div>
       </div>
@@ -201,38 +196,32 @@ This section provides links to the online documentation for the latest OroCommer
    <div class="guideline">
       <div class="guideline__item" >
          <div style="text-align: center">
-            <a href="current/community">
-               <h3><i class="guideline__icon fa fa-users"></i><br>
-               Contributing</h3></a>
+            <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-users"></i><br> Contributing</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                       <li><a href="current/community#contribute-to-the-source-code-translations-and-documentation">Source Code</a></li>
-                       <li><a href="current/community/contribute/code-ui-translations">Translation</a></li>
-                       <li><a href="current/community/contribute/documentation">Documentation</a></li>
+                       <li><a class="reference internal" href="community">Source Code</a></li>
+                       <li><a class="reference internal" href="community/contribute/code-ui-translations">Translation</a></li>
+                       <li><a class="reference internal" href="community/contribute/documentation">Documentation</a></li>
               </ul>
          </div>
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-            <a href="current/community">
-               <h3><i class="guideline__icon fa fa-flag"></i><br>
-               Support</h3></a>
-            </a>
+            <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-flag"></i><br> Support</h3></a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                  <li><a href="current/community/issues/issue">Report an Issue</b></a></li>
-                  <li><a href="current/community/issues/security">Report Security Issue</b></a></li>
-                  <li><a href="current/community/issues/translation">Report Translation Issue</a></li>
-                  <li><a href="current/community/issues/documentation">Report Documentation Issue</a></li>
+                  <li><a class="reference internal" href="community/issues/issue">Report an Issue</b></a></li>
+                  <li><a class="reference internal" href="community/issues/security">Report Security Issue</b></a></li>
+                  <li><a class="reference internal" href="community/issues/translation">Report Translation Issue</a></li>
+                  <li><a class="reference internal" href="community/issues/documentation">Report Documentation Issue</a></li>
                </ul>
           </div>
       </div>
       <div class="guideline__item" >
          <div style="text-align: center">
-         <h3><i class="guideline__icon fa fa-bullhorn"></i><br>
-               Announcements</h3></a>
+         <h3><i class="guideline__icon fa fa-bullhorn"></i><br> Announcements</h3></a>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
              <ul class="guideline__list">
@@ -277,6 +266,5 @@ This section provides links to the online documentation for the latest OroCommer
        community/index
 
        system_requirements
-
 
 
