@@ -4,10 +4,13 @@
 
 .. _user-guide--pricing-calculation:
 
-Price Calculation on the Storefront
+Price Calculation in the Storefront
 ------------------------------------
 
 .. begin
+
+.. contents:: :local:
+   :depth: 1
 
 Product prices on the storefront are taken from the combination of the price lists that are enabled on the system level, website level,
 customer group and customer level.
@@ -34,11 +37,8 @@ The enabled price lists for different fallback options setup is illustrated in t
 
 Whether the buyer will get the minimal price or the price from the price list with the highest priority, depends on the pricing strategy configured :ref:`globally <sys--config--commerce--catalog--pricing>`.
 
-* `Minimal Prices Strategy`_
-* `Merge By Priority Strategy`_
-
 Minimal Prices Strategy
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 When Minimal Prices Strategy is selected, the OroCommerce uses the minimum price per tier that is found in the available (enabled) price lists.
 
@@ -69,7 +69,7 @@ The following minimal tier prices will be shown to the buyer.
 * 6$ / 4 item
 
 Merge By Priority Strategy
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Merge By Priority Strategy picks the first price from the given sequence of the Price Lists for a missing price tier in the given currency.
 
@@ -173,3 +173,10 @@ Now the product will have the following list prices:
 The prices from the Custom Price List, where **Merge Allowed** is off, are omitted.
 
 .. finish
+
+
+**Related Articles**
+
+* :ref:`Understanding Pricing in OroCommerce <user-guide--pricing--overview>`
+
+* :ref:`Price List Management <user-guide--pricing--pricelist--management>`

@@ -4,9 +4,7 @@ Pricing
 =======
 
 Price list management is one of the most important aspects of any e-Commerce business and even more so for Business to Business (B2B) e-Commerce 
-companies. B2B businesses require high level of flexibility to support the most advanced use cases, including a highly structured approach to account 
-management and versatile sales processes that are often customized to the needs of specific customer groups or individual large accounts. This is why
-OroCommerce has one of the most advanced price list management features.
+companies. B2B businesses require a high level of flexibility to support the most advanced use cases, including a highly structured approach to account management and versatile sales processes that are often customized to the needs of specific customer groups or large individual accounts. This is why OroCommerce has one of the most advanced price list management features.
 
 Overall, price management in OroCommerce enables you to:
 
@@ -15,7 +13,7 @@ Overall, price management in OroCommerce enables you to:
 * Schedule temporary or permanent price changes.
 * Override the automatically assigned price with the manually adjusted value.
 
-Below you can find the complete reference of topics that provide a 360 degree view of price management in OroCommerce.
+Below you can find the complete reference of topics that provide a 360-degree view of price management in OroCommerce.
 
 * :ref:`Understanding Pricing in OroCommerce <user-guide--pricing--overview>` --- provides the overview of price-related definitions in OroCommerce, such as:
 
@@ -58,7 +56,7 @@ Below you can find the complete reference of topics that provide a 360 degree vi
    :hidden:
    :titlesonly:
 
-   price_lists_overview
+   pricing_overview
    configure_pricing
    pricelist/index
 
