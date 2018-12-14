@@ -5,6 +5,9 @@ Configure Image Gallery
 
 You can choose whether to use popup or inline view for the image gallery in the storefront. This can be configured on three levels, globally, per organization and website.
 
+.. contents:: :local:
+   :depth: 1
+
 Configure Image Gallery Globally
 --------------------------------
 

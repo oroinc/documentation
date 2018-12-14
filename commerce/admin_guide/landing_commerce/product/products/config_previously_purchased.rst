@@ -11,6 +11,8 @@ The previously purchased products page is disabled by default, but you can enabl
 
 .. note:: Please keep in mind that :ref:`visibility restrictions <products--product-visibility>` may affect the visibility of products for the previously purchased products page. Consequently, if the product is hidden for a specific website, category, customer group, etc., it will not be available on the previously purchased list.
 
+.. contents:: :local:
+   :depth: 1
 
 Enable and Set Up Previously Purchased Products Globally
 --------------------------------------------------------

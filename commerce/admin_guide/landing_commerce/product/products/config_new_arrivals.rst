@@ -5,6 +5,9 @@ Configure New Arrivals
 
 You can mark certain selected products to be displayed as new ones in the storefront. This can be configured on three levels, globally, per organization and website.
 
+.. contents:: :local:
+   :depth: 1
+
 Enable New Product Icons Globally
 ---------------------------------
 

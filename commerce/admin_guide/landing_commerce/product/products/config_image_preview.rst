@@ -5,6 +5,9 @@ Configure Image Preview on Product Listing Page
 
 To simplify product selection for customer, you can enable product previews on product listing pages. This can be done on three levels, globally, per organization and per website.
 
+.. contents:: :local:
+   :depth: 1
+
 Configure Image Preview on Product Listing Page Globally
 --------------------------------------------------------
 

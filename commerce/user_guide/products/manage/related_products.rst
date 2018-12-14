@@ -32,6 +32,9 @@ Configuration
 
 Configure related products globally, per website and organization.
 
+.. contents:: :local:
+   :depth: 1
+
 Enable Related Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

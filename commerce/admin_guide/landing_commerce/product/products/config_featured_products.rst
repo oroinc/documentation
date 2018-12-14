@@ -5,6 +5,9 @@ Configure Featured Products
 
 You can control which :ref:`segment <user-guide--business-intelligence--filters-segments>` is used to store :ref:`featured products <products--featured-products>` globally, per organization and per website.
 
+.. contents:: :local:
+   :depth: 1
+
 Select a Featured Products Segment to Use Globally
 --------------------------------------------------
 

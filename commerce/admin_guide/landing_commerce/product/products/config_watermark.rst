@@ -5,6 +5,9 @@ Configure Image Watermark
 
 You can control the watermark that will appear on top of every image uploaded as a part of product details on two levels, globally and per website.
 
+.. contents:: :local: 
+   :depth: 1
+
 Configure Product Image Watermark Globally
 ------------------------------------------
 

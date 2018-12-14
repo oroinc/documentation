@@ -11,6 +11,7 @@ To configure All Products page:
 2. Add it to the storefront as part of either your :ref:`web catalog <user-guide--web-catalog>` (**Marketing > Web Catalog**) or a :ref:`frontend menu <doc--menu-config-levels>` (**System > Frontend Menus**).
 
 .. contents:: :local:
+   :depth: 1
 
 
 Before You Begin: Enable All Products Page

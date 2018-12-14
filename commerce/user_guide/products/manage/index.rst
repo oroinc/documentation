@@ -22,7 +22,7 @@ Advanced Product Management
 * :ref:`Manage Product Pricing <view-and-filter-product-prices>`
 * :ref:`Use Product Brands <user-guide--product-brands>`
 * :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>`
-* :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` by managing the following items:
+* :ref:`Highlight Products in the Storefront <doc--products--manage-inventory-prices-look>` by managing the following items:
 
   * Product Images (watermark, image gallery and preview)
   * Featured Products

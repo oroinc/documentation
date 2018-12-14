@@ -17,7 +17,7 @@ To learn how to associate your products with specific brands and create them in 
 
 Review the ways to define the look of your product page in the dedicated :ref:`Manage Product Page Design with Page Templates <user-guide--page-templates>` section. 
 
-Configure the visual elements to improve the way products are represented in the storefront, as described in the :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` section.
+Configure the visual elements to improve the way products are represented in the storefront, as described in the :ref:`Highlight Products in the Storefront <doc--products--manage-inventory-prices-look>` section.
 
 To check what flows in terms of product creation and management may suit best for your business, check out the `Blueprints`_ section below.
 
@@ -38,7 +38,7 @@ This section provides shortcuts to topics that may be useful for various types o
 
   * :ref:`Create a configurable product <products--products--create-config-product>`
   * :ref:`Set up a matrix form and variations of a configurable product <config-guide--landing-commerce--products--configurable-products>`
-  * :ref:`Highlight and illustrate products <doc--products--manage-inventory-prices-look>`
+  * :ref:`Highlight Products in the Storefront <doc--products--manage-inventory-prices-look>`
   * :ref:`Manage product quantities <doc--products--actions--manage-inventory>`
   * :ref:`Configure product-related settings in system configuration <configuration--products>`
    

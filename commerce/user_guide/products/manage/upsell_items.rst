@@ -36,6 +36,10 @@ Configuration
 
 Configure up-sell products globally, per website and organization.
 
+.. contents:: :local:
+   :depth: 1
+
+
 Enable Up-Sell Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

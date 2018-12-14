@@ -36,7 +36,7 @@ Control Your Products
 
 Once you have created products, you can:
  
-* Proceed to managing the way products are displayed in the storefront, as described in the :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` section.
+* Proceed to managing the way products are displayed in the storefront, as described in the :ref:`Highlight Products in the Storefront <doc--products--manage-inventory-prices-look>` section.
 
 * Discover what basic and advanced actions you can apply to products in the management console in the :ref:`Manage Products: Core and Advanced Actions <doc--products--characteristics>` section.
 
