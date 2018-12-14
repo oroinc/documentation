@@ -80,7 +80,7 @@ You need to request SSH access to OroCloud environment via the customer support 
 
 Customer users need to have the following clients installed:
 
-* VPN client supporting OpnVPN protocol. See the :ref:`Connect to VPN topic <cloud_connect_vpn>` for the list of suitable VPN clients.
+* VPN client supporting OpenVPN protocol. See the :ref:`Connect to VPN topic <cloud_connect_vpn>` for the list of suitable VPN clients.
 * SSH client
 
 Once customer request for SSH connection fulfilled users receives an email with OpenVPN configuration and key. Having this email user must perform the steps outlined in the sections below:
@@ -88,7 +88,7 @@ Once customer request for SSH connection fulfilled users receives an email with 
 Reset your password and add an SSH key using Oro Identity Portal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Open `Oro Identity Portal <https://idp.oro.cloud/auth/realms/ORO/protocol/openid-connect/auth?client_id=account&redirect_uri=https%3A%2F%2Fidp.oro.cloud%2Fauth%2Frealms%2FORO%2Faccount%2Flogin-redirect&state=0%2F1190e13a-6dee-4aee-97a6-96df6075f673&response_type=code&scope=openid>`__ and click **Forgot Password**.
+1. Open Oro Identity Portal and click **Forgot Password**.
 
    .. image:: /cloud/img/cloud/login_identity_portal.png
       :alt: Login page to the public identity management
@@ -118,7 +118,7 @@ Reset your password and add an SSH key using Oro Identity Portal
    .. image:: /cloud/img/cloud/change_password.png
       :alt: Update password flash message
 
-5. Enter your personal SSH public key into `Oro Identity Portal <https://idp.oro.cloud/auth/realms/ORO/protocol/openid-connect/auth?client_id=account&redirect_uri=https%3A%2F%2Fidp.oro.cloud%2Fauth%2Frealms%2FORO%2Faccount%2Flogin-redirect&state=0%2F751d0397-84bc-49a2-a386-d06072ad5b3f&response_type=code&scope=openid>`__ replacing the stub value created by the portal upon account generation.
+5. Enter your personal SSH public key into Oro Identity Portal replacing the stub value created by the portal upon account generation.
 
    .. warning:: The stub SSH public key created with your account has to be replaced with the SSH key that you are going to use for SSH connection. If you do not change the key, you will not be able to log into your servers.
 
