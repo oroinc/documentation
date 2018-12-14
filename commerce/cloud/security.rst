@@ -60,13 +60,13 @@ In the **maintenance DMZ subnet**, the incoming traffic is allowed from the **Op
 Connecting to the Production OroCloud Environment Using VPN
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The OroCloud support team can provide individual maintenance access (using SSH2 protocol) to the production instance hosts for your company’s authorized IT support.
+The OroCloud support team will provide individual maintenance access (using SSH2 protocol) via VPN to the production instance hosts for your company’s authorized IT support.
 
 .. warning:: Please avoid sharing access credentials, as this violates the information security best practices and standards, including PCI-DSS.
 
 To gain access, a customer needs to send the request to Oro's customer support portal (Oro Inc. Support Desk).
 
-.. may be more info
+See how to connect VPN in your operating system in the :ref:`Connect OroCloud VPN <cloud_connect_vpn>` topic.
 
 DDoS Protection
 ~~~~~~~~~~~~~~~
@@ -76,7 +76,7 @@ See `GCP DDoS protection <https://cloud.google.com/files/GCPDDoSprotection-04122
 
 **What’s Next**
 
-* The typical process of OroCloud :ref:`onboarding <cloud_onboarding>`, including the secure certificate exchange and guided access to the necessary tools
+* The typical process of OroCloud :ref:`onboarding <cloud_onboarding>`, including the secure certificate exchange and guided access to the necessary tools and :ref:`VPN connection <cloud_connect_vpn>`
 * The guidance on using :ref:`OroCloud Maintenance Tools <cloud_maintenance>` for deployment and maintenance
 * :ref:`Monitoring <cloud_monitoring>` principles and tools
 * Information on how OroCloud team :ref:`handles incidents <cloud_monitoring>`

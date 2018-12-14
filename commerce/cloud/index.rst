@@ -16,6 +16,7 @@ OroCloud Guide
    security
    monitoring
    onboarding
+   connect_vpn
    maintenance/index
    support
 

@@ -76,6 +76,7 @@ Cache
 ^^^^^
 
 Oro application uses Redis cluster to store cache which optimizes processing of complex operations. Redis Sentinel provides high availability for Redis cluster via the automatic failover and failure detection.
+
 See `Redis Sentinel Documentation <https://redis.io/topics/sentinel>`_ for more information.
 
 File Storage
@@ -88,14 +89,16 @@ Backups and Restore
 
 Backups of OroCloud environment include the database dump, media files, and either the application source code or the repository commit hash that may be used to retrieve the code.
 
-Schedule
-^^^^^^^^
+Schedule and Backup Retention Policy
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, a full backup is created daily at 2 am UTC.
+Oro maintains a regular backup process which covers both database and media content. There are 3 types of backups depending on the target recovery point objective (RPO):
 
-.. note:: To change the backup schedule, please create a request via the Oro Inc. Help Desk.
+* Hourly backups. RPO - 1 hour. Oro stores hourly backups for last 7 days.
+* Weekly backups. RPO - Sunday Oro stores weekly backups for the last 4 weeks.
+* Monthly backups. RPO - last Sunday of the month. Oro stores monthly backups for last 12 month.
 
-On-demand backup may be launched via the ssh session using the automated OroCloud maintenance tool.
+You can get the list of available backups and restore to the specific recovery point using `maintenance tool commands <https://oroinc.com/b2b-ecommerce/doc/current/cloud/maintenance/basic-use#backup>`__.
 
 Encryption
 ^^^^^^^^^^

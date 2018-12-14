@@ -37,7 +37,7 @@ The following benefits come along:
 This guide describes the following concepts and processes in detail:
 
 * OroCloud :ref:`architecture <cloud_architecture>` and :ref:`security <cloud_security>`
-* The typical process of OroCloud :ref:`onboarding <cloud_onboarding>`, including the secure certificate exchange and guided access to the necessary tools
+* The typical process of OroCloud :ref:`onboarding <cloud_onboarding>`, including the secure certificate exchange and guided access to the necessary tools and :ref:`VPN connection <cloud_connect_vpn>`.
 * The guidance on using :ref:`OroCloud Maintenance Tools <cloud_maintenance>` for deployment and maintenance
 * :ref:`Monitoring <cloud_monitoring>` principles and tools
 * Information on how OroCloud team :ref:`handles incidents <cloud_monitoring>`
