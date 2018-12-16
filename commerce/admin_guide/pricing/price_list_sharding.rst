@@ -1,13 +1,13 @@
 .. _admin-price-list-sharding:
 
 How to Configure Price List Sharding
-====================================
+------------------------------------
 
-  .. contents:: :local:
-     :depth: 1
+.. contents:: :local:
+   :depth: 1
 
 Overview
---------
+^^^^^^^^
 
 Data sharding allows to improve OroCommerce operation and accelerate database performance when handling big volumes of data.
 
@@ -23,7 +23,7 @@ However, it is recommended to enable price list sharding if you are experiencing
 .. note:: Combined prices cannot be sharded at the moment.
 
 Configure Price List Sharding
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. To enable price list sharding, set the following parameter in config/parameters.yml:
 
@@ -34,7 +34,7 @@ Configure Price List Sharding
 	``oro:price-lists:pl-storage-reorganize prices --strategy=sharding``
 
 Disable Price Sharding
-----------------------
+^^^^^^^^^^^^^^^^^^^^^^
 
 To restore the default price storage structure:
 
@@ -43,3 +43,10 @@ To restore the default price storage structure:
 2. To reorganize storage and join sharded price tables into one, run the following command:
          
 	``oro:price-lists:pl-storage-reorganize prices --strategy=base``
+
+
+**Related Articles**
+
+* :ref:`Optimize Website Indexation and Price Recalculation <admin-website-index-and-price-calc>`
+
+* :ref:`Pricing Configuration <pricing-configuration>`

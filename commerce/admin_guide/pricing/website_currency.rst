@@ -44,5 +44,12 @@ The following page opens:
 
 .. finish
 
+**Related Articles**
+
+* :ref:`Global Currency Configuration <admin-configuration-currency>`
+
+* :ref:`Global Pricing Configuration <sys--config--commerce--catalog--pricing>`
+
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

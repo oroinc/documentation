@@ -140,11 +140,13 @@ The information about the allowed currencies options is grouped in the following
 
 4. Click **Save Settings**.
 
+
+**Related Articles**
+
+* :ref:`Global Currency Configuration <admin-configuration-currency>`
+
+* :ref:`Currency Configuration per Website <sys--websites--sysconfig--currency>`
+
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
-Related Articles
-^^^^^^^^^^^^^^^^
-
-* :ref:`Pricing Overview <user-guide--pricing>`
-* :ref:`Price List Configuration <price_list_configuration>`

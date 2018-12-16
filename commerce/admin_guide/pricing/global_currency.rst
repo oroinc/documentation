@@ -151,11 +151,15 @@ The information about the allowed currencies options is grouped in the following
 
 .. finish_global_currency_settings
 
-.. include:: /img/buttons/include_images.rst
-   :start-after: begin
 
-Related Articles
-^^^^^^^^^^^^^^^^
+**Related Articles**
 
 * :ref:`Pricing Overview <user-guide--pricing>`
-* :ref:`Price List Configuration <price_list_configuration>`
+
+* :ref:`Currency Configuration per Organization <admin-configuration-currency-org>`
+
+* :ref:`Currency Configuration per Website <sys--websites--sysconfig--currency>`
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

@@ -124,6 +124,15 @@ The **Pricing** page opens. It contains the following information:
 
 .. finish
 
+**Related Articles**
+
+* :ref:`Pricing Overview <user-guide--pricing>`
+
+* :ref:`Pricing Configuration per Website <sys--websites--sysconfig--currency>`
+
+* :ref:`Global Currency Configuration <admin-configuration-currency>`
+
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 

@@ -46,8 +46,8 @@ Below you can find the complete reference of topics that provide a 360-degree vi
 
 .. note:: For more information on pricing configuration in the management console, see the following topics:
 
-          * :ref:`Understanding Price List Configuration <understanding-price-list-configuration>`
-          * :ref:`Pricing Configuration Options <user-guide--pricing--configuration>`
+          * :ref:`Pricing Configuration <pricing-configuration>`
+          * :ref:`Currency Configuration <admin-configuration-currency>`
           * :ref:`Pricing Calculation Optimization <admin-website-index-and-price-calc>`
 
 
@@ -57,7 +57,6 @@ Below you can find the complete reference of topics that provide a 360-degree vi
    :titlesonly:
 
    pricing_overview
-   configure_pricing
    pricelist/index
    calculation
 

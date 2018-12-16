@@ -32,5 +32,15 @@ To change the price list settings for the customer:
 
 .. finish
 
+
+**Related Articles**
+
+* :ref:`Pricing Configuration <pricing-configuration>`
+
+* :ref:`Price List Configuration per Website <sys--website--edit--price-lists>`
+
+* :ref:`Price List Configuration per Customer Group <customers--customer-groups--edit--price-lists>`
+
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
