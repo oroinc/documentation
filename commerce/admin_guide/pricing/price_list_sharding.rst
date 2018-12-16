@@ -3,12 +3,15 @@
 How to Configure Price List Sharding
 ====================================
 
+  .. contents:: :local:
+     :depth: 1
+
 Overview
 --------
 
 Data sharding allows to improve OroCommerce operation and accelerate database performance when handling big volumes of data.
 
-In terms of price lists, data sharding is used to split one big table of price lists into smaller tables, i.e. one table per price list.
+In terms of price lists, data sharding is used to split one big table of price lists into smaller tables, i.e., one table per price list.
 
 By default, price list sharding is disabled. 
 

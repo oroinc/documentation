@@ -1,18 +1,15 @@
-.. _sys--config--sysconfig--general-setup--currency:
-.. _admin-configuration-currency:
+.. _admin-configuration-currency-org:
 
-Global Currency Configuration
------------------------------
-
-.. begin_global_currency_settings
-
-.. overview
+Currency Configuration per Organization
+---------------------------------------
 
 .. contents:: :local:
 
+.. important:: To enable a currency on the organization level, you should add it to the list of allowed currencies at the system level first.
+
 Currency configuration helps you:
 
-* Add and remove currencies from the allowed currencies list.
+* Enable all or some currencies from the allowed currencies list to be used in OroCommerce storefront and management console for this website.
 
 * Set the base currency.
 
@@ -22,19 +19,17 @@ Currency configuration helps you:
 
 * Toggle between the currency display formats (currency code, e.g. USD, and currency symbol, e.g. $).
 
-.. note:: The organization-level configuration for base currency and display format has higher priority and overrides the system setting. However, to enable a currency on the organization level, you should add it to the list of allowed currencies at the system level first.
+.. note:: The organization-level configuration for base currency and display format has higher priority and overrides the system setting.
 
-.. how to change
+To change the default currency settings per organization:
 
-To change the default global currency settings:
+1. Navigate to **System > Configuration > User Management > Organizations** in the main menu.
 
-1. Navigate to **System > Configuration** in the main menu.
+2. For the necessary organization, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcConfig| **Configure** icon to start editing the configuration.
 
-2. Select **System Configuration > General Setup > Currency** in the menu to the left.
+3. Select **System Configuration > General Setup > Currency** in the menu to the left.
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
-
-.. option groups
 
 Currency Settings
 ^^^^^^^^^^^^^^^^^
@@ -42,6 +37,8 @@ Currency Settings
 The following sections are available within the **Currency** tab:
 
 .. image:: /admin_guide/img/configuration/general/currency.png
+
+Clear the **Use System** check box next to the corresponding view page to customize the currency for the selected organization.
 
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Name**               | Description                                                                                                 |
@@ -76,13 +73,9 @@ The following sections are available within the **Currency** tab:
 |                        |                                                                                                             |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 
-.. image::  /admin_guide/img/multi_currency/allowed_currencies_dropdown.png
-
 .. image::  /admin_guide/img/multi_currency/display_format.png
 
 .. _admin-configuration-currency-allowed-currencies-settings:
-
-.. begin_allowed_currencies_options
 
 Allowed Currencies Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -146,10 +139,6 @@ The information about the allowed currencies options is grouped in the following
 #. To roll back any changes to the currency settings, click **Reset** on the top right.
 
 4. Click **Save Settings**.
-
-.. finish_allowed_currencies_options
-
-.. finish_global_currency_settings
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
