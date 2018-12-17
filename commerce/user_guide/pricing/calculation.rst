@@ -1,7 +1,3 @@
-:orphan:
-
-.. Should remain orphan. Used in the index.rst.
-
 .. _user-guide--pricing-calculation:
 
 Price Calculation in the Storefront
