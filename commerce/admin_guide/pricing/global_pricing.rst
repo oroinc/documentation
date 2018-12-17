@@ -1,7 +1,7 @@
 .. _sys--config--commerce--catalog--pricing:
 
-Global Pricing Configuration
-----------------------------
+Configure Pricing Globally
+--------------------------
 
 .. begin
 

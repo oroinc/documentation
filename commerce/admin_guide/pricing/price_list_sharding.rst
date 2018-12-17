@@ -1,7 +1,7 @@
 .. _admin-price-list-sharding:
 
-How to Configure Price List Sharding
-------------------------------------
+Configure Price List Sharding
+-----------------------------
 
 .. contents:: :local:
    :depth: 1

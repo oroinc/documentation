@@ -1,7 +1,7 @@
 .. _sys--website--edit--price-lists:
 
-Price List Configuration per Website
-------------------------------------
+Configure Price List per Website
+--------------------------------
 
 .. begin
 

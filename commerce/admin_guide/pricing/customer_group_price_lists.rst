@@ -1,7 +1,7 @@
 .. _customers--customer-groups--edit--price-lists:
 
-Price List Configuration per Customer Group
--------------------------------------------
+Configure Price List per Customer Group
+---------------------------------------
 
 .. begin
 

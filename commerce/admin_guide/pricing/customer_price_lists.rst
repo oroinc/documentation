@@ -1,7 +1,7 @@
 .. _customers--customers--edit--price-lists:
 
-Price List Configuration Per Customer
--------------------------------------
+Configure Price List per Customer
+---------------------------------
 
 .. begin
 

@@ -31,9 +31,9 @@ OroCommerce groups price configuration options into the following categories:
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a class="reference internal" href="admin-guide/pricing/global-currency">Global Currency Configuration</a></li>
-                   <li><a class="reference internal" href="admin-guide/pricing/org-currency">Currency Configuration per Organization</a></li>
-                   <li><a class="reference internal" href="admin-guide/pricing/website-currency">Currency Configuration Per Website</a></li>
+                   <li><a class="reference internal" href="currency-config#admin-configuration-currency">Configure Currency Globally</a></li>
+                   <li><a class="reference internal" href="currency-config#admin-configuration-currency-org">Configure Currency per Organization</a></li>
+                   <li><a class="reference internal" href="website-currency">Configure Currency per Website</a></li>
                 </ul>
           </div>
       </div>
@@ -44,8 +44,8 @@ OroCommerce groups price configuration options into the following categories:
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a class="reference internal" href="admin-guide/pricing/global-pricing">Global Pricing Configuration</a></li>
-                   <li><a class="reference internal" href=""admin-guide/pricing/website-currency">Pricing Configuration Per Website</a></li>
+                   <li><a class="reference internal" href="global-pricing">Configure Pricing Globally</a></li>
+                   <li><a class="reference internal" href=""website-currency">Configure Pricing per Website</a></li>
                </ul>
           </div>
       </div>
@@ -55,10 +55,10 @@ OroCommerce groups price configuration options into the following categories:
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a class="reference internal" href="admin-guide/pricing/price-list-configuration-overview">Understanding Price List Configuration</a></li>
-                   <li><a class="reference internal" href="admin-guide/pricing/website-price-lists-">Price List Configuration per Website</a></li>
-                   <li><a class="reference internal" href="admin-guide/pricing/customer-group-lists-">Price List Configuration per Customer Group</a></li>
-                   <li><a class="reference internal" href="admin-guide/pricing/customer-price-lists-">Price List Configuration per Customer</a></li>
+                   <li><a class="reference internal" href="price-list-configuration-overview">Understand Price List Configuration</a></li>
+                   <li><a class="reference internal" href="website-price-lists-">Configure Price List per Website</a></li>
+                   <li><a class="reference internal" href="customer-group-lists-">Configure Price List per Customer Group</a></li>
+                   <li><a class="reference internal" href="customer-price-lists-">Configure Price List per Customer</a></li>
                 </ul>
           </div>
       </div>
@@ -75,11 +75,7 @@ OroCommerce groups price configuration options into the following categories:
 
    optimize_index_and_price_calculation
 
-   global_currency
-
-   org_currency
-
-   website_currency
+   currency_config
 
    global_pricing
 

@@ -1,7 +1,7 @@
 .. _sys--websites--sysconfig--currency:
 
-Currency Configuration Per Website
-----------------------------------
+Configure Currency Per Website
+------------------------------
 
 .. begin
 
