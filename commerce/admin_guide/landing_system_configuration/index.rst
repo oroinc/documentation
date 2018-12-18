@@ -29,7 +29,7 @@ This section of the configuration guide introduces you to the general applicatio
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
 
-                     <a class="reference internal" href="../pricing/global_currency#sys-config-sysconfig-general-setup-currency"><span class="std std-ref">Currency</span></a>
+                     <a class="reference internal" href="../pricing/currency-config"><span class="std std-ref">Currency</span></a>
 
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
                      <li>

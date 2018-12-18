@@ -1,7 +1,7 @@
 .. _customers--customers--edit--price-lists:
 
-Price List Configuration Per Customer
--------------------------------------
+Configure Price List per Customer
+---------------------------------
 
 .. begin
 
@@ -31,6 +31,16 @@ To change the price list settings for the customer:
 4. Click **Save**.
 
 .. finish
+
+
+**Related Articles**
+
+* :ref:`Pricing Configuration <pricing-configuration>`
+
+* :ref:`Price List Configuration per Website <sys--website--edit--price-lists>`
+
+* :ref:`Price List Configuration per Customer Group <customers--customer-groups--edit--price-lists>`
+
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

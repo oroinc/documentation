@@ -1,7 +1,7 @@
 .. _user-guide--pricing--create-pricelist:
 
 Create a Price List
-===================
+-------------------
 
 .. begin
 

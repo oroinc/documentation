@@ -1,7 +1,7 @@
 .. _understanding-price-list-configuration:
 
-Understanding Price List Configuration
---------------------------------------
+Understand Price List Configuration
+-----------------------------------
 
 .. begin
 
