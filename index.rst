@@ -1,9 +1,6 @@
 Welcome to OroCRM Documentation!
 ================================
 
-.. include:: old_version_notice.rst
-   :start-after: begin_old_version_notice
-
 OroCRM documentation provides several guides to help you understand Oro and use its capabilities as smoothly as possible, and find answers to the questions most frequently asked by the community.
 
 Learn how to enhance your business with the capabilities of OroCRM in the `User Guide: Getting Started <./user-guide>`__, and `User Guide: Business Intelligence <./user-guide-business-intelligence>`__, `User Guide: Support <./user-guide-support-tools>`__, `User Guide: Marketing <./user-guide-marketing-tools>`__, and `User Guide: Sales <./user-guide-sales-tools>`__, .
