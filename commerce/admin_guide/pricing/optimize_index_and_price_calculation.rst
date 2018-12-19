@@ -12,7 +12,7 @@ efficiency of these processes by tuning your software and hardware.
 .. note:: Price recalculation is required before the indexation.
 
 Price Recalculation
-~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^
 
 The price list data may contain quite complex dependencies and
 formula. When price recalculation happens, all of the price list data is
@@ -31,7 +31,7 @@ To optimize the price recalculation, use the ``--disable-triggers`` parameter in
 the command above to disable the triggers and speed up the SQL insert execution.
 
 Indexation
-~~~~~~~~~~
+^^^^^^^^^^
 
 For faster search and access, the business data in the database should be
 indexed via an internal search engine. After indexation, the user gets prompt
@@ -55,3 +55,10 @@ To speed up the indexation, you can:
 * Use parallel (multi-thread) indexation. As a prerequisite, ensure that several MessageQueue consumers are running. Next, run the command above with the ``--scheduled`` parameter. Depending on the number of CPU cores and consumers running, this can drastically cut the indexation time.
 
 * Use the ``--product-id`` switch together with ``--scheduled`` (multithreaded) indexation to control the amount of entities, indexed per message. This will control indexation load distribution among several consumers and allow scaling. Use an example value of ``*/1000`` to generate messages with 1000 products each.
+
+
+**Related Articles**
+
+* :ref:`Configure Price List Sharding <admin-price-list-sharding>`
+
+* :ref:`Pricing Configuration <pricing-configuration>`

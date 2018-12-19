@@ -1,16 +1,15 @@
 .. _user-guide--pricing--price-list-auto:
 
 Automated Rule-Based Price Management
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
+
+.. begin_pricelist_management
 
 .. contents:: :local:
-
-.. begin
+   :depth: 2
 
 Automate a Price List
 ^^^^^^^^^^^^^^^^^^^^^
-
-.. begin_pricelist_management
 
 The following simplified product catalog will be used in examples: 
 
@@ -182,25 +181,6 @@ Filters, Priorities, and Matching Units in the Automatically Generated Price Lis
 
 **Enforcing the price:** Prices that were provided manually have higher priority than those generated automatically. Once you manually set the price for the automatically assigned product, it will not change after price recalculation anymore.
 
-Price Rules Automation Examples
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /user_guide/pricing/pricelist/auto_examples.rst
-   :start-after: begin_price_rules_auto_examples
-   :end-before: finish_price_rules_auto_examples
-
-Filtering Expression Syntax
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /user_guide/pricing/pricelist/filtering_expression.rst
-   :start-after: begin
-   :end-before: finish
-
-
-Developer Notice
-^^^^^^^^^^^^^^^^
-
-The expression is converted into internal Nodes tree. This tree is converted into QueryBuilder which is used in Insert From Select to fill prices and assignment with one query. Virtual relations and virtual fields are managed by AbstractQueryConverter, that is also used to join all required relations and generate unique table aliases. Generated query builder is cached along with its parameters. Each rule and assignment rules have their cache by ID. When a rule or an assignment rule is changed, the cached QueryBuilder is recalculated.
 
 .. end_pricelist_management
 .. finish

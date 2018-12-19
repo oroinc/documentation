@@ -1,7 +1,8 @@
 .. _user-guide--pricing--price-list-auto--autocomplete:
 
 Autocomplete
-""""""""""""
+------------
+
 .. begin_autocomplete
 
 The autocomplete shows you a list of elements that can be used to build you expression. The list shows only allowed elements and dynamically changes based on what you have already entered and what is more likely to be entered next.
