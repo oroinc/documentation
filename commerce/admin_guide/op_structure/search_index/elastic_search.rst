@@ -25,7 +25,7 @@ Required Plugins
 
 * `Delete By Query <https://www.elastic.co/guide/en/Elasticsearch/plugins/2.4/plugins-delete-by-query.html>`_
 
-   To provide a possibility to refresh types, OroElasticSearchBundle relies on the Delete By Query functionality, and it is required to install a plugin to support it. Please, follow the installation steps in the `Elasticsearch official documentation <https://www.elastic.co/guide/en/Elasticsearch/plugins/2.4/plugins-delete-by-query.html#_installation>`_.
+   To provide a possibility to refresh types, OroElasticSearchBundle relies on the Delete By Query functionality, and it is required to install a plugin to support it. Please, follow the installation steps in the `Elasticsearch official documentation <https://www.elastic.co/guide/en/elasticsearch/plugins/2.4/index.html>`_.
 
 Configuration
 -------------
