@@ -15,4 +15,3 @@ Overview index
 
    tracking_websites_overview
 
-   web_catalogs_overview

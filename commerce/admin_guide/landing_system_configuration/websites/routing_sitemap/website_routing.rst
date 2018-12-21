@@ -46,7 +46,14 @@ To change the default routing settings for the website:
 
      When *Secure* is selected, the **Secure URL** value is used instead.
 
-   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus in the OroCommerce storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+
+Once you decide on the Web Catalog, click **Save Settings**, and the detailed content tree of the selected web catalog appears under the **Navigation Root** field.
+
+   * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
+
+   .. image:: /admin_guide/img/configuration/websites/visible_content_node_website.png
+      :alt: The selected sub-menu nodes that will be visible in the storefront.
 
    * **Cookie Value** - a unique website ID that is saved in the cookies and is later used by a website matcher to identify the website customer is on. The cookie name is configured on the :ref:`system level <sys--config--sysconfig--websites--routing>`.
 

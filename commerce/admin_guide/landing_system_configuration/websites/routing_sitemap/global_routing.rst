@@ -52,7 +52,14 @@ To change the default global routing settings:
 
      When *Always* is selected, the redirects are created by default.
 
-   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+   * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus in the OroCommerce storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
+
+Once you decide on the Web Catalog, click **Save Settings**, and the detailed content tree of the selected web catalog appears under the **Navigation Root** field.
+
+   * **Navigation Root** - select the root content node to be displayed in the OroCommerce storefront. Keep in mind that only the sub-menu nodes that belong to the selected parent node will be visible in the storefront.
+
+   .. image:: /admin_guide/img/configuration/websites/visible_content_node.png
+      :alt: The selected sub-menu nodes that will be visible in the storefront.
 
    .. image:: /admin_guide/img/configuration/websites/routing_website_matchers.png
       :class: with-border

@@ -16,8 +16,7 @@ To enable a web catalog globally:
    
 .. note:: When a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
    
- 
-.. image:: /user_guide/img/marketing/web_catalogs/use_case/SysConfigWebCatalog.png
+ .. image:: /user_guide/img/marketing/web_catalogs/use_case/SysConfigWebCatalog.png
    :class: with-border
 
 .. end_enable_catalog_globally
@@ -151,7 +150,7 @@ Each of such levels can be populated with more levels, or nodes, if necessary, a
 .. image:: /user_guide/img/marketing/web_catalogs/DragDropNode.png
    :class: with-border
 
-Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-per-website>`), you will be able to see it on the storefront.
+Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-per-website>`), you will be able to see it in the storefront.
 
 .. image:: /user_guide/img/marketing/web_catalogs/use_case/NodesFrontStore.gif
 

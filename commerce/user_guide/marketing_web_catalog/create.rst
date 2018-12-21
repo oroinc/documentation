@@ -27,7 +27,7 @@ To create a new web catalog:
 
 #. Click **Save** on the top right of the page.
 
-The new web catalog is created.
+A new web catalog is created.
 
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate_demo.png
       :class: with-border
