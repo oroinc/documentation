@@ -259,8 +259,6 @@ This section provides links to the online documentation for the latest OroCommer
 
        dev_guide/index
 
-       storefront_customization_guide/index
-
        admin_guide/index
 
        community/index
