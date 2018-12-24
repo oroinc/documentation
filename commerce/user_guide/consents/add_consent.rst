@@ -15,23 +15,25 @@ To add a consent landing page to a web catalog content node:
 #. For the necessary catalog, hover over the |IcMore| **More Options** menu to the right of the necessary catalog, and click |IcEditContentTree| to start editing the catalog content tree.
 #. Click on the required root content node where you want the consent to be displayed.
 
-   .. note:: If you do not want the consent to be displayed in the storefront menu, add it to the 5th menu level to hide it from the storefront, or apply appropriate :ref:`restrictions <user-guide--marketing--web-catalog--content--visibility>`.
+   .. note:: When **navigation root** is enabled in the system configuration, you can store all consents outside of the main navigation tree which allows to hide consents from the main menu in the storefront.
+
+   .. .. note:: If you do not want the consent to be displayed in the storefront menu, add it to the 5th menu level to hide it from the storefront, or apply appropriate :ref:`restrictions <user-guide--marketing--web-catalog--content--visibility>`.
 
  .. since by default only the first 4 levels are visible on the storefront
 
 #. In the **Content Variants** section, click **Add Landing Page** in the Content Variants list.
 
-    .. image:: /admin_guide/img/configuration/customer/consents/add_landing_page_with_consent.png
-       :class: with-border
-       :alt: Add a landing page with a consent as a content variant to a web catalog
+   .. image:: /admin_guide/img/configuration/customer/consents/add_landing_page_with_consent.png
+      :class: with-border
+      :alt: Add a landing page with a consent as a content variant to a web catalog
 
 #. Select a landing page with the consent description from the list, if such landing page has been created previously under **Marketing > Landing Pages**.
  
    To create a new landing page from within the web catalog, click **+** next to the hamburger menu in the Landing Page field.
 
-    .. image:: /admin_guide/img/configuration/customer/consents/add_landing_page_from_web_catalog_page.png
-       :class: with-border
-       :alt: Create a new landing page from the web catalog page
+   .. image:: /admin_guide/img/configuration/customer/consents/add_landing_page_from_web_catalog_page.png
+      :class: with-border
+      :alt: Create a new landing page from the web catalog page
 
 #. In the dialog that opens, provide the following key details:
     
@@ -51,13 +53,17 @@ To add a consent landing page to a web catalog content node:
 
 #. Click **Save** on the top right to save the content node.
 
+   .. image:: /admin_guide/img/configuration/customer/consents/privacy_policy_example.png
+      :class: with-border
+      :alt: A content node with a new consent is added to the tree
+
 Once the landing page with the consent description is added to a web catalog node, you can :ref:`create a new consent <user-guide--consents--create>` under **System > Consent Management**, and link it to the required web catalog node.
 
 .. important:: Keep in mind that for the consents to be displayed in the storefront, you need to :ref:`add them to the list of enabled consents <admin--guide--commerce--configuration--customers--consents--enable--globally>` in the system configuration.
 
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
-        .. image:: /admin_guide/img/workflows/checkout_with_consents/consents_section_customer_user_page.png
+             .. image:: /admin_guide/img/configuration/customer/consents/consents_section_customer_user_page.png
 
 **Related Topics**
 

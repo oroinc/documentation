@@ -3,14 +3,10 @@
 Create Consents
 ---------------
 
-.. note:: Before you can use consents in OroCommerce, :ref:`install <admin-package-manager>` the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
-
 To create a consent in OroCommerce:
 
 1. Navigate to **System > Consent Management** in the main menu.
 2. Click **Create Consent** on the top right.
-
-   The following page opens:
 
    .. image:: /admin_guide/img/configuration/customer/consents/create_new_consent.png
       :class: with-border
@@ -23,13 +19,13 @@ To create a consent in OroCommerce:
    * **Type** --- Define whether the user can proceed without giving their consent. The mandatory consents must be accepted by customer users in the storefront to be able to register, proceed to the checkout and create an RFQ. 
    * **Declined Consent Notification** --- When the check box is enabled, a notification is created in the management console as a :ref:`contact request <user-guide-activities-requests>` if a consent is declined by a customer user in the storefront.
    * **Web Catalog** --- Select the web catalog where you intend to use this consent.
-   * **Content Node** --- Content nodes are added to web catalogs as landing pages, and linked as content variants to the catalog nodes. The selected web сatalog node can be configured to display different landing pages (content variants) in different languages. To link the consent to the required node, click on the required node in the tree to select it.
+   * **Content Node** --- Content nodes are added to web catalogs as landing pages, and linked as content variants to the catalog nodes. The selected web сatalog node can be configured to display different landing pages (content variants) in different languages. To link the consent to the required node, click on the required node in the tree to select it. When navigation root is enabled, you can store all consents outside of the main navigation tree which allows to hide consents from the main menu in the storefront.
 
      .. note:: It is recommended have the required web catalog and the node created prior to creating a new consent. Read more on catalogs in the :ref:`Web Catalogs <user-guide--web-catalog>` topic. 
 
-     .. image:: /admin_guide/img/configuration/customer/consents/link_consent_to_node.png
-        :class: with-border
-        :alt: Link the consent to a web catalog node
+   .. image:: /admin_guide/img/configuration/customer/consents/link_consent_to_node.png
+      :class: with-border
+      :alt: Link the consent to a web catalog node
 
 4. Click **Save and Close**.
 
@@ -39,7 +35,7 @@ To create a consent in OroCommerce:
 
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
-        .. image:: /admin_guide/img/workflows/checkout_with_consents/consents_section_customer_user_page.png
+        .. image:: /admin_guide/img/configuration/customer/consents/consents_section_customer_user_page.png
 
 **Related Topics**
 

@@ -15,7 +15,7 @@ Workflow Management
 ===================
 
 .. contents:: :local:
-   :depth: 4
+   :depth: 1
 
 .. TODO add information on exclusive active and exclusive record group
 

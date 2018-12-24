@@ -15,33 +15,27 @@ The Checkout workflow represents a standard checkout procedure in the eCommerce 
 To reach the workflow:
 
 1. Navigate to **System > Workflows** in the main menu.
+
+   On the page of all workflows, you can perform the following actions for the Checkout workflow:
+
+   * View the workflow: |IcView|
+   * Deactivate / Activate the workflow: |IcDeactivate| / |IcActivate|
+
+   .. image:: /admin_guide/img/workflows/checkout/CheckoutGridBackoffice.png
+
 2. Click **Checkout** to open the flow.
 
-On the Checkout workflow page, you can perform the following actions:
+   On the Checkout workflow page, you can perform the following actions:
 
-* Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
-* Activate the workflow - click |IcActivate| **Activate** to activate the workflow.
-  
-.. image:: /admin_guide/img/workflows/checkout/CheckoutViewPageBackoffice.png
+   * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
+   * Activate the workflow - click |IcActivate| **Activate** to activate the workflow.
 
-On the page of all workflows, you can perform the following actions for the Checkout workflow:
+   .. image:: /admin_guide/img/workflows/checkout/CheckoutViewPageBackoffice.png
 
-* View the workflow: |IcView|
-* Deactivate / Activate the workflow: |IcDeactivate| / |IcActivate|
+Steps and Transitions: Illustration
+-----------------------------------
 
-.. image:: /admin_guide/img/workflows/checkout/CheckoutGridBackoffice.png
-
-Steps and Transitions
----------------------
-
-The following table illustrates the steps and transitions that the Checkout workflow consists of:
-
-.. image:: /admin_guide/img/workflows/checkout/CheckoutWfTable.png
-
-Sample Flow
------------
-
-As an illustration, we are going to proceed through the steps of the Checkout workflow to see how it works.
+As an illustration, we are going to proceed through the steps of the Checkout workflow in the default OroCommerce storefront.
 
 .. start_checkout_sample_0
 
@@ -65,7 +59,20 @@ A warning message is shown if for some reason you are unable to start the checko
 
 .. check the conditions
 
-Step 1: Billing Information
+Step 1: Agreements
+^^^^^^^^^^^^^^^^^^
+
+At the Agreements step, you are required to accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
+
+  .. image:: /admin_guide/img/workflows/checkout_with_consents/storefront_step_agreements.png
+     :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+
+  .. image:: /admin_guide/img/workflows/checkout_with_consents/storefront_step_accept_agreement.png
+     :alt: Accept a mandatory consent on the agreements step at checkout
+
+Once the consent is accepted, click **Continue** to proceed with the checkout.
+
+Step 2: Billing Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
 .. start_checkout_sample_1
@@ -83,7 +90,7 @@ Clicking **Continue** redirects you to the next step.
 .. image:: /admin_guide/img/workflows/checkout/Checkout_BilInfo.png
    :alt: The billing information step at the checkout (with consents)
 
-Step 2: Shipping Information
+Step 3: Shipping Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. start_checkout_sample_2
@@ -96,7 +103,7 @@ To edit shipping information, clear the **Use billing address** box and provide 
 
 .. image:: /admin_guide/img/workflows/checkout/UseBillingAddressBox.png
 
-Step 3: Shipping Method
+Step 4: Shipping Method
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. start_checkout_sample_3
@@ -108,7 +115,7 @@ Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from th
 .. image:: /admin_guide/img/workflows/checkout/Shipping_Info.png
    :alt: The shipping method step at the checkout
 
-Step 4: Payment
+Step 5: Payment
 ^^^^^^^^^^^^^^^
 
 .. start_checkout_sample_4
@@ -120,7 +127,7 @@ Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it fr
 .. image:: /admin_guide/img/workflows/checkout/Payment.png
    :alt: The payment method step at the checkout
 
-Step 5: Order Review
+Step 6: Order Review
 ^^^^^^^^^^^^^^^^^^^^
 
 .. start_checkout_sample_5
@@ -144,19 +151,12 @@ To submit the order, click **Submit Order** at the bottom of the page.
 
 .. finish_checkout_sample_alt5
 
-|order_review_img|
-
 Once submitted, the order will be received and dealt with by the sales team.
-
-|order_submitted_img|
 
 .. finish_checkout_sample_5
 
 .. |order_submitted_img| image:: /admin_guide/img/workflows/checkout/order_received.png
    :alt: The page of the order in the management console, once the order is submitted
-
-.. |order_review_img| image:: /admin_guide/img/workflows/checkout/Order_Review.png
-   :alt: The order review step at the checkout
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -1,6 +1,5 @@
 .. _system--workflows--alternative-checkout-workflow:
 
-
 Alternative Checkout Workflow 
 =============================
 
@@ -19,37 +18,44 @@ In addition to the standard :ref:`checkout steps <system--workflows--checkout-wo
 To reach the workflow:
 
 1. Navigate to **System > Workflows** in the main menu.
+
+   Within the Workflows grid, you can perform the following actions for the alternative checkout workflow:
+
+   * Configure order approval threshold: |IcConfig|
+   * View the workflow: |IcView|
+   * Deactivate the workflow: |IcDeactivate|
+
+   .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_grid.png
+
 2. Click **Alternative Checkout** to open the flow.
   
-On the Alternative Checkout workflow page, you can perform the following actions:
+   On the Alternative Checkout workflow page, you can perform the following actions:
 
-* Configure order approval threshold: |IcConfig| **Configuration**.
-* Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
+   * Configure order approval threshold: |IcConfig| **Configuration**.
 
-.. image:: /admin_guide/img/workflows/alternative_checkout/ACF_page.png
+     .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_configuration.png
 
-.. image:: /admin_guide/img/workflows/alternative_checkout/ACF_configuration.png
+   * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
 
-Within the Workflows grid, you can perform the following actions for the alternative checkout workflow:
+     .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_page.png
 
-* Configure order approval threshold: |IcConfig|
-* View the workflow: |IcView|
-* Deactivate the workflow: |IcDeactivate|
-  
-.. image:: /admin_guide/img/workflows/alternative_checkout/ACF_grid.png
 
-Steps and Transitions
----------------------
+.. Steps and Transitions ---------------------
 
-The following table illustrates the steps and transitions that the alternative checkout workflow consists of:
+.. The following table illustrates the steps and transitions that the alternative checkout workflow consists of:
 
-.. image:: /admin_guide/img/workflows/alternative_checkout/ACF_table.png
+.. .. csv-table::
+  :header: "Step", "Transitions", "Steps Following the Transition"
+  :widths: 20, 20, 20
+
+
+.. .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_table.png
    :align: center
 
-Sample Flow
------------
+Steps and Transitions: Illustration
+-----------------------------------
 
-As an illustration, we are going to proceed through the steps of the Alternative Checkout workflow to see how it works.
+As an illustration, we are going to proceed through the steps of the Alternative Checkout workflow in the default OroCommerce storefront.
 
 .. include:: /admin_guide/workflows/checkout.rst
    :start-after: start_checkout_sample_0
@@ -60,7 +66,20 @@ As an illustration, we are going to proceed through the steps of the Alternative
 
 .. check the conditions
 
-Step 1: Billing Information
+Step 1: Agreements
+^^^^^^^^^^^^^^^^^^
+
+At the Agreements step, you are required to accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
+
+  .. image:: /admin_guide/img/workflows/alternative_checkout/storefront_step_agreements_bluethooth.png
+     :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+
+  .. image:: /admin_guide/img/workflows/alternative_checkout/storefront_step_accept_agreement_bluethooth.png
+     :alt: Accept a mandatory consent on the agreements step at checkout
+
+Once the consent is accepted, click **Continue** to proceed through the checkout.
+
+Step 2: Billing Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /admin_guide/workflows/checkout.rst
@@ -70,7 +89,7 @@ Step 1: Billing Information
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_CreateBilling.png
    :alt: The billing information step at the checkout (alternative checkout)
 
-Step 2: Shipping Information
+Step 3: Shipping Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
 .. include:: /admin_guide/workflows/checkout.rst
@@ -79,7 +98,7 @@ Step 2: Shipping Information
 
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_CreateShipping.png
 
-Step 3: Shipping Method
+Step 4: Shipping Method
 ^^^^^^^^^^^^^^^^^^^^^^^
     
 .. include:: /admin_guide/workflows/checkout.rst
@@ -89,7 +108,7 @@ Step 3: Shipping Method
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_ShippingMethod.png
    :alt: The shipping method step at the checkout (alternative checkout)
 
-Step 4: Payment
+Step 5: Payment
 ^^^^^^^^^^^^^^^
    
 .. include:: /admin_guide/workflows/checkout.rst
@@ -99,7 +118,7 @@ Step 4: Payment
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_Payment.png
    :alt: The payment method step at the checkout (alternative checkout)
 
-Step 5: Order Review
+Step 6: Order Review
 ^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /admin_guide/workflows/checkout.rst
@@ -109,7 +128,7 @@ Step 5: Order Review
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_OrderReview.png
    :alt: The page of the order in the management console, once the order is submitted
 
-Step 6: Request Approval
+Step 7: Request Approval
 ^^^^^^^^^^^^^^^^^^^^^^^^
    
 Since the order amount exceeds the threshold of $5000, manager approval is required to submit the order.
@@ -120,7 +139,9 @@ Order Approval will remain pending until the manager approves it.
 
 .. image:: /admin_guide/img/workflows/alternative_checkout/ACF_ApprovalPending.png
 
-Step 7: Approve Order
+.. comment: currently alternative checkout wf works with customer users under customer with ID 4
+
+Step 8: Approve Order
 ^^^^^^^^^^^^^^^^^^^^^
    
 The manager can approve the order by navigating to Orders, selecting the required order and clicking **Approve Order**.
