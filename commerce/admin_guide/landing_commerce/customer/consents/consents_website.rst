@@ -21,12 +21,12 @@ To enable consents for the storefront on the website level:
       :class: with-border
       :alt: Enable consents checkbox on the website level
 
-#. Clear the **Use System** check box under the **+Add Consent** button.
-#. Click **+Add Consent** and select the consent from the list. 
+#. Next to the **Enabled User Consents**, clear the **Use System** check box.
+#. Click **Add Consent** and select the consent(s) from the list.
 
-   Alternatively, click on the hamburger menu and select the consent from its list.
+   Alternatively, click on the hamburger menu and select the consent(s) from its list.
 
-#. If more than one consent is added to the **Enabled Consents** list, you can drag and drop them to set the order in which these consents will be displayed in the storefront.
+#. If more than one consent is added to the **Enabled User Consents** list, you can drag and drop them to set the order in which these consents will be displayed in the storefront.
 
    .. note:: Keep in mind that on the website level you can add only those consents that have been created on the global level. You cannot create new consents on the website level.
 

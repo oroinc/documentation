@@ -7,16 +7,12 @@ If your company processes, stores and transmits personal data belonging to EU re
 
 .. important:: You can find more information on data protection regulations in the official `GDPR portal <https://www.eugdpr.org/>`__ and the `EU Commission web page <https://ec.europa.eu/info/law/law-topic/data-protection_en>`__, or see the `ICO's Guide to the GDPR <https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr>`__ before you proceed.
 
-
-.. note:: Before you can use consents in OroCommerce, :ref:`install <admin-package-manager>` the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
-
 In OroCommerce, consents are disabled by default, but you can enable them globally in the system configuration. If you have more than one website, you can add corresponding consents to specific websites, once consents are enabled and created globally.
 
 Learn more about enabling and configuring consents in OroCommerce in the following topics:
 
 * :ref:`Enable Consents Globally <admin--guide--commerce--configuration--customers--consents--enable--globally>`
 * :ref:`Enable Consents per Website <admin--guide--commerce--configuration--customers--consents--enable--website>`
-
 
 **Related Topics**
 

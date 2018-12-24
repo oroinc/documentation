@@ -20,39 +20,45 @@ To enable consents:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   The following page opens:
+3. Next to the **Enable User Consents** field, clear the **Use Default** check box.
+4. Select the **Enable User Consents** check box.
 
    .. image:: /admin_guide/img/configuration/customer/consents/enable_consents_globally.png
       :class: with-border
       :alt: Enable consents checkbox on global level
 
-3. Clear the **Use Default** check box.
-4. Select the **Enable User Consents** check box.
 5. Click **Save Settings**.
 
-Enabling consents adds the **Consent Management** menu under **System**.
+   Enabling consents adds the **Consent Management** menu under **System**.
 
-.. image:: /admin_guide/img/configuration/customer/consents/consent_management_menu.png
-   :class: with-border
-   :alt: Consent management menu
+   .. image:: /admin_guide/img/configuration/customer/consents/consent_management_menu.png
+      :class: with-border
+      :alt: Consent management menu
+
+6. Next to the **Contact Reason** field, clear the **Use Default** check box.
+7. If the consent is declined in the storefront, a notification is created in the management console as :ref:`a contact reason <admin-guide-contact-reasons>`. Select the contact reason from the list for a declined consent notification.
+
+   .. image:: /admin_guide/img/configuration/customer/consents/contact_reason_config.png
+      :class: with-border
+      :alt: Contact reason configuration option
 
 Enable Consents for the Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Once the consents are enabled, you can add all or selected consents to the list of **Enabled Consents** to display them in the storefront:
+Once the consents are enabled, you can add all or selected consents to the list of **Enabled User Consents** to display them in the storefront:
 
 .. note:: If there are no consents in the application yet, create them under **System > Consent Management**, as described in the :ref:`Create Consents <user-guide--consents--create>` topic.
 
 To add consents to the list of enabled consents:
 
-1. Clear the **Use Default** check box under the **+Add Consent** button.
-#. Click **+Add Consent** and select the consent from the list. 
+1. Next to the **Enabled User Consents** field, clear the **Use Default** check box.
+#. Click **Add Consent** and select the required consent(s) from the list.
 
-   Alternatively, click on the hamburger menu and select the consent from its list.
+   Alternatively, click on the hamburger menu and select the consent(s) from its list.
 
-#. If more than one consent is added to the **Enabled Consents** list, you can drag and drop them to set the order in which these consents will be displayed in the storefront.
+#. If more than one consent is added to the **Enabled User Consents** list, you can drag and drop them to set the order in which these consents will be displayed in the storefront.
 
-   .. note:: The number of consents that can be added to the list equals the number of consents created in the application.
+   .. note:: The number of consents that can be added to the list equals the number of consents created in the application. In addition, once consent cannot be added twice.
 
 #. To delete a consent from the list of enabled consents, click **x** next to it.
 #. Click **Save Settings** on the top right.
