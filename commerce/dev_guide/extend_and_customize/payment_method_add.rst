@@ -566,7 +566,7 @@ Add an Installer
 
 An installer ensures that upon the application installation, the database will contain the entity that you defined within your bundle.
 
-Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic. After you complete it, you will have the class <bundle_root>/Migrations/Schema/FastShippingBundleInstaller.php with the following content:
+Follow the instructions provided in the :ref:`How to generate an installer <installer_generate>` topic. After you complete it, you will have the class <bundle_root>/Migrations/Schema/CollectOnDeliveryBundleInstaller.php with the following content:
 
 .. code-block:: php
    :linenos:

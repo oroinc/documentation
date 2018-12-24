@@ -57,7 +57,7 @@ OroCommerce groups price configuration options into the following categories:
                <ul class="guideline__list">
                    <li><a class="reference internal" href="price-list-configuration-overview">Understand Price List Configuration</a></li>
                    <li><a class="reference internal" href="website-price-lists-">Configure Price List per Website</a></li>
-                   <li><a class="reference internal" href="customer-group-lists-">Configure Price List per Customer Group</a></li>
+                   <li><a class="reference internal" href="customer-group-price-lists-">Configure Price List per Customer Group</a></li>
                    <li><a class="reference internal" href="customer-price-lists-">Configure Price List per Customer</a></li>
                 </ul>
           </div>
@@ -86,5 +86,3 @@ OroCommerce groups price configuration options into the following categories:
    customer_group_price_lists
 
    customer_price_lists
-
-   common_price_list_configuration_options
