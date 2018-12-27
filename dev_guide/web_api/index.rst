@@ -4,7 +4,7 @@ Web Services API
 ================
 
 .. contents:: :local:
-    :depth: 6
+    :depth: 2
 
 Overview
 --------

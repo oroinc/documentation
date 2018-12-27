@@ -1,5 +1,9 @@
+.. _web-api--doc:
+
 Documenting API Resources
 =========================
+
+.. contents:: :local:
 
 Overview
 --------
@@ -8,11 +12,11 @@ You need to provide detailed documentation for your API resources because it is 
 
 The Oro Platform collects documentation for API resources from several sources:
 
--  The documentation can be written in a `configuration file <./configuration.md>`__.
+-  The documentation can be written in a :ref:`configuration file <web-api--configuration>`.
 -  A `Markdown <https://daringfireball.net/projects/markdown/>`__ document. The detailed information you can find bellow in this document.
 -  System-wide descriptions of `configurable entities and fields <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/README.md>`__.
 
-The most priority source is the configuration file. The documentation provided there overrides all other sources. But as it is YAML file it is not the best way to write a big multi-line texts there. The more appropriate place for the documentation is a separate `Markdown <https://daringfireball.net/projects/markdown/>`__ file. To use such file you need to provide a link to it in the configuration file, e.g.:
+The most priority source is the configuration file. The documentation provided there overrides all other sources. But as it is YAML file it is not the best way to write big multi-line texts there. The more appropriate place for the documentation is a separate `Markdown <https://daringfireball.net/projects/markdown/>`__ file. To use such file you need to provide a link to it in the configuration file, e.g.:
 
 .. code:: yaml
 
@@ -21,7 +25,7 @@ The most priority source is the configuration file. The documentation provided t
             Acme\Bundle\AppBundle\Entity\AcmeEntity:
                 documentation_resource: '@AcmeAppBundle/Resources/doc/api/acme_entity.md'
 
-If the documentation was not found neither the configuration file nor the documentation file, the Oro Platform will try to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files and, actually, they are the best way to document fields, because these descriptions can be used not only in API. Here is an example of a translation file contains descriptions for entities and fields:
+If the documentation was found neither the configuration file nor the documentation file, the Oro Platform will try to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files and, actually, they are the best way to document fields, because these descriptions can be used not only in API. Here is an example of a translation file contains descriptions for entities and fields:
 
 .. code:: yaml
 
