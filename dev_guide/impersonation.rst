@@ -90,6 +90,7 @@ You can also specify the time in the format that the strtotime() php parser can 
 
     	$ php app/console oro:user:impersonate -t"1 month" johndoe
 
+.. _impersonate-a-user-in-the-silent-mode:
 
 Impersonate a User in the Silent Mode
 """""""""""""""""""""""""""""""""""""
