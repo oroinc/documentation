@@ -105,7 +105,7 @@ which automatically creates and registers routes based on the method names of yo
 
     # src/AppBundle/Resources/config/oro/routing.yml
     app.api.task:
-        resource: '@AppBundle/Controller/Api/TaskController.php'
+        resource: '@AppBundle/Controller/Api/Rest/TaskController.php'
         type: rest
         prefix: api/rest/{version}/
         requirements:

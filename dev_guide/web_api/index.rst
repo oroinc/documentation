@@ -4,7 +4,7 @@ Web Services API
 ================
 
 .. contents:: :local:
-    :depth: 6
+    :depth: 2
 
 Overview
 --------
@@ -107,7 +107,7 @@ To review the documentation and access the sandbox, click the method row for a s
 
 To expand information about all methods available for the resource, click the **Expand Operations** link at the right-hand end of resource row.
 
-To switch between the collapsed list of available resources and the expanded state, click the **Show / hide** link at the right-hand end of the row.
+To switch between the collapsed list of available resources and the expanded state, click the **Show/hide** link at the right-hand end of the row.
 
 
 Examples
@@ -200,7 +200,7 @@ Schema
 All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the ``http(s)://<hostname_of_your_oro_application>/api/<resource_name>``
 All data is sent and received as JSON.
 
-A typical request can be performed via curl or via the JSON sandbox.
+A typical request can be performed via curl or JSON sandbox.
 
 Curl Example
 ~~~~~~~~~~~~
@@ -560,7 +560,7 @@ In case of a successful request, a response status code will be one of the follo
 
     -   **200 OK**—In the response to a successful GET, PATCH or DELETE.
 
-    -   **201 Created**—In the response to a POST that results in a creation. When this status received, the request body contains the description of the newly created entity in JSON format (similar to regular GET request).
+    -   **201 Created**—In the response to a POST that results in creation. When this status received, the request body contains the description of the newly created entity in JSON format (similar to regular GET request).
 
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 

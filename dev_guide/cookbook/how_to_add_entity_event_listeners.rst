@@ -2,6 +2,8 @@
     single: Customization; Entity Event Listeners
     single: Events; Entity Event Listeners
 
+.. _how-to-add-entity-event-listeners:
+
 How to add entity event listeners
 =================================
 
@@ -14,7 +16,7 @@ Configuring the Listener
 ------------------------
 
 Suppose that you have already extended an Oro bundle like ``OroContactBundle`` (you can find more information
-on this page: `How to extend existing bundle`_).
+in :ref:`How to extend existing bundle <how-to-extend-existing-bundle>`).
 And you would like to compliment your contact's social information with some external API data.
 
 For this you need to register your listener in the ``services.yml`` file.
@@ -28,8 +30,6 @@ For this you need to register your listener in the ``services.yml`` file.
             class: Acme\Bundle\ContactBundle\Listener\SocialFields
             tags:
                 - { name: doctrine.event_listener, event: onFlush }
-
-.. _How to extend existing bundle: ./how_to_extend_existing_bundle.rst
 
 Creating the Listener Class
 ---------------------------

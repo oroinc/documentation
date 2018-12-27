@@ -1,13 +1,9 @@
+.. _web-api--configuration-extra:
+
 Configuration Extras
 ====================
 
-Table of Contents
------------------
-
--  `Overview <#overview>`__
--  `ConfigExtraInterface <#configextrainterface>`__
--  `ConfigExtraSectionInterface <#configextrasectioninterface>`__
--  `Example of configuration extra <#example-of-configuration-extra>`__
+.. contents:: :local:
 
 Overview
 --------
@@ -21,13 +17,13 @@ There are two types of the configuration extras:
 
 The both types of the configuration extras works in the following way:
 
--  The actions like `get <./actions#get-action>`__, `get\_list <./actions#get_list-action>`__ or `delete <./actions#delete-action>`__ register the configuration extras in the `Context <./actions#context-class>`__ using the ``addConfigExtra`` method. All required extras must be registered before any of the ``getConfig``, ``getConfigOf``, ``getConfigOfFilters`` or ``getConfigOfSorters`` methods of the Context is called. Typically the registration happens in processors from
+-  The actions like :ref:`get <web-api--actions>`, :ref:`get\_list <web-api--actions>` or :ref:`delete <web-api--actions>` register the configuration extras in the :ref:`Context <web-api--actions>` using the ``addConfigExtra`` method. All required extras must be registered before any of the ``getConfig``, ``getConfigOf``, ``getConfigOfFilters`` or ``getConfigOfSorters`` methods of the Context is called. Typically the registration happens in processors from
    ``initialize`` group. For example `InitializeConfigExtras <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Get/InitializeConfigExtras.php>`__.
--  When some processor needs a configuration it calls appropriate method of the `Context <./actions#context-class>`__. For example ``getConfig``, ``getConfigOf``, ``getConfigOfFilters`` or ``getConfigOfSorters``. The first call of any of these methods causes the loading of the configuration.
--  The loading of the configuration is performed by the `get\_config <./actions#get_config-action>`__ action. Any of processors registered for this action can check which configuration data is requested and will do suitable work. There are two ways how a processor can find out which configuration data is requested. The first is to use the `processor conditions <./processors#processor-conditions>`__. The second one is to use the ``hasExtra`` method of the
+-  When some processor needs a configuration it calls appropriate method of the :ref:`Context <web-api--actions>`. For example ``getConfig``, ``getConfigOf``, ``getConfigOfFilters`` or ``getConfigOfSorters``. The first call of any of these methods causes the loading of the configuration.
+-  The loading of the configuration is performed by the :ref:`get\_config <web-api--actions>` action. Any of processors registered for this action can check which configuration data is requested and will do suitable work. There are two ways how a processor can find out which configuration data is requested. The first is to use the :ref:`processor conditions <web-api--processors>`. The second one is to use the ``hasExtra`` method of the
    `ConfigContext <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigContext.php>`__.
 
-Also, please take a look into `Configuration Reference <./configuration>`__ for more details about config structure, sections, properties etc.
+Also, please take a look into :ref:`Configuration Reference <web-api--configuration>` for more details about config structure, sections, properties etc.
 
 ConfigExtraInterface
 --------------------
@@ -48,7 +44,7 @@ The `ConfigExtraSectionInterface <https://github.com/oroinc/platform/tree/master
 
 -  **getConfigType** - Returns the configuration type that should be loaded into this section. This string is used by `ConfigLoaderFactory <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderFactory.php>`__ to find the appropriate loader.
 
-There are a list of existing configuration extras that implement this interface:
+There is a list of existing configuration extras that implement this interface:
 
 -  `FiltersConfigExtra <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/FiltersConfigExtra.php>`__
 -  `SortersConfigExtra <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/SortersConfigExtra.php>`__
@@ -91,8 +87,8 @@ Let's take a look into `DescriptionsConfigExtra <https://github.com/oroinc/platf
         }
     }
 
-Usually configuration extras are added to the Context by ``InitializeConfigExtras`` processors which belong to ``initialize`` group, e.g. `InitializeConfigExtras <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Get/InitializeConfigExtras.php>`__ processor for ``get`` action. But human-readable descriptions are required only for generation a documentation for Data API. So,
+Usually configuration extras are added to the Context by ``InitializeConfigExtras`` processors which belong to ``initialize`` group, e.g. `InitializeConfigExtras <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Get/InitializeConfigExtras.php>`__ processor for ``get`` action. But human-readable descriptions are required only for generation documentation for Data API. So,
 `DescriptionsConfigExtra <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/DescriptionsConfigExtra.php>`__ is added by `RestDocHandler <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/ApiDoc/RestDocHandler.php>`__.
 
 The processor which adds descriptions for entity, fields and filters is `CompleteDescriptions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/Shared/CompleteDescriptions.php>`__. This processor is registered as services in `processors.get\_config.yml <../config/processors.get_config.yml>`__. Please note, the processor tag contains the ``extra`` attribute with ``descriptions&definition`` value. This means that the processor will be executed only if the
-extra configuration (in this case ``description`` and ``definition``) were requested. For more details see `processor conditions <./processors#processor-conditions>`__.
+extra configuration (in this case ``description`` and ``definition``) were requested. For more details see :ref:`processor conditions <web-api--processors>`.
