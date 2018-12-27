@@ -27,3 +27,4 @@ In the following sections you can find more information related to Magento sales
     magento_carts_orders
     magento_default_workflows
     magento_credit_memos
+    magento_channels

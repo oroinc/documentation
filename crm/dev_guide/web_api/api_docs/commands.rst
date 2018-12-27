@@ -1,5 +1,9 @@
+.. _web-api--commands:
+
 CLI Commands
 ============
+
+.. contents:: :local:
 
 oro:api:cache:clear
 -------------------

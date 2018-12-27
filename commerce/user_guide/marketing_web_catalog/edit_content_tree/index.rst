@@ -23,7 +23,7 @@ To edit a web catalog content tree:
    .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate2.png
       :class: with-border
 
-Once the main menu nodes are saved, create **sub-menu content nodes**. These will be shown as the second level of the main menu on the OroCommerce Store Front:
+Once the main menu nodes are saved, create **sub-menu content nodes**. These will be shown as the second level of the main menu on the OroCommerce Storefront:
 
 #) Ensure that the appropriate main menu node is selected in the content nodes structure to the left.
 

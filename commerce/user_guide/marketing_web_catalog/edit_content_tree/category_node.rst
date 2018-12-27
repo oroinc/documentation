@@ -5,7 +5,7 @@
 Add a Category (Web Catalog Content)
 """"""""""""""""""""""""""""""""""""
 
-Category node is a direct link to the product category with the list of products in the OroCommerce Store Front.
+Category node is a direct link to the product category with the list of products in the OroCommerce Storefront.
 
 To add a category node to the menu in the OroCommerce storefront:
 
@@ -19,7 +19,7 @@ To add a category node to the menu in the OroCommerce storefront:
 
    The available options are:
 
-   * **Include, show as filter** - Used to include all the products assigned to the subcategories of the selected category in addition to the products that are already assigned directly. The subcategories of the first level with at least one product will be displayed as a category filter in the OroCommerce Store Front.
+   * **Include, show as filter** - Used to include all the products assigned to the subcategories of the selected category in addition to the products that are already assigned directly. The subcategories of the first level with at least one product will be displayed as a category filter in the OroCommerce Storefront.
 
      .. image:: /user_guide/img/marketing/web_catalogs/subcategory_filter_1.png
 
