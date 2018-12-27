@@ -91,6 +91,8 @@ You can also specify the time in the format that the strtotime() php parser can 
     	$ php bin/console oro:user:impersonate -t"1 month" johndoe
 
 
+.. _impersonate-a-user-in-the-silent-mode:
+
 Impersonate a User in the Silent Mode
 """""""""""""""""""""""""""""""""""""
 
@@ -226,7 +228,7 @@ This helps avoid surprises when the user notices that something has changed in t
 The default notification email template is **user_impersonate**. It can be found on the **All Templates** page of your Oro application (**System>Emails>Templates**).
 
 
-This behavior can be overridden if you select the silent mode when generating the impersonation link. (See the `Impersonate a User in the Silent Mode <./user-impersonation#impersonate-a-user-in-the-silent-mode>`__ section.) 
+This behavior can be overridden if you select the silent mode when generating the impersonation link. (See the :ref:`Impersonate a User in the Silent Mode <impersonate-a-user-in-the-silent-mode>` section.)
 
 
 Data Audit

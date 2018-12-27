@@ -1,10 +1,14 @@
+.. _web-api--commands:
+
 CLI Commands
 ============
+
+.. contents:: :local:
 
 oro:api:cache:clear
 -------------------
 
-This command command clears Data API cache.
+This command clears Data API cache.
 
 Usually you need to run this command when you add a new entity to ``Resources/config/oro/api.yml`` or you add a new processor that changes a list of available through Data API resources.
 
