@@ -1,13 +1,9 @@
+.. _web-api--configuration-extensions:
+
 Configuration Extensions
 ========================
 
-Table of Contents
------------------
-
--  `Overview <#overview>`__
--  `Creating configuration extension <#creating-configuration-extension>`__
--  `Add options to existing configuration section <#add-options-to-existing-configuration-section>`__
--  `Add new configuration section <#add-new-configuration-section>`__
+.. contents:: :local:
 
 Overview
 --------
@@ -56,33 +52,33 @@ The following table describes existing sections for which new options can be add
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | Section Name                            | When to use                                                                                                                                   |
 +=========================================+===============================================================================================================================================+
-| entities.entity                         | Add an entity options                                                                                                                         |
+| entities.entity                         | Add entity options                                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| entities.entity.field                   | Add a field options                                                                                                                           |
+| entities.entity.field                   | Add field options                                                                                                                             |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| relations.entity                        | Add an entity options when the entity is used as a relationship to another entity                                                             |
+| relations.entity                        | Add entity options when the entity is used as a relationship to another entity                                                                |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| relations.entity.field                  | Add a field options when the entity is used as a relationship to another entity                                                               |
+| relations.entity.field                  | Add field options when the entity is used as a relationship to another entity                                                                 |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | filters                                 | Add options to ``filters`` section                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| filters.field                           | Add a filter options                                                                                                                          |
+| filters.field                           | Add filter options                                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | sorters                                 | Add options to ``sorters`` section                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| sorters.field                           | Add a sorter options                                                                                                                          |
+| sorters.field                           | Add sorter options                                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| actions.action                          | Add an action options                                                                                                                         |
+| actions.action                          | Add action options                                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| actions.action.status\_code             | Add a response status code options                                                                                                            |
+| actions.action.status\_code             | Add response status code options                                                                                                              |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| actions.action.field                    | Add a field options specific for a particular action. These options override options defined in ``entities.entity.field``                     |
+| actions.action.field                    | Add field options specific for a particular action. These options override options defined in ``entities.entity.field``                       |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| subresources.subresource                | Add a sub-resource options                                                                                                                    |
+| subresources.subresource                | Add sub-resource options                                                                                                                      |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| subresources.subresource.action         | Add a sub-resource action options                                                                                                             |
+| subresources.subresource.action         | Add sub-resource action options                                                                                                               |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| subresources.subresource.action.field   | Add a field options specific for a particular action of a sub-resource. These options override options defined in ``entities.entity.field``   |
+| subresources.subresource.action.field   | Add field options specific for a particular action of a sub-resource. These options override options defined in ``entities.entity.field``     |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 An example:
