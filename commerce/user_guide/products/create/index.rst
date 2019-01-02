@@ -12,7 +12,7 @@ Create Products
 Product Type: Simple vs Configurable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /user_guide/overview/products/products_overview.rst
+.. include:: /user_guide/products/create/simple_vs_config.rst
    :start-after: configurable_product_begin
    :end-before: configurable_product_end
 
@@ -41,3 +41,5 @@ Create a Configurable Product
    create_simple
 
    create_complex
+
+   simple_vs_config
