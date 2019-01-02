@@ -21,7 +21,7 @@ This section of the configuration guide introduces you to the general applicatio
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                      <li><a class="reference internal" href="../landing_system_configuration/general_setup_sysconfig/application_settings#admin-configuration-application"><span class="std std-ref">Application Settings</span></a></li>
-                     <li><a class="reference internal" href="../localization/localization#sys-config-sysconfig-general-setup-localization-global"><span class="std std-ref">Localization</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
+                     <li><a class="reference internal" href="../localization"><span class="std std-ref">Localization</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
 
                      <a class="reference internal" href="../localization/language_settings#sys-config-sysconfig-general-setup-language-settings"><span class="std std-ref">Language Settings</span></a>
@@ -34,7 +34,7 @@ This section of the configuration guide introduces you to the general applicatio
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
 
-                     <a class="reference internal" href="general-setup-sysconfig/display_settings#configuration-general-setup-display-settings"><span class="std std-ref">Display Settings</span></a>
+                     <a class="reference internal" href="general-setup-sysconfig/display_settings"><span class="std std-ref">Display Settings</span></a>
 
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-globe" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                     </ul>
@@ -43,10 +43,10 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a class="reference internal" href="../landing_system_configuration/general_setup_sysconfig/user_settings#admin-configuration-user-settings"><span class="std std-ref">User Settings</span></a></li>
+                     <li><a class="reference internal" href="general_setup_sysconfig/user_settings"><span class="std std-ref">User Settings</span></a></li>
                      <li><a class="reference internal" href="../landing_marketing/tracking_settings#admin-configuration-tracking-settings"><span class="std std-ref">Tracking</span></a></li>
-                     <li><a class="reference internal" href="upload_settings#configuration-guide-system-configuration-general-setup-sysconfig-upload-settings"><span class="std std-ref">Upload Settings</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
-                     <li><a class="reference internal" href="../email/email_configuration#user-guide-email-admin"><span class="std std-ref">Email Configuration</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-globe" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
+                     <li><a class="reference internal" href="upload-settings"><span class="std std-ref">Upload Settings</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
+                     <li><a class="reference internal" href="../email/configuration"><span class="std std-ref">Email Configuration</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-globe" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                     </ul>
           </div>
       </div>
@@ -68,17 +68,17 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     <li><a class="reference internal" href="../integrations/google_integration_settings#admin-configuration-integrations-google"><span class="std std-ref">Google Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
-                     <li><a class="reference internal" href="../integrations/ms_exchange_integration_settings#admin-configuration-ms-exchange-integration-settings"><span class="std std-ref">MS Exchange Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
-                     <li><a class="reference internal" href="../integrations/commerce_integration#user-guide-commerce-integration"><span class="std std-ref">CRM and Commerce</span></a></li>
+                     <li><a class="reference internal" href="../integrations/google"><span class="std std-ref">Google Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
+                     <li><a class="reference internal" href="../integrations/ms-exchange"><span class="std std-ref">MS Exchange Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
+                     <li><a class="reference internal" href="../integrations/commerce-integration"><span class="std std-ref"> </span></a></li>
                      </ul>
           </div>
       </div>
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                      <li><a class="reference internal" href="../integrations/outlook#admin-configuration-ms-outlook-integration-settings"><span class="std std-ref">MS Outlook Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
-                     <li><a class="reference internal" href="../integrations/dotmailer_integration_settings#admin-configuration-dotmailer-integration-settings"><span class="std std-ref">dotmailer Settings</span></a></li>
+                      <li><a class="reference internal" href="../integrations/outlook"><span class="std std-ref">MS Outlook Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
+                     <li><a class="reference internal" href="../integrations/dotmailer"><span class="std std-ref">dotmailer Settings</span></a></li>
                      </ul>
           </div>
       </div>
@@ -99,8 +99,8 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                      <li><a class="reference internal" href="websites/routing_sitemap/global_routing#sys-config-sysconfig-websites-routing"><span class="std std-ref">Routing</span></a> <i class="fa fa-globe" aria-hidden="true" ></i></li>
-                      <li><a class="reference internal" href="websites/routing_sitemap/global_sitemap#sys-config-sysconfig-websites-sitemap"><span class="std std-ref">Sitemap</span></a> <i class="fa fa-globe" aria-hidden="true" ></i></li>
+                      <li><a class="reference internal" href="websites/routing-sitemap"><span class="std std-ref">Routing</span></a> <i class="fa fa-globe" aria-hidden="true" ></i></li>
+                      <li><a class="reference internal" href="websites/routing_sitemap"><span class="std std-ref">Sitemap</span></a> <i class="fa fa-globe" aria-hidden="true" ></i></li>
                       </ul>
           </div>
       </div>
