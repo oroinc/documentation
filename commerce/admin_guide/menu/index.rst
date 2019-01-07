@@ -16,7 +16,7 @@ Menu Types Overview
 .. contents:: :local:
     :depth: 1
 
-.. include:: /user_guide/overview/system/menus_overview.rst
+.. include:: /admin_guide/menu/menus_overview.rst
    :start-after: begin
    :end-before: finish
 
@@ -97,3 +97,4 @@ Related Topics
    menu_config_levels
    menu_frontend
    service_page
+   menus_overview

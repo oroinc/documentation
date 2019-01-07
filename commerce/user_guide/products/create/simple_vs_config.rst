@@ -1,12 +1,3 @@
-Overview
-========
-
-.. begin
-
-You can view, filter, add, edit, delete, clone, import, and export products and manage product details: general information, images, location in the master catalog, prices, SEO information, brands, related products, shipping options, and inventory details.
-
-You can also manage the product visibility for the customer and on the website.
-
 Simple vs Configurable Products
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -23,7 +14,7 @@ In OroCommerce, products can be of two types, simple and configurable. The produ
 .. image:: /user_guide/img/products/products/SimpleProductScreenFrontStore.png
    :class: with-border
 
-Unlike a simple product, **a configurable product** is an item available in multiple variations. Customers ‘configure’ the product in terms of its color, size or any other applicable parameters according to buying needs. Buyers in the storefront choose from the options provided to ‘configure’ a product according to their needs. 
+Unlike a simple product, **a configurable product** is an item available in multiple variations. Customers ‘configure’ the product in terms of its color, size or any other applicable parameters according to buying needs. Buyers in the storefront choose from the options provided to ‘configure’ a product according to their needs.
 
 However, in the management console, configurable products are more sophisticated. A configurable product is known as a single parent product uniting multiple product variants. These product variants are assigned unique SKUs for easy inventory tracking, have their own inventory and price settings, and are generally treated as separate products in product information management (PIM) UIs. As the configurable product and all of its variants share the same set of attributes, they share the product family.
 

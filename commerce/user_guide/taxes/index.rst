@@ -9,7 +9,7 @@ This topic contains the following sections:
 Overview
 --------
 
-.. include:: /user_guide/overview/taxes_overview.rst
+.. include:: /user_guide/taxes/tax_rules/tax_rules_overview.rst
   :start-after: begin
 
 Before You Begin: Taxation Configuration
@@ -22,7 +22,7 @@ Before You Begin: Taxation Configuration
 Understanding Tax Rules
 -----------------------
 
-.. include:: /user_guide/overview/taxes/tax_rules_overview.rst
+.. include:: /user_guide/taxes/tax_rules/tax_rules_overview.rst
    :start-after: begin
 
 .. image:: /user_guide/img/taxes/tax_rules/All_TaxRules_Taxes.png

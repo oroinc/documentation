@@ -3,48 +3,35 @@
 Web Catalogs
 ============
 
-This topic contains the following sections:
+* :ref:`Create a Web Catalog <user-guide--web-catalog-create>`
+* :ref:`Enable a Web Catalog  Globally <user-guide--marketing--web-catalog--enable-globally>` and :ref:`per Website <user-guide--marketing--web-catalog--enable-per-website>`.
+* :ref:`Customize Web Catalog Contents for Localization, Customer or Customer Group <user-guide--marketing--web-catalog--customize>`
+* :ref:`Build a Custom Web Catalog From Scratch (Example) <user-guide--marketing--web-catalog--sample>`
 
-.. contents:: :local:
+Web catalog is a content management tool that helps build highly personalized custom versions of your websites by mixing in category pages, product pages, landing pages and pre-existing system pages in different variations based on the customer account information, their customer group or language preference.
 
-Overview
---------
+With OroCommerce web catalog and content tree, you can organize the target website structure to gain improved purchasing experience and use a set of in-place SEO tools to make it reachable for your target audience.
 
-.. include:: /user_guide/overview/marketing/web_catalogs_overview.rst
-   :start-after: begin
+The web catalog content nodes may be of the following types:
+
+* **System page** - one of the standard eCommerce website pages (e.g. sign in, user profile, open orders, etc).
+* **Product** - direct link to :ref:`product <user-guide--products--products>` details.
+* **Product Collection** - a dynamically generated group of products that are stored as a data segment.
+* **Category** - a category of the :ref:`master catalog <user-guide--products--master-catalog>`.
+* **Landing page** - a custom :ref:`landing page <user-guide--landing-pages>` created in the **Marketing > Landing Pages** section.
 
 To view all web catalogs, navigate to **Marketing > Web Catalogs** in the main menu.
 
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogs.png
    :class: with-border
 
-.. include:: create.rst   
-   :start-after: begin
-   :end-before: finish
 
-.. include:: web_catalog_usecase.rst   
-   :start-after: begin_enable_catalog_globally
-   :end-before: end_enable_catalog_globally
-
-.. include:: web_catalog_usecase.rst   
-   :start-after: begin_enable_catalog_per_website
-   :end-before: end_enable_catalog_per_website
-
-.. include:: web_catalog_usecase.rst   
-   :start-after: begin_web_catalog_customize
-   :end-before: end_web_catalog_customize
-
-.. include:: web_catalog_usecase.rst   
-   :start-after: begin_web_catalog_sample
-   :end-before: end_web_catalog_sample
 
 .. toctree::
    :hidden:
 
    create
-
    edit_content_tree/index.rst
-
    web_catalog_usecase
 
 .. include:: /img/buttons/include_images.rst
