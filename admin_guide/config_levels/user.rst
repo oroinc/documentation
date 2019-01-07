@@ -74,16 +74,29 @@ In the Language section, you can select the default language for the interface:
 +------------------+----------------------------------------------------+
 
 
-.. _doc-my-user-configuration-display:
-
 
 Update Display Settings
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-In the Display section, you can configure the following display options:
+.. begin_display_set_user
+
+In the Display section, you can configure the following display options for a particular user:
+
+1. Navigate to **System > User Management > Users** in the main menu.
+
+2. For the necessary user, hover over the |IcMore| **More Options** menu to the right and click |IcConfig| to start editing the configuration.
+
+3. Select **System Configuration > General Setup > Display Settings** in the menu to the left.
+
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+
+The following page opens:
 
 .. image:: /user_guide/img/getting_started/my_oro/my_user_config_display.png
    :alt: Settings menu options available on the user level
+
+4. Clear the **Use Organization** check box to change the organization-wide setting for the following options:
 
 **User bar**
 
@@ -92,23 +105,18 @@ In the Display section, you can configure the following display options:
 +====================+====================================================================================================================================+
 | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                       |
 |                    |                                                                                                                                    |
-|                    | .. image:: /admin_guide/img/user_management/user_configuration_showemailsuserbar.png                                               |
+|                    | .. image:: /user_guide/img/admin/user_management/user_configuration_showemailsuserbar.png                                          |
 |                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
 |                    |                                                                                                                                    |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------+
 
-**WYSIWYG settings**
+**Navigation bar**
 
-+-----------------------+-----------------------------------------------------------------------------------------------------------+
-| Field                 | Description                                                                                               |
-+=======================+===========================================================================================================+
-| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
-|                       |                                                                                                           |
-|                       | .. image:: /admin_guide/img/user_management/user_configuration_wysiwyg.png                                |
-|                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
-|                       |                                                                                                           |
-+-----------------------+-----------------------------------------------------------------------------------------------------------+
-
++----------+----------------------------------------------------------------------------------------------------+
+| Field    | Description                                                                                        |
++==========+====================================================================================================+
+| Position | Select whether the OroCommerce main menu will be positioned at the top of the page or on its left. |
++----------+----------------------------------------------------------------------------------------------------+
 
 **Data Grid settings**
 
@@ -121,20 +129,12 @@ In the Display section, you can configure the following display options:
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
 |                           |                                                                                                                |
-|                           | .. image:: /admin_guide/img/user_management/user_configuration_pagination.png                                  |
+|                           | .. image:: /user_guide/img/admin/user_management/user_configuration_pagination.png                             |
 |                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination Limit   | Type the maximum number of records that the user can navigate from a record view page.                         |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
-
-**Navigation bar**
-
-+----------+-----------------------------------------------------------------------------------------------+
-| Field    | Description                                                                                   |
-+==========+===============================================================================================+
-| Position | Select whether the OroCRM main menu will be positioned at the top of the page or on its left. |
-+----------+-----------------------------------------------------------------------------------------------+
 
 **Activity lists**
 
@@ -148,12 +148,26 @@ In the Display section, you can configure the following display options:
 | Items Per Page By Default | Select how many records will appear on one page of the activity grids.                                                              |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
+
+**WYSIWYG settings**
+
++-----------------------+-----------------------------------------------------------------------------------------------------------+
+| Field                 | Description                                                                                               |
++=======================+===========================================================================================================+
+| Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
+|                       |                                                                                                           |
+|                       | .. image:: /user_guide/img/admin/user_management/user_configuration_wysiwyg.png                           |
+|                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
+|                       |                                                                                                           |
++-----------------------+-----------------------------------------------------------------------------------------------------------+
+
+
 **Sidebar settings**
 
 +----------------------+-------------------------------------------------------------------------+
 | Field                | Description                                                             |
 +======================+=========================================================================+
-| Enable Right Sidebar | Select **Yes** to enable the user to see and utilize the right sidebar. |
+| Enable Left Sidebar  | Select **Yes** to enable the user to see and utilize the left sidebar.  |
 +----------------------+-------------------------------------------------------------------------+
 | Enable Right Sidebar | Select **Yes** to enable the user to see and utilize the right sidebar. |
 +----------------------+-------------------------------------------------------------------------+
@@ -167,8 +181,10 @@ In the Display section, you can configure the following display options:
 |                                     |                                                                                                                  |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /admin_guide/img/user_management/user_configuration_showsql.png
+.. image:: /user_guide/img/admin/user_management/user_configuration_showsql.png
    :alt: A sample of the enabled display SQL field
+
+.. finish_display_set_user
 
 .. _doc-my-user-configuration-email:
 
@@ -302,3 +318,7 @@ More information on how to configure the contact information visible to the cust
 * :ref:`My User Page <doc-my-user-view-page>`
 * :ref:`My Menus Configuration <doc-my-user-menus>`
 * :ref:`Activities <user-guide-activities>`
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
