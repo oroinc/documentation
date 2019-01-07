@@ -4,7 +4,7 @@ Multi-Currency
 ==============
 
 .. contents:: :local:
-    :depth: 4
+    :depth: 2
 
 Overview
 --------
@@ -74,11 +74,8 @@ unlock the grid by unticking **Use System**.
 
 .. image:: ../img/multi_currency/use_organization_level_highlighted.png
 
-Managing Currencies
--------------------
-
 Changing Currency Rate
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 To change the currency rate manually, the sales manager needs to enter
 the numbers in the corresponding field of the Rate From/To columns.
@@ -93,7 +90,7 @@ constitute 1.2525.
 The base currency rate is always 1 to 1 and cannot be changed.
 
 Adding and Deleting Currency
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 A sales manager cannot add the currency that is not set at the system
 level.
@@ -116,7 +113,7 @@ necessary.
 To add the deleted currency back, select it from the Allowed Currencies dropdown menu and click :guilabel:`Add`.
 
 Changing Base Currency
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 The base currency can be changed. This will lead to reconversion of all multi-currency data to the new base currency, and all values will be re-converted according to the current rates. 
 
@@ -148,7 +145,7 @@ Changing the base currency results in currency change for entities:
 .. image:: ../img/multi_currency/widgets_base_currency.png
 
 Visualization
-^^^^^^^^^^^^^
+-------------
 
 When the rates are configured, you can use them to record multi-currency sales and utilize exchange rates.
 
