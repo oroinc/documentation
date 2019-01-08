@@ -1,7 +1,7 @@
 .. _doc--orders--statuses--internal:
 
-Order Internal Statuses
-=======================
+View Order Internal Statuses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An internal status is a status visible only in the management console.
 
