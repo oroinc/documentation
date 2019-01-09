@@ -88,26 +88,6 @@ You can control the order lifecycle and:
 .. toctree::
    :hidden:
 
-   create_new
-
-   create_from_rfq
-
-   create_from_shopping_list
-
-   view
-
-   viewlist
-
-   edit
-
-   delete
-
-   mark_as_shipped
-
-   cancel
-
-   close
-
-   archive
-
-   statuses
+   create
+   manage
+   control
