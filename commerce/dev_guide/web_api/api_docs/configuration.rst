@@ -188,7 +188,7 @@ By default the following form options are set:
 +--------------------------+--------------------------------------------------------------------+
 | validation\_groups       | ['Default', 'api']                                                 |
 +--------------------------+--------------------------------------------------------------------+
-| extra\_fields\_message   | This form should not contain extra fields: "{{ extra\_fields }}"   |
+| extra\_fields\_message   | This form should not contain extra fields: {{ extra\_fields }}.    |
 +--------------------------+--------------------------------------------------------------------+
 
 Example:
