@@ -71,7 +71,7 @@ OroPlatform is an open-source platform made for rapid application development of
             <ul class="guideline__list">
                   <li><a class="reference internal" href="community/issues">Report an Issue</b></a></li>
                   <li><a class="reference internal" href="community/issues/issue-security-report">Report Security Issue</b></a></li>
-                  <li><a class="reference internal" href="community/issues/documentation">Report Documentation Issue</a></li>
+                  <li><a class="reference internal" href="community/contact-community">Contact Community</a></li>
                </ul>
           </div>
       </div>
