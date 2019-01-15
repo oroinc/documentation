@@ -6,11 +6,13 @@ Contribute to Documentation
 .. contents:: :local:
     :depth: 3
 
-We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at http://www.oroinc.com/doc/orocrm. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
+We use `reStructuredText`_ markup language to write the documentation and `Sphinx`_ generator to prepare it for the web publication at https://oroinc.com/orocrm/doc/. You can find more information about the syntax on the Sphinx website by reading `reStructuredText Primer`_. The most important information is provided in the sections below.
 
-Documentation source files are maintained in the dedicated `github repository <https://github.com/orocrm/documentation>`_.
+Documentation source files are maintained in the dedicated `github repository <https://github.com/oroinc/documentation>`_.
 
 If you are willing to contribute --- you are totally welcome. The information below should help you understand the documentation structure and topic organization, useful rst directives and a simple workflow that helps quickly publish a new topic.
+
+.. note:: If you have spotted an error in the documentation, please send us an email to doc@oroinc.com and we will see to resolving the issue as soon as we can.
 
 Before You Begin
 ----------------
@@ -24,10 +26,11 @@ Fork Documentation Project
 
 If you are just making a small change, you can use the **Edit this file** button directly in the GitHub UI. It will automatically create a fork of our documentation repository and allow for the creation and submission of a new pull request with your modifications once you are done editing:
 
-* `OroPlatform and OroCRM documentation <https://github.com/oroinc/documentation>`_
+* `OroCRM documentation <https://github.com/oroinc/documentation>`_
 * `OroCommerce documentation <https://github.com/orocommerce/documentation>`_
+* `OroPlatform documentation <https://github.com/oroinc/platform-documentation>`_
 
-For large volume of  updates, fixes, and enhancements please use the following process: 
+For large volume of  updates, fixes, and enhancements please use the following process:
 
 #. `Fork <https://help.github.com/articles/fork-a-repo>`_ a documentation repository.
 
@@ -41,7 +44,7 @@ For large volume of  updates, fixes, and enhancements please use the following p
 
    To build Sphinx documentation, set up a local Sphinx build environment:
 
-      * Install `Sphinx`_.        
+      * Install `Sphinx`_.
       * Install the required Sphinx extensions: ``git submodule update --init``.
 
    To test your changes before you commit them, run ``make html`` and check the generated documentation in the ``_build`` directory.
@@ -86,7 +89,7 @@ Sample file structure:
     + img:
         - Architecture.png
     - index.rst
-      
+
 Basic Rst Syntax
 ^^^^^^^^^^^^^^^^
 
@@ -117,7 +120,7 @@ Use an underline with =, -, ^, ~, " to mark up the sections.
 
 Preview:
 
-.. image:: /community/img/contributing/write.png
+.. image::  /community/img/contributing/write.png
 
 Preserve the same level of indentation for all lines of the paragraph. More information is available `here <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs>`_.
 
@@ -139,7 +142,7 @@ To form a bullet list, start the line with \*, +, or \- followed by whitespace:
 
         - Item C
         - Item D
-          
+
             + Item E
             + Item F
 
@@ -150,7 +153,7 @@ Preview:
 
     - Item C
     - Item D
-          
+
             + Item E
             + Item F
 
@@ -303,20 +306,19 @@ Preview:
 | Cell 2.1   | Cell 2.2   | Cell 2.3  |
 +------------+------------+-----------+
 
-Advanced Rst Syntax
-^^^^^^^^^^^^^^^^^^^
+.. Advanced Rst Syntax^^^^^^^^^^^^^^^^^^^
 
-Temporarily, the information resides `on Confluence <https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation>`_.
+.. Temporarily, the information resides `on Confluence <https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation>`_.
 
-.. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
+.. .. note:: References to the section titles in the doc are enabled with the 'sphinx.ext.autosectionlabel' plugin.
 
-.. TODO: complete this section (move from confluence to github)
+.. .. need to complete this section on confluence and then possibly move to github)
 
 
 File Naming Conventions
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Please follow the recommendations below when naming the new documenation file:
+Please follow the recommendations below when naming the new documentation file:
 
 * Use a topic-based approach (e.g. assign_user_management_permissions_to_the_organization.rst).
 
@@ -336,8 +338,8 @@ Add a New Topic
 2. To link a topic to the global documentation table of contents:
 
     a) Identify the best location for the reference to your new topic in the documentation structure.
-    b) Move the newly created file to the selected folder. 
-    c) Append the relative document name (without the rst extension) to the toctree definition in the potential parent topic. 
+    b) Move the newly created file to the selected folder.
+    c) Append the relative document name (without the rst extension) to the toctree definition in the potential parent topic.
 
 For example, when we create a new topic with additional information about price list management in the *additional_pricelist_management_info.rst* file. To include it into the document structure at the **user-guide/pricing** level, we'll update the *index.rst* file in the *user-guide/pricing* directory like in the following example:
 
@@ -376,28 +378,17 @@ For example, when we create a new topic with additional information about price 
 Submit Documentation Updates
 ----------------------------
 
-Once you are ready, create a pull request in the `OroCRM documentation <https://github
-.com/orocrm/documentation>`_ repository with changes from your forked repository. See :ref:`Code Version Control <code-version-control>` for more information on using repository.
+Once you are ready, create a pull request in the `OroCRM documentation <https://github.com/oroinc/documentation>`_ repository with changes from your forked repository. See :ref:`Code Version Control <code-version-control>` for more information on using repository.
 
-After documentation review, your changes will be merged to the OroCRM documentation and will be published on the
-`OroCRM website <http://www.oroinc.com/doc/orocrm>`_.
+After documentation review, your changes will be merged to OroCRM documentation and will be published on the `OroCRM website <https://oroinc.com/orocrm/doc/>`_.
 
+**Related Topics**
 
-See Also
---------
-
-:ref:`Version Control <code-version-control>`
-
-:ref:`Code Style <doc--community--code-style>`
-
-:ref:`Set Up a Development Environment <doc--dev-env-best-practices>`
-
-:ref:`Contribute to Translations <doc--community--ui-translations>`
-
-:ref:`Report an Issue <doc--community--issue-report>`
-
-:ref:`Report a Security Issue <reporting-security-issues>`
-
-:ref:`Contact Community <doc--community--contact-community>`
-
-:ref:`Release Process <doc--community--release>`
+* :ref:`Version Control <code-version-control>`
+* :ref:`Code Style <doc--community--code-style>`
+* :ref:`Set Up a Development Environment <doc--dev-env-best-practices>`
+* :ref:`Contribute to Translations <doc--community--ui-translations>`
+* :ref:`Report an Issue <doc--community--issue-report>`
+* :ref:`Report a Security Issue <reporting-security-issues>`
+* :ref:`Contact Community <doc--community--contact-community>`
+* :ref:`Release Process <doc--community--release>`
