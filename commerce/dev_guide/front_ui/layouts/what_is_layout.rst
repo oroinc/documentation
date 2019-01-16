@@ -65,6 +65,15 @@ Type name            Default HTML output
 `button_group`       No HTML output. It is used for logical grouping of buttons. You can define how to render the button group in your application
 ===================  ===================
 
+.. _dev-guide-layouts-find-block-to-customize:
+
+Identify The Block To Customize
+-------------------------------
+
+When you need to find out the specific block and its template to customize the design or content on the storefront, use the `Twig Inspector <https://github.com/oroinc/twig-inspector>`_ tool, that is part of the OroCommerce application since v.3.1.
+
+Please, refer to the `Twig Inspector manual <https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md>`_ for the detailed information on how to use it.
+
 Related Links
 -------------
 
