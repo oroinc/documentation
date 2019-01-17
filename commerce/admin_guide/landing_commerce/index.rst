@@ -279,7 +279,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
                <ul class="guideline__list">
                   <li><a class="reference internal" href="orders/orders"><span class="std std-ref">Order Automation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i></li>
                   <li><a class="reference internal" href="orders/orders"><span class="std std-ref">Order Creation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i></li>
-                  <li><a class="reference internal" href="product/products/config-previously-purchased#sys-commerce-orders-previously-purchased-main"><span class="std std-ref">Purchase History</span></a><i class="fa fa-globe" aria-hidden="true"></i></li>
+                  <li><a class="reference internal" href="product/products/config-previously-purchased#sys-commerce-orders-previously-purchased-main"><span class="std std-ref">Purchase History</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i></li>
                   </ul>
           </div>
       </div>
