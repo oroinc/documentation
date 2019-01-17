@@ -17,4 +17,4 @@ To enable sales territories for leads, opportunities and all types of customers:
 
    .. note:: Sales Territories are disabled by default.
 
-More information on sales territories can be found in the `Sales Territories <user-guide-territories>`_ topic.
+More information on sales territories can be found in the :ref:`Sales Territories <user-guide-territories>` topic.
