@@ -16,7 +16,6 @@ The following categories of settings are available for system configuration at o
   * General Setup
 
     * :ref:`Localization <config_guide--localization--organization-localization>`
-    * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings--organization>`
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
     * :ref:`Email Configuration <admin-configuration-email-configuration>`
     * :ref:`Currency <sys--config--sysconfig--general-setup--currency-organization>`

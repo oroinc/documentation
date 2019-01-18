@@ -10,8 +10,13 @@ Hierarchy
 
 In Oro applications, you can manage all settings on multiple configuration layers:
 
-.. image:: /admin_guide/img/landing/Levels.png
-   :alt: Configuration layers
+* Globally
+* Per organization
+* Per website
+* Per user
+
+.. .. image:: /admin_guide/img/landing/Levels.png
+     :alt: Configuration layers
 
 Based on the level where configuration has taken place, settings can fall back to other levels following the pattern below:
 

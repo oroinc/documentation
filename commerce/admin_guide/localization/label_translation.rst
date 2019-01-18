@@ -17,8 +17,8 @@ Method 1
 
 To translate a product attribute label from English into the required language, change the default language first:
 
-1. Navigate to **System > Configuration > System Configuration > General Setup > Language Settings** in the main menu.
-2. In the **Language Settings**, select the required language from the list to add to **Supported Languages**.
+1. Navigate to **System > Configuration > System Configuration > General Setup > Localization** in the main menu.
+2. In the **Localization Settings**, select the required language from the list to add to **Supported Languages**.
 
    .. image:: /admin_guide/img/localization/labels/add_supported_language.png
       :alt: Add another supported language to the application in the system configuration 

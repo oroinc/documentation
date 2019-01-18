@@ -21,22 +21,21 @@ More information about the options available for each of the two categories is a
 
 .. _doc-my-user-configuration-general:
 .. _doc-my-user-configuration-localization:
+.. _doc-my-user-configuration-language:
 
 Update Localization Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the Localization section, you can configure the following localization and map related options:
 
-.. image:: /user_guide/img/getting_started/my_oro/my_user_config_localization.png
-   :alt: Localization options available on the user level
+.. image:: /admin_guide/img/localization/localization_configuration_user.png
+   :alt: Localization configuration options per user
 
-**Localization options**
+**Location options**
 
 +----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                      | Description                                                                                                                                                                     |
 +============================+=================================================================================================================================================================================+
-| Locale                     | Select the default locale for the user. Numbers, addresses, names and dates will be formatted according to the selected locale.                                                 |
-+----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Primary Location           | Select the country which will be considered the user's primary location. The addresses the user sees on the interface will be formatted according to the rules of this country. |
 +----------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Format Address Per Country | When this option is selected, addresses will be formatted according to the rules of their countries. Otherwise, the primary location formatting will be applied.                |
@@ -54,15 +53,13 @@ In the Localization section, you can configure the following localization and ma
 | Wind Speed Unit  | Select the wind speed unit.                                                    |
 +------------------+--------------------------------------------------------------------------------+
 
-.. _doc-my-user-configuration-language:
+**Localization settings**
 
-Update Language Settings
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-In the Language section, you can select the default language for the interface:
-
-.. image:: /user_guide/img/getting_started/my_oro/my_user_config_language.png
-   :alt: Selecting default languages in the language settings menu on the user level
++----------------------+-------------------------------------------------------------------------------------------+
+| Field                | Description                                                                               |
++======================+===========================================================================================+
+| Default Localization | The default language of the management console and storefront UI for the current website. |
++----------------------+-------------------------------------------------------------------------------------------+
 
 .. _doc-my-user-configuration-display:
 

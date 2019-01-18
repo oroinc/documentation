@@ -5,26 +5,34 @@ Customize Localization Settings per Website
 
 .. begin
 
-To define the custom localization options for the particular website:
+To define the custom localization options for a particular website:
 
 1. Navigate to **System > Websites** in the main menu.
-
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right and click |IcConfig| to start editing the configuration.
-
 3. Select **System Configuration > General Setup > Localization** in the menu to the left.
 
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
+   The following page is displayed:
 
-.. image:: /admin_guide/img/localization/localization_configuration_website.png
+   .. image:: /admin_guide/img/localization/localization_configuration_website.png
+      :alt: Localization configuration options per website
 
-4. Select one or multiple enabled localizations for the website from the list to support the translation of the storefront UI elements to the target language.
+4. In the **Localization Settings**, provide:
 
-5. Select the default localization for the storefront of the website.
+   * **Default Localization** --- The default language of the management console and storefront UI for the current website. The list of available languages depends on the localizations added to the **Enabled Localizations** list on the global level.
+   * **Enabled Localizations** --- The list of localizations is generated automatically based on the data preconfigured in the **System > Localization > Localizations** menu.
 
-6. Click **Save** to the save the settings.
+     All supported localizations added to this list are displayed in the language switcher in the storefront.
+
+     .. image:: /admin_guide/img/localization/language_switcher_storefront.png
+        :alt: Language switcher in the storefront
+
+     In addition, they determine the languages available for the email notifications. If there is an email template for the supported language, the users who have selected that specific language on the storefront, receive localized notifications.
+
+     .. image:: /admin_guide/img/localization/language_tabs_email_template.png
+        :alt: Language tabs in email templates
 
 
 .. finish
