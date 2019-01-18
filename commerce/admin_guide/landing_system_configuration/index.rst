@@ -24,11 +24,6 @@ This section of the configuration guide introduces you to the general applicatio
                      <li><a class="reference internal" href="../localization"><span class="std std-ref">Localization</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
 
-                     <a class="reference internal" href="../localization/language_settings#sys-config-sysconfig-general-setup-language-settings"><span class="std std-ref">Language Settings</span></a>
-
-                      <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
-                     <li>
-
                      <a class="reference internal" href="../pricing/currency-config"><span class="std std-ref">Currency</span></a>
 
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
@@ -70,7 +65,6 @@ This section of the configuration guide introduces you to the general applicatio
                <ul class="guideline__list">
                      <li><a class="reference internal" href="../integrations/google"><span class="std std-ref">Google Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
                      <li><a class="reference internal" href="../integrations/ms-exchange"><span class="std std-ref">MS Exchange Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
-                     <li><a class="reference internal" href="../integrations/commerce-integration"><span class="std std-ref"> </span></a></li>
                      </ul>
           </div>
       </div>
