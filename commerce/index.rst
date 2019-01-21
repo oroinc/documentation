@@ -212,10 +212,8 @@ This section provides links to the online documentation for the latest OroCommer
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                  <li><a class="reference internal" href="community/issues/issue">Report an Issue</b></a></li>
-                  <li><a class="reference internal" href="community/issues/security">Report Security Issue</b></a></li>
-                  <li><a class="reference internal" href="community/issues/translation">Report Translation Issue</a></li>
-                  <li><a class="reference internal" href="community/issues/documentation">Report Documentation Issue</a></li>
+                  <li><a class="reference internal" href="community/issues">Report an Issue</b></a></li>
+                  <li><a class="reference internal" href="community/contact-community">Contact Community</b></a></li>
                </ul>
           </div>
       </div>
