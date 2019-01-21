@@ -16,7 +16,7 @@ To enable previously purchased products page globally:
 
 3. In the **Purchase History** section:
 
-   * *Enable Purchased History* --- Clear the **Use Default** checkbox and select the **Enable Purchase History** check box to enable the Previously Purchased Products page.
+   * *Enable Purchase History* --- Clear the **Use Default** chec kbox and select the **Enable Purchase History** check box to enable the Previously Purchased Products page.
 
    * *Display Products Purchased Within (Days)* --- The period of 90 days is set by default. To change it, clear the **Use Default** check box and enter the number of days that the purchase history should cover.
 

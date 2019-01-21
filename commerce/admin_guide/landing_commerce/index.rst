@@ -278,9 +278,9 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                  <li><a class="reference internal" href="orders/orders/order_automation_global#configuration-commerce-orders-order-automation-global"><span class="std std-ref">Order Automation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i></li>
-                  <li><a class="reference internal" href="orders/orders/order_creation_global#configuration-commerce-orders-order-creation-global"><span class="std std-ref">Order Creation</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true"  ></i> <i class="fa fa-globe" aria-hidden="true"  ></i></li>
-                  <li><a class="reference internal" href="product/products/config_previously_purchased#sys-commerce-orders-previously-purchased-main"><span class="std std-ref">Purchase History</span></a><i class="fa fa-globe" aria-hidden="true"  ></i></li>
+                  <li><a class="reference internal" href="orders/orders"><span class="std std-ref">Order Automation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i></li>
+                  <li><a class="reference internal" href="orders/orders"><span class="std std-ref">Order Creation</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i></li>
+                  <li><a class="reference internal" href="product/products/config-previously-purchased#sys-commerce-orders-previously-purchased-main"><span class="std std-ref">Purchase History</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i></li>
                   </ul>
           </div>
       </div>
