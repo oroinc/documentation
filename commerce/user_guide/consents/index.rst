@@ -43,7 +43,7 @@ You can view all consents accepted by your customer users in the **Consents** se
 
 By default, consents are disabled in OroCommerce. 
 
-To enable and configure consents in the OroCommerce, take the following steps: 
+To enable and configure consents in OroCommerce, take the following steps:
 
 * Enable consents in the :ref:`system configuration <configuration--guide--commerce--configuration--consents>`.
 * Create a :ref:`landing page <user-guide--consents--add>` with the text of the consent, and add it as a content variant of a content tree node.
@@ -52,11 +52,12 @@ To enable and configure consents in the OroCommerce, take the following steps:
 
 Consents can be configured on :ref:`two levels <configuration--guide--config-levels>`, :ref:`global <doc-system-configuration>` and :ref:`website <doc-website-configuration>`. However, you can add consents to the storefront on the website level only when consents are enabled globally.
 
-Learn more on the configuration of consents in OroCommerce in the following topics:
+Learn more on the configuration and localization of consents in OroCommerce in the following topics:
 
 * :ref:`Configure Consents <configuration--guide--commerce--configuration--consents>`
 * :ref:`Create Consents <user-guide--consents--create>`
 * :ref:`Add a Consent Landing Page to a Web Catalog <user-guide--consents--add>`
+* :ref:`Localize Consents <user-guide--consents--localizing-consents>`
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Explore the Checkout with Consents <frontstore-guide--orders-checkout--consents>`
@@ -78,5 +79,6 @@ Learn more on the configuration of consents in OroCommerce in the following topi
 
    create_consent
    add_consent
+   localize_consents
    accepted_consents_report
    cookie_banner
