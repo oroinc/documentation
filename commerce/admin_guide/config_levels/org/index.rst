@@ -18,7 +18,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Localization <config_guide--localization--organization-localization>`
     * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings--organization>`
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
-    * Email Configuration
+    * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
     * :ref:`Currency <sys--config--sysconfig--general-setup--currency-organization>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
@@ -30,57 +30,61 @@ The following categories of settings are available for system configuration at o
 
 * **Commerce**
 
-  * Catalog
+  * Guests
 
-    * :ref:`Related Items <sys--users--organization--commerce--catalog--related-products>`
+    * :ref:`Website Access <sys--conf--commerce--guest--enable--access>`
 
   * Customer
 
-    * Customer Users
-    * Customer Requests
+    * :ref:`Customer Users <system--user-mngm--organization--configuration--commerce--customers--customer-users>`
+    * :ref:`Customer Requests <sys--conf--commerce--customer--contact-request-organization>`
 
   * Design
 
     * :ref:`Theme <configuration--commerce--design--theme--theme-settings--organization>`
 
-  * Guests
-
-    * Website Access
-
-  * Inventory
-
-    * Warehouses
-    * Product Options
-    * Limitations
-
-  * Orders
-
-    * Order Automation
-    * Order Creation
-    * Purchase History
-
   * Product
 
-    * Product Images
-    * Featured Products
-    * Promotions
-    * Product Collections
+    * :ref:`Product Images. Image Preview <sys--commerce--product--product-images--image-preview--organization>`
+    * :ref:`Product Images. Popup Gallery <sys--users--organization--commerce--products--gallery-slider>`
+    * :ref:`Featured Products <sys--users--organization--commerce--products--featured-products>`
+    * :ref:`Promotions. New Product Icons <sys--users--organization--commerce--products--new-arrivals>`
+    * :ref:`Promotions. New Arrivals <sys--commerce--product--new-arrivals-block-organization>`
+    * :ref:`Configurable Products <config-guide--landing-commerce--products--configurable-products--organization>`
 
   * Sales
 
-    * Quick Order Form
-    * Shopping List
-    * Contacts
-    * Checkout
-    * Request for Quote
+    * :ref:`Quick Order Form <user-guide--system-configuration--commerce-sales--quick-order-form--organization>`
+    * :ref:`Shopping List. Guest Shopping Lists <user-guide--system-configuration--commerce-sales-shopping-list-per-organization>`
+    * :ref:`Shopping List. Mass Product Actions <user-guide--system-configuration--commerce-sales-shopping-list--mass-action--organization>`
+    * :ref:`Contacts <sys--conf--commerce--sales--contacts-organization>`
+    * :ref:`Checkout <user-guide--system-configuration--commerce-sales-organization>`
+    * :ref:`Request for Quote <user-guide--system-configuration--commerce-sales--rfq--organization>`
+
+  * Orders
+
+    * :ref:`Order Automation <configuration--commerce--orders--order-automation--organization>`
+    * :ref:`Order Creation <configuration--commerce--orders--order-creation--organization>`
+    * :ref:`Purchase History <sys--commerce--orders--previously-purchased--org>`
+
+  * Catalog
+
+    * :ref:`Related Items <sys--users--organization--commerce--catalog--related-products>`
+
+  * Inventory
+
+    * :ref:`Warehouses <configuration--guide--commerce--configuration--inventory--warehouses>`
+    * :ref:`Product Options <sys--conf--commerce--inventory--product-options--organization>`
+    * :ref:`Limitations <configuration--guide--commerce--configuration--inventory--limitations>`
+
 
 * **CRM**
 
   * Sales Pipeline
 
-    * Sales Territories
-    * Lead
-    * Opportunity
+    * :ref:`Sales Territories <sys--configuration--crm--sales-pipeline--sales-territories>`
+    * :ref:`Lead <sys--configuration--crm--sales-pipeline--sales-territories-leads>`
+    * :ref:`Opportunities <sys--configuration--crm--sales-pipeline--opportunities>`
     * Sales Process (Deprecated)
 
 .. toctree::

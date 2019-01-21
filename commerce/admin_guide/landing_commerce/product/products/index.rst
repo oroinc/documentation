@@ -98,6 +98,8 @@ OroCommerce groups product configuration options into the following categories:
 
    global_previously_purchased
 
+   organization_previously_purchased
+
    website_previously_purchased
 
    related_products/index

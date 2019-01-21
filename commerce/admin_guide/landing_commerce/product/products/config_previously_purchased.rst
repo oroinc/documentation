@@ -19,6 +19,13 @@ Enable and Set Up Previously Purchased Products Globally
    :start-after: begin
    :end-before: finish
 
+Enable and Set Up Previously Purchased Products per Organization
+----------------------------------------------------------------
+
+.. include:: /admin_guide/landing_commerce/product/products/organization_previously_purchased.rst
+   :start-after: begin
+   :end-before: finish
+
 Enable and Set Up Previously Purchased Products per Website
 -----------------------------------------------------------
 
