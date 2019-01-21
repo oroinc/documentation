@@ -20,7 +20,7 @@ The following categories of settings are available for system configuration (fol
     * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`
     * :ref:`Currency <sys--config--sysconfig--general-setup--currency>`
     * :ref:`Display Settings <configuration--general-setup--display-settings>`
-    * User Settings
+    * :ref:`User Settings <admin-configuration-user-settings>`
     * :ref:`Tracking <admin-configuration-tracking-settings>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings>`
     * :ref:`Email Configuration <admin-configuration-email-configuration>`
@@ -31,7 +31,7 @@ The following categories of settings are available for system configuration (fol
     * :ref:`MS Exchange Settings <admin-configuration-ms-exchange-integration-settings>`
     * :ref:`MS Outlook Settings <config-guide--integrations--ms-outlook>`
     * :ref:`dotmailer Settings <admin-configuration-dotmailer-integration-settings>`
-    * MailChimp Settings
+    * :ref:`MailChimp Settings <user-guide-mc-integration>`
 
 * :ref:`CRM Configuration <configuration--guide--crm--configuration>` (Sales Pipeline)
 
