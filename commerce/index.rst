@@ -214,6 +214,7 @@ This section provides links to the online documentation for the latest OroCommer
             <ul class="guideline__list">
                   <li><a class="reference internal" href="community/issues">Report an Issue</b></a></li>
                   <li><a class="reference internal" href="community/contact-community">Contact Community</b></a></li>
+                  <li><a class="reference internal" href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ">Join the Oro Slack Workspace</b></a></li>
                </ul>
           </div>
       </div>
