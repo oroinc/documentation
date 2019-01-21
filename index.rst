@@ -126,7 +126,9 @@ Developer's Guide
     
     <div style="float: none;margin: 0 auto;width: 100%;height:100%">
         <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-flag fa-2x" style="color:#FFC221"></i> Support and Contribution</h3></a>
-        <p>Join Oro community and contribute to the open-source OroCRM Community Edition. Check out the <a class="reference internal" href="community">Community Guide</a> to find out how to <a class="reference internal" href="community/contact-community">contact community</a> and <a class="reference internal" href="community/issues">report an issue</a>.</p>
+        <p>Join Oro community <a class="reference internal" href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ">team chat channel on Slack </a> and contribute to the open-source OroCRM Community Edition. Check out the <a class="reference internal" href="community">Community Guide</a> to find out how to <a class="reference internal" href="community/contact-community">contact community</a> and <a class="reference internal" href="community/issues">report an issue</a>.
+
+        </p>
 
 
     </div>
