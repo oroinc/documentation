@@ -18,7 +18,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Localization <config_guide--localization--organization-localization>`
     * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings--organization>`
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
-    * Email Configuration
+    * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
     * :ref:`Currency <sys--config--sysconfig--general-setup--currency-organization>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
@@ -33,9 +33,9 @@ The following categories of settings are available for system configuration at o
 
   * Sales Pipeline
 
-    * Sales Territories
-    * Lead
-    * Opportunity
+    * :ref:`Sales Territories <sys--configuration--crm--sales-pipeline--sales-territories>`
+    * :ref:`Lead <sys--configuration--crm--sales-pipeline--sales-territories-leads>`
+    * :ref:`Opportunities <sys--configuration--crm--sales-pipeline--opportunities>`
     * Sales Process (Deprecated)
 
 .. toctree::
