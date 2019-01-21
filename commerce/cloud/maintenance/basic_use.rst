@@ -222,6 +222,29 @@ Run application commands via the `app:console`, for example:
 
     orocloud-cli app:console oro:user:list
 
+To pass a command that contains arguments or options, wrap the command in quotes.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit='+30 seconds'"
+
+If a command contains quotes and is wrapped in the same quotes type, the inner quotes must be escaped with  ``\``.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit=\"+30 seconds\""
+
+
+By default, the `app:console` command runs in `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g. to monitor command execution in real time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli app:console "oro:message-queue:consume --memory-limit=512" -vvv
+
+
 Application Cache
 -----------------
 
@@ -243,3 +266,142 @@ Sometimes you may require to clear the application cache (for example, after app
 
 * `--force` is optional, it allows to skip execution confirmation.
 * `--skip-session-flush` is optional, it allows to skip session data deletion (e.g. logged-in users are not logged out after command completion).
+
+Media Upload
+-------------
+
+Sometimes you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files e.g. ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
+
+Usage examples:
+
+Show command description and help:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli media:upload --help
+
+
+.. code-block:: none
+    :linenos:
+
+    Description:
+      Uploads media content from the given source to a selected destination [ public | products ]. Allowed file types: [ svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js ]
+
+    Usage:
+      media:upload [options] [--] [<source> [<destination>]]
+
+    Arguments:
+      source                Media source directory full path, e.g. `/tmp/media/`
+      destination           Media destination location. Allowed values: [ public | products ]
+
+    Options:
+          --log=LOG         Log to file
+          --force           Causes the media source directory content be physically moved to destination.
+      -h, --help            Display this help message
+      -q, --quiet           Do not output any message
+      -V, --version         Display this application version
+          --ansi            Force ANSI output
+          --no-ansi         Disable ANSI output
+      -n, --no-interaction  Do not ask any interactive question
+      -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+The following command transfers media files from the `~/media` directory into the destination directory which will be asked. The command is executed in ``DRY-RUN`` mode.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli media:upload ~/media
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task media:upload
+    Please select media destination location:
+      [public  ] media/uploads/
+      [products] import_export/product_images/
+     > products
+    [localhost] sending incremental file list
+    ./
+    2a508b3.jpg
+    36cb536.png
+    7946a9a.js
+    e72b1f9.jpg
+    e72b1fa.ico
+    e72b1fb.css
+    subdirectory/
+    subdirectory/6b6855e.svg
+    subdirectory/7946a9a.js
+
+    sent 282 bytes  received 50 bytes  664.00 bytes/sec
+    total size is 950.04K  speedup is 2,861.58 (DRY RUN)
+    [localhost]
+      Media transfer executed in DRY-RUN mode.
+      Please check output and if everything is fine - execute the command with `--force` flag.
+    ✔ Ok
+
+The following command transfers media files from the `~/media` directory into the destination directory which will be asked. The command is executed in the ``FORCED`` mode.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli media:upload ~/media --force
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task media:upload
+    Please select media destination location:
+      [public  ] media/uploads/
+      [products] import_export/product_images/
+     > products
+    [localhost] sending incremental file list
+    ./
+    2a508b3.jpg
+    36cb536.png
+    7946a9a.js
+    e72b1f9.jpg
+    e72b1fa.ico
+    e72b1fb.css
+    subdirectory/
+    subdirectory/6b6855e.svg
+    subdirectory/7946a9a.js
+
+    sent 950.90K bytes  received 202 bytes  1.90M bytes/sec
+    total size is 950.04K  speedup is 1.00
+    [localhost] Media successfully transferred.
+    ✔ Ok
+
+The following command transfers media files from the `~/media` directory into the destination directory which is provided as argument.  The command is executed in the ``FORCED`` mode.
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli media:upload ~/media public --force
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task media:upload
+    [localhost] sending incremental file list
+    ./
+        2a508b3.jpg
+        36cb536.png
+        7946a9a.js
+        e72b1f9.jpg
+        e72b1fa.ico
+        e72b1fb.css
+        subdirectory/
+        subdirectory/6b6855e.svg
+        subdirectory/7946a9a.js
+
+    sent 950.90K bytes  received 202 bytes  1.90M bytes/sec
+    total size is 950.04K  speedup is 1.00
+    [localhost] Media successfully transferred.
+    ✔ Ok
+    {code}
+
+
+.. note:: The files in the source directory always overwrite the same files in the destination directory.
+
+.. note:: Please always use `undescores` instead of `spaces` in the `source` directory name.
