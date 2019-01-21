@@ -10,7 +10,7 @@ Oro application supports localization and provides decent out-of-the-box transla
 
 See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-translations>` for more information about the translation process.
 
-Keep reading to learn about the localization process (:ref:`open the quick visual guide <config-localization-quick-start>`):
+.. Keep reading to learn about the localization process (:ref:`open the quick visual guide <config-localization-quick-start>`):
 
 +-------------+-----------------------------------+--------------------------------------------------------------------+
 | Process     | Management Console Localization   | Storefront Localization                                            |
