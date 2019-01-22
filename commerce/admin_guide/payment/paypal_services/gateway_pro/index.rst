@@ -34,7 +34,7 @@ To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
 
 #. Fill in the :ref:`PayPal Specific Integration Details <user-guide--payment--configuration--payment-method-integration--paypal-details>`:
 
-   .. include:: /admin_guide/payment/paypal_services/getaway_pro/paypal_payment_integration_details.rst
+   .. include:: /admin_guide/payment/paypal_services/gateway_pro/paypal_payment_integration_details.rst
       :start-after: embedded_list
       :end-before: end_of_embedded_list
 

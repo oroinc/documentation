@@ -22,11 +22,11 @@ PayPay Services Overview
 PayPal Payflow Payment Gateway VS PayPal Payments Pro
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* **PayPal Payflow Getaway** is a secure payment gateway that receives information about payments via debit and credit cards, authorizations, captures, etc., processes this information and sends payment transactions to the external payment processor that handles the credit card payments.
+* **PayPal Payflow Gateway** is a secure payment gateway that receives information about payments via debit and credit cards, authorizations, captures, etc., processes this information and sends payment transactions to the external payment processor that handles the credit card payments.
 
 * **PayPal Payment Pro** uses PayPal Payflow Payment Gateway and PayPal payment processor.
 
-PayPal Getaway/Pro Ordinary VS Express Checkout
+PayPal Gateway/Pro Ordinary VS Express Checkout
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * For the **ordinary** checkout, a customer user enters the card number, issue date, and, optionally, CVV code. This information is kept in their browser until it is sent directly to the payment gateway server (avoiding the website). Ordinary checkout in OroCommerce enables delayed payment capture.
@@ -40,11 +40,11 @@ PayPal Express Payment Service Package
 
 It is a fast, safe and reliable online global payment system that offers easy online payments for businesses and individuals.
 
-PayPal Express, **unlike Getaway and Pro**, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+PayPal Express, **unlike Gateway and Pro**, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
 
 Keep in mind that depending on PayPal policies, payment methods may be different in some countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries. You can verify PayPal Express availability in your country on the `PayPal website <https://www.paypal.com/us/webapps/mpp/country-worldwide>`__.
 
-PayPal Getaway/Pro Prerequisites
+PayPal Gateway/Pro Prerequisites
 --------------------------------
 
 Before adding a PayPal Payflow Gateway as a payment method in OroCommerce, please have a look at the prerequisites for the integration:
@@ -61,7 +61,7 @@ Before you can use PayPal Express in OroCommerce, please have a look at the prer
 
 * :ref:`Prerequisites for PayPal Express Configuration <user-guide--payment--prerequisites--paypal-express>`
 
-PayPal Getaway/Pro Configuration Flow
+PayPal Gateway/Pro Configuration Flow
 -------------------------------------
 
 To enable PayPal payment methods at the checkout of the OroCommerce storefront:
@@ -78,7 +78,7 @@ PayPal Express Configuration Flow
 
 **Related Articles**
 
-* :ref:`Enable PayPal Integration (Getaway/Pro) <sys--integrations--manage-integrations--paypal-payflow-gateway>`
+* :ref:`Enable PayPal Integration (Gateway/Pro) <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`Enable PayPal Express Integration <config-guide--payment--paypal-express>`
 * :ref:`Payment Integration Details For PayPal Payment Methods <user-guide--payment--configuration--payment-method-integration--paypal-details>`
 * :ref:`Payment Actions (Authorize/Authorize and Charge) <user-guide--payment--configuration--payment-method-integration--payment-actions>`
@@ -93,5 +93,5 @@ PayPal Express Configuration Flow
    paypal_payment_actions
    paypal_prerequisites
    express/index
-   getaway_pro/index
+   gateway_pro/index
    
