@@ -92,5 +92,5 @@ PayPal Express Configuration Flow
    paypal_payment_actions
    paypal_prerequisites
    express/index
-   Gateway_pro/index
+   gateway_pro/index
    
