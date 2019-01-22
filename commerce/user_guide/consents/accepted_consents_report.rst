@@ -27,17 +27,17 @@ As an illustration, we are creating a report to collect statistics on buyers who
    * Click **Accepted Consents**.
    * Select one or several consents from the list.
  
-    .. .. image:: /admin_guide/img/configuration/customer/consents/accepted_consents_report.png
-       :alt: An example of a report with accepted consents
+.. image:: /admin_guide/img/configuration/customer/consents/create_consent_report.png
+   :alt: An example of a report with accepted consents
 
 #. Click **Save and Close** on the top right of the page.
 
 Once saved, the newly created report appears on the page of all reports.
 
- .. .. image:: /admin_guide/img/configuration/customer/consents/consent_report_grid.png
-    :alt: The table of all reports with the newly created report with accepted consents
+.. image:: /admin_guide/img/configuration/customer/consents/consent_report_table.png
+   :alt: The table of all reports with the newly created report with accepted consents
 
-.. The report itself lists the names of the customer users who have accepted the required consent.
+The report itself lists the names of the customer users who have accepted the required consent.
 
- .. .. image:: /admin_guide/img/configuration/customer/consents/accepted_consents_report_page.png
-    :alt: The page of the report with accepted consents
+.. image:: /admin_guide/img/configuration/customer/consents/accepted_consents_report_page.png
+   :alt: The page of the report with accepted consents
