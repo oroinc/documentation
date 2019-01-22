@@ -11,6 +11,8 @@ It also enables developers to configure this search index in the YAML configurat
    :depth: 3
 
 
+https://github.com/laboro/dev/tree/master/package/commerce/src/Oro/Bundle/WebsiteSearchBundle#table-of-contents
+
 Quick Start
 -----------
 
