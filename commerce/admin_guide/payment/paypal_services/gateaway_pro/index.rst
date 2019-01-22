@@ -66,8 +66,14 @@ To enable PayPal Payflow Gateway or PayPal Payment Pro payments:
    * **Default Owner** --- A user who is responsible for this integration and manages it.
 
 #. Click **Save and Close**.
+
 Next, set up a payment rule that enables these payment methods (PayPal Payflow Gateway and PayPal Payflow Gateway Express Checkout and/or PayPal Payment Pro and PayPal Payment Pro Express Checkout) for all or some customer orders via the :ref:`Payment Rules Configuration <sys--payment-rules>` page.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   paypal_payment_integration_details
