@@ -11,7 +11,7 @@ PayPal integrations include the following additional integration information:
 
 * Basic Information and Display Options:
 
-  - :ref:`Common Payment Integration Details <user-guide--payment--configuration--payment-method-integration--common-details>` (name, label, and short label) for the ordinary PayPal payment.
+  - Common Payment Integration Details (name, label, and short label) for the ordinary PayPal payment.
   - **Allowed Credit Card Types** – Select one or more items from the list of the credit card types. Supported types are Visa, Mastercard, Discover, American Express. Press and hold Ctrl/Shift and click on the items to select.
 
 * Integration settings:
