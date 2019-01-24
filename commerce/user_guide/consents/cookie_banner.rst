@@ -15,7 +15,7 @@ Add a Cookie Banner
 
 To set up a cookie banner:
 
-1. Download the OroCommerceCookieBannerBundle archived file.
+1. Download the `OroCommerceCookieBannerBundle <https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/CommerceCookieBannerBundle.zip>`__ archived file.
 2. Unpack the downloaded file to **{application_name}/src/Oro/Bundle**.
 3. Run the following commands:
  
