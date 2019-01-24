@@ -11,5 +11,5 @@ OroCheckoutBundle enables checkout workflows in the OroCommerce storefront to co
 * `Checkout Subtotal <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/checkout_subtotal.md>`__
 * `Order Confirmation Email Template <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md>`__
 
-   * `Functions <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md#functions>`__
-   * `Filters <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md#filters>`__
+  * `Functions <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md#functions>`__
+  * `Filters <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md#filters>`__

@@ -1,4 +1,4 @@
-.. _bundle-docs-commerce-customer-bundle:
+.. _bundle-docs-commerce-customer-portal-customer-bundle:
 
 OroCustomerBundle
 =================

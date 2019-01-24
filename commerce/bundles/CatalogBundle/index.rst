@@ -1,7 +1,7 @@
 .. _bundle-docs-commerce-catalog-bundle:
 
-OroCatalogBundle Documentation
-==============================
+OroCatalogBundle
+================
 
 OroCatalogBundle defines the master catalog and the categories that are aimed at structuring products in OroCommerce.
 

@@ -1,7 +1,7 @@
 .. _bundle-docs-commerce:
 
-OroCommerce Bundles Documentation
-=================================
+Bundles Documentation
+=====================
 
 OroCommerce offers a wide range of bundles that contain the core functionality of the application. OroCommerce bundles reside in our GitHub repository. All documentation that relates to OroCommerce bundles is collected below.
 
