@@ -601,6 +601,7 @@ Here is an example of a fixture that adds a user without permissions:
     use Symfony\Component\DependencyInjection\ContainerAwareInterface;
     use Symfony\Component\DependencyInjection\ContainerInterface;
 
+    use Oro\Bundle\UserBundle\Entity\Role;
     use Oro\Bundle\UserBundle\Entity\UserApi;
 
     class LoadUserData extends AbstractFixture implements ContainerAwareInterface
@@ -623,8 +624,7 @@ Here is an example of a fixture that adds a user without permissions:
 
             // Find role for user to able to authenticate in test.
             // You can use any available role that you want dependently on test logic.
-            $role = $userManager->getStorageManager()
-                ->getRepository('OroUserBundle:Role')
+            $role = $manager->getRepository(Role::class)
                 ->findOneBy(array('role' => 'IS_AUTHENTICATED_ANONYMOUSLY'));
 
             // Creating new user
