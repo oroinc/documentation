@@ -11,6 +11,7 @@ With the corresponding configuration of the bundle, customers can view applied t
 
 The bundle also provides an interface that enables developers to implement integrations with additional third-party tax providers to the OroCommerce applications.
 
-**Table of Contents**
+Bundle Usage
+------------
 
 * `Create Custom Tax Provider <https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle#create-custom-tax-provider>`__

@@ -10,13 +10,22 @@ The bundle also allows management console administrators to configure B2B-custom
 Bundle responsibilities
 -----------------------
 
-* Customer User CRUD
+Backend:
+
+* Customer, Customer User, Customer User addresses, Customer User Visitor CRUD
 * Possibility to assign Roles to Customer Users
 * Activate and deactivate Customer Users
 * Send welcome email
-* Password edit and automatic password generation for new Customer User
+* Password edit and automatic password generation for a new Customer User
 
-**Table of Contents**
+Frontend:
+
+* Registration
+* Customer User, Customer User address CRUD
+* Authorization of a user in the storefront
+
+Bundle Resources
+----------------
 
 * `ACL <https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle#acl>`__
 * `Anonymous customer user functionality <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md>`__
@@ -30,3 +39,9 @@ Bundle responsibilities
   * `Guest Customer User <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md#guest-customer-user>`__
   * `Ownership <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md#ownership>`__
   * `Configuration of Features and Permissions <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md#configuring-features-and-permissions>`__
+
+
+
+
+
+

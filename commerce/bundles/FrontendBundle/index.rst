@@ -5,9 +5,37 @@ OroFrontendBundle
 
 OroFrontendBundle enables the storefront for interacting with customers in Oro application. The storefront complements the management console UI that is available to the company employees only.
 
-The bundle adapts Oro application functionality to work with the storefront, enables management console administrators to configure related settings in the system configuration UI and provides a style book for the frontend developers as the guidance for the storefront markup conventions.
+Bundle Responsibilities
+-----------------------
 
-**Table of Contents**
+* Adapts Oro application functionality to work with the storefront
+* Enables management console administrators to configure related settings in the system configuration UI
+* Provides a style book for the frontend developers as the guidance for the storefront markup conventions
+
+.. converted to how to
+
+Bundle Usage
+------------
+
+* `How to turn off on fly routes generation <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/configuration.md>`__
+* `How to customize a sticky panel <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization>`__
+* `How to create a custom sticky panel <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels>`__
+* `How to move dom element from one container to another <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
+* `How to organize setup mass action on datagrid <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md>`__
+* `How to close website for non-authenticated visitors <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors>`__
+* `How to prevent displaying the management console datagrids on the storefront <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids>`__
+* `How to access frontend REST API <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-api.md>`__
+
+
+
+
+
+
+
+.. mirroring GitHub structure of the original doc
+
+Bundle Resources
+----------------
 
 * `Configuration: Debug Routes <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/configuration.md>`__
 * `Oro Frontend Development Guidelines <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md>`__
@@ -26,7 +54,7 @@ The bundle adapts Oro application functionality to work with the storefront, ena
 
 * `DOM Relocation View <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md>`__
 
-  * `How tot Use <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
+  * `How to Use <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
   * `Options <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#options>`__
 
 * `Set up Datagrid Mass Action on Storefront <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md>`__
