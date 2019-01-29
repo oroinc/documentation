@@ -14,4 +14,4 @@ The bundle also provides an interface that enables developers to implement integ
 Bundle Usage
 ------------
 
-* `Create Custom Tax Provider <https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle#create-custom-tax-provider>`__
+* `Create a Custom Tax Provider <https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle#create-custom-tax-provider>`__

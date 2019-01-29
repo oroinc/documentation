@@ -12,7 +12,6 @@ Bundle Usage
 
 * `Enable Previously Purchased Products <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#config>`__
 
-
 Bundle Resources
 ----------------
 
@@ -30,10 +29,11 @@ Bundle Resources
 * `Managers <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#managers>`__
 
   * `ProductReindexManager <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#productreindexmanager>`__
-  * `Providers <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#providers>`__
 
-    * `PreviouslyPurchasedConfigProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#previouslypurchasedconfigprovider>`__
-    * `LatestOrderedProductsInfoProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#latestorderedproductsinfoprovider>`__
-    * `PreviouslyPurchasedOrderStatusesProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#previouslypurchasedorderstatusesprovider>`__
-    * `PreviouslyPurchasedOrderStatusesProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#previouslypurchasedorderstatusesprovider>`__
+* `Providers <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#providers>`__
+
+  * `PreviouslyPurchasedConfigProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#previouslypurchasedconfigprovider>`__
+  * `LatestOrderedProductsInfoProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#latestorderedproductsinfoprovider>`__
+  * `PreviouslyPurchasedOrderStatusesProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#previouslypurchasedorderstatusesprovider>`__
+  * `PreviouslyPurchasedOrderStatusesProvider <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#previouslypurchasedorderstatusesprovider>`__
 

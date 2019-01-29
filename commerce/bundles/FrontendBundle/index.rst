@@ -17,14 +17,14 @@ Bundle Responsibilities
 Bundle Usage
 ------------
 
-* `How to turn off on fly routes generation <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/configuration.md>`__
-* `How to customize a sticky panel <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization>`__
-* `How to create a custom sticky panel <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels>`__
-* `How to move dom element from one container to another <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
-* `How to organize setup mass action on datagrid <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md>`__
-* `How to close website for non-authenticated visitors <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors>`__
-* `How to prevent displaying the management console datagrids on the storefront <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids>`__
-* `How to access frontend REST API <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-api.md>`__
+* `Disable JS Routes Source File Generation on the Fly <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/configuration.md>`__
+* `Customize a Sticky Panel <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization>`__
+* `Create a Custom Sticky Panel <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels>`__
+* `Move Dom Element from One Container to Another <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
+* `Organize Setup Mass Action on Datagrid <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md>`__
+* `Close Website for Non-authenticated Visitors <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors>`__
+* `Prevent Displaying the Management Console Datagrids on the Storefront <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids>`__
+* `Access Frontend REST API <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-api.md>`__
 
 
 
@@ -34,34 +34,33 @@ Bundle Usage
 
 .. mirroring GitHub structure of the original doc
 
-Bundle Resources
-----------------
+.. Bundle Resources----------------
 
-* `Configuration: Debug Routes <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/configuration.md>`__
-* `Oro Frontend Development Guidelines <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md>`__
+..  `Configuration: Debug Routes <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/configuration.md>`__
+..  `Oro Frontend Development Guidelines <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md>`__
 
-  * `Naming Conventions <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#naming-conventions>`__
-  * `HTML Coding Standards <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#html-coding-standards>`__
-  * `CSS Coding Standards <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#css-coding-standards>`__
-  * `Main Mixins and Functions <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#the-main-mixins-and-functions>`__
-  * `Best Practices <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#best-practices>`__
+ .. `Naming Conventions <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#naming-conventions>`__
+ .. `HTML Coding Standards <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#html-coding-standards>`__
+ .. `CSS Coding Standards <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#css-coding-standards>`__
+ .. `Main Mixins and Functions <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#the-main-mixins-and-functions>`__
+ .. `Best Practices <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontendGuidelines.md#best-practices>`__
 
-* `Sticky Panel View <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md>`__
+.. `Sticky Panel View <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md>`__
 
-  * `How to Use <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#how-to-usage>`__
-  * `Customization <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization>`__
-  * `Several Sticky Panels <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels>`__
+  .. `How to Use <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#how-to-usage>`__
+  .. `Customization <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization>`__
+  .. `Several Sticky Panels <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels>`__
 
-* `DOM Relocation View <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md>`__
+.. `DOM Relocation View <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md>`__
 
-  * `How to Use <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
-  * `Options <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#options>`__
+  .. `How to Use <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use>`__
+  .. `Options <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#options>`__
 
-* `Set up Datagrid Mass Action on Storefront <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md>`__
+.. `Set up Datagrid Mass Action on Storefront <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md>`__
 
-* `Frontend Access <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md>`__
+.. `Frontend Access <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md>`__
 
-  * `Close website for non-authenticated visitors <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors>`__
-  * `Frontend Datagrids <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids>`__
+  .. `Close website for non-authenticated visitors <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors>`__
+  .. `Frontend Datagrids <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids>`__
 
-* `Frontend REST API <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-api.md>`__
+.. `Frontend REST API <https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-api.md>`__

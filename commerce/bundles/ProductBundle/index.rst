@@ -27,20 +27,20 @@ Bundle Usage
 Bundle Resources
 ----------------
 
-* `Expected Dependencies <https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ProductBundle#expected-dependencies>`__
+.. `Expected Dependencies <https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ProductBundle#expected-dependencies>`__
 
 * `Product Unit Formatting <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md>`__
 
   * `Formats Source <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#format-source>`__
   * `PHP Product Unit Value Formatter <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#php-product-unit-value-formatter>`__
 
-    * `Twig <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#twig>`__
-    * `Filters <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#filters>`__
+    .. `Twig <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#twig>`__
+    .. `Filters <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#filters>`__
 
   * `PHP Product Unit Label Formatter <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#php-product-unit-label-formatter>`__
 
-    * `Twig <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#twig>`__
-    * `Filters <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#filters>`__
+    .. `Twig <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#twig>`__
+    .. `Filters <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#filters>`__
 
 * `Two Step Product Creation <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/two-step-product-creation.md>`__
 
