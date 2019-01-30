@@ -7,26 +7,8 @@ OroCustomerBundle enables B2B-customer-related features in Oro applications and 
 
 The bundle also allows management console administrators to configure B2B-customer-related settings in the system configuration UI for the entire system, individual organizations, and websites.
 
-Bundle Responsibilities
------------------------
-
-Backend:
-
-* Customer, Customer User, Customer User Addresses, Customer User Visitor CRUD
-* Possibility to assign Roles to Customer Users
-* Activate and deactivate Customer Users
-* Send welcome email
-* Password edit and automatic password generation for a new Customer User
-
-Frontend:
-
-* Registration
-* Customer User, Customer User address CRUD
-* Authorization of a user in the storefront
-* Assign Customer User Roles by an Admin Customer User
-
-Bundle Usage
-------------
+Related Documentation
+---------------------
 
 * `Configure Frontend Permissions (ACL) <https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle#acl>`__
 
