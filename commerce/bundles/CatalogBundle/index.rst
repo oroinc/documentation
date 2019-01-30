@@ -15,11 +15,16 @@ Bundle Responsibilities
 * Splitting products into categories
 * Structuring and grouping products
 
+Bundle Usage
+------------
+
+* `Improve Catalog Performance <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CatalogBundle/Resources/doc/performance-notes.md>`__
+
 Bundle Resources
 ----------------
 
 * `Breadcrumbs <https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/CatalogBundle#breadcrumbs>`__
 * `Default Product Options <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CatalogBundle/Resources/doc/default-product-options.md>`__
-* `Catalog Performance: Catalog Menu Caching <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CatalogBundle/Resources/doc/performance-notes.md>`__
+
 
 
