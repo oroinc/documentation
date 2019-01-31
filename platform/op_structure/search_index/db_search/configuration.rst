@@ -23,8 +23,6 @@ All configuration data is placed in the configuration under alias
             ...
         log_queries: true
         item_container_template: MyBundle:Search:itemContainer.html.twig
-        entities_config:
-            ...
 
 Description of parameters:
 
@@ -41,10 +39,6 @@ Description of parameters:
    "OroSearchBundle:Datagrid:itemContainer.html.twig" (converted to
    container parameter *oro\_search.twig.item\_container\_template*) -
    template used to render entity row in search results;
--  **entities\_config** (converted to container parameter
-   *oro\_search.entities\_config*) - entity search configuration, can be
-   used to override the default entity search configuration (see section
-   :ref:`Entity Configuration <db-search--configuration--entity-configuration>`).
 
 Configuration Merging
 =====================

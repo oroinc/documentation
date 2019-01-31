@@ -43,11 +43,6 @@ The configuration of the SearchBundle is driven by three configuration options:
     The indexing engine to be used. Currently, only the ``orm`` engine is
     supported by the SearchBundle.
 
-``entities_config``
-    Configuration of entity properties to be indexed (read
-    :ref:`the following section <indexing-entities>` for a detailed description
-    of the config format).
-
 ``item_container_template``
     The default template used to display an item in the search results list
     (``OroSearchBundle:Datagrid:itemContainer.html.twig`` by default).
