@@ -72,8 +72,3 @@ Next, set up a payment rule that enables these payment methods (PayPal Payflow G
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. toctree::
-   :hidden:
-   :maxdepth: 2
-
-   paypal_payment_integration_details
