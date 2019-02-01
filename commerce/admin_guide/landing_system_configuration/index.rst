@@ -57,14 +57,13 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
 
-             <p>Learn how to enable and setup the integration between your Oro application and Google, MS Exchange, MS Outlook, dotmailer.</p>
+             <p>Learn how to enable and setup the integration between your Oro application and Google, MS Outlook, and dotmailer.</p>
           </div>
       </div>
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                      <li><a class="reference internal" href="../integrations/google"><span class="std std-ref">Google Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
-                     <li><a class="reference internal" href="../integrations/ms-exchange"><span class="std std-ref">MS Exchange Settings</span></a> <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
                      </ul>
           </div>
       </div>
