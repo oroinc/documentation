@@ -50,11 +50,21 @@ The following page opens:
 
 5. In the **Calculator** section:
 
-   a) With **Start Calculation With**, specify the formula for tax calculation. Tax is calculated either for a unit price or for a product total price. The formula for *Unit price* is:
-      tax = [ ( unit price * tax rate ) * unit quantity ] + ... + [ ( unit price * tax rate ) * unit quantity ].
-      The formula for *Row Total* is:
-      tax = [ (unit price * unit quantity) * tax rate ] + ... + [ (unit price * unit quantity) * tax rate ].
-   b) With the **Start Calculation On** option, select when the rounding off shall happen. For **Item**, the taxable amount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up.
+   a) With **Start Calculation With**, specify the formula for tax calculation. Tax is calculated either for a unit price or for a product total price.
+
+   b) With the **Start Calculation On** option, select when the rounding off shall happen. For **Item**, the taxable amount is rounded up for every item. For **Total**, the total tax is aggregated as is, and the final amount is rounded up. Keep in mind that when rounding, the residue is taken into account in the totals.
+
+     The tax formula is calculated differently based on the selected option set:
+
+     .. csv-table::
+        :header: "**Start Calculation With**","**Start Calculation On**", "**Formula**", "**Comment**"
+        :widths: 20, 20, 20, 20
+
+        "Unit Price","Total","ROUND(ROUND(PRICE1)*QTY1*TAX1+ ROUND(PRICE1)*QTY1*TAX2)","default value"
+        "Unit Price","Item","ROUND(ROUND(ROUND(PRICE1)*QTY1*TAX1)+ROUND(ROUND(PRICE1)*QTY1*TAX2)"
+        "Unit Price","Item","ROUND(ROUND(PRICE1)*QTY1*TAX1)+ROUND(ROUND(PRICE1)*QTY1*TAX2)","an alternative formula. The output is the same as in the previous condition"
+        "Unit Row Total","Total","ROUND(ROUND(PRICE1*QTY1)*TAX1 + ROUND(PRICE2*QTY2)*TAX2)"
+        "Unit Row Total","Item","ROUND(ROUND(PRICE1*QTY1)*TAX1)+ROUND(ROUND(PRICE2*QTY2)*TAX2)"
 
    c) Set or clear the **Product prices include tax** option. When product prices include tax, the tax amount is subtracted from the unit, product, or total price. Otherwise, the tax is added on top of the unit, product, or total price.
 
