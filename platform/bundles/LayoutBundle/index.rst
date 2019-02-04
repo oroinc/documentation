@@ -5,6 +5,9 @@ OroLayoutBundle
 
 OroLayoutBundle integrates the OroLayout Component into OroPlatform and enables layout themes definition and configuration which supports building layouts based on the configuration of other bundles.
 
+Related Documentation
+---------------------
+
 * `Layout Definition <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LayoutBundle/Resources/doc/what_is_layout.md>`__
 * `Create a Layout Theme <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#create-layout-theme>`__
 * `Use a Layout Theme Configuration <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#use-layout-theme-configuration>`__

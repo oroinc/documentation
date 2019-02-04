@@ -1,4 +1,4 @@
-.. _bundle-docs-commerce:
+.. _bundle-docs-platform:
 
 Bundles Documentation
 =====================

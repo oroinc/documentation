@@ -17,4 +17,4 @@ Related Documentation
 * `Console commands <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md>`__
 * `Translation Strategies <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md>`__
 * `Translation Context Resolver <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/context_resolver.md>`__
-*
+

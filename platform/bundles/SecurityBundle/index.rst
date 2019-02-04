@@ -18,6 +18,6 @@ Related Documentation
 * `Access Rules <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/access-rules.md>`__
 * `Custom Listeners <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/custom-listeners.md>`__
 * `Field ACL <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/field-acl.md>`__
-* `Access Levels (Example) <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/examples.md>`__
 * `Work with Actions (Capabilities) and Entities ACL extensions <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/implementation.md>`__
-* `Field permissions UI <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/ui.md>`__
+* `Define Permissions for User Roles (UI) <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/ui.md>`__
+* `Access Levels (Example) <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SecurityBundle/Resources/doc/examples.md>`__

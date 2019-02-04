@@ -17,7 +17,7 @@ Related Documentation
 * `Add the Option Set Field <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#add-option-set-field>`__
 * `Create a Custom Entity <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#create-custom-entity>`__
 * `Prepare Entity Extend Configuration <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#preparing-entity-extend-configuration>`__
-* `Updating Database Schema for Extended Entities <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#updating-database-schema-for-extended-entities>`__
+* `Update Database Schema for Extended Entities <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#updating-database-schema-for-extended-entities>`__
 * `Warn Up Cache <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#warming-up-the-cache>`__
 * `Configure Custom Form Type <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#custom-form-type-and-options>`__
 * `Define Validation Constraints <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#validation-for-extended-fields>`__
