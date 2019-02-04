@@ -42,6 +42,82 @@ Also each of these abstract services can be re-declared in the application confi
 
 Read more about the `caching policy and default implementation`_.
 
+.. _op-structure--cache--warmup:
+
+Warm Up Config Cache
+--------------------
+
+The purpose is to update only cache that will be needed by the application without updating the cache of those resources,
+that have not been changed. This gives a big performance over the approach when the all cache is updated. Cache warming
+occurs in debug mode whenever you updated the resource files.
+
+The following example shows how this services can be used:
+
+.. code-block:: none
+    :linenos:
+
+    ```yaml
+    # To register your config dumper:
+    oro.config.dumper:
+        class: 'Oro\Example\Dumper\CumulativeConfigMetadataDumper'
+        public: false
+
+    # To register your config warmer with oro.config_cache_warmer.provider tag:
+    oro.configuration.provider.test:
+        class: 'Oro\Example\Dumper\ConfigurationProvider'
+        tags:
+            - { name: oro.config_cache_warmer.provider, dumper: 'oro.config.dumper' }
+
+    ```
+
+    ```php
+    <?php
+
+    namespace Oro\Example\Dumper;
+
+    use Symfony\Component\DependencyInjection\ContainerBuilder;
+
+    use Oro\Component\Config\Dumper\ConfigMetadataDumperInterface;
+    use Oro\Bundle\CacheBundle\Provider\ConfigCacheWarmerInterface;
+
+    class CumulativeConfigMetadataDumper implements ConfigMetadataDumperInterface
+    {
+
+        /**
+         * Write meta file with resources related to specific config type
+         *
+         * @param ContainerBuilder $container container with resources to dump
+         */
+        public function dump(ContainerBuilder $container)
+        {
+        }
+
+        /**
+         * Check are config resources fresh?
+         *
+         * @return bool true if data in cache is present and up to date, false otherwise
+         */
+        public function isFresh()
+        {
+            return true;
+        }
+    }
+
+    class ConfigurationProvider implements ConfigCacheWarmerInterface
+    {
+        /**
+        * @param ContainerBuilder $containerBuilder
+        */
+        public function warmUpResourceCache(ContainerBuilder $containerBuilder)
+        {
+            // some logic
+            $resource = new CumulativeResource();
+            $containerBuilder->addResource($resource);
+        }
+    }
+    ```
+
+.. _op-structure--cache--policy:
 
 Caching Policy
 ^^^^^^^^^^^^^^
@@ -151,6 +227,8 @@ top of ``FilesystemCache``
 .. _Cache chaining: #cache-chaining
 .. _Default cache implementation: #default-cache-implementation
 .. _Readme: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/README.md#abstract-cache-services
+
+.. _op-structure--cache--validation-rules:
 
 Caching of Symfony Validation Rules
 -----------------------------------
