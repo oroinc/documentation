@@ -77,6 +77,7 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Translate Consents <user-guide--consents--localizing-consents>`
 
 
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 

@@ -6,7 +6,7 @@ Web Services API
 OroCommerce REST API enables developers to integrate Oro functionality into third-party software systems.
 
 .. contents:: :local:
-    :depth: 6
+    :depth: 2
 
 Overview
 --------
@@ -108,7 +108,7 @@ To review the documentation and access the sandbox, click the method row for a s
 
 To expand information about all methods available for the resource, click the **Expand Operations** link at the right-hand end of resource row.
 
-To switch between the collapsed list of available resources and the expanded state, click the **Show / hide** link at the right-hand end of the row.
+To switch between the collapsed list of available resources and the expanded state, click the **Show/hide** link at the right-hand end of the row.
 
 Examples
 ^^^^^^^^
@@ -199,7 +199,7 @@ Schema
 All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the ``http(s)://<hostname_of_your_oro_application>/api/<resource_name>``
 All data is sent and received as JSON.
 
-A typical request can be performed via curl or via the JSON sandbox.
+A typical request can be performed via curl or JSON sandbox.
 
 
 Curl Example
@@ -219,7 +219,7 @@ Curl Example
     http://localhost.com/api/users/1
 
 
-Please note that to simplify representation of request examples in the document, a short format will be used, e.g.:
+Please note that to simplify the representation of request examples in the document, a short format will be used, e.g.:
 
 .. code-block:: http
     :linenos:
@@ -563,7 +563,7 @@ In case of a successful request, a response status code will be one of the follo
 
     -   **200 OK**—In the response to a successful GET, PATCH or DELETE.
 
-    -   **201 Created**—In the response to a POST that results in a creation. When this status received, the request body contains the description of the newly created entity in JSON format (similar to regular GET request).
+    -   **201 Created**—In the response to a POST that results in creation. When this status received, the request body contains the description of the newly created entity in JSON format (similar to regular GET request).
 
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
@@ -1465,7 +1465,7 @@ This request does the following:
 
 4. Makes 'Nancy Jones' the default contact for 'Cloth World'.
 
-Please pay attention to the identifiers of the contacts. For 'John Doe' it is '8da4d8e7-6b25-4c5c-8075-b510f7bbb84f'. For 'Nancy Jones' it is '707dda0d-35f5-47b9-b2ce-a3e92b9fdee7'. These identifiers are used to specify relations between resources in scope of the request. In this example, GUIDs are used but it is possible to use any algorithm to generate such identifiers. The only requirement is that they must be unique in scope of the request. For example, the following identifiers are valid as well: 'john_doe' and 'nancy_jones'.
+Please pay attention to the identifiers of the contacts. For 'John Doe' it is '8da4d8e7-6b25-4c5c-8075-b510f7bbb84f'. For 'Nancy Jones' it is '707dda0d-35f5-47b9-b2ce-a3e92b9fdee7'. These identifiers are used to specify relations between resources in scope of the request. In this example, GUIDs are used, but it is possible to use any algorithm to generate such identifiers. The only requirement is that they must be unique in scope of the request. For example, the following identifiers are valid as well: 'john_doe' and 'nancy_jones'.
 
 Also, it is possible to update several related resources via a single API request. The related resources to be updated should be marked with **update** meta property. For instance, take a look at the following request:
 

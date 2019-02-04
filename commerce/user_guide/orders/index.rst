@@ -4,9 +4,9 @@ Orders
 ======
 
 
-.. include:: /user_guide/overview/sales/orders_overview.rst
-   :start-after: begin
-   :end-before: stop
+Orders contain information about buyers' shopping lists submitted for purchase and the collected information about billing and shipping addresses, payment methods, etc.
+
+In **Sales > Orders**, you can view, edit and delete the already submitted orders and create new orders on behalf of the buyers.
 
 While many customers will use the online store to create orders, they can also come from other avenues such as phone calls, emails, contact us requests or from other sales channels. An Oro application makes it easy to create an order for customers in the management console. When creating or editing an order, you can create new customers or new customer users on the fly, configure shipping options, add discounts, and more.
 
@@ -88,26 +88,6 @@ You can control the order lifecycle and:
 .. toctree::
    :hidden:
 
-   create_new
-
-   create_from_rfq
-
-   create_from_shopping_list
-
-   view
-
-   viewlist
-
-   edit
-
-   delete
-
-   mark_as_shipped
-
-   cancel
-
-   close
-
-   archive
-
-   statuses
+   create
+   manage
+   control

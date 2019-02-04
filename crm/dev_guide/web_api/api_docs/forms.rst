@@ -1,25 +1,21 @@
+.. _web-api--forms:
+
 Forms and Validators Configuration
 ==================================
 
-Table of Contents
------------------
-
--  `Overview <#overview>`__
--  `Validation <#validation>`__
--  `Forms <#forms>`__
+.. contents:: :local:
 
 Overview
 --------
 
-The Symfony `Validation Component <http://symfony.com/doc/current/book/validation.html>`__ and `Forms Component <http://symfony.com/doc/current/book/forms.html>`__ are used to validate and transform input data to an entity in `create <./actions#create-action>`__, `update <./actions#update-action>`__, `update\_relationship <./actions#update_relationship-action>`__, `add\_relationship <./actions#add_relationship-action>`__ and
-`delete\_relationship <./actions#delete_relationship-action>`__ actions.
+The Symfony `Validation Component <http://symfony.com/doc/current/book/validation.html>`__ and `Forms Component <http://symfony.com/doc/current/book/forms.html>`__ are used to validate and transform input data to an entity in :ref:`create <web-api--actions>`, :ref:`update <web-api--actions>`, :ref:`update\_relationship <web-api--actions>`, :ref:`add\_relationship <web-api--actions>` and :ref:`delete\_relationship <web-api--actions>` actions.
 
 Validation
 ----------
 
 The validation rules are loaded from ``Resources/config/validation.yml`` and annotations as it is commonly done in Symfony applications. So, all validation rules defined for an entity are applicable in Data API as well. Also, by default, Data API uses two validation groups: **Default** and **api**. If you need to add validation constrains that should be applicable in Data API only you should add them in **api** validation group.
 
-In case if input data violates some validation constraints, these constraints will be automatically converted to `validation errors <./processors#error-handling>`__ which are used to build correct response of Data API. The conversion is performed by `CollectFormErrors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php>`__ processor. By default the HTTP status code for validation errors is ``400 Bad Request``. But, if needed, there
+In case if input data violates some validation constraints, these constraints will be automatically converted to :ref:`validation errors <web-api--processors>` which are used to build correct response of Data API. The conversion is performed by `CollectFormErrors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php>`__ processor. By default the HTTP status code for validation errors is ``400 Bad Request``. But, if needed, there
 are several ways to change it:
 
 -  Implement `ConstraintWithStatusCodeInterface <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Validator/Constraints/ConstraintWithStatusCodeInterface.php>`__ in you constraint class.
@@ -115,4 +111,4 @@ An example:
 
 To switch between general and Data API forms `Processor\\Shared\\InitializeApiFormExtension <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/InitializeApiFormExtension.php>`__ and `Processor\\Shared\\RestoreDefaultFormExtension <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/RestoreDefaultFormExtension.php>`__ processors can be used.
 
-A form for a particular entity is built on the fly based on `Data API configuration <./configuration>`__ and an entity metadata. It is performed by `Processor\\Shared\\BuildFormBuilder <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php>`__ processor.
+A form for a particular entity is built on the fly based on :ref:`Data API configuration <web-api--configuration>` and an entity metadata. It is performed by `Processor\\Shared\\BuildFormBuilder <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php>`__ processor.

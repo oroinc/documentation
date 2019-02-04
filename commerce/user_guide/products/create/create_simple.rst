@@ -23,7 +23,7 @@ To add a new simple product and make it available in the master catalog (for int
 
    .. note::
 
-      .. include:: /user_guide/overview/products/products_overview.rst
+      .. include:: /user_guide/products/create/simple_vs_config.rst
          :start-after: simple_product_begin
          :end-before: simple_product_end
 

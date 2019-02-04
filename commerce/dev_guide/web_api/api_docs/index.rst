@@ -1,3 +1,5 @@
+.. _web-api:
+
 API Documentation
 =================
 

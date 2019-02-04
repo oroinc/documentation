@@ -24,7 +24,7 @@ More information about the options available for each of the two categories is a
 
     * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`
     * :ref:`Email Configuration for the Website <admin-configuration-system-mailboxes-website>`
-    * :ref:`Display Settings for the Website <display-settings--map-settings>`
+    * :ref:`Display Settings for the Website <display-settings--website>`
 
   * Website
 

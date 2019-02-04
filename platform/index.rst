@@ -10,7 +10,7 @@ OroPlatform is an open-source platform made for rapid application development of
 
     <div class="guideline__item" >
        <div style="text-align: center">
-          <a class="reference internal" href="install-upgrade"><h3><i class="guideline__icon fa fa-cogs"></i><br>Installation Guide</h3</a>
+          <a class="reference internal" href="install-upgrade"><h3><i class="guideline__icon fa fa-cogs"></i><br>Installation Guide</h3></a>
        </div>
        <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           <ul class="guideline__list">
@@ -24,7 +24,7 @@ OroPlatform is an open-source platform made for rapid application development of
 
       <div class="guideline__item" >
          <div style="text-align: center">
-            <a class="reference internal" href="architecture"><h3><i class="guideline__icon fa fa-linode"></i><br> Architecture Guide</h3></a>
+            <a class="reference internal" href="architecture"><h3><i class="guideline__icon fa fa-sitemap"></i><br> Architecture Guide</h3></a>
          </div>
          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">

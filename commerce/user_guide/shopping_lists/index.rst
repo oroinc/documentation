@@ -26,9 +26,9 @@ Information on shopping lists is covered in the following sections:
 Overview
 --------
 
-.. include:: /user_guide/overview/sales/shopping_lists_overview.rst
-   :start-after: begin
+In the Shopping Lists section in OroCommerce management console, a salesperson can view all shopping lists created and saved by the customers in the OroCommerce storefront.
 
+On behalf of the customer, a salesperson can manage the items in the shopping list: edit, add, remove, change quantity, units, and add notes.
 
 View Shopping List Summary
 --------------------------

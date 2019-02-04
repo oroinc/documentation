@@ -1,34 +1,9 @@
+.. _web-api--actions:
+
 Actions
 =======
 
-Table of Contents
------------------
-
--  `Overview <#overview>`__
--  Public actions
--  `**get** action <#get-action>`__
--  `**get\_list** action <#get_list-action>`__
--  `**delete** action <#delete-action>`__
--  `**delete\_list** action <#delete_list-action>`__
--  `**create** action <#create-action>`__
--  `**update** action <#update-action>`__
--  `**get\_subresource** action <#get_subresource-action>`__
--  `**get\_relationship** action <#get_relationship-action>`__
--  `**update\_relationship** action <#update_relationship-action>`__
--  `**add\_relationship** action <#add_relationship-action>`__
--  `**delete\_relationship** action <#delete_relationship-action>`__
--  Auxiliary actions
--  `**customize\_loaded\_data** action <#customize_loaded_data-action>`__
--  `**customize\_form\_data** action <#customize_form_data-action>`__
--  `**get\_config** action <#get_config-action>`__
--  `**get\_relation\_config** action <#get_relation_config-action>`__
--  `**get\_metadata** action <#get_metadata-action>`__
--  `**normalize\_value** action <#normalize_value-action>`__
--  `**collect\_resources** action <#collect_resources-action>`__
--  `**collect\_subresources** action <#collect_subresources-action>`__
--  `**Context** class <#context-class>`__
--  `**SubresourceContext** class <#subresourcecontext-class>`__
--  `Creating new action <#creating-new-action>`__
+.. contents:: :local:
 
 Overview
 --------
@@ -40,58 +15,61 @@ Each action has two required elements:
 -  **context** - an object that is used to store input and output data and share data between processors.
 -  **main processor** - the main entry point for an action. This class is responsible for creating the context and executing all worker processors.
 
-More details about these elements you can find in the `Creating new action <#creating-new-action>`__ section.
+More details about these elements you can find in the `Creating new action`_ section.
 
 The following table shows all actions provided out of the box:
 
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Action Name                                                   | Description                                                                                                                                                |
-+===============================================================+============================================================================================================================================================+
-| `get <#get-action>`__                                         | Returns an entity by its identifier                                                                                                                        |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `get\_list <#get_list-action>`__                              | Returns a list of entities                                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `delete <#delete-action>`__                                   | Deletes an entity by its identifier                                                                                                                        |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `delete\_list <#delete_list-action>`__                        | Deletes a list of entities                                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `create <#create-action>`__                                   | Creates a new entity                                                                                                                                       |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `update <#update-action>`__                                   | Updates an existing entity                                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `get\_subresource <#get_subresource-action>`__                | Returns a list of related entities represented by a relationship                                                                                           |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `get\_relationship <#get_relationship-action>`__              | Returns a relationship data                                                                                                                                |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `update\_relationship <#update_relationship-action>`__        | Updates "to-one" relationship and completely replaces all members of "to-many" relationship                                                                |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `add\_relationship <#add_relationship-action>`__              | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships                                                 |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `delete\_relationship <#delete_relationship-action>`__        | Deletes one or several entities from a relationship. This action is applicable only for "to-many" relationships                                            |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `customize\_loaded\_data <#customize_loaded_data-action>`__   | Makes modifications of data loaded by `get <#get-action>`__, `get\_list <#get_list-action>`__ and `get\_subresource <#get_subresource-action>`__ actions   |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `customize\_form\_data <#customize_form_data-action>`__       | Makes modifications of submitted form data for `create <#create-action>`__ and `update <#update-action>`__ actions                                         |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `get\_config <#get_config-action>`__                          | Returns a configuration of an entity                                                                                                                       |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `get\_relation\_config <#get_relation_config-action>`__       | Returns a configuration of an entity if it is used in a relationship                                                                                       |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `get\_metadata <#get_metadata-action>`__                      | Returns a metadata of an entity                                                                                                                            |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `normalize\_value <#normalize_value-action>`__                | Converts a value to a requested data type                                                                                                                  |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `collect\_resources <#collect_resources-action>`__            | Returns a list of all resources accessible through Data API                                                                                                |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| `collect\_subresources <#collect_subresources-action>`__      | Returns a list of all sub-resources accessible through Data API for a given entity type                                                                    |
-+---------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Action Name                | Description                                                                                                        |
++============================+====================================================================================================================+
+| get                        | Returns an entity by its identifier                                                                                |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| get\_list                  | Returns a list of entities                                                                                         |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| delete                     | Deletes an entity by its identifier                                                                                |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| delete\_list               | Deletes a list of entities                                                                                         |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| create                     | Creates a new entity                                                                                               |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| update                     | Updates an existing entity                                                                                         |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| get\_subresource           | Returns a list of related entities represented by a relationship                                                   |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| get\_relationship          | Returns a relationship data                                                                                        |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| update\_relationship       | Updates "to-one" relationship and completely replaces all members of "to-many" relationship                        |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| add\_relationship          | Adds one or several entities to a relationship. This action is applicable only for "to-many" relationships         |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| delete\_relationship       | Deletes one or several entities from a relationship. This action is applicable only for "to-many" relationships    |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| customize\_loaded\_data    | Makes modifications of data loaded by *get*, *get\_list* and *get\_subresourceactions*                             |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| customize\_form\_data      | Makes modifications of submitted form data for *create* and *update* actions                                       |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| get\_config                | Returns a configuration of an entity                                                                               |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| get\_relation\_config      | Returns a configuration of an entity if it is used in a relationship                                               |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| get\_metadata              | Returns metadata of an entity                                                                                      |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| normalize\_value           | Converts a value to a requested data type                                                                          |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| collect\_resources         | Returns a list of all resources accessible through Data API                                                        |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
+| collect\_subresources      | Returns a list of all sub-resources accessible through Data API for a given entity type                            |
++----------------------------+--------------------------------------------------------------------------------------------------------------------+
 
-Please see `processors <./processors>`__ section for more details about how to create a processor.
+Please see the :ref:`Processors <web-api--processors>` section for more details about how to create a processor.
 
 Also you can use the `oro:api:debug <./commands#oroapidebug>`__ command to see all actions and processors.
 
+Public Actions
+--------------
+
 get Action
-----------
+^^^^^^^^^^
 
 This action is intended to get an entity by its identifier. More details you can find in `Fetching Data <http://jsonapi.org/format/#fetching>`__ section of JSON.API specification.
 
@@ -134,7 +112,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``getAction`` method of `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__.
 
 get\_list Action
-----------------
+^^^^^^^^^^^^^^^^
 
 This action is intended to get a list of entities. More details you can find in `Fetching Data <http://jsonapi.org/format/#fetching>`__ section of JSON.API specification.
 
@@ -177,7 +155,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``cgetAction`` method of `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__.
 
 delete Action
--------------
+^^^^^^^^^^^^^
 
 This action is intended to delete an entity by its identifier. More details you can find in `Deleting Resources <http://jsonapi.org/format/#crud-deleting>`__ section of JSON.API specification.
 
@@ -220,13 +198,13 @@ This action has the following processor groups:
 Example of usage you can find in the ``deleteAction`` method of `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__.
 
 delete\_list Action
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 This action is intended to delete a list of entities.
 
-The entities list is built based on input filters. Please take into account that at least one filter must be specified, otherwise an error raises.
+The entities list is built based on input filters. Please take into account that at least one filter must be specified, otherwise, an error raises.
 
-By default the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``, but please test your limit carefully because a big limit may make a big impact to the server. An example how to change default limit you can read at `how-to <how-to#change-the-maximum-number-of-entities-that-can-be-deleted-by-one-request>`__.
+By default, the maximum number of entities that can be deleted by one request is 100. This limit was introduced to minimize the impact on the server. You can change this limit for an entity in ``Resources/config/oro/api.yml``, but please test your limit carefully because a big limit may make a big impact to the server. An example of how to change default limit you can read in the :ref:`How-to <web-api--how-to>` topic.
 
 The route name for REST API: ``oro_rest_api_cdelete``.
 
@@ -267,7 +245,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``deleteListAction`` method of `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__.
 
 create Action
--------------
+^^^^^^^^^^^^^
 
 This action is intended to create a new entity. More details you can find in `Creating Resources <http://jsonapi.org/format/#crud-creating>`__ section of JSON.API specification.
 
@@ -312,7 +290,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``postAction`` method of `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__.
 
 update Action
--------------
+^^^^^^^^^^^^^
 
 This action is intended to update an entity. More details you can find in `Updating Resources <http://jsonapi.org/format/#crud-updating>`__ section of JSON.API specification.
 
@@ -357,7 +335,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``patchAction`` method of `RestApiController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php>`__.
 
 get\_subresource Action
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to get an entity (for "to-one" relationship) or a list of entities (for "to-many" relationship) connected to a given entity by a given association. More details you can find in `Fetching Resources <http://jsonapi.org/format/#fetching-resources>`__ section of JSON.API specification.
 
@@ -400,7 +378,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``getAction`` method of `RestApiSubresourceController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php>`__.
 
 get\_relationship Action
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to get an entity identifier (for "to-one" relationship) or a list of entities' identifiers (for "to-many" relationship) connected to a given entity by a given association. More details you can find in `Fetching Relationships <http://jsonapi.org/format/#fetching-relationships>`__ section of JSON.API specification.
 
@@ -443,7 +421,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``getAction`` method of `RestApiRelationshipController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php>`__.
 
 update\_relationship Action
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to change an entity (for "to-one" relationship) or completely replace all entities (for "to-many" relationship) connected to a given entity by a given association. More details you can find in `Updating Relationships <http://jsonapi.org/format/#crud-updating-relationships>`__ section of JSON.API specification.
 
@@ -486,7 +464,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``patchAction`` method of `RestApiRelationshipController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php>`__.
 
 add\_relationship Action
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to add one or several entities to a "to-many" relationship. More details you can find in `Updating Relationships <http://jsonapi.org/format/#crud-updating-relationships>`__ section of JSON.API specification.
 
@@ -529,7 +507,7 @@ This action has the following processor groups:
 Example of usage you can find in the ``postAction`` method of `RestApiRelationshipController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php>`__.
 
 delete\_relationship Action
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to remove one or several entities from a "to-many" relationship. More details you can find in `Updating Relationships <http://jsonapi.org/format/#crud-updating-relationships>`__ section of JSON.API specification.
 
@@ -571,8 +549,12 @@ This action has the following processor groups:
 
 Example of usage you can find in the ``deleteAction`` method of `RestApiRelationshipController <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php>`__.
 
+
+Auxiliary Actions
+-----------------
+
 customize\_loaded\_data Action
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to make modifications of data loaded by `get <#get-action>`__, `get\_list <#get_list-action>`__ and `get\_subresource <#get_subresource-action>`__ actions.
 
@@ -583,7 +565,7 @@ The main processor class: `CustomizeLoadedDataProcessor <https://github.com/oroi
 As example of a processor is used to modify loaded data you can see `ComputePrimaryField <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedData/ComputePrimaryField.php>`__. Also you can run ``php bin/console oro:api:debug customize_loaded_data`` to see other processors registered in this action.
 
 customize\_form\_data Action
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to make modifications of submitted form data for `create <#create-action>`__ and `update <#update-action>`__ actions.
 
@@ -594,7 +576,7 @@ The main processor class: `CustomizeFormDataProcessor <https://github.com/oroinc
 As example of a processor is used to modify loaded data you can see `MapPrimaryField <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/MapPrimaryField.php>`__. Also you can run ``php bin/console oro:api:debug customize_form_data`` to see other processors registered in this action.
 
 get\_config Action
-------------------
+^^^^^^^^^^^^^^^^^^
 
 This action is intended to get a configuration of an entity.
 
@@ -615,7 +597,7 @@ Example of usage:
     $config = $configProvider->getConfig($entityClassName, $version, $requestType, $configExtras);
 
 get\_relation\_config Action
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to get a configuration of an entity if it is used in a relationship.
 
@@ -636,7 +618,7 @@ Example of usage:
     $config = $configProvider->getRelationConfig($entityClassName, $version, $requestType, $configExtras);
 
 get\_metadata Action
---------------------
+^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to get a metadata of an entity.
 
@@ -657,7 +639,7 @@ Example of usage:
     $metadata = $metadataProvider->getMetadata($entityClassName, $version, $requestType, $entityConfig, $metadataExtras);
 
 normalize\_value Action
------------------------
+^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to convert a value to a requested data type.
 
@@ -678,7 +660,7 @@ Example of usage:
     $normalizedValue = $valueNormalizer->normalizeValue($value, $dataType, $requestType);
 
 collect\_resources Action
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to get a list of all resources accessible through Data API.
 
@@ -705,7 +687,7 @@ Example of usage:
     $isAccessible = $resourcesProvider->isResourceAccessible($entityClass, $version, $requestType);
 
 collect\_subresources Action
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This action is intended to get a list of all sub-resources accessible through Data API for a given entity type.
 
@@ -727,7 +709,7 @@ Example of usage:
     $entitySubresources = $subresourcesProvider->getSubresources($entityClass, $version, $requestType);
 
 Context class
--------------
+^^^^^^^^^^^^^
 
 The `Context <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Context.php>`__ class is very important because it is used as a superclass for the context classes of CRUD actions such as `get <#get-action>`__, `get\_list <#get_list-action>`__, `create <#create-action>`__, `update <#update-action>`__, `delete <#delete-action>`__ and `delete\_list <#delete_list-action>`__.
 
@@ -796,7 +778,7 @@ Entity metadata related methods:
 -  **setMetadata(metadata)** - Sets metadata of an entity. This method can be used to completely override the default metadata of an entity.
 
 SubresourceContext class
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The `SubresourceContext <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/SubresourceContext.php>`__ class is used as a superclass for the context classes of sub-resources related actions such as `get\_subresource <#get_subresource-action>`__, `get\_relationship <#get_relationship-action>`__, `update\_relationship <#update_relationship-action>`__, `add\_relationship <#add_relationship-action>`__ and
 `delete\_relationship <#delete_relationship-action>`__. In additional to the `Context <#context-class>`__ class, this class provides methods to work with parent entities.
@@ -832,7 +814,7 @@ Parent entity metadata related methods:
 -  **setParentMetadata(metadata)** - Sets metadata of the parent entity. This method can be used to completely override the default metadata of the parent entity.
 
 Creating new action
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 To create a new action you need to create two classes:
 
@@ -898,4 +880,4 @@ In case if you need to create groups for your action, they should be registered 
                     finalize:
                         priority: -30
 
-Please note that the ``priority`` attribute is used to control the order in which groups of processors are executed. The highest the priority, the earlier a group of processors is executed. Default value is 0. The possible range is from -254 to 252. Details about creating processors you can find in the `processors <./processors#creating-a-processor>`__ section.
+Please note that the ``priority`` attribute is used to control the order in which groups of processors are executed. The highest the priority, the earlier a group of processors is executed. Default value is 0. The possible range is from -254 to 252. Details about creating processors you can find in the :ref:`Processors <web-api--processors>` section.

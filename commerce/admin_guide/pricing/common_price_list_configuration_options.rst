@@ -1,5 +1,5 @@
 Price List Configuration Options
---------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. price_list_actions_begin
 

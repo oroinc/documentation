@@ -5,7 +5,7 @@ Tax Rules
 
 .. begin
 
-.. include:: /user_guide/overview/taxes/tax_rules_overview.rst
+.. include:: /user_guide/taxes/tax_rules/tax_rules_overview.rst
    :start-after: begin
 
 .. contents:: :local:
@@ -45,6 +45,8 @@ Import Tax Rules
    view
 
    edit
+
+   tax_rules_overview
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

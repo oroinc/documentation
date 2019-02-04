@@ -7,7 +7,7 @@ Schedule Price Adjustments
 
 For season sales or any other temporary price amendments, you can create a dedicated price list, configure it to be the highest priority, then enable and disable it on schedule to cover the planned sales time frames.
 
-Scheduled price activation helps eliminate the unwanted pressure of the price management during the hot hours and helps you and your sales people focus on your customers.
+Scheduled price activation helps eliminate the unwanted pressure of the price management during the hot hours and helps you and your salespeople focus on your customers.
 
 To schedule price activation and deactivation:
 
@@ -36,7 +36,7 @@ To schedule price activation and deactivation:
 
 4. Once you finish adding the activation and deactivation windows, click **Save**.
 
-.. finish
+.. stop
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

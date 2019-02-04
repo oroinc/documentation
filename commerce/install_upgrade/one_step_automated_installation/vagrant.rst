@@ -9,11 +9,11 @@ environment components using `Vagrant <https://www.vagrantup.com/>`_.
 Every Oro application has a *Vagrantfile* that enables you to set up a virtual machine with the Oro application via the
 `vagrant up` command.
 
-For example, to set up a VM with OroCommerce CE application v.1.6.14 locally, run:
+For example, to set up a VM with OroCommerce CE application v. 3.0.0 locally, run:
 
 .. code:: bash
 
-    git clone -b 1.6.14 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
+    git clone -b 3.0.0 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
     vagrant up
 
 Once the command has run, you can access the application via the http://localhost:8000/ URL.
@@ -50,7 +50,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. code:: bash
 
-      git clone -b 1.6.14 <oro_application_clone_url> oroapp && cd oroapp
+      git clone -b 3.0.0 <oro_application_clone_url> oroapp && cd oroapp
 
    Replace the <oro_application_clone_url> with the repository URL for the necessary Oro application:
 
@@ -63,15 +63,15 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
       "OroCommerce Enterprise Edition for Germany","https://github.com/oroinc/orocommerce-enterprise-application-de.git"
       "OroCommerce Enterprise Edition (without CRM)","https://github.com/oroinc/orocommerce-enterprise-nocrm-application.git"
 
-   The *branch* value (in this example *1.6.14*) can be changed to another published `release tag <https://github.com/oroinc/orocommerce-application/releases>`_ of the chosen Oro application with the following constraints:
+   **The *branch* value can be changed to another published `release tag <https://github.com/oroinc/orocommerce-application/releases>`_ of the chosen Oro application with the following constraints:**
 
    .. csv-table::
       :widths: 20, 30
 
-      "OroCommerce Community Editions v.3.* and above","The *branch* value must be greather then *3.0.0-rc*"
-      "OroCommerce Community Editions v.1.6.*","The *branch* value must be greather then *1.6.13*"
-      "OroCommerce Enterprise Editions v.3.* and above","The *branch* value should be greather then *3.0.0-rc*"
-      "OroCommerce Enterprise Editions v.1.6.*","The *branch* value should be greather then *1.6.13*"
+      "OroCommerce Community Editions v.3.* and above","The *branch* value must be greater than *3.0.0-rc*"
+      "OroCommerce Community Editions v.1.6.*","The *branch* value must be greater than *1.6.13*"
+      "OroCommerce Enterprise Editions v.3.* and above","The *branch* value should be greater than *3.0.0-rc*"
+      "OroCommerce Enterprise Editions v.1.6.*","The *branch* value should be greater than *1.6.13*"
 
    Previously published releases of the Oro Applications do not have Vagrantfiles.
 

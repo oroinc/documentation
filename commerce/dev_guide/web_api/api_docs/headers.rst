@@ -1,12 +1,9 @@
+.. _web-api--headers:
+
 Headers
 =======
 
-Table of Contents
------------------
-
--  `Overview <#overview>`__
--  `Existing **X-Include** keys <#existing-x-include-keys>`__
--  `Add new **X-Include** key <#add-new-x-include-key>`__
+.. contents:: :local:
 
 Overview
 --------

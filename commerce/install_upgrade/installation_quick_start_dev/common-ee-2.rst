@@ -126,12 +126,6 @@ To start the |oro_app_name| installation, run the following command:
 
 Follow the on-screen instructions in the console.
 
-.. note::
-
-    Alternatively, use the web installer as described in the `Installation via UI`_ topic. Before you launch the installation
-    via UI, make the application files and folders writable for the *nginx*
-    user. When the installation is complete, revert the file permission to restore the original ones.
-
 You will be prompted to choose the installation with- or without- demo data. If you discard demo data during installation,
 you can install it later by running the following command:
 

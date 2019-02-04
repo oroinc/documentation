@@ -1,21 +1,16 @@
+.. _web-api--processors:
+
 Processors
 ==========
 
-Table of Contents
------------------
-
--  `Overview <#overview>`__
--  `Creating a processor <#creating-a-processor>`__
--  `Processor conditions <#processor-conditions>`__
--  `Examples of processor conditions <#examples-of-processor-conditions>`__
--  `Error handling <#error-handling>`__
+.. contents:: :local:
 
 Overview
 --------
 
 A processor is the main element where a business logic of Data API is implemented. Each processor must implement `ProcessorInterface <https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/ProcessorInterface.php>`__ and be registered in the dependency injection container using the ``oro.api.processor`` tag.
 
-Please see `actions <./actions>`__ section for more details about where and how processors are used.
+Please see the :ref:`actions <web-api--actions>` section for more details about where and how processors are used.
 
 Also you can use the `oro:api:debug <./commands#oroapidebug>`__ command to see all actions and processors.
 
@@ -201,7 +196,7 @@ There are several types of errors that may occur during the process of a request
 -  **Security errors**. This type of error will occur if an access is denied to a requested, updating or deleting entity.
 -  **Unexpected errors**. These errors will occur if some unpredictable problem happens. E.g. no access to a database or a file system, requested entity does not exist, updating entity is blocked, etc.
 
-Please note that to validate input data for `create <./actions#create-action>`__ and `update <./actions#update-action>`__ actions the best solution is to use validation constraints. In most cases it allows to not write any PHP code and configure required validation rules in ``Resources/config/oro/api.yml``. The detailed information how to add own validation constraints can be found in `Forms and Validators Configuration <./forms>`__ document. The following example shows how to add a
+Please note that to validate input data for :ref:`create <web-api--actions>` and :ref:`update <web-api--actions>` actions the best solution is to use validation constraints. In most cases it allows to not write any PHP code and configure required validation rules in ``Resources/config/oro/api.yml``. The detailed information how to add own validation constraints can be found in the :ref:`Forms and Validators Configuration <web-api--forms>` section. The following example shows how to add a
 validation constraint via ``Resources/config/oro/api.yml``:
 
 .. code:: yaml

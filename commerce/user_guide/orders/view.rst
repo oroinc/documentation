@@ -1,31 +1,21 @@
 .. _user-guide--sales--orders--view:
 
-
 View Order Details
-==================
+^^^^^^^^^^^^^^^^^^
 
-.. begin
+.. begin_view
 
 To view details of an order:
 
 #. Navigate to **Sales > Orders** in the main menu.
 #. Find the line with the necessary order and click it.
 
-   Alternatively, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcView| **View** icon.
+Alternatively, click the |IcMore| **More Options** menu at the end of the row, and then click |IcView| **View**.
    
-   The page with order details opens.
-
-   To learn what you can find and perform when viewing the order details, see the following section.
-
-.. contents:: :local:
-   :depth: 3
-
-
-Main Info and Action Buttons
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The page with order details opens.
 
 .. image:: /user_guide/img/products/products/products_review_top.png
-
+   :alt: An order details page
 
 On the top left of the page, you can see the order name.
 
@@ -56,13 +46,12 @@ In the next row, you can check which user is responsible for the order (owns it)
 Click the **Change History** link to see who, how, and when modified the product.
 
 
-General
-^^^^^^^
+**General**
 
 This section is for order details, such as who created the order, who the customer and customer user are, and which website this order applies to.
 
 .. image:: /user_guide/img/sales/orders/order_details_general.png
-
+   :alt: The General section of the order details page
 
 .. csv-table::
    :header: "Field", "Description"
@@ -87,12 +76,12 @@ This section is for order details, such as who created the order, who the custom
    "**Warehouse**","The warehouse that the goods are shipped from."
 
 
-Line Items
-^^^^^^^^^^
+**Line Items**
 
 This section has the list of products added to the order, and their details.
 
 .. image:: /user_guide/img/sales/orders/order_details_lineitems.png
+   :alt: The Line Items section of the order details page
 
 The product information visible by default is the following:
 
@@ -109,16 +98,15 @@ The product information visible by default is the following:
 
 .. For how to configure visible fields, a number of items per page, etc., see the :ref:`Grids <doc-grids>` topic.
 
-Shipping Information
-^^^^^^^^^^^^^^^^^^^^
+**Shipping Information**
 
 This section displays details of shipping tracking and cost.
 
 .. image:: /user_guide/img/sales/orders/order_details_shipping.png
+   :alt: The Shipping Information section of the order details page
 
 
-Promotions and Discounts
-^^^^^^^^^^^^^^^^^^^^^^^^
+**Promotions and Discounts**
 
 This section provides the information about promotions and discounts applied to the order. The section is divided into **All Promotions** and **All Special Discounts**.
 
@@ -131,27 +119,26 @@ Within **All Special Discounts**, you can view:
 
 * Special discounts added manually
 
-
 .. image:: /user_guide/img/sales/orders/order_details_promotions.png
+   :alt: The Promotions and Discounts section of the order details page
 
 For more information, see :ref:`Promotions and Discounts <user-guide--marketing--promotions>`.
 
 
-Totals
-^^^^^^
+**Totals**
 
 This section shows order cost including any discounts (in all currencies, configured for the purpose).
 
 .. image:: /user_guide/img/sales/orders/order_details_totals.png
+   :alt: The Totals section of the order details page
 
 
-Payment History
-^^^^^^^^^^^^^^^
+**Payment History**
 
 This section provides the information about payment transactions concerning the order.
 
 .. image:: /user_guide/img/sales/orders/order_details_paymenthistory.png
-
+   :alt: The Payment History section of the order details page
 
 .. csv-table::
    :header: "Field", "Description"
@@ -183,8 +170,7 @@ This section provides the information about payment transactions concerning the 
 
    If you are an administrator, in the user role, find the Order entity and check the access level configured for the View Payment action.
 
-Activity
-^^^^^^^^
+**Activity**
 
 This section displays any notes, calendar events, or emails related to the order.
 
@@ -194,11 +180,8 @@ You can see who started the activity, its type, name and description, when it wa
 
 Click the activity to see detailed information about it.
 
-
-
 .. image:: /user_guide/img/products/products/products_review_activity_manage2.png
-
-
+   :alt: The details of the selected activity
 
 To edit the activity, click the |IcMore| **More Options** menu at the end of the row and click |IcEdit| **Update**. In the dialog that appears, make required changed and then click **Save**.
 
@@ -209,11 +192,12 @@ You can add and delete an activity context.
 To add a context to the activity, click the |IcMore| **More Options** menu at the end of the row, and the click |IcContext| **Add Context**. In the **Add Context Entity** dialog, choose the desired context and click it to select.
 
 .. image:: /user_guide/img/sales/orders/activity_note_moreoptions.png
+   :alt: Available options displayed after clicking the More Options menu
 
 For an email activity, you can reply/reply all/forward the corresponding email. To do this, click the corresponding icon in the |IcMore| **More Options** menu at the end of the activity row. Alternatively, click activity to expand it, and select the required action from the list on the right.
 
 .. image:: /user_guide/img/sales/orders/activity_email_moreoptions.png
-
+   :alt: Available email activity options displayed after clicking the More Options menu
 
 To delete a context from the activity, click the activity to expand it, and under the activity name, click the **x** icon next to the context that you want to remove.
 
@@ -224,22 +208,21 @@ To edit or delete a comment, click the |IcMore| **More Options** menu next to it
 For more information about activities, see the :ref:`Activities <user-guide-productivity-tools>` guide.
 
 
-Marketing Activity
-^^^^^^^^^^^^^^^^^^^
+**Marketing Activity**
 
 This section shows any activity of this kind associated with the order.
 
 
-Additional Information
-^^^^^^^^^^^^^^^^^^^^^^^
+**Additional Information**
 
 This section includes any attachments, if available.
 
 .. image:: /user_guide/img/sales/orders/order_details_additional.png
+   :alt: The Additional Information section of the order details page
 
 For information on attachments and how to manage them, see the :ref:`Attachments <user-guide-activities-attachments>` guide.
 
-.. finish
+.. finish_view
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
