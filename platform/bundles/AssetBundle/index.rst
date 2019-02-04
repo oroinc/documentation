@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-asset-bundle:
 
-AssetBundle
-===========
+OroAssetBundle
+==============
 
 OroAssetBundle adds possibility to install project assets using webpack.
 
