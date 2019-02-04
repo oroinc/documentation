@@ -69,7 +69,7 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 
 * :ref:`Data Protection in the OroCommerce Storefront <frontstore-guide--profile-consents>`
 * :ref:`Declined Consents as Contact Requests <user-guide-activities-requests>`
-* :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`
+* :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`  
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
