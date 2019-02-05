@@ -38,11 +38,6 @@ Google Hangouts
 
 By default, **Enable For Emails** and **Enable For Phones** are enabled.
 
-MS Exchange Settings
---------------------
-
-MS Exchange configuration for organization is similar to the global :ref:`MS Exchange configuration <admin-configuration-ms-exchange-integration-settings>`.
-
 MS Outlook Settings
 -------------------
 

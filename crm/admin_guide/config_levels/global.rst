@@ -28,7 +28,6 @@ The following categories of settings are available for system configuration (fol
   * Integrations
 
     * :ref:`Google Settings <admin-configuration-integrations-google>`
-    * :ref:`MS Exchange Settings <admin-configuration-ms-exchange-integration-settings>`
     * :ref:`dotmailer Settings <admin-configuration-dotmailer-integration-settings>`
     * :ref:`MailChimp Settings <user-guide-mc-integration>`
 
