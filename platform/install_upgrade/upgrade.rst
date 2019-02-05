@@ -35,7 +35,7 @@ To retrieve source code of a new version and upgrade your OroPlatform instance, 
 
 4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary branch (`3.0`) or tag (`3.0.0`) in the application repository (e.g. ``https://github.com/oroinc/platform-application.git``) or download the latest OroPlatform version from the `download section on the oroinc.com/oroplatform <https://oroinc.com/oroplatform/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`3.1`) or tag (`3.1.1`) in the application repository (e.g. ``https://github.com/oroinc/platform-application.git``) or download the latest OroPlatform version from the `download section on the oroinc.com/oroplatform <https://oroinc.com/oroplatform/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 

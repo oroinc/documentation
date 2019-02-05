@@ -35,7 +35,7 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
 4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary branch (`1.6`) or tag (`1.6.1`) in the application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the oroinc.com/orocommerce <https://oroinc.com/b2b-ecommerce/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`3.1`) or tag (`3.1.1`) in the application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the oroinc.com/orocommerce <https://oroinc.com/b2b-ecommerce/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 
