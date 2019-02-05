@@ -74,6 +74,7 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Translate Content <content-translation>`
 * :ref:`Translate Product Attribute Labels <localization--translations--labels>`
 * :ref:`Translate Content Blocks <user-guide--landing-pages--marketing--content-blocks--translation>`
+* :ref:`Translate Consents <user-guide--consents--localizing-consents>`
 
 
 .. include:: /img/buttons/include_images.rst

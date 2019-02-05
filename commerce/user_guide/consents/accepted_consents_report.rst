@@ -26,7 +26,7 @@ As an illustration, we are creating a report to collect statistics on buyers who
    * Drag **Field Condition** to the blank panel on the right.
    * Click **Customer User > Accepted Consents**.
    * Select one or several consents from the list.
- 
+
    .. image:: /admin_guide/img/configuration/customer/consents/accepted_consents_report.png
       :alt: An example of a report with accepted consents
 
