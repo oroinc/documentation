@@ -11,16 +11,32 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    :maxdepth: 3
 
    ActionBundle/index
+   ActivityBundle/index
+   ActivityListBundle/index
+   AddressBundle/index
    ApiBundle/index
    AssetBundle/index
+   AttachmentBundle/index
+   BatchBundle/index
    CacheBundle/index
+   ChartBundle/index
+   CommentBundle/index
    ConfigBundle/index
    CronBundle/index
+   CurrencyBundle/index
+   DashboardBundle/index
    DataAuditBundle/index
    DataGridBundle/index
+   DisctributionBundle/index
+   EmailBundle/index
+   EmbeddedFormBundle/index
    EntityBundle/index
    EntityConfigBundle/index
    EntityExtendBundle/index
+   EntityPaginationBundle/index
+   EntityMergeBundle/index
+   FeatureToggleBundle/index
+   FilterBundle/index
    ImportExportBundle/index
    IntegrationBundle/index
    LayoutBundle/index
