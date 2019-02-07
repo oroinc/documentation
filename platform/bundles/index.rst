@@ -37,12 +37,19 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    EntityMergeBundle/index
    FeatureToggleBundle/index
    FilterBundle/index
+   FormBundle/index
+   GaufretteBundle/index
+   ImapBundle/index
    ImportExportBundle/index
+   InstallerBundle/index
    IntegrationBundle/index
    LayoutBundle/index
+   LocaleBundle/index
    LoggerBundle/index
    MessageQueueBundle/index
+   MigrationBundle/index
    NavigationBundle/index
+   NoteBundle/index
    QueryDesignerBundle/index
    SearchBundle/index
    SecurityBundle/index
