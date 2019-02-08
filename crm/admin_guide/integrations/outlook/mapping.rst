@@ -92,6 +92,6 @@ The following fields of an OroCRM calendar event record are mapped to the follow
      Invitations, received by the user are sent to Outlook as regular calendar events.
 
 
-.. important:: Be aware that if you add a Google-based account to the existing MS Exchange account, your default calendar may change. This is important to remember when synchronizing events between Oro and Outlook.
+.. .. important:: Be aware that if you add a Google-based account to the existing MS Exchange account, your default calendar may change. This is important to remember when synchronizing events between Oro and Outlook.
 
 .. finish_mapping

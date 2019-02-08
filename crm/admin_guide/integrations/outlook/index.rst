@@ -5,14 +5,19 @@
 MS Outlook Integration
 ======================
 
-The Enterprise edition of your Oro application (OroCRM or OroCommerce) supports an out-of-the-box integration with MS Outlook (2010, 2013, 2016). All contacts, tasks and calendar events can be synchronized between Oro and a specific MS Outlook account with the help of an MS Outlook add-in. In addition, with the help of the add-in, leads, opportunities and cases can be created on the Outlook side and synchronized back to Oro.
+The Enterprise edition of your Oro application (OroCRM or OroCommerce) supports an integration with MS Outlook (2010, 2013, 2016). All contacts, tasks and calendar events can be synchronized between Oro and a specific MS Outlook account with the help of an MS Outlook add-in. In addition, with the help of the add-in, leads, opportunities and cases can be created on the Outlook side and synchronized back to Oro.
 
-The following guide outlines the prerequisites for integration, describes the step-by-step setup process on both sides, and gives an overview of the synchronization workflow between the applications.
+The following guide outlines the prerequisites for the MS Outlook extension integration, describes the step-by-step setup process on both sides, and gives an overview of the synchronization workflow between the applications.
 
 .. note:: Please be aware that emails are not synced in the course of Outlook integration. To learn about email synchronization, please refer to :ref:`Email Configuration <user-guide-email-admin>` topic.
 
 .. contents:: :local:
    :depth: 2
+
+Install Extension
+-----------------
+
+To configure MS Outlook integration, ensure that you have MS Outlook extension installed in your Oro instance. For this, use the `Composer <https://getcomposer.org/doc/03-cli.md#require>`_ to install *oro/outlook* package in your Oro Enterprise application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
 
 Before You Begin
 ----------------

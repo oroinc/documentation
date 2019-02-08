@@ -13,11 +13,9 @@ OroCRM supports the following pre-implemented integrations:
 
   - :ref:`Google Hangouts Voice and Video Calls <user-guide-hangouts>`: Enables you to make Hangouts voice or video calls from within your Oro application.
 
-  - :ref:`Microsoft Exchange Server <admin-configuration-ms-exchange>`: Enables users to access contents of their mailboxes on the server directly in the Oro application UI. (Available for Enterprise edition only).
-
   - :ref:`LDAP <user-guide-ldap-integration>`: Enables uploading the existing user records into Oro applications and map LDAP user role identifiers to Oro application roles.
 
-  - :ref:`Microsoft Outlook <config-guide--integrations--ms-outlook>`: Enables automatic bi-directional synchronization of the Oro application contacts, tasks and calendar events that are available to the users with their Microsoft Outlook applications. (Available for Enterprise edition only).
+  - :ref:`Microsoft Outlook <config-guide--integrations--ms-outlook>`: Enables automatic bi-directional synchronization of the Oro application contacts, tasks and calendar events that are available to the users with their Microsoft Outlook applications. (Available as an extension for Enterprise edition only).
 
 
 - Integrations that are configured at the :term:`organization <Organization>` level. These integrations enable adjustment of third-party system integration parameters (e.g. credentials, account IDs, synchronizations settings, etc.) for different organizations.
@@ -44,7 +42,6 @@ OroCRM supports the following pre-implemented integrations:
    ldap_integration
    mailchimp_configuration
    dotmailer/index
-   ms_exchange/index
    outlook/index
    embedded_forms
    zendesk_integration
