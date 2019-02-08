@@ -50,6 +50,9 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    MigrationBundle/index
    NavigationBundle/index
    NoteBundle/index
+   NotificationBundle/index
+   OrganizationBundle/index
+   PlatformBundle/index
    QueryDesignerBundle/index
    SearchBundle/index
    SecurityBundle/index
