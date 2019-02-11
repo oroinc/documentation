@@ -23,7 +23,6 @@ The following categories of settings are available for system configuration at o
 
   * Integrations
 
-    * :ref:`MS Exchange Settings <admin-configuration-ms-exchange-integration-settings>`
     * :ref:`Google Settings <admin-configuration-integrations-google>`
     * :ref:`MS Outlook Settings <configuration--guide--system--configuration--integrations--org--ms-outlook>`
 

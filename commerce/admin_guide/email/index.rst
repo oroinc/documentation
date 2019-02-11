@@ -5,7 +5,7 @@ Email Configuration
 
 Businesses handle large amounts of internal and external correspondence on a daily basis and managing it all can be time consuming. OroCRM offers many tools and configuration settings to simplify and manage in-house and external correspondence to fit all your business needs.
 
-The following topics illustrate all email settings and provide instructions on how to configure personal and system mailboxes, and integrate with Google, MS Exchange and Outlook, set up email templates and notification rules.
+The following topics illustrate all email settings and provide instructions on how to configure personal and system mailboxes, and integrate with Google and Outlook, set up email templates and notification rules.
 
 Click on the topics below to learn more:
 
@@ -17,7 +17,6 @@ Click on the topics below to learn more:
 **Related Topics**
 
 * :ref:`Configure an Integration with Google <admin-configuration-google>`
-* :ref:`Configure an Integration with MS Exchange <admin-configuration-ms-exchange>`
 
 .. toctree::
    :titlesonly:

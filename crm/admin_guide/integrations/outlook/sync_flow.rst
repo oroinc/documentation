@@ -66,7 +66,7 @@ All the records processed in OroCRM since the latest synchronization date and av
   "You deleted a record in Outlook.","OroCRM creates the record again."
   "You deleted a record in OroCRM.","The record stays in Outlook with no changes."
 
-.. important:: Be aware that if you add a Google-based account to the existing MS Exchange account, your default calendar may change. This is important to remember when synchronizing events between Oro and Outlook.
+.. .. important:: Be aware that if you add a Google-based account to the existing MS Exchange account, your default calendar may change. This is important to remember when synchronizing events between Oro and Outlook.
 
 Sync Records from Outlook to OroCRM
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
