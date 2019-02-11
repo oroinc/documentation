@@ -10,11 +10,11 @@ The bundle provides the ability for developers to use different search engines, 
 Related Documentation
 ---------------------
 
-* `Configure Search <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md>`__
-* `Console Commands <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md>`__
-* `Postpone or Skip Reindexation <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/platform_update.md>`__
-* `API Simple Search <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/simple_search.md>`__
-* `API Advanced Search <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/advanced_search.md>`__
-* `Query Builder <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/query_builder.md>`__
-* `Configure ORM Search Engine <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/orm_search_engine.md>`__
-* `Customize Relevance Weight in Standard Search Index <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/relevance_weight.md>`__
+* `Configure Search <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md>`__
+* `Console Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md>`__
+* `Postpone or Skip Reindexation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/platform_update.md>`__
+* `API Simple Search <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/simple_search.md>`__
+* `API Advanced Search <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/advanced_search.md>`__
+* `Query Builder <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/query_builder.md>`__
+* `Configure ORM Search Engine <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/orm_search_engine.md>`__
+* `Customize Relevance Weight in Standard Search Index <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/relevance_weight.md>`__

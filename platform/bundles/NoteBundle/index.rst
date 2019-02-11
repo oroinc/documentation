@@ -9,4 +9,4 @@ Related Documentation
 ---------------------
 
 * `Enable Notes Using Migrations <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NoteBundle#how-to-enable-notes-using-migrations>`__
-* `Actions <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/NoteBundle/Resources/doc/actions.md>`__ ?????
+* `Actions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NoteBundle/Resources/doc/actions.md>`__ ?????

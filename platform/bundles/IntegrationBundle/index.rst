@@ -8,8 +8,8 @@ OroIntegrationBundle introduces a framework that enables developers to create in
 Related Documentation
 ---------------------
 
-* `Configuration Reference <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/configuration-reference.md>`__
-* `Additional Serializable Fields to Store Platform Specific Settings <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-settings.md>`__
-* `Reverse Synchronization <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/reverse-sync.md>`__
-* `Define Owner for Related Entities on Integration Level <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/default-integration-owner.md>`__
-* `Save Service Data Between Synchronizations <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-capabilities.md>`__
+* `Configuration Reference <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/configuration-reference.md>`__
+* `Additional Serializable Fields to Store Platform Specific Settings <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-settings.md>`__
+* `Reverse Synchronization <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/reverse-sync.md>`__
+* `Define Owner for Related Entities on Integration Level <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/default-integration-owner.md>`__
+* `Save Service Data Between Synchronizations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-capabilities.md>`__

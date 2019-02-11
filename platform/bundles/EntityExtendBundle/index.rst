@@ -8,9 +8,9 @@ OroEntityExtendBundle enables the entities structure extension using UI or migra
 Related Documentation
 ---------------------
 
-* `Define Custom Form Type for a Field <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/custom_form_type.md>`__
-* `Configure Associations to Create Undirectional Relation Between Entities <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md>`__
-* `Create an API for Managing Associations <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations_api.md>`__
+* `Define Custom Form Type for a Field <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/custom_form_type.md>`__
+* `Configure Associations to Create Undirectional Relation Between Entities <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md>`__
+* `Create an API for Managing Associations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations_api.md>`__
 * `Manage Entities Through UI <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#manage-entities-through-ui>`__
 * `Modify Entities Using Migration Scripts <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#modify-entities-using-migration-scripts>`__
 * `Add a Relation <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#add-relation>`__

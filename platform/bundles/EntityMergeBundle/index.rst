@@ -8,6 +8,6 @@ OroEntityMergeBundle enables application users to merge several entity records i
 Related Documentation
 ---------------------
 
-* `Use Entity Merge <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/getting-started.md>`__
-* `Dependencies Between Entity Merge Bundle Classes (Diagram) <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/classes-diagram.md>`__
-* `Configure an Entity <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md>`__
+* `Use Entity Merge <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/getting-started.md>`__
+* `Dependencies Between Entity Merge Bundle Classes (Diagram) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/classes-diagram.md>`__
+* `Configure an Entity <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md>`__

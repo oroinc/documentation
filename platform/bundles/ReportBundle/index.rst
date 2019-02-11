@@ -8,4 +8,4 @@ OroReportBundle enables you to build custom reports for the application data in 
 Related Documentation
 ---------------------
 
-* `Configure Dedicated Database Connection for Reports <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md>`__
+* `Configure Dedicated Database Connection for Reports <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md>`__

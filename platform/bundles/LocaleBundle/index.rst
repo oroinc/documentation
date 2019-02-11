@@ -29,12 +29,12 @@ Locale settings uses system configuration as a source.
 Related Documentation
 ---------------------
 
-* `Locale Settings <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md>`__
-* `Number Formatting <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/number-formatting.md>`__
-* `DateTime Formatting <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/datetime-formatting.md>`__
-* `Address Formatting <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md>`__
-* `Name Formatting <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md>`__
-* `Localization and LocalizedFallbackValue Entities <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/entities.md>`__
-* `Localized Values <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/localized-values.md>`__
-* `Current Localization <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/current-localization.md>`__
-* `Manage Localizations <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/managing-localizations.md>`__
+* `Locale Settings <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md>`__
+* `Number Formatting <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/number-formatting.md>`__
+* `DateTime Formatting <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/datetime-formatting.md>`__
+* `Address Formatting <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md>`__
+* `Name Formatting <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md>`__
+* `Localization and LocalizedFallbackValue Entities <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/entities.md>`__
+* `Localized Values <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/localized-values.md>`__
+* `Current Localization <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/current-localization.md>`__
+* `Manage Localizations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/managing-localizations.md>`__

@@ -8,6 +8,6 @@ OroFilterBundle implements a variety of Form Types with dynamic JS components an
 Related Documentation
 ---------------------
 
-* `Use Filter Form Types <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md>`__
-* `Javascript Widgets <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/javascript_widgets.md>`__
-* `Grid Extension <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/grid_extension.md>`__
+* `Use Filter Form Types <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md>`__
+* `Javascript Widgets <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/javascript_widgets.md>`__
+* `Grid Extension <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/grid_extension.md>`__

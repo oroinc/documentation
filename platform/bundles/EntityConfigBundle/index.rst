@@ -8,12 +8,12 @@ OroEntityConfigBundle enables developers to define and configure the entities me
 Related Documentation
 ---------------------
 
-* `Configure Attributes for an Entity <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/attributes.md>`__
+* `Configure Attributes for an Entity <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/attributes.md>`__
 * `Add Metadada to an Entity <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#getting-started>`__
 * `Index Attributes <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#indexed-attributes>`__
 * `Implement EntityConfigBundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#implementation>`__
 * `Update Configuration Data <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#update-configuration-data>`__
 * `Clear up Cache <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#clearing-up-the-cache>`__
 * `Debug Configuration Data <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#debugging-configuration-data>`__
-* `Configure Entity Scope (Example) <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/configuration.md>`__
+* `Configure Entity Scope (Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/configuration.md>`__
 

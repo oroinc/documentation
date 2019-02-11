@@ -11,10 +11,10 @@ Related Documentation
 ---------------------
 
 * :ref:`Translate Content in Oro Applications <dev-translation>`
-* `Debug Translator and JS Translations <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/configuration.md>`__
-* `Data Fixtures for Translatable Entities <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/data_fixtures.md>`__
-* `Form Types <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/form_types.md>`__
-* `Console commands <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md>`__
-* `Translation Strategies <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md>`__
-* `Translation Context Resolver <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/context_resolver.md>`__
+* `Debug Translator and JS Translations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/configuration.md>`__
+* `Data Fixtures for Translatable Entities <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/data_fixtures.md>`__
+* `Form Types <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/form_types.md>`__
+* `Console commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md>`__
+* `Translation Strategies <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md>`__
+* `Translation Context Resolver <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/context_resolver.md>`__
 

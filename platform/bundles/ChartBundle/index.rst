@@ -8,6 +8,6 @@ OroChartBundle helps display the application data in the UI in the form of chart
 Related Documentation
 ---------------------
 
-* `Use Charts <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/usage.md>`__
-* `Configure Charts <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md>`__
+* `Use Charts <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/usage.md>`__
+* `Configure Charts <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md>`__
 

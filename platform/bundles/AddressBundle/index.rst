@@ -8,9 +8,9 @@ OroAddressBundle introduces a base entity and interfaces for addresses and the a
 Related Documentation
 ---------------------
 
-* `Use AddressBundle <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/usage.md#usage>`__
-* `Entities <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/entities.md>`__ ????????????
-* `Form Types <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/form_types.md#address-form-types>`__ ??????????
-* `Address Type <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/address_type.md>`__
-* `Validate Addresses and Address Collection <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/validators.md>`__
+* `Use AddressBundle <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/usage.md#usage>`__
+* `Entities <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/entities.md>`__ ????????????
+* `Form Types <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/form_types.md#address-form-types>`__ ??????????
+* `Address Type <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/address_type.md>`__
+* `Validate Addresses and Address Collection <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/validators.md>`__
 

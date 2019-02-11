@@ -8,8 +8,8 @@ OroConfigBundle enables developers to define the application configuration setti
 Related Documentation
 ---------------------
 
-* `Configuration Reference <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ConfigBundle/Resources/doc/system_configuration.md>`__
-* `Config Management <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ConfigBundle/Resources/doc/config_management.md>`__
-* `Add a New Configuration Scope <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ConfigBundle/Resources/doc/add_new_config_scope.md>`__
+* `Configuration Reference <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/system_configuration.md>`__
+* `Config Management <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/config_management.md>`__
+* `Add a New Configuration Scope <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/add_new_config_scope.md>`__
 
-.. Conditions https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ConfigBundle/Resources/doc/reference/conditions.md
+.. Conditions https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/reference/conditions.md

@@ -16,12 +16,12 @@ Those components are:
 Related Documentation
 ---------------------
 
-* `ActionBundle Glossary <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/index.md#actionbundle-glossary>`__
-* `ActionBundle Configuration Reference <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/configuration-reference.md>`__
-* `Console Commands <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/index.md#console-commands>`__
-* `Configure Action Groups <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/action-groups.md>`__
-* `Work with Actions <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/actions.md>`__
-* `Work with Operations <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#operation-configuration>`__
-* `Add User Interface <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/buttons.md>`__
-* `Add Custom and Configurable Conditions <https://github.com/laboro/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/conditions.md>`__
+* `ActionBundle Glossary <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/index.md#actionbundle-glossary>`__
+* `ActionBundle Configuration Reference <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/configuration-reference.md>`__
+* `Console Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/index.md#console-commands>`__
+* `Configure Action Groups <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/action-groups.md>`__
+* `Work with Actions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/actions.md>`__
+* `Work with Operations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#operation-configuration>`__
+* `Add User Interface <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/buttons.md>`__
+* `Add Custom and Configurable Conditions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/conditions.md>`__
 
