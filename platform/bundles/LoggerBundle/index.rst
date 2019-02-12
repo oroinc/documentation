@@ -14,5 +14,5 @@ Related Documentation
 
 * `Enable Error Logs Email Notification <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#error-logs-email-notifications>`__
 * `Temporarily Decrease Log Level <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#temporarily-decrease-log-level>`__
-* `Log Console Commands <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands>`__
+* `Log Console Commands <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands>`__ ?????
 

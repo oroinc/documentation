@@ -14,10 +14,4 @@ Basic statements:
 Related Documentation
 ---------------------
 
-* `Theme properties <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties>`__
-* `Add a theme using config.yml
-Add a theme using a bundle
-Override a theme
-Load theme styles
-Debug theme styles
-Get a list of available themes
+* `Introduction to Themes <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties>`__

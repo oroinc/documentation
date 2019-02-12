@@ -9,12 +9,7 @@ Related Documentation
 ---------------------
 
 * `Layout Definition <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/what_is_layout.md>`__
-* `Create a Layout Theme <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#create-layout-theme>`__
-* `Use a Layout Theme Configuration <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#use-layout-theme-configuration>`__
-* `Set the Default Theme <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#set-default-theme>`__
-* `Create a Layout Update File <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#create-layout-update-files>`__
-* `Customize Rendering of Your Theme <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#customize-rendering-of-your-theme>`__
-* `Create a Controller <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md#create-a-controller>`__
+* `Create and Use Layout Themes <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md>`__
 * `Configure Layout Context <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_context.md>`__
 * `Use Layout Data <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_data.md>`__
 * `Expressions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/expressions.md>`__

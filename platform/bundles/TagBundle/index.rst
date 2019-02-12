@@ -12,5 +12,5 @@ Related Documentation
 ---------------------
 
 * `Enable Tags for an Entity <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/TagBundle#orotagbundle>`__
-* `Tags-select Content Editor (Usage Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle/Resources/doc/editor/tags-editor-view.md>`__
-* `Tags View (Usage Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle/Resources/doc/viewer/tags-view.md>`__
+* `Tags-select Content Editor (Usage Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle/Resources/doc/editor/tags-editor-view.md>`__ ???
+* `Tags View (Usage Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle/Resources/doc/viewer/tags-view.md>`__ ???
