@@ -8,10 +8,4 @@ OroEmbeddedFormBundle enables the application users to create integrated forms u
 Related Documentation
 ---------------------
 
-* `Configure OroEmbeddedBundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#configuration>`__
-* `Add New FormType <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#adding-new-formtype>`__
-* `Default FormType CSS and Success Message <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#default-formtype-css-and-success-message>`__ ????????
-* `Change FormType <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#changing-formtype>`__
-* `Change Success Message <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#success-message>`__
-* `Get Code <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#get-a-code>`__
-* `Customize Form Layout <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#custom-form-layout>`__
+* `Configure and Use OroEmbeddedBundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#configuration>`__

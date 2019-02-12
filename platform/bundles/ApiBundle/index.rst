@@ -29,7 +29,7 @@ Related Documentation
 * `Configuration Extensions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md>`__
 * `Forms and Validators Configuration <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/forms.md>`__
 * `Document API Resources <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/documentation.md>`__
-* `Review and Create Actions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#creating-new-action>`__
+* `Review and Create Actions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md>`__
 * `Understand the Request Type <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/request_type.md>`__
 * `Create a Processor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md>`__
 * `Work with X-Include Headers <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/headers.md>`__

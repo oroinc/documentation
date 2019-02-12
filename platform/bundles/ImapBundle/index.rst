@@ -8,5 +8,5 @@ OroImapBundle enables the data synchronization between local user mailboxes prov
 Related Documentation
 ---------------------
 
-* `Use OroImapBundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ImapBundle#usage>`__
+* `Use Imap Bundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ImapBundle#usage>`__
 * `Synchronize with IMAP Servers <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers>`__

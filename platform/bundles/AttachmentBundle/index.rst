@@ -16,4 +16,4 @@ Related Documentation
 * `Use Migration Extension (Example) <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/AttachmentBundle#acl-protection>`__
 * `Configure Attachments <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/AttachmentBundle#entity-attachments>`__
 * `Image Formatters <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/AttachmentBundle#image-formatters>`__
-* `Configure Debug Images <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/AttachmentBundle#debug-images-configuration>`__
+* `Configure Debug Images <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/AttachmentBundle#debug-images-configuration>`__ ????

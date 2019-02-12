@@ -15,7 +15,7 @@ Related Documentation
 * `Configure UI DataBlock <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/ui_datablock_config.md>`__
 * `Set up Validation Rules for Form Fields <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/js_validation.md>`__
 * `Update Handler <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/update_handler.md>`__
-* `Connect Inline Editors on View Pages <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/inline-editable-view-component.md>`__
+* `Connect Inline Editors on View Pages <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/inline-editable-view-component.md>`__ ?????
 * `Expression Editor <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/expression-editor.md>`__
 * `Allow Custom HTML Tags <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/rich_text_form_type.md>`__ правильно назвала?
 * `Connected Search APIs <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/search-apis.md>`__ ????

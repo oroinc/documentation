@@ -53,7 +53,20 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    NotificationBundle/index
    OrganizationBundle/index
    PlatformBundle/index
+   ReportBundle/index
+   RequireJSBundle/index
    QueryDesignerBundle/index
+   ScopeBundle/index
    SearchBundle/index
    SecurityBundle/index
+   SegmentBundle/index
+   SidebarBundle/index
+   SoapBundle/index
+   SyncBundle/index
+   TagBundle/index
+   TestFrameworkBundle/index
+   ThemeBundle/index
    TranslationBundle/index
+   UIBundle/index
+   WindowsBundle/index
+   WorkflowBundle/index
