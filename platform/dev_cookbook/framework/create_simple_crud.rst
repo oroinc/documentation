@@ -727,91 +727,47 @@ section for an explanation of the different blocks.
 Deleting Entities
 -----------------
 
-As you may have noticed, the datagrid configuration used the special ``delete`` type when defining
-the action that will be performed when the user clicks the trash icon for an entry. When the
-``delete`` is used, Oro will perform a ``DELETE`` HTTP request to the referenced resource. You can
-easily create a REST controller that handles the ``DELETE`` request by extending the
-:class:`Oro\\Bundle\\SoapBundle\\Controller\\Api\\Rest\\RestController` class:
+You can delete an entity through the `DELETE operation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations>`_ which is enabled by default for all entities. To run the operation, you need to ensure that your entity has the ``routeName`` option of the entity configuration which will be used as a route name to redirect a user after the ``DELETE`` operation (as in the example below).
 
 .. code-block:: php
     :linenos:
 
-    // src/InventoryBundle/Controller/Api/Rest/VehicleController.php
-    namespace InventoryBundle\Controller\Api\Rest;
+    @Config(
+         routeName="oro_task_index",
+         routeView="oro_task_view",
+         defaultValues={
+             "entity"={
+                 "icon"="fa-tasks"
+             },
 
-    use FOS\RestBundle\Controller\Annotations\NamePrefix;
-    use FOS\RestBundle\Controller\Annotations\RouteResource;
-    use Oro\Bundle\SecurityBundle\Annotation\Acl;
-    use Oro\Bundle\SoapBundle\Controller\Api\Rest\RestController;
+See the sample configuration of the default ``DELETE`` operation in the `Actions <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/config/oro/actions.yml>`_ topic.
 
-    /**
-     * @RouteResource("vehicle")
-     * @NamePrefix("inventory_api_")
-     */
-    class VehicleController extends RestController
-    {
-        /**
-         * @Acl(
-         *      id="inventory.vehicle_delete",
-         *      type="entity",
-         *      class="InventoryBundle:Vehicle",
-         *      permission="DELETE"
-         * )
-         */
-        public function deleteAction($id)
-        {
-            return $this->handleDeleteRequest($id);
-        }
+If the default configuration is not valid for your particular case, create your own operation that would inherit from the default one following the example:
 
-        public function getForm()
-        {
-        }
-
-        public function getFormHandler()
-        {
-        }
-
-        public function getManager()
-        {
-            return $this->get('inventory.vehicle_manager.api');
-        }
-    }
-
-Thanks to the `FOSRestBundle`_, you just have to follow some naming conventions to create the
-controller action that is able to properly handle the ``DELETE`` requests.
-
-The ``getManager()`` method must return an object that is able to actually delete the object that
-is identified by the passed ID. Luckily, you don't have to implement your own class, but you can
-just create a service which is an instance of the
-:class:`Oro\\Bundle\\SoapBundle\\Entity\\Manager\\ApiEntityManager` class:
-
-.. code-block:: yaml
+.. code-block:: php
     :linenos:
 
-    # src/InventoryBundle/Resources/config/services.yml
-    services:
-        inventory.vehicle_manager.api:
-            class: Oro\Bundle\SoapBundle\Entity\Manager\ApiEntityManager
-            parent: oro_soap.manager.entity_manager.abstract
-            arguments:
-                - InventoryBundle\Entity\Vehicle
-                - "@doctrine.orm.entity_manager"
+    DELETE:
+        exclude_entities:
+            - Oro\Bundle\CatalogBundle\Entity\Category
 
-Finally, make sure to load the controllers route:
+    oro_catalog_category_delete:
+        extends: DELETE
+        replace:
+            - exclude_entities
+            - entities
+            - for_all_datagrids
+            - for_all_entities
+        for_all_datagrids: false
+        for_all_entities: false
+        entities:
+            - Oro\Bundle\CatalogBundle\Entity\Category
+        preconditions:
+            '@and':
+                - '@not_equal': [$.data.parentCategory, null]
 
-.. code-block:: yaml
-    :linenos:
+.. note:: When creating your own operation, make sure to exclude the entity from the default operation. See more details on `available operations and their configuration <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md>`_ in the related article.
 
-    # src/InventoryBundle/Resources/config/oro/routing.yml
-    inventory_api_vehicle:
-        resource:     "@InventoryBundle/Controller/Api/Rest/VehicleController.php"
-        type:         rest
-        prefix:       api/rest/{version}/
-        requirements:
-            version:  latest|v1
-            _format:  json
-        defaults:
-            version:  latest
 
 .. _`SensioFrameworkExtraBundle documentation`: http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
 .. _`OroUIBundle:actions:index.html.twig`: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/index.html.twig

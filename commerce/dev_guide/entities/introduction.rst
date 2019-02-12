@@ -17,5 +17,5 @@ job.
     This series of articles is based on the `TaskBundle`_ from OroCRM. Check out its code or
     install the `OroCommerce Application`_ to see the code from this section in action.
 
-.. _`TaskBundle`: https://github.com/orocrm/crm/tree/master/src/OroCRM/Bundle/TaskBundle
-.. _`OroCommerce Application`: https://github.com/orocommerce/application
+.. _`TaskBundle`: https://github.com/oroinc/OroCRMTaskBundle
+.. _`OroCommerce Application`: https://github.com/oroinc/orocommerce-application
