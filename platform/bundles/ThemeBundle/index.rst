@@ -1,3 +1,5 @@
+.. _bundle-docs-platform-theme-bundle:
+
 OroThemeBundle
 ==============
 
@@ -13,7 +15,7 @@ Related Documentation
 ---------------------
 
 * `Theme properties <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties>`__
-Add a theme using config.yml
+* `Add a theme using config.yml
 Add a theme using a bundle
 Override a theme
 Load theme styles

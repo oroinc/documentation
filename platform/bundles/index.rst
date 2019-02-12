@@ -27,7 +27,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    DashboardBundle/index
    DataAuditBundle/index
    DataGridBundle/index
-   DisctributionBundle/index
+   DistributionBundle/index
    EmailBundle/index
    EmbeddedFormBundle/index
    EntityBundle/index
