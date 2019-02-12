@@ -18,7 +18,7 @@ Related Documentation
 * `References in YAML Configuration <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/references_in_configuration.md>`__
 * `Use State Providers <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/state_providers.md>`__
 * `Use Selected Fields Providers <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/selected_fields.md>`__
-* `Mediator and DOM Events <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid.md>`__ ??????
+* `JavaScript Mediator Events and DOM Events <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid.md>`__ ??????
 * `Use Datagrid Render <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_render.md>`__
 * `Use Datagrid Widget <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_widget.md>`__
 * `Use Datagrid Settings Manager <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_settings.md>`__

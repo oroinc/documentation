@@ -8,4 +8,5 @@ OroGaufretteBundle is a facade for KnpGaufretteBundle that enables a filesystem 
 Related Documentation
 ---------------------
 
-* `File Manager <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/GaufretteBundle#filemanager>`__ ?????????
+* `Abstract File Manager Service <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/GaufretteBundle#orogaufrettebundle>`__
+

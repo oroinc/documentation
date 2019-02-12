@@ -7,7 +7,7 @@ OroRequireJSBundle uses the `RequireJS <https://requirejs.org/>`__ library to en
 
 The bundle enables developers to define RequireJS configuration in YAML files on the bundle level. It also provides a CLI tool to collect RequireJS modules and configuration from bundles, merge and minify them in the production mode.
 
-For details of the RequireJS configuration options, see `RequireJS API <https://requirejs.org/docs/api.html#config>`__. For details of the RequireJS build options, see `example.build.js ,<https://github.com/requirejs/r.js/blob/master/build/example.build.js>`__.
+For details of the RequireJS configuration options, see `RequireJS API <https://requirejs.org/docs/api.html#config>`__. For details of the RequireJS build options, see `example.build.js <https://github.com/requirejs/r.js/blob/master/build/example.build.js>`__.
 
 Related Documentation
 ---------------------

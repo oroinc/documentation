@@ -9,5 +9,3 @@ Related Documentation
 ---------------------
 
 * `Console Commands <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NotificationBundle#console-commands>`__
-* `Create a Notification Rule <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NotificationBundle#notification-rule-creation>`__  ???????
-

@@ -14,7 +14,7 @@ Related Documentation
 * `Page Component <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md>`__
 * `Mediator Handlers <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/mediator-handlers.md>`__
 * `Client Side Navigation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side-navigation.md>`__
-* `TWIG Filters <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md>`__ ???
+* `TWIG Filters <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md>`__
 * `JavaScript Widgets <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/widgets.md>`__
 * `Layout Subtree View <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/layout-subtree-view.md>`__
 * `Highlight Text View <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/layout-subtree-view.md>`__

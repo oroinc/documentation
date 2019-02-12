@@ -8,4 +8,4 @@ OroCurrencyBundle supports the system currency configuration and introduces curr
 Related Documentation
 ---------------------
 
-* `Configure Multi Currency Edit View <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md>`__ ?????
+* `Configure Datagrid to Enable Multi Currency Inline Edit <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md>`__

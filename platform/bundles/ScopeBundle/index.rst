@@ -7,7 +7,7 @@ OroScopeBundle introduces the Scope entity into the Oro applications. A scope is
 
 OroScopeBundle enables developers to establish a relation between scopes and other application data, then calculate current scopes at runtime at any point of the application flow and obtain authorized data for the scope.
 
-.. comment:: For working example of using scopes in Oro application, please check out the VisibilityBundle and AccountBundle code.
+.. comment: For working example of using scopes in Oro application, please check out the VisibilityBundle and AccountBundle code.
 
 Related Documentation
 ---------------------

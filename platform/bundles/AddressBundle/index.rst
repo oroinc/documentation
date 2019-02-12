@@ -9,7 +9,7 @@ Related Documentation
 ---------------------
 
 * `Use Address Bundle <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/usage.md#usage>`__
-* `Entities <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/entities.md>`__ ????????????
+* `Address Entities <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/entities.md>`__
 * `Form Types <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/form_types.md#address-form-types>`__ ??????????
 * `Address Type Entity <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/address_type.md>`__
 * `Validate Addresses and Address Collection <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/validators.md>`__

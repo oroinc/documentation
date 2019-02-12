@@ -24,7 +24,7 @@ It provides such locale settings of the application as:
 
 Locale settings uses system configuration as a source.
 
-.. comment:: locale + language were removed as they have been removed in the scope of non-conflicting locate feature
+.. comment: locale + language were removed as they have been removed in the scope of non-conflicting locate feature
 
 Related Documentation
 ---------------------
