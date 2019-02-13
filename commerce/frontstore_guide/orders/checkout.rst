@@ -189,3 +189,9 @@ In addition, any discounts applied to the order will be displayed in the **Total
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
+
+**Related Topics**
+
+* :ref:`Create an Order <frontstore-guide--orders-create>`
+* :ref:`Reorder Items <frontstore-guide--orders-reorder>`
+* :ref:`Proceed Through Sample Guest Checkout <frontstore-guide--orders-checkout--sample--guest>`

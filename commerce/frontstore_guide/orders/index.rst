@@ -1,4 +1,6 @@
 .. _frontstore-guide--orders:
+.. _frontstore-guide--orders-order-history:
+.. _frontstore-guide--orders-view:
 
 Orders and Checkout
 ===================
@@ -15,27 +17,14 @@ Open and past orders are located:
     
 .. image:: /frontstore_guide/img/orders/Orders.png
 
-The following guide focuses on the Order History section of the OroCommerce storefront, creating new orders and the checkout process:
-
-* :ref:`View Order History <frontstore-guide--orders-order-history>`
-* :ref:`View Orders <frontstore-guide--orders-view>`
-* :ref:`Create an Order <frontstore-guide--orders-create>`
-* :ref:`Re-Order Items <frontstore-guide--orders-reorder>`
-* :ref:`Understand the Checkout Process <frontstore-guide--orders-checkout>`
-
-.. .. include:: /frontstore_guide/related_topics.rst
-   :start-after: begin
+From this page, you can return to the ordering process page the step where you left off during checkout or delete an existing open order. You can also checkout your past orders, place the same order again and print past order details.
 
 .. toctree::
-   :hidden:
-   :titlesonly:
    :maxdepth: 1
 
-   create
-   history
-   view   
-   re-order
    checkout
+   create
+   re-order
    sample_guest_checkout
 
 .. include:: /img/buttons/include_images.rst
