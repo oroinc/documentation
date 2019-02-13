@@ -50,10 +50,17 @@ Overriding Templates
 There are two options for overriding the OroPlatform templates:
 
 #) Overriding one of the platform templates is as easy as adding a template
-   at the same path under ``templates/bundles/`` as the template being overriden.
+   at the same path under ``src/Resources/`` as the template being overriden.
    For example, to override the ``Grid/widget/widget.html.twig`` template
    from the DataGridBundle, create a new template file located at
-   ``templates/bundles/OroDataGridBundle/Grid/widget/widget.html.twig``.
+   ``src/Resources/OroDataGridBundle/views/Grid/widget/widget.html.twig``.
+
+   Keep in mind that templates that are referenced by twig namespaces with ``@``
+   (ex. ``@Twig/Exception/exception.html.twig``) can be overriden in both
+   ``src/Resources/`` and ``templates/bundles``. As most of the templates are still
+   referenced by deprecated Symfony notation (ex. ``TwigBundle:Exception:exception.html.twig``), they
+   can be overriden only in ``src/Resources``. To be on the safe side, it is recommended 
+   to override everything only in ``src/Resources``.
 
 #) You can :ref:`extend an existing bundle <extending-bundles>` to override
    its templates. For example, if the AcmeDemoBundle extends the OroDataGridBundle,
