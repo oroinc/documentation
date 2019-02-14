@@ -139,9 +139,13 @@ The following actions are available for filters:
 
    .. image:: /frontstore_guide/img/navigation/FiltersSelect.png
 
-   .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list.
+   .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list
 
       .. image:: /frontstore_guide/img/navigation/FiltersSelectOneAttribute.png
+
+      or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
+
+      .. image:: /admin_guide/img/configuration/catalog/filters_sorters/dont_change_initial_filter_state.png
 
 4. Another way to apply a filter is to click on its button and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set.
 
@@ -227,6 +231,9 @@ Search is the fastest way to find a specific product:
 
 .. image:: /frontstore_guide/img/navigation/Search.png
 
+**Related Articles**
+
+:ref:`Limit Filters and Sorters <configuration--guide--commerce--configuration--catalog--filters-sorters>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
