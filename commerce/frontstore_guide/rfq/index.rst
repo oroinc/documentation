@@ -19,17 +19,6 @@ To locate your RFQs:
 
 On the All Requests for Quote page, you can view the existing RFQs, or create new ones.
 
-The RFQ table shows the following data:
-
-1. RFQ#
-2. Status
-3. PO Number
-4. DNSLT (Do not ship later than)
-5. Create At
-6. Owner
-7. Step
-8. More Actions (View)
-
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.

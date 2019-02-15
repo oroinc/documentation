@@ -21,20 +21,6 @@ To locate existing quotes:
 
 .. image:: /frontstore_guide/img/quotes/Quotes.png
 
-The All Quotes page contains the following information:
-
-1. Quote #
-2. Status
-3. PO Number
-4. DNSLT (Do Not Ship Later Than)
-5. Created At
-6. Valid Until
-7. Owner
-8. More Actions (View) 
-
-
-You can print the selected quote by clicking **Print Quote** below the quote number.
-
 Within the table you have the following :ref:`action buttons <frontstore-guide--navigation-action-buttons>` available:
 
 1. Refresh the view table: click |IcRefresh| to update the view table.
@@ -42,25 +28,16 @@ Within the table you have the following :ref:`action buttons <frontstore-guide--
 3. Table settings: click |IcSettings| to define which columns to show in the table.
 4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
 
+You can print the selected quote by clicking **Print Quote** below the quote number om the view page of a selected quote.
+
 .. _frontstore-guide--quotes--accept:
 
 Accept a Quote
 --------------
 
-When you receive a quote, you can accept it and submit the order:
-
-1. On the All Quotes page, click on the necessary quote.
-2. Review the quote details, then scroll down to the bottom, and click |IcPencil| **Accept and Submit to Order** on the bottom right of the page.
-
-.. image:: /frontstore_guide/img/quotes/AccepQuoteNew.png
-
-3. You will be redirected to the next page with quote information and product list. Click **Submit** to submit the order, or **Back to Quote List** to go back a step.
-
-.. image:: /frontstore_guide/img/quotes/SubmitQuoteNew.png
-
-4. Once you submit an order, you are redirected to the :ref:`checkout <frontstore-guide--orders-checkout>`. If you are not ready to complete your order, it is saved in the Orders section. For more information on open orders, see the :ref:`Orders topic <frontstore-guide--orders>`.
-
-.. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce storefront.
+.. include:: /frontstore_guide/quotes/accept_quote.rst
+   :start-after: begin
+   :end-before: finish
 
 Send a Guest Quote
 ------------------
@@ -77,6 +54,7 @@ Send a Guest Quote
 .. toctree::
    :hidden:
 
+   accept_quote
    guest_quote_storefront
 
 

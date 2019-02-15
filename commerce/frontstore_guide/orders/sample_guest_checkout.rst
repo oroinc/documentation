@@ -2,8 +2,8 @@
 
 .. begin_sample_checkout
 
-Proceed Through Sample Guest Checkout
--------------------------------------
+Proceed Through a Guest Checkout (Example)
+------------------------------------------
 
 As an illustration, let us follow the steps of the checkout as an unauthenticated user. The following example has registration options available at the checkout. However, please keep in mind, that your website configuration may be different and registration options may be unavailable.
 
@@ -66,6 +66,10 @@ As an illustration, let us follow the steps of the checkout as an unauthenticate
 
    .. image:: /frontstore_guide/img/orders/SampleGuestCheckout10.png
 
-
-
 .. finish_sample_checkout
+
+**Related Topics**
+
+* :ref:`Understand the Checkout Process <frontstore-guide--orders-checkout>`
+* :ref:`Create an Order <frontstore-guide--orders-create>`
+* :ref:`Reorder Items <frontstore-guide--orders-reorder>`

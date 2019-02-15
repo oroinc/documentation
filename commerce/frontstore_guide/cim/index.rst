@@ -4,7 +4,7 @@ Manage Payment Profiles (Authorize.Net Customer Profiles)
 =========================================================
 
 .. contents:: :local:
-   :depth: 2
+   :depth: 1
 
 When checking out using a credit card or `eCheck <https://www.authorize.Net/payments/echeck/>`__ , a customer is presented with the option to store the payment method for future use. This information is stored in your OroCommerce account as an Authorize.Net customer profile. A customer who has a previously saved profile is presented with the option for seamless subsequent checkouts without having to re-enter their payment data. Once you log into your account in the OroCommerce storefront, you can view and manage payment and address information stored within Customer Profiles, as well as add new credit cards and bank accounts.
 

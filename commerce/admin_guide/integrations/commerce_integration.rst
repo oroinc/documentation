@@ -98,7 +98,7 @@ In the applications where an integration between Commerce and CRM is configured,
 
 An `account <https://oroinc.com/orocrm/doc/current/user-guide-sales-tools/customer-management/common-features-accounts>`_ and a :ref:`customer <user-guide--customers>` represent a company or a division. A `contact <https://oroinc.com/orocrm/doc/current/user-guide-sales-tools/customer-management/common-features-contacts>`_ and a customer user represent a real person who acts on behalf of the company.
 
-This has been implemented to track this hierarchy independently if CRM or Commerce are installed separately. When both are integrated, additional options sources to retrieve the data become available. You can use the modules separately; for example, if employees work with OroCRM, they can refer to accounts and contacts while those working with OroCommerce can work with Customers and Customer Users. In both cases, they have the ability to track information about companies and people.
+This has been implemented to track this hierarchy independently if CRM or Commerce are installed separately. When both are integrated, additional options to source and retrieve the data become available. You can use the modules separately; for example, if employees work with OroCRM, they can refer to accounts and contacts while those working with OroCommerce can work with Customers and Customer Users. In both cases, they have the ability to track information about companies and people.
 
 Even though the information in Account, Contact, and Customer may seem similar, there is a significant difference that shows the advantage of using CRM and Commerce together.
 
