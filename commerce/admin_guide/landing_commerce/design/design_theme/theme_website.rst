@@ -3,13 +3,7 @@
 Configure Theme per Website
 ---------------------------
 
-.. begin_body
-
 You can set the following theme-related options for the website to override global configuration:
-
-.. include:: /admin_guide/landing_commerce/design/design_theme/theme_global.rst
-   :start-after: begin_theme_overview
-   :end-before: finish_theme_overview
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
