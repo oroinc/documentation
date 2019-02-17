@@ -75,7 +75,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
                     <li><a class="reference internal" href="product/products/related-products"><span class="std std-ref">Related Items</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i></li>
-                    <li><a class="reference internal" href="catalog/filters-sorters#configuration-guide-commerce-configuration-catalog-filters-sorters"><span class="std std-ref">Filters and Sorters</span></a><i class="fa fa-globe" aria-hidden="true"></i></li>
+                    <li><a class="reference internal" href="catalog/filters-sorters#configuration-guide-commerce-configuration-catalog-filters-sorters"><span class="std std-ref">Filters and Sorters</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true"></i><i class="fa fa-globe" aria-hidden="true"></i></li>
                     <li><a class="reference internal" href="../pricing/"><span class="std std-ref">Pricing</span></a><i class="fa fa-globe" aria-hidden="true"></i></li>
                     <li><a class="reference internal" href="product/products/all-products"><span class="std std-ref">Special Pages</span></a><i class="fa fa-globe" aria-hidden="true"></i></li>
                   </ul>

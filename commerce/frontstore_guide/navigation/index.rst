@@ -212,11 +212,15 @@ The following actions are available for filters:
 
 3. To apply a filter, click on its button in the bar and select the required option from the dropdown list.
 
-    .. image:: /frontstore_guide/img/navigation/FiltersSelect.png
+   .. image:: /frontstore_guide/img/navigation/FiltersSelect.png
 
-    .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list.
+   .. note:: The dropdown list displays all the attributes available for the products on the page you are currently viewing. If there no products related to the searching attributes, the attributes may be hidden from the dropdown list
 
-       .. image:: /frontstore_guide/img/navigation/FiltersSelectOneAttribute.png
+      .. image:: /frontstore_guide/img/navigation/FiltersSelectOneAttribute.png
+
+      or remain visible but disabled :ref:`depending on the website configuration <configuration--guide--commerce--configuration--catalog--filters-sorters>` when no items matching selected attributes in filters were found.
+
+      .. image:: /admin_guide/img/configuration/catalog/filters_sorters/dont_change_initial_filter_state.png
 
 4. Another way to apply a filter is to click on its button and specify your query in the control that appears. Note that filter controls might look different depending on the type of data you are going to filter — whether it is textual, numeric, date or option set.
 
@@ -224,17 +228,19 @@ The following actions are available for filters:
 
    After the filter is applied, its query will appear in the control, so you can easily recall how you have filtered the data.
 
-    .. image:: /frontstore_guide/img/navigation/FiltersApplied.png
+   .. image:: /frontstore_guide/img/navigation/FiltersApplied.png
 
 Filter controls may be hidden at all if there are no related products on the displayed page.
 
-    .. image:: /frontstore_guide/img/navigation/FiltersDisabled.png
+   .. image:: /frontstore_guide/img/navigation/FiltersDisabled.png
 
 5. To remove a filter, click on a cross **x** after the query.
 
    If you wish to reset all applied filters, click **x Clear All Filters**.
 
+
 The following example is an illustration of filters in action:
+
 
    .. image:: /frontstore_guide/img/navigation/Filters.gif
 
