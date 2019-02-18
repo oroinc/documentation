@@ -5,11 +5,12 @@
 Operational Structure
 ---------------------
 
+.. contents:: :local:
+   :depth: 1
+
 Oro applications are implemented in PHP and require additional system components to be installed and configured in the environment. 
 
 .. image:: /admin_guide/img/op_structure/op_structure.png
-
-.. contents:: :local:
 
 Browser
 ^^^^^^^
