@@ -86,17 +86,17 @@ The `oro.default` and `oro.alternate` **exchanges** are now declared with a pred
 
 Exchange bindings example:
 
-.. image:: /op_structure/img/mq/bindings.png
+.. image:: /admin_guide/img/mq/bindings.png
 
 Declared queues example:
 
-.. image:: /op_structure/img/mq/queues.png
+.. image:: /admin_guide/img/mq/queues.png
 
 `Alternate` **exchange** is bound to the `oro.default` **queue**. When a message route key does not match any regular expression it is send to the `oro.alternate` exchange and pushed to the `oro.default` queue.
 
 Alternate example:
 
-.. image:: /op_structure/img/mq/alternate.png
+.. image:: /admin_guide/img/mq/alternate.png
 
 
 Configure systemd to Consume Messages from Different Queues
@@ -152,7 +152,7 @@ To start more than one consumer for the selected queue, use the `queue_name:{1..
 
 Consumer processes example:
 
-.. image:: /op_structure/img/mq/processes.png
+.. image:: /admin_guide/img/mq/processes.png
 
 Logging
 -------

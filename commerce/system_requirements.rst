@@ -35,7 +35,7 @@ Oro applications are compatible with most web servers with PHP support, but the 
 |                   | Web server configuration recommendations are well |
 |                   | described in `Symfony documentation`_             |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * `PHP`_ ~7.1.17 version (see ~ explained `here`_)|
+| *PHP*             | * `PHP`_ >=7.1.26 version                         |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -78,6 +78,9 @@ Oro applications are compatible with most web servers with PHP support, but the 
 +-------------------+---------------------------------------------------+
 | *Process Control* | * `Supervisor`_ or alternative                    |
 +-------------------+---------------------------------------------------+
+| *Assets*          | * `Node.js`_ used for JS assets minification      |
+|                   |   and SCSS assets build.                          |
++-------------------+---------------------------------------------------+
 
 .. note::
 
@@ -118,7 +121,6 @@ PostgreSQL `uuid-ossp` extension should be loaded for proper doctrine's `guid` t
 Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `Node.js`_ could be used for more efficient JS assets minification
 * `Tidy PHP extension`_ should be installed to make sure that HTML is correctly converted into a text representation
 * `Redis`_ - could be used for more efficient application caching. Supported versions of Redis from 2.0 to 3.2
 * The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration
