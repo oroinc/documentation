@@ -1,8 +1,8 @@
 .. _installation--web-server-configuration:
 .. _step-3-configure-the-webserver:
 
-Configure a Web Server
-~~~~~~~~~~~~~~~~~~~~~~
+Web Server Configuration
+========================
 
 Web Server Installation
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,11 +79,11 @@ Nginx
             root  [$folder_location]}/{$folder_name}/public;
 
             location / {
-                # try to serve file directly, fallback to app.php
-                try_files $uri /app.php$is_args$args;
+                # try to serve file directly, fallback to index.php
+                try_files $uri /index.php$is_args$args;
             }
 
-            location ~ ^/(app|app_dev|config|install)\.php(/|$) {
+            location ~ ^/(index|index_dev|config|install)\.php(/|$) {
                 fastcgi_pass 127.0.0.1:9000;
                 # or
                 # fastcgi_pass unix:/var/run/php/php7-fpm.sock;

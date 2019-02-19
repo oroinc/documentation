@@ -4,17 +4,13 @@
    :start-after: begin_body
    :end-before: finish_body
 
-Clone |oro_app_name| source codes to the */usr/share/nginx/html/oroapp* folder:
+Create your new |oro_app_name| project with composer in the */usr/share/nginx/html/oroapp* folder:
 
 .. code:: bash
 
    cd /usr/share/nginx/html
-   git clone -b 1.6.9 https://github.com/oroinc/orocommerce-enterprise-application-de.git oroapp
+   composer create-project oro/commerce-crm-enterprise-application-de oroapp --repository=https://satis.oroinc.com
    cd oroapp
-
-The *branch* value (*1.6.9* in this example) could be changed to any published
-`release tag <https://github.com/oroinc/orocommerce-enterprise-application-de/releases>`_ from 1.6 branch of
-the |oro_app_name| application (for example, 1.6, 1.6.8, 1.6.9, etc.).
 
 .. include:: /install_upgrade/installation_quick_start_dev/common-ee-2.rst
    :start-after: begin_body

@@ -12,6 +12,11 @@
 This topic provides a detailed description of the |oro_app_name| installation process and illustrates
 examples of installation scenarios.
 
+.. note::
+
+   On the local environment you can :ref:`use the prepared Vagrant files to perform an automated installation <vagrant_installation>`,
+   which replicates steps from this guide.
+
 The information is grouped into the following sections:
 
 .. contents::
@@ -231,10 +236,10 @@ Create a Database for |oro_app_name| Application and a Dedicated Database User
 
 .. code:: sql
 
-    CREATE DATABASE oro;
-    GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
-    FLUSH PRIVILEGES;
-    exit
+   CREATE DATABASE oro;
+   GRANT ALL PRIVILEGES ON oro.* to 'oro_user'@'localhost' identified by 'P@ssword123';
+   FLUSH PRIVILEGES;
+   exit
 
 Replace `oro_user` with a new username and `P@ssword123` with a more secure password. Ensure that the password contains
 at least one upper case letter, one lower case letter, one digit, one special character and has the total length of at
@@ -257,9 +262,9 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
 
     server {
         server_name <your_domain_name> www.<your_domain_name>;
-        root  /usr/share/nginx/html/oroapp/web;
+        root  /usr/share/nginx/html/oroapp/public;
 
-        index app.php;
+        index index.php;
 
         gzip on;
         gzip_proxied any;
@@ -267,11 +272,11 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
         gzip_vary on;
 
         location / {
-            # try to serve file directly, fallback to app.php
-            try_files $uri /app.php$is_args$args;
+            # try to serve file directly, fallback to index.php
+            try_files $uri /index.php$is_args$args;
         }
 
-        location ~ ^/(app|app_dev|config|install)\.php(/|$) {
+        location ~ ^/(index|index_dev|config|install)\.php(/|$) {
             fastcgi_pass 127.0.0.1:9000;
             # or
             # fastcgi_pass unix:/var/run/php/php7-fpm.sock;
@@ -312,9 +317,9 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
         ssl_protocols TLSv1.2;
         ssl_ciphers EECDH+AESGCM:EDH+AESGCM:AES2;
 
-        root /usr/share/nginx/html/oroapp/web;
+        root /usr/share/nginx/html/oroapp/public;
 
-        index app.php;
+        index index.php;
 
         sendfile on;
         tcp_nopush on;
@@ -331,7 +336,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
         try_files $uri $uri/ @rewrite;
 
         location @rewrite {
-            rewrite ^/(.*)$ /app.php/$1;
+            rewrite ^/(.*)$ /index.php/$1;
         }
 
         location ~ /\.ht {
@@ -351,7 +356,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             }
             include                         fastcgi_params;
             fastcgi_pass                    127.0.0.1:9000;
-            fastcgi_index                   app.php;
+            fastcgi_index                   index.php;
             fastcgi_intercept_errors        on;
             fastcgi_connect_timeout         300;
             fastcgi_send_timeout            300;
@@ -365,7 +370,7 @@ The samples of Nginx configuration for HTTPS and HTTP mode are provided below. U
             fastcgi_param  HTTPS            on;
         }
 
-        # Websockets connection path (configured in app/config/parameters.yml)
+        # Websockets connection path (configured in config/parameters.yml)
         location /ws {
             reset_timedout_connection on;
 

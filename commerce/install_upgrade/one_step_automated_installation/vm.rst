@@ -1,7 +1,7 @@
 .. _virtual_machine_deployment:
 
-Using the VirtualBox VM Image
-=============================
+Run Oro Applications with a VirtualBox VM Image
+===============================================
 
 .. begin_virtual_machine_deployment
 

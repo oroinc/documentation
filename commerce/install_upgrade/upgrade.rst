@@ -24,18 +24,18 @@ To retrieve source code of a new version and upgrade your OroCommerce instance, 
 
       The www-data may be replaced with the user under which your web server runs.
 
-Comment this line.
+   Comment this line.
 
    .. code-block:: text
        :linenos:
 
-           */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
+       */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
 3. Stop all running consumers.
 
 4. Create backups of your database and source code.
 
-5. Pull the changes from the necessary branch (`1.6`) or tag (`1.6.1`) in the application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the oroinc.com/orocommerce <https://oroinc.com/b2b-ecommerce/download>`_ , unpack archive and overwrite existing system files.
+5. Pull the changes from the necessary branch (`3.1`) or tag (`3.1.1`) in the application repository (e.g. ``https://github.com/orocommerce/orocommerce-application.git``) or download the latest OroCommerce version from the `download section on the oroinc.com/orocommerce <https://oroinc.com/b2b-ecommerce/download>`_ , unpack archive and overwrite existing system files.
 
    .. note::
 
@@ -89,16 +89,16 @@ Comment this line.
 
          crontab -e -uwww-data
 
-Uncomment this line.
+    Uncomment this line.
 
     .. code-block:: text
         :linenos:
 
-            */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
+        */1 * * * * /usr/bin/php /path/to/application/bin/console --env=prod oro:cron >> /dev/null
 
 11. Switch your application back to normal mode from the maintenance mode.
 
-        .. code-block:: bash
+    .. code-block:: bash
 
          sudo -u www-data bin/console lexik:maintenance:unlock --env=prod
 

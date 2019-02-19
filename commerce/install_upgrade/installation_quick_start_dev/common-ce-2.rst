@@ -26,15 +26,15 @@ Run the Composer Install
 The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
 
 Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
-are saved into the *app/config/parameters.yml* file. A description for every parameter you can find in the
+are saved into the *config/parameters.yml* file. A description for every parameter you can find in the
 :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
 
 Configure WebSocket Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you use HTTP mode for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *app/config/parameters.yml* file.
+If you use HTTP mode for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *config/parameters.yml* file.
 
-If you use HTTPS mode, open the *app/config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
+If you use HTTPS mode, open the *config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
 
 .. code::
 
@@ -52,7 +52,7 @@ For more information on these parameters, see `OroSyncBundle documentation <http
 Configure DBAL Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Change the defaults for Doctrine in the *app/config/config.yml* file so that the generated SQL uses the *utf8mb4* character
+Change the defaults for Doctrine in the *config/config.yml* file so that the generated SQL uses the *utf8mb4* character
 set:
 
 .. code::
@@ -71,22 +71,16 @@ To start the |oro_app_name| installation, run the following command:
 
 .. code:: bash
 
-   php ./app/console oro:install --env=prod --timeout=900
+   php ./bin/console oro:install --env=prod --timeout=900
 
 Follow the on-screen instructions in the console.
-
-.. note::
-
-    Alternatively, use the web installer as described in the `Installation via UI`_ topic. Before you launch the installation
-    via UI, make the application files and folders writable for the *nginx*
-    user. When the installation is complete, revert the file permission to restore the original ones.
 
 You will be prompted to choose the installation with- or without- demo data. If you discard demo data during installation,
 you can install it later by running the following command:
 
 .. code:: bash
 
-   sudo -u nginx php ./app/console oro:migration:data:load --fixtures-type=demo --env=prod
+   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
 
 **For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCommerce after installation, you can:
 
@@ -104,8 +98,8 @@ As *nginx* user should be able to create folders, run the following commands to 
    setfacl -b -R ./
    find . -type f -exec chmod 0644 {} \;
    find . -type d -exec chmod 0755 {} \;
-   chown -R nginx:nginx ./app/{attachment,cache,import_export,logs}
-   chown -R nginx:nginx ./web/{media,uploads,js}
+   chown -R nginx:nginx ./var/{sessions,attachment,cache,import_export,logs}
+   chown -R nginx:nginx ./public/{media,uploads,js}
 
 Step 4: Post-installation Environment Configuration
 ---------------------------------------------------
@@ -123,7 +117,7 @@ To schedule execution of the *oro:cron* command every-minute, add the following 
 
 .. code::
 
-   */1 * * * * php /usr/share/nginx/html/oroapp/app/console oro:cron --env=prod > /dev/null
+   */1 * * * * php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null
 
 Save the updated file.
 
@@ -151,7 +145,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
 .. code::
 
    [program:oro_web_socket]
-   command=php ./app/console clank:server --env=prod
+   command=php ./bin/console gos:websocket:server --env=prod
    numprocs=1
    autostart=true
    autorestart=true
@@ -160,7 +154,7 @@ Add the following configuration sections to the */etc/supervisord.conf* Supervis
    redirect_stderr=true
 
    [program:oro_message_consumer]
-   command=php ./app/console oro:message-queue:consume --env=prod
+   command=php ./bin/console oro:message-queue:consume --env=prod
    process_name=%(program_name)s_%(process_num)02d
    numprocs=5
    autostart=true
@@ -211,15 +205,14 @@ What's Next
 Optimization, Scalability, and Configuration Recommendations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you're interested in customization of described installation scenario, please, refer to the following topics:
+If you need to customize the described installation scenario, refer to the following topics:
 
 * :ref:`Get the Oro Application Source Code <installation--get-files>`
-* :ref:`Customizing the Installation Process <customize_install>`
+* :ref:`Customizing the Installation Process <customize-install>`
 * :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>`
 * :ref:`Web Server Configuration <installation--web-server-configuration>`
 * :ref:`Performance Optimization of the Oro Application Environment <installation--optimize-runtime-performance>`
 * :ref:`Silent Installation <silent-installation>`
-* :ref:`Installation Via UI Wizard <book-installation-wizard>`
 
 User Guides
 ^^^^^^^^^^^

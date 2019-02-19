@@ -1,7 +1,7 @@
 .. _installation--optimize-runtime-performance:
 
 Performance Optimization of the Oro Application Environment
------------------------------------------------------------
+===========================================================
 
 .. contents::
    :local:
@@ -22,21 +22,21 @@ The recommended configuration of the PHP-FPM is provided below.
 .. code-block:: ini
     :linenos:
 
-       [www]
-       listen = 127.0.0.1:9000
-       ; or
-       ; listen = /var/run/php5-fpm.sock
+      [www]
+      listen = 127.0.0.1:9000
+      ; or
+      ; listen = /var/run/php5-fpm.sock
 
-       listen.allowed_clients = 127.0.0.1
+      listen.allowed_clients = 127.0.0.1
 
-       pm = dynamic
-       pm.max_children = 128
-       pm.start_servers = 8
-       pm.min_spare_servers = 4
-       pm.max_spare_servers = 8
-       pm.max_requests = 512
+      pm = dynamic
+      pm.max_children = 128
+      pm.start_servers = 8
+      pm.min_spare_servers = 4
+      pm.max_spare_servers = 8
+      pm.max_requests = 512
 
-       catch_workers_output = yes
+      catch_workers_output = yes
 
 .. note:: Make sure that Nginx ``fastcgi_pass`` and PHP-FPM ``listen`` options are aligned.
 
@@ -45,19 +45,19 @@ Optimize PHP Runtime Compilation
 
 Use an OpCache bytecode engine to cache bytecode representation of the PHP code and save time on the repetitive runtime compilation.
 
-Please install Opcache php-extention and configure it in the following way:
+Please install Opcache php-extension and configure it in the following way:
 
 .. code-block:: text
     :linenos:
 
-    opcache.enable=1
-    opcache.enable_cli=0
-    opcache.memory_consumption=512
-    opcache.max_accelerated_files=32531
-    opcache.interned_strings_buffer=32
-    #http://symfony.com/doc/current/performance.html
-    realpath_cache_size=4096K
-    realpath_cache_ttl=600
+      opcache.enable=1
+      opcache.enable_cli=0
+      opcache.memory_consumption=512
+      opcache.max_accelerated_files=32531
+      opcache.interned_strings_buffer=32
+      #http://symfony.com/doc/current/performance.html
+      realpath_cache_size=4096K
+      realpath_cache_ttl=600
 
 .. note:: The opcache.load_comments and opcache.save_comments parameters are enabled by default and should remain so for Oro application operation. Please do not disable them.
 
@@ -124,9 +124,9 @@ To enable ``HTML compression``, add the following lines into your ``nginx.conf``
 For Apache
 ~~~~~~~~~~
 
-If you are using Apache as your web server, you already have the necessary configuration in the ``web/.htaccess`` file.
+If you are using Apache as your web server, you already have the necessary configuration in the ``public/.htaccess`` file.
 
-However, this configuration rely on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
+However, this configuration relies on the ``mod_deflate`` and ``mod_headers`` modules that are needed for the compression
 and caching to work. Ensure these modules are enabled in Apache configuration.
 
 1. To enable compression, ensure that ``mod_deflate`` module is loaded in your Apache config file as illustrated below:
