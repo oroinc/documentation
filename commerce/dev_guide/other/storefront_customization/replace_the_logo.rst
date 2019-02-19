@@ -166,7 +166,7 @@ Replace Favicons
 
    .. code-block:: bash
 
-      php bin/console oro:assets:install
+      php bin/console assets:install --symlink
 
 Replace a Logo
 --------------
