@@ -19,6 +19,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    AttachmentBundle/index
    BatchBundle/index
    CacheBundle/index
+   CalendarBundle/index
    ChartBundle/index
    CommentBundle/index
    ConfigBundle/index
@@ -34,6 +35,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    EntityConfigBundle/index
    EntityExtendBundle/index
    EntityPaginationBundle/index
+   EntitySerializedFieldsBundle/index
    EntityMergeBundle/index
    FeatureToggleBundle/index
    FilterBundle/index
@@ -53,6 +55,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    NotificationBundle/index
    OrganizationBundle/index
    PlatformBundle/index
+   RedisConfigBundle/index
    ReportBundle/index
    RequireJSBundle/index
    QueryDesignerBundle/index
@@ -67,6 +70,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    TestFrameworkBundle/index
    ThemeBundle/index
    TranslationBundle/index
+   TwigInspectorBundle/index
    UIBundle/index
    WindowsBundle/index
    WorkflowBundle/index
