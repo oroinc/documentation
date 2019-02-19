@@ -13,7 +13,7 @@ For example, to set up a VM with OroCommerce CE application v. 3.0.0 locally, ru
 
 .. code:: bash
 
-    git clone -b 3.0.0 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
+    git clone -b 3.1.2 https://github.com/oroinc/orocommerce-application.git oroapp && cd oroapp
     vagrant up
 
 Once the command has run, you can access the application via the http://localhost:8000/ URL.
@@ -50,7 +50,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. code:: bash
 
-      git clone -b 3.0.0 <oro_application_clone_url> oroapp && cd oroapp
+      git clone -b 3.1.2 <oro_application_clone_url> oroapp && cd oroapp
 
    Replace the <oro_application_clone_url> with the repository URL for the necessary Oro application:
 

@@ -28,7 +28,7 @@ We are demonstrating the installation process using the certain versions of the 
    "**Web server**","Nginx v.1.12"
    "**Database**","MySQL v.5.7"
    "**PHP**","PHP-FPM and PHP CLI v.7.1"
-   "**Other tools**","NodeJS v.6.14, Git v.1.8.3, Composer v.1.6.4, Supervisord v.3.3"
+   "**Other tools**","NodeJS v.6.14, Composer v.1.6.4, Supervisord v.3.3"
 
 .. note::
 
@@ -48,7 +48,7 @@ can run processes as a *root* user or user with *sudo* permissions.
 Enable Required Package Repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Use Extra Packages for Enterprise Linux (EPEL) repository to get the Nginx, NodeJS, Git, Supervisor, and Wget packages required for |oro_app_name| application operation.
+Use Extra Packages for Enterprise Linux (EPEL) repository to get the Nginx, NodeJS, Supervisor, and Wget packages required for |oro_app_name| application operation.
 
 Add the EPEL repository to your `yum` package manager by running:
 
@@ -57,14 +57,14 @@ Add the EPEL repository to your `yum` package manager by running:
    yum install -y epel-release
    yum update -y
 
-Install Nginx, NodeJS, Git, Supervisor, and Wget
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Install Nginx, NodeJS, Supervisor, and Wget
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Install most of the required |oro_app_name| application environment components using the following command:
 
 .. code:: bash
 
-   yum install -y nginx wget git nodejs supervisor yum-utils
+   yum install -y nginx wget nodejs supervisor yum-utils
 
 Install MySQL
 ^^^^^^^^^^^^^
@@ -453,41 +453,24 @@ For the changes to take effect, restart PHP-FPM by running:
 Step 3: |oro_app_name| Application Installation
 -----------------------------------------------
 
-Get Application Source Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Get Application Source Code and Dependencies
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. |recommended_OS| replace:: CentOS v7.4
 
-Clone |oro_app_name| source code to the */usr/share/nginx/html/oroapp* folder:
+Create your new |oro_app_name| project with composer in the */usr/share/nginx/html/oroapp* folder:
 
 .. code:: bash
 
    cd /usr/share/nginx/html
-   git clone -b 3.0 https://github.com/oroinc/platform-application.git oroapp
+   composer create-project oro/platform-application oroapp --repository=https://satis.oroinc.com
    cd oroapp
-
-..
-    The *branch* value (in this example *3.0*) could be changed to any published
-    `release tag <https://github.com/oroinc/platform-application/releases>`_ from 3.0 branch of
-    the |oro_app_name| application (for example, 3.0, 3.0.1, etc.).
 
 .. note::
 
-    Alternatively, you can download and unpack the archive with |oro_app_name| source code instead of using Git repository.
+    Alternatively, you can download and unpack the archive with |oro_app_name| source code instead of using Composer.
     Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>`
     for more details.
-
-Install Application Dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Run the Composer Install
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: bash
-
-   composer install --prefer-dist
-
-The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
 
 Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
 are saved into the *config/parameters.yml* file. A description for every parameter you can find in the
