@@ -1,30 +1,26 @@
 .. _installation--platform--readme:
 
-Quick Start Installation: OroPlatform
-=====================================
-
--  Clone OroPlatform application repository:
-
-   .. code:: bash
-
-      git clone -b x.y.z https://github.com/oroinc/platform-application.git
-
-   where x.y.z is the latest `release tag <https://github.com/oroinc/platform-application/releases>`__.
-
-   You can also use the latest master:
-
-   .. code:: bash
-
-      git clone https://github.com/oroinc/platform-application.git
-
-.. include:: /install_upgrade/installation_quick_start_dev/common_process.rst
+.. include:: /install_upgrade/installation_quick_start_dev/common-ce-1.rst
    :start-after: begin_body
    :end-before: finish_body
 
-.. include:: /install_upgrade/installation_quick_start_dev/common.rst
+Create your new |oro_app_name| project with composer in the */usr/share/nginx/html/oroapp* folder:
+
+.. code:: bash
+
+   cd /usr/share/nginx/html
+   composer create-project oro/platform-application oroapp --repository=https://satis.oroinc.com
+   cd oroapp
+
+.. include:: /install_upgrade/installation_quick_start_dev/common-ce-2.rst
    :start-after: begin_body
    :end-before: finish_body
 
-.. |db_name| replace:: *bap_standard*
+* :ref:`User Guide: Getting Started <user-guide-into>`
+* :ref:`Developer Guide <dev_guide>`
+* :ref:`Administration Guide <user-guide-admin-tools>`
 
-.. |main_app| replace:: OroPlatform
+.. |oro_app_name| replace:: OroPlatform Community Edition
+
+.. _System Requirements: https://oroinc.com/orocrm/doc/current/system-requirements
+.. _Installation via UI: https://oroinc.com/orocrm/doc/current/install-upgrade/installation/installation-via-ui

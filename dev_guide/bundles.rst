@@ -173,12 +173,6 @@ related articles is provided below the description.
 `DemoDataBundle`_ (OroCRM)
     Contains necessary fixtures for CRM features demonstration.
 
-    .. seealso::
-
-        Read more about it in the following articles:
-
-        * Book: :doc:`/install_upgrade/installation/index`
-
 `DistributionBundle`_ (OroPlatform)
     Makes it possible to automatically register bundles in the application without requiring the
     user to do that manually in the application kernel.
@@ -283,12 +277,6 @@ related articles is provided below the description.
 
 `InstallerBundle`_ (OroPlatform)
     The web installer for OroCRM.
-
-    .. seealso::
-
-        Read more about it in the following articles:
-
-        * Book: :doc:`/install_upgrade/installation/index`
 
 `IntegrationBundle`_ (OroPlatform)
     Contains the abstracted logic to connect OroPlatform and OroCRM with third-party services

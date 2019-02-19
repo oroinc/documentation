@@ -86,7 +86,7 @@ Oro applications are :doc:`scalable <scale_nodes>`.
 Learn more
 ----------
 
-* :doc:`/install_upgrade/installation/index`
+* :doc:`/install_upgrade/index`
 * :doc:`/dev_guide/getting_started_book/differences`
 * :doc:`customization`
 * :doc:`/dev_guide/cookbook/how_to_create_new_bundle`

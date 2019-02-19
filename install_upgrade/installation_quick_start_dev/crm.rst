@@ -1,24 +1,29 @@
 .. _installation--crm-ce--readme:
 
-Quick Start Installation: OroCRM Community Edition
-==================================================
-
--  Clone the |main_app| repository:
-
-   .. code:: bash
-
-      git clone -b x.y.z https://github.com/oroinc/crm-application.git
-
-   where x.y.z is latest `release tag <https://github.com/oroinc/crm-application/releases>`__
-
-.. include:: /install_upgrade/installation_quick_start_dev/common_process.rst
+.. include:: /install_upgrade/installation_quick_start_dev/common-ce-1.rst
    :start-after: begin_body
    :end-before: finish_body
 
-.. include:: /install_upgrade/installation_quick_start_dev/common.rst
+Create your new |oro_app_name| project with composer in the */usr/share/nginx/html/oroapp* folder:
+
+.. code:: bash
+
+   cd /usr/share/nginx/html
+   composer create-project oro/crm-application oroapp --repository=https://satis.oroinc.com
+   cd oroapp
+
+.. include:: /install_upgrade/installation_quick_start_dev/common-ce-2.rst
    :start-after: begin_body
    :end-before: finish_body
 
-.. |db_name| replace:: *oro_crm*
+* :ref:`User Guide: Getting Started <user-guide-into>`
+* :ref:`User Guide: Sales <user-guide-sales-index>`
+* :ref:`User Guide: Marketing <user-guide-marketing>`
+* :ref:`User Guide: Business Intelligence <business-intelligence>`
+* :ref:`Developer Guide <dev_guide>`
+* :ref:`Administration Guide <user-guide-admin-tools>`
 
-.. |main_app| replace:: OroCRM Community Edition
+.. |oro_app_name| replace:: OroCRM Community Edition
+
+.. _System Requirements: https://oroinc.com/orocrm/doc/current/system-requirements
+.. _Installation via UI: https://oroinc.com/orocrm/doc/current/install-upgrade/installation/installation-via-ui
