@@ -51,6 +51,19 @@ OroPlatform is an open-source platform made for rapid application development of
 
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none">
    <div class="guideline">
+
+      <div class="guideline__item" >
+         <div style="text-align: center">
+         <h3><i class="guideline__icon fa fa-wrench fa-lg"></i><br> Administrator Guide</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+             <ul class="guideline__list">
+                  <li><a class="reference internal" href="admin-guide/op-structure"><span class="std std-ref">Operational Structure</span></a></li>
+                  <li><a class="reference internal" href="admin-guide/login-audit"><span class="std std-ref">Audit of Login Attempts</span></a></li>
+               </ul>
+          </div>
+      </div>
+
       <div class="guideline__item" >
          <div style="text-align: center">
             <a class="reference internal" href="community"><h3><i class="guideline__icon fa fa-users"></i><br> Contributing</h3></a>
@@ -76,16 +89,7 @@ OroPlatform is an open-source platform made for rapid application development of
                </ul>
           </div>
       </div>
-      <div class="guideline__item" >
-         <div style="text-align: center">
-         <h3><i class="guideline__icon fa fa-bullhorn"></i><br> Announcements</h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-             <ul class="guideline__list">
-                  <li><a class="reference internal" href="community/release-process#"><span class="std std-ref">Release Process</span></a></li>
-               </ul>
-          </div>
-      </div>
+
    </div>
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
 
@@ -96,6 +100,7 @@ OroPlatform is an open-source platform made for rapid application development of
    architecture/index
    dev_guide/index
    dev_cookbook/index
+   admin_guide/index
    community/index
    system_requirements
 
