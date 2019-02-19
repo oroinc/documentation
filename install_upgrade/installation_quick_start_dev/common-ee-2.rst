@@ -24,14 +24,14 @@ Run the Composer Install
 The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
 
 Note that you are prompted to enter the installation environment configuration and
-integration parameters (database name, user, etc.) that are saved into the *app/config/parameters.yml* file.
+integration parameters (database name, user, etc.) that are saved into the *config/parameters.yml* file.
 
-.. warning:: Ensure you provide the configuration values specific for your environment. If you do not set these parameters during the `composer install` execution, you still can modify the *app/config/parameters.yml* file after the dependencies installation is complete. Any changes should precede the `Install Oro application`_ step described further.
+.. warning:: Ensure you provide the configuration values specific for your environment. If you do not set these parameters during the `composer install` execution, you still can modify the *config/parameters.yml* file after the dependencies installation is complete. Any changes should precede the `Install Oro application`_ step described further.
 
 Configure Application Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To configure the options listed below, update the *app/config/parameters.yml* file with recommended values.
+To configure the options listed below, update the *config/parameters.yml* file with recommended values.
 
 Database Parameters
 ~~~~~~~~~~~~~~~~~~~
@@ -48,9 +48,9 @@ Replace <new_postgres_user_password> with the *postgres* user password set durin
 WebSockets Parameters
 ~~~~~~~~~~~~~~~~~~~~~
 
-If you use HTTP for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *app/config/parameters.yml* file.
+If you use HTTP for |oro_app_name| website, keep the default values for the WebSocket-related parameters in the *config/parameters.yml* file.
 
-If you use HTTPS, open the *app/config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
+If you use HTTPS, open the *config/parameters.yml* file and change the WebSocket-related parameters to match the following values:
 
 .. code::
 
@@ -77,7 +77,7 @@ To enable ElasticSearch as the search engine, update `search_engine_name`:
 Redis Cache Storage Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To enable Redis cache storage configuration, ensure the following lines are added to the *app/config/parameters.yml* file:
+To enable Redis cache storage configuration, ensure the following lines are added to the *config/parameters.yml* file:
 
 .. code::
 
@@ -87,7 +87,7 @@ To enable Redis cache storage configuration, ensure the following lines are adde
    redis_dsn_doctrine: 'redis://127.0.0.1:6379/2'
    redis_setup: 'standalone'
 
-.. warning:: The *redis_dsn_session*, *redis_dsn_cache*, *redis_dsn_doctrine*, *redis_setup* parameters are mot included into the *app/config/parameters.yml* by default.
+.. warning:: The *redis_dsn_session*, *redis_dsn_cache*, *redis_dsn_doctrine*, *redis_setup* parameters are mot included into the *config/parameters.yml* by default.
 
 .. note::
 
@@ -121,7 +121,7 @@ To start the |oro_app_name| installation, run the following command:
 .. code:: bash
 
    scl enable oro-php71 bash
-   php ./app/console oro:install --env=prod --timeout=900
+   php ./bin/console oro:install --env=prod --timeout=900
    exit
 
 Follow the on-screen instructions in the console.
@@ -138,10 +138,10 @@ you can install it later by running the following command:
 .. code:: bash
 
    scl enable oro-php71 bash
-   sudo -u nginx php ./app/console oro:migration:data:load --fixtures-type=demo --env=prod
+   sudo -u nginx php ./bin/console oro:migration:data:load --fixtures-type=demo --env=prod
    exit
 
-**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in the OroCRM after installation, you can:
+**For developers only**: To customize the installation process and modify the database structure and/or data that are loaded in OroCRM after installation, you can:
 
 * :ref:`Execute custom migrations <execute-custom-migrations>`, and
 
@@ -157,8 +157,8 @@ As *nginx* user should be able to create folders, run the following commands to 
    setfacl -b -R ./
    find . -type f -exec chmod 0644 {} \;
    find . -type d -exec chmod 0755 {} \;
-   chown -R nginx:nginx ./app/{attachment,cache,import_export,logs}
-   chown -R nginx:nginx ./web/{media,uploads,js}
+   chown -R nginx:nginx ./var/{sessions,attachment,cache,import_export,logs}
+   chown -R nginx:nginx ./public/{media,uploads,js}
 
 Step 4: Post-installation Environment Configuration
 ---------------------------------------------------
@@ -176,7 +176,7 @@ To schedule execution of the *oro:cron* command every-minute, add the following 
 
 .. code:: bash
 
-   */1 * * * * scl enable oro-php71 'php /usr/share/nginx/html/oroapp/app/console oro:cron --env=prod > /dev/null'
+   */1 * * * * scl enable oro-php71 'php /usr/share/nginx/html/oroapp/bin/console oro:cron --env=prod > /dev/null'
 
 Save the updated file.
 
@@ -190,7 +190,7 @@ Configure and Run Required Background Processes
 .. code::
 
    [program:oro_web_socket]
-   command=scl enable oro-php71 'php ./app/console clank:server --env=prod'
+   command=scl enable oro-php71 'php ./bin/console gos:websocket:server --env=prod'
    numprocs=1
    autostart=true
    autorestart=true
@@ -199,7 +199,7 @@ Configure and Run Required Background Processes
    redirect_stderr=true
 
    [program:oro_message_consumer]
-   command=scl enable oro-php71 'php ./app/console oro:message-queue:consume --env=prod'
+   command=scl enable oro-php71 'php ./bin/console oro:message-queue:consume --env=prod'
    process_name=%(program_name)s_%(process_num)02d
    numprocs=5
    autostart=true
