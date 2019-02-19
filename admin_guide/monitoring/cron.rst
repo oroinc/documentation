@@ -16,7 +16,7 @@ With OroPlatform, you can use the `OroCronBundle`_ which makes it easy
 to run Symfony Console commands through cronjobs (on UNIX-based operating
 systems) or through the Windows task scheduler.
 
-You can view the scheduled tasks via the **System > Configuration** menu.
+You can view the scheduled tasks via the **System > Scheduled Tasks** menu.
 
 .. image:: /admin_guide/img/scheduled_tasks.png
 
