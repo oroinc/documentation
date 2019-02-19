@@ -97,6 +97,9 @@ Enterprise edition is built to support better scale and performance. It is compa
 |                   |   version 18.0 and higher.                         |
 |                   |   RabbitMQ 3.6.x is recommended                    |
 +-------------------+----------------------------------------------------+
+| *Assets*          | * `Node.js`_ used for JS assets minification       |
+|                   |   and SCSS assets build.                           |
++-------------------+----------------------------------------------------+
 
 **PostgreSQL Configuration**
 
@@ -111,7 +114,6 @@ PostgreSQL `uuid-ossp` extension should be loaded for proper doctrine's `guid` t
 Optional recommendations
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `Node.js`_ could be used for more efficient JS assets minification
 * `Tidy PHP extension`_ should be installed to make sure that HTML is correctly converted into a text representation
 * `Redis`_ - could be used for more efficient application caching. Supported versions of Redis from 2.0 to 3.2
 * The performance of :ref:`MySQL can be optimized <mysql-optimization>` by adjusting the configuration

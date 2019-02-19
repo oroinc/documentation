@@ -52,7 +52,7 @@ In the Request a Quote section, enter:
 * Notes (The message for the RFQ)
 * PO Number
 * Do Not Ship Later Than date
-* Assigned to
+* Assigned to (A colleague or a subordinate responsible for tracking your RFQ status. Assign the necessary person to notify them about any changes to the RFQ.)
   
 In the Products section:
 

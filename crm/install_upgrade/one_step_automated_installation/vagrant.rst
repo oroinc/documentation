@@ -9,11 +9,11 @@ environment components using `Vagrant <https://www.vagrantup.com/>`_.
 Every Oro application has a *Vagrantfile* that enables you to set up a virtual machine with the Oro application via the
 `vagrant up` command.
 
-For example, to set up a VM with OroPlatform application v.2.6.14 locally, run:
+For example, to set up a VM with OroPlatform application v.3.1.2 locally, run:
 
 .. code:: bash
 
-    git clone -b 2.6.14 https://github.com/oroinc/platform-application.git oroapp && cd oroapp
+    git clone -b 3.1.2 https://github.com/oroinc/platform-application.git oroapp && cd oroapp
     vagrant up
 
 Once the command has run, you can access the application via the http://localhost:8000/ URL.
@@ -50,7 +50,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
 
    .. code:: bash
 
-      git clone -b 2.6.14 <oro_application_clone_url> oroapp && cd oroapp
+      git clone -b 3.1.2 <oro_application_clone_url> oroapp && cd oroapp
 
    Replace the <oro_application_clone_url> with the repository URL for the necessary Oro application:
 
@@ -61,7 +61,7 @@ When you have installed VirtualBox, Vagrant, and Git, do the following:
       "OroCRM Enterprise Edition","https://github.com/oroinc/crm-enterprise-application.git"
       "OroPlatform","https://github.com/oroinc/platform-application.git"
 
-   The *branch* value (in this example *2.6.14*) can be changed to another published `release tag <https://github.com/oroinc/platform-application/releases>`_ of the chosen Oro application with the following constraints:
+   The *branch* value (in this example *3.1.2*) can be changed to another published `release tag <https://github.com/oroinc/platform-application/releases>`_ of the chosen Oro application with the following constraints:
 
    .. csv-table::
       :widths: 20, 30

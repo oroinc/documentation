@@ -20,8 +20,8 @@ In Oro applications, you can manage all settings on multiple configuration layer
 
 Based on the level where configuration has taken place, settings can fall back to other levels following the pattern below:
 
-* :ref:`User settings <doc-my-user-configuration>` can fall back either to :ref:`system <doc-system-configuration>` or :ref:`organization settings <doc-organization-configuration>`.
-* :ref:`Website settings <doc-website-configuration>` can fall back to the :ref:`system settings <doc-system-configuration>`.
+* :ref:`User settings <doc-my-user-configuration>` can fall back to the :ref:`organization settings <doc-organization-configuration>`.
+* :ref:`Website settings <doc-website-configuration>` can fall back to the :ref:`organization settings <doc-organization-configuration>`.
 * :ref:`Organization settings <doc-organization-configuration>` can fall back to the :ref:`system settings <doc-system-configuration>`.
 
 
