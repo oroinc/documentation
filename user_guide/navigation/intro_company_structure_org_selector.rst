@@ -116,10 +116,10 @@ example for several organizations would be a franchisor that has several franchi
 of them in OroCRM is a separate organization. Even a freelance entrepreneur working with several different businesses 
 from his computer will benefit using a separate organization to represent each of them in OroCRM.
 
-Subject to the work done in the company, some users may have access to several organizations 
-(work with multiple organization) or to all records across all organizations that are available to them 
-(work from a system organization). This is described below. 
-    
+Subject to the work done in the company, some users may have access to several organizations
+(work with multiple organization) or to all records across all organizations that are available to them
+(work from the global organization). This is described below.
+
 .. _user-guide-getting-started-change-organization:
 
 Work with Multiple Organizations
@@ -149,32 +149,31 @@ dots to the left are the organization selector.
 
 .. image:: ../img/multi_org/multi_org_select.png
 
-Click the selector, to see a list of organizations you have access to. Your current organization will be displayed in 
-bold. If a System organization exists, it will be shown at the top of the list and shifted left.
+Click the selector, to see a list of organizations you have access to. Your current organization will be displayed in
+bold. If the global organization exists, it will be shown at the top of the list and shifted left.
 
 .. image:: ../img/multi_org/multi_org_choice.png
+   :alt: Global organization
 
 To switch to another organization, click its name in the list.
 
-Work with a System Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Work with the Global Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A System Organization provides users with simultaneous access to all the records of all the organizations they are 
-assigned to. There cannot be more than one system organization in OroCRM. 
+Global Organization provides users with simultaneous access to all the records of all the organizations they are
+assigned to. There cannot be more than one global organization in OroCRM.
 
-When working in a system organization all grids will have an additional *"Organization"* column. The *"Organization"* 
-field will be shown for each record viewed. The organization field is not editable.
+When working in the global organization all grids will have an additional *"Organization"* column. The *"Organization"* field will be shown for each record viewed. The organization field is not editable.
 
-When creating a record in a system organization, the user should select an organization to which the record will belong.
+When creating a record in the global organization, the user should select an organization to which the record will belong.
 
 .. image:: ../img/multi_org/multi_org_system1.png
 
 .. note::
 
-    A record can belong to the system organization as well — if this is the case, the record won’t be accessible from 
-    anywhere else other than the system organization itself. One example of such a record may be an aggregate report 
-    based on data from multiple organizations — it will make sense only within the system organization where all the 
-    necessary data is available.
+    A record can belong to the global organization as well — if this is the case, the record won’t be accessible from
+    anywhere else other than the global organization itself. One example of such a record may be an aggregate report
+    based on data from multiple organizations — it will make sense only within the global organization where all the necessary data is available.
 
 
     
