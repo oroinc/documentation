@@ -115,7 +115,7 @@ Glossary
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a group of :term:`users <User>` that 
       belong to the same enterprise, business, commerce or another organization.
        
-   System Organization
+   Global Organization
       An :term:`organization <Organization>`, from which a user can (subject to the permissions and access settings) 
       see and process details of records in each and any organization within the OroCRM instance. 
 
