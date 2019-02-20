@@ -6,18 +6,18 @@ Customizing the Application Layout
 
 You can customize the OroPlatform layout in different ways:
 
-* :ref:`A simple solution is to load your own CSS or SCSS files. <book-layout-css-files>`
+* :ref:`A simple solution is to load your own SCSS files. <book-layout-css-files>`
 * :ref:`You can also provide entire themes to change the look and feel <book-layout-themes>`
 
 .. _book-layout-css-files:
 
-Custom CSS Files
+Custom SCSS Files
 ----------------
 
 Creating and Embedding Custom Stylesheets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using your own CSS (or SCSS) file is pretty simple. Just save it in the, for example,
+Using your own SCSS file is pretty simple. Just save it in the, for example,
 ``Resources/public/css/`` directory of your bundle and add it to the ``assets.yml``
 configuration file:
 
@@ -27,7 +27,7 @@ configuration file:
     # src/Acme/NewBundle/Resources/config/oro/assets.yml
     css:
         inputs:
-            - 'bundles/acmenew/css/styles.css'
+            - 'bundles/acmenew/css/styles.scss'
 
 Now, you need to clear the cache and install the new stylesheets by running the ``assets:install``
 command:
@@ -38,10 +38,10 @@ command:
     $ php bin/console assets:install --symlink
     $ php bin/console oro:assets:build
 
-In this example, all four CSS files from your bundle as well as all the other files from the Oro Platform
+In this example, all four SCSS files from your bundle as well as all the other files from the Oro Platform
 and from third party bundles will be merged and dumped in the ``public/css/oro.css`` file.
 
-If you want to keep your css code separately, you can dump all your CSS files to another compiled file.
+If you want to keep your css code separately, you can dump all your SCSS files to another compiled file.
 To do that you have to use different assets group in your ``assets.yml``
 
 .. code-block:: yaml
@@ -51,7 +51,7 @@ To do that you have to use different assets group in your ``assets.yml``
     acme_styles:
         inputs:
           - 'bundles/acmenew/css/styles.scss'
-    	  - 'bundles/acmenew/css/another-styles.css'
+    	  - 'bundles/acmenew/css/another-styles.scss'
         output: 'css/acme.css'
 
 Use corresponding placeholder to put compiled CSS file to the head of a document
@@ -79,6 +79,11 @@ and finally add template for rendering style tag
     # src/Acme/Bundle/NewBundle/Resources/views/acme_css.html.twig
     <link rel="stylesheet" media="all" href="{{ asset('css/acme.css') }}" />
 
+.. warning::
+    Actually you can put your code in CSS files as well and they will be compiled together with SCSS files.
+But CSS loader is deprecated by ``node-sass`` npm module and it will stop working after the module update.
+
+
 Development tips
 ~~~~~~~~~~~~~~~~
 
@@ -94,11 +99,13 @@ theme name after build command to make it faster
     $ php bin/console oro:assets:build admin.oro
 
 Also you can use watch mode to automatic rebuild assets after some CSS (SCSS) file is changed.
-Just add key ``--watch`` (or ``-w``) to build command
+Just add option ``--watch`` (or ``-w``) to build command
 
 .. code-block:: bash
 
     $ php bin/console oro:assets:build --watch
+
+Refer to the `Asset Commands`_ for more information
 
 Application Themes
 ------------------
@@ -288,5 +295,4 @@ of your bundle and define the values you want to change:
             // ...
         }
 
-.. _`Assetic documentation`: https://github.com/kriswallsmith/assetic#filters
-.. _`cookbook`: http://symfony.com/doc/current/cookbook/assetic/index.html
+.. _`Asset Commands`: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands
