@@ -6,7 +6,7 @@ Customizing the Application Layout
 
 You can customize the OroPlatform layout in different ways:
 
-* :ref:`A simple solution is to load your own SCSS files. <book-layout-css-files>`
+* :ref:`A simple solution is to load your own SCSS files <book-layout-css-files>`
 * :ref:`You can also provide entire themes to change the look and feel <book-layout-themes>`
 
 .. _book-layout-css-files:
@@ -80,8 +80,8 @@ and finally, add the template for rendering style tag
     <link rel="stylesheet" media="all" href="{{ asset('css/acme.css') }}" />
 
 .. warning::
-    You can also put your code in CSS files which will be compiled together with SCSS files.
-But keep in mind that the CSS loader is deprecated by ``node-sass`` npm module, and it will stop working after the module update.
+
+   You can also put your code in CSS files which will be compiled together with SCSS files. But keep in mind that the CSS loader is deprecated by ``node-sass`` npm module, and it will stop working after the module update.
 
 
 Development tips
@@ -106,6 +106,8 @@ Just add the ``--watch`` (or ``-w``) option to the build command.
     $ php bin/console oro:assets:build --watch
 
 Refer to `Asset Commands`_ for more information.
+
+.. _book-layout-themes:
 
 Application Themes
 ------------------
