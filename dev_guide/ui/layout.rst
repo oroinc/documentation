@@ -88,17 +88,17 @@ Development tips
 ~~~~~~~~~~~~~~~~
  
 The application uses a Webpack tool for assets building. It supports a quite useful feature of mapping
-compiled CSS to CSS sources. So in browser's web inspector (e.g., Google Chrome), you can see
+compiled CSS to SCSS sources. So in browser's web inspector (e.g., Google Chrome), you can see
 which SCSS code styling an element directly.
 
-The assets building takes some time. So better build only the theme that is mostly required. To speed up the process, simply add a
+The assets building takes some time. So better build only the theme that is currently required. To speed up the process, simply add a
 theme name after the build command.
 
 .. code-block:: bash
 
     $ php bin/console oro:assets:build admin.oro
 
-Also, you can use the watch mode to rebuild assets automatically after some CSS (SCSS) file is changed.
+Also, you can use the watch mode to rebuild assets automatically after some SCSS file is changed.
 Just add the ``--watch`` (or ``-w``) option to the build command.
 
 .. code-block:: bash
