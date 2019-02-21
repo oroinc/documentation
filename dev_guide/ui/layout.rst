@@ -12,7 +12,7 @@ You can customize the OroPlatform layout in different ways:
 .. _book-layout-css-files:
 
 Custom SCSS Files
-----------------
+-----------------
 
 Creating and Embedding Custom Stylesheets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
