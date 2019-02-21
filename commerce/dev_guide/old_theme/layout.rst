@@ -47,15 +47,15 @@ Then, embed your styles in the main layout template using the ``oro_css`` Twig t
         <link rel="stylesheet" media="all" href="{{ asset_url }}" />
     {% endoro_css %}
 
-Now, you need to clear the cache and install the new stylesheets by running the ``assets:install``
+Now, you need to clear the cache and install the new stylesheets by running the ``assets:install --symlink``
 command:
 
 .. code-block:: bash
     :linenos:
 
     $ php bin/console cache:clear
-    $ php bin/console oro:assets:install
-    $ php bin/console assetic:dump
+    $ php bin/console assets:install --symlink
+    $ php bin/console oro:assets:build
 
 In this example, all four CSS files from your bundle as well as all the other files from the Oro
 Platform and from third party bundles will be merged and dumped in the ``public/css/style.css`` file.
@@ -223,8 +223,8 @@ Finally, clear the cache and dump all assets:
     :linenos:
 
     $ php bin/console cache:clear
-    $ php bin/console assets:install
-    $ php bin/console assetic:dump
+    $ php bin/console assets:install --symlink
+    $ php bin/console oro:assets:build
 
 .. _book-themes-overriding:
 

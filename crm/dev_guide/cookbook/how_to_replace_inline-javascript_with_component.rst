@@ -255,7 +255,7 @@ and include it into the build file.
 
       .. code-block:: bash
 
-          $ php bin/console oro:assets:install
+          $ php bin/console assets:install
 
     - In production mode, you also have to rebuild the JavaScript code:
 
