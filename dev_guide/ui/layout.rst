@@ -6,42 +6,28 @@ Customizing the Application Layout
 
 You can customize the OroPlatform layout in different ways:
 
-* :ref:`A simple solution is to load your own CSS files. <book-layout-css-files>`
+* :ref:`A simple solution is to load your own SCSS files <book-layout-css-files>`
 * :ref:`You can also provide entire themes to change the look and feel <book-layout-themes>`
 
 .. _book-layout-css-files:
 
-Custom CSS Files
-----------------
+Custom SCSS Files
+-----------------
 
 Creating and Embedding Custom Stylesheets
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using your own CSS files is pretty simple. Just save them in the, for example,
-``Resources/public/css/`` directory of your bundle and list them in the ``assets.yml``
+Using your own SCSS file is pretty simple. Just save it in the, for example,
+``Resources/public/css/`` directory of your bundle and add it to the ``assets.yml``
 configuration file:
 
 .. code-block:: yaml
     :linenos:
 
-    # src/Acme/DemoBundle/Resources/config/oro/assets.yml
-    assets:
-        css:
-            frontend:
-                - 'bundles/acmedemo/css/frontend/first.css'
-                - 'bundles/acmedemo/css/frontend/second.css'
-            backend:
-                - 'bundles/acmedemo/css/backend/first.css'
-                - 'bundles/acmedemo/css/backend/second.css'
-
-Then, embed your styles in the main layout template using the ``oro_css`` Twig tag:
-
-.. code-block:: html+jinja
-    :linenos:
-
-    {% oro_css filter='filters,separated,by,comma' output='css/style.css' %}
-        <link rel="stylesheet" media="all" href="{{ asset_url }}" />
-    {% endoro_css %}
+    # src/Acme/NewBundle/Resources/config/oro/assets.yml
+    css:
+        inputs:
+            - 'bundles/acmenew/css/styles.scss'
 
 Now, you need to clear the cache and install the new stylesheets by running the ``assets:install``
 command:
@@ -49,62 +35,93 @@ command:
 .. code-block:: bash
 
     $ php bin/console cache:clear
-    $ php bin/console oro:assets:install
-    $ php bin/console assetic:dump
+    $ php bin/console assets:install --symlink
+    $ php bin/console oro:assets:build
 
-In this example, all four CSS files from your bundle as well as all the other files from the Oro
-Platform and from third party bundles will be merged and dumped in the ``public/css/style.css`` file.
-Optionally, you can apply different filters to each CSS file (separate them by comma if you want to
-apply multiple filters.
+In this example, all four SCSS files from your bundle as well as all the other files from the Oro Platform
+and from third-party bundles will be merged and dumped in the ``public/css/oro.css`` file.
 
-.. seealso::
-
-    Refer to the `Assetic documentation`_ for a list of available filters and read the `cookbook`_
-    in the Symfony documentation to learn more about Assetic.
-
-.. _book-layout-debugging-css:
-
-Debugging Your Stylesheets
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-As you can see in the example above, you can group your CSS files. This is extremely useful when
-you have to debug your stylesheets. By default, all CSS files will be merged and minimized in a
-single file. If you need to debug certain CSS files, you can exclude groups from the build process
-which means that all files belonging to an excluded group won't be merged and compiled.
-
-For instance, the following configuration excludes all files from the ``frontend`` group:
+If you want to keep your CSS code separately, you can dump all your SCSS files to another compiled file.
+To do that, you have to use different assets group in your ``assets.yml``
 
 .. code-block:: yaml
     :linenos:
 
-    # config/config.yml
-    oro_assetic:
-        css_debug: [frontend]
+    # src/Acme/NewBundle/Resources/config/oro/assets.yml
+    acme_styles:
+        inputs:
+          - 'bundles/acmenew/css/styles.scss'
+    	  - 'bundles/acmenew/css/another-styles.scss'
+        output: 'css/acme.css'
 
-.. tip::
+Use the corresponding placeholder to put compiled CSS file to the head of your document
 
-    You can run the ``oro:assetic:groups`` command to get a list of all active CSS groups:
+.. code-block:: yaml
+    :linenos:
 
-    .. code-block:: bash
+    # src/Acme/Bundle/NewBundle/Resources/config/oro/placeholders.yml
+    placeholders:
+        placeholders:
+            head_style:
+                items:
+                    acme_css:
+                        order: 150
 
-        $ php bin/console oro:assetic:groups
+        items:
+            acme_css:
+                template: AcmeNewBundle::acme_css.html.twig
+
+and finally, add the template for rendering style tag
+
+.. code-block:: html+jinja
+    :linenos:
+
+    # src/Acme/Bundle/NewBundle/Resources/views/acme_css.html.twig
+    <link rel="stylesheet" media="all" href="{{ asset('css/acme.css') }}" />
+
+.. warning::
+
+   You can also put your code in CSS files which will be compiled together with SCSS files. But keep in mind that the CSS loader is deprecated by ``node-sass`` npm module, and it will stop working after the module update.
+
+
+Development tips
+~~~~~~~~~~~~~~~~
+ 
+The application uses a Webpack tool for assets building. It supports a quite useful feature of mapping
+compiled CSS to SCSS sources. So in browser's web inspector (e.g., Google Chrome), you can see
+which SCSS code styling an element directly.
+
+The assets building takes some time. So better build only the theme that is currently required. To speed up the process, simply add a
+theme name after the build command.
+
+.. code-block:: bash
+
+    $ php bin/console oro:assets:build admin.oro
+
+Also, you can use the watch mode to rebuild assets automatically after some SCSS file is changed.
+Just add the ``--watch`` (or ``-w``) option to the build command.
+
+.. code-block:: bash
+
+    $ php bin/console oro:assets:build --watch
+
+Refer to `Asset Commands`_ for more information.
 
 .. _book-layout-themes:
 
 Application Themes
 ------------------
 
-A theme is a set of CSS and/or SCSS files that customize the look and feel of OroPlatform. A
-theme has the following properties:
+A theme is a set of CSS and/or SCSS files that customize the look and feel of OroPlatform. The theme has the following properties:
 
 ==============  ========  ===========================================================
 Property        Required  Description
 ==============  ========  ===========================================================
 ``name``        yes       A unique name
-``label``       no        A string that will be displayed in the theme management UI.
+``label``       no        A string that is displayed in the theme management UI.
 ``styles``      yes       The list of CSS and SCSS files that define the theme.
 ``icon``        no        The theme's favicon.
-``logo``        no        A logo that will be shown in the theme management UI.
+``logo``        no        A logo that is shown in the theme management UI.
 ``screenshot``  no        A screenshot of the theme to be shown in the management UI.
 ==============  ========  ===========================================================
 
@@ -140,18 +157,14 @@ your application's configuration using the ``oro_theme`` option:
                 screenshot: /mytheme/images/screenshot.png
         active_theme: mytheme
 
-First, you create a theme named ``mytheme`` whose label is *My Theme* and that makes use of the two
-CSS files ``main.css`` and ``ie.css``. Secondly, you just have select the theme to be used by
-setting its name as the value of the ``active_theme`` option.
+First, you create a theme named ``mytheme`` with the *My Theme* label that uses two CSS files ``main.css`` and ``ie.css``. Secondly, select the theme to be used by setting its name as the value of the ``active_theme`` option.
 
 .. _book-themes-reusable-themes:
 
 Reusable Themes
 ~~~~~~~~~~~~~~~
 
-Sometimes, you do not only want to customize your own application, but you like to provide a theme
-that can be reused in different applications. To achieve this, simply specify the theme's options
-in a file named ``settings.yml`` that is located in the ``Resources/public/themes/<theme-name>``
+In addition to customizing your own application, you can also provide a theme that can be reused in different applications. To achieve this, simply specify the theme's options in the ``settings.yml`` file that is located in the ``Resources/public/themes/<theme-name>``
 directory of your bundle:
 
 .. code-block:: yaml
@@ -177,8 +190,7 @@ To use the theme in any application, enable it in the application configuration:
 
 .. tip::
 
-    You can use the ``oro:theme:list`` command to get a list of all available themes. Its output
-    looks like this:
+    You can use the ``oro:theme:list`` command to get a list of all available themes. Its output looks like this:
 
     .. code-block:: text
         :linenos:
@@ -216,8 +228,8 @@ Finally, clear the cache and dump all assets:
 .. code-block:: bash
 
     $ php bin/console cache:clear
-    $ php bin/console assets:install
-    $ php bin/console assetic:dump
+    $ php bin/console assets:install --symlink
+    $ php bin/console oro:assets:build
 
 .. _book-themes-overriding:
 
@@ -226,7 +238,7 @@ Overriding a Theme
 
 The configuration files of all available themes are merged when the service container is being
 compiled. Since the merge process does override values if they are defined in more than one file,
-you can make use of it when you are in the need to customize an existing theme.
+you can make use of it when you need to customize an existing theme.
 
 For example, imagine that you want to use the *Oro* theme from the OroUIBundle, but you want to use
 a custom label and favicon for it. The definition of the *Oro* theme as defined in the bundle looks
@@ -240,8 +252,7 @@ like this:
     styles:
         - bundles/oroui/themes/oro/css/style.css
 
-All you have to is placing a ``settings.yml`` file in the ``Resources/public/themes/oro`` directory
-of your bundle and define the values you want to change:
+So, place the ``settings.yml`` file in the ``Resources/public/themes/oro`` directory of your bundle and define the values you want to change:
 
 .. code-block:: yaml
     :linenos:
@@ -279,5 +290,4 @@ of your bundle and define the values you want to change:
             // ...
         }
 
-.. _`Assetic documentation`: https://github.com/kriswallsmith/assetic#filters
-.. _`cookbook`: http://symfony.com/doc/current/cookbook/assetic/index.html
+.. _`Asset Commands`: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands
