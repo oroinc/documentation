@@ -28,7 +28,7 @@ containing three CSS files:
                 - 'Second/Assets/Path/To/Css/second.css'
                 - 'Second/Assets/Path/To/Css/third.css'
 
-By default, when you install the application's assets using the ``oro:assets:install`` command, all
+By default, when you install the application's assets using the ``assets:install`` command, all
 CSS files from all groups and all bundles will be merged and optimized.
 
 For debugging purposes compression of CSS files of certain groups can be disabled with the
@@ -44,8 +44,3 @@ For debugging purposes compression of CSS files of certain groups can be disable
 .. tip::
 
     You can use the ``oro:assetic:groups`` command to get a list of all available groups.
-
-.. seealso::
-
-    Learn more about :ref:`how to debug your stylesheets <book-layout-debugging-css>` from the
-    book.
