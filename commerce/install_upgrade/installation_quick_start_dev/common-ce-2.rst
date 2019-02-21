@@ -13,18 +13,6 @@ Step 3: |oro_app_name| Application Installation (Part 2)
     Please, refer to the dedicated article :ref:`Get the Oro Application Source Code <installation--get-files>`
     for more details.
 
-Install Application Dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Run the Composer Install
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: bash
-
-   composer install --prefer-dist
-
-The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
-
 Note that you are prompted to enter the infrastructure-related application parameters (database name, user, etc.) that
 are saved into the *config/parameters.yml* file. A description for every parameter you can find in the
 :ref:`Infrastructure-related Oro Application Configuration <installation--parameters-yml-description>` article.
