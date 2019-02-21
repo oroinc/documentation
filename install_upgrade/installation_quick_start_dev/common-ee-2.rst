@@ -9,24 +9,10 @@ Step 3: |oro_app_name| Application Installation (Part 2)
 
 .. note:: See detailed guidance on how to :ref:`Get the Oro application Source Code <platform--installation--source-files>` to install custom versions or the code from custom repositories.
 
-Install Oro Application Dependencies
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Run the Composer Install
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code:: bash
-
-   scl enable oro-php71 bash
-   composer install --prefer-dist
-   exit
-
-The `composer install` downloads the latest version of the external packages into the |oro_app_name| application `vendors` directory to prepare for |oro_app_name| installation.
-
 Note that you are prompted to enter the installation environment configuration and
 integration parameters (database name, user, etc.) that are saved into the *config/parameters.yml* file.
 
-.. warning:: Ensure you provide the configuration values specific for your environment. If you do not set these parameters during the `composer install` execution, you still can modify the *config/parameters.yml* file after the dependencies installation is complete. Any changes should precede the `Install Oro application`_ step described further.
+.. warning:: Ensure you provide the configuration values specific for your environment. If you do not set these parameters during the `composer create-project` execution, you still can modify the *config/parameters.yml* file after the dependencies installation is complete. Any changes should precede the `Install Oro application`_ step described further.
 
 Configure Application Parameters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
