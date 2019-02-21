@@ -44,8 +44,3 @@ For debugging purposes compression of CSS files of certain groups can be disable
 .. tip::
 
     You can use the ``oro:assetic:groups`` command to get a list of all available groups.
-
-.. seealso::
-
-    Learn more about :ref:`how to debug your stylesheets <book-layout-debugging-css>` from the
-    book.
