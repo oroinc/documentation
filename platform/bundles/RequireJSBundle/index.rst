@@ -12,6 +12,6 @@ For details of the RequireJS configuration options, see `RequireJS API <https://
 Related Documentation
 ---------------------
 
-* `Require.js Config Generation <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/RequireJSBundle#requirejs-config-generation>`__
-* `Runtime Require.js Main Config Extension <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/RequireJSBundle#runtime-requirejs-main-config-extension>`__
-* `Build Project <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/RequireJSBundle#build-project>`__
+* `Require.js Config Generation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#requirejs-config-generation>`__
+* `Runtime Require.js Main Config Extension <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#runtime-requirejs-main-config-extension>`__
+* `Build Project <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#build-project>`__

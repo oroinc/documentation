@@ -8,4 +8,4 @@ OroBatchBundle adds AkeneoBatchBundle to Oro applications and enables the batch 
 Related Documentation
 ---------------------
 
-* `Bundle Components <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/BatchBundle#components>`__
+* `Bundle Components <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/BatchBundle#components>`__

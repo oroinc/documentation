@@ -46,28 +46,3 @@ Related Documentation
 * `Use Datagrid Settings Manager <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_settings.md>`__
 * `Configure Grid Layout <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/grid_layout_configuring.md>`__
 * `Customize Grids Through 'Split to Cells' Option <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/grid_customization.md>`__
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

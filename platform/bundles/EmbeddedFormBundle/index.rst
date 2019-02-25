@@ -8,4 +8,4 @@ OroEmbeddedFormBundle enables the application users to create integrated forms u
 Related Documentation
 ---------------------
 
-* `Configure and Use OroEmbeddedBundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#configuration>`__
+* `Configure and Use OroEmbeddedBundle <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmbeddedFormBundle#configuration>`__

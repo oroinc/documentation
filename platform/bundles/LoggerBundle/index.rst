@@ -12,7 +12,7 @@ OroLoggerBundle extends the MonologBundle functionality and provides:
 Related Documentation
 ---------------------
 
-* `Enable Error Logs Email Notification <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#error-logs-email-notifications>`__
-* `Temporarily Decrease Log Level <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#temporarily-decrease-log-level>`__
-* `Log Console Commands <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands>`__
+* `Enable Error Logs Email Notification <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#error-logs-email-notifications>`__
+* `Temporarily Decrease Log Level <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#temporarily-decrease-log-level>`__
+* `Log Console Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands>`__
 

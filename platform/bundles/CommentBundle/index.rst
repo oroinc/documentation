@@ -8,4 +8,4 @@ OroCommentBundle adds the Comments functionality which can be used with the appl
 Related Documentation
 ---------------------
 
-* `Enable Comment Association Using migrations <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations>`__
+* `Enable Comment Association Using migrations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations>`__

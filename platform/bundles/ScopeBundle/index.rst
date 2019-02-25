@@ -12,9 +12,9 @@ OroScopeBundle enables developers to establish a relation between scopes and oth
 Related Documentation
 ---------------------
 
-* `Scopes Overview <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ScopeBundle#how-scopes-work>`__
-* `Configure Scope Criteria Providers <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ScopeBundle#configuring-scope-criteria-providers>`__
-* `Use Context <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ScopeBundle#using-context>`__
-* `Scope Operations <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ScopeBundle#scope-operations>`__
-* `Use Related Scopes (Example) <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ScopeBundle#example-using-related-scopes>`__
-* `Use Scope Criteria (Example) <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ScopeBundle#example-using-scope-criteria>`__
+* `Scopes Overview <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#how-scopes-work>`__
+* `Configure Scope Criteria Providers <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#configuring-scope-criteria-providers>`__
+* `Use Context <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#using-context>`__
+* `Scope Operations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#scope-operations>`__
+* `Use Related Scopes (Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#example-using-related-scopes>`__
+* `Use Scope Criteria (Example) <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#example-using-scope-criteria>`__

@@ -8,5 +8,5 @@ OroOrganizationBundle extends the OroPlatform ACL system with organization and b
 Related Documentation
 ---------------------
 
-* `Organization Bundle Overview <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/OrganizationBundle#overview>`__
-* `Entity Ownerships <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/OrganizationBundle#entity-ownerships>`__
+* `Organization Bundle Overview <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle#overview>`__
+* `Entity Ownerships <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle#entity-ownerships>`__

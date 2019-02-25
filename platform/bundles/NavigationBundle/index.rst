@@ -9,8 +9,8 @@ OroNavigationBundle introduces menu navigation structures in the Oro application
 Related Documentation
 ---------------------
 
-* `Menu Data Source <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-data-sources>`__
-* `Create Menu with Builder <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NavigationBundle#your-first-menu>`__
-* `Render Menus <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NavigationBundle#rendering-menus>`__
-* `Disable Menu Items <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NavigationBundle#disabling-menu-items-as-part-of-a-feature>`__
-* `Configure Breadcrumbs <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NavigationBundle#breadcrumb-provider>`__
+* `Menu Data Source <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-data-sources>`__
+* `Create Menu with Builder <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#your-first-menu>`__
+* `Render Menus <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#rendering-menus>`__
+* `Disable Menu Items <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#disabling-menu-items-as-part-of-a-feature>`__
+* `Configure Breadcrumbs <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#breadcrumb-provider>`__

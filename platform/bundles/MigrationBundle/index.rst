@@ -8,9 +8,9 @@ OroMigrationBundle extends DBAL (database abstraction layer) and provides the ab
 Related Documentation
 ---------------------
 
-* `Database Structure Migrations Overview <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/MigrationBundle#database-structure-migrations>`__
-* `Extensions for Database Structure Migrations <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/MigrationBundle#extensions-for-database-structure-migrations>`__
-* `Create an Extensions for Database Structure Migrations <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/MigrationBundle#create-own-extensions-for-database-structure-migrations>`__
-* `Use Data Fixtures <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/MigrationBundle#data-fixtures>`__
-* `Use Versioned Data Fixtures <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/MigrationBundle#versioned-fixtures>`__
+* `Database Structure Migrations Overview <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#database-structure-migrations>`__
+* `Extensions for Database Structure Migrations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#extensions-for-database-structure-migrations>`__
+* `Create an Extensions for Database Structure Migrations <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#create-own-extensions-for-database-structure-migrations>`__
+* `Use Data Fixtures <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#data-fixtures>`__
+* `Use Versioned Data Fixtures <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#versioned-fixtures>`__
 

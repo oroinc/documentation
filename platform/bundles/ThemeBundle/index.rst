@@ -14,4 +14,4 @@ Basic statements:
 Related Documentation
 ---------------------
 
-* `Introduction to Themes <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties>`__
+* `Introduction to Themes <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties>`__

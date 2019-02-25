@@ -8,4 +8,4 @@ OroNotificationBundle extends the OroEmailBundle capabilities and enables the em
 Related Documentation
 ---------------------
 
-* `Console Commands <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/NotificationBundle#console-commands>`__
+* `Console Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NotificationBundle#console-commands>`__

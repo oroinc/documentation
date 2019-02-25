@@ -12,6 +12,6 @@ Every application user can configure their own widgets set in each enabled sideb
 Related Documentation
 ---------------------
 
-* `Initialize a Sidebar <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/SidebarBundle#sidebar-initializing>`__
-* `Configure a Sidebar Widget in YAML <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/SidebarBundle#widget-configuration-in-yaml>`__
-* `Create a Sidebar Widget <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/SidebarBundle#creating-widgets>`__
+* `Initialize a Sidebar <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#sidebar-initializing>`__
+* `Configure a Sidebar Widget in YAML <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#widget-configuration-in-yaml>`__
+* `Create a Sidebar Widget <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#creating-widgets>`__

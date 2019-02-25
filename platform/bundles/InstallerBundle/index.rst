@@ -8,4 +8,4 @@ OroInstallerBundle enables developers to install Oro applications in a prepared 
 Related Documentation
 ---------------------
 
-* `Use Installer <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle>`__
+* `Use Installer <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle>`__
