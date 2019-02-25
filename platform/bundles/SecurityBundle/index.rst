@@ -10,7 +10,7 @@ The bundle enables developers to set up access restrictions for entities and non
 Related Documentation
 ---------------------
 
-* `ACL in SecurityBundle <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/SecurityBundle#acl>`__
+* `ACL in SecurityBundle <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle#acl>`__
 * `Work with ACL Manager <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/acl-manager.md>`__
 * `Configure and Apply Custom Permissions to an Entity <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/permissions.md>`__
 * `Work with Configurable Permissions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/configurable-permissions.md>`__

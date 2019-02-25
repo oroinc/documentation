@@ -11,7 +11,7 @@ Related Documentation
 ---------------------
 
 * `Fundamentals <https://github.com/oroinc/OroEntitySerializedFieldsBundle#fundamentals>`__
-* `Install and Run Unit Tests <https://github.com/oroinc/OroEntitySerializedFieldsBundle#installation>`__
+
 
 
 

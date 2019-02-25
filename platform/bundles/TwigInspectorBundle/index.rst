@@ -1,9 +1,9 @@
 .. _bundle-docs-platform-twig-inspector-bundle:
 
-Oro Twig Inspector
-==================
+OroTwigInspector
+================
 
-Oro Twig Inspector adds the possibility to find twig templates and blocks used for rendering HTML pages faster during development.
+OroTwigInspector adds the possibility to find twig templates and blocks used for rendering HTML pages faster during development.
 
 Related Documentation
 ---------------------

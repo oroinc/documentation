@@ -40,7 +40,8 @@ Also each of these abstract services can be re-declared in the application confi
             class:                Oro\Bundle\CacheBundle\Provider\PhpFileCache
             arguments:            [%kernel.cache_dir%/oro_data]
 
-Read more about the `caching policy and default implementation`_.
+
+The `oro.cache.abstract.without_memory_cache service` is always declared automatically based on `oro.cache.abstract` service.
 
 .. _op-structure--cache--warmup:
 
@@ -161,7 +162,7 @@ processes, we have to manually clear memory cache after every change
 with Localizations. Missing cache clearing for any of these cases leads
 to outdated data in ``LocalizationManager``.
 
-Persistent or Shared cache
+Persistent or Shared Cache
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let us have a look at our example once again. Since
@@ -178,7 +179,7 @@ Cache Chaining
 
 The solution to the issue mentioned above is to keep a healthy balance
 between the fast and shared cache. It is implemented in the
-``ChainCache`` class.
+`ChainCache <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php>`__ class.
 
 .. code-block:: php
     :linenos:
@@ -215,12 +216,14 @@ persistent cache.
 Default Cache Implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As you may read in `Readme`_ there are two abstract services you can use
+There are two abstract services you can use
 as a parent for your cache services. Default implementations are
 following: - for CLI requests: ``MemoryCacheChain`` with only
 ``Oro\Bundle\CacheBundle\Provider\FilesystemCache`` as a cache provider
 - for other requests: ``MemoryCacheChain`` with ``ArrayCache`` on the
 top of ``FilesystemCache``
+
+For services based on `oro.cache.abstract.without_memory_cache` the MemoryCacheChain is not used.
 
 .. _Memory based cache: #memory-based-cache
 .. _Persistent/shared cache: #persistent/shared-cache

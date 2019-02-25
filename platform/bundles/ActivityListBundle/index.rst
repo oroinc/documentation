@@ -14,4 +14,3 @@ Related Documentation
 * `Register a New Entity <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page>`__
 * `Add Inheritance of Activity Lists to the Target Entity <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md>`__
 * `Permissions in ActivityList Bundle <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md>`__
-* `ActivityListBundle Extends OroSegmentBundle with a New "Activity" Filter Type <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/segment.md>`__

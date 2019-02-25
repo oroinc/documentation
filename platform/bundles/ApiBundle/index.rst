@@ -7,11 +7,11 @@ OroApiBundle enables the Web API development framework for the application data.
 
 The implementation of the OroApiBundle is based on the following components:
 
-* **ChainProcessor** --- Organizes data processing flow.
-* **EntitySerializer** --- Provides fast access to entities data.
-* **Symfony Form** --- Provides a flexible way to map request data to entity object.
+* `ChainProcessor <https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor>`__ --- Organizes data processing flow.
+* `EntitySerializer <https://github.com/oroinc/platform/tree/master/src/Oro/Component/EntitySerializer>`__ --- Provides fast access to entities data.
+* `Symfony Form <https://github.com/symfony/form>`__ --- Provides a flexible way to map request data to entity object.
 
-FOSRestBundle and NelmioApiDocBundle are also used for REST API.
+`FOSRestBundle <https://github.com/FriendsOfSymfony/FOSRestBundle>`__ and `NelmioApiDocBundle <https://github.com/nelmio/NelmioApiDocBundle>`__ are also used for REST API.
 
 .. note:: The main format for REST API is described at `JSON API <https://jsonapi.org/>`__. Please make sure that you are familiar with it before you start creating REST API for your entities.
 
@@ -21,6 +21,48 @@ By default, only custom entities, dictionaries, and enumerations are accessible 
 
 Related Documentation
 ---------------------
+
+* `CLI Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/commands.md>`__
+* `Configure Stateless Security Firewalls <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/security.md>`__
+
+* `Configuration Reference <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md>`__
+* `Configuration Extras <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extra.md>`__
+* `Configuration Extensions <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md>`__
+* `Forms and Validators Configuration <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/forms.md>`__
+* `Documenting API Resources <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/documentation.md>`__
+* `Actions <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md>`__
+* `The Request Type <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/request_type.md>`__
+* `Processors <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md>`__
+* `Headers <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/headers.md>`__
+* `Filters <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md>`__
+* `How to <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md>`__
+* `CORS Configuration <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/cors.md>`__
+* `Testing <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md>`__
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 * `CLI Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/commands.md>`__
 * `Configure Stateless Security Firewalls <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/security.md>`__

@@ -87,5 +87,4 @@ Application files related to the user data (attachments, images, documents) are 
 
    search_index/index
    database/index
-   cache
    mq/index

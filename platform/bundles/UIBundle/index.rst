@@ -8,8 +8,6 @@ OroUIBundle defines the architecture of the front-end part of Oro application an
 Related Documentation
 ---------------------
 
-* `Placeholders <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#introduction-to-placeholders>`__
-* `Enable Templates Hinting <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#templates-hinting>`__
 * `Client Side Architecture <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side-architecture.md>`__
 * `Page Component <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md>`__
 * `Mediator Handlers <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/mediator-handlers.md>`__
@@ -19,7 +17,6 @@ Related Documentation
 * `Layout Subtree View <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/layout-subtree-view.md>`__
 * `Highlight Text View <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/layout-subtree-view.md>`__
 * `Viewport Manager <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/viewport-manager.md>`__
-* `UI Tool <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/tool.md>`__ ???????
 * `Items Manager <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/items-manager.md>`__
 * `Content Providers <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/content-providers.md>`__
 * `Loading Mask View <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/loading-mask-view.md>`__
@@ -30,4 +27,6 @@ Related Documentation
 * `Component Shortcuts <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/component-shortcuts.md>`__
 * `Error Handler <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/error-handler.md>`__
 * `Objects Registry <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/registry.md>`__
+* `Placeholders <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#introduction-to-placeholders>`__
+
 

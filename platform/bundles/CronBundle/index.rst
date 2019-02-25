@@ -8,4 +8,4 @@ OroCronBundle introduces a command used in the crontab configuration and in the 
 Related Documentation
 ---------------------
 
-* `Use Cron Command <https://github.com/laboro/platform/tree/master/src/Oro/Bundle/CronBundle>`__
+* `Use Cron Command <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CronBundle#usage>`__

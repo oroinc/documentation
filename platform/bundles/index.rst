@@ -6,9 +6,8 @@ Bundles Documentation
 OroPlatform offers a wide range of bundles that contain the core functionality of the application. OroPlatform bundles reside in our GitHub repository. All documentation that relates to OroPlatform bundles is collected below.
 
 .. toctree::
-   :includehidden:
    :titlesonly:
-   :maxdepth: 3
+   :maxdepth: 1
 
    ActionBundle/index
    ActivityBundle/index
@@ -34,9 +33,9 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    EntityBundle/index
    EntityConfigBundle/index
    EntityExtendBundle/index
+   EntityMergeBundle/index
    EntityPaginationBundle/index
    EntitySerializedFieldsBundle/index
-   EntityMergeBundle/index
    FeatureToggleBundle/index
    FilterBundle/index
    FormBundle/index
@@ -64,7 +63,6 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
    SecurityBundle/index
    SegmentBundle/index
    SidebarBundle/index
-   SoapBundle/index
    SyncBundle/index
    TagBundle/index
    TestFrameworkBundle/index

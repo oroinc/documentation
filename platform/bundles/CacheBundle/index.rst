@@ -12,3 +12,8 @@ Related Documentation
 * :ref:`Warm up Config Cache <op-structure--cache--warmup>`
 * :ref:`Caching of Symfony Validation rules <op-structure--cache--validation-rules>`
 * :ref:`Caching Policy <op-structure--cache--policy>`
+
+.. toctree::
+   :hidden:
+
+   cache

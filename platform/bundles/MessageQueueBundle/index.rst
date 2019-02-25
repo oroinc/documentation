@@ -1,7 +1,7 @@
 .. _bundle-docs-platform-message-queue-bundle:
 
-OroMessageQueue Bundle
-======================
+OroMessageQueueBundle
+=====================
 
 OroMessageQueueBundle incorporates the OroMessageQueue component into OroPlatform and thereby provides message queue processing capabilities for all application components.
 
