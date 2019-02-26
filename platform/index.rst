@@ -94,6 +94,8 @@ OroPlatform is an open-source platform made for rapid application development of
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
 
 .. toctree::
+   :titlesonly:
+   :maxdepth: 3
    :hidden:
 
    install_upgrade/index

@@ -125,7 +125,6 @@ This section provides a reference for the settings accessible via the **System**
    :hidden:
    :maxdepth: 1
 
-   op_structure/index
    monitoring/index
    config_levels/index
    landing_system_configuration/index
