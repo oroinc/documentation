@@ -88,8 +88,7 @@ Configure an Ownership Type for an Entity
 	You can define an entity ownership type only during the entity creation. As soon as the entity is saved for the first type, its ownership type cannot be changed. 
 	Consequently, you cannot change the predefined ownership types of the system entities (such as **Account**, **Business Unit,** etc.). 
 
-1. Start creating a new entity. To do this, follow the instructions provided in the
-   `Create Entities <../entities/entities#create-entities>`__ section of the `Entities <../entities>`__ guide. Specify all information as required for the **General Information**, **Communication & Collaboration**, **Attachments** sections.
+1. Start creating a new entity. To do this, follow the instructions provided in the :ref:`Entities <doc-entities>` guide. Specify all information as required for the **General Information**, **Communication & Collaboration**, **Attachments** sections.
 
 2. Click **Other**.
 
@@ -120,13 +119,3 @@ Review the Ownership Type for an Entity
 
 
 .. image:: ../img/access_roles_management/entity_ownershiptype_review.png 
-
-
-
-Links
------
-For more information about the access settings configuration, see the `Access Management <./access-management>`__ guide.
-
-For more information about the entity configuration, see the `Entity Management <../entities>`__ guide.
-
-For more information about the user configuration, see the `User Management <./user-management-users>`__ guide.

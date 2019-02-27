@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide-magento-channel:
 
 Magento Channels Overview

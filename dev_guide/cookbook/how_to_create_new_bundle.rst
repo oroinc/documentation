@@ -2,6 +2,8 @@
     single: Bundle; Create a Bundle
     single: Customization; Create a custom Bundle
 
+.. _how-to-create-new-bundle:
+
 How to create new bundle
 ========================
 

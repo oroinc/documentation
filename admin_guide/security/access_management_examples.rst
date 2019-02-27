@@ -1,3 +1,5 @@
+.. _access-management--examples:
+
 Access Configuration Examples
 =============================
 
@@ -257,14 +259,14 @@ Let's see which data each team member can see:
 |
 
 
-Links
-------
+Related Articles
+----------------
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
+For how role is represented on the interface, see the :ref:`Roles on the Interface <access-management--roles-interface>` guide.
 
-For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
+For what actions you can perform with roles, see the :ref:`Actions with Roles <access-management--roles-action>` guide.
 
 
 

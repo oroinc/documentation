@@ -1,3 +1,5 @@
+.. _access-management--access-level:
+
 Access Levels
 =============
 
@@ -55,20 +57,20 @@ You set access levels when you configure a user role and define permissions it w
 For example, for the **Account** entity, **Create** action, you set the **User** access level. It means that a user with such role will be able to create accounts only with themselves as an owner. 
 If you decide to grant a user permission to create accounts withing the user's division (i.e., when creating an account, the user can set any member of the same division as the account's owner), create a role that will have the **Division** access level for the **Account** entity, action **Create** 
 
-For more information and examples on roles creation, see the `Roles <./access-management-roles>`__ guide.
+For more information and examples on roles creation, see the :ref:`Roles <user-guide-user-management-permissions-roles>` guide.
 
 .. important::
   There are two access levels that you can set for any entity: **None** and **Global.**
 
 	Ability to set other access levels depends on the entity’s ownership type. You can set an access level that is ‘higher than or equal’ to the entity’s ownership type. Thus, if an entity's ownership type is **Business Unit**, you cannot set the **User** access level for any action on this entity. 
 
-	For more information about ownership types, see the `Ownership Type <./access-management-ownership-type>`__ guide and specifically, the `Ownership type and access levels <./access-management-ownership-type#ownership-types-and-access-levels>`__ subsection.
+	For more information about ownership types, see the :ref:`Ownership Type <user-guide-user-management-permissions-ownership-type>` guide.
 
 
 
-Links
-------
+Related Articles
+----------------
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
-For examples on roles and access settings application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
+For examples on roles and access settings application, see the :ref:`Access Configuration Examples <access-management--examples>` guide.
 

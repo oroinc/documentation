@@ -158,7 +158,7 @@ Manage Configurable Entities
 ----------------------------
 
 Many entities in OroCRM can be configured from the interface, as described in the
-:ref:`Entities <doc-entities>` guide. The user can change the attachments settings, 
+:ref:`Entities <doc-entities-management>` guide. The user can change the attachments settings,
 define whether the entity should be displayed on a grid and/or a record view page, whether it will be 
 exported to a .csv file, and define other settings. For some of them, it is also possible to add new fields, as 
 described in the :ref:`Entity Fields  <doc-entity-fields>` guide. 

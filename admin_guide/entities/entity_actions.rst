@@ -183,7 +183,7 @@ Create an Entity
      Mandatory. 
      Default value is **None**. 
    
-   - **Auditable**—This subsection defines whether system will log what actions are performed with the entity records and who performed them, and users with the corresponding permissions will be able to check it in the **Change History** and **Data Audit** sections of the system. For more information about the data audit, see the `Data Audit <../security/security_data_audit>`__ guide.
+   - **Auditable**—This subsection defines whether system will log what actions are performed with the entity records and who performed them, and users with the corresponding permissions will be able to check it in the **Change History** and **Data Audit** sections of the system. For more information about the data audit, see the :ref:`Data Audit <user-guide-data-audit>` guide.
    
      |
 

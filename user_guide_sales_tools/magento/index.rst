@@ -25,3 +25,4 @@ In the following sections you can find more information related to Magento sales
     magento_customers
     magento_carts_orders
     magento_default_workflows
+    magento_channels

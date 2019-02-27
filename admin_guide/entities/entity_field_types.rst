@@ -1,3 +1,4 @@
+.. _doc-entity-field-types:
 
 Field Types
 ============

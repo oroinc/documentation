@@ -1,3 +1,5 @@
+.. _access-management--roles-action:
+
 Actions with Roles
 ===================
 
@@ -32,9 +34,9 @@ Create a Role
 
 |
 
-5. Click **Entities**. In this section define which 'action on entity' permissions and which capabilities you want to include in the role. For more information about the 'action on entity' permissions and capabilities, see the `Roles Management <./access-management-roles>`__ guide.
+5. Click **Entities**. In this section define which 'action on entity' permissions and which capabilities you want to include in the role. For more information about the 'action on entity' permissions and capabilities, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
  
-   1. For each action on each entity specify the required access level. By default, for all entities access levels are set to **None**. Choose an entity which you want to assign different permissions for. In the entity row, click the action name and in the drop-down list, click the required access level. For more information about the access levels, see the `Access Levels <./access-management-access-levels>`__ guide.
+   1. For each action on each entity specify the required access level. By default, for all entities access levels are set to **None**. Choose an entity which you want to assign different permissions for. In the entity row, click the action name and in the drop-down list, click the required access level. For more information about the access levels, see the :ref:`Access Levels <access-management--access-level>` guide.
    
    |
    
@@ -48,9 +50,6 @@ Create a Role
 
    .. image:: ../img/access_roles_management/roles_create_entities_acl1.png
 
-   |
-
-   If you want to set individual permissions for the entity fields, please see the `Include Permissions for an Entity Field in a Role  <./access-management-roles-actions#include-permissions-for-an-entity-field-in-a-role>`__ section for how to do this. 
    
    2. Under the list of entities, select the check boxes in front of the required capabilities.  
    
@@ -88,7 +87,7 @@ You can create a role by cloning the existing one. For this, do as follows:
 
 |
 
-3. The **Create Role** page opens. It has all of the settings as the original role and 'Copy of \<original_role_name\>'  as its name. If required, modify settings as described in steps 3–6 of the `Create a Role <./access-management-roles-actions#create-a-role>`__ section.   
+3. The **Create Role** page opens. It has all of the settings as the original role and 'Copy of \<original_role_name\>'  as its name. If required, modify settings as described in steps 3–6 of the `Create a Role`_ section.
 
 |
 
@@ -134,7 +133,7 @@ Edit a Role
 
 2. On the role view page, click the :guilabel:`Edit` button in the upper-right corner.
 
-3. Make the required changes according to the description provided steps 3–6 of the `Create a Role <./access-management-roles-actions#create-a-role>`__ section.   
+3. Make the required changes according to the description provided steps 3–6 of the `Create a Role`_ section.
 
 4. Click the :guilabel:`Save` button in the upper-right corner.
 
@@ -177,7 +176,7 @@ Include Permissions for an Entity Field in a Role
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
-  For more information about the field level ACLs, see the `Roles on the Interface <./access-management-field-level-acl>`__ guide.
+  For more information about the field level ACLs, see the :ref:`Roles on the Interface <access-management--roles-interface>` guide.
 
 1. Open the role view page:
 
@@ -214,17 +213,8 @@ Include Permissions for an Entity Field in a Role
 
 Roles in the User Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-For how to assign a role to a user, review and modify the range of roles assigned to the user, see the `User Access Settings <./access-management-user-asccess-settings>`__ guide.
+For how to assign a role to a user, review and modify the range of roles assigned to the user, see the :ref:`User Access Settings <access-management--user-access-settings>` guide.
 
-
-Links
-------
-
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
-
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
-
-For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
 
 
 

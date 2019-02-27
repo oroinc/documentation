@@ -1,3 +1,4 @@
+.. _access-management--roles-interface:
 
 Role on the Interface
 =======================
@@ -99,11 +100,11 @@ The list of users that have this role.
 Links
 ------
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
 For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
 
-For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
+For examples on roles application, see the :ref:`Access Configuration Examples <access-management--examples>` guide.
 
 
 

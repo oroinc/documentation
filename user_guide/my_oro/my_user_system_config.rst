@@ -61,7 +61,7 @@ Localization
 
 .. _doc-my-user-configuration-language:
 
-Language settings
+Language Settings
 ~~~~~~~~~~~~~~~~~
 
 |
@@ -82,7 +82,7 @@ Language settings
 
 .. _doc-my-user-configuration-display:
 
-Display settings
+Display Dettings
 ~~~~~~~~~~~~~~~~
 
 |
@@ -264,7 +264,7 @@ Integrations
 
 .. _doc-my-user-configuration-msoutlook:
 
-MS Outlook settings
+MS Outlook Settings
 ~~~~~~~~~~~~~~~~~~~
 
 .. note::

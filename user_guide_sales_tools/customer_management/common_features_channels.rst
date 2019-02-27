@@ -120,7 +120,7 @@ customer details, information about the sales, etc. All the custom entities are 
 **Entities** section for a channel.
 
 The ways to create and manage custom entities, are described in the 
-:ref:`Entities guide <doc-entities>`.
+:ref:`Entities guide <doc-entities-management>`.
 
 To add an entity to the channel, choose the entity and click the :guilabel:`Add` button.
 
@@ -197,7 +197,7 @@ From the :ref:`View page <user-guide-ui-components-view-pages>`:
 
 |
   
-Please refer to the :ref:`Entities <doc-entities>` guide for more details.
+Please refer to the :ref:`Entities <doc-entities-management>` guide for more details.
 
 
 .. note::

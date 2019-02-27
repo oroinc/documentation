@@ -15,7 +15,7 @@ Roles Creation
 ^^^^^^^^^^^^^^^
 
 Usually roles are created based on the user's job functions: sales manager, marketing team member, administrator. But this is not a strict rule. You can create as many roles as required and configure them according to the needs of your company. 
-For how to create a role, see the `Create a Role <./access-management-roles-actions#create-a-role>`__ section of the the `Actions with Roles <./access-management-roles-actions>`__ guide. 
+For how to create a role, see the Create a Role section of the :ref:`Actions with Roles <access-management--roles-action>` guide.
 
 
 
@@ -78,14 +78,10 @@ This is how the corresponding configuration looks on the interface for the **Acc
 |
 
 
-For more information about which access levels defines which range, see the `Access Levels <./access-management-access-levels>`__ guide.
+For more information about which access levels defines which range, see the :ref:`Access Levels <access-management--access-level>` guide.
 
 .. Important::
 	Note that the set of available access levels depends on the entity's ownership type. For example, you will not be able to set the **User** access level if the entity's ownership type is **Organization.** Only two access levels are always available: **None**—access is denied and **Global**—access all entity records within the system.
-	For more information about ownership types, see the `Ownership Type <./access-management-ownership-type>`__ section and specifically, the `Ownership type and access levels <./access-management-ownership-type#ownership-types-and-access-levels>`__ subsection.
-
-
-
 
 
 System Functionalities Permissions
@@ -107,7 +103,7 @@ Assign and Combine Roles
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Each OroCRM user must be assigned a role. A user can have several roles. This is a logical approach if we assume that roles may be based on job functions. For example, if you have roles 'Leads Development Representative' and 'Sales Representative' and some employees do both of these jobs, you simply assign them both roles instead of creating a specialized role that will cover the whole range of required permissions. 
-For how to assign a role to a user, see the `Assign Roles While Creating a New User <access_roles_management#assign-roles-while-creating-a-new-user>`__ section. 
+For how to assign a role to a user, see the :ref:`Assign Roles While Creating a New User <user-guide-user-management-permissions>` section.
 
 
 If a user has two or more roles with different permissions, in the result the user will have the maximum of rights granted by all of them.   
@@ -136,20 +132,7 @@ However, there are situations when it is desirable to hide certain fields from o
 
 Is is possible to do this using Field Level ACL functionality. When you enable it for an entity, you can assign permissions that allow actions on a particular entity field to a role. 
 
-For more information about the field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <./access-management-field-level-acl>`__ guide.
-
-
-Links
-------
-
-For how role is represented on the interface, see the `Roles on the Interface <./access-management-roles-inteface>`__ guide.
-
-For what actions you can perform with roles, see the `Actions with Roles <./access-management-roles-actions>`__ guide.
-
-For examples on roles application, see the `Access Configuration Examples <./access-management-examples>`__ guide.
-
-	
-
+For more information about the field level ACLs, see the :ref:`Permissions for an Entity Field (Field Level ACLs) <access-management--field-level-acl>` guide.
 
 
 

@@ -415,7 +415,7 @@ For a phone activity, you can call the user via Google Hangouts, if such functio
 |
 
 
-For more information about activities, see the `OroCRM Activities Overview <../../user-guide/activities/activities-overview>`__ guide.
+For more information about activities, see the :ref:`OroCRM Activities Overview <user-guide-activities>` guide.
 
 
 Additional Information Section
@@ -438,8 +438,6 @@ Tasks are activities that need to be accomplished by a user. Keeping track on ta
 
 You can filter tasks by a variety of parameters. To open the task view page, click this task in the grid.
 
-For more information about tasks management, see the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
-
 
 Cases Subsection
 ~~~~~~~~~~~~~~~~
@@ -449,7 +447,7 @@ Cases are issues, problems or failures reported by customers or found internally
 
 You can filter cases by a variety of parameters. To open the case view page, click this case in the grid.
 
-For more information about cases management, see the `Create Case <../../user-guide/activities/activities-create-case>`__ guide.
+For more information about cases management, see the :ref:`Create Case <user-guide-activities-cases>` guide.
 
 
 
@@ -460,7 +458,7 @@ Edit a User
 
 2. In the grid on the **All Users** page, choose the user you want to delete, click the ellipsis menu at the right-hand end of the corresponding role and then click the |IcEdit| **Edit** icon.
    
-3. Make the required changes according to the description provided steps 3–9 of the `Create a User <./user-management-users#create-a-user>`__ section.   
+3. Make the required changes according to the description provided steps 3–9 of the `Create a User`_ section.
 
 4. Click the :guilabel:`Save` button in the upper-right corner of the page.
 
@@ -501,7 +499,7 @@ Send Email to a User
 |
 
 
-4. In the **Send Email** dialog box, specify the required data. For help on this, see the beginning of the `Send Email <../../user-guide/activities/activities-send-email>`__ guide.
+4. In the **Send Email** dialog box, specify the required data. For help on this, see the beginning of the :ref:`Send Email <doc-my-user-actions-email>` guide.
    
 |
 
@@ -528,7 +526,7 @@ Log a User's Call
 |
 
 
-4. In the **Log Call** dialog box, specify the required data. For help on this, see the `Log a Call Related to Another Entity Record <./activities-log-call#log-a-call-related-to-another-entity-record>`__ section of the `Log Call <../../user-guide/activities/activities-log-call>`__ guide.
+4. In the **Log Call** dialog box, specify the required data. For help on this, see the Log a Call Related to Another Entity Record section of the :ref:`Log Call <doc-activities-calls-actions-log>` guide.
    
 |
 
@@ -555,7 +553,7 @@ Assign an Event to a User
 |
 
 
-4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the `Add an Event for a Related Record <../../user-guide/activities/activities-add-assign-calendar-events#add-an-event-for-a-related-record>`__ section of the `Add and Assign Calendar Events <../../user-guide/activities/activities-add-assign-calendar-events>`__ guide.
+4. In the **Assign Event To** dialog box, specify the required data. For help on this, see the Add an Event for a Related Record section of the :ref:`Add and Assign Calendar Events <doc-activities-events-actions-add-detailed>` guide.
    
 |
 
@@ -582,7 +580,7 @@ Assign a Task to a User
 |
 
 
-4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the `Add a Task for Another Record <../../user-guide/activities/activities-add-assign-tasks#add-a-task-for-another-record>`__ section of the `Add Task and Assign Task <../../user-guide/activities/activities-add-assign-tasks>`__ guide.
+4. In the **Assign Task To** dialog box, specify the required data. For help on this, see the :ref:`Add Task and Assign Task <doc-activities-tasks-actions-add>` guide.
    
 |
 
@@ -605,7 +603,7 @@ Configure User's Interface, Email Settings and Integrations
 
 3. On the user view page, click :guilabel:`Configuration` in the upper-right corner of the page. 
 
-4. On the **Configuration** page, in the left side-menu, click **System Configuration**. If requried, make changes to the user system configuration. For information about the fields, see the `User System Configuration <./user-management-users#user-system-configuration>`__ section.
+4. On the **Configuration** page, in the left side-menu, click **System Configuration**. If requried, make changes to the user system configuration. For information about the fields, see the `User System Configuration`_ section.
  
 5. Click :guilabel:`Save Settings` in the upper-right corner of the page. 
  
@@ -930,7 +928,7 @@ Reset the User's Password
 
 Export Users
 ^^^^^^^^^^^^
-You can export all user records into the .csv file. The exported file will contain all user record fields marked to be exported in the **User** entity settings. For more information about how to configure which fields will be exported, see the `Entity Fields <../admin-guide/entities/entity-fields>`__ guide. 
+You can export all user records into the .csv file. The exported file will contain all user record fields marked to be exported in the **User** entity settings. For more information about how to configure which fields will be exported, see the :ref:`Entity Fields <doc-entity-fields>` guide.
 
 .. note:: 
 	All existing user records are exported at once. 

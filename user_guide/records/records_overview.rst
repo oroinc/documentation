@@ -22,8 +22,7 @@ for it. If something has changed (e.g., the phone number), the properties are up
 New records can be created and the existing record can be updated both manually and automatically 
 (as a result of integration with third-party systems). 
 
-With OroCRM's comprehensive `access settings <./access-roles-management>`__ you can define what users 
-will be able to view, update, delete, and create records of specific entities.
+With OroCRM's comprehensive access settings you can define what users will be able to view, update, delete, and create records of specific entities.
 
 As soon as a property has been updated, all the system users who have access permission will see its new updated state.
 This ensures that all the stakeholders can obtain actual and up-to-date information at any moment. 

@@ -1,7 +1,7 @@
 
 .. _admin-configuration-application-settings:
 
-Application settings
+Application Settings
 ====================
 
 In **System>Configuration>System Configuration>General Setup>Application Settings**, you can define the application-related options to be applied to your OroCRM instance.

@@ -46,7 +46,7 @@ General Information Section
   
   The following types are available:
 
-  - Fields
+  * Fields
   
     - BigInt  
     
@@ -71,7 +71,7 @@ General Information Section
     - Multi-Select
     
     - Percent
-    
+
     - Select
     
     - SmallInt
@@ -80,7 +80,7 @@ General Information Section
     
     - Text
     
-  - Relations—Relation is a field that enables you to tie record(s) of one entity to record(s) of another entity. For example each customer has an account, and each account can be assigned several contacts.
+  * Relations—Relation is a field that enables you to tie record(s) of one entity to record(s) of another entity. For example each customer has an account, and each account can be assigned several contacts.
   
     - Many to many
     
@@ -88,7 +88,7 @@ General Information Section
     
     - One to many
   
-  For the help on selection the field that is right for your purposes, see the `Entity Field Types <./entity-fields-types>`__ guide. 
+  For the help on selection the field that is right for your purposes, see the :ref:`Entity Field Types <doc-entity-field-types>` guide.
   "
   
 
@@ -551,9 +551,9 @@ Now, when creating/editing an opportunity record, you can choose a related busin
 Links
 ------
 
-For the information about entity fields, see the `Entity Fields <./entity-fields>`__ guide. 
+For the information about entity fields, see the :ref:`Entity Fields <doc-entity-fields>` guide.
 
-For the overview of the entities, see the `Entities <./entities>`__ guide. 
+For the overview of the entities, see the :ref:`Entities <doc-entities>` guide.
 
 
 .. |IcPosition| image:: /img/buttons/IcPosition.png

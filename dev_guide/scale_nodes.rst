@@ -61,9 +61,7 @@ If you don't want to use the extension, you can install the `Predis <https://git
 
 .. note::
 
-    For APCu installation with the version **4.0.7** there appears a `key inconsistency bug <key inconsistency bug>`_, 
-    which can lead to php notices or exceptions when rendering attachments of the image type. In order to solve the 
-    issue, install an older version or compile the extension from the master branch.
+    For APCu installation with the version **4.0.7** there appears a **key inconsistency bug** which can lead to php notices or exceptions when rendering attachments of the image type. In order to solve the issue, install an older version or compile the extension from the master branch.
 
 
 CONFIGURATION:

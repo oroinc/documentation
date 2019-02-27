@@ -1,3 +1,5 @@
+.. _access-management--user-access-settings:
+
 User Access Settings
 =====================
 
@@ -13,7 +15,7 @@ Overview
 User's access settings is one of the most important points in determining which data the user will be able to access. The organizations you are selecting in this section are organizations a user can log into. Both organizations and business units selected are records which data owned by a user will belong to. 
 
 .. Caution:: 
-  Pay attention that if a user looses access to certain organization, the data the user owns that was created for this organization, stays in organization. If a user looses access to a business unit, the data the user owns becomes unavailable in this business unit. For details, see the `Examples <../user-management/user-management-users#examples`> section.
+  Pay attention that if a user looses access to certain organization, the data the user owns that was created for this organization, stays in organization. If a user looses access to a business unit, the data the user owns becomes unavailable in this business unit. For details, see the :ref:`Examples <access-management--examples>` section.
 
 Actions
 -------
@@ -157,7 +159,7 @@ Links
 -----
 For more information about the access settings configuration, see the `Access /Role Management <./access-role-management>`__ guide.
 
-For general overview of roles, see the `Roles Management <./access-management-roles>`__ guide.
+For general overview of roles, see the :ref:`Roles Management <user-guide-user-management-permissions-roles>` guide.
 
 For more information about the user configuration, see the `User Management <../user-management/user-management-users>`__ guide.
 
