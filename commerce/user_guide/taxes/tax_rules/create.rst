@@ -1,5 +1,7 @@
+.. _tax-rules-create:
+
 Create a Tax Rule
-~~~~~~~~~~~~~~~~~
+-----------------
 
 .. begin
 
@@ -12,11 +14,12 @@ Create a Tax Rule
 
 To create tax rules for a particular tax jurisdiction, you need to complete the configuration of the tax options described in the :ref:`Tax Rule Prerequisites <tax-rule--prerequisites>` section.
 
-Once all the necessary actions are performed, you need to create a tax rule for every valid combination of the tax rates, product types, and customer types to ensure that they are properly taxed at every check out.
+Once all the necessary actions are performed, you need to create a tax rule for every valid combination of the tax rates, product types, and customer types to ensure that they are properly taxed at every checkout.
 
 1. Navigate to **Taxes > Tax Rules** and click **Create Tax Rule**.
 
-   .. image:: /user_guide/img/taxes/tax_rules/CreateTaxRule_TaxRules_Taxes_drop.png
+   .. image:: /user_guide/img/taxes/tax_rules/tax_rules_create.png
+      :alt: Create a new tax rule
 
 2. Select a customer and a product tax codes in the respective fields.
 3. Select a tax jurisdiction in the **Tax Jurisdiction** field and a tax rate in the **Tax** field.
@@ -24,3 +27,9 @@ Once all the necessary actions are performed, you need to create a tax rule for 
 5. Click **Save and Close**.
 
 .. stop
+
+**Related Articles**
+
+* :ref:`Taxes <user-guide--taxes>`
+
+* :ref:`Tax Rules <tax-rules>`

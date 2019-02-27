@@ -1,7 +1,7 @@
 .. _user-guide--taxes--customer_tax_codes:
 
 Customer Tax Codes
-------------------
+==================
 
 .. begin
 
@@ -10,31 +10,107 @@ Customer Tax Code is a label that is assigned to a customer and indicates the ta
 The sections below provide guidance on managing customer tax codes, using them to label customers and bind customers to a dedicated tax rules.
 
 .. contents:: :local:
+   :depth: 1
 
-.. include:: /user_guide/taxes/customer_tax_codes/viewlist.rst
-  :end-before: stop
+Create a Customer Tax Code
+--------------------------
 
 .. include:: /user_guide/taxes/customer_tax_codes/create.rst
+  :start-after: begin
   :end-before: stop
+
+Manage Customer Tax Codes
+-------------------------
+
+To view all customer tax codes, navigate to **Taxes > Customer Tax Codes** in the main menu.
+
+.. image:: /user_guide/img/taxes/customer_tax_codes/customer_tax_codes.png
+   :alt: The general page of all customer tax codes
+
+.. note:: To handle a big volume of data, use the page switcher, increase *View Per Page* or use filters to narrow down the list to just the codes you need.
+
+The following information about the customer tax codes is available in the customer tax codes list:
+
++-------------+---------------------------------------------------+
+| Name        | Description                                       |
++=============+===================================================+
+| CODE        | The unique identifier of the customer tax code.   |
++-------------+---------------------------------------------------+
+| DESCRIPTION | Detailed description of the customer tax code.    |
++-------------+---------------------------------------------------+
+| CREATED AT  | Date when the customer tax code was created.      |
++-------------+---------------------------------------------------+
+| UPDATED AT  | Date when the customer tax code was updated last. |
++-------------+---------------------------------------------------+
+
+You can perform the following actions with every item in the customer tax codes list:
+
+ * `View customer tax code details <view>`_: Click on the item to open its details page.
+
+   Alternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page.
+
+ * `Edit customer tax code details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
+
+ * Delete a Customer Tax Code: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcDelete| to remove the customer tax code.
+
+
+View Customer Tax Code Details
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. include:: /user_guide/taxes/customer_tax_codes/view.rst
-  :end-before: stop
+   :start-after: begin
+   :end-before: stop
 
-.. include:: /user_guide/taxes/customer_tax_codes/edit.rst
-  :end-before: stop
+Edit Customer Tax Code Details
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To edit the customer tax code value and description:
+
+#. Navigate to **Taxes > Customer Tax Codes** in the main menu.
+
+#. Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
+
+   The following page is displayed:
+
+   .. image:: /user_guide/img/taxes/customer_tax_codes/edit_customer_tax_code.png
+      :alt: Edit the customer tax code details
+
+#. Update the **Code** and **Description** with new information about the customer tax code.
+
+#. Click **Save and Close**.
+
+Link a Tax Code to a Customer or a Customer Group
+-------------------------------------------------
+
+.. include:: /user_guide/taxes/customer_tax_codes/link_a_tax_code_to_a_customer.rst
+   :start-after: begin
+   :end-before: stop
+
+Link a Customer Tax Code to the Tax Rule
+----------------------------------------
+
+You can edit the association of the customer tax code with the tax when :ref:`editing the tax rule details <tax-rules-edit>` (see the respective topic for more information).
+
+**Related Articles**
+
+* :ref:`Taxes <user-guide--taxes>`
+
+* :ref:`Product Tax Codes <taxes--product-tax-code>`
+
+* :ref:`Tax Jurisdictions <taxes--tax-jurisdiction>`
+
+* :ref:`Tax Rates <user-guide--taxes--tax-rates>`
+
+* :ref:`Tax Rules <tax-rules>`
 
 .. finish
 
 .. toctree::
    :hidden:
 
-   viewlist
-
    create
-
    view
-
-   edit
+   link_a_tax_code_to_a_customer
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
