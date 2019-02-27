@@ -13,15 +13,15 @@ To link a tax code to a product:
 
 #. In the **General** section, in the Tax Code list, select the tax code that matches tax regulation for the product.
 
-   .. image:: /user_guide/img/taxes/taxes_from_product_view/ProductTaxCode.png
-      :width: 40%
-
+   .. image:: /user_guide/img/taxes/product_tax_codes/select_tax_codes_for_product.png
+      :alt: Select the tax code that matches tax regulation for the product
 
 #. Click **Save**.
 
-A clickable tax code link is now available in the Product details.
+A clickable tax code link is now available in the product details.
 
-.. image:: /user_guide/img/taxes/taxes_from_product_view/ProductTaxCode_view.png
+.. image:: /user_guide/img/taxes/product_tax_codes/linked_tax_code_to_product.png
+   :alt: The tax code link is now available in the product details
 
 .. stop
 
