@@ -15,5 +15,7 @@ Learn how to enable taxation, select the tax provider, set Sales and VAT taxes, 
    :hidden:
    :maxdepth: 1
 
-   taxes/index
+   tax_calculation
+   us_sales_tax
+   eu_vat_tax
    shipping_tax

@@ -307,7 +307,7 @@ To add an icon:
    .. code-block:: bash
        :linenos:
 
-       bin/console oro:assets:install
+       bin/console assets:install --symlink
 
 To make sure that the icon is accessible for the web interface, check if it appears (as a copy or a symlink depending on the settings selected during the application installation) in the /public/bundles/acmefastshipping/img directory of your application.
 

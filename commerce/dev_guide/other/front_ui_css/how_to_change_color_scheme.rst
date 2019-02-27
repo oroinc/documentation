@@ -42,5 +42,5 @@ To change the color scheme:
     .. code-block:: bash
 
         php bin/console cache:clear
-        php bin/console oro:assets:install
-        php bin/console assetic:dump
+        php bin/console assets:install --symlink
+        php bin/console oro:assets:build

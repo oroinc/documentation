@@ -96,7 +96,7 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
           search_engine_name:       orm
           search_engine_host:       156.122.122.156
           search_engine_port:       ~
-          search_engine_index_name: oro_search
+          search_engine_index_prefix: oro_search
           search_engine_username:   orocommerce_search_user
           search_engine_password:   orocommerce_search_password
           search_engine_ssl_verification: ~
@@ -106,7 +106,7 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
           search_engine_ssl_key_password: ~
 
           # website search engine configuration
-          website_search_engine_index_name: oro_website_search
+          website_search_engine_index_prefix: oro_website_search
 
           # Used to hide backend under specified prefix, should be started with "/", for instance "/admin"
           web_backend_prefix:         '/admin'
