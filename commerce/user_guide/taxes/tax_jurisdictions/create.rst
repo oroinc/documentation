@@ -1,5 +1,7 @@
+.. _taxes--tax-jurisdiction-create:
+
 Create a Tax Jurisdiction
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 .. begin
 
@@ -9,10 +11,10 @@ To create a new tax jurisdiction:
 
 #. Click **Create Tax Jurisdiction**.
 
-   The following page opens:
+   The following page is displayed:
 
-   .. image:: /user_guide/img/taxes/tax_jurisdictions/TaxJurisdictionsCreate.png
-      :class: with-border
+   .. image:: /user_guide/img/taxes/tax_jurisdictions/tax_jurisdiction_create.png
+      :alt: Create a new tax jurisdiction
 
 #. Fill in **Code**, **Description**.
 
@@ -22,15 +24,20 @@ To create a new tax jurisdiction:
 
 #. Type in the Zip code ranges that should be covered by this tax jurisdiction (click **+Add** to capture additional range).
 
-   .. image:: /user_guide/img/taxes/tax_jurisdictions/LOS_ANGELES_COUNTY_Edit_TaxJurisdictions_Taxes.png
-      :class: with-border
+   .. image:: /user_guide/img/taxes/tax_jurisdictions/tax_jurisdiction_fill.png
+      :alt: Fill the data for a new tax jurisdiction
 
-#. Click **Save** on the top right of the page.
-
-The new tax jurisdiction is created.
+#. Click **Save and Close**.
 
 .. stop
 
-**Next steps**
+.. hint::
 
-`Create a tax rule <../tax-rules/create>`_ that associates this tax jurisdiction with other tax components (`products <../product-tax-codes>`_, `customer acounts <../customer-tax-codes>`_ and `tax code <../taxes>`_).
+   Now that the tax jurisdiction is created, `create a tax rule <../tax-rules/create>`_ that associates this tax jurisdiction with other tax components (`products <../product-tax-codes>`_, `customers <../customer-tax-codes>`_ and `tax codes <../taxes>`_).
+
+**Related Articles**
+
+* :ref:`Taxes <user-guide--taxes>`
+
+* :ref:`Tax Jurisdictions <taxes--tax-jurisdiction>`
+
