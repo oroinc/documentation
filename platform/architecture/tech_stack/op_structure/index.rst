@@ -22,7 +22,7 @@ API Client
 
 Application Programming Interface exposed over the web is a required part of business application and allows to integrate it into the enterprise infrastructure. Oro REST API allows any 3rd party API Client to consume application data and implement complex business scenarios related over HTTP(s) protocol.
 
-See more information about the `the API <https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/web-api>`__. 
+See more information about the `the API <https://oroinc.com/oroplatform/doc/current/dev-guide/web-api>`__. 
 
 Web Server
 ^^^^^^^^^^
