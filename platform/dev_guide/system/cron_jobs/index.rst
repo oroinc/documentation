@@ -16,8 +16,7 @@ OroCronBundle provides `CronCommandInterface`_ and two console commands to set u
 
 **CronCommandInterface** allows defining the console command along with its schedule in a crontab compatible string in the command class.
 
-The **oro:cron:definitions:load** command scans for all commands from the oro:cron namespace that implements the `CronCommandInterface`_. For each detected command, a new `Schedule <http://phpdoc.orocrm.com/platform/classes/Oro.Bundle.CronBundle.Entity.Schedule.html>`_ entry is created and
-saved into the database. This command runs on install and update, and can also be run manually if some cron commands or command definitions are changed.
+The **oro:cron:definitions:load** command scans for all commands from the oro:cron namespace that implements the `CronCommandInterface`_. For each detected command, a new `Schedule <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Entity/Schedule.php>`_ entry is created and saved into the database. This command runs on install and update, and can also be run manually if some cron commands or command definitions are changed.
 
 The second command is **oro:cron**. It takes all schedules from the database (created by the oro:cron:definitions:load command) and adds the commands that are due to the Message Queue. This command should run every minute.
 
@@ -52,4 +51,4 @@ Getting Started
 
 ..  .* :ref:`How To Customize Registered Cron Comman <dev-cookbook-system-cron-customize-command>`
 
-.. _`CronCommandInterface`: http://phpdoc.orocrm.com/platform/classes/Oro.Bundle.CronBundle.Command.CronCommandInterface.html
+.. _`CronCommandInterface`: https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php
