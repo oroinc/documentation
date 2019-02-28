@@ -17,7 +17,6 @@ The following categories of settings are available for system configuration (fol
 
     * Application Settings
     * :ref:`Localization <sys--config--sysconfig--general-setup--localization--global>`
-    * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`
     * :ref:`Currency <sys--config--sysconfig--general-setup--currency>`
     * :ref:`Display Settings <configuration--general-setup--display-settings>`
     * :ref:`User Settings <admin-configuration-user-settings>`

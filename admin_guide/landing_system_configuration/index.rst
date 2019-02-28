@@ -26,11 +26,6 @@ This section of the configuration guide introduces you to the general applicatio
                      <li><a class="reference internal" href="../localization"><span class="std std-ref">Localization</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
 
-                     <a class="reference internal" href="../localization/language-settings"><span class="std std-ref">Language Settings</span></a>
-
-                      <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
-                     <li>
-
                      <a class="reference internal" href="general-setup-sysconfig/global_currency"><span class="std std-ref">Currency</span></a>
 
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
