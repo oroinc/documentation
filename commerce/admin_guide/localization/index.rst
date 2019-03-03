@@ -25,12 +25,8 @@ See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-
 |             | items available for translation to the enabled and disabled languages in OroCommerce,                  |
 |             | add and modify translation text for these items, and delete these items if necessary.                  |
 |             |                                                                                                        |
-+-------------+--------------------------------------------------------------------------------------------------------+
-| **Step 3**  | In the :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`,            |
-|             | you can set the default language used in the management console and supported languages for            |
-|             | email notification templates.                                                                          |
 +-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 4**  | N/a                               | In the :ref:`Localizations <localization--localizations>` section, |
+| **Step 3**  | N/a                               | In the :ref:`Localizations <localization--localizations>` section, |
 |             |                                   | you can create a system where localization inherits a translation  |
 |             |                                   | from another language when the translation to the main language of |
 |             |                                   | the localization is not available. This helps to avoid double      |
@@ -43,13 +39,13 @@ See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-
 |             | for the in-place UI and content elements displayed to the user both in the storefront and              |
 |             | the management console.                                                                                |
 +-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 5**  | N/a                               | In the :ref:`Localization Settings <localization--localization>`,  |
+| **Step 4**  | N/a                               | In the :ref:`Localization Settings <localization--localization>`,  |
 |             |                                   | you can configure the default or custom localization and select    |
 |             |                                   | the language of the text system elements displayed in the front    |
 |             |                                   | store.                                                             |
 |             |                                   |                                                                    |
 +-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 6**  |                                   | Use inline :ref:`content translation <content-translation>`        |
+| **Step 5**  |                                   | Use inline :ref:`content translation <content-translation>`        |
 |             |                                   | available for most of the text                                     |
 |             |                                   | fields (e.g. names, titles, labels, descriptions, etc.)            |
 |             |                                   |                                                                    |
@@ -70,7 +66,6 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Edit and Cache Translations <localization--translations>`
 * :ref:`Add and Manage Localizations <localization--localizations>`
 * :ref:`Configure Localization Settings <localization--localization>`
-* :ref:`Configure Language Settings <sys--config--sysconfig--general-setup--language-settings>`
 * :ref:`Translate Content <content-translation>`
 * :ref:`Translate Product Attribute Labels and Options <localization--translations--labels>`
 * :ref:`Translate Content Blocks <user-guide--landing-pages--marketing--content-blocks--translation>`

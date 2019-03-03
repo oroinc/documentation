@@ -3,7 +3,7 @@
 Display Settings
 ================
 
-In this section, you can define a number of display-related options to be applied to the Oro application. The settings are available on four levels: globally, per organization, per website, and per user.
+In this section, you can define a number of display-related options to be applied to the Oro application. The settings are available on four levels: globally, per organization, and per user.
 
 .. note:: See a short demo on how to set display settings in your Oro application, or continue reading the guidance below.
 

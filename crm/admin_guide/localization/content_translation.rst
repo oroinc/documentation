@@ -12,10 +12,12 @@ Additionally, you can provide the translation for all the content elements of yo
 1. Click the |IcTranslations| **Translations** icon next to the required content element to provide spelling for different languages.
 
 .. image:: /admin_guide/img/localization/content_translation.png
+   :alt: Translation icon on the edit content tree page
 
 2. When the corresponding localization is enabled in the system configuration, the corresponding content translation is displayed in the storefront upon selecting this localisation.
 
 .. image:: /admin_guide/img/localization/translation_frontstore.png
+   :alt: Language switcher in the storefront
 
 .. finish_content_translation
 

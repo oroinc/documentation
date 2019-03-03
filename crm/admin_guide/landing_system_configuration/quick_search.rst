@@ -13,9 +13,7 @@ You can search for configuration options in the management console on any level:
 
 2. Per organization --- Navigate to **System > User Management > Organizations** in the main menu. Hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to reach the configuration page.
 
-3. Per website --- Navigate to **System > Websites** in the main menu. Hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to reach the configuration page.
-
-4. Per user --- Navigate to **System > User Management > Users** in the main menu. Hover over the |IcMore| **More Options** menu to the right of the necessary user and click |IcConfig| to reach the configuration page.
+3. Per user --- Navigate to **System > User Management > Users** in the main menu. Hover over the |IcMore| **More Options** menu to the right of the necessary user and click |IcConfig| to reach the configuration page.
 
 As an example, let us find the **Language Settings** menu via the **Quick Search** field. The menu resides under **System Configuration > General Setup** in the left panel.
 

@@ -220,7 +220,7 @@ See more information about using collections in the **Collection Validation** se
   - and
   - or
   - not
-  - .. (range, like in 1..10)
+  - `..` (range, like in 1..10)
 
 
 **Collection Validation** with *any (OR)* and *all (AND)* Operations
