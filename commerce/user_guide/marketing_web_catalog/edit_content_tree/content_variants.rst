@@ -5,6 +5,8 @@
 Configure Content Variants for the Content Node
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. contents:: :local:
+
 This section provides an overview of the content node types and a brief guidance on their set up.
 
 .. note:: The first content variant that is added to the node is marked as the default variant. When you add more content variants, please, specify the restrictions next to the content variant details. These restrictions will limit the use of this content variant only to specific cases.
