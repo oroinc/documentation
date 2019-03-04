@@ -13,8 +13,6 @@ Product Collection is a filter-based segment that helps you display a custom and
 
    Select the **Add Product Collection** in the Content Variants list.
 
-   The following section shows:
-
    .. image:: /user_guide/img/marketing/web_catalogs/ProductCollection.png
       :class: with-border
 
@@ -34,7 +32,6 @@ Product Collection is a filter-based segment that helps you display a custom and
 
    .. note:: |IcFilter| **Advanced Filter** is hidden by default.
 
-
    Click **Preview Results** to check whether the products found via the filter match your criteria, or to exclude unnecessary items from the list.
 
    .. image:: /user_guide/img/marketing/web_catalogs/PreviewResultsExclude.png
@@ -48,7 +45,9 @@ Product Collection is a filter-based segment that helps you display a custom and
    .. image:: /user_guide/img/marketing/web_catalogs/AddProductsManually.png
       :class: with-border
 
-  Manually added items will appear both in the **Manually Added** and **All Added** tabs.
+   Manually added items will appear both in the **Manually Added** and **All Added** tabs.
+
+  .. note:: All manually added simple and configurable products are always displayed in the storefront.
 
 5. To exclude items from the collection:
 
@@ -71,11 +70,18 @@ Product Collection is a filter-based segment that helps you display a custom and
    .. image:: /user_guide/img/marketing/web_catalogs/ResetProducts.png
       :class: with-border
 
-7. This step applies only to the content nodes with more than one content variant.
+7. Select whether you want to **Override Product Variant Configuration**.
+
+   .. image:: /user_guide/img/marketing/web_catalogs/OverrideProductVariantConfigCollection.png
+      :class: with-border
+
+   If selected, all simple product variants included into this product collection will be displayed on the page regardless of the :ref:`Display Simple Variations <config-guide--landing-commerce--products--configurable-products--global>` setting in the system configuration. Please note that this applies only to the products included via "Advanced Filter", as both "Manually Added" and "Excluded" products do not depend on this configuration option.
+
+8. This step applies only to the content nodes with more than one content variant.
 
    When your collection is not selected as a default variant for the content node, there is a *Restrictions* section beneath the product collection preview. In this section, you can define the condition when the product collection overrides the default content variant. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-8. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+9. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
 
 .. stop
 
