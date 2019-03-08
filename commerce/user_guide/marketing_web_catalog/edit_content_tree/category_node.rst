@@ -31,11 +31,18 @@ To add a category node to the menu in the OroCommerce storefront:
 
    .. image:: /user_guide/img/marketing/web_catalogs/subcategory_filter_3.png
 
-4. This step applies only to the content nodes with more than one content variant.
+4. Select whether you want to **Override Product Variant Configuration**.
+
+   .. image:: /user_guide/img/marketing/web_catalogs/OverrideProductVariantConfig.png
+      :class: with-border
+
+   If selected, all simple product variants assigned to this category will be displayed on the page regardless of :ref:`Display Simple Variations <config-guide--landing-commerce--products--configurable-products--global>` setting in the system configuration.
+
+5. This step applies only to the content nodes with more than one content variant.
 
    When your category is not selected as a default variant for the content node, there is a *Restrictions* section beneath the tree of categories. In this section, you can define the condition when the selected category overrides the default content variant. See :ref:`Configure Content Visibility <user-guide--marketing--web-catalog--content--visibility>` section for more information.
 
-5. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
+6. Click **Save** when you are done filling in the web catalog content node or keep adding the content variants.
 
 .. stop
 

@@ -6,9 +6,9 @@ System Localization and Translations
 
 Localization is the process of translating and adapting a product for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent , and monetary values as well as the format of names and addresses.
 
-Oro application supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the-box integration to CrowdIn service, OroCommerce has live access to the most recent updates from the Oro team and community.
+Oro application supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the-box integration to CrowdIn service, OroCRM has live access to the most recent updates from the Oro team and community.
 
-See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-translations>` for more information about the translation process.
+See :ref:`Translating OroCRM into your Native Language <doc--community--ui-translations>` for more information about the translation process.
 
 .. Keep reading to learn about the localization process (:ref:`open the quick visual guide <config-localization-quick-start>`):
 
@@ -26,11 +26,7 @@ See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-
 |             | add and modify translation text for these items, and delete these items if necessary.                  |
 |             |                                                                                                        |
 +-------------+--------------------------------------------------------------------------------------------------------+
-| **Step 3**  | In the :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`,            |
-|             | you can set the default language used in the management console and supported languages for            |
-|             | email notification templates.                                                                          |
-+-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 4**  | N/a                               | In the :ref:`Localizations <localization--localizations>` section, |
+| **Step 3**  | N/a                               | In the :ref:`Localizations <localization--localizations>` section, |
 |             |                                   | you can create a system where localization inherits a translation  |
 |             |                                   | from another language when the translation to the main language of |
 |             |                                   | the localization is not available. This helps to avoid double      |
@@ -43,13 +39,13 @@ See :ref:`Translating OroCommerce into your Native Language <doc--community--ui-
 |             | for the in-place UI and content elements displayed to the user both in the storefront and              |
 |             | the management console.                                                                                |
 +-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 5**  | N/a                               | In the :ref:`Localization Settings <localization--localization>`,  |
+| **Step 4**  | N/a                               | In the :ref:`Localization Settings <localization--localization>`,  |
 |             |                                   | you can configure the default or custom localization and select    |
 |             |                                   | the language of the text system elements displayed in the front    |
 |             |                                   | store.                                                             |
 |             |                                   |                                                                    |
 +-------------+-----------------------------------+--------------------------------------------------------------------+
-| **Step 6**  |                                   | Use inline :ref:`content translation <content-translation>`        |
+| **Step 5**  |                                   | Use inline :ref:`content translation <content-translation>`        |
 |             |                                   | available for most of the text                                     |
 |             |                                   | fields (e.g. names, titles, labels, descriptions, etc.)            |
 |             |                                   |                                                                    |
@@ -70,7 +66,6 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Edit and Cache Translations <localization--translations>`
 * :ref:`Add and Manage Localizations <localization--localizations>`
 * :ref:`Configure Localization Settings <localization--localization>`
-* :ref:`Configure Language Settings <sys--config--sysconfig--general-setup--language-settings>`
 * :ref:`Content Translation <content-translation>`
 
 
@@ -86,8 +81,5 @@ For detailed information on these topics, please see the following sections:
    localizations
    localization_configuration
    organization_localization
-   website_localization
    user_localization
-   language_settings
-   intro
    content_translation
