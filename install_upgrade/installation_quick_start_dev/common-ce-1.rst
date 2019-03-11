@@ -114,7 +114,7 @@ Next, install PHP 7.1 and the required dependencies using the following command:
 
 .. code:: bash
 
-   yum install -y php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-zip php-intl php-mcrypt php-opcache
+   yum install -y php-fpm php-cli php-pdo php-mysqlnd php-xml php-soap php-gd php-mbstring php-pecl-zip php-intl php-mcrypt php-opcache
 
 Install Composer
 ^^^^^^^^^^^^^^^^
