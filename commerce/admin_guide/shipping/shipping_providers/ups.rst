@@ -44,9 +44,9 @@ To enable communication with UPS in order to request the shipping cost estimate 
 
 3. Type in the *Common Integration Details*:
 
-* **Name** – the shipping method name that is shown as an option for shipping configuration in the OroCommerce Management Console.
-* **Label** – the shipping method name/label that is shown as a shipping option for the buyer in the OroCommerce Storefront on the checkout.
-* **Short label** – the shipping method name/label that is shown in the order details in the OroCommerce Management Console and Storefront after the order is submitted.
+* **Name** – the shipping method name that is shown as an option for shipping configuration in the OroCommerce management console.
+* **Label** – the shipping method name/label that is shown as a shipping option for the buyer in the OroCommerce storefront on the checkout.
+* **Short label** – the shipping method name/label that is shown in the order details in the OroCommerce management console and storefront after the order is submitted.
 * **Status** - set the status to **Active** to enable the integration.
 
 4. Set the **Test Mode** into the necessary state. Enable it if you are using the test UPS access key and disable for production access.

@@ -164,7 +164,7 @@ All credit card and bank account payment profiles are synchronized with Authoriz
 
 **Related Topics**
 
-* :ref:`Set Up Authorize.Net Integration in the Management Console <user-guide--payment--configuration--payment-method-integration--authorizenet-details>`
+* :ref:`Set Up Authorize.Net Integration in the management console <user-guide--payment--configuration--payment-method-integration--authorizenet-details>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

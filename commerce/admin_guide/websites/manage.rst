@@ -46,7 +46,7 @@ Now the website is marked as default and will be used for the anonymous access.
 Edit a Storefront Menu
 ~~~~~~~~~~~~~~~~~~~~~~
 
-OroCommerce Storefront has a number of menus that may be rearranged and customized. You can enable or disable menu items for a particular customer, website, or a mobile device by setting related conditions.
+OroCommerce storefront has a number of menus that may be rearranged and customized. You can enable or disable menu items for a particular customer, website, or a mobile device by setting related conditions.
 
 To customize a storefront menu for the website:
 
@@ -62,10 +62,10 @@ To customize a storefront menu for the website:
 
 3. On the website details page, click |IcConfig| **Edit Frontend Menu**.
 
-   Now you are redirected to the list of OroCommerce Storefront menus:
+   Now you are redirected to the list of OroCommerce storefront menus:
 
    .. image:: /admin_guide/img/websites/front_menu.png
-      :alt: The list of OroCommerce Storefront menus
+      :alt: The list of OroCommerce storefront menus
 
 4. Click on the menu to start customizing it:
 

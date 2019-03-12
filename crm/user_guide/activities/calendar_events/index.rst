@@ -3,7 +3,7 @@
 Calendar Events
 ===============
 
-In OroCRM and in OroCommerce Management Console, you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in OroCRM and OroCommerce (e.g. a demo may be linked to the opportunity in OroCRM and to the request for a quote in OroCommerce).
+In OroCRM and in OroCommerce management console, you can create and monitor planned activities as calendar events. These planned activities may be linked to the related data in OroCRM and OroCommerce (e.g. a demo may be linked to the opportunity in OroCRM and to the request for a quote in OroCommerce).
 
 .. note:: You can also see a short demo on `how to create and manage events in your Oro application <https://oroinc.com/orocrm/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU>`_, or continue reading the guidance below.
 
