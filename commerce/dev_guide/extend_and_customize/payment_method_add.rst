@@ -300,7 +300,7 @@ When you add an integration via the user interface of the management console, a 
                    [
                        'label' => 'acme.collect_on_delivery.settings.labels.label',
                        'required' => true,
-                       'options' => ['constraints' => [new NotBlank()]],
+                       'constraints' => [new NotBlank()],
                    ]
                )
                ->add(
@@ -309,7 +309,7 @@ When you add an integration via the user interface of the management console, a 
                    [
                        'label' => 'acme.collect_on_delivery.settings.short_labels.label',
                        'required' => true,
-                       'options' => ['constraints' => [new NotBlank()]],
+                       'constraints' => [new NotBlank()],
                    ]
                );
        }
@@ -556,9 +556,10 @@ The channel type and, in general, transport labels also appear on the user inter
            settings:
                labels.label: 'Labels'
                short_labels.label: 'Short Labels'
-               transport.label: 'Collect on delivery'
-
-           channel_type.label: 'Collect on delivery'
+           transport:
+               label: 'Collect on delivery'
+           channel_type:
+               label: 'Collect on delivery'
 
 
 Add an Installer
