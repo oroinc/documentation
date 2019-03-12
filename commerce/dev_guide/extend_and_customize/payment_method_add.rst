@@ -296,7 +296,7 @@ When you add an integration via the user interface of the management console, a 
            $builder
                ->add(
                    'labels',
-                   LocalizedFallbackValueCollectionType::NAME,
+                   LocalizedFallbackValueCollectionType::class,
                    [
                        'label' => 'acme.collect_on_delivery.settings.labels.label',
                        'required' => true,
@@ -305,7 +305,7 @@ When you add an integration via the user interface of the management console, a 
                )
                ->add(
                    'shortLabels',
-                   LocalizedFallbackValueCollectionType::NAME,
+                   LocalizedFallbackValueCollectionType::class,
                    [
                        'label' => 'acme.collect_on_delivery.settings.short_labels.label',
                        'required' => true,
