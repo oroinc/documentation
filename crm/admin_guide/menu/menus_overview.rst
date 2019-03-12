@@ -12,7 +12,7 @@ Overview
 Navigation Bar
 ~~~~~~~~~~~~~~
 
-The **application_menu** is the main menu of the Management Console in Oro application. It resides on the top of every application page and you can use it to navigate through Oro application. Subject to configuration, it may be displayed horizontally or vertically. To toggle the way it is displayed, navigate to the **System > Configuration** section using the main menu, and open **System configuration > General Setup > Display Settings** in the panel to the left. In the **Navigation Bar** section, unselect the **Use Default** option and select the *Top* or *Left* position.
+The **application_menu** is the main menu of the management console in Oro application. It resides on the top of every application page and you can use it to navigate through Oro application. Subject to configuration, it may be displayed horizontally or vertically. To toggle the way it is displayed, navigate to the **System > Configuration** section using the main menu, and open **System configuration > General Setup > Display Settings** in the panel to the left. In the **Navigation Bar** section, unselect the **Use Default** option and select the *Top* or *Left* position.
 
 In the latter case, the menu items are displayed as icons. For more information, see :ref:`Main Menu <user-guide-navigation-menu>`.
 
@@ -44,7 +44,7 @@ To access other shortcuts, click **See the full list** to see complete list of s
 User Menu
 ~~~~~~~~~
 
-In Management Console, user can access their profile configuration, emails, tasks and events via a **usermenu** (by clicking on your name on the top right of the application).
+In the management console, user can access their profile configuration, emails, tasks and events via a **usermenu** (by clicking on your name on the top right of the application).
 
 .. image:: /admin_guide/img/menus/user_menu.png
 

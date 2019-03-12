@@ -10,7 +10,7 @@ In OroCommerce, you can configure the website-related settings on the system lev
 Global Website-Related Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This section guides you through the OroCommerce Storefront website-related system configuration options, such as routing and sitemap. These options apply to all organizations, websites, and users unless their configuration overrides the default ones.
+This section guides you through the OroCommerce storefront website-related system configuration options, such as routing and sitemap. These options apply to all organizations, websites, and users unless their configuration overrides the default ones.
 
 Routing
 """""""

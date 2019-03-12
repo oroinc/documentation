@@ -3,7 +3,7 @@
 .. begin
 
 Create a Web Catalog
---------------------
+====================
 
 .. note::
     See a short demo on `how to create a web catalog in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-web-catalog>`_, or keep reading the step-by-step guidance below.
@@ -21,24 +21,34 @@ To create a new web catalog:
    The following page opens:
 
    .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate1.png
-      :class: with-border
+      :alt: Create a new web catalog page
 
-#. Fill in **Name** and **Description** for the Web Catalog you are creating.
+#. Fill in **Name** and **Description** for the web catalog you are creating.
 
 #. Click **Save** on the top right of the page.
 
 A new web catalog is created.
 
 .. image:: /user_guide/img/marketing/web_catalogs/WebCatalogCreate_demo.png
-      :class: with-border
+   :alt: A new web catalog is created
 
-Now you are ready to organize catalog content into the desired structure that will define the navigation and menu look and feel on the OroCommerce storefront:
+.. note:: Now you are ready to organize catalog content into the desired structure that will define the navigation and menu look and feel in the OroCommerce storefront. For this, follow the steps described in the :ref:`Edit Web Catalog Content Tree <user-guide--web-catalog-edit-content-tree>` guide.
 
-.. include:: edit_content_tree/index.rst
-   :start-after: start
-   :end-before: stop
+**Related Articles**
 
-Once you are done creating a web catalog, update your web-catalog configuration to enable it for the necessary level (either :ref:`globally <user-guide--marketing--web-catalog--enable-globally>` or :ref:`per website <user-guide--marketing--web-catalog--enable-globally>`), and, if necessary, tune the individual :ref:`catalog nodes visibility <user-guide--marketing--web-catalog--customize>` to hide/show the node or particular content variant for specific localization, on a particular website, or for certain customer.
+* :ref:`Web Catalogs <user-guide--web-catalog>`
+
+* :ref:`Edit a Web Catalog Content Tree <user-guide--web-catalog-edit-content-tree>`
+
+* :ref:`Enable a Web Catalog  Globally <user-guide--marketing--web-catalog--enable-globally>`
+
+* :ref:`Enable a Web Catalog per Website <user-guide--marketing--web-catalog--enable-per-website>`
+
+* :ref:`Customize Web Catalog Contents for Localization, Customer or Customer Group <user-guide--marketing--web-catalog--customize>`
+
+* :ref:`Build a Custom Web Catalog From Scratch (Example) <user-guide--marketing--web-catalog--sample>`
+
+* :ref:`Use Web Catalog Nodes as Root Nodes (Example) <user-guide--web-catalog-navigation-tool>`
 
 .. finish
 
