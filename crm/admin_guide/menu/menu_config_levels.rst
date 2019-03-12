@@ -7,7 +7,7 @@ Menu Configuration Levels
 
 In Oro applications, you can manage the way menus look and the elements they contain on the multiple configuration layers:
 
-**OroCRM and OroCommerce Management Console**
+**OroCRM and OroCommerce management console**
 
 * `Customize Default Management Console Menus`_ (global, system configuration)
 * `Customize Management Console Menus per Organization`_

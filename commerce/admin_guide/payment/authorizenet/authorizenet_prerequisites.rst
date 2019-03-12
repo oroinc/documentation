@@ -28,7 +28,7 @@ To start using Authorize.Net with the OroCommerce application, follow the steps 
 
    See the :ref:`Retrieve Authorize.Net Credential <user-guide--payment--prerequisites--authorizenet-credentials>` section for more information.
 
-#. In your Oro Management Console, configure an integration with Authorize.Net. See the :ref:`Authorize.Net Integration <user-guide--payment--configuration--payment-method-integration--authorizenet-details>` topic for more information. You can configure several integrations with different sets of options to enable multiple Authorize.Net payment methods for the checkout.
+#. In your Oro management console, configure an integration with Authorize.Net. See the :ref:`Authorize.Net Integration <user-guide--payment--configuration--payment-method-integration--authorizenet-details>` topic for more information. You can configure several integrations with different sets of options to enable multiple Authorize.Net payment methods for the checkout.
 
 #. In your Oro management console, configure a payment rule that defines conditions under which the configured payment method is available during the checkout. For example, a certain method may be available for customers from France, or only when a shopping cart amount exceeds $1000. See the :ref:`Payment Rules <sys--payment-rules>` topic for more information.
 
@@ -73,7 +73,7 @@ Set up an integration using the API Login ID and keys generated for your actual 
 
 Transactions made in the test mode are not sent to a financial institution for processing (i.e. actual money transfer does not take place). These transactions are not stored by the payment gateway and do not appear in search results and reports. Returned transaction ID is zero.
 
-.. important:: The test mode can be set up on the Authorize.Net merchant interface and on the Oro Management Console (in the Authorize.Net integration settings). Settings made via the Oro Management Console override settings made via Authorize.Net merchant interface.
+.. important:: The test mode can be set up on the Authorize.Net merchant interface and on the Oro management console (in the Authorize.Net integration settings). Settings made via the Oro management console override settings made via Authorize.Net merchant interface.
 
 Enable the Test Mode
 ~~~~~~~~~~~~~~~~~~~~

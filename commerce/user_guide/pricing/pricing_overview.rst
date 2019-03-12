@@ -19,7 +19,7 @@ Understanding Price Currencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A ``base currency`` is a currency that is used to display financial statistics (budgets, sales amounts, etc.) on the management console.
-A ``display currency`` is a currency that is used to display prices to customer users on the Storefront.
+A ``display currency`` is a currency that is used to display prices to customer users in the storefront.
 
 .. The storefront uses the exact value entered by the price manager when a customer requires prices in a selected display currency and the prices in the same base currency are available in the calculated price list. If the price list does not have the price in the selected currency, then additional currency conversion rules are used.
 

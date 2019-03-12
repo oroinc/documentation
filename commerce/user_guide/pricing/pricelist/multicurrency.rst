@@ -37,7 +37,7 @@ For detailed information on adding product prices in particular currencies, see 
 View Price in Specific Currency in the Storefront
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By default, prices in the OroCommerce Storefront are shown in the default currency.
+By default, prices in the OroCommerce storefront are shown in the default currency.
 
 .. image:: /user_guide/img/sales/price_lists/price_currency_change1.png
    :class: with-border

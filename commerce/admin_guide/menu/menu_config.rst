@@ -6,7 +6,7 @@ Customizing a Menu
 Generic Principles
 ~~~~~~~~~~~~~~~~~~
 
-A menu may be multi-level like, for example, a default OroCRM and OroCommerce Management Console main menu. The child menu items are nested under parent menu items (e.g. **Accounts**, etc are nested under the **Customers**).
+A menu may be multi-level like, for example, a default OroCRM and OroCommerce management console main menu. The child menu items are nested under parent menu items (e.g. **Accounts**, etc are nested under the **Customers**).
 
 .. image:: /admin_guide/img/menus/edit/menus_general.png
 
@@ -16,7 +16,7 @@ Menu items on the same level of hierarchy may be visually separated by a divider
 
 Dividers help you logically organize menu items.
 
-.. note:: Some menus do not support displaying dividers (on a particular level in the tree, or in general). For example, if you add a divider to the top level of OroCRM and OroCommerce Management Console main menu (**application_menu**), the divider is not displayed.
+.. note:: Some menus do not support displaying dividers (on a particular level in the tree, or in general). For example, if you add a divider to the top level of OroCRM and OroCommerce management console main menu (**application_menu**), the divider is not displayed.
 
    .. image:: /admin_guide/img/menus/ApplicationMenu.png
 

@@ -17,9 +17,9 @@ To start using Wirecard payment methods with the OroCommerce application, comple
 
    You will use them to set up the integration between Wirecard and OroCommerce.
 
-#. In your Oro Management Console, configure an integration with Wirecard. See the :ref:`Wirecard Integration <doc--payment--configuration--payment-method-integration--wirecard>` topic for more information. You can configure several integrations with different sets of options to enable multiple Wirecard payment methods for checkout.
+#. In your Oro management console, configure an integration with Wirecard. See the :ref:`Wirecard Integration <doc--payment--configuration--payment-method-integration--wirecard>` topic for more information. You can configure several integrations with different sets of options to enable multiple Wirecard payment methods for checkout.
 
-#. In your Oro Management Console, configure a payment rule that defines conditions under which the configured payment method is available during checkout. For example, a certain method may be available for customers from France, or only when a shopping cart amount exceeds EUR1000. See the :ref:`Payment Rules <sys--payment-rules>` topic for more information.
+#. In your Oro management console, configure a payment rule that defines conditions under which the configured payment method is available during checkout. For example, a certain method may be available for customers from France, or only when a shopping cart amount exceeds EUR1000. See the :ref:`Payment Rules <sys--payment-rules>` topic for more information.
 
 Now you are ready to accept card payments via Wirecard.
 

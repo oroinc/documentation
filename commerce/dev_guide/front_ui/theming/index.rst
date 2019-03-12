@@ -445,7 +445,7 @@ folder, for example
 Out-of-the-box OroCommerce Themes
 ---------------------------------
 
-Out-of-the-box the OroCommerce application comes with three predefined Storefront themes: blank, default and custom.
+Out-of-the-box, the OroCommerce application comes with three predefined storefront themes: blank, default and custom.
 
 * **The blank theme** is a simple theme aimed at providing the base for future decorations.
 * **The default theme** is a fully featured theme that extends the blank theme and provides the complete look and feel for the OroCommerce storefront UI out-of-the-box.

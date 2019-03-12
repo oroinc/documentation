@@ -1,78 +1,4 @@
-.. _user-guide--marketing--web-catalog--use-case:
-
-.. begin
-
-.. _user-guide--marketing--web-catalog--enable-globally:
-
-.. begin_enable_catalog_globally
-
-Enable a Web Catalog Globally
------------------------------
-
-To enable a web catalog globally:
-
-1. Navigate to **System > Configuration > Websites > Routing**.
-2. In the Web Catalog section, select the required web catalog that should be displayed on the storefront.
-   
-.. note:: When a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
-   
- 
-.. image:: /user_guide/img/marketing/web_catalogs/use_case/SysConfigWebCatalog.png
-   :class: with-border
-
-.. end_enable_catalog_globally
-
-.. _user-guide--marketing--web-catalog--enable-per-website:
-
-.. begin_enable_catalog_per_website
-
-Enable a Web Catalog for a Website
-----------------------------------
-
-To enable a web catalog for a specific website:
-
-1. Navigate to **System > Websites** in the main menu.
-2. For the necessary website, hover over the |IcMore| more actions menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
-3. Select **System Configuration > Websites > Routing** in the menu to the left.
-
-.. image:: /user_guide/img/marketing/web_catalogs/use_case/SysConfigWebCatalogPerWebsite.png
-   :class: with-border
-
-.. end_enable_catalog_per_website
-
-.. _user-guide--marketing--web-catalog--customize:
-
-.. begin_web_catalog_customize
-
-Customize Web Catalog Contents for Localization, Customer or Customer Group
----------------------------------------------------------------------------
-
-To customize your web catalog contents visibility:
-
-1. Navigate to **Marketing > Web Catalog** in the main menu.
-2. For the necessary web catalog, hover over the |IcMore| more actions menu to the right and click |IcEditContentTree| to start editing the catalog content tree.
-   
-.. image:: /user_guide/img/marketing/web_catalogs/use_case/EditContentTreeIcon.png
-   :class: with-border
-
-3. In the *Restriction section*, define the visibility of the web catalog.
-
-   By default, the web catalog is displayed for any localization, on any website, and for any customer.
-
-   To make OroCommerce apply a web catalog to the storefront only for the particular combination of these facts, create a restriction by selecting all or some of the following: target localization, website, and customer or customer group.
-
-.. image:: /user_guide/img/marketing/web_catalogs/use_case/CatalogRestrictions.png
-   :class: with-border
-
-.. note:: Only one field must be chosen for customers at a time, either a customer group and a customer.
-
-.. warning:: Never leave the restrictions for non-default variant empty. This may cause unexpected priority collision between the default and non-default variant.
-
-.. end_web_catalog_customize
-
 .. _user-guide--marketing--web-catalog--sample:
-
-.. begin_web_catalog_sample
 
 Build a Custom Web Catalog From Scratch (Sample)
 ------------------------------------------------
@@ -125,7 +51,7 @@ Each of the main menu sections will have the following second level menus:
 1. Health and Pharmacy: Vitamins and Supplements, Lifestyle and Wellbeing, Women's Health, Men's Health, Baby and Child Health.
 2. Beauty and Skincare: Makeup, Nails, Facial Skincare, Body Skincare, Hair, Fashion Accessories.
 3. Fragrance: Perfume, Aftershave.
-4. Baby and Child: Pregnancy and Maternity, Feeding, Bathing and Changing.
+4. Baby and Child: Pregnancy and Maternity, Feeding, Bathing, and Changing.
 5. Toiletries: Hair, Dental, Washing and Bathing.
    
 To set up content nodes in the management console:
@@ -155,7 +81,18 @@ Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog-
 
 .. image:: /user_guide/img/marketing/web_catalogs/use_case/NodesFrontStore.gif
 
-.. end_web_catalog_sample
+**Related Articles**
+
+* :ref:`Web Catalogs <user-guide--web-catalog>`
+
+* :ref:`Create a Web Catalog <user-guide--web-catalog-create>`
+
+* :ref:`Edit a Web Catalog Content Tree <user-guide--web-catalog-edit-content-tree>`
+
+* :ref:`Enable a Web Catalog  Globally <user-guide--marketing--web-catalog--enable-globally>` and :ref:`per Website <user-guide--marketing--web-catalog--enable-per-website>`.
+
+* :ref:`Customize Web Catalog Contents for Localization, Customer or Customer Group <user-guide--marketing--web-catalog--customize>`
+
 
 .. finish
 

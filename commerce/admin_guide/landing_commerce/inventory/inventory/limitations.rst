@@ -5,7 +5,7 @@ Configuring Inventory Quantity Limitations
 
 .. begin
 
-You can control the minimum and maximum quantities that are available buyers (in the OroCommerce Storefront) and sales people (in the OroCommerce Management Console) can claim in the RFQ, customer order, quote, or a shopping list.
+You can control the minimum and maximum quantities that are available buyers (in the OroCommerce storefront) and sales people (in the OroCommerce management console) can claim in the RFQ, customer order, quote, or a shopping list.
 
 To change the default inventory quantity limitations:
 
