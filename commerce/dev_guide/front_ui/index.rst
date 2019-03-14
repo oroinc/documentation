@@ -11,7 +11,7 @@ Storefront UI
 Layouts System
 --------------
 
-OroCommerce Storefront templating is based on the :ref:`Layouts system <dev-guide-layouts>` of `OroPlatform`_.
+OroCommerce storefront templating is based on the :ref:`Layouts system <dev-guide-layouts>` of `OroPlatform`_.
 
 The advantage of the **OroPlatform Layouts system** over regular `Symfony templating`_ lies in the possibility
 of making unlimited adjustments to the appearance with the help of independent bundles.

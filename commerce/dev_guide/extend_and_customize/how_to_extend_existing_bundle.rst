@@ -98,7 +98,7 @@ Here are the basic parts that can be extended and the way to do that:
 * **routing** - using file /Resources/config/oro/routing.yml;
 * **twig themes** - using file /Resources/config/oro/twig.yml;
 * **localization** - using files /Resources/config/oro/locale_data.yml, /Resources/config/oro/name_format.yml,
-  /Resources/config/oro/address_format.yml, /Resources/config/oro/currency_data.yml.
+  /Resources/config/oro/address_format.yml.
 
 
 References

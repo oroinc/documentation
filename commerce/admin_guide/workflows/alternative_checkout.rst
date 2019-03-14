@@ -13,7 +13,7 @@ The Alternative Checkout workflow represents an **example** of the :ref:`checkou
 
 In addition to the standard :ref:`checkout steps <system--workflows--checkout-workflow>`, alternative checkout workflow includes request and order approval steps before creating an order. For this workflow, orders with subtotals exceeding the specified value will have to be reviewed and approved by users with the permission to *approve orders that exceed the allowable amount*. By default, the order approval threshold is set to 5000.
 
-.. note:: Please keep in mind that the default alternative checkout is merely an example of an alternative checkout workflow. Enabling it for your customer users on the OroCommerce Storefront requires some customization efforts.
+.. note:: Please keep in mind that the default alternative checkout is merely an example of an alternative checkout workflow. Enabling it for your customer users in the OroCommerce storefront requires some customization efforts.
 
 To reach the workflow:
 

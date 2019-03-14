@@ -3,7 +3,7 @@
 Storefront Customization
 ========================
 
-The Storefront Customization topic provides recipes for most frequent OroCommerce storefront customization tasks.
+The storefront Customization topic provides recipes for most frequent OroCommerce storefront customization tasks.
 
 .. note:: Before proceeding with this topic, make sure you have :ref:`set up the development environment <dev-guide-development-practice-setup-dev-env>`,
     including creating your own custom bundle.

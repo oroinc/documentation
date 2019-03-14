@@ -60,21 +60,6 @@ number prefix (as defined in `E.164`_) and its default locale (e.g. the locale
 that is used to define the appropriate name format by country for specific
 address).
 
-``currency_data.yml``
-~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: yaml
-    :linenos:
-
-    # Resources/config/oro/currency_data.yml
-    USD:
-        symbol: $
-    RUB:
-        symbol: руб.
-
-This file defines currency symbols for each currency code. These symbols are
-used to render currency symbols when viewing or editing monetary fields.
-
 .. _localization-config-file-name-format:
 
 ``name_format.yml``

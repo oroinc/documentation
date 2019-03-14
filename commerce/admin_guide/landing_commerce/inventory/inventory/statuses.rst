@@ -5,7 +5,7 @@ Configuring Inventory Status Constrains
 
 .. begin
 
-You can control the way product inventory is displayed for your buyers (in the OroCommerce Storefront) and sales people (in the OroCommerce Management Console). Moreover, you can restrict adding products with particular inventory status to an RFQ, customer order, quote, or a shopping list.
+You can control the way product inventory is displayed for your buyers (in the OroCommerce storefront) and sales people (in the OroCommerce management console). Moreover, you can restrict adding products with particular inventory status to an RFQ, customer order, quote, or a shopping list.
 
 To change the default inventory statuses:
 
