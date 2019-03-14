@@ -345,11 +345,7 @@ Once you have turned on maintenance mode through `app/console lexik:maintenance:
 2. Modify credentials  for search engine configuration in the `config/parameters.yml` file.
 3. `Start the Elasticsearch 6.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html>`_
 
-<<<<<<< HEAD:documentation/crm/architecture/tech_stack/op_structure/search_index/elastic_search.rst
-Proceed with the `standard upgrade procedure <https://oroinc.com/orocrm/doc/current/install-upgrade/upgrade>`__.
-=======
 Proceed with the `standard upgrade procedure <https://oroinc.com/oroplatform/doc/current/install-upgrade/upgrade>`__.
->>>>>>> parent of 54e382a28e8... DOC-1082: Moved Operational Structure under Technology Stack:documentation/platform/admin_guide/op_structure/search_index/elastic_search.rst
 
 Search Index Dump
 ^^^^^^^^^^^^^^^^^
@@ -385,11 +381,7 @@ But you should note that the elastic index dump must be created from the old ver
 
 3. `Stop the Elasticsearch 2.\* / 5.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html>`_.
 
-<<<<<<< HEAD:documentation/crm/architecture/tech_stack/op_structure/search_index/elastic_search.rst
-4. Proceed with `standard upgrade procedure <https://oroinc.com/orocrm/doc/current/install-upgrade/upgrade>`__ which includes creating needed backups and updating code to new version, updating composer dependencies (all actions required before running the update command).
-=======
 4. Proceed with `standard upgrade procedure <https://oroinc.com/oroplatform/doc/current/install-upgrade/upgrade>`__ which includes creating needed backups and updating code to new version, updating composer dependencies (all actions required before running the update command).
->>>>>>> parent of 54e382a28e8... DOC-1082: Moved Operational Structure under Technology Stack:documentation/platform/admin_guide/op_structure/search_index/elastic_search.rst
    Composer should ask you to enter value of the new parameter `search_engine_index_prefix` - put there the same value as was previously in the `search_engine_index_name` parameter.
 
 5. Then modify credentials for search engine configuration in the `config/parameters.yml` file.
@@ -420,11 +412,7 @@ But you should note that the elastic index dump must be created from the old ver
 
    To speed up this process you may split the dump file into smaller chunks and upload them in parallel. In this case, each chunk has to contain an even number of lines because each document is represented by two lines in the dump file.
 
-<<<<<<< HEAD:documentation/crm/architecture/tech_stack/op_structure/search_index/elastic_search.rst
-10. Finish `standard upgrade procedure <https://oroinc.com/orocrm/doc/current/install-upgrade/upgrade>`__.
-=======
 10. Finish `standard upgrade procedure <https://oroinc.com/oroplatform/doc/current/install-upgrade/upgrade>`__.
->>>>>>> parent of 54e382a28e8... DOC-1082: Moved Operational Structure under Technology Stack:documentation/platform/admin_guide/op_structure/search_index/elastic_search.rst
 
 You may adjust this procedure according to your needs, but keep in mind that you need to:
 
@@ -470,7 +458,4 @@ The following is the example of a valid response when the Elasticsearch is avail
      },
      "tagline" : "You Know, for Search"
     }
-
-
-
 

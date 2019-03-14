@@ -643,4 +643,3 @@ References
 
    elastic_search
    db_search/index
-
