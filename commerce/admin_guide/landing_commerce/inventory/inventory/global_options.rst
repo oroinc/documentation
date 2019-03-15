@@ -5,7 +5,7 @@ Configure Product Options Globally
 
 .. begin
 
-To customize the default product inventory options globally:
+To customize the default product options globally:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Inventory > Product Options** in the menu to the left.
@@ -14,11 +14,12 @@ To customize the default product inventory options globally:
 
    The following page opens:
     
-   .. image:: /admin_guide/img/configuration/inventory/product_options_new.png
-      :class: with-border
+   .. image:: /admin_guide/img/configuration/inventory/product_options_global.png
+      :alt: Global product options configuration
    
-   The following table describes the options available on the page:
-   
+Here, you can manage both inventory and upcoming products options.
+
+**Product Inventory Options**
    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Name                    | Description                                                                                                                                                                                                                                                                                |
    +=========================+============================================================================================================================================================================================================================================================================================+
@@ -34,7 +35,13 @@ To customize the default product inventory options globally:
    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Low Inventory Threshold | The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the storefront.                                                                                                                                                 |
    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   
+
+.. _upcoming-products-config:
+
+**Upcoming Products**
+
+**Hide Labels Past Availability Date** - When enabled, the label for the upcoming products will be removed automatically once the availability date has passed. If the option is disabled, the label will remain displayed as long as the product is marked as upcoming regardless of its availability date.
+
 3. To customize any of these options:
 
      a) Clear the **Use Default** check box next to the option.

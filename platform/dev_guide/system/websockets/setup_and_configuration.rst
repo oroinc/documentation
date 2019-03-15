@@ -145,8 +145,8 @@ If you use untrusted SSL certificate, configure websocket_backend_ssl_context_op
  .. code-block:: yaml
      
     websocket_backend_ssl_context_options:
-    verify_peer: false
-    verify_peer_name: false
+        verify_peer: false
+        verify_peer_name: false
 
 .. warning:: Please keep in mind that having peer verification disabled is not recommended in production.
 
