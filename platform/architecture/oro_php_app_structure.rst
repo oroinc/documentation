@@ -135,7 +135,7 @@ From a file system perspective, Oro PHP application contains a structured combin
    * **logs** - application logs
 
 * **vendor** folder - code of 3rd party vendors installed based on the definition of dependencies in composer.json.
-* **composer.json** file - definition of application dependencies
+* **composer.json** file - definition of application dependencies 
 * **composer.lock** file - the list of initialized dependencies
 * **README.md** file - a brief description of the application
 

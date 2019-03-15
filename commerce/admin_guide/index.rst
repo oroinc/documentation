@@ -15,25 +15,7 @@ This section groups the guidance and reference information on hardware and softw
       <div class="guideline__item" >
           <div style="text-align: center">
           <h3>
-          <a class="reference internal" href="op-structure"><span class="std std-ref"><i class="fa fa-wrench fa-lg" aria-hidden="true"></i><br>System Components Administration</span></a></h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
           <a class="reference internal" href="user-management"><span class="std std-ref"><i class="fa fa-users fa-lg" aria-hidden="true"></i><br>User, Role and Access Management</span></a></h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          <a class="reference internal" href="monitoring"><span class="std std-ref"><i class="fa fa-heartbeat fa-lg" aria-hidden="true"></i><br>Monitoring and Healthcheck</span></a></h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
           </div>
@@ -140,8 +122,6 @@ This section provides a reference for the settings accessible via the **System**
    :hidden:
    :maxdepth: 1
 
-   op_structure/index
-   monitoring/index
    config_levels/index
    landing_system_configuration/index
    landing_commerce/index
