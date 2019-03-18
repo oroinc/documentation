@@ -82,10 +82,10 @@ OroPlatform is an open-source platform made for rapid application development of
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
             <ul class="guideline__list">
-                  <li><a class="reference internal" href="community/issues">Report an Issue</b></a></li>
-                  <li><a class="reference internal" href="community/issues/issue-security-report">Report Security Issue</b></a></li>
+                  <li><a class="reference internal" href="community/issues">Report an Issue</a></li>
+                  <li><a class="reference internal" href="community/issues/issue-security-report">Report Security Issue</a></li>
                   <li><a class="reference internal" href="community/contact-community">Contact Community</a></li>
-                  <li><a class="reference internal" href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ">Join the Oro Slack Workspace</b></a></li>
+                  <li><a href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ">Join the Oro Slack Workspace</a></li>
                </ul>
           </div>
       </div>
@@ -94,6 +94,8 @@ OroPlatform is an open-source platform made for rapid application development of
    <hr style="border-top: 1px dashed #fafafa;border-bottom: none;border-right: none">
 
 .. toctree::
+   :titlesonly:
+   :maxdepth: 3
    :hidden:
 
    install_upgrade/index

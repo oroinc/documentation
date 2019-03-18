@@ -10,6 +10,7 @@ The bundle provides the ability for developers to use different search engines, 
 Related Documentation
 ---------------------
 
+* :ref:`Introduction to Search Index <search_index_overview>`
 * `Configure Search <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md>`__
 * `Console Commands <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md>`__
 * `Postpone or Skip Reindexation <https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/platform_update.md>`__
