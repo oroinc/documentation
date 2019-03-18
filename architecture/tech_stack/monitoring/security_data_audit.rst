@@ -32,7 +32,7 @@ The report grid contains the following columns:
   "ORGANIZATION",":term:`Organization`, within which the change has been performed."
   "LOGGED AT","Date and time when the event was logged."
 
-.. image:: ../img/data_audit/data_audit_ex.png
+.. image:: /admin_guide/img/data_audit/data_audit_ex.png
 
 
 History of Changes
@@ -45,6 +45,6 @@ A link to a specific record's history of changes is available in the top right c
 )
 
 
-.. image:: ../../user_guide/img/data_management/view/view_history.png
+.. image:: /user_guide/img/data_management/view/view_history.png
 
     

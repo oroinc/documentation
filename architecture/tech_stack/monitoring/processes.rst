@@ -31,7 +31,7 @@ The *"All Processes"* grid contains the following details:
   "ENABLED","If set to *Yes*, the process will be executed."
   "CREATED AT","Date and time when the process was added to the system."
 
-.. image:: ../img/processes/pr_grid.png
+.. image:: /admin_guide/img/processes/pr_grid.png
 
 
 View Process Details
@@ -43,7 +43,7 @@ Click the |IcView| **IcView** on the grid to get to the
 On the View Page you can see the basic process details (as in the grid) and the **Process Triggers**, i.e. in what
 case and with what delay after the event the process will be executed.
 
-.. image:: ../img/processes/pr_view.png
+.. image:: /admin_guide/img/processes/pr_view.png
 
 
 Manage Processes
@@ -55,12 +55,5 @@ This can be done with :guilabel:`Activate` and :guilabel:`Deactivate` buttons on
 |IcActivate| icons on the  *"All Processes"* grid.
 
 
-
-.. |IcView| image:: ../../img/buttons/IcView.png
-   :align: middle
-   
-.. |IcDeactivate| image:: ../../img/buttons/IcDeactivate.png
-   :align: middle
-   
-.. |IcActivate| image:: ../../img/buttons/IcActivate.png
-   :align: middle
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

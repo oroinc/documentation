@@ -153,6 +153,40 @@ Here is an example of the configuration that disables both of these checks:
            system_requirements_check: false
            index_status_check: false
 
+Language Optimization
+^^^^^^^^^^^^^^^^^^^^^
+
+The bundle provides the ability to enable language optimization of indexation. There is only one option here:
+
+* **language_optimization** (default `false`) - use specialized language analyzers for search index based on the used language.
+
+The list of all applicable analyzers can be found in the Elasticsearch documentation. If no appropriate analyzer found then default whitespace analyzer will be used instead.
+
+Here is how language optimization may be enabled.
+
+.. code-block:: none
+    :linenos:
+
+    oro_search:
+        engine_parameters:
+            language_optimization: true
+
+To use language optimization, remove all search index and start full reindexation to fill it with data.
+
+Force Refresh
+^^^^^^^^^^^^^
+
+Elasticsearch is an asynchronous search engine, which means that data might be available with a small delay after it was scheduled for indexation. If you want to make is work synchronously, trigger the refresh operation after each reindexation request. To enable such synchronous behaviour, you should define **option force_refresh** in the engine parameters:
+
+.. code-block:: none
+    :linenos:
+
+    oro_search:
+        engine_parameters:
+            force_refresh: true
+
+Keep in mind that synchronous indexation is slower than asynchronous because the application has to wait for the reindexation to finish after every reindexation request.
+
 Index Agent and Search Engine
 -----------------------------
 
@@ -266,13 +300,113 @@ The builder gets the order-by field and the order direction from the query. If t
 `sort <http://www.Elasticsearch.org/guide/en/Elasticsearch/reference/current/search-request-sort.html>`_ parameter of a search request.
 The result is sorted by relevance by default.
 
+LimitRequestBuilder
+^^^^^^^^^^^^^^^^^^^
 
 LimitRequestBuilder
 ^^^^^^^^^^^^^^^^^^^
 
-**Class:** Oro\Bundle\ElasticSearchBundle\RequestBuilder\LimitRequestBuilder
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\LimitRequestBuilder
 
-The builder gets the first result and max results values from the query, and if they are defined they are converted into the `from/size <http://www.ElasticSearch.org/guide/en/ElasticSearch/reference/current/search-request-from-size.html>`_ pagination parameters of a search request.
+The builder gets the first result and max results values from the query, and if they are defined they are converted into the `from/size <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-request-from-size.html>`_ pagination parameters of a search request.
+
+AggregateBuilder
+^^^^^^^^^^^^^^^^
+
+**Class:** Oro\\Bundle\\ElasticSearchBundle\\RequestBuilder\\AggregateBuilder
+
+The builder gets collection of the aggregating function and the field name from the query. If they are defined, they are converted into the `aggregations <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations.html>`__ parameters of a search request. Built structure of aggregations parameters will have bucket type of aggregations, where each `bucket <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations-bucket.html>`__ is associated with a field name and a document criterion.
+
+Upgrade Standard Index From Elasticsearch 2.* / 5.* to Elasticsearch 6.*
+------------------------------------------------------------------------
+
+You can perform the upgrade either via full reindexation or via search index dump.
+
+Full Reindexation
+^^^^^^^^^^^^^^^^^
+
+This option is suitable for upgrades from version lower than 2.6, or if you have a small number of entities (fewer than a hundred thousand).
+
+Search index upgrade is a part of the `application upgrade <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`_.
+Once you have turned on maintenance mode through `app/console lexik:maintenance:lock --env=prod`, perform the following actions:
+
+1. `Stop Elasticsearch 2.\* / 5.\* <https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html>`_
+2. Modify credentials  for search engine configuration in the `config/parameters.yml` file.
+3. `Start the Elasticsearch 6.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html>`_
+
+Proceed with the `standard upgrade procedure <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`__.
+
+Search Index Dump
+^^^^^^^^^^^^^^^^^
+
+Search index dump is suitable only if you perform upgrade from version 2.6 to 3.+, and you have a large number of entities.
+The biggest advantage of this approach is that you do not need to schedule reindexation and wait until it is finished.
+
+Generating the search index dump is also a part of standard procedure of application upgrade.
+But you should note that the elastic index dump must be created from the old version of the code (2.6). So follow next step of upgrade procedure:
+
+1. Turn on maintenance mode to switch the application to the maintenance mode through:
+
+   .. code-block:: none
+      :linenos:
+
+      app/console lexik:maintenance:lock --env=prod
+
+2. Create Elastic search index dump. Consider you must do this **before** updating code to new version.
+
+   .. code-block:: none
+      :linenos:
+
+      app/console oro:elasticsearch:dump-standard-index elasticsearch6 standard-index-es6.dump --env=prod
+
+   It creates the `standard-index-es6.dump` file (in application directory) with search index dump in the `Elasticsearch bulk API <https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docs-bulk.html>`__ format which is applicable for Elasticsearch version 6.\*.
+   Here is an example:
+
+   .. code-block:: none
+      :linenos:
+
+      {"index":{"_index":"oro_search_oro_organization","_type":"oro_organization","_id":1}}
+      {"all_text":"Oro","oro_organization_owner":0,"organization":0,"name":"Oro"}
+
+3. `Stop the Elasticsearch 2.\* / 5.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html>`_.
+
+4. Proceed with `standard upgrade procedure <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`__ which includes creating needed backups and updating code to new version, updating composer dependencies (all actions required before running the update command).
+   Composer should ask you to enter value of the new parameter `search_engine_index_prefix` - put there the same value as was previously in the `search_engine_index_name` parameter.
+
+5. Then modify credentials for search engine configuration in the `config/parameters.yml` file.
+   Consider doing this **after** updating the code to the new version. Keep in mind that the new version of the application has Symfony 3 with different structure of directories.
+
+6. `Start the Elasticsearch 6.\* service <https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html>`_
+7. Execute update command from standard upgrade procedure but **pay attention** to `skip-search-reindexation` (it will prevent full reindexation start):
+
+   .. code-block:: none
+      :linenos:
+
+      bin/console oro:platform:update --skip-search-reindexation --env=prod
+
+8. Now you need to execute command which will create an empty indexes (without any data) with correct elastic search mappings:
+
+   .. code-block:: none
+      :linenos:
+
+      bin/console oro:elasticsearch:create-standard-index --env=prod
+
+
+9. Upload the dump data to the Elasticsearch 6.\* index, the Elasticsearch 6.\* bulk API, and the dump file created previously using a standard curl CLI command:
+
+   .. code-block:: none
+      :linenos:
+
+      curl -XPOST http://localhost:9200/_bulk -H 'Content-Type: application/json' --data-binary @standard-index-es6.dump > /dev/null
+
+   To speed up this process you may split the dump file into smaller chunks and upload them in parallel. In this case, each chunk has to contain an even number of lines because each document is represented by two lines in the dump file.
+
+10. Finish `standard upgrade procedure <https://oroinc.com/b2b-ecommerce/doc/current/install-upgrade/upgrade>`__.
+
+You may adjust this procedure according to your needs, but keep in mind that you need to:
+
+* Create index dump **before** upgrading to 3.+ and ensure that the Elasticsearch 2.\* / 5.\* service is running at this time;
+* Create and upload index dump during maintenance mode to avoid data loss.
 
 Troubleshooting
 ---------------

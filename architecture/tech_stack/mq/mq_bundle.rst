@@ -8,13 +8,13 @@ Message Queue Jobs and Transport Configuration
 Overview
 --------
 
-The OroMessageQueue bundle integrates OroMessageQueue component. It adds easy to use
-configuration layer, register services and tie them together, register CLI commands.
+The OroMessageQueue bundle integrates the OroMessageQueue component. It adds an easy to use
+configuration layer, register services and ties them together, registers CLI commands.
 
 Jobs
 ----
 
-The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq-component--jobs>`. So the jobs are created in the db and have a web gui where you can monitor jobs status and interrupt jobs.
+The bundle provides an entity and a web gui for :ref:`the jobs <op-structure--mq-component--jobs>`. So the jobs are created in the db and have a web gui where you can monitor the jobs' status and interrupt jobs.
 
 Usage
 -----
@@ -25,7 +25,7 @@ default. For the config settings
 .. code-block:: none
     :linenos:
 
-    # app/config/config.yml
+    # config/config.yml
 
     oro_message_queue:
         transport:
@@ -41,7 +41,7 @@ DBAL Transport
 .. code-block:: none
     :linenos:
 
-    # app/config/parameters.yml
+    # config/parameters.yml
 
         message_queue_transport: DBAL
         message_queue_transport_config: ~
@@ -97,7 +97,7 @@ Now you can start consuming messages:
 
 .. code:: bash
 
-    ./app/console oro:message-queue:consume
+    ./bin/console oro:message-queue:consume
 
 ***Note**: Add -vvv to find out what is going while you are consuming
 messages. There is a lot of valuable debug info there.*
@@ -117,7 +117,7 @@ example if a consumer was run:
 
 .. code:: bash
 
-    ./app/console oro:message-queue:consume --memory-limit=700
+    ./bin/console oro:message-queue:consume --memory-limit=700
 
 then:
 
@@ -193,7 +193,7 @@ instance has dead by any reason.
     :linenos:
 
     [program:oro_message_consumer]
-    command=/path/to/app/console --env=prod --no-debug oro:message-queue:consume
+    command=/path/to/bin/console --env=prod --no-debug oro:message-queue:consume
     process_name=%(program_name)s_%(process_num)02d
     numprocs=4
     autostart=true
@@ -201,7 +201,6 @@ instance has dead by any reason.
     startsecs=0
     user=apache
     redirect_stderr=true
-
 
 Internals
 ---------
@@ -297,7 +296,7 @@ environment.
 .. code-block:: none
     :linenos:
 
-    # app/config/config_test.yml
+    # config/config_test.yml
 
     services:
         oro_message_queue.test.message_collector:

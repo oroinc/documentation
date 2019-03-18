@@ -1,2 +1,1 @@
-[31mD:\master_laboro_dev_2.0\dev\documentation\crm\user_guide\activities\cases\create_case.rst:4: WARNING: duplicate label user-guide-activities-cases, other instance in D:\master_laboro_dev_2.0\dev\documentation\crm\user_guide\activities\cases\index.rst
-[39;49;00m
+[31;01mWARNING: The config value `api_url' has type `str', defaults to `dict'.[39;49;00m

@@ -1,11 +1,12 @@
 .. _op-structure--database:
 
-DataBase System Component
-=========================
+Database
+========
 
 .. source: wiki 29 Nov 2017
 
 .. contents:: :local:
+   :depth: 2
 
 Overview
 --------
@@ -182,7 +183,7 @@ References
 * `MySQL Documentation <https://dev.mysql.com/doc/>`_
 * `PostgreSQL Documentation <https://www.postgresql.org/docs/>`_
 * `Doctrine Extensions <https://github.com/oroinc/doctrine-extensions>`_
-* `Oro application system requirements <https://oroinc.com/orocommerce/doc/current/system-requirements>`_
+* `Oro application system requirements <https://www.oroinc.com/orocommerce/doc/current/system-requirements>`_
 * `PGTune - Configuration calculator for PostgreSQL <http://pgtune.leopard.in.ua/>`_
 * `Percona Configuration Wizard for MySQL <https://tools.percona.com/wizard/>`_ (you might need to sign it to use the wizard)
 * `PostgreSQL Performance Optimization <https://wiki.postgresql.org/wiki/Performance_Optimization>`_
