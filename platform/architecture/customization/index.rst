@@ -40,8 +40,8 @@ No two businesses are alike. Once a company acquires a new tool, it usually need
 
 .. finish_architecture_customization_index
 
-.. .. toctree::
+.. toctree::
    :includehidden:
    :maxdepth: 2
 
-..   how_to_customize
+   how_to_customize

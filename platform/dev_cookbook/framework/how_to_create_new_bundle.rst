@@ -1,3 +1,5 @@
+:orphan:
+
 .. _dev-cookbook-framework-how-to-create-new-bundle:
 
 How to Create a New Bundle

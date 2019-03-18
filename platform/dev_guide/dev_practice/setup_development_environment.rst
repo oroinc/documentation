@@ -89,7 +89,7 @@ Create a Custom Application
 Setup Application Environment
 -----------------------------
 
-Please, follow the :ref:`Step 1: Environment Setup <install-for-dev-step-1>` and :ref:`Step 2: Pre-installation Environment Configuration <install-for-dev-step-2>` of the :ref:`Installation Guide <install-for-dev>` to set up the environment for your custom application.
+Please, follow the Step 1: Environment Setup <install-for-dev-step-1 and Step 2: Pre-installation Environment Configuration <install-for-dev-step-2 of the Installation Guide <install-for-dev to set up the environment for your custom application.
 
 .. note:: If the OS on your development machine is other than CentOS, consider using a virtual machine running on CentOS to create the environment for your custom application.
 
@@ -100,7 +100,7 @@ Please, follow the :ref:`Step 1: Environment Setup <install-for-dev-step-1>` and
 Install Your Application
 ------------------------
 
-When the environment set up, follow instructions in :ref:`Step 3: OroPlatform Application Installation <install-for-dev-step-3>` and :ref:`Step 4: Post-installation Environment Configuration <install-for-dev-step-3>` sections of the :ref:`Installation Guide <install-for-dev>` to install your application.
+When the environment set up, follow instructions in Step 3: OroPlatform Application Installation <install-for-dev-step-3 and Step 4: Post-installation Environment Configuration <install-for-dev-step-3 sections of the Installation Guide <install-for-dev to install your application.
 
 .. _dev-guide-development-practice-setup-dev-env-create-bundle:
 
