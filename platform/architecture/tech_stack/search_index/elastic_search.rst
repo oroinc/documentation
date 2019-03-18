@@ -458,4 +458,3 @@ The following is the example of a valid response when the Elasticsearch is avail
     }
 
 
-

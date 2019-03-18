@@ -102,6 +102,7 @@ OroPlatform is an open-source platform made for rapid application development of
    architecture/index
    dev_guide/index
    dev_cookbook/index
+   bundles/index
    admin_guide/index
    community/index
    system_requirements
