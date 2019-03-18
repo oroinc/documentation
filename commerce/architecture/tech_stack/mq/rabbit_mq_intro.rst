@@ -1,7 +1,5 @@
 .. _op-structure--mq--rabbitmq--intro:
 
-.. _op-structure--mq--rabbitmq--intro:
-
 AmqpMessageQueue Component (Enterprise Edition Only)
 ====================================================
 
