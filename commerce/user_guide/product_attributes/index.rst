@@ -24,6 +24,8 @@ Add new product attributes to introduce new custom parameters in your product de
 
 .. note:: System attributes are shared among all product families. You can reorganize the way system attributes are grouped, but you cannot remove a product attribute from the product family.
 
+.. hint:: Instead of using one general purpose attribute (e.g., color), create multiple specific attributes (e.g., car_color, laptop_color, table_color). This prevents loading all attributes as filters on all product pages and as a result reduces the load on the database and improves the overall application performance.
+
 .. add related configuration if any
 
 .. _products--product-attributes--create:
