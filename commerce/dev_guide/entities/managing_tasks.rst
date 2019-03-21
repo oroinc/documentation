@@ -101,6 +101,15 @@ its data:
         {
             $form = $this->createForm(TaskType::class, $task);
 
+            $form->handleRequest( $request );
+
+            if ( $form->isSubmitted() && $form->isValid() ) {
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist( $vehicle );
+                $em->flush();
+            }
+            
             return array(
                 'entity' => $task,
                 'form' => $form->createView(),
