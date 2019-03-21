@@ -176,7 +176,7 @@ with OroPlatform:
             {{ parent() }}
         {% else %}
             {% set title = 'oro.ui.create_entity'|trans({ '%entityName%': 'Task' }) %}
-            {{ include('OroUIBundle::page_title_block.html.twig', { title: title }) %}
+            {% include('OroUIBundle::page_title_block.html.twig', { title: title }) %}
         {% endif %}
     {% endblock pageHeader %}
 
