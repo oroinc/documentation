@@ -8,7 +8,13 @@ Customer Groups
 In the Customer Group section, you can organize customers into groups and share the price lists, payment and tax-related settings between several customers.
 
 .. image:: /user_guide/img/customers/customer_groups/CustomerGroups.png
-   :class: with-border
+   :alt: The list of all customer groups
+
+Hover over the |IcMore| **More Options** menu to the right of the necessary customer group to perform the following actions:
+
+* |IcView| **View** customer group details. Alternatively, click on the item to open its details page.
+* |IcEdit| **Edit** customer group details.
+* |IcDelete| **Delete** existing customer groups.
 
 .. _user-guide--customer-groups--create:
 
@@ -31,37 +37,20 @@ To create a new customer group:
    The following page opens:
 
    .. image:: /user_guide/img/customers/customer_groups/CustomerGroupsCreate.png
-      :class: with-border
+      :alt: The create customer group page
 
 #. Fill in the customer **Name**.
 
 #. Select **Tax Code** that will label the customer group taxation schema.
 
-#. In the *Additional* section, select a Payment term to be used as a payment option available to the customer users during on the checkout.
+#. In the **Additional** section, select a Payment term to be used as a payment option available to the customer users during on the checkout.
 
-#. In the *Customers* section, check the customers to add them to the customer group. 
+#. In the **Customers** section, check the customers to add them to the customer group.
 
-#. In the **Price Lists** section as described in the `pricelist management <./customer-groups/pricelist>`_ section.
+#. In the **Price Lists** section as described in the :ref:`Price List Management for a Customer Group <user-guide--customers--customer-groups--pricelist>` section.
 
-#. Click **Save** in the top right corner of the page.
+#. Click **Save** in the top right corner.
 
-A new Customer Group is created.
-
-View and Filter Customer Groups
--------------------------------
-
-To view all Customer Groups, navigate to **Customers > Customer Groups** in the main menu.
-
-
-.. image:: /user_guide/img/customers/customer_groups/CustomerGroups.png
-   :class: with-border
-
-
-You can perform the following actions with every item in the Customers list:
-   
-  * `View a Customer Group details <view>`_: Click on the item to open its details page. Alternatively, hover over the |IcMore| **More Options** menu to the right of the item and click the |IcView| to open its details page.
-
- * `Edit a Customer Group details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click the |IcEdit| to start editing its details.
 
 .. _user-guide--customers--customer-groups--pricelist:
 
@@ -72,12 +61,12 @@ To configure the price list priority and controlled merge for the customer group
 
 #. Navigate to **Customers > Customer Groups** in the main menu.
 
-#. Find the necessary Customer Group in the list, hover over the |IcMore| **More Options** menu in the line and click the |IcEdit| to start editing the customer group details.
+#. Find the necessary customer group in the list, hover over the |IcMore| **More Options** menu in the line and click  |IcEdit| to start editing the customer group details.
 
-#. In the **Price Lists** section, you can build an aggregated price list for every website you have configured in OroCommerce. Use tabs to switch between the websites, e.g. Default, US, Australia, etc. in the example below.
+#. In the **Price Lists** section, you can build an aggregated price list for every website you have configured in OroCommerce. Use tabs to switch between the websites, e.g., Default, US, Australia, etc. in the example below.
 
    .. image:: /user_guide/img/customers/customer_groups/CustomerGroupsPrices.png
-      :class: with-border
+      :alt: Choose a price list for the selected website
 
    To form an aggregated price list:
 

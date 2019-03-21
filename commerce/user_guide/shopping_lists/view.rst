@@ -5,12 +5,10 @@ View Shopping List Summary
 
 .. begin_all
 
-In the management console, to view all shopping lists created in the storefront, navigate to **Sales > Shopping Lists** in the main menu.
-
+To view all shopping lists created in the storefront, navigate to **Sales > Shopping Lists** in the main menu.
 
 .. image:: /user_guide/img/sales/shopping_lists/SL_grid.png
-   :class: with-border
-
+   :alt: The list of all shopping lists available in the system
 
 Here, you can perform the following actions:
 
@@ -21,11 +19,6 @@ Here, you can perform the following actions:
 3. **Refresh**: Click |IcRedo| to reload the information about the items. If another user recently updated the item details, these changes are reflected upon the refresh.
 4. **Reset**: Click |IcReset| to roll back the view per page, filters and columns configuration to the default values.
 5. **Manage columns**: Open the **Grid Settings** by clicking |IcConfig| to see the list of columns that organize the item details. To reorder the columns, click and hold the column name, then drag it to the new location. Toggle on and off the column show option using the **Show** check box.
-
-   .. image:: /user_guide/img/getting_started/ui_components/manage_columns.png
-      :width: 40%
-      :class: with-border
-
 6. **View per page**: In the list, select the number of items to be displayed per page. Available options are 10, 25, 50, and 100.
 
 .. note:: To handle significant volume of data, use page switcher, increase *View Per Page* or use filters to narrow down the list to the information you need.
@@ -42,7 +35,7 @@ To view a specific shopping list in the management console:
 
    After you click on the shopping list, shopping list details page opens.
 
-3. In the *General* section, you can find the following information:
+3. In the **General** section, you can find the following information:
 
    * Shopping List ID
    * Customer
@@ -50,38 +43,43 @@ To view a specific shopping list in the management console:
    * Label
    * Notes
 
-4. In the *Shopping List Line Items* section, you can review the details of line items added to the shopping list (products, quantity, unit) and notes to the line items, if any.
+4. In the **Shopping List Line Items** section, you can review the details of line items added to the shopping list (products, quantity, unit) and notes to the line items, if any.
 
    .. image:: /user_guide/img/sales/shopping_lists/ShoppingListsViewPageLineItems.png
-      :class: with-border
+      :alt: The shopping list details specified in the Shopping List Line Items section
 
    You can perform the following actions to the items:
 
-   * To view complete details of the product that is added to the shopping list, click |IcView|.
-   * To modify details of the product added as a line item to the shopping list, click |IcEdit|.
-   * To remove a line item from the shopping list, click |IcDelete|.
+   * |IcView| View complete details of the product that is added to the shopping list.
+   * |IcEdit| Modify details of the product added as a line item to the shopping list.
+   * |IcDelete| Remove a line item from the shopping list.
 
    To simplify managing the line items, use actions described in the `View Shopping List Summary`_.
 
-5. The *Totals* section displays the aggregated amounts, like subtotal, tax, discount, and the total amount that is due for payment of the items in the shopping list. OroCommerce automatically recalculates these amounts when new items are edited in, added to or removed from the shopping list.
+5. The **Totals** section displays the aggregated amounts, like subtotal, tax, discount, and the total amount that is due for payment of the items in the shopping list. OroCommerce automatically recalculates these amounts when new items are edited in, added to or removed from the shopping list.
 
    .. image:: /user_guide/img/sales/shopping_lists/ShoppingListsViewPageTotals.png
-      :class: with-border
+      :alt: The shopping list amount details specified in the Totals section
 
-6. The *Marketing Activity* section shows any activity of this kind associated with the shopping list.
+6. The **Sales Orders** section displays all orders converted from this shopping list. Click a required order to get redirected to the order details page.
+
+   .. image:: /user_guide/img/sales/shopping_lists/sl_sales_orders.png
+      :alt: The shopping list orders details specified in the Sales Orders section
+
+7. The **Marketing Activity** section shows any activity of this kind associated with the shopping list.
 
 Manage a Shopping List
 ----------------------
 
-From the Shopping List view page, you can perform the following actions for the shopping list:
+From the shopping list view page, you can perform the following actions for the shopping list:
 
 .. contents:: :local:
 
 .. image:: /user_guide/img/sales/shopping_lists/ShoppingListsViewPage.png
-   :class: with-border
+   :alt: The actions you can perform from the shopping list view page
 
-Add a Line Item from the Shopping List
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Add a Line Item to the Shopping List
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To add a line item to the shopping list:
 
@@ -101,7 +99,7 @@ To add a line item to the shopping list:
     * *Notes*: Enter additional information for the product, if necessary.
 
     .. image:: /user_guide/img/sales/shopping_lists/SLAddLineItem.png
-       :class: with-border
+       :alt: Click Add Line Item to trigger the popup form
 
 Remove a Line Item from the Shopping List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,7 +133,7 @@ The copy of the shopping list is created. You can now modify it or convert it in
 Create an Order from the Shopping List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-On the Shopping List view page, click **Create Order**.
+On the shopping list view page, click **Create Order**.
 
 See :ref:`Create an order from the shopping list <user-guide--sales--orders--create--from-shopping-lists>` for detailed guidance.
 
