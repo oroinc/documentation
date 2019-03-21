@@ -101,7 +101,7 @@ Explore OroCommerce Unregistered
 
 In the following topics, you can find answers to the next questions:
 
-* :ref:`How do I create a RFQ if I am browsing as a guest <frontstore-guide--rfq--guests>`?
+* :ref:`How do I create an RFQ if I am browsing as a guest <frontstore-guide--rfq--guests>`?
 * :ref:`How can I place an order if I am not registered <frontstore-guide--orders-quick-order>`?
 * :ref:`How can I create and manage shopping lists as a guest user <frontstore-guide--shopping-lists-guest>`?
 
