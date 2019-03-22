@@ -5,7 +5,7 @@ Configure Product Options per Website
 
 .. begin
 
-To customize the default product inventory options per website:
+To customize the default product options per website:
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
@@ -15,11 +15,12 @@ To customize the default product inventory options per website:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/inventory/product_options_new_web.png
-       :class: with-border
+   .. image:: /admin_guide/img/configuration/inventory/product_options_website.png
+      :alt: Product options configuration per website
 
-   The following table describes the options available on the page:
-   
+Here, you can manage both inventory and upcoming products options.
+
+**Product Inventory Options**
    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Name                    | Description                                                                                                                                                                                                                                                                                |
    +=========================+============================================================================================================================================================================================================================================================================================+
@@ -35,6 +36,10 @@ To customize the default product inventory options per website:
    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | Low Inventory Threshold | The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the storefront.                                                                                                                                                 |
    +-------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+**Upcoming Products**
+
+**Hide Labels Past Availability Date** - When enabled, the label for the upcoming products will be removed automatically once the availability date has passed. If the option is disabled, the label will remain displayed as long as the product is marked as upcoming regardless of its availability date.
 
 3. To customize any of these options:
 
