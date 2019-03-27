@@ -20,6 +20,7 @@ In Customer Users section, you can:
 * View additional information attached to customer user.
 * Enable and disable the customer.
 * Reset the customer user password.
+* Add OAuth applications
 
 .. note:: You can delegate this function to the customer who will access user and role management in the OroCommerce storefront (see the :ref:`Delegating Users and Role Management to the Customer <user-guide--customers--customer-user-delegate>` section for more information).
 
@@ -81,7 +82,7 @@ To create a new customer user:
 View Accepted Consents
 ----------------------
 
-When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**. 
+When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**.
 
  .. image:: /admin_guide/img/workflows/checkout_with_consents/consents_section_customer_user_page.png
 
@@ -113,6 +114,37 @@ Import Customer User Details
 
 You can import the bulk details of updated or processed customer user information in the .csv format following the steps described in the :ref:`Importing Customer Users <import-customer-users>` guide.
 
+.. _user-guide--customers--customer-users--oauth:
+
+Add OAuth Applications
+----------------------
+
+.. include:: /getting_started/my_oro/oauth.rst
+   :start-after: begin_1
+   :end-before: finish_1
+
+Oro Side: Add an Application
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To add a new OAuth application for a customer user in the management console:
+
+1. Navigate to **Customers > Customer Users** in the main menu.
+2. Click once on the name of your selected customer user to open their details page.
+3. In the **OAuth Applications** section, click **Add Application** and provide the following details in the pop-up dialog:
+
+   * **Organization** --- If you are adding an application within the organization with *global* access, you can select which other available organization to add the application to.
+   * **Application Name** --- Provide a meaningful name for the application you are adding.
+   * **Active** --- Select the **Active** check box to activate the new application.
+
+4. Click **Create**.
+
+.. include:: /getting_started/my_oro/oauth.rst
+   :start-after: begin_2
+   :end-before: finish_2
+
+**Related Articles**
+
+* :ref:`Add OAuth Applications to Oro Management Console <user-guide-my-profile-oauth>`
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
