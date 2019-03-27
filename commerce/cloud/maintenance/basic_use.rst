@@ -3,7 +3,7 @@
 Maintenance Commands
 ====================
 
-Once you are connected to the OroCloud server you can run a series of maintenance commands to handle the following maintenance operations:
+Once you are connected to the OroCloud server you can run a series of maintenance commands.
 
 .. contents:: :local:
    :depth: 2
@@ -16,7 +16,7 @@ To list the available OroCloud maintenance management commands, run `orocloud-cl
 .. warning:: OroCloud maintenance commands may affect the application performance. Please use them with extreme care and contact the OroCloud or Oro Support team for any questions.
 
 Locks
-^^^^^
+-----
 
 Any time the `orocloud-cli` command runs with any argument or options, the maintenance agent is locked to prevent simultaneous execution of itself. This is required to avoid cases when different users may execute commands that may lead to environment corruption, e.g. when different users run `deploy` and `upgrade` at the same time. If this happens, a warning message is displayed.
 
@@ -40,12 +40,14 @@ As an example:
 .. note:: When the currently running command has finished or stopped with a warning or a notice, the maintenance agent is automatically unlocked.
 
 Deploy
-^^^^^^
+------
 
-To deploy Oro application in the OroCloud environment with default installation parameters, run the `orocloud-cli deploy` command
+To deploy Oro application in the OroCloud environment with default installation parameters, run the `orocloud-cli deploy` command.
+
+.. note:: If the application is already deployed the command execution is restricted. Please contact the OroCloud or Oro Support team in case full re-deploy from scratch is required.
 
 Upgrade
-^^^^^^^
+-------
 
 During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from new tag or branch) and runs the `oro:platform:update` command to launch upgrade and any data migrations.
 
@@ -55,7 +57,7 @@ To upgrade an Oro application, you can use the following modes:
 
 .. contents:: :local:
 
-.. warning:: With the rolling upgrade, source upgrade the Oro application is not forced into the maintenance mode; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually these are upgrades to minor versions.
+.. warning:: With the rolling upgrade, source upgrade the Oro application is not forced into the maintenance mode from the very beginning; it runs and stays available for users during the entire upgrade process. This method is safe only when the database does not change during the upgrade, or the versions before and after the upgrade are compatible with the old and new database structure simultaneously. Usually these are upgrades to minor versions.
 
 Upgrade With Downtime
 ~~~~~~~~~~~~~~~~~~~~~
@@ -79,10 +81,10 @@ This command executes the following operations:
 
 Once the cache warmup is complete, the maintenance mode is turned off and the upgraded application is ready for use.
 
-Upgrade With Zero Downtime (Rolling Upgrade)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrade With Minimal Downtime (Rolling Upgrade)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To perform Oro application upgrade with zero downtime, run the `upgrade:rolling` command:
+To perform Oro application upgrade with minimal downtime, run the `upgrade:rolling` command:
 
 .. code-block:: none
     :linenos:
@@ -91,7 +93,7 @@ To perform Oro application upgrade with zero downtime, run the `upgrade:rolling`
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the `1.6 <https://github.com/oroinc/orocommerce-application/tree/1.6>`_ branch or the `1.6.1 <https://github.com/oroinc/orocommerce-application/tree/1.6.1>`_ tag).
 
-This command does not enable maintenance mode. In the normal operation mode, this command executes the following operations:
+This command enables maintenance mode just for switching between the previous and the new application versions (in most cases, it takes approximately 10 seconds). In the normal operation mode, this command executes the following operations:
 
 1. Checks out the code from a tag or branch of the configured repository
 #. Installs the external dependencies via the composer install
@@ -99,10 +101,10 @@ This command does not enable maintenance mode. In the normal operation mode, thi
 #. Launches a `cache warmup`
 #. Restarts the related services (consumers, cron, WebSocket, etc).
 
-Upgrade With Zero Downtime (Source Upgrade)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Upgrade With Minimal Downtime (Source Upgrade)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To perform Oro application upgrade with zero downtime, run the `upgrade:source` command:
+To perform Oro application upgrade with minimal downtime, run the `upgrade:source` command:
 
 .. code-block:: none
     :linenos:
@@ -111,16 +113,16 @@ To perform Oro application upgrade with zero downtime, run the `upgrade:source` 
 
 .. note:: You will be prompted to enter a tag or branch to clone the application source file. Use valid tag or branch from the Oro application repository (for example, the `1.6 <https://github.com/oroinc/orocommerce-application/tree/1.6>`_ branch or the `1.6.1 <https://github.com/oroinc/orocommerce-application/tree/1.6.1>`_ tag).
 
+This command enables maintenance mode just for switching between previous and new application version (in most cases this step takes approximately 10 second).
 The purpose of this command is to deploy code changes (without updating dependencies) as quickly as possible.
 The difference between this command and original upgrade:
 
-1. dependencies are not updated
+1. dependencies are not updated (unless the `composer.lock` has not changed)
 #. oro:platform:update is not executed
 #. cache:clear is executed optionally (add option skip-cache-rebuild if you do not need to rebuild cache with the new release)
 
-
 Backup
-^^^^^^
+------
 
 Once you start using Oro application, you can set up a regular backup process.
 
@@ -165,9 +167,6 @@ If the list is longer than one page, use the optional *page* parameter to switch
 
 By default, the command returns 25 backup records per page. To modify the number of records per page, use the optional *per-page* parameter (e.g. *per-page=50*).
 
-Restore
-^^^^^^^
-
 Restore Everything
 ~~~~~~~~~~~~~~~~~~
 
@@ -185,9 +184,9 @@ The command enables the maintenance mode and restores the application. Once rest
 .. _orocloud-maintenance-use-sanitized-backup:
 
 Create a Sanitized Backup
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To share the sanitized data with the OroCloud and OroSupport team, create a sanitized backup using the following command: 
+To share the sanitized data with the OroCloud and OroSupport team, create a sanitized backup using the following command:
 
 .. code-block:: none
     :linenos:
@@ -266,11 +265,15 @@ Sometimes you may require to clear the application cache (for example, after app
 
 * `--force` is optional, it allows to skip execution confirmation.
 * `--skip-session-flush` is optional, it allows to skip session data deletion (e.g. logged-in users are not logged out after command completion).
+* `--cleanup-existing-cache` is optional, it allows to physically cleanup the existing cache and rebuild the new one from scratch (confirmation will be required).
+* `--force-cleanup-existing-cache` is optional, it allows to skip confirmation when using the `--cleanup-existing-cache` option.
+
+.. note:: When the option `--cleanup-existing-cache` is used the maintenance mode will be enabled.
 
 Media Upload
--------------
+------------
 
-Sometimes you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files e.g. ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
+Sometimes you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files e.g. ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
 
 Usage examples:
 
@@ -405,3 +408,92 @@ The following command transfers media files from the `~/media` directory into th
 .. note:: The files in the source directory always overwrite the same files in the destination directory.
 
 .. note:: Please always use `undescores` instead of `spaces` in the `source` directory name.
+
+RabbitMQ Commands
+-----------------
+
+The RabbitMQ commands allows to list vhosts, queues, messages in queue, and to purge any queue.
+
+RabbitMq List
+~~~~~~~~~~~~~
+
+To view the messages list of the RabbitMQ, use the `rabbitmq:queue:list` command.
+
+.. code-block:: none
+    :linenos:
+
+    rabbitmq:queue:list [options] [--] [<vhost> [<queue>]]
+
+* `vhost` argument is required, RabbitMQ vhost name, e.g. `oro`.
+* `queue` argument is required, RabbitMQ queue name, e.g. `oro.default`.
+
+To get the list of available ``vhost`` values, please execute `rabbitmq:queue:list` without arguments, for example:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli rabbitmq:queue:list
+
+.. code-block:: none
+    :linenos:
+
+    The argument 'vhost' is missing. Please provide one.
+
+    +------------+---------+
+    | vhost name | message |
+    +------------+---------+
+    | "oro"      | "2"     |
+    | "/"        | ""      |
+    +------------+---------+
+    [localhost] Total 2 item(s), 1 page(s). Current page: 1, items per page: 25.
+
+To get the list of available ``queue`` values, please execute `rabbitmq:queue:list` with the ``vhost`` argument only, for example:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli rabbitmq:queue:list oro
+
+.. code-block:: none
+    :linenos:
+
+    The argument 'queue' is missing. Please provide one.
+    +---------------+---------+
+    | queue name    | message |
+    +---------------+---------+
+    | "oro.default" | "3"     |
+    +---------------+---------+
+
+To get the list of messages, please execute the `rabbitmq:queue:list` with the ``vhost`` and ``queue`` arguments, for example:
+
+.. code-block:: none
+    :linenos:
+
+    orocloud-cli rabbitmq:queue:list oro oro.default
+
+.. code-block:: none
+    :linenos:
+
+    +------------------------+---------+----------------------------------------------------+-------------+
+    | routing key            | message | payload                                            | redelivered |
+    +------------------------+---------+----------------------------------------------------+-------------+
+    | "oro.cron.run_command" | "0"     | "{"command":"oro:cron:imap-sync","arguments":[]}"  | "True"      |
+    +------------------------+---------+----------------------------------------------------+-------------+
+    [localhost] Total 1 item(s), 1 page(s). Current page: 1, items per page: 25.
+
+.. note:: The messages list is limited to 1000 records.
+
+RabbitMq Purge
+~~~~~~~~~~~~~~
+
+To purge the messages from the RabbitMQ,  use the `rabbitmq:queue:purge` command.
+
+.. code-block:: none
+    :linenos:
+
+    rabbitmq:queue:purge [options] [--] [<vhost> [<queue>]]
+
+* `vhost` argument is required, RabbitMQ vhost name, e.g. `oro`.
+* `queue` argument is required, RabbitMQ queue name, e.g. `oro.default`.
+
+.. note:: The ``vhost`` and ``queue`` argument values can be retrieved with the `rabbitmq:queue:list` command.
