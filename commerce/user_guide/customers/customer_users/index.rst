@@ -49,7 +49,7 @@ Upon registration, a customer user receives an email confirmation request. Once 
 View Accepted Consents
 ~~~~~~~~~~~~~~~~~~~~~~
 
-When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**. 
+When at least one consent to process personal data has been accepted by a customer user in the storefront, you can view this information in the dedicated **Consents** section on the page of a particular customer user under **Customers > Customer Users**.
 
  .. image:: /admin_guide/img/workflows/checkout_with_consents/consents_section_customer_user_page.png
 
