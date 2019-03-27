@@ -65,6 +65,8 @@ To create a new customer user:
 
 #. Select the website the customer user will be redirected to upon the login. See :ref:`Managing Websites <user-guide--system-websites>` for more information.
 
+#. Select a **Preferred Localization** for the customer user. This field is displayed if more than one :ref:`localization <sys--config--sysconfig--general-setup--localization>` is enabled for any of the websites of the current organization. If you change the website for the customer user, you will need to select a new preferred localization.
+
 #. Add billing and shipping address as described in the :ref:`Address Book <user-guide--getting-started--address-book>` section.
 
 #. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See :ref:`Managing Customer User Roles <user-guide--customers--customer-user-roles>` for more information.

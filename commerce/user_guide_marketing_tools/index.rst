@@ -3,12 +3,6 @@
 User Guide: Marketing
 =====================
 
-.. contents::
-   :local:
-
-Before You Begin
-----------------
-
 OroCommerce embedded marketing activities use the following basic concepts:
 
 * :ref:`Marketing Lists <user-guide-marketing-lists>`
