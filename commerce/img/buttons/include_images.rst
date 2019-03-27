@@ -487,4 +487,7 @@ Images
 
    <i class="fa fa-clock-o" aria-hidden="true"></i>
 
+.. |IcCopy| raw:: html
+
+   <i class="fa fa-copy" aria-hidden="true"></i>
 

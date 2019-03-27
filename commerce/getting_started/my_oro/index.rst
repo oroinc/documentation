@@ -18,8 +18,6 @@ Follow the links below to find out what capabilities each section of this menu o
 
 
 
-
-
 .. toctree::
    :maxdepth: 1
    :hidden: 
@@ -27,6 +25,11 @@ Follow the links below to find out what capabilities each section of this menu o
    my_user_page
    my_user_emails
    my_user_menus_config
+   explore
+   generate_api
+   oauth
+   outlook_addin
+   password
 
  
 
