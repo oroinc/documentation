@@ -191,6 +191,10 @@ Webserver configuration can be modified, as illustrated below:
               - '127.0.0.2'
             deny:
               - 'all'
+        blackfire_options:
+          agent_enabled: true
+          server_id: '<server-id>'
+          server_token: '<server-token>'
 
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
@@ -238,7 +242,7 @@ The sanitize configuration is grouped under the `sanitize` node and supports the
             update_override_rules:
               - '{ table: oro_integration_transport, columns: [{name: api_key, method: md5},{name: api_user, method: md5},{name: api_token, method: md5}] }'
             custom_email_domain: 'example.com'
-    
+
 General Conventions
 ^^^^^^^^^^^^^^^^^^^
 
