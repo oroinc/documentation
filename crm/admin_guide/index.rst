@@ -84,7 +84,7 @@ This section provides a reference for the settings accessible via the **System**
                    <li><a class="reference internal" href="workflows">Workflows</a></li>
                    <li><a class="reference internal" href="localization">Localization and Translations</a></li>
                    <li><a class="reference internal" href="menu">Menus Configuration</a></li>
-                   <li><a class="reference internal" href="multi-currency">Multi-Currency</a></li>
+                   <li><a class="reference internal" href="multi_currency">Multi-Currency</a></li>
                 </ul>
           </div>
       </div>

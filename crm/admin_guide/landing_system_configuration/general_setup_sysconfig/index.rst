@@ -21,6 +21,5 @@ Learn how to configure localization options, currency and tracking, as well and 
    upload_settings
    upload_settings_globally
    display_settings
-   global_currency
    user_settings
    application_settings
