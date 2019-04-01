@@ -19,7 +19,7 @@ The following categories of settings are available for system configuration at o
     * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings--organization>`
     * :ref:`Display Settings <configuration--general-setup--display-settings--organization>`
     * :ref:`Email Configuration <admin-configuration-email-configuration-organization>`
-    * :ref:`Currency <sys--config--sysconfig--general-setup--currency-organization>`
+    * :ref:`Currency <admin-configuration-currency-org>`
     * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization>`
 
   * Integrations
