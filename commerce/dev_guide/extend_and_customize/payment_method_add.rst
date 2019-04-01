@@ -300,7 +300,7 @@ When you add an integration via the user interface of the management console, a 
                    [
                        'label' => 'acme.collect_on_delivery.settings.labels.label',
                        'required' => true,
-                       'constraints' => [new NotBlank()],
+                       'entry_options' => ['constraints' => [new NotBlank()]],
                    ]
                )
                ->add(
@@ -309,7 +309,7 @@ When you add an integration via the user interface of the management console, a 
                    [
                        'label' => 'acme.collect_on_delivery.settings.short_labels.label',
                        'required' => true,
-                       'constraints' => [new NotBlank()],
+                       'entry_options' => ['constraints' => [new NotBlank()]],
                    ]
                );
        }
