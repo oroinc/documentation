@@ -167,6 +167,13 @@ Download MS Outlook Add-in
 
  More information on how to setup :ref:`MS Outlook Integration <admin-configuration-ms-outlook-integration-settings>` is available in the relevant MS Outlook Integration topic in the Oro documentation library.
 
+Add OAuth Applications
+----------------------
+
+.. include:: /user_guide/my_oro/oauth.rst
+   :start-after: begin
+   :end-before: finish
+
 **Related Topics**
 
 * :ref:`Activities <user-guide-activities>`

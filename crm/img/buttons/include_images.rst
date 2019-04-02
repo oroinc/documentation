@@ -458,3 +458,6 @@ Images
 .. |InstallPack| image:: /admin_guide/img/extension/install_package.png
    :align: middle
 
+.. |IcCopy| raw:: html
+
+   <i class="fa fa-copy" aria-hidden="true"></i>
