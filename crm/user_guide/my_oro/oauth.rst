@@ -3,9 +3,7 @@
 Add OAuth Applications
 ----------------------
 
-.. this topic is included into customer_uses/index
-
-.. begin_1
+.. begin
 
 Oro applications support oAuth 2.0 credentials authorization grant type to enable connection of third-party applications to the web API. To connect a third-party application, you need to add it and configure its pre-generated credentials in the management console of your Oro application. These credentials are managed on user level which enables generation of different credentials for various applications across multiple organizations.
 
@@ -19,8 +17,6 @@ To be able to add an OAuth application, make sure that you `generate <https://oa
           *OAuth authorization is not available as encryption keys configuration was not complete. Please contact your administrator.*
 
 .. Install OAuth extension from Oro Marketplace <link> (3.1).
-
-.. finish_1
 
 Oro Side: Add an Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -46,7 +42,6 @@ To add a new OAuth application in the management console:
 
 A corresponding notification is sent to your primary email address. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
 
-.. begin_2
 
 Once the application is created, you are provided with a Client ID and a Client Secret. Click on the |IcCopy| icon to copy the credentials to the clipboard.
 
@@ -92,11 +87,7 @@ To configure machine-to-machine authentication and retrieve the access token:
 
    .. note:: Access tokens for backend and frontend API are not interchangeable. If you attempt to request data for the frontend API with a token generated for the backend application (i.e., a management console user), access will be denied.
 
-.. finish_2
-
-**Related Articles**
-
-* :ref:`Add OAuth Applications to OroCommerce Storefront <user-guide--customers--customer-users--oauth>`
+.. finish
 
 
 .. include:: /img/buttons/include_images.rst

@@ -72,7 +72,7 @@ To create a new customer user:
 
 #. In the **Roles** section, select the roles that should apply to the customer user. When several roles are selected, granted permissions are accumulated from all the assigned roles. See :ref:`Managing Customer User Roles <user-guide--customers--customer-user-roles>` for more information.
 
-   .. important:: At least one role must be assigned if the **Enabled** check box is selected. Disabled customer users can be saved without roles, but you will need to assign roles to the them later before enabling.
+   .. important:: At least one role must be assigned if the **Enabled** check box is selected. Disabled customer users can be saved without roles, but you will need to assign roles to them later before enabling.
 
 #. Click **Save** on the top right.
 
@@ -137,6 +137,8 @@ To add a new OAuth application for a customer user in the management console:
    * **Active** --- Select the **Active** check box to activate the new application.
 
 4. Click **Create**.
+
+A corresponding notification is sent to your primary email address. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
 
 .. include:: /getting_started/my_oro/oauth.rst
    :start-after: begin_2
