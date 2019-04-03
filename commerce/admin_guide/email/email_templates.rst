@@ -596,7 +596,6 @@ On top of functions, you can use filters in email templates. The full set of the
 * `trim <https://twig.symfony.com/doc/2.x/filters/trim.html>`_
 * `upper <https://twig.symfony.com/doc/2.x/filters/upper.html>`_
 * `oro_html_sanitize <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md#oro_html_sanitize>`_
-* `oro_html_strip_tags  <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md#oro_html_strip_tags>`_
 * `oro_format <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76>`_
 * `oro_format_address <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md#oro_format_address>`_
 * `oro_format_date <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L122>`_
