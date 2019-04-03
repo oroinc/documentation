@@ -53,7 +53,7 @@ Please install Opcache php-extension and configure it in the following way:
       opcache.enable=1
       opcache.enable_cli=0
       opcache.memory_consumption=512
-      opcache.max_accelerated_files=32531
+      opcache.max_accelerated_files=65407
       opcache.interned_strings_buffer=32
       #http://symfony.com/doc/current/performance.html
       realpath_cache_size=4096K
