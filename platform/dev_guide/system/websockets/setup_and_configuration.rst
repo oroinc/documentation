@@ -61,7 +61,7 @@ Below you can find an example of this kind of configuration adjustment for **Ngi
             proxy_set_header X-NginX-Proxy true;
             proxy_set_header X-Forwarded-Proto $scheme;
 
-            proxy_pass http://127.0.0.1:8080/;
+            proxy_pass http://127.0.0.1:8080/$is_args$args;
             proxy_redirect off;
             proxy_read_timeout 86400;
 
