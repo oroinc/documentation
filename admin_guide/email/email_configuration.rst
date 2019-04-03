@@ -10,6 +10,12 @@ The following guide will introduce you to the email feature settings and
 provide instructions on how to configure personal and system mailboxes,
 and integrate with Google, MS Exchange and Outlook.
 
+.. note:: See a short demo on `how to create and manage emails <https://www.orocrm.com/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://www.orocrm.com/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
+
+   .. raw:: html
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
+      
 Email feature configuration
 ---------------------------
 
@@ -134,7 +140,7 @@ To configure a personal mailbox:
 
 
 
-Configuring IMAP/SMPT 
+Configuring IMAP/SMTP 
 ^^^^^^^^^^^^^^^^^^^^^
 
 IMAP and SMTP are protocols used for mail delivery.
