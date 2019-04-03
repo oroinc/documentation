@@ -30,7 +30,7 @@ users you have to enable ACLs for these entities using the ``@Config`` annotatio
      * @Config(
      *     defaultValues={
      *         "security"={
-     *             "type"="acl",
+     *             "type"="ACL",
      *             "group_name"=""
      *         }
      *     }
