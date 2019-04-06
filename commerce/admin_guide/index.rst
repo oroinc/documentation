@@ -3,47 +3,8 @@
 Administrator Guide
 ===================
 
-Administration
---------------
-
-This section groups the guidance and reference information on hardware and software configuration for Oro application components, users and roles management (including the data and access level restrictions), and system monitoring tools.
-
-.. raw:: html
-
-   <div class="guideline">
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          <a class="reference internal" href="op-structure"><span class="std std-ref"><i class="fa fa-wrench fa-lg" aria-hidden="true"></i><br>System Components Administration</span></a></h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          <a class="reference internal" href="user-management"><span class="std std-ref"><i class="fa fa-users fa-lg" aria-hidden="true"></i><br>User, Role and Access Management</span></a></h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-          <h3>
-          <a class="reference internal" href="monitoring"><span class="std std-ref"><i class="fa fa-heartbeat fa-lg" aria-hidden="true"></i><br>Monitoring and Healthcheck</span></a></h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-          </div>
-      </div>
-
-   </div>
-
-
-Fundamental Configuration Settings
-----------------------------------
+System Configuration Settings
+-----------------------------
 
 The Configuration section of Administrator Guide walks your through all post-install configuration settings of the Oro application. In particular, you will learn how to set up general system configuration options, as well as settings specific for Commerce, CRM, and marketing.
 
@@ -52,7 +13,7 @@ The Configuration section of Administrator Guide walks your through all post-ins
 
 .. <iframe width="560" height="315" src="https://www.youtube.com/embed/BxyzaOXwo0k" frameborder="0" allowfullscreen></iframe>
 
-Settings in Oro application can be managed on multiple configuration levels. Throughout the configuration guide, these levels are marked with the corresponding icons to help you navigate through the settings which are accessible via the **System > Configuration** menu and **Configuration** menu of the organization, website, and user.
+Settings in Oro application can be managed on multiple configuration levels. Click on the links below to learn more about the settings accessible via the **System > Configuration** menu and **Configuration** menu of the organization, website, and user.
 
 .. raw:: html
 
@@ -86,8 +47,8 @@ Settings in Oro application can be managed on multiple configuration levels. Thr
    </div>
 
 
-Advanced Configuration Settings
--------------------------------
+System Settings
+---------------
 
 This section provides a reference for the settings accessible via the **System** menu (other than **System > Configuration**).
 
@@ -122,14 +83,27 @@ This section provides a reference for the settings accessible via the **System**
 
       <div class="guideline__item" >
           <div style="text-align: center">
+            <h3><i class="guideline__icon fa fa-users"></i><br>Administration<br>Settings</h3>
+          </div>
+          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
+               <ul class="guideline__list">
+                   <li><a class="reference internal" href="user_management">User, Role and Access Management</a></li>
+                   <li><a class="reference internal" href="integrations">Integrations</a></li>
+                   <li><a class="reference internal" href="workflows">Workflows</a></li>
+                </ul>
+          </div>
+      </div>
+
+      <div class="guideline__item" >
+          <div style="text-align: center">
             <h3><i class="guideline__icon fa fa-gear"></i><br>Other <br>Configuration</h3>
           </div>
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                   <li><a class="reference internal" href="integrations">Integrations</a></li>
-                   <li><a class="reference internal" href="workflows">Workflows</a></li>
                    <li><a class="reference internal" href="entities">Entity Management</a></li>
                    <li><a class="reference internal" href="email">Email Configuration</a></li>
+                   <li><a class="reference internal" href="contact_reasons">Contact Reasons</a></li>
+                   <li><a class="reference internal" href="tags_management">Tags and Taxonomies</a></li>
                 </ul>
           </div>
       </div>
@@ -140,8 +114,6 @@ This section provides a reference for the settings accessible via the **System**
    :hidden:
    :maxdepth: 1
 
-   op_structure/index
-   monitoring/index
    config_levels/index
    landing_system_configuration/index
    landing_commerce/index

@@ -61,7 +61,7 @@ Below you can find an example of this kind of configuration adjustment for **Ngi
             proxy_set_header X-NginX-Proxy true;
             proxy_set_header X-Forwarded-Proto $scheme;
 
-            proxy_pass http://127.0.0.1:8080/;
+            proxy_pass http://127.0.0.1:8080/$is_args$args;
             proxy_redirect off;
             proxy_read_timeout 86400;
 
@@ -145,8 +145,8 @@ If you use untrusted SSL certificate, configure websocket_backend_ssl_context_op
  .. code-block:: yaml
      
     websocket_backend_ssl_context_options:
-    verify_peer: false
-    verify_peer_name: false
+        verify_peer: false
+        verify_peer_name: false
 
 .. warning:: Please keep in mind that having peer verification disabled is not recommended in production.
 

@@ -20,19 +20,14 @@ This section of the configuration guide introduces you to the general applicatio
       <div class="guideline__item">
           <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
                <ul class="guideline__list">
-                     
-                     <li><a class="reference internal" href="general-setup-sysconfig/application-settings#admin-configuration-application"><span class="std std-ref">Application Settings</span></a></li>
 
+                     <li><a class="reference internal" href="general-setup-sysconfig/application-settings#admin-configuration-application"><span class="std std-ref">Application Settings</span></a></li>
                      <li><a class="reference internal" href="../localization"><span class="std std-ref">Localization</span></a><i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
-
-                     <a class="reference internal" href="general-setup-sysconfig/global_currency"><span class="std std-ref">Currency</span></a>
-
+                     <a class="reference internal" href="../multi_currency/configure_currency"><span class="std std-ref">Currency</span></a>
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i></li>
                      <li>
-
                      <a class="reference internal" href="general-setup-sysconfig/display_settings"><span class="std std-ref">Display Settings</span></a>
-
                       <i class="fa fa-building-o fa-lg" aria-hidden="true" ></i> <i class="fa fa-globe" aria-hidden="true" ></i> <i class="fa fa-user-o fa-lg" aria-hidden="true" ></i></li>
                     </ul>
           </div>

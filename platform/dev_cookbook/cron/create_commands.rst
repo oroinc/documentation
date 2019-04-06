@@ -5,7 +5,7 @@ Create Scheduled Commands in OroPlatform
 
 A scheduled command in OroPlatform is a regular Symfony console command that implements additional `CronCommandInterface <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php>`__ and has the **oro:cron** namespace.
 
-Implementing *CronCommandInterface* requires the implementation of the 
+Implementing *CronCommandInterface* requires the implementation of the
 `getDefaultDefinition() <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php#L14>`__ method. It returns the `crontab compatible <http://www.unix.com/man-page/linux/5/crontab/>`_ description of when the command should be executed. For example, if a command should run every day five minutes after midnight, the appropriate
 value is **5 0 \* \* \***.
 

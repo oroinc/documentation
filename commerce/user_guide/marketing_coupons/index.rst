@@ -15,7 +15,7 @@ The following topics will explore how to create, generate and manage coupons in 
 * :ref:`Sample Coupon Generation <user-guide--marketing--promotions--coupons--sample>`
 * :ref:`Export Coupons <export-bulk-items>`
 * :ref:`Import Coupons <import-coupons>`
-* :ref:`Review the FQAs <user-guide--marketing--promotions--issues>`
+* :ref:`Review the FAQs <user-guide--marketing--promotions--issues>`
 
 .. note:: You can check out `how to create coupons and link them to promotions <https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions>`__ in our media library.
 

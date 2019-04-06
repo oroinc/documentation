@@ -1,15 +1,15 @@
 .. _user-guide--marketing--web-catalog--root-node:
 .. _user-guide--marketing--web-catalog--content-node:
 
-.. begin
-
 Set Up the Homepage, First Level Menu, and Sub Menus
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------
 
 .. contents:: :local:
 
+.. begin
+
 Concepts
-""""""""
+^^^^^^^^
 
 The homepage that is shown when a buyer navigates to the web store is configured by the very first node created in the web catalog (**homepage node**).
 
@@ -18,17 +18,19 @@ The first level of the main menu in the storefront is represented by **root cont
 Storefront:
 
 .. image:: /user_guide/img/marketing/web_catalogs/FirstLevelMenuFrontStore.png
+   :alt: The homepage node displayed in the storefront
 
 Management Console:
 
 .. image:: /user_guide/img/marketing/web_catalogs/RootNodesManagementConsole.png
+   :alt: The homepage node configured in the management console
 
 **Root content nodes** are nested under the **homepage node**.
 
 After you set up the first level of the main menu, you can set up the second level for it, as well as many other sub-levels for them, depending on the structure envisioned by you for the store.
 
 .. image:: /user_guide/img/marketing/web_catalogs/Levels.png
-   :class: with-border
+   :alt: Several sub-levels of the root content node nested under the homepage node
 
 The steps for node configuration provided below apply to the homepage, main menu and sub-menu content with the only difference in the way you launch the node configuration:
 
@@ -39,15 +41,15 @@ The steps for node configuration provided below apply to the homepage, main menu
 * To launch editing the existing content node configuration, select it in the content nodes tree.
 
 Content Node Configuration
-""""""""""""""""""""""""""
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To create or configure the content node in the web catalog:
 
 #) In the *General* section, fill in the content node title.
 
-   For the **homepage node**, the title is mentioned in the content nodes tree in OroCommerce Management Console.
+   For the **homepage node**, the title is mentioned in the content nodes tree in OroCommerce management console.
 
-   For the **menu and sub-menu nodes**, the title is mentioned in the content nodes tree in OroCommerce Management Console and shows as a menu or sub-menu caption in your OroCommerce Storefront (depending on the level in the content tree).
+   For the **menu and sub-menu nodes**, the title is mentioned in the content nodes tree in OroCommerce management console and shows as a menu or sub-menu caption in your OroCommerce storefront (depending on the level in the content tree).
 
    If necessary, translate the title into the languages supported in your OroCommerce configuration. To manage title translations, click next to the Titles box and follow the :ref:`content translation guidance here <localization--localization>`.
 
@@ -72,17 +74,17 @@ To create or configure the content node in the web catalog:
    For the **menu and sub-menu nodes**, the settings are inherited from the parent node. To modify the inherited default settings, clear the **Inherit Parent** box, and specify the necessary restrictions.
 
    .. image:: /user_guide/img/marketing/web_catalogs/InheritParent.png
-      :class: with-border
+      :alt: clear the Inherit Parent box
 
    .. image:: /user_guide/img/marketing/web_catalogs/InheritParentOff.png
-      :class: with-border
+      :alt: Additional restriction settings appear when clearing the Inherit Parent box
 
-#) In the *Content Variants* section, add the default content item to be displayed on the OroCommerce storefront when the node-level restriction conditions are met:
+#) In the *Content Variants* section, add the default content item to be displayed in the OroCommerce storefront when the node-level restriction conditions are met:
 
-  * Select the type of content to be displayed on the storefront from the list on the right.
+  * Select the type of content to be displayed in the storefront from the list on the right.
 
     .. image:: /user_guide/img/marketing/web_catalogs/ContentVariantSection.png
-           :class: with-border
+       :alt: Select the type of content to be displayed in the storefront
 
   * Configure the content node as described in the :ref:`Configure Content Variants for the Content Node <user-guide--marketing--web-catalog--content-variant>` section.
 

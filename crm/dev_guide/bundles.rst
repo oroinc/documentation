@@ -425,7 +425,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/admin_guide/op_structure/search_index/index`
+        * Book: :doc:`/architecture/tech_stack/search_index/index`
 
 `SecurityBundle`_ (OroPlatform)
     A flexible security model which allows to protect data integrity and privacy.

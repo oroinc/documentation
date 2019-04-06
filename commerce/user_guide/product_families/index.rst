@@ -22,6 +22,8 @@ System attributes are mandatory for any product family as they contain core prod
 .. image:: /user_guide/img/products/product_families/ProductAttributeFamilies.png
    :class: with-border
 
+.. hint:: If you have more than 50 attributes, avoid storing all of them in one product family. Instead, split them into separate families. This prevents loading all attributes as filters on all product pages and as a result reduces the load on the database and improves the overall application performance.
+
 In this section you will learn how to:
 
 .. toctree::

@@ -31,7 +31,7 @@ needed to describe a task:
 
     class TaskType extends AbstractType
     {
-        public function buildForm(FormBuilderInterface $builder)
+        public function buildForm(FormBuilderInterface $builder, array $options)
         {
             $builder
                 ->add('subject')
@@ -99,8 +99,17 @@ its data:
 
         private function update(Task $task, Request $request)
         {
-            $form = $this->createForm(new TaskType(), $task);
+            $form = $this->createForm(TaskType::class, $task);
 
+            $form->handleRequest( $request );
+
+            if ( $form->isSubmitted() && $form->isValid() ) {
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($task);
+                $em->flush();
+            }
+            
             return array(
                 'entity' => $task,
                 'form' => $form->createView(),
@@ -176,7 +185,7 @@ with OroPlatform:
             {{ parent() }}
         {% else %}
             {% set title = 'oro.ui.create_entity'|trans({ '%entityName%': 'Task' }) %}
-            {{ include('OroUIBundle::page_title_block.html.twig', { title: title }) %}
+            {% include('OroUIBundle::page_title_block.html.twig', { title: title }) %}
         {% endif %}
     {% endblock pageHeader %}
 

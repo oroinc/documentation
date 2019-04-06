@@ -26,7 +26,8 @@ To create a custom report:
 General
 ^^^^^^^
 
-.. image:: /user_guide/img/business_intelligence/custom_reports_1.png
+.. image:: /user_guide/img/business_intelligence/custom_report_create_general.png
+   :alt: The general section of a custom report creation page
 
 The following fields are mandatory and **must** be defined for a report:
 
@@ -50,7 +51,8 @@ Designer
 
 In the **Designer** section, you can define the structure of your report.
 
-.. image:: /user_guide/img/business_intelligence/custom_reports_2.png
+.. image:: /user_guide/img/business_intelligence/custom_report_create_designer.png
+   :alt: The designer section of a custom report creation page
 
 There are four main subsections that help you build your report:
 
@@ -88,13 +90,13 @@ To add a column:
 
   For example, you want a report that shows the number of opportunities with each of the statuses **Open**, **Closed Won** and **Closed Lost**. Then, you can create a report with target entity **Opportunity**. For the opportunity's columns, add **Status** and **Id**. For the **Id** field, specify the **Count** function.
 
-  .. image:: /user_guide/img/business_intelligence/custom_reports_3.png
+  .. image:: /user_guide/img/business_intelligence/custom_report_function.png
 
-  As the result, the system takes the first of the statuses and counts how many Ids are listed under it, and the same for other statuses.
+  As a result, the system takes the first of the statuses and counts how many Ids are listed under it, and the same for other statuses.
 
-  .. image:: /user_guide/img/business_intelligence/custom_reports_4.png
+  .. image:: /user_guide/img/business_intelligence/custom_report_opportunity_report.png
 
-  There are some field-specific functions (e.g. **Won Count** that shows the number of won opportunities) for the opportunity's **Status** field. The most common functions are the following:
+  There are some field-specific functions (e.g., **Won Count** that shows the number of won opportunities) for the opportunity's **Status** field. The most common functions are the following:
 
   - **None**—The data is not aggregated, you will see field values as they are.
 
@@ -165,42 +167,22 @@ To add a column:
 
 The field you have defined will appear in the **COLUMN** table.
 
-Edit a Column
-"""""""""""""
+Now, you can perform the following actions by clicking a necessary button to the right of the corresponding row:
 
-To edit a column:
+ * |IcEdit| **Edit** a column.
 
-1. Click the |IcEdit| **Edit** icon to the right of the corresponding row.
-2. Perform the required changes as described in the `Add a Column`_ section description.
-3. Click **Save**.
+ * |IcDelete| **Delete** an unnecessary column. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
 
-Delete a Column
-"""""""""""""""
-
-To delete a column:
-
-1. Click the |IcDelete| **Delete** icon to the right of the corresponding row.
-2. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
-
-Rearrange Report Columns
-""""""""""""""""""""""""
-
-To move a column, click the |IcArrowsV| **Move** icon to the right of the corresponding row, hold the mouse button, and drag the column up (to make it appear earlier in the report) or down (to make it appear later).
+ * |IcArrowsV| **Rearrange** report columns. Click |IcArrowsV|, hold the mouse button, and drag the column up (to make it appear earlier in the report) or down (to make it appear later).
 
 Grouping
 ~~~~~~~~
 
 When you specify a function for some of the fields, you need to add all other fields (that do not have any function specified for them) to the **Grouping** section.
 
-Add a Field to Grouping
-"""""""""""""""""""""""
-
 To add a field to the **Grouping** section, select it from the **Grouping Columns** field, and click **Add**. For example, you can see a total, average, maximum, and minimum budget amount for each opportunity with the same status.
 
 .. warning:: Do not add fields that are not present in the **Columns** section.
-
-Remove a Field from Grouping
-""""""""""""""""""""""""""""
 
 To remove a field from the **Grouping** section:
 
@@ -212,12 +194,12 @@ Grouping by Date
 
 In this section, you can define whether to show additional period filters for this report on the report view page.
 
-.. image:: /user_guide/img/business_intelligence/custom_reports_6.png
+.. image:: /user_guide/img/business_intelligence/custom_report_best_selling_products.png
 
 With these filters, you can define the date range to filter the report data and group the data in this range by periods (days, month, quarters, years).
 You can also decide whether to show or not the periods that do not contain any data.
 
-.. image:: /user_guide/img/business_intelligence/custom_reports_7.png
+.. image:: /user_guide/img/business_intelligence/custom_report_group_by_date.png
 
 .. csv-table::
   :header: "Field","Description"
@@ -237,10 +219,7 @@ For more details, see the :ref:`Filters <user-guide--business-intelligence--filt
 Chart Designer
 ^^^^^^^^^^^^^^
 
-.. image:: /user_guide/img/business_intelligence/custom_reports_8.png
-
-Chart
-~~~~~
+.. image:: /user_guide/img/business_intelligence/custom_report_chart_designer.png
 
 OroCommerce supports line charts. To create a line chart for the report, define the following fields (all the fields are mandatory) in the **Chart** section.
 
@@ -254,59 +233,26 @@ OroCommerce supports line charts. To create a line chart for the report, define 
 
 For more details, see the :ref:`chart example <user-guide--business-intelligence--reports--chart-examples>`.
 
-View a Report
--------------
-
-View a Custom Report
-^^^^^^^^^^^^^^^^^^^^
+Manage Reports
+--------------
 
 From the Custom Reports List
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In the main menu, navigate to **Report & Segments > Manage Reports**, and in the custom reports list, click the required report.
+In the main menu, navigate to **Report & Segments > Manage Reports**.
 
-Alternatively, hover over the |IcEllipsisH| **More Options** menu and click the |IcView| **View** icon.
+Hover over the |IcEllipsisH| **More Options** menu to the right of the required report to perform the following actions:
 
-.. image:: /user_guide/img/business_intelligence/custom_reports_9.png
+* |IcView| **View** report details. Alternatively, click on the item to open its details page.
+* |IcEdit| **Edit** report details. Update the report details as required. For the description of the fields, see `Create a Custom Report`_.
+* |IcClone| **Clone** the existing report to simplify the custom report creation. The cloned report will be automatically populated with the data from the base report. Adjust the information as required and save it.
+* |IcDelete| **Delete** existing reports. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
+
+.. image:: /user_guide/img/business_intelligence/custom_reports_all_actions.png
+   :alt: The actions available in the More Options menu.
 
 From the Custom Report View Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In the main menu, navigate to **Report & Segments**. Custom reports are gathered in sections by the name of the field they are related to. Select the required section, navigated further to the desired report, and click it.
-
-.. image:: /user_guide/img/business_intelligence/custom_reports_10.png
-
-Export a Report
----------------
-
-1. Open the report that you want to export:
-
-   * To export a custom report, navigate to **Report & Segments > Manage Reports** in the main menu and click the required report.
-
-   * To export a system report, navigate to **Report & Segments > Reports** in the main menu and further to the required report (e.g. **Report & Segments > Reports > Accounts > Life Time**).
-
-2. On the report page, click the **Export Grid** button in the upper-left corner, and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
-
-   .. image:: /user_guide/img/business_intelligence/custom_reports_11.png
-
-Edit a Custom Report
---------------------
-
-From the Custom Reports Grid
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. In the main menu, navigate to **Report & Segments > Manage Reports**.
-
-2. On the **All Reports** page, hover over the |IcEllipsisH| **More Options** menu, and then click the |IcEdit| **Edit** icon.
-
-   .. image:: /user_guide/img/business_intelligence/custom_reports_12.png
-
-3. Update the report details as required. For the description of the fields, see `Create a Custom Report`_.
-
-4. Click **Save**.
-
-From the Custom Report View Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. In the main menu, navigate to **Report & Segments > Manage Reports**.
 
@@ -314,34 +260,16 @@ From the Custom Report View Page
 
    Alternatively, hover over the |IcEllipsisH| **More Options** menu, and then click the |IcView| **View** icon.
 
-   .. image:: /user_guide/img/business_intelligence/custom_reports_13.png
+3. On the report page, click one of the available buttons in the upper-right corner to perform the following steps:
 
-3. On the report page, click **Edit** in the upper-right corner.
+   * |IcEdit| **Edit** report details. Update the report details as required. For the description of the fields, see `Create a Custom Report`_.
+   * |IcClone| **Clone** the existing report to simplify the custom report creation. The cloned report will be automatically populated with the data from the base report. Adjust the information as required and save it.
+   * |IcDelete| **Delete** existing reports. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
-4. Update the report details as required. For the description of the fields, see `Create a Custom Report`_.
+.. image:: /user_guide/img/business_intelligence/custom_reports_all_actions_report_page.png
+   :alt: The actions available from the view page of any custom report
 
-5. Click **Save**.
-
-Delete a Custom Report
-----------------------
-
-From the Custom Reports Grid
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. In the main menu, navigate to **Report & Segments > Manage Reports**.
-
-2. On the custom reports page, select the report to delete, hover over the |IcEllipsisH| **More Options** menu, and then click |IcDelete| **Delete**.
-
-   .. image:: /user_guide/img/business_intelligence/custom_reports_14.png
-
-3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
-
-From the Custom Report View Page
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Alternatively, you can delete a custom report from the reports view page by clicking **Delete** in the upper-right corner.
-
-.. image:: /user_guide/img/business_intelligence/custom_reports_15.png
+4. Click **Save and Close** as you finish.
 
 Delete Multiple Custom Reports
 ------------------------------
@@ -354,9 +282,23 @@ You can delete multiple custom reports at a time.
 
 2. Hover over the |IcMore| **More Options** menu at the end of the list header and click |IcDelete| to delete multiple reports at a time.
 
-   .. image:: /user_guide/img/business_intelligence/custom_reports_16.png
+   .. image:: /user_guide/img/business_intelligence/custom_report_multiple_delete.png
 
 4. In the **Delete Confirmation** dialog box, click **Yes, Delete**.
+
+Export a Report
+---------------
+
+1. Open the report that you want to export:
+
+   * To export a custom report, navigate to **Report & Segments > Manage Reports** in the main menu and click the required report.
+
+   * To export a system report, navigate to **Report & Segments > Reports** in the main menu and further to the required report (e.g. **Report & Segments > Reports > Accounts > Life Time**).
+
+2. On the report page, click the **Export Grid** button in the upper-left corner, and then click **CSV** or **XLSX** to export the report to the file of the corresponding format.
+
+   .. image:: /user_guide/img/business_intelligence/custom_report_export.png
+
 
 **Related Topics**
 

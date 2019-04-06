@@ -16,22 +16,22 @@ Customer User Roles
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/xBbzgDYTVUQ" frameborder="0" allowfullscreen></iframe>
 
-In OroCommerce, you can view, edit and create new customer roles to define the level of permissions and access to the actions and data in the storefront for the users of this role.
+In OroCommerce, you can view, edit, and create new customer roles to define the level of permissions and access to the actions and data in the storefront for the users of this role.
 
 The following roles are predefined and available for every customer by default:
 
 * **Administrator**
 * **Buyer**
-* **Non-authenticated user**
+* **Non-authenticated Visitors**
 
 Any new role is labeled as *customizable* and may apply either to the customer specified in the role details or globally for all customers when the customer is not provided.
 
 .. image:: /user_guide/img/customers/customer_user_roles/CustomerUserRoles.png
-   :class: with-border
+   :alt: The list of all available customer user roles in the system
 
-With the Customer User Role you can manage the following :ref:`access- and permissions-related settings <admin-capabilities>`:
+With the customer user role, you can manage the following :ref:`access- and permissions-related settings <admin-capabilities>`:
 
-* Profile management permission: A user may be able to view and edit their user profile, when the **Self-Managed** option is enabled for their role.
+* Profile management permission: A user may be able to view and edit their user profile when the **Self-Managed** option is enabled for their role.
 * Permissions to view workflows and/or perform transitions through the workflow steps.
 * Data access/management permissions and capabilities. 
 
@@ -46,7 +46,7 @@ To create a new customer user role:
 2. Click **Create Customer User Role**.
 
    .. image:: /user_guide/img/customers/customer_user_roles/CustomerUserRolesCreate.png
-      :class: with-border
+      :alt: The customer user role creation page
 
 3. In the **General** section, provide the following details:
 
@@ -57,14 +57,11 @@ To create a new customer user role:
 4. In the **Entity** section, select the permissions that you want to grant to users who will be assigned the role you are creating.
   
    .. image:: /user_guide/img/customers/customer_user_roles/CustomerUserRolesEntity.png
-      :class: with-border
       :alt: Entity permissions for a customer user role
 
-   .. note:: See the full list of permissions on the Permissions for :ref:`Customer User Roles page <user-guide--customers--customer-user-roles--permissions>`.
+   On the customer user role details page, you can view customer users with this role assigned. If the role is *global*, this list contains users from all customer accounts.
 
-   In the customer role details you can view customer users with this role assigned. If the role is *global*, this list contains users from all customer accounts.
-
-   .. note:: Please note that there are two ways to control the capability of a customer user to update their profile details in the storefront. One is defined by the **Edit** permission for Customer Users. When set to **Same Level/All Levels**, editing will become possible under **Account > All Users** in the storefront. The second one is defined by the **Update User Profile** capability which, when enabled, gives the customer user permissions to update details under **Account > My Profile** in the storefront.
+   .. note:: Please note that there are two ways to control the capability of a customer user to update their profile details in the storefront. One is defined by the **Edit** permission for customer users. When set to **Same Level/All Levels**, editing will become possible under **Account > All Users** in the storefront. The second one is defined by the **Update User Profile** capability which, when enabled, gives the customer user permissions to update details under **Account > My Profile** in the storefront.
 
 5. In the **Workflows** section, specify access levels for workflows and workflow transitions. There are two permissions for workflows, **view** and **perform transitions**. By default, all workflow access levels are set to **None**. Choose the workflow or the transition to which you want to assign different permissions, click on the action name and select the required access level from the list. 
 
@@ -83,7 +80,7 @@ To view all customer user roles:
 Navigate to **Customers > Customer User Roles** in the main menu.
 
 .. image:: /user_guide/img/customers/customer_user_roles/CustomerUserRoles.png
-  :class: with-border
+   :alt: The list of all available customer user roles in the system
 
 You can view, edit and :ref:`filter <doc-grids-actions-filters-apply>` every item in the Customer User Roles record table:
    
@@ -99,15 +96,8 @@ You can view, edit and :ref:`filter <doc-grids-actions-filters-apply>` every ite
 **Related Articles**
 
 * :ref:`Understanding Roles and Permissions <user-guide-user-management-permissions>`
-* :ref:`Create amd Manage Roles <user-guide-user-management-permissions-roles--actions>`
+* :ref:`Create and Manage Roles <user-guide-user-management-permissions-roles--actions>`
 * :ref:`Admin and System Capabilities <admin-capabilities>`
-* :ref:`Permissions for Customer User Roles <user-guide--customers--customer-user-roles--permissions>`
-
-.. toctree::
-   :hidden:
- 
-   permissions
-   
 
 .. finish
 

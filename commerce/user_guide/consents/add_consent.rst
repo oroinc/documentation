@@ -67,6 +67,8 @@ Once the landing page with the consent description is added to a web catalog nod
 
              .. image:: /admin_guide/img/configuration/customer/consents/consents_section_customer_user_page.png
 
+.. important:: Keep in mind that once a consent is accepted by at least one person in the OroCommerce storefront, it becomes uneditable and unremovable as well as the associated landing page.
+
 **Related Topics**
 
 * :ref:`Data Protection in the OroCommerce Storefront <frontstore-guide--profile-consents>`

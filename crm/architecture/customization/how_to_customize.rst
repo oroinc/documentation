@@ -42,7 +42,9 @@ In addition to existing extensions, you can create your own customization of the
 Prepare for Source Code Customization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before you begin customizing you Oro application, follow the guidance provided in the :ref:`Custom Application <custom-oro-application>` topic to set up your custom application repository for version control, and install Oro application from your custom repository.
+.. TODO replace the link once the topic is ported to the OroCommerce
+
+Before you begin customizing you Oro application, follow the guidance provided in the `Custom Application <https://oroinc.com/doc/orocrm/current/dev-guide/custom-application>`_ topic to set up your custom application repository for version control, and install Oro application from your custom repository.
 
 Running the application in development mode (via the `http://<oro-application-base-url>/index_dev.php/` link) helps you debug and test your customization steps.
 
@@ -59,7 +61,9 @@ Create a new bundle to put all your custom code and updated configuration files.
 
 .. contents:: :local:
 
-.. seealso:: See the :ref:`Cookbook <dev-cookbook>` section for additional information.
+.. TODO fix the Cookbook link when info is ported to OroCommerce
+
+.. seealso:: See the :ref:`Cookbook <dev-cookbook>` sectioncd ../ for additional information.
 
 [PHP] Add a Third-Party Component or Library via Composer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -73,17 +77,17 @@ For example, in the root directory of your Oro application, run the following co
 After that, you can use features from the math library in the custom source code:
 
 .. code-block:: none
-    :linenos:
+   :linenos:
 
-    ...
+   ...
 
-    use \NumPHP\NumArray;
+   use \NumPHP\NumArray;
 
-    ...
+   ...
 
-    $vector = new NumArray([0.12, 6/7, -9]);
+      $vector = new NumArray([0.12, 6/7, -9]);
 
-    ...
+   ...
 
 [Symfony] Add a Third-Party Symfony-Compatible Bundle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -95,15 +99,15 @@ Similarly, add a Symfony-compatible bundle to your Oro application via composer 
 To enable it in the Oro application, register the bundle in the bundles.yml file in your custom bundle:
 
 .. code-block:: none
-    :linenos:
-    :caption: CustomBundle/Resources/config/oro/bundles.yml
+   :linenos:
+   :caption: CustomBundle/Resources/config/oro/bundles.yml
 
-    bundles:
-      -  { name: \FOS\RestBundle\FOSRestBundle, priority: 100 }
+   bundles:
+     -  { name: \FOS\RestBundle\FOSRestBundle, priority: 100 }
 
 .. TODO replace the link when doc is ported to Commerce
 
-.. note:: See the topic on :ref:`Differences to Common Symfony Applications <book_differences>` for more information on bundle registration effect.
+.. note:: See the topic on `Differences to Common Symfony Applications <https://oroinc.com/orocrm/doc/current/dev-guide/getting-started-book/differences>`_ for more information on bundle registration effect.
 
 This immediately enforces the customization changes defined in the bundle to apply to your Oro application.
 However, next, you may need to implement custom changes in the existing business logics to benefit from the enabled capabilities.
@@ -130,14 +134,14 @@ To do so, tag your service with a specified dependency injection tag to make it 
 For example, to add a new payment method in your OroCommerce application, first create your own implementation of the *PaymentMethodProviderInterface* and tag it with the existing *oro_payment.payment_method_provider* tag, like in the following example:
 
 .. code-block:: none
-    :linenos:
-    :caption: CustomBundle/Resources/config/services.yml
+   :linenos:
+   :caption: CustomBundle/Resources/config/services.yml
 
-    custom_bundle.method.provider.payment_method_name:
-        class: 'Custom\Bundle\CustomBundle\Method\Provider\NameOfMethodProvider'
-        public: false
-        tags:
-             - { name: oro_payment.payment_method_provider }
+   custom_bundle.method.provider.payment_method_name:
+       class: 'Custom\Bundle\CustomBundle\Method\Provider\NameOfMethodProvider'
+       public: false
+       tags:
+            - { name: oro_payment.payment_method_provider }
 
 The behavior that has already been applied to the default payment methods is now automatically applied to the tagged service too.
 
@@ -147,13 +151,13 @@ The behavior that has already been applied to the default payment methods is now
 Use event listeners to interfere with the existing data processing flow and customize it. You can also design new business logics for processing the events. For example, to log a number of web-browsers that are connected to the application server through the websockets (WS) protocol, create your own listener of the clank.client.connected event:
 
 .. code-block:: none
-    :linenos:
-    :caption: CustomBundle/Resources/config/services.yml
+   :linenos:
+   :caption: CustomBundle/Resources/config/services.yml
 
-    custom_bundle.wss.listener:
-        class: Custom\Bundle\CustomBundle\EventListener\WssConnectionEventListener
-        tags:
-             - { name: kernel.event_listener, event: clank.client.connected, method: onClientConnect }
+   custom_bundle.wss.listener:
+       class: Custom\Bundle\CustomBundle\EventListener\WssConnectionEventListener
+       tags:
+            - { name: kernel.event_listener, event: clank.client.connected, method: onClientConnect }
 
 Remember to implement custom processing of the registered changes, if necessary.
 
@@ -174,7 +178,9 @@ Once added, the option may be displayed in the UI or may affect the Oro applicat
 
 .. add more examples for every type of the items/features: workflow, navigation tree, datagrid, dashboard widget
 
-Please, see the :ref:`System Configuration <ref-format-system-configuration>` topic for sample configuration files.
+.. TODO <replace link when the content is synced between OroCRM and OroCommerce
+
+Please, see the `System Configuration <https://oroinc.com/doc/orocrm/current/reference/format/system-configuration>`_ topic for sample configuration files.
 
 [Oro] Customization Using Twig Placeholders
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -207,13 +213,13 @@ Once your customization is ready, you can publish it in a dedicated repository t
 Customization via UI
 --------------------
 
-For data model and business processes customization, Oro applications provide the entity and workflow management tools in the web UI (e.g. OroCRM and OroCommerce Management Console). These tools may be used for quick updates of the existing data structure, for example, add a new field to the existing entity data, change the value options, etc.) and enable easy and fast prototyping, for example, for A/B testing of new business processes automation.
+For data model and business processes customization, Oro applications provide the entity and workflow management tools in the web UI (e.g. OroCRM and OroCommerce management console). These tools may be used for quick updates of the existing data structure, for example, add a new field to the existing entity data, change the value options, etc.) and enable easy and fast prototyping, for example, for A/B testing of new business processes automation.
 
 .. warning:: Results of the customization via UI is stored in the database. Porting such customization from staging to the production environment happens on the database level using data migration. Compared to programmatic customization, customization via UI lacks the versioning and portability. Please, consider using the customization on the source code level to keep the upgrade process simple.
 
 .. TODO replace link one the information on entities is synced to the OroCommerce
 
-In the **System > Entity Management**, you can create a data model for a new business entity (e.g. add information about the purchase orders and link them  to the B2B orders in OroCommerce), and start using it right away after quick field and relationships configuration. See :ref:`Entities Management <entities-management>` for detailed information.
+In the **System > Entity Management**, you can create a data model for a new business entity (e.g. add information about the purchase orders and link them  to the B2B orders in OroCommerce), and start using it right away after quick field and relationships configuration. See `Entities Management <https://oroinc.com/orocrm/doc/current/admin-guide/entities>`_ for detailed information.
 
 In the **System > Workflows**, you can automate a workflow to reflect a custom business process in your organization. See :ref:`Workflows <doc--system--workflow-management>` for detailed information.
 

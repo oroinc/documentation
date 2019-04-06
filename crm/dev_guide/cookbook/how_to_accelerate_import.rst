@@ -2,7 +2,6 @@
     single: Import/Export; Performance
     single: Import/Export; Acceleration
 
-
 How to Accelerate Import
 ========================
 
@@ -16,6 +15,7 @@ Xdebug is a very useful debug tool for PHP, but at the same time it adds lots of
 operations. Xdebug status can be checked with ``php -m`` command:
 
 .. code-block:: bash
+   :linenos:
 
     # xdebug is enabled
     $ php -m | grep xdebug
@@ -32,68 +32,128 @@ Run Import Operation from the Command Line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Import from the UI is good for relatively small amount of data (up to 1000 entities), but if you need to import thousands
-or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:csv``
-that allows to import records from the specified CSV file.
+or millions of entities the command line is your best choice. OroPlatform provides the CLI command ``oro:import:file``
+that allows to import records from the specified  file.
 
 .. code-block:: bash
+   :linenos:
 
-    $ php bin/console oro:import:csv --help
+    $ php bin/console oro:import:file --help
     Usage:
-     oro:import:csv [--validation-processor="..."] [--processor="..."] file
+     oro:import:file [options] [--] <file>
 
     Arguments:
-     file                    File name, to import CSV data from
+     file                                             File name, to import CSV data from
 
     Options:
-     --validation-processor  Name of the processor for the entity data validation contained in the CSV
-     --processor             Name of the processor for the entity data contained in the CSV
+      --jobName=JOBNAME                            Name of Import Job.
+      --validation                                 If adding this option then validation will be performed instead of import
+      --processor=PROCESSOR                        Name of the import processor.
+      --email=EMAIL                                Email to send the log after the import is completed
+    -h, --help                                       Display this help message
+    -q, --quiet                                      Do not output any message
+    -V, --version                                    Display this application version
+        --ansi                                       Force ANSI output
+        --no-ansi                                    Disable ANSI output
+    -n, --no-interaction                             Do not ask any interactive question
+    -e, --env=ENV                                    The Environment name. [default: "dev"]
+        --no-debug                                   Switches off debug mode.
+        --disabled-listeners=DISABLED-LISTENERS      Disable optional listeners, "all" to disable all listeners, command "oro:platform:optional-listeners" shows all listeners (multiple values allowed)
+        --current-user=CURRENT-USER                  ID, username or email of the user that should be used as current user
+        --current-organization=CURRENT-ORGANIZATION  ID or name of the organization that should be used as current organization
+    -v|vv|vvv, --verbose                             Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+
+Help:
+ Import data from specified file for specified entity. The import log is sent to the provided email.
 
 Here is a small example of its usage:
 
 .. code-block:: bash
+   :linenos:
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv
+    $ php bin/console oro:import:file ~/Contact_2000.csv
     Choose Processor:
-      [0 ] orocrm_contact.add_or_replace
-      [1 ] orocrm_contact.add
-      [2 ] orocrm_account.add_or_replace
-      [3 ] oro_tracking.processor.data
-      [4 ] orocrm_sales_lead.add_or_replace
-      [5 ] orocrm_sales_opportunity.add_or_replace
-      [6 ] orocrm_sales_b2bcustomer
-      [7 ] orocrm_magento.add_or_update_newsletter_subscriber
-      [8 ] orocrm_magento.add_or_update_customer
-      [9 ] orocrm_magento.import_guest_customer
-      [10] orocrm_magento.add_or_update_customer_address
-      [11] orocrm_magento.add_or_update_region
-      [12] orocrm_magento.add_or_update_cart
-      [13] orocrm_magento.add_or_update_order
-      [14] orocrm_magento.store
-      [15] orocrm_magento.website
-      [16] orocrm_magento.customer_group
-    > 1
-    Choose Validation Processor:
-      [0] orocrm_contact.add_or_replace
-      [1] orocrm_contact.add
-      [2] orocrm_account.add_or_replace
-      [3] orocrm_sales_lead.add_or_replace
-      [4] orocrm_sales_opportunity.add_or_replace
-      [5] orocrm_sales_b2bcustomer
-    > 1
-    +---------------+-------+
-    | Results       | Count |
-    +---------------+-------+
-    | errors        | 0     |
-    | process       | 2000  |
-    | read          | 2000  |
-    | add           | 2000  |
-    | replace       | 0     |
-    | update        | 0     |
-    | delete        | 0     |
-    | error_entries | 0     |
-    +---------------+-------+
-    Do you want to proceed [yes]?
-    File was successfully imported.
+         [0 ] oro_translation_translation.add_or_replace
+         [1 ] oro_translation_translation.reset
+         [2 ] oro_entity_config_entity_field.add_or_replace
+         [3 ] oro_contact.add_or_replace
+         [4 ] oro_contact.add
+         [5 ] oro_product_product.add_or_replace
+         [6 ] oro_product_image.add_or_replace
+         [7 ] oro_customer_customer
+         [8 ] oro_customer_customer_user
+         [9 ] oro_tracking.processor.data
+         [10] oro_account.add_or_replace
+         [11] oro_pricing_product_price.add_or_replace
+         [12] oro_pricing_product_price.reset
+         [13] oro_pricing_product_price_attribute_price.add_or_replace
+         [14] oro_pricing_product_price_attribute_price.reset
+         [15] oro_sales_lead.add_or_replace
+         [16] oro_sales_opportunity.add_or_replace
+         [17] oro_sales_b2bcustomer
+         [18] oro_magento.add_or_update_newsletter_subscriber
+         [19] oro_magento.add_or_update_customer
+         [20] oro_magento.import_guest_customer
+         [21] oro_magento.add_or_update_customer_address
+         [22] oro_magento.add_or_update_region
+         [23] oro_magento.add_or_update_cart
+         [24] oro_magento.add_or_update_order
+         [25] oro_magento.order_context
+         [26] oro_magento.credit_memo_context
+         [27] oro_magento.store
+         [28] oro_magento.website
+         [29] oro_magento.customer_group
+         [30] oro_magento.add_or_update_credit_memo
+         [31] oro_magento.add_or_update_credit_memo_with_existing_order
+         [32] oro_tax_tax_rule
+         [33] oro_tax_tax
+         [34] oro_inventory.inventory_level
+         [35] oro_promotion_coupon_import
+         [36] oro_ldap_user_import
+          3
+    Choose Job:
+         [0 ] language_translations_import_from_csv
+         [1 ] entity_fields_import_from_csv
+         [2 ] attribute_import_from_csv
+         [3 ] entity_import_from_csv
+         [4 ] import_log_to_database
+         [5 ] import_request_to_database
+         [6 ] price_list_product_prices_entity_import_from_csv
+         [7 ] price_attribute_product_price_import_from_csv
+         [8 ] mage_customer_import
+         [9 ] mage_customer_load_customer_info
+         [10] mage_region_import
+         [11] mage_order_import
+         [12] mage_order_import_post_process_customers_and_info
+         [13] mage_credit_memo_import
+         [14] mage_credit_memo_post_process_orders_and_info
+         [15] mage_cart_import
+         [16] mage_cart_import_post_process_customers
+         [17] mage_newsletter_subscriber_import
+         [18] mage_newsletter_subscriber_import_initial
+         [19] mage_newsletter_subscriber_post_process_customers
+         [20] mage_store_import
+         [21] mage_store_rest_import
+         [22] mage_website_import
+         [23] mage_website_rest_import
+         [24] mage_customer_group_import
+         [25] zendesk_user_import
+         [26] zendesk_ticket_import
+         [27] zendesk_ticket_comment_import
+         [28] dotmailer_address_book_import
+         [29] dotmailer_campaign_import
+         [30] dotmailer_unsubscribed_contact_import
+         [31] dotmailer_new_contacts
+         [32] dotmailer_activity_contact_import
+         [33] dotmailer_campaign_click_import
+         [34] dotmailer_campaign_open_import
+         [35] dotmailer_campaign_summary_import
+         [36] dotmailer_import_not_exported_contact
+         [37] dotmailer_contact_export
+         [38] dotmailer_datafield_import
+         [39] ldap_import_users
+          3
+     Scheduled successfully.
 
 
 Perform Import in the Prod Environment
@@ -104,8 +164,9 @@ Therefore, it is recommended to run import in prod environment so it would finis
 the ``--env=prod`` option to your import command:
 
 .. code-block:: bash
+   :linenos:
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv --env=prod
+    $ php bin/console oro:import:file ~/Contact_2000.csv --env=prod
 
 
 Skip Import File Validation
@@ -116,21 +177,11 @@ before saving imported entities (invalid entities will not be saved to the DB). 
 import can be performed without it. To do so, start the import command in no interaction mode with the ``--no-interaction`` option:
 
 .. code-block:: bash
+   :linenos:
 
-    $ php bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --no-interaction --env=prod
-    +---------------+-------+
-    | Results       | Count |
-    +---------------+-------+
-    | errors        | 0     |
-    | process       | 2000  |
-    | read          | 2000  |
-    | add           | 2000  |
-    | replace       | 0     |
-    | update        | 0     |
-    | delete        | 0     |
-    | error_entries | 0     |
-    +---------------+-------+
-    File was successfully imported.
+    $ php bin/console oro:import:file ~/Contact_2000.csv --processor=oro_contact.add_or_replace --jobName=entity_import_from_csv --no-interaction --env=prod
+
+    Scheduled successfully.
 
 .. hint::
 
@@ -144,20 +195,44 @@ With OroPlatform you can disable some event listeners for the command execution.
 command shows the list of all such listeners:
 
 .. code-block:: bash
+   :linenos:
 
     $ bin/console oro:platform:optional-listeners
-    List of optional doctrine listeners:
-      > oro_dataaudit.listener.send_changed_entities_to_message_queue
-      > oro_notification.docrine.event.listener
-      > oro_search.index_listener
-      > oro_workflow.listener.event_trigger_collector
+    List of optional listeners:
+     > oro_website_search.reindex_request.listener
+     > oro_website.indexation_request_listener
+     > oro_product.event_listener.product_image_resize_listener
+     > oro_pricing.entity_listener.product_price_cpl
+     > oro_pricing.entity_listener.price_list_to_product
+     > oro_magento.event_listener.delayed_search_reindex
+     > oro_workflow.event_listener.send_workflow_step_changes_to_audit
+     > oro_workflow.listener.workflow_transition_record
+     > oro_visibility.entity.entity_listener.customer_listener
+     > oro_pricing.entity_listener.price_list_currency
+     > oro_email.listener.entity_listener
+     > oro_entity.event_listener.entity_modify_created_updated_properties_listener
+     > oro_notification.doctrine.event.listener
+     > oro_dataaudit.listener.send_changed_entities_to_message_queue
+     > oro_search.index_listener
+     > oro_workflow.listener.event_trigger_collector
+     > oro_calendar.listener.calendar_event_attendees
+     > oro_commerce_entity.event_listener.doctrine_post_flush_listener
+     > oro_redirect.event_listener.slug_prototype_change
+     > oro_redirect.event_listener.slug_change
+     > oro_marketing_list.event_listener.on_entity_change
+     > oro_sales.customers.customer_association_listener
+     > oro_dotmailer.listener.mapping_update
+     > oro_dotmailer.listener.entity_update
 
 To disable these listeners the ``--disabled-listeners`` option can be used. Also this option can receive value "all" -
 it will disable all optional listeners. Here is an example:
 
 .. code-block:: bash
+   :linenos:
 
-    $ bin/console oro:import:csv ~/Contact_2000.csv --processor=orocrm_contact.add --disabled-listeners=all --no-interaction --env=prod
+    $ bin/console oro:import:file ~/Contact_2000.csv --processor=oro_contact.add_or_replace --jobName=entity_import_from_csv --disabled-listeners=all --no-interaction --env=prod
+
+    Scheduled successfully.
 
 .. caution::
 
