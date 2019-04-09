@@ -349,19 +349,19 @@ Images
 
    <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
 
-.. |SectionDropD| image:: /user_guide/img/dashboards/dashboard/dashboards/section_dd.png
+.. |SectionDropD| image:: /img/widgets/section_dd.png
    :align: middle
 
-.. |HeaderDropD| image:: /user_guide/img/dashboards/dashboard/dashboards/header_dd.png
+.. |HeaderDropD| image:: /img/widgets/header_dd.png
    :align: middle
 
-.. |WidgetList| image:: /user_guide/img/dashboards/dashboard/dashboards/widget_list.png
+.. |WidgetList| image:: /img/widgets/widget_list.png
    :align: middle
 
-.. |ManageWidget| image:: /user_guide/img/dashboards/dashboard/dashboards/manage_widget.png
+.. |ManageWidget| image:: /img/widgets/manage_widget.png
    :align: middle
 
-.. |DActionIcons| image:: /user_guide/img/dashboards/dashboard/dashboards/dashboard_action_icons.png
+.. |DActionIcons| image:: /img/widgets/dashboard_action_icons.png
    :align: middle
 
 .. |BGotoPage| raw:: html
@@ -372,7 +372,7 @@ Images
 
    <i class="fa fa-times" aria-hidden="true"></i>
 
-.. |InstallPack| image:: /admin_guide/img/extension/install_package.png
+.. |InstallPack| image:: /img/extension/install_package.png
    :align: middle
 
 .. |IcSendEmail| raw:: html
@@ -491,7 +491,7 @@ Images
 
    <i class="fa fa-copy" aria-hidden="true"></i>
 
-Menus
+.. menus
 
 .. |IcGettingStarted| raw:: html
 
