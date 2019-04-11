@@ -6,7 +6,7 @@ My User
 .. important::
    The provided description covers fields and features that are default or commonly used. The actual set of available elements may vary depending on your role and other system settings.
 
-When you log into Oro application, you can always find a link to your user page under menu below your username. This is a fast way to access your user profile, calendar, mailbox, and task list.
+When you log into the Oro application, you can always find a link to your user page under menu below your username. This is a fast way to access your user profile, calendar, mailbox, and task list.
 
 .. contents:: :local:
 
@@ -57,9 +57,9 @@ There are a number of effective tools and actions available on the page of your 
 
    * In the **General Information** section, you can view the details of your profile, :ref:`create an API key <doc-my-user-actions-api>`, and :ref:`download the latest MS Outlook add-in <download-ms-outlook>`.
 
-   * In the **Activity** section, you can see the emails you sent and the calls you logged. If a user mentions you as a context for their activity, this activity also appears on the list. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in Oro application.
+   * In the **Activity** section, you can see the emails you sent and the calls you logged. If a user mentions you as a context for their activity, this activity also appears on the list. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in the Oro application.
 
-   * In the **Additional Information** section, you can view and manage tasks and cases related to you. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in Oro application.
+   * In the **Additional Information** section, you can view and manage tasks and cases related to you. See the :ref:`Activities <user-guide-activities>` topic for more information on activities available in the Oro application.
 
 
 .. _doc-my-user-actions-api:

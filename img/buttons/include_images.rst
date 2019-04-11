@@ -7,6 +7,14 @@ Images
 
 .. begin
 
+.. |IcDoubleArrowLeft| raw:: html
+
+   <i class="fa fa-backward fa-lg" aria-hidden="true"></i>
+
+.. |IcDoubleArrowRight| raw:: html
+
+   <i class="fa fa-forward fa-lg" aria-hidden="true"></i>
+
 .. |IcUpload| raw:: html
 
    <i class="fa fa-upload fa-lg" aria-hidden="true"></i>
