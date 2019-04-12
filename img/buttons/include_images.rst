@@ -357,19 +357,19 @@ Images
 
    <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
 
-.. |SectionDropD| image:: /img/widgets/section_dd.png
+.. |SectionDropD| image:: /img/dashboards/section_dd.png
    :align: middle
 
-.. |HeaderDropD| image:: /img/widgets/header_dd.png
+.. |HeaderDropD| image:: /img/dashboards/header_dd.png
    :align: middle
 
-.. |WidgetList| image:: /img/widgets/widget_list.png
+.. |WidgetList| image:: /img/dashboards/widget_list.png
    :align: middle
 
-.. |ManageWidget| image:: /img/widgets/manage_widget.png
+.. |ManageWidget| image:: /img/dashboards/manage_widget.png
    :align: middle
 
-.. |DActionIcons| image:: /img/widgets/dashboard_action_icons.png
+.. |DActionIcons| image:: /img/dashboards/dashboard_action_icons.png
    :align: middle
 
 .. |BGotoPage| raw:: html
@@ -499,7 +499,6 @@ Images
 
    <i class="fa fa-copy" aria-hidden="true"></i>
 
-.. menus
 
 .. |IcGettingStarted| raw:: html
 

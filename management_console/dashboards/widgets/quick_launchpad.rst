@@ -5,7 +5,7 @@ Quick Launchpad
 
 The Quick Launchpad widget gives you access to most commonly used actions and pages.
 
-.. image:: /img/widgets/quick_launchpad.png
+.. image:: /img/dashboards/quick_launchpad.png
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -20,4 +20,4 @@ You can adjust the following settings for the quick launchpad widget:
 
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
 
-.. image:: /img/widgets/quick_launchpad_config.png
+.. image:: /img/dashboards/quick_launchpad_config.png

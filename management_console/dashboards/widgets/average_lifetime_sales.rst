@@ -20,5 +20,5 @@ You can adjust the following settings for the average lifetime sales widget:
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
 
-.. image:: /img/widgets/average_lifetime_sales_config.png
+.. image:: /img/dashboards/average_lifetime_sales_config.png
 

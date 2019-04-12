@@ -59,7 +59,7 @@ You can easily create and manage widgets for various team members. For instance,
 
 You can manage widgets using tools in their header:
 
-.. image:: /img/widgets/dashboards_6.png
+.. image:: /img/dashboards/dashboards_6.png
    :alt: Widget tools
 
 * |IcCollapse| Collapse or |IcExpandPlus| Expand it. If a widget has been collapsed, only its header is displayed on the dashboard.

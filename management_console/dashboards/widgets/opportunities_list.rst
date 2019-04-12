@@ -5,7 +5,7 @@ Opportunities List
 
 The Opportunities List widget displays the list of opportunities that can be configured to show only opportunities in certain conditions, e.g. only open opportunities that are owned by the current user.
 
-.. image:: /img/widgets/opportunities_list.png
+.. image:: /img/dashboards/opportunities_list.png
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -24,5 +24,5 @@ You can adjust the following settings for the opportunities list widget:
 * **Excluded** --- select what status the widget should not display (e.g. Closed Won).
 * **Sort by** --- define the sorting order for the data to be displayed in the widget, and whether the data should be sorted in ascending or descending order. 
 
-.. image:: /img/widgets/opportunities_list_config.png
+.. image:: /img/dashboards/opportunities_list_config.png
 

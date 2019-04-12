@@ -19,7 +19,7 @@ To create a dashboard:
 #. Click **Create Dashboard**.
 #. Provide the following details in the form:
 
-   .. image:: /img/widgets/dashboards_1.png
+   .. image:: /img/dashboards/dashboards_1.png
       :alt: A form for creating a new dashboard
 
    * **Label** --- Name used to refer to the dashboard in the system.
@@ -37,13 +37,13 @@ You can switch to a different dashboard either by:
 
 * Clicking |IcDashboard| **Dashboards** in the main menu and selecting the dashboard you need.
 
-  .. image:: /img/widgets/dashboards_3.png
+  .. image:: /img/dashboards/dashboards_3.png
      :width: 25%
      :alt: Switch to a dashboard by clicking the dashboard name
 
 * Toggling dashboards in the header of the dashboard page.
 
-  .. image:: /img/widgets/dashboards_4.png
+  .. image:: /img/dashboards/dashboards_4.png
      :alt: Toggle dashboards
 
 Add, Edit, and Delete a Dashboard

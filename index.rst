@@ -12,9 +12,11 @@ Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Congue 
        :titlesonly:
        :maxdepth: 3
 
+       concept_guides/index
        management_console/index
-       commerce_storefront/index
-       guides/index
+       storefront/index
+       glossary
+
 
 
 

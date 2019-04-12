@@ -10,7 +10,7 @@ Dashboards are typically the first thing that sales managers see when they login
 
 Each sales rep, manager, and employee can create and manage their own custom dashboard by adding relevant :ref:`widgets <user-guide--business-intelligence--widgets--explore>`, allowing them to track the data that is most relevant to them (i.e. revenues, lost opportunities, abandoned carts, and more).
 
-.. image:: /img/widgets/dashboards_0.png
+.. image:: /img/dashboards/dashboards_0.png
    :alt: Default dashboard
 
 To learn how to work with dashboards and their widgets, click on the links below.

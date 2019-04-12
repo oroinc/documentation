@@ -5,7 +5,7 @@ Opportunity Generating Campaigns
 
 The widget shows you top 5 campaigns that generate the biggest number of opportunities.
 
-.. image:: /img/widgets/op_generating_camp.png
+.. image:: /img/dashboards/op_generating_camp.png
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -20,5 +20,5 @@ You can adjust the following settings for the opportunity generating campaigns w
 * **Widget title** --- the name displayed on the dashboard. To change the name, clear the **Use Default** check box and provide a new name.
 * **Date Range** --- the time for which the widget details are displayed.
 
-.. image:: /img/widgets/op_generating_camp_config.png
+.. image:: /img/dashboards/op_generating_camp_config.png
 

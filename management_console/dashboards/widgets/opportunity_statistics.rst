@@ -5,7 +5,7 @@ Opportunity Statistics
 
 The Opportunity Statistics widget displays a set of metrics that indicate performance of the opportunity pipeline.
 
-.. image:: /img/widgets/opportunity_statistics_1.png
+.. image:: /img/dashboards/opportunity_statistics_1.png
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:
 
@@ -33,4 +33,4 @@ You can adjust the following settings for the opportunity statistics widget:
 
 * **Territories** --- if sales `territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view opportunities filtered within one or several specific territories.
 
-.. image:: /img/widgets/opportunity_statistics_2.png
+.. image:: /img/dashboards/opportunity_statistics_2.png

@@ -21,6 +21,7 @@ Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Congue 
 .. html_use_index = True
 
 .. toctree::
+   :titlesonly:
    :hidden:
 
    getting_started/index
