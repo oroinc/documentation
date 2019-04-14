@@ -199,7 +199,7 @@ html_sidebars = {
 htmlhelp_basename = 'TheOroCommercedoc'
 
 def setup(app):
-    app.add_stylesheet('http://cdnjs.cloudflare.com/ajax/libs/git-awesome/4.7.0/css/font-awesome.css')
+    app.add_stylesheet('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
     app.add_stylesheet('css/custom.css')
 
 # -- Options for LaTeX output --------------------------------------------------
