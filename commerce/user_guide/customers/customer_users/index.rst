@@ -138,7 +138,7 @@ To add a new OAuth application for a customer user in the management console:
 
 4. Click **Create**.
 
-A corresponding notification is sent to your primary email address. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
+A corresponding notification is sent to the primary email address of the user, the owner of oauth application. You can change the default recipient, localization, or an email content if needed by updating the :ref:`OAuth email templates <user-guide-using-emails-create-template>` and the related :ref:`notification rule <user-guide-using-emails-notifications>` set out-of-the-box in the system configuration.
 
 .. include:: /getting_started/my_oro/oauth.rst
    :start-after: begin_2
