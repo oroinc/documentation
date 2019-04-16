@@ -32,7 +32,7 @@ OroCloud Environment Infrastructure Diagram
 
 The diagram below reflects a standard Oro application deployment in GCP via OroCloud.
 
-.. image:: /cloud/img/architecture.png
+.. image:: /cloud/img/standard_average_environment_schema.png
    :alt: Architecture of a standard Oro application deployment in GCP via OroCloud
 
 Redundancy
