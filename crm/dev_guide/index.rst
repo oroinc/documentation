@@ -24,4 +24,3 @@ This guide provides an overview of OroPlatform architecture, design and key feat
    db_optimization
    impersonation
    cookbook/index
-   bundles
