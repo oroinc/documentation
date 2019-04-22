@@ -185,3 +185,205 @@ and caching to work. Ensure these modules are enabled in Apache configuration.
            </filesMatch> 
       </IfModule> 
 
+Optimize Elasticsearch
+^^^^^^^^^^^^^^^^^^^^^^
+
+There are a few ways to tune up search speed performance:
+
+* Give memory to the filesystem cache
+* Use faster drives (SSD instead of HD, local storage over virtual)
+* Search fewer fields
+* Warm up the filesystem cache
+
+See more information on optimizing search speed on `Elasticsearch website <https://www.elastic.co/guide/en/elasticsearch/reference/current/tune-for-search-speed.html>`__.
+
+To tune for indexing speed, you can try the following recommendations:
+
+* Use multiple workers/threads to send data to Elasticsearch to use all resources of the cluster
+* Increase `index.refresh_interval` to allow larger segments to flush and decreases future merge pressure
+* Disable refresh and replicas for initial loads
+* Disable `swapping <https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration-memory.html>`__
+* Give memory to the filesystem cache
+* Use faster hardware
+
+See more information on optimizing indexing speed on `Elasticsearch website <https://www.elastic.co/guide/en/elasticsearch/reference/current/tune-for-indexing-speed.html>`__
+
+Also, keep in mind that it is not recommended to use Elasticsearch with MySQL, PostgreSQL, Redis and/or Rabbit on one server to avoid slow performance.
+
+Optimize Redis
+^^^^^^^^^^^^^^
+
+To optimize Redis, try the following configurations for performance optimization:
+
+* Limits
+
+  .. code:: bash
+
+     maxclients 100000
+     maxmemory 512mb
+     maxmemory-policy allkeys-lru
+     maxmemory-samples 3
+
+* Append only mode
+
+  .. code:: bash
+
+     appendonly no
+     appendfsync everysec
+     no-appendfsync-on-rewrite no
+     auto-aof-rewrite-percentage 100
+     auto-aof-rewrite-min-size 64
+
+* Slow log
+
+  .. code:: bash
+
+     slowlog-log-slower-than 10000
+     slowlog-max-len 1024
+
+* Advanced config
+
+  .. code:: bash
+
+     hash-max-ziplist-entries 512
+     hash-max-ziplist-value 64
+     list-max-ziplist-entries 512
+     list-max-ziplist-value 64
+     set-max-intset-entries 512
+     zset-max-ziplist-entries 128
+     zset-max-ziplist-value 64
+     activerehashing yes
+
+The complete configuration recommendations is available in the `Redis configuration file example <http://download.redis.io/redis-stable/redis.conf>`__.
+
+You can find more information on memory optimization on `Redis website <https://redis.io/topics/memory-optimization>`__.
+
+Optimize PostgreSQL
+^^^^^^^^^^^^^^^^^^^
+
+The following recommendations that can highly improve PostgreSQL performance:
+
+* Increase the *shared_buffers* value in postgresql.conf. The *shared_buffers* parameter defines how much dedicated memory PostgreSQL uses for the cache. The recommended value is 25% of your total machine RAM, but the value can be lower or higher depending on your system configuration. Try finding the right balance by altering the values.
+* Increase the *effective_cache_size* value in postgresql.conf. The parameter specifies the amount of memory available in the OS and PostgreSQL buffer caches. Usually, it should be more than 50% of the total memory. Otherwise, it may slow down the performance.
+* Increase the *work_mem* value, if you need to do complex sorting. But keep in mind that setting this parameter globally can cause significant memory usage. So it is recommended to modify the option at the session level.
+* Increase the *checkpoint_segments* value to make checkpoints less frequent and less resource-consuming.
+* Increase the *max_fsm_pages* and *max_fsm_relations* value. In a busy database, set the parameter to higher than 1000.
+* Reduce the *random_page_cost* value. It encourages the query optimizer to use random access index scans.
+
+For more optimization configurations, see `PostgreSQL website <https://wiki.postgresql.org/wiki/Performance_Optimization>`_
+
+Optimize MySQL
+^^^^^^^^^^^^^^
+
+You can get better performance and minimize storage space by using some of the techniques listed below.
+
+1. Optimize at the database level. Make sure that:
+
+  * Tables are structured properly, columns have the right data types.
+  * Right indexes are in place to make queries efficient.
+  * You are using the appropriate storage engine for each table.
+  * You use an appropriate row format.
+  * The application uses an appropriate locking strategy.
+  * All memory areas are used for caching sized correctly.
+
+2. Optimize at the hardware level. System bottlenecks typically arise from these sources:
+
+   * Disk seeks. To optimize seek time, distribute the data onto more than one disk.
+   * Disk reading and writing. When the disk is at the correct position, we need to read or write the data. With modern disks, one disk delivers at least 10–20MB/s throughput. This is easier to optimize than seeks because you can read in parallel from multiple disks.
+   * CPU cycles. Having large tables compared to the amount of memory is the most common limiting factor. But with small tables, speed is usually not the problem.
+   * Memory bandwidth. When the CPU needs more data than can fit in the CPU cache, the main memory bandwidth may become a bottleneck.
+
+More recommendations are available in :ref:`MySQL <mysql-optimization>` topic in Oro documentation.
+
+For more information on performance optimization on MySQL website, see the `Optimization <https://dev.mysql.com/doc/refman/5.7/en/optimization.html>`__ section of the Reference Manual.
+
+Optimize Symfony
+^^^^^^^^^^^^^^^^
+
+You can make Symfony faster if you optimize your servers and applications:
+
+* Use the OPcache byte code cache to avoid having to recompile PHP files for every request
+* Configure OPcache for maximum performance
+
+  .. code-block:: php
+     :linenos:
+
+     ; php.ini
+     ; maximum memory that OPcache can use to store compiled PHP files
+     opcache.memory_consumption=256
+
+     ; maximum number of files that can be stored in the cache
+     opcache.max_accelerated_files=20000
+
+* Do not check PHP files timestamps. By default, OPcache checks if cached files have changed their contents since they were cached. This check introduces some overhead that can be avoided as follows:
+
+  .. code-block:: php
+     :linenos:
+
+     ; php.ini
+     opcache.validate_timestamps=0
+
+  After each deploy, empty and regenerate the cache of OPcache.
+
+* Configure the PHP realpath cache
+
+  .. code-block:: php
+     :linenos:
+
+     ; php.ini
+     ; maximum memory allocated to store the results
+     realpath_cache_size=4096K
+
+     ; save the results for 10 minutes (600 seconds)
+     realpath_cache_ttl=600
+
+* Optimize Composer autoloader
+
+  .. code-block:: php
+     :linenos:
+
+     composer dump-autoload --optimize --no-dev --classmap-authoritative
+
+For more information on Symfony performance optimization, see the list of all recommendations on `Symfony website <https://symfony.com/doc/3.4/performance.html>`__.
+
+Improve Doctrine Performance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are several things you can do to improve Doctrine performance:
+
+* Use the EXTRA_LAZY fetch-mode feature for collections to avoid performance and memory problems initializing references to large collections.
+* Mark a many-to-one or one-to-one association as fetched temporarily to batch fetch these entities using a WHERE ..IN query.
+
+  .. code-block:: php
+     :linenos:
+
+     <?php
+     $query = $em->createQuery("SELECT u FROM MyProject\User u");
+     $query->setFetchMode("MyProject\User", "address", \Doctrine\ORM\Mapping\ClassMetadata::FETCH_EAGER);
+     $query->execute();
+
+More recommendations on improving Doctrine performance are available on `Doctrine website <https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/improving-performance.html>`__.
+
+Optimize Message Queue Consumers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+MQ consumers may take up quite a lot of CPU time. To avoid this, consider moving consumers to a separate node, or have enough CPU cores in the main node.
+
+Use Blackfire to Profile Requests
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use `Blackfire <https://blackfire.io/>`__ at any stage of application's lifecycle to gather data about the behavior of your current codebase, analyze profiles and optimize the code.
+
+Using Blackfire, you can find and fix performance issues by using the following methods:
+
+* Profile key pages
+* Select the slowest ones
+* Compare and analyze profiles to spot differences and bottlenecks (on all dimensions)
+* Find the biggest bottlenecks
+* Try to fix the issue or improve the overall performance
+* Check that tests are not broken
+* Generate a profile of the updated version of the code
+* Compare the new profile with the first one
+* Rinse and repeat
+
+Read more on how to use `Blackfire in its documentation portal <https://blackfire.io/docs/book/index>`__.
