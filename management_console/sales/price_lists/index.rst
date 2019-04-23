@@ -29,5 +29,5 @@ Learn more on price lists in the following topics:
    autocomplete
    schedule
    multicurrency
-   storage_type
+
 
