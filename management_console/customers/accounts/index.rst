@@ -51,7 +51,7 @@ In case of installation of OroCRM over an existing OroCommerce instance, new acc
 .. toctree::
 
    create
-   view_grid
+   manage
    merge
    import
    export
