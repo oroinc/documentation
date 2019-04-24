@@ -55,7 +55,6 @@ Below you can find the complete reference of topics that provide a 360-degree vi
    :titlesonly:
 
    pricing_overview
-   pricelist/index
    calculation
 
 .. include:: /img/buttons/include_images.rst

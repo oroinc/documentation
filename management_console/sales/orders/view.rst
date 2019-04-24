@@ -173,7 +173,7 @@ You can see who started the activity, its type, name and description, when it wa
 
 Click the activity to see detailed information about it.
 
-.. image:: /user_guide/img/products/products/products_review_activity_manage2.png
+.. image:: /img/sales/orders/products_review_activity_manage2.png
    :alt: The details of the selected activity
 
 To edit the activity, click the |IcMore| **More Options** menu at the end of the row and click |IcEdit| **Update**. In the dialog that appears, make required changed and then click **Save**.

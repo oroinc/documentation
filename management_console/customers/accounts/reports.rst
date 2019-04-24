@@ -15,4 +15,4 @@ The **Accounts by Opportunities** report is located under **Reports and Segments
 .. image:: /img/customers/accounts/accounts_report_by_opportunity.png
    :alt: Accounts by opportunities
 
-.... hint:: New custom reports can be added that can use details of the accounts, as well as of any records related to the accounts. For more details on the ways to create and customize the reports, refer to the :ref:`Reports topic <user-guide-reports>`.
+.. hint:: New custom reports can be added that can use details of the accounts, as well as of any records related to the accounts. For more details on the ways to create and customize the reports, refer to the :ref:`Reports topic <user-guide-reports>`.
