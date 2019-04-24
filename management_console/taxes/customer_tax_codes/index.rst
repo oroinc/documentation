@@ -31,15 +31,7 @@ To view all customer tax codes, navigate to **Taxes > Customer Tax Codes** in th
 
 In the customer tax codes list, you will find the information about the code (unique identifier), detailed description, and the dates when the customer tax code was created and updated.
 
-You can perform the following actions with every item in the customer tax codes list:
-
- * `View customer tax code details <view>`_: Click on the item to open its details page.
-
-   Alternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page.
-
- * `Edit customer tax code details <edit>`_: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
-
- * Delete a Customer Tax Code: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcDelete| to remove the customer tax code.
+Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |IcDelete| to remove the customer tax code.
 
 
 View Customer Tax Code Details

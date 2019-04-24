@@ -18,7 +18,7 @@ To manage quantities for all products in multiple warehouses:
 
 Updated information is automatically saved.
 
-.. _doc--products--actions--manage-inventory:
+.. _doc--products--actions--manage-inventory-per-product:
 
 Per Product
 -----------

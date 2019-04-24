@@ -17,12 +17,10 @@ To view customer tax code details:
       :alt: The log of edits of the selected customer
 
  * View details of the customer who is linked to this customer tax code --- Click the line with the customer account details.
+
+ * |IcEdit| **Edit** or |IcDelete| **Delete** the selected customer tax code.
    
    .. note:: You can edit the customer details to remove the link to this customer tax code, if necessary.
-
- * Edit a customer tax code details --- Click |IcEdit| **Edit** to the top right of the page.
-
- * Delete a customer tax code --- Click |IcDelete| **Delete** to the top right of the page.
 
 .. stop
 

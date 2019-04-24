@@ -17,15 +17,14 @@ To view product tax code details:
       :alt: The log of edits of this product tax code
 
  * View details of the product linked to this product tax code --- Click on the line with the customer account details.
+
+ * |IcEdit| **Edit** or |IcDelete| **Delete** the selected product tax code.
    
    .. note:: You can edit the product details to remove the link to this product tax code, if necessary.
 
    .. image:: /img/taxes/link_tax_code_to_product.png
       :alt: The details of the product linked to this product tax code
 
- * Edit product tax code details --- Click |IcEdit| **Edit** to the top right of the page.
-
- * Delete a Product Tax Code --- Click |IcDelete| **Delete** to the top right of the page.
 
 .. stop
 

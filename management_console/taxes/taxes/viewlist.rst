@@ -12,15 +12,7 @@ To view all tax rates, navigate to **Taxes > Tax Rates** in the main menu.
 
 In the tax rate list, you will find the information about the tax rates' codes (unique identifier), detailed description, and the dates when the tax rate was created and updated.
 
-You can perform the following actions with every item in the tax rates list:
-
- * `View Tax Rate details <view>`_ --- Click on the item to open its details page.
-
-   Alternatively: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page.
-
- * `Edit Tax Rate details <edit>`_ --- Hover over the |IcMore| **More Options** menu to the right of the item and click |IcEdit| to start editing its details.
-
- * Delete a Tax Rate: Hover over the |IcMore| **More Options** menu to the right of the item and click |IcDelete| to remove the Tax Rate.
+Hover over the |IcMore| **More Options** menu to the right of the item and click |IcView| to open its details page, |IcEdit| to edit, or  |IcDelete| to remove the tax rate.
 
 .. stop
 
