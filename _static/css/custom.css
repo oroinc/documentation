@@ -108,7 +108,7 @@ div.sphinxsidebarwrapper {
 div.sphinxsidebarwrapper ul {
     overflow-y: scroll;
     /*min-height: 450px;*/
-    max-height: 450px;
+    max-height: 800px;
 }
 
 div.sphinxsidebarwrapper ul.current li ul {
@@ -143,7 +143,8 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current a, div.sphinxsidebarwr
 }
 
 /* +2.1 */
-div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2 a {
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2 a,
+div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2 a {
     /*color: #fff !important;*/
     color: #b84926 !important;
     background-color: white; /*#eee*/
@@ -167,7 +168,8 @@ div.hidden {
 }
 
 /* +3.1 */
-div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current ul li.toctree-l3 a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul.current li.toctree-l2.active ul li.toctree-l3 a {
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-l2.current ul li.toctree-l3 a,
+div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul.current li.toctree-l2.active ul li.toctree-l3 a {
     /*color: #fff !important;*/
     color: #b84926 !important;
     background-color: white; /*#eee*/
@@ -177,11 +179,11 @@ div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul.current li.toctree-
 /* +6 */
 div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current ul {
     /*display: none;*/
-
 }
 
 /* +2.2 */
-div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current a, div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2.active a {
+div.sphinxsidebarwrapper ul.current li.toctree-l1.current ul li.toctree-l2.current a,
+div.sphinxsidebarwrapper ul.current li.toctree-l1.active ul li.toctree-l2.active a {
     color: #111 !important;
     /*color: #b84926 !important;*/
     text-decoration: none;
@@ -253,7 +255,10 @@ div.sphinxsidebar ul li.toctree-l2 > a {
 
 
 /* +3.4 */
-div.sphinxsidebar ul li.toctree-l3 > a {
+div.sphinxsidebar ul li.toctree-l3 > a,
+div.sphinxsidebar ul li.toctree-l4 > a,
+div.sphinxsidebar ul li.toctree-l5 > a,
+div.sphinxsidebar ul li.toctree-l6 > a{
     color: #b84926;/* !important;*/
     background-color: white; /*#eee*/
     font-size: 13px;

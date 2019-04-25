@@ -7,8 +7,8 @@ Customer Groups
 
 In the Customer Group section, you can organize customers into groups and share the price lists, payment and tax-related settings between several customers.
 
-.... image:: /img/customers/customer_groups/CustomerGroups.png
-  ..:alt: The list of all customer groups
+.. .. image:: /img/customers/customer_groups/CustomerGroups.png
+  .. :alt: The list of all customer groups
 
 Hover over the |IcMore| **More Options** menu to the right of the necessary customer group to perform the following actions:
 

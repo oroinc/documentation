@@ -314,7 +314,7 @@ epub_copyright = u'2017, OroTeam'
 #epub_exclude_files = []
 
 # The depth of the table of contents in toc.ncx.
-#epub_tocdepth = 3
+#epub_tocdepth = 5
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
