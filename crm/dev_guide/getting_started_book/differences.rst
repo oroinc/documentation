@@ -128,7 +128,7 @@ Furthermore, once an ACL has been defined, you can reuse it using the `@AclAnces
 
 .. seealso::
 
-    Read more in the :doc:`Security chapter </dev_guide/getting_started_book/security>`.
+    Read more in the `Security chapter <https://oroinc.com/oroplatform//doc/current/bundles/securitybundle>`__
 
 Extension Management
 --------------------
