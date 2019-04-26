@@ -434,7 +434,6 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/dev_guide/getting_started_book/security`
         * Reference: :doc:`/reference/annotation/acl`
         * Reference: :doc:`/reference/annotation/acl_ancestor`
         * Reference: :doc:`/reference/format/acls`

@@ -2,6 +2,7 @@ Getting Started
 ===============
 
 .. include:: /dev_guide/getting_started_book/introduction.rst
+   :start-after: begin
 
 .. toctree::
     :maxdepth: 2
@@ -9,6 +10,5 @@ Getting Started
     differences
     configuration
     localization
-    security
     navigation
 

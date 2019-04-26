@@ -72,7 +72,7 @@ For more details about how to generate an API Key and authentication header, ple
 
     Please note that an API key will be generated in the scope of the current organization and will allow you to access data
     in the scope of that particular organization only. For more information about the organization entity purposes, see the :ref:`Company Structure and Organization <user-guide-getting-started-company-structure>` guide.
-    To understand the permissions and security model, see the :ref:`Security <security>` guide.
+    To understand the permissions and security model, see `Security <https://oroinc.com/oroplatform//doc/current/bundles/securitybundle>`__ documentation.
 
 
 After the API key is generated, you will be able to execute API requests via the sandbox, Curl command, any other REST client or use the API via your own application.

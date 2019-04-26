@@ -1,5 +1,7 @@
 :orphan:
 
+.. begin
+
 OroPlatform and OroCRM
 ----------------------
 
