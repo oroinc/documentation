@@ -50,7 +50,6 @@ Below you can find the complete reference of topics that provide a 360-degree vi
           * :ref:`Pricing Calculation Optimization <admin-website-index-and-price-calc>`
 
 .. toctree::
-   :maxdepth: 2
    :hidden:
    :titlesonly:
 

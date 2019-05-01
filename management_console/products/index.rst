@@ -5,7 +5,7 @@
 
 OroCommerce enables you to create and manage products in the way that fits specifically your business strategies and requirements. As it may not be obvious where to start working with your product, several dedicated sections have been compiled to help you understand the full picture of creating and managing products, as well as some additional aspects that working with products may involve.
 
-It is suggested to start with the :ref:`Understand Products' Life Cycle <doc--products--before-you-begin>` section to familiarize yourself with the product cycle in OroCommerce, find out how to create different types of products (simple and configurable), and how to set up a matrix form to display multiple variations of one configurable product in the storefront.
+It is suggested to start with the :ref:`Products <doc--products--before-you-begin>` section to familiarize yourself with the product cycle in OroCommerce, find out how to create different types of products (simple and configurable), and how to set up a matrix form to display multiple variations of one configurable product in the storefront.
 
 Refer to the :ref:`Products Grid <doc--products--characteristics>` section to learn about the actions available for products from the grid, such as duplicating, importing, or inline editing, as well as how to manage product quantities in multiple warehouses on the product page.
 
@@ -58,6 +58,7 @@ This section provides shortcuts to topics that may be useful for various types o
 
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    master_catalog/index

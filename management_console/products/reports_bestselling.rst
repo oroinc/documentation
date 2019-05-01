@@ -1,7 +1,7 @@
 .. _best-selling-products-reports:
 
-Filter the Best Selling Products Report Output
-==============================================
+Best Selling Products Report
+============================
 
 The Best Selling Products report displays the statistics regarding the most popular and highly purchased products organized in a table which can be filtered by a specific period of time, SKU, name, etc.
 
@@ -31,3 +31,6 @@ To filter the output of a Best Selling Products report:
 6. To reorder the columns, click and hold the column name, then drag it to a new location. To show / hide a column, select / clear the **Show** check box next to it.
 
    .. image:: /img/reports/system_reports_5.png
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

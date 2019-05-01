@@ -125,7 +125,7 @@ For instance:
 
 * However, if you choose 50 items, your price is recalculated to $8.99 because this is the tier pricing set for the quantity of 50 brushes. 
 
-  .. image:: //img/products/products/your_price_recalculated_after_tier_application.png
+  .. image:: /img/products/products/your_price_recalculated_after_tier_application.png
      :alt: Your price and listed price are different because the pricing tier is applied
 
 * The same goes for sets:

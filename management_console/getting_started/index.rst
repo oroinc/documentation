@@ -5,7 +5,7 @@
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    community_vs_enterprise
    application_authentication/index

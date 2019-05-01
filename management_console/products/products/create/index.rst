@@ -4,6 +4,7 @@ Create Simple and Configurable Products
 =======================================
 
 .. contents:: :local:
+   :depth: 1
 
 Product Type: Simple vs Configurable
 ------------------------------------
@@ -131,11 +132,3 @@ The product should now be available on the website in the category we have previ
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
-
-.. toctree:: :hidden:
-
-   simple_vs_config
-   create_simple
-   create_complex
-

@@ -1,3 +1,5 @@
+:orphan:
+
 Simple vs Configurable Products
 -------------------------------
 

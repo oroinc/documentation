@@ -1,3 +1,5 @@
+:orphan:
+
 .. _user-guide--page-templates:
 
 Manage Product Page Design with Page Templates
@@ -12,16 +14,19 @@ When creating a product, you can select one of the available pre-designed page t
 There are several page template available out of the box:
 
 .. image:: /img/products/products/PageTemplate.png
+   :alt: The list of available page templates
 
 * **Default template**, where additional attribute groups are displayed in tabs.
 
   .. image:: /img/products/products/ProductPageTemplateTabs.png
+     :alt: Illustrate the way the product page is displayed in the storefront with the selected default template
 
 * **Short Page**, where no additional attribute groups are displayed.
 
 * **Two Columns Page**, where additional attribute groups are displayed in two columns.
 
   .. image:: /img/products/products/ProductPageTemplateTwoCols.png
+     :alt: Illustrate the way the product page is displayed in the storefront with the selected two columns page template
 
 * **List Page**, where additional attribute groups are displayed in columns one below another.
 

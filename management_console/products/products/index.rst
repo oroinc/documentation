@@ -5,9 +5,6 @@ Products
 
 .. begin_product_configuration
 
-Understand Products' Life Cycle
--------------------------------
-
 The flow for creating and managing products may vary depending on the needs of your business, whether you have small scale operations or complicated product characteristics and visibility settings. With the help of OroCommerce flexible product management system, configuring products is simple to achieve. However, it may not be obvious where to start. This section is here to guide you through the process and refer you to suitable topics.
 
 Prepare for Product Creation
@@ -48,12 +45,14 @@ Once you have created products, you can:
 .. finish_product_configuration
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    manage/index
    create/index
    managing_product_visibility
-   page_templates
+   import_products
+   export_products
    product_units/index
 
 

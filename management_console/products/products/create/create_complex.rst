@@ -1,3 +1,5 @@
+:orphan:
+
 Create a Configurable Product
 -----------------------------
 

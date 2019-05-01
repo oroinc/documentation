@@ -1,3 +1,5 @@
+:orphan:
+
 .. _doc--products--actions--edit:
 
 Edit a Product
