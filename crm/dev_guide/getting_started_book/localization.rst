@@ -9,14 +9,11 @@ the format of names and addresses.
 System Configuration
 --------------------
 
-The OroPlatform system configuration which is available the *System* / *Configuration*
-menu has a special *Localization* section that defines localization parameters.
-The user interface looks like this:
+The OroPlatform system configuration which is available in the **System > Configuration** menu has a special **Localization** section that defines localization parameters.
 
 .. image:: /dev_guide/img/localization/system_configuration.png
+   :alt: Localization configuration settings
 
-- **Locale**: defines the current system locale and is used to format date/time/datetime,
-  numeric and percent values, monetary values and appropriate name formats;
 - **Primary Location**: usually refers to the current country and is used
   to define appropriate address formats and the default currency;
 - **Format address per country**: is a flag used to define whether or not
@@ -26,9 +23,10 @@ The user interface looks like this:
   This value is used to generate proper reports;
 - **Timezone**: defines which timezone should be used to render time and datetime
   values;
-- **Currency** specifies the system's currency in monetary fields;
-- The **Temperature Unit** and **Wind Speed Unit** are used to render additional
+- **Temperature Unit** and **Wind Speed Unit** are used to render additional
   information on location maps.
+- **Default Localization**: specifies the default language of the management console and storefront UI.
+- **Enabled Localizations**: provides the list of localizations generated automatically based on the data preconfigured in the **System > Localization > Localizations** menu.
 
 Configuration Files
 -------------------

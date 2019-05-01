@@ -9,7 +9,6 @@ Infrastructure-related configuration parameters are stored in the *config/parame
 * The ``mailer_`` parameters define settings used to deliver emails sent by the application.
 * The ``websocket_`` parameters define settings for the web UI.
 * The ``session_handler`` value specifies the PHP `session handler`_ to be used.
-* The ``locale`` value is the fallback locale used as a last resort for `translations`_.
 * The ``secret`` value is used to generate `CSRF tokens`_.
 * The ``assets_version`` parameter is used to bust the cache on assets by globally adding a query parameter to all rendered asset paths.
 * The ``assets_version_strategy`` value defines the strategy used to generate the global assets version. The available values are:
@@ -55,7 +54,6 @@ Default configuration options for the Oro application are provided in brackets b
             websocket_backend_host ('*'):
             websocket_backend_port (8080):
             session_handler (session.handler.native_file):
-            locale (en):
             secret (ThisTokenIsNotSoSecretChangeIt):
             installed (null):
             assets_version (null):
@@ -113,7 +111,6 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
 
           session_handler:        session.handler.native_file
 
-          locale:                 en
           secret:                 ThisTokenIsNotSoSecretChangeIt
           installed:              ~
           assets_version:         ~
