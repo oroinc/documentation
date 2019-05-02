@@ -14,9 +14,13 @@ The Marketing Menu in the Oro application provides access tools for managing the
 * :ref:`Web catalog <user-guide--web-catalog-create>`
 * :ref:`Landing page <user-guide--landing-pages>`
 * :ref:`Content Blocks <user-guide--landing-pages--marketing--content-blocks>`
-* :ref:`Customer Login Pages<>`
 
-:ref:`Marketing lists <user-guide-marketing-lists>` are lists of contacts segmented according to conditions which are defined for the purpose of bulk emailing or telephone outreach. In your Oro application, virtually every entity is available as a marketing list target. For instance, marketing lists can be created based on accounts (primary email of a default contact is used), or, if you are using OroCommerce, from customer users, quotes, orders, and shopping lists. Marketing lists can be used to run email campaigns and synchronize with subscribers lists in MailChimp and/or address books in dotMailer.
+
+:ref:`Marketing lists <user-guide-marketing-lists>` are lists of contacts segmented according to conditions which are defined for the purpose of bulk emailing or telephone outreach. In your Oro application, virtually every entity is available as a marketing list target. For instance, marketing lists can be created based on accounts (primary email of a default contact is used), or, if you are using OroCommerce, from customer users, quotes, orders, and shopping lists.
+
+Marketing lists can be used to synchronize with subscribers lists in :ref:`MailChimp <user-guide-mc-integration>`, and once the integration is configured, :ref:`send an email campaign via MailChimp <user-guide-mailchimp-campaign>`.
+
+Also, the Oro application supports out-of-the-box integration with :ref:`dotmailer <user-guide-dm-integration>`, allowing you to map the marketing lists to address books in dotmailer, use your address books to :ref:`send an email campaign via dotmailer <user-guide-dotmailer-campaign>`, and :ref:`manage dotmailer data fields and mappings <user-guide-dotmailer-data-fields>`.
 
 :ref:`Email Campaigns <user-guide-email-campaigns>` can be generated and sent in your Oro application without the involvement of external marketing automation applications. This means that once you have defined the rules for a :ref:`marketing list <user-guide-marketing-lists>` generation and have created an :ref:`email template <user-guide-email-template>`, you can easily set up an email campaign within which all the contacts on the list will receive personalized emails in compliance with the campaign. You can then collect statistics for such campaigns and :ref:`create reports <user-guide-reports>`.
 
@@ -32,15 +36,15 @@ With the Oro :ref:`Tracking Websites <user-guide-marketing-tracking>` functional
 
 :ref:`Content Blocks <user-guide--landing-pages--marketing--content-blocks>` enable to display generic information on your website customizing the pages with a variety of content.
 
-:ref:`Customer Login Pages<>`
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   marketing_automation/index
+   marketing_lists/index
+   email_campaigns/index
+   marketing_campaigns/index
    promotions/index
-   coupons/index
    tracking_websites/index
    web_catalogs/index
    landing_pages/index

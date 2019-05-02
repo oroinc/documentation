@@ -108,6 +108,14 @@ This generates an email based on the template you have selected, populates it wi
 
 .. stop
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   sending_email_campaign_via_mailchimp
+   sending_email_campaign_via_dotmailer
+   dotmailer_data_fields_mappings
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
    

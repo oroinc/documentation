@@ -8,7 +8,7 @@ The **System** menu of the management console contains post-install configuratio
 
 * :ref:`Configuration <mc-system-configuration>` --- Manage system settings and settings specific for CRM, Commerce and marketing features.
 * :ref:`User Management <>` --- Configure user, role and access management in the application and determine levels of access to data.
-* :ref:`Contact Reasons <>` --- Manage contact reasons used to categorize contact requests submitted through your website.
+* :ref:`Contact Reasons <admin-guide-contact-reasons>` --- Manage contact reasons used to categorize contact requests submitted through your website.
 * :ref:`Contact Groups <>` --- Create and manage contact groups.
 * :ref:`Emails <>` --- Create and manage templates, notification rules and maintenance notifications.
 * :ref:`Integrations <>` --- Create and manage pre-implemented integrations and integrations with third-party systems.
@@ -46,6 +46,7 @@ Oro applications enable you to configure system settings on four configuration l
 
    configuration/index
    user_management/index
+   contact_reasons/index
    integrations/index
    workflows/index
    websites/index
