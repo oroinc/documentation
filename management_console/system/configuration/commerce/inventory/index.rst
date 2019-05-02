@@ -16,4 +16,7 @@ Discover how to configure your storefront and management console inventory statu
    :hidden:
    :maxdepth: 1
 
-   inventory/index
+   allowed_statuses
+   warehouses
+   product_options
+   limitations

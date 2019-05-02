@@ -42,9 +42,9 @@ Below is an illustration of the account hierarchy where CRM-related concepts are
    :maxdepth: 1
 
    accounts/index
-   business_customers/index
    contacts/index
    customers/index
+   customer_groups/index
    customer_users/index
    customer_user_roles/index
-   customer_groups/index
+   business_customers/index

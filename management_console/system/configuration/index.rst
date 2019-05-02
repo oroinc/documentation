@@ -9,7 +9,7 @@ Based on the level where configuration has taken place, settings can fall back t
 
 * :ref:`User settings <doc-my-user-configuration>` can fall back to the :ref:`organization settings <doc-organization-configuration>`.
 * :ref:`Website settings <doc-website-configuration>` can fall back to the :ref:`organization settings <doc-organization-configuration>`.
-* :ref:`Organization settings <doc-organization-configuration>` can fall back to the :ref:`system settings <doc-system-configuration>`.
+* :ref:`Organization settings <doc-organization-configuration>` can fall back to the :ref:`system settings <configuration--guide--system--configuration>`.
 
 .. image:: /img/system/configuration/ConfigLevels.png
    :alt: A fallback pattern of the configuration levels
@@ -78,5 +78,4 @@ Use the menu below to read more on the options available at each configuration l
    crm/index
    commerce/index
    marketing/index
-   levels/index
    quick_search

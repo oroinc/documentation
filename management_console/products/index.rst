@@ -67,7 +67,6 @@ This section provides shortcuts to topics that may be useful for various types o
    product_attributes/index
    product_brands/index
    price_attributes/index
-   reports_bestselling
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -16,8 +16,10 @@ Learn the key options for setting up products in your Oro application, as well a
    :titlesonly:
    :hidden:
    :maxdepth: 1
-   
-   product_images
-   promotions
-   marketing_web_catalog/index
-   products/index
+
+   product_units
+   global_product_images
+   global_featured_products
+   global_promotions
+   global_configurable_products
+   product_collections

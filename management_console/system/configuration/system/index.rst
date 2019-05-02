@@ -116,7 +116,7 @@ This section of the configuration guide introduces you to the general applicatio
    :hidden:
    :maxdepth: 1
 
-   general_setup_sysconfig/index
+   general_setup/index
    integrations/index
    websites/index
 

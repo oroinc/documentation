@@ -9,8 +9,7 @@ Learn how to select theme settings, page and menu templates.
 
 
 .. toctree::
-   :titlesonly:
    :hidden:
-   :maxdepth: 1
 
-   design_theme/index
+   theme_global
+

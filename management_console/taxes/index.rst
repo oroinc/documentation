@@ -99,11 +99,11 @@ Finally, create a tax rule that associates the customer tax code, the product ta
    :maxdepth: 1
    :hidden:
 
-   customer_tax_codes/index
    product_tax_codes/index
-   tax_jurisdictions/index
+   customer_tax_codes/index
    taxes/index
    tax_rules/index
+   tax_jurisdictions/index
 
 .. finish
 

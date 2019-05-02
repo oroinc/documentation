@@ -3,19 +3,19 @@
 Customer
 ========
 
-Learn how to set up product and category visibility restrictions, customer user registration options, and manage contact requests.
+Learn how to set up product and category visibility restrictions, customer user registration options, manage contact requests, and configure consents for management console and storefront.
 
-* :ref:`Visibility <sys-config--configuration--commerce--customers--visibility>`
-* :ref:`Customer Users <admin-guide--customer--configuration>`
+* :ref:`Visibility <user-guide--customers--configuration--visibility>`
+* :ref:`Customer Users <sys-config--configuration--commerce--customers--customer-users>`
+* :ref:`Contact Requests <sys--conf--commerce--customer--contact-request-global>`
 * :ref:`Consents <configuration--guide--commerce--configuration--consents>`
-* :ref:`Contact Requests <sys--conf--commerce--customer--contact-request>`
-
 
 .. toctree::
    :titlesonly:
    :hidden:
    :maxdepth: 1
 
-   contact_us/index
-   customers/index
-   consents/index
+   visibility
+   global_customer_users
+   global_contact_us
+   global_consents

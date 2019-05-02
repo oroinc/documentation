@@ -1,7 +1,7 @@
 .. _user-guide--inventory--warehouse--create:
 
-Create and Manage a Warehouse
-=============================
+Warehouses
+==========
 
 Create a Warehouse
 ------------------

@@ -14,4 +14,6 @@ Learn how to define how open orders should be displayed in the storefront.
    :hidden:
    :maxdepth: 1
 
-   orders/index
+   global_order_automation
+   global_order_creation
+   global_previously_purchased

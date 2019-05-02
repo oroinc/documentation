@@ -30,6 +30,13 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Websites <>` --- Create multiple individually configured websites in the same application instance.
 * :ref:`Localization <>` --- Translate and adapt products for a specific country or region.
 
+Oro applications enable you to configure system settings on four configuration levels (or scopes): system, organization, website and user.
+
+* **Global**: To set up and manage settings globally, navigate to :ref:`System > Configuration <>` in the main menu, and locate the options you need to configure in the panel to the left.
+* **Organization**: To configure settings per organization, navigate to :ref:`System > User Management > Organizations <>`, and select the one that you wish to toggle the options for. Hover over the ellipsis menu to the right of the necessary organization and click *Configuration* to start editing it. Organization settings can fall back to system (or global) settings. Clearing the Use System check box next to the required option and changing its value means that you are configuring this option specifically for the selected organization.
+* **Website**: To configure settings per website, navigate to :ref:`System > Websites <>`, hover over the ellipsis menu to the right of the necessary website, and click *Configuration*. Similarly to the configuration per organization, clear the Use System check box next to the required option, and change the default value to introduce changes at website level.
+* **User**: To configure settings per user, navigate to :ref:`System > User Management > Users <>`, hover over the ellipsis menu to the right of the necessary user, and click *Configuration*. When Use Organization check box is enabled, organization settings override the global ones.  Clear the Use Organization check box next to the required option, and change the default value to introduce changes at user level.
+
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
@@ -38,6 +45,8 @@ The **System** menu of the management console contains post-install configuratio
    :hidden:
 
    configuration/index
+   user_management/index
    integrations/index
    workflows/index
+   websites/index
 

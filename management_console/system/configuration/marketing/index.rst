@@ -1,4 +1,5 @@
 .. _configuration--guide--marketing--configuration:
+
 Marketing Configuration
 =======================
 
@@ -46,6 +47,5 @@ Related Articles
    
    general_setup_marketing/index
    marketing_features
-   tracking_settings
 
    

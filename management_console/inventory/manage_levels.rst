@@ -1,10 +1,13 @@
 .. _user-guide--inventory--manage-levels:
 
-Manage Inventory Levels
-=======================
+Manage Inventory
+================
 
-In the Inventory Registry
--------------------------
+.. contents:: :local:
+   :depth: 2
+
+Manage Levels in the Inventory Registry
+---------------------------------------
 
 To manage quantities for all products in multiple warehouses:
 
@@ -20,8 +23,8 @@ Updated information is automatically saved.
 
 .. _doc--products--actions--manage-inventory-per-product:
 
-Per Product
------------
+Manage Levels per Product
+-------------------------
 
 .. start_products_manage_inventory
 
@@ -39,3 +42,4 @@ To manage quantities for a single product in multiple warehouses:
 5. Click **Save**.
 
 .. stop_products_manage_inventory
+

@@ -323,16 +323,14 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
 .. toctree::
    :titlesonly:
 
-
-
-   catalog/index
    customer/index
-   design/index
    guests/index
-   inventory/index
-   orders/index
-   payment/index
+   catalog/index
+   design/index
    product/index
+   inventory/index
    sales/index
-   shipping/index
    taxation/index
+   payment/index
+   orders/index
+   shipping/index
