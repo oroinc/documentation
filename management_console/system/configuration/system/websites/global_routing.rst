@@ -1,24 +1,19 @@
 .. _sys--config--sysconfig--websites--routing:
 
-Global Routing Configuration
-----------------------------
-
-.. begin
+Routing
+=======
 
 Global routing configuration includes the following information:
 
 * Global website URL when reached using secure (https) and insecure (http) connection
-
 * Options that impact the way metadata for the search engine is generated
-
 * Pretty URL support (e.g. `/product/view/4` vs `/500-watt-work-light`)
 
-.. note:: The website level configuration has higher priority and overrides this configuration settings.
+.. note:: The :ref:`website level configuration <sys--websites--sysconfig--websites--routing>` has higher priority and overrides this configuration settings.
 
 To change the default global routing settings:
 
-1. Navigate to the system configuration (click **System > Configuration** in the main menu).
-
+1. Navigate to **System > Configuration** in the main menu.
 2. Select **System Configuration > Websites > Routing** in the menu to the left.
 
    The Routing configuration page opens with the following options:

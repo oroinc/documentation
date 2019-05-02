@@ -13,6 +13,6 @@ Learn how to set up general routing and sitemap settings.
    :hidden:
    :maxdepth: 1
 
-   routing_sitemap/index
-   configuration_website
-   display_settings
+   global_routing
+   global_sitemap
+

@@ -6,7 +6,7 @@ General Setup
 Learn how to configure localization options, currency and tracking, as well and user, email, display and upload settings.
 
 * :ref:`Application Settings <admin-configuration-application>`
-* :ref:`Localization <sys--config--sysconfig--general-setup--localization--global>`
+* :ref:`Localization <localization--localization>`
 * :ref:`Language Settings <sys--config--sysconfig--general-setup--language-settings>`
 * :ref:`Currency <sys--config--sysconfig--general-setup--currency>`
 * :ref:`Display Settings <configuration--general-setup--display-settings>`
@@ -19,8 +19,15 @@ Learn how to configure localization options, currency and tracking, as well and 
 .. toctree::
    :hidden:
 
-   upload_settings
-   upload_settings_globally
-   display_settings
-   user_settings
-   application_settings
+   application
+   global_localization
+   global_language
+   global_currency
+   display
+   user
+   tracking
+   upload
+   global_email
+
+
+
