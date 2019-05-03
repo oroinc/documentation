@@ -31,7 +31,7 @@ How do I know what OroCloud operation does?
 
 You can run any OroCloud command in verbose mode via the -vvv option. With this option, OroCloud commands will echo the commands being executed into the console output.
 
-How Can I find supported options for each command?
+How сan I find supported options for each command?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can run any OroCloud command with the help option (--help or -h) to see the command options documentation.
@@ -42,7 +42,7 @@ Can I download an application database dump to troubleshoot issues in the local 
 For security reasons, you cannot download backups with the sensitive data from OroCloud. However, you can create a :ref:`sanitized backup <orocloud-maintenance-use-sanitized-backup>`, :ref:`configure it as necessary <orocloud-maintenance-advanced-use-sanitization-conf>`, and use it for your needs.
 
 
-The upgrade failed. What are the recommended steps to have application ip and running ASAP?
+The upgrade failed. What are the recommended steps to have application IP and running ASAP?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Depending on the upgrade step that has failed, there are two recovery strategies.
