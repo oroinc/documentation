@@ -28,7 +28,7 @@ In order to create a contact group:
 
 Now, you can |IcEdit| edit or |IcDelete| delete a contact group from the system by clicking the corresponding icon next to the required row in the grid.
 
-.. image:: /img/contact_groups/cont_groups_grid.png
+.. image:: /img/system/contact_groups/cont_groups_grid.png
    :alt: The actions available to contact groups from the grid
 
 .. include:: /img/buttons/include_images.rst

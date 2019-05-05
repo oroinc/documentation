@@ -3,7 +3,7 @@
 Email Configuration per Organization
 ====================================
 
- .. contents:: :local:
+.. contents:: :local:
  
 Configure Email Settings per Organization
 -------------------------------------------

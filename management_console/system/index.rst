@@ -12,10 +12,10 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Contact Groups <contact_groups>` --- Create and manage contact groups.
 * :ref:`Emails <admin-guide-email-configuration>` --- Create and manage templates, notification rules and maintenance notifications.
 * :ref:`Integrations <>` --- Create and manage pre-implemented integrations and integrations with third-party systems.
-* :ref:`Channels <>` --- Create and manage multiple web and sales channels to aggregate data from different data sources.
-* :ref:`Jobs <>` --- Monitor tasks executed in the background.
-* :ref:`Data Audit <>` --- See the full history of changes made to any record of an auditable entity.
-* :ref:`Scheduled Tasks <>` --- View recurring tasks executed on schedule.
+* :ref:`Channels <user-guide-channels>` --- Create and manage multiple web and sales channels to aggregate data from different data sources.
+* :ref:`Jobs <book-job-execution>` --- Monitor tasks executed in the background.
+* :ref:`Data Audit <user-guide-data-audit>` --- See the full history of changes made to any record of an auditable entity.
+* :ref:`Scheduled Tasks <book-time-based-command-execution>` --- View recurring tasks executed on schedule.
 * :ref:`Entities <>` --- Create and manage entities and entity fields.
 * :ref:`Tags Management <>` --- Create tags and taxonomies to organize data in the application.
 * :ref:`Menus <>` --- Customize default management console menus.
@@ -24,7 +24,7 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Shipping Rules <>` --- Add shipping rules to bind customers to specific shipping prices based on the shipping locations and the products they purchase.
 * :ref:`Payment Rules <>` ---  Add payment rules to make payment options visible to buyers in the storefront.
 * :ref:`Workflows <mc-system-wf>` --- Use system workflows and create custom workflows.
-* :ref:`Processes <>` --- View and activate/deactivate processes in the application.
+* :ref:`Processes <user-guide-processes>` --- View and activate/deactivate processes in the application.
 * :ref:`System Information <>` --- Review system information on oro and third-party packages.
 * :ref:`Consent Management <>` --- Create and manage consents to comply with General Data Protection Regulations.
 * :ref:`Websites <>` --- Create multiple individually configured websites in the same application instance.
@@ -50,6 +50,11 @@ Oro applications enable you to configure system settings on four configuration l
    contact_groups/index
    emails/index
    integrations/index
+   channels/index
+   jobs/index
+   data_audit/index
+   scheduled_tasks/index
+   processes/index
    workflows/index
    websites/index
 

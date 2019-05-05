@@ -13,7 +13,7 @@ You can configure email settings on four levels -- globally, :ref:`per organizat
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
 
- .. contents:: :local:
+.. contents:: :local:
 
 Configure Email Settings Globally
 ---------------------------------
