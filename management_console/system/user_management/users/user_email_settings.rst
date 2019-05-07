@@ -42,7 +42,7 @@ To configure email settings :ref:`per user <configuration--guide--config-levels>
 
     As an example, we have synchronized a Gmail mailbox with OroCRM, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found `here <https://support.google.com/mail/answer/7126229?hl=en&rd=2&visit_id=1-636180891016092253-2149088408#ts=1665018%2C1665144>`__  and `here <https://support.google.com/accounts/answer/6010255?hl=en>`__.
 
-    .. image:: /admin_guide/img/admin_emails/personabox_imap_smtp.jpg
+    .. image:: /img/system/config_system/personabox_imap_smtp.jpg
        :alt: Email synchronization settings configuration on the user level
 
     * **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.

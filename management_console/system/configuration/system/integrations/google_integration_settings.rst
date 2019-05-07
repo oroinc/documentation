@@ -43,7 +43,7 @@ In the Google Sign-on section, provide the following details:
 | **OAuth 2.0 for email sync** | Check **Enable** to activate sync. Please, make sure that Gmail API is enabled in `Google Developers Console <https://console.developers.google.com/apis>`_.                                                                         |
 +------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /user_guide/system/img/google_integration/oro_google_integration_new.jpg
+.. image:: /img/system/config_system/oro_google_integration_new.jpg
 
 Google Hangouts
 ---------------

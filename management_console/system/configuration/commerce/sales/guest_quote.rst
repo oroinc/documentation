@@ -23,7 +23,7 @@ To enable guest quotes:
 
    The following page is displayed:
 
-   .. image:: /user_guide/img/quotes/enable_guest_quote.png
+   .. image:: /img/system/config_commerce/sales/enable_guest_quote.png
       :alt: System configuration option for enabling guest quotes
 
 3. Clear the **Use Default** check box.

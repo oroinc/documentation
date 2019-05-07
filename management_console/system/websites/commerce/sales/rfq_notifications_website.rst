@@ -13,7 +13,7 @@ To change the default notification settings per website:
 
    The following page opens.
 
-    .. image:: /user_guide/img/sales/requests_for_quote/RFQNotificationsWebsite.png
+    .. image:: /img/system/config_commerce/sales/RFQNotificationsWebsite.png
        :class: with-border
 
 The notifications options can be configured for all the parties concerned, namely:

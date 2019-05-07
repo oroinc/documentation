@@ -1,4 +1,5 @@
 .. _configuration--guide--crm--configuration:
+
 CRM Configuration
 =================
 

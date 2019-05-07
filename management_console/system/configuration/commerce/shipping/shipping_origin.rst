@@ -17,10 +17,8 @@ To change the global shipping origin:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /img/system/config_system/shipping/shipping_origin/ShippingOrigin.png
-   :class: with-border
+   .. image::  /img/system/config_commerce/shipping/ShippingOrigin.png
+      :class: with-border
 
 The following options are available on the page:
 

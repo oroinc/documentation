@@ -17,9 +17,7 @@ To change the shipping tax configuration:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   The following page opens:
-
-   .. image:: /img/system/config_system/taxation/shipping/shipping_tax_config.png
+   .. image:: /img/system/config_commerce/taxation/shipping_tax_config.png
       :class: with-border
 
    The following options are available on the page:

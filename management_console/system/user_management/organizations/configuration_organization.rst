@@ -1,7 +1,7 @@
 .. _doc-organization-configuration:
 
-System Configuration for Organization
-=====================================
+Configure System Settings for an Organization
+=============================================
 
 You can configure available system settings on four configuration levels: system, organization, website and user.
 

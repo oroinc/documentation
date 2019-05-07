@@ -18,7 +18,7 @@ To change the default global routing settings:
 
    The Routing configuration page opens with the following options:
 
-   .. image:: /img/system/config_system/websites/routing_general.png
+   .. image:: /img/system/config_system/routing_general.png
       :class: with-border
 
    * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Secure*.
@@ -49,7 +49,7 @@ To change the default global routing settings:
 
    * **Web Catalog** - when a Web Catalog is selected, it populates the main menu and sub-menus on the OroCommerce Storefront. If there is no Web Catalog in OroCommerce, the Master Catalog structure is mimicked.
 
-   .. image:: /img/system/config_system/websites/routing_website_matchers.png
+   .. image:: /img/system/config_system/routing_website_matchers.png
       :class: with-border
 
    .. note:: The Website Matchers feature is only available in the Enterprise edition.
@@ -60,7 +60,8 @@ To change the default global routing settings:
 
    * **Cookie Name** - the name of the cookie that stores information about the current website in the customer's browser.
 
-   .. image:: /img/system/config_system/websites/routing_direct_url.png
+
+   .. image:: /img/system/config_system/routing_direct_url.png
       :class: with-border
 
    * **Enable Direct URLs** - when enabled, the page URL is built using the page title (e.g. `/500-watt-work-light`). When disabled, the system path to the item and its ID is used (e.g. `/product/view/4`).

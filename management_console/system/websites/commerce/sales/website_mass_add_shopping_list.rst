@@ -14,9 +14,7 @@ To enable mass product actions per website:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /img/system/config_system/sales/shopping_list/MassProductActionsSListWeb.png
+   .. image:: /img/system/config_commerce/sales/MassProductActionsSListWeb.png
 
 4. In the **Shopping List Options** section, set whether customer users are allowed to mass select and add items to the shopping list.
 

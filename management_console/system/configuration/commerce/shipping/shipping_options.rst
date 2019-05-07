@@ -24,9 +24,7 @@ To change these shipping options:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   The following page opens:
-
-   .. image:: /img/system/config_system/shipping/shipping_options/ShippingOptions.png
+   .. image:: /img/system/config_commerce/shipping/ShippingOptions.png
       :class: with-border
 
    The following options are available on the page:
@@ -61,7 +59,7 @@ To enable shipping cost estimation by an integrated system, like UPS, every prod
 
 Sample shipping information in the product details:
 
-.. image:: /user_guide/img/products/products/shipping_options_per_product_new.png
+.. image::  /img/system/config_commerce/shipping/shipping_options_per_product_new.png
 
 It is recommended to add shipping information for every product unit.
 

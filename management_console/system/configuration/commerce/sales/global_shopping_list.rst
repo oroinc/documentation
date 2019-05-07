@@ -28,7 +28,7 @@ To enable guest shopping lists globally:
    .. note::
      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /img/system/config_system/sales/shopping_list/ShopListGlobal.png
+   .. image:: /img/system/config_commerce/sales/ShopListGlobal.png
 
 3. In the **Shopping List Limit** section, set the number of shopping lists allowed per customer. The default value is zero. This means that no limit of shopping lists is applied.
 4. In the **Guest Shopping List** section, define the following options:
@@ -52,7 +52,7 @@ To enable guest shopping lists globally:
 Mass Product Actions
 --------------------
 
-In OroCommerce, you can control whether customer and guest users can select and add multiple products to a shopping list in the storefront. This can be enabled on three levels -- globally, :ref:`per organization <>` and :ref:`per website <>`.
+In OroCommerce, you can control whether customer and guest users can select and add multiple products to a shopping list in the storefront. This can be enabled on three levels -- globally, :ref:`per organization <user-guide--system-configuration--commerce-sales-shopping-list--mass-action--organization>` and :ref:`per website <user-guide--system-configuration--commerce-sales-shopping-list--mass-action--website>`.
 
 To enable mass product actions globally:
 
@@ -62,7 +62,7 @@ To enable mass product actions globally:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /img/system/config_system/sales/shopping_list/MassProductActionsSListGlobal.png
+   .. image:: /img/system/config_commerce/sales/MassProductActionsSListGlobal.png
 
 3. In the **Shopping List Options** section, set whether customer users are allowed to mass select and add items to the shopping list.
 

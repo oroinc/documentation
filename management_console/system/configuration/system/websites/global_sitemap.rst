@@ -12,7 +12,7 @@ To change the default global sitemap settings:
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **System Configuration > Websites > Sitemap** in the menu to the left.
 
-   .. image:: /img/system/config_system/websites/sitemaps.png
+   .. image:: /img/system/config_system/sitemaps.png
       :class: with-border
 
    The frequency and priority options may be configured globally or specifically for product, category and the cms page level.

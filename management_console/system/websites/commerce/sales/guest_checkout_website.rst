@@ -13,9 +13,7 @@ Configure Guest Checkout per Website
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /img/system/config_system/sales/checkout/CheckoutWeb.png
+   .. image:: /img/system/config_commerce/sales/CheckoutWeb.png
 
 4. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
 

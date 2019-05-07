@@ -12,12 +12,15 @@ You can define whether to display open orders within the Order History menu in t
 
    **Yes** --- If set to *Yes*, *Open Orders* are displayed as a separate menu item in the customer user Account in the storefront.
 
-   .. image:: /img/system/config_system/sales/order_history/open_orders_separately.png
+
+   .. image:: /img/system/config_system/sales/open_orders_separately.png
+
       :alt: Open orders as a separate menu item in orocommerce storefront
 
    **No** --- If set to *No*, *Open Orders* are displayed as part of the *Order History* menu, on the same page with *Past Orders*.
 
-   .. image:: /img/system/config_system/sales/order_history/open_orders_with_past_orders.png
+   .. image:: /img/system/config_system/sales/open_orders_with_past_orders.png
+
       :alt: Open and past orders on the same page in orocommerce storefront
 
 5. Click **Save Settings**.

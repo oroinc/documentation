@@ -23,12 +23,12 @@ To configure email settings globally:
 
 1. Navigate to **System > Configuration** in the main menu.
 
-   .. image:: /admin_guide/img/admin_emails/system_config.jpg
+   .. image:: /img/system/config_system/system_config.jpg
       :alt: Demonstrating a path to the system configuration menu
 
 2. Click **System Configuration > General Setup > Email Configuration** in the panel to the left. 
 
-   .. image:: /admin_guide/img/admin_emails/email_config_1.jpg
+   .. image:: /img/system/config_system/email_config_1.jpg
       :alt: Demonstrating a path to the email configuration menu
 
 3. On the **Email Configuration** page, define options applied to all the emails generated within the instance.
@@ -55,7 +55,7 @@ To configure email settings globally:
 
    * **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
 
-     .. image:: /admin_guide/img/admin_emails/reply.jpg
+     .. image:: /img/system/config_system/reply.jpg
         :alt: Selecting the default reply option
 
    * **Attachments** --- Configure the following attachment options:
@@ -105,7 +105,7 @@ To configure a system mailbox globally:
 2. Click **System Configuration > General Setup > Email Configuration** in the panel to the left.
 3. In the **System Mailboxes** section, click **Add Mailbox**.
 
-   .. image:: /img/system/configuration/system/general_setup/emails/create_mailbox.jpg
+   .. image:: /img/system/config_system/create_mailbox.jpg
       :alt: Creating a new mailbox in the email configuration
 
 4. In the **General** section, define the basic settings of the mailbox:
@@ -132,7 +132,7 @@ To configure a system mailbox globally:
 
    .. hint:: To enable connection, select the check box next to `Allow Access for Less Secure Apps Box <https://support.google.com/accounts/answer/6010255?hl=en>`_
 
-   .. image:: /img/system/configuration/system/general_setup/emails/synchronize_mb.png
+   .. image:: /img/system/config_system/synchronize_mb.png
       :alt: An example of synchronization for a gmail mailbox
 
 6. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
@@ -143,12 +143,12 @@ To configure a system mailbox globally:
 
    As an example, we have selected the **Convert To Lead** option. Once the action has been selected, define which user will own the records and choose the source of your leads in the **Source** field.
 
-   .. image:: /img/system/configuration/system/general_setup/emails/email_processing_2.jpg
+   .. image:: /img/system/config_system/email_processing_2.jpg
       :alt: Selecting an owner and a source for processing the emails when the action is set to `convert to lead`
 
    .. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System > Entities > Entity Management > Lead > Source**.
 
-   .. image:: /img/system/configuration/system/general_setup/emails/lead_source_field.jpg
+   .. image:: /img/system/config_system/lead_source_field.jpg
       :alt: Creating a source entity from the entity management menu
 
 7. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
@@ -168,7 +168,7 @@ To configure a system mailbox globally:
 
    Click **Add** on the bottom to save the rule.
 
-   .. image:: /img/system/configuration/system/general_setup/emails/ar_rule.png
+   .. image:: /img/system/config_system/ar_rule.png
       :alt: Sample autoresponse rule form
 
 10. Click **Save Settings**.

@@ -15,7 +15,7 @@ To reach promotion configuration:
 
    The following page opens:
 
-   .. image:: /user_guide/img/marketing/promotions/PromotionSysConfig.png
+   .. image:: /img/system/config_commerce/sales/PromotionSysConfig.png
 
    .. note:: By default, promotions are enabled and the **Combine All Discounts** strategy is set.
 

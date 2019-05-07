@@ -1,7 +1,7 @@
 .. _sys--configuration--crm--sales-pipeline--opportunities:
 
-Opportunity Settings
-====================
+Opportunity
+===========
 
 To enable opportunities in your Oro application:
 

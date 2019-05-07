@@ -1,7 +1,7 @@
 .. _sys--configuration--crm--sales-pipeline--sales-territories:
 
-Sales Territories Settings
---------------------------
+Sales Territories
+=================
 
 To enable sales territories for leads, opportunities and all types of customers:
 

@@ -1,7 +1,7 @@
 .. _sys--configuration--crm--sales-pipeline--sales-territories-leads:
 
-Lead Settings
-=============
+Lead
+====
 
 To enable lead in your Oro application:
 

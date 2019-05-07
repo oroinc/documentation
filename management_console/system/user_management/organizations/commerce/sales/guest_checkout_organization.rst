@@ -7,7 +7,6 @@ Configure Guest Checkout per Organization
 
 To enable guest checkout per organization:
 
-
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Checkout** in the menu to the left.
@@ -15,9 +14,7 @@ To enable guest checkout per organization:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /img/system/config_system/sales/checkout/CheckoutOrg.png
+   .. image:: /img/system/config_commerce/sales/CheckoutOrg.png
 
 4. In the **Guest Checkout** section, set whether guest checkout should be enabled or disabled.
 

@@ -87,7 +87,7 @@ To optimize the performance of the :ref:`single page checkout workflow <system--
 
 3. Select the **Optimize Template Performance** check box to enable the option.
 
-    .. image:: /img/system/config_system/sales/checkout/single_page_checkout.png
+    .. image:: /img/system/config_commerce/sales/single_page_checkout.png
        :alt: The configuration option for optimizing single page checkout
 
 4. Click **Save Settings**.
