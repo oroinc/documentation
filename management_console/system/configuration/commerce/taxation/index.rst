@@ -14,7 +14,6 @@ Learn how to enable taxation, select the tax provider, set Sales and VAT taxes, 
    :titlesonly:
    :hidden:
 
-
    tax_calculation
    us_sales_tax
    eu_vat_tax

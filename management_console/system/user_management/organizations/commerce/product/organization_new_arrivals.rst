@@ -17,7 +17,7 @@ To enable New Product icons per organization:
 
 The following page opens.
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockOrg.png
+.. image:: /img/system/config_commerce/product/NewArrivalsBlockOrg.png
 
 4. In the **New Product Icons**, clear the **Use Default** check box and select *Yes* in the **Show on Product View** list.
 

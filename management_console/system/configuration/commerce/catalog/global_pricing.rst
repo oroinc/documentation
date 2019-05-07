@@ -25,7 +25,7 @@ To change the default global pricing settings:
 
 The **Pricing** page opens. It contains the following information:
 
-   .. image:: /admin_guide/img/configuration/catalog/pricing/pricing2.png
+   .. image:: /img/system/config_commerce/catalog/pricing2.png
       :class: with-border
 
    * **Pricing Precision** --- The number of digits that are allowed in the fractional part of the price (e.g. precision of 4 enables your sales manager use prices like $10.0001).
@@ -45,11 +45,11 @@ The **Pricing** page opens. It contains the following information:
 
      When the *Minimal Price* is selected as the pricing strategy, OroCommerce looks up the minimal price for various tiers of amount and the product units:
 
-     .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist.png
+     .. image:: /img/system/config_commerce/catalog/pricing_pricelist.png
 
      When the *Merge by priority* is selected as the pricing strategy, the OroCommerce considers the price list priority and *Merge Allowed* flags to look up all the available price per units and per tiers of amount:
 
-     .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist2.png
+     .. image:: /img/system/config_commerce/catalog/pricing_pricelist2.png
 
      .. note:: Price lists with higher priority are on top.
 
@@ -77,7 +77,7 @@ The **Pricing** page opens. It contains the following information:
 
      .. note:: The website level configuration has higher priority and overrides the global configuration settings.
 
-     .. image:: /admin_guide/img/configuration/catalog/pricing/currency_on_the_front_store.png
+     .. image:: /img/system/config_commerce/catalog/currency_on_the_front_store.png
 
    * **Default Currency** --- The currency that is used by default to show prices in the storefront.
 
@@ -92,7 +92,7 @@ The **Pricing** page opens. It contains the following information:
 
    a) Click **+ Add Price List** and select the price list in the newly added line. After you start typing the price list name, the list of suggestions that match your entry appears. Press **Enter** or click the suggested value to add the price list.
 
-      .. image:: /admin_guide/img/configuration/catalog/pricing/pricing_pricelist_add.png
+      .. image:: /img/system/config_commerce/catalog/pricing_pricelist_add.png
 
       .. note:: The price list is appended to the bottom of the list and, initially, has lower priority then existing price lists. Adjust the price list priority if necessary and specify whether the merge is allowed (the later is shown only for the *Merge by priority* price selection strategy).
 

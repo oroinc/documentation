@@ -25,5 +25,5 @@ You can specify the strategy for account creation in **System Configuration > In
   
 These options can be changed any time with customers re-related to accounts accordingly.
 
-.. image:: /user_guide/system/img/commerce_integration/config_commerce_integration.png
+.. image:: /img/system/config_system/config_commerce_integration.png
    :alt: System configuration settings for CRM and Commerce

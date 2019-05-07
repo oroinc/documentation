@@ -24,7 +24,7 @@ To configure **MIME types** globally:
 
 3. The following page opens:
 
-   .. image:: /admin_guide/img/landing/upload_settings_1.png
+   .. image:: /img/system/config_system/upload_settings_1.png
       :alt: Upload settings on global level
 
 4. Clear the **Use Default** check box next to the option.

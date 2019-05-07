@@ -5,6 +5,8 @@ Website Access
 
 .. begin
 
+You can enable guest website access globally, :ref:`per organization <sys--conf--commerce--guest-access--org>` and :ref:`per website <sys--conf--commerce--guest-access--website>`:
+
 To enable guest access globally:
 
 1. Navigate to **System > Configuration > Commerce > Guests > Website Access**.
@@ -17,7 +19,7 @@ To enable guest access globally:
    
 .. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
    
-.. image:: /admin_guide/img/configuration/guest_access/GuestAccessSysConfig.png
+.. image:: /img/system/config_commerce/guests/GuestAccessSysConfig.png
 
 .. finish
 

@@ -18,7 +18,7 @@ To tune the tracking configuration:
 
 .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-.. image:: /user_guide/img/marketing/configuration/tracking.png
+.. image:: /img/system/config_system/tracking.png
    :alt: Tracking configuration
 
 .. csv-table::

@@ -13,7 +13,7 @@ To enable previously purchased products page per website:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/product/previously_purchased/PreviouslyPurchasedWebsite.png
+   .. image:: /img/system/config_system/product/previously_purchased/PreviouslyPurchasedWebsite.png
 
 4. In the **Purchase History** section:
 

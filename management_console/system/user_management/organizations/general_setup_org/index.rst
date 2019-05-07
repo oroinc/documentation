@@ -17,3 +17,6 @@ Learn how to configure localization options, currency and tracking, as well and 
 
    upload_settings_organization
    organization_display_settings
+   organization_language_settings
+   organization_localization
+   org_email_settings

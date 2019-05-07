@@ -24,7 +24,7 @@ To configure localization settings globally:
       .. note::
          For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-     .. image:: /admin_guide/img/localization/localization_configuration_global.png
+     .. image:: /img/system/config_system/localization_configuration_global.png
 
 2. Here, you can configure the following options by clearing the **Use Default** check box and providing your own data:
 
@@ -57,7 +57,7 @@ To configure localization settings globally:
 
 3. In the **Map Settings**, select the **Temperature Unit** and **Wind Speed Unit** to display the weather on the map. The default values are Fahrenheit and miles per hour (MPH).
 
-   .. image:: /admin_guide/img/localization/localization_map.png
+   .. image:: /img/system/config_system/localization_map.png
 
 4. Select one or multiple enabled localizations from the list to support the translation of the storefront UI elements to the target language. The list is generated automatically based on the data preconfigured in the **System > Localization > Localizations** menu. Refer to the :ref:`Localizations <localization--localizations>` section for more details.
 

@@ -17,7 +17,7 @@ To define the custom localization options for the particular organization:
 
 The following page opens:
 
-.. image:: /admin_guide/img/localization/localization_configuration_organization.png
+.. image:: /img/system/config_system/localization_configuration_organization.png
 
 4. Here, you can configure the following options by clearing the **Use System** check box and providing your own data:
 
@@ -50,7 +50,7 @@ The following page opens:
 
 5. In the **Map Settings**, select the **Temperature Unit** and **Wind Speed Unit** to display the weather on the map. The default values are Fahrenheit and miles per hour (MPH).
 
-   .. image:: /admin_guide/img/localization/localization_map.png
+   .. image:: /img/system/config_system/localization_map.png
 
 6. Click **Save** to the save the settings.
 

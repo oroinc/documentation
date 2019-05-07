@@ -25,7 +25,7 @@ To configure MS Exchange integration settings in your Oro application:
 
 1. Navigate to **System > Configuration > System Configuration > Integrations > MS Exchange**.
    
-   .. image:: /user_guide/system/img/configuration/msexchange.png
+   .. image:: /img/system/config_system/msexchange.png
 
 2. To enable MS Exchange Integration, check **Enabled** and define the following details:
 

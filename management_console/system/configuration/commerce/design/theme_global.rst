@@ -33,7 +33,7 @@ To configure the storefront theme options globally:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/design/theme/design_theme_global.png
+.. image:: /img/system/config_commerce/design/design_theme_global.png
 
 3. In the **Theme Settings** section, select the theme from the list. The theme controls general design of the storefront that defines its look and feel. *Default*, *blank*, and *custom* themes are available out of the box for the storefront.
 
@@ -41,11 +41,11 @@ The following page opens:
 
    **Default theme**
 
-   .. image:: /frontstore_guide/img/profile/MyProfileAddressBooks.png
+   .. image:: /img/system/config_commerce/design/MyProfileAddressBooks.png
 
    **Custom theme**
 
-   .. image:: /frontstore_guide/img/profile/address_book_compact.png
+   .. image:: /img/system/config_commerce/design/address_book_compact.png
 
 4. In the **Page Templates** section, select the product page template from the list.
 
@@ -61,11 +61,11 @@ The following page opens:
 
    **Drop-down**
 
-   .. image:: /user_guide/system/img/configuration/filter_settings_dropdown.png
+   .. image:: /img/system/config_commerce/design/filter_settings_dropdown.png
 
    **All at once**
 
-   .. image:: /user_guide/system/img/configuration/filter_settings_allatonce.png
+   .. image:: /img/system/config_commerce/design/filter_settings_allatonce.png
 
 6. In the **Menu Templates** section, select the user menu display mode that defines the look and feel of the user menu in the storefront.
 
@@ -73,11 +73,11 @@ The following page opens:
 
    **Show all items at once**
 
-   .. image:: /admin_guide/img/frontend_menu/ShowAllItemsAtOnce.png
+   .. image:: /img/system/config_commerce/design/ShowAllItemsAtOnce.png
 
    **Show subitems in a popup**
 
-   .. image:: /admin_guide/img/frontend_menu/ShowSubitemsInPopup.png
+   .. image:: /img/system/config_commerce/design/ShowSubitemsInPopup.png
 
 7. Click **Save Settings**.
 

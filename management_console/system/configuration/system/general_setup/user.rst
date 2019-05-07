@@ -11,7 +11,7 @@ To apply user-related options in your Oro application instance:
 2. Click **System Configuration > General Setup > User Settings**.
 3. The following page opens:
 
-   .. image:: /admin_guide/img/configuration/user.png
+   .. image:: /img/system/config_system/user.png
       :alt: User settings on global level
 
 Configure Email Settings and Password Restrictions
@@ -65,7 +65,7 @@ Configure Two-factor Authentication
 
   "**Security Level**","Determines how often to require authentication via email: never, upon first login from a new computer, or at every login.
 
-  .. image:: /admin_guide/img/configuration/authentication.png
+  .. image:: /img/system/config_system/authentication.png
      :alt: Two-factor authentication field in system configuration settings
 
   The option is disabled by default."

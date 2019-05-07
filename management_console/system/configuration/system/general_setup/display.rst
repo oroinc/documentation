@@ -18,7 +18,7 @@ To open display settings:
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **System Configuration > General Setup > Display Settings** in the menu to the left.
 
-.. image:: /user_guide/system/img/configuration/display_settings.png
+.. image:: /img/system/config_system/display_settings.png
    :width: 500
 
 **User Bar**
@@ -28,7 +28,7 @@ To open display settings:
 +====================+=======================================================================================================================================================+
 | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name). The functionality is enabled by default. |
 |                    |                                                                                                                                                       |
-|                    | .. image:: /user_guide/img/admin/user_management/user_configuration_showemailsuserbar.png                                                             |
+|                    | .. image:: /img/system/config_system/user_configuration_showemailsuserbar.png                                                                         |
 |                    |    :alt: A recent emails icon displayed on the user bar                                                                                               |
 |                    |                                                                                                                                                       |
 +--------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -59,7 +59,7 @@ The following options are available:
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
 |                           |                                                                                                                |
-|                           | .. image:: /user_guide/img/admin/user_management/user_configuration_pagination.png                             |
+|                           | .. image:: /img/system/config_system/user_configuration_pagination.png                                         |
 |                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -94,7 +94,7 @@ The value is enabled by default.
 +=======================+===========================================================================================================+
 | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
 |                       |                                                                                                           |
-|                       | .. image:: /admin_guide/img/user_management/user_configuration_wysiwyg.png                                |
+|                       | .. image:: /img/system/config_system/user_configuration_wysiwyg.png                                       |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
@@ -122,7 +122,7 @@ By default, only the right sidebar is enabled.
 
 Tag settings specify the taxonomy colors available in the system.
 
-.. image:: /user_guide/system/img/configuration/tag_settings.png
+.. image:: /img/system/config_system/tag_settings.png
 
 
 **Calendar Settings**
@@ -143,7 +143,7 @@ To change any color in the set:
 2. Drag and drop a dot on the color picker wheel to select a new color.
 3. Adjust the color brightness by dragging the level on the shades bar.
 
-.. image:: /user_guide/system/img/configuration/calendar_settings.png
+.. image:: /img/system/config_system/calendar_settings.png
 
 **Map Settings**
 
@@ -154,7 +154,7 @@ To change any color in the set:
 |                      | This option does not affect maps in the management console.                                     |
 +----------------------+-------------------------------------------------------------------------------------------------+
 
-.. image:: /user_guide/system/img/configuration/map_settings_map.png
+.. image:: /img/system/config_system/map_settings_map.png
 
 **Reports Settings**
 
@@ -165,7 +165,7 @@ To change any color in the set:
 |                                     | This way, users can check if a report has been developed correctly.                                              |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /user_guide/img/admin/user_management/user_configuration_showsql.png
+.. image:: /img/system/config_system/user_configuration_showsql.png
    :alt: A sample of the enabled display SQL field
 
 .. hint::

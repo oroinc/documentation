@@ -17,7 +17,7 @@ To enable consents for the storefront on the website level:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/customer/consents/create_consents_website_level.png
+   .. image:: /img/system/config_commerce/customer/create_consents_website_level.png
       :class: with-border
       :alt: Enable consents checkbox on the website level
 

@@ -14,7 +14,7 @@ To configure limiting filters and sorting options per organization:
 
 The following page opens.
 
-.. image:: /admin_guide/img/configuration/catalog/filters_sorters/organization_filters_sorters.png
+.. image:: /img/system/config_system/catalog/filters_sorters/organization_filters_sorters.png
 
 4. The following configuration options are available:
 

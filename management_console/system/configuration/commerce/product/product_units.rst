@@ -17,7 +17,7 @@ To update the product unit settings:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /admin_guide/img/configuration/product/product_unit/ProductUnit.png
+   .. image:: /img/system/config_commerce/product/ProductUnit.png
       :alt: The product units configuration page
       :class: with-border
 

@@ -32,7 +32,7 @@ Currency Settings
 
 The following sections are available within the **Currency** tab:
 
-.. image:: ../img/multi_currency/currency.png
+.. image:: /img/system/config_system/currency.png
 
 +------------------------+-----------------------------------------------------------------------------------------------------------------+
 | **Name**               | Description                                                                                                     |
@@ -58,11 +58,11 @@ The following sections are available within the **Currency** tab:
 |                        |                                                                                                                 |
 |                        | The order subtotal when the display format is set to *Currency Code*:                                           |
 |                        |                                                                                                                 |
-|                        | .. image:: /admin_guide/img/configuration/general/currency_code.png                                             |
+|                        | .. image:: /img/system/config_system/general/currency_code.png                                             |
 |                        |                                                                                                                 |
 |                        | The order subtotal when the display format is set to *Currency Symbol*:                                         |
 |                        |                                                                                                                 |
-|                        | .. image:: /admin_guide/img/configuration/general/currency_symbol.png                                           |
+|                        | .. image:: /img/system/config_system/general/currency_symbol.png                                           |
 |                        |                                                                                                                 |
 +------------------------+-----------------------------------------------------------------------------------------------------------------+
 
@@ -97,29 +97,29 @@ The information about the allowed currencies options is grouped in the following
 
    Before:
 
-   .. image:: ../img/multi_currency/currency_base1.png
+   .. image:: /img/system/config_system/currency_base1.png
 
    After:
 
-   .. image:: ../img/multi_currency/currency_base3.png
+   .. image:: /img/system/config_system/currency_base3.png
 
 .. important:: Changing base currency requires manual update of the money values (budgets, totals, revenues, etc.). You will be prompted to confirm the change.
 
 In the example below, the base currency is British pounds but the budget of the opportunity deal is in US dollars.
 
-.. image:: ../img/multi_currency/example_base_and_us_budget.png
+.. image:: /img/system/config_system/example_base_and_us_budget.png
 
 When you close a deal (determined by opportunity status), the exchange rate for it becomes locked and will no longer take rate changes into account.
 
 Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work in the base currency irrespective of the currency that the deals were made in.
 
-.. image:: ../img/multi_currency/widgets_base_currency.png
+.. image:: /img/system/config_system/widgets_base_currency.png
 
 2. To modify the currency exchange rate to and from the base currency, edit the **Rate To** and **Rate From** values in the corresponding row.
 
    For example, if the rate of US dollar to British pound is 1:0.76, enter 0.76 in the Rate From field for US Dollar. The system will automatically calculate the Rate To value for US Dollar which will constitute 1.315789.
 
-   .. image:: ../img/multi_currency/rate_recalculation.png
+   .. image:: /img/system/config_system/rate_recalculation.png
 
    .. note:: The base currency rate is always 1 to 1 and cannot be changed.
 
@@ -127,11 +127,11 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 
    a) Select the currency from the **Allowed Currencies** list and click **Add** next to it.
 
-      .. image:: ../img/multi_currency/currency_add.png
+      .. image:: /img/system/config_system/currency_add.png
 
       The currency is appended to the top of the list.
 
-      .. image:: ../img/multi_currency/currency_add3.png
+      .. image:: /img/system/config_system/currency_add3.png
 
    b) Fill in the exchange rate to and from the base currency.
 

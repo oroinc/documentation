@@ -17,7 +17,7 @@ To set up the New Arrivals block per website:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockWeb.png
+.. image:: /img/system/config_commerce/product/NewArrivalsBlockWeb.png
 
 3. In the **New Arrivals** section provide the following information:
 

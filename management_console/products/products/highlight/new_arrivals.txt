@@ -13,17 +13,17 @@ This will look differently for various layout options:
 
 * **For tiles**:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsFrontstoreTiles.png
+.. image:: /img/system/config_commerce/product/NewArrivalsFrontstoreTiles.png
    :class: with-border
 
 * **For details**:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsFrontstoreDetails.png
+.. image:: /img/system/config_commerce/product/NewArrivalsFrontstoreDetails.png
    :class: with-border
 
 * **For compact details**:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsFrontstoreCompactDetails.png
+.. image:: /img/system/config_commerce/product/NewArrivalsFrontstoreCompactDetails.png
    :class: with-border
 
 Add a Product to New Arrivals

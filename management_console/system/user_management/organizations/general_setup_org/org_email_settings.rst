@@ -4,11 +4,12 @@ Email Configuration per Organization
 ====================================
 
 .. contents:: :local:
- 
-Configure Email Settings per Organization
--------------------------------------------
+   :depth: 1
 
-To configure email settings :ref:`per organization <configuration--guide--config-levels>`: 
+Configure Email Settings
+------------------------
+
+To configure email settings :ref:`per organization <configuration--guide--config-levels>` per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
@@ -43,8 +44,8 @@ To configure email settings :ref:`per organization <configuration--guide--config
 
 .. _admin-configuration-system-mailboxes-organization:
 
-Configure a System Mailbox per Organization
--------------------------------------------
+Configure a System Mailbox
+--------------------------
 
 To configure a system mailbox on the :ref:`organization level <configuration--guide--config-levels>`:
 
@@ -86,13 +87,12 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
    * *Convert To Case* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Case record will be created in OroCRM.
  
    .. note:: Options in the Source field should be defined in advance. This can be done through the entity manager in **System > Entities > Entity Management > Lead > Source**.
- 
 
-7. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
+9. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
 
-8. In the **Autoresponse Rules** section, generate one or several auto-response rules. These rules determine which template is sent to the sender of the email.
+10. In the **Autoresponse Rules** section, generate one or several auto-response rules. These rules determine which template is sent to the sender of the email.
     
-9. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
+11. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
 
    * *Status (Active/Inactive)* --- Only rules with active statuses are applied
    * *Name* --- Select the name for the rule to be used within the system.
@@ -108,7 +108,7 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
    .. image:: /admin_guide/img/system_mailbox/ar_rule.png   
       :alt: Sample autoresponse rule form
    
-10. Click **Save Settings**.
+12. Click **Save Settings**.
 
 **Related Topics**
 

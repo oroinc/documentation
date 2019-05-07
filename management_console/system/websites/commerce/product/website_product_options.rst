@@ -15,7 +15,7 @@ To customize the default product options per website:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/inventory/product_options_website.png
+   .. image:: /img/system/config_system/inventory/product_options_website.png
       :alt: Product options configuration per website
 
 Here, you can manage both inventory and upcoming products options.

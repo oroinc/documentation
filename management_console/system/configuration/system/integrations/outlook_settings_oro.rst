@@ -12,10 +12,10 @@ Once you downloaded and installed the add-in, you can configure MS Outlook setti
  * **Integration settings**
  * **Synchronization settings**
 
-.. image:: /admin_guide/img/outlook/MS_outlook_settings(part1).png
+.. image:: /img/system/config_system/MS_outlook_settings(part1).png
    :alt: The configuration settings of ms outlook in the oro management console
 
-.. image:: /admin_guide/img/outlook/MS_outlook_settings(part2).png
+.. image:: /img/system/config_system/MS_outlook_settings(part2).png
    :alt: The configuration settings of ms outlook in the oro management console, part2
 
 .. hint:: MS Outlook settings can be configured globally, :ref:`per organization <org-outlook-settings>`, and :ref:`per user <user-outlook-settings>`, with the exception of MS Outlook add-in settings, which can only be managed globally.
@@ -25,12 +25,12 @@ Configure MS Outlook Add-in Layout Settings
 
 When the add-in is installed, a side bar panel appears on the right side of the Outlook window which displays the actions that can be performed in Outlook and synchronized back to Oro (e.g. create a lead). Depending on the synchronization settings set up between the applications, you can create leads, opportunities, and cases from within MS Outlook using the side bar, and then sync them back to Oro. 
 
- .. image:: /admin_guide/img/outlook/SideBarPanelWidget.png
+ .. image:: /img/system/config_system/SideBarPanelWidget.png
     :alt: A side bar panel displayed in the outlook application that enables creating leads, opportunities, and cases
 
 The layout of this sidebar, as well as the lead, opportunity, and case dialogs, can be changed by amending the default XAML code (or providing a new one) in the MS Outlook Add-in Settings on the Oro side.
 
-.. .. image:: /admin_guide/img/outlook/addin_view.png
+.. .. image:: /img/system/config_system/addin_view.png
 
 To change the layouts:
 
@@ -40,7 +40,7 @@ To change the layouts:
 4. Modify the default XAML code to alter the layout.
 5. Click **Save Settings**.
 
-   .. image:: /admin_guide/img/outlook/add_in_layout.png
+   .. image:: /img/system/config_system/add_in_layout.png
       :alt: The configuration settings of ms outlook add-in in the oro management console
 
 .. note:: For the changes to take effect, remember either to start sync manually, or wait until automatic sync finishes.

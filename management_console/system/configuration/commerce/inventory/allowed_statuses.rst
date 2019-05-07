@@ -13,7 +13,7 @@ To change the default inventory statuses:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /admin_guide/img/configuration/inventory/allowed_statuses/AllowedStatuses.png
+   .. image:: /img/system/config_commerce/inventory/AllowedStatuses.png
       :class: with-border
 
    The following table describes the options available on the page:

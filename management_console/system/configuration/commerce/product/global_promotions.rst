@@ -25,7 +25,7 @@ To enable New Product icons globally:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockSystemConfig.png
+.. image:: /img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
 
 3. In the **New Product Icons** section, clear the **Use Default** check box and select **Yes** in the **Show on Product View** field.
 
@@ -50,7 +50,7 @@ To set up the New Arrivals block globally:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockSystemConfig.png
+.. image:: /img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
 
 3. In the **New Arrivals** section provide the following information:
 

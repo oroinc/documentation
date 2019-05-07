@@ -15,7 +15,7 @@ To enable and prioritize warehouses:
    .. note::
        For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /admin_guide/img/configuration/inventory/warehouses/Warehouses.png
+   .. image:: /img/system/config_commerce/inventory/Warehouses.png
       :class: with-border
 
 3. Enable as many warehouses as you need: 

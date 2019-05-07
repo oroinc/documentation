@@ -15,7 +15,7 @@ To change the default customer user configuration settings for an organization:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/customer/customer_users/CustomerUsersPerOrganization.png
+   .. image:: /img/system/config_system/customer/customer_users/CustomerUsersPerOrganization.png
       :class: with-border
 
 4. The following configuration options are available:

@@ -13,7 +13,7 @@ Learn how to configure localization options, currency and tracking, as well and 
 * :ref:`User Settings <admin-configuration-user-settings>`
 * :ref:`Tracking <admin-configuration-tracking-settings>`
 * :ref:`Upload Settings <configuration-guide--system-configuration--general-setup-sysconfig--upload-settings>`
-* :ref:`Email Configuration <user-guide-email-admin>`
+* :ref:`Email and System Mailbox Configuration <user-guide-email-admin>`
 
 
 .. toctree::

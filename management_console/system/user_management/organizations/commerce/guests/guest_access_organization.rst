@@ -17,7 +17,7 @@ To enable guest access per organization:
  
 .. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
 
-.. image:: /admin_guide/img/configuration/guest_access/GuestAccessOrg.png
+.. image:: /img/system/config_system/guest_access/GuestAccessOrg.png
 
 .. finish 
 

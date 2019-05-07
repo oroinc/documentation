@@ -1,7 +1,7 @@
 .. _user-guide--taxes--us:
 
-Configure US Sales Tax for Digital Products
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+US Sales Tax for Digital Products
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 
@@ -11,7 +11,7 @@ When the digital product is purchased from the shipping origin address in the st
 
 Preview:
 
-.. image:: /admin_guide/img/configuration/taxation/us_sales_tax/unlooped_Digital.gif
+.. image:: /img/system/config_system/taxation/us_sales_tax/unlooped_Digital.gif
 
 To label digital product codes in OroCommerce as taxable in the US:
 

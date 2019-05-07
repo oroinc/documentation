@@ -26,7 +26,6 @@ You can modify the following configuration settings that impact the way OroComme
 
 - Configure a shipping origin address that will be used system-wide for origin-based tax. When the shipping origin is a core jurisdiction, OroCommerce will use the address provided here to find the matching built-in tax jurisdiction rules for tax calculation.
 
-
 Configure Tax Calculation
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -40,7 +39,7 @@ To customize tax calculation in OroCommerce:
 
 The following page opens:
 
-   .. image:: /admin_guide/img/configuration/taxation/tax_calculation/TaxCalculation.png
+   .. image:: /img/system/config_system/taxation/tax_calculation/TaxCalculation.png
 
    .. note:: Remember to clear the **Use default** check box before setting a custom option.
 

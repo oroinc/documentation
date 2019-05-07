@@ -16,7 +16,7 @@ To define the default system language for a particular user:
 
 The following page opens:
 
-   .. image:: /admin_guide/img/localization/language_configuration_user.png
+   .. image:: /img/system/config_system/language_configuration_user.png
 
 4. Clear the **Use Organization** check box and select the default language for the UI elements displayed in the management console.
 

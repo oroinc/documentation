@@ -10,9 +10,7 @@ The first step of configuring All Products page for your storefront is enabling 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Catalog > Special Pages** in the panel to the left.
 
-   The following page opens:
-
-   .. image:: /admin_guide/img/configuration/catalog/special_pages/AllProductsSystem.png
+   .. image:: /img/system/config_commerce/catalog/AllProductsSystem.png
 
 3. In the **All Products** section, select the **Enable All Products Page** check box.
 4. Click **Save Settings** on the top right of the page.

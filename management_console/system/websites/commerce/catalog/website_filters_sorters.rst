@@ -13,7 +13,7 @@ To configure limiting filters and sorting options per website:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/catalog/filters_sorters/website_filters_sorters.png
+.. image:: /img/system/config_system/catalog/filters_sorters/website_filters_sorters.png
 
 4. The following configuration options are available:
 

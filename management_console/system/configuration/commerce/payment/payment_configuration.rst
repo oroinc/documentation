@@ -12,7 +12,7 @@ To configure the merchant location:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /admin_guide/img/configuration/payment/general/merchant_location.png
+   .. image:: /img/system/config_commerce/payment/merchant_location.png
       :class: with-border
 
 3. To customize the merchant location:

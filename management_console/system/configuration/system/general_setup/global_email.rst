@@ -5,6 +5,9 @@
 Email Configuration
 ===================
 
+.. contents:: :local:
+   :depth: 1
+
 You can configure email settings on four levels -- globally, :ref:`per organization <admin-configuration-email-configuration-organization>`, :ref:`per website <admin-configuration-system-mailboxes-website>`, or :ref:`per user <admin-configuration-email-configuration-user>` with the system settings on the global level containing the highest number of options. Based on the level where configuration has taken place, settings can fall back to other levels.
 
 .. note:: See a short demo on `how to create and manage emails <https://oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://oroinc.com/orocrm/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
@@ -13,10 +16,8 @@ You can configure email settings on four levels -- globally, :ref:`per organizat
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
 
-.. contents:: :local:
-
-Configure Email Settings Globally
----------------------------------
+Configure Email Settings
+------------------------
 
 To configure email settings globally:
 
@@ -43,13 +44,13 @@ To configure email settings globally:
 
    * **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.
 
-     .. image:: /user_guide/system/img/configuration/threads_settings.png
+     .. image:: /img/system/config_system/threads_settings.png
         :alt: Selecting email threads options in the email configuration
 
-     .. image:: /user_guide/system/img/configuration/threaded_email_activities.jpg
+     .. image:: /img/system/config_system/threaded_email_activities.jpg
         :alt: A sample of an email with the threaded option selected
 
-     .. image:: /user_guide/system/img/configuration/non_threaded_activities.jpg
+     .. image:: /img/system/config_system/non_threaded_activities.jpg
         :alt: A sample of an email with the non-threaded option selected
 
    * **Reply** --- Define which button will be displayed as the default one: **Reply** is available by default with the **Forward** and **Reply all** options in the dropdown. The settings can be changed to have **Reply all** displayed at the top.
@@ -88,8 +89,8 @@ To configure email settings globally:
 
 .. _admin-configuration-system-mailboxes-global:
 
-Configure a System Mailbox Globally
------------------------------------
+Configure a System Mailbox
+--------------------------
 
 .. note::
    See a short demo on `how to create and configure system mailboxes <https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
@@ -172,9 +173,7 @@ To configure a system mailbox globally:
 
 10. Click **Save Settings**.
 
-
 **Related Articles**
 
 * :ref:`Configure a System Mailbox per Organization <admin-configuration-system-mailboxes-organization>`
-
 

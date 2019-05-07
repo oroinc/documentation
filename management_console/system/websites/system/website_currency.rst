@@ -31,7 +31,7 @@ The following page opens:
 
    * **Enabled Currencies** --- The subset of :ref:`allowed currencies <sys--config--sysconfig--general-setup--currency>` that is available for the customer user by default on this website.
 
-     .. image:: /admin_guide/img/configuration/catalog/pricing/currency_on_the_front_store.png
+     .. image:: /img/system/config_commerce/catalog/currency_on_the_front_store.png
 
    * **Default Currency** --- The currency used by default to show prices in the storefront on this website.
 

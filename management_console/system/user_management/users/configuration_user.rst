@@ -96,7 +96,7 @@ The following page opens:
 +====================+====================================================================================================================================+
 | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                       |
 |                    |                                                                                                                                    |
-|                    | .. image:: /user_guide/img/admin/user_management/user_configuration_showemailsuserbar.png                                          |
+|                    | .. image:: /img/system/config_system/user_configuration_showemailsuserbar.png                                          |
 |                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
 |                    |                                                                                                                                    |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -120,7 +120,7 @@ The following page opens:
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
 |                           |                                                                                                                |
-|                           | .. image:: /user_guide/img/admin/user_management/user_configuration_pagination.png                             |
+|                           | .. image:: /img/system/config_system/user_configuration_pagination.png                             |
 |                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -147,7 +147,7 @@ The following page opens:
 +=======================+===========================================================================================================+
 | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
 |                       |                                                                                                           |
-|                       | .. image:: /user_guide/img/admin/user_management/user_configuration_wysiwyg.png                           |
+|                       | .. image:: /img/system/config_system/user_configuration_wysiwyg.png                           |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
@@ -172,7 +172,7 @@ The following page opens:
 |                                     |                                                                                                                  |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. image:: /user_guide/img/admin/user_management/user_configuration_showsql.png
+.. image:: /img/system/config_system/user_configuration_showsql.png
    :alt: A sample of the enabled display SQL field
 
 .. finish_display_set_user
@@ -243,7 +243,7 @@ Click **Check Connection/Retrieve Folders** to check whether the specified synch
 +======================+====================================================================================================================================================================================================+
 | Default Reply Button | Select which button will be default for replying to emails: **Reply** or **Reply All**. Other button will continue be available in the **Reply** menu, it will just not be on the top of the list. |
 |                      |                                                                                                                                                                                                    |
-|                      | .. image:: /user_guide/img/admin/user_management/reply_selector.png                                                                                                                                |
+|                      | .. image:: /img/system/config_system/reply_selector.png                                                                                                                                |
 |                      |    :alt: Selecting the default button for replying to emails                                                                                                                                       |
 |                      |                                                                                                                                                                                                    |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

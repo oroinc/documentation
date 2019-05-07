@@ -15,7 +15,7 @@ Enable and Set Up Previously Purchased Products per Organization
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/product/previously_purchased/PreviouslyPurchasedOrg.png
+   .. image:: /img/system/config_system/product/previously_purchased/PreviouslyPurchasedOrg.png
 
 3. In the **Purchase History** section:
 

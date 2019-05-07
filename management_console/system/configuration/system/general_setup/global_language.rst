@@ -21,7 +21,7 @@ To define the default system language and supported languages for email notifica
            For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 
-      .. image:: /admin_guide/img/localization/language_configuration_global.png
+      .. image:: /img/system/config_system/language_configuration_global.png
 
 2. Select one or multiple supported languages from the list that can be used for translation of the Oro application management console content (e.g. email notifications). Make sure to enable the corresponding languages in the **System > Localization > Languages** menu to make them available in the list. Refer to the :ref:`Languages <localization--languages>` section for more details.
 

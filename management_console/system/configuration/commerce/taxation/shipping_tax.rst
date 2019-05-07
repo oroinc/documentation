@@ -2,8 +2,8 @@
 
 .. System > Configuration > Commerce > Taxation > Shipping Tax
 
-Configure Shipping Tax
-----------------------
+Shipping
+--------
 
 .. begin
 
@@ -19,7 +19,7 @@ To change the shipping tax configuration:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/taxation/shipping/shipping_tax_config.png
+   .. image:: /img/system/config_system/taxation/shipping/shipping_tax_config.png
       :class: with-border
 
    The following options are available on the page:

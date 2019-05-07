@@ -22,7 +22,7 @@ To update the related products settings globally:
 
    The following page opens.
 
-   .. image:: /user_guide/img/products/products/RelatedProductsGlobal.png
+   .. image:: /img/system/config_commerce/catalog/RelatedProductsGlobal.png
       :class: with-border
 
    In the **Related Products** section, the following options are available:
@@ -39,12 +39,12 @@ To update the related products settings globally:
 
      **Show Add Button is Enabled**
 
-     .. image:: /user_guide/img/products/products/RelatedProductPreviewWithAdd.png
+     .. image:: /img/system/config_commerce/catalog/RelatedProductPreviewWithAdd.png
         :class: with-border
 
      **Show Add Button is Disabled**
 
-     .. image:: /user_guide/img/products/products/RelatedProductPreview.png
+     .. image:: /img/system/config_commerce/catalog/RelatedProductPreview.png
         :class: with-border
 
    * **Use Slider On Mobile** --- When enabled, one related product is displayed below the main product information. Other related products are accessible using the horizontal slider. Click < and > to slide through the related products.

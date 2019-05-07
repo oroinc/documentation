@@ -13,7 +13,7 @@ To change the default inventory quantity limitations:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /admin_guide/img/configuration/inventory/limitations.png
+   .. image:: /img/system/config_commerce/inventory/limitations.png
       :class: with-border
 
    The following table describes the options available on the page:

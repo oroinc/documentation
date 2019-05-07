@@ -11,7 +11,7 @@ To configure Google integration-related settings in the management console:
 1. Navigate to **System > Configuration** in the main menu.
 2. In the panel to the left, click **System Configuration > Integrations > Google Settings**.
 
-.. image:: /user_guide/system/img/configuration/google_settings_new.png
+.. image:: /img/system/config_system/google_settings_new.png
 
 Google Integration Settings
 ---------------------------

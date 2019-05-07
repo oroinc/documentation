@@ -16,7 +16,7 @@ To set up the New Arrivals block per organization:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockOrg.png
+.. image:: /img/system/config_commerce/product/NewArrivalsBlockOrg.png
 
 3. In the **New Arrivals** section provide the following information:
 

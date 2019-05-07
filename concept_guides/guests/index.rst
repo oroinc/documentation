@@ -102,7 +102,7 @@ Configure Guest Checkout per Website
    :start-after: begin
    :end-before: finish
 
-.. _user-guide--system-configuration--commerce-sales-shopping-list:
+
 
 Configure Guest Shopping Lists
 ------------------------------

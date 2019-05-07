@@ -14,7 +14,7 @@ To customize the default product options globally:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /admin_guide/img/configuration/inventory/product_options_global.png
+   .. image:: /img/system/config_commerce/inventory/product_options_global.png
       :alt: Global product options configuration
 
 Here, you can manage both inventory and upcoming products options.

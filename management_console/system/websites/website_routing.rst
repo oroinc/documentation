@@ -25,7 +25,7 @@ To change the default routing settings for the website:
 
    The following page opens.
 
-   .. image:: /admin_guide/img/configuration/websites/website_routing.png
+   .. image:: /img/system/config_system/websites/website_routing.png
       :class: with-border
 
    * **URL** - Internal links and canonical URLs (meta keywords) on the OroCommerce storefront pages may contain this value as the website base URL. This option value is used in internal links when a customer uses insecure (HTTP) connection. In the canonical links, it is used when the **Canonical URL Security Type** is set to *Insecure*.

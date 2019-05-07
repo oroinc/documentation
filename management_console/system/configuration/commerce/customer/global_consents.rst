@@ -30,7 +30,7 @@ To enable consents:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/customer/consents/enable_consents_globally.png
+   .. image:: /img/system/config_commerce/customer/enable_consents_globally.png
       :class: with-border
       :alt: Enable consents checkbox on global level
 
@@ -40,7 +40,7 @@ To enable consents:
 
 Enabling consents adds the **Consent Management** menu under **System**.
 
-.. image:: /admin_guide/img/configuration/customer/consents/consent_management_menu.png
+.. image:: /img/system/config_commerce/customer/consent_management_menu.png
    :class: with-border
    :alt: Consent management menu
 
@@ -65,7 +65,7 @@ To add consents to the list of enabled consents:
 #. To delete a consent from the list of enabled consents, click **x** next to it.
 #. Click **Save Settings** on the top right.
 
-   .. image:: /admin_guide/img/configuration/customer/consents/enable_consents_for_storefront.png
+   .. image:: /img/system/config_commerce/customer/enable_consents_for_storefront.png
       :class: with-border
       :alt: Enable consents for storefront
 

@@ -14,7 +14,7 @@ To configure configurable products globally:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-.. image:: /admin_guide/img/configurable_products/configurable_product_globally.png
+.. image:: /img/system/config_commerce/product/configurable_product_globally.png
 
 Here, you can customize a matrix form view for a configurable product as well as set visibility restrictions for all the simple products that compose the configurable one.
 
@@ -22,15 +22,15 @@ A matrix form is applied to a configurable product with up to two attributes. It
 
 * On a product page:
 
-.. image:: /admin_guide/img/configurable_products/matrix_product_view.png
+.. image:: /img/system/config_commerce/product/matrix_product_view.png
 
 * On the product listing:
 
-.. image:: /admin_guide/img/configurable_products/matrix_product_listing.png
+.. image:: /img/system/config_commerce/product/matrix_product_listing.png
 
 * On a shopping list page:
 
-.. image:: /admin_guide/img/configurable_products/matrix_shopping_list.png
+.. image:: /img/system/config_commerce/product/matrix_shopping_list.png
 
 To configure a matrix form view for a particular case:
 
@@ -40,19 +40,19 @@ To configure a matrix form view for a particular case:
 
    * **No Matrix Form** --- The option disables the matrix form visibility for a configurable product and displays an alternative table with a possibility to select one simple product within a configurable one at a time.
 
-     .. image:: /admin_guide/img/configurable_products/no_matrix_form.png
+     .. image:: /img/system/config_commerce/product/no_matrix_form.png
 
    * **Inline Matrix Form** --- With this option enabled, the matrix form is displayed next to the product image on the product details page.
 
-     .. image:: /admin_guide/img/configurable_products/matrix_product_view.png
+     .. image:: /img/system/config_commerce/product/matrix_product_view.png
 
    * **Popup Matrix Form** --- The option triggers a popup matrix form upon clicking the **Update Shopping List** button. Once the popup displays, a customer can select multiple simple products at a time.
 
-     .. image:: /admin_guide/img/configurable_products/matrix_popup.png
+     .. image:: /img/system/config_commerce/product/matrix_popup.png
 
    * **Group Single Products** --- The option is available only for the shopping list view. It extracts the single products which were sent to the shopping list from the configurable product matrix.
 
-     .. image:: /admin_guide/img/configurable_products/group_single_products.png
+     .. image:: /img/system/config_commerce/product/group_single_products.png
 
 3. By default, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Default** check box next to the **Allow To Add Empty Products** option and then the check box of the option itself.
 
@@ -66,11 +66,11 @@ In the cases where you have plenty of products, you may need to clear the produc
 
    **Everywhere** --- With this option selected, all the simple products are displayed together with the configurable one on a product page, product listing, and a shopping list page.
 
-     .. image:: /admin_guide/img/configurable_products/group_single_products.png
+     .. image:: /img/system/config_commerce/product/group_single_products.png
 
    **Hide Completely** --- The option hides all the simple product that belong to the configurable one and displays only the latter.
 
-      .. image:: /admin_guide/img/configurable_products/hide_completely_simple_products.png
+      .. image:: /img/system/config_commerce/product/hide_completely_simple_products.png
 
 3. Click **Save Settings**.
 

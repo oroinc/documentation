@@ -15,7 +15,7 @@ To customize the default product options per organization:
    
    The following page opens:
 
-   .. image:: /admin_guide/img/configuration/inventory/product_options_org.png
+   .. image:: /img/system/config_system/inventory/product_options_org.png
       :alt: Product options configuration per organization
 
 Here, you can manage both inventory and upcoming products options.

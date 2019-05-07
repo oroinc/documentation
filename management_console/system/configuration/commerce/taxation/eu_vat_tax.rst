@@ -1,7 +1,7 @@
 .. _user-guide--taxes--eu:
 
-Configure EU VAT Tax for Digital Products
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+EU VAT Tax for Digital Products
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 
@@ -18,7 +18,7 @@ To configure the digital product codes that are taxable in EU:
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/taxation/eu_vat_tax/ConfigurationSystemTaxationEUVatTaxes.png
+.. image:: /img/system/config_system/taxation/eu_vat_tax/ConfigurationSystemTaxationEUVatTaxes.png
 
 2. Clear the **Use Default** check box and click **Choose the value**. To filter the list of product tax codes, start typing the code name. The list refreshes automatically to show the values matching the text you enter. Once the necessary product code is found, select it to add to the Digital Products Tax Codes list.
 

@@ -18,7 +18,7 @@ To define the custom localization options for the particular website:
 
 The following page opens:
 
-.. image:: /admin_guide/img/localization/localization_configuration_website.png
+.. image:: /img/system/config_system/localization_configuration_website.png
 
 4. Select one or multiple enabled localizations for the website from the list to support the translation of the storefront UI elements to the target language.
 
