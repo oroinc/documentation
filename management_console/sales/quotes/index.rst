@@ -44,6 +44,7 @@ To learn more on how to create and use quotes and their workflows, check out the
    manage
    guest_quote
    flows/index
+   shipping_method_for_quotes
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -61,4 +61,5 @@ You can control the order lifecycle and:
    view
    manage
    control
+   track_order
    statuses

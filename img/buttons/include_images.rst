@@ -69,7 +69,11 @@ Images
 
 .. |IcTranslations| raw:: html
 
-   <i class="fa fa-language" aria-hidden="true"></i>
+   <i class="fa fa-folder-o fa-lg" aria-hidden="true"></i>
+
+.. |IcTranslationsC| raw:: html
+
+   <i class="fa fa-folder fa-lg" aria-hidden="true"></i>
 
 .. |IcShareWithOthers| raw:: html
 

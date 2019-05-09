@@ -11,7 +11,7 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Contact Reasons <admin-guide-contact-reasons>` --- Manage contact reasons used to categorize contact requests submitted through your website.
 * :ref:`Contact Groups <contact_groups>` --- Create and manage contact groups.
 * :ref:`Emails <admin-guide-email-configuration>` --- Create and manage templates, notification rules and maintenance notifications.
-* :ref:`Integrations <>` --- Create and manage pre-implemented integrations and integrations with third-party systems.
+* :ref:`Integrations <user-guide-integrations>` --- Create and manage pre-implemented integrations and integrations with third-party systems.
 * :ref:`Channels <user-guide-channels>` --- Create and manage multiple web and sales channels to aggregate data from different data sources.
 * :ref:`Jobs <book-job-execution>` --- Monitor tasks executed in the background.
 * :ref:`Data Audit <user-guide-data-audit>` --- See the full history of changes made to any record of an auditable entity.
@@ -21,8 +21,8 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Menus <>` --- Customize default management console menus.
 * :ref:`Frontend Menus <>` --- Configure default storefront menus.
 * :ref:`System Calendars <>` --- Create system and organization calendars and add events to them.
-* :ref:`Shipping Rules <>` --- Add shipping rules to bind customers to specific shipping prices based on the shipping locations and the products they purchase.
-* :ref:`Payment Rules <>` ---  Add payment rules to make payment options visible to buyers in the storefront.
+* :ref:`Shipping Rules <sys--shipping-rules>` --- Add shipping rules to bind customers to specific shipping prices based on the shipping locations and the products they purchase.
+* :ref:`Payment Rules <sys--payment-rules>` ---  Add payment rules to make payment options visible to buyers in the storefront.
 * :ref:`Workflows <mc-system-wf>` --- Use system workflows and create custom workflows.
 * :ref:`Processes <user-guide-processes>` --- View and activate/deactivate processes in the application.
 * :ref:`System Information <>` --- Review system information on oro and third-party packages.
@@ -55,6 +55,8 @@ Oro applications enable you to configure system settings on four configuration l
    data_audit/index
    scheduled_tasks/index
    processes/index
+   shipping_rules/index
+   payment_rules/index
    workflows/index
    websites/index
 

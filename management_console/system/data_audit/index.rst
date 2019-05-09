@@ -18,13 +18,13 @@ The report grid contains the following information:
 
 * **ACTION** --- Defines the action that has been performed with the :term:`record`. You can see if the record has been created, updated or removed.
 * **VERSION** --- Corresponds to the consecutive number of changes performed with the specific record.
-* **ENTITY TYPE** --- Type of the :term:`entity` to which the record belongs.
-* **ENTITY NAME** --- Name of the specific record tracked.
-* **ENTITY ID** --- ID of the entity to which the record belongs.
+* **ENTITY TYPE** --- The type of the :term:`entity` to which the record belongs.
+* **ENTITY NAME** --- The name of the specific record tracked.
+* **ENTITY ID** --- The ID of the entity to which the record belongs.
 * **DATA** --- Details of the change.
-* **AUTHOR** --- Name and email of the user that has performed the change.
-* **ORGANIZATION** --- Organization within which the change has been performed.
-* **LOGGED AT** --- Date and time when the event was logged.
+* **AUTHOR** --- The name and email of the user that has performed the change.
+* **ORGANIZATION** --- The organization within which the change has been performed.
+* **LOGGED AT** --- The date and time when the event was logged.
 
 .. image:: /img/system/data_audit/data_audit_ex.png
    :alt: The sample of a data audit report
