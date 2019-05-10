@@ -51,7 +51,7 @@ In OroCommerce, payment methods are conditions required for a sale to be complet
 **The list of payment methods that OroCommerce supports is listed below. Click on the links below to open the overview page of each supported payment service.**
 
 * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
-* :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term>`
+* :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
 * :ref:`PayPal Payment Services <user-guide--payment--payment-providers-overview--paypal>`
 * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
 * :ref:`Wirecard Services <doc--payment--payment-providers-overview--wirecard>`

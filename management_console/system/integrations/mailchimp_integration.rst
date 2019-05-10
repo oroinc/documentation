@@ -82,7 +82,7 @@ Configure Integration on the Oro Side
    | **Sync Priority:**           | **Remote Wins** means that the MailChimp will be considered the master and override conflicts with the Oro application. **Local Wins** means that local data will    be the master and override any conflicts with MailChimp.                                                                                                           |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. image:: //img/system/integrations/mailchimp/o_choose_mc_integration.jpg
+   .. image:: /img/system/integrations/mailchimp/o_choose_mc_integration.jpg
 
 4. Once all the details of the integration have been specified, click **Save and Close.** The integration has been successfully configured and
 will now appear in the integration grid.

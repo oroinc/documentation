@@ -29,13 +29,13 @@ To configure integration with OroCRM and OroCommerce on the dotmailer side, crea
 
 5. Click the **New User** button.
     
-   .. image:: /user_guide/system/img/dotmailer_email_campaign/dotmailer_account_users.jpg
+   .. image:: /img/system/integrations/dotmailer/dotmailer_account_users.jpg
 
    Your unique email address will be generated in the **Email Address** field. You need this email address to configure OroCRM integration with dotmailer.
 
 6. Next, create and confirm your **Password**. The **Description** field is optional. Mark your user **Enabled** and click **Save** to proceed.
    
-   .. image:: /user_guide/system/img/dotmailer_email_campaign/dotmailer_api_users_new_user_details.jpg
+   .. image:: /img/system/integrations/dotmailer/dotmailer_api_users_new_user_details.jpg
 
 .. _user-guide-dotmailer-configuration--oro-side:
 
@@ -46,7 +46,7 @@ Create Integration on the Oro Application Side
 
 2. Click **Create Integration** in the upper-right corner of the page.
 
-   .. image:: /user_guide/system/img/dotmailer_email_campaign/oro_create_dotmailer_integration_new.jpg
+   .. image:: /img/system/integrations/dotmailer/oro_create_dotmailer_integration_new.jpg
 
 3. Complete the following fields:
 
@@ -67,7 +67,7 @@ Create Integration on the Oro Application Side
 
 As soon as the integration is successfully configured, it will appear in the integration grid.
 
-.. image:: /user_guide/system/img/dotmailer_email_campaign/oro_dotmailer_integration_grid.jpg
+.. image:: /img/system/integrations/dotmailer/oro_dotmailer_integration_grid.jpg
 
 In addition, **dotmailer menu group** will become available under **Marketing** in the main menu.
 
@@ -77,7 +77,7 @@ The dotmailer menu group contains the following sections:
 - **Data Fields** (see :ref:`Manage dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
 - **Data Field Mappings** (see :ref:`Manage dotmailer Data Fields and Mappings guide <user-guide-dotmailer-data-fields>`)
 
-.. image:: /user_guide/system/img/dotmailer_email_campaign/o_dotmailer_main_menu.jpg
+.. image:: /img/system/integrations/dotmailer/o_dotmailer_main_menu.jpg
 
 Sync dotmailer Integration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

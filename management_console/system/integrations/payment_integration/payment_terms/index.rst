@@ -1,4 +1,4 @@
-.. _user-guide--payment--payment-providers-overview--payment-term:
+.. _user-guide--payment--payment-providers-overview--payment-term-config:
 
 Payment Terms Configuration
 ===========================

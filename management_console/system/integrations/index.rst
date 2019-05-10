@@ -8,7 +8,7 @@ OroCommerce supports the following pre-implemented integrations that can be enab
 
 * :ref:`Manage Integrations: Payment Method Integration <sys--integrations--manage-integrations--payment-methods>`
    * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
-   * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term>`
+   * :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
    * :ref:`PayPal Payment Services <user-guide--payment--payment-providers-overview--paypal>`
    * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
    * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`

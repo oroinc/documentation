@@ -35,7 +35,7 @@ Create an Integration with a Payment Method Provider
 Out of the box, you may integrate OroCommerce with the following systems and services (click the links for detailed guidance):
 
 * :ref:`Check/Money Order <user-guide--payment--check-money-order>`
-* :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term>`
+* :ref:`Payment Terms <user-guide--payment--payment-providers-overview--payment-term-config>`
 * :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`PayPal Express <config-guide--payment--paypal-express>`
 

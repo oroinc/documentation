@@ -24,13 +24,13 @@ PayPal Payments Pro Express Checkout
 
 .. Express Checkout is a part of the payment method name (PayPal Payments Pro Express Checkout). Unintentionally, it is forced to duplicate the parent header. Other payment methods do not have to follow this style.
 
-.. image:: /img/system/integrations/checkout_payments_pro_express.png
+.. image:: /img/system/integrations/checkout/checkout_payments_pro_express.png
    :width: 400px
 
 PayPal Payments Express Checkout
 --------------------------------
 
-.. image:: /img/system/integrations/checkout_paypal_express.png
+.. image:: /img/system/integrations/checkout/checkout_paypal_express.png
 
 .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
 

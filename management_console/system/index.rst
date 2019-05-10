@@ -16,8 +16,8 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Jobs <book-job-execution>` --- Monitor tasks executed in the background.
 * :ref:`Data Audit <user-guide-data-audit>` --- See the full history of changes made to any record of an auditable entity.
 * :ref:`Scheduled Tasks <book-time-based-command-execution>` --- View recurring tasks executed on schedule.
-* :ref:`Entities <>` --- Create and manage entities and entity fields.
-* :ref:`Tags Management <>` --- Create tags and taxonomies to organize data in the application.
+* :ref:`Entities <doc-entities>` --- Create and manage entities and entity fields.
+* :ref:`Tags Management <admin-guide-tag-management>` --- Create tags and taxonomies to organize data in the application.
 * :ref:`Menus <>` --- Customize default management console menus.
 * :ref:`Frontend Menus <>` --- Configure default storefront menus.
 * :ref:`System Calendars <>` --- Create system and organization calendars and add events to them.
@@ -44,6 +44,7 @@ Oro applications enable you to configure system settings on four configuration l
    :titlesonly:
    :hidden:
 
+   tags_management/index
    configuration/index
    user_management/index
    contact_reasons/index
@@ -54,6 +55,7 @@ Oro applications enable you to configure system settings on four configuration l
    jobs/index
    data_audit/index
    scheduled_tasks/index
+   entities/index
    processes/index
    shipping_rules/index
    payment_rules/index
