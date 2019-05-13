@@ -28,8 +28,6 @@ Web Server
 
 Web server is the main application entry point and is a required system component to run Oro applications. Web server configuration can be different based on the expected application load and can start with the single instance in the same environment where all other system components are installed. But it also can be much more complex and include multiple instances behind the load balancer. Web server should be available to the end user browser.
 
-See more information about the :ref:`scalable deployment <scalable_deployment>`.
-
 Consumer
 ^^^^^^^^
 
