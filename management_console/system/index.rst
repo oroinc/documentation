@@ -18,8 +18,8 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Scheduled Tasks <book-time-based-command-execution>` --- View recurring tasks executed on schedule.
 * :ref:`Entities <doc-entities>` --- Create and manage entities and entity fields.
 * :ref:`Tags Management <admin-guide-tag-management>` --- Create tags and taxonomies to organize data in the application.
-* :ref:`Menus <>` --- Customize default management console menus.
-* :ref:`Frontend Menus <>` --- Configure default storefront menus.
+* :ref:`Menus <doc-config-menus>` --- Customize default management console menus.
+* :ref:`Frontend Menus <backend-frontend-menus>` --- Configure default storefront menus.
 * :ref:`System Calendars <>` --- Create system and organization calendars and add events to them.
 * :ref:`Shipping Rules <sys--shipping-rules>` --- Add shipping rules to bind customers to specific shipping prices based on the shipping locations and the products they purchase.
 * :ref:`Payment Rules <sys--payment-rules>` ---  Add payment rules to make payment options visible to buyers in the storefront.
@@ -44,7 +44,6 @@ Oro applications enable you to configure system settings on four configuration l
    :titlesonly:
    :hidden:
 
-   tags_management/index
    configuration/index
    user_management/index
    contact_reasons/index
@@ -56,6 +55,9 @@ Oro applications enable you to configure system settings on four configuration l
    data_audit/index
    scheduled_tasks/index
    entities/index
+   tags_management/index
+   menus/index
+   frontend_menus/index
    processes/index
    shipping_rules/index
    payment_rules/index
