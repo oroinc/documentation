@@ -73,7 +73,7 @@ noting the following recommendations:
 #) Disable access to `app_dev.php`
 #) Configure crontab and run web socket server
 
-Oro applications are :doc:`scalable <scale_nodes>`.
+Oro applications are scalable.
 
 .. note::
     As an alternative to the on-premise deployment, when you created your application following recommendations

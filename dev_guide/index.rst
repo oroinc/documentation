@@ -18,8 +18,7 @@ and technical details.
    emails/index
    data/index
    background_tasks/index
-   functional_tests
-   scale_nodes
+   functional_tests 
    web_api/index
    impersonation
    cookbook/index
