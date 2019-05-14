@@ -59,7 +59,3 @@ Next, set up a payment rule that enables this payment method for all or some cus
 * :ref:`Payments at Checkout (Illustration) <doc--payment--checkout>`
 * :ref:`System Payment Configuration <configuration--guide--commerce--configuration--payment>`
 
-
-
-.. include:: /img/buttons/include_images.rst
-   :start-after: begin

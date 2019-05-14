@@ -20,6 +20,7 @@ To enable guest access globally:
 .. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
    
 .. image:: /img/system/config_commerce/guests/GuestAccessSysConfig.png
+   :alt: Guest access system configuration
 
 .. finish
 

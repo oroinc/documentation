@@ -3,6 +3,8 @@
 Sales Territories
 =================
 
+.. hint:: Read more on this topic in :ref:`Sales Territories <user-guide-territories>`.
+
 To enable sales territories for leads, opportunities and all types of customers:
 
 1. Navigate to **System > Configuration** in the main menu.

@@ -21,7 +21,9 @@ To set up an integration between your Oro application and MS Exchange Server, ma
 Configure the Integration with MS Exchange Server
 -------------------------------------------------
 
-To configure MS Exchange integration settings in your Oro application:
+.. note:: These settings are available globally and :ref:`per organization <admin-configuration-ms-exchange-org>`.
+
+To configure MS Exchange integration settings in your Oro application globally:
 
 1. Navigate to **System > Configuration > System Configuration > Integrations > MS Exchange**.
    

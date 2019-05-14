@@ -39,7 +39,7 @@ To create a new user in |oro_application|:
 
    The following page opens:
  
-   .. image:: /admin_guide/img/user_management/user_create_general.png
+   .. image:: /img/system/user_management/user_create_general.png
 
 3. In the **General** section, provide the following information: 
 
@@ -75,12 +75,12 @@ To create a new user in |oro_application|:
 
    The following screenshot illustrates system-wide roles with no organization selected in **Access Settings**:
 
-     .. image:: /admin_guide/img/user_management/groups_roles_system_wide.jpg
+     .. image:: /img/system/user_management/groups_roles_system_wide.jpg
 
 
    The following screenshot illustrates the organization-specific role added to the list once the organization is selected in **Access Settings**:
 
-     .. image:: /admin_guide/img/user_management/groups_roles_organization.jpg
+     .. image:: /img/system/user_management/groups_roles_organization.jpg
 
 6. In **Access Settings** select the check boxes in front of the organization(s) you want the user to have access to.  
    
@@ -103,11 +103,11 @@ Once the user is created, it becomes available in the table of all users under *
 
 1. To view details of a specific user, click once on the user name in the table to open their page.
 
-   .. image:: /admin_guide/img/user_management/user_view_fromgrid.png
+   .. image:: /img/system/user_management/user_view_fromgrid.png
 
 2. To edit details of a specific user, click |IcEdit| in the ellipsis menu at the end of the row of the selected user. Alternatively, open the page of the user and click **Edit** on the top right.
 
-   .. image:: /admin_guide/img/user_management/user_edit.png
+   .. image:: /img/system/user_management/user_edit.png
 
 For information on the activities you can perform from the user profile page (such as send an email, or assign a calendar event), check out the :ref:`Activities <user-guide-activities>` topic. 
 
@@ -124,7 +124,7 @@ Using LDAP integration does not prevent you from creating user records in |oro_a
 
 System administrators can tell if a user has been added via the LDAP integration. The **LDAP Distinguished Names** field in the profile of these users contains integration-specific values.
 
-.. image:: /admin_guide/img/user_management/user_ldap_distinguished_name.png
+.. image:: /img/system/user_management/user_ldap_distinguished_name.png
 
 For more information on the integration with LDAP, please see the topic on :ref:`LDAP integration <user-guide-ldap-integration>` .
 
@@ -145,19 +145,19 @@ To enable or disable a user in the |oro_application| application:
 1. Navigate to **System > User Management > Users**.
 2. In record table, click once on the name of the selected user to open their page. 
 
-   .. image:: /admin_guide/img/user_management/user_enable.png
+   .. image:: /img/system/user_management/user_enable.png
 
-   .. image:: /admin_guide/img/user_management/user_disable.png
+   .. image:: /img/system/user_management/user_disable.png
 
 3. On page of the selected user, click |IcActivate| **Enable User**/ |IcBan| **Disable User** on the top right.
 
    .. note:: Alternatively, you can |IcActivate| enable and |IcBan| disable users from the record table. Hover over the ellipsis menu at the end of the row of the selected user and click on the corresponding icon. 
 
-     .. image:: /admin_guide/img/user_management/all_users_grid.png
+     .. image:: /img/system/user_management/all_users_grid.png
 
     Keep in mind that besides the page with all users, you can get to the pages of only active or disabled users, or those who cannot log in.
    
-     .. image:: /admin_guide/img/user_management/users_saved_views.png
+     .. image:: /img/system/user_management/users_saved_views.png
 
 Enable/Disable Multiple Users
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -168,7 +168,7 @@ To enable/disable several users at the same time, use mass actions:
 2. In the table of all users, select the check boxes in front of the names of those users whose passwords you want to reset. 
 3. Click the ellipsis menu at the right end of the table header row and then click |IcActivate| **Enable** or |IcBan| **Disable**.
 
-   .. image:: /admin_guide/img/user_management/users_enable_disable_mass_action.png
+   .. image:: /img/system/user_management/users_enable_disable_mass_action.png
 
 .. _doc-user-management-users-actions-activate:
 
@@ -183,7 +183,7 @@ To activate a user:
 2. Click on the selected user once to open their page.  
 3. On the user page, click the **Activate** on the top right. 
 
-   .. image:: /admin_guide/img/user_management/user_activate.png
+   .. image:: /img/system/user_management/user_activate.png
 
    The user authentication status changes from **Locked** to **Active**.
 
@@ -199,13 +199,13 @@ To delete a user from the system:
 
    .. important:: Keep in mind that you can delete only those users who have no records assigned to them. 
 
-   .. image:: /admin_guide/img/user_management/users_delete.png
+   .. image:: /img/system/user_management/users_delete.png
 
 3. In the **Deletion Confirmation** dialog box, click **Yes, Delete**.
 
-.. note:: Alternatively, you can delete a user from their user page by clicking the **Delete** on the top right.
+   .. note:: Alternatively, you can delete a user from their user page by clicking the **Delete** on the top right.
 
-   .. image:: /admin_guide/img/user_management/user_page_delete.png
+   .. image:: /img/system/user_management/user_page_delete.png
 
 .. _doc-user-management-users-actions-export:
 
@@ -222,9 +222,9 @@ To export user records:
 2. On the page of all users, click **Export** on the top right.
 3. When the export job finishes, you will receive a notification to your primary email address. 
 
-   .. image:: /admin_guide/img/user_management/users_grid_export.png
+   .. image:: /img/system/user_management/users_grid_export.png
 
-   .. image:: /admin_guide/img/user_management/users_export_csv.png
+   .. image:: /img/system/user_management/users_export_csv.png
 
 .. _doc-user-management-users-actions-api:
 
@@ -237,7 +237,7 @@ When the integration with a third-party software or other work requirements dema
 2. On the page of all users, click once on the selected user to open their page. 
 3. In the **General Information**, click **Generate Key** next to the **API Key** field.  
 
-   .. image:: /admin_guide/img/user_management/users_generate_api_key.png
+   .. image:: /img/system/user_management/users_generate_api_key.png
 
 Once the API key is generated, the user can execute API requests via the sandbox, Curl command, any other REST client, or use the API via the custom application.
    
@@ -257,7 +257,7 @@ To configure system settings for a particular user:
 2. On the page of all users, click once on the selected user to open their page. 
 3. On the user page, click **Configuration** on the top right. 
 
-   .. image:: /admin_guide/img/user_management/user_configuration_settings.png
+   .. image:: /img/system/user_management/user_configuration_settings.png
 
 .. note:: In OroCommerce, you can also configure the contact information visible to customers of your storefront. This setting is available under **System > Configuration > Commerce > Sales > Contacts** in the main menu.
 
@@ -271,7 +271,7 @@ Change/Reset User Passwords
 
 You can change and reset the password for a specific user on their profile page in the **More Actions** menu:
 
- .. image:: /admin_guide/img/user_management/user_page_change_reset_password.png
+ .. image:: /img/system/user_management/user_page_change_reset_password.png
 
 1. Navigate to **System > User Management > Users**.
 2. On the page of all users, click once on the selected user to open their page. 
@@ -279,19 +279,19 @@ You can change and reset the password for a specific user on their profile page 
 
    * Click |IcChangePassword| **Change Password** to open a new dialog and provide a new password. Alternatively, you can click the **Suggest Password** link to generate a secure random password. To see / hide  the entered password, click the |IcShow| **Show**/|IcHide| **Hide** icon next to the **New password** field. Once a new password is provided, a reset password email is sent to this user.
 
-     .. image:: /admin_guide/img/user_management/user_change_password.png
+     .. image:: /img/system/user_management/user_change_password.png
 
    * Click |IcPassReset| **Reset Password** to send an email to the user with a new password. 
    
-     .. image:: /admin_guide/img/user_management/user_reset_password.png
+     .. image:: /img/system/user_management/user_reset_password.png
 
      The user will not be able to log into the application until their password is changed. In this case, the user authentication status changes to **Password reset**. It will return to **Active** when the user changes the password.
 
-     .. image:: /admin_guide/img/user_management/user_password_reset.png
+     .. image:: /img/system/user_management/user_password_reset.png
 
 .. note:: Alternatively, you can reset password for a specific user from the table of all users. For this, hover over the ellipsis menu at the end of the row of the selected user, and click **Reset Password**.
 
-     .. image:: /admin_guide/img/user_management/user_reset_password_from_grid.png
+     .. image:: /img/system/user_management/user_reset_password_from_grid.png
 
 .. _doc-user-management-users-actions-reset-password-multiple:
 
@@ -307,7 +307,7 @@ When you suspect a security breach, you can reset passwords for multiple users a
 
 .. important::  The users will not be able to log into the application until their passwords are changed. Note that user authentication statuses change to **Password reset**. They will return to **Active** when the users complete password change procedure.
 
-     .. image:: /admin_guide/img/user_management/users_mass_reset_passwords.png
+     .. image:: /img/system/user_management/users_mass_reset_passwords.png
 
 **Related Articles** 
 

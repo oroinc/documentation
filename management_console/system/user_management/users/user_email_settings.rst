@@ -4,7 +4,11 @@
 Configure Email Settings per User
 =================================
 
-To configure email settings :ref:`per user <configuration--guide--config-levels>`: 
+.. hint:: Read more on this topic in :ref:`Emails <admin-guide-email-configuration>`.
+
+.. note:: You can configure email settings :ref:`globally <admin-configuration-email-configuration-global>`, :ref:`per organization <admin-configuration-email-configuration-organization>`, :ref:` per website <admin-configuration-system-mailboxes-website>`, per user.
+
+To configure email settings per user:
 
 1. Navigate to **System > User Management > Users**  in the main menu.
 2. For the necessary user, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
@@ -42,7 +46,7 @@ To configure email settings :ref:`per user <configuration--guide--config-levels>
 
     As an example, we have synchronized a Gmail mailbox with OroCRM, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found `here <https://support.google.com/mail/answer/7126229?hl=en&rd=2&visit_id=1-636180891016092253-2149088408#ts=1665018%2C1665144>`__  and `here <https://support.google.com/accounts/answer/6010255?hl=en>`__.
 
-    .. image:: /img/system/config_system/personabox_imap_smtp.jpg
+    .. image:: /img/system/user_management/org_configuration/personabox_imap_smtp.jpg
        :alt: Email synchronization settings configuration on the user level
 
     * **Email Threads** --- **Display Email Conversations As** and **Display Emails In Activity Lists As** define how emails and replies are displayed to the users, as threads or separately. Two options are available: threaded and non-threaded.

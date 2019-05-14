@@ -12,7 +12,7 @@ To create a user group:
 
    The following page opens:
 
-   .. image:: /admin_guide/img/user_management/user_group_create.png
+   .. image:: /img/system/user_management/user_group_create.png
 
 3. In the **General** section, provide the following information:
 
@@ -27,7 +27,7 @@ To create a user group:
 
 Once saved, the group is available on the list of all groups under **System > User Management > Groups**, where you can filter groups by name, edit and delete them.
 
-.. image:: /admin_guide/img/user_management/user_groups_grid.png
+.. image:: /img/system/user_management/user_groups_grid.png
  
 
 **Related Articles** 

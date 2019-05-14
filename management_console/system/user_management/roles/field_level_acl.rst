@@ -27,7 +27,7 @@ The following table illustrates the actions that can be performed to entity fiel
 | Edit   | A user can see and modify entity record fields on the 'edit entity' form.     |
 +--------+-------------------------------------------------------------------------------+
 
-.. image:: /admin_guide/img/access_roles_management/roles_permissions_fields_general_ex.png
+.. image:: /img/system/user_management/roles_permissions_fields_general_ex.png
 
 For each of these actions you can set the required access level. However, the set of available access levels for entity fields depends on:
 
@@ -56,13 +56,13 @@ To enable field-level access:
 3. On the page of the selected entity, click **Edit** on the top right.
 4. In the **Other** section, enable the **Field Level ACL** check box.
 
-   .. image:: /admin_guide/img/access_roles_management/access_field_level_acl_enable.png
+   .. image:: /img/system/user_management/access_field_level_acl_enable.png
 
 5. Click **Save**.
 
 When field-level permissions are enabled, the **+** icon appears next to the entities when creating or editing a role.
 
-.. image:: /admin_guide/img/access_roles_management/enable_field_acl.gif
+.. image:: /img/system/user_management/enable_field_acl.gif
 
 .. _user-guide-user-management-permissions-roles--field-level-acl--enable-user:
 
@@ -71,7 +71,7 @@ Enable Users to See Restricted Fields
 
 You can enable users to modify only certain entity fields and restrict them from modifying others. For example, you can enable sales managers to modify opportunity statuses, but restrict sales representatives to only viewing them with no permissions to update statuses in any way. Fields disabled for editing will appear dimmed on the interface. 
 
-.. image:: /admin_guide/img/access_roles_management/opportunity_greyed-status.png
+.. image:: /img/system/user_management/opportunity_greyed-status.png
 
 To enable field-level access:
 
@@ -85,7 +85,7 @@ To enable field-level access:
 
    .. important:: To be able to apply permissions entity fields when creating or editing a role, make sure that the **Field Level ACL** check box is enabled for the selected entity.
 
-   .. image:: /admin_guide/img/access_roles_management/access_field_level_acl_showrestricted.png
+   .. image:: /img/system/user_management/access_field_level_acl_showrestricted.png
 
 5. Click **Save**.
 

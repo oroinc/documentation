@@ -24,7 +24,7 @@ To create a new role in |oro_application|:
 2. Click **Create Role** on the top right.
 3. In the **General** section, provide the role name. 
 
-   .. image:: /admin_guide/img/access_roles_management/create_new_role_from_scratch.png
+   .. image:: /img/system/user_management/create_new_role_from_scratch.png
 
 4. In the **Additional** section, specify the following:
 
@@ -37,25 +37,25 @@ To create a new role in |oro_application|:
 
    * To specify access levels for entity-level permissions, click on the arrow icon next to the required permission (e.g. create or assign), and select the access level from the list. By default, access levels for each permission are set to **None**.
    
-     .. image:: /admin_guide/img/user_management/single_entity_level_permissions.png
+     .. image:: /img/system/user_management/single_entity_level_permissions.png
      
      To set the same access level for all actions on entity, select the required access level from the ellipsis menu at the end of the entity row.
 
-     .. image:: /admin_guide/img/user_management/entity_level_permissions.png
+     .. image:: /img/system/user_management/entity_level_permissions.png
 
    * To specify access levels for :ref:`field-level permissions <user-guide-user-management-permissions-roles--field-level-acl>`, click **+** to the left of the entity name. Click on the arrow icon next to the required permission, and select the access level from the list. Read more on how to enable field-level permissions in the :ref:`Apply Permissions to Entity Fields <user-guide-user-management-permissions-roles--apply--field-level-acl>` topic.
    
-     .. image:: /admin_guide/img/access_roles_management/enable_field_acl.gif
+     .. image:: /img/system/user_management/enable_field_acl.gif
 
    * To set system capabilities, enable or disable the check box next to the required options.  
    
-     .. image:: /admin_guide/img/access_roles_management/cloned_role_system_capabilities.png
+     .. image:: /img/system/user_management/cloned_role_system_capabilities.png
 
 6. In the **Workflows** section, specify access levels for workflows and workflow transitions. There are two permissions for workflows, **view** and **perform transitions**. By default, all workflow access levels are set to **None**. Choose the workflow or the transition to which you want to assign different permissions, click on the action name and select the required access level from the list. 
 
    .. tip:: If you do not see individual transitions of the workflow, click the **+** **Expand** icon in front of the workflow name to expand the list of transitions.
 
-   .. image:: /admin_guide/img/access_roles_management/create_role_workflow_permissions.png
+   .. image:: /img/system/user_management/create_role_workflow_permissions.png
 
 7. In the **Users** section, select check boxes in front of the users to whom you want to assign this role.
 8. Click **Save**. 
@@ -70,16 +70,16 @@ You can create a role by cloning the existing one:
 1. Navigate to **System > User Management > Roles** in the main menu. 
 2. On the page of **All Roles**, click the ellipsis menu at end of the corresponding row of the selected role, and then click the |IcClone| **Clone** icon.  
  
-   .. image:: /admin_guide/img/access_roles_management/clone_role_from_grid.png
+   .. image:: /img/system/user_management/clone_role_from_grid.png
 
 
    Alternatively, you can clone the role from the page of the selected role by clicking |IcClone| **Clone** on the top right.
 
-   .. image:: /admin_guide/img/access_roles_management/clone_role_from_role_page.png
+   .. image:: /img/system/user_management/clone_role_from_role_page.png
 
 3. The page that opens has all of the settings as the original role. Modify the settings as required. 
 
-   .. image:: /admin_guide/img/access_roles_management/cloned_role.png
+   .. image:: /img/system/user_management/cloned_role.png
 
 4. In the **General** section, update the role name.
 5. In the **Additional** section, provide the following information:
@@ -93,25 +93,25 @@ You can create a role by cloning the existing one:
 
    * To specify access levels for entity-level permissions, click on the arrow icon next to the required permission, and select the access level from the list. 
    
-     .. image:: /admin_guide/img/user_management/single_entity_level_permissions.png
+     .. image:: /img/system/user_management/single_entity_level_permissions.png
      
      To set the same access level for all actions on entity, select the required access level from the ellipsis menu at the end of the entity row.
    
-     .. image:: /admin_guide/img/user_management/entity_level_permissions.png
+     .. image:: /img/system/user_management/entity_level_permissions.png
        
    * To specify access levels for :ref:`field-level permissions <user-guide-user-management-permissions-roles--field-level-acl>`, click **+** to the left of the entity name. Click on the arrow icon next to the required permission, and select the access level from the list. Read more on how to enable field-level permissions in the :ref:`Apply Permissions to Entity Fields <user-guide-user-management-permissions-roles--apply--field-level-acl>` topic.
    
-    .. image:: /admin_guide/img/access_roles_management/enable_field_acl.gif
+    .. image:: /img/system/user_management/enable_field_acl.gif
 
    * To set system capabilities, enable or disable the check box next to the required options.  
    
-     .. image:: /admin_guide/img/access_roles_management/cloned_role_system_capabilities.png
+     .. image:: /img/system/user_management/cloned_role_system_capabilities.png
 
 7. In the **Workflows** section, specify access levels for workflows and workflow transitions. There are two permissions for workflows, **view** and **perform transitions**. Choose the workflow or the transition to which you want to assign different permissions, click on the action name, and select the required access level from the list. 
 
    .. tip:: If you do not see individual transitions of the workflow, click the **+** **Expand** icon in front of the workflow name to expand the list of transitions.
 
-   .. image:: /admin_guide/img/access_roles_management/create_role_workflow_permissions.png
+   .. image:: /img/system/user_management/create_role_workflow_permissions.png
 
 8. In the **Users** section, select check boxes in front of the users to whom you want to assign this role.
 9. Click **Save**. 
@@ -126,11 +126,11 @@ To edit an existing role:
 1. Navigate to **System > User Management > Roles** in the main menu. 
 2. On the page of **All Roles**, click the ellipsis menu at end of the corresponding row of the selected role, and then click the |IcEdit| **Edit** icon.  
 
-   .. image:: /admin_guide/img/access_roles_management/edit_role.png
+   .. image:: /img/system/user_management/edit_role.png
 
    Alternatively, you can edit the role from the page of the selected role by clicking |IcEdit| **Edit** on the top right.
 
-   .. image:: /admin_guide/img/access_roles_management/edit_role_from_role_page.png
+   .. image:: /img/system/user_management/edit_role_from_role_page.png
 
 3. On the page that opens, update the information as necessary.
 
@@ -146,11 +146,11 @@ To delete an existing role:
 1. Navigate to **System > User Management > Roles** in the main menu. 
 2. On the page of **All Roles**, click the ellipsis menu at end of the corresponding row of the selected role, and then click the |IcDelete| **Delete** icon.  
 
-   .. image:: /admin_guide/img/access_roles_management/delete_role.png
+   .. image:: /img/system/user_management/delete_role.png
    
    Alternatively, you can edit the role from the page of the selected role by clicking |IcDelete| **Delete** on the top right.
 
-   .. image:: /admin_guide/img/access_roles_management/delete_role_from_page.png
+   .. image:: /img/system/user_management/delete_role_from_page.png
 
 **Related Articles**
 

@@ -23,7 +23,7 @@ With sales territories you can:
 Enable Territories
 ------------------
 
-Sales Territories are disabled by default. Prior to starting work with territory management, ensure that it is enabled in your Oro application instance. For configuration instructions, see the :ref:`relevant guide <admin-guide-territories>`. 
+Sales Territories are disabled by default. Prior to starting work with territory management, ensure that it is enabled in your Oro application instance. For configuration instructions, see the :ref:`relevant guide <sys--configuration--crm--sales-pipeline--sales-territories>`.
 
 Create a Territory
 ------------------

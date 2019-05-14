@@ -19,7 +19,7 @@ To enable guest access per website:
    
 .. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
 
-.. image:: /img/system/config_system/guest_access/GuestAccessWeb.png
+.. image:: /img/system/user_management/org_configuration/GuestAccessWeb.png
 
 .. finish 
 

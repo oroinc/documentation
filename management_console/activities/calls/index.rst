@@ -34,7 +34,6 @@ You can log a call in the following ways:
   .. image:: /img/activities/activities_calls3.png
      :alt: Show the Log Call button the appears next to the phone number
 
-
 .. _user-guide--activities--calls--manage:
 
 Manage Logged Calls
@@ -55,3 +54,8 @@ You can view, update, delete the existing call record, add context or comment to
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
+
+.. toctree::
+   :hidden:
+
+   hangouts

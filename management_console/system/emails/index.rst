@@ -25,8 +25,6 @@ All email settings are located in the system, organization, website, or user con
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/hTI0IWEsSF4" frameborder="0" allowfullscreen></iframe>
 
-
-
 **Related Topics**
 
 * :ref:`Configure an Integration with Google <admin-configuration-google>`

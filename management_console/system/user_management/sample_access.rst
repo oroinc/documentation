@@ -1,5 +1,7 @@
 :orphan:
 
+.. _doc-user-management-users-access-examples:
+
 Blueprints of User Access Configuration
 =======================================
 
@@ -13,35 +15,35 @@ Example 1: Access to Business Units of the Same Organization
 
 A sales assistant Todd needs access to the business units highlighted in yellow that are in the same organization.
 
-.. image:: /admin_guide/img/user_management/user_bu_2_org_1_sch.png
+.. image:: /img/system/user_management/user_bu_2_org_1_sch.png
 
 Select each of the business units in **Access Settings**:
 
-.. image:: /admin_guide/img/user_management/user_bu_2_org_1.png
+.. image:: /img/system/user_management/user_bu_2_org_1.png
 
 Example 2: Access to Business Units in Different Organizations
 --------------------------------------------------------------
 
 If a sales assistant Todd is helping in the sibling organization, he might need access to the business units highlighted in yellow that belong to the different organizations:
 
-.. image:: /admin_guide/img/user_management/user_bu_2_org_2_sch.png
+.. image:: /img/system/user_management/user_bu_2_org_2_sch.png
 
 Select each of the organizations and business units to which Todd must have access in the **Access Settings** section:
 
-.. image:: /admin_guide/img/user_management/user_bu_2_org_2.png
+.. image:: /img/system/user_management/user_bu_2_org_2.png
 
 Example 3: Access to the Business Unit with Subunits
 ----------------------------------------------------
 
 When Todd is promoted to the sales manager, his role changes to the one with the division access level, and he gets access to the business units and the chain of its subunits.
 
-.. image:: /admin_guide/img/user_management/user_bu_2dl_org_1_sch.png
+.. image:: /img/system/user_management/user_bu_2dl_org_1_sch.png
 
 .. note:: A division is a business unit with the whole chain of its subunits, so you can select only the top business unit of the division (**ACME East** in our example) in **Access Settings** to automatically give Todd access to the entire division.
 
 When a new business unit is added to the division, the sales manager has the necessary access to monitor it.
 
-.. image:: /admin_guide/img/user_management/user_bu_2dl_org_1_sch2.png
+.. image:: /img/system/user_management/user_bu_2dl_org_1_sch2.png
 
 **Related Articles**
 

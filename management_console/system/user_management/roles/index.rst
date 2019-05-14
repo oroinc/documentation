@@ -85,7 +85,7 @@ For each of these permissions you can set an **access level**:
 
 The picture below illustrates how permissions for an entity can be configured:
 
-.. image:: /admin_guide/img/access_roles_management/ex_permissions-on-entity.png
+.. image:: /img/system/user_management/ex_permissions-on-entity.png
 
 The set of available access levels depends on the entity's **ownership type**. The ownership type limits the range of access levels you can set for actions on this entity. For example, you cannot set the **User** access level if the entity ownership type is **Organization**.
 

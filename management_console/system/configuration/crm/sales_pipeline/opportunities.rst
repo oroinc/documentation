@@ -5,9 +5,8 @@ Opportunity
 
 To enable opportunities in your Oro application:
 
-
 1. Navigate to **System > Configuration** in the main menu.
-2. Click **CRM > Sales Pipeline > Leads** in the panel to the left.
+2. Click **CRM > Sales Pipeline > Opportunity** in the panel to the left.
 
    Here, you can define a number of opportunity-related options to be applied to the Oro application instance.
 

@@ -26,45 +26,11 @@ However:
 
 By default, all configuration settings are available globally. Whenever you see the |IcOrganizationLevel| organization, |IcWebsiteLevel| website or |IcUserLevel| user icons, this means that the setting is also available on the organization, website, or user level respectively.
 
-To help you find the specific configuration option faster, use :ref:`Quick Search <user-guide--system-configuration--quick-search>` located in the configuration panel on the left (on all configuration levels).
+.. hint:: To help you find the specific configuration option faster, use :ref:`Quick Search <user-guide--system-configuration--quick-search>` located in the configuration panel on the left (on all configuration levels).
 
-.. image:: /img/system/configuration/quick_search.png
-   :class: with-border
-   :alt: Quick search under System Configuration
-
-Use the menu below to read more on the options available at each configuration level and on domain-specific settings under System > Configuration.
-
-.. raw:: html
-
-   <div class="guideline">
-      <div class="guideline__item" >
-          <div style="text-align: center">
-            <h3><i class="guideline__icon fa fa-cogs fa-lg"></i><br>Configuration <br>Levels</h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-               <ul class="guideline__list">
-                   <li><a class="reference internal" href="configuration/global#doc-system-configuration">Global Configuration</a></li>
-                   <li><a class="reference internal" href="configuration/website#doc-website-configuration">Website Configuration</a></li>
-                   <li><a class="reference internal" href="configuration/organization#doc-organization-configuration">Organization Configuration</a></li>
-                   <li><a class="reference internal" href="configuration/user#doc-my-user-configuration">User Configuration</a></li>
-                </ul>
-          </div>
-      </div>
-
-      <div class="guideline__item" >
-          <div style="text-align: center">
-            <h3><i class="guideline__icon fa fa-sitemap"></i><br>Domain-specific <br>Groups of Settings</h3>
-          </div>
-          <div style="overflow: hidden;margin: 0 auto;width: 100%;height:100%;text-align: left">
-               <ul class="guideline__list">
-                   <li><a class="reference internal" href="landing-commerce#configuration-guide-commerce-configuration">Commerce Configuration</a></li>
-                   <li><a class="reference internal" href="landing-crm#configuration-guide-crm-configuration">CRM Configuration</a></li>
-                   <li><a class="reference internal" href="landing-marketing#configuration-guide-marketing-configuration">Marketing Configuration</a></li>
-                </ul>
-          </div>
-      </div>
-   </div>
-
+            .. image:: /img/system/configuration/quick_search.png
+               :class: with-border
+               :alt: Quick search under System Configuration
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

@@ -35,4 +35,4 @@ To enable and prioritize warehouses:
 
           * To see the complete list of the warehouses in a table view, click **bars** sign to the right of the warehouse name. The list of warehouses opens in a popup window.
 
-4. Once all warehouses are enabled and prioritized, click **Save**.
+4. Once all warehouses are enabled and prioritized, click **Save Settings**.

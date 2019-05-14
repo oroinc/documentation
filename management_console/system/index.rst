@@ -7,7 +7,7 @@ The **System** menu of the management console contains post-install configuratio
    :alt: System menu
 
 * :ref:`Configuration <mc-system-configuration>` --- Manage system settings and settings specific for CRM, Commerce and marketing features.
-* :ref:`User Management <>` --- Configure user, role and access management in the application and determine levels of access to data.
+* :ref:`User Management <user-guide-user-management>` --- Configure user, role and access management in the application and determine levels of access to data.
 * :ref:`Contact Reasons <admin-guide-contact-reasons>` --- Manage contact reasons used to categorize contact requests submitted through your website.
 * :ref:`Contact Groups <contact_groups>` --- Create and manage contact groups.
 * :ref:`Emails <admin-guide-email-configuration>` --- Create and manage templates, notification rules and maintenance notifications.
@@ -30,12 +30,14 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Websites <>` --- Create multiple individually configured websites in the same application instance.
 * :ref:`Localization <>` --- Translate and adapt products for a specific country or region.
 
+.. _configuration--guide--config-levels:
+
 Oro applications enable you to configure system settings on four configuration levels (or scopes): system, organization, website and user.
 
-* **Global**: To set up and manage settings globally, navigate to :ref:`System > Configuration <>` in the main menu, and locate the options you need to configure in the panel to the left.
-* **Organization**: To configure settings per organization, navigate to :ref:`System > User Management > Organizations <>`, and select the one that you wish to toggle the options for. Hover over the ellipsis menu to the right of the necessary organization and click *Configuration* to start editing it. Organization settings can fall back to system (or global) settings. Clearing the Use System check box next to the required option and changing its value means that you are configuring this option specifically for the selected organization.
-* **Website**: To configure settings per website, navigate to :ref:`System > Websites <>`, hover over the ellipsis menu to the right of the necessary website, and click *Configuration*. Similarly to the configuration per organization, clear the Use System check box next to the required option, and change the default value to introduce changes at website level.
-* **User**: To configure settings per user, navigate to :ref:`System > User Management > Users <>`, hover over the ellipsis menu to the right of the necessary user, and click *Configuration*. When Use Organization check box is enabled, organization settings override the global ones.  Clear the Use Organization check box next to the required option, and change the default value to introduce changes at user level.
+* **Global**: To set up and manage settings globally, navigate to :ref:`System > Configuration <mc-system-configuration>` in the main menu, and locate the options you need to configure in the panel to the left.
+* **Organization**: To configure settings per organization, navigate to :ref:`System > User Management > Organizations <doc-organization-configuration>`, and select the one that you wish to toggle the options for. Hover over the ellipsis menu to the right of the necessary organization and click *Configuration* to start editing it. Organization settings can fall back to system (or global) settings. Clearing the Use System check box next to the required option and changing its value means that you are configuring this option specifically for the selected organization.
+* **Website**: To configure settings per website, navigate to :ref:`System > Websites <doc-website-configuration>`, hover over the ellipsis menu to the right of the necessary website, and click *Configuration*. Similarly to the configuration per organization, clear the Use System check box next to the required option, and change the default value to introduce changes at website level.
+* **User**: To configure settings per user, navigate to :ref:`System > User Management > Users <doc-my-user-configuration>`, hover over the ellipsis menu to the right of the necessary user, and click *Configuration*. When Use Organization check box is enabled, organization settings override the global ones.  Clear the Use Organization check box next to the required option, and change the default value to introduce changes at user level.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

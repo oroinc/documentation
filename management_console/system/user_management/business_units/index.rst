@@ -28,7 +28,7 @@ To create a new business unit:
    * **Email** --- The email address specified for the business unit record.
    * **Fax** --- The fax number specified for the business unit record.
 
-   .. image:: /admin_guide/img/user_management/users_bu_create.png
+   .. image:: /img/system/user_management/users_bu_create.png
 
 4. In the **Additional** section, provide a short description of the business unit record.
 5. In the **Users** section, select the **Has Group** check box next to the required users to add them to the business unit you are creating.   
@@ -39,7 +39,7 @@ To create a new business unit:
 
 Once saved, the business unit is available on the list of all business units under **System > User Management > Business Units**, where you can filter business units by name, view, edit and delete them.
 
-.. image:: /admin_guide/img/user_management/user_business_unit_grid.png
+.. image:: /img/system/user_management/user_business_unit_grid.png
 
 **Related Articles**
 

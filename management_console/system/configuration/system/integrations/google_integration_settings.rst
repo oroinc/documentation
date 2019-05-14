@@ -6,12 +6,16 @@ Google Settings
 .. contents:: :local:
     :depth: 1
 
+.. hint:: Read more on this topic in :ref:`Google Integration <admin-configuration-google>`.
+
 To configure Google integration-related settings in the management console:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. In the panel to the left, click **System Configuration > Integrations > Google Settings**.
 
 .. image:: /img/system/config_system/google_settings_new.png
+
+.. note:: These settings can be configured globally and :ref:`per organization <user-guide-hangouts-org>`.
 
 Google Integration Settings
 ---------------------------
@@ -48,7 +52,7 @@ In the Google Sign-on section, provide the following details:
 Google Hangouts
 ---------------
 
-In the Google Hangouts section, provide the following details:
+In the :ref:`Google Hangouts <user-guide-hangouts>` section, provide the following details:
 
 +-----------------------+-----------------------------------------------------+
 | **Option**            | **Description**                                     |

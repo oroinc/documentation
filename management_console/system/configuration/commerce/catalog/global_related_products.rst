@@ -1,7 +1,12 @@
 .. _sys--commerce--catalog--relate-products--main:
+.. _sys--commerce--catalog--upsell-products:
+
+.. _sys--commerce--catalog--relate-products:
 
 Related Products
 ================
+
+.. hint:: Read more on this topic in :ref:`Products <doc--products>`.
 
 Related products listed for the product may include accessories, services, and other items that are likely to be purchased in the same order. They facilitate navigation through the product catalog in the management console and help a buyer find the other products they may be interested in buying.
 
@@ -11,16 +16,19 @@ In the system configuration, you can:
 * Control the type of the relationship (one-way or bidirectional).
 * Limit the number of items displayed as related.
 
-These settings may apply :ref:`globally <sys--commerce--catalog--relate-products>`, on the :ref:`organization level <sys--users--organization--commerce--catalog--related-products>`, and on the :ref:`website level <sys--websites--commerce--catalog--related-products>`.
+Up-sell products listed for the product in the OroCommerce storefront may advertise more expensive alternatives to the product, like a newer and more advanced model, upgrades and add-ons that may look tempting when bundled with the product, etc.
 
-.. _sys--commerce--catalog--relate-products:
+In the system configuration, you can:
+
+* Enable and disable up-sell product management for the products.
+* Limit the number of items displayed as up-sell.
+
+.. hint:: These settings may apply :ref:`globally <sys--commerce--catalog--relate-products>`, on the :ref:`organization level <sys--users--organization--commerce--catalog--related-products>`, and on the :ref:`website level <sys--websites--commerce--catalog--related-products>`.
 
 To update the related products settings globally:
 
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Catalog > Related Items** in the menu to the left.
-
-   The following page opens.
 
    .. image:: /img/system/config_commerce/catalog/RelatedProductsGlobal.png
       :class: with-border
@@ -51,20 +59,40 @@ To update the related products settings globally:
 
    .. finish_related_products_option_description
 
-3. To customize any of these options:
+     To customize any of these options:
 
      a) Clear the **Use Default** check box next to the option.
      b) Set or clear the option, or enter the quantity.
 
-4. Click **Save**.
+4. In the **Up-Sell Products** section, the following options are available:
+
+   * **Enable Up-Sell Products** --- Toggles managing up-sell products on/off. Enabled by default.
+   * **Maximum Number Of Assigned Items** --- A limit of related items that may be added to any product.
+   * **Maximum Items** --- A limit of up-sell products that are shown to the buyer.
+
+     .. note:: Some related items may be hidden by the visibility settings. If the list of up-sell products still exceeds the limit, only the specified number of items (top of the list) will be shown.
+
+   * **Minimum Items** --- The minimum number of up-sell products that may be shown to the buyer. If the actual number of products is less than this value, the up-sell products section is hidden in the storefront for the product.
+   * **Show Add Button** --- Enables a buyer to order the product from the up-sell products section in the main product details. When disabled, a buyer needs to open the up-sell product details before they can add it to the shopping list.
+
+     **Show Add Button is Enabled**
+
+     .. image:: /user_guide/img/products/products/RelatedProductPreviewWithAdd.png
+        :class: with-border
+
+     **Show Add Button is Disabled**
+
+     .. image:: /user_guide/img/products/products/RelatedProductPreview.png
+        :class: with-border
+
+   * **Use Slider On Mobile** --- When the option is enabled, one up-sell product is displayed below the main product information. Other up-sell products are accessible using the horizontal slider. Click < and > to slide through the up-sell products.
+
+   To customize any of these options:
+
+   a) Clear the **Use Default** check box next to the option.
+   b) Set or clear the option, or enter the quantity.
+
+5. Click **Save**.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
-
-.. toctree::
-   :hidden:
-
-   global_related_products
-   organization_related_products
-   website_related_products

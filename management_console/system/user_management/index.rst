@@ -32,7 +32,6 @@ Check out the topics below for more information on each of the elements:
 * :ref:`Create and Manage User Groups <user-management-groups>`
 * :ref:`Create Business Units <user-management-bu>`
 * :ref:`Create and Manage Organizations <user-management-organizations>`
-* :ref:`Work with Multiple Organizations <user-ee-multi-org>`
 
 Role Structure
 --------------

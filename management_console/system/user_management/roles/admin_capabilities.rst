@@ -11,7 +11,7 @@ You can enable or disable entity-specific and system-specific capabilities in th
 
 .. warning:: Keep in mind that capabilities available in your instance depend on the Oro application installed (for example, OroCRM has fewer capabilities than OroCommerce).
 
-.. image:: /admin_guide/img/access_roles_management/all_capabilities.png
+.. image:: /img/system/user_management/all_capabilities.png
 
 Read on to learn more about the capabilities available for users in the management console.
 
@@ -29,7 +29,7 @@ In the Account Management section, the following capabilities are available:
 
 * **Access System Information** --- Enables a user to view the system information page under **System > System Information** in the main menu. This page contains the list of Oro packages and third-party packages that are installed, and is usually only used by system administrators and integrators.
 
-   .. image:: /admin_guide/img/access_roles_management/system_information_enabled.png
+   .. image:: /img/system/user_management/system_information_enabled.png
 
 * **Enter The Billing Address Manually** --- Enables a user to provide the billing address manually. 
 * **Enter The Shipping Address Manually** --- Enables a user to provide the shipping address manually.
@@ -55,7 +55,7 @@ In the Catalog section, the following capabilities are available:
 
 * **[Product Attribute] Create Attribute** --- Enables a user to create product attributes in the application.
 
-   .. image:: /admin_guide/img/access_roles_management/create_attribute_enabled.png
+   .. image:: /img/system/user_management/create_attribute_enabled.png
 
 * **[Product Attribute] Edit Attribute** --- Enables a user to edit product attributes in the application.
 * **[Product Attribute] Remove Attribute** --- Enables a user to remove product attributes from the application.
@@ -64,14 +64,14 @@ In the Catalog section, the following capabilities are available:
 
   .. comment: Per discussion with PO, should be renamed to Manage Related Products
 
-  .. image:: /admin_guide/img/access_roles_management/related_products_enabled.png
+  .. image:: /img/system/user_management/related_products_enabled.png
 
 * **[Up-Sell Products] Edit Up-Sell Products** --- Enables a user to view, add and edit up-sell products.
 
   .. comment: Per discussion with PO, should be renamed to Manage Ups-sell Products
    
 
-  .. image:: /admin_guide/img/access_roles_management/upsell_products_enabled.png
+  .. image:: /img/system/user_management/upsell_products_enabled.png
 
   .. note:: When both **Edit Related Products** and **Edit Up-sell Products** are disabled for a role, the **Related Items** section disappears from the product page.
 
@@ -82,20 +82,20 @@ In the Quotes section, the following capabilities are available:
 
 * **Add Free-Form Items** --- Enables a user to provide product details (SKU, product name) using free-form entry when creating a quote in the management console.
 
-  .. image:: /admin_guide/img/access_roles_management/free_form_entry.png
+  .. image:: /img/system/user_management/free_form_entry.png
 
 * **Enter The Shipping Address Manually** --- Enables a user to provide the shipping address for quotes manually when creating or editing a quote in the management console.
 
-  .. image:: /admin_guide/img/access_roles_management/shipping_address_quote.png
+  .. image:: /img/system/user_management/shipping_address_quote.png
 
 * Override Customer Payment Term
 * **Override Quote Prices** --- Enables a user to override prices in quotes. When disabled, the price fields on quote edit pages are inactive.
 
-  .. image:: /admin_guide/img/access_roles_management/override_quote_price_disabled.png
+  .. image:: /img/system/user_management/override_quote_price_disabled.png
 
 * **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when `Backoffice Quotes Flow with Approvals <https://oroinc.com/orocommerce/doc/current/admin-guide/workflows/backoffice-quote-flow-with-approvals>`_ is enabled in the application. 
 
-  .. image:: /admin_guide/img/access_roles_management/approve_quotes_disabled.png
+  .. image:: /img/system/user_management/approve_quotes_disabled.png
   
 * **Use Any Shipping Address From The Customer Address Book** --- Enables a user to select any shipping address available in the customer's address book from the list. 
 
@@ -111,7 +111,7 @@ In the Marketing section, the following capabilities are available:
 
 * **Send Campaign Emails** --- Enables a user to launch a campaign manually. When the capability is enabled, the user can :ref:`send emails <user-guide-email-campaigns-send>` specified by the campaign which is not scheduled to send emails at a specific time (campaigns that have *Manual* selected for **Schedule**). This capability does not affect the user's ability to define and edit campaign settings and create templates.
 
-  .. image:: /admin_guide/img/access_roles_management/email_campaign_emabled.png
+  .. image:: /img/system/user_management/email_campaign_emabled.png
 
 Sales Data
 ----------
@@ -146,16 +146,16 @@ Application
 
 * **Access Personal Configuration** --- Enables a user to access their :ref:`profile configuration settings <doc-my-user-configuration>` where they can localize the application, change the display settings, and otherwise modify how the application will appear to them. Changes made by a user on the personal configuration page do not affect other users.
 
-  .. image:: /admin_guide/img/access_roles_management/user_level_config.png
+  .. image:: /img/system/user_management/user_level_config.png
 
 * **Access System Configuration** --- Enables a user to access system configuration settings under **System > Configuration** in the main menu.
 
-  .. image:: /admin_guide/img/access_roles_management/sys_config.png
+  .. image:: /img/system/user_management/sys_config.png
 
 * **Assign/Unassign Tags** --- Enables a user to assign/unassign :ref:`tags <admin-guide-tag-management>` to records. 
 * **Connect to MailChimp** --- Enables a user to map the contents of a marketing list in |oro_application| to use a segment of the subscribers list in :ref:`MailChimp <user-guide-mailchimp-campaign>`. When the capability is enabled, the **Connect to MailChimp** button appears on the page of the selected marketing list. Make sure that the integration between |oro_application| and :ref:`MailChimp is configured <user-guide-mc-integration>` for the capability to work.
 
-* **Export Grid View** --- Enables a user to :ref:`export the grid views <doc-grids-actions-export>` that they have configured. 
+* **Export Grid View** --- Enables a user to export the grid views that they have configured.
 
 * **Manage Menus** --- Enables a user to access :ref:`menus configuration at different levels <doc-config-menus>`.
 
@@ -173,17 +173,17 @@ Application
 
   .. hint:: This capability does not influence a user's ability to edit their own password from the **My User** page.
 
-  .. image:: ../img/roles/manage_passwords.png
+  .. image:: /img/system/user_management/manage_passwords.png
 
 * **Outlook Integration** --- Enables a user to download the latest version of the |oro_application| (Enterprise edition) add-in for Outlook. If :ref:`OroCRM is synchronized with Outlook <user-guide-synch-outlook>`, this add-in enables a user to synchronize contacts, tasks, and calendar events between OroCRM and the user's Outlook account. The user can also associate emails to accounts, contacts, opportunities, and cases, as well as create leads, opportunities, and cases in OroCRM that are based on emails from the Outlook sidebar.
 
-  .. image:: ../img/roles/outlook_add-in.png
+  .. image:: /img/system/user_management/outlook_add-in.png
 
 * **Share Data View** --- Enables a user to :ref:`share and unshare the grid views <doc-grids-actions-grid-views-share>` that they have configured.
 
-  .. image:: ../img/roles/grid_share.png
+  .. image:: /img/system/user_management/grid_share.png
 
-  .. image:: ../img/roles/grid_unshare.png
+  .. image:: /img/system/user_management/grid_unshare.png
 
 * **Update User Profile** --- Enables a user to update their own profile regardless of which permission for the **Edit** action on the **User** entity the user's role includes. That is, when the **Update User Profile** capability is included in the user's role, even if the role has *None* selected for the **Edit** action on the **User** entity, the user will be able to update their profile.
 
@@ -205,7 +205,7 @@ Calendar
 
   .. important:: When both **Manage Organization Calendars** and **Manage System Calendars** capabilities are disabled, the **System Calendar** menu disappears from under **System** in the main menu. When at least one capability is enabled, the **System Calendars** menu appears under **System**.
 
-     .. image:: /admin_guide/img/access_roles_management/system_calendars_enabled.png
+     .. image:: /img/system/user_management/system_calendars_enabled.png
 
 .. _admin-capabilities-config-entities:
 .. _admin-capabilities-merge:
@@ -221,11 +221,11 @@ Entity
 * **Search** --- Enables users to :ref:`search <user-guide-getting-started-search>` for specific records within the application. The setting does not influence the user's ability to :ref:`search by tag <user-guide-getting-started-search-tag>`.
 * **Export Entity Records** --- Enables users to export entity records, as described in the :ref:`Import and Export Data <user-guide-export>` topic. When the capability is enabled, the **Export** button appears on the top right of the page with the table of selected records.
 
-  .. image:: ../img/roles/export_data.png
+  .. image:: /img/system/user_management/export_data.png
 
 * **Import Entity Records** --- Enables users to import records from a file to |oro_application|, as described in the :ref:`Import and Export Data <user-guide-import>` topic. When the capability is enabled, the **Import File** button appears on the top right of the page with the table of selected records.
 
-  .. image:: ../img/roles/import_data.png
+  .. image:: /img/system/user_management/import_data.png
 
 **Related Articles**
 
