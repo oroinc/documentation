@@ -236,7 +236,7 @@ If a command contains quotes and is wrapped in the same quotes type, the inner q
     orocloud-cli app:console "oro:message-queue:consume --memory-limit=512 --time-limit=\"+30 seconds\""
 
 
-By default, the `app:console` command runs in `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g. to monitor command execution in real time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
+By default, the `app:console` command runs in the `silent` mode, which means that the output from the application is shown after the command completion. To execute an application command interactively, e.g. to monitor command execution in real time, you may be required to debug consumer execution. For this, add the `-vvv` option (it increases maintenance agent verbosity to DEBUG level).
 
 .. code-block:: none
     :linenos:
@@ -275,6 +275,8 @@ Media Upload
 
 Sometimes you may require to upload media files that relate to custom CMS page(s) or products to a specific ``public`` or ``import_export`` directory. This can be done with the ``media:upload`` command that allows to upload media files e.g. ``svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js | xml`` to the ``[public|web]/media/uploads/`` or the  ``[app|var]/import_export/product_images/`` directory.
 
+.. note:: By default, the command runs in ``DRY-RUN`` mode which means that no files will be transferred but displayed only for validation purposes. To perform media transfer, execute the command with ``--force`` flag.
+
 Usage examples:
 
 Show command description and help:
@@ -289,7 +291,9 @@ Show command description and help:
     :linenos:
 
     Description:
-      Uploads media content from the given source to a selected destination [ public | products ]. Allowed file types: [ svg | ttf | woff | woff2 | jpg | jpeg | jp2 | jxr | webp | gif | png | ico | css | scss | pdf | rtf | js ]
+      Uploads media content from the given source to a selected destination [ public | products ].
+      Allowed file types: [ *.svg | *.ttf | *.woff | *.woff2 | *.jpg | *.jpeg | *.jp2 | *.jxr |
+       *.webp | *.gif | *.png | *.ico | *.css | *.scss | *.pdf | *.rtf | *.js | *.xml | mimetype ]
 
     Usage:
       media:upload [options] [--] [<source> [<destination>]]
@@ -300,6 +304,7 @@ Show command description and help:
 
     Options:
           --log=LOG         Log to file
+          --keep-source     Causes the media sources be kept, otherwise asks to delete after copying to destination.
           --force           Causes the media source directory content be physically moved to destination.
       -h, --help            Display this help message
       -q, --quiet           Do not output any message
@@ -309,7 +314,8 @@ Show command description and help:
       -n, --no-interaction  Do not ask any interactive question
       -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 
-The following command transfers media files from the `~/media` directory into the destination directory which will be asked. The command is executed in ``DRY-RUN`` mode.
+The following command simulates (the command is executed in ``DRY-RUN`` mode) transfer of media files from the `~/media` directory into the destination directory which will be asked.
+Also, if some files cannot be transferred due to particular restrictions, the appropriate notification is displayed.
 
 .. code-block:: none
     :linenos:
@@ -320,30 +326,31 @@ The following command transfers media files from the `~/media` directory into th
     :linenos:
 
     ➤ Executing task media:upload
-    Please select media destination location:
+    Please select the media destination location:
       [public  ] media/uploads/
       [products] import_export/product_images/
-     > products
-    [localhost] sending incremental file list
-    ./
-    2a508b3.jpg
-    36cb536.png
-    7946a9a.js
-    e72b1f9.jpg
-    e72b1fa.ico
-    e72b1fb.css
-    subdirectory/
-    subdirectory/6b6855e.svg
-    subdirectory/7946a9a.js
+     > public
+    Source directory scan has started. The process may take a while, please be patient...
+    (DRY-RUN mode, can be interrupted at any time without any effect.)
+    Source directory scan has finished. Starting transfer operation...
+    24 files of 27 processed, last batch size is 10.22 MB.
 
-    sent 282 bytes  received 50 bytes  664.00 bytes/sec
-    total size is 950.04K  speedup is 2,861.58 (DRY RUN)
-    [localhost]
       Media transfer executed in DRY-RUN mode.
-      Please check output and if everything is fine - execute the command with `--force` flag.
+      Please check output and if everything is fine - execute the command with the `--force` flag.
+
+      The following files CAN NOT be transferred:
+    +---------------------------------------------------------+------------------------------------------------------+
+    | File path                                               | Error reason                                         |
+    +---------------------------------------------------------+--------------------------------------------------------------+
+    | /home/test_user/media_sources/no_read_permissions.jpeg  | The file CANNOT be read.                                     |
+    | /home/test_user/media_sources/test.txt                  | The file extension is NOT allowed.                           |
+    | /home/test_user/media_sources/test_wrong_type.png       | The file extension DOES NOT match the Mime Type of the file. |
+    +---------------------------------------------------------+--------------------------------------------------------------+
     ✔ Ok
 
 The following command transfers media files from the `~/media` directory into the destination directory which will be asked. The command is executed in the ``FORCED`` mode.
+
+.. note:: When the command runs with the --force flag, it asks whether to keep source files or remove them.
 
 .. code-block:: none
     :linenos:
@@ -354,25 +361,44 @@ The following command transfers media files from the `~/media` directory into th
     :linenos:
 
     ➤ Executing task media:upload
-    Please select media destination location:
+    Please select the media destination location:
       [public  ] media/uploads/
       [products] import_export/product_images/
-     > products
-    [localhost] sending incremental file list
-    ./
-    2a508b3.jpg
-    36cb536.png
-    7946a9a.js
-    e72b1f9.jpg
-    e72b1fa.ico
-    e72b1fb.css
-    subdirectory/
-    subdirectory/6b6855e.svg
-    subdirectory/7946a9a.js
+     > public
+    Keep source files (default "Y", any answer except "Y" would mean "n")? [Y/n] Y
+    Source directory scan has started. The process may take a while, please be patient...
+    Source directory scan has finished. Starting transfer operation...
+    5 files of 5 processed, last batch size is 350.29 KB.
 
-    sent 950.90K bytes  received 202 bytes  1.90M bytes/sec
-    total size is 950.04K  speedup is 1.00
-    [localhost] Media successfully transferred.
+      Media has been transferred successfully (5 of 5 (350.29 KB)).
+    ✔ Ok
+
+If source files cannot be removed, the appropriate notification is displayed. For example:
+
+.. code-block:: none
+    :linenos:
+
+    ➤ Executing task media:upload
+    Please select the media destination location:
+      [public  ] media/uploads/
+      [products] import_export/product_images/
+     > public
+    Keep source files (default "Y", any answer except "Y" would mean "n")? [Y/n] n
+    Source directory scan has started. The process may take a while, please be patient...
+    Source directory scan has finished. Starting transfer operation...
+    5 files of 5 processed, last batch size is 350.29 KB.
+
+      Media has been transferred successfully (5 of 5 (350.29 KB)).
+
+      The following files CAN NOT be removed due to insufficient permission:
+    +----------------------------------------------------------------------+
+    | File path                                                            |
+    +----------------------------------------------------------------------+
+    | /home/test_user/media_sources/sub_folder/test.jpeg                   |
+    | /home/test_user/media_sources/sub_folder/test.jpg                    |
+    | /home/test_user/media_sources/sub_folder/test.jxr                    |
+    | /home/test_user/media_sources/sub_folder/test.xml                    |
+    +----------------------------------------------------------------------+
     ✔ Ok
 
 The following command transfers media files from the `~/media` directory into the destination directory which is provided as argument.  The command is executed in the ``FORCED`` mode.
@@ -386,28 +412,17 @@ The following command transfers media files from the `~/media` directory into th
     :linenos:
 
     ➤ Executing task media:upload
-    [localhost] sending incremental file list
-    ./
-        2a508b3.jpg
-        36cb536.png
-        7946a9a.js
-        e72b1f9.jpg
-        e72b1fa.ico
-        e72b1fb.css
-        subdirectory/
-        subdirectory/6b6855e.svg
-        subdirectory/7946a9a.js
+    Keep source files (default "Y", any answer except "Y" would mean "n")? [Y/n] Y
+    Source directory scan has started. The process may take a while, please be patient...
+    Source directory scan has finished. Starting transfer operation...
+    5 files of 5 processed, last batch size is 350.29 KB.
 
-    sent 950.90K bytes  received 202 bytes  1.90M bytes/sec
-    total size is 950.04K  speedup is 1.00
-    [localhost] Media successfully transferred.
+      Media has been transferred successfully (5 of 5 (350.29 KB)).
     ✔ Ok
-    {code}
-
 
 .. note:: The files in the source directory always overwrite the same files in the destination directory.
 
-.. note:: Please always use `undescores` instead of `spaces` in the `source` directory name.
+.. note:: Please always use `underscores` instead of `spaces` for the `source` directory name and for all file names too.
 
 RabbitMQ Commands
 -----------------
