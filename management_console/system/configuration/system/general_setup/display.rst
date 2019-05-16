@@ -156,21 +156,28 @@ To change any color in the set:
 
 .. image:: /img/system/config_system/map_settings_map.png
 
+.. _doc-configuration-display-settings-report:
+
 **Reports Settings**
 
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------+
-| Field                               | Description                                                                                                      |
-+=====================================+==================================================================================================================+
-| Display SQL In Reports And Segments | Select this check box to enable the user to review the SQL request sent to the system for a report or a segment. |
-|                                     | This way, users can check if a report has been developed correctly.                                              |
-+-------------------------------------+------------------------------------------------------------------------------------------------------------------+
-
-.. image:: /img/system/config_system/user_configuration_showsql.png
-   :alt: A sample of the enabled display SQL field
-
-.. hint::
-
-    This link will only be available if the View SQL query of a report/segment capability has been enabled for the role.
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Field                               | Description                                                                                                          |
++=====================================+======================================================================================================================+
+| Group Same-Entity Conditions Within | Select this check box to enable report generation for an entity only if the values match all the field conditions    |
+| Condition Groups                    | queries within a :ref:`conditions group <user-guide--business-intelligence--filters-condition-groups>`. This means   |
+|                                     | that if two conditions (A and B) are applied in a condition group, the report will be generated only when both of    |
+|                                     | them are satisfied. Disable the check box to receive the report that would include the values which satisfy the A    |
+|                                     | condition, the B condition, and both.                                                                                |
+|                                     |                                                                                                                      |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+| Display SQL In Reports And Segments | Select this check box to enable the user to review the SQL request sent to the system for a report or a segment.     |
+|                                     | This way, users can check if a report has been developed correctly.                                                  |
+|                                     |                                                                                                                      |
+|                                     | .. image:: /img/system/config_system/user_configuration_showsql.png                                                  |
+|                                     |    :alt: A sample of the enabled display SQL field                                                                   |
+|                                     |                                                                                                                      |
+|                                     | This link will only be available if the View SQL query of a report/segment capability has been enabled for the role. |
++-------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 
 .. include:: /img/buttons/include_images.rst

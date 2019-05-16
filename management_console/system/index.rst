@@ -20,12 +20,12 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Tags Management <admin-guide-tag-management>` --- Create tags and taxonomies to organize data in the application.
 * :ref:`Menus <doc-config-menus>` --- Customize default management console menus.
 * :ref:`Frontend Menus <backend-frontend-menus>` --- Configure default storefront menus.
-* :ref:`System Calendars <>` --- Create system and organization calendars and add events to them.
+* :ref:`System Calendars <user-guide-calendars>` --- Create system and organization calendars and add events to them.
 * :ref:`Shipping Rules <sys--shipping-rules>` --- Add shipping rules to bind customers to specific shipping prices based on the shipping locations and the products they purchase.
 * :ref:`Payment Rules <sys--payment-rules>` ---  Add payment rules to make payment options visible to buyers in the storefront.
 * :ref:`Workflows <mc-system-wf>` --- Use system workflows and create custom workflows.
 * :ref:`Processes <user-guide-processes>` --- View and activate/deactivate processes in the application.
-* :ref:`System Information <>` --- Review system information on oro and third-party packages.
+* :ref:`System Information <system-information>` --- Review system information on oro and third-party packages.
 * :ref:`Consent Management <>` --- Create and manage consents to comply with General Data Protection Regulations.
 * :ref:`Websites <>` --- Create multiple individually configured websites in the same application instance.
 * :ref:`Localization <>` --- Translate and adapt products for a specific country or region.
@@ -60,9 +60,11 @@ Oro applications enable you to configure system settings on four configuration l
    tags_management/index
    menus/index
    frontend_menus/index
-   processes/index
+   system_calendars/index
    shipping_rules/index
    payment_rules/index
    workflows/index
+   processes/index
+   system_information/index
    websites/index
 
