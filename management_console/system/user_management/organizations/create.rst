@@ -9,7 +9,7 @@ To create a new organization in the Enterprise edition of Oro applications:
 2. Click **Create Organization** on the top right.
 
    .. image:: /img/system/user_management/create_organization_page.png
-      ;alt: Create organization page
+      :alt: Create organization page
 
 3. In the **General** section, provide the following details:
 

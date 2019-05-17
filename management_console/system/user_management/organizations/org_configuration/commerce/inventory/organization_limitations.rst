@@ -21,6 +21,7 @@ To change the default inventory quantity limitations per organization:
      a) Clear the **Use System** box next to the option.
      b) Type in the updated quantity.
 
+6. Click **Save Settings**.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

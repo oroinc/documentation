@@ -47,6 +47,7 @@ Navigate to the parent company page by clicking on the company name next to the 
    address_book
    export
    import
+   customer_price_lists
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

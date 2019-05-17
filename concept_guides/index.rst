@@ -11,5 +11,5 @@ Concept Guides
    guests/index
    payment_configuration/index
    shipping_configuration/index
-   pricing/index
-
+   consents/index
+   highlight_products/index

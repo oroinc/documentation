@@ -1,4 +1,5 @@
 .. _configuration--guide--commerce--configuration--inventory:
+.. _configuration--guide--commerce--inventory:
 
 Inventory
 =========

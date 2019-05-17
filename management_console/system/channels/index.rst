@@ -28,15 +28,12 @@ To create a channel:
 
 3. In the **General** section, specify the following channel details:
 
-  * **Name** --- The name used to refer to the channel in the system. It is recommended to keep the name meaningful.
+   * **Name** --- The name used to refer to the channel in the system. It is recommended to keep the name meaningful.
+   * **Channel Type** --- Channel type defines a set of default rules and settings used for the channel.
 
-  * **Channel Type** --- Channel type defines a set of default rules and settings used for the channel. The *Sales* channel is dedicated to business customer relations, *Magento* is designed for Magento-based stores, and *Custom* is for any other channels.
+   .. important:: Extending OroCRM with new channel types is a proven practice, and it can be customized subject to your specific needs and goals.
 
-Once you have selected **Magento** as a channel type, a new mandatory **Integration** field will appear. Please see the :ref:`Magento Channel Integration <user-guide-magento-channel-integration>` guide for more information.
-
-.. important:: Extending OroCRM with new channel types is a proven practice, and it can be customized subject to your specific needs and goals.
-
-The information collected from a channel is represented by the :ref:`entities <doc-entities>` assigned to the channel and their related entities.
+   The information collected from a channel is represented by the :ref:`entities <doc-entities>` assigned to the channel and their related entities.
 
 4. In the **Entities** section, add an entity to the channel to collect the necessary data by selecting the required entity from the list.
 
@@ -52,9 +49,6 @@ One of the entities defined for any channel must be a customer. It is added to t
 - Custom Channel—Customer Identity
 
 Some other entities are added to channels of a specific type by default. However, they are optional and may be removed.
-
-For example, once you have selected the channel type, the :term:`Opportunity` and :term:`Lead` entities will be added to Sales channels, and the :term:`Cart` and :term:`Order <Order>` entities—to
-Magento channels. 
 
 To delete an entity, click |IcDelete| **Delete**. This will remove the entity from the channel's list, but not from the system.
   

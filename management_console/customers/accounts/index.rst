@@ -1,4 +1,5 @@
 .. _user-guide-common-features-accounts:
+.. _user-guide-accounts:
 
 Accounts
 ========

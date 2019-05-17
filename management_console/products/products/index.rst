@@ -37,9 +37,7 @@ Control Your Products
 Once you have created products, you can:
 
 * Discover what basic and advanced actions you can apply to products in the management console in the :ref:`Products Grid <doc--products--characteristics>` section.
-
 * Proceed to managing the way products are displayed in the storefront, as described in the :ref:`Highlight and Illustrate Products <doc--products--manage-inventory-prices-look>` section.
-
 * Learn how to manage your product quantities and product prices in the :ref:`Manage the product inventory quantity <doc--products--actions--manage-inventory>` and :ref:`Manage product pricing <view-and-filter-product-prices>` topics.
 
 .. finish_product_configuration

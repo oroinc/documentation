@@ -23,21 +23,19 @@ To configure limiting filters and sorting options globally:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
-.. image:: /img/system/config_commerce/catalog/globally_filters_sorters.png
+   .. image:: /img/system/config_commerce/catalog/globally_filters_sorters.png
 
 3. The following configuration options are available:
 
    * **Hide Unrelated Product Filters and Sorting Options** - removes unrelated filters and sorting options from the product collection page to display only those attributes that belong to the current product family. When a user adjusts the initial product data search to target the product with the desired attribute, but the attribute is no longer applicable, it gets removed from the filter.
 
-    .. image:: /img/system/config_commerce/catalog/hide_unrelated_product_filters.png
+     .. image:: /img/system/config_commerce/catalog/hide_unrelated_product_filters.png
 
    * **Don't Change Initial Filter State** - disables unrelated attributes within a filter instead of removing it. When applying a filter to the initial product data set in the storefront, all unrelated attributes remain visible but become disabled in the filter dropdown (available only in the OroCommerce Enterprise edition).
 
-    .. image:: /img/system/config_commerce/catalog/dont_change_initial_filter_state.png
+     .. image:: /img/system/config_commerce/catalog/dont_change_initial_filter_state.png
 
-    .. note:: This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
+     .. note:: This option affects filters in the storefront only when **Hide Unrelated Product Filters and Sorting Options** is enabled. Please ensure to enable both options for this configuration.
 
 4. To customize any of these options:
 

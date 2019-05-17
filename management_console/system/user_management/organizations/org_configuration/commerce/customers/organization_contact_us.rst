@@ -17,7 +17,7 @@ To enable or disable the display of the form in the storefront per organization:
 
 The following page opens:
 
-.. image:: /img/system/user_management/customers/ContactUsOrg.png
+.. image:: /img/system/user_management/org_configuration/customers/ContactUsOrg.png
 
 4. In **Contact Requests**, select the *Allow Contact Requests* check box to enable the Contact Us form.
 

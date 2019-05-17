@@ -1,4 +1,4 @@
-.. _doc-my-user-configuration:
+.. _doc-my-user-configuration-profile:
 
 My Configuration
 ================
@@ -21,9 +21,6 @@ More information about the options available for each of the two categories is a
 
 .. contents:: :local:
    :depth: 2
-
-.. _doc-my-user-configuration-general:
-.. _doc-my-user-configuration-localization:
 
 Update Localization Options
 ---------------------------
@@ -54,8 +51,6 @@ In the Localization section, you can configure the following localization and ma
 +------------------+--------------------------------------------------------------------------------+
 | Wind Speed Unit  | Select the wind speed unit.                                                    |
 +------------------+--------------------------------------------------------------------------------+
-
-.. _doc-my-user-configuration-language:
 
 Update Language Settings
 ------------------------
@@ -117,7 +112,6 @@ In the Display section, you can configure the following display options:
 | Items Per Page By Default | Select how many records will appear on one page of the activity grids.                                                              |
 +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
-
 **WYSIWYG settings**
 
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
@@ -129,7 +123,6 @@ In the Display section, you can configure the following display options:
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
-
 
 **Sidebar settings**
 
@@ -154,8 +147,6 @@ In the Display section, you can configure the following display options:
    :alt: A sample of the enabled display SQL field
 
 .. finish_display_set_user
-
-.. _doc-my-user-configuration-email:
 
 Update Email Configuration Options
 ----------------------------------
@@ -222,9 +213,6 @@ Click **Check Connection/Retrieve Folders** to check whether the specified synch
 |                      |    :alt: Selecting the default button for replying to emails                                                                                                                                       |
 |                      |                                                                                                                                                                                                    |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-.. _doc-my-user-configuration-integrations:
-.. _doc-my-user-configuration-msoutlook:
 
 Update MS Outlook Settings
 --------------------------

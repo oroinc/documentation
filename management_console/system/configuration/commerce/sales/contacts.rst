@@ -1,6 +1,5 @@
 .. _sys--conf--commerce--sales--contacts:
 .. _user-guide--system-configuration--display-sales-rep-info--display-options:
-.. _sys--conf--commerce--sales--contacts-user:
 .. _sys--conf--commerce--sales--contacts-global:
 
 Contacts (Sales Rep Information)

@@ -51,23 +51,23 @@ To enable image preview globally:
 1. Navigate to the system configuration (click **System > Configuration** in the main menu).
 2. Select **Commerce > Product > Product Images** in the menu to the left.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+     For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-.. image:: /img/system/config_commerce/product/ImagePreviewGlobal.png
-   :class: with-border
+   .. image:: /img/system/config_commerce/product/ImagePreviewGlobal.png
+      :class: with-border
 
 3. When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
 
-    .. image:: /img/system/config_commerce/product/ImagePreviewEnabled.png
-       :class: with-border
+   .. image:: /img/system/config_commerce/product/ImagePreviewEnabled.png
+      :class: with-border
 
 4. When **Enable Image Preview on Product Listing** is disabled, clicking on the product image on the product listing page in the storefront will open the product page.
 
-    .. image:: /img/system/config_commerce/product/ImagePreviewDisabled.png
-       :class: with-border
+   .. image:: /img/system/config_commerce/product/ImagePreviewDisabled.png
+      :class: with-border
 
-    .. note:: By default, **Enable Image Preview on Product Listing** is enabled.
+   .. note:: By default, **Enable Image Preview on Product Listing** is enabled.
 
 5. Click **Save**.
 

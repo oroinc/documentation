@@ -62,7 +62,7 @@ To enable guest request for quote submission globally:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-.. image:: /img/system/config_system/sales/RFQGlobal.png
+.. image:: /img/system/config_system/RFQGlobal.png
 
 3. In the **Guest RFQ** section, set whether guests are allowed to submit a request for quote.
 

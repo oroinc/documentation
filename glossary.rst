@@ -36,12 +36,11 @@ Glossary
 
       In :term:`OroCommerce`, website is OroCommerce customer-facing interface (web store).    #OroCommerce Enterprise supports multiple websites (web stores) that are attached to the    #same store administration and configuration interface. Every website may have unique    #product lines, localizaion and internationalization settings, prices, etc.
 
-
    Channel
-      In :term:`OroCRM`, channel represent a source of customers and customer data, for    #example a specific shop, outlet, web-store, fund, etc.
+      In :term:`OroCRM`, channel represents a source of customers and customer data, for    #example a specific shop, outlet, web-store, fund, etc.
 
    Account
-      In :term:`OroCRM`, account represent a person, company or group of people you do    #business activities with. Account aggregates details of all the :term:`customer    #identities <Customer Identity>` assigned to it, providing for a 360-degree view of the    #customer activity.  
+      In :term:`OroCRM`, account represents a person, company or group of people you do    #business activities with. Account aggregates details of all the :term:`customer    #identities <Customer Identity>` assigned to it, providing for a 360-degree view of the    #customer activity.
 
    OroCommerce
       An easy-to-use, open source B2B Commerce solution with built in sales interaction tools    #for a commerce business.
@@ -113,7 +112,25 @@ Glossary
       access and permission settings.
 
    Context
-       A set of :term:`records <Record>` related to a certain email.   
+       A set of :term:`records <Record>` related to a certain email.
+
+   Lead
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent commercial activity with
+      people or businesses that have authority, budget and interest to purchase goods and/or services from you, such
+      that probability of the actual sales is not yet high or impossible to define.
+
+   Opportunity
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent highly probable potential or actual sales
+      to a new or established customer.
+
+   Lifetime Sales Value
+      A metric that helps understand the :term:`Customer`. It predicts the potential benefit that the selling organization
+       can obtain from a relationship with the customer in the long-term perspective. Lifetime sales value measures the total
+       amount of money received from the customer based on orders placed and registered in OroCRM. When calculating a lifetime sales
+       value, OroCommerce takes into account an average order amount, purchase frequency, and an average retention period.
+
+   Sales Channel
+      A :term:`Channel` used to collect data related to business-to-business activities.
 
    Payment Term
        A Payment Term describes the conditions under which a seller will complete a sale (e.g.    #the period allowed to a buyer to pay off the amount due).   #

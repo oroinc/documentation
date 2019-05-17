@@ -79,7 +79,6 @@ To add a new configurable product and make it available in the master catalog (f
 
 #. In the **Image** section, add a new image to the product by clicking **+Add Image** and uploading the necessary file. You can select whether the image will be shown as *main* (the image is used in the product details view), *listing* (the image is shown in the catalog listing), or *additional* (additional product pictures). All three categories can be selected at the same time. To remove an image, click |IcClose| next to it.
 
-
 #. In the **SEO** section, specify the required attributes:
 
    .. csv-table::
@@ -106,7 +105,7 @@ To add a new configurable product and make it available in the master catalog (f
 
 #. Review translation rules for a product name, URL slug, description, and short description.
    
-   To enter a translation manually, click |IcTranslate|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
+   To enter a translation manually, click |IcTranslations|, clear the **Use <parent translation>** check box next to the required language, and provide your version of the translation.
 
    .. image:: /img/products/products/ProductsCreateTranslation.png
       :alt: Provide the relevant translation

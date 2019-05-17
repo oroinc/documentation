@@ -45,12 +45,11 @@ To set up the New Arrivals block globally:
 1. In the main menu, navigate to **System > Configuration**.
 2. Select **Commerce > Product > Promotions** in the menu to the left.
 
-.. note::
-   For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
 
-.. image:: /img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
+   .. image:: /img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
 
 3. In the **New Arrivals** section provide the following information:
 

@@ -48,6 +48,8 @@ Below you can find the complete reference of topics that provide a 360-degree vi
           * :ref:`Pricing Configuration <pricing-configuration>`
           * :ref:`Currency Configuration <admin-configuration-currency>`
           * :ref:`Pricing Calculation Optimization <admin-website-index-and-price-calc>`
+          * :ref:`Configure Price Lists per Customer <customers--customer-groups--edit--price-lists >` and :ref:`Customer Group <customers--customer-groups--edit--price-lists>`
+
 
 .. toctree::
    :hidden:
@@ -55,6 +57,7 @@ Below you can find the complete reference of topics that provide a 360-degree vi
 
    pricing_overview
    calculation
+   optimize_index_and_price_calculation
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

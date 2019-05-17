@@ -1,6 +1,5 @@
 .. _sys--commerce--catalog--relate-products--main:
 .. _sys--commerce--catalog--upsell-products:
-
 .. _sys--commerce--catalog--relate-products:
 
 Related Products
@@ -64,6 +63,8 @@ To update the related products settings globally:
      a) Clear the **Use Default** check box next to the option.
      b) Set or clear the option, or enter the quantity.
 
+.. begin_upsell_items_body
+
 4. In the **Up-Sell Products** section, the following options are available:
 
    * **Enable Up-Sell Products** --- Toggles managing up-sell products on/off. Enabled by default.
@@ -77,12 +78,12 @@ To update the related products settings globally:
 
      **Show Add Button is Enabled**
 
-     .. image:: /user_guide/img/products/products/RelatedProductPreviewWithAdd.png
+     .. image:: /img/system/config_commerce/catalog/RelatedProductPreviewWithAdd.png
         :class: with-border
 
      **Show Add Button is Disabled**
 
-     .. image:: /user_guide/img/products/products/RelatedProductPreview.png
+     .. image:: /img/system/config_commerce/catalog/RelatedProductPreview.png
         :class: with-border
 
    * **Use Slider On Mobile** --- When the option is enabled, one up-sell product is displayed below the main product information. Other up-sell products are accessible using the horizontal slider. Click < and > to slide through the up-sell products.
@@ -93,6 +94,8 @@ To update the related products settings globally:
    b) Set or clear the option, or enter the quantity.
 
 5. Click **Save**.
+
+.. finish_upsell_items_body
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

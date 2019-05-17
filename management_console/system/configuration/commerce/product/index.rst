@@ -1,4 +1,5 @@
 .. _configuration--guide--commerce--configuration--product:
+.. _configuration--products:
 
 Product
 =======

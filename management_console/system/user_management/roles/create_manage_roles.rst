@@ -7,7 +7,7 @@ Create and Manage Roles
 .. contents:: :local:
     :depth: 1
 
-In |oro_application|, you can create new roles and apply permissions to fit specifically your business processes, clone and modify the existing roles.
+You can create new roles and apply permissions to fit specifically your business processes, clone and modify the existing roles.
 
 See a short demo on `how to create a and manage roles <https://www.orocrm.com/media-library/create-manage-roles>`_, or continue reading the step-by-step guidance below.
 
@@ -18,7 +18,7 @@ See a short demo on `how to create a and manage roles <https://www.orocrm.com/me
 Create a Role
 -------------
 
-To create a new role in |oro_application|:
+To create a new role in:
 
 1. Navigate to **System > User Management > Roles** in the main menu.    
 2. Click **Create Role** on the top right.
@@ -71,7 +71,6 @@ You can create a role by cloning the existing one:
 2. On the page of **All Roles**, click the ellipsis menu at end of the corresponding row of the selected role, and then click the |IcClone| **Clone** icon.  
  
    .. image:: /img/system/user_management/clone_role_from_grid.png
-
 
    Alternatively, you can clone the role from the page of the selected role by clicking |IcClone| **Clone** on the top right.
 
@@ -139,7 +138,7 @@ To edit an existing role:
 Delete a Role
 -------------
 
-In |oro_application|, you can delete roles if they are not assigned to any user, and if you are granted permissions to delete roles.
+You can delete roles if they are not assigned to any user, and if you are granted permissions to delete roles.
 
 To delete an existing role:
 
@@ -164,4 +163,3 @@ To delete an existing role:
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. |oro_application| replace:: OroCommerce

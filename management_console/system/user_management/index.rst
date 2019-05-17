@@ -5,9 +5,9 @@ User Management
 ===============
 
 .. contents:: :local:
-   :depth: 2
+   :depth: 1
 
-|oro_application| uses the hierarchy of roles to determine the levels of user access to data. In |oro_application|, user, role and access management capabilities can be tailored to reflect any specific administrative hierarchy, helping define access and permission settings for any business need.
+Oro uses the hierarchy of roles to determine the levels of user access to data. In Oro applications, user, role and access management capabilities can be tailored to reflect any specific administrative hierarchy, helping define access and permission settings for any business need.
 
 This section describes in detail how to create and manage the elements of the administrative structure, such as users, user groups, organization, and business units, illustrates how to work with roles and permissions, and demonstrates how to configure access to data.
 
@@ -16,7 +16,7 @@ Administrative Structure
 
 The hierarchy within the administrative structure is broken down into the user, user group, business unit and organization elements:
 
-* **Users** --- The lowest element of the administrative structure. This is a person, a group of people or a third party system with a specific set of credentials (login and password). Any number of users can be created within one |oro_application| system.
+* **Users** --- The lowest element of the administrative structure. This is a person, a group of people or a third party system with a specific set of credentials (login and password). Any number of users can be created within one Oro instance.
 
 * **User Groups** --- A group of users, created in consideration of an administrative structure or regardless of it (for example, all users born in February or all the users invited to a specific meeting). A user group may be used in the system as a single aggregating :ref:`entity <entities-management>`.
 
@@ -24,7 +24,7 @@ The hierarchy within the administrative structure is broken down into the user, 
 
 * **Organizations** --- The highest element of the administrative structure. It represents a real enterprise, a business, a firm, a company, or another organization to which users belong.
 
-  .. note:: :ref:`Several organizations <user-ee-multi-org>` can be created in one system in the |oro_application| Enterprise edition, and only one organization in the |oro_application| Community edition.
+  .. note:: :ref:`Several organizations <user-ee-multi-org>` can be created in one system in the Enterprise edition, and only one organization in the Community edition.
 
 Check out the topics below for more information on each of the elements:
 
@@ -36,7 +36,7 @@ Check out the topics below for more information on each of the elements:
 Role Structure
 --------------
 
-In |oro_application|, roles are the predefined set of permissions used to grant controlled access to the system data. After users are assigned a specific role that is typically based on job functions, they can manage information relevant to their job role. This is necessary to protect information, so that users are only given access to information they need to see, and not flooded with information that they do not need. This way, for example, the sales department can be restricted only to working with leads, the marketing department can only see and work with marketing lists and campaigns, while administrators can access all systems globally.
+Roles are the predefined set of permissions used to grant controlled access to the system data. After users are assigned a specific role that is typically based on job functions, they can manage information relevant to their job role. This is necessary to protect information, so that users are only given access to information they need to see, and not flooded with information that they do not need. This way, for example, the sales department can be restricted only to working with leads, the marketing department can only see and work with marketing lists and campaigns, while administrators can access all systems globally.
 
 The ability of particular users to access data and perform actions in the system depends on several criteria:
 
@@ -67,6 +67,5 @@ The following topics describe the available access levels and explain the differ
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. |oro_application| replace:: OroCommerce
 
 

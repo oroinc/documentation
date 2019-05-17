@@ -77,8 +77,11 @@ To configure the price list priority and controlled merge for the customer group
 
 #. Click **Save** once you are happy with the price list set up.
 
-
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
+.. toctree::
+   :hidden:
+
+   customer_group_price_lists
 

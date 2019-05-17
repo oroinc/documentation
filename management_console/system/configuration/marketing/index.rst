@@ -46,6 +46,5 @@ Related Articles
    :maxdepth: 1
    
    general_setup_marketing/index
-   marketing_features
 
    

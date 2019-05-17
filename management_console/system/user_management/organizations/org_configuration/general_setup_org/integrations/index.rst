@@ -6,4 +6,4 @@ Integrations Configuration Settings per Organization
 
    organization_google
    organization_ms_exchange
-   organiation_outlook
+   organization_outlook

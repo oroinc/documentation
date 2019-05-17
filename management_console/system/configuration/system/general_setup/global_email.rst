@@ -88,6 +88,7 @@ To configure email settings globally:
 4. Click **Save Settings**.
 
 .. _admin-configuration-system-mailboxes-global:
+.. _admin-configuration-system-mailboxes:
 
 Configure a System Mailbox
 --------------------------

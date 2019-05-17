@@ -11,7 +11,7 @@ To configure limiting filters and sorting options per organization:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   .. image:: /img/system/user_management/catalog/organization_filters_sorters.png
+   .. image:: /img/system/user_management/org_configuration/catalog/organization_filters_sorters.png
 
 4. The following configuration options are available:
 

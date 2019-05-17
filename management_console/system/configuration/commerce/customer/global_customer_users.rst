@@ -23,7 +23,7 @@ To change the default customer user configuration settings globally:
    * **Show Registration Instructions** --- Enables/disables registration instructions on the storefront login page. This option is disabled by default.                                                                                              
    * **Registration Instructions Text** --- If *Show Registration Instructions* is enabled, the text provided in the field is displayed on the storefront login page.
 
-     .. image:: /img/system/config_system/customer/customer_users/CustomerUsersRegistrationFrontStore.png
+     .. image:: /img/system/config_commerce/customer/CustomerUsersRegistrationFrontStore.png
 
    * **Case-Insensitive Email Addresses** --- If this option is enabled, the letter case is ignored when comparing email addresses. For example, john.doe@example.com and John.Doe@example.com are treated equally. By default, the option is disabled.
    * **Customer Visitor Cookie Lifetime (Days)** --- Once the provided period expires, active customer visitor (anonymous user) sessions will be reset.

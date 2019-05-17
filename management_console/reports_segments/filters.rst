@@ -1,5 +1,6 @@
 .. _user-guide--business-intelligence--filters-management:
 .. _user-guide-getting-started-filters:
+.. _user-guide-filters-management:
 
 Filters
 =======
@@ -110,7 +111,6 @@ To define the activity settings:
 .. image:: /img/reports/filters_12.png
 
 .. _user-guide--business-intelligence--filters-data-audit:
-.. _user-guide-data-audit:
 
 Data Audit
 ----------

@@ -1,4 +1,5 @@
 .. _doc--products:
+.. _user-guide--products--products:
 
 |IcProducts| Products
 =====================

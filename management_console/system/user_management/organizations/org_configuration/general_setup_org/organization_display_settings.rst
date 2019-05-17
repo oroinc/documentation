@@ -44,7 +44,7 @@ In this section, you can specify display settings for the organization.
 +=======================+===========================================================================================================+
 | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
 |                       |                                                                                                           |
-|                       | .. image:: /img/system/user_management/org_configuration/general/user_configuration_wysiwyg.png                                |
+|                       | .. image:: /img/system/user_management/org_configuration/general/user_configuration_wysiwyg.png           |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
@@ -70,7 +70,7 @@ In this section, you can specify display settings for the organization.
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination         | Select this check box to enable user navigation to the previous or next record list from a record view page.   |
 |                           |                                                                                                                |
-|                           | .. image:: /img/system/user_management/org_configuration/general/user_configuration_pagination.png                                  |
+|                           | .. image:: /img/system/user_management/org_configuration/general/user_configuration_pagination.png             |
 |                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -112,7 +112,7 @@ To change any color in the set:
 |                                     |                                                                                                                  |
 +-------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
-.. image::/img/system/user_management/org_configuration/general/user_configuration_showsql.png
+.. image:: /img/system/user_management/org_configuration/general/user_configuration_showsql.png
    :alt: A sample of the enabled display sql field
 
 .. finish_display_set_org

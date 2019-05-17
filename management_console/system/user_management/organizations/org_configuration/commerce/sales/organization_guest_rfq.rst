@@ -7,15 +7,12 @@ Configure Guest Request for Quote Submission per Organization
 
 To enable guest request for quote submission per organization:
 
-
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Sales > Request for Quote** in the menu to the left.
 
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
-
-The following page opens:
 
 .. image:: /img/system/user_management/org_configuration/sales/RFQOrg.png
 

@@ -1,4 +1,5 @@
 .. _guest-access-org:
+.. _sys--conf--commerce--guest-access--org:
 
 Enable Guest Website Access per Organization
 --------------------------------------------
@@ -23,7 +24,7 @@ To enable guest access per organization:
  
 .. note:: To disable guest access globally, clear the **Enable Guest Access** checkbox.
 
-.. image:: /img/system/user_management/org_configuration/GuestAccessOrg.png
+.. image:: /img/system/user_management/org_configuration/guests/GuestAccessOrg.png
    :alt: Guest access configuration per organization
 
 .. finish 

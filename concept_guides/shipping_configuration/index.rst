@@ -59,12 +59,3 @@ The list of shipping methods that OroCommerce supports is listed below. Click on
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   configuration/index
-   shipping_providers/index
-   shipping_rules/index
-   shipping_method_for_quotes
-   shipping_tracking_number

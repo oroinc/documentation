@@ -9,7 +9,7 @@ To update the related products settings per organization:
 2. For the necessary organization, hover over the |IcMore| **More Options** menu to the right of the necessary organization and click the |IcConfig| **Configuration** icon to start editing the configuration.
 3. Select **Commerce > Catalog > Related Items** in the menu to the left.
 
-   .. image:: /img/system/user_management/catalog/RelatedProductsOrg.png
+   .. image:: /img/system/user_management/org_configuration/catalog/RelatedProductsOrg.png
       :class: with-border
 
    To customize any of these options:
@@ -36,6 +36,8 @@ To update the related products settings per organization:
      a) Clear the **Use Default** check box next to the option.
      b) Set or clear the option, or enter the quantity.
 
+.. begin_upsell_items_body
+
 5. In the **Up-Sell Products** section, the following options are available:
 
    * **Enable Up-Sell Products** --- Toggles managing up-sell products on/off. Enabled by default.
@@ -54,6 +56,8 @@ To update the related products settings per organization:
    b) Set or clear the option, or enter the quantity.
 
 6. Click **Save**.
+
+.. finish_upsell_items_body
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

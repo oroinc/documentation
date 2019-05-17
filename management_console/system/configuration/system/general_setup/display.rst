@@ -5,7 +5,8 @@ Display Settings
 
 In this section, you can define a number of display-related options to be applied to the Oro application.
 
-.. hint:: The settings are available on four levels: globally, :ref:`per organization <>`, :ref:`per website <>`, and :ref:`per user <>.
+.. hint::
+    The settings are available on four levels: globally, :ref:`per organization <configuration--general-setup--display-settings--organization>`, :ref:`per website <display-settings--website>`, and :ref:`per user <doc-my-user-configuration-display>`.
 
 .. note:: See a short demo on how to set display settings in your Oro application, or continue reading the guidance below.
 

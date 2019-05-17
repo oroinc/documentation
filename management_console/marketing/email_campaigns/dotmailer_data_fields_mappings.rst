@@ -62,19 +62,11 @@ Create a New Data Field in the Oro Application
 
 To create a new data field in Oro application, click **Create dotmailer Data Field** in the upper-right corner of the page. A form will open with the following fields to fill in within the **General** section:
 
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Field**         | **Description**                                                                                                                                                                                          |
-+===================+==========================================================================================================================================================================================================+
-| **Integration**   | Select your dotmailer integration.                                                                                                                                                                       |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Name**          | Enter a name for the data field. It should consist of alphnumeric characters only, with hyphens and underscores, if required.                                                                            |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Type**          | Select data field type: string, numeric, date or boolean. Make sure you select the correct type so your information could render correctly.                                                              |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Visibility**    | Select visibility type: public or private. Make the field public if you want to allow your contacts to view and amend the data you hold on them in this field.                                           |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Dafault Value** | When sending a campaign that uses template personalization, a default value ensures that a value is always displayed even if data field is blank. Default value depends on the data field type selected. |
-+-------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+* **Integration** --- Select your dotmailer integration.
+* **Name** --- Enter a name for the data field. It should consist of alphnumeric characters only, with hyphens and underscores, if required.
+* **Type** --- Select data field type: string, numeric, date or boolean. Make sure you select the correct type so your information could render correctly.
+* **Visibility** --- Select visibility type: public or private. Make the field public if you want to allow your contacts to view and amend the data you hold on them in this field.
+*  **Default Value** --- When sending a campaign that uses template personalization, a default value ensures that a value is always displayed even if data field is blank. Default value depends on the data field type selected.
 
 You can add a note for the data field you are creating in the **Additional** section in **Notes**.
 
@@ -117,15 +109,9 @@ To create a new mapping, click **Create dotmailer Data Field mapping** in the up
 
 A form will emerge with the following fields to fill in within the **General** section:
 
-+-------------------+----------------------------------------------------------------------------------------------------------------------+
-| **Field**         | **Description**                                                                                                      |
-+===================+======================================================================================================================+
-| **Integration**   | Select your dotmailer integration.                                                                                   |
-+-------------------+----------------------------------------------------------------------------------------------------------------------+
-| **Entity**        | Select the entity (e.g., **Contact**, **Magento Customer**, etc).                                                     |
-+-------------------+----------------------------------------------------------------------------------------------------------------------+
-| **Sync Priority** | If two or more entities are linked to 1 dotmailer contact, sync priority will be used to identify the master record. |
-+-------------------+----------------------------------------------------------------------------------------------------------------------+
+* **Integration**   | Select your dotmailer integration.
+* **Entity**        | Select the entity (e.g., **Contact**, **Magento Customer**, etc).
+* **Sync Priority** | If two or more entities are linked to 1 dotmailer contact, sync priority will be used to identify the master record.
 
 .. image:: /img/marketing/marketing/dotmailer/data_field_mapping_form.jpg
    :alt: Fill in the data field mapping details to create a new mapping

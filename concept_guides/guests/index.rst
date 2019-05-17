@@ -215,28 +215,6 @@ Enable Guest Quotes
    :start-after: begin_guest_quote
    :end-before: finish_guest_quote
 
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-
-   guest_access_global
-   guest_access_organization
-   guest_access_website
-   guest_checkout_global
-   guest_checkout_organization
-   guest_checkout_website
-   guest_shopping_list_global
-   guest_shopping_list_organization
-   guest_shopping_list_website
-   guest_quick_order_global
-   guest_quick_order_organization
-   guest_quick_order_website
-   guest_rfq_global
-   guest_rfq_organization
-   guest_rfq_website
-   guest_quote
-   global_guest_checkout_registration
-
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

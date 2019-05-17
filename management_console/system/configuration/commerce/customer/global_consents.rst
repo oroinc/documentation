@@ -76,8 +76,3 @@ To add consents to the list of enabled consents:
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 
-.. toctree::
-   :hidden:
-
-   consents_global
-   consents_website

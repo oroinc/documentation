@@ -16,4 +16,3 @@ In the Oro application, you can create and monitor planned activities as calenda
    .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/lZKiS3TvXNU" frameborder="0" allowfullscreen></iframe>
-

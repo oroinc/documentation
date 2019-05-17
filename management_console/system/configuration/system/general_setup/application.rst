@@ -3,7 +3,7 @@
 Application Settings
 ====================
 
-You can view details of your application settings in the system configuration. This can only be updated :ref:`globally <doc-system-configuration>`:
+You can view details of your application settings in the system configuration. This can only be updated globally <doc-system-configuration:
 
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **System Configuration > General Setup > Application Settings** in the menu to the left.

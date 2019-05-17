@@ -1,4 +1,5 @@
 .. _user-guide--master-catalog:
+.. _user-guide--products--master-catalog:
 
 Master Catalog
 ==============

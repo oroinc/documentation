@@ -69,7 +69,6 @@ In the Catalog section, the following capabilities are available:
 * **[Up-Sell Products] Edit Up-Sell Products** --- Enables a user to view, add and edit up-sell products.
 
   .. comment: Per discussion with PO, should be renamed to Manage Ups-sell Products
-   
 
   .. image:: /img/system/user_management/upsell_products_enabled.png
 
@@ -189,7 +188,7 @@ Application
 
 * **View SQL Query of a Report/Segment** --- Enables a user to review the SQL request that is sent to the system for a report/segment. When the capability is enabled, the **Show SQL Query** link appears below the report.This capability is usually only granted to system administrators, so they can check if a report has been developed correctly. 
 
-  .. image:: ../img/configuration/sql_show.png
+  .. image:: /img/system/user_management/sql_show.png
 
   .. hint:: This capability must be also enabled in the report settings. For this, in the main menu, navigate to **System Configuration > Display Settings > Report settings**, and select the **Display SQL in Reports And Segments** check box.
 

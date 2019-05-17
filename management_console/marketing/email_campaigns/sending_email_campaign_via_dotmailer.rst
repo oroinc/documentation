@@ -130,16 +130,16 @@ We have configured the integration between Oro and dotmailer and created a maili
 6.  Click **Save and Continue**. You will be redirected to the **Test and Proof Your Email** page.
 7.  On the **Test and Proof Your Email** page, it is possible to choose contacts to send a text version of your email to the selected email addresses.
 8.  Click **Test Send** when you have chosen your contacts. You should have a copy of the email delivered to the specified email address.
-8.  When you finish, click **Continue** to get redirected to the next page and select contacts for the campaign:
+9.  When you finish, click **Continue** to get redirected to the next page and select contacts for the campaign:
 
     -  Select the address book we have created before.
     -  Select when you would like to send your campaign (**Immediately**, **Scheduled**, **Optimized**).
     -  Specify whether you wish to resend this campaign.
     -  Add event-triggered emails or autoresponders to the email (if necessary).
 
-9.  Click **Save and Continue** and confirm your selection by clicking **Continue**.
-10.  Review your campaign details and click **Send Immediately** at the bottom.
-11.  Click **Confirm** to confirm sending.
+10.  Click **Save and Continue** and confirm your selection by clicking **Continue**.
+11.  Review your campaign details and click **Send Immediately** at the bottom.
+12.  Click **Confirm** to confirm sending.
 
      .. image:: /img/marketing/marketing/dotmailer/dotmailer_create_campaign_2.jpg
         :alt: Review your campaign details

@@ -27,10 +27,11 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Processes <user-guide-processes>` --- View and activate/deactivate processes in the application.
 * :ref:`System Information <system-information>` --- Review system information on oro and third-party packages.
 * :ref:`Consent Management <>` --- Create and manage consents to comply with General Data Protection Regulations.
-* :ref:`Websites <>` --- Create multiple individually configured websites in the same application instance.
+* :ref:`Websites <system-websites>` --- Create multiple individually configured websites in the same application instance.
 * :ref:`Localization <>` --- Translate and adapt products for a specific country or region.
 
 .. _configuration--guide--config-levels:
+.. _doc-system-configuration:
 
 Oro applications enable you to configure system settings on four configuration levels (or scopes): system, organization, website and user.
 

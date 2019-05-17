@@ -1,4 +1,6 @@
 .. _mc-system-wf:
+.. _user-guide--system--workflow-management-steps-transitions:
+.. _user-guide--system--workflow-management-system-custom:
 
 Workflows
 =========

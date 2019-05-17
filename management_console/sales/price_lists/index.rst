@@ -30,4 +30,8 @@ Learn more on price lists in the following topics:
    schedule
    multicurrency
 
+**Related Topics**
+
+* :ref:`Price Lists <user-guide--pricing>`
+
 

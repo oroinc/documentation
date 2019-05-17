@@ -52,11 +52,11 @@ The following sections become available within the **Currency** tab:
 |                        |                                                                                                             |
 |                        | The order subtotal when the display format is set to *Currency Code*:                                       |
 |                        |                                                                                                             |
-|                        | .. image:: /img/system/user_management/org_configuration/general/currency_code.png                                         |
+|                        | .. image:: /img/system/user_management/org_configuration/general/currency_code.png                          |
 |                        |                                                                                                             |
 |                        | The order subtotal when the display format is set to *Currency Symbol*:                                     |
 |                        |                                                                                                             |
-|                        | .. image:: /img/system/user_management/org_configuration/general/currency_symbol.png                                       |
+|                        | .. image:: /img/system/user_management/org_configuration/general/currency_symbol.png                        |
 |                        |                                                                                                             |
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 
@@ -138,3 +138,7 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 6. To roll back any changes to the currency settings, click **Reset** on the top right.
 
 7. Click **Save Settings**.
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

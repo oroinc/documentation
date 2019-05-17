@@ -58,11 +58,11 @@ The following sections are available within the **Currency** tab:
 |                        |                                                                                                                 |
 |                        | The order subtotal when the display format is set to *Currency Code*:                                           |
 |                        |                                                                                                                 |
-|                        | .. image:: /img/system/config_system/general/currency_code.png                                             |
+|                        | .. image:: /img/system/config_system/currency_code.png                                                          |
 |                        |                                                                                                                 |
 |                        | The order subtotal when the display format is set to *Currency Symbol*:                                         |
 |                        |                                                                                                                 |
-|                        | .. image:: /img/system/config_system/general/currency_symbol.png                                           |
+|                        | .. image:: /img/system/config_system/currency_symbol.png                                                        |
 |                        |                                                                                                                 |
 +------------------------+-----------------------------------------------------------------------------------------------------------------+
 

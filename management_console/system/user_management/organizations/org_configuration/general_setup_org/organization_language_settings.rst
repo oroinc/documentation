@@ -15,10 +15,12 @@ To define the default system language for a particular organization:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
-
    .. image:: /img/system/user_management/org_configuration/general/language_configuration_organization.png
 
 4. Clear the **Use System** check box and select the default language for the UI elements displayed in the management console.
 
 5. Click **Save Settings** to save the settings.
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin
+

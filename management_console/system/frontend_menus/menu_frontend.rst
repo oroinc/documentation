@@ -30,7 +30,7 @@ Toggle the Frontend Menu Tree View
 
 - If and arrow appears in front of a menu item, then the moved item will become a child of the item that the arrow points to.
 
-  .. image:: /img/system/frontend_menu/edit/d&dunder.png
+  .. image:: /img/system/frontend_menu/d&dunder.png
 
 Add a Menu Item
 ~~~~~~~~~~~~~~~
