@@ -13,3 +13,4 @@ Concept Guides
    shipping_configuration/index
    consents/index
    highlight_products/index
+   localization/index
