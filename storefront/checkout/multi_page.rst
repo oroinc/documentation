@@ -22,7 +22,7 @@ Multi Page Checkout
 
    To use billing information for shipping, select the **Use billing address** check box.
 
-   .. image:: /admin_guide/img/workflows/checkout/UseBillingAddressBox.png
+   .. image:: /img/system/workflows/checkout/UseBillingAddressBox.png
 
 
 #. Click **Continue** to proceed to the next step.
@@ -32,7 +32,7 @@ Multi Page Checkout
 
 1. Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
 
-   .. image:: /admin_guide/img/workflows/checkout/Shipping_Info.png
+   .. image:: /img/system/workflows/checkout/Shipping_Info.png
 
    .. note:: If shipping discounts apply to the order, this will be displayed in the totals.
 
@@ -44,7 +44,7 @@ Multi Page Checkout
 
 1. Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
 
-   .. image:: /admin_guide/img/workflows/checkout/Payment.png
+   .. image:: /img/system/workflows/checkout/Payment.png
 
 #. Click **Continue** to proceed to the next step.
 
@@ -69,7 +69,7 @@ Multi Page Checkout
 
 3. To submit the order, click **Submit Order** at the bottom of the page.
 
-   .. image:: /admin_guide/img/workflows/checkout/Order_Review.png
+   .. image:: /img/system/workflows/checkout/Order_Review.png
 
 .. tip::
 
@@ -79,14 +79,14 @@ Multi Page Checkout
 
    * Click |IcEditInline| next to the step that you want to edit. In this case, *all the changes made at the later steps will be preserved*.
 
-     .. image:: /admin_guide/img/workflows/checkout/EditInfo.png
+     .. image:: /img/system/workflows/checkout/EditInfo.png
         :width: 20%
 
 .. tip::
 
    It is also possible to amend the order content until the order is submitted. To do this, click |IcEditInline| **Edit Order** in the right corner of the **Order Summary** section available at the bottom in the Billing Information, Shipping Information, Shipping Method, and Payment steps.
 
-   .. image:: /admin_guide/img/workflows/checkout/Checkout_BilInfo.png
+   .. image:: /img/system/workflows/checkout/Checkout_BilInfo.png
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

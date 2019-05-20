@@ -14,7 +14,7 @@ You can qualify leads either using the actions on the lead page, or using the st
 Unqualified Sales Lead Workflow
 -------------------------------
 
-.. include:: /management_console/system/workflows/unqualified_lead.rst
+.. include:: /management_console/system/workflows/system_workflows/unqualified_lead.rst
    :start-after: begin
    :end-before: finish
 

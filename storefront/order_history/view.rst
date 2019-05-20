@@ -96,3 +96,6 @@ Past order view page contains the following information:
 To return to the Order History page, click **Back to Orders List** on the bottom left of the view page.
 
 You can print the selected past order by clicking **Print Order** below the order number.
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

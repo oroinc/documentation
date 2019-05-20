@@ -11,14 +11,14 @@ The RFQ management procedure depends on the active RFQ-related workflows. Out of
 RFQ Submission Flow
 -------------------
 
-.. include:: /management_console/system/workflows/rfq_frontoffice.rst
+.. include:: /management_console/system/workflows/system_workflows/rfq_frontoffice.rst
    :start-after: start_front_flow
    :end-before: finish_front_flow
 
 RFQ Management Flow
 -------------------
 
-.. include:: /management_console/system/workflows/rfq_backoffice.rst
+.. include:: /management_console/system/workflows/system_workflows/rfq_backoffice.rst
   :start-after: start_back_flow
   :end-before: finish_back_rfq
 

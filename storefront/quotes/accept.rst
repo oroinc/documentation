@@ -17,3 +17,6 @@ When you receive a quote, you can accept it and submit the order:
 4. Once you submit an order, you are redirected to the :ref:`checkout <frontstore-guide--orders-checkout>`. If you are not ready to complete your order, it is saved in the Orders section. For more information on open orders, see the :ref:`Orders topic <frontstore-guide--orders>`.
 
 .. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce storefront.
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

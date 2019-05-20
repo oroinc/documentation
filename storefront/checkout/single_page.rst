@@ -6,7 +6,7 @@ Single Page Checkout
 
 In the single page checkout, you can see how far along in the checkout you are, and how many fields are left to complete it. All checkout steps are displayed on a single page.
 
-.. image:: /admin_guide/img/workflows/single_page_checkout/SinglePageCheckout.png
+.. image:: /img/system/workflows/single_page_checkout/SinglePageCheckout.png
 
 **Step 1: Billing Information**
 

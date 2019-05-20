@@ -35,7 +35,7 @@ This section provides shortcuts to topics that may be useful for various types o
 
   * :ref:`Create a configurable product <products--products--create-config-product>`
   * :ref:`Set up a matrix form and variations of a configurable product <config-guide--landing-commerce--products--configurable-products>`
- ..  * :ref:`Highlight and illustrate products <doc--products--manage-inventory-prices-look>`
+  * :ref:`Highlight and illustrate products <doc--products--manage-inventory-prices-look>`
   * :ref:`Manage product quantities <doc--products--actions--manage-inventory>`
   * :ref:`Configure product-related settings in system configuration <configuration--products>`
 

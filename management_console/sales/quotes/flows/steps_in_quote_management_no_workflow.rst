@@ -10,7 +10,7 @@ Available options depend on the current status of the quote and your permissions
 Edit a Quote
 ------------
 
-.. include:: /management_console/sales/quotes/manage/edit.rst
+.. include:: /management_console/sales/quotes/manage.rst
    :start-after: begin
    :end-before: finish
 
@@ -109,7 +109,7 @@ Learn :ref:`more ways to expire a quote <quotes--actions--expire>`.
 Delete a Quote
 ^^^^^^^^^^^^^^
 
-.. include:: /management_console/sales/quotes/manage/delete.rst
+.. include:: /management_console/sales/quotes/manage.rst
    :start-after: begin
    :end-before: finish
 

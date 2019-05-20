@@ -124,6 +124,10 @@ The page contains the list of all available coupons in your Oro application. Fro
    * To refresh the coupon list, click |IcRedo|.
    * To reset the coupon list, click |IcRefresh| to clear list customization and return to default settings. Reset applies to all filters, records per page and sorting changes that you have made.
 
+.. _user-guide--marketing--promotions--coupons--edit:
+.. _user-guide--marketing--promotions--coupons--edit--view:
+.. _user-guide--marketing--promotions--coupons--edit--on-order-page:
+.. _user-guide--marketing--promotions--coupons--edit--manage-when-editing-an-order:
 
 Manage Coupons in Orders
 ------------------------

@@ -16,6 +16,8 @@ Edit a Quote
 Edit a Quote from the Quote Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. begin
+
 .. important::
    This option is available only when:
 
@@ -35,6 +37,8 @@ To edit a quote:
 #. Click **Save** on the top right of the page.
 
 The quote is updated.
+
+.. finish
 
 .. _quotes--actions--edit--fromviewpage:
 
@@ -68,6 +72,8 @@ Delete a Quote
 Delete a Quote from the Quote Grid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. begin
+
 .. important::
    This option is available only when:
 
@@ -77,6 +83,8 @@ Delete a Quote from the Quote Grid
 1. In the main menu, navigate to **Sales > Quotes**. The quote list opens.
 2. Choose the quote that you need to delete, click the |IcMore| **More Options** menu at the end of the row, and then click the |IcDelete| **Delete** icon.
 #. In the confirmation dialog, click **Yes, Delete**.
+
+.. finish
 
 .. _quotes--actions--delete--fromviewpage:
 

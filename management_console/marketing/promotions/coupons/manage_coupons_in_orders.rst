@@ -1,5 +1,3 @@
-.. _user-guide--marketing--promotions--coupons--edit:
-
 Manage Coupons in Orders
 ------------------------
 
@@ -11,8 +9,6 @@ In your Oro application, you can manage coupons from the page of the selected :r
 
 1. View the coupon applied to the order under **Promotions and Discounts** of the order page.
 2. Add a coupon to the order manually.
-
-.. _user-guide--marketing--promotions--coupons--edit--view:
 
 View Coupon Codes
 ^^^^^^^^^^^^^^^^^
@@ -30,7 +26,6 @@ To view the coupon codes that apply to the selected order:
 
    .. image:: /img/marketing/coupons/ViewCoupon.png
 
-.. _user-guide--marketing--promotions--coupons--edit--on-order-page:
 
 Add Coupons Through the Order Page
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -60,7 +55,6 @@ To add a coupon code to the required order from its page:
 
 This way you can apply as many coupons to the order as necessary as long as they belong to different promotions.
 
-.. _user-guide--marketing--promotions--coupons--edit--manage-when-editing-an-order:
 
 Manage Coupons When Editing the Order
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -85,9 +79,3 @@ When editing the selected order, you can perform the following actions with the 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
 
-.. toctree::
-   :hidden:
-
-   view
-   add_from_order_page
-   manage_when_editing_order
