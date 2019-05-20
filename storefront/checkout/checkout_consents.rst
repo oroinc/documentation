@@ -1,0 +1,10 @@
+.. _frontstore-guide--orders-checkout--consents:
+
+Checkout with Consents
+----------------------
+
+OroCommerce storefront customer users can manage the consents applicable to them, and can be restricted from proceeding to the checkout unless mandatory consents are accepted.
+
+.. include:: /system/workflows/consents_flow.rst
+   :start-after: start_checkout_with_consents_sample
+   :end-before: finish_checkout_with_consents_sample

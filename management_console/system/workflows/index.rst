@@ -12,3 +12,4 @@ Workflows
    rfq_frontoffice
    backoffice_quote_flow_with_approvals
    quote_management_workflow
+   consents_flow

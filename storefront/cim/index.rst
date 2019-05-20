@@ -1,3 +1,0 @@
-Authorize.Net Customer Profiles
-===============================
-
