@@ -67,7 +67,7 @@ Duplicate the already existing shopping list to make multiple similar orders:
 2. Click **Duplicate List** on the left under the list of items.
 3. A copy of the shopping list will be created.
 
-.. image:: /user_guide/img/sales/shopping_lists/DuplicateListFrontEndScreenShot.png
+.. image:: /img/storefront/shopping_lists/DuplicateListFrontEndScreenShot.png
 
 **Flow 7**
 
@@ -113,7 +113,7 @@ Manage Shopping Lists
 
 While adding a product to a shopping list, click |IcChevronDown| to view a list of additional options available for the selected product.
 
-  .. image:: /user_guide/img/sales/shopping_lists/shopping_list_dropdown_1.png
+  .. image:: /img/storefront/shopping_lists/shopping_list_dropdown_1.png
 
 * To add the product to the current shopping list, click **Add to Shopping List X**.
 * Update the shopping list with a new information regarding the selected product by clicking **Update Shopping List**.
@@ -148,8 +148,8 @@ To create an order from the shopping list:
 To create a request for quote from the shopping list:
 
 1. Click **Request Quote** on the top right of the view page.
-2. Click |ICChevronDown| next to the **Crea
-
+2. Click |ICChevronDown| next to the **Create Order** button on the bottom of the view page.
+3. Click **Request Quote**.
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

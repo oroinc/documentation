@@ -16,4 +16,3 @@ To enable sales territories for leads, opportunities and all types of customers:
 
    .. note:: Sales Territories are disabled by default.
 
-More information on sales territories can be found in the relevant `Sales Territories topic <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ in OroCRM documentation.

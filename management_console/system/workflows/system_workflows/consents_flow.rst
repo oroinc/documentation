@@ -25,7 +25,7 @@ To reach the workflow:
 1. Navigate to **System > Workflows** in the main menu.
 2. Click **Checkout with Consents** to open the flow.
    
-   .. image:: /img/system/workflows/checkout_with_consents/checkout_with_consents_workflow_grid.png
+   .. image:: /img/workflows/checkout_with_consents/checkout_with_consents_workflow_grid.png
       :alt: Checkout with consents workflow in the table of all workflows
 
 On the Checkout with Consents workflow page, you can perform the following actions:
@@ -33,7 +33,7 @@ On the Checkout with Consents workflow page, you can perform the following actio
 * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
 * Activate the workflow - click |IcActivate| **Activate** to activate the workflow.
 
-.. image:: /img/system/workflows/checkout_with_consents/checkout_with_consents_page.png
+.. image:: /img/workflows/checkout_with_consents/checkout_with_consents_page.png
    :alt: The page of the checkout with consents workflow
 
 On the page of all workflows, you can perform the following actions to the Checkout with Consents workflow:
@@ -41,13 +41,13 @@ On the page of all workflows, you can perform the following actions to the Check
 * View the workflow: |IcView|
 * Deactivate / Activate the workflow: |IcDeactivate| / |IcActivate|
 
-.. image:: /img/system/workflows/checkout_with_consents/checkout_with_consents_actions_from_grid.png
+ю. image:: /img/workflows/checkout_with_consents/checkout_with_consents_actions_from_grid.png
    :alt: View, activate or deactivate the checkout with consents workflow from the table of all workflows
 
 .. note:: Keep in mind that when you activate the Checkout with Consents workflow, the default checkout workflow is disabled automatically.
 
-   .. image:: /img/system/workflows/checkout_with_consents/activate_checkout_with_consents.png
-       :alt: When you activate the checkout with consents workflow, a pop up informs that the default workflow will be disabled
+   .. image:: /img/workflows/checkout_with_consents/activate_checkout_with_consents.png
+      :alt: When you activate the checkout with consents workflow, a pop up informs that the default workflow will be disabled
 
 .. _system--workflows--checkout-with-consents-workflow-sample:
 
@@ -57,6 +57,7 @@ Sample Flow
 .. start_checkout_with_consents_sample
 
 As an illustration, we are going to proceed through the steps of the Checkout with Consents workflow to see how it works.
+
 
 .. include:: /management_console/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_0
@@ -70,11 +71,11 @@ Step 1: Agreements
 
 At the Agreements step, you are required to accept all mandatory consents to process your personal data, if such consents have not been accepted previously. Keep in mind that if you leave the checkout after accepting a mandatory consent, this consent is considered accepted and can be revoked only through the :ref:`profile management <frontstore-guide--profile-consents--revoke>`.
 
-  .. image:: /img/system/workflows/checkout_with_consents/storefront_step_agreements.png
-     :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
+.. image:: /img/system/workflows/checkout_with_consents/storefront_step_agreements.png
+   :alt: The first step of the checkout is agreements where you are required to accept any available mandatory consents
 
-  .. image:: /img/system/workflows/checkout_with_consents/storefront_step_accept_agreement.png
-     :alt: Accept a mandatory consent on the agreements step at checkout
+.. image:: /img/system/workflows/checkout_with_consents/storefront_step_accept_agreement.png
+   :alt: Accept a mandatory consent on the agreements step at checkout
 
 Once the consent is accepted, click **Continue** to proceed with the checkout.
 

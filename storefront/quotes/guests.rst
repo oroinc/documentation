@@ -15,24 +15,24 @@ To request a quote in the storefront:
 4. Click **Submit Request** once the details are provided.
 5. Once the sales representative has processed your request, they email you their quote to the address you provided.
 
-   .. image:: /user_guide/img/quotes/guest_quote_received.png
+   .. image:: /img/storefront/quotes/guest_quote_received.png
       :alt: Guest quotes received through email
 
 6. Click on the link in the email to open the quote.
 
-   .. image:: /user_guide/img/quotes/guest_quote_link.png
+   .. image:: /img/storefront/quotes/guest_quote_link.png
       :alt: Guest quote accessed via direct link
 
 7. Review the quote and click **Accept and Submit to Order** to proceed to the next step.
 8. Amend the details of the quote, if necessary.
 
-   .. image:: /user_guide/img/quotes/guest_quote_link_amend.png
+   .. image:: /img/storefront/quotes/guest_quote_link_amend.png
       :alt: Guest quote accessed via a direct link with quantities to order that can be amended
 
 9. Click **Submit** to proceed to the checkout and complete the order.
 
-    .. image:: /user_guide/img/quotes/guest_quote_proceed_to_checkout.png
-       :alt: Proceed to the checkout after creating a guest quote
+   .. image:: /img/storefront/quotes/guest_quote_proceed_to_checkout.png
+      :alt: Proceed to the checkout after creating a guest quote
 
 .. finish
 

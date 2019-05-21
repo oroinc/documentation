@@ -24,3 +24,7 @@ This way you can apply as many coupons as the conditions of the active promotion
 In addition, any discounts applied to the order will be displayed in the **Total** section of the **Order Summary**.
 
 .. image:: /img/storefront/orders/CouponCodeCheckout3.png
+
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

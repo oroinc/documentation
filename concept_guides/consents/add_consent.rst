@@ -21,7 +21,7 @@ To add a consent landing page to a web catalog content node:
 
 #. In the **Content Variants** section, click **Add Landing Page** in the Content Variants list.
 
-    .. image:: /admin_guide/img/configuration/customer/consents/add_landing_page_with_consent.png
+    .. image:: /img/system/consents/add_landing_page_with_consent.png
        :class: with-border
        :alt: Add a landing page with a consent as a content variant to a web catalog
 
@@ -29,7 +29,7 @@ To add a consent landing page to a web catalog content node:
  
    To create a new landing page from within the web catalog, click **+** next to the hamburger menu in the Landing Page field.
 
-    .. image:: /admin_guide/img/configuration/customer/consents/add_landing_page_from_web_catalog_page.png
+    .. image:: /img/system/consents/add_landing_page_from_web_catalog_page.png
        :class: with-border
        :alt: Create a new landing page from the web catalog page
 
@@ -40,7 +40,7 @@ To add a consent landing page to a web catalog content node:
 
      .. note:: To localize the consents, you need to create separate landing pages for each target language and add all related landing pages to the content node. Set the proper restrictions to limit the consent visibility to a certain localization when it is selected in the storefront. See the :ref:`Localize Consents <user-guide--consents--localizing-consents>` guide for more details on how to translate consents into different languages.
 
-   .. image:: /admin_guide/img/configuration/customer/consents/add_landing_pages_to_consents.png
+   .. image:: /img/system/consents/add_landing_pages_to_consents.png
       :alt: Add landing pages with localized consents to a content node
 
    .. note:: You can read more on creating and managing landing pages in the corresponding :ref:`Landing Pages <user-guide--landing-pages>` topic.
@@ -59,7 +59,8 @@ Once the landing page with the consent description is added to a web catalog nod
 
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
-        .. image:: /img/system/workflows/checkout_with_consents/consents_section_customer_user_page.png
+        .. image:: /img/system/consents/consents_section_customer_user_page.png
+
 
 .. important:: Keep in mind that once a consent is accepted by at least one person in the OroCommerce storefront, it becomes uneditable and unremovable as well as the associated landing page.
 

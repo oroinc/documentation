@@ -10,9 +10,7 @@ To create a consent in OroCommerce:
 1. Navigate to **System > Consent Management** in the main menu.
 2. Click **Create Consent** on the top right.
 
-   The following page opens:
-
-   .. image:: /admin_guide/img/configuration/customer/consents/create_new_consent.png
+   .. image:: /img/system/consents/create_new_consent.png
       :class: with-border
       :alt: Create a new consent
 
@@ -27,7 +25,7 @@ To create a consent in OroCommerce:
 
      .. note:: It is recommended have the required web catalog and the node created prior to creating a new consent. Read more on catalogs in the :ref:`Web Catalogs <user-guide--web-catalog>` topic. 
 
-     .. image:: /admin_guide/img/configuration/customer/consents/link_consent_to_node.png
+     .. image:: /img/system/consents/link_consent_to_node.png
         :class: with-border
         :alt: Link the consent to a web catalog node
 
@@ -39,7 +37,8 @@ To create a consent in OroCommerce:
 
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
-        .. image:: /img/system/workflows/checkout_with_consents/consents_section_customer_user_page.png
+        .. image:: /img/system/consents/consents_section_customer_user_page.png
+
 
 **Related Topics**
 

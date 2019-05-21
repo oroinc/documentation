@@ -7,8 +7,7 @@ Language Settings
 
 In the system configuration, you can set up the language of the UI elements to be displayed in the management console and the supported languages for the email notifications for the users. If there is an email template for the supported language, the users who have selected that specific language on the storefront, receive localized notifications.
 
-.. hint:: Language settings are available on three levels: globally, :ref:`per organization <>`, and :ref:`per user <>`.
-
+.. hint:: Language settings are available on three levels: globally, :ref:`per organization <sys--config--sysconfig--general-setup--language-settings--organization>`, and :ref:`per user <user-language-settings>`.
 
 To define the default system language and supported languages for email notifications:
 

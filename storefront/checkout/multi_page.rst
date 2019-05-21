@@ -27,7 +27,6 @@ Multi Page Checkout
 
 #. Click **Continue** to proceed to the next step.
 
-
 **Step 3: Shipping Method**
 
 1. Provide a :ref:`shipping method <user-guide--shipping>` by selecting one from the list of the available methods.
@@ -36,7 +35,7 @@ Multi Page Checkout
 
    .. note:: If shipping discounts apply to the order, this will be displayed in the totals.
 
-             .. image:: /user_guide/img/marketing/promotions/ShippingDiscountFront.png
+             .. image:: /img/marketing/promotions/ShippingDiscountFront.png
 
 #. Click **Continue** to proceed to the next step.
 
@@ -45,6 +44,7 @@ Multi Page Checkout
 1. Choose a suitable :ref:`payment method <user-guide--payment>` by selecting it from the list of all available methods.
 
    .. image:: /img/system/workflows/checkout/Payment.png
+
 
 #. Click **Continue** to proceed to the next step.
 
@@ -70,6 +70,7 @@ Multi Page Checkout
 3. To submit the order, click **Submit Order** at the bottom of the page.
 
    .. image:: /img/system/workflows/checkout/Order_Review.png
+
 
 .. tip::
 

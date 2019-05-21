@@ -3,7 +3,11 @@
 Special Pages (All Products)
 ----------------------------
 
+.. hint:: Read more on this topic in :ref:`Concept Guides: All Products <sys--conf--commerce--catalog--special-pages>`.
+
 .. begin_all_products
+
+.. note:: You can configure All Products page globally and :ref:`per website <sys--conf--commerce--catalog--special-pages--website>`.
 
 The first step of configuring All Products page for your storefront is enabling it in your system. To enable All Products page globally:
 

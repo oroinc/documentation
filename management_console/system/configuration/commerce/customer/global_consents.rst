@@ -3,6 +3,8 @@
 Consents
 ========
 
+.. hint:: Read more on this topic in :ref:`Data Protection and Consent Management <user-guide--consents>`.
+
 .. contents:: :local:
    :depth: 1
 

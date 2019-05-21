@@ -12,7 +12,6 @@ To configure All Products page:
 
 .. contents:: :local:
 
-
 Before You Begin: Enable All Products Page
 ------------------------------------------
 
@@ -28,7 +27,7 @@ The following topics will describe how to:
 Add All Products Page to the Web Catalog
 ----------------------------------------
 
-.. include:: /admin_guide/landing_commerce/product/products/all_products_catalog.rst
+.. include:: /concept_guides/all_products/all_products_catalog.rst
    :start-after: begin_all_products
    :end-before: finish_all_products
 
@@ -48,7 +47,7 @@ More information on customization on each of these levels can be found in the re
 Sample All Products Page
 ------------------------
 
-.. include:: /admin_guide/landing_commerce/product/products/sample_all_products.rst
+.. include:: /concept_guides/all_products/sample_all_products.rst
    :start-after: begin_all_products
    :end-before: finish_all_products
 

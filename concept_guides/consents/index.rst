@@ -65,8 +65,6 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 * :ref:`Explore the Checkout with Consents Workflow <system--workflows--checkout-with-consents-workflow>`
 * :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
 
-.. ref: Consents in Context 
-
 **Related Topics**
 
 * :ref:`Data Protection in the OroCommerce Storefront <frontstore-guide--profile-consents>`

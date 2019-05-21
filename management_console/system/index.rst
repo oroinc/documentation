@@ -26,7 +26,7 @@ The **System** menu of the management console contains post-install configuratio
 * :ref:`Workflows <mc-system-wf>` --- Use system workflows and create custom workflows.
 * :ref:`Processes <user-guide-processes>` --- View and activate/deactivate processes in the application.
 * :ref:`System Information <system-information>` --- Review system information on oro and third-party packages.
-* :ref:`Consent Management <>` --- Create and manage consents to comply with General Data Protection Regulations.
+* :ref:`Consent Management <system-consent-management>` --- Create and manage consents to comply with General Data Protection Regulations.
 * :ref:`Websites <system-websites>` --- Create multiple individually configured websites in the same application instance.
 * :ref:`Localization <sys--config--sysconfig--general-setup--localization>` --- Translate and adapt products for a specific country or region.
 
@@ -67,6 +67,7 @@ Oro applications enable you to configure system settings on four configuration l
    workflows/index
    processes/index
    system_information/index
+   consent_management/index
    websites/index
    localization/index
 

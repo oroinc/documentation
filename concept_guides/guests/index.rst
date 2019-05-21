@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--guest:
 
-Configure Guest Access
-======================
+Guest Access
+============
 
 In you Oro application, you can enable or disable guest website access, in addition to managing its different aspects, such as guest shopping lists, guest checkout, guest RFQ and guest quick order form.
 
@@ -30,21 +30,21 @@ When guest access is disabled:
 Enable Guest Website Access Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_access_global.rst
+.. include:: /management_console/system/configuration/commerce/guests/global_guest_access.rst
    :start-after: begin
    :end-before: finish
    
 Enable Guest Website Access per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_access_organization.rst
+.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/guests/organization_guest_access.rst
    :start-after: begin
    :end-before: finish
 
 Enable Guest Website Access per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_access_website.rst
+.. include:: /management_console/system/websites/web_configuration/commerce/guests/website_guest_access.rst
    :start-after: begin
    :end-before: finish
 
@@ -83,7 +83,7 @@ Guest checkout can be configured on three levels -- globally, per organization a
 Configure Guest Checkout Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_checkout_global.rst
+.. include:: /management_console/system/configuration/commerce/sales/global_checkout_config.rst
    :start-after: begin
    :end-before: finish
 
@@ -91,18 +91,16 @@ Configure Guest Checkout Globally
 Configure Guest Checkout per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_checkout_organization.rst
+.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/sales/organization_guest_checkout.rst
    :start-after: begin
    :end-before: finish
 
 Configure Guest Checkout per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_checkout_website.rst
+.. include:: /management_console/system/websites/web_configuration/commerce/sales/website_guest_checkout.rst
    :start-after: begin
    :end-before: finish
-
-
 
 Configure Guest Shopping Lists
 ------------------------------
@@ -116,11 +114,10 @@ By default, guest shopping lists are disabled. In addition, only 1 shopping list
 
 .. note:: Please note that website settings override organization, organization settings override system settings.
 
-
 Configure Guest Shopping Lists Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_shopping_list_global.rst
+.. include::  /management_console/system/configuration/commerce/sales/global_shopping_list.rst
    :start-after: begin
    :end-before: finish
 
@@ -128,7 +125,7 @@ Configure Guest Shopping Lists Globally
 Configure Guest Shopping Lists per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_shopping_list_organization.rst
+.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/sales/organization_guest_shopping_list.rst
    :start-after: begin
    :end-before: finish
 
@@ -136,7 +133,7 @@ Configure Guest Shopping Lists per Organization
 Configure Guest Shopping Lists per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_shopping_list_website.rst
+.. include:: /management_console/system/websites/web_configuration/commerce/sales/website_guest_shopping_list.rst
    :start-after: begin
    :end-before: finish
 
@@ -155,21 +152,21 @@ Unregistered customers can use a guest :ref:`quick order form <frontstore-guide-
 Configure Guest Quick Order Form Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_quick_order_global.rst
+.. include:: /management_console/system/configuration/commerce/sales/guest_quick_order_global.rst
    :start-after: begin_quick_order_form
    :end-before: finish_quick_order_form
 
 Configure Guest Quick Order Form per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_quick_order_organization.rst
+.. include::  /management_console/system/user_management/organizations/org_configuration/commerce/sales/organization_guest_quick_order.rst
    :start-after: begin_quick_order_form
    :end-before: finish_quick_order_form
 
 Configure Guest Quick Order Form per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_quick_order_website.rst
+.. include:: /management_console/system/websites/web_configuration/commerce/sales/website_guest_quick_order.rst
    :start-after: begin_quick_order_form
    :end-before: finish_quick_order_form
 
@@ -190,28 +187,28 @@ In order to let unregistered customers request quotes on the items they are inte
 Configure Guest Request for Quote Submission Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_rfq_global.rst
+.. include:: /management_console/system/configuration/commerce/sales/rfq.rst
    :start-after: begin_rfq
    :end-before: finish_rfq
 
 Configure Guest Request for Quote Submission per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_rfq_organization.rst
+.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/sales/organization_guest_rfq.rst
    :start-after: begin_rfq
    :end-before: finish_rfq
 
 Configure Guest Request for Quote Submission per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_rfq_website.rst
+.. include:: /management_console/system/websites/web_configuration/commerce/sales/website_guest_rfq.rst
    :start-after: begin_rfq
    :end-before: finish_rfq
 
 Enable Guest Quotes
 ^^^^^^^^^^^^^^^^^^^
 
-.. include:: /admin_guide/landing_commerce/sales/checkout/guest_access/guest_quote.rst
+.. include:: /management_console/system/configuration/commerce/sales/guest_quote.rst
    :start-after: begin_guest_quote
    :end-before: finish_guest_quote
 

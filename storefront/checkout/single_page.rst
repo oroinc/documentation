@@ -1,4 +1,3 @@
-
 .. _frontstore-guide--orders-checkout--single-page-checkout:
 
 Single Page Checkout

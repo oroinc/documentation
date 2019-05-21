@@ -24,7 +24,7 @@ By default, only one shopping list is available for unregistered users:
 
 3.  To remove items from the list, click |ICChevronDown| next to **Update Shopping List** and click **Remove from Shopping List**.
 
-     .. image:: /user_guide/img/sales/shopping_lists/shopping_list_dropdown_2.png
+     .. image:: /img/storefront/shopping_lists/shopping_list_dropdown_2.png
 
      Alternatively, navigate to the shopping list itself by clicking **Shopping List** in the top right corner of the store page, and click *View Details*.
 

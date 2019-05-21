@@ -6,7 +6,7 @@ Order Creation
 
 You can automatically assign a status to new orders once they are created.
 
-.. hint:: This can be done globally, :per organization <configuration--commerce--orders--order-creation--organization>` and :per website <configuration--commerce--orders--order-creation--website>`.
+.. hint:: This can be done globally, :ref:`per organization <configuration--commerce--orders--order-creation--organization>` and :ref:`per website <configuration--commerce--orders--order-creation--website>`.
 
 To assign an order status globally:
 
