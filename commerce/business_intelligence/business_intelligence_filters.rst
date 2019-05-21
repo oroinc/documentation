@@ -159,9 +159,9 @@ To define the **Condition Group** filter:
 
 3. Define the conditions and conjunctions between them.
 
-.. hint::
+.. important:: Keep in mind that if a user generates a report with several conditions (for example, A and B) in one conditions group, they receive the report that includes the values that satisfy the A condition, the B condition, and both. In case you want to get the report only with both conditions applied, enable the **Group Same-Entity Conditions Within Condition Groups** option in the :ref:`system configuration <doc-configuration-display-settings-report>`. This way, the report will contain only the values that match all the defined conditions.
 
-    For complex conditions, it is a good idea to draw an outline of the conditions first.
+For complex conditions, it is a good idea to draw an outline of the conditions first.
 
 A condition group may also be included into another condition group as a separate filter. 
 
