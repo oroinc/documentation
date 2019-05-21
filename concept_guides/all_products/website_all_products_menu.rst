@@ -12,7 +12,7 @@ To add the All Products page to the frontend menu of a particular website:
 2. Click once on the required website to open its page.
 3. On the website page, click |IcConfig| **Edit Frontend Menu** to start editing the configuration.
 
-   .. image:: /admin_guide/img/menus/edit/AllProductsWebsiteEditMenu.png
+   .. image:: /img/products/all_products_page/AllProductsWebsiteEditMenu.png
 
 3. Click once on the menu to which you will add the All Products page.
 4. Click **Create Menu Item** on the top right of the page.
@@ -20,13 +20,11 @@ To add the All Products page to the frontend menu of a particular website:
 #. In the **URI** field, specify */catalog/allproducts*.
 #. Complete the other fields as required.
 
-   .. image:: /admin_guide/img/menus/edit/AllProductsWebsite.png
+   .. image:: /img/products/all_products_page/AllProductsWebsite.png
 
 #. Click **Save** on the top right of the page.
 
 The All Products page should now become available as part of the selected menu on the website level.
-
-
 
 .. finish_all_products
 

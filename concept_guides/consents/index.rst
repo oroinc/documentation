@@ -45,7 +45,7 @@ By default, consents are disabled in OroCommerce.
 
 To enable and configure consents in OroCommerce, take the following steps:
 
-* :ref:`Install <admin-package-manager>` the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
+* Install the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
 * Enable consents in the :ref:`system configuration <configuration--guide--commerce--configuration--consents>`.
 * Create a :ref:`landing page <user-guide--consents--add>` with the text of the consent, and add it as a content variant of a content tree node.
 * Create a :ref:`new consent <user-guide--consents--create>` under **System > Consent Management**, define its properties, and link it to the content tree node.

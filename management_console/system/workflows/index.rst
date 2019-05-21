@@ -315,7 +315,9 @@ In Oro applications, there are two ways to create a new workflow:
 
 Some workflow components, like an email notification, may be created only via the command line.
 
-.. warning:: In the user interface, you cannot edit or clone workflows that contain transition actions and conditions. If you need to clone a workflow anyway, see :ref:`How to clone a wokflow via the command line console <workflows--actions--clone>`.
+.. warning:: In the user interface, you cannot edit or clone workflows that contain transition actions and conditions. If you need to clone a workflow anyway, use the command line console.
+
+.. see :ref:`How to clone a workflow via the command line console <workflows--actions--clone>`.
 
 For how to create and manage workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
 

@@ -1,5 +1,4 @@
 .. _configuration--commerce--orders--order-creation--global:
-.. _configuration--commerce--orders:
 
 Order Creation
 ==============

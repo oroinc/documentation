@@ -10,3 +10,6 @@ OroCommerce storefront customer users can manage the consents applicable to them
 .. include:: /management_console/system/workflows/system_workflows/consents_flow.rst
    :start-after: start_checkout_with_consents_sample
    :end-before: finish_checkout_with_consents_sample
+
+.. include:: /img/buttons/include_images.rst
+   :start-after: begin

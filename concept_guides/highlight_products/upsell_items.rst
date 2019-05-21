@@ -39,21 +39,21 @@ Configure up-sell products globally, per website and organization.
 Enable Up-Sell Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /system/configuration/commerce/catalog/global_related_products.rst
+.. include:: /management_console/system/configuration/commerce/catalog/global_related_products.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 
 Enable Up-Sell Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
+.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 
 Enable Up-Sell Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /system/websites/web_configuration/commerce/catalog/website_related_products.rst
+.. include:: /management_console/system/websites/web_configuration/commerce/catalog/website_related_products.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 

@@ -1,5 +1,4 @@
 .. _configuration--commerce--orders--order-automation--global:
-.. _configuration--commerce--orders:
 
 Order Automation
 ================

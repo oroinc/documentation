@@ -1,9 +1,11 @@
 .. _user-guide--consents--create:
 
+.. begin_create_consents
+
 Create Consents
 ---------------
 
-.. note:: Before you can use consents in OroCommerce, :ref:`install <admin-package-manager>` the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
+.. note:: Before you can use consents in OroCommerce, install the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
 
 To create a consent in OroCommerce:
 
@@ -38,7 +40,6 @@ To create a consent in OroCommerce:
 .. important:: You can view all consents accepted by your customer users in the **Consents** section of their pages under **Customers > Customer Users**.
 
         .. image:: /img/system/consents/consents_section_customer_user_page.png
-
 
 **Related Topics**
 

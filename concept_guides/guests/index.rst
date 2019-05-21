@@ -25,7 +25,7 @@ When guest access is disabled:
 * Guest users cannot access any website pages, except for the login/forgot/reset password page.
 * Guest users are redirected to the login page when they try to access the homepage.
 
-.. image:: /admin_guide/img/configuration/guest_access/SignIn.png
+.. image:: /img/storefront/sign_in/SignIn.png
 
 Enable Guest Website Access Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -47,8 +47,6 @@ Enable Guest Website Access per Website
 .. include:: /management_console/system/websites/web_configuration/commerce/guests/website_guest_access.rst
    :start-after: begin
    :end-before: finish
-
-.. _user-guide--system-configuration--commerce-sales-checkout:
 
 Configure Guest Checkout
 ------------------------

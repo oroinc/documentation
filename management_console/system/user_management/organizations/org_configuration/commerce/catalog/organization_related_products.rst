@@ -1,4 +1,5 @@
 .. _sys--users--organization--commerce--catalog--related-products:
+.. _sys--users--organization--commerce--catalog--upsell-products:
 
 Enable and Set Up Related Products per Organization
 ---------------------------------------------------

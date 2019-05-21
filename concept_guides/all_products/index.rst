@@ -65,8 +65,6 @@ Related Topics
 .. toctree::
    :hidden:
 
-   global_all_products
-   website_all_products
    all_products_catalog
    global_all_products_menus
    organization_all_products_menus

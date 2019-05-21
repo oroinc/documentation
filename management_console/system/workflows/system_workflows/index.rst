@@ -1,3 +1,4 @@
+.. _system--workflows:
 .. _doc--workflows--actions--system:
 
 System Workflows
@@ -15,7 +16,9 @@ From the grid, you can perform the following actions for system workflows:
 
 .. image:: /img/system/workflows/27_manage_wf_2.png
 
-.. hint:: In case you need to alter a system workflow, clone it via the command line console under the different name and make the required changes. For more information on how to clone a workflow, see :ref:`How to Clone a Workflow <workflows--actions--clone>`.
+.. hint:: In case you need to alter a system workflow, clone it via the command line console under the different name and make the required changes.
+
+.. For more information on how to clone a workflow, see :ref:`How to Clone a Workflow <workflows--actions--clone>`.
 
 Available System Workflows
 --------------------------
@@ -43,6 +46,7 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
 * :ref:`Unqualified Sales Lead Workflow <system--workflows--unqualified-sales-lead-workflow>`
 
 .. toctree::
+   :maxdepth: 1
 
    checkout
    consents_flow

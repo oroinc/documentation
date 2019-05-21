@@ -11,7 +11,7 @@ To add the All Products page to the frontend menu of a particular customer:
 2. Click once on the customer to open it.
 3. Click |IcConfig| **Edit Frontend Menu** on the top right.
 
-   .. image:: /admin_guide/img/menus/edit/AllProductsCustomerEditMenu.png
+   .. image::/img/products/all_products_page/AllProductsCustomerEditMenu.png
 
 4. Click once on the menu to which you will add the All Products page.
 5. Click **Create Menu Item** on the top right of the page.
@@ -19,7 +19,7 @@ To add the All Products page to the frontend menu of a particular customer:
 #. In the **URI** field, specify */catalog/allproducts*.
 #. Complete the other fields as required.
 
-   .. image:: /admin_guide/img/menus/edit/AllProductsCustomer.png
+   .. image:: /img/products/all_products_page/AllProductsCustomer.png
 
 #. Click **Save** on the top right of the page.
 

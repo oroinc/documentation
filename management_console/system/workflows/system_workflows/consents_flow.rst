@@ -46,7 +46,7 @@ On the page of all workflows, you can perform the following actions to the Check
 
 .. note:: Keep in mind that when you activate the Checkout with Consents workflow, the default checkout workflow is disabled automatically.
 
-   .. image:: /img/workflows/checkout_with_consents/activate_checkout_with_consents.png
+   .. image:: /img/system/workflows/checkout_with_consents/activate_checkout_with_consents.png
       :alt: When you activate the checkout with consents workflow, a pop up informs that the default workflow will be disabled
 
 .. _system--workflows--checkout-with-consents-workflow-sample:

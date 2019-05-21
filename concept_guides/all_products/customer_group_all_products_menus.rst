@@ -3,8 +3,6 @@
 Add All Products Page to Frontend Menus per Customer Group
 ----------------------------------------------------------
 
-
-
 .. begin_all_products
 
 To add the All Products page to the frontend menu of a particular customer group:
@@ -14,7 +12,7 @@ To add the All Products page to the frontend menu of a particular customer group
 3. Click |IcConfig| **Edit Frontend Menu** on the top right.
 
 
-  .. image:: /admin_guide/img/menus/edit/AllProductsCustomerGroupEditMenu.png
+  .. image:: /img/products/all_products_page/AllProductsCustomerGroupEditMenu.png
 
 4. Click once on the menu to which you will add the All Products page.
 5. Click **Create Menu Item** on the top right of the page.
@@ -22,7 +20,7 @@ To add the All Products page to the frontend menu of a particular customer group
 #. In the **URI** field, specify */catalog/allproducts*.
 #. Complete the other fields as required.
 
-   .. image:: /admin_guide/img/menus/edit/AllProductsCustomerGroup.png
+   .. image:: /img/products/all_products_page/AllProductsCustomerGroup.png
 
 #. Click **Save** on the top right of the page.
 

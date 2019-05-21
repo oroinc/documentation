@@ -27,7 +27,7 @@ To enable the the integration in the Oro application:
    * **Enable for Emails** --- to call via email (you can invite up to 5 users to a Google Hangout by emailing them)
    * **Enable for Phones** --- to make phone calls 
   
-   .. image:: /user_guide/system/img/hangouts/enable.png  
+   .. image:: /img/system/integrations/google/enable.png
 
 
 Initiate a Hangout Call
@@ -41,15 +41,14 @@ In order to start a hangout call from the page of a record:
 1. Navigate to the page of the record that you need to contact (account, lead, contact, user, etc.) . 
 2. Hover the mouse over a phone number or an email address on the page.
 
-   .. image:: /user_guide/system/img/hangouts/hover.png  
+   .. image:: /img/system/integrations/google/hover.png
 
 3. Click the hangouts icon.
 4. In the **Invite Contacts to a Google Hangout** form , click **Start a Hangout**.
 
-   .. image:: /user_guide/system/img/hangouts/invite.png
+   .. image:: /img/system/integrations/google/invite.png
 
-
-5. If you have already logged into your Google account, the call starts immediately, otherwise you will be 
+5. If you have already logged into your Google account, the call starts immediately, otherwise you will be
     prompted to log in. 
 
 .. _user-guide-hangouts-call:
@@ -62,7 +61,7 @@ the call will start immediately.
 
 Otherwise, you will be prompted to enable it:
 
-.. image:: /user_guide/system/img/hangouts/enable_phone.png
+.. image:: /img/system/integrations/google/enable_phone.png
 
 Most calls within the USA and Canada are free, and you can pay your balance for other regions using Google Wallet.
 
@@ -72,7 +71,7 @@ Call via Email
 If you call via email, the call is initiated. You can invite other call participants (up to 5 total),
 remove them (click **X** next to the name) or send them a link to the session.
 
-.. image:: /user_guide/system/img/hangouts/invite_more.png
+.. image:: /img/system/integrations/google/invite_more.png
 
 Once the contact has joined the session, you can talk.
 
@@ -82,7 +81,7 @@ Call via the Log Call Form
 
 To make calls from :ref:`Log Call <doc-activities-calls>` form, click **Start a Hangout** in the bottom right corner.
 
-.. image:: /user_guide/system/img/hangouts/log_call_hangout.png
+.. image:: /img/system/integrations/google/log_call_hangout.png
 
 
 Call from the Calendar Page
@@ -94,7 +93,7 @@ To start a Hangout call with contacts invited to an event:
 2. Click the event name.
 3. If the event has at least one guest invited, the **Start a Hangout** button is displayed.
 
-   .. image:: /user_guide/system/img/hangouts/view_event.png
+   .. image:: /img/system/integrations/google/view_event.png
       :width: 40%
 
 4. Click **Start a Hangout** to start a call using the email addresses of the first five guests.

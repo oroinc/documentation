@@ -1,9 +1,13 @@
 .. _system--workflows--quote--understanding:
 
 Quote Workflows
----------------
+===============
 
-.. contents:: :local:
+.. toctree::
+   :maxdepth: 2
+
+   quote_management_workflow
+   backoffice_quote_flow_with_approvals
 
 .. note:: For general information on using workflows, see the :ref:`Workflows <user-guide--system--workflow-management>` section.
 
@@ -16,30 +20,9 @@ Out-of-the-box, OroCommerce supports two mutually exclusive quote management wor
 
 .. warning:: Approval is not requested when the **Price Override Requires Approval** option is disabled in the workflow configuration. In this case, both workflows follow the simple quote management flow, with no approvals. See the :ref:`Enable Approvals in Workflow Configuration <doc--workflows--backoffice-quote-flow-with-approvals--configure>` section for more information on how to enable approvals.
 
-.. _system--workflows:
-.. _system--workflows--quote-backoffice-workflow:
 
-Quote Management Flow
-^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/workflows/system_workflows/quote_management_workflow.rst
-   :start-after: start_quote_management_flow
-   :end-before: finish_quote_management_flow
 
-.. _doc--workflows--backoffice-quote-flow-with-approvals:
-
-Backoffice Quote Flow with Approvals
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. include:: /management_console/system/workflows/system_workflows/backoffice_quote_flow_with_approvals.rst
-   :start-after: start_backoffice_quote_flow
-   :end-before: finish_backoffice_quote_flow
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
-
-.. toctree::
-   :maxdepth: 1
-
-   quote_management_workflow
-   backoffice_quote_flow_with_approvals
