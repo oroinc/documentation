@@ -25,7 +25,7 @@ To reach the workflow:
 1. Navigate to **System > Workflows** in the main menu.
 2. Click **Checkout with Consents** to open the flow.
    
-   .. image:: /img/workflows/checkout_with_consents/checkout_with_consents_workflow_grid.png
+   .. image:: /img/system/workflows/checkout_with_consents/checkout_with_consents_workflow_grid.png
       :alt: Checkout with consents workflow in the table of all workflows
 
 On the Checkout with Consents workflow page, you can perform the following actions:
@@ -33,7 +33,7 @@ On the Checkout with Consents workflow page, you can perform the following actio
 * Deactivate the workflow - click |IcDeactivate| **Deactivate** to deactivate the workflow.
 * Activate the workflow - click |IcActivate| **Activate** to activate the workflow.
 
-.. image:: /img/workflows/checkout_with_consents/checkout_with_consents_page.png
+.. image:: /img/system/workflows/checkout_with_consents/checkout_with_consents_page.png
    :alt: The page of the checkout with consents workflow
 
 On the page of all workflows, you can perform the following actions to the Checkout with Consents workflow:

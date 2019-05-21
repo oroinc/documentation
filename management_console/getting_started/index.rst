@@ -1,8 +1,9 @@
 |IcGettingStarted| Getting Started
 ==================================
 
+Oro application is a flexible application that can be easily custom-tailored to meet the specific needs of your business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
 
-
+The Getting Started guide explains generic concepts and details of OroCRM and OroCommerce basic navigation and use.
 
 .. toctree::
    :maxdepth: 2
@@ -11,6 +12,7 @@
    application_authentication/index
    user_menu/index
    navigation/index
+   information_management/index
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

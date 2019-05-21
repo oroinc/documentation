@@ -1,9 +1,10 @@
 .. _doc-config-menus:
+.. _doc-my-user-menus:
 
 Menus
 =====
 
-In this section, you will learn the menu types available for the OroCommerce and OroCRM Backend and how to configure them. application menus.
+In this section, you will learn the menu types available for the OroCommerce and OroCRM Backend and how to configure them.
 
 .. contents:: :local:
     :depth: 3

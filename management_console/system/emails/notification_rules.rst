@@ -2,6 +2,8 @@
 .. _doc--notification-rules--detailed:
 .. _doc--notification-rules--recipient-list:
 .. _doc--notification-rules--general:
+.. _user-guide-using-emails-notifications:
+
 
 Notification Rules (Automatic Email Notifications)
 ==================================================

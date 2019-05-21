@@ -24,6 +24,8 @@ In the system configuration, you can:
 
 .. hint:: These settings may apply :ref:`globally <sys--commerce--catalog--relate-products>`, on the :ref:`organization level <sys--users--organization--commerce--catalog--related-products>`, and on the :ref:`website level <sys--websites--commerce--catalog--related-products>`.
 
+.. begin_related_products_body
+
 To update the related products settings globally:
 
 1. In the main menu, navigate to **System > Configuration**.
@@ -96,6 +98,7 @@ To update the related products settings globally:
 5. Click **Save**.
 
 .. finish_upsell_items_body
+.. finish_related_products_body
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

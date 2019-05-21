@@ -20,6 +20,34 @@ Currency configuration helps you:
 
 .. note:: The organization-level configuration for base currency and display format has higher priority and overrides the system setting. However, to enable a currency on the organization level, you should add it to the list of allowed currencies at the system level first.
 
+.. _user-guide-multi-currency:
+
+Multi-Currency
+--------------
+
+Multiple currency functionality for OroCRM is a useful tool for companies that do business internationally and negotiate deals in various currencies.
+
+.. note:: This feature is only available in the Enterprise edition.
+
+Currency configuration allows to:
+
+- Create and manage the list of currencies that will be available for selection in multi-currency fields (e.g. opportunity budget).
+- Designate one currency as base.
+
+Think of a US-based business that is shipping certain goods to the UK. Its base currency is US dollars, which means that this is the currency that its business’s turnover is usually in. The contract between the US and the UK companies, however, is to be signed in British pounds for the total value of £20 000. When creating a new opportunity for the mentioned contract, a sales manager of the US company would need to add the **Budget Amount** in pounds rather than dollars.
+
+With OroCRM Enterprise multi-currency feature, the system can make the necessary recalculations of this budget amount into the base currency for you. This means that if you enter the amount of £20 000 into the Budget Amount field, this value will be converted into your base currency and constitute $25 050, as illustrated in the screenshot below. This conversion is calculated according to the currency rate, determined beforehand.
+
+.. image:: /img/system/config_system/budget_recalculated.png
+   :alt: The price is recalculated while selecting a currency
+
+.. note:: So far, opportunity is the only OroCRM entity to have received multi-currency functionality out-of-the-box.
+
+With this example in mind, let us have a look at how you can configure your currencies and rates.
+
+Global Currency Configuration
+-----------------------------
+
 To change the default currency setting globally:
 
 1. Navigate to **System > Configuration** in the main menu.
@@ -28,7 +56,7 @@ To change the default currency setting globally:
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
 Currency Settings
------------------
+^^^^^^^^^^^^^^^^^
 
 The following sections are available within the **Currency** tab:
 
@@ -67,7 +95,7 @@ The following sections are available within the **Currency** tab:
 +------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 Allowed Currencies Options
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The information about the allowed currencies options is grouped in the following columns:
 
@@ -144,6 +172,7 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 6. To roll back any changes to the currency settings, click **Reset** on the top right.
 
 7. Click **Save Settings**.
+
 
 .. finish_global_currency
 

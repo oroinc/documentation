@@ -1,5 +1,5 @@
 .. _doc-website-configuration:
-.. _ user-guide--system-websites--configure-website:
+.. _user-guide--system-websites--configure-website:
 
 System Configuration for Website
 ================================

@@ -1,5 +1,5 @@
 .. _configuration--guide--commerce--configuration--shipping:
-.. _ user-guide--shipping--configuration:
+.. _user-guide--shipping--configuration:
 
 Shipping
 ========

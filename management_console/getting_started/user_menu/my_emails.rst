@@ -1,4 +1,7 @@
 .. _doc-my-oro-emails:
+.. _user-guide-using-emails:
+.. _doc-activities-emails-actions-compose:
+.. _user-guide-using-emails-view:
 
 My Emails
 =========
@@ -6,6 +9,14 @@ My Emails
 .. contents:: :local:
 
 .. note:: Before you start using **My Emails**, please configure your personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my-email-configuration>` for more information.
+
+Oro application allows you to send and receive emails from within the system using both personal and system (company-wide) mailboxes. You can neatly design letters using HTML formatting and a built-in text editor, create and use email templates, attach files to emails, configure personalized signatures.
+
+It is also possible to configure auto-actions and auto-responses. For example, with auto-actions, for each email received to a certain mailbox, a lead record or a case may be created in the system.
+
+Oro also provides a feature of auto-assignment to contact, thanks to which new emails synced into the application are automatically linked to contacts, if email addresses of these contacts appeared in the correspondence.
+
+Enterprise Editions of Oro application also support integration with Microsoft Exchange Server and Outlook.
 
    See a short demo on `how to create and manage emails <https://www.oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
 
@@ -21,8 +32,8 @@ From the page of all emails, you can:
 
 * View all available emails
 * Filter emails
-* Compose a new email
-* Synchronize Emails
+* Compose a new email from scratch or using a template and send it
+* Synchronize emails with your email server (e.g., save drafts)
 * Mark one or selected emails as unread
 
 Save Table Views
@@ -169,6 +180,38 @@ From the email details page, you can:
 
    .. image:: /img/getting_started/user_menu/download_attachment.jpg
       :alt: Download attachments from the emails
+
+View Recent Emails
+------------------
+
+.. start_recent_emails_menu_button
+
+You can reach your emails by clicking on the Recent Emails button in the top right corner of the Oro application window. A list of unread emails
+will appear, as illustrated in the screenshot below:
+
+.. image:: /img/getting_started/user_menu/recent_emails_button.jpg
+
+Clicking on an email from the list redirects you to the page of the selected email.
+
+The following features are available within the **Recent Emails** list:
+
+1. **Mark All as Read** (marks all unread emails as read).
+
+2. **Mark As Read/Unread**
+
+   * Clicking on the yellow envelope icon marks the selected email as read.
+
+   * Clicking on the grey envelope icon marks the selected email as unread.
+
+3. **Reply All** (launches a **Reply** email dialog window).
+
+
+Recent Emails Widget
+--------------------
+
+.. include:: /management_console/dashboards/widgets/recent_emails.rst
+   :start-after: start_emails_widget
+   :end-before: finish_emails_widget
 
 .. finish_my_emails
 

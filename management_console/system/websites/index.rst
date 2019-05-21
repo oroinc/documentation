@@ -24,4 +24,5 @@ Learn more about website management from the following sections:
    manage
    host_config
    web_configuration/index
+   configure_price_lists
 

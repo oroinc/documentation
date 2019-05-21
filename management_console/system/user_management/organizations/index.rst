@@ -22,7 +22,7 @@ If you have access to more than one organization, you can switch between them us
 
 When creating a new record in the global organization, you first need to select the organization this record should belong to. Once the organization is selected, you can proceed to the usual record creation flow.
 
-.. |multi_org_choice| image:: /admin_guide/img/multi_org/multi_org_choice.png
+.. |multi_org_choice| image:: /img/system/user_management/multi_org_choice.png
 
 .. note:: See a short demo on `how to create organizations and business units <https://www.orocrm.com/media-library/create-organizations-and-business-units>`_, or keep reading the topics below.
 

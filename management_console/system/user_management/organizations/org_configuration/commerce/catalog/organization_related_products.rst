@@ -4,6 +4,8 @@
 Enable and Set Up Related Products per Organization
 ---------------------------------------------------
 
+.. begin_related_products_body
+
 To update the related products settings per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
@@ -59,6 +61,7 @@ To update the related products settings per organization:
 6. Click **Save**.
 
 .. finish_upsell_items_body
+.. finish_related_products_body
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin

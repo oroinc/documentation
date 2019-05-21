@@ -64,8 +64,6 @@ To simplify creation of entity fields, you can import a .csv file with a list of
 
 5. :ref:`Update the schema <admin-guide-update-schema>` to apply the changes if the storage type for the field is set to **Table Column**.
 
-For more information, refer to the :ref:`Importing Bulk Items <user-guide-import>` topic.
-
 .. _admin-guide-update-schema:
 .. _schema update:
 

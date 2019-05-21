@@ -1,7 +1,7 @@
 .. _admin-configuration-email-configuration-user:
 .. _my_email_configuration:
 .. _doc-my-user-configuration-email:
-.. _ user-guide-using-emails-vie:
+.. _user-guide-using-emails-vie:
 
 Configure Email Settings per User
 =================================
@@ -15,6 +15,8 @@ To configure email settings per user:
 1. Navigate to **System > User Management > Users**  in the main menu.
 2. For the necessary user, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.
 3. Click **System Configuration > General Setup > Email Configuration** in the panel to the left.
+
+.. _my-email-configuration:
 
    .. important:: To change *your own* email configuration settings:
 
