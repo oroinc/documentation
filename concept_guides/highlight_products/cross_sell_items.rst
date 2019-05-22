@@ -7,7 +7,7 @@
 Manage Cross-Sell Products
 ==========================
 
-Once the core product information is saved, you may configure cross-sell products to show in the **Related Items** section in the product details in the management console, and in the **Cross-Sell Products** section next to the product details in the storefront.
+Once the core product information is saved, you may configure cross-sell products to show in the **Related Items** section in the product details in the back-office, and in the **Cross-Sell Products** section next to the product details in the storefront.
 
 Use cross-sell products to bind similar products or those that compliment each other, like the item and its accessories.
 

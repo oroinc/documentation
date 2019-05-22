@@ -13,7 +13,7 @@ When connecting your MS Outlook application to the Oro instance, you can define 
 Identify a Record
 ^^^^^^^^^^^^^^^^^
 
-For every synchronized record, there is a defined key. The key is a set of field values used to identify a record. Fields of a key can be chosen subject to the specific company needs and defined in the management console.
+For every synchronized record, there is a defined key. The key is a set of field values used to identify a record. Fields of a key can be chosen subject to the specific company needs and defined in the back-office.
 
 The following keys are used by default: 
 

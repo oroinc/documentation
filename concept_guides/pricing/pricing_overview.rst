@@ -18,7 +18,7 @@ Price management in OroCommerce enables you to:
 Understanding Price Currencies
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A ``base currency`` is a currency that is used to display financial statistics (budgets, sales amounts, etc.) on the management console.
+A ``base currency`` is a currency that is used to display financial statistics (budgets, sales amounts, etc.) on the back-office.
 A ``display currency`` is a currency that is used to display prices to customer users in the storefront.
 
 .. The storefront uses the exact value entered by the price manager when a customer requires prices in a selected display currency and the prices in the same base currency are available in the calculated price list. If the price list does not have the price in the selected currency, then additional currency conversion rules are used.
@@ -64,7 +64,7 @@ Finally, a dedicated price list with prices in Euros may be available only to so
 
 .. A calculated price list (also called combined price list) is an internal representation of all prices available to all customer users of the selected customer on the storefront.
 
-For example, let's imagine that one of your customer users logs into your storefront. They may see prices for both product A and product B. The product A prices come from the default price list available to everybody. The product B prices are from a custom price list that you have created to override default product B pricing only for this specific customer. Even though you can see all price lists and switch between them in your store management console, your customer users can see only those prices on the storefront that you have made available to them by configuring price lists and their settings.
+For example, let's imagine that one of your customer users logs into your storefront. They may see prices for both product A and product B. The product A prices come from the default price list available to everybody. The product B prices are from a custom price list that you have created to override default product B pricing only for this specific customer. Even though you can see all price lists and switch between them in your store back-office, your customer users can see only those prices on the storefront that you have made available to them by configuring price lists and their settings.
 
 Price Selection Strategy
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -123,9 +123,9 @@ Automated pricing rules are a single source of truth for your price list. You ca
 Price List Calculation
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To provide an optimized user experience on the storefront and in the store management console, and maintain the desired level of system performance, we provide a way to fine-tune the price list calculation behavior.
+To provide an optimized user experience on the storefront and in the store back-office, and maintain the desired level of system performance, we provide a way to fine-tune the price list calculation behavior.
 
-OroCommerce performs a non-resource-consuming part of price recalculation immediately after the price change is submitted by the user in the management console (e.g., when a user submits the product edit form, or adds a price via the price list management, or modifies price list priority on a customer edit page, etc.).
+OroCommerce performs a non-resource-consuming part of price recalculation immediately after the price change is submitted by the user in the back-office (e.g., when a user submits the product edit form, or adds a price via the price list management, or modifies price list priority on a customer edit page, etc.).
 
 The resource-consuming part of recalculation (e.g., when the price auto-calculation formula depends on the attribute of the item that is not directly related to the product) is deferred to eliminate unnecessary recalculations every time the price is updated and launch them only when the price is going to be used soon. The schedule of this recalculation is defined using the :ref:`Offset Of Processing CPL Prices <offset-of-processing-cpl-prices>` value in hours.
 

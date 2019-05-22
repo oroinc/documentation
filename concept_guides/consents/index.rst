@@ -29,7 +29,7 @@ In this respect, OroCommerce customers have the right to:
 Getting Started with Consent Management 
 ---------------------------------------
 
-In the OroCommerce management console, consents are managed by security policy officers (or other company-specific roles with the corresponding consent management permissions) who enable, configure and manage them in the application. Consents can also be localized and display the information in the required language.
+In the OroCommerce back-office, consents are managed by security policy officers (or other company-specific roles with the corresponding consent management permissions) who enable, configure and manage them in the application. Consents can also be localized and display the information in the required language.
 
 You can create two types of consents in OroCommerce, mandatory and optional. 
 

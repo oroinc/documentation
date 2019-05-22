@@ -1,7 +1,7 @@
 .. _doc--products--manage-inventory-prices-look:
 
-Highlight and Illustrate Products
-=================================
+Visual Representation of Products in the Storefront
+===================================================
 
 When the required number of products has been created or imported, you can further improve on their visual representation on the storefront to simplify purchase choices for your buyers. Usually, these options are :ref:`configured per level <configuration--guide--config-levels>`:
 

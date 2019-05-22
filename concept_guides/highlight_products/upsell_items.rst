@@ -3,7 +3,7 @@
 Manage Up-Sell Products
 -----------------------
 
-Once the core product information is saved, you may configure up-sell items to show in the **Related Items** section in the product details in the management console, and in the **Up-Sell Products** section next to the product details in the storefront.
+Once the core product information is saved, you may configure up-sell items to show in the **Related Items** section in the product details in the back-office, and in the **Up-Sell Products** section next to the product details in the storefront.
 
 Use up-sell items to bind products that should be promoted when the buyer is viewing the product details. More expensive alternatives of the model, upgrade options, and additional parts are good fit for up-sell items.
 
@@ -39,21 +39,21 @@ Configure up-sell products globally, per website and organization.
 Enable Up-Sell Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/configuration/commerce/catalog/global_related_products.rst
+.. include:: /back_office/system/configuration/commerce/catalog/global_related_products.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 
 Enable Up-Sell Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
+.. include:: /back_office/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 
 Enable Up-Sell Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/websites/web_configuration/commerce/catalog/website_related_products.rst
+.. include:: /back_office/system/websites/web_configuration/commerce/catalog/website_related_products.rst
    :start-after: begin_upsell_items_body
    :end-before: finish_upsell_items_body
 

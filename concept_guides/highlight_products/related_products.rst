@@ -3,7 +3,7 @@
 Manage Related Products
 -----------------------
 
-Once the core product information is saved, you may configure related products to show in the **Related Items** section in the product details in the management console, and in the **Related Products** section next to the product details in the storefront.
+Once the core product information is saved, you may configure related products to show in the **Related Items** section in the product details in the back-office, and in the **Related Products** section next to the product details in the storefront.
 
 To add related products to the product information:
 
@@ -35,21 +35,21 @@ Configure related products globally, per website and organization.
 Enable Related Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/configuration/commerce/catalog/global_related_products.rst
+.. include:: /back_office/system/configuration/commerce/catalog/global_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
+.. include:: /back_office/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /management_console/system/websites/web_configuration/commerce/catalog/website_related_products.rst
+.. include:: /back_office/system/websites/web_configuration/commerce/catalog/website_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 

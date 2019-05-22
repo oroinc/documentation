@@ -3,14 +3,15 @@ Concept Guides
 
 .. toctree::
 
+   consents/index
+   products/index
    pricing/index
    all_products/index
+   guests/index
    google/index
-   guests/index
    outlook/index
-   guests/index
    payment_configuration/index
    shipping_configuration/index
-   consents/index
    highlight_products/index
    localization/index
+   marketing_automation/index

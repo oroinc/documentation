@@ -35,7 +35,7 @@ Once the integration is created and a shipping method is added, you need to add 
 
 4. :ref:`Add a Shipping Tracking Number to the Order <user-guide--shipping-order>`
 
-To help customers track the delivery status of their orders, you can add a shipping tracking method and a number to their orders through the management console.
+To help customers track the delivery status of their orders, you can add a shipping tracking method and a number to their orders through the back-office.
 
 5. :ref:`Assign a Shipping Method to a Quote <shipping-configuration-per-quote>`
 

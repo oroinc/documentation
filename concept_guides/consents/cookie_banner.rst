@@ -53,7 +53,7 @@ To add a translation to the cookie banner to present information in the desired 
 
       php app/console oro:translation:load --env=prod
 
-#. In the management console, navigate to **System > Localization > Translations**.
+#. In the back-office, navigate to **System > Localization > Translations**.
 #. Using filters, locate following translation keys:
 
    * *oro_cookie_banner.text*

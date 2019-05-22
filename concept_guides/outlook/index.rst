@@ -69,7 +69,7 @@ Connect MS Outlook Add-in to Oro Instance
 Configure Outlook Integration in Oro
 ------------------------------------
 
-.. include:: /management_console/system/configuration/system/integrations/outlook_settings_oro.rst
+.. include:: /back_office/system/configuration/system/integrations/outlook_settings_oro.rst
    :start-after: begin_outlook_integration_oro
    :end-before: finish_outlook_integration_oro
 

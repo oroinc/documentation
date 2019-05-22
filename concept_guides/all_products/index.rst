@@ -1,9 +1,9 @@
 .. _sys--conf--commerce--catalog--special-pages:
 
-Configure All Products Page
-===========================
+All Products Page
+=================
 
-In your Oro management console, you can enable and configure All Products page for the OroCommerce storefront. When configured, such page should display all available products from the :ref:`master catalog <user-guide--web-catalog>` grouped by categories.
+In your Oro back-office, you can enable and configure All Products page for the OroCommerce storefront. When configured, such page should display all available products from the :ref:`master catalog <user-guide--web-catalog>` grouped by categories.
 
 To configure All Products page:
 
@@ -51,8 +51,7 @@ Sample All Products Page
    :start-after: begin_all_products
    :end-before: finish_all_products
 
-Related Topics
---------------
+**Related Topics**
 
 * :ref:`Web Catalogs <user-guide--web-catalog>`
 * :ref:`Build a Custom Web Catalog <user-guide--marketing--web-catalog--sample>`
