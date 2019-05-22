@@ -17,7 +17,7 @@ The ORM data source types allow for database query specification, sorters and fi
 Inner Workings of Data Grids
 ----------------------------
 
-Data grids in Oro applications are highly customizable. It is possible to modify an existing grid in order to fetch more data than was originally defined in the grid configuration. In this article, we will retrieve and present to a user some additional data in the existing `products-grid <https://github.com/oroinc/orocommerce/blob/790acbba2962124f5d68d3958546d2e4554d0512/src/Oro/Bundle/ProductBundle/Resources/config/oro/datagrids.yml#L298-L345>`_.
+Data grids in Oro applications are highly customizable. It is possible to modify an existing grid in order to fetch more data than was originally defined in the grid configuration. In this article, we will retrieve and present to a user some additional data in the existing `products-grid <https://github.com/oroinc/orocommerce/blob/3.1.0/src/Oro/Bundle/ProductBundle/Resources/config/oro/datagrids.yml#L305>`_.
 
 And before we start customizing it, let’s take a deeper look into two aspects of how the data grids actually work:
 
@@ -312,14 +312,11 @@ This filter can be added to the grid configuration similarly to how we added new
          */
         protected function addBusinessUnitColumn(DatagridConfiguration $datagridConfiguration)
         {
-            $datagridConfiguration->joinTable(
-                'left',
-                [
-                    'join' => BusinessUnit::class,
-                    'alias' => 'business_unit',
-                    'conditionType' => 'WITH',
-                    'condition' => 'product.owner = business_unit',
-                ]
+            $datagridConfiguration->getOrmQuery()->addLeftJoin(
+                BusinessUnit::class,
+                'business_unit',
+                'WITH',
+                'product.owner = business_unit'
             );
     
             $column = [
