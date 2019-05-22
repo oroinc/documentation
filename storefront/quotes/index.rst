@@ -3,9 +3,6 @@
 Quotes
 ======
 
-The following guide will help you to view and :ref:`accept <frontstore-guide--quotes--accept>` a quote in a Quote section of the OroCommerce storefront.
-
-As many businesses provide services that do not have an upfront price, the costs can vary. That is where quotes come into the picture as they allow you (a prospective buyer) to see the cost involved for an item or services. A quote in OroCommerce may be used to negotiate with the sales person (e.g. request a better price, more convenient quantities, and additional services). It may be created in response to your request for quote, or as a result of the direct communication with the sales person. Once you are happy with the offer in the quote and are ready to proceed with the order, you can accept the quote and submit an order.
 
 **Table of Contents**
 
@@ -14,6 +11,11 @@ As many businesses provide services that do not have an upfront price, the costs
 
    accept
    guests
+
+The following guide will help you to view and :ref:`accept <frontstore-guide--quotes--accept>` a quote in a Quote section of the OroCommerce storefront.
+
+As many businesses provide services that do not have an upfront price, the costs can vary. That is where quotes come into the picture as they allow you (a prospective buyer) to see the cost involved for an item or services. A quote in OroCommerce may be used to negotiate with the sales person (e.g. request a better price, more convenient quantities, and additional services). It may be created in response to your request for quote, or as a result of the direct communication with the sales person. Once you are happy with the offer in the quote and are ready to proceed with the order, you can accept the quote and submit an order.
+
 
 To locate existing quotes:
 

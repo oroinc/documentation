@@ -3,6 +3,8 @@
 Roles
 =====
 
+**Table of Contents**
+
 .. contents:: :local:
    :depth: 1
 

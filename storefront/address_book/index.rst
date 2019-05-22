@@ -4,12 +4,15 @@
 Address Book
 ============
 
+**Table of Contents**
+
+.. contents:: :local:
+   :depth: 2
+
 The following information covers the **Address Book** section of the **Account** menu in OroCommerce storefront.
 
 .. begin
 
-.. contents:: :local:
-   :depth: 2
 
 Open Address Book
 -----------------

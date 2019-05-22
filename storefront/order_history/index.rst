@@ -3,6 +3,16 @@
 Orders and Order History
 ========================
 
+**Table of Contents**
+
+.. toctree::
+   :maxdepth: 1
+
+   create
+   matrix_form
+   reorder
+   view
+
 There are two ways two create an order in the storefront:
 
 * From a shopping list
@@ -14,15 +24,6 @@ After you submit an order, it becomes available in the **Order History** menu wh
 
 .. hint:: Read more on how to place orders and proceed through various types of checkout in the :ref:`Checkout <frontstore-guide--orders-checkout>` topic.
 
-**Table of Contents**
-
-.. toctree::
-   :maxdepth: 1
-
-   create
-   matrix_form
-   reorder
-   view
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
