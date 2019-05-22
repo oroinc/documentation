@@ -1,7 +1,7 @@
 .. _user-guide-add-note:
 
-Notes
-=====
+Add Notes
+=========
 
 In the Oro application, you can create quick notes to store details about a customer or an account. For instance, if a customer frequently returns products, a note on the case would advise other customer service representatives to review any cases from this customer thoroughly.
 

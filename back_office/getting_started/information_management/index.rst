@@ -16,31 +16,27 @@ You can edit, delete most of the records, and you can also perform a number of t
 
 On the :ref:`page of all records (table views) <doc-grids>`, additional actions are usually available as buttons on the top right (also record-specific) or under the ellipsis, or more actions, menu located at the end of the row of each specific record. Within the page of all records, you can usually |IcFilter| :ref:`filter <doc-grids-actions-filters>` and |IcDelete| :ref:`mass delete <doc-grids-actions-records-delete-multiple>` items in the table, |IcSettings| :ref:`manage table columns <doc-grids-actions-change-table>`, |IcPencil| :ref:`edit items inline <doc-grids-actions-records-edit-inline>`, or :ref:`tag <admin-guide-tag-management>` them, so look out for the corresponding icons on the interface. You can find more information on how to work with table views in the :ref:`Record Tables <doc-grids>` topic.
 
-Exchange and transfer of data into the Oro application from various third-party applications (and vice versa) is usually achieved either with the help of import/export or :ref:`integrations <user-guide-integrations>`. As an illustration, you can have a look at how :ref:`import works for leads <user-guide-system-channel-entities-leads>`, and how an :ref:`integration <user-guide-dotmailer-overview>` between Oro application and dotmailer is configured.
+Exchange and transfer of data into the Oro application from various third-party applications (and vice versa) is usually achieved either with the help of :ref:`import <import-records>`/:ref:`export <export-records>` or :ref:`integrations <user-guide-integrations>`. As an illustration, you can have a look at how :ref:`import works for leads <user-guide-system-channel-entities-leads>`, and how an :ref:`integration <user-guide-dotmailer-overview>` between Oro application and dotmailer is configured.
 
 Actions and transitions available for your records in the application are defined by the workflows. Workflows enable you to handle complex procedures that can be configured specifically for your business needs. You can learn more about the configuration of workflows in the dedicated :ref:`Workflow Management <doc--system--workflow-management>` topic.
 
-**Related Topics**
+.. toctree::
+   :maxdepth: 2
 
-* :ref:`Manage Records <doc-grids-records>`
-* :ref:`Work with Record Tables <doc-grids>`
-* :ref:`Manage Workflows <doc--system--workflow-management>`
-* :ref:`Work with Tags <admin-guide-tag-management>`
-
+   create_record
+   manage_records/index
+   import
+   export
+   notes
+   comments
+   attachments
 
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
  
   
-.. toctree::
-   :hidden:
-   :maxdepth: 1
-   
-   manage_records
-   notes
-   comments
-   attachments
+
 
    
 

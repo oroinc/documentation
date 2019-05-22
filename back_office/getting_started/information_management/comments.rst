@@ -1,7 +1,7 @@
 .. _user-guide-activities-comments:
 
-Comments
-========
+Add Comments
+============
 
 You Oro application enables you to add comments on details of an activity. For instance, you may want to comment on a task or a logged call that was made, or possibly comment that you can't attend a particular meeting.
 

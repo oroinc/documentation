@@ -1,7 +1,7 @@
 .. _user-guide-activities-attachments:
 
-Attachments
-===========
+Add Attachments
+===============
 
 Adding attachments in your Oro application helps keep track of assets such as paper copies of a return, or a bill of service written on site. This way, the representative can attach the copy to a customer's case, the customer, or account records.
 

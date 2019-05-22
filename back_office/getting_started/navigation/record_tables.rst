@@ -1,7 +1,6 @@
 .. _doc-grids:
 .. _doc-grids-open-grid: 
 .. _doc-grids-grid-page:
-.. _user-guide-ui-components-view-pages:
 .. _user-guide-ui-components-create-pages:
 
 Record Tables (Grids)
