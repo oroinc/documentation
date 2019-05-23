@@ -1,5 +1,5 @@
-Welcome to Oro User Documentation
-=================================
+Welcome to Oro Business User Documentation
+==========================================
 
 Oro Online Documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and shipping methods in the management console to exploring the checkout process in the eCommerce storefront.
 
@@ -9,7 +9,7 @@ Oro Online Documentation takes you through all the essential steps leading up to
         * **Back-office** contains how-to topics grouped into sections that mirror the structure of the application's back-office
         * **Commerce Storefront**  illustrates how to navigate, browse and interact with the default OroCommerce storefront
 
-Use the left-panel menu or the search bar above it to navigate the documentation and discover how:
+Use the left-panel menu or the search bar above it to navigate the documentation and discover how to:
 
 * Create a variety of roles and configure the hierarchy and access to the application
 * Effortlessly build stock by creating a product catalog and populating it with products
