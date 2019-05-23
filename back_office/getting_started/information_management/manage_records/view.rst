@@ -1,5 +1,5 @@
-View a Record
--------------
+View Records
+------------
 
 .. start_view
 

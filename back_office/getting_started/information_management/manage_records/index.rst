@@ -12,8 +12,8 @@ This topic describes the common actions you can perform to most records, such as
 .. _user-guide-ui-components-view-pages:
 .. _doc-grids-actions-records-view:
 
-View a Record
--------------
+View Records
+------------
 
 .. include:: /back_office/getting_started/information_management/manage_records/view.rst
    :start-after: start_view
@@ -23,8 +23,8 @@ View a Record
 .. _doc-grids-actions-records-edit-inline:
 .. _doc-grids-actions-records-edit-editpage:
 
-Edit the Record
----------------
+Edit Records
+------------
 
 .. include:: /back_office/getting_started/information_management/manage_records/edit.rst
    :start-after: start_edit
@@ -35,8 +35,8 @@ Edit the Record
 .. _user-guide--getting-started--mass-actions-management-console:
 .. _doc-grids-actions-records-delete-multiple:
 
-Delete the Record
------------------
+Delete Records
+--------------
 
 .. include:: /back_office/getting_started/information_management/manage_records/delete.rst
    :start-after: start_delete
@@ -78,7 +78,6 @@ You can review the history of a specific record if you have the corresponding pe
    :width: 80%
    :alt: Open the dialog window by clicking on the change history link
 
-|
 
 .. image:: /img/getting_started/records/grids/change_history.png
    :width: 70%

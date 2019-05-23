@@ -11,7 +11,7 @@ Email Configuration per Organization
 Configure Email Settings
 ------------------------
 
-.. note:: You can configure email settings :ref:`globally <admin-configuration-email-configuration-global>`, per organization, :ref:` per website <admin-configuration-system-mailboxes-website>`, :ref:`per user <admin-configuration-email-configuration-user>`.
+.. note:: You can configure email settings :ref:`globally <admin-configuration-email-configuration-global>`, per organization, :ref:`per website <admin-configuration-system-mailboxes-website>`, :ref:`per user <admin-configuration-email-configuration-user>`.
 
 To configure email settings per organization:
 

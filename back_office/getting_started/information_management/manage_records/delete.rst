@@ -1,4 +1,4 @@
-Remove Records
+Delete Records
 --------------
 
 .. start_delete

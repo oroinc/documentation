@@ -9,7 +9,6 @@ The following guide is intended as an introduction to the OroCommerce *default* 
 
 .. image:: /img/storefront/strefront_landing.png
 
-
 .. hint:: Navigate the left-panel menu to find the content you are interested in or use the search bar above the left-panel menu to find topics quicker.
 
 Before you proceed consider watching the following media library tutorials:

@@ -8,7 +8,7 @@ Configure Email Settings per User
 
 .. hint:: Read more on this topic in :ref:`Emails <admin-guide-email-configuration>`.
 
-.. note:: You can configure email settings :ref:`globally <admin-configuration-email-configuration-global>`, :ref:`per organization <admin-configuration-email-configuration-organization>`, :ref:` per website <admin-configuration-system-mailboxes-website>`, per user.
+.. note:: You can configure email settings :ref:`globally <admin-configuration-email-configuration-global>`, :ref:`per organization <admin-configuration-email-configuration-organization>`, :ref:`per website <admin-configuration-system-mailboxes-website>`, per user.
 
 To configure email settings per user:
 

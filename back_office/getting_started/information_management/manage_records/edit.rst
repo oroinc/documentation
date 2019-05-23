@@ -1,5 +1,5 @@
-Update Records
---------------
+Edit Records
+------------
 
 .. start_edit
 

@@ -46,9 +46,6 @@ To set up the New Arrivals block globally:
    .. note::
       For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-
-   .. image:: /img/system/config_commerce/product/NewArrivalsBlockSystemConfig.png
-
 3. In the **New Arrivals** section provide the following information:
 
    * **Product Segment** -- Select the segment that will include the items to be featured in the **New Arrivals** block.
