@@ -11,7 +11,7 @@ By clicking on your user name on the top right of the application screen, you ca
 Follow the links below to find out what capabilities each section of this menu offers: 
 
 * :ref:`My User <doc-my-user-view-page>`
-* :ref:`My Configuration <doc-my-user-configuration>`
+* :ref:`My Configuration <doc-my-user-configuration-profile>`
 * :ref:`My Emails <doc-my-oro-emails>`
 * :ref:`My Tasks <doc-activities-tasks>`
 * :ref:`My Calendar <user-guide-calendars-manage>`

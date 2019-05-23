@@ -12,7 +12,6 @@ Concept Guide provides an A-Z overview of certain features and use-cases, helps 
    :maxdepth: 2
 
    consents/index
-   products/index
    highlight_products/index
    all_products/index
    pricing/index

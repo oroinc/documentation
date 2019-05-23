@@ -33,5 +33,8 @@ Learn more on price lists in the following topics:
 **Related Topics**
 
 * :ref:`Price Management <user-guide--pricing>`
+* :ref:`Understand Pricing in OroCommerce <user-guide--pricing--overview>`
+* :ref:`Price Calculation in the Storefront <user-guide--pricing-calculation>`
+
 
 
