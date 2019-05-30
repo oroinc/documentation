@@ -81,7 +81,9 @@ To configure the price list priority and controlled merge for the customer group
    :start-after: begin
 
 .. toctree::
-   :hidden:
+   :maxdepth: 1
 
    customer_group_price_lists
+   customer_group_all_products_menus
+   customer_group_frontend_menus
 

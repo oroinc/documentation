@@ -1,7 +1,7 @@
 .. _doc-my-user-configuration-display:
 
-Configure Display Settings per User
-===================================
+Display Settings per User
+=========================
 
 .. begin_display_set_user
 

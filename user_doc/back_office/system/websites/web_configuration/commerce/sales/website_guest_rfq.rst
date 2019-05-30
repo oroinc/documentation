@@ -1,8 +1,8 @@
 .. _user-guide--system-configuration--commerce-sales--rfq--website:
 .. _sys--conf--commerce--sales--rfq-notifications--website:
 
-Configure Guest Request for Quote Submission per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guest Request for Quote per Website
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the Request For Quote section, you can enable guest request for quote submission and configure RFQ notifications:
 

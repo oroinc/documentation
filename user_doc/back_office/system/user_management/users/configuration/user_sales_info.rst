@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--sales--contacts-user:
 
-Configure Sales Rep Information per User
-----------------------------------------
+Sales Rep Information per User
+------------------------------
 
 .. begin
 

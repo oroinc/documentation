@@ -1,7 +1,7 @@
 .. _sys--configuration--crm--sales-pipeline--sales-territories-organization:
 
-Configure Sales Territories per Organization
-============================================
+Sales Territories per Organization
+==================================
 
 .. hint:: Read more on this topic in :ref:`Sales Territories <user-guide-territories>`.
 

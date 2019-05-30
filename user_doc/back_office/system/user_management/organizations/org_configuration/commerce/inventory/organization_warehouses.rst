@@ -1,7 +1,7 @@
 .. _warehouses-organization:
 
-Enable Warehouses per Organization
-----------------------------------
+Warehouses per Organization
+---------------------------
 
 .. note:: The ability to configure warehouses is only available in the Enterprise edition.
 

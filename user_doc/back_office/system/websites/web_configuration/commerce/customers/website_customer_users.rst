@@ -1,7 +1,7 @@
 .. _system--website--configuration--commerce--customers--customer-users:
 
-Configure Customer User Options Per Website
--------------------------------------------
+Customer Users Per Website
+--------------------------
 
 .. begin
 

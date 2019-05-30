@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--marketing--web-catalog--root-node:
 .. _user-guide--marketing--web-catalog--content-node:
 

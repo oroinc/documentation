@@ -1,7 +1,7 @@
 .. _user-guide-hangouts-org:
 
-Configure Google Hangouts Integration per Organization
-======================================================
+Google Hangouts Integration per Organization
+============================================
 
 .. hint:: You can read more on this topic in :ref:`Voice and Video Calls via Hangouts <user-guide-hangouts>`.
 

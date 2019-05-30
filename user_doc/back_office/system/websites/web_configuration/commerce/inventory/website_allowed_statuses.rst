@@ -1,7 +1,7 @@
 .. _allowed-statuses-website:
 
-Configure Allowed Statuses per Website
---------------------------------------
+Allowed Statuses per Website
+----------------------------
 
 You can control the way product inventory is displayed for your buyers (in the storefront) per website:
 

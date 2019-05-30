@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--sales--contacts-organization:
 
-Configure Sales Rep Information per Organization
-------------------------------------------------
+Sales Rep Information per Organization
+--------------------------------------
 
 .. begin 
 

@@ -1,7 +1,7 @@
 .. _configuration--commerce--design--theme--theme-settings--website:
 
-Configure Theme per Website
----------------------------
+Theme per Website
+-----------------
 
 .. begin_body
 

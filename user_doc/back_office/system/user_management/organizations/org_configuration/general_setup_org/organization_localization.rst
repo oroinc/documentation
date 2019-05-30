@@ -1,7 +1,7 @@
 .. _config_guide--localization--organization-localization:
 
-Customize Localization Settings per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Localization Settings per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. begin
 

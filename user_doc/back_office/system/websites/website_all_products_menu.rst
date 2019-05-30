@@ -4,7 +4,7 @@
 Add All Products Page to Frontend Menus per Website
 ---------------------------------------------------
 
-.. begin_all_products
+.. hint:: This topic is part of :ref:`Concept Guides: All Products <sys--conf--commerce--catalog--special-pages>`, where you can check out a sample of adding All Products page to the storefront and examine other All Products configuration options.
 
 To add the All Products page to the frontend menu of a particular website:
 
@@ -25,9 +25,6 @@ To add the All Products page to the frontend menu of a particular website:
 #. Click **Save** on the top right of the page.
 
 The All Products page should now become available as part of the selected menu on the website level.
-
-.. finish_all_products
-
 
 .. include:: /user_doc/img/buttons/include_images.rst
    :start-after: begin

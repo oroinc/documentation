@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--customer--contact-request-website:
 
-Configure Contact Us Page per Website
--------------------------------------
+Contact Us Page per Website
+---------------------------
 
 .. begin
 

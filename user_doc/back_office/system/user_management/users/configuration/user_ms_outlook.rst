@@ -1,8 +1,8 @@
 .. _doc-my-user-configuration-integrations:
 .. _doc-my-user-configuration-msoutlook:
 
-Configure MS Outlook Settings per User
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MS Outlook Settings per User
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin_my_outlook
 

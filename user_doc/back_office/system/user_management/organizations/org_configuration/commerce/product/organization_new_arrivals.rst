@@ -1,8 +1,8 @@
 .. _sys--users--organization--commerce--products--new-arrivals:
 .. _sys--commerce--product--new-arrivals-block-organization:
 
-Enable Product Promotions per Organization
-------------------------------------------
+Product Promotions per Organization
+-----------------------------------
 
 .. begin
 

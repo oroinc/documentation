@@ -1,7 +1,7 @@
 .. _sys--commerce--orders--previously-purchased--website:
 
-Enable and Set Up Previously Purchased Products per Website
------------------------------------------------------------
+Purchase History per Website
+----------------------------
 
 .. begin
 

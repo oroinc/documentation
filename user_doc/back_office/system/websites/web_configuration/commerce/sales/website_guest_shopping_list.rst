@@ -1,8 +1,8 @@
 .. _user-guide--system-configuration--commerce-sales-shopping-list-per-website:
 .. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action--website:
 
-Configure Guest Shopping Lists per Website
-------------------------------------------
+Guest Shopping Lists per Website
+---------------------------------
 
 .. begin
 

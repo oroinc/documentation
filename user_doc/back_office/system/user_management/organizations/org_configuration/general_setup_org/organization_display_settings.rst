@@ -1,6 +1,6 @@
 .. _configuration--general-setup--display-settings--organization:
 
-Display Settings for Organization
+Display Settings per Organization
 ---------------------------------
 
 .. begin_display_set_org

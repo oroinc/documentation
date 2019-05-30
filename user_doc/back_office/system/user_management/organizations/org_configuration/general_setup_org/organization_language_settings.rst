@@ -1,8 +1,8 @@
 
 .. _sys--config--sysconfig--general-setup--language-settings--organization:
 
-Customize language Settings per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Language Settings per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To define the default system language for a particular organization:
 

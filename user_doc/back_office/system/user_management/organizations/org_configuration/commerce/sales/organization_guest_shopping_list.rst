@@ -1,8 +1,8 @@
 .. _user-guide--system-configuration--commerce-sales-shopping-list-per-organization:
 .. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action--organization:
 
-Configure Guest Shopping Lists per Organization
------------------------------------------------
+Guest Shopping Lists per Organization
+-------------------------------------
 
 .. begin
 

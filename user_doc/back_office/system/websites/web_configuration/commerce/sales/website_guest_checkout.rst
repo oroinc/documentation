@@ -1,10 +1,9 @@
 .. _user-guide--system-configuration--commerce-sales-checkout-website:
 
-Configure Guest Checkout per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guest Checkout per Website
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
-
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.

@@ -1,7 +1,15 @@
-Edit a Frontend Menu
-^^^^^^^^^^^^^^^^^^^^
+.. _user-guide--system--menu--menu-frontend:
 
-.. start
+Edit a Frontend Menu
+====================
+
+A frontend menu may be multi-level like, and the child menu items are nested under parent menu items (e.g., **About**, **Customer Service**, **Privacy Policy**, and others are nested under **Information**).
+
+.. image:: /user_doc/img/system/frontend_menu/frontend_menu_2.png
+
+Menu items on the same level of hierarchy may be visually separated by a divider that looks like a horizontal line and helps you logically organize menu items. However, some menus do not support displaying dividers (on a particular level in the tree, or in general).
+
+.. image:: /user_doc/img/system/menus/user_menu.png
 
 To update the frontend menu contents, navigate to **System > Frontend Menus** in the main menu and click the menu name or the |IcView| View icon in the corresponding row of the frontend menu list.
 
@@ -10,7 +18,7 @@ To update the frontend menu contents, navigate to **System > Frontend Menus** in
 On the page that opens, the menu item tree is shown in the left panel. Center is reserved for the menu item configuration.
 
 Toggle the Frontend Menu Tree View
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 1. To minimize or maximize the left menu panel, click a double arrow on the top right of the panel.
 
@@ -33,7 +41,7 @@ Toggle the Frontend Menu Tree View
   .. image:: /user_doc/img/system/frontend_menu/d&dunder.png
 
 Add a Menu Item
-~~~~~~~~~~~~~~~
+---------------
 
 1. In the left panel, click a menu item which will be parent for the menu item that you create.
 
@@ -129,7 +137,7 @@ Add a Menu Item
     You need to reload the page to see the changes.
 
 Add a Divider
-~~~~~~~~~~~~~
+-------------
 
 1. In the left panel, click a menu item which will be parent for the menu divider that you create.
 
@@ -141,9 +149,8 @@ The created divider will appear as the last one on the list of children of the s
 
 .. note:: Some menus (or some menu levels) cannot display dividers. For example, if you add a divider to the first level of the main menu (**application_menu**), this divider will not be displayed.
 
-
 Toggle Item Visibility
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 1. **Hide a Menu Item** --- To hide the default menu items from the interface, click the necessary menu item in the left panel. Click **Hide** on the top right. Reload the page to see changes.
 

@@ -1,8 +1,8 @@
 .. _sys--websites--commerce--products--new-arrivals:
 .. _sys--commerce--product--new-arrivals-block-website:
 
-Enable Product Promotions per Website
--------------------------------------
+Product Promotions per Website
+------------------------------
 
 .. begin
 

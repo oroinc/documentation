@@ -1,7 +1,7 @@
 .. _org-outlook-settings:
 
-Configure Outlook Integration Settings per Organization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Outlook Integration Settings per Organization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. hint:: You can read more on this topic in :ref:`MS Outlook Integration <user-guide-synch-outlook>`.
 

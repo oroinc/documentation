@@ -1,7 +1,7 @@
 .. _user-guide--system-configuration--commerce-sales--quick-order-form--organization:
 
-Configure Guest Quick Order Form per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guest Quick Order Form per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin_quick_order_form
 

@@ -1,7 +1,7 @@
 .. _config-guide--landing-commerce--products--configurable-products--website:
 
-Customize Configurable Products Settings per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configurable Products per Website
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 

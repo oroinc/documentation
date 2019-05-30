@@ -21,8 +21,6 @@ To enable guest quotes:
 
    .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-   The following page is displayed:
-
    .. image:: /user_doc/img/system/config_commerce/sales/enable_guest_quote.png
       :alt: System configuration option for enabling guest quotes
 

@@ -29,7 +29,7 @@ Use the left-panel menu or the search bar above it to navigate the documentation
    :hidden:
    :includehidden:
    :titlesonly:
-   :maxdepth: 6
+   :maxdepth: 7
 
    concept_guides/index
    back_office/index

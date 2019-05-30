@@ -25,5 +25,7 @@ Learn more about website management from the following sections:
    manage
    host_config
    configure_price_lists
+   website_all_products_menu
+   website_frontend_menus
 
 

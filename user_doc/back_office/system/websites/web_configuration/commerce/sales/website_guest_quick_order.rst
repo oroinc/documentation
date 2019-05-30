@@ -1,7 +1,7 @@
 .. _user-guide--system-configuration--commerce-sales--quick-order-form--website:
 
-Configure Guest Quick Order Form per Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guest Quick Order Form per Website
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin_quick_order_form
 

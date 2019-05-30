@@ -1,8 +1,8 @@
 .. _sys--commerce--product--product-images--image-preview--organization:
 .. _sys--users--organization--commerce--products--gallery-slider:
 
-Configure Product Images per Organization
-------------------------------------------
+Product Images per Organization
+-------------------------------
 
 .. begin
 

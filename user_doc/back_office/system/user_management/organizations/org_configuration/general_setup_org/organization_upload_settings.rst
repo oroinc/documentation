@@ -1,7 +1,7 @@
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization:
 
-Configure Upload Settings per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Upload Settings per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 

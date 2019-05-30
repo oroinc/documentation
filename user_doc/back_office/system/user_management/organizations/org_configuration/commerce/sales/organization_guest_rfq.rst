@@ -1,7 +1,7 @@
 .. _user-guide--system-configuration--commerce-sales--rfq--organization:
 
-Configure Guest Request for Quote Submission per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guest Request for Quote Submission per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin_rfq
 

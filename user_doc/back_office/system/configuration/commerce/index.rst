@@ -322,6 +322,7 @@ In the Commerce Configuration guide, learn how to enable and set up the key OroC
 
 .. toctree::
    :titlesonly:
+   :hidden:
 
    customer/index
    guests/index

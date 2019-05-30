@@ -1,7 +1,7 @@
 .. _display-settings--website:
 
-Configure Display Settings per Website
---------------------------------------
+Display Settings per Website
+----------------------------
 
 To configure display settings for the particular website:
 

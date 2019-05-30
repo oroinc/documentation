@@ -1,7 +1,7 @@
 .. _config-guide--landing-commerce--products--configurable-products--organization:
 
-Customize Products Settings per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configurable Products per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 

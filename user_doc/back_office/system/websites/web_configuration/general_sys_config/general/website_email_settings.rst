@@ -1,7 +1,7 @@
 .. _admin-configuration-system-mailboxes-website:
 
-Configure Email Settings per Website
-====================================
+Email Settings per Website
+==========================
 
 .. hint:: Read more on this topic in :ref:`Emails <admin-guide-email-configuration>`.
 

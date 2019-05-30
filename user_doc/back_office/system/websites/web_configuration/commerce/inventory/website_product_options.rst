@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--inventory--product-options--website:
 
-Configure Product Options per Website
--------------------------------------
+Product Options per Website
+---------------------------
 
 .. begin
 

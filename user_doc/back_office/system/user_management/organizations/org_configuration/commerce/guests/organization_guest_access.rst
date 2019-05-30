@@ -1,8 +1,8 @@
 .. _guest-access-org:
 .. _sys--conf--commerce--guest-access--org:
 
-Enable Guest Website Access per Organization
---------------------------------------------
+Guest Website Access per Organization
+-------------------------------------
 
 .. hint:: Read more on this topic in :ref:`Guest Access <sys--conf--commerce--guest>`.
 

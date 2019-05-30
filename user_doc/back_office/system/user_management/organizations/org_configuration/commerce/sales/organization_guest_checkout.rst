@@ -1,7 +1,7 @@
 .. _user-guide--system-configuration--commerce-sales-organization:
 
-Configure Guest Checkout per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guest Checkout per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. begin
 

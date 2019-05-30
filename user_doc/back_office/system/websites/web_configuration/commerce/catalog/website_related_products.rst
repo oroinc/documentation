@@ -1,8 +1,8 @@
 .. _sys--websites--commerce--catalog--related-products:
 .. _sys--websites--commerce--catalog--upsell-products:
 
-Enable and Set Up Related Products per Website
-----------------------------------------------
+Related Products per Website
+----------------------------
 
 .. begin_related_products_body
 

@@ -2,8 +2,8 @@
 
 .. begin_org_currency
 
-Configure Currency per Organization
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Currency per Organization
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. important:: To enable a currency on the organization level, you should add it to the list of allowed currencies at the system level first. The organization-level configuration for base currency and display format has higher priority and overrides the system setting.
 

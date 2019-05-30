@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--inventory--product-options--organization:
 
-Configure Product Options per Organization
-------------------------------------------
+Product Options per Organization
+--------------------------------
 
 .. begin
 

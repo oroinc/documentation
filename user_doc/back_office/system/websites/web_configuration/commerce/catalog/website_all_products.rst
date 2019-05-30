@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--catalog--special-pages--website:
 
-Enable All Products Page per Website
-------------------------------------
+All Products Page per Website
+-----------------------------
 
 .. hint:: Read more on this topic in :ref:`Concept Guides: All Products <sys--conf--commerce--catalog--special-pages>`.
 

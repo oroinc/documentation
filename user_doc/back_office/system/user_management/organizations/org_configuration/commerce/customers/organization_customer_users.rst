@@ -1,7 +1,7 @@
 .. _system--user-mngm--organization--configuration--commerce--customers--customer-users:
 
-Configure Customer User Options Per Organization
-------------------------------------------------
+Customer Users Per Organization
+-------------------------------
 
 .. begin
 

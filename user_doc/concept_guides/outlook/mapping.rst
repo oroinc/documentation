@@ -3,7 +3,6 @@
 .. _outlook-task-mapping:
 .. _outlook-calendar-mapping:
 
-
 Mapping Rules Between Oro and Outlook
 -------------------------------------
 

@@ -1,7 +1,7 @@
 .. _configuration--guide--commerce--configuration--catalog--filters-sorters--website:
 
-Control Limiting Filters and Sorting Options per Website
---------------------------------------------------------
+Filters and Sorters per Website
+-------------------------------
 
 To configure limiting filters and sorting options per website:
 

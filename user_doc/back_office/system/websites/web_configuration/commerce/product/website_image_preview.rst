@@ -3,8 +3,8 @@
 .. _sys--commerce--product--product-images--main:
 .. _sys--websites--commerce--product--product-images:
 
-Configure Product Images per Website
-------------------------------------
+Product Images per Website
+--------------------------
 
 .. begin
 

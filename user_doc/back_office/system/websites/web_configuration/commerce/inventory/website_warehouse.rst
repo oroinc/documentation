@@ -1,7 +1,7 @@
 .. _warehouses-website:
 
-Enable Warehouses per Website
------------------------------
+Warehouses per Website
+----------------------
 
 .. note:: The ability to configure warehouses is only available in the Enterprise edition.
 

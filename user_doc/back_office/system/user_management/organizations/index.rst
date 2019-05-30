@@ -36,4 +36,6 @@ When creating a new record in the global organization, you first need to select 
 
    create
    manage
+   organization_all_products_menus
+   organization_frontend_menus
    org_configuration/index

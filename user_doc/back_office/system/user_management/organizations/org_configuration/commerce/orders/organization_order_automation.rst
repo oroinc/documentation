@@ -1,7 +1,7 @@
 .. _configuration--commerce--orders--order-automation--organization:
 
-Configure Order Automation per Organization
--------------------------------------------
+Order Automation per Organization
+---------------------------------
 
 .. begin_body
 

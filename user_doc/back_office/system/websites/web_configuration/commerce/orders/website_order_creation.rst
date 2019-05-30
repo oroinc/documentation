@@ -1,7 +1,7 @@
 .. _configuration--commerce--orders--order-creation--website:
 
-Configure Order Creation per Website
-------------------------------------
+Order Creation per Website
+--------------------------
 
 .. begin_body
 

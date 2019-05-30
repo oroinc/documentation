@@ -1,7 +1,7 @@
 .. _pricing-currency-website:
 .. _sys--websites--sysconfig--currency:
 
-Configure Currencies per Website
+Pricing (Currencies) per Website
 --------------------------------
 
 .. note:: The website level configuration has higher priority and overrides the global configuration settings.

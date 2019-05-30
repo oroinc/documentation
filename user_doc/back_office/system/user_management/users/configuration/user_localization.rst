@@ -1,8 +1,8 @@
 .. _config_guide--localization--user-localization:
 .. _doc-my-user-configuration-localization:
 
-Customize Localization Settings per User
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Localization Settings per User
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. begin
 

@@ -11,6 +11,8 @@ The following guide outlines the prerequisites for integration, describes the st
 
 .. note:: Please be aware that emails are not synced in the course of Outlook integration. To learn about email synchronization, please refer to :ref:`Email Configuration <user-guide-email-admin>` topic.
 
+.. hint:: Learn how to configure Outlook Integration in Oro system settings :ref:`globally <admin-configuration-ms-outlook-integration-settings--oro-side>` and per organization.
+
 .. contents:: :local:
    :depth: 2
 
@@ -65,13 +67,6 @@ Connect MS Outlook Add-in to Oro Instance
 .. include:: /user_doc/concept_guides/outlook/connect.rst
    :start-after: begin_connect_outlook
    :end-before: finish_connect_outlook
-
-Configure Outlook Integration in Oro
-------------------------------------
-
-.. include:: /user_doc/back_office/system/configuration/system/integrations/outlook_settings_oro.rst
-   :start-after: begin_outlook_integration_oro
-   :end-before: finish_outlook_integration_oro
 
 Create Leads, Opportunities, and Cases from Outlook
 ---------------------------------------------------

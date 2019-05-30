@@ -1,7 +1,7 @@
 .. _admin-configuration-ms-outlook-integration-settings--create:
 
-Create Leads, Opportunities and Cases from Outlook
---------------------------------------------------
+Create Eneities from Outlook
+----------------------------
 
 .. begin_create_lead_opp_case
 

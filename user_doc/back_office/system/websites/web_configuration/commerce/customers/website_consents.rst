@@ -1,7 +1,7 @@
 .. _admin--guide--commerce--configuration--customers--consents--enable--website:
 
-Enable Consents per Website
----------------------------
+Consents per Website
+--------------------
 
 .. start_enable_consents_website
 

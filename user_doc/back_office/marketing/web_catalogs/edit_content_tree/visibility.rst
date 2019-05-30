@@ -1,5 +1,3 @@
-:orphan:
-
 .. _user-guide--marketing--web-catalog--node--visibility:
 .. _user-guide--marketing--web-catalog--content--visibility:
 

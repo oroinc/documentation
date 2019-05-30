@@ -1,7 +1,7 @@
 .. _inventory-limitations-org:
 
-Set Inventory Quantity Limitations per Organization
----------------------------------------------------
+Inventory Quantity Limitations per Organization
+-----------------------------------------------
 
 To change the default inventory quantity limitations per organization:
 

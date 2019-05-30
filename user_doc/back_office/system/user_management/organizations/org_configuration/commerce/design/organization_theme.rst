@@ -1,7 +1,7 @@
 .. _configuration--commerce--design--theme--theme-settings--organization:
 
-Configure Theme per Organization
---------------------------------
+Theme per Organization
+----------------------
 
 .. begin_body
 

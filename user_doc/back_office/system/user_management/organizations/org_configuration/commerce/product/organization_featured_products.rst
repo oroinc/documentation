@@ -1,7 +1,7 @@
 .. _sys--users--organization--commerce--products--featured-products:
 
-Edit Segment for Featured Products per Organization
----------------------------------------------------
+Segment for Featured Products per Organization
+----------------------------------------------
 
 .. begin
 

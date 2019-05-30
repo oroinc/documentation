@@ -1,7 +1,7 @@
 .. _sys--conf--commerce--customer--contact-request-organization:
 
-Configure Contact Us Page per Organization
-------------------------------------------
+Contact Requests per Organization
+---------------------------------
 
 .. begin
 

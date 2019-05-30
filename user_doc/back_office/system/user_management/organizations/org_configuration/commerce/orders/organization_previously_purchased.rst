@@ -1,7 +1,7 @@
 .. _sys--commerce--orders--previously-purchased--org:
 
-Enable and Set Up Previously Purchased Products per Organization
-----------------------------------------------------------------
+Purchase History per Organization
+---------------------------------
 
 .. begin
 

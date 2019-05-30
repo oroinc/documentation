@@ -1,8 +1,8 @@
 .. _user-language-settings:
 .. _doc-my-user-configuration-language:
 
-Configure Language Settings per User
-====================================
+Language Settings per User
+==========================
 
 To define the default system language for a particular user:
 

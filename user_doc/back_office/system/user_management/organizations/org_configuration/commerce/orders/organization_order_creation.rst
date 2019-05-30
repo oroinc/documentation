@@ -1,7 +1,7 @@
 .. _configuration--commerce--orders--order-creation--organization:
 
-Configure Order Creation per Organization
------------------------------------------
+Order Creation per Organization
+-------------------------------
 
 .. begin_body
 

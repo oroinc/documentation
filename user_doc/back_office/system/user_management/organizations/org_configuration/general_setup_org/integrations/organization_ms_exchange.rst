@@ -1,7 +1,7 @@
 .. _admin-configuration-ms-exchange-org:
 
-Configure MS Exchange Integration Settings per Organization
-===========================================================
+MS Exchange Integration Settings per Organization
+=================================================
 
 To configure MS Exchange integration settings in your Oro application:
 

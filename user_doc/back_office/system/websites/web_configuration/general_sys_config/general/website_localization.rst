@@ -1,7 +1,7 @@
 .. _sys--websites--sysconfig--general-setup--localization:
 
-Customize Localization Settings per Website
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Localization Settings per Website
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. begin
 

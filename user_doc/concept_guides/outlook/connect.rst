@@ -1,8 +1,8 @@
 .. _admin-configuration-ms-outlook-integration-settings--connect:
 .. _doc-ms-outlook-add-in-set-up-outlook-side:
 
-Connect MS Outlook Add-in to Oro Instance
------------------------------------------
+Connect MS Outlook Add-in
+-------------------------
 
 .. begin_connect_outlook
 

@@ -48,6 +48,8 @@ Navigate to the parent company page by clicking on the company name next to the 
    export
    import
    customer_price_lists
+   customer_all_products_menus
+   customer_frontend_menus
 
 .. include:: /user_doc/img/buttons/include_images.rst
    :start-after: begin
