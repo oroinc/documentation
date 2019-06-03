@@ -107,8 +107,8 @@ For example, the migration class for the ``Hotel`` entity will look like this:
 .. code-block:: php
     :linenos:
 
-    // src/Acme/DemoBundle/Migraions/Schema/v1_0/Hotel.php
-    namespace Acme\DemoBundle\Migraions\Schema\v1_0;
+    // src/Acme/DemoBundle/Migrations/Schema/v1_0/Hotel.php
+    namespace Acme\DemoBundle\Migrations\Schema\v1_0;
 
     use Doctrine\DBAL\Schema\Schema;
     use Oro\Bundle\MigrationBundle\Migration\Migration;
@@ -740,7 +740,7 @@ Creating Extended Entities
    .. code-block:: php
        :linenos:
 
-       // src/Acme/DemoBundle/Migraions/Schema/v2_0;
+       // src/Acme/DemoBundle/Migrations/Schema/v2_0;
        namespace Acme\DemoBundle\Migrations\Schema\v2_0;
 
        use Doctrine\DBAL\Schema\Schema;
