@@ -12,8 +12,8 @@ While a product on a website can be either ``visible`` or ``hidden`` for a custo
 Whether the product is shown to the customer on the OroCommerce website depends on the following configuration:
 
 * `Visibility on a Website`_: Is the product visible to the customer (or customer group) on the website? Multiple websites with different visibility configured help split the content and settings for different target customer locations.
-* `Visibility to a Customer`_: Is the product/category visible in the storefront to the user's organization or business unit (customer)?
 * `Visibility to a Customer Group`_: Is the product/category visible to the group of customers in the storefront? Customers may be grouped based on authentication options or type of business that the customers are in.
+* `Visibility to a Customer`_: Is the product/category visible in the storefront to the user's organization or business unit (customer)?
 
 Additionally, there are default visibility settings that may be easily inherited in the above configuration:
 
@@ -100,7 +100,7 @@ The default visibility for a product or category is configured on the product's 
 
 The possible options are:
 
- * *(parent) category* -- Inherit configuration from the parent category.
+ * *(parent) category* -- Inherit configuration from the parent category. It means that the current product visibility settings equal the value defined for the **Visibility to All** field of the parent category.
  * *config* -- Inherit settings from the `System Configuration`_.
  * *hidden*
  * *visible*
@@ -120,7 +120,7 @@ Visibility to a Customer Group
 You can control if the product or category is shown to the customers who are members of a particular customer group. Use one of the following options:
 
  * *product* -- Inherit configuration from the product.
- * *category* -- Inherit configuration from the parent category.
+ * *category* -- Inherit configuration from the parent category. It means that the current product visibility settings equal the value defined for the **Visibility to Customer Groups** field of the parent category.
  * *hidden*
  * *visible*
 
