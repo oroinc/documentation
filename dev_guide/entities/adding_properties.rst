@@ -46,7 +46,7 @@ and should be extended from empty Extend class:
 
     use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
 
-    use AppBundle\Entity\Model\ExtendContact;
+    use AppBundle\Model\ExtendContact;
 
     /**
      * @ORM\Entity()
@@ -63,7 +63,7 @@ and should be extended from empty Extend class:
     // src/AppBundle/Model/ExtendContact.php
     namespace AppBundle\Model;
 
-    class Contact extends ExtendContact
+    class ExtendContact
     {
         /**
          * A skeleton method for the getter. You can add it to use autocomplete hints from the IDE.
@@ -81,7 +81,7 @@ and should be extended from empty Extend class:
          *
          * @param \DateTime $partnerSince
          */
-        public function getPartnerSince(\DateTime $partnerSince)
+        public function setPartnerSince(\DateTime $partnerSince)
         {
         }
     }
