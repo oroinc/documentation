@@ -21,6 +21,8 @@ You can use OpenVPN to create a VPN tunnel to the OroCloud. First, `install the 
 
 Once the connection is established, you can access your OroCloud environment via SSH connection to the host you were provided. Use your personalized user details to log on to the server.
 
+.. _sftp-access:
+
 Connect to the OroCloud Environment via SFTP
 --------------------------------------------
 
