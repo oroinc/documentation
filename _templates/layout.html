@@ -1,7 +1,7 @@
 {% extends "!layout.html" %}
 
 
-
+{#
 {%- macro customrelbar() %}
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>{{ _('Navigation') }}</h3>
@@ -23,7 +23,8 @@
       </ul>
     </div>
 {%- endmacro %}
-
+#}
+{#
 {% block document %}
 <div class="header">
     <div class="main-nav">
@@ -52,3 +53,4 @@
 
 {{ super() }}
 {% endblock %}
+#}
