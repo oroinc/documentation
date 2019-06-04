@@ -31,6 +31,8 @@ Oro Inc. Support Desk is the main point of contact for any questions and issues 
 
 For more information on using the support portal, see the :ref:`Support <cloud_support>` section.
 
+.. _ssl-certificate:
+
 Set up a Domain Name and SSL Certificate for OroCloud Environment
 -----------------------------------------------------------------
 
@@ -109,7 +111,9 @@ Once the installation is complete, the support team creates the first administra
 
 Customer support will inform you of the successful installation and remind the VPN details and the general guidance on the available maintenance tools.
 
-If you happen to require a system update or customization at a later time, you may either perform it manually using the :ref:`OroCloud maintenance tools <cloud_maintenance>` and :ref:`Oro application upgrade <upgrade>` documentation or you can request the necessary changes using the Oro Inc. Support Desk.
+If you happen to require a system update or customization at a later time, you may either perform it manually using the :ref:`OroCloud maintenance tools <cloud_maintenance>` and :ref:`Oro application upgrade <upgrade>` documentation, or you can request the necessary changes using the Oro Inc. Support Desk.
+
+.. _public-identity-management-ssh:
 
 Connect to Public Identity Management
 -------------------------------------
@@ -174,7 +178,7 @@ Reset your password and add an SSH key using Oro Identity Portal
 Connect to the OroCloud Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Add VPN config file from the email sent by OroCloud support to your VPN client configuration. Please refer to the Open VPN HowTo manual for more detailed instructions
+1. Add VPN config file from the email sent by OroCloud support to your :ref:`VPN client configuration <cloud_connect_vpn>`.
 
 2. Provide the username and the password specified in Oro Identity Portal.
 
@@ -185,8 +189,26 @@ Connect to the OroCloud Environment
 
 3. Use any SSH client of your choice to connect with your OroCloud environment IP or hostname. Your SSH username can be found in Oro Identity Portal; it is the same as the username for OpenVPN.
 
+Request Further Deployment and Configuration Services
+-----------------------------------------------------
+
+On top of deployment and configuration processes described in this topic, you may need to request our Support team to arrange implementation of other services and activities required before going live with your OroCloud solution. These activities may include:
+
+* Configuring basic authentication for your OroCloud instance
+* Configuring your back-office URL
+* Migrating your database
+* Installing software that does not come out-of-the-box
+* Whitelisting email domains (for staging environments)
+* Granting access to application logs
+* Configuring Message Queue
+* Configuring application resources
+* Enabling availability check monitoring
+
+Please refer to the :ref:`checklist of all OroCommerce Cloud application deployment and configuration activities <support-requests-further-app-deployment>` for task delivery estimates and information that you need to provide to the Support team to fulfil your requests. Please be aware that the checklist includes those activities that can only be completed by the Support Team, unless otherwise stated.
+
 **What’s Next**
 
 * :ref:`Connect OroCloud VPN <cloud_connect_vpn>`
 * The guidance on using :ref:`OroCloud Maintenance Tools <cloud_maintenance>` for deployment and maintenance
 * Technical :ref:`support <cloud_support>` service details (exclusions, priorities, SLA, etc).
+

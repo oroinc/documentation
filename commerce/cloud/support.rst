@@ -3,12 +3,12 @@
 .. _cloud_support:
 
 Support
--------
+=======
 
 .. contents:: :local:
 
 Support Desk
-~~~~~~~~~~~~
+------------
 
 OroCloud's customer support is available for Oro authorized partners and Enterprise Edition customers.
 
@@ -26,7 +26,7 @@ Oro support team continues to put in all possible efforts to provide an initial 
 * 4 hours for P1 issues
 
 Support Process
-~~~~~~~~~~~~~~~
+---------------
 
 Create a Support Request
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,7 +79,7 @@ Mark the Ticket as Resolved
 Once the support team has provided you with a solution, please mark the ticket as resolved by clicking the Resolved link on the top right of the ticket details.
 
 Support Request Priorities
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Your request may be assigned one of the following priorities:
 
@@ -94,7 +94,7 @@ Your request may be assigned one of the following priorities:
 * Enhancement Request (ER) is a recommendation for future product enhancement or modification to add official support and documentation for the unsupported or undocumented feature, or features that do not exist in the application.
 
 Support Request Statuses
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 Your request may fit one of the following statuses:
 
@@ -104,3 +104,49 @@ Your request may fit one of the following statuses:
 * **Waiting for customer** is a status for tickets that require some additional information form your side. This could be additional access, some specific question related to the request, or any other point where the ticket is on hold but not because of the support team.
 * **Resolved** status means that the problem or question has been resolved and the reporter has confirmed it may be closed or is no longer relevant. The ticket may also enter this status if no feedback on the advised solution or answer is received for a long time after several follow-ups.
 * **Reopened** is a status where a ticket has been reopened due to some additional questions or issues discovered on a request.
+
+.. _support-requests-further-app-deployment:
+
+Support Requests for Application Deployment and Configuration
+-------------------------------------------------------------
+
+The following checklist provides the typical activities that you need to perform before going live with your OroCommerce solution. **These activities are covered by the Oro support team for our clients**. To ensure their fastest completion, please submit a request to our support team with the description of each activity required for your project.
+
+.. csv-table::
+   :header: "Task Name", "Task Description", "Information Required from a Customer", "Delivery Estimates (Working Days)"
+   :widths: 30, 50, 50, 10
+
+   "**Environment(s) deployment (UAT, STAG, PROD)**","Deployment of an OroCloud environment for production, staging, or user-acceptance testing purposes. A number of available environments and their types depend on your Oro license. Also, you can always request deployment of additional environments (beyond what is covered by your license) for an additional cost","
+    * Customer country of origin
+    * Type of environment: (production, staging or UAT)
+    * Preferred domain in oro-cloud.com
+    * Company name
+    * License key
+    * Application version
+    * Link to a custom repository in SSH format
+    * Tag or branch to deploy from
+    * First and last name of admin contact
+    * Email of admin contact", "2-3"
+   "**Basic authentication configuration**", "Configuration of user access credentials for your OroCloud environment. **NOTE**: This configuration can be set up in the orocloud.yaml file without the Oro support team", "--","1-2"
+   "**Sub-domains configuration**", "Configuration of sub-domains for your OroCloud root domain", "The list of sub-domains that should be configured","1-2"
+   "**Environment(s) SSH access**", "SSH access to enable you to connect to your OroCloud environment using an SSH console. Read more at :ref:`Connect to Public Identity Management <public-identity-management-ssh>`", "
+    * User's first and last name
+    * Email
+    * Company","1-2"
+   "**SFTP set up**", "SFTP access to your OroCloud environment. Read more at :ref:`Connect to the OroCloud Environment via SFTP <sftp-access>`", "Preferable login(s)","1-2"
+   "**Back-office URL configuration**", "URL configuration for accessing OroCommerce Management Console on your OroCloud environment. **NOTE**: This configuration can be set up in the orocloud.yaml file without the Oro support team", "Required URL for backend","1-2"
+   "**Database migration**", "Migration of your PostgreSQL database to your OroCloud environment.", "PostgreSQL Database. Be aware that the codebase must match the database structure","1-2"
+   "**Installation of non-out-of-the-box (OOTB) software (MuleSoft, etc.)**", "Installation of third-party software that is not included in OroCommerce out-of-the-box", "Provide a business case of how this software is going to be used and interact with OroCommerce","Requires investigation"
+   "**Email domains whitelisting (for staging environments only)**", "Whitelisting trusted domains approved for sending you emails.", "List of approved email domains","1-2"
+   "**Obtaining SSL certificate/wildcard**", "Provision of an SSL certificate for your domain to keep sensitive information encrypted. As there are three options for setting up a domain name and SSL certificate for hosted environments, please review the available :ref:`in a dedicated topic <ssl-certificate>`", "Required information depends on the selected option","2-3"
+   "**DNS configuration**", "Configuration of DNS server to point your domain name to your IP address. **NOTE**: This configuration can be set up in the orocloud.yaml file without the Oro support team", "--","2-3"
+   "**Access to application logs**", "Granting access to application logs", "
+    * User's first and last name
+    * Email
+    * Company","1-2"
+   "**Message queue configuration**", "Сonfiguration of message queues for your OroCloud environment to ensure optimal system performance, for example by segregating messages on pricing calculation and reindexation into a separate message queue with its own consumers. Read more about how we configure message queues for local environments at :ref:`Configure Message Queue with RabbitMQ for Production <op-structure--mq--rabbitmq--configure>`", "Message queue configuration preferences","1-2"
+   "**Resources configuration**", "Configuration of the application based on the estimated volume of data and media files to ensure optimal system performance", "
+    * Expected data volume
+    * Overall number of consumers and queues
+    * The number of consumers for every queue","Requires investigation"
+   "**Availability-check monitoring request**", "Granting access to continuous system health-check for your OroCloud environment", "--","1"
