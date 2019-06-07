@@ -1,0 +1,9 @@
+acme:
+    collect_on_delivery:
+        settings:
+            labels.label: 'Labels'
+            short_labels.label: 'Short Labels'
+            transport.label: 'Collect on delivery'
+
+        channel_type.label: 'Collect on delivery'
+        payment_method_message: 'Pay on delivery'

@@ -1,0 +1,23 @@
+{
+    "name": "oro/commerce-documentation-examples",
+    "type": "symfony-bundle",
+    "description": "OroCommerce documentation examples",
+    "keywords": ["OroCommerce", "example", "documentation"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oro, Inc",
+            "homepage": "http://www.orocrm.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "ACME\\Bundle\\CollectOnDeliveryBundle\\": "payment_method/collect-on-delivery/" }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.1-dev"
+        }
+    }
+}
