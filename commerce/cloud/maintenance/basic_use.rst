@@ -51,6 +51,8 @@ Upgrade
 
 During the Oro application upgrade, the Oro cloud maintenance tool pulls the new version of the application source code from the repository (either from new tag or branch) and runs the `oro:platform:update` command to launch upgrade and any data migrations.
 
+.. note:: By default, `upgrade` commands are run with the `--skip-search-reindexation` option. However, you can use the `--schedule-search-reindexation` option if you require reindexation.
+
 .. warning:: It is recommended to create a backup before launching an upgrade. If the upgrade does not succeed, you can roll back the application to the previous state and sustain all the data and configuration.
 
 To upgrade an Oro application, you can use the following modes:
