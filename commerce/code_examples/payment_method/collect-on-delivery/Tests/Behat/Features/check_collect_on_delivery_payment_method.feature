@@ -53,17 +53,3 @@ Feature: Check CollectOnDelivery payment method
     And I should see "Total $13.00"
     And I click "Submit Order"
     Then I see the "Thank You" page with "Thank You For Your Purchase!" title
-
-#  Scenario: Capture order payment with Check/Money Order
-#    Given I operate as the Admin
-#    When I go to Sales/ Orders
-#    And I filter PO Number as is equal to "TEST_PO_NUMBER"
-#    And click View TEST_PO_NUMBER in grid
-#    And I should see "Payment Status Pending payment"
-#    And I should see following "Order Payment Transaction Grid" grid:
-#      | Payment Method  | Type    | Amount | Successful |
-#      | CheckMoneyOrder | Pending | $13.00 | Yes        |
-#    And I click "Capture" on first row in "Order Payment Transaction Grid" grid
-#    And I should see "The customer will be charged $13.00. Are you sure you want to continue?"
-#    And I click "Yes, Charge"
-#    Then I should see "The payment of $13.00 has been captured successfully." flash message
