@@ -10,6 +10,7 @@ Related Documentation
 
 * `Customize Product View Page <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/customize-pdp.md>`__
 * `Customize Product List Page <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/customize-plp.md>`__
+* `Customize Products SKU Validation <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/customize-products-sku-validation.md>`__
 * `Product Unit Formatting <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md>`__
 * `PHP Product Unit Label Formatter <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#php-product-unit-label-formatter>`__
 * `Two Step Product Creation <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/two-step-product-creation.md>`__
@@ -18,4 +19,5 @@ Related Documentation
 * `Related Items <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/related-items.md>`__
 * `Actions <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/actions.md>`__
 * `Product Variant Search <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-variant-search.md>`__
+
 
