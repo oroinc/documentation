@@ -42,3 +42,8 @@ Using Message Queue in Oro Application
    rabbit_mq_intro
    rabbit_mq
    rabbit_mq_in_production
+   backup_and_restore
+   divide_single_queue_to_separate_queues
+   rabbitmq_command_lines
+   elk_stack
+   logging
