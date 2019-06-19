@@ -52,6 +52,11 @@ Oro applications are compatible with most web servers with PHP support, but we r
 |                   | * xdebug.scream must be disabled                  |
 |                   | * xdebug.show_exception_trace must be disabled    |
 |                   | * xdebug.max_nesting_level above 100              |
+|                   |                                                   |
+|                   | By default, max_execution_time value equals 30    |
+|                   | seconds. In case of using the **Schema update**   |
+|                   | option, it is recommended to increase this value. |
+|                   |                                                   |
 +-------------------+---------------------------------------------------+
 | *PHP Extensions*  | * ctype                                           |
 |                   | * curl                                            |
