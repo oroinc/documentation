@@ -1,0 +1,56 @@
+<header id="header" class="page-header">
+  <div class="header-holder">
+    <strong class="logo">
+      <a href="{{ pathto(master_doc) }}">
+        <img src="file:\\\F:\OpenServer\domains\dev.master\documentation\_build\html\_images\logo-oro-docs.png" alt="ORO Documentation">
+      </a>
+    </strong>
+    <button type="button" class="mobile-nav-opener js-opener">
+      <span class="icon" aria-hidden="true"></span>
+      <span class="sr-text">Open navigation</span>
+    </button>
+    <div class="mobile-navigation-drop">
+      <div class="drop-panel">
+        <button type="button" class="mobile-nav-close js-opener">
+          <span class="icon" aria-hidden="true"></span>
+          <span class="sr-text">Close navigation</span>
+        </button>
+        <a href="{{ pathto(master_doc) }}" class="logo-drop" tabindex="-1">
+          <img src="https://oroinc.com/orocrm/wp-content/themes/orocrm/images/header/Oro-OLogo.png" alt="Oro Inc">
+        </a>
+      </div>
+      <div class="header-search">
+        {% include "searchbox.html" %}
+      </div>
+      <nav id="navigation" class="top-navigation">
+        <ul>
+          <li class="menu-item-home"><a href="#">USERS</a></li>
+          <li><a href="#">DEVELOPERS</a></li>
+          <li><a href="#">CLOUD</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">FORUM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('.js-opener').on('click', function () {
+      if($('body').hasClass('mobile-nav-active')){
+        $('body').removeClass('mobile-nav-active');
+      } else {
+        $('body').addClass('mobile-nav-active');
+        $('.mobile-navigation-drop').removeAttr('style');
+      }
+    });
+    if($(window).prop('innerWidth') > 979) {
+      $('body').removeClass('mobile-nav-active');
+    }
+    $(window).resize(function () {
+      if($(window).prop('innerWidth') > 979) {
+        $('body').removeClass('mobile-nav-active');
+      }
+      $('.mobile-navigation-drop').css({"transition" : "none"})
+    })
+  </script>
+</header>
