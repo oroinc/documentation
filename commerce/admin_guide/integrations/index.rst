@@ -13,6 +13,8 @@ OroCommerce supports the following pre-implemented integrations:
 
   - :ref:`Google Hangouts Voice and Video Calls <user-guide-hangouts>`: Enables you to make Hangouts voice or video calls from within your Oro application.
 
+  - :ref:`Google Tag Manager Integration <gtm-integration>`: Enables you to add tracking tags to your OroCommerce web store pages, collect information on customer behavior, purchases, product clicks, page views, and pass it to Google Analytics.
+
   - :ref:`LDAP <user-guide-ldap-integration>`: Enables uploading the existing user records into Oro applications and map LDAP user role identifiers to Oro application roles.
 
   - :ref:`Microsoft Outlook <config-guide--integrations--ms-outlook>`: Enables automatic bi-directional synchronization of the Oro application contacts, tasks and calendar events that are available to the users with their Microsoft Outlook applications. (Available as an extension for Enterprise edition only).

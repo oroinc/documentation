@@ -75,4 +75,5 @@ The following reference sections detail configuration settings on the specific c
    global
    org/index
    website
+   website_google
    user

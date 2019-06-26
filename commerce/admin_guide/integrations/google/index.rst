@@ -10,7 +10,7 @@ Learn more in the following topics:
 * :ref:`Configure Google Integration Settings <admin-configuration-integrations-google>`
 * :ref:`Configure Google Single Sign On <user-guide-google-single-sign-on>`
 * :ref:`Set Up Voice and Video Calls via Hangouts <user-guide-hangouts>`
-
+* :ref:`Configure Google Tag Manager (GTM) Integration <gtm-integration>`
 
 .. toctree::
    :hidden:
@@ -19,3 +19,4 @@ Learn more in the following topics:
    google_integration_settings
    google_single_sign_on
    hangouts
+   gtm/index
