@@ -20,6 +20,10 @@ More information about the options available for each of the two categories is a
 
 * **System Configuration**
 
+  * Integrations
+
+    * :ref:`Google Settings <website-google-settings>`
+
   * General Setup
 
     * :ref:`Website Localization <sys--websites--sysconfig--general-setup--localization>`

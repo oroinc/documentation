@@ -23,7 +23,7 @@ The following categories of settings are available for system configuration at o
 
   * Integrations
 
-    * :ref:`Google Settings <admin-configuration-integrations-google>`
+    * :ref:`Google Settings <organization-google-settings>`
     * :ref:`MS Outlook Settings <configuration--guide--system--configuration--integrations--org--ms-outlook>`
 
 * **Commerce**
