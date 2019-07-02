@@ -134,6 +134,8 @@ Developer's Guide
    :includehidden:
    :hidden:
 
+   install_upgrade/index
+
    user_guide/index
 
    user_guide_sales_tools/index

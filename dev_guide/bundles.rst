@@ -180,7 +180,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/dev_guide/installation`
+        * Book: :ref:`Installation <installation>`
 
 `DistributionBundle`_ (OroPlatform)
     Makes it possible to automatically register bundles in the application without requiring the
@@ -291,7 +291,7 @@ related articles is provided below the description.
 
         Read more about it in the following articles:
 
-        * Book: :doc:`/dev_guide/installation`
+        * Book: :ref:`Installation <installation>`
 
 `IntegrationBundle`_ (OroPlatform)
     Contains the abstracted logic to connect OroPlatform and OroCRM with third-party services
