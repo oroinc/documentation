@@ -1,3 +1,5 @@
+.. _dev_guide:
+
 Developer Guide
 ===============
 
@@ -10,7 +12,6 @@ This guide provides an overview of OroPlatform architecture, design and key feat
    :includehidden:
 
    getting_started_book/index
-   installation
    custom_application
    customization
    entities/index
