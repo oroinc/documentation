@@ -4,7 +4,7 @@
 Feature: Check CollectOnDelivery payment method
   In order to be able to use CollectOnDelivery payment method
   As an administrator
-  I want to be able to see actual payment status for Order when it's paid by Check/Money payment method
+  I want to be able to see actual payment status for Order when it's paid by CollectOnDelivery payment method
 
   Scenario: Create different window session
     Given sessions active:
@@ -24,7 +24,7 @@ Feature: Check CollectOnDelivery payment method
     And I save and close form
     Then I should see "Integration saved" flash message
 
-  Scenario: Create new Payment Rule for Check/Money Order integration
+  Scenario: Create new Payment Rule for CollectOnDelivery Order integration
     Given I operate as the Admin
     When I go to System/Payment Rules
     And I click "Create Payment Rule"

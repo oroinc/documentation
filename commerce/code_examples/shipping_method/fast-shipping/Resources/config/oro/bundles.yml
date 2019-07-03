@@ -1,0 +1,4 @@
+bundles:
+    # Set a priority higher than the priority of the ShippingBundle (i.e. 200) to ensure that all dependencies
+    # from the ShippingBundle are loaded before the dependent methods of your bundle.
+    - { name: ACME\Bundle\FastShippingBundle\ACMEFastShippingBundle, priority: 200 }
