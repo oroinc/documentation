@@ -1,0 +1,32 @@
+oro_behat_extension:
+    elements:
+        Fast Shipping Integration Form:
+            selector: 'form[name="oro_integration_channel_form"]'
+            class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+            options:
+                mapping:
+                    Label: 'oro_integration_channel_form[transport][labels][values][default]'
+                    Short Label: 'oro_integration_channel_form[transport][shortLabels][values][default]'
+
+        Fast Shipping Rule Form:
+            selector: "form[id^='oro_shipping_methods_configs_rule-uid']"
+            class: Oro\Bundle\TestFrameworkBundle\Behat\Element\Form
+            options:
+                mapping:
+                    Without Present Enabled: "oro_shipping_methods_configs_rule[methodConfigs][0][typeConfigs][0][enabled]"
+                    Without Present Price: "oro_shipping_methods_configs_rule[methodConfigs][0][typeConfigs][0][options][price]"
+                    With Present Enabled: "oro_shipping_methods_configs_rule[methodConfigs][0][typeConfigs][1][enabled]"
+                    With Present Price: "oro_shipping_methods_configs_rule[methodConfigs][0][typeConfigs][1][options][price]"
+    suites:
+        ACMEFastShippingBundle:
+            contexts:
+                - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+                - OroApplicationBundle::CommerceMainContext
+                - OroCheckoutBundle::FeatureContext
+                - OroConfigBundle::FeatureContext
+                - OroDataGridBundle::GridContext
+                - OroFormBundle::FormContext
+                - OroProductBundle::FeatureContext
+                - OroShoppingListBundle::ShoppingListContext
+            paths:
+                - '@ACMEFastShippingBundle/Tests/Behat/Features'
