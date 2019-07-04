@@ -150,22 +150,16 @@
               {% block navigation %}
               <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 {% block menu %}
-                {#
-                The singlehtml builder doesn't handle this toctree call when the
-                toctree is empty. Skip building this for now.
-                #}
-                {% if 'singlehtml' not in builder %}
-                {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
-                collapse=theme_collapse_navigation|tobool,
-                includehidden=theme_includehidden|tobool,
-                titles_only=theme_titles_only|tobool) %}
-                {% endif %}
-                {% if global_toc %}
-                {{ global_toc }}
-                {% else %}
-                <!-- Local TOC -->
-                <div class="local-toc">{{ toc }}</div>
-                {% endif %}
+                  {#
+                    The singlehtml builder doesn't handle this toctree call when the
+                    toctree is empty. Skip building this for now.
+                  #}
+                  {% if 'singlehtml' not in builder %}
+                    {{ toctree(maxdepth=theme_navigation_depth|int,
+                                                collapse=theme_collapse_navigation|tobool,
+                                                includehidden=theme_includehidden|tobool,
+                                                titles_only=theme_titles_only|tobool) }}
+                  {% endif %}
                 {% endblock %}
               </div>
               {% endblock %}
@@ -174,21 +168,18 @@
         </div>
       </div>
     </aside>
+    {% if display_toc %}
     <aside class="sidebar right-sidebar">
       <div class="sidebar-holder sticky-block sticky-desktop-only">
         <div class="scrollbar-inner">
           <nav class="contents-table">
             <strong class="contents-title">Contents</strong>
-            <ul>
-              <li><a href="#">Log in with an Authentication Code</a></li>
-              <li><a href="#">Log in with a Goolge Account</a></li>
-              <li><a href="#">Log out</a></li>
-            </ul>
+              {{ toc }}
           </nav>
         </div>
       </div>
     </aside>
-
+    {% endif %}
     <div class="main-column">
       {%- block content %}
       {% if theme_style_external_links|tobool %}

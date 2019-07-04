@@ -1,9 +1,55 @@
-{%- if builder != 'singlehtml' %}
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="{{ pathto('search') }}" method="get">
-    <input type="text" name="q" placeholder="{{ _('Search docs') }}" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
+{#
+    basic/searchbox.html
+    ~~~~~~~~~~~~~~~~~~~~
+
+    Sphinx sidebar template: quick search box.
+
+    :copyright: Copyright 2007-2016 by the Sphinx team, see AUTHORS.
+    :license: BSD, see LICENSE for details.
+#}
+{%- if pagename != "search" and builder != "singlehtml" %}
+<button id="search-opener" class="search-opener search-control" type="button" aria-expanded="false" aria-controls="searchbox">
+    <i class="fa fa-search search-complete__icon" aria-hidden="true"></i>
+    <span class="sr-text">Open search form</span>
+</button>
+<div id="searchbox" class="collapsed" aria-hidden="true" role="search">
+    <form class="search" action="{{ pathto('search') }}" method="get">
+        <div class="search-container">
+            <input class="search_text" type="text" placeholder="Search in documentation " name="q" />
+            <button type="submit" class="submit">
+                <i class="fa fa-search search-complete__icon" aria-hidden="true"></i>
+                <span class="sr-text">Search</span>
+            </button>
+            <button id="search-close" class="search-close search-control" type="button" aria-expanded="false" aria-controls="searchbox">
+                <i class="reset__icon" aria-hidden="true"></i>
+                <span class="sr-text">Hide search form</span>
+            </button>
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+    </form>
 </div>
+<!--<script type="text/javascript">$('#searchbox').show(0);</script>-->
+
+<script type="text/javascript">
+    $('.header-search .search-control').on('click', function () {
+        var searchForm = $('#searchbox');
+
+        if (searchForm.hasClass('collapsed')){
+            searchForm
+                    .attr('aria-hidden' , false)
+                    .removeClass('collapsed');
+            $('.header-search .search-control').attr('aria-expanded' , true);
+            $('.header-search .search_text').focus();
+        } else {
+            searchForm
+                    .removeAttr('aria-hidden' , true)
+                    .addClass('collapsed');
+            $('.header-search .search-control').attr('aria-expanded' , false);
+            $('.header-search .search_text').blur();
+        }
+    });
+</script>
+
+
 {%- endif %}
