@@ -343,7 +343,7 @@ a:focus {
 /*header panel with versions switcher*/
 .header-panel {
     position: relative;
-    background: #d38c0b url('../../_images/bg-documentation.png') no-repeat 50% 0;
+    background: #d38c0b url('../images/bg-documentation.png') no-repeat 50% 0;
     background-size: cover;
 }
 .header-panel-holder {
@@ -430,7 +430,7 @@ a:focus {
 
 /* Main content */
 .hero-banner {
-    background: #d9910c url('../../_images/bg-hero-banner.jpg') no-repeat 50% 0;
+    background: #d9910c url('../images/bg-hero-banner.jpg') no-repeat 50% 0;
     background-size: cover;
     text-align: center;
     color: #fff;
