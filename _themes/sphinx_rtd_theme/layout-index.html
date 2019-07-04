@@ -112,110 +112,131 @@
 
   {% include "header.html" %}
 
-  <div class="header-panel">
-    <div class="header-panel-holder">
-      <strong class="doc-title">Business Users Documentation Version</strong>
-      <div class="documentation-version-switcher">
-        <div class="version">3.1 version</div>
-        <ul class="documentation-version">
-          <li><a href="https://oroinc.com/b2b-ecommerce/doc/current">3.1 (current)</a></li>
-          <li><a href="https://oroinc.com/b2b-ecommerce/doc/1.6">1.6</a></li>
-        </ul>
+  <div class="hero-banner">
+    <div class="hero-banner-holder">
+      <div class="hero-banner-heading">
+        <h1>Welcome to Oro Documentation</h1>
+      </div>
+      <div class="hero-banner-content">
+        <p>Find everything you need to use and develop your Oro business application.</p>
+        <p>Explore comprehensive knowledge base and learn OroCommerce, OroCRM, and OroPlatform features and architecture.</p>
       </div>
     </div>
-    <script type="text/javascript">
-      // hover effect. it needs for mobile devices
-      $('.documentation-version-switcher')
-              .on('mouseenter', function () {
-                if ($(this).hasClass('hover')){
-                  $(this).removeClass('hover')
-                } else {
-                  $(this).addClass('hover')
-                }
-              })
-              .on('mouseleave', function () {
-                if ($(this).hasClass('hover')){
-                  $(this).removeClass('hover')
-                }
-              })
-    </script>
   </div>
 
-  <div class="three-columns-layout">
-    <aside class="sidebar left-sidebar">
-      <div class="sidebar-holder sticky-block">
-        <div class="scrollbar-inner">
-          <nav class="wy-nav-sid">
-            <div class="">
-              {% block navigation %}
-              <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                {% block menu %}
-                {#
-                The singlehtml builder doesn't handle this toctree call when the
-                toctree is empty. Skip building this for now.
-                #}
-                {% if 'singlehtml' not in builder %}
-                {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
-                collapse=theme_collapse_navigation|tobool,
-                includehidden=theme_includehidden|tobool,
-                titles_only=theme_titles_only|tobool) %}
-                {% endif %}
-                {% if global_toc %}
-                {{ global_toc }}
-                {% else %}
-                <!-- Local TOC -->
-                <div class="local-toc">{{ toc }}</div>
-                {% endif %}
-                {% endblock %}
+  <div class="section-container">
+    <div class="section-container-holder">
+      <ul class="three-columns-list">
+        <li>
+          <div class="main-section">
+            <div class="heading-box">
+              <div class="heading-icon" aria-hidden="true">
+                <img src="../../_build/html/_images/icon-business-users.png" alt="" role="presentation">
               </div>
-              {% endblock %}
+              <h2><span>Business Users</span></h2>
             </div>
-          </nav>
-        </div>
-      </div>
-    </aside>
-
-    <aside class="sidebar right-sidebar">
-      <div class="sidebar-holder sticky-block sticky-desktop-only">
-        <div class="scrollbar-inner">
-          <nav class="contents-table">
-            <strong class="contents-title">Contents</strong>
-            <ul>
-              <li><a href="#">Log in with an Authentication Code</a></li>
-              <li><a href="#">Log in with a Goolge Account</a></li>
-              <li><a href="#">Log out</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </aside>
-
-    <div class="main-column">
-      {%- block content %}
-      {% if theme_style_external_links|tobool %}
-      <div class="rst-content style-external-links">
-        {% else %}
-        <div class="rst-content">
-          {% endif %}
-          {% include "breadcrumbs.html" %}
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            {%- block document %}
-            <div itemprop="articleBody">
-              {% block body %}{% endblock %}
+            <div class="content-box">
+              <p>User documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and hsipping methods in the management console to exploring the checkout process in the ecommerce storefront.</p>
             </div>
-            {% if self.comments()|trim %}
-            <div class="articleComments">
-              {% block comments %}{% endblock %}
-            </div>
-            {% endif%}
           </div>
-          {%- endblock %}
-
-        </div>
-        {%- endblock %}
-      </div>
+          <div class="footer-box">
+            <ul>
+              <li><a href="#">Management Console</a></li>
+              <li><a href="#">Storefront Guide</a></li>
+              <li><a href="#">Concept Guides</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="main-section">
+            <div class="heading-box">
+              <div class="heading-icon" aria-hidden="true">
+                <img src="../../_build/html/_images/icon-developers.png" alt="" role="presentation">
+              </div>
+              <h2><span>Developers</span></h2>
+            </div>
+            <div class="content-box">
+              <p>Developer Documentation is intended for Oro developers and contains information about OroPlatform architecture, guidance on customization and extension of the existing features in Oro applications, and how-to articles about configuration and setup necessary for development or future use of the application.</p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li><a href="#">Backend Developer’s Guide</a></li>
+              <li><a href="#">Frontend Developer’s Guide</a></li>
+              <li><a href="#">Web Services API</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="main-section">
+            <div class="heading-box">
+              <div class="heading-icon" aria-hidden="true">
+                <img src="../../_build/html/_images/icon-cloud.png" alt="" role="presentation">
+              </div>
+              <h2><span>Cloud Administrators</span></h2>
+            </div>
+            <div class="content-box">
+              <p>Cloud Documentation is here to help you build and maintain the infrastructure for any business domain. Learn about OroCloud architecture and security, the typical process of OroCloud onboarding, using OroCloud maintenance tools, monitoring principles, as well as technical support service details.</p>
+            </div>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li><a href="#">Cloud Architecture</a></li>
+              <li><a href="#">orocloud-cli</a></li>
+              <li><a href="#">Security & Monitoring</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
+
+  <aside class="additional-info">
+    <div class="additional-info-holder">
+      <ul class="additional-list four-columns">
+        <li>
+          <h2 class="js-mobile-opener mobile-opener">Download <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+          <div class="js-mobile-slide mobile-slide">
+            <ul>
+              <li><a href="#">OroCommerce</a></li>
+              <li><a href="#">OroCRM</a></li>
+              <li><a href="#">OroPlatform</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <h2 class="js-mobile-opener mobile-opener">Media Library <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+          <div class="js-mobile-slide mobile-slide">
+            <ul>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Training Videos</a></li>
+              <li><a href="#">Features Demo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <h2 class="js-mobile-opener mobile-opener">Online Courses <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+          <div class="js-mobile-slide mobile-slide">
+            <ul>
+              <li><a href="#">Fundamental OroCommerce</a></li>
+              <li><a href="#">Getting Started with OroCRM</a></li>
+              <li><a href="#">Basic Sales Pipeline</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <h2 class="js-mobile-opener mobile-opener">Forums <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+          <div class="js-mobile-slide mobile-slide">
+            <ul>
+              <li><a href="#">Oro Community</a></li>
+              <li><a href="#">OroCommerce</a></li>
+              <li><a href="#">Recent Topics</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </aside>
 
   {% include "footer.html" %}
 
