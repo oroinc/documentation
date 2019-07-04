@@ -842,7 +842,7 @@ a:hover {
 }
 .btn-back-to-top.visible {
     opacity: 0.4;
-    z-index: 0;
+    z-index: 5;
 }
 .btn-back-to-top:hover,
 .btn-back-to-top:focus {
