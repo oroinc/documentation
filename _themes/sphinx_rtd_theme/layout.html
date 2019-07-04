@@ -174,7 +174,6 @@
         </div>
       </div>
     </aside>
-
     <aside class="sidebar right-sidebar">
       <div class="sidebar-holder sticky-block sticky-desktop-only">
         <div class="scrollbar-inner">
@@ -258,7 +257,7 @@
 
           blockSticky.each(function () {
             if (currentPosition <= scrollPos) {
-              if ($(this).outerHeight() < $('.three-columns-layout').height()) {
+              if (($(this).outerHeight() < $('.three-columns-layout').height()) && ($('.footer-container').offset().top > (scrollPos + $(window).height()))) {
                 $(this).parent()
                         .addClass('sticky-active')
                         .css({'height' : $(this).outerHeight()});

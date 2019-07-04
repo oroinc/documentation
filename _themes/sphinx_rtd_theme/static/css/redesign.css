@@ -99,6 +99,50 @@ a:hover {
 .rst-content .admonition img {
     max-width: 100%;
 }
+.rst-content pre.literal-block,
+.rst-content div[class^='highlight'] {
+    border: solid #df9026;
+    background: #f5f5f5;
+    border-width: 0 0 0 3px;
+    padding: 15px 0;
+}
+.rst-content pre.literal-block,
+.rst-content div[class^='highlight'] pre,
+.rst-content .linenodiv pre {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 13px;
+}
+.rst-content .linenodiv pre {
+    color: #9a9a9a;
+    border-right: 1px solid #a8a8a8;
+}
+.rst-content .code pre {
+    color: #252525;
+}
+.highlight {
+    background: #f5f5f5;
+}
+.highlight .k {
+    color: #d96600;
+}
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .no,
+.highlight .nd,
+.highlight .ni,
+.highlight .ne,
+.highlight .nf,
+.highlight .nl,
+.highlight .nn,
+.highlight .nt,
+.highlight .nv{
+    color: #252525;
+}
+.highlight .sd {
+    color: #252525;
+}
 .headerlink {
     text-decoration: none;
     color: #ccc;
