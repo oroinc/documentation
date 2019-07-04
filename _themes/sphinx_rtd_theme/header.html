@@ -2,7 +2,7 @@
   <div class="header-holder">
     <strong class="logo">
       <a href="{{ pathto(master_doc) }}">
-        <img width="137" src="file:\\\F:\OpenServer\domains\dev.master\documentation\_build\html\_images\Oro-Docs-logo.svg" alt="ORO Documentation">
+        <img width="137" src="{{ pathto('_static/images/Oro-Docs-logo.svg', 1) }}" alt="ORO Documentation">
       </a>
     </strong>
     <button type="button" class="mobile-nav-opener js-opener">
@@ -16,7 +16,7 @@
           <span class="sr-text">Close navigation</span>
         </button>
         <a href="{{ pathto(master_doc) }}" class="logo-drop" tabindex="-1">
-          <img src="https://oroinc.com/orocrm/wp-content/themes/orocrm/images/header/Oro-OLogo.png" alt="Oro Inc">
+          <img src="{{ pathto('_static/images/Oro-OLogo.png', 1) }}" alt="Oro Inc">
         </a>
       </div>
       <div class="header-search">
