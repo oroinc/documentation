@@ -41,9 +41,18 @@ a {
     color: #243f90;
     text-decoration: underline;
 }
-a:hover {
+a:hover,
+a:focus {
     text-decoration: none;
     color: #df9026;
+}
+.rst-content ul a {
+    text-decoration: none;
+    color: #df9026;
+}
+.rst-content ul a:hover,
+.rst-content ul a:focus {
+    color: #243f90;
 }
 .rst-content .toc-backref {
     color: #252525;
@@ -733,20 +742,24 @@ a:hover {
     margin: 0;
     text-align: center;
     width: 15px;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    color: #000;
 }
 .wy-menu li.on a span.toctree-expand:before,
 .wy-menu li.current > a span.toctree-expand:before {
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14px !important;
+    line-height: 20px !important;
 }
 .wy-menu li span.toctree-expand:before {
     content: '+';
 }
 .wy-menu li.current > a span.toctree-expand:before {
     content: '-';
+}
+.wy-menu li.toctree-l3 > a span.toctree-expand{
+    left: -8px;
 }
 .contents-table {
     padding: 8px 4px;

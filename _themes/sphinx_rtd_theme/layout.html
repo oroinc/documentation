@@ -220,13 +220,11 @@
 
   {% include "versions.html" %}
 
-  <!--
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
       });
   </script>
-  -->
 
   <script type="text/javascript">
     stickyBlock();
@@ -260,7 +258,7 @@
               if (($(this).outerHeight() < $('.three-columns-layout').height()) && ($('.footer-container').offset().top > (scrollPos + $(window).height()))) {
                 $(this).parent()
                         .addClass('sticky-active')
-                        .css({'height' : $(this).outerHeight()});
+                        .css({'min-height' : $(this).outerHeight()});
               }
             } else {
               $(this).parent().removeClass('sticky-active');
