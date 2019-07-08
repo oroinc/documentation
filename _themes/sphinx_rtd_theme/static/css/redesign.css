@@ -52,7 +52,7 @@ a:focus {
 }
 .rst-content ul a:hover,
 .rst-content ul a:focus {
-    color: #243f90;
+    color: #252525;
 }
 .rst-content .toc-backref {
     color: #252525;
@@ -538,6 +538,10 @@ a:focus {
     color: #b84926;
     text-decoration: none;
 }
+.three-columns-list a:hover,
+.three-columns-list a:focus {
+    color: #252525;
+}
 .three-columns-list .footer-box ul {
     margin: 0;
     list-style: none;
@@ -602,6 +606,10 @@ a:focus {
 .additional-list a {
     color: #b84926;
     text-decoration: none;
+}
+.additional-list a:hover,
+.additional-list a:focus {
+    color: #252525;
 }
 .three-columns-layout {
     margin: 0 auto;
@@ -754,9 +762,11 @@ a:focus {
 }
 .wy-menu li span.toctree-expand:before {
     content: '+';
+    color: #000;
 }
 .wy-menu li.current > a span.toctree-expand:before {
     content: '-';
+    color: #000;
 }
 .wy-menu li.toctree-l3 > a span.toctree-expand{
     left: -8px;
@@ -781,7 +791,7 @@ a:focus {
 }
 .contents-table ul a:hover,
 .contents-table ul a:focus {
-    color: #243f90;
+    color: #252525;
 }
 .breadcrumbs {
     margin: 0 0 30px;
@@ -807,7 +817,7 @@ a:focus {
 }
 .wy-breadcrumbs li a:hover,
 .wy-breadcrumbs li a:focus {
-    color: #243f90;
+    color: #252525;
 }
 
 /* Footer */
@@ -901,8 +911,8 @@ a:focus {
     opacity: 0.4;
     z-index: 5;
 }
-.btn-back-to-top:hover,
-.btn-back-to-top:focus {
+.btn-back-to-top.visible:hover,
+.btn-back-to-top.visible:focus {
     opacity: 0.8;
 }
 
