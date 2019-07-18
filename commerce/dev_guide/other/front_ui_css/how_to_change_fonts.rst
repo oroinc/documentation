@@ -29,35 +29,39 @@ To update fonts, merge ``$theme-fonts`` with your ``$theme-custom-fonts``.
 
 .. code:: scss
 
-    $theme-custom-fonts: (
-        'main': (
-            'family': 'Lato',
-             'variants': (
-                 (
-                     'path': '#{$global-url}/app/default/fonts/lato/lato-regular-webfont',
-                     'weight': 400,
-                     'style': normal
-                 ),
-                 (
-                  'path': '#{$global-url}/app/default/fonts/lato/lato-bold-webfont',
-                  'weight': 700,
-                  'style': normal
-                 )
-             ),
-        ),
-        'secondary': (
-            'family': 'Roboto',
+      $theme-custom-fonts: (
+       'main': (
+           'family': 'Lato',
             'variants': (
                 (
-                    'path': '#{$global-url}/app/default/fonts/roboto/roboto-regular-webfont',
-                    'weight': 700,
+                    'path': '#{$global-url}/app/default/fonts/lato/lato-regular-webfont',
+                    'weight': 400,
                     'style': normal
+                ),
+                (
+                 'path': '#{$global-url}/app/default/fonts/lato/lato-bold-webfont',
+                 'weight': 700,
+                 'style': normal
                 )
-            )
-        )
-    );
+            ),
+            'formats': ('woff2', 'woff', 'ttf', 'eot', 'svg') // Add only needed formats
+       ),
+       'secondary': (
+           'family': 'Roboto',
+           'variants': (
+               (
+                   'path': '#{$global-url}/app/default/fonts/roboto/roboto-regular-webfont',
+                   'weight': 700,
+                   'style': normal
+               )
+           ),
+           'formats': ('woff2', 'woff', 'ttf', 'eot', 'svg') // Add only needed formats
+       )
+   );
 
-    $theme-fonts: map_merge($theme-fonts, $theme-custom-fonts);
+   $theme-fonts: map_merge($theme-fonts, $theme-custom-fonts);
+
+.. note:: The 'formats' option enables you to use selected font formats required for your customization.
 
 Disable Fonts without Overriding
 --------------------------------
@@ -69,43 +73,47 @@ To disable all Oro fonts without overriding them with yours:
 
     .. code:: scss
 
-        $theme-fonts: ();
+       $theme-fonts: ();
 
-        // Using font-face
-        @include font-face($font-family, $file-path, $font-weight, $font-style);
-
-        // Using use-font-face
-        $your-fonts: (
-            'main': (
-                'family': '...',
-                 'variants': (
-                     (
-                         'path': '..',
-                         'weight': normal,
-                         'style': normal
-                     ),
-                     (
-                      'path': '...',
-                      'weight': 700,
-                      'style': normal
-                     )
-                 ),
-            ),
-            'secondary': (
-                'family': '...',
+       // Using font-face
+       @include font-face($font-family, $file-path, $font-weight, $font-style);
+       
+       // Using use-font-face
+       $your-fonts: (
+           'main': (
+               'family': '...',
                 'variants': (
                     (
-                        'path': '...',
+                        'path': '..',
                         'weight': normal,
                         'style': normal
+                    ),
+                    (
+                     'path': '...',
+                     'weight': 700,
+                     'style': normal
                     )
-                )
-            )
-        );
+                ),
+                'formats': ('woff', 'woff2')
+           ),
+           'secondary': (
+               'family': '...',
+               'variants': (
+                   (
+                       'path': '...',
+                       'weight': normal,
+                       'style': normal
+                   )
+               ),
+               'formats': ('woff2', 'woff', 'ttf', 'eot', 'svg') // Add only needed formats
+           )
+       );
+       
+       @include use-font-face($your-fonts);
 
-        @include use-font-face($your-fonts);
+.. note:: @mixin ``use-font-face`` call dynamically ``font-face`` with ``$your-fonts``.
 
-    @mixin ``use-font-face`` call dynamically ``font-face`` with ``$your-fonts``.
+.. note:: The 'formats' option enables you to use selected font formats required for your customization.
 
 Change Font Size
 ----------------
@@ -133,6 +141,21 @@ To change the font size and line-height, override the following variables:
 
                 .. code-block:: bash
 
-                    php bin/console cache:clear
                     php bin/console assets:install --symlink
                     php bin/console oro:assets:build
+
+Enable Google Fonts
+-------------------
+
+You can use Google fonts from CDN. Please add import where necessary and webpack will move this import to the top of the CSS file.
+
+In all cases above you have to run the following console commands to publish the changes:
+
+.. code:: scss
+
+   @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+   // Reset fonts families
+   $base-font: 'Roboto', Helvetica, Arial, sans-serif;
+   $btn-font-family: 'Oswald', Helvetica, Arial, sans-serif;
+
