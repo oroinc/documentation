@@ -59,7 +59,7 @@ SSL Authentication:
 
 You will likely need the `Shield <https://www.elastic.co/products/shield>`_ installed in the Elasticsearch for the Cluster SSL authentication to work.
 
-For general information on configuring SSL certificates, see the `configuration <https://www.elastic.co/guide/en/Elasticsearch/client/php-api/current/_configuration.html>`_ section in the Elasticsearch documentation.
+For general information on configuring SSL certificates, see the `configuration <https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/configuration.html>`_ section in the Elasticsearch documentation.
 
 If you need more specific Elasticsearch configuration, see the following chapters.
 
@@ -121,7 +121,7 @@ All settings required for the creation of an Elasticsearch index are defined in 
                                    type:   string
 
 For more information about index configuration, see the
-`Elasticsearch API documentation <https://www.elastic.co/guide/en/Elasticsearch/client/php-api/current/_index_management_operations.html>`_.
+`Elasticsearch API documentation <https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/index_management.html>`_.
 
 Per-request Client Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
