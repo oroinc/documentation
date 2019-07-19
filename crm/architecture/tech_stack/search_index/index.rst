@@ -262,18 +262,18 @@ Pay attention to the following facts:
 Search Request
 --------------
 
-To perform search request developer has to build a query to search index. There are two representations of search query - string represenation and object represenation.
+To perform search request developer has to build a query to search index. There are two representations of search query - string representation and object representation.
 
 String Representation
 ^^^^^^^^^^^^^^^^^^^^^
 
-String representation is pretty similar to standard SQL query - this string may contain keywords select, from, where, aggregate, order_by, offset and max_results. String represenation is used mostly at the API where user can request specific data with specific condition. During the processing of string representation it is converted to object representation.
+String representation is pretty similar to standard SQL query - this string may contain keywords select, from, where, aggregate, order_by, offset and max_results. String representation is used mostly at the API where user can request specific data with specific condition. During the processing of string representation it is converted to object representation.
 
 Object Representation
 ^^^^^^^^^^^^^^^^^^^^^
 
 Object representation has two levels - low and high.
-**Low-level object** (Oro\Bundle\SearchBundle\Query\Query, sometime called search query builder) represents a query and has parts similar to string represenation (select, where etc). Low-level query is not aware about specific search engine. It is used by all search engines as a main query representation. Low-level object is in fact a `Data transfer object <https://en.wikipedia.org/wiki/Data_transfer_object>`_.
+**Low-level object** (Oro\Bundle\SearchBundle\Query\Query, sometime called search query builder) represents a query and has parts similar to string representation (select, where etc). Low-level query is not aware about specific search engine. It is used by all search engines as a main query representation. Low-level object is in fact a `Data transfer object <https://en.wikipedia.org/wiki/Data_transfer_object>`_.
 **High-level object** (implementation of Oro\Bundle\SearchBundle\Query\SearchQueryInterface) is used to hide search engine specific logic from a developer. It embeds low-level object and proxies most of the calls. High-level objects are created by the query factory (implementation of Oro\Bundle\SearchBundle\Query\Factory\QueryFactoryInterface). Each index type has its own implementation of high-level object which encapsulates the way this query has to be executed, and its own implementation of query factory responsible for creation of high-level object. High-level object is in fact a `Facade <https://en.wikipedia.org/wiki/Facade_pattern>`_.
 Following diagram demonstrates connection between low-level object, high-level object, query factory and search engine:
 
