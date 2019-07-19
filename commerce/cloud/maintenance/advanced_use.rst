@@ -273,3 +273,37 @@ Please use the following conventions to design your `sanitize.update_*` strategy
   * `email` — Replaces the email with the sanitized version of the email. When the `sanitize.custom_email_domain` configuration parameter is provided in the `deployment.yml` or `orocloud.yaml` files, the email strategy replaces the real email domain with the custom one provided as `sanitize.custom_email_domain`. If the custom domain is not provided, the sanitized email will be generated randomly. For example, `example@example.com`.
   * `date` — Replaces the date values with the current date and time.
   * `attachment` — Replaces the attachment file content with a dummy blank image.
+
+Elasticsearch Synonyms Configuration
+------------------------------------
+
+To configure synonyms in Elasticsearch service, use the following field in orocloud.yaml:
+
+.. code-block:: none
+   :linenos:
+
+    orocloud_options:
+      elasticsearch:
+        synonyms:
+          'index_name1':
+            - 'foo, bar, baz'
+            - 'spam, eggs, meal'
+            - 'null, void'
+          'index_name2':
+            - 'Alice, Bob, Dave, John'
+
+You can use separate synonym lists for each index, or use '*' as index name in order to apply the same synonyms list to all indices.
+
+.. code-block:: none
+   :linenos:
+
+    orocloud_options:
+      elasticsearch:
+        synonyms:
+          '*':
+            - 'foo, bar, baz'
+            - 'spam, eggs, meal'
+            - 'null, void'
+            - 'Alice, Bob, Dave, John'
+
+.. note:: Please keep in mind that synonyms configuration will be not applied immediately. All changes made in orocloud.yaml require up to 40 minutes to apply. More details for synonyms usage may be found in `official Elasticsearch documentation <https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html>`__.
