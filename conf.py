@@ -162,7 +162,7 @@ html_theme_options = {
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {
-#   '**': ['globaltoc.html'],
+#   '**': ['localtoc.html', 'globaltoc.html'],
 #   'using/windows': ['windowssidebar.html'],
 #}
 # hidden for local preview: , 'relations.html', 'searchbox.html'
@@ -319,4 +319,3 @@ epub_copyright = u'2017, OroTeam'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
-

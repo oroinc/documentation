@@ -29,7 +29,24 @@
         <input type="hidden" name="area" value="default" />
     </form>
 </div>
-<!--<script type="text/javascript">$('#searchbox').show(0);</script>-->
+
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+    docsearch({
+        // Your apiKey and indexName will be given to you once
+        // we create your config. The appId value is missing in the first
+        // version of this example and in the algolia community doc
+        // until today (5th march of 2019).
+        appId: 'BH4D9OD16A',
+        apiKey: 'e3c892f37816d9486c2ed56fca7a67bb',
+        indexName: 'oroinc',
+        // Replace inputSelector with a CSS selector
+        // matching your search input
+        inputSelector: '#searchbox input[type=text]',
+        // Set debug to true if you want to inspect the dropdown
+        debug: false
+    });
+</script>
 
 <script type="text/javascript">
     $('.header-search .search-control').on('click', function () {
