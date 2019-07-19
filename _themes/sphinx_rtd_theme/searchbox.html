@@ -13,13 +13,14 @@
     <span class="sr-text">Open search form</span>
 </button>
 <div id="searchbox" class="collapsed" aria-hidden="true" role="search">
-    <form class="search" action="{{ pathto('search') }}" method="get">
+<!--    <form class="search" action="{{ pathto('search') }}" method="get">-->
+    <form class="search">
         <div class="search-container">
             <input class="search_text" type="text" placeholder="Search in documentation " name="q" />
-            <button type="submit" class="submit">
-                <i class="fa fa-search search-complete__icon" aria-hidden="true"></i>
-                <span class="sr-text">Search</span>
-            </button>
+<!--            <button type="submit" class="submit">-->
+<!--                <i class="fa fa-search search-complete__icon" aria-hidden="true"></i>-->
+<!--                <span class="sr-text">Search</span>-->
+<!--            </button>-->
             <button id="search-close" class="search-close search-control" type="button" aria-expanded="false" aria-controls="searchbox">
                 <i class="reset__icon" aria-hidden="true"></i>
                 <span class="sr-text">Hide search form</span>
@@ -64,6 +65,13 @@
                     .addClass('collapsed');
             $('.header-search .search-control').attr('aria-expanded' , false);
             $('.header-search .search_text').blur();
+        }
+    });
+
+    $('.header-search .search_text').keypress(function(e) {
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            return false;
         }
     });
 </script>
