@@ -23,9 +23,9 @@ By default, ElasticSearchBundle supports Elasticsearch engine version 2.*. You c
 Required Plugins
 ^^^^^^^^^^^^^^^^
 
-* `Delete By Query <https://www.elastic.co/guide/en/Elasticsearch/plugins/2.4/plugins-delete-by-query.html>`_
+* `Delete By Query <https://www.elastic.co/guide/en/elasticsearch/plugins/2.4/plugins-delete-by-query.html>`_
 
-   To provide a possibility to refresh types, OroElasticSearchBundle relies on the Delete By Query functionality, and it is required to install a plugin to support it. Please, follow the installation steps in the `Elasticsearch official documentation <https://www.elastic.co/guide/en/Elasticsearch/plugins/2.4/plugins-delete-by-query.html#_installation>`_.
+   To provide a possibility to refresh types, OroElasticSearchBundle relies on the Delete By Query functionality, and it is required to install a plugin to support it. Please, follow the installation steps in the `Elasticsearch official documentation <https://www.elastic.co/guide/en/elasticsearch/plugins/2.4/plugins-delete-by-query.html#_installation>`_.
 
 Configuration
 -------------
@@ -66,7 +66,7 @@ SSL Authentication:
 
 You will likely need the `Shield <https://www.elastic.co/products/shield>`_ installed in the Elasticsearch for the Cluster SSL authentication to work.
 
-For general information on configuring SSL certificates, see the `configuration <https://www.elastic.co/guide/en/Elasticsearch/client/php-api/current/_configuration.html>`_ section in the Elasticsearch documentation.
+For general information on configuring SSL certificates, see the `configuration <https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/configuration.html>`_ section in the Elasticsearch documentation.
 
 If you need more specific Elasticsearch configuration, see the following chapters.
 
@@ -127,7 +127,7 @@ All settings required for the creation of an Elasticsearch index are defined in 
                                    type:   string
 
 For more information about index configuration, see the
-`Elasticsearch API documentation <https://www.elastic.co/guide/en/Elasticsearch/client/php-api/current/_index_management_operations.html>`_.
+`Elasticsearch API documentation <https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/index_management.html>`_.
 
 Disable Environment Checks
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
