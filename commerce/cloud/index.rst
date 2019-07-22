@@ -13,6 +13,7 @@ OroCloud Guide
    :maxdepth: 1
 
    architecture
+   environments
    security
    monitoring
    onboarding
