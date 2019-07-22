@@ -16,7 +16,7 @@ To reach the workflow:
 1. Navigate to **System > Workflows** in the main menu.
 2. Click **RFQ Management Flow** to open the flow.
    
-On the RFQ Management Flow page, you can disable the workflow by clicking |IcDeactivate| **Deactivate** the workflow.
+On the RFQ Management Flow page, you can disable the workflow by clicking **Deactivate** the workflow.
 
 .. image:: /admin_guide/img/workflows/rfq/backoffice/rfq_management_flow_1.png
 

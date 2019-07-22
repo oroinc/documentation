@@ -213,7 +213,7 @@ The following page opens:
 
 .. image:: /admin_guide/img/display_settings/display_settings_websites.png
 
-4. Clear the **Use System** check box to change the system-wide setting.
+4. Clear the **Use Organization** check box to change the organization-wide setting.
 
 5. In the **Map Settings** section, select the value for **Enable Map Preview** defining whether to show the location on a map when a customer views an address in the storefront. This option does not affect maps in the management console.
 

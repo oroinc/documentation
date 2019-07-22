@@ -23,7 +23,7 @@ The following page opens:
 
    By default, the guest quick order form is disabled.
 
-   To enable it, clear *Use System* and select the *Enable Guest Quick Order Form* check box.
+   To enable it, clear *Use Organization* and select the *Enable Guest Quick Order Form* check box.
 
 5. Click **Save Settings**.
 

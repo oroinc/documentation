@@ -3,7 +3,7 @@
 Configure Theme per Website
 ---------------------------
 
-You can set the following theme-related options for the website to override global configuration:
+You can set the following theme-related options for the website to override organization configuration:
 
 1. Navigate to **System > Websites** in the main menu.
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.

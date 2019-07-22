@@ -16,7 +16,7 @@ To enable image preview per website:
 
 The following page opens.
 
-.. image:: /admin_guide/img/configuration/product/product_images/ImagePreviewWebsite.png
+.. image:: /admin_guide/img/configuration/product/product_images/ProductImagesPerWebsiteOptions.png
    :class: with-border
 
 4. When **Enable Image Preview on Product Listing** is enabled, clicking on the product image on the product listing page in the storefront will open a pop up image gallery, rather than the product page.
@@ -29,7 +29,7 @@ The following page opens.
     .. image:: /admin_guide/img/configuration/product/product_images/ImagePreviewDisabledWebsite.png
        :class: with-border
 
-    .. note:: When **Use System** checkbox is enabled, system settings are applied.
+    .. note:: When **Use Organization** checkbox is enabled, organization settings are applied.
 
 .. finish
 

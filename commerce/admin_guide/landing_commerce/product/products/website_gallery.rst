@@ -16,7 +16,7 @@ To configure whether to use popup or inline view for the image gallery per websi
 
 The following page opens:
 
-.. image:: /admin_guide/img/configuration/product/product_images/ImageGalleryWebsite.png
+.. image:: /admin_guide/img/configuration/product/product_images/ProductImagesPerWebsiteOptions.png
    :class: with-border
 
 4. When **Popup Gallery on Product View** is enabled, image gallery in the storefront will take the following form:
@@ -36,7 +36,7 @@ The following page opens:
 
    Flick through the pictures in the gallery by pressing < or > arrows without leaving the product page.
 
-   .. note:: When **Use System** checkbox is enabled, system settings are applied.
+   .. note:: When **Use Organization** checkbox is enabled, organization settings are applied.
 
 6. Click **Save Settings**.
 

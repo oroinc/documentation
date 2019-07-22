@@ -16,7 +16,7 @@ To update the product watermark settings per website:
 
 The following page opens.
 
-.. image:: /admin_guide/img/configuration/product/product_images/ProductImagesPerWebsite.png
+.. image:: /admin_guide/img/configuration/product/product_images/ProductImagesPerWebsiteOptions.png
    :class: with-border
 
 The following options are available:
@@ -25,15 +25,12 @@ The following options are available:
    * **Size** -- The size of the watermark in percentage compared to the whole image.
    * **Position** -- The watermark position on the image (e.g top left, top, top right, left, right, center, bottom left, bottom, and bottom right).
    
-   .. note:: If the **Use System** check box is selected, the system configuration is applied.
+   .. note:: If the **Use Organization** check box is selected, the organization configuration is applied.
    
 4. To customize any of these options:
 
-   a) Clear the **Use System** check box next to the option.
+   a) Clear the **Use Organization** check box next to the option.
    b) Enter the updated size or select the position from the list.
-
-   .. image:: /admin_guide/img/configuration/product/product_images/ProductImagesPerWebsiteOptions.png
-      :class: with-border
 
 5. Click **Save**.
 
@@ -41,3 +38,4 @@ The following options are available:
 
 .. include:: /img/buttons/include_images.rst
    :start-after: begin
+

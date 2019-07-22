@@ -9,7 +9,7 @@ In OroCommerce, you can configure available system settings on four :ref:`config
 
 On the website level, there is a number of options that you can configure specifically for the particular OroCommerce website, but which will not affect system-wide or organization-wide configuration.
 
-.. important:: Website-level configuration settings can fall back to global settings. For this, select the **Use System** check box next to the selected option. To go back to the default website-level settings, click **Reset** on the top right.
+.. important:: Website-level configuration settings can fall back to organization settings. For this, select the **Use Organization** check box next to the selected option. To go back to the default website-level settings, click **Reset** on the top right.
 
 Two categories of settings are available for configuration at the website level:
 
@@ -39,7 +39,7 @@ More information about the options available for each of the two categories is a
 
   * Customer
 
-    * :ref:`Contact Requests <user-guide-activities-requests>`
+    * :ref:`Contact Requests <sys--conf--commerce--customer--contact-request-website>`
     * :ref:`Customer Users <system--website--configuration--commerce--customers--customer-users>`
 
   * :ref:`Guests <sys--conf--commerce--guest>`
