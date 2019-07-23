@@ -21,10 +21,6 @@ To add a new simple product and make it available in the master catalog (for int
 5. Place the product under the necessary category in the master catalog by clicking on the category. Use the search to limit the list of categories.
 
 6. Click **Continue**.
-
-|
-   The product details page appears.
-
 7. In the **General** section:
 
    a) Enter the product SKU, name, description that will appear on the product view, and a short description that best positions the product for your target audience and will appear in the catalog listing. Use the WISIWIG editor to format the information.

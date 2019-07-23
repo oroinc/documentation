@@ -1,0 +1,73 @@
+parameters:
+    acme_fast_shipping.integration.type: 'fast_shipping'
+    acme_fast_shipping.admin_view.method_template: 'ACMEFastShippingBundle::method/fastShippingMethodWithOptions.html.twig'
+
+services:
+    acme_fast_shipping.integration.channel:
+        class: 'ACME\Bundle\FastShippingBundle\Integration\FastShippingChannelType'
+        public: false
+        tags:
+            - { name: oro_integration.channel, type: '%acme_fast_shipping.integration.type%' }
+
+    acme_fast_shipping.integration.transport:
+        class: 'ACME\Bundle\FastShippingBundle\Integration\FastShippingTransport'
+        public: false
+        tags:
+            - { name: oro_integration.transport, type: '%acme_fast_shipping.integration.type%', channel_type: '%acme_fast_shipping.integration.type%' }
+
+    acme_fast_shipping.method.identifier_generator.method:
+        parent: oro_integration.generator.prefixed_identifier_generator
+        arguments:
+            - '%acme_fast_shipping.integration.type%'
+
+    acme_fast_shipping.factory.method:
+        class: 'ACME\Bundle\FastShippingBundle\Factory\FastShippingMethodFromChannelFactory'
+        public: false
+        arguments:
+            - '@acme_fast_shipping.method.identifier_generator.method'
+            - '@oro_locale.helper.localization'
+            - '@translator'
+            - '@oro_integration.provider.integration_icon'
+
+    acme_fast_shipping.method.provider:
+        class: 'ACME\Bundle\FastShippingBundle\Method\FastShippingMethodProvider'
+        arguments:
+            - '%acme_fast_shipping.integration.type%'
+            - '@oro_entity.doctrine_helper'
+            - '@acme_fast_shipping.factory.method'
+        tags:
+            - { name: oro_shipping_method_provider }
+            - { name: doctrine.orm.entity_listener, entity: 'Oro\Bundle\IntegrationBundle\Entity\Channel', event: postLoad }
+
+    acme_fast_shipping.form.type.fast_shipping_options:
+        class: 'ACME\Bundle\FastShippingBundle\Form\Type\FastShippingMethodOptionsType'
+        arguments:
+            - '@oro_currency.rounding.price_rounding_service'
+        tags:
+            - { name: form.type }
+
+    acme_fast_shipping.event_listener.shipping_method_config_data:
+        parent: oro_shipping.admin_view.method_template.listener
+        arguments:
+            - '%acme_fast_shipping.admin_view.method_template%'
+            - '@acme_fast_shipping.method.provider'
+        tags:
+            - { name: kernel.event_listener, event: oro_shipping_method.config_data, method: onGetConfigData }
+
+    acme_fast_shipping.remove_integration_listener:
+        parent: oro_shipping.remove_integration_listener
+        arguments:
+            - '%acme_fast_shipping.integration.type%'
+            - '@acme_fast_shipping.method.identifier_generator.method'
+            - '@oro_shipping.method.event.dispatcher.method_removal'
+        tags:
+            - { name: kernel.event_listener, event: oro_integration.channel_delete, method: onRemove }
+
+    acme_fast_shipping.disable_integration_listener:
+        parent: oro_shipping.disable_integration_listener
+        arguments:
+            - '%acme_fast_shipping.integration.type%'
+            - '@acme_fast_shipping.method.identifier_generator.method'
+            - '@oro_shipping.method_disable_handler.decorator'
+        tags:
+            - { name: kernel.event_listener, event: oro_integration.channel_disable, method: onIntegrationDisable }

@@ -1,0 +1,19 @@
+{% import 'OroShippingBundle:ShippingMethodsConfigsRule:macros.html.twig' as ShipRuleMacro %}
+
+   {% spaceless %}
+       {% set methodLabel = get_shipping_method_label(methodData.identifier)|trans %}
+       {% if methodLabel|length > 0 %}
+           <li>{{ methodLabel }}
+           <ul>
+       {% endif %}
+       {% for type in methodData.types %}
+           {%- if type.enabled -%}
+               <li>{{ get_shipping_method_type_label(methodData.identifier, type.identifier)|trans }} ({{ 'acme.fast_shipping.method.price.label'|trans }}: {{ type.options['price']|oro_format_currency({'currency': currency}) }}
+                   ) {{ ShipRuleMacro.renderShippingMethodDisabledFlag(methodData.identifier) }}</li>
+           {%- endif -%}
+       {% endfor %}
+       {% if methodLabel|length > 0 %}
+           </ul>
+           </li>
+       {% endif %}
+   {% endspaceless %}

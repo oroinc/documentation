@@ -31,7 +31,7 @@ from pygments.lexers.web import PhpLexer
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 # https://github.com/nyergler/hieroglyph
 #https://pypi.python.org/pypi/sphinxcontrib-images
-extensions = ['sphinxcontrib.phpdomain', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode']
+extensions = ['sphinxcontrib.phpdomain', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode', 'oro.integrity_check']
 
 spelling_lang='en_US'
 spelling_word_list_filename='spelling_wordlist.txt'
