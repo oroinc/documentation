@@ -36,7 +36,7 @@ A matrix form is applied to a configurable product with up to two attributes. It
 
 To configure a matrix form view for a particular case specifically for the selected website:
 
-1. Clear the **Use System** check box next to the corresponding view page.
+1. Clear the **Use Organization** check box next to the corresponding view page.
 
 2. Select the necessary option from the following list:
 
@@ -56,13 +56,13 @@ To configure a matrix form view for a particular case specifically for the selec
 
      .. image:: /admin_guide/img/configurable_products/group_single_products.png
 
-3. By default, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use System** check box next to the **Allow To Add Empty Products** option and then the check box of the option itself.
+3. By default, a customer can add a configurable product with an empty matrix form to a shopping list to manage it later. To disable this possibility, clear the **Use Organization** check box next to the **Allow To Add Empty Products** option and then the check box of the option itself.
 
 Also, you can control whether to display or hide all the single products within the configurable one.
 
 In the cases where you have plenty of products, you may need to clear the product listing and search results pages from all the variations of the configurable product removing the duplicated information.
 
-1. In the **Variations** section, clear the **Use System** check box next to the **Display Simple Variations** field.
+1. In the **Variations** section, clear the **Use Organization** check box next to the **Display Simple Variations** field.
 
 2. Select the necessary option from the list:
 

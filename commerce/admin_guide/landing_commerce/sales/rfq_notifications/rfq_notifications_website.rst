@@ -24,7 +24,7 @@ The notifications options can be configured for all the parties concerned, namel
 
 To customize any of these options:
 
-1. Clear the **Use System** check box next to the option.
+1. Clear the **Use Organization** check box next to the option.
 2. Select the corresponding option from the list.
 
    For the aforementioned parties the options are the following:

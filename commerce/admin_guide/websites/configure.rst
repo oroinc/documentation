@@ -48,15 +48,12 @@ To define the custom configuration options for the particular website:
    .. image:: /admin_guide/img/websites/all_websites_page.png
       :alt: The list of available websites
 
-2. Click on the website you would like to customize configuration for (e.g. Australia).
+2. Click on the website you would like to customize configuration for (e.g., Australia).
 
    .. image:: /admin_guide/img/websites/view_website_australia.png
       :alt: View the details of Australia website
 
 3. On the website details page, click |IcConfig| **Configuration**. The following page opens:
-
-   .. image:: /admin_guide/img/websites/website_config.png
-      :alt: The configuration page of Australia website
 
 
    .. include:: /admin_guide/config_levels/website.rst

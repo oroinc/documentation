@@ -21,7 +21,7 @@ The following page opens:
 
    By default, guest checkout is disabled.
 
-   To enable it, clear *Use System* and select the *Enable Guest Checkout* check box.
+   To enable it, clear *Use Organization* and select the *Enable Guest Checkout* check box.
 
    When the guest checkout is enabled, click **Save Settings** to display the additional **Guest Checkout Owner Settings** section.
 

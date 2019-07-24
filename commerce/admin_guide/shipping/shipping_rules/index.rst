@@ -163,7 +163,7 @@ To create a shipping rule:
       .. image:: /admin_guide/img/shipping_rules/shipping_rule_method_summary.png
 
 
-      If a shipping method appears collapsed, click the |IcPlusSquareO| **Expand** icon in front of its name to see the configuration options.
+      If a shipping method appears collapsed, click the **+ Expand** icon in front of its name to see the configuration options.
 
 
       .. image:: /admin_guide/img/shipping_rules/shipping_rule_method.png

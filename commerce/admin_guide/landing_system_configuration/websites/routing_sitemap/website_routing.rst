@@ -63,7 +63,7 @@ Once you decide on the Web Catalog, click **Save Settings**, and the detailed co
 
 4. To customize any of these options:
 
-     a) Clear the **Use System** box next to the option.
+     a) Clear the **Use Organization** box next to the option.
      b) Select the new option.
 
 5. Click **Save**.

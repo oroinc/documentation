@@ -21,7 +21,7 @@ The following page opens:
 
 4. To customize the segment option:
 
-     a) Clear the **Use Default** check box next to the option.
+     a) Clear the **Use Organization** check box next to the option.
      b) Select the new segment from the list.
 
 5. Click **Save**.

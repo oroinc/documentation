@@ -41,12 +41,12 @@ Here, you can manage both inventory and upcoming products options.
 
 **Hide Labels Past Availability Date** - When enabled, the label for the upcoming products will be removed automatically once the availability date has passed. If the option is disabled, the label will remain displayed as long as the product is marked as upcoming regardless of its availability date.
 
-3. To customize any of these options:
+4. To customize any of these options:
 
-     a) Clear the **Use System** check box next to the option.
+     a) Clear the **Use Organization** check box next to the option.
      b) Select **Yes/No** for the flag-like options, and type in the updated value for the threshold-like options.
 
-4. Click **Save Settings**.
+5. Click **Save Settings**.
 
 
 

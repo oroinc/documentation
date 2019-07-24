@@ -26,7 +26,7 @@ To change the default sitemap settings for the website:
 
 4. To customize any of these options:
 
-     a) Clear the **Use System** box next to the option.
+     a) Clear the **Use Organization** box next to the option.
      b) Select the new option.
 
 5. Click **Save**.

@@ -15,12 +15,8 @@ To change the default inventory quantity limitations:
 .. note::
    For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
-The following page opens:
 
-   .. image:: /admin_guide/img/configuration/inventory/limitations.png
-      :class: with-border
-
-   The following table describes the options available on the page:
+The following table describes the options available on the page:
 
    +---------------------------+----------------------------------------------------------------------------------------------------------------------+
    | Name                      | Description                                                                                                          |
@@ -32,7 +28,7 @@ The following page opens:
 
 3. To customize any of these options:
 
-     a) Clear the **Use Default** box next to the option.
+     a) Clear the **Use Organization** box next to the option.
      b) Type in the updated quantity.
 
 4. Click **Save**.

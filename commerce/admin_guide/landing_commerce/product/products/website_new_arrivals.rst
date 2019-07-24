@@ -18,9 +18,9 @@ The following page opens:
 
    .. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockWeb.png
 
-4. In the **New Product Icons**, clear the **Use Default** check box and select *Yes* in the **Show on Product View** list.
+4. In the **New Product Icons**, clear the **Use Organization** check box and select *Yes* in the **Show on Product View** list.
 
-4. Click **Save**.
+5. Click **Save**.
 
 .. note:: To disable New Product icons, select *No* in the **Show on Product View** list, and click **Save**.
 

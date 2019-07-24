@@ -19,7 +19,7 @@ The following page opens:
 
 .. image:: /admin_guide/img/configuration/product/new_arrivals/NewArrivalsBlockWeb.png
 
-3. In the **New Arrivals** section provide the following information:
+4. In the **New Arrivals** section provide the following information:
 
    * **Product Segment** -- Select the segment that will include the items to be featured in the **New Arrivals** block.
 
@@ -32,7 +32,7 @@ The following page opens:
 
    * **Use Slider On Mobile** -- When the slider is enabled, the block occupies less screen space, while showing larger product images.
 
-.. note:: When enabled, **Use System** allows for system settings to be used. Clear this check box to enable manual change of settings.
+.. note:: When enabled, **Use Organization** allows for organization settings to be used. Clear this check box to enable manual change of settings.
 
 .. finish
 
