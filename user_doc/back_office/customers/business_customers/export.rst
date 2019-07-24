@@ -4,5 +4,11 @@ Export Business Customers
 To export business customer details in a .csv file:
 
 1. Navigate to **Customers > Business Customers** in the main menu.
-2. To export information on all business customers, click **Export** on the top right. To export selected business customers, click on the check boxes on the left of the business customer name(s), then click **Export**.
+2. To export information on all business customers, click **Export** on the top right.
 3. Once export is complete, you will receive an email to download the .csv file.
+
+.. note:: Keep in mind that by clicking **Export** you download all business customers records regardless of the filters applied to the grid. To export only the list of filtered records, use the **Export Grid** functionality.
+
+         .. image:: /user_doc/img/getting_started/export_import/export_grid_bc.png
+            :alt: Highlight the Export Grid button
+

@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc--products--actions--manage-inventory:
 
 Manage Inventory

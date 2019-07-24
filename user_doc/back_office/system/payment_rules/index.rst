@@ -50,7 +50,7 @@ To create a payment rule:
 
    #) Specify the destination (e.g. select a Country, or select a country and state; for the most granularity you may provide a distinct list of postal codes to apply the payment rule for.
 
-#. In the **Conditions** section, specify the expression that describes the conditions when this payment rule should be applied. For example, *account = 1*.
+#. In the **Expression** section, specify the expression that describes the conditions when this payment rule should be applied. For example, *account = 1*.
 
    .. TODO what keywords we really can use here?
 

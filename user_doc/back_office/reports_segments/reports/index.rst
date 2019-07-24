@@ -9,8 +9,7 @@ You can get easy-to-understand adjustable reports on the budgets and activity of
 customers, on statuses of carts and the current state of actual and potential sales, on the performance of your
 :ref:`marketing effort <user-guide-marketing>`, specifics of recent :ref:`activities <user-guide-activities>`, etc.
 
-There are a number of out-of-the-box reports, such as `Leads by Date <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/leads#doc-leads-reports>`_ and
-`Opportunities by Status <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/opportunities/reports#user-guide-opportunities-reports>`_, but you can also create your own custom reports.
+There are a number of out-of-the-box reports, such as :ref:`Leads by Date <doc-leads-reports>` and :ref:`Opportunities by Status <user-guide-opportunities-reports>`, but you can also create your own custom reports.
 
 System reports are read-only. You can view the report output and filter the resulting data.
 

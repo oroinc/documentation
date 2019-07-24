@@ -202,17 +202,11 @@ Proceed to create the attribute as described below.
       .. image:: /user_doc/img/products/product_attributes/AttributeStorageType.png
          :alt: The list of all product attributes
 
-Export Product Attributes
--------------------------
-
-.. include:: /user_doc/back_office/products/product_attributes/export_product_attributes.rst
-   :start-after: start
-
 Import Product Attributes
 -------------------------
 
 .. include:: /user_doc/back_office/products/product_attributes/import_product_attributes.rst
-   :start-after: start
+   :start-after: start_import
 
 
 **Related topics**
@@ -223,7 +217,6 @@ Import Product Attributes
 .. toctree::
    :hidden:
 
-   export_product_attributes
    import_product_attributes
 
 

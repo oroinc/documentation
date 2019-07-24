@@ -1,5 +1,3 @@
-:orphan:
-
 .. _view-and-filter-product-prices:
 
 Manage Product Pricing

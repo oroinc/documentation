@@ -13,9 +13,9 @@ Guest Checkout
 
 Guest checkout allows unregistered customers proceed through the steps of the checkout similarly to registered customers, with the exception of needing to enter their data manually as there is no pre-filled information available in the checkout forms. They are also limited to 1 shopping list.
 
-When proceeding through the checkout, unauthenticated customers can choose whether the wish to register, login or continue as guests.
+When proceeding through the checkout, unauthenticated customers can choose whether they wish to register, login or continue as guests.
 
-.. important:: As creating a shopping list is the key component of the :ref:`checkout process <frontstore-guide--orders-checkout>`, guest checkout can only operate properly when :ref:`shopping lists are enabled <user-guide--system-configuration--commerce-sales-shopping-list-global>` in the system.  g
+.. important:: As creating a shopping list is the key component of the :ref:`checkout process <frontstore-guide--orders-checkout>`, guest checkout can only operate properly when :ref:`shopping lists are enabled <user-guide--system-configuration--commerce-sales-shopping-list-global>` in the system.
 
 The following is the list of actions that unregistered customers can and cannot perform when guest checkout is enabled in your Oro application:
 

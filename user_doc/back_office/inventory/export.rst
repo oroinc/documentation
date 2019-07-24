@@ -14,9 +14,5 @@ To export inventory levels and statuses in the .csv format following the steps b
    .. image:: /user_doc/img/inventory/inventory_export_selection.png
       :alt: Choose whether to export inventory statuses only or detailed inventory levels
 
-   After the following notification, you will receive an email with the link to download the .csv file.
-
-   .. image:: /user_doc/img/inventory/successful_export.png
-
-4. Open the email and click the **Download** link. The file is automatically downloaded.
+4. Once export is complete, you will receive an email to download the .csv file.
 

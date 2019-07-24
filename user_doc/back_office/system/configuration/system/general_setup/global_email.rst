@@ -145,7 +145,7 @@ To configure a system mailbox globally:
    .. image:: /user_doc/img/system/config_system/synchronize_mb.png
       :alt: An example of synchronization for a gmail mailbox
 
-6. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
+7. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox.
 
    * *Do Nothing* --- No actions are performed. Letters are saved in the mailbox.
    * *Convert To Lead* --- Letters will be saved in the mailbox. Based on the first letter in the thread, a new Lead record will be created in OroCRM.
@@ -161,11 +161,11 @@ To configure a system mailbox globally:
    .. image:: /user_doc/img/system/config_system/lead_source_field.jpg
       :alt: Creating a source entity from the entity management menu
 
-7. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
+8. In the **Access Management** section, define which users will have access to the system mailbox. You can select :ref:`roles <user-guide-user-management-permissions>` and/or specific users. All the users with defined roles and all the specifically defined users will have access to this mailbox.
 
-8. In the **Autoresponse Rules** section, generate one or several auto-response rules. These rules determine which template is sent to the sender of the email.
+9. In the **Autoresponse Rules** section, generate one or several auto-response rules. These rules determine which template is sent to the sender of the email.
 
-9. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
+10. Click **Add Rule** to add a new auto-response rule and complete the following details in the dialog:
 
    * *Status (Active/Inactive)* --- Only rules with active statuses are applied.
    * *Name* --- Select the name for the rule to be used within the system.
@@ -181,4 +181,4 @@ To configure a system mailbox globally:
    .. image:: /user_doc/img/system/config_system/ar_rule.png
       :alt: Sample autoresponse rule form
 
-10. Click **Save Settings**.
+11. Click **Save Settings**.
