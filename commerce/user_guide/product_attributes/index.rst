@@ -259,11 +259,6 @@ Proceed to create the attribute as described below.
 
       .. image:: /user_guide/img/products/product_attributes/AttributeStorageType.png
 
-Export
-^^^^^^
-
-You can export the product attributes details in the .csv format following the :ref:`Exporting Bulk Items <export-bulk-items>` guide.
-
 Import
 ^^^^^^
 
