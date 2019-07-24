@@ -1,0 +1,22 @@
+{
+    "name": "oro/platform-documentation-examples",
+    "type": "symfony-bundle",
+    "description": "OroPlatform documentation examples",
+    "keywords": ["OroPlatform", "example", "documentation"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oro, Inc",
+            "homepage": "http://www.orocrm.com"
+        }
+    ],
+    "autoload": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.6.x-dev"
+        }
+    }
+}
