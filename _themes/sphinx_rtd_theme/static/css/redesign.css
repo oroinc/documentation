@@ -830,13 +830,13 @@ body {
 }
 .contents-table .contents-title,
 .contents-table > ul > li > a {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 20px;
-    color: #727272;
+    color: #727272 !important;
     font-weight: bold;
     margin: 0 0 9px;
-    pointer-events: none;
 }
 .contents-table ul li {
     margin: 0 0 9px;
@@ -848,9 +848,26 @@ body {
     color: #b84926;
     text-decoration: none;
 }
-.contents-table ul a:hover,
-.contents-table ul a:focus {
+.contents-table li.active > a {
     color: #252525;
+}
+.contents-table ul ul ul {
+    padding: 3px 0 0 7px;
+}
+.contents-table ul ul ul li {
+    position: relative;
+    padding: 0 0 0 9px;
+}
+.contents-table ul ul ul li:before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #b84926;
 }
 .breadcrumbs {
     margin: 0 0 30px;
@@ -977,6 +994,7 @@ body {
 .btn-back-to-top.visible:hover,
 .btn-back-to-top.visible:focus {
     opacity: 0.8;
+    color: #b84926 !important;
 }
 
 /* Custom scrollbar styles */
@@ -1236,6 +1254,10 @@ body {
     }
     .sticky-active .sticky-block {
         position: fixed;
+    }
+    .contents-table ul a:hover,
+    .contents-table > ul > li > a:hover {
+        color: #252525 !important;
     }
     .footer-content {
         padding: 54px 0 40px;

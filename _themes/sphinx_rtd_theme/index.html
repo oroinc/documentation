@@ -254,6 +254,7 @@
       mobileCollapse();
       smoothScroll('.btn-back-to-top');
       backToTop();
+      scrollSpy();
     });
     $(window).scroll(function(){
       stickyBlock();
@@ -364,6 +365,60 @@
           scrollTop: 0
         })
       });
+    };
+
+    // scroll spy
+    function scrollSpy() {
+      var lastId,
+              topMenu = $("nav.contents-table > ul"),
+              topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
+              menuItems = topMenu.find("a"),
+              scrollItems = menuItems.map(function(){
+                var itemHref = $(this).attr("href"),
+                        item = itemHref === "#" ? $('.three-columns-layout') : $(itemHref);
+                if (item.length) { return item; }
+              });
+
+      if ($('.right-sidebar .contents-table').length > 0) {
+        menuItems.click(function(e){
+          var href = $(this).attr("href"),
+                  currentOffset;
+
+          if ($(window).prop('innerWidth') > 767) {
+            currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
+          } else {
+            currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
+          }
+
+          var offsetTop = href === "#" ? 0 : currentOffset;
+
+          $('html, body').stop().animate({
+            scrollTop: offsetTop
+          });
+          e.preventDefault();
+        });
+
+        if ($(window).prop('innerWidth') > 1199) {
+          $(window).scroll(function(){
+            var fromTop = $(this).scrollTop() + topIndent;
+            var cur = scrollItems.map(function(){
+              if ($(this).offset().top < fromTop)
+                return this;
+            });
+            cur = cur[cur.length-1];
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId !== id) {
+              lastId = id;
+              menuItems
+                      .parent().removeClass("active")
+                      .end().filter("[href='#"+id+"']").parent().addClass("active");
+            }
+          });
+        } else {
+          menuItems.parent().removeClass("active");
+        }
+      }
     }
   </script>
 
