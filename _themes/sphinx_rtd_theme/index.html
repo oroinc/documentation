@@ -248,8 +248,9 @@
     stickyBlock();
 
     $(document).ready(function(){
-      $('.scrollbar-inner').scrollbar();
+      $('.scrollbar-outer').scrollbar();
 
+      stickyHeader();
       mobileCollapse();
       smoothScroll('.btn-back-to-top');
       backToTop();
@@ -259,41 +260,65 @@
       backToTop();
     });
     $(window).resize(function(){
+      stickyHeader();
       stickyBlock();
       mobileCollapse();
     });
+
+
+    // sticky functional for header
+    function stickyHeader() {
+      var headerHeight = $('#header').height(),
+              versionsPanel = $('.header-panel');
+
+      if ($(window).prop('innerWidth') > 767){
+        if ($('#header').length > 0){
+          if(versionsPanel.length > 0){
+            $('body').addClass('fixed-header').css('padding-top' , headerHeight + versionsPanel.outerHeight());
+            versionsPanel.css('top', headerHeight);
+          } else {
+            $('body').addClass('fixed-header').css('padding-top' , headerHeight);
+          }
+        }
+      } else {
+        $('body').removeClass('fixed-header').css('padding-top' , 0);
+        versionsPanel.removeAttr('style');
+      }
+    }
 
     // sticky functional for sidebars
     function stickyBlock() {
       if ($('.sticky-block').length > 0){
         if ($(window).prop('innerWidth') > 767) {
           var blockSticky = $(".sticky-block"),
-              scrollPos = $(window).scrollTop(),
-              currentPosition = blockSticky.parent().offset().top;
+                  scrollPos = $(window).scrollTop(),
+                  scrollContainer = $('.three-columns-layout'),
+                  currentPosition = scrollContainer.offset().top + scrollContainer.outerHeight(),
+                  footerPos = $('.footer-container').offset().top;
 
           blockSticky.each(function () {
-            if (currentPosition <= scrollPos) {
-              if ($(this).outerHeight() < $('.three-columns-layout').height()) {
-                $(this).parent()
-                        .addClass('sticky-active')
-                        .css({'height' : $(this).outerHeight()});
-              }
+            var currentSticky = $(this),
+                    currentStickyPaddings = parseInt(currentSticky.css('padding-top')) + parseInt(currentSticky.css('padding-bottom')),
+                    sidebarCurrent = currentSticky.parent(),
+                    bodyTopPadding = parseInt($('body').css('padding-top')),
+//                sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')),
+                    heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
+                    heightWithFooter = scrollPos + $(window).height() - footerPos;
+
+            if (currentPosition >= (scrollPos + $(window).height())) {
+              currentSticky.find('.scrollbar-outer').css('max-height', heightContent);
             } else {
-              $(this).parent().removeClass('sticky-active');
+              currentSticky.find('.scrollbar-outer').css('max-height', (heightContent - heightWithFooter));
+            }
+
+            sidebarCurrent.addClass('sticky-active');
+
+            if (($(window).height() - bodyTopPadding - heightWithFooter) < 150) {
+              $('.sidebar').css('visibility', 'hidden')
+            } else {
+              $('.sidebar').removeAttr('style');
             }
           });
-          if ($('.footer-container').offset().top <= (scrollPos + $(window).height())){
-            $('.sticky-block').each(function () {
-              var currentBlock = $(this),
-                  bottom = $(window).outerHeight() - currentBlock.outerHeight() - 10;
-
-              if (currentBlock.parent().hasClass('sticky-active')){
-                currentBlock.css({"position" : "absolute", "top" : "auto", "bottom" : bottom});
-              }
-            });
-          } else {
-            $('.sticky-block').removeAttr('style');
-          }
         }
       }
     }

@@ -44,15 +44,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #df9026;
-}
-.rst-content ul a {
-    text-decoration: none;
-    color: #df9026;
-}
-.rst-content ul a:hover,
-.rst-content ul a:focus {
-    color: #252525;
+    color: #243f90;
 }
 .rst-content .toc-backref {
     color: #252525;
@@ -174,9 +166,19 @@ a:focus {
     display: none;
 }
 
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}
+
 /* Header */
 .page-header {
     position: relative;
+    background: #fff;
     border-bottom: 1px solid #e8e6e6;
 }
 .header-holder {
@@ -186,7 +188,7 @@ a:focus {
 }
 .header-holder:after {
     content: '';
-    display: table;
+    display: block;
     clear: both;
 }
 .page-header .logo {
@@ -220,7 +222,6 @@ a:focus {
 }
 .header-search .search-container {
     position: relative;
-    padding: 0 15px 0 50px;
     border: 1px solid #e8e6e6;
     background: #fafafa;
 }
@@ -228,7 +229,7 @@ a:focus {
     width: 100%;
     height: 50px;
     border: none;
-    padding: 0;
+    padding: 0 15px 0 50px;
     margin: 0;
     box-shadow: none;
     border-radius: 0;
@@ -236,6 +237,7 @@ a:focus {
     font-size: 16px;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
+.header-search  .icon-submit,
 .header-search button[type=submit] {
     position: absolute;
     top: 0;
@@ -253,11 +255,14 @@ a:focus {
 .header-search button[type=submit]:focus {
     color: #df9026;
 }
+.header-search .icon-submit i,
 .header-search .button[type=submit] i {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.header-search .button[type=submit] i {
     margin: 2px 0 0;
 }
 .header-search .search-close {
@@ -295,6 +300,59 @@ a:focus {
 }
 .header-search .reset__icon:after {
     transform: rotate(-45deg);
+}
+.search-container a {
+    text-decoration: none;
+}
+.header-search .algolia-autocomplete {
+    width: 100%;
+}
+.header-search .algolia-autocomplete .ds-dropdown-menu {
+    max-width: 100%;
+    width: 500px;
+    min-width: 0;
+}
+.header-search .algolia-autocomplete .ds-dataset-1 {
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+    color: #252525;
+    font-size: 13px;
+    line-height: 18px;
+}
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column-text .algolia-docsearch-suggestion--highlight {
+    font-weight: bold;
+    background: none;
+    color: #252525;
+}
+.header-search  .algolia-autocomplete .algolia-docsearch-suggestion {
+    color: #252525;
+}
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl0 .algolia-docsearch-suggestion--highlight,
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--category-header .algolia-docsearch-suggestion--category-header-lvl1 .algolia-docsearch-suggestion--highlight,
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--text .algolia-docsearch-suggestion--highlight {
+    box-shadow: inset 0 -2px 0 0 #df9026;
+}
+.header-search .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion.suggestion-layout-simple,
+.header-search .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
+    /*background: rgba(223, 144, 38, 0.2);*/
+    background: none;
+}
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--title {
+    font-weight: normal;
+}
+.header-search .algolia-autocomplete .algolia-docsearch-suggestion--title .algolia-docsearch-suggestion--highlight {
+    background: none;
+    color: #252525;
+    font-weight: bold;
+}
+.header-search .ds-suggestion.ds-cursor .algolia-docsearch-suggestion--title {
+    color: #df9026;
+}
+.header-search .ds-suggestion.ds-cursor .algolia-docsearch-suggestion--title .algolia-docsearch-suggestion--highlight {
+    color: #df9026;
 }
 
 /* General navigation */
@@ -616,11 +674,10 @@ a:focus {
     max-width: 1200px;
     padding: 22px 15px 30px;
     position: relative;
-}
-.three-columns-layout:after {
-    content: '';
-    display: table;
-    clear: both;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    overflow: hidden;
 }
 .sidebar {
     margin: 0 0 20px;
@@ -628,10 +685,7 @@ a:focus {
 .sidebar-holder {
     background: #fdfdfd;
     box-shadow: 1px 1px 6px rgba(133, 133, 133, 0.4);
-    padding: 15px 0;
-}
-.sidebar-holder .scroll-wrapper {
-    padding: 0 21px !important;
+    padding: 15px 12px 15px 21px;
 }
 .wy-menu {
     width: 100%;
@@ -774,16 +828,21 @@ a:focus {
 .contents-table {
     padding: 8px 4px;
 }
-.contents-table .contents-title{
+.contents-table .contents-title,
+.contents-table > ul > li > a {
     display: block;
     font-size: 14px;
     line-height: 20px;
     color: #727272;
     font-weight: bold;
     margin: 0 0 9px;
+    pointer-events: none;
 }
 .contents-table ul li {
     margin: 0 0 9px;
+}
+.contents-table ul li:last-child {
+    margin-bottom: 0;
 }
 .contents-table ul a {
     color: #b84926;
@@ -818,6 +877,10 @@ a:focus {
 .wy-breadcrumbs li a:hover,
 .wy-breadcrumbs li a:focus {
     color: #252525;
+}
+.rst-content div[itemprop="articleBody"] > .section > *:last-child,
+.rst-content div[itemprop="articleBody"] > .section > *:last-child > *:last-child {
+    margin-bottom: 0;
 }
 
 /* Footer */
@@ -930,7 +993,9 @@ a:focus {
     margin: 0;
     max-height: none;
     max-width: none !important;
-    overflow: scroll !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+    -ms-overflow-style: none;
     padding: 0;
     position: relative !important;
     top: 0;
@@ -979,63 +1044,69 @@ a:focus {
     height: 0;
     width: 0;
 }
-.scrollbar-inner > .scroll-element,
-.scrollbar-inner > .scroll-element div {
+.scrollbar-outer > .scroll-element,
+.scrollbar-outer > .scroll-element div {
     border: none;
     margin: 0;
     padding: 0;
     position: absolute;
     z-index: 10;
 }
-.scrollbar-inner > .scroll-element div {
+.scrollbar-outer > .scroll-element div {
     display: block;
     height: 100%;
     left: 0;
     top: 0;
     width: 100%;
 }
-.scrollbar-inner > .scroll-element.scroll-x {
-    bottom: 2px;
-    height: 8px;
-    left: 0;
-    width: 100%;
+.scrollbar-outer > .scroll-element.scroll-x {
+    display: none !important;
 }
-.scrollbar-inner > .scroll-element.scroll-y {
+.scrollbar-outer > .scroll-element.scroll-y {
     height: 100%;
-    right: 9px;
+    right: 1px;
     top: 0;
     width: 9px;
 }
-.scrollbar-inner > .scroll-element .scroll-element_outer {
-    overflow: hidden;
+/*.scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer { height: 8px; top: 2px; }*/
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { left: 0; width: 9px; }
+.scrollbar-outer > .scroll-element .scroll-element_outer { overflow: hidden; }
+.scrollbar-outer > .scroll-element .scroll-element_track {
+    width: 1px;
+    left: 4px;
+    background-color: #c9c9c9;
 }
-.scrollbar-inner > .scroll-element .scroll-element_outer,
-.scrollbar-inner > .scroll-element .scroll-element_track,
-.scrollbar-inner > .scroll-element .scroll-bar {
+.scrollbar-outer > .scroll-element .scroll-element_outer,
+.scrollbar-outer > .scroll-element .scroll-element_track,
+.scrollbar-outer > .scroll-element .scroll-bar {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
 }
-.scrollbar-inner > .scroll-element.scroll-y .scroll-element_track {
-    width: 1px;
-    left: 4px;
-}
-.scrollbar-inner > .scroll-element .scroll-element_track {
-    background-color: #c9c9c9;
-}
-.scrollbar-inner > .scroll-element .scroll-bar {
+.scrollbar-outer > .scroll-element .scroll-bar {
     background-color: #fdfdfd;
     border: 1px solid #c9c9c9;
     box-sizing: border-box !important;
 }
-.scrollbar-inner > .scroll-element:hover .scroll-bar {
+.scrollbar-outer > .scroll-element .scroll-bar:hover {
     background-color: #c9c9c9;
 }
-.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
-.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
-.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
-.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
-.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+.scrollbar-outer > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+.scrollbar-outer > .scroll-content.scroll-scrolly_visible {
+    left: -10px;
+    margin-left: 10px;
+    width: 100% !important;
+    padding: 0 12px 0 0 !important;
+    box-sizing: border-box !important;
+    margin-bottom: 0 !important;
+}
+/*.scrollbar-outer > .scroll-content.scroll-scrollx_visible { top:  -12px; margin-top:  12px; }*/
+/*.scrollbar-outer > .scroll-element.scroll-x .scroll-bar { min-width: 10px; }*/
+.scrollbar-outer > .scroll-element.scroll-y .scroll-bar { min-height: 10px; }
+/*.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -14px; }*/
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -14px; }
+/*.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -14px; }*/
+.scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -14px; }
 
 
 @media only screen and (max-width: 767px) {
@@ -1078,9 +1149,31 @@ a:focus {
     .btn-back-to-top {
         display: none !important;
     }
+
+    .sidebar .scrollbar-outer {
+        max-height: none !important;
+    }
+    .sideba .scrollbar-outer > .scroll-element.scroll-y {
+        display: none !important;
+    }
 }
 
 @media only screen and (min-width: 768px) {
+    .page-header {
+        height: 60px;
+    }
+    .fixed-header .page-header,
+    .fixed-header .header-panel {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 10;
+    }
+    .fixed-header .header-panel {
+        z-index: 9;
+    }
+
     .hero-banner .hero-banner-holder {
         padding-top: 81px;
         padding-bottom: 58px;
@@ -1120,25 +1213,29 @@ a:focus {
     }
     .three-columns-layout .main-column,
     .sidebar.right-sidebar {
-        margin: 0 0 20px 280px;
+        margin: 0 0 0 280px;
+    }
+    .sidebar.right-sidebar {
+        margin-bottom: 20px;
     }
     .sidebar {
         padding: 10px 0;
+        box-sizing: content-box;
+    }
+    .scroll-wrapper.scrollbar-inner {
+        height: 100%;
     }
     .sidebar.left-sidebar {
         width: 250px;
         float: left;
         margin-right: -250px;
+        margin-bottom: 0;
     }
     .sidebar.left-sidebar .sidebar-holder {
         width: 250px;
     }
     .sticky-active .sticky-block {
         position: fixed;
-        top: 10px;
-    }
-    .left-sidebar.sticky-active .sticky-block .scrollbar-inner {
-        max-height: calc(100vh - 50px);
     }
     .footer-content {
         padding: 54px 0 40px;
@@ -1306,13 +1403,21 @@ a:focus {
         margin: 0;
     }
     .header-search .search-container {
-        padding-right: 75px;
+        padding-right: 70px;
     }
     .header-search .search_text {
-        height: 59px;
+        height: 58px;
+        padding-right: 5px;
     }
+    .header-search .icon-submit,
     .header-search button[type=submit] {
-        height: 59px;
+        height: 58px;
+    }
+    .header-search .algolia-autocomplete .ds-dropdown-menu {
+        max-width: 500px;
+    }
+    .header-search .algolia-autocomplete .ds-dataset-1 {
+        max-height: calc(100vh - 80px);
     }
     .top-navigation {
         display: inline-block;
@@ -1357,8 +1462,9 @@ a:focus {
 @media only screen and (max-width: 1199px) {
     .sticky-active .sticky-desktop-only {
         position: relative !important;
-        top: auto !important;
-        bottom: auto !important;
+    }
+    .sticky-desktop-only .scrollbar-outer {
+        max-height: none !important;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -1380,9 +1486,6 @@ a:focus {
     .sidebar.right-sidebar {
         float: right;
         margin: 0 0 0 32px;
-    }
-    .sticky-active .sticky-block .scrollbar-inner {
-        max-height: calc(100vh - 50px) !important;
     }
     .sidebar-holder {
         width: 268px !important;
