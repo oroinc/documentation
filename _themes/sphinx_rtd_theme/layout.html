@@ -174,8 +174,9 @@
       <div class="sidebar-holder sticky-block sticky-desktop-only">
         <div class="scrollbar-inner">
           <nav class="contents-table">
-            <strong class="contents-title">Contents</strong>
-              {{ toc }}
+            {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
+            {# Replace only first occurrence to be sure that we don't change any other elements except first #}
+              {{ toc|replace(title|striptags|e, "Contents", 1) }}
           </nav>
         </div>
       </div>
