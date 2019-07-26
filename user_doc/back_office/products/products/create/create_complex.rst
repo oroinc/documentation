@@ -50,7 +50,7 @@ To add a new configurable product and make it available in the master catalog (f
 
 5. Place the product under the necessary category in the master catalog by clicking on the category. Use the search to filter the list of categories.
 
-6. Click **Continue**. The product details page appears.
+6. Click **Continue**.
 
 7. In the **General** section, provide the following information:
 

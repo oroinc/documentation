@@ -3,6 +3,8 @@
 Import Product Attributes
 -------------------------
 
+.. start_import
+
 **Import File** option helps import a large bulk of product attributes information into the product attributes list using the .csv file.
 
 **Example of product attributes bulk import template**

@@ -87,5 +87,15 @@ Advanced Product Management
 
 .. note:: You can also view the complete reference of :ref:`product-related settings in system configuration <configuration--products>`.
 
+.. toctree::
+   :maxdepth: 1
+
+   edit
+   view
+   view_product_prices
+   manage_inventory
+
+
 .. include:: /user_doc/img/buttons/include_images.rst
    :start-after: begin
+

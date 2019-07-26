@@ -16,30 +16,8 @@ Export Prices from the Price List
       "sku_001", 42, "kg", 100, "USD"
 
 
-To export the |exported_information| in a .csv format:
+To export the prices in a .csv format:
 
-1. In the main menu, navigate to |menu_export|.
-
-   The following screen opens.
-
-   |image_export|
-
-2. Select the items to export using check boxes at the beginning of the corresponding rows. You can filter the list in the table header, if necessary.
-
-2. Click **Export**.
-
-   After the following notification, you will receive an email with the link to download the .csv file.
-
-   .. image:: /user_doc/img/sales/pricelist/successful_export.png
-
-3. Open the email and click the **Download** link.
-
-   The file is automatically downloaded.
-
-.. finish
-
-.. |exported_information| replace:: prices
-
-.. |menu_export| replace:: **Sales > Price Lists** and click the necessary price list to open its details
-
-.. |image_export| image:: /user_doc/img/sales/pricelist/export_price_lists.png
+1. In the main menu, navigate to **Sales > Price Lists** and click the necessary price list to open its details.
+2. Click **Export** on the top right.
+3. Once export is complete, you will receive an email to download the .csv file.

@@ -32,17 +32,6 @@ Export Product Information
 To export the product information or price attribute data in a .csv format:
 
 1. In the main menu, navigate to **Products > Products**.
-
-2. Select the items to export using check boxes at the beginning of the corresponding rows. You can filter the list in the table header, if necessary.
-
-2. Click **Export**.
-
-   After the following notification, you will receive an email with the link to download the .csv file.
-
-   .. image:: /user_doc/img/products/products/successful_export.png
-      :alt: A successful export notification
-
-3. Open the email and click the **Download** link.
-
-   The file is automatically downloaded.
+2. Click **Export Products** or **Export Price Attribute Data** on the top right.
+3. Once export is complete, you will receive an email to download the .csv file.
 

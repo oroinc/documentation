@@ -74,8 +74,9 @@ Move a Product Attribute to Another Attribute Group
 Delete a Product Attribute from the Attribute Group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.Click **x** next to the attribute name to remove it from the attribute group. Though it is impossible to delete system attributes, you can move them to the default attribute group. This will remove an attribute from its current group.
-2.Click **Save**.
+1. Click **x** next to the attribute name to remove it from the attribute group. Though it is impossible to delete system attributes, you can move them to the default attribute group. This will remove an attribute from its current group.
+
+2. Click **Save**.
 
 
 Delete a Product Attribute Group

@@ -7,17 +7,8 @@ To export the coupons in a .csv format:
 
 1. In the main menu, navigate to **Marketing > Promotions > Coupons**.
 
-2. Select the items to export using check boxes at the beginning of the corresponding rows. You can filter the list in the table header, if necessary.
+2. To export information on all coupons, click **Export** on the top right.
 
-2. Click **Export**.
-
-   After the following notification, you will receive an email with the link to download the .csv file.
-
-   .. image:: /user_doc/img/taxes/successful_export.png
-      :alt: A successful export notification
-
-3. Open the email and click the **Download** link.
-
-   The file is automatically downloaded.
+3. Once export is complete, you will receive an email to download the .csv file.
 
 .. finish

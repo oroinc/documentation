@@ -212,8 +212,8 @@ The sample Opportunity Support Flow has been configured the following way:
 
 .. _doc--workflows--actions--set-config-param:
 
-SetWorkflow Configuration Parameters
-------------------------------------
+Set Workflow Configuration Parameters
+-------------------------------------
 
 To set a workflow configuration parameters:
 

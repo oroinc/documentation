@@ -1,5 +1,3 @@
-:orphan:
-
 .. _doc--products--actions--view:
 
 View Product Details

@@ -27,13 +27,13 @@ To change the default inventory statuses:
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
    | Store Frontend: Can Be Added To Orders             | A buyer can add Products with the selected inventory statuses when creating an Order on the OroCommerce storefront.              |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Back-office: Can Be Added To Quotes                | A sales person can add products with the selected inventory statuses to the Quotes using OroCommerce back-office.                |
+   | Management Console: Can Be Added To Quotes         | A sales person can add products with the selected inventory statuses to the Quotes using OroCommerce back-office.                |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Back-office: Can Be Added To RFQs                  | A sales person can add products with the selected inventory statuses to the RFQs using OroCommerce back-office.                  |
+   | Management Console: Can Be Added To RFQs           | A sales person can add products with the selected inventory statuses to the RFQs using OroCommerce back-office.                  |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Back-office: Can Be Added To Orders                | A sales person can add products with the selected inventory statuses to the Orders using OroCommerce back-office.                |
+   | Management Console: Can Be Added To Orders         | A sales person can add products with the selected inventory statuses to the Orders using OroCommerce back-office.                |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
-   | Back-office: Can Be Added To Shopping Lists        | A sales person can add products with the selected inventory statuses to the Shopping Lists using OroCommerce back-office.        |
+   | Management Console: Can Be Added To Shopping Lists | A sales person can add products with the selected inventory statuses to the Shopping Lists using OroCommerce back-office.        |
    +----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 3. To customize the list of statuses for any of the aforementioned options:
