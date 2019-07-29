@@ -208,7 +208,6 @@ Import Product Attributes
 .. include:: /user_doc/back_office/products/product_attributes/import_product_attributes.rst
    :start-after: start_import
 
-
 **Related topics**
 
 * :ref:`Using product attributes in product families <product--product-families--product-attribute-in-families>`
