@@ -1,0 +1,56 @@
+<header id="header" class="page-header">
+  <div class="header-holder">
+    <strong class="logo">
+      <a href="{{ pathto(master_doc) }}">
+        <img width="137" src="{{ pathto('_static/images/Oro-Docs-logo.svg', 1) }}" alt="ORO Documentation">
+      </a>
+    </strong>
+    <button type="button" class="mobile-nav-opener js-opener">
+      <span class="icon" aria-hidden="true"></span>
+      <span class="sr-text">Open navigation</span>
+    </button>
+    <div class="mobile-navigation-drop">
+      <div class="drop-panel">
+        <button type="button" class="mobile-nav-close js-opener">
+          <span class="icon" aria-hidden="true"></span>
+          <span class="sr-text">Close navigation</span>
+        </button>
+        <a href="{{ pathto(master_doc) }}" class="logo-drop" tabindex="-1">
+          <img src="{{ pathto('_static/images/Oro-OLogo.png', 1) }}" alt="Oro Inc">
+        </a>
+      </div>
+      <div class="header-search">
+        {% include "searchbox.html" %}
+      </div>
+      <nav id="navigation" class="top-navigation">
+        <ul>
+          <li class="menu-item-home"><a href="{{ pathto('user_doc/index') }}">USERS</a></li>
+<!--          <li><a href="#">DEVELOPERS</a></li>-->
+<!--          <li><a href="#">CLOUD</a></li>-->
+          <li><a href="https://oroinc.com/b2b-ecommerce/blog">BLOG</a></li>
+          <li><a href="https://forum.oroinc.com/">FORUM</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('.js-opener').on('click', function () {
+      if($('body').hasClass('mobile-nav-active')){
+        $('body').removeClass('mobile-nav-active');
+      } else {
+        $('body').addClass('mobile-nav-active');
+        $('.mobile-navigation-drop').removeAttr('style');
+      }
+    });
+    if($(window).prop('innerWidth') > 979) {
+      $('body').removeClass('mobile-nav-active');
+    }
+    $(window).resize(function () {
+      if($(window).prop('innerWidth') > 979) {
+        $('body').removeClass('mobile-nav-active');
+      }
+      $('.mobile-navigation-drop').css({"transition" : "none"})
+    })
+  </script>
+</header>

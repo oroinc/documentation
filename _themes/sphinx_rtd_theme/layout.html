@@ -1,0 +1,445 @@
+{# TEMPLATE VAR SETTINGS #}
+{%- set url_root = pathto('', 1) %}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- if not embedded and docstitle %}
+  {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
+{%- else %}
+  {%- set titlesuffix = "" %}
+{%- endif %}
+{%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) %}
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="{{ lang_attr }}" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="{{ lang_attr }}" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  {{ metatags }}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block htmltitle %}
+  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  {% endblock %}
+
+  {# FAVICON #}
+  {% if favicon %}
+    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+  {% endif %}
+  {# CANONICAL URL #}
+  {% if theme_canonical_url %}
+    <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
+  {% endif %}
+
+  {# JAVASCRIPTS #}
+  {%- block scripts %}
+  <script type="text/javascript" src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+
+  {%- if not embedded %}
+  {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
+    {% if sphinx_version >= "1.8.0" %}
+      <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+      {%- for scriptfile in script_files %}
+        {{ js_tag(scriptfile) }}
+      {%- endfor %}
+    {% else %}
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'{{ url_root }}',
+              VERSION:'{{ release|e }}',
+              LANGUAGE:'{{ language }}',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'{{ '' if no_search_suffix else file_suffix }}',
+              HAS_SOURCE:  {{ has_source|lower }},
+              SOURCELINK_SUFFIX: '{{ sourcelink_suffix }}'
+          };
+      </script>
+      {%- for scriptfile in script_files %}
+        <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+      {%- endfor %}
+    {% endif %}
+    <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+
+    {# OPENSEARCH #}
+    {%- if use_opensearch %}
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
+          href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+    {%- endif %}
+  {%- endif %}
+  {%- endblock %}
+
+  {# CSS #}
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto('_static/css/redesign.css', 1) }}" type="text/css" />
+  {%- for css in css_files %}
+    {%- if css|attr("rel") %}
+  <link rel="{{ css.rel }}" href="{{ pathto(css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
+    {%- else %}
+  <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
+    {%- endif %}
+  {%- endfor %}
+
+  {%- for cssfile in extra_css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+  {%- endfor %}
+
+  {%- block linktags %}
+    {%- if hasdoc('about') %}
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+    {%- endif %}
+    {%- if hasdoc('genindex') %}
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+    {%- endif %}
+    {%- if hasdoc('search') %}
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+    {%- endif %}
+    {%- if hasdoc('copyright') %}
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    {%- endif %}
+    {%- if next %}
+    <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+    {%- endif %}
+    {%- if prev %}
+    <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+    {%- endif %}
+  {%- endblock %}
+  {%- block extrahead %} {% endblock %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+  <script type="text/javascript" src="{{ pathto('_static/js/jquery.scrollbar.min.js', 1) }}"></script>
+</head>
+
+<body class="wy-body-for-nav">
+  {% block extrabody %} {% endblock %}
+
+  {% include "header.html" %}
+
+  <div class="header-panel">
+    <div class="header-panel-holder">
+      <strong class="doc-title">Business Users Documentation Version</strong>
+      <div class="documentation-version-switcher">
+        <div class="version">3.1 version</div>
+        <ul class="documentation-version">
+          <li><a href="https://oroinc.com/b2b-ecommerce/doc/current">3.1 (current)</a></li>
+          <li><a href="https://oroinc.com/b2b-ecommerce/doc/1.6">1.6</a></li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      // hover effect. it needs for mobile devices
+      $('.documentation-version-switcher')
+              .on('mouseenter', function () {
+                if ($(this).hasClass('hover')){
+                  $(this).removeClass('hover')
+                } else {
+                  $(this).addClass('hover')
+                }
+              })
+              .on('mouseleave', function () {
+                if ($(this).hasClass('hover')){
+                  $(this).removeClass('hover')
+                }
+              })
+    </script>
+  </div>
+
+  <div class="three-columns-layout">
+    <aside class="sidebar left-sidebar">
+      <div class="sidebar-holder sticky-block">
+        <div class="scrollbar-outer">
+          <nav class="wy-nav-sid">
+            <div class="">
+              {% block navigation %}
+              <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                {% block menu %}
+                  {#
+                    The singlehtml builder doesn't handle this toctree call when the
+                    toctree is empty. Skip building this for now.
+                  #}
+                  {% if 'singlehtml' not in builder %}
+                    {{ toctree(maxdepth=theme_navigation_depth|int,
+                                                collapse=theme_collapse_navigation|tobool,
+                                                includehidden=theme_includehidden|tobool,
+                                                titles_only=theme_titles_only|tobool) }}
+                  {% endif %}
+                {% endblock %}
+              </div>
+              {% endblock %}
+            </div>
+          </nav>
+        </div>
+      </div>
+    </aside>
+    {% if display_toc %}
+    <aside class="sidebar right-sidebar">
+      <div class="sidebar-holder sticky-block sticky-desktop-only">
+        <div class="scrollbar-outer">
+          <nav class="contents-table">
+            {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
+            {# Replace only first occurrence to be sure that we don't change any other elements except first #}
+              {{ toc|replace(title|striptags|e, "Contents", 1) }}
+          </nav>
+        </div>
+      </div>
+    </aside>
+    {% endif %}
+    <div class="main-column">
+      {%- block content %}
+      {% if theme_style_external_links|tobool %}
+      <div class="rst-content style-external-links">
+        {% else %}
+        <div class="rst-content">
+          {% endif %}
+          {% include "breadcrumbs.html" %}
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            {%- block document %}
+            <div itemprop="articleBody">
+              {% block body %}{% endblock %}
+            </div>
+            {% if self.comments()|trim %}
+            <div class="articleComments">
+              {% block comments %}{% endblock %}
+            </div>
+            {% endif%}
+          </div>
+          {%- endblock %}
+
+        </div>
+        {%- endblock %}
+      </div>
+    </div>
+  </div>
+
+  {% include "footer.html" %}
+
+  {% include "versions.html" %}
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
+      });
+  </script>
+
+  <script type="text/javascript">
+    stickyBlock();
+
+    $(document).ready(function(){
+      $('.scrollbar-outer').scrollbar();
+
+      stickyHeader();
+      mobileCollapse();
+      smoothScroll('.btn-back-to-top');
+      backToTop();
+      scrollSpy();
+      contentLinksScroll();
+    });
+    $(window).scroll(function(){
+      stickyBlock();
+      backToTop();
+    });
+    $(window).resize(function(){
+      stickyHeader();
+      stickyBlock();
+      mobileCollapse();
+    });
+
+
+    // sticky functional for header
+    function stickyHeader() {
+      var headerHeight = $('#header').height(),
+          versionsPanel = $('.header-panel');
+
+      if ($(window).prop('innerWidth') > 767){
+        if ($('#header').length > 0){
+          if(versionsPanel.length > 0){
+            $('body').addClass('fixed-header').css('padding-top' , headerHeight + versionsPanel.outerHeight());
+            versionsPanel.css('top', headerHeight);
+          } else {
+            $('body').addClass('fixed-header').css('padding-top' , headerHeight);
+          }
+        }
+      } else {
+        $('body').removeClass('fixed-header').css('padding-top' , 0);
+        versionsPanel.removeAttr('style');
+      }
+    }
+
+    // sticky functional for sidebars
+    function stickyBlock() {
+      if ($('.sticky-block').length > 0){
+        if ($(window).prop('innerWidth') > 767) {
+          var blockSticky = $(".sticky-block"),
+                  scrollPos = $(window).scrollTop(),
+                  scrollContainer = $('.three-columns-layout'),
+                  currentPosition = scrollContainer.offset().top + scrollContainer.outerHeight(),
+                  footerPos = $('.footer-container').offset().top;
+
+          blockSticky.each(function () {
+            var currentSticky = $(this),
+                    currentStickyPaddings = parseInt(currentSticky.css('padding-top')) + parseInt(currentSticky.css('padding-bottom')),
+                    sidebarCurrent = currentSticky.parent(),
+                    bodyTopPadding = parseInt($('body').css('padding-top')),
+//                    sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')),
+                    heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
+                    heightWithFooter = scrollPos + $(window).height() - footerPos;
+
+              if (currentPosition >= (scrollPos + $(window).height())) {
+                currentSticky.find('.scrollbar-outer').css('max-height', heightContent);
+              } else {
+                currentSticky.find('.scrollbar-outer').css('max-height', (heightContent - heightWithFooter));
+              }
+
+              sidebarCurrent.addClass('sticky-active');
+
+              if (($(window).height() - bodyTopPadding - heightWithFooter) < 150) {
+                $('.sidebar').css('visibility', 'hidden')
+              } else {
+                $('.sidebar').removeAttr('style');
+              }
+          });
+        }
+      }
+    }
+
+    // open-close functional for mobiles
+    function mobileCollapse() {
+      if ($(window).prop('innerWidth') < 768) {
+        $('.js-mobile-opener').on('click', function () {
+          var opener = $(this),
+              slide = opener.next('.js-mobile-slide');
+
+          if (opener.hasClass('opened')){
+            slide.slideUp('fast', function () {
+              opener.removeClass('opened');
+            })
+          } else {
+            slide.slideDown('fast', function () {
+              opener.addClass('opened');
+            })
+          }
+        })
+      } else {
+        $('.js-mobile-opener').removeClass('opened');
+        $('.js-mobile-slide').removeAttr('style');
+      }
+    }
+
+    // show/hide back-to-top button
+    function backToTop() {
+      if($(window).scrollTop() > 300){
+        $('.btn-back-to-top').addClass('visible');
+      } else {
+        $('.btn-back-to-top').removeClass('visible');
+      }
+    }
+
+    // smooth scroll on click
+    var smoothScroll = function (elem) {
+      $(elem).on('click', function (e) {
+        e.preventDefault();
+
+        $('html,body').stop().animate({
+          scrollTop: 0
+        })
+      });
+    };
+
+    // scroll spy
+    function scrollSpy() {
+      var lastId,
+              topMenu = $("nav.contents-table > ul"),
+              topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
+              menuItems = topMenu.find("a"),
+              scrollItems = menuItems.map(function(){
+                var itemHref = $(this).attr("href"),
+                        item = itemHref === "#" ? $('.three-columns-layout') : $(itemHref);
+                if (item.length) { return item; }
+              });
+
+      if ($('.right-sidebar .contents-table').length > 0) {
+        menuItems.click(function(e){
+          var href = $(this).attr("href"),
+                  currentOffset;
+
+          if ($(window).prop('innerWidth') > 767) {
+            currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
+          } else {
+            currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
+          }
+
+          var offsetTop = href === "#" ? 0 : currentOffset;
+
+          $('html, body').stop().animate({
+            scrollTop: offsetTop
+          });
+          e.preventDefault();
+        });
+
+        if ($(window).prop('innerWidth') > 1199) {
+          $(window).scroll(function(){
+            var fromTop = $(this).scrollTop() + topIndent;
+            var cur = scrollItems.map(function(){
+              if ($(this).offset().top < fromTop)
+                return this;
+            });
+            cur = cur[cur.length-1];
+            var id = cur && cur.length ? cur[0].id : "";
+
+            if (lastId !== id) {
+              lastId = id;
+              menuItems
+                      .parent().removeClass("active")
+                      .end().filter("[href='#"+id+"']").parent().addClass("active");
+            }
+          });
+        } else {
+          menuItems.parent().removeClass("active");
+        }
+      }
+    }
+
+    function contentLinksScroll() {
+      $('.main-column .section .toc-backref, .main-column .section .headerlink, .contents .simple .reference').click(function(e){
+        var href = $(this).attr("href"),
+                topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
+                currentOffset;
+
+        if ($(window).prop('innerWidth') > 767) {
+          currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
+        } else {
+          currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
+        }
+
+        var offsetTop = href === "#" ? 0 : currentOffset;
+
+        $('html, body').stop().animate({
+          scrollTop: offsetTop
+        });
+        e.preventDefault();
+      });
+    }
+  </script>
+
+  {# Do not conflict with RTD insertion of analytics script #}
+  {% if not READTHEDOCS %}
+    {% if theme_analytics_id %}
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', '{{ theme_analytics_id }}', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    {% endif %}
+  {% endif %}
+
+  {%- block footer %} {% endblock %}
+  <a href="#header" class="btn-back-to-top">
+    <i aria-hidden="true" class="fa fa-chevron-up"></i>
+    <span class="sr-text">Back to top</span>
+  </a>
+</body>
+</html>
