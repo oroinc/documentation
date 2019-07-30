@@ -1,0 +1,15 @@
+<div class="documentation-version-switcher">
+    <div class="version">{{ current_version }} version</div>
+    <ul class="documentation-version">
+        {%- if versions.tags %}
+            {%- for name, url in versions.tags %}
+                <li><a href="{{ url }}">{{ name }}{{ ' (current)' if name == current_version }}</a></li>
+            {%- endfor %}
+        {%- endif %}
+        {%- if versions.branches %}
+            {%- for name, url in versions.branches %}
+                <li><a href="{{ url }}">{{ name }}{{ ' (current)' if name == current_version }}</a></li>
+            {%- endfor %}
+        {%- endif %}
+    </ul>
+</div>

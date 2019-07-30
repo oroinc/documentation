@@ -116,13 +116,7 @@
   <div class="header-panel">
     <div class="header-panel-holder">
       <strong class="doc-title">Business Users Documentation Version</strong>
-      <div class="documentation-version-switcher">
-        <div class="version">3.1 version</div>
-        <ul class="documentation-version">
-          <li><a href="https://oroinc.com/b2b-ecommerce/doc/current">3.1 (current)</a></li>
-          <li><a href="https://oroinc.com/b2b-ecommerce/doc/1.6">1.6</a></li>
-        </ul>
-      </div>
+      {% include "version-switcher.html"%}
     </div>
     <script type="text/javascript">
       // hover effect. it needs for mobile devices
@@ -210,8 +204,6 @@
   </div>
 
   {% include "footer.html" %}
-
-  {% include "versions.html" %}
 
   <script type="text/javascript">
       jQuery(function () {
