@@ -3,8 +3,6 @@
 Manage Entities
 ===============
 
-.. contents:: :local:
-
 In your Oro application, you can update existing entities, delete custom entities with no records, and manage unique keys to avoid duplication of existing information.
 
 Edit an Entity

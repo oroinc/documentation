@@ -5,8 +5,6 @@
 Contribute to Translations
 ==========================
 
-.. contents:: :local:
-
 Oro applications support localization and internationalization for multiple languages and locales.
 All strings that may be translated are defined in the bundle translation domain files and are exposed via the translation management service `Crowdin <https://crowdin.com/>`__ to enable the collaborative translation efforts.
 

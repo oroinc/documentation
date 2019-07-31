@@ -3,9 +3,6 @@
 LDAP Integration
 ================
 
-.. contents:: :local:
-   :depth: 2
-
 Single sign-on capability (the ability for users to use the same login credentials for all corporate applications) is 
 particularly important for efficiency and performance in large-scale companies. LDAP Integration in Oro application supports this capability.
 

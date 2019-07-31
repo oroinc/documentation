@@ -3,8 +3,6 @@
 Add a Product Price Manually
 ============================
 
-.. contents:: :local:
-
 You can add a product price in the specific currency to the price list manually in one of the following ways:
 
 * While editing a product, in the **Product Prices** section of the product details.

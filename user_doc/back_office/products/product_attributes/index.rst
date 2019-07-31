@@ -3,8 +3,6 @@
 Product Attributes
 ==================
 
-.. contents:: :local:
-
 Overview
 --------
 

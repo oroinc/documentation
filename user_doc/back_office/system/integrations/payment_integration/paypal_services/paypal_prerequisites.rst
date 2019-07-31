@@ -5,8 +5,6 @@ Prerequisites for PayPal Services Integration
 
 .. begin
 
-.. contents:: :local:
-
 Before adding a PayPal Payflow Gateway as a payment method in OroCommerce, create a PayPal Payflow Gateway Manager Account and create a dedicated API transaction user for every instance of OroCommerce. You might need a separate instance for a sandbox, test, staging/pre-production, and production environment.
 
 Register a Business Account with PayPal

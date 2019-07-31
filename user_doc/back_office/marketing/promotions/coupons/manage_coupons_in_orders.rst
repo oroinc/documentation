@@ -1,8 +1,6 @@
 Manage Coupons in Orders
 ------------------------
 
-.. contents:: :local:
-
 .. begin_edit_in_order_body
 
 In your Oro application, you can manage coupons from the page of the selected :ref:`order <user-guide--sales--orders>`. Specifically, you can:

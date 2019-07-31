@@ -3,9 +3,6 @@
 Prerequisites for Apruve Services Integration
 =============================================
 
-.. contents:: :local:
-   :depth: 1
-
 Before adding Apruve as a payment method in OroCommerce, you need to create an Apruve business account and a dedicated API key via the official Apruve website.
 
 The role in the Apruve system is determined by the way you participate in a particular transaction. There are two different roles:

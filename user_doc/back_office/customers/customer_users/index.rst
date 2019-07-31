@@ -4,8 +4,6 @@
 Customer Users
 ==============
 
-.. contents:: :local:
-
 Customer users act on behalf of the company (i.e. customers in Oro context)  and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
 
 For customer user management, navigate to **Customers > Customer Users** in the main menu.

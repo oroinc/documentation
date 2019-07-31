@@ -6,9 +6,6 @@
 Shopping List
 =============
 
-.. contents:: :local:
-   :depth: 1
-
 Guest Shopping Lists
 --------------------
 

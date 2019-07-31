@@ -7,9 +7,6 @@ Tracking Websites
 
 Oro application offers an out-of-the-box tracking website solution that helps gain insight into how your customers use your website, track their actions on the website, and then use these data to collect statistics. These statistics can be used to generate segments of potential consumers to send targeted email campaigns to.
 
-.. contents:: :local:
-   :depth: 2
-
 Prerequisites for Creating a Tracking Website
 ---------------------------------------------
 

@@ -5,9 +5,6 @@
 Manage Opportunities
 ====================
 
-.. contents:: :local:
-   :depth: 2
-
 Opportunity Grid
 ----------------
 

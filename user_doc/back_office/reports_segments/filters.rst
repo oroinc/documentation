@@ -5,8 +5,6 @@
 Filters
 =======
 
-.. contents:: :local:
-
 Filters are used to define a set of records to be displayed. Its configuration enables users to automatically select only the records that meet the filter requirements.
 Filters are always created for the records of a specific type (:term:`entity <Entity>`) specified in the general details of the relevant field.
 

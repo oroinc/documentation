@@ -3,9 +3,6 @@
 Payment Terms Configuration
 ===========================
 
-.. contents:: :local:
-   :depth: 1
-
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 In OroCommerce, you can use payment terms configured per customer to help them use the payment conditions guaranteed by their contract with your company.

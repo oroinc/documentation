@@ -1,11 +1,7 @@
 .. _system--workflows--alternative-checkout-workflow:
 
-
 Alternative Checkout Workflow 
 =============================
-
-.. contents:: :local:
-   :depth: 2
 
 Overview
 --------

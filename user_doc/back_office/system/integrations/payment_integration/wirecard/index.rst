@@ -3,9 +3,6 @@
 Wirecard Payments Services
 ==========================
 
-.. contents:: :local:
-   :depth: 2
-
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 Wirecard is one of the leading providers of cashless payment services in Europe and around the world. It enables business owners to accept payment in more than 120 currencies via different payment methods using the single account.

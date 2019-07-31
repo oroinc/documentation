@@ -3,8 +3,6 @@
 |IcTaxes| Taxes
 ===============
 
-.. contents:: :local:
-
 Tax rules help OroCommerce find the correct tax rate that should be used for the products listed in the purchase order by matching the product tax code that indicates:
 
 * Tax status of the product

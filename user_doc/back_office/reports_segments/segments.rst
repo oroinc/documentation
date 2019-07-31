@@ -3,8 +3,6 @@
 Segments
 ========
 
-.. contents:: :local:
-   :depth: 1
 
 Segments are dynamically filtered subsets of the data (e.g. product collection, marketing list). To use a set of records in reports, filters, web catalog nodes or marketing lists, you can create a segment and reuse it instead of copying the same query as a condition.
 

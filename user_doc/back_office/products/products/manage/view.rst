@@ -17,10 +17,6 @@ Note that the exact set of sections (and their content) may vary depending on th
 
 This topic describes only the default sections and fields and the most common ones.
 
-
-.. contents:: :local:
-   :depth: 3
-
 Header
 ^^^^^^
 

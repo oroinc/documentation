@@ -3,9 +3,6 @@
 Use Quotes Workflows
 ====================
 
-.. contents:: :local:
-   :depth: 2
-
 The quote management procedure depends on the active quote-related workflow. Out of the box, the Oro application supports Simple Quote Management and Quote Management with Approvals.
 
 .. _simple-quote-management:

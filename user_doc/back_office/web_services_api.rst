@@ -7,9 +7,6 @@ Web Services API
 
 OroCommerce REST API enables developers to integrate Oro functionality into third-party software systems.
 
-.. contents:: :local:
-    :depth: 2
-
 Overview
 --------
 

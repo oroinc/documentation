@@ -3,9 +3,6 @@
 Log in/out
 ==========
 
-.. contents:: :local:
-   :depth: 2
-
 Oro application is a web application, and to access it, you need to enter its address in a web browser.
 
 If you are not currently logged into the Oro application, the **Login** page opens.

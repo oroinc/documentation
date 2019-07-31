@@ -9,8 +9,6 @@ Manage Integrations: Payment Method Integration
 
 You can configure an integration with third-party payment providers to offer their payment services for the quotes and orders placed using OroCommerce.
 
-.. contents:: :local:
-
 Generic Payment End-to-End Flow in OroCommerce
 ----------------------------------------------
 

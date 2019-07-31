@@ -1,8 +1,6 @@
 Manage Users
 ============
 
-.. contents:: :local:
-   :depth: 1
 
 .. _doc-user-management-users-actions-enable:
 .. _doc-user-management-users-actions-disable:

@@ -5,8 +5,6 @@ Prerequisites for PayPal Express Services Integration
 
 .. begin
 
-.. contents:: :local:
-
 Install Oro PayPal Express Integration Package
 ----------------------------------------------
 

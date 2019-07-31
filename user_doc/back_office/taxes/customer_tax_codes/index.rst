@@ -9,9 +9,6 @@ Customer Tax Code is a label that is assigned to a customer and indicates the ta
 
 The sections below provide guidance on managing customer tax codes, using them to label customers and bind customers to a dedicated tax rules.
 
-.. contents:: :local:
-   :depth: 1
-
 Create a Customer Tax Code
 --------------------------
 

@@ -3,9 +3,6 @@
 Understanding Pricing in OroCommerce
 ------------------------------------
 
-.. contents:: :local:
-   :depth: 4
-
 .. begin
 
 Price management in OroCommerce enables you to:

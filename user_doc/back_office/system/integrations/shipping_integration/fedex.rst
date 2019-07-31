@@ -3,9 +3,6 @@
 FedEx Shipping Integration
 --------------------------
 
-.. contents:: :local:
-   :depth: 2
-
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the payment concept in OroCommerce.
 
 FedEx is the largest multinational delivery service company that provides a variety of shipping methods solutions, both ground and airfreight, day and overnight, to meet the customers' requirements.

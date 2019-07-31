@@ -3,8 +3,6 @@ Move an Order Through Its Lifecycle
 
 From the order view page, you can control the order lifecycle, cancel or close orders, mark orders as shipped, and archive the old ones.
 
-.. contents:: :local:
-
 .. _doc--orders--actions--cancel:
 
 Cancel an Order

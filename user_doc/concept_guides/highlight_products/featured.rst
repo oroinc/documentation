@@ -10,8 +10,6 @@ You can mark some of the products as featured to display them in the Featured Pr
 .. image:: /user_doc/img/products/products/FeatruedProducts.png
    :alt: The way featured products are displayed in the storefront
 
-.. contents:: :local:
-
 Customize a Featured Products Segment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

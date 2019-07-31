@@ -12,11 +12,6 @@ Shopping lists are similar to shopping carts in most online stores. However, sho
 
 Via the back-office, you can access any shopping list created in the Oro storefront.
 
-Information on shopping lists is covered in the following sections:
-
-.. contents:: :local:
-   :depth: 2
-
 .. important:: See a short demo on `creating orders from the shopping list <https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_.
 
    .. raw:: html

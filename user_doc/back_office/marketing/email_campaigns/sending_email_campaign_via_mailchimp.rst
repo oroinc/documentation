@@ -3,9 +3,6 @@
 Send an Email Campaign via MailChimp
 ====================================
 
-.. contents:: :local:
-    :depth: 1
-
 Oro applications support an out-of-the-box integration with MailChimp, enabling you to:
 
 * Map the Marketing Lists as segments in MailChimp and keep them synchronized.

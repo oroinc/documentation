@@ -13,8 +13,6 @@ The following guide outlines the prerequisites for integration, describes the st
 
 .. hint:: Learn how to configure Outlook Integration in Oro system settings :ref:`globally <admin-configuration-ms-outlook-integration-settings--oro-side>` and per organization.
 
-.. contents:: :local:
-   :depth: 2
 
 Before You Begin
 ----------------

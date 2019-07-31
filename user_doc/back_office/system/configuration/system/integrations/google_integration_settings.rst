@@ -3,9 +3,6 @@
 Google Settings
 ===============
 
-.. contents:: :local:
-    :depth: 1
-
 .. hint:: Read more on this topic in :ref:`Google Integration <admin-configuration-google>`.
 
 To configure Google integration-related settings in the back-office:

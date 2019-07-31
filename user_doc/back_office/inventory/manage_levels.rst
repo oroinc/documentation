@@ -3,9 +3,6 @@
 Manage Inventory
 ================
 
-.. contents:: :local:
-   :depth: 2
-
 Manage Levels in the Inventory Registry
 ---------------------------------------
 

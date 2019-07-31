@@ -6,9 +6,6 @@
 Users
 =====
 
-.. contents:: :local:
-    :depth: 2
-
 A user is the most granular element of the administrative structure in your company. Usually, they are individuals employed by your company, or granted access under other conditions. They can also be a group of people or a third party system with a specific set of credentials (login and password) that can be used to access the Oro application. To ensure effective work of users and high protection of sensitive data in the application, correct configuration of all user records and access settings is essential.
 
 You can create any number of users for every organization in the Oro application and configure user-specific system settings and contact information visible to customers of the storefront.

@@ -20,9 +20,6 @@ Marketing lists may be based on the contacts from the following items:
 
 The way to create and manage contacts in a marketing list is described below.
 
-.. contents:: :local:
-    :depth: 2
-
 .. _user-guide-marketing-lists-create:
 .. _user-guide-marketing-marketing-list-create-general:
 .. _user-guide-marketing-marketing-list-create-columns:

@@ -5,9 +5,6 @@ Consents
 
 .. hint:: Read more on this topic in :ref:`Data Protection and Consent Management <user-guide--consents>`.
 
-.. contents:: :local:
-   :depth: 1
-
 If your company processes, stores and transmits personal data belonging to EU residents, you may be required to :ref:`comply with the General Data Protection Regulations (GDPR) <user-guide--consents>`. OroCommerce can assist you in observing these regulations by providing consent management mechanisms that enable you to create and manage new consents, and help your buyers view, manage and revoke consents applicable to them. 
 
 .. important:: You can find more information on data protection regulations in the official `GDPR portal <https://www.eugdpr.org/>`__ and the `EU Commission web page <https://ec.europa.eu/info/law/law-topic/data-protection_en>`__, or see the `ICO's Guide to the GDPR <https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr>`__ before you proceed.

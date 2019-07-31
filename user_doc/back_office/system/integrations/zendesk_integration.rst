@@ -4,9 +4,6 @@
 Zendesk Integration
 ===================
 
-.. contents:: :local:
-   :depth: 2
-
 Oro applications support out of the box integration with Zendesk, enabling you to load data from your Zendesk account and process it in the Oro application. This article describes how to define and edit the integration and synchronization settings.
 
 .. hint:: While Zendesk integration capabilities are pre-implemented, OroCRM and OroCommerce can be integrated with different third-party systems.

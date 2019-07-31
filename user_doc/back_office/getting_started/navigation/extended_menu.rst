@@ -3,8 +3,6 @@
 Extended Menu
 =============
 
-.. contents:: :local:
-
 The "hamburger" icon next to the user menu contains a history of your page views, the list of your favorite pages, and
 the list of the most viewed pages in the Oro application.
 

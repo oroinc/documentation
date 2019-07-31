@@ -4,9 +4,6 @@
 Currency
 ========
 
-.. contents:: :local:
-   :depth: 3
-
 Currency configuration helps you:
 
 * Add and remove currencies from the allowed currencies list.

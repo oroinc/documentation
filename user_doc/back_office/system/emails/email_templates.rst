@@ -5,9 +5,6 @@
 Templates
 =========
 
-.. contents:: :local:
-   :depth: 1
-
 With OroCommerce you can easily send numerous personalized emails using one template. For example, you can make a single template that welcomes {username}, assign it to an :ref:`email campaign <user-guide-email-campaigns>`, and each of your subscribers will get a mail sent specifically to them.
 
 Create a New Email Template

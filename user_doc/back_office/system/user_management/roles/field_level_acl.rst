@@ -3,9 +3,6 @@
 Field Level Permissions 
 =======================
 
-.. contents:: :local:
-    :depth: 2
-
 Overview
 --------
 

@@ -3,8 +3,6 @@
 Company Structure and Organization Selector
 ===========================================
 
-.. contents:: :local:
-
 Understanding the Company Structure
 -----------------------------------
 

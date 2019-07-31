@@ -3,9 +3,6 @@
 Email Configuration per Organization
 ====================================
 
-.. contents:: :local:
-   :depth: 1
-
 .. hint:: Read more on this topic in :ref:`Emails <admin-guide-email-configuration>`.
 
 Configure Email Settings

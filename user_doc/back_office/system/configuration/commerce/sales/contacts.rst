@@ -5,9 +5,6 @@
 Contacts (Sales Rep Information)
 ================================
 
-.. contents:: :local:
-   :depth: 1
-
 To provide customers with the contact information of their primary assigned sales representative, enable the display of the sales rep contact information in the Oro application storefront :ref:`footer links <frontstore-guide--navigation-footer>`.
 
 .. hint:: Contact information can be configured on four levels: globally, :ref:`per organization <sys--conf--commerce--sales--contacts-organization>`, :ref:`per website <sys--conf--commerce--sales--contacts-website>`, :ref:`per user <sys--conf--commerce--sales--contacts-user>`. Website settings override organization, organization settings override system and user settings may (sometimes) override all other settings, depending on configuration. In these cases, either customer owner or customer user owner may be used as a :ref:`user settings <sys--conf--commerce--sales--contacts-user>` source.

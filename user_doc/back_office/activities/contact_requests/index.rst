@@ -3,8 +3,6 @@
 Contact Requests
 ================
 
-.. contents:: :local:
-
 Contact requests are used to track contact with individuals who are requesting information such as product information, support, partnership information, or any other types of assistance. Oro has a standard embedded contact form out-of-the-box for you to add to your websites. When your customers use this form, contact requests are automatically generated and added to the page of all contacts in your Oro application. 
 
 Additionally, contact requests are used for consent management purposes when a customer :ref:`declines a consent <user-guide--consents--create>` in the OroCommerce storefront. When the **Declined Consent Notification** option is enabled for a specific consent, a notification is created in the back-office as a contact request to inform that the consent has been declined. Read more information on consents in the relevant :ref:`Data Protection and Consent Management <user-guide--consents>` topic.
