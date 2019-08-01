@@ -142,9 +142,9 @@
           </div>
           <div class="footer-box">
             <ul>
-              <li><a href="user_doc/concept_guides/index.html">Concept Guides</a></li>
-              <li><a href="user_doc/back_office/index.html">Back-office</a></li>
-              <li><a href="user_doc/storefront/index.html">Commerce Storefront</a></li>
+              <li><a href="{{ pathto('user_doc/concept_guides/index') }}">Concept Guides</a></li>
+              <li><a href="{{ pathto('user_doc/back_office/index') }}">Back-office</a></li>
+              <li><a href="{{ pathto('user_doc/storefront/index') }}">Commerce Storefront</a></li>
             </ul>
           </div>
         </li>
@@ -162,7 +162,7 @@
           </div>
           <div class="footer-box">
             <ul>
-<!--              <li><a href="#">Backend Developer’s Guide</a></li>-->
+              <li><a href="1dev_doc/backend/index.html">Backend Developer’s Guide</a></li>
 <!--              <li><a href="#">Frontend Developer’s Guide</a></li>-->
                 <!-- @todo: temporary link to old documentation-->
 <!--              <li><a href="https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/web-api">Web Services API</a></li>-->
@@ -183,9 +183,9 @@
           </div>
           <div class="footer-box">
             <ul>
-<!--              <li><a href="#">Cloud Architecture</a></li>-->
-<!--              <li><a href="#">orocloud-cli</a></li>-->
-<!--              <li><a href="#">Security & Monitoring</a></li>-->
+              <li><a href="{{ pathto('cloud_doc/architecture/index') }}">Cloud Architecture</a></li>
+              <li><a href="{{ pathto('cloud_doc/maintenance/index') }}">Maintenance</a></li>
+              <li><a href="{{ pathto('cloud_doc/security/index') }}">Security</a>
             </ul>
           </div>
         </li>

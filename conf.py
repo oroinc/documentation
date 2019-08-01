@@ -200,7 +200,7 @@ html_additional_pages = {'index': 'index.html'}
 htmlhelp_basename = 'TheOroCommercedoc'
 
 def setup(app):
-    app.add_stylesheet('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css')
+    app.add_stylesheet('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
 #    app.add_stylesheet('css/custom.css')
 
 # -- Options for LaTeX output --------------------------------------------------
