@@ -709,9 +709,7 @@ body {
 .wy-menu li.toctree-l1 a,
 .wy-menu li.toctree-l2 a,
 .wy-menu li.toctree-l3 a,
-.wy-menu li.toctree-l4 a,
-.wy-menu li.toctree-l5 a,
-.wy-menu li.toctree-l6 a {
+.wy-menu li.toctree-l4 a {
     color: #252525;
     background: none !important;
     border: none;
@@ -720,14 +718,10 @@ body {
 .wy-menu li.toctree-l2 a:hover,
 .wy-menu li.toctree-l3 a:hover,
 .wy-menu li.toctree-l4 a:hover,
-.wy-menu li.toctree-l5 a:hover,
-.wy-menu li.toctree-l6 a:hover,
 .wy-menu li.toctree-l1 a:focus,
 .wy-menu li.toctree-l2 a:focus,
 .wy-menu li.toctree-l3 a:focus,
-.wy-menu li.toctree-l4 a:focus,
-.wy-menu li.toctree-l5 a:focus,
-.wy-menu li.toctree-l6 a:focus {
+.wy-menu li.toctree-l4 a:focus {
     color: #b84926;
     background: none;
 }

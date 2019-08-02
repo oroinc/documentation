@@ -320,3 +320,20 @@ epub_copyright = u'2017, OroTeam'
 
 # Allow duplicate toc entries.
 #epub_tocdup = True
+
+# ORO settings
+
+# Branch name mappings
+oro_branch_name_mappings = {
+    'maintenance/2.6': '1.6',
+    'maintenance/3.1': '3.1'
+}
+
+# Name of branch with will be marked as "current" in template
+oro_current_version_branch = 'maintenance/3.1'
+
+# Additional context which will be injected to template engine
+html_context = {
+    'oro_branch_name_mappings': oro_branch_name_mappings,
+    'oro_current_version_branch': oro_current_version_branch
+}
