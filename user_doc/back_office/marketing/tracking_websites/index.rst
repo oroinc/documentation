@@ -193,7 +193,7 @@ Hover over the |IcMore| **More Options** menu to the right of the required track
 .. image:: /user_doc/img/marketing/tracking_websites/tracking_website_action.png
    :alt: Actions that are available from the page of all tracking websites
 
-.. note:: The tracking process also depends on the :ref:`Tracking Settings <admin-configuration-tracking>` defined for the OroCommerce instance.
+.. note:: The tracking process also depends on the :ref:`Tracking Settings <admin-configuration-tracking>` defined for the Oro instance.
 
 .. _user-guide-marketing-tracking-websites-share-page:
 

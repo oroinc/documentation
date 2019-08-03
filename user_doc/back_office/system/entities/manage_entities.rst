@@ -24,7 +24,7 @@ To edit an entity:
 
    - **Show Restricted** --- Select this check box if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <https://oroinc.com/orocrm/doc/current/admin-guide/security/access-role-management>`__ topic.
 
-   - **Searchable** --- Defines whether record users can search for and find records of this entity via OroCommerce's :ref:`search functionality <user-guide-getting-started-search>`.
+   - **Searchable** --- Defines whether record users can search for and find records of this entity via your Oro application's :ref:`search functionality <user-guide-getting-started-search>`.
 
      - **Yes** --- Select this value from the list if users can search for and find records of this entity.     
      - **No**--- Select this value from the list if records of this entity are invisible for search.

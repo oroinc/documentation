@@ -51,7 +51,7 @@ To create an integration with Zendesk:
      "**Default Zendesk User Email**","User with this email will be assigned tickets that come from the Oro application and for which
      there are no Zendesk users with a matching email address."
      "**Owner**","Limits the list of users that can manage the integration, subject to the access and permission settings
-     etc.) Used as an OroCRM user for Zendesk tickets if there are no users with a matching email address."
+     etc.) Used as an Oro application user for Zendesk tickets if there are no users with a matching email address."
   
 5. In the **Synchronization Settings** section, enable/disable the two-way synchronization.
 
@@ -59,7 +59,7 @@ To create an integration with Zendesk:
    
    If the box is left unselected, data from Zendesk is loaded into the Oro application, but changes performed within it are not loaded back into Zendesk.
 
-6. If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g. if the same customer details were edited from the both OroCRM and Zendesk):
+6. If the two-way synchronization is enabled, define the priority used for the conflict resolution (e.g., if the same customer details were edited from both Oro application and Zendesk):
 
    * **Remote wins** --- Zendesk data is applied to both Zendesk and the Oro application.
    * **Local wins** --- Oro application data is applied to both Zendesk and Oro the application.
@@ -69,7 +69,7 @@ To create an integration with Zendesk:
 Manage the Integration
 ----------------------
 
-As an illustration, we have created a sample Zendesk integration with two-way synchronization enabled and sync priority set to **Remote Wins**. This means that if the same data is changed from both Zendesk and OroCRM, Zendesk changes take precedence.
+As an illustration, we have created a sample Zendesk integration with two-way synchronization enabled and sync priority set to **Remote Wins**. This means that if the same data is changed from both Zendesk and Oro application, Zendesk changes take precedence.
 
 .. image:: /user_doc/img/system/integrations/zendesk/zendesk_create.png
 
@@ -103,12 +103,12 @@ A new case is created in the Oro application for every Zendesk ticket. The ticke
 follows:
 
 .. csv-table::
-  :header: "Zendesk Field", "OroCRM case field", "Comments"
+  :header: "Zendesk Field", "Oro application case field", "Comments"
   :widths: 20, 20, 40
 
   "Subject","Subject", "Can be used to find the ticket/case in the grid"
-  "Description","Description","Is also added as the first public comment for both the OroCRM case and the Zendesk ticket"
-  "Assignee","Assigned to","The email address of the assignee is checked against primary emails of OroCRM :term:`User` 
+  "Description","Description","Is also added as the first public comment for both the Oro case and the Zendesk ticket"
+  "Assignee","Assigned to","The email address of the assignee is checked against primary emails of the Oro application :term:`User`
   records:
 
       - If there is a matching email, the user is mapped to the **Assignee** field value.
@@ -122,7 +122,7 @@ follows:
    :header-rows: 1
  
    * - Zendesk
-     - OroCRM
+     - OroCRM/OroCommerce
     
    * - Low
      - Low
@@ -143,7 +143,7 @@ follows:
    :header-rows: 1
  
    * - Zendesk
-     - OroCRM
+     - OroCRM/OroCommerce
     
    * - New
      - Open
@@ -165,55 +165,55 @@ For each case created as a result of synchronization with Zendesk, a ticket is c
 The following field values are defined as follows:
   
 .. csv-table::
-  :header: "OroCRM Ticket Field", "Description"
+  :header: "OroCRM/OroCommerce Ticket Field", "Description"
   :widths: 15, 40
 
   "Ticket Number","Zendesk ticket number. Used to 
   determine if an existing case/ticket must  be updated or if a new one must be created."
   "Recipients Email","Same as the **Recipients Email** field in the Zendesk ticket."
-  "Status","Same as the **Status** field in the Zendesk ticket.(Does not map to the OroCRM statuses)."
+  "Status","Same as the **Status** field in the Zendesk ticket.(Does not map to the Oro application statuses)."
   "Type","Same as the **Type** field in the Zendesk ticket."
   "Submitter","A contact or user. There are two possible cases:
   
-  - If the ticket has been submitted to Zendesk by an end user (e.g. by email or from Facebook) an
-    OroCRM :term:`Contact` record is tied to it, as follows: 
+  - If the ticket has been submitted to Zendesk by an end user (e.g., by email or from Facebook) an
+    Oro application :term:`Contact` record is tied to it, as follows:
 
-    - The email address of the end user is checked against primary emails of OroCRM :term:`Contact` records:
+    - The email address of the end user is checked against primary emails of Oro :term:`Contact` records:
 
       - If there is a matching email, the contact is mapped to the **Submitter** field value.
       - If there is no matching email, a new contact is created and mapped to the **Submitter** field value.
 
-    - The mapped OroCRM contact name and the link to it are displayed as a value for the **Submitter** field in the ticket
-      created in OroCRM.
+    - The mapped Oro contact name and the link to it are displayed as a value for the **Submitter** field in the ticket
+      created in the Oro application.
       
       (So, for example, if the ticket was submitted by user 'DreamWorks Founder' in Zendesk and the user's email
-      matches the email of the OroCRM Contact 'Steven Spielberg,' the **Submitter** field in the OroCRM ticket will be
+      matches the email of the Oro application Contact 'Steven Spielberg,' the **Submitter** field in the ticket will be
       filled with the value 'Steven Spielberg').
   
-  - If the ticket has been submitted to Zendesk by an agent or administrator, an OroCRM :term:`User` record
+  - If the ticket has been submitted to Zendesk by an agent or administrator, OroCRM/OroCommerce :term:`User` record
     is tied to it, as follows: 
 
-    - The email address of the submitter is checked against primary emails of OroCRM :term:`User` records:
+    - The email address of the submitter is checked against primary emails of the Oro application :term:`User` records:
 
       - If there is a matching email, the user is mapped to the **Submitter** field value.
       - If there is no matching email, the integration owner is mapped to the **Submitter** field value.
 
   "
-  "Assignee","The email address of the assignee is checked against primary emails of OroCRM :term:`User` records:
+  "Assignee","The email address of the assignee is checked against primary emails of the Oro application :term:`User` records:
 
       - If there is a matching email, the user is mapped to the **Assignee** field value.
       - If there is no matching email, the integration owner is mapped to the **Assignee** field value.
 
   "
-  "Requester","An OroCRM :term:`Contact` record is tied to it, as follows: 
+  "Requester","An OroCRM/OroCommerce :term:`Contact` record is tied to it, as follows:
 
-  - The email address of the requester in Zendesk is checked against primary emails of OroCRM :term:`Contact` records:
+  - The email address of the requester in Zendesk is checked against primary emails of the Oro application :term:`Contact` records:
 
     - If there is a matching email, the contact is mapped to the **Requester** field value.
     - If there is no matching email, a new contact is created and mapped to the **Requester** field value.
 
   "
-  "Priority","Same as the **Priority** field of the Zendesk ticket (Does not map to the OroCRM priorities)."
+  "Priority","Same as the **Priority** field of the Zendesk ticket (Does not map to the Oro priorities)."
   "Problem","Same as the **Problem** field in the Zendesk ticket."
   "Collaborators","Same as the **Collaborators** field in the Zendesk ticket."
 
@@ -225,11 +225,11 @@ If two-way synchronization is enabled, the **Publish to Zendesk** button is avai
 The case fields are mapped to the Zendesk ticket fields as follows:
 
 .. csv-table::
-  :header: "OroCRM case field", "Zendesk field", "Comments"
+  :header: "Oro case field", "Zendesk field", "Comments"
   :widths: 20, 20, 40
 
   "Subject","Subject", "Can be used to find the ticket/case in the grid"
-  "Description","Description","Is also added as the first public comment for the both OroCRM case and Zendesk ticket"
+  "Description","Description","Is also added as the first public comment for the both Oro case and Zendesk ticket"
   "Assigned to","Assignee","The email address of the *Assigned to* user is checked against the emails of Zendesk 
   users:
 
@@ -243,7 +243,7 @@ The case fields are mapped to the Zendesk ticket fields as follows:
    :widths: 10 30
    :header-rows: 1
  
-   * - OroCRM
+   * - OroCRM/OroCommerce
      - Zendesk
     
    * - Low
@@ -262,7 +262,7 @@ The case fields are mapped to the Zendesk ticket fields as follows:
    :widths: 10 30
    :header-rows: 1
  
-   * - OroCRM
+   * - OroCRM/OroCommerce
      - Zendesk
     
    * - Open
@@ -278,7 +278,7 @@ The case fields are mapped to the Zendesk ticket fields as follows:
      - Solved
   "
 
-- After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in OroCRM.
+- After the ticket has been created in Zendesk, its details are saved in the Ticket related to the case in the Oro application.
   
 Review Further Sync Rules
 ^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -22,7 +22,7 @@ Currency configuration helps you:
 Multi-Currency
 --------------
 
-Multiple currency functionality for OroCRM is a useful tool for companies that do business internationally and negotiate deals in various currencies.
+Multiple currency functionality in the Oro application is a useful tool for companies that do business internationally and negotiate deals in various currencies.
 
 .. note:: This feature is only available in the Enterprise edition.
 

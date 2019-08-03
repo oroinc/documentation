@@ -377,7 +377,7 @@ To define a translation:
 Detailed Information About System Workflows
 -------------------------------------------
 
-See the following sections to get more information about the system workflows in OroCommerce:
+See the following sections to get more information about the system workflows in the Oro application:
 
 .. toctree::
    :maxdepth: 1
