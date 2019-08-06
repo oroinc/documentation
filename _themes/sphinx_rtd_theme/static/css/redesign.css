@@ -671,7 +671,7 @@ body {
 }
 .three-columns-layout {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1600px;
     padding: 22px 15px 30px;
     position: relative;
     flex-grow: 1;
@@ -825,6 +825,12 @@ body {
 .wy-menu li.toctree-l3 > a span.toctree-expand{
     left: -8px;
 }
+
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}
+
 .contents-table {
     padding: 8px 4px;
 }
