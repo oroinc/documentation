@@ -215,7 +215,10 @@
   </script>
 
   <script type="text/javascript">
-    var curLinkPos = $('.left-sidebar .wy-menu').find('a[href="#"]').position().top;
+    if (('.left-sidebar .wy-menu a[href="#"]').length){
+      var curLinkPos = $('.left-sidebar .wy-menu a[href="#"]').position().top;
+    }
+
     var topIndent = ($('.header-container').height() + parseInt($('.three-columns-layout').css('padding-top')));
 
     $(document).ready(function(){
@@ -230,13 +233,13 @@
       setTimeout(isPageScrolled, 50);
       setTimeout(isLeftSidebarScrolled, 50);
 
-      $('.sidebar .wy-menu a.current').on('click', function () {
+      $('.sidebar .toctree-l2 a.current').on('click', function () {
         if ($(this).attr('href') == "#") {
           $(this).closest('.sidebar').addClass('v-hidden');
           $(this).closest('.sidebar').find('.sidebar-holder').css({'transition' : 'none'});
-        }
 
-        setTimeout(isLeftSidebarScrolled, 50);
+          setTimeout(isLeftSidebarScrolled, 50);
+        }
       });
     });
 
