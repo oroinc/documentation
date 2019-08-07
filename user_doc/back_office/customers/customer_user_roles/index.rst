@@ -5,9 +5,6 @@ Customer User Roles
 
 .. begin
 
-.. contents:: :local:
-   :depth: 1
-
 
 .. note::
     See a short demo on `how to create customer roles in Oro applications <https://www.oroinc.com/orocommerce/media-library/create-customer-roles>`_, or keep reading the step-by-step guidance below.

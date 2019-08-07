@@ -39,9 +39,6 @@ The following information about the localizations is available in the Localizati
 | UPDATED AT          | The date when the localization is updated.                                                                                        |
 +---------------------+-----------------------------------------------------------------------------------------------------------------------------------+
 
-With every item in the Localizations list, you can perform the following actions:
-
-.. contents:: :local:
 
 Manage Localizations
 ^^^^^^^^^^^^^^^^^^^^

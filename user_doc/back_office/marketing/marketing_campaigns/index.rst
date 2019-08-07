@@ -11,8 +11,6 @@ You can include any number of :ref:`email campaigns <user-guide-email-campaigns-
 
 This article describes the ways to create, manage, and view the campaign records.
 
-.. contents:: :local:
-    :depth: 2
 
 .. _user-guide-marketing-campaigns-create:
 

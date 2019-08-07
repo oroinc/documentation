@@ -4,9 +4,6 @@
 Accounts
 ========
 
-.. contents:: :local:
-   :depth: 1
-
 Accounts originated in OroCRM as a tool to collect and process information on the customer activity of a person, group of people or business cooperating with
 you. An account can aggregate details of all the customer identities, providing a 360-degree view of the customer. Customer data and business transactions are displayed on the account page, and their activities are added to the account's activity list.
 

@@ -3,8 +3,6 @@
 Payment Rules
 =============
 
-.. contents:: :local:
-
 .. begin
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.

@@ -21,10 +21,6 @@ You can reach record tables in the following ways:
       :width: 40%
       :alt: Click the grid link on the page of a record
 
-Follow the links below to learn more about the actions you can perform within record tables:
-
-.. contents:: :local:
-    :depth: 1
 
 .. _doc-grids-actions-pager:
 .. _doc-grids-actions-set-items-per-page:

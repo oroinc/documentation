@@ -4,8 +4,6 @@
 Configure Content Visibility
 ----------------------------
 
-.. contents:: :local:
-
 .. begin
 
 Set Up Visibility of Content Node

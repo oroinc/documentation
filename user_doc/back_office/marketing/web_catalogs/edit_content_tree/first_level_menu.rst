@@ -4,8 +4,6 @@
 Set Up the Homepage, First Level Menu, and Sub Menus
 ----------------------------------------------------
 
-.. contents:: :local:
-
 .. begin
 
 Concepts

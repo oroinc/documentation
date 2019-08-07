@@ -3,9 +3,6 @@
 Generate a Product Price Automatically
 ======================================
 
-.. contents:: :local:
-   :depth: 2
-
 Automate a Price List
 ---------------------
 

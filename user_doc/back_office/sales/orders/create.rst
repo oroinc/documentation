@@ -1,8 +1,6 @@
 Create an Order
 ===============
 
-.. contents:: :local:
-
 .. _user-guide--sales--orders--create:
 
 .. begin

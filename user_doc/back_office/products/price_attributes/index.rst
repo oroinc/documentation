@@ -13,10 +13,6 @@ Before reading on, consider watching a short demo from our media library on `how
 
 You can use the price attribute as a base value for manually or automatically generated price list.
 
-In this section you will learn how to:
-
-.. contents:: :local:
-
 Create a Price Attribute
 ------------------------
 

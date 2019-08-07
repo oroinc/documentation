@@ -4,8 +4,6 @@
 Products Grid
 =============
 
-.. contents:: :local:
-
 In this section, you will learn how to control and manage product information displayed in the grid.
 
 In the main menu, navigate to **Products > Products**. The product list opens.

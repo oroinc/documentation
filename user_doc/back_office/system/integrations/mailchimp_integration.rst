@@ -5,9 +5,6 @@ MailChimp Integration
 
 .. begin_include
 
-.. contents:: :local:
-    :depth: 2
-
 Install Extension
 -----------------
 

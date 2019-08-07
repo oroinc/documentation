@@ -3,8 +3,6 @@
 Payments at Checkout
 ====================
 
-.. contents:: :local:
-
 After the integration is complete, the customer user may select one of the payment methods that are shown after the connectivity check and payment rules evaluation.
 
 PayPal Payflow Gateway with No CVV Required

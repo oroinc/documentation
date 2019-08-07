@@ -6,8 +6,6 @@ Menus
 
 In this section, you will learn the menu types available for the OroCommerce and OroCRM Backend and how to configure them.
 
-.. contents:: :local:
-    :depth: 3
 
 Backend Menus Overview
 ----------------------

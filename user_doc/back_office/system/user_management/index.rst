@@ -4,9 +4,6 @@
 User Management
 ===============
 
-.. contents:: :local:
-   :depth: 1
-
 Oro uses the hierarchy of roles to determine the levels of user access to data. In Oro applications, user, role and access management capabilities can be tailored to reflect any specific administrative hierarchy, helping define access and permission settings for any business need.
 
 This section describes in detail how to create and manage the elements of the administrative structure, such as users, user groups, organization, and business units, illustrates how to work with roles and permissions, and demonstrates how to configure access to data.

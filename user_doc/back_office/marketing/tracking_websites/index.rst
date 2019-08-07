@@ -7,9 +7,6 @@ Tracking Websites
 
 Oro application offers an out-of-the-box tracking website solution that helps gain insight into how your customers use your website, track their actions on the website, and then use these data to collect statistics. These statistics can be used to generate segments of potential consumers to send targeted email campaigns to.
 
-.. contents:: :local:
-   :depth: 2
-
 Prerequisites for Creating a Tracking Website
 ---------------------------------------------
 
@@ -196,7 +193,7 @@ Hover over the |IcMore| **More Options** menu to the right of the required track
 .. image:: /user_doc/img/marketing/tracking_websites/tracking_website_action.png
    :alt: Actions that are available from the page of all tracking websites
 
-.. note:: The tracking process also depends on the :ref:`Tracking Settings <admin-configuration-tracking>` defined for the OroCommerce instance.
+.. note:: The tracking process also depends on the :ref:`Tracking Settings <admin-configuration-tracking>` defined for the Oro instance.
 
 .. _user-guide-marketing-tracking-websites-share-page:
 

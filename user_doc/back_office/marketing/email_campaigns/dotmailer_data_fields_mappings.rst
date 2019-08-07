@@ -3,9 +3,6 @@
 Manage dotmailer Data Fields and Mappings
 =========================================
 
-.. contents:: :local:
-   :depth: 2
-
 Data Fields
 -----------
 

@@ -6,8 +6,6 @@ Create a Guest RFQ
 
 .. begin
 
-.. contents:: :local:
-   :depth: 2
 
 In the Oro application, guest customers can create a request for a quote for the items they are interested in purchasing without the need to register.
 

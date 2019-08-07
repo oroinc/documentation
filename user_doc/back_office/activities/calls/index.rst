@@ -4,8 +4,6 @@
 Calls
 =====
 
-.. contents:: :local:
-
 For those users who make and receive many calls per day and communicate with clients by phone, Oro provides call tracking tool to record any call-related details, such as the subjects of calls, people involved, and even call duration. This is especially helpful to managers who can monitor the progress of important tasks and see if all key contacts have received enough attention.
 
 Additionally, Oro application's integration with :ref:`Google Hangouts <user-guide-hangouts>` enables you to make Hangouts voice or video calls from within your Oro application, providing an advantage for sales and support teams by helping them connect with customers directly.

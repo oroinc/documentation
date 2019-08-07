@@ -5,9 +5,6 @@
 Upload Settings
 ===============
 
-.. contents:: :local:
-   :depth: 2
-
 To define the formats of the files to be uploaded into the website back-office or the storefront, you need to configure the corresponding **MIME types** settings in the system configuration.
 
 **MIME types** are Multipurpose Internet Mail Extension types which help identify the types of the attachments and, thus, limit the possibility of uploading the documents of inappropriate extensions.

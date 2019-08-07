@@ -4,9 +4,6 @@
 Payment Configuration
 =====================
 
-.. contents:: :local:
-   :depth: 2
-
 To facilitate global B2B sales, OroCommerce administrator enables valid payment methods for particular locations and integrates local payment providers or the best payment options whenever it is possible.
 
 When submitting an order, the customer may have several payment options to choose from. They depend on the payment address that is collected at the checkout. Once an address is provided, OroCommerce evaluates payment methods against the special payment rules and exposes only the options recommended for the particular location and/or based on other order details. After the customer user has selected the payment method, they are prompted to enter payment details and proceed to the checkout.

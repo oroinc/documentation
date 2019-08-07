@@ -3,8 +3,6 @@
 Prerequisites for Authorize.Net Integration
 ===========================================
 
-.. contents:: :local:
-   :depth: 2
 
 .. begin
 

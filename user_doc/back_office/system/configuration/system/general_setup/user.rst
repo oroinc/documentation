@@ -3,8 +3,6 @@
 User Settings
 =============
 
-.. contents:: :local:
-
 To apply user-related options in your Oro application instance:
 
 1. Navigate to **System > Configuration** in the main menu.

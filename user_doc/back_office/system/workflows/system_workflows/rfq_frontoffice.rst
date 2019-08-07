@@ -5,9 +5,6 @@
 RFQ Submission Flow Workflow
 ----------------------------
 
-.. contents:: :local:
-   :depth: 1
-
 .. start_front_flow
 
 Overview

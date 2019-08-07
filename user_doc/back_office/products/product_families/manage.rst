@@ -3,8 +3,6 @@
 Manage Product Attributes in Product Families
 =============================================
 
-.. contents:: :local:
-
 .. _product--product-families--view:
 
 View Details of Product Families

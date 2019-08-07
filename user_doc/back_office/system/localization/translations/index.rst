@@ -43,10 +43,6 @@ The following information about the translations is available in the All Transla
 
    .. image:: /user_doc/img/system/localization/translations_rule_of_thumb.png
 
-You can perform the following actions with translations:
-
-.. contents:: :local:
-
 
 Verify Translations
 ^^^^^^^^^^^^^^^^^^^

@@ -3,9 +3,6 @@
 Sidebar Panel
 =============
 
-.. contents:: :local:
-   :depth: 2
-
 The sidebar panel is a host for a number of widgets that provide fast and convenient access to frequently needed 
 information, such as recent emails or the task list. 
 

@@ -8,9 +8,6 @@ Shipping Options
 
 .. begin
 
-.. contents:: :local:
-   :depth: 2
-
 Global Shipping Options
 ^^^^^^^^^^^^^^^^^^^^^^^
 

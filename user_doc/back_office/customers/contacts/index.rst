@@ -3,8 +3,6 @@
 Contacts
 ========
 
-.. contents:: :local:
-   :depth: 1
 
 In your Oro application, you can use contacts to save details of actual people with whom you are getting in touch during the business activities.
 

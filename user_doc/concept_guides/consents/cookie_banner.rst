@@ -3,9 +3,6 @@
 Add a Cookie Banner to the Website
 ==================================
 
-.. contents:: :local:
-   :depth: 1
-
 Cookies can be used to uniquely identify a person, which means that they represent personal data. In compliance with the General Data Protection Regulations (GDPR), it is required to let website visitors and customers know what types of cookies will be used, and allow them to choose which ones they want to agree to. Implied consents and consents given simply by visiting a website are not enough.
 
 To comply with the GDPR policy, OroCommerce enables you to set up a **Cookie Banner** with your custom text to be displayed in the storefront of the OroCommerce website, and translate it into your preferred language.

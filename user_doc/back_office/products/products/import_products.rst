@@ -6,8 +6,6 @@ Import Product Information
 
 **Import File** option helps import a large bulk of product information into the product catalog using the .csv file.
 
-.. contents:: :local:
-
 Import Products
 ^^^^^^^^^^^^^^^
 

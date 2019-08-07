@@ -5,8 +5,6 @@ UPS Shipping Integration
 
 .. begin_ups_integration
 
-.. contents:: :local:
-   :depth: 2
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the payment concept in OroCommerce.
 

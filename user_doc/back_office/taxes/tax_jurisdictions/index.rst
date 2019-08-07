@@ -9,9 +9,6 @@ Tax Jurisdiction is a geographical address of the area that is governed by the s
 
 The sections below provide guidance on managing tax jurisdictions and assigning dedicated tax rules for these tax jurisdictions.
 
-.. contents:: :local:
-   :depth: 1
-
 Create a Tax Jurisdiction
 -------------------------
 

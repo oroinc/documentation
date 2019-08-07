@@ -6,8 +6,6 @@
 My Emails
 =========
 
-.. contents:: :local:
-
 .. note:: Before you start using **My Emails**, please configure your personal mailbox connection to the mail server. See :ref:`Personal Email Configuration <my-email-configuration>` for more information.
 
 Oro application allows you to send and receive emails from within the system using both personal and system (company-wide) mailboxes. You can neatly design letters using HTML formatting and a built-in text editor, create and use email templates, attach files to emails, configure personalized signatures.

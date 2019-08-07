@@ -3,9 +3,6 @@
 Embedded Forms
 ==============
 
-.. contents:: :local:
-   :depth: 2
-
 In Oro application, embedded forms help create the code that may be added to a third-party website to enable communication between the third-party website users and the Oro application.
 
 Embedded forms may be used to collect requests of marketing, technical, commercial or any other nature.

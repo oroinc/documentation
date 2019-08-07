@@ -16,9 +16,6 @@ The ability to create, edit, and delete events depends on the user's :ref:`roles
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/fVcOy3TmuQg" frameborder="0" allowfullscreen></iframe>
 
-This section described the following topics:
-
-.. contents:: :local:
 
 Create System and Organization Calendars
 ----------------------------------------

@@ -5,9 +5,6 @@
 Roles and Permissions
 =====================
 
-.. contents:: :local:
-    :depth: 1
-
 Roles are predefined sets of permissions. After users are assigned a specific role that is typically based on job functions, they can manage information relevant to their job role. One user can even have several roles to cover for a flexible set of functions.
 
 You can create as many roles as required and configure permissions for them according to the needs of your company. 

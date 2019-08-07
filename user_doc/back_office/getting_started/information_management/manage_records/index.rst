@@ -7,7 +7,6 @@ There are a number of standard actions for managing records in Oro applications,
 
 This topic describes the common actions you can perform to most records, such as editing, saving, deleting, and more.
 
-.. contents:: :local:
 
 .. _user-guide-ui-components-view-pages:
 .. _doc-grids-actions-records-view:

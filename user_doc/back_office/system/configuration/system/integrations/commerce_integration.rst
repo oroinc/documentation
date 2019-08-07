@@ -4,9 +4,6 @@
 CRM and Commerce
 ================
 
-.. contents:: :local:
-    :depth: 3
-
 
 The integration between `OroCRM <https://www.oroinc.com/orocrm>`_ and `OroCommerce <https://oroinc.com/b2b-ecommerce/>`_ provides seamless experience of two applications working as one.
 

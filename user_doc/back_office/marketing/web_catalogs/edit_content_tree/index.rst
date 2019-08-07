@@ -3,9 +3,6 @@
 Edit a Web Catalog Content Tree
 ===============================
 
-.. contents:: :local:
-   :depth: 4
-
 To edit a web catalog content tree:
 
 #. Navigate to **Marketing > Web Catalogs** in the main menu.

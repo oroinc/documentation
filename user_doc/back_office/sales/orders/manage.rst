@@ -1,9 +1,6 @@
 Manage Orders
 =============
 
-.. contents:: :local:
-   :depth: 2
-
 .. _user-guide--sales--orders--viewlist:
 
 Manage Orders in the Order Grid

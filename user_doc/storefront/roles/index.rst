@@ -3,11 +3,6 @@
 Roles
 =====
 
-**Table of Contents**
-
-.. contents:: :local:
-   :depth: 1
-
 Roles are predefined sets of permissions. In the Roles section, you can view, edit and create new roles to define the level of permissions and access to the actions and data in OroCommerce storefront for the users of a specific role.
 
 To locate roles:

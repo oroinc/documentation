@@ -30,7 +30,7 @@ The following information about the languages is available in the All Languages 
 +--------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-Every language covers the OroCommerce elements translation for a specific localization. For example, French (Canada) or English (Canada) localization may be linked to a respective language with translations that apply to Canada only.
+Every language covers the Oro application elements translation for a specific localization. For example, French (Canada) or English (Canada) localization may be linked to a respective language with translations that apply to Canada only.
 
 To add a new translation and start using it for localization:
 
@@ -44,7 +44,7 @@ Now, once the language has appeared in the list, you can perform the following a
 
 .. image:: /user_doc/img/system/localization/languages_actions.png
 
-1. Import the file with the system elements translation from the `Crowdin <https://crowdin.com/join>`_ service into the Oro application by clicking the |IcCloudDownload| icon at the end of the row and then **Install** in the popup form. The import is available if the status in the **Updates** column is set to *Can be installed* signifying that the corresponding translation has been provided on the Crowdin website. More information on how to contribute to OroCommerce translation is described in the :ref:`Contribute to Translations <doc--community--ui-translations>` section.
+1. Import the file with the system elements translation from the `Crowdin <https://crowdin.com/join>`_ service into the Oro application by clicking the |IcCloudDownload| icon at the end of the row and then **Install** in the popup form. The import is available if the status in the **Updates** column is set to *Can be installed* signifying that the corresponding translation has been provided on the Crowdin website. More information on how to contribute to the Oro application translation is described in the :ref:`Contribute to Translations <doc--community--ui-translations>` section.
 
 2. If there is no translation available on the Crowdin website, or it is not enough to cover all the text system elements in the application, provide your own translation:
 
