@@ -110,179 +110,223 @@
 
 <body class="wy-body-for-nav">
   {% block extrabody %} {% endblock %}
-
-  {% include "header.html" %}
-
-  <div class="hero-banner">
-    <div class="hero-banner-holder">
-      <div class="hero-banner-heading">
-        <h1>Welcome to Oro Documentation</h1>
-      </div>
-      <div class="hero-banner-content">
-        <p>Find everything you need to use and develop your Oro business application.</p>
-        <p>Explore comprehensive knowledge base and learn OroCommerce, OroCRM, and OroPlatform features and architecture.</p>
-      </div>
-    </div>
+  <div class="header-container">
+    {% include "header.html" %}
   </div>
-
-  <div class="section-container">
-    <div class="section-container-holder">
-      <ul class="three-columns-list">
-        <li>
-          <div class="main-section">
-            <div class="heading-box">
-              <div class="heading-icon" aria-hidden="true">
-                <img src="{{ pathto('_static/images/icon-business-users.png', 1) }}" alt="" role="presentation">
-              </div>
-              <h2><span>Business Users</span></h2>
-            </div>
-            <div class="content-box">
-              <p>User documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and hsipping methods in the management console to exploring the checkout process in the ecommerce storefront.</p>
-            </div>
-          </div>
-          <div class="footer-box">
-            <ul>
-              <li><a href="user_doc/concept_guides/index.html">Concept Guides</a></li>
-              <li><a href="user_doc/back_office/index.html">Back-office</a></li>
-              <li><a href="user_doc/storefront/index.html">Commerce Storefront</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="main-section">
-            <div class="heading-box">
-              <div class="heading-icon" aria-hidden="true">
-                <img src="{{ pathto('_static/images/icon-developers.png', 1) }}" alt="" role="presentation">
-              </div>
-              <h2><span>Developers</span></h2>
-            </div>
-            <div class="content-box">
-              <p>Developer Documentation is intended for Oro developers and contains information about OroPlatform architecture, guidance on customization and extension of the existing features in Oro applications, and how-to articles about configuration and setup necessary for development or future use of the application.</p>
-            </div>
-          </div>
-          <div class="footer-box">
-            <ul>
-<!--              <li><a href="#">Backend Developer’s Guide</a></li>-->
-<!--              <li><a href="#">Frontend Developer’s Guide</a></li>-->
-                <!-- @todo: temporary link to old documentation-->
-<!--              <li><a href="https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/web-api">Web Services API</a></li>-->
-            </ul>
-          </div>
-        </li>
-        <li>
-          <div class="main-section">
-            <div class="heading-box">
-              <div class="heading-icon" aria-hidden="true">
-                <img src="{{ pathto('_static/images/icon-cloud.png', 1) }}" alt="" role="presentation">
-              </div>
-              <h2><span>Cloud Administrators</span></h2>
-            </div>
-            <div class="content-box">
-              <p>Cloud Documentation is here to help you build and maintain the infrastructure for any business domain. Learn about OroCloud architecture and security, the typical process of OroCloud onboarding, using OroCloud maintenance tools, monitoring principles, as well as technical support service details.</p>
-            </div>
-          </div>
-          <div class="footer-box">
-            <ul>
-<!--              <li><a href="#">Cloud Architecture</a></li>-->
-<!--              <li><a href="#">orocloud-cli</a></li>-->
-<!--              <li><a href="#">Security & Monitoring</a></li>-->
-            </ul>
-          </div>
-        </li>
-      </ul>
+  <div class="content-container">
+    <div class="hero-banner">
+      <div class="hero-banner-holder">
+        <div class="hero-banner-heading">
+          <h1>Welcome to Oro Documentation</h1>
+        </div>
+        <div class="hero-banner-content">
+          <p>Find everything you need to use and develop your Oro business application.</p>
+          <p>Explore comprehensive knowledge base and learn OroCommerce, OroCRM, and OroPlatform features and architecture.</p>
+        </div>
+      </div>
     </div>
+
+    <div class="section-container">
+      <div class="section-container-holder">
+        <ul class="three-columns-list">
+          <li>
+            <div class="main-section">
+              <div class="heading-box">
+                <div class="heading-icon" aria-hidden="true">
+                  <img src="{{ pathto('_static/images/icon-business-users.png', 1) }}" alt="" role="presentation">
+                </div>
+                <h2><span>Business Users</span></h2>
+              </div>
+              <div class="content-box">
+                <p>User documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and hsipping methods in the management console to exploring the checkout process in the ecommerce storefront.</p>
+              </div>
+            </div>
+            <div class="footer-box">
+              <ul>
+                <li><a href="user_doc/concept_guides/index.html">Concept Guides</a></li>
+                <li><a href="user_doc/back_office/index.html">Back-office</a></li>
+                <li><a href="user_doc/storefront/index.html">Commerce Storefront</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main-section">
+              <div class="heading-box">
+                <div class="heading-icon" aria-hidden="true">
+                  <img src="{{ pathto('_static/images/icon-developers.png', 1) }}" alt="" role="presentation">
+                </div>
+                <h2><span>Developers</span></h2>
+              </div>
+              <div class="content-box">
+                <p>Developer Documentation is intended for Oro developers and contains information about OroPlatform architecture, guidance on customization and extension of the existing features in Oro applications, and how-to articles about configuration and setup necessary for development or future use of the application.</p>
+              </div>
+            </div>
+            <div class="footer-box">
+              <ul>
+  <!--              <li><a href="#">Backend Developer’s Guide</a></li>-->
+  <!--              <li><a href="#">Frontend Developer’s Guide</a></li>-->
+                  <!-- @todo: temporary link to old documentation-->
+  <!--              <li><a href="https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/web-api">Web Services API</a></li>-->
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="main-section">
+              <div class="heading-box">
+                <div class="heading-icon" aria-hidden="true">
+                  <img src="{{ pathto('_static/images/icon-cloud.png', 1) }}" alt="" role="presentation">
+                </div>
+                <h2><span>Cloud Administrators</span></h2>
+              </div>
+              <div class="content-box">
+                <p>Cloud Documentation is here to help you build and maintain the infrastructure for any business domain. Learn about OroCloud architecture and security, the typical process of OroCloud onboarding, using OroCloud maintenance tools, monitoring principles, as well as technical support service details.</p>
+              </div>
+            </div>
+            <div class="footer-box">
+              <ul>
+  <!--              <li><a href="#">Cloud Architecture</a></li>-->
+  <!--              <li><a href="#">orocloud-cli</a></li>-->
+  <!--              <li><a href="#">Security & Monitoring</a></li>-->
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <aside class="additional-info">
+      <div class="additional-info-holder">
+        <ul class="additional-list four-columns">
+          <li>
+            <h2 class="js-mobile-opener mobile-opener">Download <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+            <div class="js-mobile-slide mobile-slide">
+              <ul>
+                <li><a href="https://oroinc.com/b2b-ecommerce/download">OroCommerce</a></li>
+                <li><a href="https://oroinc.com/orocrm/download">OroCRM</a></li>
+                <li><a href="https://oroinc.com/oroplatform/download">OroPlatform</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h2 class="js-mobile-opener mobile-opener">Media Library <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+            <div class="js-mobile-slide mobile-slide">
+              <ul>
+                <li><a href="https://oroinc.com/b2b-ecommerce/media-library#category=webinars&type=list">Webinars</a></li>
+                <li><a href="https://oroinc.com/b2b-ecommerce/media-library#category=training-videos&type=list">Training Videos</a></li>
+                <li><a href="https://oroinc.com/orocrm/media-library#category=features&type=list">CRM Features</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h2 class="js-mobile-opener mobile-opener">Online Courses <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+            <div class="js-mobile-slide mobile-slide">
+              <ul>
+                <li><a href="https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce">Fundamental OroCommerce</a></li>
+                <li><a href="{{ pathto('user_doc/back_office/getting_started/index') }}">Getting Started with OroCRM</a></li>
+                <li><a href="https://oroinc.com/b2b-ecommerce/course/promotions-discounts-and-coupons">Promotions</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <h2 class="js-mobile-opener mobile-opener">Forums <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
+            <div class="js-mobile-slide mobile-slide">
+              <ul>
+                <li><a href="https://forum.oroinc.com/oro-community">Oro Community</a></li>
+                <li><a href="https://forum.oroinc.com/orocommerce">OroCommerce</a></li>
+                <li><a href="https://forum.oroinc.com/view/recent-topics">Recent Topics</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
   </div>
-
-  <aside class="additional-info">
-    <div class="additional-info-holder">
-      <ul class="additional-list four-columns">
-        <li>
-          <h2 class="js-mobile-opener mobile-opener">Download <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
-          <div class="js-mobile-slide mobile-slide">
-            <ul>
-              <li><a href="https://oroinc.com/b2b-ecommerce/download">OroCommerce</a></li>
-              <li><a href="https://oroinc.com/orocrm/download">OroCRM</a></li>
-              <li><a href="https://oroinc.com/oroplatform/download">OroPlatform</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <h2 class="js-mobile-opener mobile-opener">Media Library <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
-          <div class="js-mobile-slide mobile-slide">
-            <ul>
-              <li><a href="https://oroinc.com/b2b-ecommerce/media-library#category=webinars&type=list">Webinars</a></li>
-              <li><a href="https://oroinc.com/b2b-ecommerce/media-library#category=training-videos&type=list">Training Videos</a></li>
-              <li><a href="https://oroinc.com/orocrm/media-library#category=features&type=list">CRM Features</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <h2 class="js-mobile-opener mobile-opener">Online Courses <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
-          <div class="js-mobile-slide mobile-slide">
-            <ul>
-              <li><a href="https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce">Fundamental OroCommerce</a></li>
-              <li><a href="{{ pathto('user_doc/back_office/getting_started/index') }}">Getting Started with OroCRM</a></li>
-              <li><a href="https://oroinc.com/b2b-ecommerce/course/promotions-discounts-and-coupons">Promotions</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <h2 class="js-mobile-opener mobile-opener">Forums <span class="opener-indicator"><i class="fa fa-chevron-down"></i></span></h2>
-          <div class="js-mobile-slide mobile-slide">
-            <ul>
-              <li><a href="https://forum.oroinc.com/oro-community">Oro Community</a></li>
-              <li><a href="https://forum.oroinc.com/orocommerce">OroCommerce</a></li>
-              <li><a href="https://forum.oroinc.com/view/recent-topics">Recent Topics</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </aside>
 
   {% include "footer.html" %}FOOTER
 
   <script type="text/javascript">
-    stickyBlock();
+    var curLinkPos = $('.left-sidebar .wy-menu').find('a[href="#"]').position().top;
+    var topIndent = ($('.header-container').height() + parseInt($('.three-columns-layout').css('padding-top')));
 
     $(document).ready(function(){
-      $('.scrollbar-outer').scrollbar();
-
       stickyHeader();
+      $('.scrollbar-outer').scrollbar();
+      stickyBlock();
       mobileCollapse();
       smoothScroll('.btn-back-to-top');
       backToTop();
       scrollSpy();
-      contentLinksScroll();
+      smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference', topIndent);
+      setTimeout(isPageScrolled, 50);
+      setTimeout(isLeftSidebarScrolled, 50);
+
+      $('.sidebar .wy-menu a.current').on('click', function () {
+        if ($(this).attr('href') == "#") {
+          $(this).closest('.sidebar').addClass('v-hidden');
+          $(this).closest('.sidebar').find('.sidebar-holder').css({'transition' : 'none'});
+        }
+
+        setTimeout(isLeftSidebarScrolled, 50);
+      });
     });
+
+    $(window).on('load', function(){
+      $('.sidebar .sidebar-holder').addClass('visible-content');
+    });
+
     $(window).scroll(function(){
+      stickyHeader();
       stickyBlock();
       backToTop();
     });
+
     $(window).resize(function(){
       stickyHeader();
       stickyBlock();
       mobileCollapse();
     });
 
+    function isPageScrolled() {
+      if ($('.left-sidebar .sticky-block').offset().top == ($('.left-sidebar').offset().top + parseInt($('.left-sidebar .sticky-block').css('padding-top')))) {
+        return
+      } else {
+        window.scrollTo(0,0);
+      }
+    }
+
+    function isLeftSidebarScrolled() {
+      var scrollContent = $('.left-sidebar .scroll-wrapper > .scroll-content');
+      if (scrollContent.scrollTop() == 0) {
+        return
+      } else {
+        if (curLinkPos > $('.left-sidebar .scroll-wrapper').height()){
+          scrollContent.scrollTop(curLinkPos);
+        } else {
+          scrollContent.scrollTop(0);
+        }
+        if ($('.sidebar').hasClass('v-hidden')) {
+          $('.sidebar').removeClass('v-hidden');
+          $('.sidebar .sidebar-holder').css({'transition' : 'visibility 0s ease 0.051s'})
+        }
+      }
+    }
+
 
     // sticky functional for header
     function stickyHeader() {
-      var headerHeight = $('#header').height(),
+      var headerHeight = $('#header').outerHeight(),
               versionsPanel = $('.header-panel');
 
       if ($(window).prop('innerWidth') > 767){
-        if ($('#header').length > 0){
-          if(versionsPanel.length > 0){
-            $('body').addClass('fixed-header').css('padding-top' , headerHeight + versionsPanel.outerHeight());
-            versionsPanel.css('top', headerHeight);
-          } else {
-            $('body').addClass('fixed-header').css('padding-top' , headerHeight);
-          }
+        $('body').addClass('fixed-header');
+
+        if(versionsPanel.length > 0){
+          $('body').css('padding-top' , headerHeight + versionsPanel.outerHeight());
+        } else {
+          $('body').css('padding-top' , headerHeight)
         }
       } else {
-        $('body').removeClass('fixed-header').css('padding-top' , 0);
-        versionsPanel.removeAttr('style');
+        $('body').removeClass('fixed-header').removeAttr('style');
       }
     }
 
@@ -290,7 +334,7 @@
     function stickyBlock() {
       if ($('.sticky-block').length > 0){
         if ($(window).prop('innerWidth') > 767) {
-          var blockSticky = $(".sticky-block"),
+          var blockSticky = $('.sticky-block'),
                   scrollPos = $(window).scrollTop(),
                   scrollContainer = $('.three-columns-layout'),
                   currentPosition = scrollContainer.offset().top + scrollContainer.outerHeight(),
@@ -300,8 +344,8 @@
             var currentSticky = $(this),
                     currentStickyPaddings = parseInt(currentSticky.css('padding-top')) + parseInt(currentSticky.css('padding-bottom')),
                     sidebarCurrent = currentSticky.parent(),
-                    bodyTopPadding = parseInt($('body').css('padding-top')),
-//                sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')),
+                    bodyTopPadding = $('.header-container').height(),
+//                    sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')),
                     heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
                     heightWithFooter = scrollPos + $(window).height() - footerPos;
 
@@ -310,15 +354,20 @@
             } else {
               currentSticky.find('.scrollbar-outer').css('max-height', (heightContent - heightWithFooter));
             }
-
             sidebarCurrent.addClass('sticky-active');
+//            currentSticky.css('top', sidebarTopIndent);
 
             if (($(window).height() - bodyTopPadding - heightWithFooter) < 150) {
-              $('.sidebar').css('visibility', 'hidden')
+              $('.sidebar').addClass('v-hidden');
+              $('.sidebar .sidebar-holder').css({'transition' : 'none'})
             } else {
-              $('.sidebar').removeAttr('style');
+              $('.sidebar').removeClass('v-hidden');
+              $('.sidebar .sidebar-holder').css({'transition' : 'visibility 0s ease 0.051s'})
             }
           });
+        } else {
+          $('.sidebar').removeClass('sticky-active');
+          $('.sidebar .sticky-block').removeAttr('style');
         }
       }
     }
@@ -328,7 +377,7 @@
       if ($(window).prop('innerWidth') < 768) {
         $('.js-mobile-opener').on('click', function () {
           var opener = $(this),
-              slide = opener.next('.js-mobile-slide');
+                  slide = opener.next('.js-mobile-slide');
 
           if (opener.hasClass('opened')){
             slide.slideUp('fast', function () {
@@ -360,7 +409,7 @@
       $(elem).on('click', function (e) {
         e.preventDefault();
 
-        $('html,body').animate({
+        $('html,body').stop().animate({
           scrollTop: 0
         })
       });
@@ -370,7 +419,6 @@
     function scrollSpy() {
       var lastId,
               topMenu = $("nav.contents-table > ul"),
-              topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
               menuItems = topMenu.find("a"),
               scrollItems = menuItems.map(function(){
                 var itemHref = $(this).attr("href"),
@@ -379,23 +427,7 @@
               });
 
       if ($('.right-sidebar .contents-table').length > 0) {
-        menuItems.click(function(e){
-          var href = $(this).attr("href"),
-                  currentOffset;
-
-          if ($(window).prop('innerWidth') > 767) {
-            currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
-          } else {
-            currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
-          }
-
-          var offsetTop = href === "#" ? 0 : currentOffset;
-
-          $('html, body').stop().animate({
-            scrollTop: offsetTop
-          });
-          e.preventDefault();
-        });
+        smoothScrollTop(menuItems, topIndent);
 
         if ($(window).prop('innerWidth') > 1199) {
           $(window).scroll(function(){
@@ -420,14 +452,13 @@
       }
     }
 
-    function contentLinksScroll() {
-      $('.main-column .section .toc-backref, .main-column .section .headerlink, .contents .simple .reference').click(function(e){
+    var smoothScrollTop = function (element, topPosition) {
+      $(element).click(function(e){
         var href = $(this).attr("href"),
-                topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
                 currentOffset;
 
         if ($(window).prop('innerWidth') > 767) {
-          currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
+          currentOffset = href === "#" ? 0 : $(href).offset().top - topPosition + 1;
         } else {
           currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
         }
@@ -439,7 +470,7 @@
         });
         e.preventDefault();
       });
-    }
+    };
   </script>
 
   {# Do not conflict with RTD insertion of analytics script #}
