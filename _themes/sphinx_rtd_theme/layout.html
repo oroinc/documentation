@@ -110,94 +110,97 @@
 
 <body class="wy-body-for-nav">
   {% block extrabody %} {% endblock %}
+  <div class="header-container">
+    {% include "header.html" %}
 
-  {% include "header.html" %}
-
-  <div class="header-panel">
-    <div class="header-panel-holder">
-      {% include "version-switcher.html"%}
+    <div class="header-panel">
+      <div class="header-panel-holder">
+        {% include "version-switcher.html"%}
+      </div>
+      <script type="text/javascript">
+        // hover effect. it needs for mobile devices
+        $('.documentation-version-switcher')
+                .on('mouseenter', function () {
+                  if ($(this).hasClass('hover')){
+                    $(this).removeClass('hover')
+                  } else {
+                    $(this).addClass('hover')
+                  }
+                })
+                .on('mouseleave', function () {
+                  if ($(this).hasClass('hover')){
+                    $(this).removeClass('hover')
+                  }
+                })
+      </script>
     </div>
-    <script type="text/javascript">
-      // hover effect. it needs for mobile devices
-      $('.documentation-version-switcher')
-              .on('mouseenter', function () {
-                if ($(this).hasClass('hover')){
-                  $(this).removeClass('hover')
-                } else {
-                  $(this).addClass('hover')
-                }
-              })
-              .on('mouseleave', function () {
-                if ($(this).hasClass('hover')){
-                  $(this).removeClass('hover')
-                }
-              })
-    </script>
   </div>
 
-  <div class="three-columns-layout">
-    <aside class="sidebar left-sidebar">
-      <div class="sidebar-holder sticky-block">
-        <div class="scrollbar-outer">
-          <nav class="wy-nav-sid">
-            <div class="">
-              {% block navigation %}
-              <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                {% block menu %}
-                  {#
-                    The singlehtml builder doesn't handle this toctree call when the
-                    toctree is empty. Skip building this for now.
-                  #}
-                  {% if 'singlehtml' not in builder %}
-                    {{ toctree(maxdepth=theme_navigation_depth|int,
-                                                collapse=theme_collapse_navigation|tobool,
-                                                includehidden=theme_includehidden|tobool,
-                                                titles_only=theme_titles_only|tobool) }}
-                  {% endif %}
+  <div class="content-container">
+    <div class="three-columns-layout">
+      <aside class="sidebar left-sidebar">
+        <div class="sidebar-holder sticky-block">
+          <div class="scrollbar-outer">
+            <nav class="wy-nav-sid">
+              <div class="">
+                {% block navigation %}
+                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                  {% block menu %}
+                    {#
+                      The singlehtml builder doesn't handle this toctree call when the
+                      toctree is empty. Skip building this for now.
+                    #}
+                    {% if 'singlehtml' not in builder %}
+                      {{ toctree(maxdepth=theme_navigation_depth|int,
+                                                  collapse=theme_collapse_navigation|tobool,
+                                                  includehidden=theme_includehidden|tobool,
+                                                  titles_only=theme_titles_only|tobool) }}
+                    {% endif %}
+                  {% endblock %}
+                </div>
                 {% endblock %}
               </div>
-              {% endblock %}
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
-      </div>
-    </aside>
-    {% if display_toc %}
-    <aside class="sidebar right-sidebar">
-      <div class="sidebar-holder sticky-block sticky-desktop-only">
-        <div class="scrollbar-outer">
-          <nav class="contents-table">
-            {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
-            {# Replace only first occurrence to be sure that we don't change any other elements except first #}
-              {{ toc|replace(title|striptags|e, "Contents", 1) }}
-          </nav>
+      </aside>
+      {% if display_toc %}
+      <aside class="sidebar right-sidebar">
+        <div class="sidebar-holder sticky-block sticky-desktop-only">
+          <div class="scrollbar-outer">
+            <nav class="contents-table">
+              {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
+              {# Replace only first occurrence to be sure that we don't change any other elements except first #}
+                {{ toc|replace(title|striptags|e, "Contents", 1) }}
+            </nav>
+          </div>
         </div>
-      </div>
-    </aside>
-    {% endif %}
-    <div class="main-column">
-      {%- block content %}
-      {% if theme_style_external_links|tobool %}
-      <div class="rst-content style-external-links">
-        {% else %}
-        <div class="rst-content">
-          {% endif %}
-          {% include "breadcrumbs.html" %}
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            {%- block document %}
-            <div itemprop="articleBody">
-              {% block body %}{% endblock %}
+      </aside>
+      {% endif %}
+      <div class="main-column">
+        {%- block content %}
+        {% if theme_style_external_links|tobool %}
+        <div class="rst-content style-external-links">
+          {% else %}
+          <div class="rst-content">
+            {% endif %}
+            {% include "breadcrumbs.html" %}
+            <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+              {%- block document %}
+              <div itemprop="articleBody">
+                {% block body %}{% endblock %}
+              </div>
+              {% if self.comments()|trim %}
+              <div class="articleComments">
+                {% block comments %}{% endblock %}
+              </div>
+              {% endif%}
             </div>
-            {% if self.comments()|trim %}
-            <div class="articleComments">
-              {% block comments %}{% endblock %}
-            </div>
-            {% endif%}
+            {%- endblock %}
+
           </div>
           {%- endblock %}
-
         </div>
-        {%- endblock %}
       </div>
     </div>
   </div>
@@ -211,46 +214,87 @@
   </script>
 
   <script type="text/javascript">
-    stickyBlock();
+    var curLinkPos = $('.left-sidebar .wy-menu').find('a[href="#"]').position().top;
+    var topIndent = ($('.header-container').height() + parseInt($('.three-columns-layout').css('padding-top')));
 
     $(document).ready(function(){
-      $('.scrollbar-outer').scrollbar();
-
       stickyHeader();
+      $('.scrollbar-outer').scrollbar();
+      stickyBlock();
       mobileCollapse();
       smoothScroll('.btn-back-to-top');
       backToTop();
       scrollSpy();
-      contentLinksScroll();
+      smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference', topIndent);
+      setTimeout(isPageScrolled, 50);
+      setTimeout(isLeftSidebarScrolled, 50);
+
+      $('.sidebar .wy-menu a.current').on('click', function () {
+        if ($(this).attr('href') == "#") {
+          $(this).closest('.sidebar').addClass('v-hidden');
+          $(this).closest('.sidebar').find('.sidebar-holder').css({'transition' : 'none'});
+        }
+
+        setTimeout(isLeftSidebarScrolled, 50);
+      });
     });
+
+    $(window).on('load', function(){
+      $('.sidebar .sidebar-holder').addClass('visible-content');
+    });
+
     $(window).scroll(function(){
+      stickyHeader();
       stickyBlock();
       backToTop();
     });
+
     $(window).resize(function(){
       stickyHeader();
       stickyBlock();
       mobileCollapse();
     });
 
+    function isPageScrolled() {
+        if ($('.left-sidebar .sticky-block').offset().top == ($('.left-sidebar').offset().top + parseInt($('.left-sidebar .sticky-block').css('padding-top')))) {
+          return
+        } else {
+          window.scrollTo(0,0);
+        }
+    }
+
+    function isLeftSidebarScrolled() {
+      var scrollContent = $('.left-sidebar .scroll-wrapper > .scroll-content');
+      if (scrollContent.scrollTop() == 0) {
+        return
+      } else {
+        if (curLinkPos > $('.left-sidebar .scroll-wrapper').height()){
+          scrollContent.scrollTop(curLinkPos);
+        } else {
+          scrollContent.scrollTop(0);
+        }
+        if ($('.sidebar').hasClass('v-hidden')) {
+          $('.sidebar').removeClass('v-hidden');
+          $('.sidebar .sidebar-holder').css({'transition' : 'visibility 0s ease 0.051s'})
+        }
+      }
+    }
 
     // sticky functional for header
     function stickyHeader() {
-      var headerHeight = $('#header').height(),
+      var headerHeight = $('#header').outerHeight(),
           versionsPanel = $('.header-panel');
 
       if ($(window).prop('innerWidth') > 767){
-        if ($('#header').length > 0){
-          if(versionsPanel.length > 0){
-            $('body').addClass('fixed-header').css('padding-top' , headerHeight + versionsPanel.outerHeight());
-            versionsPanel.css('top', headerHeight);
-          } else {
-            $('body').addClass('fixed-header').css('padding-top' , headerHeight);
-          }
+        $('body').addClass('fixed-header');
+
+        if(versionsPanel.length > 0){
+          $('body').css('padding-top' , headerHeight + versionsPanel.outerHeight());
+        } else {
+          $('body').css('padding-top' , headerHeight)
         }
       } else {
-        $('body').removeClass('fixed-header').css('padding-top' , 0);
-        versionsPanel.removeAttr('style');
+        $('body').removeClass('fixed-header').removeAttr('style');
       }
     }
 
@@ -258,7 +302,7 @@
     function stickyBlock() {
       if ($('.sticky-block').length > 0){
         if ($(window).prop('innerWidth') > 767) {
-          var blockSticky = $(".sticky-block"),
+          var blockSticky = $('.sticky-block'),
                   scrollPos = $(window).scrollTop(),
                   scrollContainer = $('.three-columns-layout'),
                   currentPosition = scrollContainer.offset().top + scrollContainer.outerHeight(),
@@ -268,25 +312,30 @@
             var currentSticky = $(this),
                     currentStickyPaddings = parseInt(currentSticky.css('padding-top')) + parseInt(currentSticky.css('padding-bottom')),
                     sidebarCurrent = currentSticky.parent(),
-                    bodyTopPadding = parseInt($('body').css('padding-top')),
+                    bodyTopPadding = $('.header-container').height(),
 //                    sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')),
                     heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
                     heightWithFooter = scrollPos + $(window).height() - footerPos;
 
-              if (currentPosition >= (scrollPos + $(window).height())) {
-                currentSticky.find('.scrollbar-outer').css('max-height', heightContent);
-              } else {
-                currentSticky.find('.scrollbar-outer').css('max-height', (heightContent - heightWithFooter));
-              }
+            if (currentPosition >= (scrollPos + $(window).height())) {
+              currentSticky.find('.scrollbar-outer').css('max-height', heightContent);
+            } else {
+              currentSticky.find('.scrollbar-outer').css('max-height', (heightContent - heightWithFooter));
+            }
+            sidebarCurrent.addClass('sticky-active');
+//            currentSticky.css('top', sidebarTopIndent);
 
-              sidebarCurrent.addClass('sticky-active');
-
-              if (($(window).height() - bodyTopPadding - heightWithFooter) < 150) {
-                $('.sidebar').css('visibility', 'hidden')
-              } else {
-                $('.sidebar').removeAttr('style');
-              }
+            if (($(window).height() - bodyTopPadding - heightWithFooter) < 150) {
+              $('.sidebar').addClass('v-hidden');
+              $('.sidebar .sidebar-holder').css({'transition' : 'none'})
+            } else {
+              $('.sidebar').removeClass('v-hidden');
+              $('.sidebar .sidebar-holder').css({'transition' : 'visibility 0s ease 0.051s'})
+            }
           });
+        } else {
+          $('.sidebar').removeClass('sticky-active');
+          $('.sidebar .sticky-block').removeAttr('style');
         }
       }
     }
@@ -338,7 +387,6 @@
     function scrollSpy() {
       var lastId,
               topMenu = $("nav.contents-table > ul"),
-              topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
               menuItems = topMenu.find("a"),
               scrollItems = menuItems.map(function(){
                 var itemHref = $(this).attr("href"),
@@ -347,23 +395,7 @@
               });
 
       if ($('.right-sidebar .contents-table').length > 0) {
-        menuItems.click(function(e){
-          var href = $(this).attr("href"),
-                  currentOffset;
-
-          if ($(window).prop('innerWidth') > 767) {
-            currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
-          } else {
-            currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
-          }
-
-          var offsetTop = href === "#" ? 0 : currentOffset;
-
-          $('html, body').stop().animate({
-            scrollTop: offsetTop
-          });
-          e.preventDefault();
-        });
+        smoothScrollTop(menuItems, topIndent);
 
         if ($(window).prop('innerWidth') > 1199) {
           $(window).scroll(function(){
@@ -388,14 +420,13 @@
       }
     }
 
-    function contentLinksScroll() {
-      $('.main-column .section .toc-backref, .main-column .section .headerlink, .contents .simple .reference').click(function(e){
+    var smoothScrollTop = function (element, topPosition) {
+      $(element).click(function(e){
         var href = $(this).attr("href"),
-                topIndent = (parseInt($('body').css('padding-top')) + parseInt($('.three-columns-layout').css('padding-top'))),
                 currentOffset;
 
         if ($(window).prop('innerWidth') > 767) {
-          currentOffset = href === "#" ? 0 : $(href).offset().top - topIndent + 1;
+          currentOffset = href === "#" ? 0 : $(href).offset().top - topPosition + 1;
         } else {
           currentOffset = href === "#" ? 0 : $(href).offset().top - 10;
         }
@@ -407,7 +438,7 @@
         });
         e.preventDefault();
       });
-    }
+    };
   </script>
 
   {# Do not conflict with RTD insertion of analytics script #}
