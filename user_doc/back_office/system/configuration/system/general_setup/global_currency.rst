@@ -4,9 +4,6 @@
 Currency
 ========
 
-.. contents:: :local:
-   :depth: 3
-
 Currency configuration helps you:
 
 * Add and remove currencies from the allowed currencies list.
@@ -25,7 +22,7 @@ Currency configuration helps you:
 Multi-Currency
 --------------
 
-Multiple currency functionality for OroCRM is a useful tool for companies that do business internationally and negotiate deals in various currencies.
+Multiple currency functionality in the Oro application is a useful tool for companies that do business internationally and negotiate deals in various currencies.
 
 .. note:: This feature is only available in the Enterprise edition.
 

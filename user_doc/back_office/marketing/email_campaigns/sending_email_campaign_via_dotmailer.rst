@@ -3,9 +3,6 @@
 Send Email Campaign via dotmailer
 =================================
 
-.. contents:: :local:
-   :depth: 2
-
 Flow
 ----
 

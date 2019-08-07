@@ -3,9 +3,6 @@
 Google Single Sign-On
 =====================
 
-
-.. contents:: :local:
-    :depth: 4
     
 Oro application supports Google Single Sign-On. This means that for
 a user that has the same primary email in the Oro application and Google

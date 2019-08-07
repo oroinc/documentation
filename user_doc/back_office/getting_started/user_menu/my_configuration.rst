@@ -19,9 +19,6 @@ Two categories of settings are available for configuration at user level:
 
 More information about the options available for each of the two categories is available below.
 
-.. contents:: :local:
-   :depth: 2
-
 Update Localization Options
 ---------------------------
 

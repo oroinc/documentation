@@ -4,9 +4,6 @@
 RFQ Management Flow Workflow
 ----------------------------
 
-.. contents:: :local:
-   :depth: 1
-
 .. start_back_flow
 
 Overview

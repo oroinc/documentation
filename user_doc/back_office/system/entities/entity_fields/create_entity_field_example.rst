@@ -3,8 +3,6 @@
 Examples of Creating Custom Entity Fields
 -----------------------------------------
 
-.. contents:: :local:
-
 Create an entity field with a one to many relation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

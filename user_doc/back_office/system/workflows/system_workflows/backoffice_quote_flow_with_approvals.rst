@@ -4,9 +4,6 @@
 Backoffice Quote Flow with Approvals
 ====================================
 
-.. contents:: :local:
-   :depth: 1
-
 .. start_backoffice_quote_flow
 
 Overview

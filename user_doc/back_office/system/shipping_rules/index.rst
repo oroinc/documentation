@@ -19,9 +19,6 @@ You can configure one or more shipping rules that enable the shipping methods fo
       <iframe width="560" height="315" src="https://www.youtube.com/embed/46KlATao3MU" frameborder="0" allowfullscreen></iframe>
 
 
-.. contents:: :local:
-   :depth: 2
-
 .. _doc--shipping-rules--overview:
 
 Shipping Rules Overview

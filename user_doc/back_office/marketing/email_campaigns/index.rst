@@ -12,8 +12,6 @@ After that, you can easily set up an email campaign within which all the contact
 
 This article describes how to set up an email campaign in the Oro application and manage it.
 
-.. contents:: :local:
-    :depth: 2
 
 .. _user-guide-email-campaigns-create:
 

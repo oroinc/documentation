@@ -10,6 +10,8 @@ Oro application supports localization and provides decent out-of-the-box transla
 
 See :ref:`Translating the Oro application into your Native Language <doc--community--ui-translations>` for more information about the translation process.
 
+Oro application supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the-box integration to CrowdIn service, Oro applications have live access to the most recent updates from the Oro team and community.
+
 Keep reading to learn about the localization process (:ref:`open the quick visual guide <config-localization-quick-start>`):
 
 +-------------+-----------------------------------+--------------------------------------------------------------------+
@@ -22,7 +24,7 @@ Keep reading to learn about the localization process (:ref:`open the quick visua
 |             |                                                                                                        |
 +-------------+--------------------------------------------------------------------------------------------------------+
 | **Step 2**  | In the :ref:`Translations <localization--translations>` section, you can view the                      |
-|             | items available for translation to the enabled and disabled languages in OroCommerce,                  |
+|             | items available for translation to the enabled and disabled languages in your Oro application,         |
 |             | add and modify translation text for these items, and delete these items if necessary.                  |
 |             |                                                                                                        |
 +-------------+--------------------------------------------------------------------------------------------------------+

@@ -3,9 +3,6 @@
 Create an RFQ
 =============
 
-.. contents:: :local:
-   :depth: 1
-
 There are a few ways to create RFQs if you are have registered and signed into the storefront.
 
 On the All Requests for Quote Page

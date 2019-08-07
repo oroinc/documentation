@@ -3,9 +3,6 @@
 Business Customers
 ==================
 
-.. contents:: :local:
-   :depth: 1
-
 Business customers represents a point of contact in your sales and business activities. With the help of Business Customers, you can track activities and records associated with them across different channels.
 
 For each customer involved in the business-to-business activity you can create a **Business Customer** record.

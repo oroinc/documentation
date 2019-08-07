@@ -3,9 +3,6 @@
 Manage Entity Fields
 ====================
 
-.. contents:: :local:
-    :depth: 1
-
 In your Oro applications, you can manage the already existing and newly added entity fields. Specifically, you can edit and delete them, as well as import fields in bulk. To make sure that the new or updated fields are successfully added to entities, you update the schema.
 
 Edit Custom Entity Fields

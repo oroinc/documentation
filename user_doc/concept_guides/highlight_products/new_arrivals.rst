@@ -1,7 +1,5 @@
 .. _user-guide--new-products:
 
-.. contents:: :local:
-
 Highlight New Products
 ----------------------
 

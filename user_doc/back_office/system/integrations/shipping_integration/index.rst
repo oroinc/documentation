@@ -6,8 +6,6 @@ Manage Integrations: Shipping Method Integration
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the payment concept in OroCommerce.
 
-.. contents:: :local:
-   :depth: 1
 
 Create an Integration with a Shipping Service Provider
 ------------------------------------------------------

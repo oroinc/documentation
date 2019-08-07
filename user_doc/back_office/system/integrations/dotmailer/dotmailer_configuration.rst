@@ -4,9 +4,6 @@
 Configure dotmailer Integration
 ===============================
 
-.. contents:: :local:
-   :depth: 2
-
 Install Extension
 -----------------
 

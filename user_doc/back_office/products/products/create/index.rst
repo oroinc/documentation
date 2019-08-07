@@ -3,9 +3,6 @@
 Create Simple and Configurable Products
 =======================================
 
-.. contents:: :local:
-   :depth: 1
-
 Product Type: Simple vs Configurable
 ------------------------------------
 

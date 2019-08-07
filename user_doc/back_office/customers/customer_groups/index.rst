@@ -3,8 +3,6 @@
 Customer Groups
 ===============
 
-.. contents:: :local:
-
 In the Customer Group section, you can organize customers into groups and share the price lists, payment and tax-related settings between several customers.
 
 .. .. image:: /user_doc/img/customers/customer_groups/CustomerGroups.png

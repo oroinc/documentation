@@ -3,8 +3,6 @@
 Cases
 =====
 
-.. contents:: :local:
-
 Cases are issues or problems reported by customers or found internally. With Oro, you can record, monitor, and solve cases in time to ensure that small and big issues do not harm the business of your company.
 
 Oro application also provides an out-of-box integration with the :ref:`Zendesk <user-guide-zendesk-integration>` customer support platform. Once Oro and Zendesk are integrated, you can sync Zendesk tickets as cases into the Oro application.

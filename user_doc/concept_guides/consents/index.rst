@@ -3,8 +3,6 @@
 Consent Management
 ==================
 
-.. contents:: :local:
-
 GDPR Principles
 ---------------
 

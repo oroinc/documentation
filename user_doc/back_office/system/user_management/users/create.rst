@@ -1,9 +1,6 @@
 Create a User
 =============
 
-.. contents:: :local:
-   :depth: 1
-
 Before you proceed, consider checking out user-related video tutorials in the Oro media library:
 
 * How to set up user profiles

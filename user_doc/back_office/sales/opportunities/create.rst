@@ -4,9 +4,6 @@
 Create an Opportunity
 =====================
 
-.. contents:: :local:
-   :depth: 1
-
 Opportunities can be related to any customer type and customers introduced by various third-party extensions. They can also be related directly to accounts. This is the simplest application setup if you do not need to track multi-channel sales. You can always enable the additional complexity of multiple customer channels when the need arises.
 
 .. Business customers will remain available as legacy for users who upgrade from OroCRM 1.10 edition but will be deprecated in OroCRM 2.0.

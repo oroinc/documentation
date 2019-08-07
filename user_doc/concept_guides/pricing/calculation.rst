@@ -5,8 +5,6 @@ Price Calculation in the Storefront
 
 .. begin
 
-.. contents:: :local:
-   :depth: 1
 
 Product prices on the storefront are taken from the combination of the price lists that are enabled on the system level, website level,
 customer group and customer level.

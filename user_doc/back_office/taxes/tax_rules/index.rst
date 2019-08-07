@@ -13,8 +13,6 @@ Tax rules help OroCommerce find the correct tax rate that should be used for the
 
 The sections below provide guidance on how to create and manage tax rules.
 
-.. contents:: :local:
-   :depth: 1
 
 Create a Tax Rule
 -----------------

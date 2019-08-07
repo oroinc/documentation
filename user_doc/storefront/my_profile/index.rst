@@ -3,11 +3,6 @@
 My Profile
 ==========
 
-**Table of Contents**
-
-.. contents:: :local:
-   :depth: 2
-
 The following information covers the **My Profile** section of the **Account** menu.
 
 .. _frontstore-guide--profile-overview:

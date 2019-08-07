@@ -3,8 +3,6 @@
 Create a Sample Coupon
 ----------------------
 
-.. contents:: :local:
-
 .. begin
 
 As an illustration, let us create a sample promotion and generate 100 coupons for it. These coupons will be redeemed for orders placed by first-time customers. The promotion will offer a 50% discount for all orders between 18 and 22 September 2017.

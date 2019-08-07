@@ -7,8 +7,6 @@
 Channels
 ========
 
-.. contents:: :local:
-
 Today, successful businesses usually have more than one sales site. These may be different online stores, business-to-business enterprises, or business-to-customer outlets. Moreover, different customers and sales-related data can be received from various survey-campaigns or memberships in clubs, funds, charity events, etc. Gaining a full understanding of all the information you receive from each of these sources, along with all the individual customer information you collect from various other sources, becomes crucial. With OroCRM's channels, you can do both with minimum effort.
 
 In OroCRM, each channel record represents one source of customer-related data.

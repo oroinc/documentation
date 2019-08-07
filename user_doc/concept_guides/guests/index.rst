@@ -5,8 +5,6 @@ Guest Access
 
 In you Oro application, you can enable or disable guest website access, in addition to managing its different aspects, such as guest shopping lists, guest checkout, guest RFQ and guest quick order form.
 
-.. contents:: :local:
-   :depth: 1
 
 .. _sys--conf--commerce--guest--enable--access:
 

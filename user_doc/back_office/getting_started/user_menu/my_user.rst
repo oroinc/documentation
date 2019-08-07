@@ -8,8 +8,6 @@ My User
 
 When you log into the Oro application, you can always find a link to your user page under menu below your username. This is a fast way to access your user profile, calendar, mailbox, and task list.
 
-.. contents:: :local:
-
 Explore Your User Page
 ----------------------
 

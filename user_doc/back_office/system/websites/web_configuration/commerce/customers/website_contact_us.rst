@@ -11,7 +11,8 @@ To enable or disable the display of the form in the storefront per website:
 2. For the necessary website, hover over the |IcMore| **More Options** menu to the right of the necessary website and click |IcConfig| to start editing the configuration.
 3. Select **Commerce > Customer > Contact Requests** in the menu on the left.
 
-   .. note:: For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
+   .. note::
+      For faster navigation between the configuration menu sections, use :ref:`Quick Search <user-guide--system-configuration--quick-search>`.
 
    .. image:: /user_doc/img/system/websites/web_configuration/ContactUsWeb.png
 

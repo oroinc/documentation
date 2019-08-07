@@ -3,9 +3,6 @@
 Single Page Checkout Workflow
 =============================
 
-.. contents:: :local:
-   :depth: 1
-
 Overview
 --------
 

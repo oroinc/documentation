@@ -1,9 +1,6 @@
 Quote Management Flow
 =====================
 
-.. contents:: :local:
-   :depth: 1
-
 .. start_quote_management_flow
 
 Overview

@@ -7,8 +7,6 @@ Blueprints of User Access Configuration
 
 .. warning:: As a precondition, we have ensured that there is a sales assistant role with the **Business Unit** access level granted for the sales-related entities and the sales manager role with the **Division** access level granted for the same entities. The users in the examples below have one of these roles assigned.
 
-.. contents:: :local:
-    :depth: 2
 
 Example 1: Access to Business Units of the Same Organization
 ------------------------------------------------------------

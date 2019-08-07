@@ -3,9 +3,6 @@
 Checkout with Consents Workflow
 ===============================
 
-.. contents:: :local:
-   :depth: 2
-
 Overview
 --------
 

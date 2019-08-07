@@ -3,8 +3,6 @@
 Manage Discounts in Orders
 --------------------------
 
-.. contents:: :local:
-
 You can view discounts applied to a specific order under the dedicated **Promotions and Discounts** section on the order page. This section is divided into **All Promotions** and **All Special Discounts**.
 
 Within **All Promotions**, you can view promotions and coupon codes.

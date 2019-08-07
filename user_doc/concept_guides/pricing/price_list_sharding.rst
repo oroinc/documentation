@@ -3,9 +3,6 @@
 Configure Price List Sharding
 -----------------------------
 
-.. contents:: :local:
-   :depth: 1
-
 Overview
 ^^^^^^^^
 

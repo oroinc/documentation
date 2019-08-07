@@ -4,9 +4,6 @@
 Create and Manage Roles
 =======================
 
-.. contents:: :local:
-    :depth: 1
-
 You can create new roles and apply permissions to fit specifically your business processes, clone and modify the existing roles.
 
 See a short demo on `how to create a and manage roles <https://www.orocrm.com/media-library/create-manage-roles>`_, or continue reading the step-by-step guidance below.

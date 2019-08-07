@@ -3,8 +3,6 @@
 Search
 ======
 
-.. contents:: :local:
-
 Search is the fastest way to find a specific record you need. To find a record in OroCommerce/OroCRM:
 
 1. Click the search icon at the top of the screen.

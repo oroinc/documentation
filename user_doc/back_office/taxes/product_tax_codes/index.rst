@@ -9,8 +9,6 @@ Product Tax Code is a label that is assigned to a product or product group and i
 
 The sections below provide guidance on managing product tax codes, using them to label products and bind products to dedicated tax rules.
 
-.. contents:: :local:
-   :depth: 1
 
 Create a Product Tax Code
 -------------------------

@@ -3,8 +3,6 @@
 Product Units
 =============
 
-.. contents:: :local:
-
 Product units represent a measurement system of products or their combinations. All products in OroCommerce must have a product unit assigned to them for the customer users to be able to add items to the shopping list and determine their quantity in the OroCommerce storefront. Product units are also used throughout the system for inventory and pricing control. Each product in OroCommerce can be assigned multiple units with custom pricing added to each particular product unit.
  
 Out-of-the-box, OroCommerce offers the following product units:

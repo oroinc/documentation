@@ -4,9 +4,6 @@
 Shipping Configuration
 ======================
 
-.. contents:: :local:
-   :depth: 2
-
 To facilitate global B2B sales, the OroCommerce administrator enables valid shipping methods for particular locations and integrates local shipping providers or the best shipping plans whenever it is possible.
 
 When submitting an order, a customer may have several shipping options to choose from. They depend on the shipping address that is collected at the checkout. Once the address is provided, OroCommerce evaluates shipping methods against the special shipping rules and exposes only the options recommended for the particular location and/or based on other order details. After the customer user has selected the shipping method, the shipping cost is shown in the order next to the subtotal.

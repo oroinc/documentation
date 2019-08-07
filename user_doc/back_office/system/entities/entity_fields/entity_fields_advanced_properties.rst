@@ -44,7 +44,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
    * **Show Grid Filter** --- Not available for serialized fields. If set to *Yes*, a corresponding filter will be added to :ref:`grid filters <doc-grids-actions-filters>` by default.
    * **Show on Form** --- If set to *Yes*, the field value appears as editable on record edit pages.
 
-     .. warning:: If the **Show on Form** value has been set to **No** when creating the field, you cannot create or update its values from OroCommerce. This is only reasonable for the field values uploaded to the system during synchronization. 
+     .. warning:: If the **Show on Form** value has been set to **No** when creating the field, you cannot create or update its values from your Oro application. This is only reasonable for the field values uploaded to the system during synchronization.
 
    * **Show on View** --- If set to *Yes*, the field is displayed on record view pages.
    * **Priority** --- Defines an order of custom fields on entity record view, edit, and create pages, and on the respective grid. 
@@ -56,7 +56,7 @@ Once the :ref:`basic properties <admin-guide-create-entity-fields-basic>` (field
    * **Auditable** --- Not available for serialized fields. If set to *Yes*, the system will log changes made to this field values when users edit entity records.
    * **Applicable Organizations** --- Defines for what :term:`organizations <Organization>` the custom field will be added to the :term:`entity <Entity>`. **All** is selected by default. Clear the **All** check box to choose specific organizations from the list.
 
-   .. caution:: If the **Show on Form** value has been set to *No*, there will be no way to create/update the field values from OroCommerce. Thus, such configuration is reasonable only for data which is uploaded to the system during a synchronization. 
+   .. caution:: If the **Show on Form** value has been set to *No*, there will be no way to create/update the field values from your Oro application. Thus, such configuration is reasonable only for data which is uploaded to the system during a synchronization.
 
    * **Allowed MIME types** --- Limits the types of files you can attach to an entity. This applies to file attributes only. For instance, using this option, you can enable application users to upload files only in .pdf format. For this, add the *File* field to the opportunity entity, and enter *application/pdf* into the *Allowed Mime types* field. If this field is left empty, the list of :ref:`MIME types defined in the system configuration <admin-configuration-upload-settings>` is applied.
 

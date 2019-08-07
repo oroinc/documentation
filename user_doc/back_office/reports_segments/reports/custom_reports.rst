@@ -3,9 +3,6 @@
 Use Custom Reports
 ==================
 
-.. contents:: :local:
-   :depth: 1
-
 Create a Custom Report
 ----------------------
 

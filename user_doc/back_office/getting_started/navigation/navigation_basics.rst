@@ -3,7 +3,6 @@
 Navigation Basics
 =================
 
-.. contents:: :local:
 
 Oro application provides a broad set of navigation tools that allow you to access necessary information and tools easily. The system helps ensure that frequent actions can be performed with minimal effort by keeping the required information at hand. This means no important updates are missed.
 

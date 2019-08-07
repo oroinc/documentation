@@ -3,10 +3,8 @@
 Reports in Use
 ==============
 
-This section contains several examples of the report configuration:
+This section contains several examples of the report configuration.
 
-.. contents:: :local:
-   :depth: 3
 
 Aggregate Data in the Report
 ----------------------------

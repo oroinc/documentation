@@ -3,8 +3,6 @@
 Manage a Website
 ================
 
-.. contents:: :local:
-
 With OroCommerce, you can determine the way a particular website is operated by customizing it according to your business requirements.
 
 Once a website is created and properly configured, you can now:

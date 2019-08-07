@@ -3,8 +3,6 @@
 Basic Quote Lifecycle Management (When Workflows Are Disabled)
 ==============================================================
 
-.. contents:: :local:
-
 Available options depend on the current status of the quote and your permissions. These actions appear only when all the quote-related workflows are disabled and the default (basic) quote management applies.
 
 Edit a Quote

@@ -5,9 +5,6 @@ Product Brands
 
 For enhanced eCommerce experience, Oro Application provides the ability to create and manage brands for your web store. This means that each product can be associated with a specific brand, created in the back-office.
 
-In this section you will learn how to:
-
-.. contents:: :local:
 
 Create a Brand 
 --------------

@@ -3,8 +3,6 @@
 Use RFQ Workflows
 =================
 
-.. contents:: :local:
-   :depth: 2
 
 The RFQ management procedure depends on the active RFQ-related workflows. Out of the box, the Oro application supports RFQ Submission Flow and RFQ Management Flow.
 

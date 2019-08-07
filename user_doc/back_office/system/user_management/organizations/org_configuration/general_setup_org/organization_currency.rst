@@ -29,7 +29,8 @@ The following sections become available within the **Currency** tab:
 +------------------------+-------------------------------------------------------------------------------------------------------------+
 | **Name**               | Description                                                                                                 |
 +========================+=============================================================================================================+
-| **Allowed currencies** | **Allowed currencies** list allows you to select some of all available currencies to enable them in OroCRM. |
+| **Allowed currencies** | **Allowed currencies** list allows you to select some of all available currencies to enable them in your    |
+|                        | Oro application.                                                                                            |
 |                        |                                                                                                             |
 |                        | To add the allowed currency, select it from the list and click **Add**.                                     |
 |                        |                                                                                                             |

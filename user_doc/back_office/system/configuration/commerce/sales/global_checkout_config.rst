@@ -5,9 +5,6 @@
 Checkout
 ========
 
-.. contents:: :local:
-   :depth: 1
-
 Guest Checkout
 --------------
 

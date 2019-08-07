@@ -15,9 +15,6 @@ You can enable or disable entity-specific and system-specific capabilities in th
 
 Read on to learn more about the capabilities available for users in the back-office.
 
-.. contents:: :local:
-   :depth: 2
-
 .. _admin-capabilities-acc:
 .. _admin-capabilities-data-audit:
 .. _admin-capabilities-system-info:
