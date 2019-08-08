@@ -721,6 +721,18 @@ body {
 .wy-menu li.current > a {
     font-weight: inherit;
 }
+.wy-menu li.toctree-l1.current li.toctree-l2 > ul,
+.wy-menu li.toctree-l2.current li.toctree-l3 > ul,
+.wy-menu li.toctree-l2.current li.toctree-l4 > ul,
+.wy-menu li.toctree-l2.current li.toctree-l5 > ul {
+    display: none;
+}
+.wy-menu li.toctree-l1.current li.toctree-l2.current>ul,
+.wy-menu li.toctree-l2.current li.toctree-l3.current>ul,
+.wy-menu li.toctree-l3.current li.toctree-l4.current>ul,
+.wy-menu li.toctree-l4.current li.toctree-l5.current>ul {
+    display: block;
+}
 .wy-menu li.current > a,
 .wy-menu li.toctree-l1 a,
 .wy-menu li.toctree-l2 a,
