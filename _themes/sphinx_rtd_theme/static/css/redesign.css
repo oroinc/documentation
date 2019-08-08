@@ -54,6 +54,14 @@ a:focus {
 .rst-content .toc-backref:focus {
     text-decoration: none;
 }
+.rst-content .sidebar {
+    float: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+}
+.rst-content .sidebar .sidebar-title {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
 .rst-content .admonition {
     background: #f5f5f5;
     position: relative;
