@@ -801,7 +801,7 @@ body {
 .wy-menu li.toctree-l4 > ul,
 .wy-menu li.toctree-l4.current > ul{
     /*padding: 9px 0 0 24px;*/
-    padding: 3px 0 0 20px;
+    padding: 3px 0 0 15px;
 }
 .wy-menu li.toctree-l5 > ul,
 .wy-menu li.toctree-l5.current > ul {
