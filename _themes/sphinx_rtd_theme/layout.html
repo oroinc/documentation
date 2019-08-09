@@ -214,10 +214,6 @@
   </script>
 
   <script type="text/javascript">
-    if ($('.left-sidebar .wy-menu a[href="#"]').length > 0){
-      var curLinkPos = $('.left-sidebar .wy-menu a[href="#"]').position().top;
-    }
-
     var topIndent = ($('.header-container').height() + parseInt($('.three-columns-layout').css('padding-top')));
 
     $(document).ready(function(){
@@ -229,21 +225,13 @@
       backToTop();
       scrollSpy();
       smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference', topIndent);
-      setTimeout(isPageScrolled, 50);
+      setTimeout(anchorScroll, 10);
       setTimeout(isLeftSidebarScrolled, 50);
 
-      $('.sidebar .toctree-l2 a').on('click', function (e) {
-        if ($(this).attr('href') == "#") {
-          e.preventDefault();
-          $(this).closest('.sidebar').addClass('v-hidden');
-          $(this).closest('.sidebar').find('.sidebar-holder').css({'transition' : 'none'});
-          setTimeout(isLeftSidebarScrolled, 50);
-        }
+      $('.sidebar .wy-menu a').on('click', function () {
+        setTimeout(anchorScroll, 10);
+        setTimeout(isLeftSidebarScrolled, 50);
       });
-    });
-
-    $(window).on('load', function(){
-      $('.sidebar .sidebar-holder').addClass('visible-content');
     });
 
     $(window).scroll(function(){
@@ -258,33 +246,30 @@
       mobileCollapse();
     });
 
-    function isPageScrolled() {
+    function isLeftSidebarScrolled() {
       if ($('.left-sidebar').length > 0) {
-        if ($('.left-sidebar .sticky-block').offset().top == ($('.left-sidebar').offset().top + parseInt($('.left-sidebar .sidebar-holder').css('padding-top')))) {
-          return
-        } else {
-          window.scrollTo(0,0);
+        var scrollContent = $('.left-sidebar .scroll-wrapper > .scroll-content');
+        var curLink = $('.left-sidebar .wy-menu a[href="#"]');
+
+        if ((curLink.position().top + curLink.outerHeight()) > $('.left-sidebar .scroll-wrapper').height()){
+          scrollContent.scrollTop(curLink.position().top);
         }
       }
     }
 
-    function isLeftSidebarScrolled() {
-      if ($('.left-sidebar').length > 0) {
-        var scrollContent = $('.left-sidebar .scroll-wrapper > .scroll-content');
+    function anchorScroll() {
+      if (($(window).prop('innerWidth') > 767) && ($('.rst-content .section').length > 0)){
+        var section = $('.rst-content').find('.section'),
+                location = window.location.hash.slice(1);
 
-        if ($('.sidebar').hasClass('v-hidden')) {
-          $('.sidebar').removeClass('v-hidden');
-          $('.sidebar .sidebar-holder').css({'transition' : 'visibility 0s ease 0.051s'});
-        }
-        if (scrollContent.scrollTop() == 0) {
-            return;
-        } else {
-          if (curLinkPos > $('.left-sidebar .scroll-wrapper').height()){
-            scrollContent.scrollTop(curLinkPos);
-          } else {
-            scrollContent.scrollTop(0);
+        section.each(function () {
+          var curSection = $(this),
+                  anchor = curSection.attr('id');
+
+          if (anchor === location){
+            window.scrollTo(0,(curSection.offset().top - topIndent + 1));
           }
-        }
+        });
       }
     }
 
@@ -301,8 +286,15 @@
         } else {
           $('body').css('padding-top' , headerHeight)
         }
+
+        if($(window).scrollTop() > 0){
+          $('.header-container').addClass('shadow-active');
+        } else {
+          $('.header-container').removeClass('shadow-active');
+        }
       } else {
         $('body').removeClass('fixed-header').removeAttr('style');
+        $('.header-container').removeClass('shadow-active');
       }
     }
 
@@ -338,12 +330,10 @@
                 return;
               } else {
                 $('.sidebar').addClass('v-hidden');
-                $('.sidebar .sidebar-holder').css({'transition' : 'none'});
               }
             } else {
               if ($('.sidebar').hasClass('v-hidden')){
                 $('.sidebar').removeClass('v-hidden');
-                $('.sidebar .sidebar-holder').css({'transition' : 'visibility 0s ease 0.051s'});
               }
             }
           });
