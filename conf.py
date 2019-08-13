@@ -16,7 +16,7 @@ import sys, os
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-#sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('./sphinx'))
 
 # adding PhpLexer
 from sphinx.highlighting import lexers
@@ -31,7 +31,7 @@ from pygments.lexers.web import PhpLexer
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 # https://github.com/nyergler/hieroglyph
 #https://pypi.python.org/pypi/sphinxcontrib-images
-extensions = ['sphinxcontrib.phpdomain', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode', 'oro.integrity_check']
+extensions = ['sphinxcontrib.phpdomain', 'sensio.sphinx.configurationblock', 'sensio.sphinx.phpcode', 'oro.integrity_check', 'builders.orohtml']
 
 spelling_lang='en_US'
 spelling_word_list_filename='spelling_wordlist.txt'
@@ -174,7 +174,7 @@ html_additional_pages = {'index': 'index.html'}
 #html_domain_indices = True
 
 # If false, no index is generated.
-#html_use_index = True
+html_use_index = False
 
 # If true, the index is split into individual pages for each letter.
 #html_split_index = False
