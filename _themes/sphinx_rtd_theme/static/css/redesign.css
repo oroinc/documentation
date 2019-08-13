@@ -791,6 +791,9 @@ body {
     color: #b84926;
     background: none;
 }
+.wy-menu li.current > a.current-alt {
+    color: #b84926;
+}
 .wy-menu li.toctree-l1.current li.toctree-l2 > a {
     padding: 0 0 0 18px;
     font-size: 15px;
@@ -907,6 +910,7 @@ body {
 
 .contents-table {
     padding: 8px 4px;
+    position: relative;
 }
 .contents-table .contents-title,
 .contents-table > ul > li > a {
