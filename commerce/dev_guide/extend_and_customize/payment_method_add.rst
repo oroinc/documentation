@@ -385,11 +385,11 @@ Add the Payment Method View Factory and Provider to the Services Container
 
 To register the payment method view factory and provider, append the following key-values to <bundle_root>/Resources/config/services.yml:
 
-.. oro_integrity_check:: bf4f13e1e8fecd6f47795e7b32c46d13a70a2c22
+.. oro_integrity_check:: 631d7090e2b6e51c56e5360bb39d1ec2a618da34
 
    .. literalinclude:: ../../code_examples/payment_method/collect-on-delivery/Resources/config/services.yml
       :language: yaml
-      :lines: 42-53
+      :lines: 41-53
       :linenos:
 
 

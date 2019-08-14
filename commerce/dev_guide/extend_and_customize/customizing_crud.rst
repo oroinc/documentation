@@ -39,42 +39,11 @@ Let’s also make our entity compliant with the `ProductHolderInterface <https:/
 
 This is how our custom entity will look like:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Entity/ProductOptions.php
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
+    :language: php
+    :lines: 1-9, 12-41, 106
     :linenos:
-
-    //src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
-    /**
-     * @ORM\Table(name="oro_bpe_prod_opts")
-     * @ORM\Entity
-     */
-    class ProductOptions implements ProductHolderInterface
-    {
-        /**
-         * @var integer
-         *
-         * @ORM\Id
-         * @ORM\Column(type="integer")
-         * @ORM\GeneratedValue(strategy="AUTO")
-         */
-        protected $id;
-        
-        /**
-         * @var Product
-         *
-         * @ORM\ManyToOne(targetEntity="OroB2B\Bundle\ProductBundle\Entity\Product")
-         * @ORM\JoinColumn(name="product_id", referencedColumnName="id", nullable=false, onDelete="CASCADE")
-         */
-        protected $product;
-
-        /**
-         * @var string
-         *
-         * @ORM\Column(name="value", type="text")
-         */
-        protected $value;
-
-        // ..... Getters & Setters implementations .....
-    }
 
 Installation And Migrations
 ---------------------------
@@ -87,184 +56,39 @@ We are going to have only one version of our custom bundle in this blog post, so
 
 Installation:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
+    :language: php
     :linenos:
-
-    //src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
-    class OroBlogPostExampleBundleInstaller implements Installation
-    {
-        /**
-         * {@inheritdoc}
-         */
-        public function getMigrationVersion()
-        {
-            return 'v1_0';
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            /** Tables generation **/
-            $this->createOroBpeProdOptsTable($schema);
-
-            /** Foreign keys generation **/
-            $this->addOroBpeProdOptsForeignKeys($schema);
-        }
-
-        /**
-         * Create oro_bpe_prod_opts table
-         *
-         * @param Schema $schema
-         */
-        protected function createOroBpeProdOptsTable(Schema $schema)
-        {
-            $table = $schema->createTable('oro_bpe_prod_opts');
-            $table->addColumn('id', 'integer', ['autoincrement' => true]);
-            $table->addColumn('product_id', 'integer', []);
-            $table->addColumn('value', 'text', []);
-            $table->setPrimaryKey(['id']);
-            $table->addIndex(['product_id']);
-        }
-
-        /**
-         * Add oro_bpe_prod_opts foreign keys.
-         *
-         * @param Schema $schema
-         */
-        protected function addOroBpeProdOptsForeignKeys(Schema $schema)
-        {
-            $table = $schema->getTable('oro_bpe_prod_opts');
-            $table->addForeignKeyConstraint(
-                $schema->getTable('orob2b_product'),
-                ['product_id'],
-                ['id'],
-                ['onDelete' => 'CASCADE', 'onUpdate' => null]
-            );
-        }
-    }
 
 Migration:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
+    :language: php
     :linenos:
-
-    //src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
-    class OroBlogPostExampleBundle implements Migration
-    {
-        /**
-         * {@inheritdoc}
-         */
-        public function up(Schema $schema, QueryBag $queries)
-        {
-            /** Tables generation **/
-            $this->createOroBpeProdOptsTable($schema);
-
-            /** Foreign keys generation **/
-            $this->addOroBpeProdOptsForeignKeys($schema);
-        }
-
-        /**
-         * Create oro_bpe_prod_opts table
-         *
-         * @param Schema $schema
-         */
-        protected function createOroBpeProdOptsTable(Schema $schema)
-        {
-            $table = $schema->createTable('oro_bpe_prod_opts');
-            $table->addColumn('id', 'integer', ['autoincrement' => true]);
-            $table->addColumn('product_id', 'integer', []);
-            $table->addColumn('value', 'text', []);
-            $table->setPrimaryKey(['id']);
-            $table->addIndex(['product_id']);
-        }
-
-        /**
-         * Add oro_bpe_prod_opts foreign keys.
-         *
-         * @param Schema $schema
-         */
-        protected function addOroBpeProdOptsForeignKeys(Schema $schema)
-        {
-            $table = $schema->getTable('oro_bpe_prod_opts');
-            $table->addForeignKeyConstraint(
-                $schema->getTable('orob2b_product'),
-                ['product_id'],
-                ['id'],
-                ['onDelete' => 'CASCADE', 'onUpdate' => null]
-            );
-        }
-    }
 
 Form Types
 ----------
 
 In order to customize the new product field, we need to implement a corresponding form type that will be used in the main form on the product create and edit pages:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Form/Type/ProductOptionsType.php
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Form/Type/ProductOptionsType.php
+    :language: php
+    :lines: 1-9, 13-
     :linenos:
-
-    //src/Oro/Bundle/BlogPostExampleBundle/Form/Type/ProductOptionsType.php
-    class ProductOptionsType extends AbstractType
-    {
-        const NAME = 'oro_blogpostexample_product_options';
-
-        /** @var string */
-        protected $dataClass;
-
-        /**
-         * @param string $dataClass
-         */
-        public function setDataClass($dataClass)
-        {
-            $this->dataClass = $dataClass;
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function buildForm(FormBuilderInterface $builder, array $options)
-        {
-            $builder->add('value');
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function configureOptions(OptionsResolver $resolver)
-        {
-            $resolver->setDefaults(
-                [
-                    'data_class' => $this->dataClass
-                ]
-            );
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function getName()
-        {
-            return self::NAME;
-        }
-    }
 
 The setDataClass method is used here to provide more flexibility while allowing for the re-use of this form type. Using it like this is optional.
 
 Once you have your new form type, it should be registered in the service container to be recognizable by the Symfony’s form factory:
 
-.. code-block:: none
-    :linenos:
 
-    #src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
-    services:
-        oro_blogpostexample.form.type.product_options:
-            class: Oro\Bundle\BlogPostExampleBundle\Form\Type\ProductOptionsType
-            calls:
-                - [setDataClass, ['%oro_blogpostexample.entity.product_options.class%']]
-            tags:
-                - { name: form.type, alias: oro_blogpostexample_product_options }
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/config/form_types.yml
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
+    :language: none
+    :lines: 1-5
+    :linenos:
 
 Form Type Extension
 -------------------
@@ -274,130 +98,20 @@ Any integrations between different form types within OroCommerce can use form ty
  * **FormEvents::POST_SET_DATA** – it will be used to assign values to the form from our custom entity object;
  * **FormEvents::POST_SUBMIT** – it will be used to convert, validate and persist our custom values.
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Form/Extension/ProductOptionsFormTypeExtension.php
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Form/Extension/ProductOptionsFormTypeExtension.php
+    :language: php
+    :lines: 1-16, 21-
     :linenos:
-
-    //src/Oro/Bundle/BlogPostExampleBundle/Form/Extension/ProductFormExtension.php
-    class ProductFormExtension extends AbstractTypeExtension
-    {
-        const FORM_ELEMENT_NAME = 'oro_blogpostexample_product_options';
-
-        /** @var ManagerRegistry */
-        protected $registry;
-
-        /**
-         * @param ManagerRegistry $registry
-         */
-        public function __construct(ManagerRegistry $registry)
-        {
-            $this->registry = $registry;
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function getExtendedType()
-        {
-            return ProductType::NAME;
-        }
-
-        /**
-         * {@inheritdoc}
-         */
-        public function buildForm(FormBuilderInterface $builder, array $options)
-        {
-            //Appending Parent form with our custom form
-            $builder->add(
-                self::FORM_ELEMENT_NAME,
-                ProductOptionsType::NAME,
-                [
-                    'label' => 'oro.blogpostexample.product_options.entity_label',
-                    'required' => false,
-                    'mapped' => false,
-                ]
-            );
-
-            //Subscribing to events
-            $builder->addEventListener(FormEvents::POST_SET_DATA, [$this, 'onPostSetData']);
-            $builder->addEventListener(FormEvents::POST_SUBMIT, [$this, 'onPostSubmit'], 10);
-        }
-
-        /**
-         * @param FormEvent $event
-         */
-        public function onPostSetData(FormEvent $event)
-        {
-            /** @var Product|null $product */
-            $product = $event->getData();
-            if (!$product || !$product->getId()) {
-                return;
-            }
-
-            $options = $this->getProductOptionsRepository()
-                ->findOneBy(['product' => $product]);
-
-            $event->getForm()->get(self::FORM_ELEMENT_NAME)->setData($options);
-        }
-
-        /**
-         * @param FormEvent $event
-         */
-        public function onPostSubmit(FormEvent $event)
-        {
-            /** @var Product|null $product */
-            $product = $event->getData();
-            if (!$product) {
-                return;
-            }
-
-            /** @var ProductOptionsType $form */
-            $form = $event->getForm();
-
-            /** @var ProductOptions $options */
-            $options = $form->get(self::FORM_ELEMENT_NAME)->getData();
-            $options->setProduct($product);
-
-            if (!$form->isValid()) {
-                return;
-            }
-
-            $this->getProductOptionsObjectManager()->persist($options);
-        }
-
-        /**
-         * @return ObjectManager|null
-         */
-        protected function getProductOptionsObjectManager()
-        {
-            return $this->registry->getManagerForClass(ProductOptions::class);
-        }
-
-        /**
-         * @return ObjectRepository
-         */
-        protected function getProductOptionsRepository()
-        {
-            return $this->getProductOptionsObjectManager()
-                ->getRepository(ProductOptions::class);
-        }
-    }
 
 Our new form type extension should also be registered in the service container:
 
-.. code-block:: none
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/config/form_types.yml
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
+    :language: none
+    :lines: 1,7-13
     :linenos:
 
-    #src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
-    services:
-        # ..... Form Definition .....
-
-        oro_blogpostexample.form.extension.product_type:
-            class: 'Oro\Bundle\BlogPostExampleBundle\Form\Extension\ProductFormExtension'
-            public: true
-            arguments:
-                - "@doctrine"
-            tags:
-                - { name: form.type_extension, alias: oro_product }
 
 UI Data Targets and Listener
 ----------------------------
@@ -412,149 +126,35 @@ In our case, the custom data should be added to the product view page and the pr
 * product-edit will be used to show our custom data on the product edit page;
 * product-create-step-two will be used to add our custom data to the product creation page.
 
-.. code-block:: none
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/config/services.yml
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/config/services.yml
+    :language: none
     :linenos:
-
-    #src/Oro/Bundle/BlogPostExampleBundle/Resources/config/services.yml
-
-    services:
-        oro_blogpostexample.event_listener.form_view.product:
-            class: 'Oro\Bundle\BlogPostExampleBundle\EventListener\ProductFormListener'
-            arguments:
-                - '@translator'
-                - '@oro_entity.doctrine_helper'
-                - '@oro_blogpostexample.product_options.provider'
-                - '@request_stack'
-            tags:
-                - { name: kernel.event_listener, event: oro_ui.scroll_data.before.product-view, method: onProductView }
-                - { name: kernel.event_listener, event: oro_ui.scroll_data.before.product-edit, method: onProductEdit }
-                - { name: kernel.event_listener, event: oro_ui.scroll_data.before.product-create-step-two, method: onProductEdit }
 
 The event listener may be implemented as follows:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/EventListener/ProductFormListener.php
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/EventListener/ProductFormListener.php
+    :language: php
+    :lines: 1-12, 16-
     :linenos:
 
-    //src/Oro/Bundle/BlogPostExampleBundle/EventListener/ProductFormListener.php
-
-    class ProductFormListener
-    {
-        /** @var TranslatorInterface */
-        protected $translator;
-
-        /** @var DoctrineHelper */
-        protected $doctrineHelper;
-
-        /** @var ProductOptionsProvider */
-        protected $productOptionsProvider;
-
-        /** @var RequestStack */
-        protected $requestStack;
-
-        /**
-         * @param TranslatorInterface $translator
-         * @param DoctrineHelper $doctrineHelper
-         * @param ProductOptionsProvider $productOptionsProvider
-         * @param RequestStack $requestStack
-         */
-        public function __construct(
-            TranslatorInterface $translator,
-            DoctrineHelper $doctrineHelper,
-            ProductOptionsProvider $productOptionsProvider,
-            RequestStack $requestStack
-        ) {
-            $this->translator = $translator;
-            $this->doctrineHelper = $doctrineHelper;
-            $this->productOptionsProvider = $productOptionsProvider;
-            $this->requestStack = $requestStack;
-        }
-
-        /**
-         * @param BeforeListRenderEvent $event
-         */
-        public function onProductView(BeforeListRenderEvent $event)
-        {
-            $request = $this->requestStack->getCurrentRequest();
-            if (!$request) {
-                return;
-            }
-
-            // Retrieving current Product Id from request
-            $productId = (int)$request->get('id');
-            if (!$productId) {
-                return;
-            }
-
-            /** @var Product $product */
-            $product = $this->doctrineHelper->getEntityReference(Product::class, $productId);
-            if (!$product) {
-                return;
-            }
-
-            $productOptions = $this->productOptionsProvider->getOptionsByProduct($product);
-
-            if (null === $productOptions) {
-                return;
-            }
-
-            $template = $event->getEnvironment()->render(
-                'OroB2BBlogPostExampleBundle:Product:product_options_view.html.twig',
-                [
-                    'entity' => $product,
-                    'productOptions' => $productOptions
-                ]
-            );
-            $this->addBlock($event->getScrollData(), $template, 'oro.blogpostexample.product.section.product_options');
-        }
-
-        /**
-         * @param BeforeListRenderEvent $event
-         */
-        public function onProductEdit(BeforeListRenderEvent $event)
-        {
-            $template = $event->getEnvironment()->render(
-                'OroB2BBlogPostExampleBundle:Product:product_options_update.html.twig',
-                ['form' => $event->getFormView()]
-            );
-            $this->addBlock($event->getScrollData(), $template, 'oro.blogpostexample.product.section.product_options');
-        }
-        /**
-         * @param ScrollData $scrollData
-         * @param string $html
-         * @param string $label
-         * @param int $priority
-         */
-        protected function addBlock(ScrollData $scrollData, $html, $label, $priority = 100)
-        {
-            $blockLabel = $this->translator->trans($label);
-            $blockId    = $scrollData->addBlock($blockLabel, $priority);
-            $subBlockId = $scrollData->addSubBlock($blockId);
-            $scrollData->addSubBlockData($blockId, $subBlockId, $html);
-        }
-    }
 
 Templates
 
 And finally, we can define the templates – one for the form:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/views/Product/product_options_update.html.twig
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_update.html.twig
+    :language: php
     :linenos:
-
-    {# //src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_update.html.twig #}
-
-    {{ form_widget(form.oro_blogpostexample_product_options) }}
-    {{ form_errors(form.oro_blogpostexample_product_options) }}
 
 and one for the view:
 
-.. code-block:: php
+.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/views/Product/product_options_view.html.twig
+    :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_view.html.twig
+    :language: php
     :linenos:
-
-    //src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_view.html.twig
-
-    {% import 'OroUIBundle::macros.html.twig' as UI %}
-
-    {{ UI.renderHtmlProperty('oro.blogpostexample.product_options.label'| trans, productOptions.value) }}
 
 As a result, the following blocks will be shown on the product edit and create pages:
 
@@ -564,7 +164,7 @@ In view mode, the block looks as follows:
 
 .. image:: /dev_guide/img/crud_result_view.png
 
-A fully working example, organized into a custom bundle is available `here <https://www.oroinc.com/orocommerce/downloads/orob2bblogpostexamplebundle?wpdmdl=1732>`_ (Download 13.47 KB).
+A fully working example, organized into a custom bundle is available `here <https://oroinc.com/b2b-ecommerce/file/2509>`_.
 
 In order to add this bundle to your application:
 
