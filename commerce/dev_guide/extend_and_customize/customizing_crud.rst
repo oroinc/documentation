@@ -39,7 +39,7 @@ Let’s also make our entity compliant with the `ProductHolderInterface <https:/
 
 This is how our custom entity will look like:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Entity/ProductOptions.php
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Entity/ProductOptions.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Entity/ProductOptions.php
     :language: php
     :lines: 1-9, 12-41, 106
@@ -56,14 +56,14 @@ We are going to have only one version of our custom bundle in this blog post, so
 
 Installation:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/OroBlogPostExampleBundleInstaller.php
     :language: php
     :linenos:
 
 Migration:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Migrations/Schema/v1_0/OroBlogPostExampleBundle.php
     :language: php
     :linenos:
@@ -73,7 +73,7 @@ Form Types
 
 In order to customize the new product field, we need to implement a corresponding form type that will be used in the main form on the product create and edit pages:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Form/Type/ProductOptionsType.php
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Form/Type/ProductOptionsType.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Form/Type/ProductOptionsType.php
     :language: php
     :lines: 1-9, 13-
@@ -84,7 +84,7 @@ The setDataClass method is used here to provide more flexibility while allowing 
 Once you have your new form type, it should be registered in the service container to be recognizable by the Symfony’s form factory:
 
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/config/form_types.yml
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Resources/config/form_types.yml
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
     :language: none
     :lines: 1-5
@@ -98,7 +98,7 @@ Any integrations between different form types within OroCommerce can use form ty
  * **FormEvents::POST_SET_DATA** – it will be used to assign values to the form from our custom entity object;
  * **FormEvents::POST_SUBMIT** – it will be used to convert, validate and persist our custom values.
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Form/Extension/ProductOptionsFormTypeExtension.php
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Form/Extension/ProductOptionsFormTypeExtension.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Form/Extension/ProductOptionsFormTypeExtension.php
     :language: php
     :lines: 1-16, 21-
@@ -106,7 +106,7 @@ Any integrations between different form types within OroCommerce can use form ty
 
 Our new form type extension should also be registered in the service container:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/config/form_types.yml
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Resources/config/form_types.yml
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/config/form_types.yml
     :language: none
     :lines: 1,7-13
@@ -126,14 +126,14 @@ In our case, the custom data should be added to the product view page and the pr
 * product-edit will be used to show our custom data on the product edit page;
 * product-create-step-two will be used to add our custom data to the product creation page.
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/config/services.yml
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Resources/config/services.yml
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/config/services.yml
     :language: none
     :linenos:
 
 The event listener may be implemented as follows:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/EventListener/ProductFormListener.php
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/EventListener/ProductFormListener.php
     :caption: src/Oro/Bundle/BlogPostExampleBundle/EventListener/ProductFormListener.php
     :language: php
     :lines: 1-12, 16-
@@ -144,14 +144,14 @@ Templates
 
 And finally, we can define the templates – one for the form:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/views/Product/product_options_update.html.twig
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Resources/views/Product/product_options_update.html.twig
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_update.html.twig
     :language: php
     :linenos:
 
 and one for the view:
 
-.. literalinclude:: ../../code_examples/customizing_crud/product-options/Resources/views/Product/product_options_view.html.twig
+.. literalinclude:: ../../code_examples_untested/customizing_crud/product-options/Resources/views/Product/product_options_view.html.twig
     :caption: src/Oro/Bundle/BlogPostExampleBundle/Resources/views/Product/product_options_view.html.twig
     :language: php
     :linenos:
