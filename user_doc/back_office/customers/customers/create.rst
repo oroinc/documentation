@@ -4,7 +4,7 @@ Create a Customer
 =================
 
 .. note::
-    See a short demo on `how to create customers in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-customer-record>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to create customers in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -19,7 +19,7 @@ To create a new customer:
    .. image:: /user_doc/img/customers/customers/CustomersCreate.png
       :alt: An empty form is displayed when creating a new customer
 
-#. Optionally, select an existing `account <https://oroinc.com/orocrm/doc/current/user-guide-sales-tools/customer-management/common-features-accounts>`_ to help track sales actions and metrics for the customer that is a member of the bigger customer organization. When it remains empty, the new account is created for the new customer automatically.
+#. Optionally, select an existing :ref:`account <user-guide-accounts>` to help track sales actions and metrics for the customer that is a member of the bigger customer organization. When it remains empty, the new account is created for the new customer automatically.
 
 #. Fill in the customer **Name**.
 
@@ -45,4 +45,8 @@ To create a new customer:
 
    .. image:: /user_doc/img/customers/customers/unable_to_delete_customers.png
       :alt: A note appears when deleting a customer warning that no entities can be deleted
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

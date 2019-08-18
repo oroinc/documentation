@@ -12,7 +12,8 @@ Add a Cookie Banner
 
 To set up a cookie banner:
 
-1. Download the OroCommerceCookieBannerBundle archived file.
+
+1. Download the |OroCommerceCookieBannerBundle| archived file.
 2. Unpack the downloaded file to **{application_name}/src/Oro/Bundle**.
 3. Run the following commands:
 
@@ -69,3 +70,7 @@ To add a translation to the cookie banner to present information in the desired 
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports>`
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

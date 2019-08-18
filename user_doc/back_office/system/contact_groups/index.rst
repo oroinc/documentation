@@ -31,5 +31,5 @@ Now, you can |IcEdit| edit or |IcDelete| delete a contact group from the system 
 .. image:: /user_doc/img/system/contact_groups/cont_groups_grid.png
    :alt: The actions available to contact groups from the grid
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

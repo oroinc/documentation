@@ -102,5 +102,5 @@ To start a Hangout call with contacts invited to an event:
 
 * :ref:`Activities: Calls <doc-activities-calls>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

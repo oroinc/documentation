@@ -19,7 +19,7 @@ All email settings are located in the system, organization, website, or user con
 * :ref:`Configure Email Settings for Website <admin-configuration-system-mailboxes-website>`
 * :ref:`Configure Email Settings per User <admin-configuration-email-configuration-user>`
 
-.. note:: See a short demo on `how to create and manage emails <https://oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with an Oro application <https://oroinc.com/orocrm/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create and manage emails| and |how to synchronize your mailbox with an Oro application|, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -37,4 +37,7 @@ All email settings are located in the system, organization, website, or user con
 
    email_templates
    notification_rules
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

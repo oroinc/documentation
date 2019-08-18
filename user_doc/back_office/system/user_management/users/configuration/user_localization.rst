@@ -53,5 +53,5 @@ To define the custom localization options for the particular user:
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

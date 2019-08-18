@@ -27,9 +27,12 @@ To configure **MIME types** per organization:
 
 7. Click **Save Settings**.
 
-If `attachments are enabled for an entity <https://oroinc.com/doc/orocrm/current/admin-guide/entities/entity-actions#doc-entity-actions-create>`_, the configuration of the entity will prevail and override the corresponding settings configured both globally and per organization.
+If |attachments are enabled for an entity|, the configuration of the entity will prevail and override the corresponding settings configured both globally and per organization.
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

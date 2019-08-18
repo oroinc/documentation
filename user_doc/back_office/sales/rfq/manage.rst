@@ -177,5 +177,5 @@ The internal status will be changed to *Deleted*.
 .. image:: /user_doc/img/sales/rfq/rfq_18.png
    :class: with-border
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

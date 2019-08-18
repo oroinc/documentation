@@ -14,5 +14,5 @@ The following system reports are available out-of-the-box at the Oro application
 * :ref:`Opportunities Reports <user-guide-opportunities-reports>`
 * :ref:`Best Selling Products Report <best-selling-products-reports>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

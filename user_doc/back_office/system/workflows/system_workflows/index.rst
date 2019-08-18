@@ -58,5 +58,5 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
    task_flow
    unqualified_lead
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

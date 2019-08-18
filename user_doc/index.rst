@@ -1,12 +1,12 @@
 Business User Documentation
 ===========================
 
-Oro Online Documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and shipping methods in the management console to exploring the checkout process in the eCommerce storefront.
+Oro Online Documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and shipping methods in the back-office to exploring the checkout process in the eCommerce storefront.
 
 .. hint:: The documentation is split into several section, each delivering content in different ways:
 
         * **Concept Guides** provide an overview of certain features and use-cases, helps out with the general understanding of complex topics
-        * **Back-office** contains how-to topics grouped into sections that mirror the structure of the application's back-office
+        * **Back-Office** contains how-to topics grouped into sections that mirror the structure of the application's back-office
         * **Commerce Storefront**  illustrates how to navigate, browse and interact with the default OroCommerce storefront
 
 Use the left-panel menu or the search bar above it to navigate the documentation and discover how to:

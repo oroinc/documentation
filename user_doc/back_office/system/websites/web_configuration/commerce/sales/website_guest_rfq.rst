@@ -44,5 +44,5 @@ In the Request For Quote section, you can enable guest request for quote submiss
 
 .. finish_rfq
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

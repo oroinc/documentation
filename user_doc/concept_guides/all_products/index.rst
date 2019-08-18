@@ -86,6 +86,6 @@ Similarly, you can add All Products page to the menus of your choice.
 * :ref:`Web Catalogs <user-guide--web-catalog>`
 * :ref:`Build a Custom Web Catalog <user-guide--marketing--web-catalog--sample>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

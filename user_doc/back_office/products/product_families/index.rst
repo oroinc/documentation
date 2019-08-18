@@ -31,5 +31,5 @@ In this section, you will learn how to:
    create
    manage
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

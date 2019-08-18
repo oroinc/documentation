@@ -8,14 +8,14 @@ Prerequisites for PayPal Express Services Integration
 Install Oro PayPal Express Integration Package
 ----------------------------------------------
 
-Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration|  package.
 
 Register a Business Account with PayPal
 ---------------------------------------
 
 To register a business account for your OroCommerce PayPal Express integration, follow the next steps:
 
-#. Open `https://developer.paypal.com/ <https://developer.paypal.com/>`_ and click **Log In**.
+#. Open |https://developer.paypal.com/| and click **Log In**.
 #. On the login page that opens, click **Sign Up**.
 #. On the following page, select **Business Account** and click **Continue**.
 #. Select the service plan (Payment Pro, Payments Standard, or Express Checkout).
@@ -58,7 +58,7 @@ The PayPal Express sandbox test account is identical to the regular PayPal accou
 
 To create a sandbox test account, follow the next steps:
 
-#. Log into the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with the credentials generated in the previous step.
+#. Log into the |https://developer.paypal.com/| with the credentials generated in the previous step.
 
 #. Navigate to **Dashboard** and click **Accounts** in the **Sandbox** section.
 
@@ -83,7 +83,7 @@ Once you have created a sandbox account, you need to obtain the test credentials
 
 To receive the credentials, you need to create a corresponding REST API application:
 
-#. Log into the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with your existing credentials.
+#. Log into the |https://developer.paypal.com/| with your existing credentials.
 
 #. Navigate to **Dashboard > My Apps & Credentials** in the main menu to the left.
 
@@ -111,7 +111,7 @@ Obtain Production Credentials
 
 Once you have successfully configured the PayPal Express integration as described in the :ref:`PayPal Express <config-guide--payment--paypal-express>` guide, and the connection to the test environment is working properly, you can move to a production stage, but this time use the production credentials.
 
-#. Log into the `https://developer.paypal.com/ <https://developer.paypal.com/>`_ with your existing credentials.
+#. Log into the |https://developer.paypal.com/| with your existing credentials.
 
 #. Navigate to **Dashboard > My Apps & Credentials** in the main menu to the left.
 
@@ -125,3 +125,6 @@ Once you have successfully configured the PayPal Express integration as describe
 
 .. note:: Remember NOT to select the **Sandbox Mode** check box as you are configuring the production integration.
 
+
+.. include:: /include/include_links.rst
+   :start-after: begin

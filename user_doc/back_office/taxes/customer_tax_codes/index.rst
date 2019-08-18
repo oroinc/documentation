@@ -84,5 +84,5 @@ You can edit the association of the customer tax code with the tax when :ref:`ed
    view
    link_a_tax_code_to_a_customer
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

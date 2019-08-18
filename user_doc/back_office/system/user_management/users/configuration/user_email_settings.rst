@@ -48,7 +48,7 @@ To configure email settings per user:
 
     Click **Check Connection/Retrieve Folders**. After successful connection, a list of folders will be loaded. Check the folders that you wish to be synchronized (e.g. Inbox).
 
-    As an example, we have synchronized a Gmail mailbox with OroCRM, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found `here <https://support.google.com/mail/answer/7126229?hl=en&rd=2&visit_id=1-636180891016092253-2149088408#ts=1665018%2C1665144>`__  and `here <https://support.google.com/accounts/answer/6010255?hl=en>`__.
+    As an example, we have synchronized a Gmail mailbox with OroCRM, having previously turned on **access for less secure apps**. More details on how to synchronize your Gmail and turn on access for less secured apps can be found in the |Use IMAP to check Gmail| and |Less secure apps & your Google Account| topics.
 
     .. image:: /user_doc/img/system/user_management/personabox_imap_smtp.jpg
        :alt: Email synchronization settings configuration on the user level
@@ -66,5 +66,8 @@ To configure email settings per user:
 * :ref:`Configure Email Settings per Website <admin-configuration-system-mailboxes-website>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

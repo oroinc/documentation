@@ -75,5 +75,5 @@ You can also edit address details of a lead, as illustrated in the screenshot be
    :alt: Edit lead addresses
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

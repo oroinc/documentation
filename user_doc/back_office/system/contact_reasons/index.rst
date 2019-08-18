@@ -45,5 +45,5 @@ You can also assign a contact reason to a contact request manually by selecting 
 For more details, see the :ref:`How to Create a Contact Request Manually <user-guide-activities-requests-create-manually>` topic.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

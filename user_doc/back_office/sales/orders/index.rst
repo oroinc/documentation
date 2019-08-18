@@ -50,7 +50,7 @@ You can control the order lifecycle and:
 * :ref:`Archive old orders <doc--orders--actions--archive>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

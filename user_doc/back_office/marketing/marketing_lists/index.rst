@@ -185,6 +185,6 @@ As soon as Oro application has been integrated with a third party system, to whi
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

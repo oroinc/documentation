@@ -15,7 +15,7 @@ After the payment details were provided, the sales person can view the payment h
 When the payment term is selected, the payment is considered to be captured in full and the payment information is not available.
 
  .. note::
-    See a short demo on `how to create payment method integrations <https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to create payment method integrations| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -61,5 +61,8 @@ In OroCommerce, payment methods are conditions required for a sale to be complet
 * :ref:`General Payment Configuration (Merchant Location) <sys--conf--commerce--payment--general>`
 * :ref:`Payments at Checkout (Illustration) <doc--payment--checkout>`
 
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 
 

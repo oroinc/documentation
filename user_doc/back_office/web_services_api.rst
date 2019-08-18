@@ -21,7 +21,7 @@ interpretation of significant data elements. It encompasses the fundamental cons
 and data that define the basis of the Web architecture, and thus the essence of its behavior as a network-based
 application.
 
-**JSON API** is a `specification <http://jsonapi.org/format/>`__  for how a client should request those resources to
+**JSON API** is a |specification| for how a client should request those resources to
 be fetched or modified, and how a server should respond to them. It is designed to minimize both the number of requests
 and the amount of data transmitted between the clients and the servers. This efficiency is achieved without compromising
 on readability, flexibility or discoverability.
@@ -88,7 +88,7 @@ How to Use the Sandbox
 The sandbox page for OroCommerce is available at: ``http://<hostname_of_your_oro_application>/admin/api/doc``, unlike in OroCRM.
 
 This page represents a list of plain API resources. Plain API resources are old API implementations
-based on `FOSRestBundle <http://symfony.com/doc/current/bundles/FOSRestBundle/index.html>`__.
+based on |FOSRestBundle|.
 
 To switch to the JSON API sandbox, go to the ``http://<hostname_of_your_oro_application>/admin/api/doc/rest_json_api`` page, or click the :guilabel:`JSON.API`
 link in the upper left-hand corner of the sandbox page.
@@ -136,10 +136,10 @@ To see the list of headers which the server sent in the response, click the **Ex
 
 If the request is successful, you should see the output data of the request in the **Response Body** section. In the given
 case, entity data will be in JSON format. More information about this format can
-be found on the `JSON API <http://jsonapi.org/format/>`__ site.
+be found on the |JSON API| site.
 
 The **Curl Command Line** section contains an example of the CLI command to perform the request
-with `Curl <https://curl.haxx.se/>`__.
+with |Curl|.
 This command may help emulate the real request to the API.
 
 .. important::
@@ -278,9 +278,8 @@ For authentication purposes, the **WSSE** mechanism is used—a family of open s
 specifically SOAP web services. The basic premise of WSSE is that a request header is checked for encrypted credentials,
 verified using a timestamp and nonce, and authenticated for the requested user using a password digest.
 
-It’s based on the `EscapeWSSEAuthenticationBundle <https://github.com/escapestudios/EscapeWSSEAuthenticationBundle>`__
-that covers most cases from the
-`WSSE specification <http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf>`__ (PDF).
+It’s based on the |EscapeWSSEAuthenticationBundle| that covers most cases from the
+|WSSE specification| (PDF).
 
 Here's an example of a request header with the WSSE authentication. Please pay attention to the **Authentication** and **X-WSSE** parameters:
 
@@ -342,7 +341,7 @@ should NEVER change the resource.
 
 An *idempotent* HTTP method is an HTTP method that can be called many times without different outcomes. It would not
 matter if the method is called only once, or ten times over. The result should be the same.
-For more details, please see `RFC 7231: Common Method Properties <https://tools.ietf.org/html/rfc7231#section-4.2>`__.
+For more details, please see |RFC 7231: Common Method Properties|.
 
 Below is a table summarizing HTTP methods by its idempotency and safety:
 
@@ -1570,14 +1569,13 @@ Example. Invalid **Content-Type**
 
 
 
-For more information about the API client requirements, see the `JSON Specification <http://jsonapi.org/format/#content-negotiation-clients>`__.
-
-Developer's Reference to Oro APIBundle
---------------------------------------
-
-Find more information about Web API in the following topics:
+For more information about the API client requirements, see the |JSON Specification|.
 
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -42,5 +42,5 @@ Here, you can set the indexation cron schedule and the mass action limit.
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

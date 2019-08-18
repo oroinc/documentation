@@ -5,7 +5,7 @@ Scheduled Tasks
 
 Some recurring tasks should be executed on schedule (for example, imap synchronization or sending email campaigns to customers). Usually, the operating system should be configured to execute a script to perform these tasks.
 
-With Oro, you can use the `OroCronBundle`_ which makes it easy to run Symfony Console commands through cronjobs (on UNIX-based operating systems) or through the Windows task scheduler.
+With Oro, you can use the |OroCronBundle| which makes it easy to run Symfony Console commands through cronjobs (on UNIX-based operating systems) or through the Windows task scheduler.
 
 Oro applications provide admin UI page for admin users that allows see all scheduled cron commands.
 
@@ -83,7 +83,7 @@ that implement the ``CronCommandInterface`` if they are registered in the
 ``oro:cron`` namespace. Implementing ``CronCommandInterface`` requires
 implementation of two methods. First, it is
 :method:`Oro\\Bundle\\CronBundle\\Command\\CronCommandInterface::getDefaultDefinition`.
-It returns the `crontab compatible`_ description of when the command should
+It returns the |crontab compatible| description of when the command should
 be executed. For example, if a command should be run every day five minutes
 after midnight, the appropriate value is ``5 0 * * *``. Your command will
 then look the following way:
@@ -140,12 +140,12 @@ sync command, it can check that there are more than 0 active integrations.
       orphaned entries. It is executed every five minutes.
 
     * Every 30 minutes, the :class:`Oro\\Bundle\\ImapBundle\\Command\\Cron\\EmailSyncCommand`,
-      which is part of the `ImapBundle`_, loads new emails from an IMAP server
+      which is part of the |ImapBundle|, loads new emails from an IMAP server
       and synchronizes them with the local database (you can find more information
-      about the synchronization process in the `dedicated section`_ of the
+      about the synchronization process in the |dedicated section| of the
       ImapBundle documentation).
 
-    * Reminder messages can be created by the `ReminderBundle`_. If they should
+    * Reminder messages can be created by the |ReminderBundle|. If they should
       be delivered as emails to users, they will be added to the mail queue
       which is then flushed periodically (every minute) by the
       :class:`Oro\\Bundle\\ReminderBundle\\Command\\SendRemindersCommand`.
@@ -153,18 +153,12 @@ sync command, it can check that there are more than 0 active integrations.
     * Once per hour, tracking log entries are synchronized from log files in
       the file system into the database when the
       :class:`Oro\\Bundle\\TrackingBundle\\Command\\ImportLogsCommand` from
-      the `TrackingBundle`_ is executed.
+      the |TrackingBundle| is executed.
 
     * The ``oro:cron:integration:sync`` command runs integration jobs configured
-      through the `IntegrationBundle`_ every five minutes.
+      through the |IntegrationBundle| every five minutes.
 
 
-.. _`OroCronBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/CronBundle
-.. _`crontab compatible`: http://www.unix.com/man-page/linux/5/crontab/
-.. _`ImapBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ImapBundle
-.. _`dedicated section`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers
-.. _`ReminderBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ReminderBundle
-.. _`TrackingBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/TrackingBundle
-.. _`IntegrationBundle`: https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/IntegrationBundle
 
-
+.. include:: /include/include_links.rst
+   :start-after: begin

@@ -16,7 +16,7 @@ Oro also provides a feature of auto-assignment to contact, thanks to which new e
 
 Enterprise Editions of Oro application also support integration with Microsoft Exchange Server and Outlook.
 
-   See a short demo on `how to create and manage emails <https://www.oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_, or keep reading the step-by-step guidance below.
+   See a short demo on |how to create and manage emails|, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -221,5 +221,8 @@ Recent Emails Widget
 * :ref:`My Calendar <user-guide-calendars-manage>`
 * :ref:`Log Out <doc-log-out>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

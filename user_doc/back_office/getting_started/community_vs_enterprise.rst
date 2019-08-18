@@ -18,5 +18,8 @@ On top of the features available in Oro CE, Oro EE provides:
 * Support for inventory management across multiple warehouses.
 * OroCRM capabilities integrated into OroCommerce interface.
 
-Complete information on differences between Community and Enterprise editions is illustrated in `OroCommerce Editions <https://oroinc.com/b2b-ecommerce/full-features-list>`_ and `OroCRM Editions <https://oroinc.com/orocrm/orocrm-enterprise-and-community>`_.
+Complete information on differences between Community and Enterprise editions is illustrated in |OroCommerce Editions| and |OroCRM Editions|.
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

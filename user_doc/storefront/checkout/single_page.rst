@@ -42,5 +42,5 @@ In the single page checkout, you can see how far along in the checkout you are, 
   5. Submit the order by clicking **Submit Order** on the bottom of the checkout page.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -112,5 +112,5 @@ Icons within event cells represent invitation statuses depending on whether the 
 * :ref:`My Tasks <doc-activities-tasks>`
 * :ref:`Log Out <doc-log-out>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

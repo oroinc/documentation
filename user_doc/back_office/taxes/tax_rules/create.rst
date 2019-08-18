@@ -5,8 +5,7 @@ Create a Tax Rule
 
 .. begin
 
-.. note::
-    See a short demo on `how to create tax rules in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-tax-rules>`_, or keep reading the step-by-step guidance below.
+See a short demo on |how to create tax rules in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -33,3 +32,7 @@ Once all the necessary actions are performed, you need to create a tax rule for 
 * :ref:`Taxes <user-guide--taxes>`
 
 * :ref:`Tax Rules <tax-rules>`
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

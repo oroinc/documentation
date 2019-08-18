@@ -64,7 +64,7 @@ You can manage widgets using tools in their header:
 * |IcDelete| Delete delete the widget from the dashboard
 * Open widget settings menu |IcSettings| to configure the widget. See the `Configure Widgets`_ section for the options you can change.
 
-The specified owner, date range and the `territory <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ (if available) are displayed at the bottom of the widget.
+The specified owner, date range and the |territory| (if available) are displayed at the bottom of the widget.
 
 Configure Widgets
 -----------------
@@ -79,7 +79,10 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
 * **Compare with previous period** --- Select this option if you wish to compare statistics for the current and the previous periods and have it displayed in the dashboard widget.
 * Other widget details (depending on widget type).
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 
 .. toctree::

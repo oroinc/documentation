@@ -173,7 +173,7 @@ The diagrams below illustrate what information each of the team members can see:
 
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. |oro_application| replace:: OroCommerce

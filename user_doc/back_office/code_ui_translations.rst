@@ -6,7 +6,7 @@ Contribute to Translations
 ==========================
 
 Oro applications support localization and internationalization for multiple languages and locales.
-All strings that may be translated are defined in the bundle translation domain files and are exposed via the translation management service `Crowdin <https://crowdin.com/>`__ to enable the collaborative translation efforts.
+All strings that may be translated are defined in the bundle translation domain files and are exposed via the translation management service |Crowdin| to enable the collaborative translation efforts.
 
 To contribute to OroCRM translation into your native language:
 
@@ -27,15 +27,15 @@ Join the Translation Team
 
 #. Sign into your Crowdin account or sign up for a new user account if you don not have one yet:
 
-   a) Open `Crowdin <https://crowdin.com/join>`_ in your browser.
+   a) Open |Crowdin| in your browser.
 
    #) Sign in using your github or social network account (Facebook, Google+, Twitter).
 
       Alternatively, create a new Crowdin account: enter your email, user name, password and password confirmation, and click **Create account**. Follow the link in the confirmation email to activate you account.
 
-#. Open `OroCRM <http://translate.orocrm.com>`_.
+#. Open |OroCRM|.
 
-   .. note:: To offer translations for OroCommerce and OroPlatform, please use their dedicated translation projects: `OroCommerce project <https://crowdin.com/project/orocommerce>`_ and `OroPlatform project <http://translate.platform.orocrm.com>`_.
+   .. note:: To offer translations for OroCommerce and OroPlatform, please use their dedicated translation projects: |OroCommerce project| and |OroPlatform project|.
 
 #. Select the target language for OroCRM translation and click **Join** next to the following message: “You must join the translators team to be able to participate in this project”.
 
@@ -51,17 +51,17 @@ Submit Your Translations
 
 #. To open the translation project, click **Get Involved** in the email from Crowdin that confirms your OroCrm project team membership.
 
-   Alternatively, use the `OroCRM project <https://crowdin.com/project/oro-crm>`_ link to open the project.
+   Alternatively, use the |OroCRM project| link to open the project.
 
-#. Select the target language (e.g. Korean).
+#. Select the target language (e.g., Korean).
 
-   Translations are stored in yaml files organized by bundles (e.g. OroAccountBundle, OroActivityContactBundle) and by groups (e.g. messages, tooltips).
+   Translations are stored in yaml files organized by bundles (e.g., OroAccountBundle, OroActivityContactBundle) and by groups (e.g., messages, tooltips).
 
 #. Select the yaml file with the translations you would like to contribute to.
 
-#. Submit your translation. For more information on using Crowdin, please see the `Crowdin tutorial <https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/>`_.
+#. Submit your translation. For more information on using Crowdin, please see the |Crowdin tutorial|.
 
-After you have submitted the translation, it will be queued for `proofreading <https://support.crowdin.com/for-translators/onlineworkbench/proofreading>`_. Other translators can `vote <https://support.crowdin.com/for-translators/onlineworkbench/voting>`_ for it.
+After you have submitted the translation, it will be queued for |proofreading|. Other translators can |vote| for it.
 
 When the translation is approved, it is marked with a green check mark and moved to the end of the list on the translation page. Approved translations are merged (published) to the Oro application translations once a day and become available in Oro application in the language settings (to open the language settings, in the main menu, navigate to **System > Configuration > Language Settings**).
 
@@ -89,7 +89,7 @@ Contact Oro Translation Team
 ----------------------------
 
 In order to report a translation-related issue, please use the
-`contact <https://crowdin.com/mail/compose/oro>`_ link in the **Owner** section on the `OroCRM project <https://crowdin.com/project/oro-crm>`_ in Crowdin.
+|contact| link in the **Owner** section on the |OroCRM project| in Crowdin.
 
 Please do not hesitate to contact us from Crowdin if:
 
@@ -103,5 +103,8 @@ Please do not hesitate to contact us from Crowdin if:
 
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -66,14 +66,14 @@ Finally, create a tax rule that associates the customer tax code, the product ta
 .. note::
    See the two short demos for the guidance on how to create tax rules.
 
-   `Creating tax codes and jurisdictions in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-tax-code-and-jurisdictions>`_
+   |Creating tax codes and jurisdictions in OroCommerce|
 
     .. raw:: html
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/3Bra02GiKZE" frameborder="0" allowfullscreen></iframe>
 
 
-   `Creating tax rules <https://oroinc.com/b2b-ecommerce/media-library/create-tax-rules>`_
+   |Creating tax rules|
 
     .. raw:: html
 
@@ -105,5 +105,8 @@ Finally, create a tax rule that associates the customer tax code, the product ta
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

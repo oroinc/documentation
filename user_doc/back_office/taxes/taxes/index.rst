@@ -84,5 +84,5 @@ Import Tax Rates
    export_tax_rates
    import_tax_rates
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -24,5 +24,5 @@ To enable or disable the display of the form in the storefront per website:
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

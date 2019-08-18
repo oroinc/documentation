@@ -45,5 +45,5 @@ To configure synchronization settings per organization:
 4. In the **Synchronization section**, first clear the **Use System** check box next to the required option, and then the check box of the option itself.
 5. Click **Save Settings**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

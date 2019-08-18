@@ -25,5 +25,5 @@ To enable the guest quick order form per website:
 
 .. finish_quick_order_form
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

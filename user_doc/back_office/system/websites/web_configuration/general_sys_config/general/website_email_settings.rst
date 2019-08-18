@@ -31,6 +31,6 @@ To configure email settings per website:
 * :ref:`Configure Email Settings per User <admin-configuration-email-configuration-user>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

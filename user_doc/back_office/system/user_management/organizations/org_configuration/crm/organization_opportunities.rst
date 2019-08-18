@@ -23,5 +23,5 @@ To enable opportunities per organization:
 7. Click **Save Settings**.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

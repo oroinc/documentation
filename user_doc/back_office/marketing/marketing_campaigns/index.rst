@@ -186,7 +186,7 @@ The **Already shared with** section gets automatically populated with the person
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

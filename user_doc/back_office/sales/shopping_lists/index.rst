@@ -12,7 +12,7 @@ Shopping lists are similar to shopping carts in most online stores. However, sho
 
 Via the back-office, you can access any shopping list created in the Oro storefront.
 
-.. important:: See a short demo on `creating orders from the shopping list <https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_.
+.. important:: See a short demo on |creating orders from the shopping list|.
 
    .. raw:: html
 
@@ -39,5 +39,9 @@ View Shopping List Summary
    view
 
   
-.. include:: /user_doc/img/buttons/include_images.rst
+
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

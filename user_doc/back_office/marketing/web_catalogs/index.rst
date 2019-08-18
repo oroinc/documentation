@@ -37,5 +37,5 @@ See the following topics for more details on how to create and manage web catalo
    customize_web_catalog
    build_from_scratch
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

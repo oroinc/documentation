@@ -16,5 +16,5 @@ To customize one of the storefront menus (e.g., commerce_main_menu) or customer/
    The changes apply automatically.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

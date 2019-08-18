@@ -131,7 +131,7 @@ date
 
 **Description:** Converts an argument into a date to allow date comparison.
 
-**Example:** See https://twig.symfony.com/doc/2.x/functions/date.html
+**Example:** See |the Twig doc|
 
 oro_config_value
 ~~~~~~~~~~~~~~~~
@@ -271,7 +271,8 @@ url
 
 **Description:** Returns the absolute URL (with scheme and host) for the given route.
 
-**Example:** See http://symfony.com/doc/3.4/reference/twig_reference.html#url
+**Example:** See |the Symfony Twig Extensions (URL)|
+
 
 path
 ~~~~
@@ -283,7 +284,7 @@ path
 
 **Description:** Returns the relative URL (without the scheme and host) for the given route.
 
-**Example:** See http://symfony.com/doc/3.4/reference/twig_reference.html#path
+**Example:** See |the Symfony Twig Extensions (Path)|
 
 get_payment_methods (OroCommerce Only)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -576,36 +577,36 @@ order_line_items (OroCommerce only)
     </table>
 
 .. note:: If none of these Twig functions cover your cases, you can **create a custom Twig function** that returns the desired data that you can use in email templates.
-    Please, see `OroEmailBundle documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md>`_  for details.
+    Please, see |OroEmailBundle documentation| for details.
 
 Filters
 ^^^^^^^
 
 On top of functions, you can use filters in email templates. The full set of these filters is the following:
 
-* `default <https://twig.symfony.com/doc/2.x/filters/default.html>`_
-* `date <https://twig.symfony.com/doc/2.x/filters/date.html>`_
-* `escape <https://twig.symfony.com/doc/2.x/filters/escape.html>`_
-* `format <https://twig.symfony.com/doc/2.x/filters/format.html>`_
-* `length <https://twig.symfony.com/doc/2.x/filters/length.html>`_
-* `lower <https://twig.symfony.com/doc/2.x/filters/lower.html>`_
-* `nl2br <https://twig.symfony.com/doc/2.x/filters/nl2br.html>`_
-* `number_format <https://twig.symfony.com/doc/2.x/filters/number_format.html>`_
-* `title <https://twig.symfony.com/doc/2.x/filters/title.html>`_
-* `trim <https://twig.symfony.com/doc/2.x/filters/trim.html>`_
-* `upper <https://twig.symfony.com/doc/2.x/filters/upper.html>`_
-* `oro_html_sanitize <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md#oro_html_sanitize>`_
-* `oro_format <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76>`_
-* `oro_format_address <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md#oro_format_address>`_
-* `oro_format_date <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L122>`_
-* `oro_format_time <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L174>`_
-* `oro_format_datetime <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L92>`_
+* |default|
+* |date|
+* |escape|
+* |format|
+* |length|
+* |lower|
+* |nl2br|
+* |number_format|
+* |title|
+* |trim|
+* |upper|
+* |oro_html_sanitize|
+* |oro_format|
+* |oro_format_address|
+* |oro_format_date|
+* |oro_format_time|
+* |oro_format_datetime|
 * oro_format_datetime_organization
-* `oro_format_name <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md#oro_format_name>`_
-* `oro_format_price <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Twig/CurrencyExtension.php#L111>`_
-* `oro_format_currency <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212>`_
-* `oro_format_short_product_unit_value <https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-value-formatting.md#oro_format_short_product_unit_value>`_
-* `join <https://twig.symfony.com/doc/2.x/filters/join.html>`_
+* |oro_format_name|
+* |oro_format_price|
+* |oro_format_currency|
+* |oro_format_short_product_unit_value|
+* |join|
 
 Tags
 ^^^^
@@ -613,10 +614,10 @@ Tags
 The full set of allowed tags to use in email templates is the following:
 
 * app
-* `for <https://twig.symfony.com/doc/2.x/tags/for.html>`_
-* `if <https://twig.symfony.com/doc/2.x/tags/if.html>`_
-* `spaceless <https://twig.symfony.com/doc/2.x/tags/spaceless.html>`_
-* `set <https://twig.symfony.com/doc/2.x/tags/set.html>`_
+* |for|
+* |if|
+* |spaceless|
+* |set|
 
 Select Email Template Languages
 -------------------------------
@@ -635,5 +636,9 @@ If :ref:`several languages have been enabled <sys--config--sysconfig--general-se
    :align: middle
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -7,7 +7,7 @@ Contact requests are used to track contact with individuals who are requesting i
 
 Additionally, contact requests are used for consent management purposes when a customer :ref:`declines a consent <user-guide--consents--create>` in the OroCommerce storefront. When the **Declined Consent Notification** option is enabled for a specific consent, a notification is created in the back-office as a contact request to inform that the consent has been declined. Read more information on consents in the relevant :ref:`Data Protection and Consent Management <user-guide--consents>` topic.
 
-See a short demo in our media library on `how to create and manage contact requests <https://www.oroinc.com/orocrm/media-library/manage-contact-requests>`_, or keep reading the guidance below.
+See a short demo in our media library on |how to create and manage contact requests| or keep reading the guidance below.
 
 .. raw:: html
 
@@ -65,6 +65,9 @@ The ability to view and edit contact requests depends on the specific :ref:`role
 All contact requests can be viewed from the page of all contact requests under **Activities > Contact Requests** in the main menu. From this page, you can view, edit, and delete contact requests.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

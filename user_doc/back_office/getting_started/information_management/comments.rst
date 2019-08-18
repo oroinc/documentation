@@ -8,7 +8,7 @@ You Oro application enables you to add comments on details of an activity. For i
 .. important::
     By default, the list of activities available for each entity is determined by what is most commonly used by businesses. However, if your company's work process requires it, you can always turn the desirable activity on for almost any entity (except technical ones). If you need particular activities to be enabled for an entity, contact your administrator, or see steps 4 and 5 of the :ref:`Create an Entity <doc-entity-actions-create>` action description.
 
-.. note:: See a short demo on `how to add comments <https://oroinc.com/orocrm/media-library/add-comments-orocrm>`_, or keep reading the guidance below.
+.. note:: See a short demo on |how to add comments|, or keep reading the guidance below.
 
    .. raw:: html
 
@@ -40,6 +40,9 @@ To add a comment:
 
     You can :ref:`edit <doc-entity-actions-edit>` the **Comment** entity and add new fields if required.
 
- .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment  public in :ref:`Zendesk <user-guide-zendesk-integration>`. 
+ .. note:: Comments for cases have an additional **Make Public** check box when your Oro application is integrated with Zendesk. This enables you to make a specific comment  public in :ref:`Zendesk <user-guide-zendesk-integration>`.
 
      .. image:: /user_doc/img/getting_started/records/comments_case.png
+
+.. include:: /include/include_links.rst
+   :start-after: begin

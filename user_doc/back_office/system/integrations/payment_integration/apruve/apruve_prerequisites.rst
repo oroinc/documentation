@@ -19,7 +19,7 @@ Register a Business Account with Apruve
 
 To register a business account and enable a checkout credit program integration with OroCommerce, follow the next steps:
 
-1. Contact https://www.apruve.com/ to get started and schedule a time for a conversation with a member of the Apruve Sales Team.
+1. Contact |https://www.apruve.com/| to get started and schedule a time for a conversation with a member of the Apruve Sales Team.
 
    .. image:: /user_doc/img/system/integrations/apruve/apruve_prerequisites_1.png
       :class: with-border
@@ -31,7 +31,7 @@ To register a business account and enable a checkout credit program integration 
 
    You will use these credentials to set up the integration between Apruve and OroCommerce (see more details on how to set up this integration in the :ref:`Apruve Payment Method Integration <user-guide--payment--configuration--payment-method-integration--apruve>` topic).
 
-3. Log into the https://app.apruve.com with your email address and password generated in the previous step.
+3. Log into the |https://app.apruve.com| with your email address and password generated in the previous step.
 
    .. image:: /user_doc/img/system/integrations/apruve/apruve_prerequisites_2.png
       :class: with-border
@@ -52,13 +52,13 @@ The OroCommerce Apruve configuration offers you a possibility to select a test m
 
 On the OroCommerce side, you need to enable the test mode when setting up the integration by selecting the **Test Mode** check box (see :ref:`Apruve Payment Method Integration <user-guide--payment--configuration--payment-method-integration--apruve>`).
 
-On the Apruve side, you need to follow the https://test.apruve.com link and create a test account. This test account is identical to the https://app.apruve.com regular one but exists only as a test environment that can be used for exploring the Apruve software and its functionality without any risks of the money being charged.
+On the Apruve side, you need to follow the |https://test.apruve.com| link and create a test account. This test account is identical to the |https://app.apruve.com| regular one but exists only as a test environment that can be used for exploring the Apruve software and its functionality without any risks of the money being charged.
 
 Additionally, the Apruve test account provides the ability to create test credit cards and bank accounts (see `Add Bank Account Information`_ for details).
 
 To create an Apruve test account, proceed with the following steps:
 
-1. Log into the https://test.apruve.com with the credentials generated at the stage of registering a business account.
+1. Log into the |https://test.apruve.com| with the credentials generated at the stage of registering a business account.
 
    .. note:: You can change the credentials any time by navigating to **Settings > Profile** in the main menu on the left.
 
@@ -164,6 +164,9 @@ To configure notification options to receive emails on activities performed thro
    .. image:: /user_doc/img/system/integrations/apruve/apruve_prerequisites_9.png
       :class: with-border
 
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 
 
 

@@ -29,5 +29,5 @@ Learn more about frontend menus in the topics below.
    global_all_products_menus
    globally_frontend_menus
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

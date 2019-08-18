@@ -3,7 +3,7 @@
 Configure Single Sign-on
 ========================
 
-`Single sign-on <https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer>`__ allows to enter dotmailer account from within your OroCRM and OroCommerce applications.
+|Single sign-on| allows to enter dotmailer account from within your OroCRM and OroCommerce applications.
 
 To be able to use single sign-on:
 
@@ -27,3 +27,6 @@ Related articles
 - :ref:`Manage dotmailer Data Fields and Mappings <user-guide-dotmailer-data-fields>`
 - :ref:`Sending Email Campaign via dotmailer <user-guide-dotmailer-campaign>`
 - :ref:`dotmailer Integration Settings <admin-configuration-dotmailer-integration-settings>`
+
+.. include:: /include/include_links.rst
+   :start-after: begin

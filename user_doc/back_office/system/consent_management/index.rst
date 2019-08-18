@@ -12,7 +12,7 @@ Create Consents
 
 .. begin_create_consents
 
-.. note:: Before you can use consents in OroCommerce, install the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
+.. note:: Before you can use consents in OroCommerce, install the |Customer Consent Management| extension.
 
 To create a consent in OroCommerce:
 
@@ -59,6 +59,9 @@ To create a consent in OroCommerce:
 * :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`
 * :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

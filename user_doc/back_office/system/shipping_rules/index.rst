@@ -12,7 +12,7 @@ You can configure one or more shipping rules that enable the shipping methods fo
 .. stop
 
 .. note::
-    See a short demo on `how to create shipping rules in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-rules>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to create shipping rules in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -303,7 +303,7 @@ To define which columns to show in the table, click |IcSettings| above the table
 * :ref:`System Shipping Configuration <configuration--guide--commerce--configuration--shipping>`
 * :ref:`Shipping Method Integration <user-guide--shipping--configuration--common-details>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 
@@ -312,3 +312,7 @@ To define which columns to show in the table, click |IcSettings| above the table
    :hidden:
 
    expression_lang
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

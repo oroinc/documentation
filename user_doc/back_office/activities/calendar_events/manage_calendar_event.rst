@@ -86,5 +86,5 @@ You can view, edit, or delete events from the page of the selected system calend
 2. Click on the required calendar.
 3. The list of all events related to the selected calendar is located under the **Calendar Events** section. For each event, you can perform the necessary action.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

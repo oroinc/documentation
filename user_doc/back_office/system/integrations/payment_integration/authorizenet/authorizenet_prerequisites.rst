@@ -10,7 +10,7 @@ To start using Authorize.Net with the OroCommerce application, follow the steps 
 
 1. Sign up for the Authorize.Net service and configure it.
 
-   To set up an account in USD or CAD, sign up for the service at `authorize.net <http://reseller.authorize.net/application/101898/>`__. If you would like your account to operate in a different currency, use one of the local Authorize.Net websites (see `Authorize.Net Support <https://support.authorize.net/authkb/index?page=content&id=A414>`__).
+   To set up an account in USD or CAD, sign up for the service at |authorize.net|. If you would like your account to operate in a different currency, use one of the local Authorize.Net websites (see |Authorize.Net Support|).
 
    .. important:: Authorize.Net can process payments in different currencies, however, it does not offer multi-currency accounts. Therefore, you need to create a separate gateway account with Authorize.Net and separate integration in OroCommerce for every currency in which you would like to accept payments.
 
@@ -39,7 +39,7 @@ Retrieve Authorize.Net Credentials
 
 To set up the integration with OroCommerce, first retrieve Authorize.Net credentials:
 
-1. Open https://account.authorize.net/ and log into Authorize.Net merchant interface:
+1. Open |https://account.authorize.net/| and log into Authorize.Net merchant interface:
 
    .. image:: /user_doc/img/system/integrations/authorizenet/authorizenet_merchant.png
 
@@ -89,7 +89,7 @@ To enable the test mode, complete the following:
 Sandbox Account
 ^^^^^^^^^^^^^^^
 
-Create a special free test account at https://developer.authorize.net/hello_world/sandbox/, and use the API Login ID and keys generated for it.
+Create a special free test account at |https://developer.authorize.net/hello_world/sandbox/|, and use the API Login ID and keys generated for it.
 
 Transactions made via integration that uses the API Login ID and keys generated for sandbox account are sent to the special testing server and are not sent to the financial institution for processing. However, in other aspects, the sandbox works the same as actual production server, and returns proper transaction IDs.
 
@@ -97,4 +97,7 @@ Transactions made via integration that uses the API Login ID and keys generated 
 
 Use sandbox account when customizing the Authorize.Net integration or if you do not have an actual account with Authorize.Net but you would like to check how the integration works.
 
-For more information about how to use the sandbox, see `Authorize.Net Testing Guide <https://developer.authorize.net/hello_world/testing_guide/>`__.
+For more information about how to use the sandbox, see |Authorize.Net Testing Guide|.
+
+.. include:: /include/include_links.rst
+   :start-after: begin

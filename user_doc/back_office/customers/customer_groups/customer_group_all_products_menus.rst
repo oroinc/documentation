@@ -25,5 +25,5 @@ To add the All Products page to the frontend menu of a particular customer group
 
 The All Products page should now become available as part of the selected frontend menu for a specific customer group.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

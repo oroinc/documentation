@@ -29,5 +29,5 @@ To define the default system language and supported languages for email notifica
 4. Click **Save Settings** to save the settings.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
     :start-after: begin

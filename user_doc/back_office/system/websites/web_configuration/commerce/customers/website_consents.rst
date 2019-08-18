@@ -40,5 +40,5 @@ To enable consents for the storefront on the website level:
 * :ref:`Configure Consents <configuration--guide--commerce--configuration--consents>`
 * :ref:`Enable Consents Globally <admin--guide--commerce--configuration--customers--consents--enable--globally>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

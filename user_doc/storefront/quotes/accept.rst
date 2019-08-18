@@ -18,5 +18,5 @@ When you receive a quote, you can accept it and submit the order:
 
 .. note:: Currently, it is not possible to decline or cancel quotes from the OroCommerce storefront.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

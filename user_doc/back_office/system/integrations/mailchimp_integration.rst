@@ -10,7 +10,7 @@ Install Extension
 
 To configure MailChimp integration, ensure that you have MailChimp
 extension installed in your Oro instance. For installation instructions,
-click `here <https://marketplace.orocrm.com/package/orocrm-mailchimp-integration/>`_.
+click |here4|.
 
 SaaS users should have MailChimp pre-installed.
 
@@ -100,3 +100,6 @@ In order to sync your integration:
 **Related Topic**
 
 * :ref:`Sending Email Campaign via MailChimp <user-guide-mailchimp-campaign>`
+
+.. include:: /include/include_links.rst
+   :start-after: begin

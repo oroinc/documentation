@@ -30,7 +30,7 @@ PayPal Payments Express Checkout
 
 .. image:: /user_doc/img/system/integrations/checkout/checkout_paypal_express.png
 
-.. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+.. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration| package.
 
 Authorize.Net
 -------------
@@ -105,3 +105,6 @@ Once the payment is made, the customer receives the notification email to view t
    A customer is paying the invoice on the terms you set (e.g. net 30, net 60), but Apruve is paying you within 24 hours for any invoice that is generated through the back-office.
 
 .. image:: /user_doc/img/system/integrations/checkout/checkout_apruve_10.png
+
+.. include:: /include/include_links.rst
+   :start-after: begin

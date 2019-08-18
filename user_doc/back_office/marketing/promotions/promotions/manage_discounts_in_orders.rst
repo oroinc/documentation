@@ -75,7 +75,7 @@ Under **All Special Discounts**, you can |IcEdit| edit, or |IcDelete| remove the
 
 .. finish_promotions_in_order
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

@@ -6,7 +6,7 @@ Frontend Menus Configuration
 In the Oro applications, you can customize the storefront menus look, and the elements they contain globally, per organization, per website, per customer, and per customer group.
 
 .. note::
-    See a short demo on `how to customize storefront menus in OroCommerce <https://www.oroinc.com/orocommerce/media-library/customize-front-end-menus>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to customize storefront menus in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -18,6 +18,9 @@ In the Oro applications, you can customize the storefront menus look, and the el
 * :ref:`Customize Frontend Menus per Customer <frontend-menus-customer>`
 * :ref:`Customize Frontend Menus per Customer Group <frontend-menus-customer-group>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

@@ -26,5 +26,5 @@ In addition, any discounts applied to the order will be displayed in the **Total
 .. image:: /user_doc/img/storefront/orders/CouponCodeCheckout3.png
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

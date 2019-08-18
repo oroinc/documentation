@@ -99,5 +99,5 @@ To share a record, click **Share** on the top right of record page, and enter th
    edit
    delete
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

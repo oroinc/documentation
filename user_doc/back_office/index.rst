@@ -1,4 +1,4 @@
-Back-office
+Back-Office
 ===========
 
 Back-office is a primary management tool in OroCommerce and OroCRM that allows managers to perform all essential activities related to their eCommerce business, such as updating product lines, managing customers and sales, setting up taxes, running marketing campaigns, managing web store content, reporting, administering user roles, and other.

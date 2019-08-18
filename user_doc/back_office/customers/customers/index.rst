@@ -51,6 +51,6 @@ Navigate to the parent company page by clicking on the company name next to the 
    customer_all_products_menus
    customer_frontend_menus
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

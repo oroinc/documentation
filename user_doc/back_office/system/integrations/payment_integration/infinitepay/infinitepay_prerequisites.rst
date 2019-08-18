@@ -5,7 +5,7 @@ Prerequisites for InfinitePay Integration
 
 To start using InfinitePay with OroCommerce application, do the following:
 
-1. Contact https://www.infinitepay.de/ and sign up for their services.
+1. Contact |https://www.infinitepay.de/| and sign up for their services.
 
    .. image:: /user_doc/img/system/integrations/infinitepay/infinitepay_contact.png
 
@@ -31,3 +31,6 @@ To start using InfinitePay with OroCommerce application, do the following:
    The Customer user email in OroCommerce should match buyer's personal information registered with the InfinitePay.
 
 Now you are ready to accept card payments with the InfinitePay protection.
+
+.. include:: /include/include_links.rst
+   :start-after: begin

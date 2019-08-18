@@ -63,5 +63,5 @@ Now that the promotion has been created and coupons generated, we can add a coup
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

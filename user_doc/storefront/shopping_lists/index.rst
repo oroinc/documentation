@@ -27,5 +27,5 @@ Clicking on the |IcChevronDown| icon next to the button will open a drop-down wi
 .. image:: /user_doc/img/storefront/shopping_lists/ShoppingListsDropdown.png
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

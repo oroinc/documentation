@@ -30,7 +30,7 @@ To set up integration with Authorize.Net, complete the following:
 
    .. note:: For more information on IDs and keys, see the :ref:`Get Authorize.Net Credentials Required for Integration with OroCommerce <user-guide--payment--prerequisites--authorizenet-credentials>` topic.
 
-   * **No Account? Sign up here** --- Click the link to `create a merchant account with Authorize.Net <https://reseller.authorize.net/application/101898/>`__ (if you have not set up an account yet).
+   * **No Account? Sign up here** --- Click the link to |create a merchant account with Authorize.Net| (if you have not set up an account yet).
    * **API Login ID** --- An identifier that helps authenticate your account on the Authorize.Net payment gateway.
    * **Transaction Key** --- A secret key that helps secure transactions to and from the Authorize.Net payment gateway.
    * **Check Credentials** --- Click the button to make sure that the provided credentials are valid.
@@ -40,6 +40,7 @@ To set up integration with Authorize.Net, complete the following:
      .. important:: Select this check box only if you turned on the Card Code Verification (CCV) security feature on your Authorize.Net merchant interface. If a card code is not required, hiding the CVV field from buyers helps them keep their card code safe.
 
    * **Test Mode** --- Select this check box to use Authorize.Net in the test mode that enables you to use the connection to the gateway without sending transaction information to a processing institution. See :ref:`Using Authorize.Net in Test Mode <user-guide--payment--prerequisites--authorizenet-testing>` for more information.
+
 
 6. In the **Advanced Settings** section provide the following information:
 
@@ -63,5 +64,8 @@ To set up integration with Authorize.Net, complete the following:
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

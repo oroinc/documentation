@@ -8,7 +8,7 @@ Create an Order
 Create an Order from Scratch
 ----------------------------
 
-.. hint:: See a short demo on `how to create a new order from scratch <https://www.oroinc.com/orocommerce/media-library/create-new-order#play=ztwuz7NX1Y4>`_ or keep reading for step-by-step guidance.
+.. hint:: See a short demo on |how to create a new order from scratch| or keep reading for step-by-step guidance.
 
    .. raw:: html
 
@@ -98,7 +98,7 @@ Create an Order from a Shopping List
 
 Any time a customer creates a new shopping list, it can be accessed in the back-office.  This is helpful if a customer needs assistance finding particular items or with creating an order.
 
-.. hint:: See a short demo on `creating orders from the shopping list <https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI>`_ or keep reading for step-by-step guidance.
+.. hint:: See a short demo on |creating orders from the shopping list| or keep reading for step-by-step guidance.
 
    .. raw:: html
 
@@ -172,5 +172,9 @@ The new order is now created.
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

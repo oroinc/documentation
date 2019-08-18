@@ -312,7 +312,7 @@ Some workflow components, like an email notification, may be created only via th
 
 .. see :ref:`How to clone a workflow via the command line console <workflows--actions--clone>`.
 
-For how to create and manage workflows from the server side, see `Workflow Documentation <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md>`__ in the oroinc/platform repository on GitHub.
+For how to create and manage workflows from the server side, see |Workflow Documentation| in the oroinc/platform repository on GitHub.
 
 
 .. _doc--system--workflow-management--activate:
@@ -386,5 +386,8 @@ See the following sections to get more information about the system workflows in
    custom_workflows
    steps_transitions
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

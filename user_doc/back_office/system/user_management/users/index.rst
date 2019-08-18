@@ -28,5 +28,5 @@ In addition to configuring settings for the user as the administrator, each user
 * :ref:`Work with Multiple Organizations <user-ee-multi-org>`
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

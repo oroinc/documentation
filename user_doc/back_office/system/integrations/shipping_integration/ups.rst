@@ -11,7 +11,7 @@ UPS Shipping Integration
 UPS shipping integration section describes the steps that are necessary to expose UPS as a shipping method in OroCommerce orders and quotes.
 
 .. note::
-   See a short demo on `how to create a shipping integration in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+   See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -20,13 +20,13 @@ UPS shipping integration section describes the steps that are necessary to expos
 Prepare for Integration
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-First, ensure you have `registered with UPS.com <https://www.ups.com/one-to-one/register>`_ and have opened a UPS Account with the necessary shipping services level.
+First, ensure you have |registered with UPS.com| and have opened a UPS Account with the necessary shipping services level.
 
 Next:
 
-1. Log in to the `ups.com <https://ups.com>`.
-2. Navigate to the `UPS Developer Kit <https://www.ups.com/upsdeveloperkit/>`_ in the **Support > Technology Support** section.
-3. `Request an access key <https://www.ups.com/upsdeveloperkit/requestaccesskey?loc=en_US>`_ (e.g. 5F235F292A54F51F).
+1. Log in to the |ups.com|.
+2. Navigate to the |UPS Developer Kit| in the **Support > Technology Support** section.
+3. |Request an access key| (e.g., 5F235F292A54F51F).
 
 Please, ensure that you have requested separate access keys for your test and production environments.
 
@@ -99,3 +99,7 @@ Once the shipping method is added to the shipping rule, provide the information 
 * :ref:`Shipping Configuration Concept Guide <admin-guide--shipping>`
 * :ref:`System Shipping Configuration <configuration--guide--commerce--configuration--shipping>`
 * :ref:`Shipping Rules Configuration <sys--shipping-rules>`
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

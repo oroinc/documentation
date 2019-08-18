@@ -10,7 +10,7 @@ Additionally, Oro application's integration with :ref:`Google Hangouts <user-gui
 
 You can make voice calls to a single phone number, or launch a audio / video conference with up to 5 participants. Call data is logged automatically, including any notes made during the call.
 
-Before proceeding to the detailed guidance below, see a short demo on `how to log calls in your Oro application <https://www.oroinc.com/orocrm/media-library/log-call-orocrm>`_.
+Before proceeding to the detailed guidance below, see a short demo on |how to log calls in your Oro application|.
 
 .. raw:: html
 
@@ -50,6 +50,9 @@ You can view, update, delete the existing call record, add context or comment to
 
 .. note:: You can also access your call log from the :ref:`Recent Calls dashboard widget <user-guide--business-intelligence--widgets--recent--calls>`.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
+
+.. include:: /include/include_links.rst
+   :start-after: begin

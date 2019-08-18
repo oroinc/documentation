@@ -20,7 +20,7 @@ In **Payment Action**, you select the strategy for the payment processing on the
 
 After the buyer enters their card details, their payment information is validated.
 
-If **Zero Amount Authorization** is enabled in the PayPal integration settings, the payment may be initially authorized with `zero amount transaction (account verification) <https://developer.paypal.com/docs/classic/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications>`_.
+If **Zero Amount Authorization** is enabled in the PayPal integration settings, the payment may be initially authorized with |zero amount transaction| (account verification).
 
 .. In this case, the response from the payment gateway is securely stored by OroCommerce.
 
@@ -54,3 +54,7 @@ If **Zero Amount Authorization** is disabled in the PayPal integration settings,
    Transaction response from the payment gateway does not contain any information about buyer's card. It serves as an identifier of the initial authorization that is solely handled by the payment gateway.
 
 After the buyer submits the order on the Order Review step, the total purchase amount is captured from their account. This is executed as another transaction.
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

@@ -39,5 +39,5 @@ In the Promotions section of Commerce configuration settings, you can enable **N
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

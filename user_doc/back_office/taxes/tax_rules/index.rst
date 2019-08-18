@@ -91,5 +91,10 @@ Import Tax Rules
    export_tax_rules
    import_tax_rules
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

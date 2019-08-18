@@ -26,7 +26,7 @@ To add the All Products page to the frontend menu of a particular website:
 
 The All Products page should now become available as part of the selected menu on the website level.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

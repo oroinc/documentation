@@ -8,7 +8,7 @@ Inventory helps you track the availability of your product in one or more wareho
 .. note:: Community Edition enables you to create one warehouse, while Enterprise Edition (EE) offers multi-warehouse management feature and allows sellers to add an unlimited number of warehouses.
 
 .. note::
-    See a short demo on `how to work with inventory and warehouses <https://www.oroinc.com/orocommerce/media-library/how-to-setup-inventory-and-warehouses>`_, or keep reading the sections below.
+    See a short demo on |how to work with inventory and warehouses|, or keep reading the sections below.
 
     .. raw:: html
 
@@ -25,7 +25,10 @@ Learn more about warehouses and inventory in the following topics:
 
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 
 .. toctree::

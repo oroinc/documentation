@@ -27,5 +27,5 @@ If enabled (see the section below), the workflow widget displays the process ste
 .. image:: /user_doc/img/system/workflows/2_wf_steps_new.png
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

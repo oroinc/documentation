@@ -20,6 +20,6 @@ RFQ Management Flow
   :start-after: start_back_flow
   :end-before: finish_back_rfq
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

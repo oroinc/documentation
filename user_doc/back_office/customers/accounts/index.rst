@@ -28,19 +28,19 @@ In case of installation of OroCRM over an existing OroCommerce instance, new acc
 
 .. note:: See three short tutorials on working with accounts:
 
-          * `creating and editing <https://oroinc.com/orocrm/media-library/22093>`_
+          * |creating and editing|
 
              .. raw:: html
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/00Vz_mkbeTE" frameborder="0" allowfullscreen></iframe>
 
-          * `managing <https://oroinc.com/orocrm/media-library/22095>`_
+          * |managing|
 
              .. raw:: html
 
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5FEyHWr-jQY" frameborder="0" allowfullscreen></iframe>
 
-          * `merging account records <https://oroinc.com/orocrm/media-library/merge-account-records-2>`_
+          * |merging account records|
 
              .. raw:: html
 
@@ -54,3 +54,6 @@ In case of installation of OroCRM over an existing OroCommerce instance, new acc
    import
    export
    reports
+
+.. include:: /include/include_links.rst
+   :start-after: begin

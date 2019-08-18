@@ -88,7 +88,7 @@ Discount Options for Order Line Item
 
 You can create a line item promotion that will discount each line item. 
 
-.. note:: You can check out a video on `how to create a line item promotion <https://oroinc.com/b2b-ecommerce/media-library/create-line-item-promotion>`__ in our media library.
+.. note:: You can check out a video on |how to create a line item promotion| in our media library.
 
 For the line items discount, provide the following information:
 
@@ -110,7 +110,7 @@ Discount Options for Buy X Get Y (Same Product)
 
 Buy X Get Y promotions mean that the buyer purchases qualifying X products and receives a discount off the same products. For instance, buy one get one free, or buy one get one 5$ off.
 
-.. note:: You can check out a video on `how to create the Buy X Get Y (Same Product) promotion <https://oroinc.com/b2b-ecommerce/media-library/create-buy-x-get-y-promotion>`__ in our media library.
+.. note:: You can check out a video on |how to create the Buy X Get Y (Same Product) promotion| in our media library.
 
 For the Buy X Get Y (Same Product) discount, provide the following information:
 
@@ -148,7 +148,7 @@ Discount Options for Shipping
 
 Shipping promotions allow you to set a discount for any shipping options configured under shipping method integrations. OroCommerce sellers can add a shipping promotion which can be automatically deducted at checkout.
 
-.. note:: You can check out the video on `how to create a shipping promotion <https://oroinc.com/b2b-ecommerce/media-library/how-to-create-shipping-promotions>`__ in our media library.
+.. note:: You can check out the video on |how to create a shipping promotion| in our media library.
 
 For the :ref:`shipping <user-guide--shipping>` discount, select the necessary shipping method from the list. The methods you see on the list reflect the ones configured in your application.
 
@@ -165,5 +165,8 @@ For the :ref:`shipping <user-guide--shipping>` discount, select the necessary sh
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

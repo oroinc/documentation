@@ -14,5 +14,5 @@ Navigation and UI
 Oro applications offer high flexibility and customization, which means that the user interface of the stores may differ. However, the integral parts that constitute the interface are cross-functional. You can find a list of storefront-wide actions and settings below:
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

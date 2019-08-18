@@ -21,7 +21,7 @@ To learn how to work with dashboards and their widgets, click on the links below
    dashboards
    widgets/index
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

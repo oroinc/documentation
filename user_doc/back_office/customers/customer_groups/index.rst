@@ -20,7 +20,7 @@ Create a Customer Group
 -----------------------
 
 .. note::
-    See a short demo on `how to create customer groups in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-customer-groups>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to create customer groups in OroCommerce|, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -75,7 +75,10 @@ To configure the price list priority and controlled merge for the customer group
 
 #. Click **Save** once you are happy with the price list set up.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 
 .. toctree::

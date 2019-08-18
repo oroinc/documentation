@@ -141,5 +141,5 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 7. Click **Save Settings**.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

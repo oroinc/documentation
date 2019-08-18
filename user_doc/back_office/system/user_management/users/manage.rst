@@ -158,5 +158,5 @@ When you suspect a security breach, you can reset passwords for multiple users a
 
      .. image:: /user_doc/img/system/user_management/users_mass_reset_passwords.png
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -5,7 +5,7 @@ Price Attributes
 
 Price attributes are custom parameters, like manufacturer's suggested retail price (MSRP) or minimum advertised price (MAP), that may be needed as input information for your retail price listed on the website. Price attributes help you extend the product options with any custom value related to the price formation.
 
-Before reading on, consider watching a short demo from our media library on `how to set up price attributes in OroCommerce <https://oroinc.com/b2b-ecommerce/media-library/setup-price-attributes>`_.
+Before reading on, consider watching a short demo from our media library on |how to set up price attributes in OroCommerce|.
 
 .. raw:: HTML
 
@@ -112,5 +112,8 @@ To set a price attribute (e.g., Minimal Advertised Price) for a product:
 Now you can use the price attribute as a variable parameter in price list generation.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

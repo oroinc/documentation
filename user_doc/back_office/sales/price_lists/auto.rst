@@ -28,7 +28,7 @@ To automatically generate a price list in OroCommerce:
 
 #. Start editing the required price list or click **Create Price List** to create a new one.
 
-#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, enter criteria to filter products in the catalog with the `Symfony2 expression language <http://symfony.com/doc/current/components/expression_language/syntax.html>`_.
+#. In the **Product Assignment** section, set up the product list. To complete this, in the **Rule** field, enter criteria to filter products in the catalog with the |Symfony2 expression language|.
 
    .. Once you enter the expression into the **Products Assignment** field, the filtered products get into the price list.
 
@@ -145,7 +145,7 @@ To automatically generate a price list in OroCommerce:
       | E      | Server  | no             | 5        | 30000      |   -    | item | USD      |
       +--------+---------+----------------+----------+------------+--------+------+----------+
 
-      The (product filtering expression) is based on a `Symfony2 expression <http://symfony.com/doc/current/components/expression_language/syntax.html>`_ that additionally filters the list of products generated in step 3 to limit the products the price shall apply to.
+      The (product filtering expression) is based on a |Symfony2 expression language| that additionally filters the list of products generated in step 3 to limit the products the price shall apply to.
 
    d. In the **Priority** field, specify the precedence for this rule. See `Filters, Priorities, and Matching Units in the Automatically Generated Price List`_ for more information.
 
@@ -414,7 +414,7 @@ And price rule that adds 10% to the list price:
 Filtering Expression Syntax
 ---------------------------
 
-The filtering expression for the product assignment rule and the price calculation condition follow the `Symfony2 expression language <http://symfony.com/doc/current/components/expression_language/syntax.html>`_ syntax and may contain the following elements:
+The filtering expression for the product assignment rule and the price calculation condition follow the |Symfony2 expression language| syntax and may contain the following elements:
 
 * Entity properties :ref:`stored as table columns <user-guide--pricing--auto--expression--storage-type>`, including:
 
@@ -460,3 +460,6 @@ To check a storage type of a field:
 #. Scroll down to the **Fields** section, find the required field, and check its **Storage Type** property.
 
    .. image:: /user_doc/img/sales/pricelist/field_storage_type.png
+
+.. include:: /include/include_links.rst
+   :start-after: begin

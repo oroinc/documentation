@@ -52,5 +52,5 @@ To edit the existing customer login page:
 
 8. Click **Save and Close**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

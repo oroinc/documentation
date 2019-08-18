@@ -15,7 +15,7 @@ In Oro applications, opportunities can either be created from scratch, or conver
 .. :ref:`Manage opportunity workflow <user-guide-system-channel-entities-opportunities--manage-flow-intro>`
 .. Work with :ref:`reports for opportunities <user-guide-opportunities-reports-intro>`
 
-.. note:: See a short demo on `how to create and work with opportunities <https://oroinc.com/orocrm/media-library/create-work-opportunity>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create and work with opportunities|, or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -38,7 +38,7 @@ In Oro applications, opportunities can either be created from scratch, or conver
 .. BCrLOwnerClear| image:: /user_doc/img/buttons/BCrLOwnerClear.png
    :align: middle
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::
@@ -52,3 +52,7 @@ In Oro applications, opportunities can either be created from scratch, or conver
    flows
    multi_currency
    reports
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

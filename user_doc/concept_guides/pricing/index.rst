@@ -59,5 +59,5 @@ Below you can find the complete reference of topics that provide a 360-degree vi
    optimize_index_and_price_calculation
    price_list_sharding
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

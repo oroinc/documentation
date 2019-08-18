@@ -53,5 +53,5 @@ You can perform the following actions here:
 * :ref:`Inventory <user-guide--inventory>`
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

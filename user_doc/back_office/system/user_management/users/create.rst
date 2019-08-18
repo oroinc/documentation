@@ -111,5 +111,5 @@ System administrators can tell if a user has been added via the LDAP integration
 
 For more information on the integration with LDAP, please see the topic on :ref:`LDAP integration <user-guide-ldap-integration>`.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -7,7 +7,7 @@ Prerequisites for Wirecard Integration
 
 To start using Wirecard payment methods with the OroCommerce application, complete the following:
 
-1. Sign up for the Wirecard service at `wirecard.com <http://wirecard.com>`__ and configure it. You will need to contact the Wirecard support team to do it.
+1. Sign up for the Wirecard service at |wirecard.com| and configure it. You will need to contact the Wirecard support team to do it.
 
 #. From the Wirecard support team, obtain the following credentials:
 
@@ -43,7 +43,7 @@ Set up an integration using the credentials provided by Wirecard for the demo mo
 
 .. important:: The credit card numbers suggested by the Wirecard for the use in the demo mode does not pass the validation in OroCommerce that requires that valid card numbers must be used. To test the Wirecard credit card payments, use the :ref:`Test Mode <doc--payment--prerequisites--wirecard-testing-test>`.
 
-For demo credentials and more information about the demo mode, see `Wirecard Demo Mode <https://guides.wirecard.at/wcs:demo_mode>`__.
+For demo credentials and more information about the demo mode, see |Wirecard Demo Mode|.
 
 .. _doc--payment--prerequisites--wirecard-testing-test:
 
@@ -54,7 +54,7 @@ In the test mode, the transaction information is sent to the financial instituti
 
 Set up an integration using the credentials provided by Wirecard for the test mode. Enable the **Test mode** option to inform the system that you would like only to test the payment process.
 
-For testing credentials and more information about the test mode, see `Wirecard Test Mode <https://guides.wirecard.at/wcs:test_mode>`__.
+For testing credentials and more information about the test mode, see |Wirecard Test Mode|.
 
 .. _doc--payment--prerequisites--wirecard-testing-test-enable:
 
@@ -69,6 +69,8 @@ To enable the test mode, complete the following:
 
 3. On the integration edit page, provide the testing credentials if required, find the **Test Mode** check box and select it.
 
-4. Click :guilabel:`Save & Close`.
+4. Click **Save & Close**.
 
+.. include:: /include/include_links.rst
+   :start-after: begin
 

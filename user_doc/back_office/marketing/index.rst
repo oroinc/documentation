@@ -53,5 +53,5 @@ You can also customize the content of :ref:`Customer Login Page <customer-login-
    customer_login_pages/index
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

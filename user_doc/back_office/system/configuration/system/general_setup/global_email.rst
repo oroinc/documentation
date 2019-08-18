@@ -7,7 +7,7 @@ Email Configuration
 
 You can configure email settings on four levels -- globally, :ref:`per organization <admin-configuration-email-configuration-organization>`, :ref:`per website <admin-configuration-system-mailboxes-website>`, or :ref:`per user <admin-configuration-email-configuration-user>` with the system settings on the global level containing the highest number of options. Based on the level where configuration has taken place, settings can fall back to other levels.
 
-.. note:: See a short demo on `how to create and manage emails <https://oroinc.com/orocrm/media-library/create-manage-emails-orocrm>`_ and `how to synchronize your mailbox with OroCRM <https://oroinc.com/orocrm/media-library/synchronize-mailbox-orocrm>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create and manage emails| and |how to synchronize your mailbox with an Oro application| or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -100,7 +100,7 @@ You can define and modify the list of Oro users who have access to each of these
 You can create a system mailbox on two levels, globally and :ref:`per organization <admin-configuration-system-mailboxes-organization>`.
 
 .. note::
-   See a short demo on `how to create and configure system mailboxes <https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes>`_ in your Oro application, or continue reading the step-by-step guidance below.
+   See a short demo on |how to create and configure system mailboxes| in your Oro application, or continue reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -135,9 +135,9 @@ To configure a system mailbox globally:
 
 6. Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the check boxes next to the folders you wish to synchronize. In the example below, synchronization has been done for a Gmail mailbox. The INBOX folder will be synchronized.
 
-   .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail, are provided on the `Google support page <https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144>`_.
+   .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail are provided on the |Google support page|.
 
-   .. hint:: To enable connection, select the check box next to `Allow Access for Less Secure Apps Box <https://support.google.com/accounts/answer/6010255?hl=en>`_
+   .. hint:: To enable connection, select the check box next to |Allow Access for Less Secure Apps Box|.
 
    .. image:: /user_doc/img/system/config_system/synchronize_mb.png
       :alt: An example of synchronization for a gmail mailbox
@@ -179,3 +179,6 @@ To configure a system mailbox globally:
       :alt: Sample autoresponse rule form
 
 11. Click **Save Settings**.
+
+.. include:: /include/include_links.rst
+   :start-after: begin

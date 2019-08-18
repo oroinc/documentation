@@ -46,6 +46,6 @@ To remove a product from new arrivals, set **Is New Arrival** to *No* in the pro
 
 You can also configure a **New** product icon and set up a **New Arrivals** block in the system configuration :ref:`globally <configuration--guide--commerce--configuration--promotions>`, :ref:`per organization <sys--users--organization--commerce--products--new-arrivals>` and :ref:`per website <sys--websites--commerce--products--new-arrivals>`.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

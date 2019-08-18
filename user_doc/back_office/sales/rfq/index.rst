@@ -18,7 +18,7 @@ Prior to starting your work with RFQs, make sure that you have:
 
 
 .. note::
-    See a short demo on `how to manage RFQs in OroCommerce <https://www.oroinc.com/orocommerce/media-library/manage-request-for-quotes>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to manage RFQs in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -46,4 +46,7 @@ Related Topics
    rfq_summary
    manage
    workflows
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

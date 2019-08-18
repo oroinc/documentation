@@ -59,7 +59,7 @@ Now that the tracking code is generated, you can embed it into every page of the
 .. image:: /user_doc/img/marketing/tracking_websites/javascript_code_detail.png
    :alt: Detailed view of a javascript code
 
-Oro application uses the `Matomo <https://matomo.org/>`_ software (previously known as Piwik), a highly customizable open-source platform, that enables you to create a javascript code to track your website’s visitors and their actions on the website with respect to your business objectives.
+Oro application uses the |Matomo| software (previously known as Piwik), a highly customizable open-source platform, that enables you to create a javascript code to track your website’s visitors and their actions on the website with respect to your business objectives.
 
 Make sure to amend the following variables for the code to work properly:
 
@@ -257,6 +257,9 @@ In the example above, you can see the three kinds of events defined for the Jack
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

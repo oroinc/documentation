@@ -89,5 +89,5 @@ Multi Page Checkout
 
    .. image:: /user_doc/img/system/workflows/checkout/Checkout_BilInfo.png
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

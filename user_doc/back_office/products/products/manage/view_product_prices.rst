@@ -20,5 +20,5 @@ In the **Product Prices** section, you can filter the prices by price list, quan
 You can get to the price list that stores the particular price by clicking |IcView| at the end of the row with the price information.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

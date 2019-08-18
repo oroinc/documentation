@@ -14,6 +14,6 @@ The Getting Started guide explains generic concepts and details of OroCRM and Or
    navigation/index
    information_management/index
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

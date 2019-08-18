@@ -121,7 +121,7 @@ As an illustration, let us go through a sample flow to see the QMF in action:
 
 .. finish_quote_management_flow
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

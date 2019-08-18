@@ -86,7 +86,7 @@ You can also view, edit, or delete a task from the My Calendar page and the Toda
 .. end_manage_tasks
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

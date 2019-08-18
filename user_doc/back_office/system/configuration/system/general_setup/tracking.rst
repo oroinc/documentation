@@ -29,9 +29,9 @@ To tune the tracking configuration:
   "**Enable Dynamic Tracking**","If enabled, tracking data is processed in the real-time mode, and the event is registered as soon as it occurs. Please note that this may affect performance.","Disabled"
   "**Log Rotation Interval**","Defines how often log files must be processed if **Dynamic Tracking** is disabled.","1 hour"
   "**Piwik Host**","The field must be specified if you want the tracking data to be sent to a Matomo (previously known as Piwik) account. The value corresponds to the Matomo analytics URL of your account.","None"
-  "**Piwik Token Auth**","The field must be specified if you want the tracking data to be sent to a Matomo (previously known as Piwik) account. The value corresponds to the Matomo `token_auth <https://matomo.org/faq/general/faq_114/>`_ field.","None"
+  "**Piwik Token Auth**","The field must be specified if you want the tracking data to be sent to a Matomo (previously known as Piwik) account. The value corresponds to the |Matomo1| field.","None"
 
-.. note:: To enable the data transfer to a Matomo account, the **identifier** field of the Tracking Website record should be the same as the `Website ID <https://matomo.org/faq/general/faq_19212/>`_ used by Matomo.
+.. note:: To enable the data transfer to a Matomo account, the **identifier** field of the Tracking Website record should be the same as the |Website ID| used by Matomo.
 
 3. Clear the **Use Default** check box to customize the required option.
 
@@ -51,5 +51,8 @@ Related Articles
 * :ref:`Marketing Features <marketing-system-configuration>`
 * :ref:`Tracking Websites <user-guide-marketing-tracking>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

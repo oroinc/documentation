@@ -178,5 +178,5 @@ Dashboard widgets with monetary values (e.g. Forecast) and monetary metrics work
 * :ref:`Pricing Overview <user-guide--pricing>`
 * :ref:`Global Pricing Configuration <sys--config--commerce--catalog--pricing>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -32,5 +32,5 @@ To enable guest request for quote submission per organization:
 
 .. finish_rfq
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

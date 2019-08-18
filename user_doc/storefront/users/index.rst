@@ -70,6 +70,6 @@ A form will emerge with the following data to provide:
 * Generate Password check box
 * Roles: administrator/buyer check boxes
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

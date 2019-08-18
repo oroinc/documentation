@@ -18,7 +18,7 @@ Install LDAP Extension
 ----------------------
 
 LDAP extension is only available for Enterprise Edition users and comes with Enterprise versions of every Oro
-application, which means that no additional installation is required. However, if you happen to use a custom Enterprise Edition application without the LDAP extension, you can install separately. For this, use the `Composer <https://getcomposer.org/doc/03-cli.md#require>`_ to install *oro/crm-pro-ldap-bundle* package in your Oro Enterprise application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
+application, which means that no additional installation is required. However, if you happen to use a custom Enterprise Edition application without the LDAP extension, you can install separately. For this, use the |composer| to install *oro/crm-pro-ldap-bundle* package in your Oro Enterprise application, as described in the :ref:`Extensions and Package Manager Guide <cookbook-extensions-composer>` topic.
 
 Create LDAP Integration
 -----------------------
@@ -137,3 +137,6 @@ usual credentials to log into the Oro application.
    
    The system administrators will be able to tell if a user has been added via LDAP integration. Their profile will contain the LDAP Distinguished Names value, which will only be visible to users who have permission to manage LDAP integrations.
    
+
+.. include:: /include/include_links.rst
+   :start-after: begin

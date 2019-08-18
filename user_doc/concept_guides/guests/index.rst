@@ -114,7 +114,7 @@ To issue quotes to guest customers via direct links, enable guest quotes in the 
 
 * :ref:`Configure Guest Quote Globally <sys--conf--commerce--guest--enable--guest_quotes>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

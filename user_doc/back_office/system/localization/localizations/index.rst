@@ -79,5 +79,5 @@ Once the localization is configured and the cache is updated, you need to enable
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

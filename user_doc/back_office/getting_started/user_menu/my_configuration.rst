@@ -267,5 +267,5 @@ More information on how to configure the contact information visible to the cust
 * :ref:`My Calendar <user-guide-calendars-manage>`
 * :ref:`Log Out <doc-log-out>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

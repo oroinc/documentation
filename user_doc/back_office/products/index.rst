@@ -69,5 +69,5 @@ This section provides shortcuts to topics that may be useful for various types o
    product_brands/index
    price_attributes/index
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

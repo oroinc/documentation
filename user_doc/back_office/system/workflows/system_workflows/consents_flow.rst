@@ -133,5 +133,5 @@ Step 6: Order Review
 .. finish_checkout_with_consents_sample
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

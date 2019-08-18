@@ -109,5 +109,5 @@ In the Display section, you can configure the following display options for a pa
 
 .. finish_display_set_user
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -12,7 +12,7 @@ To create a new entity:
 2. Click **Create Entity** on the top right of the page. 
 3. In the **General Information** section, provide the following information:
     
-   - **Name** --- Type the entity name. The name must be at least 5 characters long and contain only numbers and alphabetic symbols. The first symbol must be a letter. The name cannot be a `reserved SQL word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_.
+   - **Name** --- Type the entity name. The name must be at least 5 characters long and contain only numbers and alphabetic symbols. The first symbol must be a letter. The name cannot be a |reserved SQL word|.
 
    .. caution:: The name must be unique for every custom entity created, otherwise partial update of the existing entity and failure of the schema update may occur.   
    
@@ -125,5 +125,9 @@ To create a new entity:
 
 .. note:: You can view all entities under **System > Entities > Entity Management**. 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

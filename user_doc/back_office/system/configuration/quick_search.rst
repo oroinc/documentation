@@ -37,6 +37,6 @@ To find the menu, proceed with the following steps:
 
 6. To remove your query, navigate to the **Quick Search** field and clear the content by clicking |IcClose|.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

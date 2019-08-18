@@ -44,7 +44,7 @@ To create a new website in OroCommerce:
 
 * After creating the website in OroCommerce, ensure that the customer users will navigate to the website in your planned scenarios. Perform the necessary configuration on the web server or cookie preparation in order to make the website identifiable. For more details on the necessary configuration outside OroCommerce, please refer to the *src/Oro/Bundle/MultiWebsiteBundle/Resources/doc/website_matchers.md* document in the OroCommerce Enterprise GitHub repository.
 
-* Make the necessary :ref:`adjustments <system-websites--prepare-to-host-a-website-in-the-domain-sub-folder>` if you plan to host several websites on the same domain, in the sub-folders (e.g. http://store.com/uk and http://store.com/us).
+* Make the necessary :ref:`adjustments <system-websites--prepare-to-host-a-website-in-the-domain-sub-folder>` if you plan to host several websites on the same domain, in the sub-folders (e.g., *http://store.com/uk* and *http://store.com/us*).
 
 **Related Topics**
 

@@ -154,5 +154,5 @@ When you prepare :ref:`web catalogs <user-guide--web-catalog>` for you storefron
 
 * :ref:`Website Management <user-guide--system-websites>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

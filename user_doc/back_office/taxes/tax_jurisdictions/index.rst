@@ -76,5 +76,5 @@ You can edit the association of the tax jurisdiction with other tax components w
    create
    viewlist
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -27,6 +27,6 @@ The All Products page should now become available as part of the selected menu o
 
 .. finish_all_products
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

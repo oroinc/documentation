@@ -29,6 +29,8 @@ To configure **MIME types** globally:
 6. Add any MIME type by writing the required file or image format in the text box.
 7. Click **Save Settings**.
 
-If `attachments are enabled for an entity <https://oroinc.com/doc/orocrm/current/admin-guide/entities/entity-actions#doc-entity-actions-create>`_, the configuration of the entity will prevail and override the corresponding global one.
+If |attachments are enabled for an entity|, the configuration of the entity will prevail and override the corresponding global one.
 
+.. include:: /include/include_links.rst
+   :start-after: begin
 

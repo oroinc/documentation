@@ -28,7 +28,7 @@ To change the default global routing settings:
 
    * **Canonical URL Type** - this option defines whether the *System URL* or *Direct URL* should be used as a canonical link in the meta keywords in the page source code.
 
-     .. note:: `Canonical link <https://support.google.com/webmasters/answer/139066?hl=en>`_ is used to help search engines identify the unique content that should be indexed.
+     .. note:: |Canonical link| is used to help search engines identify the unique content that should be indexed.
 
      When *System URL* is selected, the page URL is built using the system path to the item and its ID (e.g. `/product/view/4`).
 
@@ -79,4 +79,7 @@ To change the default global routing settings:
      b) Select the new option.
 
 4. Click **Save**.
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

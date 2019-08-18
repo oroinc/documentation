@@ -74,6 +74,6 @@ When editing the selected order, you can perform the following actions with the 
 
 .. finish_edit_in_order_body
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

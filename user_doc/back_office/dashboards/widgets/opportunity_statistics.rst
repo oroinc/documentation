@@ -31,6 +31,9 @@ You can adjust the following settings for the opportunity statistics widget:
   * Won Opportunities to date
   * Won Opportunities to date amount
 
-* **Territories** --- if sales `territories <https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management>`_ are enabled in your system, you can view opportunities filtered within one or several specific territories.
+* **Territories** --- if sales |territory| are enabled in your system, you can view opportunities filtered within one or several specific territories.
 
 .. image:: /user_doc/img/dashboards/opportunity_statistics_2.png
+
+.. include:: /include/include_links.rst
+   :start-after: begin
