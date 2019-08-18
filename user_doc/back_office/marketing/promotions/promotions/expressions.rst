@@ -5,7 +5,7 @@
 Add Expressions to Promotions
 -----------------------------
 
-Expression language for promotions expressions is a user-friendly and business oriented extension of the |Symfony Expression Language|. It is easy to use and, on top of usual comparison and logical operators, it allows iterating through the collections of items using *(collection).all* and *(collection).any* operations.
+Expression language for promotions expressions is a user-friendly and business oriented extension of the |Symfony Expression Language|. It is easy to use and, on top of usual comparison and logical operators, it allows iterating through the collections of items using *(collection).all* and *(collection).any* operations. Keep in mind that out-of-the-box, you can add any custom fields to the required entity in addition to the attributes listed below.
 
 Attributes Supported in Promotion Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
