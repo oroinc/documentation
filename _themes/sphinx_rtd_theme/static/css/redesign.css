@@ -814,7 +814,7 @@ body {
     padding: 3px 0;
 }
 .wy-menu li.toctree-l3 {
-    padding: 6px 0;
+    padding: 4px 0;
 }
 .wy-menu li.toctree-l2.current li.toctree-l3 > a {
     padding: 0 0 0 10px;
@@ -834,7 +834,7 @@ body {
 .wy-menu li.toctree-l5,
 .wy-menu li.toctree-l6 {
     /*padding: 0 0 9px;*/
-    padding: 4px 0;
+    padding: 3px 0;
 }
 .wy-menu li.toctree-l4:last-child,
 .wy-menu li.toctree-l5:last-child,
