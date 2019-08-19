@@ -330,11 +330,14 @@ oro_branch_name_mappings = {
     'epic/DOC-1216_doc_3.1': '3.1'
 }
 
-# Name of branch with will be marked as "current" in template
-oro_current_version_branch = 'ticket/DOC-1291_3.1'
-
 # Additional context which will be injected to template engine
 html_context = {
-    'oro_branch_name_mappings': oro_branch_name_mappings,
-    'oro_current_version_branch': oro_current_version_branch
+    'oro_branch_name_mappings': oro_branch_name_mappings
+}
+
+# Sphinx versioning (scv) config
+# Mappings of git branches and directory name for this branch in build directory
+scv_version_dirs = {
+    'epic/DOC-1216_doc_3.1': '3.1',
+    'epic/DOC-1216_doc_2.6': '1.6',
 }
