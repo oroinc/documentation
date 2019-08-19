@@ -7,18 +7,18 @@ To update media breakpoints, change the next breakpoints:
 
 .. code:: scss
 
-    // Desktop Media Breakpoint;
+    // Default Media Breakpoint;
 
     $breakpoint-desktop: 1100px;
     $breakpoint-tablet: $breakpoint-desktop - 1px;
     $breakpoint-tablet-small: 992px;
+    $breakpoint-mobile-big: 767px;
     $breakpoint-mobile-landscape: 640px;
     $breakpoint-mobile: 414px;
-    $breakpoint-mobile-big: 767px;
+    $breakpoint-mobile-small: 360px;
 
-To add, update media queries theme developer must create files with
-global-settings ``your-theme/settings/global-settings.scss`` and update
-list with custom breakpoints.
+To add, update media queries theme, a developer must create files with the ``your-theme/settings/global-settings.scss`` global-settings and update the list with custom breakpoints.
+These breakpoints will be synchronized with the `viewport manager <https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/viewport-manager.md>`__.
 
 .. code:: scss
 
