@@ -1,16 +1,16 @@
 {%- if versions %}
 <strong class="doc-title">Documentation Version</strong>
 <div class="documentation-version-switcher">
-    <div class="version">{{ oro_branch_name_mappings[current_version]|default(current_version) }} version</div>
+    <div class="version">{{ oro_branch_name_mappings[current_version]|default(current_version) }}</div>
     <ul class="documentation-version">
         {%- if versions.tags %}
             {%- for name, url in versions.tags %}
-                <li><a href="{{ url }}">{{ oro_branch_name_mappings[name]|default(name) }}{{ ' (current)' if oro_current_version_branch == name }}</a></li>
+                <li><a href="{{ url }}">{{ oro_branch_name_mappings[name]|default(name) }}{{ ' (current)' if scv_root_ref == name }}</a></li>
             {%- endfor %}
         {%- endif %}
         {%- if versions.branches %}
             {%- for name, url in versions.branches %}
-                <li><a href="{{ url }}">{{ oro_branch_name_mappings[name]|default(name) }}{{ ' (current)' if oro_current_version_branch == name }}</a></li>
+                <li><a href="{{ url }}">{{ oro_branch_name_mappings[name]|default(name) }}{{ ' (current)' if scv_root_ref == name }}</a></li>
             {%- endfor %}
         {%- endif %}
     </ul>
