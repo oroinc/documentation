@@ -51,6 +51,6 @@ To edit, create or delete a dashboard, you can either:
 * Hover over the |IcSettings| **Tools** and select the required action, or
 * Use the  |IcMore| **More Options** menu from the Dashboards page under **Dashboards > Manage Dashboards**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

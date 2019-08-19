@@ -151,5 +151,5 @@ To create a request for quote from the shopping list:
 2. Click |ICChevronDown| next to the **Create Order** button on the bottom of the view page.
 3. Click **Request Quote**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

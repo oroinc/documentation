@@ -34,5 +34,5 @@ To schedule price activation and deactivation:
 
 4. Once you finish adding the activation and deactivation windows, click **Save**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

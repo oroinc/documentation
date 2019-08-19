@@ -34,5 +34,5 @@ On the process's details page, you can see the basic process details (as in the 
 Here, you can |IcActivate| Activate or |IcDeactivate| Deactivate the process by clicking the necessary button.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

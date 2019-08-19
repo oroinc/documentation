@@ -5,7 +5,7 @@ Add Attachments
 
 Adding attachments in your Oro application helps keep track of assets such as paper copies of a return, or a bill of service written on site. This way, the representative can attach the copy to a customer's case, the customer, or account records.
 
-See a short demo on `how to add attachments in your Oro application <https://oroinc.com/orocrm/media-library/add-attachments-orocrm>`_, or keep reading the step-by-step guidance below.
+See a short demo on |how to add attachments in your Oro application|, or keep reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -37,3 +37,7 @@ To add an attachment to a record:
 .. note:: You can access attached files under *Attachments* in the **Additional Information** section of record pages.  
 
           .. image:: /user_doc/img/getting_started/records/add_attachment_view.png
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

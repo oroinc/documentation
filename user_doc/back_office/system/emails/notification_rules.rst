@@ -12,7 +12,7 @@ To help you keep track of important changes or events, you can configure automat
 
 Notification rules define when to send an email to a recipient. For example, you may want an administrator to receive notifications when a user sends them a request, notify users when a new activity is assigned to them, or inform each time customer details are edited.
 
-.. note:: See a short demo on `how to create notification rules <https://oroinc.com/orocrm/media-library/create-notification-rules>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create notification rules| or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -80,5 +80,9 @@ To create a notification rule:
 5. Click **Save and Close**.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -16,7 +16,7 @@ Create Project
 
 To configure single sign-on on the Google side:
 
-1. Open `Google API Console <https://console.developers.google.com/start>`__
+1. Open |Google API Console|
 2. Navigate to **My Project** selector in the top left corner and click **Create Project**.
 
    .. image:: /user_doc/img/google/create_project.jpg
@@ -95,7 +95,7 @@ To configure the integration with Google in your OroCRM or OroCommerce applicati
      
    "**Client ID** ","The Client ID generated in the API console."
    "**Client Secret**","The Client Secret generated in the API console."
-   "**Google API Key** ","The API Key generated in the API console. Provide a valid `Google API key <https://developers.google.com/maps/documentation/javascript/get-api-key>`_ to activate maps for addresses in the system."
+   "**Google API Key** ","The API Key generated in the API console. Provide a valid |Google API key| to activate maps for addresses in the system."
 
 4. Define the following fields for **Google Sign-on:**
 
@@ -128,3 +128,7 @@ For now on, for a user logged-in into a Google account, it is enough to
 click the **Login using Google** link to get into Oro application.
 
 .. note:: Note that the email used for the Google account and the primary email of the user in Oro application must be the same.
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

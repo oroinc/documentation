@@ -57,5 +57,5 @@ Ellipsis menu, or the more options menu, is located on the page of all records, 
 
 .. finish_edit
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -89,7 +89,7 @@ In the Quotes section, the following capabilities are available:
 
   .. image:: /user_doc/img/system/user_management/override_quote_price_disabled.png
 
-* **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when `Backoffice Quotes Flow with Approvals <https://oroinc.com/orocommerce/doc/current/admin-guide/workflows/backoffice-quote-flow-with-approvals>`_ is enabled in the application. 
+* **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when |Backoffice Quotes Flow with Approvals| is enabled in the application.
 
   .. image:: /user_doc/img/system/user_management/approve_quotes_disabled.png
   
@@ -114,7 +114,7 @@ Sales Data
 
 In the Sales Data section, the following capabilities are available:
 
-* **Manage Abandoned Cart Campaigns** --- Enables a user to generate automatic emails to customers who have not completed their purchases in Magento-based stores, and send these customers emails as automated campaigns through MailChimp. Sending abandoned cart campaigns is possible when  the integration with Magento is established, the `abandoned cart extension <https://oroinc.com/orocrm/doc/current/user-guide-marketing-tools/magento/sending-abandoned-cart-campaigns#user-guide-acc>`_ is set up, and the integration with MailChimp is configured.
+* **Manage Abandoned Cart Campaigns** --- Enables a user to generate automatic emails to customers who have not completed their purchases in Magento-based stores, and send these customers emails as automated campaigns through MailChimp. Sending abandoned cart campaigns is possible when  the integration with Magento is established, the abandoned cart extension is set up, and the integration with MailChimp is configured.
 
 
 .. _admin-capabilities-jobs:
@@ -231,3 +231,6 @@ Entity
 * :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 
 .. |oro_application| replace:: OroCommerce
+
+.. include:: /include/include_links.rst
+   :start-after: begin

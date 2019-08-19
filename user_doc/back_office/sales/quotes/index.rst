@@ -43,5 +43,5 @@ To learn more on how to create and use quotes and their workflows, check out the
    flows/index
    shipping_method_for_quotes
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

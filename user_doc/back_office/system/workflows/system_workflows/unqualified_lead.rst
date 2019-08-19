@@ -52,5 +52,5 @@ Converting a lead into an opportunity means that you are qualifying it as a pote
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -5,7 +5,7 @@ Leads
 
 In order to save and process the details of commercial activity with people or businesses that have authority, budget and interest to purchase goods and/or services from you, for whom the probability of actual sales is not yet high or is impossible to define, use **Lead**. Essentially, leads are prospects or potential sales in a form of contact data. Initial agreement discussions, preliminary price requests or invitations for a bid may be examples of a lead.
 
-.. note:: See a short demo on `how to create and work with a lead <https://oroinc.com/orocrm/media-library/create-work-lead>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create and work with a lead| or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -45,3 +45,6 @@ In order to save and process the details of commercial activity with people or b
    import
    export
    reports
+
+.. include:: /include/include_links.rst
+   :start-after: begin

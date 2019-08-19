@@ -89,5 +89,5 @@ An **oro_customer_menu** is a storefront menu that defines what options the Acco
 
 .. image:: /user_doc/img/system/frontend_menu/AccMenu.png
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

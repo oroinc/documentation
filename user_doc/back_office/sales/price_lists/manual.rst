@@ -77,5 +77,5 @@ To add a product price in the product details:
 
 #. Click **Save**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

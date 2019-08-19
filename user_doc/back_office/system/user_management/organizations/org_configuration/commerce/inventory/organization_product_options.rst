@@ -49,7 +49,7 @@ To customize the default product options per organization:
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

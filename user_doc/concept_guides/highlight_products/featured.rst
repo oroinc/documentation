@@ -75,5 +75,5 @@ Configuring the Featured Product segment can be done globally, per website, and 
 
 .. finish_featured_products
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

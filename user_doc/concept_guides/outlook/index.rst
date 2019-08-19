@@ -99,5 +99,10 @@ Review Sync Rules Between Oro and Outlook
    sync_flow
    create_lead_opp_case
 
-.. include:: /user_doc/img/buttons/include_images.rst
+
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -10,7 +10,7 @@ defined for the whole organization or system.
 Events in the system and organization calendars can be viewed by all the users within the system/organization.
 The ability to create, edit, and delete events depends on the user's :ref:`roles <user-guide-user-management-permissions>` and :ref:`capabilities <admin-capabilities-org-calendar-events>`.
 
-.. note:: See a short demo on `how to create and manage calendars <https://www.oroinc.com/orocrm/media-library/create-and-manage-calendars#play=fVcOy3TmuQg>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create and manage calendars| or keep reading the step-by-step guidance below.
 
    .. raw:: html
 
@@ -54,6 +54,9 @@ You can find detailed information on adding calendar events to user calendars in
 * :ref:`Calendar Events <doc-activities-events>`
 * :ref:`My Calendar <user-guide-calendars-manage>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

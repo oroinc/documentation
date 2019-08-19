@@ -6,7 +6,7 @@ Create and Manage Roles
 
 You can create new roles and apply permissions to fit specifically your business processes, clone and modify the existing roles.
 
-See a short demo on `how to create a and manage roles <https://www.orocrm.com/media-library/create-manage-roles>`_, or continue reading the step-by-step guidance below.
+See a short demo on |how to create a and manage roles| or continue reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -157,6 +157,9 @@ To delete an existing role:
 * :ref:`Entity and System Capabilities <admin-capabilities>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

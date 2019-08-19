@@ -4,7 +4,7 @@ Create a Price List
 ===================
 
 .. note::
-    See a short demo on `how to configure price lists for customers and customer groups in OroCommerce <https://www.oroinc.com/orocommerce/media-library/configuring-pricelists>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to configure price lists for customers and customer groups in OroCommerce|, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -73,3 +73,6 @@ To create a new price list:
 .. TODO elaborate... deeply. Can we have multiple rule + condition pair per price list?
 
 6. Click **Save**.
+
+.. include:: /include/include_links.rst
+   :start-after: begin

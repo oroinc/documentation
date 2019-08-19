@@ -40,5 +40,5 @@ To set up integration with Wirecard, complete the following:
 
 #. Click **Save and Close**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

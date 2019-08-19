@@ -32,5 +32,5 @@ Depending on the configuration:
 
 However, please keep in mind, that your website configuration may be different and the matrix form may be unavailable.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

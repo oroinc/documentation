@@ -114,7 +114,7 @@ This generates an email based on the template you have selected, populates it wi
    sending_email_campaign_via_dotmailer
    dotmailer_data_fields_mappings
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
    
 .. |email_campaign_schedule| image:: /user_doc/img/marketing/marketing/email_campaign_schedule.png

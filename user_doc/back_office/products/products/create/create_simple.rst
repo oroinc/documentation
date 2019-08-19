@@ -5,7 +5,7 @@ Create a Simple Product
 
 .. start_product_create_simple
 
-See a short demo on `how to create a simple product <https://www.oroinc.com/orocommerce/media-library/create-simple-product>`_, or keep reading the step-by-step guidance below.
+See a short demo on |how to create a simple product| or keep reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -119,5 +119,8 @@ To add a new simple product and make it available in the master catalog (for int
 
 .. stop_product_create_simple
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -40,7 +40,7 @@ Oro applications enable you to configure system settings on four configuration l
 * **Website**: To configure settings per website, navigate to :ref:`System > Websites <doc-website-configuration>`, hover over the ellipsis menu to the right of the necessary website, and click *Configuration*. Similarly to the configuration per organization, clear the Use System check box next to the required option, and change the default value to introduce changes at website level.
 * **User**: To configure settings per user, navigate to :ref:`System > User Management > Users <doc-my-user-configuration>`, hover over the ellipsis menu to the right of the necessary user, and click *Configuration*. When Use Organization check box is enabled, organization settings override the global ones.  Clear the Use Organization check box next to the required option, and change the default value to introduce changes at user level.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

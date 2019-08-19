@@ -266,7 +266,7 @@ To delete an attachment, click the |IcDelete| **Delete** icon at the end of the 
 To delete multiple attachments, select check boxes in front of the files that you want to delete, click the |IcMore| **More Options** menu at the end of the list header, and then click |IcDelete| **Delete**.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

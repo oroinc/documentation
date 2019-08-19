@@ -90,5 +90,5 @@ You can select what data you wish to synchronize between your Oro application an
 .. finish_outlook_integration_oro
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

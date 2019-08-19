@@ -215,5 +215,5 @@ For information on attachments and how to manage them, see the :ref:`Attachments
 
 .. finish_view
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

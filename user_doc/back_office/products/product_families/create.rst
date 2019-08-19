@@ -3,7 +3,7 @@
 Create a New Product Family
 ===========================
 
-See a short demo on `how to create a product family <https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families>`_ (from 6:43), or keep reading the step-by-step guidance below.
+See a short demo on |how to create a product family| (from 6:43), or keep reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -29,3 +29,7 @@ Default Product Family may not be enough to cover all your needs. To create a ne
    .. important:: Ensure that every system attribute is linked to the proper attribute group in the product family. By default, they are linked to the default_group, but you may modify the link as necessary.
 
 6. Once you are happy with the product attribute organization, click **Save**.
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

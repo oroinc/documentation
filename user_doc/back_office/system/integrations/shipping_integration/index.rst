@@ -48,7 +48,7 @@ The shipping methods created due to this integration are no longer usable in Oro
 * :ref:`Shipping Rules Configuration <sys--shipping-rules>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

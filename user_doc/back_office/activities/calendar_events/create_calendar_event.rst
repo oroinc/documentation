@@ -61,7 +61,7 @@ To add a calendar event when viewing a list of events:
 
      .. important:: For Hangouts calls to be possible, integration with Google services should be created. Contact your administrator or see :ref:`Google Integration Settings <admin-configuration-integrations-google>` for more information.
 
-     .. tip:: For more help on Hangouts calls, see `Hangouts Help <https://support.google.com/hangouts#topic=6386410>`__ on google.com.
+     .. tip:: For more help on Hangouts calls, see |Hangouts Help| on google.com.
 
    * **Context** --- Select a record that has a meaningful relation to the event. Start entering a record name to quickly find the required user, and when the list of suggestions appears, click the required name to select it. The event is now linked to the selected item and is displayed in its **Activity** section.
 
@@ -129,3 +129,6 @@ To add an event to a system calendar from its page:
 3. On the page of the selected calendar, click **Create Calendar Event**.
 4. The **Create Calendar Event** page appears. Specify the event details.
 5. Click **Save and Close**.
+
+.. include:: /include/include_links.rst
+   :start-after: begin

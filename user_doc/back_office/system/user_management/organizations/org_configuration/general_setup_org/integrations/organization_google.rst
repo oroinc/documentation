@@ -17,5 +17,5 @@ To enable hangouts in the Oro application for an organiation:
 
 5. Click **Save Settings**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

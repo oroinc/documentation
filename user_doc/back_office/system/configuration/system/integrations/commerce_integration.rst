@@ -5,7 +5,7 @@ CRM and Commerce
 ================
 
 
-The integration between `OroCRM <https://www.oroinc.com/orocrm>`_ and `OroCommerce <https://oroinc.com/b2b-ecommerce/>`_ provides seamless experience of two applications working as one.
+The integration between |OroCRM| and |OroCommerce| provides seamless experience of two applications working as one.
 
 OroCommerce comes with OroCRM integration enabled out of the box. If you are using OroCRM, you can install OroCommerce on top of it and enable the integration.
 
@@ -24,3 +24,7 @@ These options can be changed any time with customers re-related to accounts acco
 
 .. image:: /user_doc/img/system/config_system/config_commerce_integration.png
    :alt: System configuration settings for CRM and Commerce
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

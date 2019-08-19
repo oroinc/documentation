@@ -23,7 +23,7 @@ The following topics will delve into how to view, create, and manage promotions 
 * :ref:`Calculate Order Total in Promotions (Example) <user-guide--marketing--promotions--price-calculation>`
 * :ref:`Review Promotions-related FAQs <user-guide--marketing--promotions--issues>`
 
-.. note:: You can check out a video on `how to create promotions <https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions>`__ in our media library.
+.. note:: You can check out a video on |how to create promotions| in our media library.
 
 
 .. toctree::
@@ -35,3 +35,6 @@ The following topics will delve into how to view, create, and manage promotions 
    manage_discounts_in_orders
    price_calculation_sample
    faqs
+
+.. include:: /include/include_links.rst
+   :start-after: begin

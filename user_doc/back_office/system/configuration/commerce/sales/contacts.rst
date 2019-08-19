@@ -144,5 +144,5 @@ This would allow John Doe to:
 
    .. image:: /user_doc/img/system/config_commerce/sales/FrontSalesRepInfoLoggedIn.png
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

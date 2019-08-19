@@ -169,6 +169,6 @@ To manage saved views, click **Options** next to the view name. The following is
 .. image:: /user_doc/img/getting_started/navigation/Table_Options.png
    :alt: The list of available options under Options
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
  

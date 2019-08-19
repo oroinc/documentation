@@ -118,6 +118,6 @@ To change the default global pricing settings:
 * :ref:`Global Currency Configuration <admin-configuration-currency>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

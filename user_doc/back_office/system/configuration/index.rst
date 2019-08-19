@@ -32,7 +32,7 @@ However:
                :class: with-border
                :alt: Quick search under System Configuration
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

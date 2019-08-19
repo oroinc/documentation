@@ -10,7 +10,7 @@ The first step of creating a new entity field is providing information on its ba
 .. image:: /user_doc/img/system/entity_management/new_entity_field.png
    :alt: Basic properties available when creating a new field for an entity
 
-1. **Field Name** --- Provide a name of the field that will be used to refer to it in the system. This name must be unique within an entity and it can be neither a `reserved SQL word <http://msdn.microsoft.com/en-us/library/ms189822.aspx>`_ nor a `reserved PHP word <http://php.net/manual/en/reserved.keywords.php>`_.
+1. **Field Name** --- Provide a name of the field that will be used to refer to it in the system. This name must be unique within an entity and it can be neither a |reserved SQL word| nor a |reserved PHP word|.
 
 2. **Storage Type** --- Select how the field is stored in the system:
 
@@ -50,4 +50,7 @@ The first step of creating a new entity field is providing information on its ba
    * **Many to one** --- Select this relation if any amount the entity records can be assigned to one and only one record of another entity. For example, any amount of customers may be assigned to an account, but a customer cannot be assigned to more than one account.
 
 4. Once you have provided the basic entity properties, click **Continue** to move on to the next step and specify the :ref:`advanced entity properties <admin-guide-create-entity-fields-advanced>`.
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

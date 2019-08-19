@@ -37,7 +37,7 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 * :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payflow-gateway>`
 * :ref:`PayPal Express <config-guide--payment--paypal-express>`
 
-  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the |Oro PayPal Express Integration| package.
 
 * :ref:`Apruve <user-guide--payment--payment-providers-overview--apruve>`
 * :ref:`Authorize.Net <user-guide--payment--payment-providers-overview--authorizenet>`
@@ -69,7 +69,10 @@ The payment methods that were based on this integration are no longer usable in 
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 
 .. toctree::

@@ -38,4 +38,4 @@ To request a quote in the storefront:
 
 **Related Topics**
 
-* :ref:`Guest Quote in the Back-office <user-guide--sales--guest-quotes>`
+* :ref:`Guest Quote in the Back-Office <user-guide--sales--guest-quotes>`

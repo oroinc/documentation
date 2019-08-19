@@ -135,6 +135,6 @@ As an illustration, let us go through a sample flow to see RFQ Management Flow i
 .. finish_back_rfq
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

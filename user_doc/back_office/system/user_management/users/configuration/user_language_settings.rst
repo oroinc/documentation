@@ -22,5 +22,5 @@ To define the default system language for a particular user:
 
 .. finish 1
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

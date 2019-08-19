@@ -84,6 +84,6 @@ Once the catalog is enabled (:ref:`globally <user-guide--marketing--web-catalog-
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
    

@@ -296,5 +296,5 @@ Let us go through every step of this process:
 
 .. finish_backoffice_quote_flow
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

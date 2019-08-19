@@ -16,5 +16,5 @@ Hover over the |IcMore| **More Options** menu to the right of the item and click
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

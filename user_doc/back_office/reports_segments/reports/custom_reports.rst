@@ -6,7 +6,7 @@ Use Custom Reports
 Create a Custom Report
 ----------------------
 
-See a short demo on `how to create a report in your Oro application <https://www.oroinc.com/orocrm/media-library/create-report-orocrm>`_, or continue reading the step-by-step guidance below.
+See a short demo on |how to create a report in your Oro application|, or continue reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -356,5 +356,8 @@ You can delete multiple custom reports at a time.
 :ref:`Reports Examples <user-guide--business-intelligence--reports--reports-examples>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

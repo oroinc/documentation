@@ -9,7 +9,7 @@ To facilitate global B2B sales, the OroCommerce administrator enables valid ship
 When submitting an order, a customer may have several shipping options to choose from. They depend on the shipping address that is collected at the checkout. Once the address is provided, OroCommerce evaluates shipping methods against the special shipping rules and exposes only the options recommended for the particular location and/or based on other order details. After the customer user has selected the shipping method, the shipping cost is shown in the order next to the subtotal.
 
 .. note::
-    See a short demo on `how to create a shipping integration in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -53,6 +53,9 @@ The list of shipping methods that OroCommerce supports is listed below. Click on
   .. note:: When using UPS or FedEx, cost evaluation is possible only for the products with available :ref:`shipping information (weight and weight unit) <user-guide--shipping--product-shipping-info>`.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

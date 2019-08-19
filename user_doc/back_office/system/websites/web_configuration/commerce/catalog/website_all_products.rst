@@ -20,5 +20,5 @@ The first step of configuring All Products page for your storefront is enabling 
 
 .. finish_all_products
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

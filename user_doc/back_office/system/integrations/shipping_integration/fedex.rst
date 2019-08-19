@@ -10,7 +10,7 @@ FedEx is the largest multinational delivery service company that provides a vari
 This section describes the steps that are necessary to expose FedEx as a shipping method in OroCommerce orders and quotes.
 
 .. note::
-   See a short demo on `how to create a shipping integration in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+   See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -26,7 +26,7 @@ Create a FedEx Business Account
 
 To register a business account and enable a checkout shipping integration with OroCommerce, follow the next steps:
 
-1. Navigate to the `FedEx login <https://www.fedex.com/en-us/home.html>`_ page.
+1. Navigate to the |FedEx login| page.
 
 2. Click **Sign In** and then **Create Account**.
 
@@ -48,7 +48,7 @@ Obtain a Set of Testing Credentials
 
 Once the registration is complete, you can now obtain the necessary test keys to set up the integration between FedEx and OroCommerce and make sure the integration is working properly.
 
-1. Navigate to the `FedEx Web Services <https://www.fedex.com/us/developer/web-services/index.html>`_ page.
+1. Navigate to the |FedEx Web Services| page.
 
 2. Complete the four steps required by FedEx to test the integration:
 
@@ -140,7 +140,7 @@ Obtain a Set of Production Credentials
 
 Once you have successfully configured the OroCommerce FedEx integration, and the connection to the test environment is working properly, you can move to a production stage and request a new set of credentials.
 
-1. Navigate to the `FedEx Web Services <https://www.fedex.com/us/developer/web-services/index.html>`_ page.
+1. Navigate to the |FedEx Web Services| page.
 
 2. Click the **Move to production** link and then **Get Production Key** to load another registration form page.
 
@@ -165,5 +165,8 @@ Once you have successfully configured the OroCommerce FedEx integration, and the
 
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

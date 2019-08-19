@@ -5,7 +5,7 @@ Create a Configurable Product
 
 .. start_product_create_configurable
 
-See a short demo on `how to create a configurable product <https://www.oroinc.com/orocommerce/media-library/create-configurable-products>`_, or keep reading the step-by-step guidance below.
+See a short demo on |how to create a configurable product| or keep reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -114,5 +114,10 @@ To add a new configurable product and make it available in the master catalog (f
 
 .. stop_product_create_configurable
 
-.. include:: /user_doc/img/buttons/include_images.rst
+
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

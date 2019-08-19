@@ -45,5 +45,5 @@ Within the table you have the following :ref:`action buttons <frontstore-guide--
 3. Table settings: click |IcSettings| to define which columns to show in the table.
 4. :ref:`Filters <frontstore-guide--navigation-filters>` |IcFilter|.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -14,5 +14,5 @@ To enable leads per organization:
 
    Leads menu should now appear under **Sales** in the main menu.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -30,5 +30,5 @@ By default, only one shopping list is available for unregistered users:
 
      Next to the product, click |IcDelete| to remove it.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

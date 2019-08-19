@@ -75,5 +75,5 @@ Once the landing page with the consent description is added to a web catalog nod
 * :ref:`Build Reports with Accepted Consents <user-guide-reports>`
 * :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -100,5 +100,5 @@ To update the related products settings globally:
 .. finish_upsell_items_body
 .. finish_related_products_body
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

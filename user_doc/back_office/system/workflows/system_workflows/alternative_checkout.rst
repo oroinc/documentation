@@ -129,5 +129,5 @@ At this point, the manager can submit the order themselves, or let the employee 
 
 Once submitted, the order will be received and dealt with by the sales team.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

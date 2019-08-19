@@ -115,7 +115,7 @@ Keep in mind that as soon as the entity is created, its ownership type cannot be
 * :ref:`Blueprints of User Access Configuration <doc-user-management-users-access-examples>`
 * :ref:`End-to-end Access Configuration in Context <user-guide-user-management-permissions-roles--examples>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. |oro_application| replace:: OroCommerce

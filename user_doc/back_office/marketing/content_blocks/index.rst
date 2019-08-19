@@ -7,7 +7,7 @@ Content Blocks
 
 Content Blocks are the foundation of your site, and they can help create a custom layout. In Oro applications, you can modify the existing content blocks, or create your own.
 
-.. note:: Creating a new content block requires developers' assistance. As a sample, use Home Page Slider content block, the `code <https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Migrations/Data/ORM/LoadHomePageSlider.php>`_ and `configuration <https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/default/oro_frontend_root/home_page_slider.yml>`_ in the yaml file that helps embed it into the website homepage.
+.. note:: Creating a new content block requires developers' assistance. As a sample, use Home Page Slider content block, the |code| and |configuration| in the yaml file that helps embed it into the website homepage.
 
 To edit a defined content block:
 
@@ -69,6 +69,9 @@ For instance, to translate the homepage slider into German:
  
 .. finish 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
    

@@ -16,7 +16,7 @@ To set up an integration between your Oro application and MS Exchange Server, ma
 * Your MS Exchange Server version is 2007 or newer.
 * The administrator of the Microsoft Exchange Server account has created at least one user with the permission to impersonate the necessary accounts on the related Exchange Server (super-user).
 
-.. note:: The impersonation procedure may be different depending on the  MS Exchange version you use. More information on this is described in detail in the `Microsoft API and Reference Catalog <https://msdn.microsoft.com/en-us/library>`_ and the `Configure Impersonation <https://docs.microsoft.com/en-us/exchange/client-developer/exchange-web-services/how-to-configure-impersonation>`_ article.
+.. note:: The impersonation procedure may be different depending on the  MS Exchange version you use. More information on this is described in detail in the |Microsoft API and Reference Catalog| and the |Configure Impersonation| article.
 
 Configure the Integration with MS Exchange Server
 -------------------------------------------------
@@ -41,3 +41,6 @@ To configure MS Exchange integration settings in your Oro application globally:
      "**Domain List**","Define the domains, to which you will grant access. At least one domain **must** be defined."
 
 3. Click **Save Settings**.
+
+.. include:: /include/include_links.rst
+   :start-after: begin

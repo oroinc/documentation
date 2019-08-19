@@ -8,7 +8,7 @@ Flat Rate Shipping Integration
 Flat Rate shipping integration section describes the steps that are necessary to expose flat rate shipping as a shipping method in OroCommerce orders and quotes.
 
 .. note::
-   See a short demo on `how to create a shipping integration in OroCommerce <https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations>`_, or keep reading the step-by-step guidance below.
+   See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -38,3 +38,7 @@ Once the shipping method is added to the shipping rule, provide the information 
 * :ref:`Shipping Configuration Concept Guide <admin-guide--shipping>`
 * :ref:`System Shipping Configuration <configuration--guide--commerce--configuration--shipping>`
 * :ref:`Shipping Rules Configuration <sys--shipping-rules>`
+
+
+.. include:: /include/include_links.rst
+   :start-after: begin

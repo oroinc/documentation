@@ -10,7 +10,7 @@ The General Data Protection Regulation (GDPR) is a law on protection of personal
 
 Not complying with the GDPR can result in disciplinary actions from relevant supervisory authorities. 
 
-.. important:: Learn more on data protection regulations in the official `GDPR portal <https://www.eugdpr.org/>`__ and the `EU Commission web page <https://ec.europa.eu/info/law/law-topic/data-protection_en>`__, or see the `ICO's Guide to the GDPR <https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr>`__ before you proceed.
+.. important:: Learn more on data protection regulations in the official |GDPR portal| and the |EU Commission web page|, or see the |ICO's Guide to the GDPR| before you proceed.
 
 GDPR Compliance in OroCommerce
 ------------------------------
@@ -43,7 +43,7 @@ By default, consents are disabled in OroCommerce.
 
 To enable and configure consents in OroCommerce, take the following steps:
 
-* Install the `Customer Consent Management <https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce>`_ extension.
+* Install the |Customer Consent Management| extension.
 * Enable consents in the :ref:`system configuration <configuration--guide--commerce--configuration--consents>`.
 * Create a :ref:`landing page <user-guide--consents--add>` with the text of the consent, and add it as a content variant of a content tree node.
 * Create a :ref:`new consent <user-guide--consents--create>` under **System > Consent Management**, define its properties, and link it to the content tree node.
@@ -69,8 +69,12 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 * :ref:`Declined Consents as Contact Requests <user-guide-activities-requests>`
 * :ref:`Build Reports with Accepted Consents <user-guide-reports-accepted-consents>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
+
+.. include:: /include/include_links.rst
+   :start-after: begin
+
 
 .. toctree::
    :hidden:

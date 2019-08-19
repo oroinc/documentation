@@ -7,7 +7,7 @@ As a promotional tool, coupons can be generated and distributed to customers to 
 
 The following topics will explore how to create, generate, and manage coupons in your Oro application.
 
-.. note:: You can check out `how to create coupons and link them to promotions <https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions>`__ in our media library.
+.. note:: You can check out |how to create coupons and link them to promotions| in our media library.
 
 .. _user-guide--marketing--promotions--coupons--begin:
 
@@ -154,7 +154,10 @@ Import Coupons
    :start-after: start
    :end-before: finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 
 .. toctree::

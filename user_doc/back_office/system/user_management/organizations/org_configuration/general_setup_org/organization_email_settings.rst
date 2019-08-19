@@ -77,9 +77,9 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 
 7. Click **Check Connection/Retrieve Folders**. After successful connection, a list of available folders is displayed. Select the check boxes next to the folders you wish to synchronize. 
 
-   .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail, are provided on the `Google support page <https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144>`_.
+   .. hint:: Detailed instructions on the way to set-up IMAP and SMTP connection in Gmail, are provided on the |Google support page|.
 
-   .. hint:: To enable connection, select the check box next to `Allow Access for Less Secure Apps Box <https://support.google.com/accounts/answer/6010255?hl=en>`_
+   .. hint:: To enable connection, select the check box next to |Allow Access for Less Secure Apps Box|.
 
 8. In the **Email Processing** section,  choose what happens to all the emails received in the mailbox. 
 
@@ -119,5 +119,9 @@ To configure a system mailbox on the :ref:`organization level <configuration--gu
 * :ref:`Configure a System Mailbox Globally <admin-configuration-system-mailboxes-global>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
+
+.. include:: /include/include_links.rst
+   :start-after: begin
+

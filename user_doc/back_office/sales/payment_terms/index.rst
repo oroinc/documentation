@@ -54,5 +54,5 @@ The customer is now bound to the selected payment term.
 
 .. finish_link_payment_term
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

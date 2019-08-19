@@ -32,7 +32,7 @@ Actions and transitions available for your records in the application are define
    attachments
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
  
   

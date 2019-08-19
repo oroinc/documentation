@@ -24,7 +24,8 @@ When creating a new record in the global organization, you first need to select 
 
 .. |multi_org_choice| image:: /user_doc/img/system/user_management/multi_org_choice.png
 
-.. note:: See a short demo on `how to create organizations and business units <https://www.orocrm.com/media-library/create-organizations-and-business-units>`_, or keep reading the topics below.
+
+.. note:: See a short demo on |how to create organizations and business units|, or keep reading the topics below.
 
    .. raw:: html
 
@@ -39,3 +40,6 @@ When creating a new record in the global organization, you first need to select 
    organization_all_products_menus
    organization_frontend_menus
    org_configuration/index
+
+.. include:: /include/include_links.rst
+   :start-after: begin

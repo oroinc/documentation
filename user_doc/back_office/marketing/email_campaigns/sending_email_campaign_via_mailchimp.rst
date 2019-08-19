@@ -60,7 +60,7 @@ To create a list on the MailChimp side:
    * **List Name** --- The name of the list that will be seen by all your subscribers. 
    * **Default From Email Address** --- Enter the address people can reply to.   
    * **Default From Name** --- The name that will be displayed as the sender of the email, e.g., name of your company.
-   * **Campaign URL Settings** --- Choose a verified domain to use in your `campaign URLs <https://mailchimp.com/help/customize-email-campaign-urls/?_ga=2.63720488.668787307.1531314044-10372005.1530783947>`__. You must be authorized to use the domain name you choose.
+   * **Campaign URL Settings** --- Choose a verified domain to use in your |campaign URLs|. You must be authorized to use the domain name you choose.
    * **Remind People How They Signed up to Your List** --- Provide meaningful information in the text field, or reuse a reminder from another list, if necessary.
    * **Contact Information for This List** --- Enter/edit your contact address information. 
    * **Notifications** --- Select the notifications to be sent to your provided email.  
@@ -265,4 +265,7 @@ This list is now displayed on the :ref:`Marketing List Page <user-guide-ui-compo
 **Related Articles**
 
 * :ref:`Configure MailChimp Integration <user-guide-mc-integration>`
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

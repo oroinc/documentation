@@ -69,6 +69,6 @@ Learn how to set up menus and configure content variants for the content node in
    first_level_menu
    visibility
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

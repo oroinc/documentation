@@ -94,5 +94,5 @@ In addition to editing an account on the edit page, you can quickly amend the ne
 
 Aggregation capabilities of accounts extend even further, with the ability to merge as many accounts as you want should you need to accumulate information from several accounts. Click |IcMerge| and follow instructions on the screen to proceed with the merge.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

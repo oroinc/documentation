@@ -97,5 +97,5 @@ To return to the Order History page, click **Back to Orders List** on the bottom
 
 You can print the selected past order by clicking **Print Order** below the order number.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

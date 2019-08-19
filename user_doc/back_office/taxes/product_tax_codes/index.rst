@@ -81,5 +81,5 @@ You can edit the association of the product tax code with the tax when :ref:`edi
    view
    link_a_tax_code_to_a_product
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -9,7 +9,7 @@ For instance, one toy company with three toy shops can be set up as the main org
 
 .. note:: If strict data isolation is needed between business units, it makes sense to use the :ref:`multi-organization <user-ee-multi-org-system>` approach.
 
-.. note:: See a short demo on `how to create organizations and business units <https://www.orocrm.com/media-library/create-organizations-and-business-units>`_, or keep reading the step-by-step guidance below.
+.. note:: See a short demo on |how to create organizations and business units| or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -47,3 +47,6 @@ Once saved, the business unit is available on the list of all business units und
 * :ref:`Create and Manage Organizations <user-management-organizations>`
 * :ref:`Work with Multiple Organizations <user-ee-multi-org>`
 * :ref:`Introduction to Role Management <user-guide-user-management-permissions-roles>`
+
+.. include:: /include/include_links.rst
+   :start-after: begin

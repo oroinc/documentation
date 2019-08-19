@@ -23,5 +23,5 @@ To update the featured products segment for a particular website:
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

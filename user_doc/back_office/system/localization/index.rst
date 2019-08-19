@@ -15,7 +15,7 @@ Oro application supports localization and provides decent out-of-the-box transla
 Keep reading to learn about the localization process (:ref:`open the quick visual guide <config-localization-quick-start>`):
 
 +-------------+-----------------------------------+--------------------------------------------------------------------+
-| Process     | Back-office Localization          | Storefront Localization                                            |
+| Process     | Back-Office Localization          | Storefront Localization                                            |
 +=============+===================================+====================================================================+
 | **Step 1**  | In the :ref:`Languages <localization--languages>` section,                                             |
 |             | you can add more languages to the system, enable/disable                                               |
@@ -79,7 +79,7 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Translate Consents <user-guide--consents--localizing-consents>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

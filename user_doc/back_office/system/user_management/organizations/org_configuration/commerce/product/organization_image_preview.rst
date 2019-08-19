@@ -57,5 +57,5 @@ In the Product Images section of Commerce configuration settings, you can contro
 
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

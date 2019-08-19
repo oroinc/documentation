@@ -127,5 +127,9 @@ Perform step 3 for all four simple products.
 The product should now be available on the website in the category we have previously assigned it to.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -15,7 +15,7 @@ To open the page of a specific organization:
 
    * To open :ref:`organization configuration settings <doc-organization-configuration>`, click |IcConfig| **Configuration** on the top right.
    * To edit the :ref:`back-office menu <doc-config-menus>` for this organization, click |IcConfig| **Edit Menu** on the top right.
-   * To edit the `storefront menu <https://oroinc.com/orocommerce/doc/current/configuration-guide/menu#orocommerce-storefront-menus>`__ for this organization in OroCommerce, click |IcConfig|  **Edit Frontend Menu**.
+   * To edit the |storefront menu| for this organization in OroCommerce, click |IcConfig|  **Edit Frontend Menu**.
    * To update organization details, such as it name or access level, click |IcEdit| **Edit**.
    * To view who updated organization details, click the **Change History** link.
    * To disable users within the organization, click |IcBan| in the table at the end of the row of the selected user.
@@ -23,5 +23,8 @@ To open the page of a specific organization:
 
 .. note:: Keep in mind that only those customer user roles that have been created in the current organization are displayed in the Customer User Roles grid of the current organization.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

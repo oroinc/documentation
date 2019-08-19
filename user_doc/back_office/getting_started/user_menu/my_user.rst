@@ -156,5 +156,5 @@ More information on how to setup :ref:`MS Outlook Integration <admin-configurati
 * :ref:`My Calendar <user-guide-calendars-manage>`
 * :ref:`Log Out <doc-log-out>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

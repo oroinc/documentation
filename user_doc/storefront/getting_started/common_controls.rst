@@ -224,5 +224,5 @@ Search is the fastest way to find a specific product:
 
 .. image:: /user_doc/img/storefront/navigation/Search.png
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

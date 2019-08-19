@@ -12,7 +12,7 @@ Register a Business Account with PayPal
 
 To register a business account and enable express checkout for your OroCommerce PayPal integration, follow the next steps:
 
-#. Open `https://developer.paypal.com/ <https://developer.paypal.com/>`_ and click **Log In**.
+#. Open |https://developer.paypal.com/| and click **Log In**.
 #. On the login page that opens, click **Sign Up**.
 #. On the following page, select **Business Account** and click **Continue**.
 #. Select the service plan (Payment Pro, Payments Standard, or Express Checkout).
@@ -51,7 +51,7 @@ Register a PayPal Payflow Gateway Account
 
 To create a PayPal Payflow Gateway Account:
 
-#. Open `https://registration.paypal.com/ <https://registration.paypal.com/>`_ and click Continue.
+#. Open |https://registration.paypal.com/| and click Continue.
 
 #. Select your payment processor from the list.
 
@@ -63,7 +63,7 @@ To create a PayPal Payflow Gateway Account:
 
 #. To test the Express Checkout and Bill Me Later payment methods, click Set up PayPal Developer Sandbox link and enter PayPal Sandbox Email address.
 
-   .. note:: If you do not have a PayPal Sandbox account yet, register at `http://developer.paypal.com <http://developer.paypal.com>`_.
+   .. note:: If you do not have a PayPal Sandbox account yet, register at |http://developer.paypal.com|.
 
    .. image:: /user_doc/img/system/integrations/paypal/paypal_register_dev_account.png
 
@@ -86,7 +86,7 @@ OroCommerce requires enabling secure token and silent post features.
 
 To enable these features:
 
-#. Log into the `https://manager.paypal.com/ <https://manager.paypal.com/>`_:
+#. Log into the |https://manager.paypal.com/|:
 
    a) Enter the partner name (e.g. PayPal) and PayPal Payflow Gateway account login and password.
 
@@ -105,7 +105,7 @@ Enable Reference Transactions
 
 OroCommerce depends on the reference transactions. To ensure they are enabled:
 
-#. Log into the https://manager.paypal.com/ as described in the previous section.
+#. Log into the |https://manager.paypal.com/| as described in the previous section.
 
 #. Navigate to the **Account Administration > Manage Security > Transaction Settings** in the menu.
 
@@ -120,7 +120,7 @@ Disable Fraud Protection for Test Environments
 
 Disable Fraud Protection for the Test Setup to avoid your test transaction being blocked. Test transactions may look suspicions due to unusual behavior and eventual failures because of the invalid data:
 
-#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
+#. Log into the |https://manager.paypal.com/| as described in the `Enable Secure Token and Silent Post`_ section.
 
 #. Navigate to the **Service Settings > Fraud Protection > Edit Standard Filters** in the menu.
 
@@ -133,7 +133,7 @@ Enable Fraud Protection for Production Environments
 
 Enable Fraud Protection for any customer-facing environments where real purchases might happen:
 
-#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post`_ section.
+#. Log into the |https://manager.paypal.com/| as described in the `Enable Secure Token and Silent Post`_ section.
 
 #. Navigate to the **Service Settings > Fraud Protection > Edit Standard Filters** in the menu.
 
@@ -146,7 +146,7 @@ Configure the PayPal Manager/Merchant Account to Work with Express Checkout
 
 Using Express Checkout requires the following configuration in the Manager Account.
 
-#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post` section.
+#. Log into the |https://manager.paypal.com/| as described in the `Enable Secure Token and Silent Post`_ section.
 
 #. Navigate to the **Service Settings > Hosted Checkout Pages > Set Up**.
 
@@ -163,7 +163,7 @@ Create an API Transaction User
 
 To create an API Transaction User:
 
-#. Log into the https://manager.paypal.com/ as described in the `Enable Secure Token and Silent Post` section.
+#. Log into the |https://manager.paypal.com/| as described in the `Enable Secure Token and Silent Post`_ section.
 
 #. Navigate to the account administration and click on the **Add User** link.
 
@@ -182,4 +182,7 @@ To create an API Transaction User:
 #. Click **Update**.
 
 The basic user login information is securely delivered to the provided email.
+
+.. include:: /include/include_links.rst
+   :start-after: begin
 

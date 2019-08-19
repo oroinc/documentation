@@ -50,5 +50,5 @@ More information about the options available for each of the two categories is a
    user_sales_info
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

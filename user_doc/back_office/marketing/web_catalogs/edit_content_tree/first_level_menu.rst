@@ -18,7 +18,7 @@ Storefront:
 .. image:: /user_doc/img/marketing/web_catalogs/FirstLevelMenuFrontStore.png
    :alt: The homepage node displayed in the storefront
 
-Back-office:
+Back-Office:
 
 .. image:: /user_doc/img/marketing/web_catalogs/RootNodesManagementConsole.png
    :alt: The homepage node configured in the back-office

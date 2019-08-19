@@ -22,5 +22,5 @@ A clickable tax code link is now available in the product details.
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

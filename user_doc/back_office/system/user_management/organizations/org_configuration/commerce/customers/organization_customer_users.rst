@@ -33,6 +33,6 @@ To change the default customer user configuration settings for an organization:
    
 .. finish
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

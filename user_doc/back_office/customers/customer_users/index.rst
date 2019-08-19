@@ -101,7 +101,7 @@ You may want to delegate some of the customer user management capabilities to th
 .. image:: /user_doc/img/customers/customer_user_roles/CustomerUserRolesManageAccounts_cust.png
    :alt: The list of account management capabilities
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

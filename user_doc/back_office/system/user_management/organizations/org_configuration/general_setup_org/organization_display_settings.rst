@@ -117,5 +117,5 @@ To change any color in the set:
 
 .. finish_display_set_org
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -22,5 +22,5 @@ You can do the following actions on the details page:
 
 .. finish_view
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

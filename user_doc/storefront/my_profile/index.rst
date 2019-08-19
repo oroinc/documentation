@@ -166,7 +166,7 @@ To decline the :ref:`consent <frontstore-guide--profile-consents>` that you have
 
 .. comment: Double check the button. Should be changed into No, Cancel and Yes, Decline
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

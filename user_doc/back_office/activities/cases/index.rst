@@ -7,7 +7,7 @@ Cases are issues or problems reported by customers or found internally. With Oro
 
 Oro application also provides an out-of-box integration with the :ref:`Zendesk <user-guide-zendesk-integration>` customer support platform. Once Oro and Zendesk are integrated, you can sync Zendesk tickets as cases into the Oro application.
 
-Before proceeding to the step-by-step guidance, have a look at a short demo on `how to create and manage cases in your Oro application <https://www.oroinc.com/orocrm/media-library/create-manage-cases-orocrm>`_.
+Before proceeding to the step-by-step guidance, have a look at a short demo on |how to create and manage cases in your Oro application|.
 
 .. raw:: html
 
@@ -73,5 +73,8 @@ You can view cases from the following pages in your Oro application:
 
 .. note:: Keep in mind that the ability to view and edit cases depends on specific roles and permissions defined in the system.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin

@@ -120,5 +120,5 @@ Customer, Account and Opportunity view pages contain a list of relevant opportun
 .. image:: /user_doc/img/sales/opportunities/relevant_opportunities_opp.jpg
    :alt: Opportunities page with related other opportunities
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

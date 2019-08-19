@@ -49,5 +49,5 @@ In the MS Outlook settings section, you can configure the following integration 
 6. Click **Save Settings**.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

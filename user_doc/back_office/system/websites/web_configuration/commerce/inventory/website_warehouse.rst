@@ -32,5 +32,5 @@ To enable and prioritize warehouses per website:
 
 5. Once all warehouses are enabled and prioritized, click **Save Settings**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

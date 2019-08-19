@@ -113,5 +113,5 @@ Delete a Quote
 
 Learn :ref:`more ways to delete a quote <quotes--actions--delete>`.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
     :start-after: begin

@@ -9,7 +9,7 @@ Overview
 
 The following guide describes how you can configure tags in your Oro application. Tags are located under **System > Tags Management** in the main menu.
 
-.. note:: See a short demo on `how to create tags <https://www.oroinc.com/orocrm/media-library/tags-taxonomies>`_, or continue reading the guidance below.
+.. note:: See a short demo on |how to create tags| or continue reading the guidance below.
 
    .. raw:: html
 
@@ -150,6 +150,9 @@ It is possible to filter your reports by tags. For instance, we can create a rep
 
 You can create any reports of your choice and filter them by tag in a similar manner.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

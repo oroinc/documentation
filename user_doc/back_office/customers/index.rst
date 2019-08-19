@@ -34,7 +34,7 @@ Below is an illustration of the account hierarchy where CRM-related concepts are
    :width: 50%
    :alt: An illustration of the account hierarchy
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 .. toctree::

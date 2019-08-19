@@ -25,6 +25,6 @@ After you submit an order, it becomes available in the **Order History** menu wh
 .. hint:: Read more on how to place orders and proceed through various types of checkout in the :ref:`Checkout <frontstore-guide--orders-checkout>` topic.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

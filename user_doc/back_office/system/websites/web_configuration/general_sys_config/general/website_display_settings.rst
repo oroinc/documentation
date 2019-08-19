@@ -20,6 +20,6 @@ To configure display settings for the particular website:
 
 5. In the **Map Settings** section, select the value for **Enable Map Preview** defining whether to show the location on a map when a customer views an address in the storefront. This option does not affect maps in the back-office.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

@@ -143,6 +143,6 @@ Proceed with the following steps:
 
 * :ref:`Web Catalog <user-guide--web-catalog>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

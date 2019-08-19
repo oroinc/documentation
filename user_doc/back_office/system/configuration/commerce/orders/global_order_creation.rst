@@ -25,5 +25,5 @@ To assign an order status globally:
 
 * :ref:`Orders <user-guide--sales--orders>`
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

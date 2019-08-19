@@ -19,5 +19,5 @@ You can control the way product inventory is displayed for your buyers (in the s
 
 5. Click **Save Settings**.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

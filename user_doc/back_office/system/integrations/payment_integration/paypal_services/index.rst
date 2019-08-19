@@ -39,9 +39,9 @@ PayPal Express Payment Service Package
 
 It is a fast, safe and reliable online global payment system that offers easy online payments for businesses and individuals.
 
-PayPal Express, **unlike Gateway and Pro**, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+PayPal Express, **unlike Gateway and Pro**, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the |Oro PayPal Express Integration| package.
 
-Keep in mind that depending on PayPal policies, payment methods may be different in some countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries. You can verify PayPal Express availability in your country on the `PayPal website <https://www.paypal.com/us/webapps/mpp/country-worldwide>`__.
+Keep in mind that depending on PayPal policies, payment methods may be different in some countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries. You can verify PayPal Express availability in your country on the |PayPal website|.
 
 
 PayPal Gateway/Pro Configuration Flow
@@ -56,7 +56,7 @@ To enable PayPal payment methods at the checkout of the OroCommerce storefront:
 PayPal Express Configuration Flow
 ---------------------------------
 
-1. Install `PayPal Express Package <https://packagist.oroinc.com/#oro/paypal-express>`__.
+1. Install |PayPal Express Package|.
 2. Learn the :ref:`Prerequisites for PayPal Express Configuration <user-guide--payment--prerequisites--paypal-express>`.
 3. Configure :ref:`PayPal Express Integration <config-guide--payment--paypal-express>` under **System > Integrations > Manage Integrations**.
 4. Create a :ref:`payment rule <sys--payment-rules>` under **System > Payment Rules** and add your integration to it to display this method to the customers at the checkout.
@@ -80,3 +80,6 @@ PayPal Express Configuration Flow
    paypal_currency
    paypal_payment_actions
 
+
+.. include:: /include/include_links.rst
+   :start-after: begin

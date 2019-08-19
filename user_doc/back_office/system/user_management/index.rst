@@ -61,7 +61,7 @@ The following topics describe the available access levels and explain the differ
    business_units/index
    organizations/index
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

@@ -257,5 +257,5 @@ To set up a newly added content variant as default, select the radio on the top 
 .. image:: /user_doc/img/marketing/web_catalogs/change_default_variant.png
    :alt: Select the content variant to make it the default one
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

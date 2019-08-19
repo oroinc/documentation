@@ -15,5 +15,5 @@ You can perform the following actions for them:
 
 .. image:: /user_doc/img/system/workflows/28_manage_wf_1.png
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

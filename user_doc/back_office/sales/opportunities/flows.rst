@@ -118,7 +118,7 @@ Depending on their configuration, workflow steps can vary. Here is an example of
 OroCommerce Opportunity Flow (Create a Quote from an Opportunity)
 -----------------------------------------------------------------
 
-OroCommerce Opportunity Flow enables sales reps to create `quotes <https://www.oroinc.com/doc/orocommerce/current/user-guide/quotes>`__ directly from the opportunity page. All quotes created within a specific opportunity are displayed in the corresponding section of its  page. The sales rep can manage quotes from this table in the same way they can manage them from the quotes table (e.g. edit or delete).
+OroCommerce Opportunity Flow enables sales reps to create |quotes| directly from the opportunity page. All quotes created within a specific opportunity are displayed in the corresponding section of its  page. The sales rep can manage quotes from this table in the same way they can manage them from the quotes table (e.g. edit or delete).
 
 .. note:: Creating a quote from the opportunity page is only available if the opportunity is related to a Commerce customer. Otherwise, the workflow will behave exactly like the standard Opportunity Management flow (for standard flow, see the `Manage Opportunity Workflow`_ section of the guide).
 
@@ -165,6 +165,9 @@ You can create any number of quotes for one open opportunity.
 
 .. finish_opportunity_flows
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
+   :start-after: begin
+
+.. include:: /include/include_links.rst
    :start-after: begin
 

@@ -37,5 +37,5 @@ To limit the shipping address and methods per quote:
 
    e) Select the **Allow Unlisted Shipping Methods** check box to allow using the shipping method that is already selected as a default one, even if it is disabled in this quote configuration.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

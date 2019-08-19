@@ -68,6 +68,6 @@ From the channel's details page, you can edit the channel or view and edit the a
 
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

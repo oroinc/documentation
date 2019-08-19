@@ -7,7 +7,7 @@ Customer User Roles
 
 
 .. note::
-    See a short demo on `how to create customer roles in Oro applications <https://www.oroinc.com/orocommerce/media-library/create-customer-roles>`_, or keep reading the step-by-step guidance below.
+    See a short demo on |how to create customer roles in Oro applications|, or keep reading the step-by-step guidance below.
 
     .. raw:: html
 
@@ -72,8 +72,12 @@ You can view, edit and :ref:`filter <doc-grids-actions-filters-apply>` every ite
 
 .. note:: Keep in mind that only those customer user roles that have been created in the current organization will be displayed in the Customer User Roles record table of the current organization.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
+
+.. include:: /include/include_links.rst
+   :start-after: begin
+
 
 .. Related Articles**
 

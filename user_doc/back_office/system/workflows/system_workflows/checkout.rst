@@ -154,5 +154,5 @@ Once submitted, the order will be received and dealt with by the sales team.
 .. |order_review_img| image:: /user_doc/img/system/workflows/checkout/Order_Review.png
    :alt: The order review step at the checkout
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

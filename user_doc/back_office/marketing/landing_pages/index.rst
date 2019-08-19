@@ -107,5 +107,5 @@ To view the landing page details:
 #. Click **Save** on the top right of the page.
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

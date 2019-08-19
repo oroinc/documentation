@@ -66,5 +66,5 @@ Link a Payment Term to a Customer Based on Their Sales Agreement
 * :ref:`System Payment Configuration <configuration--guide--commerce--configuration--payment>`
 
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

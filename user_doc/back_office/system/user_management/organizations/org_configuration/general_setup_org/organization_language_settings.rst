@@ -21,6 +21,6 @@ To define the default system language for a particular organization:
 
 5. Click **Save Settings** to save the settings.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 

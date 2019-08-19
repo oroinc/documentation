@@ -292,5 +292,5 @@ Review Further Sync Rules
 
 .. stop
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

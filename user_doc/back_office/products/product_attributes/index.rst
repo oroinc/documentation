@@ -28,7 +28,7 @@ Add new product attributes to introduce new custom parameters in your product de
 Create a Product Attribute
 --------------------------
 
-See a short demo on `how to create product attributes <https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families>`_, or keep reading the step-by-step guidance below.
+See a short demo on |how to create product attributes|, or keep reading the step-by-step guidance below.
 
 .. raw:: html
 
@@ -216,6 +216,8 @@ Import Product Attributes
 
    import_product_attributes
 
+.. include:: /include/include_images.rst
+   :start-after: begin
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_links.rst
    :start-after: begin

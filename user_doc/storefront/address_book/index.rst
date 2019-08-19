@@ -131,7 +131,7 @@ You can perform the following actions for each address record in the table:
 * Edit an address: click |IcPencil|
 * Delete an address: click |IcDelete|
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin
 
 

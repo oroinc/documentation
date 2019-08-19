@@ -20,9 +20,9 @@ To edit an entity:
 
    There are also several additional fields in the **Other** section that are available only when you edit an entity:
 
-   - **Field Level ACL** --- Select this check box to define that permissions can be set on individual fields of this entity. For more information about field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <https://oroinc.com/orocrm/doc/current/admin-guide/security/access-role-management>`__ topic.
+   - **Field Level ACL** --- Select this check box to define that permissions can be set on individual fields of this entity. For more information about field level ACLs.
 
-   - **Show Restricted** --- Select this check box if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs, see the `Permissions for an Entity Field (Field Level ACLs) <https://oroinc.com/orocrm/doc/current/admin-guide/security/access-role-management>`__ topic.
+   - **Show Restricted** --- Select this check box if you enabled **Field Level ACL** and are going to disable editing of some fields of the entity records but still want users to review the disabled fields on the interface. Fields disabled for modifying will appear dimmed on the interface. For more information about field level ACLs.
 
    - **Searchable** --- Defines whether record users can search for and find records of this entity via your Oro application's :ref:`search functionality <user-guide-getting-started-search>`.
 
@@ -105,5 +105,5 @@ To manage unique keys:
 7. If you need to delete a set, click the **x** icon next to the set name. 
 8. Click **Save**.      
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

@@ -42,5 +42,5 @@ In order to merge accounts:
 
     .. note:: Keep in mind that after you create a new account profile (a master record), the accounts that were merged are automatically deleted from the list of all accounts.
 
-.. include:: /user_doc/img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

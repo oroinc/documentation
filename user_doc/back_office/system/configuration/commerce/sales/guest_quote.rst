@@ -32,5 +32,5 @@ To enable guest quotes:
 
 **Related Topics**
 
-* :ref:`Send a Guest Quote in the Back-office <user-guide--sales--guest-quotes>`
+* :ref:`Send a Guest Quote in the Back-Office <user-guide--sales--guest-quotes>`
 * :ref:`Send a Guest Quote in the Storefront <frontstore-guide--guest-quotes>`
