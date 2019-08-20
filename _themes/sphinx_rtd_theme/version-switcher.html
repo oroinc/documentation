@@ -1,4 +1,4 @@
-{%- if versions %}
+{%- if versions and versions|length > 1 %}
 <strong class="doc-title">Documentation Version</strong>
 <div class="documentation-version-switcher">
     <div class="version">{{ oro_branch_name_mappings[current_version]|default(current_version) }}</div>
