@@ -5,7 +5,7 @@
 Expression Language for Shipping and Payment Rules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Expression language for payment and shipping rules expressions is a user-friendly and business oriented extension of the `Symfony Expression Language <https://symfony.com/doc/current/components/expression_language/introduction.html>`_. It is easy to use and, on top of usual comparison and logical operators, it allows iterating through the collections of items using *(collection).all* and *(collection).any* operations.
+Expression language for payment and shipping rules expressions is a user-friendly and business oriented extension of the `Symfony Expression Language <https://symfony.com/doc/current/components/expression_language/introduction.html>`_. It is easy to use and, on top of usual comparison and logical operators, it allows iterating through the collections of items using *(collection).all* and *(collection).any* operations. Keep in mind that out-of-the-box, you can add any custom fields to the required entity in addition to the attributes listed below.
 
 .. contents:: :local:
 
