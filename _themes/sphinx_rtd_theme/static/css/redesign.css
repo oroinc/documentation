@@ -751,7 +751,7 @@ body {
 .wy-menu li.toctree-l2.current li.toctree-l4 > ul,
 .wy-menu li.toctree-l2.current li.toctree-l5 > ul {
     position: absolute;
-    right: 500px;
+    right: 800px;
     display: block !important;
 }
 .wy-menu li.toctree-l1.current li.toctree-l2.current>ul,
@@ -1333,6 +1333,9 @@ body {
     .sidebar.right-sidebar {
         margin: 0 0 0 280px;
     }
+    .three-columns-layout .main-column {
+        min-height: 400px;
+    }
     .sidebar.right-sidebar {
         margin-bottom: 20px;
     }
@@ -1346,7 +1349,6 @@ body {
     .sidebar.left-sidebar {
         width: 250px;
         float: left;
-        margin-right: -250px;
         margin-bottom: 0;
     }
     .contents-table ul a:hover,
@@ -1601,8 +1603,7 @@ body {
         margin-right: -100%;
     }
     .three-columns-layout .main-column {
-        margin: 0 0 0 300px;
-        overflow: hidden;
+        margin: 0 300px;
     }
     .sidebar {
         width: 268px;
@@ -1611,12 +1612,10 @@ body {
         visibility: hidden;
     }
     .sidebar.left-sidebar {
-        margin-right: -280px;
         width: 268px;
     }
     .sidebar.right-sidebar {
         float: right;
-        margin: 0 0 0 32px;
     }
     .sticky-active .sticky-block {
         position: fixed;
