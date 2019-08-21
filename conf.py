@@ -321,20 +321,6 @@ epub_copyright = u'2017, OroTeam'
 #epub_tocdup = True
 
 # ORO settings
-
-# Branch name mappings
-#oro_branch_name_mappings = {
-#    'maintenance/2.6': '1.6',
-#    'maintenance/3.1': '3.1',
-#    'epic/DOC-1216_doc_2.6': '1.6',
-#    'epic/DOC-1216_doc_3.1': '3.1'
-#}
-
-# Additional context which will be injected to template engine
-#html_context = {
-#    'oro_branch_name_mappings': oro_branch_name_mappings
-#}
-
 # Sphinx versioning (scv) config
 # Mappings of git branches and directory name for this branch in build directory
 scv_version_dirs = {
