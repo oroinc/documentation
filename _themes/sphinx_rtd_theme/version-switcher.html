@@ -1,4 +1,7 @@
-{%- if versions and versions|length > 1 %}
+{% if versions %}
+{% set tags = versions.tags %}
+{% set branches = versions.branches %}
+{% if (tags|length + branches|length) > 1 %}
 <strong class="doc-title">Documentation Version</strong>
 <div class="documentation-version-switcher">
     <div class="version">{{ oro_current_version }}{{ ' (current)' if scv_root_ref == current_version }}</div>
@@ -15,4 +18,5 @@
         {%- endif %}
     </ul>
 </div>
+{%- endif %}
 {%- endif %}
