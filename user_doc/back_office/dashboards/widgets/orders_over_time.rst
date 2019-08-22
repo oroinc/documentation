@@ -5,7 +5,7 @@ Orders Over Time
 
 The Orders Over Time widget gives you a quick overview of Magento orders.
 
-.. .. image:: /user_guide/img/widgets/orders_over_time.png
+.. image:: /user_guide/img/widgets/orders_over_time.png
    :alt: Orders over time
 
 .. note:: For how to add widgets to the dashboard and manage them, see the relevant topics:

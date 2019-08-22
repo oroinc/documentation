@@ -5,7 +5,7 @@ Revenue Over Time
 
 The Revenue Over Time widget gives you a quick overview of Magento revenues.
 
-.. .. image:: /user_guide/img/widgets/revenue_over_time.png
+.. image:: /user_guide/img/widgets/revenue_over_time.png
    :alt: Revenue over time
 
 
