@@ -71,11 +71,16 @@ def get_toctree_for(builder, docname, **kwargs):
     toctrees = []
     documentation_set = docname.split('/')[0]
     for toctreenode in doctree.traverse(addnodes.toctree):
+        entries_to_remove = []
         for e in toctreenode['entries']:
             ref = str(e[1])
             ref_set = ref.split('/')[0]
             if ref_set != documentation_set:
-                toctreenode['entries'].remove(e)
+                entries_to_remove.append(e)
+
+        for entry in entries_to_remove:
+            toctreenode['entries'].remove(entry)
+
         toctree = env.resolve_toctree(docname, builder, toctreenode, **kwargs)
         if toctree is not None:
             toctrees.append(toctree)
