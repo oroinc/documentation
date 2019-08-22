@@ -23,7 +23,7 @@ To change the default product collections indexation frequency:
 
 3. The following page opens.
 
-.. image:: /user_doc/img/system/config_commerce/product/product_collections_configuration.png
+                                 .. image:: /user_doc/img/system/config_commerce/product/product_collections_configuration.png
 
 Here, you can set the indexation cron schedule and the mass action limit.
 

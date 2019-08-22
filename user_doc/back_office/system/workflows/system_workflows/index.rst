@@ -45,6 +45,8 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
 
 * :ref:`Unqualified Sales Lead Workflow <system--workflows--unqualified-sales-lead-workflow>`
 
+* :ref:`Contact Request Workflow <admin-guide--workflows--contact-request-wf>`
+
 .. toctree::
    :maxdepth: 1
 
@@ -57,6 +59,7 @@ The following system workflows are provided out-of-the-box in the Oro applicatio
    rfq_frontoffice
    task_flow
    unqualified_lead
+   contact_request_wf
 
 .. include:: /include/include_images.rst
    :start-after: begin
