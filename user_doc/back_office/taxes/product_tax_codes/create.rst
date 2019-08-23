@@ -19,7 +19,7 @@ To create a new product tax code:
 
 .. hint::
 
-   Now that the product tax code is created, link it to `a product <../link-a-tax-code-to-a-product>`_ and `create a tax rule <../tax-rules/create>`_ that associates the product tax code with the tax rate or tax exemption (zero rate).
+   Now that the product tax code is created, link it to :ref:`a product <user-guide--taxes--link-a-tax-code_to_a_product>` and :ref:`create a tax rule <tax-rules-create>` that associates the product tax code with the tax rate or tax exemption (zero rate).
 
 **Related Articles**
 

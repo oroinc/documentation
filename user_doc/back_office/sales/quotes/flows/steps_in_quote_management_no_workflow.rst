@@ -97,7 +97,7 @@ To indicate that the quote's validity period is over from the quote details page
 
    .. image:: /user_doc/img/sales/quotes/quotes_edit1.png
 
-#. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See `Create a Quote <create>`_ section for detailed information on the available options.
+#. Update the **Quote General Information**, **Line Items**, **Shipping Address**, or **Shipping Information** sections. See :ref:`Create a Quote <user-guide--quotes--create>` section for detailed information on the available options.
 #. Click **Save** on the top right of the page.
 
 The quote is updated.
