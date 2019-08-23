@@ -6,7 +6,6 @@ Integrations
 Learn how to enable and setup the integration between your Oro application and Google, MS Exchange, MS Outlook, dotmailer.
 
 * :ref:`Google Settings <admin-configuration-integrations-google>`
-* :ref:`MS Exchange Settings <admin-configuration-ms-exchange-integration-settings>`
 * :ref:`CRM and Commerce <user-guide-commerce-integration>`
 * :ref:`MS Outlook Settings <admin-configuration-ms-outlook-integration-settings--oro-side>`
 * :ref:`dotmailer Settings <admin-configuration-dotmailer-integration-settings>`
@@ -16,7 +15,6 @@ Learn how to enable and setup the integration between your Oro application and G
    :hidden:
 
    google_integration_settings
-   ms_exchange_settings
    commerce_integration
    outlook_settings_oro
    dotmailer_integration_settings

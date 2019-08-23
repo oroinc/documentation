@@ -17,12 +17,12 @@ To enable the workflow:
 1. Navigate to **System > Workflows** in the main menu.
 2. Hover over the more options menu at the end of the workflow row in the table of all workflows, and click |IcActivate| **Activate**.
 
-    .. image:: /user_guide/img/workflows/contact_request_activate_from_grid.png
+    .. image:: /user_doc/img/system/workflows/contact_request/contact_request_activate_from_grid.png
        :alt: Activate contact request workflow from that table of all workflows
 
    Alternatively, click once on the workflow to open its page, and on the workflow page click |IcActivate| **Activate** on the top right.
 
-   .. image:: /user_guide/img/workflows/contact_request_wf_page.png
+   .. image:: /user_doc/img/system/workflows/contact_request/contact_request_wf_page.png
       :alt: Activate contact request workflow from its page
 
 When the workflow is enabled, the following transitions are available on the contact request page:
@@ -31,7 +31,7 @@ When the workflow is enabled, the following transitions are available on the con
 * **Convert to Opportunity**
 * **Resolve**
 
-.. image:: /user_guide/img/workflows/contact_request_page_wf_enabled.png
+.. image:: /user_doc/img/system/workflows/contact_request/contact_request_page_wf_enabled.png
    :alt: The transitions of the contact request workflow on the contact request page 
 
 Deactivate the Workflow
@@ -46,7 +46,7 @@ To deactivate the workflow:
 
 When the workflow is disabled, the Contact Request workflow transitions are absent from the contact request page. 
 
-.. image:: /user_guide/img/workflows/contact_request_page_wf_disabled.png
+.. image:: /user_doc/img/system/workflows/contact_request/contact_request_page_wf_disabled.png
    :alt: Contact request page when contact request worklow is disabled
 
 **Related Topics**
@@ -54,5 +54,5 @@ When the workflow is disabled, the Contact Request workflow transitions are abse
 * :ref:`Contact Requests <user-guide-activities-requests>`
 * :ref:`Workflow Management <doc--system--workflow-management>`
 
-.. include:: /img/buttons/include_images.rst
+.. include:: /include/include_images.rst
    :start-after: begin

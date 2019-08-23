@@ -108,7 +108,5 @@ To configure a widget, click |IcSettings| **Configure** in the widget header and
    recently_accessed_accounts
    recently_accessed_contacts
    todays_calendar
-   orders_over_time
-   revenue_over_time
 
 
