@@ -29,7 +29,7 @@ In the Display section, you can configure the following display options for a pa
    +====================+====================================================================================================================================+
    | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                       |
    |                    |                                                                                                                                    |
-   |                    | .. image:: /user/img/system/config_system/user_configuration_showemailsuserbar.png                                             |
+   |                    | .. image:: /user/img/system/config_system/user_configuration_showemailsuserbar.png                                                 |
    |                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
    |                    |                                                                                                                                    |
    +--------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -53,7 +53,7 @@ In the Display section, you can configure the following display options for a pa
    +---------------------------+----------------------------------------------------------------------------------------------------------------+
    | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
    |                           |                                                                                                                |
-   |                           | .. image:: /user/img/system/config_system/user_configuration_pagination.png                                |
+   |                           | .. image:: /user/img/system/config_system/user_configuration_pagination.png                                    |
    |                           |    :alt: A record pagination sample                                                                            |
    |                           |                                                                                                                |
    +---------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -80,7 +80,7 @@ In the Display section, you can configure the following display options for a pa
    +=======================+===========================================================================================================+
    | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
    |                       |                                                                                                           |
-   |                       | .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png                              |
+   |                       | .. image:: /user/img/system/config_system/user_configuration_wysiwyg.png                                  |
    |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
    |                       |                                                                                                           |
    +-----------------------+-----------------------------------------------------------------------------------------------------------+

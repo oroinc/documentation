@@ -6,7 +6,7 @@ Create Simple and Configurable Products
 Product Type: Simple vs Configurable
 ------------------------------------
 
-.. include:: /user_doc/back_office/products/products/create/simple_vs_config.rst
+.. include:: /user/back_office/products/products/create/simple_vs_config.rst
    :start-after: configurable_product_begin
    :end-before: configurable_product_end
 
@@ -15,7 +15,7 @@ Product Type: Simple vs Configurable
 Create a Simple Product
 -----------------------
 
-.. include:: /user_doc/back_office/products/products/create/create_simple.rst
+.. include:: /user/back_office/products/products/create/create_simple.rst
    :start-after: start_product_create_simple
    :end-before: stop_product_create_simple
 
@@ -24,7 +24,7 @@ Create a Simple Product
 Create a Configurable Product
 -----------------------------
 
-.. include:: /user_doc/back_office/products/products/create/create_complex.rst
+.. include:: /user/back_office/products/products/create/create_complex.rst
    :start-after: start_product_create_configurable
    :end-before: stop_product_create_configurable
 

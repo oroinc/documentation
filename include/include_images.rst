@@ -361,19 +361,19 @@ Images
 
    <i class="fa fa-globe fa-lg" aria-hidden="true"></i>
 
-.. |SectionDropD| image:: /user_doc/img/dashboards/section_dd.png
+.. |SectionDropD| image:: /user/img/dashboards/section_dd.png
    :align: middle
 
-.. |HeaderDropD| image:: /user_doc/img/dashboards/header_dd.png
+.. |HeaderDropD| image:: /user/img/dashboards/header_dd.png
    :align: middle
 
-.. |WidgetList| image:: /user_doc/img/dashboards/widget_list.png
+.. |WidgetList| image:: /user/img/dashboards/widget_list.png
    :align: middle
 
-.. |ManageWidget| image:: /user_doc/img/dashboards/manage_widget.png
+.. |ManageWidget| image:: /user/img/dashboards/manage_widget.png
    :align: middle
 
-.. |DActionIcons| image:: /user_doc/img/dashboards/dashboard_action_icons.png
+.. |DActionIcons| image:: /user/img/dashboards/dashboard_action_icons.png
    :align: middle
 
 .. |BGotoPage| raw:: html
@@ -384,7 +384,7 @@ Images
 
    <i class="fa fa-times" aria-hidden="true"></i>
 
-.. |InstallPack| image:: /user_doc/img/extension/install_package.png
+.. |InstallPack| image:: /user/img/extension/install_package.png
    :align: middle
 
 .. |IcSendEmail| raw:: html

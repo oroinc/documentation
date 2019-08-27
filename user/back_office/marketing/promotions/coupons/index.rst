@@ -129,28 +129,28 @@ The page contains the list of all available coupons in your Oro application. Fro
 Manage Coupons in Orders
 ------------------------
 
-.. include:: /user_doc/back_office/marketing/promotions/coupons/manage_coupons_in_orders.rst
+.. include:: /user/back_office/marketing/promotions/coupons/manage_coupons_in_orders.rst
    :start-after: begin_edit_in_order_body
    :end-before: finish_edit_in_order_body
 
 Create a Sample Coupon
 ----------------------
 
-.. include:: /user_doc/back_office/marketing/promotions/coupons/sample_coupon.rst
+.. include:: /user/back_office/marketing/promotions/coupons/sample_coupon.rst
    :start-after: begin
    :end-before: finish
 
 Export Coupons
 --------------
 
-.. include:: /user_doc/back_office/marketing/promotions/coupons/export_coupons.rst
+.. include:: /user/back_office/marketing/promotions/coupons/export_coupons.rst
    :start-after: begin
    :end-before: finish
 
 Import Coupons
 --------------
 
-.. include:: /user_doc/back_office/marketing/promotions/coupons/import_coupons.rst
+.. include:: /user/back_office/marketing/promotions/coupons/import_coupons.rst
    :start-after: start
    :end-before: finish
 

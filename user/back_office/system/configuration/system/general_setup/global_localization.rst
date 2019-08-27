@@ -8,7 +8,7 @@ Localization
 
 In the system configuration, you can define the localization options, such as system locale, primary location, address formatting method, system timezone, calendar year settings, temperature and wind speed units on the map. Furthermore, you can set the default language of the UI elements displayed in the storefront.
 
-.. include:: /user_doc/concept_guides/localization/content_translation.rst
+.. include:: /user/concept_guides/localization/content_translation.rst
    :start-after: begin_content_translation
    :end-before: finish_content_translation
 

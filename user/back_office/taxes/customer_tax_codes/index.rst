@@ -12,7 +12,7 @@ The sections below provide guidance on managing customer tax codes, using them t
 Create a Customer Tax Code
 --------------------------
 
-.. include:: /user_doc/back_office/taxes/customer_tax_codes/create.rst
+.. include:: /user/back_office/taxes/customer_tax_codes/create.rst
   :start-after: begin
   :end-before: stop
 
@@ -34,7 +34,7 @@ Hover over the |IcMore| **More Options** menu to the right of the item and click
 View Customer Tax Code Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/taxes/customer_tax_codes/view.rst
+.. include:: /user/back_office/taxes/customer_tax_codes/view.rst
    :start-after: begin
    :end-before: stop
 
@@ -54,7 +54,7 @@ To edit the customer tax code value and description:
 Link a Tax Code to a Customer or a Customer Group
 -------------------------------------------------
 
-.. include:: /user_doc/back_office/taxes/customer_tax_codes/link_a_tax_code_to_a_customer.rst
+.. include:: /user/back_office/taxes/customer_tax_codes/link_a_tax_code_to_a_customer.rst
    :start-after: begin
    :end-before: stop
 

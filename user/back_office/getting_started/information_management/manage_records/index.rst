@@ -14,7 +14,7 @@ This topic describes the common actions you can perform to most records, such as
 View Records
 ------------
 
-.. include:: /user_doc/back_office/getting_started/information_management/manage_records/view.rst
+.. include:: /user/back_office/getting_started/information_management/manage_records/view.rst
    :start-after: start_view
    :end-before: finish_view
 
@@ -25,7 +25,7 @@ View Records
 Edit Records
 ------------
 
-.. include:: /user_doc/back_office/getting_started/information_management/manage_records/edit.rst
+.. include:: /user/back_office/getting_started/information_management/manage_records/edit.rst
    :start-after: start_edit
    :end-before: finish_edit
 
@@ -37,7 +37,7 @@ Edit Records
 Delete Records
 --------------
 
-.. include:: /user_doc/back_office/getting_started/information_management/manage_records/delete.rst
+.. include:: /user/back_office/getting_started/information_management/manage_records/delete.rst
    :start-after: start_delete
    :end-before: finish_delete
 

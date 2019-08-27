@@ -11,4 +11,4 @@ Explore comprehensive knowledge base and learn OroCommerce, OroCRM and OroPlatfo
    :titlesonly:
    :maxdepth: 6
 
-   user_doc/index
+   user/index

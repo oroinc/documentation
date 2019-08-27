@@ -207,7 +207,7 @@ The following features are available within the **Recent Emails** list:
 Recent Emails Widget
 --------------------
 
-.. include:: /user_doc/back_office/dashboards/widgets/recent_emails.rst
+.. include:: /user/back_office/dashboards/widgets/recent_emails.rst
    :start-after: start_emails_widget
    :end-before: finish_emails_widget
 

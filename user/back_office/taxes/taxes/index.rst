@@ -10,14 +10,14 @@ Tax or tax rate is a particular percentage of tax with unique identifier and des
 Create a Tax Rate
 -----------------
 
-.. include:: /user_doc/back_office/taxes/taxes/create.rst
+.. include:: /user/back_office/taxes/taxes/create.rst
    :start-after: begin
    :end-before: stop
 
 Manage Tax Rates
 ----------------
 
-.. include:: /user_doc/back_office/taxes/taxes/viewlist.rst
+.. include:: /user/back_office/taxes/taxes/viewlist.rst
    :start-after: begin
    :end-before: stop
 
@@ -53,13 +53,13 @@ You can edit the association of the tax rate with other tax components when :ref
 Export Tax Rates
 ----------------
 
-.. include:: /user_doc/back_office/taxes/taxes/export_tax_rates.rst
+.. include:: /user/back_office/taxes/taxes/export_tax_rates.rst
    :start-after: start
 
 Import Tax Rates
 ----------------
 
-.. include:: /user_doc/back_office/taxes/taxes/import_tax_rates.rst
+.. include:: /user/back_office/taxes/taxes/import_tax_rates.rst
    :start-after: start
 
 **Related Articles**

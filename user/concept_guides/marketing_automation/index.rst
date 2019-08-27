@@ -32,7 +32,7 @@ In Oro application, you can use the following marketing tools:
 Via dotmailer
 -------------
 
-.. include:: /user_doc/back_office/system/integrations/dotmailer/index.rst
+.. include:: /user/back_office/system/integrations/dotmailer/index.rst
    :start-after: begin_include
    :end-before: finish_include
 

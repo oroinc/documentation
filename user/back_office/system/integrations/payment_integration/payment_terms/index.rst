@@ -48,14 +48,14 @@ Next, set up a :ref:`payment rule <sys--payment-rules>` that enables this paymen
 Create a Payment Term
 ---------------------
 
-.. include:: /user_doc/back_office/sales/payment_terms/index.rst
+.. include:: /user/back_office/sales/payment_terms/index.rst
    :start-after: begin_payment_term
    :end-before: finish_payment_term
 
 Link a Payment Term to a Customer Based on Their Sales Agreement
 ----------------------------------------------------------------
 
-.. include:: /user_doc/back_office/sales/payment_terms/index.rst
+.. include:: /user/back_office/sales/payment_terms/index.rst
    :start-after: begin_link_payment_term
    :end-before: finish_link_payment_term
 

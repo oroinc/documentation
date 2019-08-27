@@ -32,7 +32,7 @@ To configure the integration between your Oro Enterprise application and MS Outl
 Check Hardware and System Requirements
 --------------------------------------
 
-.. include:: /user_doc/concept_guides/outlook/requirements.rst
+.. include:: /user/concept_guides/outlook/requirements.rst
    :start-after: begin_requirements
    :end-before: finish_requirements
 
@@ -62,14 +62,14 @@ To download the add-in:
 Connect MS Outlook Add-in to Oro Instance
 -----------------------------------------
 
-.. include:: /user_doc/concept_guides/outlook/connect.rst
+.. include:: /user/concept_guides/outlook/connect.rst
    :start-after: begin_connect_outlook
    :end-before: finish_connect_outlook
 
 Create Leads, Opportunities, and Cases from Outlook
 ---------------------------------------------------
 
-.. include:: /user_doc/concept_guides/outlook/create_lead_opp_case.rst
+.. include:: /user/concept_guides/outlook/create_lead_opp_case.rst
    :start-after: begin_create_lead_opp_case
    :end-before: finish_create_lead_opp_case
 
@@ -77,14 +77,14 @@ Create Leads, Opportunities, and Cases from Outlook
 Review Mapping Rules Between Oro and Outlook
 --------------------------------------------
 
-.. include:: /user_doc/concept_guides/outlook/mapping.rst
+.. include:: /user/concept_guides/outlook/mapping.rst
    :start-after: begin_mapping
    :end-before: finish_mapping
 
 Review Sync Rules Between Oro and Outlook
 -----------------------------------------
 
-.. include:: /user_doc/concept_guides/outlook/sync_flow.rst
+.. include:: /user/concept_guides/outlook/sync_flow.rst
    :start-after: begin_sync_flow
    :end-before: finish_sync_flow
 

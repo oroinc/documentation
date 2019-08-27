@@ -28,7 +28,7 @@ On behalf of the customer, a salesperson can manage the items in the shopping li
 View Shopping List Summary
 --------------------------
 
-.. include:: /user_doc/back_office/sales/shopping_lists/view.rst
+.. include:: /user/back_office/sales/shopping_lists/view.rst
    :start-after: begin_all
    :end-before: finish_all
 

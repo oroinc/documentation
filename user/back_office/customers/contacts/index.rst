@@ -103,7 +103,7 @@ All contacts available in the system are displayed on the page of all contacts (
 Create an Address
 -----------------
 
-.. include:: /user_doc/back_office/customers/customers/address_book.rst
+.. include:: /user/back_office/customers/customers/address_book.rst
    :start-after: begin
    :end-before: finish
 

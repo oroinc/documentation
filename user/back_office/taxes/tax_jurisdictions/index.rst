@@ -12,14 +12,14 @@ The sections below provide guidance on managing tax jurisdictions and assigning 
 Create a Tax Jurisdiction
 -------------------------
 
-.. include:: /user_doc/back_office/taxes/tax_jurisdictions/create.rst
+.. include:: /user/back_office/taxes/tax_jurisdictions/create.rst
    :start-after: begin
    :end-before: stop
 
 Manage Tax Jurisdictions
 ------------------------
 
-.. include:: /user_doc/back_office/taxes/tax_jurisdictions/viewlist.rst
+.. include:: /user/back_office/taxes/tax_jurisdictions/viewlist.rst
    :start-after: begin
    :end-before: stop
 

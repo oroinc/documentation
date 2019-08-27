@@ -47,7 +47,7 @@ Sample Flow
 
 As an illustration, we are going to proceed through the steps of the Alternative Checkout workflow to see how it works.
 
-.. include:: /user_doc/back_office/system/workflows/system_workflows/checkout.rst
+.. include:: /user/back_office/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_0
    :end-before: finish_checkout_sample_0
 
@@ -59,7 +59,7 @@ As an illustration, we are going to proceed through the steps of the Alternative
 Step 1: Billing Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/system/workflows/system_workflows/checkout.rst
+.. include:: /user/back_office/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_1
    :end-before: finish_checkout_sample_1
 
@@ -69,7 +69,7 @@ Step 1: Billing Information
 Step 2: Shipping Information
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    
-.. include:: /user_doc/back_office/system/workflows/system_workflows/checkout.rst
+.. include:: /user/back_office/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_2
    :end-before: finish_checkout_sample_2
 
@@ -78,7 +78,7 @@ Step 2: Shipping Information
 Step 3: Shipping Method
 ^^^^^^^^^^^^^^^^^^^^^^^
     
-.. include:: /user_doc/back_office/system/workflows/system_workflows/checkout.rst
+.. include:: /user/back_office/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_3
    :end-before: finish_checkout_sample_3
 
@@ -88,7 +88,7 @@ Step 3: Shipping Method
 Step 4: Payment
 ^^^^^^^^^^^^^^^
    
-.. include:: /user_doc/back_office/system/workflows/system_workflows/checkout.rst
+.. include:: /user/back_office/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_4
    :end-before: finish_checkout_sample_4
 
@@ -98,7 +98,7 @@ Step 4: Payment
 Step 5: Order Review
 ^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/system/workflows/system_workflows/checkout.rst
+.. include:: /user/back_office/system/workflows/system_workflows/checkout.rst
    :start-after: start_checkout_sample_alt5
    :end-before: finish_checkout_sample_alt5
 

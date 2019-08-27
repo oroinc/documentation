@@ -17,14 +17,14 @@ The sections below provide guidance on how to create and manage tax rules.
 Create a Tax Rule
 -----------------
 
-.. include:: /user_doc/back_office/taxes/tax_rules/create.rst
+.. include:: /user/back_office/taxes/tax_rules/create.rst
    :start-after: begin
    :end-before: stop
 
 Manage Tax Rules
 ----------------
 
-.. include:: /user_doc/back_office/taxes/tax_rules/viewlist.rst
+.. include:: /user/back_office/taxes/tax_rules/viewlist.rst
    :start-after: begin
    :end-before: stop
 
@@ -60,13 +60,13 @@ To edit the tax rule:
 Export Tax Rules
 ----------------
 
-.. include:: /user_doc/back_office/taxes/tax_rules/export_tax_rules.rst
+.. include:: /user/back_office/taxes/tax_rules/export_tax_rules.rst
    :start-after: start
 
 Import Tax Rules
 ----------------
 
-.. include:: /user_doc/back_office/taxes/tax_rules/import_tax_rules.rst
+.. include:: /user/back_office/taxes/tax_rules/import_tax_rules.rst
    :start-after: start
 
 **Related Articles**

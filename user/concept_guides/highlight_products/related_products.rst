@@ -35,21 +35,21 @@ Configure related products globally, per website and organization.
 Enable Related Products Globally
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/system/configuration/commerce/catalog/global_related_products.rst
+.. include:: /user/back_office/system/configuration/commerce/catalog/global_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
+.. include:: /user/back_office/system/user_management/organizations/org_configuration/commerce/catalog/organization_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 
 Enable Related Products per Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/system/websites/web_configuration/commerce/catalog/website_related_products.rst
+.. include:: /user/back_office/system/websites/web_configuration/commerce/catalog/website_related_products.rst
    :start-after: begin_related_products_body
    :end-before: finish_related_products_body
 

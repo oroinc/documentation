@@ -13,7 +13,7 @@ The sections below provide guidance on managing product tax codes, using them to
 Create a Product Tax Code
 -------------------------
 
-.. include:: /user_doc/back_office/taxes/product_tax_codes/create.rst
+.. include:: /user/back_office/taxes/product_tax_codes/create.rst
    :start-after: begin
    :end-before: stop
 
@@ -31,7 +31,7 @@ Hover over the |IcMore| **More Options** menu to the right of the item and click
 View Product Tax Code Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. include:: /user_doc/back_office/taxes/product_tax_codes/view.rst
+.. include:: /user/back_office/taxes/product_tax_codes/view.rst
    :start-after: begin
    :end-before: stop
 
@@ -51,7 +51,7 @@ To edit the product tax code value and description:
 Link a Tax Code to a Product
 ----------------------------
 
-.. include:: /user_doc/back_office/taxes/product_tax_codes/link_a_tax_code_to_a_product.rst
+.. include:: /user/back_office/taxes/product_tax_codes/link_a_tax_code_to_a_product.rst
    :start-after: begin
    :end-before: stop
 

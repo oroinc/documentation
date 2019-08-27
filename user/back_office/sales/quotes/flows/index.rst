@@ -14,7 +14,7 @@ Simple Quote Management
 
 .. As an illustration, let us see the quote in action and walk through the steps a buyer and a sales manager may follow to communicate or negotiate for the sale:
 
-.. include:: /user_doc/back_office/system/workflows/system_workflows/quote_management_workflow.rst
+.. include:: /user/back_office/system/workflows/system_workflows/quote_management_workflow.rst
    :start-after: start_quote_management_flow
    :end-before: finish_quote_management_flow
 

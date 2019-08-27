@@ -203,7 +203,7 @@ Proceed to create the attribute as described below.
 Import Product Attributes
 -------------------------
 
-.. include:: /user_doc/back_office/products/product_attributes/import_product_attributes.rst
+.. include:: /user/back_office/products/product_attributes/import_product_attributes.rst
    :start-after: start_import
 
 **Related topics**
