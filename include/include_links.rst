@@ -3,7 +3,6 @@
 Links
 =====
 
-
 .. User Documentation
 
 .. begin
