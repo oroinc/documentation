@@ -9,9 +9,8 @@ This section contains a number of detailed how-to topics to help you make the ap
 
 .. hint:: Navigate the left-panel menu to find the content you are interested in or use the search bar above the left-panel menu to find topics quicker.
 
-**Table of Contents**
-
 .. toctree::
+   :hidden:
    :titlesonly:
    :maxdepth: 1
 

@@ -38,6 +38,7 @@ Below is an illustration of the account hierarchy where CRM-related concepts are
    :start-after: begin
 
 .. toctree::
+   :hidden:
    :titlesonly:
    :maxdepth: 1
 

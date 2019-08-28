@@ -5,7 +5,10 @@ Oro application is a flexible application that can be easily custom-tailored to 
 
 The Getting Started guide explains generic concepts and details of OroCRM and OroCommerce basic navigation and use.
 
+.. hint:: Navigate the left-panel menu to find the content you are interested in or use the search bar on the top right to find topics quicker.
+
 .. toctree::
+   :hidden:
    :maxdepth: 2
 
    community_vs_enterprise

@@ -35,8 +35,8 @@ To create a new business customer:
 
    * **Owner** --- Limits the list of users that can manage the customer to users, whose :ref:`roles <user-guide-user-management-permissions>` allow managing business customers assigned to the owner (e.g. the owner, members of the same business unit, system administrator, etc.). By default, the user creating the record is chosen.
    * **Name** --- The name used to refer to the business customer in the system.
-   * **Channel** --- Choose one of active :term:`sales channels <Sales Channel>`, from which OroCRM will get information on this customer.
-   * **Account** --- An :ref:`Account <user-guide-accounts-create>` to which the customer will be assigned. Details of this business customer will then be a part of this account's details.
+   * **Channel** --- Choose one of active sales channels, from which your Oro application will get information on this customer.
+   * **Account** --- An :ref:`account <user-guide-accounts-create>` to which the customer will be assigned. Details of this business customer will then be a part of this account's details.
 
    The rest of the fields are **optional**. The fields are added to the system based on general B2B practices, aims and processes and keep additional details of the customer. The optional fields may be left empty.
 

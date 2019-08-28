@@ -28,9 +28,8 @@ Before you proceed consider watching the following media library tutorials:
   * Enable and disable user accounts.
   * Collect statistics on orders and quotes.
 
-**Table of Contents**
-
 .. toctree::
+   :hidden:
    :titlesonly:
    :maxdepth: 1
 
