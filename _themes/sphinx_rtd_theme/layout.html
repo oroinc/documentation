@@ -15,6 +15,10 @@
   <meta charset="utf-8">
   {{ metatags }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {# Add version meta tag for algolia docsearch #}
+  {% if oro_current_version %}
+      <meta name="docsearch:version" content="{{ oro_current_version }}" />
+  {% endif %}
   {% block htmltitle %}
   <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
   {% endblock %}
