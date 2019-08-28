@@ -4,7 +4,7 @@
 Localization
 ============
 
-Localization is the process of translating and adapting a product for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent , and monetary values as well as the format of names and addresses.
+Localization is the process of translating and adapting a product for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent, and monetary values as well as the format of names and addresses.
 
 Oro application supports localization and provides decent out-of-the-box translation coverage for the most used languages. With out-of-the-box integration to CrowdIn service, the Oro application has live access to the most recent updates from the Oro team and community.
 

@@ -21,14 +21,14 @@ Glossary
       A channel represents a source of customers and customer data, for example a specific shop, an outlet, a web-store, etc.
 
    Account
-     An account represents a person, a company or a group of people you do business activities with.
-     An account aggregates details of all the customer identities assigned to it, providing for a 360-degree view of the customer activity.
+      An account represents a person, a company or a group of people you do business activities with.
+      An account aggregates details of all the customer identities assigned to it, providing for a 360-degree view of the customer activity.
 
    OroCommerce
-      An open source B2B Commerce solution with built in sales interaction tools for a commerce business.
+      An open-source B2B Commerce solution with built in sales interaction tools for a commerce business.
 
    OroCRM
-      An open source CRM with built in marketing automation tools for a commerce business.
+      An open-source CRM with built in marketing automation tools for a commerce business.
    
    Customer 
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent people or businesses you have sold or
@@ -52,7 +52,7 @@ Glossary
       sales activities. 
 
    Tag
-       A non-hierarchical keyword assigned to a record. Can be used for filtering.  
+      A non-hierarchical keyword assigned to a record. Can be used for filtering.
     
    Custom Entity
       An :term:`entity <Entity>` added to the system by a user from the UI.
@@ -173,4 +173,14 @@ Glossary
 
    Tax Jurisdictions
       Tax Jurisdiction is a geographical address of the area that is governed by the same tax laws and regulations, and that requires a dedicated set of tax calculation rules in OroCommerce: the tax rates for taxable/tax-exempt types of customers and products.
+
+   Consent
+      In compliance with the `GDPR <https://eugdpr.org/>`__ in the EU, OroCommerce provides flexible mechanisms for :ref:`collecting and managing customer consents <user-guide--consents>`. Mandatory consents restrict buyers in the storefront from proceeding to the checkout or creating RFQs, unless they accept these consents. Optional consents do not restrict buyers from working with the application and are usually used to retrieve permissions to send them email newsletters, inform about upcoming sales or seasonal discounts, etc.
+
+   Localization
+      Localization is the process of :ref:`translating and adapting a product <doc-user-management-users-configuration-localization>` for a specific country or region. Oro application allows a user to customize the format of date and time, numeric, percent, and monetary values as well as the format of names and addresses.
+
+   Shipping Rule
+      Shipping rules enable shipping methods for the provided destinations and set the customized shipping service price by adding a surcharge per service option or globally for all options of the service provider.
+
 
