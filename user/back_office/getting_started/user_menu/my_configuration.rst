@@ -66,7 +66,7 @@ In the Display section, you can configure the following display options:
 +====================+====================================================================================================================================+
 | Show Recent Emails | Select this check box to display the recent emails on the user bar (they will appear next to the user name).                       |
 |                    |                                                                                                                                    |
-|                    | .. image:: /user/img/getting_started/user_menu/user_configuration_showemailsuserbar.png                                        |
+|                    | .. image:: /user/img/getting_started/user_menu/user_configuration_showemailsuserbar.png                                            |
 |                    |    :alt: A recent emails icon displayed on the user bar                                                                            |
 |                    |                                                                                                                                    |
 +--------------------+------------------------------------------------------------------------------------------------------------------------------------+
@@ -90,7 +90,7 @@ In the Display section, you can configure the following display options:
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
 | Record Pagination         | Select this check box to enable the user navigate to the previous or next grid record from a record view page. |
 |                           |                                                                                                                |
-|                           | .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png                           |
+|                           | .. image:: /user/img/getting_started/user_menu/user_configuration_pagination.png                               |
 |                           |    :alt: A record pagination sample                                                                            |
 |                           |                                                                                                                |
 +---------------------------+----------------------------------------------------------------------------------------------------------------+
@@ -116,7 +116,7 @@ In the Display section, you can configure the following display options:
 +=======================+===========================================================================================================+
 | Enable WYSIWYG Editor | Select this check box to enable text formatting tools for emails, notes and comments.                     |
 |                       |                                                                                                           |
-|                       | .. image:: /user/img/getting_started/user_menu/user_configuration_wysiwyg.png                         |
+|                       | .. image:: /user/img/getting_started/user_menu/user_configuration_wysiwyg.png                             |
 |                       |    :alt: A formatting tool bar that enables editing a text for emails, notes, and comments                |
 |                       |                                                                                                           |
 +-----------------------+-----------------------------------------------------------------------------------------------------------+
@@ -206,7 +206,7 @@ Click **Check Connection/Retrieve Folders** to check whether the specified synch
 +======================+====================================================================================================================================================================================================+
 | Default Reply Button | Select which button will be default for replying to emails: **Reply** or **Reply All**. Other button will continue be available in the **Reply** menu, it will just not be on the top of the list. |
 |                      |                                                                                                                                                                                                    |
-|                      | .. image:: /user/img/getting_started/user_menu/reply_selector.png                                                                                                                              |
+|                      | .. image:: /user/img/getting_started/user_menu/reply_selector.png                                                                                                                                  |
 |                      |    :alt: Selecting the default button for replying to emails                                                                                                                                       |
 |                      |                                                                                                                                                                                                    |
 +----------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
