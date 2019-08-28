@@ -170,6 +170,12 @@ html_theme_options = {
 # template names.
 html_additional_pages = {'index': 'index.html'}
 
+# A list of paths that contain extra files not directly related to the documentation, such as robots.txt or .htaccess.
+# Relative paths are taken as relative to the configuration directory. They are copied to the output directory.
+# They will overwrite any existing file of the same name.
+# As these files are not meant to be built, they are automatically excluded from source files.
+html_extra_path = ['robots.txt']
+
 # If false, no module index is generated.
 #html_domain_indices = True
 
