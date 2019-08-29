@@ -20,8 +20,8 @@
   {% endblock %}
 
   {# FAVICON #}
-  {% if favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+  {% if theme_favicon %}
+    <link rel="shortcut icon" href="{{ pathto('_static/' + theme_favicon, 1) }}"/>
   {% endif %}
   {# CANONICAL URL #}
   {% if theme_canonical_url %}
