@@ -142,6 +142,10 @@
   </div>
 
   <div class="content-container">
+    <div class="breadcrumbs-container">
+      {% include "breadcrumbs.html" %}
+    </div>
+
     <div class="three-columns-layout">
       <aside class="sidebar left-sidebar">
         <div class="sidebar-holder sticky-block">
@@ -189,7 +193,6 @@
           {% else %}
           <div class="rst-content">
             {% endif %}
-            {% include "breadcrumbs.html" %}
             <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
               {%- block document %}
               <div itemprop="articleBody">
@@ -219,10 +222,12 @@
   </script>
 
   <script type="text/javascript">
-    var topIndent = ($('.header-container').height() + parseInt($('.three-columns-layout').css('padding-top')));
+    var topIndent;
 
     $(document).ready(function(){
+      topPosition();
       stickyHeader();
+      stickyBreadcrumbs();
       $('.scrollbar-outer').scrollbar();
       stickyBlock();
       mobileCollapse();
@@ -241,15 +246,29 @@
 
     $(window).scroll(function(){
       stickyHeader();
+      stickyBreadcrumbs();
       stickyBlock();
       backToTop();
     });
 
     $(window).resize(function(){
+      topPosition();
       stickyHeader();
+      stickyBreadcrumbs();
       stickyBlock();
       mobileCollapse();
+      scrollSpy();
     });
+
+    function topPosition() {
+      if ($(window).prop('innerWidth') > 767) {
+        topIndent = ($('.header-container').height() + parseInt($('.content-container').css('padding-top')) + 5)
+      }
+
+      if ($(window).prop('innerWidth') > 1199) {
+        topIndent = ($('.header-container').height() + $('.breadcrumbs').outerHeight() + 10);
+      }
+    }
 
     function isLeftSidebarScrolled() {
       if ($('.left-sidebar').length > 0) {
@@ -319,6 +338,42 @@
       }
     }
 
+
+    // sticky functional for breadcrumbs
+    function stickyBreadcrumbs() {
+      var breadcrumbsContainer = $('.breadcrumbs-container'),
+              contentContainer = $('.content-container'),
+              mainColumn = $('.main-column');
+
+      if (breadcrumbsContainer.length > 0) {
+        if ($(window).prop('innerWidth') < 768) {
+          breadcrumbsContainer
+                  .removeClass('fixed shadow-active')
+                  .removeAttr('style');
+          contentContainer.removeAttr('style');
+          mainColumn.removeAttr('style');
+        } else {
+          breadcrumbsContainer
+                  .addClass('fixed')
+                  .css({'top' : $('.header-container').height()});
+
+          if($(window).scrollTop() > 0){
+            breadcrumbsContainer.addClass('shadow-active');
+          } else {
+            breadcrumbsContainer.removeClass('shadow-active');
+          }
+        }
+
+        if ($(window).prop('innerWidth') > 1199){
+          contentContainer.css('padding-top', 0);
+          mainColumn.css({'padding-top' : $('.breadcrumbs').outerHeight()});
+        } else {
+          contentContainer.css({'padding-top' : $('.breadcrumbs').outerHeight() + 10});
+          mainColumn.css({'padding-top' : 0});
+        }
+      }
+    }
+
     // sticky functional for sidebars
     function stickyBlock() {
       if ($('.sticky-block').length > 0){
@@ -335,7 +390,7 @@
                     sidebarCurrent = currentSticky.parent(),
                     bodyTopPadding = $('.header-container').height(),
 //                    sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')),
-                    heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
+                    heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt($('.content-container').css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
                     heightWithFooter = scrollPos + $(window).height() - footerPos;
 
             if (currentPosition >= (scrollPos + $(window).height())) {
@@ -399,9 +454,7 @@
 
     // smooth scroll on click
     var smoothScroll = function (elem) {
-      $(elem).on('click', function (e) {
-        e.preventDefault();
-
+      $(elem).on('click', function () {
         $('html,body').stop().animate({
           scrollTop: 0
         })
@@ -446,7 +499,7 @@
     }
 
     var smoothScrollTop = function (element, topPosition) {
-      $(element).click(function(e){
+      $(element).click(function(){
         var href = $(this).attr("href"),
                 currentOffset;
 
@@ -461,7 +514,6 @@
         $('html, body').stop().animate({
           scrollTop: offsetTop
         });
-        e.preventDefault();
       });
     };
   </script>

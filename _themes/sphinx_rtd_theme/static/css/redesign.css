@@ -70,6 +70,7 @@ a:focus {
     position: relative;
     padding: 15px 56px 18px;
     overflow: hidden;
+    margin-left: 1px;
 }
 .rst-content .admonition.note {
     border-left: 3px solid #efce4a;
@@ -712,7 +713,7 @@ body {
 .three-columns-layout {
     margin: 0 auto;
     max-width: 1600px;
-    padding: 26px 15px 30px;
+    padding: 20px 15px 30px;
     position: relative;
     overflow: hidden;
 }
@@ -964,8 +965,12 @@ body {
     overflow: hidden;
     background: #b84926;
 }
+.breadcrumbs-container {
+    padding: 0 15px;
+    background: #fff;
+}
 .breadcrumbs {
-    margin: 0 0 30px;
+    padding: 20px 0 0;
 }
 .wy-breadcrumbs {
     font-size: 12px;
@@ -1267,8 +1272,11 @@ body {
     .sidebar .scrollbar-outer {
         max-height: none !important;
     }
-    .sideba .scrollbar-outer > .scroll-element.scroll-y {
+    .sidebar .scrollbar-outer > .scroll-element.scroll-y {
         display: none !important;
+    }
+    .content-container {
+        padding-top: 0 !important;
     }
 }
 
@@ -1330,8 +1338,46 @@ body {
     .additional-list h2 .opener-indicator {
         display: none;
     }
+    .breadcrumbs-container {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .breadcrumbs-container.fixed {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+    .breadcrumbs-container.shadow-active .breadcrumbs:before,
+    .breadcrumbs-container.shadow-active .breadcrumbs:after {
+        width: 50%;
+    }
+    .breadcrumbs {
+        padding: 26px 0 6px;
+        position: relative;
+    }
+    .breadcrumbs:before,
+    .breadcrumbs:after {
+        content: '';
+        height: 1px;
+        width: 0;
+        position: absolute;
+        top: 100%;
+        background: #cecece;
+        transition: width 0.3s ease;
+    }
+    .breadcrumbs:before {
+        right: 50%;
+    }
+    .breadcrumbs:after {
+        left: 50%;
+    }
+    .three-columns-layout {
+        padding-top: 0;
+    }
     .three-columns-layout .main-column,
-    .sidebar.right-sidebar {
+    .sidebar.right-sidebar{
         margin: 0 0 0 280px;
     }
     .three-columns-layout .main-column {
@@ -1579,6 +1625,9 @@ body {
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .breadcrumbs-container {
+        margin-bottom: 10px;
+    }
     .sidebar.left-sidebar .sidebar-holder {
         width: 250px;
     }
@@ -1595,6 +1644,11 @@ body {
         top: auto !important;
         transition: none !important;
     }
+    .sidebar-holder.sticky-desktop-only {
+        box-shadow: none;
+        padding: 0;
+        background: none;
+    }
     .sticky-desktop-only .scrollbar-outer {
         max-height: none !important;
     }
@@ -1603,8 +1657,25 @@ body {
     .page-header .logo {
         margin-right: -100%;
     }
+    .breadcrumbs-container {
+        background: none;
+        padding-top: 0;
+        height: 0;
+    }
+    .breadcrumbs {
+        background: #fff;
+        padding-top: 30px;
+    }
     .three-columns-layout .main-column {
         margin: 0 300px;
+    }
+    .breadcrumbs {
+        margin: 0 295px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .three-columns-layout {
+        padding-top: 26px;
     }
     .sidebar {
         width: 268px;
@@ -1617,11 +1688,15 @@ body {
     }
     .sidebar.right-sidebar {
         float: right;
+        margin: 0;
     }
     .sticky-active .sticky-block {
         position: fixed;
     }
     .sidebar-holder {
         width: 268px;
+    }
+    .main-column {
+        padding-top: 57px;
     }
 }
