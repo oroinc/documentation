@@ -78,6 +78,10 @@ a:focus {
 .rst-content .admonition.hint {
     border-left: 3px solid #31ba7b;
 }
+.rst-content .admonition.hint ul,
+.rst-content .admonition.hint ol {
+    clear: both;
+}
 .rst-content .admonition.important {
     border-left: 3px solid #de1f26;
 }
@@ -126,7 +130,11 @@ a:focus {
     border-width: 0 0 0 3px;
     padding: 15px 0;
     overflow-x: auto;
-    margin: 0 0 24px 0;
+    margin: 0 0 24px;
+}
+.rst-content .admonition pre.literal-block,
+.rst-content .admonition div[class*='highlight'] {
+    padding: 8px 0;
 }
 .rst-content pre.literal-block div[class*='highlight'],
 .rst-content div[class*='highlight'] div[class*='highlight'] {
