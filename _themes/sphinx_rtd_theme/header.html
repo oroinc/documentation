@@ -5,6 +5,9 @@
         <img width="137" src="{{ pathto('_static/images/Oro-Docs-logo.svg', 1) }}" alt="ORO Documentation">
       </a>
     </strong>
+    <div class="header-search">
+      {% include "searchbox.html" %}
+    </div>
     <button type="button" class="mobile-nav-opener js-opener">
       <span class="icon" aria-hidden="true"></span>
       <span class="sr-text">Open navigation</span>
@@ -19,9 +22,7 @@
           <img src="{{ pathto('_static/images/Oro-OLogo.png', 1) }}" alt="Oro Inc">
         </a>
       </div>
-      <div class="header-search">
-        {% include "searchbox.html" %}
-      </div>
+
       <nav id="navigation" class="top-navigation">
         <ul>
 <!--          <li class="menu-item-home"><a href="{{ pathto('user/index') }}">USERS</a></li>-->
@@ -52,6 +53,26 @@
         $('body').removeClass('mobile-nav-active');
       }
       $('.mobile-navigation-drop').css({"transition" : "none"})
-    })
+    });
+
+    var searchBox = $('.header-search'),
+            nav = $('.mobile-navigation-drop .top-navigation');
+
+    if ($(window).prop('innerWidth') < 480) {
+      if ($('.header-holder > .header-search').length) {
+        nav.before(searchBox);
+      }
+    }
+    $(window).resize(function () {
+      if ($(window).prop('innerWidth') < 480) {
+        if ($('.header-holder > .header-search').length) {
+          nav.before(searchBox);
+        }
+      } else {
+        if($('.mobile-navigation-drop .header-search').length){
+          $('.page-header .logo').after(searchBox);
+        }
+      }
+    });
   </script>
 </header>

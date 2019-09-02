@@ -260,9 +260,6 @@ body {
 .header-search .search-opener i {
     margin: 2px 10px 0 0;
 }
-#searchbox {
-    margin: 0 0 20px;
-}
 .header-search .search-container {
     position: relative;
     border: 1px solid #e8e6e6;
@@ -380,7 +377,6 @@ body {
 }
 .header-search .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion.suggestion-layout-simple,
 .header-search .algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
-    /*background: rgba(223, 144, 38, 0.2);*/
     background: none;
 }
 .header-search .algolia-autocomplete .algolia-docsearch-suggestion--title {
@@ -836,7 +832,6 @@ body {
 .wy-menu li.toctree-l3.current > ul,
 .wy-menu li.toctree-l4 > ul,
 .wy-menu li.toctree-l4.current > ul{
-    /*padding: 9px 0 0 24px;*/
     padding: 3px 0 0 15px;
 }
 .wy-menu li.toctree-l5 > ul,
@@ -846,7 +841,6 @@ body {
 .wy-menu li.toctree-l4,
 .wy-menu li.toctree-l5,
 .wy-menu li.toctree-l6 {
-    /*padding: 0 0 9px;*/
     padding: 3px 0;
 }
 .wy-menu li.toctree-l4:last-child,
@@ -860,37 +854,13 @@ body {
 .wy-menu li.toctree-l4.current li.toctree-l5 > a,
 .wy-menu li.toctree-l5 li.toctree-l6 > a,
 .wy-menu li.toctree-l5.current li.toctree-l6 > a{
-    /*padding: 0;*/
-    /*margin: 0 0 0 9px;*/
     padding: 0 0 0 10px;
 }
-/*.wy-menu li.toctree-l3.current li.toctree-l4 > a.current:before,*/
-/*.wy-menu li.toctree-l3.current li.toctree-l4 > a:hover:before,*/
-/*.wy-menu li.toctree-l4.current li.toctree-l5 > a.current:before,*/
-/*.wy-menu li.toctree-l4.current li.toctree-l5 > a:hover:before,*/
-/*.wy-menu li.toctree-l5.current li.toctree-l6 > a.current:before,*/
-/*.wy-menu li.toctree-l5.current li.toctree-l6 > a:hover:before{*/
-    /*background: #b84926;*/
-/*}*/
 .wy-menu li.toctree-l3.current li.toctree-l4 > a.current,
 .wy-menu li.toctree-l4.current li.toctree-l5 > a.current,
 .wy-menu li.toctree-l5.current li.toctree-l6 > a.current {
     color: #b84926;
 }
-/*.wy-menu li.toctree-l3.current li.toctree-l4 > a:before,*/
-/*.wy-menu li.toctree-l4.current li.toctree-l5 > a:before,*/
-/*.wy-menu li.toctree-l5.current li.toctree-l6 > a:before {*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*left: -8px;*/
-    /*top: 8px;*/
-    /*width: 3px;*/
-    /*height: 3px;*/
-    /*background: #252525;*/
-    /*border-radius: 50%;*/
-    /*overflow: hidden;*/
-    /*pointer-events: none;*/
-/*}*/
 .wy-menu li span.toctree-expand {
     position: absolute;
     top: 0;
@@ -921,12 +891,10 @@ body {
 .wy-menu li.toctree-l5 > a span.toctree-expand{
     left: -8px;
 }
-
 .wy-table-responsive table td,
 .wy-table-responsive table th {
     white-space: normal;
 }
-
 .contents-table {
     padding: 8px 4px;
     position: relative;
@@ -1235,7 +1203,41 @@ body {
 /*.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -14px; }*/
 .scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -14px; }
 
-
+@media only screen and (max-width: 479px) {
+    #searchbox {
+        display: block !important;
+        margin: 0 0 20px;
+    }
+    .header-search .search-container {
+        border-radius: 6px;
+    }
+}
+@media only screen and (min-width: 480px) {
+    .page-header .logo {
+        margin-right: 10px;
+    }
+    #searchbox {
+        width: 260px;
+    }
+    .header-search {
+        float: left;
+        margin: 10px 0 0;
+    }
+    .header-search .search_text {
+        padding-left: 40px;
+    }
+    .header-search .search_text,
+    .header-search .icon-submit,
+    .header-search button[type=submit]{
+        height: 38px;
+    }
+    .top-navigation {
+        border-top: 1px solid #e8e6e6;
+    }
+    .header-search .algolia-autocomplete .ds-dropdown-menu {
+        max-width: 360px;
+    }
+}
 @media only screen and (max-width: 767px) {
     .additional-list > li {
         border-top: 1px solid #ccc;
@@ -1308,6 +1310,18 @@ body {
     }
     .header-container.shadow-active {
         box-shadow: 0 2px 10px rgba(133, 133, 133, 0.8);
+    }
+    .page-header .logo {
+        margin-right: 20px;
+    }
+    #searchbox {
+        width: 350px;
+    }
+    .header-search .search_text {
+        padding-left: 50px;
+    }
+    .header-search .algolia-autocomplete .ds-dropdown-menu {
+        max-width: 424px;
     }
     .hero-banner .hero-banner-holder {
         padding-top: 81px;
@@ -1544,12 +1558,6 @@ body {
     .header-search .search-close {
         display: none;
     }
-    #searchbox {
-        display: block !important;
-    }
-    .header-search .search-container {
-        border-radius: 6px;
-    }
     .top-navigation > ul > li {
         border-bottom: 1px solid #e8e6e6;
     }
@@ -1558,33 +1566,23 @@ body {
     }
 }
 @media only screen and (min-width: 980px) {
-    .header-holder {
-        text-align: center;
-    }
-    .header-search {
-        position: absolute;
-        top: 0;
-        right: 0;
-        text-align: left;
-        border-left: 1px solid #e8e6e6;
+    .page-header .logo {
+        margin-right: 15px;
     }
     #searchbox {
-        position: absolute;
-        top: 0;
-        right: 0;
         width: 320px;
-        margin: 0;
-    }
-    .header-search .search-container {
-        padding-right: 70px;
+        display: block;
     }
     .header-search .search_text {
-        height: 58px;
-        padding-right: 5px;
+        height: 38px;
+        padding-right: 15px;
     }
     .header-search .icon-submit,
     .header-search button[type=submit] {
-        height: 58px;
+        height: 38px;
+    }
+    .header-search .search-control {
+        display: none;
     }
     .header-search .algolia-autocomplete .ds-dropdown-menu {
         max-width: 500px;
@@ -1593,16 +1591,16 @@ body {
         max-height: calc(100vh - 80px);
     }
     .top-navigation {
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 15px;
+        border-top: none;
+        float: right;
+        margin: 0 -15px 0 10px;
     }
     .top-navigation > ul > li {
         display: inline-block;
         vertical-align: top;
     }
     .top-navigation a {
-        padding: 5px 32px 0;
+        padding: 5px 13px 0;
         height: 59px;
         line-height: 51px;
     }
@@ -1663,7 +1661,13 @@ body {
 }
 @media only screen and (min-width: 1200px) {
     .page-header .logo {
-        margin-right: -100%;
+        margin-right: 30px;
+    }
+    #searchbox {
+        width: 350px;
+    }
+    .top-navigation a {
+        padding: 5px 32px 0;
     }
     .breadcrumbs-container {
         background: none;
