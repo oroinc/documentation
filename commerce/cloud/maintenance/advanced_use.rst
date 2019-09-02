@@ -191,11 +191,66 @@ Webserver configuration can be modified, as illustrated below:
               - '127.0.0.2'
             deny:
               - 'all'
+        access_policy:
+          'ip':
+            'type'  : 'allow'
+            'allow' :
+              - '127.0.0.1'
+              - '192.168.0.1'
+              - '172.16.0.0/16'
+            'deny'  :
+              - '10.0.0.1'
+          'country':
+            'type'  : 'deny'
+            'allow' :
+              - 'US'
+              - 'CA'
+          'ua':
+            'allow' :
+              - 'GoogleStackdriverMonitoring'
+              - 'Some Custom agent'
+            'deny'  :
+              - 'AcoiRobot'
+              - 'Wget'
+          'uri':
+            'allow' :
+              - '~(^/api/(.*))'
+        limit_whitelist:
+          - '8.8.8.8'
+          - '10.1.0.0/22'
+        limit_whitelist_uri:
+          - '~(^/admin/test/(.*))'
         blackfire_options:
-          agent_enabled: true
-          server_id: '<server-id>'
-          server_token: '<server-token>'
+          agent_enabled : true
+          server_id     : '<server-id>'
+          server_token  : '<server-token>'
+          log_level     : '1'
+          log_path      : '/var/log/blackfire/agent.log'
 
+* **redirects_map** — the hash, where key is an old URL and value is a new URL
+* **locations** — the hash of hashes. Top key is a location name, lower keys are:
+  * `type` — type of the location. Possible values are 'php', 'static', 'rewrite'
+  * `location` — URI of the location. Value may have regular expressions and modifiers as it is used in NginX location directive.
+  * `fastcgi_param` — hash for php-specific custom variables.
+  * `auth_basic_enable` — boolean trigger for HTTP basic authentication.
+  * `auth_basic_userlist` — hash of hashes with user name as a key and mandatory nested keys:
+    * `ensure` — ensure if user is **present** or **absent**.
+    * `password` — plain text user password.
+  * `allow` — array of IP addresses or network masks allowed to access location. Use one record per line or 'any' to allow access from anywhere.
+  * `deny` — array of IP addresses or network masks denied to access location. Use one record per line or 'any' to deny access from anywhere.
+* **access_policy** — the hash of hashes, used to configure Web Application Firewall. Policy type may be set default to 'allow' or 'deny', except user agent policy, which may be only 'allow'.
+  * `ip` — configure access limitations for single IP address or network.
+  * `country` — allow or deny access from some countries using GeoIP database.
+  * `ua` — allow or deny access for specific user agents.
+  * `uri` — set access permissions for specific URI.
+* **limit_whitelist** — Configure IP address/range whitelist for NginX limit_req module.
+* **limit_whitelist_uri** — Configure URI whitelist for NginX limit_req module.
+* **blackfire_options** — hash, used to configure Blackfire agent on environment
+  * `agent_enabled` — boolean trigger for Blackfire installation
+  * `server_id` — Server ID string. Refer your Blackfire account for this value.
+  * `server_token` — Server Token string. Refer your Blackfire account for this value.
+  * `log_level` — blackfire agent log verbosity.
+  * `log_paht` — path to log file location.
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 
