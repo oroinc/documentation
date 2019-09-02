@@ -227,8 +227,8 @@ Webserver configuration can be modified, as illustrated below:
           log_level     : '1'
           log_path      : '/var/log/blackfire/agent.log'
 
-* **redirects_map** — the hash where the key is an old URL and the value is a new URL
-* **locations** — the hash of hashes. The top key is location name, the lower keys are:
+* **redirects_map** — the hash where the key is an old URL, and the value is a new URL
+* **locations** — the hash of hashes. The top key is location name; the lower keys are:
 
    * `type` — location type. Possible values are 'php', 'static', 'rewrite'.
    * `location` — location URI. The value may have regular expressions and modifiers as it is used in the NginX location directive.
@@ -251,11 +251,11 @@ Webserver configuration can be modified, as illustrated below:
 * **limit_whitelist_uri** — configure URI whitelist for NginX limit_req module.
 * **blackfire_options** — the hash used to configure Blackfire agent on environment
 
-   * `agent_enabled` — boolean trigger for Blackfire installation
+   * `agent_enabled` — a boolean trigger for Blackfire installation
    * `server_id` — server ID string. Refer your Blackfire account to this value.
    * `server_token` — server token string. Refer your Blackfire account to this value.
    * `log_level` — Blackfire agent log verbosity.
-   * `log_paht` — path to the log file location.
+   * `log_path` — path to the log file location.
 
 .. _orocloud-maintenance-advanced-use-sanitization-conf:
 
