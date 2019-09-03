@@ -1,5 +1,5 @@
-|IcSystem| System
-=================
+System
+======
 
 The **System** menu of the back-office contains post-install configuration settings of your Oro application. This is the starting point for setting up your application, from application display settings to payment integrations. Before proceeding with application configuration, please review the topics listed below to get a full understanding of general and domain-specific settings, and available configuration levels.
 

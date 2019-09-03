@@ -1,7 +1,7 @@
 .. _user-guide--taxes:
 
-|IcTaxes| Taxes
-===============
+Taxes
+=====
 
 Tax rules help OroCommerce find the correct tax rate that should be used for the products listed in the purchase order by matching the product tax code that indicates:
 
@@ -105,8 +105,6 @@ Finally, create a tax rule that associates the customer tax code, the product ta
 
 .. finish
 
-.. include:: /include/include_images.rst
-   :start-after: begin
 
 .. include:: /include/include_links.rst
    :start-after: begin

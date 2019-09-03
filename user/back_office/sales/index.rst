@@ -1,11 +1,5 @@
-|IcSales|   Sales
-=================
-
-
-
-
-
-
+Sales
+=====
 
 
 .. toctree::
@@ -22,8 +16,5 @@
    price_lists/index
    payment_terms/index
 
-
-.. include:: /include/include_images.rst
-   :start-after: begin
 
 

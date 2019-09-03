@@ -1,8 +1,8 @@
 .. _user-guide--business-intelligence:
 .. _business-intelligence:
 
-|IcDashboards| Dashboard
-========================
+Dashboard
+=========
 
 Dashboard features are all built to give B2B sellers the ability to quickly and easily obtain the relevant data needed to assess business performance.
 
@@ -21,7 +21,5 @@ To learn how to work with dashboards and their widgets, click on the links below
    dashboards
    widgets/index
 
-.. include:: /include/include_images.rst
-   :start-after: begin
 
 

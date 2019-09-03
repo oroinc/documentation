@@ -2,8 +2,8 @@
 .. _user-guide-activities:
 
 
-|IcActivities| Activities
-=========================
+Activities
+==========
 
 Activities are actions that employees of a company perform on a daily basis, be it fulfilling job tasks, communicating with colleagues and customers, or participating in events. In Oro, you can manage all of these activities conveniently and link them together to get a 360-degree view of all communications.
 
@@ -40,7 +40,5 @@ The Activities topic introduces you to the following types of activities:
    calendar_events/index
 
 
-.. include:: /include/include_images.rst
-   :start-after: begin
 
 

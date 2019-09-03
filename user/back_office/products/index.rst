@@ -1,8 +1,8 @@
 .. _doc--products:
 .. _user-guide--products--products:
 
-|IcProducts| Products
-=====================
+Products
+========
 
 OroCommerce enables you to create and manage products in the way that fits specifically your business strategies and requirements. As it may not be obvious where to start working with your product, several dedicated sections have been compiled to help you understand the full picture of creating and managing products, as well as some additional aspects that working with products may involve.
 
@@ -69,5 +69,3 @@ This section provides shortcuts to topics that may be useful for various types o
    product_brands/index
    price_attributes/index
 
-.. include:: /include/include_images.rst
-   :start-after: begin

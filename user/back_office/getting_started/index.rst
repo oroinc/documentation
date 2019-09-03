@@ -1,5 +1,5 @@
-|IcGettingStarted| Getting Started
-==================================
+Getting Started
+================
 
 Oro application is a flexible application that can be easily custom-tailored to meet the specific needs of your business and to make all sales, marketing, support, and administrative activities appear familiar, convenient for your employees, and as a result, efficient.
 
@@ -16,7 +16,4 @@ The Getting Started guide explains generic concepts and details of OroCRM and Or
    user_menu/index
    navigation/index
    information_management/index
-
-.. include:: /include/include_images.rst
-   :start-after: begin
 

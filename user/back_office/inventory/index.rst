@@ -1,7 +1,7 @@
 .. _user-guide--inventory:
 
-|IcInventory| Inventory
-=======================
+Inventory
+=========
 
 Inventory helps you track the availability of your product in one or more warehouses, display it for the buyer and sales people, and automatically adjust it after every operation in the Oro application. You can create one or more warehouses, configure inventory management options, manage product inventory status and track product quantities in every warehouse.
 
@@ -24,9 +24,6 @@ Learn more about warehouses and inventory in the following topics:
 **Related Topic**:
 
 * :ref:`Configure System-wide Inventory <configuration--guide--commerce--inventory>`
-
-.. include:: /include/include_images.rst
-   :start-after: begin
 
 .. include:: /include/include_links.rst
    :start-after: begin

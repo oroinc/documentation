@@ -1,5 +1,5 @@
-|IcCustomers| Customers
-=======================
+Customers
+=========
 
 In the applications where an integration between Commerce and CRM is configured, the Customer menu contains references to entities from both applications:
 
@@ -34,8 +34,6 @@ Below is an illustration of the account hierarchy where CRM-related concepts are
    :width: 50%
    :alt: An illustration of the account hierarchy
 
-.. include:: /include/include_images.rst
-   :start-after: begin
 
 .. toctree::
    :hidden:
