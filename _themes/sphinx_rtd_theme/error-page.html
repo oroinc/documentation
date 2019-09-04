@@ -107,27 +107,25 @@
   <script type="text/javascript" src="{{ pathto('_static/js/jquery.scrollbar.min.js', 1) }}"></script>
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav error-page">
   {% include "gtm-body.html" %}
   {% block extrabody %} {% endblock %}
   <div class="header-container">
     {% include "header.html" %}
-  </div>
-  <div class="content-container">
-    <div class="hero-banner">
-      <div class="hero-banner-holder">
-        <div class="hero-banner-heading">
-          <h1>Welcome to Oro Documentation</h1>
-        </div>
-        <div class="hero-banner-content">
-          <p>Find everything you need to use and develop your Oro business application.</p>
-          <p>Explore comprehensive knowledge base and learn OroCommerce, OroCRM, and OroPlatform features and architecture.</p>
-        </div>
-      </div>
-    </div>
 
+    <div class="header-panel">
+      <div class="header-panel-holder"></div>
+    </div>
+  </div>
+
+  <div class="content-container">
     <div class="section-container">
       <div class="section-container-holder">
+        <div class="page-heading-block">
+          <h1>The page you are looking for does not exist</h1>
+          <p>You may instead browse any of the following resources or use "Search"</p>
+        </div>
+
         {% include "site-links.html" %}
       </div>
     </div>
