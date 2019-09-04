@@ -428,12 +428,12 @@
 
 
     function versionSwitcher() {
-      var versionsSwitcher = $('.switcher-container'),
-              blockSticky = versionsSwitcher.prev('.sticky-block'),
-              sidebarTopIndent = blockSticky.outerHeight() + blockSticky.position().top,
-              currentPosition;
+      var versionsSwitcher = $('.switcher-container');
+      if (versionsSwitcher.length > 0) {
+        var blockSticky = versionsSwitcher.prev('.sticky-block'),
+                sidebarTopIndent = blockSticky.outerHeight() + blockSticky.position().top,
+                currentPosition;
 
-      if (versionsSwitcher.length > 0){
         if ($(window).prop('innerWidth') > 767) {
           currentPosition = $(window).height() - versionsSwitcher.position().top - versionsSwitcher.height() - parseInt($('.content-container').css('padding-top'));
           versionsSwitcher.css('top', sidebarTopIndent);
