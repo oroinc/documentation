@@ -1,5 +1,5 @@
-Business User Documentation
-===========================
+User Documentation
+==================
 
 Oro Online Documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and shipping methods in the back-office to exploring the checkout process in the eCommerce storefront.
 
