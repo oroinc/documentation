@@ -1,7 +1,7 @@
 .. _user-guide-marketing:
 
-|IcMarketing| Marketing
-=======================
+Marketing
+=========
 
 The Marketing Menu in the Oro application provides access tools for managing the following marketing activities:
 
@@ -53,5 +53,3 @@ You can also customize the content of :ref:`Customer Login Page <customer-login-
    customer_login_pages/index
 
 
-.. include:: /include/include_images.rst
-   :start-after: begin

@@ -1,5 +1,5 @@
-|IcReports| Reports and Segments
-================================
+Reports and Segments
+====================
 
 Data analysis tools help you make informed decisions related to your sales and commerce activities:
 
@@ -17,5 +17,3 @@ Data analysis tools help you make informed decisions related to your sales and c
    segments
    filters
 
-.. include:: /include/include_images.rst
-   :start-after: begin
