@@ -168,7 +168,7 @@ html_theme_options = {
 # hidden for local preview: , 'relations.html', 'searchbox.html'
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-html_additional_pages = {'index': 'index.html'}
+html_additional_pages = {'index': 'index.html', 'error-page': 'error-page.html'}
 
 # A list of paths that contain extra files not directly related to the documentation, such as robots.txt or .htaccess.
 # Relative paths are taken as relative to the configuration directory. They are copied to the output directory.
