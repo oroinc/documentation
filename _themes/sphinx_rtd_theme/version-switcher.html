@@ -2,21 +2,23 @@
 {% set tags = versions.tags %}
 {% set branches = versions.branches %}
 {% if (tags|length + branches|length) > 0 %}
-<strong class="doc-title">Documentation Version</strong>
-<div class="documentation-version-switcher">
-    <div class="version">{{ oro_current_version }}{{ ' (latest)' if scv_root_ref == current_version }}</div>
-    <ul class="documentation-version">
-        {%- if tags %}
-            {%- for name, root_dir, url in tags %}
-                <li><a href="{{ url }}">{{ root_dir }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
-            {%- endfor %}
-        {%- endif %}
-        {%- if branches %}
-            {%- for name, root_dir, url in branches %}
-                <li><a href="{{ url }}">{{ root_dir }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
-            {%- endfor %}
-        {%- endif %}
-    </ul>
+<div class="switcher-container">
+    <strong class="doc-title">Documentation Version</strong>
+    <div class="documentation-version-switcher">
+        <div class="version">{{ oro_current_version }}{{ ' (latest)' if scv_root_ref == current_version }}</div>
+        <ul class="documentation-version">
+            {%- if tags %}
+                {%- for name, root_dir, url in tags %}
+                    <li><a href="{{ url }}">{{ root_dir }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
+                {%- endfor %}
+            {%- endif %}
+            {%- if branches %}
+                {%- for name, root_dir, url in branches %}
+                    <li><a href="{{ url }}">{{ root_dir }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
+                {%- endfor %}
+            {%- endif %}
+        </ul>
+    </div>
 </div>
 {%- endif %}
 {%- endif %}
