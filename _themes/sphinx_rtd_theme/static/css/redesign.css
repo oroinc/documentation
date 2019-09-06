@@ -399,7 +399,6 @@ body {
     font-size: 15px;
     line-height: 1.2;
     font-weight: bold;
-    text-transform: uppercase;
 }
 .top-navigation > ul {
     margin: 0;
@@ -413,9 +412,11 @@ body {
     letter-spacing: 0;
 }
 .top-navigation a {
-    display: block;
     text-decoration: none;
     color: #232323;
+}
+.top-navigation > ul > li > a {
+    display: block;
     line-height: 21px;
     font-size: 15px;
     font-weight: 700;
@@ -426,8 +427,9 @@ body {
     transition: 0.3s ease;
     transition-property: background-color, color;
 }
-.top-navigation a:hover,
-.top-navigation a:focus {
+.top-navigation > ul > li:hover > a,
+.top-navigation > ul > li > a:hover,
+.top-navigation > ul > li > a:focus {
     text-decoration: none;
     color: #df9026;
     background-color: #ececec;
@@ -435,6 +437,9 @@ body {
 .top-navigation .menu-item-home a {
     color: #df9026;
     background: #fff;
+}
+.top-navigation .nav-drop {
+
 }
 
 /*header panel with versions switcher*/
@@ -1692,6 +1697,53 @@ body {
     .top-navigation > ul > li:last-child {
         border-bottom: none;
     }
+    .top-navigation .has-drop.mobile-drop-active > a:after {
+        transform: rotate(180deg);
+    }
+    .top-navigation .has-drop.mobile-drop-active > .nav-drop {
+        display: block;
+    }
+    .top-navigation > ul > li > a {
+        background: none !important;
+        color: #232323 !important;
+    }
+    .top-navigation .has-drop > a {
+        position: relative;
+        padding-right: 50px;
+    }
+    .top-navigation .has-drop > a:after {
+        font-family: 'FontAwesome';
+        content: '\f107';
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        margin: -10px 0 0;
+        transform: rotate(0deg);
+        right: 10px;
+        transition: transform 0.3s ease;
+    }
+    .top-navigation .nav-drop {
+        display: none;
+        background: #fff;
+        padding: 0 0 10px 20px;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+    .nav-drop-list > li {
+        padding: 8px 0;
+    }
+    .nav-drop-list > li:first-child {
+        padding-top: 0;
+    }
+    .nav-drop-list a {
+        color: #232323 !important;
+        background: none !important;
+        display: block;
+    }
 }
 @media only screen and (min-width: 980px) {
     .page-header .logo {
@@ -1727,13 +1779,54 @@ body {
         display: inline-block;
         vertical-align: top;
     }
-    .top-navigation a {
+    .top-navigation > ul > li > a {
         padding: 5px 13px 0;
         height: 59px;
         line-height: 51px;
     }
     .mobile-nav-opener,
     .drop-panel {
+        display: none;
+    }
+    .top-navigation .has-drop:hover > .nav-drop {
+        display: block !important;
+    }
+    .top-navigation .has-drop {
+        position: relative;
+    }
+    .top-navigation .nav-drop {
+        display: none !important;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        box-shadow: 0 10px 16px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+        padding: 20px 20px !important;
+        margin: 0 !important;
+        height: auto !important;
+        width: 220px;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+    .nav-drop-list > li {
+        padding: 7px 0;
+    }
+    .nav-drop-list a {
+        position: relative;
+        font-weight: normal;
+        color: #232323;
+    }
+    .nav-drop-list a:hover:after {
+        display: block;
+    }
+    .nav-drop-list a:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #b84926;
         display: none;
     }
     .three-columns-list {
@@ -1794,7 +1887,7 @@ body {
     #searchbox {
         width: 350px;
     }
-    .top-navigation a {
+    .top-navigation > ul > li >a {
         padding: 5px 32px 0;
     }
     .breadcrumbs-container {
