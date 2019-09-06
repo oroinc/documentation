@@ -7,7 +7,7 @@ OroCommerce back-office places a great emphasis on an intuitive UI to help organ
 
 This section contains a number of detailed how-to topics to help you make the application approachable and efficiently configure it to the needs of your business.
 
-.. hint:: Navigate the left-panel menu to find the content you are interested in or use the search bar on the top right to find topics quicker.
+.. hint:: Navigate the left-panel menu to find the content you are interested in, or use the search bar above.
 
 .. toctree::
    :hidden:
