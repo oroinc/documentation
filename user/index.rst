@@ -1,29 +1,33 @@
 User Documentation
 ==================
 
-Oro Online Documentation takes you through all the essential steps leading up to your first sale, from building stock, filling your warehouse and setting up payment and shipping methods in the back-office to exploring the checkout process in the eCommerce storefront.
+Oro Online User Documentation is an aggregated and structured knowledge base of information on OroCRM and OroCommerce applications. It is designed for all business users work who with the application UI.
 
-.. hint:: The documentation is split into several section, each delivering content in different ways:
+Oro User Documentation is split into four sections, each delivering user-specific content in different ways:
 
-        * **Concept Guides** provide an overview of certain features and use-cases, helps out with the general understanding of complex topics
-        * **Back-Office** contains how-to topics grouped into sections that mirror the structure of the application's back-office
-        * **Commerce Storefront**  illustrates how to navigate, browse and interact with the default OroCommerce storefront
+.. raw:: html
 
-Use the left-panel menu or the search bar above it to navigate the documentation and discover how to:
+   <h2>Concept Guides</h2>
+   <p>Concept Guides provide overviews of features and use-cases, help out with the general understanding of large topics.</p>
 
-* Create a variety of roles and configure the hierarchy and access to the application
-* Effortlessly build stock by creating a product catalog and populating it with products
-* Fill your warehouse and update inventory statuses
-* Generate price lists, set prices and manage multiple price lists
-* Add payment options and prioritize payment rules specific to your business
-* Set up and manage shipping methods
-* Create a quote in the storefront, and process it in the back-office
-* Proceed through the single and multi-step checkout, and upload products through the quick order form in the storefront
-* Explore the checkout process from the perspectives of both managers and buyers
-* Create promotions to enable sellers to apply various discounts for the order total, the shipping cost, the line items, or a certain quantity of items by providing the Buy X Get Y discount for the same items
-* Generate personalized discount coupons
-* Work with the sales pipeline and go through the basic sales process steps, such as creating a lead, converting a lead into an opportunity, developing an opportunity, and closing it as won
-* Use widgets and reports to track sales performance and measure sales effectiveness
+.. raw:: html
+
+   <h2>Back-Office</h2>
+   <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
+
+.. important:: All section under Back-Office are relevant to OroCommerce application users. **However**, be aware that not all topics are relevant to OroCRM application.
+        If you are an OroCRM user, please check what features are available in your installed OroCRM application, and search the documentation topics that correspond to your OroCRM menu layout.
+
+.. raw:: html
+
+   <h2>Commerce Storefront</h2>
+   <p>Commerce Storefront documentation illustrates how to navigate, browse, and interact with the default OroCommerce storefront</p>
+
+.. raw:: html
+
+   <h2>Glossary</h2>
+   <p>Glossary is an alphabetical list of OroCRM and OroCommerce terms used throughout the documentation</p>
+
 
 .. toctree::
    :hidden:
