@@ -238,7 +238,8 @@
                 if ($(this).hasClass('hover')){
                   $(this).removeClass('hover');
                 }
-              });
+              })
+              .find('.version').css('min-width', ($(this).find('.documentation-version').width() + 5));
     });
 
     $(window).scroll(function(){

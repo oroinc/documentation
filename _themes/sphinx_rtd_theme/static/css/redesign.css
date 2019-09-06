@@ -481,9 +481,8 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     cursor: pointer;
-    float: left;
-    width: 100%;
-    min-width: 100px;
+    text-align: left;
+    min-width: 75px;
     color: #b84926;
     position: relative;
     z-index: 1;
@@ -507,12 +506,14 @@ body {
 }
 .documentation-version-switcher.hover .documentation-version {
     left: 0;
+    width: 100%;
+    opacity: 1;
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
 }
 .documentation-version-switcher .documentation-version {
     position: absolute;
-    left: -767px;
-    width: 100%;
+    left: -2000px;
+    opacity: 0;
     background: #f5f5f5;
     line-height: 20px;
     padding: 2px 0;
@@ -802,7 +803,10 @@ body {
 .sidebar-holder {
     background: #fdfdfd;
     box-shadow: 1px 1px 6px rgba(133, 133, 133, 0.4);
-    padding: 15px 12px 15px 21px;
+    padding: 15px 1px 15px 21px;
+}
+.nav-side {
+    padding-right: 21px;
 }
 .wy-menu {
     width: 100%;
@@ -1840,6 +1844,6 @@ body {
         text-align: center;
     }
     .contents-table {
-        padding-right: 11px;
+        padding-right: 20px;
     }
 }
