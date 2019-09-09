@@ -1,3 +1,4 @@
+# Should be in sync with environment/python/requirements.txt
 alabaster==0.7.9
 Babel==2.3.4
 docutils==0.13.1
