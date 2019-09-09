@@ -284,9 +284,8 @@
 
           curItem.addClass('has-drop');
           curItem.children('a').on('click', function (e) {
-            e.preventDefault();
-
             if ($(window).prop('innerWidth') < 980) {
+              e.preventDefault();
               if(curItem.hasClass('mobile-drop-active')) {
                 curDrop.slideUp('fast', function () {
                   curItem.removeClass('mobile-drop-active');
