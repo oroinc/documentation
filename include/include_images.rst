@@ -5,6 +5,10 @@
 Images
 ======
 
+TEST
+
+.. image:: /user/img/icons/orocommerce-icon-logo.png
+
 .. begin
 
 .. |IcDoubleArrowLeft| raw:: html

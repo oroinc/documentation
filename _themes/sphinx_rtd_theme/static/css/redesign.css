@@ -1940,3 +1940,29 @@ body {
         padding-right: 20px;
     }
 }
+<<<<<<< HEAD
+=======
+
+.tag-cloud {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+.tag-cloud li, .tag-cloud li+li {
+    margin: 0 !important;
+    list-style: none !important;
+}
+.tag-cloud a {
+    display: inline-block;
+    padding: 5px 10px 10px;
+}
+.tag-cloud a.tag-important {
+    font-size: 18px;
+}
+.tag-cloud a.tag-very-important {
+    font-size: 18px;
+    font-weight: 700;
+}
