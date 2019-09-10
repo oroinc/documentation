@@ -40,7 +40,7 @@ PayPal Express Payment Service Package
 
 It is a fast, safe and reliable online global payment system that offers easy online payments for businesses and individuals.
 
-PayPal Express, **unlike Gateway and Pro**, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+PayPal Express, **unlike Gateway and Pro**, comes as a separate OroCommerce package and requires :ref:`installation <cookbook-extensions-composer>` of the `Oro PayPal Express Integration <https://packagist.oroinc.com/?#oro/commerce-paypal-express>`_ package.
 
 Keep in mind that depending on PayPal policies, payment methods may be different in some countries. Therefore, the list of available payment methods in OroCommerce may also vary when integrated using PayPal accounts created in different countries. You can verify PayPal Express availability in your country on the `PayPal website <https://www.paypal.com/us/webapps/mpp/country-worldwide>`__.
 
@@ -72,7 +72,7 @@ To enable PayPal payment methods at the checkout of the OroCommerce storefront:
 PayPal Express Configuration Flow
 ---------------------------------
 
-1. Install `PayPal Express Package <https://packagist.oroinc.com/#oro/paypal-express>`__.
+1. Install `PayPal Express Package <https://packagist.oroinc.com/?#oro/commerce-paypal-express>`__.
 2. Configure :ref:`PayPal Express Integration <config-guide--payment--paypal-express>`.
 3. Create a :ref:`payment rule <sys--payment-rules>` and add your integration to it to be able to display the selected payment method to customers at checkout.
 
