@@ -70,6 +70,7 @@ Then, install the extension's Composer package using the Composer ``require`` co
 Next, remove old cache:
 
 .. code-block:: bash
+
     sudo rm -rf var/cache/prod
 
 Repeat this for any other extension you want to install. When you are finished with adding new
