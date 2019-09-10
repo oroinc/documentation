@@ -7,26 +7,25 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 
 .. raw:: html
 
-   <h2>Concept Guides</h2>
+   <h2><a href="https://doc.oroinc.com/user/concept_guides/index.html">Concept Guides</a></h2>
    <p>Concept Guides provide overviews of features and use-cases, help out with the general understanding of large topics.</p>
 
 .. raw:: html
 
-   <h2>Back-Office</h2>
+   <h2><a href="https://doc.oroinc.com/user/back_office/index.html">Back-Office</a></h2>
    <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
 
-.. important:: All section under Back-Office are relevant to OroCommerce application users. **However**, be aware that not all topics are relevant to OroCRM application.
-        If you are an OroCRM user, please check what features are available in your installed OroCRM application, and search the documentation topics that correspond to your OroCRM menu layout.
+.. note:: All section under Back-Office are relevant to OroCommerce application users. However, be aware that not all topics are relevant to OroCRM application. If you are an OroCRM user, please check what features are available in your installed OroCRM application, and search the documentation topics that correspond to your OroCRM menu layout.
 
 .. raw:: html
 
-   <h2>Commerce Storefront</h2>
-   <p>Commerce Storefront documentation illustrates how to navigate, browse, and interact with the default OroCommerce storefront</p>
+   <h2><a href="https://doc.oroinc.com/user/storefront/index.html">Commerce Storefront</a></h2>
+   <p>Commerce Storefront documentation illustrates how to navigate, browse, and interact with the default OroCommerce storefront.</p>
 
 .. raw:: html
 
-   <h2>Glossary</h2>
-   <p>Glossary is an alphabetical list of OroCRM and OroCommerce terms used throughout the documentation</p>
+   <h2><a href="https://doc.oroinc.com/user/glossary.html">Glossary</a></h2>
+   <p>Glossary is an alphabetical list of OroCRM and OroCommerce terms used throughout the documentation.</p>
 
 
 .. toctree::

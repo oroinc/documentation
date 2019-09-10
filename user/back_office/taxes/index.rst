@@ -1,10 +1,5 @@
 .. _user-guide--taxes:
 
-.. raw:: html
-
-   <img src="../../../_static/images/orocommerce-icon-logo.png" class="doc-image-orocommerce">
-   <img src="../../../_static/images/orocrm-icon-logo.png" class="doc-image-orocrm">
-
 Taxes
 =====
 
