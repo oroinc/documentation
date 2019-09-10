@@ -66,11 +66,6 @@ Then, install the extension's Composer package using the Composer ``require`` co
 .. code-block:: bash
 
     $ composer require <extension name>:<extension-version> --prefer-dist --update-no-dev
-
-Next, remove old cache:
-
-.. code-block:: bash
-    sudo rm -rf var/cache/prod
     
  Next, remove old cache:
 
