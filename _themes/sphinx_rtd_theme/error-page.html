@@ -137,6 +137,7 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
+      navigationDropDown();
       stickyHeader();
       mobileCollapse();
       smoothScroll('.btn-back-to-top');
@@ -149,9 +150,46 @@
     });
 
     $(window).resize(function(){
+      navigationDropDown();
       stickyHeader();
       mobileCollapse();
     });
+
+    function navigationDropDown() {
+      var nav = $('.top-navigation > ul'),
+              navItem = nav.children('li');
+
+      navItem.each(function () {
+        var curItem = $(this);
+
+        if (curItem.has('.nav-drop-list').length > 0) {
+          var curDrop = curItem.children('.nav-drop');
+
+          curItem.addClass('has-drop');
+          curItem.children('a').on('click', function (e) {
+
+            if ($(window).prop('innerWidth') < 980) {
+              e.preventDefault();
+              if(curItem.hasClass('mobile-drop-active')) {
+                curDrop.slideUp('fast', function () {
+                  curItem.removeClass('mobile-drop-active');
+                });
+              } else {
+                curDrop.slideDown('fast', function () {
+                  curItem.addClass('mobile-drop-active');
+                });
+              }
+            } else {
+              curItem.removeClass('mobile-drop-active');
+            }
+          })
+        }
+        if ($(window).prop('innerWidth') > 979) {
+          $('.nav-drop').removeAttr('style');
+          curItem.removeClass('mobile-drop-active');
+        }
+      });
+    }
 
     // sticky functional for header
     function stickyHeader() {
