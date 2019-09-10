@@ -32,7 +32,7 @@ PayPal Payments Express Checkout
 
 .. image:: /user_guide/img/payment/checkout/checkout_paypal_express.png
 
-.. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+.. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/?#oro/commerce-paypal-express>`_ package.
 
 Authorize.Net
 -------------
