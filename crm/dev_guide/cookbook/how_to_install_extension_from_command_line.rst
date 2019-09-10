@@ -67,6 +67,11 @@ Then, install the extension's Composer package using the Composer ``require`` co
 
     $ composer require <extension name>:<extension-version> --prefer-dist --update-no-dev
 
+Next, remove old cache:
+
+.. code-block:: bash
+    sudo rm -rf var/cache/prod
+
 Repeat this for any other extension you want to install. When you are finished with adding new
 packages, use the ``oro:platform:update`` command to make the application aware of the newly
 installed extensions:
