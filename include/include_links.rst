@@ -359,7 +359,7 @@ Links
 
 .. |Oro PayPal Express Integration| raw:: html
 
-   <a href="https://packagist.oroinc.com/#oro/paypal-express" target="_blank">Oro PayPal Express Integration</a>
+   <a href="https://packagist.oroinc.com/?#oro/commerce-paypal-express" target="_blank">Oro PayPal Express Integration</a>
 
 .. |Customer Consent Management| raw:: html
 
