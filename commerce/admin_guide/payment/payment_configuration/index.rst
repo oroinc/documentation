@@ -40,7 +40,7 @@ Out of the box, you may integrate OroCommerce with the following systems and ser
 * :ref:`PayPal Payflow Gateway / PayPal Payment Pro <sys--integrations--manage-integrations--paypal-payments-pro>`
 * :ref:`PayPal Express <config-guide--payment--paypal-express>`
 
-  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/#oro/paypal-express>`_ package.
+  .. note:: Before you can use PayPal Express in OroCommerce, :ref:`install <cookbook-extensions-composer>` the `Oro PayPal Express Integration <https://packagist.oroinc.com/?#oro/commerce-paypal-express>`_ package.
 
 * :ref:`Wirecard Seamless Checkout <doc--payment--configuration--payment-method-integration--wirecard>`
 * :ref:`InfinitePay <sys--integrations--manage-integrations--infinitepay>`
