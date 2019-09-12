@@ -34,25 +34,17 @@ def save_is_root_build(app, context):
 
 
 def save_versions_from_context(app, context):
-    if app.sitemap_index_root_dirs is not None:
-        return
-
     if app.sitemap_index_is_root_build is not True:
         return
 
     if 'versions' not in context:
         return
 
-    root_dirs = []
-
     for name, root_dir, path in context['versions'].branches:
-        root_dirs.append(root_dir)
+        app.sitemap_index_root_dirs.add(root_dir)
 
     for name, root_dir, path in context['versions'].tags:
-        root_dirs.append(root_dir)
-
-    # Save versions data
-    app.sitemap_index_root_dirs = root_dirs
+        app.sitemap_index_root_dirs.add(root_dir)
 
 
 def create_sitemap_index(app, exception):
@@ -68,9 +60,6 @@ def create_sitemap_index(app, exception):
     if not site_url:
         print("sitemap-index error: neither html_baseurl nor site_url "
               "are set in conf.py. Sitemapindex not built.")
-        return
-    if app.sitemap_index_root_dirs is None:
-        print("sitemap-index warning: No pages generated for sitemapindex.xml")
         return
 
     ET.register_namespace('xhtml', "http://www.w3.org/1999/xhtml")
@@ -101,5 +90,5 @@ def create_et_element(root, doc_url):
 def setup(app):
     app.connect('html-page-context', html_page_context)
     app.connect('build-finished', create_sitemap_index)
-    app.sitemap_index_root_dirs = None
+    app.sitemap_index_root_dirs = set()
     app.sitemap_index_is_root_build = None
