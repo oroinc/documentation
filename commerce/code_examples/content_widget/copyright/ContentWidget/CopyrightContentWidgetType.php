@@ -36,7 +36,7 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
     /**
      * {@inheritdoc}
      */
-    public function getSettingsForm(ContentWidget $contentWidget, FormFactoryInterface $formFactory): FormInterface
+    public function getSettingsForm(ContentWidget $contentWidget, FormFactoryInterface $formFactory): ?FormInterface
     {
         return $formFactory->create(FormType::class);
     }
