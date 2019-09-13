@@ -1,0 +1,3 @@
+{% import 'OroUIBundle::macros.html.twig' as UI %}
+
+{{ UI.renderProperty('acme.copyright.settings.is_short.label'|trans, settings.isShort ? 'Yes'|trans : 'No'|trans) }}

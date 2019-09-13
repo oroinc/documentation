@@ -1,0 +1,9 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    ACME\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType:
+        tags:
+            - { name: form.type }
+
+    ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType: ~
