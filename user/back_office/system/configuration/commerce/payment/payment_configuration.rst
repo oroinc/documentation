@@ -1,5 +1,7 @@
 .. _sys--conf--commerce--payment--general:
 
+:oro_documentation_types: commerce
+
 General
 =======
 

@@ -132,6 +132,10 @@ a:focus {
     overflow-x: auto;
     margin: 0 0 24px;
 }
+.rst-content img.oro-documentation-type {
+    float: right;
+    margin-left: 10px;
+}
 .rst-content .admonition pre.literal-block,
 .rst-content .admonition div[class*='highlight'] {
     padding: 8px 0;

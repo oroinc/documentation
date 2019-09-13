@@ -179,6 +179,15 @@
             <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
               {%- block document %}
               <div itemprop="articleBody">
+                {%- if meta is defined %}
+                    {%- if 'oro_documentation_types' in meta.viewkeys() %}
+                        {%- set oro_documentation_types = meta.get('oro_documentation_types') %}
+                        {% for type in oro_documentation_types.split(',') %}
+                            {%- set type = type|trim -%}
+                            <img src="{{ pathto('_static/images/doctypes/' ~ type ~ '-icon-logo.png', 1) }}" alt="{{ type }}" class="oro-documentation-type">
+                        {% endfor %}
+                    {%- endif %}
+                {%- endif %}
                 {% block body %}{% endblock %}
               </div>
               {% if self.comments()|trim %}
