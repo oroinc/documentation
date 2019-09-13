@@ -164,7 +164,7 @@ In view mode, the block looks as follows:
 
 .. image:: /dev_guide/img/crud_result_view.png
 
-A fully working example, organized into a custom bundle is available `here <https://oroinc.com/b2b-ecommerce/file/2509>`_.
+A fully working example, organized into a custom bundle is available `here <https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/OroB2BBlogPostExampleBundle.zip>`_.
 
 In order to add this bundle to your application:
 
