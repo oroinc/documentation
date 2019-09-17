@@ -75,7 +75,7 @@ Oro applications are compatible with most web servers with PHP support, but we r
 |                   | * zip                                             |
 |                   | * imap                                            |
 +-------------------+---------------------------------------------------+
-| *Database*        | * `MySQL`_ 5.7 and above                          |
+| *Database*        | * `MySQL`_ 5.7                                    |
 |                   |                                                   |
 |                   | .. note:: Latest version of `mariaDB` may be used |
 |                   |    at one's own risk. Oro applications are not    |
@@ -100,7 +100,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +-------------------+----------------------------------------------------+
 | *PHP Extensions*  | * pgsql                                            |
 +-------------------+----------------------------------------------------+
-| *Database*        | * `PostgreSQL`_ / `EnterpriseDB`_ 9.6 and above    |
+| *Database*        | * `PostgreSQL`_ / `EnterpriseDB`_ 9.6              |
 +-------------------+----------------------------------------------------+
 | *Search Index*    | * `Elasticsearch`_ 2.4.*                           |
 +-------------------+----------------------------------------------------+

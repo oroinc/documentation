@@ -75,7 +75,12 @@ Oro applications are compatible with most web servers with PHP support, but we r
 |                   | * zip                                             |
 |                   | * imap                                            |
 +-------------------+---------------------------------------------------+
-| *Database*        | * `MySQL`_ 5.1 and above                          |
+| *Database*        | * `MySQL`_ 5.7                                    |
+|                   |                                                   |
+|                   | .. note:: Latest version of `mariaDB` may be used |
+|                   |    at one's own risk. Oro applications are not    |
+|                   |    tested with `mariaDB` and thus the correct     |
+|                   |    operation cannot be guaranteed.                |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * `Supervisor`_ or alternative                    |
 +-------------------+---------------------------------------------------+
