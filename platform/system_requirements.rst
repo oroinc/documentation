@@ -36,7 +36,7 @@ Oro applications are compatible with most web servers with PHP support, but we r
 |                   | Web server configuration recommendations are well |
 |                   | described in `Symfony documentation`_             |
 +-------------------+---------------------------------------------------+
-| *PHP*             | * `PHP`_ >=7.1.26 version                         |
+| *PHP*             | * `PHP`_ >=7.1.26 and 7.2                         |
 |                   | * PHP CLI, the same version as for the web server |
 +-------------------+---------------------------------------------------+
 | *PHP Settings*    | Few updates to default PHP configuration settings |
@@ -75,7 +75,12 @@ Oro applications are compatible with most web servers with PHP support, but we r
 |                   | * zip                                             |
 |                   | * imap                                            |
 +-------------------+---------------------------------------------------+
-| *Database*        | * `MySQL`_ 5.1 and above                          |
+| *Database*        | * `MySQL`_ 5.7                                    |
+|                   |                                                   |
+|                   | .. note:: Latest version of `mariaDB` may be used |
+|                   |    at one's own risk. Oro applications are not    |
+|                   |    tested with `mariaDB` and thus the correct     |
+|                   |    operation cannot be guaranteed.                |
 +-------------------+---------------------------------------------------+
 | *Process Control* | * `Supervisor`_ or alternative                    |
 +-------------------+---------------------------------------------------+
@@ -94,7 +99,7 @@ Enterprise edition is built to support better scale and performance. It is compa
 +-------------------+----------------------------------------------------+
 | *PHP Extensions*  | * pgsql                                            |
 +-------------------+----------------------------------------------------+
-| *Database*        | * `PostgreSQL`_ / `EnterpriseDB`_ 9.1 and above    |
+| *Database*        | * `PostgreSQL`_ / `EnterpriseDB`_ 9.6              |
 +-------------------+----------------------------------------------------+
 | *Search Index*    | * `Elasticsearch`_ 6.*                             |
 +-------------------+----------------------------------------------------+
