@@ -1,0 +1,5 @@
+{% if isShort %}
+    <copy>(c) {{ 'now'|date('Y') }}</copy>
+{% else %}
+    <copy>(c) {{ 'now'|date('Y') }}. All rights reserved.</copy>
+{% endif %}
