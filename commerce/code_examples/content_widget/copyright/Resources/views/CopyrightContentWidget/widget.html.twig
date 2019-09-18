@@ -1,5 +1,2 @@
-{% if isShort %}
-    <copy>(c) {{ 'now'|date('Y') }}</copy>
-{% else %}
-    <copy>(c) {{ 'now'|date('Y') }}. All rights reserved.</copy>
-{% endif %}
+{%- set copyright = isShort ? 'acme.copyright.text.short' : 'acme.copyright.text.default' -%}
+<copy>{{ copyright|trans({ '%year%': 'now'|date('Y') }) }}</copy>

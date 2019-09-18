@@ -1,3 +1,7 @@
 acme.copyright:
     settings:
         is_short.label: 'Short'
+
+    text:
+        default: "(c) %year%. All rights reserved"
+        short: "(c) %year%"
