@@ -1,7 +1,11 @@
 acme.copyright:
+    content_widget:
+        copyright:
+            label: 'Copyright'
+
     settings:
         is_short.label: 'Short'
 
     text:
-        default: "(c) %year%. All rights reserved"
-        short: "(c) %year%"
+        default: '(c) %year%. All rights reserved'
+        short: '(c) %year%'

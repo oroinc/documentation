@@ -25,6 +25,14 @@ class CopyrightContentWidgetType extends AbstractContentWidgetType
     /**
      * {@inheritdoc}
      */
+    public function getLabel(): string
+    {
+        return 'acme.copyright.content_widget.copyright.label';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     protected function getAdditionalInformationBlock(ContentWidget $contentWidget, Environment $twig): string
     {
         return $twig->render(

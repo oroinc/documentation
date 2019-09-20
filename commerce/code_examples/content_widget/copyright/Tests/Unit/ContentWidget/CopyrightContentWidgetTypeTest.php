@@ -25,7 +25,7 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
 
     public function testGetLabel(): void
     {
-        $this->assertEquals('copyright', $this->contentWidgetType->getLabel());
+        $this->assertEquals('acme.copyright.content_widget.copyright.label', $this->contentWidgetType->getLabel());
     }
 
     public function testGetWidgetData(): void
