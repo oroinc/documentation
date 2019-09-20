@@ -7,6 +7,8 @@
   {%- set titlesuffix = "" %}
 {%- endif %}
 {%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) %}
+{# Prefix for all links in template. It allows to make links absolute from the root with '/' #}
+{%- set link_prefix = '/' %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="{{ lang_attr }}" >
@@ -20,7 +22,7 @@
 
   {# FAVICON #}
   {% if theme_favicon %}
-    <link rel="shortcut icon" href="{{ pathto('_static/' + theme_favicon, 1) }}"/>
+    <link rel="shortcut icon" href="{{ pathto(link_prefix ~ '_static/' + theme_favicon, 1) }}"/>
   {% endif %}
   {# CANONICAL URL #}
   {% if theme_canonical_url %}
@@ -29,12 +31,12 @@
 
   {# JAVASCRIPTS #}
   {%- block scripts %}
-  <script type="text/javascript" src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/modernizr.min.js', 1) }}"></script>
 
   {%- if not embedded %}
   {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
     {% if sphinx_version >= "1.8.0" %}
-      <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto(link_prefix ~ '_static/documentation_options.js', 1) }}"></script>
       {%- for scriptfile in script_files %}
         {{ js_tag(scriptfile) }}
       {%- endfor %}
@@ -51,30 +53,30 @@
           };
       </script>
       {%- for scriptfile in script_files %}
-        <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+        <script type="text/javascript" src="{{ pathto(link_prefix ~ scriptfile, 1) }}"></script>
       {%- endfor %}
     {% endif %}
-    <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/theme.js', 1) }}"></script>
 
     {# OPENSEARCH #}
     {%- if use_opensearch %}
     <link rel="search" type="application/opensearchdescription+xml"
           title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
-          href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+          href="{{ pathto(link_prefix ~ '_static/opensearch.xml', 1) }}"/>
     {%- endif %}
   {%- endif %}
   {%- endblock %}
 
   {# CSS #}
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto('_static/css/redesign.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/pygments.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}" type="text/css" />
   {%- for css in css_files %}
     {%- if css|attr("rel") %}
-  <link rel="{{ css.rel }}" href="{{ pathto(css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
+  <link rel="{{ css.rel }}" href="{{ pathto(('' if '://' in css.filename else link_prefix) ~ css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
     {%- else %}
-  <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(('' if '://' in css else link_prefix) ~ css, 1) }}" type="text/css" />
     {%- endif %}
   {%- endfor %}
 
@@ -84,16 +86,16 @@
 
   {%- block linktags %}
     {%- if hasdoc('about') %}
-    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+    <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto(link_prefix ~ 'about') }}" />
     {%- endif %}
     {%- if hasdoc('genindex') %}
-    <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+    <link rel="index" title="{{ _('Index') }}" href="{{ pathto(link_prefix ~ 'genindex') }}" />
     {%- endif %}
     {%- if hasdoc('search') %}
-    <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+    <link rel="search" title="{{ _('Search') }}" href="{{ pathto(link_prefix ~ 'search') }}" />
     {%- endif %}
     {%- if hasdoc('copyright') %}
-    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+    <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto(link_prefix ~ 'copyright') }}" />
     {%- endif %}
     {%- if next %}
     <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
@@ -104,14 +106,14 @@
   {%- endblock %}
   {%- block extrahead %} {% endblock %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="{{ pathto('_static/js/jquery.scrollbar.min.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/jquery.scrollbar.min.js', 1) }}"></script>
 </head>
 
 <body class="wy-body-for-nav error-page">
   {% include "gtm-body.html" %}
   {% block extrabody %} {% endblock %}
   <div class="header-container">
-    {% include "header.html" %}
+    {% include "header.html" with context %}
 
     <div class="header-panel">
       <div class="header-panel-holder"></div>
@@ -126,16 +128,16 @@
           <p>You may instead browse any of the following resources or use "Search"</p>
         </div>
 
-        {% include "site-links.html" %}
+        {% include "site-links.html" with context %}
       </div>
     </div>
 
-    {% include "footer-links.html" %}
+    {% include "footer-links.html" with context %}
   </div>
 
-  {% include "footer.html" %}
+  {% include "footer.html" with context %}
 
-  <script type="text/javascript" src="{{ pathto('_static/js/index.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/index.js', 1) }}"></script>
 
   {# Do not conflict with RTD insertion of analytics script #}
   {% if not READTHEDOCS %}

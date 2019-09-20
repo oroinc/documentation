@@ -28,7 +28,7 @@
 
   <ul class="wy-breadcrumbs">
     {% block breadcrumbs %}
-      <li><a href="{{ pathto(master_doc) }}">{{ _('Home') }}</a> <span class="sep" aria-hidden="true">></span></li>
+      <li><a href="{{ pathto(link_prefix ~ master_doc) }}">{{ _('Home') }}</a> <span class="sep" aria-hidden="true">></span></li>
         {% for doc in parents %}
           <li><a href="{{ doc.link|e }}">{{ doc.title }}</a> <span class="sep" aria-hidden="true">></span></li>
         {% endfor %}

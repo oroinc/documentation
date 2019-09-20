@@ -3,7 +3,7 @@
     <div class="footer-holder">
       <div class="heading-column">
         <a href="https://oroinc.com/" class="logo-footer">
-          <img width="117" height="37" src="{{ pathto('_static/images/Oro-Inc-Logo.svg', 1) }}" alt="Oro Inc">
+          <img width="117" height="37" src="{{ pathto(link_prefix ~ '_static/images/Oro-Inc-Logo.svg', 1) }}" alt="Oro Inc">
         </a>
       </div>
       <div class="columns-holder">
@@ -39,4 +39,4 @@
   </footer>
   {%- block extrafooter %} {% endblock %}
 </div>
-<script type="text/javascript" src="{{ pathto('_static/js/google-tag-manager.js', 1) }}"></script>
+<script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/google-tag-manager.js', 1) }}"></script>

@@ -2,9 +2,9 @@
   <li>
     <div class="main-section">
       <div class="heading-box">
-        <a href="user/index.html">
+        <a href="{{ pathto(link_prefix ~ 'user/index') }}">
           <div class="heading-icon" aria-hidden="true">
-            <img src="{{ pathto('_static/images/icon-business-users.png', 1) }}" alt="" role="presentation">
+            <img src="{{ pathto(link_prefix ~ '_static/images/icon-business-users.png', 1) }}" alt="" role="presentation">
           </div>
           <h2><span>Business Users</span></h2>
         </a>
@@ -15,18 +15,18 @@
     </div>
     <div class="footer-box">
       <ul>
-        <li><a href="user/concept_guides/index.html">Concept Guides</a></li>
-        <li><a href="user/back_office/index.html">Back-Office</a></li>
-        <li><a href="user/storefront/index.html">Commerce Storefront</a></li>
+        <li><a href="{{ pathto(link_prefix ~ 'user/concept_guides/index') }}">Concept Guides</a></li>
+        <li><a href="{{ pathto(link_prefix ~ 'user/back_office/index') }}">Back-Office</a></li>
+        <li><a href="{{ pathto(link_prefix ~ 'user/storefront/index') }}">Commerce Storefront</a></li>
       </ul>
     </div>
   </li>
   <li>
     <div class="main-section">
       <div class="heading-box">
-        <a href="/developer/index.html">
+        <a href="{{ pathto('/developer/index') }}">
           <div class="heading-icon" aria-hidden="true">
-            <img src="{{ pathto('_static/images/icon-developers.png', 1) }}" alt="" role="presentation">
+            <img src="{{ pathto(link_prefix ~ '_static/images/icon-developers.png', 1) }}" alt="" role="presentation">
           </div>
           <h2><span>Developers</span></h2>
         </a>
@@ -37,18 +37,18 @@
     </div>
     <div class="footer-box">
       <ul>
-        <li><a href="/developer/backend/index.html">Backend Developer Guide</a></li>
-        <li><a href="/developer/frontend/index.html">Frontend Developer Guide</a></li>
-        <li><a href="/developer/community/index.html">Community Guide</a></li>
+        <li><a href="{{ pathto('/developer/backend/index') }}">Backend Developer Guide</a></li>
+        <li><a href="{{ pathto('/developer/frontend/index') }}">Frontend Developer Guide</a></li>
+        <li><a href="{{ pathto('/developer/community/index') }}">Community Guide</a></li>
       </ul>
     </div>
   </li>
   <li>
     <div class="main-section">
       <div class="heading-box">
-        <a href="/cloud/index.html">
+        <a href="{{ pathto('/cloud/index') }}">
           <div class="heading-icon" aria-hidden="true">
-            <img src="{{ pathto('_static/images/icon-cloud.png', 1) }}" alt="" role="presentation">
+            <img src="{{ pathto(link_prefix ~ '_static/images/icon-cloud.png', 1) }}" alt="" role="presentation">
           </div>
           <h2><span>Cloud Administrators</span></h2>
         </a>
@@ -59,9 +59,9 @@
     </div>
     <div class="footer-box">
       <ul>
-        <li><a href="/cloud/architecture.html">Cloud Architecture</a></li>
-        <li><a href="/cloud/maintenance/index.html">Maintenance</a></li>
-        <li><a href="/cloud/security.html">Security</a></li>
+        <li><a href="{{ pathto('/cloud/architecture') }}">Cloud Architecture</a></li>
+        <li><a href="{{ pathto('/cloud/maintenance/index') }}">Maintenance</a></li>
+        <li><a href="{{ pathto('/cloud/security') }}">Security</a></li>
       </ul>
     </div>
   </li>

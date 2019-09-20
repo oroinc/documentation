@@ -11,11 +11,11 @@
 {% set title = _('Search') %}
 {%- block scripts %}
     {{ super() }}
-    <script type="text/javascript" src="{{ pathto('_static/searchtools.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/searchtools.js', 1) }}"></script>
 {%- endblock %}
 {% block footer %}
   <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("{{ pathto('searchindex.js', 1) }}"); });
+    jQuery(function() { Search.loadIndex("{{ pathto(link_prefix ~ 'searchindex.js', 1) }}"); });
   </script>
   {# this is used when loading the search index using $.ajax fails,
      such as on Chrome for documents on localhost #}
