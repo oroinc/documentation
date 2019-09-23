@@ -663,9 +663,9 @@ Most Common Resource Fields
 | id           | integer       | The unique identifier of a resource. In most cases, it is represented by an integer value, but      |
 |              |               | depending on the resource data model, it can be represented by a string or contain multiple columns |
 +--------------+---------------+-----------------------------------------------------------------------------------------------------+
-| createdAt    | datetime      | The date and time of resource record creation.                                                      |
+| createdAt    | datetime      | The date and time of resource record creation. This field is read-only.                             |
 +--------------+---------------+-----------------------------------------------------------------------------------------------------+
-| updatedAt    | datetime      | The date and time of the last update of the resource record.                                        |
+| updatedAt    | datetime      | The date and time of the last update of the resource record. This field is read-only.               |
 +--------------+---------------+-----------------------------------------------------------------------------------------------------+
 | owner        | user          | Defines the range of users that are responsible for a record and can manage it.                     |
 |              | or            | Ownership also determines access permissions.                                                       |
