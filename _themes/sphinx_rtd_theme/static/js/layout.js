@@ -2,6 +2,7 @@ var topIndent;
 
 $(document).ready(function() {
     topPosition();
+    scrollSpy();
     navigationDropDown();
     stickyHeader();
     stickyBreadcrumbs();
@@ -13,6 +14,7 @@ $(document).ready(function() {
     scrollSpy();
     setTimeout(anchorScroll, 10);
     setTimeout(isLeftSidebarScrolled, 50);
+    isRightSidebarScrolled();
     versionSwitcher();
 
     $('.sidebar .wy-menu a').on('click', function() {
@@ -360,6 +362,19 @@ function scrollSpy() {
     }
 
     smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference, .docutils .reference', topIndent);
+}
+
+function isRightSidebarScrolled() {
+    if ($('.right-sidebar').length > 0) {
+        if ($(window).prop('innerWidth') > 1199){
+            var scrollContent = $('.right-sidebar .scroll-wrapper > .scroll-content'),
+                curLink = scrollContent.find('li.active');
+
+            if ((curLink.position().top + curLink.outerHeight()) > $('.right-sidebar .scroll-wrapper').height()) {
+                scrollContent.scrollTop(curLink.position().top);
+            }
+        }
+    }
 }
 
 var smoothScrollTop = function(element, topPosition) {
