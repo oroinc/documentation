@@ -370,6 +370,7 @@ body {
     font-weight: bold;
     background: none;
     color: #252525;
+    padding: 0 .05em;
 }
 .header-search  .algolia-autocomplete .algolia-docsearch-suggestion {
     color: #252525;
@@ -1557,10 +1558,6 @@ body {
     .contents-table > ul > li > a:hover {
         color: #252525 !important;
     }
-    .switcher-container {
-        width: 250px;
-        position: fixed;
-    }
     .footer-content {
         padding: 54px 0 40px;
     }
@@ -1875,7 +1872,7 @@ body {
         top: auto !important;
         transition: none !important;
     }
-    .sidebar-holder.sticky-desktop-only {
+    .sticky-desktop-only .sidebar-holder{
         box-shadow: none;
         padding: 0;
         background: none;

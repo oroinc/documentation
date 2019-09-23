@@ -132,41 +132,45 @@
 
     <div class="three-columns-layout">
       <aside class="sidebar left-sidebar">
-        <div class="sidebar-holder sticky-block">
-          <div class="scrollbar-outer">
-            <nav class="nav-side">
-              <div class="">
-                {% block navigation %}
-                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                  {% block menu %}
-                    {#
-                      The singlehtml builder doesn't handle this toctree call when the
-                      toctree is empty. Skip building this for now.
-                    #}
-                    {% if 'singlehtml' not in builder %}
-                      {{ toctree(maxdepth=theme_navigation_depth|int,
-                                                  collapse=theme_collapse_navigation|tobool,
-                                                  includehidden=theme_includehidden|tobool,
-                                                  titles_only=theme_titles_only|tobool) }}
-                    {% endif %}
+        <div class="aside-holder sticky-block">
+          <div class="sidebar-holder nav-box">
+            <div class="scrollbar-outer">
+              <nav class="nav-side">
+                <div class="">
+                  {% block navigation %}
+                  <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                    {% block menu %}
+                      {#
+                        The singlehtml builder doesn't handle this toctree call when the
+                        toctree is empty. Skip building this for now.
+                      #}
+                      {% if 'singlehtml' not in builder %}
+                        {{ toctree(maxdepth=theme_navigation_depth|int,
+                                                    collapse=theme_collapse_navigation|tobool,
+                                                    includehidden=theme_includehidden|tobool,
+                                                    titles_only=theme_titles_only|tobool) }}
+                      {% endif %}
+                    {% endblock %}
+                  </div>
                   {% endblock %}
                 </div>
-                {% endblock %}
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
+          {% include "version-switcher.html"%}
         </div>
-        {% include "version-switcher.html"%}
       </aside>
       {% if display_toc %}
       <aside class="sidebar right-sidebar">
-        <div class="sidebar-holder sticky-block sticky-desktop-only">
-          <div class="scrollbar-outer">
-            <nav class="contents-table">
-              {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
-              {# Replace only first occurrence to be sure that we don't change any other elements except first #}
-                {{ toc|replace(title|striptags|e, "Contents", 1) }}
-            </nav>
+        <div class="aside-holder sticky-block sticky-desktop-only">
+          <div class="sidebar-holder">
+            <div class="scrollbar-outer">
+              <nav class="contents-table">
+                {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
+                {# Replace only first occurrence to be sure that we don't change any other elements except first #}
+                  {{ toc|replace(title|striptags|e, "Contents", 1) }}
+              </nav>
+            </div>
           </div>
         </div>
       </aside>
