@@ -63,7 +63,7 @@ Connect MS Outlook Add-in to Oro Instance
 -----------------------------------------
 
 .. include:: /user/concept-guides/outlook/connect.rst
-   :start-after: begin-connect-outlook
+   :start-after: begin_connect_outlook
    :end-before: finish_connect_outlook
 
 Create Leads, Opportunities, and Cases from Outlook
@@ -78,8 +78,8 @@ Review Mapping Rules Between Oro and Outlook
 --------------------------------------------
 
 .. include:: /user/concept-guides/outlook/mapping.rst
-   :start-after: begin-mapping
-   :end-before: finish-mapping
+   :start-after: begin_mapping
+   :end-before: finish_mapping
 
 Review Sync Rules Between Oro and Outlook
 -----------------------------------------

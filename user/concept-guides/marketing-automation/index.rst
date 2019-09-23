@@ -33,8 +33,8 @@ Via dotmailer
 -------------
 
 .. include:: /user/back-office/system/integrations/dotmailer/index.rst
-   :start-after: begin-include
-   :end-before: finish-include
+   :start-after: begin_include
+   :end-before: finish_include
 
 Via MailChimp
 -------------

@@ -63,7 +63,7 @@ To create a master catalog category:
       "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg)."
 
    .. include:: /user/back-office/products/products/create/create-simple.rst
-      :start-after: start-inventory
+      :start-after: start_inventory
       :end-before: finish_inventory
 
 6. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and date of its implementation.

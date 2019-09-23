@@ -117,5 +117,5 @@ This generates an email based on the template you have selected, populates it wi
 .. include:: /include/include-images.rst
    :start-after: begin
    
-.. |email-campaign-schedule| image:: /user/img/marketing/marketing/email_campaign_schedule.png
+.. |email_campaign_schedule| image:: /user/img/marketing/marketing/email_campaign_schedule.png
    :align: middle

@@ -118,7 +118,7 @@ Keep in mind that as soon as the entity is created, its ownership type cannot be
 .. include:: /include/include-images.rst
    :start-after: begin
 
-.. |oro-application| replace:: OroCommerce
+.. |oro_application| replace:: OroCommerce
 
 .. toctree::
 

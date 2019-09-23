@@ -29,7 +29,7 @@ View Shopping List Summary
 --------------------------
 
 .. include:: /user/back-office/sales/shopping-lists/view.rst
-   :start-after: begin-all
+   :start-after: begin_all
    :end-before: finish_all
 
 
