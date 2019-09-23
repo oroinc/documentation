@@ -2,6 +2,7 @@ var topIndent;
 
 $(document).ready(function() {
     topPosition();
+    scrollSpy();
     navigationDropDown();
     stickyHeader();
     stickyBreadcrumbs();
@@ -11,9 +12,9 @@ $(document).ready(function() {
     smoothScroll('.btn-back-to-top');
     backToTop();
     scrollSpy();
-    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference', topIndent);
     setTimeout(anchorScroll, 10);
     setTimeout(isLeftSidebarScrolled, 50);
+    isRightSidebarScrolled();
     versionSwitcher();
 
     $('.sidebar .wy-menu a').on('click', function() {
@@ -212,20 +213,19 @@ function stickyBlock() {
             var blockSticky = $('.sticky-block'),
                 scrollPos = $(window).scrollTop(),
                 scrollContainer = $('.three-columns-layout'),
-//                  currentPosition = scrollContainer.offset().top + scrollContainer.outerHeight(),
                 footerPos = $('.footer-container').offset().top;
 
             blockSticky.each(function() {
                 var currentSticky = $(this),
-                    currentStickyPaddings = parseInt(currentSticky.css('padding-top')) + parseInt(currentSticky.css('padding-bottom')),
+                    navBox = $(this).find('.sidebar-holder'),
+                    currentStickyPaddings = parseInt(navBox.css('padding-top')) + parseInt(navBox.css('padding-bottom')),
                     sidebarCurrent = currentSticky.parent(),
                     bodyTopPadding = $('.header-container').height(),
-//                    sidebarTopIndent = bodyTopPadding + parseInt(scrollContainer.css('padding-top')) + parseInt(sidebarCurrent.css('padding-top')) + parseInt($('content-container').css('padding-top')),
-                    versionsSwitcher = $('.switcher-container'),
+                    versionsSwitcher = currentSticky.find('.switcher-container'),
                     heightContent = $(window).height() - bodyTopPadding - parseInt(scrollContainer.css('padding-top')) - parseInt($('.content-container').css('padding-top')) - parseInt(scrollContainer.css('padding-bottom')) - parseInt(sidebarCurrent.css('padding-top')) - currentStickyPaddings,
                     heightWithFooter = scrollPos + $(window).height() - footerPos;
 
-                if (currentSticky.next(versionsSwitcher).length > 0) {
+                if (currentSticky.find(versionsSwitcher).length > 0) {
                     heightContent -= (versionsSwitcher.outerHeight() + parseInt(versionsSwitcher.css('margin-top')));
                 }
 
@@ -236,7 +236,6 @@ function stickyBlock() {
                 }
 
                 sidebarCurrent.addClass('sticky-active');
-//            currentSticky.css('top', sidebarTopIndent);
 
                 if (($(window).height() - bodyTopPadding - heightWithFooter - parseInt(scrollContainer.css('padding-top'))) < 150) {
                     if ($('.sidebar').hasClass('v-hidden')) {
@@ -263,16 +262,13 @@ function stickyBlock() {
 function versionSwitcher() {
     var versionsSwitcher = $('.switcher-container');
     if (versionsSwitcher.length > 0) {
-        var blockSticky = versionsSwitcher.prev('.sticky-block'),
-            sidebarTopIndent = blockSticky.outerHeight() + blockSticky.position().top,
+        var switcherParent = versionsSwitcher.closest('.sticky-block'),
             currentPosition;
 
         if ($(window).prop('innerWidth') > 767) {
-            currentPosition = $(window).height() - versionsSwitcher.position().top - versionsSwitcher.height() - parseInt($('.content-container').css('padding-top'));
-            versionsSwitcher.css('top', sidebarTopIndent);
+            currentPosition = $(window).height() - switcherParent.position().top - switcherParent.height() - parseInt($('.content-container').css('padding-top'));
         } else {
             currentPosition = $(window).scrollTop() + $(window).height() - versionsSwitcher.position().top - versionsSwitcher.height() - 10;
-            versionsSwitcher.css('top', 'auto');
         }
 
         if (currentPosition < (versionsSwitcher.find('.documentation-version').outerHeight() + 10)) {
@@ -362,6 +358,21 @@ function scrollSpy() {
             });
         } else {
             menuItems.parent().removeClass("active");
+        }
+    }
+
+    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference, .docutils .reference', topIndent);
+}
+
+function isRightSidebarScrolled() {
+    if ($('.right-sidebar').length > 0) {
+        if ($(window).prop('innerWidth') > 1199){
+            var scrollContent = $('.right-sidebar .scroll-wrapper > .scroll-content'),
+                curLink = scrollContent.find('li.active');
+
+            if ((curLink.position().top + curLink.outerHeight()) > $('.right-sidebar .scroll-wrapper').height()) {
+                scrollContent.scrollTop(curLink.position().top);
+            }
         }
     }
 }
