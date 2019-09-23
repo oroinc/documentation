@@ -13,6 +13,8 @@ from sphinx.builders.html import StandaloneHTMLBuilder
 class OroStandaloneHTMLBuilder(StandaloneHTMLBuilder):
     name = 'orohtml'
     search = False  # Disable search for oro
+    out_suffix = ''
+    link_suffix = ''
 
 
 def setup(app):
