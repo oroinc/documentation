@@ -72,5 +72,5 @@ You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of t
 
 .. image:: /user/img/storefront/rfq/RFQResubmitNew.png
 
-.. include:: /include/include_images.rst
+.. include:: /include/include-images.rst
    :start-after: begin

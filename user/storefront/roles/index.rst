@@ -141,6 +141,6 @@ To apply a role to a specific user:
 
 .. image:: /user/img/storefront/users_roles/RolesAllUsers.png
 
-.. include:: /include/include_images.rst
+.. include:: /include/include-images.rst
    :start-after: begin
 

@@ -9,9 +9,9 @@ Register and Sign In
 .. toctree::
    :maxdepth: 1
 
-   create_account
-   sign_in
-   forgot_password
+   create-account
+   sign-in
+   forgot-password
 
 
 The following guide gives you an overview of the first steps you need to take to start working with the store. These include registration, signing in and requesting a new password.

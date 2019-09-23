@@ -8,11 +8,11 @@ Checkout
 .. toctree::
    :maxdepth: 1
 
-   multi_page
-   single_page
-   checkout_consents
-   guest_checkout
-   checkout_promotions
+   multi-page
+   single-page
+   checkout-consents
+   guest-checkout
+   checkout-promotions
 
 Once the products for purchase and their quantity have been selected, both registered and guest customers have to go through a series of steps to submit the order.
 

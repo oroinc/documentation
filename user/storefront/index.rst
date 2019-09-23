@@ -33,20 +33,20 @@ Before you proceed consider watching the following media library tutorials:
    :titlesonly:
    :maxdepth: 1
 
-   getting_started/index
+   getting-started/index
    register/index
-   my_profile/index
-   address_book/index
+   my-profile/index
+   address-book/index
    users/index
    roles/index
    rfq/index
-   order_history/index
-   previously_purchased/index
+   order-history/index
+   previously-purchased/index
    quotes/index
-   shopping_lists/index
+   shopping-lists/index
    checkout/index
 
-.. include:: /include/include_links.rst
+.. include:: /include/include-links.rst
    :start-after: begin
 
 

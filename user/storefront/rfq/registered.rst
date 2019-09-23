@@ -66,5 +66,5 @@ In the Data Protection section, you may be required to accept mandatory consents
 
 .. image:: /user/img/storefront/rfq/rfq_data_protection.png
 
-.. include:: /include/include_images.rst
+.. include:: /include/include-images.rst
    :start-after: begin

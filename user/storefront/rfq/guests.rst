@@ -121,5 +121,5 @@ To create an RFQ from the quick order form:
 * :ref:`Guest Quote in the Storefront <frontstore-guide--guest-quotes>`
 * :ref:`Guest Quote in the Back-Office <user-guide--sales--guest-quotes>`
 
-.. include:: /include/include_images.rst
+.. include:: /include/include-images.rst
    :start-after: begin

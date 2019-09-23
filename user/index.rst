@@ -7,12 +7,12 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/concept_guides/index.html">Concept Guides</a></h2>
+   <h2><a href="https://doc.oroinc.com/user/concept-guides/index.html">Concept Guides</a></h2>
    <p>Concept Guides provide overviews of features and use-cases, help out with the general understanding of large topics.</p>
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/back_office/index.html">Back-Office</a></h2>
+   <h2><a href="https://doc.oroinc.com/user/back-office/index.html">Back-Office</a></h2>
    <p>Back-office documentation contains how-to topics grouped into sections that mirror the structure of back-office user interface.</p>
 
 .. note:: All section under Back-Office are relevant to OroCommerce application users. However, be aware that not all topics are relevant to OroCRM application. If you are an OroCRM user, please check what features are available in your installed OroCRM application, and search the documentation topics that correspond to your OroCRM menu layout.
@@ -34,8 +34,8 @@ Oro User Documentation is split into four sections, each delivering user-specifi
    :titlesonly:
    :maxdepth: 7
 
-   concept_guides/index
-   back_office/index
+   concept-guides/index
+   back-office/index
    storefront/index
    glossary
 
