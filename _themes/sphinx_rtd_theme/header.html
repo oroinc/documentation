@@ -2,7 +2,7 @@
   <div class="header-holder">
     <strong class="logo">
       <a href="{{ pathto(link_prefix ~ master_doc) }}">
-        <img width="137" src="{{ pathto(link_prefix ~ '_static/images/Oro-Docs-logo.svg', 1) }}" alt="ORO Documentation">
+        <img width="137" src="{{ pathto(link_prefix ~ '_static/images/Oro-Docs-logo.svg', 1) }}?{{ current_timestamp }}" alt="ORO Documentation">
       </a>
     </strong>
     <div class="header-search">
@@ -19,7 +19,7 @@
           <span class="sr-text">Close navigation</span>
         </button>
         <a href="{{ pathto(link_prefix ~ master_doc) }}" class="logo-drop" tabindex="-1">
-          <img src="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}" alt="Oro Inc">
+          <img src="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}?{{ current_timestamp }}" alt="Oro Inc">
         </a>
       </div>
 
@@ -44,5 +44,5 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/header.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/header.js', 1) }}?{{ current_timestamp }}"></script>
 </header>

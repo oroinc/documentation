@@ -12,6 +12,7 @@
 # serve to show the default.
 
 import sys, os
+import time
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -335,6 +336,11 @@ epub_copyright = u'2017, OroTeam'
 # Allow duplicate toc entries.
 #epub_tocdup = True
 
+# current_timestamp is used to prevent chaching of assets in case of new build
+# it's added to all css/js files as GET parameter
+html_context = {
+    'current_timestamp': time.time()
+}
 
 # Base URL of the website.
 # Required by sphinx_sitemap extension
