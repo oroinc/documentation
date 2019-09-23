@@ -11,7 +11,6 @@ $(document).ready(function() {
     smoothScroll('.btn-back-to-top');
     backToTop();
     scrollSpy();
-    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference', topIndent);
     setTimeout(anchorScroll, 10);
     setTimeout(isLeftSidebarScrolled, 50);
     versionSwitcher();
@@ -359,6 +358,8 @@ function scrollSpy() {
             menuItems.parent().removeClass("active");
         }
     }
+
+    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference, .docutils .reference', topIndent);
 }
 
 var smoothScrollTop = function(element, topPosition) {
