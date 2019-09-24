@@ -6,7 +6,8 @@ body.wy-body-for-nav {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     color: #252525;
     font-weight: 600;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -815,6 +816,9 @@ body {
     box-shadow: 1px 1px 6px rgba(133, 133, 133, 0.4);
     padding: 15px 1px 15px 21px;
 }
+.sidebar-holder > .scrollbar-outer {
+    overflow: hidden;
+}
 .nav-side {
     padding-right: 21px;
 }
@@ -1015,15 +1019,13 @@ body {
     padding: 3px 0 0 7px;
 }
 .contents-table ul ul ul li {
-    position: relative;
     padding: 0 0 0 9px;
     margin-bottom: 2px;
 }
 .contents-table ul ul ul li:before {
     content: '';
     position: absolute;
-    top: 9px;
-    left: 0;
+    margin: 9px 0 0 -9px;
     width: 3px;
     height: 3px;
     border-radius: 50%;
@@ -1294,6 +1296,42 @@ body {
 .scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -14px; }
 /*.scrollbar-outer > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -14px; }*/
 .scrollbar-outer > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -14px; }
+
+.guideline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.guideline--backend .guideline__list {
+}
+
+.guideline--backend h3 {
+    padding-bottom: 5px;
+}
+
+.guideline--backend .guideline__icon {
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    .guideline {
+        flex-direction: row;
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .guideline__item {
+        width: 50%;
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .guideline--backend .guideline__list {
+        padding-left: 0;
+    }
+}
 
 @media only screen and (max-width: 479px) {
     #searchbox {

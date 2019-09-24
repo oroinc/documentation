@@ -7,14 +7,13 @@ $(document).ready(function() {
     stickyHeader();
     stickyBreadcrumbs();
     $('.scrollbar-outer').scrollbar();
-    stickyBlock();
+    setTimeout(stickyBlock, 10);
     mobileCollapse();
     smoothScroll('.btn-back-to-top');
     backToTop();
-    scrollSpy();
     setTimeout(anchorScroll, 10);
     setTimeout(isLeftSidebarScrolled, 50);
-    isRightSidebarScrolled();
+    setTimeout(isRightSidebarScrolled, 50);
     versionSwitcher();
 
     $('.sidebar .wy-menu a').on('click', function() {
@@ -41,7 +40,7 @@ $(document).ready(function() {
 $(window).scroll(function() {
     stickyHeader();
     stickyBreadcrumbs();
-    stickyBlock();
+    setTimeout(stickyBlock, 10);
     backToTop();
     versionSwitcher();
 });
@@ -51,7 +50,7 @@ $(window).resize(function() {
     navigationDropDown();
     stickyHeader();
     stickyBreadcrumbs();
-    stickyBlock();
+    setTimeout(stickyBlock, 10);
     mobileCollapse();
     scrollSpy();
     versionSwitcher();
@@ -368,7 +367,7 @@ function isRightSidebarScrolled() {
     if ($('.right-sidebar').length > 0) {
         if ($(window).prop('innerWidth') > 1199){
             var scrollContent = $('.right-sidebar .scroll-wrapper > .scroll-content'),
-                curLink = scrollContent.find('li.active');
+                curLink = $('.right-sidebar .contents-table').find('li.active');
 
             if ((curLink.position().top + curLink.outerHeight()) > $('.right-sidebar .scroll-wrapper').height()) {
                 scrollContent.scrollTop(curLink.position().top);
