@@ -12,6 +12,7 @@ OroCommerce offers a wide range of bundles that contain the core functionality o
 
    CatalogBundle/index
    CheckoutBundle/index
+   CMSBundle/index
    CustomerBundle/index
    FrontendBundle/index
    InventoryBundle/index

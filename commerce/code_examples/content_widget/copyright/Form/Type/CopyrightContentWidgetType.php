@@ -22,12 +22,4 @@ class CopyrightContentWidgetType extends AbstractType
             ['label' => 'acme.copyright.settings.is_short.label', 'required' => false]
         );
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getBlockPrefix(): string
-    {
-        return 'acme_copyright_content_widget';
-    }
 }

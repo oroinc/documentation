@@ -17,11 +17,6 @@ class CopyrightContentWidgetTypeTest extends FormIntegrationTestCase
         parent::setUp();
     }
 
-    public function testGetBlockPrefix(): void
-    {
-        $this->assertEquals('acme_copyright_content_widget', $this->formType->getBlockPrefix());
-    }
-
     /**
      * @dataProvider submitDataProvider
      *
