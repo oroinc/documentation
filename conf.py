@@ -336,10 +336,15 @@ epub_copyright = u'2017, OroTeam'
 # Allow duplicate toc entries.
 #epub_tocdup = True
 
+# List of document titles which are related to developers documentation but placed not in the developer directory
+# All this documents and their children will get additional level to developer root document in the breadcrumbs
+developer_titles = ['Backend Developer Guide', 'Frontend Developer Guide', 'Community Guide']
+
 # current_timestamp is used to prevent chaching of assets in case of new build
 # it's added to all css/js files as GET parameter
 html_context = {
-    'current_timestamp': time.time()
+    'current_timestamp': time.time(),
+    'developer_titles': developer_titles
 }
 
 # Base URL of the website.

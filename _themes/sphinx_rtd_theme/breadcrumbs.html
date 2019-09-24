@@ -29,6 +29,21 @@
   <ul class="wy-breadcrumbs">
     {% block breadcrumbs %}
       <li><a href="{{ pathto(link_prefix ~ master_doc) }}">{{ _('Home') }}</a> <span class="sep" aria-hidden="true">></span></li>
+        {# Check that title of the current page contains titles of root developers pages #}
+        {% set breadcrumbs_ns = namespace(developer_root_required=false) %}
+        {% for dev_title in developer_titles if dev_title in title %}
+            {% set breadcrumbs_ns.developer_root_required = true %}
+        {% endfor %}
+
+        {# Check that titles of the parent pages contain titles of root developers pages #}
+        {% for doc in parents if not breadcrumbs_ns.developer_root_required %}
+            {% for dev_title in developer_titles if dev_title in doc.title %}
+                {% set breadcrumbs_ns.developer_root_required = true %}
+            {% endfor %}
+        {% endfor %}
+        {% if breadcrumbs_ns.developer_root_required %}
+            <li><a href="{{ pathto('./developer/index') }}">Developer Documentation</a> <span class="sep" aria-hidden="true">></span></li>
+        {% endif %}
         {% for doc in parents %}
           <li><a href="{{ doc.link|e }}">{{ doc.title }}</a> <span class="sep" aria-hidden="true">></span></li>
         {% endfor %}
