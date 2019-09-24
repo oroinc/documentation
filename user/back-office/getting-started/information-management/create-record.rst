@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-grids-actions-records-create:
 
 Create a Record

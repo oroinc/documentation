@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--payment--payment-providers-overview--wirecard:
 
 Wirecard Payments Services

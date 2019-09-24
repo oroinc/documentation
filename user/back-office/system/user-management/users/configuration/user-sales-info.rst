@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _sys--conf--commerce--sales--contacts-user:
 
 Sales Rep Information per User

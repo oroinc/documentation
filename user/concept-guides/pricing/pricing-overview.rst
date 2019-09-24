@@ -1,5 +1,7 @@
 .. _user-guide--pricing--overview:
 
+:oro_documentation_types: commerce
+
 Understanding Pricing in OroCommerce
 ------------------------------------
 

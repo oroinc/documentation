@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--websites--commerce--products--featured-products:
 
 Segment for Featured Products per Website

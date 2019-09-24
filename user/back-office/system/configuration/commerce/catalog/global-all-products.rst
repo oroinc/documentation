@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--catalog--special-pages--global:
 
 Special Pages (All Products)

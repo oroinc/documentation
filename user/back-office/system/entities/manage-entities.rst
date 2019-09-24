@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-entity-actions-edit:
 
 Manage Entities

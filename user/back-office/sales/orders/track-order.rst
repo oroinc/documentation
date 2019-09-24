@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--shipping-order:
 
 Add a Shipping Tracking Number to the Order

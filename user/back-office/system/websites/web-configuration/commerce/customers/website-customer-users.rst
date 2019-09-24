@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _system--website--configuration--commerce--customers--customer-users:
 
 Customer Users Per Website

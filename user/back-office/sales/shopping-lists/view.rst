@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--shopping-lists--view:
 
 View Shopping List Summary

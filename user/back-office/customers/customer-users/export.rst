@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Export Customer User Details
 ----------------------------
 

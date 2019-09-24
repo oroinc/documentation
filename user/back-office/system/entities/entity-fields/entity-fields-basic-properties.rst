@@ -1,4 +1,6 @@
-.. _admin-guide-create-entity-fields-basic: 
+:oro_documentation_types: crm, commerce
+
+.. _admin-guide-create-entity-fields-basic:
 
 Basic Entity Field Properties
 -----------------------------

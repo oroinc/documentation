@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _system--workflows--rfq-frontoffice-workflow:
 .. _system--workflows--rfq-frontoffice-workflow-rfq-illustration:
 .. _system--workflows--rfq-frontoffice-workflow-rfq-customer-statuses:

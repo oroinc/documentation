@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _warehouses-website:
 
 Warehouses per Website

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _sys--users--organization--menus--all-products--organization:
 
 Add All Products Page to Frontend Menus per Organization

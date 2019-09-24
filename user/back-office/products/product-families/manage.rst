@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _product--product-families--product-attribute-in-families:
 
 Manage Product Attributes in Product Families

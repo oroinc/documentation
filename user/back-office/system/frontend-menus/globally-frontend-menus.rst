@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _frontend-menu-globally:
 
 Customize Frontend Menus Globally

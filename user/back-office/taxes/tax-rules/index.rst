@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _tax-rules:
 
 Tax Rules

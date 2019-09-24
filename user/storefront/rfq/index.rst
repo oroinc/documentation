@@ -11,7 +11,7 @@ Requests for Quote
    registered
    guests
 
-To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create RFQs in the Oro storefront.
+To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create :term:`RFQs <Request for Quote>` in the Oro storefront.
 
 To reach RFQ menu:
 

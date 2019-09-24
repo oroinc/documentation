@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _customer-login-pages:
 
 Customer Login Pages

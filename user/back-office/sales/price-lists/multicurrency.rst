@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--pricing--multiple--currencies:
 
 Manage Prices in Multiple Currencies

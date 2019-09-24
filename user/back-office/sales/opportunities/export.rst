@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 Export an Opportunity
 =====================
 

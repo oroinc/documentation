@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Websites Configuration Settings per Website
 -------------------------------------------
 

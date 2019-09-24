@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _configuration--guide--marketing--configuration--general-setup:
 .. _marketing-system-configuration:
 

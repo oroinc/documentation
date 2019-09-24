@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _taxes--product-tax-code-create:
 
 Create a Product Tax Code

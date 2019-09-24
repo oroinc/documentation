@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc--workflows--actions--custom:
 
 Custom Workflows

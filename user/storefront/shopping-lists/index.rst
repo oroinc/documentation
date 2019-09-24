@@ -12,7 +12,7 @@ Shopping Lists
    registered
    guests
 
-In OroCommerce, shopping lists are much more than merely a list of items in a cart. For one, in OroCommerce registered customers can create and manage not just one, but multiple shopping lists. This is useful when customers have to work on many projects that need different products for various needs. Unregistered customers, in turn, can purchase goods without the need of going through the registration process, which simplifies their shopping experience and saves time.
+In OroCommerce, :term:`shopping lists <Shopping List>` are much more than merely a list of items in a cart. For one, in OroCommerce registered customers can create and manage not just one, but multiple shopping lists. This is useful when customers have to work on many projects that need different products for various needs. Unregistered customers, in turn, can purchase goods without the need of going through the registration process, which simplifies their shopping experience and saves time.
 
 .. _frontstore-guide--shopping-lists-create:
 

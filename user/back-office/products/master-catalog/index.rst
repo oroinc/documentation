@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--master-catalog:
 .. _user-guide--products--master-catalog:
 
@@ -7,7 +9,7 @@ Master Catalog
 Overview
 --------
 
-Master catalog is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, :ref:`visibility <products--product-visibility>`, and SEO settings that best fit the resulting product family.
+:term:`Master Catalog` is a tree structure that organizes all the products of your store under corresponding categories. A category combines the products of the same type into groups and helps enforce the unified selling strategy by configuring a special set of product options, :ref:`visibility <products--product-visibility>`, and SEO settings that best fit the resulting product family.
 
 Once the categories are in place, you can:
 

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc-website-configuration:
 .. _user-guide--system-websites--configure-website:
 

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _view-and-filter-product-prices:
 
 Manage Product Pricing

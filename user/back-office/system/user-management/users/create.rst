@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 Create a User
 =============
 

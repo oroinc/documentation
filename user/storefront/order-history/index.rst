@@ -13,7 +13,7 @@ Orders and Order History
    reorder
    view
 
-There are two ways two create an order in the storefront:
+There are two ways to create an :term:`order <Order>` in the storefront:
 
 * From a shopping list
 * From a quick order form

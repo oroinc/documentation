@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--quotes--create:
 
 Create a Quote

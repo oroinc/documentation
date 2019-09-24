@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _admin-guide--workflows--opportunity--management:
 .. _user-guide-system-channel-entities-opportunities--manage-flow-intro:
 

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _sys--configuration--crm--sales-pipeline--sales-territories-leads:
 
 Lead

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 
 .. _sys--users--organization--menus--all-products--website:
 

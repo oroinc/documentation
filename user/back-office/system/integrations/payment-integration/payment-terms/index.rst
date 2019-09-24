@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--payment--payment-providers-overview--payment-term-config:
 
 Payment Terms Configuration
@@ -5,7 +7,7 @@ Payment Terms Configuration
 
 .. important:: This section is a part of the :ref:`Payment Configuration <user-guide--payment>` topic that provides the general understanding of the payment concept in OroCommerce.
 
-In OroCommerce, you can use payment terms configured per customer to help them use the payment conditions guaranteed by their contract with your company.
+In OroCommerce, you can use :term:`payment terms <Payment Term>` configured per customer to help them use the payment conditions guaranteed by their contract with your company.
 
 Payment term is a set of conditions required for the sale to be completed, e.g. the period that is allowed to a buyer to pay off the amount due. Payment terms may also include cash in advance requirement, cash collection on delivery, a deferred payment period of 10/20/30 days, etc.
 

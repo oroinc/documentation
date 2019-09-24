@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-intro-log-in-edit-profile:
 
 User Menu

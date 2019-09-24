@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-my-user-configuration-display:
 
 Display Settings per User

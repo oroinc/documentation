@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _admin-configuration-email-configuration-organization:
 
 Email Configuration per Organization

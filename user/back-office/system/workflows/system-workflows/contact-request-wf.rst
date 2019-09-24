@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _admin-guide--workflows--contact-request-wf:
 
 Contact Request Workflow

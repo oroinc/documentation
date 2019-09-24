@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _system--workflows:
 .. _doc--workflows--actions--system:
 

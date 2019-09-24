@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _configuration--commerce--orders--order-creation--global:
 
 Order Creation
 ==============
 
-You can automatically assign a status to new orders once they are created.
+You can automatically assign a status to new :term:`orders <Order>` once they are created.
 
 .. hint:: This can be done globally, :ref:`per organization <configuration--commerce--orders--order-creation--organization>` and :ref:`per website <configuration--commerce--orders--order-creation--website>`.
 

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--payment--check-money-order:
 
 Check/Money Order Service

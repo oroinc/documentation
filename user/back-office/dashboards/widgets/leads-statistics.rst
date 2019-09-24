@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--leads-statistics:
 
+:oro_documentation_types: crm
+
 Leads Statistics
 ----------------
 

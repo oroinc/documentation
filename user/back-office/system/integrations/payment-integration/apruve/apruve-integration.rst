@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--payment--configuration--payment-method-integration--apruve:
 
 Apruve Payment Method Integration

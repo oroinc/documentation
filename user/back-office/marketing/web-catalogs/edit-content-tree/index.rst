@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--web-catalog-edit-content-tree:
 
 Edit a Web Catalog Content Tree

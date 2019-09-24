@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _configuration--guide--crm--configuration:
 
 CRM Configuration

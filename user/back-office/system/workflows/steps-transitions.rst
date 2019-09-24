@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide--system--workflow-management-steps-transitions:
 
 Workflow Steps, Transitions, and Attributes

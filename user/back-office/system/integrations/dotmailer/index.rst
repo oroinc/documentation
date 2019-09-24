@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-dotmailer-overview:
 .. _user-guide-dm-integration:
 

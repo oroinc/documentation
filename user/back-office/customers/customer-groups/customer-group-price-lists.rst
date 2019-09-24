@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _customers--customer-groups--edit--price-lists:
 
 Configure Price List per Customer Group

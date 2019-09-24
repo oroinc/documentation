@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--system-configuration--commerce-sales--quick-order-form--global:
 
 Quick Order Form

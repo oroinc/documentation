@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-getting-started-log-in:
 
 Log in/out

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--system--menu--menu-frontend:
 
 Edit a Frontend Menu

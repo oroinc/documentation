@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--recently-accessed--contacts:
 
+:oro_documentation_types: crm
+
 Recently Accessed Contacts
 --------------------------
 

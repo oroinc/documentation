@@ -1,3 +1,4 @@
+:oro_documentation_types: crm
 
 Export Contacts
 ===============

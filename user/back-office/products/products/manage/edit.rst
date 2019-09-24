@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--products--actions--edit:
 
 Edit a Product

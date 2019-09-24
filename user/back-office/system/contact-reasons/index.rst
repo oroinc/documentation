@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _admin-guide-contact-reasons:
 
 Contact Reasons

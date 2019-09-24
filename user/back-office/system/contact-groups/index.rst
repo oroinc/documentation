@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _contact_groups:
 
 Contact Groups 

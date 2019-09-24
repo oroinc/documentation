@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--sales--shopping-lists:
 
 Shopping Lists 
 ==============
 
-Shopping lists are similar to shopping carts in most online stores. However, shopping lists have additional features. These include the ability to:
+:term:`Shopping lists <Shopping List>` are similar to shopping carts in most online stores. However, shopping lists have additional features. These include the ability to:
 
 * Manage multiple shopping lists simultaneously.
 * Request quotes from a shopping list.

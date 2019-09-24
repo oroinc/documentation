@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _doc-leads-reports:
 
 Use Leads in Reports

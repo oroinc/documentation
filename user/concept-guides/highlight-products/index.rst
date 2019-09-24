@@ -1,5 +1,7 @@
 .. _doc--products--manage-inventory-prices-look:
 
+:oro_documentation_types: commerce
+
 Products in the Storefront
 ==========================
 
@@ -35,3 +37,4 @@ When the required number of products has been created or imported, you can furth
    new-arrivals
    related-products
    upsell-items
+   all-products/index

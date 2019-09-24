@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-my-oro-emails:
 .. _user-guide-using-emails:
 .. _doc-activities-emails-actions-compose:

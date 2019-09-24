@@ -1,5 +1,7 @@
 .. _user-guide--consents--localizing-consents:
 
+:oro_documentation_types: commerce
+
 Localize Consents
 -----------------
 

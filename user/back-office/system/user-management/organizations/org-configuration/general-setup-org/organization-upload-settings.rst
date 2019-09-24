@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization:
 
 Upload Settings per Organization

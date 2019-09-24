@@ -1,9 +1,11 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-marketing-lists:
 
 Marketing Lists
 ===============
 
-With the Oro application, you can automatically generate a marketing list of contacts that will be used for marketing purposes (mass call or mailing). For example, you can create a list of personal and contact details of customer users who registered after October 1 and whose shipping address is in California.
+With the Oro application, you can automatically generate a :term:`marketing list <Marketing Lists>` of contacts that will be used for marketing purposes (mass call or mailing). For example, you can create a list of personal and contact details of customer users who registered after October 1 and whose shipping address is in California.
 
 With marketing lists, you can run :ref:`email campaigns <user-guide-email-campaigns>` in the Oro application. You can also synchronize Oro application marketing lists with subscribers lists in :ref:`MailChimp <user-guide-mc-integration>` and address books in :ref:`dotmailer <user-guide-dm-integration>`.
 

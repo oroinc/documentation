@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Inventory Configuration Settings per Website
 ============================================
 

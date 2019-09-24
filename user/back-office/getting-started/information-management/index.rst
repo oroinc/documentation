@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-data-management-basics-entities:
 .. _user-guide-data-management-basics:
 

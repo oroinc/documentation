@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Move an Order Through Its Lifecycle
 ===================================
 

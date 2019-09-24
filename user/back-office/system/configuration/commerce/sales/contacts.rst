@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--sales--contacts:
 .. _user-guide--system-configuration--display-sales-rep-info--display-options:
 .. _sys--conf--commerce--sales--contacts-global:

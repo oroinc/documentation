@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--commerce--product--product-units:
 
 Product Units

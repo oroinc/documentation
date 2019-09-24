@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _admin-guide-create-entity-fields-example:
 
 Examples of Creating Custom Entity Fields

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _admin-configuration-email-configuration-global:
 .. _user-guide-email-admin:
 .. _doc-email-configuration:

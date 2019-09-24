@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--system--menu--config-levels--frontend-menus:
 
 Frontend Menus Configuration

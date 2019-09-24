@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-system-channel-entities-business-customer:
 
 Business Customers

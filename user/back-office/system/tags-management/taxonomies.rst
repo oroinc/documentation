@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide--system--tags-management--taxonomies:
 
 Taxonomies

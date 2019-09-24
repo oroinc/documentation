@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-dotmailer-single-sign-on:
 
 Configure Single Sign-on

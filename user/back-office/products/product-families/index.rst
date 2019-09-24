@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _products--product-families:
 
 Product Families
 ================
 
-A product family is a set of the :ref:`product attributes <products--product-attributes>` that are enough to store complete information about the products of a similar type (e.g., TV attributes vs T-shirts attributes).
+A :term:`Product Family` is a set of the :ref:`product attributes <products--product-attributes>` that are enough to store complete information about the products of a similar type (e.g., TV attributes vs T-shirts attributes).
 In the product family, attributes are organized into attribute groups that are displayed as titled sections on the OroCommerce storefront.
 
 By default, there is a product family that groups all system attributes.

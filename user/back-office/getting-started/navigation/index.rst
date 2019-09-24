@@ -1,5 +1,7 @@
 .. _getting-started--navigation:
 
+:oro_documentation_types: crm, commerce
+
 Navigation and Search
 =====================
 

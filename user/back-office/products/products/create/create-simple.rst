@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 :orphan:
 
 Create a Simple Product
@@ -11,7 +13,7 @@ See a short demo on |how to create a simple product| or keep reading the step-by
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/I0dHJ87IpzE" frameborder="0" allowfullscreen></iframe>
 
-To add a new simple product and make it available in the master catalog (for internal product management) and for purchase in the storefront:
+To add a new :term:`simple product <Simple Product>` and make it available in the master catalog (for internal product management) and for purchase in the storefront:
 
 1. Navigate to **Products > Products** in the main menu.
 2. Click **Create Product**.

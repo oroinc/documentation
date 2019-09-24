@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--pricing--pricelist--management:
 .. _user-guide--pricing--import--export:
 

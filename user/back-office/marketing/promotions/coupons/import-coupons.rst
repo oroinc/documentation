@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _import-coupons:
 
 Import Coupons

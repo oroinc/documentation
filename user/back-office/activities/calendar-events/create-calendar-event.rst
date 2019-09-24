@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-activities-events-actions-add-detailed:
 .. _doc-activities-events-actions-add-fromgrid:
 .. _doc-activities-events-information:

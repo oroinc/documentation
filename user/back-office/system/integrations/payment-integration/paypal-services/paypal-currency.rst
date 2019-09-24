@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _admin-guide--payment--paypal-currency:
 
 PayPal Currency and Currency Codes

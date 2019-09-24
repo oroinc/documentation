@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--marketing--web-catalog--sample:
 
 Build a Custom Web Catalog From Scratch (Sample)

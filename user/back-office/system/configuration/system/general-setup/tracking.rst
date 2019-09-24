@@ -1,3 +1,4 @@
+:oro_documentation_types: crm, commerce
 
 .. _admin-configuration-tracking-settings:
 .. _admin-configuration-tracking:

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _doc-my-user-configuration-integrations:
 .. _doc-my-user-configuration-msoutlook:
 

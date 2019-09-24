@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--ecommerce-statistics:
 
+:oro_documentation_types: crm, commerce
+
 Ecommerce Statistics
 --------------------
 

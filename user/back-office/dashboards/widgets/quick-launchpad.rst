@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--quick-launchpad:
 
+:oro_documentation_types: crm, commerce
+
 Quick Launchpad
 ---------------
 

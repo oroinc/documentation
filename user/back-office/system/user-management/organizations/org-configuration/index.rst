@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-organization-configuration:
 
 Configure Organization System Settings

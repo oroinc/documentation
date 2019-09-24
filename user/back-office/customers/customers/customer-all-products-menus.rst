@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--customers--customers--all-products:
 
 Add All Products Page to Frontend Menus per Customer

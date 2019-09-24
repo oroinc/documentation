@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--opportunity-generating-campaigns:
 
+:oro_documentation_types: crm
+
 Opportunity Generating Campaigns
 --------------------------------
 

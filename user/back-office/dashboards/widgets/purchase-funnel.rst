@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--purchase-funnel:
 
+:oro_documentation_types: crm, commerce
+
 Purchase Funnel
 ---------------
 

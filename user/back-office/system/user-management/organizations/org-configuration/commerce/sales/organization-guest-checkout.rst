@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--system-configuration--commerce-sales-organization:
 
 Guest Checkout per Organization

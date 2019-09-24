@@ -1,4 +1,6 @@
-.. _admin-guide-create-entity-fields-advanced: 
+:oro_documentation_types: crm, commerce
+
+.. _admin-guide-create-entity-fields-advanced:
 
 Advanced Entity Field Properties
 --------------------------------

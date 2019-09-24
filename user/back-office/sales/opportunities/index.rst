@@ -1,9 +1,11 @@
+:oro_documentation_types: crm
+
 .. _user-guide-system-channel-entities-opportunities:
 
 Opportunities
 =============
 
-Opportunities are highly probable potential or actual sales to a new or established customer. Request for proposal, invitation for a bidding, agreement of intentions or order for a delivery can be saved as opportunities. These are a universal sales tracking tool that can be related to virtually any customer type.
+:term:`Opportunities <Opportunity>` are highly probable potential or actual sales to a new or established customer. Request for proposal, invitation for a bidding, agreement of intentions or order for a delivery can be saved as opportunities. These are a universal sales tracking tool that can be related to virtually any customer type.
 
 Similar to leads, opportunities can be enabled or disabled subject to company roles or needs. once enabled, they are added to Sales in the main menu.
 

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-user-management-permissions-roles:
 .. _user-guide-user-management-permissions-roles--actions-on-entity-permissions:
 .. _user-guide-user-management-permissions:

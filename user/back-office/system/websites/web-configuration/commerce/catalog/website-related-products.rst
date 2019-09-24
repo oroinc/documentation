@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--websites--commerce--catalog--related-products:
 .. _sys--websites--commerce--catalog--upsell-products:
 

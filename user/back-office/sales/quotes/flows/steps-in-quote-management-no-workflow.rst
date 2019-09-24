@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _quotes--basic-lifecycle-management:
 
 Basic Quote Lifecycle Management (When Workflows Are Disabled)

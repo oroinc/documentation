@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. payment_expressions_begin
 
 .. _payment-shipping-expression-lang:

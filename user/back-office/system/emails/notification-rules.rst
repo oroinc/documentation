@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _system-notification-rules:
 .. _doc--notification-rules--detailed:
 .. _doc--notification-rules--recipient-list:

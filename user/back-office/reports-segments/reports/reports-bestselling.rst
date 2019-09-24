@@ -1,5 +1,7 @@
 :orphan:
 
+:oro_documentation_types: crm, commerce
+
 .. _best-selling-products-reports:
 
 Best Selling Products Report

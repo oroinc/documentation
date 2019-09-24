@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--inventory--product-options--organization:
 
 Product Options per Organization

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--pricing--create-pricelist:
 
 Create a Price List

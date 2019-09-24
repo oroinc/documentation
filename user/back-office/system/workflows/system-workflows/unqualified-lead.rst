@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _system--workflows--unqualified-sales-lead-workflow:
 
 Unqualified Sales Lead Workflow

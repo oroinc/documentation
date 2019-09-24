@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _system-websites--prepare-to-host-a-website-in-the-domain-sub-folder:
 
 Setup a Website Host

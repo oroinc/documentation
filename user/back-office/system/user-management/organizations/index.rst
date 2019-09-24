@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-management-organizations:
 .. _user-ee-multi-org:
 .. _user-ee-multi-org-system:
@@ -5,7 +7,7 @@
 Organizations
 =============
 
-An organization represents a real enterprise, business, firm, company or another organization, to which users belong. In the Community Edition of Oro applications, only one organization is available in the system, and you cannot create more.
+An :term:`organization <Organization>` represents a real enterprise, business, firm, company or another organization, to which users belong. In the Community Edition of Oro applications, only one organization is available in the system, and you cannot create more.
 
 In the Enterprise edition of Oro applications, you can :ref:`create <user-management-organization-create>` as many organizations as needed with any number of child business units within the application instance. A single user can belong to several different organization.
 

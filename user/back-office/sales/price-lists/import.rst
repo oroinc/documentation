@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _import-price-lists:
 
 Import Prices Into the Price List

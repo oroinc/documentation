@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-dotmailer-campaign:
 
 Send Email Campaign via dotmailer

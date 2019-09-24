@@ -1,9 +1,11 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-management-bu:
 
 Business Units
 ==============
 
-A business unit represents a group of users with similar business or administrative tasks/roles. 
+A :term:`business unit <Business Unit>` represents a group of users with similar business or administrative tasks/roles.
 
 For instance, one toy company with three toy shops can be set up as the main organization with three child business units created under it, one for each toy store. Permissions could be used to restrict access for these business units.
 

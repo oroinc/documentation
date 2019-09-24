@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-entity-fields:
 .. _admin-guide-create-entity-fields:
 .. _doc-entity-fields-create:

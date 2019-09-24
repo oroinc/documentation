@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Manage Coupons in Orders
 ------------------------
 

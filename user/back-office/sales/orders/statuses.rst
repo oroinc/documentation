@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--orders--statuses--internal:
 
 View Order Internal Statuses

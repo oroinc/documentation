@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _shipping-configuration-per-quote:
 
 Assign a Shipping Method to a Quote

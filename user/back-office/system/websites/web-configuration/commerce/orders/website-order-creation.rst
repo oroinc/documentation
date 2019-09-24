@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _configuration--commerce--orders--order-creation--website:
 
 Order Creation per Website

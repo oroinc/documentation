@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--website--edit--price-lists:
 
 Configure Price Lists per Website

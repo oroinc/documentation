@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _taxes--tax-jurisdiction:
 
 Tax Jurisdictions
@@ -5,7 +7,7 @@ Tax Jurisdictions
 
 .. begin
 
-Tax Jurisdiction is a geographical address of the area that is governed by the same tax laws and regulations, and that requires a dedicated set of tax calculation rules in OroCommerce: the tax rates for taxable/tax-exempt types of customers and products.
+:term:`Tax Jurisdiction` is a geographical address of the area that is governed by the same tax laws and regulations, and that requires a dedicated set of tax calculation rules in OroCommerce: the tax rates for taxable/tax-exempt types of customers and products.
 
 The sections below provide guidance on managing tax jurisdictions and assigning dedicated tax rules for these tax jurisdictions.
 

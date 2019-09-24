@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--shipping-rules:
 
 Shipping Rules
@@ -7,7 +9,7 @@ Shipping Rules
 
 .. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the payment concept in OroCommerce.
 
-You can configure one or more shipping rules that enable the shipping methods for the provided destinations and set the customized shipping service price by adding a surcharge per service option or globally for all options of the service provider.
+You can configure one or more :term:`shipping rules <Shipping Rule>` that enable the shipping methods for the provided destinations and set the customized shipping service price by adding a surcharge per service option or globally for all options of the service provider.
 
 .. stop
 

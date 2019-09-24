@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--close-revenue:
 
+:oro_documentation_types: crm, commerce
+
 Campaigns by Close Revenue
 --------------------------
 

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _guest-access-org:
 .. _sys--conf--commerce--guest-access--org:
 

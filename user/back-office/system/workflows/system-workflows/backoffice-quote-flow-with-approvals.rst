@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc--workflows--backoffice-quote-flow-with-approvals:
 .. _system--workflows--quote-backoffice-workflow:
 

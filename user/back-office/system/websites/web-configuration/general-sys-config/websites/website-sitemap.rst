@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--websites--sysconfig--websites--sitemap:
 
 Sitemap Configuration Per Website

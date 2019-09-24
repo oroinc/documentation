@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys-config--configuration--commerce--customers--visibility:
 .. _user-guide--customers--configuration--visibility:
 

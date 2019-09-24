@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _admin-guide--workflows--unqualified-sales-lead:
 
 Qualify a Lead

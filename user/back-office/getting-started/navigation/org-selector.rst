@@ -1,4 +1,7 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-getting-started-company-structure:
+
 
 Company Structure and Organization Selector
 ===========================================

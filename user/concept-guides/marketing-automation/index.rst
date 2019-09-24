@@ -1,5 +1,7 @@
 .. _user-guide-marketing-automation:
 
+:oro_documentation_types: crm, commerce
+
 .. updated on 06 July 2017
 
 Marketing Automation

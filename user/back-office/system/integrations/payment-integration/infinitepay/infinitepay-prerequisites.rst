@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--payment--prerequisites--infinitepay:
 
 Prerequisites for InfinitePay Integration

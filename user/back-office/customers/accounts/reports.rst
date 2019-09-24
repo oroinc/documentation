@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _user-guide-accounts-reports:
 
 Create Reports with Accounts

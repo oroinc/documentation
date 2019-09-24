@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--opportunity-statistics:
 
+:oro_documentation_types: crm
+
 Opportunity Statistics
 ----------------------
 

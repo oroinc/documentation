@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-commerce-integration:
 .. _user-guide-commerce-integration-accounts:
 

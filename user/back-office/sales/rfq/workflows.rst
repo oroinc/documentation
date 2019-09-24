@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _mc-sales-rfq-wf:
 
 Use RFQ Workflows

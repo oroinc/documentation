@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--todays-calendar:
 
+:oro_documentation_types: crm, commerce
+
 Today's Calendar
 ----------------
 

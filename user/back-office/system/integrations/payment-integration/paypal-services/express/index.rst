@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _config-guide--payment--paypal-express:
 
 PayPal Express Integration

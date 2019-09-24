@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--payment--payment-providers-overview--infinitepay:
 
 InfinitePay Payment Service

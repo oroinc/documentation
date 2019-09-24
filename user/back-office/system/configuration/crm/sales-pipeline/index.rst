@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _configuration--guide--crm--sales-pipeline:
 
 Sales Pipeline

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide--business-intelligence--filters-management:
 .. _user-guide-getting-started-filters:
 .. _user-guide-filters-management:

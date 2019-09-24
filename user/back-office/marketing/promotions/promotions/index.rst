@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--marketing--promotions:
 
 Promotions
 ==========
 
-Companies often develop loyalty programs offering special discounts to customers who have bought from the company before, follow them in social networks, or have commented on their website. This can motivate customers to buy more and repeat purchases from their stores, making promotions one of the most effective strategies when it comes to converting shoppers to buyers.
+Companies often develop loyalty programs offering special discounts to customers who have bought from the company before, follow them in social networks, or have commented on their website. This can motivate customers to buy more and repeat purchases from their stores, making :term:`promotions <Promotion>` one of the most effective strategies when it comes to converting shoppers to buyers.
 
 In OroCommerce, you can:
  

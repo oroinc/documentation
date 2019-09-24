@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 Customers
 =========
 
@@ -26,7 +28,7 @@ Another important concept is a Customer. Out-of-the-box, OroCommerce supports th
 
  * *Business Customers* (from CRM package) are used to represent Business Customers who are not Commerce Customers and also CRM-specific data, such as B2B Customers, Contacts, Leads, Opportunities.
 
-Additionally, you can associate *Lifetime Sales Value* with a customer and track financial statistics related to a specific customer or account.
+Additionally, you can associate :term:`Lifetime Sales Value` with a customer and track financial statistics related to a specific customer or account.
 
 Below is an illustration of the account hierarchy where CRM-related concepts are marked grey, and Commerce-related concepts are marked white.
 

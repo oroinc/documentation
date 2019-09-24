@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--guest--enable--guest_quotes:
 
 Quotes

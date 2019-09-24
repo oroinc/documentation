@@ -1,10 +1,12 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--customers--customer-users:
 .. _user-guide--customers--create-customer-user:
 
 Customer Users
 ==============
 
-Customer users act on behalf of the company (i.e. customers in Oro context)  and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
+:term:`Customer users <Customer User>` act on behalf of the company (i.e. customers in Oro context)  and may have a limited set of permissions in OroCommerce, depending on their function in the customer organization.
 
 For customer user management, navigate to **Customers > Customer Users** in the main menu.
 

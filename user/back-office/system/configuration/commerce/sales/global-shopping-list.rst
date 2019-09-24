@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--system-configuration--commerce-sales-shopping-list--mass-action:
 .. _user-guide--system-configuration--commerce-sales-shopping-list-global:
 .. _configuration-shopping-list:

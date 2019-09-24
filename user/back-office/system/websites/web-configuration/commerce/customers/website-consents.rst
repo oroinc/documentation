@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _admin--guide--commerce--configuration--customers--consents--enable--website:
 
 Consents per Website

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _mc-sales-quotes-wf:
 
 Use Quotes Workflows

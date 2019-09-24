@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--sales--orders:
 
 Orders 
 ======
 
-Orders contain information about buyers' shopping lists submitted for purchase and the collected information about billing and shipping addresses, payment methods, etc.
+:term:`Orders <Order>` contain information about buyers' shopping lists submitted for purchase and the collected information about billing and shipping addresses, payment methods, etc.
 
 In **Sales > Orders**, you can view, edit and delete the already submitted orders and create new orders on behalf of the buyers.
 

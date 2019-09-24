@@ -42,7 +42,7 @@ Glossary
       completion and a system :term:`entity <Entity>` with :term:`records <Record>` that represent such a sequence.
       
    Attribute
-      A characteristic of an entity. For example, a zip-code and and a street name are attributes of an address.
+      A characteristic of an entity. For example, a zip-code and a street name are attributes of an address.
 
    Field
       Fields are used to store details of entity records. For example, a *street name*, a *zip code*, and a *building number* may be fields of an *address*. You can add new fields to any :term:`custom entity <Custom Entity>` or an extendable :term:`system entity <System Entity>`.
@@ -68,8 +68,10 @@ Glossary
       collected information about billing and shipping address, payment method, etc.
 
    Organization
-      The highest level of the system permissions grouping. Different roles and permission settings
-      can be defined for different organization records.
+      A system :term:`entity <Entity>`. The highest level of the system permissions grouping.  Its :term:`records <Record>` represent a group of :term:`users <User>` that belong to the same enterprise, business, commerce or another organization. Different roles and permission settings can be defined for different organization records.
+
+   System Organization
+      An :term:`organization <Organization>`, from which a user can (subject to the permissions and access settings) see and process details of records in each and any organization within an Oro application instance.
 
    User
       User :term:`records <Record>` represent a person, a group of people or a third-party system using the Oro application.
@@ -79,14 +81,6 @@ Glossary
    Business Unit
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent group of :term:`users <User>` with
       similar business or administrative tasks/roles.
-
-   Organization
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent a group of :term:`users <User>` that
-      belong to the same enterprise, business, commerce or another organization.
-       
-   System Organization
-      An :term:`organization <Organization>`, from which a user can (subject to the permissions and access settings)
-      see and process details of records in each and any organization within an Oro application instance.
 
    Owner
       An :term:`organization <Organization>` or :term:`business unit <Business Unit>`, members whereof can view/process
@@ -102,8 +96,7 @@ Glossary
       that probability of the actual sales is not yet high or impossible to define.
 
    Opportunity
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent highly probable potential or actual sales
-      to a new or established customer.
+      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent highly probable potential or actual sales to a new or established customer.
 
    Lifetime Sales Value
       A metric that helps understand the :term:`Customer`. It predicts the potential benefit that the selling organization
@@ -162,7 +155,7 @@ Glossary
    Promotion
       Promotions provide discounts for :term:`customer users <Customer User>` in the storefront, enable sellers to apply various discounts to their orders, generate personalized discount coupons, and build a strategic schedule for promotions.
 
-   Landing Pages
+   Landing Page
       Landing page is a marketing tool that generates interest and leads for your sales pipeline and has a distinct call to action with a single focused objective.
 
    Web Catalog
@@ -171,7 +164,7 @@ Glossary
    Product Tax Code
       Product Tax Code is a label that is assigned to a product or product group and indicates the tax obligations and exemptions customers have when they purchase this product. These tax obligations are taken into account when a :term:`customer (user) <Customer User>` submits an order.
 
-   Tax Jurisdictions
+   Tax Jurisdiction
       Tax Jurisdiction is a geographical address of the area that is governed by the same tax laws and regulations, and that requires a dedicated set of tax calculation rules in OroCommerce: the tax rates for taxable/tax-exempt types of customers and products.
 
    Consent

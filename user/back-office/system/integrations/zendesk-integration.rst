@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-zendesk-integration:
 .. _user-guide-zendesk-channel-integration-synchronization:
 

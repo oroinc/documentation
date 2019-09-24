@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _sys--config--sysconfig--general-setup--currency:
 .. _admin-configuration-currency:
 

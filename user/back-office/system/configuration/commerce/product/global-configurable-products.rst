@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _config-guide--landing-commerce--products--configurable-products:
 .. _config-guide--landing-commerce--products--configurable-products--global:
 

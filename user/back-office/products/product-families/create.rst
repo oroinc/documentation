@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _product--product-families--create:
 
 Create a New Product Family

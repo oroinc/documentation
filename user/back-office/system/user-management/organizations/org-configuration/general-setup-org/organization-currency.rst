@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _admin-configuration-currency-org:
 
 .. begin_org_currency

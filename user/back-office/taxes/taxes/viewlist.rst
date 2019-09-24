@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 View and Filter Tax Rates
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

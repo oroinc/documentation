@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Catalog Configuration Settings per Organization
 ===============================================
 

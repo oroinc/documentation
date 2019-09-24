@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _entities-management:
 .. _admin-guide-entity-interface:
 .. _doc-entities:

@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--recent--calls:
 
+:oro_documentation_types: crm, commerce
+
 Recent Calls
 ------------
 

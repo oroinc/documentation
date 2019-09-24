@@ -1,5 +1,7 @@
 .. _products--related-products:
 
+:oro_documentation_types: commerce
+
 Manage Related Products
 -----------------------
 

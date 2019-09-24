@@ -1,3 +1,12 @@
+:oro_documentation_types: crm, commerce
+
+Scheduled Tasks
+===============
+
+.. index::
+    double: Cron Jobs ; Command
+    double: Task Scheduler ; Command
+
 .. _book-time-based-command-execution:
 
 Scheduled Tasks

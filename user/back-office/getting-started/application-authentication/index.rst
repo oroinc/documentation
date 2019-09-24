@@ -1,5 +1,7 @@
 .. _user-guide-log-in:
 
+:oro_documentation_types: crm, commerce
+
 Application Authentication
 ==========================
 

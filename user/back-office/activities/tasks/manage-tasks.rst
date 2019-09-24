@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _doc-activities-tasks-actions-edit-detailed:
 .. _doc-activities-tasks-actions-edit-fromgrid:
 .. _doc-activities-tasks-actions-edit-fromviewpage:

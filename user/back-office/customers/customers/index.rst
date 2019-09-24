@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--customers:
 
 Customers
 =========
 
-**Customers** represent companies who buy products using the storefront. **Customer users** are actual people who act on behalf of companies (i.e. customers) and have a limited set of permissions which depend on their role and function in the customer organization. You can manage customer users and roles in the back-office, or you can delegate this function to the customer who will access user and role management in the storefront.
+:term:`Customers <Customer>` represent companies who buy products using the storefront. **Customer users** are actual people who act on behalf of companies (i.e. customers) and have a limited set of permissions which depend on their role and function in the customer organization. You can manage customer users and roles in the back-office, or you can delegate this function to the customer who will access user and role management in the storefront.
 
 In the Customer section, you can manage the customers who represent a group of buyers related to the same business organization.
 

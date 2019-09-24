@@ -1,4 +1,7 @@
+:oro_documentation_types: crm, commerce
+
 .. _import-records:
+
 
 Import Records
 ==============

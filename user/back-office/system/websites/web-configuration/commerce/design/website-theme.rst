@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _configuration--commerce--design--theme--theme-settings--website:
 
 Theme per Website

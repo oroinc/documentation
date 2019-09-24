@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _frontend-menu-organization:
 
 Customize Frontend Menus per Organization

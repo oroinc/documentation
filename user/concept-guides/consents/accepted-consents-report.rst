@@ -1,5 +1,7 @@
 .. _user-guide-reports-accepted-consents:
 
+:oro_documentation_types: commerce
+
 Reports with Accepted Consents
 ==============================
 

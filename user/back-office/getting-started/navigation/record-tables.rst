@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-grids:
 .. _doc-grids-open-grid: 
 .. _doc-grids-grid-page:

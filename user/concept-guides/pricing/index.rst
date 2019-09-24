@@ -1,5 +1,7 @@
 .. _user-guide--pricing:
 
+:oro_documentation_types: commerce
+
 Price Management
 ================
 

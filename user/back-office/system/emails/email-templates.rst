@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-email-template:
 .. _user-guide-email-templates-create:
 .. _user-guide-using-emails-create-template:

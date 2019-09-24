@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--customer--contact-request-global:
 
 Contact Requests

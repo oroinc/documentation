@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _mc-system-wf:
 .. _user-guide--system--workflow-management:
 .. _doc--system--workflow-management:
@@ -5,7 +7,7 @@
 Workflows
 =========
 
-In Oro, a workflow is a business process that involves multiple user interactions or sequential phases. It may trigger other workflows and change the status of the items involved in a business process.
+In Oro, a :term:`workflow <Workflow>` is a business process that involves multiple user interactions or sequential phases. It may trigger other workflows and change the status of the items involved in a business process.
 
 In the storefront, workflows organize and direct users’ work (e.g., during the checkout), making them follow particular steps in a pre-defined order (e.g. provide shipping address, then select shipping method from the options supported for the destination), or preventing them from performing actions that either contradict or conflict with the logical steps of a process (e.g., a customer may not be able to submit an order without their manager's approval).
 

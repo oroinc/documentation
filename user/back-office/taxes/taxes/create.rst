@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--taxes--tax-rates-create:
 
 Create a Tax Rate

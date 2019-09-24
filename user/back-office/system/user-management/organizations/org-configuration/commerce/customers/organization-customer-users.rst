@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _system--user-mngm--organization--configuration--commerce--customers--customer-users:
 
 Customer Users Per Organization

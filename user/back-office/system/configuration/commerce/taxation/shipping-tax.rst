@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--taxation--shipping-tax:
 
 .. System > Configuration > Commerce > Taxation > Shipping Tax

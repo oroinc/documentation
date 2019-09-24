@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _config-guide--landing-commerce--products--configurable-products--website:
 
 Configurable Products per Website

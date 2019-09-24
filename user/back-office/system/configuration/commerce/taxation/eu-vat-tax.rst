@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--taxes--eu:
 
 EU VAT Tax for Digital Products

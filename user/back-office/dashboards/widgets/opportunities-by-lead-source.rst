@@ -1,5 +1,7 @@
 .. _user-guide--business-intelligence--widgets--opportunity-lead-source:
 
+:oro_documentation_types: crm
+
 Opportunities by Lead Source
 ----------------------------
 

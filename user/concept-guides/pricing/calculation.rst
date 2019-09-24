@@ -1,5 +1,7 @@
 .. _user-guide--pricing-calculation:
 
+:oro_documentation_types: commerce
+
 Price Calculation in the Storefront
 ------------------------------------
 

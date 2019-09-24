@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-management-organization-create:
 
 Create an Organization

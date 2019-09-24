@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _simple-quote-management-steps:
 
 Simple Quote Management: Steps and Transitions

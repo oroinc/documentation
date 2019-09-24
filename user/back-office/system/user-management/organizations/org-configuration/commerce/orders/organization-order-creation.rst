@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _configuration--commerce--orders--order-creation--organization:
 
 Order Creation per Organization
@@ -5,7 +7,7 @@ Order Creation per Organization
 
 .. begin_body
 
-To configure the order creation options per organization:
+To configure the :term:`order <Order>` creation options per organization:
 
 1. Navigate to **System > User Management > Organizations** in the main menu.
 2. For the necessary organization, hover over the |IcMore| **More Options** menu at the end of the row and click |IcConfig| to start editing the configuration.

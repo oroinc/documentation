@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _mc-customers-accounts-import:
 .. _import-accounts:
 

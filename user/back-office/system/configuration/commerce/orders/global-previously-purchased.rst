@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--commerce--orders--previously-purchased--main:
 
 Previously Purchased Products

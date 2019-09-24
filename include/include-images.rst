@@ -503,3 +503,31 @@ Images
 
    <i class="fa fa-copy" aria-hidden="true"></i>
 
+.. |IcArrowRight| raw:: html
+
+   <i class="fas fa-arrow-right" aria-hidden="true"></i>
+
+.. |IcArrowLeft| raw:: html
+
+   <i class="fas fa-arrow-left" aria-hidden="true"></i>
+
+.. |IcArrowChevronRight| raw:: html
+
+   <i class="fas fa-chevron-right" aria-hidden="true"></i>
+
+.. |IcArrowChevronLeft| raw:: html
+
+   <i class="fas fa-chevron-left" aria-hidden="true"></i>
+
+.. |IcArrowChevronDown| raw:: html
+
+   <i class="fas fa-chevron-down" aria-hidden="true"></i>
+
+.. |CommerceIcon| image:: /user/img/doctypes/commerce-icon-logo.png
+   :align: middle
+   :alt: Available in OroCommerce
+
+.. |CRMIcon| image:: /user/img/doctypes/crm-icon-logo.png
+   :align: middle
+   :alt: Available in OroCRM
+

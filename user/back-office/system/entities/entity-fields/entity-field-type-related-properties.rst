@@ -1,4 +1,6 @@
-.. _admin-guide-create-entity-fields-type-related: 
+:oro_documentation_types: crm, commerce
+
+.. _admin-guide-create-entity-fields-type-related:
 
 Type-related Entity Field Properties
 ------------------------------------

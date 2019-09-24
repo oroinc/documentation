@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _user-guide-system-channel-entities-opportunities--manage-intro:
 
 .. begin_manage_opportunities

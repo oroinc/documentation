@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _export-products:
 .. _doc--products--actions--exmport:
 

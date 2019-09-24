@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--sales--orders--promotions:
 
 Manage Discounts in Orders

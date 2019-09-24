@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--products--actions--view:
 
 View Product Details
@@ -51,7 +53,7 @@ General
    :widths: 30, 60
 
    "**Category**","The category under which the product is listed."
-   "**SKU**","The stock keeping unit that helps identify the product and track it in inventory."
+   "**SKU**","The :term:`stock keeping unit <Stock keeping unit (SKU)>` that helps identify the product and track it in inventory."
    "**Name**","The name of the product how it appears on the user interface."
    "**Type**", "Whether it is a simple product or product that have variants (configurable) --- i.e., unites several simple products. The example of a configurable product is scissors that can be bought with either red or green handles."
    "**Is Featured**", "Whether the product is included in the featured products listing."
@@ -79,7 +81,7 @@ For each product variant, the following information is displayed:
    :widths: 30, 60
 
    "**ID**","The unique identifier of the product variant."
-   "**SKU**","The stock keeping unit that helps identify the product variant and track it in inventory."
+   "**SKU**","The :term:`stock keeping unit <Stock keeping unit (SKU)>` that helps identify the product variant and track it in inventory."
    "**Name**","The name of the product variant how it appears on the user interface."
    "**Visible**", "Whether the simple product is visible in the storefront."
    "**Enabled**", "Whether the product variant is enabled and can be used."
@@ -163,7 +165,7 @@ To review related / up-sell products, click the required tab. The following rela
    :header: "Field", "Description"
    :widths: 30, 60
 
-   "**SKU**","The stock keeping unit that helps identify the related / up-sell product and track it for inventory."
+   "**SKU**","The :term:`stock keeping unit <Stock keeping unit (SKU)>` that helps identify the related / up-sell product and track it for inventory."
    "**Name**","The name of the related / up-sell product how it appears on the user interface."
    "**Inventory Status**", "Whether the related / up-sell product is in stock."
    "**Enabled**", "Whether the related / up-sell product is enabled and can be used."

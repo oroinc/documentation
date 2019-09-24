@@ -1,10 +1,12 @@
+:oro_documentation_types: commerce
+
 .. _system-websites:
 .. _user-guide--system-websites:
 
 Websites
 ========
 
-You can create multiple websites that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
+You can create multiple :term:`websites <Website>` that target a particular audience, geography, a specific brand, and a segment of goods or services that your company is providing.
 
 .. note:: The multiple websites management is only available in the Enterprise edition.
 

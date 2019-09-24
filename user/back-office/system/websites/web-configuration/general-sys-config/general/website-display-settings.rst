@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _display-settings--website:
 
 Display Settings per Website

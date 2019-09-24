@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _mc-customers-export:
 
 Export Customers

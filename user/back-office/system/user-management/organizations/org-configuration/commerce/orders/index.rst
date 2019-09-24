@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 Order Configuration Settings per Organization
 =============================================
 

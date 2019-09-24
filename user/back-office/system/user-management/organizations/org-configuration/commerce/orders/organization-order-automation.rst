@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _configuration--commerce--orders--order-automation--organization:
 
 Order Automation per Organization

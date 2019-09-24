@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--marketing--web-catalog--customize:
 
 Customize Web Catalog Contents for Localization, Customer or Customer Group

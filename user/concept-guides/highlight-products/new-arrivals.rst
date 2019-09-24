@@ -1,5 +1,7 @@
 .. _user-guide--new-products:
 
+:oro_documentation_types: commerce
+
 Highlight New Products
 ----------------------
 

@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _configuration--guide--commerce--configuration--sales-order-history:
 
 Order History (Open Orders)
 ===========================
 
-You can define whether to display open orders within the Order History menu in the storefront, or as a separate Open Orders menu item. This setting can only be configured :ref:`globally <doc-system-configuration>`:
+You can define whether to display open :term:`orders <Order>` within the Order History menu in the storefront, or as a separate Open Orders menu item. This setting can only be configured :ref:`globally <doc-system-configuration>`:
  
 1. Navigate to **System > Configuration** in the main menu.
 2. Select **Commerce > Sales > Open Orders** in the menu to the left.

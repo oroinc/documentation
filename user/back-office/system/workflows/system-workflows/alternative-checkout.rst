@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _system--workflows--alternative-checkout-workflow:
 
 Alternative Checkout Workflow 

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 :orphan:
 
 Create a Configurable Product
@@ -15,7 +17,7 @@ See a short demo on |how to create a configurable product| or keep reading the s
 Checklist 
 ^^^^^^^^^
 
-Prior to creating a configurable product, ensure that you have performed the following steps:
+Prior to creating a :term:`configurable product <Configurable Product>`, ensure that you have performed the following steps:
 
 1. Created :ref:`attributes <products--product-attributes--create>`.
    

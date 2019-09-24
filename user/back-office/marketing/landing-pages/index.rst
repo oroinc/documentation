@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--landing-pages:
 
 Landing Pages
@@ -6,7 +8,7 @@ Landing Pages
 Overview
 --------
 
-Landing page is a marketing tool that generates interest and leads for your sales pipeline and has a distinct call to action with a single focused objective.
+:term:`Landing Page` is a marketing tool that generates interest and leads for your sales pipeline and has a distinct call to action with a single focused objective.
 
 .. image:: /user/img/marketing/landing_pages/LandingPagesSample.png
    :alt: A sample of a landing page

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _export-price-lists:
 
 Export Prices from the Price List

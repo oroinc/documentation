@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--sales--requests-for-quote--details:
 
 View a Request for Quote Details

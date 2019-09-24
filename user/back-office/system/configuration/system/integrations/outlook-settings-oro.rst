@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _admin-configuration-ms-outlook-integration-settings--oro-side:
 .. _configuration--guide--system--configuration--integrations--org--ms-outlook:
 

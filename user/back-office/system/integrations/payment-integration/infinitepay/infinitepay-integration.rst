@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--integrations--manage-integrations--infinitepay:
 
 InfinitePay Payment Method Integration

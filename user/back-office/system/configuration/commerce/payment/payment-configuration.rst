@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--conf--commerce--payment--general:
 
 :oro_documentation_types: commerce

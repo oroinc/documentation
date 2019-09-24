@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _doc-activities-overview-cases:
 
 Cases

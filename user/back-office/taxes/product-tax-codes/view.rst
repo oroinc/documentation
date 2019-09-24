@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 View Product Tax Code Details
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

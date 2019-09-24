@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-activities-tasks:
 .. _doc-activities-overview-tasks:
 .. _doc-activities-tasks-actions-add:

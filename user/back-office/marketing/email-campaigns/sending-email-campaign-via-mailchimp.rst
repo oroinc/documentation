@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-mailchimp-campaign:
 
 Send an Email Campaign via MailChimp

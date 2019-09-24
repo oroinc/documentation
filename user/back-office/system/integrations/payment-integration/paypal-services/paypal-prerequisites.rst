@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--payment--prerequisites--paypal:
 
 Prerequisites for PayPal Services Integration

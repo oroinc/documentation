@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--pricing--price-list-auto--autocomplete:
 
 Use Autocomplete

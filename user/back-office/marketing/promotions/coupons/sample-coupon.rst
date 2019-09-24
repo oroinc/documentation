@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--marketing--promotions--coupons--sample:
 
 Create a Sample Coupon

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide-marketing-tracking:
 
 .. updated on 18 October 2018

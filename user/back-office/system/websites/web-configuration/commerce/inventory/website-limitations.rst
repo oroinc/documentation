@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _inventory-limitations-website:
 
 Inventory Quantity Limitations per Website

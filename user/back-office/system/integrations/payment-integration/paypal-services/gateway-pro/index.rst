@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--integrations--manage-integrations--paypal-payflow-gateway:
 .. _sys--integrations--manage-integrations--paypal-payments-pro:
 

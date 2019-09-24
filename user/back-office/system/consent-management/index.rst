@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _system-consent-management:
 
 Consent Management
@@ -14,7 +16,7 @@ Create Consents
 
 .. note:: Before you can use consents in OroCommerce, install the |Customer Consent Management| extension.
 
-To create a consent in OroCommerce:
+To create a :term:`consent <Consent>` in OroCommerce:
 
 1. Navigate to **System > Consent Management** in the main menu.
 2. Click **Create Consent** on the top right.

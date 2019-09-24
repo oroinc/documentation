@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _admin-configuration-system-mailboxes-website:
 
 Email Settings per Website

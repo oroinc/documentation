@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--websites--commerce--products--new-arrivals:
 .. _sys--commerce--product--new-arrivals-block-website:
 

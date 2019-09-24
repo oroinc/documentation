@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _quote--create-from-rfq:
 
 Create a Quote on the Customer Request

@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 Back-Office
 ===========
 
@@ -7,24 +9,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
 
 .. note:: Depending on whether you work exclusively with OroCRM or OroCommerce, you may require to search a different collection of chapters within documentation. Find application-specific sections in the tag clouds below. If you work with the OroCommerce plus OroCRM edition, search all available chapters in the menu to your left.
 
-.. raw:: html
-
-    <h2>OroCRM</h2>
-
-       <ul class="tag-cloud">
-          <li><a class="tag-very-important" href="customers/accounts/index">Accounts</a></li>
-          <li><a class="" href="customers/business-customers/index">Business Customers</a></li>
-          <li><a class="tag-important" href="customers/contacts/index">Contacts</a></li>
-          <li><a class="" href="marketing/email-campaigns/index">Email Campaigns</a></li>
-          <li><a class="" href="marketing/marketing-campaigns/index">Marketing Campaigns</a></li>
-          <li><a class="tag-very-important" href="marketing/marketing-lists/index>Marketing Lists</a></li>
-          <li><a class="" href="marketing/tracking-websites/index">Tracking Websites</a></li>
-          <li><a class="tag-important" href="sales/leads/index">Leads</a></li>
-          <li><a class="tag-very-important" href="sales/opportunities/index">Opportunities</a></li>
-          <li><a class="" href="system/integrations/zendesk-integration">Zendesk Integration</a></li>
-          <li><a class="tag-important" href="system/integrations/dotmailer/index">Dotmailer Integration</a></li>
-          <li><a class="" href="system/integrations/outlook/index">Outlook Integration</a></li>
-       </ul>
+          When browsing documentation, be on the lookout for  |CommerceIcon|  and |CRMIcon|  application icons on the top right. They indicate whether described features and concepts are available in OroCRM, OroCommerce, or both applications.
 
 .. raw:: html
 
@@ -50,6 +35,26 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="" href="system/integrations/payment-integration/index">Payment Integrations</a></li>
           <li><a class="tag-very-important" href="system/websites/index">Websites</a></li>
           <li><a class="" href="system/frontend-menus/index">Frontend Menus</a></li>
+       </ul>
+
+
+.. raw:: html
+
+    <h2>OroCRM</h2>
+
+       <ul class="tag-cloud">
+          <li><a class="tag-very-important" href="customers/accounts/index">Accounts</a></li>
+          <li><a class="" href="customers/business-customers/index">Business Customers</a></li>
+          <li><a class="tag-important" href="customers/contacts/index">Contacts</a></li>
+          <li><a class="" href="marketing/email-campaigns/index">Email Campaigns</a></li>
+          <li><a class="" href="marketing/marketing-campaigns/index">Marketing Campaigns</a></li>
+          <li><a class="tag-very-important" href="marketing/marketing-lists/index>Marketing Lists</a></li>
+          <li><a class="" href="marketing/tracking-websites/index">Tracking Websites</a></li>
+          <li><a class="tag-important" href="sales/leads/index">Leads</a></li>
+          <li><a class="tag-very-important" href="sales/opportunities/index">Opportunities</a></li>
+          <li><a class="" href="system/integrations/zendesk-integration">Zendesk Integration</a></li>
+          <li><a class="tag-important" href="system/integrations/dotmailer/index">Dotmailer Integration</a></li>
+          <li><a class="" href="system/integrations/outlook/index">Outlook Integration</a></li>
        </ul>
 
 .. raw:: html
@@ -82,8 +87,8 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
 
 
 .. toctree::
-   :hidden:
    :titlesonly:
+   :hidden:
    :maxdepth: 1
 
    getting-started/index
@@ -97,3 +102,6 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
    activities/index
    reports-segments/index
    system/index
+
+.. include:: /include/include-images.rst
+   :start-after: begin

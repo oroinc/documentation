@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _user-guide--system--tags-management-tags:
 
 Tags
@@ -7,7 +9,7 @@ Tags
 Overview
 --------
 
-The following guide describes how you can configure tags in your Oro application. Tags are located under **System > Tags Management** in the main menu.
+The following guide describes how you can configure :term:`tags <Tag>` in your Oro application. Tags are located under **System > Tags Management** in the main menu.
 
 .. note:: See a short demo on |how to create tags| or continue reading the guidance below.
 

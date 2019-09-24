@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys-config--configuration--commerce--customers--customer-users:
 
 Customer Users

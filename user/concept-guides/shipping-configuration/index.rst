@@ -1,6 +1,8 @@
 .. _admin-guide--shipping:
 .. _user-guide--shipping:
 
+:oro_documentation_types: commerce
+
 Shipping Configuration
 ======================
 

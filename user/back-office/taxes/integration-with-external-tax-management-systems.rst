@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 :orphan:
 
 .. not yet implemented. Should stay orphan for now.

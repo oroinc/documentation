@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--system-websites--manage-websites:
 
 Manage a Website

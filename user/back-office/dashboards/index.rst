@@ -1,10 +1,12 @@
 .. _user-guide--business-intelligence:
 .. _business-intelligence:
 
+:oro_documentation_types: crm, commerce
+
 Dashboard
 =========
 
-Dashboard features are all built to give B2B sellers the ability to quickly and easily obtain the relevant data needed to assess business performance.
+:term:`Dashboard` features are all built to give B2B sellers the ability to quickly and easily obtain the relevant data needed to assess business performance.
 
 Dashboards are typically the first thing that sales managers see when they login. It includes dozens of different data wizards that managers can choose, allowing them to analyze nearly any aspect of their business. When a specific data wizard is not available out-of-the-box, it can easily be created and added to the dashboard. The dashboard is completely customizable and flexible to fit any business need.
 

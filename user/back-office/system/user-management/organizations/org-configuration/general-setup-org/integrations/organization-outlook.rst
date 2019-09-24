@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _org-outlook-settings:
 
 Outlook Integration Settings per Organization

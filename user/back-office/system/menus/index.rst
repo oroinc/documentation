@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-config-menus:
 .. _doc-my-user-menus:
 

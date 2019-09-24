@@ -1,9 +1,11 @@
+:oro_documentation_types: commerce
+
 .. _user-guide--web-catalog:
 
 Web Catalogs
 ============
 
-Web catalog is a content management tool that helps build highly personalized custom versions of your websites by mixing in category pages, product pages, landing pages and pre-existing system pages in different variations based on the customer account information, their customer group or language preference.
+:term:`Web Catalog` is a content management tool that helps build highly personalized custom versions of your websites by mixing in category pages, product pages, landing pages and pre-existing system pages in different variations based on the customer account information, their customer group or language preference.
 
 With OroCommerce web catalog and content tree, you can organize the target website structure to gain improved purchasing experience and use a set of in-place SEO tools to make it reachable for your target audience.
 

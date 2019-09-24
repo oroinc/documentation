@@ -1,3 +1,5 @@
+:oro_documentation_types: crm
+
 .. _user-guide-channels:
 .. _user-guide-channel-guide-type:
 .. _user-guide-channel-guide-entities:

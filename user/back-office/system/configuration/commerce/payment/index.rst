@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _configuration--guide--commerce--configuration--payment:
 
 Payment

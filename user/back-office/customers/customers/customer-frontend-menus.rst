@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _frontend-menus-customer:
 
 Customize Frontend Menus per Customer

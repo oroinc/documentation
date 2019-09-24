@@ -2,6 +2,8 @@
 .. _user-guide--business-intelligence--widgets:
 .. _user-guide-dashboards:
 
+:oro_documentation_types: crm, commerce
+
 Dashboards
 ==========
 

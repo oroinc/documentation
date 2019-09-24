@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--products--before-you-begin:
 
 Products
@@ -21,7 +23,7 @@ With this information in mind, here are the references to the elements that need
 Create Your Products
 --------------------
 
-Next, you can proceed to creating products. You can create two types of products in OroCommerce, simple and configurable.
+Next, you can proceed to creating products. You can create two types of products in OroCommerce, :term:`simple <Simple Product>` and :term:`configurable <Configurable Product>`.
 
 Simple products are physical items that exist in a basic, single variation. Their qualifiers, such as color or size, cannot be modified meaning customers cannot select the same product with slightly different characteristics. Simple products have a unique SKU and serve as ‘building blocks’ for configurable products.
 

@@ -1,5 +1,7 @@
 .. _user-guide--consents:
 
+:oro_documentation_types: commerce
+
 Consent Management
 ==================
 

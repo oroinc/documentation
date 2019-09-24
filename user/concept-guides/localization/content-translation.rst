@@ -1,5 +1,7 @@
 .. _content-translation:
 
+:oro_documentation_types: commerce
+
 Translate Content
 -----------------
 

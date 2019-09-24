@@ -1,3 +1,5 @@
+:oro_documentation_types: crm, commerce
+
 .. _doc-activities-events-actions-view-detailed:
 .. _doc-activities-events-actions-comment-detailed:
 .. _doc-activities-events-actions-context-detailed:

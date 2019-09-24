@@ -1,10 +1,11 @@
+:oro_documentation_types: crm
+
 .. _user-guide-contacts:
 
 Contacts
 ========
 
-
-In your Oro application, you can use contacts to save details of actual people with whom you are getting in touch during the business activities.
+In your Oro application, you can use :term:`contacts <Contact>` to save details of actual people with whom you are getting in touch during the business activities.
 
 .. note:: For a quick guidance, please see a short demo on |accounts, contacts and customers|.
 

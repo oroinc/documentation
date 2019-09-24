@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--payment-rules:
 
 Payment Rules

@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _inventory-limitations-org:
 
 Inventory Quantity Limitations per Organization

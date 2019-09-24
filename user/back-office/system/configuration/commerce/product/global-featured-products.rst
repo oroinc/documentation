@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _sys--commerce--product--featured-products--main:
 .. _sys--commerce--product--featured-products:
 

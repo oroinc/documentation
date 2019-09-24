@@ -1,3 +1,5 @@
+:oro_documentation_types: commerce
+
 .. _doc--products--characteristics:
 .. _doc--products--actions--view-list:
 
@@ -14,7 +16,7 @@ The following information about products is available in the product list.
    :header: "Field", "Description"
    :widths: 30, 60
 
-   "SKU","The stock keeping unit that helps identify the product and track it for inventory."
+   "SKU","The :term:`stock keeping unit <Stock keeping unit (SKU)>` that helps identify the product and track it for inventory."
    "NAME","The name of the product how it appears on the user interface."
    "INVENTORY STATUS","Whether the product is in stock, out of stock, or discontinued."
    "STATUS","Whether the product is enabled or disabled"
