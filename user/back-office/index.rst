@@ -23,7 +23,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="tag-very-important" href="sales/opportunities/index">Opportunities</a></li>
           <li><a class="" href="system/integrations/zendesk-integration">Zendesk Integration</a></li>
           <li><a class="tag-important" href="system/integrations/dotmailer/index">Dotmailer Integration</a></li>
-          <li><a class="" href="../concept-guides/outlook/index">Outlook Integration</a></li>
+          <li><a class="" href="system/integrations/outlook/index">Outlook Integration</a></li>
        </ul>
 
 .. raw:: html
