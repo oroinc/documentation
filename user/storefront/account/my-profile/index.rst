@@ -60,8 +60,7 @@ In editing mode, you can amend the following details:
 Default Addresses
 ^^^^^^^^^^^^^^^^^
 
-The **Default Addresses** section shows the addresses used by the signed in user. Here, the primary address is displayed
- by default.
+The **Default Addresses** section shows the addresses used by the signed in user. Here, the primary address is displayed by default.
 
 You can perform the following actions for each of the addresses listed here:
 

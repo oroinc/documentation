@@ -11,7 +11,7 @@ The following guide is intended as an introduction to the OroCommerce *default* 
 
 .. hint:: Navigate the left-panel menu to find the content you are interested in, or use the search bar above.
 
-Before you proceed consider watching the following media library tutorials:
+Before you proceed, consider watching the following media library tutorials:
 
 * |Set Up Your Website Storefront – Buyer’s Perspective|. It guides you through the storefront features and possibilities available in the storefront to both guest and authenticated users. The highlights of this video tutorial include:
 
@@ -35,14 +35,10 @@ Before you proceed consider watching the following media library tutorials:
 
    getting-started/index
    register/index
-   my-profile/index
-   address-book/index
-   users/index
-   roles/index
-   rfq/index
-   order-history/index
-   previously-purchased/index
+   account/index
+   orders/index
    quotes/index
+   quick-order-form
    shopping-lists/index
    checkout/index
 

@@ -3,14 +3,6 @@
 Requests for Quote
 ==================
 
-**Table of Contents**
-
-.. toctree::
-   :maxdepth: 1
-
-   registered
-   guests
-
 To negotiate with the sales person (e.g. on a better price, more convenient quantities and additional services), you can request a quote. Both registered and guest users can create :term:`RFQs <Request for Quote>` in the Oro storefront.
 
 To reach RFQ menu:
@@ -71,6 +63,13 @@ You can print the selected RFQ by clicking **Print RFQ**  on the top right of th
 You can resubmit the RFQ by clicking |IcRedo| **Resubmit** on the top right of the view page.
 
 .. image:: /user/img/storefront/rfq/RFQResubmitNew.png
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   registered
+   guests
 
 .. include:: /include/include-images.rst
    :start-after: begin

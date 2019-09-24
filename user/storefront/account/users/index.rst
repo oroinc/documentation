@@ -3,7 +3,7 @@
 Users
 =====
 
-This section of the guide will provide information on how you can manage your organization users and roles, so they have the necessary level of access to the OroCommerce storefront capabilities.
+This section provides information on how you can manage your organization users and roles, so they have the necessary level of access to the OroCommerce storefront capabilities.
 
 The storefront user, role and permissions provide users with access to data and the ability to perform tasks based on their business responsibilities and the company guidelines. The ability to do this is crucial for both the buyer and the seller, as it helps support the various operations of their businesses. OroCommerce comes out of the box with the capabilities to allow buyers and sellers to specify the exact roles and permissions each user requires in order to do their job as efficiently as possible, eliminate mistakes and save money.
 

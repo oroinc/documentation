@@ -4,7 +4,9 @@
 Register and Sign In
 ====================
 
-**Table of Contents**
+The following guide gives you an overview of the first steps you need to take to start working with the store. These include registration, signing in and requesting a new password.
+
+Click the links below to learn more about each topic.
 
 .. toctree::
    :maxdepth: 1
@@ -12,9 +14,3 @@ Register and Sign In
    create-account
    sign-in
    forgot-password
-
-
-The following guide gives you an overview of the first steps you need to take to start working with the store. These include registration, signing in and requesting a new password.
-
-Click the links below to learn more about each topic.
-

@@ -8,10 +8,6 @@ The following information covers the **Address Book** section of the **Account**
 
 .. begin
 
-
-Open Address Book
------------------
-
 To open the address book:
 
 1. Click **Account** in the :ref:`user menu <frontstore-guide--navigation-user-menu>` on the top left of the page.
@@ -31,14 +27,10 @@ The address book has two sections:
       :width: 40%
 
 .. _frontstore-guide--address-book--manage:
-
-Manage Addresses
-----------------
-
 .. _frontstore-guide--company-address:
 
 Manage Company Addresses
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 To create a new company address:
 
@@ -86,7 +78,7 @@ You can perform the following actions for each address record:
 * Delete an address: click |IcDelete|
 
 Manage My Addresses
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 To create a new personal address:
 

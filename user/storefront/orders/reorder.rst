@@ -1,6 +1,6 @@
 .. _frontstore-guide--orders-reorder:
 
-Re-order Products
+Re-Order Products
 =================
 
 .. begin
