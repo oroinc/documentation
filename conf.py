@@ -12,7 +12,6 @@
 # serve to show the default.
 
 import sys, os
-import time
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -39,6 +38,7 @@ extensions = [
     'oro.integrity_check',
     'builders.orohtml',
     'ext.orotoc',
+    'ext.assets-timestamp',
     'ext.sitemap',
     'ext.sitemap-index'
 ]
@@ -343,7 +343,6 @@ developer_titles = ['Backend Developer Guide', 'Frontend Developer Guide', 'Comm
 # current_timestamp is used to prevent chaching of assets in case of new build
 # it's added to all css/js files as GET parameter
 html_context = {
-    'current_timestamp': time.time(),
     'developer_titles': developer_titles
 }
 
