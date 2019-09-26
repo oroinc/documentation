@@ -10,6 +10,20 @@
 {# Prefix for all links in template. It allows to make links absolute from the root with '/'  #}
 {%- set link_prefix = '' %}
 
+{# Namespace for metadata from rst documents #}
+{% set layout_ns = namespace(show_global_toc=true, show_local_toc=true, documentation_types='') %}
+{%- if meta is defined %}
+    {%- if 'oro_show_global_toc' in meta.viewkeys() %}
+        {%- set layout_ns.show_global_toc = meta.get('oro_show_global_toc')|tobool %}
+    {%- endif %}
+    {%- if 'oro_show_local_toc' in meta.viewkeys() %}
+        {%- set layout_ns.show_local_toc = meta.get('oro_show_local_toc')|tobool %}
+    {%- endif %}
+    {%- if 'oro_documentation_types' in meta.viewkeys() %}
+        {%- set layout_ns.documentation_types = meta.get('oro_documentation_types') %}
+    {%- endif %}
+{%- endif %}
+
 <!DOCTYPE html>
 <html class="no-js" lang="{{ lang_attr }}" >
 <head>
@@ -131,6 +145,7 @@
     </div>
 
     <div class="three-columns-layout">
+      {% if layout_ns.show_global_toc %}
       <aside class="sidebar left-sidebar">
         <div class="aside-holder sticky-block">
           <div class="sidebar-holder nav-box">
@@ -160,7 +175,8 @@
           {% include "version-switcher.html"%}
         </div>
       </aside>
-      {% if display_toc %}
+      {% endif %}
+      {% if layout_ns.show_local_toc and display_toc %}
       <aside class="sidebar right-sidebar">
         <div class="aside-holder sticky-block sticky-desktop-only">
           <div class="sidebar-holder">
@@ -185,15 +201,12 @@
             <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
               {%- block document %}
               <div itemprop="articleBody">
-                {%- if meta is defined %}
-                    {%- if 'oro_documentation_types' in meta.viewkeys() %}
-                        {%- set oro_documentation_types = meta.get('oro_documentation_types') %}
-                        {% for type in oro_documentation_types.split(',') %}
-                            {%- set type = type|trim -%}
-                            <img src="{{ pathto(link_prefix ~ '_static/images/doctypes/' ~ type ~ '-icon-logo.png', 1) }}" alt="Available in {{ type }}" class="oro-documentation-type">
-                        {% endfor %}
-                    {%- endif %}
-                {%- endif %}
+                  {% if layout_ns.documentation_types %}
+                      {% for type in layout_ns.documentation_types.split(',') %}
+                          {%- set type = type|trim -%}
+                          <img src="{{ pathto(link_prefix ~ '_static/images/doctypes/' ~ type ~ '-icon-logo.png', 1) }}" alt="Available in {{ type }}" class="oro-documentation-type">
+                      {% endfor %}
+                  {% endif %}
                 {% block body %}{% endblock %}
               </div>
               {% if self.comments()|trim %}
