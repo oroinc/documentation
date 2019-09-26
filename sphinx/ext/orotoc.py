@@ -15,8 +15,8 @@
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 # License for the specific language governing permissions and limitations
 # under the License.
-
-
+from sphinx.util import nodes as sphinx_nodes
+from docutils import nodes
 from sphinx import addnodes
 
 
@@ -28,12 +28,14 @@ def html_page_context(app, pagename, templatename, context, doctree):
      - Replaces the 'toctree' function with one that uses the entire
        document structure, ignores the maxdepth argument, and uses
        only prune and collapse.
+     - Adds "localtoc" function with argument maxdepth which allows to generate local ToC with specific max depth
     """
 
     if "toctree" not in context:
         # json builder doesn't use toctree func, so nothing to replace
         return
 
+    # Global ToC
     def make_toctree(collapse=True, maxdepth=-1, includehidden=True, titles_only=True):
         return get_rendered_toctree(app.builder,
                                     pagename,
@@ -45,6 +47,46 @@ def html_page_context(app, pagename, templatename, context, doctree):
                                     )
 
     context['toctree'] = make_toctree
+
+    # Local ToC
+    def make_local_toc(maxdepth=-1):
+        return get_rendered_localtoc(app.builder, pagename, maxdepth=maxdepth)
+
+    context['localtoc'] = make_local_toc
+
+
+def get_rendered_localtoc(builder, docname, **kwargs):
+    """Build the localtoc relative to the named document,
+    with the given parameters, and then return the rendered
+    HTML fragment.
+    """
+    self_toc = get_local_toc_for(builder,
+                                 docname,
+                                 **kwargs
+                                 )
+    rendered_local_toc = builder.render_partial(self_toc)['fragment']
+    return rendered_local_toc
+
+
+def get_local_toc_for(builder, docname, maxdepth=-1):
+    """Return a TOC nodetree -- for use on the same page only!"""
+    env = builder.env
+
+    if maxdepth < 0:
+        maxdepth = env.metadata[docname].get('tocdepth', 0)
+
+    toctree = env.toctree
+    try:
+        toc = toctree.tocs[docname].deepcopy()
+        toctree._toctree_prune(toc, 2, maxdepth)
+    except KeyError:
+        # the document does not exist anymore: return a dummy node that
+        # renders to nothing
+        return nodes.paragraph()
+    sphinx_nodes.process_only_nodes(toc, builder.tags, warn_node=env.warn_node)
+    for node in toc.traverse(nodes.reference):
+        node['refuri'] = node['anchorname'] or '#'
+    return toc
 
 
 def get_rendered_toctree(builder, docname, **kwargs):

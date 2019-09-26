@@ -11,13 +11,16 @@
 {%- set link_prefix = '' %}
 
 {# Namespace for metadata from rst documents #}
-{% set layout_ns = namespace(show_global_toc=true, show_local_toc=true, documentation_types='') %}
+{% set layout_ns = namespace(show_global_toc=true, show_local_toc=true, local_toc_max_depth=-1, documentation_types='') %}
 {%- if meta is defined %}
     {%- if 'oro_show_global_toc' in meta.viewkeys() %}
         {%- set layout_ns.show_global_toc = meta.get('oro_show_global_toc')|tobool %}
     {%- endif %}
     {%- if 'oro_show_local_toc' in meta.viewkeys() %}
         {%- set layout_ns.show_local_toc = meta.get('oro_show_local_toc')|tobool %}
+    {%- endif %}
+    {%- if 'oro_local_toc_max_depth' in meta.viewkeys() %}
+        {%- set layout_ns.local_toc_max_depth = meta.get('oro_local_toc_max_depth')|int %}
     {%- endif %}
     {%- if 'oro_documentation_types' in meta.viewkeys() %}
         {%- set layout_ns.documentation_types = meta.get('oro_documentation_types') %}
@@ -184,7 +187,7 @@
               <nav class="contents-table">
                 {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
                 {# Replace only first occurrence to be sure that we don't change any other elements except first #}
-                  {{ toc|replace(title|striptags|e, "Contents", 1) }}
+                  {{ localtoc(maxdepth=layout_ns.local_toc_max_depth)|replace(title|striptags|e, "Contents", 1) }}
               </nav>
             </div>
           </div>
