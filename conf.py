@@ -215,6 +215,8 @@ html_use_index = False
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'TheOroCommercedoc'
 
+html_copy_source = False
+
 def setup(app):
     app.add_stylesheet('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
 #    app.add_stylesheet('css/custom.css')
