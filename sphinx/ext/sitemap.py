@@ -59,7 +59,8 @@ def http_page_context(app, pagename, templatename, context, doctree):
 
 def add_html_link(app, pagename, context):
     """As each page is built, collect page names for the sitemap"""
-    app.sitemap_links.append(pagename + context['file_suffix'])
+    outfile = app.builder.get_target_uri(pagename)
+    app.sitemap_links.append(outfile)
 
 
 def save_current_version(app, context):
