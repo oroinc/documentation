@@ -37,7 +37,7 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
     {
         $form = $this->contentWidgetType->getSettingsForm(new ContentWidget(), Forms::createFormFactory());
 
-        $this->assertEquals('acme_copyright_content_widget', $form->getName());
+        $this->assertEquals('copyright_content_widget', $form->getName());
         $this->assertInstanceOf(FormType::class, $form->getConfig()->getType()->getInnerType());
     }
 

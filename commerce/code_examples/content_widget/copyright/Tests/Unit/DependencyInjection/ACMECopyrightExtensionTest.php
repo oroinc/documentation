@@ -2,9 +2,8 @@
 
 namespace ACME\Bundle\CopyrightBundle\Tests\Unit\DependencyInjection;
 
-use ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType as CopyrightFormType;
+use ACME\Bundle\CopyrightBundle\ContentWidget\CopyrightContentWidgetType;
 use ACME\Bundle\CopyrightBundle\DependencyInjection\ACMECopyrightExtension;
-use ACME\Bundle\CopyrightBundle\Form\Type\CopyrightContentWidgetType as CopyrightWidgetType;
 use Oro\Bundle\TestFrameworkBundle\Test\DependencyInjection\ExtensionTestCase;
 
 class ACMECopyrightExtensionTest extends ExtensionTestCase
@@ -23,8 +22,7 @@ class ACMECopyrightExtensionTest extends ExtensionTestCase
 
         $this->assertDefinitionsLoaded(
             [
-                CopyrightFormType::class,
-                CopyrightWidgetType::class,
+                CopyrightContentWidgetType::class,
             ]
         );
     }
