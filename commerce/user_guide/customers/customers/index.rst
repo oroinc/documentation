@@ -92,6 +92,11 @@ Navigate to the parent company page by clicking on the company name next to the 
 .. image:: /user_guide/img/customers/customers/CustomersViewParent_cust.png
    :alt: Click on the company name next to the parent customer to get to the parent company page
 
+All the subsidiary departments and divisions are displayed in the Subsidiaries section of the customer's parent category. From this section, you can reach any child customer's view page by clicking the |IcView| **View** icon.
+
+.. image:: /user_guide/img/customers/customers/subsidiaries.png
+   :alt: Subsidiaries section of the customer's parent category
+
 Export
 ------
 

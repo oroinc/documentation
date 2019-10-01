@@ -106,7 +106,7 @@ The sample contents of the **<installation directory>/config/parameters.yml** fi
           # website search engine configuration
           website_search_engine_index_name: oro_website_search
 
-          # Used to hide backend under specified prefix, should be started with "/", for instance "/admin"
+          # Used to hide backend under specified prefix, should start with "/" and should not end with "/", for instance "/admin"
           web_backend_prefix:         '/admin'
 
           session_handler:        session.handler.native_file

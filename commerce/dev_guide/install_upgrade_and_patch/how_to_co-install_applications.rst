@@ -5,7 +5,7 @@
 How to Add OroCommerce Capabilities to an OroCRM Application
 =============================================================
 
-.. note:: Before installing OroCommerce over OroCRM you should change default parameter ``web_backend_prefix`` to some non-empty prefix, f.e. - '/admin'.
+.. note:: Before installing OroCommerce over OroCRM, you should change default parameter ``web_backend_prefix`` to some non-empty prefix that should start with "/" and should not end with "/", for instance "/admin".
 
 .. warning:: To avoid access permissions issues, please review the Symfony `Setting up or Fixing File Permissions <http://symfony.com/doc/current/setup/file_permissions.html>`_ guide before running any commands. On top of that, consider running the command(s) below with `sudo -u [web server user name]` prefix.
 

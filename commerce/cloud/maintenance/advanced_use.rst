@@ -115,7 +115,7 @@ Some options may also be omitted as they are added automatically:
 Application Configuration
 -------------------------
 
-Custom maintenance page, web backend prefix, and consumers debug mode can be configured the following way:
+Custom maintenance page, web backend prefix, and consumers debug mode can be configured the following way. Keep in mind that the web_backend_prefix parameter should start with "/" and should not end with "/", for instance '/admin':
 
 .. code-block:: none
     :linenos:
