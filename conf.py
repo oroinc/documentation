@@ -40,7 +40,8 @@ extensions = [
     'ext.orotoc',
     'ext.assets-timestamp',
     'ext.sitemap',
-    'ext.sitemap-index'
+    'ext.sitemap-index',
+    'ext.redirects'
 ]
 
 spelling_lang='en_US'
@@ -351,6 +352,10 @@ html_context = {
 # Base URL of the website.
 # Required by sphinx_sitemap extension
 html_baseurl = 'https://doc.oroinc.com/'
+
+# Redirect file for ext.redirects extension
+# This file contains pairs of "old_document new_document"
+redirects_file = 'redirects.txt'
 
 # ORO settings
 # Sphinx versioning (scv) config
