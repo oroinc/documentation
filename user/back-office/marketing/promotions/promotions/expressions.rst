@@ -7,6 +7,8 @@ Add Expressions to Promotions
 
 Expression language for promotions expressions is a user-friendly and business oriented extension of the |Symfony Expression Language|. It is easy to use and, on top of usual comparison and logical operators, it allows iterating through the collections of items using *(collection).all* and *(collection).any* operations. Keep in mind that out-of-the-box, you can add any custom fields to the required entity in addition to the attributes listed below.
 
+.. note:: Note that the *float* values require using a number with a fractional part (a floating-point number), for example, lineItem.quantity != **1.0** instead of lineItem.quantity != **1**.
+
 Attributes Supported in Promotion Expressions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -110,7 +112,7 @@ lineItems Collection
 * lineItem.product.category.id *int*
 * lineItem.product.inventoryLevels **collection**
 * lineItem.productUnitCode *string*
-* lineItem.quantity *int*
+* lineItem.quantity *float*
 * lineItem.price.value *float*
 * lineItem.price.currency *string*
 * lineItem.product.unitPrecisions **collection**
