@@ -48,7 +48,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="tag-important" href="customers/contacts/">Contacts</a></li>
           <li><a class="" href="marketing/email-campaigns/">Email Campaigns</a></li>
           <li><a class="" href="marketing/marketing-campaigns/">Marketing Campaigns</a></li>
-          <li><a class="tag-very-important" href="marketing/marketing-lists/>Marketing Lists</a></li>
+          <li><a class="tag-very-important" href="marketing/marketing-lists/">Marketing Lists</a></li>
           <li><a class="" href="marketing/tracking-websites/">Tracking Websites</a></li>
           <li><a class="tag-important" href="sales/leads/">Leads</a></li>
           <li><a class="tag-very-important" href="sales/opportunities/">Opportunities</a></li>
