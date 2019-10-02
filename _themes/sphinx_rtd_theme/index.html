@@ -69,7 +69,7 @@
 
   {# CSS #}
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}?{{ oro_assets_timestamp }}" type="text/css" charset="utf-8" />
   <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/pygments.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
   <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
   {%- for css in css_files %}
