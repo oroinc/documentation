@@ -1,0 +1,5834 @@
+:orphan:
+
+Links
+=====
+
+.. OroCloud Documentation
+
+.. begin
+
+.. |ISO 50001| raw:: html
+
+   <a href="http://www.iso.org/iso/home/standards/management-standards/iso50001.html" target="_blank">ISO 50001</a>
+
+.. |GCP project| raw:: html
+
+   <a href="https://cloud.google.com/storage/docs/projects" target="_blank">GCP project</a>
+
+.. |region| raw:: html
+
+   <a href="https://cloud.google.com/compute/docs/regions-zones" target="_blank">region</a>
+
+.. |Data center locations| raw:: html
+
+   <a href="https://www.google.com/about/datacenters/inside/locations/index.html" target="_blank">Data center locations</a>
+
+.. |Google Cloud Load Balancing| raw:: html
+
+   <a href="https://cloud.google.com/load-balancing/" target="_blank">Google Cloud Load Balancing</a>
+
+.. |Life Inside the Cluster| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html" target="_blank">Life Inside the Cluster</a>
+
+.. |RabbitMQ Clustering| raw:: html
+
+   <a href="https://www.rabbitmq.com/clustering.html" target="_blank">RabbitMQ Clustering</a>
+
+.. |Redis Sentinel Documentation| raw:: html
+
+   <a href="https://redis.io/topics/sentinel" target="_blank">Redis Sentinel Documentation</a>
+
+.. |BeeGFS| raw:: html
+
+   <a href="https://www.beegfs.io/content/documentation/" target="_blank">BeeGFS</a>
+
+.. |GCP Region| raw:: html
+
+   <a href="https://cloud.google.com/compute/docs/regions-zones/" target="_blank">GCP Region</a>
+
+.. |opening new regions and enhancing the network| raw:: html
+
+   <a href="https://www.blog.google/topics/google-cloud/expanding-our-global-infrastructure-new-regions-and-subsea-cables" target="_blank">opening new regions and enhancing the network</a>
+
+.. |Why Google Cloud| raw:: html
+
+   <a href="https://cloud.google.com/why-google-cloud" target="_blank">Why Google Cloud</a>
+
+.. |PCI-DSS certified| raw:: html
+
+   <a href="https://cloud.google.com/security/compliance/pci-dss/" target="_blank">PCI-DSS certified</a>
+
+.. |PCI DSS Shared Responsibility GCP v31| raw:: html
+
+   <a href="https://cloud.google.com/files/PCI_DSS_Shared_Responsibility_GCP_v31.pdf" target="_blank">PCI DSS Shared Responsibility GCP v31</a>
+
+.. |How GCP smoothed our path to PCI-DSS compliance| raw:: html
+
+   <a href="https://cloudplatform.googleblog.com/2018/04/Oro-How-GCP-smoothed-our-path-to-PCI-DSS-compliance.html" target="_blank">How GCP smoothed our path to PCI-DSS compliance</a>
+
+.. |OroCloud Commitments to GDPR| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/wp-content/uploads/sites/3/2018/06/OroCloud-commitments-to-the-GDPR.pdf" target="_blank">OroCloud Commitments to GDPR</a>
+
+.. |Tunnelblick| raw:: html
+
+   <a href="https://tunnelblick.net/downloads.html" target="_blank">Tunnelblick</a>
+
+.. |GCP DDoS protection| raw:: html
+
+   <a href="https://cloud.google.com/files/GCPDDoSprotection-04122016.pdf" target="_blank">GCP DDoS protection</a>
+
+.. |install the OpenVPN| raw:: html
+
+   <a href="https://openvpn.net/index.php/open-source/documentation/howto.html#install" target="_blank">install the OpenVPN</a>
+
+.. |official Elasticsearch documentation| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html" target="_blank">official Elasticsearch documentation</a>
+
+.. |1.6| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/1.6" target="_blank">1.6</a>
+
+.. |1.6.1| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/1.6.1" target="_blank">1.6.1</a>
+
+
+
+
+
+
+.. Dev Documentation
+
+.. |form types in the Symfony documentation| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/forms.html" target="_blank">form types in the Symfony documentation</a>
+
+
+.. |Actions (Capabilities) and Entities ACL Extensions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/implementation.md" target="_blank">Actions (Capabilities) and Entities ACL Extensions</a>
+
+.. |Permissions for User Roles (UI)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/ui.md" target="_blank">Permissions for User Roles (UI)</a>
+
+.. |ACL Manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/acl-manager.md" target="_blank">ACL Manager</a>
+
+.. |Access Levels| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/access-levels.md" target="_blank">Access Levels</a>
+
+.. |Field ACL| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/field-acl.md" target="_blank">Field ACL</a>
+
+.. |Custom Listeners| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/custom-listeners.md" target="_blank">Custom Listeners</a>
+
+.. |Access Rules| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/access-rules.md" target="_blank">Access Rules</a>
+
+.. |How to Configure and Apply Custom Permissions to an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/permissions.md" target="_blank">How to Configure and Apply Custom Permissions to an Entity</a>
+
+.. |How to Work with Configurable Permissions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SecurityBundle/Resources/doc/configurable-permissions.md" target="_blank">How to Work with Configurable Permissions</a>
+
+.. |Use Emails| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmailBundle/Resources/doc/emails.md" target="_blank">Use Emails</a>
+
+.. |Use Email Templates| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">Use Email Templates</a>
+
+.. |Use Email Template Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates_migrations.md" target="_blank">Use Email Template Migrations</a>
+
+.. |Send Email and Email Template Actions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmailBundle/Resources/doc/reference/workflow/workflow-entities/transition-actions.md" target="_blank">Send Email and Email Template Actions</a>
+
+.. |Email Ownership| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmailBundle/Resources/doc/reference/security/ownership.md" target="_blank">Email Ownership</a>
+
+.. |Use System Mailboxes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EmailBundle/Resources/doc/reference/mailboxes.md" target="_blank">Use System Mailboxes</a>
+
+.. |System Configuration Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/system_configuration.md" target="_blank">System Configuration Reference</a>
+
+.. |Config Management| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/config_management.md" target="_blank">Config Management</a>
+
+.. |Add a New Configuration Scope| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ConfigBundle/Resources/doc/add_new_config_scope.md" target="_blank">Add a New Configuration Scope</a>
+
+.. |OroImportExportBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ImportExportBundle" target="_blank">OroImportExportBundle</a>
+
+.. |OroBatchBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/BatchBundle" target="_blank">OroBatchBundle</a>
+
+.. |ContactBundle| raw:: html
+
+   <a href="https://github.com/orocrm/crm/tree/master/src/Oro/Bundle/ContactBundle" target="_blank">ContactBundle</a>
+
+.. |ImportExport namespace| raw:: html
+
+   <a href="https://github.com/orocrm/crm/tree/master/src/Oro/Bundle/ContactBundle/ImportExport" target="_blank">ImportExport namespace</a>
+
+.. |Resources/config/importexport.yml| raw:: html
+
+   <a href="https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/Resources/config/importexport.yml" target="_blank">Resources/config/importexport.yml</a>
+
+.. |Symfony Serializer component| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/serializer.html" target="_blank">Symfony Serializer component</a>
+
+.. |ItemWriterInterface| raw:: html
+
+   <a href="https://github.com/akeneo/batch/blob/master/Item/ItemWriterInterface.php" target="_blank">ItemWriterInterface</a>
+
+.. |Akeneo BatchBundle| raw:: html
+
+   <a href="https://github.com/akeneo/BatchBundle" target="_blank">Akeneo BatchBundle</a>
+
+.. |ContactAddOrReplaceStrategy| raw:: html
+
+   <a href="https://github.com/orocrm/crm/blob/master/src/Oro/Bundle/ContactBundle/ImportExport/Strategy/ContactAddOrReplaceStrategy.php" target="_blank">ContactAddOrReplaceStrategy</a>
+
+.. |ImportExportBundle documentation| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/index.md" target="_blank">ImportExportBundle documentation</a>
+
+.. |OroIntegrationBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/IntegrationBundle/" target="_blank">OroIntegrationBundle</a>
+
+.. |Web Application Message Protocol (WAMP)| raw:: html
+
+   <a href="https://wamp-proto.org/" target="_blank">Web Application Message Protocol (WAMP)</a>
+
+.. |Remote Procedure Call| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Remote_procedure_call" target="_blank">Remote Procedure Call</a>
+
+.. |PubSub| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern" target="_blank">PubSub</a>
+
+.. |OroSyncBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/" target="_blank">OroSyncBundle</a>
+
+.. |oro_sync.authentication.ticket_provider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Authentication/Ticket/TicketProvider.php" target="_blank">oro_sync.authentication.ticket_provider</a>
+
+.. |GosWebSocketBundle| raw:: html
+
+   <a href="https://github.com/GeniusesOfSymfony/WebSocketBundle" target="_blank">GosWebSocketBundle</a>
+
+.. |download section on the oroinc.com/orocommerce| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">download section on the oroinc.com/orocommerce</a>
+
+.. |PHP unserialization vulnerability| raw:: html
+
+   <a href="https://cdn2.hubspot.net/hubfs/3853213/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-....pdf" target="_blank">PHP unserialization vulnerability</a>
+
+.. |Apache| raw:: html
+
+   <a href="https://httpd.apache.org/" target="_blank">Apache</a>
+
+.. |Nginx| raw:: html
+
+   <a href="https://www.nginx.com/" target="_blank">Nginx</a>
+
+.. |Symfony web server documentation| raw:: html
+
+   <a href="http://symfony.com/doc/2.8/setup/web_server_configuration.html" target="_blank">Symfony web server documentation</a>
+
+.. |Elasticsearch| raw:: html
+
+   <a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elasticsearch</a>
+
+.. |EnterpriseDB| raw:: html
+
+   <a href="https://www.enterprisedb.com/" target="_blank">EnterpriseDB</a>
+
+.. |Mozilla Firefox| raw:: html
+
+   <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Mozilla Firefox</a>
+
+.. |Google Chrome| raw:: html
+
+   <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
+
+.. |Microsoft Internet Explorer| raw:: html
+
+   <a href="https://www.microsoft.com/en-us/download/internet-explorer.aspx" target="_blank">Microsoft Internet Explorer</a>
+
+.. |Microsoft Edge| raw:: html
+
+   <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">Microsoft Edge</a>
+
+.. |Safari| raw:: html
+
+   <a href="http://www.apple.com/safari/" target="_blank">Safari</a>
+
+.. |Tidy PHP extension| raw:: html
+
+   <a href="http://php.net/manual/en/book.tidy.php" target="_blank">Tidy PHP extension</a>
+
+.. |MySQL| raw:: html
+
+   <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+
+.. |Node.js| raw:: html
+
+   <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
+
+.. |Supervisor| raw:: html
+
+   <a href="http://supervisord.org/" target="_blank">Supervisor</a>
+
+.. |PostgreSQL| raw:: html
+
+   <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>
+
+.. |PHP| raw:: html
+
+   <a href="https://secure.php.net/" target="_blank">PHP</a>
+
+.. |RabbitMQ| raw:: html
+
+   <a href="https://www.rabbitmq.com/" target="_blank">RabbitMQ</a>
+
+.. |RabbitMQfeatures| raw:: html
+
+   <a href="https://www.rabbitmq.com/#features" target="_blank">RabbitMQ</a>
+
+.. |AMQP| raw:: html
+
+   <a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html" target="_blank">AMQP</a>
+
+
+.. |Redis| raw:: html
+
+   <a href="https://redis.io/" target="_blank">Redis</a>
+
+.. |Install Git| raw:: html
+
+   <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Install Git</a>
+
+.. |Install Node.js| raw:: html
+
+   <a href="https://nodejs.org/en/download/package-manager/" target="_blank">Install Node.js</a>
+
+.. |Install PHPStorm| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/install-and-set-up-product.html" target="_blank">Install PHPStorm</a>
+
+.. |Symfony plugin| raw:: html
+
+   <a href="https://plugins.jetbrains.com/plugin/7219-symfony-plugin" target="_blank">Symfony plugin</a>
+
+.. |Oro plugin| raw:: html
+
+   <a href="https://plugins.jetbrains.com/plugin/8449-oro-phpstorm-plugin" target="_blank">Oro plugin</a>
+
+.. |official PHPStorm plugin management instructions| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/managing-plugins.html" target="_blank">official PHPStorm plugin management instructions</a>
+
+.. |Enable PHP Code Sniffer| raw:: html
+
+   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm" target="_blank">Enable PHP Code Sniffer</a>
+
+.. |Enable PHP Mess Detector| raw:: html
+
+   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHP+Mess+Detector+in+PhpStorm" target="_blank">Enable PHP Mess Detector</a>
+
+.. |Github guide on forking a repo| raw:: html
+
+   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">Github guide on forking a repo</a>
+
+.. |make a package| raw:: html
+
+   <a href="https://symfonycasts.com/screencast/question-answer-day/create-composer-package" target="_blank">make a package</a>
+
+.. |Keep your fork synced| raw:: html
+
+   <a href="https://help.github.com/articles/fork-a-repo/#keep-your-fork-synced" target="_blank">Keep your fork synced</a>
+
+.. |Vagrant| raw:: html
+
+   <a href="https://www.vagrantup.com/" target="_blank">Vagrant</a>
+
+.. |Install VirtualBox| raw:: html
+
+   <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">Install VirtualBox</a>
+
+.. |Install Vagrant| raw:: html
+
+   <a href="https://www.vagrantup.com/docs/installation/" target="_blank">Install Vagrant</a>
+
+.. |Install Git.| raw:: html
+
+   <a href="https://www.atlassian.com/git/tutorials/install-git" target="_blank">Install Git.</a>
+
+.. |release tag| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/releases" target="_blank">release tag</a>
+
+.. |Github token| raw:: html
+
+   <a href="https://github.com/settings/tokens" target="_blank">Github token</a>
+
+.. |Github rate limits| raw:: html
+
+   <a href="https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens" target="_blank">Github rate limits</a>
+
+.. |hosts| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Hosts_(file)" target="_blank">hosts</a>
+
+.. |official Vagrant documentation| raw:: html
+
+   <a href="https://www.vagrantup.com/docs/" target="_blank">official Vagrant documentation</a>
+
+.. |Docker Provision| raw:: html
+
+   <a href="https://github.com/oroinc/environment" target="_blank">Docker Provision</a>
+
+.. |OroCommerce website| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/download" target="_blank">OroCommerce website</a>
+
+.. |Red Hat| raw:: html
+
+   <a href="https://www.redhat.com/" target="_blank">Red Hat</a>
+
+.. |software collections| raw:: html
+
+   <a href="https://www.softwarecollections.org/en/about/" target="_blank">software collections</a>
+
+.. |official documentation| raw:: html
+
+   <a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx" target="_blank">official documentation</a>
+
+.. |Apache PageSpeed module| raw:: html
+
+   <a href="https://www.modpagespeed.com/" target="_blank">Apache PageSpeed module</a>
+
+.. |OroSyncBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle" target="_blank">OroSyncBundle documentation</a>
+
+.. |OroRedisConfigBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/redis-config" target="_blank">OroRedisConfigBundle documentation</a>
+
+.. |Supervisord| raw:: html
+
+   <a href="http://supervisord.org/" target="_blank">Supervisord</a>
+
+.. |Configure Query Designer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#query-designer-configuration" target="_blank">Configure Query Designer</a>
+
+.. |Configure Filters| raw:: html
+
+   <a href="http://supervisord.org/" target="_blank">Configure Filters</a>
+
+.. |Modify an Existing Filter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#how-modify-existing-filter-from-your-bundle" target="_blank">Modify an Existing Filter</a>
+
+.. |Grouping Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#grouping-configuration" target="_blank">Grouping Configuration</a>
+
+.. |Configure Aggregating Functions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/backend/config.md#aggregating-functions-configuration" target="_blank">Configure Aggregating Functions</a>
+
+.. |Condition Builder Component| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/QueryDesignerBundle/Resources/doc/frontend/condition-builder.md" target="_blank">Condition Builder Component</a>
+
+.. |SensioFrameworkExtraBundle documentation| raw:: html
+
+   <a href="http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html" target="_blank">SensioFrameworkExtraBundle documentation</a>
+
+.. |OroUIBundle:actions:index.html.twig| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/index.html.twig" target="_blank">OroUIBundle:actions:index.html.twig</a>
+
+.. |macro from the UI bundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/macros.html.twig" target="_blank">macro from the UI bundle</a>
+
+.. |update.html.twig| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/views/actions/update.html.twig" target="_blank">update.html.twig</a>
+
+.. |OroSecurityBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SecurityBundle/readme.md" target="_blank">OroSecurityBundle</a>
+
+.. |OroDatagridBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/README.md" target="_blank">OroDatagridBundle</a>
+
+.. |OroFormUpdateHandler| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/FormBundle/Model/UpdateHandler.php" target="_blank">OroFormUpdateHandler</a>
+
+.. |Define a New Feature| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#how-to-define-new-feature" target="_blank">Define a New Feature</a>
+
+.. |Add New Options to Feature Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#adding-new-options-to-feature-configuration" target="_blank">Add New Options to Feature Configuration</a>
+
+.. |Check Feature State| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#adding-new-options-to-feature-configuration" target="_blank">Check Feature State</a>
+
+.. |Include a Service Into a Feature| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#including-a-service-into-a-feature" target="_blank">Include a Service Into a Feature</a>
+
+.. |Check Feature State with a Feature Voter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#feature-state-checking" target="_blank">Check Feature State with a Feature Voter</a>
+
+.. |Change Decision Strategy| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#changing-the-decision-strategy" target="_blank">Change Decision Strategy</a>
+
+.. |Use Checker for Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FeatureToggleBundle#using-checker-for-commands" target="_blank">Use Checker for Commands</a>
+
+.. |Actions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/config/oro/actions.yml" target="_blank">Actions</a>
+
+.. |available operations and their configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">available operations and their configuration</a>
+
+.. |DELETE operation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md#default-operations" target="_blank">DELETE operation</a>
+
+.. |JavaScript UnitTests| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/js_unittests.md" target="_blank">JavaScript UnitTests</a>
+
+.. |Oro Behat Extension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TestFrameworkBundle/Behat/README.md" target="_blank">Oro Behat Extension</a>
+
+.. |Additional Doctrine Events| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TestFrameworkBundle/Resources/doc/reference/doctrine_events.md" target="_blank">Additional Doctrine Events</a>
+
+.. |build ngx pagespeed from source| raw:: html
+
+   <a href="https://modpagespeed.com/doc/build_ngx_pagespeed_from_source" target="_blank">build ngx pagespeed from source</a>
+
+.. |installing from Apache-only packages| raw:: html
+
+   <a href="https://modpagespeed.com/doc/download" target="_blank">installing from Apache-only packages</a>
+
+.. |Elasticsearch website| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/tune-for-search-speed.html" target="_blank">Elasticsearch website</a>
+
+.. |swapping| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-configuration-memory.html" target="_blank">swapping</a>
+
+.. |Redis configuration file example| raw:: html
+
+   <a href="http://download.redis.io/redis-stable/redis.conf" target="_blank">Redis configuration file example</a>
+
+.. |Redis website| raw:: html
+
+   <a href="https://redis.io/topics/memory-optimization" target="_blank">Redis website</a>
+
+.. |PostgreSQL website| raw:: html
+
+   <a href="https://wiki.postgresql.org/wiki/Performance_Optimization" target="_blank">PostgreSQL website</a>
+
+.. |Optimization| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.7/en/optimization.html" target="_blank">Optimization</a>
+
+.. |Symfony website| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/performance.html" target="_blank">Symfony website</a>
+
+.. |Doctrine website| raw:: html
+
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/reference/improving-performance.html" target="_blank">Doctrine website</a>
+
+.. |Blackfire| raw:: html
+
+   <a href="https://blackfire.io/" target="_blank">Blackfire</a>
+
+.. |Blackfire in its documentation portal| raw:: html
+
+   <a href="https://blackfire.io/docs/book/index" target="_blank">Blackfire in its documentation portal</a>
+
+.. |OroConfigBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ConfigBundle" target="_blank">OroConfigBundle</a>
+
+.. |semantic configurations| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/bundles/extension.html" target="_blank">semantic configurations</a>
+
+.. |bundle alias| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/bundles/best_practices.html#bundle-name" target="_blank">bundle alias</a>
+
+.. |Amazon Machine Image (AMI)| raw:: html
+
+   <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html" target="_blank">Amazon Machine Image (AMI)</a>
+
+.. |Amazon Web Services Marketplace| raw:: html
+
+   <a href="https://aws.amazon.com/marketplace" target="_blank">Amazon Web Services Marketplace</a>
+
+.. |Amazon EC2| raw:: html
+
+   <a href="https://aws.amazon.com/ec2/" target="_blank">Amazon EC2</a>
+
+.. |account| raw:: html
+
+   <a href="https://aws.amazon.com/account/" target="_blank">account</a>
+
+.. |AWS Management Console| raw:: html
+
+   <a href="https://console.aws.amazon.com/console/home" target="_blank">AWS Management Console</a>
+
+.. |EC2 Dashboard| raw:: html
+
+   <a href="https://console.aws.amazon.com/ec2/v2/home" target="_blank">EC2 Dashboard</a>
+
+.. |Connecting to Your Linux Instance Using SSH| raw:: html
+
+   <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html" target="_blank">Connecting to Your Linux Instance Using SSH</a>
+
+.. |Getting Started with Amazon EC2| raw:: html
+
+   <a href="https://aws.amazon.com/ec2/getting-started/" target="_blank">Getting Started with Amazon EC2 </a>
+
+.. |optimizing InnoDB Disk I/O| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-diskio.html" target="_blank">optimizing InnoDB Disk I/O</a>
+
+.. |Unicode Support| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.7/en/charset-unicode.html" target="_blank">Unicode Support</a>
+
+.. |InnoDB File-Format Management| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.7/en/innodb-file-format.html" target="_blank">InnoDB File-Format Management</a>
+
+.. |Setting up the Database to be UTF8| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/doctrine.html#configuring-the-database" target="_blank">Setting up the Database to be UTF8</a>
+
+.. |the other levels| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.5/en/charset-syntax.html" target="_blank">the other levels</a>
+
+.. |Create a Custom Tax Provider| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/TaxBundle#create-custom-tax-provider" target="_blank">Create a Custom Tax Provider</a>
+
+.. |TaskBundle| raw:: html
+
+   <a href="https://github.com/oroinc/OroCRMTaskBundle" target="_blank">TaskBundle</a>
+
+.. |OroCRM Application| raw:: html
+
+   <a href="https://github.com/oroinc/crm-application" target="_blank">OroCRM Application</a>
+
+.. |Enable Previously Purchased Products| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#config" target="_blank">Enable Previously Purchased Products</a>
+
+.. |Website Search Index| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#website-search-index" target="_blank">Website Search Index</a>
+
+.. |Reindex Listeners| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#reindex-listeners" target="_blank">Reindex Listeners</a>
+
+.. |Managers| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#managers" target="_blank">Managers</a>
+
+.. |Providers| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/OrderBundle/Resources/doc/previously-purchased-products.md#providers" target="_blank">Providers</a>
+
+.. |relevant documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">relevant documentation </a>
+
+.. |Improve Catalog Performance| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CatalogBundle/Resources/doc/performance-notes.md" target="_blank">Improve Catalog Performance</a>
+
+.. |Enable Price Sharding| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-sharding.md" target="_blank">Enable Price Sharding</a>
+
+.. |Create a Pricing Strategy| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/pricing-strategy.md" target="_blank">Create a Pricing Strategy</a>
+
+.. |Merge by Priority Pricing Strategy| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/pricing_strategy_merge_by_priority.md" target="_blank">Merge by Priority Pricing Strategy</a>
+
+.. |Minimal Prices Pricing Strategy| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/pricing_strategy_minimal_prices.md" target="_blank">Minimal Prices Pricing Strategy</a>
+
+.. |Set Up a Price Storage| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-storage.md" target="_blank">Set Up a Price Storage</a>
+
+.. |Replace the Default Storage| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PricingBundle/Resources/doc/price-storage.md#replacing-default-storage" target="_blank">Replace the Default Storage</a>
+
+.. |Doctrine ORM documentation| raw:: html
+
+   <a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html" target="_blank">Doctrine ORM documentation</a>
+
+.. |OroMigrationBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">OroMigrationBundle</a>
+
+.. |EntityConfigBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/EntityConfigBundle" target="_blank">EntityConfigBundle</a>
+
+.. |OroNoteBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/NoteBundle" target="_blank">OroNoteBundle</a>
+
+.. |Doctrine| raw:: html
+
+   <a href="https://www.doctrine-project.org/" target="_blank">Doctrine</a>
+
+.. |EntityExtendBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/EntityExtendBundle" target="_blank">EntityExtendBundle</a>
+
+.. |ActivityBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityBundle" target="_blank">ActivityBundle</a>
+
+.. |Symfony Framework| raw:: html
+
+   <a href="https://symfony.com/" target="_blank">Symfony Framework</a>
+
+.. |Symfony versus Flat PHP: Why is Symfony better than just opening up a file and writing flat PHP?| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/introduction/from_flat_php_to_symfony2.html" target="_blank">Symfony versus Flat PHP: Why is Symfony better than just opening up a file and writing flat PHP?</a>
+
+.. |7 Good Reasons to Use Symfony Framework for Your Project| raw:: html
+
+   <a href="https://hackernoon.com/7-good-reasons-to-use-symfony-framework-for-your-project-265f96dcf759" target="_blank">7 Good Reasons to Use Symfony Framework for Your Project</a>
+
+.. |Why Symfony? Seven Facts| raw:: html
+
+   <a href="https://matthiasnoback.nl/2013/08/why-symfony-seven-facts/" target="_blank">Why Symfony? Seven Facts</a>
+
+.. |Symfony documentation| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/index.html" target="_blank">Symfony documentation</a>
+
+.. |Symfony applications| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/introduction/http_fundamentals.html#the-symfony-application-flow" target="_blank">Symfony applications </a>
+
+.. |Symfony Event Dispatcher| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/event_dispatcher.html" target="_blank">Symfony Event Dispatcher</a>
+
+.. |Inversion of Control principle| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">Inversion of Control principle</a>
+
+.. |Symfony's Service container| raw:: html
+
+   <a href="http://symfony.com/doc/3.4/service_container.html" target="_blank">Symfony's Service container</a>
+
+.. |Dependency Injection Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/dependency_injection.html" target="_blank">Dependency Injection Component</a>
+
+.. |bundle system| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/bundles.html" target="_blank">bundle system</a>
+
+.. |Flex| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/setup/flex.html" target="_blank">Flex</a>
+
+.. |recommends to consider Flex as an alpha up to 4th versions of Symfony| raw:: html
+
+   <a href="https://medium.com/@fabpot/fabien-potencier-4574622d6a7e" target="_blank">recommends to consider Flex as an alpha up to 4th versions of Symfony</a>
+
+.. |Symfony 4 recommendations| raw:: html
+
+   <a href="http://fabien.potencier.org/symfony4-directory-structure.html" target="_blank">Symfony 4 recommendations</a>
+
+.. |according to Symfony conventions| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/best_practices/configuration.html" target="_blank">according to Symfony conventions</a>
+
+.. |Symfony Templating| raw:: html
+
+   <a href="https://symfony.com/doc/current/templating.html" target="_blank">Symfony Templating</a>
+
+.. |Layouts| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle" target="_blank">Layouts</a>
+
+.. |TWIG templating engine| raw:: html
+
+   <a href="https://twig.symfony.com/" target="_blank">TWIG templating engine</a>
+
+.. |Symfony Templating Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/templating.html" target="_blank">Symfony Templating Component</a>
+
+.. |Role Based Access Control| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Role-based_access_control" target="_blank">Role Based Access Control</a>
+
+.. |Symfony Security Components| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/security/introduction.html" target="_blank">Symfony Security Components</a>
+
+.. |Oro Doctrine Extensions| raw:: html
+
+   <a href="https://github.com/oroinc/doctrine-extensions" target="_blank">Oro Doctrine Extensions</a>
+
+.. |come with a command line interface tool| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/console.html" target="_blank">come with a command line interface tool</a>
+
+.. |Asset Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/asset.html" target="_blank">Asset Component</a>
+
+.. |Console Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/console.html" target="_blank">Console Component</a>
+
+.. |DependencyInjection Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/dependency_injection.html" target="_blank">DependencyInjection Component</a>
+
+.. |EventDispatcher Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/event_dispatcher.html" target="_blank">EventDispatcher Component</a>
+
+.. |Form Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/form.html" target="_blank">Form Component</a>
+
+.. |HttpFoundation Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/http_foundation.html" target="_blank">The HttpFoundation Component</a>
+
+.. |HttpKernel Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/http_kernel.html" target="_blank">HttpKernel Component</a>
+
+.. |OptionsResolver Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/options_resolver.html">OptionsResolver Component</a>
+
+.. |PropertyAccess Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/property_access.html" target="_blank">PropertyAccess Component</a>
+
+.. |Routing Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/routing.html" target="_blank">Routing Component</a>
+
+.. |Security Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/security.html" target="_blank">Security Component</a>
+
+.. |Serializer Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/serializer.html" target="_blank">Serializer Component</a>
+
+.. |Templating Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/templating.html" target="_blank">Templating Component</a>
+
+.. |Translation Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/translation.html" target="_blank">Translation Component</a>
+
+.. |Validator Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/validator.html" target="_blank">Validator Component</a>
+
+.. |Yaml Component| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/components/yaml.html" target="_blank">Yaml Component</a>
+
+.. |article| raw:: html
+
+   <a href="https://medium.com/@fabpot/fabien-potencier-4574622d6a7e" target="_blank">article</a>
+
+.. |Customize Product View Page| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/customize-pdp.md" target="_blank">Customize Product View Page</a>
+
+.. |Customize Product List Page| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/customize-plp.md" target="_blank">Customize Product List Page</a>
+
+.. |Customize Products SKU Validation| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/customize-products-sku-validation.md" target="_blank">Customize Products SKU Validation</a>
+
+.. |Product Unit Formatting| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md" target="_blank">Product Unit Formatting</a>
+
+.. |PHP Product Unit Label Formatter| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#php-product-unit-label-formatter" target="_blank">PHP Product Unit Label Formatter</a>
+
+.. |Two Step Product Creation| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/two-step-product-creation.md" target="_blank">Two Step Product Creation</a>
+
+.. |Default Product Unit| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/default-product-unit.md" target="_blank">Default Product Unit</a>
+
+.. |Product Attributes| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-attributes.md" target="_blank">Product Attributes</a>
+
+.. |Related Items| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/related-items.md" target="_blank">Related Items</a>
+
+.. |(Product) Actions| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/actions.md" target="_blank">(Product) Actions</a>
+
+.. |Product Variant Search| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-variant-search.md" target="_blank">Product Variant Search</a>
+
+.. |Checkout Subtotal| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/checkout_subtotal.md" target="_blank">Checkout Subtotal</a>
+
+.. |Order Confirmation Email Template| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/CheckoutBundle/Resources/doc/reference/order_confirmation_email_template.md" target="_blank">Order Confirmation Email Template</a>
+
+.. |Define Custom Form Type for a Field| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/custom_form_type.md" target="_blank">Define Custom Form Type for a Field</a>
+
+.. |Configure Associations to Create Undirectional Relation Between Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">Configure Associations to Create Undirectional Relation Between Entities</a>
+
+.. |Create an API for Managing Associations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations_api.md" target="_blank">Create an API for Managing Associations</a>
+
+.. |Manage Entities Through UI| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#manage-entities-through-ui" target="_blank">Manage Entities Through UI</a>
+
+.. |Modify Entities Using Migration Scripts| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#modify-entities-using-migration-scripts" target="_blank">Modify Entities Using Migration Scripts</a>
+
+.. |Add a Relation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#add-relation" target="_blank">Add a Relation</a>
+
+.. |Add the Option Set Field| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#add-option-set-field" target="_blank">Add the Option Set Field</a>
+
+.. |Create a Custom Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#create-custom-entity" target="_blank">Create a Custom Entity</a>
+
+.. |Prepare Entity Extend Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#preparing-entity-extend-configuration" target="_blank">Prepare Entity Extend Configuration</a>
+
+.. |Update Database Schema for Extended Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#updating-database-schema-for-extended-entities" target="_blank">Update Database Schema for Extended Entities</a>
+
+.. |Warn Up Cache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#warming-up-the-cache" target="_blank">Warn Up Cache</a>
+
+.. |Configure Custom Form Type| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#custom-form-type-and-options" target="_blank">Configure Custom Form Type</a>
+
+.. |Define Validation Constraints| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#validation-for-extended-fields" target="_blank">Define Validation Constraints</a>
+
+.. |Extend Fields View| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#extend-fields-view" target="_blank">Extend Fields View</a>
+
+.. |Make Custom Entities and Fields Searchable| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Make Custom Entities and Fields Searchable</a>
+
+.. |Disable JS Routes Source File Generation on the Fly| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle#custom-fields-and-entities-in-search" target="_blank">Disable JS Routes Source File Generation on the Fly</a>
+
+.. |Customize a Sticky Panel| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#customization" target="_blank">Customize a Sticky Panel</a>
+
+.. |Create a Custom Sticky Panel| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/sticky-panel-view.md#several-sticky-panels" target="_blank">Create a Custom Sticky Panel</a>
+
+.. |Move Dom Element from One Container to Another| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/components/dom-relocation-view.md#how-to-use" target="_blank">Move Dom Element from One Container to Another</a>
+
+.. |Organize Setup Mass Action on Datagrid| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/mass-action-grid-setup.md" target="_blank">Organize Setup Mass Action on Datagrid</a>
+
+.. |Close Website for Non-authenticated Visitors| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#close-website-for-non-authenticated-visitors" target="_blank">Close Website for Non-authenticated Visitors</a>
+
+.. |Prevent Displaying the Back-Office Datagrids in the Storefront| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-access.md#frontend-datagrids" target="_blank">Prevent Displaying the Back-Office Datagrids in the Storefront</a>
+
+.. |Access Frontend REST API| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/FrontendBundle/Resources/doc/frontend-api.md" target="_blank">Access Frontend REST API</a>
+
+.. |Configure Frontend Permissions (ACL)| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/tree/master/src/Oro/Bundle/CustomerBundle#acl" target="_blank">Configure Frontend Permissions (ACL)</a>
+
+.. |Configure Anonymous Customer User| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md" target="_blank">Configure Anonymous Customer User</a>
+
+.. |Configure Guest Access and Permissions| raw:: html
+
+   <a href="https://github.com/oroinc/customer-portal/blob/master/src/Oro/Bundle/CustomerBundle/Resources/doc/anon-customer-user.md#configuring-features-and-permissions" target="_blank">Configure Guest Access and Permissions</a>
+
+.. |Low Inventory Highlighting| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/InventoryBundle/Resources/doc/low_inventory_highlights.md#configuration" target="_blank">Low Inventory Highlighting</a>
+
+.. |Override the Default Breadcrumbs Data Source| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebCatalogBundle#breadcrumbs" target="_blank">Override the Default Breadcrumbs Data Source</a>
+
+.. |Create a Content Variant| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/WebCatalogBundle#how-to-create-own-content-variant" target="_blank">Create a Content Variant</a>
+
+.. |Configure Redis Servers| raw:: html
+
+   <a href="https://github.com/oroinc/redis-config#configure-redis-servers" target="_blank">Configure Redis Servers</a>
+
+.. |Configure Website Search| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/configuration.md" target="_blank">Configure Website Search</a>
+
+.. |Perform Search| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/search.md" target="_blank">Perform Search</a>
+
+.. |Trigger Reindexation| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md#how-to-trigger-reindexation" target="_blank">Trigger Reindexation</a>
+
+.. |Postpone/Skip Reindexation| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/platform_update.md" target="_blank">Postpone/Skip Reindexation</a>
+
+.. |Reindex Data in Tests (WebsiteSearchExtensionTrait)| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/testing.md" target="_blank">Reindex Data in Tests (WebsiteSearchExtensionTrait)</a>
+
+.. |Customize Search Relevance Weight| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/relevance_weight.md" target="_blank">Customize Search Relevance Weight</a>
+
+.. |Website Search VS Regular Search| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/relevance_weight.md" target="_blank">Website Search VS Regular Search</a>
+
+.. |Search Index Structure| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/index_structure.md" target="_blank">Search Index Structure</a>
+
+.. |ORM Search Engine| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/orm_engine.md" target="_blank">ORM Search Engine</a>
+
+.. |ChainProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor" target="_blank">ChainProcessor</a>
+
+.. |Symfony Form| raw:: html
+
+   <a href="https://github.com/symfony/form" target="_blank">Symfony Form</a>
+
+.. |FOSRestBundle| raw:: html
+
+   <a href="https://github.com/FriendsOfSymfony/FOSRestBundle" target="_blank">FOSRestBundle</a>
+
+.. |NelmioApiDocBundle| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioApiDocBundle" target="_blank">NelmioApiDocBundle</a>
+
+.. |JSON API| raw:: html
+
+   <a href="https://jsonapi.org/" target="_blank">JSON API</a>
+
+.. |Configuration Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md" target="_blank">Configuration Reference</a>
+
+.. |CLI Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/commands.md" target="_blank">CLI Commands</a>
+
+.. |Configure Stateless Security Firewalls| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/security.md" target="_blank">Configure Stateless Security Firewalls</a>
+
+.. |Configuration Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#overview" target="_blank">Overview</a>
+
+.. |Configuration Structure| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#configuration-structure" target="_blank">Configuration Structure</a>
+
+.. |exclude Option| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#exclude-option" target="_blank">exclude Option</a>
+
+.. |entity_aliases Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#entity_aliases-configuration-section" target="_blank">entity_aliases Configuration Section</a>
+
+.. |entities Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#entities-configuration-section" target="_blank">entities Configuration Section</a>
+
+.. |fields Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#fields-configuration-section" target="_blank">fields Configuration Section</a>
+
+.. |filters Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#filters-configuration-section" target="_blank">filters Configuration Section</a>
+
+.. |sorters Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#sorters-configuration-section" target="_blank">sorters Configuration Section</a>
+
+.. |actions Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#actions-configuration-section" target="_blank">actions Configuration Section</a>
+
+.. |status_codes Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#action-status_codes-configuration-section" target="_blank">status_codes Configuration Section</a>
+
+.. |subresources Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#action-status_codes-configuration-section" target="_blank">subresources Configuration Section</a>
+
+.. |relations Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration.md#relations-configuration-section" target="_blank">subresources Configuration Section</a>
+
+.. |Configuration Extras| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extra.md" target="_blank">Configuration Extras</a>
+
+.. |Configuration Extras: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extra.md#overview" target="_blank">Configuration Extras: Overview</a>
+
+.. |ConfigExtraInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extra.md#overview" target="_blank">ConfigExtraInterface</a>
+
+.. |ConfigExtraSectionInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extra.md#configextrasectioninterface" target="_blank">ConfigExtraSectionInterface</a>
+
+.. |Example of configuration extra| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extra.md#example-of-configuration-extra" target="_blank">Example of configuration extra</a>
+
+.. |Configuration Extensions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md" target="_blank">Configuration Extensions</a>
+
+.. |Configuration Extensions: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md#overview" target="_blank">Configuration Extensions: Overview</a>
+
+.. |Creating a Configuration Extension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md#creating-a-configuration-extension " target="_blank">Creating a Configuration Extension</a>
+
+.. |Add Options to an Existing Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md#add-options-to-an-existing-configuration-section" target="_blank">Add Options to an Existing Configuration Section</a>
+
+.. |Add a New Configuration Section| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/configuration_extensions.md#add-options-to-an-existing-configuration-section" target="_blank">Add a New Configuration Section</a>
+
+.. |Forms and Validators Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/forms.md" target="_blank">Forms and Validators Configuration</a>
+
+.. |Documenting API Resources| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/documentation.md" target="_blank">Documenting API Resources</a>
+
+.. |Documenting API Resources: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/documentation.md#overview" target="_blank">Documenting API Resources: Overview</a>
+
+.. |Documentation File Format| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/documentation.md#documentation-file-format" target="_blank">Documentation File Format</a>
+
+.. |(API Bundle) Actions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md" target="_blank">(API Bundle) Actions</a>
+
+.. |get Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get-action" target="_blank">get Action</a>
+
+.. |get_list Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get_list-action" target="_blank">get_list Action</a>
+
+.. |delete Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#delete-action" target="_blank">delete Action</a>
+
+.. |delete_list Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#delete_list-action" target="_blank">delete_list Action</a>
+
+.. |create Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#create-action" target="_blank">create Action</a>
+
+.. |update Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#update-action" target="_blank">update Action</a>
+
+.. |get_subresource Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get_subresource-action" target="_blank">get_subresource Action</a>
+
+.. |update_subresource Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#update_subresource-action" target="_blank">update_subresource Action</a>
+
+.. |add_subresource Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#add_subresource-action" target="_blank">add_subresource Action</a>
+
+.. |delete_subresource Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#delete_subresource-action" target="_blank">delete_subresource Action</a>
+
+.. |get_relationship Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get_relationship-action" target="_blank">get_relationship Action</a>
+
+.. |update_relationship Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#update_relationship-action" target="_blank">update_relationship Action</a>
+
+.. |add_relationship Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#add_relationship-action" target="_blank">add_relationship Action</a>
+
+.. |delete_relationship Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#delete_relationship-action" target="_blank">delete_relationship Action</a>
+
+.. |options Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#options-action" target="_blank">options Action</a>
+
+.. |customize_loaded_data Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#customize_loaded_data-action" target="_blank">customize_loaded_data Action</a>
+
+.. |customize_form_data Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#customize_form_data-action" target="_blank">customize_form_data Action</a>
+
+.. |get_config Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get_config-action" target="_blank">get_config Action</a>
+
+.. |get_relation_config Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get_relation_config-action" target="_blank">get_relation_config Action</a>
+
+.. |get_metadata Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#get_metadata-action" target="_blank">get_metadata Action</a>
+
+.. |normalize_value Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#normalize_value-action" target="_blank">normalize_value Action</a>
+
+.. |collect_resources Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#collect_resources-action" target="_blank">collect_resources Action</a>
+
+.. |collect_subresources Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#collect_subresources-action" target="_blank">collect_subresources Action</a>
+
+.. |not_allowed Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#not_allowed-action" target="_blank">not_allowed Action</a>
+
+.. |Context Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#context-class" target="_blank">Context Class</a>
+
+.. |SubresourceContext Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#subresourcecontext-class" target="_blank">SubresourceContext Class</a>
+
+.. |Creating a New Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/actions.md#creating-new-action" target="_blank">Creating a New Action</a>
+
+.. |The Request Type| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/request_type.md" target="_blank">The Request Type</a>
+
+.. |see the related Processors| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md" target="_blank">see the related Processors</a>
+
+.. |Processors: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md#overview" target="_blank">Processors: Overview</a>
+
+.. |Creating a Processor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md#creating-a-processor" target="_blank">Creating a Processor</a>
+
+.. |Processor Conditions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md#processor-conditions" target="_blank">Processor Conditions</a>
+
+.. |Examples of Processor Conditions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md#examples-of-processor-conditions" target="_blank">Examples of Processor Conditions</a>
+
+.. |Error Handling| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md#error-handling" target="_blank">Error Handling</a>
+
+.. |Headers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/headers.md" target="_blank">Headers</a>
+
+.. |Headers: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/processors.md#overview" target="_blank">Headers: Overview</a>
+
+.. |Existing X-Include Keys| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/headers.md#existing-x-include-keys" target="_blank">Existing X-Include Keys</a>
+
+.. |Add a new X-Include Key| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/headers.md#add-new-x-include-key" target="_blank">Add a new X-Include Key</a>
+
+.. |Filters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md" target="_blank">Filters</a>
+
+.. |Filters: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#overview" target="_blank">Filters: Overview</a>
+
+.. |ComparisonFilter Filter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#comparisonfilter-filter" target="_blank">Filters</a>
+
+.. |Existing Filters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#existing-filters" target="_blank">Existing Filters</a>
+
+.. |FilterInterface Interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#filterinterface-interface" target="_blank">FilterInterface Interface</a>
+
+.. |CollectionAwareFilterInterface Interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#filterinterface-interface" target="_blank">CollectionAwareFilterInterface Interface</a>
+
+.. |MetadataAwareFilterInterface Interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#metadataawarefilterinterface-interface" target="_blank">MetadataAwareFilterInterface Interface</a>
+
+.. |RequestAwareFilterInterface Interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#requestawarefilterinterface-interface" target="_blank">RequestAwareFilterInterface Interface</a>
+
+.. |SelfIdentifiableFilterInterface Interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#selfidentifiablefilterinterface-interface" target="_blank">SelfIdentifiableFilterInterface Interface</a>
+
+.. |NamedValueFilterInterface Interface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#namedvaluefilterinterface-interface" target="_blank">NamedValueFilterInterface Interface</a>
+
+.. |StandaloneFilter Base Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#standalonefilter-base-class" target="_blank">StandaloneFilter Base Class</a>
+
+.. |StandaloneFilterWithDefaultValue Base Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#standalonefilterwithdefaultvalue-base-class" target="_blank">StandaloneFilterWithDefaultValue Base Class</a>
+
+.. |Criteria Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#criteria-class" target="_blank">Criteria Class</a>
+
+.. |CriteriaConnector Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#criteriaconnector-class" target="_blank">CriteriaConnector Class</a>
+
+.. |QueryExpressionVisitor Class| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#queryexpressionvisitor-class" target="_blank">QueryExpressionVisitor Class</a>
+
+.. |Query Expressions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#query-expressions" target="_blank">Query Expressions</a>
+
+.. |Creating a New Filter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#creating-new-filter" target="_blank">Creating a New Filter</a>
+
+.. |Other Classes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/filters.md#other-classes" target="_blank">Other Classes</a>
+
+.. |How to| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md" target="_blank">How to</a>
+
+.. |Turn on API for an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#turn-on-api-for-an-entity" target="_blank">Turn on API for an Entity</a>
+
+.. |Turn on API for an Entity Disabled in "Resources/config/oro/entity.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#turn-on-api-for-an-entity-disabled-in-resourcesconfigoroentityyml" target="_blank">Turn on API for an Entity Disabled in "Resources/config/oro/entity.yml</a>
+
+.. |Enable Advanced Operators for String Filter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-advanced-operators-for-string-filter" target="_blank">Enable Advanced Operators for String Filter</a>
+
+.. |Enable Case-insensitive String Filter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-case-insensitive-string-filter" target="_blank">Enable Case-insensitive String Filter</a>
+
+.. |Change an ACL Resource for an Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#change-an-acl-resource-for-an-action" target="_blank">Change an ACL Resource for an Action</a>
+
+.. |Disable Access Checks for an Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#disable-access-checks-for-an-action" target="_blank">Disable Access Checks for an Action</a>
+
+.. |Disable an Entity Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#disable-an-entity-action" target="_blank">Disable an Entity Action</a>
+
+.. |Change the Delete Handler for an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#change-the-delete-handler-for-an-entity" target="_blank">Change the Delete Handler for an Entity</a>
+
+.. |Change the Maximum Number of Entities that Can Be Deleted by One Request| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#change-the-maximum-number-of-entities-that-can-be-deleted-by-one-request" target="_blank">Change the Maximum Number of Entities that Can Be Deleted by One Request</a>
+
+.. |Configure a Nested Object| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-a-nested-object" target="_blank">Configure a Nested Object</a>
+
+.. |Configure a Nested Association| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-a-nested-association" target="_blank">Configure a Nested Association</a>
+
+.. |Configure an Extended Many-To-One Association| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-an-extended-many-to-one-association" target="_blank">Configure an Extended Many-To-One Association</a>
+
+.. |Configure an Extended Many-To-Many Association| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-an-extended-many-to-many-association" target="_blank">Configure an Extended Many-To-Many Association</a>
+
+.. |Configure an Extended Multiple Many-To-One Association| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#configure-an-extended-many-to-one-association" target="_blank">Configure an Extended Many-To-Many Association</a>
+
+.. |Add a Custom Controller| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-custom-controller" target="_blank">Add a Custom Controller</a>
+
+.. |Add a Custom Route| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-custom-route" target="_blank">Add a Custom Route</a>
+
+.. |Using a Non-primary Key to Identify an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#using-a-non-primary-key-to-identify-an-entity" target="_blank">Using a Non-primary Key to Identify an Entity</a>
+
+.. |Enable API for an Entity Without Identifier| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-api-for-an-entity-without-identifier" target="_blank">Enable API for an Entity Without Identifier</a>
+
+.. |Enable Custom API| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#enable-custom-api" target="_blank">Enable Custom API</a>
+
+.. |Add a Predefined Identifier for API Resource| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-predefined-identifier-for-api-resource" target="_blank">Add a Predefined Identifier for API Resource</a>
+
+.. |Add a Computed Field| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#add-a-computed-field" target="_blank">Add a Computed Field</a>
+
+.. |Disable HATEOAS| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/how_to.md#disable-hateoas" target="_blank">Disable HATEOAS</a>
+
+.. |CORS Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/cors.md" target="_blank">CORS Configuration</a>
+
+.. |Testing| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md" target="_blank">Testing</a>
+
+.. |Testing: Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#overview" target="_blank">Testing: Overview</a>
+
+.. |Load Fixtures| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#load-fixtures" target="_blank">Load Fixtures</a>
+
+.. |Alice References| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#alice-references" target="_blank">Alice References</a>
+
+.. |Yaml Templates| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#yaml-templates" target="_blank">Yaml Templates</a>
+
+.. |Assert Expectations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#assert-expectations" target="_blank">Assert Expectations</a>
+
+.. |Yaml Templates for Request Body| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#yaml-templates-for-request-body" target="_blank">Yaml Templates for Request Body</a>
+
+.. |Process Single Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#process-single-reference" target="_blank">Process Single Reference</a>
+
+.. |Dump Response Into Yaml Template| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Resources/doc/testing.md#dump-response-into-yaml-template" target="_blank">Dump Response Into Yaml Template</a>
+
+.. |Mediator Handlers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/mediator-handlers.md" target="_blank">Mediator Handlers</a>
+
+.. |Client Side Navigation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/mediator-handlers.md" target="_blank">Client Side Navigation</a>
+
+.. |TWIG Filters (HTML, Array)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md" target="_blank">TWIG Filters (HTML, Array)</a>
+
+.. |JavaScript Widgets| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/widgets.md" target="_blank">JavaScript Widgets</a>
+
+.. |Layout Subtree View| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/layout-subtree-view.md" target="_blank">Layout Subtree View</a>
+
+.. |Highlight Text View| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/highlight-text-view.md" target="_blank">Highlight Text View</a>
+
+.. |Viewport Manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/viewport-manager.md" target="_blank">Viewport Manager</a>
+
+.. |Items Manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/items-manager.md" target="_blank">Items Manager</a>
+
+.. |Content Providers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/content-providers.md" target="_blank">Content Providers</a>
+
+.. |Loading Mask View| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side/loading-mask-view.md" target="_blank">Loading Mask View</a>
+
+.. |Scroll Data Customization| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/scroll-data-customization.md" target="_blank">Scroll Data Customization</a>
+
+.. |Formatters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/formatters.md" target="_blank">Formatters</a>
+
+.. |Dynamic Assets| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/dynamic-assets.md" target="_blank">Dynamic Assets</a>
+
+.. |Input Widgets| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/input-widgets.md" target="_blank">Input Widgets</a>
+
+.. |Component Shortcuts| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/component-shortcuts.md" target="_blank">Component Shortcuts</a>
+
+.. |Error Handler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/component-shortcuts.md" target="_blank">Error Handler</a>
+
+.. |Objects Registry| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/component-shortcuts.md" target="_blank">Objects Registry</a>
+
+.. |Placeholders| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#introduction-to-placeholders" target="_blank">Placeholders</a>
+
+.. |Enable Notes Using Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NoteBundle#how-to-enable-notes-using-migrations" target="_blank">Enable Notes Using Migrations</a>
+
+.. |Actions (Activity Note)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NoteBundle/Resources/doc/actions.md" target="_blank">Actions (Activity Note)</a>
+
+.. |Architecture| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md" target="_blank">Architecture</a>
+
+.. |Use Assets| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#usage" target="_blank">Use Assets</a>
+
+.. |Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands" target="_blank">Commands</a>
+
+.. |Troubleshooting| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#troubleshooting" target="_blank">Troubleshooting</a>
+
+.. |Configure Supported Mime Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#system-configuration" target="_blank">Configure Supported Mime Types</a>
+
+.. |File Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#file-type" target="_blank">File Types</a>
+
+.. |Image Type| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#image-type" target="_blank">Image Type</a>
+
+.. |Configure Storage| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#storage-configuration" target="_blank">Configure Storage</a>
+
+.. |Use Migration Extension (Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#acl-protection" target="_blank">Use Migration Extension (Example)</a>
+
+.. |Configure Attachments| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#entity-attachments" target="_blank">Configure Attachments</a>
+
+.. |Image Formatters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#image-formatters" target="_blank">Image Formatters</a>
+
+.. |Enable Debugging Images| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#debug-images-configuration" target="_blank">Enable Debugging Images</a>
+
+.. |Action Component| raw:: html
+
+   <a href="https://github.com/laboro/platform/blob/master/src/Oro/Component/Action/Resources/doc/actions.md" target="_blank">Action Component</a>
+
+.. |ActionBundle Glossary and Console Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/index.md#actionbundle-glossary" target="_blank">ActionBundle Glossary and Console Commands</a>
+
+.. |ActionBundle Configuration Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/configuration-reference.md" target="_blank">ActionBundle Configuration Reference</a>
+
+.. |Configure Action Groups| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/action-groups.md" target="_blank">Configure Action Groups</a>
+
+.. |Work with Actions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/actions.md" target="_blank">Work with Actions</a>
+
+.. |Work with Operations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">Work with Operations</a>
+
+.. |Add User Interface Buttons| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/buttons.md" target="_blank">Add User Interface Buttons</a>
+
+.. |Add Custom and Configurable Conditions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActionBundle/Resources/doc/conditions.md" target="_blank">Add Custom and Configurable Conditions</a>
+
+.. |Enable Activity Association Using Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityBundle#how-to-enable-activity-association-using-migrations" target="_blank">Enable Activity Association Using Migrations</a>
+
+.. |Make an Entity an Activity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityBundle#how-to-make-an-entity-an-activity" target="_blank">Make an Entity an Activity</a>
+
+.. |Configure UI for the Activity Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityBundle#how-to-configure-ui-for-the-activity-entity" target="_blank">Configure UI for the Activity Entity</a>
+
+.. |Configure Custom Grid for Activity Context Dialog| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityBundle#how-to-configure-ui-for-the-activity-entity" target="_blank">Configure Custom Grid for Activity Context Dialog</a>
+
+.. |Enable Contexts Column in Activity Entity Grids| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityBundle#how-to-configure-ui-for-the-activity-entity" target="_blank">Enable Contexts Column in Activity Entity Grids</a>
+
+.. |Fundamentals: Activities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#fundamentals" target="_blank">Fundamentals</a>
+
+.. |Add Widget to a Page| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page" target="_blank">Add Widget to a Page</a>
+
+.. |Show Widget and Its Button on a Specific page| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#show-widget-and-its-button-on-specific-page-viewedit" target="_blank">Show Widget and Its Button on a Specific page</a>
+
+.. |Register a New Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle#add-widget-into-a-page" target="_blank">Register a New Entity</a>
+
+.. |Add Inheritance of Activity Lists to the Target Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/inheritance.md" target="_blank">Add Inheritance of Activity Lists to the Target Entity</a>
+
+.. |Permissions in ActivityList Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ActivityListBundle/Resources/doc/permissions.md" target="_blank">Permissions in ActivityList Bundle</a>
+
+.. |Use Address Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/usage.md#usage" target="_blank">Use Address Bundle</a>
+
+.. |Address Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/entities.md" target="_blank">Address Entities</a>
+
+.. |Form Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/form_types.md#address-form-types" target="_blank">Form Types</a>
+
+.. |Address Type Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/address_type.md" target="_blank">Address Type Entity</a>
+
+.. |Validate Addresses and Address Collection| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AddressBundle/Resources/doc/reference/validators.md" target="_blank">Validate Addresses and Address Collection</a>
+
+.. |Bundle Components| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/BatchBundle#components" target="_blank">Bundle Components</a>
+
+.. |ChainCache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CacheBundle/Provider/MemoryCacheChain.php" target="_blank">ChainCache</a>
+
+.. |Symfony Validation Component| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/validation.html" target="_blank">Symfony Validation Component</a>
+
+
+.. |SPL| raw:: html
+
+   <a href="http://php.net/manual/en/book.spl.php" target="_blank">SPL</a>
+
+
+.. |here5| raw:: html
+
+   <a href="http://symfony.com/doc/current/console/logging.html#manually-logging-from-a-console-command" target="_blank">here</a>
+
+
+.. |http://demo.orocrm.com/api/doc/rest_json_api| raw:: html
+
+   <a href="http://demo.orocrm.com/api/doc/rest_json_api" target="_blank">http://demo.orocrm.com/api/doc/rest_json_api</a>
+
+
+.. |ParamConverter| raw:: html
+
+   <a href="http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">ParamConverter</a>
+
+
+.. |Font Awesome Icon1| raw:: html
+
+   <a href="http://fontawesome.io/3.2.1/icons/" target="_blank">Font Awesome Icon</a>
+
+.. |validation constraints reference section| raw:: html
+
+   <a href="http://symfony.com/doc/current/reference/constraints.html" target="_blank">validation constraints reference section</a>
+
+
+.. |in the Symfony documentation| raw:: html
+
+   <a href="http://symfony.com/doc/current/reference/forms/types.html" target="_blank">in the Symfony documentation</a>
+
+
+.. |SwiftMailer configuration| raw:: html
+
+   <a href="http://symfony.com/doc/current/reference/configuration/swiftmailer.html" target="_blank">SwiftMailer configuration</a>
+
+
+.. |Symfony Cookbook How to Register Event Listeners and Subscribers| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/doctrine/event_listeners_subscribers.html" target="_blank">Symfony Cookbook How to Register Event Listeners and Subscribers</a>
+
+.. |predefined validation constraints| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UserBundle/Resources/config/validation.yml" target="_blank">predefined validation constraints</a>
+
+
+.. |OroDataAuditBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/DataAuditBundle" target="_blank">OroDataAuditBundle</a>
+
+.. |Doctrine extension1| raw:: html
+
+   <a href="https://github.com/Atlantic18/DoctrineExtensions" target="_blank">Doctrine extension</a>
+
+.. |StofDoctrineExtension| raw:: html
+
+   <a href="https://github.com/stof/StofDoctrineExtensionsBundle" target="_blank">StofDoctrineExtension</a>
+
+.. |relevant documentation1| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActionBundle/Resources/doc/operations.md" target="_blank">relevant documentation</a>
+
+.. |PaymentMethodInterface| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/PaymentBundle/Method/PaymentMethodInterface.php" target="_blank">PaymentMethodInterface</a>
+
+.. |Access Control Lists| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/acl.html" target="_blank">Access Control Lists</a>
+
+.. |@Acl| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SecurityBundle/Annotation/Acl.php" target="_blank">@Acl</a>
+
+.. |@AclAncestor| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/SecurityBundle/Annotation/AclAncestor.php" target="_blank">@AclAncestor</a>
+
+.. |Oro MarketplaceCommerce| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocommerce" target="_blank">Oro Marketplace</a>
+
+.. |Symfony Standard Edition| raw:: html
+
+   <a href="https://github.com/symfony/symfony-standard/tree/2.8" target="_blank">Symfony Standard Edition</a>
+
+.. |fork application repository| raw:: html
+
+   <a href="https://help.github.com/articles/fork-a-repo/" target="_blank">fork application repository</a>
+
+.. |Symfony Best Practices| raw:: html
+
+   <a href="http://symfony.com/doc/2.8/best_practices/index.html" target="_blank">Symfony Best Practices</a>
+
+.. |Symfony Bundle System| raw:: html
+
+   <a href="http://symfony.com/doc/2.8/bundles.html" target="_blank">Symfony Bundle System</a>
+
+.. |Symfony Application Deployment| raw:: html
+
+   <a href="http://symfony.com/doc/2.8/deployment.html" target="_blank">Symfony Application Deployment</a>
+
+.. |composer.lock| raw:: html
+
+   <a href="https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file" target="_blank">composer.lock</a>
+
+.. |https://github.com/orocrm/crm-application.git| raw:: html
+
+   <a href="https://github.com/orocrm/crm-application.git" target="_blank">https://github.com/orocrm/crm-application.git</a>
+
+.. |usage of ACLs| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/acl.html" target="_blank">usage of ACLs</a>
+
+.. |complex Access Control List| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/acl_advanced.html" target="_blank">complex Access Control List</a>
+
+.. |@ParamConverter annotation| raw:: html
+
+   <a href="http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html" target="_blank">@ParamConverter annotation</a>
+
+.. |http://symfony.com/doc/current/cookbook/security/acl.html| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/acl.html" target="_blank">http://symfony.com/doc/current/cookbook/security/acl.html</a>
+
+.. |http://symfony.com/doc/current/cookbook/security/acl_advanced.html| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/acl_advanced.html" target="_blank">http://symfony.com/doc/current/cookbook/security/acl_advanced.html</a>
+
+.. |ISO 3166| raw:: html
+
+   <a href="http://en.wikipedia.org/wiki/ISO_3166" target="_blank">ISO 3166</a>
+
+.. |ISO 4217| raw:: html
+
+   <a href="http://en.wikipedia.org/wiki/ISO_4217" target="_blank">ISO 4217</a>
+
+.. |E.164| raw:: html
+
+   <a href="http://en.wikipedia.org/wiki/E.164" target="_blank">E.164</a>
+
+.. |INTL library| raw:: html
+
+   <a href="http://www.php.net/manual/en/intro.intl.php" target="_blank">INTL library</a>
+
+.. |datetime.js| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/public/js/formatter/datetime.js" target="_blank">datetime.js</a>
+
+.. |number.js| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/public/js/formatter/number.js" target="_blank">number.js</a>
+
+.. |address.js| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/public/js/formatter/address.js" target="_blank">address.js</a>
+
+.. |OroTranslationBundle Documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle" target="_blank">OroTranslationBundle Documentation</a>
+
+.. |How to fix the UI label of a column?| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/doc/current/dev-guide/faq#how-to-fix-the-ui-label-of-a-column" target="_blank">How to fix the UI label of a column?</a>
+
+
+.. |How to Set up Localization, Translation, and Language| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-setup-localization" target="_blank">How to Set up Localization, Translation, and Language</a>
+
+.. |Data Localization and Translation (Slideshare)| raw:: html
+
+   <a href="https://www.slideshare.net/YevhenShyshkin/data-localization-and-translation" target="_blank">Data Localization and Translation (Slideshare)</a>
+
+.. |Symfony Documentation1| raw:: html
+
+   <a href="https://symfony.com/doc/current/translation.html" target="_blank">Symfony Documentation</a>
+
+.. |Gedmo/Translatable| raw:: html
+
+   <a href="http://atlantic18.github.io/DoctrineExtensions/doc/translatable.html" target="_blank">Gedmo/Translatable</a>
+
+.. |LocalizedFallbackValue| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/entities.md#localizedfallbackvalue" target="_blank">LocalizedFallbackValue</a>
+
+.. |in the official Symfony documentation| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/installation.html#book-installation-permissions" target="_blank">in the official Symfony documentation</a>
+
+.. |How to force routes to always use HTTPS or HTTP| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/routing/scheme.html" target="_blank">How to force routes to always use HTTPS or HTTP</a>
+
+.. |How to force HTTPS or HTTP for Different URLs| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/force_https.html" target="_blank">How to force HTTPS or HTTP for Different URLs</a>
+
+.. |session handler| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/http_foundation/session_configuration.html#save-handlers" target="_blank">session handler</a>
+
+.. |translations| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/translation/introduction.html" target="_blank">translations</a>
+
+.. |CSRF tokens| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/security/csrf_in_login_form.html" target="_blank">CSRF tokens</a>
+
+.. |OroCRM Marketplace| raw:: html
+
+   <a href="http://marketplace.orocrm.com/" target="_blank">OroCRM Marketplace</a>
+
+.. |ProductHolderInterface| raw:: html
+
+   <a href="https://github.com/orocommerce/orocommerce/blob/071c81dfb0ed3c5240edba0122a7ce5d647ecbcf/src/OroB2B/Bundle/ProductBundle/Model/ProductHolderInterface.php" target="_blank">ProductHolderInterface</a>
+
+.. |implement your own data source adapters| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">implement your own data source adapters</a>
+
+.. |datasources section of the DataGridBundle documentation| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">datasources section of the DataGridBundle documentation</a>
+
+.. |products-grid| raw:: html
+
+   <a href="https://github.com/laboro/dev/blob/56a4044c13cde93a31dfaac373de428962a13f56/package/commerce/src/OroB2B/Bundle/ProductBundle/Resources/config/datagrid.yml#L101" target="_blank">products-grid</a>
+
+.. |columns and properties section of the DataGridBundle documentation| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datagrid.md#columns-and-properties" target="_blank">columns and properties section of the DataGridBundle documentation</a>
+
+.. |built-in filters| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md" target="_blank">built-in filters</a>
+
+.. |the CustomGridBundle.zip file| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/CustomGridBundle.zip" target="_blank">the CustomGridBundle.zip file</a>
+
+.. |Setting up or Fixing File Permissions| raw:: html
+
+   <a href="http://symfony.com/doc/current/setup/file_permissions.html" target="_blank">Setting up or Fixing File Permissions</a>
+
+.. |AbstractMessageQueueAssertTrait| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Test/Assert/AbstractMessageQueueAssertTrait.php" target="_blank">AbstractMessageQueueAssertTrait</a>
+
+.. |security token| raw:: html
+
+   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">security token</a>
+
+.. |token storage| raw:: html
+
+   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/Storage/TokenStorageInterface.html" target="_blank">token storage</a>
+
+.. |TokenInterface| raw:: html
+
+   <a href="http://api.symfony.com/master/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.html" target="_blank">TokenInterface</a>
+
+.. |ContainerResetExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Consumption/Extension/ContainerResetExtension.php" target="_blank">ContainerResetExtension</a>
+
+.. |ClearerInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Consumption/Extension/ClearerInterface.php" target="_blank">ClearerInterface</a>
+
+.. |ResettableExtensionInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Consumption/Extension/ResettableExtensionInterface.php" target="_blank">ResettableExtensionInterface</a>
+
+.. |CacheState| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Consumption/CacheState.php" target="_blank">CacheState</a>
+
+.. |InterruptConsumptionExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Consumption/Extension/InterruptConsumptionExtension.php" target="_blank">InterruptConsumptionExtension</a>
+
+
+
+
+.. Frontend
+
+.. |RequireJS| raw:: html
+
+   <a href="http://requirejs.org/" target="_blank">RequireJS</a>
+
+.. |inversion of control| raw:: html
+
+   <a href="http://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">inversion of control</a>
+
+.. |RequireJS API| raw:: html
+
+   <a href="http://requirejs.org/docs/api.html" target="_blank">RequireJS API</a>
+
+.. |Writing Modular JavaScript| raw:: html
+
+   <a href="http://addyosmani.com/writing-modular-js/" target="_blank">Writing Modular JavaScript</a>
+
+.. |RequireJS optimization tool| raw:: html
+
+   <a href="http://requirejs.org/docs/optimization.html" target="_blank">RequireJS optimization tool</a>
+
+.. |RequireJSBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/RequireJSBundle" target="_blank">RequireJSBundle</a>
+
+.. |shim| raw:: html
+
+   <a href="http://requirejs.org/docs/api.html#config-shim" target="_blank">shim</a>
+
+.. |map| raw:: html
+
+   <a href="http://requirejs.org/docs/api.html#config-map" target="_blank">map</a>
+
+.. |OroUIBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/UIBundle" target="_blank">OroUIBundle</a>
+
+.. |paths| raw:: html
+
+   <a href="http://requirejs.org/docs/api.html#config-paths" target="_blank">paths</a>
+
+.. |Chaplin| raw:: html
+
+   <a href="http://chaplinjs.org/" target="_blank">Chaplin</a>
+
+.. |Chaplin documentation| raw:: html
+
+   <a href="http://docs.chaplinjs.org/" target="_blank">Chaplin documentation</a>
+
+.. |Chaplin.mediator| raw:: html
+
+   <a href="http://docs.chaplinjs.org/chaplin.mediator.html" target="_blank">Chaplin.mediator</a>
+
+.. |Chaplin.Composer| raw:: html
+
+   <a href="http://docs.chaplinjs.org/chaplin.composer.html" target="_blank">Chaplin.Composer</a>
+
+.. |Chaplin.Layout| raw:: html
+
+   <a href="http://docs.chaplinjs.org/chaplin.layout.html" target="_blank">Chaplin.Layout</a>
+
+.. |Backbone.js| raw:: html
+
+   <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>
+
+.. |Client Side Architecture| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/client-side-architecture.md" target="_blank">Client-Side Architecture</a>
+
+.. |Page Component| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md" target="_blank">Page Component</a>
+
+.. |Underscore.js template function documentation| raw:: html
+
+   <a href="https://underscorejs.org/#template" target="_blank">Underscore.js template function documentation</a>
+
+.. |Twig Inspector| raw:: html
+
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector</a>
+
+.. |Asset Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/AssetBundle/Resources/doc/index.md#commands" target="_blank">Asset Commands</a>
+
+.. |placeholders.yml files defined in OroPlatform bundles| raw:: html
+
+   <a href="https://github.com/search?q=repo%3Aoroinc%2Fplatform+filename%3Aplaceholders.yml&type=Code" target="_blank">placeholders.yml files defined in OroPlatform bundles</a>
+
+.. |Creating and Using Templates article in a Symfony Documentation| raw:: html
+
+   <a href="https://symfony.com/doc/current/templating.html" target="_blank">Creating and Using Templates article in a Symfony Documentation</a>
+
+.. |Twig official documentation| raw:: html
+
+   <a href="https://twig.symfony.com/" target="_blank">Twig official documentation</a>
+
+.. |Bootstrap v.3 toolkit| raw:: html
+
+   <a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap v.3 toolkit</a>
+
+.. |SCSS| raw:: html
+
+   <a href="http://sass-lang.com/" target="_blank">SCSS</a>
+
+.. |UIBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle" target="_blank">UIBundle</a>
+
+.. |Oro StyleBook| raw:: html
+
+   <a href="https://demo.orocommerce.com/demo/login?user_id=1&redirect=oro_stylebook" target="_blank">Oro StyleBook</a>
+
+.. |StyleBook| raw:: html
+
+   <a href="https://demo.orocommerce.com/style-book/" target="_blank">StyleBook</a>
+
+.. |SASS| raw:: html
+
+   <a href="http://sass-lang.com/" target="_blank">SASS</a>
+
+.. |web app manifest file| raw:: html
+
+   <a href="https://developers.google.com/web/fundamentals/web-app-manifest/" target="_blank">web app manifest file</a>
+
+.. |Oro Layout component| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout" target="_blank">Oro Layout component</a>
+
+.. |OroLayoutBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LayoutBundle" target="_blank">OroLayoutBundle</a>
+
+.. |LayoutManipulatorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/LayoutManipulatorInterface.php" target="_blank">LayoutManipulatorInterface</a>
+
+.. |Symfony expression syntax| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/expression_language/syntax.html" target="_blank">Symfony expression syntax</a>
+
+.. |DataGridBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle" target="_blank">DataGridBundle</a>
+
+.. |ProductBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/tree/master/src/Oro/Bundle/ProductBundle" target="_blank">ProductBundle</a>
+
+.. |ContextItemInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/ContextItemInterface.php" target="_blank">ContextItemInterface</a>
+
+.. |BlockInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/BlockInterface.php" target="_blank">BlockInterface</a>
+
+.. |ContextConfiguratorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/ContextConfiguratorInterface.php" target="_blank">ContextConfiguratorInterface</a>
+
+.. |layout context| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/ContextInterface.php" target="_blank">layout context</a>
+
+.. |ContextDataCollection| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/Layout/ContextDataCollection.php" target="_blank">ContextDataCollection</a>
+
+.. |AbstractFormProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LayoutBundle/Layout/DataProvider/AbstractFormProvider.php" target="_blank">AbstractFormProvider</a>
+
+.. |Symfony Expression Language| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/expression_language/introduction.html" target="_blank">Symfony Expression Language</a>
+
+.. |ApplicationContextConfigurator| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LayoutBundle/Layout/Extension/ApplicationContextConfigurator.php" target="_blank">ApplicationContextConfigurator</a>
+
+.. |LinkType| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Layout/Block/Type/LinkType.php" target="_blank">LinkType</a>
+
+.. |Twig Inspector documentation| raw:: html
+
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md" target="_blank">Twig Inspector documentation</a>
+
+.. |LayoutBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/README.md" target="_blank">LayoutBundle</a>
+
+.. |Require.js config generation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle/README.md#requirejs-config-generation" target="_blank">Require.js config generation</a>
+
+.. |Symfony Profiler| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/profiler.html" target="_blank">Symfony Profiler</a>
+
+.. |Twig filters| raw:: html
+
+   <a href="https://twig.symfony.com/doc/1.x/templates.html#filters" target="_blank">Twig filters</a>
+
+.. |built in filters| raw:: html
+
+   <a href="https://twig.symfony.com/doc/1.x/filters/index.html" target="_blank">built-in filters</a>
+
+.. |Twig functions| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/templates.html#functions" target="_blank">Twig functions</a>
+
+.. |List of built-in Twig functions| raw:: html
+
+   <a href="https://twig.symfony.com/doc/1.x/functions/index.html" target="_blank">List of built-in Twig functions</a>
+
+.. |Twig| raw:: html
+
+   <a href="https://twig.symfony.com/" target="_blank">Twig</a>
+
+.. |Form Themes| raw:: html
+
+   <a href="https://symfony.com/doc/3.4/form/form_themes.html" target="_blank">Form Themes</a>
+
+.. |this block theme| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/views/layouts/blank/oro_product_frontend_product_view/layout.html.twig" target="_blank">this block theme</a>
+
+.. |List of all css properties| raw:: html
+
+   <a href="http://cssreference.io/" target="_blank">List of all css properties</a>
+
+.. |Adding favicons in a multi-browser multi-platform world| raw:: html
+
+   <a href="https://mobiforge.com/design-development/adding-favicons-in-a-multi-browser-multi-platform-world" target="_blank">Adding favicons in a multi-browser multi-platform world</a>
+
+.. |Enable Tags for an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle#orotagbundle" target="_blank">Enable Tags for an Entity</a>
+
+.. |Tags-select Content Editor (Usage Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle/Resources/doc/editor/tags-editor-view.md" target="_blank">Tags-select Content Editor (Usage Example)</a>
+
+.. |Tags View (Usage Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TagBundle/Resources/doc/viewer/tags-view.md" target="_blank">Tags View (Usage Example)</a>
+
+.. |Add a Calendar Provider| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/provider.md" target="_blank">Add a Calendar Provider</a>
+
+.. |Context Calendar Menu| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/contextMenu.md" target="_blank">Context Calendar Menu</a>
+
+.. |Configure System Calendars| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/systemCalendars.md" target="_blank">Configure System Calendars</a>
+
+.. |Create a Calendar Event Action| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/workflowAction.md" target="_blank">Create a Calendar Event Action</a>
+
+.. |Manage Recurring Events| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/recurringEvents.md" target="_blank">Manage Recurring Events</a>
+
+.. |Use Unique Calendar Identifier| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/uid.md" target="_blank">Use Unique Calendar Identifier</a>
+
+.. |Event Organizers| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/eventOrganizers.md" target="_blank">Event Organizers</a>
+
+.. |Attendee Entity| raw:: html
+
+   <a href="https://github.com/oroinc/OroCalendarBundle/blob/master/Resources/doc/attendees.md" target="_blank">Attendee Entity</a>
+
+.. |Use Charts| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/usage.md" target="_blank">Use Charts</a>
+
+.. |Configure Charts| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ChartBundle/Resources/doc/reference/chart-configuration.md" target="_blank">Configure Charts</a>
+
+.. |Enable Comment Association Using Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CommentBundle#how-to-enable-comment-association-with-new-activity-entity-using-migrations" target="_blank">Enable Comment Association Using migrations</a>
+
+.. |Use Cron Command| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CronBundle#usage" target="_blank">Use Cron Command</a>
+
+.. |Configure Datagrid to Enable Multi Currency Inline Edit| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/CurrencyBundle/Resources/doc/editor/multi-currency-editor-view.md" target="_blank">Configure Datagrid to Enable Multi Currency Inline Edit</a>
+
+.. |Configure Dashboard| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#dashboard-configuration" target="_blank">Configure Dashboard</a>
+
+.. |Add a New Dashboard| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-add-new-dashboard" target="_blank">Add a New Dashboard</a>
+
+.. |Make a Dashboard the First Page of the Application| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-make-a-dashboard-a-first-page-of-your-application" target="_blank">Make a Dashboard the First Page of the Application</a>
+
+.. |Add New Widget| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#how-to-add-new-widget" target="_blank">Add New Widget</a>
+
+.. |Configure a Widget| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#widget-configuration" target="_blank">Configure a Widget</a>
+
+.. |Configure Grid Widget| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DashboardBundle#grid-widget-configuration" target="_blank">Configure Grid Widget</a>
+
+.. |Entity Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataAuditBundle#entity-configuration" target="_blank">Entity Configuration</a>
+
+.. |Additional Fields| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataAuditBundle#additional-fields" target="_blank">Additional Fields</a>
+
+.. |Add New Auditable Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataAuditBundle/Resources/doc/audit.md" target="_blank">Add New Auditable Types</a>
+
+.. |Configure Datagrids| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datagrid.md#overview" target="_blank">Configure Datagrids</a>
+
+.. |Specify Scopes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/scopes.md" target="_blank">Specify Scopes</a>
+
+.. |Work with Datasources| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/scopes.md" target="_blank">Work with Datasources</a>
+
+.. |ORM| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/scopes.md" target="_blank">ORM</a>
+
+.. |Array| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources/array.md" target="_blank">Array</a>
+
+.. |Search| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources/array.md" target="_blank">Search</a>
+
+.. |Use Parameter Binding| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/parameter_binding.md" target="_blank">Use Parameter Binding</a>
+
+.. |Configure Mixin| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/mixin.md" target="_blank">Configure Mixin</a>
+
+.. |Implemented Extensions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions.md" target="_blank">Implemented Extensions</a>
+
+.. |Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/action.md" target="_blank">Action</a>
+
+.. |Export| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/export.md" target="_blank">Export</a>
+
+.. |Formatter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/formatter.md" target="_blank">Formatter</a>
+
+.. |Grid Views| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/grid_views.md" target="_blank">Grid Views</a>
+
+.. |Mass Action| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/mass_action.md" target="_blank">Mass Action</a>
+
+.. |Pager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/pager.md" target="_blank">Pager</a>
+
+.. |Sorter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/sorter.md" target="_blank">Sorter</a>
+
+.. |Toolbar| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/toolbar.md" target="_blank">Toolbar</a>
+
+.. |Totals| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/totals.md" target="_blank">Totals</a>
+
+.. |Mode| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/extensions/mode.md" target="_blank">Mode</a>
+
+.. |Work with Build and Result Events| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/events.md" target="_blank">Work with Build and Result Events</a>
+
+.. |References in YAML Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/references_in_configuration.md" target="_blank">References in YAML Configuration</a>
+
+.. |Use State Providers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/state_providers.md" target="_blank">Use State Providers</a>
+
+.. |Use Selected Fields Providers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/selected_fields.md" target="_blank">Use Selected Fields Providers</a>
+
+.. |JavaScript Mediator Events and DOM Events| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid.md" target="_blank">JavaScript Mediator Events and DOM Events</a>
+
+.. |Use Datagrid Render| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_render.md" target="_blank">Use Datagrid Render</a>
+
+.. |Use Datagrid Widget| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_widget.md" target="_blank">Use Datagrid Widget</a>
+
+.. |Use Datagrid Settings Manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/datagrid_settings.md" target="_blank">Use Datagrid Settings Manager</a>
+
+.. |Configure Grid Layout| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/grid_layout_configuring.md" target="_blank">Configure Grid Layout</a>
+
+.. |Customize Grids Through 'Split to Cells' Option| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DataGridBundle/Resources/doc/frontend/grid_customization.md" target="_blank">Customize Grids Through 'Split to Cells' Option</a>
+
+.. |Use OroDistributionBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#usage" target="_blank">Use OroDistributionBundle</a>
+
+.. |Autoload Bundle Routes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#routing-autoload" target="_blank">Autoload Bundle Routes</a>
+
+.. |Precise File Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#precise-file-reference" target="_blank">Precise File Reference</a>
+
+.. |Manage Packages| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Manage Packages</a>
+
+.. |Configure and Use OroEmbeddedBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle#packages-management" target="_blank">Configure and Use OroEmbeddedBundle</a>
+
+.. |Entity Manager| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_manager.md" target="_blank">Entity Manager</a>
+
+.. |Doctrine Field Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/doctrine_field_types.md" target="_blank">Doctrine Field Types</a>
+
+.. |Configure Entity Name Formatting (Entity Name Resolver and Providers)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_names.md" target="_blank">Configure Entity Name Formatting (Entity Name Resolver and Providers)</a>
+
+.. |Add Custom Field Validation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/custom_field_validation.md" target="_blank">Add Custom Field Validation</a>
+
+.. |Create Entity Aliases| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_aliases.md" target="_blank">Create Entity Aliases</a>
+
+.. |Create Entity Class Name Provider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_class_names.md" target="_blank">Create Entity Class Name Provider</a>
+
+.. |Resolve ORM Query Hints| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/query_hint_resolver.md" target="_blank">Resolve ORM Query Hints</a>
+
+.. |Create a Dictionary| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/dictionaries.md" target="_blank">Create a Dictionary</a>
+
+.. |Profiler of Duplicated Queries| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/profiler_duplicated_queries.md" target="_blank">Profiler of Duplicated Queries</a>
+
+.. |Set Up Entity Fallback Values| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_fallback.md" target="_blank">Set Up Entity Fallback Values</a>
+
+.. |Define Entity Repositories as as Symfony DI Container Services| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/repositories_as_a_services.md" target="_blank">Define Entity Repositories as as Symfony DI Container Services</a>
+
+.. |Use Partial Indexes for Entity Fields| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/partial_indexes.md" target="_blank">Use Partial Indexes for Entity Fields</a>
+
+.. |Transaction Watchers for Default DBAL Connection| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/transaction_watchers.md" target="_blank">Transaction Watchers for Default DBAL Connection</a>
+
+.. |Create and Manage an Entity Model| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/client-side/entity-model.md" target="_blank">Create and Manage an Entity Model</a>
+
+.. |Get the EntityStructureDataProvider Instance| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/client-side/entity-structure-data-provider.md" target="_blank">Get the EntityStructureDataProvider Instance</a>
+
+.. |Configure Attributes for an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/attributes.md" target="_blank">Configure Attributes for an Entity</a>
+
+.. |Add Metadada to an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#getting-started" target="_blank">Add Metadada to an Entity</a>
+
+.. |Index Attributes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#indexed-attributes" target="_blank">Index Attributes</a>
+
+.. |Implement EntityConfigBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#implementation" target="_blank">Implement EntityConfigBundle</a>
+
+.. |Update Configuration Data| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#update-configuration-data" target="_blank">Update Configuration Data</a>
+
+.. |Clear up Cache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#clearing-up-the-cache" target="_blank">Clear up Cache</a>
+
+.. |Debug Configuration Data| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle#debugging-configuration-data" target="_blank">Debug Configuration Data</a>
+
+.. |Configure Entity Scope (Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/Resources/doc/configuration.md" target="_blank">Configure Entity Scope (Example)</a>
+
+.. |Use Entity Merge| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/getting-started.md" target="_blank">Use Entity Merge</a>
+
+.. |Dependencies Between Entity Merge Bundle Classes (Diagram)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/classes-diagram.md" target="_blank">Dependencies Between Entity Merge Bundle Classes (Diagram)</a>
+
+.. |Configure an Entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityMergeBundle/Resources/doc/reference/merge-configuration.md" target="_blank">Configure an Entity</a>
+
+.. |Enable Pagination| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityPaginationBundle#how-to-enable-pagination" target="_blank">Enable Pagination</a>
+
+.. |Handle Pagination Process in System Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityPaginationBundle#system-configuration" target="_blank">Handle Pagination Process in System Configuration</a>
+
+.. |Backend Pagination Processing| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityPaginationBundle#backend-processing" target="_blank">Backend Pagination Processing</a>
+
+.. |Fundamentals| raw:: html
+
+   <a href="https://github.com/oroinc/OroEntitySerializedFieldsBundle#fundamentals" target="_blank">Fundamentals</a>
+
+.. |Use Filter Form Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/filter_form_types.md" target="_blank">Use Filter Form Types</a>
+
+.. |Javascript Widgets (Frontend Side Filter)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/javascript_widgets.md" target="_blank">Javascript Widgets</a>
+
+.. |Grid Extension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FilterBundle/Resources/doc/reference/grid_extension.md" target="_blank">Grid Extension</a>
+
+.. |Abstract File Manager Service| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/GaufretteBundle#orogaufrettebundle" target="_blank">Abstract File Manager Service</a>
+
+.. |Form Components Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/form_components.md" target="_blank">Form Components Overview</a>
+
+.. |Autocomplete Form Type| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/autocomplete_form_type.md" target="_blank">Autocomplete Form Type</a>
+
+.. |Text Autocomplete Form Type| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/text_autocomplete_form_type.md" target="_blank">Text Autocomplete Form Type</a>
+
+.. |Entity Create or Select Form Type| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/create_or_select_form_type.md" target="_blank">Entity Create or Select Form Type</a>
+
+.. |Configure UI DataBlock| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/ui_datablock_config.md" target="_blank">Configure UI DataBlock</a>
+
+.. |Set up Validation Rules for Form Fields| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/js_validation.md" target="_blank">Set up Validation Rules for Form Fields</a>
+
+.. |Update Handler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/update_handler.md" target="_blank">Update Handler</a>
+
+.. |Connect Inline Editors on View Pages| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/inline-editable-view-component.md" target="_blank">Connect Inline Editors on View Pages</a>
+
+.. |Expression Editor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/expression-editor.md" target="_blank">Expression Editor</a>
+
+.. |Allow Custom HTML Tags in WYSIWYG Editor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/FormBundle/Resources/doc/reference/rich_text_form_type.md" target="_blank">Allow Custom HTML Tags in WYSIWYG Editor</a>
+
+.. |Use Imap Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle#usage" target="_blank">Use Imap Bundle</a>
+
+.. |Synchronize with IMAP Servers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImapBundle#usage" target="_blank">Synchronize with IMAP Servers</a>
+
+.. |Main Components| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/overview.md#main-components" target="_blank">Main Components</a>
+
+.. |Domain Model| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/domain-model.md" target="_blank">Domain Model</a>
+
+.. |Configure Gaufrette for File Storage| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/gaufrette.md" target="_blank">Configure Gaufrette for File Storage</a>
+
+.. |Classes Diagram| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/classes-diagram.md" target="_blank">Classes Diagram</a>
+
+.. |Use Import Export Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/how-to-use.md" target="_blank">Use Import Export Bundle</a>
+
+.. |Configure Fields| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/fields-configuration.md" target="_blank">Configure Fields</a>
+
+.. |Postpone Processing of the Row| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/rows-postponing.md" target="_blank">Postpone Processing of the Row</a>
+
+.. |Events| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/events.md" target="_blank">Events</a>
+
+.. |Strategy Events| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ImportExportBundle/Resources/doc/reference/strategy-events.md" target="_blank">Strategy Events</a>
+
+.. |Use Installer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/InstallerBundle#oroinstallerbundle" target="_blank">Use Installer</a>
+
+.. |IntegrationBundle Configuration Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/configuration-reference.md" target="_blank">IntegrationBundle Configuration Reference</a>
+
+.. |Additional Serializable Fields to Store Platform Specific Settings| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-settings.md" target="_blank">Additional Serializable Fields to Store Platform Specific Settings</a>
+
+.. |Reverse Synchronization| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/reverse-sync.md" target="_blank">Reverse Synchronization</a>
+
+.. |Define Owner for Related Entities on Integration Level| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/default-integration-owner.md" target="_blank">Define Owner for Related Entities on Integration Level</a>
+
+.. |Save Service Data Between Synchronizations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/IntegrationBundle/Resources/doc/reference/additional-capabilities.md" target="_blank">Save Service Data Between Synchronizations</a>
+
+.. |Layout Definition| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/what_is_layout.md" target="_blank">Layout Definition</a>
+
+.. |Configure Layout Context| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_context.md" target="_blank">Configure Layout Context</a>
+
+.. |Create and Use Layout Themes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/quick_start.md" target="_blank">Create and Use Layout Themes</a>
+
+.. |Use Layout Data| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_data.md" target="_blank">Use Layout Data</a>
+
+.. |Expressions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/expressions.md" target="_blank">Expressions</a>
+
+.. |Define and Develop Themes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/theme_definition.md" target="_blank">Define and Develop Themes</a>
+
+.. |Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/config_definition.md" target="_blank">Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)</a>
+
+.. |Perform Layout Update| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_update.md" target="_blank">Perform Layout Update</a>
+
+.. |Import Layout Updates| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/imports.md" target="_blank">Import Layout Updates</a>
+
+.. |Implement Layouts (Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/example.md" target="_blank">Implement Layouts (Example)</a>
+
+.. |Debug Information| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/debug_information.md" target="_blank">Debug Information</a>
+
+.. |Use PHP Templating Instead of Twig| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/php_templates.md" target="_blank">Use PHP Templating Instead of Twig</a>
+
+.. |Layout Cache| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/layout_cache.md" target="_blank">Layout Cache</a>
+
+.. |Returning Custom Status Code| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/custom_status_code.md" target="_blank">Returning Custom Status Code</a>
+
+.. |Locale Settings| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Locale Settings</a>
+
+.. |Number Formatting| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/locale-settings.md" target="_blank">Number Formatting</a>
+
+.. |DateTime Formatting| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/datetime-formatting.md" target="_blank">DateTime Formatting</a>
+
+.. |Address Formatting| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md" target="_blank">Address Formatting</a>
+
+.. |Name Formatting| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md" target="_blank">Name Formatting</a>
+
+.. |Localization and LocalizedFallbackValue Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/entities.md" target="_blank">Localization and LocalizedFallbackValue Entities</a>
+
+.. |Localized Values| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/localized-values.md" target="_blank">Localized Values</a>
+
+.. |Current Localization| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/current-localization.md" target="_blank">Current Localization</a>
+
+.. |Manage Localizations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/managing-localizations.md" target="_blank">Manage Localizations</a>
+
+.. |Enable Error Logs Email Notification| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#error-logs-email-notifications" target="_blank">Enable Error Logs Email Notification</a>
+
+.. |Temporarily Decrease Log Level| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#temporarily-decrease-log-level" target="_blank">Temporarily Decrease Log Level</a>
+
+.. |Log Console Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LoggerBundle#logging-console-commands" target="_blank">Log Console Commands</a>
+
+.. |Database Structure Migrations Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#database-structure-migrations" target="_blank">Database Structure Migrations</a>
+
+.. |Extensions for Database Structure Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#extensions-for-database-structure-migrations" target="_blank">Extensions for Database Structure Migrations</a>
+
+.. |Create an Extensions for Database Structure Migrations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#create-own-extensions-for-database-structure-migrations" target="_blank">Create an Extensions for Database Structure Migrations</a>
+
+.. |Use Data Fixtures| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#data-fixtures" target="_blank">Use Data Fixtures</a>
+
+.. |Use Versioned Data Fixtures| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle#versioned-fixtures" target="_blank">Use Versioned Data Fixtures</a>
+
+.. |Menu Data Source| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-data-sources" target="_blank">Menu Data Source</a>
+
+.. |Create Menu with Builder| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#your-first-menu" target="_blank">Create Menu with Builder</a>
+
+.. |Render Menus| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#rendering-menus" target="_blank">Render Menus</a>
+
+.. |Disable Menu Items| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#disabling-menu-items-as-part-of-a-feature" target="_blank">Disable Menu Items</a>
+
+.. |Configure Breadcrumbs| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#breadcrumb-provider" target="_blank">Configure Breadcrumbs</a>
+
+.. |Console Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NotificationBundle#console-commands" target="_blank">Console Commands</a>
+
+.. |Organization Bundle Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle#overview" target="_blank">Organization Bundle Overview</a>
+
+.. |Entity Ownerships| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/OrganizationBundle#entity-ownerships" target="_blank">Entity Ownerships</a>
+
+.. |Use Maintenance Mode| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#maintenance-mode" target="_blank">Use Maintenance Mode</a>
+
+.. |Use Lazy Services| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#lazy-services" target="_blank">Use Lazy Services</a>
+
+.. |Add Application Configuration Settings from any Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#add-application-configuration-settings-from-any-bundle" target="_blank">Add Application Configuration Settings from any Bundle</a>
+
+.. |Mark Doctrine Listeners as Optional| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#optional-listeners" target="_blank">Mark Doctrine Listeners as Optional</a>
+
+.. |Mark Doctrine Listeners as Lazy| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#optional-listeners" target="_blank">Mark Doctrine Listeners as Lazy</a>
+
+.. |Global Options for Console Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle#global-options-for-console-commands" target="_blank">Global Options for Console Commands</a>
+
+.. |Configure Dedicated Database Connection for Reports| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
+
+.. |RequireJS API Configuration| raw:: html
+
+   <a href="https://requirejs.org/docs/api.html#config" target="_blank">RequireJS API Configuration</a>
+
+.. |example.build.js| raw:: html
+
+   <a href="https://github.com/requirejs/r.js/blob/master/build/example.build.js" target="_blank">example.build.js</a>
+
+.. |Runtime Require.js Main Config Extension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#runtime-requirejs-main-config-extension" target="_blank">Runtime Require.js Main Config Extension</a>
+
+.. |Build Project| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#build-project" target="_blank">Build Project</a>
+
+.. |Scopes Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#how-scopes-work" target="_blank">Scopes Overview</a>
+
+.. |Configure Scope Criteria Providers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#configuring-scope-criteria-providers" target="_blank">Configure Scope Criteria Providers</a>
+
+.. |Use Context| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#using-context" target="_blank">Use Context</a>
+
+.. |Scope Operations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#scope-operations" target="_blank">Scope Operations</a>
+
+.. |Use Related Scopes (Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#example-using-related-scopes" target="_blank">Use Related Scopes (Example)</a>
+
+.. |Use Scope Criteria (Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ScopeBundle#example-using-scope-criteria" target="_blank">Use Scope Criteria (Example)</a>
+
+.. |Configure Search| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md" target="_blank">Configure Search</a>
+
+.. |Search Bundle Console Commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">Console Commands</a>
+
+.. |Postpone or Skip Reindexation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/platform_update.md" target="_blank">Postpone or Skip Reindexation</a>
+
+.. |API Simple Search| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/simple_search.md" target="_blank">API Simple Search</a>
+
+.. |API Advanced Search| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/advanced_search.md" target="_blank">API Advanced Search</a>
+
+.. |Query Builder| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/query_builder.md" target="_blank">Query Builder</a>
+
+.. |Configure ORM Search Engine| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/orm_search_engine.md" target="_blank">Configure ORM Search Engine</a>
+
+.. |Customize Relevance Weight in Standard Search Index| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SearchBundle/Resources/doc/relevance_weight.md" target="_blank">Customize Relevance Weight in Standard Search Index</a>
+
+.. |OroSegmentBundle Overview| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SegmentBundle#overview" target="_blank">OroSegmentBundle Overview</a>
+
+.. |Frontend Implementation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SegmentBundle#frontend-implementation" target="_blank">Frontend Implementation</a>
+
+.. |Backend Implementation (Entities, Query Builder, Datagrid)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SegmentBundle#backend-implementation" target="_blank">Backend Implementation (Entities, Query Builder, Datagrid)</a>
+
+.. |Use OroSegmentBundle (Example)| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SegmentBundle#overview" target="_blank">Use OroSegmentBundle (Example)</a>
+
+.. |Initialize a Sidebar| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#sidebar-initializing" target="_blank">Initialize a Sidebar</a>
+
+.. |Configure a Sidebar Widget in YAML| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#widget-configuration-in-yaml" target="_blank">Configure a Sidebar Widget in YAML</a>
+
+.. |Create a Sidebar Widget| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SidebarBundle#creating-widgets" target="_blank">Create a Sidebar Widget</a>
+
+.. |Usage and Logging Levels| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle#orosyncbundle" target="_blank">Usage and Logging Levels</a>
+
+.. |Regular and Secure Connections Configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/doc/configuration.md#configuration" target="_blank">Regular and Secure Connections Configuration</a>
+
+.. |Websocket Client| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/doc/client.md#client" target="_blank">Websocket Client</a>
+
+.. |Topics and Handlers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/doc/topics-handlers.md#topics-and-handlers" target="_blank">Topics and Handlers</a>
+
+.. |Authentication| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/doc/authentication.md" target="_blank">Authentication</a>
+
+.. |Content Outdating Notifications (Frontend and Backend Implementation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SyncBundle/Resources/doc/content-outdating.md" target="_blank">Content Outdating Notifications (Frontend and Backend Implementation</a>
+
+.. |Origin Checking| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle/Resources/doc/origin-checking.md" target="_blank">Origin Checking</a>
+
+.. |SyncBundle Mediator Handlers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SyncBundle/Resources/doc/mediator-handlers.md" target="_blank">Mediator Handlers</a>
+
+.. |Introduction to Themes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ThemeBundle#theme-properties" target="_blank">Introduction to Themes</a>
+
+.. |Debug Translator and JS Translations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/configuration.md" target="_blank">Debug Translator and JS Translations</a>
+
+.. |Data Fixtures for Translatable Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/data_fixtures.md" target="_blank">Data Fixtures for Translatable Entities</a>
+
+.. |Translation Bundle Form Types| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/form_types.md" target="_blank">Form Types</a>
+
+.. |Console Сommands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/commands.md" target="_blank">Console commands</a>
+
+.. |Translation Strategies| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/translation_strategies.md" target="_blank">Translation Strategies</a>
+
+.. |Translation Context Resolver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/TranslationBundle/Resources/doc/reference/context_resolver.md" target="_blank">Translation Context Resolver</a>
+
+.. |Inspect with Built-in Dev Tools in a Browser| raw:: html
+
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/usage.md#inspect-with-built-in-dev-tools-in-a-browser" target="_blank">Inspect with Built-in Dev Tools in a Browser</a>
+
+.. |Install Bundle| raw:: html
+
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/Bundle/Resources/doc/installation.md" target="_blank">Install Bundle</a>
+
+.. |License| raw:: html
+
+   <a href="https://github.com/oroinc/twig-inspector/blob/master/LICENSE" target="_blank">License</a>
+
+.. |JavaScript Components API| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WindowsBundle/Resources/doc/javascript_window_components.md" target="_blank">JavaScript Components API</a>
+
+.. |Windows as Widget| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WindowsBundle/Resources/doc/windows_as_widget.md" target="_blank">Windows as Widget</a>
+
+.. |Introduction to Workflows| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/getting-started.md" target="_blank">Introduction to Workflows</a>
+
+.. |Workflow Bundle Configuration Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md" target="_blank">Configuration Reference</a>
+
+.. |Translations Wizard| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md" target="_blank">Translations Wizard</a>
+
+.. |Workflow Entities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/workflow-entities.md" target="_blank">Workflow Entities</a>
+
+.. |Introduction to Processes| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/processes/index.md" target="_blank">Introduction to Processes</a>
+
+.. |ConfigExtensionInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
+
+.. |AbstractConfigExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/AbstractConfigExtension.php" target="_blank">AbstractConfigExtension</a>
+
+.. |ConfigurationSectionInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/Definition/ConfigurationSectionInterface.php" target="_blank">ConfigurationSectionInterface</a>
+
+.. |ConfigLoaderInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderInterface.php" target="_blank">ConfigLoaderInterface</a>
+
+.. |OroInc| raw:: html
+
+   <a href="https://github.com/oroinc/" target="_blank">OroInc</a>
+
+.. |OroCRM| raw:: html
+
+   <a href="https://github.com/oroinc/crm-application" target="_blank">OroCRM</a>
+
+.. |OroCommerce| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application" target="_blank">OroCommerce</a>
+
+.. |OroPlatform| raw:: html
+
+   <a href="https://github.com/oroinc/platform-application" target="_blank">OroPlatform</a>
+
+.. |Bundles| raw:: html
+
+   <a href="https://symfony.com/doc/current/bundles.html" target="_blank">Bundles</a>
+
+.. |Marketing| raw:: html
+
+   <a href="https://github.com/oroinc/OroCRMMarketingBundle" target="_blank">Marketing</a>
+
+.. |composer.json| raw:: html
+
+   <a href="https://github.com/oroinc/crm-application/blob/master/composer.json" target="_blank">composer.json</a>
+
+.. |composer documentation| raw:: html
+
+   <a href="https://getcomposer.org/doc/" target="_blank">composer documentation</a>
+
+.. |Packagist| raw:: html
+
+   <a href="https://packagist.org/" target="_blank">Packagist</a>
+
+.. |OroPackagist| raw:: html
+
+   <a href="https://packagist.oroinc.com/" target="_blank">OroPackagist</a>
+
+.. |CLI| raw:: html
+
+   <a href="https://getcomposer.org/doc/03-cli.md" target="_blank">CLI</a>
+
+.. |IDE| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/composer-dependency-manager.html" target="_blank">IDE</a>
+
+.. |Oro Asset Packagist| raw:: html
+
+   <a href="https://asset-packagist.oroinc.com/" target="_blank">Oro Asset Packagist</a>
+
+.. |relevant documentation on activities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ActivityBundle/README.md" target="_blank">relevant documentation</a>
+
+.. |PHPDoc| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/PHPDoc" target="_blank">PHPDoc</a>
+
+.. |Bootstrap| raw:: html
+
+   <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>
+
+.. |StyleCop| raw:: html
+
+   <a href="https://stylecop.codeplex.com/" target="_blank">StyleCop</a>
+
+.. |Google JavaScript Style Guide| raw:: html
+
+   <a href="https://google.github.io/styleguide/javascriptguide.xml" target="_blank">Google JavaScript Style Guide</a>
+
+.. |JSCS| raw:: html
+
+   <a href="http://jscs.info/" target="_blank">JSCS</a>
+
+.. |JSHint| raw:: html
+
+   <a href="http://jshint.com/" target="_blank">JSHint</a>
+
+.. |.jshintrc| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/build/.jshintrc" target="_blank">.jshintrc</a>
+
+.. |.jscsrc| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/build/.jscsrc" target="_blank">.jscsrc</a>
+
+.. |PHP Coding Standard Fixer| raw:: html
+
+   <a href="http://cs.sensiolabs.org/" target="_blank">PHP Coding Standard Fixer</a>
+
+.. |GitHub repository| raw:: html
+
+   <a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank">GitHub repository</a>
+
+.. |PHPMD| raw:: html
+
+   <a href="https://phpmd.org/rules/codesize.html" target="_blank">PHPMD</a>
+
+.. |basis path testing| raw:: html
+
+   <a href="http://users.csc.calpoly.edu/~jdalbey/206/Lectures/BasisPathTutorial/index.html" target="_blank">basis path testing</a>
+
+.. |Structured Testing: A Testing Methodology Using the Cyclomatic Complexity Metric| raw:: html
+
+   <a href="http://www.mccabe.com/pdf/mccabe-nist235r.pdf" target="_blank">Structured Testing: A Testing Methodology Using the Cyclomatic Complexity Metric</a>
+
+.. |Java| raw:: html
+
+   <a href="http://www.javaworld.com/article/2074995/dealing-cyclomatic-complexity-in-java-code.html" target="_blank">Java</a>
+
+.. |here, by GMetrics| raw:: html
+
+   <a href="http://gmetrics.sourceforge.net/gmetrics-CyclomaticComplexityMetric.html" target="_blank">here, by GMetrics </a>
+
+.. |program| raw:: html
+
+   <a href="https://www.codeproject.com/articles/11719/cyclomatic-code-complexity-analysis-for-microsoft" target="_blank">program</a>
+
+.. |CA1502| raw:: html
+
+   <a href="https://msdn.microsoft.com/en-us/library/ms182212.aspx" target="_blank">CA1502</a>
+
+.. |McCabe| raw:: html
+
+   <a href="http://www.mccabe.com/pdf/mccabe-nist235r.pdf" target="_blank">McCabe</a>
+
+.. |PHP Mess Detector (PHPMD)| raw:: html
+
+   <a href="http://phpmd.org/" target="_blank">PHP Mess Detector (PHPMD)</a>
+
+.. |SOLID| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/SOLID_%28object-oriented_design%29" target="_blank">SOLID</a>
+
+.. |PHP CodeSniffer tool| raw:: html
+
+   <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank">PHP CodeSniffer tool</a>
+
+.. |in the ruleset.xml file| raw:: html
+
+   <a href="https://github.com/orocrm/webinar-application/blob/master/ruleset.xml" target="_blank">in the ruleset.xml file</a>
+
+.. |line break separator| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/2016.3/configuring-line-separators.html" target="_blank">line break separator</a>
+
+.. |Oro marketplace| raw:: html
+
+   <a href="https://platform-marketplace.orocrm.com/" target="_blank">Oro marketplace</a>
+
+.. |OroPlatformBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/PlatformBundle" target="_blank">OroPlatformBundle</a>
+
+.. |OroDistributionBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/DistributionBundle" target="_blank">OroDistributionBundle</a>
+
+.. |OroPlatform issue tracker| raw:: html
+
+   <a href="https://github.com/orocrm/platform/issues?q=" target="_blank">OroPlatform issue tracker</a>
+
+.. |OroCommerce issue tracker| raw:: html
+
+   <a href="https://github.com/orocommerce/orocommerce/issues?q=" target="_blank">OroCommerce issue tracker</a>
+
+.. |OroCRM issue tracker| raw:: html
+
+   <a href="https://github.com/orocrm/crm/issues?q=" target="_blank">OroCRM issue tracker</a>
+
+.. |Contributor License Agreement| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/contributor-license-agreement" target="_blank">Contributor License Agreement</a>
+
+.. |Oro documentation| raw:: html
+
+   <a href="https://github.com/orocommerce/documentation" target="_blank">Oro documentation</a>
+
+.. |on Confluence| raw:: html
+
+   <a href="https://magecore.atlassian.net/wiki/display/OD/RST+syntax+in+Oro+Documentation" target="_blank">on Confluence</a>
+
+.. |here| raw:: html
+
+   <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs" target="_blank">here</a>
+
+.. |reStructureText specifications| raw:: html
+
+   <a href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html" target="_blank">reStructureText specifications</a>
+
+.. |Quick reStructuredText| raw:: html
+
+   <a href="http://docutils.sourceforge.net/docs/user/rst/quickref.html" target="_blank">Quick reStructuredText</a>
+
+.. |docutils| raw:: html
+
+   <a href="http://docutils.sourceforge.net" target="_blank">docutils</a>
+
+.. |reStructuredText Primer| raw:: html
+
+   <a href="http://sphinx-doc.org/rest.html" target="_blank">reStructuredText Primer</a>
+
+.. |Sphinx| raw:: html
+
+   <a href="http://sphinx-doc.org/rest.html" target="_blank">Sphinx</a>
+
+.. |reStructuredText| raw:: html
+
+   <a href="http://docutils.sourceforge.net/rst.html" target="_blank">reStructuredText</a>
+
+.. |dedicated github repository| raw:: html
+
+   <a href="https://github.com/orocommerce/documentation" target="_blank">dedicated github repository</a>
+
+.. |OroPlatform and OroCRM documentation| raw:: html
+
+   <a href="https://github.com/orocrm/documentation" target="_blank">OroPlatform and OroCRM documentation</a>
+
+.. |OroCommerce documentation| raw:: html
+
+   <a href="https://github.com/orocommerce/documentation" target="_blank">OroCommerce documentation</a>
+
+.. |Fork| raw:: html
+
+   <a href="https://help.github.com/articles/fork-a-repo" target="_blank">Fork</a>
+
+.. |Clone| raw:: html
+
+   <a href="https://help.github.com/articles/cloning-a-repository/" target="_blank">Clone</a>
+
+.. |OroCommerce project| raw:: html
+
+   <a href="https://crowdin.com/project/orocommerce" target="_blank">OroCommerce project</a>
+
+.. |Crowdin tutorial| raw:: html
+
+   <a href="https://support.crowdin.com/for-translators/onlineworkbench/translation-tutorial/" target="_blank">Crowdin tutorial</a>
+
+.. |proofreading| raw:: html
+
+   <a href="https://support.crowdin.com/for-translators/onlineworkbench/proofreading" target="_blank">proofreading</a>
+
+.. |vote| raw:: html
+
+   <a href="https://support.crowdin.com/for-translators/onlineworkbench/voting" target="_blank">vote</a>
+
+.. |Git| raw:: html
+
+   <a href="https://git-scm.com/" target="_blank">Git</a>
+
+.. |GitHub| raw:: html
+
+   <a href="https://github.com/" target="_blank">GitHub</a>
+
+.. |sign up| raw:: html
+
+   <a href="https://github.com/join" target="_blank">sign up</a>
+
+.. |Oro| raw:: html
+
+   <a href="http://github.com/orocommerce/application" target="_blank">Oro</a>
+
+.. |in Symfony Console Command documentation| raw:: html
+
+   <a href="http://symfony.com/doc/current/console/logging.html#manually-logging-from-a-console-command" target="_blank">Oro</a>
+
+.. |How to Do Application Logging Right| raw:: html
+
+   <a href="http://arctecgroup.net/pdf/howtoapplogging.pdf" target="_blank">How to Do Application Logging Right</a>
+
+.. |ramfs| raw:: html
+
+   <a href="https://wiki.debian.org/ramfs" target="_blank">ramfs</a>
+
+.. |tmpfs| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Tmpfs" target="_blank">tmpfs</a>
+
+.. |default configuration for these containers| raw:: html
+
+   <a href="https://github.com/oroinc/environment" target="_blank">default configuration for these containers</a>
+
+.. |PhpStorm| raw:: html
+
+   <a href="https://www.jetbrains.com/phpstorm/" target="_blank">PhpStorm</a>
+
+.. |how to set up integration between PhpStorm and xDebug| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html" target="_blank">how to set up integration between PhpStorm and xDebug</a>
+
+.. |PHP Code Sniffer| raw:: html
+
+   <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank">PHP Code Sniffer</a>
+
+.. |PHP Mess Detector| raw:: html
+
+   <a href="https://phpmd.org/" target="_blank">PHP Mess Detector</a>
+
+.. |PHP Copy/Paste Detector| raw:: html
+
+   <a href="https://github.com/sebastianbergmann/phpcpd" target="_blank">PHP Copy/Paste Detector</a>
+
+.. |PHP CS Fixer| raw:: html
+
+   <a href="https://github.com/FriendsOfPHP/PHP-CS-Fixer" target="_blank">PHP CS Fixer</a>
+
+.. |standard Oro configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/build" target="_blank">standard Oro configuration</a>
+
+.. |integration with PHP Code Sniffer| raw:: html
+
+   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHP+Code+Sniffer+in+PhpStorm" target="_blank">integration with PHP Code Sniffer</a>
+
+.. |and PHP Mess Detector| raw:: html
+
+   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHP+Mess+Detector+in+PhpStorm" target="_blank">and PHP Mess Detector</a>
+
+.. |PhpUnit with PhpStorm| raw:: html
+
+   <a href="https://confluence.jetbrains.com/display/PhpStorm/PHPUnit+support+in+PhpStorm" target="_blank">PhpUnit with PhpStorm</a>
+
+.. |for actual testing| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/testing-with-phpunit.html" target="_blank">for actual testing</a>
+
+.. |debug toolbar| raw:: html
+
+   <a href="http://symfony.com/blog/new-in-symfony-2-8-redesigned-web-debug-toolbar" target="_blank">debug toolbar</a>
+
+.. |add your own sections| raw:: html
+
+   <a href="http://symfony.com/doc/2.8/profiler/data_collector.html" target="_blank">add your own sections</a>
+
+.. |OroCRM project| raw:: html
+
+   <a href="https://translate.orocrm.com" target="_blank">OroCRM project</a>
+
+.. |OroPlatform project| raw:: html
+
+   <a href="http://translate.platform.orocrm.com" target="_blank">OroPlatform project</a>
+
+.. |contact| raw:: html
+
+   <a href="https://crowdin.com/mail/compose/oro" target="_blank">contact</a>
+
+.. |OroPlatform community forum| raw:: html
+
+   <a href="http://community.oroinc.com/forum/oro-platform" target="_blank">OroPlatform community forum</a>
+
+.. |OroCommerce community forum| raw:: html
+
+   <a href="https://community.oroinc.com/forum/orocommerce/" target="_blank">OroCommerce community forum</a>
+
+.. |OroCRM community forum| raw:: html
+
+   <a href="http://community.oroinc.com/forum/orocrm" target="_blank">OroCRM community forum</a>
+
+.. |community team chat channel on Slack| raw:: html
+
+   <a href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ" target="_blank">community team chat channel on Slack</a>
+
+.. |Workflow Configuration Reference| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md" target="_blank">Workflow Configuration Reference</a>
+
+.. |in PHPStorm documentation| raw:: html
+
+   <a href="https://www.jetbrains.com/help/phpstorm/2016.3/using-php-code-sniffer-tool.html" target="_blank">in PHPStorm documentation</a>
+
+.. |system_configuration.yml file| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/config/system_configuration.yml" target="_blank">system_configuration.yml file</a>
+
+.. |ActivityListBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/README.md" target="_blank">ActivityListBundle</a>
+
+.. |Font Awesome Icon| raw:: html
+
+   <a href="https://fontawesome.com/icons?from=io" target="_blank">Font Awesome Icon</a>
+
+.. |KnpMenuBundle| raw:: html
+
+   <a href="https://github.com/KnpLabs/KnpMenuBundle" target="_blank">KnpMenuBundle</a>
+
+.. |OroNavigationBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/NavigationBundle" target="_blank">OroNavigationBundle</a>
+
+.. |datasource documentation| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/Resources/doc/backend/datasources.md" target="_blank">datasource documentation</a>
+
+.. |ReportBundle| raw:: html
+
+   <a href="https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ReportBundle/Resources/config/oro/datagrids.yml" target="_blank">ReportBundle</a>
+
+.. |DataGridBundle documentation| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/DataGridBundle/README.md" target="_blank">DataGridBundle documentation</a>
+
+.. |Semantic Versioning| raw:: html
+
+   <a href="http://semver.org/" target="_blank">Semantic Versioning</a>
+
+.. |1.6 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/1.6" target="_blank">1.6 branch</a>
+
+.. |3.1 branch| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-application/tree/3.1" target="_blank">3.1 branch</a>
+
+.. |relevant FeatureToggleBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/FeatureToggleBundle/README.md" target="_blank">relevant FeatureToggleBundle documentation</a>
+
+.. |relevant OroSegmentBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SegmentBundle/README.md#overview" target="_blank">relevant OroSegmentBundle documentation</a>
+
+.. |Workflow Guide| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md" target="_blank">Workflow Guide</a>
+
+.. |Workflow Translation Wizard| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/translations-wizard.md" target="_blank">Workflow Translation Wizard</a>
+
+.. |Composer installation documentation| raw:: html
+
+   <a href="https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx" target="_blank">Composer installation documentation</a>
+
+.. |the website| raw:: html
+
+   <a href="http://www.oroinc.com/b2b-ecommerce/" target="_blank">the website</a>
+
+.. |relevant AttachmentBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/AttachmentBundle#entity-attachments" target="_blank">relevant AttachmentBundle documentation</a>
+
+.. |default Symfony functionality to extend bundle| raw:: html
+
+   <a href="http://symfony.com/doc/2.3/cookbook/bundles/inheritance.html" target="_blank">default Symfony functionality to extend bundle</a>
+
+.. |How to Override any Part of a Bundle| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/bundles/override.html#routing" target="_blank">How to Override any Part of a Bundle</a>
+
+.. |How to use Bundle Inheritance to Override parts of a Bundle| raw:: html
+
+   <a href="https://symfony.com/doc/2.3/cookbook/bundles/inheritance.html" target="_blank">How to use Bundle Inheritance to Override parts of a Bundle</a>
+
+.. |best practices for bundle structure and bundle name| raw:: html
+
+   <a href="http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html#bundle-name" target="_blank">best practices for bundle structure and bundle name</a>
+
+.. |Symfony profiler config icon| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/internals.html#profiler" target="_blank">Symfony profiler config icon</a>
+
+.. |Symfony Best Practices for Structuring Bundles| raw:: html
+
+   <a href="http://symfony.com/doc/2.3/cookbook/bundles/best_practices.html" target="_blank">Symfony Best Practices for Structuring Bundles</a>
+
+.. |Generating a New Bundle Skeleton| raw:: html
+
+   <a href="http://symfony.com/doc/2.4/bundles/SensioGeneratorBundle/commands/generate_bundle.html" target="_blank">Generating a New Bundle Skeleton</a>
+
+.. |Symfony Framework Events| raw:: html
+
+   <a href="http://symfony.com/doc/2.3/reference/events.html" target="_blank">Symfony Framework Events</a>
+
+.. |documentation concerning testing| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/testing.html#functional-tests" target="_blank">documentation concerning testing</a>
+
+.. |PHPUnit| raw:: html
+
+   <a href="http://phpunit.de" target="_blank">PHPUnit</a>
+
+.. |Testing Commands| raw:: html
+
+   <a href="http://symfony.com/doc/master/components/console/introduction.html#testing-commands" target="_blank">Testing Commands</a>
+
+.. |nelmio/alice| raw:: html
+
+   <a href="https://github.com/nelmio/alice" target="_blank">nelmio/alice</a>
+
+.. |API documentation views| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioApiDocBundle/blob/master/Resources/doc/multiple-api-doc.rst" target="_blank">API documentation views</a>
+
+.. |menu alias| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/NavigationBundle#menu-declaration-in-yaml" target="_blank">menu alias</a>
+
+.. |OSL-3.0| raw:: html
+
+   <a href="http://opensource.org/licenses/OSL-3.0" target="_blank">OSL-3.0</a>
+
+.. |MIT| raw:: html
+
+   <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
+
+.. |Doctrine Bug| raw:: html
+
+   <a href="https://github.com/doctrine/dbal/issues/2868" target="_blank">Doctrine Bug</a>
+
+.. |Doctrine ORM Hydration Performance Optimization| raw:: html
+
+   <a href="https://ocramius.github.io/blog/doctrine-orm-optimization-hydration/" target="_blank">Doctrine ORM Hydration Performance Optimization</a>
+
+.. |Using Explain| raw:: html
+
+   <a href="https://www.postgresql.org/docs/current/static/using-explain.html" target="_blank">Using Explain</a>
+
+.. |extensions library| raw:: html
+
+   <a href="https://github.com/oroinc/doctrine-extensions" target="_blank">extensions library</a>
+
+.. |DoctrineBundle Configuration| raw:: html
+
+   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">DoctrineBundle Configuration</a>
+
+.. |Explain Output| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.7/en/explain-output.html" target="_blank">Explain Output</a>
+
+.. |PGTune| raw:: html
+
+   <a href="http://pgtune.leopard.in.ua/" target="_blank">PGTune</a>
+
+.. |Percona Configuration Wizard| raw:: html
+
+   <a href="https://tools.percona.com/wizard" target="_blank">Percona Configuration Wizard</a>
+
+.. |MySQL Documentation| raw:: html
+
+   <a href="https://dev.mysql.com/doc/" target="_blank">MySQL Documentation</a>
+
+.. |PostgreSQL Documentation| raw:: html
+
+   <a href="https://www.postgresql.org/docs/" target="_blank">PostgreSQL Documentation</a>
+
+.. |Doctrine Extensions| raw:: html
+
+   <a href="https://github.com/oroinc/doctrine-extensions" target="_blank">Doctrine Extensions</a>
+
+.. |Oro application system requirements| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/doc/current/system-requirements" target="_blank">Oro application system requirements</a>
+
+.. |PGTune - Configuration calculator for PostgreSQL| raw:: html
+
+   <a href="http://pgtune.leopard.in.ua/" target="_blank">PGTune - Configuration calculator for PostgreSQL</a>
+
+.. |Percona Configuration Wizard for MySQL| raw:: html
+
+   <a href="https://tools.percona.com/wizard/" target="_blank">Percona Configuration Wizard for MySQL</a>
+
+.. |PostgreSQL Performance Optimization| raw:: html
+
+   <a href="https://wiki.postgresql.org/wiki/Performance_Optimization" target="_blank">PostgreSQL Performance Optimization</a>
+
+.. |PostgreSQL Tuner| raw:: html
+
+   <a href="https://github.com/jfcoz/postgresqltuner" target="_blank">PostgreSQL Tuner</a>
+
+.. |Symfony: DoctrineBundle Configuration| raw:: html
+
+   <a href="https://symfony.com/doc/current/reference/configuration/doctrine.html" target="_blank">Symfony: DoctrineBundle Configuration</a>
+
+.. |relevant ScopeBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ScopeBundle/README.md" target="_blank">relevant ScopeBundle documentation</a>
+
+.. |download section| raw:: html
+
+   <a href="http://oroinc.com/b2b-ecommerce/download" target="_blank">download section</a>
+
+.. |relevant Akeneo documentation| raw:: html
+
+   <a href="https://github.com/oroinc/OroAkeneoBundle/blob/1.6.0/README.md" target="_blank">relevant Akeneo documentation</a>
+
+.. |client - server architecture| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Client%E2%80%93server_model" target="_blank">client - server architecture</a>
+
+.. |SynchronousCommandInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/SynchronousCommandInterface.php" target="_blank">SynchronousCommandInterface</a>
+
+.. |CronCommandInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php" target="_blank">CronCommandInterface</a>
+
+.. |getDefaultDefinition()| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Command/CronCommandInterface.php#L14" target="_blank">getDefaultDefinition()</a>
+
+.. |crontab compatible| raw:: html
+
+   <a href="http://www.unix.com/man-page/linux/5/crontab/" target="_blank">crontab compatible</a>
+
+.. |Schedule| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CronBundle/Entity/Schedule.php" target="_blank">Schedule</a>
+
+.. |doctrine data fixtures documentation| raw:: html
+
+   <a href="https://github.com/doctrine/data-fixtures/blob/master/README.md" target="_blank">doctrine data fixtures documentation</a>
+
+.. |custom event listeners| raw:: html
+
+   <a href="http://symfony.com/doc/current/cookbook/service_container/event_listener.html" target="_blank">custom event listeners</a>
+
+.. |access control| raw:: html
+
+   <a href="https://www.rabbitmq.com/access-control.html" target="_blank">access control</a>
+
+.. |scheduling messages on RabbitMQ website| raw:: html
+
+   <a href="https://www.rabbitmq.com/blog/2015/04/16/scheduling-messages-with-rabbitmq/" target="_blank">scheduling messages on RabbitMQ website</a>
+
+.. |JSON Specifications| raw:: html
+
+   <a href="http://jsonapi.org/format/#content-negotiation-clients" target="_blank">JSON Specifications</a>
+
+.. |RFC 7231: Common Method Properties| raw:: html
+
+   <a href="https://tools.ietf.org/html/rfc7231#section-4.2" target="_blank">RFC 7231: Common Method Properties</a>
+
+.. |WSSE specification| raw:: html
+
+   <a href="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf" target="_blank">WSSE specification</a>
+
+.. |EscapeWSSEAuthenticationBundle| raw:: html
+
+   <a href="https://github.com/escapestudios/EscapeWSSEAuthenticationBundle" target="_blank">EscapeWSSEAuthenticationBundle</a>
+
+.. |Curl| raw:: html
+
+   <a href="https://curl.haxx.se/" target="_blank">Curl</a>
+
+.. |specs| raw:: html
+
+   <a href="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf" target="_blank">specs</a>
+
+.. |Fetching Data| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching" target="_blank">Fetching Data</a>
+
+.. |GetContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Get/GetContext.php" target="_blank">GetContext</a>
+
+.. |GetProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/GetProcessor.php" target="_blank">GetProcessor</a>
+
+.. |processors.get.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get.yml" target="_blank">processors.get.yml</a>
+
+.. |processors.shared.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.shared.yml" target="_blank">processors.shared.yml</a>
+
+.. |EntitySerializer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/EntitySerializer/README.md" target="_blank">EntitySerializer</a>
+
+.. |LoadEntityByEntitySerializer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/LoadEntityByEntitySerializer.php" target="_blank">LoadEntityByEntitySerializer</a>
+
+.. |RestApiController| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiController.php" target="_blank">RestApiController</a>
+
+.. |GetListContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/GetList/GetListContext.php" target="_blank">GetListContext</a>
+
+.. |GetListProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/GetListProcessor.php" target="_blank">GetListProcessor</a>
+
+.. |processors.get_list.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_list.yml" target="_blank">processors.get\_list.yml</a>
+
+.. |LoadEntitiesByEntitySerializer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/LoadEntitiesByEntitySerializer.php" target="_blank">LoadEntitiesByEntitySerializer</a>
+
+.. |Deleting Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-deleting" target="_blank">Deleting Resources</a>
+
+.. |DeleteContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Delete/DeleteContext.php" target="_blank">DeleteContext</a>
+
+.. |DeleteProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteProcessor.php" target="_blank">DeleteProcessor</a>
+
+.. |processors.delete.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete.yml" target="_blank">processors.delete.yml</a>
+
+.. |DeleteListContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteList/DeleteListContext.php" target="_blank">DeleteListContext</a>
+
+.. |DeleteListProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteListProcessor.php" target="_blank">DeleteListProcessor</a>
+
+.. |processors.delete_list.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_list.yml" target="_blank">processors.delete\_list.yml</a>
+
+.. |Creating Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-creating" target="_blank">Creating Resources</a>
+
+.. |CreateContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Create/CreateContext.php" target="_blank">CreateContext</a>
+
+.. |CreateProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CreateProcessor.php" target="_blank">CreateProcessor</a>
+
+.. |processors.create.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.create.yml" target="_blank">rocessors.create.yml</a>
+
+.. |Updating Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-updating" target="_blank">Updating Resources</a>
+
+.. |UpdateContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Update/UpdateContext.php" target="_blank">UpdateContext</a>
+
+.. |UpdateProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/UpdateProcessor.php" target="_blank">UpdateProcessor</a>
+
+.. |processors.update.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update.yml" target="_blank">processors.update.yml</a>
+
+.. |Fetching Resources| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-resources" target="_blank">Fetching Resources</a>
+
+.. |GetSubresourceContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetSubresource/GetSubresourceContext.php" target="_blank">GetSubresourceContext</a>
+
+.. |SubresourceContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetSubresource/GetSubresourceContext.php" target="_blank">SubresourceContext</a>
+
+.. |GetSubresourceProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetSubresourceProcessor.php" target="_blank">GetSubresourceProcessor</a>
+
+.. |processors.get_subresource.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_subresource.yml" target="_blank">processors.get\_subresource.yml</a>
+
+.. |RestApiSubresourceController| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php" target="_blank">RestApiSubresourceController</a>
+
+.. |Fetching Relationships| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-relationships" target="_blank">Fetching Relationships</a>
+
+.. |GetRelationshipContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetRelationship/GetRelationshipContext.php" target="_blank">GetRelationshipContext</a>
+
+.. |GetRelationshipProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/GetRelationshipProcessor.php" target="_blank">GetRelationshipProcessor</a>
+
+.. |processors.get_relationship.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_relationship.yml" target="_blank">processors.get\_relationship.yml</a>
+
+.. |RestApiRelationshipController| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">RestApiRelationshipController</a>
+
+.. |Updating Relationships| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">Updating Relationships</a>
+
+.. |UpdateRelationshipContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/UpdateRelationship/UpdateRelationshipContext.php" target="_blank">UpdateRelationshipContext</a>
+
+.. |UpdateRelationshipProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/UpdateRelationshipProcessor.php" target="_blank">UpdateRelationshipProcessor</a>
+
+.. |processors.update_relationship.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.update_relationship.yml" target="_blank">processors.update\_relationship.yml</a>
+
+.. |RequestActionProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/RequestActionProcessor.php" target="_blank">RequestActionProcessor</a>
+
+.. |AddRelationshipContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/AddRelationship/AddRelationshipContext.php" target="_blank">AddRelationshipContext</a>
+
+.. |AddRelationshipProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/AddRelationshipProcessor.php" target="_blank">AddRelationshipProcessor</a>
+
+.. |processors.add_relationship.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.add_relationship.yml" target="_blank">processors.add\_relationship.yml</a>
+
+.. |processors.delete_relationship.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.delete_relationship.yml" target="_blank">processors.delete\_relationship.yml</a>
+
+.. |CustomizeLoadedDataContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedData/CustomizeLoadedDataContext.php" target="_blank">CustomizeLoadedDataContext</a>
+
+.. |CustomizeLoadedDataProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedDataProcessor.php" target="_blank">CustomizeLoadedDataProcessor</a>
+
+.. |ComputePrimaryField| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeLoadedData/ComputePrimaryField.php" target="_blank">ComputePrimaryField</a>
+
+.. |CustomizeFormDataContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/CustomizeFormDataContext.php" target="_blank">CustomizeFormDataContext</a>
+
+.. |CustomizeFormDataProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormDataProcessor.php" target="_blank">CustomizeFormDataProcessor</a>
+
+.. |MapPrimaryField| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CustomizeFormData/MapPrimaryField.php" target="_blank">MapPrimaryField</a>
+
+.. |ConfigContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigContext.php" target="_blank">ConfigContext</a>
+
+.. |ConfigProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigProcessor.php" target="_blank">ConfigProcessor</a>
+
+.. |processors.get_config.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_config.yml" target="_blank">processors.get\_config.yml</a>
+
+.. |ConfigProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/ConfigProvider.php" target="_blank">ConfigProvider</a>
+
+.. |RelationConfigContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/GetRelationConfig/RelationConfigContext.php" target="_blank">RelationConfigContext</a>
+
+.. |RelationConfigProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/RelationConfigProcessor.php" target="_blank">RelationConfigProcessor</a>
+
+.. |RelationConfigProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/RelationConfigProvider.php" target="_blank">RelationConfigProvider</a>
+
+.. |MetadataContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/GetMetadata/MetadataContext.php" target="_blank">MetadataContext</a>
+
+.. |MetadataProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/MetadataProcessor.php" target="_blank">MetadataProcessor</a>
+
+.. |processors.get_metadata.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.get_metadata.yml" target="_blank">processors.get\_metadata.yml</a>
+
+.. |MetadataProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/MetadataProvider.php" target="_blank">MetadataProvider</a>
+
+.. |NormalizeValueContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/NormalizeValue/NormalizeValueContext.php" target="_blank">NormalizeValueContext</a>
+
+.. |NormalizeValueProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/NormalizeValueProcessor.php" target="_blank">NormalizeValueProcessor</a>
+
+.. |processors.normalize_value.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.normalize_value.yml" target="_blank">processors.normalize\_value.yml</a>
+
+.. |ValueNormalizer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/ValueNormalizer.php" target="_blank">ValueNormalizer</a>
+
+.. |CollectResourcesContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CollectResources/CollectResourcesContext.php" target="_blank">CollectResourcesContext</a>
+
+.. |CollectResourcesProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CollectResourcesProcessor.php" target="_blank">CollectResourcesProcessor</a>
+
+.. |processors.collect_resources.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_resources.yml" target="_blank">processors.collect\_resources.yml</a>
+
+.. |ResourcesProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/ResourcesProvider.php" target="_blank">ResourcesProvider</a>
+
+.. |CollectSubresourcesContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CollectSubresources/CollectSubresourcesContext.php" target="_blank">CollectSubresourcesContext</a>
+
+.. |CollectSubresourcesProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/CollectSubresourcesProcessor.php" target="_blank">CollectSubresourcesProcessor</a>
+
+.. |processors.collect_subresources.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.collect_subresources.yml" target="_blank">processors.collect\_subresources.yml</a>
+
+.. |SubresourcesProvider| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/SubresourcesProvider.php" target="_blank">SubresourcesProvider</a>
+
+.. |Context| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Context.php" target="_blank">Context</a>
+
+.. |list of filters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Filter/FilterCollection.php" target="_blank">list of filters</a>
+
+.. |FilterValue| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Filter/FilterValue.php" target="_blank">FilterValue</a>
+
+.. |object| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Filter/FilterValueAccessorInterface.php" target="_blank">object</a>
+
+.. |Criteria| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Collection/Criteria.php" target="_blank">Criteria</a>
+
+.. |errors| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Model/Error.php" target="_blank">errors</a>
+
+.. |requests for configuration data| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">requests for configuration data</a>
+
+.. |configuration sections| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtraSectionInterface.php" target="_blank">configuration sections</a>
+
+.. |configuration of an entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/EntityDefinitionConfig.php" target="_blank">configuration of an entity</a>
+
+.. |configuration of filters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/FiltersConfig.php" target="_blank">configuration of filters</a>
+
+.. |configuration of sorters| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/SortersConfig.php" target="_blank">configuration of sorters</a>
+
+.. |requests for additional metadata info| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Metadata/MetadataExtraInterface.php" target="_blank">requests for additional metadata info</a>
+
+.. |metadata| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Metadata/EntityMetadata.php" target="_blank">metadata</a>
+
+.. |The SubresourceContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/SubresourceContext.php" target="_blank">The SubresourceContext</a>
+
+.. |list of requests for configuration data| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Subresource/SubresourceContext.php" target="_blank">list of requests for configuration data</a>
+
+.. |configuration of the parent entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/EntityDefinitionConfig.php" target="_blank">configuration of the parent entity</a>
+
+.. |metadata of the parent entity| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Metadata/EntityMetadata.php" target="_blank">metadata of the parent entity</a>
+
+.. |ApiContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/ApiContext.php" target="_blank">ApiContext</a>
+
+.. |SingleItemContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/SingleItemContext.php" target="_blank">SingleItemContext</a>
+
+.. |ListContext| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/ListContext.php" target="_blank">ListContext</a>
+
+.. |ActionProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/ActionProcessor.php" target="_blank">ActionProcessor</a>
+
+.. |Java Message Service| raw:: html
+
+   <a href="https://docs.oracle.com/javaee/1.4/api/javax/jms/package-summary.html" target="_blank">Java Message Service</a>
+
+.. |RecipientList| raw:: html
+
+   <a href="http://www.enterpriseintegrationpatterns.com/patterns/messaging/RecipientList.html" target="_blank">RecipientList</a>
+
+.. |MessageProducer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Client/MessageProducer.php" target="_blank">MessageProducer</a>
+
+.. |MessageProcessorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Consumption/MessageProcessorInterface.php" target="_blank">MessageProcessorInterface</a>
+
+.. |TopicSubscriberInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Client/TopicSubscriberInterface.php" target="_blank">TopicSubscriberInterface</a>
+
+.. |MessageConsumeCommand| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Client/ConsumeMessagesCommand.php" target="_blank">MessageConsumeCommand</a>
+
+.. |QueueConsumer| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Component/MessageQueue/Consumption/QueueConsumer.php" target="_blank">QueueConsumer</a>
+
+.. |OroBundleMessageQueueBundleTestUnitMessageQueueExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Test/Unit/MessageQueueExtension.php" target="_blank">Oro\Bundle\MessageQueueBundle\Test\Unit\MessageQueueExtension</a>
+
+.. |OroBundleMessageQueueBundleTestFunctionalMessageQueueExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Test/Functional/MessageQueueExtension.php" target="_blank">Oro\Bundle\MessageQueueBundle\Test\Functional\MessageQueueExtension</a>
+
+.. |OroBundleMessageQueueBundleTestUnitMessageQueueAssertTrait| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Test/Unit/MessageQueueAssertTrait.php" target="_blank">Oro\Bundle\MessageQueueBundle\Test\Unit\MessageQueueAssertTrait</a>
+
+.. |OroBundleMessageQueueBundleTestFunctionalMessageQueueAssertTrait| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Test/Functional/MessageProcessTrait.php" target="_blank">Oro\Bundle\MessageQueueBundle\Test\Functional\MessageQueueAssertTrait</a>
+
+.. |Shield| raw:: html
+
+   <a href="https://www.elastic.co/products/shield" target="_blank">Shield</a>
+
+.. |configuration section in the Elasticsearch documentation| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/configuration.html" target="_blank">configuration section in the Elasticsearch documentation</a>
+
+.. |Elasticsearch API documentation| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/client/php-api/current/index_management.html" target="_blank">Elasticsearch API documentation</a>
+
+.. |Elasticsearch bulk API| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/docs-bulk.html" target="_blank">Elasticsearch bulk API</a>
+
+.. |index types| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-search.html" target="_blank">index types</a>
+
+.. |match query| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-match-query.html" target="_blank">match query</a>
+
+.. |wildcard query| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-wildcard-query.html" target="_blank">wildcard query</a>
+
+.. |term query| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-term-query.html" target="_blank">term query</a>
+
+.. |range query| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/query-dsl-range-query.html" target="_blank">range query</a>
+
+.. |sort| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-request-sort.html" target="_blank">sort</a>
+
+.. |from/size| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-request-from-size.html" target="_blank">from/size</a>
+
+.. |aggregations| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations.html" target="_blank">aggregations</a>
+
+.. |bucket| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/search-aggregations-bucket.html" target="_blank">bucket</a>
+
+.. |Stop Elasticsearch| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/stopping-elasticsearch.html" target="_blank">Stop Elasticsearch</a>
+
+.. |Start Elasticsearch| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/master/starting-elasticsearch.html" target="_blank">Start Elasticsearch</a>
+
+.. |What is Message Queue| raw:: html
+
+   <a href="http://www.ibm.com/support/knowledgecenter/SSFKSJ_9.0.0/com.ibm.mq.pro.doc/q002620_.html" target="_blank">What is Message Queue</a>
+
+.. |Message Queue Benefits| raw:: html
+
+   <a href="https://www.iron.io/top-10-uses-for-message-queue/" target="_blank">Message Queue Benefits</a>
+
+.. |RabbitMQ Introduction| raw:: html
+
+   <a href="https://www.rabbitmq.com/tutorials/tutorial-one-php.html" target="_blank">RabbitMQ Introduction</a>
+
+.. |InitializeConfigExtras| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Get/InitializeConfigExtras.php" target="_blank">InitializeConfigExtras</a>
+
+.. |The ConfigExtraInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">The ConfigExtraInterface</a>
+
+.. |configuration providers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/AbstractConfigProvider.php" target="_blank">configuration providers</a>
+
+.. |MaxRelatedEntitiesConfigExtra| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/MaxRelatedEntitiesConfigExtra.php" target="_blank">MaxRelatedEntitiesConfigExtra</a>
+
+.. |SetMaxRelatedEntities| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/GetConfig/SetMaxRelatedEntities.php" target="_blank">SetMaxRelatedEntities</a>
+
+.. |DescriptionsConfigExtra| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/DescriptionsConfigExtra.php" target="_blank">DescriptionsConfigExtra</a>
+
+.. |ConfigLoaderFactory| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderFactory.php" target="_blank">ConfigLoaderFactory</a>
+
+.. |FiltersConfigExtra| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/FiltersConfigExtra.php" target="_blank">FiltersConfigExtra</a>
+
+.. |SortersConfigExtra| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/SortersConfigExtra.php" target="_blank">SortersConfigExtra</a>
+
+.. |RestDocHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/ApiDoc/RestDocHandler.php" target="_blank">RestDocHandler</a>
+
+.. |CompleteDescriptions| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/Shared/CompleteDescriptions.php" target="_blank">CompleteDescriptions</a>
+
+.. |default RabbitMQ Access Control settings| raw:: html
+
+   <a href="https://www.rabbitmq.com/access-control.html" target="_blank">default RabbitMQ Access Control settings</a>
+
+.. |download and installation manual| raw:: html
+
+   <a href="https://www.rabbitmq.com/download.html" target="_blank">download and installation manual</a>
+
+.. |Read more on Delayed Message Exchange| raw:: html
+
+   <a href="https://github.com/rabbitmq/rabbitmq-delayed-message-exchange" target="_blank">Read more on Delayed Message Exchange</a>
+
+.. |Read more on Management| raw:: html
+
+   <a href="https://www.rabbitmq.com/management.html" target="_blank">Read more on Management</a>
+
+.. |More about RabbitMQ plugins| raw:: html
+
+   <a href="https://www.rabbitmq.com/community-plugins.html" target="_blank">More about RabbitMQ plugins</a>
+
+.. |More about RabbitMQ plugins management| raw:: html
+
+   <a href="https://www.rabbitmq.com/plugins.html" target="_blank">More about RabbitMQ plugins</a>
+
+.. |Read more on rabbitmqctl(8)| raw:: html
+
+   <a href="https://www.rabbitmq.com/man/rabbitmqctl.1.man.html" target="_blank">Read more on rabbitmqctl(8)</a>
+
+.. |Search engine| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Search_engine_(computing)" target="_blank">Search engine</a>
+
+.. |overall full-text search| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Full-text_search" target="_blank">overall full-text search</a>
+
+.. |Lucene| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Apache_Lucene" target="_blank">Lucene</a>
+
+.. |Solr| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Apache_Solr" target="_blank">Solr</a>
+
+.. |EAV model| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model" target="_blank">EAV model</a>
+
+.. |Elasticsearch index| raw:: html
+
+   <a href="https://www.elastic.co/blog/what-is-an-elasticsearch-index" target="_blank">Elasticsearch index</a>
+
+.. |Elasticsearch types| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/mapping.html" target="_blank">Elasticsearch types</a>
+
+.. |Elasticsearch document| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/document.html" target="_blank">Elasticsearch document</a>
+
+.. |Elasticsearch mapping| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/mapping-intro.html" target="_blank">Elasticsearch mapping</a>
+
+.. |Data transfer object| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Data_transfer_object" target="_blank">Data transfer object</a>
+
+.. |Facade| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Facade_pattern" target="_blank">Facade</a>
+
+.. |examples of a work with this command| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">examples of a work with this command</a>
+
+.. |examples of a work with oro:website-search:reindex command| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/console_commands.md" target="_blank">examples of a work with oro:website-search:reindex command</a>
+
+.. |examples of a triggering of this event| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/indexation.md" target="_blank">examples of a triggering of this event</a>
+
+.. |several clustering solutions| raw:: html
+
+   <a href="https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling" target="_blank">several clustering solutions</a>
+
+.. |Elasticsearch cluster| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html" target="_blank">Elasticsearch cluster</a>
+
+.. |Elasticsearch shards| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/overallocation.html" target="_blank">Elasticsearch shards</a>
+
+.. |distributed search| raw:: html
+
+   <a href="https://medium.com/hipages-engineering/scaling-elasticsearch-b63fa400ee9e" target="_blank">distributed search</a>
+
+.. |Both MySQL| raw:: html
+
+   <a href="https://dev.mysql.com/doc/refman/5.7/en/replication.html" target="_blank">Both MySQL</a>
+
+.. |and PostgreSQL| raw:: html
+
+   <a href="https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling" target="_blank">and PostgreSQL</a>
+
+.. |Elasticsearch replicas| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/replica-shards.html" target="_blank">Elasticsearch replicas</a>
+
+.. |configuration similar to ORM configuration| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/configuration.md#datagrid-configuration" target="_blank">configuration similar to ORM configuration</a>
+
+.. |Elastic HQ| raw:: html
+
+   <a href="http://www.elastichq.org/" target="_blank">Elastic HQ</a>
+
+.. |here are examples of work with these commands| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Resources/doc/console_commands.md" target="_blank">here are examples of work with these commands</a>
+
+.. |here are examples of work with this command| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/Resources/doc/console_commands.md" target="_blank">here are examples of work with this command</a>
+
+.. |Elasticsearch References| raw:: html
+
+   <a href="https://www.elastic.co/guide/en/elasticsearch/reference/6.x/index.html" target="_blank">Elasticsearch References</a>
+
+.. |Scaling Elasticsearch| raw:: html
+
+   <a href="https://medium.com/hipages-engineering/scaling-elasticsearch-b63fa400ee9e" target="_blank">Scaling Elasticsearch</a>
+
+.. |Web Performance Tuning: Latency and Throughput| raw:: html
+
+   <a href="https://www.safaribooksonline.com/library/view/web-performance-tuning/059600172X/ch04s02.html" target="_blank">Web Performance Tuning: Latency and Throughput</a>
+
+.. |Website Search Index Type| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/WebsiteSearchBundle/README.md" target="_blank">Website Search Index Type</a>
+
+.. |How to use compiler passes| raw:: html
+
+   <a href="https://symfony.com/doc/current/service_container/compiler_passes.html" target="_blank">How to use compiler passes</a>
+
+.. |How to decorate services| raw:: html
+
+   <a href="https://symfony.com/doc/current/service_container/service_decoration.html" target="_blank">How to decorate services</a>
+
+.. |Event dispatcher| raw:: html
+
+   <a href="http://symfony.com/doc/current/event_dispatcher.html" target="_blank">Event dispatcher</a>
+
+.. |Introduction to Placeholders| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/UIBundle#introduction-to-placeholders" target="_blank">Introduction to Placeholders</a>
+
+.. |MigrationBundle| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">MigrationBundle</a>
+
+.. |OroMigrationBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/MigrationBundle" target="_blank">OroMigrationBundle documentation</a>
+
+.. |functional tests| raw:: html
+
+   <a href="https://oroinc.com/doc/orocrm/current/book/functional-tests" target="_blank">functional tests</a>
+
+.. |JSON.API specification| raw:: html
+
+   <a href="http://jsonapi.org/format/" target="_blank">JSON.API specification</a>
+
+.. |RestJsonApiTestCase| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiTestCase.php" target="_blank">RestJsonApiTestCase</a>
+
+.. |Doctrine and Alice fixtures| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Tests/Functional/RestJsonApiTestCase.php" target="_blank">Doctrine and Alice fixtures</a>
+
+.. |Alice documentation| raw:: html
+
+   <a href="https://github.com/nelmio/alice/blob/master/doc/relations-handling.md#references" target="_blank">Alice documentation</a>
+
+.. |MonologBundle| raw:: html
+
+   <a href="https://github.com/symfony/monolog-bundle" target="_blank">MonologBundle</a>
+
+.. |Logging with Monolog Symfony doc| raw:: html
+
+   <a href="http://symfony.com/doc/current/logging.html#logging-a-message" target="_blank">Logging with Monolog" Symfony doc</a>
+
+.. |verbosity levels| raw:: html
+
+   <a href="https://symfony.com/doc/current/console/verbosity.html" target="_blank">verbosity levels</a>
+
+.. |Processors| raw:: html
+
+   <a href="https://symfony.com/doc/current/logging/processors.html" target="_blank">Processors</a>
+
+.. |Monolog| raw:: html
+
+   <a href="https://github.com/Seldaek/monolog" target="_blank">Monolog</a>
+
+.. |related Symfony documentation| raw:: html
+
+   <a href="https://symfony.com/doc/current/logging.html#handlers-writing-logs-to-different-locations" target="_blank">related Symfony documentation</a>
+
+.. |How to write logs to Stackdriver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Resources/doc/stackdriver.md" target="_blank">How to write logs to Stackdriver</a>
+
+.. |ELK Stack| raw:: html
+
+   <a href="https://www.elastic.co/elk-stack" target="_blank">ELK Stack</a>
+
+.. |ConsoleHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Log/Handler/ConsoleHandler.php" target="_blank">ConsoleHandler</a>
+
+.. |ConsoleFormatter| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Log/Formatter/ConsoleFormatter.php" target="_blank">ConsoleFormatter</a>
+
+.. |ConsumerHeartbeat| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Consumption/ConsumerHeartbeat.php" target="_blank">ConsumerHeartbeat</a>
+
+.. |oro:cron:message-queue:consumer_heartbeat_check| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Command/ConsumerHeartbeatCommand.php" target="_blank">oro:cron:message-queue:consumer_heartbeat_check</a>
+
+.. |ConsoleErrorHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Log/Handler/ConsoleErrorHandler.php" target="_blank">ConsoleErrorHandler</a>
+
+.. |Writing Logs to Stackdriver| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/MessageQueueBundle/Resources/doc/stackdriver.md" target="_blank">Writing Logs to Stackdriver</a>
+
+.. |GitHub Monolog| raw:: html
+
+   <a href="https://github.com/Seldaek/monolog" target="_blank">GitHub Monolog</a>
+
+.. |GitHub MonologBundle| raw:: html
+
+   <a href="https://github.com/symfony/monolog-bundle" target="_blank">GitHub Monolog</a>
+
+.. |Symfony "Logging with Monolog"| raw:: html
+
+   <a href="http://symfony.com/doc/current/logging.html#logging-a-message" target="_blank">Symfony "Logging with Monolog"</a>
+
+.. |Symfony Verbosity Levels| raw:: html
+
+   <a href="https://symfony.com/doc/current/console/verbosity.html" target="_blank">Symfony Verbosity Levels</a>
+
+.. |Symfony Logging Processors| raw:: html
+
+   <a href="https://symfony.com/doc/current/logging/processors.html" target="_blank">Symfony Logging Processors</a>
+
+.. |Symfony Logging Handlers| raw:: html
+
+   <a href="https://symfony.com/doc/current/logging.html#handlers-writing-logs-to-different-locations" target="_blank">Symfony Logging Handlers</a>
+
+.. |Google Stackdriver| raw:: html
+
+   <a href="https://cloud.google.com/stackdriver" target="_blank">Google Stackdriver</a>
+
+.. |ELK Stack: Elasticsearch, Logstash, Kibana| raw:: html
+
+   <a href="https://www.elastic.co/elk-stack" target="_blank">ELK Stack: Elasticsearch, Logstash, Kibana</a>
+
+.. |Updating Relationships1| raw:: html
+
+   <a href="http://jsonapi.org/format/#crud-updating-relationships" target="_blank">Updating Relationships</a>
+
+.. |Entity aliases documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityBundle/Resources/doc/entity_aliases.md" target="_blank">Entity aliases documentation</a>
+
+.. |markdown| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">markdown</a>
+
+.. |**include** request parameter| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-includes" target="_blank">**include** request parameter</a>
+
+.. |**fields** request parameter| raw:: html
+
+   <a href="http://jsonapi.org/format/#fetching-sparse-fieldsets" target="_blank">**fields** request parameter</a>
+
+.. |Doctrine query hints| raw:: html
+
+   <a href="http://doctrine-orm.readthedocs.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html#query-hints" target="_blank">Doctrine query hints</a>
+
+.. |orosoap.handler.delete| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SoapBundle/Handler/DeleteHandler.php" target="_blank">oro\_soap.handler.delete</a>
+
+.. |meta| raw:: html
+
+   <a href="http://jsonapi.org/format/#document-meta" target="_blank">meta</a>
+
+.. |Markdown1| raw:: html
+
+   <a href="https://daringfireball.net/projects/markdown/" target="_blank">Markdown</a>
+
+.. |configurable entities and fields| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityConfigBundle/README.md" target="_blank">configurable entities and fields</a>
+
+.. |Markdown Extra| raw:: html
+
+   <a href="https://michelf.ca/projects/php-markdown/extra/" target="_blank">Markdown Extra</a>
+
+.. |Validation Component| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/validation.html" target="_blank">Validation Component</a>
+
+.. |Forms Component| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/forms.html" target="_blank">Forms Component</a>
+
+.. |CollectFormErrors| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/CollectFormErrors.php" target="_blank">CollectFormErrors</a>
+
+.. |ConstraintWithStatusCodeInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Validator/Constraints/ConstraintWithStatusCodeInterface.php" target="_blank">ConstraintWithStatusCodeInterface</a>
+
+.. |default implementation of constraint text extractor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/ConstraintTextExtractor.php" target="_blank">default implementation of constraint text extractor</a>
+
+.. |ConstraintTextExtractorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/ConstraintTextExtractorInterface.php" target="_blank">ConstraintTextExtractorInterface</a>
+
+.. |Resources/config/oro/app.yml| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/oro/app.yml" target="_blank">Resources/config/oro/app.yml</a>
+
+.. |ProcessorSharedInitializeApiFormExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/InitializeApiFormExtension.php" target="_blank">Processor\\Shared\\InitializeApiFormExtension</a>
+
+.. |ProcessorSharedRestoreDefaultFormExtension| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/RestoreDefaultFormExtension.php" target="_blank">Processor\\Shared\\RestoreDefaultFormExtension</a>
+
+.. |ProcessorSharedBuildFormBuilder| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php" target="_blank">Processor\\Shared\\BuildFormBuilder</a>
+
+.. |DeleteHandler| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/SoapBundle/Handler/DeleteHandler.php" target="_blank">DeleteHandler</a>
+
+.. |SetDeleteLimit| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/DeleteList/SetDeleteLimit.php" target="_blank">SetDeleteLimit</a>
+
+.. |many-to-one extended association| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">many-to-one extended association</a>
+
+.. |Associations| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/EntityExtendBundle/Resources/doc/associations.md" target="_blank">Associations</a>
+
+.. |the Symfony documentation| raw:: html
+
+   <a href="https://symfony.com/doc/current/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
+
+.. |AbstractFormatter class in NelmioApiDocBundle| raw:: html
+
+   <a href="https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Formatter/AbstractFormatter.php" target="_blank">AbstractFormatter class in NelmioApiDocBundle</a>
+
+.. |ProcessorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/ProcessorInterface.php" target="_blank">ProcessorInterface</a>
+
+.. |tag| raw:: html
+
+   <a href="http://symfony.com/doc/current/book/service_container.html#book-service-container-tags" target="_blank">tag</a>
+
+.. |documentation of the ChainProcessor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/README.md#types-of-processors" target="_blank">documentation of the ChainProcessor</a>
+
+.. |OroBundleApiBundleUtilDoctrineHelper| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Util/DoctrineHelper.php" target="_blank">Oro\Bundle\ApiBundle\Util\DoctrineHelper</a>
+
+.. |Processor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor" target="_blank">Processor</a>
+
+.. |ToArrayInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/ToArrayInterface.php" target="_blank">ToArrayInterface</a>
+
+.. |Applicable Checkers| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/README.md#applicable-checkers" target="_blank">Applicable Checkers</a>
+
+.. |MatchApplicableChecker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/MatchApplicableChecker.php" target="_blank">MatchApplicableChecker</a>
+
+.. |SkipGroupApplicableChecker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/SkipGroupApplicableChecker.php" target="_blank">SkipGroupApplicableChecker</a>
+
+.. |GroupRangeApplicableChecker| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Component/ChainProcessor/GroupRangeApplicableChecker.php" target="_blank">GroupRangeApplicableChecker</a>
+
+.. |OptimizedProcessorIterator| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/OptimizedProcessorIterator.php" target="_blank">OptimizedProcessorIterator</a>
+
+.. |JSON.API| raw:: html
+
+   <a href="http://jsonapi.org/" target="_blank">JSON.API</a>
+
+.. |Error| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Model/Error.php" target="_blank">Error</a>
+
+.. |ErrorSource| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Model/ErrorSource.php" target="_blank">ErrorSource</a>
+
+.. |Label| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Model/Label.php" target="_blank">Label</a>
+
+.. |RFC 6901| raw:: html
+
+   <a href="https://tools.ietf.org/html/rfc6901" target="_blank">RFC 6901</a>
+
+.. |ExceptionTextExtractor| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/ExceptionTextExtractor.php" target="_blank">ExceptionTextExtractor</a>
+
+.. |ExceptionTextExtractorInterface| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/ExceptionTextExtractorInterface.php" target="_blank">ExceptionTextExtractorInterface</a>
+
+.. |Constraint| raw:: html
+
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Request/Constraint.php" target="_blank">Constraint</a>
+
+.. |common way| raw:: html
+
+   <a href="http://symfony.com/doc/current/reference/dic_tags.html#monolog-logger" target="_blank">common way</a>
+
+.. |context1| raw:: html
+
+   <a href="http://symfony.com/doc/current/reference/configuration/security.html#firewall-context" target="_blank">context</a>
+
+.. |Oro Packagist repository| raw:: html
+
+   <a href="https://packagist.oroinc.com/" target="_blank">Oro Packagist repository</a>
+
+.. |https://marketplace.oroinc.com/oroplatform| raw:: html
+
+   <a href="https://marketplace.oroinc.com/oroplatform" target="_blank">https://marketplace.oroinc.com/oroplatform</a>
+
+.. |https://marketplace.orocrm.com/| raw:: html
+
+   <a href="https://marketplace.orocrm.com/" target="_blank">https://marketplace.orocrm.com/</a>
+
+.. |https://marketplace.orocommerce.com/| raw:: html
+
+   <a href="https://marketplace.orocommerce.com/" target="_blank">https://marketplace.orocommerce.com/</a>
+
+.. |https://github.com/oroinc/| raw:: html
+
+   <a href="https://github.com/oroinc/" target="_blank">https://github.com/oroinc/</a>
+
+.. |https://packagist.oroinc.com/explore/| raw:: html
+
+   <a href="https://packagist.oroinc.com/explore/" target="_blank">https://packagist.oroinc.com/explore/</a>
+
+.. |ft_min_word_len| raw:: html
+
+   <a href="http://dev.mysql.com/doc/refman/5.1/en/server-system-variables.html#sysvar_ft_min_word_len" target="_blank">ft\_min\_word\_len</a>
+
+.. |change this value to 3| raw:: html
+
+   <a href="http://dev.mysql.com/doc/refman/5.1/en/fulltext-fine-tuning.html" target="_blank">change this value to 3</a>
+
+.. |Shovel plugin| raw:: html
+
+   <a href="https://www.rabbitmq.com/shovel.html" target="_blank">Shovel plugin</a>
+
+.. |Install Shovel Plugin| raw:: html
+
+   <a href="https://www.rabbitmq.com/shovel.html#getting-started" target="_blank">Install Shovel Plugin</a>
+
+.. |Install Shovel Management Plugin| raw:: html
+
+   <a href="https://www.rabbitmq.com/shovel.html#management-status" target="_blank">Install Shovel Management Plugin</a>
+
+.. |RabbitMQ Shovel Plugin| raw:: html
+
+   <a href="https://www.rabbitmq.com/shovel.html" target="_blank">RabbitMQ Shovel Plugin</a>
+
+.. |RabbitMQ Configuring Dynamic Shovels| raw:: html
+
+   <a href="https://www.rabbitmq.com/shovel-dynamic.html" target="_blank">RabbitMQ Configuring Dynamic Shovels</a>
+
+.. |RabbitMQ documentation| raw:: html
+
+   <a href="https://www.rabbitmq.com/cli.html" target="_blank">RabbitMQ documentation</a>
+
+.. |RabbitMQ documentation1| raw:: html
+
+   <a href="https://www.rabbitmq.com/rabbitmqctl.8.html" target="_blank">RabbitMQ documentation</a>
+
+.. |RabbitMQ Management Plugin| raw:: html
+
+   <a href="https://www.rabbitmq.com/management.html" target="_blank">RabbitMQ Management Plugin</a>
+
+.. |RabbitMQ documentation2| raw:: html
+
+   <a href="https://www.rabbitmq.com/plugins.html" target="_blank">RabbitMQ documentation</a>
+
+.. |RabbitMQ documentation3| raw:: html
+
+   <a href="https://www.rabbitmq.com/management-cli.html" target="_blank">RabbitMQ documentation</a>
+
+.. |RabbitMQ Command Line Tools| raw:: html
+
+   <a href="https://www.rabbitmq.com/cli.html" target="_blank">RabbitMQ Command Line Tools</a>
+
+.. |RabbitMQ CLI Tool| raw:: html
+
+   <a href="https://www.rabbitmq.com/rabbitmqctl.8.html" target="_blank">RabbitMQ CLI Tool</a>
+
+.. |RabbitMQ Management Command Line Tool| raw:: html
+
+   <a href="https://www.rabbitmq.com/relocate.html" target="_blank">RabbitMQ Management Command Line Tool</a>
+
+.. |RabbitMQ Plugins| raw:: html
+
+   <a href="https://www.rabbitmq.com/plugins.html" target="_blank">RabbitMQ Plugins</a>
+
+.. |here6| raw:: html
+
+   <a href="https://github.com/oroinc/OroMessageQueueBundle/blob/master/Resources/doc/container_in_consumer.md" target="_blank">here</a>
+
+.. |node's data directory| raw:: html
+
+   <a href="https://www.rabbitmq.com/relocate.html" target="_blank">node's data directory</a>
+
+.. |RabbitMQ Backup and Restore| raw:: html
+
+   <a href="https://www.rabbitmq.com/backup.html" target="_blank">RabbitMQ Backup and Restore</a>
+
+.. |RabbitMQ File and Directory Locations| raw:: html
+
+   <a href="https://www.rabbitmq.com/relocate.html" target="_blank">RabbitMQ File and Directory Locations</a>
+
+.. |documentation on RabbitMQ website| raw:: html
+
+   <a href="https://www.rabbitmq.com/backup.html" target="_blank">documentation on RabbitMQ website</a>
+
+.. |Logstash| raw:: html
+
+   <a href="https://www.elastic.co/products/logstash" target="_blank">Logstash</a>
+
+.. |Kibana| raw:: html
+
+   <a href="https://www.elastic.co/products/kibana" target="_blank">Kibana</a>
+
+.. |Elastic website| raw:: html
+
+   <a href="https://www.elastic.co/start" target="_blank">Elastic website</a>
+
+.. |Logstash product page| raw:: html
+
+   <a href="https://www.elastic.co/products/logstash" target="_blank">Logstash product page</a>
+
+.. |Monolog Logstash formatter| raw:: html
+
+   <a href="https://github.com/Seldaek/monolog/blob/master/src/Monolog/Formatter/LogstashFormatter.php" target="_blank">Monolog Logstash formatter</a>
+
+.. |Elastic ELK stack| raw:: html
+
+   <a href="https://www.elastic.co/start" target="_blank">Elastic ELK stack</a>
+
+.. |Elastic Logstash| raw:: html
+
+   <a href="https://www.elastic.co/products/logstash" target="_blank">Elastic Logstash</a>
+
+.. |Elastic Filebeat| raw:: html
+
+   <a href="https://www.elastic.co/products/beats/filebeat" target="_blank">Elastic Filebeat</a>
+
+.. |Elastic Kibana| raw:: html
+
+   <a href="https://www.elastic.co/products/kibana" target="_blank">Elastic Kibana</a>
+
+.. |Elastic Elasticsearch| raw:: html
+
+   <a href="https://www.elastic.co/products/elasticsearch" target="_blank">Elastic Elasticsearch</a>
+
+.. |Monolog LogstashFormatter| raw:: html
+
+   <a href="https://github.com/Seldaek/monolog/blob/master/src/Monolog/Formatter/LogstashFormatter.php" target="_blank">Monolog LogstashFormatter</a>
+
+.. |Page Component documentation| raw:: html
+
+   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/page-component.md" target="_blank">Page Component documentation</a>
+
+
+
+
+
+
+
+
+
+.. User Documentation
+
+
+.. |how to create and manage contact requests| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/manage-contact-requests" target="_blank">how to create and manage contact requests</a>
+
+.. |how to create and manage events in your Oro application| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-manage-events-orocrm#play=lZKiS3TvXNU" target="_blank">how to create and manage events in your Oro application</a>
+
+.. |Hangouts Help| raw:: html
+
+   <a href="https://support.google.com/hangouts#topic=6386410" target="_blank">Hangouts Help</a>
+
+.. |how to create and manage tasks| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-and-manage-tasks" target="_blank">how to create and manage tasks</a>
+
+.. |how to create and manage cases in your Oro application| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-manage-cases-orocrm" target="_blank">how to create and manage cases in your Oro application</a>
+
+.. |how to log calls in your Oro application| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/log-call-orocrm" target="_blank">how to log calls in your Oro application</a>
+
+.. |how to create customer roles in Oro applications| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-customer-roles" target="_blank">how to create customer roles in Oro applications</a>
+
+.. |how to create customer groups in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-customer-groups" target="_blank">how to create customer groups in OroCommerce</a>
+
+.. |how to create customers in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-customer-record" target="_blank">how to create customers in OroCommerce</a>
+
+.. |accounts, contacts and customers| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/22091" target="_blank">accounts, contacts and customers</a>
+
+.. |how to create and edit contact records| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/create-edit-contact-records-orocrm#play=SmkJGGwG-r0" target="_blank">how to create and edit contact records</a>
+
+.. |creating and editing| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/22093" target="_blank">creating and editing</a>
+
+.. |managing| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/22095" target="_blank">managing</a>
+
+.. |merging account records| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/merge-account-records-2" target="_blank">merging account records</a>
+
+.. |territory| raw:: html
+
+   <a href="https://oroinc.com/doc/orocrm/current/user-guide-sales-tools/b2b-sales/territory-management" target="_blank">territory</a>
+
+.. |how to add comments| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/add-comments-orocrm" target="_blank">how to add comments</a>
+
+.. |how to add attachments in your Oro application| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/add-attachments-orocrm" target="_blank">how to add attachments in your Oro application</a>
+
+.. |how to add notes| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/add-notes-orocrm" target="_blank">how to add notes</a>
+
+.. |how to create and manage emails| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-manage-emails-orocrm" target="_blank">how to create and manage emails</a>
+
+.. |OroCommerce Editions| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/full-features-list" target="_blank">OroCommerce Editions</a>
+
+.. |OroCRM Editions| raw:: html
+
+   <a href="https://oroinc.com/orocrm/orocrm-enterprise-and-community" target="_blank">OroCRM Editions</a>
+
+.. |generate private and public encryption keys| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/installation/#generating-public-and-private-keys" target="_blank">generate private and public encryption keys</a>
+
+.. |how to work with inventory and warehouses| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-setup-inventory-and-warehouses" target="_blank">how to work with inventory and warehouses</a>
+
+.. |Matomo| raw:: html
+
+   <a href="https://matomo.org/" target="_blank">Matomo</a>
+
+.. |campaign URLs| raw:: html
+
+   <a href="https://mailchimp.com/help/customize-email-campaign-urls/?_ga=2.63720488.668787307.1531314044-10372005.1530783947" target="_blank">campaign URLs</a>
+
+.. |code| raw:: html
+
+   <a href="https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Migrations/Data/ORM/LoadHomePageSlider.php" target="_blank">code</a>
+
+.. |configuration| raw:: html
+
+   <a href="https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/default/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
+
+.. |how to create a web catalog in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-web-catalog" target="_blank">how to create a web catalog in OroCommerce</a>
+
+.. |how to create promotions| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions" target="_blank">how to create promotions</a>
+
+.. |how to create a line item promotion| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-line-item-promotion" target="_blank">how to create a line item promotion</a>
+
+.. |how to create the Buy X Get Y (Same Product) promotion| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-buy-x-get-y-promotion" target="_blank">how to create the Buy X Get Y (Same Product) promotion</a>
+
+.. |how to create a shipping promotion| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-create-shipping-promotions" target="_blank">how to create a shipping promotion</a>
+
+.. |how to create coupons and link them to promotions| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/how-to-create-coupons-and-link-them-to-promotions" target="_blank">how to create coupons and link them to promotions</a>
+
+.. |segment| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-segments" target="_blank">segment</a>
+
+.. |Fundamental OroCommerce Training: Organize Products in a Web Catalog| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/course/fundamental-orocommerce" target="_blank">Fundamental OroCommerce Training: Organize Products in a Web Catalog</a>
+
+.. |OroCommerce's Video Tutorial: How to Create a web Catalog| raw:: html
+
+   <a href="https://www.youtube.com/watch?v=SlW73esqBpk" target="_blank">OroCommerce's Video Tutorial: How to Create a web Catalog</a>
+
+.. |OroCommerce Blog: Customizable Web Catalogs in OroCommerce| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/blog/training-thursday-customizable-web-catalogs-orocommerce" target="_blank">OroCommerce Blog: Customizable Web Catalogs in OroCommerce</a>
+
+.. |how to create a product family| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families" target="_blank">how to create a product family</a>
+
+.. |how to create a simple product| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-simple-product" target="_blank">how to create a simple product</a>
+
+.. |how to create a configurable product| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-configurable-products" target="_blank">how to create a configurable product</a>
+
+.. |how to set up price attributes in OroCommerce| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/setup-price-attributes" target="_blank">how to set up price attributes in OroCommerce</a>
+
+.. |how to create product attributes| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-product-attributes-families" target="_blank">how to create product attributes</a>
+
+.. |how to create a report in your Oro application| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-report-orocrm" target="_blank">how to create a report in your Oro application</a>
+
+.. |creating orders from the shopping list| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-order-shopping-list#play=w7NXMifQZnI" target="_blank">creating orders from the shopping list</a>
+
+.. |how to create and work with opportunities| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/create-work-opportunity" target="_blank">how to create and work with opportunities</a>
+
+.. |quotes| raw:: html
+
+   <a href="https://www.oroinc.com/doc/orocommerce/current/user-guide/quotes" target="_blank">quotes</a>
+
+.. |how to configure price lists for customers and customer groups in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/configuring-pricelists" target="_blank">how to configure price lists for customers and customer groups in OroCommerce</a>
+
+.. |Symfony2 expression language| raw:: html
+
+   <a href="http://symfony.com/doc/current/components/expression_language/syntax.html" target="_blank">Symfony2 expression language</a>
+
+.. |how to create a new order from scratch| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-new-order#play=ztwuz7NX1Y4" target="_blank">how to create a new order from scratch</a>
+
+.. |how to create and work with a lead| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/create-work-lead" target="_blank">how to create and work with a lead</a>
+
+.. |how to manage RFQs in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/manage-request-for-quotes" target="_blank">how to manage RFQs in OroCommerce</a>
+
+.. |how to create tax rules in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-tax-rules" target="_blank">how to create tax rules in OroCommerce</a>
+
+.. |Creating tax codes and jurisdictions in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-tax-code-and-jurisdictions" target="_blank">Creating tax codes and jurisdictions in OroCommerce</a>
+
+.. |Creating tax rules| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library/create-tax-rules" target="_blank">Creating tax rules</a>
+
+.. |how to create a shipping integration in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-integrations" target="_blank">how to create a shipping integration in OroCommerce</a>
+
+.. |how to create payment method integrations| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-method-integrations" target="_blank">how to create payment method integrations</a>
+
+.. |GDPR portal| raw:: html
+
+   <a href="https://www.eugdpr.org/" target="_blank">GDPR portal</a>
+
+.. |EU Commission web page| raw:: html
+
+   <a href="https://ec.europa.eu/info/law/law-topic/data-protection_en" target="_blank">EU Commission web page</a>
+
+.. |ICO's Guide to the GDPR| raw:: html
+
+   <a href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr" target="_blank">ICO's Guide to the GDPR</a>
+
+.. |OroCommerceCookieBannerBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/CommerceCookieBannerBundle.zip" target="_blank">OroCommerceCookieBannerBundle</a>
+
+.. |composer| raw:: html
+
+   <a href="https://getcomposer.org/doc/03-cli.md#require" target="_blank">composer</a>
+
+.. |Google API Console| raw:: html
+
+   <a href="https://console.developers.google.com/start" target="_blank">Google API Console</a>
+
+.. |Google API key| raw:: html
+
+   <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">Google API key</a>
+
+.. |Set Up Your Website Storefront – Buyer’s Perspective| raw:: html
+
+   <a href="https://www.youtube.com/watch?v=9O4p1vpxPSI" target="_blank">Set Up Your Website Storefront – Buyer’s Perspective</a>
+
+.. |Exploring Storefront Possibilities as a Company Administrator| raw:: html
+
+   <a href="https://www.youtube.com/watch?v=9O4p1vpxPSI" target="_blank">Exploring Storefront Possibilities as a Company Administrator</a>
+
+.. |eCheck| raw:: html
+
+   <a href="https://www.authorize.Net/payments/echeck/" target="_blank">eCheck</a>
+
+.. |how to create and manage calendars| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-and-manage-calendars#play=fVcOy3TmuQg" target="_blank">how to create and manage calendars</a>
+
+.. |how to create organizations and business units| raw:: html
+
+   <a href="https://www.orocrm.com/media-library/create-organizations-and-business-units" target="_blank">how to create organizations and business units</a>
+
+.. |Google support page| raw:: html
+
+   <a href="https://support.google.com/mail/troubleshooter/1668960?hl=en&rd=1#ts=1665018%2C1665144" target="_blank">Google support page</a>
+
+.. |Allow Access for Less Secure Apps Box| raw:: html
+
+   <a href="https://support.google.com/accounts/answer/6010255?hl=en" target="_blank">Allow Access for Less Secure Apps Box</a>
+
+.. |attachments are enabled for an entity| raw:: html
+
+   <a href="https://oroinc.com/doc/orocrm/current/admin-guide/entities/entity-actions#doc-entity-actions-create" target="_blank">attachments are enabled for an entity</a>
+
+.. |storefront menu| raw:: html
+
+   <a href="https://oroinc.com/orocommerce/doc/current/configuration-guide/menu#orocommerce-storefront-menus" target="_blank">storefront menu</a>
+
+.. |Use IMAP to check Gmail| raw:: html
+
+   <a href="https://support.google.com/mail/answer/7126229?hl=en&rd=2&visit_id=1-636180891016092253-2149088408#ts=1665018%2C1665144" target="_blank">Use IMAP to check Gmail</a>
+
+.. |Less secure apps & your Google Account| raw:: html
+
+   <a href="https://support.google.com/accounts/answer/6010255?hl=en" target="_blank">Less secure apps & your Google Account</a>
+
+.. |Backoffice Quotes Flow with Approvals| raw:: html
+
+   <a href="https://oroinc.com/orocommerce/doc/current/admin-guide/workflows/backoffice-quote-flow-with-approvals" target="_blank">Backoffice Quotes Flow with Approvals</a>
+
+.. |how to create a and manage roles| raw:: html
+
+   <a href="https://www.orocrm.com/media-library/create-manage-roles" target="_blank">how to create a and manage roles</a>
+
+.. |how to create tags| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/tags-taxonomies" target="_blank">how to create tags</a>
+
+.. |how to create taxonomies| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/tags-taxonomies" target="_blank">how to create taxonomies</a>
+
+.. |OroCronBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/CronBundle" target="_blank">OroCronBundle</a>
+
+.. |ImapBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ImapBundle" target="_blank">ImapBundle</a>
+
+.. |dedicated section| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ImapBundle#synchronization-with-imap-servers" target="_blank">dedicated section</a>
+
+.. |ReminderBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/ReminderBundle" target="_blank">ReminderBundle</a>
+
+.. |TrackingBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
+
+.. |IntegrationBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/IntegrationBundle" target="_blank">IntegrationBundle</a>
+
+.. |how to create shipping rules in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/create-shipping-rules" target="_blank">how to create shipping rules in OroCommerce</a>
+
+.. |how to customize storefront menus in OroCommerce| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/customize-front-end-menus" target="_blank">how to customize storefront menus in OroCommerce</a>
+
+.. |Oro PayPal Express Integration| raw:: html
+
+   <a href="https://packagist.oroinc.com/?#oro/commerce-paypal-express" target="_blank">Oro PayPal Express Integration</a>
+
+.. |Customer Consent Management| raw:: html
+
+   <a href="https://marketplace.orocommerce.com/package/customer-consent-management-in-orocommerce" target="_blank">Customer Consent Management</a>
+
+.. |Matomo1| raw:: html
+
+   <a href="https://matomo.org/faq/general/faq_114/" target="_blank">Matomo</a>
+
+.. |Website ID| raw:: html
+
+   <a href="https://matomo.org/faq/general/faq_19212/" target="_blank">Website ID</a>
+
+.. |Google Developers Console| raw:: html
+
+   <a href="https://console.developers.google.com/apis" target="_blank">Google Developers Console</a>
+
+.. |instructions on obtaining credentials the Google side| raw:: html
+
+   <a href="https://support.google.com/cloud/answer/6158862?hl=en" target="_blank">instructions on obtaining credentials the Google side</a>
+
+.. |Canonical link| raw:: html
+
+   <a href="https://support.google.com/webmasters/answer/139066?hl=en" target="_blank">Canonical link</a>
+
+.. |how to synchronize your mailbox with an Oro application| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/synchronize-mailbox-orocrm" target="_blank">how to synchronize your mailbox with an Oro application</a>
+
+.. |how to create and configure system mailboxes| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/create-configure-system-mailboxes" target="_blank">how to create and configure system mailboxes</a>
+
+.. |the Twig doc| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/functions/date.html" target="_blank">the Twig doc</a>
+
+.. |the Symfony Twig Extensions (URL)| raw:: html
+
+   <a href="http://symfony.com/doc/3.4/reference/twig_reference.html#url" target="_blank">the Symfony Twig Extensions (URL)</a>
+
+.. |the Symfony Twig Extensions (Path)| raw:: html
+
+   <a href="http://symfony.com/doc/3.4/reference/twig_reference.html#path" target="_blank">the Symfony Twig Extensions (Path)</a>
+
+.. |OroEmailBundle documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/EmailBundle/Resources/doc/email_templates.md" target="_blank">OroEmailBundle documentation</a>
+
+.. |default| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/default.html" target="_blank">default</a>
+
+.. |date| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/date.html" target="_blank">date</a>
+
+.. |escape| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/escape.html" target="_blank">escape</a>
+
+.. |format| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/format.html" target="_blank">format</a>
+
+.. |length| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/length.html" target="_blank">length</a>
+
+.. |lower| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/lower.html" target="_blank">lower</a>
+
+.. |nl2br| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/nl2br.html" target="_blank">nl2br</a>
+
+.. |number_format| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/number_format.html" target="_blank">number_format</a>
+
+.. |title| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/title.html" target="_blank">title</a>
+
+.. |trim| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/trim.html" target="_blank">trim</a>
+
+.. |upper| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/upper.html" target="_blank">upper</a>
+
+.. |oro_html_sanitize| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Resources/doc/reference/twig-filters.md#oro_html_sanitize" target="_blank">oro_html_sanitize</a>
+
+.. |oro_format| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/UIBundle/Twig/FormatExtension.php#L76" target="_blank">oro_format</a>
+
+.. |oro_format_address| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/address-formatting.md#oro_format_address" target="_blank">oro_format_address</a>
+
+.. |oro_format_date| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L122" target="_blank">oro_format_date</a>
+
+.. |oro_format_time| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L174" target="_blank">oro_format_time</a>
+
+.. |oro_format_datetime| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/DateTimeExtension.php#L92" target="_blank">oro_format_datetime</a>
+
+.. |oro_format_name| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Resources/doc/reference/name-formatting.md#oro_format_name" target="_blank">oro_format_name</a>
+
+.. |oro_format_price| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/CurrencyBundle/Twig/CurrencyExtension.php#L111" target="_blank">oro_format_price</a>
+
+.. |oro_format_currency| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/LocaleBundle/Twig/NumberExtension.php#L212" target="_blank">oro_format_currency</a>
+
+.. |oro_format_short_product_unit_value| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-value-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
+
+.. |join| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/filters/join.html" target="_blank">join</a>
+
+.. |for| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/tags/for.html" target="_blank">for</a>
+
+.. |if| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/tags/if.html" target="_blank">if</a>
+
+.. |spaceless| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/tags/spaceless.html" target="_blank">spaceless</a>
+
+.. |set| raw:: html
+
+   <a href="https://twig.symfony.com/doc/2.x/tags/set.html" target="_blank">set</a>
+
+.. |how to create notification rules| raw:: html
+
+   <a href="https://oroinc.com/orocrm/media-library/create-notification-rules" target="_blank">how to create notification rules</a>
+
+.. |how to create a custom field| raw:: html
+
+   <a href="https://www.oroinc.com/orocrm/media-library/create-custom-field" target="_blank">how to create a custom field</a>
+
+.. |reserved SQL word| raw:: html
+
+   <a href="http://msdn.microsoft.com/en-us/library/ms189822.aspx" target="_blank">reserved SQL word</a>
+
+.. |reserved PHP word| raw:: html
+
+   <a href="http://php.net/manual/en/reserved.keywords.php" target="_blank">reserved PHP word</a>
+
+.. |OroMessageQueueComponent| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Component/MessageQueue" target="_blank">OroMessageQueueComponent</a>
+
+.. |OroMessageQueueBundle| raw:: html
+
+   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/MessageQueueBundle" target="_blank">OroMessageQueueBundle</a>
+
+.. |Crowdin| raw:: html
+
+   <a href="https://crowdin.com/join" target="_blank">Crowdin</a>
+
+.. |how to create payment rules| raw:: html
+
+   <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
+
+.. |http://localhost/<yoursitename>/index_dev.php| raw:: html
+
+   <a href="http://localhost/<yoursitename>/index_dev.php" target="_blank">http://localhost/<yoursitename>/index_dev.php</a>
+
+.. |Workflow Documentation| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/index.md" target="_blank">Workflow Documentation</a>
+
+.. |registered with UPS.com| raw:: html
+
+   <a href="https://www.ups.com/one-to-one/register" target="_blank">registered with UPS.com</a>
+
+.. |ups.com| raw:: html
+
+   <a href="https://ups.com" target="_blank">ups.com</a>
+
+.. |UPS Developer Kit| raw:: html
+
+   <a href="https://www.ups.com/upsdeveloperkit/" target="_blank">UPS Developer Kit</a>
+
+.. |Request an access key| raw:: html
+
+   <a href="https://www.ups.com/upsdeveloperkit/requestaccesskey?loc=en_US" target="_blank">Request an access key</a>
+
+.. |FedEx login| raw:: html
+
+   <a href="https://www.fedex.com/en-us/home.html" target="_blank">FedEx login</a>
+
+.. |FedEx Web Services| raw:: html
+
+   <a href="https://www.fedex.com/us/developer/web-services/index.html">FedEx Web Services</a>
+
+.. |https://developer.paypal.com/| raw:: html
+
+   <a href="https://developer.paypal.com/" target="_blank">https://developer.paypal.com/</a>
+
+.. |zero amount transaction| raw:: html
+
+   <a href="https://developer.paypal.com/docs/classic/payflow/integration-guide/?mark=Zero%20Amount%20Authorization#submitting-account-verifications" target="_blank">zero amount transaction</a>
+
+.. |https://registration.paypal.com/| raw:: html
+
+   <a href="https://registration.paypal.com/" target="_blank">https://registration.paypal.com/</a>
+
+.. |https://manager.paypal.com/| raw:: html
+
+   <a href="https://manager.paypal.com/" target="_blank">https://manager.paypal.com/</a>
+
+.. |PayPal website| raw:: html
+
+   <a href="https://www.paypal.com/us/webapps/mpp/country-worldwide" target="_blank">PayPal website</a>
+
+.. |PayPal Express Package| raw:: html
+
+   <a href="https://packagist.oroinc.com/#oro/paypal-express" target="_blank">PayPal Express Package</a>
+
+.. |official education guide for merchants| raw:: html
+
+   <a href="https://www.authorize.net/content/dam/authorize/documents/echecknetcomplianceguide.pdf" target="_blank">official education guide for merchants</a>
+
+.. |Authorize.Net Accept.js| raw:: html
+
+   <a href="https://developer.authorize.net/api/reference/features/acceptjs.html" target="_blank">Authorize.Net Accept.js</a>
+
+.. |authorize.net| raw:: html
+
+   <a href="http://reseller.authorize.net/application/101898/" target="_blank">authorize.net</a>
+
+.. |Authorize.Net Support| raw:: html
+
+   <a href="https://support.authorize.net/authkb/index?page=content&id=A414" target="_blank">Authorize.Net Support</a>
+
+.. |https://account.authorize.net/| raw:: html
+
+   <a href="https://account.authorize.net/" target="_blank">https://account.authorize.net/</a>
+
+.. |https://developer.authorize.net/hello_world/sandbox/| raw:: html
+
+   <a href="https://developer.authorize.net/hello_world/sandbox/" target="_blank">https://developer.authorize.net/hello_world/sandbox/</a>
+
+.. |Authorize.Net Testing Guide| raw:: html
+
+   <a href="https://developer.authorize.net/hello_world/testing_guide/" target="_blank">Authorize.Net Testing Guide</a>
+
+.. |create a merchant account with Authorize.Net| raw:: html
+
+   <a href="https://reseller.authorize.net/application/101898/" target="_blank">create a merchant account with Authorize.Net</a>
+
+.. |eCheck payments| raw:: html
+
+   <a href="https://www.authorize.net/payments/echeck/" target="_blank">eCheck payments</a>
+
+.. |Customer Information Manager Integration| raw:: html
+
+   <a href="https://www.authorize.net/our-features/secure-customer-data/" target="_blank">Customer Information Manager Integration</a>
+
+.. |https://www.infinitepay.de/| raw:: html
+
+   <a href="https://www.infinitepay.de/" target="_blank">https://www.infinitepay.de/</a>
+
+.. |wirecard.com| raw:: html
+
+   <a href="http://wirecard.com" target="_blank">wirecard.com</a>
+
+.. |Wirecard Demo Mode| raw:: html
+
+   <a href="https://guides.wirecard.at/wcs:demo_mode" target="_blank">Wirecard Demo Mode</a>
+
+.. |Wirecard Test Mode| raw:: html
+
+   <a href="https://guides.wirecard.at/wcs:test_mode" target="_blank">Wirecard Test Mode</a>
+
+.. |https://www.apruve.com/| raw:: html
+
+   <a href="https://www.apruve.com/" target="_blank">https://www.apruve.com/</a>
+
+.. |https://app.apruve.com| raw:: html
+
+   <a href="https://app.apruve.com" target="_blank">https://app.apruve.com</a>
+
+.. |https://test.apruve.com| raw:: html
+
+   <a href="https://test.apruve.com" target="_blank">https://test.apruve.com</a>
+
+.. |here3| raw:: html
+
+   <a href="https://marketplace.orocrm.com/package/orocrm-dotmailer-integration/" target="_blank">here</a>
+
+.. |sign-on| raw:: html
+
+   <a href="https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer" target="_blank">sign-on</a>
+
+.. |https://r1-app.dotmailer.com/| raw:: html
+
+   <a href="https://r1-app.dotmailer.com/" target="_blank">https://r1-app.dotmailer.com/</a>
+
+.. |Single sign-on| raw:: html
+
+   <a href="https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer" target="_blank">Single sign-on</a>
+
+.. |here4| raw:: html
+
+   <a href="https://marketplace.oroinc.com/orocrm/extension/mailchimp-integration" target="_blank">here</a>
+
+.. |Google Tag Manager| raw:: html
+
+   <a href="https://support.google.com/tagmanager/answer/2574372?hl=en&topic=2574304&ctx=topic" target="_blank">Google Tag Manager</a>
+
+.. |Enhanced E-commerce| raw:: html
+
+   <a href="https://developers.google.com/tag-manager/enhanced-ecommerce" target="_blank">Enhanced E-commerce</a>
+
+.. |E-Commerce reports| raw:: html
+
+   <a href="https://support.google.com/analytics/answer/6014872?hl=en" target="_blank">E-Commerce reports</a>
+
+.. |Google Tag Manager1| raw:: html
+
+   <a href="https://support.google.com/tagmanager/answer/6103696?hl=en" target="_blank">Google Tag Manager</a>
+
+.. |Google Analytics| raw:: html
+
+   <a href="https://support.google.com/analytics/answer/1009694?hl=en" target="_blank">Google Analytics</a>
+
+.. |Google Analytics Tracking ID| raw:: html
+
+   <a href="https://support.google.com/analytics/answer/7372977" target="_blank">Google Analytics Tracking ID</a>
+
+.. |Google Analytics Enhanced E-commerce| raw:: html
+
+   <a href="https://developers.google.com/tag-manager/enhanced-ecommerce" target="_blank">Google Analytics Enhanced E-commerce</a>
+
+.. |Google Tag Manager Container ID| raw:: html
+
+   <a href="https://support.google.com/tagmanager/answer/6103696?hl=en" target="_blank">Google Tag Manager Container ID</a>
+
+.. |Download the .json file| raw:: html
+
+   <a href="https://oroinc.com/downloads/oro_container.zip" target="_blank">Download the .json file</a>
+
+.. |importgtm| raw:: html
+
+   <a href="https://support.google.com/tagmanager/answer/6106997?hl=en" target="_blank">import</a>
+
+.. |http://developer.paypal.com| raw:: html
+
+   <a href="http://developer.paypal.com" target="_blank">http://developer.paypal.com</a>
+
+
+.. |Client Credentials| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/authorization-server/client-credentials-grant/" target="_blank">Client Credentials</a>
+
+.. |Password| raw:: html
+
+   <a href="https://oauth2.thephpleague.com/authorization-server/resource-owner-password-credentials-grant/" target="_blank">Password</a>
+
+

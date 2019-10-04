@@ -1,0 +1,16 @@
+.. _bundle-docs-platform-comment-bundle:
+
+OroCommentBundle
+================
+
+OroCommentBundle adds the Comments functionality which can be used with the application entities.
+
+Related Documentation
+---------------------
+
+* |Enable Comment Association Using Migrations|
+
+
+
+.. include:: /include/include-links.rst
+   :start-after: begin

@@ -1,9 +1,0 @@
-.. _config-localization-quick-start:
-
-Localization Quick Start
-------------------------
-
-the picture needs updating to reflect new UI changes and removed localization options, until then it will remain hidden
-
-.. image:: /admin_guide/img/localization/translation_guide_upd2.png
-   :alt: Click here to open larger version of the image

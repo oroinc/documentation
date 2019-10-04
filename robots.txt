@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://doc.oroinc.com/sitemapindex.xml
