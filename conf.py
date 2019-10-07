@@ -38,6 +38,7 @@ extensions = [
     'oro.integrity_check',
     'builders.orohtml',
     'ext.orotoc',
+    'ext.assets-timestamp',
     'ext.sitemap',
     'ext.sitemap-index'
 ]
@@ -214,6 +215,8 @@ html_use_index = False
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'TheOroCommercedoc'
 
+html_copy_source = False
+
 def setup(app):
     app.add_stylesheet('https://use.fontawesome.com/releases/v5.2.0/css/all.css')
 #    app.add_stylesheet('css/custom.css')
@@ -335,6 +338,15 @@ epub_copyright = u'2017, OroTeam'
 # Allow duplicate toc entries.
 #epub_tocdup = True
 
+# List of document titles which are related to developers documentation but placed not in the developer directory
+# All this documents and their children will get additional level to developer root document in the breadcrumbs
+developer_titles = ['Backend Developer Guide', 'Frontend Developer Guide', 'Community Guide']
+
+# current_timestamp is used to prevent chaching of assets in case of new build
+# it's added to all css/js files as GET parameter
+html_context = {
+    'developer_titles': developer_titles
+}
 
 # Base URL of the website.
 # Required by sphinx_sitemap extension

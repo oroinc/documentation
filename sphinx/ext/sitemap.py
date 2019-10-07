@@ -52,14 +52,15 @@ def get_locales(app, exception):
 
 
 def http_page_context(app, pagename, templatename, context, doctree):
-    add_html_link(app, pagename)
+    add_html_link(app, pagename, context)
     save_current_version(app, context)
     save_is_root_build(app, context)
 
 
-def add_html_link(app, pagename):
+def add_html_link(app, pagename, context):
     """As each page is built, collect page names for the sitemap"""
-    app.sitemap_links.append(pagename + ".html")
+    outfile = app.builder.get_target_uri(pagename)
+    app.sitemap_links.append(outfile)
 
 
 def save_current_version(app, context):

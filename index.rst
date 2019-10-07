@@ -16,3 +16,6 @@ Explore comprehensive knowledge base and learn OroCommerce, OroCRM and OroPlatfo
    user/index
    cloud/index
    developer/index
+   backend/index
+   frontend/index
+   community/index

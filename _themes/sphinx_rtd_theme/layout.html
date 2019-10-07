@@ -10,6 +10,23 @@
 {# Prefix for all links in template. It allows to make links absolute from the root with '/'  #}
 {%- set link_prefix = '' %}
 
+{# Namespace for metadata from rst documents #}
+{% set layout_ns = namespace(show_global_toc=true, show_local_toc=true, local_toc_max_depth=-1, documentation_types='') %}
+{%- if meta is defined %}
+    {%- if 'oro_show_global_toc' in meta.viewkeys() %}
+        {%- set layout_ns.show_global_toc = meta.get('oro_show_global_toc')|tobool %}
+    {%- endif %}
+    {%- if 'oro_show_local_toc' in meta.viewkeys() %}
+        {%- set layout_ns.show_local_toc = meta.get('oro_show_local_toc')|tobool %}
+    {%- endif %}
+    {%- if 'oro_local_toc_max_depth' in meta.viewkeys() %}
+        {%- set layout_ns.local_toc_max_depth = meta.get('oro_local_toc_max_depth')|int %}
+    {%- endif %}
+    {%- if 'oro_documentation_types' in meta.viewkeys() %}
+        {%- set layout_ns.documentation_types = meta.get('oro_documentation_types') %}
+    {%- endif %}
+{%- endif %}
+
 <!DOCTYPE html>
 <html class="no-js" lang="{{ lang_attr }}" >
 <head>
@@ -30,12 +47,12 @@
   {% endif %}
   {# CANONICAL URL #}
   {% if theme_canonical_url %}
-    <link rel="canonical" href="{{ theme_canonical_url }}{{ pagename }}.html"/>
+    <link rel="canonical" href="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}"/>
   {% endif %}
 
   {# JAVASCRIPTS #}
   {%- block scripts %}
-  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/modernizr.min.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/modernizr.min.js', 1) }}?{{ oro_assets_timestamp }}"></script>
 
   {%- if not embedded %}
   {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
@@ -57,10 +74,10 @@
           };
       </script>
       {%- for scriptfile in script_files %}
-        <script type="text/javascript" src="{{ pathto(link_prefix ~ scriptfile, 1) }}"></script>
+        <script type="text/javascript" src="{{ pathto(link_prefix ~ scriptfile, 1) }}?{{ oro_assets_timestamp }}"></script>
       {%- endfor %}
     {% endif %}
-    <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/theme.js', 1) }}"></script>
+    <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/theme.js', 1) }}?{{ oro_assets_timestamp }}"></script>
 
     {# OPENSEARCH #}
     {%- if use_opensearch %}
@@ -73,19 +90,19 @@
 
   {# CSS #}
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/pygments.css', 1) }}" type="text/css" />
-  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/' + style, 1) }}?{{ oro_assets_timestamp }}" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/pygments.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(link_prefix ~ '_static/css/redesign.css', 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
   {%- for css in css_files %}
     {%- if css|attr("rel") %}
-  <link rel="{{ css.rel }}" href="{{ pathto(('' if '://' in css.filename else link_prefix) ~ css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
+  <link rel="{{ css.rel }}" href="{{ pathto(('' if '://' in css.filename else link_prefix) ~ css.filename, 1) }}?{{ oro_assets_timestamp }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
     {%- else %}
-  <link rel="stylesheet" href="{{ pathto(('' if '://' in css else link_prefix) ~ css, 1) }}" type="text/css" />
+  <link rel="stylesheet" href="{{ pathto(('' if '://' in css else link_prefix) ~ css, 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
     {%- endif %}
   {%- endfor %}
 
   {%- for cssfile in extra_css_files %}
-    <link rel="stylesheet" href="{{ pathto(link_prefix ~ cssfile, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto(link_prefix ~ cssfile, 1) }}?{{ oro_assets_timestamp }}" type="text/css" />
   {%- endfor %}
 
   {%- block linktags %}
@@ -110,8 +127,8 @@
   {%- endblock %}
   {%- block extrahead %} {% endblock %}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/jquery.scrollbar.min.js', 1) }}"></script>
-  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/layout.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/jquery.scrollbar.min.js', 1) }}?{{ oro_assets_timestamp }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/layout.js', 1) }}?{{ oro_assets_timestamp }}"></script>
 </head>
 
 <body class="wy-body-for-nav">
@@ -131,42 +148,48 @@
     </div>
 
     <div class="three-columns-layout">
+      {% if layout_ns.show_global_toc %}
       <aside class="sidebar left-sidebar">
-        <div class="sidebar-holder sticky-block">
-          <div class="scrollbar-outer">
-            <nav class="nav-side">
-              <div class="">
-                {% block navigation %}
-                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                  {% block menu %}
-                    {#
-                      The singlehtml builder doesn't handle this toctree call when the
-                      toctree is empty. Skip building this for now.
-                    #}
-                    {% if 'singlehtml' not in builder %}
-                      {{ toctree(maxdepth=theme_navigation_depth|int,
-                                                  collapse=theme_collapse_navigation|tobool,
-                                                  includehidden=theme_includehidden|tobool,
-                                                  titles_only=theme_titles_only|tobool) }}
-                    {% endif %}
+        <div class="aside-holder sticky-block">
+          <div class="sidebar-holder nav-box">
+            <div class="scrollbar-outer">
+              <nav class="nav-side">
+                <div class="">
+                  {% block navigation %}
+                  <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                    {% block menu %}
+                      {#
+                        The singlehtml builder doesn't handle this toctree call when the
+                        toctree is empty. Skip building this for now.
+                      #}
+                      {% if 'singlehtml' not in builder %}
+                        {{ toctree(maxdepth=theme_navigation_depth|int,
+                                                    collapse=theme_collapse_navigation|tobool,
+                                                    includehidden=theme_includehidden|tobool,
+                                                    titles_only=theme_titles_only|tobool) }}
+                      {% endif %}
+                    {% endblock %}
+                  </div>
                   {% endblock %}
                 </div>
-                {% endblock %}
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
+          {% include "version-switcher.html"%}
         </div>
-        {% include "version-switcher.html"%}
       </aside>
-      {% if display_toc %}
+      {% endif %}
+      {% if layout_ns.show_local_toc and display_toc %}
       <aside class="sidebar right-sidebar">
-        <div class="sidebar-holder sticky-block sticky-desktop-only">
-          <div class="scrollbar-outer">
-            <nav class="contents-table">
-              {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
-              {# Replace only first occurrence to be sure that we don't change any other elements except first #}
-                {{ toc|replace(title|striptags|e, "Contents", 1) }}
-            </nav>
+        <div class="aside-holder sticky-block sticky-desktop-only">
+          <div class="sidebar-holder">
+            <div class="scrollbar-outer">
+              <nav class="contents-table">
+                {# Replace title on "Contents" string as it's a simplest way to change sphinx output #}
+                {# Replace only first occurrence to be sure that we don't change any other elements except first #}
+                  {{ localtoc(maxdepth=layout_ns.local_toc_max_depth)|replace(title|striptags|e, "Contents", 1) }}
+              </nav>
+            </div>
           </div>
         </div>
       </aside>
@@ -181,15 +204,12 @@
             <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
               {%- block document %}
               <div itemprop="articleBody">
-                {%- if meta is defined %}
-                    {%- if 'oro_documentation_types' in meta.viewkeys() %}
-                        {%- set oro_documentation_types = meta.get('oro_documentation_types') %}
-                        {% for type in oro_documentation_types.split(',') %}
-                            {%- set type = type|trim -%}
-                            <img src="{{ pathto(link_prefix ~ '_static/images/doctypes/' ~ type ~ '-icon-logo.png', 1) }}" alt="Available in {{ type }}" class="oro-documentation-type">
-                        {% endfor %}
-                    {%- endif %}
-                {%- endif %}
+                  {% if layout_ns.documentation_types %}
+                      {% for type in layout_ns.documentation_types.split(',') %}
+                          {%- set type = type|trim -%}
+                          <img src="{{ pathto(link_prefix ~ '_static/images/doctypes/' ~ type ~ '-icon-logo.png', 1) }}" alt="Available in {{ type }}" class="oro-documentation-type">
+                      {% endfor %}
+                  {% endif %}
                 {% block body %}{% endblock %}
               </div>
               {% if self.comments()|trim %}

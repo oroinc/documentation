@@ -1,8 +1,8 @@
 <header id="header" class="page-header">
   <div class="header-holder">
     <strong class="logo">
-      <a href="{{ pathto(link_prefix ~ master_doc) }}">
-        <img width="137" src="{{ pathto(link_prefix ~ '_static/images/Oro-Docs-logo.svg', 1) }}" alt="ORO Documentation">
+      <a href="{{ pathto('/index') }}">
+        <img width="137" src="{{ pathto(link_prefix ~ '_static/images/Oro-Docs-logo.svg', 1) }}?{{ oro_assets_timestamp }}" alt="ORO Documentation">
       </a>
     </strong>
     <div class="header-search">
@@ -19,7 +19,7 @@
           <span class="sr-text">Close navigation</span>
         </button>
         <a href="{{ pathto(link_prefix ~ master_doc) }}" class="logo-drop" tabindex="-1">
-          <img src="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}" alt="Oro Inc">
+          <img src="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}?{{ oro_assets_timestamp }}" alt="Oro Inc">
         </a>
       </div>
 
@@ -30,9 +30,10 @@
             <a href="{{ pathto('/developer/index') }}">DEVELOPERS</a>
             <div class="nav-drop">
               <ul class="nav-drop-list">
-                <li><a href="/developer/backend/index.html">Backend Developer Guide</a></li>
-                <li><a href="/developer/frontend/index.html">Frontend Developer Guide</a></li>
-                <li><a href="/developer/community/index.html">Community Guide</a></li>
+                <li><a href="{{ pathto('/backend/index') }}">Backend Developer Guide</a></li>
+                <li><a href="{{ pathto('/frontend/index') }}">Frontend Developer Guide</a></li>
+                <li><a href="{{ pathto('/community/index') }}">Community Guide</a></li>
+                <!--<li><a href="{{ pathto('/api/index') }}">Web Services API Guide</a></li>-->
               </ul>
             </div>
           </li>
@@ -44,5 +45,5 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/header.js', 1) }}"></script>
+  <script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/header.js', 1) }}?{{ oro_assets_timestamp }}"></script>
 </header>

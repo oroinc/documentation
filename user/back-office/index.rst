@@ -16,25 +16,25 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
     <h2>OroCommerce</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-important" href="sales/shopping-lists/index.html">Shopping Lists</a></li>
-          <li><a class="" href="sales/quotes/index.html">Quotes</a></li>
-          <li><a class="tag-important" href="sales/rfq/index.html">RFQs</a></li>
-          <li><a class="tag-very-important" href="sales/orders/index.html">Orders</a></li>
-          <li><a class="" href="sales/price-lists/index.html">Price Lists</a></li>
-          <li><a class="" href="sales/payment-terms/index.html">Payment Terms</a></li>
-          <li><a class="tag-important" href="customers/customers/index.html">Customers</a></li>
-          <li><a class="tag-very-important" href="products/products/index.html">Products</a></li>
-          <li><a class="" href="marketing/promotions/index.html">Promotions</a></li>
-          <li><a class="tag-very-important" href="marketing/web-catalogs/index.html">Web Catalog</a></li>
-          <li><a class="" href="marketing/landing-pages/index.html">Landing Pages</a></li>
-          <li><a class="tag-important" href="taxes/index.html">Taxes</a></li>
-          <li><a class="tag-very-important" href="inventory/index.html">Inventory</a></li>
-          <li><a class="tag-important" href="system/shipping-rules/index.html">Shipping Rules</a></li>
-          <li><a class="" href="system/payment-rules/index.html">Payment Rules</a></li>
-          <li><a class="" href="system/integrations/shipping-integration/index.html">Shipping Integrations</a></li>
-          <li><a class="" href="system/integrations/payment-integration/index.html">Payment Integrations</a></li>
-          <li><a class="tag-very-important" href="system/websites/index.html">Websites</a></li>
-          <li><a class="" href="system/frontend-menus/index.html">Frontend Menus</a></li>
+          <li><a class="tag-important" href="sales/shopping-lists/">Shopping Lists</a></li>
+          <li><a class="" href="sales/quotes/">Quotes</a></li>
+          <li><a class="tag-important" href="sales/rfq/">RFQs</a></li>
+          <li><a class="tag-very-important" href="sales/orders/">Orders</a></li>
+          <li><a class="" href="sales/price-lists/">Price Lists</a></li>
+          <li><a class="" href="sales/payment-terms/">Payment Terms</a></li>
+          <li><a class="tag-important" href="customers/customers/">Customers</a></li>
+          <li><a class="tag-very-important" href="products/products/">Products</a></li>
+          <li><a class="" href="marketing/promotions/">Promotions</a></li>
+          <li><a class="tag-very-important" href="marketing/web-catalogs/">Web Catalog</a></li>
+          <li><a class="" href="marketing/landing-pages/">Landing Pages</a></li>
+          <li><a class="tag-important" href="taxes/">Taxes</a></li>
+          <li><a class="tag-very-important" href="inventory/">Inventory</a></li>
+          <li><a class="tag-important" href="system/shipping-rules/">Shipping Rules</a></li>
+          <li><a class="" href="system/payment-rules/">Payment Rules</a></li>
+          <li><a class="" href="system/integrations/shipping-integration/">Shipping Integrations</a></li>
+          <li><a class="" href="system/integrations/payment-integration/">Payment Integrations</a></li>
+          <li><a class="tag-very-important" href="system/websites/">Websites</a></li>
+          <li><a class="" href="system/frontend-menus/">Frontend Menus</a></li>
        </ul>
 
 
@@ -64,25 +64,25 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
     <h2>Application-Wide Features</h2>
 
        <ul class="tag-cloud">
-          <li><a class="tag-very-important" href="getting-started/index.html">Getting Started</a></li>
-          <li><a class="" href="activities/index.html">Activities</a></li>
-          <li><a class="tag-very-important" href="dashboards/index.html">Dashboards</a></li>
-          <li><a class="" href="system/tags-management/index.html">Tags</a></li>
-          <li><a class="" href="system/contact-reasons/index.html">Contact Reasons</a></li>
-          <li><a class="tag-very-important" href="system/entities/index.html">Entities</a></li>
-          <li><a class="" href="system/jobs/index.html">Jobs</a></li>
-          <li><a class="" href="system/data-audit/index.html">Data Audit</a></li>
-          <li><a class="tag-very-important" href="system/localization/index.html">Localization</a></li>
-          <li><a class="tag" href="system/menus/index.html">Back-Office Menus</a></li>
-          <li><a class="" href="system/scheduled-tasks/index.html">Scheduled Tasks</a></li>
-          <li><a class="tag-important" href="system/emails/index.html">Emails</a></li>
-          <li><a class="" href="system/contact-groups/index.html">Contact Groups</a></li>
-          <li><a class="tag" href="system/system-information/index.html">System Information</a></li>
-          <li><a class="tag-important" href="reports-segments/index.html">Reports and Segments</a></li>
-          <li><a class="tag-very-important" href="system/user-management/index.html">User Management</a></li>
-          <li><a class="" href="system/integrations/ldap-integration.html">LDAP integration</a></li>
-          <li><a class="tag-important" href="system/workflows/index.html">Workflows</a></li>
-          <li><a class="" href="system/system-calendars/index.html">Calendars</a></li>
+          <li><a class="tag-very-important" href="getting-started/">Getting Started</a></li>
+          <li><a class="" href="activities/">Activities</a></li>
+          <li><a class="tag-very-important" href="dashboards/">Dashboards</a></li>
+          <li><a class="" href="system/tags-management/">Tags</a></li>
+          <li><a class="" href="system/contact-reasons/">Contact Reasons</a></li>
+          <li><a class="tag-very-important" href="system/entities/">Entities</a></li>
+          <li><a class="" href="system/jobs/">Jobs</a></li>
+          <li><a class="" href="system/data-audit/">Data Audit</a></li>
+          <li><a class="tag-very-important" href="system/localization/">Localization</a></li>
+          <li><a class="tag" href="system/menus/">Back-Office Menus</a></li>
+          <li><a class="" href="system/scheduled-tasks/">Scheduled Tasks</a></li>
+          <li><a class="tag-important" href="system/emails/">Emails</a></li>
+          <li><a class="" href="system/contact-groups/">Contact Groups</a></li>
+          <li><a class="tag" href="system/system-information/">System Information</a></li>
+          <li><a class="tag-important" href="reports-segments/">Reports and Segments</a></li>
+          <li><a class="tag-very-important" href="system/user-management/">User Management</a></li>
+          <li><a class="" href="system/integrations/ldap-integration">LDAP integration</a></li>
+          <li><a class="tag-important" href="system/workflows/">Workflows</a></li>
+          <li><a class="" href="system/system-calendars/">Calendars</a></li>
        </ul>
 
 

@@ -7,17 +7,19 @@
 """
 import sphinx
 
-from sphinx.builders.html import StandaloneHTMLBuilder
+from sphinx.builders.html import DirectoryHTMLBuilder
 
 
-class OroStandaloneHTMLBuilder(StandaloneHTMLBuilder):
+class OroHTMLBuilder(DirectoryHTMLBuilder):
     name = 'orohtml'
     search = False  # Disable search for oro
+    out_suffix = ''
+    link_suffix = ''
 
 
 def setup(app):
     # builders
-    app.add_builder(OroStandaloneHTMLBuilder)
+    app.add_builder(OroHTMLBuilder)
 
     return {
         'version': sphinx.__display_version__,

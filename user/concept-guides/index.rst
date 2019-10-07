@@ -12,18 +12,18 @@ Complementary to the how-to approach of the Back-office section of the documenta
 .. raw:: html
 
     <ul class="tag-cloud">
-      <li><a class="tag-very-important" href="highlight-products/index.html">Products in the Storefront</a></li>
-      <li><a class="tag-important" href="consents/index.html">GDPR Compliance</a></li>
-      <li><a class="" href="consents/add-consent.html">Consents in the Storefront</a></li>
-      <li><a class="tag-important" href="pricing/index.html">Price Management</a></li>
-      <li><a class="" href="pricing/pricing-overview.html#understanding-price-lists">Price Lists</a></li>
-      <li><a class="tag-very-important" href="pricing/calculation.html">Price Calculation</a></li>
-      <li><a class="" href="payment-configuration/index.html">Payment Configuration</a></li>
-      <li><a class="" href="shipping-configuration/index.html">Shipping Configuration</a></li>
-      <li><a class="tag-important" href="localization/index.html">Storefront Localization</a></li>
-      <li><a class="" href="localization/label-translation.html">Translation of Product Attribute Labels</a></li>
-      <li><a class="" href="marketing-automation/index.html">Track Marketing Activities</a></li>
-      <li><a class="tag-very-important" href="guests/index.html">Storefront Guest Access Management</a></li>
+      <li><a class="tag-very-important" href="highlight-products/">Products in the Storefront</a></li>
+      <li><a class="tag-important" href="consents/">GDPR Compliance</a></li>
+      <li><a class="" href="consents/add-consent">Consents in the Storefront</a></li>
+      <li><a class="tag-important" href="pricing/">Price Management</a></li>
+      <li><a class="" href="pricing/pricing-overview#understanding-price-lists">Price Lists</a></li>
+      <li><a class="tag-very-important" href="pricing/calculation">Price Calculation</a></li>
+      <li><a class="" href="payment-configuration/">Payment Configuration</a></li>
+      <li><a class="" href="shipping-configuration/">Shipping Configuration</a></li>
+      <li><a class="tag-important" href="localization/">Storefront Localization</a></li>
+      <li><a class="" href="localization/label-translation">Translation of Product Attribute Labels</a></li>
+      <li><a class="" href="marketing-automation/">Track Marketing Activities</a></li>
+      <li><a class="tag-very-important" href="guests/">Storefront Guest Access Management</a></li>
     </ul>
 
 .. toctree::

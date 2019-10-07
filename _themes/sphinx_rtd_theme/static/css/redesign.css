@@ -6,7 +6,8 @@ body.wy-body-for-nav {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
     color: #252525;
     font-weight: 600;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
@@ -370,6 +371,7 @@ body {
     font-weight: bold;
     background: none;
     color: #252525;
+    padding: 0 .05em;
 }
 .header-search  .algolia-autocomplete .algolia-docsearch-suggestion {
     color: #252525;
@@ -814,6 +816,9 @@ body {
     box-shadow: 1px 1px 6px rgba(133, 133, 133, 0.4);
     padding: 15px 1px 15px 21px;
 }
+.sidebar-holder > .scrollbar-outer {
+    overflow: hidden;
+}
 .nav-side {
     padding-right: 21px;
 }
@@ -1014,15 +1019,13 @@ body {
     padding: 3px 0 0 7px;
 }
 .contents-table ul ul ul li {
-    position: relative;
     padding: 0 0 0 9px;
     margin-bottom: 2px;
 }
 .contents-table ul ul ul li:before {
     content: '';
     position: absolute;
-    top: 9px;
-    left: 0;
+    margin: 9px 0 0 -9px;
     width: 3px;
     height: 3px;
     border-radius: 50%;
@@ -1593,10 +1596,6 @@ body {
     .contents-table > ul > li > a:hover {
         color: #252525 !important;
     }
-    .switcher-container {
-        width: 250px;
-        position: fixed;
-    }
     .footer-content {
         padding: 54px 0 40px;
     }
@@ -1911,7 +1910,7 @@ body {
         top: auto !important;
         transition: none !important;
     }
-    .sidebar-holder.sticky-desktop-only {
+    .sticky-desktop-only .sidebar-holder{
         box-shadow: none;
         padding: 0;
         background: none;
