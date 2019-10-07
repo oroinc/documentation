@@ -21,7 +21,7 @@ SaaS users should have MailChimp pre-installed.
 Configure Integration on the MailChimp Side
 -------------------------------------------
 
-To configure integration with Oro application on the MailChimp side, you need to
+To configure the integration with Oro application on the MailChimp side, you need to
 create an API key. To do that:
 
 1. Login to MailChimp.
@@ -30,32 +30,36 @@ create an API key. To do that:
 
 3. Select **Account**.
 
-   .. image:: /user/img/system/integrations/mailchimp/mc_account.jpg
+   .. image:: /user/img/system/integrations/mailchimp/mc_account.png
+      :alt: Navigate to the account menu
+
+|
 
 4. Go to **Extras > API keys**.
 
-   .. image:: /user/img/system/integrations/mailchimp/mc_extras_api.jpg
+   .. image:: /user/img/system/integrations/mailchimp/mc_extras_api.png
+      :alt: The API keys menu
 
-6. Scroll down to the bottom of the page and press **Create a Key**.
+5. Scroll down to the bottom of the page and press **Create a Key**.
 
-   .. image:: /user/img/system/integrations/mailchimp/mc_create_key.jpg
+   .. image:: /user/img/system/integrations/mailchimp/mc_create_key.png
+      :alt: Display the Create a Key button
 
-7. A newly created key will appear at the top of the list. Copy the key.
+6. A newly created key will appear at the top of the list. Copy the key.
 
-   .. image:: /user/img/system/integrations/mailchimp/mc_copy_key.jpg
+   .. image:: /user/img/system/integrations/mailchimp/mc_copy_key.png
+      :alt: Copy the newly created key
 
 .. _user-guide-mc-integration--oro-side:
 
 Configure Integration on the Oro Side
 -------------------------------------
 
-1. Log into Oro application and navigate to **System > Integrations > Manage Integrations**.
-
-   .. image:: /user/img/system/integrations/mailchimp/o_manage_integrations.jpg
+1. Log into your Oro application and navigate to **System > Integrations > Manage Integrations**.
 
 2. Click **Create Integration** in the top right corner.
 
-   .. image:: /user/img/system/integrations/mailchimp/o_create_integration.jpg
+   .. image:: /user/img/system/integrations/mailchimp/mailchimp_create_integration.png
 
 3. Next, complete the following fields:
 
@@ -79,10 +83,11 @@ Configure Integration on the Oro Side
    | **Sync Priority:**           | **Remote Wins** means that the MailChimp will be considered the master and override conflicts with the Oro application. **Local Wins** means that local data will    be the master and override any conflicts with MailChimp.                                                                                                           |
    +------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-   .. image:: /user/img/system/integrations/mailchimp/o_choose_mc_integration.jpg
+   .. image:: /user/img/system/integrations/mailchimp/choose_mc_integration.png
 
-4. Once all the details of the integration have been specified, click **Save and Close.** The integration has been successfully configured and
-will now appear in the integration grid.
+4. Click **Save and Close.**
+
+The integration has been successfully configured and will now appear in the integration grid.
 
 Sync Integration
 ----------------
@@ -95,7 +100,7 @@ In order to sync your integration:
 
 3. Click **Schedule Sync** in the top right corner.
 
-   .. image:: /user/img/system/integrations/mailchimp/o_manage_integrations_orocrm_schedule_sync.jpg
+   .. image:: /user/img/system/integrations/mailchimp/o_manage_integrations_orocrm_schedule_sync.png
 
 **Related Topic**
 
