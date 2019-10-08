@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _system--user-mngm--organization--configuration--commerce--customers--customer-users:
 

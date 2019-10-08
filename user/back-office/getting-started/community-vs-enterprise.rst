@@ -1,6 +1,6 @@
 .. _community-vs-enterprise:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Community vs Enterprise Edition
 ===============================

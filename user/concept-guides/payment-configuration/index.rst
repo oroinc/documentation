@@ -1,7 +1,7 @@
 .. _user-guide--payment:
 .. _user-guide--payment-configuration:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Payment Configuration
 =====================

@@ -1,4 +1,4 @@
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 .. _doc-my-user-configuration-integrations:
 .. _doc-my-user-configuration-msoutlook:

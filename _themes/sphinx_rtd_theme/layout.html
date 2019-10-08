@@ -207,7 +207,7 @@
                   {% if layout_ns.documentation_types %}
                       {% for type in layout_ns.documentation_types.split(',') %}
                           {%- set type = type|trim -%}
-                          <img src="{{ pathto(link_prefix ~ '_static/images/doctypes/' ~ type ~ '-icon-logo.png', 1) }}" alt="Available in {{ type }}" class="oro-documentation-type">
+                          <img src="{{ pathto(link_prefix ~ '_static/images/doctypes/' ~ type|lower ~ '-icon-logo.png', 1) }}" alt="Available in {{ type }}" title="Available in {{ type }}" class="oro-documentation-type">
                       {% endfor %}
                   {% endif %}
                 {% block body %}{% endblock %}

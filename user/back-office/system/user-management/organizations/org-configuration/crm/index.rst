@@ -1,4 +1,4 @@
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 CRM Configuration Settings per Organization
 ===========================================

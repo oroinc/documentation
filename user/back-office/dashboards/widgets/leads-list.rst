@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--leads-list:
 
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 Leads List
 ----------

@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--recent-emails:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Recent Emails
 -------------

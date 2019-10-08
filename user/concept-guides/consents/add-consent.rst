@@ -1,6 +1,6 @@
 .. _user-guide--consents--add:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Add a Consent Landing Page to a Web Catalog
 -------------------------------------------

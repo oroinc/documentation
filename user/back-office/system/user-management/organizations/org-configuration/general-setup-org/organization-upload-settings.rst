@@ -1,4 +1,4 @@
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _configuration-guide--system-configuration--general-setup-sysconfig--upload-settings-organization:
 

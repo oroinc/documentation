@@ -1,7 +1,7 @@
 .. _user-guide--business-intelligence:
 .. _business-intelligence:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Dashboard
 =========

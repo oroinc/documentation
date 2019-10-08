@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _admin-guide--system-configuration--commerce-sales--checkout--single-page-checkout:
 .. _user-guide--system-configuration--commerce-sales-checkout-global:

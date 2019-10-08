@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _user-guide--system-configuration--commerce-sales--rfq--website:
 .. _sys--conf--commerce--sales--rfq-notifications--website:

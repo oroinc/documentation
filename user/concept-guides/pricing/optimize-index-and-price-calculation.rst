@@ -1,6 +1,6 @@
 .. _admin-website-index-and-price-calc:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Optimize Website Indexation and Price Recalculation
 ---------------------------------------------------

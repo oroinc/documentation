@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _configuration--guide--commerce--configuration--inventory:
 .. _configuration--guide--commerce--inventory:

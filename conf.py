@@ -40,7 +40,8 @@ extensions = [
     'ext.orotoc',
     'ext.assets-timestamp',
     'ext.sitemap',
-    'ext.sitemap-index'
+    'ext.sitemap-index',
+    'ext.redirects'
 ]
 
 spelling_lang='en_US'
@@ -352,16 +353,14 @@ html_context = {
 # Required by sphinx_sitemap extension
 html_baseurl = 'https://doc.oroinc.com/'
 
+# Redirect file for ext.redirects extension
+# This file contains pairs of "old_document new_document"
+redirects_file = 'redirects.txt'
+
 # ORO settings
 # Sphinx versioning (scv) config
 # Mappings of git branches and directory name for this branch in build directory
 scv_version_dirs = {
-    # Development dirs
-    'epic/DOC-1216_doc_3.1': '3.1',
-    'epic/DOC-1216_doc_2.6': '1.6',
-    'doc/3.1': '3.1',
-    'doc/2.6': '1.6',
-
     # Test dirs from public rep
     'doc-3.1': '3.1',
     'doc-2.6': '1.6',

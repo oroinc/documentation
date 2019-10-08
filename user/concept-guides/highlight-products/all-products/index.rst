@@ -1,6 +1,6 @@
 .. _sys--conf--commerce--catalog--special-pages:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Configure All Products Page
 ===========================

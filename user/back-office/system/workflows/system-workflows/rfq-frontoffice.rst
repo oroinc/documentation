@@ -1,4 +1,4 @@
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _system--workflows--rfq-frontoffice-workflow:
 .. _system--workflows--rfq-frontoffice-workflow-rfq-illustration:

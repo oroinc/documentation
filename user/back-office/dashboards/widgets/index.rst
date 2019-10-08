@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--explore:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Widgets
 =======

@@ -1,4 +1,4 @@
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 .. _user-guide-opportunities-reports:
 .. _user-guide-opportunities-reports-intro:

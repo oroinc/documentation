@@ -1,6 +1,6 @@
 .. _user-guide--pricing-calculation:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Price Calculation in the Storefront
 ------------------------------------

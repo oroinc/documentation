@@ -1,6 +1,6 @@
 .. _localization--translations--labels:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Translate Product Attribute Labels and Options
 ==============================================

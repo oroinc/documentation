@@ -1,4 +1,4 @@
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _admin-guide-create-entities:
 .. _doc-entity-actions-create:

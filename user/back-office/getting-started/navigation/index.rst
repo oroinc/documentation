@@ -1,6 +1,6 @@
 .. _getting-started--navigation:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Navigation and Search
 =====================

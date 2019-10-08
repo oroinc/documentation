@@ -1,4 +1,4 @@
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 .. _user-guide-opportunities-create:
 .. _user-guide-system-channel-entities-opportunities--create-intro:

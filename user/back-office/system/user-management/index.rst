@@ -1,4 +1,4 @@
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _user-guide-user-management:
 .. _user-guide-user-management-permissions-roles--acl:

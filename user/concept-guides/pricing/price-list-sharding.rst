@@ -1,6 +1,6 @@
 .. _admin-price-list-sharding:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Configure Price List Sharding
 -----------------------------
