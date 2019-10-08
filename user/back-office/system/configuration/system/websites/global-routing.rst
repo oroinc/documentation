@@ -1,4 +1,4 @@
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _sys--config--sysconfig--websites--routing:
 .. _user-guide--marketing--web-catalog--enable-globally:

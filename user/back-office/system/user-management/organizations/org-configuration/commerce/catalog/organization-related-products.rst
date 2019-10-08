@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _sys--users--organization--commerce--catalog--related-products:
 .. _sys--users--organization--commerce--catalog--upsell-products:

@@ -1,4 +1,4 @@
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 .. begin_multi_currency_opportunities
 

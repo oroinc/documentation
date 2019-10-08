@@ -1,6 +1,6 @@
 .. _user-guide-marketing-automation:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. updated on 06 July 2017
 

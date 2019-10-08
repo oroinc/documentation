@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--campaign-leads:
 
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 Campaign Leads
 --------------

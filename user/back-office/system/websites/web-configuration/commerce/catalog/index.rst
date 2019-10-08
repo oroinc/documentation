@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Catalog Configuration Settings per Website
 ==========================================

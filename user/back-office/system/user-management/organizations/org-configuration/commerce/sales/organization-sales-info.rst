@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _sys--conf--commerce--sales--contacts-organization:
 

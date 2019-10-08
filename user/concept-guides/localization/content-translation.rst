@@ -1,6 +1,6 @@
 .. _content-translation:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Translate Content
 -----------------

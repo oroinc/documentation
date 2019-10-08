@@ -1,6 +1,6 @@
 .. _doc--products--manage-inventory-prices-look:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Products in the Storefront
 ==========================

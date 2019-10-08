@@ -1,6 +1,6 @@
 .. _user-guide--consents--cookie-banner:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Add a Cookie Banner to the Website
 ==================================

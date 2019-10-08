@@ -1,6 +1,6 @@
 .. _products--featured-products:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Manage Featured Products
 ------------------------

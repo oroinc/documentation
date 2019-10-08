@@ -1,4 +1,4 @@
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 .. _user-guide--pricing--pricelist--management:
 .. _user-guide--pricing--import--export:

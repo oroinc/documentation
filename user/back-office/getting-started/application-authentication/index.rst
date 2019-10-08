@@ -1,6 +1,6 @@
 .. _user-guide-log-in:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Application Authentication
 ==========================

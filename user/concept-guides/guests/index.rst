@@ -1,6 +1,6 @@
 .. _sys--conf--commerce--guest:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Guest Access
 ============

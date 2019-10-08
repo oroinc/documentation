@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--opportunity-by-status:
 
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 Opportunities by Status
 -----------------------

@@ -1,6 +1,6 @@
 .. _products--upsell-items:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Manage Up-Sell Products
 -----------------------

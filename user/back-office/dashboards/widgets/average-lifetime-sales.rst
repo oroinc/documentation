@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--average-lifetime-sales:
 
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 Average Lifetime Sales
 ----------------------

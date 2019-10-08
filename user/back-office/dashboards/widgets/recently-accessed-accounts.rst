@@ -1,6 +1,6 @@
 .. _user-guide--business-intelligence--widgets--recently-accessed-accounts:
 
-:oro_documentation_types: crm
+:oro_documentation_types: OroCRM
 
 Recently Accessed Account
 -------------------------

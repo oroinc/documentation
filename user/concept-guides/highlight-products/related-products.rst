@@ -1,6 +1,6 @@
 .. _products--related-products:
 
-:oro_documentation_types: commerce
+:oro_documentation_types: OroCommerce
 
 Manage Related Products
 -----------------------

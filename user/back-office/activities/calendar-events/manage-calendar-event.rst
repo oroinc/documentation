@@ -1,4 +1,4 @@
-:oro_documentation_types: crm, commerce
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _doc-activities-events-actions-view-detailed:
 .. _doc-activities-events-actions-comment-detailed:
