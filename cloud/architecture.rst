@@ -31,38 +31,6 @@ The diagram below reflects a standard Oro application deployment in GCP via OroC
 .. image:: /cloud/img/standard_average_environment_schema.png
    :alt: Architecture of a standard Oro application deployment in GCP via OroCloud
 
-.. _cloud-environment-plans:
-
-OroCloud Environment Plans
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-OroCloud allows you to set up multiple environment types depending on your project needs. Each type of environment is designed to best support a specific project activity, such as development, testing, user acceptance testing, and production. The number and types of available environments depend on your Oro license but you can also request more environments for an additional cost if needed.
-
-The following table outlines what features are included in different types of OroCloud environments.
-
-.. csv-table::
-  :header: " ", "Production", "Staging", "Testing", "Development"
-  :widths: 15,15,15,15,15
-
-  "Support","24x7","5x8","5x8","5x8"
-  "Secure Access","x","x","x","x"
-  "Base Monitoring","x","x","x","x"
-  "Logs Access","x","x","x","x"
-  "SMTP Relay","x","x","x"," "
-  "Emails sending restrictions"," ","x","x"," "
-  "Redundancy","x","x"," "," "
-  "CDN","x","x"," "," "
-  "Custom domain","x","x"," "," "
-  "Advanced Monitoring","x","x"," "," "
-  "Backups","1 year","2 weeks"," "," "
-  "Disaster Recovery","x"," "," "," "
-  "SLA","x"," "," "," "
-  "App Dev Mode"," "," ","x","x"
-  "Live data","x"," "," "," "
-
-.. note:: To learn more about how to use different types of cloud environments and, specifically, the differences between testing and staging environments, refer to :ref:`OroCloud Environments <cloud-environments>`.
-
-
 Redundancy
 ^^^^^^^^^^
 
