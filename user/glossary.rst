@@ -31,8 +31,7 @@ Glossary
       An open-source CRM with built in marketing automation tools for a commerce business.
    
    Customer 
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent people or businesses you have sold or
-      are selling goods and/or services to using the storefront.
+      A system :term:`entity <Entity>`. Customers represent businesses, companies or divisions who buy products using the storefront.
 
    Customer User
       Customer users are actual people who act on behalf of companies (i.e. customers) and have a limited set of permissions which depend on their role and function in the customer organization.
