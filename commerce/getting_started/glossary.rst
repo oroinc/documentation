@@ -50,8 +50,7 @@ Glossary
       An easy-to-use, open source CRM with built in marketing automation tools for a commerce    #business.
    
    Customer 
-      A system :term:`entity <Entity>`. Its :term:`records <Record>` represent people or    #businesses you have sold or 
-      are selling goods and/or services to. Also addressed as "Customer Identity".
+      A system :term:`entity <Entity>`. Customers represent businesses, companies or divisions who buy products using the storefront.
       
    Workflow
       A sequence of industrial, administrative of other processes applied to a piece of work    #from initiation to 
