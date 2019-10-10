@@ -3,7 +3,7 @@
 Contribute to Documentation
 ===========================
 
-We use |reStructuredText| markup language to write the documentation and |Sphinx| generator to prepare it for the web publication at http://www.oroinc.com/doc/orocommerce. You can find more information about the syntax on the Sphinx website by reading |reStructuredText Primer|. The most important information is provided in the sections below.
+We use |reStructuredText| markup language to write the documentation and |Sphinx| generator to prepare it for the web publication at https://doc.oroinc.com/. You can find more information about the syntax on the Sphinx website by reading |reStructuredText Primer|. The most important information is provided in the sections below.
 
 Documentation source files are maintained in the |dedicated github repository|.
 
@@ -41,9 +41,6 @@ For large volume of  updates, fixes, and enhancements please use the following p
       * Install the required Sphinx extensions: ``git submodule update --init``.
 
    To test your changes before you commit them, run ``make html`` and check the generated documentation in the ``_build`` directory.
-
-
-
 
 Update Documentation
 --------------------

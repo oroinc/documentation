@@ -3631,6 +3631,26 @@ Links
 
    <a href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ" target="_blank">community team chat channel on Slack</a>
 
+.. |older documentation source| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/doc/1.6" target="_blank">older documentation source</a>
+
+.. |Online Courses| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/courses" target="_blank">Online Courses</a>
+
+.. |Media Library| raw:: html
+
+   <a href="https://oroinc.com/b2b-ecommerce/media-library" target="_blank">Media Library</a>
+
+.. |Upgrade Recommendations| raw:: html
+
+   <a href="https://doc.oroinc.com/community/release-process/#upgrade-recommendations" target="_blank">Upgrade Recommendations</a>
+
+.. |older OroCRM documentation source| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/current" target="_blank">older OroCRM documentation source</a>
+
 .. |Workflow Configuration Reference| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/WorkflowBundle/Resources/doc/reference/workflow/configuration-reference.md" target="_blank">Workflow Configuration Reference</a>

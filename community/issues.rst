@@ -111,10 +111,12 @@ Please do not hesitate to contact us from Crowdin if:
 
 .. finish_report_translation_issue
 
+.. _report-doc-issue:
+
 Report a Documentation Issue
 ----------------------------
 
-To report an issue in the Oro documentation, file a suggestion for improvement, or share your feedback, please, send an email to the `documentation [at] oroinc.com <mailto:documentation@oroinc.com>`_.
+To report an issue in the Oro documentation, file a suggestion for improvement, or share your feedback, please, send an email to `doc@oroinc.com <mailto:doc@oroinc.com>`_.
 
 .. note:: You are welcome to contribute to the Oro documentation. See more information :ref:`here <documentation-standards>`.
 
