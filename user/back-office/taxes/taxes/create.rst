@@ -21,7 +21,7 @@ To create a new tax rate:
 
 .. hint::
 
-   Now that the tax rate is created, `create a tax rule <../tax-rules/create>`_ that associates this tax rate or tax exemption (zero rate) with other tax components (`products <../product-tax-codes>`_, `customers <../customer-tax-codes>`_ and `tax jurisdictions <../tax-jurisdictions>`_).
+   Now that the tax rate is created, :ref:`create a tax rule <tax-rules>` that associates this tax rate with other tax components (:ref:`products <taxes--product-tax-code>`, :ref:`customers <user-guide--taxes--customer_tax_codes>` and `tax jurisdictions <taxes--tax-jurisdiction-create>`).
 
 **Related Articles**
 

@@ -81,6 +81,9 @@ Attributes
 * customerUser.lastName *string*
 * customerUser.fullName *string* (which is a customerUser.firstName ~ ‘ ‘ ~ customerUser.lastName, e.g. 'Amanda Cole')
 
+.. note:: Please note that if you enable guest checkout on your website, `customerUser` will be empty on the first two checkout steps. To prevent shipping and payment calculation errors, you can add an additional condition, "customerUser and", before the first usage of the `customerUser` variable, for example, `subtotal > 500.0 and customerUser and customerUser.email = ""`
+
+
 Collections
 ^^^^^^^^^^^
 
