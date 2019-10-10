@@ -33,7 +33,7 @@ To create a new tax jurisdiction:
 
 .. hint::
 
-   Now that the tax jurisdiction is created, `create a tax rule <../tax-rules/create>`_ that associates this tax jurisdiction with other tax components (`products <../product-tax-codes>`_, `customers <../customer-tax-codes>`_ and `tax codes <../taxes>`_).
+   Now that the tax jurisdiction is created, :ref:`create a tax rule <tax-rules>` that associates this tax jurisdiction with other tax components (:ref:`products <taxes--product-tax-code>`, :ref:`customers <user-guide--taxes--customer_tax_codes>` and :ref:`tax codes <user-guide--taxes--tax-rates>`).
 
 **Related Articles**
 
