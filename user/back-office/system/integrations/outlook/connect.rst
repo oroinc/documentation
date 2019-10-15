@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _admin-configuration-ms-outlook-integration-settings--connect:
 .. _doc-ms-outlook-add-in-set-up-outlook-side:
 

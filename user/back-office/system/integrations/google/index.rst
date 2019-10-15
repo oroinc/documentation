@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _admin-configuration-google:
 
 Google Integration

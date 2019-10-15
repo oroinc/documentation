@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _admin-configuration-ms-outlook-integration-settings--mapping:
 .. _outlook-contact-mapping:
 .. _outlook-task-mapping:

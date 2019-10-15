@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _user-guide-channels:
 .. _user-guide-channel-guide-type:

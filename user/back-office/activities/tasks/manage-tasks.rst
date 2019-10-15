@@ -1,4 +1,4 @@
-:oro_documentation_types: OroCRM
+:oro_documentation_types: OroCRM, OroCommerce
 
 .. _doc-activities-tasks-actions-edit-detailed:
 .. _doc-activities-tasks-actions-edit-fromgrid:
