@@ -3631,10 +3631,6 @@ Links
 
    <a href="https://orocommunity.slack.com/join/shared_invite/enQtNTI0MzcyNzA2NjU5LWJhMmVhYWExNWEyYzdjMjdjNjVlNjIzZGUxZjBmYTVmYzE5NWRjMzc5YzMwYmQxOWRhMjYwN2I3Njc4ZjM4MTQ" target="_blank">community team chat channel on Slack</a>
 
-.. |older documentation source| raw:: html
-
-   <a href="https://oroinc.com/b2b-ecommerce/doc/1.6" target="_blank">older documentation source</a>
-
 .. |Online Courses| raw:: html
 
    <a href="https://oroinc.com/b2b-ecommerce/courses" target="_blank">Online Courses</a>
@@ -3647,9 +3643,37 @@ Links
 
    <a href="https://doc.oroinc.com/community/release-process/#upgrade-recommendations" target="_blank">Upgrade Recommendations</a>
 
-.. |older OroCRM documentation source| raw:: html
+.. |developer documentation for version 1.6| raw:: html
 
-   <a href="https://oroinc.com/orocrm/doc/current" target="_blank">older OroCRM documentation source</a>
+   <a href="https://oroinc.com/b2b-ecommerce/doc/1.6/dev-guide" target="_blank">developer documentation for version 1.6</a>
+
+.. |OroCRM 2.6| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/2.6/dev-guide" target="_blank">OroCRM 2.6</a>
+
+.. |OroCRM 2.3 User| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/2.3/user-guide" target="_blank">OroCRM 2.3</a>
+
+.. |OroCRM 2.0 User| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/2.0/user-guide" target="_blank">OroCRM 2.0</a>
+
+.. |OroCRM 1.12 User| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/1.12/user-guide" target="_blank">OroCRM 1.12</a>
+
+.. |OroCRM 2.3 Dev| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/2.3/dev-guide" target="_blank">OroCRM 2.3</a>
+
+.. |OroCRM 2.0 Dev| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/2.0/dev-guide" target="_blank">OroCRM 2.0</a>
+
+.. |OroCRM 1.12 Dev| raw:: html
+
+   <a href="https://oroinc.com/orocrm/doc/1.12/dev-guide" target="_blank">OroCRM 1.12</a>
 
 .. |Workflow Configuration Reference| raw:: html
 
@@ -5841,7 +5865,6 @@ Links
 .. |http://developer.paypal.com| raw:: html
 
    <a href="http://developer.paypal.com" target="_blank">http://developer.paypal.com</a>
-
 
 .. |Client Credentials| raw:: html
 

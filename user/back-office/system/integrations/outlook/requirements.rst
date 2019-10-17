@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _user-guide-synch-outlook-requirements:
 
 .. begin_requirements

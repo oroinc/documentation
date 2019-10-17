@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _config-guide--integrations--ms-outlook:
 .. _admin-configuration-ms-outlook-integration-settings:
 .. _user-guide-synch-outlook:

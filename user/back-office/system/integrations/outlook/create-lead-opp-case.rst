@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _admin-configuration-ms-outlook-integration-settings--create:
 
 Create Leads, Opportunities and Cases from Outlook

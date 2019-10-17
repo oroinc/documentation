@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _user-guide-hangouts:
 
 Voice and Video Calls via Hangouts

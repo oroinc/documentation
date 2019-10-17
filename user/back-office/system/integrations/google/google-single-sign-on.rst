@@ -1,3 +1,5 @@
+:oro_documentation_types: OroCRM, OroCommerce
+
 .. _user-guide-google-single-sign-on:
 
 Google Single Sign-On
