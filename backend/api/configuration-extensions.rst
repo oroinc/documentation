@@ -3,26 +3,25 @@
 Configuration Extensions
 ========================
 
-Overview
---------
+Configuration extensions help add:
 
-Configuration extensions allow to:
+-  new options to existing configuration sections
+-  new configuration sections
 
--  add new options to existing configuration sections
--  add new configuration sections
+.. _web-api--configuration-extensions-create:
 
-Creating Configuration Extension
---------------------------------
+Creating a Configuration Extension
+----------------------------------
 
-Each configuration extension must implement |ConfigExtensionInterface| (also you can use |AbstractConfigExtension| as a superclass). To register new configuration extension you can add ``Resources/config/oro/app.yml`` in any bundle or use *config/config.yml* of your
-application. Here is an example:
+
+Each configuration extension must implement |ConfigExtensionInterface| (you can also use |AbstractConfigExtension| as a superclass). To register new configuration extension, add it to ``Resources/config/oro/app.yml`` of your bundle or use *config/config.yml* of your application. Here is an example:
 
 .. code:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
-    use Oro\Bundle\ApiBundle\Config\AbstractConfigExtension;
+    use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
 
     class MyConfigExtension extends AbstractConfigExtension
     {
@@ -40,10 +39,13 @@ application. Here is an example:
         config_extensions:
             - acme.api.my_config_extension
 
-Add Options to Existing Configuration Section
----------------------------------------------
 
-To add options to existing configuration section implement the ``getConfigureCallbacks`` method of |ConfigExtensionInterface|. Also ``getPreProcessCallbacks`` and ``getPostProcessCallbacks`` methods can be implemented if you need to something before the normalization of during the validation of the configuration.
+.. _web-api--configuration-extensions-add-options:
+
+Add Options to an Existing Configuration Section
+------------------------------------------------
+
+To add options to an existing configuration section, implement the ``getConfigureCallbacks`` method of |ConfigExtensionInterface|. If you need to add logic before the normalization of during the validation of the configuration, implement the ``getPreProcessCallbacks`` and ``getPostProcessCallbacks`` methods.
 
 The following table describes existing sections for which new options can be added.
 
@@ -53,10 +55,6 @@ The following table describes existing sections for which new options can be add
 | entities.entity                         | Add entity options                                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | entities.entity.field                   | Add field options                                                                                                                             |
-+-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| relations.entity                        | Add entity options when the entity is used as a relationship to another entity                                                                |
-+-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-| relations.entity.field                  | Add field options when the entity is used as a relationship to another entity                                                                 |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 | filters                                 | Add options to ``filters`` section                                                                                                            |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -79,7 +77,7 @@ The following table describes existing sections for which new options can be add
 | subresources.subresource.action.field   | Add field options specific for a particular action of a sub-resource. These options override options defined in ``entities.entity.field``     |
 +-----------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
-An example:
+Example:
 
 .. code:: php
 
@@ -87,7 +85,7 @@ An example:
     namespace Acme\Bundle\AcmeBundle\Api;
 
     use Symfony\Component\Config\Definition\Builder\NodeBuilder;
-    use Oro\Bundle\ApiBundle\Config\AbstractConfigExtension;
+    use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
 
     class MyConfigExtension extends AbstractConfigExtension
     {
@@ -130,11 +128,15 @@ An example:
         }
     }
 
+
+.. _web-api--configuration-extensions-add-section:
+
 Add New Configuration Section
 -----------------------------
 
-To add new configuration section you need to create a class implements |ConfigurationSectionInterface| and return instance of it in the ``getEntityConfigurationSections`` method of your configuration extension. By default the configuration will be returned as an array, but if you want to provide a class represents configuration of your section you can implement a
-configuration loader. The loader is a class implements |ConfigLoaderInterface|. An instance of the loader should be returned by the ``getEntityConfigurationLoaders`` method of your configuration extension.
+To add new configuration section,  create a class implements |ConfigurationSectionInterface| and return instance of it in the ``getEntityConfigurationSections`` method of your configuration extension.
+
+By default the configuration is returned as an array, but if you want to provide a class represents the configuration of your section, you can implement a configuration loader. The loader is a class that implements |ConfigLoaderInterface|. An instance of the loader should be returned by the ``getEntityConfigurationLoaders`` method of your configuration extension.
 
 An example of simple configuration section:
 
@@ -181,14 +183,14 @@ An example of a configuration section that can be extended by other bundles:
         }
     }
 
-An example of configuration section loader:
+An example of a configuration section loader:
 
 .. code:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
-    use Oro\Bundle\ApiBundle\Config\AbstractConfigLoader;
+    use Oro\Bundle\ApiBundle\Config\Loader\AbstractConfigLoader;
 
     class MyConfigLoader extends AbstractConfigLoader
     {
@@ -206,14 +208,14 @@ An example of configuration section loader:
         }
     }
 
-The configuration extension:
+An example of a configuration extension:
 
 .. code:: php
 
     <?php
     namespace Acme\Bundle\AcmeBundle\Api;
 
-    use Oro\Bundle\ApiBundle\Config\AbstractConfigExtension;
+    use Oro\Bundle\ApiBundle\Config\Extension\AbstractConfigExtension;
 
     class MyConfigExtension extends AbstractConfigExtension
     {
@@ -234,7 +236,7 @@ The configuration extension:
         }
     }
 
-An example of usage created configuration section:
+An example of how to use the created configuration section:
 
 .. code:: yaml
 
@@ -245,7 +247,7 @@ An example of usage created configuration section:
                 my_section:
                     my_option: value
 
-To check that you configuration section was added correctly run ``php bin/console oro:api:config:dump-reference``. The output will be something like this:
+To check that your configuration section is added correctly, run ``php bin/console oro:api:config:dump-reference``. The output should look similar to the following:
 
 .. code:: yaml
 

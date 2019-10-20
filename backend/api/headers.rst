@@ -3,18 +3,15 @@
 Headers
 =======
 
-Overview
---------
+For some types of the REST API requests, you can retrieve an additional information like the total number of records, the number of affected records, etc. To do this, use the ``X-Include`` request header. The value of this header should contain keys separated by a semicolon (;).
 
-For some types of REST API requests you can get an additional information like the total number of records, the number of affected records, etc. For these purposes the ``X-Include`` request header can be used. The value of this header should contains *keys* separated by semicolon (;).
-
-The following example shows how to get the total number of account:
+The following example shows how to get the total number of accounts:
 
 .. code:: bash
 
     curl "http://orocrm.loc/index_dev.php/api/accounts?page=1&limit=2" -v --header="X-Include:totalCount" --header="X-WSSE:..."
 
-It will return
+The corresponding response:
 
 ::
 
@@ -23,139 +20,83 @@ It will return
     < X-Include-Total-Count: 67
     ...
 
-Notes: - to generate WSSE header you can run ``php bin/console oro:wsse:generate-header YOUR_API_KEY``
+.. hint:: To generate a WSSE header, run: ``php bin/console oro:wsse:generate-header YOUR_API_KEY``.
 
-Existing X-Include keys
+.. _existing-x-include-keys:
+
+Existing X-Include Keys
 -----------------------
 
 The following table describes all existing *keys* for ``X-Include`` header.
 
-.. raw:: html
+.. csv-table::
+   :header: "Request Type","X-Include key","Response Header","Description"
+   :widths: 15, 15, 20, 20
 
-   <table>
+   "all","noHateoas","--","Removes all HATEOAS related links from the response."
+   "get a list of entities","totalCount","X-Include-Total-Count","Returns the total number of entities. It is calculated based on input filters."
+   "delete a list of entities","totalCount","X-Include-Total-Count","Returns the total number of entities. It is calculated based on input filters."
+   "delete a list of entities","deletedCount","X-Include-Deleted-Count","Returns the number of deleted entities"
 
-.. raw:: html
-
-   <tr>
-
-::
-
-    <th nowrap>Request Type</th>
-    <th nowrap>X-Include key</th>
-    <th nowrap>Response Header</th>
-    <th>Description</th>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   <tr>
-
-::
-
-    <td nowrap>get a list of entities</td>
-    <td nowrap>totalCount</td>
-    <td nowrap>X-Include-Total-Count</td>
-    <td>Returns the total number of entities. It is calculated based on input filters.</td>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   <tr>
-
-::
-
-    <td nowrap rowspan="2">delete a list of entities</td>
-    <td nowrap>totalCount</td>
-    <td nowrap>X-Include-Total-Count</td>
-    <td>Returns the total number of entities. It is calculated based on input filters.</td>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   <tr>
-
-::
-
-    <td nowrap>deletedCount</td>
-    <td nowrap>X-Include-Deleted-Count</td>
-    <td>Returns the number of deleted entities</td>
-
-.. raw:: html
-
-   </tr>
-
-.. raw:: html
-
-   </table>
-
-Add new X-Include key
+Add New X-Include Key
 ---------------------
 
-Also it is possible to add own *key* to the ``X-Include`` header. To do this you have to:
+To add a custom key to the ``X-Include`` header:
 
--  create a processor that will handle your *key*
+1. Create a processor to handle your key:
 
-.. code:: php
+    .. code:: php
 
-    <?php
+        <?php
 
-    namespace Oro\Bundle\ApiBundle\Processor\DeleteList;
+        namespace Oro\Bundle\ApiBundle\Processor\DeleteList;
 
-    use Oro\Component\ChainProcessor\ContextInterface;
-    use Oro\Component\ChainProcessor\ProcessorInterface;
-    use Oro\Bundle\ApiBundle\Processor\Context;
-
-    /**
-     * Calculates and sets the total number of deleted records to "X-Include-Deleted-Count" response header,
-     * in case if it was requested by "X-Include: deletedCount" request header.
-     */
-    class SetDeletedCountHeader implements ProcessorInterface
-    {
-        const RESPONSE_HEADER_NAME = 'X-Include-Deleted-Count';
-        const REQUEST_HEADER_VALUE = 'deletedCount';
+        use Oro\Component\ChainProcessor\ContextInterface;
+        use Oro\Component\ChainProcessor\ProcessorInterface;
+        use Oro\Bundle\ApiBundle\Processor\Context;
 
         /**
-         * {@inheritdoc}
+         * Calculates and sets the total number of deleted records to "X-Include-Deleted-Count" response header,
+         * in case it was requested by "X-Include: deletedCount" request header.
          */
-        public function process(ContextInterface $context)
+        class SetDeletedCountHeader implements ProcessorInterface
         {
-            /** @var DeleteListContext $context */
+            const RESPONSE_HEADER_NAME = 'X-Include-Deleted-Count';
+            const REQUEST_HEADER_VALUE = 'deletedCount';
 
-            if ($context->getResponseHeaders()->has(self::RESPONSE_HEADER_NAME)) {
-                // the deleted records count header is already set
-                return;
-            }
+            /**
+             * {@inheritdoc}
+             */
+            public function process(ContextInterface $context)
+            {
+                /** @var DeleteListContext $context */
 
-            $xInclude = $context->getRequestHeaders()->get(Context::INCLUDE_HEADER);
-            if (empty($xInclude) || !in_array(self::REQUEST_HEADER_VALUE, $xInclude, true)) {
-                // the deleted records count is not requested
-                return;
-            }
+                if ($context->getResponseHeaders()->has(self::RESPONSE_HEADER_NAME)) {
+                    // the deleted records count header is already set
+                    return;
+                }
 
-            $result = $context->getResult();
-            if (null !== $result && is_array($result)) {
-                $context->getResponseHeaders()->set(self::RESPONSE_HEADER_NAME, count($result));
+                $xInclude = $context->getRequestHeaders()->get(Context::INCLUDE_HEADER);
+                if (empty($xInclude) || !in_array(self::REQUEST_HEADER_VALUE, $xInclude, true)) {
+                    // the deleted records count is not requested
+                    return;
+                }
+
+                $result = $context->getResult();
+                if (null !== $result && is_array($result)) {
+                    $context->getResponseHeaders()->set(self::RESPONSE_HEADER_NAME, count($result));
+                }
             }
         }
-    }
 
-.. code:: yaml
+    .. code:: yaml
 
-        oro_api.delete_list.set_deleted_count_header:
-            class: Oro\Bundle\ApiBundle\Processor\DeleteList\SetDeletedCountHeader
-            tags:
-                - { name: oro.api.processor, action: delete_list, group: delete_data, priority: -10 }
+            oro_api.delete_list.set_deleted_count_header:
+                class: Oro\Bundle\ApiBundle\Processor\DeleteList\SetDeletedCountHeader
+                tags:
+                    - { name: oro.api.processor, action: delete_list, group: delete_data, priority: -10 }
 
--  create a processor that will remove your response header in case if an error occurs
+2. Create a processor to remove your response header when an error occurs:
 
 .. code:: php
 

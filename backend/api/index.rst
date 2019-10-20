@@ -15,7 +15,12 @@ API Developer Guide
    documentation
    forms
    headers
+   filters
    how-to
    processors
    security
    testing
+   request-type
+   cors
+   entity-aliases
+

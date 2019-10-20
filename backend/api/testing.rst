@@ -3,39 +3,51 @@
 Testing REST Api
 ================
 
-Overview
---------
-
-To be sure that your REST API resources work properly you can cover them by |functional tests|. To simplify creating the functional test for REST API resources conform |JSON.API specification| the |RestJsonApiTestCase| test case was created. The following table contains the list
-of most useful methods of this class:
+To ensure that your REST API resources work properly, cover them with |functional tests|. To simplify creation of the functional test for REST API resources that conforms to  |JSON.API specification|, the |RestJsonApiTestCase| test case was created. The following table contains the list of the most useful methods of this class:
 
 .. csv-table::
-   :header: "Method", "Description"
+   :header: "Method","Description"
+   :widths: 15, 30
 
-   "request","Sends any REST API request."
-   "cget","Sends GET request for a list of entities.",
-   "get","Sends GET request for a single entity."
-   "post","Sends POST request for an entity resource. If the second parameter is a file name, the file should be located in the ``requests`` directory near to PHP file contains the test."
-   "patch","Sends PATCH request for a single entity. If the second parameter is a file name, the file should be located in the ``requests`` directory near to PHP file contains the test."
-   "delete","Sends DELETE request for a single entity."
-   "cdelete","Sends DELETE request for a list of entities."
-   "getSubresource","Sends GET request for a sub-resource of a single entity."
-   "getRelationship","Sends GET request for a relationship of a single entity."
-   "postRelationship","Sends POST request for a relationship of a single entity."
-   "patchRelationship","Sends PATCH request for a relationship of a single entity."
-   "deleteRelationship","Sends DELETE request for a relationship of a single entity."
-   "assertResponseContains","Asserts the response content contains the the given data. If the first parameter is a file name, the file should be located in the ``responses`` directory near to PHP file contains the test."
-   "assertResponseCount","Asserts the response contains the given number of data items."
-   "assertResponseNotEmpty","Asserts the response data are not empty."
-   "assertResponseValidationError","Asserts the response content contains the the given validation error."
-   "assertResponseValidationErrors","Asserts the response content contains the the given validation errors."
-   "dumpYmlTemplate","Saves a response content to a YAML file. If the first parameter is a file name, the file will be saved in the ``responses`` directory near to PHP file contains the test."
-   "getResourceId","Extracts JSON.API resource identifier from the response. For details see |JSON.API specification|."
-   "getRequestData","Converts the given request to an array that can be sent to the server. The given request can be a path to a file contains the request data or an array with the request data. If the request is a file name, the file should be located in the ``requests`` directory near to PHP file contains the test."
-   "getResponseErrors","Extracts the list of errors from JSON.API response. For details see |JSON.API specification|."
-   "appendEntityConfig"," Appends a configuration of an entity. This method may be helpful if you create some general functionality and need to test it for different configurations without creating a test entity for each configuration. Please note that the configuration is restored after each test and you do not need to do it manually."
+   "request","Sends a REST API request."
+   "options","Sends the OPTIONS request. See :ref:`options <options-action>`."
+   "cget","Sends the GET request for a list of entities. See :ref:`get_list <get-list-action>` action."
+   "get","Sends the GET request for a single entity. See :ref:`get <get-action>` action."
+   "post","Sends the POST request for an entity resource. See :ref:`create <create-action>` action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
+   "patch","Sends the PATCH request for a single entity. See update action. If the second parameter is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
+   "delete","Sends the DELETE request for a single entity. See :ref:`delete <delete-action>` action."
+   "cdelete","Sends the DELETE request for a list of entities. See :ref:`delete_list <delete-list-action>` action."
+   "getSubresource","Sends the GET request for a sub-resource of a single entity. See :ref:`get_subresource <get-subresource-action>` action."
+   "postSubresource","Sends the POST request for a sub-resource of a single entity. See :ref:`add_relationship <add-relationship-action>` action"
+   "patchSubresource","Sends the PATCH request for a sub-resource of a single entity. See :ref:`update_relationship <update-action>` action."
+   "deleteSubresource","Sends the DELETE request for a sub-resource of a single entity. See :ref:`delete_relationship <delete-relationship-action>` action."
+   "getRelationship","Sends the GET request for a relationship of a single entity. See :ref:`get_relationship <get-relationship-action>` action."
+   "postRelationship","Sends the POST request for a relationship of a single entity. See :ref:`add_relationship <add-relationship-action>` action."
+   "patchRelationship","Sends the PATCH request for a relationship of a single entity. See :ref:`update_relationship <update-relationship-action>` action."
+   "deleteRelationship","Sends the DELETE request for a relationship of a single entity. See :ref:`delete_relationship <delete-relationship-action>` action."
+   "updateResponseContent","Replaces all values in the given expected response content with corresponding value from the actual response content when the key of an element is equal to the given key and the value of this element is equal to the given placeholder. If the first parameter is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
+   "assertResponseContains","Asserts that the response content contains the given data. If the first parameter is a file name, the file should be located in the ``responses`` directory next to the PHP file that contains the test."
+   "assertResponseCount","Asserts that the response contains the given number of data items."
+   "assertResponseNotEmpty","Asserts that the response data are not empty."
+   "assertResponseNotHasAttributes","Asserts that the response content does not contain the given attributes."
+   "assertResponseNotHasRelationships","Asserts that the response content does not contain the given relationships."
+   "assertResponseValidationError","Asserts that the response content contains one validation error and it is the given error."
+   "assertResponseContainsValidationError","Asserts that the response content contains the given validation error."
+   "assertResponseValidationErrors","Asserts that the response content contains the given validation errors and only them."
+   "assertResponseContainsValidationErrors","Asserts that the response content contains the given validation errors."
+   "assertAllowResponseHeader","Asserts ``Allow`` response header equals to the expected value."
+   "assertMethodNotAllowedResponse","Asserts response status code equals to 405 (Method Not Allowed) and ``Allow`` response header equals to the expected value."
+   "dumpYmlTemplate","Saves a response content to a YAML file. If the first parameter is a file name, the file is saved into the responses directory next to the PHP file that contains the test."
+   "getResourceId","Extracts the JSON:API resource identifier from the response. For details, see |JSON.API specification|."
+   "getNewResourceIdFromIncludedSection","Extracts the JSON:API resource identifier from the ``included`` section of the response. For details, see :ref:`Create and Update Related Resources Together with a Primary API Resource <create-update-related-resources>`"
+   "getRequestData","Converts the given request to an array that can be sent to the server. The given request can be a path to a file that contains the request data or an array with the request data. If the request is a file name, the file should be located in the ``requests`` directory next to the PHP file that contains the test."
+   "getResponseErrors","Extracts the list of errors from the JSON:API response. For details, see |JSON.API specification|."
+   "getApiBaseUrl","Returns the base URL for all REST API requests, e.g. ``http://localhost/api`` . "
+   "appendEntityConfig","Appends a configuration of an entity. This method is helpful when you create a general functionality and need to test it for different configurations without creating a test entity for each of them. Please note that the configuration is restored after each test and thus, you do not need to do it manually."
 
-.. note:: See the :ref:`Actions <web-api--actions>` section for more details on each method.
+.. note:: By default, HATEOAS is disabled in functional tests, although it is enabled by default in production and API Sandbox. It was done to avoid cluttering up the tests with HATEOAS links. In case you want to enable HATEOAS for your test, use HTTP_HATEOAS server parameter, e.g. ``$this->cget(['entity' => 'products']), [],      ['HTTP_HATEOAS' => true]``.
+
+.. _api-load-fixtures:
 
 Load Fixtures
 -------------
@@ -68,12 +80,14 @@ Fixture file:
         productUnitPrecision: '@product-1->primaryUnitPrecision'
         quantity: 10
 
-The ``dependencies`` section can be used if a fixture depends to other Doctrine or Alice fixtures. References will be shared between Alice and Doctrine fixtures.
+The ``dependencies`` section can be used if a fixture depends on another Doctrine or Alice fixtures. References are shared between Alice and Doctrine fixtures.
+
+.. _api-alice-references:
 
 Alice References
 ----------------
 
-In Alice fixtures as well as in yml templates the references can be used.
+You can use references in Alice fixtures:
 
 ::
 
@@ -85,15 +99,21 @@ Use methods of properties with references:
 
     @product-2->createdAt->format("Y-m-d\TH:i:s\Z")
 
-Yaml Templates
+.. _yaml-templates:
+
+YAML Templates
 --------------
 
-Yaml template is a regular yaml. The only difference is that you can use references and faker in values All values will be processed by Alice and replaces with appropriate value. For details see |Alice documentation|.
+A YAML template is a regular YAML file. The only difference is that you can use references and fakers in values. They will be processed by Alice and replaces with the appropriate real values. For details, see the |Alice documentation|.
 
-Assert Expectations
--------------------
+.. _assert-expectations:
 
-Assert expected response by using yaml templates. Yaml template:
+Assert the Expectations
+-----------------------
+
+Assert the expected response by using YAML templates.
+
+A YAML template:
 
 .. code:: yaml
 
@@ -102,7 +122,7 @@ Assert expected response by using yaml templates. Yaml template:
             type: inventorylevels
             id: '@warehouse_inventory_level.warehouse.1.product_unit_precision.product-1.liter->id'
             attributes:
-                quantity: '10.0000000000'
+                quantity: '10'
             relationships:
                 product:
                     data:
@@ -136,10 +156,12 @@ In php test:
         $this->assertResponseContains('cget_filter_by_product.yml', $response);
     }
 
-Yaml Templates for Request Body
--------------------------------
+.. _yaml-templates-for-request-body:
 
-You can use array with references for request body:
+YAML Templates for a Request Body
+---------------------------------
+
+You can use an array with references for a request body:
 
 .. code:: php
 
@@ -159,7 +181,7 @@ You can use array with references for request body:
         );
     }
 
-or you can hold yaml in ``.yml`` file:
+Alternatively, you can store YAML in a ``.yml`` file:
 
 .. code:: php
 
@@ -171,21 +193,25 @@ or you can hold yaml in ``.yml`` file:
         );
     }
 
+.. _process-single-reference:
+
 Process Single Reference
 ------------------------
 
-Sometimes you need a process a single reference e.g. for compare it with other value
+To process a single reference, e.g. to compare it with another value:
 
 .. code:: php
 
     self::processTemplateData('@inventory_level.product_unit_precision.product-1.liter->quantity')
 
-The ``processTemplateData`` method can process string, array or yml file.
+The ``processTemplateData`` method can process a string, an array, or a YAML file.
 
-Dump Response Into Yaml Template
---------------------------------
+.. _dump-response-into-yaml-template:
 
-During development new tests for REST api you have ability to dump response into Yaml template
+Dump the Response into a YAML Template
+--------------------------------------
+
+When you develop new tests for REST API, it may be convenient to dump responses into a YAML template:
 
 .. code:: php
 
@@ -199,7 +225,32 @@ During development new tests for REST api you have ability to dump response into
         $this->dumpYmlTemplate('test_cget_entity.yml', $response);
     }
 
-Use this for the first time and check references after that - there are can be some collision with references that has same ids
+.. important:: Do not forget to check references after you dump a response for the first time: there can be collisions if references have the same IDs.
+
+Base Test Cases for Unit Tests
+------------------------------
+
+To simplify |unit testing| of :ref:`API processors <web-api--processors>`, one of the following base classes can be used:
+
+.. csv-table::
+   :header: "Class","Action"
+
+    "|GetProcessorTestCase|",":ref:`get <get-action>`"
+    "|GetProcessorOrmRelatedTestCase|",":ref:`get <get-action>`"
+    "|GetListProcessorTestCase|",":ref:`get_list <get-list-action>`"
+    "|GetListProcessorOrmRelatedTestCase|",":ref:`get_list <get-list-action>`"
+    "|CreateProcessorTestCase|",":ref:`create <create-action>`"
+    "|UpdateProcessorTestCase|",":ref:`update <update-action>`"
+    "|FormProcessorTestCase|",":ref:`create <create-action>`, :ref:`update <update-action>`"
+    "|DeleteProcessorTestCase|",":ref:`delete <delete-action>`"
+    "|DeleteListProcessorTestCase|",":ref:`delete_list <delete-list-action>`"
+    "|GetSubresourceProcessorTestCase|",":ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`"
+    "|GetSubresourceProcessorOrmRelatedTestCase|",":ref:`get_subresource <get-subresource-action>`, :ref:`get_relationship <get-relationship-action>`"
+    "|ChangeSubresourceProcessorTestCase|",":ref:`update_subresource <update-subresource-action>`, :ref:`add_subresource <add-subresource-action>`, :ref:`delete_subresource <delete-subresource-action>`"
+    "|ChangeRelationshipProcessorTestCase|",":ref:`update_relationship <update-relationship-action>`, :ref:`add_relationship <add-relationship-action>`, :ref:`delete_relationship <delete-relationship-action>`"
+    "|OptionsProcessorTestCase|",":ref:`options <options-action>`"
+    "|ConfigProcessorTestCase|",":ref:`get_config <get-config-action>`"
+    "|MetadataProcessorTestCase|",":ref:`get_metadata <get-metadata-action>`"
 
 .. include:: /include/include-links.rst
    :start-after: begin

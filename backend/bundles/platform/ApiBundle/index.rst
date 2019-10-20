@@ -15,156 +15,101 @@ The implementation of the OroApiBundle is based on the following components:
 
 .. note:: The main format for REST API is described at |JSON API|. Please make sure that you are familiar with it before you start creating REST API for your entities.
 
-The auto-generated documentation and sandbox for REST API is available at /api/doc/rest_json_api, e.g. |http://demo.orocrm.com/api/doc/rest_json_api|. If you plan to use the sandbox, first make sure that you have generated an API key on the user profile page.
+The auto-generated documentation and sandbox for REST API is available at `/api/doc`, e.g. |http://demo.orocrm.com/api/doc|. If you plan to use the sandbox, first make sure that you have generated an API key on the user profile page.
 
-By default, only custom entities, dictionaries, and enumerations are accessible through the data API. For how to make other entities available via the data API, see |Configuration Reference|.
+By default, only custom entities, dictionaries, and enumerations are accessible through the API. For how to make other entities available via the API, see :ref:`Configuration Reference <web-api--configuration>`.
 
 Related Documentation
 ---------------------
 
-* |CLI Commands|
-* |Configure Stateless Security Firewalls|
-* |Configuration Reference|
-* |Configuration Overview|
-* |Configuration Structure|
+* :ref:`CLI Commands <web-api--commands>`
+* :ref:`Configure Stateless Security Firewalls <web-api--security>`
+* :ref:`Configuration Reference <web-api--configuration>`
 
-  * |exclude Option|
-  * |entity_aliases Configuration Section|
-  * |entities Configuration Section|
-  * |fields Configuration Section|
-  * |filters Configuration Section|
-  * |sorters Configuration Section|
-  * |actions Configuration Section|
-  * |status_codes Configuration Section|
-  * |subresources Configuration Section|
-  * |relations Configuration Section|
+  * :ref:`exclude Option <exclude-option>`
+  * :ref:`entity_aliases Configuration Section <entity-aliases-config>`
+  * :ref:`entities Configuration Section <entities-config>`
+  * :ref:`fields Configuration Section <fields-config>`
+  * :ref:`filters Configuration Section <filters-config>`
+  * :ref:`sorters Configuration Section <sorters-config>`
+  * :ref:`actions Configuration Section <actions-config>`
+  * :ref:`subresources Configuration Section <subresources-config>`
 
-* |Configuration Extras|
+* :ref:`Configuration Extras <web-api--configuration-extra>`
 
-  * |Configuration Extras: Overview|
-  * |ConfigExtraInterface|
-  * |ConfigExtraSectionInterface|
-  * |Example of configuration extra|
+  * :ref:`ConfigExtraInterface <web-api--configuration-extra-configextrainterface>`
+  * :ref:`ConfigExtraSectionInterface <web-api--configuration-extra-configextrasectioninterface>`
+  * :ref:`Example of configuration extra <web-api--configuration-extra-example>`
 
-* |Configuration Extensions|
+* :ref:`Configuration Extensions <web-api--configuration-extensions>`
 
-  * |Configuration Extensions: Overview|
-  * |Creating a Configuration Extension|
-  * |Add Options to an Existing Configuration Section|
-  * |Add a New Configuration Section|
+  * :ref:`Creating a Configuration Extension <web-api--configuration-extensions-create>`
+  * :ref:`Add Options to an Existing Configuration Section <web-api--configuration-extensions-add-options>`
+  * :ref:`Add a New Configuration Section <web-api--configuration-extensions-add-section>`
 
-* |Forms and Validators Configuration|
-* |Documenting API Resources|
+* :ref:`Forms and Validators Configuration <web-api--forms>`
+* :ref:`Documenting API Resources <web-api--doc>`
 
-  * |Documenting API Resources: Overview|
-  * |Documentation File Format|
+* :ref:`(API Bundle) Actions <web-api--actions>`
 
-* |(API Bundle) Actions|
+  * :ref:`Public actions <web-api--actions-public-actions>`
+  * :ref:`Auxiliary actions <web-api--actions-auxiliary-actions>`
 
-  * Public actions
+  * :ref:`Context Class <web-api--actions-context-class>`
+  * :ref:`SubresourceContext Class <web-api--actions-subresourcecontext>`
+  * :ref:`Creating a New Action <web-api--actions-create>`
 
-    * |get Action|
-    * |get_list Action|
-    * |delete Action|
-    * |delete_list Action|
-    * |create Action|
-    * |update Action|
-    * |get_subresource Action|
-    * |update_subresource Action|
-    * |add_subresource Action|
-    * |delete_subresource Action|
-    * |get_relationship Action|
-    * |update_relationship Action|
-    * |add_relationship Action|
-    * |delete_relationship Action|
-    * |options Action|
+* :ref:`The Request Type <api-request-type>`
+* :ref:`Processors <web-api--processors>`
+* :ref:`Headers <web-api--headers>`
 
-  * Auxiliary actions
+* :ref:`Filters <api-filters>`
 
-    * |customize_loaded_data Action|
-    * |customize_form_data Action|
-    * |get_config Action|
-    * |get_relation_config Action|
-    * |get_metadata Action|
-    * |normalize_value Action|
-    * |collect_resources Action|
-    * |collect_subresources Action|
-    * |not_allowed Action|
-  * |Context Class|
-  * |SubresourceContext Class|
-  * |Creating a New Action|
+    * :ref:`ComparisonFilter Filter <comparisonfilter-filter>`
+    * :ref:`Existing Filters <web-api--existing-filters>`
+    * :ref:`FilterInterface Interface <web-api--filterinterface>`
+    * :ref:`StandaloneFilter Base Class <standalonefilter-base-class>`
+    * :ref:`Query Expressions <web-api--query-expressions>`
+    * :ref:`Creating New Filter <web-api--creating-filter>`
+    * :ref:`Other Classes <web-api--other-classes>`
 
-* |The Request Type|
-* |Processors|
+* :ref:`How to <web-api--how-to>`
 
-  * |Processors: Overview|
-  * |Creating a Processor|
-  * |Processor Conditions|
-  * |Examples of Processor Conditions|
-  * |Error Handling|
+  * :ref:`Turn on API for an Entity <web-api--how-to>`
+  * :ref:`Turn on API for an Entity Disabled in "Resources/config/oro/entity.yml <turn-on-api-for-entity-disabled-in-entity-yml>`
+  * :ref:`Enable Advanced Operators for String Filter <advanced-operators-for-string-filter>`
+  * :ref:`Enable Case-insensitive String Filter <case-insensitive-string-filter>`
+  * :ref:`Change an ACL Resource for an Action <change-acl-for-action>`
+  * :ref:`Disable Access Checks for an Action <disable-access-check-for-action>`
+  * :ref:`Disable an Entity Action <disable-entity-action>`
+  * :ref:`Change the Maximum Number of Entities that Can Be Deleted by One Request <max-number-of-entities-to-be-deleted>`
+  * :ref:`Configure a Nested Object <configure-nested-object>`
+  * :ref:`Configure a Nested Association <configure-nested-association>`
+  * :ref:`Configure an Extended Many-To-One Association <extended-many-to-one-association>`
+  * :ref:`Configure an Extended Many-To-Many Association <extended-many-to-many-association>`
+  * :ref:`Configure an Extended Multiple Many-To-One Association <extended-multiple-many-to-one-association>`
+  * :ref:`Configure an Unidirectional Association <configure-unidirectional-association>`
+  * :ref:`Add a Custom Controller <add-custom-controller>`
+  * :ref:`Add a Custom Route <add-custom-route>`
+  * :ref:`Using a Non-primary Key to Identify an Entity <using-a-non-primary-key-to-identify-an-entity>`
+  * :ref:`Enable API for an Entity Without Identifier <api-for-entity-wo-id>`
+  * :ref:`Enable Custom API <enable-custom-api>`
+  * :ref:`Add a Predefined Identifier to API Resource <add-id-to-api-resource>`
+  * :ref:`Add a Computed Field <add-computed-field>`
+  * :ref:`Disable HATEOAS <disable-hateoas>`
+  * :ref:`Validate Virtual Fields <validate-virtual-fields>`
 
-* |Headers|
+* :ref:`CORS Configuration <api-cors-config>`
+* :ref:`Testing <web-api--testing>`
 
-  * |Headers: Overview|
-  * |Existing X-Include Keys|
-  * |Add a new X-Include Key|
-
-* |Filters|
-
-  * |Filters: Overview|
-  * |ComparisonFilter Filter|
-  * |Existing Filters|
-  * |FilterInterface Interface|
-  * |CollectionAwareFilterInterface Interface|
-  * |MetadataAwareFilterInterface Interface|
-  * |RequestAwareFilterInterface Interface|
-  * |SelfIdentifiableFilterInterface Interface|
-  * |NamedValueFilterInterface Interface|
-  * |StandaloneFilter Base Class|
-  * |StandaloneFilterWithDefaultValue Base Class|
-  * |Criteria Class|
-  * |CriteriaConnector Class|
-  * |QueryExpressionVisitor Class|
-  * |Query Expressions|
-  * |Creating a New Filter|
-  * |Other Classes|
-
-* |How to|
-
-  * |Turn on API for an Entity|
-  * |Turn on API for an Entity Disabled in "Resources/config/oro/entity.yml|
-  * |Enable Advanced Operators for String Filter|
-  * |Enable Case-insensitive String Filter|
-  * |Change an ACL Resource for an Action|
-  * |Disable Access Checks for an Action|
-  * |Disable an Entity Action|
-  * |Change the Delete Handler for an Entity|
-  * |Change the Maximum Number of Entities that Can Be Deleted by One Request|
-  * |Configure a Nested Object|
-  * |Configure a Nested Association|
-  * |Configure an Extended Many-To-One Association|
-  * |Configure an Extended Many-To-Many Association|
-  * |Configure an Extended Multiple Many-To-One Association|
-  * |Add a Custom Controller|
-  * |Add a Custom Route|
-  * |Using a Non-primary Key to Identify an Entity|
-  * |Enable API for an Entity Without Identifier|
-  * |Enable Custom API|
-  * |Add a Predefined Identifier for API Resource|
-  * |Add a Computed Field|
-  * |Disable HATEOAS|
-
-* |CORS Configuration|
-* |Testing|
-
-  * |Testing: Overview|
-  * |Load Fixtures|
-  * |Alice References|
-  * |Yaml Templates|
-  * |Assert Expectations|
-  * |Yaml Templates for Request Body|
-  * |Process Single Reference|
-  * |Dump Response Into Yaml Template|
+  * :ref:`Load Fixtures <api-load-fixtures>`
+  * :ref:`Alice References <api-alice-references>`
+  * :ref:`Yaml Templates <yaml-templates>`
+  * :ref:`Assert Expectations <assert-expectations>`
+  * :ref:`Yaml Templates for Request Body <yaml-templates-for-request-body>`
+  * :ref:`Process Single Reference <process-single-reference>`
+  * :ref:`Dump Response Into Yaml Template <dump-response-into-yaml-template>`
 
 .. include:: /include/include-links.rst
    :start-after: begin
+

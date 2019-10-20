@@ -3,13 +3,9 @@
 Configure Stateless Security Firewalls
 ======================================
 
-Symfony allows to create stateless firewalls. In this case the security Token will not be serialized to session.
+Symfony allows creating stateless firewalls. In this case, the security token is not serialized for a session.
 
-But there are cases when API calls should be used in AJAX requests from the UI.
-
-In this case we does not send firewalls credentials (e.g., WSSE headers) but should use current user token data from the current session.
-
-To be able to do this, the firewall should have |context1| parameter with the context name the system should use to authenticate the user.
+However, when API calls are utilized in AJAX requests from the UI, the user's token data from the current session must be used instead of the firewall credentials (e.g. WSSE headers). To do this, the firewall should have the |context1| parameter with the context name that the system can use to authenticate the user.
 
 For example:
 

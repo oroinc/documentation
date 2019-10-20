@@ -3,10 +3,7 @@
 Documenting API Resources
 =========================
 
-Overview
---------
-
-You need to provide detailed documentation for your API resources because it is an important part of API and it could help a lot to developers to use your API.
+Documentation is an important part of API and helps developers to use your API. Therefore, it is necessary to provide detailed documentation for your API resources.
 
 OroPlatform collects documentation for API resources from several sources:
 
@@ -14,7 +11,7 @@ OroPlatform collects documentation for API resources from several sources:
 -  A |Markdown1| document. The detailed information you can find bellow in this document.
 -  System-wide descriptions of |configurable entities and fields|.
 
-The most priority source is the configuration file. The documentation provided there overrides all other sources. But as it is YAML file it is not the best way to write big multi-line texts there. The more appropriate place for the documentation is a separate |Markdown1| file. To use such file you need to provide a link to it in the configuration file, e.g.:
+The source with the highest priority is the configuration file. The documentation provided there overrides all other sources. However, it is a YAML file and therefore, it is not fully suitable for big multi-line texts. The more appropriate place for the documentation is a separate |Markdown1|  file. To use a custom markdown file, provide a link to it in the configuration file, e.g.:
 
 .. code:: yaml
 
@@ -23,7 +20,7 @@ The most priority source is the configuration file. The documentation provided t
             Acme\Bundle\AppBundle\Entity\AcmeEntity:
                 documentation_resource: '@AcmeAppBundle/Resources/doc/api/acme_entity.md'
 
-If the documentation was found neither the configuration file nor the documentation file, OroPlatform will try to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files and, actually, they are the best way to document fields, because these descriptions can be used not only in API. Here is an example of a translation file contains descriptions for entities and fields:
+If the documentation was not found neither the configuration file nor in the Markdown documentation file, OroPlatform tries to use system-wide descriptions of entities and fields. These descriptions are usually provided in translation files. This is the best way to document fields because the descriptions can be used in other places, not only in API. Here is an example of a translation file that contains descriptions for entities and fields:
 
 .. code:: yaml
 
@@ -48,14 +45,15 @@ If the documentation was found neither the configuration file nor the documentat
                     label:            Probability
                     description:      The perceived probability of opportunity being successfully closed
 
-Please note that after changing a documentation you need to run ``oro:api:doc:cache:clear`` CLI command to apply the changes to API sandbox.
+
+.. note:: Please note that after changing a documentation you need to run ``oro:api:doc:cache:clear`` CLI command to apply the changes to API sandbox.
 
 Documentation File Format
 -------------------------
 
 The documentation file is a |Markdown1| document that contains description about one or multiple API resources. Please note that the |Markdown Extra| syntax is supported in the documentation file as well.
 
-The only requirement for such document is it should be written in particular format.
+The only requirement for such document is it should be written in a particular format.
 
 Each resource documentation should starts from '#' (h1) header that contains Fully-Qualified Class Name (FQCN) of the resource, e.g.:
 
@@ -63,9 +61,9 @@ Each resource documentation should starts from '#' (h1) header that contains Ful
 
     # Acme\Bundle\AcmeBundle\Entity\AcmeEntity
 
-As already mentioned above, a single documentation file may contain documentations for several resource. In general, this can be used to document a main resource and related resources. For example, you can document resources for User and UseStatus entities in one file.
+As already mentioned above, a single documentation file may contain documentation for several resources. In general, such approach is used to document the main resource and related resources. For example, you can document resources for the User and UseStatus entities in the same file.
 
-At the next level ``##`` (h2) one of the documentation sections should be specified, e.g.:
+Start the next level with the ``##`` (h2) header and use it to announce one of the documentation sections, e.g.:
 
 .. code::
 
@@ -80,8 +78,8 @@ At the next level ``##`` (h2) one of the documentation sections should be specif
     ## SUBRESOURCES
     ...
 
-| The section name is case insensitive. They are used only by documentation parser to identify the documentation part.
-| The following table describes the purposes of each documentation section:
+The section name is case insensitive. They are used only by the documentation parser to identify the documentation part.
+The following table describes the purposes of each documentation section:
 
 +----------------+----------------------------------------------+
 | Section name   | Description                                  |
@@ -101,7 +99,7 @@ The fourth level ``####`` (h4) header can be used only for **FIELDS** and **SUBR
 
 The action names in **FIELDS** section can be combined using comma, e.g.: "Create, Update". It allows to avoid copy-paste when you need the same description for several actions.
 
-An example:
+Example:
 
 .. code::
 
@@ -152,9 +150,9 @@ An example:
     May contain any formatting e.g.: ordered or unordered lists,
      request or response examples, links, text in bold or italic, etc.
 
-The ``{@inheritdoc}`` placeholder can be used to get common documentation for an action or a field. This placeholder works only for **ACTIONS** and **FIELDS** sections.
+Use the ``{@inheritdoc}`` placeholder to get the common documentation for an action, a field or a filter. This placeholder works only for **ACTIONS**, **FIELDS** and **FILTERS** sections.
 
-An example:
+Example:
 
 .. code::
 
@@ -177,17 +175,17 @@ An example:
 
     {@inheritdoc}
 
-    **The required field**
+    **The required field.**
 
-The ``{@request}`` tag can be used to add documentation depends on the request type. The full signature of this tag is ``{@request:expression}some text{@/request}``. The expression can contain the following operators:
+Use the ``{@request}`` tag to add documentation depends on the request type. The full signature of this tag is ``{@request:expression}some text{@/request}``. The expression can contain the following operators:
 
 -  ``&`` - logical AND
 -  ``|`` - logical OR
 -  ``!`` - logical NOT
 
-For example if it is required to add text for JSON API request type, but only if it is not REST API request, the following expression can be used: ``json_api&!rest``.
+For example, to add a text for the JSON API request type for all requests excluding REST API, use the following expression: ``json_api&!rest``.
 
-An example:
+Example:
 
 .. code::
 
@@ -227,7 +225,7 @@ An example:
 
     {@inheritdoc}
 
-    **The required field**
+    **The required field.**
 
 
 .. include:: /include/include-links.rst

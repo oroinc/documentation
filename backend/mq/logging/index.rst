@@ -33,7 +33,7 @@ For more details, see the |Temporarily Decrease Log Level| documentation.
 Processors
 ^^^^^^^^^^
 
-Sometimes, it is necessary to add your own data to log extra data. For more details on how to create your own processor and add the ``monolog.processor`` DIC tag to it, |see the related Processors| documentation.
+Sometimes, it is necessary to add your own data to log extra data. For more details on how to create your own processor and add the ``monolog.processor`` DIC tag to it, see the related :ref:`Processors <web-api--processors>` documentation.
 
 Handlers
 ^^^^^^^^

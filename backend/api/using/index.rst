@@ -5,9 +5,6 @@ Using Web Services API
 
 OroCommerce REST API enables developers to integrate Oro functionality into third-party software systems.
 
-Overview
---------
-
 An application programming interface (API) is a software interface which is designed to be used by other software for integration with this application.
 Whilst an ordinary software program is used by a (human) computer user, an API is a software program used by
 another software program.
@@ -27,13 +24,8 @@ on readability, flexibility or discoverability.
 Therefore, here and below the term *API* will refer to the REST JSON API that gives programmatic access
 to read and write data. Request and response body should use JSON format.
 
-
-Quick Start
------------
-
-
-Create an API Key
-^^^^^^^^^^^^^^^^^
+Creating an API Key
+-------------------
 
 To start using API, you must take a few preliminary steps:
 
@@ -77,13 +69,9 @@ After the API key is generated, you will be able to execute API requests via the
 .. _api-sandbox:
 
 API Sandbox
-^^^^^^^^^^^
+-----------
 
 The API sandbox page allows you to perform API requests directly from the Oro application instance.
-
-
-How to Use the Sandbox
-~~~~~~~~~~~~~~~~~~~~~~
 
 The sandbox page for OroCommerce is available at: ``http://<hostname_of_your_oro_application>/admin/api/doc``, unlike in OroCRM.
 
@@ -108,11 +96,9 @@ To expand information about all methods available for the resource, click the **
 
 To switch between the collapsed list of available resources and the expanded state, click the **Show/hide** link at the right-hand end of the row.
 
-Examples
-^^^^^^^^
+**Examples**
 
-Retrieve a Single Record
-~~~~~~~~~~~~~~~~~~~~~~~~
+*Retrieve a Single Record*
 
 To retrieve a single record for a particular resource record with JSON API, perform the GET method with the id parameter specified:
 
@@ -148,9 +134,7 @@ with |Curl|. This command may help emulate the real request to the API.
 
     When performing Curl requests, please make sure your **X-WSSE** header is up to date for each request.
 
-
-Edit a Record
-~~~~~~~~~~~~~
+*Edit a Record*
 
 To edit a record for a particular resource record with JSON API, perform the PATCH method with the id parameter specified:
 
@@ -187,20 +171,15 @@ To edit a record for a particular resource record with JSON API, perform the PAT
 Provided you have the edit permission to the record, you will see the updated data in the
 **Response Body** section after the response from the server is received.
 
-API in Detail
--------------
-
 Schema
-^^^^^^
+------
 
 All API access is over HTTP or HTTPS (depending on a server configuration) and is accessed from the ``http(s)://<hostname_of_your_oro_application>/api/<resource_name>``
 All data is sent and received as JSON.
 
 A typical request can be performed via curl or JSON sandbox.
 
-
-Curl Example
-~~~~~~~~~~~~
+**Curl Example**
 
 .. code-block:: http
     :linenos:
@@ -228,7 +207,7 @@ Please note that to simplify the representation of request examples in the docum
     X-WSSE: UsernameToken Username='...', PasswordDigest='...', Created='...', Nonce='...'
 
 
-**Typical response header**
+*Typical response header*
 
 .. code-block:: http
     :linenos:
@@ -243,7 +222,7 @@ Please note that to simplify the representation of request examples in the docum
     Cache-Control: max-age=0, no-store
 
 
-**Typical response body**
+*Typical response body*
 
 .. code-block:: json
     :linenos:
@@ -271,7 +250,7 @@ Attributes or sub resources that are restricted are included as *null* as well.
 All timestamps are returned in ISO 8601 format: *YYYY-MM-DDTHH:MM:SSZ*.
 
 Authentication
-^^^^^^^^^^^^^^
+--------------
 
 A RESTful API should be stateless. This means that request authentication should not depend on cookies or sessions.
 Instead, each request should come with some authentication credentials.
@@ -304,8 +283,8 @@ Here's an example of a request header with the WSSE authentication. Please pay a
 
 For more details about WSSE authentication and particularly for how to generate an API Key and authentication header, please see the :ref:`How to use WSSE authentication <how-to-use-wsse-authentication>` topic.
 
-HTTP Methods Available in Oro API
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Available HTTP Methods
+----------------------
 
 The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE. These correspond to create, read, update, and delete (or CRUD) operations, respectively. There are a number of other methods, too, but they are utilized less frequently.
 
@@ -393,7 +372,7 @@ On successful creation, HTTP response code 201 is returned.
     the same information but with different identifiers.
 
 .. note::
-    It is possible to create both primary and related API resources via a single API request. For details see the `Create and Update Related Resources Together with a Primary API Resource`_ section.
+    It is possible to create both primary and related API resources via a single API request. For details see the `Creating and Updating Related Resources with Primary API Resource`_ section.
 
 
 PATCH
@@ -413,7 +392,7 @@ server should be modified to produce a new version.
     that the request will fail if the resource has been updated since the client last accessed the resource.
 
 .. note::
-    For details see the `Create and Update Related Resources Together with a Primary API Resource`_ section.
+    For details see the `Creating and Updating Related Resources with Primary API Resource`_ section.
 
 
 DELETE
@@ -429,7 +408,7 @@ On successful deletion, the HTTP response status code 204 (No Content) returns w
     since it was already removed and, therefore, is no longer findable.
 
 HTTP Header Specifics
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 As mentioned in the `Authentication`_ section, to successfully perform an API request, it is important to provide the correct **Content-Type**
 and **Authentication** parameters, e.g.:
@@ -461,11 +440,9 @@ The following table describes all existing keys for the X-Include header.
 | DELETE      | deletedCount    | X-Include-Deleted-Count   | Returns the number of deleted entities.              |
 +-------------+-----------------+---------------------------+------------------------------------------------------+
 
+**Header Examples**
 
-Header Examples
-~~~~~~~~~~~~~~~
-Example 1. Total Number of Existing Records
-"""""""""""""""""""""""""""""""""""""""""""
+*Example 1. Total Number of Existing Records*
 
 Retrieve the total count of resource records.
 
@@ -498,8 +475,7 @@ Retrieve the total count of resource records.
     Connection: Keep-Alive
     Content-Type: application/vnd.api+json
 
-Example 2. Total Number of Deleted Records
-""""""""""""""""""""""""""""""""""""""""""
+*Example 2. Total Number of Deleted Records*
 
 Retrieve the total number of deleted records of the resource
 
@@ -516,8 +492,7 @@ Retrieve the total number of deleted records of the resource
     ....
     X-Include: deletedCount
 
-Example 3. Conditions for the Delete Operation
-""""""""""""""""""""""""""""""""""""""""""""""
+*Example 3. Conditions for the Delete Operation*
 
 Request query string contains a filter that specifies conditions for deletion operation. Filters are described in more detail in the `Filters`_ section.
 
@@ -548,11 +523,8 @@ Request query string contains a filter that specifies conditions for deletion op
     Connection: Keep-Alive
     Content-Type: text/html
 
-Response Status Codes and Errors
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Response Status Codes
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 In case of a successful request, a response status code will be one of the following:
 
@@ -562,17 +534,16 @@ In case of a successful request, a response status code will be one of the follo
 
     -   **204 No Content**—In the response to a successful request that won't be returning a body (like a DELETE request)
 
-Example. Successful Request
-"""""""""""""""""""""""""""
+**Example of Successful Request**
 
-**Request**
+*Request*
 
    .. code-block:: http
        :linenos:
 
        GET /api/users/1 HTTP/1.1
 
-**Response**
+*Response*
 
    .. code-block:: http
        :linenos:
@@ -583,7 +554,6 @@ Example. Successful Request
        Request Method: GET
        Status Code: 200 OK
        Remote Address: 127.0.0.1:80
-
 
 
 In case of an error, a response status code indicates the type of an error that has occurred. The most common of such codes are the following:
@@ -598,10 +568,9 @@ In case of an error, a response status code indicates the type of an error that 
 
     -   **500 Internal Server Error**—The server encountered an unexpected condition which prevented it from fulfilling the request.
 
-Example. Request Resulted in Error
-""""""""""""""""""""""""""""""""""
+**Example of a Request Resulted in Error**
 
-**Request**
+*Request*
 
    .. code-block:: http
        :linenos:
@@ -621,7 +590,7 @@ Example. Request Resulted in Error
        Remote Address: 127.0.0.1:80
 
 Error Messages
-~~~~~~~~~~~~~~
+--------------
 
 Similar to an HTML error page that shows a useful error message to a visitor, the API displays an error message in
 a consumable format. Representation of an error looks the same as the representation of any resource, only
@@ -644,10 +613,10 @@ with its own set of fields.
 
 
 Resource Fields
-^^^^^^^^^^^^^^^
+---------------
 
-Most Common Resource Fields
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Common Resource Fields
+~~~~~~~~~~~~~~~~~~~~~~
 
 +--------------+---------------+-----------------------------------------------------------------------------------------------------+
 | Name         | Type          | Description                                                                                         |
@@ -703,7 +672,7 @@ as *Call*, *Email*, etc.
 
 
 Filters
-^^^^^^^
+-------
 
 You can perform the GET and DELETE methods on a subset of resource records. A subset of records can be received by applying filters to some of the resource's fields.
 
@@ -711,12 +680,11 @@ Available filters are listed in the **Documentation** tab of the method's expand
 
 To filter, perform a GET request and put your filters parameters in the query string.
 
-Example 1. Filter in a Query String
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Ex 1. Filter in a Query String**
 
 Retrieve all users of organization '1'.
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -728,8 +696,7 @@ Similar to a field, a filter declares a data type and only takes specific values
 
 Below are examples of requests and errors.
 
-Example 2. Wrong Input Type
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Ex 2. Wrong Input Type**
 
 A string value is passed as an input to a filter which can contain only integer values.
 
@@ -748,8 +715,7 @@ A string value is passed as an input to a filter which can contain only integer 
     }] }
 
 
-Example 3. Unknown Filter
-~~~~~~~~~~~~~~~~~~~~~~~~~
+**Ex 3. Unknown Filter**
 
 Unknown, mistyped or unsupported filter.
 
@@ -826,12 +792,11 @@ To request particular fields, use the **fields** filter and specify the fields y
     We recommend you to always use the fields filter and retrieve only the fields you will use in your application.
 
 
-Example. Retrieve Only Required Fields
-""""""""""""""""""""""""""""""""""""""
+**Example of Retrieving Only Required Fields**
 
-    Select the **username** and the **email** fields of the **users** resource.
+Select the **username** and the **email** fields of the **users** resource.
 
-    **Request**
+    *Request*
 
     .. code-block:: http
         :linenos:
@@ -842,7 +807,7 @@ Example. Retrieve Only Required Fields
         Accept: application/vnd.api+json
         ...
 
-    **Response**
+    *Response*
 
     .. code-block:: json
         :linenos:
@@ -966,11 +931,9 @@ by a developer who creates API resources.
 |          |                     | a text                |             | | GET /api/users?filter[id][not_ends_with]=test HTTP/1.1   |
 +----------+---------------------+-----------------------+-------------+------------------------------------------------------------+
 
+**Example of Using Operators to Filter Data**
 
-Example. Use Operators to Filter Data
-"""""""""""""""""""""""""""""""""""""
-
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -981,7 +944,7 @@ Example. Use Operators to Filter Data
     Accept: application/vnd.api+json
     ...
 
-**Response**
+*Response*
 
 .. code-block:: json
     :linenos:
@@ -1025,12 +988,11 @@ All included resources will be represented in **included** section at the end of
     Please note, in case of using **fields** filter for the main resource (e.g. users), it must contain
     the field(s) used in the **include** filter.
 
-Example. Include a Related Resources Information
-""""""""""""""""""""""""""""""""""""""""""""""""
+**Example of Including Related Resources Information**
 
 Include the **roles** relation with the **fields** filter.
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -1041,7 +1003,7 @@ Include the **roles** relation with the **fields** filter.
     Accept: application/vnd.api+json
     ...
 
-**Response**
+*Response*
 
 .. code-block:: json
     :linenos:
@@ -1090,10 +1052,9 @@ Include the **roles** relation with the **fields** filter.
 Also, it is possible to limit fields that will be retrieved from the relation. For such purposes, the **fields** filter
 should be used.
 
-Example. Retrieve Only Required Fields of the Related Resource
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+**Example of Retrieving Only Required Fields of a Related Resource**
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -1104,8 +1065,7 @@ Example. Retrieve Only Required Fields of the Related Resource
     Accept: application/vnd.api+json
     ...
 
-
-**Response**
+*Response*
 
 .. code-block:: json
     :linenos:
@@ -1161,12 +1121,11 @@ parameters should be passed as the parameters of the query string.
 +----------------+---------+---------------+---------------------------------------------------------------------+
 
 
-Example. Retrieve a Particular Page of the Paged Response
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+**Example of Retrieving a Particular Page of a Paged Response**
 
 Get the 2nd page of the retrieved records for the **users** resource with 20 records per page.
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -1177,20 +1136,17 @@ Get the 2nd page of the retrieved records for the **users** resource with 20 rec
     Accept: application/vnd.api+json
     ...
 
-
 Sorting Filter (**sort**)
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When the response to your call is a list of objects, you can also sort this list by using the sort filter with any of the
 available values listed in the API reference.
 
-
-Example. Sort by a Field Value
-""""""""""""""""""""""""""""""
+**Example of Sorting by a Field Value**
 
 Sort by **username** in descending order.
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -1201,7 +1157,7 @@ Sort by **username** in descending order.
     Accept: application/vnd.api+json
     ...
 
-**Response**
+*Response*
 
 .. code-block:: json
     :linenos:
@@ -1240,10 +1196,9 @@ The following table contains a list of supported meta properties that may be req
 | title         | A text representation of the resource. |
 +---------------+----------------------------------------+
 
-Example. Retrieve a Text Representation of the Resource
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+**Example of Retrieving Text Representation of the Resource**
 
-    **Request**
+    *Request*
 
     .. code-block:: http
         :linenos:
@@ -1254,7 +1209,7 @@ Example. Retrieve a Text Representation of the Resource
         Accept: application/vnd.api+json
         ...
 
-    **Response**
+    *Response*
 
     .. code-block:: json
         :linenos:
@@ -1284,9 +1239,10 @@ Example. Retrieve a Text Representation of the Resource
           ]
         }
 
+.. _create-update-related-resources:
 
-Create and Update Related Resources Together with a Primary API Resource
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Creating and Updating Related Resources with Primary API Resource
+-----------------------------------------------------------------
 
 Sometimes it is required to create or update related resources while creating or updating the primary API resource. Especially often such a need arises when you create a complex API resource object via a single API request. Unfortunately, the JSON API specification does not describe how to do this. The solution proposed by OroPlatform is to use the **included** section of a JSON request body. Please take a look at the following example:
 
@@ -1540,15 +1496,13 @@ This request does the following:
 
 2. Sets the primary email for the contact with identifier '79' and makes it the default contact.
 
-
 Data API Client Requirements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 The only requirement for the client that will send API requests to the server is that it **must** have the **Content-Type** header that looks like: ``Content-Type: application/vnd.api+json``.
 **Content-Type** must not contain any media type parameters.
 
-Example. Valid **Content-Type**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example of a Valid Content-Type**
 
 .. code-block:: http
     :linenos:
@@ -1559,10 +1513,9 @@ Example. Valid **Content-Type**
 
 At the same time, it **must** ignore any media type parameters received in the **Content-Type** header of the response.
 
-Example. Ignore Media Type in Response
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example of Ignoring Media Type in Response**
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -1571,7 +1524,7 @@ Example. Ignore Media Type in Response
     Host: localhost.com
     Content-Type: application/vnd.api+json
 
-**Response**
+*Response*
 
 .. code-block:: json
     :linenos:
@@ -1592,10 +1545,9 @@ Example. Ignore Media Type in Response
 Requests with the invalid **Content-Type** value in the header will be perceived as a plain request, so the response data
 will a plain format rather than JSON API.
 
-Example. Invalid **Content-Type**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+**Example of Invalid Content-Type**
 
-**Request**
+*Request*
 
 .. code-block:: http
     :linenos:
@@ -1604,7 +1556,7 @@ Example. Invalid **Content-Type**
     Host: localhost.com
     Content-Type: application/json
 
-**Response**
+*Response*
 
 .. code-block:: json
     :linenos:
@@ -1625,15 +1577,15 @@ For more information about the API client requirements, see the |JSON Specificat
 .. include:: /include/include-links.rst
    :start-after: begin
 
+Developer's Reference to Oro APIBundle
+--------------------------------------
 
+Find more information about Web API in the following topics:
 
-**See Also**
-
-* :ref:`API Developer Documentation <web-api>`
 * :ref:`How to Use WSSE Authentication <how-to-use-wsse-authentication>`
 * :ref:`Simple Search API <simple_search>`
 * :ref:`Advanced Search API <advanced-search-api>`
-
+* :ref:`API Developer Documentation <web-api>`
 
 .. toctree::
    :hidden:
