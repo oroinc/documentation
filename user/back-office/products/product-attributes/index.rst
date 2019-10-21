@@ -57,7 +57,7 @@ To create an attribute:
       :header: "Field", "Description"
       :widths: 10, 30
 
-      "**Field Name**", "Fill in the field name that should be used to store the values of the product attribute. It should be between 2 and 22 characters long. Use only alphabetic symbols, underscore and numbers. "
+      "**Field Name**","Fill in the field name that should be used to store the values of the product attribute. It should be between 2 and 22 characters long. Use only alphabetic symbols, underscore and numbers. For the list of available field types and their purposes, refer to the :ref:`relevant section <field-file-types>` of the Entity Field Properties topic."
       "**Type**","Select an attribute type to store the value of the specific data type. Select one of the **Relations** for the attribute to connect your custom entities as product information (these can be used for business intelligence and segments):
         - **Many to many** -- No limit of how many entity records of the selected type can be connected to the attribute, e.g., many custom entity records can be related to many products.
         - **Many to one** -- Attributes cannot have more than one entity record related to them, e.g., Products A-Z can relate to Promotion A. Product A cannot relate to multiple promotions. You can reuse the same promotion in multiple product details.

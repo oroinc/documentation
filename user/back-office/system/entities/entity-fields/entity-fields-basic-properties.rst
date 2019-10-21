@@ -20,6 +20,8 @@ The first step of creating a new entity field is providing information on its ba
 
    * **Serialized field** --- Use this storage type for simple fields that keep information necessary for a single entity. The field will appear in the system as soon as it has been added, and no :ref:`schema update <schema update>` is required. Serialized fields cannot be used for :ref:`grid filters <doc-grids-actions-filters>`, :ref:`report <user-guide-reports>` and :ref:`chart <user-guide--business-intelligence--reports--use-custom-reports>` generation, data audit, creation of :ref:`segments <user-guide-filters-segments>` and relations (many to many, one to many, many to one). In addition, they cannot be used for files, multi-selects or option sets.
 
+.. _field-file-types:
+
 3. **Type** --- Select a field type from the list:
 
    * **BigInt** --- Select this type if the values of this field must be very big positive or negative whole numbers like 111222333444555. Save range is from -999,999,999,999,999 to 999,999,999,999,999.
@@ -43,7 +45,8 @@ The first step of creating a new entity field is providing information on its ba
    * **File** --- Select this type if you are going to use this field to store files. If you need to store image files with .gif, .jpeg or .png file extensions, consider the *Image* file type instead.   
    * **Image** --- Select this type if you are going to use this field to store images (e.g. photos). The thumbnail of the uploaded image will be displayed in the entity record. You will be able to download the full image by clicking this thumbnail. 
    * **Select** --- Use this type if you want your field to be a list that enables users to select one value at a time. For example, the 'Grade Service' list that contains values from 1 to 5.
-   * **Multi-Select** --- Use this type if you want your field to be a set of check boxes. Users will be able to select several values at a time. For example, the 'Working Days' list that contains days of week. 
+   * **Multi-Select** --- Use this type if you want your field to be a set of check boxes. Users will be able to select several values at a time. For example, the 'Working Days' list that contains days of week.
+   * **WYSIWYG** --- Use this type if you want to add the WYSIWYG text editor to your entity. The editor enables you to customize the content of the selected entity the way you desire. You will be able to add images and videos, link buttons and external websites, insert a content widget or a source code, and modify these elements by navigating from tab to tab in the WYSIWYG editor's manager panel.
    
    .. note:: Relation is a field that enables users to tie record(s) of one entity to record(s) of another entity.
 
