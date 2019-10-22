@@ -149,3 +149,27 @@ The following checklist provides the typical activities that you need to perform
     * Overall number of consumers and queues
     * The number of consumers for every queue","Requires investigation"
    "**Availability-check monitoring request**", "Granting access to continuous system health-check for your OroCloud environment", "--","1"
+
+Contacting Support Before Launch
+--------------------------------
+
+The Oro support team needs to be aware of the expected launch. You must submit a support desk request to our support team **no later than 2 weeks before** the desired launch date to inform us about your intention to go live and provide the following environment sizing metrics:
+
+* Expected average and maximum concurrent or daily users
+
+* Expected data size:
+
+  * organizations
+  * websites
+  * products
+  * product attributes
+  * categories
+  * web catalog
+
+* Expected size of media files (images, attachments, etc.)
+
+* Key integration flows:
+
+  * type
+  * frequency
+  * data size
