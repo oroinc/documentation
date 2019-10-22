@@ -1,0 +1,42 @@
+<div class="footer-container">
+  <aside class="footer-content">
+    <div class="footer-holder">
+      <div class="heading-column">
+        <a href="https://oroinc.com/" class="logo-footer">
+          <img width="117" height="37" src="{{ pathto(link_prefix ~ '_static/images/Oro-Inc-Logo.svg', 1) }}?{{ oro_assets_timestamp }}" alt="Oro Inc">
+        </a>
+      </div>
+      <div class="columns-holder">
+        <div class="footer-column">
+          <ul>
+            <li class="menu-item-home"><a href="https://oroinc.com">Oro inc</a></li>
+            <li><a href="https://oroinc.com/b2b-ecommerce">Orocommerce</a></li>
+            <li><a href="https://oroinc.com/orocrm/">Orocrm</a></li>
+            <li><a href="https://oroinc.com/oroplatform">Oroplatform</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://oroinc.com/partners">Partners</a></li>
+            <li><a href="https://oroinc.com/services">Services</a></li>
+            <li><a href="https://oroinc.com/events">Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <ul>
+            <li><a href="https://oroinc.com/terms-conditions">Terms & conditions</a></li>
+            <li><a href="https://oroinc.com/privacy-policy">Privacy policy</a></li>
+            <li><a href="https://oroinc.com/orocrm/contributor-license-agreement">Contributor license agreement</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <footer class="copyright">
+    <div class="copyright-holder">
+      <p>@<strong>2019</strong> <a href="https://oroinc.com/">Oro, Inc</a>. All Rights Reserved.</p>
+    </div>
+  </footer>
+  {%- block extrafooter %} {% endblock %}
+</div>
+<script type="text/javascript" src="{{ pathto(link_prefix ~ '_static/js/google-tag-manager.js', 1) }}?{{ oro_assets_timestamp }}"></script>
