@@ -24,7 +24,7 @@ Oro User Documentation is split into four sections, each delivering user-specifi
 
 .. raw:: html
 
-   <h2><a href="https://doc.oroinc.com/user/glossary">Glossary</a></h2>
+   <h2><a href="https://doc.oroinc.com/user/glossary/">Glossary</a></h2>
    <p>Glossary is an alphabetical list of OroCRM and OroCommerce terms used throughout the documentation.</p>
 
 
