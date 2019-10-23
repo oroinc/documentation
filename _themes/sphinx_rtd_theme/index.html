@@ -17,6 +17,12 @@
   {{ metatags }}
   <meta name="google-site-verification" content="lRMWtrga3OqUFI6b0bqa4dTNdfvdkNErwek5ohVg3G0"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Welcome to Oro Documentation"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}" />
+  {% if theme_canonical_url %}
+    <meta property="og:url" content="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}"/>
+  {% endif %}
   {% block htmltitle %}
   <title>Welcome to Oro Documentation</title>
   {% endblock %}

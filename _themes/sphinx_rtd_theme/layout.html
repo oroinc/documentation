@@ -33,6 +33,12 @@
   <meta charset="utf-8">
   {{ metatags }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="{{ title|striptags|e }}{{ titlesuffix }}"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}" />
+  {% if theme_canonical_url %}
+    <meta property="og:url" content="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}"/>
+  {% endif %}
   {# Add version meta tag for algolia docsearch #}
   {% if oro_current_version %}
       <meta name="docsearch:version" content="{{ oro_current_version }}" />
