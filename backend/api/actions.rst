@@ -73,7 +73,7 @@ The following table shows all actions provided out-of-the-box:
 
 Please see the :ref:`Processors <web-api--processors>` section for more details about how to create a processor.
 
-You can use the `oro:api:debug <./commands#oroapidebug>`__ command to display the list of all available actions and processors.
+You can use the :ref:`oro:api:debug <oroapidebug>` command to display the list of all available actions and processors.
 
 .. _web-api--actions-public-actions:
 
@@ -93,7 +93,7 @@ The URL template for REST API: ``/api/{entity}/{id}``.
 
 The HTTP method for REST API: ``GET``.
 
-The context class: |GetContext|. See the `Context <#context-class>`__ class for more details.
+The context class: |GetContext|. Also see :ref:`Context <context-class>` class for more details.
 
 The main processor class: |GetProcessor|.
 
@@ -102,7 +102,7 @@ Existing worker processors: |processors.get.yml|, |processors.shared.yml|. Run `
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -136,7 +136,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``GET``.
 
-The context class: |GetListContext|. Also see `Context <#context-class>`__ class for more details.
+The context class: |GetListContext|. Also see :ref:`Context <context-class>` class for more details.
 
 The main processor class: |GetListProcessor|.
 
@@ -145,7 +145,7 @@ Existing worker processors: |processors.get_list.yml|, |processors.shared.yml|. 
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -179,7 +179,7 @@ The URL template for REST API: ``/api/{entity}/{id}``.
 
 The HTTP method for REST API: ``DELETE``.
 
-The context class: |DeleteContext|. Also see `Context <#context-class>`__ class for more details.
+The context class: |DeleteContext|. Also see :ref:`Context <context-class>` class for more details.
 
 The main processor class: |DeleteProcessor|.
 
@@ -188,7 +188,7 @@ Existing worker processors: |processors.delete.yml|, |processors.shared.yml|. Ru
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -225,7 +225,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``DELETE``.
 
-The context class: |DeleteListContext|. Also see `Context <#context-class>`__ class for more details.
+The context class: |DeleteListContext|. Also see :ref:`Context <context-class>` class for more details.
 
 The main processor class: |DeleteListProcessor|.
 
@@ -234,7 +234,7 @@ Existing worker processors: |processors.delete_list.yml|, |processors.shared.yml
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","	Also, the processors from this group are executed during the generation of the API documentation."
@@ -268,7 +268,7 @@ The URL template for REST API: ``/api/{entity}``.
 
 The HTTP method for REST API: ``POST``.
 
-The context class: |CreateContext|. Also see `Context <#context-class>`__ class for more details.
+The context class: |CreateContext|. Also see :ref:`Context <context-class>` class for more details.
 
 The main processor class: |CreateProcessor|.
 
@@ -277,7 +277,7 @@ Existing worker processors: |processors.create.yml|, |processors.shared.yml|. Ru
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -312,7 +312,7 @@ The URL template for REST API: ``/api/{entity}/{id}``.
 
 The HTTP method for REST API: ``PATCH``.
 
-The context class: |UpdateContext|. Also see `Context <#context-class>`__ class for more details.
+The context class: |UpdateContext|. Also see :ref:`Context <context-class>` class for more details.
 
 The main processor class: |UpdateProcessor|.
 
@@ -321,7 +321,7 @@ Existing worker processors: |processors.update.yml|, |processors.shared.yml|. Ru
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
@@ -365,7 +365,7 @@ Existing worker processors: |processors.get_subresource.yml|,  |processors.share
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
@@ -408,7 +408,7 @@ Existing worker processors: |processors.change_subresource.yml|, |processors.sha
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
@@ -463,7 +463,7 @@ Existing worker processors: |processors.change_subresource.yml|, |processors.sha
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
@@ -518,7 +518,7 @@ Existing worker processors: |processors.change_subresource.yml|, |processors.sha
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization","Also, the processors from this group are executed during the generation of the API documentation."
@@ -573,7 +573,7 @@ Existing worker processors: |processors.get_relationship.yml|, |processors.share
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","Initializing of the context.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -616,7 +616,7 @@ Existing worker processors: |processors.update_relationship.yml|, |processors.sh
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -654,7 +654,7 @@ Existing worker processors: |processors.add_relationship.yml|, |processors.share
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -697,7 +697,7 @@ Existing worker processors: |processors.delete_relationship.yml|, |processors.sh
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -738,7 +738,7 @@ Existing worker processors: |processors.options.yml|, |processors.shared.yml|. R
 This action has the following processor groups:
 
 .. csv-table::
-   :header: "Group Name","Responsibility of Processors","Description"
+   :header: "Group Name","Responsibility of Processors","Description"
    :widths: 15, 15, 30
 
    "initialize","The context initialization.","Also, the processors from this group are executed during the generation of the API documentation."
@@ -964,7 +964,7 @@ This action has the following processor groups:
 
 For examples of usage, see the ``handleNotAllowedItem``, ``handleNotAllowedList``, ``handleNotAllowedSubresource`` and ``handleNotAllowedRelationship`` methods of |RequestActionHandler|.
 
-.. _web-api--actions-context-class:
+.. _context-class:
 
 Context Class
 -------------
@@ -1049,7 +1049,7 @@ SubresourceContext Class
 ------------------------
 
 The |SubresourceContext| class is used as a superclass for the context classes of sub-resources related actions such as `get\_subresource <#get_subresource-action>`__, `get\_relationship <#get_relationship-action>`__, `update\_relationship <#update_relationship-action>`__, `add\_relationship <#add_relationship-action>`__ and
-`delete\_relationship <#delete_relationship-action>`__. Additionally to the `Context <#context-class>`__ class, this class provides methods to work with parent entities.
+`delete\_relationship <#delete_relationship-action>`__. Additionally to the :ref:`Context <context-class>` class, this class provides methods to work with parent entities.
 
 General methods:
 
@@ -1152,4 +1152,3 @@ Please note that the ``priority`` attribute is used to control the order in whic
 
 .. include:: /include/include-links.rst
    :start-after: begin
-

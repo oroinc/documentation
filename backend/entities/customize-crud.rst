@@ -11,7 +11,7 @@ Editing the OroCommerce source code or the code for third party extensions is ne
 
 .. note:: CRUD stands for Create, Read, Update and Delete operations. They are commonly accompanied by some sort of listing or navigation that allows to retrieve, sort and filter multiple records at once. In the context of OroCommerce the data management UIs for the above operations are represented by the following pages:
 
-   * **List** – represented by the data grids (for example, select **Products → Products** in the main navigation menu). For more information on customization of the data grids, see the `Customizing Data Grids in OroCommerce <customizing-data-grid-in-orocommerce>`_ section.
+   * **List** – represented by the data grids (for example, select **Products → Products** in the main navigation menu). For more information on customization of the data grids, see the :ref:`Customizing Data Grids in OroCommerce <customizing-data-grid-in-orocommerce>` section.
 
    * **Create** – an entity creation screen (for example, go to **Products → Products** and click on the **Create Product** button above the product data grid). In most cases, the entity creation screen and entity editing screen look and work exactly the same, though there may be exceptions to this rule.
 
@@ -26,14 +26,14 @@ For the purpose of the today’s exercise, we will be adding a new text field to
 Prerequisites
 ^^^^^^^^^^^^^
 
-Before we start writing code, you should create a new bundle in your application. If you are not familiar with bundle creation process yet, please check the article about `how to create a new bundle in OroPlatform, OroCRM, or OroCommerce <how-to-create-new-bundle>`_. If you have already created a bundle for your app customizations, you are good to go and may reuse it in other tutorials as well.
+Before we start writing code, you should create a new bundle in your application. If you are not familiar with bundle creation process yet, please check the article about :ref:`how to create a new bundle in OroPlatform, OroCRM, or OroCommerce <how-to-create-new-bundle>`. If you have already created a bundle for your app customizations, you are good to go and may reuse it in other tutorials as well.
 
 Custom Data Entity
 ~~~~~~~~~~~~~~~~~~
 
 As the first step we will create a new entity to store our custom data. It is still possible to create new product entity fields from your custom bundle, but we will show how you can add some data that is stored elsewhere (it may as well be calculated on the fly or submitted to an external web-service for storage).
 
-.. note:: Please check the `How to Create Entities <entities/creating-entities>`_ article in the OroCookbook to learn more.
+.. note:: Please check the :ref:`How to Create Entities <create-entities>` article to learn more.
 
 Let’s also make our entity compliant with the |ProductHolderInterface|, so it will be possible to reuse it in other places (e.g. reports). Other than the reference to the product, our entity will have only one text field to store our data. You can add multiple fields and use other data types according to your requirements.
 
@@ -118,7 +118,7 @@ UI Data Targets and Listener
 
 Once the entity, the form type, and the form type extension are created, we can start customizing the User Interface.
 
-.. note:: Additional information about the UI customization is available `in the Layout seciton <../theme/layout>`_.
+.. note:: Additional information about the UI customization is available in the :ref:`Layout <dev-doc-frontend-layouts-layout>` section.
 
 In our case, the custom data should be added to the product view page and the product edit/create pages, so we will use the following dataTargets:
 
@@ -164,7 +164,7 @@ In view mode, the block looks as follows:
 
 .. image:: /img/backend/entities/crud_result_view.png
 
-A fully working example, organized into a custom bundle is available `here <https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/OroB2BBlogPostExampleBundle.zip>`_.
+A fully working example, organized into a custom bundle is available in the |OroB2BBlogPostExampleBundle|.
 
 In order to add this bundle to your application:
 

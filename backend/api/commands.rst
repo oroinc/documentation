@@ -16,6 +16,8 @@ Usually you need to run this command when you add a new entity to ``Resources/co
 
     php bin/console oro:api:cache:clear
 
+.. _oroapidoccacheclear:
+
 oro:api:doc:cache:clear
 -----------------------
 
@@ -79,6 +81,8 @@ To get all entities that are not accessible via the API, see the ``--not-accessi
 .. code:: bash
 
     php bin/console oro:api:dump --not-accessible
+
+.. _oroapidebug:
 
 oro:api:debug
 -------------

@@ -174,7 +174,7 @@ passed to the translator.
 **type**: ``string`` **default**: normal
 
 The entity behavior for inheritance. For possible values and what they mean, have a look at the
-constants of the :class:`Oro\\Bundle\\SearchBundle\\Query\\Mode` class.
+constants of the |Mode1| class.
 
 .. _reference-format-search-route-name:
 
@@ -214,3 +214,8 @@ one of the configured :ref:`fields <reference-format-search-fields>`.
 Note: Usage of this field is deprecated since 2.0. Register an EntityNameProvider instead.
 The list of fields to build the title for the result set. The value used here denote to the
 :ref:`configured fields <reference-format-search-fields>`.
+
+
+
+.. include:: /include/include-links.rst
+   :start-after: begin

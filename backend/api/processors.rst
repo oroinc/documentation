@@ -5,9 +5,11 @@ Processors
 
 A processor is the main element that implements the business logic of the API. Each processor must implement |ProcessorInterface|  and be registered in the dependency injection container using the ``oro.api.processor`` tag.
 
-Please see the :ref:`actions <web-api--actions>` and :ref:`context <web-api--actions-context-class>` sections for more details about where and how processors are used.
+Please see the :ref:`actions <web-api--actions>` and :ref:`context <context-class>` sections for more details about where and how processors are used.
 
-Execute the `oro:api:debug <./commands#oroapidebug>`__ command to display all actions and processors.
+Please see the :ref:`actions <web-api--actions>` section for more details about where and how processors are used.
+
+Also you can use the :ref:`oro:api:debug <oroapidebug>` command to see all actions and processors.
 
 Creating a Processor
 --------------------
@@ -228,7 +230,8 @@ Please note that to validate input data for :ref:`create <web-api--actions>` and
                                 # add Symfony\Component\Validator\Constraints\Email validation constraint
                                 - Email: ~
 
-If an error occurs in a processor, the main execution flow is interrupted and the control is passed to a special group of processors called ``normalize_result``. This is true for all types of errors except for the errors that occur in processors of the ``normalize_result`` group. if If any of the processors of this group raises an exception this groups, the execution flow is interrupted. However, these processors can safely add new errors into the `Context <./actions#context-class>`__ and the execution of the next processors will not be interrupted. For the implementation details, see |NormalizeResultActionProcessor|.
+If an error occurs in a processor, the main execution flow is interrupted and the control is passed to a special group of processors, that is named **normalize\_result**. This is true for all types of errors. But there are some exceptions for this rule for the errors that occur in any processor of the **normalize\_result** group. The execution flow is interrupted only if any of these processors raises an exception. However, these processors can safely add new errors into the
+:ref:`Context <context-class>` and the execution of the next processors will not be interrupted. For implementation details see |RequestActionProcessor|.
 
 An error is represented by the |Error| class. Additionally, the |ErrorSource| class can be used to specify a source of an error, e.g. the name of a URI parameter or the path to a property in the data. These classes have the following methods:
 

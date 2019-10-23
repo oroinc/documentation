@@ -72,7 +72,7 @@ To configure the authentication via the client credentials grant type and retrie
 
 1. Provide your **Request URL**.
 
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., https://yourapplication/oauth2-token
+   The Request URL consists of your application URL and the /oauth2-token slug, e.g., ``https://yourapplication/oauth2-token``
 
 2. Specify the content-type in headers:
 
@@ -103,7 +103,7 @@ To configure the authentication via the password grant type and retrieve the acc
 
 1. Provide your **Request URL**.
 
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., https://yourapplication/oauth2-token
+   The Request URL consists of your application URL and the /oauth2-token slug, e.g., ``https://yourapplication/oauth2-token``
 
 2. Specify the content-type in headers:
 
@@ -137,7 +137,7 @@ Follow the next steps to get a new token:
 
 1. Provide your **Request URL**.
 
-   The Request URL consists of your application URL and the /oauth2-token slug, e.g., https://yourapplication/oauth2-token
+   The Request URL consists of your application URL and the /oauth2-token slug, e.g., `https://yourapplication/oauth2-token``
 
 2. Specify the content-type in headers:
 
