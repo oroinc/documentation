@@ -53,7 +53,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="" href="marketing/tracking-websites/">Tracking Websites</a></li>
           <li><a class="tag-important" href="sales/leads/">Leads</a></li>
           <li><a class="tag-very-important" href="sales/opportunities/">Opportunities</a></li>
-          <li><a class="" href="system/integrations/zendesk-integration">Zendesk Integration</a></li>
+          <li><a class="" href="system/integrations/zendesk-integration/">Zendesk Integration</a></li>
           <li><a class="tag-important" href="system/integrations/dotmailer/">Dotmailer Integration</a></li>
           <li><a class="" href="system/integrations/outlook/">Outlook Integration</a></li>
        </ul>
@@ -80,7 +80,7 @@ Back-office places a great emphasis on an intuitive UI to help organize data, st
           <li><a class="tag" href="system/system-information/">System Information</a></li>
           <li><a class="tag-important" href="reports-segments/">Reports and Segments</a></li>
           <li><a class="tag-very-important" href="system/user-management/">User Management</a></li>
-          <li><a class="" href="system/integrations/ldap-integration">LDAP integration</a></li>
+          <li><a class="" href="system/integrations/ldap-integration/">LDAP integration</a></li>
           <li><a class="tag-important" href="system/workflows/">Workflows</a></li>
           <li><a class="" href="system/system-calendars/">Calendars</a></li>
        </ul>

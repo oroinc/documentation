@@ -13,12 +13,12 @@ Backend Developer Guide is an essential resource for developers that provides co
           <div style="overflow: hidden;width: 70%;height:100%;text-align: left">
           <p>Configure dev and prod environments for Oro applications, install and upgrade them to a new version.</p>
                <ul class="guideline__list">
-                   <li><a class="reference internal" href="setup/system-requirements">System Requirements</a></li>
+                   <li><a class="reference internal" href="setup/system-requirements/">System Requirements</a></li>
                    <li><a class="reference internal" href="setup/dev-environment/">Dev Environment</a></li>
                    <li><a class="reference internal" href="setup/demo-environment/">Demo Environment</a></li>
                    <li><a class="reference internal" href="setup/installation/">Installation</a></li>
-                   <li><a class="reference internal" href="setup/upgrade-to-new-version">Upgrade</a></li>
-                   <li><a class="reference internal" href="setup/reinstall">Reinstall</a></li>
+                   <li><a class="reference internal" href="setup/upgrade-to-new-version/">Upgrade</a></li>
+                   <li><a class="reference internal" href="setup/reinstall/">Reinstall</a></li>
                 </ul>
           </div>
       </div>
@@ -30,12 +30,12 @@ Backend Developer Guide is an essential resource for developers that provides co
           <div style="overflow: hidden;width: 70%;height:100%;text-align: left">
                <p>Create, configure and manage entities, create CRUD for particular entities, and protect them using access level permissions.</p>
                <ul class="guideline__list">
-                   <li><a class="reference internal" href="entities/create-entities">Create Entities</a></li>
+                   <li><a class="reference internal" href="entities/create-entities/">Create Entities</a></li>
                    <li><a class="reference internal" href="entities/extend-entities/">Extend Entities</a></li>
                    <li><a class="reference internal" href="entities/config-entities/">Configure Entities</a></li>
-                   <li><a class="reference internal" href="entities/crud">CRUD Operations</a></li>
+                   <li><a class="reference internal" href="entities/crud/">CRUD Operations</a></li>
                    <li><a class="reference internal" href="entities/data-grids/">Data Grids</a></li>
-                   <li><a class="reference internal" href="entities/acls">Access Permissions</a></li>
+                   <li><a class="reference internal" href="entities/acls/">Access Permissions</a></li>
                </ul>
           </div>
       </div>
@@ -47,12 +47,12 @@ Backend Developer Guide is an essential resource for developers that provides co
                   <div style="overflow: hidden;width: 70%;height:100%;text-align: left">
                        <p>Configure entity-related reports, integration of business processes, workflows, data audit, search index.</p>
                        <ul class="guideline__list">
-                           <li><a class="reference internal" href="entities-data-management/data-fixtures">Fixtures</a></li>
-                           <li><a class="reference internal" href="entities-data-management/reports-and-segments">Reports & Segments</a></li>
+                           <li><a class="reference internal" href="entities-data-management/data-fixtures/">Fixtures</a></li>
+                           <li><a class="reference internal" href="entities-data-management/reports-and-segments/">Reports & Segments</a></li>
                            <li><a class="reference internal" href="entities-data-management/search/">Search Index</a></li>
-                           <li><a class="reference internal" href="entities-data-management/workflows">Workflows</a></li>
-                           <li><a class="reference internal" href="entities-data-management/operations">Operations (Actions)</a></li>
-                           <li><a class="reference internal" href="entities-data-management/data-audit">Data Audit</a></li>
+                           <li><a class="reference internal" href="entities-data-management/workflows/">Workflows</a></li>
+                           <li><a class="reference internal" href="entities-data-management/operations/">Operations (Actions)</a></li>
+                           <li><a class="reference internal" href="entities-data-management/data-audit/">Data Audit</a></li>
                        </ul>
                   </div>
               </div>
@@ -70,7 +70,7 @@ Backend Developer Guide is an essential resource for developers that provides co
       <li><a class="" href="navigation/">Navigation</a></li>
       <li><a class="" href="emails/">Emails</a></li>
       <li><a class="tag-very-important" href="mq/">Message Queue</a></li>
-      <li><a class="tag-important" href="cron">Cron</a></li>
+      <li><a class="tag-important" href="cron/">Cron</a></li>
       <li><a class="" href="websockets/">WebSocket Notifications</a></li>
       <li><a class="" href="scopes/">Scopes</a></li>
       <li><a class="" href="feature-toggle/">Feature Toggle</a></li>
@@ -80,7 +80,7 @@ Backend Developer Guide is an essential resource for developers that provides co
       <li><a class="" href="automated-tests/">Automated Tests</a></li>
       <li><a class="" href="extend-crm/">Extending OroCRM</a></li>
       <li><a class="tag-important" href="extend-commerce/">Extending OroCommerce</a></li>
-      <li><a class="" href="third-party-extensions/index#dev-akeneo-integration">Akeneo Integration</a></li>
+      <li><a class="" href="third-party-extensions/#dev-akeneo-integration">Akeneo Integration</a></li>
       <li><a class="tag-very-important" href="api/">Web Services API</a></li>
    </ul>
 
