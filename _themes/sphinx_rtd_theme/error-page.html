@@ -16,8 +16,14 @@
   <meta charset="utf-8">
   {{ metatags }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="The page you are looking for does not exist{{ titlesuffix }}"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ pathto(link_prefix ~ '_static/images/Oro-OLogo.png', 1) }}" />
+  {% if theme_canonical_url %}
+    <meta property="og:url" content="{{ theme_canonical_url }}{{ pathto('/' + pagename) }}"/>
+  {% endif %}
   {% block htmltitle %}
-  <title>Welcome to Oro Documentation</title>
+  <title>The page you are looking for does not exist{{ titlesuffix }}</title>
   {% endblock %}
 
   {# FAVICON #}
