@@ -28,6 +28,11 @@ class CopyrightContentWidgetTypeTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals('acme.copyright.content_widget.copyright.label', $this->contentWidgetType->getLabel());
     }
 
+    public function testIsInline(): void
+    {
+        $this->assertFalse($this->contentWidgetType->isInline());
+    }
+
     public function testGetWidgetData(): void
     {
         $this->assertEquals([], $this->contentWidgetType->getWidgetData(new ContentWidget()));
