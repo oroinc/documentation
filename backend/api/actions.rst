@@ -988,9 +988,11 @@ General methods:
 -  **getFilterValues()** - Retrieves a collection of the |FilterValue| objects that contains all incoming filters.
 -  **setFilterValues(accessor)** - Sets an |object| to use for accessing the incoming filters.
 -  **isMasterRequest()** - Indicates whether the current action processes a master API request or it is executed as part of another action.
--  **setMasterRequest($master)** - Sets a flag indicates the current action processes a master API request or it is executed as part of another action.
+-  **setMasterRequest(master)** - Sets a flag indicates the current action processes a master API request or it is executed as part of another action.
 -  **isCorsRequest()** - Indicates whether the current request is |CORS| request.
-- **setCorsRequest($cors)** - Sets a flag indicates whether the current request is |CORS| request.
+-  **setCorsRequest(cors)** - Sets a flag indicates whether the current request is |CORS| request.
+-  **isHateoasEnabled()** - Indicates whether |HATEOAS| is enabled.
+-  **setHateoas(flag)** - Sets a flag indicates whether |HATEOAS| is enabled.
 -  **hasQuery()** - Checks whether a query used to get the result data exists.
 -  **getQuery()** - Retrieves a query used to get result data.
 -  **setQuery(query)** - Sets a query used to get result data.
@@ -1007,7 +1009,15 @@ General methods:
 -  **clearProcessed(operationName)** - Marks a work as not yet done.
 -  **isProcessed(operationName)** - Checks whether work is already done.
 -  **getSharedData()** - Retrieves an object that is used to share data between a primary action and actions that are executed as part of this action. Also, this object can be used to share data between different kind of child actions.
-- **setSharedData(parameterBag)** - Sets an object that is used to share data.
+-  **setSharedData(parameterBag)** - Sets an object that is used to share data.
+-  **getNormalizationContext()** - Gets a context for response data normalization.
+-  **getInfoRecords()** - Gets a list of records contains an additional information about collections, e.g. "has_more" flag in such record indicates whether a collection has more records than it was requested.
+-  **setInfoRecords(infoRecords)** - Sets a list of records contains an additional information about collections, e.g. "has_more" flag in such record indicates whether a collection has more records than it was requested.
+-  **addInfoRecord(key, value)** - Adds a record that contains an additional information about collections.
+-  **addAssociationInfoRecords(propertyPath, infoRecords)** - Adds records that contain an additional information about a collection valued association.
+-  **getNotResolvedIdentifiers()** - Gets all not resolved identifiers.
+-  **addNotResolvedIdentifier(path, identifier)** - Adds an identifier that cannot be resolved.
+-  **removeNotResolvedIdentifier(path)** - Removes an identifier that cannot be resolved.
 
 Entity configuration related methods:
 
