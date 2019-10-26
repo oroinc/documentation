@@ -1,5 +1,6 @@
 .. _admin-package-manager:
 .. _dev-cookbook-framework-how-to-manage-extensions:
+.. _cookbook-extensions-composer:
 
 .. index::
     single: Extension; Install extension
@@ -9,47 +10,12 @@
 Installing an Extension
 =======================
 
-*Used application: OroPlatform 1.**
-
 .. caution::
 
     Before installing an extension it is recommended to back up the database and the application
     source code. There is no simple way to uninstall an extension.
 
-There are two ways to install extensions from the command-line:
-
-#. :ref:`Use the package manager <cookbook-extensions-package-manager>` if the extension is
-   available via the |OroCRM Marketplace|.
-#. Alternatively, :ref:`you can use Composer <cookbook-extensions-composer>` to download an
-   extension.
-
-.. _cookbook-extensions-package-manager:
-
-Using the Package Manager
--------------------------
-
-First, clear the cache to make sure that the package reads the list of packages from the server:
-
-.. code-block:: bash
-
-    $ php bin/console cache:clear --env=prod
-
-Then use the ``oro:package:install`` command to install the extension:
-
-.. code-block:: bash
-
-    $ php bin/console oro:package:install <extension name> <extension-version> --env=prod
-
-Finish the installation by clearing the cache again:
-
-.. code-block:: bash
-
-    $ php bin/console cache:clear --env=prod
-
-.. _cookbook-extensions-composer:
-
-Using Composer
---------------
+You can install extensions from the command-line.
 
 Start with upgrading Composer to the latest version. This may be needed in case the extension to be
 installed uses some bleeding edge feature in its ``composer.json`` file:
@@ -84,26 +50,6 @@ Finally, make sure to properly clean the cache:
 .. code-block:: bash
 
     $ php bin/console cache:clear --env=prod
-
-List of Extensions
-------------------
-
-There are two commands that can help you get an overview of the extension.
-
-The ``oro:package:available`` command can be used to retrieve a list of all available extensions:
-
-.. code-block:: bash
-
-    $ php bin/console oro:package:available --env=prod
-
-If you are only interested in the currently installed extensions, run the ``oro:package:installed``
-command:
-
-.. code-block:: bash
-
-    $ php bin/console oro:package:installed --env=prod
-
-
 
 
 .. include:: /include/include-links.rst
