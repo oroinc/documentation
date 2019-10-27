@@ -1531,7 +1531,7 @@ Links
 
 .. |Action Component| raw:: html
 
-   <a href="https://github.com/laboro/platform/blob/master/src/Oro/Component/Action/Resources/doc/actions.md" target="_blank">Action Component</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Component/Action/Resources/doc/actions.md" target="_blank">Action Component</a>
 
 .. |ActionBundle Glossary and Console Commands| raw:: html
 
@@ -1869,7 +1869,7 @@ Links
 
 .. |products-grid| raw:: html
 
-   <a href="https://github.com/laboro/dev/blob/56a4044c13cde93a31dfaac373de428962a13f56/package/commerce/src/OroB2B/Bundle/ProductBundle/Resources/config/datagrid.yml#L101" target="_blank">products-grid</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/config/oro/datagrids.yml#L305" target="_blank">products-grid</a>
 
 .. |columns and properties section of the DataGridBundle documentation| raw:: html
 
@@ -2246,11 +2246,11 @@ Links
 
 .. |ConfigExtraSectionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/Extra/ConfigExtraSectionInterface.php" target="_blank">ConfigExtraSectionInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigExtraSectionInterface.php" target="_blank">ConfigExtraSectionInterface</a>
 
 .. |ConfigExtraInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/Extra/ConfigExtraInterface.php" target="_blank">ConfigExtraInterface</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">ConfigExtraInterface</a>
 
 .. |configuration of existing processors| raw:: html
 
@@ -3371,11 +3371,11 @@ Links
 
 .. |ConfigExtensionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
 
 .. |AbstractConfigExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/AbstractConfigExtension.php" target="_blank">AbstractConfigExtension</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/AbstractConfigExtension.php" target="_blank">AbstractConfigExtension</a>
 
 .. |ConfigurationSectionInterface| raw:: html
 
@@ -3383,7 +3383,7 @@ Links
 
 .. |ConfigLoaderInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderInterface.php" target="_blank">ConfigLoaderInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderInterface.php" target="_blank">ConfigLoaderInterface</a>
 
 .. |OroInc| raw:: html
 
@@ -3467,11 +3467,11 @@ Links
 
 .. |.jshintrc| raw:: html
 
-   <a href="https://github.com/orocrm/platform/blob/master/build/.jshintrc" target="_blank">.jshintrc</a>
+   <a href="https://github.com/oroinc/platform/blob/2.6/build/.jshintrc" target="_blank">.jshintrc</a>
 
 .. |.jscsrc| raw:: html
 
-   <a href="https://github.com/orocrm/platform/blob/master/build/.jscsrc" target="_blank">.jscsrc</a>
+   <a href="https://github.com/oroinc/platform/blob/2.6/build/.jscsrc" target="_blank">.jscsrc</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
@@ -3527,7 +3527,7 @@ Links
 
 .. |in the ruleset.xml file| raw:: html
 
-   <a href="https://github.com/orocrm/webinar-application/blob/master/ruleset.xml" target="_blank">in the ruleset.xml file</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/build/Oro/phpcs.xml" target="_blank">in the ruleset.xml file</a>
 
 .. |line break separator| raw:: html
 
@@ -3647,7 +3647,7 @@ Links
 
 .. |Oro| raw:: html
 
-   <a href="http://github.com/orocommerce/application" target="_blank">Oro</a>
+   <a href="https://github.com/oroinc/orocommerce-application/tree/3.1" target="_blank">Oro</a>
 
 .. |in Symfony Console Command documentation| raw:: html
 
@@ -3655,7 +3655,7 @@ Links
 
 .. |How to Do Application Logging Right| raw:: html
 
-   <a href="http://arctecgroup.net/pdf/howtoapplogging.pdf" target="_blank">How to Do Application Logging Right</a>
+   <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.173.2198&rep=rep1&type=pdf" target="_blank">How to Do Application Logging Right</a>
 
 .. |ramfs| raw:: html
 
@@ -3731,7 +3731,7 @@ Links
 
 .. |contact| raw:: html
 
-   <a href="https://crowdin.com/mail/compose/oro" target="_blank">contact</a>
+   <a href="https://crowdin.com/messages/create/12416174/21370" target="_blank">contact</a>
 
 .. |OroPlatform community forum| raw:: html
 
@@ -3807,7 +3807,7 @@ Links
 
 .. |system_configuration.yml file| raw:: html
 
-   <a href="https://github.com/orocrm/platform/blob/master/src/Oro/Bundle/ActivityListBundle/Resources/config/system_configuration.yml" target="_blank">system_configuration.yml file</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ActivityListBundle/Resources/config/oro/system_configuration.yml" target="_blank">system_configuration.yml file</a>
 
 .. |ActivityListBundle| raw:: html
 
@@ -3831,7 +3831,7 @@ Links
 
 .. |ReportBundle| raw:: html
 
-   <a href="https://github.com/orocrm/crm/blob/master/src/OroCRM/Bundle/ReportBundle/Resources/config/oro/datagrids.yml" target="_blank">ReportBundle</a>
+   <a href="https://github.com/oroinc/crm/blob/3.1/src/Oro/Bundle/ReportCRMBundle/Resources/config/oro/datagrids.yml" target="_blank">ReportBundle</a>
 
 .. |DataGridBundle documentation| raw:: html
 
@@ -3927,7 +3927,7 @@ Links
 
 .. |API documentation views| raw:: html
 
-   <a href="https://github.com/nelmio/NelmioApiDocBundle/blob/master/Resources/doc/multiple-api-doc.rst" target="_blank">API documentation views</a>
+   <a href="https://github.com/nelmio/NelmioApiDocBundle/blob/2.x/Resources/doc/multiple-api-doc.rst" target="_blank">API documentation views</a>
 
 .. |menu alias| raw:: html
 
@@ -4219,7 +4219,7 @@ Links
 
 .. |processors.create.yml| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.create.yml" target="_blank">rocessors.create.yml</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Resources/config/processors.create.yml" target="_blank">processors.create.yml</a>
 
 .. |Updating Resources| raw:: html
 
@@ -4259,7 +4259,7 @@ Links
 
 .. |RestApiSubresourceController| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php" target="_blank">RestApiSubresourceController</a>
+   <a href="https://github.com/oroinc/platform/blob/2.6/src/Oro/Bundle/ApiBundle/Controller/RestApiSubresourceController.php" target="_blank">RestApiSubresourceController</a>
 
 .. |Fetching Relationships| raw:: html
 
@@ -4279,11 +4279,11 @@ Links
 
 .. |RestApiRelationshipController| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">RestApiRelationshipController</a>
+   <a href="https://github.com/oroinc/platform/blob/2.6/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">RestApiRelationshipController</a>
 
 .. |Updating Relationships| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">Updating Relationships</a>
+   <a href="https://github.com/oroinc/platform/blob/2.6/src/Oro/Bundle/ApiBundle/Controller/RestApiRelationshipController.php" target="_blank">Updating Relationships</a>
 
 .. |UpdateRelationshipContext| raw:: html
 
@@ -4343,11 +4343,11 @@ Links
 
 .. |ConfigContext| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigContext.php" target="_blank">ConfigContext</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigContext.php" target="_blank">ConfigContext</a>
 
 .. |ConfigProcessor| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigProcessor.php" target="_blank">ConfigProcessor</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Processor/Config/ConfigProcessor.php" target="_blank">ConfigProcessor</a>
 
 .. |processors.get_config.yml| raw:: html
 
@@ -4359,15 +4359,15 @@ Links
 
 .. |RelationConfigContext| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/GetRelationConfig/RelationConfigContext.php" target="_blank">RelationConfigContext</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Processor/Config/GetRelationConfig/RelationConfigContext.php" target="_blank">RelationConfigContext</a>
 
 .. |RelationConfigProcessor| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/RelationConfigProcessor.php" target="_blank">RelationConfigProcessor</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Processor/Config/RelationConfigProcessor.php" target="_blank">RelationConfigProcessor</a>
 
 .. |RelationConfigProvider| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/RelationConfigProvider.php" target="_blank">RelationConfigProvider</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Provider/RelationConfigProvider.php" target="_blank">RelationConfigProvider</a>
 
 .. |MetadataContext| raw:: html
 
@@ -4467,11 +4467,11 @@ Links
 
 .. |requests for configuration data| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">requests for configuration data</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">requests for configuration data</a>
 
 .. |configuration sections| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtraSectionInterface.php" target="_blank">configuration sections</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigExtraSectionInterface.php" target="_blank">configuration sections</a>
 
 .. |configuration of an entity| raw:: html
 
@@ -4479,15 +4479,15 @@ Links
 
 .. |configuration of filters| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/FiltersConfig.php" target="_blank">configuration of filters</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/FiltersConfig.php" target="_blank">configuration of filters</a>
 
 .. |configuration of sorters| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/SortersConfig.php" target="_blank">configuration of sorters</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Config/SortersConfig.php" target="_blank">configuration of sorters</a>
 
 .. |requests for additional metadata info| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Metadata/MetadataExtraInterface.php" target="_blank">requests for additional metadata info</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Metadata/MetadataExtraInterface.php" target="_blank">requests for additional metadata info</a>
 
 .. |metadata| raw:: html
 
@@ -4647,35 +4647,35 @@ Links
 
 .. |The ConfigExtraInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">The ConfigExtraInterface</a>
+       <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigExtraInterface.php" target="_blank">The ConfigExtraInterface</a>
 
-.. |configuration providers| raw:: html
+.. |configuration provider| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Provider/AbstractConfigProvider.php" target="_blank">configuration providers</a>
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/ApiBundle/Provider/AbstractConfigProvider.php" target="_blank">configuration providers</a>
 
 .. |MaxRelatedEntitiesConfigExtra| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/MaxRelatedEntitiesConfigExtra.php" target="_blank">MaxRelatedEntitiesConfigExtra</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/MaxRelatedEntitiesConfigExtra.php" target="_blank">MaxRelatedEntitiesConfigExtra</a>
 
 .. |SetMaxRelatedEntities| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/GetConfig/SetMaxRelatedEntities.php" target="_blank">SetMaxRelatedEntities</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Processor/Config/GetConfig/SetMaxRelatedEntities.php" target="_blank">SetMaxRelatedEntities</a>
 
 .. |DescriptionsConfigExtra| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/DescriptionsConfigExtra.php" target="_blank">DescriptionsConfigExtra</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/DescriptionsConfigExtra.php" target="_blank">DescriptionsConfigExtra</a>
 
 .. |ConfigLoaderFactory| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderFactory.php" target="_blank">ConfigLoaderFactory</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/ConfigLoaderFactory.php" target="_blank">ConfigLoaderFactory</a>
 
 .. |FiltersConfigExtra| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/FiltersConfigExtra.php" target="_blank">FiltersConfigExtra</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/FiltersConfigExtra.php" target="_blank">FiltersConfigExtra</a>
 
 .. |SortersConfigExtra| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/SortersConfigExtra.php" target="_blank">SortersConfigExtra</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Config/SortersConfigExtra.php" target="_blank">SortersConfigExtra</a>
 
 .. |RestDocHandler| raw:: html
 
@@ -4683,7 +4683,7 @@ Links
 
 .. |CompleteDescriptions| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Config/Shared/CompleteDescriptions.php" target="_blank">CompleteDescriptions</a>
+   <a href="https://github.com/oroinc/platform/tree/3.1/src/Oro/Bundle/ApiBundle/Processor/Config/Shared/CompleteDescriptions.php" target="_blank">CompleteDescriptions</a>
 
 .. |default RabbitMQ Access Control settings| raw:: html
 
@@ -4983,7 +4983,7 @@ Links
 
 .. |Doctrine query hints| raw:: html
 
-   <a href="http://doctrine-orm.readthedocs.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html#query-hints" target="_blank">Doctrine query hints</a>
+   <a href="https://www.doctrine-project.org/projects/doctrine-orm/en/latest/reference/dql-doctrine-query-language.html#query-hints" target="_blank">Doctrine query hints</a>
 
 .. |orosoap.handler.delete| raw:: html
 
@@ -5035,15 +5035,15 @@ Links
 
 .. |ProcessorSharedInitializeApiFormExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/InitializeApiFormExtension.php" target="_blank">Processor\\Shared\\InitializeApiFormExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/InitializeApiFormExtension.php" target="_blank">Processor\Shared\InitializeApiFormExtension</a>
 
 .. |ProcessorSharedRestoreDefaultFormExtension| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/RestoreDefaultFormExtension.php" target="_blank">Processor\\Shared\\RestoreDefaultFormExtension</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/RestoreDefaultFormExtension.php" target="_blank">Processor\Shared\RestoreDefaultFormExtension</a>
 
 .. |ProcessorSharedBuildFormBuilder| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php" target="_blank">Processor\\Shared\\BuildFormBuilder</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Processor/Shared/BuildFormBuilder.php" target="_blank">Processor\Shared\BuildFormBuilder</a>
 
 .. |DeleteHandler| raw:: html
 
@@ -5063,7 +5063,7 @@ Links
 
 .. |the Symfony documentation| raw:: html
 
-   <a href="https://symfony.com/doc/current/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
+   <a href="https://symfony.com/doc/2.x/bundles/NelmioApiDocBundle/the-apidoc-annotation.html" target="_blank">the Symfony documentation</a>
 
 .. |AbstractFormatter class in NelmioApiDocBundle| raw:: html
 
@@ -5175,7 +5175,7 @@ Links
 
 .. |https://packagist.oroinc.com/explore/| raw:: html
 
-   <a href="https://packagist.oroinc.com/explore/" target="_blank">https://packagist.oroinc.com/explore/</a>
+   <a href="https://packagist.oroinc.com/" target="_blank">https://packagist.oroinc.com/explore/</a>
 
 .. |ft_min_word_len| raw:: html
 
@@ -5428,7 +5428,7 @@ Links
 
 .. |configuration| raw:: html
 
-   <a href="https://github.com/orocommerce/orocommerce/blob/master/src/Oro/Bundle/CMSBundle/Resources/views/layouts/default/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/CMSBundle/Resources/views/layouts/blank/oro_frontend_root/home_page_slider.yml" target="_blank">configuration</a>
 
 .. |how to create a web catalog in OroCommerce| raw:: html
 
@@ -5652,7 +5652,7 @@ Links
 
 .. |TrackingBundle| raw:: html
 
-   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
+   <a href="https://github.com/oroinc/OroCRMMarketingBundle/tree/3.1/src/Oro/Bundle/TrackingBundle" target="_blank">TrackingBundle</a>
 
 .. |IntegrationBundle| raw:: html
 
@@ -5800,7 +5800,7 @@ Links
 
 .. |oro_format_short_product_unit_value| raw:: html
 
-   <a href="https://github.com/oroinc/orocommerce/blob/master/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-value-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
+   <a href="https://github.com/oroinc/orocommerce/blob/3.1/src/Oro/Bundle/ProductBundle/Resources/doc/product-unit-formatting.md#oro_format_short_product_unit_value" target="_blank">oro_format_short_product_unit_value</a>
 
 .. |join| raw:: html
 
@@ -5853,10 +5853,6 @@ Links
 .. |how to create payment rules| raw:: html
 
    <a href="https://www.oroinc.com/orocommerce/media-library/how-to-create-payment-rules" target="_blank">how to create payment rules</a>
-
-.. |http://localhost/<yoursitename>/index_dev.php| raw:: html
-
-   <a href="http://localhost/<yoursitename>/index_dev.php" target="_blank">http://localhost/<yoursitename>/index_dev.php</a>
 
 .. |Workflow Documentation| raw:: html
 
@@ -5924,7 +5920,7 @@ Links
 
 .. |Authorize.Net Support| raw:: html
 
-   <a href="https://support.authorize.net/authkb/index?page=content&id=A414" target="_blank">Authorize.Net Support</a>
+   <a href="https://support.authorize.net/" target="_blank">Authorize.Net Support</a>
 
 .. |https://account.authorize.net/| raw:: html
 
@@ -5984,7 +5980,7 @@ Links
 
 .. |sign-on| raw:: html
 
-   <a href="https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer" target="_blank">sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">sign-on</a>
 
 .. |https://r1-app.dotmailer.com/| raw:: html
 
@@ -5992,7 +5988,7 @@ Links
 
 .. |Single sign-on| raw:: html
 
-   <a href="https://developer.dotmailer.com/docs/using-oauth-20-with-dotmailer" target="_blank">Single sign-on</a>
+   <a href="https://developer.dotdigital.com/docs/using-oauth-20-with-engagement-cloud" target="_blank">Single sign-on</a>
 
 .. |here4| raw:: html
 
@@ -6051,3 +6047,34 @@ Links
    <a href="https://doc.oroinc.com/1.6/user/" target="_blank">OroCRM 2.6</a>
    
 
+.. |OroB2BBlogPostExampleBundle| raw:: html
+
+   <a href="https://github.com/oroinc/orocommerce-sample-extensions/releases/download/0.1/OroB2BBlogPostExampleBundle.zip" target="_blank">OroB2BBlogPostExampleBundle</a>
+
+.. |SymfonyComponentSecurityCoreAuthorizationAuthorizationCheckerInterface| raw:: html
+
+   <a href="https://github.com/symfony/symfony/blob/3.1/src/Symfony/Component/Security/Core/Authorization/AuthorizationCheckerInterface.php" target="_blank">Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface</a>
+
+.. |EmailModelBuilder| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/EmailBundle/Builder/EmailModelBuilder.php" target="_blank">EmailModelBuilder</a>
+
+.. |createEmailModel| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/EmailBundle/Builder/EmailModelBuilder.php#L102" target="_blank">createEmailModel</a>
+
+.. |createReplyEmailModel| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/EmailBundle/Builder/EmailModelBuilder.php#L136" target="_blank">createReplyEmailModel</a>
+
+.. |createReplyAllEmailModel| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/EmailBundle/Builder/EmailModelBuilder.php#L169" target="_blank">createReplyAllEmailModel</a>
+
+.. |createForwardEmailModel| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/EmailBundle/Builder/EmailModelBuilder.php#L215" target="_blank">createForwardEmailModel</a>
+
+.. |Mode1| raw:: html
+
+   <a href="https://github.com/oroinc/platform/blob/3.1/src/Oro/Bundle/SearchBundle/Query/Mode.php" target="_blank">Mode</a>

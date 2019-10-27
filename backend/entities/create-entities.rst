@@ -1,3 +1,5 @@
+.. _create-entities:
+
 Create Entities
 ===============
 

@@ -55,7 +55,7 @@ Related Documentation
   * :ref:`Public actions <web-api--actions-public-actions>`
   * :ref:`Auxiliary actions <web-api--actions-auxiliary-actions>`
 
-  * :ref:`Context Class <web-api--actions-context-class>`
+  * :ref:`Context Class <context-class>`
   * :ref:`SubresourceContext Class <web-api--actions-subresourcecontext>`
   * :ref:`Creating a New Action <web-api--actions-create>`
 

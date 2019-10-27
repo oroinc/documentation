@@ -1,3 +1,5 @@
+.. _customizing-data-grid-in-orocommerce:
+
 Customize Data Grid
 ===================
 

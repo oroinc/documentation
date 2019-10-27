@@ -205,7 +205,7 @@ Performing Access Checks
 
 Once you have configured the ACLs you can protect all parts of your application. Anywhere in your
 PHP code you can use the ``isGranted()`` method of the ``security.authorization_checker`` service
-(which is an instance of the :class:`Symfony\\Component\\Security\\Core\\Authorization\\AuthorizationCheckerInterface` class):
+(which is an instance of the |SymfonyComponentSecurityCoreAuthorizationAuthorizationCheckerInterface| class):
 
 .. code-block:: php
     :linenos:
@@ -423,3 +423,7 @@ As result, the query will be modified and the result data set will contain only 
 
 By default, VIEW permission used as the second parameter. If you want to check another permission, you can
 set it as the second parameter of ``apply`` method.
+
+
+.. include:: /include/include-links.rst
+   :start-after: begin

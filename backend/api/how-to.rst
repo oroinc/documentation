@@ -229,7 +229,7 @@ Additionally, you can create a custom delete handler. The handler class must be 
 Change the Maximum Number of Entities that Can Be Deleted by One Request
 ------------------------------------------------------------------------
 
-By default, the *delete\_list* action can delete not more than 100 entities. This limit is set by the |SetDeleteLimit| processor.
+By default, the ``delete\_list`` action can delete not more than 100 entities. This limit is set by the |SetDeleteLimit| processor.
 
 If your want to use another limit, set it using the ``max_results`` option in ``Resources/config/oro/api.yml``:
 
@@ -538,6 +538,8 @@ REST API resources.
 For example, imagine that URI of the REST API resource for the registered user's profile is ``/api/userprofile``. If you take a look at |routing.yml|, you will see that this URI is matched by the ``/api/{entity}`` pattern, but the action that handles this
 pattern works with a list of entities, not with a single entity. The challenge is to map ``/api/userprofile`` to the ``OroApiBundle:RestApi:item`` action that works with a single entity and to remove handling of
 ``/api/userprofile/{id}``. This can be achieved using own route definition with the ``override_path`` option.
+
+Use :ref:`oro:api:doc:cache:clear <oroapidoccacheclear>` command to apply changes in ``ApiDoc`` annotation to :ref:`API Sandbox <api-sandbox>`.
 
 Here is an example of the ``Resources/config/oro/routing.yml`` configuration file:
 

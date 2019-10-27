@@ -26,7 +26,7 @@ ConfigExtraInterface
 |The ConfigExtraInterface| has the following methods:
 
 - **getName** - Returns a string which is used as unique identifier of configuration data.
-- **getCacheKeyPart** - Returns a string to add to a cache key used by the |configuration providers|. In most cases this method returns the same value as the ``getName`` method.  However, more complicated extras can build the cache key part based on other properties, e.g. |MaxRelatedEntitiesConfigExtra|.
+- **getCacheKeyPart** - Returns a string to add to a cache key used by the |configuration provider|. In most cases this method returns the same value as the ``getName`` method.  However, more complicated extras can build the cache key part based on other properties, e.g. |MaxRelatedEntitiesConfigExtra|.
 - **configureContext** - Adds additional values into the |ConfigContext|. For example, the mentioned above |MaxRelatedEntitiesConfigExtra| adds the maximum number of related entities into the context of the :ref:`get\_config <web-api--actions>` action and this value is used by the |SetMaxRelatedEntities| processor to make necessary modifications to the configuration.
 - **isPropagable** - Indicates whether this config extra should be used when a configuration of related entities is built. For example, |DescriptionsConfigExtra| is propagable and and so we will get human-readable descriptions of the main entity and all the related entities. When this extra is not propagable, only the descriptions of the main entity are returned.
 

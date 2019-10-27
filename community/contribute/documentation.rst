@@ -3,7 +3,7 @@
 Contribute to Documentation
 ===========================
 
-We use |reStructuredText| markup language to write the documentation and |Sphinx| generator to prepare it for the web publication at https://doc.oroinc.com/. You can find more information about the syntax on the Sphinx website by reading |reStructuredText Primer|. The most important information is provided in the sections below.
+We use |reStructuredText| markup language to write the documentation and |Sphinx| generator to prepare it for the web publication at ``https://doc.oroinc.com/``. You can find more information about the syntax on the Sphinx website by reading |reStructuredText Primer|. The most important information is provided in the sections below.
 
 Documentation source files are maintained in the |dedicated github repository|.
 

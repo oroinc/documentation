@@ -135,9 +135,9 @@ Usage
 Access the Oro Application
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To access your Oro application storefront, use the http://<PublicDNS>/ or http://<PublicIP>/ URLs.
+To access your Oro application storefront, use the ``http://<PublicDNS>/`` or ``http://<PublicIP>/`` URLs.
 
-To access the admin interface (back-office), use the URLs http://<PublicDNS>/admin or http://<PublicIP>/admin
+To access the admin interface (back-office), use the URLs ``http://<PublicDNS>/admin`` or ``http://<PublicIP>/admin``
 with username **admin** and AWS **<Instance ID>** as a password.
 
 .. note:: Optionally, you can setup DNS service to put your domain name to the IP address and, therefore, you OroCommerce site will

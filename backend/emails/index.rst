@@ -159,24 +159,24 @@ The ``EmailModelBuilder`` Class
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 An alternative approach to manually creating ``Email`` models is to use the
-:class:`Oro\\Bundle\\EmailBundle\\Builder\\EmailModelBuilder` helper class which offers several
+|EmailModelBuilder| helper class which offers several
 methods to create new emails based on existing data:
 
-:method:`Oro\\Bundle\\EmailBundle\\Builder\\EmailModelBuilder::createEmailModel`
+|createEmailModel|
     Create a new email or add missing data to an existing email.
 
-:method:`Oro\\Bundle\\EmailBundle\\Builder\\EmailModelBuilder::createReplyEmailModel`
+|createReplyEmailModel|
     Create an email that is a response to an existing email.
 
-:method:`Oro\\Bundle\\EmailBundle\\Builder\\EmailModelBuilder::createReplyAllEmailModel`
+|createReplyAllEmailModel|
     Create an email that is a response to all recipients and the sender of an existing email.
 
-:method:`Oro\\Bundle\\EmailBundle\\Builder\\EmailModelBuilder::createForwardEmailModel`
+|createForwardEmailModel|
     Create a new email that forwards an existing email.
 
 After emails have been processed (see below), they will be persisted to the database. You can
 create an email model based on such a persisted entity, by using the useful
-:class:`Oro\\Bundle\\EmailBundle\\Builder\\EmailModelBuilder` helper class:
+|EmailModelBuilder| helper class:
 
 .. code-block:: php
     :linenos:
