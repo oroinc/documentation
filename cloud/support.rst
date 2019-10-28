@@ -152,7 +152,7 @@ The following checklist provides the typical activities that you need to perform
 Contacting Support Before Launch
 --------------------------------
 
-The Oro support team needs to be aware of the expected launch. You must submit a support desk request to our support team **no later than 2 weeks before** the desired launch date to inform us about your intention to go live and provide the following environment sizing metrics:
+The Oro support team needs to be aware of the expected launch to enable monitoring of the relevant environment for Cloud customers and proactively resolve any potential issues occurred during production. Cloud customers must submit a support desk request to our support team **no later than 2 weeks before** the desired launch date to inform us about their intention to go live and provide the following environment sizing metrics:
 
 * Expected average and maximum concurrent or daily users
 
@@ -172,5 +172,7 @@ The Oro support team needs to be aware of the expected launch. You must submit a
   * type
   * frequency
   * data size
+
+The provided data enables the support team to size the client's environment and prepare it to support expected load on the application.
 
 
