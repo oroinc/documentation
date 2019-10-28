@@ -165,7 +165,7 @@ Such configuration file can define two sections:
 .. seealso::
 
     You can find detailed information about the RequireJS configuration
-    :ref:`in the reference section <reference-format-requirejs>`.
+    :ref:`in the reference section <reference-format-jsmodules>`.
 
 |RequireJSBundle| was developed to simplify RequireJS configuration and
 building process. It collects parts of RequireJS configuration

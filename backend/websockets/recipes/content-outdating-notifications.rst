@@ -34,7 +34,7 @@ executed if the content is changed.
     :linenos:
 
     <script type="text/javascript">
-        require(['orosync/js/content-manager'],
+        loadModules(['orosync/js/content-manager'],
         function(contentManager) {
             contentManager.tagContent([someContentTag], callback);
         });
@@ -71,7 +71,7 @@ Therefore, the full example for adding the content to the tracked one in Content
     :linenos:
 
     <script type="text/javascript">
-        require(['orosync/js/content-manager'],
+        loadModules(['orosync/js/content-manager'],
         function(contentManager) {
             contentManager.tagContent(oro_sync_content_tags(entity), callback);
         });

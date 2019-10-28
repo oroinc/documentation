@@ -25,7 +25,6 @@ Technology Stack
 
 Libraries used by OroPlatform on the client side:
 
- * RequireJS
  * jQuery + jQuery-UI
  * Bootstrap
  * Backbone + underscore
@@ -36,7 +35,7 @@ of the client.
 
 Most of these libraries are placed in OroUIBundle (as the bundle which is
 responsible for the user interface). Each of these libraries is defined
-as a module in RequireJS config with short module_id, so there is no need
+as a module in JS config with short module_id, so there is no need
 to use the full path every time (e.g., the module_id is ``jquery`` instead
 of ``oroui/lib/jquery``).
 
@@ -141,12 +140,12 @@ defined in the HTML and dedicated to certain feature implementation.
 JS Templates (Underscore.js)
 ----------------------------
 
-For Front-rendered templates, Oro applications use Underscore.js templates. JS templates belong to specific JS components defined as RequireJS modules and can be overridden the same way as any other RequireJS modules.
+For Front-rendered templates, Oro applications use Underscore.js templates. JS templates belong to specific JS components defined as JS modules and can be overridden the same way as any other JS modules.
 
 Fore more details see:
     - |Underscore.js template function documentation|
     - :ref:`JavaScript Modularity of OroPlatform based applications<dev-doc-frontend-javascript-modularity>`
-    - :ref:`Overriding RequireJS modules<dev-doc-frontend-overriding-requirejs-modules>`
+    - :ref:`Overriding JS modules<dev-doc-frontend-overriding-js-modules>`
 
 
 .. _frontend-architecture-page-layout-view:
@@ -174,12 +173,9 @@ The route module contains the only route mask that always leads to the PageContr
 .. code-block:: javascript
     :linenos:
 
-    define(function () {
-        'use strict';
-        return [
-            ['*pathname', 'page#index']
-        ];
-    });
+    module.exports = [
+        ['*pathname', 'page#index']
+    ];
 
 This way, the disposed and created controllers for each navigation action are
 instances of the same constructor, which exists in different life cycles of the application.
@@ -274,14 +270,13 @@ App Modules are atomic parts of the general application, and they are responsibl
 App modules export nothing. They are the callback functions executed before launching the application.
 They make the whole application modular and the functionality distributed among the bundles ready to work.
 
-App Modules are declared in the ``requirejs.yml`` configuration file in the custom ``appmodules`` section:
+App Modules are declared in the ``jsmodules.yml`` configuration file in the custom ``app-modules`` section:
 
 .. code-block:: yaml
     :linenos:
 
-    config:
-        appmodules:
-            - oroui/js/app/modules/messenger-module
+    app-modules:
+        - oroui/js/app/modules/messenger-module
 
 This way, you can define the code to be executed at the application start for every bundle.
 
@@ -295,21 +290,17 @@ Example
 .. code-block:: javascript
     :linenos:
 
-    define(function(require) {
-        'use strict';
+    import mediator from 'oroui/js/mediator';
+    import messenger from 'oroui/js/messenger';
 
-        var mediator = require('oroui/js/mediator');
-        var messenger = require('oroui/js/messenger');
-
-        /**
-         * Init messenger's handlers
-         */
-        mediator.setHandler('showMessage',
-            messenger.notificationMessage, messenger);
-        mediator.setHandler('showFlashMessage',
-            messenger.notificationFlashMessage, messenger);
-        /* ... */
-    });
+    /**
+     * Init messenger's handlers
+     */
+    mediator.setHandler('showMessage',
+        messenger.notificationMessage, messenger);
+    mediator.setHandler('showFlashMessage',
+        messenger.notificationFlashMessage, messenger);
+    /* ... */
 
 This way, we guarantee that all the necessary handlers are declared before
 they are used. The handlers can be executed by any component or view
@@ -332,7 +323,6 @@ Related Topics
     :maxdepth: 1
 
     javascript-modularity
-    how-to-replace-inline-javascript-with-component
 
 
 

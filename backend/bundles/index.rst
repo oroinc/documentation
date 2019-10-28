@@ -12,7 +12,7 @@ OroPlatform offers a wide range of bundles that contain the core functionality o
 
 .. csv-table::
 
-   "**A**", ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`", ":ref:`IntegrationBundle <bundle-docs-platform-integration-bundle>`", ":ref:`RequireJSBundle <bundle-docs-platform-requirejs-bundle>`"
+   "**A**", ":ref:`DataGridBundle <bundle-docs-platform-datagrid>`", ":ref:`IntegrationBundle <bundle-docs-platform-integration-bundle>`"
    ":ref:`ActionBundle <bundle-docs-platform-action-bundle>`", ":ref:`DistributionBundle <bundle-docs-platform-distribution-bundle>`", "**L**", "**S**"
    ":ref:`ActivityBundle <bundle-docs-platform-activity-bundle>`", "**E**", ":ref:`LayoutBundle <bundle-docs-platform-layout-bundle>`", ":ref:`ScopeBundle <bundle-docs-platform-scope-bundle>`"
    ":ref:`ActivityListBundle <bundle-docs-platform-activity-list-bundle>`", ":ref:`EmailBundle <bundle-docs-platform-email-bundle>`", ":ref:`LocaleBundle <bundle-docs-platform-locale-bundle>`",":ref:`SearchBundle <bundle-docs-platform-search-bundle>`"
@@ -102,7 +102,6 @@ All documentation that relates to OroCommerce-specific bundles is collected belo
    platform/QueryDesignerBundle/index
    platform/RedisConfigBundle/index
    platform/ReportBundle/index
-   platform/RequireJSBundle/index
    platform/ScopeBundle/index
    platform/SearchBundle/index
    platform/SecurityBundle/index

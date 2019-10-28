@@ -13,7 +13,7 @@ YAML
     entity-config
     navigation
     placeholders
-    requirejs
+    jsmodules
     search
     system-configuration
     workflows

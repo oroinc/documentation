@@ -2256,45 +2256,17 @@ Links
 
 .. Frontend
 
-.. |RequireJS| raw:: html
-
-   <a href="http://requirejs.org/" target="_blank">RequireJS</a>
-
 .. |inversion of control| raw:: html
 
    <a href="http://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">inversion of control</a>
-
-.. |RequireJS API| raw:: html
-
-   <a href="http://requirejs.org/docs/api.html" target="_blank">RequireJS API</a>
 
 .. |Writing Modular JavaScript| raw:: html
 
    <a href="http://addyosmani.com/writing-modular-js/" target="_blank">Writing Modular JavaScript</a>
 
-.. |RequireJS optimization tool| raw:: html
-
-   <a href="http://requirejs.org/docs/optimization.html" target="_blank">RequireJS optimization tool</a>
-
-.. |RequireJSBundle| raw:: html
-
-   <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/RequireJSBundle" target="_blank">RequireJSBundle</a>
-
-.. |shim| raw:: html
-
-   <a href="http://requirejs.org/docs/api.html#config-shim" target="_blank">shim</a>
-
-.. |map| raw:: html
-
-   <a href="http://requirejs.org/docs/api.html#config-map" target="_blank">map</a>
-
 .. |OroUIBundle| raw:: html
 
    <a href="https://github.com/orocrm/platform/tree/master/src/Oro/Bundle/UIBundle" target="_blank">OroUIBundle</a>
-
-.. |paths| raw:: html
-
-   <a href="http://requirejs.org/docs/api.html#config-paths" target="_blank">paths</a>
 
 .. |Chaplin| raw:: html
 
@@ -2447,10 +2419,6 @@ Links
 .. |LayoutBundle| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/README.md" target="_blank">LayoutBundle</a>
-
-.. |Require.js config generation| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle/README.md#requirejs-config-generation" target="_blank">Require.js config generation</a>
 
 .. |Symfony Profiler| raw:: html
 
@@ -3002,9 +2970,9 @@ Links
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/theme_definition.md" target="_blank">Define and Develop Themes</a>
 
-.. |Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)| raw:: html
+.. |Use a Different Configuration for a Theme (Assets, Images, JS Modules, Page Templates)| raw:: html
 
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/config_definition.md" target="_blank">Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/LayoutBundle/Resources/doc/config_definition.md" target="_blank">Use a Different Configuration for a Theme (Assets, Images, JS Modules, Page Templates)</a>
 
 .. |Perform Layout Update| raw:: html
 
@@ -3161,22 +3129,6 @@ Links
 .. |Configure Dedicated Database Connection for Reports| raw:: html
 
    <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ReportBundle/Resources/doc/dedicated_db_connection.md" target="_blank">Configure Dedicated Database Connection for Reports</a>
-
-.. |RequireJS API Configuration| raw:: html
-
-   <a href="https://requirejs.org/docs/api.html#config" target="_blank">RequireJS API Configuration</a>
-
-.. |example.build.js| raw:: html
-
-   <a href="https://github.com/requirejs/r.js/blob/master/build/example.build.js" target="_blank">example.build.js</a>
-
-.. |Runtime Require.js Main Config Extension| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#runtime-requirejs-main-config-extension" target="_blank">Runtime Require.js Main Config Extension</a>
-
-.. |Build Project| raw:: html
-
-   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/RequireJSBundle#build-project" target="_blank">Build Project</a>
 
 .. |Scopes Overview| raw:: html
 
@@ -3364,7 +3316,7 @@ Links
 
 .. |ConfigExtensionInterface| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Config/Extension/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
+   <a href="https://github.com/oroinc/platform/tree/master/src/Oro/Bundle/ApiBundle/Config/Extension/ConfigExtensionInterface.php" target="_blank">ConfigExtensionInterface</a>
 
 .. |AbstractConfigExtension| raw:: html
 
@@ -6044,3 +5996,23 @@ Links
 .. |Mode1| raw:: html
 
    <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/SearchBundle/Query/Mode.php" target="_blank">Mode</a>
+
+.. |Webpack Resolve Alias| raw:: html
+
+    <a href="https://webpack.js.org/configuration/resolve/#resolvealias" target="_blank">Webpack Resolve Alias</a>
+
+.. |Webpack Shimming| raw:: html
+
+    <a href="https://webpack.js.org/guides/shimming/" target="_blank">Webpack Shimming</a>
+
+.. |Webpack Imports Loader| raw:: html
+
+    <a href="https://webpack.js.org/loaders/imports-loader" target="_blank">Webpack Imports Loader</a>
+
+.. |Webpack Exports Loader| raw:: html
+
+    <a href="https://webpack.js.org/loaders/imports-loader" target="_blank">Webpack Exports Loader</a>
+
+.. |Webpack Expose Loader| raw:: html
+
+    <a href="https://webpack.js.org/loaders/imports-loader" target="_blank">Webpack Expose Loader</a>

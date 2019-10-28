@@ -115,7 +115,7 @@ To subscribe a **frontend client** to and unsubscribe it from the topic, use the
 
     # ping_js.html.twig
     <script type="text/javascript">
-       require(['orosync/js/sync'],
+       loadModules(['orosync/js/sync'],
        function(sync) {
            sync.subscribe('oro/ping', function () {
                console.log(‘Received message from oro/ping topic’);

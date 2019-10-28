@@ -28,8 +28,6 @@ The theme definition should be placed in ``theme.yml`` in a theme folder, for ex
 
 See the :ref:`theme definition <dev-doc-frontend-layouts-theming-definition>` topic for more details.
 
-After creating the theme, it is required to rebuild RequireJS configuration by running the ``bin/console oro:requirejs:build`` command.
-
 Activate the Theme
 ------------------
 
