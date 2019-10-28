@@ -16,11 +16,11 @@ Every AMI (Amazon Machine Image) contains an installed Oro Application along wit
 .. csv-table::
    :widths: 10, 30
 
-   "**OS**","Ubuntu v. 16.04 LTS"
-   "**Web server**","Nginx v.1.10"
-   "**Database**","MariaDB v.10"
+   "**OS**","CentOS 7"
+   "**Web server**","Nginx v.1.12"
+   "**Database**","MySQL 5.7"
    "**PHP**","PHP-FPM and PHP CLI v.7.1"
-   "**Other tools**","NodeJS v.4.2, Git v.2.7.4, Composer v.1.6.3"
+   "**Other tools**","NodeJS v.12, Git v.2.7, Composer v.1.9"
 
 .. note: This deployment configuration is suitable for development or testing environments and for applications with a relatively small
     amount of data. For the description of the production environment for |oro_app_name| with large data, see the
@@ -165,7 +165,7 @@ To connect to the EC2 instance using SSH, use the key pair file that you have do
 
     .. code:: bash
 
-        ssh -i /path/to/file/filenamewithkeys.pem ubuntu@<Public IP>
+        ssh -i /path/to/file/filenamewithkeys.pem centos@<Public IP>
 
     or
 
