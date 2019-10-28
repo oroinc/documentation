@@ -145,7 +145,6 @@ For Front-rendered templates, Oro applications use Underscore.js templates. JS t
 Fore more details see:
     - |Underscore.js template function documentation|
     - :ref:`JavaScript Modularity of OroPlatform based applications<dev-doc-frontend-javascript-modularity>`
-    - :ref:`Overriding JS modules<dev-doc-frontend-overriding-js-modules>`
 
 
 .. _frontend-architecture-page-layout-view:

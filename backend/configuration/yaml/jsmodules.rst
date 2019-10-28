@@ -68,10 +68,6 @@ Each module that has to be configurable in runtime (e.g. via twig templates) sho
 
 Add module name in this section to ability import module on runtime into inline scripts or using module name that is passed via twig templates. Place it in this section to subsection with name of webpack build chunk where modules have to be added.
 
-.. note::
-
-Chunk name might be new one or already exist in another bundle. Please group modules that used together or/and on specific pages for maximum benefit of webpack chunk concept.
-
 .. code-block:: yaml
     :linenos:
 
@@ -79,6 +75,11 @@ Chunk name might be new one or already exist in another bundle. Please group mod
         oroui:
             - jquery
             - oroui/js/app/components/view-component
+
+.. note::
+
+    Chunk name might be new one or already exist in another bundle.
+    Please group modules that used together or/and on specific pages for maximum benefit of webpack chunk concept.
 
 .. _reference-format-jsmodules-map:
 

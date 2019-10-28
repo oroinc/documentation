@@ -2260,6 +2260,26 @@ Links
 
    <a href="http://en.wikipedia.org/wiki/Inversion_of_control" target="_blank">inversion of control</a>
 
+.. |Asynchronous Module Definition| raw:: html
+
+    <a href="https://en.wikipedia.org/wiki/Asynchronous_module_definition" target="_blank">Asynchronous Module Definition</a>
+
+.. |ECMAScript Wiki| raw:: html
+
+    <a href="https://en.wikipedia.org/wiki/ECMAScript#6th_Edition_-_ECMAScript_2015" target="_blank">ECMAScript Wiki</a>
+
+.. |ES6 Modules| raw:: html
+
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank">ES6 Modules</a>
+
+.. |CommonJS| raw:: html
+
+    <a href="https://en.wikipedia.org/wiki/CommonJS" target="_blank">CommonJS</a>
+
+.. |scriptjs| raw:: html
+
+    <a href="https://github.com/ded/script.js" target="_blank">scriptjs</a>
+
 .. |Writing Modular JavaScript| raw:: html
 
    <a href="http://addyosmani.com/writing-modular-js/" target="_blank">Writing Modular JavaScript</a>
