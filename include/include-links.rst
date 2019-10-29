@@ -3422,21 +3422,17 @@ Links
 
    <a href="https://google.github.io/styleguide/javascriptguide.xml" target="_blank">Google JavaScript Style Guide</a>
 
-.. |JSCS| raw:: html
+.. |ESLint| raw:: html
 
-   <a href="http://jscs.info/" target="_blank">JSCS</a>
+   <a href="https://eslint.org/" target="_blank">ESLint</a>
 
-.. |JSHint| raw:: html
+.. |.eslintrc.yml| raw:: html
 
-   <a href="http://jshint.com/" target="_blank">JSHint</a>
+   <a href="https://github.com/oroinc/platform/blob/master/build/.eslintrc.yml" target="_blank">.eslintrc.yml</a>
 
-.. |.jshintrc| raw:: html
+.. |package.json| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/2.6/build/.jshintrc" target="_blank">.jshintrc</a>
-
-.. |.jscsrc| raw:: html
-
-   <a href="https://github.com/oroinc/platform/blob/2.6/build/.jscsrc" target="_blank">.jscsrc</a>
+   <a href="https://github.com/oroinc/platform/blob/master/build/package.json" target="_blank">package.json</a>
 
 .. |PHP Coding Standard Fixer| raw:: html
 
