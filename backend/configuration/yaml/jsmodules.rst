@@ -17,14 +17,14 @@ JS Modules
 +-----------+------------------------------------------------------------+
 
 ``aliases``
-~~~~~~~~~~~
+-----------
 
 **type**: ``map``
 
-This section used in case when desired module name doesn't match path to module.
+This section is used when a desired module name does not match the path to the module.
 The keys of the map are module names with trailing `$` which are mapped to the actual path of the file that contains the module's source code.
-That syntax provided Webpack and described in its documentation (see |Webpack Resolve Alias|).
-Aliases can be useful for replacing original module with own one.
+Webpack provides the corresponding syntax and description in its documentation (see |Webpack Resolve Alias|).
+Aliases can be useful for replacing the original module with the required one.
 
 .. code-block:: yaml
     :linenos:
@@ -34,11 +34,11 @@ Aliases can be useful for replacing original module with own one.
         oro/block-widget$: oroui/js/widget/block-widget
 
 ``app-modules``
-~~~~~~~~~~~~~~~
+---------------
 
 **type**: ``sequence``
 
-Presents list of modules that should be initialized before application is started. They can be used for start listening some page events with bundle specific handlers, etc.
+Introduces a list of modules that should be initialized before application is launched. They can be used to track certain page events with bundle specific handlers, etc.
 
 .. code-block:: yaml
     :linenos:
@@ -48,11 +48,11 @@ Presents list of modules that should be initialized before application is starte
         - oroui/js/app/modules/layout-module
 
 ``configs``
-~~~~~~~~~~~
+-----------
 
 **type**: ``map``
 
-Each module that has to be configurable in runtime (e.g. via twig templates) should be present in this section where key of the map is module name and value is empty object
+Each module that should be configured at runtime (e.g., via twig templates) must be specified in this section where the key of the map is a module name, and the value is an empty object.
 
 .. code-block:: yaml
     :linenos:
@@ -62,11 +62,11 @@ Each module that has to be configurable in runtime (e.g. via twig templates) sho
         oroui/js/app: {}
 
 ``dynamic-imports``
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 **type**: ``map``
 
-Add module name in this section to ability import module on runtime into inline scripts or using module name that is passed via twig templates. Place it in this section to subsection with name of webpack build chunk where modules have to be added.
+Add a module name to this section to be able to import a module into inline scripts at runtime or by using a module name that is passed via twig templates. Place it in this section to subsection with name of webpack build chunk where modules have to be added.
 
 .. code-block:: yaml
     :linenos:
@@ -78,18 +78,17 @@ Add module name in this section to ability import module on runtime into inline 
 
 .. note::
 
-    Chunk name might be new one or already exist in another bundle.
-    Please group modules that used together or/and on specific pages for maximum benefit of webpack chunk concept.
+    A chunk name should either be a new name or already exist in another bundle.
+    It is required to group modules that are used together or/and on specific pages for the maximum benefit of the webpack chunk concept.
 
 .. _reference-format-jsmodules-map:
 
 ``map``
-~~~~~~~
+-------
 
 **type**: ``map``
 
-The map option makes it possible to map module names to other module names depending on the module
-context in which they are required.
+The map option enables module names to be mapped to each other depending on the required module context.
 
 For example, the |OroUIBundle| ships with an extended version of the jQuery library. This means
 that all modules should receive the extended jQuery library from the OroUIBundle. However, since
@@ -110,26 +109,25 @@ the original version when requiring it:
     ``*`` is a special key that matches all module contexts.
 
 ``shim``
-~~~~~~~~
+--------
 
 **type**: ``map``
 
-Webpack puts each module in local scope so a lot of modules that aren't designed to that can stop to work. To solve the problem webpack proposes shimming feature. See |Webpack Shimming|
-In our `shim` section each key of the map is the name of a module to be created. For each module, a map must be specified that
-configures the module. It can consist of the following keys:
+Webpack puts each module in a local scope so a lot of modules that aren't designed to that can stop to work. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
+In our `shim` section, each key of the map is the name of a module to be created. For each module, a map that
+configures the module must be specified. It can consist of the following keys:
 
 ``imports`` (**type**: ``sequence``)
 
-    If the library depends on specific global variables, these dependencies can be listed here. See |Webpack Imports Loader| for detail
+    If the library depends on specific global variables, these dependencies can be listed here. See |Webpack Imports Loader| for the detail.
 
 ``exports`` (**type**: ``string``)
 
-    The name of a JavaScript symbol that will be exposed to other parts of the system that use this. See |Webpack Exports Loader| for detail
-    module.
+    The name of a JavaScript symbol that is exposed to other parts of the system that use this symbol. See |Webpack Exports Loader| for the details.
 
 ``expose`` (**type**: ``sequence``)
 
-    Here can be pointed which local variables have to be exposed globally. See |Webpack Expose Loader| for detail
+    Specify which local variables have to be exposed globally. See |Webpack Expose Loader| for the details.
 
 .. code-block:: yaml
     :linenos:

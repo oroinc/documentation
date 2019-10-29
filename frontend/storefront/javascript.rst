@@ -18,7 +18,7 @@ JS modules configuration file should be placed in the
 example `DemoBundle/Resources/views/layouts/base/config/jsmodules.yml`.
 
 Entry point for Webpack build is `oroui/js/app`.
-But you can change it making the same alias to needed entry point.
+But you can change it providing the same alias to the necessary entry point.
 
 
 **Example:**

@@ -231,28 +231,26 @@ JavaScript Code Style
 
 **Standard**
 
-|Google JavaScript Style Guide| is considered as code standard of the JavaScript code style.
+|Google JavaScript Style Guide| is considered as a code standard of the JavaScript code style.
 
 **JavaScript code style continuous control**
 
-JavaScript code style is controlled by the |ESLint| tool installed on the continuous integration server according to the rulests defined in the development repository at the root folder (example: |.eslintrc.yml|).
+JavaScript code style is controlled by the |ESLint| tool installed on the continuous integration server according to the rulests defined in the development repository in the root folder (example: |.eslintrc.yml|).
 
 It is highly recommended to configure appropriate code style inspections in the IDE or run these inspections manually before committing the changes and merging it to the project repository.
 
 .. important::
-    JavaScript code style checker in PHPStorm could be enabled in **"Languages & Frameworks > JavaScript > Code Quality Tools > ESLint"** and select to use configuration from |.eslintrc.yml|.
+    To enable the JavaScript code style checker in PHPStorm, navigate to **"Languages & Frameworks > JavaScript > Code Quality Tools > ESLint"** and select to use the configuration from |.eslintrc.yml|.
 
 To run the check manually from the command line:
 
-To run the check manually from command line:
-
-1. first you need to install required js-modules in **package/platform/build** directory (|package.json| added to each dev-repo to root folder);
+1. First, you need to install the required js-modules in the **package/platform/build** directory (|package.json| added to each dev-repo to root folder);
 
 .. code-block:: none
 
     npm install
 
-2. then execute to run |ESLint| check from root of application directory;
+2. Then, run |ESLint| check from the root of the application directory;
 
 .. code-block:: none
 
