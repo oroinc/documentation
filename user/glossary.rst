@@ -175,3 +175,5 @@ Glossary
    Shipping Rule
       Shipping rules enable shipping methods for the provided destinations and set the customized shipping service price by adding a surcharge per service option or globally for all options of the service provider.
 
+   Digital Assets
+      Digital Assets are multimedia content like videos, pictures, documents and other media. These digital files must possess the rights to use them to be considered an asset, otherwise, they are not assets.
