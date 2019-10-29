@@ -144,7 +144,7 @@ html_theme_options = {
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "Oro Documentation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -339,6 +339,10 @@ epub_copyright = u'2017, OroTeam'
 # Allow duplicate toc entries.
 #epub_tocdup = True
 
+# Base URL of the website.
+# Required by sphinx_sitemap extension
+html_baseurl = 'https://doc.oroinc.com/'
+
 # List of document titles which are related to developers documentation but placed not in the developer directory
 # All this documents and their children will get additional level to developer root document in the breadcrumbs
 developer_titles = ['Backend Developer Guide', 'Frontend Developer Guide', 'Community Guide']
@@ -346,12 +350,9 @@ developer_titles = ['Backend Developer Guide', 'Frontend Developer Guide', 'Comm
 # current_timestamp is used to prevent chaching of assets in case of new build
 # it's added to all css/js files as GET parameter
 html_context = {
-    'developer_titles': developer_titles
+    'developer_titles': developer_titles,
+    'html_baseurl': html_baseurl
 }
-
-# Base URL of the website.
-# Required by sphinx_sitemap extension
-html_baseurl = 'https://doc.oroinc.com/'
 
 # Redirect file for ext.redirects extension
 # This file contains pairs of "old_document new_document"
