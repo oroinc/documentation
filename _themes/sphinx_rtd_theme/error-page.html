@@ -19,7 +19,7 @@
   <meta property="og:title" content="The page you are looking for does not exist{{ titlesuffix }}"/>
   <meta property="og:type" content="website" />
   {% if theme_canonical_url and oro_current_version and versions %}
-      <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/Oro-OLogo.png', 1) }}" />
+      <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/OroDocs.png', 1) }}" />
       <meta property="og:url" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/' + pagename) }}"/>
   {% endif %}
   {% block htmltitle %}
