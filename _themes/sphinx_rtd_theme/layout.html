@@ -33,12 +33,15 @@
   <meta charset="utf-8">
   {{ metatags }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="{{ title|striptags|e }}{{ titlesuffix }}"/>
+  <meta property="og:title" content="{{ title|striptags|e }}"/>
   <meta property="og:type" content="website" />
   {% if theme_canonical_url and oro_current_version and versions %}
-      <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/Oro-OLogo.png', 1) }}" />
+      <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/OroDocs.png', 1) }}" />
       <meta property="og:url" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/' + pagename) }}"/>
   {% endif %}
+  <meta property="og:site_name" content="Oro Documentation" />
+  <meta property="og:description" content="Find everything you need to use and develop your OroCommerce, OroCRM, and OroPlatform application"/>
+  <meta name="twitter:card" content="summary" />
   {# Add version meta tag for algolia docsearch #}
   {% if oro_current_version %}
       <meta name="docsearch:version" content="{{ oro_current_version }}" />
