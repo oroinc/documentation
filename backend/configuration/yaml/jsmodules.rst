@@ -90,7 +90,7 @@ Add a module name to this section to be able to import a module into inline scri
 
 The map option enables module names to be mapped to each other depending on the required module context.
 
-For example, the |OroUIBundle| ships with an extended version of the jQuery library. This means
+For example, |OroUIBundle| is delivered with an extended version of the jQuery library. This means
 that all modules should receive the extended jQuery library from the OroUIBundle. However, since
 the bundle itself needs the original version of the library to be able to extend it, it must get
 the original version when requiring it:
@@ -113,7 +113,7 @@ the original version when requiring it:
 
 **type**: ``map``
 
-Webpack puts each module in a local scope so a lot of modules that aren't designed to that can stop to work. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
+Webpack places each module in its isolated space, so the modules that are not implemented to follow such behavior can stop working. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
 In our `shim` section, each key of the map is the name of a module to be created. For each module, a map that
 configures the module must be specified. It can consist of the following keys:
 
