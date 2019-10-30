@@ -22,6 +22,8 @@
       <meta property="og:image" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/_static/images/OroDocs.png', 1) }}" />
       <meta property="og:url" content="{{ theme_canonical_url }}{{ '' if versions.reuse_root and current_version == scv_root_ref else '/' ~ oro_current_version }}{{ pathto('/' + pagename) }}"/>
   {% endif %}
+  <meta property="og:site_name" content="Oro Documentation" />
+  <meta name="twitter:card" content="summary" />
   {% block htmltitle %}
   <title>The page you are looking for does not exist{{ titlesuffix }}</title>
   {% endblock %}
