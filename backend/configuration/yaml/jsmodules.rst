@@ -24,7 +24,7 @@ JS Modules
 This section is used when a desired module name does not match the path to the module.
 The keys of the map are module names with trailing `$` which are mapped to the actual path of the file that contains the module's source code.
 Webpack provides the corresponding syntax and description in its documentation (see |Webpack Resolve Alias|).
-Aliases can be useful for replacing the original module with the required one.
+Aliases can help to import certain modules easily using short names.
 
 .. code-block:: yaml
     :linenos:
@@ -66,7 +66,16 @@ Each module that should be configured at runtime (e.g., via twig templates) must
 
 **type**: ``map``
 
-Add a module name to this section to be able to import a module into inline scripts at runtime or by using a module name that is passed via twig templates. Place it in this section to subsection with name of webpack build chunk where modules have to be added.
+Add a module name to this section to be able to import a module with name that is determined at runtime.
+
+.. code-block:: javascript
+    :linenos:
+
+    import tools from 'oroui/js/tools';
+
+    tools.loadModules(moduleName).then(module => module.init());
+
+Place a module name in this section to subsection with name of webpack build chunk where modules have to be added.
 
 .. code-block:: yaml
     :linenos:
@@ -79,7 +88,7 @@ Add a module name to this section to be able to import a module into inline scri
 .. note::
 
     A chunk name should either be a new name or already exist in another bundle.
-    It is required to group modules that are used together or/and on specific pages for the maximum benefit of the webpack chunk concept.
+    It is preferred to group modules that are used together or/and on specific pages for the maximum benefit of the webpack chunk concept.
 
 .. _reference-format-jsmodules-map:
 
@@ -88,7 +97,7 @@ Add a module name to this section to be able to import a module into inline scri
 
 **type**: ``map``
 
-The map option enables module names to be mapped to each other depending on the required module context.
+The map option allows to substitute module with given ID with different module. End such substitution is working for the given module prefix.
 
 For example, |OroUIBundle| is delivered with an extended version of the jQuery library. This means
 that all modules should receive the extended jQuery library from the OroUIBundle. However, since
@@ -113,7 +122,7 @@ the original version when requiring it:
 
 **type**: ``map``
 
-Webpack places each module in its isolated space, so the modules that are not implemented to follow such behavior can stop working. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
+Webpack places each module in its local scope. But some third party libraries may expect global dependencies (e.g. $ for jQuery). The libraries might also create globals which need to be exported, so they can stop working. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
 In our `shim` section, each key of the map is the name of a module to be created. For each module, a map that
 configures the module must be specified. It can consist of the following keys:
 
