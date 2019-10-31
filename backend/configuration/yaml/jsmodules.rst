@@ -71,9 +71,9 @@ Add a module name to this section to be able to import a module with name that i
 .. code-block:: javascript
     :linenos:
 
-    import tools from 'oroui/js/tools';
+    import loadModules from 'oroui/js/app/services/load-modules';
 
-    tools.loadModules(moduleName).then(module => module.init());
+    loadModules(moduleName).then(module => module.init());
 
 Place a module name in this section to subsection with name of webpack build chunk where modules have to be added.
 
