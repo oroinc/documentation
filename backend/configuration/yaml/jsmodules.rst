@@ -24,7 +24,7 @@ JS Modules
 This section is used when a desired module name does not match the path to the module.
 The keys of the map are module names with trailing `$` which are mapped to the actual path of the file that contains the module's source code.
 Webpack provides the corresponding syntax and description in its documentation (see |Webpack Resolve Alias|).
-Aliases can help to import certain modules easily using short names.
+Aliases can help import certain modules easily using short names.
 
 .. code-block:: yaml
     :linenos:
@@ -66,7 +66,7 @@ Each module that should be configured at runtime (e.g., via twig templates) must
 
 **type**: ``map``
 
-Add a module name to this section to be able to import a module with name that is determined at runtime.
+Add a module name to this section to be able to import a module with the name that is determined at runtime.
 
 .. code-block:: javascript
     :linenos:
@@ -75,7 +75,7 @@ Add a module name to this section to be able to import a module with name that i
 
     loadModules(moduleName).then(module => module.init());
 
-Place a module name in this section to subsection with name of webpack build chunk where modules have to be added.
+Insert a module name to this section nested into the subsection with the name of webpack build chunk where modules have to be added.
 
 .. code-block:: yaml
     :linenos:
@@ -97,7 +97,7 @@ Place a module name in this section to subsection with name of webpack build chu
 
 **type**: ``map``
 
-The map option allows to substitute module with given ID with different module. End such substitution is working for the given module prefix.
+The map option allows to substitute a module with the given ID with a different module. Such substitution is working for the given module prefix.
 
 For example, |OroUIBundle| is delivered with an extended version of the jQuery library. This means
 that all modules should receive the extended jQuery library from the OroUIBundle. However, since
@@ -122,7 +122,7 @@ the original version when requiring it:
 
 **type**: ``map``
 
-Webpack places each module in its local scope. But some third party libraries may expect global dependencies (e.g. $ for jQuery). The libraries might also create globals which need to be exported, so they can stop working. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
+Webpack places each module in its local scope, however, some third party libraries may expect global dependencies (e.g., $ for jQuery). The libraries may also create globals which need to be exported, so they can stop working. To solve this issue, webpack offers a shimming feature. See |Webpack Shimming|
 In our `shim` section, each key of the map is the name of a module to be created. For each module, a map that
 configures the module must be specified. It can consist of the following keys:
 
