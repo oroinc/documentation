@@ -14,7 +14,7 @@ Related Documentation
 * |Use Layout Data|
 * |Expressions|
 * |Define and Develop Themes|
-* |Use a Different Configuration for a Theme (Assets, Images, RequireJS, Page Templates)|
+* |Use a Different Configuration for a Theme (Assets, Images, JS Modules, Page Templates)|
 * |Perform Layout Update|
 * |Import Layout Updates|
 * |Implement Layouts (Example)|

@@ -172,7 +172,7 @@ being used, the template will render the following values:
 
 In addition to backend formatters, the application also provides the following
 similar formatters on the frontend side which are powered by JavaScript and
-can be accessed using requirejs aliases:
+can be accessed using JS modules aliases:
 
 - ``orolocale/js/formatter/datetime`` (|datetime.js|)
     * ``formatDate(value)``
@@ -222,7 +222,7 @@ be formatted like this:
     Mr. John S Doe Jr.
 
 On the frontend side, the same formatting can be performed with the ``orolocale/js/formatter/name``
-requirejs module which is located in ``Oro/Bundle/LocaleBundle/Resources/public/js/formatter/name.js``.
+JS module which is located in ``Oro/Bundle/LocaleBundle/Resources/public/js/formatter/name.js``.
 This module has a similar ``format()`` method which can be used to format
 a person object.
 
@@ -265,7 +265,7 @@ When used with the USA, such an address will be rendered like so:
     ROMNEY IN US 47981
 
 As with other entities, the frontend provides an appropriate JavaScript formatter,
-the ``orolocale/js/formatter/address`` requirejs module.  This module is located
+the ``orolocale/js/formatter/address`` JS module.  This module is located
 in the ``address.js`` file in the Locale bundle and contains a ``format()``
 method which behaves exactly like the backend formatter does.
 

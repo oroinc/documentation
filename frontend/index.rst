@@ -11,7 +11,7 @@ There are two types of themes:
 
 .. hint:: Back-office themes can not be used in the storefront and vice-versa.
 
-All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-javascript>` except for the way the RequireJs modules are registered.
+All the themes use the same :ref:`Javascript Architecture <dev-doc-frontend-javascript>` except for the way the JS modules are registered.
 
 
 .. toctree::

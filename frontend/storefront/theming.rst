@@ -114,7 +114,7 @@ This is a typical theme directory structure, where `AcmeDemoBundle` is a bundle 
              theme.yml          # Theme definition
              config/
                assets.yml       # SCSS configuration
-               requirejs.yml    # RequireJS configuration
+               jsmodules.yml    # JS modules configuration
              layout_update1.yml # Layout updates applied for all the pages
              layout_update2.yml
              oro_shopping_list_frontend_view/ # Layout updates applied only for

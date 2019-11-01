@@ -50,9 +50,9 @@ It is **required** to add or update a DocBlock for every method you modify or pr
         * Supported values are In Stock, Out of Stock, and Discontinued.
         *
         * @param string $SKU The product SKU (unique product id).
-        * 
+        *
         * @return string The inventory status of the product found by SKU.
-        * 
+        *
         */
 
 **Property DocBlock**
@@ -69,11 +69,11 @@ An example of correct DocBlock usage:
     :linenos:
 
     namespace Oro\Bundle\DataGridBundle\Datasource;
- 
+
     use Doctrine\Common\Inflector\Inflector;
- 
+
     use Symfony\Component\PropertyAccess\PropertyAccess;
- 
+
     class ResultRecord implements ResultRecordInterface
     {
        /**
@@ -82,15 +82,15 @@ An example of correct DocBlock usage:
         * @var array
         */
        private $valueContainers = [];
- 
+
         /**
          * @var array
          */
         private $entities = [];
- 
+
         /** @var string */
         private $value = "";
- 
+
         /**
          * @param array $containers
          */
@@ -98,7 +98,7 @@ An example of correct DocBlock usage:
         {
             // ...
         }
- 
+
         /**
          * Get value of property by name
          *
@@ -110,7 +110,7 @@ An example of correct DocBlock usage:
             // ...
             return $value
         }
- 
+
         /**
          * @return object|null
          */
@@ -139,11 +139,11 @@ The following is an example of @deprecated usage:
         * @deprecated deprecated since version 2.0
         */
         private $valueContainers = [];
- 
+
         //....
     }
-  
- 
+
+
     /**
      * @deprecated
      */
@@ -171,7 +171,7 @@ Import internal PHP classes example:
     // incorrect
     use DateTime;
     $date = new DateTime();
- 
+
     // correct
     $date = new \DateTime();
 
@@ -231,40 +231,30 @@ JavaScript Code Style
 
 **Standard**
 
-|Google JavaScript Style Guide| is considered as code standard of the JavaScript code style.
+|Google JavaScript Style Guide| is considered as a code standard of the JavaScript code style.
 
 **JavaScript code style continuous control**
 
-In Oro projects, JavaScript code style is controlled by the |JSCS| and |JSHint| tools configured according to the rules defined in the project repository in |.jshintrc| and |.jscsrc|).
+JavaScript code style is controlled by the |ESLint| tool installed on the continuous integration server according to the rulests defined in the development repository in the root folder (example: |.eslintrc.yml|).
 
 It is highly recommended to configure appropriate code style inspections in the IDE or run these inspections manually before committing the changes and merging it to the project repository.
 
-.. important:: JavaScript code style checker in PHPStorm could be enabled in "Languages & Frameworks>JavaScript>Code Quality Tools>JSCS/JSHint" and select to use configuration from .jscsrc/.jshintrc accordingly. For JSCS define path to installed node and path to jscs (it is {{your_project_root}}/node_modules/jscs). For JSHint select the version that is defined in package.json (in root folder of project).
+.. important::
+    To enable the JavaScript code style checker in PHPStorm, navigate to **"Languages & Frameworks > JavaScript > Code Quality Tools > ESLint"** and select to use the configuration from |.eslintrc.yml|.
 
 To run the check manually from the command line:
 
-- Install required js-modules
+1. First, you need to install the required js-modules in the **package/platform/build** directory (|package.json| added to each dev-repo to root folder);
 
 .. code-block:: none
-    :linenos:
 
     npm install
 
-(package.json file is added to each dev-repo to root folder)
-
-- Execute the following command to run JSCS check:
+2. Then, run |ESLint| check from the root of the application directory;
 
 .. code-block:: none
-    :linenos:
 
-    node_modules/.bin/jscs src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jscsrc 
-
-- Execute the following command to run JSHint check:
-
-.. code-block:: none
-    :linenos:
-
-    node_modules/.bin/jshint src/*/src/*/Bundle/*Bundle/Resources/public/js/** src/*/src/*/Bundle/*Bundle/Tests/JS/** --config=.jshintrc 
+    ./vendor/oro/platform/build/node_modules/.bin/eslint ./vendor/oro/ -c ./vendor/oro/platform/build/.eslintrc.yml --ignore-path ./vendor/oro/platform/build/.eslintignore
 
 .NET Code Style
 ^^^^^^^^^^^^^^^
