@@ -7,6 +7,10 @@ Links
 
 .. begin
 
+.. |cron| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/Cron" target="_blank">cron</a>
+
 .. |ISO 50001| raw:: html
 
    <a href="http://www.iso.org/iso/home/standards/management-standards/iso50001.html" target="_blank">ISO 50001</a>
