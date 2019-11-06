@@ -360,7 +360,7 @@ function scrollSpy() {
         }
     }
 
-    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference, .docutils .reference', topIndent);
+    smoothScrollTop('.section .toc-backref, .section .headerlink, .contents .simple .reference, .docutils .reference, .section .reference.internal', topIndent);
 }
 
 function isRightSidebarScrolled() {
