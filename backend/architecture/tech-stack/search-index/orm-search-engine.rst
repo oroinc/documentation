@@ -24,12 +24,9 @@ to store general information. The table that stores text data has
 .. code-block:: none
     :linenos:
 
-    parameters:
-        oro_search.engine.class: Oro\Bundle\SearchBundle\Engine\Orm
-
     services:
         oro_search.search.engine:
-            class: %oro_search.engine.class%
+            class: Oro\Bundle\SearchBundle\Engine\Orm
             arguments:
                 - @doctrine
                 - @oro_entity.doctrine_helper

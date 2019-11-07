@@ -16,6 +16,7 @@ The OroCloud application maintenance tool helps you to run and control complex m
    basic-use
    advanced-use
    patches
+   scheduled-tasks
    faq
 
 * :ref:`Technical support <cloud_support>` service details (exclusions, priorities, SLA, etc).

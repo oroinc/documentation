@@ -221,7 +221,7 @@ exception is thrown during processing or job running**.
 4. The consumer continues message processing (the requeued message is at
    the end of the queue).
 5. When the turn of the requeued message comes, the
-   ``DelayRedeliveredMessageExtension`` works and sets a delay for the
+   ``RedeliveryMessageExtension`` works and sets a delay for the
    requeued message.
 6. The time set in the delay passes and the message is processed again.
 
@@ -243,7 +243,7 @@ a message processor is slightly different:**
 5. The consumer continues message processing (the failing message is at
    the end of the queue).
 6. When the turn of the failing message comes, the
-   ``DelayRedeliveredMessageExtension`` works and sets a delay for the
+   ``RedeliveryMessageExtension`` works and sets a delay for the
    failing message.
 7. After the delay time passes, the message is processed again and the
    consumer can fail again.

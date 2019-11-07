@@ -72,6 +72,8 @@ For detailed information on these topics, please see the following sections:
 * :ref:`Translate Product Attribute Labels <localization--translations--labels>`
 * :ref:`Translate Content Blocks <user-guide--landing-pages--marketing--content-blocks--translation>`
 * :ref:`Translate Consents <user-guide--consents--localizing-consents>`
+* :ref:`Translate Email Templates <localize-email-templates>`
+
 
 
 .. include:: /include/include-images.rst
