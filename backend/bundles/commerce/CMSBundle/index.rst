@@ -16,4 +16,5 @@ Related Documentation
    :hidden:
 
    content-widgets/index
+   WYSIWYG-field/index
 
