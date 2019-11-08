@@ -49,7 +49,6 @@ To enable and configure consents in OroCommerce, take the following steps:
 * Create a :ref:`landing page <user-guide--consents--add>` with the text of the consent, and add it as a content variant of a content tree node.
 * Create a :ref:`new consent <user-guide--consents--create>` under **System > Consent Management**, define its properties, and link it to the content tree node.
 * Add the consent to the list of enabled user consents in the :ref:`system configuration <configuration--guide--commerce--configuration--consents>` to display consents in the storefront.
-* (Recommended) Enable the :ref:`Checkout with Consents <system--workflows--checkout-with-consents-workflow>` workflow to restrict access to the storefront without consents.
 
 Consents can be configured on :ref:`two levels <configuration--guide--config-levels>`, :ref:`global <doc-system-configuration>` and :ref:`website <doc-website-configuration>`. However, you can add consents to the storefront on the website level only when consents are enabled globally.
 
@@ -61,7 +60,6 @@ Learn more on the configuration and localization of consents in OroCommerce in t
 * :ref:`Localize Consents <user-guide--consents--localizing-consents>`
 * :ref:`View and Accept Consents in the Storefront <frontstore-guide--profile-consents>`
 * :ref:`Revoke Consents <user-guide-activities-requests>`
-* :ref:`Explore the Checkout with Consents <system--workflows--checkout-with-consents-workflow>`
 * :ref:`Add a Cookie Banner to the Website <user-guide--consents--cookie-banner>`
 
 **Related Topics**
