@@ -39,7 +39,7 @@ The following section explains what permissions you can apply to roles, what acc
 Permissions, Access Levels and Ownership Type
 ---------------------------------------------
 
-You can have **permission** to perform a number of actions to entities. The set of permissions may vary for some entities but in general they are the following:
+You can have a **permission** to perform a number of actions to entities. The set of permissions may vary for some entities but in general they are the following:
 
 +---------------+--------------------------------------------------------------------------------+
 | Permission    | Description                                                                    |
