@@ -618,15 +618,19 @@ The full set of allowed tags to use in email templates is the following:
 * |spaceless|
 * |set|
 
-Select Email Template Languages
--------------------------------
 
-If :ref:`several languages have been enabled <sys--config--sysconfig--general-setup--language-settings>` for the email templates, move from tab to tab to define the template in different languages. Templates in other languages will be used to notify users about events in their preferred language. 
+.. _localize-email-templates:
 
-.. image:: /user/img/system/emails/templates/email_template_language.png
+
+Localize Email Templates
+------------------------
+
+To create email templates for different localizations, even the inactive ones, move from tab to tab and create the desired content for required localizations.
+
+.. image:: /user/img/system/emails/templates/email_template_localization.png
    :alt: Navigating from one language tab to another
 
-  
+To enable the email template fallback to the parent localization, select the **Use <localization> (Parent Localization)** check box. If the localization does not have a parent, you can enable fallback to the default template value.
 
 .. .. |BGotoPage| image:: ../../img/buttons/BGotoPage.png
    :align: middle
