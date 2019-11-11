@@ -180,7 +180,7 @@ References
 * |MySQL Documentation|
 * |PostgreSQL Documentation|
 * |Doctrine Extensions|
-* |Oro application system requirements|
+* :ref:`Oro application system requirements <system-requirements>`
 * |PGTune - Configuration calculator for PostgreSQL|
 * |Percona Configuration Wizard for MySQL| (you might need to sign it to use the wizard)
 * |PostgreSQL Performance Optimization|

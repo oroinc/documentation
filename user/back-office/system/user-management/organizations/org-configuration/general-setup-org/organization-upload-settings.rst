@@ -27,7 +27,7 @@ To configure **MIME types** per organization:
 
 7. Click **Save Settings**.
 
-If |attachments are enabled for an entity|, the configuration of the entity will prevail and override the corresponding settings configured both globally and per organization.
+If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding settings configured both globally and per organization.
 
 .. finish
 

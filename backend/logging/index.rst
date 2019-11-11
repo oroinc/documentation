@@ -279,14 +279,6 @@ Handling exceptions without logging is incorrect:
    }
 
 
-Enable Logging for CLI Commands
--------------------------------
-
-Input of cli command will be logged automatically by OroPlatform. 
-Uncaught exceptions will be logged automatically as well.
-Log command output to the DEBUG level only if it short and is necessary for debugging while command input is known.
-In case you need to log extra information, your command should extend ``Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand`` so you would be able to get the logger from the container (see example |here5| ).
-
 Enable Logger Only on Dev Environment
 -------------------------------------
 

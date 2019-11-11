@@ -18,8 +18,7 @@ by the OroSecurityBundle to fulfill the requirements of companies in the busines
 
 .. hint:: You can find detailed information about Symfony ACL based security model in the Symfony documentation:
 
-           * |http://symfony.com/doc/current/cookbook/security/acl.html|
-           * |http://symfony.com/doc/current/cookbook/security/acl_advanced.html|
+           * |https://symfony.com/doc/4.4/security/acl.html|
 
 Access Levels
 ~~~~~~~~~~~~~
@@ -101,8 +100,7 @@ do with the resource. Namely, the following permissions are supported for **enti
 
 .. seealso::
 
-    Read the official documentation for a first insight in the |usage of ACLs| and more
-    |complex Access Control List| examples.
+    Read the official documentation for a first insight in the |usage of ACLs| examples.
 
 The following permissions are supported for **fields**:
 

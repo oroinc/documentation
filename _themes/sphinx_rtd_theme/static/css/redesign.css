@@ -117,6 +117,9 @@ a:focus {
 .rst-content .admonition img {
     max-width: 100%;
 }
+.rst-content .admonition.important ul.last {
+    margin-top: 20px;
+}
 .rst-content .code-block-caption {
     border-left: 3px solid #df9026;
     border-bottom: 1px solid #a8a8a8;
