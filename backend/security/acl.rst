@@ -18,8 +18,8 @@ by the OroSecurityBundle to fulfill the requirements of companies in the busines
 
 .. hint:: You can find detailed information about Symfony ACL based security model in the Symfony documentation:
 
-           * |http://symfony.com/doc/current/cookbook/security/acl.html|
-           * |http://symfony.com/doc/current/cookbook/security/acl_advanced.html|
+           * |https://symfony.com/doc/3.4/cookbook/security/acl.html|
+           * |https://symfony.com/doc/3.4/cookbook/security/acl_advanced.html|
 
 Access Levels
 ~~~~~~~~~~~~~

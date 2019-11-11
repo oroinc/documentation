@@ -31,7 +31,7 @@ To configure **MIME types** globally:
 6. Add any MIME type by writing the required file or image format in the text box.
 7. Click **Save Settings**.
 
-If |attachments are enabled for an entity|, the configuration of the entity will prevail and override the corresponding global one.
+If :ref:`attachments are enabled for an entity <doc-entity-actions-create>`, the configuration of the entity will prevail and override the corresponding global one.
 
 .. include:: /include/include-links.rst
    :start-after: begin

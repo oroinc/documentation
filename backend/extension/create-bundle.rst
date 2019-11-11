@@ -166,7 +166,6 @@ References
 ----------
 
 * |Symfony Best Practices for Structuring Bundles|
-* |Generating a New Bundle Skeleton|
 * |Symfony Framework Events|
 
 

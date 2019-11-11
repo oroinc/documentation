@@ -433,7 +433,6 @@ To retrieve a name for the `Localization`, it is enough to use the `getName()` m
 
 *Business User Documentation*
 
-* |How to fix the UI label of a column?|
 * :ref:`System Localizations and Translations <sys--config--sysconfig--general-setup--localization>`
 
   * :ref:`Languages <localization--languages>`

@@ -91,7 +91,7 @@ In the Quotes section, the following capabilities are available:
 
   .. image:: /user/img/system/user_management/override_quote_price_disabled.png
 
-* **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when |Backoffice Quotes Flow with Approvals| is enabled in the application.
+* **Review And Approve Quotes** --- Enables a user to manage quotes (e.g. sent to customer) without approval. When disabled, the user has to submit quotes for review first. This capability affects quotes when :ref:`Backoffice Quotes Flow with Approvals <doc--workflows--backoffice-quote-flow-with-approvals>` is enabled in the application.
 
   .. image:: /user/img/system/user_management/approve_quotes_disabled.png
   
