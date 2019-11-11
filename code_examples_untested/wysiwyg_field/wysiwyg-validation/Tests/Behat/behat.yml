@@ -1,0 +1,9 @@
+oro_behat_extension:
+  suites:
+    ACMEWysiwygValidationBundle:
+      contexts:
+        - Oro\Bundle\TestFrameworkBundle\Tests\Behat\Context\OroMainContext
+        - OroApplicationBundle::CommerceMainContext
+        - OroFormBundle::FormContext
+      paths:
+        - '@ACMEWysiwygValidationBundle/Tests/Behat/Features'

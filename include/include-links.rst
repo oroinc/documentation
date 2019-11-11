@@ -5995,3 +5995,15 @@ Links
 .. |Webpack Expose Loader| raw:: html
 
     <a href="https://webpack.js.org/loaders/imports-loader" target="_blank">Webpack Expose Loader</a>
+
+.. |HTML Purifier| raw:: html
+
+   <a href="http://htmlpurifier.org/docs" target="_blank">HTML Purifier</a>
+
+.. |WYSIWYG| raw:: html
+
+   <a href="https://en.wikipedia.org/wiki/WYSIWYG" target="_blank">WYSIWYG</a>
+
+.. |GrapesJS| raw:: html
+
+   <a href="https://grapesjs.com/docs/" target="_blank">GrapesJS</a>

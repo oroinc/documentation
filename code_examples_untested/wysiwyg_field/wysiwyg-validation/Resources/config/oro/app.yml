@@ -1,0 +1,26 @@
+oro_cms:
+    content_restrictions:
+        mode: content_restrictions_extra
+        lax_restrictions:
+            ROLE_ADMINISTRATOR:
+                Oro\Bundle\CMSBundle\Entity\Page: ['content']
+
+oro_form:
+    html_purifier_modes:
+        additional:
+            extends: default
+            allowed_html_elements:
+                div: ~
+                iframe:
+                    attributes:
+                        - src
+            allowed_iframe_domains:
+                - 'maps.google.com'
+
+        extra:
+            extends: additional
+            allowed_html_elements:
+                img:
+                    hasClosingTag: false
+            allowed_iframe_domains:
+                - 'example.com'

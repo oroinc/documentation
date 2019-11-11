@@ -1,0 +1,2 @@
+bundles:
+    - { name: ACME\Bundle\WysiwygValidationBundle\ACMEWysiwygValidationBundle, priority: 200 }
