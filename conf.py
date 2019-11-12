@@ -361,8 +361,16 @@ redirects_file = 'redirects.txt'
 # ORO settings
 # Sphinx versioning (scv) config
 # Mappings of git branches and directory name for this branch in build directory
+# Branch names not mentioned here will be used "as is"
 scv_version_dirs = {
     # Test dirs from public rep
-    'doc-3.1': '3.1',
     'doc-2.6': '1.6',
+}
+
+# Mappings of git branches version names for this branch in build directory
+# Branch names not mentioned here will be used "as is"
+scv_version_human_readable_names = {
+    # Test dirs from public rep
+    'doc-2.6': '1.6',
+    'master': '4.1 beta (master)',
 }
