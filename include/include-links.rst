@@ -7,6 +7,46 @@ Links
 
 .. begin
 
+.. |Custom Fields| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/view/overview#custom-fields" target="_blank">Custom Fields</a>
+
+.. |How Errors are Grouped| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/grouping-errors" target="_blank">How Errors are Grouped</a>
+
+.. |Viewing Errors| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/viewing-errors" target="_blank">Viewing Errors</a>
+
+.. |Set Up Notifications| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/notifications" target="_blank">Set Up Notifications</a>
+
+.. |View Cloud Errors| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/managing-errors" target="_blank">View</a>
+
+.. |Change Resolution Statuses| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/managing-errors" target="_blank">Change Resolution Statuses</a>
+
+.. |Filter by Errors| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/viewing-errors#filtering" target="_blank">Filter by Errors</a>
+
+.. |Link Error Groups to Issues| raw:: html
+
+   <a href="https://cloud.google.com/error-reporting/docs/managing-errors#linking-issues" target="_blank">Link Error Groups to Issues</a>
+
+.. |GCP console| raw:: html
+
+   <a href="https://cloud.google.com/cloud-console/" target="_blank">GCP console</a>
+
+.. |Stackdriver Logging| raw:: html
+
+   <a href="https://cloud.google.com/logging/docs/view/overview" target="_blank">Stackdriver Logging</a>
+
 .. |cron| raw:: html
 
    <a href="https://en.wikipedia.org/wiki/Cron" target="_blank">cron</a>
