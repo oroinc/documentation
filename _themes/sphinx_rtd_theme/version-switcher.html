@@ -5,16 +5,16 @@
 <div class="switcher-container">
     <strong class="doc-title">Version:</strong>
     <div class="documentation-version-switcher">
-        <div class="version">{{ oro_current_version }}{{ ' (latest)' if scv_root_ref == current_version }}</div>
+        <div class="version">{{ oro_version_human_readable_names[current_version]|default(oro_current_version) }}{{ ' (latest)' if scv_root_ref == current_version }}</div>
         <ul class="documentation-version">
             {%- if tags %}
-                {%- for name, root_dir, url in tags %}
-                    <li><a href="{{ url }}">{{ root_dir }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
+                {%- for name, human_readable_name, url in tags %}
+                    <li><a href="{{ url }}">{{ human_readable_name }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
                 {%- endfor %}
             {%- endif %}
             {%- if branches %}
-                {%- for name, root_dir, url in branches %}
-                    <li><a href="{{ url }}">{{ root_dir }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
+                {%- for name, human_readable_name, url in branches %}
+                    <li><a href="{{ url }}">{{ human_readable_name }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
                 {%- endfor %}
             {%- endif %}
         </ul>
