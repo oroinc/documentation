@@ -5,9 +5,9 @@
 Flat Rate Shipping Integration
 ------------------------------
 
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the shipping concept in OroCommerce.
 
-Flat Rate shipping integration section describes the steps that are necessary to expose flat rate shipping as a shipping method in OroCommerce orders and quotes.
+Flat Rate shipping integration section describes the steps that are necessary to expose :term:`flat rate <Flat Rate>` shipping as a shipping method in OroCommerce orders and quotes.
 
 .. note::
    See a short demo on |how to create a shipping integration in OroCommerce| or keep reading the step-by-step guidance below.

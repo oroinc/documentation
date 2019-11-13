@@ -7,7 +7,7 @@ Shipping Rules
 
 .. begin
 
-.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the payment concept in OroCommerce.
+.. important:: This section is a part of the :ref:`Shipping Configuration <admin-guide--shipping>` topic that provides the general understanding of the shipping concept in OroCommerce.
 
 You can configure one or more :term:`shipping rules <Shipping Rule>` that enable the shipping methods for the provided destinations and set the customized shipping service price by adding a surcharge per service option or globally for all options of the service provider.
 
@@ -150,7 +150,7 @@ To create a shipping rule:
 
       .. warning::
 
-         Only one shipping method per integration may be selected in the shipping rule. For example, to enable several flat rate options with various delivery SLA and insurance, please create a separate shipping rule for every option.
+         Only one shipping method per integration may be selected in the shipping rule. For example, to enable several :term:`flat rate <Flat Rate>` options with various delivery SLA and insurance, please create a separate shipping rule for every option.
 
          A shipping method appears in the list only if it is configured to support the selected currency.
 
@@ -186,7 +186,7 @@ After you have added a shipping method to the shipping rule, you are prompted to
 Flat Rate
 ^^^^^^^^^
 
-For the flat rate shipping method, provide the following information:
+For the :term:`flat rate <Flat Rate>` shipping method, provide the following information:
 
  * **Price**—A shipping price based on your agreement with the shipping service provider. The final shipping price depends on the **Type** option (*Pre Item*/*Per Order*).
  * **Handling fee**—An additional cost for order processing charged by your company.

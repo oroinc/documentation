@@ -1,5 +1,7 @@
 :oro_documentation_types: OroCommerce
 
+.. _configuration--commerce--inventory-website:
+
 Inventory Configuration Settings per Website
 ============================================
 

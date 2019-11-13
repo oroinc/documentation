@@ -56,7 +56,7 @@ Prerequisites
 
 To enable approvals for your quote management:
 
-* In workflow configuration, ensure that :ref:`approvals are enabled <doc--workflows--backoffice-quote-flow-with-approvals--configure>` for the quotes with overridden price (as described n the section below).
+* In workflow configuration, ensure that :ref:`approvals are enabled <doc--workflows--backoffice-quote-flow-with-approvals--configure>` for the quotes with overridden price (as described in the section below).
 * :ref:`Activate <doc--system--workflow-management--activate>` the **Backoffice Quote Flow with Approvals** workflow (as described in the topic on workflow management).
 * Decide which users (e.g., sales people or their manager) should be reviewing and approving quotes.
 * Authorize these users to review and approve quotes by enabling the **Review and approve quotes** capability for their role (as described in the section below).

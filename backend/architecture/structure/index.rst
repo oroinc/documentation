@@ -20,7 +20,7 @@ Any Oro application and packages may be used in the following modes:
 
 * Oro application may by installed and immediately used in the production environment
 * Oro application or Oro package source code may be used as a base for a custom application. Clone the Oro application repository, fork it, or download the source code as an archive and customize and extend the code as necessary.
-* Oro packages may be embedded as ready-to-use features into any application. Create your own application from scratch and add Oro packages as composer dependencies. Read more about composer dependency manager in the Distribution Model section below.
+* Oro packages may be embedded as ready-to-use features into any application. Create your own application from scratch and add Oro packages as composer dependencies. Read more about composer dependency manager in the `Distribution Model`_ section below.
 
 An **application** repository stores a complete solution created to automate activities for the business domain (e.g. customer relationship management, B2B commerce, marketing automation, etc.) Oro application provides a set of features and delivers number of benefits to the end user. Apart from the source code that implements business logic for the application features, Oro application repositories contain minimal set of configuration and initialization scripts for installing and running Oro application in dev, test, or prod environment.
 
@@ -36,11 +36,6 @@ Sample component: |OroMessageQueueBundle|
 
 You can find a complete list of OroInc public repositories at |https://github.com/oroinc/|.
 
-.. note:: Any Oro application and packages may be used in the following modes:
-
-   * Oro application may by installed and immediately used in the production environment
-   * Oro application or Oro package source code may be used as a base for a custom application. Clone the Oro application repository, fork it, or download the source code as an archive and customize and extend the code as necessary.
-   * Any PHP application may use Oro component(s) as a third party library. In a similar way, Oro packages may be embedded into any PHP application as ready-to-use features. Create your own application from scratch and add Oro packages as composer dependencies. Keep reading for more information about composer dependency manager.
 
 Distribution Model
 ^^^^^^^^^^^^^^^^^^

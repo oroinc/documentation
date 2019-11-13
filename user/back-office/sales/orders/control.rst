@@ -33,8 +33,8 @@ Close an Order
 
 .. important:: This operation is available only for orders with status *Open*, *Cancelled*, and *Shipped*.
 
-After an order has been successfully delivered, has been canceled for
- some time, etc., and does not require any further actions from any party, you may wish to close it, thus indicating that all your obligations regarding the order are fulfilled.
+
+After an order has been successfully delivered, has been canceled for some time, etc., and does not require any further actions from any party, you may wish to close it, thus indicating that all your obligations regarding the order are fulfilled.
 
 To close an order:
 
