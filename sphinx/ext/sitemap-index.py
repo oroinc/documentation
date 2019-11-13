@@ -40,10 +40,10 @@ def save_versions_from_context(app, context):
     if 'versions' not in context:
         return
 
-    for name, root_dir, path in context['versions'].branches:
+    for name, human_readable_name, path, root_dir in context['versions'].branches:
         app.sitemap_index_root_dirs.add(root_dir)
 
-    for name, root_dir, path in context['versions'].tags:
+    for name, human_readable_name, path, root_dir in context['versions'].tags:
         app.sitemap_index_root_dirs.add(root_dir)
 
 

@@ -8,12 +8,12 @@
         <div class="version">{{ oro_version_human_readable_names[current_version]|default(oro_current_version) }}{{ ' (latest)' if scv_root_ref == current_version }}</div>
         <ul class="documentation-version">
             {%- if tags %}
-                {%- for name, human_readable_name, url in tags %}
+                {%- for name, human_readable_name, url, root_dir in tags %}
                     <li><a href="{{ url }}">{{ human_readable_name }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
                 {%- endfor %}
             {%- endif %}
             {%- if branches %}
-                {%- for name, human_readable_name, url in branches %}
+                {%- for name, human_readable_name, url, root_dir in branches %}
                     <li><a href="{{ url }}">{{ human_readable_name }}{{ ' (latest)' if scv_root_ref == name }}</a></li>
                 {%- endfor %}
             {%- endif %}
