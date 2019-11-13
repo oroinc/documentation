@@ -64,9 +64,9 @@ To create a master catalog category:
       "**Unit Of Quantity**", "A product unit that is shown by default in the product details page in the storefront. Available options are *each*, *hour*, *item*, *kilogram*, *piece*, *set*, and *Parent Category*. The latter is used to refer to the same product quantity unit configured for the corresponding parent category."
       "**Precision**", "An acceptable value (number of digits after the decimal point) for the quantity that a user may order or add into the shopping list. Items and sets are usually whole numbers, and units like kilograms may get precision of 2 to allow buying a custom volume (e.g. 0.5 kg)."
 
-   .. include:: /user/back-office/products/products/create/create-simple.rst
-      :start-after: start_inventory
-      :end-before: finish_inventory
+.. include:: /user/back-office/products/products/create/create-simple.rst
+   :start-after: start_inventory
+   :end-before: finish_inventory
 
 6. The **Activity** section displays all the :ref:`activities <user-guide-productivity-tools>` available for the selected category, such as *call*, *task*, *email*, *note*, or *calendar event*. You can use filters to select any activity type and date of its implementation.
 

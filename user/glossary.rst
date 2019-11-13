@@ -98,10 +98,7 @@ Glossary
       A system :term:`entity <Entity>`. Its :term:`records <Record>` represent highly probable potential or actual sales to a new or established customer.
 
    Lifetime Sales Value
-      A metric that helps understand the :term:`Customer`. It predicts the potential benefit that the selling organization
-       can obtain from a relationship with the customer in the long-term perspective. Lifetime sales value measures the total
-       amount of money received from the customer based on orders placed and registered in OroCRM. When calculating a lifetime sales
-       value, OroCommerce takes into account an average order amount, purchase frequency, and an average retention period.
+      A metric that helps understand the :term:`Customer`. It predicts the potential benefit that the selling organization can obtain from a relationship with the customer in the long-term perspective. Lifetime sales value measures the total amount of money received from the customer based on orders placed and registered in OroCRM. When calculating a lifetime sales value, OroCommerce takes into account an average order amount, purchase frequency, and an average retention period.
 
    Payment Term
       A Payment Term describes the conditions under which a seller will complete a sale (e.g. the period allowed to a buyer to pay off the amount due).
@@ -177,3 +174,6 @@ Glossary
 
    Digital Assets
       Digital Assets are multimedia content like videos, pictures, documents and other media. These digital files must possess the rights to use them to be considered an asset, otherwise, they are not assets.
+
+   Flat Rate
+      A fixed fee that is charged for a shipping service. A flat rate is used to specify one specific price to ship orders. This fee remains the same for everyone in all cases.

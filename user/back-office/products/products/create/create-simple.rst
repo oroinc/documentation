@@ -83,18 +83,12 @@ To add a new :term:`simple product <Simple Product>` and make it available in th
       :widths: 30, 60
 
       "**Inventory Status**","This setting enables you to define and modify status information for the stock of the product."
-      "**Managed Inventory**","This setting defines the method for :ref:`inventory <user-guide--inventory>` management.
-
-       With *Use category defaults*, the product's **Manage Inventory** inherits the setting selected for the product's parent category. With *Use system config*, the product uses the system configuration setting.
-
-       Selecting *Yes* enables interactive updates based on the product inventory information from the **Inventory > Warehouses** section. Selecting *No* disables connection to the inventory, and uses the static **Inventory Status** value."
+      "**Managed Inventory**","This setting defines the method for :ref:`inventory <user-guide--inventory>` management. With *Use category defaults*, the product's **Manage Inventory** inherits the setting selected for the product's parent category. With *Use system config*, the product uses the system configuration setting. Selecting *Yes* enables interactive updates based on the product inventory information from the **Inventory > Warehouses** section. Selecting *No* disables connection to the inventory, and uses the static **Inventory Status** value."
       "**Highlight Low Inventory**","This option defines if low inventory for products is displayed in the storefront."
       "**Inventory Threshold**","A minimum quantity of the product that is treated as In stock. When a product quantity drops below this value, the product inventory status becomes Out Of Stock."
       "**Low Inventory Threshold**","The minimum stock level defined for the product. Reaching the defined level will trigger a warning message to the buyer in the storefront."
       "**Backorders**","A flag that indicates whether OroCommerce accepts backorders. When set to *Yes*, buyers and salespeople can order products in the quantities that are not currently available in the warehouses. The remaining portion of the order will be sustained until the product gets back in stock."
-      "**Decrement Inventory**","A flag that indicates whether OroCommerce decrements inventory upon order.
-
-       When both **Decrement Inventory** and **Backorders** are enabled, a product quantity may become negative."
+      "**Decrement Inventory**","A flag that indicates whether OroCommerce decrements inventory upon order. When both **Decrement Inventory** and **Backorders** are enabled, a product quantity may become negative."
       "**Minimum Quantity to Order**","A minimum quantity that a buyer or salesperson can claim in the RFQ, customer order, quote, or a shopping list."
       "**Maximum Quantity to Order**","A maximum quantity that a buyer or salesperson can claim in the RFQ, customer order, :ref:`quote <user-guide--sales--quotes>`, or a shopping list."
       "**Is Upcoming**","This option informs a customer that the product of the selected category is not in stock currently, but will be available later. When set to *Yes*, additional **Availability Date** is displayed. To remove the upcoming products label, set the option to *No* or customize the required behavior in the :ref:`system configuration <upcoming-products-config>`."

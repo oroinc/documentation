@@ -646,7 +646,7 @@ Links
 
 .. |Blackfire in its documentation portal| raw:: html
 
-   <a href="https://blackfire.io/docs/book/index" target="_blank">Blackfire in its documentation portal</a>
+   <a href="https://blackfire.io/docs/book/" target="_blank">Blackfire in its documentation portal</a>
 
 .. |OroConfigBundle| raw:: html
 
@@ -1194,7 +1194,7 @@ Links
 
 .. |FormUtil class| raw:: html
 
-   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Form/FormUtil.php" target="_blank"> FormUtil class</a>
+   <a href="https://github.com/oroinc/platform/blob/master/src/Oro/Bundle/ApiBundle/Form/FormUtil.php" target="_blank">FormUtil class</a>
 
 .. |ComparisonFilter| raw:: html
 
